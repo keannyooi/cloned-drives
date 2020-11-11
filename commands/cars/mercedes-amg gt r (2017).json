@@ -1,0 +1,46 @@
+{
+    "rq": 88,
+    "category": "Mercedes-Benz",
+    "make": "Mercedes-AMG",
+    "model": "GT R",
+    "modelYear": 2017,
+    "country": "DE",
+    "topSpeed": 198,
+    "0to60": 3.5,
+    "handling": 94,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1630,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 106.06,
+    "ola": 80.00,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/731368244614660106/mercedes-amg_gt_r.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/731367942113198190/mercedes-amg_gt_r.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/731368096270647316/mercedes-amg_gt_r_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/731368116679999619/mercedes-amg_gt_r_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "",
+    "racehudMaxed699": "https://cdn.discordapp.com/attachments/718097267621363744/731368139048353813/mercedes-amg_gt_r_699.jpg",
+
+    "1StarTopSpeed": 201,
+    "1Star0to60": 3.3,
+    "1StarHandling": 97,
+
+    "2StarTopSpeed": 204,
+    "2Star0to60": 3.1,
+    "2StarHandling": 101,
+
+    "699MaxedTopSpeed": 207,
+    "699Maxed0to60": 2.9,
+    "699MaxedHandling": 104
+}

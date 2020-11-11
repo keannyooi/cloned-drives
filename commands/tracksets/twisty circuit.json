@@ -1,0 +1,17 @@
+{
+	"trackName": "Twisty Circuit",
+	"weather": "Sunny",
+	"surface": "Asphalt",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://cdn.discordapp.com/attachments/716917404868935691/741537822028070978/unknown.png",
+
+	"specsDistr": {
+		"topSpeed": 0,
+		"0to60": 90,
+		"handling": 100,
+		"weight": 0,
+		"mra": 35,
+		"ola": 15
+	}
+}

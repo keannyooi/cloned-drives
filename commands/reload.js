@@ -1,0 +1,49 @@
+const Discord = require("discord.js-light");
+
+module.exports = {
+    name: "reload",
+    aliases: ["rl"],
+    usage: "<command here>",
+    args: true,
+    adminOnly: true,
+    description: "Reloads a command.",
+    execute(message, args) {
+        const commandName = args[0].toLowerCase();
+        const command = message.client.commands.get(commandName)
+            || message.client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
+
+        if (!command) {
+            const errorScreen = new Discord.MessageEmbed()
+                .setColor("#fc0303")
+                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                .setTitle("Error, 404 command not found.")
+                .setDescription("It looks like this command doesn't exist. Try using `cd-help` to find the command you are looking for.")
+                .setTimestamp();
+            return message.channel.send(errorScreen);
+        }
+
+        delete require.cache[require.resolve(`./${command.name}.js`)];
+        try {
+            const newCommand = require(`./${command.name}.js`);
+            message.client.commands.set(newCommand.name, newCommand);
+
+            const infoScreen = new Discord.MessageEmbed()
+                .setColor("#03fc24")
+                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                .setTitle(`Successfully reloaded command ${newCommand.name}!`)
+                .setDescription("Command updated.")
+                .setTimestamp();
+            return message.channel.send(infoScreen);
+        }
+        catch (error) {
+            console.log(error);
+            const errorMessage = new Discord.MessageEmbed()
+                .setColor("#fc0303")
+                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                .setTitle("Error, failed to reload command.")
+                .setDescription("Something must have gone wrong. Please report this issue to the devs.")
+                .setTimestamp();
+            return message.channel.send(errorMessage);
+        }
+    }
+}

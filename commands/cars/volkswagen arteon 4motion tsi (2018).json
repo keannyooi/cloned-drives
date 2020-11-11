@@ -1,0 +1,45 @@
+{
+    "rq": 74,
+    "make": "Volkswagen",
+    "model": "Arteon 4Motion TSI",
+    "modelYear": 2018,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 5.7,
+    "handling": 80,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1716,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 69.51,
+    "ola": 70.18,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/736762418365202502/A.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/734411117274857503/Arteonstock.png",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/734411204239556748/Arteon1star.png",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/734411238611878008/Arteon2star.png",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/734411288389615656/Arteon696.png",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 159,
+    "1Star0to60": 5.3,
+    "1StarHandling": 83,
+
+    "2StarTopSpeed": 163,
+    "2Star0to60": 5,
+    "2StarHandling": 86,
+
+    "969MaxedTopSpeed": 167,
+    "969Maxed0to60": 4.7,
+    "969MaxedHandling": 88
+}

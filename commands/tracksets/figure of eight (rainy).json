@@ -1,0 +1,17 @@
+{
+	"trackName": "Figure of Eight (Rainy)",
+	"weather": "Rainy",
+	"surface": "Asphalt",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://cdn.discordapp.com/attachments/716917404868935691/773114004733296660/unknown.png",
+	
+	"specsDistr": {
+		"topSpeed": 0,
+		"0to60": 45,
+		"handling": 100,
+		"weight": 100,
+		"mra": 0,
+		"ola": -5
+	}
+}

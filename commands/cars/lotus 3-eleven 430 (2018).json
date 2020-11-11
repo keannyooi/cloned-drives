@@ -1,0 +1,45 @@
+{
+    "rq": 89,
+    "make": "Lotus",
+    "model": "3-Eleven 430",
+    "modelYear": 2018,
+    "country": "GB",
+    "topSpeed": 180,
+    "0to60": 3.1,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 920,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Roadster",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 83.78,
+    "ola": 96.77,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/729896829239689236/lotus_3-eleven_430.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/729903034934624317/lotus_3-eleven_430.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/729903086100938785/lotus_3-eleven_430_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/729903098599833641/lotus_3-eleven_430_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "",
+    "racehudMaxed699": "https://cdn.discordapp.com/attachments/718097267621363744/729903112139047004/lotus_3-eleven_430_699.jpg",
+
+    "1StarTopSpeed": 183,
+    "1Star0to60": 2.9,
+    "1StarHandling": 94,
+
+    "2StarTopSpeed": 186,
+    "2Star0to60": 2.7,
+    "2StarHandling": 98,
+
+    "699MaxedTopSpeed": 189,
+    "699Maxed0to60": 2.6,
+    "699MaxedHandling": 101
+}

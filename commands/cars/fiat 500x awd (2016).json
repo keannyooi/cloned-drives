@@ -1,0 +1,45 @@
+{
+    "rq": 40,
+    "make": "Fiat",
+    "model": "500X AWD",
+    "modelYear": 2016,
+    "country": "IT",
+    "topSpeed": 120,
+    "0to60": 8.7,
+    "handling": 70,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1525,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 45.08,
+    "ola": 68.97,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/749931540732969070/fiat_500x_awd.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/749513284536762388/fiat_500x_awd.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/749513313968324689/fiat_500x_awd_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/749513329189322861/fiat_500x_awd_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/749513356947357737/fiat_500x_awd_969.jpg",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 124,
+    "1Star0to60": 8.1,
+    "1StarHandling": 72,
+
+    "2StarTopSpeed": 128,
+    "2Star0to60": 7.5,
+    "2StarHandling": 75,
+
+    "969MaxedTopSpeed": 131,
+    "969Maxed0to60": 6.9,
+    "969MaxedHandling": 77
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 97,
+    "make": "Bugatti",
+    "model": "Veyron 16.4 Super Sport",
+    "modelYear": 2010,
+    "country": "FR",
+    "topSpeed": 258,
+    "0to60": 2.5,
+    "handling": 89,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1838,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 104.17,
+    "ola": 96,
+    "description": "",
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/775602752075333652/2010_Bugatti_Veyron_SS.png",
+    "racehudStock": "https://media.discordapp.net/attachments/718097267621363744/775601828766679060/BugattiVeyronSSStock.png",
+    "racehud1Star": "https://media.discordapp.net/attachments/718097267621363744/775601879282352138/BugattiVeyronSS333.png",
+    "racehud2Star": "https://media.discordapp.net/attachments/718097267621363744/775601940377763850/BugattiVeyronSS666.png",
+    "racehudMaxed996": "https://media.discordapp.net/attachments/718097267621363744/775602027409178634/BugattiVeyronSS996.png",
+    "racehudMaxed969": "",
+    "racehudMaxed699": "https://media.discordapp.net/attachments/718097267621363744/775601983419318282/BugattiVeyronSS699.png",
+
+    "1StarTopSpeed": 260,
+    "1Star0to60": 2.4,
+    "1StarHandling": 92,
+
+    "2StarTopSpeed": 262,
+    "2Star0to60": 2.3,
+    "2StarHandling": 95,
+
+    "996MaxedTopSpeed": 266,
+    "996Maxed0to60": 2.1,
+    "996MaxedHandling": 96,
+
+    "699MaxedTopSpeed": 264,
+    "699Maxed0to60": 2.2,
+    "699MaxedHandling": 99
+}

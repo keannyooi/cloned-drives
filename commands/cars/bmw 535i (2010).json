@@ -1,0 +1,45 @@
+{
+    "rq": 64,
+    "make": "BMW",
+    "model": "535i",
+    "modelYear": 2010,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 5.7,
+    "handling": 78,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1795,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 67.86,
+    "ola": 73.68,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/764790552406523944/BMW535i.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/764467816438824981/bmw_535i.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/764467847240876072/bmw_535i_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/764467855894380555/bmw_535i_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/764467869039722536/bmw_535i_969.jpg",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 159,
+    "1Star0to60": 5.4,
+    "1StarHandling": 81,
+
+    "2StarTopSpeed": 164,
+    "2Star0to60": 5.0,
+    "2StarHandling": 84,
+
+    "969MaxedTopSpeed": 168,
+    "969Maxed0to60": 4.7,
+    "969MaxedHandling": 86
+}

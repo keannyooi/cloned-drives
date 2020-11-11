@@ -1,0 +1,45 @@
+{
+    "rq": 63,
+    "make": "Mercedes-Benz",
+    "model": "A 220 4MATIC",
+    "modelYear": 2018,
+    "country": "DE",
+    "topSpeed": 132,
+    "0to60": 6.1,
+    "handling": 84,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1550,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 56.48,
+    "ola": 68.85,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/746941008469688380/mercedes-benz_a_220_4matic.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/746374175740133476/220AStock.png",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/746374210380890202/220A1star.png",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/746374230299639808/220A2star.png",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/746374275635740702/220AMaxed.png",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 136,
+    "1Star0to60": 5.8,
+    "1StarHandling": 87,
+
+    "2StarTopSpeed": 140,
+    "2Star0to60": 5.4,
+    "2StarHandling": 90,
+
+    "969MaxedTopSpeed": 145,
+    "969Maxed0to60": 5.0,
+    "969MaxedHandling": 92
+}

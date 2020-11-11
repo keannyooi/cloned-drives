@@ -1,0 +1,45 @@
+{
+    "rq": 48,
+    "make": "BMW",
+    "model": "M3",
+    "modelYear": 1992,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 5.6,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1442,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Electric",
+    "mra": 61.54,
+    "ola": 75.00,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/722724573748920330/bmw_m3_e36.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/722725415155925014/bmw_m3_e36.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/722725449897213972/bmw_m3_e36_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/722725476744822794/bmw_m3_e36_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/722725529697910834/bmw_m3_e36_969.jpg",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 159,
+    "1Star0to60": 5.3,
+    "1StarHandling": 80,
+
+    "2StarTopSpeed": 163,
+    "2Star0to60": 5.0,
+    "2StarHandling": 83,
+
+    "969MaxedTopSpeed": 167,
+    "969Maxed0to60": 4.7,
+    "969MaxedHandling": 85
+}

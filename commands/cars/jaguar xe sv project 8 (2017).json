@@ -1,0 +1,45 @@
+{
+    "rq": 90,
+    "make": "Jaguar",
+    "model": "XE SV Project 8",
+    "modelYear": 2017,
+    "country": "GB",
+    "topSpeed": 200,
+    "0to60": 3.5,
+    "handling": 92,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Wild Ride"],
+    "isPrize": true,
+
+    "weight": 1745,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 76.09,
+    "ola": 85.71,
+    "description": "",
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/775474738763530280/JaguarXESVProject8.png",
+    "racehudStock": "https://media.discordapp.net/attachments/718097267621363744/775475071996657694/JagXESVP8Stock.png",
+    "racehud1Star": "https://media.discordapp.net/attachments/718097267621363744/775475126312763422/JagXESVP8333.png",
+    "racehud2Star": "https://media.discordapp.net/attachments/718097267621363744/775475260634955806/JagXESVP8666.png",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "",
+    "racehudMaxed699": "https://media.discordapp.net/attachments/718097267621363744/775475326775459850/JagXESVP8699.png",
+
+    "1StarTopSpeed": 203,
+    "1Star0to60": 3.4,
+    "1StarHandling": 95,
+
+    "2StarTopSpeed": 206,
+    "2Star0to60": 3.2,
+    "2StarHandling": 98,
+
+    "699MaxedTopSpeed": 207,
+    "699Maxed0to60": 3.1,
+    "699MaxedHandling": 102
+}

@@ -1,0 +1,45 @@
+{
+    "rq": 31,
+    "make": "Honda",
+    "model": "Odyssey Elite",
+    "modelYear": 2019,
+    "country": "JP",
+    "topSpeed": 111,
+    "0to60": 6.6,
+    "handling": 67,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Pacific Storm", "Sleeper"],
+    "isPrize": false,
+
+    "weight": 2083,
+    "gc": "Low",
+    "seatCount": 7,
+    "bodyStyle": "Minivan",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 68.32,
+    "ola": 78.26,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/734359000073764965/odyssey_elite.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/734434148504305834/vanstock.png",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/734434187742019626/van1star.png",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/734434213373280307/van2star.png",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/734434253793919106/van969.png",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 114,
+    "1Star0to60": 6.6,
+    "1StarHandling": 69,
+
+    "2StarTopSpeed": 118,
+    "2Star0to60": 5.8,
+    "2StarHandling": 71,
+
+    "969MaxedTopSpeed": 121,
+    "969Maxed0to60": 5.3,
+    "969MaxedHandling": 74
+}

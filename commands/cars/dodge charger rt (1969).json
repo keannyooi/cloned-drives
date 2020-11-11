@@ -1,0 +1,45 @@
+{
+    "rq": 32,
+    "make": "Dodge",
+    "model": "Charger RT",
+    "modelYear": 1969,
+    "country": "US",
+    "topSpeed": 145,
+    "0to60": 5.5,
+    "handling": 61,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Muscle Car", "Silver Screen"],
+    "isPrize": false,
+
+    "weight": 1639,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "fuelType": "Petrol",
+    "mra": 62.50,
+    "ola": 72.73,
+    "description": "The General Lee, not your typical general but still a fun movie car.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/719871442891702292/dodge_charger_rt_1969.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/719871556012212224/dodge_charger_rt_1969.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/719871647787778058/dodge_charger_rt_1969_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/719871676963356672/dodge_charger_rt_1969_666.jpg",
+    "racehudMaxed996": "https://cdn.discordapp.com/attachments/718097267621363744/719871718696419358/dodge_charger_rt_1969_996.jpg",
+    "racehudMaxed969": "",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 149,
+    "1Star0to60": 5.1,
+    "1StarHandling": 63,
+
+    "2StarTopSpeed": 153,
+    "2Star0to60": 4.7,
+    "2StarHandling": 65,
+
+    "996MaxedTopSpeed": 157,
+    "996Maxed0to60": 4.4,
+    "996MaxedHandling": 66
+}

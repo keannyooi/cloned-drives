@@ -1,0 +1,45 @@
+{
+    "rq": 66,
+    "make": "Maserati",
+    "model": "Ghibli S Q4",
+    "modelYear": 2013,
+    "country": "IT",
+    "topSpeed": 175,
+    "0to60": 4.7,
+    "handling": 82,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1870,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 64.38,
+    "ola": 80.85,
+    "description": "",
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/775456859603075072/MaseratiGhibliSQ4.png",
+    "racehudStock": "https://media.discordapp.net/attachments/718097267621363744/775457357072957501/MaseratiGhibliSQ4Stock.png",
+    "racehud1Star": "https://media.discordapp.net/attachments/718097267621363744/775457442145763328/MaseratiGhibliSQ433.png",
+    "racehud2Star": "https://media.discordapp.net/attachments/718097267621363744/775457518822359040/MaseratiGhibliSQ4666.png",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "https://media.discordapp.net/attachments/718097267621363744/775457582265139210/MaseratiGhibliSQ4969.png",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 178,
+    "1Star0to60": 4.4,
+    "1StarHandling": 85,
+
+    "2StarTopSpeed": 181,
+    "2Star0to60": 4.1,
+    "2StarHandling": 88,
+
+    "969MaxedTopSpeed": 184,
+    "969Maxed0to60": 3.9,
+    "969MaxedHandling": 91
+}

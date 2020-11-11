@@ -1,0 +1,45 @@
+{
+    "rq": 97,
+    "make": "Lamborghini",
+    "model": "Aventador LP700-4",
+    "modelYear": 2011,
+    "country": "IT",
+    "topSpeed": 217,
+    "0to60": 2.7,
+    "handling": 92,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1575,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 87.10,
+    "ola": 81.48,
+    "description": "",
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/775230487802675200/LamboAventador.png",
+    "racehudStock": "https://media.discordapp.net/attachments/718097267621363744/775227822284341278/LamborghiniAventadorStock.png",
+    "racehud1Star": "https://media.discordapp.net/attachments/718097267621363744/775227954467831838/LamborghiniAventador333.png",
+    "racehud2Star": "https://media.discordapp.net/attachments/718097267621363744/775228011485331466/LamborghiniAventador666.png",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "",
+    "racehudMaxed699": "https://media.discordapp.net/attachments/718097267621363744/775228119329275914/LamborghiniAventador699.png",
+
+    "1StarTopSpeed": 219,
+    "1Star0to60": 2.6,
+    "1StarHandling": 95,
+
+    "2StarTopSpeed": 221,
+    "2Star0to60": 2.5,
+    "2StarHandling": 99,
+
+    "699MaxedTopSpeed": 223,
+    "699Maxed0to60": 2.4,
+    "699MaxedHandling": 102
+}

@@ -1,0 +1,45 @@
+{
+    "rq": 47,
+    "make": "Jaguar",
+    "model": "E-PACE P200 AWD",
+    "modelYear": 2018,
+    "country": "GB",
+    "topSpeed": 134,
+    "0to60": 7.8,
+    "handling": 73,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1832,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Diesel",
+    "mra": 47.27,
+    "ola": 66.67,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/729916190985682984/E-PACE_P200_AWD_18.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/729966064586326056/Jaguar_E-Pace_P200_AWD_000.png",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/729966162074402886/Jaguar_E-Pace_P200_AWD_111.png",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/729966199785521282/Jaguar_E-Pace_P200_AWD_222.png",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/729966261403910174/Jaguar_E-Pace_P200_AWD_323.png",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 137,
+    "1Star0to60": 7.1,
+    "1StarHandling": 76,
+
+    "2StarTopSpeed": 140,
+    "2Star0to60": 6.4,
+    "2StarHandling": 78,
+
+    "969MaxedTopSpeed": 142,
+    "969Maxed0to60": 5.7,
+    "969MaxedHandling": 81
+}

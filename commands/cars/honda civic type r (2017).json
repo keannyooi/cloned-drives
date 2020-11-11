@@ -1,0 +1,45 @@
+{
+    "rq": 64,
+    "make": "Honda",
+    "model": "Civic Type R",
+    "modelYear": 2017,
+    "country": "JP",
+    "topSpeed": 170,
+    "0to60": 4.9,
+    "handling": 91,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1380,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 74.24,
+    "ola": 85.71,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/764790770481758218/B.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/764794519908515840/honda_civic_type_r.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/764794570687905842/honda_civic_type_r_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/764794581061468170/honda_civic_type_r_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/764794599544979456/honda_civic_type_r_969.jpg",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 174,
+    "1Star0to60": 4.6,
+    "1StarHandling": 94,
+
+    "2StarTopSpeed": 178,
+    "2Star0to60": 4.3,
+    "2StarHandling": 98,
+
+    "969MaxedTopSpeed": 181,
+    "969Maxed0to60": 4.0,
+    "969MaxedHandling": 101
+}

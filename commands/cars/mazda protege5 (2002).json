@@ -1,0 +1,45 @@
+{
+    "rq": 24,
+    "make": "Mazda",
+    "model": "Protege5",
+    "modelYear": 2002,
+    "country": "JP",
+    "topSpeed": 118,
+    "0to60": 9.5,
+    "handling": 71,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1232,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": false,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 48.72,
+    "ola": 73.68,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/765190402361655306/MazdaProt52002.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/765187812831395850/mazda_protege5.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/765187851599347762/mazda_protege5_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/765187861393309716/mazda_protege5_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/765187876367106108/mazda_protege5_969.jpg",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 121,
+    "1Star0to60": 8.9,
+    "1StarHandling": 74,
+
+    "2StarTopSpeed": 125,
+    "2Star0to60": 8.2,
+    "2StarHandling": 77,
+
+    "969MaxedTopSpeed": 128,
+    "969Maxed0to60": 7.6,
+    "969MaxedHandling": 79
+}

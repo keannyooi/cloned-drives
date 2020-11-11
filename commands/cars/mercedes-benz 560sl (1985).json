@@ -1,0 +1,45 @@
+{
+    "rq": 39,
+    "make": "Mercedes-Benz",
+    "model": "560SL",
+    "modelYear": 1985,
+    "country": "DE",
+    "topSpeed": 136,
+    "0to60": 7.1,
+    "handling": 71,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1670,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Roadster",
+    "tcs": false,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 55.91,
+    "ola": 78.87,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/765166581696954368/560sl.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/765167609976193054/mercedes-benz_560sl.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/765167639089119242/mercedes-benz_560sl_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/765167647125536789/mercedes-benz_560sl_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/765167662417575956/mercedes-benz_560sl_969.jpg",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 141,
+    "1Star0to60": 6.6,
+    "1StarHandling": 74,
+
+    "2StarTopSpeed": 146,
+    "2Star0to60": 6.1,
+    "2StarHandling": 77,
+
+    "969MaxedTopSpeed": 150,
+    "969Maxed0to60": 5.7,
+    "969MaxedHandling": 79
+}

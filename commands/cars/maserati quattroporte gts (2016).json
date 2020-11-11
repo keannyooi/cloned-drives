@@ -1,0 +1,45 @@
+{
+    "rq": 67,
+    "make": "Maserati",
+    "model": "Quattroporte GTS",
+    "modelYear": 2016,
+    "country": "IT",
+    "topSpeed": 182,
+    "0to60": 4.2,
+    "handling": 81,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1900,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 68.85,
+    "ola": 97.78,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/730672239250505758/PicsArt_07-08-12.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/730534762095312906/Maserati_Quattroporte_GTS_2016_000.png",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/730534788691132496/Maserati_Quattroporte_GTS_2016_333.png",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/730534819921920130/Maserati_Quattroporte_GTS_2016_666.png",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "",
+    "racehudMaxed699": "https://cdn.discordapp.com/attachments/718097267621363744/730534855711916212/Maserati_Quattroporte_GTS_2016_699.png",
+
+    "1StarTopSpeed": 185,
+    "1Star0to60": 3.9,
+    "1StarHandling": 84,
+
+    "2StarTopSpeed": 187,
+    "2Star0to60": 3.7,
+    "2StarHandling": 87,
+
+    "699MaxedTopSpeed": 189,
+    "699Maxed0to60": 3.5,
+    "699MaxedHandling": 90
+}

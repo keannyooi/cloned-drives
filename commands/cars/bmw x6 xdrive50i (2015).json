@@ -1,0 +1,45 @@
+{
+    "rq": 77,
+    "make": "BMW",
+    "model": "X6 xDrive50i",
+    "modelYear": 2015,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 4.5,
+    "handling": 78,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 2304,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 71.43,
+    "ola": 93.88,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/745245649498275931/PicsArt_07-17-04.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/744897300094124102/bmw_x6_xdrive50i.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/744897329684938914/bmw_x6_xdrive50i_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/744897338010763374/bmw_x6_xdrive50i_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/744897350237159534/bmw_x6_xdrive50i_969.jpg",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 159,
+    "1Star0to60": 4.3,
+    "1StarHandling": 81,
+
+    "2StarTopSpeed": 163,
+    "2Star0to60": 4.0,
+    "2StarHandling": 84,
+
+    "969MaxedTopSpeed": 167,
+    "969Maxed0to60": 3.8,
+    "969MaxedHandling": 86
+}

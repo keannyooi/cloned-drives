@@ -1,0 +1,45 @@
+{
+    "rq": 89,
+    "make": "Porsche",
+    "model": "911 GT3 RS",
+    "modelYear": 2018,
+    "country": "DE",
+    "topSpeed": 194,
+    "0to60": 2.9,
+    "handling": 95,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1430,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 78.38,
+    "ola": 75.86,
+    "description": "There was once a wise man named SprungGeoduck, who left for he thinks that the server didn't have a bright future.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/769407015025770506/sprunggeoduck.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/769407864703156284/porsche_911_gt3_rs.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/769407909426888744/porsche_911_gt3_rs_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/769407919644344350/porsche_911_gt3_rs_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "",
+    "racehudMaxed699": "https://cdn.discordapp.com/attachments/718097267621363744/769407932579840010/porsche_911_gt3_rs_699.jpg",
+
+    "1StarTopSpeed": 196,
+    "1Star0to60": 2.8,
+    "1StarHandling": 98,
+
+    "2StarTopSpeed": 199,
+    "2Star0to60": 2.6,
+    "2StarHandling": 102,
+
+    "699MaxedTopSpeed": 201,
+    "699Maxed0to60": 2.5,
+    "699MaxedHandling": 105
+}

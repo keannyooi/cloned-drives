@@ -1,0 +1,45 @@
+{
+    "rq": 41,
+    "make": "Fiat",
+    "model": "124 Abarth Rally Group 4",
+    "modelYear": 1972,
+    "country": "IT",
+    "topSpeed": 118,
+    "0to60": 7.5,
+    "handling": 76,
+    "driveType": "RWD",
+    "tyreType": "Off-Road",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 939,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Roadster",
+    "tcs": false,
+    "abs": false,
+    "fuelType": "Petrol",
+    "mra": 50.68,
+    "ola": 88.00,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/731423896141561886/fiat_124_abarth_rally_group_4.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/731425513574498314/fiat_124_abarth_rally_group_4.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/731425579777130596/fiat_124_abarth_rally_group_4_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/731425598714675210/fiat_124_abarth_rally_group_4_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/731425611167432704/fiat_124_abarth_rally_group_4_969.jpg",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 121,
+    "1Star0to60": 7.1,
+    "1StarHandling": 79,
+
+    "2StarTopSpeed": 124,
+    "2Star0to60": 6.6,
+    "2StarHandling": 82,
+
+    "969MaxedTopSpeed": 127,
+    "969Maxed0to60": 6.1,
+    "969MaxedHandling": 84
+}

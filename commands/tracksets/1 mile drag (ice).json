@@ -1,0 +1,17 @@
+{
+	"trackName": "1 Mile Drag (Ice)",
+	"weather": "Sunny",
+	"surface": "Ice",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://cdn.discordapp.com/attachments/716917404868935691/773109517147176990/unknown.png",
+	
+	"specsDistr": {
+		"topSpeed": 50,
+		"0to60": 100,
+		"handling": 0,
+		"weight": 0,
+		"mra": 100,
+		"ola": 0
+	}
+}

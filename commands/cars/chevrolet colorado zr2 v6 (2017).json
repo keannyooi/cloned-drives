@@ -1,0 +1,45 @@
+{
+    "rq": 55,
+    "make": "Chevrolet",
+    "model": "Colorado ZR2 V6",
+    "modelYear": 2017,
+    "country": "US",
+    "topSpeed": 100,
+    "0to60": 7.1,
+    "handling": 63,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["OG"],
+    "isPrize": false,
+
+    "weight": 2234,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "Pickup",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 44.94,
+    "ola": 70.42,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/730320882941296690/chevrolet_colorado_zr2_v6.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/730352546962604082/chevrolet_colorado_zr2_v6.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/730352658640142356/chevrolet_colorado_zr2_v6_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/730352669696458752/chevrolet_colorado_zr2_v6_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/730352682174251048/chevrolet_colorado_zr2_v6_969.jpg",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 102,
+    "1Star0to60": 6.7,
+    "1StarHandling": 65,
+
+    "2StarTopSpeed": 105,
+    "2Star0to60": 6.2,
+    "2StarHandling": 68,
+
+    "969MaxedTopSpeed": 108,
+    "969Maxed0to60": 5.8,
+    "969MaxedHandling": 70
+}

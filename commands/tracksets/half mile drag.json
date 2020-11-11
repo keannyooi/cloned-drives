@@ -1,0 +1,17 @@
+{
+	"trackName": "Half Mile Drag",
+	"weather": "Sunny",
+	"surface": "Asphalt",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://cdn.discordapp.com/attachments/716917404868935691/741242010375290940/unknown.png",
+	
+	"specsDistr": {
+		"topSpeed": 35,
+		"0to60": 100,
+		"handling": 0,
+		"weight": 0,
+		"mra": 75,
+		"ola": 0
+	}
+}

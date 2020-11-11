@@ -1,0 +1,45 @@
+{
+    "rq": 62,
+    "make": "Lexus",
+    "model": "LC500h",
+    "modelYear": 2018,
+    "country": "JP",
+    "topSpeed": 155,
+    "0to60": 4.8,
+    "handling": 82,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eco-Friendly", "Pacific Storm"],
+    "isPrize": false,
+
+    "weight": 2050,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Hybrid",
+    "mra": 61.54,
+    "ola": 79.17,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/733649380422189147/lexus_lc500h.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/733651841329397800/lexus_lc500h.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/733651885868974100/lexus_lc500h_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/733651901698277396/lexus_lc500h_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/733651916105580614/lexus_lc500h_969.jpg",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 159,
+    "1Star0to60": 4.6,
+    "1StarHandling": 85,
+
+    "2StarTopSpeed": 164,
+    "2Star0to60": 4.3,
+    "2StarHandling": 88,
+
+    "969MaxedTopSpeed": 168,
+    "969Maxed0to60": 4.0,
+    "969MaxedHandling": 91
+}

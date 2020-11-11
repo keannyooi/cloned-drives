@@ -1,0 +1,17 @@
+{
+	"trackName": "Figure of Eight",
+	"weather": "Sunny",
+	"surface": "Asphalt",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://cdn.discordapp.com/attachments/716917404868935691/772049075868139550/unknown.png",
+	
+	"specsDistr": {
+		"topSpeed": 0,
+		"0to60": 45,
+		"handling": 100,
+		"weight": 100,
+		"mra": 0,
+		"ola": 5
+	}
+}

@@ -1,0 +1,45 @@
+{
+    "rq": 98,
+    "make": "Lamborghini",
+    "model": "Huracan Performante",
+    "modelYear": 2017,
+    "country": "IT",
+    "topSpeed": 202,
+    "0to60": 2.6,
+    "handling": 93,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1382,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 92.86,
+    "ola": 84.62,
+    "description": "The very first card in Cloned Drives.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/752892235233755337/lamborghini_huracan_performante.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/753244169002287214/lamborghini_huracan_performante.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/753244203550638130/lamborghini_huracan_performante_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/753244230704431164/lamborghini_huracan_performante_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "",
+    "racehudMaxed699": "https://cdn.discordapp.com/attachments/718097267621363744/753244247221862491/lamborghini_huracan_performante_699.jpg",
+
+    "1StarTopSpeed": 205,
+    "1Star0to60": 2.4,
+    "1StarHandling": 96,
+
+    "2StarTopSpeed": 207,
+    "2Star0to60": 2.3,
+    "2StarHandling": 100,
+
+    "699MaxedTopSpeed": 209,
+    "699Maxed0to60": 2.2,
+    "699MaxedHandling": 103
+}

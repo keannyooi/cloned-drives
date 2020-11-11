@@ -1,0 +1,45 @@
+{
+    "rq": 61,
+    "make": "Jaguar",
+    "model": "XFR",
+    "modelYear": 2009,
+    "country": "GB",
+    "topSpeed": 155,
+    "0to60": 4.4,
+    "handling": 80,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1890,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 86.27,
+    "ola": 86.36,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/724808032701251604/jaguar_xfr.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/724818760736833616/jaguar_xfr.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/724825538950201353/jaguar_xfr_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/724825568109002812/jaguar_xfr_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/724825603794272368/jaguar_xfr_969.jpg",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 159,
+    "1Star0to60": 4.2,
+    "1StarHandling": 83,
+
+    "2StarTopSpeed": 163,
+    "2Star0to60": 3.9,
+    "2StarHandling": 86,
+
+    "969MaxedTopSpeed": 167,
+    "969Maxed0to60": 3.7,
+    "969MaxedHandling": 89
+}

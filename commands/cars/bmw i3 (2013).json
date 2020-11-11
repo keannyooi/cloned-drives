@@ -1,0 +1,45 @@
+{
+    "rq": 32,
+    "make": "BMW",
+    "model": "i3",
+    "modelYear": 2013,
+    "country": "DE",
+    "topSpeed": 93,
+    "0to60": 7.0,
+    "handling": 70,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+
+    "weight": 1294,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Electric",
+    "mra": 0.00,
+    "ola": 82.86,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/717325387633393704/bmw_i3.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/718098180683726888/bmw_i3.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/718098280051114060/bmw_i3_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/718098354839617667/bmw_i3_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/718098392945000498/bmw_i3_969.jpg",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 95,
+    "1Star0to60": 6.6,
+    "1StarHandling": 72,
+
+    "2StarTopSpeed": 98,
+    "2Star0to60": 6.1,
+    "2StarHandling": 75,
+
+    "969MaxedTopSpeed": 100,
+    "969Maxed0to60": 5.7,
+    "969MaxedHandling": 77
+}

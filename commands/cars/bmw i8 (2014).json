@@ -1,0 +1,45 @@
+{
+    "rq": 78,
+    "make": "BMW",
+    "model": "i8",
+    "modelYear": 2014,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 3.8,
+    "handling": 84,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+
+    "weight": 1485,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Hybrid",
+    "mra": 64.41,
+    "ola": 100.00,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/717570648217747486/bmw_i8.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/718098655902564422/bmw_i8.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/718098713028853850/bmw_i8_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/718100292851466290/bmw_i8_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "",
+    "racehudMaxed699": "https://cdn.discordapp.com/attachments/718097267621363744/718100330591551498/bmw_i8_699.jpg",
+
+    "1StarTopSpeed": 159,
+    "1Star0to60": 3.6,
+    "1StarHandling": 87,
+
+    "2StarTopSpeed": 162,
+    "2Star0to60": 3.4,
+    "2StarHandling": 90,
+
+    "699MaxedTopSpeed": 164,
+    "699Maxed0to60": 3.2,
+    "699MaxedHandling": 93
+}

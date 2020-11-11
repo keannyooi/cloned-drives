@@ -1,0 +1,45 @@
+{
+    "rq": 43,
+    "make": "Jeep",
+    "model": "Cherokee Laredo",
+    "modelYear": 1988,
+    "country": "US",
+    "topSpeed": 107,
+    "0to60": 10.5,
+    "handling": 63,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1657,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": false,
+    "abs": false,
+    "fuelType": "Petrol",
+    "mra": 50.72,
+    "ola": 62.86,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/745974740627488808/unknown.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/733372503749165136/JeepLaredoStock.png",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/733372529749655552/JeepLaredo1star.png",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/733372581260034058/JeepLaredo2star.png",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/733372631880826990/JeepLaredo969.png",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 109,
+    "1Star0to60": 9.9,
+    "1StarHandling": 65,
+
+    "2StarTopSpeed": 112,
+    "2Star0to60": 9.2,
+    "2StarHandling": 68,
+
+    "969MaxedTopSpeed": 114,
+    "969Maxed0to60": 8.8,
+    "969MaxedHandling": 70
+}

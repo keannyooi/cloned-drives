@@ -1,0 +1,45 @@
+{
+    "rq": 28,
+    "make": "BMW",
+    "model": "i3 S",
+    "modelYear": 2017,
+    "country": "DE",
+    "topSpeed": 100,
+    "0to60": 6.5,
+    "handling": 78,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+
+    "weight": 1378,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Electric",
+    "mra": 47.10,
+    "ola": 89.23,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/717345447429144616/bmw_i3_s.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/718098453481128047/bmw_i3_s.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/718098502164545606/bmw_i3_s_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/718098518748823562/bmw_i3_s_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/718098560226164847/bmw_i3_s_969.jpg",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 104,
+    "1Star0to60": 6.1,
+    "1StarHandling": 81,
+
+    "2StarTopSpeed": 108,
+    "2Star0to60": 5.7,
+    "2StarHandling": 84,
+
+    "969MaxedTopSpeed": 111,
+    "969Maxed0to60": 5.3,
+    "969MaxedHandling": 86
+}

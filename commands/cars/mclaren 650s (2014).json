@@ -1,0 +1,45 @@
+{
+    "rq": 92,
+    "make": "McLaren",
+    "model": "650S",
+    "modelYear": 2014,
+    "country": "GB",
+    "topSpeed": 207,
+    "0to60": 2.7,
+    "handling": 92,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1428,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 87.10,
+    "ola": 85.71,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/774558572666552320/2014_McLaren_650S.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/774565700521426975/mclaren_650s.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/774565744196845578/mclaren_650s_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/774565753885687808/mclaren_650s_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "",
+    "racehudMaxed699": "https://cdn.discordapp.com/attachments/718097267621363744/774565769228976178/mclaren_650s_699.jpg",
+
+    "1StarTopSpeed": 210,
+    "1Star0to60": 2.6,
+    "1StarHandling": 95,
+
+    "2StarTopSpeed": 213,
+    "2Star0to60": 2.5,
+    "2StarHandling": 99,
+
+    "699MaxedTopSpeed": 215,
+    "699Maxed0to60": 2.4,
+    "699MaxedHandling": 102
+}

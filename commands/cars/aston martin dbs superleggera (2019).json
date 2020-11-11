@@ -1,0 +1,45 @@
+{
+    "rq": 88,
+    "make": "Aston Martin",
+    "model": "DBS Superleggera",
+    "modelYear": 2019,
+    "country": "GB",
+    "topSpeed": 211,
+    "0to60": 3.4,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1693,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 113.33,
+    "ola": 100.00,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/753249137872339094/DBS_Superleggera_19.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/753250313552789654/aston_martin_dbs_superleggera.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/753250333110566962/aston_martin_dbs_superleggera_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/753250341327208478/aston_martin_dbs_superleggera_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "",
+    "racehudMaxed699": "https://cdn.discordapp.com/attachments/718097267621363744/753250360164089908/aston_martin_dbs_superleggera_699.jpg",
+
+    "1StarTopSpeed": 214,
+    "1Star0to60": 3.3,
+    "1StarHandling": 94,
+
+    "2StarTopSpeed": 216,
+    "2Star0to60": 3.1,
+    "2StarHandling": 98,
+
+    "699MaxedTopSpeed": 216,
+    "699Maxed0to60": 3.0,
+    "699MaxedHandling": 101
+}

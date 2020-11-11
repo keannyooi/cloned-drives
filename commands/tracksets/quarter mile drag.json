@@ -1,0 +1,17 @@
+{
+	"trackName": "Quarter Mile Drag",
+	"weather": "Sunny",
+	"surface": "Asphalt",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://cdn.discordapp.com/attachments/716917404868935691/740847863608901632/unknown.png",
+	
+	"specsDistr": {
+		"topSpeed": 0,
+		"0to60": 100,
+		"handling": 0,
+		"weight": 0,
+		"mra": 30,
+		"ola": 0
+	}
+}

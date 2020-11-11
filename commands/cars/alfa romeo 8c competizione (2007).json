@@ -1,0 +1,45 @@
+{
+    "rq": 79,
+    "make": "Alfa Romeo",
+    "model": "8C Competizione",
+    "modelYear": 2007,
+    "country": "IT",
+    "topSpeed": 181,
+    "0to60": 4.2,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": true,
+
+    "weight": 1585,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 82.35,
+    "ola": 71.43,
+    "description": "",
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/775205957444960286/AlfaRomeo8CCompe.png",
+    "racehudStock": "https://media.discordapp.net/attachments/718097267621363744/775138774556213288/Alfa8CStock.png",
+    "racehud1Star": "https://media.discordapp.net/attachments/718097267621363744/775138933470265344/Alfa8C333.png",
+    "racehud2Star": "https://media.discordapp.net/attachments/718097267621363744/775139019658362910/Alfa8C666.png",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "",
+    "racehudMaxed699": "https://media.discordapp.net/attachments/718097267621363744/775139204669636658/Alfa8C699.png",
+
+    "1StarTopSpeed": 184,
+    "1Star0to60": 4.0,
+    "1StarHandling": 94,
+
+    "2StarTopSpeed": 187,
+    "2Star0to60": 3.8,
+    "2StarHandling": 98,
+
+    "699MaxedTopSpeed": 190,
+    "699Maxed0to60": 3.6,
+    "699MaxedHandling": 101
+}

@@ -1,0 +1,45 @@
+{
+    "rq": 24,
+    "make": "Toyota",
+    "model": "Mirai",
+    "modelYear": 2014,
+    "country": "JP",
+    "topSpeed": 111,
+    "0to60": 8.9,
+    "handling": 70,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+
+    "weight": 1858,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Hydrogen",
+    "mra": 39.07,
+    "ola": 67.42,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/716652292979294276/toyota_mirai_2014.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/718325507321757696/toyota_mirai.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/718325615585001503/toyota_mirai_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/718325653426012240/toyota_mirai_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/718325691644379166/toyota_mirai_969.jpg",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 114,
+    "1Star0to60": 8.5,
+    "1StarHandling": 72,
+
+    "2StarTopSpeed": 117,
+    "2Star0to60": 8.1,
+    "2StarHandling": 75,
+
+    "969MaxedTopSpeed": 120,
+    "969Maxed0to60": 7.1,
+    "969MaxedHandling": 77
+}

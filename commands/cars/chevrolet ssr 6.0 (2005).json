@@ -1,0 +1,49 @@
+{
+    "rq": 46,
+    "make": "Chevrolet",
+    "model": "SSR 6.0",
+    "modelYear": 2005,
+    "country": "US",
+    "topSpeed": 125,
+    "0to60": 5.5,
+    "handling": 74,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 2153,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Pickup",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 63.95,
+    "ola": 94.55,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/764420572645949470/chevrolet_ssr_6.0.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/764420382588665876/chevrolet_ssr_6.0.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/764420414100340756/chevrolet_ssr_6.0_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/764420424872230942/chevrolet_ssr_6.0_666.jpg",
+    "racehudMaxed996": "https://cdn.discordapp.com/attachments/718097267621363744/764420457163390996/chevrolet_ssr_6.0_996.jpg",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/764420444328689664/chevrolet_ssr_6.0_969.jpg",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 129,
+    "1Star0to60": 5.2,
+    "1StarHandling": 77,
+
+    "2StarTopSpeed": 132,
+    "2Star0to60": 4.9,
+    "2StarHandling": 80,
+
+	"996MaxedTopSpeed": 136,
+    "996Maxed0to60": 4.4,
+    "996MaxedHandling": 80,
+
+    "969MaxedTopSpeed": 136,
+    "969Maxed0to60": 4.6,
+    "969MaxedHandling": 82
+}

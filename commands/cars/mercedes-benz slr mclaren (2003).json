@@ -1,0 +1,45 @@
+{
+    "rq": 80,
+    "make": "Mercedes-Benz",
+    "model": "SLR McLaren",
+    "modelYear": 2003,
+    "country": "DE",
+    "topSpeed": 207,
+    "0to60": 3.5,
+    "handling": 87,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1750,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 87.50,
+    "ola": 91.43,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/768094137722601532/McMercSLR.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/768093872067969036/mercedes-benz_slr_mclaren.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/768093906524438528/mercedes-benz_slr_mclaren_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/768093914573045790/mercedes-benz_slr_mclaren_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "",
+    "racehudMaxed699": "https://cdn.discordapp.com/attachments/718097267621363744/768093929064235038/mercedes-benz_slr_mclaren_699.jpg",
+
+    "1StarTopSpeed": 209,
+    "1Star0to60": 3.3,
+    "1StarHandling": 90,
+
+    "2StarTopSpeed": 212,
+    "2Star0to60": 3.1,
+    "2StarHandling": 94,
+
+    "699MaxedTopSpeed": 214,
+    "699Maxed0to60": 3.0,
+    "699MaxedHandling": 97
+}

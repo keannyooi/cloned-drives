@@ -1,0 +1,45 @@
+{
+    "rq": 89,
+    "make": "Nissan",
+    "model": "GT-R",
+    "modelYear": 2013,
+    "country": "JP",
+    "topSpeed": 192,
+    "0to60": 3.0,
+    "handling": 86,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1740,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 73.17,
+    "ola": 73.33,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/753225259230167061/nissan_gt-r_2013.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/753233771104567346/nissan_gt-r_2013.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/753233840784277514/nissan_gt-r_2013_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/753233849504366662/nissan_gt-r_2013_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "",
+    "racehudMaxed699": "https://cdn.discordapp.com/attachments/718097267621363744/753233865979461683/nissan_gt-r_2013_699.jpg",
+
+    "1StarTopSpeed": 194,
+    "1Star0to60": 2.9,
+    "1StarHandling": 89,
+
+    "2StarTopSpeed": 197,
+    "2Star0to60": 2.7,
+    "2StarHandling": 92,
+
+    "699MaxedTopSpeed": 199,
+    "699Maxed0to60": 2.6,
+    "699MaxedHandling": 95
+}

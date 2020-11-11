@@ -1,0 +1,49 @@
+{
+    "rq": 39,
+    "make": "Chevrolet",
+    "model": "Malibu RS",
+    "modelYear": 2019,
+    "country": "US",
+    "topSpeed": 130,
+    "0to60": 7.8,
+    "handling": 79,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1422,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 53.79,
+    "ola": 76.92,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/729981381802721330/chevrolet_malibu_rs.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/729981783667507280/chevrolet_malibu_rs.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/729981828600954888/chevrolet_malibu_rs_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/729981842421448744/chevrolet_malibu_rs_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/729981856312721463/chevrolet_malibu_rs_969.jpg",
+    "racehudMaxed699": "https://cdn.discordapp.com/attachments/718097267621363744/731851796309344336/chevrolet_malibu_rs_699.jpg",
+
+    "1StarTopSpeed": 133,
+    "1Star0to60": 7.3,
+    "1StarHandling": 82,
+
+    "2StarTopSpeed": 137,
+    "2Star0to60": 6.8,
+    "2StarHandling": 85,
+
+    "969MaxedTopSpeed": 141,
+    "969Maxed0to60": 6.3,
+    "969MaxedHandling": 87,
+
+    "699MaxedTopSpeed": 138,
+    "699Maxed0to60": 6.4,
+    "699MaxedHandling": 88
+}

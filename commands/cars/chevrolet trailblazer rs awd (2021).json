@@ -1,0 +1,45 @@
+{
+    "rq": 48,
+    "make": "Chevrolet",
+    "model": "Trailblazer RS AWD",
+    "modelYear": 2021,
+    "country": "US",
+    "topSpeed": 130,
+    "0to60": 9.4,
+    "handling": 75,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1507,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 41.78,
+    "ola": 78.72,
+    "description": "This car once broke the game's database. Not joking.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/732419998659903529/Chevrolet_Trailblazer_RS_AWD_2021.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/732481263943811173/Chevrolet_Trailblazer_RS_AWD_2021_000.png",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/732481292918063184/Chevrolet_Trailblazer_RS_AWD_2021_333.png",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/732481331174309999/Chevrolet_Trailblazer_RS_AWD_2021_666.png",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/732481377970290698/Chevrolet_Trailblazer_RS_AWD_2021_969.png",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 133,
+    "1Star0to60": 8.7,
+    "1StarHandling": 78,
+
+    "2StarTopSpeed": 137,
+    "2Star0to60": 8.0,
+    "2StarHandling": 81,
+
+    "969MaxedTopSpeed": 140,
+    "969Maxed0to60": 7.3,
+    "969MaxedHandling": 83
+}

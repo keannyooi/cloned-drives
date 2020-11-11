@@ -1,0 +1,45 @@
+{
+    "rq": 35,
+    "make": "Audi",
+    "model": "TT 1.8t",
+    "modelYear": 1998,
+    "country": "DE",
+    "topSpeed": 132,
+    "0to60": 6.9,
+    "handling": 78,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1340,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 54.76,
+    "ola": 81.16,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/718722040840060979/audi_tt_1.8t.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/718725380252500028/audi_tt_1.8t.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/718725414608044132/audi_tt_1.8t_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/718725431863279686/audi_tt_1.8t_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/718725455674474496/audi_tt_1.8t_969.jpg",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 136,
+    "1Star0to60": 6.5,
+    "1StarHandling": 81,
+
+    "2StarTopSpeed": 140,
+    "2Star0to60": 6.0,
+    "2StarHandling": 84,
+
+    "969MaxedTopSpeed": 143,
+    "969Maxed0to60": 5.6,
+    "969MaxedHandling": 86
+}

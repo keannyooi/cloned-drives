@@ -1,0 +1,45 @@
+{
+    "rq": 30,
+    "make": "Abarth",
+    "model": "500",
+    "modelYear": 2008,
+    "country": "IT",
+    "topSpeed": 129,
+    "0to60": 7.0,
+    "handling": 74,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1035,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 57.38,
+    "ola": 62.86,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/765190123133861909/Abarth500.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/765189761417347072/abarth_500.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/765189781725904896/abarth_500_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/765189790135746609/abarth_500_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/765189803444273172/abarth_500_969.jpg",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 133,
+    "1Star0to60": 6.6,
+    "1StarHandling": 77,
+
+    "2StarTopSpeed": 137,
+    "2Star0to60": 6.1,
+    "2StarHandling": 80,
+
+    "969MaxedTopSpeed": 140,
+    "969Maxed0to60": 5.7,
+    "969MaxedHandling": 82
+}

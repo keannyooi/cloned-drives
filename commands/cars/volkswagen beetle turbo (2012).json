@@ -1,0 +1,45 @@
+{
+    "rq": 48,
+    "make": "Volkswagen",
+    "model": "Beetle Turbo",
+    "modelYear": 2012,
+    "country": "DE",
+    "topSpeed": 140,
+    "0to60": 6.3,
+    "handling": 77,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1380,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 60.00,
+    "ola": 95.24,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/746725571622338650/BeetleTurbo2012.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/746308677476155422/VWBeetleTurboStock.png",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/746308864206700594/VWBeetleTurbo1star.png",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/746308864260964383/VWBeetleTurbo2star.png",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/746308910385856592/VWBeetleTurboMaxed.png",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 143,
+    "1Star0to60": 5.9,
+    "1StarHandling": 80,
+
+    "2StarTopSpeed": 146,
+    "2Star0to60": 5.5,
+    "2StarHandling": 82,
+
+    "969MaxedTopSpeed": 150,
+    "969Maxed0to60": 5.2,
+    "969MaxedHandling": 85
+}

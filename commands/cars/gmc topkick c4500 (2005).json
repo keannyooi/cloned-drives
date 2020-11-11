@@ -1,0 +1,45 @@
+{
+    "rq": 34,
+    "make": "GMC",
+    "model": "TopKick C4500",
+    "modelYear": 2005,
+    "country": "US",
+    "topSpeed": 76,
+    "0to60": 14.4,
+    "handling": 55,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 5126,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "Pickup",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 0.00,
+    "ola": 65.28,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/759258031179169812/topkick.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/759257761795801130/gmc_topkick_c4500.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/759257807911649310/gmc_topkick_c4500_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/759257817092980766/gmc_topkick_c4500_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/759257836554289182/gmc_topkick_c4500_969.jpg",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 77,
+    "1Star0to60": 13.1,
+    "1StarHandling": 57,
+
+    "2StarTopSpeed": 80,
+    "2Star0to60": 11.8,
+    "2StarHandling": 59,
+
+    "969MaxedTopSpeed": 82,
+    "969Maxed0to60": 10.6,
+    "969MaxedHandling": 61
+}

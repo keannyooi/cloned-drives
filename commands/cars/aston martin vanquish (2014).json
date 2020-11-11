@@ -1,0 +1,45 @@
+{
+    "rq": 79,
+    "make": "Aston Martin",
+    "model": "Vanquish",
+    "modelYear": 2014,
+    "country": "GB",
+    "topSpeed": 201,
+    "0to60": 3.6,
+    "handling": 87,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1739,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 76.60,
+    "ola": 94.44,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/744915952344498217/unknown.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/744899810712092793/aston_martin_vanquish.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/744899964135538808/aston_martin_vanquish_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/744899982657847366/aston_martin_vanquish_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "",
+    "racehudMaxed699": "https://cdn.discordapp.com/attachments/718097267621363744/744900025938608310/aston_martin_vanquish_969.jpg",
+
+    "1StarTopSpeed": 203,
+    "1Star0to60": 3.4,
+    "1StarHandling": 90,
+
+    "2StarTopSpeed": 205,
+    "2Star0to60": 3.2,
+    "2StarHandling": 94,
+
+    "699MaxedTopSpeed": 207,
+    "699Maxed0to60": 3.1,
+    "699MaxedHandling": 97
+}

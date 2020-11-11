@@ -1,0 +1,17 @@
+{
+	"trackName": "0-100MPH (Snowy)",
+	"weather": "Sunny",
+	"surface": "Snow",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://cdn.discordapp.com/attachments/716917404868935691/773114664317878282/unknown.png",
+	
+	"specsDistr": {
+		"topSpeed": 0,
+		"0to60": 100,
+		"handling": 0,
+		"weight": 0,
+		"mra": 100,
+		"ola": -10
+	}
+}

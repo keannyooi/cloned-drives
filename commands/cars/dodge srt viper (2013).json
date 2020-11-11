@@ -1,0 +1,45 @@
+{
+    "rq": 86,
+    "make": "Dodge",
+    "model": "SRT Viper",
+    "modelYear": 2013,
+    "country": "US",
+    "topSpeed": 206,
+    "0to60": 3.5,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Wild Ride"],
+    "isPrize": false,
+
+    "weight": 1490,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 100.00,
+    "ola": 97.14,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/723808902797459456/dodge_srt_viper.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/723837008866443274/dodge_srt_viper.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/723837142056566865/dodge_srt_viper_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/723837155331276840/dodge_srt_viper_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "",
+    "racehudMaxed699": "https://cdn.discordapp.com/attachments/718097267621363744/723837176638603354/dodge_srt_viper_699.jpg",
+
+    "1StarTopSpeed": 208,
+    "1Star0to60": 3.3,
+    "1StarHandling": 94,
+
+    "2StarTopSpeed": 211,
+    "2Star0to60": 3.1,
+    "2StarHandling": 98,
+
+    "699MaxedTopSpeed": 213,
+    "699Maxed0to60": 3.0,
+    "699MaxedHandling": 101
+}

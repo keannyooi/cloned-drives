@@ -1,0 +1,45 @@
+{
+    "rq": 28,
+    "make": "Honda",
+    "model": "Clarity FCV",
+    "modelYear": 2016,
+    "country": "JP",
+    "topSpeed": 105,
+    "0to60": 8.1,
+    "handling": 71,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly", "OG"],
+    "isPrize": false,
+
+    "weight": 1881,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Hydrogen",
+    "mra": 43.55,
+    "ola": 74.07,
+    "description": "The MRA is a lie.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/716206001136730132/honda_clarity_fcv.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/718270196120289300/honda_clarity_fcv.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/718270291985563708/honda_clarity_fcv_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/718270336726073436/honda_clarity_fcv_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/718270382376747098/honda_clarity_fcv_969.jpg",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 108,
+    "1Star0to60": 7.6,
+    "1StarHandling": 73,
+
+    "2StarTopSpeed": 111,
+    "2Star0to60": 7.0,
+    "2StarHandling": 76,
+
+    "969MaxedTopSpeed": 114,
+    "969Maxed0to60": 6.5,
+    "969MaxedHandling": 79
+}

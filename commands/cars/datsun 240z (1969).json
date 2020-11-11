@@ -1,0 +1,45 @@
+{
+    "rq": 19,
+    "make": "Datsun",
+    "model": "240Z",
+    "modelYear": 1969,
+    "country": "JP",
+    "topSpeed": 115,
+    "0to60": 8.7,
+    "handling": 66,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1068,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "fuelType": "Petrol",
+    "mra": 47.28,
+    "ola": 73.56,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/774539265093795881/1969_Datsun_240Z.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/774557473226883092/datsun_240z.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/774557490360090644/datsun_240z_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/774557498714619914/datsun_240z_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/774557520006086666/datsun_240z_969.jpg",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 118,
+    "1Star0to60": 8.1,
+    "1StarHandling": 68,
+
+    "2StarTopSpeed": 122,
+    "2Star0to60": 7.5,
+    "2StarHandling": 71,
+
+    "969MaxedTopSpeed": 125,
+    "969Maxed0to60": 7.0,
+    "969MaxedHandling": 73
+}

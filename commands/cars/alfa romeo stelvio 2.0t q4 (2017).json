@@ -1,0 +1,45 @@
+{
+    "rq": 59,
+    "make": "Alfa Romeo",
+    "model": "Stelvio 2.0T Q4",
+    "modelYear": 2017,
+    "country": "IT",
+    "topSpeed": 144,
+    "0to60": 5.4,
+    "handling": 76,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1834,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 58.06,
+    "ola": 85.18,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/729950199350427699/alfa_romeo_stelvio_2.0t_q4.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/729950925707542588/alfa_romeo_stelvio_2.0t_q4.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/729951016287469609/alfa_romeo_stelvio_2.0t_q4_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/729951029000667136/alfa_romeo_stelvio_2.0t_q4_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/729951062303440966/alfa_romeo_stelvio_2.0t_q4_969.jpg",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 148,
+    "1Star0to60": 5.1,
+    "1StarHandling": 79,
+
+    "2StarTopSpeed": 152,
+    "2Star0to60": 4.8,
+    "2StarHandling": 82,
+
+    "969MaxedTopSpeed": 156,
+    "969Maxed0to60": 4.5,
+    "969MaxedHandling": 84
+}

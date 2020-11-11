@@ -1,0 +1,45 @@
+{
+    "rq": 21,
+    "make": "Ford",
+    "model": "Taurus LX",
+    "modelYear": 1986,
+    "country": "US",
+    "topSpeed": 114,
+    "0to60": 9.8,
+    "handling": 68,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1380,
+    "gc": "Medium",
+    "seatCount": 6,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "fuelType": "Petrol",
+    "mra": 45.79,
+    "ola": 67.35,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/734357297353982042/ford_taurus_lx_1986.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/734349545408036895/TaurusStock.png",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/734349586235260968/Taurus1star.png",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/734349617185030225/Taurus2star.png",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/734349663271911444/Taurus969.png",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 117,
+    "1Star0to60": 9.2,
+    "1StarHandling": 71,
+
+    "2StarTopSpeed": 121,
+    "2Star0to60": 8.4,
+    "2StarHandling": 73,
+
+    "969MaxedTopSpeed": 124,
+    "969Maxed0to60": 7.7,
+    "969MaxedHandling": 75
+}

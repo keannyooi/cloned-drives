@@ -1,0 +1,45 @@
+{
+    "rq": 45,
+    "make": "Abarth",
+    "model": "124 Spider",
+    "modelYear": 2017,
+    "country": "IT",
+    "topSpeed": 144,
+    "0to60": 6.3,
+    "handling": 84,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["OG"],
+    "isPrize": false,
+
+    "weight": 1080,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Roadster",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 55.75,
+    "ola": 66.67,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/729590760114225223/abarth_124_spider.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/729610557555998730/abarth_124_spider.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/729610580733984808/abarth_124_spider_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/729610590678548480/abarth_124_spider_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/729610604049989632/abarth_124_spider_969.jpg",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 148,
+    "1Star0to60": 5.9,
+    "1StarHandling": 87,
+
+    "2StarTopSpeed": 152,
+    "2Star0to60": 5.5,
+    "2StarHandling": 90,
+
+    "969MaxedTopSpeed": 156,
+    "969Maxed0to60": 5.1,
+    "969MaxedHandling": 93
+}

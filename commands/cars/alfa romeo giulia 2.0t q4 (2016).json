@@ -1,0 +1,49 @@
+{
+    "rq": 60,
+    "make": "Alfa Romeo",
+    "model": "Giulia 2.0T Q4",
+    "modelYear": 2016,
+    "country": "IT",
+    "topSpeed": 149,
+    "0to60": 5.5,
+    "handling": 71,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1660,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 63.95,
+    "ola": 61.82,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/770626610553946152/alfa_romeo_giulia_2.0t_q4.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/770626126682259496/alfa_romeo_giulia_2.0t_q4.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/770626160434085898/alfa_romeo_giulia_2.0t_q4_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/770626170500677632/alfa_romeo_giulia_2.0t_q4_666.jpg",
+    "racehudMaxed996": "https://cdn.discordapp.com/attachments/718097267621363744/770626215706886174/alfa_romeo_giulia_2.0t_q4_996.jpg",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/770626192520118282/alfa_romeo_giulia_2.0t_q4_969.jpg",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 153,
+    "1Star0to60": 5.2,
+    "1StarHandling": 73,
+
+    "2StarTopSpeed": 158,
+    "2Star0to60": 4.9,
+    "2StarHandling": 76,
+
+    "996MaxedTopSpeed": 162,
+    "996Maxed0to60": 4.4,
+    "996MaxedHandling": 77,
+
+	"969MaxedTopSpeed": 161,
+    "969Maxed0to60": 4.5,
+    "969MaxedHandling": 79
+}

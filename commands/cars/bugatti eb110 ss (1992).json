@@ -1,0 +1,45 @@
+{
+    "rq": 93,
+    "make": "Bugatti",
+    "model": "EB110 SS",
+    "modelYear": 1992,
+    "country": "FR",
+    "topSpeed": 221,
+    "0to60": 3.1,
+    "handling": 89,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1418,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 100.00,
+    "ola": 90.32,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/733289664433094666/bugatti_eb110_ss.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/733289769504735344/bugatti_eb110_ss.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/733289810869092422/bugatti_eb110_ss_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/733289821421961266/bugatti_eb110_ss_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "",
+    "racehudMaxed699": "https://cdn.discordapp.com/attachments/718097267621363744/733289836009488384/bugatti_eb110_ss_699.jpg",
+
+    "1StarTopSpeed": 223,
+    "1Star0to60": 2.9,
+    "1StarHandling": 92,
+
+    "2StarTopSpeed": 225,
+    "2Star0to60": 2.7,
+    "2StarHandling": 96,
+
+    "699MaxedTopSpeed": 227,
+    "699Maxed0to60": 2.6,
+    "699MaxedHandling": 99
+}

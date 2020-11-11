@@ -1,0 +1,45 @@
+{
+    "rq": 61,
+    "make": "Chevrolet",
+    "model": "Camaro SS",
+    "modelYear": 2010,
+    "country": "US",
+    "topSpeed": 155,
+    "0to60": 4.6,
+    "handling": 83,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Muscle Car"],
+    "isPrize": false,
+
+    "weight": 1751,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 77.97,
+    "ola": 85.96,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/733269579781898308/ChevroletCamaroSS.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/733269157835177994/chevrolet_camaro_ss_2010.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/733269432251580487/chevrolet_camaro_ss_2010_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/733269440552239164/chevrolet_camaro_ss_2010_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/733269461683011644/chevrolet_camaro_ss_2010_969.jpg",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 159,
+    "1Star0to60": 4.4,
+    "1StarHandling": 86,
+
+    "2StarTopSpeed": 163,
+    "2Star0to60": 4.1,
+    "2StarHandling": 89,
+
+    "969MaxedTopSpeed": 167,
+    "969Maxed0to60": 3.9,
+    "969MaxedHandling": 92
+}

@@ -1,0 +1,45 @@
+{
+    "rq": 72,
+    "make": "BMW",
+    "model": "M2 Coupe",
+    "modelYear": 2016,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 4.1,
+    "handling": 90,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1592,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 67.21,
+    "ola": 82.93,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/733728958494933062/BMWM2_CDver.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/733728596715372694/BMWM2Stock.png",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/733728697970065438/BMWM21star.png",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/733728723525959791/BMWM22star.png",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "",
+    "racehudMaxed699": "https://cdn.discordapp.com/attachments/718097267621363744/733728772435476500/BMWM2699.png",
+
+    "1StarTopSpeed": 159,
+    "1Star0to60": 3.9,
+    "1StarHandling": 93,
+
+    "2StarTopSpeed": 163,
+    "2Star0to60": 3.7,
+    "2StarHandling": 96,
+
+    "699MaxedTopSpeed": 167,
+    "699Maxed0to60": 3.6,
+    "699MaxedHandling": 100
+}

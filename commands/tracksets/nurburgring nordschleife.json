@@ -1,0 +1,17 @@
+{
+	"trackName": "Nurburgring Nordschleife",
+	"weather": "Sunny",
+	"surface": "Asphalt",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://cdn.discordapp.com/attachments/716917404868935691/741242563159130132/unknown.png",
+	
+	"specsDistr": {
+		"topSpeed": 100,
+		"0to60": 5,
+		"handling": 50,
+		"weight": 0,
+		"mra": 100,
+		"ola": 0
+	}
+}

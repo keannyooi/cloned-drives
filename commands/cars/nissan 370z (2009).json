@@ -1,0 +1,45 @@
+{
+    "rq": 56,
+    "make": "Nissan",
+    "model": "370Z",
+    "modelYear": 2009,
+    "country": "JP",
+    "topSpeed": 155,
+    "0to60": 5.0,
+    "handling": 86,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer"],
+    "isPrize": false,
+
+    "weight": 1466,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 68.49,
+    "ola": 80.00,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/728968281758630008/nissan_370z.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/729304232968060928/nissan_370z.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/729304904753086495/nissan_370z_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/729304917315027004/nissan_370z_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/729304929327513606/nissan_370z_969.jpg",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 159,
+    "1Star0to60": 4.7,
+    "1StarHandling": 89,
+
+    "2StarTopSpeed": 163,
+    "2Star0to60": 4.4,
+    "2StarHandling": 92,
+
+    "969MaxedTopSpeed": 167,
+    "969Maxed0to60": 4.1,
+    "969MaxedHandling": 95
+}

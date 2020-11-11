@@ -1,0 +1,49 @@
+{
+    "rq": 77,
+    "make": "BMW",
+    "model": "X7 M50i",
+    "modelYear": 2019,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 4.1,
+    "handling": 75,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 2568,
+    "gc": "High",
+    "seatCount": 6,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 65.08,
+    "ola": 63.41,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/764790680156897300/bmw_x7_m50i.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/764798636528893952/bmw_x7_m50i.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/764798672075882536/bmw_x7_m50i_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/764798681064013844/bmw_x7_m50i_666.jpg",
+    "racehudMaxed996": "https://cdn.discordapp.com/attachments/718097267621363744/774979778796322836/bmw_x7_m50i_996.jpg",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/764798707064373278/bmw_x7_m50i_969.jpg",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 159,
+    "1Star0to60": 3.9,
+    "1StarHandling": 78,
+
+    "2StarTopSpeed": 163,
+    "2Star0to60": 3.6,
+    "2StarHandling": 81,
+
+    "996MaxedTopSpeed": 168,
+    "996Maxed0to60": 3.3,
+    "996MaxedHandling": 81,
+
+    "969MaxedTopSpeed": 167,
+    "969Maxed0to60": 3.4,
+    "969MaxedHandling": 83
+}

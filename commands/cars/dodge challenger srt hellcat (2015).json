@@ -1,0 +1,49 @@
+{
+    "rq": 76,
+    "make": "Dodge",
+    "model": "Challenger SRT Hellcat",
+    "modelYear": 2015,
+    "country": "US",
+    "topSpeed": 199,
+    "0to60": 3.6,
+    "handling": 83,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Muscle Car", "OG"],
+    "isPrize": false,
+
+    "weight": 2013,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 90.00,
+    "ola": 88.89,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/719153214733418536/dodge_challenger_srt_hellcat_2015.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/719553359014527006/dodge_challenger_srt_hellcat_2015.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/719553396125990952/dodge_challenger_srt_hellcat_2015_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/719553434839416842/dodge_challenger_srt_hellcat_2015_666.jpg",
+    "racehudMaxed996": "https://cdn.discordapp.com/attachments/718097267621363744/719553549234602084/dodge_challenger_srt_hellcat_2015_996.jpg",
+    "racehudMaxed969": "",
+    "racehudMaxed699": "https://cdn.discordapp.com/attachments/718097267621363744/719553515441356810/dodge_challenger_srt_hellcat_2015_699.jpg",
+
+    "1StarTopSpeed": 201,
+    "1Star0to60": 3.4,
+    "1StarHandling": 86,
+
+    "2StarTopSpeed": 205,
+    "2Star0to60": 3.2,
+    "2StarHandling": 89,
+
+    "996MaxedTopSpeed": 210,
+    "996Maxed0to60": 2.9,
+    "996MaxedHandling": 89,
+
+    "699MaxedTopSpeed": 205,
+    "699Maxed0to60": 3.0,
+    "699MaxedHandling": 92
+}

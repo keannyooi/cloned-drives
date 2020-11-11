@@ -1,0 +1,45 @@
+{
+    "rq": 80,
+    "make": "Alfa Romeo",
+    "model": "Giulia Quadrifoglio",
+    "modelYear": 2016,
+    "country": "IT",
+    "topSpeed": 191,
+    "0to60": 3.6,
+    "handling": 90,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1524,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 80.00,
+    "ola": 88.89,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/733973415366623274/769176969190309908/giulia_qv.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/768088919563567185/alfa_romeo_giulia_qv.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/768088994323365908/alfa_romeo_giulia_qv_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/768089003348983808/alfa_romeo_giulia_qv_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "",
+    "racehudMaxed699": "https://cdn.discordapp.com/attachments/718097267621363744/768089032508833832/alfa_romeo_giulia_qv_699.jpg",
+
+    "1StarTopSpeed": 193,
+    "1Star0to60": 3.4,
+    "1StarHandling": 93,
+
+    "2StarTopSpeed": 197,
+    "2Star0to60": 3.2,
+    "2StarHandling": 97,
+
+    "699MaxedTopSpeed": 200,
+    "699Maxed0to60": 3.1,
+    "699MaxedHandling": 100
+}

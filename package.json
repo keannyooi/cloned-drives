@@ -1,0 +1,23 @@
+{
+  "name": "AjarSaneEquation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "canvas": "^2.6.1",
+    "discord.js": "^12.3.1",
+    "discord.js-light": "^3.2.11",
+    "express": "^4.17.1",
+    "moment": "^2.29.0",
+    "mongodb": "^3.6.2",
+    "os": "^0.1.1",
+    "quickmongo": "^2.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,45 @@
+{
+    "rq": 15,
+    "make": "Opel",
+    "model": "GT 1900",
+    "modelYear": 1968,
+    "country": "JP",
+    "topSpeed": 115,
+    "0to60": 10.9,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 970,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "fuelType": "Petrol",
+    "mra": 39.49,
+    "ola": 64.22,
+    "description": "The pop-up headlights flip sideways.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/740474321188946080/opel_gt_1900.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/740474197918351440/opel_gt_1900.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/740474364335751238/opel_gt_1900_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/740474373705826374/opel_gt_1900_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/740474384183197736/opel_gt_1900_969.jpg",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 118,
+    "1Star0to60": 10.1,
+    "1StarHandling": 78,
+
+    "2StarTopSpeed": 122,
+    "2Star0to60": 9.3,
+    "2StarHandling": 81,
+
+    "969MaxedTopSpeed": 125,
+    "969Maxed0to60": 8.5,
+    "969MaxedHandling": 83
+}

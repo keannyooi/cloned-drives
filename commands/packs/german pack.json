@@ -1,0 +1,21 @@
+{
+	"packName": "German Pack",
+	"description": "Your generic pack in Cloned Drives.",
+	"packType": "Regular",
+	"price": 120000,
+	"pack": "https://cdn.discordapp.com/attachments/716917404868935691/718369005814939737/german_pack.png",
+	
+	"filter": {
+		"make": "None",
+		"modelYear": {
+			"start": 1000,
+			"end": 3000
+		},
+		"country": "DE",
+		"tag": "None",
+		"driveType": "None",
+		"tyreType": "None",
+		"fuelType": "None",
+		"bodyStyle": "None"
+	}
+}

@@ -1,0 +1,45 @@
+{
+    "rq": 14,
+    "make": "Honda",
+    "model": "City R",
+    "modelYear": 1982,
+    "country": "JP",
+    "topSpeed": 91,
+    "0to60": 12.6,
+    "handling": 65,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 700,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "fuelType": "Petrol",
+    "mra": 13.82,
+    "ola": 61.90,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/733442567831683232/F.CityR.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/733442699465719848/HondaCityRStock.png",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/733442727982792765/HondaCityR1star.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/733442755652616272/HondaCityR2star.png",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/733442808584601680/HondaCityR969.png",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 94,
+    "1Star0to60": 11.9,
+    "1StarHandling": 68,
+
+    "2StarTopSpeed": 97,
+    "2Star0to60": 10.7,
+    "2StarHandling": 71,
+
+    "969MaxedTopSpeed": 99,
+    "969Maxed0to60": 9.7,
+    "969MaxedHandling": 73
+}

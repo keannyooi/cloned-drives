@@ -1,0 +1,45 @@
+{
+    "rq": 60,
+    "make": "Kia",
+    "model": "Telluride SX AWD",
+    "modelYear": 2020,
+    "country": "KR",
+    "topSpeed": 132,
+    "0to60": 7.0,
+    "handling": 74,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Pacific Storm"],
+    "isPrize": false,
+
+    "weight": 2044,
+    "gc": "High",
+    "seatCount": 7,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 65.42,
+    "ola": 71.43,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/733291880145485824/TellurideSXAWD.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/733287678866358332/KiaTellurideSXAWDStock.png",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/733287725905608824/KiaTellurideSXAWD1star_2.png",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/733287788883083374/KiaTellurideSXAWD2star.png",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/733287870252449842/KiaTellurideSXAWD969.png",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 136,
+    "1Star0to60": 6.6,
+    "1StarHandling": 77,
+
+    "2StarTopSpeed": 138,
+    "2Star0to60": 6.1,
+    "2StarHandling": 80,
+
+    "969MaxedTopSpeed": 141,
+    "969Maxed0to60": 5.7,
+    "969MaxedHandling": 82
+}

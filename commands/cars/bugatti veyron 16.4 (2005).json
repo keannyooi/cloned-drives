@@ -1,0 +1,45 @@
+{
+    "rq": 96,
+    "make": "Bugatti",
+    "model": "Veyron 16.4",
+    "modelYear": 2005,
+    "country": "DE",
+    "topSpeed": 253,
+    "0to60": 2.6,
+    "handling": 86,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Ultra Expensive"],
+    "isPrize": false,
+
+    "weight": 1888,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 89.66,
+    "ola": 92.31,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/736527952044359740/bugatti_veyron.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/736529762952019979/bugatti_veyron.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/736529790651072543/bugatti_veyron_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/736529806103150694/bugatti_veyron_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "",
+    "racehudMaxed699": "https://cdn.discordapp.com/attachments/718097267621363744/736529823186550804/bugatti_veyron_699.jpg",
+
+    "1StarTopSpeed": 255,
+    "1Star0to60": 2.5,
+    "1StarHandling": 89,
+
+    "2StarTopSpeed": 257,
+    "2Star0to60": 2.4,
+    "2StarHandling": 93,
+
+    "699MaxedTopSpeed": 259,
+    "699Maxed0to60": 2.3,
+    "699MaxedHandling": 96
+}

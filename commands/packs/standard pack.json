@@ -1,0 +1,21 @@
+{
+	"packName": "Standard Pack",
+	"description": "Your generic pack in Cloned Drives.",
+	"packType": "Regular",
+	"price": 90000,
+	"pack": "https://cdn.discordapp.com/attachments/716917404868935691/718360596130693140/standard_pack.png",
+	
+	"filter": {
+		"make": "None",
+		"modelYear": {
+			"start": 1000,
+			"end": 3000
+		},
+		"country": "None",
+		"tag": "None",
+		"driveType": "None",
+		"tyreType": "None",
+		"fuelType": "None",
+		"bodyStyle": "None"
+	}
+}

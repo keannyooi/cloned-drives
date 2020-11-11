@@ -1,0 +1,45 @@
+{
+    "rq": 35,
+    "make": "Pontiac",
+    "model": "G5 GT",
+    "modelYear": 2007,
+    "country": "US",
+    "topSpeed": 139,
+    "0to60": 7.5,
+    "handling": 79,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1286,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 48.08,
+    "ola": 77.33,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/746937450764566608/G5GT2007.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/746328218386038784/g5GTStock.png",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/746328240632889435/g5GT1star.png",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/746328273222631455/g5GT2star.png",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/746328311072030740/g5GTMax.png",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 142,
+    "1Star0to60": 7.1,
+    "1StarHandling": 82,
+
+    "2StarTopSpeed": 145,
+    "2Star0to60": 6.6,
+    "2StarHandling": 85,
+
+    "969MaxedTopSpeed": 149,
+    "969Maxed0to60": 6.1,
+    "969MaxedHandling": 87
+}

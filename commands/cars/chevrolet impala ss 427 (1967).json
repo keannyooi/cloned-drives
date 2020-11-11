@@ -1,0 +1,45 @@
+{
+    "rq": 29,
+    "make": "Chevrolet",
+    "model": "Impala SS 427",
+    "modelYear": 1967,
+    "country": "US",
+    "topSpeed": 130,
+    "0to60": 6.2,
+    "handling": 60,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Muscle Car", "OG"],
+    "isPrize": false,
+
+    "weight": 1740,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "fuelType": "Petrol",
+    "mra": 60.78,
+    "ola": 90.32,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/729610361392594994/chevrolet_impala_ss_427_1967.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/729611936139837500/chevrolet_impala_ss_427_1967.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/729611986610159616/chevrolet_impala_ss_427_1967_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/729611995720056832/chevrolet_impala_ss_427_1967_666.jpg",
+    "racehudMaxed996": "https://cdn.discordapp.com/attachments/718097267621363744/729612009477242890/chevrolet_impala_ss_427_1967_996.jpg",
+    "racehudMaxed969": "",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 134,
+    "1Star0to60": 5.8,
+    "1StarHandling": 62,
+
+    "2StarTopSpeed": 138,
+    "2Star0to60": 5.4,
+    "2StarHandling": 64,
+
+    "996MaxedTopSpeed": 143,
+    "996Maxed0to60": 4.9,
+    "996MaxedHandling": 64
+}

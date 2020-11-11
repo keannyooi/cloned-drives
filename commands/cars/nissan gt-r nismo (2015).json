@@ -1,0 +1,45 @@
+{
+    "rq": 94,
+    "make": "Nissan",
+    "model": "GT-R Nismo",
+    "modelYear": 2015,
+    "country": "JP",
+    "topSpeed": 191,
+    "0to60": 2.9,
+    "handling": 91,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1761,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 70.73,
+    "ola": 82.76,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/753225301663809616/nissan_gt-r_nismo_2015.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/753233949718741082/nissan_gt-r_nismo_2015.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/753233993075392532/nissan_gt-r_nismo_2015_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/753234003397705819/nissan_gt-r_nismo_2015_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "",
+    "racehudMaxed699": "https://cdn.discordapp.com/attachments/718097267621363744/753234014340513892/nissan_gt-r_nismo_2015_699.jpg",
+
+    "1StarTopSpeed": 193,
+    "1Star0to60": 2.7,
+    "1StarHandling": 94,
+
+    "2StarTopSpeed": 196,
+    "2Star0to60": 2.5,
+    "2StarHandling": 98,
+
+    "699MaxedTopSpeed": 198,
+    "699Maxed0to60": 2.4,
+    "699MaxedHandling": 101
+}

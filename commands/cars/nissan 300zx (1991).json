@@ -1,0 +1,45 @@
+{
+    "rq": 41,
+    "make": "Nissan",
+    "model": "300ZX",
+    "modelYear": 1991,
+    "country": "JP",
+    "topSpeed": 143,
+    "0to60": 6.7,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1492,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 56.30,
+    "ola": 80.60,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/759729223043776532/Nissan300ZX.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/759728989320511518/nissan_300zx.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/759729654964682782/nissan_300zx_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/759729661923819530/nissan_300zx_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/759729684656947240/nissan_300zx_969.jpg",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 147,
+    "1Star0to60": 6.3,
+    "1StarHandling": 80,
+
+    "2StarTopSpeed": 151,
+    "2Star0to60": 5.9,
+    "2StarHandling": 83,
+
+    "969MaxedTopSpeed": 155,
+    "969Maxed0to60": 5.5,
+    "969MaxedHandling": 85
+}

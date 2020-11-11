@@ -1,0 +1,45 @@
+{
+    "rq": 78,
+    "make": "Aston Martin",
+    "model": "DB11 V12",
+    "modelYear": 2017,
+    "country": "GB",
+    "topSpeed": 200,
+    "0to60": 3.8,
+    "handling": 88,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Silver Screen"],
+    "isPrize": false,
+
+    "weight": 1875,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 84.44,
+    "ola": 94.74,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/775710650886258708/db11.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/775715369032745002/aston_martin_db11_v12.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/775715403023777812/aston_martin_db11_v12_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/775715409365434408/aston_martin_db11_v12_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "",
+    "racehudMaxed699": "https://cdn.discordapp.com/attachments/718097267621363744/775715422871486505/aston_martin_db11_v12_699.jpg",
+
+    "1StarTopSpeed": 202,
+    "1Star0to60": 3.6,
+    "1StarHandling": 91,
+
+    "2StarTopSpeed": 204,
+    "2Star0to60": 3.4,
+    "2StarHandling": 95,
+
+    "699MaxedTopSpeed": 206,
+    "699Maxed0to60": 3.2,
+    "699MaxedHandling": 98
+}

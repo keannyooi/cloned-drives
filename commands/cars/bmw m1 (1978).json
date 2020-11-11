@@ -1,0 +1,49 @@
+{
+    "rq": 44,
+    "make": "BMW",
+    "model": "M1",
+    "modelYear": 1978,
+    "country": "DE",
+    "topSpeed": 163,
+    "0to60": 5.4,
+    "handling": 74,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1300,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "fuelType": "Petrol",
+    "mra": 67.50,
+    "ola": 88.89,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/751059109310365736/bmw_m1.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/751058975012946011/bmw_m1.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/751058996169015416/bmw_m1_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/751059005111140383/bmw_m1_666.jpg",
+    "racehudMaxed996": "https://cdn.discordapp.com/attachments/718097267621363744/774628483337945108/bmw_m1_996.jpg",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/774628457937502248/bmw_m1_969.jpg",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 166,
+    "1Star0to60": 5.1,
+    "1StarHandling": 77,
+
+    "2StarTopSpeed": 170,
+    "2Star0to60": 4.8,
+    "2StarHandling": 80,
+
+    "996MaxedTopSpeed": 175,
+    "996Maxed0to60": 4.3,
+    "996MaxedHandling": 80,
+
+	"969MaxedTopSpeed": 173,
+    "969Maxed0to60": 4.5,
+    "969MaxedHandling": 82
+}

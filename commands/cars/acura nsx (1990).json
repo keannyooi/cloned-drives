@@ -1,0 +1,45 @@
+{
+    "rq": 58,
+    "make": "Acura",
+    "model": "NSX",
+    "modelYear": 1990,
+    "country": "US",
+    "topSpeed": 162,
+    "0to60": 5.2,
+    "handling": 84,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer"],
+    "isPrize": false,
+
+    "weight": 1370,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 69.33,
+    "ola": 76.92,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/764446605914406922/corners_gone.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/764448569645989918/acura_nsx.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/764448598980952084/acura_nsx_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/764448610251046954/acura_nsx_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/764448639618646026/acura_nsx_969.jpg",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 166,
+    "1Star0to60": 4.9,
+    "1StarHandling": 87,
+
+    "2StarTopSpeed": 170,
+    "2Star0to60": 4.6,
+    "2StarHandling": 90,
+
+    "969MaxedTopSpeed": 174,
+    "969Maxed0to60": 4.3,
+    "969MaxedHandling": 93
+}

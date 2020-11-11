@@ -1,0 +1,45 @@
+{
+    "rq": 28,
+    "make": "Volkswagen",
+    "model": "Beetle 2.5",
+    "modelYear": 2012,
+    "country": "DE",
+    "topSpeed": 113,
+    "0to60": 8.8,
+    "handling": 77,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1409,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 55.37,
+    "ola": 77.27,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/729524070206537839/volkswagen_beetle_2.5.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/729535930859520061/volkswagen_beetle_2.5.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/729535984156409966/volkswagen_beetle_2.5_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/729536011645747261/volkswagen_beetle_2.5_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/729536064548765786/volkswagen_beetle_2.5_969.jpg",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 116,
+    "1Star0to60": 8.2,
+    "1StarHandling": 79,
+
+    "2StarTopSpeed": 119,
+    "2Star0to60": 7.6,
+    "2StarHandling": 82,
+
+    "969MaxedTopSpeed": 122,
+    "969Maxed0to60": 7.0,
+    "969MaxedHandling": 85
+}
