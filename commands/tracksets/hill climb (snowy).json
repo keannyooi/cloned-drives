@@ -1,0 +1,17 @@
+{
+	"trackName": "Hill Climb (Snowy)",
+	"weather": "Sunny",
+	"surface": "Snow",
+	"speedbumps": 3,
+	"humps": 2,
+	"background": "https://cdn.discordapp.com/attachments/716917404868935691/776313816245862431/unknown.png",
+	
+	"specsDistr": {
+		"topSpeed": 0,
+		"0to60": 90,
+		"handling": 0,
+		"weight": 5,
+		"mra": 15,
+		"ola": 30
+	}
+}

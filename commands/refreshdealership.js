@@ -1,3 +1,12 @@
+/*
+ __  ___  _______     ___      .__   __. .__   __. ____    ____ 
+|  |/  / |   ____|   /   \     |  \ |  | |  \ |  | \   \  /   / 
+|  '  /  |  |__     /  ^  \    |   \|  | |   \|  |  \   \/   /  
+|    <   |   __|   /  /_\  \   |  . `  | |  . `  |   \_    _/   
+|  .  \  |  |____ /  _____  \  |  |\   | |  |\   |     |  |     
+|__|\__\ |_______/__/     \__\ |__| \__| |__| \__|     |__| 	(this is a watermark that proves that these lines of code are mine)
+*/
+
 const Discord = require("discord.js-light");
 const fs = require("fs");
 const carFiles = fs.readdirSync("./commands/cars").filter(file => file.endsWith('.json'));
@@ -29,17 +38,69 @@ module.exports = {
 				const catalog = [];
 				var i = 0;
 				while (i < 8) {
-					var currentCard = require(`./cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
-					while (isOnSale(currentCard)) {
+					const randNum = Math.floor(Math.random() * 100);
+					console.log(randNum + " is the random number");
+					var currentName, price;
+					var currentCard;
+					if (randNum < 33) {
 						currentCard = require(`./cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
+						if (i < 4) {
+							while (isOnSale(currentCard) || currentCard["isPrize"] || currentCard["rq"] > 19) {
+								currentCard = require(`./cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
+							}
+						}
+						else {
+							while (isOnSale(currentCard) || currentCard["isPrize"] || currentCard["rq"] > 49 || currentCard["rq"] < 40) {
+								currentCard = require(`./cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
+							}
+						}
 					}
-					const currentName = `${currentCard["make"]} ${currentCard["model"]} (${currentCard["modelYear"]})`;
-					const price = definePrice(currentCard["rq"]);
+					else if (randNum < 66) {
+						currentCard = require(`./cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
+						if (i < 4) {
+							while (isOnSale(currentCard) || currentCard["isPrize"] || currentCard["rq"] > 29 || currentCard["rq"] < 20) {
+								currentCard = require(`./cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
+							}
+						}
+						else {
+							while (isOnSale(currentCard) || currentCard["isPrize"] || currentCard["rq"] > 64 || currentCard["rq"] < 50) {
+								currentCard = require(`./cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
+							}
+						}
+					}
+					else if (randNum < 91) {
+						currentCard = require(`./cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
+						if (i < 4) {
+							while (isOnSale(currentCard) || currentCard["isPrize"] || currentCard["rq"] > 39 || currentCard["rq"] < 30) {
+								currentCard = require(`./cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
+							}
+						}
+						else {
+							while (isOnSale(currentCard) || currentCard["isPrize"] || currentCard["rq"] > 79 || currentCard["rq"] < 65) {
+								currentCard = require(`./cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
+							}
+						}
+					}
+					else {
+						currentCard = require(`./cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
+						if (i < 4) {
+							while (isOnSale(currentCard) || currentCard["isPrize"] || currentCard["rq"] > 49 || currentCard["rq"] < 40) {
+								currentCard = require(`./cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
+							}
+						}
+						else {
+							while (isOnSale(currentCard) || currentCard["isPrize"] || currentCard["rq"] < 80) {
+								currentCard = require(`./cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
+							}
+						}
+					}
+					currentName = `${currentCard["make"]} ${currentCard["model"]} (${currentCard["modelYear"]})`;
+					price = definePrice(currentCard["rq"]);
 					catalog[i] = { carFile: currentName.toLowerCase(), price: price };
 					console.log(catalog[i].carFile);
 					i++;
 				}
-				catalog.sort(function(a, b) {
+				catalog.sort(function (a, b) {
 					if (a.price === b.price) {
 						const carA = require(`./cars/${a.carFile}`);
 						const carB = require(`./cars/${b.carFile}`);
@@ -92,25 +153,25 @@ module.exports = {
 
 		function definePrice(rq) {
 			if (rq > 79) { //leggie
-				return 225000 + (Math.floor(Math.random() * 45000));
+				return 1000000 + (Math.floor(Math.random() * 1000000));
 			}
 			else if (rq > 64 && rq <= 79) { //epic
-				return 85000 + (Math.floor(Math.random() * 37500));
+				return 384000 + (Math.floor(Math.random() * 384000));
 			}
 			else if (rq > 49 && rq <= 64) { //ultra
-				return 32500 + (Math.floor(Math.random() * 30000));
+				return 96000 + (Math.floor(Math.random() * 192000));
 			}
 			else if (rq > 39 && rq <= 49) { //super
-				return 10000 + (Math.floor(Math.random() * 22500));
+				return 24000 + (Math.floor(Math.random() * 24000));
 			}
 			else if (rq > 29 && rq <= 39) { //rare
-				return 2000 + (Math.floor(Math.random() * 15000));
+				return 8000 + (Math.floor(Math.random() * 16000));
 			}
 			else if (rq > 19 && rq <= 29) { //uncommon
-				return 750 + (Math.floor(Math.random() * 7500));
+				return 2000 + (Math.floor(Math.random() * 2000));
 			}
 			else { //common
-				return 200 + (Math.floor(Math.random() * 5000));
+				return 500 + (Math.floor(Math.random() * 500));
 			}
 		}
 	}

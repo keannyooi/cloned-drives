@@ -1,3 +1,12 @@
+/*
+ __  ___  _______     ___      .__   __. .__   __. ____    ____ 
+|  |/  / |   ____|   /   \     |  \ |  | |  \ |  | \   \  /   / 
+|  '  /  |  |__     /  ^  \    |   \|  | |   \|  |  \   \/   /  
+|    <   |   __|   /  /_\  \   |  . `  | |  . `  |   \_    _/   
+|  .  \  |  |____ /  _____  \  |  |\   | |  |\   |     |  |     
+|__|\__\ |_______/__/     \__\ |__| \__| |__| \__|     |__| 	(this is a watermark that proves that these lines of code are mine)
+*/
+
 const Discord = require("discord.js-light");
 
 module.exports = {
@@ -26,7 +35,57 @@ module.exports = {
             return message.channel.send(errorMessage);
         }
         else if (args[0] === 'handling' && !isNaN(args[1])) {
-            answer = args[1] * 0.9 * 100;
+            if (args[1] > 1 && args[1] <= 1.0165) {
+                answer = 90;
+            }
+            else if (args[1] > 1.0165 && args[1] <= 1.0495){
+                answer = 91;
+            }
+            else if (args[1] > 1.0495 && args[1] <= 1.0825){
+                answer = 92;
+            }
+            else if (args[1] > 1.0825 && args[1] <= 1.125){
+                answer = 93;
+            }
+            else if (args[1] > 1.125 && args[1] <= 1.175){
+                answer = 94;
+            }
+            else if (args[1] > 1.175 && args[1] <= 1.25){
+                answer = 95;
+            }
+            else if (args[1] > 1.25 && args[1] <= 1.35){
+                answer = 96;
+            }
+            else if (args[1] > 1.35 && args[1] <= 1.45){
+                answer = 97;
+            }
+            else if (args[1] > 1.45 && args[1] <= 1.625){
+                answer = 98;
+            }
+            else if (args[1] > 1.625 && args[1] <= 1.875){
+                answer = 99;
+            }
+            else if (args[1] > 1.875 && args[1] <= 2.5){
+                answer = 100;
+            }
+            else if (args[1] > 2.5 && args[1] <= 3.5){
+                answer = 101;
+            }
+            else if (args[1] > 3.5 && args[1] <= 4.5){
+                answer = 102;
+            }
+            else if (args[1] > 4.5 && args[1] <= 5.5){
+                answer = 103;
+            }
+            else if (args[1] > 5.5 && args[1] <= 6){
+                answer = 104;
+            }
+            else if (args[1] > 6){
+                answer = 105;
+            }
+            else {
+                answer = args[1] * 90;
+            }
         }
         else if (args[0] === 'mra' && !isNaN(args[1]) && !isNaN(args[2])) {
             answer = 100 * (args[1] / (args[2] - args[1]));

@@ -1,3 +1,12 @@
+/*
+ __  ___  _______     ___      .__   __. .__   __. ____    ____ 
+|  |/  / |   ____|   /   \     |  \ |  | |  \ |  | \   \  /   / 
+|  '  /  |  |__     /  ^  \    |   \|  | |   \|  |  \   \/   /  
+|    <   |   __|   /  /_\  \   |  . `  | |  . `  |   \_    _/   
+|  .  \  |  |____ /  _____  \  |  |\   | |  |\   |     |  |     
+|__|\__\ |_______/__/     \__\ |__| \__| |__| \__|     |__| 	(this is a watermark that proves that these lines of code are mine)
+*/
+
 const Discord = require("discord.js-light");
 
 module.exports = {
@@ -11,7 +20,6 @@ module.exports = {
         var carName = args[0].toLowerCase();
 		const db = message.client.db;
 		const playerData = await db.get(`acc${message.author.id}`);
-        const money = playerData.money;
         const catalog = await db.get("dealershipCatalog");
         const moneyEmoji = message.guild.emojis.cache.find(emoji => emoji.name === "money");
         const searchResults = [];
@@ -20,8 +28,13 @@ module.exports = {
             return response.author.id === message.author.id;
         };
 
+        var amount = args[args.length - 1];
+		if (isNaN(amount) || !isNaN(carName)) {
+			amount = 1;
+		}
+
         if (isNaN(carName)) {
-            for (i = 2; i < args.length - 1; i++) {
+            for (i = 1; i < args.length - 1; i++) {
                 carName += (" " + args[i].toLowerCase());
             }
         }
@@ -40,11 +53,6 @@ module.exports = {
                 return message.channel.send(errorScreen);
             }
         }
-
-		var amount = args[args.length - 1];
-		if (isNaN(amount)) {
-			amount = 1;
-		}
 
         var counter = 0;
         var searched = 0;

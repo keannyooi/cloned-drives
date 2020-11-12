@@ -1,3 +1,12 @@
+/*
+ __  ___  _______     ___      .__   __. .__   __. ____    ____ 
+|  |/  / |   ____|   /   \     |  \ |  | |  \ |  | \   \  /   / 
+|  '  /  |  |__     /  ^  \    |   \|  | |   \|  |  \   \/   /  
+|    <   |   __|   /  /_\  \   |  . `  | |  . `  |   \_    _/   
+|  .  \  |  |____ /  _____  \  |  |\   | |  |\   |     |  |     
+|__|\__\ |_______/__/     \__\ |__| \__| |__| \__|     |__| 	(this is a watermark that proves that these lines of code are mine)
+*/
+
 const Discord = require("discord.js-light");
 const fs = require("fs");
 const carFiles = fs.readdirSync("./commands/cars").filter(file => file.endsWith(".json"));
@@ -76,41 +85,43 @@ module.exports = {
 						await delay(2000);
 
 						if (result > 0) {
-							const reward = (playerData.rrWinStreak + 1) * 500;
+							const reward = (playerData.rrWinStreak + 1) * 500 + 1000;
 							console.log(reward);
 							playerData.unclaimedRewards.money += reward;
 							playerData.rrWinStreak++;
 							message.channel.send(`**You have earned ${moneyEmoji}${reward}! Claim your reward using \`cd-rewards\`.**`);
-							await randomize();
+							randomize();
 						}
 						else if (result === 0) {
-							await randomize();
+							randomize();
 						}
 						else {
 							playerData.rrWinStreak = 0;
-							await randomize();
+							randomize();
 						}
 
 						await db.set(`acc${message.author.id}`, playerData);
 						return;
 					}
 					else if (collected.first().emoji.name === "❎") {
+						reactionMessage.reactions.removeAll();
 						const cancelMessage = new Discord.MessageEmbed()
 							.setColor("#34aeeb")
 							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 							.setTitle("Action cancelled.")
 							.setTimestamp();
-						return message.channel.send(cancelMessage);
+						return reactionMessage.edit(cancelMessage);
 					}
 				})
 				.catch((error) => {
 					console.log(error);
+					reactionMessage.reactions.removeAll();
 					const cancelMessage = new Discord.MessageEmbed()
 						.setColor("#34aeeb")
 						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 						.setTitle("Action cancelled automatically.")
 						.setTimestamp();
-					return message.channel.send(cancelMessage);
+					return reactionMessage.edit(cancelMessage);
 				});
 		});
 

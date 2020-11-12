@@ -1,3 +1,12 @@
+/*
+ __  ___  _______     ___      .__   __. .__   __. ____    ____ 
+|  |/  / |   ____|   /   \     |  \ |  | |  \ |  | \   \  /   / 
+|  '  /  |  |__     /  ^  \    |   \|  | |   \|  |  \   \/   /  
+|    <   |   __|   /  /_\  \   |  . `  | |  . `  |   \_    _/   
+|  .  \  |  |____ /  _____  \  |  |\   | |  |\   |     |  |     
+|__|\__\ |_______/__/     \__\ |__| \__| |__| \__|     |__| 	(this is a watermark that proves that these lines of code are mine)
+*/
+
 const Discord = require("discord.js-light");
 
 module.exports = {
@@ -73,6 +82,7 @@ module.exports = {
         const infoScreen = new Discord.MessageEmbed()
             .setColor('#03fc24')
             .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+            .setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
             .setTitle(`Successfully added ${moneyEmoji}${amount} to ${member.displayName}'s cash balance!`)
 			.setDescription(`Current Money Balance: ${moneyEmoji}${playerData.money}`)
             .setTimestamp();

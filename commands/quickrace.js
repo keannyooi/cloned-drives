@@ -1,3 +1,13 @@
+
+/*
+ __  ___  _______     ___      .__   __. .__   __. ____    ____ 
+|  |/  / |   ____|   /   \     |  \ |  | |  \ |  | \   \  /   / 
+|  '  /  |  |__     /  ^  \    |   \|  | |   \|  |  \   \/   /  
+|    <   |   __|   /  /_\  \   |  . `  | |  . `  |   \_    _/   
+|  .  \  |  |____ /  _____  \  |  |\   | |  |\   |     |  |     
+|__|\__\ |_______/__/     \__\ |__| \__| |__| \__|     |__| 	(this is a watermark that proves that these lines of code are mine)
+*/
+
 const Discord = require("discord.js-light");
 const fs = require("fs");
 const carFiles = fs.readdirSync("./commands/cars").filter(file => file.endsWith('.json'));
@@ -67,7 +77,7 @@ module.exports = {
                     .setDescription(trackList)
                     .setTimestamp();
 
-                message.channel.send(infoScreen).then(() => {
+                message.channel.send(infoScreen).then(currentMessage => {
                     message.channel.awaitMessages(filter, {
                         max: 1,
                         time: waitTime,
@@ -81,7 +91,7 @@ module.exports = {
                                     .setTitle("Error, invalid integer provided.")
                                     .setDescription("It looks like your response was either not a number or not part of the selection.")
                                     .setTimestamp();
-                                return message.channel.send(errorMessage);
+                                return currentMessage.edit(errorMessage);
                             }
                             else {
                                 currentTrack = searchResults[parseInt(collected.first()) - 1];
@@ -94,7 +104,7 @@ module.exports = {
                                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                                 .setTitle("Action cancelled automatically.")
                                 .setTimestamp();
-                            return message.channel.send(cancelMessage);
+                            return currentMessage.edit(cancelMessage);
                         });
                 });
             }
@@ -121,7 +131,7 @@ module.exports = {
                 .setDescription("Choose a car to race with by typing out the name of the car.")
                 .setTimestamp();
 
-            message.channel.send(chooseScreen).then(() => {
+            message.channel.send(chooseScreen).then(currentMessage => {
                 message.channel.awaitMessages(filter, {
                     max: 1,
                     time: waitTime,
@@ -160,7 +170,7 @@ module.exports = {
                                     .setDescription(carList)
                                     .setTimestamp();
 
-                                message.channel.send(infoScreen).then(() => {
+                                currentMessage.edit.send(infoScreen).then(() => {
                                     message.channel.awaitMessages(filter, {
                                         max: 1,
                                         time: waitTime,
@@ -174,21 +184,20 @@ module.exports = {
                                                     .setTitle("Error, invalid integer provided.")
                                                     .setDescription("It looks like your response was either not a number or not part of the selection.")
                                                     .setTimestamp();
-                                                return message.channel.send(errorMessage);
+                                                return currentMessage.edit(errorMessage);
                                             }
                                             else {
                                                 currentCar = searchResults[parseInt(collected.first()) - 1];
                                                 return upgrade(currentCar);
                                             }
                                         })
-                                        .catch(error => {
-											console.error("nani");
+                                        .catch(() => {
                                             const cancelMessage = new Discord.MessageEmbed()
                                                 .setColor("#34aeeb")
                                                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                                                 .setTitle("Action cancelled automatically.")
                                                 .setTimestamp();
-                                            return message.channel.send(cancelMessage);
+                                            return currentMessage.edit(cancelMessage);
                                         });
                                 });
                             }
@@ -203,7 +212,7 @@ module.exports = {
                                 .setTitle("Error, car requested not found.")
                                 .setDescription("Well that sucks. Try going against another car!")
                                 .setTimestamp();
-                            return message.channel.send(errorMessage);
+                            return currentMessage.edit(errorMessage);
                         }
                     })
                     .catch(() => {
@@ -212,7 +221,7 @@ module.exports = {
                             .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                             .setTitle("Action cancelled automatically.")
                             .setTimestamp();
-                        return message.channel.send(cancelMessage);
+                        return currentMessage.edit(cancelMessage);
                     });
             });
         }
@@ -227,7 +236,7 @@ module.exports = {
                 .setImage(car["card"])
                 .setTimestamp();
 
-            message.channel.send(chooseScreen).then(() => {
+            message.channel.send(chooseScreen).then(currentMessage => {
                 message.channel.awaitMessages(filter, {
                     max: 1,
                     time: waitTime,
@@ -243,7 +252,7 @@ module.exports = {
                                         .setTitle("Error, the tuning stage you requested is not supported.")
                                         .setDescription("There is a possiblity that the maxed tune your car has isn't available. If that's the case, report it to the devs.")
                                         .setTimestamp();
-                                    return message.channel.send(errorScreen);
+                                    return currentMessage.edit(errorScreen);
                                 }
                                 else {
                                     currentCar.gearingUpgrade = 9;
@@ -259,7 +268,7 @@ module.exports = {
                                         .setTitle("Error, the tuning stage you requested is not supported.")
                                         .setDescription("There is a possiblity that the maxed tune your car has isn't available. If that's the case, report it to the devs.")
                                         .setTimestamp();
-                                    return message.channel.send(errorScreen);
+                                    return currentMessage.edit(errorScreen);
                                 }
                                 else {
                                     currentCar.gearingUpgrade = 9;
@@ -275,7 +284,7 @@ module.exports = {
                                         .setTitle("Error, the tuning stage you requested is not supported.")
                                         .setDescription("There is a possiblity that the maxed tune your car has isn't available. If that's the case, report it to the devs.")
                                         .setTimestamp();
-                                    return message.channel.send(errorScreen);
+                                    return currentMessage.edit(errorScreen);
                                 }
                                 else {
                                     currentCar.gearingUpgrade = 6;
@@ -302,7 +311,7 @@ module.exports = {
                                     .setTitle("Error, the tuning stage you requested is not supported.")
                                     .setDescription("In order to make the tuning system less complex, the tuning stages are limited to `stock`, `333`, `666`, `996`, `969` and `699`. There is also a possiblity that the maxed tune you requested for the opponent car has isn't available. If that's the case, report it to the devs.")
                                     .setTimestamp();
-                                return message.channel.send(errorScreen);
+                                return currentMessage.edit(errorScreen);
                         }
 
 						const playerList = createList(player);
@@ -320,7 +329,7 @@ module.exports = {
 							)
 							.setTimestamp();
 
-						message.channel.send(intermission).then(reactionMessage => {
+						currentMessage.edit(intermission).then(reactionMessage => {
 							reactionMessage.react("✅");
 							reactionMessage.react("❎");
 							reactionMessage.awaitReactions(emojiFilter, {
@@ -339,7 +348,7 @@ module.exports = {
 										.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 										.setTitle("Action cancelled.")
 										.setTimestamp();
-									return message.channel.send(cancelMessage);
+									return currentMessage.edit(cancelMessage);
 								}
 							})
 							.catch(error => {
@@ -349,7 +358,7 @@ module.exports = {
 									.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 									.setTitle("Action cancelled automatically.")
 									.setTimestamp();
-								return message.channel.send(cancelMessage);
+								return currentMessage.edit(cancelMessage);
 							});
                     })
                 	.catch(() => {
@@ -358,7 +367,7 @@ module.exports = {
                         	.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                         	.setTitle("Action cancelled automatically.")
                         	.setTimestamp();
-                    	return message.channel.send(cancelMessage);
+                    	return currentMessage.edit(cancelMessage);
                 	});
             });
         });

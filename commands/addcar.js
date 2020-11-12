@@ -1,3 +1,12 @@
+/*
+ __  ___  _______     ___      .__   __. .__   __. ____    ____ 
+|  |/  / |   ____|   /   \     |  \ |  | |  \ |  | \   \  /   / 
+|  '  /  |  |__     /  ^  \    |   \|  | |   \|  |  \   \/   /  
+|    <   |   __|   /  /_\  \   |  . `  | |  . `  |   \_    _/   
+|  .  \  |  |____ /  _____  \  |  |\   | |  |\   |     |  |     
+|__|\__\ |_______/__/     \__\ |__| \__| |__| \__|     |__| 	(this is a watermark that proves that these lines of code are mine)
+*/
+
 const Discord = require("discord.js-light");
 const fs = require("fs");
 const carFiles = fs.readdirSync("./commands/cars").filter(file => file.endsWith('.json'));
@@ -91,7 +100,7 @@ module.exports = {
                     .setDescription(carList)
                     .setTimestamp();
 
-                message.channel.send(infoScreen).then(() => {
+                message.channel.send(infoScreen).then(currentMessage => {
                     message.channel.awaitMessages(filter, {
                         max: 1,
                         time: waitTime,
@@ -109,7 +118,7 @@ module.exports = {
                             }
                             else {
                                 currentCar = searchResults[parseInt(collected.first()) - 1];
-                                addCar(currentCar);
+                                addCar(currentCar, currentMessage);
                             }
                         })
                         .catch(() => {
@@ -136,7 +145,7 @@ module.exports = {
             return message.channel.send(errorMessage);
         }
 
-        async function addCar(currentCar) {
+        async function addCar(currentCar, currentMessage) {
             const currentName = `${currentCar["make"]} ${currentCar["model"]} (${currentCar["modelYear"]})`;
 
             await db.push(`acc${user.id}.garage`, { carFile: `${currentName.toLowerCase()}.json`, gearingUpgrade: 0, engineUpgrade: 0, chassisUpgrade: 0 });
@@ -147,7 +156,12 @@ module.exports = {
                 .setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
                 .setImage(currentCar["card"])
                 .setTimestamp();
-            return message.channel.send(infoScreen);
+            if (currentMessage) {
+                return currentMessage.edit(infoScreen);
+            }
+            else {
+                return message.channel.send(infoScreen);
+            }
         }
     }
 }

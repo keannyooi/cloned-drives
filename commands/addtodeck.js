@@ -1,3 +1,12 @@
+/*
+ __  ___  _______     ___      .__   __. .__   __. ____    ____ 
+|  |/  / |   ____|   /   \     |  \ |  | |  \ |  | \   \  /   / 
+|  '  /  |  |__     /  ^  \    |   \|  | |   \|  |  \   \/   /  
+|    <   |   __|   /  /_\  \   |  . `  | |  . `  |   \_    _/   
+|  .  \  |  |____ /  _____  \  |  |\   | |  |\   |     |  |     
+|__|\__\ |_______/__/     \__\ |__| \__| |__| \__|     |__| 	(this is a watermark that proves that these lines of code are mine)
+*/
+
 const Discord = require("discord.js-light");
 
 module.exports = {
@@ -17,9 +26,9 @@ module.exports = {
             return message.channel.send(errorMessage);
         }
 
-		const db = message.client.db;
-		const playerData = await db.get(`acc${message.author.id}`);
-		const decks = playerData.decks;
+        const db = message.client.db;
+        const playerData = await db.get(`acc${message.author.id}`);
+        const decks = playerData.decks;
         const deckName = args[0].toLowerCase();
         const index = args[1];
         if (isNaN(index) || index > 5 || index < 1) {
@@ -68,7 +77,7 @@ module.exports = {
                     .setDescription(deckList)
                     .setTimestamp();
 
-                message.channel.send(infoScreen).then(() => {
+                message.channel.send(infoScreen).then(currentMessage => {
                     message.channel.awaitMessages(filter, {
                         max: 1,
                         time: 30000,
@@ -86,7 +95,7 @@ module.exports = {
                             }
                             else {
                                 currentDeck = searchResults[parseInt(collected.first()) - 1].deck;
-                                checkCar(currentDeck);
+                                checkCar(currentDeck, currentMessage);
                             }
                         })
                         .catch(() => {
@@ -113,7 +122,7 @@ module.exports = {
             return message.channel.send(errorMessage);
         }
 
-        async function checkCar(currentDeck) {
+        async function checkCar(currentDeck, currentMessage) {
             const garage = playerData.garage;
             for (i = 0; i < currentDeck.hand.length; i++) {
                 console.log("hi");
@@ -159,7 +168,7 @@ module.exports = {
                         .setTitle("Multiple cars found, please type one of the following.")
                         .setDescription(carList);
 
-                    message.channel.send(infoScreen).then(() => {
+                    currentMessage.edit(infoScreen).then(() => {
                         message.channel.awaitMessages(filter, {
                             max: 1,
                             time: 30000,
@@ -173,11 +182,15 @@ module.exports = {
                                         .setTitle("Error, invalid integer provided.")
                                         .setDescription("It looks like your response was either not a number or not part of the selection.")
                                         .setTimestamp();
-                                    return message.channel.send(errorMessage);
+                                    if (currentMessage) {
+                                        return currentMessage.edit(errorMessage);
+                                    }
+                                    else {
+                                        return message.channel.send(errorMessage);
+                                    }
                                 }
                                 else {
                                     currentCar = searchResults[parseInt(collected.first()) - 1];
-                                    addCar(currentCar, currentDeck);
                                 }
                             })
                             .catch(() => {
@@ -186,13 +199,16 @@ module.exports = {
                                     .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                                     .setTitle("Action cancelled automatically.")
                                     .setTimestamp();
-                                return message.channel.send(cancelMessage);
+                                if (currentMessage) {
+                                    return currentMessage.edit(cancelMessage);
+                                }
+                                else {
+                                    return message.channel.send(cancelMessage);
+                                }
                             });
                     });
                 }
-                else {
-                    addCar(currentCar, currentDeck);
-                }
+                addCar(currentCar, currentDeck, currentMessage);
             }
             else {
                 const errorMessage = new Discord.MessageEmbed()
@@ -201,11 +217,16 @@ module.exports = {
                     .setTitle("Error, car requested not found.")
                     .setDescription("Well that sucks.")
                     .setTimestamp();
-                return message.channel.send(errorMessage);
+                if (currentMessage) {
+                    return currentMessage.edit(errorMessage);
+                }
+                else {
+                    return message.channel.send(errorMessage);
+                }
             }
         }
 
-        async function addCar(currentCar, currentDeck) {
+        async function addCar(currentCar, currentDeck, currentMessage) {
             const car = require(`./cars/${currentCar.carFile}`);
             const upgrade = `${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}`;
             const currentName = `${car["make"]} ${car["model"]} (${car["modelYear"]}) [${upgrade}]`;
@@ -233,13 +254,13 @@ module.exports = {
                     break;
             }
 
-            for (const deck of  decks) {
+            for (const deck of decks) {
                 if (deck.name = currentDeck.name) {
                     const hand = deck.hand;
-                    hand[index - 1] = {carFile: currentCar.carFile, gearingUpgrade: currentCar.gearingUpgrade, engineUpgrade: currentCar.engineUpgrade, chassisUpgrade: currentCar.chassisUpgrade};
+                    hand[index - 1] = { carFile: currentCar.carFile, gearingUpgrade: currentCar.gearingUpgrade, engineUpgrade: currentCar.engineUpgrade, chassisUpgrade: currentCar.chassisUpgrade };
                 }
             }
-			await db.set(`acc${message.author.id}`, playerData);
+            await db.set(`acc${message.author.id}`, playerData);
 
             const infoScreen = new Discord.MessageEmbed()
                 .setColor("#34aeeb")
@@ -247,7 +268,12 @@ module.exports = {
                 .setTitle(`Successfully added ${currentName} to slot ${index} of deck ${currentDeck.name}.`)
                 .setImage(racehud)
                 .setTimestamp();
-            return message.channel.send(infoScreen);
+            if (currentMessage) {
+                return currentMessage.edit(infoScreen);;
+            }
+            else {
+                return message.channel.send(infoScreen);
+            }
         }
     }
 }

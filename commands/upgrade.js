@@ -1,3 +1,12 @@
+/*
+ __  ___  _______     ___      .__   __. .__   __. ____    ____ 
+|  |/  / |   ____|   /   \     |  \ |  | |  \ |  | \   \  /   / 
+|  '  /  |  |__     /  ^  \    |   \|  | |   \|  |  \   \/   /  
+|    <   |   __|   /  /_\  \   |  . `  | |  . `  |   \_    _/   
+|  .  \  |  |____ /  _____  \  |  |\   | |  |\   |     |  |     
+|__|\__\ |_______/__/     \__\ |__| \__| |__| \__|     |__| 	(this is a watermark that proves that these lines of code are mine)
+*/
+
 const Discord = require("discord.js-light");
 
 module.exports = {
@@ -65,7 +74,7 @@ module.exports = {
 					.setDescription(carList)
 					.setTimestamp();
 
-				message.channel.send(infoScreen).then(() => {
+				message.channel.send(infoScreen).then(currentMessage => {
 					message.channel.awaitMessages(filter, {
 						max: 1,
 						time: waitTime,
@@ -79,11 +88,11 @@ module.exports = {
 									.setTitle("Error, invalid integer provided.")
 									.setDescription("It looks like your response was either not a number or not part of the selection.")
 									.setTimestamp();
-								return message.channel.send(errorMessage);
+								return currentMessage.edit(errorMessage);
 							}
 							else {
 								currentCar = searchResults[parseInt(collected.first()) - 1];
-								upgradeCar(currentCar);
+								upgradeCar(currentCar, currentMessage);
 							}
 						})
 						.catch(() => {
@@ -92,7 +101,7 @@ module.exports = {
 								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 								.setTitle("Action cancelled automatically.")
 								.setTimestamp();
-							return message.channel.send(cancelMessage);
+							return currentMessage.edit(cancelMessage);
 						});
 				});
 			}
@@ -110,7 +119,7 @@ module.exports = {
 			return message.channel.send(errorMessage);
 		}
 
-		function error(currentCar) {
+		function error(currentCar, currentMessage) {
 			var isMaxed;
 			if (currentCar.gearingUpgrade + currentCar.engineUpgrade + currentCar.chassisUpgrade === 24) {
 				isMaxed = "Maxed";
@@ -125,18 +134,23 @@ module.exports = {
 				.setDescription("Correct order: `333` -> `666` -> `996`, `969` or `699`.")
 				.addField("Your car's current upgrade status", `${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade} (${isMaxed})`)
 				.setTimestamp();
-			return message.channel.send(errorScreen);
+			if (currentMessage) {
+				return currentMessage.edit(errorScreen);
+			}
+			else {
+				return message.channel.send(errorScreen);
+			}
 		}
 
-		function error2(currentCar) {
+		function error2(currentCar, currentMessage) {
 			const maxedTunes = [996, 969, 699];
-            var tunes = "";
-            for (i = 0; i < maxedTunes.length; i++) {
+			var tunes = "";
+			for (i = 0; i < maxedTunes.length; i++) {
 				console.log(maxedTunes[i]);
-                if (currentCar[`${maxedTunes[i]}MaxedTopSpeed`]) {
-                    tunes += `${maxedTunes[i]}, `;
-                }
-            }
+				if (currentCar[`${maxedTunes[i]}MaxedTopSpeed`]) {
+					tunes += `${maxedTunes[i]}, `;
+				}
+			}
 
 			const errorScreen = new Discord.MessageEmbed()
 				.setColor("#fc0303")
@@ -145,10 +159,15 @@ module.exports = {
 				.setDescription("Try asking the devs if you really want to tune the car like that.")
 				.addField("Your car's available tunes", tunes.slice(0, -2))
 				.setTimestamp();
-			return message.channel.send(errorScreen);
+			if (currentMessage) {
+				return currentMessage.edit(errorScreen);
+			}
+			else {
+				return message.channel.send(errorScreen);
+			}
 		}
 
-		async function upgradeCar(currentCar) {
+		async function upgradeCar(currentCar, currentMessage) {
 			const car = require(`./cars/${currentCar.carFile}`);
 			const currentName = `${car["make"]} ${car["model"]} (${car["modelYear"]})`;
 			const money = playerData.money;
@@ -163,7 +182,7 @@ module.exports = {
 			switch (upgrade) {
 				case "333":
 					if (currentCar.gearingUpgrade + currentCar.engineUpgrade + currentCar.chassisUpgrade > 9) {
-						return error(currentCar);
+						return error(currentCar, currentMessage);
 					}
 					else {
 						currentCar.gearingUpgrade = 3;
@@ -176,7 +195,7 @@ module.exports = {
 					break;
 				case "666":
 					if (currentCar.gearingUpgrade + currentCar.engineUpgrade + currentCar.chassisUpgrade > 18) {
-						return error(currentCar);
+						return error(currentCar, currentMessage);
 					}
 					else {
 						definePrice(car["rq"], upgrade);
@@ -192,10 +211,10 @@ module.exports = {
 					break;
 				case "996":
 					if (currentCar.gearingUpgrade + currentCar.engineUpgrade + currentCar.chassisUpgrade === 24) {
-						return error(currentCar);
+						return error(currentCar, currentMessage);
 					}
 					else if (!car["996MaxedTopSpeed"]) {
-						return error2(car);
+						return error2(car, currentMessage);
 					}
 					else {
 						definePrice(car["rq"], upgrade);
@@ -214,10 +233,10 @@ module.exports = {
 					break;
 				case "969":
 					if (currentCar.gearingUpgrade + currentCar.engineUpgrade + currentCar.chassisUpgrade === 24) {
-						return error(currentCar);
+						return error(currentCar, currentMessage);
 					}
 					else if (!car["969MaxedTopSpeed"]) {
-						return error2(car);
+						return error2(car, currentMessage);
 					}
 					else {
 						definePrice(car["rq"], upgrade);
@@ -236,10 +255,10 @@ module.exports = {
 					break;
 				case "699":
 					if (currentCar.gearingUpgrade + currentCar.engineUpgrade + currentCar.chassisUpgrade === 24) {
-						return error(currentCar);
+						return error(currentCar, currentMessage);
 					}
 					else if (!car["699MaxedTopSpeed"]) {
-						return error2(car);
+						return error2(car, currentMessage);
 					}
 					else {
 						definePrice(car["rq"], upgrade);
@@ -249,7 +268,7 @@ module.exports = {
 								definePrice(car["rq"], "333");
 							}
 						}
-						
+
 						currentCar.gearingUpgrade = 6;
 						currentCar.engineUpgrade = 9;
 						currentCar.chassisUpgrade = 9;
@@ -262,7 +281,12 @@ module.exports = {
 						.setTitle("Error, the tuning stage you requested is not supported.")
 						.setDescription("In order to make the tuning system less complex, the tuning stages are limited to `333`, `666`, `996`, `969` and `699`.")
 						.setTimestamp();
-					return message.channel.send(errorScreen);
+					if (currentMessage) {
+						return currentMessage.edit(errorScreen);
+					}
+					else {
+						return message.channel.send(errorScreen);
+					}
 			}
 
 			if (money >= moneyLimit && fuseTokens >= fuseTokenLimit) {
@@ -284,9 +308,9 @@ module.exports = {
 					while (i < playerData.decks.length) {
 						while (x < playerData.decks[i].hand.length) {
 							if (playerData.decks[i].hand[x].carFile === playerData.garage[y].carFile) {
-								playerData.decks[i].hand[x].gearingUpgrade = correctCar.gearingUpgrade;
-								playerData.decks[i].hand[x].engineUpgrade = correctCar.engineUpgrade;
-								playerData.decks[i].hand[x].chassisUpgrade = correctCar.chassisUpgrade;
+								playerData.decks[i].hand[x].gearingUpgrade = playerData.garage[y].gearingUpgrade;
+								playerData.decks[i].hand[x].engineUpgrade = playerData.garage[y].engineUpgrade;
+								playerData.decks[i].hand[x].chassisUpgrade = playerData.garage[y].chassisUpgrade;
 							}
 							x++;
 						}
@@ -311,10 +335,15 @@ module.exports = {
 					)
 					.setImage(racehud)
 					.setTimestamp();
-				return message.channel.send(infoScreen);
+				if (currentMessage) {
+					return currentMessage.edit(infoScreen);
+				}
+				else {
+					return message.channel.send(infoScreen);
+				}
 			}
 			else {
-				const errorMessage = new Discord.MessageEmbed()
+				const errorScreen = new Discord.MessageEmbed()
 					.setColor("#fc0303")
 					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 					.setTitle("Error, it looks like you don't have enough money and/or fuse tokens.")
@@ -324,7 +353,12 @@ module.exports = {
 						{ name: "Required Amount of Fuse Tokens", value: `${fuseEmoji}${fuseTokenLimit}`, inline: true },
 					)
 					.setTimestamp();
-				return message.channel.send(errorMessage);
+				if (currentMessage) {
+					return currentMessage.edit(errorScreen);
+				}
+				else {
+					return message.channel.send(errorScreen);
+				}
 			}
 
 			function definePrice(rq, upgrade) {
@@ -336,19 +370,19 @@ module.exports = {
 							break;
 						case "666":
 							moneyLimit += 24750;
-							fuseTokenLimit += 7500;
+							fuseTokenLimit += 5000;
 							break;
 						case "996":
 							moneyLimit += 27000;
-							fuseTokenLimit += 7500;
+							fuseTokenLimit += 5000;
 							break;
 						case "969":
 							moneyLimit += 27000;
-							fuseTokenLimit += 7500;
+							fuseTokenLimit += 5000;
 							break;
 						case "699":
 							moneyLimit += 27000;
-							fuseTokenLimit += 7500;
+							fuseTokenLimit += 5000;
 							break;
 						default:
 							break;
@@ -361,19 +395,19 @@ module.exports = {
 							break;
 						case "666":
 							moneyLimit += 20250;
-							fuseTokenLimit += 2250;
+							fuseTokenLimit += 2000;
 							break;
 						case "996":
 							moneyLimit += 22500;
-							fuseTokenLimit += 2250;
+							fuseTokenLimit += 2000;
 							break;
 						case "969":
 							moneyLimit += 22500;
-							fuseTokenLimit += 2250;
+							fuseTokenLimit += 2000;
 							break;
 						case "699":
 							moneyLimit += 22500;
-							fuseTokenLimit += 2250;
+							fuseTokenLimit += 2000;
 							break;
 						default:
 							break;
@@ -386,19 +420,19 @@ module.exports = {
 							break;
 						case "666":
 							moneyLimit += 15750;
-							fuseTokenLimit += 1050;
+							fuseTokenLimit += 850;
 							break;
 						case "996":
 							moneyLimit += 18000;
-							fuseTokenLimit += 1050;
+							fuseTokenLimit += 850;
 							break;
 						case "969":
 							moneyLimit += 18000;
-							fuseTokenLimit += 1050;
+							fuseTokenLimit += 850;
 							break;
 						case "699":
 							moneyLimit += 18000;
-							fuseTokenLimit += 1050;
+							fuseTokenLimit += 850;
 							break;
 						default:
 							break;

@@ -1,3 +1,12 @@
+/*
+ __  ___  _______     ___      .__   __. .__   __. ____    ____ 
+|  |/  / |   ____|   /   \     |  \ |  | |  \ |  | \   \  /   / 
+|  '  /  |  |__     /  ^  \    |   \|  | |   \|  |  \   \/   /  
+|    <   |   __|   /  /_\  \   |  . `  | |  . `  |   \_    _/   
+|  .  \  |  |____ /  _____  \  |  |\   | |  |\   |     |  |     
+|__|\__\ |_______/__/     \__\ |__| \__| |__| \__|     |__| 	(this is a watermark that proves that these lines of code are mine)
+*/
+
 const Discord = require("discord.js-light");
 const Canvas = require("canvas");
 
@@ -12,6 +21,7 @@ module.exports = {
 			const overlay = await Canvas.loadImage("https://cdn.discordapp.com/attachments/716917404868935691/740847199692521512/race_template_thing.png");
 			const playerHud = await Canvas.loadImage(player.racehud);
 			const opponentHud = await Canvas.loadImage(opponent.racehud);
+			var description = `Selected Track: ${currentTrack["trackName"]}`;
 
 			const drivePlacement = ["4WD", "FWD", "RWD"];
 			const gcPlacement = ["High", "Medium", "Low"];
@@ -22,18 +32,6 @@ module.exports = {
 			ctx.drawImage(opponentHud, 1448, 626, 588, 357);
 
 			const attachment = new Discord.MessageAttachment(canvas.toBuffer(), "thing.png");
-			const countdown = new Discord.MessageEmbed()
-				.setColor("#34aeeb")
-				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-				.setTitle("Ready to Race!")
-				.setDescription(`Selected Track: ${currentTrack["trackName"]}`)
-				.attachFiles(attachment)
-				.setImage("attachment://thing.png")
-				.setTimestamp();
-			message.channel.send(countdown);
-
-			const delay = ms => new Promise(res => setTimeout(res, ms));
-			await delay(1000);
 			const result = evalScore(player, opponent);
 			const raceInfo = compare(player, opponent, (result > 0));
 
@@ -50,16 +48,18 @@ module.exports = {
 				raceMessage = `You lost by ${Math.abs(result)} point(s). (press f to pay respects)`;
 				colorCode = "#fc0303";
 			}
+			if (result !== 0) {
+				description += `\nThe winning car had the following advantages: ${raceInfo}`;
+			}
 
 			const resultScreen = new Discord.MessageEmbed()
 				.setColor(colorCode)
 				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 				.setTitle(raceMessage)
+				.setDescription(description)
+				.attachFiles(attachment)
+				.setImage("attachment://thing.png")
 				.setTimestamp();
-			if (result !== 0) {
-				resultScreen.setDescription(`The winning car had the following advantages: ${raceInfo}`);
-			}
-
 			message.channel.send(resultScreen);
 			return result;
 

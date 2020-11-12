@@ -1,3 +1,12 @@
+/*
+ __  ___  _______     ___      .__   __. .__   __. ____    ____ 
+|  |/  / |   ____|   /   \     |  \ |  | |  \ |  | \   \  /   / 
+|  '  /  |  |__     /  ^  \    |   \|  | |   \|  |  \   \/   /  
+|    <   |   __|   /  /_\  \   |  . `  | |  . `  |   \_    _/   
+|  .  \  |  |____ /  _____  \  |  |\   | |  |\   |     |  |     
+|__|\__\ |_______/__/     \__\ |__| \__| |__| \__|     |__| 	(this is a watermark that proves that these lines of code are mine)
+*/
+
 const Discord = require("discord.js-light");
 
 module.exports = {
@@ -57,7 +66,7 @@ module.exports = {
                     .setDescription(deckList)
                     .setTimestamp();
 
-                message.channel.send(infoScreen).then(() => {
+                message.channel.send(infoScreen).then(currentMessage => {
                     message.channel.awaitMessages(filter, {
                         max: 1,
                         time: 30000,
@@ -71,7 +80,7 @@ module.exports = {
                                     .setTitle("Error, invalid integer provided.")
                                     .setDescription("It looks like your response was either not a number or not part of the selection.")
                                     .setTimestamp();
-                                return message.channel.send(errorMessage);
+                                return currentMessage.edit(errorMessage);
                             }
                             else {
                                 currentDeck = searchResults[parseInt(collected.first()) - 1].deck;
@@ -79,13 +88,13 @@ module.exports = {
                                 removeDeck(currentDeck, index);
                             }
                         })
-                        .catch(collected => {
+                        .catch(() => {
                             const cancelMessage = new Discord.MessageEmbed()
                                 .setColor("#34aeeb")
                                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                                 .setTitle("Action cancelled automatically.")
                                 .setTimestamp();
-                            return message.channel.send(cancelMessage);
+                            return currentMessage.edit(cancelMessage);
                         });
                 });
             }
@@ -133,7 +142,7 @@ module.exports = {
                                 .setTitle(`Successfully removed deck named ${currentDeck.name}!`)
                                 .setDescription("You earned nothing!")
                                 .setTimestamp();
-                            return message.channel.send(infoScreen);
+                            return reactionMessage.edit(infoScreen);
                         }
                         else if (collected.first().emoji.name === "❎") {
                             const cancelMessage = new Discord.MessageEmbed()
@@ -141,7 +150,7 @@ module.exports = {
                                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                                 .setTitle("Action cancelled.")
                                 .setTimestamp();
-                            return message.channel.send(cancelMessage);
+                            return reactionMessage.edit(cancelMessage);
                         }
                     })
                     .catch(() => {
@@ -150,7 +159,7 @@ module.exports = {
                             .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                             .setTitle("Action cancelled automatically.")
                             .setTimestamp();
-                        return message.channel.send(cancelMessage);
+                        return reactionMessage.edit(cancelMessage);
                     });
             });
         }

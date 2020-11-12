@@ -1,3 +1,12 @@
+/*
+ __  ___  _______     ___      .__   __. .__   __. ____    ____ 
+|  |/  / |   ____|   /   \     |  \ |  | |  \ |  | \   \  /   / 
+|  '  /  |  |__     /  ^  \    |   \|  | |   \|  |  \   \/   /  
+|    <   |   __|   /  /_\  \   |  . `  | |  . `  |   \_    _/   
+|  .  \  |  |____ /  _____  \  |  |\   | |  |\   |     |  |     
+|__|\__\ |_______/__/     \__\ |__| \__| |__| \__|     |__| 	(this is a watermark that proves that these lines of code are mine)
+*/
+
 const Discord = require("discord.js-light");
 
 module.exports = {
@@ -196,9 +205,9 @@ module.exports = {
 				while (i < playerData.decks.length) {
 					while (x < playerData.decks[i].hand.length) {
 						if (playerData.decks[i].hand[x].carFile === playerData.garage[y].carFile) {
-							playerData.decks[i].hand[x].gearingUpgrade = correctCar.gearingUpgrade;
-							playerData.decks[i].hand[x].engineUpgrade = correctCar.engineUpgrade;
-							playerData.decks[i].hand[x].chassisUpgrade = correctCar.chassisUpgrade;
+							playerData.decks[i].hand[x].gearingUpgrade = playerData.garage[y].gearingUpgrade;
+							playerData.decks[i].hand[x].engineUpgrade = playerData.garage[y].engineUpgrade;
+							playerData.decks[i].hand[x].chassisUpgrade = playerData.garage[y].chassisUpgrade;
 						}
 						x++;
 					}
