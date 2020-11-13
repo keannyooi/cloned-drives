@@ -1,0 +1,49 @@
+{
+    "rq": 50,
+    "make": "Maserati",
+    "model": "Quattroporte S",
+    "modelYear": 2008,
+    "country": "IT",
+    "topSpeed": 173,
+    "0to60": 4.8,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1990,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 68.57,
+    "ola": 83.33,
+    "description": "",
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/775399564920356925/MaseratiQuattroporteS.png",
+    "racehudStock": "https://media.discordapp.net/attachments/718097267621363744/775400137169567765/MaseratiQSStock.png",
+    "racehud1Star": "https://media.discordapp.net/attachments/718097267621363744/775400197127536710/MaseratiQS333.png",
+    "racehud2Star": "https://media.discordapp.net/attachments/718097267621363744/775400265645948948/MaseratiQS666.png",
+    "racehudMaxed996": "https://media.discordapp.net/attachments/718097267621363744/775400409078038558/MaseratiQS996.png",
+    "racehudMaxed969": "https://media.discordapp.net/attachments/718097267621363744/775400302575747092/MaseratiQS969.png",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 176,
+    "1Star0to60": 4.5,
+    "1StarHandling": 78,
+
+    "2StarTopSpeed": 179,
+    "2Star0to60": 4.2,
+    "2StarHandling": 81,
+
+    "996MaxedTopSpeed": 183,
+    "996Maxed0to60": 3.9,
+    "996MaxedHandling": 82,
+
+    "969MaxedTopSpeed": 182,
+    "969Maxed0to60": 4.0,
+    "969MaxedHandling": 84
+}

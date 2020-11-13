@@ -12,7 +12,7 @@ const Canvas = require("canvas");
 
 module.exports = {
 	async race(message, player, opponent, currentTrack) {
-		message.channel.send("**Loading race, please wait... (may take a while)**");
+		const wait = await message.channel.send("**Loading race, please wait... (may take a while)**");
 
 		try {
 			const canvas = Canvas.createCanvas(2135, 1200);
@@ -21,7 +21,7 @@ module.exports = {
 			const overlay = await Canvas.loadImage("https://cdn.discordapp.com/attachments/716917404868935691/740847199692521512/race_template_thing.png");
 			const playerHud = await Canvas.loadImage(player.racehud);
 			const opponentHud = await Canvas.loadImage(opponent.racehud);
-			var description = `Selected Track: ${currentTrack["trackName"]}`;
+			var description = `__Selected Track: ${currentTrack["trackName"]}__`;
 
 			const drivePlacement = ["4WD", "FWD", "RWD"];
 			const gcPlacement = ["High", "Medium", "Low"];
@@ -61,6 +61,7 @@ module.exports = {
 				.setImage("attachment://thing.png")
 				.setTimestamp();
 			message.channel.send(resultScreen);
+			wait.delete();
 			return result;
 
 			function compare(player, opponent, playerWon) {
@@ -218,10 +219,10 @@ module.exports = {
 
 							tyreIndex = {
 								"Standard": 0,
-								"Performance": 2.5,
+								"Performance": 11,
 								"All-Surface": 1,
-								"Off-Road": 4,
-								"Slick": 6
+								"Off-Road": 25,
+								"Slick": 50
 							};
 							score += (tyreIndex[opponent.tyreType] - tyreIndex[player.tyreType]);
 						}
@@ -320,6 +321,7 @@ module.exports = {
 		}
 		catch (error) {
 			console.error(error);
+			wait.delete();
 			const errorMessage = new Discord.MessageEmbed()
 				.setColor("#fc0303")
 				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))

@@ -1,0 +1,45 @@
+{
+    "rq": 39,
+    "make": "Nissan",
+    "model": "Sentra Nismo",
+    "modelYear": 2017,
+    "country": "JP",
+    "topSpeed": 131,
+    "0to60": 7.3,
+    "handling": 79,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1378,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 71.57,
+    "ola": 71.23,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/728915123711770696/nissan_sentra_nismo.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/729981587697172490/nissan_sentra_nismo.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/729981637521047572/nissan_sentra_nismo_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/729981647994355772/nissan_sentra_nismo_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/729981668672405524/nissan_sentra_nismo_969.jpg",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 134,
+    "1Star0to60": 6.9,
+    "1StarHandling": 82,
+
+    "2StarTopSpeed": 138,
+    "2Star0to60": 6.4,
+    "2StarHandling": 85,
+
+    "969MaxedTopSpeed": 142,
+    "969Maxed0to60": 5.9,
+    "969MaxedHandling": 87
+}

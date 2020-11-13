@@ -77,36 +77,37 @@ module.exports = {
                     .setDescription(deckList)
                     .setTimestamp();
 
-                message.channel.send(infoScreen).then(currentMessage => {
-                    message.channel.awaitMessages(filter, {
-                        max: 1,
-                        time: 30000,
-                        errors: ['time']
-                    })
-                        .then(collected => {
-                            if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
-                                const errorMessage = new Discord.MessageEmbed()
-                                    .setColor("#fc0303")
-                                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                                    .setTitle("Error, invalid integer provided.")
-                                    .setDescription("It looks like your response was either not a number or not part of the selection.")
-                                    .setTimestamp();
-                                return message.channel.send(errorMessage);
-                            }
-                            else {
-                                currentDeck = searchResults[parseInt(collected.first()) - 1].deck;
-                                checkCar(currentDeck, currentMessage);
-                            }
-                        })
-                        .catch(() => {
-                            const cancelMessage = new Discord.MessageEmbed()
-                                .setColor("#34aeeb")
+                const currentMessage = await message.channel.send(infoScreen);
+                message.channel.awaitMessages(filter, {
+                    max: 1,
+                    time: 30000,
+                    errors: ['time']
+                })
+                    .then(collected => {
+                        if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
+                            collected.first().delete();
+                            const errorMessage = new Discord.MessageEmbed()
+                                .setColor("#fc0303")
                                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                                .setTitle("Action cancelled automatically.")
+                                .setTitle("Error, invalid integer provided.")
+                                .setDescription("It looks like your response was either not a number or not part of the selection.")
                                 .setTimestamp();
-                            return message.channel.send(cancelMessage);
-                        });
-                });
+                            return currentMessage.edit(errorMessage);
+                        }
+                        else {
+                            currentDeck = searchResults[parseInt(collected.first()) - 1];
+                            collected.first().delete();
+                            checkCar(currentDeck, currentMessage);
+                        }
+                    })
+                    .catch(() => {
+                        const cancelMessage = new Discord.MessageEmbed()
+                            .setColor("#34aeeb")
+                            .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                            .setTitle("Action cancelled automatically.")
+                            .setTimestamp();
+                        return currentMessage.edit(cancelMessage);
+                    });
             }
             else {
                 checkCar(currentDeck);
@@ -123,6 +124,7 @@ module.exports = {
         }
 
         async function checkCar(currentDeck, currentMessage) {
+            console.log(currentDeck);
             const garage = playerData.garage;
             for (i = 0; i < currentDeck.hand.length; i++) {
                 console.log("hi");
@@ -167,46 +169,41 @@ module.exports = {
                         .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                         .setTitle("Multiple cars found, please type one of the following.")
                         .setDescription(carList);
-
-                    currentMessage.edit(infoScreen).then(() => {
-                        message.channel.awaitMessages(filter, {
-                            max: 1,
-                            time: 30000,
-                            errors: ['time']
-                        })
-                            .then(collected => {
-                                if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
-                                    const errorMessage = new Discord.MessageEmbed()
-                                        .setColor("#fc0303")
-                                        .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                                        .setTitle("Error, invalid integer provided.")
-                                        .setDescription("It looks like your response was either not a number or not part of the selection.")
-                                        .setTimestamp();
-                                    if (currentMessage) {
-                                        return currentMessage.edit(errorMessage);
-                                    }
-                                    else {
-                                        return message.channel.send(errorMessage);
-                                    }
-                                }
-                                else {
-                                    currentCar = searchResults[parseInt(collected.first()) - 1];
-                                }
-                            })
-                            .catch(() => {
-                                const cancelMessage = new Discord.MessageEmbed()
-                                    .setColor("#34aeeb")
+                    if (currentMessage) {
+                        currentMessage.edit(infoScreen);
+                    }
+                    else {
+                        message.channel.send(infoScreen);
+                    }
+                    message.channel.awaitMessages(filter, {
+                        max: 1,
+                        time: 30000,
+                        errors: ['time']
+                    })
+                        .then(collected => {
+                            if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
+                                collected.first().delete();
+                                const errorMessage = new Discord.MessageEmbed()
+                                    .setColor("#fc0303")
                                     .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                                    .setTitle("Action cancelled automatically.")
+                                    .setTitle("Error, invalid integer provided.")
+                                    .setDescription("It looks like your response was either not a number or not part of the selection.")
                                     .setTimestamp();
-                                if (currentMessage) {
-                                    return currentMessage.edit(cancelMessage);
-                                }
-                                else {
-                                    return message.channel.send(cancelMessage);
-                                }
-                            });
-                    });
+                                return currentMessage.edit(errorMessage);
+                            }
+                            else {
+                                currentCar = searchResults[parseInt(collected.first()) - 1];
+                                collected.first().delete();
+                            }
+                        })
+                        .catch(() => {
+                            const cancelMessage = new Discord.MessageEmbed()
+                                .setColor("#34aeeb")
+                                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                                .setTitle("Action cancelled automatically.")
+                                .setTimestamp();
+                            return currentMessage.edit(cancelMessage);
+                        });
                 }
                 addCar(currentCar, currentDeck, currentMessage);
             }
@@ -265,11 +262,11 @@ module.exports = {
             const infoScreen = new Discord.MessageEmbed()
                 .setColor("#34aeeb")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle(`Successfully added ${currentName} to slot ${index} of deck ${currentDeck.name}.`)
+                .setTitle(`Successfully added your ${currentName} to slot ${index} of deck ${currentDeck.name}.`)
                 .setImage(racehud)
                 .setTimestamp();
             if (currentMessage) {
-                return currentMessage.edit(infoScreen);;
+                return currentMessage.edit(infoScreen);
             }
             else {
                 return message.channel.send(infoScreen);

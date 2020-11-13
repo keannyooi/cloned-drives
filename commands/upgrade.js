@@ -82,6 +82,7 @@ module.exports = {
 					})
 						.then(collected => {
 							if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
+								collected.first().delete();
 								const errorMessage = new Discord.MessageEmbed()
 									.setColor("#fc0303")
 									.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -92,6 +93,7 @@ module.exports = {
 							}
 							else {
 								currentCar = searchResults[parseInt(collected.first()) - 1];
+								collected.first().delete();
 								upgradeCar(currentCar, currentMessage);
 							}
 						})

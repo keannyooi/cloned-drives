@@ -1,0 +1,49 @@
+{
+    "rq": 63,
+    "make": "Maserati",
+    "model": "GranTurismo",
+    "modelYear": 2007,
+    "country": "IT",
+    "topSpeed": 177,
+    "0to60": 4.7,
+    "handling": 86,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1880,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 67.14,
+    "ola": 76.60,
+    "description": "",
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/775411532489424916/MaseratiGranTurismo.png",
+    "racehudStock": "https://media.discordapp.net/attachments/718097267621363744/775411011968040990/MaseratiGTStock.png",
+    "racehud1Star": "https://media.discordapp.net/attachments/718097267621363744/775411072328269874/MaseratiGT333.png",
+    "racehud2Star": "https://media.discordapp.net/attachments/718097267621363744/775411113978232872/MaseratiGT666.png",
+    "racehudMaxed996": "https://media.discordapp.net/attachments/718097267621363744/775411255649239090/MaseratiGT996.png",
+    "racehudMaxed969": "https://media.discordapp.net/attachments/718097267621363744/775411186829099008/MaseratiGT969.png",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 180,
+    "1Star0to60": 4.4,
+    "1StarHandling": 89,
+
+    "2StarTopSpeed": 183,
+    "2Star0to60": 4.1,
+    "2StarHandling": 92,
+
+    "996MaxedTopSpeed": 187,
+    "996Maxed0to60": 3.8,
+    "996MaxedHandling": 93,
+
+    "969MaxedTopSpeed": 186,
+    "969Maxed0to60": 3.9,
+    "969MaxedHandling": 93
+}

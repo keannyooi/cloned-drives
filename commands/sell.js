@@ -84,6 +84,7 @@ module.exports = {
                     })
                         .then(collected => {
                             if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
+                                collected.first().delete();
                                 const errorMessage = new Discord.MessageEmbed()
                                     .setColor("#fc0303")
                                     .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -95,7 +96,8 @@ module.exports = {
                             else {
                                 currentCar = searchResults[parseInt(collected.first()) - 1].car;
                                 index = searchResults[parseInt(collected.first()) - 1].index;
-                                sell(currentCar, index);
+                                collected.first().delete();
+                                sell(currentCar, index, currentMessage);
                             }
                         })
                         .catch(() => {
@@ -123,7 +125,7 @@ module.exports = {
             return message.channel.send(errorMessage);
         }
 
-        function sell(currentCar, index) {
+        async function sell(currentCar, index, currentMessage) {
             const car = require(`./cars/${currentCar.carFile}`);
             const currentName = `${car["make"]} ${car["model"]} (${car["modelYear"]}) [${garage[index].gearingUpgrade}${garage[index].engineUpgrade}${garage[index].chassisUpgrade}]`;
 
@@ -157,76 +159,81 @@ module.exports = {
                 .setDescription("React with ✅ to proceed or ❎ to cancel.")
                 .setImage(car["card"])
                 .setTimestamp();
+            var reactionMessage;
+            if (currentMessage) {
+                reactionMessage = await mcurrentMessage.edit(confirmationMessage);
+            }
+            else {
+                reactionMessage = await message.channel.send(confirmationMessage);
+            }
+            reactionMessage.react("✅");
+            reactionMessage.react("❎");
+            reactionMessage.awaitReactions(emojiFilter, {
+                max: 1,
+                time: 10000,
+                errors: ['time']
+            })
+                .then(async collected => {
+                    reactionMessage.reactions.removeAll();
+                    if (collected.first().emoji.name === "✅") {
+                        console.log(garage[index]);
+                        garage.splice(index, 1);
 
-            message.channel.send(confirmationMessage).then(reactionMessage => {
-                reactionMessage.react("✅");
-                reactionMessage.react("❎");
-                reactionMessage.awaitReactions(emojiFilter, {
-                    max: 1,
-                    time: 10000,
-                    errors: ['time']
-                })
-                    .then(async collected => {
-                        reactionMessage.reactions.removeAll();
-                        if (collected.first().emoji.name === "✅") {
-                            console.log(garage[index]);
-                            garage.splice(index, 1);
-
-                            var y = 0;
-                            while (y < playerData.garage.length) {
-                                if (playerData.hand) {
-                                    if (playerData.hand.carFile === currentCar.carFile) {
-                                        playerData.hand = null;
-                                    }
+                        var y = 0;
+                        while (y < playerData.garage.length) {
+                            if (playerData.hand) {
+                                if (playerData.hand.carFile === currentCar.carFile) {
+                                    playerData.hand = null;
                                 }
-                                var i = 0, x = 0;
-                                while (i < playerData.decks.length) {
-                                    while (x < playerData.decks[i].hand.length) {
-                                        if (playerData.decks[i].hand[x].carFile === currentCar.carFile) {
-                                            playerData.decks[i].hand[x] = "None";
-                                        }
-                                        x++;
-                                    }
-                                    i++;
-                                }
-                                y++;
                             }
-
-                            playerData.money += money;
-                            await db.set(`acc${message.author.id}`, playerData);
-
-                            const infoScreen = new Discord.MessageEmbed()
-                                .setColor("#03fc24")
-                                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                                .setTitle(`Successfully sold your ${currentName}!`)
-                                .setDescription(`You earned ${moneyEmoji}${money}!`)
-                                .addField("Your Money Balance", `${moneyEmoji}${playerData.money}`)
-                                .setImage(car["card"])
-                                .setTimestamp();
-                            return reactionMessage.edit(infoScreen);
+                            var i = 0, x = 0;
+                            while (i < playerData.decks.length) {
+                                while (x < playerData.decks[i].hand.length) {
+                                    if (playerData.decks[i].hand[x].carFile === currentCar.carFile) {
+                                        playerData.decks[i].hand[x] = "None";
+                                    }
+                                    x++;
+                                }
+                                i++;
+                            }
+                            y++;
                         }
-                        else if (collected.first().emoji.name === "❎") {
-                            const cancelMessage = new Discord.MessageEmbed()
-                                .setColor("#34aeeb")
-                                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                                .setTitle("Action cancelled.")
-                                .setDescription(`Your ${currentName} stays in your garage.`)
-                                .setImage(car["card"])
-                                .setTimestamp();
-                            return reactionMessage.edit(cancelMessage);
-                        }
-                    })
-                    .catch(() => {
+
+                        playerData.money += money;
+                        await db.set(`acc${message.author.id}`, playerData);
+
+                        const infoScreen = new Discord.MessageEmbed()
+                            .setColor("#03fc24")
+                            .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                            .setTitle(`Successfully sold your ${currentName}!`)
+                            .setDescription(`You earned ${moneyEmoji}${money}!`)
+                            .addField("Your Money Balance", `${moneyEmoji}${playerData.money}`)
+                            .setImage(car["card"])
+                            .setTimestamp();
+                        return reactionMessage.edit(infoScreen);
+                    }
+                    else if (collected.first().emoji.name === "❎") {
                         const cancelMessage = new Discord.MessageEmbed()
                             .setColor("#34aeeb")
                             .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                            .setTitle("Action cancelled automatically.")
+                            .setTitle("Action cancelled.")
                             .setDescription(`Your ${currentName} stays in your garage.`)
                             .setImage(car["card"])
                             .setTimestamp();
                         return reactionMessage.edit(cancelMessage);
-                    });
-            });
+                    }
+                })
+                .catch(() => {
+                    reactionMessage.reactions.removeAll();
+                    const cancelMessage = new Discord.MessageEmbed()
+                        .setColor("#34aeeb")
+                        .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                        .setTitle("Action cancelled automatically.")
+                        .setDescription(`Your ${currentName} stays in your garage.`)
+                        .setImage(car["card"])
+                        .setTimestamp();
+                    return reactionMessage.edit(cancelMessage);
+                });
         }
     }
 }

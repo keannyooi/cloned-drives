@@ -21,7 +21,7 @@ module.exports = {
 	adminOnly: false,
 	description: "Check what's on sale in the car dealership here!",
 	async execute(message) {
-		message.channel.send("**Loading dealership, this may take a while... (please wait)**");
+		const wait = await message.channel.send("**Loading dealership, this may take a while... (please wait)**");
 
 		try {
 			const db = message.client.db;
@@ -92,24 +92,26 @@ module.exports = {
 				const currentName = `${currentCar["make"]} ${currentCar["model"]} (${currentCar["modelYear"]})`;
 				deckScreen.addField(`${i + 1} - ${currentName}`, `Price: ${moneyEmoji}${catalog[i].price}`, true);
 			}
+			wait.delete();
 			return message.channel.send(deckScreen);
 
-			function refresh() {
-				catalog = [];
+			async function refresh() {
+				const catalog = [];
 				var i = 0;
 				while (i < 8) {
 					const randNum = Math.floor(Math.random() * 100);
+					console.log(randNum + " is the random number");
 					var currentName, price;
 					var currentCard;
 					if (randNum < 33) {
 						currentCard = require(`./cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
 						if (i < 4) {
-							while (isOnSale(currentCard) || !currentCard["isPrize"] || currentCard["rq"] > 19) {
+							while (isOnSale(currentCard) || currentCard["isPrize"] || currentCard["rq"] > 19) {
 								currentCard = require(`./cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
 							}
 						}
 						else {
-							while (isOnSale(currentCard) || !currentCard["isPrize"] || currentCard["rq"] > 49 || currentCard["rq"] < 40) {
+							while (isOnSale(currentCard) || currentCard["isPrize"] || currentCard["rq"] > 49 || currentCard["rq"] < 40) {
 								currentCard = require(`./cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
 							}
 						}
@@ -117,12 +119,12 @@ module.exports = {
 					else if (randNum < 66) {
 						currentCard = require(`./cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
 						if (i < 4) {
-							while (isOnSale(currentCard) || !currentCard["isPrize"] || currentCard["rq"] > 29 || currentCard["rq"] < 20) {
+							while (isOnSale(currentCard) || currentCard["isPrize"] || currentCard["rq"] > 29 || currentCard["rq"] < 20) {
 								currentCard = require(`./cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
 							}
 						}
 						else {
-							while (isOnSale(currentCard) || !currentCard["isPrize"] || currentCard["rq"] > 64 || currentCard["rq"] < 50) {
+							while (isOnSale(currentCard) || currentCard["isPrize"] || currentCard["rq"] > 64 || currentCard["rq"] < 50) {
 								currentCard = require(`./cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
 							}
 						}
@@ -130,12 +132,12 @@ module.exports = {
 					else if (randNum < 91) {
 						currentCard = require(`./cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
 						if (i < 4) {
-							while (isOnSale(currentCard) || !currentCard["isPrize"] || currentCard["rq"] > 39 || currentCard["rq"] < 30) {
+							while (isOnSale(currentCard) || currentCard["isPrize"] || currentCard["rq"] > 39 || currentCard["rq"] < 30) {
 								currentCard = require(`./cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
 							}
 						}
 						else {
-							while (isOnSale(currentCard) || !currentCard["isPrize"] || currentCard["rq"] > 79 || currentCard["rq"] < 65) {
+							while (isOnSale(currentCard) || currentCard["isPrize"] || currentCard["rq"] > 79 || currentCard["rq"] < 65) {
 								currentCard = require(`./cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
 							}
 						}
@@ -143,12 +145,12 @@ module.exports = {
 					else {
 						currentCard = require(`./cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
 						if (i < 4) {
-							while (isOnSale(currentCard) || !currentCard["isPrize"] || currentCard["rq"] > 49 || currentCard["rq"] < 40) {
+							while (isOnSale(currentCard) || currentCard["isPrize"] || currentCard["rq"] > 49 || currentCard["rq"] < 40) {
 								currentCard = require(`./cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
 							}
 						}
 						else {
-							while (isOnSale(currentCard) || !currentCard["isPrize"] || currentCard["rq"] < 80) {
+							while (isOnSale(currentCard) || currentCard["isPrize"] || currentCard["rq"] < 80) {
 								currentCard = require(`./cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
 							}
 						}
@@ -185,21 +187,23 @@ module.exports = {
 						}
 					}
 				});
-			}
+				await db.set("dealershipCatalog", catalog);
 
-			function isOnSale(card) {
-				var isOnSale = false;
-				for (i = 0; i < catalog.length; i++) {
-					const catalogCar = require(`./cars/${catalog[i].carFile}.json`);
-					if (catalogCar === card) {
-						isOnSale = true;
+				function isOnSale(card) {
+					var isOnSale = false;
+					for (i = 0; i < catalog.length; i++) {
+						const catalogCar = require(`./cars/${catalog[i].carFile}`);
+						if (catalogCar === card) {
+							isOnSale = true;
+						}
 					}
+					return isOnSale;
 				}
-				return isOnSale;
 			}
 		}
 		catch (error) {
 			console.error(error);
+			wait.delete();
 			const errorMessage = new Discord.MessageEmbed()
 				.setColor("#fc0303")
 				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))

@@ -44,7 +44,7 @@ module.exports = {
 		var opponent = playerData.rrOpponent;
 
 		if (!trackset || !opponent) {
-			await randomize();
+			randomize();
 		}
 		if (!playerData.rrWinStreak) {
 			playerData.rrWinStreak = 0;
@@ -113,7 +113,7 @@ module.exports = {
 						return reactionMessage.edit(cancelMessage);
 					}
 				})
-				.catch((error) => {
+				.catch(error => {
 					console.log(error);
 					reactionMessage.reactions.removeAll();
 					const cancelMessage = new Discord.MessageEmbed()

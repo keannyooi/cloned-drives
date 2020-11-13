@@ -97,7 +97,7 @@ module.exports = {
                         .setDescription(deckList)
                         .setTimestamp();
 
-                    message.channel.send(infoScreen).then(() => {
+                    message.channel.send(infoScreen).then(currentMessage => {
                         message.channel.awaitMessages(filter, {
                             max: 1,
                             time: 30000,
@@ -111,12 +111,20 @@ module.exports = {
                                         .setTitle("Error, invalid integer provided.")
                                         .setDescription("It looks like your response was either not a number or not part of the selection.")
                                         .setTimestamp();
-                                    return message.channel.send(errorMessage);
+                                    return currentMessage.edit(errorMessage);
                                 }
                                 else {
                                     currentDeck = searchResults[parseInt(collected.first()) - 1];
                                     display(currentDeck);
                                 }
+                            })
+                            .catch(() => {
+                                const cancelMessage = new Discord.MessageEmbed()
+                                    .setColor("#34aeeb")
+                                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                                    .setTitle("Action cancelled automatically.")
+                                    .setTimestamp();
+                                return currentMessage.edit(cancelMessage);
                             });
                     });
                 }
@@ -136,7 +144,7 @@ module.exports = {
         }
 
         async function display(currentDeck) {
-            message.channel.send("**Loading deck, this may take a while... (please wait)**");
+            const wait = await message.channel.send("**Loading deck, this may take a while... (please wait)**");
 
             try {
                 var handList = "";
@@ -190,6 +198,7 @@ module.exports = {
                     .attachFiles(attachment)
                     .setImage("attachment://deck.png")
                     .setTimestamp();
+                wait.delete();
                 return message.channel.send(deckScreen);
             }
             catch (error) {
@@ -198,7 +207,8 @@ module.exports = {
                     .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                     .setTitle("Error, failed to load in deck.")
                     .setDescription("Something must have gone wrong. Please report this issure to the devs.")
-                    .setTimestamp();
+                    .setTimestamp()
+                wait.delete();
                 return message.channel.send(errorMessage);
             }
         }

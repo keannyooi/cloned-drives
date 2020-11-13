@@ -11,13 +11,13 @@ const Discord = require("discord.js-light");
 
 module.exports = {
     name: "removecar",
-	aliases: ["rmvcar"],
+    aliases: ["rmvcar"],
     usage: "<username> <car name goes here>",
     args: true,
     adminOnly: true,
     description: "Removes a car from someone's garage. (data transferring)",
     async execute(message, args) {
-		const db = message.client.db;
+        const db = message.client.db;
         if (!args[1]) {
             const errorMessage = new Discord.MessageEmbed()
                 .setColor("#fc0303")
@@ -41,14 +41,14 @@ module.exports = {
         var user, member;
         if (args.length) {
             var userName = args[0].toLowerCase();
-            
+
             message.guild.members.cache.forEach(User => {
-            	if (message.guild.member(User).displayName.toLowerCase().includes(userName)) {
-                	console.log("found!");
-                	user = User.user;
-					member = message.guild.member(User);
-            	}
-        	});
+                if (message.guild.member(User).displayName.toLowerCase().includes(userName)) {
+                    console.log("found!");
+                    user = User.user;
+                    member = message.guild.member(User);
+                }
+            });
         }
 
         if (!user) {
@@ -70,7 +70,7 @@ module.exports = {
             return message.channel.send(errorMessage);
         }
 
-		const playerData = await db.get(`acc${user.id}`);
+        const playerData = await db.get(`acc${user.id}`);
         const garage = playerData.garage;
 
         for (i = 2; i < args.length; i++) {
@@ -78,14 +78,14 @@ module.exports = {
         }
 
         if (garage.length <= 5) {
-			const errorMessage = new Discord.MessageEmbed()
+            const errorMessage = new Discord.MessageEmbed()
                 .setColor("#fc0303")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                 .setTitle("HOLD ON RIGHT THERE!")
-                .setDescription("This player only has 5 cars left. Please spare him and stop remove=ing cars from his possession!")
+                .setDescription("This player only has 5 cars left. Please spare him and stop removing cars from his possession!")
                 .setTimestamp();
             return message.channel.send(errorMessage);
-		}
+        }
 
         var counter = 0;
         var searched = 0;
@@ -137,10 +137,11 @@ module.exports = {
                             else {
                                 currentCar = searchResults[parseInt(collected.first()) - 1].car;
                                 index = searchResults[parseInt(collected.first()) - 1].index;
-                                removeCar(currentCar, index);
+                                removeCar(currentCar, index, currentMessage);
                             }
                         })
-                        .catch(() => {
+                        .catch(error => {
+                            console.log(error);
                             const cancelMessage = new Discord.MessageEmbed()
                                 .setColor("#34aeeb")
                                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -166,7 +167,7 @@ module.exports = {
             return message.channel.send(errorMessage);
         }
 
-        function removeCar(currentCar, index) {
+        async function removeCar(currentCar, index, currentMessage) {
             const car = require(`./cars/${currentCar.carFile}`);
             const currentName = `${car["make"]} ${car["model"]} (${car["modelYear"]}) [${garage[index].gearingUpgrade}${garage[index].engineUpgrade}${garage[index].chassisUpgrade}]`;
 
@@ -178,75 +179,83 @@ module.exports = {
                 .setDescription("React with ✅ to proceed or ❎ to cancel.")
                 .setImage(car["card"])
                 .setTimestamp();
-            
-            message.channel.send(confirmationMessage).then(reactionMessage => {
-                reactionMessage.react("✅");
-                reactionMessage.react("❎");
-                reactionMessage.awaitReactions(emojiFilter, {
-                    max: 1,
-                    time: 10000,
-                    errors: ['time']
-                })
-                    .then(async collected => {
+
+            var reactionMessage;
+            if (currentMessage) {
+                reactionMessage = await currentMessage.edit(confirmationMessage);
+            }
+            else {
+                reactionMessage = await message.channel.send(confirmationMessage);
+            }
+
+            reactionMessage.react("✅");
+            reactionMessage.react("❎");
+            reactionMessage.awaitReactions(emojiFilter, {
+                max: 1,
+                time: 10000,
+                errors: ['time']
+            })
+                .then(async collected => {
+                    reactionMessage.reactions.removeAll();
+                    if (collected.first().emoji.name === "✅") {
+                        var y = 0;
+                        while (y < playerData.garage.length) {
+                            if (playerData.hand) {
+                                if (playerData.hand.carFile === currentCar.carFile) {
+                                    playerData.hand = null;
+                                }
+                            }
+                            var i = 0, x = 0;
+                            while (i < playerData.decks.length) {
+                                while (x < playerData.decks[i].hand.length) {
+                                    if (playerData.decks[i].hand[x].carFile === currentCar.carFile) {
+                                        playerData.decks[i].hand[x] = "None";
+                                    }
+                                    x++;
+                                }
+                                i++;
+                            }
+                            y++;
+                        }
+
+                        garage.splice(index, 1);
+                        await db.set(`acc${user.id}`, playerData);
+
+                        const infoScreen = new Discord.MessageEmbed()
+                            .setColor("#03fc24")
+                            .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                            .setTitle(`Successfully removed ${member.displayName}'s ${currentName}!`)
+                            .setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
+                            .setImage(car["card"])
+                            .setTimestamp();
+                        return reactionMessage.edit(infoScreen);
+                    }
+                    else if (collected.first().emoji.name === "❎") {
                         reactionMessage.reactions.removeAll();
-                        if (collected.first().emoji.name === "✅") {
-							var y = 0;
-							while (y < playerData.garage.length) {
-								if (playerData.hand) {
-									if (playerData.hand.carFile === currentCar.carFile) {
-										playerData.hand = null;
-									}
-								}
-								var i = 0, x = 0;
-								while (i < playerData.decks.length) {
-									while (x < playerData.decks[i].hand.length) {
-										if (playerData.decks[i].hand[x].carFile === currentCar.carFile) {
-											playerData.decks[i].hand[x] = "None";
-										}
-										x++;
-									}
-									i++;
-								}
-								y++;
-							}
-
-							garage.splice(index, 1);
-                            await db.set(`acc${user.id}`, playerData);
-
-                            const infoScreen = new Discord.MessageEmbed()
-                                .setColor("#03fc24")
-                                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                                .setTitle(`Successfully removed ${member.displayName}'s ${currentName}!`)
-                                .setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
-                                .setImage(car["card"])
-                                .setTimestamp();
-                            return reactionMessage.edit(infoScreen);
-                        }
-                        else if (collected.first().emoji.name === "❎") {
-                            const cancelMessage = new Discord.MessageEmbed()
-                                .setColor("#34aeeb")
-                                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                                .setTitle("Action cancelled.")
-                                .setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
-                                .setDescription(`${member.displayName}'s ${currentName} stays in their garage.`)
-                                .setImage(car["card"])
-                                .setTimestamp();
-                            return reactionMessage.edit(cancelMessage);
-                        }
-                    })
-                    .catch(error => {
-						console.error(error);
                         const cancelMessage = new Discord.MessageEmbed()
                             .setColor("#34aeeb")
                             .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                            .setTitle("Action cancelled automatically.")
+                            .setTitle("Action cancelled.")
                             .setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
                             .setDescription(`${member.displayName}'s ${currentName} stays in their garage.`)
                             .setImage(car["card"])
                             .setTimestamp();
                         return reactionMessage.edit(cancelMessage);
-                    });
-            });
+                    }
+                })
+                .catch(error => {
+                    console.error(error);
+                    reactionMessage.reactions.removeAll();
+                    const cancelMessage = new Discord.MessageEmbed()
+                        .setColor("#34aeeb")
+                        .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                        .setTitle("Action cancelled automatically.")
+                        .setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
+                        .setDescription(`${member.displayName}'s ${currentName} stays in their garage.`)
+                        .setImage(car["card"])
+                        .setTimestamp();
+                    return reactionMessage.edit(cancelMessage);
+                });
         }
     }
 }

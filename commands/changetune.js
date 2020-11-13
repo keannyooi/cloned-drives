@@ -41,12 +41,12 @@ module.exports = {
 			var userName = args[0].toLowerCase();
 
 			message.guild.members.cache.forEach(User => {
-            	if (message.guild.member(User).displayName.toLowerCase().includes(userName)) {
-                	console.log("found!");
-                	user = User.user;
+				if (message.guild.member(User).displayName.toLowerCase().includes(userName)) {
+					console.log("found!");
+					user = User.user;
 					member = message.guild.member(User);
-            	}
-        	});
+				}
+			});
 		}
 
 		if (!user) {
@@ -59,14 +59,14 @@ module.exports = {
 			return message.channel.send(errorMessage);
 		}
 		else if (user.bot) {
-            const errorMessage = new Discord.MessageEmbed()
-                .setColor("#fc0303")
-                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle("Error, user requested is a bot.")
-                .setDescription("Bots can't play Cloned Drives.")
-                .setTimestamp();
-            return message.channel.send(errorMessage);
-        }
+			const errorMessage = new Discord.MessageEmbed()
+				.setColor("#fc0303")
+				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+				.setTitle("Error, user requested is a bot.")
+				.setDescription("Bots can't play Cloned Drives.")
+				.setTimestamp();
+			return message.channel.send(errorMessage);
+		}
 		const playerData = await db.get(`acc${user.id}`);
 		const garage = playerData.garage;
 
@@ -104,7 +104,7 @@ module.exports = {
 					.setDescription(carList)
 					.setTimestamp();
 
-				message.channel.send(infoScreen).then(() => {
+				message.channel.send(infoScreen).then(currentMessage => {
 					message.channel.awaitMessages(filter, {
 						max: 1,
 						time: waitTime,
@@ -112,17 +112,19 @@ module.exports = {
 					})
 						.then(collected => {
 							if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
+								collected.first().delete();
 								const errorMessage = new Discord.MessageEmbed()
 									.setColor("#fc0303")
 									.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 									.setTitle("Error, invalid integer provided.")
 									.setDescription("It looks like your response was either not a number or not part of the selection.")
 									.setTimestamp();
-								return message.channel.send(errorMessage);
+								return currentMessage.edit(errorMessage);
 							}
 							else {
 								currentCar = searchResults[parseInt(collected.first()) - 1];
-								changeTune(currentCar);
+								collected.first().delete();
+								changeTune(currentCar, currentMessage);
 							}
 						});
 				});
@@ -141,7 +143,7 @@ module.exports = {
 			return message.channel.send(errorMessage);
 		}
 
-		async function changeTune(currentCar) {
+		async function changeTune(currentCar, currentMessage) {
 			const car = require(`./cars/${currentCar.carFile}`);
 			const currentName = `${car["make"]} ${car["model"]} (${car["modelYear"]})`;
 			var racehud;
@@ -189,7 +191,12 @@ module.exports = {
 						.setTitle("Error, the tuning stage you requested is not supported.")
 						.setDescription("In order to make the tuning system less complex, the tuning stages are limited to `stock`, `333`, `666`, `996`, `969` and `699`.")
 						.setTimestamp();
-					return message.channel.send(errorScreen);
+					if (currentMessage) {
+						return currentMessage.edit(errorScreen);
+					}
+					else {
+						return message.channel.send(errorScreen);
+					}
 			}
 
 			var y = 0;
@@ -231,7 +238,12 @@ module.exports = {
 				)
 				.setImage(racehud)
 				.setTimestamp();
-			return message.channel.send(infoScreen);
+			if (currentMessage) {
+				return currentMessage.edit(infoScreen);
+			}
+			else {
+				return message.channel.send(infoScreen);
+			}
 		}
 	}
 }

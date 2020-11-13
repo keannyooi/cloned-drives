@@ -26,9 +26,9 @@ module.exports = {
             return message.channel.send(errorMessage);
         }
 
-		const db = message.client.db;
-		const playerData = await db.get(`acc${message.author.id}`);
-		const decks = playerData.decks;
+        const db = message.client.db;
+        const playerData = await db.get(`acc${message.author.id}`);
+        const decks = playerData.decks;
         const deckName = args[0].toLowerCase();
         const index = args[1];
         if (isNaN(index) || index > 5 || index < 1) {
@@ -44,7 +44,7 @@ module.exports = {
         const filter = response => {
             return response.author.id === message.author.id;
         };
-		const emojiFilter = (reaction, user) => {
+        const emojiFilter = (reaction, user) => {
             return (reaction.emoji.name === "✅" || reaction.emoji.name === "❎") && user.id === message.author.id;
         };
 
@@ -84,6 +84,7 @@ module.exports = {
                     })
                         .then(collected => {
                             if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
+                                collected.first().delete();
                                 const errorMessage = new Discord.MessageEmbed()
                                     .setColor("#fc0303")
                                     .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -94,7 +95,8 @@ module.exports = {
                             }
                             else {
                                 currentDeck = searchResults[parseInt(collected.first()) - 1].deck;
-                                removeCar(currentDeck, parseInt(index));
+                                collected.first().delete();
+                                removeCar(currentDeck, parseInt(index), currentMessage);
                             }
                         })
                         .catch(() => {
@@ -121,17 +123,22 @@ module.exports = {
             return message.channel.send(errorMessage);
         }
 
-        async function removeCar(currentDeck, index) {
-			const currentCar = currentDeck.hand[index - 1];
-			if (currentCar === "None") {
-				const errorMessage = new Discord.MessageEmbed()
-                	.setColor("#fc0303")
-                	.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                	.setTitle("Error, slot requested is already empty.")
-                	.setDescription("Try checking again with `cd-decks`.")
-                	.setTimestamp();
-            	return message.channel.send(errorMessage);
-			}
+        async function removeCar(currentDeck, index, currentMessage) {
+            const currentCar = currentDeck.hand[index - 1];
+            if (currentCar === "None") {
+                const errorMessage = new Discord.MessageEmbed()
+                    .setColor("#fc0303")
+                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                    .setTitle("Error, slot requested is already empty.")
+                    .setDescription("Try checking again with `cd-decks`.")
+                    .setTimestamp();
+                if (currentMessage) {
+                    return currentMessage.edit(errorMessage);
+                }
+                else {
+                    return message.channel.send(errorMessage);
+                }
+            }
 
             const car = require(`./cars/${currentCar.carFile}`);
             const upgrade = `${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}`;
@@ -160,54 +167,62 @@ module.exports = {
                     break;
             }
 
-			const confirmationMessage = new Discord.MessageEmbed()
+            const confirmationMessage = new Discord.MessageEmbed()
                 .setColor("#34aeeb")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle(`Are you sure you want to remove your ${currentName} from slot ${index - 1} of deck ${currentDeck.name}?`)
+                .setTitle(`Are you sure you want to remove your ${currentName} from slot ${index} of deck ${currentDeck.name}?`)
                 .setDescription("React with ✅ to proceed or ❎ to cancel.")
-				.setImage(racehud)
+                .setImage(racehud)
                 .setTimestamp();
 
-            message.channel.send(confirmationMessage).then(reactionMessage => {
-                reactionMessage.react("✅");
-                reactionMessage.react("❎");
-                reactionMessage.awaitReactions(emojiFilter, {
-                    max: 1,
-                    time: 10000,
-                    errors: ['time']
-                })
-                    .then(async collected => {
-                        reactionMessage.reactions.removeAll();
-                        if (collected.first().emoji.name === "✅") {
-                            currentDeck.hand[index - 1] = "None";
-							await db.set(`acc${message.author.id}`, playerData);
+            var reactionMessage;
+            if (currentMessage) {
+                reactionMessage = await currentMessage.edit(confirmationMessage);
+            }
+            else {
+                reactionMessage = await message.channel.send(confirmationMessage);
+            }
 
-            				const infoScreen = new Discord.MessageEmbed()
-                				.setColor("#34aeeb")
-                				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                				.setTitle(`Successfully removed ${currentName} from slot ${index - 1} of deck ${currentDeck.name}.`)
-                				.setImage(racehud)
-                				.setTimestamp();
-            				return reactionMessage.edit(infoScreen);
-                        }
-                        else if (collected.first().emoji.name === "❎") {
-                            const cancelMessage = new Discord.MessageEmbed()
-                                .setColor("#34aeeb")
-                                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                                .setTitle("Action cancelled.")
-                                .setTimestamp();
-                            return reactionMessage.edit(cancelMessage);
-                        }
-                    })
-                    .catch(() => {
+            reactionMessage.react("✅");
+            reactionMessage.react("❎");
+            reactionMessage.awaitReactions(emojiFilter, {
+                max: 1,
+                time: 10000,
+                errors: ['time']
+            })
+                .then(async collected => {
+                    reactionMessage.reactions.removeAll();
+                    if (collected.first().emoji.name === "✅") {
+                        currentDeck.hand[index - 1] = "None";
+                        await db.set(`acc${message.author.id}`, playerData);
+
+                        const infoScreen = new Discord.MessageEmbed()
+                            .setColor("#34aeeb")
+                            .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                            .setTitle(`Successfully removed ${currentName} from slot ${index - 1} of deck ${currentDeck.name}.`)
+                            .setImage(racehud)
+                            .setTimestamp();
+                        return reactionMessage.edit(infoScreen);
+                    }
+                    else if (collected.first().emoji.name === "❎") {
+                        reactionMessage.reactions.removeAll();
                         const cancelMessage = new Discord.MessageEmbed()
                             .setColor("#34aeeb")
                             .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                            .setTitle("Action cancelled automatically.")
+                            .setTitle("Action cancelled.")
                             .setTimestamp();
                         return reactionMessage.edit(cancelMessage);
-                    });
-            });
+                    }
+                })
+                .catch(() => {
+                    reactionMessage.reactions.removeAll();
+                    const cancelMessage = new Discord.MessageEmbed()
+                        .setColor("#34aeeb")
+                        .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                        .setTitle("Action cancelled automatically.")
+                        .setTimestamp();
+                    return reactionMessage.edit(cancelMessage);
+                });
         }
     }
 }

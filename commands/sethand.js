@@ -58,7 +58,7 @@ module.exports = {
                     .setTitle("Multiple cars found, please type one of the following.")
                     .setDescription(carList);
 
-                message.channel.send(infoScreen).then(() => {
+                message.channel.send(infoScreen).then(currentMessage => {
                     message.channel.awaitMessages(filter, {
                         max: 1,
                         time: waitTime,
@@ -72,11 +72,11 @@ module.exports = {
                                     .setTitle("Error, invalid integer provided.")
                                     .setDescription("It looks like your response was either not a number or not part of the selection.")
                                     .setTimestamp();
-                                return message.channel.send(errorMessage);
+                                return currentMessage.edit(errorMessage);
                             }
                             else {
                                 currentCar = searchResults[parseInt(collected.first()) - 1];
-                                setHand(currentCar);
+                                setHand(currentCar, currentMessage);
                             }
                         })
                         .catch(() => {
@@ -85,7 +85,7 @@ module.exports = {
                                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                                 .setTitle("Action cancelled automatically.")
                                 .setTimestamp();
-                            return message.channel.send(cancelMessage);
+                            return currentMessage.edit(cancelMessage);
                         });
                 });
             }
@@ -103,7 +103,7 @@ module.exports = {
             return message.channel.send(errorMessage);
         }
 
-        async function setHand(currentCar) {
+        async function setHand(currentCar, currentMessage) {
             const car = require(`./cars/${currentCar.carFile}`);
             const currentName = `${car["make"]} ${car["model"]} (${car["modelYear"]}) [${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}]`;
             var racehud;
@@ -143,7 +143,12 @@ module.exports = {
                 .setTitle(`Successfully set your ${currentName} as your quick race and random race hand!`)
                 .setImage(racehud)
                 .setTimestamp();
-            return message.channel.send(infoScreen);
+            if (currentMessage) {
+                return currentMessage.edit(infoScreen);
+            }
+            else {
+                return message.channel.send(infoScreen);
+            }
         }
     }
 }
