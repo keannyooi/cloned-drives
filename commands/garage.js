@@ -389,6 +389,7 @@ module.exports = {
                         case "topSpeed":
                             switch (garage[i].gearingUpgrade + garage[i].engineUpgrade + garage[i].chassisUpgrade) {
                                 case 0:
+                                    garageList += ` \`${currentCar[sortBy]}\``;
                                     break;
                                 case 9:
                                     garageList += ` \`${currentCar["1StarTopSpeed"]}\``;
@@ -406,6 +407,7 @@ module.exports = {
                         case "0to60":
                             switch (garage[i].gearingUpgrade + garage[i].engineUpgrade + garage[i].chassisUpgrade) {
                                 case 0:
+                                    garageList += ` \`${currentCar[sortBy]}\``;
                                     break;
                                 case 9:
                                     garageList += ` \`${currentCar["1Star0to60"]}\``;
@@ -423,6 +425,7 @@ module.exports = {
                         case "handling":
                             switch (garage[i].gearingUpgrade + garage[i].engineUpgrade + garage[i].chassisUpgrade) {
                                 case 0:
+                                    garageList += ` \`${currentCar[sortBy]}\``;
                                     break;
                                 case 9:
                                     garageList += ` \`${currentCar["1StarHandling"]}\``;
