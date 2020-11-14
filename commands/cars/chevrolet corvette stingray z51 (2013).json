@@ -1,0 +1,45 @@
+{
+    "rq": 81,
+    "make": "Chevrolet",
+    "model": "Corvette Stingray Z51",
+    "modelYear": 2013,
+    "country": "US",
+    "topSpeed": 190,
+    "0to60": 3.9,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1518,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 82.98,
+    "ola": 82.05,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/777107043660201984/japanese_corvette.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/777090819739353109/chevrolet_corvette_stingray_c7_z51.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/777090845467082752/chevrolet_corvette_stingray_c7_z51_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/777090858688053278/chevrolet_corvette_stingray_c7_z51_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "",
+    "racehudMaxed699": "https://cdn.discordapp.com/attachments/718097267621363744/777090877096067102/chevrolet_corvette_stingray_c7_z51_699.jpg",
+
+    "1StarTopSpeed": 193,
+    "1Star0to60": 3.7,
+    "1StarHandling": 94,
+
+    "2StarTopSpeed": 196,
+    "2Star0to60": 3.5,
+    "2StarHandling": 98,
+
+    "699MaxedTopSpeed": 199,
+    "699Maxed0to60": 3.3,
+    "699MaxedHandling": 101
+}

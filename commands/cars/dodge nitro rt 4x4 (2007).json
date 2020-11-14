@@ -28,7 +28,7 @@
     "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/718268568617353246/dodge_nitro_rt_4x4_333.jpg",
     "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/718268603572682772/dodge_nitro_rt_4x4_666.jpg",
     "racehudMaxed996": "https://cdn.discordapp.com/attachments/718097267621363744/718268642361344131/dodge_nitro_rt_4x4_996.jpg",
-    "racehudMaxed969": "",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/777110620700672030/nitro_969.jpg",
     "racehudMaxed699": "",
 
     "1StarTopSpeed": 117,
@@ -41,5 +41,9 @@
 
     "996MaxedTopSpeed": 123,
     "996Maxed0to60": 5.5,
-    "996MaxedHandling": 63
+    "996MaxedHandling": 63,
+
+    "969MaxedTopSpeed": 123,
+    "969Maxed0to60": 5.6,
+    "969MaxedHandling": 65
 }

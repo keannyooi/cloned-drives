@@ -96,8 +96,8 @@ module.exports = {
                             }
                             else {
                                 currentTrack = searchResults[parseInt(collected.first()) - 1];
-                                collected.first().delete();
                                 chooseOpponent(currentMessage);
+                                collected.first().delete();
                             }
                         })
                         .catch(() => {
@@ -213,7 +213,6 @@ module.exports = {
                             });
                         }
                         else {
-                            collected.first().delete();
                             return upgrade(currentCar, currentMessage2);
                         }
                     }

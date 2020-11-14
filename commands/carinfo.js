@@ -59,7 +59,7 @@ module.exports = {
                     .setDescription(carList)
                     .setTimestamp();
 
-                message.channel.send(infoScreen).then(() => {
+                message.channel.send(infoScreen).then(currentMessage => {
                     message.channel.awaitMessages(filter, {
                         max: 1,
                         time: waitTime,
@@ -74,12 +74,12 @@ module.exports = {
                                     .setTitle("Error, invalid integer provided.")
                                     .setDescription("It looks like your response was either not a number or not part of the selection.")
                                     .setTimestamp();
-                                return message.channel.send(errorMessage);
+                                return currentMessage.edit(errorMessage);
                             }
                             else {
                                 currentCar = searchResults[parseInt(collected.first()) - 1];
                                 collected.first().delete();
-                                displayInfo(currentCar);
+                                displayInfo(currentCar, currentMessage);
                             }
                         })
                         .catch(() => {
@@ -88,7 +88,7 @@ module.exports = {
                                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                                 .setTitle("Action cancelled automatically.")
                                 .setTimestamp();
-                            return message.channel.send(cancelMessage);
+                            return currentMessage.edit(cancelMessage);
                         });
                 });
             }
@@ -106,7 +106,7 @@ module.exports = {
             return message.channel.send(errorMessage);
         }
 
-        function displayInfo(currentCar) {
+        function displayInfo(currentCar, currentMessage) {
             if (currentCar["rq"] > 79) { //leggie
                 rarity = message.guild.emojis.cache.find(emoji => emoji.name === "legendary");
             }
@@ -200,7 +200,12 @@ module.exports = {
                 .addField("Description", description)
                 .setImage(currentCar["card"])
                 .setTimestamp();
-            return message.channel.send(infoScreen);
+            if (currentMessage) {
+                return currentMessage.edit(infoScreen);  
+            }
+            else {
+                return message.channel.send(infoScreen);
+            }
         }
     }
 }

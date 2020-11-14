@@ -1,0 +1,49 @@
+{
+    "rq": 58,
+    "make": "Ferrari",
+    "model": "Testarossa",
+    "modelYear": 1985,
+    "country": "IT",
+    "topSpeed": 176,
+    "0to60": 5.0,
+    "handling": 78,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1708,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "fuelType": "Petrol",
+    "mra": 71.43,
+    "ola": 88.00,
+    "description": "",
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/775826149926240296/miami_vice.png",
+    "racehudStock": "https://media.discordapp.net/attachments/718097267621363744/775825499749613588/FerrariTestarossaStock.png",
+    "racehud1Star": "https://media.discordapp.net/attachments/718097267621363744/775825541461966898/FerrariTestarossa333.png",
+    "racehud2Star": "https://media.discordapp.net/attachments/718097267621363744/775825578225041468/FerrariTestarossa666.png",
+    "racehudMaxed996": "https://media.discordapp.net/attachments/718097267621363744/775825707653136434/FerrariTestarossa996.png",
+    "racehudMaxed969": "https://media.discordapp.net/attachments/718097267621363744/775825639612612618/FerrariTestarossa969.png",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 179,
+    "1Star0to60": 4.7,
+    "1StarHandling": 81,
+
+    "2StarTopSpeed": 182,
+    "2Star0to60": 4.4,
+    "2StarHandling": 84,
+
+    "969MaxedTopSpeed": 185,
+    "969Maxed0to60": 4.2,
+    "969MaxedHandling": 87,
+
+    "996MaxedTopSpeed": 186,
+    "996Maxed0to60": 4.1,
+    "996MaxedHandling": 85
+}

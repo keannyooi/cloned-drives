@@ -19,40 +19,79 @@ module.exports = {
     adminOnly: false,
     description: "Shows all the cars that are available in Cloned Drives in list form.",
     async execute(message, args) {
-		const db = message.client.db;
+        const db = message.client.db;
         const pageLimit = 10;
+        const trophyEmoji = message.guild.emojis.cache.find(emoji => emoji.name === "trophies");
         const filter = (reaction, user) => {
             return (reaction.emoji.name === "⬅️" || reaction.emoji.name === "➡️") && user.id === message.author.id;
         };
         var carList = "";
         var reactionIndex = 0;
+        var sortBy = "rq";
         var page;
 
-        if (!args.length) {
+        if (!args.length || (args[0] === "-s" && args[1])) {
             page = 1;
         }
+        else if (!isNaN(args[0])) {
+            page = parseInt(args[0]);
+        }
         else {
-            if (isNaN(args[0])) {
-                const errorScreen = new Discord.MessageEmbed()
-                    .setColor("#fc0303")
-                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                    .setTitle("Error, invalid integer provided.")
-                    .setDescription("It looks like the page number you requested is not a number.")
-                    .setTimestamp();
-                return message.channel.send(errorScreen);
-            }
-            else {
-                page = parseInt(args[0]);
-            }
+            const errorScreen = new Discord.MessageEmbed()
+                .setColor("#fc0303")
+                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                .setTitle("Error, invalid integer provided.")
+                .setDescription("It looks like the page number you requested is not a number.")
+                .setTimestamp();
+            return message.channel.send(errorScreen);
         }
 
         const garage = await db.get(`acc${message.author.id}.garage`);
         const totalPages = Math.ceil(carFiles.length / pageLimit);
 
+        if (args[args.length - 2] === "-s") {
+            switch (args[args.length - 1].toLowerCase()) {
+                case "rq":
+                    break;
+                case "topspeed":
+                    sortBy = "topSpeed";
+                    break;
+                case "accel":
+                    sortBy = "0to60";
+                    break;
+                case "handling":
+                    sortBy = "handling";
+                    break;
+                case "weight":
+                    sortBy = "weight";
+                    break;
+                case "mra":
+                    sortBy = "mra";
+                    break;
+                case "ola":
+                    sortBy = "ola";
+                    break;
+                default:
+                    const errorScreen = new Discord.MessageEmbed()
+                        .setColor("#fc0303")
+                        .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                        .setTitle("Error, sorting criteria not found.")
+                        .setDescription(`Here is a list of sorting criterias. 
+                                         \`-s topspeed\` - Sort by top speed. 
+                                         \`-s accel\` - Sort by acceleration. 
+                                         \`-s handling\` - Sort by handling. 
+                                         \`-s weight\` - Sort by weight. 
+                                         \`-s mra\` - Sort by mid-range acceleraion. 
+                                         \`-s ola\` - Sort by off-the-line acceleration.`)
+                        .setTimestamp();
+                    return message.channel.send(errorScreen);
+            }
+        }
+
         carFiles.sort(function (a, b) {
             const carA = require(`./cars/${a}`);
             const carB = require(`./cars/${b}`);
-            if (carA["rq"] === carB["rq"]) {
+            if (carA[sortBy] === carB[sortBy]) {
                 const nameA = carA["make"].toLowerCase() + carA["model"].toLowerCase();
                 const nameB = carB["make"].toLowerCase() + carB["model"].toLowerCase();
 
@@ -67,7 +106,7 @@ module.exports = {
                 }
             }
             else {
-                if (carA["rq"] - carB["rq"] > 0) {
+                if (carA[sortBy] - carB[sortBy] > 0) {
                     return -1;
                 }
                 else {
@@ -154,6 +193,7 @@ module.exports = {
 
             collector.on("end", collected => {
                 console.log("end of collection");
+                infoMessage.reactions.removeAll();
             });
         });
 
@@ -211,6 +251,13 @@ module.exports = {
                 const rarity = rarityCheck(currentCar);
 
                 carList += `(${rarity} ${currentCar["rq"]}) ` + currentCar["make"] + " " + currentCar["model"] + " (" + currentCar["modelYear"] + ")";
+                if (sortBy !== "rq") {
+                    carList += ` \`${currentCar[sortBy]}\``;
+                }
+                if (currentCar["isPrize"]) {
+                    carList += ` ${trophyEmoji}`;
+                }
+
                 if (isInGarage(carFiles[i])) {
                     carList += " ✅ \n";
                 }

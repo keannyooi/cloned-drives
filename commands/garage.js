@@ -18,23 +18,25 @@ module.exports = {
     async execute(message, args) {
 		const db = message.client.db;
         const pageLimit = 10;
+        const trophyEmoji = message.guild.emojis.cache.find(emoji => emoji.name === "trophies");
         const filter = (reaction, user) => {
             return (reaction.emoji.name === "⬅️" || reaction.emoji.name === "➡️") && user.id === message.author.id;
         };
         var garageList = "";
         var page, userName;
         var user = message.author;
-		var member = message.member;
+        var member = message.member;
+        var sortBy = "rq";
         var reactionIndex = 0;
 
-        if (!args.length) {
+        if (!args.length || args[0] === "-s") {
             page = 1;
         }
         else {
             if (isNaN(args[0])) {
                 userName = args[0].toLowerCase();
 
-                if (!args[1]) {
+                if (!args[1] || args[1] === "-s") {
                     page = 1;
                 }
                 else {
@@ -73,13 +75,154 @@ module.exports = {
             }
         }
 
+        if (args[args.length - 2] === "-s") {
+            switch (args[args.length - 1].toLowerCase()) {
+                case "rq":
+                    break;
+                case "topspeed":
+                    sortBy = "topSpeed";
+                    break;
+                case "accel":
+                    sortBy = "0to60";
+                    break;
+                case "handling":
+                    sortBy = "handling";
+                    break;
+                case "weight":
+                    sortBy = "weight";
+                    break;
+                case "mra":
+                    sortBy = "mra";
+                    break;
+                case "ola":
+                    sortBy = "ola";
+                    break;
+                default:
+                    const errorScreen = new Discord.MessageEmbed()
+                        .setColor("#fc0303")
+                        .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                        .setTitle("Error, sorting criteria not found.")
+                        .setDescription(`Here is a list of sorting criterias. 
+                                         \`-s topspeed\` - Sort by top speed. 
+                                         \`-s accel\` - Sort by acceleration. 
+                                         \`-s handling\` - Sort by handling. 
+                                         \`-s weight\` - Sort by weight. 
+                                         \`-s mra\` - Sort by mid-range acceleraion. 
+                                         \`-s ola\` - Sort by off-the-line acceleration.`)
+                        .setTimestamp();
+                    return message.channel.send(errorScreen);
+            }
+        }
+
         const garage = await db.get(`acc${user.id}.garage`);
         const totalPages = Math.ceil(garage.length / pageLimit);
 
         garage.sort(function (a, b) {
             const carA = require(`./cars/${a.carFile}`);
             const carB = require(`./cars/${b.carFile}`);
-            if (carA["rq"] === carB["rq"]) {
+            var criteriaA = carA[sortBy];
+            var criteriaB = carB[sortBy];
+            switch (sortBy) {
+                case "topSpeed":
+                    switch (a.gearingUpgrade + a.engineUpgrade + a.chassisUpgrade) {
+                        case 0:
+                            break;
+                        case 9:
+                            criteriaA = carA["1StarTopSpeed"];
+                            break;
+                        case 18:
+                            criteriaA = carA["2StarTopSpeed"];
+                            break;
+                        case 24:
+                            criteriaA = carA[`${a.gearingUpgrade}${a.engineUpgrade}${a.chassisUpgrade}MaxedTopSpeed`];
+                            break;
+                        default:
+                            break;
+                    }
+                    switch (b.gearingUpgrade + b.engineUpgrade + b.chassisUpgrade) {
+                        case 0:
+                            break;
+                        case 9:
+                            criteriaB = carB["1StarTopSpeed"];
+                            break;
+                        case 18:
+                            criteriaB = carB["2StarTopSpeed"];
+                            break;
+                        case 24:
+                            criteriaB = carB[`${b.gearingUpgrade}${b.engineUpgrade}${b.chassisUpgrade}MaxedTopSpeed`];
+                            break;
+                        default:
+                            break;
+                    }
+                    break;
+                case "0to60":
+                    switch (a.gearingUpgrade + a.engineUpgrade + a.chassisUpgrade) {
+                        case 0:
+                            break;
+                        case 9:
+                            criteriaA = carA["1Star0to60"];
+                            break;
+                        case 18:
+                            criteriaA = carA["2Star0to60"];
+                            break;
+                        case 24:
+                            criteriaA = carA[`${a.gearingUpgrade}${a.engineUpgrade}${a.chassisUpgrade}Maxed0to60`];
+                            break;
+                        default:
+                            break;
+                    }
+                    switch (b.gearingUpgrade + b.engineUpgrade + b.chassisUpgrade) {
+                        case 0:
+                            break;
+                        case 9:
+                            criteriaB = carB["1Star0to60"];
+                            break;
+                        case 18:
+                            criteriaB = carB["2Star0to60"];
+                            break;
+                        case 24:
+                            criteriaB = carB[`${b.gearingUpgrade}${b.engineUpgrade}${b.chassisUpgrade}Maxed0to60`];
+                            break;
+                        default:
+                            break;
+                    }
+                    break;
+                case "handling":
+                    switch (a.gearingUpgrade + a.engineUpgrade + a.chassisUpgrade) {
+                        case 0:
+                            break;
+                        case 9:
+                            criteriaA = carA["1StarHandling"];
+                            break;
+                        case 18:
+                            criteriaA = carA["2StarHandling"];
+                            break;
+                        case 24:
+                            criteriaA = carA[`${a.gearingUpgrade}${a.engineUpgrade}${a.chassisUpgrade}MaxedHandling`];
+                            break;
+                        default:
+                            break;
+                    }
+                    switch (b.gearingUpgrade + b.engineUpgrade + b.chassisUpgrade) {
+                        case 0:
+                            break;
+                        case 9:
+                            criteriaB = carB["1StarHandling"];
+                            break;
+                        case 18:
+                            criteriaB = carB["2StarHandling"];
+                            break;
+                        case 24:
+                            criteriaB = carB[`${b.gearingUpgrade}${b.engineUpgrade}${b.chassisUpgrade}MaxedHandling`];
+                            break;
+                        default:
+                            break;
+                    }
+                    break;
+                default:
+                    break;
+            }
+            if (criteriaA === criteriaB) {
                 const nameA = carA["make"].toLowerCase() + carA["model"].toLowerCase();
                 const nameB = carB["make"].toLowerCase() + carB["model"].toLowerCase();
 
@@ -94,7 +237,7 @@ module.exports = {
                 }
             }
             else {
-                if (carA["rq"] > carB["rq"]) {
+                if (criteriaA > criteriaB) {
                     return -1;
                 }
                 else {
@@ -183,6 +326,7 @@ module.exports = {
 
             collector.on("end", collected => {
                 console.log("end of collection");
+                garageMessage.reactions.removeAll();
             });
         });
 
@@ -239,7 +383,69 @@ module.exports = {
                 var currentCar = require(`./cars/${garage[i].carFile}`);
                 const rarity = rarityCheck(currentCar);
 
-                garageList += `(${rarity} ${currentCar["rq"]}) ` + currentCar["make"] + " " + currentCar["model"] + " (" + currentCar["modelYear"] + ") [" + garage[i].gearingUpgrade + garage[i].engineUpgrade + garage[i].chassisUpgrade + "]\n";
+                garageList += `(${rarity} ${currentCar["rq"]}) ` + currentCar["make"] + " " + currentCar["model"] + " (" + currentCar["modelYear"] + ") [" + garage[i].gearingUpgrade + garage[i].engineUpgrade + garage[i].chassisUpgrade + "]";
+                if (sortBy !== "rq") {
+                    switch (sortBy) {
+                        case "topSpeed":
+                            switch (garage[i].gearingUpgrade + garage[i].engineUpgrade + garage[i].chassisUpgrade) {
+                                case 0:
+                                    break;
+                                case 9:
+                                    garageList += ` \`${currentCar["1StarTopSpeed"]}\``;
+                                    break;
+                                case 18:
+                                    garageList += ` \`${currentCar["2StarTopSpeed"]}\``;
+                                    break;
+                                case 24:
+                                    garageList += ` \`${currentCar[`${garage[i].gearingUpgrade}${garage[i].engineUpgrade}${garage[i].chassisUpgrade}MaxedTopSpeed`]}\``;
+                                    break;
+                                default:
+                                    break;
+                            }
+                            break;
+                        case "0to60":
+                            switch (garage[i].gearingUpgrade + garage[i].engineUpgrade + garage[i].chassisUpgrade) {
+                                case 0:
+                                    break;
+                                case 9:
+                                    garageList += ` \`${currentCar["1Star0to60"]}\``;
+                                    break;
+                                case 18:
+                                    garageList += ` \`${currentCar["2Star0to60"]}\``;
+                                    break;
+                                case 24:
+                                    garageList += ` \`${currentCar[`${garage[i].gearingUpgrade}${garage[i].engineUpgrade}${garage[i].chassisUpgrade}Maxed0to60`]}\``;
+                                    break;
+                                default:
+                                    break;
+                            }
+                            break;
+                        case "handling":
+                            switch (garage[i].gearingUpgrade + garage[i].engineUpgrade + garage[i].chassisUpgrade) {
+                                case 0:
+                                    break;
+                                case 9:
+                                    garageList += ` \`${currentCar["1StarHandling"]}\``;
+                                    break;
+                                case 18:
+                                    garageList += ` \`${currentCar["2StarHandling"]}\``;
+                                    break;
+                                case 24:
+                                    garageList += ` \`${currentCar[`${garage[i].gearingUpgrade}${garage[i].engineUpgrade}${garage[i].chassisUpgrade}MaxedHandling`]}\``;
+                                    break;
+                                default:
+                                    break;
+                            }
+                            break;
+                        default:
+                            garageList += ` \`${currentCar[sortBy]}\``;
+                            break;
+                    }
+                }
+                if (currentCar["isPrize"]) {
+                    garageList += ` ${trophyEmoji}`;
+                }
+                garageList += "\n";
             }
         }
     }

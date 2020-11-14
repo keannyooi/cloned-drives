@@ -94,7 +94,6 @@ module.exports = {
 				}
 				var response = "";
 				console.log(comparison);
-				console.log((opponent.gc === "Low" || player.gc === "Low"));
 
 				for (i = 0; i < Object.keys(comparison).length; i++) {
 					const compareValue = currentTrack["specsDistr"][Object.keys(comparison)[i]];
@@ -203,12 +202,12 @@ module.exports = {
 				score += (opponent.ola - player.ola) * (currentTrack["specsDistr"]["ola"] / 100);
 
 				if (player.gc === "Low") {
-					score -= (5 * currentTrack["speedbumps"]);
+					score -= (10 * currentTrack["speedbumps"]);
 				}
 				if (opponent.gc === "Low") {
-					score += (5 * currentTrack["speedbumps"]);
+					score += (10 * currentTrack["speedbumps"]);
 				}
-				score += (gcPlacement.indexOf(opponent.gc) - gcPlacement.indexOf(player.gc)) * 5 * currentTrack["humps"];
+				score += (gcPlacement.indexOf(opponent.gc) - gcPlacement.indexOf(player.gc)) * 10 * currentTrack["humps"];
 
 				switch (currentTrack["surface"]) {
 					case "Asphalt":
