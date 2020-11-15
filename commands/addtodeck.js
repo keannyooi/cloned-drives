@@ -212,7 +212,7 @@ module.exports = {
                     .setColor("#fc0303")
                     .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                     .setTitle("Error, car requested not found.")
-                    .setDescription("Well that sucks.")
+                    .setDescription("Well that sucks. Perhaps you already have this car inside this deck?")
                     .setTimestamp();
                 if (currentMessage) {
                     return currentMessage.edit(errorMessage);
@@ -253,11 +253,10 @@ module.exports = {
 
             for (const deck of decks) {
                 if (deck.name = currentDeck.name) {
-                    const hand = deck.hand;
-                    hand[index - 1] = { carFile: currentCar.carFile, gearingUpgrade: currentCar.gearingUpgrade, engineUpgrade: currentCar.engineUpgrade, chassisUpgrade: currentCar.chassisUpgrade };
+                    deck.hand[index - 1] = { carFile: currentCar.carFile, gearingUpgrade: currentCar.gearingUpgrade, engineUpgrade: currentCar.engineUpgrade, chassisUpgrade: currentCar.chassisUpgrade };
                 }
             }
-            await db.set(`acc${message.author.id}`, playerData);
+            await db.set(`acc${message.author.id}.decks`, decks);
 
             const infoScreen = new Discord.MessageEmbed()
                 .setColor("#34aeeb")

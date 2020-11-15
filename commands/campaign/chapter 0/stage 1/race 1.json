@@ -1,0 +1,60 @@
+{
+    "raceName": "Chapter 0: The Learning Curve (Stage 1)",
+    "description": "placeholder text",
+
+    "primaryReqs": {
+        "rq": 300
+    },
+    "secondaryReqs": {
+        "rq": 275
+    },
+    "tertiaryReqs": {
+        "rq": 255,
+        "FWD": 3
+    },
+
+    "deck": [
+        {
+            "carFile": "",
+            "gearingUpgrade": 0,
+            "engineUpgrade": 0,
+            "chassisUpgrade": 0,
+            "trackset": ""
+        },
+        {
+            "carFile": "",
+            "gearingUpgrade": 0,
+            "engineUpgrade": 0,
+            "chassisUpgrade": 0,
+            "trackset": ""
+        },
+        {
+            "carFile": "",
+            "gearingUpgrade": 0,
+            "engineUpgrade": 0,
+            "chassisUpgrade": 0,
+            "trackset": ""
+        },
+        {
+            "carFile": "",
+            "gearingUpgrade": 0,
+            "engineUpgrade": 0,
+            "chassisUpgrade": 0,
+            "trackset": ""
+        },
+        {
+            "carFile": "",
+            "gearingUpgrade": 0,
+            "engineUpgrade": 0,
+            "chassisUpgrade": 0,
+            "trackset": ""
+        }
+    ],
+
+    "rewards": {
+        "money": 1000,
+        "fuseTokens": 0,
+        "car": "",
+        "pack": ""
+    }
+}

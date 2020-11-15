@@ -78,24 +78,17 @@ module.exports = {
         if (args[args.length - 2] === "-s") {
             switch (args[args.length - 1].toLowerCase()) {
                 case "rq":
+                case "handling":
+                case "weight":
+                case "mra":
+                case "ola":
+                    sortBy = args[args.length - 1].toLowerCase();
                     break;
                 case "topspeed":
                     sortBy = "topSpeed";
                     break;
                 case "accel":
                     sortBy = "0to60";
-                    break;
-                case "handling":
-                    sortBy = "handling";
-                    break;
-                case "weight":
-                    sortBy = "weight";
-                    break;
-                case "mra":
-                    sortBy = "mra";
-                    break;
-                case "ola":
-                    sortBy = "ola";
                     break;
                 default:
                     const errorScreen = new Discord.MessageEmbed()
