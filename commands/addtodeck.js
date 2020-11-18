@@ -161,7 +161,7 @@ module.exports = {
                     var carList = "";
                     for (i = 1; i <= searchResults.length; i++) {
                         const car = require(`./cars/${searchResults[i - 1].carFile}`);
-                        carList += `${i} - ` + car["make"] + " " + car["model"] + " (" + car["modelYear"] + `) [${searchResults[i - 1].gearingUpgrade}${searchResults[i - 1].engineUpgrade}${searchResults[i - 1].chassisUpgrade}]\n`;
+                        carList += `${i} - ${car["make"]} ${car["model"]} (${car["modelYear"]}) [${searchResults[i - 1].gearingUpgrade}${searchResults[i - 1].engineUpgrade}${searchResults[i - 1].chassisUpgrade}]\n`;
                     }
 
                     const infoScreen = new Discord.MessageEmbed()
@@ -225,27 +225,19 @@ module.exports = {
 
         async function addCar(currentCar, currentDeck, currentMessage) {
             const car = require(`./cars/${currentCar.carFile}`);
-            const upgrade = `${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}`;
+            const upgrade = currentCar.gearingUpgrade + currentCar.engineUpgrade + currentCar.chassisUpgrade;
             const currentName = `${car["make"]} ${car["model"]} (${car["modelYear"]}) [${upgrade}]`;
             var racehud;
             switch (upgrade) {
-                case "000":
+                case 0:
                     racehud = car["racehudStock"];
                     break;
-                case "333":
-                    racehud = car["racehud1Star"];
+                case 9:
+                case 18:
+                    racehud = car[`racehud${upgrade / 9}Star`];
                     break;
-                case "666":
-                    racehud = car["racehud2Star"];
-                    break;
-                case "996":
-                    racehud = car["racehudMaxed996"];
-                    break;
-                case "969":
-                    racehud = car["racehudMaxed969"];
-                    break;
-                case "699":
-                    racehud = car["racehudMaxed699"];
+                case 24:
+                    racehud = car[`racehudMaxed${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}`];
                     break;
                 default:
                     break;
@@ -261,7 +253,7 @@ module.exports = {
             const infoScreen = new Discord.MessageEmbed()
                 .setColor("#34aeeb")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle(`Successfully added your ${currentName} to slot ${index} of deck ${currentDeck.name}.`)
+                .setTitle(`Successfully added your ${currentName} to slot ${index} of deck ${currentDeck.name}!`)
                 .setImage(racehud)
                 .setTimestamp();
             if (currentMessage) {

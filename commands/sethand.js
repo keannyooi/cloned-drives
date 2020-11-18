@@ -107,17 +107,14 @@ module.exports = {
             const car = require(`./cars/${currentCar.carFile}`);
             const currentName = `${car["make"]} ${car["model"]} (${car["modelYear"]}) [${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}]`;
             var racehud;
-            console.log(currentCar.gearingUpgrade + currentCar.engineUpgrade + currentCar.chassisUpgrade);
 
-            switch (currentCar.gearingUpgrade + currentCar.engineUpgrade + currentCar.chassisUpgrade) {
+            switch (parseInt(currentCar.gearingUpgrade) + parseInt(currentCar.engineUpgrade) + parseInt(currentCar.chassisUpgrade)) {
                 case 0:
                     racehud = car["racehudStock"];
                     break;
                 case 9:
-                    racehud = car["racehud1Star"];
-                    break;
                 case 18:
-                    racehud = car["racehud2Star"];
+                    racehud = car[`racehud${currentCar.gearingUpgrade / 3}Star`];
                     break;
                 case 24:
                     racehud = car[`racehudMaxed${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}`];

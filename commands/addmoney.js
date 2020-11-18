@@ -37,24 +37,15 @@ module.exports = {
                 .setTimestamp();
             return message.channel.send(errorMessage);
         }
-        else if (isNaN(amount)) {
+        else if (isNaN(amount) || parseInt(amount) < 1) {
             const errorMessage = new Discord.MessageEmbed()
                 .setColor("#fc0303")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle("Error, money amount provided is not a number.")
-                .setDescription("The amount of money you want to add should always be a number, i.e: `4`, `20`, etc.")
+                .setTitle("Error, money amount provided is either not a number or less than 1.")
+                .setDescription("The amount of money you want to add should always be a positive number, i.e: `4`, `20`, etc.")
                 .setTimestamp();
             return message.channel.send(errorMessage);
         }
-		else if (parseInt(amount) < 1) {
-			const errorMessage = new Discord.MessageEmbed()
-                .setColor("#fc0303")
-                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle("Error, money amount provided is less than or equal to 0.")
-                .setDescription("The amount of money you want to add should always be bigger than 0.")
-                .setTimestamp();
-            return message.channel.send(errorMessage);
-		}
 
         if (!user) {
             const errorMessage = new Discord.MessageEmbed()

@@ -37,12 +37,12 @@ module.exports = {
                 .setTimestamp();
             return message.channel.send(errorMessage);
         }
-        else if (isNaN(amount)) {
+        else if (isNaN(amount) || parseInt(amount) < 1) {
             const errorMessage = new Discord.MessageEmbed()
                 .setColor("#fc0303")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle("Error, fuse token amount provided is not a number.")
-                .setDescription("The amount of fuse tokens you want to add should always be a number, i.e: `4`, `20`, etc.")
+                .setTitle("Error, fuse token amount provided is either not a number or less than 1.")
+                .setDescription("The amount of fuse tokens you want to add should always be a positive number, i.e: `4`, `20`, etc.")
                 .setTimestamp();
             return message.channel.send(errorMessage);
         }
@@ -66,15 +66,15 @@ module.exports = {
             return message.channel.send(errorMessage);
         }
 
-        await db.add(`acc${user.id}.fuseTokens`, parseInt(amount));
-		const currentFuseTokens = await db.get(`acc${user.id}.fuseTokens`);
-        console.log(currentFuseTokens);
+        const playerData = await db.get(`acc${user.id}`);
+        playerData.fuseTokens += parseInt(amount);
+		await db.set(`acc${user.id}`, playerData);
 
         const infoScreen = new Discord.MessageEmbed()
             .setColor('#03fc24')
             .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
             .setTitle(`Successfully added ${fuseEmoji}${amount} to ${member.displayName}'s fuse token balance!`)
-			.setDescription(`Current Money Balance: ${fuseEmoji}${currentFuseTokens}`)
+			.setDescription(`Current Money Balance: ${fuseEmoji}${playerData.fuseTokens}`)
             .setTimestamp();
         return message.channel.send(infoScreen);
     }

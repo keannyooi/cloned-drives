@@ -39,7 +39,7 @@ client.once("ready", async () => {
 
 	const guild = client.guilds.cache.get("711769157078876305"); //don't mind me lmao
 	guild.members.cache.forEach(async user => {
-		if (await client.db.has(`acc${user.id}`) === false) {
+		if (await client.db.has(`acc${user.id}.garage`) === false) {
 			console.log("creating new player's database...");
 			await client.db.set(`acc${user.id}`, { money: 0, fuseTokens: 0, trophies: 0, garage: [], decks: [], campaignProgress: { chapter: 0, part: 1, race: 1 }, unclaimedRewards: { money: 0, fuseTokens: 0, trophies: 0, cars: [] } });
 			var i = 0;
@@ -64,8 +64,9 @@ client.once("ready", async () => {
 		const garage = await client.db.get(`acc${user.id}.garage`);
 		var i = 0;
 		while (i < garage.length) {
-			if (garage[i].carFile === "aston martin db11 v12 (2016).json") {
-				garage[i].carFile = "aston martin db11 v12 (2017).json";
+			if (garage[i].carFile === "jaguar e-pace p200 awd (2018).json") {
+				console.log("please");
+				garage[i].carFile = "jaguar e-pace p250 awd (2018).json";
 			}
 			i++;
 		}
@@ -89,7 +90,7 @@ client.once("ready", async () => {
 client.login(token);
 
 client.on("message", async message => {
-	if (!message.content.startsWith(prefix) || message.author.bot || message.channel.type !== 'text') return;
+	if (!message.content.toLowerCase().startsWith(prefix) || message.author.bot || message.channel.type !== 'text') return;
 
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const commandName = args.shift().toLowerCase();
@@ -187,11 +188,11 @@ client.on("guildMemberAdd", async member => {
 
 		console.log(member.id);
 	}
-	if (!await client.db.get(`acc${user.id}.unclaimedRewards`)) {
-		await client.db.set(`acc${user.id}.unclaimedRewards`, { money: 0, fuseTokens: 0, trophies: 0, cars: [] });
+	if (!await client.db.get(`acc${member.id}.unclaimedRewards`)) {
+		await client.db.set(`acc${member.id}.unclaimedRewards`, { money: 0, fuseTokens: 0, trophies: 0, cars: [] });
 	}
-	if (!await client.db.get(`acc${user.id}.campaignProgress`)) {
-		await client.db.set(`acc${user.id}.campaignProgress`, { chapter: 0, part: 1, race: 1 });
+	if (!await client.db.get(`acc${member.id}.campaignProgress`)) {
+		await client.db.set(`acc${member.id}.campaignProgress`, { chapter: 0, part: 1, race: 1 });
 	}
 });
 
@@ -249,10 +250,10 @@ client.on("messageUpdate", async (oldMessage, newMessage) => {
 		console.error(error);
 		const errorMessage = new Discord.MessageEmbed()
 			.setColor("#fc0303")
-			.setAuthor(newMessage.author.tag, newMessage.author.displayAvatarURL({ format: "png", dynamic: true }))
+			.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 			.setTitle("Error, failed to execute command.")
-			.setDescription("Something must have gone wrong. Please report this issure to the devs.")
+			.setDescription(`Something must have gone wrong. Please report this issure to the devs. \n\`${error}\``)
 			.setTimestamp();
-		return newMessage.channel.send(errorMessage);
+		return message.channel.send(errorMessage);
 	}
 });

@@ -131,7 +131,7 @@ module.exports = {
 			var topSpeed;
 			var carSpecs = `(${rarity} ${car["rq"]}) ${car["make"]} ${car["model"]} (${car["modelYear"]}) [${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}]\n`;
 
-			switch (currentCar.gearingUpgrade + currentCar.engineUpgrade + currentCar.chassisUpgrade) {
+			switch (parseInt(currentCar.gearingUpgrade) + parseInt(currentCar.engineUpgrade) + parseInt(currentCar.chassisUpgrade)) {
 				case 0:
 					topSpeed = car["topSpeed"];
 					carSpecs += `Top Speed: ${car["topSpeed"]}MPH\n`;
@@ -216,7 +216,7 @@ module.exports = {
 				racehud: getRacehud(car, `${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}`)
 			};
 
-			switch (currentCar.gearingUpgrade + currentCar.engineUpgrade + currentCar.chassisUpgrade) {
+			switch (parseInt(currentCar.gearingUpgrade) + parseInt(currentCar.engineUpgrade) + parseInt(currentCar.chassisUpgrade)) {
 				case 0:
 					break;
 				case 9:

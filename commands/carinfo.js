@@ -19,82 +19,67 @@ module.exports = {
     adminOnly: false,
     description: "Shows info about a specified car.",
     execute(message, args) {
-        var carName = args[0].toLowerCase();
-        const searchResults = [];
         const waitTime = 60000;
         const filter = response => {
             return response.author.id === message.author.id;
         };
 
-        for (i = 1; i < args.length; i++) {
-            carName += (" " + args[i].toLowerCase());
-        }
-        var counter = 0;
-        var searched = 0;
-        while (counter < carFiles.length) {
-            var currentCar = require(`./cars/${carFiles[counter]}`);
-            var currentName = currentCar["make"].toLowerCase() + " " + currentCar["model"].toLowerCase() + " " + currentCar["modelYear"];
-            if (currentName.includes(carName)) {
-                console.log("found!");
-                console.log(currentName)
-                searchResults[searched] = currentCar;
-                searched++;
+        var carName = args.map(i => i.toLowerCase());
+
+        const searchResults = carFiles.filter(function (carFile) {
+            return carName.every(part => carFile.includes(part));
+        });
+
+        if (searchResults.length > 1) {
+            var carList = "";
+            for (i = 1; i <= searchResults.length; i++) {
+                const car = require(`./cars/${searchResults[i - 1]}`);
+                carList += `${i} - ${car["make"]} ${car["model"]} (${car["modelYear"]})\n`;
             }
-            counter++;
-        }
 
-        if (searched > 0) {
-            var rarity;
-            var currentCar = searchResults[0];
-            if (searched > 1) {
-                var carList = "";
-                for (i = 1; i <= searchResults.length; i++) {
-                    carList += `${i} - ` + searchResults[i - 1]["make"] + " " + searchResults[i - 1]["model"] + " (" + searchResults[i - 1]["modelYear"] + ")\n";
-                }
+            const infoScreen = new Discord.MessageEmbed()
+                .setColor("#34aeeb")
+                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                .setTitle("Multiple cars found, please type one of the following.")
+                .setDescription(carList)
+                .setTimestamp();
 
-                const infoScreen = new Discord.MessageEmbed()
-                    .setColor("#34aeeb")
-                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                    .setTitle("Multiple cars found, please type one of the following.")
-                    .setDescription(carList)
-                    .setTimestamp();
-
-                message.channel.send(infoScreen).then(currentMessage => {
-                    message.channel.awaitMessages(filter, {
-                        max: 1,
-                        time: waitTime,
-                        errors: ['time']
-                    })
-                        .then(collected => {
-                            if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
-                                collected.first().delete();
-                                const errorMessage = new Discord.MessageEmbed()
-                                    .setColor("#fc0303")
-                                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                                    .setTitle("Error, invalid integer provided.")
-                                    .setDescription("It looks like your response was either not a number or not part of the selection.")
-                                    .setTimestamp();
-                                return currentMessage.edit(errorMessage);
-                            }
-                            else {
-                                currentCar = searchResults[parseInt(collected.first()) - 1];
-                                collected.first().delete();
-                                displayInfo(currentCar, currentMessage);
-                            }
-                        })
-                        .catch(() => {
-                            const cancelMessage = new Discord.MessageEmbed()
-                                .setColor("#34aeeb")
+            message.channel.send(infoScreen).then(currentMessage => {
+                message.channel.awaitMessages(filter, {
+                    max: 1,
+                    time: waitTime,
+                    errors: ['time']
+                })
+                    .then(collected => {
+                        if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
+                            collected.first().delete();
+                            const errorMessage = new Discord.MessageEmbed()
+                                .setColor("#fc0303")
                                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                                .setTitle("Action cancelled automatically.")
+                                .setTitle("Error, invalid integer provided.")
+                                .setDescription("It looks like your response was either not a number or not part of the selection.")
                                 .setTimestamp();
-                            return currentMessage.edit(cancelMessage);
-                        });
-                });
-            }
-            else {
-                displayInfo(currentCar);
-            }
+                            return currentMessage.edit(errorMessage);
+                        }
+                        else {
+                            const currentCar = require(`./cars/${searchResults[parseInt(collected.first()) - 1]}`);
+                            collected.first().delete();
+                            displayInfo(currentCar, currentMessage);
+                        }
+                    })
+                    .catch(() => {
+                        const cancelMessage = new Discord.MessageEmbed()
+                            .setColor("#34aeeb")
+                            .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                            .setTitle("Action cancelled automatically.")
+                            .setTimestamp();
+                        return currentMessage.edit(cancelMessage);
+                    });
+            });
+        }
+        else if (searchResults.length > 0) {
+            const currentCar = require(`./cars/${searchResults[0]}`);
+            displayInfo(currentCar);
         }
         else {
             const errorMessage = new Discord.MessageEmbed()
@@ -107,6 +92,7 @@ module.exports = {
         }
 
         function displayInfo(currentCar, currentMessage) {
+            var rarity;
             if (currentCar["rq"] > 79) { //leggie
                 rarity = message.guild.emojis.cache.find(emoji => emoji.name === "legendary");
             }
@@ -129,34 +115,27 @@ module.exports = {
                 rarity = message.guild.emojis.cache.find(emoji => emoji.name === "common");
             }
 
-            var tags;
+            var tags = "", description, mra, ola;
             if (currentCar["tags"].length) {
-                tags = currentCar["tags"][0];
-
-                if (currentCar["tags"].length > 1) {
-                    for (i = 1; i < currentCar["tags"].length; i++) {
-                        tags += ", " + currentCar["tags"][i];
-                    }
+                for (i = 0; i < currentCar["tags"].length; i++) {
+                    tags += `${currentCar["tags"][i]}, `;
                 }
             }
             else {
                 tags = "None";
             }
-            var description;
             if (currentCar["description"].length > 0) {
                 description = currentCar["description"];
             }
             else {
                 description = "None";
             }
-            var mra;
             if (currentCar["topSpeed"] >= 100) {
                 mra = currentCar["mra"];
             }
             else {
                 mra = "N/A";
             }
-            var ola;
             if (currentCar["topSpeed"] >= 60) {
                 ola = currentCar["ola"];
             }
@@ -172,7 +151,7 @@ module.exports = {
                 }
             }
 
-            var currentName = currentCar["make"] + " " + currentCar["model"] + " (" + currentCar["modelYear"] + ")";
+            var currentName = `${currentCar["make"]} ${currentCar["model"]} (${currentCar["modelYear"]})`;
             const infoScreen = new Discord.MessageEmbed()
                 .setColor("#34aeeb")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -193,15 +172,15 @@ module.exports = {
                     { name: "ABS Enabled?", value: currentCar["abs"], inline: true },
                     { name: "Mid-Range Acceleration (MRA)", value: mra, inline: true },
                     { name: "Off-the-Line Acceleration (OLA)", value: ola },
+                    { name: "Tags", value: tags.slice(0, -2), inline: true },
+                    { name: "Prize Car?", value: currentCar["isPrize"], inline: true },
+                    { name: "Available Maxed Tunes", value: tunes.slice(0, -2), inline: true },
+                    { name: "Description", value: description },
                 )
-                .addField("Tags", tags, true)
-                .addField("Prize Car?", currentCar["isPrize"], true)
-                .addField("Available Maxed Tunes", tunes.slice(0, -2), true)
-                .addField("Description", description)
                 .setImage(currentCar["card"])
                 .setTimestamp();
             if (currentMessage) {
-                return currentMessage.edit(infoScreen);  
+                return currentMessage.edit(infoScreen);
             }
             else {
                 return message.channel.send(infoScreen);

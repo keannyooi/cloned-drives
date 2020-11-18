@@ -11,6 +11,7 @@ const Discord = require("discord.js-light");
 
 module.exports = {
 	name: "changetune",
+	aliases: ["ct"],
 	usage: "<username goes here> <car name goes here> <upgrade pattern>",
 	args: true,
 	adminOnly: true,
@@ -28,9 +29,10 @@ module.exports = {
 			return message.channel.send(errorMessage);
 		}
 
-		var carName = args[1].toLowerCase();
-		const upgrade = args[args.length - 1].toLowerCase();
-		const searchResults = [];
+		var upgrade = args[args.length - 1].split("");
+		if (args[args.length - 1].toLowerCase() === "stock") {
+			upgrade = [0, 0, 0];
+		}
 		const waitTime = 60000;
 		const filter = response => {
 			return response.author.id === message.author.id;
@@ -70,68 +72,53 @@ module.exports = {
 		const playerData = await db.get(`acc${user.id}`);
 		const garage = playerData.garage;
 
-		for (i = 2; i < args.length - 1; i++) {
-			carName += (" " + args[i].toLowerCase());
+		var carName = args.slice(1, args.length - 1);
+		carName = carName.map(i => i.toLowerCase());
+
+		const searchResults = garage.filter(function (garageCar) {
+			return carName.every(part => garageCar.carFile.includes(part));
+		});
+
+		if (searchResults.length > 1) {
+			var carList = "";
+			for (i = 1; i <= searchResults.length; i++) {
+				const car = require(`./cars/${searchResults[i - 1].carFile}`);
+				carList += `${i} - ${car["make"]} ${car["model"]} (${car["modelYear"]}) [${searchResults[i - 1].gearingUpgrade}${searchResults[i - 1].engineUpgrade}${searchResults[i - 1].chassisUpgrade}]\n`;
+			}
+
+			const infoScreen = new Discord.MessageEmbed()
+				.setColor("#34aeeb")
+				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+				.setTitle("Multiple cars found, please type one of the following.")
+				.setDescription(carList)
+				.setTimestamp();
+
+			message.channel.send(infoScreen).then(currentMessage => {
+				message.channel.awaitMessages(filter, {
+					max: 1,
+					time: waitTime,
+					errors: ['time']
+				})
+					.then(collected => {
+						if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
+							collected.first().delete();
+							const errorMessage = new Discord.MessageEmbed()
+								.setColor("#fc0303")
+								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+								.setTitle("Error, invalid integer provided.")
+								.setDescription("It looks like your response was either not a number or not part of the selection.")
+								.setTimestamp();
+							return currentMessage.edit(errorMessage);
+						}
+						else {
+							collected.first().delete();
+							changeTune(searchResults[parseInt(collected.first()) - 1], currentMessage);
+						}
+					});
+			});
 		}
-
-		var counter = 0;
-		var searched = 0;
-		while (counter < garage.length) {
-			var currentCar = require(`./cars/${garage[counter].carFile}`);
-			var currentName = currentCar["make"].toLowerCase() + " " + currentCar["model"].toLowerCase() + " " + currentCar["modelYear"];
-			if (currentName.includes(carName)) {
-				console.log("found!");
-				console.log(currentName)
-				searchResults[searched] = garage[counter]
-				searched++;
-			}
-			counter++;
-		}
-
-		if (searched > 0) {
-			var currentCar = searchResults[0].carFile;
-			if (searched > 1) {
-				var carList = "";
-				for (i = 1; i <= searchResults.length; i++) {
-					const car = require(`./cars/${searchResults[i - 1].carFile}`);
-					carList += `${i} - ` + car["make"] + " " + car["model"] + " (" + car["modelYear"] + `) [${searchResults[i - 1].gearingUpgrade}${searchResults[i - 1].engineUpgrade}${searchResults[i - 1].chassisUpgrade}]\n`;
-				}
-
-				const infoScreen = new Discord.MessageEmbed()
-					.setColor("#34aeeb")
-					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-					.setTitle("Multiple cars found, please type one of the following.")
-					.setDescription(carList)
-					.setTimestamp();
-
-				message.channel.send(infoScreen).then(currentMessage => {
-					message.channel.awaitMessages(filter, {
-						max: 1,
-						time: waitTime,
-						errors: ['time']
-					})
-						.then(collected => {
-							if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
-								collected.first().delete();
-								const errorMessage = new Discord.MessageEmbed()
-									.setColor("#fc0303")
-									.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-									.setTitle("Error, invalid integer provided.")
-									.setDescription("It looks like your response was either not a number or not part of the selection.")
-									.setTimestamp();
-								return currentMessage.edit(errorMessage);
-							}
-							else {
-								currentCar = searchResults[parseInt(collected.first()) - 1];
-								collected.first().delete();
-								changeTune(currentCar, currentMessage);
-							}
-						});
-				});
-			}
-			else {
-				changeTune(searchResults[0]);
-			}
+		else if (searchResults.length > 0) {
+			changeTune(searchResults[0]);
 		}
 		else {
 			const errorMessage = new Discord.MessageEmbed()
@@ -146,44 +133,24 @@ module.exports = {
 		async function changeTune(currentCar, currentMessage) {
 			const car = require(`./cars/${currentCar.carFile}`);
 			const currentName = `${car["make"]} ${car["model"]} (${car["modelYear"]})`;
-			var racehud;
 
-			switch (upgrade) {
-				case "333":
-					currentCar.gearingUpgrade = 3;
-					currentCar.engineUpgrade = 3;
-					currentCar.chassisUpgrade = 3;
-					racehud = car["racehud1Star"];
+			currentCar.gearingUpgrade = upgrade[0];
+			currentCar.engineUpgrade = upgrade[1];
+			currentCar.chassisUpgrade = upgrade[2];
+
+			var racehud;
+			switch (`${upgrade[0]}${upgrade[1]}${upgrade[2]}`) {
+				case "000":
+					racehud = car["racehudStock"];
 					break;
+				case "333":
 				case "666":
-					currentCar.gearingUpgrade = 6;
-					currentCar.engineUpgrade = 6;
-					currentCar.chassisUpgrade = 6;
-					racehud = car["racehud2Star"];
+					racehud = car[`racehud${upgrade[0] / 3}Star`];
 					break;
 				case "996":
-					currentCar.gearingUpgrade = 9;
-					currentCar.engineUpgrade = 9;
-					currentCar.chassisUpgrade = 6;
-					racehud = car["racehudMaxed996"];
-					break;
 				case "969":
-					currentCar.gearingUpgrade = 9;
-					currentCar.engineUpgrade = 6;
-					currentCar.chassisUpgrade = 9;
-					racehud = car["racehudMaxed969"];
-					break;
 				case "699":
-					currentCar.gearingUpgrade = 6;
-					currentCar.engineUpgrade = 9;
-					currentCar.chassisUpgrade = 9;
-					racehud = car["racehudMaxed699"];
-					break;
-				case "stock":
-					currentCar.gearingUpgrade = 0;
-					currentCar.engineUpgrade = 0;
-					currentCar.chassisUpgrade = 0;
-					racehud = car["racehudStock"];
+					racehud = car[`racehudMaxed${upgrade[0]}${upgrade[1]}${upgrade[2]}`];
 					break;
 				default:
 					const errorScreen = new Discord.MessageEmbed()
@@ -199,28 +166,22 @@ module.exports = {
 					}
 			}
 
-			var y = 0;
-			while (y < playerData.garage.length) {
-				if (playerData.hand) {
-					if (playerData.hand.carFile === playerData.garage[y].carFile) {
-						playerData.hand.gearingUpgrade = playerData.garage[y].gearingUpgrade;
-						playerData.hand.engineUpgrade = playerData.garage[y].engineUpgrade;
-						playerData.hand.chassisUpgrade = playerData.garage[y].chassisUpgrade;
-					}
+			if (playerData.hand && playerData.hand.carFile === currentCar.carFile) {
+				playerData.hand.gearingUpgrade = currentCar.gearingUpgrade;
+				playerData.hand.engineUpgrade = currentCar.engineUpgrade;
+				playerData.hand.chassisUpgrade = currentCar.chassisUpgrade;
+			}
+			var i = 0;
+			while (i < playerData.decks.length) {
+				const hasCar = playerData.decks[i].hand.find(function (car) {
+					return car.carFile === currentCar.carFile;
+				});
+				if (hasCar) {
+					hasCar.gearingUpgrade = currentCar.gearingUpgrade;
+					hasCar.engineUpgrade = currentCar.engineUpgrade;
+					hasCar.chassisUpgrade = currentCar.chassisUpgrade;
 				}
-				var i = 0, x = 0;
-				while (i < playerData.decks.length) {
-					while (x < playerData.decks[i].hand.length) {
-						if (playerData.decks[i].hand[x].carFile === playerData.garage[y].carFile) {
-							playerData.decks[i].hand[x].gearingUpgrade = playerData.garage[y].gearingUpgrade;
-							playerData.decks[i].hand[x].engineUpgrade = playerData.garage[y].engineUpgrade;
-							playerData.decks[i].hand[x].chassisUpgrade = playerData.garage[y].chassisUpgrade;
-						}
-						x++;
-					}
-					i++;
-				}
-				y++;
+				i++;
 			}
 
 			await db.set(`acc${user.id}`, playerData);

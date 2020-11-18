@@ -30,7 +30,6 @@ module.exports = {
         const emojiFilter = (reaction, user) => {
             return (reaction.emoji.name === "✅" || reaction.emoji.name === "❎") && user.id === message.author.id;
         };
-        var searchResults = [];
         const raceCommand = require("./sharedfiles/race.js");
         const player = await db.get(`acc${message.author.id}.hand`);
         if (!player) {
@@ -48,71 +47,62 @@ module.exports = {
             trackset += (" " + args[i].toLowerCase());
         }
 
-        var counter = 0;
-        var searched = 0;
-        while (counter < tracksets.length) {
-            var currentTrack = require(`./tracksets/${tracksets[counter]}`);
-            var currentName = currentTrack["trackName"].toLowerCase();
-            if (currentName.includes(trackset)) {
-                console.log("found!");
-                console.log(currentName)
-                searchResults[searched] = currentTrack;
-                searched++;
+        var trackset = args.map(i => i.toLowerCase());
+
+        var searchResults = tracksets.filter(function (track) {
+            return trackset.every(part => track.includes(part));
+        });
+
+        if (searchResults.length > 1) {
+            var currentTrack = require(`./tracksets/${searchResults[0]}`);
+            var trackList = "";
+            for (i = 1; i <= searchResults.length; i++) {
+                let track = require(`./tracksets/${searchResults[i - 1]}`);
+                trackList += `${i} - ` + track["trackName"] + "\n";
             }
-            counter++;
-        }
 
-        if (searched > 0) {
-            var currentTrack = searchResults[0];
-            if (searched > 1) {
-                var trackList = "";
-                for (i = 1; i <= searchResults.length; i++) {
-                    trackList += `${i} - ` + searchResults[i - 1]["trackName"] + "\n";
-                }
+            const infoScreen = new Discord.MessageEmbed()
+                .setColor("#34aeeb")
+                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                .setTitle("Multiple tracksets found, please type one of the following.")
+                .setDescription(trackList)
+                .setTimestamp();
 
-                const infoScreen = new Discord.MessageEmbed()
-                    .setColor("#34aeeb")
-                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                    .setTitle("Multiple tracksets found, please type one of the following.")
-                    .setDescription(trackList)
-                    .setTimestamp();
-
-                message.channel.send(infoScreen).then(currentMessage => {
-                    message.channel.awaitMessages(filter, {
-                        max: 1,
-                        time: waitTime,
-                        errors: ['time']
-                    })
-                        .then(collected => {
-                            if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
-                                collected.first().delete();
-                                const errorMessage = new Discord.MessageEmbed()
-                                    .setColor("#fc0303")
-                                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                                    .setTitle("Error, invalid integer provided.")
-                                    .setDescription("It looks like your response was either not a number or not part of the selection.")
-                                    .setTimestamp();
-                                return currentMessage.edit(errorMessage);
-                            }
-                            else {
-                                currentTrack = searchResults[parseInt(collected.first()) - 1];
-                                chooseOpponent(currentMessage);
-                                collected.first().delete();
-                            }
-                        })
-                        .catch(() => {
-                            const cancelMessage = new Discord.MessageEmbed()
-                                .setColor("#34aeeb")
+            message.channel.send(infoScreen).then(currentMessage => {
+                message.channel.awaitMessages(filter, {
+                    max: 1,
+                    time: waitTime,
+                    errors: ['time']
+                })
+                    .then(collected => {
+                        if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
+                            collected.first().delete();
+                            const errorMessage = new Discord.MessageEmbed()
+                                .setColor("#fc0303")
                                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                                .setTitle("Action cancelled automatically.")
+                                .setTitle("Error, invalid integer provided.")
+                                .setDescription("It looks like your response was either not a number or not part of the selection.")
                                 .setTimestamp();
-                            return currentMessage.edit(cancelMessage);
-                        });
-                });
-            }
-            else {
-                chooseOpponent();
-            }
+                            return currentMessage.edit(errorMessage);
+                        }
+                        else {
+                            currentTrack = require(`./tracksets/${searchResults[parseInt(collected.first()) - 1]}`);
+                            chooseOpponent(currentMessage);
+                            collected.first().delete();
+                        }
+                    })
+                    .catch(() => {
+                        const cancelMessage = new Discord.MessageEmbed()
+                            .setColor("#34aeeb")
+                            .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                            .setTitle("Action cancelled automatically.")
+                            .setTimestamp();
+                        return currentMessage.edit(cancelMessage);
+                    });
+            });
+        }
+        else if (searchResults.length > 0) {
+            chooseOpponent();
         }
         else {
             const errorMessage = new Discord.MessageEmbed()
@@ -146,75 +136,62 @@ module.exports = {
                 errors: ['time']
             })
                 .then(collected => {
-                    var counter = 0;
-                    var searched = 0;
-                    while (counter < carFiles.length) {
-                        var currentCar = require(`./cars/${carFiles[counter]}`);
-                        var currentName = currentCar["make"].toLowerCase() + " " + currentCar["model"].toLowerCase() + " " + currentCar["modelYear"];
-                        if (currentName.includes(collected.first().content.toLowerCase())) {
-                            console.log("found!");
-                            console.log(currentName)
-                            searchResults[searched] = { carFile: carFiles[counter], gearingUpgrade: 0, engineUpgrade: 0, chassisUpgrade: 0 };
-                            searched++;
-                        }
-                        counter++;
-                    }
+                    let carName = collected.first().content.split(" ").map(i => i.toLowerCase());
+
+                    searchResults = carFiles.filter(function (car) {
+                        return carName.every(part => car.includes(part));
+                    });
 
                     collected.first().delete();
-                    if (searched > 0) {
-                        var currentCar = searchResults[0];
-                        console.log(searchResults);
-                        if (searched > 1) {
-                            var carList = "";
-                            for (i = 1; i <= searchResults.length; i++) {
-                                console.log(searched);
-                                const car = require(`./cars/${searchResults[i - 1].carFile}`);
-                                carList += `${i} - ` + car["make"] + " " + car["model"] + " (" + car["modelYear"] + ")\n"
-                            }
+                    if (searchResults.length > 1) {
+                        var carList = "";
+                        for (i = 1; i <= searchResults.length; i++) {
+                            const car = require(`./cars/${searchResults[i - 1]}`);
+                            carList += `${i} - ${car["make"]} ${car["model"]} (${car["modelYear"]})\n`
+                        }
 
-                            const infoScreen = new Discord.MessageEmbed()
-                                .setColor("#34aeeb")
-                                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                                .setTitle("Multiple cars found, please type one of the following.")
-                                .setDescription(carList)
-                                .setTimestamp();
+                        const infoScreen = new Discord.MessageEmbed()
+                            .setColor("#34aeeb")
+                            .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                            .setTitle("Multiple cars found, please type one of the following.")
+                            .setDescription(carList)
+                            .setTimestamp();
 
-                            currentMessage2.edit(infoScreen).then(() => {
-                                message.channel.awaitMessages(filter, {
-                                    max: 1,
-                                    time: waitTime,
-                                    errors: ['time']
-                                })
-                                    .then(collected => {
-                                        if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
-                                            collected.first().delete();
-                                            const errorMessage = new Discord.MessageEmbed()
-                                                .setColor("#fc0303")
-                                                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                                                .setTitle("Error, invalid integer provided.")
-                                                .setDescription("It looks like your response was either not a number or not part of the selection.")
-                                                .setTimestamp();
-                                            return currentMessage2.edit(errorMessage);
-                                        }
-                                        else {
-                                            currentCar = searchResults[parseInt(collected.first()) - 1];
-                                            collected.first().delete();
-                                            return upgrade(currentCar, currentMessage2);
-                                        }
-                                    })
-                                    .catch(() => {
-                                        const cancelMessage = new Discord.MessageEmbed()
-                                            .setColor("#34aeeb")
+                        currentMessage2.edit(infoScreen).then(() => {
+                            message.channel.awaitMessages(filter, {
+                                max: 1,
+                                time: waitTime,
+                                errors: ['time']
+                            })
+                                .then(collected => {
+                                    if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
+                                        collected.first().delete();
+                                        const errorMessage = new Discord.MessageEmbed()
+                                            .setColor("#fc0303")
                                             .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                                            .setTitle("Action cancelled automatically.")
+                                            .setTitle("Error, invalid integer provided.")
+                                            .setDescription("It looks like your response was either not a number or not part of the selection.")
                                             .setTimestamp();
-                                        return currentMessage2.edit(cancelMessage);
-                                    });
-                            });
-                        }
-                        else {
-                            return upgrade(currentCar, currentMessage2);
-                        }
+                                        return currentMessage2.edit(errorMessage);
+                                    }
+                                    else {
+                                        let currentCar = searchResults[parseInt(collected.first()) - 1];
+                                        collected.first().delete();
+                                        upgrade(currentCar, currentMessage2);
+                                    }
+                                })
+                                .catch(() => {
+                                    const cancelMessage = new Discord.MessageEmbed()
+                                        .setColor("#34aeeb")
+                                        .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                                        .setTitle("Action cancelled automatically.")
+                                        .setTimestamp();
+                                    return currentMessage2.edit(cancelMessage);
+                                });
+                        });
+                    }
+                    else if (searchResults.length > 0) {
+                        upgrade(searchResults[0], currentMessage2);
                     }
                     else {
                         const errorMessage = new Discord.MessageEmbed()
@@ -238,7 +215,7 @@ module.exports = {
         }
 
         async function upgrade(currentCar, currentMessage2) {
-            const car = require(`./cars/${currentCar.carFile}`);
+            const car = require(`./cars/${currentCar}`);
             const chooseScreen = new Discord.MessageEmbed()
                 .setColor("#34aeeb")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -254,45 +231,12 @@ module.exports = {
                 errors: ['time']
             })
                 .then(collected => {
+                    var gearingUpgrade = 0, engineUpgrade = 0, chassisUpgrade = 0;
                     switch (collected.first().content.toLowerCase()) {
                         case "996":
-                            if (car["racehudMaxed996"] === "") {
-                                collected.first().delete();
-                                const errorScreen = new Discord.MessageEmbed()
-                                    .setColor("#fc0303")
-                                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                                    .setTitle("Error, the tuning stage you requested is not supported.")
-                                    .setDescription("There is a possiblity that the maxed tune your car has isn't available. If that's the case, report it to the devs.")
-                                    .setTimestamp();
-                                return currentMessage.edit(errorScreen);
-                            }
-                            else {
-                                collected.first().delete();
-                                currentCar.gearingUpgrade = 9;
-                                currentCar.engineUpgrade = 9;
-                                currentCar.chassisUpgrade = 6;
-                            }
-                            break;
                         case "969":
-                            if (car["racehudMaxed969"] === "") {
-                                collected.first().delete();
-                                const errorScreen = new Discord.MessageEmbed()
-                                    .setColor("#fc0303")
-                                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                                    .setTitle("Error, the tuning stage you requested is not supported.")
-                                    .setDescription("There is a possiblity that the maxed tune your car has isn't available. If that's the case, report it to the devs.")
-                                    .setTimestamp();
-                                return currentMessage.edit(errorScreen);
-                            }
-                            else {
-                                collected.first().delete();
-                                currentCar.gearingUpgrade = 9;
-                                currentCar.engineUpgrade = 6;
-                                currentCar.chassisUpgrade = 9;
-                            }
-                            break;
                         case "699":
-                            if (car["racehudMaxed699"] === "") {
+                            if (car[`racehudMaxed${collected.first().content.toLowerCase()}`] === "") {
                                 collected.first().delete();
                                 const errorScreen = new Discord.MessageEmbed()
                                     .setColor("#fc0303")
@@ -303,29 +247,22 @@ module.exports = {
                                 return currentMessage.edit(errorScreen);
                             }
                             else {
-                                collected.first().delete();
-                                currentCar.gearingUpgrade = 6;
-                                currentCar.engineUpgrade = 9;
-                                currentCar.chassisUpgrade = 9;
+                                let upgrade = collected.first().content.split("");
+                                gearingUpgrade = parseInt(upgrade[0]);
+                                engineUpgrade = parseInt(upgrade[1]);
+                                chassisUpgrade = parseInt(upgrade[2]);
                             }
                             break;
                         case "666":
-                            collected.first().delete();
-                            currentCar.gearingUpgrade = 6;
-                            currentCar.engineUpgrade = 6;
-                            currentCar.chassisUpgrade = 6;
-                            break;
                         case "333":
-                            collected.first().delete();
-                            currentCar.gearingUpgrade = 3;
-                            currentCar.engineUpgrade = 3;
-                            currentCar.chassisUpgrade = 3;
+                            let upgrade = collected.first().content.split("");
+                            gearingUpgrade = parseInt(upgrade[0]);
+                            engineUpgrade = parseInt(upgrade[1]);
+                            chassisUpgrade = parseInt(upgrade[2]);
                             break;
                         case "stock":
-                            collected.first().delete();
                             break;
                         default:
-                            collected.first().delete();
                             const errorScreen = new Discord.MessageEmbed()
                                 .setColor("#fc0303")
                                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -334,11 +271,12 @@ module.exports = {
                                 .setTimestamp();
                             return currentMessage.edit(errorScreen);
                     }
+                    collected.first().delete();
 
                     const playerList = createList(player);
-                    const opponentList = createList(currentCar);
+                    const opponentList = createList({ carFile: currentCar, gearingUpgrade: gearingUpgrade, engineUpgrade: engineUpgrade, chassisUpgrade: chassisUpgrade });
                     const playerCar = createCar(player);
-                    const opponentCar = createCar(currentCar);
+                    const opponentCar = createCar({ carFile: currentCar, gearingUpgrade: gearingUpgrade, engineUpgrade: engineUpgrade, chassisUpgrade: chassisUpgrade });
                     const intermission = new Discord.MessageEmbed()
                         .setColor("#34aeeb")
                         .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -360,16 +298,16 @@ module.exports = {
                         })
                             .then(collected => {
                                 currentMessage.reactions.removeAll();
-                                if (collected.first().emoji.name === "✅") {
-                                    raceCommand.race(message, playerCar, opponentCar, currentTrack);
-                                }
-                                else if (collected.first().emoji.name === "❎") {
-                                    const cancelMessage = new Discord.MessageEmbed()
-                                        .setColor("#34aeeb")
-                                        .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                                        .setTitle("Action cancelled.")
-                                        .setTimestamp();
-                                    return currentMessage.edit(cancelMessage);
+                                switch (collected.first().emoji.name) {
+                                    case "✅":
+                                        return raceCommand.race(message, playerCar, opponentCar, currentTrack);
+                                    case "❎":
+                                        const cancelMessage = new Discord.MessageEmbed()
+                                            .setColor("#34aeeb")
+                                            .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                                            .setTitle("Action cancelled.")
+                                            .setTimestamp();
+                                        return currentMessage.edit(cancelMessage);
                                 }
                             })
                             .catch(error => {
@@ -405,14 +343,10 @@ module.exports = {
                         carSpecs += `Handling: ${car["handling"]}\n`;
                         break;
                     case 9:
-                        carSpecs += `Top Speed: ${car["1StarTopSpeed"]}MPH\n`;
-                        carSpecs += `0-60MPH: ${car["1Star0to60"]} sec\n`;
-                        carSpecs += `Handling: ${car["1StarHandling"]}\n`;
-                        break;
                     case 18:
-                        carSpecs += `Top Speed: ${car["2StarTopSpeed"]}MPH\n`;
-                        carSpecs += `0-60MPH: ${car["2Star0to60"]} sec\n`;
-                        carSpecs += `Handling: ${car["2StarHandling"]}\n`;
+                        carSpecs += `Top Speed: ${car[`${currentCar.gearingUpgrade / 3}StarTopSpeed`]}MPH\n`;
+                        carSpecs += `0-60MPH: ${car[`${currentCar.gearingUpgrade / 3}Star0to60`]} sec\n`;
+                        carSpecs += `Handling: ${car[`${currentCar.gearingUpgrade / 3}StarHandling`]}\n`;
                         break;
                     case 24:
                         carSpecs += `Top Speed: ${car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}MaxedTopSpeed`]}MPH\n`;
@@ -438,15 +372,12 @@ module.exports = {
                     case "000":
                         return currentCar["racehudStock"];
                     case "333":
-                        return currentCar["racehud1Star"];
                     case "666":
-                        return currentCar["racehud2Star"];
+                        return currentCar[`racehud${parseInt(upgrade) / 333}Star`];
                     case "996":
-                        return currentCar["racehudMaxed996"];
                     case "969":
-                        return currentCar["racehudMaxed969"];
                     case "699":
-                        return currentCar["racehudMaxed699"];
+                        return currentCar[`racehudMaxed${upgrade}`];
                     default:
                         return;
                 }
@@ -470,17 +401,11 @@ module.exports = {
                 };
 
                 switch (currentCar.gearingUpgrade + currentCar.engineUpgrade + currentCar.chassisUpgrade) {
-                    case 0:
-                        break;
                     case 9:
-                        carModule.topSpeed = car["1StarTopSpeed"];
-                        carModule.accel = car["1Star0to60"];
-                        carModule.handling = car["1StarHandling"];
-                        break;
                     case 18:
-                        carModule.topSpeed = car["2StarTopSpeed"];
-                        carModule.accel = car["2Star0to60"];
-                        carModule.handling = car["2StarHandling"];
+                        carModule.topSpeed = car[`${currentCar.gearingUpgrade / 3}StarTopSpeed`];
+                        carModule.accel = car[`${currentCar.gearingUpgrade / 3}Star0to60`];
+                        carModule.handling = car[`${currentCar.gearingUpgrade / 3}StarHandling`];
                         break;
                     case 24:
                         carModule.topSpeed = car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}MaxedTopSpeed`];

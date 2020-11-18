@@ -20,7 +20,6 @@ module.exports = {
         const db = message.client.db;
         const deckName = args[0].toLowerCase();
         const decks = await db.get(`acc${message.author.id}.decks`);
-        const searchResults = [];
         const filter = response => {
             return response.author.id === message.author.id;
         };
@@ -38,72 +37,58 @@ module.exports = {
             return message.channel.send(infoScreen);
         }
 
-        var counter = 0;
-        var searched = 0;
-        while (counter < decks.length) {
-            var currentName = decks[counter].name.toLowerCase();
-            if (currentName.includes(deckName)) {
-                console.log("found!");
-                console.log(currentName)
-                searchResults[searched] = { deck: decks[counter], index: counter };
-                searched++;
+        const searchResults = decks.filter(function (deck) {
+            return deck.name.includes(deckName);
+        });
+
+        if (searchResults.length > 1) {
+            var deckList = "";
+            for (i = 1; i <= searchResults.length; i++) {
+                deckList += `${i} - ${searchResults[i - 1].name} \n`;
             }
-            counter++;
-        }
 
-        if (searched > 0) {
-            var currentDeck = searchResults[0].deck;
-            if (searched > 1) {
-                var deckList = "";
-                for (i = 1; i <= searchResults.length; i++) {
-                    deckList += `${i} - ${searchResults[i - 1].deck.name} \n`;
-                }
+            const infoScreen = new Discord.MessageEmbed()
+                .setColor("#34aeeb")
+                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                .setTitle("Multiple decks found, please type one of the following.")
+                .setDescription(deckList)
+                .setTimestamp();
 
-                const infoScreen = new Discord.MessageEmbed()
-                    .setColor("#34aeeb")
-                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                    .setTitle("Multiple decks found, please type one of the following.")
-                    .setDescription(deckList)
-                    .setTimestamp();
-
-                message.channel.send(infoScreen).then(currentMessage => {
-                    message.channel.awaitMessages(filter, {
-                        max: 1,
-                        time: 30000,
-                        errors: ['time']
-                    })
-                        .then(collected => {
-                            if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
-                                collected.first().delete();
-                                const errorMessage = new Discord.MessageEmbed()
-                                    .setColor("#fc0303")
-                                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                                    .setTitle("Error, invalid integer provided.")
-                                    .setDescription("It looks like your response was either not a number or not part of the selection.")
-                                    .setTimestamp();
-                                return currentMessage.edit(errorMessage);
-                            }
-                            else {
-                                currentDeck = searchResults[parseInt(collected.first()) - 1].deck;
-                                index = searchResults[parseInt(collected.first()) - 1].index;
-                                collected.first().delete();
-                                removeDeck(currentDeck, index, currentMessage);
-                            }
-                        })
-                        .catch(() => {
-                            const cancelMessage = new Discord.MessageEmbed()
-                                .setColor("#34aeeb")
+            message.channel.send(infoScreen).then(currentMessage => {
+                message.channel.awaitMessages(filter, {
+                    max: 1,
+                    time: 30000,
+                    errors: ['time']
+                })
+                    .then(collected => {
+                        if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
+                            collected.first().delete();
+                            const errorMessage = new Discord.MessageEmbed()
+                                .setColor("#fc0303")
                                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                                .setTitle("Action cancelled automatically.")
+                                .setTitle("Error, invalid integer provided.")
+                                .setDescription("It looks like your response was either not a number or not part of the selection.")
                                 .setTimestamp();
-                            return currentMessage.edit(cancelMessage);
-                        });
-                });
-            }
-            else {
-                index = searchResults[0].index;
-                removeDeck(currentDeck, index);
-            }
+                            return currentMessage.edit(errorMessage);
+                        }
+                        else {
+                            let currentDeck = searchResults[parseInt(collected.first()) - 1].deck;
+                            collected.first().delete();
+                            removeDeck(currentDeck, currentMessage);
+                        }
+                    })
+                    .catch(() => {
+                        const cancelMessage = new Discord.MessageEmbed()
+                            .setColor("#34aeeb")
+                            .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                            .setTitle("Action cancelled automatically.")
+                            .setTimestamp();
+                        return currentMessage.edit(cancelMessage);
+                    });
+            });
+        }
+        else if (searchResults.length > 0) {
+            removeDeck(searchResults[0]);
         }
         else {
             const errorMessage = new Discord.MessageEmbed()
@@ -115,7 +100,7 @@ module.exports = {
             return message.channel.send(errorMessage);
         }
 
-        async function removeDeck(currentDeck, index, currentMessage) {
+        async function removeDeck(currentDeck, currentMessage) {
             const confirmationMessage = new Discord.MessageEmbed()
                 .setColor("#34aeeb")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -139,26 +124,27 @@ module.exports = {
             })
                 .then(async collected => {
                     reactionMessage.reactions.removeAll();
-                    if (collected.first().emoji.name === "✅") {
-                        decks.splice(index, 1);
+                    switch (collected.first().emoji.name) {
+                        case "✅":
+                            decks.splice(decks.indexOf(currentDeck), 1);
+                            await db.set(`acc${message.author.id}.decks`, decks);
 
-                        await db.set(`acc${message.author.id}.decks`, decks);
-
-                        const infoScreen = new Discord.MessageEmbed()
-                            .setColor("#03fc24")
-                            .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                            .setTitle(`Successfully removed deck named ${currentDeck.name}!`)
-                            .setDescription("You earned nothing!")
-                            .setTimestamp();
-                        return reactionMessage.edit(infoScreen);
-                    }
-                    else if (collected.first().emoji.name === "❎") {
-                        const cancelMessage = new Discord.MessageEmbed()
-                            .setColor("#34aeeb")
-                            .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                            .setTitle("Action cancelled.")
-                            .setTimestamp();
-                        return reactionMessage.edit(cancelMessage);
+                            const infoScreen = new Discord.MessageEmbed()
+                                .setColor("#03fc24")
+                                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                                .setTitle(`Successfully removed deck named ${currentDeck.name}!`)
+                                .setDescription("You earned nothing!")
+                                .setTimestamp();
+                            return reactionMessage.edit(infoScreen);
+                        case "❎":
+                            const cancelMessage = new Discord.MessageEmbed()
+                                .setColor("#34aeeb")
+                                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                                .setTitle("Action cancelled.")
+                                .setTimestamp();
+                            return reactionMessage.edit(cancelMessage);
+                        default:
+                            break;
                     }
                 })
                 .catch(() => {
