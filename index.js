@@ -64,6 +64,9 @@ client.once("ready", async () => {
 		const garage = await client.db.get(`acc${user.id}.garage`);
 		var i = 0;
 		while (i < garage.length) {
+			garage[i].gearingUpgrade = parseInt(garage[i].gearingUpgrade);
+			garage[i].engineUpgrade = parseInt(garage[i].engineUpgrade);
+			garage[i].chassisUpgrade = parseInt(garage[i].chassisUpgrade);
 			if (garage[i].carFile === "jaguar e-pace p200 awd (2018).json") {
 				console.log("please");
 				garage[i].carFile = "jaguar e-pace p250 awd (2018).json";

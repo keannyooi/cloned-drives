@@ -74,7 +74,7 @@ module.exports = {
 
         var maxedCarAmount = 0;
         for (i = 0; i < garage.length; i++) {
-            if (garage[i].gearingUpgrade + garage[i].engineUpgrade + garage[i].chassisUpgrade === 24) {
+            if (parseInt(garage[i].gearingUpgrade) + parseInt(garage[i].engineUpgrade) + parseInt(garage[i].chassisUpgrade) >= 24) {
                 maxedCarAmount++;
             }
         }

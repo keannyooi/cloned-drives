@@ -336,7 +336,7 @@ module.exports = {
                 const rarity = rarityCheck(car);
                 var carSpecs = `(${rarity} ${car["rq"]}) ${car["make"]} ${car["model"]} (${car["modelYear"]}) [${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}]\n`;
 
-                switch (currentCar.gearingUpgrade + currentCar.engineUpgrade + currentCar.chassisUpgrade) {
+                switch (parseInt(currentCar.gearingUpgrade) + parseInt(currentCar.engineUpgrade) + parseInt(currentCar.chassisUpgrade)) {
                     case 0:
                         carSpecs += `Top Speed: ${car["topSpeed"]}MPH\n`;
                         carSpecs += `0-60MPH: ${car["0to60"]} sec\n`;
@@ -400,7 +400,7 @@ module.exports = {
                     racehud: getRacehud(car, `${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}`)
                 };
 
-                switch (currentCar.gearingUpgrade + currentCar.engineUpgrade + currentCar.chassisUpgrade) {
+                switch (parseInt(currentCar.gearingUpgrade) + parseInt(currentCar.engineUpgrade) + parseInt(currentCar.chassisUpgrade)) {
                     case 9:
                     case 18:
                         carModule.topSpeed = car[`${currentCar.gearingUpgrade / 3}StarTopSpeed`];

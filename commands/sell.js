@@ -159,8 +159,10 @@ module.exports = {
                         case "✅":
                             garage.splice(garage.indexOf(currentCar), 1);
 
-                            if (playerData.hand && playerData.hand.carFile === currentCar.carFile) {
-                                playerData.hand = null;
+                            if (playerData.hand) {
+                                if (playerData.hand.carFile === currentCar.carFile) {
+                                    playerData.hand = null;
+                                }
                             }
                             var i = 0;
                             while (i < playerData.decks.length) {
@@ -168,7 +170,9 @@ module.exports = {
                                     return car.carFile === currentCar.carFile;
                                 });
                                 if (hasCar) {
-                                    hasCar = "None";
+                                    console.log(hasCar);
+                                    const index = playerData.decks[i].hand.indexOf(hasCar);
+                                    playerData.decks[i].hand[index] = "None";
                                 }
                                 i++;
                             }

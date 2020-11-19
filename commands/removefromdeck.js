@@ -130,7 +130,7 @@ module.exports = {
 
             const car = require(`./cars/${currentCar.carFile}`);
             const upgrade = currentCar.gearingUpgrade + currentCar.engineUpgrade + currentCar.chassisUpgrade;
-            const currentName = `${car["make"]} ${car["model"]} (${car["modelYear"]}) [${upgrade}]`;
+            const currentName = `${car["make"]} ${car["model"]} (${car["modelYear"]}) [${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}]`;
             var racehud;
             switch (upgrade) {
                 case 0:

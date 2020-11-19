@@ -180,8 +180,10 @@ module.exports = {
                     reactionMessage.reactions.removeAll();
                     switch (collected.first().emoji.name) {
                         case "✅":
-                            if (playerData.hand && playerData.hand.carFile === currentCar.carFile) {
-                                playerData.hand = null;
+                            if (playerData.hand) {
+                                if (playerData.hand.carFile === currentCar.carFile) {
+                                    playerData.hand = null;
+                                }
                             }
                             var i = 0;
                             while (i < playerData.decks.length) {
@@ -189,7 +191,8 @@ module.exports = {
                                     return car.carFile === currentCar.carFile;
                                 });
                                 if (hasCar) {
-                                    hasCar = "None";
+                                    const index = playerData.decks[i].hand.indexOf(hasCar);
+                                    playerData.decks[i].hand[index] = "None";
                                 }
                                 i++;
                             }

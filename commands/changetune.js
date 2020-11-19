@@ -134,9 +134,9 @@ module.exports = {
 			const car = require(`./cars/${currentCar.carFile}`);
 			const currentName = `${car["make"]} ${car["model"]} (${car["modelYear"]})`;
 
-			currentCar.gearingUpgrade = upgrade[0];
-			currentCar.engineUpgrade = upgrade[1];
-			currentCar.chassisUpgrade = upgrade[2];
+			currentCar.gearingUpgrade = parseInt(upgrade[0]);
+			currentCar.engineUpgrade = parseInt(upgrade[1]);
+			currentCar.chassisUpgrade = parseInt(upgrade[2]);
 
 			var racehud;
 			switch (`${upgrade[0]}${upgrade[1]}${upgrade[2]}`) {
@@ -166,10 +166,12 @@ module.exports = {
 					}
 			}
 
-			if (playerData.hand && playerData.hand.carFile === currentCar.carFile) {
-				playerData.hand.gearingUpgrade = currentCar.gearingUpgrade;
-				playerData.hand.engineUpgrade = currentCar.engineUpgrade;
-				playerData.hand.chassisUpgrade = currentCar.chassisUpgrade;
+			if (playerData.hand) {
+				if (playerData.hand.carFile === currentCar.carFile) {
+					playerData.hand.gearingUpgrade = currentCar.gearingUpgrade;
+					playerData.hand.engineUpgrade = currentCar.engineUpgrade;
+					playerData.hand.chassisUpgrade = currentCar.chassisUpgrade;
+				}
 			}
 			var i = 0;
 			while (i < playerData.decks.length) {
@@ -177,9 +179,10 @@ module.exports = {
 					return car.carFile === currentCar.carFile;
 				});
 				if (hasCar) {
-					hasCar.gearingUpgrade = currentCar.gearingUpgrade;
-					hasCar.engineUpgrade = currentCar.engineUpgrade;
-					hasCar.chassisUpgrade = currentCar.chassisUpgrade;
+					const index = playerData.decks[i].hand.indexOf(hasCar);
+					playerData.decks[i].hand[index].gearingUpgrade = currentCar.gearingUpgrade;
+					playerData.decks[i].hand[index].engineUpgrade = currentCar.engineUpgrade;
+					playerData.decks[i].hand[index].chassisUpgrade = currentCar.chassisUpgrade;
 				}
 				i++;
 			}

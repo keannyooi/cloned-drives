@@ -43,7 +43,7 @@ module.exports = {
 		var trackset = playerData.rrTrackset;
 		var opponent = playerData.rrOpponent;
 
-		if (!trackset || !opponent) {
+		if (!trackset || !opponent || !carFiles.includes(opponent.carFile)) {
 			randomize();
 		}
 		if (!playerData.rrWinStreak) {
