@@ -1,0 +1,45 @@
+{
+    "rq": 19,
+    "make": "Volkswagen",
+    "model": "up!",
+    "modelYear": 2011,
+    "country": "DE",
+    "topSpeed": 104,
+    "0to60": 11.8,
+    "handling": 72,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 929,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 37.34,
+    "ola": 64.41,
+    "description": "The Up-exclamation-mark, Top Gear says.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/779286863936618506/i_have_commited_a_misdemeanor.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/778882102526476319/VWupstock.png",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/778882151856603166/VWup1.png",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/778882184722513941/VWup2.png",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/778882298555793439/VWupmaxed323.png",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 108,
+    "1Star0to60": 10.9,
+    "1StarHandling": 75,
+
+    "2StarTopSpeed": 112,
+    "2Star0to60": 10.0,
+    "2StarHandling": 78,
+
+    "969MaxedTopSpeed": 115,
+    "969Maxed0to60": 9.1,
+    "969MaxedHandling": 80
+}

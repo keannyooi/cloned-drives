@@ -43,16 +43,10 @@ module.exports = {
             return message.channel.send(errorScreen);
         }
 
-        var amount = args[args.length - 1];
-        if (isNaN(amount) || (!isNaN(args[0]) && args[0] > 8)) {
-            amount = 1;
-            if (args[1]) {
-                carName = args.slice(0, args.length - 2);
-                carName = carName.map(i => i.toLowerCase());
-            }
+        var amount = 1;
+        if (args.length > 1 && !isNaN(args[args.length - 1])) {
+            amount = args[args.length - 1];
         }
-
-        console.log(carName);
 
         const searchResults = catalog.filter(function (selection) {
             return carName.every(part => selection.carFile.includes(part));

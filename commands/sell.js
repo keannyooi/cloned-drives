@@ -141,7 +141,7 @@ module.exports = {
                 .setTimestamp();
             var reactionMessage;
             if (currentMessage) {
-                reactionMessage = await mcurrentMessage.edit(confirmationMessage);
+                reactionMessage = await currentMessage.edit(confirmationMessage);
             }
             else {
                 reactionMessage = await message.channel.send(confirmationMessage);
