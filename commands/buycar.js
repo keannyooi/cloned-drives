@@ -47,6 +47,15 @@ module.exports = {
         if (args.length > 1 && !isNaN(args[args.length - 1])) {
             amount = args[args.length - 1];
         }
+        if (amount > 10) {
+            const errorScreen = new Discord.MessageEmbed()
+                .setColor("#fc0303")
+                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                .setTitle("Error, you may not buy that many cars at once.")
+                .setDescription("The maximum amount of cars that you can buy at once is limited to 10 in order to prevent something like this (https://discordapp.com/channels/711769157078876305/750304321832222811/781217938069782599).")
+                .setTimestamp();
+            return message.channel.send(errorScreen);
+        }
 
         const searchResults = catalog.filter(function (selection) {
             return carName.every(part => selection.carFile.includes(part));

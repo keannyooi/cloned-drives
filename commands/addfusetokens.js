@@ -74,7 +74,7 @@ module.exports = {
             .setColor('#03fc24')
             .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
             .setTitle(`Successfully added ${fuseEmoji}${amount} to ${member.displayName}'s fuse token balance!`)
-			.setDescription(`Current Money Balance: ${fuseEmoji}${playerData.fuseTokens}`)
+			.setDescription(`Current Fuse Token Balance: ${fuseEmoji}${playerData.fuseTokens}`)
             .setTimestamp();
         return message.channel.send(infoScreen);
     }

@@ -28,7 +28,7 @@
     "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/749549331631177760/buick_regal_gnx_333.jpg",
     "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/749549357480542298/buick_regal_gnx_666.jpg",
     "racehudMaxed996": "https://cdn.discordapp.com/attachments/718097267621363744/749549371061698630/buick_regal_gnx_996.jpg",
-    "racehudMaxed969": "",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/781341648956817408/gnx_969.jpg",
     "racehudMaxed699": "",
 
     "1StarTopSpeed": 127,
@@ -41,5 +41,9 @@
 
     "996MaxedTopSpeed": 136,
     "996Maxed0to60": 3.8,
-    "996MaxedHandling": 78
+    "996MaxedHandling": 78,
+
+    "969MaxedTopSpeed": 134,
+    "969Maxed0to60": 3.9,
+    "969MaxedHandling": 80
 }

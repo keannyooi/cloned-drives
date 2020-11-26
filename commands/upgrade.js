@@ -270,7 +270,7 @@ module.exports = {
 				}
 
 				if (rq > 79) { //leggie
-					moneyLimit = 3125 * (upgradeIndex - origUpgrade);
+					moneyLimit = 4500 * (upgradeIndex - origUpgrade) / 3;
 					if (upgradeIndex >= 18 && origUpgrade < 9) {
 						fuseTokenLimit = 1200 * (upgradeIndex - origUpgrade) / 3;
 					}
@@ -279,7 +279,7 @@ module.exports = {
 					}
 				}
 				else if (rq > 64 && rq <= 79) { //epic
-					moneyLimit = 2375 * (upgradeIndex - origUpgrade);
+					moneyLimit = 3750 * (upgradeIndex - origUpgrade) / 3;
 					if (upgradeIndex >= 18 && origUpgrade < 9) {
 						fuseTokenLimit = 700 * (upgradeIndex - origUpgrade) / 3;
 					}
@@ -288,49 +288,49 @@ module.exports = {
 					}
 				}
 				else if (rq > 49 && rq <= 64) { //ultra
-					moneyLimit = 1250 * (upgradeIndex - origUpgrade);
+					moneyLimit = 3000 * (upgradeIndex - origUpgrade) / 3;
 					if (upgradeIndex >= 18 && origUpgrade < 9) {
-						fuseTokenLimit = 275 * (upgradeIndex - origUpgrade);
+						fuseTokenLimit = 275 * (upgradeIndex - origUpgrade) / 3;
 					}
 					else {
-						fuseTokenLimit = 275 * (upgradeIndex - origUpgrade - 9);
+						fuseTokenLimit = 275 * (upgradeIndex - origUpgrade - 9) / 3;
 					}
 				}
 				else if (rq > 39 && rq <= 49) { //super
-					moneyLimit = 775 * (upgradeIndex - origUpgrade);
+					moneyLimit = 2250 * (upgradeIndex - origUpgrade) / 3;
 					if (upgradeIndex >= 18 && origUpgrade < 9) {
-						fuseTokenLimit = 100 * (upgradeIndex - origUpgrade);
+						fuseTokenLimit = 100 * (upgradeIndex - origUpgrade) / 3;
 					}
 					else {
-						fuseTokenLimit = 100 * (upgradeIndex - origUpgrade - 9);
+						fuseTokenLimit = 100 * (upgradeIndex - origUpgrade - 9) / 3;
 					}
 				}
 				else if (rq > 29 && rq <= 39) { //rare
-					moneyLimit = 625 * (upgradeIndex - origUpgrade);
+					moneyLimit = 1500 * (upgradeIndex - origUpgrade) / 3;
 					if (upgradeIndex >= 18 && origUpgrade < 9) {
-						fuseTokenLimit = 35 * (upgradeIndex - origUpgrade);
+						fuseTokenLimit = 35 * (upgradeIndex - origUpgrade) / 3;
 					}
 					else {
-						fuseTokenLimit = 35 * (upgradeIndex - origUpgrade - 9);
+						fuseTokenLimit = 35 * (upgradeIndex - origUpgrade - 9) / 3;
 					}
 				}
 				else if (rq > 19 && rq <= 29) { //uncommon
-					moneyLimit = 450 * (upgradeIndex - origUpgrade);
+					moneyLimit = 750 * (upgradeIndex - origUpgrade) / 3;
 					if (upgradeIndex >= 18 && origUpgrade < 9) {
-						fuseTokenLimit = 10 * (upgradeIndex - origUpgrade);
+						fuseTokenLimit = 10 * (upgradeIndex - origUpgrade) / 3;
 					}
 					else {
-						fuseTokenLimit = 10 * (upgradeIndex - origUpgrade - 9);
+						fuseTokenLimit = 10 * (upgradeIndex - origUpgrade - 9) / 3;
 					}
 					console.log(moneyLimit);
 				}
 				else { //common
-					moneyLimit = 300 * (upgradeIndex - origUpgrade);
+					moneyLimit = 500 * (upgradeIndex - origUpgrade) / 3;
 					if (upgradeIndex >= 18 && origUpgrade < 9) {
-						fuseTokenLimit = 10 * (upgradeIndex - origUpgrade);
+						fuseTokenLimit = 10 * (upgradeIndex - origUpgrade) / 3;
 					}
 					else {
-						fuseTokenLimit = 10 * (upgradeIndex - origUpgrade - 9);
+						fuseTokenLimit = 10 * (upgradeIndex - origUpgrade - 9) / 3;
 					}
 				}
 			}

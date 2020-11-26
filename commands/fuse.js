@@ -47,7 +47,7 @@ module.exports = {
             var carList = "";
             for (i = 1; i <= searchResults.length; i++) {
                 const car = require(`./cars/${searchResults[i - 1].carFile}`);
-                carList += `${i} - ${car["make"]} ${car["model"]} ${car["modelYear"]} [${searchResults[i - 1].gearingUpgrade}${searchResults[i - 1].engineUpgrade}${searchResults[i - 1].chassisUpgrade}]\n`;
+                carList += `${i} - ${car["make"]} ${car["model"]} (${car["modelYear"]}) [${searchResults[i - 1].gearingUpgrade}${searchResults[i - 1].engineUpgrade}${searchResults[i - 1].chassisUpgrade}]\n`;
             }
 
             const infoScreen = new Discord.MessageEmbed()

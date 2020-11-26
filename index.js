@@ -53,39 +53,27 @@ client.once("ready", async () => {
 			console.log(user.id);
 		}
 		//for changing stuff in the database
-
-		if (!await client.db.get(`acc${user.id}.unclaimedRewards`)) {
-			await client.db.set(`acc${user.id}.unclaimedRewards`, { money: 0, fuseTokens: 0, trophies: 0, cars: [] });
-		}
-		if (!await client.db.get(`acc${user.id}.campaignProgress`)) {
-			await client.db.set(`acc${user.id}.campaignProgress`, { chapter: 0, part: 1, race: 1 });
-		}
-
 		const garage = await client.db.get(`acc${user.id}.garage`);
 		var i = 0;
 		while (i < garage.length) {
-			garage[i].gearingUpgrade = parseInt(garage[i].gearingUpgrade);
-			garage[i].engineUpgrade = parseInt(garage[i].engineUpgrade);
-			garage[i].chassisUpgrade = parseInt(garage[i].chassisUpgrade);
-			if (garage[i].carFile === "jaguar e-pace p200 awd (2018).json") {
-				console.log("please");
-				garage[i].carFile = "jaguar e-pace p250 awd (2018).json";
+			if (garage[i].carFile === "bmw m2 coupe (2016).json") {
+				garage[i].carFile = "bmw m2 (2016).json";
 			}
 			i++;
 		}
 		client.db.set(`acc${user.id}.garage`, garage);
 	})
 
-	const catalog = await client.db.get("dealershipCatalog");
-	console.log(catalog);
-	var i = 0;
-	while (i < catalog.length) {
-		if (catalog[i].carFile === "aston martin db11 v12 (2016)") {
-			catalog[i].carFile = "aston martin db11 v12 (2017)";
-		}
-		i++;
-	}
-	await client.db.set("dealershipCatalog", catalog);
+	// const catalog = await client.db.get("dealershipCatalog");
+	// console.log(catalog);
+	// var i = 0;
+	// while (i < catalog.length) {
+	// 	if (catalog[i].carFile === "aston martin db11 v12 (2016)") {
+	// 		catalog[i].carFile = "aston martin db11 v12 (2017)";
+	// 	}
+	// 	i++;
+	// }
+	// await client.db.set("dealershipCatalog", catalog);
 
 	client.user.setActivity("over everyone's garages", { type: "WATCHING" });
 });
