@@ -9,7 +9,7 @@
     "handling": 88,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": "",
+    "tags": [],
     "isPrize": false,
 
     "weight": 1490,
@@ -19,8 +19,8 @@
     "tcs": true,
     "abs": true,
     "fuelType": "Petrol",
-    "mra": .,
-    "ola": .,
+    "mra": 65.23,
+    "ola": 73.47,
     "description": "",
 
     "card": "https://cdn.discordapp.com/attachments/733973415366623274/780517093543247882/2005_Mitsubishi_Evo_VIII_MR.png",
