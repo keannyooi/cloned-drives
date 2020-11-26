@@ -1,0 +1,45 @@
+{
+    "rq": 90,
+    "make": "Mitsubishi",
+    "model": "MiEV Evolution III",
+    "modelYear": 2014,
+    "country": "JP",
+    "topSpeed": 186,
+    "0to60": 2.7,
+    "handling": 96,
+    "driveType": "4WD",
+    "tyreType": "Slick",
+    "tags": "",
+    "isPrize": true,
+
+    "weight": 1463,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Roadster",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 93.10,
+    "ola": 96.30,
+    "description": "For purple mountain, majesties … wEEEo—wEEEo … wEEE—wEEEo…wEEEo—wEEEo.",
+
+    "card": "https://cdn.discordapp.com/attachments/733973415366623274/778746533050449961/mitsubishi_miev_evolution_iii.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/778969504243908628/mitsubishi_miev_evolution_iii.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/778969637274386432/mitsubishi_miev_evolution_iii_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/778969649500127242/mitsubishi_miev_evolution_iii_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "",
+    "racehudMaxed699": "https://cdn.discordapp.com/attachments/718097267621363744/778969663014830080/mitsubishi_miev_evolution_iii_699.jpg",
+
+    "1StarTopSpeed": 189,
+    "1Star0to60": 2.6,
+    "1StarHandling": 99,
+
+    "2StarTopSpeed": 192,
+    "2Star0to60": 2.4,
+    "2StarHandling": 103,
+
+    "699MaxedTopSpeed": 195,
+    "699Maxed0to60": 2.3,
+    "699MaxedHandling": 107
+}

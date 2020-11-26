@@ -1,0 +1,45 @@
+{
+    "rq": 64,
+    "make": "BMW",
+    "model": "X2 xDrive28i",
+    "modelYear": 2018,
+    "country": "DE",
+    "topSpeed": 143,
+    "0to60": 6.4,
+    "handling": 81,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": "",
+    "isPrize": false,
+
+    "weight": 1680,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 57.66,
+    "ola": 65.63,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/733973415366623274/779212990993530890/BMW_X2_xDrive28i_2018.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/780519628056952832/BMW_X2_xDrive28i_2018_000.png",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/780519647643828234/BMW_X2_xDrive28i_2018_333.png",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/780519659891982356/BMW_X2_xDrive28i_2018_666.png",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/780519682741633034/BMW_X2_xDrive28i_2018_969.png",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 147,
+    "1Star0to60": 6.0,
+    "1StarHandling": 84,
+
+    "2StarTopSpeed": 150,
+    "2Star0to60": 5.6,
+    "2StarHandling": 87,
+
+    "969MaxedTopSpeed": 153,
+    "969Maxed0to60": 5.2,
+    "969MaxedHandling": 90
+}

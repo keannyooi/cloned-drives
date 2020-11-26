@@ -1,0 +1,53 @@
+{
+    "rq": 60,
+    "make": "Land Rover",
+    "model": "Discovery Sport P250 SE",
+    "modelYear": 2020,
+    "country": "GB",
+    "topSpeed": 132,
+    "0to60": 7.5,
+    "handling": 75,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": "",
+    "isPrize": false,
+
+    "weight": 2113,
+    "gc": "High",
+    "seatCount": 7,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 52.82,
+    "ola": 64.00,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/731698267573977099/781024036339056670/Land_Rover_Discovery_Sport_P250_SE_2020.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/781027548569665556/Land_Rover_Discovery_Sport_P250_SE_2020_000.png",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/781027565884276756/Land_Rover_Discovery_Sport_P250_SE_2020_333.png",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/781027574137880646/Land_Rover_Discovery_Sport_P250_SE_2020_666.png",
+    "racehudMaxed996": "https://cdn.discordapp.com/attachments/718097267621363744/781027666484133918/Land_Rover_Discovery_Sport_P250_SE_2020_996.png",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/781027615644712960/Land_Rover_Discovery_Sport_P250_SE_2020_969.png",
+    "racehudMaxed699": "https://cdn.discordapp.com/attachments/718097267621363744/781027648209420308/Land_Rover_Discovery_Sport_P250_SE_2020_699.png",
+
+    "1StarTopSpeed": 136,
+    "1Star0to60": 7.0,
+    "1StarHandling": 78,
+
+    "2StarTopSpeed": 140,
+    "2Star0to60": 6.5,
+    "2StarHandling": 81,
+
+    "969MaxedTopSpeed": 144,
+    "969Maxed0to60": 6.0,
+    "969MaxedHandling": 83,
+
+    "996MaxedTopSpeed": 144,
+    "996Maxed0to60": 5.8,
+    "996MaxedHandling": 81, 
+
+    "699MaxedTopSpeed": 142,
+    "699Maxed0to60": 6.0,
+    "699MaxedHandling":83
+}

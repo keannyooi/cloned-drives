@@ -1,0 +1,53 @@
+{
+    "rq": 74,
+    "make": "BMW",
+    "model": "M440i xDrive Coupe",
+    "modelYear": 2020,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 4.0,
+    "handling": 84,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": "",
+    "isPrize": false,
+
+    "weight": 1740,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 60.61,
+    "ola": 75.00,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/733973415366623274/778663210751623228/BMWM440ixDrive.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/778667057922703400/440istockxd.png",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/778667081100296242/440ixd1.png",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/778667102595973170/440ixd2.png",
+    "racehudMaxed996": "https://cdn.discordapp.com/attachments/718097267621363744/778667236767301652/440ixdmaxed332.png",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/778667190924345374/440ixdmaxed323.png",
+    "racehudMaxed699": "https://cdn.discordapp.com/attachments/718097267621363744/778667145944236052/440ixdmaxed233.png",
+
+    "1StarTopSpeed": 158,
+    "1Star0to60": 3.8,
+    "1StarHandling": 87,
+
+    "2StarTopSpeed": 162,
+    "2Star0to60": 3.6,
+    "2StarHandling": 90,
+
+    "969MaxedTopSpeed": 168,
+    "969Maxed0to60": 3.4,
+    "969MaxedHandling": 93
+
+    "699MaxedTopSpeed": 164,
+    "699Maxed0to60": 3.4,
+    "699MaxedHandling": 93
+
+    "996MaxedTopSpeed": 168,
+    "996Maxed0to60": 3.3,
+    "996MaxedHandling": 90
+}
