@@ -49,6 +49,10 @@ module.exports = {
         const garage = await db.get(`acc${message.author.id}.garage`);
         const totalPages = Math.ceil(carFiles.length / pageLimit);
 
+        const ownedCars = carFiles.filter(function (carFile) {
+            return garage.some(part => carFile.includes(part.carFile));
+        });
+
         if (args[args.length - 2] === "-s") {
             switch (args[args.length - 1].toLowerCase()) {
                 case "rq":
@@ -60,16 +64,10 @@ module.exports = {
                     sortBy = "0to60";
                     break;
                 case "handling":
-                    sortBy = "handling";
-                    break;
                 case "weight":
-                    sortBy = "weight";
-                    break;
                 case "mra":
-                    sortBy = "mra";
-                    break;
                 case "ola":
-                    sortBy = "ola";
+                    sortBy = args[args.length - 1].toLowerCase();
                     break;
                 default:
                     const errorScreen = new Discord.MessageEmbed()
@@ -129,7 +127,7 @@ module.exports = {
         const infoScreen = new Discord.MessageEmbed()
             .setColor("#34aeeb")
             .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-            .setTitle("List of All Cars in Cloned Drives")
+            .setTitle(`List of All Cars in Cloned Drives (${ownedCars.length}/${carFiles.length} Cars Owned)`)
             .setDescription(carList)
             .setFooter(`Page ${page} of ${totalPages} - React with ⬅️ or ➡️ to navigate through pages.`)
             .setTimestamp();
@@ -167,7 +165,7 @@ module.exports = {
                 const infoScreen = new Discord.MessageEmbed()
                     .setColor("#34aeeb")
                     .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                    .setTitle("List of All Cars in Cloned Drives")
+                    .setTitle(`List of All Cars in Cloned Drives (${ownedCars.length}/${carFiles.length} Cars Owned)`)
                     .setDescription(carList)
                     .setFooter(`Page ${page} of ${totalPages} - React with ⬅️ or ➡️ to navigate through pages.`)
                     .setTimestamp();
@@ -258,23 +256,13 @@ module.exports = {
                     carList += ` ${trophyEmoji}`;
                 }
 
-                if (isInGarage(carFiles[i])) {
+                if (ownedCars.some(car => carFiles[i].includes(car))) {
                     carList += " ✅ \n";
                 }
                 else {
                     carList += "\n";
                 }
             }
-        }
-
-        function isInGarage(currentCar) {
-            var isInGarage = false;
-            for (x = 0; x < garage.length; x++) {
-                if (currentCar === garage[x].carFile) {
-                    isInGarage = true;
-                }
-            }
-            return isInGarage;
         }
     }
 }

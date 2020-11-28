@@ -94,6 +94,16 @@ module.exports = {
                 carList += `${i} - ${car["make"]} ${car["model"]} (${car["modelYear"]}) [${searchResults[i - 1].gearingUpgrade}${searchResults[i - 1].engineUpgrade}${searchResults[i - 1].chassisUpgrade}]\n`;
             }
 
+            if (carList.length > 2048) {
+                const errorMessage = new Discord.MessageEmbed()
+                    .setColor("#fc0303")
+                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                    .setTitle("Error, too many search results.")
+                    .setDescription("Due to Discord's embed limitations, the bot isn't able to show the full list of search results. Try again with a more specific keyword.")
+                    .setTimestamp();
+                return message.channel.send(errorMessage);
+            }
+
             const infoScreen = new Discord.MessageEmbed()
                 .setColor("#34aeeb")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))

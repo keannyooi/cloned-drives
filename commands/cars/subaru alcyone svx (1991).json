@@ -1,0 +1,45 @@
+{
+    "rq": 40,
+    "make": "Subaru",
+    "model": "Alcyone SVX",
+    "modelYear": 1991,
+    "country": "JP",
+    "topSpeed": 154,
+    "0to60": 7.3,
+    "handling": 77,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1590,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 66.97,
+    "ola": 76.71,
+    "description": "Named after the star that symbolizes the brand.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/782076522911367208/subaru_alcyone_svx.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/782069090654879754/subaru_alcyone_svx.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/782069127258570752/subaru_alcyone_svx_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/782069135063908362/subaru_alcyone_svx_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "https://cdn.discordapp.com/attachments/718097267621363744/782069147123056680/subaru_alcyone_svx_969.jpg",
+    "racehudMaxed699": "",
+
+    "1StarTopSpeed": 158,
+    "1Star0to60": 6.8,
+    "1StarHandling": 80,
+
+    "2StarTopSpeed": 162,
+    "2Star0to60": 6.3,
+    "2StarHandling": 83,
+
+    "969MaxedTopSpeed": 166,
+    "969Maxed0to60": 5.9,
+    "969MaxedHandling": 85
+}

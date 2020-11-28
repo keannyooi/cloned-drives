@@ -1,0 +1,45 @@
+{
+    "rq": 68,
+    "make": "Mitsubishi",
+    "model": "MiEV Evolution",
+    "modelYear": 2012,
+    "country": "JP",
+    "topSpeed": 115,
+    "0to60": 3.8,
+    "handling": 96,
+    "driveType": "4WD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport"],
+    "isPrize": true,
+
+    "weight": 1340,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "fuelType": "Petrol",
+    "mra": 46.91,
+    "ola": 68.42,
+    "description": "The cooler MiEV.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/782056625463885845/mitsubishi_i-miev_evolution.png",
+    "racehudStock": "https://cdn.discordapp.com/attachments/718097267621363744/778967247010922506/mitsubishi_miev_evolution.jpg",
+    "racehud1Star": "https://cdn.discordapp.com/attachments/718097267621363744/778967344604381184/mitsubishi_miev_evolution_333.jpg",
+    "racehud2Star": "https://cdn.discordapp.com/attachments/718097267621363744/778967353365889074/mitsubishi_miev_evolution_666.jpg",
+    "racehudMaxed996": "",
+    "racehudMaxed969": "",
+    "racehudMaxed699": "https://cdn.discordapp.com/attachments/718097267621363744/778967365806719006/mitsubishi_miev_evolution_699.jpg",
+
+    "1StarTopSpeed": 117,
+    "1Star0to60": 3.6,
+    "1StarHandling": 99,
+
+    "2StarTopSpeed": 119,
+    "2Star0to60": 3.4,
+    "2StarHandling": 103,
+
+    "699MaxedTopSpeed": 121,
+    "699Maxed0to60": 3.2,
+    "699MaxedHandling": 107
+}

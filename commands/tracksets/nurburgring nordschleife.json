@@ -8,8 +8,8 @@
 	
 	"specsDistr": {
 		"topSpeed": 100,
-		"0to60": 5,
-		"handling": 50,
+		"0to60": 100,
+		"handling": 60,
 		"weight": 0,
 		"mra": 100,
 		"ola": 0
