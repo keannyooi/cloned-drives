@@ -13,12 +13,13 @@ module.exports = {
     name: "removemoney",
 	aliases: ["rmvmoney"],
     usage: "<username> <amount here>",
-    args: true,
+    args: 2,
     adminOnly: true,
     description: "Removes a certain amount of money from someone.",
     async execute(message, args) {
 		const db = message.client.db;
-        const moneyEmoji = message.guild.emojis.cache.find(emoji => emoji.name === "money");
+        const moneyEmoji = message.client.emojis.cache.get("726017235826770021");
+        
         var userName = args[0].toLowerCase();
         var user;
         message.guild.members.cache.forEach(User => {
@@ -28,17 +29,9 @@ module.exports = {
 				member = message.guild.member(User);
             }
         });
+
         const amount = args[1];
-        if (!amount) {
-            const errorMessage = new Discord.MessageEmbed()
-                .setColor("#fc0303")
-                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle("Error, arguments provided insufficient.")
-                .setDescription("Correct syntax: `cd-removemoney <username> <amount here>`")
-                .setTimestamp();
-            return message.channel.send(errorMessage);
-        }
-        else if (isNaN(amount)) {
+        if (isNaN(amount)) {
             const errorMessage = new Discord.MessageEmbed()
                 .setColor("#fc0303")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))

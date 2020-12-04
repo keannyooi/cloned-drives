@@ -12,7 +12,7 @@ const Discord = require("discord.js-light");
 module.exports = {
     name: "sethand",
     usage: "<car name goes here>",
-    args: true,
+    args: 1,
     adminOnly: false,
     description: "Sets your hand for quick race and random race gamemodes.",
     async execute(message, args) {

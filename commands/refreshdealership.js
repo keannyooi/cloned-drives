@@ -16,7 +16,7 @@ module.exports = {
 	name: "refreshdealership",
 	aliases: ["rfdeal", "refreshdeal", "rfdealership"],
 	usage: "(no arguments required)",
-	args: false,
+	args: 0,
 	adminOnly: true,
 	description: "Refreshes the dealership catalog immediately.",
 	execute(message) {

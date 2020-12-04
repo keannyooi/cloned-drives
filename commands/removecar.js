@@ -13,22 +13,11 @@ module.exports = {
     name: "removecar",
     aliases: ["rmvcar"],
     usage: "<username> <car name goes here>",
-    args: true,
+    args: 2,
     adminOnly: true,
     description: "Removes a car from someone's garage. (data transferring)",
     async execute(message, args) {
         const db = message.client.db;
-        if (!args[1]) {
-            const errorMessage = new Discord.MessageEmbed()
-                .setColor("#fc0303")
-                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle("Error, arguments provided insufficient.")
-                .setDescription("Correct syntax: `cd-removecar <username> <car name goes here>`")
-                .setTimestamp();
-            return message.channel.send(errorMessage);
-        }
-
-        var index = 0;
         const filter = response => {
             return response.author.id === message.author.id;
         };

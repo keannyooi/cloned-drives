@@ -14,7 +14,7 @@ const carFiles = fs.readdirSync("./commands/cars").filter(file => file.endsWith(
 module.exports = {
     name: "addcar",
     usage: "<username> <car name goes here>",
-    args: true,
+    args: 2,
     adminOnly: true,
     description: "Adds a car into your garage. (data transferring)",
     execute(message, args) {
@@ -23,16 +23,6 @@ module.exports = {
         const filter = response => {
             return response.author.id === message.author.id;
         };
-
-        if (!args[1]) {
-            const errorMessage = new Discord.MessageEmbed()
-                .setColor("#fc0303")
-                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle("Error, arguments provided insufficient.")
-                .setDescription("Correct syntax: `cd-addcar <username> <car name goes here>`")
-                .setTimestamp();
-            return message.channel.send(errorMessage);
-        }
 
         var user, member;
         if (args.length) {

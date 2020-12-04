@@ -12,20 +12,10 @@ const Discord = require("discord.js-light");
 module.exports = {
     name: "removefromdeck",
     usage: "<deck name goes here> <index>",
-    args: true,
+    args: 2,
     adminOnly: false,
     description: 'Removes a car from a specified slot in a specifed deck. (NOTE: Deck names cannot contain spaces, use underscores "_" instead)',
     async execute(message, args) {
-        if (!args[1]) {
-            const errorMessage = new Discord.MessageEmbed()
-                .setColor("#fc0303")
-                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle("Error, arguments provided insufficient.")
-                .setDescription("Correct syntax: `cd-addtodeck <deck name goes here> <index>`")
-                .setTimestamp();
-            return message.channel.send(errorMessage);
-        }
-
         const db = message.client.db;
         const playerData = await db.get(`acc${message.author.id}`);
         const decks = playerData.decks;

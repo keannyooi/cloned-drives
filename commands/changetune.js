@@ -13,21 +13,11 @@ module.exports = {
 	name: "changetune",
 	aliases: ["ct"],
 	usage: "<username goes here> <car name goes here> <upgrade pattern>",
-	args: true,
+	args: 3,
 	adminOnly: true,
 	description: "Changes a tune of a car in someone's garage.",
 	async execute(message, args) {
 		const db = message.client.db;
-
-		if (!args[1] || !args[2]) {
-			const errorMessage = new Discord.MessageEmbed()
-				.setColor("#fc0303")
-				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-				.setTitle("Error, arguments provided insufficient.")
-				.setDescription("Correct syntax: `cd-changetune <username goes here> <car name goes here> <upgrade pattern>`")
-				.setTimestamp();
-			return message.channel.send(errorMessage);
-		}
 
 		var upgrade = args[args.length - 1].split("");
 		if (args[args.length - 1].toLowerCase() === "stock") {

@@ -8,12 +8,11 @@
 */
 
 const Discord = require("discord.js-light");
-const moment = require("moment");
 
 module.exports = {
 	name: "rewards",
 	usage: "(no arguments required)",
-	args: false,
+	args: 0,
 	adminOnly: false,
 	description: "Collect your race rewards with this command!",
 	async execute(message) {
@@ -38,19 +37,19 @@ module.exports = {
 				.setTimestamp();
 			
 			if (rewards.money > 0) {
-				const moneyEmoji = message.guild.emojis.cache.find(emoji => emoji.name === "money");
+				const moneyEmoji = message.client.emojis.cache.get("726017235826770021");
 				playerData.money += rewards.money;
 				infoScreen.addField("Claimed Money", `${moneyEmoji}${rewards.money}`, true);
 				rewards.money = 0;
 			}
 			if (rewards.fuseTokens > 0) {
-				const fuseEmoji = message.guild.emojis.cache.find(emoji => emoji.name === "fuse");
+				const fuseEmoji = message.client.emojis.cache.get("726018658635218955");
 				playerData.fuseTokens += rewards.fuseTokens;
 				infoScreen.addField("Claimed Fuse Tokens", `${fuseEmoji}${rewards.fuseTokens}`, true);
 				rewards.fuseTokens = 0;
 			}
 			if (rewards.trophies > 0) {
-				const trophyEmoji = message.guild.emojis.cache.find(emoji => emoji.name === "trophies");
+				const trophyEmoji = message.client.emojis.cache.get("775636479145148418");
 				playerData.trophies += rewards.trophies;
 				infoScreen.addField("Claimed Trophies", `${trophyEmoji}${rewards.trophies}`, true);
 				rewards.trophies = 0;

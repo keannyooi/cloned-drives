@@ -13,7 +13,7 @@ const Canvas = require("canvas");
 module.exports = {
     name: "ping",
     usage: "(no arguments required)",
-    args: false,
+    args: 0,
     adminOnly: false,
 	cooldown: 10,
     description: "I wonder what this does...",

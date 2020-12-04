@@ -12,7 +12,7 @@ const Discord = require("discord.js-light");
 module.exports = {
     name: "credits",
     usage: "<no arguments here>",
-    args: false,
+    args: 0,
     adminOnly: false,
     description: "A list of everyone that participated in the making of this server.",
     execute(message) {

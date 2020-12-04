@@ -13,14 +13,14 @@ module.exports = {
     name: "fuse",
     aliases: ["f"],
     usage: "<car name goes here>",
-    args: true,
+    args: 1,
     adminOnly: false,
     description: "Converts a car inside your garage into fuse tokens.",
     async execute(message, args) {
         const db = message.client.db;
         const playerData = await db.get(`acc${message.author.id}`);
         const garage = playerData.garage;
-        const fuseEmoji = message.guild.emojis.cache.find(emoji => emoji.name === "fuse");
+        const fuseEmoji = message.client.emojis.cache.get("726018658635218955");
         const filter = response => {
             return response.author.id === message.author.id;
         };

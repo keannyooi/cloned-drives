@@ -12,7 +12,7 @@ const Discord = require("discord.js-light");
 module.exports = {
     name: "buycar",
     usage: "<car name goes here> or <catalog number> (optional) <amount>",
-    args: true,
+    args: 1,
     adminOnly: false,
     description: "Buy a car from the dealership using this command!",
     async execute(message, args) {

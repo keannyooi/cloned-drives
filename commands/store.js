@@ -15,12 +15,12 @@ module.exports = {
     name: "store",
     aliases: ["shop"],
     usage: "(optional) <page number>",
-    args: false,
-    adminOnly: false,
+    args: 0,
+    adminOnly: true,
     description: "Shows all the packs that are available for purchase in list form.",
     execute(message, args) {
         const pageLimit = 25;
-        const moneyEmoji = message.guild.emojis.cache.find(emoji => emoji.name === "money");
+        const moneyEmoji = message.client.emojis.cache.get("726017235826770021");
         const filter = (reaction, user) => {
             return (reaction.emoji.name === "⬅️" || reaction.emoji.name === "➡️") && user.id === message.author.id;
         };

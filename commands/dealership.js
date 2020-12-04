@@ -17,7 +17,7 @@ module.exports = {
 	name: "dealership",
 	aliases: ["deal", "dealer"],
 	usage: "(no arguments required)",
-	args: false,
+	args: 0,
 	adminOnly: false,
 	description: "Check what's on sale in the car dealership here!",
 	async execute(message) {
@@ -37,7 +37,7 @@ module.exports = {
 			}
 
 			const userData = await db.get(`acc${message.author.id}`);
-			const moneyEmoji = message.guild.emojis.cache.find(emoji => emoji.name === "money");
+			const moneyEmoji = message.client.emojis.cache.get("726017235826770021");
 			var lastRefresh = await db.get("lastDealershipRefresh");
 			var catalog = await db.get("dealershipCatalog");
 			console.log(catalog);
@@ -46,7 +46,7 @@ module.exports = {
 				lastRefresh = moment([2020, 1, 1]).format("L");
 			}
 			if (lastRefresh !== moment().format("L") || !catalog) {
-				refresh();
+				await refresh();
 
 				await db.set("dealershipCatalog", catalog);
 				await db.set("lastDealershipRefresh", moment().format("L"));

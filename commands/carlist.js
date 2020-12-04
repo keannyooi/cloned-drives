@@ -15,13 +15,13 @@ module.exports = {
     name: "carlist",
     aliases: ["allcars"],
     usage: "(optional) <page number>",
-    args: false,
+    args: 0,
     adminOnly: false,
     description: "Shows all the cars that are available in Cloned Drives in list form.",
     async execute(message, args) {
         const db = message.client.db;
         const pageLimit = 10;
-        const trophyEmoji = message.guild.emojis.cache.find(emoji => emoji.name === "trophies");
+        const trophyEmoji = message.client.emojis.cache.get("775636479145148418");
         const filter = (reaction, user) => {
             return (reaction.emoji.name === "⬅️" || reaction.emoji.name === "➡️") && user.id === message.author.id;
         };
@@ -189,7 +189,7 @@ module.exports = {
                 }
             });
 
-            collector.on("end", collected => {
+            collector.on("end", () => {
                 console.log("end of collection");
                 infoMessage.reactions.removeAll();
             });
@@ -197,32 +197,32 @@ module.exports = {
 
         function rarityCheck(currentCar) {
             if (currentCar["rq"] > 79) { //leggie
-                return message.guild.emojis.cache.find(emoji => emoji.name === "legendary");
+                return message.client.emojis.cache.get("726025494138454097");
             }
             else if (currentCar["rq"] > 64 && currentCar["rq"] <= 79) { //epic
-                return message.guild.emojis.cache.find(emoji => emoji.name === "epic");
+                return message.client.emojis.cache.get("726025468230238268");
             }
             else if (currentCar["rq"] > 49 && currentCar["rq"] <= 64) { //ultra
-                return message.guild.emojis.cache.find(emoji => emoji.name === "ultrarare");
+                return message.client.emojis.cache.get("726025431937187850");
             }
             else if (currentCar["rq"] > 39 && currentCar["rq"] <= 49) { //super
-                return message.guild.emojis.cache.find(emoji => emoji.name === "superrare");
+                return message.client.emojis.cache.get("726025394104434759");
             }
             else if (currentCar["rq"] > 29 && currentCar["rq"] <= 39) { //rare
-                return message.guild.emojis.cache.find(emoji => emoji.name === "rare");
+                return message.client.emojis.cache.get("726025302656024586");
             }
             else if (currentCar["rq"] > 19 && currentCar["rq"] <= 29) { //uncommon
-                return message.guild.emojis.cache.find(emoji => emoji.name === "uncommon");
+                return message.client.emojis.cache.get("726025273421725756");
             }
             else { //common
-                return message.guild.emojis.cache.find(emoji => emoji.name === "common");
+                return message.client.emojis.cache.get("726020544264273928");
             }
         }
 
         function carDisplay(page) {
             var startsWith, endsWith;
 
-            if (carFiles.length - pageLimit < 0) {
+            if (carFiles.length - pageLimit <= 0) {
                 startsWith = 0;
                 endsWith = carFiles.length;
                 reactionIndex = 0;
@@ -232,7 +232,7 @@ module.exports = {
                 endsWith = pageLimit;
                 reactionIndex = 1;
             }
-            else if (carFiles.length - (pageLimit * page) < 0) {
+            else if (carFiles.length - (pageLimit * page) <= 0) {
                 startsWith = pageLimit * (page - 1);
                 endsWith = carFiles.length;
                 reactionIndex = 2;

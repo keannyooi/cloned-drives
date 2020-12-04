@@ -13,7 +13,7 @@ module.exports = {
     name: "calculate",
     aliases: ["calc", "cal"],
     usage: "<what to calculate> <variables>",
-    args: false,
+    args: 0,
     adminOnly: false,
     description: "Calculates stuff like handling value, mid-range acceleration and off-the-line acceleration.",
     execute(message, args) {

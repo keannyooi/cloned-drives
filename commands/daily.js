@@ -13,7 +13,7 @@ const moment = require("moment");
 module.exports = {
 	name: "daily",
 	usage: "(no arguments required)",
-	args: false,
+	args: 0,
 	adminOnly: false,
 	description: "Collect your daily reward with this command!",
 	async execute(message) {

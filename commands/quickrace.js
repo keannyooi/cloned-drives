@@ -17,7 +17,7 @@ module.exports = {
     name: "quickrace",
     aliases: ["qr"],
     usage: "<track name goes here>",
-    args: true,
+    args: 1,
     adminOnly: false,
     cooldown: 10,
     description: "Does a quick race where you can choose the trackset and the opponent car. Great for testing out cars.",
@@ -446,25 +446,25 @@ module.exports = {
 
             function rarityCheck(currentCar) {
                 if (currentCar["rq"] > 79) { //leggie
-                    return message.guild.emojis.cache.find(emoji => emoji.name === "legendary");
+                    return message.client.emojis.cache.get("726025494138454097");
                 }
                 else if (currentCar["rq"] > 64 && currentCar["rq"] <= 79) { //epic
-                    return message.guild.emojis.cache.find(emoji => emoji.name === "epic");
+                    return message.client.emojis.cache.get("726025468230238268");
                 }
                 else if (currentCar["rq"] > 49 && currentCar["rq"] <= 64) { //ultra
-                    return message.guild.emojis.cache.find(emoji => emoji.name === "ultrarare");
+                    return message.client.emojis.cache.get("726025431937187850");
                 }
                 else if (currentCar["rq"] > 39 && currentCar["rq"] <= 49) { //super
-                    return message.guild.emojis.cache.find(emoji => emoji.name === "superrare");
+                    return message.client.emojis.cache.get("726025394104434759");
                 }
                 else if (currentCar["rq"] > 29 && currentCar["rq"] <= 39) { //rare
-                    return message.guild.emojis.cache.find(emoji => emoji.name === "rare");
+                    return message.client.emojis.cache.get("726025302656024586");
                 }
                 else if (currentCar["rq"] > 19 && currentCar["rq"] <= 29) { //uncommon
-                    return message.guild.emojis.cache.find(emoji => emoji.name === "uncommon");
+                    return message.client.emojis.cache.get("726025273421725756");
                 }
                 else { //common
-                    return message.guild.emojis.cache.find(emoji => emoji.name === "common");
+                    return message.client.emojis.cache.get("726020544264273928");
                 }
             }
         }

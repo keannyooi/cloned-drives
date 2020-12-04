@@ -12,7 +12,7 @@ const Discord = require("discord.js-light");
 module.exports = {
     name: "addtodeck",
     usage: "<deck name goes here> <index> <car name goes here>",
-    args: true,
+    args: 3,
     adminOnly: false,
     description: 'Adds (or replaces) a car to a specified slot in a specifed deck. (NOTE: Deck names cannot contain spaces, use underscores "_" instead)',
     async execute(message, args) {

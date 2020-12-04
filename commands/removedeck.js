@@ -10,10 +10,10 @@
 const Discord = require("discord.js-light");
 
 module.exports = {
-    name: 'removedeck',
+    name: "removedeck",
     aliases: ["deletedeck", "rmvdeck"],
     usage: "<deck name goes here>",
-    args: true,
+    args: 1,
     adminOnly: false,
     description: 'Deletes a deck of your choice. (NOTE: Deck names cannot contain spaces, use underscores "_" instead)',
     async execute(message, args) {

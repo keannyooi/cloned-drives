@@ -213,8 +213,8 @@ module.exports = {
 					case "Asphalt":
 						if (currentTrack["weather"] === "Rainy") {
 							score += (drivePlacement.indexOf(opponent.driveType) - drivePlacement.indexOf(player.driveType)) * 4;
-							score += (player.tcs - opponent.tcs) * 1;
-							score += (player.abs - opponent.abs) * 1;
+							score += (player.tcs - opponent.tcs) * 2.5;
+							score += (player.abs - opponent.abs) * 2.5;
 
 							tyreIndex = {
 								"Standard": 0,
@@ -229,8 +229,8 @@ module.exports = {
 					case "Dirt":
 						if (currentTrack["weather"] === "Rainy") {
 							score += (drivePlacement.indexOf(opponent.driveType) - drivePlacement.indexOf(player.driveType)) * 8.5;
-							score += (player.tcs - opponent.tcs) * 4;
-							score += (player.abs - opponent.abs) * 4;
+							score += (player.tcs - opponent.tcs) * 7.5;
+							score += (player.abs - opponent.abs) * 7.5;
 
 							tyreIndex = {
 								"Standard": 70,
@@ -243,8 +243,8 @@ module.exports = {
 						}
 						else {
 							score += (drivePlacement.indexOf(opponent.driveType) - drivePlacement.indexOf(player.driveType)) * 7;
-							score += (player.tcs - opponent.tcs) * 1;
-							score += (player.abs - opponent.abs) * 1;
+							score += (player.tcs - opponent.tcs) * 6;
+							score += (player.abs - opponent.abs) * 6;
 
 							tyreIndex = {
 								"Standard": 35,
@@ -259,8 +259,8 @@ module.exports = {
 					case "Gravel":
 						if (currentTrack["weather"] === "Rainy") {
 							score += (drivePlacement.indexOf(opponent.driveType) - drivePlacement.indexOf(player.driveType)) * 5.5;
-							score += (player.tcs - opponent.tcs) * 2;
-							score += (player.abs - opponent.abs) * 2;
+							score += (player.tcs - opponent.tcs) * 5;
+							score += (player.abs - opponent.abs) * 5;
 
 							tyreIndex = {
 								"Standard": 7.5,
@@ -286,8 +286,8 @@ module.exports = {
 						break;
 					case "Snow":
 						score += (drivePlacement.indexOf(opponent.driveType) - drivePlacement.indexOf(player.driveType)) * 12;
-						score += (player.tcs - opponent.tcs) * 4;
-						score += (player.abs - opponent.abs) * 4;
+						score += (player.tcs - opponent.tcs) * 10;
+						score += (player.abs - opponent.abs) * 10;
 
 						tyreIndex = {
 							"Standard": 75,
@@ -300,8 +300,8 @@ module.exports = {
 						break;
 					case "Ice":
 						score += (drivePlacement.indexOf(opponent.driveType) - drivePlacement.indexOf(player.driveType)) * 17;
-						score += (player.tcs - opponent.tcs) * 6;
-						score += (player.abs - opponent.abs) * 6;
+						score += (player.tcs - opponent.tcs) * 15;
+						score += (player.abs - opponent.abs) * 15;
 
 						tyreIndex = {
 							"Standard": 125,

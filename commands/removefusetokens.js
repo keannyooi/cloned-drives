@@ -13,7 +13,7 @@ module.exports = {
     name: "removefusetokens",
 	aliases: ["rmvfusetokens"],
     usage: "<username> <amount here>",
-    args: true,
+    args: 2,
     adminOnly: true,
     description: "Removes a certain amount of fuse tokens from someone.",
     async execute(message, args) {
@@ -29,21 +29,12 @@ module.exports = {
             }
         });
         const amount = args[1];
-        if (!amount) {
+        if (isNaN(amount) || amount < 1) {
             const errorMessage = new Discord.MessageEmbed()
                 .setColor("#fc0303")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle("Error, arguments provided insufficient.")
-                .setDescription("Correct syntax: `cd-removefusetokens <username> <amount here>`")
-                .setTimestamp();
-            return message.channel.send(errorMessage);
-        }
-        else if (isNaN(amount)) {
-            const errorMessage = new Discord.MessageEmbed()
-                .setColor("#fc0303")
-                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle("Error, fuse token amount provided is not a number.")
-                .setDescription("The amount of fuse tokens you want to remove should always be a number, i.e: `133`, `7`, etc.")
+                .setTitle("Error, fuse token amount provided is either not a number or smaller than 1.")
+                .setDescription("The amount of fuse tokens you want to remove should always be a positive number, i.e: `133`, `7`, etc.")
                 .setTimestamp();
             return message.channel.send(errorMessage);
         }

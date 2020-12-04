@@ -1,0 +1,17 @@
+{
+	"trackName": "City Streets Medium (Ice)",
+	"weather": "Sunny",
+	"surface": "Ice",
+	"speedbumps": 4,
+	"humps": 0,
+	"background": "https://cdn.discordapp.com/attachments/716917404868935691/783133997303332924/unknown.png",
+	
+	"specsDistr": {
+		"topSpeed": 0,
+		"0to60": 80,
+		"handling": 85,
+		"weight": 0,
+		"mra": 5,
+		"ola": 0
+	}
+}

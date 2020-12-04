@@ -15,7 +15,7 @@ module.exports = {
     name: "carinfo",
     aliases: ["cinfo"],
     usage: "<car name goes here>",
-    args: true,
+    args: 1,
     adminOnly: false,
     description: "Shows info about a specified car.",
     execute(message, args) {
@@ -104,25 +104,25 @@ module.exports = {
         function displayInfo(currentCar, currentMessage) {
             var rarity;
             if (currentCar["rq"] > 79) { //leggie
-                rarity = message.guild.emojis.cache.find(emoji => emoji.name === "legendary");
+                rarity = message.client.emojis.cache.get("726025494138454097");
             }
             else if (currentCar["rq"] > 64 && currentCar["rq"] <= 79) { //epic
-                rarity = message.guild.emojis.cache.find(emoji => emoji.name === "epic");
+                rarity = message.client.emojis.cache.get("726025468230238268");
             }
             else if (currentCar["rq"] > 49 && currentCar["rq"] <= 64) { //ultra
-                rarity = message.guild.emojis.cache.find(emoji => emoji.name === "ultrarare");
+                rarity = message.client.emojis.cache.get("726025431937187850");
             }
             else if (currentCar["rq"] > 39 && currentCar["rq"] <= 49) { //super
-                rarity = message.guild.emojis.cache.find(emoji => emoji.name === "superrare");
+                rarity = message.client.emojis.cache.get("726025394104434759");
             }
             else if (currentCar["rq"] > 29 && currentCar["rq"] <= 39) { //rare
-                rarity = message.guild.emojis.cache.find(emoji => emoji.name === "rare");
+                rarity = message.client.emojis.cache.get("726025302656024586");
             }
             else if (currentCar["rq"] > 19 && currentCar["rq"] <= 29) { //uncommon
-                rarity = message.guild.emojis.cache.find(emoji => emoji.name === "uncommon");
+                rarity = message.client.emojis.cache.get("726025273421725756");
             }
             else { //common
-                rarity = message.guild.emojis.cache.find(emoji => emoji.name === "common");
+                rarity = message.client.emojis.cache.get("726020544264273928");
             }
 
             var tags = "", description, mra, ola;

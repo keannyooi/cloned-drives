@@ -13,12 +13,12 @@ const { Database } = require("quickmongo");
 const { prefix, token } = require("./config.json");
 
 const client = new Discord.Client({
-    cacheGuilds: true,
-    cacheChannels: true,
-    cacheOverwrites: false,
-    cacheRoles: false,
-    cacheEmojis: true,
-    cachePresences: false,
+	cacheGuilds: true,
+	cacheChannels: true,
+	cacheOverwrites: false,
+	cacheRoles: false,
+	cacheEmojis: true,
+	cachePresences: false,
 	fetchAllMembers: true
 });
 
@@ -95,33 +95,22 @@ client.on("message", async message => {
 			.setTimestamp();
 		return message.channel.send(errorMessage);
 	}
-	if (command.args && !args.length) {
+	if (command.args > 0 && args.length < command.args) {
 		var usage = command.usage;
-		if (usage === "(no arguments required)") {
-			const errorMessage = new Discord.MessageEmbed()
-				.setColor("#fc0303")
-				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-				.setTitle("Error, no arguments provided.")
-				.setDescription(`Here's the correct syntax: \`${prefix}${command.name}\``)
-				.setTimestamp();
-			return message.channel.send(errorMessage);
-		}
-		else {
-			const errorMessage = new Discord.MessageEmbed()
-				.setColor("#fc0303")
-				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-				.setTitle("Error, no arguments provided.")
-				.setDescription(`Here's the correct syntax: \`${prefix}${command.name} ${usage}\``)
-				.setTimestamp();
-			return message.channel.send(errorMessage);
-		}
+		const errorMessage = new Discord.MessageEmbed()
+			.setColor("#fc0303")
+			.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+			.setTitle("Error, arguments provided insufficient or missing.")
+			.setDescription(`Here's the correct syntax: \`${prefix}${command.name} ${usage}\``)
+			.setTimestamp();
+		return message.channel.send(errorMessage);
 	}
 	else if (command.adminOnly && !message.member.roles.cache.has("711790752853655563")) { //admin role
 		const errorMessage = new Discord.MessageEmbed()
 			.setColor("#fc0303")
 			.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 			.setTitle("Error, it looks like you attempted using an Admin-only command.")
-			.setDescription("You must be and Admin to use this command!")
+			.setDescription("You must be an Admin to use this command!")
 			.setTimestamp();
 		return message.channel.send(errorMessage);
 	}

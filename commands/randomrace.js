@@ -16,15 +16,15 @@ module.exports = {
 	name: "randomrace",
 	aliases: ["rr"],
 	usage: "(no arguments required)",
-	args: false,
+	args: 0,
 	adminOnly: false,
-	cooldown: 20,
+	cooldown: 10,
 	description: "Does a random race where you are faced with a randomly generated opponent on a randomly generated track. May the RNG be with you.",
 	async execute(message) {
 		const db = message.client.db;
 		const moneyEmoji = message.guild.emojis.cache.find(emoji => emoji.name === "money");
 		const filter = (reaction, user) => {
-			return (reaction.emoji.name === "✅" || reaction.emoji.name === "❎") && user.id === message.author.id;
+			return (reaction.emoji.name === "✅" || reaction.emoji.name === "❎" || reaction.emoji.name === "⏩") && user.id === message.author.id;
 		};
 		const raceCommand = require("./sharedfiles/race.js");
 		const playerData = await db.get(`acc${message.author.id}`);
@@ -60,7 +60,7 @@ module.exports = {
 		const intermission = new Discord.MessageEmbed()
 			.setColor("#34aeeb")
 			.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-			.setTitle("Ready to Play? (React with ✅ to proceed or ❎ to cancel.)")
+			.setTitle("Ready to Play? (React with ✅ to proceed, ❎ to cancel or ⏩ to skip the race and have your progress reset.)")
 			.setDescription(`Trackset: ${track["trackName"]}`)
 			.addFields(
 				{ name: "Your Hand", value: playerList, inline: true },
@@ -72,6 +72,7 @@ module.exports = {
 		message.channel.send(intermission).then(reactionMessage => {
 			reactionMessage.react("✅");
 			reactionMessage.react("❎");
+			reactionMessage.react("⏩");
 			reactionMessage.awaitReactions(filter, {
 				max: 1,
 				time: 10000,
@@ -79,38 +80,54 @@ module.exports = {
 			})
 				.then(async collected => {
 					reactionMessage.reactions.removeAll();
-					if (collected.first().emoji.name === "✅") {
-						const result = await raceCommand.race(message, playerCar, opponentCar, track);
-						const delay = ms => new Promise(res => setTimeout(res, ms));
-						await delay(2000);
+					console.log(collected.first().emoji.name);
+					switch (collected.first().emoji.name) {
+						case "✅":
+							const result = await raceCommand.race(message, playerCar, opponentCar, track);
+							const delay = ms => new Promise(res => setTimeout(res, ms));
+							await delay(2000);
 
-						if (result > 0) {
-							const reward = (playerData.rrWinStreak + 1) * 500 + 1000;
-							console.log(reward);
-							playerData.unclaimedRewards.money += reward;
-							playerData.rrWinStreak++;
-							message.channel.send(`**You have earned ${moneyEmoji}${reward}! Claim your reward using \`cd-rewards\`.**`);
-							randomize();
-						}
-						else if (result === 0) {
-							randomize();
-						}
-						else {
+							if (result > 0) {
+								const reward = (playerData.rrWinStreak + 1) * 500 + 1000;
+								console.log(reward);
+								playerData.unclaimedRewards.money += reward;
+								playerData.rrWinStreak++;
+								message.channel.send(`**You have earned ${moneyEmoji}${reward}! Claim your reward using \`cd-rewards\`.**`);
+								randomize();
+							}
+							else if (result === 0) {
+								randomize();
+							}
+							else {
+								playerData.rrWinStreak = 0;
+								randomize();
+							}
+
+							await db.set(`acc${message.author.id}`, playerData);
+							return;
+						case "❎":
+							reactionMessage.reactions.removeAll();
+							const cancelMessage = new Discord.MessageEmbed()
+								.setColor("#34aeeb")
+								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+								.setTitle("Action cancelled.")
+								.setTimestamp();
+							return reactionMessage.edit(cancelMessage);
+						case "⏩":
+							console.log("hi");
 							playerData.rrWinStreak = 0;
 							randomize();
-						}
+							await db.set(`acc${message.author.id}`, playerData);
 
-						await db.set(`acc${message.author.id}`, playerData);
-						return;
-					}
-					else if (collected.first().emoji.name === "❎") {
-						reactionMessage.reactions.removeAll();
-						const cancelMessage = new Discord.MessageEmbed()
-							.setColor("#34aeeb")
-							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-							.setTitle("Action cancelled.")
-							.setTimestamp();
-						return reactionMessage.edit(cancelMessage);
+							const skipMessage = new Discord.MessageEmbed()
+								.setColor("#34aeeb")
+								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+								.setTitle("Successfully skipped race.")
+								.setDescription("Your win streak has been reset.")
+								.setTimestamp();
+							return reactionMessage.edit(skipMessage);
+						default:
+							break;
 					}
 				})
 				.catch(error => {
@@ -242,7 +259,7 @@ module.exports = {
 			if (carModule.topSpeed < 60) {
 				carModule.ola = 0;
 			}
-			
+
 			return carModule;
 		}
 
@@ -279,25 +296,25 @@ module.exports = {
 
 		function rarityCheck(currentCar) {
 			if (currentCar["rq"] > 79) { //leggie
-				return message.guild.emojis.cache.find(emoji => emoji.name === "legendary");
+				return message.client.emojis.cache.get("726025494138454097");
 			}
 			else if (currentCar["rq"] > 64 && currentCar["rq"] <= 79) { //epic
-				return message.guild.emojis.cache.find(emoji => emoji.name === "epic");
+				return message.client.emojis.cache.get("726025468230238268");
 			}
 			else if (currentCar["rq"] > 49 && currentCar["rq"] <= 64) { //ultra
-				return message.guild.emojis.cache.find(emoji => emoji.name === "ultrarare");
+				return message.client.emojis.cache.get("726025431937187850");
 			}
 			else if (currentCar["rq"] > 39 && currentCar["rq"] <= 49) { //super
-				return message.guild.emojis.cache.find(emoji => emoji.name === "superrare");
+				return message.client.emojis.cache.get("726025394104434759");
 			}
 			else if (currentCar["rq"] > 29 && currentCar["rq"] <= 39) { //rare
-				return message.guild.emojis.cache.find(emoji => emoji.name === "rare");
+				return message.client.emojis.cache.get("726025302656024586");
 			}
 			else if (currentCar["rq"] > 19 && currentCar["rq"] <= 29) { //uncommon
-				return message.guild.emojis.cache.find(emoji => emoji.name === "uncommon");
+				return message.client.emojis.cache.get("726025273421725756");
 			}
 			else { //common
-				return message.guild.emojis.cache.find(emoji => emoji.name === "common");
+				return message.client.emojis.cache.get("726020544264273928");
 			}
 		}
 	}

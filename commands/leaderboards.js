@@ -13,7 +13,7 @@ module.exports = {
     name: "leaderboards",
     aliases: ["lb", "leader", "leaderboard", "lead"],
     usage: "<criteria> (optional) <page number>",
-    args: true,
+    args: 1,
     adminOnly: false,
     description: "Shows the server's leaderboards.",
     async execute(message, args) {
@@ -32,7 +32,7 @@ module.exports = {
         switch (args[0].toLowerCase()) {
             case "money":
                 criteria = "Money";
-                emoji = message.guild.emojis.cache.find(emoji => emoji.name === "money");
+                emoji = message.client.emojis.cache.get("726017235826770021");
                 for (i = 0; i < all.length; i++) {
                     if (all[i].ID.startsWith("acc")) {
                         const id = all[i].ID.substring(3);
@@ -44,7 +44,7 @@ module.exports = {
                 break;
             case "fusetokens":
                 criteria = "Fuse Tokens";
-                emoji = message.guild.emojis.cache.find(emoji => emoji.name === "fuse");
+                emoji = message.client.emojis.cache.get("726018658635218955");
                 for (i = 0; i < all.length; i++) {
                     if (all[i].ID.startsWith("acc")) {
                         const id = all[i].ID.substring(3);
@@ -56,7 +56,7 @@ module.exports = {
                 break;
             case "trophies":
                 criteria = "Trophies";
-                emoji = message.guild.emojis.cache.find(emoji => emoji.name === "trophies");
+                emoji = message.client.emojis.cache.get("775636479145148418");
                 for (i = 0; i < all.length; i++) {
                     if (all[i].ID.startsWith("acc")) {
                         const id = all[i].ID.substring(3);

@@ -14,7 +14,7 @@ module.exports = {
     name: "statistics",
     aliases: ["stats"],
     usage: "(optional) <username>",
-    args: false,
+    args: 0,
     adminOnly: false,
     description: "Shows someone's stats.",
     async execute(message, args) {
@@ -57,9 +57,9 @@ module.exports = {
         
 		const userData = await db.get(`acc${user.id}`);
 		console.log(userData);
-        const moneyEmoji = message.guild.emojis.cache.find(emoji => emoji.name === "money");
-        const fuseEmoji = message.guild.emojis.cache.find(emoji => emoji.name === "fuse");
-        const trophyEmoji = message.guild.emojis.cache.find(emoji => emoji.name === "trophies");
+        const moneyEmoji = message.client.emojis.cache.get("726017235826770021");
+        const fuseEmoji = message.client.emojis.cache.get("726018658635218955");
+        const trophyEmoji = message.client.emojis.cache.get("775636479145148418");
 		const garage = userData.garage;
 
 		if (userData.money === null) {

@@ -1,0 +1,17 @@
+{
+	"trackName": "City Streets Small (Snowy)",
+	"weather": "Sunny",
+	"surface": "Snow",
+	"speedbumps": 2,
+	"humps": 0,
+	"background": "https://cdn.discordapp.com/attachments/716917404868935691/783133674350706688/unknown.png",
+	
+	"specsDistr": {
+		"topSpeed": 0,
+		"0to60": 65,
+		"handling": 60,
+		"weight": 0,
+		"mra": 10,
+		"ola": 0
+	}
+}

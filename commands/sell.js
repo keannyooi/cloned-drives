@@ -14,7 +14,7 @@ module.exports = {
     aliases: ["s"],
     usage: "<car name goes here>",
     description: "Sells a car from your garage.",
-    args: true,
+    args: 1,
     adminOnly: false,
     async execute(message, args) {
         const db = message.client.db;
@@ -22,7 +22,7 @@ module.exports = {
         const garage = playerData.garage;
 
         var index = 0;
-        const moneyEmoji = message.guild.emojis.cache.find(emoji => emoji.name === "money");
+        const moneyEmoji = message.client.emojis.cache.get("726017235826770021");
         const filter = response => {
             return response.author.id === message.author.id;
         };

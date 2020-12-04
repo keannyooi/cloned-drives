@@ -13,7 +13,7 @@ module.exports = {
     name: "reload",
     aliases: ["rl"],
     usage: "<command here>",
-    args: true,
+    args: 1,
     adminOnly: true,
     description: "Reloads a command.",
     execute(message, args) {

@@ -13,7 +13,7 @@ const { prefix } = require("../config.json");
 module.exports = {
     name: "help",
     usage: "<command name goes here>",
-    args: false,
+    args: 0,
     adminOnly: false,
     description: "...wait, what are you doing here?",
     execute(message, args) {

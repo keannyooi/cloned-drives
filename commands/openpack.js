@@ -14,8 +14,8 @@ const packFiles = fs.readdirSync("./commands/packs").filter(file => file.endsWit
 module.exports = {
     name: "openpack",
     usage: "<pack name goes here>",
-    args: true,
-    adminOnly: false,
+    args: 1,
+    adminOnly: true,
     description: "Opens a pack. (EXPERIMENTAL)",
     execute(message, args) {
 		const openPackCommand = require("./sharedfiles/openpack.js");
