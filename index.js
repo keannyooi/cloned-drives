@@ -56,8 +56,9 @@ client.once("ready", async () => {
 		const garage = await client.db.get(`acc${user.id}.garage`);
 		var i = 0;
 		while (i < garage.length) {
-			if (garage[i].carFile === "bmw m2 coupe (2016).json") {
-				garage[i].carFile = "bmw m2 (2016).json";
+			if (garage[i].carFile.includes("bmw,audi")) {
+				console.log("hi there jezza");
+				garage.splice(i, 1);
 			}
 			i++;
 		}

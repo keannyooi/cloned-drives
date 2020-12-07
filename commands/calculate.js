@@ -84,7 +84,7 @@ module.exports = {
                 answer = 105;
             }
             else {
-                answer = args[1] * 90;
+                answer = Math.round(args[1] * 90);
             }
         }
         else if (args[0] === 'mra' && !isNaN(args[1]) && !isNaN(args[2])) {
@@ -115,7 +115,7 @@ module.exports = {
             .setTitle(`Calculation successful! Result: ${answer}`)
             .setDescription("Wonder how the value is calculated? Here are the formulas.")
             .addFields(
-                { name: 'Calculating Handling', value: '`lateral g-force * 0.9 * 100`' },
+                { name: 'Calculating Handling', value: '`lateral g-force * 90`' },
                 { name: 'Calculating Mid-Ranged Acceleration (MRA)', value: '`100 * (0-60mph time / (0-100mph time - 0-60mph time))`' },
                 { name: 'Calculating Off-the-Line Acceleration (OLA)', value: '`100 * (0-30mph time / (0-60mph time / 2))`' },
             )

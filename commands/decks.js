@@ -17,13 +17,10 @@ module.exports = {
     adminOnly: false,
     description: "Shows your decks.",
     async execute(message, args) {
-		const db = message.client.db;
-		const playerData = await db.get(`acc${message.author.id}`);
-        const decks = playerData.decks;
-        const garage = playerData.garage;
+        const db = message.client.db;
+        const decks = await db.get(`acc${message.author.id}.decks`);
 
         if (!args[0]) {
-            const handList = new Array();
             if (decks.length === 0) {
                 const infoScreen = new Discord.MessageEmbed()
                     .setColor("#34aeeb")
@@ -34,7 +31,8 @@ module.exports = {
                 return message.channel.send(infoScreen);
             }
 
-			const infoScreen = new Discord.MessageEmbed()
+            const handList = new Array();
+            const infoScreen = new Discord.MessageEmbed()
                 .setColor("#34aeeb")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                 .setTitle("Your Decks")
@@ -60,77 +58,63 @@ module.exports = {
                     infoScreen.addField(`${i + 1} - ${decks[i].name}`, handList[i]);
                 }
             }
-			return message.channel.send(infoScreen);	
+            return message.channel.send(infoScreen);
         }
         else {
             const deckName = args[0];
-            const searchResults = [];
             const filter = response => {
                 return response.author.id === message.author.id;
             };
 
-            var counter = 0;
-            var searched = 0;
-            while (counter < decks.length) {
-                var currentName = decks[counter].name.toLowerCase();
-                if (currentName.includes(deckName)) {
-                    console.log("found!");
-                    console.log(currentName)
-                    searchResults[searched] = decks[counter];
-                    searched++;
+            const searchResults = decks.filter(function (deck) {
+                return deck.name === deckName;
+            });
+
+            if (searchResults.length > 1) {
+                var deckList = "";
+                for (i = 1; i <= searchResults.length; i++) {
+                    deckList += `${i} - ${searchResults[i - 1].name} \n`;
                 }
-                counter++;
-            }
 
-            if (searched > 0) {
-                var currentDeck = searchResults[0];
-                if (searched > 1) {
-                    var deckList = "";
-                    for (i = 1; i <= searchResults.length; i++) {
-                        deckList += `${i} - ${searchResults[i - 1].name} \n`;
-                    }
+                const infoScreen = new Discord.MessageEmbed()
+                    .setColor("#34aeeb")
+                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                    .setTitle("Multiple decks found, please type one of the following.")
+                    .setDescription(deckList)
+                    .setTimestamp();
 
-                    const infoScreen = new Discord.MessageEmbed()
-                        .setColor("#34aeeb")
-                        .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                        .setTitle("Multiple decks found, please type one of the following.")
-                        .setDescription(deckList)
-                        .setTimestamp();
-
-                    message.channel.send(infoScreen).then(currentMessage => {
-                        message.channel.awaitMessages(filter, {
-                            max: 1,
-                            time: 30000,
-                            errors: ['time']
-                        })
-                            .then(collected => {
-                                if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
-                                    const errorMessage = new Discord.MessageEmbed()
-                                        .setColor("#fc0303")
-                                        .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                                        .setTitle("Error, invalid integer provided.")
-                                        .setDescription("It looks like your response was either not a number or not part of the selection.")
-                                        .setTimestamp();
-                                    return currentMessage.edit(errorMessage);
-                                }
-                                else {
-                                    currentDeck = searchResults[parseInt(collected.first()) - 1];
-                                    display(currentDeck);
-                                }
-                            })
-                            .catch(() => {
-                                const cancelMessage = new Discord.MessageEmbed()
-                                    .setColor("#34aeeb")
+                message.channel.send(infoScreen).then(currentMessage => {
+                    message.channel.awaitMessages(filter, {
+                        max: 1,
+                        time: 30000,
+                        errors: ['time']
+                    })
+                        .then(collected => {
+                            if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
+                                const errorMessage = new Discord.MessageEmbed()
+                                    .setColor("#fc0303")
                                     .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                                    .setTitle("Action cancelled automatically.")
+                                    .setTitle("Error, invalid integer provided.")
+                                    .setDescription("It looks like your response was either not a number or not part of the selection.")
                                     .setTimestamp();
-                                return currentMessage.edit(cancelMessage);
-                            });
-                    });
-                }
-                else {
-                    display(currentDeck);
-                }
+                                return currentMessage.edit(errorMessage);
+                            }
+                            else {
+                                display(searchResults[parseInt(collected.first()) - 1]);
+                            }
+                        })
+                        .catch(() => {
+                            const cancelMessage = new Discord.MessageEmbed()
+                                .setColor("#34aeeb")
+                                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                                .setTitle("Action cancelled automatically.")
+                                .setTimestamp();
+                            return currentMessage.edit(cancelMessage);
+                        });
+                });
+            }
+            else if (searchResults.length > 0) {
+                display(searchResults[0]);
             }
             else {
                 const errorMessage = new Discord.MessageEmbed()
@@ -157,35 +141,12 @@ module.exports = {
                 for (i = 0; i < currentDeck.hand.length; i++) {
                     if (currentDeck.hand[i] !== "None") {
                         console.log(currentDeck.hand[i]);
-                        var racehud;
                         const car = require(`./cars/${currentDeck.hand[i].carFile}`);
+                        var racehud = await Canvas.loadImage(car[`racehud${currentDeck.hand[i].gearingUpgrade}${currentDeck.hand[i].engineUpgrade}${currentDeck.hand[i].chassisUpgrade}`]);
                         var rarity = rarityCheck(car);
-                        const upgrade = `${currentDeck.hand[i].gearingUpgrade}${currentDeck.hand[i].engineUpgrade}${currentDeck.hand[i].chassisUpgrade}`;
 
-                        switch (upgrade) {
-                            case "000":
-                                racehud = await Canvas.loadImage(car["racehudStock"]);
-                                break;
-                            case "333":
-                                racehud = await Canvas.loadImage(car["racehud1Star"]);
-                                break;
-                            case "666":
-                                racehud = await Canvas.loadImage(car["racehud2Star"]);
-                                break;
-                            case "996":
-                                racehud = await Canvas.loadImage(car["racehudMaxed996"]);
-                                break;
-                            case "969":
-                                racehud = await Canvas.loadImage(car["racehudMaxed969"]);
-                                break;
-                            case "699":
-                                racehud = await Canvas.loadImage(car["racehudMaxed699"]);
-                                break;
-                            default:
-                                break;
-                        }
                         ctx.drawImage(racehud, handPlacement[i].x, handPlacement[i].y, 334, 203);
-                        handList += `(${rarity} ${car["rq"]}) ` + car["make"] + " " + car["model"] + " (" + car["modelYear"] + ") [" + currentDeck.hand[i].gearingUpgrade + currentDeck.hand[i].engineUpgrade + currentDeck.hand[i].chassisUpgrade + "]\n";
+                        handList += `(${rarity} ${car["rq"]}) ${car["make"]} ${car["model"]} (${car["modelYear"]}) [${currentDeck.hand[i].gearingUpgrade}${currentDeck.hand[i].engineUpgrade}${currentDeck.hand[i].chassisUpgrade}]\n`;
                     }
                 }
 
@@ -206,7 +167,7 @@ module.exports = {
                     .setColor("#fc0303")
                     .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                     .setTitle("Error, failed to load in deck.")
-                    .setDescription("Something must have gone wrong. Please report this issure to the devs.")
+                    .setDescription(`Something must have gone wrong. Please report this issure to the devs. \n${error}`)
                     .setTimestamp()
                 wait.delete();
                 return message.channel.send(errorMessage);

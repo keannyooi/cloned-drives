@@ -1,0 +1,46 @@
+{
+    "rq": 52,
+    "make": "BMW",
+    "model": "328i",
+    "modelYear": 2012,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 5.4,
+    "handling": 79,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1505,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 58.70,
+    "ola": 66.67,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/785451867664023593/BMW328i.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/783410917492785183/328istock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/783410964896284753/328i1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/783410980515610644/328i2.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/783410985809346601/328iMaxed323.png",
+    "racehud699": "",
+
+    "333TopSpeed": 159,
+    "3330to60": 5.1,
+    "333Handling": 82,
+
+    "666TopSpeed": 163,
+    "6660to60": 4.8,
+    "666Handling": 85,
+
+    "969TopSpeed": 168,
+    "9690to60": 4.5,
+    "969Handling": 87
+}

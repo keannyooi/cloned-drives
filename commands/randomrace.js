@@ -18,7 +18,7 @@ module.exports = {
 	usage: "(no arguments required)",
 	args: 0,
 	adminOnly: false,
-	cooldown: 10,
+	cooldown: 15,
 	description: "Does a random race where you are faced with a randomly generated opponent on a randomly generated track. May the RNG be with you.",
 	async execute(message) {
 		const db = message.client.db;
@@ -52,7 +52,6 @@ module.exports = {
 		await db.set(`acc${message.author.id}`, playerData);
 
 		const track = require(`./tracksets/${trackset}`);
-
 		const playerCar = createCar(player);
 		const opponentCar = createCar(opponent);
 		const playerList = createList(player);
@@ -114,7 +113,6 @@ module.exports = {
 								.setTimestamp();
 							return reactionMessage.edit(cancelMessage);
 						case "⏩":
-							console.log("hi");
 							playerData.rrWinStreak = 0;
 							randomize();
 							await db.set(`acc${message.author.id}`, playerData);
@@ -145,80 +143,32 @@ module.exports = {
 		function createList(currentCar) {
 			const car = require(`./cars/${currentCar.carFile}`);
 			const rarity = rarityCheck(car);
-			var topSpeed;
 			var carSpecs = `(${rarity} ${car["rq"]}) ${car["make"]} ${car["model"]} (${car["modelYear"]}) [${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}]\n`;
 
-			switch (parseInt(currentCar.gearingUpgrade) + parseInt(currentCar.engineUpgrade) + parseInt(currentCar.chassisUpgrade)) {
-				case 0:
-					topSpeed = car["topSpeed"];
-					carSpecs += `Top Speed: ${car["topSpeed"]}MPH\n`;
-					carSpecs += `0-60MPH: ${car["0to60"]} sec\n`;
-					carSpecs += `Handling: ${car["handling"]}\n`;
-					break;
-				case 9:
-					topSpeed = car["1StarTopSpeed"];
-					carSpecs += `Top Speed: ${car["1StarTopSpeed"]}MPH\n`;
-					carSpecs += `0-60MPH: ${car["1Star0to60"]} sec\n`;
-					carSpecs += `Handling: ${car["1StarHandling"]}\n`;
-					break;
-				case 18:
-					topSpeed = car["2StarTopSpeed"];
-					carSpecs += `Top Speed: ${car["2StarTopSpeed"]}MPH\n`;
-					carSpecs += `0-60MPH: ${car["2Star0to60"]} sec\n`;
-					carSpecs += `Handling: ${car["2StarHandling"]}\n`;
-					break;
-				case 24:
-					topSpeed = car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}MaxedTopSpeed`];
-					carSpecs += `Top Speed: ${car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}MaxedTopSpeed`]}MPH\n`;
-					carSpecs += `0-60MPH: ${car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}Maxed0to60`]} sec\n`;
-					carSpecs += `Handling: ${car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}MaxedHandling`]}\n`;
-					break;
-				default:
-					break;
+			if (currentCar.gearingUpgrade > 0) {
+				carSpecs += `Top Speed: ${car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}TopSpeed`]}MPH\n`;
+				carSpecs += `0-60MPH: ${car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}0to60`]} sec\n`;
+				carSpecs += `Handling: ${car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}Handling`]}\n`;
+			}
+			else {
+				carSpecs += `Top Speed: ${car["topSpeed"]}MPH\n`;
+				carSpecs += `0-60MPH: ${car["0to60"]} sec\n`;
+				carSpecs += `Handling: ${car["handling"]}\n`;
 			}
 			carSpecs += `Drive Type: ${car["driveType"]}\n`;
 			carSpecs += `${car["tyreType"]} Tyres\n`;
 			carSpecs += `Weight: ${car["weight"]}kg\n`;
 			carSpecs += `Ground Clearance: ${car["gc"]}\n`;
 			carSpecs += `TCS: ${car["tcs"]}, ABS: ${car["abs"]}\n`;
-			if (topSpeed >= 100) {
-				carSpecs += `MRA: ${car["mra"]}\n`;
-			}
-			else {
-				carSpecs += "MRA: N/A\n";
-			}
-			if (topSpeed >= 60) {
-				carSpecs += `OLA: ${car["ola"]}\n`;
-			}
-			else {
-				carSpecs += "OLA: N/A\n";
-			}
+			carSpecs += `MRA: ${car["mra"]}\n`;
+			carSpecs += `OLA: ${car["ola"]}\n`;
 
 			return carSpecs;
 		}
 
-		function getRacehud(currentCar, upgrade) {
-			switch (upgrade) {
-				case "000":
-					return currentCar["racehudStock"];
-				case "333":
-					return currentCar["racehud1Star"];
-				case "666":
-					return currentCar["racehud2Star"];
-				case "996":
-					return currentCar["racehudMaxed996"];
-				case "969":
-					return currentCar["racehudMaxed969"];
-				case "699":
-					return currentCar["racehudMaxed699"];
-				default:
-					return;
-			}
-		}
-
 		function createCar(currentCar) {
 			const car = require(`./cars/${currentCar.carFile}`);
-			const carModule = {
+			var carModule = {
 				topSpeed: car["topSpeed"],
 				accel: car["0to60"],
 				handling: car["handling"],
@@ -230,28 +180,13 @@ module.exports = {
 				abs: car["abs"],
 				mra: car["mra"],
 				ola: car["ola"],
-				racehud: getRacehud(car, `${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}`)
+				racehud: car[`racehud${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}`]
 			};
 
-			switch (parseInt(currentCar.gearingUpgrade) + parseInt(currentCar.engineUpgrade) + parseInt(currentCar.chassisUpgrade)) {
-				case 0:
-					break;
-				case 9:
-					carModule.topSpeed = car["1StarTopSpeed"];
-					carModule.accel = car["1Star0to60"];
-					carModule.handling = car["1StarHandling"];
-					break;
-				case 18:
-					carModule.topSpeed = car["2StarTopSpeed"];
-					carModule.accel = car["2Star0to60"];
-					carModule.handling = car["2StarHandling"];
-					break;
-				case 24:
-					carModule.topSpeed = car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}MaxedTopSpeed`];
-					carModule.accel = car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}Maxed0to60`];
-					carModule.handling = car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}MaxedHandling`];
-				default:
-					break;
+			if (currentCar.gearingUpgrade > 0) {
+				carModule.topSpeed = car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}TopSpeed`];
+				carModule.accel = car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}0to60`];
+				carModule.handling = car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}Handling`];
 			}
 			if (carModule.topSpeed < 100) {
 				carModule.mra = 0;
@@ -259,7 +194,6 @@ module.exports = {
 			if (carModule.topSpeed < 60) {
 				carModule.ola = 0;
 			}
-
 			return carModule;
 		}
 
@@ -282,7 +216,7 @@ module.exports = {
 					const maxedTunes = [996, 969, 699];
 					const opponentCar = require(`./cars/${opponentCarFile}`);
 					var i = 0;
-					while (!opponentCar[`${maxedTunes[i]}MaxedTopSpeed`]) {
+					while (!opponentCar[`${maxedTunes[i]}TopSpeed`]) {
 						i = Math.floor(Math.random() * maxedTunes.length);
 					}
 					upgradePattern = Array.from(maxedTunes[i].toString(), (val) => Number(val));

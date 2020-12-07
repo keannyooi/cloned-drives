@@ -13,7 +13,7 @@ const carFiles = fs.readdirSync("./commands/cars").filter(file => file.endsWith(
 
 module.exports = {
     name: "addcar",
-    usage: "<username> <car name goes here>",
+    usage: "<username> | (optional) <amount> | <car name goes here>",
     args: 2,
     adminOnly: true,
     description: "Adds a car into your garage. (data transferring)",
@@ -56,8 +56,25 @@ module.exports = {
             return message.channel.send(errorMessage);
         }
 
-        var carName = args.slice(1, args.length);
-        carName = carName.map(i => i.toLowerCase());
+        var carName;
+        var amount = 1;
+        if (isNaN(args[1]) || !args[2]) {
+            carName = args.slice(1, args.length).map(i => i.toLowerCase());
+        }
+        else {
+            amount = args[1];
+            carName = args.slice(2, args.length).map(i => i.toLowerCase());
+        }
+
+        if (amount > 10) {
+            const errorScreen = new Discord.MessageEmbed()
+                .setColor("#fc0303")
+                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                .setTitle("Error, you may not add that many cars at once.")
+                .setDescription("The maximum amount of cars that you can add at once is limited to 10 in order to prevent something like this (https://discordapp.com/channels/711769157078876305/750304321832222811/781217938069782599).")
+                .setTimestamp();
+            return message.channel.send(errorScreen);
+        }
 
         const searchResults = carFiles.filter(function (carFile) {
             return carName.every(part => carFile.includes(part));
@@ -137,11 +154,15 @@ module.exports = {
             let currentCar = require(`./cars/${car}`);
             const currentName = `${currentCar["make"]} ${currentCar["model"]} (${currentCar["modelYear"]})`;
 
-            await db.push(`acc${user.id}.garage`, { carFile: `${currentName.toLowerCase()}.json`, gearingUpgrade: 0, engineUpgrade: 0, chassisUpgrade: 0 });
+            let i = 0;
+            while (i < amount) {
+                await db.push(`acc${user.id}.garage`, { carFile: `${currentName.toLowerCase()}.json`, gearingUpgrade: 0, engineUpgrade: 0, chassisUpgrade: 0 });
+                i++;
+            }
             const infoScreen = new Discord.MessageEmbed()
                 .setColor("#34aeeb")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle(`Successfully added 1 ${currentName} to ${member.displayName}'s garage.`)
+                .setTitle(`Successfully added ${amount} ${currentName} to ${member.displayName}'s garage.`)
                 .setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
                 .setImage(currentCar["card"])
                 .setTimestamp();

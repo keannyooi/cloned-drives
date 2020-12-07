@@ -9,7 +9,7 @@
 
 const Discord = require("discord.js-light");
 const fs = require("fs");
-const carFiles = fs.readdirSync("./commands/cars").filter(file => file.endsWith('.json'));
+var carFiles = fs.readdirSync("./commands/cars").filter(file => file.endsWith('.json'));
 
 module.exports = {
     name: "carlist",
@@ -46,12 +46,43 @@ module.exports = {
             return message.channel.send(errorScreen);
         }
 
-        const garage = await db.get(`acc${message.author.id}.garage`);
-        const totalPages = Math.ceil(carFiles.length / pageLimit);
+        const playerData = await db.get(`acc${message.author.id}`);
+        const garage = playerData.garage;
+        const totalCars = carFiles.length;
 
         const ownedCars = carFiles.filter(function (carFile) {
             return garage.some(part => carFile.includes(part.carFile));
         });
+
+        if (playerData.filter !== undefined) {
+            for (const [key, value] of Object.entries(playerData.filter)) {
+                switch (typeof value) {
+                    case "object":
+                        if (Array.isArray(value)) {
+                            carFiles = carFiles.filter(function (carFile) {
+                                let currentCar = require(`./cars/${carFile}`);
+                                return value.includes(currentCar[key].toLowerCase());
+                            });
+                        }
+                        else {
+                            carFiles = carFiles.filter(function (carFile) {
+                                let currentCar = require(`./cars/${carFile}`);
+                                return currentCar[key.replace("count", "Count").replace("y", "Y")] >= value.start && currentCar[key.replace("count", "Count").replace("y", "Y")] <= value.end;
+                            });
+                        }
+                        break;
+                    case "string":
+                        carFiles = carFiles.filter(function (carFile) {
+                            let currentCar = require(`./cars/${carFile}`);
+                            return currentCar[key.replace("type", "Type")].toLowerCase() === value;
+                        });
+                        break;
+                    default:
+                        break;
+                }
+            }
+        }
+        const totalPages = Math.ceil(carFiles.length / pageLimit);
 
         if (args[args.length - 2] === "-s") {
             switch (args[args.length - 1].toLowerCase()) {
@@ -127,7 +158,7 @@ module.exports = {
         const infoScreen = new Discord.MessageEmbed()
             .setColor("#34aeeb")
             .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-            .setTitle(`List of All Cars in Cloned Drives (${ownedCars.length}/${carFiles.length} Cars Owned)`)
+            .setTitle(`List of All Cars in Cloned Drives (${ownedCars.length}/${totalCars} Cars Owned)`)
             .setDescription(carList)
             .setFooter(`Page ${page} of ${totalPages} - React with ⬅️ or ➡️ to navigate through pages.`)
             .setTimestamp();
@@ -165,7 +196,7 @@ module.exports = {
                 const infoScreen = new Discord.MessageEmbed()
                     .setColor("#34aeeb")
                     .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                    .setTitle(`List of All Cars in Cloned Drives (${ownedCars.length}/${carFiles.length} Cars Owned)`)
+                    .setTitle(`List of All Cars in Cloned Drives (${ownedCars.length}/${totalCars} Cars Owned)`)
                     .setDescription(carList)
                     .setFooter(`Page ${page} of ${totalPages} - React with ⬅️ or ➡️ to navigate through pages.`)
                     .setTimestamp();

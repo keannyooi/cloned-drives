@@ -153,13 +153,9 @@ module.exports = {
                 ola = "N/A";
             }
 
-            const maxedTunes = [996, 969, 699];
-            var tunes = "";
-            for (i = 0; i < maxedTunes.length; i++) {
-                if (currentCar[`${maxedTunes[i]}MaxedTopSpeed`] && currentCar[`${maxedTunes[i]}Maxed0to60`] && currentCar[`${maxedTunes[i]}MaxedHandling`]) {
-                    tunes += `${maxedTunes[i]}, `;
-                }
-            }
+            const maxedTunes = [996, 969, 699].filter(function (tune) {
+                return currentCar[`${tune}TopSpeed`];
+            });
 
             var currentName = `${currentCar["make"]} ${currentCar["model"]} (${currentCar["modelYear"]})`;
             const infoScreen = new Discord.MessageEmbed()
@@ -177,14 +173,15 @@ module.exports = {
                     { name: "Ground Clearance", value: currentCar["gc"], inline: true },
                     { name: "Seat Count", value: currentCar["seatCount"], inline: true },
                     { name: "Body Style", value: currentCar["bodyStyle"], inline: true },
+                    { name: "Engine Position", value: currentCar["enginePos"], inline: true },
                     { name: "Fuel Type", value: currentCar["fuelType"], inline: true },
                     { name: "TCS Enabled?", value: currentCar["tcs"], inline: true },
                     { name: "ABS Enabled?", value: currentCar["abs"], inline: true },
                     { name: "Mid-Range Acceleration (MRA)", value: mra, inline: true },
-                    { name: "Off-the-Line Acceleration (OLA)", value: ola },
+                    { name: "Off-the-Line Acceleration (OLA)", value: ola, inline: true },
                     { name: "Tags", value: tags.slice(0, -2), inline: true },
                     { name: "Prize Car?", value: currentCar["isPrize"], inline: true },
-                    { name: "Available Maxed Tunes", value: tunes.slice(0, -2), inline: true },
+                    { name: "Available Maxed Tunes", value: maxedTunes.join(", "), inline: true },
                     { name: "Description", value: description },
                 )
                 .setImage(currentCar["card"])

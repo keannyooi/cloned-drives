@@ -86,7 +86,7 @@ module.exports = {
                                 }
                             }
                             garagePoints *= maxedCarAmount / garage.length;
-                            lb.push({ name: message.guild.members.cache.get(id).displayName, value: Math.round((garagePoints + Number.EPSILON) * 100) / 100 });
+                            lb.push({ name: message.guild.members.cache.get(id).displayName, value: Math.round(garagePoints) });
                         }
                     }
                 }

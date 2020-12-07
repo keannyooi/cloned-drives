@@ -1,0 +1,46 @@
+{
+    "rq": 74,
+    "make": "Porsche",
+    "model": "911 GT3",
+    "modelYear": 2006,
+    "country": "DE",
+    "topSpeed": 192,
+    "0to60": 4.1,
+    "handling": 90,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1394,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 79.30,
+    "ola": 87.80,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/785473809230200852/Porsche911GT3.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/783417841847762954/911GT3oldSt.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/783417859049127976/911GT3old1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/783417872809590814/911GT3old2.png",
+    "racehud996": "",
+    "racehud969": "",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/783417910999646208/911GT3old233.png",
+
+    "333TopSpeed": 195,
+    "3330to60": 3.9,
+    "333Handling": 93,
+
+    "666TopSpeed": 198,
+    "6660to60": 3.7,
+    "666Handling": 96,
+
+    "699TopSpeed": 198,
+    "6990to60": 3.5,
+    "699Handling": 100
+}

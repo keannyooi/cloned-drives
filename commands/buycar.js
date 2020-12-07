@@ -11,12 +11,13 @@ const Discord = require("discord.js-light");
 
 module.exports = {
     name: "buycar",
-    usage: "<car name goes here> or <catalog number> (optional) <amount>",
+    usage: " (optional) <amount> | <car name goes here> ",
     args: 1,
     adminOnly: false,
     description: "Buy a car from the dealership using this command!",
     async execute(message, args) {
         var carName;
+        var amount = 1;
         const db = message.client.db;
         const playerData = await db.get(`acc${message.author.id}`);
         const catalog = await db.get("dealershipCatalog");
@@ -26,27 +27,14 @@ module.exports = {
             return response.author.id === message.author.id;
         };
 
-        if (isNaN(args[0])) {
+        if (isNaN(args[0]) || !args[1]) {
             carName = args.map(i => i.toLowerCase());
         }
-        else if (args[0] > 0 && args[0] < 9) {
-            let currentCar = require(`./cars/${catalog[args[0] - 1].carFile}`);
-            carName = [currentCar["make"].toLowerCase(), currentCar["model"].toLowerCase(), currentCar["modelYear"]];
-        }
         else {
-            const errorScreen = new Discord.MessageEmbed()
-                .setColor("#fc0303")
-                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle("Error, catalog number requested invalid.")
-                .setDescription("The catalog number must be between 1 and 8.")
-                .setTimestamp();
-            return message.channel.send(errorScreen);
+            amount = args[0];
+            carName = args.slice(1, args.length).map(i => i.toLowerCase());
         }
 
-        var amount = 1;
-        if (args.length > 1 && !isNaN(args[args.length - 1])) {
-            amount = args[args.length - 1];
-        }
         if (amount > 10) {
             const errorScreen = new Discord.MessageEmbed()
                 .setColor("#fc0303")

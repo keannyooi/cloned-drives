@@ -136,7 +136,7 @@ module.exports = {
 			}
 
             var syntax = "";
-            if (command.usage === "(no arguments required)") {
+            if (command.args === 0) {
                 syntax = `\`${prefix}${command.name}\``;
             }
             else {

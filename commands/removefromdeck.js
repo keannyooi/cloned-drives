@@ -119,23 +119,8 @@ module.exports = {
             }
 
             const car = require(`./cars/${currentCar.carFile}`);
-            const upgrade = currentCar.gearingUpgrade + currentCar.engineUpgrade + currentCar.chassisUpgrade;
             const currentName = `${car["make"]} ${car["model"]} (${car["modelYear"]}) [${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}]`;
-            var racehud;
-            switch (upgrade) {
-                case 0:
-                    racehud = car["racehudStock"];
-                    break;
-                case 9:
-                case 18:
-                    racehud = car[`racehud${upgrade / 9}Star`];
-                    break;
-                case 24:
-                    racehud = car[`racehudMaxed${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}`];
-                    break;
-                default:
-                    break;
-            }
+            const racehud = car[`racehud${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}`];
 
             const confirmationMessage = new Discord.MessageEmbed()
                 .setColor("#34aeeb")
@@ -144,7 +129,6 @@ module.exports = {
                 .setDescription("React with ✅ to proceed or ❎ to cancel.")
                 .setImage(racehud)
                 .setTimestamp();
-
             var reactionMessage;
             if (currentMessage) {
                 reactionMessage = await currentMessage.edit(confirmationMessage);

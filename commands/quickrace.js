@@ -27,9 +27,6 @@ module.exports = {
         const filter = response => {
             return response.author.id === message.author.id;
         };
-        const emojiFilter = (reaction, user) => {
-            return (reaction.emoji.name === "✅" || reaction.emoji.name === "❎") && user.id === message.author.id;
-        };
         const raceCommand = require("./sharedfiles/race.js");
         const player = await db.get(`acc${message.author.id}.hand`);
         if (!player) {
@@ -48,7 +45,6 @@ module.exports = {
         }
 
         var trackset = args.map(i => i.toLowerCase());
-
         var searchResults = tracksets.filter(function (track) {
             return trackset.every(part => track.includes(part));
         });
@@ -131,6 +127,7 @@ module.exports = {
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                 .setTitle(`${currentTrack["trackName"]} has been chosen!`)
                 .setDescription("Choose a car to race with by typing out the name of the car.")
+                .setImage(currentTrack["background"])
                 .setTimestamp();
             var currentMessage2;
             if (currentMessage) {
@@ -300,55 +297,15 @@ module.exports = {
                     const intermission = new Discord.MessageEmbed()
                         .setColor("#34aeeb")
                         .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                        .setTitle("Ready to Play? (React with ✅ to proceed or ❎ to cancel.)")
+                        .setTitle("Ready to Play!")
                         .setDescription(`Selected Trackset: ${currentTrack["trackName"]}`)
                         .addFields(
                             { name: "Your Hand", value: playerList, inline: true },
                             { name: "Opponent's Hand", value: opponentList, inline: true }
                         )
                         .setTimestamp();
-
-                    currentMessage.edit(intermission).then(() => {
-                        currentMessage.react("✅");
-                        currentMessage.react("❎");
-                        currentMessage.awaitReactions(emojiFilter, {
-                            max: 1,
-                            time: 10000,
-                            errors: ["time"]
-                        })
-                            .then(collected => {
-                                currentMessage.reactions.removeAll();
-                                switch (collected.first().emoji.name) {
-                                    case "✅":
-                                        return raceCommand.race(message, playerCar, opponentCar, currentTrack);
-                                    case "❎":
-                                        const cancelMessage = new Discord.MessageEmbed()
-                                            .setColor("#34aeeb")
-                                            .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                                            .setTitle("Action cancelled.")
-                                            .setTimestamp();
-                                        return currentMessage.edit(cancelMessage);
-                                }
-                            })
-                            .catch(error => {
-                                console.error(error);
-                                currentMessage.reactions.removeAll();
-                                const cancelMessage = new Discord.MessageEmbed()
-                                    .setColor("#34aeeb")
-                                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                                    .setTitle("Action cancelled automatically.")
-                                    .setTimestamp();
-                                return currentMessage.edit(cancelMessage);
-                            });
-                    })
-                        .catch(() => {
-                            const cancelMessage = new Discord.MessageEmbed()
-                                .setColor("#34aeeb")
-                                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                                .setTitle("Action cancelled automatically.")
-                                .setTimestamp();
-                            return currentMessage.edit(cancelMessage);
-                        });
+                    currentMessage.edit(intermission);
+                    return raceCommand.race(message, playerCar, opponentCar, currentTrack);
                 });
 
             function createList(currentCar) {
@@ -356,25 +313,15 @@ module.exports = {
                 const rarity = rarityCheck(car);
                 var carSpecs = `(${rarity} ${car["rq"]}) ${car["make"]} ${car["model"]} (${car["modelYear"]}) [${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}]\n`;
 
-                switch (parseInt(currentCar.gearingUpgrade) + parseInt(currentCar.engineUpgrade) + parseInt(currentCar.chassisUpgrade)) {
-                    case 0:
-                        carSpecs += `Top Speed: ${car["topSpeed"]}MPH\n`;
-                        carSpecs += `0-60MPH: ${car["0to60"]} sec\n`;
-                        carSpecs += `Handling: ${car["handling"]}\n`;
-                        break;
-                    case 9:
-                    case 18:
-                        carSpecs += `Top Speed: ${car[`${currentCar.gearingUpgrade / 3}StarTopSpeed`]}MPH\n`;
-                        carSpecs += `0-60MPH: ${car[`${currentCar.gearingUpgrade / 3}Star0to60`]} sec\n`;
-                        carSpecs += `Handling: ${car[`${currentCar.gearingUpgrade / 3}StarHandling`]}\n`;
-                        break;
-                    case 24:
-                        carSpecs += `Top Speed: ${car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}MaxedTopSpeed`]}MPH\n`;
-                        carSpecs += `0-60MPH: ${car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}Maxed0to60`]} sec\n`;
-                        carSpecs += `Handling: ${car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}MaxedHandling`]}\n`;
-                        break;
-                    default:
-                        break;
+                if (currentCar.gearingUpgrade > 0) {
+                    carSpecs += `Top Speed: ${car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}TopSpeed`]}MPH\n`;
+                    carSpecs += `0-60MPH: ${car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}0to60`]} sec\n`;
+                    carSpecs += `Handling: ${car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}Handling`]}\n`;
+                }
+                else {
+                    carSpecs += `Top Speed: ${car["topSpeed"]}MPH\n`;
+                    carSpecs += `0-60MPH: ${car["0to60"]} sec\n`;
+                    carSpecs += `Handling: ${car["handling"]}\n`;
                 }
                 carSpecs += `Drive Type: ${car["driveType"]}\n`;
                 carSpecs += `${car["tyreType"]} Tyres\n`;
@@ -385,22 +332,6 @@ module.exports = {
                 carSpecs += `OLA: ${car["ola"]}\n`;
 
                 return carSpecs;
-            }
-
-            function getRacehud(currentCar, upgrade) {
-                switch (upgrade) {
-                    case "000":
-                        return currentCar["racehudStock"];
-                    case "333":
-                    case "666":
-                        return currentCar[`racehud${parseInt(upgrade) / 333}Star`];
-                    case "996":
-                    case "969":
-                    case "699":
-                        return currentCar[`racehudMaxed${upgrade}`];
-                    default:
-                        return;
-                }
             }
 
             function createCar(currentCar) {
@@ -417,22 +348,13 @@ module.exports = {
                     abs: car["abs"],
                     mra: car["mra"],
                     ola: car["ola"],
-                    racehud: getRacehud(car, `${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}`)
+                    racehud: car[`racehud${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}`]
                 };
 
-                switch (parseInt(currentCar.gearingUpgrade) + parseInt(currentCar.engineUpgrade) + parseInt(currentCar.chassisUpgrade)) {
-                    case 9:
-                    case 18:
-                        carModule.topSpeed = car[`${currentCar.gearingUpgrade / 3}StarTopSpeed`];
-                        carModule.accel = car[`${currentCar.gearingUpgrade / 3}Star0to60`];
-                        carModule.handling = car[`${currentCar.gearingUpgrade / 3}StarHandling`];
-                        break;
-                    case 24:
-                        carModule.topSpeed = car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}MaxedTopSpeed`];
-                        carModule.accel = car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}Maxed0to60`];
-                        carModule.handling = car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}MaxedHandling`];
-                    default:
-                        break;
+                if (currentCar.gearingUpgrade > 0) {
+                    carModule.topSpeed = car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}TopSpeed`];
+                    carModule.accel = car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}0to60`];
+                    carModule.handling = car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}Handling`];
                 }
                 if (carModule.topSpeed < 100) {
                     carModule.mra = 0;
@@ -440,7 +362,6 @@ module.exports = {
                 if (carModule.topSpeed < 60) {
                     carModule.ola = 0;
                 }
-
                 return carModule;
             }
 

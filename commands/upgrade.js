@@ -79,9 +79,8 @@ module.exports = {
 							return currentMessage.edit(errorMessage);
 						}
 						else {
-							let currentCar = searchResults[parseInt(collected.first()) - 1];
 							collected.first().delete();
-							upgradeCar(currentCar, currentMessage);
+							upgradeCar(searchResults[parseInt(collected.first()) - 1], currentMessage);
 						}
 					})
 					.catch(() => {
@@ -107,39 +106,33 @@ module.exports = {
 			return message.channel.send(errorMessage);
 		}
 
-		function error(currentCar, currentMessage) {
-			const maxedTunes = [996, 969, 699];
-			var tunes = "";
-			for (i = 0; i < maxedTunes.length; i++) {
-				console.log(maxedTunes[i]);
-				if (currentCar[`${maxedTunes[i]}MaxedTopSpeed`]) {
-					tunes += `${maxedTunes[i]}, `;
-				}
-			}
-
-			const errorScreen = new Discord.MessageEmbed()
-				.setColor("#fc0303")
-				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-				.setTitle("Error, it looks like you attempted tuning your car in an unavailable tune.")
-				.setDescription("Try asking the devs if you really want to tune the car like that.")
-				.addField("Your car's available tunes", tunes.slice(0, -2))
-				.setTimestamp();
-			if (currentMessage) {
-				return currentMessage.edit(errorScreen);
-			}
-			else {
-				return message.channel.send(errorScreen);
-			}
-		}
-
 		async function upgradeCar(currentCar, currentMessage) {
 			const car = require(`./cars/${currentCar.carFile}`);
 			const currentName = `${car["make"]} ${car["model"]} (${car["modelYear"]})`;
 			const moneyEmoji = message.client.emojis.cache.get("726017235826770021");
 			const fuseEmoji = message.client.emojis.cache.get("726018658635218955");
-			var racehud;
+			const racehud = car[`racehud${upgrade[0]}${upgrade[1]}${upgrade[2]}`];
 			var moneyLimit = 0;
 			var fuseTokenLimit = 0;
+
+			if (!car[`${upgrade[0]}${upgrade[1]}${upgrade[2]}TopSpeed`]) {
+				const maxedTunes = [996, 969, 699].filter(function (tune) {
+					return car[`${tune}TopSpeed`];
+				});
+
+				const errorScreen = new Discord.MessageEmbed()
+					.setColor("#fc0303")
+					.setTitle("Error, the tuning stage you requested is unavailable.")
+					.setDescription("In order to make the tuning system less complex, the tuning stages are limited to `333`, `666`, `996`, `969` and `699`.")
+					.addField("Your car's available maxed tunes", maxedTunes.join(", "))
+					.setTimestamp();
+				if (currentMessage) {
+					return currentMessage.edit(errorScreen);
+				}
+				else {
+					return message.channel.send(errorScreen);
+				}
+			}
 
 			const upgradeIndex = parseInt(upgrade[0]) + parseInt(upgrade[1]) + parseInt(upgrade[2]);
 			const origUpgrade = currentCar.gearingUpgrade + currentCar.engineUpgrade + currentCar.chassisUpgrade;
@@ -167,35 +160,6 @@ module.exports = {
 			}
 
 			definePrice(car["rq"], upgradeIndex, origUpgrade);
-
-			switch (`${upgrade[0]}${upgrade[1]}${upgrade[2]}`) {
-				case "333":
-				case "666":
-					racehud = car[`racehud${upgrade[0] / 3}Star`];
-					break;
-				case "996":
-				case "969":
-				case "699":
-					if (car[`${upgrade[0]}${upgrade[1]}${upgrade[2]}MaxedTopSpeed`]) {
-						racehud = car[`racehudMaxed${upgrade[0]}${upgrade[1]}${upgrade[2]}`];
-					}
-					else {
-						error(currentCar, currentMessage);
-					}
-					break;
-				default:
-					const errorScreen = new Discord.MessageEmbed()
-						.setColor("#fc0303")
-						.setTitle("Error, the tuning stage you requested is not supported.")
-						.setDescription("In order to make the tuning system less complex, the tuning stages are limited to `333`, `666`, `996`, `969` and `699`.")
-						.setTimestamp();
-					if (currentMessage) {
-						return currentMessage.edit(errorScreen);
-					}
-					else {
-						return message.channel.send(errorScreen);
-					}
-			}
 
 			if (playerData.money >= moneyLimit && playerData.fuseTokens >= fuseTokenLimit) {
 				playerData.money -= moneyLimit;

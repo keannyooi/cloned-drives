@@ -31,7 +31,6 @@ module.exports = {
 		var user, member;
 		if (args.length) {
 			var userName = args[0].toLowerCase();
-
 			message.guild.members.cache.forEach(User => {
 				if (message.guild.member(User).displayName.toLowerCase().includes(userName)) {
 					console.log("found!");
@@ -77,14 +76,14 @@ module.exports = {
 			}
 
 			if (carList.length > 2048) {
-                const errorMessage = new Discord.MessageEmbed()
-                    .setColor("#fc0303")
-                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                    .setTitle("Error, too many search results.")
-                    .setDescription("Due to Discord's embed limitations, the bot isn't able to show the full list of search results. Try again with a more specific keyword.")
-                    .setTimestamp();
-                return message.channel.send(errorMessage);
-            }
+				const errorMessage = new Discord.MessageEmbed()
+					.setColor("#fc0303")
+					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+					.setTitle("Error, too many search results.")
+					.setDescription("Due to Discord's embed limitations, the bot isn't able to show the full list of search results. Try again with a more specific keyword.")
+					.setTimestamp();
+				return message.channel.send(errorMessage);
+			}
 
 			const infoScreen = new Discord.MessageEmbed()
 				.setColor("#34aeeb")
@@ -138,32 +137,19 @@ module.exports = {
 			currentCar.engineUpgrade = parseInt(upgrade[1]);
 			currentCar.chassisUpgrade = parseInt(upgrade[2]);
 
-			var racehud;
-			switch (`${upgrade[0]}${upgrade[1]}${upgrade[2]}`) {
-				case "000":
-					racehud = car["racehudStock"];
-					break;
-				case "333":
-				case "666":
-					racehud = car[`racehud${upgrade[0] / 3}Star`];
-					break;
-				case "996":
-				case "969":
-				case "699":
-					racehud = car[`racehudMaxed${upgrade[0]}${upgrade[1]}${upgrade[2]}`];
-					break;
-				default:
-					const errorScreen = new Discord.MessageEmbed()
-						.setColor("#fc0303")
-						.setTitle("Error, the tuning stage you requested is not supported.")
-						.setDescription("In order to make the tuning system less complex, the tuning stages are limited to `stock`, `333`, `666`, `996`, `969` and `699`.")
-						.setTimestamp();
-					if (currentMessage) {
-						return currentMessage.edit(errorScreen);
-					}
-					else {
-						return message.channel.send(errorScreen);
-					}
+			var racehud = car[`racehud${upgrade[0]}${upgrade[1]}${upgrade[2]}`];;
+			if (!racehud) {
+				const errorScreen = new Discord.MessageEmbed()
+					.setColor("#fc0303")
+					.setTitle("Error, the tuning stage you requested is not supported.")
+					.setDescription("In order to make the tuning system less complex, the tuning stages are limited to `stock`, `333`, `666`, `996`, `969` and `699`.")
+					.setTimestamp();
+				if (currentMessage) {
+					return currentMessage.edit(errorScreen);
+				}
+				else {
+					return message.channel.send(errorScreen);
+				}
 			}
 
 			if (playerData.hand) {

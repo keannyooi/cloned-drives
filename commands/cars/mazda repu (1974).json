@@ -1,0 +1,46 @@
+{
+    "rq": 19,
+    "make": "Mazda",
+    "model": "REPU",
+    "modelYear": 1974,
+    "country": "JP",
+    "topSpeed": 103,
+    "0to60": 11.0,
+    "handling": 61,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1286,
+    "gc": "High",
+    "seatCount": 2,
+    "bodyStyle": "Pickup",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 32.93,
+    "ola": 70.91,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/783287593613656074/MazdaREPU.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/783287704825626644/REPUStock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/783287732708835359/REPU1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/783287783703445504/REPU2.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/783287809749811200/REPUMaxed323.png",
+    "racehud699": "",
+
+    "333TopSpeed": 106,
+    "3330to60": 10.0,
+    "333Handling": 63,
+
+    "666TopSpeed": 110,
+    "6660to60": 9.3,
+    "666Handling": 66,
+
+    "969TopSpeed": 113,
+    "9690to60": 8.6,
+    "969Handling": 68
+}

@@ -75,6 +75,37 @@ module.exports = {
             }
         }
 
+        var garage = await db.get(`acc${user.id}.garage`);
+        const carFilter = await db.get(`acc${message.author.id}.filter`);
+        if (carFilter !== null) {
+            for (const [key, value] of Object.entries(carFilter)) {
+                switch (typeof value) {
+                    case "object":
+                        if (Array.isArray(value)) {
+                            garage = garage.filter(function (garageCar) {
+                                let currentCar = require(`./cars/${garageCar.carFile}`);
+                                return value.includes(currentCar[key].toLowerCase());
+                            });
+                        }
+                        else {
+                            garage = garage.filter(function (garageCar) {
+                                let currentCar = require(`./cars/${garageCar.carFile}`);
+                                return currentCar[key.replace("count", "Count").replace("y", "Y")] >= value.start && currentCar[key.replace("count", "Count").replace("y", "Y")] <= value.end;
+                            });
+                        }
+                        break;
+                    case "string":
+                        garage = garage.filter(function (garageCar) {
+                            let currentCar = require(`./cars/${garageCar.carFile}`);
+                            return currentCar[key.replace("type", "Type")].toLowerCase() === value;
+                        });
+                        break;
+                    default:
+                        break;
+                }
+            }
+        }
+
         if (args[args.length - 2] === "-s") {
             switch (args[args.length - 1].toLowerCase()) {
                 case "rq":
@@ -107,9 +138,7 @@ module.exports = {
             }
         }
 
-        const garage = await db.get(`acc${user.id}.garage`);
         const totalPages = Math.ceil(garage.length / pageLimit);
-
         garage.sort(function (a, b) {
             const carA = require(`./cars/${a.carFile}`);
             const carB = require(`./cars/${b.carFile}`);

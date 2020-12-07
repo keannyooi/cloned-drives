@@ -13,51 +13,49 @@ const carFiles = fs.readdirSync("./commands/cars").filter(file => file.endsWith(
 
 module.exports = {
 	name: "filter",
-	usage: "<criteria> <idk>",
+	usage: "<criteria>",
 	args: 1,
-	adminOnly: true,
+	adminOnly: false,
 	description: "Sets up a filter for car lists. (WIP)",
 	async execute(message, args) {
 		const db = message.client.db;
 		const criteria = args[0].toLowerCase();
-		var filter = await db.get(`acc${message.author.id}.filter`);
-		if (!filter && criteria !== ("remove" || "disable")) {
-			filter = {
-				make: [],
-				startYear: 1800,
-				endYear: 2030,
-				country: [],
-				drivetype: "None",
-				tyretype: "None",
-				gc: "None",
-				bodytype: "None",
-				seatcount: 0,
-				fueltype: "None",
-				tags: []
-			};
-		}
+		var filter = await db.get(`acc${message.author.id}.filter`) || {};
 		var infoScreen, searchResults;
+
+		console.log(filter);
+
+		if (!args[1] && criteria !== "view") {
+			const errorMessage = new Discord.MessageEmbed()
+				.setColor("#fc0303")
+				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+				.setTitle("Error, arguments provided insufficient.")
+				.setDescription("Please specify the filter criteria that you want to add.")
+				.setTimestamp();
+			return message.channel.send(errorMessage);
+		}
 
 		switch (criteria) {
 			case "make":
 			case "country":
-				if (!args[1]) {
-					const errorMessage = new Discord.MessageEmbed()
-						.setColor("#fc0303")
-						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-						.setTitle("Error, arguments provided insufficient.")
-						.setDescription(`Please specify the ${criteria} that you want to add.`)
-						.setTimestamp();
-					return message.channel.send(errorMessage);
-				}
-				let argument = args.slice(1, args.length);
-				argument = argument.toString().toLowerCase().replace(",", " ");
+			case "tags":
+				let argument = args.slice(1, args.length).join(", ").toLowerCase();
 				searchResults = carFiles.filter(function (carFile) {
 					let currentCar = require(`./cars/${carFile}`);
-					return currentCar[criteria].toLowerCase() === make;
+					if (Array.isArray(currentCar[criteria])) {
+						return currentCar[criteria].some(tag => tag === argument);
+					}
+					else {
+						return currentCar[criteria].toLowerCase() === argument;
+					}
 				});
-				if (searchResults.length > 0 && !filter[criteria].some(criteria => criteria === argument)) {
-					filter[criteria].push(argument);
+				if (searchResults.length > 0) {
+					if (!filter[criteria]) {
+						filter[criteria] = [argument];
+					}
+					else if (filter[criteria] && !filter[criteria].some(criteria => criteria === argument)) {
+						filter[criteria].push(argument);
+					}
 				}
 				else {
 					const errorMessage = new Discord.MessageEmbed()
@@ -66,9 +64,6 @@ module.exports = {
 						.setTitle("Error, argument provided either does not exist in the game or is already part of the filter criteria.")
 						.setDescription("Make sure the manufacturer name you provided is as of in the game.")
 						.setTimestamp();
-					if (filter[criteria].length > 0) {
-						errorMessage.addField("Current Manufacturer List", filter[criteria].toString());
-					}
 					return message.channel.send(errorMessage);
 				}
 
@@ -76,74 +71,59 @@ module.exports = {
 					.setColor("#03fc24")
 					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 					.setTitle(`Successfully added \`${criteria}\` criterias!`)
-					.addField("Current List", filter[criteria].toString())
+					.addField("Current List", filter[criteria].join(", "))
 					.setTimestamp();
 				break;
-			case "year":
-				if (!args[1]) {
-					const errorMessage = new Discord.MessageEmbed()
-						.setColor("#fc0303")
-						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-						.setTitle("Error, arguments provided insufficient.")
-						.setDescription("Please specify the model year range")
-						.setTimestamp();
-					return message.channel.send(errorMessage);
-				}
-				const startYear = args[1];
-				var endYear = 2030;
-				if (!isNaN(args[2])) {
-					endYear = args[2];
+			case "modelyear":
+			case "seatcount":
+				const start = parseInt(args[1]);
+				var end;
+				if (criteria === "modelyear") end = 2030;
+				else end = 9;
+				if (args[2] && !isNaN(args[2])) {
+					end = parseInt(args[2]);
 				}
 
-				if (isNaN(startYear)) {
+				if (isNaN(start)) {
 					const errorMessage = new Discord.MessageEmbed()
 						.setColor("#fc0303")
 						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-						.setTitle("Error, model year criterias is not a number.")
-						.setDescription("Model year criterias must be a number, i.e: `1969`, `2001`, etc.")
+						.setTitle("Error, criteria provided is not a number.")
+						.setDescription(`\`${criteria.replace("c", "C")}\` criterias must be a number, i.e: \`1969\`, \`2001\`, etc.`)
 						.setTimestamp();
 					return message.channel.send(errorMessage);
 				}
-				else if (endYear > startYear) {
+				else if (end < start) {
 					const errorMessage = new Discord.MessageEmbed()
 						.setColor("#fc0303")
 						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-						.setTitle("Error, unable to time travel.")
-						.setDescription("Check if you got the order right: Starting year first, ending year later.")
+						.setTitle("Error, order is wrong.")
+						.setDescription("Check if you got the order right: Smaller number first, bigger number later.")
 						.setTimestamp();
 					return message.channel.send(errorMessage);
 				}
-				filter.startYear = startYear;
-				filter.endYear = endYear;
+				filter[criteria] = { start: start, end: end };
 
 				infoScreen = new Discord.MessageEmbed()
 					.setColor("#03fc24")
 					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-					.setTitle("Successfully changed model year criterias!")
+					.setTitle(`Successfully changed ${criteria.replace("c", "C")} criterias!`)
 					.addFields(
-						{ name: "Starting Year", value: startYear, inline: true },
-						{ name: "Ending Year", value: endYear, inline: true }
+						{ name: "Start", value: start, inline: true },
+						{ name: "End", value: end, inline: true }
 					)
 					.setTimestamp();
 				break;
 			case "drivetype":
 			case "tyretype":
 			case "bodytype":
+			case "enginepos":
 			case "fueltype":
 			case "gc":
-				if (!args[1]) {
-					const errorMessage = new Discord.MessageEmbed()
-						.setColor("#fc0303")
-						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-						.setTitle("Error, arguments provided insufficient.")
-						.setDescription(`Please specify the \`${criteria}\` criteria that you want to add.`)
-						.setTimestamp();
-					return message.channel.send(errorMessage);
-				}
-				let arg = args[1].toString().toLowerCase().replace(",", " ").replace("type", "Type");
+				let arg = args.slice(1, args.length).join(", ").toLowerCase();
 				searchResults = carFiles.filter(function (carFile) {
 					let currentCar = require(`./cars/${carFile}`);
-					return currentCar[criteria].toLowerCase() === arg;
+					return currentCar[criteria.replace("type", "Type").replace("pos", "Pos")].toLowerCase() === arg;
 				});
 				if (searchResults.length > 0) {
 					filter[criteria] = arg;
@@ -154,7 +134,6 @@ module.exports = {
 						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 						.setTitle("Error, argument provided either does not exist in the game or is already part of the filter criteria.")
 						.setDescription("Make sure the manufacturer name you provided is as of in the game.")
-						.addField("Current Criteria", filter[criteria])
 						.setTimestamp();
 					return message.channel.send(errorMessage);
 				}
@@ -166,84 +145,8 @@ module.exports = {
 					.addField("Current Criteria", filter[criteria])
 					.setTimestamp();
 				break;
-			case "seatcount":
-				if (!args[1]) {
-					const errorMessage = new Discord.MessageEmbed()
-						.setColor("#fc0303")
-						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-						.setTitle("Error, arguments provided insufficient.")
-						.setDescription("Please specify the seat count.")
-						.setTimestamp();
-					return message.channel.send(errorMessage);
-				}
-				else if (isNaN(args[1]) || parseInt(args[1]) < 1 || parseInt(args[1]) > 9) {
-					const errorMessage = new Discord.MessageEmbed()
-						.setColor("#fc0303")
-						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-						.setTitle("Error, seat count provided is either not a number or outside the boundary.")
-						.setDescription("Seat count filters range between 1 and 9.")
-						.setTimestamp();
-					return message.channel.send(errorMessage);
-				}
-
-				filter.seatcount = parseInt(args[1]);
-				infoScreen = new Discord.MessageEmbed()
-					.setColor("#03fc24")
-					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-					.setTitle("Successfully changed the seat count criteria!")
-					.setDescription(`Current seat count filter: \`${filter.seatcount}\``)
-					.setTimestamp();
-				break;
-			case "tags":
-				if (!args[1]) {
-					const errorMessage = new Discord.MessageEmbed()
-						.setColor("#fc0303")
-						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-						.setTitle("Error, arguments provided insufficient.")
-						.setDescription("Please specify the tags that you want to add.")
-						.setTimestamp();
-					return message.channel.send(errorMessage);
-				}
-				let tag = args.slice(1, args.length);
-				tag = tag.toString().toLowerCase().replace(",", " ");
-				searchResults = carFiles.filter(function (carFile) {
-					let currentCar = require(`./cars/${carFile}`);
-					return currentCar["tags"].some(t => t === tag);
-				});
-				if (searchResults.length > 0 && !filter.tags.some(criteria => criteria === tag)) {
-					filter.tags.push(tag);
-				}
-				else {
-					const errorMessage = new Discord.MessageEmbed()
-						.setColor("#fc0303")
-						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-						.setTitle("Error, tag provided either does not exist in the game or is already part of the filter criteria.")
-						.setTimestamp();
-					if (filter.tags.length > 0) {
-						errorMessage.addField("Current Tag List", filter.tags.toString());
-					}
-					return message.channel.send(errorMessage);
-				}
-
-				infoScreen = new Discord.MessageEmbed()
-					.setColor("#03fc24")
-					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-					.setTitle("Successfully added tag criterias!")
-					.addField("Current Tag List", filter.tags.toString())
-					.setTimestamp();
-				break;
 			case "disable":
 			case "remove":
-				if (!args[1]) {
-					const errorMessage = new Discord.MessageEmbed()
-						.setColor("#fc0303")
-						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-						.setTitle("Error, arguments provided insufficient.")
-						.setDescription("Please specify the criteria that you want to remove.")
-						.setTimestamp();
-					return message.channel.send(errorMessage);
-				}
-
 				switch (args[1].toLowerCase()) {
 					case "all":
 						await db.delete(`acc${message.author.id}.filter`);
@@ -255,22 +158,37 @@ module.exports = {
 						return message.channel.send(infoScreen);
 					case "make":
 					case "country":
+					case "tags":
+						if (!args[2]) {
+							const errorMessage = new Discord.MessageEmbed()
+								.setColor("#fc0303")
+								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+								.setTitle("Error, filter not provided.")
+								.setDescription("Please provide one. Just please.")
+								.setTimestamp();
+							return message.channel.send(errorMessage);
+						}
 						if (args[2].toLowerCase() === "all") {
-							filter[criteria] = [];
+							delete filter[args[1].toLowerCase()];
 							infoScreen = new Discord.MessageEmbed()
 								.setColor("#03fc24")
 								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 								.setTitle(`Successfully removed all filters in the ${args[1].toLowerCase()} category!`)
 								.setTimestamp();
 						}
-						else if (filter[criteria].some(criteria => criteria === args[2].toLowerCase())) {
-							filter[criteria].splice(filter[criteria].indexOf(args[2].toLowerCase()), 1);
+						else if (filter[args[1].toLowerCase()].some(criteria => criteria === args[2].toLowerCase())) {
+							filter[args[1].toLowerCase()].splice(filter[args[1].toLowerCase()].indexOf(args[2].toLowerCase()), 1);
 							infoScreen = new Discord.MessageEmbed()
 								.setColor("#03fc24")
 								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 								.setTitle(`Successfully updated \`${args[1].toLowerCase()}\` criterias!`)
-								.addField("Current List", filter.country.toString())
 								.setTimestamp();
+							if (filter[args[1].toLowerCase()].length === 0) {
+								delete filter[args[1].toLowerCase()];
+							}
+							else {
+								infoScreen.addField("Current List", filter[args[1].toLowerCase()].toString())
+							}
 						}
 						else {
 							const errorMessage = new Discord.MessageEmbed()
@@ -282,33 +200,19 @@ module.exports = {
 							return message.channel.send(errorMessage);
 						}
 						break;
-					case "year":
-						filter.startYear = 1800;
-						filter.endYear = 2030;
-						infoScreen = new Discord.MessageEmbed()
-							.setColor("#03fc24")
-							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-							.setTitle("Successfully reset model year filters!")
-							.setTimestamp();
-						break;
+					case "modelyear":
+					case "seatcount":
+					case "enginepos":
 					case "drivetype":
 					case "tyretype":
 					case "bodytype":
 					case "fueltype":
 					case "gc":
-						filter[criteria] = "None";
+						delete filter[args[1].toLowerCase()];
 						infoScreen = new Discord.MessageEmbed()
 							.setColor("#03fc24")
 							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-							.setTitle(`Successfully reset \`${criteria}\` year filters!`)
-							.setTimestamp();
-						break;
-					case "seatcount":
-						filter.seatCount = 0;
-						infoScreen = new Discord.MessageEmbed()
-							.setColor("#03fc24")
-							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-							.setTitle("Successfully reset the seat count filter!")
+							.setTitle(`Successfully reset \`${args[1].toLowerCase()}\` filters!`)
 							.setTimestamp();
 						break;
 					default:
@@ -325,43 +229,41 @@ module.exports = {
 									\`gc\` - Filter by ground clearance.
 									\`bodytype\` - Filter by body type.  
 									\`seatcount\` - Filter by seat count.
+									\`enginepos\` - Filter by engine position.
 									\`fueltype\` - Filter by fuel type.
 									\`tag\` - Filter by tag.`)
 							.setTimestamp();
 						return message.channel.send(errorScreen);
 				}
-				await db.set(`acc${message.author.id}.filter`, filter);
 				break;
 			case "view":
-				let make = filter.make.toString().replace(",", ", ");
-				let country = filter.country.toString().replace(",", ", ");
-				let tags = filter.tags.toString().replace(",", ", ");
-				if (make === "") {
-					make = "None";
-				}
-				if (country === "") {
-					country = "None";
-				}
-				if (tags === "") {
-					tags = "None";
-				}
 				infoScreen = new Discord.MessageEmbed()
 					.setColor("#03fc24")
 					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 					.setTitle("Current Filter")
-					.addFields(
-						{ name: "Makes/Manufacturers", value: make, inline: true },
-						{ name: "Model Year Range", value: `${filter.startYear} ~ ${filter.endYear}`, inline: true },
-						{ name: "Countries", value: country, inline: true },
-						{ name: "Drive Type", value: `${filter.drivetype}`, inline: true },
-						{ name: "Tyre Type", value: `${filter.tyretype}`, inline: true },
-						{ name: "Ground Clearance", value: `${filter.gc}`, inline: true },
-						{ name: "Body Type", value: `${filter.bodytype}`, inline: true },
-						{ name: "Seat Count", value: filter.seatcount, inline: true },
-						{ name: "Fuel Type", value: `${filter.fueltype}`, inline: true },
-						{ name: "Tags", value: tags, inline: false },
-					)
 					.setTimestamp();
+				if (!filter || filter === {}) {
+					infoScreen.setDescription("There are currently no activated filters.");
+				}
+				else {
+					for (const [key, value] of Object.entries(filter)) {
+						switch (typeof value) {
+							case "object":
+								if (Array.isArray(value)) {
+									infoScreen.addField(key, value.join(", "), true);
+								}
+								else {
+									infoScreen.addField(key, `${value.start} ~ ${value.end}`, true);
+								}
+								break;
+							case "string":
+								infoScreen.addField(key, value, true);
+								break;
+							default:
+								break;
+						}
+					}
+				}
 				break;
 			default:
 				const errorScreen = new Discord.MessageEmbed()
@@ -370,20 +272,26 @@ module.exports = {
 					.setTitle("Error, filter criteria not found.")
 					.setDescription(`Here is a list of filter criterias. 
                                     \`make\` - Filter by make/manufacturer. 
-									\`year\` - Filter by model year range.
+									\`modelyear\` - Filter by model year range.
 									\`country\` - Filter by country origin. 
                                     \`drivetype\` - Filter by drive type. 
 									\`tyretype\` - Filter by tyre type.
 									\`gc\` - Filter by ground clearance.
 									\`bodytype\` - Filter by body type.  
 									\`seatcount\` - Filter by seat count.
+									\`enginepos\` - Filter by engine position.
 									\`fueltype\` - Filter by fuel type.
 									\`tag\` - Filter by tag.  
                                     \`disable/remove\` - Removes current (or all) filter(s).`)
 					.setTimestamp();
 				return message.channel.send(errorScreen);
 		}
-		await db.set(`acc${message.author.id}.filter`, filter);
+		if (filter === {}) {
+			await db.delete(`acc${message.author.id}.filter`);
+		}
+		else {
+			await db.set(`acc${message.author.id}.filter`, filter);
+		}
 		return message.channel.send(infoScreen);
 	}
 }
