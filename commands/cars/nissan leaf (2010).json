@@ -1,0 +1,46 @@
+{
+    "rq": 23,
+    "make": "Nissan",
+    "model": "Leaf",
+    "modelYear": 2010,
+    "country": "JP",
+    "topSpeed": 92,
+    "0to60": 9.9,
+    "handling": 71,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+
+    "weight": 1525,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 0.00,
+    "ola": 73.12,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/785814830207991818/nissan_leaf.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/785805656875466772/image0.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/785805819735834634/image1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/785805856091930644/image2.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/785805966356381726/image3.png",
+    "racehud699": "",
+
+    "333TopSpeed": 95,
+    "3330to60": 9.2,
+    "333Handling": 73,
+
+    "666TopSpeed": 97,
+    "6660to60": 8.5,
+    "666Handling": 76,
+
+    "969TopSpeed": 100,
+    "9690to60": 7.8,
+    "969Handling": 78
+}

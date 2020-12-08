@@ -39,7 +39,7 @@ client.once("ready", async () => {
 
 	const guild = client.guilds.cache.get("711769157078876305"); //don't mind me lmao
 	guild.members.cache.forEach(async user => {
-		if (await client.db.has(`acc${user.id}.garage`) === false) {
+		if (await client.db.has(`acc${user.id}`) === null) {
 			console.log("creating new player's database...");
 			await client.db.set(`acc${user.id}`, { money: 0, fuseTokens: 0, trophies: 0, garage: [], decks: [], campaignProgress: { chapter: 0, part: 1, race: 1 }, unclaimedRewards: { money: 0, fuseTokens: 0, trophies: 0, cars: [] } });
 			var i = 0;
@@ -56,7 +56,7 @@ client.once("ready", async () => {
 		const garage = await client.db.get(`acc${user.id}.garage`);
 		var i = 0;
 		while (i < garage.length) {
-			if (garage[i].carFile.includes("bmw,audi")) {
+			if (garage[i].carFile.includes("undefined")) {
 				console.log("hi there jezza");
 				garage.splice(i, 1);
 			}
@@ -156,7 +156,7 @@ client.on("message", async message => {
 });
 
 client.on("guildMemberAdd", async member => {
-	if (await client.db.has(`acc${member.id}`) === false) {
+	if (await client.db.has(`acc${member.id}`) === null) {
 		console.log("creating new player's database...");
 		await client.db.set(`acc${member.id}`, { money: 0, fuseTokens: 0, trophies: 0, garage: [], decks: [], campaignProgress: { chapter: 0, part: 1, race: 1 }, unclaimedRewards: { money: 0, fuseTokens: 0, trophies: 0, cars: [] } });
 		var i = 0;

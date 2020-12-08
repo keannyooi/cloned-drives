@@ -1,0 +1,46 @@
+{
+    "rq": 82,
+    "make": "Jaguar",
+    "model": "I-PACE EV400",
+    "modelYear": 2018,
+    "country": "GB",
+    "topSpeed": 124,
+    "0to60": 4.2,
+    "handling": 80,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+
+    "weight": 2133,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 67.74,
+    "ola": 90.48,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/783750188148850748/2018_Jaguar_IPACE.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/783752276820885527/JagIPACEStcok.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/783752345263276052/JagIPACE333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/783752395268161536/JagIPACE666.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/783752500997521428/JagIPACE969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 128,
+    "3330to60": 4.0,
+    "333Handling": 83,
+
+    "666TopSpeed": 132,
+    "6660to60": 3.8,
+    "666Handling": 86,
+
+    "969TopSpeed": 136,
+    "9690to60": 3.6,
+    "969Handling": 89
+}

@@ -336,7 +336,7 @@ module.exports = {
 
             function createCar(currentCar) {
                 const car = require(`./cars/${currentCar.carFile}`);
-                var carModule = {
+                const carModule = {
                     topSpeed: car["topSpeed"],
                     accel: car["0to60"],
                     handling: car["handling"],

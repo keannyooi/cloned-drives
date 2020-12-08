@@ -1,0 +1,46 @@
+{
+    "rq": 55,
+    "make": "RUF",
+    "model": "3400S",
+    "modelYear": 2000,
+    "country": "DE",
+    "topSpeed": 175,
+    "0to60": 5.1,
+    "handling": 81,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1300,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 63.51,
+    "ola": 85.11,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/784505925234196521/rect78774.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/784506435157491752/3400sStock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/784506457134465024/3400s1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/784506472724824114/3400s2.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/784506554492780544/3400s233.png",
+    "racehud699": "",
+
+    "333TopSpeed": 178,
+    "3330to60": 4.8,
+    "333Handling": 84,
+
+    "666TopSpeed": 181,
+    "6660to60": 4.5,
+    "666Handling": 87,
+
+    "969TopSpeed": 183,
+    "9690to60": 4.2,
+    "969Handling": 90
+}

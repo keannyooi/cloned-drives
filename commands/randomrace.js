@@ -168,7 +168,7 @@ module.exports = {
 
 		function createCar(currentCar) {
 			const car = require(`./cars/${currentCar.carFile}`);
-			var carModule = {
+			const carModule = {
 				topSpeed: car["topSpeed"],
 				accel: car["0to60"],
 				handling: car["handling"],
@@ -198,7 +198,8 @@ module.exports = {
 		}
 
 		function randomize() {
-			playerData.rrTrackset = tracksets[Math.floor(Math.random() * tracksets.length)];
+			trackset = tracksets[Math.floor(Math.random() * tracksets.length)];
+			playerData.rrTrackset = trackset;
 
 			const opponentCarFile = carFiles[Math.floor(Math.random() * carFiles.length)];
 			const upgradeIndex = Math.floor(Math.random() * 4);

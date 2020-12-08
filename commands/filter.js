@@ -39,11 +39,11 @@ module.exports = {
 			case "make":
 			case "country":
 			case "tags":
-				let argument = args.slice(1, args.length).join(", ").toLowerCase();
+				let argument = args.slice(1, args.length).join(" ").toLowerCase();
 				searchResults = carFiles.filter(function (carFile) {
 					let currentCar = require(`./cars/${carFile}`);
 					if (Array.isArray(currentCar[criteria])) {
-						return currentCar[criteria].some(tag => tag === argument);
+						return currentCar[criteria].some(tag => tag.toLowerCase() === argument);
 					}
 					else {
 						return currentCar[criteria].toLowerCase() === argument;
@@ -77,9 +77,7 @@ module.exports = {
 			case "modelyear":
 			case "seatcount":
 				const start = parseInt(args[1]);
-				var end;
-				if (criteria === "modelyear") end = 2030;
-				else end = 9;
+				var end = start;
 				if (args[2] && !isNaN(args[2])) {
 					end = parseInt(args[2]);
 				}

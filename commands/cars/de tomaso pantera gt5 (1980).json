@@ -1,0 +1,46 @@
+{
+    "rq": 49,
+    "make": "De Tomaso",
+    "model": "Pantera GT5",
+    "modelYear": 1980,
+    "country": "IT",
+    "topSpeed": 148,
+    "0to60": 5.2,
+    "handling": 80,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1417,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 75.32,
+    "ola": 72.73,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/784107255343349831/1980_De_Tomaso_Pantera_GT5.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/784107494430605332/DTomasoGT5Stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/784107572352909312/DTomasoGT5333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/784107609560449024/DTomasoGT5666.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/784107712731414578/DTomasoGT5969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 152,
+    "3330to60": 4.9,
+    "333Handling": 83,
+
+    "666TopSpeed": 156,
+    "6660to60": 4.6,
+    "666Handling": 86,
+
+    "969TopSpeed": 160,
+    "9690to60": 4.3,
+    "969Handling": 89
+}

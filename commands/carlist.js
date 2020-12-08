@@ -14,7 +14,7 @@ var carFiles = fs.readdirSync("./commands/cars").filter(file => file.endsWith('.
 module.exports = {
     name: "carlist",
     aliases: ["allcars"],
-    usage: "(optional) <page number>",
+    usage: "(all optional) <page number> | -s <sorting criteria>",
     args: 0,
     adminOnly: false,
     description: "Shows all the cars that are available in Cloned Drives in list form.",
@@ -25,7 +25,7 @@ module.exports = {
         const filter = (reaction, user) => {
             return (reaction.emoji.name === "⬅️" || reaction.emoji.name === "➡️") && user.id === message.author.id;
         };
-        var carList = "";
+        var carList = "", valueList = "";
         var reactionIndex = 0;
         var sortBy = "rq";
         var page;
@@ -46,22 +46,29 @@ module.exports = {
             return message.channel.send(errorScreen);
         }
 
-        const playerData = await db.get(`acc${message.author.id}`);
-        const garage = playerData.garage;
+        const garage = await db.get(`acc${message.author.id}.garage`);
+        const carFilter = await db.get(`acc${message.author.id}.filter`);
         const totalCars = carFiles.length;
 
         const ownedCars = carFiles.filter(function (carFile) {
             return garage.some(part => carFile.includes(part.carFile));
         });
 
-        if (playerData.filter !== undefined) {
-            for (const [key, value] of Object.entries(playerData.filter)) {
+        if (carFilter !== null) {
+            for (const [key, value] of Object.entries(carFilter)) {
                 switch (typeof value) {
                     case "object":
                         if (Array.isArray(value)) {
                             carFiles = carFiles.filter(function (carFile) {
                                 let currentCar = require(`./cars/${carFile}`);
-                                return value.includes(currentCar[key].toLowerCase());
+                                if (Array.isArray(currentCar[key])) {
+                                    var obj = {};
+                                    currentCar[key].forEach((tag, index) => obj[tag.toLowerCase()] = index);
+                                    return value.every(tagFilter => { return obj[tagFilter] !== undefined });
+                                }
+                                else {
+                                    return value.includes(currentCar[key].toLowerCase());
+                                }
                             });
                         }
                         else {
@@ -135,11 +142,21 @@ module.exports = {
                 }
             }
             else {
-                if (carA[sortBy] - carB[sortBy] > 0) {
-                    return -1;
+                if (sortBy === "0to60" || sortBy === "weight") {
+                    if (carA[sortBy] > carB[sortBy]) {
+                        return 1;
+                    }
+                    else {
+                        return -1;
+                    }
                 }
                 else {
-                    return 1;
+                    if (carA[sortBy] > carB[sortBy]) {
+                        return -1;
+                    }
+                    else {
+                        return 1;
+                    }
                 }
             }
         });
@@ -155,13 +172,17 @@ module.exports = {
         }
         carDisplay(page);
 
-        const infoScreen = new Discord.MessageEmbed()
+        let infoScreen = new Discord.MessageEmbed()
             .setColor("#34aeeb")
             .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
             .setTitle(`List of All Cars in Cloned Drives (${ownedCars.length}/${totalCars} Cars Owned)`)
-            .setDescription(carList)
+            .setDescription(`Current Sorting Criteria: \`${sortBy}\``)
+            .addField("Car", carList, true)
             .setFooter(`Page ${page} of ${totalPages} - React with ⬅️ or ➡️ to navigate through pages.`)
             .setTimestamp();
+        if (sortBy !== "rq") {
+            infoScreen.addField("Value", valueList, true)
+        }
         message.channel.send(infoScreen).then(infoMessage => {
             console.log(reactionIndex);
             switch (reactionIndex) {
@@ -192,14 +213,17 @@ module.exports = {
                 carDisplay(page);
                 infoMessage.reactions.removeAll();
 
-                const totalPages = Math.ceil(carFiles.length / pageLimit);
-                const infoScreen = new Discord.MessageEmbed()
+                let infoScreen = new Discord.MessageEmbed()
                     .setColor("#34aeeb")
                     .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                     .setTitle(`List of All Cars in Cloned Drives (${ownedCars.length}/${totalCars} Cars Owned)`)
-                    .setDescription(carList)
+                    .setDescription(`Current Sorting Criteria: \`${sortBy}\``)
+                    .addField("Car", carList, true)
                     .setFooter(`Page ${page} of ${totalPages} - React with ⬅️ or ➡️ to navigate through pages.`)
                     .setTimestamp();
+                if (sortBy !== "rq") {
+                    infoScreen.addField("Value", valueList, true)
+                }
                 infoMessage.edit(infoScreen);
 
                 switch (reactionIndex) {
@@ -273,20 +297,19 @@ module.exports = {
                 endsWith = startsWith + pageLimit;
                 reactionIndex = 3;
             }
-            carList = "";
+            carList = valueList = "";
 
             for (i = startsWith; i < endsWith; i++) {
                 const currentCar = require(`./cars/${carFiles[i]}`);
                 const rarity = rarityCheck(currentCar);
 
                 carList += `(${rarity} ${currentCar["rq"]}) ` + currentCar["make"] + " " + currentCar["model"] + " (" + currentCar["modelYear"] + ")";
-                if (sortBy !== "rq") {
-                    carList += ` \`${currentCar[sortBy]}\``;
-                }
                 if (currentCar["isPrize"]) {
                     carList += ` ${trophyEmoji}`;
                 }
-
+                if (sortBy !== "rq") {
+                    valueList += `\`${currentCar[sortBy]}\`\n`;
+                }
                 if (ownedCars.some(car => carFiles[i].includes(car))) {
                     carList += " ✅ \n";
                 }
