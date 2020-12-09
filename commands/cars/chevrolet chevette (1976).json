@@ -1,0 +1,46 @@
+{
+    "rq": 15,
+    "make": "Chevrolet",
+    "model": "Chevette",
+    "modelYear": 1976,
+    "country": "US",
+    "topSpeed": 81,
+    "0to60": 15.0,
+    "handling": 63,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 916,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 0.00,
+    "ola": 58.97,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/786040588743082004/chevrolet_chvette.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/782776023178805259/chevrolet_chevette.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/782776092179169290/chevrolet_chevette_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/782776099926048808/chevrolet_chevette_666.jpg",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/782776112987897866/chevrolet_chevette_969.jpg",
+    "racehud699": "",
+
+    "333TopSpeed": 84,
+    "3330to60": 13.7,
+    "333Handling": 65,
+
+    "666TopSpeed": 87,
+    "6660to60": 12.4,
+    "666Handling": 68,
+
+    "969TopSpeed": 89,
+    "9690to60": 11.2,
+    "969Handling": 70
+}

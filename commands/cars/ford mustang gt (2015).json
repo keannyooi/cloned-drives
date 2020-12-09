@@ -1,0 +1,46 @@
+{
+    "rq": 68,
+    "make": "Ford",
+    "model": "Mustang GT",
+    "modelYear": 2015,
+    "country": "US",
+    "topSpeed": 164,
+    "0to60": 4.5,
+    "handling": 86,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1728,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 76.27,
+    "ola": 93.33,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/786040410694090762/ford_mustang_gt.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/782818589950476298/ford_mustang_gt.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/782818629916819456/ford_mustang_gt_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/782818643314343941/ford_mustang_gt_666.jpg",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/782818657750745088/ford_mustang_gt_969.jpg",
+    "racehud699": "",
+
+    "333TopSpeed": 168,
+    "3330to60": 4.2,
+    "333Handling": 89,
+
+    "666TopSpeed": 173,
+    "6660to60": 3.9,
+    "666Handling": 92,
+
+    "969TopSpeed": 177,
+    "9690to60": 3.7,
+    "969Handling": 95
+}

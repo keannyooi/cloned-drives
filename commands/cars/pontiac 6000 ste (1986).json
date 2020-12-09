@@ -1,0 +1,46 @@
+{
+    "rq": 17,
+    "make": "Pontiac",
+    "model": "6000 STE",
+    "modelYear": 1986,
+    "country": "US",
+    "topSpeed": 116,
+    "0to60": 10.4,
+    "handling": 71,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["OG"],
+    "isPrize": false,
+
+    "weight": 1412,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 38.65,
+    "ola": 67.89,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/786039946061283358/pontiac_6000_ste.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/782773933258571806/pontiac_6000_ste.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/782773984416628736/pontiac_6000_ste_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/782773993681059840/pontiac_6000_ste_666.jpg",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/782774004653228052/pontiac_6000_ste_969.jpg",
+    "racehud699": "",
+
+    "333TopSpeed": 119,
+    "3330to60": 9.7,
+    "333Handling": 74,
+
+    "666TopSpeed": 123,
+    "6660to60": 9.0,
+    "666Handling": 76,
+
+    "969TopSpeed": 126,
+    "9690to60": 8.3,
+    "969Handling": 79
+}
