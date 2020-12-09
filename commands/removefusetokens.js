@@ -11,13 +11,13 @@ const Discord = require("discord.js-light");
 
 module.exports = {
     name: "removefusetokens",
-	aliases: ["rmvfusetokens"],
+    aliases: ["rmvfusetokens", "rft"],
     usage: "<username> <amount here>",
     args: 2,
     adminOnly: true,
     description: "Removes a certain amount of fuse tokens from someone.",
     async execute(message, args) {
-		const db = message.client.db;
+        const db = message.client.db;
         const fuseEmoji = message.guild.emojis.cache.find(emoji => emoji.name === "fuse");
         var userName = args[0].toLowerCase();
         var user, member;
@@ -25,7 +25,7 @@ module.exports = {
             if (message.guild.member(User).displayName.toLowerCase().includes(userName)) {
                 console.log("found!");
                 user = User.user;
-				member = message.guild.member(User);
+                member = message.guild.member(User);
             }
         });
         const amount = args[1];
@@ -58,16 +58,31 @@ module.exports = {
             return message.channel.send(errorMessage);
         }
 
-        await db.subtract(`acc${user.id}.fuseTokens`, parseInt(amount));
-		const currentFuseTokens = await db.get(`acc${user.id}.fuseTokens`);
-        console.log(currentFuseTokens);
+        const playerData = await db.get(`acc${user.id}`);
+        if (parseInt(amount) < playerData.fuseTokens) {
+            playerData.fuseTokens += parseInt(amount);
+            await db.set(`acc${user.id}`, playerData);
 
-        const infoScreen = new Discord.MessageEmbed()
-            .setColor("#03fc24")
-            .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-            .setTitle(`Successfully removed ${fuseEmoji}${amount} from ${member.displayName}'s fuse token balance!`)
-			.setDescription(`Current Fuse Token Balance: ${fuseEmoji}${currentFuseTokens}`)
-            .setTimestamp();
-        return message.channel.send(infoScreen);
+            const infoScreen = new Discord.MessageEmbed()
+                .setColor("#03fc24")
+                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                .setTitle(`Successfully removed ${fuseEmoji}${amount} from ${member.displayName}'s fuse token balance!`)
+                .setDescription(`Current Fuse Token Balance: ${fuseEmoji}${playerData.fuseTokens}`)
+                .setTimestamp();
+            return message.channel.send(infoScreen);
+        }
+        else {
+            const errorMessage = new Discord.MessageEmbed()
+                .setColor("#fc0303")
+                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                .setTitle("Error, a user's balance cannot be in the negatives.")
+                .setDescription("The amount of money that can be taken away should not be bigger than the user's money balance")
+                .addFields(
+                    { name: `${member.displayName}'s Fuse Token Balance`, value: `${fuseEmoji}${playerData.fuseTokens}`, inline: true },
+                    { name: "Amount You Are Tyring to Take Away", value: `${fuseEmoji}${parseInt(amount)}`, inline: true }
+                )
+                .setTimestamp();
+            return message.channel.send(errorMessage);
+        }
     }
 }

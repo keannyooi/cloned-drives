@@ -11,7 +11,8 @@ const Discord = require("discord.js-light");
 
 module.exports = {
     name: "addfusetokens",
-    usage: "<username> <amount here>",
+    aliases: ["aft"],
+    usage: "<username> | <amount>",
     args: 2,
     adminOnly: true,
     description: "Adds a certain amount of fuse tokens to someone's cash balance.",
@@ -29,6 +30,7 @@ module.exports = {
             }
         });
 
+        const amount = args[1];
         if (isNaN(amount) || parseInt(amount) < 1) {
             const errorMessage = new Discord.MessageEmbed()
                 .setColor("#fc0303")
