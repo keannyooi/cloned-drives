@@ -23,14 +23,24 @@ module.exports = {
 		var filter = await db.get(`acc${message.author.id}.filter`) || {};
 		var infoScreen, searchResults;
 
-		console.log(filter);
-
 		if (!args[1] && criteria !== "view") {
 			const errorMessage = new Discord.MessageEmbed()
 				.setColor("#fc0303")
 				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 				.setTitle("Error, arguments provided insufficient.")
-				.setDescription("Please specify the filter criteria that you want to add.")
+				.setDescription(`Here is a list of filter criterias. 
+                                \`make\` - Filter by make/manufacturer. 
+								\`modelyear\` - Filter by model year range.
+								\`country\` - Filter by country origin. 
+                                \`drivetype\` - Filter by drive type. 
+								\`tyretype\` - Filter by tyre type.
+								\`gc\` - Filter by ground clearance.
+								\`bodytype\` - Filter by body type.  
+								\`seatcount\` - Filter by seat count.
+								\`enginepos\` - Filter by engine position.
+								\`fueltype\` - Filter by fuel type.
+								\`tag\` - Filter by tag.  
+                                \`disable/remove\` - Removes current (or all) filter(s).`)
 				.setTimestamp();
 			return message.channel.send(errorMessage);
 		}
@@ -236,11 +246,11 @@ module.exports = {
 				break;
 			case "view":
 				infoScreen = new Discord.MessageEmbed()
-					.setColor("#03fc24")
+					.setColor("#34aeeb")
 					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 					.setTitle("Current Filter")
 					.setTimestamp();
-				if (!filter || filter === {}) {
+				if (!filter || Object.keys(filter).length === 0) {
 					infoScreen.setDescription("There are currently no activated filters.");
 				}
 				else {
@@ -284,7 +294,7 @@ module.exports = {
 					.setTimestamp();
 				return message.channel.send(errorScreen);
 		}
-		if (filter === {}) {
+		if (Object.keys(filter).length === 0) {
 			await db.delete(`acc${message.author.id}.filter`);
 		}
 		else {

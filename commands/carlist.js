@@ -9,7 +9,6 @@
 
 const Discord = require("discord.js-light");
 const fs = require("fs");
-var carFiles = fs.readdirSync("./commands/cars").filter(file => file.endsWith('.json'));
 
 module.exports = {
     name: "carlist",
@@ -25,6 +24,7 @@ module.exports = {
         const filter = (reaction, user) => {
             return (reaction.emoji.name === "⬅️" || reaction.emoji.name === "➡️") && user.id === message.author.id;
         };
+        var carFiles = fs.readdirSync("./commands/cars").filter(file => file.endsWith('.json'));
         var carList = "", valueList = "";
         var reactionIndex = 0;
         var sortBy = "rq";
@@ -47,14 +47,15 @@ module.exports = {
         }
 
         const garage = await db.get(`acc${message.author.id}.garage`);
-        const carFilter = await db.get(`acc${message.author.id}.filter`);
         const totalCars = carFiles.length;
 
         const ownedCars = carFiles.filter(function (carFile) {
             return garage.some(part => carFile.includes(part.carFile));
         });
 
+        const carFilter = await db.get(`acc${message.author.id}.filter`);
         if (carFilter !== null) {
+            console.log("i hate you");
             for (const [key, value] of Object.entries(carFilter)) {
                 switch (typeof value) {
                     case "object":

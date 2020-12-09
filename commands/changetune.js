@@ -12,7 +12,7 @@ const Discord = require("discord.js-light");
 module.exports = {
 	name: "changetune",
 	aliases: ["ct"],
-	usage: "<username goes here> <car name goes here> <upgrade pattern>",
+	usage: "<username goes here> | <car name goes here> | <upgrade pattern>",
 	args: 3,
 	adminOnly: true,
 	description: "Changes a tune of a car in someone's garage.",
