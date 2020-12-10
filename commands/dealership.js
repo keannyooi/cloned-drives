@@ -40,16 +40,13 @@ module.exports = {
 			const moneyEmoji = message.client.emojis.cache.get("726017235826770021");
 			var lastRefresh = await db.get("lastDealershipRefresh");
 			var catalog = await db.get("dealershipCatalog");
-			console.log(catalog);
+			console.log(`${lastRefresh} - ${moment().format("L")}`);
 
 			if (!lastRefresh) {
 				lastRefresh = moment([2020, 1, 1]).format("L");
 			}
 			if (lastRefresh !== moment().format("L") || !catalog) {
 				await refresh();
-
-				await db.set("dealershipCatalog", catalog);
-				await db.set("lastDealershipRefresh", moment().format("L"));
 			}
 
 			Canvas.registerFont("RobotoCondensed-Regular.ttf", { family: "Roboto" });
@@ -100,7 +97,6 @@ module.exports = {
 				var i = 0;
 				while (i < 8) {
 					const randNum = Math.floor(Math.random() * 100);
-					console.log(randNum + " is the random number");
 					var currentName, price;
 					var currentCard;
 					if (randNum < 33) {
@@ -188,6 +184,7 @@ module.exports = {
 					}
 				});
 				await db.set("dealershipCatalog", catalog);
+				await db.set("lastDealershipRefresh", moment().format("L"));
 
 				function isOnSale(card) {
 					var isOnSale = false;

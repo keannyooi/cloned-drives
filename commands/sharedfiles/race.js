@@ -15,23 +15,30 @@ module.exports = {
 		const wait = await message.channel.send("**Loading race, please wait... (may take a while)**");
 
 		try {
-			const canvas = Canvas.createCanvas(2135, 1200);
-			const ctx = canvas.getContext("2d");
-			const background = await Canvas.loadImage(currentTrack["background"]);
-			const overlay = await Canvas.loadImage("https://cdn.discordapp.com/attachments/716917404868935691/740847199692521512/race_template_thing.png");
-			const playerHud = await Canvas.loadImage(player.racehud);
-			const opponentHud = await Canvas.loadImage(opponent.racehud);
 			var description = `__Selected Track: ${currentTrack["trackName"]}__`;
+			var attachment;
+			try {
+				const canvas = Canvas.createCanvas(2135, 1200);
+				const ctx = canvas.getContext("2d");
+				const background = await Canvas.loadImage(currentTrack["background"]);
+				const overlay = await Canvas.loadImage("https://cdn.discordapp.com/attachments/716917404868935691/740847199692521512/race_template_thing.png");
+				const playerHud = await Canvas.loadImage(player.racehud);
+				const opponentHud = await Canvas.loadImage(opponent.racehud);
+	
+				ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
+				ctx.drawImage(overlay, 0, 0, canvas.width, canvas.height);
+				ctx.drawImage(playerHud, 112, 218, 588, 357);
+				ctx.drawImage(opponentHud, 1448, 626, 588, 357);
+	
+				attachment = new Discord.MessageAttachment(canvas.toBuffer(), "thing.png");
+			}
+			catch (error) {
+				let errorPic = "https://cdn.discordapp.com/attachments/716917404868935691/786411449341837322/unknown.png";
+				attachment = new Discord.MessageAttachment(errorPic, "thing.png");
+			}
 
 			const drivePlacement = ["4WD", "FWD", "RWD"];
 			const gcPlacement = ["High", "Medium", "Low"];
-
-			ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
-			ctx.drawImage(overlay, 0, 0, canvas.width, canvas.height);
-			ctx.drawImage(playerHud, 112, 218, 588, 357);
-			ctx.drawImage(opponentHud, 1448, 626, 588, 357);
-
-			const attachment = new Discord.MessageAttachment(canvas.toBuffer(), "thing.png");
 			const result = evalScore(player, opponent);
 			const raceInfo = compare(player, opponent, (result > 0));
 

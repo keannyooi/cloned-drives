@@ -1,0 +1,50 @@
+{
+    "rq": 21,
+    "make": "Mercedes-Benz",
+    "model": "Metris",
+    "modelYear": 2015,
+    "country": "DE",
+    "topSpeed": 101,
+    "0to60": 8.4,
+    "handling": 65,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 2186,
+    "gc": "Low",
+    "seatCount": 7,
+    "bodyStyle": "Minivan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 49.12,
+    "ola": 67.86,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/783361995046125598/Metriswtf.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/783361864066269194/MetrisStock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/783362008845254676/MetrisMaxed1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/783362039078060042/MetrisMaxed2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/783362049123418132/MetrisMaxed332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/783362048062128148/MetrisMaxed323.png",
+    "racehud699": "",
+
+    "333TopSpeed": 104,
+    "3330to60": 7.8,
+    "333Handling": 68,
+
+    "666TopSpeed": 108,
+    "6660to60": 7.2,
+    "666Handling": 70,
+
+    "996TopSpeed": 111,
+    "9960to60": 6.4,
+    "996Handling": 70,
+
+    "969TopSpeed": 110,
+    "9690to60": 6.7,
+    "969Handling": 72
+}

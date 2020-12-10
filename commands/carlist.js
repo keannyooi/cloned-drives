@@ -55,7 +55,6 @@ module.exports = {
 
         const carFilter = await db.get(`acc${message.author.id}.filter`);
         if (carFilter !== null) {
-            console.log("i hate you");
             for (const [key, value] of Object.entries(carFilter)) {
                 switch (typeof value) {
                     case "object":
