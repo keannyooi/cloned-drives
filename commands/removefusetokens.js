@@ -60,7 +60,7 @@ module.exports = {
 
         const playerData = await db.get(`acc${user.id}`);
         if (parseInt(amount) < playerData.fuseTokens) {
-            playerData.fuseTokens += parseInt(amount);
+            playerData.fuseTokens -= parseInt(amount);
             await db.set(`acc${user.id}`, playerData);
 
             const infoScreen = new Discord.MessageEmbed()

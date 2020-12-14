@@ -1,0 +1,17 @@
+{
+	"trackName": "Pikes Peak (Gravel)",
+	"weather": "Sunny",
+	"surface": "Gravel",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://cdn.discordapp.com/attachments/716917404868935691/787653783353819186/unknown.png",
+	
+	"specsDistr": {
+		"topSpeed": 20,
+		"0to60": 100,
+		"handling": 80,
+		"weight": 0,
+		"mra": 75,
+		"ola": 35
+	}
+}

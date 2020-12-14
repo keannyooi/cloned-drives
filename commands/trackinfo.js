@@ -89,7 +89,7 @@ module.exports = {
         }
         else if (searchResults.length > 0) {
             const currentTrack = require(`./tracksets/${searchResults[0]}`);
-            displayInfo(currenttrack);
+            displayInfo(currentTrack);
         }
         else {
             const errorMessage = new Discord.MessageEmbed()

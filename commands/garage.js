@@ -97,14 +97,20 @@ module.exports = {
                         else {
                             garage = garage.filter(function (car) {
                                 let currentCar = require(`./cars/${car.carFile}`);
-                                return currentCar[key.replace("count", "Count").replace("y", "Y")] >= value.start && currentCar[key.replace("count", "Count").replace("y", "Y")] <= value.end;
+                                return currentCar[key] >= value.start && currentCar[key] <= value.end;
                             });
                         }
                         break;
                     case "string":
                         garage = garage.filter(function (car) {
                             let currentCar = require(`./cars/${car.carFile}`);
-                            return currentCar[key.replace("type", "Type")].toLowerCase() === value;
+                            return currentCar[key].toLowerCase() === value;
+                        });
+                        break;
+                    case "boolean":
+                        garage = garage.filter(function (car) {
+                            let currentCar = require(`./cars/${car.carFile}`);
+                            return currentCar[key] === value;
                         });
                         break;
                     default:

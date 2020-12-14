@@ -7,6 +7,7 @@
 |__|\__\ |_______/__/     \__\ |__| \__| |__| \__|     |__| 	(this is a watermark that proves that these lines of code are mine)
 */
 
+const backupMode = true;
 const fs = require("fs");
 const Discord = require("discord.js-light");
 const { Database } = require("quickmongo");
@@ -28,6 +29,7 @@ client.db = new Database("mongodb+srv://keanny:6x6IsBae@databaseclusterthing.as9
 
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 const starterCars = ["abarth 124 spider (2017).json", "range rover classic 5-door (1984).json", "honda prelude type sh (1997).json", "chevrolet impala ss 427 (1967).json", "volkswagen beetle 2.5 (2012).json"];
+const keepAlive = require('./server');
 
 for (const file of commandFiles) {
 	const command = require(`./commands/${file}`);
@@ -63,6 +65,7 @@ client.once("ready", async () => {
 			i++;
 		}
 		client.db.set(`acc${user.id}.garage`, garage);
+		await client.db.delete(`acc${user.id}.filter`);
 	})
 
 	// const catalog = await client.db.get("dealershipCatalog");
@@ -79,6 +82,9 @@ client.once("ready", async () => {
 	client.user.setActivity("over everyone's garages", { type: "WATCHING" });
 });
 
+if (backupMode) {
+	keepAlive();
+}
 client.login(token);
 
 client.on("message", async message => {

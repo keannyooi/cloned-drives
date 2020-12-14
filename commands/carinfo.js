@@ -125,7 +125,7 @@ module.exports = {
                 rarity = message.client.emojis.cache.get("726020544264273928");
             }
 
-            var tags = "", description, mra, ola;
+            var tags = "", description, mra, ola, accel;
             if (currentCar["tags"].length) {
                 for (i = 0; i < currentCar["tags"].length; i++) {
                     tags += `${currentCar["tags"][i]}, `;
@@ -148,9 +148,10 @@ module.exports = {
             }
             if (currentCar["topSpeed"] >= 60) {
                 ola = currentCar["ola"];
+                accel = currentCar["0to60"]
             }
             else {
-                ola = "N/A";
+                ola = accel = "N/A";
             }
 
             const maxedTunes = [996, 969, 699].filter(function (tune) {
@@ -165,7 +166,7 @@ module.exports = {
                 .setDescription("Stats of requested car:")
                 .addFields(
                     { name: "Top Speed (MPH)", value: currentCar["topSpeed"], inline: true },
-                    { name: "0-60MPH", value: currentCar["0to60"], inline: true },
+                    { name: "0-60MPH", value: accel, inline: true },
                     { name: "Handling", value: currentCar["handling"], inline: true },
                     { name: "Drive Type", value: currentCar["driveType"], inline: true },
                     { name: "Tyre Type", value: currentCar["tyreType"], inline: true },

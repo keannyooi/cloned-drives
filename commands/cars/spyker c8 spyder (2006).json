@@ -1,0 +1,50 @@
+{
+    "rq": 70,
+    "make": "Spyker",
+    "model": "C8 Spyder",
+    "modelYear": 2006,
+    "country": "NL",
+    "topSpeed": 187,
+    "0to60": 4.4,
+    "handling": 83,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1354,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Roadster",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 74.58,
+    "ola": 63.64,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/731698267573977099/782204971524816926/SpykerC8Spyder.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/786653385357000714/OrangeSpykerSt.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/786653405628071976/OrangeSpyker1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/786653421574160414/OrangeSpyker2.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/786653464611782666/OrangeSpyker323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/786653495499030538/OrangeSpyker233.png",
+
+    "333TopSpeed": 190,
+    "3330to60": 4.2,
+    "333Handling": 86,
+
+    "666TopSpeed": 193,
+    "6660to60": 3.9,
+    "666Handling": 89,
+
+    "969TopSpeed": 198,
+    "9690to60": 3.7,
+    "969Handling": 92,
+
+    "699TopSpeed": 195,
+    "6990to60": 3.7,
+    "699Handling": 92
+}

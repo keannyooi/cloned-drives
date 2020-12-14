@@ -145,9 +145,6 @@ module.exports = {
 								if (compareValue > 0 && value > 0) {
 									response += "Better off-the-line acceleration, ";
 								}
-								else if (compareValue < 0 && value < 0) {
-									response += "Less wheelspin, ";
-								}
 								break;
 							default:
 								break;
@@ -274,7 +271,7 @@ module.exports = {
 								"Performance": 25,
 								"All-Surface": 2,
 								"Off-Road": 3,
-								"Slick": 35
+								"Slick": 50
 							};
 							score += (tyreIndex[opponent.tyreType] - tyreIndex[player.tyreType]);
 						}
@@ -286,7 +283,7 @@ module.exports = {
 								"Performance": 15,
 								"All-Surface": 1,
 								"Off-Road": 2.5,
-								"Slick": 25
+								"Slick": 32.5
 							};
 							score += (tyreIndex[opponent.tyreType] - tyreIndex[player.tyreType]);
 						}

@@ -1,0 +1,46 @@
+{
+    "rq": 70,
+    "make": "Lotus",
+    "model": "Exige S",
+    "modelYear": 2007,
+    "country": "GB",
+    "topSpeed": 148,
+    "0to60": 4.1,
+    "handling": 90,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 933,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 58.57,
+    "ola": 85.11,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/787273421007618058/rec45t7774.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/787273529300221952/ExigeSSt.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/787273551002075136/ExigeS1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/787273565929734164/ExigeS2.png",
+    "racehud996": "",
+    "racehud969": "",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/787273600260112404/ExigeS233.png",
+
+    "333TopSpeed": 151,
+    "3330to60": 3.9,
+    "333Handling": 93,
+
+    "666TopSpeed": 153,
+    "6660to60": 3.7,
+    "666Handling": 96,
+
+    "699TopSpeed": 154,
+    "6990to60": 3.5,
+    "699Handling": 100
+}

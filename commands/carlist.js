@@ -74,16 +74,22 @@ module.exports = {
                         else {
                             carFiles = carFiles.filter(function (carFile) {
                                 let currentCar = require(`./cars/${carFile}`);
-                                return currentCar[key.replace("count", "Count").replace("y", "Y")] >= value.start && currentCar[key.replace("count", "Count").replace("y", "Y")] <= value.end;
+                                return currentCar[key] >= value.start && currentCar[key.replace("count", "Count").replace("y", "Y")] <= value.end;
                             });
                         }
                         break;
                     case "string":
                         carFiles = carFiles.filter(function (carFile) {
                             let currentCar = require(`./cars/${carFile}`);
-                            return currentCar[key.replace("type", "Type")].toLowerCase() === value;
+                            return currentCar[key].toLowerCase() === value;
                         });
                         break;
+                    case "boolean":
+                        carFiles = carFiles.filter(function (carFile) {
+                            let currentCar = require(`./cars/${carFile}`);
+                            return currentCar[key] === value;
+                        });
+                        break
                     default:
                         break;
                 }

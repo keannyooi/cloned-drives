@@ -1,0 +1,50 @@
+{
+    "rq": 64,
+    "make": "Land Rover",
+    "model": "Defender 110 SE",
+    "modelYear": 2020,
+    "country": "GB",
+    "topSpeed": 120,
+    "0to60": 6.3,
+    "handling": 63,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 2619,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 57.27,
+    "ola": 69.84,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/786642170060079114/LRDefender110SE.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/786643115280695316/DefenderSt.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/786643139568992296/Defender1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/786643162101317682/Defender2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/786643254330392617/Defender332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/786643211925061652/Defender323.png",
+    "racehud699": "",
+
+    "333TopSpeed": 123,
+    "3330to60": 5.9,
+    "333Handling": 66,
+
+    "666TopSpeed": 126,
+    "6660to60": 5.5,
+    "666Handling": 68,
+
+    "996TopSpeed": 131,
+    "9960to60": 4.9,
+    "996Handling": 68,
+
+    "969TopSpeed": 129,
+    "9690to60": 5.1,
+    "969Handling": 70
+}

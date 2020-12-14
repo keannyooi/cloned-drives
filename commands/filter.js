@@ -19,28 +19,16 @@ module.exports = {
 	description: "Sets up a filter for car lists. (WIP)",
 	async execute(message, args) {
 		const db = message.client.db;
-		const criteria = args[0].toLowerCase();
+		const criteria = args[0].toLowerCase().replace("type", "Type").replace("count", "Count").replace("year", "Year").replace("pos", "Pos").replace("prize", "Prize");
 		var filter = await db.get(`acc${message.author.id}.filter`) || {};
 		var infoScreen, searchResults;
 
-		if (!args[1] && criteria !== "view") {
+		if (!args[1] && criteria !== "view" && criteria !== "isPrize") {
 			const errorMessage = new Discord.MessageEmbed()
 				.setColor("#fc0303")
 				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 				.setTitle("Error, arguments provided insufficient.")
-				.setDescription(`Here is a list of filter criterias. 
-                                \`make\` - Filter by make/manufacturer. 
-								\`modelyear\` - Filter by model year range.
-								\`country\` - Filter by country origin. 
-                                \`drivetype\` - Filter by drive type. 
-								\`tyretype\` - Filter by tyre type.
-								\`gc\` - Filter by ground clearance.
-								\`bodytype\` - Filter by body type.  
-								\`seatcount\` - Filter by seat count.
-								\`enginepos\` - Filter by engine position.
-								\`fueltype\` - Filter by fuel type.
-								\`tag\` - Filter by tag.  
-                                \`disable/remove\` - Removes current (or all) filter(s).`)
+				.setDescription("What are you trying to filter?")
 				.setTimestamp();
 			return message.channel.send(errorMessage);
 		}
@@ -49,6 +37,7 @@ module.exports = {
 			case "make":
 			case "country":
 			case "tags":
+			case "tyreType":
 				let argument = args.slice(1, args.length).join(" ").toLowerCase();
 				searchResults = carFiles.filter(function (carFile) {
 					let currentCar = require(`./cars/${carFile}`);
@@ -84,8 +73,8 @@ module.exports = {
 					.addField("Current List", filter[criteria].join(", "))
 					.setTimestamp();
 				break;
-			case "modelyear":
-			case "seatcount":
+			case "modelYear":
+			case "seatCount":
 				const start = parseInt(args[1]);
 				var end = start;
 				if (args[2] && !isNaN(args[2])) {
@@ -122,16 +111,15 @@ module.exports = {
 					)
 					.setTimestamp();
 				break;
-			case "drivetype":
-			case "tyretype":
-			case "bodytype":
-			case "enginepos":
-			case "fueltype":
+			case "driveType":
+			case "bodyType":
+			case "enginePos":
+			case "fuelType":
 			case "gc":
 				let arg = args.slice(1, args.length).join(", ").toLowerCase();
 				searchResults = carFiles.filter(function (carFile) {
 					let currentCar = require(`./cars/${carFile}`);
-					return currentCar[criteria.replace("type", "Type").replace("pos", "Pos")].toLowerCase() === arg;
+					return currentCar[criteria].toLowerCase() === arg;
 				});
 				if (searchResults.length > 0) {
 					filter[criteria] = arg;
@@ -153,9 +141,18 @@ module.exports = {
 					.addField("Current Criteria", filter[criteria])
 					.setTimestamp();
 				break;
+			case "isPrize":
+				filter[criteria] = true;
+				infoScreen = new Discord.MessageEmbed()
+					.setColor("#03fc24")
+					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+					.setTitle(`Successfully enabled the \`${criteria}\` criteria!`)
+					.setTimestamp();
+				break;
 			case "disable":
 			case "remove":
-				switch (args[1].toLowerCase()) {
+				const criteria2 = args[1].toLowerCase().replace("type", "Type").replace("count", "Count").replace("year", "Year").replace("pos", "Pos");
+				switch (criteria2) {
 					case "all":
 						await db.delete(`acc${message.author.id}.filter`);
 						infoScreen = new Discord.MessageEmbed()
@@ -166,6 +163,7 @@ module.exports = {
 						return message.channel.send(infoScreen);
 					case "make":
 					case "country":
+					case "tyreType":
 					case "tags":
 						if (!args[2]) {
 							const errorMessage = new Discord.MessageEmbed()
@@ -177,25 +175,25 @@ module.exports = {
 							return message.channel.send(errorMessage);
 						}
 						if (args[2].toLowerCase() === "all") {
-							delete filter[args[1].toLowerCase()];
+							delete filter[criteria2];
 							infoScreen = new Discord.MessageEmbed()
 								.setColor("#03fc24")
 								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-								.setTitle(`Successfully removed all filters in the ${args[1].toLowerCase()} category!`)
+								.setTitle(`Successfully removed all filters in the ${criteria2} category!`)
 								.setTimestamp();
 						}
-						else if (filter[args[1].toLowerCase()].some(criteria => criteria === args[2].toLowerCase())) {
-							filter[args[1].toLowerCase()].splice(filter[args[1].toLowerCase()].indexOf(args[2].toLowerCase()), 1);
+						else if (filter[criteria2].some(criteria => criteria === args[2].toLowerCase())) {
+							filter[criteria2].splice(filter[criteria2].indexOf(args[2].toLowerCase()), 1);
 							infoScreen = new Discord.MessageEmbed()
 								.setColor("#03fc24")
 								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-								.setTitle(`Successfully updated \`${args[1].toLowerCase()}\` criterias!`)
+								.setTitle(`Successfully updated \`${criteria2}\` criterias!`)
 								.setTimestamp();
-							if (filter[args[1].toLowerCase()].length === 0) {
-								delete filter[args[1].toLowerCase()];
+							if (filter[criteria2].length === 0) {
+								delete filter[criteria2];
 							}
 							else {
-								infoScreen.addField("Current List", filter[args[1].toLowerCase()].toString())
+								infoScreen.addField("Current List", filter[criteria2].toString())
 							}
 						}
 						else {
@@ -208,19 +206,19 @@ module.exports = {
 							return message.channel.send(errorMessage);
 						}
 						break;
-					case "modelyear":
-					case "seatcount":
-					case "enginepos":
-					case "drivetype":
-					case "tyretype":
-					case "bodytype":
-					case "fueltype":
+					case "modelYear":
+					case "seatCount":
+					case "enginePos":
+					case "driveType":
+					case "bodyType":
+					case "fuelType":
+					case "isPrize":
 					case "gc":
-						delete filter[args[1].toLowerCase()];
+						delete filter[criteria2];
 						infoScreen = new Discord.MessageEmbed()
 							.setColor("#03fc24")
 							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-							.setTitle(`Successfully reset \`${args[1].toLowerCase()}\` filters!`)
+							.setTitle(`Successfully reset \`${criteria2}\` filters!`)
 							.setTimestamp();
 						break;
 					default:
@@ -239,6 +237,7 @@ module.exports = {
 									\`seatcount\` - Filter by seat count.
 									\`enginepos\` - Filter by engine position.
 									\`fueltype\` - Filter by fuel type.
+									\`isprize\` - Filter prize cars.
 									\`tag\` - Filter by tag.`)
 							.setTimestamp();
 						return message.channel.send(errorScreen);
@@ -265,6 +264,7 @@ module.exports = {
 								}
 								break;
 							case "string":
+							case "boolean":
 								infoScreen.addField(key, value, true);
 								break;
 							default:
@@ -289,6 +289,7 @@ module.exports = {
 									\`seatcount\` - Filter by seat count.
 									\`enginepos\` - Filter by engine position.
 									\`fueltype\` - Filter by fuel type.
+									\`isprize\` - Filter prize cars.
 									\`tag\` - Filter by tag.  
                                     \`disable/remove\` - Removes current (or all) filter(s).`)
 					.setTimestamp();

@@ -1,0 +1,50 @@
+{
+    "rq": 64,
+    "make": "Mitsubishi",
+    "model": "Lancer Evolution VI GSR",
+    "modelYear": 1999,
+    "country": "JP",
+    "topSpeed": 144,
+    "0to60": 5.0,
+    "handling": 81,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1370,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 59.52,
+    "ola": 72.00,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/787300794956513300/rect7774.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/787300894970085436/EvoST.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/787301055960317982/EVO1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/787301078202187796/EVO2.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/787301114319208468/Evo323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/787301151384272906/EVO233.png",
+
+    "333TopSpeed": 147,
+    "3330to60": 4.7,
+    "333Handling": 84,
+
+    "666TopSpeed": 150,
+    "6660to60": 4.4,
+    "666Handling": 87,
+
+    "969TopSpeed": 153,
+    "9690to60": 4.2,
+    "969Handling": 90,
+
+    "699TopSpeed": 151,
+    "6990to60": 4.3,
+    "699Handling": 90
+}
