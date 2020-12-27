@@ -88,7 +88,7 @@ client.on('rateLimit', (info) => {
 if (backupMode) {
 	keepAlive();
 }
-client.login(token).catch(console.error);
+client.login(token);
 
 client.on("message", async message => {
 	if (!message.content.toLowerCase().startsWith(prefix) || message.author.bot) return;
