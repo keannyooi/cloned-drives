@@ -14,6 +14,7 @@ module.exports = {
     aliases: ["aft"],
     usage: "<username> | <amount>",
     args: 2,
+	isExternal: false,
     adminOnly: true,
     description: "Adds a certain amount of fuse tokens to someone's cash balance.",
     async execute(message, args) {

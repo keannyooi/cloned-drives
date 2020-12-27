@@ -14,6 +14,7 @@ module.exports = {
     name: "ping",
     usage: "(no arguments required)",
     args: 0,
+	isExternal: false,
     adminOnly: false,
 	cooldown: 10,
     description: "I wonder what this does...",

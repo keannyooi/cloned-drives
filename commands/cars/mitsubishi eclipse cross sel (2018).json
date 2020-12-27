@@ -1,0 +1,46 @@
+{
+    "rq": 36,
+    "make": "Mitsubishi",
+    "model": "Eclipse Cross SEL",
+    "modelYear": 2018,
+    "country": "JP",
+    "topSpeed": 121,
+    "0to60": 9.0,
+    "handling": 69,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1630,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 42.45,
+    "ola": 62.44,
+    "description": "The new Eclipse. Different from the old Eclipse. By Bnuuy",
+
+    "card": "https://cdn.discordapp.com/attachments/731698267573977099/785914090194862091/rect77dd4.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/791114243604480020/eclipsecross.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/791114255759966228/eclipsecross333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/791114294690447370/eclipsecross666.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/791114322768035860/eclipsecross969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 124,
+    "3330to60": 8.7,
+    "333Handling": 72,
+
+    "666TopSpeed": 127,
+    "6660to60": 8.4,
+    "666Handling": 75,
+
+    "969TopSpeed": 130,
+    "9690to60": 8.0,
+    "969Handling": 78
+}

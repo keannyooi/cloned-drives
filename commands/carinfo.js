@@ -16,6 +16,7 @@ module.exports = {
     aliases: ["cinfo"],
     usage: "<car name goes here>",
     args: 1,
+	isExternal: true,
     adminOnly: false,
     description: "Shows info about a specified car.",
     execute(message, args) {
@@ -33,8 +34,12 @@ module.exports = {
         if (searchResults.length > 1) {
             var carList = "";
             for (i = 1; i <= searchResults.length; i++) {
-                const car = require(`./cars/${searchResults[i - 1]}`);
-                carList += `${i} - ${car["make"]} ${car["model"]} (${car["modelYear"]})\n`;
+                let car = require(`./cars/${searchResults[i - 1]}`);
+				let make = car["make"];
+				if (typeof make === "object") {
+					make = car["make"][0];
+				}
+                carList += `${i} - ${make} ${car["model"]} (${car["modelYear"]})\n`;
             }
 
             if (carList.length > 2048) {
@@ -102,7 +107,7 @@ module.exports = {
         }
 
         function displayInfo(currentCar, currentMessage) {
-            var rarity;
+            let rarity;
             if (currentCar["rq"] > 79) { //leggie
                 rarity = message.client.emojis.cache.get("726025494138454097");
             }
@@ -125,11 +130,9 @@ module.exports = {
                 rarity = message.client.emojis.cache.get("726020544264273928");
             }
 
-            var tags = "", description, mra, ola, accel;
-            if (currentCar["tags"].length) {
-                for (i = 0; i < currentCar["tags"].length; i++) {
-                    tags += `${currentCar["tags"][i]}, `;
-                }
+            let tags = "", description, mra, ola, accel;
+            if (currentCar["tags"].length > 0) {
+                tags = currentCar["tags"].join(", ");
             }
             else {
                 tags = "None";
@@ -158,7 +161,11 @@ module.exports = {
                 return currentCar[`${tune}TopSpeed`];
             });
 
-            var currentName = `${currentCar["make"]} ${currentCar["model"]} (${currentCar["modelYear"]})`;
+			let make = currentCar["make"];
+			if (typeof make === "object") {
+				make = currentCar["make"][0];
+			}
+            let currentName = `${make} ${currentCar["model"]} (${currentCar["modelYear"]})`;
             const infoScreen = new Discord.MessageEmbed()
                 .setColor("#34aeeb")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -180,7 +187,7 @@ module.exports = {
                     { name: "ABS Enabled?", value: currentCar["abs"], inline: true },
                     { name: "Mid-Range Acceleration (MRA)", value: mra, inline: true },
                     { name: "Off-the-Line Acceleration (OLA)", value: ola, inline: true },
-                    { name: "Tags", value: tags.slice(0, -2), inline: true },
+                    { name: "Tags", value: tags, inline: true },
                     { name: "Prize Car?", value: currentCar["isPrize"], inline: true },
                     { name: "Available Maxed Tunes", value: maxedTunes.join(", "), inline: true },
                     { name: "Description", value: description },

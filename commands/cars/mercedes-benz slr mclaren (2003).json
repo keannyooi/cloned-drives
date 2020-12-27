@@ -1,6 +1,6 @@
 {
     "rq": 80,
-    "make": "Mercedes-Benz",
+    "make": ["Mercedes-Benz", "McLaren"],
     "model": "SLR McLaren",
     "modelYear": 2003,
     "country": "DE",
@@ -9,7 +9,7 @@
     "handling": 87,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [],
+    "tags": ["Supercar", "Style Icon"],
     "isPrize": false,
 
     "weight": 1750,
@@ -22,7 +22,7 @@
     "fuelType": "Petrol",
     "mra": 87.50,
     "ola": 91.43,
-    "description": "",
+    "description": "Weight saving measures for the car didn't stop it to be one heavy boi. Card by havvy",
 
     "card": "https://cdn.discordapp.com/attachments/715782088271331398/768094137722601532/McMercSLR.png",
     "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/768093872067969036/mercedes-benz_slr_mclaren.jpg",

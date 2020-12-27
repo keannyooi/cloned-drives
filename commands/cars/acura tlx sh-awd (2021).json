@@ -1,0 +1,46 @@
+{
+    "rq": 70,
+    "make": "Acura",
+    "model": "TLX SH-AWD",
+    "modelYear": 2021,
+    "country": "US",
+    "topSpeed": 131,
+    "0to60": 5.9,
+    "handling": 78,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1826,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 62.77,
+    "ola": 91.53,
+    "description": "Acura's latest effort at a executive sedan. By DodgeDemon",
+
+    "card": "https://cdn.discordapp.com/attachments/731698267573977099/785031932433006602/2021_Acura_TLX_AWD.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/789596162473721896/image0.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/789596194262351932/image0.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/789596216308138014/image0.jpg",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/789596251129118721/image0.jpg",
+    "racehud699": "",
+
+    "333TopSpeed": 135,
+    "3330to60": 5.6,
+    "333Handling": 81,
+
+    "666TopSpeed": 138,
+    "6660to60": 5.2,
+    "666Handling": 83,
+
+    "969TopSpeed": 142,
+    "9690to60": 4.9,
+    "969Handling": 86
+}

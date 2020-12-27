@@ -1,0 +1,54 @@
+{
+    "rq": 71,
+    "make": "Pagani",
+    "model": "Zonda C12",
+    "modelYear": 1999,
+    "country": "IT",
+    "topSpeed": 186,
+    "0to60": 4.2,
+    "handling": 84,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Italian Icons", "Supercar"],
+    "isPrize": false,
+
+    "weight": 1250,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mid",
+    "fuelType": "Petrol",
+    "mra": 84.00,
+    "ola": 90.48,
+    "description": "The original politically incorrect Italian. By DodgeDemon",
+
+    "card": "https://cdn.discordapp.com/attachments/731698267573977099/783560398002847824/1999_Pagani_Zonda_C12.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/788916839593803866/zonda.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/788916862770741268/zonda333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/788916902922551306/zonda666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/788917022159405087/zonda996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/788916975615082536/zonda969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/788916944283631646/zonda699.png",
+
+    "333TopSpeed": 189,
+    "3330to60": 4.0,
+    "333Handling": 87,
+
+    "666TopSpeed": 192,
+    "6660to60": 3.8,
+    "666Handling": 90,
+
+    "996TopSpeed": 197,
+    "9960to60": 3.5,
+    "996Handling": 90,
+
+    "969TopSpeed": 196,
+    "9690to60": 3.6,
+    "969Handling": 93,
+
+    "699TopSpeed": 193,
+    "6990to60": 3.7,
+    "699Handling": 94
+}

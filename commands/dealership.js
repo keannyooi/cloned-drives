@@ -18,6 +18,7 @@ module.exports = {
 	aliases: ["deal", "dealer"],
 	usage: "(no arguments required)",
 	args: 0,
+	isExternal: true,
 	adminOnly: false,
 	description: "Check what's on sale in the car dealership here!",
 	async execute(message) {
@@ -85,8 +86,12 @@ module.exports = {
 				.setImage("attachment://dealership.png")
 				.setTimestamp();
 			for (i = 0; i < 8; i++) {
-				const currentCar = require(`./cars/${catalog[i].carFile}`);
-				const currentName = `${currentCar["make"]} ${currentCar["model"]} (${currentCar["modelYear"]})`;
+				let car = require(`./cars/${catalog[i].carFile}`);
+				let make = car["make"];
+				if (typeof make === "object") {
+					make = car["make"][0];
+				}
+				const currentName = `${make} ${car["model"]} (${car["modelYear"]})`;
 				deckScreen.addField(`${i + 1} - ${currentName}`, `Price: ${moneyEmoji}${catalog[i].price}`, true);
 			}
 			wait.delete();

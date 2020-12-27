@@ -9,7 +9,7 @@
     "handling": 86,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Muscle Car", "OG"],
+    "tags": ["American Wilds", "Muscle Car", "OG"],
     "isPrize": false,
 
     "weight": 2472,
@@ -28,7 +28,7 @@
     "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/774568816990093312/wideboi.jpg",
     "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/774568843069882368/wideboi_333.jpg",
     "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/774568858111442954/wideboi_666.jpg",
-    "racehud996": "",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/786769070077902928/wideboi996.png",
     "racehud969": "",
     "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/774568875885854740/wideboi_699.jpg",
 
@@ -42,5 +42,9 @@
 
     "699TopSpeed": 201,
     "6990to60": 3.4,
-    "699Handling": 95
+    "699Handling": 95,
+  
+    "996TopSpeed": 204,
+    "9960to60": 3.3,
+    "996Handling": 92
 }

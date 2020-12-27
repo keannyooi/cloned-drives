@@ -1,0 +1,61 @@
+﻿{
+    "rq": 13,
+    "make": "MG",
+    "model": "Midget 1500",
+    "modelYear": 1976,
+    "country": "GB",
+    "topSpeed": 83,
+    "0to60": 15.5,
+    "handling": 66,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 735,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 0.00,
+    "ola": 61.94,
+    "description": " The People’s Ferrari. As the ads said. Card by Spence",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/789721602090074122/image0.jpg?width=705&height=438",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/789721681093984276/image0.jpg?width=705&height=440",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/789721707249401877/image0.jpg?width=705&height=440",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/789721729202651156/image0.jpg?width=705&height=440",
+    "racehud996": "",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/789721749654470676/image0.jpg?width=705&height=440",
+    "racehud699": "",
+
+
+    "333TopSpeed": 85,
+    "3330to60": 14.1,
+    "333Handling": 68,
+
+
+    "666TopSpeed": 88,
+    "6660to60": 12.8,
+    "666Handling": 71,
+
+
+    "996TopSpeed": 0,
+    "9960to60": 0,
+    "996Handling": 0,
+
+
+    "969TopSpeed": 90,
+    "9690to60": 11.4,
+    "969Handling": 73,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

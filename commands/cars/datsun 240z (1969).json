@@ -1,6 +1,6 @@
 {
     "rq": 19,
-    "make": "Datsun",
+    "make": ["Datsun", "Nissan"],
     "model": "240Z",
     "modelYear": 1969,
     "country": "JP",

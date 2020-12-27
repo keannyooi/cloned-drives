@@ -14,6 +14,7 @@ module.exports = {
     name: "decks",
     usage: "<(optional) name of deck>",
     args: 0,
+	isExternal: true,
     adminOnly: false,
     description: "Shows your decks.",
     async execute(message, args) {
@@ -48,9 +49,13 @@ module.exports = {
                     }
                     else {
                         console.log(decks[i].hand[x].carFile);
-                        var currentCar = require(`./cars/${decks[i].hand[x].carFile}`);
-                        var rarity = rarityCheck(currentCar);
-                        handList[i] += `(${rarity} ${currentCar["rq"]}) ` + currentCar["make"] + " " + currentCar["model"] + " (" + currentCar["modelYear"] + ") [" + decks[i].hand[x].gearingUpgrade + decks[i].hand[x].engineUpgrade + decks[i].hand[x].chassisUpgrade + "]\n";
+                        let currentCar = require(`./cars/${decks[i].hand[x].carFile}`);
+                        let rarity = rarityCheck(currentCar);
+						let make = currentCar["make"];
+						if (typeof make === "object") {
+							make = currentCar["make"][0];
+						}
+                        handList[i] += `(${rarity} ${currentCar["rq"]}) ${make} ${currentCar["model"]} (${currentCar["modelYear"]}) [${decks[i].hand[x].gearingUpgrade}${decks[i].hand[x].engineUpgrade}${decks[i].hand[x].chassisUpgrade}]\n`;
                     }
                 }
 
@@ -144,9 +149,13 @@ module.exports = {
                         const car = require(`./cars/${currentDeck.hand[i].carFile}`);
                         var racehud = await Canvas.loadImage(car[`racehud${currentDeck.hand[i].gearingUpgrade}${currentDeck.hand[i].engineUpgrade}${currentDeck.hand[i].chassisUpgrade}`]);
                         var rarity = rarityCheck(car);
+						let make = car["make"];
+						if (typeof make === "object") {
+							make = car["make"][0];
+						}
 
                         ctx.drawImage(racehud, handPlacement[i].x, handPlacement[i].y, 334, 203);
-                        handList += `(${rarity} ${car["rq"]}) ${car["make"]} ${car["model"]} (${car["modelYear"]}) [${currentDeck.hand[i].gearingUpgrade}${currentDeck.hand[i].engineUpgrade}${currentDeck.hand[i].chassisUpgrade}]\n`;
+                        handList += `(${rarity} ${car["rq"]}) ${make} ${car["model"]} (${car["modelYear"]}) [${currentDeck.hand[i].gearingUpgrade}${currentDeck.hand[i].engineUpgrade}${currentDeck.hand[i].chassisUpgrade}]\n`;
                     }
                 }
 

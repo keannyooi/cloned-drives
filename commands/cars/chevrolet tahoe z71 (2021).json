@@ -1,0 +1,54 @@
+{
+    "rq": 54,
+    "make": "Chevrolet",
+    "model": "Tahoe Z71",
+    "modelYear": 2021,
+    "country": "US",
+    "topSpeed": 115,
+    "0to60": 7.5,
+    "handling": 61,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["American Wilds", "Year of the Ox"],
+    "isPrize": false,
+
+    "weight": 2661,
+    "gc": "High",
+    "seatCount": 7,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 57.69,
+    "ola": 66.67,
+    "description": "The latest version of Chevy's offroader, now with added offroad. By DodgeDemon",
+
+    "card": "https://cdn.discordapp.com/attachments/731698267573977099/786448554632806400/2021_Chevy_Tahoe_Z71.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/788197621226405899/tahoe.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/788197635446013952/tahoe333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/788197650343657502/tahoe666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/788197731792715776/tahoe996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/788197705767452672/tahoe969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/788197680277880842/tahoe699.png",
+
+    "333TopSpeed": 118,
+    "3330to60": 7.1,
+    "333Handling": 64,
+
+    "666TopSpeed": 121,
+    "6660to60": 6.7,
+    "666Handling": 67,
+
+    "996TopSpeed": 125,
+    "9960to60": 6.3,
+    "996Handling": 67,
+
+    "969TopSpeed": 123,
+    "9690to60": 6.4,
+    "969Handling": 70,
+
+    "699TopSpeed": 122,
+    "6990to60": 6.5,
+    "699Handling": 71
+}

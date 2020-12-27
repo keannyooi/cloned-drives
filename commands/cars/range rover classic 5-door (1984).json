@@ -1,6 +1,6 @@
 {
     "rq": 36,
-    "make": "Range Rover",
+    "make": ["Range Rover", "Land Rover"],
     "model": "Classic 5-Door",
     "modelYear": 1984,
     "country": "GB",

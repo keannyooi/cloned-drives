@@ -13,6 +13,7 @@ module.exports = {
     name: "addmoney",
     usage: "<username> <amount here>",
     args: 2,
+	isExternal: false,
     adminOnly: true,
     description: "Adds a certain amount of money to someone's cash balance.",
     async execute(message, args) {

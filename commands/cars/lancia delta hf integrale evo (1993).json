@@ -1,0 +1,60 @@
+{
+    "rq": 52,
+    "make": "Lancia",
+    "model": "Delta HF Integrale Evo",
+    "modelYear": 1993,
+    "country": "IT",
+    "topSpeed": 136,
+    "0to60": 5.6,
+    "handling": 75,
+    "driveType": "4WD",
+    "tyreType": "Performance",	"tags": ["Hot Hatch", "Italian Icons"],
+    "isPrize": false,
+
+
+    "weight": 1340,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 62.92,
+    "ola": 75.00,
+    "description": "The rally champion but in street form. Card by Havvy",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/789748633435111434/LanciaDeltaHFIntegraleEvo.png?width=705&height=439",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/789748144245702656/LanciaDeltaHFStock.png?width=705&height=441",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/789748180732477470/LanciaDeltaHF333.png?width=705&height=441",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/789748211023740959/LanciaDeltaHF666.png?width=705&height=441",
+    "racehud996": "",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/789748260347576350/LanciaDeltaHF969.png?width=705&height=441",
+    "racehud699": "",
+
+
+    "333TopSpeed": 139,
+    "3330to60": 5.3,
+    "333Handling": 78,
+
+
+    "666TopSpeed": 142,
+    "6660to60": 5.0,
+    "666Handling": 81,
+
+
+    "996TopSpeed": 0,
+    "9960to60": 0,
+    "996Handling": 0,
+
+
+    "969TopSpeed": 146,
+    "9690to60": 4.7,
+    "969Handling": 84,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

@@ -1,0 +1,61 @@
+﻿{
+    "rq": 60,
+    "make": "Acura",
+    "model": "TL 3.2",
+    "modelYear": 2004,
+    "country": "US",
+    "topSpeed": 134,
+    "0to60": 5.8,
+    "handling": 80,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1580,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 63.74,
+    "ola": 89.66,
+    "description": "The third ultimate under 35k sedan for car and driver. Card by Connor",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/792145276726280222/B.AcuraTL32.png?width=1154&height=718",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/792145898590175262/TL32St.png",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/792145915762442281/TL3231.png",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/792145940726415360/TL3232.png",
+    "racehud996": "",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/792145951879069726/TL32323.png",
+    "racehud699": "",
+
+
+    "333TopSpeed": 138,
+    "3330to60": 5.5,
+    "333Handling": 83,
+
+
+    "666TopSpeed": 142,
+    "6660to60": 5.1,
+    "666Handling": 86,
+
+
+    "996TopSpeed": 0,
+    "9960to60": 0,
+    "996Handling": 0,
+
+
+    "969TopSpeed": 145,
+    "9690to60": 4.8,
+    "969Handling": 89,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

@@ -1,0 +1,46 @@
+{
+    "rq": 51,
+    "make": "BMW",
+    "model": "325i",
+    "modelYear": 2001,
+    "country": "DE",
+    "topSpeed": 149,
+    "0to60": 7.0,
+    "handling": 80,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+  	"tags": [],
+    "isPrize": false,
+
+    "weight": 1470,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 56.45,
+    "ola": 85.71,
+    "description": "The second ultimate under 35k sedan foConnorr and driver. Card by Andu",
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/792145120958349342/B.BMW325iE46.png",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/792145659019919422/325iSt.png",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/792145670566969344/325i1.png",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/792145682320195584/325i2.png",
+    "racehud996": "",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/792145697864024084/325i323.png",
+    "racehud699": "",
+
+    "333TopSpeed": 153,
+    "3330to60": 6.6,
+    "333Handling": 83,
+
+    "666TopSpeed": 157,
+    "6660to60": 6.1,
+    "666Handling": 86,
+
+    "969TopSpeed": 161,
+    "9690to60": 5.7,
+    "969Handling": 89
+}

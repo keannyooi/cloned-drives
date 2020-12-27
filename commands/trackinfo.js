@@ -16,6 +16,7 @@ module.exports = {
     aliases: ["tinfo"],
     usage: "<track name goes here>",
     args: 1,
+	isExternal: true,
     adminOnly: false,
     description: "Shows info about a specified track.",
     execute(message, args) {

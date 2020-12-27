@@ -14,6 +14,7 @@ module.exports = {
     aliases: ["rl"],
     usage: "<command here>",
     args: 1,
+	isExternal: false,
     adminOnly: true,
     description: "Reloads a command.",
     execute(message, args) {

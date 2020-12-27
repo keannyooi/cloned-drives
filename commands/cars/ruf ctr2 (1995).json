@@ -1,0 +1,50 @@
+{
+    "rq": 85,
+    "make": "RUF",
+    "model": "CTR2",
+    "modelYear": 1995,
+    "country": "DE",
+    "topSpeed": 221,
+    "0to60": 3.6,
+    "handling": 85,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1358,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 90,
+    "ola": 83.33,
+    "description": "RUF's 90s weapon. By Bnuuy",
+
+    "card": "https://cdn.discordapp.com/attachments/731698267573977099/787685353116794960/rufctr2corrected.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/791070829151780906/ctr2.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/791070842570276864/ctr2333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/791070855790592000/ctr2666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/791070913185185822/ctr2996.png",
+    "racehud969": "",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/791070893332889610/ctr2699.png",
+
+    "333TopSpeed": 224,
+    "3330to60": 3.4,
+    "333Handling": 88,
+
+    "666TopSpeed": 227,
+    "6660to60": 3.2,
+    "666Handling": 91,
+
+    "996TopSpeed": 230,
+    "9960to60": 3.0,
+    "996Handling": 91,
+
+    "699TopSpeed": 228,
+    "6990to60": 3.1,
+    "699Handling": 95
+}

@@ -1,0 +1,46 @@
+{
+    "rq": 98,
+    "make": "Lamborghini",
+    "model": "Huracan Evo",
+    "modelYear": 2019,
+    "country": "IT",
+    "topSpeed": 202,
+    "0to60": 2.5,
+    "handling": 93,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Supercar"],
+    "isPrize": false,
+
+    "weight": 1641,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 78.13,
+    "ola": 104,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/731698267573977099/784529996756156426/2019_Lamborghini_Huracan_EVO.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/788226498494201896/evo.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/788226515027755008/evo333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/788226531855433728/evo666.png",
+    "racehud996": "",
+    "racehud969": "",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/788226566428950628/evo699.png",
+
+    "333TopSpeed": 205,
+    "3330to60": 2.4,
+    "333Handling": 96,
+
+    "666TopSpeed": 207,
+    "6660to60": 2.2,
+    "666Handling": 100,
+
+    "699TopSpeed": 209,
+    "6990to60": 2.1,
+    "699Handling": 103
+}

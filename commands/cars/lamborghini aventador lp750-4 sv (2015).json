@@ -1,7 +1,7 @@
 {
     "rq": 98,
     "make": "Lamborghini",
-    "model": "Aventador SV",
+    "model": "Aventador LP750-4 SV",
     "modelYear": 2015,
     "country": "IT",
     "topSpeed": 217,
@@ -9,7 +9,7 @@
     "handling": 92,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [],
+    "tags": ["Italian Icons", "Supercar", "Track Day"],
     "isPrize": false,
 
     "weight": 1525,
@@ -24,13 +24,13 @@
     "ola": 84.62,
     "description": "",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/753176572218966096/lamborghini_aventador_sv.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/753239977827238028/lamborghini_aventador_sv.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/753240018876628992/lamborghini_aventador_sv_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/753240028163080352/lamborghini_aventador_sv_666.jpg",
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/788196425753821194/2015_Lamborghini_Avantador_SV.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/788198181694341151/aventsv.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/788198200087019531/aventsv333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/788198216973287434/avent666.png",
     "racehud996": "",
     "racehud969": "",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/753240039873445918/lamborghini_aventador_sv_699.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/788198255124545616/aventsv699.png",
 
     "333TopSpeed": 219,
     "3330to60": 2.5,

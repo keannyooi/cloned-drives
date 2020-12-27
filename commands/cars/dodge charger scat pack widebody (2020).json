@@ -1,0 +1,46 @@
+{
+    "rq": 72,
+    "make": "Dodge",
+    "model": "Charger Scat Pack Widebody",
+    "modelYear": 2020,
+    "country": "US",
+    "topSpeed": 175,
+    "0to60": 4.3,
+    "handling": 88,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["American Wilds", "Muscle Car"],
+    "isPrize": false,
+
+    "weight": 1991,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 77.59,
+    "ola": 80.00,
+    "description": "Not quite a Hellcat. By DodgeDemon",
+
+    "card": "https://cdn.discordapp.com/attachments/731698267573977099/762723987826278420/2020_Dodge_Charger_Scat_Pack_Widebody.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/789741129142370334/DodgeChargerSPWidebodyStock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/789741165074579496/DodgeChargerSPWidebody333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/789741218481307688/DodgeChargerSPWidebody666.png",
+    "racehud996": "",
+    "racehud969": "",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/789741261447757824/DodgeChargerSPWidebody699.png",
+
+    "333TopSpeed": 178,
+    "3330to60": 4.1,
+    "333Handling": 91,
+
+    "666TopSpeed": 181,
+    "6660to60": 3.9,
+    "666Handling": 94,
+
+    "699TopSpeed": 184,
+    "6990to60": 3.6,
+    "699Handling": 98
+}

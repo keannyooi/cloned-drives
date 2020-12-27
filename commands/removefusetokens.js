@@ -14,6 +14,7 @@ module.exports = {
     aliases: ["rmvfusetokens", "rft"],
     usage: "<username> <amount here>",
     args: 2,
+	isExternal: false,
     adminOnly: true,
     description: "Removes a certain amount of fuse tokens from someone.",
     async execute(message, args) {

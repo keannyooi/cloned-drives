@@ -18,6 +18,7 @@ module.exports = {
     aliases: ["qr"],
     usage: "<track name goes here>",
     args: 1,
+	isExternal: true,
     adminOnly: false,
     cooldown: 10,
     description: "Does a quick race where you can choose the trackset and the opponent car. Great for testing out cars.",
@@ -49,8 +50,8 @@ module.exports = {
             return trackset.every(part => track.includes(part));
         });
 
+		var currentTrack;
         if (searchResults.length > 1) {
-            var currentTrack = require(`./tracksets/${searchResults[0]}`);
             var trackList = "";
             for (i = 1; i <= searchResults.length; i++) {
                 let track = require(`./tracksets/${searchResults[i - 1]}`);
@@ -108,6 +109,7 @@ module.exports = {
             });
         }
         else if (searchResults.length > 0) {
+			currentTrack = require(`./tracksets/${searchResults[0]}`);
             chooseOpponent();
         }
         else {
@@ -154,7 +156,11 @@ module.exports = {
                         var carList = "";
                         for (i = 1; i <= searchResults.length; i++) {
                             const car = require(`./cars/${searchResults[i - 1]}`);
-                            carList += `${i} - ${car["make"]} ${car["model"]} (${car["modelYear"]})\n`
+							let make = car["make"];
+							if (typeof make === "object") {
+								make = car["make"][0];
+							}
+                            carList += `${i} - ${make} ${car["model"]} (${car["modelYear"]})\n`
                         }
 
                         if (carList.length > 2048) {
@@ -233,10 +239,14 @@ module.exports = {
 
         async function upgrade(currentCar, currentMessage2) {
             const car = require(`./cars/${currentCar}`);
+			let make = car["make"];
+			if (typeof make === "object") {
+				make = car["make"][0];
+			}
             const chooseScreen = new Discord.MessageEmbed()
                 .setColor("#34aeeb")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle(`${car["make"]} ${car["model"]} (${car["modelYear"]}) selected!`)
+                .setTitle(`${make} ${car["model"]} (${car["modelYear"]}) selected!`)
                 .setDescription("Select a tune your opponent's car (that is, any tune that is either `stock`, `333`, `666`, `996`, `969` or `699`).")
                 .setImage(car["card"])
                 .setTimestamp();
@@ -253,7 +263,9 @@ module.exports = {
                         case "996":
                         case "969":
                         case "699":
-                            if (car[`racehudMaxed${collected.first().content.toLowerCase()}`] === "") {
+						case "666":
+                        case "333":
+                            if (car[`racehud${collected.first().content.toLowerCase()}`] === "") {
                                 collected.first().delete();
                                 const errorScreen = new Discord.MessageEmbed()
                                     .setColor("#fc0303")
@@ -269,13 +281,6 @@ module.exports = {
                                 engineUpgrade = parseInt(upgrade[1]);
                                 chassisUpgrade = parseInt(upgrade[2]);
                             }
-                            break;
-                        case "666":
-                        case "333":
-                            let upgrade = collected.first().content.split("");
-                            gearingUpgrade = parseInt(upgrade[0]);
-                            engineUpgrade = parseInt(upgrade[1]);
-                            chassisUpgrade = parseInt(upgrade[2]);
                             break;
                         case "stock":
                             break;
@@ -311,7 +316,11 @@ module.exports = {
             function createList(currentCar) {
                 const car = require(`./cars/${currentCar.carFile}`);
                 const rarity = rarityCheck(car);
-                var carSpecs = `(${rarity} ${car["rq"]}) ${car["make"]} ${car["model"]} (${car["modelYear"]}) [${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}]\n`;
+				let make = car["make"];
+				if (typeof make === "object") {
+					make = car["make"][0];
+				}
+                let carSpecs = `(${rarity} ${car["rq"]}) ${make} ${car["model"]} (${car["modelYear"]}) [${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}]\n`;
 
                 if (currentCar.gearingUpgrade > 0) {
                     carSpecs += `Top Speed: ${car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}TopSpeed`]}MPH\n`;
@@ -359,7 +368,7 @@ module.exports = {
                 if (carModule.topSpeed < 100) {
                     carModule.mra = 0;
                 }
-                if (carModule.topSpeed < 60) {
+                if (carModule.topSpeed < 30) {
                     carModule.ola = 0;
                 }
                 return carModule;

@@ -11,8 +11,9 @@ const Discord = require("discord.js-light");
 
 module.exports = {
     name: "removefromdeck",
-    usage: "<deck name goes here> <index>",
+    usage: "<deck name goes here> | <index>",
     args: 2,
+	isExternal: true,
     adminOnly: false,
     description: 'Removes a car from a specified slot in a specifed deck. (NOTE: Deck names cannot contain spaces, use underscores "_" instead)',
     async execute(message, args) {

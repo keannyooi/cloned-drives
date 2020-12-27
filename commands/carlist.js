@@ -15,6 +15,7 @@ module.exports = {
     aliases: ["allcars"],
     usage: "(all optional) <page number> | -s <sorting criteria>",
     args: 0,
+	isExternal: true,
     adminOnly: false,
     description: "Shows all the cars that are available in Cloned Drives in list form.",
     async execute(message, args) {
@@ -134,8 +135,14 @@ module.exports = {
             const carA = require(`./cars/${a}`);
             const carB = require(`./cars/${b}`);
             if (carA[sortBy] === carB[sortBy]) {
-                const nameA = carA["make"].toLowerCase() + carA["model"].toLowerCase();
-                const nameB = carB["make"].toLowerCase() + carB["model"].toLowerCase();
+                let nameA = `${carA["make"]} ${carA["model"]}`.toLowerCase();
+                let nameB = `${carA["make"]} ${carA["model"]}`.toLowerCase();
+				if (typeof carA["make"] === "object") {
+					nameA = `${carA["make"][0]} ${carA["model"]}`.toLowerCase();
+				}
+				if (typeof carB["make"] === "object") {
+					nameB = `${carB["make"][0]} ${carB["model"]}`.toLowerCase();
+				}
 
                 if (nameA < nameB) {
                     return -1;
@@ -309,7 +316,11 @@ module.exports = {
                 const currentCar = require(`./cars/${carFiles[i]}`);
                 const rarity = rarityCheck(currentCar);
 
-                carList += `(${rarity} ${currentCar["rq"]}) ` + currentCar["make"] + " " + currentCar["model"] + " (" + currentCar["modelYear"] + ")";
+				let make = currentCar["make"];
+				if (typeof make === "object") {
+					make = currentCar["make"][0];
+				}
+                carList += `(${rarity} ${currentCar["rq"]}) ${make} ${currentCar["model"]} (${currentCar["modelYear"]})`;
                 if (currentCar["isPrize"]) {
                     carList += ` ${trophyEmoji}`;
                 }
@@ -317,7 +328,7 @@ module.exports = {
                     valueList += `\`${currentCar[sortBy]}\`\n`;
                 }
                 if (ownedCars.some(car => carFiles[i].includes(car))) {
-                    carList += " ✅ \n";
+                    carList += " ✅\n";
                 }
                 else {
                     carList += "\n";

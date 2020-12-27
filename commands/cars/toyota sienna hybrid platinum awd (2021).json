@@ -1,0 +1,46 @@
+{
+    "rq": 47,
+    "make": "Toyota",
+    "model": "Sienna Hybrid Platinum AWD",
+    "modelYear": 2021,
+    "country": "JP",
+    "topSpeed": 116,
+    "0to60": 7.7,
+    "handling": 71,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly", "Year of the Ox"],
+    "isPrize": false,
+
+    "weight": 2187,
+    "gc": "Medium",
+    "seatCount": 7,
+    "bodyStyle": "Minivan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 57.89,
+    "ola": 71.42,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/733973415366623274/779283457326055445/Toyota_Sienna_Hybrid_Platinum_AWD_2021.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/788176996861607936/Sienna.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/788177029685182464/Sienna333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/788177069682851841/Sienna666.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/788177097469329518/Sienna969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 119,
+    "3330to60": 7.4,
+    "333Handling": 74,
+
+    "666TopSpeed": 122,
+    "6660to60": 7.1,
+    "666Handling": 77,
+
+    "969TopSpeed": 125,
+    "9690to60": 6.8,
+    "969Handling": 80
+}

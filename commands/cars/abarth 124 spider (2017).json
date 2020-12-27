@@ -1,6 +1,6 @@
 {
     "rq": 45,
-    "make": "Abarth",
+    "make": ["Abarth", "Fiat"],
     "model": "124 Spider",
     "modelYear": 2017,
     "country": "IT",
@@ -22,7 +22,7 @@
     "fuelType": "Petrol",
     "mra": 55.75,
     "ola": 66.67,
-    "description": "",
+    "description": "Not satisfied with the 124 being just an Italian Miata, Abarth added more vroom to it. Card by Macan",
 
     "card": "https://cdn.discordapp.com/attachments/715782088271331398/778231006754897920/Abarth_124_Spider_2017.png",
     "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/778187074305261579/Abarth_124_Spider_2017_000.png",

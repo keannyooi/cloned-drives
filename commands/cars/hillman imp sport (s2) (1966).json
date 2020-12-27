@@ -1,0 +1,46 @@
+{
+    "rq": 11,
+    "make": "Hillman",
+    "model": "Imp Sport (S2)",
+    "modelYear": 1966,
+    "country": "GB",
+    "topSpeed": 86,
+    "0to60": 17.9,
+    "handling": 61,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 747,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 0.00,
+    "ola": 54.75,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/788108831024611378/Hillmanimpsport.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/788108903849656350/impsport.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/788108916885422090/impsport333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/788108929888026634/impsport666.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/788108971365236786/impsport969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 89,
+    "3330to60": 16.7,
+    "333Handling": 64,
+
+    "666TopSpeed": 92,
+    "6660to60": 15.5,
+    "666Handling": 67,
+
+    "969TopSpeed": 95,
+    "9690to60": 14.5,
+    "969Handling": 70
+}

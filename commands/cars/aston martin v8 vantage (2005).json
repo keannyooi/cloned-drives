@@ -1,0 +1,46 @@
+{
+    "rq": 60,
+    "make": "Aston Martin",
+    "model": "V8 Vantage",
+    "modelYear": 2005,
+    "country": "GB",
+    "topSpeed": 175,
+    "0to60": 4.7,
+    "handling": 84,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1630,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 65.42,
+    "ola": 81.43,
+    "description": "The most successful Aston Martin model ever. Card by keanny",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/790086784192348169/aston_martin_v8_vantage.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/790163932584214528/aston_martin_v8_vantage.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/790163977065725972/aston_martin_v8_vantage_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/790163993762725898/aston_martin_v8_vantage_666.jpg",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/790164008103575552/aston_martin_v8_vantage_969.jpg",
+    "racehud699": "",
+
+    "333TopSpeed": 178,
+    "3330to60": 4.4,
+    "333Handling": 87,
+
+    "666TopSpeed": 181,
+    "6660to60": 4.1,
+    "666Handling": 90,
+
+    "969TopSpeed": 184,
+    "9690to60": 3.9,
+    "969Handling": 93
+}

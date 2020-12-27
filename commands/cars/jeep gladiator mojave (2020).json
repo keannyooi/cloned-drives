@@ -1,0 +1,46 @@
+{
+    "rq": 52,
+    "make": "Jeep",
+    "model": "Gladiator Mojave",
+    "modelYear": 2020,
+    "country": "US",
+    "topSpeed": 97,
+    "0to60": 8.5,
+    "handling": 65,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["American Wilds"],
+    "isPrize": false,
+
+    "weight": 2347,
+    "gc": "High",
+    "seatCount": 4,
+    "bodyStyle": "Pickup",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 53.13,
+    "ola": 65.88,
+    "description": "If you ever need to take a sofa up the Rubicon, here's your car. By Dodgedemon",
+
+    "card": "https://cdn.discordapp.com/attachments/733973415366623274/787526707678543872/2020_Jeep_Mojave.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/788225872284221440/Gladiator.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/788225872284221440/Gladiator.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/788225900189450240/Gladiator666.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/788225925699207189/Gladiator969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 100,
+    "3330to60": 8.1,
+    "333Handling": 68,
+
+    "666TopSpeed": 103,
+    "6660to60": 7.7,
+    "666Handling": 71,
+
+    "969TopSpeed": 105,
+    "9690to60": 7.4,
+    "969Handling": 74
+}

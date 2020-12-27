@@ -13,6 +13,7 @@ module.exports = {
 	name: "rewards",
 	usage: "(no arguments required)",
 	args: 0,
+	isExternal: true,
 	adminOnly: false,
 	description: "Collect your race rewards with this command!",
 	async execute(message) {
@@ -61,7 +62,11 @@ module.exports = {
 
 					const currentCar = require(`./cars/${rewards.cars[i]}`);
 					const rarity = rarityCheck(currentCar);
-					carList += `(${rarity} ${currentCar["rq"]}) ${currentCar["make"]} ${currentCar["model"]} (${currentCar["modelYear"]})\n`
+					let make = currentCar["make"];
+					if (typeof make === "object") {
+						make = currentCar["make"][0];
+					}
+					carList += `(${rarity} ${currentCar["rq"]}) ${make} ${currentCar["model"]} (${currentCar["modelYear"]})\n`
 				}
 				infoScreen.addField("Claimed Cars", carList);
 				rewards.cars = [];

@@ -14,6 +14,7 @@ module.exports = {
     aliases: ["lb", "leader", "leaderboard", "lead"],
     usage: "<criteria> (optional) <page number>",
     args: 1,
+	isExternal: false,
     adminOnly: false,
     description: "Shows the server's leaderboards.",
     async execute(message, args) {

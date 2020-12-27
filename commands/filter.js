@@ -15,8 +15,9 @@ module.exports = {
 	name: "filter",
 	usage: "<criteria>",
 	args: 1,
+	isExternal: true,
 	adminOnly: false,
-	description: "Sets up a filter for car lists. (WIP)",
+	description: "Sets up a filter for car lists.",
 	async execute(message, args) {
 		const db = message.client.db;
 		const criteria = args[0].toLowerCase().replace("type", "Type").replace("count", "Count").replace("year", "Year").replace("pos", "Pos").replace("prize", "Prize");

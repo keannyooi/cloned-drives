@@ -1,0 +1,50 @@
+{
+    "rq": 89,
+    "make": "BMW",
+    "model": "X6 M Competition",
+    "modelYear": 2020,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 3.3,
+    "handling": 87,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 2363,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.07,
+    "ola": 75.68,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/788106736666017832/rectfgh7774.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/788106822066241586/X6mcomp.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/788106840608866324/x6mcomp333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/788106854618103828/x6mcomp666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/788106917213241404/x6mcomp996.png",
+    "racehud969": "",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/788106892509577287/x6mcomp699.png",
+
+    "333TopSpeed": 158,
+    "3330to60": 3.1,
+    "333Handling": 90,
+
+    "666TopSpeed": 161,
+    "6660to60": 2.9,
+    "666Handling": 93,
+
+    "996TopSpeed": 165,
+    "9960to60": 2.7,
+    "996Handling": 94,
+
+    "699TopSpeed": 162,
+    "6990to60": 2.8,
+    "699Handling": 97
+}

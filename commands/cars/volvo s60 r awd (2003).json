@@ -1,0 +1,46 @@
+{
+    "rq": 61,
+    "make": "Volvo",
+    "model": "S60 R AWD",
+    "modelYear": 2003,
+    "country": "SE",
+    "topSpeed": 148,
+    "0to60": 5.5,
+    "handling": 79,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1686,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 65.48,
+    "ola": 87.27,
+    "description": "The ultimate Q-Car? By Macan",
+
+    "card": "https://cdn.discordapp.com/attachments/731698267573977099/778523265916207114/Volvo_S60_R_AWD_2003.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/788494481158569994/Volvo_S60_R_AWD_2003_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/788494564003938324/Volvo_S60_R_AWD_2003_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/788494573750976603/Volvo_S60_R_AWD_2003_666.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/788494589157048370/Volvo_S60_R_AWD_2003_969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 152,
+    "3330to60": 5.2,
+    "333Handling": 82,
+
+    "666TopSpeed": 156,
+    "6660to60": 4.9,
+    "666Handling": 85,
+
+    "969TopSpeed": 160,
+    "9690to60": 4.6,
+    "969Handling": 87
+}

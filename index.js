@@ -32,7 +32,7 @@ const starterCars = ["abarth 124 spider (2017).json", "range rover classic 5-doo
 const keepAlive = require('./server');
 
 for (const file of commandFiles) {
-	const command = require(`./commands/${file}`);
+	let command = require(`./commands/${file}`);
 	client.commands.set(command.name, command);
 }
 
@@ -41,12 +41,12 @@ client.once("ready", async () => {
 
 	const guild = client.guilds.cache.get("711769157078876305"); //don't mind me lmao
 	guild.members.cache.forEach(async user => {
-		if (await client.db.has(`acc${user.id}`) === null) {
+		if (await client.db.has(`acc${user.id}`) === false) {
 			console.log("creating new player's database...");
 			await client.db.set(`acc${user.id}`, { money: 0, fuseTokens: 0, trophies: 0, garage: [], decks: [], campaignProgress: { chapter: 0, part: 1, race: 1 }, unclaimedRewards: { money: 0, fuseTokens: 0, trophies: 0, cars: [] } });
 			var i = 0;
 			while (i < 5) {
-				var carFile = starterCars[i];
+				let carFile = starterCars[i];
 
 				await client.db.push(`acc${user.id}.garage`, { carFile: carFile, gearingUpgrade: 0, engineUpgrade: 0, chassisUpgrade: 0 });
 				i++;
@@ -58,9 +58,8 @@ client.once("ready", async () => {
 		const garage = await client.db.get(`acc${user.id}.garage`);
 		var i = 0;
 		while (i < garage.length) {
-			if (garage[i].carFile.includes("undefined")) {
-				console.log("hi there jezza");
-				garage.splice(i, 1);
+			if (garage[i].carFile === "lamborghini aventador svj lp770-4 (2018).json") {
+				garage[i].carFile = "lamborghini aventador lp770-4 svj (2018).json";
 			}
 			i++;
 		}
@@ -68,27 +67,31 @@ client.once("ready", async () => {
 		await client.db.delete(`acc${user.id}.filter`);
 	})
 
-	// const catalog = await client.db.get("dealershipCatalog");
-	// console.log(catalog);
-	// var i = 0;
-	// while (i < catalog.length) {
-	// 	if (catalog[i].carFile === "aston martin db11 v12 (2016)") {
-	// 		catalog[i].carFile = "aston martin db11 v12 (2017)";
-	// 	}
-	// 	i++;
-	// }
-	// await client.db.set("dealershipCatalog", catalog);
+	const catalog = await client.db.get("dealershipCatalog");
+	console.log(catalog);
+	var i = 0;
+	while (i < catalog.length) {
+	 	if (catalog[i].carFile === "audi s3 (2000)") {
+	 		catalog[i].carFile = "audi s3 (2001)";
+	 	}
+	 	i++;
+	}
+	await client.db.set("dealershipCatalog", catalog);
 
 	client.user.setActivity("over everyone's garages", { type: "WATCHING" });
+});
+
+client.on('rateLimit', (info) => {
+	console.log(`Rate limit hit ${info.timeDifference ? info.timeDifference : info.timeout ? info.timeout: 'Unknown timeout '}`);
 });
 
 if (backupMode) {
 	keepAlive();
 }
-client.login(token);
+client.login(token).catch(console.error);
 
 client.on("message", async message => {
-	if (!message.content.toLowerCase().startsWith(prefix) || message.author.bot || message.channel.type !== 'text') return;
+	if (!message.content.toLowerCase().startsWith(prefix) || message.author.bot) return;
 
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const commandName = args.shift().toLowerCase();
@@ -109,6 +112,24 @@ client.on("message", async message => {
 			.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 			.setTitle("Error, arguments provided insufficient or missing.")
 			.setDescription(`Here's the correct syntax: \`${prefix}${command.name} ${usage}\``)
+			.setTimestamp();
+		return message.channel.send(errorMessage);
+	}
+	else if (await client.db.has(`acc${message.author.id}`) === false) {
+		const errorMessage = new Discord.MessageEmbed()
+			.setColor("#fc0303")
+			.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+			.setTitle("Error, the bot has no record of you in the Cloned Drives discord server.")
+			.setDescription("Join the Discord server now to unlock access to the bot: https://discord.gg/PHgPyed")
+			.setTimestamp();
+		return message.channel.send(errorMessage);
+	}
+	else if (!command.isExternal && message.guild.id !== "711769157078876305") {
+		const errorMessage = new Discord.MessageEmbed()
+			.setColor("#fc0303")
+			.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+			.setTitle("Error, this command can only be executed in the Cloned Drives discord server.")
+			.setDescription("Link to Discord server: https://discord.gg/PHgPyed")
 			.setTimestamp();
 		return message.channel.send(errorMessage);
 	}
@@ -162,7 +183,7 @@ client.on("message", async message => {
 });
 
 client.on("guildMemberAdd", async member => {
-	if (await client.db.has(`acc${member.id}`) === null) {
+	if (await client.db.has(`acc${member.id}`) === false && member.guild.id === "711769157078876305") {
 		console.log("creating new player's database...");
 		await client.db.set(`acc${member.id}`, { money: 0, fuseTokens: 0, trophies: 0, garage: [], decks: [], campaignProgress: { chapter: 0, part: 1, race: 1 }, unclaimedRewards: { money: 0, fuseTokens: 0, trophies: 0, cars: [] } });
 		var i = 0;
@@ -174,12 +195,6 @@ client.on("guildMemberAdd", async member => {
 		}
 
 		console.log(member.id);
-	}
-	if (!await client.db.get(`acc${member.id}.unclaimedRewards`)) {
-		await client.db.set(`acc${member.id}.unclaimedRewards`, { money: 0, fuseTokens: 0, trophies: 0, cars: [] });
-	}
-	if (!await client.db.get(`acc${member.id}.campaignProgress`)) {
-		await client.db.set(`acc${member.id}.campaignProgress`, { chapter: 0, part: 1, race: 1 });
 	}
 });
 

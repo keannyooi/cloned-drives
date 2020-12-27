@@ -13,6 +13,7 @@ module.exports = {
     name: "addtodeck",
     usage: "<deck name goes here> <index> <car name goes here>",
     args: 3,
+	isExternal: true,
     adminOnly: false,
     description: 'Adds (or replaces) a car to a specified slot in a specifed deck. (NOTE: Deck names cannot contain spaces, use underscores "_" instead)',
     async execute(message, args) {
@@ -141,8 +142,12 @@ module.exports = {
             if (searchResults.length > 1) {
                 var carList = "";
                 for (i = 1; i <= searchResults.length; i++) {
-                    const car = require(`./cars/${searchResults[i - 1].carFile}`);
-                    carList += `${i} - ${car["make"]} ${car["model"]} (${car["modelYear"]}) [${searchResults[i - 1].gearingUpgrade}${searchResults[i - 1].engineUpgrade}${searchResults[i - 1].chassisUpgrade}]\n`;
+                    let car = require(`./cars/${searchResults[i - 1].carFile}`);
+					let make = car["make"];
+					if (typeof make === "object") {
+						make = car["make"][0];
+					}
+                    carList += `${i} - ${make} ${car["model"]} (${car["modelYear"]}) [${searchResults[i - 1].gearingUpgrade}${searchResults[i - 1].engineUpgrade}${searchResults[i - 1].chassisUpgrade}]\n`;
                 }
 
                 if (carList.length > 2048) {
@@ -222,7 +227,11 @@ module.exports = {
 
         async function addCar(currentCar, currentDeck, currentMessage) {
             const car = require(`./cars/${currentCar.carFile}`);
-            const currentName = `${car["make"]} ${car["model"]} (${car["modelYear"]}) [${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}]`;
+			let make = car["make"];
+			if (typeof make === "object") {
+				make = car["make"][0];
+			}
+            const currentName = `${make} ${car["model"]} (${car["modelYear"]}) [${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}]`;
             const racehud = car[`racehud${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}`];
 
             for (const deck of decks) {

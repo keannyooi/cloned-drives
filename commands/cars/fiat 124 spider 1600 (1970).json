@@ -1,0 +1,61 @@
+{
+    "rq": 15,
+    "make": "Fiat",
+    "model": "124 Spider 1600",
+    "modelYear": 1970,
+    "country": "IT",
+    "topSpeed": 106,
+    "0to60": 12.5,
+    "handling": 70,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Italian Icons", "Motorsport"],
+    "isPrize": false,
+
+
+    "weight": 960,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Spider",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 53.88,
+    "ola": 68.80,
+    "description": "A cheap fun Pininfarina spider that cost a penny . Card by Spence",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/789574473963536384/image0.jpg?width=705&height=439",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/789574579990298654/image0.jpg?width=705&height=440",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/789574600773730304/image0.jpg?width=705&height=440",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/789574624488849448/image0.jpg?width=705&height=440",
+    "racehud996": "",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/789574646893903923/image0.jpg?width=705&height=440",
+    "racehud699": "",
+
+
+    "333TopSpeed": 109,
+    "3330to60": 11.5,
+    "333Handling": 72,
+
+
+    "666TopSpeed": 112,
+    "6660to60": 10.5,
+    "666Handling": 75,
+
+
+    "996TopSpeed": 0,
+    "9960to60": 0,
+    "996Handling": 0,
+
+
+    "969TopSpeed": 115,
+    "9690to60": 9.6,
+    "969Handling": 77,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

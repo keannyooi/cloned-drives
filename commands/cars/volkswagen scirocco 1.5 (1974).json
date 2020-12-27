@@ -1,0 +1,61 @@
+﻿{
+    "rq": 15,
+    "make": "Volkswagen",
+    "model": "Scirocco 1.5",
+    "modelYear": 1974,
+    "country": "DE",
+    "topSpeed": 98,
+    "0to60": 12.0,
+    "handling": 65,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 780,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 0.00,
+    "ola": 60.00,
+    "description": "A Coupe for the people. Card by Andu",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/789564459827986503/SciroccoYellow.png?width=705&height=439",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/789073727627067392/Scirocco15St.png?width=705&height=441",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/789073757909942282/Scirocco151.png?width=705&height=441",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/789073775261384714/Scirocco152.png?width=705&height=441",
+    "racehud996": "",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/789073800154054706/Scirocco15323.png?width=705&height=441",
+    "racehud699": "",
+
+
+    "333TopSpeed": 101,
+    "3330to60": 11.1,
+    "333Handling": 67,
+
+
+    "666TopSpeed": 103,
+    "6660to60": 10.2,
+    "666Handling": 69,
+
+
+    "996TopSpeed": 0,
+    "9960to60": 0,
+    "996Handling": 0,
+
+
+    "969TopSpeed": 106,
+    "9690to60": 9.3,
+    "969Handling": 72,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

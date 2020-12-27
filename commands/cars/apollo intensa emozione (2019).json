@@ -1,6 +1,6 @@
 {
     "rq": 96,
-    "make": "Apollo",
+    "make": ["Apollo", "Gumpert"],
     "model": "Intensa Emozione",
     "modelYear": 2019,
     "country": "DE",
@@ -9,7 +9,7 @@
     "handling": 100,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [],
+    "tags": ["Track Day"],
     "isPrize": true,
 
     "weight": 1250,
@@ -21,8 +21,8 @@
     "enginePos": "Middle",
     "fuelType": "Petrol",
     "mra": 108,
-    "ola": "96.30",
-    "description": "",
+    "ola": 96.30,
+    "description": "The car purist's modern-day hypercar. Card by DodgeDemon",
 
     "card": "https://cdn.discordapp.com/attachments/715782088271331398/775815056537419806/2019_Appollo_IE.png",
     "racehud000": "https://media.discordapp.net/attachments/718097267621363744/775817609479847937/ApolloIEStock.png?width=760&height=475",

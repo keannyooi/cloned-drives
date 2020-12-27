@@ -14,6 +14,7 @@ module.exports = {
 	name: "daily",
 	usage: "(no arguments required)",
 	args: 0,
+	isExternal: true,
 	adminOnly: false,
 	description: "Collect your daily reward with this command!",
 	async execute(message) {

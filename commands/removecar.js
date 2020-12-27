@@ -12,8 +12,9 @@ const Discord = require("discord.js-light");
 module.exports = {
     name: "removecar",
     aliases: ["rmvcar"],
-    usage: "<username> <car name goes here>",
+    usage: "<username> | <car name goes here>",
     args: 2,
+	isExternal: false,
     adminOnly: true,
     description: "Removes a car from someone's garage. (data transferring)",
     async execute(message, args) {
@@ -80,7 +81,11 @@ module.exports = {
             var carList = "";
             for (i = 1; i <= searchResults.length; i++) {
                 const car = require(`./cars/${searchResults[i - 1].carFile}`);
-                carList += `${i} - ${car["make"]} ${car["model"]} (${car["modelYear"]}) [${searchResults[i - 1].gearingUpgrade}${searchResults[i - 1].engineUpgrade}${searchResults[i - 1].chassisUpgrade}]\n`;
+				let make = car["make"];
+				if (typeof make === "object") {
+					make = car["make"][0];
+				}
+                carList += `${i} - ${make} ${car["model"]} (${car["modelYear"]}) [${searchResults[i - 1].gearingUpgrade}${searchResults[i - 1].engineUpgrade}${searchResults[i - 1].chassisUpgrade}]\n`;
             }
 
             if (carList.length > 2048) {
@@ -149,7 +154,11 @@ module.exports = {
 
         async function removeCar(currentCar, currentMessage) {
             const car = require(`./cars/${currentCar.carFile}`);
-            const currentName = `${car["make"]} ${car["model"]} (${car["modelYear"]}) [${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}]`;
+			let make = car["make"];
+			if (typeof make === "object") {
+				make = car["make"][0];
+			}
+            const currentName = `${make} ${car["model"]} (${car["modelYear"]}) [${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}]`;
 
             const confirmationMessage = new Discord.MessageEmbed()
                 .setColor("#34aeeb")

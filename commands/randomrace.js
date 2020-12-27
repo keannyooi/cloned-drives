@@ -17,12 +17,13 @@ module.exports = {
 	aliases: ["rr"],
 	usage: "(no arguments required)",
 	args: 0,
+	isExternal: true,
 	adminOnly: false,
 	cooldown: 15,
 	description: "Does a random race where you are faced with a randomly generated opponent on a randomly generated track. May the RNG be with you.",
 	async execute(message) {
 		const db = message.client.db;
-		const moneyEmoji = message.guild.emojis.cache.find(emoji => emoji.name === "money");
+		const moneyEmoji = message.client.emojis.cache.get("726017235826770021");
 		const filter = (reaction, user) => {
 			return (reaction.emoji.name === "✅" || reaction.emoji.name === "❎" || reaction.emoji.name === "⏩") && user.id === message.author.id;
 		};
@@ -142,8 +143,12 @@ module.exports = {
 
 		function createList(currentCar) {
 			const car = require(`./cars/${currentCar.carFile}`);
+			let make = car["make"];
+			if (typeof make === "object") {
+				make = car["make"][0];
+			}
 			const rarity = rarityCheck(car);
-			var carSpecs = `(${rarity} ${car["rq"]}) ${car["make"]} ${car["model"]} (${car["modelYear"]}) [${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}]\n`;
+			var carSpecs = `(${rarity} ${car["rq"]}) ${make} ${car["model"]} (${car["modelYear"]}) [${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}]\n`;
 
 			if (currentCar.gearingUpgrade > 0) {
 				carSpecs += `Top Speed: ${car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}TopSpeed`]}MPH\n`;
@@ -191,7 +196,7 @@ module.exports = {
 			if (carModule.topSpeed < 100) {
 				carModule.mra = 0;
 			}
-			if (carModule.topSpeed < 60) {
+			if (carModule.topSpeed < 30) {
 				carModule.ola = 0;
 			}
 			return carModule;
@@ -201,7 +206,12 @@ module.exports = {
 			trackset = tracksets[Math.floor(Math.random() * tracksets.length)];
 			playerData.rrTrackset = trackset;
 
-			const opponentCarFile = carFiles[Math.floor(Math.random() * carFiles.length)];
+			let opponentCarFile = carFiles[Math.floor(Math.random() * carFiles.length)];
+		    let hmm = require(`./cars/${opponentCarFile}`);
+			while (hmm["isPrize"] === true) {
+				opponentCarFile = carFiles[Math.floor(Math.random() * carFiles.length)];
+		    	hmm = require(`./cars/${opponentCarFile}`);
+			}
 			const upgradeIndex = Math.floor(Math.random() * 4);
 			var upgradePattern = [0, 0, 0];
 			switch (upgradeIndex) {

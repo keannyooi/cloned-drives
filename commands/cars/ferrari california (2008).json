@@ -1,0 +1,46 @@
+{
+    "rq": 76,
+    "make": "Ferrari",
+    "model": "California",
+    "modelYear": 2008,
+    "country": "IT",
+    "topSpeed": 193,
+    "0to60": 3.5,
+    "handling": 86,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Italian Icons"],
+    "isPrize": false,
+
+    "weight": 1780,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Roadster",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 68.63,
+    "ola": 74.29,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/788176491904106546/FerrariCalifornia.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/788176790094479410/california.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/788176803613114449/california333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/788176827465596978/california666.png",
+    "racehud996": "",
+    "racehud969": "",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/788176867324461076/california699.png",
+
+    "333TopSpeed": 196,
+    "3330to60": 3.3,
+    "333Handling": 89,
+
+    "666TopSpeed": 199,
+    "6660to60": 3.2,
+    "666Handling": 92,
+
+    "699TopSpeed": 200,
+    "6990to60": 3.1,
+    "699Handling": 96
+}

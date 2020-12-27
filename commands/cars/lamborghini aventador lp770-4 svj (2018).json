@@ -1,0 +1,54 @@
+{
+    "rq": 98,
+    "make": "Lamborghini",
+    "model": "Aventador LP770-4 SVJ",
+    "modelYear": 2018,
+    "country": "IT",
+    "topSpeed": 217,
+    "0to60": 2.7,
+    "handling": 93,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Italian Icons", "Supercar", "Track Day"],
+    "isPrize": true,
+
+    "weight": 1525,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 96.43,
+    "ola": 96.30,
+    "description": "The ultimate Aventador. Card by DodgeDemon",
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/789748883412353071/2018_Lamborghini_Aventador_SVJ.png?width=705&height=439",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/789747703525015612/LamborghiniAventadorSVJStock.png?width=705&height=441",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/789747736932909066/LamborghiniAventadorSVJ333.png?width=705&height=441",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/789747763357286420/LamborghiniAventadorSVJ666.png?width=705&height=441",
+    "racehud996": "",
+    "racehud969": "",
+    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/789747810593013760/LamborghiniAventadorSVJ699.png?width=705&height=441",
+
+    "333TopSpeed": 219,
+    "3330to60": 2.6,
+    "333Handling": 96,
+
+    "666TopSpeed": 221,
+    "6660to60": 2.5,
+    "666Handling": 99,
+
+    "996TopSpeed": 0,
+    "9960to60": 0,
+    "996Handling": 0,
+
+    "969TopSpeed": 0,
+    "9690to60": 0,
+    "969Handling": 0,
+
+    "699TopSpeed": 224,
+    "6990to60": 2.4,
+    "699Handling": 103
+}

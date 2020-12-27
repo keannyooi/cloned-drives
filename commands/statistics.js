@@ -15,6 +15,7 @@ module.exports = {
     aliases: ["stats"],
     usage: "(optional) <username>",
     args: 0,
+	isExternal: true,
     adminOnly: false,
     description: "Shows someone's stats.",
     async execute(message, args) {

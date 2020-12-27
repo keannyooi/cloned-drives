@@ -1,0 +1,50 @@
+{
+    "rq": 69,
+    "make": "BMW",
+    "model": "745e xDrive iPerformance",
+    "modelYear": 2020,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 4.8,
+    "handling": 77,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+
+    "weight": 2200,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 58.54,
+    "ola": 69,
+    "description": "The most eco-friendly way to arrive at the Siemens executive meeting. By Bnuuy",
+
+    "card": "https://cdn.discordapp.com/attachments/731698267573977099/787007896613421087/bmw745exdrive.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/788198367854854164/745e.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/788198385562812416/745e333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/788198400045875220/745e666.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/788198465623687168/745e969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/788198433302642698/745e699.png",
+
+    "333TopSpeed": 158,
+    "3330to60": 4.5,
+    "333Handling": 80,
+
+    "666TopSpeed": 161,
+    "6660to60": 4.3,
+    "666Handling": 83,
+
+    "969TopSpeed": 164,
+    "9690to60": 4.1,
+    "969Handling": 86,
+
+    "699TopSpeed": 162,
+    "6990to60": 4.2,
+    "699Handling": 87
+}

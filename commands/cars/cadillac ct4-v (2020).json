@@ -1,0 +1,50 @@
+{
+  "rq": 58,
+  "make": "Cadillac",
+  "model": "CT4-V",
+  "modelYear": 2020,
+  "country": "US",
+  "topSpeed": 155,
+  "0to60": 5.5,
+  "handling": 85,
+  "driveType": "RWD",
+  "tyreType": "Performance",
+  "tags": ["American Wilds"],
+  "isPrize": false,
+  
+  "weight": 1634,
+  "gc": "Medium",
+  "seatCount": 5,
+  "bodyStyle": "Sedan",
+  "tcs": true,
+  "abs": true,
+  "enginePos": "Front",
+  "fuelType": "Petrol",
+  "mra": 51.89,
+  "ola": 65.45,
+  "description": "",
+
+  "card": "https://cdn.discordapp.com/attachments/715782088271331398/787790950985760768/CadillacCT4-V.png",
+  "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/787791039779307532/CadillacCT4-V.png",
+  "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/787791060571127838/CadillacCT4-V333.png",
+  "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/787791084067356733/CadillacCT4-V666.png",
+  "racehud996": "",
+  "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/787791154871533608/CadillacCT4-V969.png",
+  "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/787791119748431932/CadillacCT4-V699.png",
+
+  "333TopSpeed": 158,
+  "3330to60": 5.2,
+  "333Handling": 88,
+  
+  "666TopSpeed": 161,
+  "6660to60": 5.0,
+  "666Handling": 91,
+  
+  "969TopSpeed": 163,
+  "9690to60": 4.8,
+  "969Handling": 94,
+  
+  "699TopSpeed": 161,
+  "6990to60": 4.9,
+  "699Handling": 95
+}

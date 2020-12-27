@@ -1,0 +1,54 @@
+﻿{
+    "rq": 63,
+    "make": "Volkswagen",
+    "model": "Scirocco R",
+    "modelYear": 2009,
+    "country": "DE",
+    "topSpeed": 157,
+    "0to60": 5.3,
+    "handling": 86,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch", "Year of the Ox"],
+    "isPrize": false,
+
+
+    "weight": 1450,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 82.81,
+    "ola": 83.02,
+    "description": "Surprisingly OP car. Card by Andu",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/789564408858279936/SciroccoR.png?width=705&height=439",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/789024934533398558/SciroccoRSt.png?width=705&height=441",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/789024957384228894/SciroccoR1.png?width=705&height=441",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/789024976262660106/SciroccoR2.png?width=705&height=441",
+    "racehud996": "",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/789025017002328074/SciroccoR323.png?width=705&height=441",
+    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/789025055555452948/SciroccoR233.png?width=705&height=441",
+
+
+    "333TopSpeed": 162,
+    "3330to60": 5.0,
+    "333Handling": 89,
+
+
+    "666TopSpeed": 166,
+    "6660to60": 4.7,
+    "666Handling": 92,
+
+    "969TopSpeed": 170,
+    "9690to60": 4.4,
+    "969Handling": 95,
+
+    "699TopSpeed": 168,
+    "6990to60": 4.4,
+    "699Handling": 95
+}

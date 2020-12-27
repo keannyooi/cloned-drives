@@ -1,0 +1,54 @@
+{
+    "rq": 67,
+    "make": "Toyota",
+    "model": "Supra Turbo",
+    "modelYear": 1993,
+    "country": "JP",
+    "topSpeed": 158,
+    "0to60": 5.0,
+    "handling": 86,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Silver Screen", "Street Racer", "Style Icon"],
+    "isPrize": false,
+
+    "weight": 1485,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 81.97,
+    "ola": 96.00,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/788196045598359572/1993_Toyota_Supra_Turbo.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/788197266136498216/supraturbo.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/788197281198506025/supraturbo333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/788197293811695616/supraturbo666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/788197386992091186/supraturbo996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/788197350413697034/supraturbo969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/788197317169119262/supraturbo699.png",
+
+    "333TopSpeed": 161,
+    "3330to60": 4.7,
+    "333Handling": 89,
+
+    "666TopSpeed": 164,
+    "6660to60": 4.5,
+    "666Handling": 92,
+
+    "996TopSpeed": 168,
+    "9960to60": 4.2,
+    "996Handling": 92,
+
+    "969TopSpeed": 166,
+    "9690to60": 4.3,
+    "969Handling": 95,
+
+    "699TopSpeed": 164,
+    "6990to60": 4.4,
+    "699Handling": 96
+}

@@ -1,0 +1,46 @@
+{
+    "rq": 24,
+    "make": "Buick",
+    "model": "Reatta",
+    "modelYear": 1988,
+    "country": "US",
+    "topSpeed": 124,
+    "0to60": 9.1,
+    "handling": 71,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1533,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Roadster",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 37.60,
+    "ola": 61.54,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/787948254884790272/BuickReatta.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/787948407334502421/ReattaSt.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/787948445360848916/Reatta1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/787948470325608508/Reatta2.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/787948507545075722/Reatta323.png",
+    "racehud699": "",
+
+    "333TopSpeed": 125,
+    "3330to60": 8.5,
+    "333Handling": 74,
+
+    "666TopSpeed": 128,
+    "6660to60": 7.8,
+    "666Handling": 77,
+
+    "969TopSpeed": 131,
+    "9690to60": 7.2,
+    "969Handling": 79
+}

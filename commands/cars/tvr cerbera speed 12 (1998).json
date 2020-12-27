@@ -1,0 +1,50 @@
+{
+    "rq": 85,
+    "make": "TVR",
+    "model": "Cerbera Speed 12",
+    "modelYear": 1998,
+    "country": "2-Letter Country Code",
+    "topSpeed": 240,
+    "0to60": 2.9,
+    "handling": 90,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Track Day", "Wild Ride"],
+    "isPrize": false,
+
+    "weight": 975,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 63.04,
+    "ola": 90.48,
+    "description": "TVR's wildest beast. By Bnuuy",
+
+    "card": "https://cdn.discordapp.com/attachments/731698267573977099/787683041731411979/tvrspeed12.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/791076651035394048/speed12.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/791076664226086942/speed12333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/791076679992868914/speed12666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/791076734480285736/speed12996.png",
+    "racehud969": "",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/791076704248004618/speed12699.png",
+
+    "333TopSpeed": 243,
+    "3330to60": 2.8,
+    "333Handling": 93,
+
+    "666TopSpeed": 246,
+    "6660to60": 2.7,
+    "666Handling": 96,
+
+    "996TopSpeed": 249,
+    "9960to60": 2.5,
+    "996Handling": 96,
+
+    "699TopSpeed": 247,
+    "6990to60": 2.6,
+    "699Handling": 100
+}

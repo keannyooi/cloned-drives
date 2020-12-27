@@ -16,6 +16,7 @@ module.exports = {
     aliases: ["shop"],
     usage: "(optional) <page number>",
     args: 0,
+	isExternal: false,
     adminOnly: true,
     description: "Shows all the packs that are available for purchase in list form.",
     execute(message, args) {

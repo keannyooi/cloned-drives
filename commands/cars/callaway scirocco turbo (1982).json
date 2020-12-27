@@ -1,0 +1,61 @@
+{
+    "rq": 25,
+    "make": ["Callaway", "Volkswagen"],
+    "model": "Scirocco Turbo",
+    "modelYear": 1982,
+    "country": "US",
+    "topSpeed": 126,
+    "0to60": 7.7,
+    "handling": 71,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+	"tags": ["Hot Hatch"],
+    "isPrize": true,
+
+
+    "weight": 1043,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 45.56,
+    "ola": 60.51,
+    "description": "When an American tuner meets a fun German coupe. Card by Andu",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/789769253032820756/is_this_even_american_doe.png?width=705&height=439",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/789769354639048704/CallawaySciroccoSt.png?width=705&height=441",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/789769376416530442/CallawayScirocco1.png?width=705&height=441",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/789769395307413505/CallawayScirocco2.png?width=705&height=441",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/789769439402786846/CallawayScirocco332.png?width=705&height=441",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/789769418766286848/CallawayScirocco323.png?width=705&height=441",
+    "racehud699": "",
+
+
+    "333TopSpeed": 129,
+    "3330to60": 7.2,
+    "333Handling": 73,
+
+
+    "666TopSpeed": 132,
+    "6660to60": 6.7,
+    "666Handling": 76,
+
+
+    "996TopSpeed": 137,
+    "9960to60": 6.0,
+    "996Handling": 76,
+
+
+    "969TopSpeed": 135,
+    "9690to60": 6.2,
+    "969Handling": 78,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

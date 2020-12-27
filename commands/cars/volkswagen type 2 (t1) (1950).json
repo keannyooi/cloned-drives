@@ -1,0 +1,61 @@
+{
+    "rq": 10,
+    "make": "Volkswagen",
+    "model": "Type 2 (T1)",
+    "modelYear": 1950,
+    "country": "DE",
+    "topSpeed": 60,
+    "0to60": 75.0,
+    "handling": 57,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": true,
+
+
+    "weight": 1043,
+    "gc": "High",
+    "seatCount": 9,
+    "bodyStyle": "Minivan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 0.00,
+    "ola": 45.7,
+    "description": "Hippie van. Card by Andu",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/789563950949597204/T1butcut.png?width=705&height=439",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/788733315052994560/T1st.png?width=705&height=441",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/788733343897223208/t11.png?width=705&height=441",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/788733368425513000/t12.png?width=705&height=441",
+    "racehud996": "",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/788733411619504148/T1323.png?width=705&height=441",
+    "racehud699": "",
+
+
+    "333TopSpeed": 62,
+    "3330to60": 70.0,
+    "333Handling": 59,
+
+
+    "666TopSpeed": 64,
+    "6660to60": 65.0,
+    "666Handling": 61,
+
+
+    "996TopSpeed": 0,
+    "9960to60": 0,
+    "996Handling": 0,
+
+
+    "969TopSpeed": 66,
+    "9690to60": 60.0,
+    "969Handling": 63,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

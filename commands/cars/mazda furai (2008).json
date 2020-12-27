@@ -1,0 +1,54 @@
+{
+    "rq": 92,
+    "make": "Mazda",
+    "model": "Furai",
+    "modelYear": 2008,
+    "country": "JP",
+    "topSpeed": 176,
+    "0to60": 3.1,
+    "handling": 96,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Concept", "Track Day", "Wild Ride"],
+    "isPrize": false,
+
+    "weight": 675,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 106.90,
+    "ola": 90.32,
+    "description": "A very LIT car aka Sound of the Wind. Card by DodgeDemon",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/788913749628682250/2008_Mazda_Furai.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/788913526961995806/furai.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/788913540357554186/furai333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/788913556677984256/furai666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/788913656771379214/Furai996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/788913617469964308/furai969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/788913593969803324/Furai699.png",
+
+    "333TopSpeed": 179,
+    "3330to60": 3.0,
+    "333Handling": 99,
+
+    "666TopSpeed": 182,
+    "6660to60": 2.9,
+    "666Handling": 103,
+
+    "996TopSpeed": 186,
+    "9960to60": 2.7,
+    "996Handling": 104,
+
+    "969TopSpeed": 185,
+    "9690to60": 2.8,
+    "969Handling": 106,
+
+    "699TopSpeed": 183,
+    "6990to60": 2.8,
+    "699Handling": 107
+}

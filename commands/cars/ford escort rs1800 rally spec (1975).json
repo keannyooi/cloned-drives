@@ -1,0 +1,50 @@
+{
+    "rq": 65,
+    "make": "Ford",
+    "model": "Escort RS1800 Rally Spec",
+    "modelYear": 1975,
+    "country": "GB",
+    "topSpeed": 123,
+    "0to60": 4.4,
+    "handling": 82,
+    "driveType": "RWD",
+    "tyreType": "Off-Road",
+    "tags": ["Motorsport", "Motorsport Legends"],
+    "isPrize": false,
+
+    "weight": 980,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 55.70,
+    "ola": 60.00,
+    "description": "The 1979 WRC Champion. By Havvy",
+
+    "card": "https://cdn.discordapp.com/attachments/731698267573977099/787086293066711060/FordEscortRS1800RallySpec2.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/789743887359016960/FordEscortRallyStock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/789743940513431612/FordEscortRally333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/789744033127727104/FordEscortRally666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/789744106477584384/FordEscortRally996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/789744192591101952/FordEscortRally969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 126,
+    "3330to60": 4.2,
+    "333Handling": 85,
+
+    "666TopSpeed": 129,
+    "6660to60": 4.0,
+    "666Handling": 88,
+
+    "996TopSpeed": 135,
+    "9960to60": 3.6,
+    "996Handling": 89,
+
+    "969TopSpeed": 133,
+    "9690to60": 3.7,
+    "969Handling": 91
+}

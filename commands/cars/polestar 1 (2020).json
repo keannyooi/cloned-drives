@@ -1,6 +1,6 @@
 {
     "rq": 88,
-    "make": "Polestar",
+    "make": ["Polestar", "Volvo"],
     "model": "1",
     "modelYear": 2020,
     "country": "SE",
@@ -22,7 +22,7 @@
     "fuelType": "Hybrid",
     "mra": 86.21,
     "ola": 84.21,
-    "description": "",
+    "description": "When Volvo's Polestar performance division makes a hybrid coupe. Card by DodgeDemon",
 
     "card": "https://cdn.discordapp.com/attachments/715782088271331398/783746258179063858/2020_Polestar_1.png",
     "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/783749082988150804/Polestar11Stock.png",

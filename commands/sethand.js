@@ -13,6 +13,7 @@ module.exports = {
     name: "sethand",
     usage: "<car name goes here>",
     args: 1,
+	isExternal: true,
     adminOnly: false,
     description: "Sets your hand for quick race and random race gamemodes.",
     async execute(message, args) {
@@ -32,7 +33,11 @@ module.exports = {
             var carList = "";
             for (i = 1; i <= searchResults.length; i++) {
                 const car = require(`./cars/${searchResults[i - 1].carFile}`);
-                carList += `${i} - ${car["make"]} ${car["model"]} (${car["modelYear"]}) [${searchResults[i - 1].gearingUpgrade}${searchResults[i - 1].engineUpgrade}${searchResults[i - 1].chassisUpgrade}]\n`;
+				let make = car["make"];
+				if (typeof make === "object") {
+					make = car["make"][0];
+				}
+                carList += `${i} - ${make} ${car["model"]} (${car["modelYear"]}) [${searchResults[i - 1].gearingUpgrade}${searchResults[i - 1].engineUpgrade}${searchResults[i - 1].chassisUpgrade}]\n`;
             }
 
             if (carList.length > 2048) {
@@ -97,7 +102,11 @@ module.exports = {
 
         async function setHand(currentCar, currentMessage) {
             const car = require(`./cars/${currentCar.carFile}`);
-            const currentName = `${car["make"]} ${car["model"]} (${car["modelYear"]}) [${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}]`;
+			let make = car["make"];
+			if (typeof make === "object") {
+				make = car["make"][0];
+			}
+            const currentName = `${make} ${car["model"]} (${car["modelYear"]}) [${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}]`;
             var racehud = car[`racehud${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}`];;
 
             if (!racehud) {
@@ -112,7 +121,7 @@ module.exports = {
 
             db.set(`acc${message.author.id}.hand`, { carFile: currentCar.carFile, gearingUpgrade: currentCar.gearingUpgrade, engineUpgrade: currentCar.engineUpgrade, chassisUpgrade: currentCar.chassisUpgrade });
             const infoScreen = new Discord.MessageEmbed()
-                .setColor("#34aeeb")
+                .setColor("#03fc24")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                 .setTitle(`Successfully set your ${currentName} as your quick race and random race hand!`)
                 .setImage(racehud)

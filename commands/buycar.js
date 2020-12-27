@@ -13,6 +13,7 @@ module.exports = {
     name: "buycar",
     usage: " (optional) <amount> | <car name goes here> ",
     args: 1,
+	isExternal: true,
     adminOnly: false,
     description: "Buy a car from the dealership using this command!",
     async execute(message, args) {

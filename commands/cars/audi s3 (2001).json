@@ -1,0 +1,46 @@
+{
+    "rq": 49,
+    "make": "Audi",
+    "model": "S3",
+    "modelYear": 2001,
+    "country": "DE",
+    "topSpeed": 151,
+    "0to60": 6.3,
+    "handling": 79,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1373,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 56.76,
+    "ola": 69.82,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/731698267573977099/783241593577799690/image0.jpg",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/787842756248469514/image0.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/787842776217550848/image0.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/787842797850853386/image0.jpg",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/787842829782482985/image0.jpg",
+    "racehud699": "",
+
+    "333TopSpeed": 155,
+    "3330to60": 5.9,
+    "333Handling": 82,
+
+    "666TopSpeed": 159,
+    "6660to60": 5.6,
+    "666Handling": 84,
+
+    "969TopSpeed": 163,
+    "9690to60": 5.2,
+    "969Handling": 87
+}

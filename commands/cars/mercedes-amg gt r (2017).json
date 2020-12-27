@@ -1,6 +1,6 @@
 {
     "rq": 88,
-    "make": "Mercedes-AMG",
+    "make": ["Mercedes-AMG", "Mercedes-Benz"],
     "model": "GT R",
     "modelYear": 2017,
     "country": "DE",
@@ -9,7 +9,7 @@
     "handling": 94,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [],
+    "tags": ["Supercar"],
     "isPrize": false,
 
     "weight": 1630,

@@ -1,0 +1,46 @@
+{
+    "rq": 42,
+    "make": "Mazda",
+    "model": "RX-8",
+    "modelYear": 2004,
+    "country": "JP",
+    "topSpeed": 148,
+    "0to60": 5.9,
+    "handling": 80,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1400,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 59,
+    "ola": 71.19,
+    "description": "The last call of the Wankel? By Spence",
+
+    "card": "https://cdn.discordapp.com/attachments/731698267573977099/785939577022054461/image0.jpg",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/788826655690850335/image0.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/788826674497323068/image0.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/788826696668807189/image0.jpg",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/788826718550884372/image0.jpg",
+    "racehud699": "",
+
+    "333TopSpeed": 152,
+    "3330to60": 5.6,
+    "333Handling": 83,
+
+    "666TopSpeed": 156,
+    "6660to60": 5.2,
+    "666Handling": 86,
+
+    "969TopSpeed": 160,
+    "9690to60": 4.9,
+    "969Handling": 89
+}

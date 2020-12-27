@@ -14,6 +14,7 @@ module.exports = {
     aliases: ["deletedeck", "rmvdeck"],
     usage: "<deck name goes here>",
     args: 1,
+	isExternal: true,
     adminOnly: false,
     description: 'Deletes a deck of your choice. (NOTE: Deck names cannot contain spaces, use underscores "_" instead)',
     async execute(message, args) {

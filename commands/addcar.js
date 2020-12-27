@@ -15,6 +15,7 @@ module.exports = {
     name: "addcar",
     usage: "<username> | (optional) <amount> | <car name goes here>",
     args: 2,
+	isExternal: false,
     adminOnly: true,
     description: "Adds a car into your garage. (data transferring)",
     execute(message, args) {
@@ -83,8 +84,12 @@ module.exports = {
         if (searchResults.length > 1) {
             var carList = "";
             for (i = 1; i <= searchResults.length; i++) {
-                let currentCar = require(`./cars/${searchResults[i - 1]}`);
-                carList += `${i} - ${currentCar["make"]} ${currentCar["model"]} (${currentCar["modelYear"]})\n`
+                let car = require(`./cars/${searchResults[i - 1]}`);
+				let make = car["make"];
+				if (typeof make === "object") {
+					make = car["make"][0];
+				}
+                carList += `${i} - ${make} ${car["model"]} (${car["modelYear"]})\n`;
             }
 
             if (carList.length > 2048) {
@@ -152,7 +157,11 @@ module.exports = {
 
         async function addCar(car, currentMessage) {
             let currentCar = require(`./cars/${car}`);
-            const currentName = `${currentCar["make"]} ${currentCar["model"]} (${currentCar["modelYear"]})`;
+			let make = currentCar["make"];
+			if (typeof make === "object") {
+				make = currentCar["make"][0];
+			}
+            const currentName = `${make} ${currentCar["model"]} (${currentCar["modelYear"]})`;
 
             let i = 0;
             while (i < amount) {

@@ -1,0 +1,61 @@
+﻿{
+    "rq": 100,
+    "make": "Volkswagen",
+    "model": "I.D. R",
+    "modelYear": 2018,
+    "country": "DE",
+    "topSpeed": 170,
+    "0to60": 2.3,
+    "handling": 99,
+    "driveType": "4WD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport","Eco-Friendly"],
+    "isPrize": true,
+
+
+    "weight": 1099,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Electric",
+    "mra": 164.00,
+    "ola": 96.52,
+    "description": "The electric world record setter. Card by Andu",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/792390170967408640/NotOPAtAll.png?width=1154&height=719",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/792390154462691328/IDRSt.png",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/792390158539292682/IDR1.png",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/792390159499788288/IDR2.png",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/792390168853479454/IDR332.png",
+    "racehud969": "",
+    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/792390166726967307/IDR233.png",
+
+
+    "333TopSpeed": 172,
+    "3330to60": 2.2,
+    "333Handling": 103,
+
+
+    "666TopSpeed": 175,
+    "6660to60": 2.1,
+    "666Handling": 107,
+
+
+    "996TopSpeed": 179,
+    "9960to60": 1.9,
+    "996Handling": 107,
+
+
+    "969TopSpeed": 0,
+    "9690to60": 0,
+    "969Handling": 0,
+
+
+    "699TopSpeed": 177,
+    "6990to60": 2.0,
+    "699Handling": 110
+}

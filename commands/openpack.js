@@ -15,6 +15,7 @@ module.exports = {
     name: "openpack",
     usage: "<pack name goes here>",
     args: 1,
+	isExternal: true,
     adminOnly: true,
     description: "Opens a pack. (EXPERIMENTAL)",
     execute(message, args) {

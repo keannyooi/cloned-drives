@@ -1,0 +1,46 @@
+{
+    "rq": 16,
+    "make": "Pontiac",
+    "model": "Firebird Trans Am",
+    "modelYear": 1982,
+    "country": "US",
+    "topSpeed": 116,
+    "0to60": 10.6,
+    "handling": 73,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1542,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 50.96,
+    "ola": 60.38,
+    "description": "The Firebird from the antimuscle era. By Bnuuy",
+
+    "card": "https://cdn.discordapp.com/attachments/731698267573977099/783741377011253348/rectasdfghj7774.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/788226042732871720/firebird.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/788226058176561162/firebird333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/788226073295847464/firebird666.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/788226096952508416/firebird969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 119,
+    "3330to60": 10.1,
+    "333Handling": 76,
+
+    "666TopSpeed": 122,
+    "6660to60": 9.6,
+    "666Handling": 79,
+
+    "969TopSpeed": 125,
+    "9690to60": 9.1,
+    "969Handling": 82
+}

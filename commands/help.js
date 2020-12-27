@@ -14,6 +14,7 @@ module.exports = {
     name: "help",
     usage: "<command name goes here>",
     args: 0,
+	isExternal: true,
     adminOnly: false,
     description: "...wait, what are you doing here?",
     execute(message, args) {

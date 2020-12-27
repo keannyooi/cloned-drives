@@ -1,0 +1,46 @@
+{
+    "rq": 74,
+    "make": "Mitsubishi",
+    "model": "Lancer Evolution VIII RS",
+    "modelYear": 2003,
+    "country": "JP",
+    "topSpeed": 156,
+    "0to60": 4.4,
+    "handling": 86,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer"],
+    "isPrize": false,
+
+    "weight": 1450,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 61.33,
+    "ola": 82.61,
+    "description": "A competition spec model with a mechanical LSD and 5-speed MT, setting itself apart from the GSR. Card by DodgeDemon",
+
+    "card": "https://cdn.discordapp.com/attachments/731698267573977099/777953873548541982/2003_Mitsubishi_Evo_VIII_RS.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/780572409823887360/EvoVIIIRSStock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/780572456376205312/EvoVIIIRS333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/780572511481888808/EvoVIIIRS666.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/780572556242452510/EvoVIIIRS969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 159,
+    "3330to60": 4.1,
+    "333Handling": 89,
+
+    "666TopSpeed": 163,
+    "6660to60": 3.8,
+    "666Handling": 92,
+
+    "969TopSpeed": 167,
+    "9690to60": 3.5,
+    "969Handling": 95
+}

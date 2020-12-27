@@ -14,6 +14,7 @@ module.exports = {
 	aliases: ["tune", "u"],
 	usage: "<car name goes here> <upgrade pattern>",
 	args: 2,
+	isExternal: true,
 	adminOnly: false,
 	description: "Upgrades a car in your garage.",
 	async execute(message, args) {
@@ -41,7 +42,11 @@ module.exports = {
 			var carList = "";
 			for (i = 1; i <= searchResults.length; i++) {
 				const car = require(`./cars/${searchResults[i - 1].carFile}`);
-				carList += `${i} - ${car["make"]} ${car["model"]} (${car["modelYear"]}) [${searchResults[i - 1].gearingUpgrade}${searchResults[i - 1].engineUpgrade}${searchResults[i - 1].chassisUpgrade}]\n`;
+				let make = car["make"];
+				if (typeof make === "object") {
+					make = car["make"][0];
+				}
+				carList += `${i} - ${make} ${car["model"]} (${car["modelYear"]}) [${searchResults[i - 1].gearingUpgrade}${searchResults[i - 1].engineUpgrade}${searchResults[i - 1].chassisUpgrade}]\n`;
 			}
 
 			if (carList.length > 2048) {
@@ -108,7 +113,11 @@ module.exports = {
 
 		async function upgradeCar(currentCar, currentMessage) {
 			const car = require(`./cars/${currentCar.carFile}`);
-			const currentName = `${car["make"]} ${car["model"]} (${car["modelYear"]})`;
+			let make = car["make"];
+			if (typeof make === "object") {
+				make = car["make"][0];
+			}
+			const currentName = `${make} ${car["model"]} (${car["modelYear"]})`;
 			const moneyEmoji = message.client.emojis.cache.get("726017235826770021");
 			const fuseEmoji = message.client.emojis.cache.get("726018658635218955");
 			const racehud = car[`racehud${upgrade[0]}${upgrade[1]}${upgrade[2]}`];

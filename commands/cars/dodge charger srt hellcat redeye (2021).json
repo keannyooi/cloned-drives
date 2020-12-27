@@ -1,0 +1,50 @@
+{
+    "rq": 79,
+    "make": "Dodge",
+    "model": "Charger SRT Hellcat Redeye",
+    "modelYear": 2021,
+    "country": "US",
+    "topSpeed": 203,
+    "0to60": 3.5,
+    "handling": 86,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["American Wilds", "Muscle Car", "Year of the Ox"],
+    "isPrize": false,
+
+    "weight": 2111,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 87.50,
+    "ola": 97.14,
+    "description": "By DodgeDemon",
+
+    "card": "https://cdn.discordapp.com/attachments/731698267573977099/783572878498988052/2021_Dodge_Charger_SRT_Hellcat_Redeye.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/788922072968724490/redeye.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/788922126299824159/redeye333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/788922139650555924/redeye666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/788922192850190366/redeye996.png",
+    "racehud969": "",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/788922169479790632/redeye699.png",
+
+    "333TopSpeed": 206,
+    "3330to60": 3.3,
+    "333Handling": 89,
+
+    "666TopSpeed": 209,
+    "6660to60": 3.2,
+    "666Handling": 92,
+
+    "996TopSpeed": 213,
+    "9960to60": 3.0,
+    "996Handling": 93,
+
+    "699TopSpeed": 210,
+    "6990to60": 3.1,
+    "699Handling": 95
+}

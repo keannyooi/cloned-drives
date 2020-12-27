@@ -1,0 +1,46 @@
+{
+    "rq": 13,
+    "make": "John Deere",
+    "model": "Gator XUV835R",
+    "modelYear": 2017,
+    "country": "US",
+    "topSpeed": 45,
+    "0to60": 64.7,
+    "handling": 52,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["American Wilds"],
+    "isPrize": true,
+
+    "weight": 1050,
+    "gc": "High",
+    "seatCount": 3,
+    "bodyStyle": "UTV",
+    "tcs": true,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 0.00,
+    "ola": 47.14,
+    "description": "Card by DodgeDemon",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/789747370882629642/2017_John_Deere_Gator_XUV835R.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/789747017546072094/JohnDeereGatorStock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/789747056645767178/JohnDeereGator333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/789747073581973534/JohnDeereGator666.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/789747120584261662/JohnDeereGator969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 48,
+    "3330to60": 64.7,
+    "333Handling": 55,
+
+    "666TopSpeed": 51,
+    "6660to60": 64.7,
+    "666Handling": 58,
+
+    "969TopSpeed": 56,
+    "9690to60": 64.7,
+    "969Handling": 60
+}

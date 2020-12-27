@@ -13,6 +13,7 @@ module.exports = {
     name: "garage",
     usage: "(all optional) <username goes here> | <page number> | -s <sorting criteria>",
     args: 0,
+	isExternal: true,
     adminOnly: false,
     description: "Shows your (or other people's) garage.",
     async execute(message, args) {
@@ -190,8 +191,14 @@ module.exports = {
             }
 
             if (criteriaA === criteriaB) {
-                const nameA = carA["make"].toLowerCase() + carA["model"].toLowerCase();
-                const nameB = carB["make"].toLowerCase() + carB["model"].toLowerCase();
+                let nameA = `${carA["make"]} ${carA["model"]}`.toLowerCase();
+                let nameB = `${carA["make"]} ${carA["model"]}`.toLowerCase();
+				if (typeof carA["make"] === "object") {
+					nameA = `${carA["make"][0]} ${carA["model"]}`.toLowerCase();
+				}
+				if (typeof carB["make"] === "object") {
+					nameB = `${carB["make"][0]} ${carB["model"]}`.toLowerCase();
+				}
 
                 if (nameA < nameB) {
                     return -1;
@@ -366,9 +373,13 @@ module.exports = {
 
             for (i = startsWith; i < endsWith; i++) {
                 let currentCar = require(`./cars/${garage[i].carFile}`);
+				let make = currentCar["make"];
+				if (typeof make === "object") {
+					make = currentCar["make"][0];
+				}
                 const rarity = rarityCheck(currentCar);
 
-                garageList += `(${rarity} ${currentCar["rq"]}) ` + currentCar["make"] + " " + currentCar["model"] + " (" + currentCar["modelYear"] + ") [" + garage[i].gearingUpgrade + garage[i].engineUpgrade + garage[i].chassisUpgrade + "]";
+                garageList += `(${rarity} ${currentCar["rq"]}) ` + make + " " + currentCar["model"] + " (" + currentCar["modelYear"] + ") [" + garage[i].gearingUpgrade + garage[i].engineUpgrade + garage[i].chassisUpgrade + "]";
                 if (sortBy !== "rq") {
                     if (garage[i].gearingUpgrade > 0) {
                         switch (sortBy) {

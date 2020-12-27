@@ -15,6 +15,7 @@ module.exports = {
     usage: "<car name goes here>",
     description: "Sells a car from your garage.",
     args: 1,
+	isExternal: true,
     adminOnly: false,
     async execute(message, args) {
         const db = message.client.db;
@@ -49,7 +50,11 @@ module.exports = {
             var carList = "";
             for (i = 1; i <= searchResults.length; i++) {
                 const car = require(`./cars/${searchResults[i - 1].carFile}`);
-                carList += `${i} - ${car["make"]} ${car["model"]} (${car["modelYear"]}) [${searchResults[i - 1].gearingUpgrade}${searchResults[i - 1].engineUpgrade}${searchResults[i - 1].chassisUpgrade}]\n`;
+				let make = car["make"];
+				if (typeof make === "object") {
+					make = car["make"][0];
+				}
+                carList += `${i} - ${make} ${car["model"]} (${car["modelYear"]}) [${searchResults[i - 1].gearingUpgrade}${searchResults[i - 1].engineUpgrade}${searchResults[i - 1].chassisUpgrade}]\n`;
             }
 
             if (carList.length > 2048) {
@@ -117,7 +122,11 @@ module.exports = {
 
         async function sell(currentCar, currentMessage) {
             const car = require(`./cars/${currentCar.carFile}`);
-            const currentName = `${car["make"]} ${car["model"]} (${car["modelYear"]}) [${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}]`;
+			let make = car["make"];
+			if (typeof make === "object") {
+				make = car["make"][0];
+			}
+            const currentName = `${make} ${car["model"]} (${car["modelYear"]}) [${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}]`;
 
             var money;
             if (car["rq"] > 79) { //leggie
