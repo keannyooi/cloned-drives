@@ -7,7 +7,7 @@
 |__|\__\ |_______/__/     \__\ |__| \__| |__| \__|     |__| 	(this is a watermark that proves that these lines of code are mine)
 */
 
-const backupMode = true;
+const backupMode = false;
 const fs = require("fs");
 const Discord = require("discord.js-light");
 const { Database } = require("quickmongo");

@@ -188,9 +188,18 @@ module.exports = {
             data = "";
 
             for (i = startsWith; i < endsWith; i++) {
-                data += `${i + 1} - \`${commandArray[i].name}\`\n`;
+                data += `${i + 1} - \`${commandArray[i].name}\``;
+                if (commandArray[i].adminOnly) {
+                    data += " 👤";
+                }
+                if (commandArray[i].isExternal) {
+                    data += " 🛂";
+                }
+                data += "/n";
             }
-            data += (`\nUse \`${prefix}help <command name>\` to learn more about a specific command.`);
+            data += (`\n
+                    👤 = Admin-only command, 🛂 = Can be used outside the Cloned Drives server.
+                    Use \`${prefix}help <command name>\` to learn more about a specific command.`);
         }
     }
 }
