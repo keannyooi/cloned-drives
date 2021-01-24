@@ -1,0 +1,61 @@
+﻿{
+    "rq": 78,
+    "make": "Porsche",
+    "model": "718 Cayman GT4",
+    "modelYear": 2019,
+    "country": "DE",
+    "topSpeed": 188,
+    "0to60": 4.0,
+    "handling": 92,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": true,
+
+
+    "weight": 1451,
+    "gc": "Low",
+    "seatCount":2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 85.47,
+    "ola": 83.33,
+    "description": "One of the best track cars. Card by Havvy",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/800317339308261376/Porsche718CaymanGT4.png?width=1154&height=718",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/800317432899305512/000cay4.png?width=1154&height=718",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/800317444177657867/111cay4.png?width=1154&height=718",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/800317457004888085/222cay4.png?width=1154&height=718",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/800317629947838464/332cay4.png?width=1154&height=718",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/800317483344592896/323cay4.png?width=1154&height=718",
+    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/800317465141444608/233cay4.png?width=1154&height=718",
+
+
+    "333TopSpeed": 192,
+    "3330to60": 3.8,
+    "333Handling": 95,
+
+
+    "666TopSpeed": 195,
+    "6660to60": 3.6, 
+    "666Handling": 98,
+
+
+    "996TopSpeed": 199,
+    "9960to60": 3.3,
+    "996Handling": 99,
+
+
+    "969TopSpeed": 198,
+    "9690to60": 3.4,
+    "969Handling": 102,
+
+
+    "699TopSpeed": 195,
+    "6990to60": 3.4,
+    "699Handling": 102
+}

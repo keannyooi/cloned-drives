@@ -1,0 +1,61 @@
+﻿{
+    "rq": 25,
+    "make": "Nissan",
+    "model": "Versa 1.8S Sedan",
+    "modelYear": 2007,
+    "country": "JP",
+    "topSpeed": 122,
+    "0to60": 9.0,
+    "handling": 70,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1242,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 48.13,
+    "ola": 68.75,
+    "description": "Cursed card. Card by Andu",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/796127149416251392/NissanVersa18SS.png?width=1085&height=676",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/796096975715172352/Versa18St.png?width=705&height=441",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/796096990668652624/Versa181.png?width=705&height=441",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/796096997597249546/Versa182.png?width=705&height=441",
+    "racehud996": "",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/796097010838667305/Versa18323.png?width=705&height=441",
+    "racehud699": "",
+
+
+    "333TopSpeed": 126,
+    "3330to60": 8.4,
+    "333Handling": 73,
+
+
+    "666TopSpeed": 130,
+    "6660to60": 7.8,
+    "666Handling": 76,
+
+
+    "996TopSpeed": 0,
+    "9960to60": 0,
+    "996Handling": 0,
+
+
+    "969TopSpeed": 134,
+    "9690to60": 7.2,
+    "969Handling": 78,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

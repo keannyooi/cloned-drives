@@ -1,0 +1,61 @@
+﻿{
+    "rq": 25,
+    "make": "BMW",
+    "model": "735i",
+    "modelYear": 1986,
+    "country": "DE",
+    "topSpeed": 140,
+    "0to60": 9.5,
+    "handling": 68,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1600,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 60.90,
+    "ola": 73.68,
+    "description": "Smooth classic luxury. Card by Andu",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/802612504370348062/735i.png?width=1154&height=719",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/802614591203966976/735i.png",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/802614602978164756/735i1.png",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/802614607226601472/735i2.png",
+    "racehud996": "",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/802614615677861918/735i323.png",
+    "racehud699": "",
+
+
+    "333TopSpeed": 142,
+    "3330to60": 8.8,
+    "333Handling": 70,
+
+
+    "666TopSpeed": 146,
+    "6660to60": 8.1, 
+    "666Handling": 73,
+
+
+    "996TopSpeed": 0,
+    "9960to60": 0,
+    "996Handling": 0,
+
+
+    "969TopSpeed": 7.4,
+    "9690to60": 75,
+    "969Handling": 150,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

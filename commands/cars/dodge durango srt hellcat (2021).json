@@ -1,0 +1,51 @@
+{
+    "rq": 82,
+    "make": "Dodge",
+    "model": "Durango SRT Hellcat",
+    "modelYear": 2021,
+    "country": "US",
+    "topSpeed": 180,
+    "0to60": 3.6,
+    "handling": 78,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Year of the Ox"],
+    "isPrize": false,
+
+    "weight": 2149,
+    "gc": "High",
+    "seatCount": 6,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 67.92,
+    "ola": 71.79,
+    "description": "You will never be late to soccer practice again. Card by DodgeDemon.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/796161277999054929/2021_Dodge_Durango_SRT_Hellcate.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/796161313318371361/durango.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/796161322302570596/durango333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/796161335384604672/durango666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/796161383199932436/durango996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/796161364279296020/durango969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 183,
+    "3330to60": 3.4,
+    "333Handling": 81,
+
+    "666TopSpeed": 186,
+    "6660to60": 3.2,
+    "666Handling": 83,
+
+    "996TopSpeed": 190,
+    "9960to60": 2.9,
+    "996Handling": 83,
+
+    "969TopSpeed": 189,
+    "9690to60": 3.0,
+    "969Handling": 86
+
+}

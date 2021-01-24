@@ -1,0 +1,46 @@
+{
+    "rq": 25,
+    "make": "Honda",
+    "model": "Civic 1.5 VTi",
+    "modelYear": 1991,
+    "country": "JP",
+    "topSpeed": 129,
+    "0to60": 8.4,
+    "handling": 77,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1030,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 51.53,
+    "ola": 76.19,
+    "description": "This EG3 Civic harnesses the power of VTEC to deliver driving fun. Card by havvy",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/794659506705399828/HondaCivic1.5VTi.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/794937797081432064/000cvc.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/794937805109329940/111cvc.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/794937816463048754/222cvc.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/794937827229958154/323cvc.png",
+    "racehud699": "",
+
+    "333TopSpeed": 133,
+    "3330to60": 7.8,
+    "333Handling": 80,
+
+    "666TopSpeed": 137,
+    "6660to60": 7.3,
+    "666Handling": 82,
+
+    "969TopSpeed": 141,
+    "9690to60": 6.7,
+    "969Handling": 85
+}

@@ -1,0 +1,50 @@
+{
+    "rq": 37,
+    "make": "Chrysler",
+    "model": "Valiant Charger RT E49",
+    "modelYear": 1972,
+    "country": "AU",
+    "topSpeed": 139,
+    "0to60": 6.1,
+    "handling": 67,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1375,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 76.35,
+    "ola": 91.80,
+    "description": "Card by Johnny.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/800359121147658262/Chrysler-Valiant-Charger-RT-E49.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/800449057784987658/Chrysler-Valiant-Charger-RT-E49.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/800449066902749194/Chrysler-Valiant-Charger-RT-E49-1-star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/800449075774226442/Chrysler-Valiant-Charger-RT-E49-2-star.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/800449095843971122/Chrysler-Valiant-Charger-RT-E49-332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/800449088952467486/Chrysler-Valiant-Charger-RT-E49-323.png",
+    "racehud699": "",
+
+    "333TopSpeed": 142,
+    "3330to60": 5.8,
+    "333Handling": 70,
+
+    "666TopSpeed": 145,
+    "6660to60": 5.5,
+    "666Handling": 73,
+
+    "996TopSpeed": 149,
+    "9960to60": 5.0,
+    "996Handling": 73,
+
+    "969TopSpeed": 148,
+    "9690to60": 5.2,
+    "969Handling": 76
+}

@@ -26,16 +26,7 @@ module.exports = {
 
 		try {
 			const db = message.client.db;
-			const cardPlacement = [{ x: 21, y: 181 }, { x: 547, y: 181 }, { x: 1073, y: 181 }, { x: 1599, y: 181 }, { x: 21, y: 612 }, { x: 547, y: 612 }, { x: 1073, y: 612 }, { x: 1599, y: 612 }];
-			const applyText = (canvas, text) => {
-				const ctx = canvas.getContext('2d');
-				let fontSize = 48;
-				do {
-					ctx.font = `${fontSize -= 10}px "Roboto"`;
-				} while (ctx.measureText(text).width > 253);
-
-				return ctx.font;
-			}
+			const cardPlacement = [{ x: 7, y: 3 }, { x: 178, y: 3 }, { x: 349, y: 3 }, { x: 520, y: 3 }, { x: 7, y: 143 }, { x: 178, y: 143 }, { x: 349, y: 143 }, { x: 520, y: 143 }];
 
 			const userData = await db.get(`acc${message.author.id}`);
 			const moneyEmoji = message.client.emojis.cache.get("726017235826770021");
@@ -50,40 +41,32 @@ module.exports = {
 				await refresh();
 			}
 
-			Canvas.registerFont("RobotoCondensed-Regular.ttf", { family: "Roboto" });
-			const canvas = Canvas.createCanvas(2135, 1200);
+			const canvas = Canvas.createCanvas(694, 249);
 			const ctx = canvas.getContext('2d');
+			let attachment, promises, cucked = false;
 
-			const background = await Canvas.loadImage("https://cdn.discordapp.com/attachments/716917404868935691/757947138788294836/cards_and_bids.jpg");
-			ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
+			try {
+				const background = await Canvas.loadImage("https://cdn.discordapp.com/attachments/715771423779455077/799579880819785778/unknown.png");
+				ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
 
-			var i = 0;
-			while (i < 8) {
-				console.log(catalog[i]);
-				const currentCar = require(`./cars/${catalog[i].carFile}`);
-				const card = await Canvas.loadImage(currentCar["card"]);
-				ctx.drawImage(card, cardPlacement[i].x, cardPlacement[i].y, 516, 317);
-				i++;
+				const cards = catalog.map(car => {
+					let currentCar = require(`./cars/${car.carFile}`);
+					return Canvas.loadImage(currentCar["card"]);
+				});
+				promises = await Promise.all(cards);
+			}
+			catch (error) {
+				console.log(error);
+				let errorPic = "https://cdn.discordapp.com/attachments/715771423779455077/796213265532583966/unknown.png";
+				attachment = new Discord.MessageAttachment(errorPic, "dealership.png");
+				cucked = true;
 			}
 
-			const avatar = await Canvas.loadImage(message.author.displayAvatarURL({ format: "jpg", dynamic: true }));
-			ctx.drawImage(avatar, 8, 8, 155, 155);
-
-			ctx.font = applyText(canvas, message.author.username);
-			ctx.fillStyle = "#ffffff";
-			ctx.fillText(message.author.username, 260, 60);
-			ctx.fillText(userData.money, 610, 60);
-			ctx.fillText(userData.trophies, 610, 140);
-			ctx.fillText(userData.fuseTokens, 260, 140);
-
-			const attachment = new Discord.MessageAttachment(canvas.toBuffer(), "dealership.png");
 			const deckScreen = new Discord.MessageEmbed()
 				.setColor("#34aeeb")
 				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 				.setTitle("Welcome to Cards&Bids, the go-to place for auto enthusiast cards!")
 				.setDescription("The catalog refreshes every day. Buy a car from here using `cd-buycar`!")
-				.attachFiles(attachment)
-				.setImage("attachment://dealership.png")
 				.setTimestamp();
 			for (i = 0; i < 8; i++) {
 				let car = require(`./cars/${catalog[i].carFile}`);
@@ -91,10 +74,18 @@ module.exports = {
 				if (typeof make === "object") {
 					make = car["make"][0];
 				}
-				const currentName = `${make} ${car["model"]} (${car["modelYear"]})`;
-				deckScreen.addField(`${i + 1} - ${currentName}`, `Price: ${moneyEmoji}${catalog[i].price}`, true);
+				let currentName = `${make} ${car["model"]} (${car["modelYear"]})`;
+
+				if (!cucked) {
+					ctx.drawImage(promises[i], cardPlacement[i].x, cardPlacement[i].y, 167, 103);
+					attachment = new Discord.MessageAttachment(canvas.toBuffer(), "dealership.png");
+				}	
+				deckScreen.addField(`${i + 1} - ${currentName}`, `Price: ${moneyEmoji}${catalog[i].price} \nStock Remaining: ${catalog[i].stock}`, true);
 			}
+
 			wait.delete();
+			deckScreen.attachFiles(attachment);
+			deckScreen.setImage("attachment://dealership.png");
 			return message.channel.send(deckScreen);
 
 			async function refresh() {
@@ -102,10 +93,11 @@ module.exports = {
 				var i = 0;
 				while (i < 8) {
 					const randNum = Math.floor(Math.random() * 100);
-					var currentName, price;
-					var currentCard;
+					let currentName, price, stock;
+					let currentCard;
 					if (randNum < 33) {
 						currentCard = require(`./cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
+						stock = 1000;
 						if (i < 4) {
 							while (isOnSale(currentCard) || currentCard["isPrize"] || currentCard["rq"] > 19) {
 								currentCard = require(`./cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
@@ -123,11 +115,13 @@ module.exports = {
 							while (isOnSale(currentCard) || currentCard["isPrize"] || currentCard["rq"] > 29 || currentCard["rq"] < 20) {
 								currentCard = require(`./cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
 							}
+							stock = 1000;
 						}
 						else {
 							while (isOnSale(currentCard) || currentCard["isPrize"] || currentCard["rq"] > 64 || currentCard["rq"] < 50) {
 								currentCard = require(`./cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
 							}
+							stock = 25;
 						}
 					}
 					else if (randNum < 91) {
@@ -136,11 +130,13 @@ module.exports = {
 							while (isOnSale(currentCard) || currentCard["isPrize"] || currentCard["rq"] > 39 || currentCard["rq"] < 30) {
 								currentCard = require(`./cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
 							}
+							stock = 1000;
 						}
 						else {
-							while (isOnSale(currentCard) || currentCard["isPrize"] || currentCard["rq"] > 79 || currentCard["rq"] < 65) {
+							while (isOnSale(currentCard) || currentCard["isPrize"] || currentCard["rq"] > 64 || currentCard["rq"] < 50) {
 								currentCard = require(`./cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
 							}
+							stock = 25;
 						}
 					}
 					else {
@@ -149,17 +145,18 @@ module.exports = {
 							while (isOnSale(currentCard) || currentCard["isPrize"] || currentCard["rq"] > 49 || currentCard["rq"] < 40) {
 								currentCard = require(`./cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
 							}
+							stock = 1000;
 						}
 						else {
-							while (isOnSale(currentCard) || currentCard["isPrize"] || currentCard["rq"] < 80) {
+							while (isOnSale(currentCard) || currentCard["isPrize"] || currentCard["rq"] > 79 || currentCard["rq"] < 65) {
 								currentCard = require(`./cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
 							}
+							stock = 5;
 						}
 					}
 					currentName = `${currentCard["make"]} ${currentCard["model"]} (${currentCard["modelYear"]})`;
 					price = definePrice(currentCard["rq"]);
-					catalog[i] = { carFile: currentName.toLowerCase(), price: price };
-					console.log(catalog[i].carFile);
+					catalog[i] = { carFile: currentName.toLowerCase(), price: price, stock: stock };
 					i++;
 				}
 				catalog.sort(function (a, b) {

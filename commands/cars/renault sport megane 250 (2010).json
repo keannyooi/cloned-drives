@@ -1,0 +1,46 @@
+{
+    "rq": 49,
+    "make": "Renault Sport",
+    "model": "Megane 250",
+    "modelYear": 2010,
+    "country": "FR",
+    "topSpeed": 155,
+    "0to60": 6.0,
+    "handling": 82,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch"],
+    "isPrize": false,
+
+    "weight": 1387,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 68.18,
+    "ola": 83.33,
+    "description": "French driving pleasure in the hot hatch form. Card by Spence",
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/795013244393357362/image0.jpg?width=651&height=406",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/795013367780999178/image0.jpg?width=650&height=406",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/795013388874547250/image0.jpg?width=648&height=406",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/795013401893928981/image0.jpg?width=649&height=406",
+    "racehud996": "",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/795013429911748618/image0.jpg?width=649&height=406",
+    "racehud699": "",
+
+    "333TopSpeed": 159,
+    "3330to60": 5.6,
+    "333Handling": 85,
+
+    "666TopSpeed": 163,
+    "6660to60": 5.3,
+    "666Handling": 88,
+
+    "969TopSpeed": 167,
+    "9690to60": 4.9,
+    "969Handling": 91
+}

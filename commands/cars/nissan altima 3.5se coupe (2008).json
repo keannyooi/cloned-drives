@@ -1,0 +1,61 @@
+﻿{
+    "rq": 48,
+    "make": "Nissan",
+    "model": "Altima 3.5SE Coupe",
+    "modelYear": 2008,
+    "country": "JP",
+    "topSpeed": 155,
+    "0to60": 6.1,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1453,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 62.24,
+    "ola": 78.69,
+    "description": "A unicorn car. Card by Spence",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/796252208177348668/image0.jpg?width=654&height=406",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/796252339433373747/image0.jpg?width=649&height=406",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/796252361688875038/image0.jpg?width=649&height=406",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/796252376792432670/image0.jpg?width=649&height=406",
+    "racehud996": "",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/796252401233428540/image0.jpg?width=649&height=406",
+    "racehud699": "",
+
+
+    "333TopSpeed": 159,
+    "3330to60": 5.7,
+    "333Handling": 76,
+
+
+    "666TopSpeed": 163,
+    "6660to60": 5.4,
+    "666Handling": 78,
+
+
+    "996TopSpeed": 0,
+    "9960to60": 0,
+    "996Handling": 0,
+
+
+    "969TopSpeed": 167,
+    "9690to60": 5.0,
+    "969Handling": 81,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

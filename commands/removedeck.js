@@ -15,7 +15,7 @@ module.exports = {
     usage: "<deck name goes here>",
     args: 1,
 	isExternal: true,
-    adminOnly: false,
+    adminOnly: true,
     description: 'Deletes a deck of your choice. (NOTE: Deck names cannot contain spaces, use underscores "_" instead)',
     async execute(message, args) {
         const db = message.client.db;
@@ -59,11 +59,11 @@ module.exports = {
                 message.channel.awaitMessages(filter, {
                     max: 1,
                     time: 30000,
-                    errors: ['time']
+                    errors: ["time"]
                 })
                     .then(collected => {
+						collected.first().delete();
                         if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
-                            collected.first().delete();
                             const errorMessage = new Discord.MessageEmbed()
                                 .setColor("#fc0303")
                                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -74,7 +74,6 @@ module.exports = {
                         }
                         else {
                             let currentDeck = searchResults[parseInt(collected.first()) - 1].deck;
-                            collected.first().delete();
                             removeDeck(currentDeck, currentMessage);
                         }
                     })

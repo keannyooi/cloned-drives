@@ -51,7 +51,7 @@ module.exports = {
             return message.channel.send(errorMessage);
         }
 
-		if (isNaN(args[1]) || parseInt(args[1]) < 0) {
+		if (isNaN(args[1]) || Math.ceil(parseInt(args[1])) < 0) {
 			const errorMessage = new Discord.MessageEmbed()
                 .setColor("#fc0303")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -61,7 +61,7 @@ module.exports = {
             return message.channel.send(errorMessage);
 		}
 
-		await db.set(`acc${user.id}.rrWinStreak`, parseInt(args[1]));
+		await db.set(`acc${user.id}.rrWinStreak`, Math.ceil(parseInt(args[1])));
 		const infoScreen = new Discord.MessageEmbed()
             .setColor("#03fc24")
             .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))

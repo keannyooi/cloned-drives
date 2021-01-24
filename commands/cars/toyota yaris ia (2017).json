@@ -1,0 +1,59 @@
+{
+    "rq": 31,
+    "make": "Toyota",
+    "model": "Yaris iA",
+    "modelYear": 2017,
+    "country": "JP",
+    "topSpeed": 120,
+    "0to60": 8.7,
+    "handling": 74,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1081,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 49.43,
+    "ola": 71.58,
+    "description": "Cute Mazda you got there, oh wait. Card by Connor",
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/795980429433110538/unknown.png",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/795980939149705217/toyota_yaris_ia.jpg",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/795980971400364052/toyota_yaris_ia_333.jpg",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/795980979423936542/toyota_yaris_ia_666.jpg",
+    "racehud996": "",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/795980990970331176/toyota_yaris_ia_969.jpg",
+    "racehud699": "",
+
+
+    "333TopSpeed": 123,
+    "3330to60": 8.1,
+    "333Handling": 77,
+
+
+    "666TopSpeed": 127,
+    "6660to60": 7.5,
+    "666Handling": 79,
+
+
+    "996TopSpeed": 0,
+    "9960to60": 0,
+    "996Handling": 0,
+
+
+    "969TopSpeed": 130,
+    "9690to60": 7.0,
+    "969Handling": 82,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

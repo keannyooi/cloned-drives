@@ -9,181 +9,129 @@
 
 const Discord = require("discord.js-light");
 const fs = require("fs");
+const carFiles = fs.readdirSync('./commands/cars').filter(file => file.endsWith('.json'));
 
 module.exports = {
-	async openPack(message, currentPack) {
-		const carFiles = fs.readdirSync('./commands/cars').filter(file => file.endsWith('.json'));
-		const waitTime = 20000;
+	openPack(message, currentPack) {
 		const cardFilter = currentPack["filter"];
-		const filter = (reaction, user) => {
-            return reaction.emoji.name === "➡️" && user.id === message.author.id;
-        };
-		var sequence;
-		var currentCard = require(`../cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
-		var pulledCards = "";
 
-		switch (currentPack["packType"]) {
-			case "Regular":
-				sequence = [{ low: 1, high: 19 }, { low: 20, high: 29 }, { low: 20, high: 29 }, { low: 30, high: 39 }, { low: 40, high: 100 }];
-				break;
-			default:
-				break;
+		let rand, check;
+		let rqStart, rqEnd;
+		let currentCard = require(`../cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
+		let pulledCards = "";
+		let addedCars = [];
+
+		for (i = 0; i < 5; i++) {
+			console.log(i);
+			rand = Math.floor(Math.random() * 100);
+			check = 0;
+			for (let rarity of Object.keys(currentPack["packSequence"][i])) {
+				check += currentPack["packSequence"][i][rarity];
+				if (check > rand) {
+					switch (rarity) {
+						case "common":
+							rqStart = 10;
+							rqEnd = 19;
+							break;
+						case "uncommon":
+							rqStart = 20;
+							rqEnd = 29;
+							break;
+						case "rare":
+							rqStart = 30;
+							rqEnd = 39;
+							break;
+						case "superRare":
+							rqStart = 40;
+							rqEnd = 49;
+							break;
+						case "ultraRare":
+							rqStart = 50;
+							rqEnd = 64;
+							break;
+						case "epic":
+							rqStart = 65;
+							rqEnd = 79;
+							break;
+						case "legendary":
+							rqStart = 80;
+							rqEnd = 100;
+							break;
+						default:
+							break;
+					}
+					break;
+				}
+			}
+
+			let carFile = carFiles[Math.floor(Math.random() * carFiles.length)];
+			currentCard = require(`../cars/${carFile}`);
+			while (currentCard["rq"] < rqStart || currentCard["rq"] > rqEnd || filterCard(currentCard, cardFilter) === false) {
+				carFile = carFiles[Math.floor(Math.random() * carFiles.length)];
+				currentCard = require(`../cars/${carFile}`);
+			}
+			let make = currentCard["make"];
+			if (typeof make === "object") {
+				make = currentCard["make"][0];
+			}
+			let rarity = rarityCheck(currentCard);
+
+			addedCars.push(carFile);
+			pulledCards += `(${rarity} ${currentCard["rq"]}) ${make} ${currentCard["model"]} (${currentCard["modelYear"]})\n`;
 		}
 
-		var cardCount = 1;
-		//----------Card 1-------------
-		while (currentCard["rq"] < sequence[0].low || currentCard["rq"] > sequence[0].high || filterCard(currentCard, cardFilter) === false) {
-			currentCard = require(`../cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
-		}
-		var rarity = rarityCheck(currentCard);
-		var pulledCards = `(${rarity} ${currentCard["rq"]}) ` + currentCard["make"] + ' ' + currentCard["model"] + ' (' + currentCard["modelYear"] + ')\n';
+		addedCars.sort(function (a, b) {
+            const carA = require(`./cars/${a}`);
+            const carB = require(`./cars/${b}`);
 
-		var packScreen = new Discord.MessageEmbed()
+            if (carA["rq"] === carB["rq"]) {
+                let nameA = `${carA["make"]} ${carA["model"]}`.toLowerCase();
+                let nameB = `${carA["make"]} ${carA["model"]}`.toLowerCase();
+				if (typeof carA["make"] === "object") {
+					nameA = `${carA["make"][0]} ${carA["model"]}`.toLowerCase();
+				}
+				if (typeof carB["make"] === "object") {
+					nameB = `${carB["make"][0]} ${carB["model"]}`.toLowerCase();
+				}
+
+                if (nameA < nameB) {
+                    return -1;
+                }
+                else if (nameA > nameB) {
+                    return 1;
+                }
+                else {
+                    return 0;
+                }
+            }
+            else {
+                if (carA["rq"] > carB["rq"]) {
+                    return -1;
+                }
+                else {
+                    return 1;
+                }
+            }
+        });
+		let d = require(`./cars/${addedCars[addedCars.length - 1]}`);
+
+		let packScreen = new Discord.MessageEmbed()
 			.setColor("#34aeeb")
+			.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 			.setTitle(`Opening ${currentPack["packName"]}...`)
-			.setDescription("React with ➡️ to reveal the next card.")
+			.setDescription("Click on the image to see the cards better.")
 			.setThumbnail(currentPack["pack"])
-			.setImage(currentCard["card"])
-			.addField('Cards Pulled:', pulledCards)
-			.setFooter(`Card ${cardCount} of 5`)
+			.setImage(d["card"])
+			.addField("Cards Pulled:", pulledCards)
 			.setTimestamp();
-
-		const packMessage = await message.channel.send(packScreen);
-		packMessage.react("➡️");
-		try {
-			await packMessage.awaitReactions(filter, {
-				max: 1,
-				time: waitTime,
-				errors: ['time']
-			});
-		}
-		catch (error) {
-			console.log("moved one to next card automatically");
-		}
-		//----------Card 2-------------
-		packMessage.reactions.removeAll();
-		cardCount++;
-		currentCard = require(`../cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
-		while (currentCard["rq"] < sequence[1].low || currentCard["rq"] > sequence[1].high || !filterCard(currentCard, cardFilter)) {
-			currentCard = require(`../cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
-		}
-
-		rarity = rarityCheck(currentCard);
-		pulledCards += `(${rarity} ${currentCard["rq"]}) ` + currentCard["make"] + ' ' + currentCard["model"] + ' (' + currentCard["modelYear"] + ')\n';
-		packScreen = new Discord.MessageEmbed()
-			.setColor("#34aeeb")
-			.setTitle(`Opening ${currentPack["packName"]}...`)
-			.setDescription("React with ➡️ to reveal the next card.")
-			.setThumbnail(currentPack["pack"])
-			.setImage(currentCard["card"])
-			.addField('Cards Pulled:', pulledCards)
-			.setFooter(`Card ${cardCount} of 5`)
-			.setTimestamp();
-
-		packMessage.edit(packScreen);
-		packMessage.react("➡️");
-		try {
-			await packMessage.awaitReactions(filter, {
-				max: 1,
-				time: waitTime,
-				errors: ['time']
-			});
-		}
-		catch (error) {
-			console.log("moved one to next card automatically");
-		}
-		//----------Card 3-------------
-		packMessage.reactions.removeAll();
-		cardCount++;
-		currentCard = require(`../cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
-		while (currentCard["rq"] < sequence[2].low || currentCard["rq"] > sequence[2].high || !filterCard(currentCard, cardFilter)) {
-			currentCard = require(`../cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
-		}
-
-		rarity = rarityCheck(currentCard);
-		pulledCards += `(${rarity} ${currentCard["rq"]}) ` + currentCard["make"] + ' ' + currentCard["model"] + ' (' + currentCard["modelYear"] + ')\n';
-		packScreen = new Discord.MessageEmbed()
-			.setColor("#34aeeb")
-			.setTitle(`Opening ${currentPack["packName"]}...`)
-			.setDescription("React with ➡️ to reveal the next card.")
-			.setThumbnail(currentPack["pack"])
-			.setImage(currentCard["card"])
-			.addField('Cards Pulled:', pulledCards)
-			.setFooter(`Card ${cardCount} of 5`)
-			.setTimestamp();
-
-		packMessage.edit(packScreen);
-		packMessage.react("➡️");
-		try {
-			await packMessage.awaitReactions(filter, {
-				max: 1,
-				time: waitTime,
-				errors: ['time']
-			});
-		}
-		catch (error) {
-			console.log("moved one to next card automatically");
-		}
-		//----------Card 4-------------
-		packMessage.reactions.removeAll();
-		cardCount++;
-		currentCard = require(`../cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
-		while (currentCard["rq"] < sequence[3].low || currentCard["rq"] > sequence[3].high || !filterCard(currentCard, cardFilter)) {
-			currentCard = require(`../cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
-		}
-
-		rarity = rarityCheck(currentCard);
-		pulledCards += `(${rarity} ${currentCard["rq"]}) ` + currentCard["make"] + ' ' + currentCard["model"] + ' (' + currentCard["modelYear"] + ')\n';
-		packScreen = new Discord.MessageEmbed()
-			.setColor("#34aeeb")
-			.setTitle(`Opening ${currentPack["packName"]}...`)
-			.setDescription("React with ➡️ to reveal the next card.")
-			.setThumbnail(currentPack["pack"])
-			.setImage(currentCard["card"])
-			.addField('Cards Pulled:', pulledCards)
-			.setFooter(`Card ${cardCount} of 5`)
-			.setTimestamp();
-
-		packMessage.edit(packScreen);
-		packMessage.react("➡️");
-		try {
-			await packMessage.awaitReactions(filter, {
-				max: 1,
-				time: waitTime,
-				errors: ['time']
-			});
-		}
-		catch (error) {
-			console.log("moved one to next card automatically");
-		}
-		//----------Card 5-------------
-		packMessage.reactions.removeAll();
-		cardCount++;
-		currentCard = require(`../cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
-		while (currentCard["rq"] < sequence[4].low || currentCard["rq"] > sequence[4].high || !filterCard(currentCard, cardFilter)) {
-			currentCard = require(`../cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
-		}
-
-		rarity = rarityCheck(currentCard);
-		pulledCards += `(${rarity} ${currentCard["rq"]}) ` + currentCard["make"] + ' ' + currentCard["model"] + ' (' + currentCard["modelYear"] + ')\n';
-		packScreen = new Discord.MessageEmbed()
-			.setColor("#34aeeb")
-			.setTitle(`Opening ${currentPack["packName"]}...`)
-			.setDescription("~~React with ➡️ to reveal the next card.~~")
-			.setThumbnail(currentPack["pack"])
-			.setImage(currentCard["card"])
-			.addField('Cards Pulled:', pulledCards)
-			.setFooter(`Card ${cardCount} of 5`)
-			.setTimestamp();
-
-		packMessage.edit(packScreen);
+		message.channel.send(packScreen);
+		return addedCars;
 
 		function filterCard(currentCard, filter) {
-			var passed = true;
+			let passed = true;
 			if (currentCard["isPrize"] === false) {
-				for (var criteria in filter) {
+				for (let criteria in filter) {
 					if (filter[criteria] !== "None") {
-						console.log(criteria);
 						switch (criteria) {
 							case "modelYear":
 								if (currentCard["modelYear"] < filter["modelYear"]["start"] || currentCard["modelYear"] > filter["modelYear"]["end"]) {
@@ -206,27 +154,27 @@ module.exports = {
 		}
 
 		function rarityCheck(currentCar) {
-        	if (currentCar["rq"] > 79) { //leggie
-            	return message.guild.emojis.cache.find(emoji => emoji.name === "legendary");
+            if (currentCar["rq"] > 79) { //leggie
+                return message.client.emojis.cache.get("726025494138454097");
             }
             else if (currentCar["rq"] > 64 && currentCar["rq"] <= 79) { //epic
-                return message.guild.emojis.cache.find(emoji => emoji.name === "epic");
+                return message.client.emojis.cache.get("726025468230238268");
             }
-        	else if (currentCar["rq"] > 49 && currentCar["rq"] <= 64) { //ultra
-            	return message.guild.emojis.cache.find(emoji => emoji.name === "ultrarare");
-        	}
+            else if (currentCar["rq"] > 49 && currentCar["rq"] <= 64) { //ultra
+                return message.client.emojis.cache.get("726025431937187850");
+            }
             else if (currentCar["rq"] > 39 && currentCar["rq"] <= 49) { //super
-                return message.guild.emojis.cache.find(emoji => emoji.name === "superrare");
-        	}
-        	else if (currentCar["rq"] > 29 && currentCar["rq"] <= 39) { //rare
-            	return message.guild.emojis.cache.find(emoji => emoji.name === "rare");
+                return message.client.emojis.cache.get("726025394104434759");
             }
-        	else if (currentCar["rq"] > 19 && currentCar["rq"] <= 29) { //uncommon
-            	return message.guild.emojis.cache.find(emoji => emoji.name === "uncommon");
-        	}
+            else if (currentCar["rq"] > 29 && currentCar["rq"] <= 39) { //rare
+                return message.client.emojis.cache.get("726025302656024586");
+            }
+            else if (currentCar["rq"] > 19 && currentCar["rq"] <= 29) { //uncommon
+                return message.client.emojis.cache.get("726025273421725756");
+            }
             else { //common
-            	return message.guild.emojis.cache.find(emoji => emoji.name === "common");
-        	}
+                return message.client.emojis.cache.get("726020544264273928");
+            }
         }
 	}
 }

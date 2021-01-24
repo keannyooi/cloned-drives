@@ -1,0 +1,47 @@
+{
+    "rq": 69,
+    "make": "Mazda",
+    "model": "3 2.5 Turbo Skyactiv-G AWD Sedan",
+    "modelYear": 2021,
+    "country": "JP",
+    "topSpeed": 134,
+    "0to60": 5.6,
+    "handling": 77,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Year of the Ox"],
+    "isPrize": false,
+
+    "weight": 1539,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.37,
+    "ola": 70.00,
+    "description": "The little Mazda with big power. Card by DodgeDemon.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/793932357577080882/2021_Mazda_3_Turbo_AWD_Sedan.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/793932568499453972/3SedanSt.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/793932588062081034/3Sedan1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/793932601609551902/3Sedan2.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/793932615928512532/3Sedan323.png",
+    "racehud699": "",
+
+    "333TopSpeed": 138,
+    "3330to60": 5.2,
+    "333Handling": 80,
+
+    "666TopSpeed": 141,
+    "6660to60": 4.8,
+    "666Handling": 83,
+
+    "969TopSpeed": 145,
+    "9690to60": 4.6,
+    "969Handling": 85
+
+}

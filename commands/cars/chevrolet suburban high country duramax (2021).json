@@ -1,0 +1,54 @@
+{
+    "rq": 35,
+    "make": "Chevrolet",
+    "model": "Suburban High Country Duramax",
+    "modelYear": 2021,
+    "country": "US",
+    "topSpeed": 112,
+    "0to60": 8.5,
+    "handling": 50,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Year of the Ox"],
+    "isPrize": false,
+
+    "weight": 2825,
+    "gc": "High",
+    "seatCount": 7,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 50.00,
+    "ola": 66.66,
+    "description": "Card by DodgeDemon.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/800140283349434410/2021_Chevrolet_Suburban_High_Country_Duramax.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/800141620468908032/sub.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/800141631881347072/sub333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/800141649342627910/sub666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/800141713989173278/sub996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/800141693533290496/sub969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/800141671173980170/sub699.png",
+
+    "333TopSpeed": 115,
+    "3330to60": 8.1,
+    "333Handling": 52,
+
+    "666TopSpeed": 118,
+    "6660to60": 7.8,
+    "666Handling": 54,
+
+    "996TopSpeed": 122,
+    "9960to60": 7.5,
+    "996Handling": 55,
+
+    "969TopSpeed": 121,
+    "9690to60": 7.7,
+    "969Handling": 56,
+
+    "699TopSpeed": 120,
+    "6990to60": 7.7,
+    "699Handling": 56
+}

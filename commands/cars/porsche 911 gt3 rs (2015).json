@@ -1,0 +1,46 @@
+{
+    "rq": 89,
+    "make": "Porsche",
+    "model": "911 GT3 RS",
+    "modelYear": 2015,
+    "country": "DE",
+    "topSpeed": 193,
+    "0to60": 3.0,
+    "handling": 92,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1495,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 78.95,
+    "ola": 80.00,
+    "description": "The ultimate track version of the 911 2015 throwback. Card by Macan",
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/795817301776793681/Porsche_911_GT3_RS_2015.png?width=652&height=406",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/795015385283297280/image0.jpg?width=594&height=370",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/795015418665369601/image0.jpg?width=594&height=370",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/795015439280767076/image0.jpg?width=594&height=370",
+    "racehud996": "",
+    "racehud969": "",
+    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/795015464840986694/image0.jpg?width=594&height=370",
+
+    "333TopSpeed": 196,
+    "3330to60": 2.9,
+    "333Handling": 95,
+
+    "666TopSpeed": 199,
+    "6660to60": 2.7,
+    "666Handling": 99,
+
+    "699TopSpeed": 200,
+    "6990to60": 2.6,
+    "699Handling": 102
+}

@@ -1,0 +1,61 @@
+{
+    "rq": 42,
+    "make": "Nissan",
+    "model": "Frontier SC Crew Cab",
+    "modelYear": 2000,
+    "country": "JP",
+    "topSpeed": 101,
+    "0to60": 9.5,
+    "handling": 68,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1565,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "Pickup",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 35.55,
+    "ola": 58.68,
+    "description": "Classic Nissan pick-up in the early noughties. Card by Connor",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/798872448421986314/Frontier2000.png?width=1154&height=719",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/798872613702598716/Frontier2000St.png",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/798872624280764416/Frontier20001.png",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/798872635802648596/Frontier20002.png",
+    "racehud996": "",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/798872646149865472/Frontier2000323.png",
+    "racehud699": "",
+
+
+    "333TopSpeed": 104,
+    "3330to60": 8.8,
+    "333Handling": 70,
+
+
+    "666TopSpeed": 107,
+    "6660to60": 8.2,
+    "666Handling": 72,
+
+
+    "996TopSpeed": 0,
+    "9960to60": 0,
+    "996Handling": 0,
+
+
+    "969TopSpeed": 110,
+    "9690to60": 7.5,
+    "969Handling": 75,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

@@ -1,0 +1,54 @@
+{
+    "rq": 82,
+    "make": "Porsche",
+    "model": "Carrera GT",
+    "modelYear": 2004,
+    "country": "DE",
+    "topSpeed": 205,
+    "0to60": 3.6,
+    "handling": 87,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": true,
+
+    "weight": 1380,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Roadster",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 109.09,
+    "ola": 100.00,
+    "description": "Just be careful on the brakes. Card by Spence.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/798715735282286592/image0.jpg",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/798715863389175808/image0.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/798715896180637736/image0.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/798715920577986570/image0.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/798716018146410526/image0.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/798715996424765450/image0.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/798715962350239744/image0.jpg",
+
+    "333TopSpeed": 207,
+    "3330to60": 3.4,
+    "333Handling": 90,
+
+    "666TopSpeed": 210,
+    "6660to60": 3.2,
+    "666Handling": 93,
+
+    "996TopSpeed": 214,
+    "9960to60": 2.9,
+    "996Handling": 94,
+
+    "969TopSpeed": 213,
+    "9690to60": 3.0,
+    "969Handling": 96,
+
+    "699TopSpeed": 212,
+    "6990to60": 3.0,
+    "699Handling": 97
+}

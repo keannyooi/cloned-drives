@@ -15,7 +15,7 @@ module.exports = {
     usage: "<(optional) name of deck>",
     args: 0,
 	isExternal: true,
-    adminOnly: false,
+    adminOnly: true,
     description: "Shows your decks.",
     async execute(message, args) {
         const db = message.client.db;

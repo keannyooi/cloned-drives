@@ -1,0 +1,50 @@
+{
+    "rq": 49,
+    "make": ["Mugen", "Honda"],
+    "model": "Civic Type-R",
+    "modelYear": 2009,
+    "country": "JP",
+    "topSpeed": 153,
+    "0to60": 5.9,
+    "handling": 84,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Year of the Ox"],
+    "isPrize": false,
+
+    "weight": 1233,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 70.24,
+    "ola": 61.02,
+    "description": "The tuned FK2. By Havvy",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/794659274936549387/MugenCivicType-RUFO.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/794702056870510652/000mug2.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/794702071014096906/111mug2.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/794702079737987102/222mug2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/794702101116747826/332mug2.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/794702091821252648/323mug2.png",
+    "racehud699": "",
+
+    "333TopSpeed": 153,
+    "3330to60": 5.6,
+    "333Handling": 87,
+
+    "666TopSpeed": 161,
+    "6660to60": 5.3,
+    "666Handling": 90,
+
+    "996TopSpeed": 166,
+    "9960to60": 4.9,
+    "996Handling": 90,
+
+    "969TopSpeed": 165,
+    "9690to60": 5.0,
+    "969Handling": 93
+}

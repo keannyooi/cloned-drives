@@ -1,0 +1,46 @@
+{
+    "rq": 11,
+    "make": "Mercedes-Benz",
+    "model": "710 SSK",
+    "modelYear": 1929,
+    "country": "DE",
+    "topSpeed": 114,
+    "0to60": 14.0,
+    "handling": 59,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Ultra Expensive"],
+    "isPrize": false,
+
+    "weight": 1690,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Roadster",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 35.90,
+    "ola": 58.57,
+    "description": "A timeless classic which is highly sought after for its rarity and engineering, even for thieves in a certain manga series. Card by bnuuy",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/793622200007524373/mercedes-benz710ssk.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/793622691684155412/710ssk.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/793622703729803275/710ssk333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/793622718955913236/710ssk666.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/793622738623135824/710ssk969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 117,
+    "3330to60": 13.5,
+    "333Handling": 62,
+
+    "666TopSpeed": 120,
+    "6660to60": 13.0,
+    "666Handling": 64,
+
+    "969TopSpeed": 123,
+    "9690to60": 12.6,
+    "969Handling": 67
+}

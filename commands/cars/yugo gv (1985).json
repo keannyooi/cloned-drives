@@ -1,0 +1,54 @@
+{
+    "rq": 12,
+    "make": "Yugo",
+    "model": "GV",
+    "modelYear": 1985,
+    "country": "YU",
+    "topSpeed": 86,
+    "0to60": 14.5,
+    "handling": 58,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Year of the Ox"],
+    "isPrize": false,
+
+    "weight": 825,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 0.00,
+    "ola": 66.21,
+    "description": "honestly, dont ask. Card by Spence.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/799308290030305320/image0.jpg",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/799308403947601950/image0.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/799308473644089344/image0.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/799308554354950146/image0.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/799308647531544626/image0.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/799308611759112192/image0.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/799308672164560936/image0.jpg",
+
+    "333TopSpeed": 88,
+    "3330to60": 13.0,
+    "333Handling": 60,
+
+    "666TopSpeed": 91,
+    "6660to60": 11.9,
+    "666Handling": 62,
+
+    "996TopSpeed": 93,
+    "9960to60": 10.5,
+    "996Handling": 62,
+
+    "969TopSpeed": 93,
+    "9690to60": 10.8,
+    "969Handling": 64,
+
+    "699TopSpeed": 91,
+    "6990to60": 11.2,
+    "699Handling": 64
+}

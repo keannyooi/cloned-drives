@@ -1,0 +1,61 @@
+﻿{
+    "rq": 12,
+    "make": "Honda",
+    "model": "Civic CVCC 5-Speed",
+    "modelYear": 1975,
+    "country": "JP",
+    "topSpeed": 91,
+    "0to60": 15.0,
+    "handling": 63,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 680,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 0.00,
+    "ola": 58.67,
+    "description": "When 5-Speed gearbox were revolutionary. Card by Connor",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/801847158708895801/F.HondaCivicCVCC5spd.png?width=1154&height=718",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/801849833723002960/CVCCSt.png",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/801849841096589342/CVCC1.png",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/801849847577575434/CVCC2.png",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/801849877905801256/CVCC332.png",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/801849868787908658/CVCC323.png",
+    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/801849856309460992/CVCC233.png",
+
+
+    "333TopSpeed": 92,
+    "3330to60": 13.6,
+    "333Handling": 65,
+
+
+    "666TopSpeed": 93,
+    "6660to60": 12.2, 
+    "666Handling": 68,
+
+
+    "996TopSpeed": 96,
+    "9960to60": 10.7,
+    "996Handling": 68,
+
+
+    "969TopSpeed": 96,
+    "9690to60": 10.9,
+    "969Handling": 70,
+
+
+    "699TopSpeed": 95,
+    "6990to60": 11.1,
+    "699Handling": 70
+}

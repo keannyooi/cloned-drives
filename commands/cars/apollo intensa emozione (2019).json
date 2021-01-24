@@ -6,7 +6,7 @@
     "country": "DE",
     "topSpeed": 208,
     "0to60": 2.7,
-    "handling": 100,
+    "handling": 98,
     "driveType": "RWD",
     "tyreType": "Performance",
     "tags": ["Track Day"],
@@ -24,23 +24,23 @@
     "ola": 96.30,
     "description": "The car purist's modern-day hypercar. Card by DodgeDemon",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/775815056537419806/2019_Appollo_IE.png",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/775817609479847937/ApolloIEStock.png?width=760&height=475",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/775817692346056734/ApolloIE333.png?width=760&height=475",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/775817711946039306/ApolloIE666.png?width=760&height=475",
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/795515303345127444/real.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/795515426385035264/unknown.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/795516156185542686/unknown.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/795516363790745610/unknown.png",
     "racehud996": "",
     "racehud969": "",
-    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/775817790941691964/ApolloIE699.png?width=760&height=475",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/795516552081571860/unknown.png",
 
     "333TopSpeed": 211,
     "3330to60": 2.5,
-    "333Handling": 103,
+    "333Handling": 101,
 
     "666TopSpeed": 213,
     "6660to60": 2.4,
-    "666Handling": 107,
+    "666Handling": 105,
 
     "699TopSpeed": 215,
     "6990to60": 2.3,
-    "699Handling": 110
+    "699Handling": 109
 }

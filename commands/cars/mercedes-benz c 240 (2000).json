@@ -1,0 +1,61 @@
+﻿{
+    "rq": 26,
+    "make": "Mercedes-Benz",
+    "model": "C 240",
+    "modelYear": 2000,
+    "country": "DE",
+    "topSpeed": 146,
+    "0to60": 8.8,
+    "handling": 68,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1460,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 58.67,
+    "ola": 82.95,
+    "description": "New gen C class how cute. Card by Havvy",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/797158905904889886/M-BC240.png?width=1154&height=718",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/797159498656907335/c240St.png",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/797159504852025354/c2401.png",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/797159508128301116/c2402.png",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/797162357968863302/c240332.png",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/797159517845585980/c240323.png",
+    "racehud699": "",
+
+
+    "333TopSpeed": 149,
+    "3330to60": 8.1,
+    "333Handling": 71,
+
+
+    "666TopSpeed": 152,
+    "6660to60": 7.4,
+    "666Handling": 73,
+
+
+    "996TopSpeed": 156,
+    "9960to60": 6.5,
+    "996Handling": 73,
+
+
+    "969TopSpeed": 155,
+    "9690to60": 6.8,
+    "969Handling": 75,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

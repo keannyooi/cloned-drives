@@ -1,0 +1,61 @@
+﻿{
+    "rq": 47,
+    "make": "Porsche",
+    "model": "Boxster 2.5",
+    "modelYear": 1998,
+    "country": "DE",
+    "topSpeed": 152,
+    "0to60": 6.1,
+    "handling": 85,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1250,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Roadster",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 65.59,
+    "ola": 81.97,
+    "description": "Affordable fun 90s Porsche . Card by Spence",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/796379898796310568/image0.png?width=642&height=400",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/796380069144559626/1998_Porsche_Boxster_2.5.png?width=642&height=400",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/796380110801731584/1998_Porsche_Boxster_2.5_333.png?width=652&height=406",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/796380119093477426/1998_Porsche_Boxster_2.5_666.png?width=652&height=406",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/796381922267889694/1998_Porsche_Boxster_2.5_996.png?width=652&height=406",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/796380143324626954/1998_Porsche_Boxster_2.5_969.png?width=652&height=406",
+    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/796380136395112508/1998_Porsche_Boxster_2.5_699.png?width=652&height=406",
+
+
+    "333TopSpeed": 156,
+    "3330to60": 5.7,
+    "333Handling": 88,
+
+
+    "666TopSpeed": 160,
+    "6660to60": 5.4,
+    "666Handling": 90,
+
+
+    "996TopSpeed": 164,
+    "9960to60": 4.9,
+    "996Handling": 91,
+
+
+    "969TopSpeed": 163,
+    "9690to60": 5.3,
+    "969Handling": 92,
+
+
+    "699TopSpeed": 162,
+    "6990to60": 5.3,
+    "699Handling": 93
+}

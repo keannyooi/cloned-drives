@@ -1,0 +1,61 @@
+﻿{
+    "rq": 14,
+    "make": "Ford",
+    "model": "Festiva",
+    "modelYear": 1987,
+    "country": "US",
+    "topSpeed": 93,
+    "0to60": 11.3,
+    "handling": 62,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 780,
+    "gc": "Medium",
+    "seatCount":4,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 19.38,
+    "ola": 64.01,
+    "description": "What car? I just see a trash can in front of a petco. Card by Andu",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/801758352798646282/FestivaTagged.png?width=1154&height=719",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/801759932188983346/festivaSt.png",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/801759941416189952/festiva1.png",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/801759950040203305/festiva2.png",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/801759982039072818/festiva332.png",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/801759970193965086/festiva323.png",
+    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/801759960970690590/festiva233.png",
+
+
+    "333TopSpeed": 95,
+    "3330to60": 10.5,
+    "333Handling": 64,
+
+
+    "666TopSpeed": 98,
+    "6660to60": 9.7, 
+    "666Handling": 67,
+
+
+    "996TopSpeed": 102,
+    "9960to60": 8.6,
+    "996Handling": 67,
+
+
+    "969TopSpeed": 101,
+    "9690to60": 8.8,
+    "969Handling": 69,
+
+
+    "699TopSpeed": 99,
+    "6990to60": 9.0,
+    "699Handling": 69
+}

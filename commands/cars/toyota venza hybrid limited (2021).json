@@ -1,0 +1,46 @@
+{
+    "rq": 48,
+    "make": "Toyota",
+    "model": "Venza Hybrid Limited",
+    "modelYear": 2021,
+    "country": "JP",
+    "topSpeed": 118,
+    "0to60": 7.6,
+    "handling": 72,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly", "Year of the Ox"],
+    "isPrize": false,
+
+    "weight": 1759,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+	"enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 57.14,
+    "ola": 71.23,
+    "description": "Yet another old nameplate resurrected as a boring crossover. Card by Dodge",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/797195739868430366/2021_Toyota_Venza_Hybrid_Limited.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/797195875595452436/Toyota_Venza_Hybrid_Limited_2021_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/797195900505030696/Toyota_Venza_Hybrid_Limited_2021_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/797195908961140736/Toyota_Venza_Hybrid_Limited_2021_666.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/797195933707403334/Toyota_Venza_Hybrid_Limited_2021_969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 121,
+    "3330to60": 7.1,
+    "333Handling": 74,
+
+    "666TopSpeed": 124,
+    "6660to60": 6.6,
+    "666Handling": 77,
+
+    "969TopSpeed": 128,
+    "9690to60": 6.2,
+    "969Handling": 80
+}

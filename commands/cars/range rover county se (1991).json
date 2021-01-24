@@ -1,0 +1,61 @@
+﻿{
+    "rq": 40,
+    "make": "Range Rover",
+    "model": "County SE",
+    "modelYear": 1991,
+    "country": "GB",
+    "topSpeed": 104,
+    "0to60": 11.3,
+    "handling": 61,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1996,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 35.99,
+    "ola": 69.03,
+    "description": "SE version of the County. Card by Havvy",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/797195779910533120/RangeRoverCountySE.png?width=1154&height=718",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/797182990873526393/000cpl.png?width=1154&height=718",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/797183002354253855/111cpl.png?width=1154&height=718",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/797183027620741151/222cpl.png?width=1154&height=718",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/797183045773688863/332cpl.png?width=1154&height=718",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/797183035182284851/323cpl.png?width=1154&height=718",
+    "racehud699": "",
+
+
+    "333TopSpeed": 108,
+    "3330to60": 10.5,
+    "333Handling": 63,
+
+
+    "666TopSpeed": 112,
+    "6660to60": 9.6,
+    "666Handling": 66,
+
+
+    "996TopSpeed": 117,
+    "9960to60": 8.5,
+    "996Handling": 66,
+
+
+    "969TopSpeed": 116,
+    "9690to60": 8.8,
+    "969Handling": 68,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

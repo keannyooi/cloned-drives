@@ -1,0 +1,46 @@
+{
+    "rq": 24,
+    "make": "Toyota",
+    "model": "Corolla XSE Apex",
+    "modelYear": 2021,
+    "country": "JP",
+    "topSpeed": 117,
+    "0to60": 8.8,
+    "handling": 79,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Year of the Ox"],
+    "isPrize": false,
+
+    "weight": 1418,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 51.17,
+    "ola": 80.81,
+    "description": "The Apex sedan made even slower, despite being 1 trim higher than the SE. Card by DodgeDemon",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/793940920781111327/2021_Toyota_Corolla_XSE_Apex.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/793941360167485440/CorollaXSEASt.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/793941375115722782/CorollaXSEA1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/793941389414629426/CorollaXSEA2.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/793941412114595840/CorollaXSEA323.png",
+    "racehud699": "",
+
+    "333TopSpeed": 121,
+    "3330to60": 8.2,
+    "333Handling": 82,
+
+    "666TopSpeed": 125,
+    "6660to60": 7.6,
+    "666Handling": 85,
+
+    "969TopSpeed": 129,
+    "9690to60": 7.1,
+    "969Handling": 87
+}

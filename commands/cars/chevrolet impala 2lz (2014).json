@@ -1,0 +1,61 @@
+﻿{
+    "rq": 49,
+    "make": "Chevrolet",
+    "model": "Impala 2LZ",
+    "modelYear": 2014,
+    "country": "US",
+    "topSpeed": 149,
+    "0to60": 6.1,
+    "handling": 75,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1750, 
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 64.89,
+    "ola": 96.77,
+    "description": "Chevy's big sedan. Card by Kaiser",
+
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/798188747228446730/Chevrolet_Impala_2LZ_14.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/800320020143538186/Impala2lz.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/800320026212171796/Impala2lz1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/800320031468158986/Impala2lz2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/800320059171143710/Impala2lz332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/800320050350784512/Impala2lz323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/800320041517449217/Impala2lz233.png",
+
+
+    "333TopSpeed": 153,
+    "3330to60": 5.7,
+    "333Handling": 78,
+
+
+    "666TopSpeed": 156,
+    "6660to60": 5.4, 
+    "666Handling": 80,
+
+
+    "996TopSpeed": 162,
+    "9960to60": 4.8,
+    "996Handling": 80,
+
+
+    "969TopSpeed": 159,
+    "9690to60": 5.0,
+    "969Handling": 83,
+
+
+    "699TopSpeed": 156,
+    "6990to60": 5.1,
+    "699Handling": 83
+}

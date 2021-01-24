@@ -1,0 +1,61 @@
+﻿{
+    "rq": 59,
+    "make": "Volkswagen",
+    "model": "Phaeton 6.0  W12",
+    "modelYear": 2002,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 6.0,
+    "handling": 74,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 2317,
+    "gc": "Low",
+    "seatCount":5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 71.43,
+    "ola": 73.33,
+    "description": "So over engineered it could run at 300kmh with 50°C weather for a whole day. Card by Andu",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/802609130732257280/PhaetonW12.png?width=1154&height=719",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/802609732312498216/PhaetonW12.png",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/802609742912421969/PhaetonW121.png",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/802609756282814464/PhaetonW122.png",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/802609779528040488/PhaetonW12332.png",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/802609769159458816/PhaetonW12323.png",
+    "racehud699": "",
+
+
+    "333TopSpeed": 158,
+    "3330to60": 5.7,
+    "333Handling": 76,
+
+
+    "666TopSpeed": 161,
+    "6660to60": 5.5, 
+    "666Handling": 80,
+
+
+    "996TopSpeed": 165,
+    "9960to60": 5.2,
+    "996Handling": 81,
+
+
+    "969TopSpeed": 164,
+    "9690to60": 5.3,
+    "969Handling": 82,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

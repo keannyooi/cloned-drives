@@ -1,0 +1,61 @@
+﻿{
+    "rq": 62,
+    "make": "GMC",
+    "model": "Typhoon",
+    "modelYear": 1992,
+    "country": "US",
+    "topSpeed": 125,
+    "0to60": 5.8,
+    "handling": 70,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Wild Ride"],
+    "isPrize": false,
+
+
+    "weight": 1734,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Suv",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 55.77,
+    "ola": 75.86,
+    "description": "One of the first sport trucks. Card by Connor",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/802112074012295188/B.GMCTyphoon.png?width=1154&height=718",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/802111728400990248/B.GMCTyphoon-hud.png",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/802111781564579870/B.GMCTyphoon-hud-1star.png",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/802111823678930944/B.GMCTyphoon-hud-2star.png",
+    "racehud996": "",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/802111923658817556/B.GMCTyphoon-hud-969.png",
+    "racehud699": "",
+
+
+    "333TopSpeed": 128,
+    "3330to60": 5.5,
+    "333Handling": 72,
+
+
+    "666TopSpeed": 131,
+    "6660to60": 5.2, 
+    "666Handling": 75,
+
+
+    "996TopSpeed": 0,
+    "9960to60": 0,
+    "996Handling": 0,
+
+
+    "969TopSpeed": 133,
+    "9690to60": 4.8,
+    "969Handling": 77,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

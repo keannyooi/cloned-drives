@@ -75,33 +75,43 @@ module.exports = {
                         const id = all[i].ID.substring(3);
                         if (message.guild.member(id) && !message.client.users.cache.find(user => user.id === id).bot) {
                             const garage = all[i].data.garage;
-                            var maxedCarAmount = 0;
-                            var garagePoints = 0;
+                            let maxedCarAmount = 0;
+                            let garagePoints = 0;
+							let carAmount = 0;
                             for (x = 0; x < garage.length; x++) {
                                 const currentCar = require(`./cars/${garage[x].carFile}`);
                                 const addedPoints = rarityCheck(currentCar);
                                 garagePoints += addedPoints;
-
-                                if (garage[x].gearingUpgrade + garage[x].engineUpgrade + garage[x].chassisUpgrade === 24) {
-                                    maxedCarAmount++;
-                                }
+								carAmount += garage[x]["000"] + garage[x]["333"] + garage[x]["666"] + garage[x]["996"] + garage[x]["969"] + garage[x]["699"]
+                                maxedCarAmount += garage[x]["996"] + garage[x]["969"] + garage[x]["699"];
                             }
-                            garagePoints *= maxedCarAmount / garage.length;
+                            garagePoints *= maxedCarAmount / carAmount;
                             lb.push({ name: message.guild.members.cache.get(id).displayName, value: Math.round(garagePoints) });
                         }
                     }
                 }
                 break;
+			case "winstreak":
+				criteria = "Win Streak";
+                emoji = "⏫";
+                for (i = 0; i < all.length; i++) {
+                    if (all[i].ID.startsWith("acc")) {
+                        const id = all[i].ID.substring(3);
+                        if (message.guild.member(id) && !message.client.users.cache.find(user => user.id === id).bot) {
+                            lb.push({ name: message.guild.members.cache.get(id).displayName, value: all[i].data.rrWinStreak });
+                        }
+                    }
+                }
+				break;
             default:
                 const errorScreen = new Discord.MessageEmbed()
                     .setColor("#fc0303")
                     .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                     .setTitle("Error, criteria requested unavailable.")
-                    .setDescription("Choose between `money`, `fusetokens`, `trophies` and `garage`.")
+                    .setDescription("Choose between `money`, `fusetokens`, `trophies`, `garage` and `winstreak`.")
                     .setTimestamp();
                 return message.channel.send(errorScreen);
         }
-        console.log(lb);
 
         if (!args[1]) {
             page = 1;

@@ -31,7 +31,7 @@ module.exports = {
             }
         });
 
-        const amount = args[1];
+        const amount = Math.ceil(parseInt(args[1]));
         if (isNaN(amount) || parseInt(amount) < 1) {
             const errorMessage = new Discord.MessageEmbed()
                 .setColor("#fc0303")

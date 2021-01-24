@@ -1,0 +1,51 @@
+{
+    "rq": 38,
+    "make": "Kia",
+    "model": "K5 EX",
+    "modelYear": 2021,
+    "country": "KR",
+    "topSpeed": 128,
+    "0to60": 7.8,
+    "handling": 75,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Year of the Ox"],
+    "isPrize": false,
+
+    "weight": 1478,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 56.52,
+    "ola": 71.79,
+    "description": "Called the 'sportiest' Sedan by forbes. Card by Keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/794356240125001738/kia_k5_ex.png",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/799488423013646346/Kia_K5_EX_2021_000.png",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/799488449257668640/Kia_K5_EX_2021_333.png",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/799488469519826994/Kia_K5_EX_2021_666.png",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/799488551695024158/Kia_K5_EX_2021_996.png",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/799488536788336700/Kia_K5_EX_2021_969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 133,
+    "3330to60": 7.3,
+    "333Handling": 78,
+
+    "666TopSpeed": 135,
+    "6660to60": 6.8,
+    "666Handling": 80,
+
+    "996TopSpeed": 138,
+    "9960to60": 6.2,
+    "996Handling": 80,
+
+    "969TopSpeed": 139,
+    "9690to60": 6.3,
+    "969Handling": 83
+
+}

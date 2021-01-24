@@ -1,0 +1,46 @@
+{
+    "rq": 84,
+    "make": "Pagani",
+    "model": "Zonda C12 S Art Car by Foglizzo",
+    "modelYear": 2018,
+    "country": "IT",
+    "topSpeed": 208,
+    "0to60": 3.7,
+    "handling": 88,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Supercar"],
+    "isPrize": true,
+
+    "weight": 1230,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 112,
+    "ola": 86,
+    "description": "Foglizzy Art Car. By Oli",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/797074174308515840/c12s_by_foglizzo.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/794866761144467486/art_car.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/794866787816439828/art_car_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/794866805918793728/art_car_666.jpg",
+    "racehud996": "",
+    "racehud969": "",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/794866817755643944/art_car_699.jpg",
+
+    "333TopSpeed": 210,
+    "3330to60": 3.5,
+    "333Handling": 91,
+
+    "666TopSpeed": 213,
+    "6660to60": 3.3,
+    "666Handling": 95,
+
+    "699TopSpeed": 215,
+    "6990to60": 3.1,
+    "699Handling": 98
+}

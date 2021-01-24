@@ -26,7 +26,6 @@ module.exports = {
         };
 
         var carName = args.map(i => i.toLowerCase());
-
         const searchResults = carFiles.filter(function (carFile) {
             return carName.every(part => carFile.includes(part));
         });
@@ -66,8 +65,8 @@ module.exports = {
                     errors: ['time']
                 })
                     .then(collected => {
+						collected.first().delete();
                         if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
-                            collected.first().delete();
                             const errorMessage = new Discord.MessageEmbed()
                                 .setColor("#fc0303")
                                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -77,9 +76,7 @@ module.exports = {
                             return currentMessage.edit(errorMessage);
                         }
                         else {
-                            const currentCar = require(`./cars/${searchResults[parseInt(collected.first()) - 1]}`);
-                            collected.first().delete();
-                            displayInfo(currentCar, currentMessage);
+                            displayInfo(searchResults[parseInt(collected.first()) - 1], currentMessage);
                         }
                     })
                     .catch(() => {
@@ -93,8 +90,7 @@ module.exports = {
             });
         }
         else if (searchResults.length > 0) {
-            const currentCar = require(`./cars/${searchResults[0]}`);
-            displayInfo(currentCar);
+            displayInfo(searchResults[0]);
         }
         else {
             const errorMessage = new Discord.MessageEmbed()
@@ -106,7 +102,10 @@ module.exports = {
             return message.channel.send(errorMessage);
         }
 
-        function displayInfo(currentCar, currentMessage) {
+        async function displayInfo(car, currentMessage) {
+			let garage = await message.client.db.get(`acc${message.author.id}.garage`);
+			let currentCar = require(`./cars/${car}`);
+
             let rarity;
             if (currentCar["rq"] > 79) { //leggie
                 rarity = message.client.emojis.cache.get("726025494138454097");
@@ -194,6 +193,11 @@ module.exports = {
                 )
                 .setImage(currentCar["card"])
                 .setTimestamp();
+
+			let hasCar = garage.find(c => c.carFile === car)
+			if (hasCar !== undefined) {
+				infoScreen.setFooter(`✅ You own ${hasCar["000"] + hasCar["333"] + hasCar["666"] + hasCar["996"] + hasCar["969"] + hasCar["699"]} of this car!`);
+			}
             if (currentMessage) {
                 return currentMessage.edit(infoScreen);
             }

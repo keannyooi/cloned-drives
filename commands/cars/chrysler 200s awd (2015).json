@@ -1,0 +1,54 @@
+{
+    "rq": 57,
+    "make": "Chrysler",
+    "model": "200S AWD",
+    "modelYear": 2015,
+    "country": "US",
+    "topSpeed": 121,
+    "0to60": 6.2,
+    "handling": 73,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1729,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 67.39,
+    "ola": 78.00,
+    "description": "Card by Macan.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/798684275033112596/200S_AWD_15.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/798684342909927424/Chrysler_200S_AWD_2015_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/798684360207368242/Chrysler_200S_AWD_2015_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/798684369664606278/Chrysler_200S_AWD_2015_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/798685402546176000/Chrysler_200S_AWD_2015_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/798685329573937212/Chrysler_200S_AWD_2015_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/798685314108358726/Chrysler_200S_AWD_2015_699.png",
+
+    "333TopSpeed": 124,
+    "3330to60": 5.8,
+    "333Handling": 76,
+
+    "666TopSpeed": 128,
+    "6660to60": 5.4,
+    "666Handling": 78,
+
+    "996TopSpeed": 131,
+    "9960to60": 4.8,
+    "996Handling": 78,
+
+    "969TopSpeed": 131,
+    "9690to60": 5.0,
+    "969Handling": 81,
+
+    "699TopSpeed": 128,
+    "6990to60": 5.1,
+    "699Handling": 81
+}

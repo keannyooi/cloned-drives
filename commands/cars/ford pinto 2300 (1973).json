@@ -1,0 +1,61 @@
+﻿{
+    "rq": 14,
+    "make": "Ford",
+    "model": "Pinto 2300",
+    "modelYear": 1973,
+    "country": "US",
+    "topSpeed": 93,
+    "0to60": 15.2,
+    "handling": 63,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Year of the Ox"],
+    "isPrize": false,
+
+
+    "weight": 914,
+    "gc": "Medium",
+    "seatCount":4,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 0.00,
+    "ola": 60.53,
+    "description": "When you casually wanna die in a fire. Card by Connor",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/801837718514040832/F.FordPinto2300.png?width=1154&height=718",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/801840667021803520/Pinto.png",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/801840674990194718/Pinto1.png",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/801840678774636574/Pinto2.png",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/801840704972128317/Pinto332.png",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/801840698021249054/Pinto323.png",
+    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/801840688421011516/Pinto233.png",
+
+
+    "333TopSpeed": 93,
+    "3330to60": 13.8,
+    "333Handling": 65,
+
+
+    "666TopSpeed": 96,
+    "6660to60": 12.4, 
+    "666Handling": 68,
+
+
+    "996TopSpeed": 98,
+    "9960to60": 10.7,
+    "996Handling": 68,
+
+
+    "969TopSpeed": 98,
+    "9690to60": 11.0,
+    "969Handling": 70,
+
+
+    "699TopSpeed": 96,
+    "6990to60": 11.2,
+    "699Handling": 70
+}

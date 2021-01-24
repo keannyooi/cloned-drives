@@ -1,0 +1,61 @@
+﻿{
+    "rq": 49,
+    "make": "Saab",
+    "model": "9-2X Aero",
+    "modelYear": 2004,
+    "country": "SE",
+    "topSpeed": 140,
+    "0to60": 6.1,
+    "handling": 77,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1456,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 49.59,
+    "ola": 68.85,
+    "description": "The Swedish Subaru with a dream. Card by Havvy",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/802566335061950499/Saab9-2XAero.png?width=1154&height=718",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/802566414129037312/000aero.png?width=1154&height=718",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/802566426849312828/111aero.png?width=1154&height=718",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/802566433586151484/222aero.png?width=1154&height=718",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/802566449842356234/332aero.png?width=1154&height=718",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/802566442352508968/323aero.png?width=1154&height=718",
+    "racehud699": "",
+
+
+    "333TopSpeed": 144,
+    "3330to60": 5.8,
+    "333Handling": 80,
+
+
+    "666TopSpeed": 147,
+    "6660to60": 5.4, 
+    "666Handling": 84,
+
+
+    "996TopSpeed": 151,
+    "9960to60": 4.9,
+    "996Handling": 82,
+
+
+    "969TopSpeed": 151,
+    "9690to60": 5.1,
+    "969Handling": 85,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

@@ -1,0 +1,50 @@
+{
+    "rq": 73,
+    "make": ["Ram", "Dodge"],
+    "model": "1500 TRX",
+    "modelYear": 2021,
+    "country": "US",
+    "topSpeed": 118,
+    "0to60": 3.9,
+    "handling": 62,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": [],
+    "isPrize": true,
+
+    "weight": 3115,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "Pickup",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 67.24,
+    "ola": 71.79,
+    "description": "Makes mountains very scared indeed. By DodgeDemon",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/796449841856380928/Ram_1500_TRX_FIXED_2021.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/797008829496950804/Ram_1500_TRX_2021_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/797008844172820540/Ram_1500_TRX_2021_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/797008874615210004/Ram_1500_TRX_2021_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/797008963958079488/Ram_1500_TRX_2021_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/797008951542939688/Ram_1500_TRX_2021_969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 121,
+    "3330to60": 3.7,
+    "333Handling": 65,
+
+    "666TopSpeed": 124,
+    "6660to60": 3.5,
+    "666Handling": 67,
+
+    "996TopSpeed": 127,
+    "9960to60": 3.2,
+    "996Handling": 67,
+
+    "969TopSpeed": 126,
+    "9690to60": 3.3,
+    "969Handling": 69
+}

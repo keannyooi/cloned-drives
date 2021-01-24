@@ -1,0 +1,61 @@
+﻿{
+    "rq": 67,
+    "make": "Genesis",
+    "model": "G70 3.3T",
+    "modelYear": 2019,
+    "country": "KR",
+    "topSpeed": 167,
+    "0to60": 4.5,
+    "handling": 83,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1723,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 67.69,
+    "ola": 84.44,
+    "description": "A sportier sedan. Card by Macan",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/802299312855187506/G70_3.3T_19.png?width=1154&height=718",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/802299519483248640/Genesis_G70_3.3T_2019_000.png",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/802299521877934170/Genesis_G70_3.3T_2019_333.png",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/802299526638469140/Genesis_G70_3.3T_2019_666.png",
+    "racehud996": "",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/802299549401743441/Genesis_G70_3.3T_2019_969.png",
+    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/802299542472097812/Genesis_G70_3.3T_2019_699.png",
+
+
+    "333TopSpeed": 171,
+    "3330to60": 4.3,
+    "333Handling": 86,
+
+
+    "666TopSpeed": 175,
+    "6660to60": 4.0, 
+    "666Handling": 89,
+
+
+    "996TopSpeed": 0,
+    "9960to60": 0,
+    "996Handling": 0,
+
+
+    "969TopSpeed": 178,
+    "9690to60": 3.8,
+    "969Handling": 92,
+
+
+    "699TopSpeed": 175,
+    "6990to60": 3.8,
+    "699Handling": 92
+}

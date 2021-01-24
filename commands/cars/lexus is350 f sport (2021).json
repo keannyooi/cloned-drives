@@ -1,0 +1,47 @@
+{
+    "rq": 48,
+    "make": "Lexus",
+    "model": "IS350 F Sport",
+    "modelYear": 2021,
+    "country": "JP",
+    "topSpeed": 143,
+    "0to60": 5.7,
+    "handling": 82,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Year of the Ox"],
+    "isPrize": false,
+
+    "weight": 1724,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 67.06,
+    "ola": 84.21,
+    "description": "A good looking but underperforming Lexus. Card by Macan.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/796147167072092190/Lexus_IS_350_F_Sport_2021.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/796154290157912084/Lexus_IS_350_F_Sport_2021_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/796154306066776064/Lexus_IS_350_F_Sport_2021_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/796154314673487872/Lexus_IS_350_F_Sport_2021_666.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/796154327243816970/Lexus_IS_350_F_Sport_2021_969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 147,
+    "3330to60": 5.3,
+    "333Handling": 85,
+
+    "666TopSpeed": 151,
+    "6660to60": 5.0,
+    "666Handling": 88,
+
+    "969TopSpeed": 155,
+    "9690to60": 4.7,
+    "969Handling": 91
+
+}

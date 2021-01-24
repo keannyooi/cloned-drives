@@ -1,0 +1,54 @@
+{
+    "rq": 81,
+    "make": "Bentley",
+    "model": "Bentayga V8",
+    "modelYear": 2018,
+    "country": "GB",
+    "topSpeed": 180,
+    "0to60": 4.0,
+    "handling": 82,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 2395,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 77.54,
+    "ola": 84.16,
+    "description": "Pure luxury built to traverse offroad. Card by Havvy.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/799367112313143376/BentleyBentaygaV8.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/799367181367377920/ayga.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/799367214243250176/ayga333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/799367232500400158/ayga666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/799367300373151764/ayga996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/799367278373896212/ayga969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/799367256542806036/ayga699.png",
+
+    "333TopSpeed": 183,
+    "3330to60": 3.8,
+    "333Handling": 85,
+
+    "666TopSpeed": 186,
+    "6660to60": 3.6,
+    "666Handling": 88,
+
+    "996TopSpeed": 190,
+    "9960to60": 3.4,
+    "996Handling": 89,
+
+    "969TopSpeed": 189,
+    "9690to60": 3.5,
+    "969Handling": 91,
+
+    "699TopSpeed": 188,
+    "6990to60": 3.5,
+    "699Handling": 91
+}

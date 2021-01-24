@@ -1,0 +1,48 @@
+{
+    "rq": 49,
+    "make": "Ford",
+    "model": "Bronco White Lightning",
+    "modelYear": 1994,
+    "country": "US",
+    "topSpeed": 110,
+    "0to60": 7.7,
+    "handling": 70,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Concept"],
+    "isPrize": true,
+
+
+    "weight": 2344,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 40.31,
+    "ola": 66.67,
+    "description": "Peter Schweitzer's experimental Ford Bronco with the F-150 Lightning flow. Card by Preston",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/795623116809568286/white_lightning.png",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/795622956469452820/white_lightning.jpg",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/795622974027857920/white_lightning_333.jpg",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/795622981811306506/white_lightning_666.jpg",
+    "racehud996": "",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/795622993551294464/white_lightning_969.jpg",
+    "racehud699": "",
+
+    "333TopSpeed": 113,
+    "3330to60": 7.2,
+    "333Handling": 72,
+
+    "666TopSpeed": 116,
+    "6660to60": 6.7,
+    "666Handling": 75,
+
+    "969TopSpeed": 119,
+    "9690to60": 6.2,
+    "969Handling": 77
+}

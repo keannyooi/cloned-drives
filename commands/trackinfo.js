@@ -25,8 +25,7 @@ module.exports = {
             return response.author.id === message.author.id;
         };
 
-        var trackName = args.map(i => i.toLowerCase());
-
+        let trackName = args.map(i => i.toLowerCase());
         const searchResults = tracksets.filter(function (trackset) {
             return trackName.every(part => trackset.includes(part));
         });

@@ -32,8 +32,11 @@ module.exports = {
             i++;
         });
 
-        if (!args.length) {
+        if (!args.length || !isNaN(args[0])) {
             var page = 1;
+			if (args[0]) {
+				page = args[0];
+			}
 
             const totalPages = Math.ceil(commandArray.length / pageLimit);
             commandDisplay(page);
@@ -163,7 +166,7 @@ module.exports = {
         function commandDisplay(page) {
             var startsWith, endsWith;
 
-            if (commandArray.length - pageLimit < 0) {
+            if (commandArray.length - pageLimit <= 0) {
                 startsWith = 0;
                 endsWith = commandArray.length;
                 reactionIndex = 0;
@@ -173,7 +176,7 @@ module.exports = {
                 endsWith = pageLimit;
                 reactionIndex = 1;
             }
-            else if (commandArray.length - (pageLimit * page) < 0) {
+            else if (commandArray.length - (pageLimit * page) <= 0) {
                 startsWith = pageLimit * (page - 1);
                 endsWith = commandArray.length;
                 reactionIndex = 2;
@@ -190,15 +193,15 @@ module.exports = {
             for (i = startsWith; i < endsWith; i++) {
                 data += `${i + 1} - \`${commandArray[i].name}\``;
                 if (commandArray[i].adminOnly) {
-                    data += " 👤";
+                    data += " ️️🛠️";
                 }
                 if (commandArray[i].isExternal) {
                     data += " 🛂";
                 }
-                data += "/n";
+                data += "\n";
             }
             data += (`\n
-                    👤 = Admin-only command, 🛂 = Can be used outside the Cloned Drives server.
+                    🛠️ = Admin-only command, 🛂 = Can be used outside the Cloned Drives server.
                     Use \`${prefix}help <command name>\` to learn more about a specific command.`);
         }
     }

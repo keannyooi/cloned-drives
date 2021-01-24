@@ -1,0 +1,46 @@
+{
+    "rq": 11,
+    "make": ["Abarth", "Fiat"],
+    "model": "595 Esseesse",
+    "modelYear": 1963,
+    "country": "IT",
+    "topSpeed": 74,
+    "0to60": 28.3,
+    "handling": 62,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Italian Icons"],
+    "isPrize": false,
+
+    "weight": 570,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 0.00,
+    "ola": 51.16,
+    "description": "The original essesse, or esese, or I don't even know how to spell. Card by bnuuy",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/793632659602800680/abarth_595_esseesse.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/793632702733615104/595ss.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/793632724975222824/595ss333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/793632746488070165/595ss666.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/793632782303494185/595ss969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 77,
+    "3330to60": 26.3,
+    "333Handling": 64,
+
+    "666TopSpeed": 80,
+    "6660to60": 24.6,
+    "666Handling": 66,
+
+    "969TopSpeed": 83,
+    "9690to60": 22.3,
+    "969Handling": 69
+}

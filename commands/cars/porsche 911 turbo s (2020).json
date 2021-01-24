@@ -1,0 +1,46 @@
+{
+    "rq": 98,
+    "make": "Porsche",
+    "model": "911 Turbo S",
+    "modelYear": 2020,
+    "country": "DE",
+    "topSpeed": 205,
+    "0to60": 2.4,
+    "handling": 93,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1715,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 78.69,
+    "ola": 75.00,
+    "description": "This was almost medium. Card by Connor",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/797503432155987978/S.Porsche911TurboS992.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/797503945177038888/992turbos.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/797503955876708352/911turbos333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/797503975204847646/911turbos666.png",
+    "racehud996": "",
+    "racehud969": "",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/797503997426663454/911turbos699.png",
+
+    "333TopSpeed": 208,
+    "3330to60": 2.3,
+    "333Handling": 96,
+
+    "666TopSpeed": 211,
+    "6660to60": 2.2,
+    "666Handling": 100,
+
+    "699TopSpeed": 214,
+    "6990to60": 2.0,
+    "699Handling": 103
+}

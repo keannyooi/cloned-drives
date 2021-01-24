@@ -21,7 +21,7 @@ module.exports = {
 		const playerData = await db.get(`acc${message.author.id}`);
 		const rewards = playerData.unclaimedRewards;
 
-		if (rewards.money === 0 && rewards.fuseTokens === 0 && rewards.trophies === 0 && rewards.cars.length === 0) {
+		if (rewards.money === 0 && rewards.fuseTokens === 0 && rewards.trophies === 0 && rewards.cars.length === 0 && rewards.packs.length === 0) {
 			const infoScreen = new Discord.MessageEmbed()
 				.setColor("#34aeeb")
 				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -56,24 +56,71 @@ module.exports = {
 				rewards.trophies = 0;
 			}
 			if (rewards.cars.length > 0) {
-				var carList = "";
+				let carList = "";
 				for (i = 0; i < rewards.cars.length; i++) {
-					playerData.garage.push({ carFile: rewards.cars[i], gearingUpgrade: 0, engineUpgrade: 0, chassisUpgrade: 0 });
+					let isInGarage = playerData.garage.findIndex(garageCar => {
+						return garageCar.carFile === rewards.cars[i].carFile;
+					});
+					if (isInGarage !== -1) {
+						playerData.garage[isInGarage]["000"] += rewards.cars[i].amount;
+					}
+					else {
+						playerData.garage.push({
+							carFile: rewards.cars[i].carFile,
+							"000": rewards.cars[i].amount,
+							"333": 0,
+							"666": 0,
+							"996": 0,
+							"969": 0,
+							"699": 0,
+						});
+					}
 
-					const currentCar = require(`./cars/${rewards.cars[i]}`);
-					const rarity = rarityCheck(currentCar);
+					let currentCar = require(`./cars/${rewards.cars[i].carFile}`);
+					let rarity = rarityCheck(currentCar);
 					let make = currentCar["make"];
 					if (typeof make === "object") {
 						make = currentCar["make"][0];
 					}
-					carList += `(${rarity} ${currentCar["rq"]}) ${make} ${currentCar["model"]} (${currentCar["modelYear"]})\n`
+					carList += `(${rarity} ${currentCar["rq"]}) ${make} ${currentCar["model"]} (${currentCar["modelYear"]})\n`;
 				}
 				infoScreen.addField("Claimed Cars", carList);
 				rewards.cars = [];
 			}
+			if (rewards.packs.length > 0) {
+				let packList = "";
+				const openPackCommand = require("./sharedfiles/openpack.js");
+				for (i = 0; i < rewards.packs.length; i++) {
+					let currentPack = require(`./packs/${rewards.packs[i]}`);
+					packList += `${currentPack["packName"]}\n`;
+					let addedCars = openPackCommand.openPack(message, currentPack);
+
+					for (i = 0; i < addedCars.length; i++) {
+						let isInGarage = playerData.garage.findIndex(garageCar => {
+							return garageCar.carFile === addedCars[i];
+						});
+						if (isInGarage !== -1) {
+							playerData.garage[isInGarage]["000"] += 1;
+						}
+						else {
+							playerData.garage.push({
+								carFile: addedCars[i],
+								"000": 1,
+								"333": 0,
+								"666": 0,
+								"996": 0,
+								"969": 0,
+								"699": 0,
+							});
+						}
+					}
+				}
+				infoScreen.addField("Claimed Packs", packList);
+				rewards.packs = [];
+			}
 
 			await db.set(`acc${message.author.id}`, playerData);
-			return message.channel.send(infoScreen);
+			message.channel.send(infoScreen);
 		}
 
 		function rarityCheck(currentCar) {

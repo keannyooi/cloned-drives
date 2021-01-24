@@ -1,0 +1,17 @@
+{
+	"trackName": "River Crossing",
+	"weather": "Sunny",
+	"surface": "Dirt",
+	"speedbumps": 0,
+	"humps": 100,
+	"background": "https://cdn.discordapp.com/attachments/716917404868935691/794175140216045599/unknown.png",
+	
+	"specsDistr": {
+		"topSpeed": 0,
+		"0to60": 100,
+		"handling": 0,
+		"weight": -50,
+		"mra": 10,
+		"ola": 30
+	}
+}

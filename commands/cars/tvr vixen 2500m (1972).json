@@ -1,0 +1,61 @@
+﻿{
+    "rq": 15,
+    "make": "TVR",
+    "model": "Vixen 2500M",
+    "modelYear": 1972,
+    "country": "GB",
+    "topSpeed": 110,
+    "0to60": 10.0,
+    "handling": 70,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 736,
+    "gc": "Low",
+    "seatCount":2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 47.62,
+    "ola": 68.00,
+    "description": "Card by Spence ",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/799883422175985684/image0.png?width=705&height=435",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/799883253023637554/vixen.jpg",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/799883309278167040/vixen_333.jpg",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/799883316190642207/vixen_666.jpg",
+    "racehud996": "",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/799883328442466324/vixen_969.jpg",
+    "racehud699": "",
+
+
+    "333TopSpeed": 113,
+    "3330to60": 9.3,
+    "333Handling": 73,
+
+
+    "666TopSpeed": 116,
+    "6660to60": 8.6, 
+    "666Handling": 76,
+
+
+    "996TopSpeed": 0,
+    "9960to60": 0,
+    "996Handling": 0,
+
+
+    "969TopSpeed": 119,
+    "9690to60": 7.9,
+    "969Handling": 78,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

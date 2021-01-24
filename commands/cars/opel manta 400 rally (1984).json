@@ -1,0 +1,61 @@
+﻿{
+    "rq": 62,
+    "make": "Opel",
+    "model": "Manta 400 Rally",
+    "modelYear": 1984,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 4.8,
+    "handling": 81,
+    "driveType": "RWD",
+    "tyreType": "Off-Road",
+    "tags": ["Motorsport"],
+    "isPrize": false,
+
+
+    "weight": 970,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 73.85,
+    "ola": 62.85,
+    "description": "Another underrated rally legend. Card by Spence",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/795551231090884658/image0.jpg?width=705&height=437",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/795551317728297020/image0.jpg?width=705&height=439",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/795551360602341386/image0.jpg?width=705&height=439",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/795551380374814730/image0.jpg?width=705&height=439",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/795551491536191508/image0.jpg?width=705&height=439",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/795551467280138280/image0.jpg?width=705&height=439",
+    "racehud699": "",
+
+
+    "333TopSpeed": 159,
+    "3330to60": 4.5,
+    "333Handling": 84,
+
+
+    "666TopSpeed": 163,
+    "6660to60": 4.3,
+    "666Handling": 87,
+
+
+    "996TopSpeed": 168,
+    "9960to60": 3.9,
+    "996Handling": 87,
+
+
+    "969TopSpeed": 168,
+    "9690to60": 4.0,
+    "969Handling": 90,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

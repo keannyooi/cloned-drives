@@ -22,7 +22,7 @@ module.exports = {
         const db = message.client.db;
         const playerData = await db.get(`acc${message.author.id}`);
         const catalog = await db.get("dealershipCatalog");
-        const moneyEmoji = message.guild.emojis.cache.find(emoji => emoji.name === "money");
+        const moneyEmoji = message.client.emojis.cache.get("726017235826770021");
         const waitTime = 60000;
         const filter = response => {
             return response.author.id === message.author.id;
@@ -32,7 +32,7 @@ module.exports = {
             carName = args.map(i => i.toLowerCase());
         }
         else {
-            amount = args[0];
+            amount = Math.ceil(parseInt(args[0]));
             carName = args.slice(1, args.length).map(i => i.toLowerCase());
         }
 
@@ -114,15 +114,30 @@ module.exports = {
         async function buyCar(currentCar, amount, currentMessage) {
             const car = require(`./cars/${currentCar.carFile}`);
             const price = currentCar.price * amount;
-            if (playerData.money >= price) {
+            if (playerData.money >= price && currentCar.stock >= amount) {
                 const currentName = `${car["make"]} ${car["model"]} (${car["modelYear"]})`;
-                var i = 0;
-                while (i < amount) {
-                    playerData.garage.push({ carFile: `${currentName.toLowerCase()}.json`, gearingUpgrade: 0, engineUpgrade: 0, chassisUpgrade: 0 });
-                    i++;
-                }
+                let isInGarage = playerData.garage.findIndex(garageCar => {
+					return garageCar.carFile === `${currentCar.carFile}.json`;
+				});
+				if (isInGarage !== -1) {
+					playerData.garage[isInGarage]["000"] += amount;
+				}
+				else {
+					playerData.garage.push({
+						carFile: `${currentCar.carFile}.json`,
+						"000": amount,
+						"333": 0,
+						"666": 0,
+						"996": 0,
+						"969": 0,
+						"699": 0,
+					});
+				}
+
                 playerData.money -= price;
+				catalog[catalog.indexOf(currentCar)].stock -= amount;
                 await db.set(`acc${message.author.id}`, playerData);
+				await db.set("dealershipCatalog", catalog);
 
                 const infoScreen = new Discord.MessageEmbed()
                     .setColor("#34aeeb")
@@ -141,10 +156,11 @@ module.exports = {
                 const errorMessage = new Discord.MessageEmbed()
                     .setColor("#fc0303")
                     .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                    .setTitle("Error, it looks like you don't have enough money for this purchase.")
+                    .setTitle("Error, it looks like you either don't have enough money for this purchase or the car you are trying to buy has insufficient supply.")
                     .addFields(
                         { name: "Required Amount of Money", value: `${moneyEmoji}${currentCar.price * amount}`, inline: true },
-                        { name: "Your Money Balance", value: `${moneyEmoji}${playerData.money}`, inline: true }
+                        { name: "Your Money Balance", value: `${moneyEmoji}${playerData.money}`, inline: true },
+						{ name: "Stock Remaining", value: currentCar.stock, inline: true }
                     )
                     .setTimestamp();
                 if (currentMessage) {

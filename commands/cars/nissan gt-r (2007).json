@@ -1,0 +1,50 @@
+{
+    "rq": 85,
+    "make": "Nissan",
+    "model": "GT-R",
+    "modelYear": 2007,
+    "country": "JP",
+    "topSpeed": 190,
+    "0to60": 3.4,
+    "handling": 87,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1740,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 65.38,
+    "ola": 88.24,
+    "description": "Godzilla returns with thunder, flames and fury. By Havvy",
+
+    "card": "https://cdn.discordapp.com/attachments/716917404868935691/795948376411602964/fire_spitting_monster.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/787327384097390602/nissangtr.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/787327402182836224/nissangtr333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/787327424664698880/nissangtr666.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/787327500702449725/nissangtr969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/787327472500867082/nissangtr699.png",
+
+    "333TopSpeed": 196,
+    "3330to60": 3.3,
+    "333Handling": 90,
+
+    "666TopSpeed": 199,
+    "6660to60": 3.1,
+    "666Handling": 93,
+
+    "969TopSpeed": 202,
+    "9690to60": 2.9,
+    "969Handling": 96,
+
+    "699TopSpeed": 200,
+    "6990to60": 3.0,
+    "699Handling": 97
+}

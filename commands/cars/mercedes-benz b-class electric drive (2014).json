@@ -1,0 +1,61 @@
+﻿{
+    "rq": 29,
+    "make": "Mercedes-Benz",
+    "model": "B-Class Electric Drive",
+    "modelYear": 2014,
+    "country": "DE",
+    "topSpeed": 100,
+    "0to60": 6.8,
+    "handling": 68,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+
+
+    "weight": 2170,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 48.23,
+    "ola": 79.41,
+    "description": "When you want a mercedes but you have a humanist family. Card by Andu",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/794648964942004284/BElectricDrive.png?width=1154&height=719",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/794655379698221086/BElectricSt.png",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/794655389865213993/BElectric1.png",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/794655398325518396/BElectric2.png",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/794655417522454568/BElectric332.png",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/794655409826299904/BElectric323.png",
+    "racehud699": "",
+
+
+    "333TopSpeed": 103,
+    "3330to60": 6.3,
+    "333Handling": 70,
+
+
+    "666TopSpeed": 107,
+    "6660to60": 5.9,
+    "666Handling": 72,
+
+
+    "996TopSpeed": 111,
+    "9960to60": 5.3,
+    "996Handling": 72,
+
+
+    "969TopSpeed": 110,
+    "9690to60": 5.5,
+    "969Handling": 75,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

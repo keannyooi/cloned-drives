@@ -1,0 +1,61 @@
+﻿{
+    "rq": 63,
+    "make": "Lexus",
+    "model": "IS F",
+    "modelYear": 2008,
+    "country": "JP",
+    "topSpeed": 168,
+    "0to60": 4.5,
+    "handling": 82,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1726,
+    "gc": "Low",
+    "seatCount":5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 77.59,
+    "ola": 86.67,
+    "description": "Underrated sport sedan. Card by Kaiser ",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/798288167169032212/Lexus_IS_F_08.png",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/798207045631082556/Lexus_IS_F_Racehud.png",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/798207121375887360/Lexus_IS_F_Racehud_333.png",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/798207184198565948/Lexus_IS_F_Racehudding_666.png",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/798207344239706122/Lexus_IS_F_Racehud_996.png",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/798207232692322325/Lexus_IS_F_Racehudding_969.png",
+    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/798207304817836062/Lexus_IS_F_Racehud_699.png",
+
+
+    "333TopSpeed": 171,
+    "3330to60": 4.2,
+    "333Handling": 85,
+
+
+    "666TopSpeed": 174,
+    "6660to60": 3.9, 
+    "666Handling": 88,
+
+
+    "996TopSpeed": 180,
+    "9960to60": 3.7,
+    "996Handling": 88,
+
+
+    "969TopSpeed": 179,
+    "9690to60": 3.8,
+    "969Handling": 91,
+
+
+    "699TopSpeed": 176,
+    "6990to60": 3.8,
+    "699Handling": 91
+}

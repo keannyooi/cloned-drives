@@ -1,0 +1,47 @@
+{
+    "rq": 24,
+    "make": "Nissan",
+    "model": "240SX SE (S13)",
+    "modelYear": 1990,
+    "country": "JP",
+    "topSpeed": 107,
+    "0to60": 8.6,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer"],
+    "isPrize": false,
+
+    "weight": 1217,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 59.76,
+    "ola": 60.47,
+    "description": "If your looking to build a drift car, look no further. Card by Bnuuy",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/793626222650195968/nissan_240sx.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/793626329261277194/240sx.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/793626339684909056/240sx333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/793626353256890398/240sx666.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/793626374610616340/240sx969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 110,
+    "3330to60": 8.2,
+    "333Handling": 78,
+
+    "666TopSpeed": 113,
+    "6660to60": 7.9,
+    "666Handling": 80,
+
+    "969TopSpeed": 116,
+    "9690to60": 7.5,
+    "969Handling": 83
+
+}

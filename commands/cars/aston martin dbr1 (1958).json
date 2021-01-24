@@ -1,0 +1,51 @@
+{
+    "rq": 48,
+    "make": "Aston Martin",
+    "model": "DBR1",
+    "modelYear": 1958,
+    "country": "GB",
+    "topSpeed": 179,
+    "0to60": 4.2,
+    "handling": 70,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": true,
+
+    "weight": 801,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Roadster",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 60.00,
+    "ola": 80.95,
+    "description": "The only Aston Martin to win at Le Mans. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/793622384430809088/astondbr1.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/793622927123152896/dbr1.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/793622940057862184/dbr1333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/793622953052471336/dbr1666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/793622994450382888/dbr1996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/793622972786802688/dbr1969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 182,
+    "3330to60": 4.0,
+    "333Handling": 73,
+
+    "666TopSpeed": 185,
+    "6660to60": 3.8,
+    "666Handling": 75,
+
+    "996TopSpeed": 189,
+    "9960to60": 3.6,
+    "996Handling": 76,
+
+    "969TopSpeed": 188,
+    "9690to60": 3.7,
+    "969Handling": 78
+
+}

@@ -9,7 +9,7 @@
     "handling": 93,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Supercar"],
+    "tags": ["Servers Choice", "Supercar"],
     "isPrize": false,
 
     "weight": 1516,
@@ -22,25 +22,33 @@
     "fuelType": "Petrol",
     "mra": 103.85,
     "ola": 96.30,
-    "description": "",
+    "description": "Card by Exist.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/774561915946139748/2019_McLaren_720S_Spider.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/774587709268295691/mclaren_720s_spider.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/774587739995635712/mclaren_720s_spider_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/774587746596814868/mclaren_720s_spider_666.jpg",
-    "racehud996": "",
-    "racehud969": "",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/774587764548173844/mclaren_720s_spider_699.jpg",
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/799862213615288390/McLaren_720S_Spider.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/799635682968600606/CD_McLaren_720S_Spider_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/799635722788405288/CD_McLaren_720S_Spider_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/799635763137347624/CD_McLaren_720S_Spider_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/799635873976942622/CD_McLaren_720S_Spider_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/799635831878713354/CD_McLaren_720S_Spider_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/799635800823169065/CD_McLaren_720S_Spider_699.png",
 
     "333TopSpeed": 215,
-    "3330to60": 2.6,
+    "3330to60": 2.7,
     "333Handling": 96,
 
     "666TopSpeed": 218,
-    "6660to60": 2.5,
+    "6660to60": 2.6,
     "666Handling": 100,
 
-    "699TopSpeed": 221,
+    "699TopSpeed": 219,
     "6990to60": 2.5,
-    "699Handling": 103
+    "699Handling": 103,
+
+    "969TopSpeed": 221,
+    "9690to60": 2.5,
+    "969Handling": 103,
+    
+    "996TopSpeed": 222,
+    "9960to60": 2.4,
+    "996Handling": 100
 }

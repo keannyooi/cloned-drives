@@ -13,83 +13,87 @@ const packFiles = fs.readdirSync("./commands/packs").filter(file => file.endsWit
 
 module.exports = {
     name: "openpack",
+	aliases: ["buypack"],
     usage: "<pack name goes here>",
     args: 1,
 	isExternal: true,
     adminOnly: true,
-    description: "Opens a pack. (EXPERIMENTAL)",
-    execute(message, args) {
+	cooldown: 5,
+    description: "Opens a pack.",
+    async execute(message, args) {
 		const openPackCommand = require("./sharedfiles/openpack.js");
-        var packName = args[0].toLowerCase();
-        const searchResults = [];
+		const db = message.client.db;
+		const playerData = await db.get(`acc${message.author.id}`);
+		const money = playerData.money
+		const moneyEmoji = message.client.emojis.cache.get("726017235826770021");
+		const filter = response => {
+            return response.author.id === message.author.id;
+        };
 
-        for (i = 1; i < args.length; i++) {
-            packName += (" " + args[i].toLowerCase());
-        }
-        var counter = 0;
-        var searched = 0;
-        while (counter < packFiles.length) {
-            var currentPack = require(`./packs/${packFiles[counter]}`);
-            var currentName = currentPack["packName"].toLowerCase();
-            if (currentName.includes(packName)) {
-                console.log("found!");
-                console.log(currentName)
-                searchResults[searched] = currentPack;
-                searched++;
+    	let packName = args.map(i => i.toLowerCase());
+        const searchResults = packFiles.filter(function (pack) {
+            return packName.every(part => pack.includes(part));
+        });
+
+        if (searchResults.length > 1) {
+			let packList = "";
+            for (i = 1; i <= searchResults.length; i++) {
+				let currentPack = require(`./packs/${searchResults[i - 1]}`);
+                packList += `${i} - ` + currentPack["packName"] + "\n";
             }
-            counter++;
-        }
-
-        if (searched > 0) {
-            var currentPack = searchResults[0];
-            if (searched > 1) {
-                var packList = "";
-                for (i = 1; i <= searchResults.length; i++) {
-                    carList += `${i} - ` + searchResults[i - 1]["packName"] + "\n";
-                }
-
-                const infoScreen = new Discord.MessageEmbed()
-                    .setColor("#34aeeb")
+			if (packList.length > 2048) {
+                const errorMessage = new Discord.MessageEmbed()
+                    .setColor("#fc0303")
                     .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                    .setTitle("Multiple packs found, please type one of the following.")
-                    .setDescription(packList)
+                    .setTitle("Error, too many search results.")
+                    .setDescription("Due to Discord's embed limitations, the bot isn't able to show the full list of search results. Try again with a more specific keyword.")
                     .setTimestamp();
+                return message.channel.send(errorMessage);
+            }
 
-                message.channel.send(infoScreen).then(() => {
-                    message.channel.awaitMessages(filter, {
-                        max: 1,
-                        time: waitTime,
-                        errors: ['time']
-                    })
-                        .then(collected => {
-                            if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
-                                const errorMessage = new Discord.MessageEmbed()
-                                    .setColor("#fc0303")
-                                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                                    .setTitle("Error, invalid integer provided.")
-                                    .setDescription("It looks like your response was either not a number or not part of the selection.")
-                                    .setTimestamp();
-                                return message.channel.send(errorMessage);
-                            }
-                            else {
-                                currentPack = searchResults[parseInt(collected.first()) - 1];
-                                openPackCommand.openPack(message, currentPack);
-                            }
-                        })
-                        .catch(() => {
-                            const cancelMessage = new Discord.MessageEmbed()
-                                .setColor("#34aeeb")
-                                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                                .setTitle("Action cancelled automatically.")
-                                .setTimestamp();
-                            return message.channel.send(cancelMessage);
-                        });
-                });
-            }
-            else {
-                openPackCommand.openPack(message, currentPack);
-            }
+            const infoScreen = new Discord.MessageEmbed()
+                .setColor("#34aeeb")
+                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                .setTitle("Multiple packs found, please type one of the following.")
+                .setDescription(packList)
+                .setTimestamp();
+
+            message.channel.send(infoScreen).then(currentMessage => {
+				message.channel.awaitMessages(filter, {
+                	max: 1,
+            		time: 30000,
+                	errors: ['time']
+	            })
+    	            .then(collected => {
+						collected.first().delete();
+        	            if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
+            	            const errorMessage = new Discord.MessageEmbed()
+                	            .setColor("#fc0303")
+                    	        .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                        	    .setTitle("Error, invalid integer provided.")
+ 	                           .setDescription("It looks like your response was either not a number or not part of the selection.")
+    	                        .setTimestamp();
+        	                return currentMessage.edit(errorMessage);
+            	        }
+                	    else {
+                    	    let currentPack = require(`./packs/${searchResults[parseInt(collected.first()) - 1]}`);
+							openPack(currentPack, money, currentMessage);
+	                    }
+    	            })
+        	        .catch(() => {
+            	        const cancelMessage = new Discord.MessageEmbed()
+                	        .setColor("#34aeeb")
+                    	    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                        	.setTitle("Action cancelled automatically.")
+	                        .setTimestamp();
+    	                return currentMessage.edit(cancelMessage);
+        	        });
+			});
         }
+		else if (searchResults.length > 0) {
+			let currentPack = require(`./packs/${searchResults[0]}`);
+			openPack(currentPack, money);
+		}
         else {
             const errorMessage = new Discord.MessageEmbed()
                 .setColor("#fc0303")
@@ -99,5 +103,50 @@ module.exports = {
                 .setTimestamp();
             return message.channel.send(errorMessage);
         }
+
+		async function openPack(currentPack, money, currentMessage) {
+			if (money >= currentPack["price"]) {
+				playerData.money -= currentPack["price"];
+				let addedCars = openPackCommand.openPack(message, currentPack);
+
+				for (i = 0; i < addedCars.length; i++) {
+					let isInGarage = playerData.garage.findIndex(garageCar => {
+						return garageCar.carFile === addedCars[i];
+					});
+					if (isInGarage !== -1) {
+						playerData.garage[isInGarage]["000"] += 1;
+					}
+					else {
+						playerData.garage.push({
+							carFile: addedCars[i],
+							"000": 1,
+							"333": 0,
+							"666": 0,
+							"996": 0,
+							"969": 0,
+							"699": 0,
+						});
+					}
+				}
+				await db.set(`acc${message.author.id}`, playerData);
+			}
+			else {
+				const errorMessage = new Discord.MessageEmbed()
+                    .setColor("#fc0303")
+                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                    .setTitle("Error, it looks like you don't have enough money for this purchase.")
+                    .addFields(
+                        { name: "Required Amount of Money", value: `${moneyEmoji}${currentPack["price"]}`, inline: true },
+                        { name: "Your Money Balance", value: `${moneyEmoji}${money}`, inline: true }
+                    )
+                    .setTimestamp();
+                if (currentMessage) {
+                    return currentMessage.edit(errorMessage);
+                }
+                else {
+                    return message.channel.send(errorMessage);
+                }
+			}
+		}
     }
 }

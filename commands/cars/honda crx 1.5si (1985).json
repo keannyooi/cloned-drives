@@ -1,0 +1,61 @@
+﻿{
+    "rq": 19,
+    "make": "Honda",
+    "model": "CRX 1.5Si",
+    "modelYear": 1985,
+    "country": "JP",
+    "topSpeed": 114,
+    "0to60": 8.9,
+    "handling": 68,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch", "Year of the Ox"],
+    "isPrize": false,
+
+
+    "weight": 777,
+    "gc": "Medium",
+    "seatCount":4,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 32.48,
+    "ola": 76.40,
+    "description": "No CRX, just food. Card by Spence",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/798205034067263509/image0.jpg?width=1154&height=716",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/798205092767465522/image0.jpg?width=1154&height=720",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/798205118100799508/image0.jpg?width=1154&height=720",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/798205132306251786/image0.jpg?width=1154&height=720",
+    "racehud996": "",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/798205154825994240/image0.jpg?width=1154&height=720",
+    "racehud699": "",
+
+
+    "333TopSpeed": 117,
+    "3330to60": 8.3,
+    "333Handling": 70,
+
+
+    "666TopSpeed": 121,
+    "6660to60": 7.7, 
+    "666Handling": 73,
+
+
+    "996TopSpeed": 0,
+    "9960to60": 0,
+    "996Handling": 0,
+
+
+    "969TopSpeed": 124,
+    "9690to60": 7.1,
+    "969Handling": 75,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

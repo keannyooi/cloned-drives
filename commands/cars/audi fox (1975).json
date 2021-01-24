@@ -1,0 +1,61 @@
+﻿{
+    "rq": 15,
+    "make": "Audi",
+    "model": "Fox",
+    "modelYear": 1975,
+    "country": "DE",
+    "topSpeed": 94,
+    "0to60": 13.1,
+    "handling": 70,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1060,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 19.99,
+    "ola": 62.60,
+    "description": "Fox but 80 but Fox but not 80. Card by Connor",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/801768513864859649/F.AudiFox80.png?width=1154&height=718",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/801771716468277248/AFoxSt.png",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/801771723392286770/AFox1.png",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/801771728506191922/AFox2.png",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/801771749153833031/AFox332.png",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/801771742569037874/AFox323.png",
+    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/801771737267044372/AFox233.png",
+
+
+    "333TopSpeed": 96,
+    "3330to60": 12.1,
+    "333Handling": 72,
+
+
+    "666TopSpeed": 99,
+    "6660to60": 11.0, 
+    "666Handling": 75,
+
+
+    "996TopSpeed": 103,
+    "9960to60": 9.8,
+    "996Handling": 75,
+
+
+    "969TopSpeed": 102,
+    "9690to60": 10.0,
+    "969Handling": 77,
+
+
+    "699TopSpeed": 100,
+    "6990to60": 10.2,
+    "699Handling": 77
+}

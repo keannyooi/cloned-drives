@@ -1,0 +1,50 @@
+{
+    "rq": 68,
+    "make": "BMW",
+    "model": "M235i xDrive Gran Coupe",
+    "modelYear": 2020,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 4.8,
+    "handling": 82,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1633,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 63.16,
+    "ola": 66.67,
+    "description": "Not quite a BMWRX that many people expected. Card by havvy",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/783414061143687198/BMWM235ixDriveGranCoupe.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/783414217775644672/M235iST.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/783414252928237576/M235i1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/783414282062659645/M235i2.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/783414317327581234/M235i323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/783414352241098762/M235i233.png",
+
+    "333TopSpeed": 160,
+    "3330to60": 4.5,
+    "333Handling": 85,
+
+    "666TopSpeed": 164,
+    "6660to60": 4.2,
+    "666Handling": 88,
+
+    "969TopSpeed": 168,
+    "9690to60": 4.0,
+    "969Handling": 91,
+
+    "699TopSpeed": 165,
+    "6990to60": 4.0,
+    "699Handling": 91
+}

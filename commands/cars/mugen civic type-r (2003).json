@@ -1,0 +1,50 @@
+{
+    "rq": 49,
+    "make": ["Mugen", "Honda"],
+    "model": "Civic Type-R",
+    "modelYear": 2003,
+    "country": "JP",
+    "topSpeed": 156,
+    "0to60": 6.1,
+    "handling": 82,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1204,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.30,
+    "ola": 62.07,
+    "description": "The tuned EP2. Card by Havvy",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/794659331521511424/MugenCivicType-RVan.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/794700261128929280/000mug.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/794700271179005982/111mug.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/794700280842813470/222mug.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/794700306063163443/332mug.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/794700292712169503/323mug.png",
+    "racehud699": "",
+
+    "333TopSpeed": 160,
+    "3330to60": 5.8,
+    "333Handling": 85,
+
+    "666TopSpeed": 164,
+    "6660to60": 5.4,
+    "666Handling": 88,
+
+    "996TopSpeed": 169,
+    "9960to60": 5.0,
+    "996Handling": 88,
+
+    "969TopSpeed": 168,
+    "9690to60": 5.1,
+    "969Handling": 91
+}

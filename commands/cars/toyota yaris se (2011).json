@@ -1,0 +1,61 @@
+﻿{
+    "rq": 25,
+    "make": "Toyota",
+    "model": "Yaris SE",
+    "modelYear": 2011,
+    "country": "JP",
+    "topSpeed": 113,
+    "0to60": 9.0,
+    "handling": 71,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1030,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 37.82,
+    "ola": 68.98,
+    "description": "Reliable and affordable. Card by Andu",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/793774721039859712/YarisbutAmerica.png?width=705&height=439",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/793775457623080960/YarisSESt.png?width=705&height=441",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/793775470416101385/YarisSE1.png?width=705&height=441",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/793775481425231902/YarisSE2.png?width=705&height=441",
+    "racehud996": "",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/793775496441364521/YarisSE323.png?width=705&height=441",
+    "racehud699": "",
+
+
+    "333TopSpeed": 117,
+    "3330to60": 8.4,
+    "333Handling": 73,
+
+
+    "666TopSpeed": 121,
+    "6660to60": 7.8,
+    "666Handling": 76,
+
+
+    "996TopSpeed": 0,
+    "9960to60": 0,
+    "996Handling": 0,
+
+
+    "969TopSpeed": 124,
+    "9690to60": 7.2,
+    "969Handling": 79,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

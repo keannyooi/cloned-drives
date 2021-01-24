@@ -1,0 +1,61 @@
+﻿{
+    "rq": 20,
+    "make": "Mercedes-Benz",
+    "model": "A 160",
+    "modelYear": 1997,
+    "country": "DE",
+    "topSpeed": 111,
+    "0to60": 10.3,
+    "handling": 75,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Year of the Ox"],
+    "isPrize": false,
+
+
+    "weight": 1020,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 39.62,
+    "ola": 60.19,
+    "description": "Tipping and rolling. Card by Andu",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/797598602046078976/FastestRollover160.png?width=1154&height=719",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/797599338850156554/A160St.png",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/797599349882093588/A1601.png",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/797599359919325225/A1602.png",
+    "racehud996": "",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/797599372292390922/A160323.png",
+    "racehud699": "",
+
+
+    "333TopSpeed": 114,
+    "3330to60": 9.5,
+    "333Handling": 78,
+
+
+    "666TopSpeed": 118,
+    "6660to60": 8.8, 
+    "666Handling": 81,
+
+
+    "996TopSpeed": 0,
+    "9960to60": 0,
+    "996Handling": 0,
+
+
+    "969TopSpeed": 120,
+    "9690to60": 8.1,
+    "969Handling": 83,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

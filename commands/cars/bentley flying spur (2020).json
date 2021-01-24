@@ -1,0 +1,61 @@
+﻿{
+    "rq": 84,
+    "make": "Bentley",
+    "model": "Flying Spur",
+    "modelYear": 2020,
+    "country": "GB",
+    "topSpeed": 207,
+    "0to60": 3.5,
+    "handling": 88,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 2436,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 74.47,
+    "ola": 82.05,
+    "description": "Ultimate luxury and smoothness with the W12. Card by Connor",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/795952820271710258/Untitled.png",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/795952696624545812/ascend.jpg",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/795952724716814336/ascend_333.jpg",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/795952735118950420/ascend_666.jpg",
+    "racehud996": "",
+    "racehud969": "",
+    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/795952747458854932/ascend_699.jpg",
+
+
+    "333TopSpeed": 209,
+    "3330to60": 3.3,
+    "333Handling": 91,
+
+
+    "666TopSpeed": 211,
+    "6660to60": 3.1,
+    "666Handling": 95,
+
+
+    "996TopSpeed": 0,
+    "9960to60": 0,
+    "996Handling": 0,
+
+
+    "969TopSpeed": 0,
+    "9690to60": 0,
+    "969Handling": 0,
+
+
+    "699TopSpeed": 213,
+    "6990to60": 2.9,
+    "699Handling": 98
+}

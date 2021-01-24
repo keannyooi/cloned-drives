@@ -1,0 +1,50 @@
+{
+    "rq": 47,
+    "make": "Saturn",
+    "model": "Sky Red Line",
+    "modelYear": 2007,
+    "country": "US",
+    "topSpeed": 142,
+    "0to60": 5.4,
+    "handling": 78,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1397,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Roadster",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 58.06,
+    "ola": 74.07,
+    "description": "A fake Opel. Card by Spence.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/796147055453405212/image0.jpg",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/796147151431925770/skyred.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/796147164463366174/skyred333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/796147176878112768/skyred666.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/796147217877958666/skyred969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/796147195858518057/skyred699.png",
+
+    "333TopSpeed": 145,
+    "3330to60": 5.2,
+    "333Handling": 81,
+
+    "666TopSpeed": 148,
+    "6660to60": 5.0,
+    "666Handling": 84,
+
+    "969TopSpeed": 151,
+    "9690to60": 4.8,
+    "969Handling": 86,
+
+    "699TopSpeed": 149,
+    "6990to60": 4.9,
+    "699Handling": 87
+}

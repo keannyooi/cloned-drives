@@ -1,0 +1,54 @@
+{
+    "rq": 80,
+    "make": "Mercedes-AMG",
+    "model": "CLA 45 4MATIC",
+    "modelYear": 2017,
+    "country": "DE",
+    "topSpeed": 167,
+    "0to60": 3.8,
+    "handling": 90,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1550,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 67.86,
+    "ola": 84.21,
+    "description": "Some sort of car made in germany. Card by Spence",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/801210069529526323/image0_13.jpg",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/801210200299667546/claorsomething.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/801210215205961768/claorsomething333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/801210229487304754/claorsomething666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/801210331392376893/claorsomething996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/801210307203956776/claorsomething969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/801210273326956594/claorsomething699.png",
+
+    "333TopSpeed": 170,
+    "3330to60": 3.6,
+    "333Handling": 93,
+
+    "666TopSpeed": 173,
+    "6660to60": 3.4,
+    "666Handling": 96,
+
+    "996TopSpeed": 177,
+    "9960to60": 3.2,
+    "996Handling": 97,
+
+    "969TopSpeed": 176,
+    "9690to60": 3.3,
+    "969Handling": 100,
+
+    "699TopSpeed": 175,
+    "6990to60": 3.3,
+    "699Handling": 100
+}

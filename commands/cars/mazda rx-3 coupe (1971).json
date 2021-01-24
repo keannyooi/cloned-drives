@@ -1,0 +1,46 @@
+{
+    "rq": 17,
+    "make": "Mazda",
+    "model": "RX-3 Coupe",
+    "modelYear": 1971,
+    "country": "JP",
+    "topSpeed": 112,
+    "0to60": 10.9,
+    "handling": 62,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 935,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 41.76,
+    "ola": 66.06,
+    "description": "The little Rotary that could. Card by Keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/799861162879090738/mazda_rx-3_coupe.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/799861214263115796/rx-3.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/799861239894769674/rx-3_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/799861248912261161/rx-3_666.jpg",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/799861260673482762/rx-3_969.jpg",
+    "racehud699": "",
+
+    "333TopSpeed": 115,
+    "3330to60": 10.1,
+    "333Handling": 64,
+
+    "666TopSpeed": 119,
+    "6660to60": 9.3,
+    "666Handling": 67,
+
+    "969TopSpeed": 122,
+    "9690to60": 8.5,
+    "969Handling": 69
+}

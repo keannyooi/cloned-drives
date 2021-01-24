@@ -11,12 +11,13 @@ const Discord = require("discord.js-light");
 
 module.exports = {
     name: "sethand",
-    usage: "<car name goes here>",
-    args: 1,
+    usage: "<car name goes here> | <selected upgrade>",
+    args: 2,
 	isExternal: true,
     adminOnly: false,
-    description: "Sets your hand for quick race and random race gamemodes.",
+    description: "Sets your hand for quick race, random race and event gamemodes.",
     async execute(message, args) {
+		console.time("e");
         const db = message.client.db;
         const garage = await db.get(`acc${message.author.id}.garage`);
         const waitTime = 60000;
@@ -24,21 +25,29 @@ module.exports = {
             return response.author.id === message.author.id;
         };
 
-        var carName = args.map(i => i.toLowerCase());
-        const searchResults = garage.filter(function (garageCar) {
-            return carName.every(part => garageCar.carFile.includes(part));
+        let carName = args.slice(0, args.length - 1).map(i => i.toLowerCase());
+		let upgrade = args[args.length - 1];
+		const searchResults = new Set(garage);
+        searchResults.forEach(function (garageCar) {
+            if (carName.every(part => garageCar.carFile.includes(part)) === false || garageCar[upgrade] === 0) {
+				searchResults.delete(garageCar);
+			}
         });
 
-        if (searchResults.length > 1) {
-            var carList = "";
-            for (i = 1; i <= searchResults.length; i++) {
-                const car = require(`./cars/${searchResults[i - 1].carFile}`);
+        if (searchResults.size > 1) {
+            let carList = "";
+			let redirect = [];
+			let i = 1;
+           	searchResults.forEach(function (garageCar) {
+                const car = require(`./cars/${garageCar.carFile}`);
 				let make = car["make"];
 				if (typeof make === "object") {
 					make = car["make"][0];
 				}
-                carList += `${i} - ${make} ${car["model"]} (${car["modelYear"]}) [${searchResults[i - 1].gearingUpgrade}${searchResults[i - 1].engineUpgrade}${searchResults[i - 1].chassisUpgrade}]\n`;
-            }
+                carList += `${i} - ${make} ${car["model"]} (${car["modelYear"]})\n`;
+				redirect[i - 1] = garageCar;
+				i++;
+            });
 
             if (carList.length > 2048) {
                 const errorMessage = new Discord.MessageEmbed()
@@ -63,8 +72,8 @@ module.exports = {
                     errors: ['time']
                 })
                     .then(collected => {
-                        if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
-                            collected.first().delete();
+						collected.first().delete();
+                        if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.size) {
                             const errorMessage = new Discord.MessageEmbed()
                                 .setColor("#fc0303")
                                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -74,7 +83,7 @@ module.exports = {
                             return currentMessage.edit(errorMessage);
                         }
                         else {
-                            setHand(searchResults[parseInt(collected.first()) - 1], currentMessage);
+                            setHand(redirect[parseInt(collected.first()) - 1], upgrade, currentMessage);
                         }
                     })
                     .catch(() => {
@@ -87,27 +96,27 @@ module.exports = {
                     });
             });
         }
-        else if (searchResults.length > 0) {
-            setHand(searchResults[0]);
+        else if (searchResults.size > 0) {
+            setHand(Array.from(searchResults)[0], upgrade);
         }
         else {
             const errorMessage = new Discord.MessageEmbed()
                 .setColor("#fc0303")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle("Error, car requested not found.")
+                .setTitle("Error, car requested not found in requested tune.")
                 .setDescription("Well that sucks.")
                 .setTimestamp();
             return message.channel.send(errorMessage);
         }
 
-        async function setHand(currentCar, currentMessage) {
+        async function setHand(currentCar, upgrade, currentMessage) {
             const car = require(`./cars/${currentCar.carFile}`);
 			let make = car["make"];
 			if (typeof make === "object") {
 				make = car["make"][0];
 			}
-            const currentName = `${make} ${car["model"]} (${car["modelYear"]}) [${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}]`;
-            var racehud = car[`racehud${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}`];;
+            const currentName = `${make} ${car["model"]} (${car["modelYear"]}) [${upgrade}]`;
+            let racehud = car[`racehud${upgrade}`];;
 
             if (!racehud) {
                 const errorScreen = new Discord.MessageEmbed()
@@ -116,22 +125,28 @@ module.exports = {
                     .setTitle("Error, the tuning stage you requested is not supported.")
                     .setDescription("There is a possiblity that the maxed tune your car has isn't available. If that's the case, report it to the devs.")
                     .setTimestamp();
-                return message.channel.send(errorScreen);
+				if (currentMessage) {
+					return currentMessage.edit(errorScreen);
+				}
+				else {
+					return message.channel.send(errorScreen);
+				}
             }
 
-            db.set(`acc${message.author.id}.hand`, { carFile: currentCar.carFile, gearingUpgrade: currentCar.gearingUpgrade, engineUpgrade: currentCar.engineUpgrade, chassisUpgrade: currentCar.chassisUpgrade });
+            await db.set(`acc${message.author.id}.hand`, { carFile: currentCar.carFile, gearingUpgrade: parseInt(upgrade[0]), engineUpgrade: parseInt(upgrade[1]), chassisUpgrade: parseInt(upgrade[2]) });
             const infoScreen = new Discord.MessageEmbed()
                 .setColor("#03fc24")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle(`Successfully set your ${currentName} as your quick race and random race hand!`)
+                .setTitle(`Successfully set your ${currentName} as your quick race, random race and event hand!`)
                 .setImage(racehud)
                 .setTimestamp();
+			console.timeEnd("e");
             if (currentMessage) {
-                return currentMessage.edit(infoScreen);
-            }
-            else {
-                return message.channel.send(infoScreen);
-            }
+				return currentMessage.edit(infoScreen);
+			}
+			else {
+				return message.channel.send(infoScreen);
+			};
         }
     }
 }

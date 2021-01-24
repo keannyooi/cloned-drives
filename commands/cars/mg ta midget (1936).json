@@ -1,0 +1,47 @@
+{
+    "rq": 11,
+    "make": "MG",
+    "model": "TA Midget",
+    "modelYear": 1936,
+    "country": "GB",
+    "topSpeed": 79,
+    "0to60": 23.1,
+    "handling": 59,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 586,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Roadster",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 0.00,
+    "ola": 51.95,
+    "description": "Also known as the T-Type costing 222 pounds in 1936, thats 21,593 Dollars today. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/794658305783103488/MG_TA_Midget.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/794658642812731432/tamidget.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/794658654577623040/TAmidget333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/794658673343201301/tamidget666.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/794658696696692766/tamidget969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 82,
+    "3330to60": 22.1,
+    "333Handling": 61,
+
+    "666TopSpeed": 85,
+    "6660to60": 21.1,
+    "666Handling": 64,
+
+    "969TopSpeed": 87,
+    "9690to60": 20.3,
+    "969Handling": 66
+
+}

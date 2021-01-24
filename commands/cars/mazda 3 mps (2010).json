@@ -1,0 +1,51 @@
+{
+    "rq": 45,
+    "make": "Mazda",
+    "model": "3 MPS",
+    "modelYear": 2010,
+    "country": "JP",
+    "topSpeed": 154,
+    "0to60": 6.1,
+    "handling": 81,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1430,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 88.52,
+    "ola": 70.93,
+    "description": "The second generation of Mazda's hot hatch. Card by havvy.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/794933839557558272/speeeeeeeeeeeeeeeeeeeeeeeed.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/794681494995861525/bitmap2.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/794681522715361310/111mps.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/794681535508119582/222mps.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/794681559419977768/332mps.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/794681553740759110/323mps.png",
+    "racehud699": "",
+
+    "333TopSpeed": 158,
+    "3330to60": 5.8,
+    "333Handling": 84,
+
+    "666TopSpeed": 162,
+    "6660to60": 5.4,
+    "666Handling": 87,
+
+	"996TopSpeed": 167,
+    "9960to60": 5.0,
+    "996Handling": 87,
+
+    "969TopSpeed": 166,
+    "9690to60": 5.1,
+    "969Handling": 90
+
+}

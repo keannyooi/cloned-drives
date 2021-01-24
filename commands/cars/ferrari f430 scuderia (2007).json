@@ -1,0 +1,54 @@
+{
+    "rq": 80,
+    "make": "Ferrari",
+    "model": "F430 Scuderia",
+    "modelYear": 2007,
+    "country": "IT",
+    "topSpeed": 199,
+    "0to60": 3.5,
+    "handling": 90,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Italian Icons", "Supercar"],
+    "isPrize": false,
+
+    "weight": 1429,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 81.40,
+    "ola": 77.42,
+    "description": "Ferrari's F430 goes on a track day. Card by RushHour",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/794356146328174622/2007_Ferrari_430_Scuderia.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/794353285729484860/2007_Ferrari_430_Scuderia.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/794353329831673887/2007_Ferrari_430_Scuderia_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/794353341726457856/2007_Ferrari_430_Scuderia_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/794353375399510016/2007_Ferrari_430_Scuderia_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/794353367107239966/2007_Ferrari_430_Scuderia_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/794353358495547393/2007_Ferrari_430_Scuderia_699.png",
+
+    "333TopSpeed": 201,
+    "3330to60": 3.3,
+    "333Handling": 93,
+
+    "666TopSpeed": 204,
+    "6660to60": 3.1,
+    "666Handling": 95,
+
+	"996TopSpeed": 207,
+    "9960to60": 2.8,
+    "996Handling": 94,
+
+	"969TopSpeed": 207,
+    "9690to60": 2.9,
+    "969Handling": 98,
+
+    "699TopSpeed": 204,
+    "6990to60": 3.0,
+    "699Handling": 99
+}

@@ -14,14 +14,14 @@ module.exports = {
     usage: "<deck name goes here> | <index>",
     args: 2,
 	isExternal: true,
-    adminOnly: false,
+    adminOnly: true,
     description: 'Removes a car from a specified slot in a specifed deck. (NOTE: Deck names cannot contain spaces, use underscores "_" instead)',
     async execute(message, args) {
         const db = message.client.db;
         const playerData = await db.get(`acc${message.author.id}`);
         const decks = playerData.decks;
         const deckName = args[0].toLowerCase();
-        const index = args[1];
+        const index = Math.ceil(parseInt(args[1]));
         if (isNaN(index) || index > 5 || index < 1) {
             const errorMessage = new Discord.MessageEmbed()
                 .setColor("#fc0303")

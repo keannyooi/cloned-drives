@@ -82,7 +82,14 @@ module.exports = {
 						var i = 0;
 						while (i < 5) {
 							var carFile = starterCars[i];
-							await message.client.db.push(`acc${user.id}.garage`, { carFile: carFile, gearingUpgrade: 0, engineUpgrade: 0, chassisUpgrade: 0 });
+							await message.client.db.push(`acc${user.id}.garage`, { carFile: carFile,
+															"000": 1,
+															"333": 0,
+															"666": 0,
+															"996": 0,
+															"969": 0,
+															"699": 0
+															});
 							i++;
 						}
 						let infoScreen = new Discord.MessageEmbed()

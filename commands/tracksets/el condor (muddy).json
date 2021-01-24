@@ -1,0 +1,17 @@
+{
+	"trackName": "El Condor (Muddy)",
+	"weather": "Rainy",
+	"surface": "Dirt",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://cdn.discordapp.com/attachments/716917404868935691/794173136265936896/unknown.png",
+	
+	"specsDistr": {
+		"topSpeed": 0,
+		"0to60": 80,
+		"handling": 100,
+		"weight": 0,
+		"mra": 50,
+		"ola": 40
+	}
+}

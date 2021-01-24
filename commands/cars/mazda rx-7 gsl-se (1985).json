@@ -1,0 +1,46 @@
+{
+    "rq": 40,
+    "make": "Mazda",
+    "model": "RX-7 GSL-SE",
+    "modelYear": 1985,
+    "country": "JP",
+    "topSpeed": 120,
+    "0to60": 8.0,
+    "handling": 79,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Year of the Ox"],
+    "isPrize": false,
+
+    "weight": 1200,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 48.48,
+    "ola": 62.50,
+    "description": "The cutest RX-7. Card by Spence.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/798429331478544384/image0.jpg",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/798429423434465300/image0.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/798429480083128350/image0.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/798429497803931678/image0.jpg",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/798429521698619402/image0.jpg",
+    "racehud699": "",
+
+    "333TopSpeed": 123,
+    "3330to60": 7.5,
+    "333Handling": 82,
+
+    "666TopSpeed": 126,
+    "6660to60": 7.0,
+    "666Handling": 85,
+
+    "969TopSpeed": 129,
+    "9690to60": 6.5,
+    "969Handling": 87
+}

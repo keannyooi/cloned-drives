@@ -1,0 +1,46 @@
+{
+    "rq": 44,
+    "make": "Kia",
+    "model": "K5 GT-Line",
+    "modelYear": 2021,
+    "country": "KR",
+    "topSpeed": 128,
+    "0to60": 7.0,
+    "handling": 77,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Year of the Ox"],
+    "isPrize": false,
+
+    "weight": 1464,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 59.32,
+    "ola": 74.36,
+    "description": "GT kia :floosh: . Card by Keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/799868550176702494/kia_k5_gt-line.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/799868256285753344/kia_k5_gt-line.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/799868364305465344/kia_k5_gt-line_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/799868373026340904/kia_k5_gt-line_666.jpg",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/799868386032091166/kia_k5_gt-line_969.jpg",
+    "racehud699": "",
+
+    "333TopSpeed": 132,
+    "3330to60": 6.6,
+    "333Handling": 80,
+
+    "666TopSpeed": 135,
+    "6660to60": 6.1,
+    "666Handling": 82,
+
+    "969TopSpeed": 139,
+    "9690to60": 5.7,
+    "969Handling": 85
+}

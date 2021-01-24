@@ -1,0 +1,54 @@
+{
+    "rq": 47,
+    "make": "Lamborghini",
+    "model": "Miura P400SV",
+    "modelYear": 1971,
+    "country": "IT",
+    "topSpeed": 180,
+    "0to60": 5.8,
+    "handling": 79,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1298,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 77.78,
+    "ola": 78.57,
+    "description": "The worlds fastest car for a short period of time. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/799316026982268948/miurasv1.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/799316110767947825/miurasv.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/799316128458866740/miurasv333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/799316145655906394/miurasv666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/799316216287199232/miurasv996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/799316196280369182/miurasv969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/799316171924963348/miurasv699.png",
+
+    "333TopSpeed": 183,
+    "3330to60": 5.5,
+    "333Handling": 82,
+
+    "666TopSpeed": 186,
+    "6660to60": 5.2,
+    "666Handling": 85,
+
+    "996TopSpeed": 190,
+    "9960to60": 4.8,
+    "996Handling": 86,
+
+    "969TopSpeed": 189,
+    "9690to60": 4.9,
+    "969Handling": 87,
+
+    "699TopSpeed": 188,
+    "6990to60": 5.0,
+    "699Handling": 88
+}

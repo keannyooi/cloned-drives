@@ -1,0 +1,47 @@
+{
+    "rq": 10,
+    "make": "Abarth",
+    "model": "500 GT Carozzeria Zagato",
+    "modelYear": 1957,
+    "country": "IT",
+    "topSpeed": 83,
+    "0to60": 35.9,
+    "handling": 59,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 465,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 0.00,
+    "ola": 60.00,
+    "description": "A Zagato based on a classic fiat 500. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/796093894454542346/abarth50zabr.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/796093997345013810/500gtz.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/796094019570237460/r500gtz333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/796094032136110080/500gtz666.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/796094062981546034/500gtz969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 87,
+    "3330to60": 34.9,
+    "333Handling": 61,
+
+    "666TopSpeed": 90,
+    "6660to60": 33.8,
+    "666Handling": 64,
+
+    "969TopSpeed": 92,
+    "9690to60": 32.8,
+    "969Handling": 66
+
+}

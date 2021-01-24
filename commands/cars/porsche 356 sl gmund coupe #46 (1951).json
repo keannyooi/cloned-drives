@@ -1,0 +1,51 @@
+{
+    "rq": 12,
+    "make": "Porsche",
+    "model": "356 SL Gmund Coupe #46",
+    "modelYear": 1951,
+    "country": "DE",
+    "topSpeed": 99,
+    "0to60": 14.6,
+    "handling": 68,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["MotorSport"],
+    "isPrize": false,
+
+    "weight": 640,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 20.00,
+    "ola": 70.00,
+    "description": "The car that won Porsche it's first 24 Hours of Le Mans. Card by AGE.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/799362466978463754/image0.jpg",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/799365802063167548/image0.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/799365802063167548/image0.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/799365846350168124/image0.jpg",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/799365901693616168/image0.jpg?width=1077&height=676",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/799365863433961482/image0.jpg?width=1077&height=676",
+    "racehud699": "",
+
+    "333TopSpeed": 102,
+    "3330to60": 13.4,
+    "333Handling": 70,
+
+    "666TopSpeed": 104,
+    "6660to60": 12.2,
+    "666Handling": 73,
+
+    "996TopSpeed": 108,
+    "9960to60": 10.5,
+    "996Handling": 73,
+
+    "969TopSpeed": 107,
+    "9690to60": 10.8,
+    "969Handling": 75
+
+}

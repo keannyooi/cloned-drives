@@ -1,0 +1,61 @@
+﻿{
+    "rq": 71,
+    "make": "Aston Martin",
+    "model": "DBS",
+    "modelYear": 2007,
+    "country": "GB",
+    "topSpeed": 191,
+    "0to60": 4.2,
+    "handling": 86,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1695,
+    "gc": "Low",
+    "seatCount":4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 84.49,
+    "ola": 85.14,
+    "description": "V12 Monster seen in Casino Royale. Card by Havvy",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/802585947464007720/AstonMartinDBSV12.png?width=1154&height=718",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/802586439597424730/000dbs.png?width=1154&height=718",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/802586450281103390/111dbs.png?width=1154&height=718",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/802586457402900500/222dbs.png?width=1154&height=718",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/802586527371886592/332dbs.png?width=1154&height=718",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/802586521881411584/323dbs.png?width=1154&height=718",
+    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/802586516617822238/233dbs.png?width=1154&height=718",
+
+
+    "333TopSpeed": 194,
+    "3330to60": 4.0,
+    "333Handling": 89,
+
+
+    "666TopSpeed": 196,
+    "6660to60": 3.7, 
+    "666Handling": 92,
+
+
+    "996TopSpeed": 199,
+    "9960to60": 3.5,
+    "996Handling": 95,
+
+
+    "969TopSpeed": 199,
+    "9690to60": 3.5,
+    "969Handling": 95,
+
+
+    "699TopSpeed": 198,
+    "6990to60": 3.5,
+    "699Handling": 95
+}

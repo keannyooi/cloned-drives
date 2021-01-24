@@ -2,8 +2,8 @@
 	"trackName": "Hill Climb (Dirt)",
 	"weather": "Sunny",
 	"surface": "Dirt",
-	"speedbumps": 3,
-	"humps": 2,
+	"speedbumps": 0,
+	"humps": 5,
 	"background": "https://cdn.discordapp.com/attachments/716917404868935691/776313572157292544/unknown.png",
 	
 	"specsDistr": {
@@ -11,7 +11,7 @@
 		"0to60": 90,
 		"handling": 0,
 		"weight": 5,
-		"mra": 15,
+		"mra": 75,
 		"ola": 30
 	}
 }

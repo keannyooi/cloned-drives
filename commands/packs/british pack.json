@@ -1,0 +1,68 @@
+{
+	"packName": "British Pack",
+	"description": "A pack of 5 British cars, known for their appearances in OG Top Gear and their drop in retail value because of Brexit.",
+	"price": 60000,
+	"pack": "https://cdn.discordapp.com/attachments/716917404868935691/794152297717301248/british_pack.png",
+	
+	"filter": {
+		"make": "None",
+		"modelYear": {
+			"start": 1000,
+			"end": 3000
+		},
+		"country": "GB",
+		"tag": "None",
+		"driveType": "None",
+		"tyreType": "None",
+		"fuelType": "None",
+		"bodyStyle": "None"
+	},
+
+	"packSequence": [
+		{
+			"common": 70,
+			"uncommon": 30,
+			"rare": 0,
+			"superRare": 0,
+			"ultraRare": 0,
+			"epic": 0,
+			"legendary": 0
+		},
+		{
+			"common": 0,
+			"uncommon": 70,
+			"rare": 30,
+			"superRare": 0,
+			"ultraRare": 0,
+			"epic": 0,
+			"legendary": 0
+		},
+		{
+			"common": 0,
+			"uncommon": 70,
+			"rare": 30,
+			"superRare": 0,
+			"ultraRare": 0,
+			"epic": 0,
+			"legendary": 0
+		},
+		{
+			"common": 0,
+			"uncommon": 0,
+			"rare": 70,
+			"superRare": 30,
+			"ultraRare": 0,
+			"epic": 0,
+			"legendary": 0
+		},
+		{
+			"common": 0,
+			"uncommon": 0,
+			"rare": 0,
+			"superRare": 70,
+			"ultraRare": 20,
+			"epic": 8,
+			"legendary": 2
+		}
+	]
+}

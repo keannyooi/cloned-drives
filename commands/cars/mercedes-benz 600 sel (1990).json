@@ -1,0 +1,50 @@
+{
+    "rq": 49,
+    "make": "Mercedes-Benz",
+    "model": "600 SEL",
+    "modelYear": 1990,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 6.1,
+    "handling": 69,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 2190,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 76.25,
+    "ola": 75.41,
+    "description": "Fastest long boi W140 available. Card by havvy",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/801831578354843679/unknown.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/801830117549539328/000sel.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/801830129733992468/111sel.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/801830142388338720/222sel.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/801830157614579766/332sel.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/801830149825232946/323sel.png",
+    "racehud699": "",
+
+    "333TopSpeed": 159,
+    "3330to60": 5.7,
+    "333Handling": 71,
+
+    "666TopSpeed": 163,
+    "6660to60": 5.4,
+    "666Handling": 74,
+
+	"996TopSpeed": 167,
+    "9960to60": 4.9,
+    "996Handling": 74,
+
+    "969TopSpeed": 167,
+    "9690to60": 5.1,
+    "969Handling": 76
+}

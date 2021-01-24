@@ -7,11 +7,11 @@
 	"background": "https://cdn.discordapp.com/attachments/716917404868935691/787652719955148800/unknown.png",
 	
 	"specsDistr": {
-		"topSpeed": 20,
+		"topSpeed": 7.5,
 		"0to60": 100,
 		"handling": 100,
 		"weight": 0,
-		"mra": 75,
+		"mra": 65,
 		"ola": 30
 	}
 }

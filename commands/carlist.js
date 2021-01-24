@@ -21,7 +21,6 @@ module.exports = {
     async execute(message, args) {
         const db = message.client.db;
         const pageLimit = 10;
-        const trophyEmoji = message.client.emojis.cache.get("775636479145148418");
         const filter = (reaction, user) => {
             return (reaction.emoji.name === "⬅️" || reaction.emoji.name === "➡️") && user.id === message.author.id;
         };
@@ -86,10 +85,17 @@ module.exports = {
                         });
                         break;
                     case "boolean":
-                        carFiles = carFiles.filter(function (carFile) {
-                            let currentCar = require(`./cars/${carFile}`);
-                            return currentCar[key] === value;
-                        });
+						if (key === "isPrize") {
+							carFiles = carFiles.filter(function (carFile) {
+                            	let currentCar = require(`./cars/${carFile}`);
+                            	return currentCar[key] === value;
+                        	});
+						}
+						else if (key === "isOwned") {
+							carFiles = carFiles.filter(function (carFile) {
+                            	return ownedCars.some(car => carFile.includes(car));
+                        	});
+						}
                         break
                     default:
                         break;
@@ -322,7 +328,7 @@ module.exports = {
 				}
                 carList += `(${rarity} ${currentCar["rq"]}) ${make} ${currentCar["model"]} (${currentCar["modelYear"]})`;
                 if (currentCar["isPrize"]) {
-                    carList += ` ${trophyEmoji}`;
+                    carList += ` 🏆`;
                 }
                 if (sortBy !== "rq") {
                     valueList += `\`${currentCar[sortBy]}\`\n`;

@@ -1,0 +1,61 @@
+﻿{
+    "rq": 45,
+    "make": "Chevrolet",
+    "model": "Corvette Sport Coupe",
+    "modelYear": 1988,
+    "country": "US",
+    "topSpeed": 154,
+    "0to60": 5.6,
+    "handling": 78,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1467,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 52.34,
+    "ola": 82.76,
+    "description": "Who doesn’t love the 80s?. Card by Johnny",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/793144922881785896/aaaa.PNG?width=705&height=441",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/793142962312970280/Chevrolet-Corvette-Sport-Coupe.png?width=705&height=439",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/793143008622673942/Chevrolet-Corvette-Sport-Coupe-1-star.png?width=705&height=439",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/793143049664069682/Chevrolet-Corvette-Sport-Coupe-2-star.png?width=705&height=439",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/793143114100899910/Chevrolet-Corvette-Sport-Coupe-332.png?width=705&height=439",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/793143155829637140/Chevrolet-Corvette-Sport-Coupe-323.png?width=705&height=439",
+    "racehud699": "",
+
+
+    "333TopSpeed": 157,
+    "3330to60": 5.3,
+    "333Handling": 80,
+
+
+    "666TopSpeed": 160,
+    "6660to60": 5.0,
+    "666Handling": 82,
+
+
+    "996TopSpeed": 166,
+    "9960to60": 4.5,
+    "996Handling": 82,
+
+
+    "969TopSpeed": 163,
+    "9690to60": 4.7,
+    "969Handling": 84,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

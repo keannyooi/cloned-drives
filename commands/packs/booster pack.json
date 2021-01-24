@@ -1,0 +1,68 @@
+{
+    "packName": "Booster Pack",
+    "description": "A great starter pack or the life saver of your low end garage",
+    "price": 5000,
+    "pack": "https://media.discordapp.net/attachments/711793583677767750/802413702283526154/Booster_Pack.png",
+    
+    "filter": {
+        "make": "None",
+        "modelYear": {
+            "start": 1000,
+            "end": 3000
+        },
+        "country": "None",
+        "tag": "None",
+        "driveType": "None",
+        "tyreType": "None",
+        "fuelType": "None",
+        "bodyStyle": "None"
+    },
+
+    "packSequence": [
+        {
+            "common": 100,
+            "uncommon": 0,
+            "rare": 0,
+            "superRare": 0,
+            "ultraRare": 0,
+            "epic": 0,
+            "legendary": 0
+        },
+        {
+            "common": 100,
+            "uncommon": 0,
+            "rare": 0,
+            "superRare": 0,
+            "ultraRare": 0,
+            "epic": 0,
+            "legendary": 0
+        },
+        {
+            "common": 100,
+            "uncommon": 0,
+            "rare": 0,
+            "superRare": 0,
+            "ultraRare": 0,
+            "epic": 0,
+            "legendary": 0
+        },
+        {
+            "common": 50,
+            "uncommon": 50,
+            "rare": 0,
+            "superRare": 0,
+            "ultraRare": 0,
+            "epic": 0,
+            "legendary": 0
+        },
+        {
+            "common": 0,
+            "uncommon": 80,
+            "rare": 18,
+            "superRare": 2,
+            "ultraRare": 0,
+            "epic": 0,
+            "legendary": 0
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "rq": 53,
+    "make": "Volkswagen",
+    "model": "Golf Alltrack",
+    "modelYear": 2017,
+    "country": "DE",
+    "topSpeed": 129,
+    "0to60": 7.5,
+    "handling": 75,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1616,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 51.00,
+    "ola": 70.00,
+    "description": "Card by Exist.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/801051441283203102/CD_Volkswagen_Golf_Alltrack.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/801050964383498290/CD_Volkswagen_Golf_Alltrack_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/801050976739262475/CD_Volkswagen_Golf_Alltrack_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/801050991888695296/CD_Volkswagen_Golf_Alltrack_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/801051030082945064/CD_Volkswagen_Golf_Alltrack_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/801051021529841664/CD_Volkswagen_Golf_Alltrack_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/801051008343081000/CD_Volkswagen_Golf_Alltrack_699.png",
+
+    "333TopSpeed": 131,
+    "3330to60": 7.0,
+    "333Handling": 78,
+
+    "666TopSpeed": 134,
+    "6660to60": 6.5,
+    "666Handling": 80,
+
+    "996TopSpeed": 138,
+    "9960to60": 5.9,
+    "996Handling": 80,
+
+    "969TopSpeed": 137,
+    "9690to60": 6.2,
+    "969Handling": 83,
+
+    "699TopSpeed": 135,
+    "6990to60": 6.2,
+    "699Handling": 83
+}

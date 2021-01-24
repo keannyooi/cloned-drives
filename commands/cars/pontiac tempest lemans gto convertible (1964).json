@@ -1,0 +1,50 @@
+{
+    "rq": 29,
+    "make": "Pontiac",
+    "model": "Tempest LeMans GTO Convertible",
+    "modelYear": 1964,
+    "country": "US",
+    "topSpeed": 116,
+    "0to60": 7.3,
+    "handling": 69,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1417,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 81.11,
+    "ola": 101.37,
+    "description": "A legend but convertible. Card by DodgeDemon",
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/799858853574869002/1964_Pontiac_LM_GTO.png?width=1154&height=718",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/799851993111593000/tempest.jpg",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/799852027299495937/tempest_333.jpg",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/799852035767402537/tempest_666.jpg",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/799852066990325771/tempest_996.jpg",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/799852051105972254/tempest_969.jpg",
+    "racehud699": "",
+
+    "333TopSpeed": 119,
+    "3330to60": 6.8,
+    "333Handling": 71,
+
+    "666TopSpeed": 122,
+    "6660to60": 6.3, 
+    "666Handling": 74,
+
+    "996TopSpeed": 125,
+    "9960to60": 5.7,
+    "996Handling": 74,
+
+    "969TopSpeed": 125,
+    "9690to60": 5.9,
+    "969Handling": 76
+}

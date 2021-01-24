@@ -1,0 +1,54 @@
+{
+    "rq": 37,
+    "make": "Ford",
+    "model": "Explorer Sport Trac",
+    "modelYear": 2001,
+    "country": "US",
+    "topSpeed": 106,
+    "0to60": 9.3,
+    "handling": 63,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1965,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Pickup",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 41.70,
+    "ola": 86.02,
+    "description": "Card by Spence.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/800139994978451466/image0_10.jpg",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/800141199510863902/xplorer.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/800141216616415303/xplorer333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/800141228750274640/xplorer666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/800141268994490378/xplorer996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/800141291081433088/xpolrer969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/800141248983466014/xplorer699.png",
+
+    "333TopSpeed": 109,
+    "3330to60": 8.9,
+    "333Handling": 65,
+
+    "666TopSpeed": 112,
+    "6660to60": 8.6,
+    "666Handling": 68,
+
+    "996TopSpeed": 116,
+    "9960to60": 8.2,
+    "996Handling": 69,
+
+    "969TopSpeed": 115,
+    "9690to60": 8.4,
+    "969Handling": 70,
+
+    "699TopSpeed": 114,
+    "6990to60": 8.4,
+    "699Handling": 70
+}

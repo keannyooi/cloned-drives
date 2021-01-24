@@ -40,11 +40,11 @@ module.exports = {
 				var i = 0;
 				while (i < 8) {
 					const randNum = Math.floor(Math.random() * 100);
-					console.log(randNum + " is the random number");
-					var currentName, price;
-					var currentCard;
+					let currentName, price, stock;
+					let currentCard;
 					if (randNum < 33) {
 						currentCard = require(`./cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
+						stock = 1000;
 						if (i < 4) {
 							while (isOnSale(currentCard) || currentCard["isPrize"] || currentCard["rq"] > 19) {
 								currentCard = require(`./cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
@@ -62,11 +62,13 @@ module.exports = {
 							while (isOnSale(currentCard) || currentCard["isPrize"] || currentCard["rq"] > 29 || currentCard["rq"] < 20) {
 								currentCard = require(`./cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
 							}
+							stock = 1000;
 						}
 						else {
 							while (isOnSale(currentCard) || currentCard["isPrize"] || currentCard["rq"] > 64 || currentCard["rq"] < 50) {
 								currentCard = require(`./cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
 							}
+							stock = 25;
 						}
 					}
 					else if (randNum < 91) {
@@ -75,11 +77,13 @@ module.exports = {
 							while (isOnSale(currentCard) || currentCard["isPrize"] || currentCard["rq"] > 39 || currentCard["rq"] < 30) {
 								currentCard = require(`./cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
 							}
+							stock = 1000;
 						}
 						else {
-							while (isOnSale(currentCard) || currentCard["isPrize"] || currentCard["rq"] > 79 || currentCard["rq"] < 65) {
+							while (isOnSale(currentCard) || currentCard["isPrize"] || currentCard["rq"] > 64 || currentCard["rq"] < 50) {
 								currentCard = require(`./cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
 							}
+							stock = 25;
 						}
 					}
 					else {
@@ -88,17 +92,18 @@ module.exports = {
 							while (isOnSale(currentCard) || currentCard["isPrize"] || currentCard["rq"] > 49 || currentCard["rq"] < 40) {
 								currentCard = require(`./cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
 							}
+							stock = 1000;
 						}
 						else {
-							while (isOnSale(currentCard) || currentCard["isPrize"] || currentCard["rq"] < 80) {
+							while (isOnSale(currentCard) || currentCard["isPrize"] || currentCard["rq"] > 79 || currentCard["rq"] < 65) {
 								currentCard = require(`./cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
 							}
+							stock = 5;
 						}
 					}
 					currentName = `${currentCard["make"]} ${currentCard["model"]} (${currentCard["modelYear"]})`;
 					price = definePrice(currentCard["rq"]);
-					catalog[i] = { carFile: currentName.toLowerCase(), price: price };
-					console.log(catalog[i].carFile);
+					catalog[i] = { carFile: currentName.toLowerCase(), price: price, stock: stock };
 					i++;
 				}
 				catalog.sort(function (a, b) {

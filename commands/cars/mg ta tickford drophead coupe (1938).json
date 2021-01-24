@@ -1,0 +1,47 @@
+{
+    "rq": 11,
+    "make": "MG",
+    "model": "TA Tickford Drophead Coupe",
+    "modelYear": 1938,
+    "country": "GB",
+    "topSpeed": 79,
+    "0to60": 23.1,
+    "handling": 58,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 793,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Roadster",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 0.00,
+    "ola": 51.95,
+    "description": "A more luxurious TA with individual bucket seats and wind-up windows. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/794658392140283934/MG_TA_Tickford_Drophead_Coupe.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/794658737285103657/tickford.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/794658750291247124/tickford333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/794658764799868928/tickford666.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/794658789214388254/tickford969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 82,
+    "3330to60": 22.1,
+    "333Handling": 60,
+
+    "666TopSpeed": 85,
+    "6660to60": 21.1,
+    "666Handling": 63,
+
+    "969TopSpeed": 87,
+    "9690to60": 20.3,
+    "969Handling": 65
+
+}

@@ -19,7 +19,7 @@ module.exports = {
 	args: 0,
 	isExternal: true,
 	adminOnly: false,
-	cooldown: 15,
+	cooldown: 10,
 	description: "Does a random race where you are faced with a randomly generated opponent on a randomly generated track. May the RNG be with you.",
 	async execute(message) {
 		const db = message.client.db;
@@ -80,18 +80,31 @@ module.exports = {
 			})
 				.then(async collected => {
 					reactionMessage.reactions.removeAll();
-					console.log(collected.first().emoji.name);
 					switch (collected.first().emoji.name) {
 						case "✅":
-							const result = await raceCommand.race(message, playerCar, opponentCar, track);
+						const result = await raceCommand.race(message, playerCar, opponentCar, track);
 							const delay = ms => new Promise(res => setTimeout(res, ms));
 							await delay(2000);
 
 							if (result > 0) {
-								const reward = (playerData.rrWinStreak + 1) * 500 + 1000;
-								console.log(reward);
-								playerData.unclaimedRewards.money += reward;
 								playerData.rrWinStreak++;
+								let reward;
+								if (playerData.rrWinStreak <= 58) {
+									reward = playerData.rrWinStreak * 500 + 1000;
+								}
+								else if (playerData.rrWinStreak > 58 && playerData.rrWinStreak <= 98) {
+									reward = playerData.rrWinStreak * 250 + 30000;
+								}
+								else if (playerData.rrWinStreak > 98 && playerData.rrWinStreak <= 198) {
+									reward = playerData.rrWinStreak * 200 + 50000;
+								}
+								else if (playerData.rrWinStreak > 198 && playerData.rrWinStreak <= 348) {
+									reward = playerData.rrWinStreak * 100 + 100000;
+								}
+								else {
+									reward = playerData.rrWinStreak * 50 + 250000;
+								}
+								playerData.unclaimedRewards.money += reward;
 								message.channel.send(`**You have earned ${moneyEmoji}${reward}! Claim your reward using \`cd-rewards\`.**`);
 								randomize();
 							}
@@ -103,16 +116,11 @@ module.exports = {
 								randomize();
 							}
 
-							await db.set(`acc${message.author.id}`, playerData);
+							await db.set(`acc${message.author.id}`, playerData);	
 							return;
 						case "❎":
-							reactionMessage.reactions.removeAll();
-							const cancelMessage = new Discord.MessageEmbed()
-								.setColor("#34aeeb")
-								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-								.setTitle("Action cancelled.")
-								.setTimestamp();
-							return reactionMessage.edit(cancelMessage);
+							intermission.setTitle("Action cancelled.");
+							return reactionMessage.edit(intermission);
 						case "⏩":
 							playerData.rrWinStreak = 0;
 							randomize();
@@ -132,12 +140,8 @@ module.exports = {
 				.catch(error => {
 					console.log(error);
 					reactionMessage.reactions.removeAll();
-					const cancelMessage = new Discord.MessageEmbed()
-						.setColor("#34aeeb")
-						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-						.setTitle("Action cancelled automatically.")
-						.setTimestamp();
-					return reactionMessage.edit(cancelMessage);
+					intermission.setTitle("Action cancelled automatically.");
+					return reactionMessage.edit(intermission);
 				});
 		});
 
@@ -174,6 +178,7 @@ module.exports = {
 		function createCar(currentCar) {
 			const car = require(`./cars/${currentCar.carFile}`);
 			const carModule = {
+				rq: car["rq"],
 				topSpeed: car["topSpeed"],
 				accel: car["0to60"],
 				handling: car["handling"],
@@ -213,7 +218,7 @@ module.exports = {
 		    	hmm = require(`./cars/${opponentCarFile}`);
 			}
 			const upgradeIndex = Math.floor(Math.random() * 4);
-			var upgradePattern = [0, 0, 0];
+			let upgradePattern = [0, 0, 0];
 			switch (upgradeIndex) {
 				case 0:
 					break;
@@ -225,9 +230,8 @@ module.exports = {
 					break;
 				case 3:
 					const maxedTunes = [996, 969, 699];
-					const opponentCar = require(`./cars/${opponentCarFile}`);
-					var i = 0;
-					while (!opponentCar[`${maxedTunes[i]}TopSpeed`]) {
+					let i = 0;
+					while (!hmm[`${maxedTunes[i]}TopSpeed`]) {
 						i = Math.floor(Math.random() * maxedTunes.length);
 					}
 					upgradePattern = Array.from(maxedTunes[i].toString(), (val) => Number(val));

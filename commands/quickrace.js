@@ -124,14 +124,21 @@ module.exports = {
 
         async function chooseOpponent(currentMessage) {
             searchResults = [];
+			let handCar = require(`./cars/${player.carFile}`);
+			let make = handCar["make"];
+			if (typeof make === "object") {
+				make = handCar["make"][0];
+			}
+			let handName = `${make} ${handCar["model"]} (${handCar["modelYear"]})`;
             const chooseScreen = new Discord.MessageEmbed()
                 .setColor("#34aeeb")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                 .setTitle(`${currentTrack["trackName"]} has been chosen!`)
-                .setDescription("Choose a car to race with by typing out the name of the car.")
+                .setDescription(`Choose a car to race with by typing out the name of the car.
+				Your Hand: ${handName}`)
                 .setImage(currentTrack["background"])
                 .setTimestamp();
-            var currentMessage2;
+            let currentMessage2;
             if (currentMessage) {
                 currentMessage2 = await currentMessage.edit(chooseScreen);
             }
@@ -247,7 +254,7 @@ module.exports = {
                 .setColor("#34aeeb")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                 .setTitle(`${make} ${car["model"]} (${car["modelYear"]}) selected!`)
-                .setDescription("Select a tune your opponent's car (that is, any tune that is either `stock`, `333`, `666`, `996`, `969` or `699`).")
+                .setDescription("Select a tune your opponent's car (that is, any tune that is either `000`, `333`, `666`, `996`, `969` or `699`).")
                 .setImage(car["card"])
                 .setTimestamp();
 
@@ -258,47 +265,22 @@ module.exports = {
                 errors: ['time']
             })
                 .then(collected => {
-                    var gearingUpgrade = 0, engineUpgrade = 0, chassisUpgrade = 0;
-                    switch (collected.first().content.toLowerCase()) {
-                        case "996":
-                        case "969":
-                        case "699":
-						case "666":
-                        case "333":
-                            if (car[`racehud${collected.first().content.toLowerCase()}`] === "") {
-                                collected.first().delete();
-                                const errorScreen = new Discord.MessageEmbed()
-                                    .setColor("#fc0303")
-                                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                                    .setTitle("Error, the tuning stage you requested is not supported.")
-                                    .setDescription("There is a possiblity that the maxed tune your car has isn't available. If that's the case, report it to the devs.")
-                                    .setTimestamp();
-                                return currentMessage.edit(errorScreen);
-                            }
-                            else {
-                                let upgrade = collected.first().content.split("");
-                                gearingUpgrade = parseInt(upgrade[0]);
-                                engineUpgrade = parseInt(upgrade[1]);
-                                chassisUpgrade = parseInt(upgrade[2]);
-                            }
-                            break;
-                        case "stock":
-                            break;
-                        default:
-                            const errorScreen = new Discord.MessageEmbed()
-                                .setColor("#fc0303")
-                                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                                .setTitle("Error, the tuning stage you requested is not supported.")
-                                .setDescription("In order to make the tuning system less complex, the tuning stages are limited to `stock`, `333`, `666`, `996`, `969` and `699`. There is also a possiblity that the maxed tune you requested for the opponent car has isn't available. If that's the case, report it to the devs.")
-                                .setTimestamp();
-                            return currentMessage.edit(errorScreen);
-                    }
-                    collected.first().delete();
+					collected.first().delete();
+					let upgrade = collected.first().content.toLowerCase();
+					if (!car[`racehud${upgrade}`] || car[`racehud${upgrade}`] === "") {
+						const errorScreen = new Discord.MessageEmbed()
+                            .setColor("#fc0303")
+                            .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                            .setTitle("Error, the tuning stage you requested is not supported.")
+                            .setDescription("There is a possiblity that the maxed tune your car has isn't available. If that's the case, report it to the devs.")
+                            .setTimestamp();
+                        return currentMessage.edit(errorScreen);
+					}
 
                     const playerList = createList(player);
-                    const opponentList = createList({ carFile: currentCar, gearingUpgrade: gearingUpgrade, engineUpgrade: engineUpgrade, chassisUpgrade: chassisUpgrade });
+                    const opponentList = createList({ carFile: currentCar, gearingUpgrade: upgrade[0], engineUpgrade: upgrade[1], chassisUpgrade: upgrade[2] });
                     const playerCar = createCar(player);
-                    const opponentCar = createCar({ carFile: currentCar, gearingUpgrade: gearingUpgrade, engineUpgrade: engineUpgrade, chassisUpgrade: chassisUpgrade });
+                    const opponentCar = createCar({ carFile: currentCar, gearingUpgrade: upgrade[0], engineUpgrade: upgrade[1], chassisUpgrade: upgrade[2] });
                     const intermission = new Discord.MessageEmbed()
                         .setColor("#34aeeb")
                         .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))

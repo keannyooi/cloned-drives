@@ -1,0 +1,61 @@
+﻿{
+    "rq": 40,
+    "make": "Land Rover",
+    "model": "Defender 90",
+    "modelYear": 1990,
+    "country": "GB",
+    "topSpeed": 86,
+    "0to60": 10.2,
+    "handling": 59,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1695,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 0.00,
+    "ola": 68.63,
+    "description": "A classic iconic off-roader. Card by Havvy",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/797198172371288074/LandRoverDefender90.png?width=1154&height=718",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/797187769419432026/000dfd.png?width=1154&height=718",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/797187780349263922/111dfd.png?width=1154&height=718",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/797187788821889064/222dfd.png?width=1154&height=718",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/797187803476918272/332dfd.png?width=1154&height=718",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/797187796137541652/323dfd.png?width=1154&height=718",
+    "racehud699": "",
+
+
+    "333TopSpeed": 90,
+    "3330to60": 9.5,
+    "333Handling": 62,
+
+
+    "666TopSpeed": 94,
+    "6660to60": 8.7,
+    "666Handling": 64,
+
+
+    "996TopSpeed": 99,
+    "9960to60": 7.8,
+    "996Handling": 64,
+
+
+    "969TopSpeed": 98,
+    "9690to60": 8.0,
+    "969Handling": 66,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

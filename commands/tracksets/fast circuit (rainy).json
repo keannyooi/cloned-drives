@@ -7,8 +7,8 @@
 	"background": "https://cdn.discordapp.com/attachments/716917404868935691/772757538789785600/unknown.png",
 	
 	"specsDistr": {
-		"topSpeed": 0,
-		"0to60": 100,
+		"topSpeed": 15,
+		"0to60": 85,
 		"handling": 85,
 		"weight": 0,
 		"mra": 55,

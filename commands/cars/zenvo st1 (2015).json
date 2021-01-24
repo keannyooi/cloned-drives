@@ -1,0 +1,50 @@
+{
+    "rq": 93,
+    "make": "Zenvo",
+    "model": "ST1",
+    "modelYear": 2015,
+    "country": "DK",
+    "topSpeed": 233,
+    "0to60": 2.9,
+    "handling": 93,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Rest of the World"],
+    "isPrize": false,
+
+    "weight": 1780,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 130.43,
+    "ola": 88.88,
+    "description": "Why buy a Swedish Hypercar when you can get Danish. Card by DodgeDemon.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/797519310888632380/2015_Zenvo_ST1.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/797519415130062878/ST1.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/797519433710698526/st1333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/797519448276992000/st1666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/797519501725925396/st1996.png",
+    "racehud969": "",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/797519475355549796/st1699.png",
+
+    "333TopSpeed": 236,
+    "3330to60": 2.7,
+    "333Handling": 96,
+
+    "666TopSpeed": 239,
+    "6660to60": 2.5,
+    "666Handling": 100,
+
+    "996TopSpeed": 242,
+    "9960to60": 2.3,
+    "996Handling": 100,
+
+    "699TopSpeed": 240,
+    "6990to60": 2.4,
+    "699Handling": 103
+}

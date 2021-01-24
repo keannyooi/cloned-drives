@@ -1,0 +1,61 @@
+﻿{
+    "rq": 49,
+    "make": "Porsche",
+    "model": "928 GTS",
+    "modelYear": 1992,
+    "country": "DE",
+    "topSpeed": 166,
+    "0to60": 5.3,
+    "handling": 78,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1612,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 67.95,
+    "ola": 83.02,
+    "description": "The front-engined Porsche with a dream. Card by Bnuuy",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/784505793990623232/rect7774.png?width=705&height=439",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/784506157037125682/928GTSStock.png?width=705&height=441",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/784506221998506044/928GTS1.png?width=705&height=441",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/784506241619197952/928GTS2.png?width=705&height=441",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/784506331721105418/928GTS332.png?width=705&height=441",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/784506288863576134/928GTS323.png?width=705&height=441",
+    "racehud699": "",
+
+
+    "333TopSpeed": 170,
+    "3330to60": 5.0,
+    "333Handling": 81,
+
+
+    "666TopSpeed": 174,
+    "6660to60": 4.6,
+    "666Handling": 84,
+
+
+    "996TopSpeed": 180,
+    "9960to60": 4.2,
+    "996Handling": 84,
+
+
+    "969TopSpeed": 178,
+    "9690to60": 4.2,
+    "969Handling": 84,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

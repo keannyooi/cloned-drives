@@ -1,0 +1,61 @@
+﻿{
+    "rq": 36,
+    "make": "BMW",
+    "model": "M6",
+    "modelYear": 1983,
+    "country": "DE",
+    "topSpeed": 144,
+    "0to60": 6.1,
+    "handling": 69,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1500,
+    "gc": "Low",
+    "seatCount":4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 55.45,
+    "ola": 68.85,
+    "description": "The American M635CSi. Card by Ahmed",
+
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/800319667913752636/BMW-M5.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/800319824822534144/m6St.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/800319832910069800/m61.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/800319840073809930/m62.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/800319917480083496/m6332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/800319874370764810/m6323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/800319852970901534/m6233.png",
+
+
+    "333TopSpeed": 148,
+    "3330to60": 5.7,
+    "333Handling": 71,
+
+
+    "666TopSpeed": 152,
+    "6660to60": 5.3, 
+    "666Handling": 74,
+
+
+    "996TopSpeed": 158,
+    "9960to60": 4.8,
+    "996Handling": 74,
+
+
+    "969TopSpeed": 156,
+    "9690to60": 5.0,
+    "969Handling": 76,
+
+
+    "699TopSpeed": 153,
+    "6990to60": 5.1,
+    "699Handling": 77
+}

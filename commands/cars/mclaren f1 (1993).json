@@ -1,0 +1,50 @@
+{
+    "rq": 81,
+    "make": "McLaren",
+    "model": "F1",
+    "modelYear": 1993,
+    "country": "GB",
+    "topSpeed": 240,
+    "0to60": 3.3,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": true,
+
+    "weight": 1138,
+    "gc": "Low",
+    "seatCount": 3,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 110.00,
+    "ola": 109.09,
+    "description": "Widely regarded as the best supercar ever. Card by DodgeDemon",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/784088730624589844/1993_McLaren_F1.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/784092267434213397/McLarenF1Stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/784092353501462589/McLarenF1333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/784092430571929630/McLarenF1666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/784092596695859210/McLarenF1996.png",
+    "racehud969": "",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/784092501216722984/McLarenF1699.png",
+
+    "333TopSpeed": 243,
+    "3330to60": 3.2,
+    "333Handling": 80,
+
+    "666TopSpeed": 246,
+    "6660to60": 3.0,
+    "666Handling": 83,
+
+    "996TopSpeed": 251,
+    "9960to60": 2.8,
+    "996Handling": 84,
+
+    "699TopSpeed": 249,
+    "6990to60": 2.9,
+    "699Handling": 86
+}

@@ -1,0 +1,50 @@
+{
+    "rq": 79,
+    "make": "Ferrari",
+    "model": "F40",
+    "modelYear": 1989,
+    "country": "IT",
+    "topSpeed": 197,
+    "0to60": 4.3,
+    "handling": 89,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": true,
+
+    "weight": 1369,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 107.50,
+    "ola": 90.48,
+    "description": "Built to beat the 959, the last car Enzo Ferrari launched personally and one of the nicest Ferrari's ever made. Card by Johnny",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/796780109017251860/Ferrari-F40.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/796784839947976704/Ferrari-F40.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/796784847334408222/Ferrari-F40-1-star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/796784853022408764/Ferrari-F40-2-star.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/796784872622522449/Ferrari-F40-332.png",
+    "racehud969": "",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/796784864846282782/Ferrari-F40-233.png",
+
+    "333TopSpeed": 200,
+    "3330to60": 4.0,
+    "333Handling": 92,
+
+    "666TopSpeed": 203,
+    "6660to60": 3.7,
+    "666Handling": 95,
+
+    "996TopSpeed": 205,
+    "9960to60": 3.2,
+    "996Handling": 95,
+
+    "699TopSpeed": 204,
+    "6990to60": 3.4,
+    "699Handling": 99
+}

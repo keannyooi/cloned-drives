@@ -1,0 +1,46 @@
+{
+    "rq": 80,
+    "make": "Porsche",
+    "model": "911 GT2",
+    "modelYear": 2007,
+    "country": "DE",
+    "topSpeed": 204,
+    "0to60": 3.6,
+    "handling": 90,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1440,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 85.51,
+    "ola": 89.60,
+    "description": "Card by Havvy.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/800041816883200010/gt2.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/783403842846720050/911GT2Stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/783403912509521920/911GT21.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/783403946018340874/911GT22.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/783403996655124510/911GT2323.png",
+    "racehud699": "",
+
+    "333TopSpeed": 206,
+    "3330to60": 3.4,
+    "333Handling": 93,
+
+    "666TopSpeed": 209,
+    "6660to60": 3.2,
+    "666Handling": 96,
+
+    "969TopSpeed": 211,
+    "9690to60": 3.0,
+    "969Handling": 100
+}

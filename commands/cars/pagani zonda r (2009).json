@@ -1,0 +1,61 @@
+﻿{
+    "rq": 96,
+    "make": "Pagani",
+    "model": "Zonda R",
+    "modelYear": 2009,
+    "country": "IT",
+    "topSpeed": 233,
+    "0to60": 2.5,
+    "handling": 95,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport", "Year of the Ox"],
+    "isPrize": false,
+
+
+    "weight": 1070,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 87.72,
+    "ola": 82.22,
+    "description": "Extreme. Card by Preston",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/797009935413542942/Zonda_R.png?width=1154&height=718",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/795766183508049940/Custom_Top_Drives_Small_Thumb_Template_1.png",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/795766248725151754/Custom_Top_Drives_Small_Thumb_Template_1_1.png",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/795766313540124717/Custom_Top_Drives_Small_Thumb_Template_1_2.png",
+    "racehud996": "",
+    "racehud969": "",
+    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/795766464736395354/Custom_Top_Drives_Small_Thumb_Template_1_3.png",
+
+
+    "333TopSpeed": 235,
+    "3330to60": 2.4,
+    "333Handling": 98,
+
+
+    "666TopSpeed": 236,
+    "6660to60": 2.3,
+    "666Handling": 102,
+
+
+    "996TopSpeed": 0,
+    "9960to60": 0,
+    "996Handling": 0,
+
+
+    "969TopSpeed": 0,
+    "9690to60": 0,
+    "969Handling": 0,
+
+
+    "699TopSpeed": 238,
+    "6990to60": 2.1,
+    "699Handling": 105
+}

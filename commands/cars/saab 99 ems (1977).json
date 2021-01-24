@@ -1,0 +1,46 @@
+{
+    "rq": 17,
+    "make": "Saab",
+    "model": "99 EMS",
+    "modelYear": 1977,
+    "country": "SE",
+    "topSpeed": 108,
+    "0to60": 12.0,
+    "handling": 68,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1161,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 37.66,
+    "ola": 79.00,
+    "description": "Card by Andu.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/783367994327695390/saabems.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/783368469797535744/EMSStock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/783368495865528330/EMS11.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/783368516837441586/EMS12.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/783368546142912552/EMS1.png",
+    "racehud699": "",
+
+    "333TopSpeed": 111,
+    "3330to60": 11.1,
+    "333Handling": 68,
+
+    "666TopSpeed": 114,
+    "6660to60": 10.2,
+    "666Handling": 72,
+
+    "969TopSpeed": 117,
+    "9690to60": 9.3,
+    "969Handling": 75
+}

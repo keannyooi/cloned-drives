@@ -1,0 +1,54 @@
+{
+    "rq": 56,
+    "make": "Nissan",
+    "model": "370Z Roadster",
+    "modelYear": 2010,
+    "country": "JP",
+    "topSpeed": 155,
+    "0to60": 5.1,
+    "handling": 86,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer", "Year of the Ox"],
+    "isPrize": false,
+
+    "weight": 1520,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Roadster",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 67.11,
+    "ola": 78.43,
+    "description": "A 370Z without the top, simple as that. Card by Ghiță",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/794296898654568509/PicsArt_12-31-05.49.26.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/794297016309514300/PicsArt_12-31-09.09.09.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/794297207159128064/PicsArt_12-31-09.23.00.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/794297243783528453/PicsArt_12-31-09.27.25.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/794297408061702204/PicsArt_12-31-09.48.02.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/794297329476829244/PicsArt_12-31-09.31.46.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/794297366374383626/PicsArt_12-31-09.39.55.jpg",
+
+    "333TopSpeed": 159,
+    "3330to60": 4.8,
+    "333Handling": 89,
+
+    "666TopSpeed": 163,
+    "6660to60": 4.6,
+    "666Handling": 92,
+
+	"996TopSpeed": 168,
+    "9960to60": 4.1,
+    "996Handling": 92,
+
+    "969TopSpeed": 167,
+    "9690to60": 4.3,
+    "969Handling": 95,
+
+	"699TopSpeed": 164,
+    "6990to60": 4.3,
+    "699Handling": 95
+}

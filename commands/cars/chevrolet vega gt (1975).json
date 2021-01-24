@@ -1,0 +1,61 @@
+﻿{
+    "rq": 14,
+    "make": "Chevrolet",
+    "model": "Vega GT",
+    "modelYear": 1975,
+    "country": "US",
+    "topSpeed": 90,
+    "0to60": 15.7,
+    "handling": 67,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1030,
+    "gc": "Medium",
+    "seatCount":4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 0.00,
+    "ola": 72.61,
+    "description": "One of the worst GM cars. Card by Connor",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/801771938979643453/F.ChevyVegaGT.png?width=1154&height=718",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/801773777842470943/VegaSt.png",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/801773784569741322/Vega1.png",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/801773787195637790/Vega2.png",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/801773817390563328/Vega332.png",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/801773804120309770/Vega323.png",
+    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/801773796360323122/Vega233.png",
+
+
+    "333TopSpeed": 93,
+    "3330to60": 14.4,
+    "333Handling": 69,
+
+
+    "666TopSpeed": 96,
+    "6660to60": 13.0, 
+    "666Handling": 72,
+
+
+    "996TopSpeed": 98,
+    "9960to60": 11.3,
+    "996Handling": 72,
+
+
+    "969TopSpeed": 98,
+    "9690to60": 11.6,
+    "969Handling": 74,
+
+
+    "699TopSpeed": 96,
+    "6990to60": 11.8,
+    "699Handling": 74
+}

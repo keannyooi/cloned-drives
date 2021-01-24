@@ -1,0 +1,46 @@
+{
+    "rq": 35,
+    "make": ["Kid's Heart", "Nissan"],
+    "model": "SilEighty",
+    "modelYear": 1998,
+    "country": "JP",
+    "topSpeed": 111,
+    "0to60": 5.6,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer"],
+    "isPrize": true,
+
+    "weight": 1150,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 59.57,
+    "ola": 75.00,
+    "description": "Wings of fire. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/793622105119784971/sileighty3.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/793622563204759574/sil80.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/793622570799726602/sil80333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/793622581869412363/sil80666.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/793622612767932416/sil80969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 114,
+    "3330to60": 5.3,
+    "333Handling": 78,
+
+    "666TopSpeed": 117,
+    "6660to60": 5.0,
+    "666Handling": 81,
+
+    "969TopSpeed": 120,
+    "9690to60": 4.7,
+    "969Handling": 84
+}

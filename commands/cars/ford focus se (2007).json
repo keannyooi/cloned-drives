@@ -1,0 +1,46 @@
+{
+    "rq": 29,
+    "make": "Ford",
+    "model": "Focus SE",
+    "modelYear": 2007,
+    "country": "US",
+    "topSpeed": 113,
+    "0to60": 8.1,
+    "handling": 71,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1174,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 45.00,
+    "ola": 79.01,
+    "description": "The less cool Ford Focus for the folks in the USA. Card by havvy",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/794939261966876702/unknown.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/794948610785542154/000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/794948628594294864/111png.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/794948638342250496/222.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/794948650660790282/323.png",
+    "racehud699": "",
+
+    "333TopSpeed": 117,
+    "3330to60": 7.6,
+    "333Handling": 74,
+
+    "666TopSpeed": 121,
+    "6660to60": 7.0,
+    "666Handling": 76,
+
+    "969TopSpeed": 125,
+    "9690to60": 6.5,
+    "969Handling": 79
+}

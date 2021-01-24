@@ -1,0 +1,61 @@
+﻿{
+    "rq": 11,
+    "make": "Honda",
+    "model": "EV Plus",
+    "modelYear": 1997,
+    "country": "JP",
+    "topSpeed": 80,
+    "0to60": 17.0,
+    "handling": 63,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly", "Year of the Ox"],
+    "isPrize": false,
+
+
+    "weight": 1628,
+    "gc": "Medium",
+    "seatCount":4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 0.00,
+    "ola": 57.65,
+    "description": "Honda’s first steps in the EV world. Card by Keanny",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/800390533444272178/honda_ev_plus.png?width=705&height=434",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/799877205470609408/honda_ev_plus.jpg",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/799877235229458482/honda_ev_plus_333.jpg",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/799877244239085569/honda_ev_plus_666.jpg",
+    "racehud996": "",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/799877257078243358/honda_ev_plus_969.jpg",
+    "racehud699": "",
+
+
+    "333TopSpeed": 82,
+    "3330to60": 15.5,
+    "333Handling": 65,
+
+
+    "666TopSpeed": 85,
+    "6660to60": 13.9, 
+    "666Handling": 68,
+
+
+    "996TopSpeed": 0,
+    "9960to60": 0,
+    "996Handling": 0,
+
+
+    "969TopSpeed": 87,
+    "9690to60": 12.4,
+    "969Handling": 70,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

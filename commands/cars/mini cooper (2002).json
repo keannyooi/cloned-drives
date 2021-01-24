@@ -1,0 +1,57 @@
+{
+    "rq": 27,
+    "make": "Mini",
+    "model": "Cooper",
+    "modelYear": 2002,
+    "country": "DE",
+    "topSpeed": 124,
+    "0to60": 8.5,
+    "handling": 71,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1050,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 41.01,
+    "ola": 77.89,
+    "description": "A legend reborn, just lil fatter. Card by Connor",
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/801765401570443264/E.BMWCooper.png?width=1154&height=718",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/801768116010876938/MiniCSt.png",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/801768123757756446/MiniC1.png",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/801768127348211733/MiniC2.png",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/801768151841767424/MiniC332.png",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/801768145886904320/MiniC323.png",
+    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/801768139393073182/MiniC233.png",
+
+    "333TopSpeed": 127,
+    "3330to60": 7.9,
+    "333Handling": 73,
+
+    "666TopSpeed": 130,
+    "6660to60": 7.3, 
+    "666Handling": 76,
+
+
+    "996TopSpeed": 134,
+    "9960to60": 6.6,
+    "996Handling": 76,
+
+
+    "969TopSpeed": 133,
+    "9690to60": 6.8,
+    "969Handling": 78,
+
+
+    "699TopSpeed": 130,
+    "6990to60": 6.9,
+    "699Handling": 78
+}

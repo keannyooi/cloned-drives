@@ -1,0 +1,46 @@
+{
+    "rq": 92,
+    "make": "Lamborghini",
+    "model": "Diablo VT 6.0",
+    "modelYear": 2000,
+    "country": "IT",
+    "topSpeed": 205,
+    "0to60": 3.4,
+    "handling": 87,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1625,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 68.00,
+    "ola": 88.24,
+    "description": "The Devil's final year goes off in a blast of 543hp. Card by DodgeDemon.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/796403415667965992/2000_Lamborghni_Diablo_VT6.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/796403534803369984/diablo.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/796403546626588732/diablo333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/796403558408519751/diablo666.png",
+    "racehud996": "",
+    "racehud969": "",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/796403578406568026/diablo699.png",
+
+    "333TopSpeed": 208,
+    "3330to60": 3.2,
+    "333Handling": 90,
+
+    "666TopSpeed": 211,
+    "6660to60": 3.0,
+    "666Handling": 93,
+
+    "699TopSpeed": 213,
+    "6990to60": 2.8,
+    "699Handling": 97
+}

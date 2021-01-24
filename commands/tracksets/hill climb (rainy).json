@@ -1,0 +1,17 @@
+{
+	"trackName": "Hill Climb (Rainy)",
+	"weather": "Rainy",
+	"surface": "Asphalt",
+	"speedbumps": 0,
+	"humps": 5,
+	"background": "https://cdn.discordapp.com/attachments/716917404868935691/796961892358291476/unknown.png",
+	
+	"specsDistr": {
+		"topSpeed": 0,
+		"0to60": 90,
+		"handling": 0,
+		"weight": 5,
+		"mra": 75,
+		"ola": 30
+	}
+}

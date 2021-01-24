@@ -7,7 +7,7 @@
 |__|\__\ |_______/__/     \__\ |__| \__| |__| \__|     |__| 	(this is a watermark that proves that these lines of code are mine)
 */
 
-const backupMode = false;
+const backupMode = true;
 const fs = require("fs");
 const Discord = require("discord.js-light");
 const { Database } = require("quickmongo");
@@ -28,7 +28,53 @@ const cooldowns = new Discord.Collection();
 client.db = new Database("mongodb+srv://keanny:6x6IsBae@databaseclusterthing.as94y.mongodb.net/DatabaseClusterThing?retryWrites=true&w=majority");
 
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
-const starterCars = ["abarth 124 spider (2017).json", "range rover classic 5-door (1984).json", "honda prelude type sh (1997).json", "chevrolet impala ss 427 (1967).json", "volkswagen beetle 2.5 (2012).json"];
+const garage = [
+	{
+		carFile: "abarth 124 spider (2017).json",
+		"000": 1,
+		"333": 0,
+		"666": 0,
+		"996": 0,
+		"969": 0,
+		"699": 0
+	},
+	{
+		carFile:"range rover classic 5-door (1984).json",
+		"000": 1,
+		"333": 0,
+		"666": 0,
+		"996": 0,
+		"969": 0,
+		"699": 0
+	},
+	{
+		carFile: "honda prelude type sh (1997).json",
+		"000": 1,
+		"333": 0,
+		"666": 0,
+		"996": 0,
+				"969": 0,
+		"699": 0
+	},
+	{
+		carFile: "chevrolet impala ss 427 (1967).json",
+		"000": 1,
+		"333": 0,
+		"666": 0,
+		"996": 0,
+		"969": 0,
+		"699": 0
+	},
+	{
+	carFile: "volkswagen beetle 2.5 (2012).json",
+		"000": 1,
+		"333": 0,
+		"666": 0,
+		"996": 0,
+		"969": 0,
+		"699": 0
+	}
+];
 const keepAlive = require('./server');
 
 for (const file of commandFiles) {
@@ -38,51 +84,36 @@ for (const file of commandFiles) {
 
 client.once("ready", async () => {
 	console.log("Ready!");
-
 	const guild = client.guilds.cache.get("711769157078876305"); //don't mind me lmao
 	guild.members.cache.forEach(async user => {
 		if (await client.db.has(`acc${user.id}`) === false) {
 			console.log("creating new player's database...");
-			await client.db.set(`acc${user.id}`, { money: 0, fuseTokens: 0, trophies: 0, garage: [], decks: [], campaignProgress: { chapter: 0, part: 1, race: 1 }, unclaimedRewards: { money: 0, fuseTokens: 0, trophies: 0, cars: [] } });
-			var i = 0;
-			while (i < 5) {
-				let carFile = starterCars[i];
-
-				await client.db.push(`acc${user.id}.garage`, { carFile: carFile, gearingUpgrade: 0, engineUpgrade: 0, chassisUpgrade: 0 });
-				i++;
-			}
-
+			await client.db.set(`acc${user.id}`, { money: 0, fuseTokens: 0, trophies: 0, garage: garage, decks: [], campaignProgress: { chapter: 0, part: 1, race: 1 }, unclaimedRewards: { money: 0, fuseTokens: 0, trophies: 0, cars: [], packs: [] } });
 			console.log(user.id);
 		}
 		//for changing stuff in the database
 		const garage = await client.db.get(`acc${user.id}.garage`);
 		var i = 0;
 		while (i < garage.length) {
-			if (garage[i].carFile === "lamborghini aventador svj lp770-4 (2018).json") {
-				garage[i].carFile = "lamborghini aventador lp770-4 svj (2018).json";
+			if (garage[i].carFile === "callaway scirocco turbo (1982).json") {
+				garage.splice(i, 1);
 			}
 			i++;
 		}
-		client.db.set(`acc${user.id}.garage`, garage);
-		await client.db.delete(`acc${user.id}.filter`);
-	})
-
+		await client.db.set(`acc${user.id}.garage`, garage);
+	});
 	const catalog = await client.db.get("dealershipCatalog");
 	console.log(catalog);
-	var i = 0;
-	while (i < catalog.length) {
-	 	if (catalog[i].carFile === "audi s3 (2000)") {
-	 		catalog[i].carFile = "audi s3 (2001)";
-	 	}
-	 	i++;
-	}
-	await client.db.set("dealershipCatalog", catalog);
+	//var i = 0;
+	//while (i < catalog.length) {
+	// 	if (catalog[i].carFile === "audi s3 (2000)") {
+	// 		catalog[i].carFile = "audi s3 (2001)";
+	// 	}
+	// 	i++;
+	//}
+	//await client.db.set("dealershipCatalog", catalog);
 
 	client.user.setActivity("over everyone's garages", { type: "WATCHING" });
-});
-
-client.on('rateLimit', (info) => {
-	console.log(`Rate limit hit ${info.timeDifference ? info.timeDifference : info.timeout ? info.timeout: 'Unknown timeout '}`);
 });
 
 if (backupMode) {
@@ -185,21 +216,13 @@ client.on("message", async message => {
 client.on("guildMemberAdd", async member => {
 	if (await client.db.has(`acc${member.id}`) === false && member.guild.id === "711769157078876305") {
 		console.log("creating new player's database...");
-		await client.db.set(`acc${member.id}`, { money: 0, fuseTokens: 0, trophies: 0, garage: [], decks: [], campaignProgress: { chapter: 0, part: 1, race: 1 }, unclaimedRewards: { money: 0, fuseTokens: 0, trophies: 0, cars: [] } });
-		var i = 0;
-		while (i < 5) {
-			var carFile = starterCars[i];
-
-			await client.db.push(`acc${member.id}.garage`, { carFile: carFile, gearingUpgrade: 0, engineUpgrade: 0, chassisUpgrade: 0 });
-			i++;
-		}
-
+		await client.db.set(`acc${member.id}`, { money: 0, fuseTokens: 0, trophies: 0, garage: garage, decks: [], campaignProgress: { chapter: 0, part: 1, race: 1 }, unclaimedRewards: { money: 0, fuseTokens: 0, trophies: 0, cars: [], packs: [] } });
 		console.log(member.id);
 	}
 });
 
 client.on("messageUpdate", async (oldMessage, newMessage) => {
-	if (!newMessage.content.startsWith(prefix) || newMessage.author.bot || newMessage.channel.type !== 'text') return;
+	if (!newMessage.content.startsWith(prefix) || newMessage.author.bot) return;
 
 	const args = newMessage.content.slice(prefix.length).split(/ +/);
 	const commandName = args.shift().toLowerCase();

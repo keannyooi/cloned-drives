@@ -11,6 +11,7 @@ const Discord = require("discord.js-light");
 
 module.exports = {
     name: "garage",
+	aliases: ["g"],
     usage: "(all optional) <username goes here> | <page number> | -s <sorting criteria>",
     args: 0,
 	isExternal: true,
@@ -23,8 +24,8 @@ module.exports = {
         const filter = (reaction, user) => {
             return (reaction.emoji.name === "⬅️" || reaction.emoji.name === "➡️") && user.id === message.author.id;
         };
-        var garageList = "", valueList = "";
-        var page, userName;
+        var garageList = "", amountList = "", valueList = "";
+        var page, userName, displayName;
         let user = message.author;
         let member = message.member;
         var sortBy = "rq";
@@ -32,10 +33,26 @@ module.exports = {
 
         if (!args.length || args[0] === "-s") {
             page = 1;
+			if (message.channel.type === "text") {
+				displayName = member.displayName;
+			}
+			else {
+				displayName = user.username;
+			}
         }
         else {
             if (isNaN(args[0])) {
                 userName = args[0].toLowerCase();
+
+				if (message.channel.type !== "text") {
+					const errorMessage = new Discord.MessageEmbed()
+                        .setColor("#fc0303")
+                        .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                        .setTitle("Error, this feature cannot be executed on DMs.")
+                        .setDescription("Due to Discord DM limitations, this feature cannot be executed here. Sorry for your inconvenience.")
+                        .setTimestamp();
+                    return message.channel.send(errorMessage);
+				}
 
                 if (!args[1] || args[1] === "-s") {
                     page = 1;
@@ -74,6 +91,12 @@ module.exports = {
             else {
                 page = parseInt(args[0]);
             }
+			if (message.channel.type === "text") {
+				displayName = member.displayName;
+			}
+			else {
+				displayName = user.username;
+			}
         }
 
         var garage = await db.get(`acc${user.id}.garage`);
@@ -111,7 +134,18 @@ module.exports = {
                     case "boolean":
                         garage = garage.filter(function (car) {
                             let currentCar = require(`./cars/${car.carFile}`);
-                            return currentCar[key] === value;
+							switch (key) {
+								case "isPrize":
+									return currentCar[key] === value;
+								case "isStock": 
+									return (car["000"] > 0) === value;
+								case "isUpgraded":
+									return (car["333"] + car["666"] + car["996"] + car["969"] + car["699"] > 0) === value;
+								case "isMaxed":
+									return (car["996"] + car["969"] + car["699"] > 0) === value;
+								default:
+									break;
+							}
                         });
                         break;
                     default:
@@ -156,8 +190,8 @@ module.exports = {
         garage.sort(function (a, b) {
             const carA = require(`./cars/${a.carFile}`);
             const carB = require(`./cars/${b.carFile}`);
-            var criteriaA = carA[sortBy];
-            var criteriaB = carB[sortBy];
+            let criteriaA = carA[sortBy];
+            let criteriaB = carB[sortBy];
 
             if (a.gearingUpgrade > 0) {
                 switch (sortBy) {
@@ -244,82 +278,90 @@ module.exports = {
         let infoScreen = new Discord.MessageEmbed()
             .setColor("#34aeeb")
             .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-            .setTitle(`${member.displayName}'s Garage`)
+            .setTitle(`${displayName}'s Garage`)
             .setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
             .setDescription(`Current Sorting Criteria: \`${sortBy}\``)
             .addField("Car", garageList, true)
-            .setFooter(`Page ${page} of ${totalPages} - React with ⬅️ or ➡️ to navigate through pages.`)
+			.addField("Amount", amountList, true)
             .setTimestamp();
         if (sortBy !== "rq") {
             infoScreen.addField("Value", valueList, true);
         }
+		if (message.channel.type === "text") {
+			infoScreen.setFooter(`Page ${page} of ${totalPages} - React with ⬅️ or ➡️ to navigate through pages.`);
+		}
+		else {
+			infoScreen.setFooter(`Page ${page} of ${totalPages} - Arrow navigation is disabled in DMs, please use cd-garage <user or blank if it's you> <page number> to view a different page.`);
+		}
 
         message.channel.send(infoScreen).then(garageMessage => {
-            console.log(reactionIndex);
-            switch (reactionIndex) {
-                case 0:
-                    break;
-                case 1:
-                    garageMessage.react("➡️");
-                    break;
-                case 2:
-                    garageMessage.react("⬅️");
-                    break;
-                case 3:
-                    garageMessage.react("⬅️");
-                    garageMessage.react("➡️");
-                    break;
-                default:
-                    break;
-            }
+            if (message.channel.type === "text") {
+				switch (reactionIndex) {
+        	        case 0:
+    	                break;
+ 	               case 1:
+                    	garageMessage.react("➡️");
+                	    break;
+            	    case 2:
+        	            garageMessage.react("⬅️");
+    	                break;
+	                case 3:
+                    	garageMessage.react("⬅️");
+                	    garageMessage.react("➡️");
+            	        break;
+        	        default:
+    	                break;
+	            }
 
-            const collector = garageMessage.createReactionCollector(filter, { time: 60000 });
-            collector.on("collect", reaction => {
-                if (reaction.emoji.name === "⬅️") {
-                    page -= 1;
-                }
-                else if (reaction.emoji.name === "➡️") {
-                    page += 1;
-                }
-                garageDisplay(page);
-                garageMessage.reactions.removeAll();
+            	const collector = garageMessage.createReactionCollector(filter, { time: 60000 });
+            	collector.on("collect", reaction => {
+                	if (reaction.emoji.name === "⬅️") {
+        	            page -= 1;
+    	            }
+	                else if (reaction.emoji.name === "➡️") {
+                	    page += 1;
+            	    }
+        	        garageDisplay(page);
+    	            garageMessage.reactions.removeAll();
 
-                let infoScreen = new Discord.MessageEmbed()
-                    .setColor("#34aeeb")
-                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                    .setTitle(`${member.displayName}'s Garage`)
-                    .setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
-                    .setDescription(`Current Sorting Criteria: \`${sortBy}\``)
-                    .addField("Car", garageList, true)
-                    .setFooter(`Page ${page} of ${totalPages} - React with ⬅️ or ➡️ to navigate through pages.`)
-                    .setTimestamp();
-                if (sortBy !== "rq") {
-                    infoScreen.addField("Value", valueList, true);
-                }
-                garageMessage.edit(infoScreen);
+	                let infoScreen = new Discord.MessageEmbed()
+                    	.setColor("#34aeeb")
+                	    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+            	        .setTitle(`${displayName}'s Garage`)
+        	            .setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
+    	                .setDescription(`Current Sorting Criteria: \`${sortBy}\``)
+	                    .addField("Car", garageList, true)
+						.addField("Amount", amountList, true)
+                    	.setFooter(`Page ${page} of ${totalPages} - React with ⬅️ or ➡️ to navigate through pages.`)
+                	    .setTimestamp();
+            	    if (sortBy !== "rq") {
+        	            infoScreen.addField("Value", valueList, true);
+    	            }
+	                garageMessage.edit(infoScreen);
 
-                switch (reactionIndex) {
-                    case 0:
-                        break;
-                    case 1:
-                        garageMessage.react("➡️");
-                        break;
-                    case 2:
-                        garageMessage.react("⬅️");
-                        break;
-                    case 3:
-                        garageMessage.react("⬅️");
-                        garageMessage.react("➡️");
-                        break;
-                    default:
-                        break;
-                }
-            });
+            	    switch (reactionIndex) {
+        	            case 0:
+    	                    break;
+	                    case 1:
+                    	    garageMessage.react("➡️");
+                	        break;
+            	        case 2:
+        	                garageMessage.react("⬅️");
+    	                    break;
+	                    case 3:
+                        	garageMessage.react("⬅️");
+                        	garageMessage.react("➡️");
+                        	break;
+                    	default:
+                    	    break;
+                	}
+            	});
 
-            collector.on("end", () => {
-                console.log("end of collection");
-                garageMessage.reactions.removeAll();
-            });
+            	collector.on("end", () => {
+                	console.log("end of collection");
+                	garageMessage.reactions.removeAll();
+            	});
+			}
         });
 
         function rarityCheck(currentCar) {
@@ -369,7 +411,7 @@ module.exports = {
                 endsWith = startsWith + pageLimit;
                 reactionIndex = 3;
             }
-            garageList = valueList = "";
+            garageList = amountList = valueList = "";
 
             for (i = startsWith; i < endsWith; i++) {
                 let currentCar = require(`./cars/${garage[i].carFile}`);
@@ -379,23 +421,15 @@ module.exports = {
 				}
                 const rarity = rarityCheck(currentCar);
 
-                garageList += `(${rarity} ${currentCar["rq"]}) ` + make + " " + currentCar["model"] + " (" + currentCar["modelYear"] + ") [" + garage[i].gearingUpgrade + garage[i].engineUpgrade + garage[i].chassisUpgrade + "]";
+                garageList += `(${rarity} ${currentCar["rq"]}) ${make} ${currentCar["model"]} (${currentCar["modelYear"]})`;
+				for (const [key, value] of Object.entries(garage[i])) {
+					if (!isNaN(value) && value > 0) {
+						amountList += `${key} x${value}, `;
+					}
+				}
                 if (sortBy !== "rq") {
                     if (garage[i].gearingUpgrade > 0) {
-                        switch (sortBy) {
-                            case "topSpeed":
-                                valueList += `\`${currentCar[`${garage[i].gearingUpgrade}${garage[i].engineUpgrade}${garage[i].chassisUpgrade}TopSpeed`]}\`\n`;
-                                break;
-                            case "0to60":
-                                valueList += `\`${currentCar[`${garage[i].gearingUpgrade}${garage[i].engineUpgrade}${garage[i].chassisUpgrade}0to60`]}\`\n`;
-                                break;
-                            case "handling":
-                                valueList += `\`${currentCar[`${garage[i].gearingUpgrade}${garage[i].engineUpgrade}${garage[i].chassisUpgrade}Handling`]}\`\n`;
-                                break;
-                            default:
-                                valueList += `\`${currentCar[sortBy]}\`\n`
-                                break;
-                        }
+						valueList += `\`${currentCar[sortBy]}\`\n`
                     }
                     else {
                         valueList += `\`${currentCar[sortBy]}\`\n`
@@ -405,6 +439,8 @@ module.exports = {
                     garageList += ` ${trophyEmoji}`;
                 }
                 garageList += "\n";
+				amountList = amountList.slice(0, -2);
+				amountList += "\n";
             }
         }
     }

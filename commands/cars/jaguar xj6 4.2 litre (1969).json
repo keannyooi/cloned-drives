@@ -1,0 +1,46 @@
+{
+    "rq": 21,
+    "make": "Jaguar",
+    "model": "XJ6 4.2 Litre",
+    "modelYear": 1969,
+    "country": "GB",
+    "topSpeed": 120,
+    "0to60": 10.2,
+    "handling": 66,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1780,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "front",
+    "fuelType": "Petrol",
+    "mra": 76.47,
+    "ola": 50.75,
+    "description": "Card by Connor.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/802253801628500028/E.JagXJ642Litre.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/802253408097533962/E.JagXJ642Litre.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/802253440071237632/E.JagXJ642Litre-1star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/802253471134908416/E.JagXJ642Litre-2star.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/802253563266072586/E.JagXJ642Litre-969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 123,
+    "3330to60": 9.5,
+    "333Handling": 68,
+
+    "666TopSpeed": 126,
+    "6660to60": 8.8,
+    "666Handling": 71,
+
+    "969TopSpeed": 128,
+    "9690to60": 8.1,
+    "969Handling": 74
+}

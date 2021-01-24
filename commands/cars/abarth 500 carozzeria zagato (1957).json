@@ -1,0 +1,54 @@
+{
+    "rq": 10,
+    "make": "Abarth",
+    "model": "500 Carozzeria Zagato",
+    "modelYear": 1957,
+    "country": "IT",
+    "topSpeed": 71,
+    "0to60": 40.4,
+    "handling": 57,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 465,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 0.00,
+    "ola": 37.13,
+    "description": "Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/799353073864278086/abarth500zagato.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/799353167375499314/500z.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/799353178760019978/500z333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/799353191337820181/500z666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/799353254495387688/500z996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/799353233952735272/500z969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/799353211638906900/500z699.png",
+
+    "333TopSpeed": 73,
+    "3330to60": 39.3,
+    "333Handling": 59,
+
+    "666TopSpeed": 75,
+    "6660to60": 38.2,
+    "666Handling": 61,
+
+    "996TopSpeed": 78,
+    "9960to60": 36.7,
+    "996Handling": 62,
+
+    "969TopSpeed": 77,
+    "9690to60": 37.3,
+    "969Handling": 63,
+
+    "699TopSpeed": 76,
+    "6990to60": 37.2,
+    "699Handling": 63
+}

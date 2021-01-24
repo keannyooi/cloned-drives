@@ -1,0 +1,54 @@
+{
+    "rq": 84,
+    "make": "Maserati",
+    "model": "Levante GTS",
+    "modelYear": 2018,
+    "country": "IT",
+    "topSpeed": 181,
+    "0to60": 3.8,
+    "handling": 76,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 2342,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 73.08,
+    "ola": 67.33,
+    "description": "Card by DodgeDemon.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/800140083553763358/2018_Maserati_Levante_GTS.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/800141339525251072/levantegts.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/800141354679664721/levantegts333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/800141373939384400/levantegts666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/800141433536380938/levantegts996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/800141413576474634/levantegts969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/800141393640554523/levantegts699.png",
+
+    "333TopSpeed": 184,
+    "3330to60": 3.6,
+    "333Handling": 78,
+
+    "666TopSpeed": 187,
+    "6660to60": 3.4,
+    "666Handling": 82,
+
+    "996TopSpeed": 191,
+    "9960to60": 3.2,
+    "996Handling": 83,
+
+    "969TopSpeed": 190,
+    "9690to60": 3.3,
+    "969Handling": 84,
+
+    "699TopSpeed": 189,
+    "6990to60": 3.3,
+    "699Handling": 84
+}

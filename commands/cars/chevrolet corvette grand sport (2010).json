@@ -1,0 +1,61 @@
+﻿{
+    "rq": 71,
+    "make": "Chevrolet",
+    "model": "Corvette Grand Sport",
+    "modelYear": 2010,
+    "country": "US",
+    "topSpeed": 188,
+    "0to60": 4.2,
+    "handling": 88,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1507,
+    "gc": "Low",
+    "seatCount":2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 79.25,
+    "ola": 85.71,
+    "description": "Red for sport. Are you red-y for her?. Card by Havvy ",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/799738838469574666/ChevroletCorvetteGS.png?width=1154&height=718",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/799738677160574986/000GS.png?width=1154&height=720",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/799738688388726804/111GS.png?width=1154&height=718",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/799738697297297438/222GS.png?width=1154&height=719",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/799738745238716416/332GS.png?width=1154&height=720",
+    "racehud969": "",
+    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/799738702888042516/233GS.png?width=1154&height=720",
+
+
+    "333TopSpeed": 191,
+    "3330to60": 4.0,
+    "333Handling": 91,
+
+
+    "666TopSpeed": 194,
+    "6660to60": 3.7, 
+    "666Handling": 94,
+
+
+    "996TopSpeed": 197,
+    "9960to60": 3.4,
+    "996Handling": 95,
+
+
+    "969TopSpeed": 0,
+    "9690to60": 0,
+    "969Handling": 0,
+
+
+    "699TopSpeed": 195,
+    "6990to60": 3.5,
+    "699Handling": 98
+}

@@ -11,10 +11,10 @@ const Discord = require("discord.js-light");
 
 module.exports = {
     name: "addtodeck",
-    usage: "<deck name goes here> <index> <car name goes here>",
+    usage: "<deck name goes here> | <index> | <car name goes here>",
     args: 3,
 	isExternal: true,
-    adminOnly: false,
+    adminOnly: true,
     description: 'Adds (or replaces) a car to a specified slot in a specifed deck. (NOTE: Deck names cannot contain spaces, use underscores "_" instead)',
     async execute(message, args) {
         if (!args[1] || !args[2]) {
@@ -31,7 +31,7 @@ module.exports = {
         const playerData = await db.get(`acc${message.author.id}`);
         const decks = playerData.decks;
         const deckName = args[0].toLowerCase();
-        const index = args[1];
+        const index = Math.ceil(parseInt(args[1]));
         if (isNaN(index) || index > 5 || index < 1) {
             const errorMessage = new Discord.MessageEmbed()
                 .setColor("#fc0303")

@@ -1,0 +1,61 @@
+﻿{
+    "rq": 28,
+    "make": "Fiat",
+    "model": "500L Trekking",
+    "modelYear": 2013,
+    "country": "IT",
+    "topSpeed": 127,
+    "0to60": 8.0,
+    "handling": 68,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1245,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 50.32,
+    "ola": 70.73,
+    "description": "Its headlights look like eggs to me. Card by Andu",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/794359134110875688/500LTrekking160.png?width=1154&height=719",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/794359330824519680/500LTrekkSt.png",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/794359340692930580/500LTrekk1.png",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/794359350758998016/500LTrekk2.png",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/794359364659707955/500LTrekk332.png",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/794359385756270662/500LTrekk323.png",
+    "racehud699": "",
+
+
+    "333TopSpeed": 130,
+    "3330to60": 7.5,
+    "333Handling": 70,
+
+
+    "666TopSpeed": 134,
+    "6660to60": 7.0,
+    "666Handling": 73,
+
+
+    "996TopSpeed": 140,
+    "9960to60": 6.2,
+    "996Handling": 73,
+
+
+    "969TopSpeed": 138,
+    "9690to60": 6.4,
+    "969Handling": 75,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

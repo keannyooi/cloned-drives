@@ -1,0 +1,61 @@
+﻿{
+    "rq": 67,
+    "make": "Mercedes-Benz",
+    "model": "CLS 450 4MATIC",
+    "modelYear": 2018,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 4.7,
+    "handling": 84,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1998,
+    "gc": "Low",
+    "seatCount":4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 69.12,
+    "ola": 76.60,
+    "description": "Sleek sedan-coupe. Card and Photo by Johnny",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/802557415085047848/Mercedes-Benz-CLS-450-4MATIC.png?width=1154&height=718",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/802557246021042216/Mercedes-Benz-CLS-450-4MATIC.png",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/802557251453190215/Mercedes-Benz-CLS-450-4MATIC-1-star.png",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/802557279848497182/Mercedes-Benz-CLS-450-4MATIC-332.png",
+    "racehud996": "",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/802557273091342366/Mercedes-Benz-CLS-450-4MATIC-323.png",
+    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/802557266661474304/Mercedes-Benz-CLS-450-4MATIC-233.png",
+
+
+    "333TopSpeed": 158,
+    "3330to60": 4.4,
+    "333Handling": 87,
+
+
+    "666TopSpeed": 161,
+    "6660to60": 4.2, 
+    "666Handling": 90,
+
+
+    "996TopSpeed": 165,
+    "9960to60": 4.0,
+    "996Handling": 91,
+
+
+    "969TopSpeed": 164,
+    "9690to60": 4.1,
+    "969Handling": 93,
+
+
+    "699TopSpeed": 163,
+    "6990to60": 4.1,
+    "699Handling": 93
+}

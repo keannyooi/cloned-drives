@@ -1,0 +1,47 @@
+{
+    "rq": 11,
+    "make": "MG",
+    "model": "TA 'Airline' Coupe",
+    "modelYear": 1936,
+    "country": "GB",
+    "topSpeed": 79,
+    "0to60": 23.1,
+    "handling": 59,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": true,
+
+    "weight": 621,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 0.00,
+    "ola": 52.55,
+    "description": "Thought to be only two ever made, body made by the company behind the blackcab. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/794658508955320391/MG_TAairlineCoupe.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/794658841178013706/airline.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/794658852569612338/airline333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/794658865283072020/airline666.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/794658890784309349/airline969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 82,
+    "3330to60": 22.0,
+    "333Handling": 61,
+
+    "666TopSpeed": 85,
+    "6660to60": 21.0,
+    "666Handling": 64,
+
+    "969TopSpeed": 88,
+    "9690to60": 20.1,
+    "969Handling": 66
+
+}

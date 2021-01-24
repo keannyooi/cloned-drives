@@ -1,0 +1,61 @@
+﻿{
+    "rq": 46,
+    "make": "Volkswagen",
+    "model": "Golf R32",
+    "modelYear": 2003,
+    "country": "DE",
+    "topSpeed": 153,
+    "0to60": 6.2,
+    "handling": 78,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch"],
+    "isPrize": false,
+
+
+    "weight": 1541,
+    "gc": "Low",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 69.11,
+    "ola": 58.06,
+    "description": "First ever car with a dual-clutch gearbox with the unique VR6 engine. Card by Andu",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/802609022926716968/GolfR322.png?width=1154&height=719",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/802609456235020318/R32.png",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/802609474917236786/R321.png",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/802609490276909106/R322.png",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/802609517946077244/R32332.png",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/802609509280251924/R32323.png",
+    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/802609498601553930/R32233.png",
+
+
+    "333TopSpeed": 156,
+    "3330to60": 5.9,
+    "333Handling": 81,
+
+
+    "666TopSpeed": 159,
+    "6660to60": 5.7, 
+    "666Handling": 84,
+
+
+    "996TopSpeed": 163,
+    "9960to60": 5.4,
+    "996Handling": 85,
+
+
+    "969TopSpeed": 162,
+    "9690to60": 5.5,
+    "969Handling": 86,
+
+
+    "699TopSpeed": 160,
+    "6990to60": 5.5,
+    "699Handling": 87
+}

@@ -1,0 +1,61 @@
+﻿{
+    "rq": 51,
+    "make": "Honda",
+    "model": "CR-V Hybrid",
+    "modelYear": 2020,
+    "country": "JP",
+    "topSpeed": 103,
+    "0to60": 7.6,
+    "handling": 72,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1655,
+    "gc": "High",
+    "seatCount":5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 38.19,
+    "ola": 97.37,
+    "description": "Another SUVish hybrid offering for 2020. Card by AGE",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/798946409721495582/image0.jpg?width=1104&height=676",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/798933269961900102/image0.jpg?width=1080&height=676",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/798933296049946634/image0.jpg?width=1080&height=676",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/798933317658738698/image0.jpg?width=1080&height=676",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/798933377516306442/image0.jpg?width=1080&height=676",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/798933358402469909/image0.jpg?width=1080&height=676",
+    "racehud699": "",
+
+
+    "333TopSpeed": 107,
+    "3330to60": 7.2,
+    "333Handling": 74,
+
+
+    "666TopSpeed": 110,
+    "6660to60": 6.7, 
+    "666Handling": 77,
+
+
+    "996TopSpeed": 116,
+    "9960to60": 5.9,
+    "996Handling": 77,
+
+
+    "969TopSpeed": 114,
+    "9690to60": 6.2,
+    "969Handling":80,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

@@ -1,0 +1,46 @@
+{
+    "rq": 83,
+    "make": "Ford",
+    "model": "Mustang FR500GT",
+    "modelYear": 2007,
+    "country": "US",
+    "topSpeed": 172,
+    "0to60": 3.9,
+    "handling": 94,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport"],
+    "isPrize": false,
+
+    "weight": 1510,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 90.00,
+    "ola": 75.00,
+    "description": "A very fast pony. Card by Johnny.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/795785169885069322/Ford-Mustang-FR500-GT.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/795084434004770816/Ford-Mustang-FR500GT.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/795084443013873693/Ford-Mustang-FR500GT-1-star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/795084447752912916/Ford-Mustang-FR500GT-2-star.png",
+    "racehud996": "",
+    "racehud969": "",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/795084467172802580/Ford-Mustang-FR500GT-233.png",
+
+    "333TopSpeed": 175,
+    "3330to60": 3.6,
+    "333Handling": 97,
+
+    "666TopSpeed": 178,
+    "6660to60": 3.3,
+    "666Handling": 100,
+
+    "699TopSpeed": 179,
+    "6990to60": 3.1,
+    "699Handling": 104
+}

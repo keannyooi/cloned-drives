@@ -1,0 +1,61 @@
+﻿{
+    "rq": 29,
+    "make": "Hyundai",
+    "model": "Venue",
+    "modelYear": 2020,
+    "country": "KR",
+    "topSpeed": 115,
+    "0to60": 8.9,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1251,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 45.64,
+    "ola": 76.40,
+    "description": "Contender for most useless SUV. Card by Andu",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/795939315019546634/HyVenue.png?width=705&height=439",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/795948648755626015/VenueSt.png?width=705&height=441",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/795948698323517460/Venue1.png?width=705&height=441",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/795948703868518410/Venue2.png?width=705&height=441",
+    "racehud996": "",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/795948714287431700/Venue323.png?width=705&height=441",
+    "racehud699": "",
+
+
+    "333TopSpeed": 119,
+    "3330to60": 8.3,
+    "333Handling": 76,
+
+
+    "666TopSpeed": 123,
+    "6660to60": 7.7,
+    "666Handling": 79,
+
+
+    "996TopSpeed": 0,
+    "9960to60": 0,
+    "996Handling": 0,
+
+
+    "969TopSpeed": 127,
+    "9690to60": 7.1,
+    "969Handling": 81,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

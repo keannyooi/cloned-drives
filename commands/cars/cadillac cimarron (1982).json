@@ -1,0 +1,61 @@
+﻿{
+    "rq": 14,
+    "make": "Cadillac",
+    "model": "Cimarron",
+    "modelYear": 1982,
+    "country": "US",
+    "topSpeed": 92,
+    "0to60": 14.4,
+    "handling": 66,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1193,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 0.00,
+    "ola": 62.73,
+    "description": "When Cadillac tried to make a european luxury car. Card by Keanny",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/800393408756580392/cadillac_cimarron.png?width=1154&height=710",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/799875401920544848/cinammon.jpg",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/799875459000434688/cinammon_333.jpg",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/799875467439898624/cinammon_666.jpg",
+    "racehud996": "",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/799875480609751081/cinammon_969.jpg",
+    "racehud699": "",
+
+
+    "333TopSpeed": 95,
+    "3330to60": 13.2,
+    "333Handling": 68,
+
+
+    "666TopSpeed": 98,
+    "6660to60": 12.0, 
+    "666Handling": 71,
+
+
+    "996TopSpeed": 0,
+    "9960to60": 0,
+    "996Handling": 0,
+
+
+    "969TopSpeed": 100,
+    "9690to60": 10.8,
+    "969Handling": 73,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

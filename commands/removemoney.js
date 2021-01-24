@@ -31,7 +31,7 @@ module.exports = {
             }
         });
 
-        const amount = args[1];
+        const amount = Math.ceil(parseInt(args[1]));
         if (isNaN(amount)) {
             const errorMessage = new Discord.MessageEmbed()
                 .setColor("#fc0303")
@@ -71,7 +71,8 @@ module.exports = {
         }
 		const playerData = await db.get(`acc${user.id}`);
 
-		if (parseInt(amount) < playerData.money) {
+		if (parseInt(amount) <= playerData.money) {
+			console.log(playerData.money);
 			playerData.money -= parseInt(amount);
 			await db.set(`acc${user.id}`, playerData);
 

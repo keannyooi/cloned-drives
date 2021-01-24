@@ -1,0 +1,46 @@
+{
+    "rq": 29,
+    "make": "Mazda",
+    "model": "MX-5 M Edition",
+    "modelYear": 1995,
+    "country": "JP",
+    "topSpeed": 116,
+    "0to60": 8.8,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Street Racer"],
+    "isPrize": false,
+
+    "weight": 1040,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Roadster",
+    "tcs": true,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 39.29,
+    "ola": 78.57,
+    "description": "The M stands for Miata. Card by Johnny",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/793912529650843708/Mazda-MX-5-M-Edition.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/793912340261240893/Mazda-MX-5-M-Edition.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/793912350863785984/Mazda-MX-5-M-Edition-1-star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/793912359310589983/Mazda-MX-5-M-Edition-2-star.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/793912366320451614/Mazda-MX-5-M-Edition-323.png",
+    "racehud699": "",
+
+    "333TopSpeed": 119,
+    "3330to60": 8.5,
+    "333Handling": 78,
+
+    "666TopSpeed": 122,
+    "6660to60": 8.2,
+    "666Handling": 81,
+
+    "969TopSpeed": 125,
+    "9690to60": 7.9,
+    "969Handling": 84
+}

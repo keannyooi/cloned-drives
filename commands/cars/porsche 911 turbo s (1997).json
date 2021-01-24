@@ -1,0 +1,50 @@
+{
+    "rq": 80,
+    "make": "Porsche",
+    "model": "911 Turbo S",
+    "modelYear": 1997,
+    "country": "DE",
+    "topSpeed": 184,
+    "0to60": 3.9,
+    "handling": 86,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Year of the Ox"],
+    "isPrize": false,
+
+    "weight": 1500,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 67.92,
+    "ola": 72.22,
+    "description": "a porsche. Card by Spence.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/798580512519356477/image0.jpg",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/798580576511983616/image0.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/798580599999692860/image0.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/798580615305494598/image0.jpg",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/798580637404627034/image0.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/799455885260881920/image0.jpg",
+
+    "333TopSpeed": 187,
+    "3330to60": 3.7,
+    "333Handling": 89,
+
+    "666TopSpeed": 190,
+    "6660to60": 3.5,
+    "666Handling": 92,
+
+    "969TopSpeed": 193,
+    "9690to60": 3.3,
+    "969Handling": 95,
+
+    "699TopSpeed": 191,
+    "6990to60": 3.3,
+    "699Handling": 95
+}

@@ -1,0 +1,61 @@
+{
+    "rq": 23,
+    "make": "Volkswagen",
+    "model": "Jetta TDI Cup Edition",
+    "modelYear": 2010,
+    "country": "DE",
+    "topSpeed": 130,
+    "0to60": 9.3,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1460,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 63.27,
+    "ola": 73.12,
+    "description": "Let’s be honest, who wouldn’t want a sporty version of a cheating scandal diesel? Card by Andu",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/794359237454200882/JettaTDICupEdition.png?width=1154&height=719",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/794359605643837500/JettaTDICupSt.png",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/794359630293762100/JettaTDICup1.png",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/794359640242257964/JettaTDICup2.png",
+    "racehud996": "",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/794359655119323197/JettaTDICup323.png",
+    "racehud699": "",
+
+
+    "333TopSpeed": 134,
+    "3330to60": 8.6,
+    "333Handling": 76,
+
+
+    "666TopSpeed": 138,
+    "6660to60": 8.0,
+    "666Handling": 79,
+
+
+    "996TopSpeed": 0,
+    "9960to60": 0,
+    "996Handling": 0,
+
+
+    "969TopSpeed": 142,
+    "9690to60": 7.4,
+    "969Handling": 81,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

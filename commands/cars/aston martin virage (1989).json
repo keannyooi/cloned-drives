@@ -1,0 +1,46 @@
+{
+    "rq": 31,
+    "make": "Aston Martin",
+    "model": "Virage",
+    "modelYear": 1989,
+    "country": "GB",
+    "topSpeed": 145,
+    "0to60": 7.4,
+    "handling": 72,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1790,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 67.89,
+    "ola": 90.32,
+    "description": "Technologically outdated, yet still attracts rich people for its statement. Card by keanny",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/794481769684402207/aston_martin_virage.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/794474950806994944/aston_martin_virage.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/794474976031014942/aston_martin_virage_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/794474984763686922/aston_martin_virage_666.jpg",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/794474995581190144/aston_martin_virage_969.jpg",
+    "racehud699": "",
+
+    "333TopSpeed": 149,
+    "3330to60": 6.9,
+    "333Handling": 75,
+
+    "666TopSpeed": 153,
+    "6660to60": 6.4,
+    "666Handling": 78,
+
+    "969TopSpeed": 157,
+    "9690to60": 6.0,
+    "969Handling": 80
+}

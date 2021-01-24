@@ -1,0 +1,54 @@
+{
+    "rq": 85,
+    "make": "Maserati",
+    "model": "Levante Trofeo",
+    "modelYear": 2018,
+    "country": "IT",
+    "topSpeed": 189,
+    "0to60": 3.6,
+    "handling": 82,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 2147,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 70.59,
+    "ola": 60.00,
+    "description": "Card by DodgeDemon.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/799507200942800926/2018_Maserati_Levante_Trofeo.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/799507282869354536/trofeo.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/799507298674409502/trofeo333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/799507312241934366/trofeo666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/799507408832692254/trofeo996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/799507360153337886/trofeo969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/799507336926461972/trofeo699.png",
+
+    "333TopSpeed": 192,
+    "3330to60": 3.4,
+    "333Handling": 85,
+
+    "666TopSpeed": 195,
+    "6660to60": 3.2,
+    "666Handling": 88,
+
+    "996TopSpeed": 199,
+    "9960to60": 3.0,
+    "996Handling": 89,
+
+    "969TopSpeed": 198,
+    "9690to60": 3.1,
+    "969Handling": 91,
+
+    "699TopSpeed": 197,
+    "6990to60": 3.1,
+    "699Handling": 91
+}

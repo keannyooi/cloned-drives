@@ -1,0 +1,46 @@
+{
+    "rq": 71,
+    "make": "Lincoln",
+    "model": "Continental 3.0T",
+    "modelYear": 2017,
+    "country": "US",
+    "topSpeed": 145,
+    "0to60": 5.4,
+    "handling": 76,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 2103,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 77.14,
+    "ola": 88.89,
+    "description": "Silky American luxury. With a British name. Card by Sagaris",
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/797602122999922688/Lincoln_Continental_2017_3.png?width=1154&height=722",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/797602397618044998/image0.png?width=1154&height=720",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/797602425858424862/image0.png?width=1154&height=720",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/797602481566646292/image0.png?width=1154&height=720",
+    "racehud996": "",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/797602516409384960/image0.png?width=1154&height=720",
+    "racehud699": "",
+
+    "333TopSpeed": 149,
+    "3330to60": 5.1,
+    "333Handling": 79,
+
+    "666TopSpeed": 153,
+    "6660to60": 4.7,
+    "666Handling": 81,
+
+    "969TopSpeed": 156,
+    "9690to60": 4.4,
+    "969Handling": 84
+}

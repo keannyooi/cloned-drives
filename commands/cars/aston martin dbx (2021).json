@@ -1,0 +1,50 @@
+{
+    "rq": 87,
+    "make": "Aston Martin",
+    "model": "DBX",
+    "modelYear": 2021,
+    "country": "GB",
+    "topSpeed": 181,
+    "0to60": 4.3,
+    "handling": 84,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Servers Choice", "Year of the Ox"],
+    "isPrize": false,
+
+    "weight": 2245,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 81.13,
+    "ola": 74.42,
+    "description": "A less-than-exciting SUV made by the people behind the iconic Bond cars, except not really.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/798420215137828944/Aston_Martin_DBX_2021.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/798420329273884692/Aston_Martin_DBX_2021_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/798420339302465536/Aston_Martin_DBX_2021_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/798420346372882436/Aston_Martin_DBX_2021_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/799451315314229248/Aston_Martin_DBX_2021_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/798420412857450546/Aston_Martin_DBX_2021_969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 184,
+    "3330to60": 4.1,
+    "333Handling": 87,
+
+    "666TopSpeed": 188,
+    "6660to60": 3.8,
+    "666Handling": 90,
+
+    "969TopSpeed": 191,
+    "9690to60": 3.6,
+    "969Handling": 93,
+
+    "996TopSpeed": 192,
+    "9960to60": 3.5,
+    "996Handling": 91
+}

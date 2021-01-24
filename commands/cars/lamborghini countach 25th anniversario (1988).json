@@ -1,0 +1,54 @@
+{
+    "rq": 56,
+    "make": "Lamborghini",
+    "model": "Countach 25th Anniversario",
+    "modelYear": 1988,
+    "country": "IT",
+    "topSpeed": 183,
+    "0to60": 4.7,
+    "handling": 76,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Italian Icons", "Style Icon"],
+    "isPrize": false,
+
+    "weight": 1488,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 79.66,
+    "ola": 97.87,
+    "description": "The Countach to commemorate 25 years of the raging bull. Card by DodgeDemon",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/794489551316844574/1988_Lamborghini_Countach_25th.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/794486578214338571/25th_anniversario.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/794486849909161994/25th_anniversario_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/794486860000657428/25th_anniversario_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/794486900077494302/25th_anniversario_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/794486887972470804/25th_anniversario_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/794486872017338378/25th_anniversario_699.jpg",
+
+    "333TopSpeed": 186,
+    "3330to60": 4.4,
+    "333Handling": 79,
+
+    "666TopSpeed": 189,
+    "6660to60": 4.1,
+    "666Handling": 82,
+
+	"996TopSpeed": 194,
+    "9960to60": 3.8,
+    "996Handling": 82,
+
+    "969TopSpeed": 192,
+    "9690to60": 3.8,
+    "969Handling": 84,
+
+	"699TopSpeed": 190,
+    "6990to60": 3.9,
+    "699Handling": 84
+}

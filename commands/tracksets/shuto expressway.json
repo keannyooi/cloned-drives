@@ -1,0 +1,17 @@
+{
+	"trackName": "Shuto Expressway",
+	"weather": "Sunny",
+	"surface": "Asphalt",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://cdn.discordapp.com/attachments/716917404868935691/795162502497173544/unknown.png",
+	
+	"specsDistr": {
+		"topSpeed": 75,
+		"0to60": 40,
+		"handling": 30,
+		"weight": 0,
+		"mra": 85,
+		"ola": 0
+	}
+}

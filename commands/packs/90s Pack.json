@@ -1,0 +1,68 @@
+{
+    "packName": "90s Pack",
+    "description": "A pack of 5 1990s cars.",
+    "price": 60000,
+    "pack": "https://media.discordapp.net/attachments/716917404868935691/794486699702747186/1990s_Pack_2.png",
+    
+    "filter": {
+        "make": "None",
+        "modelYear": {
+            "start": 1990,
+            "end": 1999
+        },
+        "country": "None",
+        "tag": "None",
+        "driveType": "None",
+        "tyreType": "None",
+        "fuelType": "None",
+        "bodyStyle": "None"
+    },
+
+	"packSequence": [
+		{
+			"common": 70,
+			"uncommon": 30,
+			"rare": 0,
+			"superRare": 0,
+			"ultraRare": 0,
+			"epic": 0,
+			"legendary": 0
+		},
+		{
+			"common": 0,
+			"uncommon": 70,
+			"rare": 30,
+			"superRare": 0,
+			"ultraRare": 0,
+			"epic": 0,
+			"legendary": 0
+		},
+		{
+			"common": 0,
+			"uncommon": 70,
+			"rare": 30,
+			"superRare": 0,
+			"ultraRare": 0,
+			"epic": 0,
+			"legendary": 0
+		},
+		{
+			"common": 0,
+			"uncommon": 0,
+			"rare": 70,
+			"superRare": 30,
+			"ultraRare": 0,
+			"epic": 0,
+			"legendary": 0
+		},
+		{
+			"common": 0,
+			"uncommon": 0,
+			"rare": 0,
+			"superRare": 70,
+			"ultraRare": 20,
+			"epic": 8,
+			"legendary": 2
+		}
+	]
+}

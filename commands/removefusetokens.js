@@ -29,7 +29,7 @@ module.exports = {
                 member = message.guild.member(User);
             }
         });
-        const amount = args[1];
+        const amount = Math.ceil(parseInt(args[1]));
         if (isNaN(amount) || amount < 1) {
             const errorMessage = new Discord.MessageEmbed()
                 .setColor("#fc0303")
@@ -60,7 +60,7 @@ module.exports = {
         }
 
         const playerData = await db.get(`acc${user.id}`);
-        if (parseInt(amount) < playerData.fuseTokens) {
+        if (parseInt(amount) <= playerData.fuseTokens) {
             playerData.fuseTokens -= parseInt(amount);
             await db.set(`acc${user.id}`, playerData);
 

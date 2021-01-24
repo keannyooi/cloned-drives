@@ -12,8 +12,8 @@ const Discord = require("discord.js-light");
 module.exports = {
 	name: "upgrade",
 	aliases: ["tune", "u"],
-	usage: "<car name goes here> <upgrade pattern>",
-	args: 2,
+	usage: "<car name goes here> | <original upgrade> | <upgrade pattern>",
+	args: 3,
 	isExternal: true,
 	adminOnly: false,
 	description: "Upgrades a car in your garage.",
@@ -21,32 +21,37 @@ module.exports = {
 		const db = message.client.db;
 		const playerData = await db.get(`acc${message.author.id}`);
 		const garage = playerData.garage;
-		var upgrade = args[args.length - 1].split("");
-		if (args[args.length - 1].toLowerCase() === "stock") {
-			upgrade = [0, 0, 0];
-		}
 
 		const waitTime = 60000;
 		const filter = response => {
 			return response.author.id === message.author.id;
 		};
 
-		var carName = args.slice(0, args.length - 1);
-		carName = carName.map(i => i.toLowerCase());
+		let carName = args.slice(0, args.length - 2).map(i => i.toLowerCase());
+		let origUpgrade = args[args.length - 2], upgrade = args[args.length - 1];
+		if (parseInt(origUpgrade[0]) + parseInt(origUpgrade[1]) + parseInt(origUpgrade[2]) >= parseInt(upgrade[0]) + parseInt(upgrade[1]) + parseInt(upgrade[2])) {
+			let errorMessage = new Discord.MessageEmbed()
+				.setColor("#fc0303")
+				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+				.setTitle("Error, it looks like you tried tuning your car in the wrong order.")
+				.setDescription("Correct tuning order: `000` => `333` => `666` => `996`, `969` or `699`.")
+				.setTimestamp();
+			return message.channel.send(errorMessage);
+		}
 
 		const searchResults = garage.filter(function (garageCar) {
-			return carName.every(part => garageCar.carFile.includes(part));
+			return carName.every(part => garageCar.carFile.includes(part)) && garageCar[origUpgrade] > 0;
 		});
 
 		if (searchResults.length > 1) {
-			var carList = "";
+			let carList = "";
 			for (i = 1; i <= searchResults.length; i++) {
 				const car = require(`./cars/${searchResults[i - 1].carFile}`);
 				let make = car["make"];
 				if (typeof make === "object") {
 					make = car["make"][0];
 				}
-				carList += `${i} - ${make} ${car["model"]} (${car["modelYear"]}) [${searchResults[i - 1].gearingUpgrade}${searchResults[i - 1].engineUpgrade}${searchResults[i - 1].chassisUpgrade}]\n`;
+				carList += `${i} - ${make} ${car["model"]} (${car["modelYear"]})\n`;
 			}
 
 			if (carList.length > 2048) {
@@ -73,8 +78,8 @@ module.exports = {
 					errors: ['time']
 				})
 					.then(collected => {
+						collected.first().delete();
 						if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
-							collected.first().delete();
 							const errorMessage = new Discord.MessageEmbed()
 								.setColor("#fc0303")
 								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -84,8 +89,7 @@ module.exports = {
 							return currentMessage.edit(errorMessage);
 						}
 						else {
-							collected.first().delete();
-							upgradeCar(searchResults[parseInt(collected.first()) - 1], currentMessage);
+							upgradeCar(searchResults[parseInt(collected.first()) - 1], origUpgrade, upgrade, currentMessage);
 						}
 					})
 					.catch(() => {
@@ -99,19 +103,19 @@ module.exports = {
 			});
 		}
 		else if (searchResults.length > 0) {
-			upgradeCar(searchResults[0]);
+			upgradeCar(searchResults[0], origUpgrade, upgrade);
 		}
 		else {
 			const errorMessage = new Discord.MessageEmbed()
 				.setColor("#fc0303")
 				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-				.setTitle("Error, it looks like you don't have that car.")
-				.setDescription("Check if you got the order right: `cd-upgrade <car name goes here> <upgrade pattern>`")
+				.setTitle("Error, it looks like you don't have that car in the original tune requested.")
+				.setDescription("Check if you got the order right: `cd-upgrade <car name goes here> | <original upgrade> | <upgrade pattern>`")
 				.setTimestamp();
 			return message.channel.send(errorMessage);
 		}
 
-		async function upgradeCar(currentCar, currentMessage) {
+		async function upgradeCar(currentCar, origUpgrade, upgrade, currentMessage) {
 			const car = require(`./cars/${currentCar.carFile}`);
 			let make = car["make"];
 			if (typeof make === "object") {
@@ -120,13 +124,13 @@ module.exports = {
 			const currentName = `${make} ${car["model"]} (${car["modelYear"]})`;
 			const moneyEmoji = message.client.emojis.cache.get("726017235826770021");
 			const fuseEmoji = message.client.emojis.cache.get("726018658635218955");
-			const racehud = car[`racehud${upgrade[0]}${upgrade[1]}${upgrade[2]}`];
+			const racehud = car[`racehud${upgrade}`];
 			var moneyLimit = 0;
 			var fuseTokenLimit = 0;
 
-			if (!car[`${upgrade[0]}${upgrade[1]}${upgrade[2]}TopSpeed`]) {
+			if (!car[`${upgrade}TopSpeed`]) {
 				const maxedTunes = [996, 969, 699].filter(function (tune) {
-					return car[`${tune}TopSpeed`];
+					return car[`racehud${tune}`];
 				});
 
 				const errorScreen = new Discord.MessageEmbed()
@@ -143,62 +147,20 @@ module.exports = {
 				}
 			}
 
-			const upgradeIndex = parseInt(upgrade[0]) + parseInt(upgrade[1]) + parseInt(upgrade[2]);
-			const origUpgrade = currentCar.gearingUpgrade + currentCar.engineUpgrade + currentCar.chassisUpgrade;
-			if (upgradeIndex - origUpgrade <= 0) {
-				var isMaxed;
-				if (currentCar.gearingUpgrade + currentCar.engineUpgrade + currentCar.chassisUpgrade === 24) {
-					isMaxed = "Maxed";
-				}
-				else {
-					isMaxed = "Not Maxed";
-				}
-				const errorScreen = new Discord.MessageEmbed()
-					.setColor("#fc0303")
-					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-					.setTitle("Error, it looks like you attempted tuning your car in the wrong order.")
-					.setDescription("Correct order: `333` -> `666` -> `996`, `969` or `699`.")
-					.addField("Your car's current upgrade status", `${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade} (${isMaxed})`)
-					.setTimestamp();
-				if (currentMessage) {
-					return currentMessage.edit(errorScreen);
-				}
-				else {
-					return message.channel.send(errorScreen);
-				}
-			}
-
-			definePrice(car["rq"], upgradeIndex, origUpgrade);
+			definePrice(car["rq"], upgrade, origUpgrade);
 
 			if (playerData.money >= moneyLimit && playerData.fuseTokens >= fuseTokenLimit) {
 				playerData.money -= moneyLimit;
 				playerData.fuseTokens -= fuseTokenLimit;
 
-				currentCar.gearingUpgrade = parseInt(upgrade[0]);
-				currentCar.engineUpgrade = parseInt(upgrade[1]);
-				currentCar.chassisUpgrade = parseInt(upgrade[2]);
+				currentCar[upgrade]++;
+				currentCar[origUpgrade]--;
 
 				if (playerData.hand) {
 					if (playerData.hand.carFile === currentCar.carFile) {
-						playerData.hand.gearingUpgrade = currentCar.gearingUpgrade;
-						playerData.hand.engineUpgrade = currentCar.engineUpgrade;
-						playerData.hand.chassisUpgrade = currentCar.chassisUpgrade;
-					}
+                   		delete playerData.hand;
+                	}
 				}
-				var i = 0;
-				while (i < playerData.decks.length) {
-					const hasCar = playerData.decks[i].hand.find(function (car) {
-						return car.carFile === currentCar.carFile;
-					});
-					if (hasCar) {
-						const index = playerData.decks[i].hand.indexOf(hasCar);
-						playerData.decks[i].hand[index].gearingUpgrade = currentCar.gearingUpgrade;
-						playerData.decks[i].hand[index].engineUpgrade = currentCar.engineUpgrade;
-						playerData.decks[i].hand[index].chassisUpgrade = currentCar.chassisUpgrade;
-					}
-					i++;
-				}
-
 				await db.set(`acc${message.author.id}`, playerData);
 
 				const infoScreen = new Discord.MessageEmbed()
@@ -207,9 +169,9 @@ module.exports = {
 					.setTitle(`Successfully upgraded ${message.author.tag}'s ${currentName}!`)
 					.setDescription("Current upgrade status:")
 					.addFields(
-						{ name: "Gearing Upgrade", value: currentCar.gearingUpgrade, inline: true },
-						{ name: "Engine Upgrade", value: currentCar.engineUpgrade, inline: true },
-						{ name: "Chassis Upgrade", value: currentCar.chassisUpgrade, inline: true },
+						{ name: "Gearing Upgrade", value: `\`${origUpgrade[0]} => ${upgrade[0]}\``, inline: true },
+						{ name: "Engine Upgrade", value: `\`${origUpgrade[1]} => ${upgrade[1]}\``, inline: true },
+						{ name: "Chassis Upgrade", value: `\`${origUpgrade[2]} => ${upgrade[2]}\``, inline: true },
 						{ name: "Your Money Balance", value: `${moneyEmoji}${playerData.money}`, inline: true },
 						{ name: "Your Fuse Tokens", value: `${fuseEmoji}${playerData.fuseTokens}`, inline: true }
 					)
@@ -242,70 +204,69 @@ module.exports = {
 			}
 
 			function definePrice(rq, upgradeIndex, origUpgrade) {
-				console.log(upgradeIndex - origUpgrade);
-
+				let a = parseInt(upgradeIndex[0]) + parseInt(upgradeIndex[1]) + parseInt(upgradeIndex[2]);
+				let b = parseInt(origUpgrade[0]) + parseInt(origUpgrade[1]) + parseInt(origUpgrade[2]);
 				if (rq > 79) { //leggie
-					moneyLimit = 4500 * (upgradeIndex - origUpgrade) / 3;
-					if (upgradeIndex >= 18 && origUpgrade >= 9) {
-						fuseTokenLimit = 1200 * (upgradeIndex - origUpgrade) / 3;
+					moneyLimit = 4500 * (a - b);
+					if (a >= 18 && b >= 9) {
+						fuseTokenLimit = 1200 * (a - b) / 3;
 					}
 					else {
-						fuseTokenLimit = 1200 * (upgradeIndex - origUpgrade - 9) / 3;
+						fuseTokenLimit = 1200 * (a - b - 9) / 3;
 					}
 				}
 				else if (rq > 64 && rq <= 79) { //epic
-					moneyLimit = 3750 * (upgradeIndex - origUpgrade) / 3;
-					if (upgradeIndex >= 18 && origUpgrade >= 9) {
-						fuseTokenLimit = 700 * (upgradeIndex - origUpgrade) / 3;
+					moneyLimit = 3750 * (a - b);
+					if (a >= 18 && b >= 9) {
+						fuseTokenLimit = 700 * (a - b) / 3;
 					}
 					else {
-						fuseTokenLimit = 700 * (upgradeIndex - origUpgrade - 9) / 3;
+						fuseTokenLimit = 700 * (a - b - 9) / 3;
 					}
 				}
 				else if (rq > 49 && rq <= 64) { //ultra
-					moneyLimit = 3000 * (upgradeIndex - origUpgrade) / 3;
-					if (upgradeIndex >= 18 && origUpgrade >= 9) {
-						fuseTokenLimit = 275 * (upgradeIndex - origUpgrade) / 3;
+					moneyLimit = 3000 * (a - b);
+					if (a >= 18 && b >= 9) {
+						fuseTokenLimit = 275 * (a - b) / 3;
 					}
 					else {
-						fuseTokenLimit = 275 * (upgradeIndex - origUpgrade - 9) / 3;
+						fuseTokenLimit = 275 * (a - b - 9) / 3;
 					}
 				}
 				else if (rq > 39 && rq <= 49) { //super
-					moneyLimit = 2250 * (upgradeIndex - origUpgrade) / 3;
-					if (upgradeIndex >= 18 && origUpgrade >= 9) {
-						fuseTokenLimit = 100 * (upgradeIndex - origUpgrade) / 3;
+					moneyLimit = 2250 * (a - b);
+					if (a >= 18 && b >= 9) {
+						fuseTokenLimit = 100 * (a - b) / 3;
 					}
 					else {
-						fuseTokenLimit = 100 * (upgradeIndex - origUpgrade - 9) / 3;
+						fuseTokenLimit = 100 * (a - b - 9) / 3;
 					}
 				}
 				else if (rq > 29 && rq <= 39) { //rare
-					moneyLimit = 1500 * (upgradeIndex - origUpgrade) / 3;
-					if (upgradeIndex >= 18 && origUpgrade >= 9) {
-						fuseTokenLimit = 35 * (upgradeIndex - origUpgrade) / 3;
+					moneyLimit = 1500 * (a - b);
+					if (a >= 18 && b >= 9) {
+						fuseTokenLimit = 35 * (a - b) / 3;
 					}
 					else {
-						fuseTokenLimit = 35 * (upgradeIndex - origUpgrade - 9) / 3;
+						fuseTokenLimit = 35 * (a - b - 9) / 3;
 					}
 				}
 				else if (rq > 19 && rq <= 29) { //uncommon
-					moneyLimit = 750 * (upgradeIndex - origUpgrade) / 3;
+					moneyLimit = 750 * (a - b);
 					if (upgradeIndex >= 18 && origUpgrade >= 9) {
-						fuseTokenLimit = 10 * (upgradeIndex - origUpgrade) / 3;
+						fuseTokenLimit = 10 * (a - b) / 3;
 					}
 					else {
-						fuseTokenLimit = 10 * (upgradeIndex - origUpgrade - 9) / 3;
+						fuseTokenLimit = 10 * (a - b - 9) / 3;
 					}
-					console.log(moneyLimit);
 				}
 				else { //common
-					moneyLimit = 500 * (upgradeIndex - origUpgrade) / 3;
+					moneyLimit = 500 * (a - b);
 					if (upgradeIndex >= 18 && origUpgrade >= 9) {
-						fuseTokenLimit = 10 * (upgradeIndex - origUpgrade) / 3;
+						fuseTokenLimit = 10 * (a - b) / 3;
 					}
 					else {
-						fuseTokenLimit = 10 * (upgradeIndex - origUpgrade - 9) / 3;
+						fuseTokenLimit = 10 * (a - b - 9) / 3;
 					}
 				}
 			}
