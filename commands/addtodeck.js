@@ -17,22 +17,13 @@ module.exports = {
     adminOnly: true,
     description: 'Adds (or replaces) a car to a specified slot in a specifed deck. (NOTE: Deck names cannot contain spaces, use underscores "_" instead)',
     async execute(message, args) {
-        if (!args[1] || !args[2]) {
-            const errorMessage = new Discord.MessageEmbed()
-                .setColor("#fc0303")
-                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle("Error, arguments provided insufficient.")
-                .setDescription("Correct syntax: `cd-addtodeck <deck name goes here> <index> <car name goes here>`")
-                .setTimestamp();
-            return message.channel.send(errorMessage);
-        }
-
         const db = message.client.db;
         const playerData = await db.get(`acc${message.author.id}`);
         const decks = playerData.decks;
         const deckName = args[0].toLowerCase();
         const index = Math.ceil(parseInt(args[1]));
         if (isNaN(index) || index > 5 || index < 1) {
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             const errorMessage = new Discord.MessageEmbed()
                 .setColor("#fc0303")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -45,7 +36,7 @@ module.exports = {
         const filter = response => {
             return response.author.id === message.author.id;
         };
-        var carName = args[2].toLowerCase();
+        let carName = args[2].toLowerCase();
         for (i = 3; i < args.length; i++) {
             carName += (" " + args[i].toLowerCase());
         }
@@ -87,6 +78,7 @@ module.exports = {
                     .then(collected => {
                         if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
                             collected.first().delete();
+							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                             const errorMessage = new Discord.MessageEmbed()
                                 .setColor("#fc0303")
                                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -102,6 +94,7 @@ module.exports = {
                         }
                     })
                     .catch(() => {
+						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                         const cancelMessage = new Discord.MessageEmbed()
                             .setColor("#34aeeb")
                             .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -115,6 +108,7 @@ module.exports = {
             }
         }
         else {
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             const errorMessage = new Discord.MessageEmbed()
                 .setColor("#fc0303")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -177,8 +171,9 @@ module.exports = {
                     errors: ['time']
                 })
                     .then(collected => {
-                        if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
-                            collected.first().delete();
+						collected.first().delete();
+                        if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {                         
+							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                             const errorMessage = new Discord.MessageEmbed()
                                 .setColor("#fc0303")
                                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -188,11 +183,11 @@ module.exports = {
                             return currentMessage.edit(errorMessage);
                         }
                         else {
-                            collected.first().delete();
                             addCar(searchResults[parseInt(collected.first()) - 1], currentDeck, currentMessage);
                         }
                     })
                     .catch(() => {
+						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                         const cancelMessage = new Discord.MessageEmbed()
                             .setColor("#34aeeb")
                             .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -210,6 +205,7 @@ module.exports = {
                 }
             }
             else {
+				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                 const errorMessage = new Discord.MessageEmbed()
                     .setColor("#fc0303")
                     .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -241,6 +237,7 @@ module.exports = {
             }
             await db.set(`acc${message.author.id}.decks`, decks);
 
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             const infoScreen = new Discord.MessageEmbed()
                 .setColor("#34aeeb")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))

@@ -1,0 +1,47 @@
+{
+    "rq": 72,
+    "make": "Ford",
+    "model": "Mustang Mach-E 4X",
+    "modelYear": 2021,
+    "country": "US",
+    "topSpeed": 114,
+    "0to60": 5.0,
+    "handling": 77,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Eco Friendly", "Year of the Ox"],
+    "isPrize": false,
+
+    "weight": 2203,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Electric",
+    "mra": 58.82,
+    "ola": 76,
+    "description": "No, this is not a Mustang but behind that name it lived up to the expectations from the crowd. Card by Spence",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/810061037734068264/image0.jpg",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/810061118097326100/image0.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/810061138804736030/image0.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/810061202717278208/image0.jpg",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/810061235139772416/image0.jpg",
+    "racehud699": "",
+
+    "333TopSpeed": 117,
+    "3330to60": 4.7,
+    "333Handling": 80,
+
+    "666TopSpeed": 120,
+    "6660to60": 4.4,
+    "666Handling": 83,
+
+	  "969TopSpeed": 123,
+    "9690to60": 4.2,
+    "969Handling": 85
+	
+}

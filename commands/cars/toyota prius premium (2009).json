@@ -1,0 +1,46 @@
+{
+    "rq": 21,
+    "make": "Toyota",
+    "model": "Prius Premium",
+    "modelYear": 2009,
+    "country": "JP",
+    "topSpeed": 114,
+    "0to60": 10.4,
+    "handling": 70,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+
+    "weight": 1370,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 49.76,
+    "ola": 67.31,
+    "description": "Card by Connor",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/808439221647573022/E.ToyotaPriusPremium.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/808439330867380264/E.ToyotaPriusPremium.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/808439350260924466/E.ToyotaPriusPremium-1star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/808439366446743582/E.ToyotaPriusPremium-2star.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/808439375296856094/E.ToyotaPriusPremium-969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 117,
+    "3330to60": 9.6,
+    "333Handling": 72,
+
+    "666TopSpeed": 119,
+    "6660to60": 8.8,
+    "666Handling": 75,
+
+    "969TopSpeed": 112,
+    "9690to60": 8.0,
+    "969Handling": 77
+}

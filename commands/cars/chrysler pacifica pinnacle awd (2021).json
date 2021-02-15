@@ -1,0 +1,46 @@
+{
+    "rq": 46,
+    "make": "Chrysler",
+    "model": "Pacifica Pinnacle AWD",
+    "modelYear": 2021,
+    "country": "US",
+    "topSpeed": 111,
+    "0to60": 7.9,
+    "handling": 73,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Year of the Ox"],
+    "isPrize": false,
+
+    "weight": 2215,
+    "gc": "Medium",
+    "seatCount": 7,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 56.03,
+    "ola": 61.50,
+    "description": "Card by DodgeDemon.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/806817546086252554/2021_Chrysler_Pacifica_Pinnacle_AWD.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/806474646558867526/pacifica2.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/806474671330426960/pacifica2_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/806474678851600394/pacifica2_666.jpg",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/806474690503376907/pacifica2_969.jpg",
+    "racehud699": "",
+
+    "333TopSpeed": 114,
+    "3330to60": 7.4,
+    "333Handling": 76,
+
+    "666TopSpeed": 118,
+    "6660to60": 6.9,
+    "666Handling": 78,
+
+    "969TopSpeed": 121,
+    "9690to60": 6.4,
+    "969Handling": 81
+}

@@ -23,6 +23,7 @@ module.exports = {
         const decks = await db.get(`acc${message.author.id}.decks`);
 
         if (decks.length >= 10) {
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             const errorScreen = new Discord.MessageEmbed()
                 .setColor("#fc0303")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -32,6 +33,7 @@ module.exports = {
             return message.channel.send(errorScreen);
         }
         else if (args[1]) {
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             const errorScreen = new Discord.MessageEmbed()
                 .setColor("#fc0303")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -42,6 +44,7 @@ module.exports = {
         }
         for (i = 0; i < decks.length; i++) {
             if (decks[i].name === deckName) {
+				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                 const errorScreen = new Discord.MessageEmbed()
                     .setColor("#fc0303")
                     .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -60,6 +63,7 @@ module.exports = {
 			.setDescription("Add your cars into your newly-created deck using `cd-addtodeck`!")
 			.setFooter(`You have ${9 - decks.length} deck slots remaining.`)
             .setTimestamp();
+		message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
         return message.channel.send(infoScreen);
     }
 }

@@ -1,0 +1,50 @@
+{
+    "rq": 92,
+    "make": "Chrysler",
+    "model": "ME Four-Twelve",
+    "modelYear": 2004,
+    "country": "US",
+    "topSpeed": 248,
+    "0to60": 2.9,
+    "handling": 94,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": true,
+
+    "weight": 1310,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 87.88,
+    "ola": 87.93,
+    "description": "Card by DodgeDemon.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/807131937276690472/2004_Chrysler_ME412.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/807132096186941520/ChryslerME412000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/807132186137853982/ChryslerME412333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/807132272981442610/ChryslerME412666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/807132396947243043/ChryslerME412996.png",
+    "racehud969": "",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/807132365688274954/ChryslerME412699.png",
+
+    "333TopSpeed": 250,
+    "3330to60": 2.7,
+    "333Handling": 97,
+
+    "666TopSpeed": 252,
+    "6660to60": 2.6,
+    "666Handling": 100,
+
+    "996TopSpeed": 256,
+    "9960to60": 2.4,
+    "996Handling": 101,
+
+    "699TopSpeed": 254,
+    "6990to60": 2.5,
+    "699Handling": 104
+}

@@ -1,0 +1,61 @@
+﻿{
+    "rq": 26,
+    "make": "Mercedes-Benz",
+    "model": "450 SEL 6.9",
+    "modelYear": 1975,
+    "country": "DE",
+    "topSpeed": 137,
+    "0to60": 8.2,
+    "handling": 62,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1795,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 63.50,
+    "ola": 80.4,
+    "description": "Long Classiness. Card by Cenard",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/806478716740960286/haha_funny_number.png?width=1154&height=718",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/806478501511036978/funny_number.jpg",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/806478529889435668/funny_number_333.jpg",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/806478540861341706/funny_number_666.jpg",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/806478571291934740/funny_number_996.jpg",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/806478557047291954/funny_number_969.jpg",
+    "racehud699": "",
+
+
+    "333TopSpeed": 141,
+    "3330to60": 7.6,
+    "333Handling": 64,
+
+
+    "666TopSpeed": 145,
+    "6660to60": 7.0, 
+    "666Handling": 67,
+
+
+    "996TopSpeed": 149,
+    "9960to60": 6.2,
+    "996Handling": 67,
+
+
+    "969TopSpeed": 149,
+    "9690to60": 6.5,
+    "969Handling": 69,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

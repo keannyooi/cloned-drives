@@ -1,0 +1,46 @@
+{
+    "rq": 12,
+    "make": "Geo",
+    "model": "Metro XFi",
+    "modelYear": 1991,
+    "country": "US",
+    "topSpeed": 93,
+    "0to60": 13.5,
+    "handling": 59,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 735,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 0.00,
+    "ola": 71.11,
+    "description": "Card by Connor",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/808441343252627506/F.GeoMetroXFi.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/808441388521357332/F.GeoMetroXFi.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/808441418825465876/F.GeoMetroXFi-1star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/808441436642344960/F.GeoMetroXFi-2star.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/808441453436600340/F.GeoMetroXFi-969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 95,
+    "3330to60": 12.6,
+    "333Handling": 61,
+
+    "666TopSpeed": 97,
+    "6660to60": 11.7, 
+    "666Handling": 63,
+
+    "969TopSpeed": 99,
+    "9690to60": 10.8,
+    "969Handling": 65
+}

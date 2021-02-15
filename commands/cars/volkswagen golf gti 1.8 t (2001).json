@@ -1,0 +1,61 @@
+﻿{
+    "rq": 38,
+    "make": "Volkswagen",
+    "model": "Golf GTI 1.8 T",
+    "modelYear": 2001,
+    "country": "DE",
+    "topSpeed": 135,
+    "0to60": 7.0,
+    "handling": 78,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch"],
+    "isPrize": false,
+
+
+    "weight": 1213,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 61.23,
+    "ola": 77.70,
+    "description": "When GTI was a trim level. Card by Andu ",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/805393437356195880/GTI4.png?width=1085&height=676",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/805394267668480057/Golf4.png",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/805394274237153320/Golf41.png",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/805394278867664946/Golf42.png",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/805394303039963136/Golf4332.png",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/805394297348292608/Golf4323.png",
+    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/805394288090677288/Golf4233.png",
+
+
+    "333TopSpeed": 138,
+    "3330to60": 6.6,
+    "333Handling": 81,
+
+
+    "666TopSpeed": 141,
+    "6660to60": 6.1, 
+    "666Handling": 84,
+
+
+    "996TopSpeed": 145,
+    "9960to60": 5.6,
+    "996Handling": 83,
+
+
+    "969TopSpeed": 144,
+    "9690to60": 5.7,
+    "969Handling": 86,
+
+
+    "699TopSpeed": 140,
+    "6990to60": 5.8,
+    "699Handling": 86
+}

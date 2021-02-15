@@ -1,0 +1,50 @@
+{
+    "rq": 100,
+    "make": "Rimac",
+    "model": "Concept_S",
+    "modelYear": 2016,
+    "country": "HR",
+    "topSpeed": 227,
+    "0to60": 2.4,
+    "handling": 96,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eco-Friendly", "Hypercar", "Track Day", "Ultra Expensive"],
+    "isPrize": true,
+
+    "weight": 1800,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 109.09,
+    "ola": 54.17,
+    "description": "Concepts go brrr. Card by DodgeDemon.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/806975525187747900/2016_Rimac_CS.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/806975862267445328/RimacCS000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/806975909381931008/RimacCS333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/806975951685681162/RimacCS666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/806976093734436874/RimacCS996.png",
+    "racehud969": "",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/806975996402073650/RimacCS699.png",
+
+    "333TopSpeed": 229,
+    "3330to60": 2.3,
+    "333Handling": 99,
+
+    "666TopSpeed": 231,
+    "6660to60": 2.2,
+    "666Handling": 103,
+
+    "996TopSpeed": 235,
+    "9960to60": 2.0,
+    "996Handling": 104,
+
+    "699TopSpeed": 233,
+    "6990to60": 2.1,
+    "699Handling": 107
+}

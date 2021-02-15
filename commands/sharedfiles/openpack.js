@@ -30,7 +30,7 @@ module.exports = {
 				if (check > rand) {
 					switch (rarity) {
 						case "common":
-							rqStart = 10;
+							rqStart = 1;
 							rqEnd = 19;
 							break;
 						case "uncommon":
@@ -55,7 +55,7 @@ module.exports = {
 							break;
 						case "legendary":
 							rqStart = 80;
-							rqEnd = 100;
+							rqEnd = 999;
 							break;
 						default:
 							break;
@@ -70,19 +70,12 @@ module.exports = {
 				carFile = carFiles[Math.floor(Math.random() * carFiles.length)];
 				currentCard = require(`../cars/${carFile}`);
 			}
-			let make = currentCard["make"];
-			if (typeof make === "object") {
-				make = currentCard["make"][0];
-			}
-			let rarity = rarityCheck(currentCard);
-
 			addedCars.push(carFile);
-			pulledCards += `(${rarity} ${currentCard["rq"]}) ${make} ${currentCard["model"]} (${currentCard["modelYear"]})\n`;
 		}
 
 		addedCars.sort(function (a, b) {
-            const carA = require(`./cars/${a}`);
-            const carB = require(`./cars/${b}`);
+            const carA = require(`../cars/${a}`);
+            const carB = require(`../cars/${b}`);
 
             if (carA["rq"] === carB["rq"]) {
                 let nameA = `${carA["make"]} ${carA["model"]}`.toLowerCase();
@@ -106,14 +99,24 @@ module.exports = {
             }
             else {
                 if (carA["rq"] > carB["rq"]) {
-                    return -1;
+                    return 1;
                 }
                 else {
-                    return 1;
+                    return -1;
                 }
             }
         });
-		let d = require(`./cars/${addedCars[addedCars.length - 1]}`);
+
+		for (i = 0; i < addedCars.length; i++) {
+			let currentCard = require(`../cars/${addedCars[i]}`);
+			let rarity = rarityCheck(currentCard);
+			let make = currentCard["make"];
+			if (typeof make === "object") {
+				make = currentCard["make"][0];
+			}
+			pulledCards += `(${rarity} ${currentCard["rq"]}) ${make} ${currentCard["model"]} (${currentCard["modelYear"]})\n`;
+		}
+		let d = require(`../cars/${addedCars[addedCars.length - 1]}`);
 
 		let packScreen = new Discord.MessageEmbed()
 			.setColor("#34aeeb")

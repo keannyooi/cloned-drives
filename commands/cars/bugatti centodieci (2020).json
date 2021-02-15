@@ -1,0 +1,50 @@
+{
+    "rq": 99,
+    "make": "Bugatti",
+    "model": "Centodieci",
+    "modelYear": 2020,
+    "country": "FR",
+    "topSpeed": 236,
+    "0to60": 2.4,
+    "handling": 92,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Hypercar", "Ultra Expensive"],
+    "isPrize": true,
+
+    "weight": 1976,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 120.00,
+    "ola": 91.67,
+    "description": "Bugatti pays homage to its classic EB110 with a run of 10 special hypercars. Card by DodgeDemon.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/807520423268581426/2020_Bugatti_Centodieci.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/807520545976352808/BugattiCentodieci000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/807520602562494484/BugattiCentodieci333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/807520636389949470/BugattiCentodieci666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/807520732447375390/BugattiCentodieci996.png",
+    "racehud969": "",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/807520686502313984/BugattiCentodieci699.png",
+
+    "333TopSpeed": 238,
+    "3330to60": 2.3,
+    "333Handling": 95,
+
+    "666TopSpeed": 240,
+    "6660to60": 2.2,
+    "666Handling": 98,
+
+    "996TopSpeed": 244,
+    "9960to60": 2.0,
+    "996Handling": 99,
+
+    "699TopSpeed": 242,
+    "6990to60": 2.1,
+    "699Handling": 102
+}

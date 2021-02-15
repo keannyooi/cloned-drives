@@ -1,0 +1,54 @@
+{
+    "rq": 62,
+    "make": "Aston Martin",
+    "model": "Rapide",
+    "modelYear": 2010,
+    "country": "GB",
+    "topSpeed": 186,
+    "0to60": 4.9,
+    "handling": 83,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1950,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 81.32,
+    "ola": 79.05,
+    "description": "Luxury in action, although loses to the Panamera. Card by havvy",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/803332879135539300/AstonMartinRapide.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/803332957091790858/000rapide.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/803332980886077450/111rapide.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/803332990418681927/222rapide.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/803333008970743819/332rapide.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/803333003165433896/323rapide.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/803332997452529715/233rapide.png",
+
+    "333TopSpeed": 189,
+    "3330to60": 4.6,
+    "333Handling": 86,
+
+    "666TopSpeed": 192,
+    "6660to60": 4.3,
+    "666Handling": 89,
+
+    "996TopSpeed": 197,
+    "9960to60": 3.9,
+    "996Handling": 89,
+
+    "969TopSpeed": 197,
+    "9690to60": 4.0,
+    "969Handling": 92,
+
+	"699TopSpeed": 195,
+    "6990to60": 4.0,
+    "699Handling": 92
+}

@@ -12,8 +12,8 @@ const Discord = require("discord.js-light");
 module.exports = {
 	name: "upgrade",
 	aliases: ["tune", "u"],
-	usage: "<car name goes here> | <original upgrade> | <upgrade pattern>",
-	args: 3,
+	usage: "<car name goes here> | <upgrade pattern>",
+	args: 2,
 	isExternal: true,
 	adminOnly: false,
 	description: "Upgrades a car in your garage.",
@@ -27,20 +27,11 @@ module.exports = {
 			return response.author.id === message.author.id;
 		};
 
-		let carName = args.slice(0, args.length - 2).map(i => i.toLowerCase());
-		let origUpgrade = args[args.length - 2], upgrade = args[args.length - 1];
-		if (parseInt(origUpgrade[0]) + parseInt(origUpgrade[1]) + parseInt(origUpgrade[2]) >= parseInt(upgrade[0]) + parseInt(upgrade[1]) + parseInt(upgrade[2])) {
-			let errorMessage = new Discord.MessageEmbed()
-				.setColor("#fc0303")
-				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-				.setTitle("Error, it looks like you tried tuning your car in the wrong order.")
-				.setDescription("Correct tuning order: `000` => `333` => `666` => `996`, `969` or `699`.")
-				.setTimestamp();
-			return message.channel.send(errorMessage);
-		}
+		let carName = args.slice(0, args.length - 1).map(i => i.toLowerCase());
+		let upgrade = args[args.length - 1];
 
 		const searchResults = garage.filter(function (garageCar) {
-			return carName.every(part => garageCar.carFile.includes(part)) && garageCar[origUpgrade] > 0;
+			return carName.every(part => garageCar.carFile.includes(part)) && garageCar["000"] + garageCar["333"] + garageCar["666"] + garageCar["996"]  + garageCar["969"]  + garageCar["699"] > 0;
 		});
 
 		if (searchResults.length > 1) {
@@ -55,6 +46,7 @@ module.exports = {
 			}
 
 			if (carList.length > 2048) {
+				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 				const errorMessage = new Discord.MessageEmbed()
 					.setColor("#fc0303")
 					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -75,11 +67,14 @@ module.exports = {
 				message.channel.awaitMessages(filter, {
 					max: 1,
 					time: waitTime,
-					errors: ['time']
+					errors: ["time"]
 				})
 					.then(collected => {
-						collected.first().delete();
-						if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
+						if (message.channel.type === "text") {
+							collected.first().delete();
+						}
+						if (isNaN(collected.first().content) || parseInt(collected.first().content) > searchResults.length || parseInt(collected.first().content) < 1) {
+							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 							const errorMessage = new Discord.MessageEmbed()
 								.setColor("#fc0303")
 								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -89,10 +84,11 @@ module.exports = {
 							return currentMessage.edit(errorMessage);
 						}
 						else {
-							upgradeCar(searchResults[parseInt(collected.first()) - 1], origUpgrade, upgrade, currentMessage);
+							selectUpgrade(searchResults[parseInt(collected.first().content) - 1], upgrade, currentMessage);
 						}
 					})
 					.catch(() => {
+						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 						const cancelMessage = new Discord.MessageEmbed()
 							.setColor("#34aeeb")
 							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -103,16 +99,109 @@ module.exports = {
 			});
 		}
 		else if (searchResults.length > 0) {
-			upgradeCar(searchResults[0], origUpgrade, upgrade);
+			selectUpgrade(searchResults[0], upgrade);
 		}
 		else {
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 			const errorMessage = new Discord.MessageEmbed()
 				.setColor("#fc0303")
 				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 				.setTitle("Error, it looks like you don't have that car in the original tune requested.")
-				.setDescription("Check if you got the order right: `cd-upgrade <car name goes here> | <original upgrade> | <upgrade pattern>`")
+				.setDescription("Check if you got the order right: `cd-upgrade <car name goes here> | <upgrade pattern>`")
 				.setTimestamp();
 			return message.channel.send(errorMessage);
+		}
+
+		async function selectUpgrade(currentCar, upgrade, currentMessage) {
+			let upgradeIndex = parseInt(upgrade[0]) + parseInt(upgrade[1]) + parseInt(upgrade[2]);
+			let isOne = Object.keys(currentCar).filter(m => !isNaN(currentCar[m]) && currentCar[m] >= 1 && parseInt(m[0]) + parseInt(m[1]) + parseInt(m[2]) < upgradeIndex);
+			if (isOne.length === 1) {
+				upgradeCar(currentCar, isOne[0], upgrade, currentMessage);
+			}
+			else if (isOne.length === 0) {
+				let count = Object.keys(currentCar).filter(m => !isNaN(currentCar[m]) && currentCar[m] >= 1);
+				let upgradeList = "";
+				for (i = 0; i < count.length; i++) {
+					upgradeList += `\`${count[i]}\`x${currentCar[count[i]]}, `;
+				}
+				const errorScreen = new Discord.MessageEmbed()
+					.setColor("#fc0303")
+					.setTitle("Error, it looks like you attempted tuning your car in the wrong order.")
+					.setDescription("Correct tuning order: `000` => `333` => `666` => `996`, `969` or `699`.")
+					.addField("Current upgrades for your car", upgradeList.slice(0, -2))
+					.setTimestamp();
+				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+				if (currentMessage) {
+					return currentMessage.edit(errorScreen);
+				}
+				else {
+					return message.channel.send(errorScreen);
+				}
+			}
+			else {
+				let upgradeList = "Type in any tune that is displayed here.\n";
+				for (let upg of isOne) {
+					upgradeList += `\`${upg}\`, `;
+				}
+
+				let infoScreen = new Discord.MessageEmbed()
+					.setColor("#34aeeb")
+					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+					.setTitle("Upgrade car from which tune?")
+					.setDescription(upgradeList.slice(0, -2))
+					.setTimestamp();
+				let upgradeMessage;
+				if (currentMessage && message.channel.type === "text") {
+					upgradeMessage = await currentMessage.edit(infoScreen);
+				}
+				else {
+					upgradeMessage = await message.channel.send(infoScreen);
+				}
+
+				message.channel.awaitMessages(filter, {
+					max: 1,
+					time: 60000,
+					errors: ["time"]
+				})
+					.then(collected => {
+						if (message.channel.type === "text") {
+							collected.first().delete();
+						}
+						if (isOne.find(m => m === collected.first().content) === undefined) {
+							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
+							const errorMessage = new Discord.MessageEmbed()
+								.setColor("#fc0303")
+								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+								.setTitle("Error, invalid selection provided.")
+								.setDescription("It looks like your response was not part of the selection.")
+								.setTimestamp();
+							if (message.channel.type === "text") {
+								return upgradeMessage.edit(errorMessage);
+							}
+							else {
+								return message.channel.send(errorMessage);
+							}
+						}
+						else {
+							upgradeCar(currentCar, collected.first().content, upgrade, upgradeMessage);
+						}
+					})
+					.catch(error => {
+						console.log(error);
+						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
+						const cancelMessage = new Discord.MessageEmbed()
+							.setColor("#34aeeb")
+							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+							.setTitle("Action cancelled automatically.")
+							.setTimestamp();
+						if (message.channel.type === "text") {
+							return upgradeMessage.edit(cancelMessage);
+						}
+						else {
+							return message.channel.send(cancelMessage);
+						}
+					});
+			}
 		}
 
 		async function upgradeCar(currentCar, origUpgrade, upgrade, currentMessage) {
@@ -128,7 +217,8 @@ module.exports = {
 			var moneyLimit = 0;
 			var fuseTokenLimit = 0;
 
-			if (!car[`${upgrade}TopSpeed`]) {
+			if (car[`racehud${upgrade}`] === "" || !car[`racehud${upgrade}`]) {
+				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 				const maxedTunes = [996, 969, 699].filter(function (tune) {
 					return car[`racehud${tune}`];
 				});
@@ -139,7 +229,7 @@ module.exports = {
 					.setDescription("In order to make the tuning system less complex, the tuning stages are limited to `333`, `666`, `996`, `969` and `699`.")
 					.addField("Your car's available maxed tunes", maxedTunes.join(", "))
 					.setTimestamp();
-				if (currentMessage) {
+				if (currentMessage && message.channel.type === "text") {
 					return currentMessage.edit(errorScreen);
 				}
 				else {
@@ -158,7 +248,9 @@ module.exports = {
 
 				if (playerData.hand) {
 					if (playerData.hand.carFile === currentCar.carFile) {
-                   		delete playerData.hand;
+                   		playerData.hand.gearingUpgrade = parseInt(upgrade[0]);
+						playerData.hand.engineUpgrade = parseInt(upgrade[1]);
+						playerData.hand.chassisUpgrade = parseInt(upgrade[2]);
                 	}
 				}
 				await db.set(`acc${message.author.id}`, playerData);
@@ -177,7 +269,8 @@ module.exports = {
 					)
 					.setImage(racehud)
 					.setTimestamp();
-				if (currentMessage) {
+				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+				if (currentMessage && message.channel.type === "text") {
 					return currentMessage.edit(infoScreen);
 				}
 				else {
@@ -185,6 +278,7 @@ module.exports = {
 				}
 			}
 			else {
+				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 				const errorScreen = new Discord.MessageEmbed()
 					.setColor("#fc0303")
 					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -195,7 +289,7 @@ module.exports = {
 						{ name: "Required Amount of Fuse Tokens", value: `${fuseEmoji}${fuseTokenLimit}`, inline: true },
 					)
 					.setTimestamp();
-				if (currentMessage) {
+				if (currentMessage && message.channel.type === "text") {
 					return currentMessage.edit(errorScreen);
 				}
 				else {

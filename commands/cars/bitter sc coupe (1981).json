@@ -1,0 +1,55 @@
+{
+    "rq": 21,
+    "make": "Bitter",
+    "model": "SC Coupe",
+    "modelYear": 1981,
+    "country": "DE",
+    "topSpeed": 130,
+    "0to60": 8.3,
+    "handling": 69,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1584,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 48.54,
+    "ola": 67.47,
+    "description": "Stylish, exclusive, reliable, well built and fast too. Card by Johnny",
+
+    "card": "https://cdn.discordapp.com/attachments/733973415366623274/809884592575217734/Bitter_SC_Coupe.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/809901573467275294/Bitter-SC-Coupe.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/809901578865737738/Bitter-SC-Coupe-1-star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/809901583067250718/Bitter-SC-Coupe-2-star.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/809901613346848788/Bitter-SC-Coupe-332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/809901607184760862/Bitter-SC-Coupe-323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/809901594232881242/Bitter-SC-Coupe-233.png",
+
+    "333TopSpeed": 133,
+    "3330to60": 7.8,
+    "333Handling": 71,
+
+    "666TopSpeed": 136,
+    "6660to60": 7.3,
+    "666Handling": 74,
+
+    "996TopSpeed": 141,
+    "9960to60": 6.6,
+    "996Handling": 74,
+	 
+	"969TopSpeed": 139,
+    "9690to60": 6.8,
+    "969Handling": 76,
+	
+	"699TopSpeed": 138,
+    "6990to60": 6.9,
+    "699Handling": 77
+
+}

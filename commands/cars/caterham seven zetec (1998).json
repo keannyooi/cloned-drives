@@ -1,0 +1,50 @@
+{
+    "rq": 44,
+    "make": "Caterham",
+    "model": "Seven Zetec",
+    "modelYear": 1998,
+    "country": "GB",
+    "topSpeed": 120,
+    "0to60": 5.8,
+    "handling": 79,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 605,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Roadster",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 49.15,
+    "ola": 65.52,
+    "description": "Card by DodgeDemon.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/806817349880643584/1998_Cate_7_Zetec.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/806489570858106900/cate.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/806489622648717342/cate_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/806489632102940702/cate_666.jpg",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/806489685253685269/cate_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/806489659169308692/cate_699.jpg",
+
+    "333TopSpeed": 123,
+    "3330to60": 5.5,
+    "333Handling": 82,
+
+    "666TopSpeed": 126,
+    "6660to60": 5.1,
+    "666Handling": 85,
+
+    "969TopSpeed": 129,
+    "9690to60": 4.8,
+    "969Handling": 87,
+
+    "699TopSpeed": 126,
+    "6990to60": 4.8,
+    "699Handling": 88
+}

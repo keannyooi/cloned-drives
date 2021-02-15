@@ -30,6 +30,7 @@ module.exports = {
 		});
 
 		if (event === undefined) {
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 			const errorScreen = new Discord.MessageEmbed()
                 .setColor("#fc0303")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -58,8 +59,13 @@ module.exports = {
 					reactionMessage.reactions.removeAll();
 					switch (collected.first().emoji.name) {
                         case "✅":
+							if (event.isActive) {
+								message.client.channels.cache.get("798776756952629298").send(`**The ${event.name} event has officially finished. Thanks for playing!**`);
+							}
                             events.splice(events.indexOf(event), 1);
 							await db.set("events", events);
+							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+
 							const infoScreen = new Discord.MessageEmbed()
             					.setColor("#34aeeb")
             					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -67,6 +73,7 @@ module.exports = {
             					.setTimestamp();
         					return reactionMessage.edit(infoScreen);
                         case "❎":
+							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                             const cancelMessage = new Discord.MessageEmbed()
                                 .setColor("#34aeeb")
                                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -78,6 +85,7 @@ module.exports = {
                     }
 				})
 				.catch(error => {
+					message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 					console.log(error);
                     const cancelMessage = new Discord.MessageEmbed()
                         .setColor("#34aeeb")
@@ -86,7 +94,6 @@ module.exports = {
                         .setTimestamp();
                     return reactionMessage.edit(cancelMessage);
                 });
-				
 		}
     }
 }

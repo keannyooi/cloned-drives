@@ -1,0 +1,46 @@
+{
+    "rq": 97,
+    "make": "Scuderia Cameron Glickenhaus",
+    "model": "SCG003S",
+    "modelYear": 2015,
+    "country": "US",
+    "topSpeed": 231,
+    "0to60": 2.9,
+    "handling": 100,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": true,
+
+    "weight": 1225,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 100.00,
+    "ola": 80.00,
+    "description": "Card by DodgeDemon.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/807273268373487626/2015_SCG003S.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/807275401088860180/SCG003S000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/807275438132822096/SCG003S333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/807275471569944627/SCG003S666.png",
+    "racehud996": "",
+    "racehud969": "",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/807275513683902464/SCG003S699.png",
+
+    "333TopSpeed": 233,
+    "3330to60": 2.7,
+    "333Handling": 103,
+
+    "666TopSpeed": 235,
+    "6660to60": 2.6,
+    "666Handling": 107,
+
+    "699TopSpeed": 237,
+    "6990to60": 2.5,
+    "699Handling": 111
+}

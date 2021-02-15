@@ -21,16 +21,18 @@ module.exports = {
 				const canvas = Canvas.createCanvas(674, 379);
 				const ctx = canvas.getContext("2d");
 
-				const [background, overlay, playerHud, opponentHud] = await Promise.all([
+				const [background, overlay, playerHud, opponentHud, map] = await Promise.all([
 					Canvas.loadImage(currentTrack["background"]),
 					Canvas.loadImage("https://cdn.discordapp.com/attachments/716917404868935691/795177817116901386/race_template_thing.png"),
 					Canvas.loadImage(player.racehud),
-					Canvas.loadImage(opponent.racehud) ]);
+					Canvas.loadImage(opponent.racehud),
+					Canvas.loadImage(currentTrack["map"]) ]);
 	
 				ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
 				ctx.drawImage(overlay, 0, 0, canvas.width, canvas.height);
 				ctx.drawImage(playerHud, 35, 69, 186, 113);
 				ctx.drawImage(opponentHud, 457, 198, 186, 112);
+				ctx.drawImage(map, 258, 228, 142, 142);
 	
 				attachment = new Discord.MessageAttachment(canvas.toBuffer(), "thing.png");
 			}
@@ -84,7 +86,7 @@ module.exports = {
 					"Sunny Snow": ["Off-Road", "All-Surface", "Standard", "Performance", "Slick"],
 					"Sunny Ice": ["Off-Road", "All-Surface", "Standard", "Performance", "Slick"],
 				}
-				var tyrePenalty = 0;
+				let tyrePenalty = 0;
 				if (currentTrack["surface"] !== "Asphalt" || currentTrack["weather"] === "Rainy") {
 					tyrePenalty = tyrePlacement[`${currentTrack["weather"]} ${currentTrack["surface"]}`].indexOf(opponent.tyreType) - tyrePlacement[`${currentTrack["weather"]} ${currentTrack["surface"]}`].indexOf(player.tyreType);
 				}
@@ -102,7 +104,7 @@ module.exports = {
 					"abs": player.abs - opponent.abs,
 					"tcs": player.tcs - opponent.tcs
 				}
-				var response = "";
+				let response = "";
 				console.log(comparison);
 
 				for (i = 0; i < Object.keys(comparison).length; i++) {
@@ -174,7 +176,7 @@ module.exports = {
 								}
 								break;
 							case "abs":
-								if (currentTrack["surface"] !== "Asphalt" || currentTrack["weather"] === "Rainy") {
+								if ((currentTrack["surface"] !== "Asphalt" || currentTrack["weather"] === "Rainy") && currentTrack["specsDistr"]["handling"] > 0) {
 									response += "ABS, ";
 								}
 								break;
@@ -216,12 +218,12 @@ module.exports = {
 				}
 				score += (gcPlacement.indexOf(opponent.gc) - gcPlacement.indexOf(player.gc)) * 10 * currentTrack["humps"];
 
+				let tcsPen = 0, absPen = 0;
 				switch (currentTrack["surface"]) {
 					case "Asphalt":
 						if (currentTrack["weather"] === "Rainy") {
 							score += (drivePlacement.indexOf(opponent.driveType) - drivePlacement.indexOf(player.driveType)) * 4;
-							score += (player.tcs - opponent.tcs) * 2;
-							score += (player.abs - opponent.abs) * 2;
+							absPen = tcsPen = 2;
 
 							tyreIndex = {
 								"Standard": 0,
@@ -236,8 +238,7 @@ module.exports = {
 					case "Dirt":
 						if (currentTrack["weather"] === "Rainy") {
 							score += (drivePlacement.indexOf(opponent.driveType) - drivePlacement.indexOf(player.driveType)) * 8.5;
-							score += (player.tcs - opponent.tcs) * 5.25;
-							score += (player.abs - opponent.abs) * 5.25;
+							absPen = tcsPen = 5.25;
 
 							tyreIndex = {
 								"Standard": 70,
@@ -250,8 +251,7 @@ module.exports = {
 						}
 						else {
 							score += (drivePlacement.indexOf(opponent.driveType) - drivePlacement.indexOf(player.driveType)) * 7;
-							score += (player.tcs - opponent.tcs) * 3.5;
-							score += (player.abs - opponent.abs) * 3.5;
+							absPen = tcsPen = 3.5;
 
 							tyreIndex = {
 								"Standard": 35,
@@ -266,8 +266,7 @@ module.exports = {
 					case "Gravel":
 						if (currentTrack["weather"] === "Rainy") {
 							score += (drivePlacement.indexOf(opponent.driveType) - drivePlacement.indexOf(player.driveType)) * 5.5;
-							score += (player.tcs - opponent.tcs) * 2.5;
-							score += (player.abs - opponent.abs) * 2.5;
+							absPen = tcsPen = 2.5;
 
 							tyreIndex = {
 								"Standard": 7.5,
@@ -293,8 +292,7 @@ module.exports = {
 						break;
 					case "Snow":
 						score += (drivePlacement.indexOf(opponent.driveType) - drivePlacement.indexOf(player.driveType)) * 12;
-						score += (player.tcs - opponent.tcs) * 6;
-						score += (player.abs - opponent.abs) * 6;
+						absPen = tcsPen = 6;
 
 						tyreIndex = {
 							"Standard": 75,
@@ -307,8 +305,7 @@ module.exports = {
 						break;
 					case "Ice":
 						score += (drivePlacement.indexOf(opponent.driveType) - drivePlacement.indexOf(player.driveType)) * 17;
-						score += (player.tcs - opponent.tcs) * 8.5;
-						score += (player.abs - opponent.abs) * 8.5;
+						absPen = tcsPen = 8.5;
 						tyreIndex = {
 							"Standard": 125,
 							"Performance": 250,
@@ -320,6 +317,20 @@ module.exports = {
 						break;
 					default:
 						break;
+				}
+				score += (player.tcs - opponent.tcs) * tcsPen;
+
+				//special cases
+				if (currentTrack["trackName"].includes("0-100MPH")) {
+					if (opponent.topSpeed < 100) {
+						score = 250;
+					}
+					else if (player.topSpeed < 100) {
+						score = -250;
+					}
+				}
+				if (currentTrack["specsDistr"]["handling"] > 0) {
+					score += (player.abs - opponent.abs) * absPen;
 				}
 				return Math.round((score + Number.EPSILON) * 100) / 100;
 			}

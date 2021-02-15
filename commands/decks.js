@@ -63,6 +63,7 @@ module.exports = {
                     infoScreen.addField(`${i + 1} - ${decks[i].name}`, handList[i]);
                 }
             }
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             return message.channel.send(infoScreen);
         }
         else {
@@ -96,6 +97,7 @@ module.exports = {
                     })
                         .then(collected => {
                             if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
+								message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                                 const errorMessage = new Discord.MessageEmbed()
                                     .setColor("#fc0303")
                                     .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -109,6 +111,7 @@ module.exports = {
                             }
                         })
                         .catch(() => {
+							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                             const cancelMessage = new Discord.MessageEmbed()
                                 .setColor("#34aeeb")
                                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -122,6 +125,7 @@ module.exports = {
                 display(searchResults[0]);
             }
             else {
+				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                 const errorMessage = new Discord.MessageEmbed()
                     .setColor("#fc0303")
                     .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -169,9 +173,11 @@ module.exports = {
                     .setImage("attachment://deck.png")
                     .setTimestamp();
                 wait.delete();
+				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                 return message.channel.send(deckScreen);
             }
             catch (error) {
+				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                 const errorMessage = new Discord.MessageEmbed()
                     .setColor("#fc0303")
                     .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))

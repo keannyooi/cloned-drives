@@ -23,6 +23,7 @@ module.exports = {
             || message.client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
 
         if (!command) {
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             const errorScreen = new Discord.MessageEmbed()
                 .setColor("#fc0303")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -43,10 +44,12 @@ module.exports = {
                 .setTitle(`Successfully reloaded command ${newCommand.name}!`)
                 .setDescription("Command updated.")
                 .setTimestamp();
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             return message.channel.send(infoScreen);
         }
         catch (error) {
             console.log(error);
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             const errorMessage = new Discord.MessageEmbed()
                 .setColor("#fc0303")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))

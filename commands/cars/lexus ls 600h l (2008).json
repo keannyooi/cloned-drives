@@ -1,0 +1,61 @@
+﻿{
+    "rq": 66,
+    "make": "Lexus",
+    "model": "LS 600h L",
+    "modelYear": 2008,
+    "country": "JP",
+    "topSpeed": 130,
+    "0to60": 5.6,
+    "handling": 73,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+
+
+    "weight": 2290,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 77.78,
+    "ola": 71.43,
+    "description": "You know this car speaks luxury when it has ottoman reclining rear seats, walnut table trays and a shiatsu massaging system. Card by Spence",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/804462046547673160/image0.jpg?width=1089&height=676",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/804462118337380372/image0.jpg?width=1079&height=676",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/804462162826625024/image0.jpg?width=1079&height=676",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/804462182896369724/image0.jpg?width=1079&height=676",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/804462239805472808/image0.jpg?width=1079&height=676",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/804462216904048660/image0.jpg?width=1079&height=676",
+    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/804462258519670864/image0.jpg?width=1079&height=676",
+
+
+    "333TopSpeed": 134,
+    "3330to60": 5.2,
+    "333Handling": 76,
+
+
+    "666TopSpeed": 137,
+    "6660to60": 4.9, 
+    "666Handling": 78,
+
+
+    "996TopSpeed": 140,
+    "9960to60": 4.5,
+    "996Handling": 78,
+
+
+    "969TopSpeed": 140,
+    "9690to60": 4.6,
+    "969Handling": 81,
+
+
+    "699TopSpeed": 137,
+    "6990to60": 4.6,
+    "699Handling": 81
+}

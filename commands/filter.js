@@ -20,11 +20,12 @@ module.exports = {
 	description: "Sets up a filter for car lists.",
 	async execute(message, args) {
 		const db = message.client.db;
-		const criteria = args[0].toLowerCase().replace("type", "Type").replace("count", "Count").replace("year", "Year").replace("pos", "Pos").replace("prize", "Prize").replace("stock", "Stock").replace("upgrade", "Upgrade").replace("max", "Max").replace("owned", "Owned");
+		const criteria = args[0].toLowerCase().replace("type", "Type").replace("count", "Count").replace("year", "Year").replace("pos", "Pos").replace("style", "Style").replace("prize", "Prize").replace("stock", "Stock").replace("upgrade", "Upgrade").replace("max", "Max").replace("owned", "Owned");
 		var filter = await db.get(`acc${message.author.id}.filter`) || {};
 		var infoScreen, searchResults;
 
 		if (!args[1] && criteria !== "view") {
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 			let errorMessage = new Discord.MessageEmbed()
 				.setColor("#fc0303")
 				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -58,6 +59,7 @@ module.exports = {
 					}
 				}
 				else {
+					message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 					let errorMessage = new Discord.MessageEmbed()
 						.setColor("#fc0303")
 						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -84,6 +86,7 @@ module.exports = {
 				}
 
 				if (isNaN(start)) {
+					message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 					let errorMessage = new Discord.MessageEmbed()
 						.setColor("#fc0303")
 						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -93,6 +96,7 @@ module.exports = {
 					return message.channel.send(errorMessage);
 				}
 				else if (end < start) {
+					message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 					let errorMessage = new Discord.MessageEmbed()
 						.setColor("#fc0303")
 						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -114,7 +118,7 @@ module.exports = {
 					.setTimestamp();
 				break;
 			case "driveType":
-			case "bodyType":
+			case "bodyStyle":
 			case "enginePos":
 			case "fuelType":
 			case "gc":
@@ -127,6 +131,7 @@ module.exports = {
 					filter[criteria] = arg;
 				}
 				else {
+					message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 					let errorMessage = new Discord.MessageEmbed()
 						.setColor("#fc0303")
 						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -157,6 +162,7 @@ module.exports = {
 						.setTimestamp();
 				}
 				else {
+					message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 					let errorMessage = new Discord.MessageEmbed()
 						.setColor("#fc0303")
 						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -168,10 +174,11 @@ module.exports = {
 				break;
 			case "disable":
 			case "remove":
-				const criteria2 = args[1].toLowerCase().replace("type", "Type").replace("count", "Count").replace("year", "Year").replace("pos", "Pos").replace("prize", "Prize").replace("stock", "Stock").replace("upgrade", "Upgrade").replace("max", "Max").replace("owned", "Owned");
+				const criteria2 = args[1].toLowerCase().replace("type", "Type").replace("count", "Count").replace("style", "Style").replace("year", "Year").replace("pos", "Pos").replace("prize", "Prize").replace("stock", "Stock").replace("upgrade", "Upgrade").replace("max", "Max").replace("owned", "Owned");
 				switch (criteria2) {
 					case "all":
 						await db.delete(`acc${message.author.id}.filter`);
+						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 						infoScreen = new Discord.MessageEmbed()
 							.setColor("#03fc24")
 							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -183,6 +190,7 @@ module.exports = {
 					case "tyreType":
 					case "tags":
 						if (!args[2]) {
+							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 							const errorMessage = new Discord.MessageEmbed()
 								.setColor("#fc0303")
 								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -214,6 +222,7 @@ module.exports = {
 							}
 						}
 						else {
+							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 							const errorMessage = new Discord.MessageEmbed()
 								.setColor("#fc0303")
 								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -227,7 +236,7 @@ module.exports = {
 					case "seatCount":
 					case "enginePos":
 					case "driveType":
-					case "bodyType":
+					case "bodyStyle":
 					case "fuelType":
 					case "isPrize":
 					case "isStock":
@@ -244,6 +253,7 @@ module.exports = {
 							.setTimestamp();
 						break;
 					default:
+						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 						const errorScreen = new Discord.MessageEmbed()
 							.setColor("#fc0303")
 							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -255,7 +265,7 @@ module.exports = {
                                     \`drivetype\` - Filter by drive type. 
 									\`tyretype\` - Filter by tyre type.
 									\`gc\` - Filter by ground clearance.
-									\`bodytype\` - Filter by body type.  
+									\`bodystyle\` - Filter by body type.  
 									\`seatcount\` - Filter by seat count.
 									\`enginepos\` - Filter by engine position.
 									\`fueltype\` - Filter by fuel type.
@@ -300,6 +310,7 @@ module.exports = {
 				}
 				break;
 			default:
+				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 				const errorScreen = new Discord.MessageEmbed()
 					.setColor("#fc0303")
 					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -311,7 +322,7 @@ module.exports = {
                                     \`drivetype\` - Filter by drive type. 
 									\`tyretype\` - Filter by tyre type.
 									\`gc\` - Filter by ground clearance.
-									\`bodytype\` - Filter by body type.  
+									\`bodystyle\` - Filter by body type.  
 									\`seatcount\` - Filter by seat count.
 									\`enginepos\` - Filter by engine position.
 									\`fueltype\` - Filter by fuel type.
@@ -331,6 +342,7 @@ module.exports = {
 		else {
 			await db.set(`acc${message.author.id}.filter`, filter);
 		}
+		message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 		return message.channel.send(infoScreen);
 	}
 }

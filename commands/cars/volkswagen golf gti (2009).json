@@ -1,0 +1,61 @@
+﻿{
+    "rq": 46,
+    "make": "Volkswagen",
+    "model": "Golf GTI",
+    "modelYear": 2009,
+    "country": "DE",
+    "topSpeed": 148,
+    "0to60": 6.3,
+    "handling": 81,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch", "Year of the Ox"],
+    "isPrize": false,
+
+
+    "weight": 1387,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 68.99,
+    "ola": 78.40,
+    "description": "A continuation of strong form. Card by Andu ",
+
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/810465773117636618/GolfGTI6.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/810465397575778314/GolfGTI6St.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/810465426311741470/GolfGTI61.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/810465430341812244/GolfGTI62.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/810465459739557898/GolfGTI6332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/810465446788595712/GolfGTI6323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/810465438042423306/GolfGTI6233.png",
+
+
+    "333TopSpeed": 152,
+    "3330to60": 5.9,
+    "333Handling": 84,
+
+
+    "666TopSpeed": 156,
+    "6660to60": 5.5, 
+    "666Handling": 87,
+
+
+    "996TopSpeed": 162,
+    "9960to60": 4.9,
+    "996Handling": 88,
+
+
+    "969TopSpeed": 159,
+    "9690to60": 5.1,
+    "969Handling": 90,
+
+
+    "699TopSpeed": 155,
+    "6990to60": 5.1,
+    "699Handling": 90
+}

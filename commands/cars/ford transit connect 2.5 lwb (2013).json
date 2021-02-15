@@ -1,0 +1,61 @@
+﻿{
+    "rq": 20,
+    "make": "Ford",
+    "model": "Transit Connect 2.5 LWB",
+    "modelYear": 2013,
+    "country": "GB",
+    "topSpeed": 109,
+    "0to60": 10.1,
+    "handling": 70,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1819,
+    "gc": "Medium",
+    "seatCount":7,
+    "bodyStyle": "Minivan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 35.19,
+    "ola": 61.39,
+    "description": "Long wheelbase Connect 4™️. Card by Andu",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/807636239036579850/TransitConn.png?width=1154&height=719",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/807636119217766440/Connect.png",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/807636122658275348/Connect1.png",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/807636128671727646/Connect2.png",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/807636145571495936/Connect332.png",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/807636136922841118/Connect323.png",
+    "racehud699": "",
+
+
+    "333TopSpeed": 112,
+    "3330to60": 9.4,
+    "333Handling": 73,
+
+
+    "666TopSpeed": 115,
+    "6660to60": 8.7, 
+    "666Handling": 75,
+
+
+    "996TopSpeed": 118,
+    "9960to60": 7.8,
+    "996Handling": 75,
+
+
+    "969TopSpeed": 118,
+    "9690to60": 8.0,
+    "969Handling": 77,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

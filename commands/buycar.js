@@ -37,6 +37,7 @@ module.exports = {
         }
 
         if (amount > 10) {
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             const errorScreen = new Discord.MessageEmbed()
                 .setColor("#fc0303")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -68,11 +69,14 @@ module.exports = {
                 message.channel.awaitMessages(filter, {
                     max: 1,
                     time: waitTime,
-                    errors: ['time']
+                    errors: ["time"]
                 })
                     .then(collected => {
-                        if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
-                            collected.first().delete();
+						if (message.channel.type === "text") {
+							collected.first().delete();	
+						}
+                        if (isNaN(collected.first().content) || parseInt(collected.first().content) > searchResults.length || parseInt(collected.first().content) < 1) {
+							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                             const errorMessage = new Discord.MessageEmbed()
                                 .setColor("#fc0303")
                                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -82,12 +86,11 @@ module.exports = {
                             return currentMessage.edit(errorMessage);
                         }
                         else {
-                            let currentCar = searchResults[parseInt(collected.first()) - 1];
-                            collected.first().delete();
-                            buyCar(currentCar, amount, currentMessage);
+                            buyCar(searchResults[parseInt(collected.first().content) - 1], amount, currentMessage);
                         }
                     })
                     .catch(() => {
+						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                         const cancelMessage = new Discord.MessageEmbed()
                             .setColor("#34aeeb")
                             .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -102,6 +105,7 @@ module.exports = {
             buyCar(currentCar, amount);
         }
         else {
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             const errorMessage = new Discord.MessageEmbed()
                 .setColor("#fc0303")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -145,6 +149,7 @@ module.exports = {
                     .setTitle(`Successfully bought ${amount} ${currentName} for ${moneyEmoji}${price}!`)
                     .setImage(car["card"])
                     .setTimestamp();
+				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                 if (currentMessage) {
                     return currentMessage.edit(infoScreen);
                 }
@@ -153,6 +158,7 @@ module.exports = {
                 }
             }
             else {
+				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                 const errorMessage = new Discord.MessageEmbed()
                     .setColor("#fc0303")
                     .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))

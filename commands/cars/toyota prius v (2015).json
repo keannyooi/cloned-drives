@@ -1,0 +1,46 @@
+{
+    "rq": 19,
+    "make": "Toyota",
+    "model": "Prius v",
+    "modelYear": 2015,
+    "country": "JP",
+    "topSpeed": 106,
+    "0to60": 10.6,
+    "handling": 68,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+
+    "weight": 1485,
+    "gc": "Medium",
+    "seatCount": 7,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 44.92,
+    "ola": 71.70,
+    "description": "Card by Connor",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/808439130416742471/F.ToyotaPriusv.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/808438966516449301/F.ToyotaPriusv.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/808438979824189460/F.ToyotaPriusv-1star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/808438987608948756/F.ToyotaPriusv-2star.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/808438998715596890/F.ToyotaPriusv-969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 109,
+    "3330to60": 9.8,
+    "333Handling": 70,
+
+    "666TopSpeed": 112,
+    "6660to60": 9.0,
+    "666Handling": 73,
+
+    "969TopSpeed": 114,
+    "9690to60": 8.2,
+    "969Handling": 75
+}

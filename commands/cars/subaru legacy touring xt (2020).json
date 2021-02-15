@@ -1,0 +1,61 @@
+﻿{
+    "rq": 61,
+    "make": "Subaru",
+    "model": "Legacy Touring XT",
+    "modelYear": 2020,
+    "country": "JP",
+    "topSpeed": 149,
+    "0to60": 6.1,
+    "handling": 71,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1719,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 69.32,
+    "ola": 65.57,
+    "description": "A normal Subie sedan with some punch of power. Card by Spence",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/804345862595674122/image0.jpg?width=1154&height=716",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/804346119693402152/image0.jpg?width=1154&height=718",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/804346150416416798/image0.jpg?width=1154&height=718",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/804346171162099742/image0.jpg?width=1154&height=718",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/804346215688437760/image0.jpg?width=1154&height=718",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/804346195907969044/image0.jpg?width=1154&height=718",
+    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/804346239004049428/image0.jpg?width=1154&height=718",
+
+
+    "333TopSpeed": 153,
+    "3330to60": 5.8,
+    "333Handling": 74,
+
+
+    "666TopSpeed": 157,
+    "6660to60": 5.3, 
+    "666Handling": 76,
+
+
+    "996TopSpeed": 161,
+    "9960to60": 4.9,
+    "996Handling": 76,
+
+
+    "969TopSpeed": 161,
+    "9690to60": 5.0,
+    "969Handling": 79,
+
+
+    "699TopSpeed": 157,
+    "6990to60": 5.1,
+    "699Handling": 79
+}

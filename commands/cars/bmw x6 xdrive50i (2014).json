@@ -1,0 +1,50 @@
+{
+    "rq": 77,
+    "make": "BMW",
+    "model": "X6 xDrive50i",
+    "modelYear": 2014,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 4.5,
+    "handling": 78,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 2304,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 71.43,
+    "ola": 93.88,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/804945125247156252/2014_BMW_X6_xDrive50i.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/804946142390517813/BMWX6000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/804946172195373106/BMWX6333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/804946204676456458/BMWX6666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/804946246619758612/BMWX6996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/804946291313868840/BMWX6969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 158,
+    "3330to60": 4.2,
+    "333Handling": 81,
+
+    "666TopSpeed": 161,
+    "6660to60": 4.0,
+    "666Handling": 84,
+
+    "996TopSpeed": 165,
+    "9960to60": 3.8,
+    "996Handling": 85,
+
+    "969TopSpeed": 164,
+    "9690to60": 3.9,
+    "969Handling": 86
+}

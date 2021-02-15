@@ -1,0 +1,54 @@
+{
+    "rq": 29,
+    "make": "Toyota",
+    "model": "Corolla Sprinter Trueno GT Apex",
+    "modelYear": 1985,
+    "country": "JP",
+    "topSpeed": 125,
+    "0to60": 8.7,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Year of the Ox"],
+    "isPrize": false,
+
+    "weight": 950,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 49.71,
+    "ola": 71.26,
+    "description": "Deja vu, I have been to this place before, higher on the streets, and I know it's my time to go. Card by bnuuy",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/803711909836226590/AE86REMASTERED.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/803711949019938886/AE86.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/803711959278551040/AE86333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/803711972445126676/AE86666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/803712067563028520/AE86996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/803712044746014760/AE86969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/803712019358154802/AE86669.png",
+
+    "333TopSpeed": 128,
+    "3330to60": 8.3,
+    "333Handling": 79,
+
+    "666TopSpeed": 131,
+    "6660to60": 7.9,
+    "666Handling": 83,
+
+	"996TopSpeed": 135,
+    "9960to60": 7.4,
+    "996Handling": 84,
+
+    "969TopSpeed": 134,
+    "9690to60": 7.5,
+    "969Handling": 85,
+
+	"699TopSpeed": 133,
+    "6990to60": 7.5,
+    "699Handling": 85
+}

@@ -1,0 +1,61 @@
+﻿{
+    "rq": 22,
+    "make": "Toyota",
+    "model": "Prius Touring",
+    "modelYear": 2016,
+    "country": "JP",
+    "topSpeed": 115,
+    "0to60": 10.4,
+    "handling": 72,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+
+
+    "weight": 1383,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 49.76,
+    "ola": 75.02,
+    "description": "First iteration of the Look I’m Edgy styling. Card by Connor",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/807985204697628672/E.ToyotaPriusTouring.png?width=1154&height=718",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/807985268699037756/E.ToyotaPriusTouring.png",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/807985321458270228/E.ToyotaPriusTouring-1star.png",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/807985377172127775/E.ToyotaPriusTouring-2star.png",
+    "racehud996": "",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/807985414638927902/E.ToyotaPriusTouring-969.png",
+    "racehud699": "",
+
+
+    "333TopSpeed": 118,
+    "3330to60": 9.6,
+    "333Handling": 74,
+
+
+    "666TopSpeed": 121,
+    "6660to60": 8.8, 
+    "666Handling": 78,
+
+
+    "996TopSpeed": 0,
+    "9960to60": 0,
+    "996Handling": 0,
+
+
+    "969TopSpeed": 123,
+    "9690to60": 8.0,
+    "969Handling": 80,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

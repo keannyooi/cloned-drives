@@ -1,0 +1,50 @@
+{
+    "rq": 97,
+    "make": "bugatti",
+    "model": "Veyron 16.4 Super Sport World Record Edition.",
+    "modelYear": 2010,
+    "country": "FR",
+    "topSpeed": 268,
+    "0to60": 2.5,
+    "handling": 89,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Hypercar", "Ultra Expensive"],
+    "isPrize": true,
+
+    "weight": 1830,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 104.17,
+    "ola": 96.00,
+    "description": "Officially recognised by Guiness World Records as the fastest production vehicle. Card by DodgeDemon.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/808551569720344586/overreacting_smp.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/807525793402978334/BugattiVeyronWRE000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/807525848705400842/BugattiVeyronWRE333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/807525891361472522/BugattiVeyronWRE666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/807525965734739968/BugattiVeyronWRE996.png",
+    "racehud969": "",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/807525929530163230/BugattiVeyronWRE699.png",
+
+    "333TopSpeed": 270,
+    "3330to60": 2.4,
+    "333Handling": 92,
+
+    "666TopSpeed": 272,
+    "6660to60": 2.3,
+    "666Handling": 95,
+
+    "996TopSpeed": 276,
+    "9960to60": 2.1,
+    "996Handling": 96,
+
+    "699TopSpeed": 274,
+    "6990to60": 2.2,
+    "699Handling": 99
+}

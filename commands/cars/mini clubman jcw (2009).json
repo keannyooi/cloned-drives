@@ -1,0 +1,61 @@
+﻿{
+    "rq": 45,
+    "make": "Mini",
+    "model": "Clubman JCW",
+    "modelYear": 2009,
+    "country": "DE",
+    "topSpeed": 148,
+    "0to60": 6.5,
+    "handling": 81,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Year of the Ox"],
+    "isPrize": false,
+
+
+    "weight": 1256,
+    "gc": "Medium",
+    "seatCount":4,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 72.88,
+    "ola": 86.82,
+    "description": "A unique hot estate that offers space and pace. Card by Havvy",
+
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/810468576103628850/Clubman.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/810468915058573322/ClubmanSt.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/810468924176728075/Clubman1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/810468928627015725/Clubman2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/810468948935049216/Clubman332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/810468937891971112/Clubman323.png",
+    "racehud699": "",
+
+
+    "333TopSpeed": 152,
+    "3330to60": 6.1,
+    "333Handling": 84,
+
+
+    "666TopSpeed": 157,
+    "6660to60": 5.7, 
+    "666Handling": 87,
+
+
+    "996TopSpeed": 161,
+    "9960to60": 5.1,
+    "996Handling": 87,
+
+
+    "969TopSpeed": 161,
+    "9690to60": 5.3,
+    "969Handling": 90,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

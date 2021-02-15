@@ -1,0 +1,50 @@
+{
+    "rq": 99,
+    "make": "De Tomaso",
+    "model": "P72",
+    "modelYear": 2021,
+    "country": "IT",
+    "topSpeed": 221,
+    "0to60": 2.0,
+    "handling": 97,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": true,
+
+    "weight": 1100,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 100.00,
+    "ola": 80.00,
+    "description": "De Tomaso's Return Sponsored by Raid Shadow Legends. Card by DodgeDemon.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/806969863012220968/2021_De_Tomaso_P72.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/806970198284173332/DeTomatoP72000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/806970274737946668/DeTomatoP72333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/806970378642784266/DeTomatoP72666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/806970534821888010/DeTomatoP72996.png",
+    "racehud969": "",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/806970473345843251/DeTomatoP72699.png",
+
+    "333TopSpeed": 223,
+    "3330to60": 1.9,
+    "333Handling": 100,
+
+    "666TopSpeed": 225,
+    "6660to60": 1.9,
+    "666Handling": 104,
+
+    "996TopSpeed": 229,
+    "9960to60": 1.7,
+    "996Handling": 105,
+
+    "699TopSpeed": 227,
+    "6990to60": 1.8,
+    "699Handling": 108
+}

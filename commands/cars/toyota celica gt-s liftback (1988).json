@@ -1,0 +1,47 @@
+{
+    "rq": 30,
+    "make": "Toyota",
+    "model": "Celica GT-S Liftback",
+    "modelYear": 1988,
+    "country": "JP",
+    "topSpeed": 126,
+    "0to60": 8.4,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1340,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 52.17,
+    "ola": 71.43,
+    "description": "In 1986, Toyota switched its iconic Celica from rear- to front-wheel drive. But it didn't ruin the car. Card by Connor",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/810099221922578442/D.ToyotaCelicaGTSLiftback.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/810099393562542090/D.ToyotaCelicaGTSLiftback.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/810099405381566485/D.ToyotaCelicaGTSLiftback-1star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/810099410716983316/D.ToyotaCelicaGTSLiftback-2star.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/810099418924580884/D.ToyotaCelicaGTSLiftback-969.png",
+	  "racehud699": "",
+
+    "333TopSpeed": 129,
+    "3330to60": 7.9,
+    "333Handling": 75,
+
+    "666TopSpeed": 132,
+    "6660to60": 7.4,
+    "666Handling": 79,
+
+  	"969TopSpeed": 134,
+    "9690to60": 6.0,
+    "969Handling": 79
+
+}

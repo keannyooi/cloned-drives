@@ -1,0 +1,54 @@
+{
+    "rq": 36,
+    "make": "Jaguar",
+    "model": "E-Type 3.8",
+    "modelYear": 1961,
+    "country": "GB",
+    "topSpeed": 150,
+    "0to60": 7.2,
+    "handling": 68,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Silver Screen", "Year of the Ox"],
+    "isPrize": false,
+
+    "weight": 1256,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 75.79,
+    "ola": 83.33,
+    "description": "Even Enzo Ferrari himself called it the most beautiful car ever made. Card by Spence",
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/803998922028613642/image0.jpg?width=1154&height=716",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/803998999710924808/image0.jpg?width=1154&height=722",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/803999024105390120/image0.jpg?width=1154&height=722",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/803999042051768370/image0.jpg?width=1154&height=722",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/803999114575609857/image0.jpg?width=1154&height=722",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/803999089095082024/image0.jpg?width=1154&height=722",
+    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/803999138655764540/image0.jpg?width=1154&height=722",
+
+    "333TopSpeed": 154,
+    "3330to60": 6.7,
+    "333Handling": 70,
+
+    "666TopSpeed": 158,
+    "6660to60": 6.3, 
+    "666Handling": 73,
+
+    "996TopSpeed": 162,
+    "9960to60": 5.6,
+    "996Handling": 73,
+
+    "969TopSpeed": 162,
+    "9690to60": 5.8,
+    "969Handling": 75,
+
+    "699TopSpeed": 158,
+    "6990to60": 5.8,
+    "699Handling": 75
+}

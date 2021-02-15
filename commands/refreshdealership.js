@@ -23,7 +23,6 @@ module.exports = {
 	execute(message) {
 		try {
 			const db = message.client.db;
-
 			refresh();
 			db.set("lastDealershipRefresh", moment().format("L"));
 
@@ -33,6 +32,7 @@ module.exports = {
 				.setTitle("Successfully refreshed dealership!")
 				.setDescription("Check out what's in stock using `cd-dealership`!")
 				.setTimestamp();
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 			return message.channel.send(deckScreen);
 
 			async function refresh() {
@@ -101,7 +101,11 @@ module.exports = {
 							stock = 5;
 						}
 					}
-					currentName = `${currentCard["make"]} ${currentCard["model"]} (${currentCard["modelYear"]})`;
+					let make = currentCard["make"];
+					if (typeof make === "object") {
+						make = currentCard["make"][0];
+					}
+					currentName = `${make} ${currentCard["model"]} (${currentCard["modelYear"]})`;
 					price = definePrice(currentCard["rq"]);
 					catalog[i] = { carFile: currentName.toLowerCase(), price: price, stock: stock };
 					i++;
@@ -148,6 +152,7 @@ module.exports = {
 		}
 		catch (error) {
 			console.log(error);
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 			const errorMessage = new Discord.MessageEmbed()
 				.setColor("#fc0303")
 				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -158,20 +163,17 @@ module.exports = {
 		}
 
 		function definePrice(rq) {
-			if (rq > 79) { //leggie
-				return 1000000 + (Math.floor(Math.random() * 1000000));
-			}
-			else if (rq > 64 && rq <= 79) { //epic
-				return 384000 + (Math.floor(Math.random() * 384000));
+			if (rq > 64 && rq <= 79) { //epic
+				return 384000 + (Math.floor(Math.random() * 100000));
 			}
 			else if (rq > 49 && rq <= 64) { //ultra
-				return 96000 + (Math.floor(Math.random() * 192000));
+				return 96000 + (Math.floor(Math.random() * 96000));
 			}
 			else if (rq > 39 && rq <= 49) { //super
-				return 24000 + (Math.floor(Math.random() * 24000));
+				return 24000 + (Math.floor(Math.random() * 12000));
 			}
 			else if (rq > 29 && rq <= 39) { //rare
-				return 8000 + (Math.floor(Math.random() * 16000));
+				return 8000 + (Math.floor(Math.random() * 4000));
 			}
 			else if (rq > 19 && rq <= 29) { //uncommon
 				return 2000 + (Math.floor(Math.random() * 2000));

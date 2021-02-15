@@ -17,73 +17,180 @@ module.exports = {
 	isExternal: false,
     adminOnly: true,
     description: "Removes a certain amount of fuse tokens from someone.",
-    async execute(message, args) {
+    execute(message, args) {
         const db = message.client.db;
         const fuseEmoji = message.guild.emojis.cache.find(emoji => emoji.name === "fuse");
-        var userName = args[0].toLowerCase();
-        var user, member;
-        message.guild.members.cache.forEach(User => {
-            if (message.guild.member(User).displayName.toLowerCase().includes(userName)) {
-                console.log("found!");
-                user = User.user;
-                member = message.guild.member(User);
-            }
-        });
-        const amount = Math.ceil(parseInt(args[1]));
-        if (isNaN(amount) || amount < 1) {
-            const errorMessage = new Discord.MessageEmbed()
-                .setColor("#fc0303")
-                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle("Error, fuse token amount provided is either not a number or smaller than 1.")
-                .setDescription("The amount of fuse tokens you want to remove should always be a positive number, i.e: `133`, `7`, etc.")
-                .setTimestamp();
-            return message.channel.send(errorMessage);
-        }
+    	const filter = response => {
+            return response.author.id === message.author.id;
+        };
 
-        if (!user) {
-            const errorMessage = new Discord.MessageEmbed()
-                .setColor("#fc0303")
-                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle("Error, 404 user not found.")
-                .setDescription("It looks like this user isn't in this server.")
-                .setTimestamp();
-            return message.channel.send(errorMessage);
-        }
-        else if (user.bot) {
-            const errorMessage = new Discord.MessageEmbed()
-                .setColor("#fc0303")
-                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle("Error, user requested is a bot.")
-                .setDescription("Bots can't play Cloned Drives.")
-                .setTimestamp();
-            return message.channel.send(errorMessage);
-        }
+        if (message.mentions.users.first()) {
+			if (!message.mentions.users.first().bot) {
+				addStuff(message.mentions.users.first());
+			}
+			else {
+				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+				const errorMessage = new Discord.MessageEmbed()
+					.setColor("#fc0303")
+					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+					.setTitle("Error, user requested is a bot.")
+					.setDescription("Bots can't play Cloned Drives.")
+					.setTimestamp();
+				return message.channel.send(errorMessage);
+			}
+		}
+		else {
+			let userName = args[0].toLowerCase();
+			let userList = [];
+			message.guild.members.cache.forEach(User => {
+				if ((User.displayName.toLowerCase().includes(userName) || User.user.username.toLowerCase().includes(userName)) && !User.user.bot) {
+					userList.push(User.user);
+				}
+			});
 
-        const playerData = await db.get(`acc${user.id}`);
-        if (parseInt(amount) <= playerData.fuseTokens) {
-            playerData.fuseTokens -= parseInt(amount);
-            await db.set(`acc${user.id}`, playerData);
+			if (userList.length > 1) {
+				let textList = "";
+				for (i = 1; i <= userList.length; i++) {
+					textList += `${i} - ${userList[i - 1].tag}\n`;
+				}
 
-            const infoScreen = new Discord.MessageEmbed()
-                .setColor("#03fc24")
-                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle(`Successfully removed ${fuseEmoji}${amount} from ${member.displayName}'s fuse token balance!`)
-                .setDescription(`Current Fuse Token Balance: ${fuseEmoji}${playerData.fuseTokens}`)
-                .setTimestamp();
-            return message.channel.send(infoScreen);
-        }
-        else {
-            const errorMessage = new Discord.MessageEmbed()
-                .setColor("#fc0303")
-                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle("Error, a user's balance cannot be in the negatives.")
-                .setDescription("The amount of money that can be taken away should not be bigger than the user's money balance")
-                .addFields(
-                    { name: `${member.displayName}'s Fuse Token Balance`, value: `${fuseEmoji}${playerData.fuseTokens}`, inline: true },
-                    { name: "Amount You Are Tyring to Take Away", value: `${fuseEmoji}${parseInt(amount)}`, inline: true }
-                )
-                .setTimestamp();
-            return message.channel.send(errorMessage);
-        }
+				if (textList.length > 2048) {
+					message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+					const errorMessage = new Discord.MessageEmbed()
+						.setColor("#fc0303")
+						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+						.setTitle("Error, too many search results.")
+						.setDescription("Due to Discord's embed limitations, the bot isn't able to show the full list of search results. Try again with a more specific keyword.")
+						.setTimestamp();
+					return message.channel.send(errorMessage);
+				}
+
+				const infoScreen = new Discord.MessageEmbed()
+					.setColor("#34aeeb")
+					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+					.setTitle("Multiple users found, please type one of the following.")
+					.setDescription(textList)
+					.setTimestamp();
+
+				message.channel.send(infoScreen).then(currentMessage => {
+					message.channel.awaitMessages(filter, {
+						max: 1,
+						time: 30000,
+						errors: ["time"]
+					})
+						.then(collected => {
+							collected.first().delete();
+							if (isNaN(collected.first().content) || parseInt(collected.first().content) > userList.length || parseInt(collected.first().content) < 1) {
+								message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+								const errorMessage = new Discord.MessageEmbed()
+									.setColor("#fc0303")
+									.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+									.setTitle("Error, invalid integer provided.")
+									.setDescription("It looks like your response was either not a number or not part of the selection.")
+									.setTimestamp();
+								return currentMessage.edit(errorMessage);
+							}
+							else {
+								removeStuff(userList[parseInt(collected.first().content) - 1], currentMessage);
+							}
+						})
+						.catch(() => {
+							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+							const cancelMessage = new Discord.MessageEmbed()
+								.setColor("#34aeeb")
+								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+								.setTitle("Action cancelled automatically.")
+								.setTimestamp();
+							return currentMessage.edit(cancelMessage);
+						});
+				});
+			}
+			else if (userList.length > 0) {
+				removeStuff(userList[0]);
+			}
+			else {
+				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+				const errorMessage = new Discord.MessageEmbed()
+					.setColor("#fc0303")
+					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+					.setTitle("Error, 404 user not found.")
+					.setDescription("It looks like this user isn't in this server.")
+					.setTimestamp();
+				return message.channel.send(errorMessage);
+			}
+		}
+
+        async function removeStuff(user, currentMessage) {
+			const amount = Math.ceil(parseInt(args[1]));
+			if (isNaN(amount)) {
+				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
+				const errorMessage = new Discord.MessageEmbed()
+					.setColor("#fc0303")
+					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+					.setTitle("Error, money amount provided is not a number.")
+					.setDescription("The amount of money you want to remove should always be a number, i.e: `133`, `7`, etc.")
+					.setTimestamp();
+				if (currentMessage) {
+					return currentMessage.edit(errorMessage);
+				}
+				else {
+					return message.channel.send(errorMessage);
+				}
+			}
+			else if (parseInt(amount) < 1) {
+				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
+				const errorMessage = new Discord.MessageEmbed()
+					.setColor("#fc0303")
+					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+					.setTitle("Error, money amount provided is less than or equal to 0.")
+					.setDescription("The amount of money you want to remove should always be bigger than 0.")
+					.setTimestamp();
+				if (currentMessage) {
+					return currentMessage.edit(errorMessage);
+				}
+				else {
+					return message.channel.send(errorMessage);
+				}
+			}
+
+			let fuseTokens = await db.get(`acc${user.id}.fuseTokens`);
+			if (amount <= fuseTokens) {
+				fuseTokens -= amount;
+				await db.set(`acc${user.id}.fuseTokens`, fuseTokens);
+				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
+
+				const infoScreen = new Discord.MessageEmbed()
+					.setColor("#03fc24")
+					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+					.setTitle(`Successfully removed ${fuseEmoji}${amount} from ${member.displayName}'s fuse token balance!`)
+					.setDescription(`Current Fuse Token Balance: ${fuseEmoji}${fuseTokens}`)
+					.setTimestamp();
+				if (currentMessage) {
+					return currentMessage.edit(infoScreen);
+				}
+				else {
+					return message.channel.send(infoScreen);
+				}
+			}
+			else {
+				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
+				const errorMessage = new Discord.MessageEmbed()
+					.setColor("#fc0303")
+					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+					.setTitle("Error, a user's balance cannot be in the negatives.")
+					.setDescription("The amount of money that can be taken away should not be bigger than the user's money balance")
+					.addFields(
+						{ name: `${member.displayName}'s Fuse Token Balance`, value: `${fuseEmoji}${fuseTokens}`, inline: true },
+						{ name: "Amount You Are Tyring to Take Away", value: `${fuseEmoji}${amount}`, inline: true }
+					)
+					.setTimestamp();
+				if (currentMessage) {
+					return currentMessage.edit(errorMessage);
+				}
+				else {
+					return message.channel.send(errorMessage);
+				}
+			}
+		}
     }
 }

@@ -1,0 +1,50 @@
+{
+    "rq": 100,
+    "make": "Bugatti",
+    "model": "Chiron Sport",
+    "modelYear": 2018,
+    "country": "FR",
+    "topSpeed": 261,
+    "0to60": 2.4,
+    "handling": 92,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Hypercar", "Ultra Expensive"],
+    "isPrize": false,
+
+    "weight": 1978,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 120.00,
+    "ola": 108.33,
+    "description": "Sport go brrrrrr. Card by DodgeDemon.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/807522601818914846/2018_Bugatti_Chiron_Sport.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/807522716848357396/BugattiChironS000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/807522755745546240/BugattiChironS333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/807522805155495956/BugattiChironS666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/807522905575391232/BugattiChironS996.png",
+    "racehud969": "",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/807522863074115635/BugattiChironS699.png",
+
+    "333TopSpeed": 263,
+    "3330to60": 2.3,
+    "333Handling": 95,
+
+    "666TopSpeed": 265,
+    "6660to60": 2.2,
+    "666Handling": 98,
+
+    "996TopSpeed": 269,
+    "9960to60": 2.0,
+    "996Handling": 99,
+
+    "699TopSpeed": 267,
+    "6990to60": 2.1,
+    "699Handling": 102
+}

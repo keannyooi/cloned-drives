@@ -1,0 +1,61 @@
+﻿{
+    "rq": 26,
+    "make": "Volkswagen",
+    "model": "Golf GTI 1.8 16v",
+    "modelYear": 1986,
+    "country": "DE",
+    "topSpeed": 127,
+    "0to60": 7.8,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch"],
+    "isPrize": false,
+
+
+    "weight": 907,
+    "gc": "Low",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 52.13,
+    "ola": 71.43,
+    "description": "The classiest and most complete hot hatch of its era. Card by Andu ",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/805393364529840128/GTI2.png?width=1154&height=719",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/805394101746925588/Golf2.png",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/805394109933027338/Golf21.png",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/805394115914366996/Golf22.png",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/805394135287595018/Golf2332.png",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/805394124386598927/Golf2323.png",
+    "racehud699": "",
+
+
+    "333TopSpeed": 130,
+    "3330to60": 7.3,
+    "333Handling": 75,
+
+
+    "666TopSpeed": 133,
+    "6660to60": 6.8, 
+    "666Handling": 78,
+
+
+    "996TopSpeed": 137,
+    "9960to60": 6.1,
+    "996Handling": 79,
+
+
+    "969TopSpeed": 136,
+    "9690to60": 6.3,
+    "969Handling": 81,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

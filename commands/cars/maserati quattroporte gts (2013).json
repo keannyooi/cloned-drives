@@ -1,0 +1,54 @@
+{
+    "rq": 63,
+    "make": "Maserati",
+    "model": "Quattroporte GTS",
+    "modelYear": 2013,
+    "country": "IT",
+    "topSpeed": 182,
+    "0to60": 4.4,
+    "handling": 82,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1900,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 73.33,
+    "ola": 104.55,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/804958187966169088/2013_Maserati_Quattroporte_GTS.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/804958358951690240/MaseratiGTS000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/804958386848006144/MaseratiGTS333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/804958428970614804/MaseratiGTS666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/804958473614917653/MaseratiGTS996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/804958512408952882/MaseratiGTS969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/804958524944678952/MaseratiGTS699.png",
+
+    "333TopSpeed": 185,
+    "3330to60": 4.1,
+    "333Handling": 85,
+
+    "666TopSpeed": 188,
+    "6660to60": 3.9,
+    "666Handling": 88,
+
+    "996TopSpeed": 192,
+    "9960to60": 3.7,
+    "996Handling": 89,
+
+    "969TopSpeed": 191,
+    "9690to60": 3.8,
+    "969Handling": 91,
+
+    "699TopSpeed": 190,
+    "6990to60": 3.8,
+    "699Handling": 91
+}

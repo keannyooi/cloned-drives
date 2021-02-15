@@ -1,0 +1,61 @@
+﻿{
+    "rq": 24,
+    "make": "Volvo",
+    "model": "960",
+    "modelYear": 1990,
+    "country": "SE",
+    "topSpeed": 133,
+    "0to60": 9.1,
+    "handling": 66,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1500,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 57.10,
+    "ola": 81.77,
+    "description": "The only car in the world that has 204 hp, 24-Valve engine, a computerized 4-Speed transmission, abs brakes and the added luxury of being a Volvo. Card by Havvy",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/804814822780305418/unknown.png?width=1154&height=718",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/804814979731030016/0009601.png?width=1154&height=718",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/804814985724821564/1119601.png?width=1154&height=718",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/804814991441788929/2229601.png?width=1154&height=718",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/804815019237310488/3329601.png?width=1154&height=718",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/804815005164765224/3239601.png?width=1154&height=718",
+    "racehud699": "",
+
+
+    "333TopSpeed": 137,
+    "3330to60": 8.5,
+    "333Handling": 68,
+
+
+    "666TopSpeed": 140,
+    "6660to60": 7.8, 
+    "666Handling": 71,
+
+
+    "996TopSpeed": 144,
+    "9960to60": 7.0,
+    "996Handling": 71,
+
+
+    "969TopSpeed": 144,
+    "9690to60": 7.2,
+    "969Handling": 73,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

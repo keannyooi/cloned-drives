@@ -1,0 +1,50 @@
+{
+    "rq": 48,
+    "make": ["Saleen", "Ford"],
+    "model": "S121 N2O",
+    "modelYear": 2005,
+    "country": "US",
+    "topSpeed": 149,
+    "0to60": 6.1,
+    "handling": 85,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch"],
+    "isPrize": false,
+
+    "weight": 1188,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 71.60,
+    "ola": 85.95,
+    "description": "Saleen placed a nitrous bottle at the back of a Focus for more booscht. Card by keanny",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/808669427511984148/saleen_s121_n2o.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/808668418786066482/saleen_n2o_focus.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/808668437685076018/saleen_n2o_focus_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/808668445414916156/saleen_n2o_focus_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/809391980593152040/saleen_n2o_focus_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/808668701548740638/saleen_n2o_focus_969.jpg",
+    "racehud699": "",
+
+    "333TopSpeed": 153,
+    "3330to60": 5.7,
+    "333Handling": 88,
+
+    "666TopSpeed": 157,
+    "6660to60": 5.3,
+    "666Handling": 91,
+
+    "996TopSpeed": 161,
+    "9960to60": 4.9,
+    "996Handling": 91,
+
+    "969TopSpeed": 161,
+    "9690to60": 5.0,
+    "969Handling": 94
+}

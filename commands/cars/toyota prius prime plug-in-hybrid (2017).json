@@ -1,0 +1,46 @@
+{
+    "rq": 20,
+    "make": "Toyota",
+    "model": "Prius Prime Plug-in-Hybrid",
+    "modelYear": 2017,
+    "country": "JP",
+    "topSpeed": 104,
+    "0to60": 10.4,
+    "handling": 75,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+
+    "weight": 1530,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 48.60,
+    "ola": 73.00,
+    "description": "Card by Connor",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/807984756695760905/E.ToyotaPriusPluginHybrid.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/807984897032585226/E.ToyotaPriusPrime.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/807984965404983306/E.ToyotaPriusPrime-1star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/807985002608197632/E.ToyotaPriusPrime-2star.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/807985063181942804/E.ToyotaPriusPrime-969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 107,
+    "3330to60": 9.6,
+    "333Handling": 77,
+
+    "666TopSpeed": 110,
+    "6660to60": 8.8,
+    "666Handling": 81,
+
+    "969TopSpeed": 112,
+    "9690to60": 8.0,
+    "969Handling": 83
+}

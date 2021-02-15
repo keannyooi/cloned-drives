@@ -1,0 +1,50 @@
+{
+    "rq": 73,
+    "make": "Jaguar",
+    "model": "F-PACE S",
+    "modelYear": 2016,
+    "country": "GB",
+    "topSpeed": 155,
+    "0to60": 5.2,
+    "handling": 77,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1775,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 77.67,
+    "ola": 64.78,
+    "description": "Card by Havvy.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/803263294001250365/JAGUARF-PACES.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/803263527174275072/000fpace.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/803263538852134932/111fpace.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/803263547589132298/222fpace.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/803263564089131018/332fpace.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/803263556148789288/323fpace.png",
+    "racehud699": "",
+
+    "333TopSpeed": 159,
+    "3330to60": 4.9,
+    "333Handling": 80,
+
+    "666TopSpeed": 163,
+    "6660to60": 4.6,
+    "666Handling": 82,
+
+    "996TopSpeed": 167,
+    "9960to60": 4.2,
+    "996Handling": 82,
+
+    "969TopSpeed": 167,
+    "9690to60": 4.3,
+    "969Handling": 85
+}

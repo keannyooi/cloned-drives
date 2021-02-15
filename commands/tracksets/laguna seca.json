@@ -1,0 +1,18 @@
+{
+	"trackName": "Laguna Seca",
+	"weather": "Sunny",
+	"surface": "Asphalt",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://cdn.discordapp.com/attachments/716917404868935691/809756540394930196/unknown.png",
+	"map": "https://cdn.discordapp.com/attachments/716917404868935691/809756286266638336/unknown.png",
+	
+	"specsDistr": {
+		"topSpeed": 0,
+		"0to60": 80,
+		"handling": 80,
+		"weight": 0,
+		"mra": 40,
+		"ola": 30
+	}
+}

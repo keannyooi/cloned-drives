@@ -98,12 +98,13 @@ module.exports = {
                     if (all[i].ID.startsWith("acc")) {
                         const id = all[i].ID.substring(3);
                         if (message.guild.member(id) && !message.client.users.cache.find(user => user.id === id).bot) {
-                            lb.push({ name: message.guild.members.cache.get(id).displayName, value: all[i].data.rrWinStreak });
+                            lb.push({ name: message.guild.members.cache.get(id).displayName, value: all[i].data.rrWinStreak || 0 });
                         }
                     }
                 }
 				break;
             default:
+				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                 const errorScreen = new Discord.MessageEmbed()
                     .setColor("#fc0303")
                     .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -151,6 +152,7 @@ module.exports = {
         }
 
         if (page < 0 || totalPages < page) {
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             const errorScreen = new Discord.MessageEmbed()
                 .setColor("#fc0303")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -172,6 +174,7 @@ module.exports = {
             )
             .setFooter(`Showing places ${startsWith + 1} to ${endsWith} - React with ⬅️ or ➡️ to navigate through pages.`)
             .setTimestamp();
+		message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
         message.channel.send(infoScreen).then(infoMessage => {
             console.log(reactionIndex);
             switch (reactionIndex) {

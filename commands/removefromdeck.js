@@ -23,6 +23,7 @@ module.exports = {
         const deckName = args[0].toLowerCase();
         const index = Math.ceil(parseInt(args[1]));
         if (isNaN(index) || index > 5 || index < 1) {
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             const errorMessage = new Discord.MessageEmbed()
                 .setColor("#fc0303")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -63,8 +64,9 @@ module.exports = {
                     errors: ['time']
                 })
                     .then(collected => {
+						collected.first().delete();
                         if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
-                            collected.first().delete();
+							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                             const errorMessage = new Discord.MessageEmbed()
                                 .setColor("#fc0303")
                                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -74,12 +76,11 @@ module.exports = {
                             return currentMessage.edit(errorMessage);
                         }
                         else {
-                            let currentDeck = searchResults[parseInt(collected.first()) - 1].deck;
-                            collected.first().delete();
-                            removeCar(currentDeck, parseInt(index), currentMessage);
+                            removeCar(searchResults[parseInt(collected.first()) - 1].deck, parseInt(index), currentMessage);
                         }
                     })
                     .catch(() => {
+						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                         const cancelMessage = new Discord.MessageEmbed()
                             .setColor("#34aeeb")
                             .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -93,6 +94,7 @@ module.exports = {
             removeCar(searchResults[0], parseInt(index));
         }
         else {
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             const errorMessage = new Discord.MessageEmbed()
                 .setColor("#fc0303")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -105,6 +107,7 @@ module.exports = {
         async function removeCar(currentDeck, index, currentMessage) {
             const currentCar = currentDeck.hand[index - 1];
             if (currentCar === "None") {
+				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
                 const errorMessage = new Discord.MessageEmbed()
                     .setColor("#fc0303")
                     .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -151,6 +154,7 @@ module.exports = {
                         case "✅":
                             currentDeck.hand[index - 1] = "None";
                             await db.set(`acc${message.author.id}`, playerData);
+							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
 
                             const infoScreen = new Discord.MessageEmbed()
                                 .setColor("#34aeeb")
@@ -161,6 +165,7 @@ module.exports = {
                             return reactionMessage.edit(infoScreen);
                         case "❎":
                             reactionMessage.reactions.removeAll();
+							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
                             const cancelMessage = new Discord.MessageEmbed()
                                 .setColor("#34aeeb")
                                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -173,6 +178,7 @@ module.exports = {
                 })
                 .catch(() => {
                     reactionMessage.reactions.removeAll();
+					message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
                     const cancelMessage = new Discord.MessageEmbed()
                         .setColor("#34aeeb")
                         .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))

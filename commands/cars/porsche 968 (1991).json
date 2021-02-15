@@ -1,0 +1,61 @@
+﻿{
+    "rq": 46,
+    "make": "Porsche",
+    "model": "968",
+    "modelYear": 1991,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 6.0,
+    "handling": 82,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1370,
+    "gc": "Low",
+    "seatCount":4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 63.22,
+    "ola": 73.13,
+    "description": "Best remembered for the tactile Club Sport, this bridged the gap between 944 and Boxster. Card by Havvy",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/804401494639771688/Porsche968.png?width=1154&height=718",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/804401559411621968/000968.png?width=1154&height=718",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/804401578571464724/111968.png?width=1154&height=718",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/804401584674439168/222968.png?width=1154&height=718",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/804401598767824906/332968.png?width=1154&height=718",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/804401593466224640/323968.png?width=1154&height=718",
+    "racehud699": "",
+
+
+    "333TopSpeed": 159,
+    "3330to60": 5.6,
+    "333Handling": 85,
+
+
+    "666TopSpeed": 163,
+    "6660to60": 5.3, 
+    "666Handling": 88,
+
+
+    "996TopSpeed": 167,
+    "9960to60": 4.8,
+    "996Handling": 88,
+
+
+    "969TopSpeed": 167,
+    "9690to60": 4.9,
+    "969Handling": 91,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

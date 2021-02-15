@@ -1,12 +1,12 @@
 {
-    "rq": 66,
+    "rq": 67,
     "make": "GMC",
     "model": "Syclone",
     "modelYear": 1991,
     "country": "US",
     "topSpeed": 126,
-    "0to60": 5.3,
-    "handling": 72,
+    "0to60": 5.0,
+    "handling": 73,
     "driveType": "4WD",
     "tyreType": "Standard",
     "tags": ["American Wilds", "Sleeper"],
@@ -22,25 +22,25 @@
     "fuelType": "Petrol",
     "mra": 42.40,
     "ola": 60.38,
-    "description": "",
+    "description": "Card by Keanny.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/725266959905849384/gmc_syclone.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/725283871821791252/gmc_syclone.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/725283916713295872/gmc_syclone_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/725283929703186472/gmc_syclone_666.jpg",
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/806818002338054144/gmc_syclone.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/806461859036266496/syclone.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/806461886354292803/syclone_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/806461903240953906/syclone_666.jpg",
     "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/725283941556420638/gmc_syclone_969.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/806461913243320350/syclone_969.jpg",
     "racehud699": "",
 
     "333TopSpeed": 129,
-    "3330to60": 5.0,
-    "333Handling": 74,
+    "3330to60": 4.7,
+    "333Handling": 76,
 
     "666TopSpeed": 133,
-    "6660to60": 4.7,
-    "666Handling": 77,
+    "6660to60": 4.4,
+    "666Handling": 78,
 
     "969TopSpeed": 136,
-    "9690to60": 4.4,
-    "969Handling": 80
+    "9690to60": 4.1,
+    "969Handling": 81
 }

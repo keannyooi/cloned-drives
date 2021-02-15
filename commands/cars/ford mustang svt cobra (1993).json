@@ -1,0 +1,61 @@
+﻿{
+    "rq": 43,
+    "make": "Ford",
+    "model": "Mustang SVT Cobra",
+    "modelYear": 1993,
+    "country": "US",
+    "topSpeed": 141,
+    "0to60": 5.8,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Muscle Car"],
+    "isPrize": false,
+
+
+    "weight": 1476,
+    "gc": "Low",
+    "seatCount":4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 60.43,
+    "ola": 82.76,
+    "description": "One of the best things about a standard Mustang 5.0 is its low-rpm squirt. This is where the Mustang Cobra frustrates. Sure, it's got the beans to rip your head off when you've strained the tach needle deep into the vast yellow zone, but drop below about 2500 rpm, and there's little forward thrust.. Card by Preston",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/806790852114120744/Ford_Mustang_SVT_Cobra_1993.png?width=1154&height=718",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/805295239299989515/Cobra_thumb_000.png",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/805295268911906847/Cobra_thumb_333.png",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/805295299429269504/Cobra_thumb_666.png",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/805295357356408842/Cobra_thumb_996.png",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/805295332425859102/Cobra_thumb_969.png",
+    "racehud699": "",
+
+
+    "333TopSpeed": 145,
+    "3330to60": 5.4,
+    "333Handling": 80,
+
+
+    "666TopSpeed": 149,
+    "6660to60": 5.0, 
+    "666Handling": 83,
+
+
+    "996TopSpeed": 153,
+    "9960to60": 4.6,
+    "996Handling": 83,
+
+
+    "969TopSpeed": 153,
+    "9690to60": 4.8,
+    "969Handling": 85,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

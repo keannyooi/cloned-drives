@@ -1,0 +1,61 @@
+﻿{
+    "rq": 44,
+    "make": "Volkswagen",
+    "model": "Golf GTI",
+    "modelYear": 2004,
+    "country": "DE",
+    "topSpeed": 143,
+    "0to60": 6.4,
+    "handling": 80,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch", "Driver’s Choice"],
+    "isPrize": false,
+
+
+    "weight": 1372,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 62.30,
+    "ola": 77.88,
+    "description": "Back to greatness. Card by Andu ",
+
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/810569913818153070/GolfGTI5.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/810569998011465728/GolfGTI5sT.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/810570004058865715/GolfGTI51.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/810570007867686972/GolfGTI52.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/810570034316312576/GolfGTI5332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/810570026440065054/GolfGTI5323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/810570017225310208/GolfGTI5233.png",
+
+
+    "333TopSpeed": 146,
+    "3330to60": 6.0,
+    "333Handling": 83,
+
+
+    "666TopSpeed": 150,
+    "6660to60": 5.6, 
+    "666Handling": 86,
+
+
+    "996TopSpeed": 156,
+    "9960to60": 5.0,
+    "996Handling": 86,
+
+
+    "969TopSpeed": 153,
+    "9690to60": 5.2,
+    "969Handling": 89,
+
+
+    "699TopSpeed": 149,
+    "6990to60": 5.3,
+    "699Handling": 89
+}

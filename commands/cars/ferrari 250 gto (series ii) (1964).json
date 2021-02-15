@@ -1,0 +1,61 @@
+﻿{
+    "rq": 46,
+    "make": "Ferrari",
+    "model": "250 GTO (Series II)",
+    "modelYear": 1964,
+    "country": "IT",
+    "topSpeed": 144,
+    "0to60": 5.8,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Motorsport"],
+    "isPrize": true,
+
+
+    "weight": 880,
+    "gc": "Low",
+    "seatCount":2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 84.06,
+    "ola": 79.31,
+    "description": "Expensive car pt.2. Card by DodgeDemon",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/805477261288538152/image0.png?width=1154&height=718",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/805477332184858664/image0.jpg?width=1154&height=721",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/805477355048403014/image0.jpg?width=1154&height=721",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/805477373574119424/image0.jpg?width=1154&height=721",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/805477439379603456/image0.jpg?width=1154&height=721",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/805477395472580668/image0.jpg?width=1154&height=721",
+    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/805477466238877716/image0.jpg?width=1154&height=721",
+
+
+    "333TopSpeed": 148,
+    "3330to60": 5.4,
+    "333Handling": 80,
+
+
+    "666TopSpeed": 152,
+    "6660to60": 5.1, 
+    "666Handling": 83,
+
+
+    "996TopSpeed": 156,
+    "9960to60": 4.6,
+    "996Handling": 83,
+
+
+    "969TopSpeed": 156,
+    "9690to60": 4.8,
+    "969Handling": 85,
+
+
+    "699TopSpeed": 152,
+    "6990to60": 4.8,
+    "699Handling": 85
+}

@@ -1,0 +1,50 @@
+{
+    "rq": 35,
+    "make": "Dodge",
+    "model": "Charger RT 440",
+    "modelYear": 1969,
+    "country": "US",
+    "topSpeed": 131,
+    "0to60": 5.7,
+    "handling": 67,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Muscle Car", "Silver Screen", "Style Icon", "Servers Choice"],
+    "isPrize": false,
+
+    "weight": 1639,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 64.77,
+    "ola": 73.68,
+    "description": "Card by DodgeDemon",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/807279490476277770/1969_Dodge_Charger_RT_440.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/807279578385088565/DodgeChargerRT440000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/807279634118737961/DodgeChargerRT440333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/807279680527794206/DodgeChargerRT440666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/807279793526669402/DodgeChargerRT440996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/807279783485898762/DodgeChargerRT440969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 134,
+    "3330to60": 5.4,
+    "333Handling": 69,
+
+    "666TopSpeed": 137,
+    "6660to60": 5.2,
+    "666Handling": 72,
+
+    "996TopSpeed": 141,
+    "9960to60": 4.9,
+    "996Handling": 73,
+
+	"969TopSpeed": 140,
+    "9690to60": 5.0,
+    "969Handling": 74
+}

@@ -3,15 +3,16 @@
 	"weather": "Sunny",
 	"surface": "Dirt",
 	"speedbumps": 0,
-	"humps": 100,
+	"humps": 10,
 	"background": "https://cdn.discordapp.com/attachments/716917404868935691/794175140216045599/unknown.png",
+	"map": "https://cdn.discordapp.com/attachments/716917404868935691/809396387795304468/unknown.png",
 	
 	"specsDistr": {
 		"topSpeed": 0,
 		"0to60": 100,
 		"handling": 0,
-		"weight": -50,
-		"mra": 10,
+		"weight": 0,
+		"mra": 0,
 		"ola": 30
 	}
 }

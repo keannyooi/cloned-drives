@@ -1,0 +1,61 @@
+﻿{
+    "rq": 57,
+    "make": "Audi",
+    "model": "S4",
+    "modelYear": 2003,
+    "country": "DE",
+    "topSpeed": 156,
+    "0to60": 5.3,
+    "handling": 76,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1660,
+    "gc": "Low",
+    "seatCount":5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.25,
+    "ola": 71.43,
+    "description": "The 4.2-litre V8 raised the performance bar yet again with 344bhp. Card by Havvy",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/802592974445084706/AudiS4B6.png?width=1154&height=718",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/802593032511160350/000s4.png?width=1154&height=718",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/802593040391733278/111s4.png?width=1154&height=718",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/802593047824171058/222s4.png?width=1154&height=718",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/802593064480145478/332s4.png?width=1154&height=718",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/802593056045006868/323s4.png?width=1154&height=718",
+    "racehud699": "",
+
+
+    "333TopSpeed": 160,
+    "3330to60": 5.0,
+    "333Handling": 79,
+
+
+    "666TopSpeed": 164,
+    "6660to60": 4.7, 
+    "666Handling": 81,
+
+
+    "996TopSpeed": 168,
+    "9960to60": 4.3,
+    "996Handling": 81,
+
+
+    "969TopSpeed": 168,
+    "9690to60": 4.4,
+    "969Handling": 84,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

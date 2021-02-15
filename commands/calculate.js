@@ -21,6 +21,7 @@ module.exports = {
         let answer;
 		let average = args.slice(1, args.length).map(arg => Number(arg));
         if (!args.length) {
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             const errorMessage = new Discord.MessageEmbed()
                 .setColor('#fc0303')
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -103,6 +104,7 @@ module.exports = {
 			answer = plus / average.length;
         }
         else {
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             const errorMessage = new Discord.MessageEmbed()
                 .setColor('#fc0303')
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -129,6 +131,7 @@ module.exports = {
 				{ name: "Averaging Numbers", value: "`if you don't know that then your mafs bad`" }
             )
             .setTimestamp();
+		message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
         return message.channel.send(resultMessage);
     }
 }

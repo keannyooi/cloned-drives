@@ -1,0 +1,55 @@
+{
+    "rq": 36,
+    "make": "Toyota",
+    "model": "Celica All-Trac Turbo",
+    "modelYear": 1989,
+    "country": "JP",
+    "topSpeed": 136,
+    "0to60": 7.6,
+    "handling": 74,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1475,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 52.78,
+    "ola": 65.79,
+    "description": "A high performance model of the Celica Liftback, with a turbocharged 3S-GTE engine and full-time AWD. Card by Connor",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/810448288808828938/D.ToyotaCelicaAllTracTurbo.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/810448348569796608/D.ToyotaCelicaAllTracTSt.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/810448353254834226/D.ToyotaCelicaAllTracT1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/810448358442663946/D.ToyotaCelicaAllTracT2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/810448374410903562/D.ToyotaCelicaAllTracT996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/810448368836935680/D.ToyotaCelicaAllTracT969.png",
+	"racehud699": "",
+
+    "333TopSpeed": 139,
+    "3330to60": 7.1,
+    "333Handling": 76,
+
+    "666TopSpeed": 142,
+    "6660to60": 6.6,
+    "666Handling": 80,
+
+    "996TopSpeed": 146,
+    "9960to60": 6.0,
+    "996Handling": 81,
+   
+	"969TopSpeed": 144,
+    "9690to60": 6.1,
+    "969Handling": 82
+    
+    
+    
+
+   
+}

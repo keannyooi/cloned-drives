@@ -1,0 +1,50 @@
+{
+    "rq": 77,
+    "make": "Aston Martin",
+    "model": "DB10",
+    "modelYear": 2014,
+    "country": "GB",
+    "topSpeed": 197,
+    "0to60": 4.2,
+    "handling": 89,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1550,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 87.50,
+    "ola": 89.00,
+    "description": "Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/809371465266102282/db10.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/809371556257202206/db10.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/809371572980154378/db10333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/809371587383918592/db10666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/809371632891461652/db10996.png",
+    "racehud969": "",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/809371610293207060/db10699.png",
+
+    "333TopSpeed": 200,
+    "3330to60": 3.9,
+    "333Handling": 92,
+
+    "666TopSpeed": 202,
+    "6660to60": 3.7,
+    "666Handling": 95,
+
+    "996TopSpeed": 206,
+    "9960to60": 3.5,
+    "996Handling": 96,
+
+    "699TopSpeed": 203,
+    "6990to60": 3.6,
+    "699Handling": 96
+}

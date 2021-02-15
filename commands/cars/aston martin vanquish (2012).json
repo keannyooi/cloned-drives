@@ -1,0 +1,50 @@
+{
+    "rq": 79,
+    "make": "Aston Martin",
+    "model": "Vanquish",
+    "modelYear": 2012,
+    "country": "GB",
+    "topSpeed": 201,
+    "0to60": 3.6,
+    "handling": 87,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1739,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 76.60,
+    "ola": 94.44,
+    "description": "This is a car that moons you with its beauty. Card by DodgeDemon",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/804832519538343986/2012_AM_Vanquish.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/804832900502913074/AMVanquish000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/804832952277008474/AMVanquish333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/804832963622731786/AMVanquish666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/804832982145564702/AMVanquish996.png",
+    "racehud969": "",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/804833064576221194/AMVanquish699.png",
+
+    "333TopSpeed": 203,
+    "3330to60": 3.4,
+    "333Handling": 90,
+
+    "666TopSpeed": 205,
+    "6660to60": 3.2,
+    "666Handling": 93,
+
+    "996TopSpeed": 209,
+    "9960to60": 3.0,
+    "996Handling": 94,
+
+    "699TopSpeed": 207,
+    "6990to60": 3.1,
+    "699Handling": 97
+}

@@ -1,0 +1,46 @@
+{
+    "rq": 32,
+    "make": "Lexus",
+    "model": "ES 300h Ultra Luxury",
+    "modelYear": 2019,
+    "country": "JP",
+    "topSpeed": 116,
+    "0to60": 8.3,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+
+    "weight": 1733,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 69.75,
+    "ola": 77.11,
+    "description": "Elegance and economy in a sleek new wrapper. Card by Macan",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/808052700561408031/ES_300h_Ultra_Luxury_19.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/808052807081000990/Lexus_ES_300h_Ultra_Luxury_2019_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/808052809911107624/Lexus_ES_300h_Ultra_Luxury_2019_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/808052816656334918/Lexus_ES_300h_Ultra_Luxury_2019_666.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/808052827355086878/Lexus_ES_300h_Ultra_Luxury_2019_969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 119,
+    "3330to60": 7.7,
+    "333Handling": 76,
+
+    "666TopSpeed": 123,
+    "6660to60": 7.2,
+    "666Handling": 78,
+
+    "969TopSpeed": 126,
+    "9690to60": 6.6,
+    "969Handling": 81
+}

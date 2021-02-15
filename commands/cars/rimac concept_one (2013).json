@@ -1,0 +1,50 @@
+{
+    "rq": 98,
+    "make": "Rimac",
+    "model": "Concept_One",
+    "modelYear": 2013,
+    "country": "HR",
+    "topSpeed": 221,
+    "0to60": 2.5,
+    "handling": 94,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eco-Friendly", "Hypercar", "Ultra Expensive"],
+    "isPrize": false,
+
+    "weight": 1850,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 96.15,
+    "ola": 76.00,
+    "description": "Rimac's First Hype... nevermind hammond cant drive. Card by DodgeDemon.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/806972965232574502/2013_Rimac_C1.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/806973097751478382/RimacC1000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/806973138864046210/RimacC1333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/806973185023148122/RimacC1666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/806973287884259328/RimacC1996.png",
+    "racehud969": "",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/806973241733546054/RimacC1699.png",
+
+    "333TopSpeed": 223,
+    "3330to60": 2.4,
+    "333Handling": 97,
+
+    "666TopSpeed": 225,
+    "6660to60": 2.3,
+    "666Handling": 100,
+
+    "996TopSpeed": 229,
+    "9960to60": 2.1,
+    "996Handling": 101,
+
+    "699TopSpeed": 227,
+    "6990to60": 2.2,
+    "699Handling": 104
+}

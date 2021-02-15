@@ -1,0 +1,46 @@
+{
+    "rq": 50,
+    "make": "Jaguar",
+    "model": "E-Type Lightweight Competition Coupe",
+    "modelYear": 1963,
+    "country": "GB",
+    "topSpeed": 170,
+    "0to60": 4.1,
+    "handling": 73,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Motorsport"],
+    "isPrize": false,
+
+    "weight": 1040,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "front",
+    "fuelType": "Petrol",
+    "mra": 70.69,
+    "ola": 102.44,
+    "description": "The competition Spec E-Type. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/809375489734344754/redonetodothedo.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/809375547179663400/ftypecompetition.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/809375558831964190/ftypecompetition333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/809375572571717652/ftypecompetition666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/809375593115942912/ftypecompetition996.png",
+    "racehud969": "",
+    "racehud699": "",
+
+    "333TopSpeed": 173,
+    "3330to60": 3.8,
+    "333Handling": 75,
+
+    "666TopSpeed": 176,
+    "6660to60": 3.6,
+    "666Handling": 79,
+
+    "996TopSpeed": 180,
+    "9960to60": 3.4,
+    "996Handling": 80
+}

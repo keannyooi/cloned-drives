@@ -86,6 +86,7 @@ module.exports = {
 			wait.delete();
 			deckScreen.attachFiles(attachment);
 			deckScreen.setImage("attachment://dealership.png");
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 			return message.channel.send(deckScreen);
 
 			async function refresh() {
@@ -201,6 +202,7 @@ module.exports = {
 			}
 		}
 		catch (error) {
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 			console.error(error);
 			wait.delete();
 			const errorMessage = new Discord.MessageEmbed()
@@ -215,20 +217,17 @@ module.exports = {
 }
 
 function definePrice(rq) {
-	if (rq > 79) { //leggie
-		return 1000000 + (Math.floor(Math.random() * 1000000));
-	}
-	else if (rq > 64 && rq <= 79) { //epic
-		return 384000 + (Math.floor(Math.random() * 384000));
+	if (rq > 64 && rq <= 79) { //epic
+		return 384000 + (Math.floor(Math.random() * 100000));
 	}
 	else if (rq > 49 && rq <= 64) { //ultra
-		return 96000 + (Math.floor(Math.random() * 192000));
+		return 96000 + (Math.floor(Math.random() * 96000));
 	}
 	else if (rq > 39 && rq <= 49) { //super
-		return 24000 + (Math.floor(Math.random() * 24000));
+		return 24000 + (Math.floor(Math.random() * 12000));
 	}
 	else if (rq > 29 && rq <= 39) { //rare
-		return 8000 + (Math.floor(Math.random() * 16000));
+		return 8000 + (Math.floor(Math.random() * 4000));
 	}
 	else if (rq > 19 && rq <= 29) { //uncommon
 		return 2000 + (Math.floor(Math.random() * 2000));

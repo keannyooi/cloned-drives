@@ -42,6 +42,7 @@ module.exports = {
             }
 
             if (carList.length > 2048) {
+				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                 const errorMessage = new Discord.MessageEmbed()
                     .setColor("#fc0303")
                     .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -62,11 +63,12 @@ module.exports = {
                 message.channel.awaitMessages(filter, {
                     max: 1,
                     time: waitTime,
-                    errors: ['time']
+                    errors: ["time"]
                 })
                     .then(collected => {
 						collected.first().delete();
-                        if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
+                        if (isNaN(collected.first().content) || parseInt(collected.first().content) > searchResults.length || parseInt(collected.first().content) < 1) {
+							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                             const errorMessage = new Discord.MessageEmbed()
                                 .setColor("#fc0303")
                                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -76,10 +78,11 @@ module.exports = {
                             return currentMessage.edit(errorMessage);
                         }
                         else {
-                            displayInfo(searchResults[parseInt(collected.first()) - 1], currentMessage);
+                            displayInfo(searchResults[parseInt(collected.first().content) - 1], currentMessage);
                         }
                     })
                     .catch(() => {
+						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                         const cancelMessage = new Discord.MessageEmbed()
                             .setColor("#34aeeb")
                             .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -93,6 +96,7 @@ module.exports = {
             displayInfo(searchResults[0]);
         }
         else {
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             const errorMessage = new Discord.MessageEmbed()
                 .setColor("#fc0303")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -198,6 +202,7 @@ module.exports = {
 			if (hasCar !== undefined) {
 				infoScreen.setFooter(`✅ You own ${hasCar["000"] + hasCar["333"] + hasCar["666"] + hasCar["996"] + hasCar["969"] + hasCar["699"]} of this car!`);
 			}
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             if (currentMessage) {
                 return currentMessage.edit(infoScreen);
             }

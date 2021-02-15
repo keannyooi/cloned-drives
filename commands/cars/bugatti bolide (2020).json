@@ -1,0 +1,50 @@
+{
+    "rq": 107,
+    "make": "Bugatti",
+    "model": "Bolide",
+    "modelYear": 2020,
+    "country": "FR",
+    "topSpeed": 311,
+    "0to60": 2.1,
+    "handling": 101,
+    "driveType": "4WD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport", "Hypercar", "Ultra Expensive"],
+    "isPrize": true,
+
+    "weight": 1240,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 147.89,
+    "ola": 104.76,
+    "description": "The ultimate Track weapon powered by a W16. Card by DodgeDemon.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/807519824364175371/2020_Bugatti_Bolide.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/807519936511082506/BugattiBolide000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/807519983407333386/BugattiBolide333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/807520032954908713/BugattiBolide666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/807520142615248956/BugattiBolide996.png",
+    "racehud969": "",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/807520104140374026/BugattiBolide699.png",
+
+    "333TopSpeed": 313,
+    "3330to60": 2.0,
+    "333Handling": 104,
+
+    "666TopSpeed": 315,
+    "6660to60": 1.9,
+    "666Handling": 108,
+
+    "996TopSpeed": 318,
+    "9960to60": 1.7,
+    "996Handling": 109,
+
+    "699TopSpeed": 316,
+    "6990to60": 1.8,
+    "699Handling": 112
+}

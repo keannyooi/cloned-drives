@@ -1,0 +1,46 @@
+{
+    "rq": 83,
+    "make": "Infiniti",
+    "model": "Q60 Project Black S Concept",
+    "modelYear": 2017,
+    "country": "JP",
+    "topSpeed": 155,
+    "0to60": 3.7,
+    "handling": 94,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": true,
+
+    "weight": 1776,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 78.72,
+    "ola": 89.19,
+    "description": "Head-turning looks, top-shelf speed, and a bright hybrid future. Card by DodgeDemon.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/809294385001791508/2017_Infiniti_Q60_PBS_Concept.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/807135029259665418/InfinitiQ60PBS000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/807135112508604436/InfinitiQ60PBS333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/807135167809847296/InfinitiQ60PBS666.png",
+    "racehud996": "",
+    "racehud969": "",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/807135188739817502/InfinitiQ60PBS699.png",
+
+    "333TopSpeed": 158,
+    "3330to60": 3.5,
+    "333Handling": 97,
+
+    "666TopSpeed": 161,
+    "6660to60": 3.3,
+    "666Handling": 100,
+
+    "699TopSpeed": 163,
+    "6990to60": 3.2,
+    "699Handling": 104
+}

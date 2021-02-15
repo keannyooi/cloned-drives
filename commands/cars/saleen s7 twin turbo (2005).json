@@ -1,0 +1,50 @@
+{
+    "rq": 92,
+    "make": "Saleen",
+    "model": "S7 Twin Turbo",
+    "modelYear": 2005,
+    "country": "US",
+    "topSpeed": 249,
+    "0to60": 3.3,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": true,
+
+    "weight": 1247,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 115.29,
+    "ola": 91.46,
+    "description": "Card by Havvy.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/806949587322798140/SaleenS7Turbo.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/806949661230759956/000_s7tt.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/806949669351456798/111_s7tt.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/806949673881436160/222_s7tt.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/806949683691126794/332_s7tt.png",
+    "racehud969": "",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/806949682688426016/233_s7tt.png",
+
+    "333TopSpeed": 251,
+    "3330to60": 3.1,
+    "333Handling": 94,
+
+    "666TopSpeed": 252,
+    "6660to60": 3.0,
+    "666Handling": 97,
+
+    "996TopSpeed": 254,
+    "9960to60": 2.7,
+    "996Handling": 98,
+
+    "699TopSpeed": 254,
+    "6990to60": 2.8,
+    "699Handling": 101
+}

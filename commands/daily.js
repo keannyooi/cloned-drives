@@ -36,6 +36,7 @@ module.exports = {
 
 			const moneyEmoji = message.client.emojis.cache.get("726017235826770021");
        		const fuseEmoji = message.client.emojis.cache.get("726018658635218955");
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 			const infoScreen = new Discord.MessageEmbed()
 				.setColor("#34aeeb")
 				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -46,6 +47,7 @@ module.exports = {
 			return message.channel.send(infoScreen);
 		}
 		else {
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 			const infoScreen = new Discord.MessageEmbed()
 				.setColor("#34aeeb")
 				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))

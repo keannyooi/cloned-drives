@@ -9,6 +9,7 @@
 
 const Discord = require("discord.js-light");
 const fs = require("fs");
+const carFiles = fs.readdirSync("./commands/cars").filter(file => file.endsWith('.json'));
 
 module.exports = {
     name: "carlist",
@@ -24,7 +25,7 @@ module.exports = {
         const filter = (reaction, user) => {
             return (reaction.emoji.name === "⬅️" || reaction.emoji.name === "➡️") && user.id === message.author.id;
         };
-        var carFiles = fs.readdirSync("./commands/cars").filter(file => file.endsWith('.json'));
+        var list = carFiles;
         var carList = "", valueList = "";
         var reactionIndex = 0;
         var sortBy = "rq";
@@ -37,6 +38,7 @@ module.exports = {
             page = parseInt(args[0]);
         }
         else {
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             const errorScreen = new Discord.MessageEmbed()
                 .setColor("#fc0303")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -46,20 +48,13 @@ module.exports = {
             return message.channel.send(errorScreen);
         }
 
-        const garage = await db.get(`acc${message.author.id}.garage`);
-        const totalCars = carFiles.length;
-
-        const ownedCars = carFiles.filter(function (carFile) {
-            return garage.some(part => carFile.includes(part.carFile));
-        });
-
         const carFilter = await db.get(`acc${message.author.id}.filter`);
         if (carFilter !== null) {
             for (const [key, value] of Object.entries(carFilter)) {
                 switch (typeof value) {
                     case "object":
                         if (Array.isArray(value)) {
-                            carFiles = carFiles.filter(function (carFile) {
+                            list = list.filter(function (carFile) {
                                 let currentCar = require(`./cars/${carFile}`);
                                 if (Array.isArray(currentCar[key])) {
                                     var obj = {};
@@ -72,28 +67,28 @@ module.exports = {
                             });
                         }
                         else {
-                            carFiles = carFiles.filter(function (carFile) {
+                            list = list.filter(function (carFile) {
                                 let currentCar = require(`./cars/${carFile}`);
                                 return currentCar[key] >= value.start && currentCar[key.replace("count", "Count").replace("y", "Y")] <= value.end;
                             });
                         }
                         break;
                     case "string":
-                        carFiles = carFiles.filter(function (carFile) {
+                        list = list.filter(function (carFile) {
                             let currentCar = require(`./cars/${carFile}`);
                             return currentCar[key].toLowerCase() === value;
                         });
                         break;
                     case "boolean":
 						if (key === "isPrize") {
-							carFiles = carFiles.filter(function (carFile) {
+							list = list.filter(function (carFile) {
                             	let currentCar = require(`./cars/${carFile}`);
                             	return currentCar[key] === value;
                         	});
 						}
 						else if (key === "isOwned") {
-							carFiles = carFiles.filter(function (carFile) {
-                            	return ownedCars.some(car => carFile.includes(car));
+							list = list.filter(function (carFile) {
+                            	return ownedCars.some(car => carFile.includes(car)) === value;
                         	});
 						}
                         break
@@ -102,7 +97,13 @@ module.exports = {
                 }
             }
         }
-        const totalPages = Math.ceil(carFiles.length / pageLimit);
+		
+		const garage = await db.get(`acc${message.author.id}.garage`);
+        const ownedCars = list.filter(function (carFile) {
+            return garage.some(part => carFile.includes(part.carFile));
+        });
+		const totalCars = list.length;
+        const totalPages = Math.ceil(totalCars / pageLimit);
 
         if (args[args.length - 2] === "-s") {
             switch (args[args.length - 1].toLowerCase()) {
@@ -121,6 +122,7 @@ module.exports = {
                     sortBy = args[args.length - 1].toLowerCase();
                     break;
                 default:
+					message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                     const errorScreen = new Discord.MessageEmbed()
                         .setColor("#fc0303")
                         .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -137,7 +139,7 @@ module.exports = {
             }
         }
 
-        carFiles.sort(function (a, b) {
+        list.sort(function (a, b) {
             const carA = require(`./cars/${a}`);
             const carB = require(`./cars/${b}`);
             if (carA[sortBy] === carB[sortBy]) {
@@ -181,6 +183,7 @@ module.exports = {
         });
 
         if (page < 0 || totalPages < page) {
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             const errorScreen = new Discord.MessageEmbed()
                 .setColor("#fc0303")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -202,6 +205,7 @@ module.exports = {
         if (sortBy !== "rq") {
             infoScreen.addField("Value", valueList, true)
         }
+		message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
         message.channel.send(infoScreen).then(infoMessage => {
             console.log(reactionIndex);
             switch (reactionIndex) {
@@ -296,9 +300,9 @@ module.exports = {
         function carDisplay(page) {
             var startsWith, endsWith;
 
-            if (carFiles.length - pageLimit <= 0) {
+            if (list.length - pageLimit <= 0) {
                 startsWith = 0;
-                endsWith = carFiles.length;
+                endsWith = list.length;
                 reactionIndex = 0;
             }
             else if (page * pageLimit === pageLimit) {
@@ -306,9 +310,9 @@ module.exports = {
                 endsWith = pageLimit;
                 reactionIndex = 1;
             }
-            else if (carFiles.length - (pageLimit * page) <= 0) {
+            else if (list.length - (pageLimit * page) <= 0) {
                 startsWith = pageLimit * (page - 1);
-                endsWith = carFiles.length;
+                endsWith = list.length;
                 reactionIndex = 2;
             }
             else {
@@ -319,7 +323,9 @@ module.exports = {
             carList = valueList = "";
 
             for (i = startsWith; i < endsWith; i++) {
-                const currentCar = require(`./cars/${carFiles[i]}`);
+				carList += `${i + 1 - ((page - 1) * 10)}. `;
+				valueList += `${i + 1 - ((page - 1) * 10)}. `;
+                const currentCar = require(`./cars/${list[i]}`);
                 const rarity = rarityCheck(currentCar);
 
 				let make = currentCar["make"];

@@ -17,8 +17,8 @@ module.exports = {
     usage: "<pack name goes here>",
     args: 1,
 	isExternal: true,
-    adminOnly: true,
-	cooldown: 5,
+    adminOnly: false,
+	cooldown: 4.388,
     description: "Opens a pack.",
     async execute(message, args) {
 		const openPackCommand = require("./sharedfiles/openpack.js");
@@ -41,15 +41,6 @@ module.exports = {
 				let currentPack = require(`./packs/${searchResults[i - 1]}`);
                 packList += `${i} - ` + currentPack["packName"] + "\n";
             }
-			if (packList.length > 2048) {
-                const errorMessage = new Discord.MessageEmbed()
-                    .setColor("#fc0303")
-                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                    .setTitle("Error, too many search results.")
-                    .setDescription("Due to Discord's embed limitations, the bot isn't able to show the full list of search results. Try again with a more specific keyword.")
-                    .setTimestamp();
-                return message.channel.send(errorMessage);
-            }
 
             const infoScreen = new Discord.MessageEmbed()
                 .setColor("#34aeeb")
@@ -65,8 +56,11 @@ module.exports = {
                 	errors: ['time']
 	            })
     	            .then(collected => {
-						collected.first().delete();
-        	            if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
+						if (message.channel.type === "text") {
+							collected.first().delete();
+						}
+        	            if (isNaN(collected.first().content) || parseInt(collected.first().content) > searchResults.length || parseInt(collected.first().content) < 1) {
+							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             	            const errorMessage = new Discord.MessageEmbed()
                 	            .setColor("#fc0303")
                     	        .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -76,11 +70,12 @@ module.exports = {
         	                return currentMessage.edit(errorMessage);
             	        }
                 	    else {
-                    	    let currentPack = require(`./packs/${searchResults[parseInt(collected.first()) - 1]}`);
+                    	    let currentPack = require(`./packs/${searchResults[parseInt(collected.first().content) - 1]}`);
 							openPack(currentPack, money, currentMessage);
 	                    }
     	            })
         	        .catch(() => {
+						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             	        const cancelMessage = new Discord.MessageEmbed()
                 	        .setColor("#34aeeb")
                     	    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -95,6 +90,7 @@ module.exports = {
 			openPack(currentPack, money);
 		}
         else {
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             const errorMessage = new Discord.MessageEmbed()
                 .setColor("#fc0303")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -129,8 +125,10 @@ module.exports = {
 					}
 				}
 				await db.set(`acc${message.author.id}`, playerData);
+				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 			}
 			else {
+				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 				const errorMessage = new Discord.MessageEmbed()
                     .setColor("#fc0303")
                     .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))

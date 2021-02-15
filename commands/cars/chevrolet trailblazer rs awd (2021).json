@@ -1,5 +1,5 @@
 {
-    "rq": 48,
+    "rq": 44,
     "make": "Chevrolet",
     "model": "Trailblazer RS AWD",
     "modelYear": 2021,
@@ -8,7 +8,7 @@
     "0to60": 9.4,
     "handling": 75,
     "driveType": "4WD",
-    "tyreType": "All-Surface",
+    "tyreType": "Standard",
     "tags": ["American Wilds", "Year of the Ox"],
     "isPrize": false,
 
@@ -24,12 +24,12 @@
     "ola": 78.72,
     "description": "This car once broke the game's database. Not joking.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/732419998659903529/Chevrolet_Trailblazer_RS_AWD_2021.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/732481263943811173/Chevrolet_Trailblazer_RS_AWD_2021_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/732481292918063184/Chevrolet_Trailblazer_RS_AWD_2021_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/732481331174309999/Chevrolet_Trailblazer_RS_AWD_2021_666.png",
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/798320077157433404/Trailblazer_RS_AWD_21.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/798320158274879518/Chevrolet_Trailblazer_RS_AWD_2021_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/798320169092513822/Chevrolet_Trailblazer_RS_AWD_2021_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/798320178840076339/Chevrolet_Trailblazer_RS_AWD_2021_666.png",
     "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/732481377970290698/Chevrolet_Trailblazer_RS_AWD_2021_969.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/798320206116159498/Chevrolet_Trailblazer_RS_AWD_2021_969.png",
     "racehud699": "",
 
     "333TopSpeed": 133,

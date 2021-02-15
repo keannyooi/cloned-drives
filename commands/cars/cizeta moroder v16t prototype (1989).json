@@ -1,0 +1,59 @@
+{
+    "rq": 73,
+    "make": "Cizeta",
+    "model": "Moroder V16T Prototype",
+    "modelYear": 1989,
+    "country": "IT",
+    "topSpeed": 204,
+    "0to60": 4.1,
+    "handling": 86,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Innovative", "Supercar"],
+    "isPrize": true,
+
+    "weight": 1700,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 77.36,
+    "ola": 85.43,
+    "description": "Bold in terms of performance, design, and mechanism. A supercar packing all the dreams of a mature driver. Card by Based",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/810137210145734676/Cizeta_Morouder_V16T_goes_brrr.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/810135221788737546/Cizeta_bb_Stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/810135265070809108/Cizeta_bb_1_Star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/810135282871173130/Cizeta_bb_2_Star.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/810135324512485397/Cizeta_bb_332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/810135313690918922/Cizeta_bb_323.png",
+	"racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/810135297923874826/Cizeta_bb_233.png",
+
+    "333TopSpeed": 206,
+    "3330to60": 3.9,
+    "333Handling": 89,
+
+    "666TopSpeed": 209,
+    "6660to60": 3.7,
+    "666Handling": 92,
+
+    "996TopSpeed": 214,
+    "9960to60": 3.3,
+    "996Handling": 92,
+   
+	  "969TopSpeed": 212,
+    "9690to60": 3.5,
+    "969Handling": 95,
+	
+	  "699TopSpeed": 211,
+    "6990to60": 3.5,
+    "699Handling": 95
+    
+    
+    
+
+   
+}

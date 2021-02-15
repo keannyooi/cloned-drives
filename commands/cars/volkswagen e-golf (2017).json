@@ -1,0 +1,61 @@
+﻿{
+    "rq": 27,
+    "make": "Volkswagen",
+    "model": "e-Golf",
+    "modelYear": 2017,
+    "country": "DE",
+    "topSpeed": 93,
+    "0to60": 8.8,
+    "handling": 74,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+
+
+    "weight": 1565,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 0.00,
+    "ola": 68.18,
+    "description": "Green Golf. Card by Andu",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/807304458450632755/eGolf.png?width=1154&height=719",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/807304343086694420/eGolf.png",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/807304342242983956/eGolf1.png",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/807304343828693052/eGolf2.png",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/807304365769621504/eGolf332.png",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/807304350212685874/eGolf323.png",
+    "racehud699": "",
+
+
+    "333TopSpeed": 96,
+    "3330to60": 8.2,
+    "333Handling": 77,
+
+
+    "666TopSpeed": 99,
+    "6660to60": 7.6, 
+    "666Handling": 80,
+
+
+    "996TopSpeed": 101,
+    "9960to60": 6.8,
+    "996Handling": 80,
+
+
+    "969TopSpeed": 101,
+    "9690to60": 7.0,
+    "969Handling": 82,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

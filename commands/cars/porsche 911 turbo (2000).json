@@ -1,0 +1,61 @@
+﻿{
+    "rq": 80,
+    "make": "Porsche",
+    "model": "911 Turbo",
+    "modelYear": 2000,
+    "country": "DE",
+    "topSpeed": 190,
+    "0to60": 4.0,
+    "handling": 86,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1585,
+    "gc": "Low",
+    "seatCount":4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 79.73,
+    "ola": 85.47,
+    "description": "A savagely powerful, hugely capable but ultimately rather refined sports/GT weapon. Card by Havvy",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/804460979723042836/Porsche911Turbo996.png?width=705&height=439",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/804461038232797234/000_996turbo.png?width=1154&height=718",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/804461045014855760/111_996turbo.png?width=1154&height=718",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/804461050815709244/222_996turbo.png?width=1154&height=718",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/804461064367898654/332_996turbo.png?width=1154&height=718",
+    "racehud969": "",
+    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/804461058415788102/233_996turbo.png?width=1154&height=718",
+
+
+    "333TopSpeed": 193,
+    "3330to60": 3.8,
+    "333Handling": 89,
+
+
+    "666TopSpeed": 196,
+    "6660to60": 3.6, 
+    "666Handling": 92,
+
+
+    "996TopSpeed": 199,
+    "9960to60": 3.3,
+    "996Handling": 92,
+
+
+    "969TopSpeed": 0,
+    "9690to60": 0,
+    "969Handling": 0,
+
+
+    "699TopSpeed": 197,
+    "6990to60": 3.4,
+    "699Handling": 95
+}

@@ -1,0 +1,50 @@
+{
+    "rq": 86,
+    "make": "Lamborghini",
+    "model": "Huracan LP580-2",
+    "modelYear": 2015,
+    "country": "IT",
+    "topSpeed": 199,
+    "0to60": 3.3,
+    "handling": 90,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Supercar"],
+    "isPrize": false,
+
+    "weight": 1389,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 98.98,
+    "ola": 101.54,
+    "description": "The poor man's Lamborghini. Card by havvy",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/807537025581973524/LamborghiniHuracanRWD.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/807537083789869066/000_hurarwd.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/807537093990678548/111_hurarwd.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/807537099590205460/222_hurarwd.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/807537114983170088/332_hurarwd.png",
+    "racehud969": "",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/807537105944707102/233_hurarwd.png",
+
+    "333TopSpeed": 201,
+    "3330to60": 3.2,
+    "333Handling": 93,
+
+    "666TopSpeed": 203,
+    "6660to60": 3.0,
+    "666Handling": 96,
+
+    "996TopSpeed": 205,
+    "9960to60": 2.8,
+    "996Handling": 97,
+
+    "699TopSpeed": 203,
+    "6990to60": 2.9,
+    "699Handling": 100
+}

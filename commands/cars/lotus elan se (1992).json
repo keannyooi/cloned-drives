@@ -1,0 +1,54 @@
+{
+    "rq": 40,
+    "make": "Lotus",
+    "model": "Elan SE",
+    "modelYear": 1992,
+    "country": "GB",
+    "topSpeed": 135,
+    "0to60": 6.6,
+    "handling": 79,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1020,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Roadster",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 52.80,
+    "ola": 84.85,
+    "description": "Lotus says hi. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/810469428079886356/lotus_elan_se.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/810468526745190411/unknown.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/810468584857927680/unknown.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/810468650057596938/unknown.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/810468862546018314/unknown.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/810468809248342016/unknown.png",
+    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/810468751236661288/unknown.png",
+
+    "333TopSpeed": 138,
+    "3330to60": 6.3,
+    "333Handling": 82,
+
+    "666TopSpeed": 141,
+    "6660to60": 6.1,
+    "666Handling": 85,
+
+    "996TopSpeed": 145,
+    "9960to60": 5.8,
+    "996Handling": 86,
+
+    "969TopSpeed": 144,
+    "9690to60": 5.9,
+    "969Handling": 87,
+
+    "699TopSpeed": 143,
+    "6990to60": 5.9,
+    "699Handling": 88
+}

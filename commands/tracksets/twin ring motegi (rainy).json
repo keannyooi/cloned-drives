@@ -1,0 +1,18 @@
+{
+	"trackName": "Twin Ring Motegi (Rainy)",
+	"weather": "Rainy",
+	"surface": "Asphalt",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://cdn.discordapp.com/attachments/716917404868935691/809794040106844160/unknown.png",
+	"map": "https://cdn.discordapp.com/attachments/716917404868935691/809793859025764372/unknown.png",
+	
+	"specsDistr": {
+		"topSpeed": 30,
+		"0to60": 85,
+		"handling": 60,
+		"weight": 0,
+		"mra": 55,
+		"ola": 25
+	}
+}

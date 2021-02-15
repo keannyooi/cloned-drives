@@ -1,0 +1,61 @@
+﻿{
+    "rq": 15,
+    "make": "Nissan",
+    "model": "Stanza GXE",
+    "modelYear": 1987,
+    "country": "JP",
+    "topSpeed": 102,
+    "0to60": 11.2,
+    "handling": 63,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1297,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 29.13,
+    "ola": 58.93,
+    "description": "A room. Card by Connor",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/802644830181261373/F.NissanStanzaGXE.png?width=1154&height=718",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/802644938533503002/F.NissanStanzaGXE.png",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/802644968493416498/F.NissanStanzaGXE-1star.png",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/802644996976410654/F.NissanStanzaGXE-2star.png",
+    "racehud996": "",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/802645032980971570/F.NissanStanzaGXE-969.png",
+    "racehud699": "",
+
+
+    "333TopSpeed": 105,
+    "3330to60": 10.4,
+    "333Handling": 65,
+
+
+    "666TopSpeed": 108,
+    "6660to60": 9.6, 
+    "666Handling": 68,
+
+
+    "996TopSpeed": 0,
+    "9960to60": 0,
+    "996Handling": 0,
+
+
+    "969TopSpeed": 110,
+    "9690to60": 8.8,
+    "969Handling": 70,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

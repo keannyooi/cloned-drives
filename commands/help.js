@@ -48,6 +48,7 @@ module.exports = {
                 .setDescription("Here's a list of all the commands available.\n" + data)
                 .setFooter(`Page ${page} of ${totalPages} - React with ⬅️ or ➡️ to navigate through pages.`)
                 .setTimestamp();
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             message.channel.send(listMessage).then(infoMessage => {
                 console.log(reactionIndex);
                 switch (reactionIndex) {
@@ -115,6 +116,7 @@ module.exports = {
             const command = commands.get(name) || commands.find(c => c.aliases && c.aliases.includes(name));
 
             if (!command) {
+				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                 const errorMessage = new Discord.MessageEmbed()
                     .setColor("#fc0303")
                     .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -160,6 +162,7 @@ module.exports = {
                     { name: "Description", value: command.description }
                 )
                 .setTimestamp();
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             return message.channel.send(infoScreen);
         }
 

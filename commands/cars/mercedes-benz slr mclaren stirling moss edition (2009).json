@@ -1,0 +1,54 @@
+{
+    "rq": 85,
+    "make": "Mercedes-Benz",
+    "model": "SLR McLaren Stirling Moss Edition",
+    "modelYear": 2009,
+    "country": "DE",
+    "topSpeed": 217,
+    "0to60": 3.3,
+    "handling": 88,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Year of the Ox"],
+    "isPrize": true,
+
+    "weight": 1568,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Roadster",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 95.00,
+    "ola": 88.00,
+    "description": "Card by Exist.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/802764194738995220/CD_Mercedes-Benz_SLR_McLaren_Stirling_Moss_Edition.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/802763897449742376/CD_Mercedes-Benz_SLR_McLaren_Stirling_Moss_Edition_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/802763907327459328/CD_Mercedes-Benz_SLR_McLaren_Stirling_Moss_Edition_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/802763924507852830/CD_Mercedes-Benz_SLR_McLaren_Stirling_Moss_Edition_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/802763992585732146/CD_Mercedes-Benz_SLR_McLaren_Stirling_Moss_Edition_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/802763982418477056/CD_Mercedes-Benz_SLR_McLaren_Stirling_Moss_Edition_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/802763948947669002/CD_Mercedes-Benz_SLR_McLaren_Stirling_Moss_Edition_699.png",
+
+    "333TopSpeed": 220,
+    "3330to60": 3.1,
+    "333Handling": 91,
+
+    "666TopSpeed": 223,
+    "6660to60": 2.8,
+    "666Handling": 94,
+
+    "996TopSpeed": 226,
+    "9960to60": 2.6,
+    "996Handling": 95,
+
+    "969TopSpeed": 226,
+    "9690to60": 2.7,
+    "969Handling": 97,
+
+    "699TopSpeed": 223,
+    "6990to60": 2.7,
+    "699Handling": 98
+}

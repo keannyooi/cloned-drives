@@ -1,0 +1,50 @@
+{
+    "rq": 28,
+    "make": "Acura",
+    "model": "Vigor GS",
+    "modelYear": 1991,
+    "country": "US",
+    "topSpeed": 131,
+    "0to60": 8.4,
+    "handling": 68,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1457,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 53.50,
+    "ola": 61.90,
+    "description": "Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/807701234693439508/AcuraVigorGS.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/807701299172868156/vigor.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/807701311029772328/vigor333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/807701325705117716/vigor666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/807701377560084490/vigor996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/807701353807216690/vigor969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 134,
+    "3330to60": 8.0,
+    "333Handling": 70,
+
+    "666TopSpeed": 137,
+    "6660to60": 7.6,
+    "666Handling": 73,
+
+    "996TopSpeed": 141,
+    "9960to60": 7.1,
+    "996Handling": 73,
+
+    "969TopSpeed": 140,
+    "9690to60": 7.3,
+    "969Handling": 75
+}

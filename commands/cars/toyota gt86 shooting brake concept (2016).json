@@ -1,0 +1,46 @@
+{
+    "rq": 44,
+    "make": "Toyota",
+    "model": "GT86 Shooting Brake Concept",
+    "modelYear": 2016,
+    "country": "JP",
+    "topSpeed": 136,
+    "0to60": 6.8,
+    "handling": 86,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Concept"],
+    "isPrize": false,
+
+    "weight": 1350,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Shooting Brake",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 65.38,
+    "ola": 76.47,
+    "description": "A very unique GT86. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/809378541333512222/shootingbrakee.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/809378895274967070/86shooting.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/809378906032701480/86shooting333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/809378919840350240/86shooting666.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/809378940820914176/86shooting969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 140,
+    "3330to60": 6.4,
+    "333Handling": 89,
+
+    "666TopSpeed": 144,
+    "6660to60": 6.0,
+    "666Handling": 92,
+
+    "969TopSpeed": 148,
+    "9690to60": 5.6,
+    "969Handling": 95
+}

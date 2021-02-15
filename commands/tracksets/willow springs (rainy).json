@@ -1,0 +1,18 @@
+{
+	"trackName": "Willow Springs (Rainy)",
+	"weather": "Rainy",
+	"surface": "Asphalt",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://cdn.discordapp.com/attachments/716917404868935691/809761936299524106/unknown.png",
+	"map": "https://cdn.discordapp.com/attachments/716917404868935691/809761674072162314/unknown.png",
+	
+	"specsDistr": {
+		"topSpeed": 60,
+		"0to60": 50,
+		"handling": 50,
+		"weight": 0,
+		"mra": 90,
+		"ola": 0
+	}
+}

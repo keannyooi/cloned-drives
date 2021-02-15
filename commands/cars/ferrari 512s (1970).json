@@ -1,0 +1,61 @@
+﻿{
+    "rq": 86,
+    "make": "Ferrari",
+    "model": "512S",
+    "modelYear": 1970,
+    "country": "IT",
+    "topSpeed": 211,
+    "0to60": 3.8,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Motorsport"],
+    "isPrize": true,
+
+
+    "weight": 900,
+    "gc": "Low",
+    "seatCount":1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 135.71,
+    "ola": 102.56,
+    "description": "Realizzata in soli tre mesi dall équipe guidata da Mauro Forghieri, montava il motore V12 da quasi 5 litri completamente in lega leggera con quattro valvole per cilindro. Card by Bnuuy",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/805938735240839178/superfestpopopopo.png?width=1154&height=718",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/805938795060133908/rari.png",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/805938807056629800/rari333.png",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/805938822189023272/rari666.png",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/805938894708539402/rari996.png",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/805938873426509874/rari969.png",
+    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/805938849280557086/rari699.png",
+
+
+    "333TopSpeed": 213,
+    "3330to60": 3.6,
+    "333Handling": 94,
+
+
+    "666TopSpeed": 215,
+    "6660to60": 3.4, 
+    "666Handling": 97,
+
+
+    "996TopSpeed": 220,
+    "9960to60": 3.2,
+    "996Handling": 98,
+
+
+    "969TopSpeed": 218,
+    "9690to60": 3.3,
+    "969Handling": 101,
+
+
+    "699TopSpeed": 217,
+    "6990to60": 3.3,
+    "699Handling": 102
+}

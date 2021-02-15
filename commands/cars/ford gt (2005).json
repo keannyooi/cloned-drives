@@ -1,0 +1,54 @@
+{
+    "rq": 79,
+    "make": "Ford",
+    "model": "GT",
+    "modelYear": 2005,
+    "country": "US",
+    "topSpeed": 202,
+    "0to60": 3.6,
+    "handling": 88,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["American Wilds", "Style Icon", "Supercar"],
+    "isPrize": false,
+
+    "weight": 1581,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 80.63,
+    "ola": 96.37,
+    "description": "The legendary GT40's road-going descendant. Card by havvy",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/804442663453065236/FordGT05.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/804442744772755496/000gt.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/804442754708275220/111gt.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/804442758437404712/222gt.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/804443227498741770/332gt.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/804443219165184060/323gt.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/804443209689727007/233gt.png",
+
+    "333TopSpeed": 204,
+    "3330to60": 3.4,
+    "333Handling": 91,
+
+    "666TopSpeed": 206,
+    "6660to60": 3.3,
+    "666Handling": 94,
+
+	"996TopSpeed": 208,
+    "9960to60": 3.0,
+    "996Handling": 95,
+
+	"969TopSpeed": 208,
+    "9690to60": 3.1,
+    "969Handling": 97,
+
+    "699TopSpeed": 206,
+    "6990to60": 3.1,
+    "699Handling": 98
+}

@@ -5,9 +5,10 @@
 	"speedbumps": 0,
 	"humps": 0,
 	"background": "https://cdn.discordapp.com/attachments/716917404868935691/772757538789785600/unknown.png",
+	"map": "https://cdn.discordapp.com/attachments/716917404868935691/809368754723094538/unknown.png",
 	
 	"specsDistr": {
-		"topSpeed": 15,
+		"topSpeed": 5,
 		"0to60": 85,
 		"handling": 85,
 		"weight": 0,

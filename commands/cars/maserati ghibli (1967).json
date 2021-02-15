@@ -1,0 +1,50 @@
+{
+    "rq": 37,
+    "make": "Maserati",
+    "model": "Ghibli",
+    "modelYear": 1967,
+    "country": "IT",
+    "topSpeed": 142,
+    "0to60": 6.4,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1670,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 86.49,
+    "ola": 87.50,
+    "description": "Card by DodgeDemon.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/807278793081094215/1967_Maserati_Ghibli.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/807278945908424774/MaseratiGhibli000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/807278989718192198/MaseratiGhibli333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/807279022122991646/MaseratiGhibli666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/807279106546466816/MaseratiGhibli996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/807279069753770045/MaseratiGhibli969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 145,
+    "3330to60": 6.1,
+    "333Handling": 77,
+
+    "666TopSpeed": 148,
+    "6660to60": 5.9,
+    "666Handling": 81,
+
+    "996TopSpeed": 152,
+    "9960to60": 5.6,
+    "996Handling": 82,
+
+    "969TopSpeed": 151,
+    "9690to60": 5.7,
+    "969Handling": 83
+}

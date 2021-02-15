@@ -1,0 +1,46 @@
+{
+    "rq": 53,
+    "make": "Lexus",
+    "model": "GX 460 Luxury",
+    "modelYear": 2020,
+    "country": "JP",
+    "topSpeed": 111,
+    "0to60": 7.2,
+    "handling": 68,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 2389,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 53.33,
+    "ola": 66.67,
+    "description": "Lexus updates its aging yet versatile three-row SUV with a larger-than-ever spindle grille. Card by Macan",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/808052297170550844/Lexus_GX_460_Luxury_2020.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/808052414032379944/Lexus_GX_460_Luxury_2020_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/808052419337650226/Lexus_GX_460_Luxury_2020_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/808052422336839710/Lexus_GX_460_Luxury_2020_666.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/808052431119319050/Lexus_GX_460_Luxury_2020_969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 114,
+    "3330to60": 6.8,
+    "333Handling": 70,
+
+    "666TopSpeed": 117,
+    "6660to60": 6.4,
+    "666Handling": 73,
+
+    "969TopSpeed": 117,
+    "9690to60": 6.0,
+    "969Handling": 75
+}

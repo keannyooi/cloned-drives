@@ -31,7 +31,7 @@ module.exports = {
         };
 
 		const searchResults = events.filter(function(event) {
-			return event.name.includes(keyword);
+			return event.name.toLowerCase().includes(keyword);
 		});
 
 		if (searchResults.length > 1) {
@@ -56,6 +56,7 @@ module.exports = {
 					.then(collected => {
 						collected.first().delete();
 						if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
+							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 							const errorMessage = new Discord.MessageEmbed()
 								.setColor("#fc0303")
 								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -70,6 +71,7 @@ module.exports = {
 						}
 					})
 					.catch(() => {
+						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 						const cancelMessage = new Discord.MessageEmbed()
 							.setColor("#34aeeb")
 							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -83,6 +85,7 @@ module.exports = {
 			editEvent(searchResults[0], criteria);
 		}
 		else {
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 			const errorMessage = new Discord.MessageEmbed()
 				.setColor("#fc0303")
 				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -96,6 +99,7 @@ module.exports = {
 			let index;
 			if (criteria.startsWith("add") || criteria.startsWith("remove") || criteria.startsWith("set")) {
 				if (isNaN(args[2]) || args[2] < 1 || args[2] > currentEvent.roster.length) {
+					message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 					const errorScreen = new Discord.MessageEmbed()
 						.setColor("#fc0303")
 						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -116,18 +120,20 @@ module.exports = {
 
 			switch (criteria) {
 				case "name":
+					let oldName = currentEvent.name;
 					let eventName = args.slice(2, args.length).join(" ");
 					currentEvent.name = eventName;
 
 					infoScreen = new Discord.MessageEmbed()
 						.setColor("#03fc24")
 						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-						.setTitle(`Successfully set the event name to ${eventName}!`)
+						.setTitle(`Successfully changed the event name from ${oldName} to ${eventName}!`)
 						.setTimestamp();
 					break;
 				case "isactive":
 					let value = args[2].toLowerCase();
 					if (value !== "true" && value !== "false") {
+						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 						const errorScreen = new Discord.MessageEmbed()
 							.setColor("#fc0303")
 							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -142,16 +148,20 @@ module.exports = {
 						}
 					}
 
-					currentEvent.isActive = eventName;
+					currentEvent.isActive = JSON.parse(value);
+					if (currentEvent.isActive === true) {
+						message.client.channels.cache.get("798776756952629298").send(`**The ${currentEvent.name} event has officially started!**`); 
+					}     
 					infoScreen = new Discord.MessageEmbed()
 						.setColor("#03fc24")
 						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-						.setTitle(`Successfully set the event name to ${eventName}!`)
+						.setTitle(`Successfully set ${currentEvent.name}'s active status to \`${value}\`!`)
 						.setTimestamp();
 					break;
 				case "background": {
 					let imageLink = args[2];
 					if (imageLink.search(/\b(https:|http:)/) < 0 || imageLink.search(/(.jpeg|.jpg|.png|.gif)\b/) < 0) {
+						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 						const errorScreen = new Discord.MessageEmbed()
 							.setColor("#fc0303")
 							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -200,6 +210,7 @@ module.exports = {
 						});
 
 						if (carList.length > 2048) {
+							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 							const errorMessage = new Discord.MessageEmbed()
 								.setColor("#fc0303")
 								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -228,7 +239,8 @@ module.exports = {
 						})
 							.then(collected => {
 								collected.first().delete();
-								if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.size) {
+								if (isNaN(collected.first().content) || parseInt(collected.first().content) > searchResults.size || parseInt(collected.first().content) < 1) {
+									message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 									const errorMessage = new Discord.MessageEmbed()
 										.setColor("#fc0303")
 										.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -238,10 +250,11 @@ module.exports = {
 									return currentMessage.edit(errorMessage);
 								}
 								else {
-									currentEvent.roster[index - 1].car = redirect[parseInt(collected.first()) - 1];
+									currentEvent.roster[index - 1].car = redirect[parseInt(collected.first().content) - 1];
 								}
 							})
 							.catch(() => {
+								message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 								const cancelMessage = new Discord.MessageEmbed()
 									.setColor("#34aeeb")
 									.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -254,6 +267,7 @@ module.exports = {
 						currentEvent.roster[index - 1].car = Array.from(searchResults)[0];
 					}
 					else {
+						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 						const errorMessage = new Discord.MessageEmbed()
 							.setColor("#fc0303")
 							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -284,6 +298,7 @@ module.exports = {
 							return currentCar[`${tune}TopSpeed`];
 						});
 
+						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 						const errorMessage = new Discord.MessageEmbed()
 							.setColor("#fc0303")
 							.setTitle("Error, the tuning stage you requested is unavailable.")
@@ -304,7 +319,7 @@ module.exports = {
 						.setTimestamp();
 					break;
 				case "addreq":
-					let req = args[3].toLowerCase().replace("type", "Type").replace("count", "Count").replace("year", "Year").replace("pos", "Pos").replace("prize", "Prize").replace("stock", "Stock").replace("upgrade", "Upgrade").replace("max", "Max");
+					let req = args[3].toLowerCase().replace("type", "Type").replace("style", "Style").replace("count", "Count").replace("year", "Year").replace("pos", "Pos").replace("prize", "Prize").replace("stock", "Stock").replace("upgrade", "Upgrade").replace("max", "Max");
 					switch (req) {
 						case "make":
 						case "Country":
@@ -324,6 +339,7 @@ module.exports = {
 								currentEvent.roster[index - 1].requirements[req.replace("C", "c")] = argument;
 							}
 							else {
+								message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 								let errorMessage = new Discord.MessageEmbed()
 									.setColor("#fc0303")
 									.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -359,6 +375,7 @@ module.exports = {
 								return message.channel.send(errorMessage);
 							}
 							else if (end < start) {
+								message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 								let errorMessage = new Discord.MessageEmbed()
 									.setColor("#fc0303")
 									.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -380,19 +397,25 @@ module.exports = {
 								.setTimestamp();
 							break;
 						case "driveType":
-						case "bodyType":
+						case "bodyStyle":
 						case "enginePos":
 						case "fuelType":
 						case "gc":
 							let arg = args[4].toLowerCase();
-							searchResults = carFiles.filter(function(carFile) {
+							let reqSearchResults2 = carFiles.filter(function(carFile) {
 								let currentCar = require(`./cars/${carFile}`);
-								return currentCar[req].toLowerCase() === arg;
+								if (Array.isArray(currentCar[req])) {
+									return currentCar[req].some(tag => tag.toLowerCase() === arg);
+								}
+								else {
+									return currentCar[req].toLowerCase() === arg;
+								}
 							});
-							if (searchResults.length > 0) {
-								currentEvent.roster[i - 1].requirements[req] = arg;
+							if (reqSearchResults2.length > 0) {
+								currentEvent.roster[index - 1].requirements[req] = arg;
 							}
 							else {
+								message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 								let errorMessage = new Discord.MessageEmbed()
 									.setColor("#fc0303")
 									.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -405,13 +428,13 @@ module.exports = {
 							infoScreen = new Discord.MessageEmbed()
 								.setColor("#03fc24")
 								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-								.setTitle(`Successfully added a \`${req}\` criteria to roster position ${i}!`)
+								.setTitle(`Successfully added a \`${req}\` criteria to roster position ${index}!`)
 								.setDescription(`Value: \`${arg}\``)
 								.setTimestamp();
 							break;
 						case "isPrize":
 							if (args[4].toLowerCase() === "true" || args[4].toLowerCase() === "false") {
-								currentEvent.roster[i - 1].requirements[req] = JSON.parse(args[4].toLowerCase());
+								currentEvent.roster[index - 1].requirements[req] = JSON.parse(args[4].toLowerCase());
 								infoScreen = new Discord.MessageEmbed()
 									.setColor("#03fc24")
 									.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -420,6 +443,7 @@ module.exports = {
 									.setTimestamp();
 							}
 							else {
+								message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 								let errorMessage = new Discord.MessageEmbed()
 									.setColor("#fc0303")
 									.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -430,6 +454,7 @@ module.exports = {
 							}
 							break;
 						default:
+							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 							const errorScreen = new Discord.MessageEmbed()
 								.setColor("#fc0303")
 								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -441,7 +466,7 @@ module.exports = {
 											\`drivetype\` - Filter by drive type. 
 											\`tyretype\` - Filter by tyre type.
 											\`gc\` - Filter by ground clearance.
-											\`bodytype\` - Filter by body type.  
+											\`bodystyle\` - Filter by body type.  
 											\`seatcount\` - Filter by seat count.
 											\`enginepos\` - Filter by engine position.
 											\`fueltype\` - Filter by fuel type.
@@ -465,6 +490,7 @@ module.exports = {
 					}
 
 					if (!hasReq) {
+						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 						const errorScreen = new Discord.MessageEmbed()
 							.setColor("#fc0303")
 							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -476,7 +502,7 @@ module.exports = {
 											\`drivetype\` - Filter by drive type. 
 											\`tyretype\` - Filter by tyre type.
 											\`gc\` - Filter by ground clearance.
-											\`bodytype\` - Filter by body type.  
+											\`bodystyle\` - Filter by body type.  
 											\`seatcount\` - Filter by seat count.
 											\`enginepos\` - Filter by engine position.
 											\`fueltype\` - Filter by fuel type.
@@ -508,6 +534,7 @@ module.exports = {
 						}
 
 						if (trackList.length > 2048) {
+							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 							const errorMessage = new Discord.MessageEmbed()
 								.setColor("#fc0303")
 								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -533,11 +560,12 @@ module.exports = {
 						await message.channel.awaitMessages(filter, {
 							max: 1,
 							time: 60000,
-							errors: ['time']
+							errors: ["time"]
 						})
 							.then(collected => {
 								collected.first().delete();
 								if (isNaN(collected.first().content) || parseInt(collected.first()) > tSearchResults.length) {
+									message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 									const errorMessage = new Discord.MessageEmbed()
 										.setColor("#fc0303")
 										.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -551,6 +579,7 @@ module.exports = {
 								}
 							})
 							.catch(() => {
+								message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 								const cancelMessage = new Discord.MessageEmbed()
 									.setColor("#34aeeb")
 									.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -563,6 +592,7 @@ module.exports = {
 						currentEvent.roster[index - 1].trackset = tSearchResults[0];
 					}
 					else {
+						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 						const errorMessage = new Discord.MessageEmbed()
 							.setColor("#fc0303")
 							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -587,12 +617,13 @@ module.exports = {
 						case "fusetokens":
 						case "trophies":
 							let amount = args[4];
-							if (isNaN(amount) || parseInt(amount) < 1) {
+							if (isNaN(amount) || parseInt(amount) < 0) {
+								message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 								const errorMessage = new Discord.MessageEmbed()
 									.setColor("#fc0303")
 									.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-									.setTitle("Error, amount provided is either not a number or less than 1.")
-									.setDescription("This amount should always be a positive number, i.e: `4`, `20`, etc.")
+									.setTitle("Error, amount provided is either not a number or less than 0.")
+									.setDescription("This amount should always be a positive number, i.e: `4`, `20`, etc. 0 is only for deleting the reward for trophies.")
 									.setTimestamp();
 								return message.channel.send(errorMessage);
 							}
@@ -600,15 +631,30 @@ module.exports = {
 							let emoji;
 							if (rewardType === "money") {
 								emoji = message.client.emojis.cache.get("726017235826770021");
-								currentEvent.roster[index - 1].reward = { money: parseInt(amount) };
+								if (currentEvent.roster[index - 1].reward.trophies) {
+									currentEvent.roster[index - 1].reward = { money: parseInt(amount), trophies: currentEvent.roster[index - 1].reward.trophies };
+								}
+								else {
+									currentEvent.roster[index - 1].reward = { money: parseInt(amount) };
+								}
 							}
 							else if (rewardType === "fusetokens") {
 								emoji = message.client.emojis.cache.get("726018658635218955");
-								currentEvent.roster[index - 1].reward = { fuseTokens: parseInt(amount) };
+								if (currentEvent.roster[index - 1].reward.trophies) {
+									currentEvent.roster[index - 1].reward = { fuseTokens: parseInt(amount), trophies: currentEvent.roster[index - 1].reward.trophies };
+								}
+								else {
+									currentEvent.roster[index - 1].reward = { fuseTokens: parseInt(amount) };
+								};
 							}
 							else {
 								emoji = message.client.emojis.cache.get("775636479145148418");
-								currentEvent.roster[index - 1].reward = { trophies: parseInt(amount) };
+								if (parseInt(amount) === 0) {
+									delete currentEvent.roster[index - 1].reward.trophies;
+								}
+								else {
+									currentEvent.roster[index - 1].reward.trophies = parseInt(amount);
+								}
 							}
 
 							infoScreen = new Discord.MessageEmbed()
@@ -643,6 +689,7 @@ module.exports = {
 								});
 
 								if (carList.length > 2048) {
+									message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 									const errorMessage = new Discord.MessageEmbed()
 										.setColor("#fc0303")
 										.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -672,6 +719,7 @@ module.exports = {
 									.then(collected => {
 										collected.first().delete();
 										if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults1.size) {
+											message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 											const errorMessage = new Discord.MessageEmbed()
 												.setColor("#fc0303")
 												.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -685,6 +733,7 @@ module.exports = {
 										}
 									})
 									.catch(() => {
+										message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 										const cancelMessage = new Discord.MessageEmbed()
 											.setColor("#34aeeb")
 											.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -697,6 +746,7 @@ module.exports = {
 								carFile = Array.from(searchResults1)[0];
 							}
 							else {
+								message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 								const errorMessage = new Discord.MessageEmbed()
 									.setColor("#fc0303")
 									.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -706,7 +756,13 @@ module.exports = {
 								return message.channel.send(errorMessage);
 							}
 
-							currentEvent.roster[index - 1].reward = { car: carFile };
+							if (currentEvent.roster[index - 1].reward.trophies) {
+								currentEvent.roster[index - 1].reward = { car: carFile, trophies: currentEvent.roster[index - 1].reward.trophies };
+							}
+							else {
+								currentEvent.roster[index - 1].reward = { car: carFile };
+							}
+
 							let cardThing = require(`./cars/${carFile}`);
 							let make = cardThing["make"];
 							if (typeof make === "object") {
@@ -732,15 +788,6 @@ module.exports = {
 									let currentPack = require(`./packs/${searchResults[i - 1]}`);
 									packList += `${i} - ` + currentPack["packName"] + "\n";
 								}
-								if (packList.length > 2048) {
-									const errorMessage = new Discord.MessageEmbed()
-										.setColor("#fc0303")
-										.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-										.setTitle("Error, too many search results.")
-										.setDescription("Due to Discord's embed limitations, the bot isn't able to show the full list of search results. Try again with a more specific keyword.")
-										.setTimestamp();
-									return message.channel.send(errorMessage);
-								}
 
 								const infoScreen = new Discord.MessageEmbed()
 									.setColor("#34aeeb")
@@ -763,6 +810,7 @@ module.exports = {
 									.then(collected => {
 										collected.first().delete();
 										if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
+											message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 											const errorMessage = new Discord.MessageEmbed()
 												.setColor("#fc0303")
 												.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -776,6 +824,7 @@ module.exports = {
 										}
 									})
 									.catch(() => {
+										message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 										const cancelMessage = new Discord.MessageEmbed()
 											.setColor("#34aeeb")
 											.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -788,6 +837,7 @@ module.exports = {
 								packFile = searchResults[0];
 							}
 							else {
+								message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 								const errorMessage = new Discord.MessageEmbed()
 									.setColor("#fc0303")
 									.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -797,7 +847,13 @@ module.exports = {
 								return message.channel.send(errorMessage);
 							}
 
-							currentEvent.roster[index - 1].reward = { pack: packFile };
+							if (currentEvent.roster[index - 1].reward.trophies) {
+								currentEvent.roster[index - 1].reward = { pack: packFile, trophies: currentEvent.roster[index - 1].reward.trophies };
+							}
+							else {
+								currentEvent.roster[index - 1].reward = { pack: packFile };
+							}
+
 							let currentPack = require(`./packs/${packFile}`);
 							infoScreen = new Discord.MessageEmbed()
 								.setColor("#03fc24")
@@ -807,6 +863,7 @@ module.exports = {
 								.setTimestamp();
 							break;
 						default:
+							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 							const errorScreen = new Discord.MessageEmbed()
 								.setColor("#fc0303")
 								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -821,7 +878,126 @@ module.exports = {
 							return message.channel.send(errorScreen);
 					}
 					break;
+				case "regenrounds":
+					let randomizeType = args[2].toLowerCase();
+					let carFile = [], tracks = [];
+					switch (randomizeType) {
+						case "asphalt":
+							let f = tracksets.filter(track => {
+								return track.includes("(rainy)") || !track.includes("(");
+							});
+							for (i = 0; i < currentEvent.roster.length; i++) {
+								carFile[i] = carFiles[Math.floor(Math.random() * carFiles.length)];
+								tracks[i] = f[Math.floor(Math.random() * f.length)];
+							}
+							break;
+						case "dirt":
+							let f1 = carFiles.filter(car => {
+								let c = require(`./cars/${car}`);
+								return c["tyreType"] === "Standard" || c["tyreType"] === "All-Surface" || c["tyreType"] === "Off-Road";
+							});
+							let f2 = tracksets.filter(track => {
+								return track.includes("(muddy)") || track.includes("(dirt)") || track.includes("(gravel)") || track.includes("(rainy gravel)");
+							});
+							for (i = 0; i < currentEvent.roster.length; i++) {
+								carFile[i] = f1[Math.floor(Math.random() * f1.length)];
+								tracks[i] = f2[Math.floor(Math.random() * f2.length)];
+							}
+							break;
+						case "snow":
+							let f3 = carFiles.filter(car => {
+								let c = require(`./cars/${car}`);
+								return c["tyreType"] === "Standard" || c["tyreType"] === "All-Surface" || c["tyreType"] === "Off-Road";
+							});
+							let f4 = tracksets.filter(track => {
+								return track.includes("(snowy)") || track.includes("(ice)");
+							});
+							for (i = 0; i < currentEvent.roster.length; i++) {
+								carFile[i] = f3[Math.floor(Math.random() * f3.length)];
+								tracks[i] = f4[Math.floor(Math.random() * f4.length)];
+							}
+							break;
+						default:
+							break;
+					}
+
+					carFile.sort(function (a, b) {
+						const carA = require(`./cars/${a}`);
+						const carB = require(`./cars/${b}`);
+
+						if (carA["rq"] === carB["rq"]) {
+							let nameA = `${carA["make"]} ${carA["model"]}`.toLowerCase();
+							let nameB = `${carA["make"]} ${carA["model"]}`.toLowerCase();
+							if (typeof carA["make"] === "object") {
+								nameA = `${carA["make"][0]} ${carA["model"]}`.toLowerCase();
+							}
+							if (typeof carB["make"] === "object") {
+								nameB = `${carB["make"][0]} ${carB["model"]}`.toLowerCase();
+							}
+
+							if (nameA < nameB) {
+								return -1;
+							}
+							else if (nameA > nameB) {
+								return 1;
+							}
+							else {
+								return 0;
+							}
+						}
+						else {
+							if (carA["rq"] > carB["rq"]) {
+								return 1;
+							}
+							else {
+								return -1;
+							}
+						}
+					});
+
+					for (x = 0; x < currentEvent.roster.length; x++) {
+						let upgradeIndex = Math.floor(Math.random() * 4);
+						let upgradePattern = [0, 0, 0];
+						switch (upgradeIndex) {
+							case 0:
+								break;
+							case 1:
+								upgradePattern = [3, 3, 3];
+								break;
+							case 2:
+								upgradePattern = [6, 6, 6];
+								break;
+							case 3:
+								let maxedTunes = [996, 969, 699];
+								let i = Math.floor(Math.random() * maxedTunes.length);
+								let car = require(`./cars/${carFile[x]}`);
+								while (!car[`${maxedTunes[i]}TopSpeed`]) {
+									i = Math.floor(Math.random() * maxedTunes.length);
+								}
+								upgradePattern = Array.from(maxedTunes[i].toString(), (val) => Number(val));
+								break;
+							default:
+								break;
+						}
+						currentEvent.roster[x] = ({
+							car: carFile[x],
+							gearingUpgrade: upgradePattern[0],
+							engineUpgrade: upgradePattern[1],
+							chassisUpgrade: upgradePattern[2],
+							trackset: tracks[x],
+							requirements: currentEvent.roster[x].requirements,
+							reward: currentEvent.roster[x].reward
+						});
+					}
+
+					infoScreen = new Discord.MessageEmbed()
+						.setColor("#03fc24")
+						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+						.setTitle(`Successfully regenerated opponents and tracksets for the ${currentEvent.name} event!`)
+						.setTimestamp();
+					break;
 				default:
+					message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 					const errorScreen = new Discord.MessageEmbed()
 						.setColor("#fc0303")
 						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -834,12 +1010,14 @@ module.exports = {
 									\`setreward\` - Sets the reward of a round.
 									\`settune\` - Sets the tune for the opponent's car.
 									\`addreq\` - Adds a requirement to a round.
-									\`removereq\` - Removes a requirement from a round.`)
+									\`removereq\` - Removes a requirement from a round.
+									\`regenrounds\` - Regenrates opponents and tracksets for every single round of an event.`)
 						.setTimestamp();
 					return message.channel.send(errorScreen);
 			}
 
 			await db.set("events", events);
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 			if (currentMessage) {
 				return currentMessage.edit(infoScreen);
 			}

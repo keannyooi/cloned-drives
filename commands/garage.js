@@ -12,357 +12,394 @@ const Discord = require("discord.js-light");
 module.exports = {
     name: "garage",
 	aliases: ["g"],
-    usage: "(all optional) <username goes here> | <page number> | -s <sorting criteria>",
+    usage: "(all optional) <username goes here> | <page number>",
     args: 0,
 	isExternal: true,
     adminOnly: false,
     description: "Shows your (or other people's) garage.",
     async execute(message, args) {
         const db = message.client.db;
-        const pageLimit = 10;
-        const trophyEmoji = message.client.emojis.cache.get("775636479145148418");
-        const filter = (reaction, user) => {
-            return (reaction.emoji.name === "⬅️" || reaction.emoji.name === "➡️") && user.id === message.author.id;
-        };
-        var garageList = "", amountList = "", valueList = "";
-        var page, userName, displayName;
         let user = message.author;
-        let member = message.member;
-        var sortBy = "rq";
-        var reactionIndex = 0;
 
-        if (!args.length || args[0] === "-s") {
-            page = 1;
-			if (message.channel.type === "text") {
-				displayName = member.displayName;
-			}
-			else {
-				displayName = user.username;
-			}
+        if (!args.length) {
+			loop(user, 1);
         }
         else {
-            if (isNaN(args[0])) {
-                userName = args[0].toLowerCase();
-
-				if (message.channel.type !== "text") {
-					const errorMessage = new Discord.MessageEmbed()
-                        .setColor("#fc0303")
-                        .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                        .setTitle("Error, this feature cannot be executed on DMs.")
-                        .setDescription("Due to Discord DM limitations, this feature cannot be executed here. Sorry for your inconvenience.")
-                        .setTimestamp();
-                    return message.channel.send(errorMessage);
+			if (isNaN(args[0])) {
+				let page = 1;
+				let userName;
+				if (isNaN(args[args.length - 1])) {
+					userName = args.map(i => i.toLowerCase());
 				}
+				else {
+					userName = args.slice(0, args.length - 1).map(i => i.toLowerCase());
+					page = parseInt(args[args.length - 1]);
+				}
+				if (message.mentions.users.first()) {
+					if (!message.mentions.users.first().bot) {
+						loop(message.mentions.users.first(), page);
+					}
+					else {
+						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+						const errorMessage = new Discord.MessageEmbed()
+							.setColor("#fc0303")
+							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+							.setTitle("Error, user requested is a bot.")
+							.setDescription("Bots can't play Cloned Drives.")
+							.setTimestamp();
+						return message.channel.send(errorMessage);
+					}
+				}
+				else {
+					let filter = response => {
+						return response.author.id === message.author.id;
+					};
+					let userName = args[0].toLowerCase();
+					let userList = [];
+					message.guild.members.cache.forEach(User => {
+						if ((User.displayName.toLowerCase().includes(userName) || User.user.username.toLowerCase().includes(userName)) && !User.user.bot) {
+							userList.push(User.user);
+						}
+					});
 
-                if (!args[1] || args[1] === "-s") {
-                    page = 1;
-                }
-                else {
-                    page = parseInt(args[1]);
-                }
+					if (userList.length > 1) {
+						let textList = "";
+						for (i = 1; i <= userList.length; i++) {
+							textList += `${i} - ${userList[i - 1].tag}\n`;
+						}
 
-                user = member = null;
-                message.guild.members.cache.forEach(User => {
-                    if (message.guild.member(User).displayName.toLowerCase().includes(userName)) {
-                        console.log("found!");
-                        user = User.user;
-                        member = message.guild.member(User);
-                    }
-                });
-                if (!user) {
-                    const errorMessage = new Discord.MessageEmbed()
-                        .setColor("#fc0303")
-                        .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                        .setTitle("Error, 404 user not found.")
-                        .setDescription("It looks like this user isn't in this server.")
-                        .setTimestamp();
-                    return message.channel.send(errorMessage);
-                }
-                else if (user.bot) {
-                    const errorMessage = new Discord.MessageEmbed()
-                        .setColor("#fc0303")
-                        .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                        .setTitle("Error, user requested is a bot.")
-                        .setDescription("Bots can't play Cloned Drives.")
-                        .setTimestamp();
-                    return message.channel.send(errorMessage);
-                }
+						if (textList.length > 2048) {
+							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+							const errorMessage = new Discord.MessageEmbed()
+								.setColor("#fc0303")
+								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+								.setTitle("Error, too many search results.")
+								.setDescription("Due to Discord's embed limitations, the bot isn't able to show the full list of search results. Try again with a more specific keyword.")
+								.setTimestamp();
+							return message.channel.send(errorMessage);
+						}
+
+						const infoScreen = new Discord.MessageEmbed()
+							.setColor("#34aeeb")
+							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+							.setTitle("Multiple users found, please type one of the following.")
+							.setDescription(textList)
+							.setTimestamp();
+
+						message.channel.send(infoScreen).then(currentMessage => {
+							message.channel.awaitMessages(filter, {
+								max: 1,
+								time: 30000,
+								errors: ["time"]
+							})
+								.then(collected => {
+									collected.first().delete();
+									if (isNaN(collected.first().content) || parseInt(collected.first().content) > userList.length || parseInt(collected.first().content) < 1) {
+										message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+										const errorMessage = new Discord.MessageEmbed()
+											.setColor("#fc0303")
+											.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+											.setTitle("Error, invalid integer provided.")
+											.setDescription("It looks like your response was either not a number or not part of the selection.")
+											.setTimestamp();
+										return currentMessage.edit(errorMessage);
+									}
+									else {
+										loop(userList[parseInt(collected.first().content) - 1], page, currentMessage);
+									}
+								})
+								.catch(error => {
+									console.log(error);
+									message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+									const cancelMessage = new Discord.MessageEmbed()
+										.setColor("#34aeeb")
+										.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+										.setTitle("Action cancelled automatically.")
+										.setTimestamp();
+									return currentMessage.edit(cancelMessage);
+								});
+						});
+					}
+					else if (userList.length > 0) {
+						loop(userList[0], page);
+					}
+					else {
+						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+						const errorMessage = new Discord.MessageEmbed()
+							.setColor("#fc0303")
+							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+							.setTitle("Error, 404 user not found.")
+							.setDescription("It looks like this user isn't in this server.")
+							.setTimestamp();
+						return message.channel.send(errorMessage);
+					}
+				}
             }
             else {
-                page = parseInt(args[0]);
+				loop(user, parseInt(args[0]));
             }
+        }
+
+		async function loop(user, page, currentMessage) {
+			const pageLimit = 10;
+			var garage = await db.get(`acc${user.id}.garage`);
+			var reactionIndex = 0;
+        	var page;
+			let filter = (reaction, user) => {
+				return (reaction.emoji.name === "⬅️" || reaction.emoji.name === "➡️") && user.id === message.author.id;
+			};
+
+			const carFilter = await db.get(`acc${message.author.id}.filter`);
+			if (carFilter !== null) {
+				for (const [key, value] of Object.entries(carFilter)) {
+					switch (typeof value) {
+						case "object":
+							if (Array.isArray(value)) {
+								garage = garage.filter(function (car) {
+									let currentCar = require(`./cars/${car.carFile}`);
+									if (Array.isArray(currentCar[key])) {
+										var obj = {};
+										currentCar[key].forEach((tag, index) => obj[tag.toLowerCase()] = index);
+										return value.every(tagFilter => { return obj[tagFilter] !== undefined });
+									}
+									else {
+										return value.includes(currentCar[key].toLowerCase());
+									}
+								});
+							}
+							else {
+								garage = garage.filter(function (car) {
+									let currentCar = require(`./cars/${car.carFile}`);
+									return currentCar[key] >= value.start && currentCar[key] <= value.end;
+								});
+							}
+							break;
+						case "string":
+							garage = garage.filter(function (car) {
+								let currentCar = require(`./cars/${car.carFile}`);
+								return currentCar[key].toLowerCase() === value;
+							});
+							break;
+						case "boolean":
+							garage = garage.filter(function (car) {
+								let currentCar = require(`./cars/${car.carFile}`);
+								switch (key) {
+									case "isPrize":
+										return currentCar[key] === value;
+									case "isStock": 
+										return (car["000"] > 0) === value;
+									case "isUpgraded":
+										return (car["333"] + car["666"] + car["996"] + car["969"] + car["699"] > 0) === value;
+									case "isMaxed":
+										return (car["996"] + car["969"] + car["699"] > 0) === value;
+									case "isOwned":
+										return true;
+									default:
+										break;
+								}
+							});
+							break;
+						default:
+							break;
+					}
+				}
+			}
+
+			const totalPages = Math.ceil(garage.length / pageLimit);
+			garage.sort(function (a, b) {
+				const carA = require(`./cars/${a.carFile}`);
+				const carB = require(`./cars/${b.carFile}`);
+
+				if (carA["rq"] === carB["rq"]) {
+					let nameA = `${carA["make"]} ${carA["model"]}`.toLowerCase();
+					let nameB = `${carA["make"]} ${carA["model"]}`.toLowerCase();
+					if (typeof carA["make"] === "object") {
+						nameA = `${carA["make"][0]} ${carA["model"]}`.toLowerCase();
+					}
+					if (typeof carB["make"] === "object") {
+						nameB = `${carB["make"][0]} ${carB["model"]}`.toLowerCase();
+					}
+
+					if (nameA < nameB) {
+						return -1;
+					}
+					else if (nameA > nameB) {
+						return 1;
+					}
+					else {
+						return 0;
+					}
+				}
+				else {
+					if (carA["rq"] > carB["rq"]) {
+						return -1;
+					}
+					else {
+						return 1;
+					}
+				}
+			});
+
+			if (page < 0 || totalPages < page) {
+				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+				const errorScreen = new Discord.MessageEmbed()
+					.setColor("#fc0303")
+					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+					.setTitle("Error, page number requested invalid.")
+					.setDescription(`This garage ends at page ${totalPages}.`)
+					.setTimestamp();
+				if (currentMessage) {
+					return currentMessage.edit(errorScreen);
+				}
+				else {
+					return message.channel.send(errorScreen);
+				}
+			}
+			let lists = garageDisplay(page, garage);
+
+			let infoScreen = new Discord.MessageEmbed()
+				.setColor("#34aeeb")
+				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+				.setTitle(`${user.username}'s Garage`)
+				.setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
+				.setDescription(`Filter Activated: \`${carFilter !== null}\``)
+				.addField("Car", lists.garageList, true)
+				.addField("Amount", lists.amountList, true)
+				.setTimestamp();
 			if (message.channel.type === "text") {
-				displayName = member.displayName;
+				infoScreen.setFooter(`Page ${page} of ${totalPages} - React with ⬅️ or ➡️ to navigate through pages.`);
 			}
 			else {
-				displayName = user.username;
+				infoScreen.setFooter(`Page ${page} of ${totalPages} - Arrow navigation is disabled in DMs, please use cd-garage <user or blank if it's you> <page number> to view a different page.`);
 			}
-        }
 
-        var garage = await db.get(`acc${user.id}.garage`);
-        const carFilter = await db.get(`acc${message.author.id}.filter`);
-        if (carFilter !== null) {
-            for (const [key, value] of Object.entries(carFilter)) {
-                switch (typeof value) {
-                    case "object":
-                        if (Array.isArray(value)) {
-                            garage = garage.filter(function (car) {
-                                let currentCar = require(`./cars/${car.carFile}`);
-                                if (Array.isArray(currentCar[key])) {
-                                    var obj = {};
-                                    currentCar[key].forEach((tag, index) => obj[tag.toLowerCase()] = index);
-                                    return value.every(tagFilter => { return obj[tagFilter] !== undefined });
-                                }
-                                else {
-                                    return value.includes(currentCar[key].toLowerCase());
-                                }
-                            });
-                        }
-                        else {
-                            garage = garage.filter(function (car) {
-                                let currentCar = require(`./cars/${car.carFile}`);
-                                return currentCar[key] >= value.start && currentCar[key] <= value.end;
-                            });
-                        }
-                        break;
-                    case "string":
-                        garage = garage.filter(function (car) {
-                            let currentCar = require(`./cars/${car.carFile}`);
-                            return currentCar[key].toLowerCase() === value;
-                        });
-                        break;
-                    case "boolean":
-                        garage = garage.filter(function (car) {
-                            let currentCar = require(`./cars/${car.carFile}`);
-							switch (key) {
-								case "isPrize":
-									return currentCar[key] === value;
-								case "isStock": 
-									return (car["000"] > 0) === value;
-								case "isUpgraded":
-									return (car["333"] + car["666"] + car["996"] + car["969"] + car["699"] > 0) === value;
-								case "isMaxed":
-									return (car["996"] + car["969"] + car["699"] > 0) === value;
-								default:
-									break;
-							}
-                        });
-                        break;
-                    default:
-                        break;
-                }
-            }
-        }
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+			let garageMessage;
+			if (currentMessage) {
+				garageMessage = await currentMessage.edit(infoScreen);
+			}
+			else {
+				garageMessage = await message.channel.send(infoScreen);
+			}
 
-        if (args[args.length - 2] === "-s") {
-            switch (args[args.length - 1].toLowerCase()) {
-                case "rq":
-                case "handling":
-                case "weight":
-                case "mra":
-                case "ola":
-                    sortBy = args[args.length - 1].toLowerCase();
-                    break;
-                case "topspeed":
-                    sortBy = "topSpeed";
-                    break;
-                case "accel":
-                    sortBy = "0to60";
-                    break;
-                default:
-                    const errorScreen = new Discord.MessageEmbed()
-                        .setColor("#fc0303")
-                        .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                        .setTitle("Error, sorting criteria not found.")
-                        .setDescription(`Here is a list of sorting criterias. 
-                                         \`-s topspeed\` - Sort by top speed. 
-                                         \`-s accel\` - Sort by acceleration. 
-                                         \`-s handling\` - Sort by handling. 
-                                         \`-s weight\` - Sort by weight. 
-                                         \`-s mra\` - Sort by mid-range acceleraion. 
-                                         \`-s ola\` - Sort by off-the-line acceleration.`)
-                        .setTimestamp();
-                    return message.channel.send(errorScreen);
-            }
-        }
-
-        const totalPages = Math.ceil(garage.length / pageLimit);
-        garage.sort(function (a, b) {
-            const carA = require(`./cars/${a.carFile}`);
-            const carB = require(`./cars/${b.carFile}`);
-            let criteriaA = carA[sortBy];
-            let criteriaB = carB[sortBy];
-
-            if (a.gearingUpgrade > 0) {
-                switch (sortBy) {
-                    case "topSpeed":
-                        criteriaA = carA[`${a.gearingUpgrade}${a.engineUpgrade}${a.chassisUpgrade}TopSpeed`];
-                        break;
-                    case "0to60":
-                        criteriaA = carA[`${a.gearingUpgrade}${a.engineUpgrade}${a.chassisUpgrade}0to60`];
-                        break;
-                    case "handling":
-                        criteriaA = carA[`${a.gearingUpgrade}${a.engineUpgrade}${a.chassisUpgrade}Handling`];
-                        break;
-                    default:
-                        break;
-                }
-            }
-            if (b.gearingUpgrade > 0) {
-                switch (sortBy) {
-                    case "topSpeed":
-                        criteriaB = carB[`${b.gearingUpgrade}${b.engineUpgrade}${b.chassisUpgrade}TopSpeed`];
-                        break;
-                    case "0to60":
-                        criteriaB = carB[`${b.gearingUpgrade}${b.engineUpgrade}${b.chassisUpgrade}0to60`];
-                        break;
-                    case "handling":
-                        criteriaB = carB[`${b.gearingUpgrade}${b.engineUpgrade}${b.chassisUpgrade}Handling`];
-                        break;
-                    default:
-                        break;
-                }
-            }
-
-            if (criteriaA === criteriaB) {
-                let nameA = `${carA["make"]} ${carA["model"]}`.toLowerCase();
-                let nameB = `${carA["make"]} ${carA["model"]}`.toLowerCase();
-				if (typeof carA["make"] === "object") {
-					nameA = `${carA["make"][0]} ${carA["model"]}`.toLowerCase();
-				}
-				if (typeof carB["make"] === "object") {
-					nameB = `${carB["make"][0]} ${carB["model"]}`.toLowerCase();
-				}
-
-                if (nameA < nameB) {
-                    return -1;
-                }
-                else if (nameA > nameB) {
-                    return 1;
-                }
-                else {
-                    return 0;
-                }
-            }
-            else {
-                if (sortBy === "0to60" || sortBy === "weight") {
-                    if (criteriaA > criteriaB) {
-                        return 1;
-                    }
-                    else {
-                        return -1;
-                    }
-                }
-                else {
-                    if (criteriaA > criteriaB) {
-                        return -1;
-                    }
-                    else {
-                        return 1;
-                    }
-                }
-            }
-        });
-
-        if (page < 0 || totalPages < page) {
-            const errorScreen = new Discord.MessageEmbed()
-                .setColor("#fc0303")
-                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle("Error, page number requested invalid.")
-                .setDescription(`Your garage ends at page ${totalPages}.`)
-                .setTimestamp();
-            return message.channel.send(errorScreen);
-        }
-        garageDisplay(page);
-
-        let infoScreen = new Discord.MessageEmbed()
-            .setColor("#34aeeb")
-            .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-            .setTitle(`${displayName}'s Garage`)
-            .setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
-            .setDescription(`Current Sorting Criteria: \`${sortBy}\``)
-            .addField("Car", garageList, true)
-			.addField("Amount", amountList, true)
-            .setTimestamp();
-        if (sortBy !== "rq") {
-            infoScreen.addField("Value", valueList, true);
-        }
-		if (message.channel.type === "text") {
-			infoScreen.setFooter(`Page ${page} of ${totalPages} - React with ⬅️ or ➡️ to navigate through pages.`);
-		}
-		else {
-			infoScreen.setFooter(`Page ${page} of ${totalPages} - Arrow navigation is disabled in DMs, please use cd-garage <user or blank if it's you> <page number> to view a different page.`);
-		}
-
-        message.channel.send(infoScreen).then(garageMessage => {
-            if (message.channel.type === "text") {
+			if (message.channel.type === "text") {
 				switch (reactionIndex) {
-        	        case 0:
-    	                break;
- 	               case 1:
-                    	garageMessage.react("➡️");
-                	    break;
-            	    case 2:
-        	            garageMessage.react("⬅️");
-    	                break;
-	                case 3:
-                    	garageMessage.react("⬅️");
-                	    garageMessage.react("➡️");
-            	        break;
-        	        default:
-    	                break;
-	            }
+					case 0:
+						break;
+					case 1:
+						garageMessage.react("➡️");
+						break;
+					case 2:
+						garageMessage.react("⬅️");
+						break;
+					case 3:
+						garageMessage.react("⬅️");
+						garageMessage.react("➡️");
+						break;
+					default:
+						break;
+				}
 
-            	const collector = garageMessage.createReactionCollector(filter, { time: 60000 });
-            	collector.on("collect", reaction => {
-                	if (reaction.emoji.name === "⬅️") {
-        	            page -= 1;
-    	            }
-	                else if (reaction.emoji.name === "➡️") {
-                	    page += 1;
-            	    }
-        	        garageDisplay(page);
-    	            garageMessage.reactions.removeAll();
+				const collector = garageMessage.createReactionCollector(filter, { time: 60000 });
+				collector.on("collect", reaction => {
+					if (reaction.emoji.name === "⬅️") {
+						page -= 1;
+					}
+					else if (reaction.emoji.name === "➡️") {
+						page += 1;
+					}
+					lists = garageDisplay(page, garage);
+					garageMessage.reactions.removeAll();
 
-	                let infoScreen = new Discord.MessageEmbed()
-                    	.setColor("#34aeeb")
-                	    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-            	        .setTitle(`${displayName}'s Garage`)
-        	            .setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
-    	                .setDescription(`Current Sorting Criteria: \`${sortBy}\``)
-	                    .addField("Car", garageList, true)
-						.addField("Amount", amountList, true)
-                    	.setFooter(`Page ${page} of ${totalPages} - React with ⬅️ or ➡️ to navigate through pages.`)
-                	    .setTimestamp();
-            	    if (sortBy !== "rq") {
-        	            infoScreen.addField("Value", valueList, true);
-    	            }
-	                garageMessage.edit(infoScreen);
+					let infoScreen = new Discord.MessageEmbed()
+						.setColor("#34aeeb")
+						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+						.setTitle(`${user.username}'s Garage`)
+						.setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
+						.setDescription(`Filter Activated: \`${carFilter !== null}\``)
+						.addField("Car", lists.garageList, true)
+						.addField("Amount", lists.amountList, true)
+						.setFooter(`Page ${page} of ${totalPages} - React with ⬅️ or ➡️ to navigate through pages.`)
+						.setTimestamp();
+					garageMessage.edit(infoScreen);
 
-            	    switch (reactionIndex) {
-        	            case 0:
-    	                    break;
-	                    case 1:
-                    	    garageMessage.react("➡️");
-                	        break;
-            	        case 2:
-        	                garageMessage.react("⬅️");
-    	                    break;
-	                    case 3:
-                        	garageMessage.react("⬅️");
-                        	garageMessage.react("➡️");
-                        	break;
-                    	default:
-                    	    break;
-                	}
-            	});
+					switch (reactionIndex) {
+						case 0:
+							break;
+						case 1:
+							garageMessage.react("➡️");
+							break;
+						case 2:
+							garageMessage.react("⬅️");
+							break;
+						case 3:
+							garageMessage.react("⬅️");
+							garageMessage.react("➡️");
+							break;
+						default:
+							break;
+					}
+				});
 
-            	collector.on("end", () => {
-                	console.log("end of collection");
-                	garageMessage.reactions.removeAll();
-            	});
+				collector.on("end", () => {
+					console.log("end of collection");
+					garageMessage.reactions.removeAll();
+				});
 			}
-        });
+
+			function garageDisplay(page, garage) {
+				const trophyEmoji = message.client.emojis.cache.get("775636479145148418");
+				const pageLimit = 10;
+				let startsWith, endsWith;
+
+				if (garage.length - pageLimit <= 0) {
+					startsWith = 0;
+					endsWith = garage.length;
+					reactionIndex = 0;
+				}
+				else if (page * pageLimit === pageLimit) {
+					startsWith = 0;
+					endsWith = pageLimit;
+					reactionIndex = 1;
+				}
+				else if (garage.length - (pageLimit * page) <= 0) {
+					startsWith = pageLimit * (page - 1);
+					endsWith = garage.length;
+					reactionIndex = 2;
+				}
+				else {
+					startsWith = pageLimit * (page - 1);
+					endsWith = startsWith + pageLimit;
+					reactionIndex = 3;
+				}
+				let garageList = "", amountList = "";
+
+				for (i = startsWith; i < endsWith; i++) {
+					garageList += `${i + 1 - ((page - 1) * 10)}. `;
+					amountList += `${i + 1 - ((page - 1) * 10)}. `;
+					let currentCar = require(`./cars/${garage[i].carFile}`);
+					let make = currentCar["make"];
+					if (typeof make === "object") {
+						make = currentCar["make"][0];
+					}
+					const rarity = rarityCheck(currentCar);
+
+					garageList += `(${rarity} ${currentCar["rq"]}) ${make} ${currentCar["model"]} (${currentCar["modelYear"]})`;
+					for (const [key, value] of Object.entries(garage[i])) {
+						if (!isNaN(value) && value > 0) {
+							amountList += `${key} x${value}, `;
+						}
+					}
+					if (currentCar["isPrize"]) {
+						garageList += ` ${trophyEmoji}`;
+					}
+					garageList += "\n";
+					amountList = amountList.slice(0, -2);
+					amountList += "\n";
+				}
+				return { garageList: garageList, amountList: amountList };
+			}
+		}
 
         function rarityCheck(currentCar) {
             if (currentCar["rq"] > 79) { //leggie
@@ -385,62 +422,6 @@ module.exports = {
             }
             else { //common
                 return message.client.emojis.cache.get("726020544264273928");
-            }
-        }
-
-        function garageDisplay(page) {
-            let startsWith, endsWith;
-
-            if (garage.length - pageLimit <= 0) {
-                startsWith = 0;
-                endsWith = garage.length;
-                reactionIndex = 0;
-            }
-            else if (page * pageLimit === pageLimit) {
-                startsWith = 0;
-                endsWith = pageLimit;
-                reactionIndex = 1;
-            }
-            else if (garage.length - (pageLimit * page) <= 0) {
-                startsWith = pageLimit * (page - 1);
-                endsWith = garage.length;
-                reactionIndex = 2;
-            }
-            else {
-                startsWith = pageLimit * (page - 1);
-                endsWith = startsWith + pageLimit;
-                reactionIndex = 3;
-            }
-            garageList = amountList = valueList = "";
-
-            for (i = startsWith; i < endsWith; i++) {
-                let currentCar = require(`./cars/${garage[i].carFile}`);
-				let make = currentCar["make"];
-				if (typeof make === "object") {
-					make = currentCar["make"][0];
-				}
-                const rarity = rarityCheck(currentCar);
-
-                garageList += `(${rarity} ${currentCar["rq"]}) ${make} ${currentCar["model"]} (${currentCar["modelYear"]})`;
-				for (const [key, value] of Object.entries(garage[i])) {
-					if (!isNaN(value) && value > 0) {
-						amountList += `${key} x${value}, `;
-					}
-				}
-                if (sortBy !== "rq") {
-                    if (garage[i].gearingUpgrade > 0) {
-						valueList += `\`${currentCar[sortBy]}\`\n`
-                    }
-                    else {
-                        valueList += `\`${currentCar[sortBy]}\`\n`
-                    }
-                }
-                if (currentCar["isPrize"]) {
-                    garageList += ` ${trophyEmoji}`;
-                }
-                garageList += "\n";
-				amountList = amountList.slice(0, -2);
-				amountList += "\n";
             }
         }
     }

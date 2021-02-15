@@ -1,4 +1,4 @@
-﻿{
+{
     "rq": 90,
     "make": "Porsche",
     "model": "911 Carrera 4 GTS",
@@ -12,10 +12,9 @@
     "tags": [],
     "isPrize": false,
 
-
     "weight": 1590,
     "gc": "Low",
-    "seatCount":4,
+    "seatCount": 4,
     "bodyStyle": "Coupe",
     "tcs": true,
     "abs": true,
@@ -25,7 +24,6 @@
     "ola": 85.71,
     "description": "A drifting yellow german car. Card by Corentin",
 
-
     "card": "https://media.discordapp.net/attachments/715782088271331398/802260330478698496/germanyellowdriftfastcate.png?width=1085&height=676",
     "racehud000": "https://media.discordapp.net/attachments/718097267621363744/802260524372721724/9114GTSSt.png?width=705&height=441",
     "racehud333": "https://media.discordapp.net/attachments/718097267621363744/802260531099467816/9114GTS1.png?width=705&height=441",
@@ -34,26 +32,21 @@
     "racehud969": "https://media.discordapp.net/attachments/718097267621363744/802260554881171516/9114GTS323.png?width=705&height=441",
     "racehud699": "https://media.discordapp.net/attachments/718097267621363744/802260545658552371/9114GTS233.png?width=705&height=441",
 
-
     "333TopSpeed": 195,
     "3330to60": 3.3,
     "333Handling": 95,
-
 
     "666TopSpeed": 198,
     "6660to60": 3.1, 
     "666Handling": 98,
 
-
     "996TopSpeed": 202,
     "9960to60": 2.9,
     "996Handling": 99,
 
-
     "969TopSpeed": 201,
     "9690to60": 3.0,
     "969Handling": 102,
-
 
     "699TopSpeed": 200,
     "6990to60": 3.0,

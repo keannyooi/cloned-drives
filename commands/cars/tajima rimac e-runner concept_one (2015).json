@@ -1,0 +1,50 @@
+{
+    "rq": 97,
+    "make": ["Tajima", "Rimac"],
+    "model": "Rimac E-Runner Concept_One",
+    "modelYear": 2015,
+    "country": "JP",
+    "topSpeed": 168,
+    "0to60": 2.1,
+    "handling": 97,
+    "driveType": "4WD",
+    "tyreType": "Slick",
+    "tags": ["Eco-Friendly", "Motorsport", "Wild Ride"],
+    "isPrize": true,
+
+    "weight": 1500,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 131.25,
+    "ola": 47.62,
+    "description": "A racing Rimac made in Japan. Card by DodgeDemon.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/806976679720648774/2015_Tajima_Rimac_PP.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/806976800818200596/TajimaRimac000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/806976866618703922/TajimaRimac333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/806976913268146186/TajimaRimac666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/806977037767671818/TajimaRimac996.png",
+    "racehud969": "",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/806976965080645682/TajimaRimac699.png",
+
+    "333TopSpeed": 171,
+    "3330to60": 2.0,
+    "333Handling": 100,
+
+    "666TopSpeed": 174,
+    "6660to60": 1.9,
+    "666Handling": 104,
+
+    "996TopSpeed": 178,
+    "9960to60": 1.7,
+    "996Handling": 105,
+
+    "699TopSpeed": 176,
+    "6990to60": 1.8,
+    "699Handling": 108
+}

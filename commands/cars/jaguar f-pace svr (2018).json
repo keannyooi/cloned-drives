@@ -1,0 +1,54 @@
+{
+    "rq": 85,
+    "make": "Jaguar",
+    "model": "F-PACE SVR",
+    "modelYear": 2018,
+    "country": "GB",
+    "topSpeed": 176,
+    "0to60": 4.0,
+    "handling": 79,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 2133,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 76.98,
+    "ola": 75.38,
+    "description": "In the words of Jeremy Clarkson, its just stupid and a ship. Card by Andu",
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/807633605622366208/FPACESVR.png?width=1154&height=719",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/807633692012445716/FPACESVR.png",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/807633698253176852/FPACESVR1.png",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/807633702112722944/FPACESVR2.png",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/807633725314564126/FPACESVR332.png",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/807633718151741460/FPACESVR323.png",
+    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/807633709750157352/FPACESVR233.png",
+
+    "333TopSpeed": 180,
+    "3330to60": 3.8,
+    "333Handling": 82,
+
+    "666TopSpeed": 184,
+    "6660to60": 3.5, 
+    "666Handling": 85,
+
+    "996TopSpeed": 187,
+    "9960to60": 3.2,
+    "996Handling": 85,
+
+    "969TopSpeed": 186,
+    "9690to60": 3.3,
+    "969Handling": 87,
+
+    "699TopSpeed": 184,
+    "6990to60": 3.3,
+    "699Handling": 88
+}

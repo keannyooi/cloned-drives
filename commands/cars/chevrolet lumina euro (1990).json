@@ -1,0 +1,46 @@
+{
+    "rq": 19,
+    "make": "Chevrolet",
+    "model": "Lumina Euro",
+    "modelYear": 1990,
+    "country": "US",
+    "topSpeed": 117,
+    "0to60": 10.5,
+    "handling": 71,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1513,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 40.38,
+    "ola": 57.14,
+    "description": "The first four-door version of the GM10 chassis. Card by Johnny",
+
+    "card": "https://cdn.discordapp.com/attachments/731698267573977099/809547487807275108/Chevrolet-Lumina-Euro.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/809889517275316284/Chevrolet-Lumina-Euro.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/809889520941531186/Chevrolet-Lumina-Euro-1-star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/809889525605072896/Chevrolet-Lumina-Euro-2-star.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/809889533419192390/Chevrolet-Lumina-Euro-323.png",
+    "racehud699": "",
+
+    "333TopSpeed": 120,
+    "3330to60": 9.7,
+    "333Handling": 73,
+
+    "666TopSpeed": 123,
+    "6660to60": 8.9,
+    "666Handling": 77,
+
+    "969TopSpeed": 126,
+    "9690to60": 8.1,
+    "969Handling": 79
+}

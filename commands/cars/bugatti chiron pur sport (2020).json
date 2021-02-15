@@ -1,0 +1,50 @@
+{
+    "rq": 101,
+    "make": "Bugati",
+    "model": "Chiron Pur Sport",
+    "modelYear": 2020,
+    "country": "FR",
+    "topSpeed": 218,
+    "0to60": 2.2,
+    "handling": 95,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Hypercar", "Ultra Expensive"],
+    "isPrize": true,
+
+    "weight": 1978,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 122.22,
+    "ola": 118.18,
+    "description": "Card by DodgeDemon.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/807521997138558986/2020_Bugatti_Chiron_Pur_Sport.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/807522092441534514/BugattiChironPS000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/807522194904711189/BugattiChironPS333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/807522235329675274/BugattiChironPS666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/807522313666428928/BugattiChironPS996.png",
+    "racehud969": "",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/807522276923801620/BugattiChironPS699.png",
+
+    "333TopSpeed": 220,
+    "3330to60": 2.1,
+    "333Handling": 98,
+
+    "666TopSpeed": 222,
+    "6660to60": 2.0,
+    "666Handling": 101,
+
+    "996TopSpeed": 226,
+    "9960to60": 1.8,
+    "996Handling": 102,
+
+    "699TopSpeed": 224,
+    "6990to60": 1.9,
+    "699Handling": 105
+}

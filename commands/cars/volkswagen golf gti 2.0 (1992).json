@@ -1,0 +1,61 @@
+﻿{
+    "rq": 21,
+    "make": "Volkswagen",
+    "model": "Golf GTI 2.0",
+    "modelYear": 1992,
+    "country": "DE",
+    "topSpeed": 121,
+    "0to60": 9.7,
+    "handling": 74,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch"],
+    "isPrize": false,
+
+
+    "weight": 1032,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 45.75,
+    "ola": 61.86,
+    "description": "Durable, reliable, beautifully executed, and over-shone by a halo model in the form of the iconic Mk 2 GTI. Card by Andu ",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/805393393429512222/GTI3.png?width=1154&height=719",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/805394185494593567/Golf3.png",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/805394191999172629/Golf31.png",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/805394197767127070/Golf32.png",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/805394216884633620/Golf3332.png",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/805394207555584000/Golf3323.png",
+    "racehud699": "",
+
+
+    "333TopSpeed": 124,
+    "3330to60": 9.0,
+    "333Handling": 77,
+
+
+    "666TopSpeed": 127,
+    "6660to60": 8.3, 
+    "666Handling": 80,
+
+
+    "996TopSpeed": 131,
+    "9960to60": 7.5,
+    "996Handling": 80,
+
+
+    "969TopSpeed": 130,
+    "9690to60": 7.7,
+    "969Handling": 82,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

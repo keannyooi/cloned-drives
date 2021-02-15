@@ -1,0 +1,61 @@
+﻿{
+    "rq": 39,
+    "make": "Toyota",
+    "model": "Sienna XLE AWD",
+    "modelYear": 2009,
+    "country": "JP",
+    "topSpeed": 111,
+    "0to60": 7.4,
+    "handling": 67,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Year of the Ox"],
+    "isPrize": false,
+
+
+    "weight": 1937,
+    "gc": "Medium",
+    "seatCount":7,
+    "bodyStyle": "Minivan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 56.49,
+    "ola": 73.61,
+    "description": "Despite being AWD, it still isn’t better than the Odyssey. Card by ChickenMcNuggets",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/804961968049881118/image0.png?width=1154&height=718",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/804962048508952616/image0.jpg?width=1154&height=722",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/804962064883908698/image0.jpg?width=1154&height=722",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/804962087528169492/image0.jpg?width=1154&height=722",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/804962162879234059/image0.jpg?width=1154&height=722",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/804962115269427210/image0.jpg?width=1154&height=722",
+    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/804962138077659156/image0.jpg?width=1154&height=722",
+
+
+    "333TopSpeed": 114,
+    "3330to60": 6.9,
+    "333Handling": 69,
+
+
+    "666TopSpeed": 117,
+    "6660to60": 6.5, 
+    "666Handling": 72,
+
+
+    "996TopSpeed": 120,
+    "9960to60": 5.8,
+    "996Handling": 72,
+
+
+    "969TopSpeed": 120,
+    "9690to60": 6.0,
+    "969Handling": 74,
+
+
+    "699TopSpeed": 117,
+    "6990to60": 6.0,
+    "699Handling": 74
+}

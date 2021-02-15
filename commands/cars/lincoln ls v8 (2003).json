@@ -1,0 +1,44 @@
+{
+    "rq": 42,
+    "make": "Lincoln",
+    "model": "LS V8",
+    "modelYear": 2003,
+    "country": "US",
+    "topSpeed": 136,
+    "0to60": 6.7,
+    "handling": 73,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1797,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 65.37,
+    "ola": 74.63,
+    "description": "This Lincoln sedan ain’t your traditional Town Car underneath, but rather a Jaguar S-Type, powered by a Jaguar engine. Card by Spence",
+
+    "card": "https://cdn.discordapp.com/attachments/731698267573977099/807855757793034250/image0.jpg",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/809272769698070528/image0.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/809272819690504222/image0.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/809272838019481630/image0.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/809272864212910120/image0.jpg",
+    
+    "333TopSpeed": 140,
+    "3330to60": 6.3,
+    "333Handling": 76,
+
+    "666TopSpeed": 144,
+    "6660to60": 5.9,
+    "666Handling": 79,
+
+    "969TopSpeed": 148,
+    "9690to60": 5.5,
+    "969Handling": 81
+   }

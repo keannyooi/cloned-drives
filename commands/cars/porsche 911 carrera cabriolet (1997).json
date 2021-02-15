@@ -1,0 +1,61 @@
+﻿{
+    "rq": 54,
+    "make": "Porsche",
+    "model": "911 Carrera Cabriolet",
+    "modelYear": 1997,
+    "country": "DE",
+    "topSpeed": 169,
+    "0to60": 5.1,
+    "handling": 81,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Year of the Ox"],
+    "isPrize": false,
+
+
+    "weight": 1409,
+    "gc": "Low",
+    "seatCount":2,
+    "bodyStyle": "Cabriolet",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 69.86,
+    "ola": 78.43,
+    "description": "Showroom silver. Card by Havvy",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/804818974361518080/Porsche911CarreraCabriolet996.png?width=1154&height=718",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/804819052467978241/000_996cab.png?width=1154&height=718",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/804819057936695296/111_996cab.png?width=1154&height=718",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/804819063427563520/222_996cab.png?width=1154&height=718",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/804819076252827658/332_996cab.png?width=1154&height=718",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/804819070385651722/323_996cab.png?width=1154&height=718",
+    "racehud699": "",
+
+
+    "333TopSpeed": 173,
+    "3330to60": 4.8,
+    "333Handling": 84,
+
+
+    "666TopSpeed": 177,
+    "6660to60": 4.5, 
+    "666Handling": 87,
+
+
+    "996TopSpeed": 181,
+    "9960to60": 4.1,
+    "996Handling": 87,
+
+
+    "969TopSpeed": 181,
+    "9690to60": 4.2,
+    "969Handling": 90,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

@@ -1,0 +1,61 @@
+﻿{
+    "rq": 34,
+    "make": "Mercury",
+    "model": "Marauder",
+    "modelYear": 2003,
+    "country": "US",
+    "topSpeed": 117,
+    "0to60": 7.7,
+    "handling": 78,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Sleeper", "Muscle Car"],
+    "isPrize": false,
+
+
+    "weight": 1963,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 81.91,
+    "ola": 81.82,
+    "description": "Started life as a rebadged Crown Vic, then turned up to 11 and transforms into a stealthy sleeper. Card by Spence",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/807810765729431602/image0.png?width=1154&height=715",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/807810599479148584/marauder.jpg",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/807810635357487144/marauder_333.jpg",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/807810651409481748/marauder_666.jpg",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/807810673869455390/marauder_996.jpg",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/807810662671319040/marauder_969.jpg",
+    "racehud699": "",
+
+
+    "333TopSpeed": 120,
+    "3330to60": 7.2,
+    "333Handling": 81,
+
+
+    "666TopSpeed": 123,
+    "6660to60": 6.7, 
+    "666Handling": 84,
+
+
+    "996TopSpeed": 126,
+    "9960to60": 6.0,
+    "996Handling": 84,
+
+
+    "969TopSpeed": 126,
+    "9690to60": 6.3,
+    "969Handling": 86,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

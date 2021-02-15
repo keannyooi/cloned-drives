@@ -1,0 +1,46 @@
+{
+    "rq": 21,
+    "make": "Trihawk",
+    "model": "304",
+    "modelYear": 1982,
+    "country": "US",
+    "topSpeed": 97,
+    "0to60": 10.0,
+    "handling": 77,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": true,
+
+    "weight": 575,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Roadster",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 20.00,
+    "ola": 62.00,
+    "description": "The closest thing to a bike in Cloned Drives. Card by DodgeDemon",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/806817918007902278/1982_Trihawk_304.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/806464097512194078/tricock.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/806464121792364594/tricock_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/806464133419499520/tricock_666.jpg",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/806464145687969792/tricock_969.jpg",
+    "racehud699": "",
+
+    "333TopSpeed": 100,
+    "3330to60": 9.3,
+    "333Handling": 80,
+
+    "666TopSpeed": 103,
+    "6660to60": 8.6,
+    "666Handling": 82,
+
+    "969TopSpeed": 105,
+    "9690to60": 7.9,
+    "969Handling": 85
+}

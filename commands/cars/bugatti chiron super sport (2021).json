@@ -1,0 +1,50 @@
+{
+    "rq": 101,
+    "make": "Bugatti",
+    "model": "Chiron Super Sport",
+    "modelYear": 2021,
+    "country": "FR",
+    "topSpeed": 274,
+    "0to60": 2.4,
+    "handling": 92,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Hypercar", "Ultra Expensive"],
+    "isPrize": false,
+
+    "weight": 1900,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 126.32,
+    "ola": 91.67,
+    "description": "The only 101RQ packable Legendary. Card by DodgeDemon.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/807523501887586324/2021_Bugatti_Chiron_SS.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/807523601505976390/BugattiChironSS000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/807523651452141578/BugattiChironSS333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/807523691415732234/BugattiChironSS666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/807523784806105088/BugattiChironSS996.png",
+    "racehud969": "",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/807523754250731540/BugattiChironSS699.png",
+
+    "333TopSpeed": 276,
+    "3330to60": 2.3,
+    "333Handling": 95,
+
+    "666TopSpeed": 278,
+    "6660to60": 2.2,
+    "666Handling": 98,
+
+    "996TopSpeed": 282,
+    "9960to60": 2.0,
+    "996Handling": 99,
+
+    "699TopSpeed": 280,
+    "6990to60": 2.1,
+    "699Handling": 102
+}

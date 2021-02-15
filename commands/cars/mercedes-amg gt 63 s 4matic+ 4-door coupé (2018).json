@@ -1,0 +1,50 @@
+{
+    "rq": 91,
+    "make": "Mercedes-AMG",
+    "model": "GT 63 S 4MATIC+ 4-Door Coupé",
+    "modelYear": 2018,
+    "country": "DE",
+    "topSpeed": 195,
+    "0to60": 3.0,
+    "handling": 91,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1920,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 73.17,
+    "ola": 86.67,
+    "description": "Card by DodgeDemon.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/807127077773115432/2018_AMG_GT_63_S_4MATIC_4_Door_Coupe.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/807127320313331742/AMGGT63S4Door000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/807127474638290954/AMGGT63S4Door333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/807127712530563082/AMGGT63S4Door666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/807128086364815401/AMGGT63S4Door996.png",
+    "racehud969": "",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/807127917301071872/AMGGT63S4Door699.png",
+
+    "333TopSpeed": 198,
+    "3330to60": 2.8,
+    "333Handling": 94,
+
+    "666TopSpeed": 201,
+    "6660to60": 2.6,
+    "666Handling": 97,
+
+    "996TopSpeed": 205,
+    "9960to60": 2.4,
+    "996Handling": 98,
+
+    "699TopSpeed": 203,
+    "6990to60": 2.5,
+    "699Handling": 101
+}

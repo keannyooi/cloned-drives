@@ -1,0 +1,61 @@
+﻿{
+    "rq": 67,
+    "make": "Aston Martin",
+    "model": "DBS Volante",
+    "modelYear": 2009,
+    "country": "GB",
+    "topSpeed": 191,
+    "0to60": 4.3,
+    "handling": 85,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1815,
+    "gc": "Low",
+    "seatCount":4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 71.72,
+    "ola": 89.20,
+    "description": "Volante V12. Card by Havvy",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/802588488717434890/AstonMartinDBSVolante.png?width=1154&height=718",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/802588554516627466/000dbsv.png?width=1154&height=718",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/802588560997482526/111dbsv.png?width=1154&height=718",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/802588568962728006/222dbsv.png?width=1154&height=718",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/802588589862027304/332dbsv.png",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/802588583940325386/323dbsv.png?width=1154&height=718",
+    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/802588576617070662/233dbsv.png?width=1154&height=718",
+
+
+    "333TopSpeed": 194,
+    "3330to60": 4.1,
+    "333Handling": 88,
+
+
+    "666TopSpeed": 196,
+    "6660to60": 3.8, 
+    "666Handling": 91,
+
+
+    "996TopSpeed": 199,
+    "9960to60": 3.5,
+    "996Handling": 91,
+
+
+    "969TopSpeed": 199,
+    "9690to60": 3.6,
+    "969Handling": 94,
+
+
+    "699TopSpeed": 198,
+    "6990to60": 3.6,
+    "699Handling": 94
+}

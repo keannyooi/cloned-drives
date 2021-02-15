@@ -1,0 +1,46 @@
+{
+    "rq": 76,
+    "make": "Chevrolet",
+    "model": "S-10 Lingenfelter Pro Stock",
+    "modelYear": 1999,
+    "country": "US",
+    "topSpeed": 213,
+    "0to60": 1.1,
+    "handling": 10,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Wild Ride"],
+    "isPrize": true,
+
+    "weight": 1043,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Pick-up",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 80.88,
+    "ola": 76.36,
+    "description": "Card by DodgeDemon.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/807269160706637874/1999_Chevrolet_S10_Pro_Stock.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/807269496552685608/S10ProStock000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/807269536935575562/S10ProStock333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/807269585438900244/S10ProStock666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/807269661866721326/S10ProStock996.png",
+    "racehud969": "",
+    "racehud699": "",
+
+    "333TopSpeed": 215,
+    "3330to60": 1.0,
+    "333Handling": 12,
+
+    "666TopSpeed": 217,
+    "6660to60": 1.0,
+    "666Handling": 14,
+
+    "996TopSpeed": 221,
+    "9960to60": 0.8,
+    "996Handling": 15
+}

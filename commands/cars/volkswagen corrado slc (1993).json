@@ -1,0 +1,51 @@
+{
+    "rq": 35,
+    "make": "Volkswagen",
+    "model": "Corrado SLC",
+    "modelYear": 1993,
+    "country": "DE",
+    "topSpeed": 144,
+    "0to60": 7.1,
+    "handling": 74,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1210,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 63.96,
+    "ola": 73.24,
+    "description": "The American version of the Corrado VR6. Card by Johnny",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/810115795233144855/Volkswagen-Corrado-SLC.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/810115622943981589/Volkswagen-Corrado-SLC.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/810115626063757312/Volkswagen-Corrado-SLC-1-star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/810115630983675944/Volkswagen-Corrado-SLC-2-star.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/810115649551728650/Volkswagen-Corrado-SLC-332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/810115640760991744/Volkswagen-Corrado-SLC-323.png",
+    "racehud699": "",
+
+    "333TopSpeed": 147,
+    "3330to60": 6.7,
+    "333Handling": 76,
+
+    "666TopSpeed": 150,
+    "6660to60": 6.3,
+    "666Handling": 80,
+
+    "996TopSpeed": 154,
+    "9960to60": 5.7,
+    "996Handling": 80,
+	 
+	"969TopSpeed": 153,
+    "9690to60": 5.9,
+    "969Handling": 82
+	
+}

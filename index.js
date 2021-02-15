@@ -26,9 +26,10 @@ const client = new Discord.Client({
 client.commands = new Discord.Collection();
 const cooldowns = new Discord.Collection();
 client.db = new Database("mongodb+srv://keanny:6x6IsBae@databaseclusterthing.as94y.mongodb.net/DatabaseClusterThing?retryWrites=true&w=majority");
+client.execList = [];
 
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
-const garage = [
+const starterGarage = [
 	{
 		carFile: "abarth 124 spider (2017).json",
 		"000": 1,
@@ -53,7 +54,7 @@ const garage = [
 		"333": 0,
 		"666": 0,
 		"996": 0,
-				"969": 0,
+		"969": 0,
 		"699": 0
 	},
 	{
@@ -66,7 +67,7 @@ const garage = [
 		"699": 0
 	},
 	{
-	carFile: "volkswagen beetle 2.5 (2012).json",
+		carFile: "volkswagen beetle 2.5 (2012).json",
 		"000": 1,
 		"333": 0,
 		"666": 0,
@@ -83,20 +84,20 @@ for (const file of commandFiles) {
 }
 
 client.once("ready", async () => {
-	console.log("Ready!");
+	console.log("Bote Ready!");
 	const guild = client.guilds.cache.get("711769157078876305"); //don't mind me lmao
 	guild.members.cache.forEach(async user => {
 		if (await client.db.has(`acc${user.id}`) === false) {
 			console.log("creating new player's database...");
-			await client.db.set(`acc${user.id}`, { money: 0, fuseTokens: 0, trophies: 0, garage: garage, decks: [], campaignProgress: { chapter: 0, part: 1, race: 1 }, unclaimedRewards: { money: 0, fuseTokens: 0, trophies: 0, cars: [], packs: [] } });
+			await client.db.set(`acc${user.id}`, { money: 0, fuseTokens: 0, trophies: 0, garage: starterGarage, decks: [], campaignProgress: { chapter: 0, part: 1, race: 1 }, unclaimedRewards: { money: 0, fuseTokens: 0, trophies: 0, cars: [], packs: [] } });
 			console.log(user.id);
 		}
 		//for changing stuff in the database
 		const garage = await client.db.get(`acc${user.id}.garage`);
 		var i = 0;
 		while (i < garage.length) {
-			if (garage[i].carFile === "callaway scirocco turbo (1982).json") {
-				garage.splice(i, 1);
+			if (garage[i].carFile === "lamborghini huracan lp580-2 (2016).json") {
+				garage[i].carFile = "lamborghini huracan lp580-2 (2015).json";
 			}
 			i++;
 		}
@@ -106,8 +107,8 @@ client.once("ready", async () => {
 	console.log(catalog);
 	//var i = 0;
 	//while (i < catalog.length) {
-	// 	if (catalog[i].carFile === "audi s3 (2000)") {
-	// 		catalog[i].carFile = "audi s3 (2001)";
+	// 	if (catalog[i].carFile === "lexus is300 (2003)") {
+	// 		catalog[i].carFile = "lexus is 300 (2003)";
 	// 	}
 	// 	i++;
 	//}
@@ -137,7 +138,7 @@ client.on("message", async message => {
 		return message.channel.send(errorMessage);
 	}
 	if (command.args > 0 && args.length < command.args) {
-		var usage = command.usage;
+		let usage = command.usage;
 		const errorMessage = new Discord.MessageEmbed()
 			.setColor("#fc0303")
 			.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -164,7 +165,7 @@ client.on("message", async message => {
 			.setTimestamp();
 		return message.channel.send(errorMessage);
 	}
-	else if (command.adminOnly && !message.member.roles.cache.has("711790752853655563")) { //admin role
+	else if (/**command.adminOnly && **/!message.member.roles.cache.has("716605635915022407")) { //admin role
 		const errorMessage = new Discord.MessageEmbed()
 			.setColor("#fc0303")
 			.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -199,10 +200,28 @@ client.on("message", async message => {
 	setTimeout(() => timestamps.delete(message.author.id), cooldownAmount);
 
 	try {
-		await command.execute(message, args);
+		if (client.execList.indexOf(message.author.id) < 0) {
+			client.execList.push(message.author.id);
+			await command.execute(message, args);
+			setTimeout(() => {
+				if (client.execList.indexOf(message.author.id) < 0) {
+					client.execList = client.execList.splice([message.author.id], 1);
+				}
+			}, 30000);
+		}
+		else {
+			const errorMessage = new Discord.MessageEmbed()
+				.setColor("#fc0303")
+				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+				.setTitle("You may not execute more than 1 command at a time.")
+				.setDescription("Please wait patiently.")
+				.setTimestamp();
+			return message.channel.send(errorMessage);
+		}
 	}
 	catch (error) {
 		console.error(error);
+		client.execList.splice(client.execList.indexOf(message.author.id), 1);
 		const errorMessage = new Discord.MessageEmbed()
 			.setColor("#fc0303")
 			.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -216,7 +235,7 @@ client.on("message", async message => {
 client.on("guildMemberAdd", async member => {
 	if (await client.db.has(`acc${member.id}`) === false && member.guild.id === "711769157078876305") {
 		console.log("creating new player's database...");
-		await client.db.set(`acc${member.id}`, { money: 0, fuseTokens: 0, trophies: 0, garage: garage, decks: [], campaignProgress: { chapter: 0, part: 1, race: 1 }, unclaimedRewards: { money: 0, fuseTokens: 0, trophies: 0, cars: [], packs: [] } });
+		await client.db.set(`acc${member.id}`, { money: 0, fuseTokens: 0, trophies: 0, garage: starterGarage, decks: [], campaignProgress: { chapter: 0, part: 1, race: 1 }, unclaimedRewards: { money: 0, fuseTokens: 0, trophies: 0, cars: [], packs: [] } });
 		console.log(member.id);
 	}
 });
@@ -269,16 +288,34 @@ client.on("messageUpdate", async (oldMessage, newMessage) => {
 	}
 
 	try {
-		await command.execute(newMessage, args);
+		if (client.execList.indexOf(newMessage.author.id) < 0) {
+			client.execList.push(newMessage.author.id);
+			await command.execute(newMessage, args);
+			setTimeout(() => {
+				if (client.execList.indexOf(newMessage.author.id) < 0) {
+					client.execList.splice([newMessage.author.id], 1);
+				}
+			}, 30000);
+		}
+		else {
+			const errorMessage = new Discord.MessageEmbed()
+				.setColor("#fc0303")
+				.setAuthor(newMessage.author.tag, newMessage.author.displayAvatarURL({ format: "png", dynamic: true }))
+				.setTitle("You may not execute more than 1 command at a time.")
+				.setDescription("Please wait patiently.")
+				.setTimestamp();
+			return newMessage.channel.send(errorMessage);
+		}
 	}
 	catch (error) {
 		console.error(error);
+		client.execList.splice(client.execList.indexOf(newMessage.author.id), 1);
 		const errorMessage = new Discord.MessageEmbed()
 			.setColor("#fc0303")
 			.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 			.setTitle("Error, failed to execute command.")
 			.setDescription(`Something must have gone wrong. Please report this issure to the devs. \n\`${error}\``)
 			.setTimestamp();
-		return message.channel.send(errorMessage);
+		return newMessage.channel.send(errorMessage);
 	}
 });

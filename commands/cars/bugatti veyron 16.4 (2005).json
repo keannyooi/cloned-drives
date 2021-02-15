@@ -6,7 +6,7 @@
     "country": "FR",
     "topSpeed": 253,
     "0to60": 2.6,
-    "handling": 86,
+    "handling": 87,
     "driveType": "4WD",
     "tyreType": "Performance",
     "tags": ["Hypercar", "Ultra Expensive"],
@@ -20,27 +20,35 @@
     "abs": true,
     "enginePos": "Middle",
     "fuelType": "Petrol",
-    "mra": 89.66,
-    "ola": 92.31,
-    "description": "The most well-known Bugatti, even though there are faster ones made. Card by keanny",
+    "mra": 93.49,
+    "ola": 91.14,
+    "description": "The most well-known Bugatti, even though there are faster ones made. Card by Havvy.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/736527952044359740/bugatti_veyron.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/736529762952019979/bugatti_veyron.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/736529790651072543/bugatti_veyron_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/736529806103150694/bugatti_veyron_666.jpg",
-    "racehud996": "",
-    "racehud969": "",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/736529823186550804/bugatti_veyron_699.jpg",
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/806962823863336961/BugattiVeyron.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/806962884730814485/000_veyr.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/806962893777403984/111_veyr.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/806962896738320394/222_veyr.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/806962918821199913/332_veyr.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/806962911889063977/323_veyr.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/806962904674467960/233_veyr.png",
 
     "333TopSpeed": 255,
     "3330to60": 2.5,
-    "333Handling": 89,
+    "333Handling": 90,
 
     "666TopSpeed": 257,
-    "6660to60": 2.4,
+    "6660to60": 2.3,
     "666Handling": 93,
 
+    "996TopSpeed": 260,
+    "9960to60": 2.1,
+    "996Handling": 94,
+
+    "969TopSpeed": 259,
+    "9690to60": 2.2,
+    "969Handling": 96,
+
     "699TopSpeed": 259,
-    "6990to60": 2.3,
-    "699Handling": 96
+    "6990to60": 2.2,
+    "699Handling": 97
 }

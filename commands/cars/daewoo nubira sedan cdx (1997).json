@@ -1,4 +1,4 @@
-﻿{
+{
     "rq": 19,
     "make": "Daewoo",
     "model": "Nubira Sedan CDX",
@@ -12,7 +12,6 @@
     "tags": ["Year of the Ox"],
     "isPrize": false,
 
-
     "weight": 1090,
     "gc": "Medium",
     "seatCount":5,
@@ -25,7 +24,6 @@
     "ola": 73.27,
     "description": "This car is running and going. Card by Andu",
 
-
     "card": "https://media.discordapp.net/attachments/715782088271331398/799227879740145684/DaewooNubiraCDX.png?width=1154&height=719",
     "racehud000": "https://media.discordapp.net/attachments/718097267621363744/799325850004619294/DaewoooSt.png",
     "racehud333": "https://media.discordapp.net/attachments/718097267621363744/799325860678074369/Daewooo1.png",
@@ -34,28 +32,19 @@
     "racehud969": "https://media.discordapp.net/attachments/718097267621363744/799325871605022810/Daewooo323.png",
     "racehud699": "",
 
-
     "333TopSpeed": 115,
     "3330to60": 9.4,
     "333Handling": 69,
-
 
     "666TopSpeed": 118,
     "6660to60": 8.7, 
     "666Handling": 71,
 
-
     "996TopSpeed": 121,
     "9960to60": 7.6,
     "996Handling": 71,
 
-
     "969TopSpeed": 121,
     "9690to60": 7.9,
-    "969Handling": 74,
-
-
-    "699TopSpeed": 0,
-    "6990to60": 0,
-    "699Handling": 0
+    "969Handling": 74
 }

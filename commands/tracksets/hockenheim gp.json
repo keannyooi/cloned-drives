@@ -1,0 +1,18 @@
+{
+	"trackName": "Hockenheim GP",
+	"weather": "Sunny",
+	"surface": "Asphalt",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://cdn.discordapp.com/attachments/716917404868935691/809798104412586034/unknown.png",
+	"map": "https://cdn.discordapp.com/attachments/716917404868935691/809797975127490560/unknown.png",
+	
+	"specsDistr": {
+		"topSpeed": 20,
+		"0to60": 50,
+		"handling": 60,
+		"weight": 0,
+		"mra": 30,
+		"ola": 25
+	}
+}

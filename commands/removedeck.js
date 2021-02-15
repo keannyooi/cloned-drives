@@ -29,6 +29,7 @@ module.exports = {
         };
 
         if (args[1]) {
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             const infoScreen = new Discord.MessageEmbed()
                 .setColor("#fc0303")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -64,6 +65,7 @@ module.exports = {
                     .then(collected => {
 						collected.first().delete();
                         if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
+							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                             const errorMessage = new Discord.MessageEmbed()
                                 .setColor("#fc0303")
                                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -78,6 +80,7 @@ module.exports = {
                         }
                     })
                     .catch(() => {
+						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                         const cancelMessage = new Discord.MessageEmbed()
                             .setColor("#34aeeb")
                             .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -91,6 +94,7 @@ module.exports = {
             removeDeck(searchResults[0]);
         }
         else {
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             const errorMessage = new Discord.MessageEmbed()
                 .setColor("#fc0303")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -120,7 +124,7 @@ module.exports = {
             reactionMessage.awaitReactions(emojiFilter, {
                 max: 1,
                 time: 10000,
-                errors: ['time']
+                errors: ["time"]
             })
                 .then(async collected => {
                     reactionMessage.reactions.removeAll();
@@ -128,6 +132,7 @@ module.exports = {
                         case "✅":
                             decks.splice(decks.indexOf(currentDeck), 1);
                             await db.set(`acc${message.author.id}.decks`, decks);
+							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 
                             const infoScreen = new Discord.MessageEmbed()
                                 .setColor("#03fc24")
@@ -137,6 +142,7 @@ module.exports = {
                                 .setTimestamp();
                             return reactionMessage.edit(infoScreen);
                         case "❎":
+							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                             const cancelMessage = new Discord.MessageEmbed()
                                 .setColor("#34aeeb")
                                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -148,6 +154,7 @@ module.exports = {
                     }
                 })
                 .catch(() => {
+					message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                     const cancelMessage = new Discord.MessageEmbed()
                         .setColor("#34aeeb")
                         .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))

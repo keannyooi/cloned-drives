@@ -1,0 +1,61 @@
+﻿{
+    "rq": 30,
+    "make": "Mini",
+    "model": "Cooper D",
+    "modelYear": 2007,
+    "country": "DE",
+    "topSpeed": 119,
+    "0to60": 9.4,
+    "handling": 81,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1110,
+    "gc": "Medium",
+    "seatCount":4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 43.42,
+    "ola": 68.09,
+    "description": "He got that D. Card by Andu",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/804410240614400042/CooperD.png?width=1154&height=719",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/804409868202278963/CooperD.png",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/804409923235741736/Cooper1.png",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/804413375223693372/Cooper2.png",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/804413626818887680/CooperD332.png",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/804411377162256415/CooperD323.png",
+    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/804411606796206100/CooperD233.png",
+
+
+    "333TopSpeed": 122,
+    "3330to60": 8.7,
+    "333Handling": 84,
+
+
+    "666TopSpeed": 125,
+    "6660to60": 8.1, 
+    "666Handling": 87,
+
+
+    "996TopSpeed": 129,
+    "9960to60": 7.3,
+    "996Handling": 87,
+
+
+    "969TopSpeed": 128,
+    "9690to60": 7.5,
+    "969Handling": 90,
+
+
+    "699TopSpeed": 124,
+    "6990to60": 7.6,
+    "699Handling": 90
+}

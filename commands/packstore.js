@@ -33,6 +33,7 @@ module.exports = {
         }
         else {
             if (isNaN(args[0])) {
+				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                 const errorScreen = new Discord.MessageEmbed()
                     .setColor("#fc0303")
                     .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -48,6 +49,7 @@ module.exports = {
         const totalPages = Math.ceil(packFiles.length / pageLimit);
 
         if (page < 0 || totalPages < page) {
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             const errorScreen = new Discord.MessageEmbed()
                 .setColor("#fc0303")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -66,6 +68,7 @@ module.exports = {
             .setTimestamp();
         packDisplay(infoScreen, page);
 
+		message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
         message.channel.send(infoScreen).then(infoMessage => {
             console.log(reactionIndex);
             switch (reactionIndex) {

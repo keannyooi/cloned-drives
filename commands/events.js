@@ -12,8 +12,8 @@ const Canvas = require("canvas");
 
 module.exports = {
     name: "events",
-    aliases: ["e"],
-    usage: "(no arguments required)",
+    aliases: ["e", "event"],
+    usage: "(optional) <event name>",
     args: 0,
 	isExternal: false,
     adminOnly: false,
@@ -44,6 +44,7 @@ module.exports = {
 				)
                 .setFooter("More info about an event can be found by using cd-events <event name>.")
                 .setTimestamp();
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             return message.channel.send(listMessage);
         }
         else {
@@ -53,6 +54,7 @@ module.exports = {
 			});
 
             if (!event) {
+				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                 const errorMessage = new Discord.MessageEmbed()
                     .setColor("#fc0303")
                     .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -61,132 +63,172 @@ module.exports = {
                     .setTimestamp();
                 return message.channel.send(errorMessage);
             }
+			//console.log(event);
+			
+			if (event.isActive || message.member.roles.cache.has("711790752853655563")) {
+				const wait = await message.channel.send("**Loading event display, this may take a while... (please wait)**");
+				const infoScreen = new Discord.MessageEmbed()
+					.setColor("#34aeeb")
+					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+					.setTitle(event.name)
+					.setDescription(`This event's active status: **${event.isActive}**`)
+					.setTimestamp();
 
-			const wait = await message.channel.send("**Loading event display, this may take a while... (please wait)**");
-			Canvas.registerFont("RobotoCondensed-Bold.ttf", { family: "Roboto Condensed" });
-			const canvas = Canvas.createCanvas(767, 677);
-			const ctx = canvas.getContext('2d');
-			ctx.font = '36px "Roboto Condensed"';
-			ctx.textAlign = "center";
-			let attachment, promises, cucked = false;
-			try {
-				let huds = event.roster.map(car => {
-					let currentCar = require(`./cars/${car.car}`);
-					return Canvas.loadImage(currentCar[`racehud${car.gearingUpgrade}${car.engineUpgrade}${car.chassisUpgrade}`]);
-				});
-				promises = await Promise.all(huds);
+				for (i = 0; i < event.roster.length; i++) {
+					let car = require(`./cars/${event.roster[i].car}`);
+					let make = car["make"];
+					let upgrade = `${event.roster[i].gearingUpgrade}${event.roster[i].engineUpgrade}${event.roster[i].chassisUpgrade}`;
+					if (typeof make === "object") {
+						make = car["make"][0];
+					}
 
-				let overlay = await Canvas.loadImage("https://cdn.discordapp.com/attachments/716917404868935691/801292983496474624/test.png");
-				let background = await Canvas.loadImage(event.background);
-				ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
-				ctx.drawImage(overlay, 0, 0, canvas.width, canvas.height);
-			}
-			catch (error) {
-				console.log(error);
-				let errorPic = "https://cdn.discordapp.com/attachments/716917404868935691/801370166826238002/unknown.png";
-				attachment = new Discord.MessageAttachment(errorPic, "event.png");
-				cucked = true;
-			}
-			const infoScreen = new Discord.MessageEmbed()
-                .setColor("#34aeeb")
-                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle(event.name)
-                .setDescription(`This event's active status: **${event.isActive}**`)
-                .setTimestamp();
+					let track = require(`./tracksets/${event.roster[i].trackset}`);
+					let emoji, rewardString = "", reqString = "";
 
-			for (i = 0; i < event.roster.length; i++) {
-				let car = require(`./cars/${event.roster[i].car}`);
-				let make = car["make"];
-				let upgrade = `${event.roster[i].gearingUpgrade}${event.roster[i].engineUpgrade}${event.roster[i].chassisUpgrade}`;
-				if (typeof make === "object") {
-					make = car["make"][0];
+					for (const [key, value] of Object.entries(event.roster[i].requirements)) {
+						switch (typeof value) {
+							case "object":
+								reqString += `\`${key}: ${value.start} - ${value.end}\`, `;
+								break;
+							case "boolean":
+							case "string":
+								reqString += `\`${key}: ${value}\`, `;
+								break;
+							default:
+								break;
+						}
+					}
+					if (reqString === "") {
+						reqString = "Open Match";
+					}
+					else {
+						reqString = reqString.slice(0, -2);
+					}
+
+					for (let [key, value] of Object.entries(event.roster[i].reward)) {
+						switch (key) {
+							case "money":
+								emoji = message.client.emojis.cache.get("726017235826770021"); 
+								rewardString = `${emoji}${value}`;
+								break;
+							case "fuseTokens":
+								emoji = message.client.emojis.cache.get("726018658635218955");
+								rewardString = `${emoji}${value}`; 
+								break;
+							case "car":
+								let car = require(`./cars/${event.roster[i].reward.car}`);
+								let rarity = rarityCheck(car);
+								let make2 = car["make"];
+								if (typeof make2 === "object") {
+									make2 = car["make"][0];
+								}
+								rewardString = `(${rarity} ${car["rq"]}) ${make2} ${car["model"]} (${car["modelYear"]})`;
+								break;
+							case "pack":
+								let pack = require(`./packs/${event.roster[i].reward.pack}`);
+								rewardString = pack["packName"];
+								break;
+							default:
+								break;
+						}
+					}
+					if (event.roster[i].reward.trophies) {
+						emoji = message.client.emojis.cache.get("775636479145148418"); 
+						if (rewardString === "") {
+							rewardString = `${emoji}${event.roster[i].reward.trophies}`;
+						}
+						else {
+							rewardString += `, ${emoji}${event.roster[i].reward.trophies}`;
+						}
+					}
+					if (rewardString === "") {
+						rewardString = "None";
+					}
+					
+					infoScreen.addField(`Round ${i + 1}`, `Car: ${make} ${car["model"]} (${car["modelYear"]}) [${upgrade}]
+					Trackset: ${track["trackName"]}
+					Requirements: ${reqString}
+					Reward: ${rewardString}`, true);
 				}
 
-				let track = require(`./tracksets/${event.roster[i].trackset}`);
-				let emoji, rewardString = "", reqString = "";
+				Canvas.registerFont("RobotoCondensed-Bold.ttf", { family: "Roboto Condensed" });
+				const canvas = Canvas.createCanvas(767, 677);
+				const ctx = canvas.getContext('2d');
+				ctx.font = '36px "Roboto Condensed"';
+				ctx.textAlign = "center";
+				let attachment, promises, cucked = false;
+				try {
+					let huds = event.roster.map(car => {
+						let currentCar = require(`./cars/${car.car}`);
+						return Canvas.loadImage(currentCar[`racehud${car.gearingUpgrade}${car.engineUpgrade}${car.chassisUpgrade}`]);
+					});
+					promises = await Promise.all(huds);
 
-				for (const [key, value] of Object.entries(event.roster[i].requirements)) {
-					switch (typeof value) {
-						case "object":
-							reqString += `\`${key}\`: ${value.start} - ${value.end}, `;
-							break;
-						case "boolean":
-						case "string":
-							reqString += `\`${key}: ${value}\`, `;
-							break;
-						default:
-							break;
+					let overlay = await Canvas.loadImage("https://cdn.discordapp.com/attachments/716917404868935691/801292983496474624/test.png");
+					let background = await Canvas.loadImage(event.background);
+					ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
+					ctx.drawImage(overlay, 0, 0, canvas.width, canvas.height);
+					
+					for (y = 0; y < event.roster.length; y++) {
+						console.log(y);
+						ctx.drawImage(promises[y], hudPlacement[y].x, hudPlacement[y].y, 171, 103);
+
+						for (let [key, value] of Object.entries(event.roster[y].reward)) {
+							switch (key) {
+								case "money":
+									ctx.fillStyle = "#8ac545";
+									ctx.fillText(value, rewardPlacement[y].x + 88, rewardPlacement[y].y + 65);
+									break;
+								case "fuseTokens":
+									ctx.fillStyle = "#4800ff";
+									ctx.fillText(value, rewardPlacement[y].x + 88, rewardPlacement[y].y + 65);
+									break;
+								case "car":
+									let car = require(`./cars/${event.roster[y].reward.car}`);
+									let card = await Canvas.loadImage(car["card"]);
+									ctx.drawImage(card, rewardPlacement[y].x, rewardPlacement[y].y, 172, 105);
+									break;
+								case "pack":
+									let pack = require(`./packs/${event.roster[y].reward.pack}`);
+									let packPic = await Canvas.loadImage(pack["pack"]);
+									ctx.drawImage(packPic, rewardPlacement[y].x, rewardPlacement[y].y, 172, 105);
+									break;
+								default:
+									break;
+							}
+						}
+						if (event.roster[y].reward.trophies) {
+							ctx.fillStyle = "#ff9c0d";
+							ctx.fillText(event.roster[y].reward.trophies, rewardPlacement[y].x + 88, rewardPlacement[y].y + 95);
+						}
 					}
 				}
-				if (reqString === "") {
-					reqString = "Open Match";
+				catch (error) {
+					console.log(error);
+					let errorPic = "https://cdn.discordapp.com/attachments/716917404868935691/801370166826238002/unknown.png";
+					attachment = new Discord.MessageAttachment(errorPic, "event.png");
+					cucked = true;
 				}
-				else {
-					reqString = reqString.slice(0, -2);
-				}
-
-				switch (Object.keys(event.roster[i].reward)[0]) {
-					case "money":
-						emoji = message.client.emojis.cache.get("726017235826770021"); 
-						rewardString = `${emoji}${event.roster[i].reward.money}`;
-						ctx.fillStyle = "#8ac545";
-						ctx.fillText(event.roster[i].reward.money, rewardPlacement[i].x + 88, rewardPlacement[i].y + 65);
-						break;
-					case "fuseTokens":
-						emoji = message.client.emojis.cache.get("726018658635218955");
-						rewardString = `${emoji}${event.roster[i].reward.fuseTokens}`; 
-						ctx.fillStyle = "#4800ff";
-						ctx.fillText(event.roster[i].reward.fuseTokens, rewardPlacement[i].x + 88, rewardPlacement[i].y + 65);
-						break;
-					case "trophies":
-						emoji = message.client.emojis.cache.get("775636479145148418"); 
-						rewardString = `${emoji}${event.roster[i].reward.trophies}`;
-						ctx.fillStyle = "#ff9c0d";
-						ctx.fillText(event.roster[i].reward.trophies, rewardPlacement[i].x + 88, rewardPlacement[i].y + 65);
-						break;
-					case "car":
-						let car = require(`./cars/${event.roster[i].reward.car}`);
-						let rarity = rarityCheck(car);
-						let make2 = car["make"];
-						if (typeof make2 === "object") {
-							make2 = car["make"][0];
-						}
-						rewardString = `(${rarity} ${car["rq"]}) ${make2} ${car["model"]} (${car["modelYear"]})`;
-
-						let card = await Canvas.loadImage(car["card"]);
-						ctx.drawImage(card, rewardPlacement[i].x, rewardPlacement[i].y, 172, 105);
-						break;
-					case "pack":
-						let pack = require(`./packs/${event.roster[i].reward.pack}`);
-						rewardString = pack["packName"];
-
-						let packPic = await Canvas.loadImage(pack["pack"]);
-						ctx.drawImage(packPic, rewardPlacement[i].x, rewardPlacement[i].y, 172, 105);
-						break;
-					default:
-						break;
-				}
-				if (rewardString === "") {
-					rewardString = "None";
-				}
-				
-				infoScreen.addField(`Round ${i + 1}`, `Car: ${make} ${car["model"]} (${car["modelYear"]}) [${upgrade}]
-				Trackset: ${track["trackName"]}
-				Requirements: ${reqString}
-				Reward: ${rewardString}`, true);
 
 				if (!cucked) {
-					ctx.drawImage(promises[i], hudPlacement[i].x, hudPlacement[i].y, 171, 103);
+					attachment = new Discord.MessageAttachment(canvas.toBuffer(), "event.png");
 				}
+				infoScreen.attachFiles(attachment);
+				infoScreen.setImage("attachment://event.png");
+				wait.delete();
+				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+				return message.channel.send(infoScreen);
 			}
-
-			if (!cucked) {
-				attachment = new Discord.MessageAttachment(canvas.toBuffer(), "event.png");
+			else {
+				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+				const errorMessage = new Discord.MessageEmbed()
+					.setColor("#fc0303")
+					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+					.setTitle("Error, this event is not viewable yet.")
+					.setDescription("The event you are trying to view is not active currently. This is only bypassable if you are an Admin.")
+					.setTimestamp();
+				return message.channel.send(errorMessage);
 			}
-			infoScreen.attachFiles(attachment);
-			infoScreen.setImage("attachment://event.png");
-			wait.delete();
-            return message.channel.send(infoScreen);
         }
 
         function eventDisplay(events) {

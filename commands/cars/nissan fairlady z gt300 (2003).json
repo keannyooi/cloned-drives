@@ -1,0 +1,50 @@
+{
+    "rq": 86,
+    "make": "Nissan",
+    "model": "Fairlady Z GT300",
+    "modelYear": 2003,
+    "country": "JP",
+    "topSpeed": 171,
+    "0to60": 3.6,
+    "handling": 96,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport"],
+    "isPrize": true,
+
+    "weight": 1145,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 90.00,
+    "ola": 90.00,
+    "description": "The first Z33 in JGTC. Card by johnny",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/807336799869468763/Nissan-Fairlady-Z-GT300.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/807336521530343434/Nissan-Fairlady-Z-GT300.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/807336526539128873/Nissan-Fairlady-Z-GT300-1-star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/807336533865529344/Nissan-Fairlady-Z-GT300-2-star.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/807336552409464862/Nissan-Fairlady-Z-GT300-323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/807336544066994286/Nissan-Fairlady-Z-GT300-233.png",
+
+    "333TopSpeed": 174,
+    "3330to60": 3.4,
+    "333Handling": 99,
+
+    "666TopSpeed": 177,
+    "6660to60": 3.2,
+    "666Handling": 103,
+
+    "969TopSpeed": 180,
+    "9690to60": 3.1,
+    "969Handling": 106,
+
+    "699TopSpeed": 179,
+    "6990to60": 3.1,
+    "699Handling": 107
+}

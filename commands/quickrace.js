@@ -31,6 +31,7 @@ module.exports = {
         const raceCommand = require("./sharedfiles/race.js");
         const player = await db.get(`acc${message.author.id}.hand`);
         if (!player) {
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             const errorMessage = new Discord.MessageEmbed()
                 .setColor("#fc0303")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -59,6 +60,7 @@ module.exports = {
             }
 
             if (trackList.length > 2048) {
+				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                 const errorMessage = new Discord.MessageEmbed()
                     .setColor("#fc0303")
                     .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -74,7 +76,7 @@ module.exports = {
                 .setTitle("Multiple tracksets found, please type one of the following.")
                 .setDescription(trackList)
                 .setTimestamp();
-
+			console.log(message.client.execList);
             message.channel.send(infoScreen).then(currentMessage => {
                 message.channel.awaitMessages(filter, {
                     max: 1,
@@ -82,29 +84,42 @@ module.exports = {
                     errors: ['time']
                 })
                     .then(collected => {
-                        if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
-                            collected.first().delete();
+						if (message.channel.type === "text") {
+							collected.first().delete();
+						}
+                        if (isNaN(collected.first().content) || parseInt(collected.first().content) > searchResults.length || parseInt(collected.first().content) < 1) {
+							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                             const errorMessage = new Discord.MessageEmbed()
                                 .setColor("#fc0303")
                                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                                 .setTitle("Error, invalid integer provided.")
                                 .setDescription("It looks like your response was either not a number or not part of the selection.")
                                 .setTimestamp();
-                            return currentMessage.edit(errorMessage);
+							if (message.channel.type === "text") {
+								return currentMessage.edit(errorMessage);
+							}
+							else {
+								return message.channel.send(errorMessage);
+							}
                         }
                         else {
-                            currentTrack = require(`./tracksets/${searchResults[parseInt(collected.first()) - 1]}`);
+                            currentTrack = require(`./tracksets/${searchResults[parseInt(collected.first().content) - 1]}`);
                             chooseOpponent(currentMessage);
-                            collected.first().delete();
                         }
                     })
                     .catch(() => {
+						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                         const cancelMessage = new Discord.MessageEmbed()
                             .setColor("#34aeeb")
                             .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                             .setTitle("Action cancelled automatically.")
                             .setTimestamp();
-                        return currentMessage.edit(cancelMessage);
+                        if (message.channel.type === "text") {
+							return currentMessage.edit(errorMessage);
+						}
+						else {
+							return message.channel.send(errorMessage);
+						}
                     });
             });
         }
@@ -113,6 +128,7 @@ module.exports = {
             chooseOpponent();
         }
         else {
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             const errorMessage = new Discord.MessageEmbed()
                 .setColor("#fc0303")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -139,7 +155,7 @@ module.exports = {
                 .setImage(currentTrack["background"])
                 .setTimestamp();
             let currentMessage2;
-            if (currentMessage) {
+            if (currentMessage && message.channel.type === "text") {
                 currentMessage2 = await currentMessage.edit(chooseScreen);
             }
             else {
@@ -151,14 +167,15 @@ module.exports = {
                 time: waitTime,
                 errors: ['time']
             })
-                .then(collected => {
+                .then(async collected => {
                     let carName = collected.first().content.split(" ").map(i => i.toLowerCase());
-
                     searchResults = carFiles.filter(function (car) {
                         return carName.every(part => car.includes(part));
                     });
 
-                    collected.first().delete();
+                    if (message.channel.type === "text") {
+						collected.first().delete();
+					}
                     if (searchResults.length > 1) {
                         var carList = "";
                         for (i = 1; i <= searchResults.length; i++) {
@@ -171,13 +188,19 @@ module.exports = {
                         }
 
                         if (carList.length > 2048) {
+							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                             const errorMessage = new Discord.MessageEmbed()
                                 .setColor("#fc0303")
                                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                                 .setTitle("Error, too many search results.")
                                 .setDescription("Due to Discord's embed limitations, the bot isn't able to show the full list of search results. Try again with a more specific keyword.")
                                 .setTimestamp();
-                            return currentMessage.edit(errorMessage);
+							if (message.channel.type === "text") {
+								return currentMessage2.edit(errorMessage);
+							}
+							else {
+								return message.channel.send(errorMessage);
+							}
                         }
 
                         const infoScreen = new Discord.MessageEmbed()
@@ -187,60 +210,88 @@ module.exports = {
                             .setDescription(carList)
                             .setTimestamp();
 
-                        currentMessage2.edit(infoScreen).then(() => {
-                            message.channel.awaitMessages(filter, {
-                                max: 1,
-                                time: waitTime,
-                                errors: ['time']
-                            })
-                                .then(collected => {
-                                    if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
-                                        collected.first().delete();
-                                        const errorMessage = new Discord.MessageEmbed()
-                                            .setColor("#fc0303")
-                                            .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                                            .setTitle("Error, invalid integer provided.")
-                                            .setDescription("It looks like your response was either not a number or not part of the selection.")
-                                            .setTimestamp();
-                                        return currentMessage2.edit(errorMessage);
-                                    }
-                                    else {
-                                        let currentCar = searchResults[parseInt(collected.first()) - 1];
-                                        collected.first().delete();
-                                        upgrade(currentCar, currentMessage2);
-                                    }
-                                })
-                                .catch(() => {
-                                    const cancelMessage = new Discord.MessageEmbed()
-                                        .setColor("#34aeeb")
+						if (message.channel.type === "text") {
+							currentMessage2 = await currentMessage2.edit(infoScreen);
+						}
+						else {
+							currentMessage2 = await message.channel.send(infoScreen);
+						}
+                        message.channel.awaitMessages(filter, {
+                            max: 1,
+                            time: waitTime,
+                            errors: ['time']
+                        })
+                            .then(collected => {
+								if (message.channel.type === "text") {
+									collected.first().delete();
+								}
+                                if (isNaN(collected.first().content) || parseInt(collected.first().content) > searchResults.length || parseInt(collected.first().content) < 1) {
+									message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+                                    const errorMessage = new Discord.MessageEmbed()
+                                        .setColor("#fc0303")
                                         .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                                        .setTitle("Action cancelled automatically.")
+                                        .setTitle("Error, invalid integer provided.")
+                                        .setDescription("It looks like your response was either not a number or not part of the selection.")
                                         .setTimestamp();
-                                    return currentMessage2.edit(cancelMessage);
-                                });
-                        });
+									if (message.channel.type === "text") {
+										return currentMessage2.edit(errorMessage);
+									}
+									else {
+										return message.channel.send(errorMessage);
+									}
+                                }
+                                else {
+                                    upgrade(searchResults[parseInt(collected.first().content) - 1], currentMessage2);
+                                }
+                            })
+                            .catch(() => {
+								message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+                                const cancelMessage = new Discord.MessageEmbed()
+                                    .setColor("#34aeeb")
+                                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                                    .setTitle("Action cancelled automatically.")
+                                    .setTimestamp();
+                                if (message.channel.type === "text") {
+									return currentMessage2.edit(cancelMessage);
+								}
+								else {
+									return message.channel.send(cancelMessage);
+								}
+                            });
                     }
                     else if (searchResults.length > 0) {
                         upgrade(searchResults[0], currentMessage2);
                     }
                     else {
+						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                         const errorMessage = new Discord.MessageEmbed()
                             .setColor("#fc0303")
                             .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                             .setTitle("Error, car requested not found.")
                             .setDescription("Well that sucks. Try going against another car!")
                             .setTimestamp();
-                        return currentMessage.edit(errorMessage);
+                        if (message.channel.type === "text") {
+							return currentMessage2.edit(errorMessage);
+						}
+						else {
+							return message.channel.send(errorMessage);
+						}
                     }
                 })
                 .catch(error => {
                     console.log(error);
+					message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                     const cancelMessage = new Discord.MessageEmbed()
                         .setColor("#34aeeb")
                         .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                         .setTitle("Action cancelled automatically.")
                         .setTimestamp();
-                    return currentMessage.edit(cancelMessage);
+                    if (message.channel.type === "text") {
+						return currentMessage2.edit(cancelMessage);
+					}
+					else {
+						return message.channel.send(cancelMessage);
+					}
                 });
         }
 
@@ -258,23 +309,37 @@ module.exports = {
                 .setImage(car["card"])
                 .setTimestamp();
 
-            var currentMessage = await currentMessage2.edit(chooseScreen);
+            let currentMessage;
+			if (message.channel.type === "text") {
+                currentMessage = await currentMessage2.edit(chooseScreen);
+            }
+            else {
+                currentMessage = await message.channel.send(chooseScreen);
+            }
             message.channel.awaitMessages(filter, {
                 max: 1,
                 time: waitTime,
                 errors: ['time']
             })
                 .then(collected => {
-					collected.first().delete();
+					if (message.channel.type === "text") {
+						collected.first().delete();
+					}
 					let upgrade = collected.first().content.toLowerCase();
 					if (!car[`racehud${upgrade}`] || car[`racehud${upgrade}`] === "") {
+						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 						const errorScreen = new Discord.MessageEmbed()
                             .setColor("#fc0303")
                             .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                             .setTitle("Error, the tuning stage you requested is not supported.")
                             .setDescription("There is a possiblity that the maxed tune your car has isn't available. If that's the case, report it to the devs.")
                             .setTimestamp();
-                        return currentMessage.edit(errorScreen);
+						if (message.channel.type === "text") {
+							return currentMessage.edit(errorScreen);
+						}
+						else {
+							return message.channel.send(errorScreen);
+						}
 					}
 
                     const playerList = createList(player);
@@ -291,7 +356,13 @@ module.exports = {
                             { name: "Opponent's Hand", value: opponentList, inline: true }
                         )
                         .setTimestamp();
-                    currentMessage.edit(intermission);
+					if (message.channel.type === "text") {
+						currentMessage.edit(intermission);
+					}
+					else {
+						message.channel.send(intermission);
+					}
+					message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                     return raceCommand.race(message, playerCar, opponentCar, currentTrack);
                 });
 

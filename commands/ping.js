@@ -37,5 +37,6 @@ anyway latency = \`${Date.now() - message.createdTimestamp}ms\` while api latenc
 
         const attachment = new Discord.MessageAttachment(canvas.toBuffer(), 'test.png');
         message.channel.send(attachment);
+		message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
     }
 }

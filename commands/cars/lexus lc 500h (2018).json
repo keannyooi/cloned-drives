@@ -1,0 +1,46 @@
+{
+    "rq": 62,
+    "make": "Lexus",
+    "model": "LC 500h",
+    "modelYear": 2018,
+    "country": "JP",
+    "topSpeed": 155,
+    "0to60": 4.8,
+    "handling": 82,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+
+    "weight": 2050,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 61.54,
+    "ola": 79.17,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/733649380422189147/lexus_lc500h.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/733651841329397800/lexus_lc500h.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/733651885868974100/lexus_lc500h_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/733651901698277396/lexus_lc500h_666.jpg",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/733651916105580614/lexus_lc500h_969.jpg",
+    "racehud699": "",
+
+    "333TopSpeed": 159,
+    "3330to60": 4.6,
+    "333Handling": 85,
+
+    "666TopSpeed": 164,
+    "6660to60": 4.3,
+    "666Handling": 88,
+
+    "969TopSpeed": 168,
+    "9690to60": 4.0,
+    "969Handling": 91
+}

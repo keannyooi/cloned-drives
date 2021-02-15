@@ -1,0 +1,50 @@
+{
+    "rq": 56,
+    "make": "Ford",
+    "model": "F-150 SVT Raptor 6.2",
+    "modelYear": 2010,
+    "country": "US",
+    "topSpeed": 100,
+    "0to60": 6.9,
+    "handling": 63,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["American Wilds", "OG", "Servers Choice"],
+    "isPrize": false,
+
+    "weight": 2659,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "Pickup",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 56.10,
+    "ola": 78.26,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/804950093664747540/2010_Ford_F150_SVT_Raptor.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/804950226409750538/FordSVTRaptor000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/804950262397534250/FordSVTRaptor333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/804950289726963772/FordSVTRaptor666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/804950310955122698/FordSVTRaptor996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/804950339543105566/FordSVTRaptor969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 103,
+    "3330to60": 6.6,
+    "333Handling": 65,
+
+    "666TopSpeed": 106,
+    "6660to60": 6.4,
+    "666Handling": 68,
+
+    "996TopSpeed": 110,
+    "9960to60": 6.1,
+    "996Handling": 69,
+
+    "969TopSpeed": 109,
+    "9690to60": 6.2,
+    "969Handling": 70
+}

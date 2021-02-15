@@ -34,6 +34,7 @@ module.exports = {
 		let timeLeft = moment(lastGambleRefresh).add(8, "hours");
 
 		if (isNaN(args[0]) || parseInt(args[0]) > playerData.money || parseInt(args[0]) > 1000000) {
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 			const errorMessage = new Discord.MessageEmbed()
 				.setColor("#fc0303")
 				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -120,9 +121,11 @@ module.exports = {
 			}
 			playerData.lastGambleRefresh = moment();
 			await db.set(`acc${message.author.id}`, playerData);	
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 			return;
 		}
 		else {
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 			const errorMessage = new Discord.MessageEmbed()
 				.setColor("#fc0303")
 				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))

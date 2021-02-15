@@ -1,0 +1,51 @@
+{
+    "rq": 34,
+    "make": "Toyota",
+    "model": "Camry Hybrid",
+    "modelYear": 2007,
+    "country": "JP",
+    "topSpeed": 115,
+    "0to60": 7.5,
+    "handling": 71,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eco Friendly"],
+    "isPrize": false,
+
+    "weight": 1715,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 65.69,
+    "ola": 74.67,
+    "description": "Delivers the typical Camry traits with the bonus of above-average fuel economy. Card by Connor",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/810098955638669322/D.ToyotaCamryHybrid.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/810099037578854410/D.ToyotaCamryHybrid.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/810099050472538122/D.ToyotaCamryHybrid-1star.pngg",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/810099061772386354/D.ToyotaCamryHybrid-2star.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/810099090041208832/D.ToyotaCamryHybrid-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/810099079957839873/D.ToyotaCamryHybrid-969.png",
+	"racehud699": "",
+
+    "333TopSpeed": 118,
+    "3330to60": 7.0,
+    "333Handling": 73,
+
+    "666TopSpeed": 121,
+    "6660to60": 6.5,
+    "666Handling": 77,
+
+    "996TopSpeed": 125,
+    "9960to60": 5.9,
+    "996Handling": 78,
+   
+	"969TopSpeed": 124,
+    "9690to60": 6.0,
+    "969Handling": 79
+	
+}

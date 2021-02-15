@@ -1,0 +1,50 @@
+{
+    "rq": 48,
+    "make": "Porsche",
+    "model": "911 Carrera 4",
+    "modelYear": 1988,
+    "country": "DE",
+    "topSpeed": 162,
+    "0to60": 5.2,
+    "handling": 74,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1450,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 66.50,
+    "ola": 71.79,
+    "description": "A true all-weather Carrera to aid with RWD problems. Card by havvy",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/804440728218239016/Porsche911Carrera4964.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/804440851081199686/0009644.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/804440868861902908/1119644.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/804440877539393606/2229644.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/804440895897468938/3329644.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/804440887731814400/3239644.png",
+    "racehud699": "",
+
+    "333TopSpeed": 166,
+    "3330to60": 4.9,
+    "333Handling": 77,
+
+    "666TopSpeed": 170,
+    "6660to60": 4.6,
+    "666Handling": 79,
+
+	"996TopSpeed": 174,
+    "9960to60": 4.2,
+    "996Handling": 79,
+
+    "969TopSpeed": 174,
+    "9690to60": 4.3,
+    "969Handling": 82
+}

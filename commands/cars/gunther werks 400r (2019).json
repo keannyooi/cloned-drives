@@ -1,0 +1,54 @@
+{
+    "rq": 81,
+    "make": "Gunther Werks",
+    "model": "400R",
+    "modelYear": 2019,
+    "country": "US",
+    "topSpeed": 170,
+    "0to60": 3.7,
+    "handling": 93,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": true,
+
+    "weight": 1211,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 82.22,
+    "ola": 80.00,
+    "description": "This is not a Stinger. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/803711239766147152/400RRRRRRRRRRRRRRR.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/803711284717551656/400R.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/803711296155287572/400R333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/803711309760954368/400R666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/803711383493410846/400R996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/803711352853495848/400R969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/803711330045263953/400R699.png",
+
+    "333TopSpeed": 173,
+    "3330to60": 3.5,
+    "333Handling": 96,
+
+    "666TopSpeed": 176,
+    "6660to60": 3.3,
+    "666Handling": 99,
+
+    "996TopSpeed": 180,
+    "9960to60": 3.1,
+    "996Handling": 100,
+
+    "969TopSpeed": 179,
+    "9690to60": 3.2,
+    "969Handling": 103,
+
+    "699TopSpeed": 178,
+    "6990to60": 3.2,
+    "699Handling": 103
+}

@@ -30,6 +30,7 @@ module.exports = {
 		let roster = [];
 
 		if (isNaN(args[0]) || availableRounds.find(num => num === parseInt(args[0])) === undefined) {
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 			const errorMessage = new Discord.MessageEmbed()
                 .setColor("#fc0303")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -42,6 +43,7 @@ module.exports = {
 
         for (i = 0; i < events.length; i++) {
             if (events[i].name === eventName) {
+				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                 const errorScreen = new Discord.MessageEmbed()
                     .setColor("#fc0303")
                     .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -52,8 +54,46 @@ module.exports = {
             }
         }
 
+		let carFile = [];
 		for (i = 0; i < rounds; i++) {
-			let carFile = carFiles[Math.floor(Math.random() * carFiles.length)];
+			carFile[i] = carFiles[Math.floor(Math.random() * carFiles.length)];
+		}
+
+		carFile.sort(function (a, b) {
+            const carA = require(`./cars/${a}`);
+            const carB = require(`./cars/${b}`);
+
+            if (carA["rq"] === carB["rq"]) {
+                let nameA = `${carA["make"]} ${carA["model"]}`.toLowerCase();
+                let nameB = `${carA["make"]} ${carA["model"]}`.toLowerCase();
+				if (typeof carA["make"] === "object") {
+					nameA = `${carA["make"][0]} ${carA["model"]}`.toLowerCase();
+				}
+				if (typeof carB["make"] === "object") {
+					nameB = `${carB["make"][0]} ${carB["model"]}`.toLowerCase();
+				}
+
+                if (nameA < nameB) {
+                    return -1;
+                }
+                else if (nameA > nameB) {
+                    return 1;
+                }
+                else {
+                    return 0;
+                }
+            }
+            else {
+                if (carA["rq"] > carB["rq"]) {
+                    return 1;
+                }
+                else {
+                    return -1;
+                }
+            }
+        });
+
+		for (let c of carFile) {
 			let upgradeIndex = Math.floor(Math.random() * 4);
 			let upgradePattern = [0, 0, 0];
 			switch (upgradeIndex) {
@@ -68,7 +108,7 @@ module.exports = {
 				case 3:
 					let maxedTunes = [996, 969, 699];
 					let i = Math.floor(Math.random() * maxedTunes.length);
-					let car = require(`./cars/${carFile}`);
+					let car = require(`./cars/${c}`);
 					while (!car[`${maxedTunes[i]}TopSpeed`]) {
 						i = Math.floor(Math.random() * maxedTunes.length);
 					}
@@ -77,9 +117,8 @@ module.exports = {
 				default:
 					break;
 			}
-
 			roster.push({
-				car: carFile,
+				car: c,
 				gearingUpgrade: upgradePattern[0],
       			engineUpgrade: upgradePattern[1],
     			chassisUpgrade: upgradePattern[2],
@@ -102,6 +141,7 @@ module.exports = {
             .setTitle(`Successfully created new event named ${eventName}!`)
 			.setDescription("Apply changes to the event using `cd-editevent`.")
             .setTimestamp();
+		message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
         return message.channel.send(infoScreen);
     }
 }

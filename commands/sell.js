@@ -30,6 +30,7 @@ module.exports = {
         };
 
         if (garage.length <= 5) {
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             const errorMessage = new Discord.MessageEmbed()
                 .setColor("#fc0303")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -53,14 +54,14 @@ module.exports = {
         }
 
 		const searchResults = garage.filter(function (garageCar) {
-            return carName.every(part => garageCar.carFile.includes(part)) && garageCar["000"] + garageCar["333"] + garageCar["666"] > 0;
+            return carName.every(part => garageCar.carFile.includes(part)) && garageCar["000"] + garageCar["333"] + garageCar["666"] + garageCar["996"]  + garageCar["969"]  + garageCar["699"]  > 0;
         });
 		let searchResults1 = [];
 
 		if (args[0].toLowerCase() === "all" || amount > 1) {
 			for (let car of searchResults) {
 				let test = require(`./cars/${car.carFile}`);
-				if (car["000"] >= amount || car["333"] >= amount || car["666"] >= amount) {
+				if (car["000"] >= amount || car["333"] >= amount || car["666"] >= amount || car["996"] >= amount || car["969"] >= amount || car["699"] >= amount) {
 					if (test["isPrize"] === false) {
 						searchResults1.push(car);
 					}
@@ -85,6 +86,7 @@ module.exports = {
             }
 
             if (carList.length > 2048) {
+				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
                 const errorMessage = new Discord.MessageEmbed()
                     .setColor("#fc0303")
                     .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -105,11 +107,14 @@ module.exports = {
                 message.channel.awaitMessages(filter, {
                     max: 1,
                     time: 30000,
-                    errors: ['time']
+                    errors: ["time"]
                 })
                     .then(collected => {
-						collected.first().delete();
-                        if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults1.length) {
+						if (message.channel.type === "text") {
+							collected.first().delete();
+						}
+                        if (isNaN(collected.first().content) || parseInt(collected.first().content) > searchResults1.length || parseInt(collected.first().content) < 1) {
+							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                             const errorMessage = new Discord.MessageEmbed()
                                 .setColor("#fc0303")
                                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -119,11 +124,12 @@ module.exports = {
                             return currentMessage.edit(errorMessage);
                         }
                         else {
-                            currentCar = searchResults1[parseInt(collected.first()) - 1];
+                            currentCar = searchResults1[parseInt(collected.first().content) - 1];
                             selectUpgrade(currentCar, currentMessage);
                         }
                     })
                     .catch(() => {
+						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
                         const cancelMessage = new Discord.MessageEmbed()
                             .setColor("#34aeeb")
                             .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -137,65 +143,73 @@ module.exports = {
             selectUpgrade(searchResults1[0]);
         }
         else {
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
             const errorMessage = new Discord.MessageEmbed()
                 .setColor("#fc0303")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                 .setTitle("Error, it looks like you don't have enough cars to perform this action.")
-                .setDescription("If you are bulk fusing cars, take note that you can't bulk fuse upgraded cars. Besides, you can't fuse maxed cars and prize cars.")
+                .setDescription("Note: You can't sell prize cars.")
                 .setTimestamp();
             return message.channel.send(errorMessage);
         }
 
 		async function selectUpgrade(currentCar, currentMessage) {
-			let upgradeList = "Type in any tune that is displayed here.\n";
-			for (let [key, value] of Object.entries(currentCar)) {
-				if (!isNaN(value) && value >= amount) {
-					upgradeList += `\`${key}\`, `;
-				}
-			}
-
-			let infoScreen = new Discord.MessageEmbed()
-				.setColor("#34aeeb")
-				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-				.setTitle("Sell car of which tune?")
-				.setDescription(upgradeList.slice(0, -2))
-				.setTimestamp();
-			let upgradeMessage;
-			if (currentMessage) {
-				upgradeMessage = await currentMessage.edit(infoScreen);
+			let isOne = Object.keys(currentCar).filter(m => !isNaN(currentCar[m]) && currentCar[m] >= amount);
+			if (isOne.length === 1) {
+				sell(currentCar, isOne[0], currentMessage);
 			}
 			else {
-				upgradeMessage = await message.channel.send(infoScreen);
-			}
+				let upgradeList = "Type in any tune that is displayed here.\n";
+				for (i = 0; i < isOne.length; i++) {
+					upgradeList += `\`${isOne[i]}\`, `;
+				}
+				let infoScreen = new Discord.MessageEmbed()
+					.setColor("#34aeeb")
+					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+					.setTitle("Fuse car of which tune?")
+					.setDescription(upgradeList.slice(0, -2))
+					.setTimestamp();
+				let upgradeMessage;
+				if (currentMessage && message.channel.type === "text") {
+					upgradeMessage = await currentMessage.edit(infoScreen);
+				}
+				else {
+					upgradeMessage = await message.channel.send(infoScreen);
+				}
 
-			message.channel.awaitMessages(filter, {
-				max: 1,
-				time: 60000,
-				errors: ["time"]
-			})
-				.then(collected => {
-					collected.first().delete();
-					if (isNaN(collected.first().content) || currentCar[collected.first().content] === undefined || currentCar[collected.first().content] === 0) {
-						const errorMessage = new Discord.MessageEmbed()
-							.setColor("#fc0303")
-							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-							.setTitle("Error, invalid selection provided.")
-							.setDescription("It looks like your response was not part of the selection.")
-							.setTimestamp();
-						return upgradeMessage.edit(errorMessage);
-					}
-					else {
-						sell(currentCar, collected.first().content, upgradeMessage);
-					}
+				message.channel.awaitMessages(filter, {
+					max: 1,
+					time: 60000,
+					errors: ["time"]
 				})
-				.catch(() => {
-					const cancelMessage = new Discord.MessageEmbed()
-						.setColor("#34aeeb")
-						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-						.setTitle("Action cancelled automatically.")
-						.setTimestamp();
-					return upgradeMessage.edit(cancelMessage);
-				});
+					.then(collected => {
+						if (message.channel.type === "text") {
+							collected.first().delete();
+						}
+						if (isOne.find(m => m === collected.first().content) === undefined) {
+							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+							const errorMessage = new Discord.MessageEmbed()
+								.setColor("#fc0303")
+								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+								.setTitle("Error, invalid selection provided.")
+								.setDescription("It looks like your response was not part of the selection.")
+								.setTimestamp();
+							return upgradeMessage.edit(errorMessage);
+						}
+						else {
+							sell(currentCar, collected.first().content, upgradeMessage);
+						}
+					})
+					.catch(() => {
+						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+						const cancelMessage = new Discord.MessageEmbed()
+							.setColor("#34aeeb")
+							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+							.setTitle("Action cancelled automatically.")
+							.setTimestamp();
+						return upgradeMessage.edit(cancelMessage);
+					});
+			}
 		}
 
         async function sell(currentCar, upgrade, currentMessage) {
@@ -240,8 +254,8 @@ module.exports = {
                 .setDescription("React with ✅ to proceed or ❎ to cancel.")
                 .setImage(car["card"])
                 .setTimestamp();
-            var reactionMessage;
-            if (currentMessage) {
+            let reactionMessage;
+            if (currentMessage && message.channel.type === "text") {
                 reactionMessage = await currentMessage.edit(confirmationMessage);
             }
             else {
@@ -252,10 +266,12 @@ module.exports = {
             reactionMessage.awaitReactions(emojiFilter, {
                 max: 1,
                 time: 10000,
-                errors: ['time']
+                errors: ["time"]
             })
                 .then(async collected => {
-                    reactionMessage.reactions.removeAll();
+                    if (message.channel.type === "text") {
+						reactionMessage.reactions.removeAll();
+					}
                     switch (collected.first().emoji.name) {
                         case "✅":
 							if (playerData.hand) {
@@ -274,6 +290,7 @@ module.exports = {
 							playerData.money += money;
 
                             await db.set(`acc${message.author.id}`, playerData);
+							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
 
                             const infoScreen = new Discord.MessageEmbed()
                                 .setColor("#03fc24")
@@ -285,6 +302,7 @@ module.exports = {
                                 .setTimestamp();
                             return reactionMessage.edit(infoScreen);
                         case "❎":
+							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
                             const cancelMessage = new Discord.MessageEmbed()
                                 .setColor("#34aeeb")
                                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -299,6 +317,7 @@ module.exports = {
                 })
                 .catch(() => {
                     reactionMessage.reactions.removeAll();
+					message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
                     const cancelMessage = new Discord.MessageEmbed()
                         .setColor("#34aeeb")
                         .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))

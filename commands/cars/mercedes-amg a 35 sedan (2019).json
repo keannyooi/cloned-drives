@@ -1,0 +1,54 @@
+{
+    "rq": 73,
+    "make": "Mercedes-AMG",
+    "model": "A 35 Sedan",
+    "modelYear": 2019,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 4.6,
+    "handling": 89,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 2055,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "front",
+    "fuelType": "Petrol",
+    "mra": 69.72,
+    "ola": 87.72,
+    "description": "A sedan varient of the Hatchback. Card by Havvy.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/803337132680019990/unknown.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/803337219679059978/000a35.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/803337242105479258/111a35.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/803337247238651954/222a35.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/803337274212745236/332a35.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/803337266817925120/323a35.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/803337260996493363/233a35.png",
+
+    "333TopSpeed": 159,
+    "3330to60": 4.3,
+    "333Handling": 92,
+
+    "666TopSpeed": 163,
+    "6660to60": 4.1,
+    "666Handling": 95,
+
+    "996TopSpeed": 167,
+    "9960to60": 3.7,
+    "996Handling": 97,
+
+    "969TopSpeed": 167,
+    "9690to60": 3.8,
+    "969Handling": 99,
+
+    "699TopSpeed": 163,
+    "6990to60": 3.8,
+    "699Handling": 99
+}

@@ -38,6 +38,7 @@ module.exports = {
             }
 
             if (trackList.length > 2048) {
+				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                 const errorMessage = new Discord.MessageEmbed()
                     .setColor("#fc0303")
                     .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -58,11 +59,12 @@ module.exports = {
                 message.channel.awaitMessages(filter, {
                     max: 1,
                     time: waitTime,
-                    errors: ['time']
+                    errors: ["time"]
                 })
                     .then(collected => {
-                        if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
-                            collected.first().delete();
+						collected.first().delete();
+                        if (isNaN(collected.first().content) || parseInt(collected.first().content) > searchResults.length || parseInt(collected.first().content) < 1) {
+							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                             const errorMessage = new Discord.MessageEmbed()
                                 .setColor("#fc0303")
                                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -72,12 +74,12 @@ module.exports = {
                             return currentMessage.edit(errorMessage);
                         }
                         else {
-                            const currentTrack = require(`./tracksets/${searchResults[parseInt(collected.first()) - 1]}`);
-                            collected.first().delete();
+                            const currentTrack = require(`./tracksets/${searchResults[parseInt(collected.first().content) - 1]}`);
                             displayInfo(currentTrack, currentMessage);
                         }
                     })
                     .catch(() => {
+						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                         const cancelMessage = new Discord.MessageEmbed()
                             .setColor("#34aeeb")
                             .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -92,6 +94,7 @@ module.exports = {
             displayInfo(currentTrack);
         }
         else {
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             const errorMessage = new Discord.MessageEmbed()
                 .setColor("#fc0303")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -119,8 +122,9 @@ module.exports = {
                     { name: "MRA Priority", value: `${currentTrack["specsDistr"]["mra"]}/100`, inline: true },
                     { name: "OLA Priority", value: `${currentTrack["specsDistr"]["ola"]}/100`, inline: true }
                 )
-                .setImage(currentTrack["background"])
+                .setImage(currentTrack["map"])
                 .setTimestamp();
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             if (currentMessage) {
                 return currentMessage.edit(infoScreen);
             }

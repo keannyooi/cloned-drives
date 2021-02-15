@@ -1,0 +1,50 @@
+{
+    "rq": 33,
+    "make": "Subaru",
+    "model": "XT6",
+    "modelYear": 1988,
+    "country": "JP",
+    "topSpeed": 118,
+    "0to60": 9.1,
+    "handling": 69,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1310,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 42.13,
+    "ola": 57.14,
+    "description": "One of several unsuccessful Impreza predecessors. By Johnny",
+
+    "card": "https://cdn.discordapp.com/attachments/731698267573977099/807727934710218833/Subaru-XT6.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/807770785308737585/Subaru-XT6.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/807770792020279376/Subaru-XT6-1-star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/807770796742672454/Subaru-XT6-2-star.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/807770924500647986/Subaru-XT6-323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/807770808424202240/Subaru-XT6-233.png",
+
+    "333TopSpeed": 121,
+    "3330to60": 8.5,
+    "333Handling": 71,
+
+    "666TopSpeed": 124,
+    "6660to60": 7.9,
+    "666Handling": 74,
+
+    "969TopSpeed": 127,
+    "9690to60": 7.3,
+    "969Handling": 76,
+
+    "699TopSpeed": 126,
+    "6990to60": 7.3,
+    "699Handling": 77
+}

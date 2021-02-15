@@ -1,0 +1,46 @@
+{
+    "rq": 47,
+    "make": "Honda",
+    "model": "MDX",
+    "modelYear": 2001,
+    "country": "JP",
+    "topSpeed": 119,
+    "0to60": 8.0,
+    "handling": 67,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1965,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 47.34,
+    "ola": 82.50,
+    "description": "The Japanese MDX. Card by Bnuuy",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/807698585566707722/honda_MDX.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/807698786947694632/H.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/807698816039911444/H333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/807698829679132722/H666.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/807698852526161950/H969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 122,
+    "3330to60": 7.6,
+    "333Handling": 69,
+
+    "666TopSpeed": 125,
+    "6660to60": 7.2,
+    "666Handling": 72,
+
+    "969TopSpeed": 128,
+    "9690to60": 6.9,
+    "969Handling": 74
+}

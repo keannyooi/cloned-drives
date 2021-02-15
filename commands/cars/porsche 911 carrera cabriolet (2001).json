@@ -1,0 +1,61 @@
+﻿{
+    "rq": 59,
+    "make": "Porsche",
+    "model": "911 Carrera Cabriolet",
+    "modelYear": 2001,
+    "country": "DE",
+    "topSpeed": 177,
+    "0to60": 4.9,
+    "handling": 83,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1394,
+    "gc": "Low",
+    "seatCount":2,
+    "bodyStyle": "Cabriolet",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 74.56,
+    "ola": 81.08,
+    "description": "Red with a chance of sun. Card by Havvy",
+
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/804829656368152677/unknown.png?width=1154&height=718",
+    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/804823374962491422/000_996.1cab.png?width=1154&height=718",
+    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/804823379206733844/111_996.1cab.png?width=1154&height=718",
+    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/804823386261684224/222_996.1cab.png?width=1154&height=718",
+    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/804823397946359818/332_996.1cab.png?width=1154&height=718",
+    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/804823392242761789/323_996.1cab.png?width=1154&height=718",
+    "racehud699": "",
+
+
+    "333TopSpeed": 180,
+    "3330to60": 4.6,
+    "333Handling": 86,
+
+
+    "666TopSpeed": 184,
+    "6660to60": 4.3, 
+    "666Handling": 89,
+
+
+    "996TopSpeed": 187,
+    "9960to60": 3.9,
+    "996Handling": 89,
+
+
+    "969TopSpeed": 187,
+    "9690to60": 4.0,
+    "969Handling": 92,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

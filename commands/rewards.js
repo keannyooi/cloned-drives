@@ -22,6 +22,7 @@ module.exports = {
 		const rewards = playerData.unclaimedRewards;
 
 		if (rewards.money === 0 && rewards.fuseTokens === 0 && rewards.trophies === 0 && rewards.cars.length === 0 && rewards.packs.length === 0) {
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
 			const infoScreen = new Discord.MessageEmbed()
 				.setColor("#34aeeb")
 				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -90,21 +91,23 @@ module.exports = {
 			if (rewards.packs.length > 0) {
 				let packList = "";
 				const openPackCommand = require("./sharedfiles/openpack.js");
-				for (i = 0; i < rewards.packs.length; i++) {
-					let currentPack = require(`./packs/${rewards.packs[i]}`);
+
+				for (y = 0; y < rewards.packs.length; y++) {
+					console.log(y);
+					let currentPack = require(`./packs/${rewards.packs[y]}`);
 					packList += `${currentPack["packName"]}\n`;
 					let addedCars = openPackCommand.openPack(message, currentPack);
 
-					for (i = 0; i < addedCars.length; i++) {
+					for (x = 0; x < addedCars.length; x++) {
 						let isInGarage = playerData.garage.findIndex(garageCar => {
-							return garageCar.carFile === addedCars[i];
+							return garageCar.carFile === addedCars[x];
 						});
 						if (isInGarage !== -1) {
 							playerData.garage[isInGarage]["000"] += 1;
 						}
 						else {
 							playerData.garage.push({
-								carFile: addedCars[i],
+								carFile: addedCars[x],
 								"000": 1,
 								"333": 0,
 								"666": 0,
@@ -121,6 +124,7 @@ module.exports = {
 
 			await db.set(`acc${message.author.id}`, playerData);
 			message.channel.send(infoScreen);
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
 		}
 
 		function rarityCheck(currentCar) {

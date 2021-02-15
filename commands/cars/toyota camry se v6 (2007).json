@@ -1,0 +1,52 @@
+{
+    "rq": 48,
+    "make": "Toyota",
+    "model": "Camry SE V6",
+    "modelYear": 2007,
+    "country": "JP",
+    "topSpeed": 143,
+    "0to60": 6.4,
+    "handling": 72,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1580,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 73.56,
+    "ola": 75,
+    "description": "The Camry is the anti-sport sedan, so despite the SE badge, this refined family car can't be persuaded to play. Card by Connor",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/810098299326431242/C.ToyotaCamrySEV6.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/810098388863025183/C.ToyotaCamrySEV6.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/810098407296204830/C.ToyotaCamrySEV6-1star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/810098421213954058/C.ToyotaCamrySEV6-2star.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/810098452557725707/C.ToyotaCamrySEV6-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/810098440062107698/C.ToyotaCamrySEV6-969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 146,
+    "3330to60": 6.0,
+    "333Handling": 74,
+
+    "666TopSpeed": 149,
+    "6660to60": 5.6,
+    "666Handling": 78,
+
+	  "969TopSpeed": 152,
+    "9690to60": 5.2,
+    "969Handling": 80,
+	
+	
+    "996TopSpeed": 153,
+    "9960to60": 5.0,
+    "996Handling": 79
+
+}

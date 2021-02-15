@@ -1,0 +1,50 @@
+{
+    "rq": 95,
+    "make": "McLaren",
+    "model": "Speedtail",
+    "modelYear": 2020,
+    "country": "GB",
+    "topSpeed": 250,
+    "0to60": 2.9,
+    "handling": 95,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": true,
+
+    "weight": 1430,
+    "gc": "Low",
+    "seatCount": 3,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Hybrid",
+    "mra": 100.00,
+    "ola": 80.00,
+    "description": "Card by DodgeDemon.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/807268015628091412/2020_McLaren_Speedtail.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/807268284323856404/McLarenSpeedtail000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/807268337502519306/McLarenSpeedtail333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/807268381089857593/McLarenSpeedtail666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/807268464481796136/McLarenSpeedtail996.png",
+    "racehud969": "",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/807268421255036960/McLarenSpeedtail699.png",
+
+    "333TopSpeed": 252,
+    "3330to60": 2.7,
+    "333Handling": 98,
+
+    "666TopSpeed": 254,
+    "6660to60": 2.6,
+    "666Handling": 101,
+
+    "996TopSpeed": 158,
+    "9960to60": 2.4,
+    "996Handling": 102,
+
+    "699TopSpeed": 256,
+    "6990to60": 2.5,
+    "699Handling": 105
+}

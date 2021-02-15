@@ -1,0 +1,46 @@
+{
+    "rq": 87,
+    "make": "Toyota",
+    "model": "Supra GT500 #6 Esso Ultraflo",
+    "modelYear": 2002,
+    "country": "JP",
+    "topSpeed": 182,
+    "0to60": 3.5,
+    "handling": 96,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport"],
+    "isPrize": true,
+
+    "weight": 1100,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 106.06,
+    "ola": 75.00,
+    "description": "Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/807702792487567420/isthatasupra.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/807702879912722512/supra.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/807702890763255808/supra333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/807702904970543144/supra666.png",
+    "racehud996": "",
+    "racehud969": "",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/807702938470449162/supra699.png",
+
+    "333TopSpeed": 184,
+    "3330to60": 3.3,
+    "333Handling": 99,
+
+    "666TopSpeed": 186,
+    "6660to60": 3.1,
+    "666Handling": 103,
+
+    "699TopSpeed": 188,
+    "6990to60": 3.0,
+    "699Handling": 107
+}

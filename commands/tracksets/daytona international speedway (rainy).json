@@ -1,0 +1,18 @@
+{
+	"trackName": "Daytona International Speedway (Rainy)",
+	"weather": "Rainy",
+	"surface": "Asphalt",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://cdn.discordapp.com/attachments/716917404868935691/809766287394865252/unknown.png",
+	"map": "https://cdn.discordapp.com/attachments/716917404868935691/809392976680845352/unknown.png",
+	
+	"specsDistr": {
+		"topSpeed": 100,
+		"0to60": 10,
+		"handling": 60,
+		"weight": 0,
+		"mra": 100,
+		"ola": 0
+	}
+}
