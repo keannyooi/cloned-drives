@@ -96,8 +96,8 @@ client.once("ready", async () => {
 		const garage = await client.db.get(`acc${user.id}.garage`);
 		var i = 0;
 		while (i < garage.length) {
-			if (garage[i].carFile === "lamborghini huracan lp580-2 (2016).json") {
-				garage[i].carFile = "lamborghini huracan lp580-2 (2015).json";
+			if (garage[i].carFile === "acura nsx (1990).json") {
+				garage[i].carFile = "acura nsx (1991).json";
 			}
 			i++;
 		}
@@ -165,7 +165,7 @@ client.on("message", async message => {
 			.setTimestamp();
 		return message.channel.send(errorMessage);
 	}
-	else if (/**command.adminOnly && **/!message.member.roles.cache.has("716605635915022407")) { //admin role
+	else if (command.adminOnly && !message.member.roles.cache.has("711790752853655563")) { //admin role
 		const errorMessage = new Discord.MessageEmbed()
 			.setColor("#fc0303")
 			.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
