@@ -1,0 +1,61 @@
+﻿{
+    "rq": 14,
+    "make": "Opel",
+    "model": "Karl Innovation",
+    "modelYear": 2016,
+    "country": "DE",
+    "topSpeed": 106,
+    "0to60": 14.5,
+    "handling": 72,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 959,
+    "gc": "Medium",
+    "seatCount":4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 24.32,
+    "ola": 56.55,
+    "description": "European version of the 4th gen Spark, named after Adam Opel's eldest son Carl. Card by Connor",
+
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/811663885995212830/F.OpelKarlInnovation.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/811663980766036008/F.OpelKarlInnovation.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/811663989033533450/F.OpelKarlInnovation-1star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/811664004731633714/F.OpelKarlInnovation-2star.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/811664036843880508/F.OpelKarlInnovation-969.png",
+    "racehud699": "",
+
+
+    "333TopSpeed": 109,
+    "3330to60": 13.4,
+    "333Handling": 74,
+
+
+    "666TopSpeed": 112,
+    "6660to60": 12.3, 
+    "666Handling": 78,
+
+
+    "996TopSpeed": 0,
+    "9960to60": 0,
+    "996Handling": 0,
+
+
+    "969TopSpeed": 114,
+    "9690to60": 11.2,
+    "969Handling": 80,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

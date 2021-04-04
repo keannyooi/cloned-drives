@@ -1,0 +1,61 @@
+﻿{
+    "rq": 32,
+    "make": "Honda",
+    "model": "Odyssey EX-L",
+    "modelYear": 2002,
+    "country": "JP",
+    "topSpeed": 120,
+    "0to60": 7.8,
+    "handling": 71,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1967,
+    "gc": "Medium",
+    "seatCount":7,
+    "bodyStyle": "Minivan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 61.23,
+    "ola": 69.31,
+    "description": "The best handling Odyssey, 2002 really was a crazy year. Card by ChickenMcNuggets",
+
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/812418909982425118/ody_exl.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/812417005713752094/best_ody_stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/812417039066595338/best_ody_1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/812417065767796796/best_ody_2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/812417164439060490/best_ody_332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/812417133044170802/best_ody_323.png",
+    "racehud699": "",
+
+
+    "333TopSpeed": 123,
+    "3330to60": 7.2,
+    "333Handling": 74,
+
+
+    "666TopSpeed": 126,
+    "6660to60": 6.6, 
+    "666Handling": 76,
+
+
+    "996TopSpeed": 130,
+    "9960to60": 5.7,
+    "996Handling": 76,
+
+
+    "969TopSpeed": 126,
+    "9690to60": 6.1,
+    "969Handling": 79,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

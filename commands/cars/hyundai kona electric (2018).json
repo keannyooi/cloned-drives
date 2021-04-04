@@ -1,0 +1,54 @@
+{
+    "rq": 36,
+    "make": "Hyundai",
+    "model": "Kona Electric",
+    "modelYear": 2018,
+    "country": "KR",
+    "topSpeed": 107,
+    "0to60": 6.6,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly", "Rest of the World"],
+    "isPrize": false,
+
+    "weight": 1760,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 64.32,
+    "ola": 84.17,
+    "description": "Hyundai's second EV takes form of a crossover SUV. Card by Exist",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/812458444018679828/CD_Hyundai_Kona_Electric.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/812458584176066591/CD_Hyundai_Kona_Electric_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/812458596373495899/CD_Hyundai_Kona_Electric_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/812458601469050900/CD_Hyundai_Kona_Electric_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/812458628815519794/CD_Hyundai_Kona_Electric_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/812458615784079390/CD_Hyundai_Kona_Electric_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/812458609455792139/CD_Hyundai_Kona_Electric_699.png",
+
+    "333TopSpeed": 111,
+    "3330to60": 6.2,
+    "333Handling": 75,
+
+    "666TopSpeed": 115,
+    "6660to60": 5.8,
+    "666Handling": 78,
+
+	"996TopSpeed": 120,
+    "9960to60": 5.3,
+    "996Handling": 78,
+
+    "969TopSpeed": 119,
+    "9690to60": 5.5,
+    "969Handling": 81,
+
+	"699TopSpeed": 116,
+    "6990to60": 5.5,
+    "699Handling": 81
+}

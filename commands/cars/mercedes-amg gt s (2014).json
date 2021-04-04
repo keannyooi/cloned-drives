@@ -1,4 +1,4 @@
-﻿{
+{
     "rq": 85,
     "make": "Mercedes-AMG",
     "model": "GT S",
@@ -12,10 +12,9 @@
     "tags": ["Supercar"],
     "isPrize": false,
 
-
     "weight": 1665,
     "gc": "Low",
-    "seatCount":2,
+    "seatCount": 2,
     "bodyStyle": "Coupe",
     "tcs": true,
     "abs": true,
@@ -25,35 +24,25 @@
     "ola": 84.62,
     "description": "S. Card by Havvy",
 
-
     "card": "https://media.discordapp.net/attachments/715782088271331398/803342476873826314/unknown.png?width=1154&height=718",
     "racehud000": "https://media.discordapp.net/attachments/718097267621363744/803342346057416784/000gts.png?width=1154&height=718",
     "racehud333": "https://media.discordapp.net/attachments/718097267621363744/803342358103326730/111gts.png?width=1154&height=718",
     "racehud666": "https://media.discordapp.net/attachments/718097267621363744/803342363720024094/222gts.png?width=1154&height=718",
     "racehud996": "https://media.discordapp.net/attachments/718097267621363744/803340896207634493/332gtc.png?width=1154&height=718",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/803340887765680168/233gtc.png?width=1154&height=718",
+    "racehud969": "",
     "racehud699": "https://media.discordapp.net/attachments/718097267621363744/803342372267360256/233gts.png?width=1154&height=718",
-
 
     "333TopSpeed": 195,
     "3330to60": 3.3,
     "333Handling": 95,
 
-
-    "666TopSpeed": 297,
+    "666TopSpeed": 197,
     "6660to60": 3.1, 
     "666Handling": 98,
-
 
     "996TopSpeed": 199,
     "9960to60": 2.9,
     "996Handling": 99,
-
-
-    "969TopSpeed": 0,
-    "9690to60": 0,
-    "969Handling": 0,
-
 
     "699TopSpeed": 197,
     "6990to60": 3.0,

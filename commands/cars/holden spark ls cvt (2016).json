@@ -1,0 +1,61 @@
+﻿{
+    "rq": 22,
+    "make": "Holden",
+    "model": "Spark LS CVT",
+    "modelYear": 2016,
+    "country": "AU",
+    "topSpeed": 105,
+    "0to60": 10.4,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1041,
+    "gc": "Medium",
+    "seatCount":4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 33.55,
+    "ola": 62.04,
+    "description": "The first Holden in Cloned Drives. Card by Macan",
+
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/812844186114064445/Spark_LS_CVT_16.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/812844408042029066/Holden_Spark_LS_CVT_2016_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/812844412610150441/Holden_Spark_LS_CVT_2016_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/812844420092919818/Holden_Spark_LS_CVT_2016_666.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/812844425574481950/Holden_Spark_LS_CVT_2016_969.png",
+    "racehud699": "",
+
+
+    "333TopSpeed": 108,
+    "3330to60": 9.6,
+    "333Handling": 76,
+
+
+    "666TopSpeed": 112,
+    "6660to60": 8.8, 
+    "666Handling": 78,
+
+
+    "996TopSpeed": 0,
+    "9960to60": 0,
+    "996Handling": 0,
+
+
+    "969TopSpeed": 115,
+    "9690to60": 8.0,
+    "969Handling": 81,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

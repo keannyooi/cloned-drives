@@ -23,6 +23,7 @@ module.exports = {
 
         if (!args[0]) {
             if (decks.length === 0) {
+				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                 const infoScreen = new Discord.MessageEmbed()
                     .setColor("#34aeeb")
                     .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -77,7 +78,7 @@ module.exports = {
             });
 
             if (searchResults.length > 1) {
-                var deckList = "";
+                let deckList = "";
                 for (i = 1; i <= searchResults.length; i++) {
                     deckList += `${i} - ${searchResults[i - 1].name} \n`;
                 }
@@ -93,7 +94,7 @@ module.exports = {
                     message.channel.awaitMessages(filter, {
                         max: 1,
                         time: 30000,
-                        errors: ['time']
+                        errors: ["time"]
                     })
                         .then(collected => {
                             if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
@@ -140,7 +141,8 @@ module.exports = {
             const wait = await message.channel.send("**Loading deck, this may take a while... (please wait)**");
 
             try {
-                var handList = "";
+				let totalRQ = 0;
+                let handList = "";
                 const handPlacement = [{ x: 287, y: 24 }, { x: 658, y: 24 }, { x: 1029, y: 24 }, { x: 1400, y: 24 }, { x: 1771, y: 24 }];
                 const canvas = Canvas.createCanvas(2135, 249);
                 const ctx = canvas.getContext("2d");
@@ -149,10 +151,10 @@ module.exports = {
 
                 for (i = 0; i < currentDeck.hand.length; i++) {
                     if (currentDeck.hand[i] !== "None") {
-                        console.log(currentDeck.hand[i]);
                         const car = require(`./cars/${currentDeck.hand[i].carFile}`);
-                        var racehud = await Canvas.loadImage(car[`racehud${currentDeck.hand[i].gearingUpgrade}${currentDeck.hand[i].engineUpgrade}${currentDeck.hand[i].chassisUpgrade}`]);
-                        var rarity = rarityCheck(car);
+						totalRQ += car["rq"];
+                        let racehud = await Canvas.loadImage(car[`racehud${currentDeck.hand[i].gearingUpgrade}${currentDeck.hand[i].engineUpgrade}${currentDeck.hand[i].chassisUpgrade}`]);
+                        let rarity = rarityCheck(car);
 						let make = car["make"];
 						if (typeof make === "object") {
 							make = car["make"][0];
@@ -161,13 +163,16 @@ module.exports = {
                         ctx.drawImage(racehud, handPlacement[i].x, handPlacement[i].y, 334, 203);
                         handList += `(${rarity} ${car["rq"]}) ${make} ${car["model"]} (${car["modelYear"]}) [${currentDeck.hand[i].gearingUpgrade}${currentDeck.hand[i].engineUpgrade}${currentDeck.hand[i].chassisUpgrade}]\n`;
                     }
+					else {
+						handList += "(None)\n"
+					}
                 }
 
                 const attachment = new Discord.MessageAttachment(canvas.toBuffer(), 'deck.png');
                 const deckScreen = new Discord.MessageEmbed()
                     .setColor("#34aeeb")
                     .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                    .setTitle(currentDeck.name)
+                    .setTitle(currentDeck.name + ` (Total RQ: ${totalRQ})`)
                     .setDescription(handList)
                     .attachFiles(attachment)
                     .setImage("attachment://deck.png")
@@ -182,7 +187,7 @@ module.exports = {
                     .setColor("#fc0303")
                     .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                     .setTitle("Error, failed to load in deck.")
-                    .setDescription(`Something must have gone wrong. Please report this issure to the devs. \n${error}`)
+                    .setDescription(`Something must have gone wrong. Please report this issure to the devs. \n\`${error}\``)
                     .setTimestamp()
                 wait.delete();
                 return message.channel.send(errorMessage);

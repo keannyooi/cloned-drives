@@ -18,40 +18,47 @@ module.exports = {
     usage: "<number of rounds> <event name goes here>",
     args: 2,
 	isExternal: false,
-    adminOnly: true,
+    adminOnly: false,
     description: "Creates an event with the name of your choice.",
     async execute(message, args) {
 		const db = message.client.db;
         const events = await db.get("events");
-		const availableRounds = [1, 3, 5, 10];
-
 		let eventName = args.splice(1, args.length).join(" ");
 		let rounds = args[0];
 		let roster = [];
 
-		if (isNaN(args[0]) || availableRounds.find(num => num === parseInt(args[0])) === undefined) {
+		if (!message.member.roles.cache.has("802043346951340064")) {
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+			const errorMessage = new Discord.MessageEmbed()
+				.setColor("#fc0303")
+				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+				.setTitle("Error, you don't have access to this command.")
+				.setDescription("This command is only accessible if you are a part of Community Management.")
+				.setTimestamp();
+			return message.channel.send(errorMessage);
+		}
+
+		if (isNaN(args[0]) || parseInt(args[0]) < 1 || parseInt(args[0]) > 10) {
 			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 			const errorMessage = new Discord.MessageEmbed()
                 .setColor("#fc0303")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                 .setTitle("Error, round amount provided is either not a number or not supported.")
-                .setDescription("Events currently only come in 1, 3, 5 and 10 round packages.")
+                .setDescription("The number of rounds in an event is restricted to 1 ~ 10 rounds.")
                 .setTimestamp();
             return message.channel.send(errorMessage);
 		}
 		rounds = parseInt(rounds);
 
-        for (i = 0; i < events.length; i++) {
-            if (events[i].name === eventName) {
-				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                const errorScreen = new Discord.MessageEmbed()
-                    .setColor("#fc0303")
-                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                    .setTitle("Error, event name already taken.")
-                    .setDescription("Check the list of events using the command `cd-events`.")
-                    .setTimestamp();
-                return message.channel.send(errorScreen);
-            }
+        if (events.findIndex(event => event.name === eventName) > -1) {
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+            const errorScreen = new Discord.MessageEmbed()
+                .setColor("#fc0303")
+                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                .setTitle("Error, event name already taken.")
+                .setDescription("Check the list of events using the command `cd-events`.")
+                .setTimestamp();
+            return message.channel.send(errorScreen);
         }
 
 		let carFile = [];

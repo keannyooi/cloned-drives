@@ -1,0 +1,50 @@
+﻿{
+    "rq": 17,
+    "make": "Pontiac",
+    "model": "Aztek",
+    "modelYear": 2001,
+    "country": "US",
+    "topSpeed": 108,
+    "0to60": 10.0,
+    "handling": 63,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1779,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 23.92,
+    "ola": 70.00,
+    "description": "From breaking bad to breaking down. Card by Andu",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/811523408164290620/Aztek.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/811523502644920330/AztekSt.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/811523509792014356/Aztek1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/811523515479883836/Aztek2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/811523531703451718/Aztek332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/811523522191032361/Aztek323.png",
+    "racehud699": "",
+
+    "333TopSpeed": 111,
+    "3330to60": 9.3,
+    "333Handling": 66,
+
+    "666TopSpeed": 114,
+    "6660to60": 8.6, 
+    "666Handling": 68,
+
+    "996TopSpeed": 117,
+    "9960to60": 7.6,
+    "996Handling": 68,
+
+    "969TopSpeed": 117,
+    "9690to60": 7.9,
+    "969Handling": 70
+}

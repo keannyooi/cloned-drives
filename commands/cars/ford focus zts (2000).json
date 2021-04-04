@@ -5,11 +5,11 @@
     "modelYear": 2000,
     "country": "US",
     "topSpeed": 105,
-    "0to60": 9.6,
-    "handling": 71,
+    "0to60": 9.5,
+    "handling": 73,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": [],
+    "tags": ["2021 Spring Collection"],
     "isPrize": false,
 
     "weight": 1163,
@@ -21,26 +21,26 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 41.65,
-    "ola": 58.64,
+    "ola": 59.26,
     "description": "The highest-trim Focus sedan of the early 2000's. Card by Keanny",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/809666344651194378/ford_focus_zts.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/809666229810757652/focus_zts.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/809666254054621224/focus_zts_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/809666265069125702/focus_zts_666.jpg",
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/811807511552327710/ford_focus_zts.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/811803799719116800/unknown.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/811806406201835570/unknown.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/811806582232711209/unknown.png",
     "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/809666284101959720/focus_zts_969.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/811806619045199872/unknown.png",
     "racehud699": "",
 
     "333TopSpeed": 108,
-    "3330to60": 8.9,
-    "333Handling": 74,
+    "3330to60": 8.8,
+    "333Handling": 76,
 
     "666TopSpeed": 111,
-    "6660to60": 8.2,
-    "666Handling": 76,
+    "6660to60": 8.1,
+    "666Handling": 78,
 
     "969TopSpeed": 114,
-    "9690to60": 7.6,
-    "969Handling": 79
+    "9690to60": 7.5,
+    "969Handling": 81
 }

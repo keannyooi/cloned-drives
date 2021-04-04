@@ -1,0 +1,46 @@
+{
+    "rq": 32,
+    "make": "Ford",
+    "model": "Focus ST170",
+    "modelYear": 2002,
+    "country": "GB",
+    "topSpeed": 132,
+    "0to60": 7.9,
+    "handling": 78,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1283,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 59.85,
+    "ola": 68.35,
+    "description": "A European SVT. Card by keanny",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/812626760926494740/ford_focus_st170.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/812626620267495424/st170.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/812626642006310972/st170_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/812626653636460544/st170_666.jpg",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/812626663379697664/st170_969.jpg",
+    "racehud699": "",
+
+    "333TopSpeed": 136,
+    "3330to60": 7.4,
+    "333Handling": 81,
+
+    "666TopSpeed": 139,
+    "6660to60": 6.9,
+    "666Handling": 83,
+
+    "969TopSpeed": 143,
+    "9690to60": 6.4,
+    "969Handling": 86
+}

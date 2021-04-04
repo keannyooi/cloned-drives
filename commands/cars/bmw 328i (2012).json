@@ -1,5 +1,5 @@
 {
-    "rq": 52,
+    "rq": 54,
     "make": "BMW",
     "model": "328i",
     "modelYear": 2012,
@@ -24,13 +24,13 @@
     "ola": 66.67,
     "description": "",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/785451867664023593/BMW328i.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/783410917492785183/328istock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/783410964896284753/328i1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/783410980515610644/328i2.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/783410985809346601/328iMaxed323.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/811901360743514112/BMW328i.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/811901483301077033/BMW328iSt.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/811901489344806972/BMW328i1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/811901494139420702/BMW328i2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/811901517812465674/BMW328i332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/811901511151517756/BMW328i323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/811901502422646814/BMW328i233.png",
 
     "333TopSpeed": 159,
     "3330to60": 5.1,
@@ -40,7 +40,15 @@
     "6660to60": 4.8,
     "666Handling": 85,
 
+    "996TopSpeed": 169,
+    "9960to60": 4.3,
+    "996Handling": 84,
+
     "969TopSpeed": 168,
     "9690to60": 4.5,
-    "969Handling": 87
+    "969Handling": 87,
+
+    "699TopSpeed": 165,
+    "6990to60": 4.6,
+    "699Handling": 87
 }

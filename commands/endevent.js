@@ -15,7 +15,7 @@ module.exports = {
     usage: "<event name goes here>",
     args: 1,
 	isExternal: false,
-    adminOnly: true,
+    adminOnly: false,
     description: "Ends an ongoing event.",
     async execute(message, args) {
 		const db = message.client.db;
@@ -23,6 +23,17 @@ module.exports = {
             return (reaction.emoji.name === "✅" || reaction.emoji.name === "❎") && user.id === message.author.id;
         };
         let events = await db.get("events");
+
+		if (!message.member.roles.cache.has("802043346951340064")) {
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+			const errorMessage = new Discord.MessageEmbed()
+				.setColor("#fc0303")
+				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+				.setTitle("Error, you don't have access to this command.")
+				.setDescription("This command is only accessible if you are a part of Community Management.")
+				.setTimestamp();
+			return message.channel.send(errorMessage);
+		}
 
 		let eventName = args.join(" ").toLowerCase();
 		const event = events.find(event => {

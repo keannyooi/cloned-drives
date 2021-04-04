@@ -25,86 +25,91 @@ module.exports = {
             return response.author.id === message.author.id;
         };
 
-        var carName = args.map(i => i.toLowerCase());
-        const searchResults = carFiles.filter(function (carFile) {
-            return carName.every(part => carFile.includes(part));
-        });
+		if (args[0].toLowerCase() === "random") {
+			displayInfo(carFiles[Math.floor(Math.random() * carFiles.length)]);
+		}
+		else {
+			let carName = args.map(i => i.toLowerCase());
+			const searchResults = carFiles.filter(function (carFile) {
+				return carName.every(part => carFile.includes(part));
+			});
 
-        if (searchResults.length > 1) {
-            var carList = "";
-            for (i = 1; i <= searchResults.length; i++) {
-                let car = require(`./cars/${searchResults[i - 1]}`);
-				let make = car["make"];
-				if (typeof make === "object") {
-					make = car["make"][0];
+			if (searchResults.length > 1) {
+				let carList = "";
+				for (i = 1; i <= searchResults.length; i++) {
+					let car = require(`./cars/${searchResults[i - 1]}`);
+					let make = car["make"];
+					if (typeof make === "object") {
+						make = car["make"][0];
+					}
+					carList += `${i} - ${make} ${car["model"]} (${car["modelYear"]})\n`;
 				}
-                carList += `${i} - ${make} ${car["model"]} (${car["modelYear"]})\n`;
-            }
 
-            if (carList.length > 2048) {
-				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                const errorMessage = new Discord.MessageEmbed()
-                    .setColor("#fc0303")
-                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                    .setTitle("Error, too many search results.")
-                    .setDescription("Due to Discord's embed limitations, the bot isn't able to show the full list of search results. Try again with a more specific keyword.")
-                    .setTimestamp();
-                return message.channel.send(errorMessage);
-            }
+				if (carList.length > 2048) {
+					message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+					const errorMessage = new Discord.MessageEmbed()
+						.setColor("#fc0303")
+						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+						.setTitle("Error, too many search results.")
+						.setDescription("Due to Discord's embed limitations, the bot isn't able to show the full list of search results. Try again with a more specific keyword.")
+						.setTimestamp();
+					return message.channel.send(errorMessage);
+				}
 
-            const infoScreen = new Discord.MessageEmbed()
-                .setColor("#34aeeb")
-                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle("Multiple cars found, please type one of the following.")
-                .setDescription(carList)
-                .setTimestamp();
+				const infoScreen = new Discord.MessageEmbed()
+					.setColor("#34aeeb")
+					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+					.setTitle("Multiple cars found, please type one of the following.")
+					.setDescription(carList)
+					.setTimestamp();
 
-            message.channel.send(infoScreen).then(currentMessage => {
-                message.channel.awaitMessages(filter, {
-                    max: 1,
-                    time: waitTime,
-                    errors: ["time"]
-                })
-                    .then(collected => {
-						collected.first().delete();
-                        if (isNaN(collected.first().content) || parseInt(collected.first().content) > searchResults.length || parseInt(collected.first().content) < 1) {
+				message.channel.send(infoScreen).then(currentMessage => {
+					message.channel.awaitMessages(filter, {
+						max: 1,
+						time: waitTime,
+						errors: ["time"]
+					})
+						.then(collected => {
+							collected.first().delete();
+							if (isNaN(collected.first().content) || parseInt(collected.first().content) > searchResults.length || parseInt(collected.first().content) < 1) {
+								message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+								const errorMessage = new Discord.MessageEmbed()
+									.setColor("#fc0303")
+									.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+									.setTitle("Error, invalid integer provided.")
+									.setDescription("It looks like your response was either not a number or not part of the selection.")
+									.setTimestamp();
+								return currentMessage.edit(errorMessage);
+							}
+							else {
+								displayInfo(searchResults[parseInt(collected.first().content) - 1], currentMessage);
+							}
+						})
+						.catch(() => {
 							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                            const errorMessage = new Discord.MessageEmbed()
-                                .setColor("#fc0303")
-                                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                                .setTitle("Error, invalid integer provided.")
-                                .setDescription("It looks like your response was either not a number or not part of the selection.")
-                                .setTimestamp();
-                            return currentMessage.edit(errorMessage);
-                        }
-                        else {
-                            displayInfo(searchResults[parseInt(collected.first().content) - 1], currentMessage);
-                        }
-                    })
-                    .catch(() => {
-						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                        const cancelMessage = new Discord.MessageEmbed()
-                            .setColor("#34aeeb")
-                            .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                            .setTitle("Action cancelled automatically.")
-                            .setTimestamp();
-                        return currentMessage.edit(cancelMessage);
-                    });
-            });
-        }
-        else if (searchResults.length > 0) {
-            displayInfo(searchResults[0]);
-        }
-        else {
-			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-            const errorMessage = new Discord.MessageEmbed()
-                .setColor("#fc0303")
-                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle("Error, car requested not found.")
-                .setDescription("Well that sucks.")
-                .setTimestamp();
-            return message.channel.send(errorMessage);
-        }
+							const cancelMessage = new Discord.MessageEmbed()
+								.setColor("#34aeeb")
+								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+								.setTitle("Action cancelled automatically.")
+								.setTimestamp();
+							return currentMessage.edit(cancelMessage);
+						});
+				});
+			}
+			else if (searchResults.length > 0) {
+				displayInfo(searchResults[0]);
+			}
+			else {
+				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+				const errorMessage = new Discord.MessageEmbed()
+					.setColor("#fc0303")
+					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+					.setTitle("Error, car requested not found.")
+					.setDescription("Well that sucks.")
+					.setTimestamp();
+				return message.channel.send(errorMessage);
+			}
+		}
 
         async function displayInfo(car, currentMessage) {
 			let garage = await message.client.db.get(`acc${message.author.id}.garage`);

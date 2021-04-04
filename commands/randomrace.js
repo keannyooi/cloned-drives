@@ -128,7 +128,7 @@ module.exports = {
 											}
 										}
 										else {
-											if (value !== test[`${key}`]) {
+											if (value.toLowerCase() !== test[`${key}`].toLowerCase()) {
 												passed = false;
 											}
 										}
@@ -144,7 +144,7 @@ module.exports = {
 							}
 							if (!passed) {
 								message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-								intermission.setTitle("Your hand does not meet the event's requirements.");
+								intermission.setTitle("Your hand does not meet the random race's requirements.");
 								return reactionMessage.edit(intermission);
 							}
 							
@@ -300,6 +300,9 @@ module.exports = {
 				let reqs = ["tyreType", "driveType", "enginePos"];
 				let req = reqs[Math.floor(Math.random() * reqs.length)];
 				let reqCar = require(`./cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
+				if (reqCar[req].toLowerCase() === "Mixed") {
+					reqCar = require(`./cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
+				}
 				criteria[req] = reqCar[req];
 			}
 			else if (playerData.rrWinStreak > 125 && playerData.rrWinStreak <= 175) {

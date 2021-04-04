@@ -1,5 +1,5 @@
-﻿{
-    "rq": 62,
+{
+    "rq": 61,
     "make": "BMW",
     "model": "330i",
     "modelYear": 2019,
@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
 
     "weight": 1470,
     "gc": "Medium",
@@ -25,7 +24,6 @@
     "ola": 70.37,
     "description": "The cheaper alternative to the M3 in its latest form. Card by Havvy",
 
-
     "card": "https://cdn.discordapp.com/attachments/715782088271331398/810996044325453864/330i.png",
     "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/810996526444445696/330iSt.png",
     "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/810996553543712848/330i1.png",
@@ -34,26 +32,13 @@
     "racehud969": "",
     "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/810996553748578334/330i233.png",
 
-
     "333TopSpeed": 159,
     "3330to60": 5.1,
     "333Handling": 89,
 
-
     "666TopSpeed": 163,
     "6660to60": 4.8,
     "666Handling": 92,
-
-
-    "996TopSpeed": 0,
-    "9960to60": 0,
-    "996Handling": 0,
-
-
-    "969TopSpeed": 0,
-    "9690to60": 0,
-    "969Handling": 0,
-
 
     "699TopSpeed": 165,
     "6990to60": 4.5,

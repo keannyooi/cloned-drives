@@ -1,4 +1,4 @@
-﻿{
+{
     "rq": 17,
     "make": "Daewoo",
     "model": "Lanos SX",
@@ -9,9 +9,8 @@
     "handling": 68,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Year of the Ox"],
+    "tags": [],
     "isPrize": false,
-
 
     "weight": 1021,
     "gc": "Medium",
@@ -25,7 +24,6 @@
     "ola": 59.91,
     "description": "The second coming of a car that is running and going. Card by Andu",
 
-
     "card": "https://media.discordapp.net/attachments/715782088271331398/807640908945555496/DaewooLanossex.png?width=1154&height=719",
     "racehud000": "https://media.discordapp.net/attachments/718097267621363744/807641034888445982/LanosSex.png",
     "racehud333": "https://media.discordapp.net/attachments/718097267621363744/807641040822599740/LanosSex1.png",
@@ -34,28 +32,19 @@
     "racehud969": "https://media.discordapp.net/attachments/718097267621363744/807641050776338474/LanosSex323.png",
     "racehud699": "",
 
-
     "333TopSpeed": 117,
     "3330to60": 10.5,
     "333Handling": 71,
-
 
     "666TopSpeed": 120,
     "6660to60": 9.6, 
     "666Handling": 73,
 
-
     "996TopSpeed": 123,
     "9960to60": 8.6,
     "996Handling": 73,
 
-
     "969TopSpeed": 123,
     "9690to60": 8.8,
-    "969Handling": 75,
-
-
-    "699TopSpeed": 0,
-    "6990to60": 0,
-    "699Handling": 0
+    "969Handling": 75
 }

@@ -18,7 +18,7 @@ module.exports = {
 	usage: "<event name> | <criteria> | <value>",
 	args: 2,
 	isExternal: false,
-	adminOnly: true,
+	adminOnly: false,
 	description: "Edits an event.",
 	async execute(message, args) {
 		const db = message.client.db;
@@ -29,6 +29,17 @@ module.exports = {
 		const filter = response => {
             return response.author.id === message.author.id;
         };
+
+		if (!message.member.roles.cache.has("802043346951340064")) {
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+			const errorMessage = new Discord.MessageEmbed()
+				.setColor("#fc0303")
+				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+				.setTitle("Error, you don't have access to this command.")
+				.setDescription("This command is only accessible if you are a part of Community Management.")
+				.setTimestamp();
+			return message.channel.send(errorMessage);
+		}
 
 		const searchResults = events.filter(function(event) {
 			return event.name.toLowerCase().includes(keyword);
@@ -453,6 +464,111 @@ module.exports = {
 								return message.channel.send(errorMessage);
 							}
 							break;
+						case "car":
+							let carName = args.slice(4, args.length).map(i => i.toLowerCase());
+							let searchResults = new Set(carFiles);
+							searchResults.forEach(function(car) {
+								if (carName.every(part => car.includes(part)) === false) {
+									searchResults.delete(car);
+								}
+							});
+
+							if (searchResults.size > 1) {
+								let carList = "";
+								let redirect = [];
+								let i = 1;
+								searchResults.forEach(function(thing) {
+									const car = require(`./cars/${thing}`);
+									let make = car["make"];
+									if (typeof make === "object") {
+										make = car["make"][0];
+									}
+									carList += `${i} - ${make} ${car["model"]} (${car["modelYear"]})\n`;
+									redirect[i - 1] = thing;
+									i++;
+								});
+
+								if (carList.length > 2048) {
+									message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+									const errorMessage = new Discord.MessageEmbed()
+										.setColor("#fc0303")
+										.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+										.setTitle("Error, too many search results.")
+										.setDescription("Due to Discord's embed limitations, the bot isn't able to show the full list of search results. Try again with a more specific keyword.")
+										.setTimestamp();
+									return message.channel.send(errorMessage);
+								}
+
+								const infoScreen = new Discord.MessageEmbed()
+									.setColor("#34aeeb")
+									.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+									.setTitle("Multiple cars found, please type one of the following.")
+									.setDescription(carList);
+
+								if (currentMessage) {
+									await currentMessage.edit(infoScreen);
+								}
+								else {
+									await message.channel.send(infoScreen);
+								}
+								await message.channel.awaitMessages(filter, {
+									max: 1,
+									time: 60000,
+									errors: ["time"]
+								})
+									.then(collected => {
+										collected.first().delete();
+										if (isNaN(collected.first().content) || parseInt(collected.first().content) > searchResults.size || parseInt(collected.first().content) < 1) {
+											message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+											const errorMessage = new Discord.MessageEmbed()
+												.setColor("#fc0303")
+												.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+												.setTitle("Error, invalid integer provided.")
+												.setDescription("It looks like your response was either not a number or not part of the selection.")
+												.setTimestamp();
+											return currentMessage.edit(errorMessage);
+										}
+										else {
+											currentEvent.roster[index - 1].requirements[req] = redirect[parseInt(collected.first().content) - 1];
+										}
+									})
+									.catch(() => {
+										message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+										const cancelMessage = new Discord.MessageEmbed()
+											.setColor("#34aeeb")
+											.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+											.setTitle("Action cancelled automatically.")
+											.setTimestamp();
+										return currentMessage.edit(cancelMessage);
+									});
+							}
+							else if (searchResults.size > 0) {
+								currentEvent.roster[index - 1].requirements[req] = Array.from(searchResults)[0];
+							}
+							else {
+								message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+								const errorMessage = new Discord.MessageEmbed()
+									.setColor("#fc0303")
+									.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+									.setTitle("Error, car requested not found.")
+									.setDescription("Well that sucks.")
+									.setTimestamp();
+								return message.channel.send(errorMessage);
+							}
+							
+							let cardThing = require(`./cars/${currentEvent.roster[index - 1].requirements[req]}`);
+							let make = cardThing["make"];
+							if (typeof make === "object") {
+								make = cardThing["make"][0];
+							}
+							infoScreen = new Discord.MessageEmbed()
+								.setColor("#03fc24")
+								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+								.setTitle(`Successfully added a \`${req}\` criteria to roster position ${i}!`)
+								.setDescription(`${make} ${cardThing["model"]} (${cardThing["modelYear"]})`)
+								.setImage(cardThing["card"])
+								.setTimestamp();
+							break;
 						default:
 							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 							const errorScreen = new Discord.MessageEmbed()
@@ -471,12 +587,23 @@ module.exports = {
 											\`enginepos\` - Filter by engine position.
 											\`fueltype\` - Filter by fuel type.
 											\`isprize\` - Filter prize cars.
-											\`tag\` - Filter by tag.`)
+											\`tag\` - Filter by tag.
+											\`car\` - Filter by exact car.`)
 								.setTimestamp();
 							return message.channel.send(errorScreen);
 					}
 					break;
 				case "removereq":
+					if (!args[3]) {
+						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+						let errorMessage = new Discord.MessageEmbed()
+							.setColor("#fc0303")
+							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+							.setTitle("Error, requirement criteria not provided.")
+							.setDescription("Provide one, please.")
+							.setTimestamp();
+						return message.channel.send(errorMessage);
+					}
 					let rReq = args[3].toLowerCase();
 					let hasReq = false;
 					for (let [key, value] of Object.entries(currentEvent.roster[index - 1].requirements)) {
@@ -507,7 +634,8 @@ module.exports = {
 											\`enginepos\` - Filter by engine position.
 											\`fueltype\` - Filter by fuel type.
 											\`isprize\` - Filter prize cars.
-											\`tag\` - Filter by tag.  
+											\`tag\` - Filter by tag. 
+											\`car\` - Filter by exact car.  
 											\`all\` - Removes all filters.`)
 							.setTimestamp();
 						return message.channel.send(errorScreen);
@@ -611,18 +739,28 @@ module.exports = {
 						.setTimestamp();
 					break;
 				case "setreward":
+					if (!args[3]) {
+						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+						let errorMessage = new Discord.MessageEmbed()
+							.setColor("#fc0303")
+							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+							.setTitle("Error, reward criteria not provided.")
+							.setDescription("Provide one, please.")
+							.setTimestamp();
+						return message.channel.send(errorMessage);
+					}
 					let rewardType = args[3].toLowerCase();
 					switch (rewardType) {
 						case "money":
 						case "fusetokens":
 						case "trophies":
 							let amount = args[4];
-							if (isNaN(amount) || parseInt(amount) < 0) {
+							if (isNaN(amount) || parseInt(amount) < 0 || (parseInt(amount) === 0 && rewardType !== "trophies")) {
 								message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 								const errorMessage = new Discord.MessageEmbed()
 									.setColor("#fc0303")
 									.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-									.setTitle("Error, amount provided is either not a number or less than 0.")
+									.setTitle("Error, amount provided is either not a number or less than 1.")
 									.setDescription("This amount should always be a positive number, i.e: `4`, `20`, etc. 0 is only for deleting the reward for trophies.")
 									.setTimestamp();
 								return message.channel.send(errorMessage);
@@ -878,50 +1016,119 @@ module.exports = {
 							return message.channel.send(errorScreen);
 					}
 					break;
-				case "regenrounds":
-					let randomizeType = args[2].toLowerCase();
-					let carFile = [], tracks = [];
+				case "regentracks":
+					if (!args[2])  {
+						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+						let errorMessage = new Discord.MessageEmbed()
+							.setColor("#fc0303")
+							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+							.setTitle("Error, track regeneration criteria not provided.")
+							.setDescription("Provide one, please.")
+							.setTimestamp();
+						return message.channel.send(errorMessage);
+					}
+					let randomizeType = args[2].toLowerCase(), f;
 					switch (randomizeType) {
 						case "asphalt":
-							let f = tracksets.filter(track => {
+							f = tracksets.filter(track => {
 								return track.includes("(rainy)") || !track.includes("(");
 							});
-							for (i = 0; i < currentEvent.roster.length; i++) {
-								carFile[i] = carFiles[Math.floor(Math.random() * carFiles.length)];
-								tracks[i] = f[Math.floor(Math.random() * f.length)];
-							}
 							break;
 						case "dirt":
-							let f1 = carFiles.filter(car => {
-								let c = require(`./cars/${car}`);
-								return c["tyreType"] === "Standard" || c["tyreType"] === "All-Surface" || c["tyreType"] === "Off-Road";
-							});
-							let f2 = tracksets.filter(track => {
+							f = tracksets.filter(track => {
 								return track.includes("(muddy)") || track.includes("(dirt)") || track.includes("(gravel)") || track.includes("(rainy gravel)");
 							});
-							for (i = 0; i < currentEvent.roster.length; i++) {
-								carFile[i] = f1[Math.floor(Math.random() * f1.length)];
-								tracks[i] = f2[Math.floor(Math.random() * f2.length)];
-							}
 							break;
 						case "snow":
-							let f3 = carFiles.filter(car => {
-								let c = require(`./cars/${car}`);
-								return c["tyreType"] === "Standard" || c["tyreType"] === "All-Surface" || c["tyreType"] === "Off-Road";
-							});
-							let f4 = tracksets.filter(track => {
+							f = tracksets.filter(track => {
 								return track.includes("(snowy)") || track.includes("(ice)");
 							});
-							for (i = 0; i < currentEvent.roster.length; i++) {
-								carFile[i] = f3[Math.floor(Math.random() * f3.length)];
-								tracks[i] = f4[Math.floor(Math.random() * f4.length)];
-							}
 							break;
 						default:
-							break;
+							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+							const errorScreen = new Discord.MessageEmbed()
+								.setColor("#fc0303")
+								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+								.setTitle("Error, track regeneration criteria not found.")
+								.setDescription(`Here is a list of track regeneration criterias. 
+											\`asphalt\` - Generates asphalt tracksets.
+											\`dirt\` - Generates dirt tracksets.
+											\`snow\` - Generates snow tracksets.`)
+								.setTimestamp();
+							return message.channel.send(errorScreen);
+					}
+					for (i = 0; i < currentEvent.roster.length; i++) {
+						currentEvent.roster[i].trackset = f[Math.floor(Math.random() * f.length)];
 					}
 
-					carFile.sort(function (a, b) {
+					infoScreen = new Discord.MessageEmbed()
+						.setColor("#03fc24")
+						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+						.setTitle(`Successfully regenerated tracksets for the ${currentEvent.name} event!`)
+						.setTimestamp();
+					break;
+				case "regenopponents":
+					let regenSelect = carFiles;
+					const carFilter = await db.get(`acc${message.author.id}.filter`);
+					if (carFilter !== null) {
+						for (const [key, value] of Object.entries(carFilter)) {
+							switch (typeof value) {
+								case "object":
+									if (Array.isArray(value)) {
+										regenSelect = regenSelect.filter(function (carFile) {
+											let currentCar = require(`./cars/${carFile}`);
+											if (Array.isArray(currentCar[key])) {
+												let obj = {};
+												currentCar[key].forEach((tag, index) => obj[tag.toLowerCase()] = index);
+												return value.every(tagFilter => { return obj[tagFilter] !== undefined });
+											}
+											else {
+												return value.includes(currentCar[key].toLowerCase());
+											}
+										});
+									}
+									else {
+										regenSelect = regenSelect.filter(function (carFile) {
+											let currentCar = require(`./cars/${carFile}`);
+											return currentCar[key] >= value.start && currentCar[key.replace("count", "Count").replace("y", "Y")] <= value.end;
+										});
+									}
+									break;
+								case "string":
+									regenSelect = regenSelect.filter(function (carFile) {
+										let currentCar = require(`./cars/${carFile}`);
+										return currentCar[key].toLowerCase() === value;
+									});
+									break;
+								case "boolean":
+									if (key === "isPrize") {
+										regenSelect = regenSelect.filter(function (carFile) {
+											let currentCar = require(`./cars/${carFile}`);
+											return currentCar[key] === value;
+										});
+									}
+									break;
+								default:
+									break;
+							}
+						}
+					}
+					if (regenSelect.length < 1) {
+						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+						const errorScreen = new Discord.MessageEmbed()
+							.setColor("#fc0303")
+							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+							.setTitle("Error, it looks like there are no cars available with your filter settings.")
+							.setDescription("Check your filter settings using `cd-filter view`.")
+							.setTimestamp();
+						return message.channel.send(errorScreen);
+					}
+
+					const opponents = [];
+					for (let x = 0; x < currentEvent.roster.length; x++) {
+						opponents[x] = regenSelect[Math.floor(Math.random() * regenSelect.length)];
+					}
+					opponents.sort(function (a, b) {
 						const carA = require(`./cars/${a}`);
 						const carB = require(`./cars/${b}`);
 
@@ -955,7 +1162,7 @@ module.exports = {
 						}
 					});
 
-					for (x = 0; x < currentEvent.roster.length; x++) {
+					for (let x = 0; x < currentEvent.roster.length; x++) {
 						let upgradeIndex = Math.floor(Math.random() * 4);
 						let upgradePattern = [0, 0, 0];
 						switch (upgradeIndex) {
@@ -970,7 +1177,7 @@ module.exports = {
 							case 3:
 								let maxedTunes = [996, 969, 699];
 								let i = Math.floor(Math.random() * maxedTunes.length);
-								let car = require(`./cars/${carFile[x]}`);
+								let car = require(`./cars/${opponents[x]}`);
 								while (!car[`${maxedTunes[i]}TopSpeed`]) {
 									i = Math.floor(Math.random() * maxedTunes.length);
 								}
@@ -979,21 +1186,16 @@ module.exports = {
 							default:
 								break;
 						}
-						currentEvent.roster[x] = ({
-							car: carFile[x],
-							gearingUpgrade: upgradePattern[0],
-							engineUpgrade: upgradePattern[1],
-							chassisUpgrade: upgradePattern[2],
-							trackset: tracks[x],
-							requirements: currentEvent.roster[x].requirements,
-							reward: currentEvent.roster[x].reward
-						});
+						currentEvent.roster[x].car = opponents[x];
+						currentEvent.roster[x].gearingUpgrade = upgradePattern[0];
+						currentEvent.roster[x].engineUpgrade = upgradePattern[1];
+						currentEvent.roster[x].chassisUpgrade = upgradePattern[2];
 					}
 
 					infoScreen = new Discord.MessageEmbed()
 						.setColor("#03fc24")
 						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-						.setTitle(`Successfully regenerated opponents and tracksets for the ${currentEvent.name} event!`)
+						.setTitle(`Successfully regenerated opponents for the ${currentEvent.name} event!`)
 						.setTimestamp();
 					break;
 				default:
@@ -1011,7 +1213,8 @@ module.exports = {
 									\`settune\` - Sets the tune for the opponent's car.
 									\`addreq\` - Adds a requirement to a round.
 									\`removereq\` - Removes a requirement from a round.
-									\`regenrounds\` - Regenrates opponents and tracksets for every single round of an event.`)
+									\`regentracks\` - Regenerates tracksets for every single round of an event.
+									\`regenopponents\` - Regenerates opponents for every single round of an event.`)
 						.setTimestamp();
 					return message.channel.send(errorScreen);
 			}

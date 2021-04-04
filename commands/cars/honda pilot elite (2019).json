@@ -1,0 +1,61 @@
+﻿{
+    "rq": 59,
+    "make": "Honda",
+    "model": "Pilot Elite",
+    "modelYear": 2019,
+    "country": "JP",
+    "topSpeed": 113,
+    "0to60": 6.3,
+    "handling": 73,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1964,
+    "gc": "Medium",
+    "seatCount":7,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 57.27,
+    "ola": 69.31,
+    "description": "VTEC powaahh makes for a seriously quick soccer mom mobile. Card by ChickenMcNuggets",
+
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/811775334147555328/pilot_hopefully.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/811741687742595112/pilot_stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/811741722111508500/pilot_1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/811741757443539025/pilot_2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/811741828293460018/pilot_332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/811741792084557834/pilot_323.png",
+    "racehud699": "",
+
+
+    "333TopSpeed": 119,
+    "3330to60": 5.8,
+    "333Handling": 75,
+
+
+    "666TopSpeed": 122,
+    "6660to60": 5.3, 
+    "666Handling": 77,
+
+
+    "996TopSpeed": 126,
+    "9960to60": 4.8,
+    "996Handling": 77,
+
+
+    "969TopSpeed": 125,
+    "9690to60": 5.0,
+    "969Handling": 80,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

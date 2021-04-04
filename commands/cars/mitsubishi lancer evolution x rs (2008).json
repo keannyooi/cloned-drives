@@ -1,0 +1,46 @@
+{
+    "rq": 75,
+    "make": "Mitsubishi",
+    "model": "Lancer Evolution X RS",
+    "modelYear": 2008,
+    "country": "JP",
+    "topSpeed": 155,
+    "0to60": 4.9,
+    "handling": 90,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer"],
+    "isPrize": false,
+
+    "weight": 1420,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 70.00,
+    "ola": 73.47,
+    "description": "The RS stands for Ralli Sport. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/812031036162179123/evoxrs.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/812031669783494686/evoxrs.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/812031684647583815/evoxrs333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/812031701999157268/evoxrs666.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/812031719947501631/evoxrs969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 159,
+    "3330to60": 4.6,
+    "333Handling": 93,
+
+    "666TopSpeed": 163,
+    "6660to60": 4.3,
+    "666Handling": 96,
+
+    "969TopSpeed": 165,
+    "9690to60": 4.0,
+    "969Handling": 100
+}

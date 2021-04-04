@@ -1,0 +1,46 @@
+{
+    "rq": 72,
+    "make": "Mitsubishi",
+    "model": "Lancer Evolution X MR",
+    "modelYear": 2008,
+    "country": "JP",
+    "topSpeed": 150,
+    "0to60": 5.0,
+    "handling": 86,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer"],
+    "isPrize": false,
+
+    "weight": 1640,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 58.82,
+    "ola": 76.00,
+    "description": "MR more like NO. Card by Bnuuy",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/812030874308182046/EVOXMR.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/812031385651904543/evoxmr.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/812031396230463499/evoxmr333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/812031409300176906/evoxmr666.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/812031432062926939/evoxmr969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 154,
+    "3330to60": 4.7,
+    "333Handling": 89,
+
+    "666TopSpeed": 158,
+    "6660to60": 4.4,
+    "666Handling": 92,
+
+    "969TopSpeed": 160,
+    "9690to60": 4.1,
+    "969Handling": 95
+}

@@ -1,0 +1,50 @@
+{
+    "rq": 57,
+    "make": "Toyota",
+    "model": "Supra Turbo Automatic",
+    "modelYear": 1994,
+    "country": "JP",
+    "topSpeed": 155,
+    "0to60": 5.7,
+    "handling": 83,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer"],
+    "isPrize": false,
+
+    "weight": 1600,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 81.43,
+    "ola": 85.00,
+    "description": "Card by Connor.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/813318879844499466/B.ToyotaSupraRZAT.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/813319002369687572/B.ToyotaSupraRTAT.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/813319025899733002/B.ToyotaSupraRTAT-1star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/813319053733003274/B.ToyotaSupraRTAT-2star.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/813319095139041280/B.ToyotaSupraRTAT-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/813319076805345290/B.ToyotaSupraRTAT-969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 158,
+    "3330to60": 5.5,
+    "333Handling": 86,
+
+    "666TopSpeed": 161,
+    "6660to60": 5.1,
+    "666Handling": 89,
+
+    "996TopSpeed": 165,
+    "9960to60": 4.7,
+    "996Handling": 90,
+
+    "969TopSpeed": 163,
+    "9690to60": 4.8,
+    "969Handling": 92
+}

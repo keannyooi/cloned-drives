@@ -1,0 +1,46 @@
+{
+    "rq": 55,
+    "make": "Lexus",
+    "model": "ES 350 F Sport",
+    "modelYear": 2019,
+    "country": "JP",
+    "topSpeed": 135,
+    "0to60": 5.8,
+    "handling": 77,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1710,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 72.29,
+    "ola": 86.67,
+    "description": "The same sedan, now with added spindle grille and less weight. Card by Macan.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/812827187275235330/ES_350_F_Sport_19.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/812827893498380298/Lexus_ES_350_F_Sport_2019_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/812827899522318336/Lexus_ES_350_F_Sport_2019_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/812827907482189834/Lexus_ES_350_F_Sport_2019_666.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/812827914675814400/Lexus_ES_350_F_Sport_2019_969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 139,
+    "3330to60": 5.5,
+    "333Handling": 80,
+
+    "666TopSpeed": 142,
+    "6660to60": 5.1,
+    "666Handling": 82,
+
+    "969TopSpeed": 146,
+    "9690to60": 4.8,
+    "969Handling": 85
+}

@@ -1,0 +1,50 @@
+{
+    "rq": 68,
+    "make": "Lexus",
+    "model": "LF-A Concept",
+    "modelYear": 2005,
+    "country": "JP",
+    "topSpeed": 200,
+    "0to60": 4.7,
+    "handling": 86,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Concept"],
+    "isPrize": false,
+
+    "weight": 1700,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 104.44,
+    "ola": 80.00,
+    "description": "The first look at the LFA 5 years before the prodution car would release. Card by Bnuuy",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/813397687185178644/LF-Aconcept05.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/813398691284910080/lfaconcept.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/813398705939939328/lfaconcept333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/813398717914677248/lfaconcept666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/813398755273080852/lfaconcept996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/813398737371136000/lfaconcept969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 202,
+    "3330to60": 4.4,
+    "333Handling": 89,
+
+    "666TopSpeed": 204,
+    "6660to60": 4.2,
+    "666Handling": 92,
+
+    "996TopSpeed": 207,
+    "9960to60": 3.8,
+    "996Handling": 93,
+
+    "969TopSpeed": 205,
+    "9690to60": 3.9,
+    "969Handling": 95
+}

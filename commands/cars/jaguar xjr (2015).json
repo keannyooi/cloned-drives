@@ -12,7 +12,7 @@
     "tags": [],
     "isPrize": false,
 
-    "weight": 0,
+    "weight": 1790,
     "gc": "Low",
     "seatCount": 5,
     "bodyStyle": "Sedan",
@@ -21,7 +21,7 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 86.71,
-    "ola": 87.1,
+    "ola": 87.10,
     "description": "Card by Havvy.",
 
     "card": "https://cdn.discordapp.com/attachments/715782088271331398/803320751653650462/JaguarXJR.png",
@@ -46,9 +46,5 @@
 
     "969TopSpeed": 186,
     "9690to60": 3.5,
-    "969Handling": 90,
-
-    "699TopSpeed": 0,
-    "6990to60": 0,
-    "699Handling": 0
+    "969Handling": 90
 }

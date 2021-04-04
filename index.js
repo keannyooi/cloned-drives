@@ -93,15 +93,15 @@ client.once("ready", async () => {
 			console.log(user.id);
 		}
 		//for changing stuff in the database
-		const garage = await client.db.get(`acc${user.id}.garage`);
-		var i = 0;
-		while (i < garage.length) {
-			if (garage[i].carFile === "acura nsx (1990).json") {
-				garage[i].carFile = "acura nsx (1991).json";
-			}
-			i++;
-		}
-		await client.db.set(`acc${user.id}.garage`, garage);
+		//const garage = await client.db.get(`acc${user.id}.garage`);
+		//var i = 0;
+		//while (i < garage.length) {
+		//	if (garage[i].carFile === "lexus ls 400 f sport awd (2013).json") {
+		//		garage[i].carFile = "lexus ls 460 f sport awd (2013).json";
+		//	}
+		//	i++;
+		//}
+		//await client.db.set(`acc${user.id}.garage`, garage);
 	});
 	const catalog = await client.db.get("dealershipCatalog");
 	console.log(catalog);
@@ -201,6 +201,7 @@ client.on("message", async message => {
 
 	try {
 		if (client.execList.indexOf(message.author.id) < 0) {
+			//console.log(client.execList);
 			client.execList.push(message.author.id);
 			await command.execute(message, args);
 			setTimeout(() => {
@@ -250,7 +251,7 @@ client.on("messageUpdate", async (oldMessage, newMessage) => {
 	if (!command) {
 		const errorMessage = new Discord.MessageEmbed()
 			.setColor("#fc0303")
-			.setAuthor(newMessage.author.author.tag, newMessage.author.author.displayAvatarURL({ format: "png", dynamic: true }))
+			.setAuthor(newMessage.author.tag, newMessage.author.displayAvatarURL({ format: "png", dynamic: true }))
 			.setTitle("Error, 404 command not found.")
 			.setDescription("It looks like this command doesn't exist. Try using `cd-help` to find the command you are looking for.")
 			.setTimestamp();
@@ -318,4 +319,4 @@ client.on("messageUpdate", async (oldMessage, newMessage) => {
 			.setTimestamp();
 		return newMessage.channel.send(errorMessage);
 	}
-});
+}); 

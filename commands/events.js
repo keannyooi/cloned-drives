@@ -63,9 +63,9 @@ module.exports = {
                     .setTimestamp();
                 return message.channel.send(errorMessage);
             }
-			//console.log(event);
+			console.log(event);
 			
-			if (event.isActive || message.member.roles.cache.has("711790752853655563")) {
+			if (event.isActive || message.member.roles.cache.has("802043346951340064")) {
 				const wait = await message.channel.send("**Loading event display, this may take a while... (please wait)**");
 				const infoScreen = new Discord.MessageEmbed()
 					.setColor("#34aeeb")
@@ -92,7 +92,17 @@ module.exports = {
 								break;
 							case "boolean":
 							case "string":
-								reqString += `\`${key}: ${value}\`, `;
+								if (key === "car") {
+									let reqCar = require(`./cars/${value}`);
+									let reqMake = reqCar["make"];
+									if (typeof reqMake === "object") {
+										reqMake = reqCar["make"][0];
+									}
+									reqString += `\`${key}: ${reqMake} ${reqCar["model"]} (${reqCar["modelYear"]})\`, `;
+								}
+								else {
+									reqString += `\`${key}: ${value}\`, `;
+								}
 								break;
 							default:
 								break;
@@ -225,7 +235,7 @@ module.exports = {
 					.setColor("#fc0303")
 					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 					.setTitle("Error, this event is not viewable yet.")
-					.setDescription("The event you are trying to view is not active currently. This is only bypassable if you are an Admin.")
+					.setDescription("The event you are trying to view is not active currently. This is only bypassable if you are a part of Community Management.")
 					.setTimestamp();
 				return message.channel.send(errorMessage);
 			}

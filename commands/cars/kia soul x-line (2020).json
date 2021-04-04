@@ -1,0 +1,54 @@
+{
+    "rq": 39,
+    "make": "Kia",
+    "model": "Soul X-Line",
+    "modelYear": 2020,
+    "country": "KR",
+    "topSpeed": 120,
+    "0to60": 7.8,
+    "handling": 79,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Rest of the World"],
+    "isPrize": false,
+
+    "weight": 1290,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 46.44,
+    "ola": 81.70,
+    "description": "Kia's funk recipe guarantees civilized fun. Card by Exist",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/812454354891571220/CD_Kia_Soul_X-Line.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/812454101940961350/CD_Kia_Soul_X-Line_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/812454111651954728/CD_Kia_Soul_X-Line_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/812454121235283978/CD_Kia_Soul_X-Line_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/812454148434952212/CD_Kia_Soul_X-Line_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/812454139292418058/CD_Kia_Soul_X-Line_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/812454132329087006/CD_Kia_Soul_X-Line_699.png",
+
+    "333TopSpeed": 124,
+    "3330to60": 7.3,
+    "333Handling": 82,
+
+    "666TopSpeed": 128,
+    "6660to60": 6.9,
+    "666Handling": 84,
+
+	"996TopSpeed": 134,
+    "9960to60": 6.2,
+    "996Handling": 85,
+
+    "969TopSpeed": 133,
+    "9690to60": 6.4,
+    "969Handling": 87,
+
+	"699TopSpeed": 130,
+    "6990to60": 6.4,
+    "699Handling": 88
+}

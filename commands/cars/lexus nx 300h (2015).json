@@ -1,0 +1,46 @@
+{
+    "rq": 27,
+    "make": "Lexus",
+    "model": "NX 300h",
+    "modelYear": 2015,
+    "country": "JP",
+    "topSpeed": 117,
+    "0to60": 8.3,
+    "handling": 69,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1818,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 58.45,
+    "ola": 82.40,
+    "description": "Hybrid utility, now in personal size. Card by Macan.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/812827306783014932/NX_300h_15.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/812828402767757332/Lexus_NX_300h_2015_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/812828415530238002/Lexus_NX_300h_2015_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/812828418999058442/Lexus_NX_300h_2015_666.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/812828425718202408/Lexus_NX_300h_2015_969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 120,
+    "3330to60": 7.7,
+    "333Handling": 71,
+
+    "666TopSpeed": 124,
+    "6660to60": 7.2,
+    "666Handling": 74,
+
+    "969TopSpeed": 127,
+    "9690to60": 6.6,
+    "969Handling": 76
+}

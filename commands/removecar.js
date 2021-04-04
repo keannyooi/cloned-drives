@@ -127,7 +127,12 @@ module.exports = {
 		async function getCar(user, currentMessage) {
 			const playerData = await db.get(`acc${user.id}`);
 			const garage = playerData.garage;
-			if (garage.length <= 5) {
+			let garageLength = 0;
+
+			for (let car of garage) {
+				garageLength += car["000"] + car["333"] + car["666"] + car["996"] + car["969"] + car["699"];
+			}
+			if (garageLength <= 5) {
 				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 				const errorMessage = new Discord.MessageEmbed()
 					.setColor("#fc0303")
@@ -298,7 +303,7 @@ module.exports = {
 							return upgradeMessage.edit(errorMessage);
 						}
 						else {
-							removeCar(user, currentCar, amount, collected.first().content, upgradeMessage);
+							removeCar(user, playerData, currentCar, amount, collected.first().content, upgradeMessage);
 						}
 					})
 					.catch(() => {
@@ -356,6 +361,14 @@ module.exports = {
 								if (playerData.hand.carFile === currentCar.carFile) {
                    					delete playerData.hand;
                 				}
+							}
+							for (i = 0; i < playerData.decks.length; i++) {
+								for (x = 0; x < playerData.decks[i].hand.length; x++) {
+									let car = playerData.decks[i].hand[x];
+									if (car.carFile === currentCar.carFile && `${car.gearingUpgrade}${car.engineUpgrade}${car.chassisUpgrade}` === upgrade) {
+										playerData.decks[i].hand[x] = "None";
+									}
+								}
 							}
 
 							let remove = playerData.garage.find(garageCar => {

@@ -1,0 +1,61 @@
+﻿{
+    "rq": 37,
+    "make": "Mazda",
+    "model": "MX-5 Roadster",
+    "modelYear": 2006,
+    "country": "JP",
+    "topSpeed": 131,
+    "0to60": 6.9,
+    "handling": 80,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["2021 Spring Collection", "Cutie"],
+    "isPrize": false,
+
+
+    "weight": 1133,
+    "gc": "Low",
+    "seatCount":2,
+    "bodyStyle": "Roadster",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 51.11,
+    "ola": 62.32,
+    "description": "This MX-5 is now bigger, heavier and more grownup but still handles as well as the original did. Card by Spence",
+
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/812183954291294208/image0.jpg",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/813411806399168633/image0.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/813411820127649802/image0.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/813411835483127848/image0.jpg",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/813411859737870407/image0.jpg",
+    "racehud699": "",
+
+
+    "333TopSpeed": 135,
+    "3330to60": 6.4,
+    "333Handling": 83,
+
+
+    "666TopSpeed": 138,
+    "6660to60": 6.0, 
+    "666Handling": 86,
+
+
+    "996TopSpeed": 0,
+    "9960to60": 0,
+    "996Handling": 0,
+
+
+    "969TopSpeed": 142,
+    "9690to60": 5.6,
+    "969Handling": 89,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

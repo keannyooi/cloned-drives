@@ -1,0 +1,50 @@
+{
+    "rq": 90,
+    "make": "Ford",
+    "model": "GT",
+    "modelYear": 2017,
+    "country": "US",
+    "topSpeed": 216,
+    "0to60": 3.1,
+    "handling": 93,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Supercar", "Track Day"],
+    "isPrize": false,
+
+    "weight": 1385,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 93.94,
+    "ola": 90.32,
+    "description": "Card by DodgeDemon",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/811483503010512906/2017_Ford_GT.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/811483037669523466/17FordGT_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/811483087107129364/17FordGT_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/811483135376097300/17FordGT_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/811483218133516338/17FordGT_996.png",
+    "racehud969": "",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/811483182007713869/17FordGT_699.png",
+
+    "333TopSpeed": 218,
+    "3330to60": 2.9,
+    "333Handling": 96,
+
+    "666TopSpeed": 220,
+    "6660to60": 2.7,
+    "666Handling": 99,
+
+    "996TopSpeed": 224,
+    "9960to60": 2.5,
+    "996Handling": 100,
+
+    "699TopSpeed": 222,
+    "6990to60": 2.6,
+    "699Handling": 103
+}

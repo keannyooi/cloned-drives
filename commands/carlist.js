@@ -48,6 +48,7 @@ module.exports = {
             return message.channel.send(errorScreen);
         }
 
+		const garage = await db.get(`acc${message.author.id}.garage`);
         const carFilter = await db.get(`acc${message.author.id}.filter`);
         if (carFilter !== null) {
             for (const [key, value] of Object.entries(carFilter)) {
@@ -88,7 +89,7 @@ module.exports = {
 						}
 						else if (key === "isOwned") {
 							list = list.filter(function (carFile) {
-                            	return ownedCars.some(car => carFile.includes(car)) === value;
+                            	return garage.some(car => carFile.includes(car.carFile)) === value;
                         	});
 						}
                         break
@@ -97,11 +98,10 @@ module.exports = {
                 }
             }
         }
-		
-		const garage = await db.get(`acc${message.author.id}.garage`);
-        const ownedCars = list.filter(function (carFile) {
+		const ownedCars = list.filter(function (carFile) {
             return garage.some(part => carFile.includes(part.carFile));
         });
+
 		const totalCars = list.length;
         const totalPages = Math.ceil(totalCars / pageLimit);
 
@@ -198,79 +198,87 @@ module.exports = {
             .setColor("#34aeeb")
             .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
             .setTitle(`List of All Cars in Cloned Drives (${ownedCars.length}/${totalCars} Cars Owned)`)
-            .setDescription(`Current Sorting Criteria: \`${sortBy}\``)
+            .setDescription(`Current Sorting Criteria: \`${sortBy}\`, Filter Activated: \`${carFilter !== null}\``)
             .addField("Car", carList, true)
             .setFooter(`Page ${page} of ${totalPages} - React with ⬅️ or ➡️ to navigate through pages.`)
             .setTimestamp();
         if (sortBy !== "rq") {
             infoScreen.addField("Value", valueList, true)
         }
+		if (message.channel.type === "text") {
+			infoScreen.setFooter(`Page ${page} of ${totalPages} - React with ⬅️ or ➡️ to navigate through pages.`);
+		}
+		else {
+			infoScreen.setFooter(`Page ${page} of ${totalPages} - Arrow navigation is disabled in DMs, please use cd-carlist <page number> to view a different page.`);
+		}
+
 		message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
         message.channel.send(infoScreen).then(infoMessage => {
-            console.log(reactionIndex);
-            switch (reactionIndex) {
-                case 0:
-                    break;
-                case 1:
-                    infoMessage.react("➡️");
-                    break;
-                case 2:
-                    infoMessage.react("⬅️");
-                    break;
-                case 3:
-                    infoMessage.react("⬅️");
-                    infoMessage.react("➡️");
-                    break;
-                default:
-                    break;
-            }
+			if (message.channel.type === "text") {
+				switch (reactionIndex) {
+					case 0:
+						break;
+					case 1:
+						infoMessage.react("➡️");
+						break;
+					case 2:
+						infoMessage.react("⬅️");
+						break;
+					case 3:
+						infoMessage.react("⬅️");
+						infoMessage.react("➡️");
+						break;
+					default:
+						break;
+				}
 
-            const collector = infoMessage.createReactionCollector(filter, { time: 60000 });
-            collector.on("collect", reaction => {
-                if (reaction.emoji.name === "⬅️") {
-                    page -= 1;
-                }
-                else if (reaction.emoji.name === "➡️") {
-                    page += 1;
-                }
-                carDisplay(page);
-                infoMessage.reactions.removeAll();
+				const collector = infoMessage.createReactionCollector(filter, { time: 60000 });
+				collector.on("collect", reaction => {
+					if (reaction.emoji.name === "⬅️") {
+						page -= 1;
+					}
+					else if (reaction.emoji.name === "➡️") {
+						page += 1;
+					}
+					carDisplay(page);
+					infoMessage.reactions.removeAll();
 
-                let infoScreen = new Discord.MessageEmbed()
-                    .setColor("#34aeeb")
-                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                    .setTitle(`List of All Cars in Cloned Drives (${ownedCars.length}/${totalCars} Cars Owned)`)
-                    .setDescription(`Current Sorting Criteria: \`${sortBy}\``)
-                    .addField("Car", carList, true)
-                    .setFooter(`Page ${page} of ${totalPages} - React with ⬅️ or ➡️ to navigate through pages.`)
-                    .setTimestamp();
-                if (sortBy !== "rq") {
-                    infoScreen.addField("Value", valueList, true)
-                }
-                infoMessage.edit(infoScreen);
+					let infoScreen = new Discord.MessageEmbed()
+						.setColor("#34aeeb")
+						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+						.setTitle(`List of All Cars in Cloned Drives (${ownedCars.length}/${totalCars} Cars Owned)`)
+						.setDescription(`Current Sorting Criteria: \`${sortBy}\`, Filter Activated: \`${carFilter !== null}\``)
+						.addField("Car", carList, true)
+						.setFooter(`Page ${page} of ${totalPages} - React with ⬅️ or ➡️ to navigate through pages.`)
+						.setTimestamp();
+					if (sortBy !== "rq") {
+						infoScreen.addField("Value", valueList, true)
+					}
+					infoMessage.edit(infoScreen);
 
-                switch (reactionIndex) {
-                    case 0:
-                        break;
-                    case 1:
-                        infoMessage.react("➡️");
-                        break;
-                    case 2:
-                        infoMessage.react("⬅️");
-                        break;
-                    case 3:
-                        infoMessage.react("⬅️");
-                        infoMessage.react("➡️");
-                        break;
-                    default:
-                        break;
-                }
-            });
+					switch (reactionIndex) {
+						case 0:
+							break;
+						case 1:
+							infoMessage.react("➡️");
+							break;
+						case 2:
+							infoMessage.react("⬅️");
+							break;
+						case 3:
+							infoMessage.react("⬅️");
+							infoMessage.react("➡️");
+							break;
+						default:
+							break;
+					}
+				});
 
-            collector.on("end", () => {
-                console.log("end of collection");
-                infoMessage.reactions.removeAll();
-            });
+				collector.on("end", () => {
+					console.log("end of collection");
+					infoMessage.reactions.removeAll();
+				});
+			}
         });
 
         function rarityCheck(currentCar) {
@@ -339,7 +347,7 @@ module.exports = {
                 if (sortBy !== "rq") {
                     valueList += `\`${currentCar[sortBy]}\`\n`;
                 }
-                if (ownedCars.some(car => carFiles[i].includes(car))) {
+                if (garage.some(car => list[i].includes(car.carFile))) {
                     carList += " ✅\n";
                 }
                 else {

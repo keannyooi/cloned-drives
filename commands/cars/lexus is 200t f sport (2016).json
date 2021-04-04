@@ -1,0 +1,46 @@
+{
+    "rq": 39,
+    "make": "Lexus",
+    "model": "IS 200t F Sport",
+    "modelYear": 2016,
+    "country": "JP",
+    "topSpeed": 143,
+    "0to60": 6.8,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1686,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 54.40,
+    "ola": 79.00,
+    "description": "This time, the F stands for 'Fixed'. Card by Macan.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/812827553130872882/Lexus_IS_200t_F_Sport_2016.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/812828042639441990/Lexus_IS_200t_F_Sport_2016_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/812828048675438612/Lexus_IS_200t_F_Sport_2016_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/812828056116527144/Lexus_IS_200t_F_Sport_2016_666.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/812828065595129886/Lexus_IS_200t_F_Sport_2016_969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 146,
+    "3330to60": 6.4,
+    "333Handling": 80,
+
+    "666TopSpeed": 150,
+    "6660to60": 6.0,
+    "666Handling": 82,
+
+    "969TopSpeed": 153,
+    "9690to60": 5.6,
+    "969Handling": 85
+}

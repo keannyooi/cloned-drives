@@ -1,0 +1,46 @@
+{
+    "rq": 35,
+    "make": "Lexus",
+    "model": "IS 250 F Sport AWD",
+    "modelYear": 2014,
+    "country": "JP",
+    "topSpeed": 134,
+    "0to60": 7.8,
+    "handling": 73,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1721,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 54.93,
+    "ola": 83.37,
+    "description": "All-wheel-drive adds traction but does it actually make performance better? Card by Macan.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/812827583019221013/Lexus_IS_250_F_Sport_AWD_2014.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/812828105840001034/Lexus_IS_250_F_Sport_AWD_2014_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/812828110838956032/Lexus_IS_250_F_Sport_AWD_2014_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/812828117902819368/Lexus_IS_250_F_Sport_AWD_2014_666.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/812828130053324870/Lexus_IS_250_F_Sport_AWD_2014_969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 138,
+    "3330to60": 7.3,
+    "333Handling": 76,
+
+    "666TopSpeed": 142,
+    "6660to60": 6.8,
+    "666Handling": 78,
+
+    "969TopSpeed": 146,
+    "9690to60": 6.3,
+    "969Handling": 81
+}

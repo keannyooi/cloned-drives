@@ -1,0 +1,46 @@
+{
+    "rq": 72,
+    "make": "Mitsubishi",
+    "model": "Lancer Evolution X Final Edition",
+    "modelYear": 2015,
+    "country": "JP",
+    "topSpeed": 146,
+    "0to60": 4.4,
+    "handling": 84,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer"],
+    "isPrize": false,
+
+    "weight": 1600,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 58.67,
+    "ola": 90.91,
+    "description": "The Final Edition of the Last Evo. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/812030931023953980/rqchecked.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/812031474563416084/evoxfinal.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/812031491739615243/evoxfinal333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/812031504460283934/evoxfinal666.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/812031525117755482/evoxfinal969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 150,
+    "3330to60": 4.1,
+    "333Handling": 87,
+
+    "666TopSpeed": 154,
+    "6660to60": 3.8,
+    "666Handling": 90,
+
+    "969TopSpeed": 158,
+    "9690to60": 3.5,
+    "969Handling": 93
+}

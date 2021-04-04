@@ -1,0 +1,46 @@
+{
+    "rq": 76,
+    "make": "Mitsubishi",
+    "model": "Lancer Evolution VI Tommi Mäkinen Edition",
+    "modelYear": 2000,
+    "country": "JP",
+    "topSpeed": 150,
+    "0to60": 4.4,
+    "handling": 88,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["MotorSport", "Street Racer"],
+    "isPrize": false,
+
+    "weight": 1360,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 64.71,
+    "ola": 70.00,
+    "description": "Bnuuys Best Evo :cateheart:. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/811227610843578368/redonehandling.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/811227671630577664/TME.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/811227704510513222/TME333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/811227717559255060/TME666.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/811227737044942848/TME969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 153,
+    "3330to60": 4.1,
+    "333Handling": 91,
+
+    "666TopSpeed": 157,
+    "6660to60": 3.8,
+    "666Handling": 94,
+
+    "969TopSpeed": 161,
+    "9690to60": 3.5,
+    "969Handling": 97
+}

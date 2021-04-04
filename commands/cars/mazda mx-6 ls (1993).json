@@ -1,0 +1,50 @@
+{
+    "rq": 42,
+    "make": "Mazda",
+    "model": "MX-6 LS",
+    "modelYear": 1993,
+    "country": "JP",
+    "topSpeed": 132,
+    "0to60": 7.3,
+    "handling": 77,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1270,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 56.20,
+    "ola": 72.73,
+    "description": "Card by Based",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/811836488047132702/Mazda_MX-6_LS.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/811599719716880404/Mazda_MX-6_LS_Stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/811599886528151552/Mazda_MX-6_LS_1_Star_-_Copia.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/811599903473008642/Mazda_MX-6_LS_2_Star_-_Copia.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/811599923811188766/Mazda_MX-6_LS_323_-_Copia.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/811599914819649536/Mazda_MX-6_LS_233_-_Copia.png",
+
+    "333TopSpeed": 135,
+    "3330to60": 6.8,
+    "333Handling": 79,
+
+    "666TopSpeed": 138,
+    "6660to60": 6.3,
+    "666Handling": 82,
+
+    "969TopSpeed": 142,
+    "9690to60": 5.9,
+    "969Handling": 85,
+
+	"699TopSpeed": 140,
+    "6990to60": 5.9,
+    "699Handling": 85
+}

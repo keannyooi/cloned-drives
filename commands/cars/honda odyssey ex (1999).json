@@ -1,0 +1,50 @@
+{
+    "rq": 22,
+    "make": "Honda",
+    "model": "Odyssey EX",
+    "modelYear": 1999,
+    "country": "JP",
+    "topSpeed": 125,
+    "0to60": 9.5,
+    "handling": 68,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["2021 Spring Collection"],
+    "isPrize": false,
+
+    "weight": 1965,
+    "gc": "Medium",
+    "seatCount": 7,
+    "bodyStyle": "Minivan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 54.39,
+    "ola": 65.00,
+	"description": "MPV craze moment. Card by ChickenMcNuggets",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/812419042249408602/ody_ex.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/812418239334055966/old_ody_stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/812418275329310731/old_ody_1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/812418320947085342/old_ody_2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/812418389707980810/old_ody_332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/812418357898641408/old_ody_323.png",
+    "racehud699": "",
+
+    "333TopSpeed": 128,
+    "3330to60": 9.0,
+    "333Handling": 70,
+
+    "666TopSpeed": 131,
+    "6660to60": 8.2, 
+    "666Handling": 72,
+
+    "996TopSpeed": 138,
+    "9960to60": 7.1,
+    "996Handling": 72,
+
+    "969TopSpeed": 134,
+    "9690to60": 7.1,
+    "969Handling": 72
+}

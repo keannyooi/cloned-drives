@@ -1,0 +1,46 @@
+{
+    "rq": 91,
+    "make": "McLaren",
+    "model": "570S",
+    "modelYear": 2016,
+    "country": "GB",
+    "topSpeed": 204,
+    "0to60": 2.9,
+    "handling": 92,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Supercar"],
+    "isPrize": false,
+
+    "weight": 1440,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 92.06,
+    "ola": 93.1,
+    "description": "The Baby McLaren. Card by Spence",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/811462558829117460/image0.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/811462348870778890/570s.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/811462384673226782/570s_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/811462392928010296/570s_666.jpg",
+    "racehud996": "",
+    "racehud969": "",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/811462413579845662/570s_699.jpg",
+
+    "333TopSpeed": 206,
+    "3330to60": 2.8,
+    "333Handling": 95,
+
+    "666TopSpeed": 208,
+    "6660to60": 2.6,
+    "666Handling": 99,
+
+    "699TopSpeed": 210,
+    "6990to60": 2.5,
+    "699Handling": 102
+}

@@ -123,7 +123,11 @@ module.exports = {
             }
 
             const car = require(`./cars/${currentCar.carFile}`);
-            const currentName = `${car["make"]} ${car["model"]} (${car["modelYear"]}) [${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}]`;
+			let make = car["make"];
+			if (typeof make === "object") {
+				make = car["make"][0];
+			}
+            const currentName = `${make} ${car["model"]} (${car["modelYear"]}) [${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}]`;
             const racehud = car[`racehud${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}`];
 
             const confirmationMessage = new Discord.MessageEmbed()
@@ -133,7 +137,7 @@ module.exports = {
                 .setDescription("React with ✅ to proceed or ❎ to cancel.")
                 .setImage(racehud)
                 .setTimestamp();
-            var reactionMessage;
+            let reactionMessage;
             if (currentMessage) {
                 reactionMessage = await currentMessage.edit(confirmationMessage);
             }

@@ -1,0 +1,50 @@
+{
+    "rq": 39,
+    "make": "Mercedes-AMG",
+    "model": "C 36",
+    "modelYear": 1994,
+    "country": "DE",
+    "topSpeed": 154,
+    "0to60": 6.2,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1635,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 67.39,
+    "ola": 74.19,
+    "description": "The start of an iconic AMG sedan. Card by Connor",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/811666496991264768/D.MercAMGC36.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/811666586753826856/D.MercAMGC36.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/811666599412760587/D.MercAMGC36-1star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/811666619054817380/D.MercAMGC36-2star.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/811666634715955250/D.MercAMGC36-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/811666624264142888/D.MercAMGC36-969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 157,
+    "3330to60": 5.8,
+    "333Handling": 79,
+
+    "666TopSpeed": 160,
+    "6660to60": 5.4,
+    "666Handling": 83,
+
+    "996TopSpeed": 164,
+    "9960to60": 4.8,
+    "996Handling": 84,
+
+    "969TopSpeed": 163,
+    "9690to60": 5.0,
+    "969Handling": 85
+}

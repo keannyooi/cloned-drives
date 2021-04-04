@@ -274,7 +274,7 @@ module.exports = {
 									\`isupgraded\` - Filter upgraded cars.
 									\`ismaxed\` - Filter maxed cars.
 									\`isowned\` - Filter cars that you own.
-									\`tag\` - Filter by tag.`)
+									\`tags\` - Filter by tag.`)
 							.setTimestamp();
 						return message.channel.send(errorScreen);
 				}
@@ -331,7 +331,7 @@ module.exports = {
 									\`isupgraded\` - Filter upgraded cars.
 									\`ismaxed\` - Filter maxed cars.
 									\`isowned\` - Filter cars that you own.
-									\`tag\` - Filter by tag.  
+									\`tags\` - Filter by tag.  
                                     \`disable/remove\` - Removes current (or all) filter(s).`)
 					.setTimestamp();
 				return message.channel.send(errorScreen);

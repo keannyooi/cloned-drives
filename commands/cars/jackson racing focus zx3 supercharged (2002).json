@@ -1,0 +1,46 @@
+{
+    "rq": 29,
+    "make": ["Jackson Racing", "Ford"],
+    "model": "Focus ZX3 Supercharged",
+    "modelYear": 2002,
+    "country": "US",
+    "topSpeed": 118,
+    "0to60": 8.4,
+    "handling": 80,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1234,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 47.46,
+    "ola": 64.29,
+    "description": "The craft of an old mechanic, with boost kicking in as late as Honda's VTEC system. Card by keanny",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/809667649310162965/jackson_racing_focus.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/809667477113012224/jackson_focus.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/809667511699767306/jackson_focus_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/809667518154276884/jackson_focus_666.jpg",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/809667530020749322/jackson_focus_969.jpg",
+    "racehud699": "",
+
+    "333TopSpeed": 121,
+    "3330to60": 7.9,
+    "333Handling": 83,
+
+    "666TopSpeed": 125,
+    "6660to60": 7.3,
+    "666Handling": 86,
+
+    "969TopSpeed": 128,
+    "9690to60": 6.8,
+    "969Handling": 89
+}

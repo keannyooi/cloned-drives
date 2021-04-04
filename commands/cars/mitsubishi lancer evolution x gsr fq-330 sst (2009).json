@@ -1,0 +1,46 @@
+{
+    "rq": 79,
+    "make": "Mitsubishi",
+    "model": "Lancer Evolution X GSR FQ-330 SST",
+    "modelYear": 2009,
+    "country": "JP",
+    "topSpeed": 155,
+    "0to60": 4.4,
+    "handling": 91,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer"],
+    "isPrize": false,
+
+    "weight": 1560,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 59.46,
+    "ola": 77.27,
+    "description": "Mitsubishi was scared of putting the unproven SST on the FQ-360, so they made a less powerful 330 to throw it on. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/812031121960337489/didthedo.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/812031767971758150/evoxfq330.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/812031779024273448/evoxfq330333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/812031792763633714/evoxfq330666.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/812031815027785748/evoxfq330969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 159,
+    "3330to60": 4.1,
+    "333Handling": 94,
+
+    "666TopSpeed": 163,
+    "6660to60": 3.8,
+    "666Handling": 97,
+
+    "969TopSpeed": 165,
+    "9690to60": 3.5,
+    "969Handling": 101
+}

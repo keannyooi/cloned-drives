@@ -1,0 +1,51 @@
+{
+    "rq": 30,
+    "make": "Nissan",
+    "model": "Sentra SE-R Spec V",
+    "modelYear": 2002,
+    "country": "JP",
+    "topSpeed": 132,
+    "0to60": 7.3,
+    "handling": 77,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1244,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 63.48,
+    "ola": 71.23,
+    "description": "The muscle car of pocket rockets. Card by Fried",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/813155216341991495/Nissan_Sentra_SE-R_Spec_V.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/813155414371336252/Nissan_Sentra_SE-R_Spec_V_Stock_HUD.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/813155430267617320/Nissan_Sentra_SE-R_Spec_V_333_HUD.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/813155441693294602/Nissan_Sentra_SE-R_Spec_V_666_HUD.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/813155455865061376/Nissan_Sentra_SE-R_Spec_V_996_HUD.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/813155468297109544/Nissan_Sentra_SE-R_Spec_V_969_HUD.jpg",
+    "racehud699": "",
+
+    "333TopSpeed": 135,
+    "3330to60": 6.7,
+    "333Handling": 79,
+
+    "666TopSpeed": 138,
+    "6660to60": 6.2,
+    "666Handling": 82,
+
+    "969TopSpeed": 141,
+    "9690to60": 5.9,
+    "969Handling": 85,
+	
+   "996TopSpeed": 142,
+   "9960to60": 5.7,
+	 "996Handling": 82
+	
+}

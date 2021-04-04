@@ -1,0 +1,46 @@
+{
+    "rq": 47,
+    "make": "Lexus",
+    "model": "ES 350",
+    "modelYear": 2015,
+    "country": "JP",
+    "topSpeed": 131,
+    "0to60": 5.8,
+    "handling": 69,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1624,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 69.05,
+    "ola": 77.77,
+    "description": "The 'funny' Lexus.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/812827520146866176/Lexus_ES_350_2015.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/812827833784598558/Lexus_ES_350_2015_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/812827836557426739/Lexus_ES_350_2015_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/812827844727275550/Lexus_ES_350_2015_666.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/812827857587666995/Lexus_ES_350_2015_969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 134,
+    "3330to60": 5.5,
+    "333Handling": 71,
+
+    "666TopSpeed": 137,
+    "6660to60": 5.2,
+    "666Handling": 74,
+
+    "969TopSpeed": 140,
+    "9690to60": 4.9,
+    "969Handling": 76
+}

@@ -1,0 +1,46 @@
+{
+    "rq": 34,
+    "make": ["Pontiac", "McLaren"],
+    "model": "McLaren Turbo Grand Prix",
+    "modelYear": 1989,
+    "country": "US",
+    "topSpeed": 128,
+    "0to60": 7.0,
+    "handling": 75,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1565,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 51.47,
+    "ola": 71.43,
+    "description": "A turbocharged W-body Grand Prix, brought to you by McLaren. Card by Johnny.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/811668731150204928/Pontiac-McLaren-Turbo-Grand-Prix.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/811668551843971082/Pontiac-McLaren-Turbo-Grand-Prix.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/811668556403703818/Pontiac-McLaren-Turbo-Grand-Prix-1-star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/811668562530795530/Pontiac-McLaren-Turbo-Grand-Prix-2-star.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/811668572526215168/Pontiac-McLaren-Turbo-Grand-Prix-323.png",
+    "racehud699": "",
+
+    "333TopSpeed": 131,
+    "3330to60": 6.6,
+    "333Handling": 77,
+
+    "666TopSpeed": 134,
+    "6660to60": 6.2,
+    "666Handling": 81,
+
+    "969TopSpeed": 137,
+    "9690to60": 5.8,
+    "969Handling": 83
+}

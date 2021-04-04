@@ -12,7 +12,7 @@ const Discord = require("discord.js-light");
 module.exports = {
 	name: "changetune",
 	aliases: ["ct"],
-	usage: "<username goes here> | <car name goes here> | <original upgrade> | <upgrade pattern>",
+	usage: "<username goes here> | <car name goes here> | <upgrade pattern>",
 	args: 3,
 	isExternal: false,
 	adminOnly: true,
@@ -206,8 +206,8 @@ module.exports = {
 				const errorMessage = new Discord.MessageEmbed()
 					.setColor("#fc0303")
 					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-					.setTitle("Error, it looks like you don't have that car in the original tune requested.")
-					.setDescription("Check if you got the order right: `cd-upgrade <username goes here> | <car name goes here> | <original upgrade> | <upgrade pattern>`")
+					.setTitle("Error, it looks like you don't have that car.")
+					.setDescription("Check if you got the order right: `cd-upgrade <username goes here> | <car name goes here> | <upgrade pattern>`")
 					.setTimestamp();
 				return message.channel.send(errorMessage);
 			}
@@ -308,6 +308,14 @@ module.exports = {
 					playerData.hand.engineUpgrade = parseInt(upgrade[1]);
 					playerData.hand.chassisUpgrade = parseInt(upgrade[2]);
                 }
+			}
+			for (i = 0; i < playerData.decks.length; i++) {
+				let edit = playerData.decks[i].hand.findIndex(car => car.carFile === currentCar.carFile && `${car.gearingUpgrade}${car.engineUpgrade}${car.chassisUpgrade}` === origUpgrade);
+				if (edit >= 0) {
+					playerData.decks[i].hand[edit].gearingUpgrade = parseInt(upgrade[0]);
+					playerData.decks[i].hand[edit].engineUpgrade = parseInt(upgrade[1]);
+					playerData.decks[i].hand[edit].chassisUpgrade = parseInt(upgrade[2]);
+				}
 			}
 			await db.set(`acc${user.id}`, playerData);
 

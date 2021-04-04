@@ -19,10 +19,8 @@ module.exports = {
     async execute(message, args) {
         const db = message.client.db;
         const playerData = await db.get(`acc${message.author.id}`);
-        const decks = playerData.decks;
         const deckName = args[0].toLowerCase();
-        const index = Math.ceil(parseInt(args[1]));
-        if (isNaN(index) || index > 5 || index < 1) {
+        if (isNaN(args[1]) || args[1] > 5 || args[1] < 1) {
 			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             const errorMessage = new Discord.MessageEmbed()
                 .setColor("#fc0303")
@@ -32,81 +30,62 @@ module.exports = {
                 .setTimestamp();
             return message.channel.send(errorMessage);
         }
-        const searchResults = [];
-        const filter = response => {
+
+		const filter = response => {
             return response.author.id === message.author.id;
         };
-        let carName = args[2].toLowerCase();
-        for (i = 3; i < args.length; i++) {
-            carName += (" " + args[i].toLowerCase());
-        }
+        const searchResults = playerData.decks.filter(deck => {
+			let currentName = deck.name.toLowerCase();
+			return currentName.includes(deckName);
+		});
 
-        var counter = 0;
-        var searched = 0;
-        while (counter < decks.length) {
-            var currentName = decks[counter].name.toLowerCase();
-            if (currentName.includes(deckName)) {
-                console.log("found!");
-                console.log(currentName)
-                searchResults[searched] = decks[counter];
-                searched++;
+        if (searchResults.length > 1) {
+            let deckList = "";
+            for (i = 1; i <= searchResults.length; i++) {
+                deckList += `${i} - ${searchResults[i - 1].name} \n`;
             }
-            counter++;
-        }
 
-        if (searched > 0) {
-            var currentDeck = searchResults[0];
-            if (searched > 1) {
-                var deckList = "";
-                for (i = 1; i <= searchResults.length; i++) {
-                    deckList += `${i} - ${searchResults[i - 1].name} \n`;
-                }
-
-                const infoScreen = new Discord.MessageEmbed()
-                    .setColor("#34aeeb")
-                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                    .setTitle("Multiple decks found, please type one of the following.")
-                    .setDescription(deckList)
-                    .setTimestamp();
-
-                const currentMessage = await message.channel.send(infoScreen);
-                message.channel.awaitMessages(filter, {
-                    max: 1,
-                    time: 30000,
-                    errors: ['time']
-                })
-                    .then(collected => {
-                        if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
-                            collected.first().delete();
-							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                            const errorMessage = new Discord.MessageEmbed()
-                                .setColor("#fc0303")
-                                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                                .setTitle("Error, invalid integer provided.")
-                                .setDescription("It looks like your response was either not a number or not part of the selection.")
-                                .setTimestamp();
-                            return currentMessage.edit(errorMessage);
-                        }
-                        else {
-                            currentDeck = searchResults[parseInt(collected.first()) - 1];
-                            collected.first().delete();
-                            checkCar(currentDeck, currentMessage);
-                        }
-                    })
-                    .catch(() => {
+            const infoScreen = new Discord.MessageEmbed()
+                .setColor("#34aeeb")
+                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                .setTitle("Multiple decks found, please type one of the following.")
+                .setDescription(deckList)
+                .setTimestamp();
+            const currentMessage = await message.channel.send(infoScreen);
+            message.channel.awaitMessages(filter, {
+                max: 1,
+                time: 30000,
+                errors: ["time"]
+            })
+                .then(collected => {
+					collected.first().delete();
+                    if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
 						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                        const cancelMessage = new Discord.MessageEmbed()
-                            .setColor("#34aeeb")
+                        const errorMessage = new Discord.MessageEmbed()
+                            .setColor("#fc0303")
                             .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                            .setTitle("Action cancelled automatically.")
+                            .setTitle("Error, invalid integer provided.")
+                            .setDescription("It looks like your response was either not a number or not part of the selection.")
                             .setTimestamp();
-                        return currentMessage.edit(cancelMessage);
-                    });
-            }
-            else {
-                checkCar(currentDeck);
-            }
+                        return currentMessage.edit(errorMessage);
+                    }
+                    else {
+                        checkCar(earchResults[parseInt(collected.first()) - 1], currentMessage);
+                    }
+                })
+                .catch(() => {
+					message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+                    const cancelMessage = new Discord.MessageEmbed()
+                        .setColor("#34aeeb")
+                        .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                        .setTitle("Action cancelled automatically.")
+                        .setTimestamp();
+                    return currentMessage.edit(cancelMessage);
+            	});
         }
+		else if (searchResults.length > 0) {
+			checkCar(searchResults[0]);
+		}
         else {
 			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             const errorMessage = new Discord.MessageEmbed()
@@ -128,20 +107,36 @@ module.exports = {
                 return find === undefined;
             });
 
-            var carName = args.slice(1, args.length).map(i => i.toLowerCase());
-            const searchResults = garage.filter(function (garageCar) {
-                return carName.every(part => garageCar.carFile.includes(part));
+            let carName = args.slice(2, args.length).map(i => i.toLowerCase());
+            let searchResults = garage.filter(function (garageCar) {
+                if (carName.every(part => garageCar.carFile.includes(part))) {
+					let dupe = garageCar;
+					for (let i = 0; i < currentDeck.hand.length; i++) {
+						if (currentDeck.hand[i].carFile === dupe.carFile) {
+							dupe[`${currentDeck.hand[i].gearingUpgrade}${currentDeck.hand[i].engineUpgrade}${currentDeck.hand[i].chassisUpgrade}`] -= 1;
+						}
+					}
+					if (dupe["000"] + dupe["333"] + dupe["666"] + dupe["996"] + dupe["969"] + dupe["699"] <= 0) {
+						return false;
+					}
+					else {
+						return true;
+					}
+				}
+				else {
+					return false;
+				}
             });
 
             if (searchResults.length > 1) {
-                var carList = "";
+                let carList = "";
                 for (i = 1; i <= searchResults.length; i++) {
                     let car = require(`./cars/${searchResults[i - 1].carFile}`);
 					let make = car["make"];
 					if (typeof make === "object") {
 						make = car["make"][0];
 					}
-                    carList += `${i} - ${make} ${car["model"]} (${car["modelYear"]}) [${searchResults[i - 1].gearingUpgrade}${searchResults[i - 1].engineUpgrade}${searchResults[i - 1].chassisUpgrade}]\n`;
+                    carList += `${i} - ${make} ${car["model"]} (${car["modelYear"]}\n`;
                 }
 
                 if (carList.length > 2048) {
@@ -168,7 +163,7 @@ module.exports = {
                 message.channel.awaitMessages(filter, {
                     max: 1,
                     time: 30000,
-                    errors: ['time']
+                    errors: ["time"]
                 })
                     .then(collected => {
 						collected.first().delete();
@@ -183,7 +178,7 @@ module.exports = {
                             return currentMessage.edit(errorMessage);
                         }
                         else {
-                            addCar(searchResults[parseInt(collected.first()) - 1], currentDeck, currentMessage);
+                            selectUpgrade(searchResults[parseInt(collected.first()) - 1], currentDeck, currentMessage);
                         }
                     })
                     .catch(() => {
@@ -198,10 +193,10 @@ module.exports = {
             }
             else if (searchResults.length > 0) {
                 if (currentMessage) {
-                    addCar(searchResults[0], currentDeck, currentMessage);
+                    selectUpgrade(searchResults[0], currentDeck, currentMessage);
                 }
                 else {
-                    addCar(searchResults[0], currentDeck);
+                    selectUpgrade(searchResults[0], currentDeck);
                 }
             }
             else {
@@ -221,21 +216,76 @@ module.exports = {
             }
         }
 
-        async function addCar(currentCar, currentDeck, currentMessage) {
+		async function selectUpgrade(currentCar, currentDeck, currentMessage) {
+			let isOne = Object.keys(currentCar).filter(m => !isNaN(currentCar[m]) && currentCar[m] >= 1);
+			if (isOne.length === 1) {
+				addCar(currentCar, isOne[0], currentDeck, currentMessage);
+			}
+			else {
+				let upgradeList = "Type in any tune that is displayed here.\n";
+				for (let upg of isOne) {
+					upgradeList += `\`${upg}\`, `;
+				}
+
+				let infoScreen = new Discord.MessageEmbed()
+					.setColor("#34aeeb")
+					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+					.setTitle("Change from which tune?")
+					.setDescription(upgradeList.slice(0, -2))
+					.setTimestamp();
+				let upgradeMessage;
+				if (currentMessage) {
+					upgradeMessage = await currentMessage.edit(infoScreen);
+				}
+				else {
+					upgradeMessage = await message.channel.send(infoScreen);
+				}
+
+				message.channel.awaitMessages(filter, {
+					max: 1,
+					time: 60000,
+					errors: ["time"]
+				})
+					.then(collected => {
+						collected.first().delete();
+						if (isOne.find(m => m === collected.first().content) === undefined) {
+							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
+							const errorMessage = new Discord.MessageEmbed()
+								.setColor("#fc0303")
+								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+								.setTitle("Error, invalid selection provided.")
+								.setDescription("It looks like your response was not part of the selection.")
+								.setTimestamp();
+							return upgradeMessage.edit(errorMessage);
+						}
+						else {
+							addCar(currentCar, collected.first().content, currentDeck, currentMessage);
+						}
+					})
+					.catch(() => {
+						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+						const cancelMessage = new Discord.MessageEmbed()
+							.setColor("#34aeeb")
+							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+							.setTitle("Action cancelled automatically.")
+							.setTimestamp();
+						return upgradeMessage.edit(cancelMessage);
+					});
+			}
+		}
+
+        async function addCar(currentCar, upgrade, currentDeck, currentMessage) {
+			const index = Math.ceil(parseInt(args[1]));
             const car = require(`./cars/${currentCar.carFile}`);
 			let make = car["make"];
 			if (typeof make === "object") {
 				make = car["make"][0];
 			}
-            const currentName = `${make} ${car["model"]} (${car["modelYear"]}) [${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}]`;
-            const racehud = car[`racehud${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}`];
+            const currentName = `${make} ${car["model"]} (${car["modelYear"]}) [${upgrade}]`;
+            const racehud = car[`racehud${upgrade}`];
 
-            for (const deck of decks) {
-                if (deck.name = currentDeck.name) {
-                    deck.hand[index - 1] = { carFile: currentCar.carFile, gearingUpgrade: currentCar.gearingUpgrade, engineUpgrade: currentCar.engineUpgrade, chassisUpgrade: currentCar.chassisUpgrade };
-                }
-            }
-            await db.set(`acc${message.author.id}.decks`, decks);
+            currentDeck.hand[index - 1] = { carFile: currentCar.carFile, gearingUpgrade: parseInt(upgrade[0]), engineUpgrade: parseInt(upgrade[1]), chassisUpgrade: parseInt(upgrade[2]) };
+            await db.set(`acc${message.author.id}.decks`, playerData.decks);
 
 			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             const infoScreen = new Discord.MessageEmbed()

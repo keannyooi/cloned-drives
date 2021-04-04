@@ -1,0 +1,46 @@
+{
+    "rq": 62,
+    "make": "Lexus",
+    "model": "LS 460 F Sport AWD",
+    "modelYear": 2013,
+    "country": "JP",
+    "topSpeed": 130,
+    "0to60": 6.0,
+    "handling": 75,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 2193,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 65.93,
+    "ola": 77.00,
+    "description": "The well-respected flagship gets a little frisky. Card by Macan.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/812827622887129138/Lexus_LS_460_F_Sport_AWD_2013.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/812828188043903027/Lexus_LS_460_F_Sport_AWD_2013_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/812828194750070804/Lexus_LS_460_F_Sport_AWD_2013_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/812828200165834782/Lexus_LS_460_F_Sport_AWD_2013_666.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/812828212618985492/Lexus_LS_460_F_Sport_AWD_2013_969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 134,
+    "3330to60": 5.6,
+    "333Handling": 78,
+
+    "666TopSpeed": 138,
+    "6660to60": 5.2,
+    "666Handling": 80,
+
+    "969TopSpeed": 142,
+    "9690to60": 4.8,
+    "969Handling": 83
+}

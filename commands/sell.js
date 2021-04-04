@@ -166,7 +166,7 @@ module.exports = {
 				let infoScreen = new Discord.MessageEmbed()
 					.setColor("#34aeeb")
 					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-					.setTitle("Fuse car of which tune?")
+					.setTitle("Sell car of which tune?")
 					.setDescription(upgradeList.slice(0, -2))
 					.setTimestamp();
 				let upgradeMessage;
@@ -278,6 +278,14 @@ module.exports = {
 								if (playerData.hand.carFile === currentCar.carFile) {
                    					delete playerData.hand;
                 				}
+							}
+							for (i = 0; i < playerData.decks.length; i++) {
+								for (x = 0; x < playerData.decks[i].hand.length; x++) {
+									let car = playerData.decks[i].hand[x];
+									if (car.carFile === currentCar.carFile && `${car.gearingUpgrade}${car.engineUpgrade}${car.chassisUpgrade}` === upgrade) {
+										playerData.decks[i].hand[x] = "None";
+									}
+								}
 							}
 
 							let remove = garage.find(garageCar => {

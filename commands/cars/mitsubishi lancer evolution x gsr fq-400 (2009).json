@@ -1,0 +1,46 @@
+{
+    "rq": 87,
+    "make": "Mitsubishi",
+    "model": "Lancer Evolution X GSR FQ-400",
+    "modelYear": 2009,
+    "country": "JP",
+    "topSpeed": 155,
+    "0to60": 3.8,
+    "handling": 93,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer"],
+    "isPrize": false,
+
+    "weight": 1560,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 67.21,
+    "ola": 84.21,
+    "description": "The big daddy Evo. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/812031249790271558/evox400.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/812031954333466674/evoxfq400.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/812031966601543690/evoxfq400333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/812031979276468224/evoxfq400666.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/812032000873594920/evoxfq400969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 159,
+    "3330to60": 3.6,
+    "333Handling": 96,
+
+    "666TopSpeed": 163,
+    "6660to60": 3.4,
+    "666Handling": 99,
+
+    "969TopSpeed": 165,
+    "9690to60": 3.2,
+    "969Handling": 103
+}

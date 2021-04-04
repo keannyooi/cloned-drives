@@ -26,7 +26,7 @@ module.exports = {
 
         if (message.mentions.users.first()) {
 			if (!message.mentions.users.first().bot) {
-				addStuff(message.mentions.users.first());
+				removeStuff(message.mentions.users.first());
 			}
 			else {
 				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);

@@ -1,0 +1,46 @@
+{
+    "rq": 82,
+    "make": "Lexus",
+    "model": "LFA Nürburgring Edition",
+    "modelYear": 2012,
+    "country": "JP",
+    "topSpeed": 202,
+    "0to60": 3.7,
+    "handling": 92,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eargasm"],
+    "isPrize": true,
+
+    "weight": 1480,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 99.00,
+    "ola": 88.25,
+    "description": "The track-focused LFA. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/813398366293327872/nurbergeringere.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/813399297588592650/lfanur.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/813399309100777542/lfanur333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/813399321034096680/lfanur666.png",
+    "racehud996": "",
+    "racehud969": "",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/813399351560503326/lfanur699.png",
+
+    "333TopSpeed": 204,
+    "3330to60": 3.5,
+    "333Handling": 95,
+
+    "666TopSpeed": 206,
+    "6660to60": 3.3,
+    "666Handling": 98,
+
+    "699TopSpeed": 207,
+    "6990to60": 3.2,
+    "699Handling": 102
+}

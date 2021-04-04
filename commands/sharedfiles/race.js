@@ -223,12 +223,12 @@ module.exports = {
 					case "Asphalt":
 						if (currentTrack["weather"] === "Rainy") {
 							score += (drivePlacement.indexOf(opponent.driveType) - drivePlacement.indexOf(player.driveType)) * 4;
-							absPen = tcsPen = 2;
+							absPen = tcsPen = 1;
 
 							tyreIndex = {
 								"Standard": 0,
 								"Performance": 11,
-								"All-Surface": 1,
+								"All-Surface": 5,
 								"Off-Road": 25,
 								"Slick": 50
 							};
@@ -238,12 +238,12 @@ module.exports = {
 					case "Dirt":
 						if (currentTrack["weather"] === "Rainy") {
 							score += (drivePlacement.indexOf(opponent.driveType) - drivePlacement.indexOf(player.driveType)) * 8.5;
-							absPen = tcsPen = 5.25;
+							absPen = tcsPen = 2.5;
 
 							tyreIndex = {
 								"Standard": 70,
 								"Performance": 95,
-								"All-Surface": 15,
+								"All-Surface": 30,
 								"Off-Road": 10,
 								"Slick": 200
 							};
@@ -251,12 +251,12 @@ module.exports = {
 						}
 						else {
 							score += (drivePlacement.indexOf(opponent.driveType) - drivePlacement.indexOf(player.driveType)) * 7;
-							absPen = tcsPen = 3.5;
+							absPen = tcsPen = 1.75;
 
 							tyreIndex = {
 								"Standard": 35,
 								"Performance": 55,
-								"All-Surface": 5,
+								"All-Surface": 10,
 								"Off-Road": 2,
 								"Slick": 100
 							};
@@ -266,7 +266,7 @@ module.exports = {
 					case "Gravel":
 						if (currentTrack["weather"] === "Rainy") {
 							score += (drivePlacement.indexOf(opponent.driveType) - drivePlacement.indexOf(player.driveType)) * 5.5;
-							absPen = tcsPen = 2.5;
+							absPen = tcsPen = 1.25;
 
 							tyreIndex = {
 								"Standard": 7.5,
@@ -292,25 +292,25 @@ module.exports = {
 						break;
 					case "Snow":
 						score += (drivePlacement.indexOf(opponent.driveType) - drivePlacement.indexOf(player.driveType)) * 12;
-						absPen = tcsPen = 6;
+						absPen = tcsPen = 3;
 
 						tyreIndex = {
 							"Standard": 75,
 							"Performance": 150,
-							"All-Surface": 50,
-							"Off-Road": 35,
+							"All-Surface": 55,
+							"Off-Road": 30,
 							"Slick": 500
 						};
 						score += (tyreIndex[opponent.tyreType] - tyreIndex[player.tyreType]);
 						break;
 					case "Ice":
 						score += (drivePlacement.indexOf(opponent.driveType) - drivePlacement.indexOf(player.driveType)) * 17;
-						absPen = tcsPen = 8.5;
+						absPen = tcsPen = 4.25;
 						tyreIndex = {
 							"Standard": 125,
 							"Performance": 250,
-							"All-Surface": 50,
-							"Off-Road": 35,
+							"All-Surface": 60,
+							"Off-Road": 25,
 							"Slick": 1000
 						};
 						score += (tyreIndex[opponent.tyreType] - tyreIndex[player.tyreType]);
@@ -322,11 +322,22 @@ module.exports = {
 
 				//special cases
 				if (currentTrack["trackName"].includes("0-100MPH")) {
-					if (opponent.topSpeed < 100) {
+					if (opponent.topSpeed < 100 && player.topSpeed >= 100) {
 						score = 250;
 					}
-					else if (player.topSpeed < 100) {
+					else if (opponent.topSpeed >= 100 && player.topSpeed < 100) {
 						score = -250;
+					}
+					else if (opponent.topSpeed < 100 && player.topSpeed < 100) {
+						if (opponent.topSpeed < player.topSpeed) {
+							score = 50;
+						}
+						else if (opponent.topSpeed > player.topSpeed) {
+							score = -50;
+						}
+						else {
+							score = 0;
+						}
 					}
 				}
 				if (currentTrack["specsDistr"]["handling"] > 0) {

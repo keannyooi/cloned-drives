@@ -1,4 +1,4 @@
-﻿{
+{
     "rq": 53,
     "make": "Hyundai",
     "model": "Sonata N-Line",
@@ -9,9 +9,8 @@
     "handling": 81,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Year of the Ox"],
+    "tags": [],
     "isPrize": false,
-
 
     "weight": 1611,
     "gc": "Medium",
@@ -25,7 +24,6 @@
     "ola": 93.10,
     "description": "An underdog in the sedan world. Card by AGE",
 
-
     "card": "https://cdn.discordapp.com/attachments/715782088271331398/810571636892762142/image0_4.jpg",
     "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/810583753377579058/SonataSt.png",
     "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/810583682841706516/Sonata1.png",
@@ -34,26 +32,21 @@
     "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/810583715511402556/Sonata323.png",
     "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/810583702173253654/Sonata233.png",
 
-
     "333TopSpeed": 158,
     "3330to60": 5.0,
     "333Handling": 84,
-
 
     "666TopSpeed": 162,
     "6660to60": 4.7, 
     "666Handling": 87,
 
-
     "996TopSpeed": 166,
     "9960to60": 4.3,
     "996Handling": 87,
 
-
     "969TopSpeed": 166,
     "9690to60": 4.4,
     "969Handling": 90,
-
 
     "699TopSpeed": 162,
     "6990to60": 4.4,

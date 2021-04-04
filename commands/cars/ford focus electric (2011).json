@@ -1,4 +1,4 @@
-﻿{
+{
     "rq": 19,
     "make": "Ford",
     "model": "Focus Electric",
@@ -12,10 +12,9 @@
     "tags": ["Eco-Friendly"],
     "isPrize": false,
 
-
     "weight": 1643,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
@@ -25,7 +24,6 @@
     "ola": 80.00,
     "description": "A charged up version of a stylish hatch. Card by Keanny",
 
-
     "card": "https://media.discordapp.net/attachments/715782088271331398/806459896064638996/electric_focus.png?width=1154&height=710",
     "racehud000": "https://media.discordapp.net/attachments/718097267621363744/806459702731997235/electric_focus.jpg",
     "racehud333": "https://media.discordapp.net/attachments/718097267621363744/806459719622852618/electric_focus_333.jpg",
@@ -34,28 +32,15 @@
     "racehud969": "https://media.discordapp.net/attachments/718097267621363744/806459738115276800/electric_focus_969.jpg",
     "racehud699": "",
 
-
     "333TopSpeed": 87,
     "3330to60": 9.3,
     "333Handling": 70,
-
 
     "666TopSpeed": 90,
     "6660to60": 8.6, 
     "666Handling": 73,
 
-
-    "996TopSpeed": 0,
-    "9960to60": 0,
-    "996Handling": 0,
-
-
     "969TopSpeed": 92,
     "9690to60": 7.9,
-    "969Handling": 75,
-
-
-    "699TopSpeed": 0,
-    "6990to60": 0,
-    "699Handling": 0
+    "969Handling": 75
 }

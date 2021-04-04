@@ -17,7 +17,7 @@ module.exports = {
     adminOnly: false,
     description: "Buy a car from the dealership using this command!",
     async execute(message, args) {
-        var carName;
+        let carName;
         var amount = 1;
         const db = message.client.db;
         const playerData = await db.get(`acc${message.author.id}`);
@@ -50,9 +50,8 @@ module.exports = {
         const searchResults = catalog.filter(function (selection) {
             return carName.every(part => selection.carFile.includes(part));
         });
-
         if (searchResults.length > 1) {
-            var carList = "";
+            let carList = "";
             for (i = 1; i <= searchResults.length; i++) {
                 let currentCar = require(`./cars/${searchResults[i - 1].carFile}`);
                 carList += `${i} - ${currentCar["make"]} ${currentCar["model"]} (${currentCar["modelYear"]})\n`;

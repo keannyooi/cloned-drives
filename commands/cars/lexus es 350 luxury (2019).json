@@ -1,0 +1,46 @@
+{
+    "rq": 49,
+    "make": "Lexus",
+    "model": "ES 350 Luxury",
+    "modelYear": 2019,
+    "country": "JP",
+    "topSpeed": 135,
+    "0to60": 6.1,
+    "handling": 75,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1711,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 69.32,
+    "ola": 86.67,
+    "description": "Another sedan from Lexus that only people who are 70 will appreciate. Card by Macan.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/812827227607662622/ES_350_Luxury_19.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/812827959869046844/Lexus_ES_350_Luxury_2019_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/812827970371977246/Lexus_ES_350_Luxury_2019_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/812827972997611520/Lexus_ES_350_Luxury_2019_666.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/812827984704176139/Lexus_ES_350_Luxury_2019_969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 139,
+    "3330to60": 5.7,
+    "333Handling": 78,
+
+    "666TopSpeed": 142,
+    "6660to60": 5.4,
+    "666Handling": 80,
+
+    "969TopSpeed": 146,
+    "9690to60": 5.0,
+    "969Handling": 83
+}

@@ -1,0 +1,54 @@
+{
+    "rq": 25,
+    "make": "Dodge",
+    "model": "Avenger ES",
+    "modelYear": 1995,
+    "country": "US",
+    "topSpeed": 123,
+    "0to60": 9.5,
+    "handling": 74,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1280,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 46.53,
+    "ola": 73.68,
+    "description": "Card by Based",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/810261665484243024/Dodge_Avenger_ES.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/810248602071859280/Dodge_Avenger_ES_Stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/810248665616220170/Dodge_Avenger_ES_1_Star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/810248691276840960/Dodge_Avenger_ES_2_Star.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/810248734955798548/Dodge_Avenger_ES_332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/810248719910961172/Dodge_Avenger_ES_323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/810248703444254730/Dodge_Avenger_ES_233.png",
+
+    "333TopSpeed": 126,
+    "3330to60": 8.8,
+    "333Handling": 76,
+
+    "666TopSpeed": 130,
+    "6660to60": 8.1,
+    "666Handling": 79,
+
+    "996TopSpeed": 134,
+    "9960to60": 7.3,
+    "996Handling": 80,
+
+	"969TopSpeed": 134,
+    "9690to60": 7.5,
+    "969Handling": 82,
+
+	"699TopSpeed": 131,
+    "6990to60": 7.6,
+    "699Handling": 82
+}

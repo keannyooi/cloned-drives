@@ -1,0 +1,46 @@
+{
+    "rq": 44,
+    "make": "Lexus",
+    "model": "NX 300h Luxury AWD",
+    "modelYear": 2020,
+    "country": "JP",
+    "topSpeed": 116,
+    "0to60": 8.1,
+    "handling": 73,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1901,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 51.27,
+    "ola": 70.00,
+    "description": " If you’re shopping for a luxury compact crossover with a hybrid drivetrain and styling that may scare small children, look no further than the NX 300h. Card by Macan.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/808051866214072330/NX_300h_Luxury_AWD_20.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/808051974675103775/Lexus_NX_300h_Luxury_AWD_2020_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/808051978684858368/Lexus_NX_300h_Luxury_AWD_2020_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/808051984556490752/Lexus_NX_300h_Luxury_AWD_2020_666.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/808051999375360051/Lexus_NX_300h_Luxury_AWD_2020_969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 119,
+    "3330to60": 7.6,
+    "333Handling": 75,
+
+    "666TopSpeed": 122,
+    "6660to60": 7.1,
+    "666Handling": 78,
+
+    "969TopSpeed": 126,
+    "9690to60": 6.7,
+    "969Handling": 81
+}

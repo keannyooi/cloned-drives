@@ -89,6 +89,15 @@ module.exports = {
                 answer = Math.round(args[1] * 90);
             }
         }
+		else if (args[0].toLowerCase() === "handlingest" && !isNaN(args[1]) && !isNaN(args[2]) && !isNaN(args[3]) && !isNaN(args[4]) && !isNaN(args[5])) {
+			let latG = args[1];
+			let oldAccel = args[2];
+			let newAccel = args[3];
+			let oldWeight = args[4];
+			let newWeight = args[5];
+			answer = latG * Math.cbrt(((oldAccel / newAccel) + (oldWeight / newWeight)) / 2);
+			answer = answer.toFixed(2);
+		}
         else if (args[0].toLowerCase() === "mra" && !isNaN(args[1]) && !isNaN(args[2])) {
             answer = 100 * (args[1] / (args[2] - args[1]));
             answer = answer.toFixed(2);
@@ -126,6 +135,7 @@ module.exports = {
             .setDescription("Wonder how the value is calculated? Here are the formulas.")
             .addFields(
                 { name: 'Calculating Handling', value: '`lateral g-force * 90`' },
+				{ name: 'Estimating Handling', value: '`lateral g-force * 90`' },
                 { name: 'Calculating Mid-Ranged Acceleration (MRA)', value: '`100 * (0-60mph time / (0-100mph time - 0-60mph time))`' },
                 { name: 'Calculating Off-the-Line Acceleration (OLA)', value: '`100 * (0-30mph time / (0-60mph time / 2))`' },
 				{ name: "Averaging Numbers", value: "`if you don't know that then your mafs bad`" }

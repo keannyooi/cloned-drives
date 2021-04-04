@@ -1,0 +1,50 @@
+{
+    "rq": 81,
+    "make": "Lexus",
+    "model": "LFA",
+    "modelYear": 2010,
+    "country": "JP",
+    "topSpeed": 202,
+    "0to60": 3.8,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["2021 Spring Collection", "Eargasm"],
+    "isPrize": true,
+
+    "weight": 1480,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 96.28,
+    "ola": 89.47,
+    "description": "A Japanese supercar with possibly the best-sounding V10 ever. Card by bnuuy",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/813398147736010762/lemuxlafa.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/813399104796229642/lfa.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/813399114711564298/lfa333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/813399131631779901/lfa666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/813399173797904427/lfa996.png",
+    "racehud969": "",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/813399154423758878/lfa699.png",
+
+    "333TopSpeed": 204,
+    "3330to60": 3.6,
+    "333Handling": 94,
+
+    "666TopSpeed": 206,
+    "6660to60": 3.4,
+    "666Handling": 97,
+
+    "996TopSpeed": 209,
+    "9960to60": 3.2,
+    "996Handling": 98,
+    
+    "699TopSpeed": 207,
+    "6990to60": 3.3,
+    "699Handling": 101
+}

@@ -33,15 +33,15 @@ module.exports = {
         });
 
         if (!args.length || !isNaN(args[0])) {
-            var page = 1;
+            let page = 1;
 			if (args[0]) {
-				page = args[0];
+				page = parseInt(args[0]);
 			}
 
             const totalPages = Math.ceil(commandArray.length / pageLimit);
             commandDisplay(page);
 
-            var listMessage = new Discord.MessageEmbed()
+            let listMessage = new Discord.MessageEmbed()
                 .setColor("#34aeeb")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                 .setTitle("Welcome to the Help Section!")
@@ -126,7 +126,7 @@ module.exports = {
                 return message.channel.send(errorMessage);
             }
 
-            var aliases = "";
+            let aliases = "";
             if (command.aliases) {
                 command.aliases.forEach(alias => {
                     aliases += alias + ", ";
@@ -136,12 +136,12 @@ module.exports = {
                 aliases = "None";
             }
 			
-			var cooldown = 5;
+			let cooldown = 5;
 			if (command.cooldown) {
 				cooldown = command.cooldown;
 			}
 
-            var syntax = "";
+            let syntax = "";
             if (command.args === 0) {
                 syntax = `\`${prefix}${command.name}\``;
             }

@@ -1,0 +1,46 @@
+{
+    "rq": 52,
+    "make": "Lexus",
+    "model": "RX 350 F Sport AWD",
+    "modelYear": 2013,
+    "country": "JP",
+    "topSpeed": 108,
+    "0to60": 7.0,
+    "handling": 71,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 2022,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 60.87,
+    "ola": 79.66,
+    "description": "Stretching the definition of sport. Card by Macan.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/812827341042352179/RX_350_F_Sport_AWD_13.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/812828480290029619/Lexus_RX_350_F_Sport_AWD_2013_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/812828488309538836/Lexus_RX_350_F_Sport_AWD_2013_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/812828492622331924/Lexus_RX_350_F_Sport_AWD_2013_666.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/812828503846158406/Lexus_RX_350_F_Sport_AWD_2013_969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 112,
+    "3330to60": 6.6,
+    "333Handling": 74,
+
+    "666TopSpeed": 117,
+    "6660to60": 6.1,
+    "666Handling": 76,
+
+    "969TopSpeed": 121,
+    "9690to60": 5.7,
+    "969Handling": 79
+}

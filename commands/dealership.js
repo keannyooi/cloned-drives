@@ -155,7 +155,11 @@ module.exports = {
 							stock = 5;
 						}
 					}
-					currentName = `${currentCard["make"]} ${currentCard["model"]} (${currentCard["modelYear"]})`;
+					let make = currentCard["make"];
+					if (typeof make === "object") {
+						make = currentCard["make"][0];
+					}
+					currentName = `${make} ${currentCard["model"]} (${currentCard["modelYear"]})`;
 					price = definePrice(currentCard["rq"]);
 					catalog[i] = { carFile: currentName.toLowerCase(), price: price, stock: stock };
 					i++;

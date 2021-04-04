@@ -1,0 +1,50 @@
+{
+    "rq": 71,
+    "make": "Lexus",
+    "model": "LF-A Sports Car Concept",
+    "modelYear": 2007,
+    "country": "JP",
+    "topSpeed": 200,
+    "0to60": 4.5,
+    "handling": 88,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Concept", "Eargasm"],
+    "isPrize": false,
+
+    "weight": 1520,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 97.83,
+    "ola": 80.00,
+    "description": "The 2nd Concept LFA by Lexus. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/813397770609098762/LF-ASportsconcept07.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/813398816682278962/lfasports.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/813398830640529448/lfasports333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/813398847661277204/lfasports666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/813398888417329202/lfasports996.png",
+    "racehud969": "",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/813398866795823124/lfasports699.png",
+
+    "333TopSpeed": 202,
+    "3330to60": 4.2,
+    "333Handling": 91,
+
+    "666TopSpeed": 204,
+    "6660to60": 4.0,
+    "666Handling": 94,
+
+    "996TopSpeed": 207,
+    "9960to60": 3.6,
+    "996Handling": 95,
+
+    "699TopSpeed": 205,
+    "6990to60": 3.7,
+    "699Handling": 98
+}

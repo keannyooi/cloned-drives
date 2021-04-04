@@ -1,0 +1,46 @@
+{
+    "rq": 47,
+    "make": "Lexus",
+    "model": "NX 200t F Sport AWD",
+    "modelYear": 2016,
+    "country": "JP",
+    "topSpeed": 126,
+    "0to60": 7.1,
+    "handling": 70,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1821,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 52.99,
+    "ola": 64.79,
+    "description": "Yet another 'sporty' Lexus. Toyota is running out of ideas.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/812827287992795186/NX_200t_F_Sport_AWD_16.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/812828359754645594/Lexus_NX_200t_F_Sport_AWD_2016_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/812828362740990023/Lexus_NX_200t_F_Sport_AWD_2016_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/812828365811613696/Lexus_NX_200t_F_Sport_AWD_2016_666.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/812828377605472347/Lexus_NX_200t_F_Sport_AWD_2016_969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 130,
+    "3330to60": 6.7,
+    "333Handling": 72,
+
+    "666TopSpeed": 133,
+    "6660to60": 6.2,
+    "666Handling": 75,
+
+    "969TopSpeed": 137,
+    "9690to60": 5.8,
+    "969Handling": 77
+}

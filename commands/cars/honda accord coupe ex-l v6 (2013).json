@@ -1,17 +1,16 @@
-﻿{
-    "rq": 55,
+{
+    "rq": 58,
     "make": "Honda",
     "model": "Accord Coupe EX-L V6",
     "modelYear": 2013,
     "country": "JP",
     "topSpeed": 132,
-    "0to60": 5.6,
-    "handling": 77,
+    "0to60": 5.5,
+    "handling": 76,
     "driveType": "FWD",
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
 
     "weight": 1465,
     "gc": "Medium",
@@ -21,41 +20,27 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 71.94,
+    "mra": 70.94,
     "ola": 89.66,
     "description": "Another unicorn car. Card by ChickenMcNuggets",
 
-
-    "card": "https://media.discordapp.net/attachments/715782088271331398/797135051346542642/accord_exl_cd.png?width=1154&height=718",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/797135267282157588/AccordCoupeV6St.png",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/797135276798509066/AccordCoupeV61.png",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/797135279999156224/AccordCoupeV62.png",
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/812418612047773796/accord_exl_cd.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/812417246580178944/exl_stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/812417286916145202/exl_1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/812417314750332958/exl_2.png",
     "racehud996": "",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/797135289561907231/AccordCoupeV6323.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/812417342688460870/exl_323.png",
     "racehud699": "",
 
-
-    "333TopSpeed": 136,
-    "3330to60": 5.3,
-    "333Handling": 80,
-
+    "333TopSpeed": 135,
+    "3330to60": 5.2,
+    "333Handling": 79,
 
     "666TopSpeed": 140,
     "6660to60": 4.9,
-    "666Handling": 83,
+    "666Handling": 82,
 
-
-    "996TopSpeed": 0,
-    "9960to60": 0,
-    "996Handling": 0,
-
-
-    "969TopSpeed": 144,
-    "9690to60": 4.6,
-    "969Handling": 85,
-
-
-    "699TopSpeed": 0,
-    "6990to60": 0,
-    "699Handling": 0
+    "969TopSpeed": 143,
+    "9690to60": 4.5,
+    "969Handling": 84
 }

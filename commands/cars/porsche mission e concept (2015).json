@@ -1,0 +1,50 @@
+{
+    "rq": 85,
+    "make": "Porsche",
+    "model": "Mission E Concept",
+    "modelYear": 2015,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 3.5,
+    "handling": 88,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Concept"],
+    "isPrize": false,
+
+    "weight": 2000,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 83.33,
+    "ola": 57.15,
+    "description": "E. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/813385478896091176/Econcpet.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/813386802954108939/missionE.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/813386813255057428/missionE333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/813386828727451728/missionE666.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/813386869806858240/MissionE969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/813386849355038740/MissionE699.png",
+
+    "333TopSpeed": 159,
+    "3330to60": 3.3,
+    "333Handling": 91,
+
+    "666TopSpeed": 163,
+    "6660to60": 3.2,
+    "666Handling": 94,
+
+    "969TopSpeed": 165,
+    "9690to60": 3.0,
+    "969Handling": 97,
+
+    "699TopSpeed": 164,
+    "6990to60": 3.0,
+    "699Handling": 98
+}

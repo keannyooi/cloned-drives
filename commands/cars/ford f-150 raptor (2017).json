@@ -1,0 +1,50 @@
+{
+    "rq": 68,
+    "make": "Ford",
+    "model": "F-150 Raptor",
+    "modelYear": 2017,
+    "country": "US",
+    "topSpeed": 108,
+    "0to60": 5.2,
+    "handling": 64,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 2568,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "Pickup",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 37.14,
+    "ola": 80.77,
+    "description": "Card by DodgeDemon",
+
+    "card": "https://media.discordapp.net/attachments/715782088271331398/812024758014836786/2017_Ford_F150_Raptor.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/812024868882612244/FordRaptor_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/812024907214618647/FordRaptor_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/812024952252792842/FordRaptor_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/812025051888091145/FordRaptor_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/812025011485278308/FordRaptor_969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 111,
+    "3330to60": 4.8,
+    "333Handling": 66,
+
+    "666TopSpeed": 114,
+    "6660to60": 4.6,
+    "666Handling": 69,
+
+    "996TopSpeed": 118,
+    "9960to60": 4.0,
+    "996Handling": 70,
+
+    "969TopSpeed": 117,
+    "9690to60": 4.2,
+    "969Handling": 71
+}

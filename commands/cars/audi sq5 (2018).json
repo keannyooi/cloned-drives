@@ -1,0 +1,61 @@
+﻿{
+    "rq": 69,
+    "make": "Audi",
+    "model": "SQ5",
+    "modelYear": 2018,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 5.3,
+    "handling": 84,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 2007,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 64.61,
+    "ola": 72.47,
+    "description": "Redesigned SQ5 focuses on handling rather than straight-line stuff. Card by ChickenMcNuggets",
+
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/811775526804389939/sq5_new.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/811773353182494750/big_boi_stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/811773386002923550/big_boi_1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/811773419892637716/big_boi_2.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/811773442821980200/big_boi_323.png",
+    "racehud699": "",
+
+
+    "333TopSpeed": 158,
+    "3330to60": 4.9,
+    "333Handling": 87,
+
+
+    "666TopSpeed": 161,
+    "6660to60": 4.5, 
+    "666Handling": 90,
+
+
+    "996TopSpeed": 0,
+    "9960to60": 0,
+    "996Handling": 0,
+
+
+    "969TopSpeed": 165,
+    "9690to60": 4.2,
+    "969Handling": 93,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

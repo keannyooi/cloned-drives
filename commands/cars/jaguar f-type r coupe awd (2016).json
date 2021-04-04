@@ -1,0 +1,50 @@
+{
+    "rq": 89,
+    "make": "Jaguar",
+    "model": "F-Type R Coupe AWD",
+    "modelYear": 2016,
+    "country": "GB",
+    "topSpeed": 186,
+    "0to60": 3.4,
+    "handling": 90,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1745,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 73.91,
+    "ola": 79.49,
+    "description": "AWD variant of a quick cat. Card by ChickenMcNuggets.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/811438761342009394/new_ftype.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/811387925164982272/jag_stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/811387959882154005/jag_1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/811387999077924873/jag_2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/811388112467001394/jag_332.png",
+    "racehud969": "",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/811388084146536448/jag_233.png",
+
+    "333TopSpeed": 189,
+    "3330to60": 3.2,
+    "333Handling": 93,
+
+    "666TopSpeed": 192,
+    "6660to60": 3.1,
+    "666Handling": 96,
+
+    "996TopSpeed": 198,
+    "9960to60": 2.9,
+    "996Handling": 96,
+
+    "699TopSpeed": 194,
+    "6990to60": 3.0,
+    "699Handling": 100
+}

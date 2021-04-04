@@ -1,4 +1,4 @@
-﻿{
+{
     "rq": 60,
     "make": "Jaguar",
     "model": "XKR",
@@ -12,10 +12,9 @@
     "tags": [],
     "isPrize": false,
 
-
     "weight": 1780,
     "gc": "Low",
-    "seatCount":4,
+    "seatCount": 4,
     "bodyStyle": "Coupe",
     "tcs": true,
     "abs": true,
@@ -25,7 +24,6 @@
     "ola": 84.44,
     "description": "The 2000’s Jag Coupe, for drivers that likes to go sideways with a cigar on his hand. Card by Spence",
 
-
     "card": "https://media.discordapp.net/attachments/715782088271331398/804435355314552832/image0.jpg",
     "racehud000": "https://media.discordapp.net/attachments/718097267621363744/804435471488647178/image0.jpg?width=1154&height=721",
     "racehud333": "https://media.discordapp.net/attachments/718097267621363744/804435503083421717/image0.jpg?width=1154&height=721",
@@ -34,26 +32,21 @@
     "racehud969": "https://media.discordapp.net/attachments/718097267621363744/804435586886270976/image0.jpg?width=1154&height=721",
     "racehud699": "https://media.discordapp.net/attachments/718097267621363744/804435561921642546/image0.jpg?width=1154&height=721",
 
-
     "333TopSpeed": 159,
     "3330to60": 4.2,
     "333Handling": 84,
-
 
     "666TopSpeed": 163,
     "6660to60": 4.0, 
     "666Handling": 87,
 
-
     "996TopSpeed": 167,
     "9960to60": 3.6,
     "996Handling": 87,
 
-
     "969TopSpeed": 167,
     "9690to60": 3.8,
     "969Handling": 90,
-
 
     "699TopSpeed": 163,
     "6990to60": 3.8,

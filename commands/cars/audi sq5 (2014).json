@@ -1,0 +1,61 @@
+﻿{
+    "rq": 68,
+    "make": "Audi",
+    "model": "SQ5",
+    "modelYear": 2014,
+    "country": "DE",
+    "topSpeed": 154,
+    "0to60": 4.8,
+    "handling": 77,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 2006,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 65.81,
+    "ola": 73.48,
+    "description": "Alarmingly quick and cornering with unexpected ferocity, the SQ5 is essentially an S4 wagon. Card by ChickenMcNuggets",
+
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/811775459221962792/sq5_for_realsies.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/811773912240881725/sq5_stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/811773957627445248/sq5_1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/811773992910061588/sq5_2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/811774065949278248/sq5_332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/811774029810761738/sq5_323.png",
+    "racehud699": "",
+
+
+    "333TopSpeed": 157,
+    "3330to60": 4.5,
+    "333Handling": 80,
+
+
+    "666TopSpeed": 160,
+    "6660to60": 4.2, 
+    "666Handling": 83,
+
+
+    "996TopSpeed": 167,
+    "9960to60": 3.7,
+    "996Handling": 83,
+
+
+    "969TopSpeed": 164,
+    "9690to60": 3.9,
+    "969Handling": 85,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

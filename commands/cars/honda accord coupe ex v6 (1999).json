@@ -1,0 +1,50 @@
+{
+    "rq": 33,
+    "make": "Honda",
+    "model": "Accord Coupe EX V6",
+    "modelYear": 1999,
+    "country": "JP",
+    "topSpeed": 132,
+    "0to60": 7.8,
+    "handling": 71,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1470,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 58.65,
+    "ola": 87.18,
+    "description": "*Basically* a front-drive NSX. Card by ChickenMcNuggets",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/811774909550034954/acorde_coupe.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/811773109963063316/acored_stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/811773190992035913/acored_1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/811773227001053254/acored_2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/811773281719943208/acored_332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/811773255576322118/acored_323.png",
+    "racehud699": "",
+
+    "333TopSpeed": 135,
+    "3330to60": 7.3,
+    "333Handling": 73,
+
+    "666TopSpeed": 138,
+    "6660to60": 6.8,
+    "666Handling": 76,
+
+	"996TopSpeed": 145,
+    "9960to60": 6.0,
+    "996Handling": 76,
+
+    "969TopSpeed": 142,
+    "9690to60": 6.3,
+    "969Handling": 79
+}

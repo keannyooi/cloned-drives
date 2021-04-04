@@ -1,0 +1,61 @@
+﻿{
+    "rq": 22,
+    "make": "Opel",
+    "model": "Adam “Slam” 1.0T",
+    "modelYear": 2013,
+    "country": "DE",
+    "topSpeed": 122,
+    "0to60": 9.8,
+    "handling": 75,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1145,
+    "gc": "Low",
+    "seatCount":4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 47.80,
+    "ola": 75.51,
+    "description": "With over 61,000 combination possibilities for the exterior and over 82,000 possibilities for the interior this is the Rolls-Royce of city cars. Card by Connor",
+
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/813320892889300992/E.OpelAdamSlam10T.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/813321577176236062/E.OpelAdamSlam10T.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/813321584948412436/E.OpelAdamSlam10T-1star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/813321602716270603/E.OpelAdamSlam10T-2star.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/813321624513282058/E.OpelAdamSlam10T-969.png",
+    "racehud699": "",
+
+
+    "333TopSpeed": 125,
+    "3330to60": 9.1,
+    "333Handling": 77,
+
+
+    "666TopSpeed": 128,
+    "6660to60": 8.5, 
+    "666Handling": 81,
+
+
+    "996TopSpeed": 0,
+    "9960to60": 0,
+    "996Handling": 0,
+
+
+    "969TopSpeed": 130,
+    "9690to60": 7.8,
+    "969Handling": 83,
+
+
+    "699TopSpeed": 0,
+    "6990to60": 0,
+    "699Handling": 0
+}

@@ -72,8 +72,10 @@ module.exports = {
 
 		let test = require(`./cars/${player.carFile}`), passed = true;
 		for (const [key, value] of Object.entries(event.roster[round - 1].requirements)) {
+			console.log(key, value);
             switch (typeof value) {
                 case "object":
+					console.log(test[`${key}`]);
 					if (test[`${key}`] < value.start || test[`${key}`] > value.end) {
 						passed = false;
 					}
@@ -86,8 +88,15 @@ module.exports = {
 						}
 					}
 					else {
-						if (value !== test[`${key}`].toLowerCase()) {
-							passed = false;
+						if (key === "car") {
+							if (value !== player.carFile) {
+								passed = false;
+							}
+						}
+						else {
+							if (value !== test[`${key}`].toLowerCase()) {
+								passed = false;
+							}
 						}
 					}
                     break;
@@ -95,8 +104,9 @@ module.exports = {
                     break;
             }
         }
+		console.log(passed);
 
-		if (!passed) {
+		if (passed === false) {
 			let make = test["make"];
 			if (typeof make === "object") {
 				make = test["make"][0];
@@ -112,7 +122,7 @@ module.exports = {
             return message.channel.send(errorMessage);
 		}
 
-		if (event.isActive || message.member.roles.cache.has("711790752853655563")) {
+		if (event.isActive || message.member.roles.cache.has("802043346951340064")) {
 			const track = require(`./tracksets/${event.roster[round - 1].trackset}`);
 			const opponent = { carFile: event.roster[round - 1].car, gearingUpgrade: event.roster[round - 1].gearingUpgrade, engineUpgrade: event.roster[round - 1].engineUpgrade, chassisUpgrade: event.roster[round - 1].chassisUpgrade };
 			const playerCar = createCar(player);
@@ -206,7 +216,7 @@ module.exports = {
                 .setColor("#fc0303")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                 .setTitle("Erorr, you may not play this event yet.")
-                .setDescription("The event you are trying to play is not active currently. This is only bypassable if you are an Admin.")
+                .setDescription("The event you are trying to play is not active currently. This is only bypassable if you are part of Community Management.")
                 .setTimestamp();
             return message.channel.send(errorMessage);
 		}

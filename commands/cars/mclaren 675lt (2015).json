@@ -1,0 +1,55 @@
+{
+    "rq": 93,
+    "make": "McLaren",
+    "model": "675LT",
+    "modelYear": 2015,
+    "country": "GB",
+    "topSpeed": 205,
+    "0to60": 2.8,
+    "handling": 93,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Supercar"],
+    "isPrize": false,
+
+    "weight": 1230,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 110.30,
+    "ola": 93.74,
+    "description": "The big brother of the 650S. Card by Smegma",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/812458463963512862/CD_McLaren_675LT.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/812456466643812432/CD_McLaren_675LT_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/812456477066788905/CD_McLaren_675LT_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/812456484654153738/CD_McLaren_675LT_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/812456519986839562/CD_McLaren_675LT_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/812456505461964820/CD_McLaren_675LT_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/812456492610617384/CD_McLaren_675LT_699.png",
+
+    "333TopSpeed": 209,
+    "3330to60": 2.7,
+    "333Handling": 96,
+
+    "666TopSpeed": 213,
+    "6660to60": 2.5,
+    "666Handling": 99,
+
+    "969TopSpeed": 217,
+    "9690to60": 2.3,
+    "969Handling": 103,
+	
+	  "699TopSpeed": 214,
+	  "6990to60": 2.3,
+	  "699Handling": 103,
+	
+  	"996TopSpeed": 218,
+	  "9960to60": 2.2,
+	  "996Handling": 100
+	
+}

@@ -1,0 +1,50 @@
+{
+    "rq": 70,
+    "make": "Lexus",
+    "model": "LF-A Roadster Concept",
+    "modelYear": 2008,
+    "country": "2-Letter Country Code",
+    "topSpeed": 200,
+    "0to60": 4.6,
+    "handling": 87,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Concept", "Eargasm"],
+    "isPrize": false,
+
+    "weight": 1570,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 100.00,
+    "ola": 80.00,
+    "description": "A stylish convertible of the LF-A Sports Car Concept. Card by Bnuuy",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/813397815866032138/LF-Aroadsterconcept08.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/813398938782007296/lfaroadster.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/813398950190907413/lfaroadster333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/813398963310952448/lfaroadster666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/813399018737500190/lfaroadster996.png",
+    "racehud969": "",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/813398999401889812/lfaroadster699.png",
+
+    "333TopSpeed": 202,
+    "3330to60": 4.3,
+    "333Handling": 90,
+
+    "666TopSpeed": 204,
+    "6660to60": 4.1,
+    "666Handling": 93,
+
+    "996TopSpeed": 207,
+    "9960to60": 3.7,
+    "996Handling": 94,
+
+    "699TopSpeed": 205,
+    "6990to60": 3.8,
+    "699Handling": 97
+}

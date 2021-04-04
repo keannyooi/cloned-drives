@@ -1,0 +1,46 @@
+{
+    "rq": 81,
+    "make": "Lexus",
+    "model": "LFA Spyder",
+    "modelYear": 2012,
+    "country": "JP",
+    "topSpeed": 202,
+    "0to60": 3.8,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eargasm"],
+    "isPrize": true,
+
+    "weight": 1510,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 96.28,
+    "ola": 89.50,
+    "description": "A very limited version of the LFA. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/813398209543929867/SPODERHOW.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/813399208967012412/lfaspyder.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/813399218194219028/lfaspyder333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/813399232329285672/lfaspyder666.png",
+    "racehud996": "",
+    "racehud969": "",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/813399260535455744/lfaspyder699.png",
+
+    "333TopSpeed": 204,
+    "3330to60": 3.6,
+    "333Handling": 94,
+
+    "666TopSpeed": 206,
+    "6660to60": 3.4,
+    "666Handling": 97,
+
+    "699TopSpeed": 207,
+    "6990to60": 3.3,
+    "699Handling": 101
+}

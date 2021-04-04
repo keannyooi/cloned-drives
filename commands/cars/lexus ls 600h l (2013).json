@@ -1,0 +1,46 @@
+{
+    "rq": 57,
+    "make": "Lexus",
+    "model": "LS 600h L",
+    "modelYear": 2013,
+    "country": "JP",
+    "topSpeed": 137,
+    "0to60": 6.3,
+    "handling": 72,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 2481,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 75.00,
+    "ola": 75.00,
+    "description": "Luxury and refinement come at a heavy cost, one that's nearly 2.5 tonnes. Card by Macan.",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/812827652355653682/Lexus_LS_600h_L_2013.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/812828301496156190/Lexus_LS_600h_L_2013_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/812828308416364544/Lexus_LS_600h_L_2013_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/812828316981395466/Lexus_LS_600h_L_2013_666.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/812828320790085632/Lexus_LS_600h_L_2013_969.png",
+    "racehud699": "",
+
+    "333TopSpeed": 141,
+    "3330to60": 5.9,
+    "333Handling": 75,
+
+    "666TopSpeed": 145,
+    "6660to60": 5.5,
+    "666Handling": 77,
+
+    "969TopSpeed": 149,
+    "9690to60": 5.1,
+    "969Handling": 80
+}

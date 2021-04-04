@@ -1,0 +1,55 @@
+{
+    "rq": 24,
+    "make": "Ford",
+    "model": "Transit 350 XLT",
+    "modelYear": 2015,
+    "country": "US",
+    "topSpeed": 97,
+    "0to60": 7.6,
+    "handling": 63,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 2926,
+    "gc": "Low",
+    "seatCount": 7,
+    "bodyStyle": "Minivan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 17.88,
+    "ola": 65.32,
+    "description": "Ford's Promising Van in EcoBoost and Diesel Forms. Card by Smegma",
+
+    "card": "https://cdn.discordapp.com/attachments/715782088271331398/812898145351499816/CD_Ford_Transit_350_XLT.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/812897994528915496/CD_Ford_Transit_350_XLT_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/812898000014802965/CD_Ford_Transit_350_XLT_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/812898008484151316/CD_Ford_Transit_350_XLT_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/812898035247480832/CD_Ford_Transit_350_XLT_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/812898029223805009/CD_Ford_Transit_350_XLT_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/812898017677803530/CD_Ford_Transit_350_XLT_699.png",
+
+    "333TopSpeed": 102,
+    "3330to60": 7.1,
+    "333Handling": 65,
+
+    "666TopSpeed": 106,
+    "6660to60": 6.5,
+    "666Handling": 67,
+
+    "969TopSpeed": 111,
+    "9690to60": 6.1,
+    "969Handling": 70,
+	
+	"996TopSpeed": 112,
+	"9960to60": 5.8,
+	"996Handling": 67,
+	
+	"699TopSpeed": 107,
+	"6990to60": 6.2,
+	"699Handling": 70
+	
+}
