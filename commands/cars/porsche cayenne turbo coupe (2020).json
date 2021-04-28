@@ -1,5 +1,5 @@
 ﻿{
-    "rq": 96,
+    "rq": 102,
     "make": "Porsche",
     "model": "Cayenne Turbo Coupe",
     "modelYear": 2020,
@@ -26,34 +26,30 @@
     "description": "A Fire-Breathing SUV with Fashion Sense. Card by Exist",
 
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/805750794800463912/CD_Porsche_Cayenne_Turbo_Coupe.png?width=1154&height=718",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/805750300609609808/CD_Porsche_Cayenne_Turbo_Coupe_000.png?width=1154&height=718",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/805750311876427816/CD_Porsche_Cayenne_Turbo_Coupe_333.png?width=1154&height=718",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/805750325327691776/CD_Porsche_Cayenne_Turbo_Coupe_666.png?width=1154&height=718",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/805750370152349696/CD_Porsche_Cayenne_Turbo_Coupe_996.png?width=1154&height=718",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/805750356650098708/CD_Porsche_Cayenne_Turbo_Coupe_969.png?width=1154&height=718",
-    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/805750350619475968/CD_Porsche_Cayenne_Turbo_Coupe_699.png?width=1154&height=718",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824360543614795833/CD_Porsche_Cayenne_Turbo_Coupe.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824360712414691358/broken.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824360717654294558/broken333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824360723286851594/broken666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824360750218608680/broken996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824360739582115850/broken969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824360730182156348/broken699.png",
 
 
     "333TopSpeed": 181,
     "3330to60": 3.2,
     "333Handling": 91,
 
-
-    "666TopSpeed": 183,
-    "6660to60": 3.0, 
+    "666TopSpeed": 184,
+    "6660to60": 3.1, 
     "666Handling": 94,
 
+    "996TopSpeed": 187,
+    "9960to60": 2.9,
+    "996Handling": 94,
 
-    "996TopSpeed": 186,
-    "9960to60": 2.8,
-    "996Handling": 95,
-
-
-    "969TopSpeed": 185,
-    "9690to60": 2.9,
-    "969Handling": 97,
-
+    "969TopSpeed": 187,
+    "9690to60": 3.1,
+    "969Handling": 98,
 
     "699TopSpeed": 184,
     "6990to60": 2.9,

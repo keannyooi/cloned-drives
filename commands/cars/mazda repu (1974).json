@@ -1,5 +1,5 @@
 {
-    "rq": 19,
+    "rq": 23,
     "make": "Mazda",
     "model": "REPU",
     "modelYear": 1974,
@@ -24,27 +24,30 @@
     "ola": 70.91,
     "description": "Wankel meets pickup. What could go wrong? Card by andu",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/783287593613656074/MazdaREPU.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/783287704825626644/REPUStock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/783287732708835359/REPU1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/783287783703445504/REPU2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/787945776381820958/REPUMaxed332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/783287809749811200/REPUMaxed323.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/822058707302744074/MazdaREPU.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/822059560466120724/epu.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/822059571748143124/epu1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/822059574013722695/epu2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/822059596628623370/epu996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/822059590220382208/epu969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/822059578987511848/epu699.png",
 
-    "333TopSpeed": 106,
-    "3330to60": 10.0,
+    "333TopSpeed": 108,
+    "3330to60": 10.5,
     "333Handling": 63,
 
-    "666TopSpeed": 110,
-    "6660to60": 9.3,
-    "666Handling": 66,
+    "666TopSpeed": 113,
+    "6660to60": 9.9,
+    "666Handling": 65,
 
-	"996TopSpeed": 114,
-    "9960to60": 8.3,
-    "996Handling": 66,
+    "996TopSpeed": 118,
+    "9960to60": 9.4,
+    "996Handling": 65,
 
-    "969TopSpeed": 113,
-    "9690to60": 8.6,
-    "969Handling": 68
-}
+    "969TopSpeed": 118,
+    "9690to60": 9.9,
+    "969Handling": 68,
+
+    "699TopSpeed": 113,
+    "6990to60": 9.4,
+    "699Handling": 68

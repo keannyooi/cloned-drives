@@ -1,5 +1,5 @@
 {
-    "rq": 73,
+    "rq": 71,
     "make": "Jaguar",
     "model": "F-Type V8 S Convertible",
     "modelYear": 2013,
@@ -24,13 +24,13 @@
     "ola": 85.61,
     "description": "Card by Havvy.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/803325764899831888/JaguarF-TypeV8SConv.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/803325848358748190/000ftype.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/803325861901631488/111ftype.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/803325869183205408/222ftype.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/803325903002140742/332ftype.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/803325893731811328/323ftype.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/803325887943671809/233ftype.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/825726837808168970/JaguarF-TypeV8SConv.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/825726921353461791/000_ftypv8sc.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/825726926114652240/111_ftypv8sc.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/825726931416383518/222_ftypv8sc.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/825726944002965534/332_ftypv8sc.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/825726939682701373/323_ftypv8sc.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/825726935538991104/233_ftypv8sc.png",
 
     "333TopSpeed": 189,
     "3330to60": 3.8,
@@ -40,15 +40,15 @@
     "6660to60": 3.6,
     "666Handling": 92,
 
-    "996TopSpeed": 197,
-    "9960to60": 3.3,
+    "996TopSpeed": 194,
+    "9960to60": 3.4,
     "996Handling": 92,
 
-    "969TopSpeed": 197,
-    "9690to60": 3.4,
+    "969TopSpeed": 194,
+    "9690to60": 3.6,
     "969Handling": 95,
 
-    "699TopSpeed": 195,
+    "699TopSpeed": 192,
     "6990to60": 3.4,
     "699Handling": 95
 }

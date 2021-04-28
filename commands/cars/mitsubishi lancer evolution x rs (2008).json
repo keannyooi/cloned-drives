@@ -1,5 +1,5 @@
 {
-    "rq": 75,
+    "rq": 74,
     "make": "Mitsubishi",
     "model": "Lancer Evolution X RS",
     "modelYear": 2008,
@@ -24,23 +24,31 @@
     "ola": 73.47,
     "description": "The RS stands for Ralli Sport. Card by Bnuuy.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/812031036162179123/evoxrs.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/812031669783494686/evoxrs.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/812031684647583815/evoxrs333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/812031701999157268/evoxrs666.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/812031719947501631/evoxrs969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820726326137978900/XRS.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820726921352314890/xrs.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820726928134373436/xrs333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820726935578476595/xrs666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820726963898679336/xrs996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820726953589735424/xrs969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820726943649103922/xrs699.png",
 
-    "333TopSpeed": 159,
-    "3330to60": 4.6,
+    "333TopSpeed": 158,
+    "3330to60": 4.7,
     "333Handling": 93,
 
-    "666TopSpeed": 163,
-    "6660to60": 4.3,
+    "666TopSpeed": 162,
+    "6660to60": 4.4,
     "666Handling": 96,
 
+    "996TopSpeed": 165,
+    "9960to60": 4.2,
+    "996Handling": 96,
+
     "969TopSpeed": 165,
-    "9690to60": 4.0,
-    "969Handling": 100
+    "9690to60": 4.4,
+    "969Handling": 100,
+
+    "699TopSpeed": 162,
+    "6990to60": 4.2,
+    "699Handling": 100
 }

@@ -1,5 +1,5 @@
 {
-    "rq": 34,
+    "rq": 38,
     "make": "Acura",
     "model": "Legend LS",
     "modelYear": 1991,
@@ -9,7 +9,7 @@
     "handling": 70,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["2021 Spring Collection"],
+    "tags": [],
     "isPrize": false,
 
     "weight": 1567,
@@ -24,23 +24,31 @@
     "ola": 72.73,
     "description": "A Legend. Literally. Card by Based",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/812079702964568064/Acura_Legend_LS.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/812079386491879464/Acura_Legend_Stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/812079548983148554/Acura_Legend_LS_1_Star.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/812079570408177714/Acura_Legend_LS_2_Star.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/812079608392450091/Acura_Legend_323.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819903456466829322/Acura_Legend_LS.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819903224890392586/Acura_Legend_STOCK.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819903281601839114/Acura_Legend_1_star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819903294523703316/Acura_Legend_2_star.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819903325649633280/Acura_Legend_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819903315755663400/Acura_Legend_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819903306285318144/Acura_Legend_699.png",
 
-    "333TopSpeed": 137,
-    "3330to60": 7.2,
+    "333TopSpeed": 138,
+    "3330to60": 7.3,
     "333Handling": 72,
 
-    "666TopSpeed": 140,
-    "6660to60": 6.7, 
-    "666Handling": 74,
+    "666TopSpeed": 142,
+    "6660to60": 6.9, 
+    "666Handling": 75,
 
-    "969TopSpeed": 143,
-    "9690to60": 6.3,
-    "969Handling": 77
+    "996TopSpeed": 146,
+    "9960to60": 6.5,
+    "996Handling": 75,
+
+    "969TopSpeed": 146,
+    "9690to60": 6.9,
+    "969Handling": 78,
+
+    "699TopSpeed": 142,
+    "6990to60": 6.5,
+    "699Handling": 78
 }

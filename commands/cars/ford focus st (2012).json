@@ -1,5 +1,5 @@
-﻿{
-    "rq": 48,
+{
+    "rq": 52,
     "make": "Ford",
     "model": "Focus ST",
     "modelYear": 2012,
@@ -12,7 +12,6 @@
     "tags": ["Hot Hatch"],
     "isPrize": false,
 
-
     "weight": 1362,
     "gc": "Medium",
     "seatCount": 5,
@@ -21,41 +20,35 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 63,
+    "mra": 63.00,
     "ola": 92.06,
     "description": "Wheelspin gang. Card by Andu",
 
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820393646548451378/FocusST.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820393432160665611/FocusST.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820393442228043817/FocusST1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820393450117529651/FocusST2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820393471298633811/FocusST996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820393465329745950/FocusST969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820393458073075712/FocusST699.png",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/797592633676791869/FocusSTCD.png?width=1154&height=719",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/797599585010057216/FocusSTSt.png",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/797599589715804170/FocusST1.png",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/797599593982328832/FocusST2.png",
-    "racehud996": "",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/797599599392587816/FocusST323.png",
-    "racehud699": "",
-
-
-    "333TopSpeed": 156,
-    "3330to60": 5.9,
+    "333TopSpeed": 155,
+    "3330to60": 6.0,
     "333Handling": 87,
 
-
-    "666TopSpeed": 160,
-    "6660to60": 5.5, 
+    "666TopSpeed": 159,
+    "6660to60": 5.7,
     "666Handling": 90,
 
+    "996TopSpeed": 162,
+    "9960to60": 5.4,
+    "996Handling": 90,
 
-    "996TopSpeed": 0,
-    "9960to60": 0,
-    "996Handling": 0,
-
-
-    "969TopSpeed": 164,
-    "9690to60": 5.2,
+    "969TopSpeed": 162,
+    "9690to60": 5.7,
     "969Handling": 93,
 
-
-    "699TopSpeed": 0,
-    "6990to60": 0,
-    "699Handling": 0
+    "699TopSpeed": 159,
+    "6990to60": 5.4,
+    "699Handling": 93
 }

@@ -1,0 +1,54 @@
+{
+    "rq": 41,
+    "make": ["Abarth", "Fiat"],
+    "model": "124 Spider",
+    "modelYear": 2016,
+    "country": "IT",
+    "topSpeed": 140,
+    "0to60": 6.6,
+    "handling": 82,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Servers Choice", "OG"],
+    "isPrize": false,
+
+    "weight": 1080,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Roadster",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 55.75,
+    "ola": 66.67,
+    "description": "Not satisfied with the 124 being just an Italian Miata, Abarth added more vroom to it. Card by Keanny",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824805127302676510/abarth_124.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824805207300636672/aborth_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824805213860003851/aborth_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824805220293804102/aborth_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824805255169704036/aborth_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824805243060879370/aborth_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824805233405329458/aborth_699.jpg",
+
+    "333TopSpeed": 144,
+    "3330to60": 6.3,
+    "333Handling": 85,
+
+    "666TopSpeed": 147,
+    "6660to60": 5.9,
+    "666Handling": 87,
+
+    "699TopSpeed": 147,
+    "6990to60": 5.6,
+    "699Handling": 91,
+
+    "969TopSpeed": 151,
+    "9690to60": 5.9,
+    "969Handling": 91,
+    
+    "996TopSpeed": 151,
+    "9960to60": 5.6,
+    "996Handling": 87
+}

@@ -1,0 +1,54 @@
+{
+    "rq": 70,
+    "make": "Volkswagen",
+    "model": "Arteon 4Motion R-Line",
+    "modelYear": 2017,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 5.3,
+    "handling": 80,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1753,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.25,
+    "ola": 67.92,
+    "description": "Avant-garde gran turismo. Card by Andu",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/822421217885159434/ArteonEU.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/822421550221099029/ArteonRline.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/822421557732442162/ArteonRline1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/822421563126317086/ArteonRline2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/822421584387768350/ArteonRline996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/822421577697853500/ArteonRline969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/822421570613936188/ArteonRline699.png",
+
+    "333TopSpeed": 158,
+    "3330to60": 5.0,
+    "333Handling": 83,
+
+    "666TopSpeed": 162,
+    "6660to60": 4.8, 
+    "666Handling": 85,
+
+    "996TopSpeed": 165,
+    "9960to60": 4.5,
+    "996Handling": 85,
+
+    "969TopSpeed": 165,
+    "9690to60": 4.8,
+    "969Handling": 89,
+
+    "699TopSpeed": 162,
+    "6990to60": 4.5,
+    "699Handling": 89
+}

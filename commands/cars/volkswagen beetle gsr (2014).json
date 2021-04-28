@@ -1,5 +1,5 @@
 ﻿{
-    "rq": 49,
+    "rq": 54,
     "make": "Volkswagen",
     "model": "Beetle GSR",
     "modelYear": 2014,
@@ -26,36 +26,31 @@
     "description": "The driver’s beetle re-born. Card by Spence",
 
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/802076993080000532/image0.jpg?width=1154&height=714",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/802077083320582154/image0.jpg?width=1154&height=720",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/802077106527010826/image0.jpg?width=1154&height=720",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/802077161694953493/image0.jpg?width=1154&height=720",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/802077245485088781/image0.jpg?width=1154&height=720",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/802077193999351808/image0.jpg?width=1154&height=720",
-    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/802077221241618453/image0.jpg?width=1154&height=720",
-
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824738829989707796/BeetleGSR.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824739353241583666/BGSR.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824739360149864478/BGSR1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824739365204131850/BGSR2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824739387308769310/BGSR996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824739380769194054/BGSR969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824739372195774484/BGSR699.png",
 
     "333TopSpeed": 131,
-    "3330to60": 5.9,
+    "3330to60": 6.0,
     "333Handling": 81,
 
-
     "666TopSpeed": 135,
-    "6660to60": 5.5, 
-    "666Handling": 84,
+    "6660to60": 5.7, 
+    "666Handling": 83,
 
+    "996TopSpeed": 139,
+    "9960to60": 5.4,
+    "996Handling": 83,
 
-    "996TopSpeed": 138,
-    "9960to60": 5.0,
-    "996Handling": 85,
-
-
-    "969TopSpeed": 138,
-    "9690to60": 5.2,
-    "969Handling": 86,
-
+    "969TopSpeed": 139,
+    "9690to60": 5.7,
+    "969Handling": 87,
 
     "699TopSpeed": 135,
-    "6990to60": 5.2,
+    "6990to60": 5.4,
     "699Handling": 87
 }

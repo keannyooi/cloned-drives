@@ -1,5 +1,5 @@
 {
-    "rq": 40,
+    "rq": 46,
     "make": "Acura",
     "model": "Integra Type R",
     "modelYear": 1997,
@@ -24,23 +24,31 @@
     "ola": 72.74,
     "description": "A V-Tech Engine now with less weight and more power. Card by Andu.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/810475967742476288/integra.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/810474954139238431/unknown.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/810475128340086784/unknown.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/810475203989209088/unknown.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/810475265930821652/unknown.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824425388704530442/integraTR.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824430268730572850/itr.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824430273256095764/itr333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824430282320117800/itr666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824430321470406656/itr996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824430311147700254/itr969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824430291342458882/itr699.png",
 
     "333TopSpeed": 147,
-    "3330to60": 6.2,
+    "3330to60": 6.3,
     "333Handling": 82,
 
-    "666TopSpeed": 152,
-    "6660to60": 5.8,
-    "666Handling": 85,
+    "666TopSpeed": 150,
+    "6660to60": 5.9,
+    "666Handling": 84,
 
-    "969TopSpeed": 155,
-    "9690to60": 5.4,
-    "969Handling": 88
+    "996TopSpeed": 154,
+    "9960to60": 5.6,
+    "996Handling": 84,
+
+    "969TopSpeed": 154,
+    "9690to60": 5.9,
+    "969Handling": 88,
+
+    "699TopSpeed": 150,
+    "6990to60": 5.6,
+    "699Handling": 88
 }

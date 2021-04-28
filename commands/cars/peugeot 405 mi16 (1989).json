@@ -1,5 +1,5 @@
 {
-    "rq": 31,
+    "rq": 36,
     "make": "Peugeot",
     "model": "405 Mi16",
     "modelYear": 1989,
@@ -24,23 +24,31 @@
     "ola": 74.07,
     "description": "A Peugeot in the USA just before they withdrew their cars away. Card by DodgeDemon",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/784103384302223360/1989_Peugeot_405_Mi16.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/784103592034172958/Peugeot405Mi16Stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/784103699555155990/Peugeot405Mi16333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/784103792877764629/Peugeot405Mi16666.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/784103839154307082/Peugeot405Mi16969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824644824572493904/405mi16thingy.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824645006606336020/pigot.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824645011878314004/pigot333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824645019188985927/pigot666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824645043578994749/pigot996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824645035928322068/pigot969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824645027129065532/pigot699.png",
 
     "333TopSpeed": 139,
-    "3330to60": 7.5,
+    "3330to60": 7.7,
     "333Handling": 80,
 
     "666TopSpeed": 143,
-    "6660to60": 6.9,
-    "666Handling": 83,
+    "6660to60": 7.3,
+    "666Handling": 82,
 
-    "969TopSpeed": 146,
-    "9690to60": 6.5,
-    "969Handling": 85
+	"996TopSpeed": 147,
+    "9960to60": 6.9,
+    "996Handling": 82,
+
+    "969TopSpeed": 147,
+    "9690to60": 7.3,
+    "969Handling": 85,
+
+	"699TopSpeed": 143,
+    "6990to60": 6.9,
+    "699Handling": 85
 }

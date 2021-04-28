@@ -1,5 +1,5 @@
 {
-    "rq": 47,
+    "rq": 48,
     "make": "Lamborghini",
     "model": "Miura P400SV",
     "modelYear": 1971,
@@ -24,13 +24,13 @@
     "ola": 78.57,
     "description": "The worlds fastest car for a short period of time. Card by Bnuuy.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/799316026982268948/miurasv1.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/799316110767947825/miurasv.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/799316128458866740/miurasv333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/799316145655906394/miurasv666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/799316216287199232/miurasv996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/799316196280369182/miurasv969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/799316171924963348/miurasv699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/821039058566381599/Miura.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821039301433229363/miura.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821039306075537418/miura333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821039311117352960/miura666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821039336626585620/miura996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821039328242958356/miura969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821039318897786890/miura699.png",
 
     "333TopSpeed": 183,
     "3330to60": 5.5,
@@ -38,17 +38,17 @@
 
     "666TopSpeed": 186,
     "6660to60": 5.2,
-    "666Handling": 85,
+    "666Handling": 84,
 
-    "996TopSpeed": 190,
-    "9960to60": 4.8,
-    "996Handling": 86,
+    "996TopSpeed": 189,
+    "9960to60": 4.9,
+    "996Handling": 84,
 
     "969TopSpeed": 189,
-    "9690to60": 4.9,
-    "969Handling": 87,
+    "9690to60": 5.2,
+    "969Handling": 88,
 
-    "699TopSpeed": 188,
-    "6990to60": 5.0,
+    "699TopSpeed": 186,
+    "6990to60": 4.9,
     "699Handling": 88
 }

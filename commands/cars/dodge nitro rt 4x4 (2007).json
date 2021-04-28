@@ -1,5 +1,5 @@
 {
-    "rq": 47,
+    "rq": 48,
     "make": "Dodge",
     "model": "Nitro RT 4x4",
     "modelYear": 2007,
@@ -24,27 +24,31 @@
     "ola": 78.26,
     "description": "A tamed Jeep renowned for having shit handling. Card by keanny",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/717670720766738442/dodge_nitro_rt_4x4.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/718268468188676177/dodge_nitro_rt_4x4.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/718268568617353246/dodge_nitro_rt_4x4_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/718268603572682772/dodge_nitro_rt_4x4_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/718268642361344131/dodge_nitro_rt_4x4_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/777110620700672030/nitro_969.jpg",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819383596820594739/nitro.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819908521016950844/nitro_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819908527161999360/nitro_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819908533347680276/nitro_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819908613815664641/nitro_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819908561802100736/nitro_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819908552034484224/nitro_699.jpg",
 
-    "333TopSpeed": 117,
-    "3330to60": 6.5,
-    "333Handling": 60,
+    "333TopSpeed": 119,
+    "3330to60": 6.6,
+    "333Handling": 61,
 
-    "666TopSpeed": 120,
-    "6660to60": 6.0,
-    "666Handling": 62,
+    "666TopSpeed": 123,
+    "6660to60": 6.2,
+    "666Handling": 63,
 
-    "996TopSpeed": 123,
-    "9960to60": 5.5,
+    "996TopSpeed": 128,
+    "9960to60": 5.9,
     "996Handling": 63,
 
-    "969TopSpeed": 123,
-    "9690to60": 5.6,
-    "969Handling": 65
+    "969TopSpeed": 128,
+    "9690to60": 6.2,
+    "969Handling": 65,
+
+	"699TopSpeed": 123,
+    "6990to60": 5.9,
+    "699Handling": 65
 }

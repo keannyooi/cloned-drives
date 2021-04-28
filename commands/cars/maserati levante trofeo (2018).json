@@ -1,5 +1,5 @@
 {
-    "rq": 85,
+    "rq": 86,
     "make": "Maserati",
     "model": "Levante Trofeo",
     "modelYear": 2018,
@@ -20,17 +20,17 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 70.59,
-    "ola": 60.00,
+    "mra": 72.45,
+    "ola": 81.69,
     "description": "Card by DodgeDemon.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/799507200942800926/2018_Maserati_Levante_Trofeo.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/799507282869354536/trofeo.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/799507298674409502/trofeo333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/799507312241934366/trofeo666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/799507408832692254/trofeo996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/799507360153337886/trofeo969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/799507336926461972/trofeo699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819422274767028284/2018_Maserati_Levante_Trofeo.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823933853868884008/Trof.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823933858192818266/trof333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823933863176437790/trof666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823933884323856414/trof996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823933877184888882/trof969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823933871216918568/trof699.png",
 
     "333TopSpeed": 192,
     "3330to60": 3.4,
@@ -38,17 +38,17 @@
 
     "666TopSpeed": 195,
     "6660to60": 3.2,
-    "666Handling": 88,
+    "666Handling": 87,
 
-    "996TopSpeed": 199,
-    "9960to60": 3.0,
-    "996Handling": 89,
+    "996TopSpeed": 197,
+    "9960to60": 3.1,
+    "996Handling": 87,
 
-    "969TopSpeed": 198,
-    "9690to60": 3.1,
+    "969TopSpeed": 197,
+    "9690to60": 3.2,
     "969Handling": 91,
 
-    "699TopSpeed": 197,
+    "699TopSpeed": 195,
     "6990to60": 3.1,
     "699Handling": 91
 }

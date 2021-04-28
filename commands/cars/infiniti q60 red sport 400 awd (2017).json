@@ -1,5 +1,5 @@
-﻿{
-    "rq": 66,
+{
+    "rq": 64,
     "make": "Infiniti",
     "model": "Q60 Red Sport 400 AWD",
     "modelYear": 2017,
@@ -12,10 +12,9 @@
     "tags": [],
     "isPrize": false,
 
-
     "weight": 1875,
     "gc": "Low",
-    "seatCount":4,
+    "seatCount": 4,
     "bodyStyle": "Coupe",
     "tcs": true,
     "abs": true,
@@ -25,37 +24,31 @@
     "ola": 75.56,
     "description": "Red cherry but AWD. Card by DodgeDemon",
 
-
-    "card": "https://media.discordapp.net/attachments/715782088271331398/804554180764762142/image0.png?width=1154&height=718",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/804554264084217896/image0.jpg?width=1154&height=721",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/804554289770135552/image0.jpg?width=1154&height=722",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/804554337271414804/image0.jpg?width=1154&height=722",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/804554440295186473/image0.jpg?width=1154&height=722",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/804554419445825576/image0.jpg?width=1154&height=722",
-    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/804554398616780840/image0.jpg?width=1154&height=722",
-
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/821043867976597504/2017_Infiniti_Q60S_400_AWD.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824605284923998218/Q60.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824605291290951680/q60333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824605296172859422/q60666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824605329433427998/q60996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824605312094568498/q60969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824605304821907477/q60699.png",
 
     "333TopSpeed": 159,
-    "3330to60": 4.2,
+    "3330to60": 4.3,
     "333Handling": 84,
 
+    "666TopSpeed": 162,
+    "6660to60": 4.1, 
+    "666Handling": 86,
 
-    "666TopSpeed": 163,
-    "6660to60": 4.0, 
-    "666Handling": 87,
+    "996TopSpeed": 165,
+    "9960to60": 3.8,
+    "996Handling": 86,
 
-
-    "996TopSpeed": 167,
-    "9960to60": 3.7,
-    "996Handling": 87,
-
-
-    "969TopSpeed": 167,
-    "9690to60": 3.8,
+    "969TopSpeed": 165,
+    "9690to60": 4.1,
     "969Handling": 90,
 
-
-    "699TopSpeed": 163,
+    "699TopSpeed": 162,
     "6990to60": 3.8,
     "699Handling": 90
 }

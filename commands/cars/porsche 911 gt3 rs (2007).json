@@ -1,5 +1,5 @@
 {
-    "rq": 76,
+    "rq": 74,
     "make": "Porsche",
     "model": "911 GT3 RS",
     "modelYear": 2007,
@@ -9,7 +9,7 @@
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [],
+    "tags": ["Supercar", "Track Day"],
     "isPrize": false,
 
     "weight": 1370,
@@ -24,23 +24,31 @@
     "ola": 92.68,
     "description": "The first 997 GT3 RS with a 3.6L flat-6. Card by havvy",
 
-    "card": "https://cdn.discordapp.com/attachments/733973415366623274/779300810893950976/Porsche911GT3RS.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/779301030390661120/911GT3RS07Stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/779301070698053662/911GT3RS071.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/779301106316345354/911GT3RS072.png",
-    "racehud996": "",
-    "racehud969": "",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/779301160389312532/911GT3RS07Maxed233.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826535460616404996/Porsche911GT3RS997.1.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826535517977051156/000_gt3.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826535522306097152/111_gt3.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826535526420054016/222_gt3.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826535539682574396/332_gt3.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826535536420323388/323_gt3.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826535531268538378/233_gt3.png",
 
-    "333TopSpeed": 195,
+    "333TopSpeed": 196,
     "3330to60": 3.9,
     "333Handling": 94,
 
     "666TopSpeed": 198,
-    "6660to60": 3.7,
-    "666Handling": 98,
+    "6660to60": 3.7, 
+    "666Handling": 97,
 
-    "699TopSpeed": 200,
+    "996TopSpeed": 201,
+    "9960to60": 3.5,
+    "996Handling": 97,
+
+    "969TopSpeed": 201,
+    "9690to60": 3.7,
+    "969Handling": 101,
+
+    "699TopSpeed": 198,
     "6990to60": 3.5,
     "699Handling": 101
 }

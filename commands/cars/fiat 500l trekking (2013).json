@@ -1,5 +1,5 @@
 {
-    "rq": 28,
+    "rq": 37,
     "make": "Fiat",
     "model": "500L Trekking",
     "modelYear": 2013,
@@ -24,27 +24,31 @@
     "ola": 70.73,
     "description": "Its headlights look like eggs to me. Card by Andu",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/794359134110875688/500LTrekking160.png?width=1154&height=719",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/794359330824519680/500LTrekkSt.png",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/794359340692930580/500LTrekk1.png",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/794359350758998016/500LTrekk2.png",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/794359364659707955/500LTrekk332.png",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/794359385756270662/500LTrekk323.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820025441489780806/500Trekking.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820025794956754975/500L.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820025816192647208/500L1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820025817580437504/500L2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820025843115360276/500L996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820025828779622400/500L969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820025818902167602/500L699.png",
 
-    "333TopSpeed": 130,
-    "3330to60": 7.5,
+    "333TopSpeed": 131,
+    "3330to60": 7.6,
     "333Handling": 70,
 
-    "666TopSpeed": 134,
-    "6660to60": 7.0,
-    "666Handling": 73,
+    "666TopSpeed": 135,
+    "6660to60": 7.2,
+    "666Handling": 72,
 
-    "996TopSpeed": 140,
-    "9960to60": 6.2,
-    "996Handling": 73,
+    "996TopSpeed": 139,
+    "9960to60": 6.8,
+    "996Handling": 72,
 
-    "969TopSpeed": 138,
-    "9690to60": 6.4,
-    "969Handling": 75
+    "969TopSpeed": 139,
+    "9690to60": 7.2,
+    "969Handling": 75,
+
+	"699TopSpeed": 135,
+    "6990to60": 6.8,
+    "699Handling": 75
 }

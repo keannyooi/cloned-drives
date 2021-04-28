@@ -1,5 +1,5 @@
 {
-    "rq": 39,
+    "rq": 35,
     "make": "Honda",
     "model": "Accord HFP Coupe V6",
     "modelYear": 2011,
@@ -24,27 +24,31 @@
     "ola": 81.82,
     "description": "Don't ask how the MRA is stonks. Card by ChickenMcNuggets",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/812418693413470260/acored_hfp.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/812417419690639380/hfp_stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/812417463462395924/hfp_1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/812417495575035914/hfp_2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/812417563832221767/hfp_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/812417528944525372/hfp_323.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820437214911004702/acored_hfp.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820081345790869574/hfp_stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820081384491319346/hfp_1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820081425025204265/hfp_2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820081526649782302/hfp_332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820081495363551272/hfp_323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820081458282233866/hfp_233.png",
 
-    "333TopSpeed": 135,
-    "3330to60": 6.1,
-    "333Handling": 77,
+    "333TopSpeed": 136,
+    "3330to60": 6.3,
+    "333Handling": 76,
 
-    "666TopSpeed": 138,
-    "6660to60": 5.7,
-    "666Handling": 80,
+    "666TopSpeed": 140,
+    "6660to60": 5.9,
+    "666Handling": 79,
 
-	  "996TopSpeed": 145,
-    "9960to60": 4.9,
-    "996Handling": 80,
+	"996TopSpeed": 144,
+    "9960to60": 5.6,
+    "996Handling": 79,
 
-    "969TopSpeed": 141,
-    "9690to60": 5.3,
-    "969Handling": 82
+    "969TopSpeed": 144,
+    "9690to60": 5.9,
+    "969Handling": 82,
+
+	"699TopSpeed": 140,
+    "6990to60": 5.6,
+    "699Handling": 82
 }

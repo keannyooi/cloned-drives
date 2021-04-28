@@ -1,5 +1,5 @@
 {
-    "rq": 77,
+    "rq": 72,
     "make": "Aston Martin",
     "model": "DB10",
     "modelYear": 2014,
@@ -9,7 +9,7 @@
     "handling": 89,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["2021 Spring Collection"],
+    "tags": [],
     "isPrize": false,
 
     "weight": 1550,
@@ -22,29 +22,33 @@
     "fuelType": "Petrol",
     "mra": 87.50,
     "ola": 89.00,
-    "description": "Card by Bnuuy.",
+    "description": "50 years of Aston Martin Bond cars. Card by Bnuuy.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/809371465266102282/db10.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/809371556257202206/db10.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/809371572980154378/db10333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/809371587383918592/db10666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/809371632891461652/db10996.png",
-    "racehud969": "",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/809371610293207060/db10699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819245984013615104/DB10.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819559480593350656/db10.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819559491379920976/DB10333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819559506789924914/DB10666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819559573488271360/DB10996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819559554383347792/DB10969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819559528923922432/DB10699.png",
 
     "333TopSpeed": 200,
-    "3330to60": 3.9,
+    "3330to60": 4.0,
     "333Handling": 92,
 
     "666TopSpeed": 202,
-    "6660to60": 3.7,
+    "6660to60": 3.8,
     "666Handling": 95,
 
-    "996TopSpeed": 206,
-    "9960to60": 3.5,
+    "996TopSpeed": 205,
+    "9960to60": 3.6,
     "996Handling": 96,
 
-    "699TopSpeed": 203,
+	"969TopSpeed": 205,
+    "9690to60": 3.8,
+    "969Handling": 99,
+
+    "699TopSpeed": 202,
     "6990to60": 3.6,
     "699Handling": 99
 }

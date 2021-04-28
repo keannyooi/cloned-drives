@@ -24,27 +24,31 @@
     "ola": 82.17,
     "description": "The concept for a sleek coupe. Card by DodgeDemon.",
 
-    "card": "https://media.discordapp.net/attachments/780219369480257556/802124421199298611/boi.png?width=1154&height=718",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/801786022165741618/concept.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/801786074480377886/concept_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/801786082067873802/concept_666.jpg",
-    "racehud996": "",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/801786104587878430/concept_969.jpg",
-    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/801786092998492231/concept_699.jpg",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826878632211120168/image0.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826878869461270568/image0.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826878908422684722/image0.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826878926843412530/image0.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826878970800373860/image0.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826878945328627712/image0.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826878957857144842/image0.jpg",
 
     "333TopSpeed": 191,
     "3330to60": 3.8,
     "333Handling": 85,
 
-    "666TopSpeed": 195,
+    "666TopSpeed": 194,
     "6660to60": 3.6,
-    "666Handling": 88,
+    "666Handling": 87,
 
-    "969TopSpeed": 198,
-    "9690to60": 3.4,
+	"996TopSpeed": 196,
+    "9960to60": 3.4,
+    "996Handling": 87,
+
+    "969TopSpeed": 196,
+    "9690to60": 3.6,
     "969Handling": 91,
 
-    "699TopSpeed": 196,
+    "699TopSpeed": 194,
     "6990to60": 3.4,
     "699Handling": 91
 }

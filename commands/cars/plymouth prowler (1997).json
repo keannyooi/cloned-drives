@@ -1,5 +1,5 @@
 {
-    "rq": 29,
+    "rq": 31,
     "make": "Plymouth",
     "model": "Prowler",
     "modelYear": 1997,
@@ -24,23 +24,31 @@
     "ola": 67.61,
     "description": "A 90's production intepretation of a hotrod by Chrysler. Card by Spence",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/789439071771557898/image0.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/788970309779849216/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/788970328012357632/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/788970344781185024/image0.jpg",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/788970363924774912/image0.jpg",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826420202555047936/plymouthprowler.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826420324211752970/prowler.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826420330650140672/prowler333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826420336735027206/prowler666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826420359955611678/prowler996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826420351826264085/prowler969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826420344357126144/prowler699.png",
 
-    "333TopSpeed": 120,
+    "333TopSpeed": 121,
     "3330to60": 6.7,
     "333Handling": 81,
 
-    "666TopSpeed": 124,
-    "6660to60": 6.2,
+    "666TopSpeed": 126,
+    "6660to60": 6.4,
     "666Handling": 83,
 
-    "969TopSpeed": 127,
-    "9690to60": 5.8,
-    "969Handling": 86
+    "996TopSpeed": 130,
+    "9960to60": 6.0,
+    "996Handling": 83,
+
+    "969TopSpeed": 130,
+    "9690to60": 6.4,
+    "969Handling": 87,
+
+    "699TopSpeed": 126,
+    "6990to60": 6.0,
+    "699Handling": 87
 }

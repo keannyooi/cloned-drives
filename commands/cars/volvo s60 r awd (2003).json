@@ -1,5 +1,5 @@
 {
-    "rq": 61,
+    "rq": 59,
     "make": "Volvo",
     "model": "S60 R AWD",
     "modelYear": 2003,
@@ -24,23 +24,31 @@
     "ola": 87.27,
     "description": "The ultimate Q-Car? Card by Macan",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/782141341278535680/Volvo_S60_R_AWD_2003.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/788494481158569994/Volvo_S60_R_AWD_2003_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/788494564003938324/Volvo_S60_R_AWD_2003_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/788494573750976603/Volvo_S60_R_AWD_2003_666.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/788494589157048370/Volvo_S60_R_AWD_2003_969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/823598824588312586/S60R.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823600446974984232/S60.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823600452326260807/S60333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823600458798333992/S60666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823600485869158510/S60996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823600478956814356/S60969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823600471079649340/S60699.png",
 
     "333TopSpeed": 152,
     "3330to60": 5.2,
     "333Handling": 82,
 
-    "666TopSpeed": 156,
-    "6660to60": 4.9,
-    "666Handling": 85,
+    "666TopSpeed": 155,
+    "6660to60": 5.0,
+    "666Handling": 84,   
 
-    "969TopSpeed": 160,
-    "9690to60": 4.6,
-    "969Handling": 87
+    "996TopSpeed": 159,
+    "9960to60": 4.7,
+    "996Handling": 84,
+
+    "969TopSpeed": 159,
+    "9690to60": 5.0,
+    "969Handling": 88,
+
+    "699TopSpeed": 155,
+    "6990to60": 4.7,
+    "699Handling": 88
 }

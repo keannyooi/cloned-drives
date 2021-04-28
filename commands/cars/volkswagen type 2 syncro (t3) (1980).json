@@ -1,5 +1,5 @@
 {
-    "rq": 13,
+    "rq": 15,
     "make": "Volkswagen",
     "model": "Type 2 Syncro (T3)",
     "modelYear": 1980,
@@ -26,36 +26,31 @@
     "description": "The now hillclimber hippie van. Card by Andu",
 
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/789563847056949268/T3Syncroo.png?width=705&height=439",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/788733541659574292/T3SyncroSt.png?width=705&height=441",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/788733562895597588/T3Syncro1.png?width=705&height=441",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/788733582218231808/T3Syncro2.png?width=705&height=441",
-    "racehud996": "",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/788733609799712768/T3Syncro323.png?width=705&height=441",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/822443306507698186/T3Syncroo.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/822443448992268318/SyncroT3.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/822443460988633120/SyncroT3-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/822443466784243712/SyncroT3-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/822443487596380190/SyncroT3-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/822443480386109492/SyncroT3-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/822443475114000424/SyncroT3-699.png",
 
-
-    "333TopSpeed": 82,
-    "3330to60": 16.8,
+    "333TopSpeed": 86,
+    "3330to60": 17.4,
     "333Handling": 61,
 
+    "666TopSpeed": 92,
+    "6660to60": 16.5,
+    "666Handling": 63,   
 
-    "666TopSpeed": 85,
-    "6660to60": 15.3,
-    "666Handling": 64,
+    "996TopSpeed": 99,
+    "9960to60": 15.6,
+    "996Handling": 63,
 
+    "969TopSpeed": 99,
+    "9690to60": 16.5,
+    "969Handling": 65,
 
-    "996TopSpeed": 0,
-    "9960to60": 0,
-    "996Handling": 0,
-
-
-    "969TopSpeed": 88,
-    "9690to60": 13.8,
-    "969Handling": 66,
-
-
-    "699TopSpeed": 0,
-    "6990to60": 0,
-    "699Handling": 0
+    "699TopSpeed": 92,
+    "6990to60": 15.6,
+    "699Handling": 65
 }

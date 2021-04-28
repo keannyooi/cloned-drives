@@ -1,5 +1,5 @@
 {
-    "rq": 65,
+    "rq": 86,
     "make": "Ford",
     "model": "Escort RS1800 Rally Spec",
     "modelYear": 1975,
@@ -24,27 +24,32 @@
     "ola": 60.00,
     "description": "The 1979 WRC Champion. By Havvy",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/789744690769297448/FordEscortRS1800RallySpec2.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/789743887359016960/FordEscortRallyStock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/789743940513431612/FordEscortRally333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/789744033127727104/FordEscortRally666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/789744106477584384/FordEscortRally996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/789744192591101952/FordEscortRally969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820339783405535252/FIXED_FordEscortRS1800RallySpec.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820339878427492412/000_esc.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820339901677305856/111_esc.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820339907809116250/222_esc.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820339928075862046/332_esc.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820339922694832208/323_esc.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820339916025233438/233_esc.png",
 
-    "333TopSpeed": 126,
+    "333TopSpeed": 127,
     "3330to60": 4.2,
     "333Handling": 85,
 
-    "666TopSpeed": 129,
+    "666TopSpeed": 131,
     "6660to60": 4.0,
-    "666Handling": 88,
+    "666Handling": 87,
 
-    "996TopSpeed": 135,
-    "9960to60": 3.6,
-    "996Handling": 89,
+    "996TopSpeed": 136,
+    "9960to60": 3.7,
+    "996Handling": 87,
 
-    "969TopSpeed": 133,
-    "9690to60": 3.7,
-    "969Handling": 91
+    "969TopSpeed": 136,
+    "9690to60": 4.0,
+    "969Handling": 91,
+
+    "699TopSpeed": 131,
+    "6990to60": 3.7,
+    "699Handling": 91
+
 }

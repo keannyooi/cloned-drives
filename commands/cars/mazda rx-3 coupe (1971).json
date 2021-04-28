@@ -1,5 +1,5 @@
 {
-    "rq": 17,
+    "rq": 24,
     "make": "Mazda",
     "model": "RX-3 Coupe",
     "modelYear": 1971,
@@ -24,23 +24,31 @@
     "ola": 66.06,
     "description": "The little Rotary that could. Card by Keanny.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/799861162879090738/mazda_rx-3_coupe.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/799861214263115796/rx-3.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/799861239894769674/rx-3_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/799861248912261161/rx-3_666.jpg",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/799861260673482762/rx-3_969.jpg",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819391395780755506/mazda_rx-3_coupe.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819818671144828988/rx-3_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819818672998055936/rx-3_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819818686013505556/rx-3_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819818728283439125/rx-3_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819818716178022422/rx-3_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819818696049688586/rx-3_699.jpg",
 
-    "333TopSpeed": 115,
-    "3330to60": 10.1,
+    "333TopSpeed": 117,
+    "3330to60": 10.4,
     "333Handling": 64,
 
-    "666TopSpeed": 119,
-    "6660to60": 9.3,
-    "666Handling": 67,
+    "666TopSpeed": 121,
+    "6660to60": 9.8,
+    "666Handling": 66,
 
-    "969TopSpeed": 122,
-    "9690to60": 8.5,
-    "969Handling": 69
+    "996TopSpeed": 126,
+    "9960to60": 9.3,
+    "996Handling": 66,
+
+    "969TopSpeed": 126,
+    "9690to60": 9.8,
+    "969Handling": 69,
+
+    "699TopSpeed": 121,
+    "6990to60": 9.3,
+    "699Handling": 69
 }

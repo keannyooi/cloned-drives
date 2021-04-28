@@ -1,5 +1,5 @@
 {
-    "rq": 14,
+    "rq": 16,
     "make": "Ford",
     "model": "Pinto 2300",
     "modelYear": 1973,
@@ -24,31 +24,32 @@
     "ola": 60.53,
     "description": "When you casually wanna die in a fire. Card by Connor",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/801837718514040832/F.FordPinto2300.png?width=1154&height=718",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/801840667021803520/Pinto.png",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/801840674990194718/Pinto1.png",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/801840678774636574/Pinto2.png",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/801840704972128317/Pinto332.png",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/801840698021249054/Pinto323.png",
-    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/801840688421011516/Pinto233.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820680959103205376/F.FordPinto2300.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820681097707782154/F.FordPinto.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820681107527565323/F.FordPinto-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820681119836930048/F.FordPinto-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820681178273153024/F.FordPinto-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820681160408432670/F.FordPinto-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820681148354658324/F.FordPinto-699.png",
 
-    "333TopSpeed": 93,
-    "3330to60": 13.8,
+    "333TopSpeed": 99,
+    "3330to60": 14.4,
     "333Handling": 65,
 
-    "666TopSpeed": 96,
-    "6660to60": 12.4, 
-    "666Handling": 68,
+    "666TopSpeed": 104,
+    "6660to60": 13.7,
+    "666Handling": 67,
 
-    "996TopSpeed": 98,
-    "9960to60": 10.7,
-    "996Handling": 68,
+    "996TopSpeed": 110,
+    "9960to60": 12.9,
+    "996Handling": 67,
 
-    "969TopSpeed": 98,
-    "9690to60": 11.0,
+    "969TopSpeed": 110,
+    "9690to60": 13.7,
     "969Handling": 70,
 
-    "699TopSpeed": 96,
-    "6990to60": 11.2,
+    "699TopSpeed": 104,
+    "6990to60": 12.9,
     "699Handling": 70
+
 }

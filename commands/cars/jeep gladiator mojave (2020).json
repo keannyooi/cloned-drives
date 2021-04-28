@@ -1,5 +1,5 @@
 {
-    "rq": 52,
+    "rq": 48,
     "make": "Jeep",
     "model": "Gladiator Mojave",
     "modelYear": 2020,
@@ -24,23 +24,31 @@
     "ola": 65.88,
     "description": "If you ever need to take a sofa up the Rubicon, here's your car. By Dodgedemon",
 
-    "card": "https://cdn.discordapp.com/attachments/733973415366623274/787526707678543872/2020_Jeep_Mojave.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/788225872284221440/Gladiator.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/788225887048826880/Gladiator333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/788225900189450240/Gladiator666.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/788225925699207189/Gladiator969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/827085601211416596/mojave.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/827085472043630612/mojave_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/827085480230518834/mojave_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/827085485373390878/mojave_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/827085525164621854/mojave_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/827085502363598908/mojave_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/827085493140324392/mojave_699.jpg",
 
-    "333TopSpeed": 100,
+    "333TopSpeed": 102,
     "3330to60": 8.1,
-    "333Handling": 68,
+    "333Handling": 67,
 
-    "666TopSpeed": 103,
+    "666TopSpeed": 108,
     "6660to60": 7.7,
-    "666Handling": 71,
+    "666Handling": 69,
 
-    "969TopSpeed": 105,
-    "9690to60": 7.4,
-    "969Handling": 74
+	"996TopSpeed": 113,
+    "9960to60": 7.2,
+    "996Handling": 69,
+
+    "969TopSpeed": 113,
+    "9690to60": 7.7,
+    "969Handling": 72,
+
+	"699TopSpeed": 108,
+    "6990to60": 7.2,
+    "699Handling": 72
 }

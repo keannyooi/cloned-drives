@@ -1,5 +1,5 @@
 {
-    "rq": 49,
+    "rq": 51,
     "make": "Lancia",
     "model": "Delta S4",
     "modelYear": 1985,
@@ -24,27 +24,31 @@
     "ola": 83.02,
     "description": "Better known as the 'Stradale', this Delta was five times more expensive than any Delta at the time. Card by havvy",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/801832595385483324/LanciaDeltaS4.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/801832722996789299/000s4.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/801832738201403392/111s4.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/801832747458887690/222s4.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/801832764243443772/332s4.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/801832756816510996/323s4.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/821878065113858078/unknown.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821878119169654794/000_delta2.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821878124672712724/111_delta2.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821878129232052225/222_delta2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821878156608536626/332_delta2.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821878153052028968/323_delta2.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821878143161466891/233_delta2.png",
 
     "333TopSpeed": 144,
-    "3330to60": 5.6,
-    "333Handling": 77,
+    "3330to60": 5.7,
+    "333Handling": 76,
 
     "666TopSpeed": 147,
-    "6660to60": 5.3,
+    "6660to60": 5.4,
     "666Handling": 79,
 
     "996TopSpeed": 151,
-    "9960to60": 4.8,
+    "9960to60": 5.1,
     "996Handling": 79,
 
     "969TopSpeed": 151,
-    "9690to60": 5.0,
-    "969Handling": 82
+    "9690to60": 5.4,
+    "969Handling": 82,
+
+	"699TopSpeed": 147,
+    "6990to60": 5.1,
+    "699Handling": 82
 }

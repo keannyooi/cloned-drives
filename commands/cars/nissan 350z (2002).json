@@ -1,5 +1,5 @@
 {
-    "rq": 46,
+    "rq": 49,
     "make": "Nissan",
     "model": "350Z",
     "modelYear": 2002,
@@ -24,31 +24,31 @@
     "ola": 77.95,
     "description": "Nissan's affordable sport's car. Card by Havvy.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/806993108520140860/Nissan350Z.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/806993172638072862/000_350z.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/806993182856052816/111_350z.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/806993188392009778/222_350z.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/806993209430638612/332_350z.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/806993201361190933/323_350z.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/806993195933499443/233_350z.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826467577164333056/350Zzzz.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826528503213326336/C.Nissan350Z.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826528527137636443/C.Nissan350Z-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826528544921878578/C.Nissan350Z-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826528734508875789/C.Nissan350Z-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826528712581185546/C.Nissan350Z-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826528672780910612/C.Nissan350Z-699.png",
 
-    "333TopSpeed": 160,
+    "333TopSpeed": 159,
     "3330to60": 5.2,
     "333Handling": 82,
 
-    "666TopSpeed": 164,
-    "6660to60": 4.9,
-    "666Handling": 85,
+    "666TopSpeed": 163,
+    "6660to60": 5.0,
+    "666Handling": 84,
     
-    "996TopSpeed": 168,
-    "9960to60": 4.5,
-    "996Handling": 85,
+    "996TopSpeed": 166,
+    "9960to60": 4.7,
+    "996Handling": 84,
 
-    "969TopSpeed": 168,
-    "9690to60": 4.6,
-    "969Handling": 87,
+    "969TopSpeed": 166,
+    "9690to60": 5.0,
+    "969Handling": 88,
     
-    "699TopSpeed": 164,
+    "699TopSpeed": 163,
     "6990to60": 4.7,
     "699Handling": 88
 }

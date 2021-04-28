@@ -1,5 +1,5 @@
-﻿{
-    "rq": 21,
+{
+    "rq": 29,
     "make": "Chevrolet",
     "model": "Spark 1LT CVT",
     "modelYear": 2016,
@@ -12,10 +12,9 @@
     "tags": [],
     "isPrize": false,
 
-
     "weight": 1046,
     "gc": "Medium",
-    "seatCount":4,
+    "seatCount": 4,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
@@ -25,37 +24,31 @@
     "ola": 67.54,
     "description": "A whole lotta good for not a lot of money. Card by Macan",
 
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824597137471438868/Spark_1LT_CVT_16.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824597428861927424/1LTCVT16.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824597433824313354/1LTCVT16-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824597439185027082/1LTCVT16-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824597460088913920/1LTCVT16-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824597452585172992/1LTCVT16-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824597445904171028/1LTCVT16-699.png",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/812844031934464013/Spark_1LT_CVT_16.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/812844280531910736/Chevrolet_Spark_1LT_CVT_2016_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/812844289955594240/Chevrolet_Spark_1LT_CVT_2016_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/812844295429685288/Chevrolet_Spark_1LT_CVT_2016_666.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/812844303143010336/Chevrolet_Spark_1LT_CVT_2016_969.png",
-    "racehud699": "",
+    "333TopSpeed": 110,
+    "3330to60": 10.3,
+    "333Handling": 76,
 
-
-    "333TopSpeed": 108,
-    "3330to60": 10.0,
-    "333Handling": 77,
-
-
-    "666TopSpeed": 112,
-    "6660to60": 9.2, 
+    "666TopSpeed": 115,
+    "6660to60": 9.7,
     "666Handling": 79,
 
+    "996TopSpeed": 120,
+    "9960to60": 9.2,
+    "996Handling": 79,
 
-    "996TopSpeed": 0,
-    "9960to60": 0,
-    "996Handling": 0,
-
-
-    "969TopSpeed": 115,
-    "9690to60": 8.6,
+    "969TopSpeed": 120,
+    "9690to60": 9.7,
     "969Handling": 82,
 
-
-    "699TopSpeed": 0,
-    "6990to60": 0,
-    "699Handling": 0
+    "699TopSpeed": 115,
+    "6990to60": 9.2,
+    "699Handling": 82
 }

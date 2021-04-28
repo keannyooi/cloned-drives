@@ -1,5 +1,5 @@
 {
-    "rq": 48,
+    "rq": 53,
     "make": "Porsche",
     "model": "911 Carrera 4",
     "modelYear": 1988,
@@ -9,7 +9,7 @@
     "handling": 74,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["2021 Spring Collection"],
+    "tags": [],
     "isPrize": false,
 
     "weight": 1450,
@@ -24,27 +24,31 @@
     "ola": 71.79,
     "description": "A true all-weather Carrera to aid with RWD problems. Card by havvy",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/804440728218239016/Porsche911Carrera4964.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/804440851081199686/0009644.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/804440868861902908/1119644.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/804440877539393606/2229644.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/804440895897468938/3329644.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/804440887731814400/3239644.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824611647712657408/carrera4thingy.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824615134076469298/c488.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824615138416918578/c488333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824615143483899914/c488666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824615170155741235/c488996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824615160231624788/c488969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824615153676582912/c488699.png",
 
-    "333TopSpeed": 166,
+    "333TopSpeed": 165,
     "3330to60": 4.9,
-    "333Handling": 77,
+    "333Handling": 76,
 
-    "666TopSpeed": 170,
-    "6660to60": 4.6,
+    "666TopSpeed": 168,
+    "6660to60": 4.7, 
     "666Handling": 79,
 
-	"996TopSpeed": 174,
-    "9960to60": 4.2,
+    "996TopSpeed": 172,
+    "9960to60": 4.4,
     "996Handling": 79,
 
-    "969TopSpeed": 174,
-    "9690to60": 4.3,
-    "969Handling": 82
+    "969TopSpeed": 172,
+    "9690to60": 4.7,
+    "969Handling": 82,
+
+    "699TopSpeed": 168,
+    "6990to60": 4.4,
+    "699Handling": 82
 }

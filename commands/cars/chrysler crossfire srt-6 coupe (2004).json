@@ -1,5 +1,5 @@
 {
-    "rq": 55,
+    "rq": 53,
     "make": "Chrysler",
     "model": "Crossfire SRT-6 Coupe",
     "modelYear": 2004,
@@ -24,23 +24,31 @@
     "ola": 80.00,
     "description": "Worst. Card by Havvy/Bnuuy.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/807705014486695987/crossfiresrt6.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/807705103637151744/worst.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/807705118693916690/worst333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/807705133924352050/worst666.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/807705156798906428/worst969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819955516423667732/Crossfire.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819955822137311303/crossfire.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819955826688131142/Crossfire333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819955834427670569/crossfire666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819955862675914822/crossfire996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819955852588744764/crossfire969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819955844228710432/crossfire699.png",
 
-    "333TopSpeed": 160,
-    "3330to60": 4.7,
+    "333TopSpeed": 159,
+    "3330to60": 4.8,
     "333Handling": 84,
 
-    "666TopSpeed": 164,
+    "666TopSpeed": 163,
     "6660to60": 4.5,
-    "666Handling": 87,
+    "666Handling": 86,
+
+	"996TopSpeed": 166,
+    "9960to60": 4.3,
+    "996Handling": 86,
 
     "969TopSpeed": 166,
-    "9690to60": 4.2,
-    "969Handling": 90
+    "9690to60": 4.5,
+    "969Handling": 90,
+
+	"699TopSpeed": 163,
+    "6990to60": 4.3,
+    "699Handling": 90
 }

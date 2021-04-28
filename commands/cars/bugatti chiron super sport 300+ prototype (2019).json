@@ -1,5 +1,5 @@
 {
-    "rq": 101,
+    "rq": 102,
     "make": "Bugatti",
     "model": "Chiron Super Sport 300+ Prototype",
     "modelYear": 2019,
@@ -24,31 +24,31 @@
     "ola": 100.00,
     "description": "The Record setter for the first to get 300Mph. Card by DodgeDemon.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/807521289639952414/2019_Bugatti_Chiron_SS_300.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/807521409240530964/BugattiChiron300SS000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/807521469323542558/BugattiChiron300SS333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/807521526983163934/BugattiChiron300SS666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/807521628296052756/BugattiChiron300SS996.png",
-    "racehud969": "",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/807521577444048926/BugattiChiron300SS699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/821046694766313502/2019_Bugatti_Chiron_SS_300.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824350499016409098/300.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824350503768948746/300333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824350510471315506/300666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824350532021780510/300996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824350525956161547/300969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824350519307927572/300699.png",
 
     "333TopSpeed": 306,
     "3330to60": 2.3,
     "333Handling": 93,
 
-    "666TopSpeed": 308,
+    "666TopSpeed": 307,
     "6660to60": 2.2,
     "666Handling": 96,
 
-    "996TopSpeed": 311,
+    "996TopSpeed": 309,
     "9960to60": 2.0,
-    "996Handling": 97,
+    "996Handling": 96,
 
-    "969TopSpeed": 0,
-    "9690to60": 0,
-    "969Handling": 0,
+    "969TopSpeed": 309,
+    "9690to60": 2.2,
+    "969Handling": 100,
 
-    "699TopSpeed": 309,
-    "6990to60": 2.1,
+    "699TopSpeed": 307,
+    "6990to60": 2.0,
     "699Handling": 100
 }

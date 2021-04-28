@@ -1,0 +1,54 @@
+{
+    "rq": 43,
+    "make": "BMW",
+    "model": "M6",
+    "modelYear": 1984,
+    "country": "DE",
+    "topSpeed": 144,
+    "0to60": 6.1,
+    "handling": 69,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["2021 Spring Collection"],
+    "isPrize": false,
+
+    "weight": 1500,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 55.45,
+    "ola": 68.85,
+    "description": "The American M635CSi. Card by Ahmed",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819561327197683742/BMW-M6_1.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819561454541602847/image3.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819561601031602196/BMW-M6-333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819561620756758558/BMW-M6-666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819561670275891210/BMW-M6-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819561655633182770/BMW-M6-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819561643599462420/BMW-M6-699.png",
+
+    "333TopSpeed": 148,
+    "3330to60": 5.8,
+    "333Handling": 71,
+
+    "666TopSpeed": 151,
+    "6660to60": 5.5, 
+    "666Handling": 74,
+
+    "996TopSpeed": 155,
+    "9960to60": 5.2,
+    "996Handling": 74,
+
+    "969TopSpeed": 155,
+    "9690to60": 5.5,
+    "969Handling": 77,
+
+    "699TopSpeed": 151,
+    "6990to60": 5.2,
+    "699Handling": 77
+}

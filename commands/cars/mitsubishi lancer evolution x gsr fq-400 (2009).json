@@ -1,5 +1,5 @@
 {
-    "rq": 87,
+    "rq": 86,
     "make": "Mitsubishi",
     "model": "Lancer Evolution X GSR FQ-400",
     "modelYear": 2009,
@@ -24,23 +24,31 @@
     "ola": 84.21,
     "description": "The big daddy Evo. Card by Bnuuy.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/812031249790271558/evox400.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/812031954333466674/evoxfq400.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/812031966601543690/evoxfq400333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/812031979276468224/evoxfq400666.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/812032000873594920/evoxfq400969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819969861424906250/XFQ400.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819970174974689280/XFQ400.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819970181937365003/xfq400333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819970195602145300/xfq400666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819970219492769823/xfq400996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819970211565273169/xfq400969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819970204028239922/xfq400699.png",
 
-    "333TopSpeed": 159,
+    "333TopSpeed": 158,
     "3330to60": 3.6,
     "333Handling": 96,
 
-    "666TopSpeed": 163,
+    "666TopSpeed": 162,
     "6660to60": 3.4,
     "666Handling": 99,
 
+    "996TopSpeed": 165,
+    "9960to60": 3.2,
+    "996Handling": 99,
+
     "969TopSpeed": 165,
-    "9690to60": 3.2,
-    "969Handling": 103
+    "9690to60": 3.4,
+    "969Handling": 103,
+
+    "699TopSpeed": 162,
+    "6990to60": 3.2,
+    "699Handling": 103
 }

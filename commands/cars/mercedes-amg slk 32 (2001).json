@@ -1,17 +1,16 @@
 {
-    "rq": 57,
+    "rq": 61,
     "make": ["Mercedes-AMG", "Mercedes-Benz"],
     "model": "SLK 32",
     "modelYear": 2001,
     "country": "DE",
     "topSpeed": 155,
-    "0to60": 5.0,
+    "0to60": 4.9,
     "handling": 77,
     "driveType": "RWD",
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
 
     "weight": 1495,
     "gc": "Medium",
@@ -25,37 +24,31 @@
     "ola": 76.00,
     "description": "One of the top 2000s roadster choices. Card by Cenard",
 
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820395983631941642/IMG_20210308_165502.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820396090695090186/SLK32.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820396097171488808/SLK32-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820396103224262687/SLK32-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820396126011916298/SLK32-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820396119002841118/SLK32-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820396111406563358/SLK32-699.png",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/811146266599489586/slk_32.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/811144928406274088/unknown.png",
-    "racehud333": "hhttps://cdn.discordapp.com/attachments/718097267621363744/811145231017574431/unknown.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/811145274835468298/unknown.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/811145338806861844/unknown.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/811145422620852264/unknown.png",
-    "racehud699": "",
-
-
-    "333TopSpeed": 159,
-    "3330to60": 4.8,
+    "333TopSpeed": 158,
+    "3330to60": 4.7,
     "333Handling": 80,
 
-
-    "666TopSpeed": 164,
+    "666TopSpeed": 162,
     "6660to60": 4.4,
-    "666Handling": 83,
+    "666Handling": 82,
 
+    "996TopSpeed": 165,
+    "9960to60": 4.2,
+    "996Handling": 82,
 
-    "996TopSpeed": 170,
-    "9960to60": 3.8,
-    "996Handling": 83,
-
-
-    "969TopSpeed": 168,
-    "9690to60": 4.0,
+    "969TopSpeed": 165,
+    "9690to60": 4.4,
     "969Handling": 85,
 
-
-    "699TopSpeed": 0,
-    "6990to60": 0,
-    "699Handling": 0
+    "699TopSpeed": 162,
+    "6990to60": 4.2,
+    "699Handling": 85
 }

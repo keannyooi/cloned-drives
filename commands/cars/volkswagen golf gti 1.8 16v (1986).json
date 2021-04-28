@@ -1,5 +1,5 @@
 ﻿{
-    "rq": 26,
+    "rq": 27,
     "make": "Volkswagen",
     "model": "Golf GTI 1.8 16v",
     "modelYear": 1986,
@@ -26,36 +26,31 @@
     "description": "The classiest and most complete hot hatch of its era. Card by Andu ",
 
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/805393364529840128/GTI2.png?width=1154&height=719",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/805394101746925588/Golf2.png",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/805394109933027338/Golf21.png",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/805394115914366996/Golf22.png",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/805394135287595018/Golf2332.png",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/805394124386598927/Golf2323.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820342819238838332/GTI2.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820342639517892638/GTI2.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820342645712224256/GTI2-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820342653806837800/GTI2-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820342666348068875/GTI2-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820342673642094622/GTI2-999.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820342660803592212/GTI2-699.png",
 
-
-    "333TopSpeed": 130,
-    "3330to60": 7.3,
+    "333TopSpeed": 131,
+    "3330to60": 7.4,
     "333Handling": 75,
 
+    "666TopSpeed": 135,
+    "6660to60": 7.0,
+    "666Handling": 78,   
 
-    "666TopSpeed": 133,
-    "6660to60": 6.8, 
-    "666Handling": 78,
+    "996TopSpeed": 139,
+    "9960to60": 6.6,
+    "996Handling": 78,
 
-
-    "996TopSpeed": 137,
-    "9960to60": 6.1,
-    "996Handling": 79,
-
-
-    "969TopSpeed": 136,
-    "9690to60": 6.3,
+    "969TopSpeed": 139,
+    "9690to60": 7.0,
     "969Handling": 81,
 
-
-    "699TopSpeed": 0,
-    "6990to60": 0,
-    "699Handling": 0
+    "699TopSpeed": 135,
+    "6990to60": 6.6,
+    "699Handling": 81
 }

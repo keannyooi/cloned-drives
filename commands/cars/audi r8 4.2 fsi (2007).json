@@ -24,31 +24,31 @@
     "ola": 71.76,
     "description": "Audi absorbed the essence of the Lamborghini Gallardo and made this. Card by Havvy",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/805564922947698738/AudiR84.2FSI.png?width=1154&height=718",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/805565041390256188/000_r8.png?width=1154&height=718",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/805565052722741348/111_r8.png?width=1154&height=718",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/805565059908370452/222_r8.png?width=1154&height=718",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/805565079885840384/332_r8.png?width=1154&height=718",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/805565073363173426/323_r8.png?width=1154&height=718",
-    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/805565065872801802/233_r8.png?width=1154&height=718",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824604487154139176/AudiR84.2FSI.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824604816059007017/r8.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824604819947782164/r8333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824604825378488391/r8666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824604845499351090/r8996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824604838712049664/r8969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824604832064077824/r8699.png",
 
     "333TopSpeed": 190,
     "3330to60": 4.2,
     "333Handling": 90,
 
     "666TopSpeed": 193,
-    "6660to60": 3.8,
+    "6660to60": 4.0,
     "666Handling": 93,
 
-    "996TopSpeed": 196,
-    "9960to60": 3.6,
-    "996Handling": 94,
+    "996TopSpeed": 195,
+    "9960to60": 3.7,
+    "996Handling": 93,
 
-    "969TopSpeed": 196,
-    "9690to60": 3.7,
-    "969Handling": 96,
+    "969TopSpeed": 195,
+    "9690to60": 4.0,
+    "969Handling": 97,
 
-    "699TopSpeed": 194,
-    "6990to60": 3.6,
+    "699TopSpeed": 193,
+    "6990to60": 3.7,
     "699Handling": 97
 }

@@ -1,5 +1,5 @@
-﻿{
-    "rq": 37,
+{
+    "rq": 31,
     "make": "Ford",
     "model": "F-150 XLT",
     "modelYear": 1997,
@@ -11,7 +11,6 @@
     "tyreType": "All-Surface",
     "tags": [],
     "isPrize": false,
-
 
     "weight": 2721,
     "gc": "High",
@@ -25,37 +24,31 @@
     "ola": 60.68,
     "description": "Tenth gen of the most famous pick-up. Card by Andu",
 
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819486499975594014/FR150XLT.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819486979230007316/F150XLT.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819486987530272778/F150XLT1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819486992408379392/F150XLT2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819487018190897212/F150XLT996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819487008585941052/F150XLT969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819487001082331136/F150XLT699.png",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/795939419190067210/FR150XLT.png?width=705&height=439",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/795949162004480040/F150XLTSt.png?width=705&height=441",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/795949166185938944/F150XLT1.png?width=705&height=441",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/795949169940234250/F150XLT2.png?width=705&height=441",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/795949185391394846/F150XLT332.png?width=705&height=441",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/795949177120096256/F150XLT323.png?width=705&height=441",
-    "racehud699": "",
+    "333TopSpeed": 109,
+    "3330to60": 9.9,
+    "333Handling": 61,
 
+    "666TopSpeed": 114,
+    "6660to60": 9.4,
+    "666Handling": 63,
 
-    "333TopSpeed": 108,
-    "3330to60": 9.6,
-    "333Handling": 62,
+    "996TopSpeed": 119,
+    "9960to60": 8.8,
+    "996Handling": 63,
 
+    "969TopSpeed": 119,
+    "9690to60": 9.4,
+    "969Handling": 65,
 
-    "666TopSpeed": 112,
-    "6660to60": 8.7,
-    "666Handling": 64,
-
-
-    "996TopSpeed": 117,
-    "9960to60": 7.7,
-    "996Handling": 64,
-
-
-    "969TopSpeed": 116,
-    "9690to60": 7.9,
-    "969Handling": 66,
-
-
-    "699TopSpeed": 0,
-    "6990to60": 0,
-    "699Handling": 0
+    "699TopSpeed": 114,
+    "6990to60": 8.8,
+    "699Handling": 65
 }

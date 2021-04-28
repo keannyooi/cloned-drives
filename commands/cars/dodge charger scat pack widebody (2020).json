@@ -1,5 +1,5 @@
 {
-    "rq": 72,
+    "rq": 75,
     "make": "Dodge",
     "model": "Charger Scat Pack Widebody",
     "modelYear": 2020,
@@ -24,13 +24,13 @@
     "ola": 80.00,
     "description": "Not quite a Hellcat. By DodgeDemon",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/789742007316250654/2020_Dodge_Charger_Scat_Pack_Widebody.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/789741129142370334/DodgeChargerSPWidebodyStock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/789741165074579496/DodgeChargerSPWidebody333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/789741218481307688/DodgeChargerSPWidebody666.png",
-    "racehud996": "",
-    "racehud969": "",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/789741261447757824/DodgeChargerSPWidebody699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826026534736494612/SCATBody.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826023043381723136/Scat.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826023051572805632/Scat1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826023055691612160/Scat2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826023079690895390/Scat996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826023071218794557/Scat969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826023064260313108/Scat699.png",
 
     "333TopSpeed": 178,
     "3330to60": 4.1,
@@ -40,7 +40,15 @@
     "6660to60": 3.9,
     "666Handling": 94,
 
-    "699TopSpeed": 184,
-    "6990to60": 3.6,
+	"996TopSpeed": 184,
+    "9960to60": 3.7,
+    "996Handling": 94,
+
+	"969TopSpeed": 184,
+    "9690to60": 3.9,
+    "969Handling": 98,
+
+    "699TopSpeed": 181,
+    "6990to60": 3.7,
     "699Handling": 98
 }

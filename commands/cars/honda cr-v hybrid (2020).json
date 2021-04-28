@@ -1,5 +1,5 @@
-﻿{
-    "rq": 51,
+{
+    "rq": 49,
     "make": "Honda",
     "model": "CR-V Hybrid",
     "modelYear": 2020,
@@ -11,7 +11,6 @@
     "tyreType": "All-Surface",
     "tags": [],
     "isPrize": false,
-
 
     "weight": 1655,
     "gc": "High",
@@ -25,37 +24,31 @@
     "ola": 97.37,
     "description": "Another SUVish hybrid offering for 2020. Card by AGE",
 
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826072884052361236/CRV.jpg.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826073636326473738/crv.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826073639828062208/crv333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826073646140358676/crv666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826073668063854612/crv996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826073660624076840/crv969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826073654697656330/crv699.png",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/798946409721495582/image0.jpg?width=1104&height=676",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/798933269961900102/image0.jpg?width=1080&height=676",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/798933296049946634/image0.jpg?width=1080&height=676",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/798933317658738698/image0.jpg?width=1080&height=676",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/798933377516306442/image0.jpg?width=1080&height=676",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/798933358402469909/image0.jpg?width=1080&height=676",
-    "racehud699": "",
-
-
-    "333TopSpeed": 107,
+    "333TopSpeed": 108,
     "3330to60": 7.2,
     "333Handling": 74,
 
-
-    "666TopSpeed": 110,
-    "6660to60": 6.7, 
+    "666TopSpeed": 113,
+    "6660to60": 6.8,
     "666Handling": 77,
 
-
-    "996TopSpeed": 116,
-    "9960to60": 5.9,
+    "996TopSpeed": 118,
+    "9960to60": 6.5,
     "996Handling": 77,
 
+    "969TopSpeed": 118,
+    "9690to60": 6.8,
+    "969Handling": 80,
 
-    "969TopSpeed": 114,
-    "9690to60": 6.2,
-    "969Handling":80,
-
-
-    "699TopSpeed": 0,
-    "6990to60": 0,
-    "699Handling": 0
+    "699TopSpeed": 113,
+    "6990to60": 6.5,
+    "699Handling": 80
 }

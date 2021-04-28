@@ -1,5 +1,5 @@
 {
-    "rq": 100,
+    "rq": 103,
     "make": "Rimac",
     "model": "Concept_S",
     "modelYear": 2016,
@@ -9,7 +9,7 @@
     "handling": 96,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Eco-Friendly", "Hypercar", "Track Day", "Ultra Expensive"],
+    "tags": ["Eco-Friendly", "Hypercar", "Track Day", "Ultra Expensive", "Rest of the World"],
     "isPrize": true,
 
     "weight": 1800,
@@ -24,27 +24,31 @@
     "ola": 54.17,
     "description": "Concepts go brrr. Card by DodgeDemon.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/806975525187747900/2016_Rimac_CS.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/806975862267445328/RimacCS000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/806975909381931008/RimacCS333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/806975951685681162/RimacCS666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/806976093734436874/RimacCS996.png",
-    "racehud969": "",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/806975996402073650/RimacCS699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820817568356499517/2016_Rimac_CS.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823943650450473010/cs.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823943654804422686/cs333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823943658876436501/cs666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823943683782344745/cs996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823943675964555304/cs969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823943666196283472/cs699.png",
 
     "333TopSpeed": 229,
     "3330to60": 2.3,
     "333Handling": 99,
 
-    "666TopSpeed": 231,
-    "6660to60": 2.2,
-    "666Handling": 103,
+    "666TopSpeed": 232,
+    "6660to60": 2.2, 
+    "666Handling": 102,
 
-    "996TopSpeed": 235,
+    "996TopSpeed": 234,
     "9960to60": 2.0,
-    "996Handling": 104,
+    "996Handling": 102,
 
-    "699TopSpeed": 233,
-    "6990to60": 2.1,
+    "969TopSpeed": 234,
+    "9690to60": 2.2,
+    "969Handling": 107,
+
+    "699TopSpeed": 232,
+    "6990to60": 2.0,
     "699Handling": 107
 }

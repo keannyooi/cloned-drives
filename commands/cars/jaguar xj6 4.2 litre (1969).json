@@ -1,5 +1,5 @@
 {
-    "rq": 21,
+    "rq": 27,
     "make": "Jaguar",
     "model": "XJ6 4.2 Litre",
     "modelYear": 1969,
@@ -24,23 +24,31 @@
     "ola": 50.75,
     "description": "Card by Connor.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/802253801628500028/E.JagXJ642Litre.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/802253408097533962/E.JagXJ642Litre.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/802253440071237632/E.JagXJ642Litre-1star.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/802253471134908416/E.JagXJ642Litre-2star.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/802253563266072586/E.JagXJ642Litre-969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820689709759856660/E.JagXJ642Litre.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820689816592973854/E.JagXJ642.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820689825627766784/E.JagXJ642-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820689841641619487/E.JagXJ642-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820689888277430272/E.JagXJ642-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820689875770408970/E.JagXJ642-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820689861060460604/E.JagXJ642-699.png",
 
-    "333TopSpeed": 123,
-    "3330to60": 9.5,
+    "333TopSpeed": 124,
+    "3330to60": 9.7,
     "333Handling": 68,
 
-    "666TopSpeed": 126,
-    "6660to60": 8.8,
-    "666Handling": 71,
+    "666TopSpeed": 129,
+    "6660to60": 9.2,
+    "666Handling": 70,
 
-    "969TopSpeed": 128,
-    "9690to60": 8.1,
-    "969Handling": 74
+	"996TopSpeed": 133,
+    "9960to60": 8.7,
+    "996Handling": 70,
+
+    "969TopSpeed": 133,
+    "9690to60": 9.2,
+    "969Handling": 73,
+
+	"699TopSpeed": 129,
+    "6990to60": 8.7,
+    "699Handling": 73
 }

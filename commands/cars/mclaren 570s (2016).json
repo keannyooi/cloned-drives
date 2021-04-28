@@ -1,5 +1,5 @@
 {
-    "rq": 91,
+    "rq": 88,
     "make": "McLaren",
     "model": "570S",
     "modelYear": 2016,
@@ -22,25 +22,33 @@
     "fuelType": "Petrol",
     "mra": 92.06,
     "ola": 93.1,
-    "description": "The Baby McLaren. Card by Spence",
+    "description": "The Baby McLaren. Card by Exist.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/811462558829117460/image0.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/811462348870778890/570s.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/811462384673226782/570s_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/811462392928010296/570s_666.jpg",
-    "racehud996": "",
-    "racehud969": "",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/811462413579845662/570s_699.jpg",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826715930401701921/CD_McLaren_570S.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826716054906601492/CD_McLaren_570S_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826716068994351104/CD_McLaren_570S_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826716073524330536/CD_McLaren_570S_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826716100732911656/CD_McLaren_570S_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826716090834092062/CD_McLaren_570S_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826716084752482325/CD_McLaren_570S_699.png",
 
-    "333TopSpeed": 206,
+    "333TopSpeed": 207,
     "3330to60": 2.8,
     "333Handling": 95,
 
-    "666TopSpeed": 208,
+    "666TopSpeed": 209,
     "6660to60": 2.6,
-    "666Handling": 99,
+    "666Handling": 98,
 
-    "699TopSpeed": 210,
+    "996TopSpeed": 212,
+    "9960to60": 2.5,
+    "996Handling": 98,
+
+    "969TopSpeed": 212,
+    "9690to60": 2.6,
+    "969Handling": 102,
+
+    "699TopSpeed": 209,
     "6990to60": 2.5,
     "699Handling": 102
 }

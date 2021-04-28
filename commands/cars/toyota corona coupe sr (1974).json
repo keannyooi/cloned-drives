@@ -1,5 +1,5 @@
 {
-    "rq": 12,
+    "rq": 13,
     "make": "Toyota",
     "model": "Corona Coupe SR",
     "modelYear": 1974,
@@ -22,25 +22,33 @@
     "fuelType": "Petrol",
     "mra": 37.42,
     "ola": 66.25,
-    "description": "",
+    "description": "funny name. Card by Bnuuy",
 
-    "card": "https://cdn.discordapp.com/attachments/733973415366623274/786629428129693746/ToyotaCoronaCoupeSR.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/786646697572564992/CoronaSt.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/786646719261704202/Corona1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/786646740195082250/Corona2.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/786646771311968298/Corona323.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/823589329817174016/corona.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823590000305635328/coro.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823590005691645962/coro333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823590010879213628/coro666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823590038897950740/coro996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823590029427343440/coro969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823590018899509318/coro699.png",
 
-    "333TopSpeed": 98,
-    "3330to60": 14.6,
+    "333TopSpeed": 101,
+    "3330to60": 15.2,
     "333Handling": 64,
 
-    "666TopSpeed": 100,
-    "6660to60": 13.2,
-    "666Handling": 67,
+    "666TopSpeed": 107,
+    "6660to60": 14.4, 
+    "666Handling": 66,
 
-    "969TopSpeed": 103,
-    "9690to60": 11.7,
-    "969Handling": 69
+    "996TopSpeed": 112,
+    "9960to60": 13.6,
+    "996Handling": 66,
+
+    "969TopSpeed": 112,
+    "9690to60": 14.4,
+    "969Handling": 69,
+
+    "699TopSpeed": 107,
+    "6990to60": 13.6,
+    "699Handling": 69
 }

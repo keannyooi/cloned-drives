@@ -1,5 +1,5 @@
 {
-    "rq": 53,
+    "rq": 51,
     "make": "BMW",
     "model": "540i",
     "modelYear": 1996,
@@ -24,27 +24,31 @@
     "ola": 81.48,
     "description": "",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/788176407993253899/BMW_540i_1996.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/788177196715606026/540i.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/788177210371735562/540i333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/788177223747764284/540i666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/788177265912446996/540i996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/788177243766652928/540i969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/825087097605587013/540i.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/825087219236077588/540i.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/825087224928403487/540i1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/825087230556110898/540i2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/825087250919587910/540i996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/825087245236568074/540i969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/825087236869455882/540i699.png",
 
     "333TopSpeed": 158,
     "3330to60": 5.9,
-    "333Handling": 75,
+    "333Handling": 74,
 
-    "666TopSpeed": 161,
+    "666TopSpeed": 162,
     "6660to60": 5.6,
-    "666Handling": 78,
+    "666Handling": 77,
 
     "996TopSpeed": 165,
     "9960to60": 5.3,
-    "996Handling": 78,
+    "996Handling": 77,
 
-    "969TopSpeed": 164,
-    "9690to60": 5.4,
-    "969Handling": 81
+    "969TopSpeed": 165,
+    "9690to60": 5.6,
+    "969Handling": 80,
+
+	"699TopSpeed": 162,
+    "6990to60": 5.3,
+    "699Handling": 80
 }

@@ -1,0 +1,54 @@
+{
+    "rq": 49,
+    "make": "Lexus",
+    "model": "SC 400",
+    "modelYear": 1991,
+    "country": "JP",
+    "topSpeed": 148,
+    "0to60": 6.8,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1622,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 62.96,
+    "ola": 76.74,
+    "description": "Card by Connor.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820216257940815872/C.LexusSC400.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820216322196897802/C.LexusSC400.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820216332980453406/C.LexusSC400-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820216339620692018/C.LexusSC400-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820216384838696960/C.LexusSC400-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820216365352484864/C.LexusSC400-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820216351988908042/C.LexusSC400-699.png",
+
+    "333TopSpeed": 152,
+    "3330to60": 6.5,
+    "333Handling": 80,
+
+    "666TopSpeed": 155,
+    "6660to60": 6.1,
+    "666Handling": 82,
+
+    "996TopSpeed": 159,
+    "9960to60": 5.8,
+    "996Handling": 82,
+
+    "969TopSpeed": 159,
+    "9690to60": 6.1,
+    "969Handling": 85,
+
+    "699TopSpeed": 155,
+    "6990to60": 5.8,
+    "699Handling": 85
+}

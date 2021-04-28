@@ -1,5 +1,5 @@
 {
-    "rq": 85,
+    "rq": 82,
     "make": "RUF",
     "model": "CTR2",
     "modelYear": 1995,
@@ -9,7 +9,7 @@
     "handling": 85,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [],
+    "tags": ["Supercar"],
     "isPrize": false,
 
     "weight": 1358,
@@ -22,29 +22,33 @@
     "fuelType": "Petrol",
     "mra": 90,
     "ola": 83.33,
-    "description": "RUF's 90s weapon. By Bnuuy",
+    "description": "RUF's 90s weapon. Card by Bnuuy",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/791070750478958602/rufctr2corrected.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/791070829151780906/ctr2.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/791070842570276864/ctr2333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/791070855790592000/ctr2666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/791070913185185822/ctr2996.png",
-    "racehud969": "",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/791070893332889610/ctr2699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819962132162281482/CTR2.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819962549100347412/ctr2.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819962554146357278/CTR233.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819962562363523082/CTR2666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819962600287633428/CTR2996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819962591722864701/CTR2969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819962578502418442/CTR2699.png",
 
-    "333TopSpeed": 224,
+    "333TopSpeed": 223,
     "3330to60": 3.4,
     "333Handling": 88,
 
-    "666TopSpeed": 227,
-    "6660to60": 3.2,
+    "666TopSpeed": 223,
+    "6660to60": 3.2, 
     "666Handling": 91,
 
-    "996TopSpeed": 230,
-    "9960to60": 3.0,
+    "996TopSpeed": 228,
+    "9960to60": 3.1,
     "996Handling": 91,
 
-    "699TopSpeed": 228,
+    "969TopSpeed": 228,
+    "9690to60": 3.2,
+    "969Handling": 94,
+
+    "699TopSpeed": 226,
     "6990to60": 3.1,
-    "699Handling": 95
+    "699Handling": 94
 }

@@ -9,7 +9,7 @@
     "handling": 82,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["2021 Spring Collection", "Street Racer"],
+    "tags": ["Street Racer"],
     "isPrize": false,
 
     "weight": 1365,
@@ -24,27 +24,31 @@
     "ola": 73.08,
     "description": "A Ferrari killer that never really got its supercar status. Card by Connor",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/810596519660748830/B.AcuraNSX.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/810596595140788275/B.AcuraNSX.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/810596613494931456/B.AcuraNSX-1star.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/810596624371548160/B.AcuraNSX-2star.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/810596649431728128/B.AcuraNSX-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/810596637420159016/B.AcuraNSX-699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820738123880726548/B.AcuraNSX.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820737969153507348/B.AcuraNSX.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820737974479618068/B.AcuraNSX-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820737987167387679/B.AcuraNSX-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820738030922367036/B.AcuraNSX-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820738019262332968/B.AcuraNSX-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820738002472927312/B.AcuraNSX-699.png",
 
     "333TopSpeed": 165,
     "3330to60": 4.9,
     "333Handling": 85,
 
     "666TopSpeed": 168,
-    "6660to60": 4.6,
-    "666Handling": 88,
+    "6660to60": 4.7,
+    "666Handling": 87,
 
-    "969TopSpeed": 171,
-    "9690to60": 4.3,
+    "996TopSpeed": 172,
+    "9960to60": 4.4,
+    "996Handling": 87,
+
+    "969TopSpeed": 172,
+    "9690to60": 4.7,
     "969Handling": 91,
-    
-    "699TopSpeed" : 170,
-    "6990to60" : 4.3,
-    "699Handling" : 91
+
+    "699TopSpeed": 168,
+    "6990to60": 4.4,
+    "699Handling": 91
 }

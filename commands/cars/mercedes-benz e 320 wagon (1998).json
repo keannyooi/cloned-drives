@@ -1,5 +1,5 @@
 {
-    "rq": 33,
+    "rq": 37,
     "make": "Mercedes-Benz",
     "model": "E 320 Wagon",
     "modelYear": 1998,
@@ -22,25 +22,33 @@
     "fuelType": "Petrol",
     "mra": 56.72,
     "ola": 71.05,
-    "description": "",
+    "description": "Card by Andu.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/765189964228067328/e_320_wagon.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/765177772653543434/mercedes-benz_e_320_wagon.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/765177884721020948/mercedes-benz_e_320_wagon_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/765177898637328394/mercedes-benz_e_320_wagon_666.jpg",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/765177919324422174/mercedes-benz_e_320_wagon_969.jpg",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/821696739584901140/vibescarMercE320W.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824951455290359858/E320.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824951462911410176/E320-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824951472198123540/E320-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824951493437554719/E320-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824951486047715379/E320-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824951477880619038/E320-699.png",
 
     "333TopSpeed": 134,
-    "3330to60": 6.8,
+    "3330to60": 7.2,
     "333Handling": 71,
 
     "666TopSpeed": 138,
-    "6660to60": 6.4,
+    "6660to60": 6.8,
     "666Handling": 74,
 
-    "969TopSpeed": 141,
-    "9690to60": 6.1,
-    "969Handling": 76
+    "996TopSpeed": 142,
+    "9960to60": 6.5,
+    "996Handling": 74,
+
+    "969TopSpeed": 142,
+    "9690to60": 6.8,
+    "969Handling": 77,
+
+    "699TopSpeed": 138,
+    "6990to60": 6.5,
+    "699Handling": 77
 }

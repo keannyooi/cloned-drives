@@ -1,5 +1,5 @@
 {
-    "rq": 48,
+    "rq": 55,
     "make": ["Mugen", "Honda"],
     "model": "Civic Type-R",
     "modelYear": 2003,
@@ -24,27 +24,31 @@
     "ola": 62.07,
     "description": "The tuned EP2. Card by Havvy",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/810460182625648661/Mug.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/810460302554169374/MugSt.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/810460308828848158/Mug1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/810460314024804361/Mug2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/810460328268791818/Mug332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/810460320799784970/Mug323.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/822012454614990848/MugenCivicType-RVan.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/822012510882103336/000_van.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/822012514334277642/111_van.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/822012518830309377/222_van.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/822012533702918165/332_van.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/822012529013162014/323_van.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/822012523674337310/233_van.png",
 
-    "333TopSpeed": 160,
+    "333TopSpeed": 159,
     "3330to60": 5.8,
     "333Handling": 85,
 
-    "666TopSpeed": 164,
-    "6660to60": 5.4,
-    "666Handling": 88,
+    "666TopSpeed": 163,
+    "6660to60": 5.5,
+    "666Handling": 87,
 
-    "996TopSpeed": 169,
-    "9960to60": 5.0,
-    "996Handling": 88,
+    "996TopSpeed": 166,
+    "9960to60": 5.2,
+    "996Handling": 87,
 
-    "969TopSpeed": 168,
-    "9690to60": 5.1,
-    "969Handling": 91
+    "969TopSpeed": 166,
+    "9690to60": 5.5,
+    "969Handling": 91,
+
+	"699TopSpeed": 163,
+    "6990to60": 5.2,
+    "699Handling": 91
 }

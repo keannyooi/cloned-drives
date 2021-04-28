@@ -1,5 +1,5 @@
 {
-    "rq": 35,
+    "rq": 37,
     "make": "Opel",
     "model": "Adam S",
     "modelYear": 2015,
@@ -24,24 +24,31 @@
     "ola": 77.88,
     "description": "Red Hot Chili Adam. Card by Connor",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/813324143994732584/D.OpelAdamS.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/813324224412123146/D.OpelAdamS.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/813324234679517184/D.OpelAdamS-1star.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/813324245647622144/D.OpelAdamS-2star.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/813324258310094868/D.OpelAdamS-969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819552585388130334/D.OpelAdamS.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819552752736665640/D.OpelAdamS.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819552770176712734/D.OpelAdamS-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819552786453889095/D.OpelAdamS-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819552854120857620/D.OpelAdamS-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819552824287035452/D.OpelAdamS-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819552807048183808/D.OpelAdamS-699.png",
 
-    "333TopSpeed": 129,
-    "3330to60": 7.3,
-    "333Handling": 79,
+    "333TopSpeed": 130,
+    "3330to60": 7.4,
+    "333Handling": 80,
 
-    "666TopSpeed": 132,
-    "6660to60": 6.8,
-    "666Handling": 83,
+    "666TopSpeed": 134,
+    "6660to60": 7.0,
+    "666Handling": 82,
 
-    "969TopSpeed": 135,
-    "9690to60": 6.3,
-    "969Handling": 85
-	
+    "996TopSpeed": 138,
+    "9960to60": 6.6,
+    "996Handling": 82,
+
+    "969TopSpeed": 138,
+    "9690to60": 7.0,
+    "969Handling": 85,
+
+    "699TopSpeed": 134,
+    "6990to60": 6.6,
+    "699Handling": 85
 }

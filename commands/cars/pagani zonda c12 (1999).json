@@ -1,5 +1,5 @@
 {
-    "rq": 71,
+    "rq": 69,
     "make": "Pagani",
     "model": "Zonda C12",
     "modelYear": 1999,
@@ -24,13 +24,13 @@
     "ola": 90.48,
     "description": "The original politically incorrect Italian. By DodgeDemon",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/788917132418351124/1999_Pagani_Zonda_C12.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/788916839593803866/zonda.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/788916862770741268/zonda333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/788916902922551306/zonda666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/788917022159405087/zonda996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/788916975615082536/zonda969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/788916944283631646/zonda699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826450502379896862/zondaC12.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826450588995944488/zondac12.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826450596089298997/zondac12333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826450603819532328/zondac12666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826450628183588874/zondac12996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826450620176924752/zondac12969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826450611532857384/zondac12699.png",
 
     "333TopSpeed": 189,
     "3330to60": 4.0,
@@ -40,15 +40,15 @@
     "6660to60": 3.8,
     "666Handling": 90,
 
-    "996TopSpeed": 197,
-    "9960to60": 3.5,
+    "996TopSpeed": 194,
+    "9960to60": 3.6,
     "996Handling": 90,
 
-    "969TopSpeed": 196,
-    "9690to60": 3.6,
+    "969TopSpeed": 194,
+    "9690to60": 3.8,
     "969Handling": 93,
 
-    "699TopSpeed": 193,
-    "6990to60": 3.7,
-    "699Handling": 94
+    "699TopSpeed": 192,
+    "6990to60": 3.6,
+    "699Handling": 93
 }

@@ -1,5 +1,5 @@
 {
-    "rq": 60,
+    "rq": 57,
     "make": "Dodge",
     "model": "Durango RT AWD",
     "modelYear": 2016,
@@ -24,27 +24,31 @@
     "ola": 80.00,
     "description": "Card by Macan.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/800164340439056454/Durango_RT_AWD_16.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/800157657457492038/Dodge_Durango_RT_AWD_2016_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/800157666743287808/Dodge_Durango_RT_AWD_2016_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/800157676733988884/Dodge_Durango_RT_AWD_2016_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/800157715891879936/Dodge_Durango_RT_AWD_2016_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/800157700544659516/Dodge_Durango_RT_AWD_2016_969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826073080446713866/Dodge_Durango_RT_AWD_2016.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826073694794154034/drt.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826073699709878272/drt333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826073704797831198/drt666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826073726159945728/drt996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826073718685171762/drt969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826073711773351966/drt699.png",
 
     "333TopSpeed": 124,
-    "3330to60": 5.8,
+    "3330to60": 5.9,
     "333Handling": 72,
 
-    "666TopSpeed": 128,
-    "6660to60": 5.4,
+    "666TopSpeed": 129,
+    "6660to60": 5.6,
     "666Handling": 75,
 
     "996TopSpeed": 133,
-    "9960to60": 4.9,
+    "9960to60": 5.3,
     "996Handling": 75,
 
-    "969TopSpeed": 132,
-    "9690to60": 5.1,
-    "969Handling": 77
+    "969TopSpeed": 133,
+    "9690to60": 5.6,
+    "969Handling": 78,
+
+	"699TopSpeed": 129,
+    "6990to60": 5.3,
+    "699Handling": 78
 }

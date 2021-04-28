@@ -1,5 +1,5 @@
 {
-    "rq": 79,
+    "rq": 77,
     "make": ["Mercedes-Benz", "McLaren"],
     "model": "SLR McLaren",
     "modelYear": 2003,
@@ -24,27 +24,31 @@
     "ola": 100.00,
     "description": "Weight saving measures for the car didn't stop it to be one heavy boi. Card by havvy",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/795544916771864586/McMercSLR.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/795544993044627486/000slr.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/795545006127579146/111slr.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/795545032643182613/222slr.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/795545072875470878/332slr.png",
-    "racehud969": "",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/795545055188353074/233slr.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/827286800573399060/McMercSLR2.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/822615860270858260/000_slr.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/822615867539456100/111_slr.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/822615873105166386/222_slr.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/822615892268679178/332_slr.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/822615883397857280/323_slr.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/822615878188793856/233_slr.png",
 
-    "333TopSpeed": 211,
+    "333TopSpeed": 210,
     "3330to60": 3.4,
     "333Handling": 90,
 
-    "666TopSpeed": 215,
-    "6660to60": 3.3,
+    "666TopSpeed": 212,
+    "6660to60": 3.2,
     "666Handling": 93,
 
-	"996TopSpeed": 220,
-    "9960to60": 3.0,
-    "996Handling": 94,
+    "996TopSpeed": 215,
+    "9960to60": 3.1,
+    "996Handling": 93,
 
-    "699TopSpeed": 216,
+    "969TopSpeed": 215,
+    "9690to60": 3.2,
+    "969Handling": 97,
+
+    "699TopSpeed": 212,
     "6990to60": 3.1,
     "699Handling": 97
 }

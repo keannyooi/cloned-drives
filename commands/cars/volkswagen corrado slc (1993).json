@@ -1,5 +1,5 @@
 {
-    "rq": 35,
+    "rq": 39,
     "make": "Volkswagen",
     "model": "Corrado SLC",
     "modelYear": 1993,
@@ -24,28 +24,32 @@
     "ola": 73.24,
     "description": "The American version of the Corrado VR6. Card by Johnny",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/810115795233144855/Volkswagen-Corrado-SLC.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/810115622943981589/Volkswagen-Corrado-SLC.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/810115626063757312/Volkswagen-Corrado-SLC-1-star.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/810115630983675944/Volkswagen-Corrado-SLC-2-star.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/810115649551728650/Volkswagen-Corrado-SLC-332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/810115640760991744/Volkswagen-Corrado-SLC-323.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820050787036037171/cate-test.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820050891649974302/Volkswagen-Corrado-SLC.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820050899057246268/Volkswagen-Corrado-SLC-1-star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820050908527329290/Volkswagen-Corrado-SLC-2-star.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820050938386972692/Volkswagen-Corrado-SLC-332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820050927238250536/Volkswagen-Corrado-SLC-323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820050918699565087/Volkswagen-Corrado-SLC-233.png",
 
-    "333TopSpeed": 147,
+    "333TopSpeed": 148,
     "3330to60": 6.7,
     "333Handling": 76,
 
-    "666TopSpeed": 150,
-    "6660to60": 6.3,
-    "666Handling": 80,
+    "666TopSpeed": 151,
+    "6660to60": 6.4, 
+    "666Handling": 79,
 
-    "996TopSpeed": 154,
-    "9960to60": 5.7,
-    "996Handling": 80,
-	 
-	"969TopSpeed": 153,
-    "9690to60": 5.9,
-    "969Handling": 82
+    "996TopSpeed": 155,
+    "9960to60": 6.0,
+    "996Handling": 79,
+
+    "969TopSpeed": 155,
+    "9690to60": 6.4,
+    "969Handling": 82,
+
+    "699TopSpeed": 151,
+    "6990to60": 6.0,
+    "699Handling": 82
 	
 }

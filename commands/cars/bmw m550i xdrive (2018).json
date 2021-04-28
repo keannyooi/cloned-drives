@@ -1,5 +1,5 @@
 {
-    "rq": 89,
+    "rq": 81,
     "make": "BMW",
     "model": "M550i xDrive",
     "modelYear": 2018,
@@ -8,7 +8,7 @@
     "0to60": 3.8,
     "handling": 85,
     "driveType": "4WD",
-    "tyreType": "Standard",
+    "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
 
@@ -24,27 +24,31 @@
     "ola": 68.42,
     "description": "Card by Macan.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/798367225429491722/BMW_M550i_xDrive_2018.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/798367379075366932/BMW_M550i_xDrive_2018_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/798367391225610290/BMW_M550i_xDrive_2018_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/798367584352469002/BMW_M550i_xDrive_2018_666.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/798367631668281344/BMW_M550i_xDrive_2018_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/798367613465264149/BMW_M550i_xDrive_2018_699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/828007519825166406/M550i_xDrive_18.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/828007607620075560/BMW_M550i_xDrive_2018_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/828007615371673650/BMW_M550i_xDrive_2018_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/828007621188911114/BMW_M550i_xDrive_2018_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/828007642906492968/BMW_M550i_xDrive_2018_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/828007638997401640/BMW_M550i_xDrive_2018_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/828007630999781437/BMW_M550i_xDrive_2018_699.png",
 
-    "333TopSpeed": 159,
+    "333TopSpeed": 158,
     "3330to60": 3.6,
     "333Handling": 88,
 
-    "666TopSpeed": 163,
-    "6660to60": 3.3,
+    "666TopSpeed": 162,
+    "6660to60": 3.4,
     "666Handling": 91,
 
-    "969TopSpeed": 167,
-    "9690to60": 3.0,
+	"996TopSpeed": 165,
+    "9960to60": 3.2,
+    "996Handling": 91,
+
+    "969TopSpeed": 165,
+    "9690to60": 3.4,
     "969Handling": 94,
 
-    "699TopSpeed": 163,
-    "6990to60": 3.0,
+    "699TopSpeed": 162,
+    "6990to60": 3.2,
     "699Handling": 94
 }

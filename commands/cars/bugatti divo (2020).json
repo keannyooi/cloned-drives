@@ -24,13 +24,13 @@
     "ola": 113.04,
     "description": "The track orrientated Chiron type thing. Card by DodgeDemon.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/807524231972913172/2020_Bugatti_Divo.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/807524327313375242/BugattiDivo000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/807524370263703552/BugattiDivo333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/807524425347629077/BugattiDivo666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/807524509682630656/BugattiDivo996.png",
-    "racehud969": "",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/807524470339272704/BugattiDivo699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824389410496970802/2020_Bugatti_Divo.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824390063068676106/divo.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824390067907854336/divo333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824390073751437312/divo666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824390095322742814/divo996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824390087914684487/divo969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824390082203090984/divo699.png",
 
     "333TopSpeed": 238,
     "3330to60": 2.2,
@@ -40,11 +40,15 @@
     "6660to60": 2.1,
     "666Handling": 100,
 
-    "996TopSpeed": 244,
-    "9960to60": 1.9,
-    "996Handling": 101,
+    "996TopSpeed": 243,
+    "9960to60": 2.0,
+    "996Handling": 100,
 
-    "699TopSpeed": 242,
+	"969TopSpeed": 243,
+    "9690to60": 2.1,
+    "969Handling": 104,
+
+    "699TopSpeed": 240,
     "6990to60": 2.0,
     "699Handling": 104
 }

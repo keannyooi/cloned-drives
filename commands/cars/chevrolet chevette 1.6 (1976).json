@@ -1,0 +1,54 @@
+{
+    "rq": 11,
+    "make": "Chevrolet",
+    "model": "Chevette 1.6",
+    "modelYear": 1976,
+    "country": "US",
+    "topSpeed": 81,
+    "0to60": 17.8,
+    "handling": 63,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 916,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 0.00,
+    "ola": 61.80,
+    "description": "A hillariously slow shitbox that surprises even cars forty years from now with its fuel economy. Card by keanny",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/834044918367649792/cehvette.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/834046630545195048/chevette_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/834046639261483097/chevette_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/834046645368651776/chevette_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/834046685776838746/chevette_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/834046671024816158/chevette_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/834046655774588978/chevette_699.jpg",
+
+    "333TopSpeed": 87,
+    "3330to60": 16.9,
+    "333Handling": 65,
+
+    "666TopSpeed": 94,
+    "6660to60": 16.0,
+    "666Handling": 67,
+
+	"996TopSpeed": 100,
+    "9960to60": 15.1,
+    "996Handling": 67,
+
+    "969TopSpeed": 100,
+    "9690to60": 16.0,
+    "969Handling": 70,
+
+	"699TopSpeed": 89,
+    "6990to60": 15.1,
+    "699Handling": 70
+}

@@ -1,5 +1,5 @@
 ﻿{
-    "rq": 80,
+    "rq": 75,
     "make": "Porsche",
     "model": "911 Turbo",
     "modelYear": 2000,
@@ -9,7 +9,7 @@
     "handling": 86,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [],
+    "tags": ["Supercar"],
     "isPrize": false,
 
 
@@ -26,36 +26,32 @@
     "description": "A savagely powerful, hugely capable but ultimately rather refined sports/GT weapon. Card by Havvy",
 
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/804460979723042836/Porsche911Turbo996.png?width=705&height=439",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/804461038232797234/000_996turbo.png?width=1154&height=718",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/804461045014855760/111_996turbo.png?width=1154&height=718",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/804461050815709244/222_996turbo.png?width=1154&height=718",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/804461064367898654/332_996turbo.png?width=1154&height=718",
-    "racehud969": "",
-    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/804461058415788102/233_996turbo.png?width=1154&height=718",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824611536135389244/911turbo2000.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824615000969576458/pt00.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824615009504985118/pt00333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824615016590082128/pt00666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824615040660799548/pt00996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824615031207362560/pt00969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824615025648861264/pt00699.png",
 
 
     "333TopSpeed": 193,
     "3330to60": 3.8,
     "333Handling": 89,
 
-
-    "666TopSpeed": 196,
+    "666TopSpeed": 195,
     "6660to60": 3.6, 
     "666Handling": 92,
 
-
-    "996TopSpeed": 199,
-    "9960to60": 3.3,
+    "996TopSpeed": 198,
+    "9960to60": 3.4,
     "996Handling": 92,
 
+    "969TopSpeed": 198,
+    "9690to60": 3.6,
+    "969Handling": 95,
 
-    "969TopSpeed": 0,
-    "9690to60": 0,
-    "969Handling": 0,
-
-
-    "699TopSpeed": 197,
+    "699TopSpeed": 198,
     "6990to60": 3.4,
     "699Handling": 95
 }

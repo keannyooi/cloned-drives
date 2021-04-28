@@ -1,0 +1,54 @@
+{
+    "rq": 49,
+    "make": "Chevrolet",
+    "model": "Impala 2LTZ",
+    "modelYear": 2014,
+    "country": "US",
+    "topSpeed": 149,
+    "0to60": 6.5,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1734, 
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 72.22,
+    "ola": 86.15,
+    "description": "Chevy's big sedan. Card by Macan",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/825489773043908608/Impala_2LTZ_14.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/825489922324430848/Chevrolet_Impala_2LTZ_2014_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/825489926380322836/Chevrolet_Impala_2LTZ_2014_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/825489934537326642/Chevrolet_Impala_2LTZ_2014_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/825489953605550120/Chevrolet_Impala_2LTZ_2014_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/825489947103854612/Chevrolet_Impala_2LTZ_2014_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/825489944193138718/Chevrolet_Impala_2LTZ_2014_699.png",
+
+    "333TopSpeed": 152,
+    "3330to60": 6.2,
+    "333Handling": 75,
+
+    "666TopSpeed": 156,
+    "6660to60": 5.9, 
+    "666Handling": 78,
+
+    "996TopSpeed": 169,
+    "9960to60": 5.5,
+    "996Handling": 78,
+
+    "969TopSpeed": 159,
+    "9690to60": 5.9,
+    "969Handling": 81,
+
+    "699TopSpeed": 156,
+    "6990to60": 5.5,
+    "699Handling": 81
+}

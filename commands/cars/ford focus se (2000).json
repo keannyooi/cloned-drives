@@ -1,5 +1,5 @@
 {
-    "rq": 27,
+    "rq": 32,
     "make": "Ford",
     "model": "Focus SE",
     "modelYear": 2000,
@@ -24,23 +24,31 @@
     "ola": 60.99,
     "description": "A Focus but sedan. Card by Keanny",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/806452656662380554/ford_focus_se.png?width=1154&height=710",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/806010280315191396/focus_se.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/806010323193954334/focus_se_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/806010331881144350/focus_se_666.jpg",
-    "racehud996": "",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/806010342449872906/focus_se_969.jpg",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819390705138008104/ford_focus_se.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819770945593016370/focus_se_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819770953340682260/focus_se_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819770961183899658/focus_se_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819771021489602600/focus_se_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819771001683443793/focus_se_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819770986991190036/focus_se_699.jpg",
 
-    "333TopSpeed": 109,
-    "3330to60": 8.7,
-    "333Handling": 75,
+    "333TopSpeed": 111,
+    "3330to60": 8.8,
+    "333Handling": 74,
 
-    "666TopSpeed": 112,
-    "6660to60": 8.0, 
+    "666TopSpeed": 116,
+    "6660to60": 8.4,
     "666Handling": 77,
 
-    "969TopSpeed": 115,
-    "9690to60": 7.4,
-    "969Handling": 80
+	"996TopSpeed": 121,
+    "9960to60": 7.9,
+    "996Handling": 77,
+
+    "969TopSpeed": 121,
+    "9690to60": 8.4,
+    "969Handling": 80,
+
+	"699TopSpeed": 116,
+    "6990to60": 7.9,
+    "699Handling": 80
 }

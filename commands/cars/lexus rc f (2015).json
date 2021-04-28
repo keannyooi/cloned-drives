@@ -1,5 +1,5 @@
 {
-    "rq": 72,
+    "rq": 71,
     "make": "Lexus",
     "model": "RC F",
     "modelYear": 2015,
@@ -24,13 +24,13 @@
     "ola": 79.07,
     "description": "The 2-Door variant of the Lexus IS. Card by Bnuuy",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/793622483839221790/LEUXSRCF.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/793623054310834196/RCF.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/793623063203807233/RCF333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/793623076499095572/RCF666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/793623121180491806/RCF996.png",
-    "racehud969": "",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/793623101065134080/RCF699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820687071257690163/rcf.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820687275129176134/RCF.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820687284952104960/RCF333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820687296864845865/RCF666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820687326589222912/RCF996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820687318351609896/RCF969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820687309631651879/RCF699.png",
 
     "333TopSpeed": 174,
     "3330to60": 4.1,
@@ -38,13 +38,17 @@
 
     "666TopSpeed": 177,
     "6660to60": 3.9,
-    "666Handling": 89,
+    "666Handling": 88,
 
-    "996TopSpeed": 181,
+    "996TopSpeed": 180,
     "9960to60": 3.7,
-    "996Handling": 89,
+    "996Handling": 88,
 
-    "699TopSpeed": 179,
-    "6990to60": 3.8,
+    "969TopSpeed": 180,
+    "9690to60": 3.9,
+    "969Handling": 92,
+
+    "699TopSpeed": 177,
+    "6990to60": 3.7,
     "699Handling": 92
 }

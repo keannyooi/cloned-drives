@@ -1,6 +1,6 @@
 {
     "rq": 91,
-    "make": "Mercedes-AMG",
+    "make": ["Mercedes-AMG", "Mercedes-Benz"],
     "model": "GT 63 S 4MATIC+ 4-Door Coupé",
     "modelYear": 2018,
     "country": "DE",
@@ -24,13 +24,13 @@
     "ola": 86.67,
     "description": "Card by DodgeDemon.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/807127077773115432/2018_AMG_GT_63_S_4MATIC_4_Door_Coupe.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/807127320313331742/AMGGT63S4Door000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/807127474638290954/AMGGT63S4Door333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/807127712530563082/AMGGT63S4Door666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/807128086364815401/AMGGT63S4Door996.png",
+    "card": "",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824401437416882257/notacoupe.png",
+    "racehud333": "",
+    "racehud666": "",
+    "racehud996": "",
     "racehud969": "",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/807127917301071872/AMGGT63S4Door699.png",
+    "racehud699": "",
 
     "333TopSpeed": 198,
     "3330to60": 2.8,
@@ -40,11 +40,15 @@
     "6660to60": 2.6,
     "666Handling": 97,
 
-    "996TopSpeed": 205,
-    "9960to60": 2.4,
-    "996Handling": 98,
+    "996TopSpeed": ,
+    "9960to60": ,
+    "996Handling": ,
 
-    "699TopSpeed": 203,
-    "6990to60": 2.5,
-    "699Handling": 101
+    "969TopSpeed": ,
+    "9690to60": ,
+    "969Handling": ,
+
+    "699TopSpeed": ,
+    "6990to60": ,
+    "699Handling": 
 }

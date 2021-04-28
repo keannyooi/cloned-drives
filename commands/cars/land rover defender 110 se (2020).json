@@ -1,5 +1,5 @@
 {
-    "rq": 64,
+    "rq": 61,
     "make": "Land Rover",
     "model": "Defender 110 SE",
     "modelYear": 2020,
@@ -24,27 +24,31 @@
     "ola": 69.84,
     "description": "Land Rover gets tough again with the resusication of the Defender. Card by havvy",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/786642170060079114/LRDefender110SE.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/786643115280695316/DefenderSt.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/786643139568992296/Defender1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/786643162101317682/Defender2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/786643254330392617/Defender332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/786643211925061652/Defender323.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824653922266120212/defender.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824654352886005791/d110.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824654357026701333/d110333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824654365931339786/d110666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824654415428190228/d110996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824654386290098207/d110969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824654374114164796/d110699.png",
 
-    "333TopSpeed": 123,
-    "3330to60": 5.9,
-    "333Handling": 66,
+    "333TopSpeed": 124,
+    "3330to60": 6.1,
+    "333Handling": 65,
 
-    "666TopSpeed": 126,
-    "6660to60": 5.5,
-    "666Handling": 68,
+    "666TopSpeed": 129,
+    "6660to60": 5.7,
+    "666Handling": 67,
 
-    "996TopSpeed": 131,
-    "9960to60": 4.9,
-    "996Handling": 68,
+    "996TopSpeed": 133,
+    "9960to60": 5.4,
+    "996Handling": 67,
 
-    "969TopSpeed": 129,
-    "9690to60": 5.1,
-    "969Handling": 70
+    "969TopSpeed": 133,
+    "9690to60": 5.7,
+    "969Handling": 70,
+
+	"699TopSpeed": 129,
+    "6990to60": 5.4,
+    "699Handling": 70
 }

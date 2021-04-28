@@ -1,5 +1,5 @@
 {
-    "rq": 73,
+    "rq": 69,
     "make": "Mitsubishi",
     "model": "Lancer Evolution X GSR",
     "modelYear": 2008,
@@ -24,23 +24,31 @@
     "ola": 61.54,
     "description": "Arguably the best American Varient of the Evo X. Card by Bnuuy.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/812030988707168296/evoxgsr.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/812031567731490886/evoxgsr.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/812031578624491571/evoxgsr333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/812031592586412042/evoxgsr666.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/812031610035765308/evoxgsr969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820707978130096158/XGSR.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820708382724980786/xgsr.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820708387338584145/xgsr333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820708395258216478/xgsr666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820708432793174116/xgsr996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820708424610218024/xgsr969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820708413104979978/xgsr699.png",
 
-    "333TopSpeed": 159,
-    "3330to60": 4.8,
+    "333TopSpeed": 158,
+    "3330to60": 4.9,
     "333Handling": 91,
 
-    "666TopSpeed": 163,
-    "6660to60": 4.5,
+    "666TopSpeed": 162,
+    "6660to60": 4.7,
     "666Handling": 94,
 
+    "996TopSpeed": 165,
+    "9960to60": 4.4,
+    "996Handling": 94,
+
     "969TopSpeed": 165,
-    "9690to60": 4.2,
-    "969Handling": 97
+    "9690to60": 4.7,
+    "969Handling": 98,
+
+    "699TopSpeed": 162,
+    "6990to60": 4.4,
+    "699Handling": 98
 }

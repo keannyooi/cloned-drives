@@ -22,25 +22,33 @@
     "fuelType": "Petrol",
     "mra": 72.41,
     "ola": 66.66,
-    "description": "",
+    "description": "Card by Macan.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/730314068736344104/Lotus_Evora_400_2017.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/730351499116544020/Lotus_Evora_400_2017_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/730351543957585960/Lotus_Evora_400_2017_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/730351569807212635/Lotus_Evora_400_2017_666.png",
-    "racehud996": "",
-    "racehud969": "",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/730351605890940989/Lotus_Evora_400_2017_699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826188741412126770/Lotus_Evora_400_2017.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826188799029018654/evora400.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826188804871815178/evora400333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826188812068716674/evora400666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826188856192663592/evora400996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826188846378647594/evora400969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826188831081496646/evora400699.png",
 
     "333TopSpeed": 189,
     "3330to60": 4.0,
-    "333Handling": 91,
+    "333Handling": 90,
 
     "666TopSpeed": 192,
     "6660to60": 3.8,
-    "666Handling": 94,
+    "666Handling": 93,
 
-    "699TopSpeed": 195,
+    "996TopSpeed": 194,
+    "9960to60": 3.6,
+    "996Handling": 93,
+
+    "969TopSpeed": 194,
+    "9690to60": 3.8,
+    "969Handling": 97,
+
+    "699TopSpeed": 192,
     "6990to60": 3.6,
     "699Handling": 97
 }

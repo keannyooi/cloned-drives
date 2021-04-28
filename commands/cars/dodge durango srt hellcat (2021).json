@@ -1,5 +1,5 @@
 {
-    "rq": 82,
+    "rq": 83,
     "make": "Dodge",
     "model": "Durango SRT Hellcat",
     "modelYear": 2021,
@@ -24,13 +24,13 @@
     "ola": 71.79,
     "description": "You will never be late to soccer practice again. Card by DodgeDemon.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/796161277999054929/2021_Dodge_Durango_SRT_Hellcate.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/796161313318371361/durango.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/796161322302570596/durango333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/796161335384604672/durango666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/796161383199932436/durango996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/796161364279296020/durango969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819422420531150858/2021_Dodge_Durango_SRT_Hellcate.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823933332672479262/durango.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823933340444131338/durango333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823933345910095872/durango666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823933376356417566/durango996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823933361386291200/durango969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823933353941663814/durango699.png",
 
     "333TopSpeed": 183,
     "3330to60": 3.4,
@@ -40,12 +40,15 @@
     "6660to60": 3.2,
     "666Handling": 83,
 
-    "996TopSpeed": 190,
-    "9960to60": 2.9,
+    "996TopSpeed": 189,
+    "9960to60": 3.1,
     "996Handling": 83,
 
     "969TopSpeed": 189,
-    "9690to60": 3.0,
-    "969Handling": 86
+    "9690to60": 3.2,
+    "969Handling": 87,
 
+	"699TopSpeed": 186,
+    "6990to60": 3.1,
+    "699Handling": 87
 }

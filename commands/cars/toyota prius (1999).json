@@ -1,5 +1,5 @@
 ﻿{
-    "rq": 13,
+    "rq": 19,
     "make": "Toyota",
     "model": "Prius",
     "modelYear": 1999,
@@ -26,36 +26,31 @@
     "description": "The not so loved and recognized first gen. Card by Connor",
 
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/808638686840619029/F.ToyotaPriusog.png?width=1154&height=718",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/808638840994004992/F.ToyotaPriusog.png",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/808638852696375336/F.ToyotaPriusog-1star.png",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/808638864855662622/F.ToyotaPriusog-2star.png",
-    "racehud996": "",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/808638876599844874/F.ToyotaPriusog-969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820000742756057188/F.ToyotaPriusog.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820000978169495582/F.ToyotaPriusog.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820000986692452372/F.ToyotaPriusog-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820000997501435964/F.ToyotaPriusog-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820001043873792120/F.ToyotaPriusog-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820001024910688336/F.ToyotaPriusog-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820001015155785758/F.ToyotaPriusog-699.png",
 
-
-    "333TopSpeed": 101,
-    "3330to60": 12.4,
+    "333TopSpeed": 104,
+    "3330to60": 12.6,
     "333Handling": 67,
 
+    "666TopSpeed": 110,
+    "6660to60": 12.0, 
+    "666Handling": 69,
 
-    "666TopSpeed": 103,
-    "6660to60": 11.5, 
-    "666Handling": 70,
+    "996TopSpeed": 115,
+    "9960to60": 11.3,
+    "996Handling": 69,
 
-
-    "996TopSpeed": 0,
-    "9960to60": 0,
-    "996Handling": 0,
-
-
-    "969TopSpeed": 105,
-    "9690to60": 10.6,
+    "969TopSpeed": 115,
+    "9690to60": 12.0,
     "969Handling": 72,
 
-
-    "699TopSpeed": 0,
-    "6990to60": 0,
-    "699Handling": 0
+    "699TopSpeed": 110,
+    "6990to60": 11.3,
+    "699Handling": 72  
 }

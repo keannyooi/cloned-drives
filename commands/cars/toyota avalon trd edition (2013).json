@@ -1,5 +1,5 @@
 ﻿{
-    "rq": 43,
+    "rq": 40,
     "make": "Toyota",
     "model": "Avalon TRD Edition",
     "modelYear": 2013,
@@ -9,7 +9,7 @@
     "handling": 83,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Sleeper"],
+    "tags": ["Super Sedan"],
     "isPrize": false,
 
 
@@ -26,36 +26,32 @@
     "description": "If Grandpa shows up to the family reunion in this supercharged Avalon, hold onto your toupees and fake teeth because it's about to go down. Card by ChickenMcNuggets",
 
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/812890010175930428/avalone.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/812889759658934282/trd_stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/812889797184978944/trd_1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/812889830278955049/trd_2.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/812889875770638346/trd_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/812889910658465792/trd_233.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820437297279008809/avalone.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820436841752428544/trd_stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820130607186313256/trd_1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820130682516799488/trd_2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820130816557973544/trd_332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820130771460423750/trd_323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820130734621589554/trd_233.png",
 
 
-    "333TopSpeed": 140,
-    "3330to60": 6.1,
+    "333TopSpeed": 141,
+    "3330to60": 6.2,
     "333Handling": 86,
 
+    "666TopSpeed": 145,
+    "6660to60": 5.9, 
+    "666Handling": 88,
 
-    "666TopSpeed": 144,
-    "6660to60": 5.6, 
-    "666Handling": 89,
+    "996TopSpeed": 148,
+    "9960to60": 5.5,
+    "996Handling": 88,
 
-
-    "996TopSpeed": 0,
-    "9960to60": 0,
-    "996Handling": 0,
-
-
-    "969TopSpeed": 147,
-    "9690to60": 5.2,
+    "969TopSpeed": 148,
+    "9690to60": 5.9,
     "969Handling": 92,
 
-
-    "699TopSpeed": 144,
+    "699TopSpeed": 145,
     "6990to60": 5.5,
-    "699Handling": 93
+    "699Handling": 92
 }

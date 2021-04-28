@@ -1,5 +1,5 @@
 {
-    "rq": 84,
+    "rq": 91,
     "make": "Maserati",
     "model": "Levante GTS",
     "modelYear": 2018,
@@ -24,31 +24,31 @@
     "ola": 67.33,
     "description": "Card by DodgeDemon.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/800140083553763358/2018_Maserati_Levante_GTS.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/800141339525251072/levantegts.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/800141354679664721/levantegts333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/800141373939384400/levantegts666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/800141433536380938/levantegts996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/800141413576474634/levantegts969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/800141393640554523/levantegts699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824632856055119913/levantegts.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824633000297234472/lgts.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824633004987121675/lgts333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824633008941170768/lgts666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824633037316423691/lgts996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824633023579422760/lgts969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824633016336646185/lgts699.png",
 
     "333TopSpeed": 184,
     "3330to60": 3.6,
-    "333Handling": 78,
+    "333Handling": 79,
 
     "666TopSpeed": 187,
     "6660to60": 3.4,
-    "666Handling": 82,
+    "666Handling": 81,
 
-    "996TopSpeed": 191,
+    "996TopSpeed": 190,
     "9960to60": 3.2,
-    "996Handling": 83,
+    "996Handling": 81,
 
     "969TopSpeed": 190,
-    "9690to60": 3.3,
+    "9690to60": 3.4,
     "969Handling": 84,
 
-    "699TopSpeed": 189,
-    "6990to60": 3.3,
+    "699TopSpeed": 187,
+    "6990to60": 3.2,
     "699Handling": 84
 }

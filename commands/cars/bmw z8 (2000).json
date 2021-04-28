@@ -1,5 +1,5 @@
 {
-    "rq": 61,
+    "rq": 62,
     "make": "BMW",
     "model": "Z8",
     "modelYear": 2000,
@@ -24,31 +24,31 @@
     "ola": 71.11,
     "description": "A slower version of the Alpina, or did this come first? Card by Bnuuy.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/802608562525306920/Z8.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/802608649080012800/Z8.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/802608662475833404/z8333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/802608678171312138/z8666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/802608753546756105/z8996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/802608730466025472/z8969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/802608702141759518/z8699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819955747676880937/BMWZ8.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819956132784504832/Z8.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819956140502548560/Z8333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819956150828138536/Z8666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819956180986232832/Z8996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819956171833212978/Z8969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819956159153831946/Z8699.png",
 
     "333TopSpeed": 158,
-    "3330to60": 4.2,
+    "3330to60": 4.3,
     "333Handling": 85,
 
     "666TopSpeed": 161,
-    "6660to60": 4.0,
-    "666Handling": 88,
+    "6660to60": 4.1,
+    "666Handling": 87,
 
     "996TopSpeed": 165,
     "9960to60": 3.8,
-    "996Handling": 89,
+    "996Handling": 87,
 
-    "969TopSpeed": 164,
-    "9690to60": 3.9,
+    "969TopSpeed": 165,
+    "9690to60": 4.1,
     "969Handling": 91,
 
-    "699TopSpeed": 163,
-    "6990to60": 3.9,
+    "699TopSpeed": 162,
+    "6990to60": 3.8,
     "699Handling": 91
 }

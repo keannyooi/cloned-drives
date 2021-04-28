@@ -1,5 +1,5 @@
 {
-    "rq": 34,
+    "rq": 35,
     "make": "Mitsubishi",
     "model": "Eclipse Cross SEL",
     "modelYear": 2018,
@@ -24,23 +24,31 @@
     "ola": 62.44,
     "description": "The new Eclipse. Different from the old Eclipse. By Bnuuy",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/791114167498833920/MitsubishiEclipseCrossSEL.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/791114243604480020/eclipsecross.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/791114255759966228/eclipsecross333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/791114294690447370/eclipsecross666.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/791114322768035860/eclipsecross969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820726122274750506/eclipsesel.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820726648797134858/ecli.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820726653591879770/ecli333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820726659485007912/ecli666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820726694590677022/ecli996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820726685527179334/ecli969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820726675661651999/ecli699.png",
 
-    "333TopSpeed": 124,
-    "3330to60": 8.7,
-    "333Handling": 72,
+    "333TopSpeed": 125,
+    "3330to60": 8.6,
+    "333Handling": 71,
 
-    "666TopSpeed": 127,
-    "6660to60": 8.4,
-    "666Handling": 75,
+    "666TopSpeed": 130,
+    "6660to60": 8.1,
+    "666Handling": 74,
 
-    "969TopSpeed": 130,
-    "9690to60": 8.0,
-    "969Handling": 78
+    "996TopSpeed": 134,
+    "9960to60": 7.7,
+    "996Handling": 74,
+
+    "969TopSpeed": 134,
+    "9690to60": 8.1,
+    "969Handling": 77,
+
+    "699TopSpeed": 130,
+    "6990to60": 7.7,
+    "699Handling": 77
 }

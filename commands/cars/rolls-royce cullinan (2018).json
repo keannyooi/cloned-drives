@@ -1,5 +1,5 @@
 {
-    "rq": 75,
+    "rq": 83,
     "make": "Rolls-Royce",
     "model": "Cullinan",
     "modelYear": 2018,
@@ -24,31 +24,31 @@
     "ola": 60.00,
     "description": "Luxury to be taken anywhere. Card by Bnuuy.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/800139762026938389/rrc.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/800140772452204624/rrc.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/800140784518692864/rrc333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/800140799098617866/rrc666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/800140864784826418/rrc996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/800140843796529174/rrc969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/800140821789278278/rrc699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820699066434060338/rollscullinan.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820699349897576488/nan.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820699355635122196/nan333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820699369665724426/nan666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820699403799101440/nan996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820699394130051072/nan969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820699379756826665/nan699.png",
 
     "333TopSpeed": 158,
-    "3330to60": 4.2,
+    "3330to60": 4.3,
     "333Handling": 77,
 
-    "666TopSpeed": 161,
-    "6660to60": 3.9,
-    "666Handling": 81,
+    "666TopSpeed": 162,
+    "6660to60": 4.1, 
+    "666Handling": 80,
 
     "996TopSpeed": 165,
-    "9960to60": 3.7,
-    "996Handling": 82,
+    "9960to60": 3.8,
+    "996Handling": 80,
 
-    "969TopSpeed": 164,
-    "9690to60": 3.8,
+    "969TopSpeed": 165,
+    "9690to60": 4.1,
     "969Handling": 83,
 
-    "699TopSpeed": 163,
+    "699TopSpeed": 162,
     "6990to60": 3.8,
     "699Handling": 83
 }

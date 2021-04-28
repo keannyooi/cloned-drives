@@ -1,5 +1,5 @@
 {
-    "rq": 29,
+    "rq": 28,
     "make": "Mazda",
     "model": "MX-5 M Edition",
     "modelYear": 1995,
@@ -24,23 +24,32 @@
     "ola": 78.57,
     "description": "The M stands for Miata. Card by Johnny",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/793912529650843708/Mazda-MX-5-M-Edition.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/793912340261240893/Mazda-MX-5-M-Edition.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/793912350863785984/Mazda-MX-5-M-Edition-1-star.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/793912359310589983/Mazda-MX-5-M-Edition-2-star.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/793912366320451614/Mazda-MX-5-M-Edition-323.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/822215750348570624/cate-test.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/822215861242036294/Mazda-MX-5-M-Edition.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/822215876865425469/Mazda-MX-5-M-Edition-1-star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/822215870671486996/Mazda-MX-5-M-Edition-2-star.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/822215892431536178/Mazda-MX-5-M-Edition-332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/822215883983814739/Mazda-MX-5-M-Edition-323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/822215879017365534/Mazda-MX-5-M-Edition-233.png",
 
-    "333TopSpeed": 119,
-    "3330to60": 8.5,
-    "333Handling": 78,
+    "333TopSpeed": 120,
+    "3330to60": 8.4,
+    "333Handling": 77,
 
-    "666TopSpeed": 122,
-    "6660to60": 8.2,
-    "666Handling": 81,
+    "666TopSpeed": 125,
+    "6660to60": 7.9,
+    "666Handling": 80,
 
-    "969TopSpeed": 125,
+    "969TopSpeed": 129,
     "9690to60": 7.9,
-    "969Handling": 84
+    "969Handling": 83,
+    
+    "699TopSpeed": 125,
+    "699to60": 7.5,
+    "699Handling": 83,
+
+    "996TopSpeed": 129,
+    "996to60": 7.5,
+    "996Handling": 80
+    
 }

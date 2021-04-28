@@ -1,5 +1,5 @@
-﻿{
-    "rq": 24,
+{
+    "rq": 28,
     "make": "BMW",
     "model": "2002 Turbo",
     "modelYear": 1973,
@@ -12,10 +12,9 @@
     "tags": [],
     "isPrize": false,
 
-
     "weight": 1002,
     "gc": "Medium",
-    "seatCount":4,
+    "seatCount": 4,
     "bodyStyle": "Sedan",
     "tcs": false,
     "abs": false,
@@ -25,37 +24,31 @@
     "ola": 67.50,
     "description": "Think of the BMW 2002 Turbo as the M3 for the 1970s, and you're not a million miles away. Card by Johnny",
 
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/821808067402137620/cate-test.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821807978147348510/BMW-2002-Turbo.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821807982018560000/BMW-2002-Turbo-1-star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821807987240468530/BMW-2002-Turbo-2-star.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821808012993626202/BMW-2002-Turbo-332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821808005611388998/BMW-2002-Turbo-323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821807998191796235/BMW-2002-Turbo-233.png",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/805426065941987328/BMW-2002-Turbo.png?width=1154&height=718",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/805425885498835005/BMW-2002-Turbo.png",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/805425892645404682/BMW-2002-Turbo-1-star.png",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/805425899109220392/BMW-2002-Turbo-2-star.png",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/805425912052449340/BMW-2002-Turbo-332.png",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/805425919661178890/BMW-2002-Turbo-969.png",
-    "racehud699": "",
-
-
-    "333TopSpeed": 127,
-    "3330to60": 7.4,
+    "333TopSpeed": 128,
+    "3330to60": 7.6,
     "333Handling": 68,
 
+    "666TopSpeed": 132,
+    "6660to60": 7.2, 
+    "666Handling": 70,
 
-    "666TopSpeed": 130,
-    "6660to60": 6.8, 
-    "666Handling": 71,
+    "996TopSpeed": 137,
+    "9960to60": 6.8,
+    "996Handling": 70,
 
-
-    "996TopSpeed": 134,
-    "9960to60": 6.1,
-    "996Handling": 71,
-
-
-    "969TopSpeed": 133,
-    "9690to60": 6.3,
+    "969TopSpeed": 137,
+    "9690to60": 7.2,
     "969Handling": 73,
 
-
-    "699TopSpeed": 0,
-    "6990to60": 0,
-    "699Handling": 0
+    "699TopSpeed": 132,
+    "6990to60": 6.8,
+    "699Handling": 73
 }

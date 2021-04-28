@@ -1,5 +1,5 @@
 ﻿{
-    "rq": 80,
+    "rq": 83,
     "make": "Porsche",
     "model": "718 Cayman S",
     "modelYear": 2016,
@@ -26,36 +26,32 @@
     "description": "Soft sky blue. Card by Havvy ",
 
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/800314940770091018/Porsche718CaymanS.png?width=1154&height=718",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/800315013281087488/000cays.png?width=1154&height=718",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/800315025465278494/111cays.png?width=1154&height=718",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/800315032860360734/222cays.png?width=1154&height=718",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/800315232638861343/332cays.png?width=1154&height=718",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/800315052099764264/323cays.png?width=1154&height=718",
-    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/800315041890697246/233cays.png?width=1154&height=718",
+    "card": "https://cdn.discordapp.com/attachments/819200156623962122/823522244764368926/000_718s.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823522244764368926/000_718s.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823522248908079124/111_718s.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823522254058946600/222_718s.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823522270973657089/332_718s.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823522265316589608/323_718s.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823522259871334451/233_718s.png",
 
 
-    "333TopSpeed": 181,
+    "333TopSpeed": 180,
     "3330to60": 3.7,
     "333Handling": 94,
 
-
-    "666TopSpeed": 185,
+    "666TopSpeed": 183,
     "6660to60": 3.5, 
     "666Handling": 97,
 
+    "996TopSpeed": 186,
+    "9960to60": 3.3,
+    "996Handling": 97,
 
-    "996TopSpeed": 188,
-    "9960to60": 3.2,
-    "996Handling": 98,
-
-
-    "969TopSpeed": 187,
-    "9690to60": 3.3,
+    "969TopSpeed": 186,
+    "9690to60": 3.5,
     "969Handling": 101,
 
-
-    "699TopSpeed": 185,
+    "699TopSpeed": 183,
     "6990to60": 3.3,
     "699Handling": 101
 }

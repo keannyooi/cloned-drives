@@ -1,5 +1,5 @@
 {
-    "rq": 46,
+    "rq": 48,
     "make": "Chevrolet",
     "model": "SSR 6.0",
     "modelYear": 2005,
@@ -22,29 +22,33 @@
     "fuelType": "Petrol",
     "mra": 63.95,
     "ola": 94.55,
-    "description": "A mid-cycle update brought MOAR POWAH to this thing. Card by keanny",
+    "description": "This proves that any car can instantly be better with more speed and power. Card by keanny",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/764420572645949470/chevrolet_ssr_6.0.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/764420382588665876/chevrolet_ssr_6.0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/764420414100340756/chevrolet_ssr_6.0_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/764420424872230942/chevrolet_ssr_6.0_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/764420457163390996/chevrolet_ssr_6.0_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/764420444328689664/chevrolet_ssr_6.0_969.jpg",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819383891496402974/ssr.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819913793311342652/ssr_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819913799460454440/ssr_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819913806444232714/ssr_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819913840489660486/ssr_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819913825796227122/ssr_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819913817742901268/ssr_699.jpg",
 
     "333TopSpeed": 129,
     "3330to60": 5.2,
-    "333Handling": 77,
+    "333Handling": 76,
 
-    "666TopSpeed": 132,
-    "6660to60": 4.9,
-    "666Handling": 80,
+    "666TopSpeed": 133,
+    "6660to60": 5.0,
+    "666Handling": 79,
 
-	"996TopSpeed": 136,
-    "9960to60": 4.4,
-    "996Handling": 80,
+	"996TopSpeed": 137,
+    "9960to60": 4.7,
+    "996Handling": 79,
 
-    "969TopSpeed": 136,
-    "9690to60": 4.6,
-    "969Handling": 82
+    "969TopSpeed": 137,
+    "9690to60": 5.0,
+    "969Handling": 82,
+
+	"699TopSpeed": 133,
+    "6990to60": 4.7,
+    "699Handling": 82
 }

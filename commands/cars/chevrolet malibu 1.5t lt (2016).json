@@ -1,5 +1,5 @@
-﻿{
-    "rq": 38,
+{
+    "rq": 42,
     "make": "Chevrolet",
     "model": "Malibu 1.5T LT",
     "modelYear": 2016,
@@ -12,10 +12,9 @@
     "tags": [],
     "isPrize": false,
 
-
     "weight": 1433,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Sedan",
     "tcs": true,
     "abs": true,
@@ -25,37 +24,31 @@
     "ola": 72.50,
     "description": "Malibu in a Malibu. Card by Macan",
 
-
-    "card": "https://media.discordapp.net/attachments/715782088271331398/802303748834721822/Malibu_1.5T_LT_16.png?width=1154&height=718",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/802303863641735168/Chevrolet_Malibu_1.5T_LT_2016_000.png",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/802303875134652477/Chevrolet_Malibu_1.5T_LT_2016_333.png",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/802303885036617769/Chevrolet_Malibu_1.5T_LT_2016_666.png",
-    "racehud996": "",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/802303893249589268/Chevrolet_Malibu_1.5T_LT_2016_969.png",
-    "racehud699": "",
-
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/825459168487800842/Malibu_1.5T_LT_16.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/825459259306934272/Chevrolet_Malibu_1.5T_LT_2016_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/825459269347966986/Chevrolet_Malibu_1.5T_LT_2016_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/825459276650119198/Chevrolet_Malibu_1.5T_LT_2016_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/825459306324688916/Chevrolet_Malibu_1.5T_LT_2016_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/825459297366048768/Chevrolet_Malibu_1.5T_LT_2016_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/825459291317207092/Chevrolet_Malibu_1.5T_LT_2016_699.png",
 
     "333TopSpeed": 134,
-    "3330to60": 7.5,
+    "3330to60": 7.6,
     "333Handling": 80,
 
-
     "666TopSpeed": 138,
-    "6660to60": 6.9, 
+    "6660to60": 7.2, 
     "666Handling": 82,
 
+    "996TopSpeed": 142,
+    "9960to60": 6.8,
+    "996Handling": 82,
 
-    "996TopSpeed": 0,
-    "9960to60": 0,
-    "996Handling": 0,
-
-
-    "969TopSpeed": 141,
-    "9690to60": 6.4,
+    "969TopSpeed": 142,
+    "9690to60": 7.2,
     "969Handling": 85,
 
-
-    "699TopSpeed": 0,
-    "6990to60": 0,
-    "699Handling": 0
+    "699TopSpeed": 138,
+    "6990to60": 6.8,
+    "699Handling": 85
 }

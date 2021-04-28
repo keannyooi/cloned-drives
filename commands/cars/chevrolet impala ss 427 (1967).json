@@ -1,5 +1,5 @@
 {
-    "rq": 29,
+    "rq": 35,
     "make": "Chevrolet",
     "model": "Impala SS 427",
     "modelYear": 1967,
@@ -22,25 +22,33 @@
     "fuelType": "Petrol",
     "mra": 60.78,
     "ola": 90.32,
-    "description": "",
+    "description": "Card by keanny",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/729610361392594994/chevrolet_impala_ss_427_1967.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/729611936139837500/chevrolet_impala_ss_427_1967.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/729611986610159616/chevrolet_impala_ss_427_1967_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/729611995720056832/chevrolet_impala_ss_427_1967_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/729612009477242890/chevrolet_impala_ss_427_1967_996.jpg",
-    "racehud969": "",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/825993035401003029/427Impala.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/825993142980837396/427Impala.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/825993150681317477/427Impala1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/825993156738023474/427Impala2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/825993182440456192/427Impala996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/825993179655831562/427Impala969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/825993176527274004/427Impala699.png",
 
     "333TopSpeed": 134,
-    "3330to60": 5.8,
+    "3330to60": 5.9,
     "333Handling": 62,
 
     "666TopSpeed": 138,
-    "6660to60": 5.4,
+    "6660to60": 5.6,
     "666Handling": 64,
 
-    "996TopSpeed": 143,
-    "9960to60": 4.9,
-    "996Handling": 64
+    "996TopSpeed": 142https://cdn.discordapp.com/attachments/819200156623962122/825993179655831562/427Impala969.png,
+    "9960to60": 5.3,
+    "996Handling": 64,
+
+	"969TopSpeed": 142,
+    "9690to60": 5.6,
+    "969Handling": 67,
+
+	"699TopSpeed": 138,
+    "6990to60": 5.3,
+    "699Handling": 67
 }

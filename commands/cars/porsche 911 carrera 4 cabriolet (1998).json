@@ -26,36 +26,32 @@
     "description": "Dreaming of a blue sky. Card by Havvy",
 
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/804827383915741204/Porsche911Carrera4Cabriolet996.png?width=1154&height=718",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/804827438541570058/000_9964cab.png?width=1154&height=718",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/804827446569336882/111_9964cab.png?width=1154&height=718",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/804827449778765894/222_9964cab.png?width=1154&height=718",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/804827461917212672/332_9964cab.png?width=1154&height=718",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/804827456166559754/323_9964cab.png?width=1154&height=718",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824405425952391218/Porsche911Carrera4Cabriolet996.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824405497347964958/car4.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824405501395599460/car4333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824405507220963359/car4666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824405528817041458/car4996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824405522106941450/car4969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824405515798446140/car4699.png",
 
 
-    "333TopSpeed": 178,
-    "3330to60": 4.7,
+    "333TopSpeed": 177,
+    "3330to60": 4.8,
     "333Handling": 88,
 
-
-    "666TopSpeed": 181,
-    "6660to60": 4.5, 
+    "666TopSpeed": 180,
+    "6660to60": 4.6, 
     "666Handling": 91,
 
-
-    "996TopSpeed": 185,
-    "9960to60": 4.1,
+    "996TopSpeed": 180,
+    "9960to60": 4.3,
     "996Handling": 91,
 
-
-    "969TopSpeed": 185,
-    "9690to60": 4.2,
+    "969TopSpeed": 183,
+    "9690to60": 4.6,
     "969Handling": 94,
 
-
-    "699TopSpeed": 0,
-    "6990to60": 0,
-    "699Handling": 0
+    "699TopSpeed": 180,
+    "6990to60": 4.3,
+    "699Handling": 94
 }

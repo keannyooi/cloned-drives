@@ -1,5 +1,5 @@
 ﻿{
-    "rq": 21,
+    "rq": 27,
     "make": "Volkswagen",
     "model": "Golf GTI 2.0",
     "modelYear": 1992,
@@ -21,41 +21,36 @@
     "abs": false,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 45.75,
+    "mra": 46.75,
     "ola": 61.86,
     "description": "Durable, reliable, beautifully executed, and over-shone by a halo model in the form of the iconic Mk 2 GTI. Card by Andu ",
 
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/805393393429512222/GTI3.png?width=1154&height=719",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/805394185494593567/Golf3.png",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/805394191999172629/Golf31.png",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/805394197767127070/Golf32.png",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/805394216884633620/Golf3332.png",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/805394207555584000/Golf3323.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/821099141265358898/GTI3.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821100319005343815/GTI3.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821100322100346900/GTI3-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821100339443793980/GTI3-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821100365437075496/GTI3-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821100353701019728/GTI3-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821100346893795378/GTI3-699.png",
 
+    "333TopSpeed": 125,
+    "3330to60": 9.2,
+    "333Handling": 76,
 
-    "333TopSpeed": 124,
-    "3330to60": 9.0,
-    "333Handling": 77,
+    "666TopSpeed": 130,
+    "6660to60": 8.7,
+    "666Handling": 79,   
 
+    "996TopSpeed": 134,
+    "9960to60": 8.2,
+    "996Handling": 79,
 
-    "666TopSpeed": 127,
-    "6660to60": 8.3, 
-    "666Handling": 80,
-
-
-    "996TopSpeed": 131,
-    "9960to60": 7.5,
-    "996Handling": 80,
-
-
-    "969TopSpeed": 130,
-    "9690to60": 7.7,
+    "969TopSpeed": 134,
+    "9690to60": 8.7,
     "969Handling": 82,
 
-
-    "699TopSpeed": 0,
-    "6990to60": 0,
-    "699Handling": 0
+    "699TopSpeed": 130,
+    "6990to60": 8.2,
+    "699Handling": 82
 }

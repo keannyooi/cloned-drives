@@ -1,5 +1,5 @@
 {
-    "rq": 60,
+    "rq": 53,
     "make": "Land Rover",
     "model": "Discovery Sport P250 SE",
     "modelYear": 2020,
@@ -22,33 +22,33 @@
     "fuelType": "Petrol",
     "mra": 52.82,
     "ola": 64.00,
-    "description": "",
+    "description": "Card by Macan",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/781027290423361576/Land_Rover_Discovery_Sport_P250_SE_2020.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/781027548569665556/Land_Rover_Discovery_Sport_P250_SE_2020_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/781027565884276756/Land_Rover_Discovery_Sport_P250_SE_2020_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/781027574137880646/Land_Rover_Discovery_Sport_P250_SE_2020_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/781027666484133918/Land_Rover_Discovery_Sport_P250_SE_2020_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/781027615644712960/Land_Rover_Discovery_Sport_P250_SE_2020_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/781027648209420308/Land_Rover_Discovery_Sport_P250_SE_2020_699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826073344680001566/Land_Rover_Discovery_Sport_P250_SE_2020.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826073879982243900/LRD.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826073885132718140/lrd333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826073890378743858/lrd666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826073913938935838/lrd996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826073906725126144/lrd969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826073899212472360/lrd699.png",
 
     "333TopSpeed": 136,
-    "3330to60": 7.0,
-    "333Handling": 78,
+    "3330to60": 7.1,
+    "333Handling": 77,
 
     "666TopSpeed": 140,
-    "6660to60": 6.5,
-    "666Handling": 81,
+    "6660to60": 6.8,
+    "666Handling": 80,
+
+	"996TopSpeed": 144,
+    "9960to60": 6.4,
+    "996Handling": 80, 
 
     "969TopSpeed": 144,
-    "9690to60": 6.0,
+    "9690to60": 6.8,
     "969Handling": 83,
 
-    "996TopSpeed": 144,
-    "9960to60": 5.8,
-    "996Handling": 81, 
-
-    "699TopSpeed": 142,
-    "6990to60": 6.0,
-    "699Handling":83
+    "699TopSpeed": 140,
+    "6990to60": 6.4,
+    "699Handling": 83
 }

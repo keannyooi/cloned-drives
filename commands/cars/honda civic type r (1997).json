@@ -1,5 +1,5 @@
-﻿{
-    "rq": 40,
+{
+    "rq": 46,
     "make": "Honda",
     "model": "Civic Type R",
     "modelYear": 1997,
@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": ["Hot Hatch"],
     "isPrize": false,
-
 
     "weight": 1090,
     "gc": "Medium",
@@ -25,37 +24,31 @@
     "ola": 90.91,
     "description": "Pure white. Card by Spence",
 
-
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/810473193277620274/unknown.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/810472400315482142/unknown.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/810472527851683870/unknown.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/810472605319954462/unknown.png",
-    "racehud996": "",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/810472667794767882/unknown.png?width=1154&height=717",
-    "racehud699": "",
-
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824425298145181726/civictr.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824430149419794452/ctr.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824430153203056680/ctr333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824430159389392976/ctr666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824430234346061844/ctr996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824430204340273182/ctr969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824430191853830194/ctr699.png",
 
     "333TopSpeed": 145,
-    "3330to60": 6.2,
+    "3330to60": 6.3,
     "333Handling": 82,
 
-
-    "666TopSpeed": 149,
-    "6660to60": 5.8, 
+    "666TopSpeed": 148,
+    "6660to60": 5.9, 
     "666Handling": 84,
 
+    "996TopSpeed": 0152,
+    "9960to60": 5.6,
+    "996Handling": 84,
 
-    "996TopSpeed": 0,
-    "9960to60": 0,
-    "996Handling": 0,
+    "969TopSpeed": 152,
+    "9690to60": 5.9,
+    "969Handling": 88,
 
-
-    "969TopSpeed": 153,
-    "9690to60": 5.4,
-    "969Handling": 87,
-
-
-    "699TopSpeed": 0,
-    "6990to60": 0,
-    "699Handling": 0
+    "699TopSpeed": 148,
+    "6990to60": 5.6,
+    "699Handling": 88
 }

@@ -1,5 +1,5 @@
 {
-    "rq": 82,
+    "rq": 77,
     "make": "Jaguar",
     "model": "I-PACE EV400",
     "modelYear": 2018,
@@ -24,13 +24,13 @@
     "ola": 90.48,
     "description": "Jaguar's Tesla rival that outclassed the Model X in off-roading. Card by DodgeDemon",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/783750188148850748/2018_Jaguar_IPACE.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/783752276820885527/JagIPACEStcok.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/783752345263276052/JagIPACE333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/783752395268161536/JagIPACE666.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/783752500997521428/JagIPACE969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826157268903002132/IPACE.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826157968239886376/Ipace.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826157973834301500/Ipace1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826157980318695444/Ipace2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826158005232992266/Ipace996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826157996778192937/Ipace969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826157989915918366/Ipace699.png",
 
     "333TopSpeed": 128,
     "3330to60": 4.0,
@@ -38,9 +38,17 @@
 
     "666TopSpeed": 132,
     "6660to60": 3.8,
-    "666Handling": 86,
+    "666Handling": 85,
 
-    "969TopSpeed": 136,
-    "9690to60": 3.6,
-    "969Handling": 89
+	"996TopSpeed": 137,
+    "9960to60": 3.6,
+    "996Handling": 85,
+
+    "969TopSpeed": 137,
+    "9690to60": 3.8,
+    "969Handling": 89,
+
+	"699TopSpeed": 132,
+    "6990to60": 3.6,
+    "699Handling": 89
 }

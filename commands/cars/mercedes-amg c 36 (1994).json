@@ -1,6 +1,6 @@
 {
-    "rq": 39,
-    "make": "Mercedes-AMG",
+    "rq": 40,
+    "make": ["Mercedes-AMG", "Mercedes-Benz"],
     "model": "C 36",
     "modelYear": 1994,
     "country": "DE",
@@ -24,27 +24,31 @@
     "ola": 74.19,
     "description": "The start of an iconic AMG sedan. Card by Connor",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/811666496991264768/D.MercAMGC36.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/811666586753826856/D.MercAMGC36.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/811666599412760587/D.MercAMGC36-1star.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/811666619054817380/D.MercAMGC36-2star.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/811666634715955250/D.MercAMGC36-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/811666624264142888/D.MercAMGC36-969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820742532454416395/C.MercAMGC36.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820742637413203998/C.MercAMGC36.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820742646934798426/C.MercAMGC36-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820742662876954694/C.MercAMGC36-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820742710012018768/C.MercAMGC36-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820742691314466866/C.MercAMGC36-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820742672712597504/C.MercAMGC36-699.png",
 
     "333TopSpeed": 157,
-    "3330to60": 5.8,
-    "333Handling": 79,
+    "3330to60": 5.9,
+    "333Handling": 80,
 
-    "666TopSpeed": 160,
-    "6660to60": 5.4,
-    "666Handling": 83,
+    "666TopSpeed": 161,
+    "6660to60": 5.6,
+    "666Handling": 82,
 
     "996TopSpeed": 164,
-    "9960to60": 4.8,
-    "996Handling": 84,
+    "9960to60": 5.3,
+    "996Handling": 82,
 
-    "969TopSpeed": 163,
-    "9690to60": 5.0,
-    "969Handling": 85
+    "969TopSpeed": 164,
+    "9690to60": 5.6,
+    "969Handling": 85,
+
+    "699TopSpeed": 161,
+    "6990to60": 5.3,
+    "699Handling": 85
 }

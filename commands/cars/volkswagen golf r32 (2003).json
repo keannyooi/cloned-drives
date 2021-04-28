@@ -26,36 +26,31 @@
     "description": "First ever car with a dual-clutch gearbox with the unique VR6 engine. Card by Andu",
 
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/802609022926716968/GolfR322.png?width=1154&height=719",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/802609456235020318/R32.png",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/802609474917236786/R321.png",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/802609490276909106/R322.png",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/802609517946077244/R32332.png",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/802609509280251924/R32323.png",
-    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/802609498601553930/R32233.png",
-
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/822157993940090950/GolfR322.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/822158100164247592/R32.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/822158108205645844/R32-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/822158116539334676/R32-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/822158140979281990/R32-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/822158131097632839/R32-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/822158123430182922/R32-699.png",
 
     "333TopSpeed": 156,
     "3330to60": 5.9,
     "333Handling": 81,
 
-
-    "666TopSpeed": 159,
-    "6660to60": 5.7, 
-    "666Handling": 84,
-
+    "666TopSpeed": 160,
+    "6660to60": 5.6,
+    "666Handling": 83,   
 
     "996TopSpeed": 163,
-    "9960to60": 5.4,
-    "996Handling": 85,
+    "9960to60": 5.3,
+    "996Handling": 83,
 
-
-    "969TopSpeed": 162,
-    "9690to60": 5.5,
-    "969Handling": 86,
-
+    "969TopSpeed": 163,
+    "9690to60": 5.6,
+    "969Handling": 87,
 
     "699TopSpeed": 160,
-    "6990to60": 5.5,
+    "6990to60": 5.3,
     "699Handling": 87
 }

@@ -1,5 +1,5 @@
-﻿{
-    "rq": 18,
+{
+    "rq": 26,
     "make": "Hyundai",
     "model": "Accent GL",
     "modelYear": 1996,
@@ -9,13 +9,12 @@
     "handling": 67,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["2021 Spring Collection"],
+    "tags": ["Rest of the World"],
     "isPrize": false,
-
 
     "weight": 955,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Sedan",
     "tcs": false,
     "abs": false,
@@ -25,37 +24,31 @@
     "ola": 66.06,
     "description": "It offers the thrill of being unsafe and the excitement of a rock. Card by Andu",
 
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/821332452966137886/Accento.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821332843749703700/Accent.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821332858588233768/Accent1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821332865203437628/Accent2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821332886044803122/Accent996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821332878473822218/Accent969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821332871196573736/Accent699.png",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/808007347297320960/Accento.png?width=1154&height=719",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/808007253990178836/Accent.png",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/808007262672650270/Accent1.png",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/808007265487028244/Accent2.png",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/808007284021526539/Accent332.png",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/808007272599912458/Accent323.png",
-    "racehud699": "",
+    "333TopSpeed": 121,
+    "3330to60": 10.4,
+    "333Handling": 69,
 
+    "666TopSpeed": 126,
+    "6660to60": 9.8,
+    "666Handling": 71,
 
-    "333TopSpeed": 120,
-    "3330to60": 10.1,
-    "333Handling": 70,
+    "996TopSpeed": 130,
+    "9960to60": 9.3,
+    "996Handling": 71,
 
-
-    "666TopSpeed": 123,
-    "6660to60": 9.3, 
-    "666Handling": 72,
-
-
-    "996TopSpeed": 126,
-    "9960to60": 8.1,
-    "996Handling": 72,
-
-
-    "969TopSpeed": 126,
-    "9690to60": 8.4,
+    "969TopSpeed": 130,
+    "9690to60": 9.8,
     "969Handling": 74,
 
-
-    "699TopSpeed": 0,
-    "6990to60": 0,
-    "699Handling": 0
+    "699TopSpeed": 126,
+    "6990to60": 9.3,
+    "699Handling": 74
 }

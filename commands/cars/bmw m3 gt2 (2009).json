@@ -1,5 +1,5 @@
 {
-    "rq": 88,
+    "rq": 85,
     "make": "BMW",
     "model": "M3 GT2",
     "modelYear": 2009,
@@ -24,31 +24,31 @@
     "ola": 66.50,
     "description": "WOAH ok slow down there. Card by Bnuuy.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/802609499495596113/m3gt2whatever.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/802610090627563550/gt2.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/802610105211289650/gt2333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/802610118108774410/gt2666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/802610178431909909/gt2996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/802610158433337364/gt2969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/802610138413400074/gt2699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/821039006044782602/M3GT2.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821039229831479356/M3R.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821039234504720414/M3R333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821039241680781322/M3R666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821039269694013460/M3R996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821039260231794778/M3R969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821039250489344010/M3R699.png",
 
     "333TopSpeed": 165,
     "3330to60": 2.9,
     "333Handling": 99,
 
     "666TopSpeed": 168,
-    "6660to60": 2.7,
-    "666Handling": 103,
+    "6660to60": 2.8,
+    "666Handling": 102,
 
     "996TopSpeed": 172,
-    "9960to60": 2.5,
-    "996Handling": 104,
+    "9960to60": 2.6,
+    "996Handling": 102,
 
-    "969TopSpeed": 171,
-    "9690to60": 2.6,
-    "969Handling": 106,
+    "969TopSpeed": 172,
+    "9690to60": 2.8,
+    "969Handling": 107,
 
-    "699TopSpeed": 170,
+    "699TopSpeed": 168,
     "6990to60": 2.6,
     "699Handling": 107
 }

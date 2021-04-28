@@ -1,5 +1,5 @@
 {
-    "rq": 53,
+    "rq": 59,
     "make": "Chevrolet",
     "model": "Cobalt SS Turbo",
     "modelYear": 2008,
@@ -24,27 +24,31 @@
     "ola": 94.55,
     "description": "Supercharger said bai, turbo said hi and became the fastest FWD car around the Nurburgring at that time. Card by spence",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/811801037417349140/image0.jpg",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/811801146430849024/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/811801170942099496/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/811801185752186910/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/811801233445617704/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/811801211761983508/image0.jpg",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824351004266594404/colabltturbo.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824351281404444752/colb.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824351287231250442/colbt333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824351292922134528/colbt666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824351313276960840/colbt996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824351306516791396/colbt969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824351300803362816/colbt699.png",
 
-    "333TopSpeed": 164,
+    "333TopSpeed": 163,
     "3330to60": 5.2,
     "333Handling": 85,
 
-    "666TopSpeed": 168,
-    "6660to60": 4.9,
-    "666Handling": 88,
+    "666TopSpeed": 167,
+    "6660to60": 5.0,
+    "666Handling": 87,
 
-	"996TopSpeed": 172,
-    "9960to60": 4.4,
-    "996Handling": 88,
+	"996TopSpeed": 170,
+    "9960to60": 4.7,
+    "996Handling": 87,
 
-    "969TopSpeed": 172,
-    "9690to60": 4.6,
-    "969Handling": 91
+    "969TopSpeed": 170,
+    "9690to60": 5.0,
+    "969Handling": 91,
+
+	"699TopSpeed": 167,
+    "6990to60": 4.7,
+    "699Handling": 91
 }

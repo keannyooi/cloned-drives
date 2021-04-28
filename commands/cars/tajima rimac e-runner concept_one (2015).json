@@ -1,5 +1,5 @@
 {
-    "rq": 97,
+    "rq": 103,
     "make": ["Tajima", "Rimac"],
     "model": "Rimac E-Runner Concept_One",
     "modelYear": 2015,
@@ -24,27 +24,31 @@
     "ola": 47.62,
     "description": "A racing Rimac made in Japan. Card by DodgeDemon.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/806976679720648774/2015_Tajima_Rimac_PP.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/806976800818200596/TajimaRimac000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/806976866618703922/TajimaRimac333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/806976913268146186/TajimaRimac666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/806977037767671818/TajimaRimac996.png",
-    "racehud969": "",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/806976965080645682/TajimaRimac699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/823954126978940928/2015_Tajima_Rimac_PP.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823943754649960488/erun.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823943757199572992/erun333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823943763034505276/erun666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823943782013206528/erun996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823943774258200646/erun969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823943796227309578/erun6999.png",
 
     "333TopSpeed": 171,
     "3330to60": 2.0,
     "333Handling": 100,
 
     "666TopSpeed": 174,
-    "6660to60": 1.9,
-    "666Handling": 104,
+    "6660to60": 1.9, 
+    "666Handling": 103,
 
-    "996TopSpeed": 178,
-    "9960to60": 1.7,
-    "996Handling": 105,
+    "996TopSpeed": 177,
+    "9960to60": 1.8,
+    "996Handling": 103,
 
-    "699TopSpeed": 176,
+    "969TopSpeed": 177,
+    "9690to60": 1.9,
+    "969Handling": 108,
+
+    "699TopSpeed": 174,
     "6990to60": 1.8,
     "699Handling": 108
 }

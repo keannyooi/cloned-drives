@@ -1,5 +1,5 @@
 {
-    "rq": 24,
+    "rq": 32,
     "make": "Buick",
     "model": "Reatta",
     "modelYear": 1988,
@@ -22,25 +22,33 @@
     "fuelType": "Petrol",
     "mra": 37.60,
     "ola": 61.54,
-    "description": "",
+    "description": "Card by havvy",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/787948254884790272/BuickReatta.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/787948407334502421/ReattaSt.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/787948445360848916/Reatta1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/787948470325608508/Reatta2.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/787948507545075722/Reatta323.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824628153120063488/Reatta.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824628268149375036/Reatta.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824628272427433994/Reatta1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824628277830090772/Reatta2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824628300365168650/Reatta996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824628294023381033/Reatta969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824628284511486032/Reatta699.png",
 
-    "333TopSpeed": 125,
-    "3330to60": 8.5,
-    "333Handling": 74,
+    "333TopSpeed": 126,
+    "3330to60": 8.6,
+    "333Handling": 73,
 
-    "666TopSpeed": 128,
-    "6660to60": 7.8,
-    "666Handling": 77,
+    "666TopSpeed": 131,
+    "6660to60": 8.2,
+    "666Handling": 76,
 
-    "969TopSpeed": 131,
-    "9690to60": 7.2,
-    "969Handling": 79
+	"996TopSpeed": 135,
+    "9960to60": 7.7,
+    "996Handling": 76,
+
+    "969TopSpeed": 135,
+    "9690to60": 8.2,
+    "969Handling": 79,
+
+	"699TopSpeed": 131,
+    "6990to60": 7.7,
+    "699Handling": 79
 }

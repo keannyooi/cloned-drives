@@ -1,5 +1,5 @@
 ﻿{
-    "rq": 24,
+    "rq": 30,
     "make": "Volvo",
     "model": "960",
     "modelYear": 1990,
@@ -26,36 +26,31 @@
     "description": "The only car in the world that has 204 hp, 24-Valve engine, a computerized 4-Speed transmission, abs brakes and the added luxury of being a Volvo. Card by Havvy",
 
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/804814822780305418/unknown.png?width=1154&height=718",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/804814979731030016/0009601.png?width=1154&height=718",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/804814985724821564/1119601.png?width=1154&height=718",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/804814991441788929/2229601.png?width=1154&height=718",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/804815019237310488/3329601.png?width=1154&height=718",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/804815005164765224/3239601.png?width=1154&height=718",
-    "racehud699": "",
-
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/825422473868083219/960Old.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/825422799363244042/960old.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/825422803297370122/960old1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/825422825548414976/960old2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/825422833840029706/960old996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/825422833806868500/960old969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/825422832975478854/960old699.png",
 
     "333TopSpeed": 137,
-    "3330to60": 8.5,
+    "3330to60": 8.6,
     "333Handling": 68,
 
+    "666TopSpeed": 141,
+    "6660to60": 8.2,
+    "666Handling": 70,   
 
-    "666TopSpeed": 140,
-    "6660to60": 7.8, 
-    "666Handling": 71,
+    "996TopSpeed": 145,
+    "9960to60": 7.7,
+    "996Handling": 70,
 
-
-    "996TopSpeed": 144,
-    "9960to60": 7.0,
-    "996Handling": 71,
-
-
-    "969TopSpeed": 144,
-    "9690to60": 7.2,
+    "969TopSpeed": 145,
+    "9690to60": 8.2,
     "969Handling": 73,
 
-
-    "699TopSpeed": 0,
-    "6990to60": 0,
-    "699Handling": 0
-}
+    "699TopSpeed": 141,
+    "6990to60": 7.7,
+    "699Handling": 73
+}   

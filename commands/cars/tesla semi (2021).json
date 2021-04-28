@@ -1,5 +1,5 @@
 {
-    "rq": 11,
+    "rq": 23,
     "make": "Tesla",
     "model": "Semi",
     "modelYear": 2021,
@@ -24,23 +24,31 @@
     "ola": 100.00,
     "description": "An improbable idea executed as well as it can be. Card by DodgeDemon",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/796641696866762752/2021_Tesla_Semi.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/796638757809553429/bruh.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/796638785001357353/bruh_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/796638797559365632/bruh_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/796638808371757076/bruh_996.jpg",
-    "racehud969": "",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/836285394014044251/TeslaSemin.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/829691261476536340/semi_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/829691275586306118/semi_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/829691283295305748/semi_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/829691314924027934/semi_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/829691304627142660/semi_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/829691293147856916/semi_699.jpg",
 
-    "333TopSpeed": 62,
-    "3330to60": 4.7,
+    "333TopSpeed": 69,
+    "3330to60": 4.8,
     "333Handling": 44,
 
-    "666TopSpeed": 64,
-    "6660to60": 4.4,
+    "666TopSpeed": 77,
+    "6660to60": 4.5,
     "666Handling": 46,
 
-    "996TopSpeed": 66,
-    "9960to60": 4.0,
-    "996Handling": 46
+    "996TopSpeed": 86,
+    "9960to60": 4.3,
+    "996Handling": 46,
+
+    "969TopSpeed": 86,
+    "9690to60": 4.5,
+    "969Handling": 48,
+
+    "699TopSpeed": 77,
+    "6990to60": 4.3,
+    "699Handling": 48
 }

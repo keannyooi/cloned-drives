@@ -1,5 +1,5 @@
 {
-    "rq": 60,
+    "rq": 55,
     "make": "Audi",
     "model": "S1 Sportback",
     "modelYear": 2015,
@@ -24,23 +24,31 @@
     "ola": 69.09,
     "description": "A proper little stonker: fast, small, fun, a 4wd hot hatch done properly. Card by Macan",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/787156466716377158/Audi_S1_Sportback_2015.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/787156317440835594/Audi_S1_Sportback_2015_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/787156327130071060/Audi_S1_Sportback_2015_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/787156337549115392/Audi_S1_Sportback_2015_666.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/787156388744527962/Audi_S1_Sportback_2015_969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824410365256400896/S1portsbacc.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824410489848725584/S1.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824410489848725584/S1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824410501458296832/s1666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824410526708137994/S1996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824410518948544512/S1969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824410509117882379/S1699.png",
 
-    "333TopSpeed": 159,
+    "333TopSpeed": 158,
     "3330to60": 5.2,
     "333Handling": 83,
 
-    "666TopSpeed": 161,
-    "6660to60": 4.9,
-    "666Handling": 87,
+    "666TopSpeed": 162,
+    "6660to60": 5.0,
+    "666Handling": 85,
 
-    "969TopSpeed": 164,
-    "9690to60": 4.6,
-    "969Handling": 89
+	"996TopSpeed": 165,
+    "9960to60": 4.7,
+    "996Handling": 85,
+
+    "969TopSpeed": 165,
+    "9690to60": 5.0,
+    "969Handling": 89,
+
+	"699TopSpeed": 162,
+    "6990to60": 4.7,
+    "699Handling": 89
 }

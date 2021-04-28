@@ -1,5 +1,5 @@
 {
-    "rq": 92,
+    "rq": 89,
     "make": "McLaren",
     "model": "600LT",
     "modelYear": 2018,
@@ -24,31 +24,31 @@
     "ola": 94.96,
     "description": "The limited-edition 600LT is the ultimate version of McLaren's entry-level supercar. Card by Smegma",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/812895584808599552/CD_McLaren_600LT.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/812893461706965072/CD_McLaren_600LT_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/812893466987855872/CD_McLaren_600LT_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/812893474826223616/CD_McLaren_600LT_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/812893503226118144/CD_McLaren_600LT_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/812893489955078144/CD_McLaren_600LT_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/812893481994682378/CD_McLaren_600LT_699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/825411000969854997/600LT.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/825411307054039100/600lt.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/825411314599854090/600lt333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/825411323528740884/600lt666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/825411355376222248/600lt996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/825411341668843570/600lt969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/825411331611557908/600lt699.png",
 
     "333TopSpeed": 207,
-    "3330to60": 2.7,
+    "3330to60": 2.8,
     "333Handling": 96,
 
     "666TopSpeed": 209,
-    "6660to60": 2.5,
-    "666Handling": 100,
+    "6660to60": 2.6,
+    "666Handling": 99,
 
-    "996TopSpeed": 214,
-    "9960to60": 2.3,
-    "996Handling": 100,
+    "996TopSpeed": 212,
+    "9960to60": 2.5,
+    "996Handling": 99,
 
-    "969TopSpeed": 213,
-    "9690to60": 2.4,
+    "969TopSpeed": 212,
+    "9690to60": 2.6,
     "969Handling": 103,
 
-    "699TopSpeed": 211,
-    "6990to60": 2.4,
+    "699TopSpeed": 209,
+    "6990to60": 2.5,
     "699Handling": 103
 }

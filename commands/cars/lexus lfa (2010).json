@@ -1,5 +1,5 @@
 {
-    "rq": 81,
+    "rq": 78,
     "make": "Lexus",
     "model": "LFA",
     "modelYear": 2010,
@@ -9,7 +9,7 @@
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["2021 Spring Collection", "Eargasm"],
+    "tags": ["Eargasm"],
     "isPrize": true,
 
     "weight": 1480,
@@ -24,27 +24,31 @@
     "ola": 89.47,
     "description": "A Japanese supercar with possibly the best-sounding V10 ever. Card by bnuuy",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/813398147736010762/lemuxlafa.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/813399104796229642/lfa.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/813399114711564298/lfa333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/813399131631779901/lfa666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/813399173797904427/lfa996.png",
-    "racehud969": "",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/813399154423758878/lfa699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819944717499891732/LFA.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819945082278772756/LFA.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819945087316000808/LFA333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819945099742937108/LFA666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819945141120794634/LFA996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819945130878435328/LFA969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819945109156003851/LFA699.png",
 
-    "333TopSpeed": 204,
+    "333TopSpeed": 205,
     "3330to60": 3.6,
     "333Handling": 94,
 
-    "666TopSpeed": 206,
+    "666TopSpeed": 207,
     "6660to60": 3.4,
     "666Handling": 97,
 
-    "996TopSpeed": 209,
+    "996TopSpeed": 210,
     "9960to60": 3.2,
-    "996Handling": 98,
-    
+    "996Handling": 97,
+
+    "969TopSpeed": 210,
+    "9690to60": 3.4,
+    "969Handling": 101,
+
     "699TopSpeed": 207,
-    "6990to60": 3.3,
+    "6990to60": 3.2,
     "699Handling": 101
 }

@@ -1,5 +1,5 @@
 {
-    "rq": 10,
+    "rq": 1,
     "make": "Zagato",
     "model": "Zele 1000",
     "modelYear": 1974,
@@ -24,24 +24,31 @@
     "ola": 0.00,
     "description": "An electric car from the most un-likely source. Card by Bnuuy.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/799305346560163880/ZELE.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/799307027233898536/zele.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/799307037111746600/zele333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/799307050127065118/zele666.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/799307075150413894/zele969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/823589507386310707/ZagatoZele.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823590133604548678/zele.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823590138050379816/zele333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823590145823080448/zele666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823590169298599986/zele996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823590161710972989/zele969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823590154572136528/zele699.png",
 
-    "333TopSpeed": 27,
+    "333TopSpeed": 34,
     "3330to60": 99.9,
     "333Handling": 49,
 
-    "666TopSpeed": 30,
+    "666TopSpeed": 42,
     "6660to60": 99.9,
-    "666Handling": 51,
+    "666Handling": 50,
 
-    "969TopSpeed": 32,
+    "996TopSpeed": 51,
+    "9960to60": 99.9,
+    "996Handling": 50,
+
+    "969TopSpeed": 51,
     "9690to60": 99.9,
-    "969Handling": 54
-
+    "969Handling": 52,
+    
+    "699TopSpeed": 42,
+    "6990to60": 99.9,
+    "699Handling": 52
 }

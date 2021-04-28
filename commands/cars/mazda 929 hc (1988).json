@@ -1,5 +1,5 @@
 ﻿{
-    "rq": 27,
+    "rq": 31,
     "make": "Mazda",
     "model": "929 HC",
     "modelYear": 1988,
@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
 
     "weight": 1518,
     "gc": "Medium",
@@ -25,37 +24,31 @@
     "ola": 60.59,
     "description": "Mazda’s big sedan. Card by Based",
 
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819904112052666388/Mazda_989_HC.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819903715208331274/Mazda_HC_929_Stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819903750901596181/Mazda_HC_929_1_star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819903759475015710/Mazda_HC_929_2_star.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819903792916987924/Mazda_HC_929_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819903781382389820/Mazda_HC_929_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819903771874033724/Mazda_HC_929_699.png",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/808830948408950854/Mazda_989_HC.png?width=1154&height=710",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/808825302885203978/Mazda_929_Stock.png",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/808825419695390790/Mazda_929_1_star.png",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/808825425639637002/Mazda_929_2_star.png",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/808825495893704774/Mazda_929_332.png",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/808825483793530950/Mazda_929_323.png",
-    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/808825472674562093/Mazda_929_233.png",
-
-
-    "333TopSpeed": 124,
-    "3330to60": 8.3,
+    "333TopSpeed": 125,
+    "3330to60": 8.5,
     "333Handling": 70,
 
-
-    "666TopSpeed": 127,
-    "6660to60": 7.7, 
+    "666TopSpeed": 130,
+    "6660to60": 8.0, 
     "666Handling": 72,
 
+    "996TopSpeed": 134,
+    "9960to60": 7.6,
+    "996Handling": 72,
 
-    "996TopSpeed": 131,
-    "9960to60": 6.9,
-    "996Handling": 73,
-
-
-    "969TopSpeed": 131,
-    "9690to60": 7.1,
+    "969TopSpeed": 134,
+    "9690to60": 8.0,
     "969Handling": 75,
 
-
-    "699TopSpeed": 129,
-    "6990to60": 7.2,
+    "699TopSpeed": 130,
+    "6990to60": 7.6,
     "699Handling": 75
 }

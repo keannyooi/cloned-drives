@@ -1,0 +1,54 @@
+{
+    "rq": 56,
+    "make": "Mercedes-Benz",
+    "model": "A 220 4MATIC Sedan",
+    "modelYear": 2019,
+    "country": "DE",
+    "topSpeed": 132,
+    "0to60": 6.2,
+    "handling": 85,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Servers Choice"],
+    "isPrize": false,
+
+    "weight": 1550,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 57.94,
+    "ola": 67.74,
+    "description": "Card by Macan.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/828050637953433600/A_220_4MATIC_Sedan_19.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/828050749266198528/Mercedes-Benz_A_220_4MATIC_Sedan_2019_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/828050753368621096/Mercedes-Benz_A_220_4MATIC_Sedan_2019_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/828050756564942868/Mercedes-Benz_A_220_4MATIC_Sedan_2019_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/828050778710736896/Mercedes-Benz_A_220_4MATIC_Sedan_2019_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/828050769445126154/Mercedes-Benz_A_220_4MATIC_Sedan_2019_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/828050763896586260/Mercedes-Benz_A_220_4MATIC_Sedan_2019_699.png",
+
+    "333TopSpeed": 136,
+    "3330to60": 5.9,
+    "333Handling": 88,
+
+    "666TopSpeed": 140,
+    "6660to60": 5.6,
+    "666Handling": 91,
+
+    "996TopSpeed": 144,
+    "9960to60": 5.3,
+    "996Handling": 91,
+
+    "969TopSpeed": 144,
+    "9690to60": 5.6,
+    "969Handling": 94,
+
+    "699TopSpeed": 140,
+    "6990to60": 5.3,
+    "699Handling": 94
+}

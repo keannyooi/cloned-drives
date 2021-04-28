@@ -1,5 +1,5 @@
 {
-    "rq": 10,
+    "rq": 1,
     "make": "Peel",
     "model": "Trident",
     "modelYear": 1965,
@@ -24,23 +24,31 @@
     "ola": 0.00,
     "description": "The slightly more stylish but slightly slower version of the P50",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/803710424582455326/TridentbutGB.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/787746390356000808/PeelTrident.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/787746416872128512/PeelTrident333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/787746436389404672/PeelTrident666.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/787746475664211988/PeelTrident969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/823502086506545202/trident.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823502178966437908/trident.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823502183931707402/trident333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823502190592917514/trident666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823502222734262322/trident996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823502214475677706/trident969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823502203314372628/trident699.png",
 
-    "333TopSpeed": 31,
+    "333TopSpeed": 38,
     "3330to60": 99.9,
-    "333Handling": 48,
+    "333Handling": 46,
 
-    "666TopSpeed": 34,
+    "666TopSpeed": 45,
     "6660to60": 99.9,
-    "666Handling": 51,
+    "666Handling": 48,
 
-    "969TopSpeed": 37,
+    "969TopSpeed": 54,
     "9690to60": 99.9,
-    "969Handling": 54
+    "969Handling": 50,
+
+    "996TopSpeed": 54,
+    "996to60": 99.9,
+    "996Handling": 48,
+
+    "699TopSpeed": 45,
+    "699to60": 99.9,
+    "699Handling": 50
 }

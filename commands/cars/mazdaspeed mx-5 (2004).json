@@ -24,27 +24,31 @@
     "ola": 69.00,
     "description": "Miat. Card by Havvy.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/806957706057482250/MazdaspeedMX-5.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/806957779884965898/000_mpsmx5.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/806957785220775946/111_mpsmx5.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/806957790123655198/222_mpsmx5.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/806957803926716426/332_mpsmx5.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/806957797861228564/323_mpsmx5.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/823176964759617556/MazdaspeedMX-5.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823179873954299904/schpeed_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823179883558862858/schpeed_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823179890127929404/schpeed_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823179926655205376/schpeed_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823179914630529024/schpeed_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823179902831689748/schpeed_699.jpg",
 
     "333TopSpeed": 131,
-    "3330to60": 6.3,
+    "3330to60": 6.4,
     "333Handling": 84,
 
-    "666TopSpeed": 136,
-    "6660to60": 5.7,
-    "666Handling": 87,
+    "666TopSpeed": 135,
+    "6660to60": 6.0,
+    "666Handling": 86,
 
-    "996TopSpeed": 140,
-    "9960to60": 5.1,
-    "996Handling": 87,
+    "996TopSpeed": 139,
+    "9960to60": 5.7,
+    "996Handling": 86,
 
-    "969TopSpeed": 140,
-    "9690to60": 5.3,
-    "969Handling": 90
+    "969TopSpeed": 139,
+    "9690to60": 6.0,
+    "969Handling": 90,
+    
+    "699TopSpeed": 135,
+    "6990to60": 5.7,
+    "699Handling": 90
 }

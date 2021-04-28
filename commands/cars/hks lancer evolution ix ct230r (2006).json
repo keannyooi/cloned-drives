@@ -1,6 +1,6 @@
-﻿{
-    "rq": 90,
-    "make": "HKS",
+{
+    "rq": 91,
+    "make": ["HKS", "Mitsubishi"],
     "model": "Lancer Evolution IX CT230R",
     "modelYear": 2006,
     "country": "JP",
@@ -9,9 +9,8 @@
     "handling": 91,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Motorsport"],
+    "tags": ["Motorsport", "Tuner"],
     "isPrize": true,
-
 
     "weight": 1068,
     "gc": "Low",
@@ -25,37 +24,31 @@
     "ola": 78.24,
     "description": "A superb combination of HKS technology in a car that has beaten numerous best circuit lap times. Card by Johnny",
 
-
-    "card": "https://media.discordapp.net/attachments/715782088271331398/802553562924056626/HKS-Lancer-Evolution-IX-CT230R.png?width=1154&height=718",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/802553334980280340/HKS-Lancer-Evolution-IX-CT230R.png",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/802553342417043486/HKS-Lancer-Evolution-IX-CT230R-1-star.png",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/802553347432382464/HKS-Lancer-Evolution-IX-CT230R-2-star.png",
-    "racehud996": "",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/802553363212271626/HKS-Lancer-Evolution-IX-CT230R-323.png",
-    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/802553356278693908/HKS-Lancer-Evolution-IX-CT230R-233.png",
-
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/822207870716215306/cate-test.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/822207986931335198/HKS-Lancer-Evolution-IX-CT230R.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/822207993131040808/HKS-Lancer-Evolution-IX-CT230R-1-star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/822207995534377021/HKS-Lancer-Evolution-IX-CT230R-2-star.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/822208024663687218/HKS-Lancer-Evolution-IX-CT230R-332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/822208017994743888/HKS-Lancer-Evolution-IX-CT230R-323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/822208012353011762/HKS-Lancer-Evolution-IX-CT230R-233.png",
 
     "333TopSpeed": 173,
     "3330to60": 2.4,
     "333Handling": 94,
 
-
     "666TopSpeed": 176,
     "6660to60": 2.3, 
     "666Handling": 97,
 
-
-    "996TopSpeed": 0,
-    "9960to60": 0,
-    "996Handling": 0,
-
+    "996TopSpeed": 179,
+    "9960to60": 2.1,
+    "996Handling": 97,
 
     "969TopSpeed": 179,
-    "9690to60": 2.2,
+    "9690to60": 2.3,
     "969Handling": 101,
 
-
-    "699TopSpeed": 178,
-    "6990to60": 2.2,
+    "699TopSpeed": 176,
+    "6990to60": 2.1,
     "699Handling": 101
 }

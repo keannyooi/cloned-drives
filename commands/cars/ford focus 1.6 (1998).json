@@ -24,23 +24,31 @@
     "ola": 69.09,
     "description": "Card by keanny",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/812629965350240256/ford_focus_1.6.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/811419366100303882/ford_focus_1.6.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/811419414725394462/ford_focus_1.6_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/811419422539251762/ford_focus_1.6_666.jpg",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/811419431640498227/ford_focus_1.6_969.jpg",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819390576557555732/ford_focus_1.6.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819805317273092096/british_focus_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819805320217493514/british_focus_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819805331357827092/british_focus_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819805359417982996/british_focus_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819805349296078868/british_focus_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819805340551741450/british_focus_699.jpg",
 
-    "333TopSpeed": 116,
-    "3330to60": 10.2,
+    "333TopSpeed": 118,
+    "3330to60": 10.5,
     "333Handling": 71,
 
-    "666TopSpeed": 120,
-    "6660to60": 9.4,
+    "666TopSpeed": 122,
+    "6660to60": 9.9,
     "666Handling": 74,
 
-    "969TopSpeed": 123,
-    "9690to60": 8.6,
-    "969Handling": 76
+	"996TopSpeed": 127,
+    "9960to60": 9.4,
+    "996Handling": 74,
+
+    "969TopSpeed": 127,
+    "9690to60": 9.9,
+    "969Handling": 77,
+
+	"699TopSpeed": 122,
+    "6990to60": 9.4,
+    "699Handling": 77
 }

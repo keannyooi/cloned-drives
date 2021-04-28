@@ -1,5 +1,5 @@
 {
-    "rq": 34,
+    "rq": 38,
     "make": ["Pontiac", "McLaren"],
     "model": "McLaren Turbo Grand Prix",
     "modelYear": 1989,
@@ -9,7 +9,7 @@
     "handling": 75,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": [],
+    "tags": ["Tuner"],
     "isPrize": false,
 
     "weight": 1565,
@@ -24,23 +24,31 @@
     "ola": 71.43,
     "description": "A turbocharged W-body Grand Prix, brought to you by McLaren. Card by Johnny.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/811668731150204928/Pontiac-McLaren-Turbo-Grand-Prix.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/811668551843971082/Pontiac-McLaren-Turbo-Grand-Prix.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/811668556403703818/Pontiac-McLaren-Turbo-Grand-Prix-1-star.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/811668562530795530/Pontiac-McLaren-Turbo-Grand-Prix-2-star.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/811668572526215168/Pontiac-McLaren-Turbo-Grand-Prix-323.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819702088426323988/cate-test.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819702196949483520/Pontiac-McLaren-Turbo-Grand-Prix.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819702203438465115/Pontiac-McLaren-Turbo-Grand-Prix-1-star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819702211557851187/Pontiac-McLaren-Turbo-Grand-Prix-2-star.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819702242692300800/Pontiac-McLaren-Turbo-Grand-Prix-332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819702231292051486/Pontiac-McLaren-Turbo-Grand-Prix-323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819702222287274044/Pontiac-McLaren-Turbo-Grand-Prix-233.png",
 
-    "333TopSpeed": 131,
-    "3330to60": 6.6,
+    "333TopSpeed": 132,
+    "3330to60": 6.7,
     "333Handling": 77,
 
-    "666TopSpeed": 134,
-    "6660to60": 6.2,
-    "666Handling": 81,
+    "666TopSpeed": 136,
+    "6660to60": 6.3, 
+    "666Handling": 80,
 
-    "969TopSpeed": 137,
-    "9690to60": 5.8,
-    "969Handling": 83
+    "996TopSpeed": 140,
+    "9960to60": 6.0,
+    "996Handling": 80,
+
+    "969TopSpeed": 140,
+    "9690to60": 6.3,
+    "969Handling": 83,
+
+    "699TopSpeed": 140,
+    "6990to60": 6.0,
+    "699Handling": 83
 }

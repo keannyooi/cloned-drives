@@ -1,5 +1,5 @@
 {
-    "rq": 44,
+    "rq": 49,
     "make": "Dodge",
     "model": "Challenger RT",
     "modelYear": 2009,
@@ -24,27 +24,31 @@
     "ola": 78.57,
     "description": "The mid-trim boxy boi. Card by spence",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/794925473234157578/image0.jpg",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/794925546684678164/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/794925569665400842/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/794925595477409832/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/794925648023650354/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/794925623692099604/image0.jpg",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/825824835791487086/ChallRT.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/825826018454667264/ChallRT.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/825826027942969344/ChallRT1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/825826033777377310/ChallRT2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/825826057297985546/ChallRT996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/825826049199571004/ChallRT969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/825826041683378176/ChallRT699.png",
 
     "333TopSpeed": 144,
     "3330to60": 5.3,
-    "333Handling": 76,
+    "333Handling": 75,
 
-    "666TopSpeed": 148,
-    "6660to60": 4.9,
+    "666TopSpeed": 147,
+    "6660to60": 5.0,
     "666Handling": 78,
 
-    "996TopSpeed": 153,
-    "9960to60": 4.5,
+    "996TopSpeed": 151,
+    "9960to60": 4.8,
     "996Handling": 78,
 
-	"969TopSpeed": 152,
-    "9690to60": 4.6,
-    "969Handling": 81
+	"969TopSpeed": 151,
+    "9690to60": 5.0,
+    "969Handling": 81,
+
+	"699TopSpeed": 147,
+    "6990to60": 4.8,
+    "699Handling": 81
 }

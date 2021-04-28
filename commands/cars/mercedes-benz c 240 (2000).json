@@ -1,5 +1,5 @@
 ﻿{
-    "rq": 26,
+    "rq": 33,
     "make": "Mercedes-Benz",
     "model": "C 240",
     "modelYear": 2000,
@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
 
     "weight": 1460,
     "gc": "Medium",
@@ -25,37 +24,31 @@
     "ola": 82.95,
     "description": "New gen C class how cute. Card by Havvy",
 
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/825098924141707294/C240.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/825099344947838986/C240.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/825099348043235378/C240-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/825099354288947240/C240-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/825099375725510686/C240-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/825099370319446016/C240-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/825099362966175804/C240-699.png",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/797158905904889886/M-BC240.png?width=1154&height=718",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/797159498656907335/c240St.png",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/797159504852025354/c2401.png",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/797159508128301116/c2402.png",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/797162357968863302/c240332.png",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/797159517845585980/c240323.png",
-    "racehud699": "",
+    "333TopSpeed": 150,
+    "3330to60": 8.4,
+    "333Handling": 70,
 
+    "666TopSpeed": 153,
+    "6660to60": 7.9,
+    "666Handling": 72,
 
-    "333TopSpeed": 149,
-    "3330to60": 8.1,
-    "333Handling": 71,
+    "996TopSpeed": 157,
+    "9960to60": 7.5,
+    "996Handling": 72,
 
-
-    "666TopSpeed": 152,
-    "6660to60": 7.4,
-    "666Handling": 73,
-
-
-    "996TopSpeed": 156,
-    "9960to60": 6.5,
-    "996Handling": 73,
-
-
-    "969TopSpeed": 155,
-    "9690to60": 6.8,
+    "969TopSpeed": 157,
+    "9690to60": 7.9,
     "969Handling": 75,
 
-
-    "699TopSpeed": 0,
-    "6990to60": 0,
-    "699Handling": 0
+    "699TopSpeed": 153,
+    "6990to60": 7.5,
+    "699Handling": 75
 }

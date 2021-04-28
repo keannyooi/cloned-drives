@@ -1,6 +1,6 @@
 {
-    "rq": 80,
-    "make": "Mercedes-AMG",
+    "rq": 78,
+    "make": ["Mercedes-AMG", "Mercedes-Benz"],
     "model": "CLA 45 4MATIC",
     "modelYear": 2017,
     "country": "DE",
@@ -24,13 +24,13 @@
     "ola": 84.21,
     "description": "Some sort of car made in germany. Card by Spence",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/801210069529526323/image0_13.jpg",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/801210200299667546/claorsomething.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/801210215205961768/claorsomething333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/801210229487304754/claorsomething666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/801210331392376893/claorsomething996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/801210307203956776/claorsomething969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/801210273326956594/claorsomething699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/823144335360917564/CLA45.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823144437474656266/CLA45.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823144444630663168/CLA45-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823144452486856724/CLA45-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823144476033155092/CLA45-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823144468588658708/CLA45-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823144461189382154/CLA45-699.png",
 
     "333TopSpeed": 170,
     "3330to60": 3.6,
@@ -40,15 +40,15 @@
     "6660to60": 3.4,
     "666Handling": 96,
 
-    "996TopSpeed": 177,
+    "996TopSpeed": 176,
     "9960to60": 3.2,
-    "996Handling": 97,
+    "996Handling": 96,
 
     "969TopSpeed": 176,
-    "9690to60": 3.3,
+    "9690to60": 3.4,
     "969Handling": 100,
 
-    "699TopSpeed": 175,
-    "6990to60": 3.3,
+    "699TopSpeed": 173,
+    "6990to60": 3.2,
     "699Handling": 100
 }

@@ -1,5 +1,5 @@
 ﻿{
-    "rq": 50,
+    "rq": 54,
     "make": "Volkswagen",
     "model": "Golf GTI",
     "modelYear": 2013,
@@ -26,36 +26,31 @@
     "description": "Still the class benchmark and the quintessential hot hatch. Card by Andu ",
 
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/805393506519744573/GTI7.png?width=1154&height=719",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/805394724059873280/Golf7.png",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/805394730610982962/Golf71.png",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/805394735979298846/Golf72.png",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/805394764072878090/Golf7332.png",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/805394743348953099/Golf323.png",
-    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/805394755201794129/Golf7233.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820392570190168094/GTI7.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820392392267137084/GTI7.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820392403672104960/GTI7-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820392409761710111/GTI7-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820392432012099664/GTI7-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820392426157375498/GTI7-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820392418070364178/GTI7-699.png",
 
-
-    "333TopSpeed": 157,
-    "3330to60": 5.7,
+    "333TopSpeed": 155,
+    "3330to60": 5.8,
     "333Handling": 87,
 
+    "666TopSpeed": 159,
+    "6660to60": 5.5,
+    "666Handling": 90,   
 
-    "666TopSpeed": 160,
-    "6660to60": 5.3, 
-    "666Handling": 90,
-
-
-    "996TopSpeed": 167,
-    "9960to60": 4.8,
+    "996TopSpeed": 162,
+    "9960to60": 5.2,
     "996Handling": 90,
 
-
-    "969TopSpeed": 164,
-    "9690to60": 5.0,
+    "969TopSpeed": 162,
+    "9690to60": 5.5,
     "969Handling": 93,
 
-
-    "699TopSpeed": 160,
-    "6990to60": 5.1,
+    "699TopSpeed": 159,
+    "6990to60": 5.2,
     "699Handling": 93
 }

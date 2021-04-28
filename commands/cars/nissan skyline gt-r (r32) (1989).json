@@ -1,61 +1,54 @@
 ﻿{
-    "rq": 66,
+    "rq": 64,
     "make": "Nissan",
     "model": "Skyline GT-R (R32)",
     "modelYear": 1989,
     "country": "JP",
     "topSpeed": 155,
     "0to60": 5.4,
-    "handling": 79,
+    "handling": 83,
     "driveType": "4WD",
     "tyreType": "Performance",
     "tags": ["Street Racer"],
     "isPrize": false,
 
-
     "weight": 1430,
     "gc": "Medium",
     "seatCount": 4,
     "bodyStyle": "Coupe",
-    "tcs": false,
+    "tcs": true,
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 93.01,
-    "ola": 48.15,
+    "mra": 67.50,
+    "ola": 77.78,
     "description": "When that mra hits. Card by Havvy",
 
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820709468773548032/NissanSkylineGT-RR32.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820709560247124028/000_r32.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820709569017544704/111_r32.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820709573194154064/222_r32.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820709590470492250/332_r32.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820709583240691712/323_r32.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820709578660249620/233_r32.png",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/795174486407643156/NissanSkylineGT-RR32.png?width=705&height=439",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/795174717694541854/000r32.png?width=705&height=439",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/795174728331427860/111r32.png?width=705&height=439",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/795174737113645076/222r32.png?width=705&height=439",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/795174765395574844/332r32.png?width=705&height=439",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/795174754977054740/323r32.png?width=705&height=439",
-    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/795174745767149608/233r32.png?width=705&height=439",
-
-
-    "333TopSpeed": 159,
+    "333TopSpeed": 158,
     "3330to60": 5.1,
-    "333Handling": 82,
+    "333Handling": 86,
 
+    "666TopSpeed": 162,
+    "6660to60": 4.9,
+    "666Handling": 88,
 
-    "666TopSpeed": 163,
-    "6660to60": 4.7,
-    "666Handling": 84,
+    "996TopSpeed": 165,
+    "9960to60": 4.6,
+    "996Handling": 88,
 
+    "969TopSpeed": 165,
+    "9690to60": 4.9,
+    "969Handling": 92,
 
-    "996TopSpeed": 168,
-    "9960to60": 4.3,
-    "996Handling": 84,
-
-
-    "969TopSpeed": 167,
-    "9690to60": 4.4,
-    "969Handling": 87,
-
-
-    "699TopSpeed": 164,
-    "6990to60": 4.5,
-    "699Handling": 88
+    "699TopSpeed": 162,
+    "6990to60": 4.6,
+    "699Handling": 92
 }

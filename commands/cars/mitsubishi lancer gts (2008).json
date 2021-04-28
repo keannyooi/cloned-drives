@@ -1,5 +1,5 @@
 {
-    "rq": 35,
+    "rq": 42,
     "make": "Mitsubishi",
     "model": "Lancer GTS",
     "modelYear": 2008,
@@ -24,23 +24,31 @@
     "ola": 56.1,
     "description": "The least sporting GTS. Card By Spence",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/790660252008710154/image0.jpg",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/790660331062951946/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/790660351652921414/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/790660369336107048/image0.jpg",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/790660392107114546/image0.jpg",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824720222946328676/LancerGTS.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824720571220623360/LancerGTS.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824720578405072936/LancerGTS1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824720583136378930/LancerGTS2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824720606540726332/LancerGTS996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824720599146168330/LancerGTS969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824720590530543693/LancerGTS699.png",
 
     "333TopSpeed": 129,
-    "3330to60": 7.7,
+    "3330to60": 7.8,
     "333Handling": 79,
 
-    "666TopSpeed": 132,
-    "6660to60": 7.1,
+    "666TopSpeed": 133,
+    "6660to60": 7.4,
     "666Handling": 81,
 
-    "969TopSpeed": 136,
-    "9690to60": 6.6,
-    "969Handling": 84
+    "996TopSpeed": 137,
+    "9960to60": 7.0,
+    "996Handling": 81,
+
+    "969TopSpeed": 137,
+    "9690to60": 7.4,
+    "969Handling": 84,
+
+    "699TopSpeed": 133,
+    "6990to60": 7.0,
+    "699Handling": 84
 }

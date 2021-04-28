@@ -1,5 +1,5 @@
 {
-    "rq": 39,
+    "rq": 45,
     "make": "Seat",
     "model": "Leon Cupra R",
     "modelYear": 2002,
@@ -9,7 +9,7 @@
     "handling": 77,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": [],
+    "tags": ["Hot Hatch"],
     "isPrize": false,
 
     "weight": 1375,
@@ -24,27 +24,31 @@
     "ola": 73.53,
     "description": "S e a t. card by SpenceLuck.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/810488934303137802/ono.jpg",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/810486074568736778/unknown.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/810486380912181258/unknown.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/810486641692639262/unknown.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/810486879195627530/unknown.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/810486776723406918/unknown.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820463820547817502/image0.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820463902428626964/image0.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820463925350105088/image0.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820463947282251796/image0.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820464020468531200/image0.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820463970846244884/image0.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820463998474518539/image0.jpg",
 
-    "333TopSpeed": 155,
-    "3330to60": 6.4,
-    "333Handling": 80,
+    "333TopSpeed": 154,
+    "3330to60": 6.5,
+    "333Handling": 77,
 
-    "666TopSpeed": 160,
-    "6660to60": 6.0,
+    "666TopSpeed": 158,
+    "6660to60": 6.1, 
     "666Handling": 82,
 
-    "996TopSpeed": 164,
-    "9960to60": 5.4,
-    "996Handling": 83,
+    "996TopSpeed": 161,
+    "9960to60": 5.8,
+    "996Handling": 82,
 
-    "969TopSpeed": 164,
-    "9690to60": 5.6,
-    "969Handling": 85
+    "969TopSpeed": 161,
+    "9690to60": 6.1,
+    "969Handling": 85,
+
+    "699TopSpeed": 158,
+    "6990to60": 5.8,
+    "699Handling": 85
 }

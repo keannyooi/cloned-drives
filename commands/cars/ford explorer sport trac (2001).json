@@ -1,5 +1,5 @@
 {
-    "rq": 37,
+    "rq": 33,
     "make": "Ford",
     "model": "Explorer Sport Trac",
     "modelYear": 2001,
@@ -9,7 +9,7 @@
     "handling": 63,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": ["2021 Spring Collection"],
+    "tags": [],
     "isPrize": false,
 
     "weight": 1965,
@@ -24,31 +24,31 @@
     "ola": 86.02,
     "description": "Card by Spence.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/800139994978451466/image0_10.jpg",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/800141199510863902/xplorer.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/800141216616415303/xplorer333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/800141228750274640/xplorer666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/800141268994490378/xplorer996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/800141291081433088/xpolrer969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/800141248983466014/xplorer699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824626860473188412/xpolorthingy.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824627206210715688/xpolor.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824627208956936243/xpolor333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824627214544011264/xpolor666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824627261444718593/xplor996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824627248686563378/xplor969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824627232642170920/xploror699.png",
 
-    "333TopSpeed": 109,
-    "3330to60": 8.9,
+    "333TopSpeed": 111,
+    "3330to60": 8.8,
     "333Handling": 65,
 
-    "666TopSpeed": 112,
-    "6660to60": 8.6,
-    "666Handling": 68,
+    "666TopSpeed": 116,
+    "6660to60": 8.4,
+    "666Handling": 67,
 
-    "996TopSpeed": 116,
-    "9960to60": 8.2,
-    "996Handling": 69,
+    "996TopSpeed": 121,
+    "9960to60": 7.9,
+    "996Handling": 67,
 
-    "969TopSpeed": 115,
+    "969TopSpeed": 121,
     "9690to60": 8.4,
     "969Handling": 70,
 
-    "699TopSpeed": 114,
-    "6990to60": 8.4,
+    "699TopSpeed": 116,
+    "6990to60": 7.9,
     "699Handling": 70
 }

@@ -1,5 +1,5 @@
 ﻿{
-    "rq": 49,
+    "rq": 50,
     "make": "Porsche",
     "model": "928 GTS",
     "modelYear": 1992,
@@ -26,36 +26,33 @@
     "description": "The front-engined Porsche with a dream. Card by Bnuuy",
 
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/805184773667553280/strokeandkill.png?width=1154&height=718",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/784506157037125682/928GTSStock.png?width=705&height=441",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/784506221998506044/928GTS1.png?width=705&height=441",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/784506241619197952/928GTS2.png?width=705&height=441",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/784506331721105418/928GTS332.png?width=705&height=441",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/784506288863576134/928GTS323.png?width=705&height=441",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819393620670414848/928GTS.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819393678937292830/928.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819393701292933200/928333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819393715911131236/928666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819393798714687488/928996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819393777517068379/928969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819393746567036978/928699.png",
 
 
-    "333TopSpeed": 170,
+    "333TopSpeed": 169,
     "3330to60": 5.0,
     "333Handling": 81,
 
+    "666TopSpeed": 172,
+    "6660to60": 4.8, 
+    "666Handling": 83,
 
-    "666TopSpeed": 174,
-    "6660to60": 4.6,
-    "666Handling": 84,
+    "996TopSpeed": 175,
+    "9960to60": 4.5,
+    "996Handling": 83,
 
+    "969TopSpeed": 175,
+    "9690to60": 4.8,
+    "969Handling": 87,
 
-    "996TopSpeed": 180,
-    "9960to60": 4.2,
-    "996Handling": 84,
+    "699TopSpeed": 172,
+    "6990to60": 4.5,
+    "699Handling": 87
 
-
-    "969TopSpeed": 178,
-    "9690to60": 4.3,
-    "969Handling": 86,
-
-
-    "699TopSpeed": 0,
-    "6990to60": 0,
-    "699Handling": 0
 }

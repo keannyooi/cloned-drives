@@ -1,5 +1,5 @@
 {
-    "rq": 83,
+    "rq": 76,
     "make": "Ford",
     "model": "Mustang FR500GT",
     "modelYear": 2007,
@@ -24,23 +24,32 @@
     "ola": 75.00,
     "description": "A very fast pony. Card by Johnny.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/795785169885069322/Ford-Mustang-FR500-GT.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/795084434004770816/Ford-Mustang-FR500GT.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/795084443013873693/Ford-Mustang-FR500GT-1-star.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/795084447752912916/Ford-Mustang-FR500GT-2-star.png",
-    "racehud996": "",
-    "racehud969": "",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/795084467172802580/Ford-Mustang-FR500GT-233.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/822224780890865723/cate-test.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/822224882402066443/Ford-Mustang-FR500GT.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/822224887048306718/Ford-Mustang-FR500GT-1-star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/822224890715045888/Ford-Mustang-FR500GT-2-star.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/822224912503537704/Ford-Mustang-FR500GT-332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/822224905142534184/Ford-Mustang-FR500GT-323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/822224898873229362/Ford-Mustang-FR500GT-233.png",
 
     "333TopSpeed": 175,
-    "3330to60": 3.6,
+    "3330to60": 3.7,
     "333Handling": 97,
 
     "666TopSpeed": 178,
-    "6660to60": 3.3,
+    "6660to60": 3.5,
     "666Handling": 100,
 
-    "699TopSpeed": 179,
-    "6990to60": 3.1,
-    "699Handling": 104
+    "699TopSpeed": 178,
+    "6990to60": 3.3,
+    "699Handling": 104,
+    
+    "996TopSpeed": 181,
+    "996to60": 3.3,
+    "996Handling": 100,
+
+    "969TopSpeed": 181,
+    "969to60": 3.5,
+    "969Handling": 104
+
 }

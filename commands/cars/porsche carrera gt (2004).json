@@ -1,5 +1,5 @@
 {
-    "rq": 82,
+    "rq": 78,
     "make": "Porsche",
     "model": "Carrera GT",
     "modelYear": 2004,
@@ -9,7 +9,7 @@
     "handling": 87,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [],
+    "tags": ["Supercar"],
     "isPrize": true,
 
     "weight": 1380,
@@ -24,31 +24,31 @@
     "ola": 100.00,
     "description": "Just be careful on the brakes. Card by Spence.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/798715735282286592/image0.jpg",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/798715863389175808/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/798715896180637736/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/798715920577986570/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/798716018146410526/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/798715996424765450/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/798715962350239744/image0.jpg",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826217496997527572/CarreraGT.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826217629529145394/carreraGT.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826217636387487744/carreraGT333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826217643588452382/carreraGT666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826217671120781402/carreraGT996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826217661025353738/carreraGT969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826217651260751896/carreraGT699.png",
 
-    "333TopSpeed": 207,
+    "333TopSpeed": 208,
     "3330to60": 3.4,
     "333Handling": 90,
 
     "666TopSpeed": 210,
-    "6660to60": 3.2,
+    "6660to60": 3.2, 
     "666Handling": 93,
 
-    "996TopSpeed": 214,
-    "9960to60": 2.9,
-    "996Handling": 94,
+    "996TopSpeed": 213,
+    "9960to60": 3.1,
+    "996Handling": 93,
 
     "969TopSpeed": 213,
-    "9690to60": 3.0,
-    "969Handling": 96,
+    "9690to60": 3.2,
+    "969Handling": 97,
 
-    "699TopSpeed": 212,
-    "6990to60": 3.0,
+    "699TopSpeed": 210,
+    "6990to60": 3.1,
     "699Handling": 97
 }

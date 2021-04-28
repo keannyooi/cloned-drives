@@ -1,5 +1,5 @@
 {
-    "rq": 76,
+    "rq": 72,
     "make": "Chevrolet",
     "model": "S-10 Lingenfelter Pro Stock",
     "modelYear": 1999,
@@ -24,23 +24,31 @@
     "ola": 76.36,
     "description": "Ok, who allowed this? Card by DodgeDemon.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/807269160706637874/1999_Chevrolet_S10_Pro_Stock.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/807269496552685608/S10ProStock000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/807269536935575562/S10ProStock333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/807269585438900244/S10ProStock666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/807269661866721326/S10ProStock996.png",
-    "racehud969": "",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/823954438334316584/1999_Chevrolet_S10_Pro_Stock.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824299550113792030/prostock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824299557638111262/prostock333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824299564927287326/prostock666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824299592849817620/prostock996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824299584892960788/prostock969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824299578257440788/prostock699.png",
 
     "333TopSpeed": 215,
     "3330to60": 1.0,
-    "333Handling": 12,
+    "333Handling": 10,
 
-    "666TopSpeed": 217,
+    "666TopSpeed": 218,
     "6660to60": 1.0,
-    "666Handling": 14,
+    "666Handling": 11,
 
-    "996TopSpeed": 221,
-    "9960to60": 0.8,
-    "996Handling": 15
+    "996TopSpeed": 220,
+    "9960to60": 0.9,
+    "996Handling": 11,
+
+    "969TopSpeed": 220,
+    "969to60": 1.0,
+    "969Handling": 11,
+
+    "699TopSpeed": 218,
+    "699to60": 0.9,
+    "699Handling": 11
 }

@@ -1,5 +1,5 @@
-﻿{
-    "rq": 19,
+{
+    "rq": 25,
     "make": "Honda",
     "model": "CRX 1.5Si",
     "modelYear": 1985,
@@ -12,7 +12,6 @@
     "tags": ["Hot Hatch"],
     "isPrize": false,
 
-
     "weight": 777,
     "gc": "Medium",
     "seatCount":4,
@@ -23,39 +22,33 @@
     "fuelType": "Petrol",
     "mra": 32.48,
     "ola": 76.40,
-    "description": "No CRX, just food. Card by Spence",
+    "description": "No CRX, just food. Card by Ahmed",
 
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/828064202425368576/Honda-CRX-Si.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/828064480671039508/Honda-CRX-Si-stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/828064524719357992/Honda-CRX-Si-333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/828064541601955840/Honda-CRX-Si-666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/828064601823641630/Honda-CRX-Si-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/828064654990639134/Honda-CRX-Si-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/828064577048674314/Honda-CRX-Si-699.png",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/798205034067263509/image0.jpg?width=1154&height=716",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/798205092767465522/image0.jpg?width=1154&height=720",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/798205118100799508/image0.jpg?width=1154&height=720",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/798205132306251786/image0.jpg?width=1154&height=720",
-    "racehud996": "",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/798205154825994240/image0.jpg?width=1154&height=720",
-    "racehud699": "",
-
-
-    "333TopSpeed": 117,
-    "3330to60": 8.3,
+    "333TopSpeed": 118,
+    "3330to60": 8.5,
     "333Handling": 70,
 
+    "666TopSpeed": 123,
+    "6660to60": 8.0, 
+    "666Handling": 72,
 
-    "666TopSpeed": 121,
-    "6660to60": 7.7, 
-    "666Handling": 73,
+    "996TopSpeed": 128,
+    "9960to60": 7.6,
+    "996Handling": 72,
 
-
-    "996TopSpeed": 0,
-    "9960to60": 0,
-    "996Handling": 0,
-
-
-    "969TopSpeed": 124,
-    "9690to60": 7.1,
+    "969TopSpeed": 128,
+    "9690to60": 8.0,
     "969Handling": 75,
 
-
-    "699TopSpeed": 0,
-    "6990to60": 0,
-    "699Handling": 0
+    "699TopSpeed": 123,
+    "6990to60": 7.6,
+    "699Handling": 75
 }

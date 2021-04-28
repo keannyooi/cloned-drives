@@ -1,5 +1,5 @@
 {
-    "rq": 95,
+    "rq": 96,
     "make": "McLaren",
     "model": "Speedtail",
     "modelYear": 2020,
@@ -24,27 +24,31 @@
     "ola": 77.59,
     "description": "Charging up while driving at 250mph seems fun. Card by DodgeDemon.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/807268015628091412/2020_McLaren_Speedtail.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/807268284323856404/McLarenSpeedtail000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/807268337502519306/McLarenSpeedtail333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/807268381089857593/McLarenSpeedtail666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/807268464481796136/McLarenSpeedtail996.png",
-    "racehud969": "",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/807268421255036960/McLarenSpeedtail699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824680128826834945/spodtail.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824989818744340500/spedt.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824989822825398332/spedt333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824989827824091157/spedt666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824989853560602654/spedt996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824989844676673546/spedt969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824989834585571398/spedt699.png",
 
     "333TopSpeed": 252,
-    "3330to60": 2.7,
+    "3330to60": 2.8,
     "333Handling": 98,
 
     "666TopSpeed": 254,
     "6660to60": 2.6,
     "666Handling": 101,
 
-    "996TopSpeed": 258,
-    "9960to60": 2.4,
-    "996Handling": 102,
+    "996TopSpeed": 256,
+    "9960to60": 2.5,
+    "996Handling": 101,
 
-    "699TopSpeed": 256,
+    "969TopSpeed": 256,
+    "9690to60": 2.6,
+    "969Handling": 105,
+
+    "699TopSpeed": 254,
     "6990to60": 2.5,
     "699Handling": 105
 }

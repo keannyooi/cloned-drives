@@ -1,5 +1,5 @@
 {
-    "rq": 49,
+    "rq": 51,
     "make": ["Mugen", "Honda"],
     "model": "Civic Type-R",
     "modelYear": 2009,
@@ -24,27 +24,31 @@
     "ola": 61.02,
     "description": "The tuned FK2. By Havvy",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/794659274936549387/MugenCivicType-RUFO.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/794702056870510652/000mug2.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/794702071014096906/111mug2.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/794702079737987102/222mug2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/794702101116747826/332mug2.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/794702091821252648/323mug2.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/822009927459405904/MugenCivicType-RUFO.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/822009978126729226/000_ufo.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/822009980835332106/111_ufo.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/822009985571618816/222_ufo.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/822010002482135060/332_ufo.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/822009995935350824/323_ufo.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/822009990231097354/233_ufo.png",
 
-    "333TopSpeed": 157,
+    "333TopSpeed": 156,
     "3330to60": 5.6,
     "333Handling": 87,
 
-    "666TopSpeed": 161,
+    "666TopSpeed": 160,
     "6660to60": 5.3,
     "666Handling": 90,
 
-    "996TopSpeed": 166,
-    "9960to60": 4.9,
+    "996TopSpeed": 163,
+    "9960to60": 5.0,
     "996Handling": 90,
 
-    "969TopSpeed": 165,
-    "9690to60": 5.0,
-    "969Handling": 93
+    "969TopSpeed": 163,
+    "9690to60": 5.3,
+    "969Handling": 93,
+
+	"699TopSpeed": 160,
+    "6990to60": 5.0,
+    "699Handling": 93
 }

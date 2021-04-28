@@ -1,5 +1,5 @@
 {
-    "rq": 22,
+    "rq": 28,
     "make": "Scion",
     "model": "iQ",
     "modelYear": 2012,
@@ -26,36 +26,32 @@
     "description": "The smarter Smart alternative. Card by Andu",
 
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/793774675620003840/iqScion.png?width=705&height=439",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/793775327796133928/IQSt.png?width=705&height=441",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/793775347849101322/IQ1.png?width=705&height=441",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/793778155030446090/IQ2.png?width=705&height=441",
-    "racehud996": "",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/793775373707247626/IQ323.png?width=705&height=441",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/821107095620288573/iqScion.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821107263463751710/iq.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821107272792408083/iq1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821107276664406068/iq2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821107296167919626/iq996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821107289669894204/iq969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821107283186286662/iq699.png",
 
 
-    "333TopSpeed": 104,
-    "3330to60": 9.6,
+    "333TopSpeed": 105,
+    "3330to60": 9.8,
     "333Handling": 73,
 
-
-    "666TopSpeed": 108,
-    "6660to60": 8.9,
+    "666TopSpeed": 110,
+    "6660to60": 9.3, 
     "666Handling": 76,
 
+    "996TopSpeed": 116,
+    "9960to60": 8.8,
+    "996Handling": 76,
 
-    "996TopSpeed": 0,
-    "9960to60": 0,
-    "996Handling": 0,
-
-
-    "969TopSpeed": 111,
-    "9690to60": 8.1,
+    "969TopSpeed": 116,
+    "9690to60": 9.3,
     "969Handling": 79,
 
-
-    "699TopSpeed": 0,
-    "6990to60": 0,
-    "699Handling": 0
+    "699TopSpeed": 110,
+    "6990to60": 8.8,
+    "699Handling": 79
 }

@@ -1,5 +1,5 @@
 {
-    "rq": 40,
+    "rq": 39,
     "make": "Land Rover",
     "model": "Defender 90",
     "modelYear": 1990,
@@ -24,27 +24,31 @@
     "ola": 68.63,
     "description": "A classic iconic off-roader. Card by Havvy",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/797198172371288074/LandRoverDefender90.png?width=1154&height=718",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/797187769419432026/000dfd.png?width=1154&height=718",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/797187780349263922/111dfd.png?width=1154&height=718",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/797187788821889064/222dfd.png?width=1154&height=718",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/797187803476918272/332dfd.png?width=1154&height=718",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/797187796137541652/323dfd.png?width=1154&height=718",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826798468101439518/LandRoverDefender90.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826798507415175188/000_def90.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826798514789023794/111_def90.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826798518878470144/222_def90.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826798531360325642/332_def90.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826798527471550545/323_def90.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826798523382366258/233_def90.png",
 
-    "333TopSpeed": 90,
-    "3330to60": 9.5,
-    "333Handling": 62,
+    "333TopSpeed": 92,
+    "3330to60": 9.7,
+    "333Handling": 61,
 
-    "666TopSpeed": 94,
-    "6660to60": 8.7,
-    "666Handling": 64,
+    "666TopSpeed": 98,
+    "6660to60": 9.2,
+    "666Handling": 63,
 
-    "996TopSpeed": 99,
-    "9960to60": 7.8,
-    "996Handling": 64,
+    "996TopSpeed": 104,
+    "9960to60": 8.7,
+    "996Handling": 63,
 
-    "969TopSpeed": 98,
-    "9690to60": 8.0,
-    "969Handling": 66
+    "969TopSpeed": 104,
+    "9690to60": 9.2,
+    "969Handling": 65,
+
+	"699TopSpeed": 98,
+    "6990to60": 8.7,
+    "699Handling": 65
 }

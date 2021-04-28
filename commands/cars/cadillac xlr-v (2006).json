@@ -1,5 +1,5 @@
 {
-    "rq": 63,
+    "rq": 65,
     "make": "Cadillac",
     "model": "XLR-V",
     "modelYear": 2006,
@@ -24,23 +24,31 @@
     "ola": 83.98,
     "description": "Corvette, Northstar edition. Card by keanny",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/731847109384339476/cadillac_xlr-v.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/731847347331530863/cadillac_xlr-v.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/731847387345190973/cadillac_xlr-v_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/731847404843696170/cadillac_xlr-v_666.jpg",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/731847419184021574/cadillac_xlr-v_969.jpg",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819384067090153502/xlr-v.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819537559666688000/xlr-v_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819537566856249394/xlr-v_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819537572518690846/xlr-v_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819537606001819678/xlr-v_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819537591404855346/xlr-v_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819537581221085244/xlr-v_699.jpg",
 
-    "333TopSpeed": 159,
+    "333TopSpeed": 158,
     "3330to60": 4.3,
-    "333Handling": 83,
+    "333Handling": 81,
 
-    "666TopSpeed": 164,
-    "6660to60": 4.0,
-    "666Handling": 84,
+    "666TopSpeed": 162,
+    "6660to60": 4.1,
+    "666Handling": 83,
 
-    "969TopSpeed": 168,
-    "9690to60": 3.8,
-    "969Handling": 86
+	"996TopSpeed": 165,
+    "9960to60": 3.8,
+    "996Handling": 83,
+
+    "969TopSpeed": 165,
+    "9690to60": 4.1,
+    "969Handling": 87,
+
+	"699TopSpeed": 162,
+    "6990to60": 3.8,
+    "699Handling": 87
 }

@@ -24,27 +24,31 @@
     "ola": 65.28,
     "description": "GMC's flagship Yukon with 4 additional gears and a refreshed grille. Card by Johnny",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/794647046636175402/GMC-Yukon-Denali.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/794646905531269140/GMC-Yukon-Denali.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/794646913022033940/GMC-Yukon-Denali-1-star.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/794646918826426388/GMC-Yukon-Denali-2-star.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/794646939991932928/GMC-Yukon-Denali-332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/794646927211102268/GMC-Yukon-Denali-323.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/822227044687544390/cate-test.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/822226865133453352/GMC-Yukon-Denali.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/822226868832043068/GMC-Yukon-Denali-1-star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/822226873886310400/GMC-Yukon-Denali-2-star.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/822226894673281054/GMC-Yukon-Denali-332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/822226888624963614/GMC-Yukon-Denali-323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/822226882321842247/GMC-Yukon-Denali-233.png",
 
-    "333TopSpeed": 116,
+    "333TopSpeed": 118,
     "3330to60": 5.5,
-    "333Handling": 71,
+    "333Handling": 70,
 
-    "666TopSpeed": 119,
+    "666TopSpeed": 122,
     "6660to60": 5.2,
-    "666Handling": 74,
+    "666Handling": 72,
 
-	"996TopSpeed": 122,
-    "9960to60": 4.7,
-    "996Handling": 74,
+	  "996TopSpeed": 127,
+    "9960to60": 4.9,
+    "996Handling": 72,
 
-    "969TopSpeed": 121,
-    "9690to60": 4.9,
-    "969Handling": 77
+    "969TopSpeed": 127,
+    "9690to60": 5.2,
+    "969Handling": 75,
+    
+    "699Topspeed": 122,
+    "6990to60": 4.9,
+    "699Handling": 75
 }

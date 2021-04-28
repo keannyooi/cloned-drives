@@ -1,5 +1,5 @@
 {
-    "rq": 51,
+    "rq": 53,
     "make": "Maserati",
     "model": "Spyder GT",
     "modelYear": 2003,
@@ -24,31 +24,31 @@
     "ola": 84.00,
     "description": "Not to be confused with the Cambicorsa, card wise. Card by havvy",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/787304904816328704/MaseratiSpyderGT.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/787304510841159710/MaseratiSpyderGT.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/787304532177584178/MaseratiSpyderGT333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/787304573416636416/MaseratiSpyderGT666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/787304619684003900/MaseratiSpyderGT996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/787304722264227860/MaseratiSpyderGT969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/787304681213788170/MaseratiSpyderGT699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826815978482040852/AISJHFUNBAJSUHFBNASFHUJASFWAsfasgfdgdagadsgag.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826816030902321162/000_pos.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826816035050487808/111_pos.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826816038623641641/222_pos.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826816050204770324/332_pos.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826816046710915092/323_pos.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826816043074584586/233_pos.png",
 
     "333TopSpeed": 179,
-    "3330to60": 4.7,
+    "3330to60": 4.8,
     "333Handling": 80,
 
     "666TopSpeed": 182,
-    "6660to60": 4.4,
-    "666Handling": 83,
+    "6660to60": 4.5,
+    "666Handling": 82,
 
-    "996TopSpeed": 186,
-    "9960to60": 4.0,
-    "996Handling": 83,
+    "996TopSpeed": 185,
+    "9960to60": 4.3,
+    "996Handling": 82,
 
     "969TopSpeed": 185,
-    "9690to60": 4.1,
-    "969Handling": 86,
+    "9690to60": 4.5,
+    "969Handling": 85,
 
-    "699TopSpeed": 183,
+    "699TopSpeed": 182,
     "6990to60": 4.3,
-    "699Handling": 87
+    "699Handling": 85
 }

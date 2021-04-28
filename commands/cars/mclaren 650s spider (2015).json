@@ -1,5 +1,5 @@
 {
-    "rq": 91,
+    "rq": 88,
     "make": "McLaren",
     "model": "650S Spider",
     "modelYear": 2015,
@@ -24,31 +24,31 @@
     "ola": 103.17,
     "description": "Drives every bit as crisply as the Coupe, but with added volume and drama. Card by Smegma",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/812895629884915782/CD_McLaren_650S_Spider.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/812895774157045780/CD_McLaren_650S_Spider_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/812895782796525638/CD_McLaren_650S_Spider_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/812895795770425344/CD_McLaren_650S_Spider_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/812895819577032714/CD_McLaren_650S_Spider_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/812895815189659648/CD_McLaren_650S_Spider_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/812895803114520597/CD_McLaren_650S_Spider_699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826762397854466048/CD_McLaren_650S_Spider.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826762540914704394/CD_McLaren_650S_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826762546487885854/CD_McLaren_650S_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826762553039913000/CD_McLaren_650S_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826762571814141972/CD_McLaren_650S_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826762564963926016/CD_McLaren_650S_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826762559772295199/CD_McLaren_650S_699.png",
 
-    "333TopSpeed": 208,
-    "3330to60": 2.7,
+    "333TopSpeed": 209,
+    "3330to60": 2.8,
     "333Handling": 95,
 
     "666TopSpeed": 211,
-    "6660to60": 2.5,
-    "666Handling": 99,
+    "6660to60": 2.6,
+    "666Handling": 98,
 
-    "996TopSpeed": 215,
-    "9960to60": 2.3,
-    "996Handling": 99,
+    "996TopSpeed": 214,
+    "9960to60": 2.5,
+    "996Handling": 98,
 
     "969TopSpeed": 214,
-    "9690to60": 2.4,
+    "9690to60": 2.6,
     "969Handling": 102,
 
-    "699TopSpeed": 212,
-    "6990to60": 2.4,
+    "699TopSpeed": 211,
+    "6990to60": 2.5,
     "699Handling": 102
 }

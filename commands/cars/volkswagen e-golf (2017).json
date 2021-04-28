@@ -1,5 +1,5 @@
 ﻿{
-    "rq": 27,
+    "rq": 34,
     "make": "Volkswagen",
     "model": "e-Golf",
     "modelYear": 2017,
@@ -26,36 +26,31 @@
     "description": "Green Golf. Card by Andu",
 
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/807304458450632755/eGolf.png?width=1154&height=719",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/807304343086694420/eGolf.png",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/807304342242983956/eGolf1.png",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/807304343828693052/eGolf2.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819923356588834866/egolf.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819923018368155668/egolf.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819923027587629056/egolf1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819923035287977994/egolf2.png",
     "racehud996": "https://media.discordapp.net/attachments/718097267621363744/807304365769621504/eGolf332.png",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/807304350212685874/eGolf323.png",
-    "racehud699": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819923050623401984/egolf969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819923042717007872/egolf699.png",
 
+    "333TopSpeed": 99,
+    "3330to60": 8.4,
+    "333Handling": 76,
 
-    "333TopSpeed": 96,
-    "3330to60": 8.2,
-    "333Handling": 77,
+    "666TopSpeed": 104,
+    "6660to60": 7.9, 
+    "666Handling": 79,
 
+    "996TopSpeed": 110,
+    "9960to60": 7.5,
+    "996Handling": 79,
 
-    "666TopSpeed": 99,
-    "6660to60": 7.6, 
-    "666Handling": 80,
-
-
-    "996TopSpeed": 101,
-    "9960to60": 6.8,
-    "996Handling": 80,
-
-
-    "969TopSpeed": 101,
-    "9690to60": 7.0,
+    "969TopSpeed": 110,
+    "9690to60": 7.9,
     "969Handling": 82,
 
-
-    "699TopSpeed": 0,
-    "6990to60": 0,
-    "699Handling": 0
+    "699TopSpeed": 104,
+    "6990to60": 7.5,
+    "699Handling": 82
 }

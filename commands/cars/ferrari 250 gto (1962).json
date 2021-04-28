@@ -1,5 +1,5 @@
-﻿{
-    "rq": 46,
+{
+    "rq": 48,
     "make": "Ferrari",
     "model": "250 GTO",
     "modelYear": 1962,
@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": ["2021 Spring Collection", "Motorsport"],
     "isPrize": true,
-
 
     "weight": 900,
     "gc": "Low",
@@ -25,37 +24,31 @@
     "ola": 77.78,
     "description": "Expensive car. Card by DodgeDemon",
 
-
-    "card": "https://media.discordapp.net/attachments/715782088271331398/805636306335301642/image0.png?width=1154&height=718",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/805636125829103646/image0.jpg?width=1154&height=717",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/805636159991971850/image0.jpg?width=1154&height=717",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/805636258465710091/image0.jpg?width=1154&height=717",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/805636340376928256/image0.jpg?width=1154&height=717",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/805636318969200680/image0.jpg?width=1154&height=717",
-    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/805636389046976542/image0.jpg?width=1154&height=717",
-
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819416725409759272/1962_Ferrari_250_GTO.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826465349183864892/250GTO.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826465356121243679/250GTO333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826465363310673960/250GTO666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826465385191571516/250GTO996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826465377059995699/250GTO969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826465370189332560/250GTO699.png",
 
     "333TopSpeed": 177,
     "3330to60": 5.1,
-    "333Handling": 75,
+    "333Handling": 74,
 
-
-    "666TopSpeed": 181,
-    "6660to60": 4.8, 
+    "666TopSpeed": 180,
+    "6660to60": 4.9,
     "666Handling": 77,
 
-
-    "996TopSpeed": 185,
-    "9960to60": 4.4,
+    "996TopSpeed": 183,
+    "9960to60": 4.6,
     "996Handling": 77,
 
-
-    "969TopSpeed": 184,
-    "9690to60": 4.6,
+    "969TopSpeed": 183,
+    "9690to60": 4.9,
     "969Handling": 80,
 
-
-    "699TopSpeed": 182,
+    "699TopSpeed": 180,
     "6990to60": 4.6,
     "699Handling": 80
 }

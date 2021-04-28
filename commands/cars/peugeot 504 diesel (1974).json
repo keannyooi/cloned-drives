@@ -1,5 +1,5 @@
 {
-    "rq": 10,
+    "rq": 6,
     "make": "Peugeot",
     "model": "504 Diesel",
     "modelYear": 1974,
@@ -24,27 +24,31 @@
     "ola": 61.54,
     "description": "One of the few Peugeots that crossed the pond. Card by Corentin",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/789544907882102865/504_diesel_yesh_mate.png?width=705&height=439",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/789548884803846164/504St.png?width=705&height=441",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/789548942428733490/5041.png?width=705&height=441",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/789548964445028423/5042.png?width=705&height=441",
-    "racehud996": "",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/789548994799206440/504323.png?width=705&height=441",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824812987817787452/baguette.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824811981746733087/504d_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824811988156547072/504d_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824811998743232602/504d_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824812024251940884/504d_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824812014953037854/504d_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824812005553864764/504d_699.jpg",
 
-    "333TopSpeed": 87,
-    "3330to60": 17.9,
+    "333TopSpeed": 90,
+    "3330to60": 18.5,
     "333Handling": 62,
 
-    "666TopSpeed": 90,
-    "6660to60": 15.8,
+    "666TopSpeed": 96,
+    "6660to60": 17.6,
     "666Handling": 64,
 
-    "969TopSpeed": 92,
-    "9690to60": 13.7,
-    "969Handling": 66,
+	"996TopSpeed": 103,
+    "9960to60": 16.6,
+    "996Handling": 64,
 
-    "699TopSpeed": 0,
-    "6990to60": 0,
-    "699Handling": 0
+    "969TopSpeed": 103,
+    "9690to60": 17.6,
+    "969Handling": 67,
+
+    "699TopSpeed": 96,
+    "6990to60": 16.6,
+    "699Handling": 67
 }

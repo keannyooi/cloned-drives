@@ -1,5 +1,5 @@
 {
-    "rq": 28,
+    "rq": 36,
     "make": "Volvo",
     "model": "V40 2.0T",
     "modelYear": 2001,
@@ -9,7 +9,7 @@
     "handling": 64,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": [],
+    "tags": ["Rest of the World"],
     "isPrize": false,
 
     "weight": 1280,
@@ -22,29 +22,33 @@
     "fuelType": "Petrol",
     "mra": 58.82,
     "ola": 83.75,
-    "description": "When that understeer hits. Card by DodgeDemon ",
+    "description": "New Millenium and New Wagon from the land of Ikea and Johnny. Card by DodgeDemon ",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/795938362255081502/new_drag_king.png",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/795937747713392650/v40.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/795937767162642472/v40_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/795937777651941386/v40_666.jpg",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/795937806156955708/v40_996.jpg",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/795937792453509140/v40_969.jpg",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824639806281482280/V4020.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824640152940183602/V4020.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824640156593291304/V4020-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824640162335817778/V4020-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824640185073270834/V4020-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824640177582243901/V4020-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824640169855680532/V4020-699.png",
 
     "333TopSpeed": 141,
-    "3330to60": 7.4,
+    "3330to60": 7.5,
     "333Handling": 66,
 
     "666TopSpeed": 145,
-    "6660to60": 6.9,
-    "666Handling": 69,
+    "6660to60": 7.1,
+    "666Handling": 68,   
 
-    "996TopSpeed": 149,
-    "9960to60": 6.1,
-    "996Handling": 69,
+    "996TopSpeed": 148,
+    "9960to60": 6.7,
+    "996Handling": 68,
 
-    "969TopSpeed": 149,
-    "9690to60": 6.5,
-    "969Handling": 71
+    "969TopSpeed": 148,
+    "9690to60": 7.1,
+    "969Handling": 71,
+
+    "699TopSpeed": 140,
+    "6990to60": 6.7,
+    "699Handling": 71
 }

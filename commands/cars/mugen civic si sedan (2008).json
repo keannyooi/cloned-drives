@@ -1,5 +1,5 @@
-﻿{
-    "rq": 39,
+{
+    "rq": 38,
     "make": "Mugen",
     "model": "Civic Si Sedan",
     "modelYear": 2008,
@@ -12,10 +12,9 @@
     "tags": [],
     "isPrize": false,
 
-
     "weight": 1335,
     "gc": "Low",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Sedan",
     "tcs": true,
     "abs": true,
@@ -25,37 +24,31 @@
     "ola": 64.99,
     "description": "A small taste of Type-R for the USA. Card by Based",
 
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826064293724160040/Mugen_civic_si_sedan.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826064423135215656/Mugen_Civic_Sedan_Stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826064494182268958/Mugen_Civic_Sedan_1_Star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826064502318432316/Mugen_Civic_Sedan_2_Star.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826064533264793600/Mugen_Civic_Sedan_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826064521524412416/Mugen_Civic_Sedan_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826064508676997180/Mugen_Civic_Sedan_699.png",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/809076554265133056/Mugen_civic_si_sedan.png?width=1154&height=710",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/809076002071642142/Mugen_Civic_Si_Stock.png",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/809076061366255626/Mugen_Civic_Si_1_star.png",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/809076088369971220/Mugen_Civic_Si_2_star.png",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/809076150532833340/Mugen_Civic_Si_332.png",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/809076124697100298/Mugen_Civic_Si_323.png",
-    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/809076106505617469/Mugen_Civic_Si_233.png",
-
-
-    "333TopSpeed": 133,
-    "3330to60": 6.4,
+    "333TopSpeed": 134,
+    "3330to60": 6.5,
     "333Handling": 82,
 
+    "666TopSpeed": 138,
+    "6660to60": 6.1,
+    "666Handling": 84,
 
-    "666TopSpeed": 137,
-    "6660to60": 6.0, 
-    "666Handling": 85,
+    "996TopSpeed": 142,
+    "9960to60": 5.8,
+    "996Handling": 84,
 
-
-    "996TopSpeed": 141,
-    "9960to60": 5.4,
-    "996Handling": 85,
-
-
-    "969TopSpeed": 141,
-    "9690to60": 5.6,
-    "969Handling": 87,
-
+    "969TopSpeed": 142,
+    "9690to60": 6.1,
+    "969Handling": 88,
 
     "699TopSpeed": 138,
-    "6990to60": 5.6,
+    "6990to60": 5.8,
     "699Handling": 88
 }

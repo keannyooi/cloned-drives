@@ -1,5 +1,5 @@
 {
-    "rq": 79,
+    "rq": 77,
     "make": "Aston Martin",
     "model": "Vanquish Zagato",
     "modelYear": 2017,
@@ -24,23 +24,31 @@
     "ola": 92.68,
     "description": "A beautiful Vanquish made even more beautiful by the hands of Zagato. Card by Macan",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/781384689179951134/Aston_Martin_Vanquish_Zagato_2017.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/780716702182539264/Aston_Martin_Vanquish_Zagato_2017_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/780716712416641044/Aston_Martin_Vanquish_Zagato_2017_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/780716722013077514/Aston_Martin_Vanquish_Zagato_2017_666.png",
-    "racehud996": "",
-    "racehud969": "",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/780716787045892106/Aston_Martin_Vanquish_Zagato_2017_699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826462473985064970/vanquishZagatooooo.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826462677605548042/VanquishZagatooo.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826462685155688478/VanquishZagatooo333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826462691433512990/VanquishZagatooo666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826462714960150608/VanquishZagatooo996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826462708404715520/VanquishZagatooo969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826462700381012018/VanquishZagatooo699.png",
 
-    "333TopSpeed": 203,
+    "333TopSpeed": 204,
     "3330to60": 3.3,
     "333Handling": 91,
 
-    "666TopSpeed": 205,
-    "6660to60": 3.1,
-    "666Handling": 95,
+    "666TopSpeed": 206,
+    "6660to60": 3.2,
+    "666Handling": 94,
 
-    "699TopSpeed": 207,
-    "6990to60": 2.9,
+	"996TopSpeed": 209,
+    "9960to60": 3.0,
+    "996Handling": 94,
+
+	"969TopSpeed": 209,
+    "9690to60": 3.2,
+    "969Handling": 98,
+
+    "699TopSpeed": 206,
+    "6990to60": 3.0,
     "699Handling": 98
 }

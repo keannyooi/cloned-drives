@@ -1,5 +1,5 @@
 {
-    "rq": 79,
+    "rq": 77,
     "make": "BMW",
     "model": "M1 Procar",
     "modelYear": 1979,
@@ -9,7 +9,7 @@
     "handling": 94,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": ["Motorsport", "Servers Choice"],
+    "tags": ["MotorSport", "Servers Choice"],
     "isPrize": false,
 
     "weight": 1020,
@@ -22,25 +22,33 @@
     "fuelType": "Petrol",
     "mra": 95.56,
     "ola": 83.72,
-    "description": "",
+    "description": "In 1979 and 1980 the BMW Procar Series was one of the most spectacular racing series in the motorsport world. Card by Keanny",
 
     "card": "https://cdn.discordapp.com/attachments/715782088271331398/751059159578837043/bmw_m1_procar.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/751001250736242698/bmw_m1_procar.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/751001271439327282/bmw_m1_procar_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/751001280406880256/bmw_m1_procar_666.jpg",
-    "racehud996": "",
-    "racehud969": "",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/751001296718397460/bmw_m1_procar_699.jpg",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819536184878301234/m1_procar_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819536193057325076/m1_procar_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819536195922034718/m1_procar_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819536250025279488/m1_procar_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819536236901171240/m1_procar_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819536214645407754/m1_procar_699.jpg",
 
     "333TopSpeed": 196,
-    "3330to60": 4.1,
+    "3330to60": 3.7,
     "333Handling": 97,
 
-    "666TopSpeed": 199,
-    "6660to60": 3.8,
-    "666Handling": 101,
+    "666TopSpeed": 198,
+    "6660to60": 3.5,
+    "666Handling": 100,
 
-    "699TopSpeed": 202,
-    "6990to60": 3.6,
-    "699Handling": 104
+    "699TopSpeed": 198,
+    "6990to60": 3.3,
+    "699Handling": 104,
+
+    "969TopSpeed": 201,
+    "969to60": 3.5,
+    "969Handling": 104,
+
+    "996TopSpeed": 201,
+    "996to60": 3.3,
+    "996Handling": 100
 }

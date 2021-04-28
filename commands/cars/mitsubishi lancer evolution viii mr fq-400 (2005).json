@@ -24,27 +24,31 @@
     "ola": 78.95,
     "description": "Probally the most recognised car to come from Mitsubishi UK. Card by Bnuuy.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/812031309681000489/EVOOOOOOOOO.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/812032042845732884/evo8fq400.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/812032052786364466/evo8fq400333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/812032067905781880/evo8fq400666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/812032107202215936/evo8fq400996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/812032088085758012/evo8fq400969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819936049358700554/EVOOOOOOOOO.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819936121957253170/fq400.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819936125719674890/fq400333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819936132233560114/fq400666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819936161534967898/fq400996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819936151569563688/fq400969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819936141960413234/fq400699.png",
 
     "333TopSpeed": 178,
     "3330to60": 3.3,
     "333Handling": 95,
 
     "666TopSpeed": 181,
-    "6660to60": 3.1,
+    "6660to60": 3.2,
     "666Handling": 98,
 
-    "996TopSpeed": 185,
-    "9960to60": 2.9,
-    "996Handling": 99,
+    "996TopSpeed": 184,
+    "9960to60": 3.0,
+    "996Handling": 98,
 
     "969TopSpeed": 184,
-    "9690to60": 3.0,
-    "969Handling": 102
+    "9690to60": 3.2,
+    "969Handling": 102,
+
+    "699TopSpeed": 181,
+    "6990to60": 3.0,
+    "699Handling": 102
 }

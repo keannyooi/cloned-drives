@@ -1,5 +1,5 @@
 {
-    "rq": 96,
+    "rq": 95,
     "make": "Zenvo",
     "model": "TSR-S",
     "modelYear": 2018,
@@ -9,7 +9,7 @@
     "handling": 97,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Rest of the World"],
+    "tags": ["Rest of the World", "Hypercar"],
     "isPrize": true,
 
     "weight": 1500,
@@ -24,23 +24,31 @@
     "ola": 83.33,
     "description": "The car was black flagged in 2019 at Spa because the officials thought the wing was malfunctioning! Card by DodgeDemon.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/797543217595416586/2018_Zenvo_TSRS.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/797543315074449428/tsr.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/797543341205356575/tsr333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/797549431008133121/tsrs666.png",
-    "racehud996": "",
-    "racehud969": "",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/797549454483914792/tsrs699png.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824680238881308732/tsrs.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824730232576933918/tsr.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824730237551247440/tsr333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824730244207738930/tsr666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824730269940187246/tsr996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824730259911868477/tsr969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824730251967070238/tsr699.png",
 
     "333TopSpeed": 205,
-    "3330to60": 2.5,
-    "333Handling": 101,
+    "3330to60": 2.6,
+    "333Handling": 100,
 
-    "666TopSpeed": 208,
+    "666TopSpeed": 207,
     "6660to60": 2.4,
-    "666Handling": 104,
+    "666Handling": 103,
+    
+    "996TopSpeed": 210,
+    "9960to60": 2.3,
+    "996Handling": 103,
 
-    "699TopSpeed": 210,
+    "969TopSpeed": 210,
+    "9690to60": 2.4,
+    "969Handling": 108,
+    
+    "699TopSpeed": 207,
     "6990to60": 2.3,
     "699Handling": 108
 }

@@ -1,12 +1,12 @@
 {
-    "rq": 19,
+    "rq": 25,
     "make": "Aston Martin",
     "model": "Cygnet",
     "modelYear": 2011,
     "country": "GB",
     "topSpeed": 106,
     "0to60": 11.2,
-    "handling": 69,
+    "handling": 68,
     "driveType": "FWD",
     "tyreType": "Standard",
     "tags": [],
@@ -24,23 +24,31 @@
     "ola": 73.21,
     "description": "Aston Martin's attempt to pass European emission rules, a Scion iQ with extra steps. Card by keanny",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/777050565116821504/aston_martin_cygnet.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/777055820620759050/aston_martin_cygnet.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/777055847968800768/aston_martin_cygnet_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/777055859716259840/aston_martin_cygnet_666.jpg",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/777055872747962388/aston_martin_cygnet_969.jpg",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819383041910112307/cygnet.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819831435186798612/cygnet_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819831442279759902/cygnet_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819831447757258812/cygnet_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819831479479566336/cygnet_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819831469115441192/cygnet_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819831457895284776/cygnet_699.jpg",
 
-    "333TopSpeed": 109,
-    "3330to60": 10.4,
-    "333Handling": 71,
+    "333TopSpeed": 111,
+    "3330to60": 10.6,
+    "333Handling": 70,
 
-    "666TopSpeed": 112,
-    "6660to60": 9.5,
-    "666Handling": 74,
+    "666TopSpeed": 116,
+    "6660to60": 10.1,
+    "666Handling": 72,
 
-    "969TopSpeed": 115,
-    "9690to60": 8.7,
-    "969Handling": 76
+	"996TopSpeed": 121,
+    "9960to60": 9.5,
+    "996Handling": 72,
+
+    "969TopSpeed": 121,
+    "9690to60": 10.1,
+    "969Handling": 75,
+
+	"699TopSpeed": 116,
+    "6990to60": 9.5,
+    "699Handling": 75
 }

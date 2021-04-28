@@ -1,5 +1,5 @@
 ﻿{
-    "rq": 39,
+    "rq": 37,
     "make": "Subaru",
     "model": "Legacy 2.5 GT",
     "modelYear": 1993,
@@ -9,7 +9,7 @@
     "handling": 71,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": ["2021 Spring Collection"],
+    "tags": [],
     "isPrize": false,
 
 
@@ -26,36 +26,31 @@
     "description": "Blue filter. Card by Havvy",
 
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/800046414000029696/SubaruLegacy2.5GT.png?width=1086&height=676",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/800046497273741342/000lgc.png?width=1086&height=676",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/800046510284210197/111lgc.png?width=1086&height=676",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/800046516030013460/222lgc.png?width=1086&height=676",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/800046532136009769/332lgc.png?width=1086&height=676",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/800046523286683699/323lgc.png?width=1086&height=676",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/823446260816019496/SubaruLegacy2.5GT.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823446310651822140/000_leg2.5.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823446318546419722/111_leg2.5.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823446322594054144/222_leg2.5.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823446339572596736/332_leg2.5.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823446334061019156/323_leg2.5.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823446329791217684/233_leg2.5.png",
 
+"333TopSpeed": 115,
+    "3330to60": 8.2,
+    "333Handling": 73,
 
-    "333TopSpeed": 113,
-    "3330to60": 8.0,
-    "333Handling": 74,
-
-
-    "666TopSpeed": 116,
-    "6660to60": 7.5, 
+    "666TopSpeed": 119,
+    "6660to60": 7.7, 
     "666Handling": 76,
 
+    "996TopSpeed": 124,
+    "9960to60": 7.3,
+    "996Handling": 76,
 
-    "996TopSpeed": 119,
-    "9960to60": 6.7,
-    "996Handling": 77,
-
-
-    "969TopSpeed": 119,
-    "9690to60": 6.9,
+    "969TopSpeed": 124,
+    "9690to60": 7.7,
     "969Handling": 79,
 
-
-    "699TopSpeed": 0,
-    "6990to60": 0,
-    "699Handling": 0
+    "699TopSpeed": 119,
+    "6990to60": 7.3,
+    "699Handling": 79
 }

@@ -1,19 +1,18 @@
 ﻿{
-    "rq": 90,
-    "make": "Mercedes-AMG",
+    "rq": 85,
+    "make": ["Mercedes-AMG", "Mercedes-Benz"],
     "model": "E 63 S 4MATIC+ Wagon",
     "modelYear": 2020,
     "country": "DE",
-    "topSpeed": 180,
-    "0to60": 3.0,
-    "handling": 90,
+    "topSpeed": 186,
+    "0to60": 3.1,
+    "handling": 89,
     "driveType": "4WD",
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
 
-
-    "weight": 2143,
+    "weight": 2113,
     "gc": "Low",
     "seatCount": 5,
     "bodyStyle": "Wagon",
@@ -21,41 +20,35 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 68.18,
-    "ola": 81.25,
+    "mra": 72.94,
+    "ola": 77.42,
     "description": "The logic when a family car cant pass bumps. Card by DodgeDemon",
 
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826712668144402432/AMGE63S4MATICWagon.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826712714159325194/000_e63wagon.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826712720010248192/111_e63wagon.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826712725999714305/222_e63wagon.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826712744337211432/332_e63wagon.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826712737991753788/323_e63wagon.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826712731855355934/233_e63wagon.png",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/793933497047580672/2020_AMG_E63S_4MATIC_Wagon.png?width=1154&height=718",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/793941204253016154/BlueWagonE63SSt.png",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/793941223055818762/BlueWagonE63S1.png",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/793941246560698368/BlueWagonE63S2.png",
-    "racehud996": "",
-    "racehud969": "",
-    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/793941263530590228/BlueWagonE63S233.png",
+    "333TopSpeed": 189,
+    "3330to60": 2.9,
+    "333Handling": 92,
 
+    "666TopSpeed": 192,
+    "6660to60": 2.8,
+    "666Handling": 95,
 
-    "333TopSpeed": 183,
-    "3330to60": 2.8,
-    "333Handling": 93,
+    "996TopSpeed": 194,
+    "9960to60": 3.6,
+    "996Handling": 95,
 
+    "969TopSpeed": 194,
+    "9690to60": 2.8,
+    "969Handling": 99,
 
-    "666TopSpeed": 186,
-    "6660to60": 2.6,
-    "666Handling": 96,
-
-
-    "996TopSpeed": 0,
-    "9960to60": 0,
-    "996Handling": 0,
-
-
-    "969TopSpeed": 0,
-    "9690to60": 0,
-    "969Handling": 0,
-
-
-    "699TopSpeed": 188,
-    "6990to60": 2.5,
-    "699Handling": 100
+    "699TopSpeed": 192,
+    "6990to60": 2.6,
+    "699Handling": 99
 }

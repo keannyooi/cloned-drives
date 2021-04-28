@@ -1,5 +1,5 @@
 ﻿{
-    "rq": 15,
+    "rq": 20,
     "make": "Volvo",
     "model": "1800ES",
     "modelYear": 1972,
@@ -9,7 +9,7 @@
     "handling": 59,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": [],
+    "tags": ["Rest of the World"],
     "isPrize": false,
 
 
@@ -26,36 +26,31 @@
     "description": "Classic beauty. Card by Connor",
 
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/802645198139293696/F.Volvo1800ES.png?width=1154&height=718",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/802645305773260840/F.Volvo1800ES.png",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/802645357347078174/F.Volvo1800ES-1star.png",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/802645388955353118/F.Volvo1800ES-2star.png",
-    "racehud996": "",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/802645416646410271/F.Volvo1800ES-969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820696398105542686/E.Volvo1800ES.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820696557904855060/E.Volvo1800ES.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820696569875398706/E.Volvo1800ES-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820696577583611924/E.Volvo1800ES-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820696615312556052/E.Volvo1800ES-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820696608106348554/E.Volvo1800ES-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820696592746151956/E.Volvo1800ES-699.png",
 
-
-    "333TopSpeed": 119,
-    "3330to60": 10.5,
+    "333TopSpeed": 120,
+    "3330to60": 10.7,
     "333Handling": 61,
 
+    "666TopSpeed": 125,
+    "6660to60": 10.2,
+    "666Handling": 63,   
 
-    "666TopSpeed": 122,
-    "6660to60": 9.7, 
-    "666Handling": 63,
+    "996TopSpeed": 129,
+    "9960to60": 9.6,
+    "996Handling": 63,
 
-
-    "996TopSpeed": 0,
-    "9960to60": 0,
-    "996Handling": 0,
-
-
-    "969TopSpeed": 125,
-    "9690to60": 8.9,
+    "969TopSpeed": 129,
+    "9690to60": 10.2,
     "969Handling": 65,
 
-
-    "699TopSpeed": 0,
-    "6990to60": 0,
-    "699Handling": 0
+    "699TopSpeed": 125,
+    "6990to60": 9.6,
+    "699Handling": 65
 }

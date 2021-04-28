@@ -1,5 +1,5 @@
 {
-    "rq": 75,
+    "rq": 76,
     "make": "BMW",
     "model": "X5 M",
     "modelYear": 2009,
@@ -24,31 +24,31 @@
     "ola": 74.42,
     "description": "Card by Spence.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/799302523239399467/image0.jpg",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/799302595269230592/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/799302757924077568/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/799302834700550154/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/799302905278627900/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/799302883496427580/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/799302861702955018/image0.jpg",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/821449318555713616/image0.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821449428669956137/image0.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821449475124887642/image0.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821449494574923776/image0.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821449538798747668/image0.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821449517882408960/image0.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821449570105819177/image0.jpg",
 
-    "333TopSpeed": 159,
+    "333TopSpeed": 158,
     "3330to60": 4.1,
     "333Handling": 84,
 
-    "666TopSpeed": 163,
-    "6660to60": 3.8,
-    "666Handling": 87,
+    "666TopSpeed": 162,
+    "6660to60": 3.9,
+    "666Handling": 86,
 
-    "996TopSpeed": 167,
-    "9960to60": 3.5,
-    "996Handling": 87,
+    "996TopSpeed": 165,
+    "9960to60": 3.7,
+    "996Handling": 86,
 
-    "969TopSpeed": 167,
-    "9690to60": 3.6,
+    "969TopSpeed": 165,
+    "9690to60": 3.9,
     "969Handling": 90,
 
-    "699TopSpeed": 163,
-    "6990to60": 3.6,
+    "699TopSpeed": 162,
+    "6990to60": 3.7,
     "699Handling": 90
 }

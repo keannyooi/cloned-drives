@@ -1,5 +1,5 @@
 {
-    "rq": 46,
+    "rq": 50,
     "make": "Citroen",
     "model": "Xantia Activa V6",
     "modelYear": 1994,
@@ -24,23 +24,31 @@
     "ola": 85.71,
     "description": "Your best bet for dodging an oncoming moose while driving at high speeds on Swedish roads. Card by havvy",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/759050684451913738/xantia.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/759050398312038410/citroen_xantia_activa_v6.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/759050519851040818/citroen_xantia_activa_v6_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/759050533214093322/citroen_xantia_activa_v6_666.jpg",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/759050551941267476/citroen_xantia_activa_v6_969.jpg",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824739046239895572/Xantia.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824739658940153909/XaXa.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824739668196720680/XaXa1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824739671341924352/XaXa2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824739693038927882/XaXa996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824739686010060850/XaXa969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824739678368170044/XaXa699.png",
 
     "333TopSpeed": 147,
     "3330to60": 7.3,
-    "333Handling": 87,
+    "333Handling": 88,
 
-    "666TopSpeed": 151,
-    "6660to60": 6.8,
+    "666TopSpeed": 150,
+    "6660to60": 6.9,
     "666Handling": 91,
 
-    "969TopSpeed": 155,
-    "9690to60": 6.3,
-    "969Handling": 94
+	"996TopSpeed": 154,
+    "9960to60": 6.5,
+    "996Handling": 91,
+
+    "969TopSpeed": 154,
+    "9690to60": 6.9,
+    "969Handling": 94,
+
+	"699TopSpeed": 150,
+    "6990to60": 6.5,
+    "699Handling": 94
 }

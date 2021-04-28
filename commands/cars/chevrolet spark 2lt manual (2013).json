@@ -1,5 +1,5 @@
-﻿{
-    "rq": 19,
+{
+    "rq": 26,
     "make": "Chevrolet",
     "model": "Spark 2LT Manual",
     "modelYear": 2013,
@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": ["2021 Spring Collection"],
     "isPrize": false,
-
 
     "weight": 1069,
     "gc": "Medium",
@@ -25,37 +24,31 @@
     "ola": 65.88,
     "description": "Let’s be honest, manual is the only choice. Card by Connor",
 
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819539763618381844/E.ChevySpark2LTMT.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819539850926489650/E.ChevySpark2LTMT.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819539867221360670/E.ChevySpark2LTMT-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819539873898954792/E.ChevySpark2LTMT-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819539895898341406/E.ChevySpark2LTMT-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819539888058662922/E.ChevySpark2LTMT-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819539882019258448/E.ChevySpark2LTMT-699.png",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/811661625245302784/F.ChevySpark2LTMT.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/811661731125264384/F.ChevySpark2LTMT.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/811661746790989894/F.ChevySpark2LTMT-1star.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/811661756808036443/F.ChevySpark2LTMT-2star.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/811661770443325500/F.ChevySpark2LTMT-969.png",
-    "racehud699": "",
-
-
-    "333TopSpeed": 108,
-    "3330to60": 10.4,
+    "333TopSpeed": 110,
+    "3330to60": 10.6,
     "333Handling": 73,
 
+    "666TopSpeed": 115,
+    "6660to60": 10.1, 
+    "666Handling": 76,
 
-    "666TopSpeed": 111,
-    "6660to60": 9.6, 
-    "666Handling": 77,
+    "996TopSpeed": 120,
+    "9960to60": 9.5,
+    "996Handling": 76,
 
-
-    "996TopSpeed": 0,
-    "9960to60": 0,
-    "996Handling": 0,
-
-
-    "969TopSpeed": 113,
-    "9690to60": 8.8,
+    "969TopSpeed": 120,
+    "9690to60": 10.1,
     "969Handling": 79,
 
-
-    "699TopSpeed": 0,
-    "6990to60": 0,
-    "699Handling": 0
+    "699TopSpeed": 115,
+    "6990to60": 9.5,
+    "699Handling": 79
 }

@@ -1,5 +1,5 @@
-﻿{
-    "rq": 58,
+{
+    "rq": 57,
     "make": "Chevrolet",
     "model": "Corvette",
     "modelYear": 1997,
@@ -12,10 +12,9 @@
     "tags": ["2021 Spring Collection"],
     "isPrize": false,
 
-
     "weight": 1459,
     "gc": "Low",
-    "seatCount":2,
+    "seatCount": 2,
     "bodyStyle": "Coupe",
     "tcs": true,
     "abs": true,
@@ -25,37 +24,31 @@
     "ola": 90.35,
     "description": "Soft yellow. Card by Havvy",
 
-
-    "card": "https://media.discordapp.net/attachments/715782088271331398/799755977318596628/ChevroletCorvette.png?width=1086&height=676",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/799756020292911114/000C5.png?width=1083&height=676",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/799756028244656198/111C5.png?width=1083&height=676",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/799756044070027295/222C5.png?width=1083&height=676",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/799756074194173982/332C5.png?width=1083&height=676",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/799756064064798780/323C5.png?width=1083&height=676",
-    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/799756054493528064/233C5.png?width=1083&height=676",
-
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/822620512894713886/ChevroletCorvette.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/822620561606967346/000_crv.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/822620567093903390/111_crv.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/822620573934682112/222_crv.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/822620590727757854/332_crv.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/822620584030371890/323_crv.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/822620579127099423/233_crv.png",
 
     "333TopSpeed": 175,
-    "3330to60": 4.6,
+    "3330to60": 4.7,
     "333Handling": 84,
 
-
     "666TopSpeed": 178,
-    "6660to60": 4.3, 
-    "666Handling": 87,
-
+    "6660to60": 4.4, 
+    "666Handling": 86,
 
     "996TopSpeed": 181,
-    "9960to60": 3.9,
-    "996Handling": 87,
-
+    "9960to60": 4.2,
+    "996Handling": 86,
 
     "969TopSpeed": 181,
-    "9690to60": 4.0,
+    "9690to60": 4.4,
     "969Handling": 90,
 
-
     "699TopSpeed": 178,
-    "6990to60": 4.0,
+    "6990to60": 4.2,
     "699Handling": 90
 }

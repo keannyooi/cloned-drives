@@ -1,5 +1,5 @@
 {
-    "rq": 34,
+    "rq": 25,
     "make": "GMC",
     "model": "TopKick C4500",
     "modelYear": 2005,
@@ -22,25 +22,33 @@
     "fuelType": "Petrol",
     "mra": 0.00,
     "ola": 65.28,
-    "description": "A dump truck converted to a massive pickup by Monroe Truck Equipment for reasons people outside America don't know. Card by Olimato",
+    "description": "A dump truck converted to a massive pickup by Monroe Truck Equipment for reasons people outside America don't know. Card by keanny",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/759258031179169812/topkick.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/759257761795801130/gmc_topkick_c4500.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/759257807911649310/gmc_topkick_c4500_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/759257817092980766/gmc_topkick_c4500_666.jpg",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/759257836554289182/gmc_topkick_c4500_969.jpg",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/833232979862093834/only_in_america.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/833234225812733952/topkek_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/833234234130956298/topkek_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/833234239108546610/topkek_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/833234261364310026/topkek_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/833234254493384714/topkek_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/833234249322201108/topkek_699.jpg",
 
-    "333TopSpeed": 77,
-    "3330to60": 13.1,
+    "333TopSpeed": 82,
+    "3330to60": 13.7,
     "333Handling": 57,
 
-    "666TopSpeed": 80,
-    "6660to60": 11.8,
+    "666TopSpeed": 89,
+    "6660to60": 13.0,
     "666Handling": 59,
 
-    "969TopSpeed": 82,
-    "9690to60": 10.6,
-    "969Handling": 61
+	"996TopSpeed": 96,
+    "9960to60": 12.2,
+    "996Handling": 59,
+
+    "969TopSpeed": 96,
+    "9690to60": 13.0,
+    "969Handling": 61,
+
+	"699TopSpeed": 89,
+    "6990to60": 12.2,
+    "699Handling": 61
 }

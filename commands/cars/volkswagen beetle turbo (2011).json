@@ -1,0 +1,54 @@
+{
+    "rq": 49,
+    "make": "Volkswagen",
+    "model": "Beetle Turbo",
+    "modelYear": 2011,
+    "country": "DE",
+    "topSpeed": 138,
+    "0to60": 6.7,
+    "handling": 76,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Hot Hatch"],
+    "isPrize": false,
+
+    "weight": 1433,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 64.20,
+    "ola": 87.73,
+    "description": "A puffed-up GTI. Card by Andu",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820196484544069632/BeetleTMy.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820196571203239946/BeetleTurbo.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820196578492153856/BeetleTurbo1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820196585417736202/BeetleTurbo2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820196612310564874/BeetleTurbo996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820196603264237568/BeetleTurbo969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820196592443195402/BeetleTurbo699.png",
+
+    "333TopSpeed": 142,
+    "3330to60": 6.4,
+    "333Handling": 79,
+
+    "666TopSpeed": 146,
+    "6660to60": 6.0, 
+    "666Handling": 81,
+
+    "996TopSpeed": 149,
+    "9960to60": 5.7,
+    "996Handling": 81,
+
+    "969TopSpeed": 149,
+    "9690to60": 6.0,
+    "969Handling": 84,
+
+    "699TopSpeed": 146,
+    "6990to60": 5.7,
+    "699Handling": 84
+}

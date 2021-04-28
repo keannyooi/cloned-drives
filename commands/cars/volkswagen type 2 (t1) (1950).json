@@ -1,5 +1,5 @@
 {
-    "rq": 10,
+    "rq": 1,
     "make": "Volkswagen",
     "model": "Type 2 (T1)",
     "modelYear": 1950,
@@ -9,7 +9,7 @@
     "handling": 57,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": [],
+    "tags": ["Silver Screen"],
     "isPrize": true,
 
 
@@ -26,36 +26,32 @@
     "description": "Hippie van. Card by Andu",
 
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/789563950949597204/T1butcut.png?width=705&height=439",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/788733315052994560/T1st.png?width=705&height=441",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/788733343897223208/t11.png?width=705&height=441",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/788733368425513000/t12.png?width=705&height=441",
-    "racehud996": "",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/788733411619504148/T1323.png?width=705&height=441",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/822058899565576222/T157.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/822059750124027914/T1.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/822059755681349672/T1-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/822059760802201630/T1-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/822059789260554250/T1-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/822059781916196934/T1-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/822059776413794314/T1-699.png",
 
 
-    "333TopSpeed": 62,
-    "3330to60": 70.0,
+    "333TopSpeed": 69,
+    "3330to60": 71.3,
     "333Handling": 59,
 
+    "666TopSpeed": 77,
+    "6660to60": 67.5,
+    "666Handling": 61,   
 
-    "666TopSpeed": 64,
-    "6660to60": 65.0,
-    "666Handling": 61,
+    "996TopSpeed": 86,
+    "9960to60": 63.8,
+    "996Handling": 61,
 
-
-    "996TopSpeed": 0,
-    "9960to60": 0,
-    "996Handling": 0,
-
-
-    "969TopSpeed": 66,
-    "9690to60": 60.0,
+    "969TopSpeed": 86,
+    "9690to60": 67.5,
     "969Handling": 63,
 
-
-    "699TopSpeed": 0,
-    "6990to60": 0,
-    "699Handling": 0
+    "699TopSpeed": 77,
+    "6990to60": 63.8,
+    "699Handling": 63
 }

@@ -1,5 +1,5 @@
 {
-    "rq": 99,
+    "rq": 100,
     "make": "Bugatti",
     "model": "Chiron",
     "modelYear": 2016,
@@ -24,13 +24,13 @@
     "ola": 83.33,
     "description": "A worthy successor to the Veyron. Card by Bnuuy",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/807526314012573696/Bnuuy_CHIRRRRRRRRRRONNNNNNNNN.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/807526451061981194/BugattiChiron000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/807526499951181844/BugattiChiron333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/807526542904786944/BugattiChiron666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/807526618670563338/BugattiChiron996.png",
-    "racehud969": "",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/807526586856243280/BugattiChiron699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819248835247079485/Chiron.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819560662630924308/chiron.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819560681149038602/chiron333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819560692218462268/chiron666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819560763294613525/chiron996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819560735678922822/chiron969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819560711059537961/chiron699.png",
 
     "333TopSpeed": 263,
     "3330to60": 2.3,
@@ -40,11 +40,15 @@
     "6660to60": 2.2,
     "666Handling": 97,
 
-    "996TopSpeed": 269,
+    "996TopSpeed": 267,
     "9960to60": 2.0,
-    "996Handling": 98,
+    "996Handling": 97,
 
-    "699TopSpeed": 267,
-    "6990to60": 2.1,
+	"969TopSpeed": 267,
+    "9690to60": 2.2,
+    "969Handling": 101,
+
+    "699TopSpeed": 265,
+    "6990to60": 2.0,
     "699Handling": 101
 }

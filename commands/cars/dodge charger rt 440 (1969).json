@@ -1,5 +1,5 @@
 {
-    "rq": 35,
+    "rq": 44,
     "make": "Dodge",
     "model": "Charger RT 440",
     "modelYear": 1969,
@@ -24,27 +24,31 @@
     "ola": 73.68,
     "description": "Card by DodgeDemon",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/807279490476277770/1969_Dodge_Charger_RT_440.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/807279578385088565/DodgeChargerRT440000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/807279634118737961/DodgeChargerRT440333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/807279680527794206/DodgeChargerRT440666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/807279793526669402/DodgeChargerRT440996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/807279783485898762/DodgeChargerRT440969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/825824887532683334/Charger.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/825826098402951218/Charger.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/825826106120208414/Charger1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/825826111703351306/Charger2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/825826137363054632/Charger996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/825826130825052220/Charger969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/825826118966837358/Charger699.png",
 
-    "333TopSpeed": 134,
+    "333TopSpeed": 135,
     "3330to60": 5.4,
     "333Handling": 69,
 
-    "666TopSpeed": 137,
-    "6660to60": 5.2,
-    "666Handling": 72,
+    "666TopSpeed": 139,
+    "6660to60": 5.1,
+    "666Handling": 71,
 
-    "996TopSpeed": 141,
-    "9960to60": 4.9,
-    "996Handling": 73,
+    "996TopSpeed": 143,
+    "9960to60": 4.8,
+    "996Handling": 71,
 
-	"969TopSpeed": 140,
-    "9690to60": 5.0,
-    "969Handling": 74
+	"969TopSpeed": 143,
+    "9690to60": 5.1,
+    "969Handling": 74,
+
+	"699TopSpeed": 139,
+    "6990to60": 4.8,
+    "699Handling": 74
 }

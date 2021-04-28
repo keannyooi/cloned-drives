@@ -9,7 +9,7 @@
     "handling": 85,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["2021 Spring Collection"],
+    "tags": [],
     "isPrize": false,
 
 
@@ -26,36 +26,32 @@
     "description": "Affordable fun 90s Porsche . Card by Spence",
 
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/796379898796310568/image0.png?width=642&height=400",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/796380069144559626/1998_Porsche_Boxster_2.5.png?width=642&height=400",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/796380110801731584/1998_Porsche_Boxster_2.5_333.png?width=652&height=406",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/796380119093477426/1998_Porsche_Boxster_2.5_666.png?width=652&height=406",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/796381922267889694/1998_Porsche_Boxster_2.5_996.png?width=652&height=406",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/796380143324626954/1998_Porsche_Boxster_2.5_969.png?width=652&height=406",
-    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/796380136395112508/1998_Porsche_Boxster_2.5_699.png?width=652&height=406",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/823384783216050176/image0.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823386208457588736/boxster_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823386221765722122/boxster_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823386227780485170/boxster_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823386259149684766/boxster_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823386248081178664/boxster_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823386238920163328/boxster_699.jpg",
 
 
-    "333TopSpeed": 156,
-    "3330to60": 5.7,
+    "333TopSpeed": 155,
+    "3330to60": 5.8,
     "333Handling": 88,
 
+    "666TopSpeed": 159,
+    "6660to60": 5.5, 
+    "666Handling": 91,
 
-    "666TopSpeed": 160,
-    "6660to60": 5.4,
-    "666Handling": 90,
-
-
-    "996TopSpeed": 164,
-    "9960to60": 4.9,
+    "996TopSpeed": 162,
+    "9960to60": 5.2,
     "996Handling": 91,
 
+    "969TopSpeed": 162,
+    "9690to60": 5.5,
+    "969Handling": 94,
 
-    "969TopSpeed": 163,
-    "9690to60": 5.3,
-    "969Handling": 92,
-
-
-    "699TopSpeed": 162,
-    "6990to60": 5.3,
-    "699Handling": 93
+    "699TopSpeed": 159,
+    "6990to60": 5.2,
+    "699Handling": 94
 }

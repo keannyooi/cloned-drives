@@ -1,5 +1,5 @@
 {
-    "rq": 54,
+    "rq": 55,
     "make": "Dodge",
     "model": "Challenger SRT8",
     "modelYear": 2009,
@@ -24,31 +24,31 @@
     "ola": 87.50,
     "description": "Withs a striking red color and a boxy shape, it stands out from the other cars. Card by spence",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/794638512460136448/image0.jpg",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/794638290757091348/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/794638315952275476/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/794638345853468682/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/794638430114021426/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/794638376677408778/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/794638402661384202/image0.jpg",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826430492567273492/SRT8.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826430585987530772/SRT8.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826430593029373972/SRT8333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826430601006415892/SRT8666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826430627561734214/SRT8996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826430618945454121/SRT8969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826430609773297665/SRT8699.png",
 
     "333TopSpeed": 175,
-    "3330to60": 4.5,
+    "3330to60": 4.6,
     "333Handling": 81,
 
-    "666TopSpeed": 179,
+    "666TopSpeed": 178,
     "6660to60": 4.3,
     "666Handling": 83,
 
-    "996TopSpeed": 183,
-    "9960to60": 3.9,
-    "996Handling": 84,
+    "996TopSpeed": 181,
+    "9960to60": 4.1,
+    "996Handling": 83,
 
-	"969TopSpeed": 182,
-    "9690to60": 4.0,
-    "969Handling": 86,
+	"969TopSpeed": 181,
+    "9690to60": 4.3,
+    "969Handling": 87,
 
-    "699TopSpeed": 180,
-    "6990to60": 4.0,
+    "699TopSpeed": 178,
+    "6990to60": 4.1,
     "699Handling": 87
 }

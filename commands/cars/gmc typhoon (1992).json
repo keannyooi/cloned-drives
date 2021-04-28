@@ -1,5 +1,5 @@
-﻿{
-    "rq": 62,
+{
+    "rq": 54,
     "make": "GMC",
     "model": "Typhoon",
     "modelYear": 1992,
@@ -12,10 +12,9 @@
     "tags": ["2021 Spring Collection", "Wild Ride"],
     "isPrize": false,
 
-
     "weight": 1734,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Suv",
     "tcs": false,
     "abs": true,
@@ -25,37 +24,31 @@
     "ola": 75.86,
     "description": "One of the first sport trucks. Card by Connor",
 
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/821027581914382367/B.GMCTyphoon.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821027700033978418/B.GMCTyphoon.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821027723375935568/B.GMCTyphoon-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821027743654346772/B.GMCTyphoon-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821027812572004352/B.GMCTyphoon-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821027788701958154/B.GMCTyphoon-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821027764604764181/B.GMCTyphoon-699.png",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/802112074012295188/B.GMCTyphoon.png?width=1154&height=718",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/802111728400990248/B.GMCTyphoon-hud.png",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/802111781564579870/B.GMCTyphoon-hud-1star.png",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/802111823678930944/B.GMCTyphoon-hud-2star.png",
-    "racehud996": "",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/802111923658817556/B.GMCTyphoon-hud-969.png",
-    "racehud699": "",
-
-
-    "333TopSpeed": 128,
+    "333TopSpeed": 129,
     "3330to60": 5.5,
     "333Handling": 72,
 
-
-    "666TopSpeed": 131,
+    "666TopSpeed": 133,
     "6660to60": 5.2, 
     "666Handling": 75,
 
+    "996TopSpeed": 137,
+    "9960to60": 4.9,
+    "996Handling": 75,
 
-    "996TopSpeed": 0,
-    "9960to60": 0,
-    "996Handling": 0,
+    "969TopSpeed": 137,
+    "9690to60": 5.2,
+    "969Handling": 78,
 
-
-    "969TopSpeed": 133,
-    "9690to60": 4.8,
-    "969Handling": 77,
-
-
-    "699TopSpeed": 0,
-    "6990to60": 0,
-    "699Handling": 0
+    "699TopSpeed": 133,
+    "6990to60": 4.9,
+    "699Handling": 78
 }

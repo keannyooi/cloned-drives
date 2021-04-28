@@ -1,5 +1,5 @@
 {
-    "rq": 25,
+    "rq": 28,
     "make": "Honda",
     "model": "Civic 1.5 VTi",
     "modelYear": 1991,
@@ -24,23 +24,31 @@
     "ola": 76.19,
     "description": "This EG3 Civic harnesses the power of VTEC to deliver driving fun. Card by havvy",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/794659506705399828/HondaCivic1.5VTi.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/794937797081432064/000cvc.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/794937805109329940/111cvc.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/794937816463048754/222cvc.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/794937827229958154/323cvc.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/822230105836879872/HondaCivic1.5VTi.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/822230259658915881/000_kivik.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/822230266818199552/111_kivik.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/822230268550447124/222_kivik.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/822230286031913022/332_kivik.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/822230282487726120/323_kivik.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/822230275911843880/233_kivik.png",
 
     "333TopSpeed": 133,
-    "3330to60": 7.8,
+    "3330to60": 8.0,
     "333Handling": 80,
 
     "666TopSpeed": 137,
-    "6660to60": 7.3,
+    "6660to60": 7.6,
     "666Handling": 82,
 
+	"996TopSpeed": 141,
+    "9960to60": 7.1,
+    "996Handling": 82,
+
     "969TopSpeed": 141,
-    "9690to60": 6.7,
-    "969Handling": 85
+    "9690to60": 7.6,
+    "969Handling": 85,
+
+	"699TopSpeed": 137,
+    "6990to60": 7.1,
+    "699Handling": 85
 }

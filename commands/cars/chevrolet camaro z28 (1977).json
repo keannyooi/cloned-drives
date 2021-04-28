@@ -1,5 +1,5 @@
 {
-    "rq": 20,
+    "rq": 16,
     "make": "Chevrolet",
     "model": "Camaro Z28",
     "modelYear": 1977,
@@ -24,28 +24,31 @@
     "ola": 72.09,
     "description": "Card by Johnny.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/796516149000667186/Chevrolet-Camaro-Z-28-77.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/796514504053227520/Chevrolet-Camaro-Z-28-77.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/796514511678734386/Chevrolet-Camaro-Z-28-77-1-star.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/796514515763462194/Chevrolet-Camaro-Z-28-77-2-star.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/796514638783053863/Chevrolet-Camaro-Z-28-77-332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/796514529299005471/Chevrolet-Camaro-Z-28-77-323.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/821716494357364786/cate-test.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821716583504281600/Chevrolet-Camaro-Z-28-77.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821716588776390656/Chevrolet-Camaro-Z-28-77-1-star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821716593905893426/Chevrolet-Camaro-Z-28-77-2-star.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821716618655694848/Chevrolet-Camaro-Z-28-77-332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821716611546218526/Chevrolet-Camaro-Z-28-77-323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821716602957201418/Chevrolet-Camaro-Z-28-77-233.png",
 
-    "333TopSpeed": 108,
-    "3330to60": 8.3,
-    "333Handling": 70,
+    "333TopSpeed": 120,
+    "3330to60": 8.2,
+    "333Handling": 69,
 
-    "666TopSpeed": 111,
-    "6660to60": 8.0,
-    "666Handling": 73,
+    "666TopSpeed": 115,
+    "6660to60": 7.7,
+    "666Handling": 71,
 
-    "996TopSpeed": 116,
-    "9960to60": 7.4,
-    "996Handling": 73,
+    "996TopSpeed": 120,
+    "9960to60": 7.3,
+    "996Handling": 71,
 
-    "969TopSpeed": 114,
+    "969TopSpeed": 120,
     "9690to60": 7.7,
-    "969Handling": 76
+    "969Handling": 74,
 
+	"699TopSpeed": 115,
+    "6990to60": 7.3,
+    "699Handling": 74
 }

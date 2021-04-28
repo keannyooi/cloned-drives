@@ -24,23 +24,32 @@
     "ola": 60.00,
     "description": "",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/786644204033933312/image0.jpg",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/786380767193727006/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/786380785787731968/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/786380813259898920/image0.jpg",
+    "card": "",
+    "racehud000": "",
+    "racehud333": "",
+    "racehud666": "",
     "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/786380869011112006/image0.jpg",
+    "racehud969": "",
     "racehud699": "",
 
-    "333TopSpeed": 141,
-    "3330to60": 7.2,
-    "333Handling": 75,
+    "333TopSpeed": ,
+    "3330to60": ,
+    "333Handling": ,
 
-    "666TopSpeed": 144,
-    "6660to60": 6.7,
-    "666Handling": 77,
+    "666TopSpeed": ,
+    "6660to60": ,
+    "666Handling": ,
 
-    "969TopSpeed": 147,
-    "9690to60": 6.3,
-    "969Handling": 80
+    "996TopSpeed": ,
+    "9960to60": ,
+    "996Handling": ,
+
+    "969TopSpeed": ,
+    "9690to60": ,
+    "969Handling": ,
+
+    "699TopSpeed": ,
+    "6990to60": ,
+    "699Handling": 
+
 }

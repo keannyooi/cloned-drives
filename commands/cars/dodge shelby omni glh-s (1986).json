@@ -1,5 +1,5 @@
 {
-    "rq": 34,
+    "rq": 36,
     "make": "Dodge",
     "model": "Shelby Omni GLH-S",
     "modelYear": 1986,
@@ -22,25 +22,33 @@
     "fuelType": "Petrol",
     "mra": 59.46,
     "ola": 78.79,
-    "description": "A dodge made by Shelby :how:. Card by PrestonLK.",
+    "description": "A Dodge made by Shelby :how:. Card by PrestonLK.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/809495033522028544/Omni_GLHS.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/809494164759904256/000_complete_glhs.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/809494194506039347/333_complete_glhs.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/809494225623449660/666_complete_glhs.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/809494261049065502/969_needs_corners_removed.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/823504996430905354/acronym.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823506167656742922/omni_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823506174808555560/omni_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823506180588437514/omni_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823506215651901460/omni_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823506202267746324/omni_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823506193217224744/omni_699.jpg",
 
     "333TopSpeed": 134,
-    "3330to60": 6.1,
+    "3330to60": 6.3,
     "333Handling": 79,
 
-    "666TopSpeed": 137,
-    "6660to60": 5.6,
-    "666Handling": 82,
+    "666TopSpeed": 138,
+    "6660to60": 5.9,
+    "666Handling": 81,
 
-    "969TopSpeed": 140,
-    "9690to60": 5.4,
-    "969Handling": 84
+	"996TopSpeed": 142,
+    "9960to60": 5.6,
+    "996Handling": 81,
+
+    "969TopSpeed": 142,
+    "9690to60": 5.9,
+    "969Handling": 84,
+
+	"699TopSpeed": 138,
+    "6990to60": 5.6,
+    "699Handling": 84
 }

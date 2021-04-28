@@ -1,5 +1,5 @@
 {
-    "rq": 55,
+    "rq": 56,
     "make": "RUF",
     "model": "3400S",
     "modelYear": 2000,
@@ -22,25 +22,33 @@
     "fuelType": "Petrol",
     "mra": 63.51,
     "ola": 85.11,
-    "description": "",
+    "description": " Ruf technicians performed a heart transplant by substituting the stock powerplant with a Ruf massaged 3.4L flat 6 sourced from the roadster’s big brother. Card by Bnuuy",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/784505925234196521/rect78774.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/784506435157491752/3400sStock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/784506457134465024/3400s1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/784506472724824114/3400s2.png",
-    "racehud996": "",
-    "racehud969": "",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/784506554492780544/3400s233.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819944657050927135/3400S.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819945002556719124/Ruf.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819945010061115422/ruf333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819945021230940241/ruf666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819945048287215686/ruf996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819945038712406036/ruf969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819945029987729469/ruf699.png",
 
     "333TopSpeed": 178,
     "3330to60": 4.8,
     "333Handling": 84,
 
     "666TopSpeed": 181,
-    "6660to60": 4.5,
-    "666Handling": 87,
+    "6660to60": 4.6, 
+    "666Handling": 86,
 
-    "699TopSpeed": 183,
-    "6990to60": 4.2,
+    "996TopSpeed": 184,
+    "9960to60": 4.3,
+    "996Handling": 86,
+
+    "969TopSpeed": 184,
+    "9690to60": 4.6,
+    "969Handling": 90,
+
+    "699TopSpeed": 181,
+    "6990to60": 4.3,
     "699Handling": 90
 }

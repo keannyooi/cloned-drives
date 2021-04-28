@@ -1,5 +1,5 @@
 ﻿{
-    "rq": 17,
+    "rq": 25,
     "make": "Volkswagen",
     "model": "Scirocco 1.6 5-Speed",
     "modelYear": 1979,
@@ -26,36 +26,32 @@
     "description": "A Coupe for the people but now with 5 speeds. Card by Andu",
 
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/789564521350037534/SciroccoGrey.png?width=705&height=439",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/789079950937817118/Scirocco16SpeedSt.png?width=740&height=463",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/789079969577566259/Scirocco16Speed1.png?width=740&height=463",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/789079988661780500/Scirocco16Speed2.png?width=740&height=463",
-    "racehud996": "",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/789080027223949312/Scirocco16Speed323.png?width=740&height=463",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/821338529388822529/SciroccoGrey.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821338750747541514/Scirocco16.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821338757114363927/Scirocco16-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821338761521790997/Scirocco16-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821338802614304768/Scirocco16-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821338794782883880/Scirocco16-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821338787837771796/Scirocco16-699.png",
 
 
-    "333TopSpeed": 111,
+    "333TopSpeed": 113,
     "3330to60": 10.6,
     "333Handling": 71,
 
+    "666TopSpeed": 118,
+    "6660to60": 10.1,
+    "666Handling": 74,   
 
-    "666TopSpeed": 114,
-    "6660to60": 9.5,
-    "666Handling": 74,
+    "996TopSpeed": 122,
+    "9960to60": 9.5,
+    "996Handling": 74,
 
+    "969TopSpeed": 122,
+    "9690to60": 10.1,
+    "969Handling": 77,
 
-    "996TopSpeed": 0,
-    "9960to60": 0,
-    "996Handling": 0,
-
-
-    "969TopSpeed": 116,
-    "9690to60": 8.7,
-    "969Handling": 76,
-
-
-    "699TopSpeed": 0,
-    "6990to60": 0,
-    "699Handling": 0
+    "699TopSpeed": 118,
+    "6990to60": 9.5,
+    "699Handling": 77
 }

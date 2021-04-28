@@ -1,5 +1,5 @@
 ﻿{
-    "rq": 78,
+    "rq": 77,
     "make": "Porsche",
     "model": "911 GT2",
     "modelYear": 2001,
@@ -9,7 +9,7 @@
     "handling": 90,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Wild Ride"],
+    "tags": ["Supercar"],
     "isPrize": false,
 
 
@@ -26,36 +26,32 @@
     "description": "The 911 GT2 has all the ingredients wanted and expected from a high-end Porsche, but all to a greater degree. Card by Havvy",
 
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/804836686739144734/Porsche911GT2996.png?width=1154&height=718",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/804836756100481044/000_996gt2.png?width=1154&height=718",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/804836761426853888/111_996gt2.png?width=1154&height=718",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/804836765943988244/222_996gt2.png?width=1154&height=718",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/804837020261941278/332_996gt2.png?width=1154&height=718",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/804837005275430922/323_996gt2.png?width=1154&height=718",
-    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/804836772341088316/233_996gt2.png?width=1154&height=718",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826536593577082880/Porsche911GT2996.1.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826536652687147059/000_gt2.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826536657099817010/111_gt2.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826536661574746192/222_gt2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826536675458941017/332_gt2.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826536671155191828/323_gt2.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826536665299812412/233_gt2.png",
 
 
     "333TopSpeed": 198,
     "3330to60": 3.6,
     "333Handling": 93,
 
-
-    "666TopSpeed": 201,
+    "666TopSpeed": 200,
     "6660to60": 3.4, 
     "666Handling": 96,
 
-
     "996TopSpeed": 203,
-    "9960to60": 3.1,
-    "996Handling": 97,
-
+    "9960to60": 3.2,
+    "996Handling": 96,
 
     "969TopSpeed": 203,
-    "9690to60": 3.2,
-    "969Handling": 99,
+    "9690to60": 3.4,
+    "969Handling": 100,
 
-
-    "699TopSpeed": 201,
+    "699TopSpeed": 200,
     "6990to60": 3.2,
     "699Handling": 100
 }

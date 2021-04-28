@@ -1,5 +1,5 @@
 {
-    "rq": 69,
+    "rq": 64,
     "make": "BMW",
     "model": "745e xDrive iPerformance",
     "modelYear": 2020,
@@ -24,27 +24,31 @@
     "ola": 69,
     "description": "The most eco-friendly way to arrive at the Siemens executive meeting. By Bnuuy",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/788196514836643880/bmw745exdrive.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/788198367854854164/745e.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/788198385562812416/745e333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/788198400045875220/745e666.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/788198465623687168/745e969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/788198433302642698/745e699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819237083985084506/745exdrive.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819550518682714152/745e.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819550529046839357/745e333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819550543311142932/745e666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819550614480093214/745e996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819550586185580564/745e969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819550566325551104/745e699.png",
 
     "333TopSpeed": 158,
-    "3330to60": 4.5,
+    "3330to60": 4.6,
     "333Handling": 80,
 
-    "666TopSpeed": 161,
+    "666TopSpeed": 162,
     "6660to60": 4.3,
-    "666Handling": 83,
+    "666Handling": 82,
 
-    "969TopSpeed": 164,
-    "9690to60": 4.1,
-    "969Handling": 86,
+	"996TopSpeed": 165,
+    "9960to60": 4.1,
+    "996Handling": 82,
+
+    "969TopSpeed": 165,
+    "9690to60": 4.3,
+    "969Handling": 85,
 
     "699TopSpeed": 162,
-    "6990to60": 4.2,
-    "699Handling": 87
+    "6990to60": 4.1,
+    "699Handling": 85
 }

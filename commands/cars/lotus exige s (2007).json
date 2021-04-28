@@ -1,5 +1,5 @@
 {
-    "rq": 70,
+    "rq": 71,
     "make": "Lotus",
     "model": "Exige S",
     "modelYear": 2007,
@@ -22,25 +22,33 @@
     "fuelType": "Petrol",
     "mra": 58.57,
     "ola": 85.11,
-    "description": "",
+    "description": "Card by Bnuuy.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/787273421007618058/rec45t7774.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/787273529300221952/ExigeSSt.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/787273551002075136/ExigeS1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/787273565929734164/ExigeS2.png",
-    "racehud996": "",
-    "racehud969": "",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/787273600260112404/ExigeS233.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820686962063048714/ExigeS.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820687201573666836/Exige.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820687205915557938/Exige333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820687213548273664/Exige666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820687242807738418/Exige996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820687232398262342/Exige969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820687221261991987/Exige699.png",
 
-    "333TopSpeed": 151,
+    "333TopSpeed": 152,
     "3330to60": 3.9,
     "333Handling": 93,
 
-    "666TopSpeed": 153,
+    "666TopSpeed": 155,
     "6660to60": 3.7,
     "666Handling": 96,
 
-    "699TopSpeed": 154,
+    "996TopSpeed": 159,
+    "9960to60": 3.5,
+    "996Handling": 96,
+
+    "969TopSpeed": 159,
+    "9690to60": 3.7,
+    "969Handling": 100,
+
+    "699TopSpeed": 155,
     "6990to60": 3.5,
     "699Handling": 100
 }

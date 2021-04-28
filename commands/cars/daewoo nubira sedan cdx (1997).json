@@ -1,5 +1,5 @@
 {
-    "rq": 19,
+    "rq": 27,
     "make": "Daewoo",
     "model": "Nubira Sedan CDX",
     "modelYear": 1997,
@@ -9,12 +9,12 @@
     "handling": 67,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": [],
+    "tags": ["Rest of the World"],
     "isPrize": false,
 
     "weight": 1090,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Sedan",
     "tcs": false,
     "abs": true,
@@ -24,27 +24,31 @@
     "ola": 73.27,
     "description": "This car is running and going. Card by Andu",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/799227879740145684/DaewooNubiraCDX.png?width=1154&height=719",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/799325850004619294/DaewoooSt.png",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/799325860678074369/Daewooo1.png",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/799325862968164352/Daewooo2.png",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/799325879384932393/Daewooo332.png",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/799325871605022810/Daewooo323.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/821332583522369556/DaewooNubiraCDX.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821333283317088256/Nubira.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821333290241490964/Nubira1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821333295706275890/Nubira2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821333318984925194/Nubira996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821333312660439040/Nubira969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821333305408094218/Nubira699.png",
 
-    "333TopSpeed": 115,
-    "3330to60": 9.4,
+    "333TopSpeed": 117,
+    "3330to60": 9.6,
     "333Handling": 69,
 
-    "666TopSpeed": 118,
-    "6660to60": 8.7, 
+    "666TopSpeed": 121,
+    "6660to60": 9.1,
     "666Handling": 71,
 
-    "996TopSpeed": 121,
-    "9960to60": 7.6,
+    "996TopSpeed": 126,
+    "9960to60": 8.6,
     "996Handling": 71,
 
-    "969TopSpeed": 121,
-    "9690to60": 7.9,
-    "969Handling": 74
+    "969TopSpeed": 126,
+    "9690to60": 9.1,
+    "969Handling": 74,
+
+	"699TopSpeed": 121,
+    "6990to60": 8.6,
+    "699Handling": 74
 }

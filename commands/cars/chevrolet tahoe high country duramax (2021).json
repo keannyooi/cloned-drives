@@ -24,24 +24,31 @@
     "ola": 57.47,
     "description": "GM's Duramax Diesel meets Chevy's redesigned Tahoe. Card by DodgeDemon.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/794293368469061652/2021_Chevy_Tahoe_Duramax.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/794293421660569620/tahoed.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/794293432088133632/tahoed333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/794293451914346496/tahoed666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/794293488106995753/tahoed996.png",
-    "racehud969": "",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824681793533116426/2021_Chevy_Tahoe_Duramax.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/825416015231582286/tahoe.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/825416022773202974/tahoe333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/825416033589264415/tahoe666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/825416063755354172/tahoe996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/825416054754377778/tahoe969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/825416045099089970/tahoe699.png",
 
-    "333TopSpeed": 115,
+    "333TopSpeed": 117,
     "3330to60": 7.4,
-    "333Handling": 51,
+    "333Handling": 50,
 
-    "666TopSpeed": 118,
+    "666TopSpeed": 121,
     "6660to60": 7.0,
-    "666Handling": 53,
+    "666Handling": 51,
 
-    "996TopSpeed": 121,
-    "9960to60": 6.7,
-    "996Handling": 54
+    "996TopSpeed": 126,
+    "9960to60": 6.6,
+    "996Handling": 51,
 
+	"969TopSpeed": 126,
+    "9690to60": 7.0,
+    "969Handling": 53,
+
+	"699TopSpeed": 121,
+    "6990to60": 6.6,
+    "699Handling": 53
 }

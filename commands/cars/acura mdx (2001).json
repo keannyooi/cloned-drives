@@ -1,5 +1,5 @@
 {
-    "rq": 47,
+    "rq": 44,
     "make": "Acura",
     "model": "MDX",
     "modelYear": 2001,
@@ -24,23 +24,31 @@
     "ola": 82.50,
     "description": "The american MDX. Card by Bnuuy",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/807698556374089728/acuramdx.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/807698653740269599/A.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/807698673961926706/A333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/807698686498570280/A666.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/807698707373359104/A969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819658974068211742/acuramdx.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819659116594724864/amdx.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819659125818261584/amdx333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819659136840368189/amdx666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819659175666778122/amdx996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819659164569305138/amdx969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819659152899964928/amdx699.png",
 
-    "333TopSpeed": 122,
+    "333TopSpeed": 123,
     "3330to60": 7.6,
     "333Handling": 69,
 
-    "666TopSpeed": 125,
+    "666TopSpeed": 128,
     "6660to60": 7.2,
-    "666Handling": 72,
+    "666Handling": 71,
 
-    "969TopSpeed": 128,
-    "9690to60": 6.9,
-    "969Handling": 74
+    "996TopSpeed": 132,
+    "9960to60": 6.8,
+    "996Handling": 71,
+
+    "969TopSpeed": 132,
+    "9690to60": 7.2,
+    "969Handling": 74,
+
+    "699TopSpeed": 128,
+    "6990to60": 6.8,
+    "699Handling": 74
 }

@@ -1,5 +1,5 @@
 {
-    "rq": 103,
+    "rq": 107,
     "make": "Rimac",
     "model": "C_Two",
     "modelYear": 2019,
@@ -9,7 +9,7 @@
     "handling": 95,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Eco-Friendly", "Hypercar", "Ultra Expensive"],
+    "tags": ["Eco-Friendly", "Hypercar", "Ultra Expensive", "Rest of the World"],
     "isPrize": true,
 
     "weight": 1950,
@@ -22,29 +22,33 @@
     "fuelType": "Electric",
     "mra": 79.17,
     "ola": 57.90,
-    "description": "The first over 100RQ card ever added to Cloned Drives, now with added fire extinguisher. Card by DodgeDemon.",
+    "description": "fire extinguisher. Card by DodgeDemon.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/806974592379650128/2019_Rimac_C2.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/806974732498501651/RimacC2000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/806974812021981274/RimacC2333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/806974877755506698/RimacC2666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/806974997616394250/RimacC2996.png",
-    "racehud969": "",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/806974904812961852/RimacC2699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/821048664231247872/2019_Rimac_C2.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823943532845727834/c2.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823943538416156712/c2333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823943544247025684/c2666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823943584091996160/c2996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823943565608615996/c2969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823943553331363890/c2699.png",
 
     "333TopSpeed": 260,
     "3330to60": 1.8,
     "333Handling": 98,
 
     "666TopSpeed": 262,
-    "6660to60": 1.8,
+    "6660to60": 1.7, 
     "666Handling": 101,
 
-    "996TopSpeed": 266,
+    "996TopSpeed": 264,
     "9960to60": 1.6,
-    "996Handling": 102,
+    "996Handling": 101,
 
-    "699TopSpeed": 264,
-    "6990to60": 1.7,
+    "969TopSpeed": 264,
+    "9690to60": 1.7,
+    "969Handling": 105,
+
+    "699TopSpeed": 262,
+    "6990to60": 1.6,
     "699Handling": 105
 }

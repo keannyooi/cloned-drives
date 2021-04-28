@@ -1,5 +1,5 @@
 {
-    "rq": 85,
+    "rq": 80,
     "make": "Porsche",
     "model": "Mission E Concept",
     "modelYear": 2015,
@@ -9,7 +9,7 @@
     "handling": 88,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Concept"],
+    "tags": ["Concept", "Eco-Friendly"],
     "isPrize": false,
 
     "weight": 2000,
@@ -24,27 +24,31 @@
     "ola": 57.15,
     "description": "E. Card by Bnuuy.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/813385478896091176/Econcpet.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/813386802954108939/missionE.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/813386813255057428/missionE333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/813386828727451728/missionE666.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/813386869806858240/MissionE969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/813386849355038740/MissionE699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820726179274948618/EConcept.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820726740052738058/E.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820726745056936016/E333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820726749486645329/E666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820726782033395712/E996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820726768012230706/E969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820726758859997245/E699.png",
 
-    "333TopSpeed": 159,
+    "333TopSpeed": 158,
     "3330to60": 3.3,
     "333Handling": 91,
 
-    "666TopSpeed": 163,
-    "6660to60": 3.2,
+    "666TopSpeed": 162,
+    "6660to60": 3.2, 
     "666Handling": 94,
 
-    "969TopSpeed": 165,
-    "9690to60": 3.0,
-    "969Handling": 97,
+    "996TopSpeed": 165,
+    "9960to60": 3.0,
+    "996Handling": 94,
 
-    "699TopSpeed": 164,
+    "969TopSpeed": 165,
+    "9690to60": 3.2,
+    "969Handling": 98,
+
+    "699TopSpeed": 162,
     "6990to60": 3.0,
     "699Handling": 98
 }

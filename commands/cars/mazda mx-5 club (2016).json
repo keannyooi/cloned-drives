@@ -1,5 +1,5 @@
 {
-    "rq": 46,
+    "rq": 48,
     "make": "Mazda",
     "model": "MX-5 Club",
     "modelYear": 2016,
@@ -24,27 +24,31 @@
     "ola": 60.00,
     "description": "The latest in a series of brilliant roadsters. By Spence",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/797200657798135828/image0.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/797200750417018929/Mazda_MX-5_Club_2016_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/797200762068533298/Mazda_MX-5_Club_2016_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/797200774487605308/Mazda_MX-5_Club_2016_666.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/797200877232062494/Mazda_MX-5_Club_2016_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/797200792788402176/Mazda_MX-5_Club_2016_699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826468794553335849/MX5Club.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826533167614787644/C.MazdaMX5Club.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826533188989616148/C.MazdaMX5Club-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/836349493913059409/mx5club.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826533255314014229/C.MazdaMX5Club-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826533244135931994/C.MazdaMX5Club-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826533227224367160/C.MazdaMX5Club-699.png",
 
     "333TopSpeed": 132,
     "3330to60": 5.7,
     "333Handling": 88,
 
-    "666TopSpeed": 136,
-    "6660to60": 5.3,
+    "666TopSpeed": 137,
+    "6660to60": 5.4,
     "666Handling": 91,
 
-    "969TopSpeed": 140,
-    "9690to60": 4.9,
+    "996TopSpeed": 141,
+    "9960to60": 5.1,
+    "996Handling": 91,
+
+    "969TopSpeed": 141,
+    "9690to60": 5.4,
     "969Handling": 94,
 
     "699TopSpeed": 137,
-    "6990to60": 4.9,
+    "6990to60": 5.1,
     "699Handling": 94
 }

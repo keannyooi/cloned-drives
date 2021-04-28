@@ -1,4 +1,4 @@
-﻿{
+{
     "rq": 71,
     "make": "Chevrolet",
     "model": "Corvette Grand Sport",
@@ -12,10 +12,9 @@
     "tags": [],
     "isPrize": false,
 
-
     "weight": 1507,
     "gc": "Low",
-    "seatCount":2,
+    "seatCount": 2,
     "bodyStyle": "Coupe",
     "tcs": true,
     "abs": true,
@@ -25,37 +24,31 @@
     "ola": 85.71,
     "description": "Red for sport. Are you red-y for her?. Card by Havvy ",
 
-
-    "card": "https://media.discordapp.net/attachments/715782088271331398/799738838469574666/ChevroletCorvetteGS.png?width=1154&height=718",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/799738677160574986/000GS.png?width=1154&height=720",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/799738688388726804/111GS.png?width=1154&height=718",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/799738697297297438/222GS.png?width=1154&height=719",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/799738745238716416/332GS.png?width=1154&height=720",
-    "racehud969": "",
-    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/799738702888042516/233GS.png?width=1154&height=720",
-
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/822617850296270889/ChevroletCorvetteGS.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/822617902006927370/000_crvgs.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/822617907879608380/111_crvgs.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/822617914267009054/222_crvgs.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/822617954041856011/332_crvgs.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/822618197604958289/323_crvgs.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/822617918641799178/233_crvgs.png",
 
     "333TopSpeed": 191,
     "3330to60": 4.0,
     "333Handling": 91,
 
-
     "666TopSpeed": 194,
-    "6660to60": 3.7, 
+    "6660to60": 3.8, 
     "666Handling": 94,
 
+    "996TopSpeed": 196,
+    "9960to60": 3.6,
+    "996Handling": 94,
 
-    "996TopSpeed": 197,
-    "9960to60": 3.4,
-    "996Handling": 95,
+    "969TopSpeed": 196,
+    "9690to60": 3.8,
+    "969Handling": 98,
 
-
-    "969TopSpeed": 0,
-    "9690to60": 0,
-    "969Handling": 0,
-
-
-    "699TopSpeed": 195,
-    "6990to60": 3.5,
+    "699TopSpeed": 194,
+    "6990to60": 3.6,
     "699Handling": 98
 }

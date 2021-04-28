@@ -24,23 +24,31 @@
     "ola": 65.22,
     "description": "Miata is always the answer. Card by andu",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/764789650878889984/MazdaMX51990.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/761075202578579456/mazda_mx-5_na.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/761075247138865162/mazda_mx-5_na_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/761075258353778728/mazda_mx-5_na_666.jpg",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/761075279459254272/mazda_mx-5_na_969.jpg",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/822208868821237850/MazdaMX51990.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/822208703012274176/MX589.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/822208711850065949/MX589-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/822208719927377940/MX589-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/822208743726776320/MX589-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/822208734062706758/MX589-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/822208727968382996/MX589-699.png",
 
-    "333TopSpeed": 119,
-    "3330to60": 8.6,
-    "333Handling": 77,
+    "333TopSpeed": 120,
+    "3330to60": 8.7,
+    "333Handling": 76,
 
-    "666TopSpeed": 122,
-    "6660to60": 7.9,
-    "666Handling": 80,
+    "666TopSpeed": 125,
+    "6660to60": 8.3,
+    "666Handling": 79,
 
-    "969TopSpeed": 125,
-    "9690to60": 7.3,
-    "969Handling": 82
+    "996TopSpeed": 129,
+    "9960to60": 7.8,
+    "996Handling": 79,
+
+    "969TopSpeed": 129,
+    "9690to60": 8.3,
+    "969Handling": 82,
+
+    "699TopSpeed": 125,
+    "6990to60": 7.8,
+    "699Handling": 82
 }

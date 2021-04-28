@@ -1,5 +1,5 @@
 {
-    "rq": 81,
+    "rq": 88,
     "make": "Bentley",
     "model": "Bentayga V8",
     "modelYear": 2018,
@@ -24,13 +24,13 @@
     "ola": 84.16,
     "description": "Pure luxury built to traverse offroad. Card by Havvy.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/799367112313143376/BentleyBentaygaV8.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/799367181367377920/ayga.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/799367214243250176/ayga333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/799367232500400158/ayga666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/799367300373151764/ayga996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/799367278373896212/ayga969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/799367256542806036/ayga699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824626739657048104/BentleyBentaygaV8.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824627142465552414/bgy.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824627147338678342/bgy333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824627153181474896/bgy666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824627176665251980/bgy996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824627167518261248/bgy969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824627160781815858/bgy699.png",
 
     "333TopSpeed": 183,
     "3330to60": 3.8,
@@ -38,17 +38,17 @@
 
     "666TopSpeed": 186,
     "6660to60": 3.6,
-    "666Handling": 88,
+    "666Handling": 87,
 
-    "996TopSpeed": 190,
+    "996TopSpeed": 189,
     "9960to60": 3.4,
-    "996Handling": 89,
+    "996Handling": 87,
 
     "969TopSpeed": 189,
-    "9690to60": 3.5,
+    "9690to60": 3.6,
     "969Handling": 91,
 
-    "699TopSpeed": 188,
-    "6990to60": 3.5,
+    "699TopSpeed": 186,
+    "6990to60": 3.4,
     "699Handling": 91
 }

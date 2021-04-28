@@ -1,5 +1,5 @@
 {
-    "rq": 15,
+    "rq": 20,
     "make": "smart",
     "model": "fortwo passion coupe 1.0 mhd",
     "modelYear": 2008,
@@ -9,7 +9,7 @@
     "handling": 65,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": [],
+    "tags": ["Style Icon"],
     "isPrize": false,
 
     "weight": 820,
@@ -20,31 +20,35 @@
     "abs": true,
     "enginePos": "Rear",
     "fuelType": "Petrol",
-    "mra": 0.00,
+    "mra": 18.96,
     "ola": 65.90,
     "description": "If swatch was a car. Card by Andu",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/807301479891075152/Smartnotcaps.png?width=1154&height=719",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/807301538795356200/Smart.png",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/807301544424898600/Smart1.png",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/807301549403144212/Smart2.png",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/807301564783132712/Smart332.png",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/807301557925445652/Smart323.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/822058899355074601/Smartnotcaps.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/822059685103927316/smart.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/822059690337763338/smart1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/822059696273621022/smart2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/822059718255181834/smart996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/822059709938008104/smart969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/822059702182477834/smart699.png",
 
-    "333TopSpeed": 93,
-    "3330to60": 12.0,
-    "333Handling": 68,
+    "333TopSpeed": 96,
+    "3330to60": 12.4,
+    "333Handling": 67,
 
-    "666TopSpeed": 96,
-    "6660to60": 11.0, 
-    "666Handling": 70,
+    "666TopSpeed": 102,
+    "6660to60": 11.8, 
+    "666Handling": 69,
 
-    "996TopSpeed": 98,
-    "9960to60": 9.7,
-    "996Handling": 70,
+    "996TopSpeed": 107,
+    "9960to60": 11.1,
+    "996Handling": 69,
 
-    "969TopSpeed": 98,
-    "9690to60": 10.0,
-    "969Handling": 72
+    "969TopSpeed": 107,
+    "9690to60": 11.8,
+    "969Handling": 72,
+
+    "699TopSpeed": 102,
+    "6990to60": 11.1,
+    "699Handling": 72
 }

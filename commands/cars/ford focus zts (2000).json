@@ -1,5 +1,5 @@
 {
-    "rq": 25,
+    "rq": 32,
     "make": "Ford",
     "model": "Focus ZTS",
     "modelYear": 2000,
@@ -9,7 +9,7 @@
     "handling": 73,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["2021 Spring Collection"],
+    "tags": [],
     "isPrize": false,
 
     "weight": 1163,
@@ -24,23 +24,31 @@
     "ola": 59.26,
     "description": "The highest-trim Focus sedan of the early 2000's. Card by Keanny",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/811807511552327710/ford_focus_zts.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/811803799719116800/unknown.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/811806406201835570/unknown.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/811806582232711209/unknown.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/811806619045199872/unknown.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819390775091658772/ford_focus_zts.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819763745864548413/zts_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819763755160174602/zts_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819763776836337694/zts_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819763814643925021/zts_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819763804274950204/zts_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819763792866312243/zts_699.jpg",
 
-    "333TopSpeed": 108,
-    "3330to60": 8.8,
-    "333Handling": 76,
+    "333TopSpeed": 110,
+    "3330to60": 9.0,
+    "333Handling": 75,
 
-    "666TopSpeed": 111,
-    "6660to60": 8.1,
+    "666TopSpeed": 115,
+    "6660to60": 8.6,
     "666Handling": 78,
 
-    "969TopSpeed": 114,
-    "9690to60": 7.5,
-    "969Handling": 81
+	"996TopSpeed": 120,
+    "9960to60": 8.1,
+    "996Handling": 78,
+
+    "969TopSpeed": 120,
+    "9690to60": 8.6,
+    "969Handling": 81,
+
+	"699TopSpeed": 115,
+    "6990to60": 8.1,
+    "699Handling": 81
 }

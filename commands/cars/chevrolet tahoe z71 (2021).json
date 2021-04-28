@@ -1,5 +1,5 @@
 {
-    "rq": 54,
+    "rq": 51,
     "make": "Chevrolet",
     "model": "Tahoe Z71",
     "modelYear": 2021,
@@ -24,31 +24,31 @@
     "ola": 66.67,
     "description": "The latest version of Chevy's offroader, now with added offroad. By DodgeDemon",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/788196133331533844/2021_Chevy_Tahoe_Z71.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/788197621226405899/tahoe.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/788197635446013952/tahoe333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/788197650343657502/tahoe666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/788197731792715776/tahoe996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/788197705767452672/tahoe969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/788197680277880842/tahoe699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/827079939433955388/obese_tahoe.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/827080760866373642/tahoe_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/827080767665733702/tahoe_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/827080783499231273/tahoe_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/827080827417788486/tahoe_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/827080812566544424/tahoe_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/827080800053887026/tahoe_699.jpg",
 
-    "333TopSpeed": 118,
+    "333TopSpeed": 120,
     "3330to60": 7.1,
-    "333Handling": 64,
+    "333Handling": 63,
 
-    "666TopSpeed": 121,
-    "6660to60": 6.7,
-    "666Handling": 67,
+    "666TopSpeed": 124,
+    "6660to60": 6.8,
+    "666Handling": 65,
 
-    "996TopSpeed": 125,
-    "9960to60": 6.3,
-    "996Handling": 67,
+    "996TopSpeed": 129,
+    "9960to60": 6.4,
+    "996Handling": 65,
 
-    "969TopSpeed": 123,
-    "9690to60": 6.4,
-    "969Handling": 70,
+    "969TopSpeed": 129,
+    "9690to60": 6.8,
+    "969Handling": 68,
 
-    "699TopSpeed": 122,
-    "6990to60": 6.5,
-    "699Handling": 71
+    "699TopSpeed": 124,
+    "6990to60": 6.4,
+    "699Handling": 68
 }

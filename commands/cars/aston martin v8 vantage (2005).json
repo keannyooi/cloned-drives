@@ -1,5 +1,5 @@
 {
-    "rq": 60,
+    "rq": 61,
     "make": "Aston Martin",
     "model": "V8 Vantage",
     "modelYear": 2005,
@@ -24,23 +24,31 @@
     "ola": 81.43,
     "description": "The most successful Aston Martin model ever. Card by keanny",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/790086784192348169/aston_martin_v8_vantage.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/790163932584214528/aston_martin_v8_vantage.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/790163977065725972/aston_martin_v8_vantage_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/790163993762725898/aston_martin_v8_vantage_666.jpg",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/790164008103575552/aston_martin_v8_vantage_969.jpg",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820964145603280906/v8_vantage.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820965078933045278/v8_vantage_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820965087388106763/v8_vantage_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820965092707008562/v8_vantage_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820965138668060683/v8_vantage_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820965130018881536/v8_vantage_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820965106942869534/v8_vantage_699.jpg",
 
     "333TopSpeed": 178,
-    "3330to60": 4.4,
+    "3330to60": 4.5,
     "333Handling": 87,
 
     "666TopSpeed": 181,
-    "6660to60": 4.1,
+    "6660to60": 4.2,
     "666Handling": 90,
 
+	"996TopSpeed": 184,
+    "9960to60": 4.0,
+    "996Handling": 90,
+
     "969TopSpeed": 184,
-    "9690to60": 3.9,
-    "969Handling": 93
+    "9690to60": 4.2,
+    "969Handling": 93,
+
+	"699TopSpeed": 181,
+    "6990to60": 4.0,
+    "699Handling": 93
 }

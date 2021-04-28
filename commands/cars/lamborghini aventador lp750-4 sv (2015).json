@@ -1,5 +1,5 @@
 {
-    "rq": 98,
+    "rq": 96,
     "make": "Lamborghini",
     "model": "Aventador LP750-4 SV",
     "modelYear": 2015,
@@ -22,25 +22,34 @@
     "fuelType": "Petrol",
     "mra": 89.66,
     "ola": 84.62,
-    "description": "",
+    "description": "Card by DodgeDemon.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/788196425753821194/2015_Lamborghini_Avantador_SV.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/788198181694341151/aventsv.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/788198200087019531/aventsv333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/788198216973287434/avent666.png",
-    "racehud996": "",
-    "racehud969": "",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/788198255124545616/aventsv699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820817208463589416/2015_Lamborghini_Avantador_SV.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824288531916521563/sv.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824288537259278378/sv333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824288542632181810/sv666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824288566984572988/sv996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824288559157870622/sv969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824288550970458162/sv699.png",
 
     "333TopSpeed": 219,
     "3330to60": 2.5,
     "333Handling": 95,
 
-    "666TopSpeed": 221,
-    "6660to60": 2.4,
-    "666Handling": 99,
+    "666TopSpeed": 222,
+    "6660to60": 2.3,
+    "666Handling": 98,
 
-    "699TopSpeed": 223,
-    "6990to60": 2.3,
+    "996TopSpeed": 224,
+    "9960to60": 2.2,
+    "996Handling": 98,
+
+    "969TopSpeed": 224,
+    "9690to60": 2.3,
+    "969Handling": 102,
+
+    "699TopSpeed": 222,
+    "6990to60": 2.2,
     "699Handling": 102
+
 }

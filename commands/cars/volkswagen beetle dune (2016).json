@@ -1,5 +1,5 @@
 {
-    "rq": 39,
+    "rq": 42,
     "make": "Volkswagen",
     "model": "Beetle Dune",
     "modelYear": 2016,
@@ -22,25 +22,33 @@
     "fuelType": "Petrol",
     "mra": 56.49,
     "ola": 85.02,
-    "description": "",
+    "description": "Inspired by Baja, at home in Bakersfield. Card by Andu",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/787995369983180820/BeetleDuneCoupe.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/787995507972767744/BeetleDuneST.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/787995535554510868/BeetleDune1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/787995565052395520/BeetleDune2.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/787995619780329472/BeetleDune323.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820196441234210856/BeetleDuneCoupe.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820196746541400084/BeetleDune.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820196755077070878/BeetleDune1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820196761951666186/BeetleDune2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820196789726216252/BeetleDune996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820196780003426334/BeetleDune969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820196771388325888/BeetleDune699.png",
 
     "333TopSpeed": 122,
-    "3330to60": 6.9,
-    "333Handling": 78,
+    "3330to60": 7.0,
+    "333Handling": 77,
 
-    "666TopSpeed": 126,
-    "6660to60": 6.5,
-    "666Handling": 81,
+    "666TopSpeed": 127,
+    "6660to60": 6.7, 
+    "666Handling": 80,
 
-    "969TopSpeed": 130,
-    "9690to60": 6.0,
-    "969Handling": 83
+    "996TopSpeed": 131,
+    "9960to60": 6.3,
+    "996Handling": 80,
+
+    "969TopSpeed": 131,
+    "9690to60": 6.7,
+    "969Handling": 83,
+
+    "699TopSpeed": 127,
+    "6990to60": 6.0,
+    "699Handling": 83
 }

@@ -1,5 +1,5 @@
 {
-    "rq": 44,
+    "rq": 41,
     "make": "Toyota",
     "model": "GT86",
     "modelYear": 2012,
@@ -24,23 +24,31 @@
     "ola": 76.47,
     "description": "The Toyota GT86, a homage to the AE86 and a very Tuner loved car. Card by Bnuuy.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/809378459478261760/GT86.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/809378634997432330/86.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/809378647194337300/86333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/809378659894296587/86666.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/809378689157431326/86969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820707734834905098/GT86.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820708150848126999/gt86.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820708157843046440/gt86333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820708163925704734/gt86666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820708190228054036/gt86996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820708180816166940/gt86969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820708172330434560/gt86699.png",
 
     "333TopSpeed": 140,
-    "3330to60": 6.4,
+    "3330to60": 6.5,
     "333Handling": 89,
 
     "666TopSpeed": 144,
-    "6660to60": 6.0,
+    "6660to60": 6.1, 
     "666Handling": 92,
 
-    "969TopSpeed": 148,
-    "9690to60": 5.6,
-    "969Handling": 95
+    "996TopSpeed": 147,
+    "9960to60": 5.8,
+    "996Handling": 92,
+
+    "969TopSpeed": 147,
+    "9690to60": 6.1,
+    "969Handling": 95,
+
+    "699TopSpeed": 144,
+    "6990to60": 5.8,
+    "699Handling": 95
 }

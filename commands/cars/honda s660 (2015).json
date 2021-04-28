@@ -1,5 +1,5 @@
 {
-    "rq": 12,
+    "rq": 11,
     "make": "Honda",
     "model": "S660",
     "modelYear": 2015,
@@ -24,31 +24,31 @@
     "ola": 58.70,
     "description": "The epitome of driving a slow car fast. Card by Keanny.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/801188544567443478/honda_s660.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/801188844966903859/s660.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/801188856753160233/s660333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/801188869642256434/s660666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/801188940610404422/s660996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/801188910029733919/s660969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/801188888215289856/s660699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819392195165290516/s660_yayyyyyyyyyyyy.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819458161471389726/s660_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819458170837663794/s660_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819458174712807424/s660_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819458218911989840/s660_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819458205146415114/s660_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819458191284240394/s660_699.jpg",
 
-    "333TopSpeed": 89,
-    "3330to60": 11.2,
+    "333TopSpeed": 93,
+    "3330to60": 11.3,
     "333Handling": 74,
 
-    "666TopSpeed": 91,
-    "6660to60": 10.5,
-    "666Handling": 78,
+    "666TopSpeed": 99,
+    "6660to60": 10.7,
+    "666Handling": 77,
 
-    "996TopSpeed": 94,
-    "9960to60": 9.9,
-    "996Handling": 79,
+    "996TopSpeed": 105,
+    "9960to60": 10.1,
+    "996Handling": 77,
 
-    "969TopSpeed": 93,
-    "9690to60": 10.1,
+    "969TopSpeed": 105,
+    "9690to60": 10.7,
     "969Handling": 80,
 
-    "699TopSpeed": 92,
+    "699TopSpeed": 99,
     "6990to60": 10.1,
     "699Handling": 80
 }

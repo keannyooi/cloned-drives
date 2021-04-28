@@ -1,5 +1,5 @@
 {
-    "rq": 31,
+    "rq": 37,
     "make": "Lexus",
     "model": "UX 200 Luxury",
     "modelYear": 2019,
@@ -24,23 +24,31 @@
     "ola": 72.73,
     "description": " Lexus's new entry-level crossover is convincingly premium, despite being little more than a dressed-up Toyota hatchback. Card by Macan.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/808052513050722346/UX_200_Luxury_19.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/808052598828564561/Lexus_UX_200_Luxury_2019_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/808052605686251560/Lexus_UX_200_Luxury_2019_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/808052608853868594/Lexus_UX_200_Luxury_2019_666.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/808052616566145084/Lexus_UX_200_Luxury_2019_969.png",
-    "racehud699": "",
-
-    "333TopSpeed": 121,
-    "3330to60": 8.2,
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824673025298268210/UX_200_Luxury_19.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824673411677552720/ux200.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824673416849391656/ux200-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824673421895270471/ux200-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824673443144007700/ux200-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824673437024911410/ux200-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824673429813985300/ux200-699.png",
+    
+    "333TopSpeed": 122,
+    "3330to60": 8.4,
     "333Handling": 79,
 
-    "666TopSpeed": 125,
-    "6660to60": 7.7,
+    "666TopSpeed": 127,
+    "6660to60": 7.9,
     "666Handling": 81,
 
-    "969TopSpeed": 128,
-    "9690to60": 7.1,
-    "969Handling": 84
+    "996TopSpeed": 131,
+    "9960to60": 7.5,
+    "996Handling": 81,
+
+    "969TopSpeed": 131,
+    "9690to60": 7.9,
+    "969Handling": 84,
+
+    "699TopSpeed": 127,
+    "6990to60": 7.5,
+    "699Handling": 84
 }

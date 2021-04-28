@@ -1,5 +1,5 @@
 {
-    "rq": 88,
+    "rq": 81,
     "make": "Lamborghini",
     "model": "Diablo GTR",
     "modelYear": 1999,
@@ -24,31 +24,32 @@
     "ola": 108.57,
     "description": "When the devil got an upgrade for the racetrack. Card by Bnuuy.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/809384355733438484/dooooodododododo.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/809384453843189810/newdiablogtr.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/809384467327746068/newdiablogtr333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/809384481160167424/newdiablogtr666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/809384539637809152/newdiablogtr996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/809384521648046090/newdiablogtr969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/809384501951201290/newdiablogtr699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819969632130564126/diblogtr.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819969899290951700/diablo.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819969903691038790/diablo333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819969911211556864/diablo666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819969943847174174/diablo996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819969932535136266/diablo969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819969923526688788/diablo699.png",
 
     "333TopSpeed": 212,
     "3330to60": 3.3,
     "333Handling": 99,
 
-    "666TopSpeed": 214,
-    "6660to60": 3.1,
-    "666Handling": 104,
+    "666TopSpeed": 215,
+    "6660to60": 3.2,
+    "666Handling": 102,
 
-    "996TopSpeed": 218,
-    "9960to60": 2.9,
-    "996Handling": 105,
+    "996TopSpeed": 217,
+    "9960to60": 3.0,
+    "996Handling": 102,
 
     "969TopSpeed": 217,
-    "9690to60": 3.0,
-    "969Handling": 106,
+    "9690to60": 3.2,
+    "969Handling": 107,
 
-    "699TopSpeed": 217,
+    "699TopSpeed": 215,
     "6990to60": 3.0,
     "699Handling": 107
+    
 }

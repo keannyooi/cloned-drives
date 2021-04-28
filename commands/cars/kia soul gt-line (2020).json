@@ -1,5 +1,5 @@
 {
-    "rq": 46,
+    "rq": 50,
     "make": "Kia",
     "model": "Soul GT-Line",
     "modelYear": 2020,
@@ -24,31 +24,31 @@
     "ola": 85.29,
     "description": "When a funk box is mated with speed. Card by Exist",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/812450250253664296/CD_Kia_Soul_GT-Line.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/812449931846877214/CD_Kia_Soul_GT-Line_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/812449946191921202/CD_Kia_Soul_GT-Line_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/812449954852503572/CD_Kia_Soul_GT-Line_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/812449984602963989/CD_Kia_Soul_GT-Line_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/812449972825227285/CD_Kia_Soul_GT-Line_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/812449965707231242/CD_Kia_Soul_GT-Line_699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824738576221995018/CD_Kia_Soul_gt-Line.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824739439720136785/SoulGT.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824739452966404136/SoulGT1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824739452936912967/SoulGT2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824739474243846294/SoulGT996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824739467662196767/SoulGT969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824739459442278480/SoulGT699.png",
 
-    "333TopSpeed": 131,
-    "3330to60": 6.2,
-    "333Handling": 78,
+    "333TopSpeed": 132,
+    "3330to60": 6.3,
+    "333Handling": 79,
 
-    "666TopSpeed": 134,
-    "6660to60": 5.8,
+    "666TopSpeed": 136,
+    "6660to60": 5.9,
     "666Handling": 81,
 
-	"996TopSpeed": 137,
-    "9960to60": 5.3,
+	"996TopSpeed": 140,
+    "9960to60": 5.6,
     "996Handling": 81,
 
-    "969TopSpeed": 137,
-    "9690to60": 5.5,
+    "969TopSpeed": 140,
+    "9690to60": 5.9,
     "969Handling": 84,
 
-	"699TopSpeed": 134,
-    "6990to60": 5.5,
+	"699TopSpeed": 136,
+    "6990to60": 5.6,
     "699Handling": 84
 }

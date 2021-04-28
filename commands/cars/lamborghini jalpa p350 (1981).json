@@ -1,5 +1,5 @@
 {
-    "rq": 30,
+    "rq": 29,
     "make": "Lamborghini",
     "model": "Jalpa P350",
     "modelYear": 1981,
@@ -24,23 +24,32 @@
     "ola": 73.97,
     "description": "Lamborghini's 80s Huracan... or its 80s ugly duckling. Card by DodgeDemon",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/788196224099811348/1981_Lamborghini_Jalpa.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/788197837401620490/Jalpa.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/788197849841664030/jalpa333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/788197867332042752/jalpa666.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/788197896616935464/jalpa969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826528284283633694/Jumplpa.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826528400898130010/Jalpa.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826528406127640667/Jalpa1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826528410662076446/Jalpa2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826528437005975572/Jalpa996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826528428571230208/Jalpa969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826528421223596042/Jalpa699.png",
 
-    "333TopSpeed": 136,
+    "333TopSpeed": 137,
     "3330to60": 6.9,
     "333Handling": 79,
 
-    "666TopSpeed": 139,
-    "6660to60": 6.5,
+    "666TopSpeed": 141,
+    "6660to60": 6.6,
     "666Handling": 81,
 
-    "969TopSpeed": 141,
-    "9690to60": 6.2,
-    "969Handling": 84
+    "996TopSpeed": 145,
+    "9960to60": 6.2,
+    "996Handling": 81,
+
+    "969TopSpeed": 145,
+    "9690to60": 6.6,
+    "969Handling": 84,
+
+    "699TopSpeed": 141,
+    "6990to60": 6.2,
+    "699Handling": 84
+
 }

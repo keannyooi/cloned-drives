@@ -1,5 +1,5 @@
 {
-    "rq": 68,
+    "rq": 77,
     "make": "Mercedes-Benz",
     "model": "E 450 4Matic All-Terrain",
     "modelYear": 2021,
@@ -24,23 +24,31 @@
     "ola": 72.34,
     "description": "It'll never sell as well as a GLC but it's the superior car in our hearts. By DodgeDemon",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/788225693091233812/2021_Benz_E450_AT.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/788226920592048158/E450.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/788226933154512946/e450333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/788226947095461908/e450666.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/788227004532654090/e450969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/823955789202849812/2021_Benz_E450_AT.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824287759123742770/E450.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824287764996292638/E450333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824287771115388949/E450666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824287797640822814/E450996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824287787699273819/E450969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824287780468949082/E450699.png",
 
-    "333TopSpeed": 131,
-    "3330to60": 4.4,
+    "333TopSpeed": 132,
+    "3330to60": 4.5,
     "333Handling": 83,
 
-    "666TopSpeed": 134,
+    "666TopSpeed": 136,
     "6660to60": 4.2,
-    "666Handling": 86,
+    "666Handling": 85,
 
-    "969TopSpeed": 137,
-    "9690to60": 4.0,
-    "969Handling": 89
+    "996TopSpeed": 140,
+    "9960to60": 4.0,
+    "996Handling": 85,
+
+    "969TopSpeed": 140,
+    "9690to60": 4.2,
+    "969Handling": 89,
+
+    "699TopSpeed": 136,
+    "6990to60": 4.0,
+    "699Handling": 89
 }

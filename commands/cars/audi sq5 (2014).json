@@ -1,17 +1,16 @@
-﻿{
-    "rq": 68,
+{
+    "rq": 76,
     "make": "Audi",
     "model": "SQ5",
     "modelYear": 2014,
     "country": "DE",
-    "topSpeed": 154,
+    "topSpeed": 155,
     "0to60": 4.8,
     "handling": 77,
     "driveType": "4WD",
     "tyreType": "All-Surface",
     "tags": [],
     "isPrize": false,
-
 
     "weight": 2006,
     "gc": "Medium",
@@ -25,37 +24,31 @@
     "ola": 73.48,
     "description": "Alarmingly quick and cornering with unexpected ferocity, the SQ5 is essentially an S4 wagon. Card by ChickenMcNuggets",
 
-
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/811775459221962792/sq5_for_realsies.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/811773912240881725/sq5_stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/811773957627445248/sq5_1.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820437143067164682/sq5_for_realsies.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820130167523115018/sq5_stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820130257139007538/sq5_2.png",
     "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/811773992910061588/sq5_2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/811774065949278248/sq5_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/811774029810761738/sq5_323.png",
-    "racehud699": "",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820130379272421396/sq5_332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820130342085066772/sq5_323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820130303431278622/sq5_233.png",
 
-
-    "333TopSpeed": 157,
-    "3330to60": 4.5,
+    "333TopSpeed": 158,
+    "3330to60": 4.6,
     "333Handling": 80,
 
+    "666TopSpeed": 162,
+    "6660to60": 4.3,
+    "666Handling": 82,
 
-    "666TopSpeed": 160,
-    "6660to60": 4.2, 
-    "666Handling": 83,
+    "996TopSpeed": 165,
+    "9960to60": 4.1,
+    "996Handling": 82,
 
-
-    "996TopSpeed": 167,
-    "9960to60": 3.7,
-    "996Handling": 83,
-
-
-    "969TopSpeed": 164,
-    "9690to60": 3.9,
+    "969TopSpeed": 165,
+    "9690to60": 4.3,
     "969Handling": 85,
 
-
-    "699TopSpeed": 0,
-    "6990to60": 0,
-    "699Handling": 0
+    "699TopSpeed": 162,
+    "6990to60": 4.1,
+    "699Handling": 85
 }

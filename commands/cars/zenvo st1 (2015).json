@@ -1,5 +1,5 @@
 {
-    "rq": 93,
+    "rq": 92,
     "make": "Zenvo",
     "model": "ST1",
     "modelYear": 2015,
@@ -9,7 +9,7 @@
     "handling": 93,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Rest of the World"],
+    "tags": ["Rest of the World", "Supercar"],
     "isPrize": false,
 
     "weight": 1780,
@@ -24,27 +24,31 @@
     "ola": 88.88,
     "description": "Why buy a Swedish Hypercar when you can get Danish. Card by DodgeDemon.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/797519310888632380/2015_Zenvo_ST1.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/797519415130062878/ST1.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/797519433710698526/st1333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/797519448276992000/st1666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/797519501725925396/st1996.png",
-    "racehud969": "",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/797519475355549796/st1699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824680181649768468/st1.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/825397553280450580/st1.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/825397559363108964/st1333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/825397566517542963/st1666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/825397596645228553/st1996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/825397582767063100/st1969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/825397574553960498/st1699.png",
 
-    "333TopSpeed": 236,
-    "3330to60": 2.7,
+    "333TopSpeed": 235,
+    "3330to60": 2.8,
     "333Handling": 96,
 
-    "666TopSpeed": 239,
-    "6660to60": 2.5,
-    "666Handling": 100,
+    "666TopSpeed": 237,
+    "6660to60": 2.6,
+    "666Handling": 99,
 
-    "996TopSpeed": 242,
-    "9960to60": 2.3,
-    "996Handling": 100,
+    "996TopSpeed": 240,
+    "9960to60": 2.5,
+    "996Handling": 99,
+   
+    "969TopSpeed": 240,
+    "9690to60": 2.6,
+    "969Handling": 103,
 
-    "699TopSpeed": 240,
-    "6990to60": 2.4,
+    "699TopSpeed": 237,
+    "6990to60": 2.5,
     "699Handling": 103
 }

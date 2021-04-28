@@ -1,5 +1,5 @@
-﻿{
-    "rq": 14,
+{
+    "rq": 18,
     "make": "Cadillac",
     "model": "Cimarron",
     "modelYear": 1982,
@@ -12,7 +12,6 @@
     "tags": [],
     "isPrize": false,
 
-
     "weight": 1193,
     "gc": "Medium",
     "seatCount":5,
@@ -23,39 +22,33 @@
     "fuelType": "Petrol",
     "mra": 0.00,
     "ola": 62.73,
-    "description": "When Cadillac tried to make a european luxury car. Card by Keanny",
+    "description": "When Cadillac tried to make a European luxury car. Card by Keanny",
 
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819389941795651604/cinammon.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819555657870475314/cinammon_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819555665114038282/cinammon_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819555671556882432/cinammon_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819555716028563466/cinammon_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819555707127988274/cinammon_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819555693278789722/cinammon_699.jpg",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/800393408756580392/cadillac_cimarron.png?width=1154&height=710",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/799875401920544848/cinammon.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/799875459000434688/cinammon_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/799875467439898624/cinammon_666.jpg",
-    "racehud996": "",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/799875480609751081/cinammon_969.jpg",
-    "racehud699": "",
-
-
-    "333TopSpeed": 95,
-    "3330to60": 13.2,
+    "333TopSpeed": 98,
+    "3330to60": 13.7,
     "333Handling": 68,
 
+    "666TopSpeed": 103,
+    "6660to60": 13.0, 
+    "666Handling": 70,
 
-    "666TopSpeed": 98,
-    "6660to60": 12.0, 
-    "666Handling": 71,
+    "996TopSpeed": 109,
+    "9960to60": 12.2,
+    "996Handling": 70,
 
-
-    "996TopSpeed": 0,
-    "9960to60": 0,
-    "996Handling": 0,
-
-
-    "969TopSpeed": 100,
-    "9690to60": 10.8,
+    "969TopSpeed": 109,
+    "9690to60": 13.0,
     "969Handling": 73,
 
-
-    "699TopSpeed": 0,
-    "6990to60": 0,
-    "699Handling": 0
+    "699TopSpeed": 103,
+    "6990to60": 12.2,
+    "699Handling": 73
 }

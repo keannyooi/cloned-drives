@@ -1,5 +1,5 @@
 ﻿{
-    "rq": 41,
+    "rq": 43,
     "make": "Nissan",
     "model": "IDx Nismo",
     "modelYear": 2013,
@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": ["Concept"],
     "isPrize": false,
-
 
     "weight": 1210,
     "gc": "Low",
@@ -25,37 +24,31 @@
     "ola": 70.45,
     "description": "The car that made us hopeful bout nissan. Card by Keanny",
 
-
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/810448752233938944/idx.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/810345506081079326/unknown.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/810345636716216340/unknown.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/810345720602165329/unknown.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/810345902756724746/unknown.png",
-    "racehud699": "",
-
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819391214368981042/idx.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819845882215399484/idx_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819845892768399390/idx_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819845898561519636/idx_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819845939027640330/idx_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819845929641050112/idx_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819845907801047090/idx_699.jpg",
 
     "333TopSpeed": 150,
     "3330to60": 5.7,
     "333Handling": 81,
 
-
-    "666TopSpeed": 154,
-    "6660to60": 5.3,
+    "666TopSpeed": 153,
+    "6660to60": 5.4,
     "666Handling": 83,
 
+    "996TopSpeed": 157,
+    "9960to60": 5.1,
+    "996Handling": 83,
 
-    "996TopSpeed": 0,
-    "9960to60": 0,
-    "996Handling": 0,
+    "969TopSpeed": 157,
+    "9690to60": 5.4,
+    "969Handling": 87,
 
-
-    "969TopSpeed": 158,
-    "9690to60": 4.9,
-    "969Handling": 86,
-
-
-    "699TopSpeed": 0,
-    "6990to60": 0,
-    "699Handling": 0
+    "699TopSpeed": 153,
+    "6990to60": 5.1,
+    "699Handling": 87
 }

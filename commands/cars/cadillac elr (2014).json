@@ -1,5 +1,5 @@
 {
-    "rq": 26,
+    "rq": 30,
     "make": "Cadillac",
     "model": "ELR",
     "modelYear": 2014,
@@ -24,23 +24,31 @@
     "ola": 80.49,
     "description": "The slightly more stylish Volt. By Bnuuy",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/791068758373433374/cadillacelr.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/791068841307799572/elr.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/791068857771098152/elr333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/791068877429801040/elr666.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/791068904453701662/elr969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820699208951791656/ELR.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820699513899057152/elr.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820699518910857226/elr333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820699527953907762/elr666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820699560808677446/elr996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820699549109846026/elr969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820699539647234058/elr699.png",
 
-    "333TopSpeed": 110,
+    "333TopSpeed": 112,
     "3330to60": 7.8,
-    "333Handling": 78,
+    "333Handling": 77,
 
-    "666TopSpeed": 113,
+    "666TopSpeed": 117,
     "6660to60": 7.4,
-    "666Handling": 81,
+    "666Handling": 80,
 
-    "969TopSpeed": 116,
-    "9690to60": 7.1,
-    "969Handling": 84
+	"996TopSpeed": 122,
+    "9960to60": 7.0,
+    "996Handling": 80,
+
+    "969TopSpeed": 122,
+    "9690to60": 7.4,
+    "969Handling": 83,
+
+	"699TopSpeed": 117,
+    "6990to60": 7.0,
+    "699Handling": 83
 }

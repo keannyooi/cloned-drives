@@ -1,5 +1,5 @@
 {
-    "rq": 39,
+    "rq": 44,
     "make": "Audi",
     "model": "A3 2.0T Sportback",
     "modelYear": 2006,
@@ -24,27 +24,32 @@
     "ola": 75.00,
     "description": "Underneath an A3 is a VW Golf, but this one has DSG transmission. Card by spence",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/808558423058415616/image0.jpg",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/808558488091099176/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/808558514519801876/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/808558537063268392/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/808558581267955722/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/808558559788793856/image0.jpg",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/822556009859383346/A3sportb.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/822556385194934282/A3S.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/822556391964147803/A3S1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/822556397978779648/A3S2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/822556418904424519/A3S996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/822556412533407774/A3S969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/822556405177384990/A3S699.png",
 
     "333TopSpeed": 151,
-    "3330to60": 6.0,
-    "333Handling": 77,
+    "3330to60": 6.1,
+    "333Handling": 76,
 
-    "666TopSpeed": 155,
-    "6660to60": 5.6,
-    "666Handling": 80,
+    "666TopSpeed": 154,
+    "6660to60": 5.8,
+    "666Handling": 79,
 
-	"996TopSpeed": 159,
-    "9960to60": 5.1,
-    "996Handling": 80,
+    "996TopSpeed": 158,
+    "9960to60": 5.4,
+    "996Handling": 79,
 
-    "969TopSpeed": 159,
-    "9690to60": 5.2,
-    "969Handling": 82
+    "969TopSpeed": 158,
+    "9690to60": 5.8,
+    "969Handling": 82,
+
+    "699TopSpeed": 154,
+    "6990to60": 5.4,
+    "699Handling": 82
+
 }

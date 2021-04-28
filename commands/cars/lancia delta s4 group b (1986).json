@@ -1,5 +1,5 @@
 {
-    "rq": 88,
+    "rq": 113,
     "make": "Lancia",
     "model": "Delta S4 Group B",
     "modelYear": 1986,
@@ -24,31 +24,31 @@
     "ola": 88.88,
     "description": "The car that ended Group B. Card by Havvy.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/801203031839735828/LanciaDeltaS4GroupB.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/801203316402946088/deltarallythingy.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/801203334161498122/deltarallything333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/801203348157366312/deltarallything666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/801203410040389632/deltarallything996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/801203391752699944/deltarallything969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/801203371163254784/deltarallything699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824653772974063636/lancharally.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824654187211128862/Delta.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824654191342780436/delta333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824654201866027058/delta666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824654255020834846/delta996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824654246234161162/delta969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824654212909891594/delta699.png",
 
-    "333TopSpeed": 143,
+    "333TopSpeed": 144,
     "3330to60": 2.2,
     "333Handling": 88,
 
-    "666TopSpeed": 146,
+    "666TopSpeed": 147,
     "6660to60": 2.1,
     "666Handling": 91,
 
-    "996TopSpeed": 150,
-    "9960to60": 1.9,
-    "996Handling": 92,
+    "996TopSpeed": 151,
+    "9960to60": 2.0,
+    "996Handling": 91,
 
-    "969TopSpeed": 149,
-    "9690to60": 2.0,
+    "969TopSpeed": 151,
+    "9690to60": 2.1,
     "969Handling": 94,
 
-    "699TopSpeed": 148,
+    "699TopSpeed": 147,
     "6990to60": 2.0,
     "699Handling": 94
 }

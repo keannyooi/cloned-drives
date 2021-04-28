@@ -1,0 +1,54 @@
+{
+    "rq": 26,
+    "make": "Citroën",
+    "model": "C1 1.0i 12v",
+    "modelYear": 2009,
+    "country": "FR",
+    "topSpeed": 98,
+    "0to60": 12.9,
+    "handling": 72,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 805,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 28.60,
+    "ola": 63.21,
+    "description": "Cute lil french city car. Card by Andu",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/832613896548122694/c1.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821338676361560094/C1.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821338682333462529/C1-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821338688884572200/C1-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821338709223538688/C1-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821338702545551400/C1-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821338695097122826/C1-699.png",
+
+    "333TopSpeed": 103,
+    "3330to60": 12.3,
+    "333Handling": 74,
+
+    "666TopSpeed": 109,
+    "6660to60": 11.6,
+    "666Handling": 77,
+
+    "996TopSpeed": 114,
+    "9960to60": 11.0,
+    "996Handling": 77,
+
+    "969TopSpeed": 114,
+    "9690to60": 11.6,
+    "969Handling": 80,
+
+    "699TopSpeed": 109,
+    "6990to60": 11.0,
+    "699Handling": 80
+}

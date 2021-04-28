@@ -1,5 +1,5 @@
 {
-    "rq": 19,
+    "rq": 27,
     "make": "Honda",
     "model": "Insight",
     "modelYear": 2000,
@@ -24,31 +24,31 @@
     "ola": 62.96,
     "description": "Honda entered the hybrid market to compete with Toyota, with a quirky-looking compact car. Card by Spence",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/804383532364726281/image0.jpg?width=1154&height=717",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/804383595321098290/image0.jpg?width=1154&height=721",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/804383620512612431/image0.jpg?width=1154&height=721",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/804383648992198706/image0.jpg?width=1154&height=721",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/804383701189394442/image0.jpg?width=1154&height=721",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/804383679644172408/image0.jpg?width=1154&height=721",
-    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/804383726616313856/image0.jpg?width=1154&height=721",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/823512767444549662/insight.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823514364317270036/Insight.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823513009820663848/Insight1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823513016963956796/Insight2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823513112547688558/Insight996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823513102480834590/Insight969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823513023871320064/Insight699.png",
 
-    "333TopSpeed": 110,
-    "3330to60": 9.9,
+    "333TopSpeed": 112,
+    "3330to60": 10.3,
     "333Handling": 71,
 
-    "666TopSpeed": 113,
-    "6660to60": 9.1, 
+    "666TopSpeed": 117,
+    "6660to60": 9.7,
     "666Handling": 74,
 
-    "996TopSpeed": 116,
-    "9960to60": 8.1,
+    "996TopSpeed": 122,
+    "9960to60": 9.2,
     "996Handling": 74,
 
-    "969TopSpeed": 116,
-    "9690to60": 8.3,
-    "969Handling": 76,
+    "969TopSpeed": 122,
+    "9690to60": 9.7,
+    "969Handling": 77,
 
-    "699TopSpeed": 113,
-    "6990to60": 8.5,
-    "699Handling": 76
+    "699TopSpeed": 117,
+    "6990to60": 9.2,
+    "699Handling": 77
 }

@@ -1,5 +1,5 @@
 {
-    "rq": 49,
+    "rq": 53,
     "make": "Lexus",
     "model": "ES 350 Luxury",
     "modelYear": 2019,
@@ -24,23 +24,31 @@
     "ola": 86.67,
     "description": "Another sedan from Lexus that only people who are 70 will appreciate. Card by Macan.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/812827227607662622/ES_350_Luxury_19.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/812827959869046844/Lexus_ES_350_Luxury_2019_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/812827970371977246/Lexus_ES_350_Luxury_2019_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/812827972997611520/Lexus_ES_350_Luxury_2019_666.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/812827984704176139/Lexus_ES_350_Luxury_2019_969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824914573332316170/ES_350_Luxury_19.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824914336677363732/ES350Lux.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824914349591101440/ES350Lux1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824914355925549106/ES350Lux2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824914377575628820/ES350Lux996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824914371527966730/ES350Lux969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824914363110522940/ES350Lux699.png",
 
     "333TopSpeed": 139,
-    "3330to60": 5.7,
-    "333Handling": 78,
+    "3330to60": 5.8,
+    "333Handling": 77,
 
-    "666TopSpeed": 142,
-    "6660to60": 5.4,
+    "666TopSpeed": 143,
+    "6660to60": 5.5,
     "666Handling": 80,
 
-    "969TopSpeed": 146,
-    "9690to60": 5.0,
-    "969Handling": 83
+    "996TopSpeed": 147,
+    "9960to60": 5.2,
+    "996Handling": 80,
+
+    "969TopSpeed": 147,
+    "9690to60": 5.5,
+    "969Handling": 83,
+
+    "699TopSpeed": 143,
+    "6990to60": 5.2,
+    "699Handling": 83
 }

@@ -1,19 +1,18 @@
-﻿{
-    "rq": 41,
+{
+    "rq": 43,
     "make": "BMW",
     "model": "M5",
     "modelYear": 1985,
     "country": "DE",
-    "topSpeed": 150,
-    "0to60": 6.2,
+    "topSpeed": 153,
+    "0to60": 6.4,
     "handling": 75,
     "driveType": "RWD",
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
 
-
-    "weight": 1430,
+    "weight": 1500,
     "gc": "Medium",
     "seatCount": 5,
     "bodyStyle": "Sedan",
@@ -21,41 +20,35 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 63.92,
-    "ola": 80.77,
-    "description": "The super sedan that paved the way. Card by RushHour",
+    "mra": 66.67,
+    "ola": 78.13,
+    "description": "The super sedan that paved the way. Card by Connor",
 
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/821831901740138547/C.BMWM5E28.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821832079632498688/C.BMWM5.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821832086105096302/C.BMWM5-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821832099056320522/C.BMWM5-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821832140047253544/C.BMWM5-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821832127665668177/C.BMWM5-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821832112763043950/C.BMWM5-699.png",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/795999575173103616/1985_BMW_M5.png",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/796001318178521118/1985_BMW_M5.png",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/796001422486667304/1985_BMW_M5_333.png",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/796001431877713940/1985_BMW_M5_666.png",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/796001468276015134/1985_BMW_M5_996.png",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/796001455349563392/1985_BMW_M5_969.png",
-    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/796001445992202270/1985_BMW_M5_699.png",
+    "333TopSpeed": 156,
+    "3330to60": 6.1,
+    "333Handling": 77,
 
-
-    "333TopSpeed": 155,
-    "3330to60": 5.9,
-    "333Handling": 78,
-
-
-    "666TopSpeed": 159,
-    "6660to60": 5.6,
-    "666Handling": 81,
-
+    "666TopSpeed": 160,
+    "6660to60": 5.8,
+    "666Handling": 80,
 
     "996TopSpeed": 163,
-    "9960to60": 5.3,
-    "996Handling": 81,
+    "9960to60": 5.4,
+    "996Handling": 80,
 
-
-    "969TopSpeed": 162,
-    "9690to60": 5.4,
+    "969TopSpeed": 163,
+    "9690to60": 5.8,
     "969Handling": 83,
 
-
-    "699TopSpeed": 161,
-    "6990to60": 5.5,
+    "699TopSpeed": 160,
+    "6990to60": 5.4,
     "699Handling": 83
 }

@@ -24,23 +24,31 @@
     "ola": 62.00,
     "description": "The closest thing to a bike in Cloned Drives. Card by DodgeDemon",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/806817918007902278/1982_Trihawk_304.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/806464097512194078/tricock.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/806464121792364594/tricock_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/806464133419499520/tricock_666.jpg",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/806464145687969792/tricock_969.jpg",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/823453071211364382/1982_Trihawk_304.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823456969686777876/cock_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823456978142494791/cock_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823456984413896734/cock_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823457013010923520/cock_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823457002390159370/cock_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823456992596328498/cock_699.jpg",
 
-    "333TopSpeed": 100,
-    "3330to60": 9.3,
+    "333TopSpeed": 102,
+    "3330to60": 9.5,
     "333Handling": 80,
 
-    "666TopSpeed": 103,
-    "6660to60": 8.6,
+    "666TopSpeed": 108,
+    "6660to60": 9.0, 
     "666Handling": 82,
 
-    "969TopSpeed": 105,
-    "9690to60": 7.9,
-    "969Handling": 85
+    "996TopSpeed": 113,
+    "9960to60": 8.5,
+    "996Handling": 82,
+
+    "969TopSpeed": 113,
+    "9690to60": 9.0,
+    "969Handling": 85,
+
+    "699TopSpeed": 108,
+    "6990to60": 8.5,
+    "699Handling": 85
 }

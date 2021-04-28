@@ -1,5 +1,5 @@
 {
-    "rq": 70,
+    "rq": 59,
     "make": "Acura",
     "model": "TLX SH-AWD",
     "modelYear": 2021,
@@ -24,23 +24,31 @@
     "ola": 91.53,
     "description": "Acura's latest effort at a executive sedan. By DodgeDemon",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/789596078461943838/image0.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/789596162473721896/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/789596194262351932/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/789596216308138014/image0.jpg",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/789596251129118721/image0.jpg",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826157318231818320/TLX.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826158033909317712/TLX.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826158037411823627/TLX1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826158042651426837/TLX2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826158066223284244/TLX996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826158057193078884/TLX969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826158051383836683/TLX699.png",
 
     "333TopSpeed": 135,
     "3330to60": 5.6,
     "333Handling": 81,
 
-    "666TopSpeed": 138,
-    "6660to60": 5.2,
+    "666TopSpeed": 139,
+    "6660to60": 5.3,
     "666Handling": 83,
 
-    "969TopSpeed": 142,
-    "9690to60": 4.9,
-    "969Handling": 86
+    "996TopSpeed": 143,
+    "9960to60": 5.0,
+    "996Handling": 83,
+
+    "969TopSpeed": 143,
+    "9690to60": 5.3,
+    "969Handling": 87,
+
+    "699TopSpeed": 139,
+    "6990to60": 5.0,
+    "699Handling": 87
 }

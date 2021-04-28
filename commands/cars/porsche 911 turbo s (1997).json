@@ -1,5 +1,5 @@
 {
-    "rq": 81,
+    "rq": 77,
     "make": "Porsche",
     "model": "911 Turbo S",
     "modelYear": 1997,
@@ -9,7 +9,7 @@
     "handling": 86,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [],
+    "tags": ["Supercar"],
     "isPrize": false,
 
     "weight": 1500,
@@ -24,31 +24,31 @@
     "ola": 69.68,
     "description": "Faster version of the already fast Turbo. Card by Spence.",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/806531688401993768/image0.jpg?width=1154&height=716",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/806531821817823242/image0.jpg?width=1154&height=720",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/806531842672558140/image0.jpg?width=1154&height=720",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/806531863446290483/image0.jpg?width=1154&height=720",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/806531934896914472/image0.jpg?width=1154&height=720",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/806531911987232818/image0.jpg?width=1154&height=720",
-    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/806531889383866378/image0.jpg?width=1154&height=720",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824410415249096734/spence911turboSthingy.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824410569515728896/ts97.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824410573386809374/ts97333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824410580139114516/ts97666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824410608451059762/ts97996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824410598166495252/ts97969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824410590343725076/ts97699.png",
 
-    "333TopSpeed": 190,
-    "3330to60": 3.6,
+    "333TopSpeed": 189,
+    "3330to60": 3.7,
     "333Handling": 89,
 
-    "666TopSpeed": 194,
-    "6660to60": 3.4,
+    "666TopSpeed": 192,
+    "6660to60": 3.5, 
     "666Handling": 92,
 
-    "996TopSpeed": 198,
-    "9960to60": 3.2,
+    "996TopSpeed": 194,
+    "9960to60": 3.3,
     "996Handling": 92,
 
-    "969TopSpeed": 197,
-    "9690to60": 3.3,
+    "969TopSpeed": 194,
+    "9690to60": 3.5,
     "969Handling": 95,
 
-    "699TopSpeed": 195,
+    "699TopSpeed": 192,
     "6990to60": 3.3,
     "699Handling": 95
 }

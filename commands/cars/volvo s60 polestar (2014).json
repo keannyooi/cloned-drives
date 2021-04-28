@@ -1,5 +1,5 @@
 {
-    "rq": 74,
+    "rq": 71,
     "make": "Volvo",
     "model": "S60 Polestar",
     "modelYear": 2014,
@@ -9,10 +9,10 @@
     "handling": 82,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [],
+    "tags": ["Rest of the World", "Super Sedan"],
     "isPrize": false,
 
-    "weight": 1763,
+    "weight": 1760,
     "gc": "Medium",
     "seatCount": 5,
     "bodyStyle": "Sedan",
@@ -22,25 +22,33 @@
     "fuelType": "Petrol",
     "mra": 67.16,
     "ola": 97.78,
-    "description": "",
+    "description": "Sensible with a wicked twist. Card by Keanny",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/765196078345355294/volvo_s60_polestar.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/749571432026996817/volvo_s60_polestar.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/749571610750615602/volvo_s60_polestar_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/749571622435946506/volvo_s60_polestar_666.jpg",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/749571634523799572/volvo_s60_polestar_969.jpg",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820931819695505408/image1151.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820932698720829520/s60_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820932706245279784/s60_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820932711526694922/s60_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820932759471128616/s60_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820932736218693682/s60_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820932725166309396/s60_699.jpg",
 
-    "333TopSpeed": 163,
+    "333TopSpeed": 162,
     "3330to60": 4.3,
     "333Handling": 85,
 
-    "666TopSpeed": 167,
-    "6660to60": 4.0,
-    "666Handling": 88,
+    "666TopSpeed": 166,
+    "6660to60": 4.1,
+    "666Handling": 87,   
 
-    "969TopSpeed": 171,
-    "9690to60": 3.8,
-    "969Handling": 91
+    "996TopSpeed": 169,
+    "9960to60": 3.8,
+    "996Handling": 87,
+
+    "969TopSpeed": 169,
+    "9690to60": 4.1,
+    "969Handling": 91,
+
+    "699TopSpeed": 166,
+    "6990to60": 3.8,
+    "699Handling": 91
 }

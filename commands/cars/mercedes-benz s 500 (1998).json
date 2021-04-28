@@ -1,5 +1,5 @@
 {
-    "rq": 49,
+    "rq": 48,
     "make": "Mercedes-Benz",
     "model": "S 500",
     "modelYear": 1998,
@@ -24,27 +24,31 @@
     "ola": 84.38,
     "description": "The W220 S-Class that was too afraid of having a V12. card by havvy",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/795167837496147978/Mercedes-BenzS500.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/795170363721908224/000s500.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/795170375687471154/111s500.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/795170381731463168/222s500.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/795170400396247060/332s500.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/795170391282417714/323s500.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/822236453177917491/Mercedes-BenzS500.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/822236496844029962/000_s500.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/822236502091628544/111_s500.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/822236506222886992/222_s500.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/822236517447106590/332_s500.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/822236513973698560/323_s500.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/822236508697657364/233_s500.png",
 
-    "333TopSpeed": 159,
-    "3330to60": 6.0,
-    "333Handling": 75,
+    "333TopSpeed": 158,
+    "3330to60": 6.1,
+    "333Handling": 74,
 
-    "666TopSpeed": 163,
-    "6660to60": 5.6,
+    "666TopSpeed": 162,
+    "6660to60": 5.8,
     "666Handling": 77,
 
-	"996TopSpeed": 168,
-    "9960to60": 5.1,
+    "996TopSpeed": 165,
+    "9960to60": 5.4,
     "996Handling": 77,
 
-    "969TopSpeed": 167,
-    "9690to60": 5.2,
-    "969Handling": 80
+    "969TopSpeed": 165,
+    "9690to60": 5.8,
+    "969Handling": 80,
+
+    "699TopSpeed": 162,
+    "6990to60": 5.4,
+    "699Handling": 80
 }

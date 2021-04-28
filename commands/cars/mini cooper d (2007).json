@@ -1,5 +1,5 @@
 ﻿{
-    "rq": 30,
+    "rq": 40,
     "make": "Mini",
     "model": "Cooper D",
     "modelYear": 2007,
@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
 
     "weight": 1110,
     "gc": "Medium",
@@ -25,37 +24,31 @@
     "ola": 68.09,
     "description": "He got that D. Card by Andu",
 
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820035893070397511/CooperD.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820036508500361266/CooperD.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820036517984337970/CooperD1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820036524762595368/CooperD2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820036557724581888/CooperD996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820036547360587848/CooperD969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820036537558892550/CooperD699.png",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/804410240614400042/CooperD.png?width=1154&height=719",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/804409868202278963/CooperD.png",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/804409923235741736/Cooper1.png",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/804413375223693372/Cooper2.png",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/804413626818887680/CooperD332.png",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/804411377162256415/CooperD323.png",
-    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/804411606796206100/CooperD233.png",
-
-
-    "333TopSpeed": 122,
-    "3330to60": 8.7,
+    "333TopSpeed": 123,
+    "3330to60": 8.9,
     "333Handling": 84,
 
+    "666TopSpeed": 128,
+    "6660to60": 8.5, 
+    "666Handling": 86,
 
-    "666TopSpeed": 125,
-    "6660to60": 8.1, 
-    "666Handling": 87,
+    "996TopSpeed": 132,
+    "9960to60": 8.0,
+    "996Handling": 86,
 
-
-    "996TopSpeed": 129,
-    "9960to60": 7.3,
-    "996Handling": 87,
-
-
-    "969TopSpeed": 128,
-    "9690to60": 7.5,
+    "969TopSpeed": 132,
+    "9690to60": 8.5,
     "969Handling": 90,
 
-
-    "699TopSpeed": 124,
-    "6990to60": 7.6,
+    "699TopSpeed": 128,
+    "6990to60": 8.0,
     "699Handling": 90
 }

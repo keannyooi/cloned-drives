@@ -1,5 +1,5 @@
 {
-    "rq": 19,
+    "rq": 25,
     "make": "Ford",
     "model": "Focus Electric",
     "modelYear": 2011,
@@ -24,23 +24,31 @@
     "ola": 80.00,
     "description": "A charged up version of a stylish hatch. Card by Keanny",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/806459896064638996/electric_focus.png?width=1154&height=710",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/806459702731997235/electric_focus.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/806459719622852618/electric_focus_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/806459727021867028/electric_focus_666.jpg",
-    "racehud996": "",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/806459738115276800/electric_focus_969.jpg",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819390463719112704/electric_focus.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819810608106438677/electric_focus_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819810617837223956/electric_focus_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819810621594796042/electric_focus_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819810654654431242/electric_focus_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819810639048081448/electric_focus_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819810633821716520/electric_focus_699.jpg",
 
-    "333TopSpeed": 87,
-    "3330to60": 9.3,
+    "333TopSpeed": 91,
+    "3330to60": 9.5,
     "333Handling": 70,
 
-    "666TopSpeed": 90,
-    "6660to60": 8.6, 
-    "666Handling": 73,
+    "666TopSpeed": 97,
+    "6660to60": 9.0,
+    "666Handling": 72,
 
-    "969TopSpeed": 92,
-    "9690to60": 7.9,
-    "969Handling": 75
+	"996TopSpeed": 103,
+    "9960to60": 8.5,
+    "996Handling": 72,
+
+    "969TopSpeed": 103,
+    "9690to60": 9.0,
+    "969Handling": 75,
+
+	"699TopSpeed": 97,
+    "6990to60": 8.5,
+    "699Handling": 75
 }

@@ -1,5 +1,5 @@
 {
-    "rq": 70,
+    "rq": 68,
     "make": "Lexus",
     "model": "LF-A Roadster Concept",
     "modelYear": 2008,
@@ -24,27 +24,31 @@
     "ola": 80.00,
     "description": "A stylish convertible of the LF-A Sports Car Concept. Card by Bnuuy",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/813397815866032138/LF-Aroadsterconcept08.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/813398938782007296/lfaroadster.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/813398950190907413/lfaroadster333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/813398963310952448/lfaroadster666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/813399018737500190/lfaroadster996.png",
-    "racehud969": "",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/813398999401889812/lfaroadster699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/821061121707343942/LF-ARoaster.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821061745425907743/lf-aroad.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821061750698803220/lf-aroad333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821061758751473714/lf-aroad666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821061780972765204/lf-aroad996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821061773595508747/lf-aroad969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821061766439895100/lf-aroad699.png",
 
-    "333TopSpeed": 202,
-    "3330to60": 4.3,
+    "333TopSpeed": 203,
+    "3330to60": 4.4,
     "333Handling": 90,
 
-    "666TopSpeed": 204,
+    "666TopSpeed": 205,
     "6660to60": 4.1,
     "666Handling": 93,
 
-    "996TopSpeed": 207,
-    "9960to60": 3.7,
-    "996Handling": 94,
+    "996TopSpeed": 208,
+    "9960to60": 3.9,
+    "996Handling": 93,
+
+    "969TopSpeed": 208,
+    "9690to60": 4.1,
+    "969Handling": 97,
 
     "699TopSpeed": 205,
-    "6990to60": 3.8,
+    "6990to60": 3.9,
     "699Handling": 97
 }

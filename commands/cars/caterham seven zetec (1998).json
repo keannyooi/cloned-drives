@@ -1,5 +1,5 @@
 {
-    "rq": 44,
+    "rq": 45,
     "make": "Caterham",
     "model": "Seven Zetec",
     "modelYear": 1998,
@@ -24,27 +24,31 @@
     "ola": 65.52,
     "description": "Card by DodgeDemon.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/806817349880643584/1998_Cate_7_Zetec.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/806489570858106900/cate.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/806489622648717342/cate_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/806489632102940702/cate_666.jpg",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/806489685253685269/cate_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/806489659169308692/cate_699.jpg",
+    "card": "https://cdn.discordapp.com/attachments/819200156623962122/827066242280063006/cate_000.jpg",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/827066242280063006/cate_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/827066249153347594/cate_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/827066257362649109/cate_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/827066300190556190/cate_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/827066288722804736/cate_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/827066273330495538/cate_699.jpg",
 
-    "333TopSpeed": 123,
+    "333TopSpeed": 124,
     "3330to60": 5.5,
     "333Handling": 82,
 
-    "666TopSpeed": 126,
-    "6660to60": 5.1,
-    "666Handling": 85,
+    "666TopSpeed": 129,
+    "6660to60": 5.2,
+    "666Handling": 84,
 
     "969TopSpeed": 129,
-    "9690to60": 4.8,
-    "969Handling": 87,
+    "9690to60": 4.9,
+    "969Handling": 88,
 
-    "699TopSpeed": 126,
-    "6990to60": 4.8,
-    "699Handling": 88
+    "699TopSpeed": 133,
+    "6990to60": 5.2,
+    "699Handling": 88,
+
+    "996TopSpeed": 133,
+    "996to60": 4.9,
+    "996Handling": 84
 }

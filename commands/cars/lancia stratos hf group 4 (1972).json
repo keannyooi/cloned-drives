@@ -1,5 +1,5 @@
 {
-    "rq": 66,
+    "rq": 88,
     "make": "Lancia",
     "model": "Stratos HF Group 4",
     "modelYear": 1972,
@@ -9,7 +9,7 @@
     "handling": 81,
     "driveType": "RWD",
     "tyreType": "Off-Road",
-    "tags": ["2021 Spring Collection", "Motorsport"],
+    "tags": ["Motorsport"],
     "isPrize": false,
 
     "weight": 880,
@@ -24,23 +24,31 @@
     "ola": 73.40,
     "description": "The infamous Stratos rally car. Card by Bnuuy.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/809380864214695946/Stratos.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/809380944465231902/stratos.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/809380954850066472/stratos333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/809380966735937586/stratos666.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/809380986060013568/stratos969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819944564768637018/Stratos.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819944904833892392/stratos.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819944910706704384/stratos333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819944916514897980/Stratos666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819944947453132800/stratos996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819944936501411871/stratos969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819944927173017610/stratos699.png",
 
-    "333TopSpeed": 153,
-    "3330to60": 3.9,
+    "333TopSpeed": 152,
+    "3330to60": 4.0,
     "333Handling": 84,
 
-    "666TopSpeed": 157,
-    "6660to60": 3.7,
-    "666Handling": 87,
+    "666TopSpeed": 156,
+    "6660to60": 3.8,
+    "666Handling": 86,
 
-    "969TopSpeed": 160,
-    "9690to60": 3.6,
-    "969Handling": 90
+	"996TopSpeed": 159,
+    "9960to60": 3.6,
+    "996Handling": 86,
+
+    "969TopSpeed": 159,
+    "9690to60": 3.8,
+    "969Handling": 90,
+
+	"699TopSpeed": 156,
+    "6990to60": 3.6,
+    "699Handling": 90
 }

@@ -1,5 +1,5 @@
 {
-    "rq": 57,
+    "rq": 60,
     "make": "Renault",
     "model": "DeZir",
     "modelYear": 2010,
@@ -24,31 +24,31 @@
     "ola": 65.20,
     "description": "A butterfly-door, lightweight, electric concept from Renault. Card by DodgeDemon.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/807132983491428362/2010_Renault_DeZir.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/807133093504221214/DeZir000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/807133156095688725/DeZir333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/807133201977180190/DeZir666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/807133592505024522/DeZir996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/807133283388751912/DeZir969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/807133256129445888/DeZir699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826091890997985290/renault_dezir.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826092512900808704/dezir_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826092521322577920/dezir_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826092526770585670/dezir_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826092574090592307/dezir_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826092562460835840/dezir_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826092545820852284/dezir_699.jpg",
 
-    "333TopSpeed": 115,
-    "3330to60": 4.7,
+    "333TopSpeed": 117,
+    "3330to60": 4.8,
     "333Handling": 93,
 
-    "666TopSpeed": 118,
-    "6660to60": 4.5,
+    "666TopSpeed": 121,
+    "6660to60": 4.5, 
     "666Handling": 96,
 
-    "996TopSpeed": 122,
-    "9960to60": 4.2,
-    "996Handling": 97,
+    "996TopSpeed": 126,
+    "9960to60": 4.3,
+    "996Handling": 96,
 
-    "969TopSpeed": 121,
-    "9690to60": 4.3,
+    "969TopSpeed": 126,
+    "9690to60": 4.5,
     "969Handling": 100,
 
-    "699TopSpeed": 120,
+    "699TopSpeed": 121,
     "6990to60": 4.3,
     "699Handling": 100
 }

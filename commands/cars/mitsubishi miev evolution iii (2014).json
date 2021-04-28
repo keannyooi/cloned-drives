@@ -1,5 +1,5 @@
 {
-    "rq": 94,
+    "rq": 93,
     "make": "Mitsubishi",
     "model": "MiEV Evolution III",
     "modelYear": 2014,
@@ -24,13 +24,13 @@
     "ola": 96.30,
     "description": "For purple mountain, majesties… wEEEo—wEEEo … wEEE—wEEEo…wEEEo—wEEEo. Card by keanny",
 
-    "card": "https://cdn.discordapp.com/attachments/733973415366623274/778746533050449961/mitsubishi_miev_evolution_iii.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/778969504243908628/mitsubishi_miev_evolution_iii.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/778969637274386432/mitsubishi_miev_evolution_iii_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/778969649500127242/mitsubishi_miev_evolution_iii_666.jpg",
-    "racehud996": "",
-    "racehud969": "",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/778969663014830080/mitsubishi_miev_evolution_iii_699.jpg",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819383487114903602/miev_evo_iii.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819522328021958707/miev_evo_iii_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819522335131828224/miev_evo_iii_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819522340215193620/miev_evo_iii_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819522382166622208/miev_evo_iii_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819522378945658920/miev_evo_iii_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819522364664184842/miev_evo_iii_699.jpg",
 
     "333TopSpeed": 189,
     "3330to60": 2.6,
@@ -38,9 +38,17 @@
 
     "666TopSpeed": 192,
     "6660to60": 2.4,
-    "666Handling": 103,
+    "666Handling": 102,
 
-    "699TopSpeed": 195,
+    "699TopSpeed": 192,
     "6990to60": 2.3,
-    "699Handling": 107
+    "699Handling": 107,
+
+    "969TopSpeed": 194,
+    "969to60": 2.4,
+    "969Handling": 107,
+
+    "996TopSpeed": 194,
+    "996to60": 2.3,
+    "996Handling": 102
 }

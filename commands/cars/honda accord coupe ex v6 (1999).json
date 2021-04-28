@@ -1,5 +1,5 @@
 {
-    "rq": 33,
+    "rq": 39,
     "make": "Honda",
     "model": "Accord Coupe EX V6",
     "modelYear": 1999,
@@ -24,27 +24,31 @@
     "ola": 87.18,
     "description": "*Basically* a front-drive NSX. Card by ChickenMcNuggets",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/811774909550034954/acorde_coupe.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/811773109963063316/acored_stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/811773190992035913/acored_1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/811773227001053254/acored_2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/811773281719943208/acored_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/811773255576322118/acored_323.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/821117265872420905/acorde_coupe.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821116736454656020/acored_stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821116764397895700/acored_1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821116786908594176/acored_2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821116846584627291/acored_332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821116827215986708/acored_323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821116807342850129/acored_233.png",
 
-    "333TopSpeed": 135,
-    "3330to60": 7.3,
+    "333TopSpeed": 136,
+    "3330to60": 7.4,
     "333Handling": 73,
 
-    "666TopSpeed": 138,
-    "6660to60": 6.8,
+    "666TopSpeed": 140,
+    "6660to60": 7.0,
     "666Handling": 76,
 
-	"996TopSpeed": 145,
-    "9960to60": 6.0,
+	"996TopSpeed": 144,
+    "9960to60": 6.6,
     "996Handling": 76,
 
-    "969TopSpeed": 142,
-    "9690to60": 6.3,
-    "969Handling": 79
+    "969TopSpeed": 144,
+    "9690to60": 7.0,
+    "969Handling": 79,
+
+	"699TopSpeed": 140,
+    "6990to60": 6.6,
+    "699Handling": 79
 }

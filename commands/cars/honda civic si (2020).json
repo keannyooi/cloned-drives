@@ -1,5 +1,5 @@
 {
-    "rq": 41,
+    "rq": 42,
     "make": "Honda",
     "model": "Civic Si",
     "modelYear": 2020,
@@ -24,31 +24,31 @@
     "ola": 73.53,
     "description": "Card by Macan.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/801197173873704970/Honda_Civic_Si_2020.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/801197428111573052/civic.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/801197440324730971/civic333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/801197452806848523/civic666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/801197517705445376/civic996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/801197498629619762/civic969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/801197478649135169/civic699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824425246735859732/civicSi.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824430077981884426/csi.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824430084030464010/csi333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824430090435559454/csi666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824430113142734858/csi996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824430107220377660/csi969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824430099663159316/csi699.png",
 
-    "333TopSpeed": 140,
+    "333TopSpeed": 141,
     "3330to60": 6.5,
     "333Handling": 89,
 
-    "666TopSpeed": 143,
-    "6660to60": 6.3,
+    "666TopSpeed": 145,
+    "6660to60": 6.1,
     "666Handling": 92,
 
-    "996TopSpeed": 147,
-    "9960to60": 6.0,
-    "996Handling": 93,
+    "996TopSpeed": 150,
+    "9960to60": 5.8,
+    "996Handling": 92,
 
-    "969TopSpeed": 146,
+    "969TopSpeed": 150,
     "9690to60": 6.1,
     "969Handling": 95,
 
     "699TopSpeed": 145,
-    "6990to60": 6.1,
+    "6990to60": 5.8,
     "699Handling": 95
 }

@@ -1,5 +1,5 @@
 {
-    "rq": 33,
+    "rq": 27,
     "make": "Mercedes-Benz",
     "model": "300 SL Coupe",
     "modelYear": 1954,
@@ -24,31 +24,31 @@
     "ola": 63.64,
     "description": "Car goes brrrrr. Card by bnuuy.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/800731459224338432/300sl.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/800731522889154630/300sl.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/800731534764015646/300sl333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/800731558977863690/300sl666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/800731627210539028/300sl996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/800731603735281685/300sl969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/800731583199969310/300sl699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820707896341561384/300SL.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820708298138451978/300sl.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820708301816725564/300sl333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820708307094208532/300sl666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820708337296867388/300sl996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820708329990520853/300sl969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820708320620707851/300sl699.png",
 
-    "333TopSpeed": 149,
+    "333TopSpeed": 150,
     "3330to60": 8.4,
     "333Handling": 69,
 
-    "666TopSpeed": 152,
-    "6660to60": 8.0,
-    "666Handling": 72,
+    "666TopSpeed": 153,
+    "6660to60": 7.9,
+    "666Handling": 71,
 
-    "996TopSpeed": 156,
-    "9960to60": 7.6,
-    "996Handling": 73,
+    "996TopSpeed": 157,
+    "9960to60": 7.5,
+    "996Handling": 71,
 
-    "969TopSpeed": 155,
-    "9690to60": 7.7,
+    "969TopSpeed": 157,
+    "9690to60": 7.9,
     "969Handling": 74,
 
-    "699TopSpeed": 154,
-    "6990to60": 7.7,
+    "699TopSpeed": 153,
+    "6990to60": 7.5,
     "699Handling": 74
 }

@@ -1,5 +1,5 @@
 {
-    "rq": 94,
+    "rq": 86,
     "make": "Chevrolet",
     "model": "CERV III",
     "modelYear": 1990,
@@ -22,29 +22,33 @@
     "fuelType": "Petrol",
     "mra": 130.00,
     "ola": 76.92,
-    "description": "The Closest thing to a Mid-Engine Corvette before the C8. Card by DodgeDemon.",
+    "description": "The closest thing to a mid-engine Corvette before the C8. Card by DodgeDemon.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/807130262944743464/1990_Chevrolet_CERV_III.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/807130560702840832/ChevyCERVIII000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/807130639924854815/ChevyCERVIII333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/807130734925316106/ChevyCERVIII666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/807131025427267604/ChevyCERVIII996.png",
-    "racehud969": "",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/807131010663448576/ChevyCERVIII699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820815680530153502/1990_Chevrolet_CERV_III.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824389899112939590/cerv.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824389907237044264/cerv333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824389914325942323/cerv666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824389938354323526/cerv996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824389928535326720/cerv969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824389921758249051/cerv699.png",
 
     "333TopSpeed": 227,
     "3330to60": 3.7,
     "333Handling": 96,
 
-    "666TopSpeed": 229,
+    "666TopSpeed": 230,
     "6660to60": 3.5,
     "666Handling": 99,
 
-    "996TopSpeed": 233,
+    "996TopSpeed": 232,
     "9960to60": 3.3,
-    "996Handling": 100,
+    "996Handling": 99,
 
-    "699TopSpeed": 231,
-    "6990to60": 3.4,
+	"969TopSpeed": 232,
+    "9690to60": 3.5,
+    "969Handling": 103,
+
+    "699TopSpeed": 230,
+    "6990to60": 3.3,
     "699Handling": 103
 }

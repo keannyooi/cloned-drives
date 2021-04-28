@@ -1,5 +1,5 @@
 {
-    "rq": 31,
+    "rq": 38,
     "make": "Toyota",
     "model": "Yaris iA",
     "modelYear": 2017,
@@ -24,36 +24,31 @@
     "ola": 71.58,
     "description": "Cute Mazda you got there, oh wait. Card by Connor",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/795980429433110538/unknown.png",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/795980939149705217/toyota_yaris_ia.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/795980971400364052/toyota_yaris_ia_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/795980979423936542/toyota_yaris_ia_666.jpg",
-    "racehud996": "",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/795980990970331176/toyota_yaris_ia_969.jpg",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820017402209239070/D.ToyotaYarisiA.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820016160921092106/D.ToyotaYarisiA.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820016172786647090/D.ToyotaYarisiA-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820016189648273438/D.ToyotaYarisiA-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820016264415674378/D.ToyotaYarisiA-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820016232141029448/D.ToyotaYarisiA-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820016203216060426/D.ToyotaYarisiA-699.png",
 
+    "333TopSpeed": 124,
+    "3330to60": 8.3,
+    "333Handling": 76,
 
-    "333TopSpeed": 123,
-    "3330to60": 8.1,
-    "333Handling": 77,
-
-
-    "666TopSpeed": 127,
-    "6660to60": 7.5,
+    "666TopSpeed": 129,
+    "6660to60": 7.8, 
     "666Handling": 79,
 
+    "996TopSpeed": 133,
+    "9960to60": 7.4,
+    "996Handling": 79,
 
-    "996TopSpeed": 0,
-    "9960to60": 0,
-    "996Handling": 0,
-
-
-    "969TopSpeed": 130,
-    "9690to60": 7.0,
+    "969TopSpeed": 133,
+    "9690to60": 7.8,
     "969Handling": 82,
 
-
-    "699TopSpeed": 0,
-    "6990to60": 0,
-    "699Handling": 0
+    "699TopSpeed": 129,
+    "6990to60": 7.4,
+    "699Handling": 82
 }

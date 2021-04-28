@@ -1,5 +1,5 @@
 ﻿{
-    "rq": 35,
+    "rq": 34,
     "make": "Volvo",
     "model": "C70 Cabrio",
     "modelYear": 1998,
@@ -9,7 +9,7 @@
     "handling": 73,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": [],
+    "tags": ["Rest of the World"],
     "isPrize": false,
 
 
@@ -26,36 +26,31 @@
     "description": "Cherry red sweden. Card by Johnny",
 
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/793775462849183744/Volvo-C70-Cabrio.png?width=705&height=439",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/793772461598441482/Volvo-C70-Cabrio.png?width=705&height=439",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/793772470687629333/Volvo-C70-Cabrio-1-star.png?width=705&height=439",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/793772475363622912/Volvo-C70-Cabrio-2-star.png?width=705&height=439",
-    "racehud996": "",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/793772499748913172/Volvo-C70-Cabrio-323.png?width=705&height=439",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820744881722884116/cate-test.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820744970503585832/Volvo-C70-Cabrio.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820744975184691200/Volvo-C70-Cabrio-1-star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820744980346961980/Volvo-C70-Cabrio-2-star.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820745001645375488/Volvo-C70-Cabrio-332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820744994821242910/Volvo-C70-Cabrio-323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820744987150909490/Volvo-C70-Cabrio-233.png",
 
+    "333TopSpeed": 147,
+    "3330to60": 7.4,
+    "333Handling": 75,
 
-    "333TopSpeed": 146,
-    "3330to60": 7.5,
-    "333Handling": 76,
+    "666TopSpeed": 150,
+    "6660to60": 7.0,
+    "666Handling": 78,   
 
+    "996TopSpeed": 154,
+    "9960to60": 6.6,
+    "996Handling": 78,
 
-    "666TopSpeed": 149,
-    "6660to60": 7.2,
-    "666Handling": 79,
+    "969TopSpeed": 154,
+    "9690to60": 7.0,
+    "969Handling": 81,
 
-
-    "996TopSpeed": 0,
-    "9960to60": 0,
-    "996Handling": 0,
-
-
-    "969TopSpeed": 152,
-    "9690to60": 6.9,
-    "969Handling": 82,
-
-
-    "699TopSpeed": 0,
-    "6990to60": 0,
-    "699Handling": 0
+    "699TopSpeed": 150,
+    "6990to60": 6.6,
+    "699Handling": 81
 }

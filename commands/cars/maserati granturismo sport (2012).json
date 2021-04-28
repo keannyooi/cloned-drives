@@ -1,5 +1,5 @@
 {
-    "rq": 66,
+    "rq": 65,
     "make": "Maserati",
     "model": "GranTurismo Sport",
     "modelYear": 2012,
@@ -22,25 +22,33 @@
     "fuelType": "Petrol",
     "mra": 74.19,
     "ola": 82.61,
-    "description": "",
+    "description": "Card by Keanny.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/716618540249251910/maserati_granturismo_sport.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/718324796210806824/maserati_granturismo_sport.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/718324893397024848/maserati_granturismo_sport_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/718324924409708686/maserati_granturismo_sport_666.jpg",
-    "racehud996": "",
-    "racehud969": "",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/718324979770327080/maserati_granturismo_sport_699.jpg",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819383144414183454/gt_sport.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819533677188481024/gt_sport_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819533685132755004/gt_sport_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819533698121596958/gt_sport_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819533733266456586/gt_sport_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819533720120983552/gt_sport_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819533710608957490/gt_sport_699.jpg",
 
-    "333TopSpeed": 188,
-    "3330to60": 4.3,
+    "333TopSpeed": 189,
+    "3330to60": 4.4,
     "333Handling": 90,
 
-    "666TopSpeed": 191,
-    "6660to60": 4.0,
+    "666TopSpeed": 192,
+    "6660to60": 4.1,
     "666Handling": 93,
 
-    "699TopSpeed": 193,
-    "6990to60": 3.8,
-    "699Handling": 96
+    "996TopSpeed": 194,
+    "9960to60": 3.9,
+    "996Handling": 93,
+
+    "969TopSpeed": 194,
+    "9690to60": 4.1,
+    "969Handling": 97,
+
+    "699TopSpeed": 192,
+    "6990to60": 3.9,
+    "699Handling": 97
 }

@@ -1,5 +1,5 @@
 {
-    "rq": 62,
+    "rq": 58,
     "make": "Caterham",
     "model": "Seven HPC",
     "modelYear": 1990,
@@ -24,31 +24,31 @@
     "ola": 76.62,
     "description": "MotorSport Magazine called it a 'recreational grin machine for the Good Lord'. Card by havvy",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/799955647478104094/sorry.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/799730997226110986/000HPC.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/799731004285648916/111HPC.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/799731013004689448/222HPC.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/799731044348985345/332HPC.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/799731030675554334/323HPC.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/799731021658193940/233HPC.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826701130070884372/image0.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826701276707684384/image0.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826701358085701652/image0.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826701376260014099/image0.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826701453040418836/image0.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826701401044156416/image0.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826701426901254204/image0.jpg",
 
-    "333TopSpeed": 123,
+    "333TopSpeed": 124,
     "3330to60": 4.9,
     "333Handling": 94,
 
-    "666TopSpeed": 126,
-    "6660to60": 4.6,
-    "666Handling": 98,
+    "666TopSpeed": 129,
+    "6660to60": 4.7,
+    "666Handling": 97,
 
-	"996TopSpeed": 129,
-    "9960to60": 4.2,
-    "996Handling": 98,
+	  "996TopSpeed": 133,
+    "9960to60": 4.4,
+    "996Handling": 97,
 
-	"969TopSpeed": 129,
-    "9690to60": 4.3,
+	  "969TopSpeed": 133,
+    "9690to60": 4.7,
     "969Handling": 101,
 
-    "699TopSpeed": 126,
-    "6990to60": 4.3,
+    "699TopSpeed": 129,
+    "6990to60": 4.4,
     "699Handling": 101
 }

@@ -1,5 +1,5 @@
 {
-    "rq": 65,
+    "rq": 62,
     "make": "BMW",
     "model": "330i xDrive",
     "modelYear": 2019,
@@ -24,23 +24,31 @@
     "ola": 70.37,
     "description": "The latest ultimate driving machine. By Bnuuy",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/788196597108179034/bmw330ixdriveNEW.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/788198561048297482/330i.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/788198576543105064/330i333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/788198590136582154/330i666.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/788198618230030396/330i969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819962196028162121/330ixdriver.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819962639077474364/330i.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819962646098608168/330i333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819962654281957396/330i666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819962690964422676/330i996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819962675584827422/330i969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819962665505390664/330i699.png",
 
     "333TopSpeed": 159,
     "3330to60": 5.1,
     "333Handling": 84,
 
-    "666TopSpeed": 162,
+    "666TopSpeed": 163,
     "6660to60": 4.9,
-    "666Handling": 87,
+    "666Handling": 86,
 
-    "969TopSpeed": 165,
-    "9690to60": 4.7,
-    "969Handling": 90
+	"996TopSpeed": 166,
+    "9960to60": 4.6,
+    "996Handling": 86,
+
+    "969TopSpeed": 166,
+    "9690to60": 4.9,
+    "969Handling": 90,
+
+	"699TopSpeed": 163,
+    "6990to60": 4.6,
+    "699Handling": 90
 }

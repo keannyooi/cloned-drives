@@ -1,5 +1,5 @@
-﻿{
-    "rq": 27,
+{
+    "rq": 34,
     "make": "Jaguar",
     "model": "E-Type V12 Roadster",
     "modelYear": 1971,
@@ -12,10 +12,9 @@
     "tags": [],
     "isPrize": false,
 
-
     "weight": 1565,
     "gc": "Medium",
-    "seatCount":2,
+    "seatCount": 2,
     "bodyStyle": "Roadster",
     "tcs": false,
     "abs": false,
@@ -23,39 +22,33 @@
     "fuelType": "Petrol",
     "mra": 60.61,
     "ola": 80.00,
-    "description": "Sleek silky british V12 Roadster. Card by ",
+    "description": "Sleek silky british V12 Roadster. Card by andu",
 
-
-    "card": "https://media.discordapp.net/attachments/715782088271331398/799589642797842432/RoadstieRoadstie.png?width=1085&height=676",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/799589072594272256/E-TypeSt.png",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/799589077116649500/E-Type1.png",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/799589079867457536/E-Type2.png",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/799589112092295178/E-Type332.png",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/799589091993583676/E-Type33.png",
-    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/799589103606956042/E-Type233.png",
-
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/821697081261555722/ETypeV12.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824951762753421333/Etype.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824951775400034334/Etype1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824951782093488138/Etype2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824951824522936320/Etype996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824951798506848266/Etype969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824951793179951104/Etype699.png",
 
     "333TopSpeed": 142,
-    "3330to60": 7.4,
+    "3330to60": 7.6,
     "333Handling": 67,
 
-
     "666TopSpeed": 146,
-    "6660to60": 6.8, 
-    "666Handling": 70,
+    "6660to60": 7.2, 
+    "666Handling": 69,
 
-
-    "996TopSpeed": 150,
-    "9960to60": 6.1,
-    "996Handling": 70,
-
+    "996TopSpeed": 149,
+    "9960to60": 6.8,
+    "996Handling": 69,
 
     "969TopSpeed": 149,
-    "9690to60": 6.3,
+    "9690to60": 7.2,
     "969Handling": 72,
 
-
     "699TopSpeed": 146,
-    "6990to60": 6.4,
-    "699Handling": 73
+    "6990to60": 6.8,
+    "699Handling": 72
 }

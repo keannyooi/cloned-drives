@@ -24,28 +24,31 @@
     "ola": 88.52,
     "description": "The second generation of Mazda's hot hatch. Card by havvy.",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/794933839557558272/speeeeeeeeeeeeeeeeeeeeeeeed.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/794681494995861525/bitmap2.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/794681522715361310/111mps.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/794681535508119582/222mps.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/794681559419977768/332mps.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/794681553740759110/323mps.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/822013796725686282/Mazda3MPS.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/822013854787698718/000_3mps.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/822013860411080754/111_3mps.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/822013863780155452/222_3mps.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/822013881131466762/332_3mps.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/822013876082180106/323_3mps.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/822013868829310986/233_3mps.png",
 
-    "333TopSpeed": 158,
+    "333TopSpeed": 157,
     "3330to60": 5.8,
     "333Handling": 84,
 
-    "666TopSpeed": 162,
-    "6660to60": 5.4,
-    "666Handling": 87,
+    "666TopSpeed": 161,
+    "6660to60": 5.5,
+    "666Handling": 86,
 
-	"996TopSpeed": 167,
-    "9960to60": 5.0,
-    "996Handling": 87,
+    "996TopSpeed": 164,
+    "9960to60": 5.2,
+    "996Handling": 86,
 
-    "969TopSpeed": 166,
-    "9690to60": 5.1,
-    "969Handling": 90
+    "969TopSpeed": 164,
+    "9690to60": 5.5,
+    "969Handling": 90,
 
+    "699TopSpeed": 161,
+    "6990to60": 5.2,
+    "699Handling": 90
 }

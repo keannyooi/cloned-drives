@@ -1,5 +1,5 @@
 {
-    "rq": 35,
+    "rq": 31,
     "make": "Napier",
     "model": "Railton",
     "modelYear": 1933,
@@ -23,27 +23,31 @@
     "ola": 102.73,
     "description": "When fast meant fast. Card by Johnny",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/797848823564992532/Napier-Railton.png?width=1086&height=676",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/797848663279140895/Napier-Railton.png",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/797848669512400937/Napier-Railton-1-star.png",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/797848674210283590/Napier-Railton-2-star.png",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/797848695784734770/Napier-Railton-332.png",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/797848685941489684/Napier-Railton-323.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820061528132681758/cate-test.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820061724693757972/Napier-Railton.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820061733044879360/Napier-Railton-1-star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820061755078213633/Napier-Railton-2-star.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820061788946300959/Napier-Railton-332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820061795430957096/Napier-Railton-323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820061779936804874/Napier-Railton-233.png",
 
     "333TopSpeed": 182,
-    "3330to60": 7.2,
-    "333Handling": 69,
+    "3330to60": 7.1,
+    "333Handling": 68,
 
     "666TopSpeed": 185,
-    "6660to60": 6.9, 
-    "666Handling": 72,
+    "6660to60": 6.8, 
+    "666Handling": 70,
 
-    "996TopSpeed": 189,
+    "996TopSpeed": 188,
     "9960to60": 6.4,
-    "996Handling": 72,
+    "996Handling": 70,
 
     "969TopSpeed": 188,
-    "9690to60": 6.6,
-    "969Handling": 75
+    "9690to60": 6.8,
+    "969Handling": 73,
+
+    "699TopSpeed": 185,
+    "699to60": 6.4,
+    "699Handling": 73
 }

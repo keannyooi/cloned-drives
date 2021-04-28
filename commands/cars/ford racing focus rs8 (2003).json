@@ -1,5 +1,5 @@
-﻿{
-    "rq": 75,
+{
+    "rq": 76,
     "make": "Ford Racing",
     "model": "Focus RS8",
     "modelYear": 2003,
@@ -12,10 +12,9 @@
     "tags": ["Concept"],
     "isPrize": false,
 
-
     "weight": 1376,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
@@ -25,36 +24,32 @@
     "ola": 81.82,
     "description": "A wise man once said that there is no replacement for displacement. So of course Ford crammed in a big V8 into a Focus. Card by Keanny",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/806474175312953344/fast_focus.png?width=1099&height=676",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/806010965224194088/speedy_focus.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/806011008949682186/speedy_focus_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/806011017845932042/speedy_focus_666.jpg",
-    "racehud996": "",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/806011042667954206/speedy_focus_969.jpg",
-    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/806011031871946812/speedy_focus_699.jpg",
-
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819390547092701184/fast_focus.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819547628206555167/rs8_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819547638977789952/rs8_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819547645252861992/rs8_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819547684561223711/rs8_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819547670925541416/rs8_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819547659630936085/rs8_699.jpg",
 
     "333TopSpeed": 183,
     "3330to60": 4.2,
     "333Handling": 92,
 
-
     "666TopSpeed": 186,
-    "6660to60": 3.9, 
+    "6660to60": 4.0,
     "666Handling": 95,
 
-
-    "996TopSpeed": 0,
-    "9960to60": 0,
-    "996Handling": 0,
-
+    "996TopSpeed": 189,
+    "9960to60": 3.7,
+    "996Handling": 95,
 
     "969TopSpeed": 189,
-    "9690to60": 3.7,
-    "969Handling": 98,
-
+    "9690to60": 4.0,
+    "969Handling": 99,
 
     "699TopSpeed": 186,
     "6990to60": 3.7,
     "699Handling": 99
+
 }

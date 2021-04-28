@@ -1,5 +1,5 @@
 {
-    "rq": 28,
+    "rq": 35,
     "make": "Acura",
     "model": "Vigor GS",
     "modelYear": 1991,
@@ -24,27 +24,31 @@
     "ola": 61.90,
     "description": "Card by Bnuuy.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/807701234693439508/AcuraVigorGS.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/807701299172868156/vigor.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/807701311029772328/vigor333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/807701325705117716/vigor666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/807701377560084490/vigor996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/807701353807216690/vigor969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/821061527657644072/vigor.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821062075849113610/vigor.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821062081293451277/victor333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821062088519843910/vigor666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821062129989320714/victor996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821062120514388008/vigor969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821062104936218724/vigor699.png",
 
-    "333TopSpeed": 134,
+    "333TopSpeed": 135,
     "3330to60": 8.0,
     "333Handling": 70,
 
-    "666TopSpeed": 137,
+    "666TopSpeed": 139,
     "6660to60": 7.6,
-    "666Handling": 73,
+    "666Handling": 72,
 
-    "996TopSpeed": 141,
+    "996TopSpeed": 143,
     "9960to60": 7.1,
-    "996Handling": 73,
+    "996Handling": 72,
 
-    "969TopSpeed": 140,
-    "9690to60": 7.3,
-    "969Handling": 75
+    "969TopSpeed": 143,
+    "9690to60": 7.6,
+    "969Handling": 75,
+
+    "699TopSpeed": 139,
+    "6990to60": 7.1,
+    "699Handling": 75
 }

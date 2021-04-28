@@ -1,5 +1,5 @@
 {
-    "rq": 48,
+    "rq": 52,
     "make": "Genesis",
     "model": "G70 2.0T",
     "modelYear": 2019,
@@ -9,7 +9,7 @@
     "handling": 84,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [],
+    "tags": ["Rest of the World"],
     "isPrize": false,
 
     "weight": 1667,
@@ -24,27 +24,31 @@
     "ola": 70.00,
     "description": "Card by Macan.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/802299268350214154/G70_2.0T_19.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/802299425841348628/Genesis_G70_2.0T_2019_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/802299430962593832/Genesis_G70_2.0T_2019_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/802299434565632000/Genesis_G70_2.0T_2019_666.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/802299464270086184/Genesis_G70_2.0T_2019_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/802299455243681802/Genesis_G70_2.0T_2019_699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/825458834617270272/Genesis20T.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/825459506426282045/Genesis20T.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/825459515507998760/Genesis20T1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/825459523472326666/Genesis20T2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/825459537913839656/Genesis20T996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/825459529345007636/Genesis20T969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/825459527041417246/Genesis20T699.png",
 
-    "333TopSpeed": 148,
-    "3330to60": 5.8,
+    "333TopSpeed": 149,
+    "3330to60": 5.9,
     "333Handling": 87,
 
     "666TopSpeed": 152,
-    "6660to60": 5.5,
+    "6660to60": 5.6,
     "666Handling": 90,
 
-    "969TopSpeed": 155,
-    "9690to60": 5.1,
+	"996TopSpeed": 156,
+    "9960to60": 5.3,
+    "996Handling": 90,
+
+    "969TopSpeed": 156,
+    "9690to60": 5.6,
     "969Handling": 93,
 
     "699TopSpeed": 152,
-    "6990to60": 5.1,
+    "6990to60": 5.3,
     "699Handling": 93
 }

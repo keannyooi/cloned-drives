@@ -1,5 +1,5 @@
 {
-    "rq": 49,
+    "rq": 46,
     "make": "Ford",
     "model": "Bronco White Lightning",
     "modelYear": 1994,
@@ -11,7 +11,6 @@
     "tyreType": "All-Surface",
     "tags": ["Concept"],
     "isPrize": true,
-
 
     "weight": 2344,
     "gc": "High",
@@ -25,24 +24,31 @@
     "ola": 66.67,
     "description": "Peter Schweitzer's experimental Ford Bronco with the F-150 Lightning flow. Card by Preston",
 
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/823460195119267880/white_boi.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823461883620622366/whiteboi_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823461891677356062/whiteboi_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823461896841199656/whiteboi_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823461929530949692/whiteboi_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823461917887561728/whiteboi_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823461906991415296/whiteboi_699.jpg",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/795623116809568286/white_lightning.png",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/795622956469452820/white_lightning.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/795622974027857920/white_lightning_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/795622981811306506/white_lightning_666.jpg",
-    "racehud996": "",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/795622993551294464/white_lightning_969.jpg",
-    "racehud699": "",
-
-    "333TopSpeed": 113,
-    "3330to60": 7.2,
+    "333TopSpeed": 115,
+    "3330to60": 7.3,
     "333Handling": 72,
 
-    "666TopSpeed": 116,
-    "6660to60": 6.7,
+    "666TopSpeed": 119,
+    "6660to60": 6.9,
     "666Handling": 75,
 
-    "969TopSpeed": 119,
-    "9690to60": 6.2,
-    "969Handling": 77
+	"996TopSpeed": 124,
+    "9960to60": 6.5,
+    "996Handling": 75,
+
+    "969TopSpeed": 124,
+    "9690to60": 6.9,
+    "969Handling": 78,
+
+	"699TopSpeed": 119,
+    "6990to60": 6.5,
+    "699Handling": 78
 }

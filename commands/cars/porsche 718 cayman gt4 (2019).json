@@ -1,5 +1,5 @@
 ﻿{
-    "rq": 78,
+    "rq": 76,
     "make": "Porsche",
     "model": "718 Cayman GT4",
     "modelYear": 2019,
@@ -9,7 +9,7 @@
     "handling": 92,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [],
+    "tags": ["Track Day"],
     "isPrize": true,
 
 
@@ -26,36 +26,32 @@
     "description": "One of the best track cars. Card by Havvy",
 
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/800317339308261376/Porsche718CaymanGT4.png?width=1154&height=718",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/800317432899305512/000cay4.png?width=1154&height=718",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/800317444177657867/111cay4.png?width=1154&height=718",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/800317457004888085/222cay4.png?width=1154&height=718",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/800317629947838464/332cay4.png?width=1154&height=718",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/800317483344592896/323cay4.png?width=1154&height=718",
-    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/800317465141444608/233cay4.png?width=1154&height=718",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/823580582779945000/Porsche718CaymanGT4.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823580626438717440/000_718gt4.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823580631673733180/111_718gt4.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823580636824076309/222_718gt4.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823580650526605362/332_718gt4.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823580646219055174/323_718gt4.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823580641387479080/233_718gt4.png",
 
 
-    "333TopSpeed": 192,
+    "333TopSpeed": 191,
     "3330to60": 3.8,
     "333Handling": 95,
 
-
-    "666TopSpeed": 195,
+    "666TopSpeed": 194,
     "6660to60": 3.6, 
     "666Handling": 98,
 
+    "996TopSpeed": 196,
+    "9960to60": 3.4,
+    "996Handling": 98,
 
-    "996TopSpeed": 199,
-    "9960to60": 3.3,
-    "996Handling": 99,
-
-
-    "969TopSpeed": 198,
-    "9690to60": 3.4,
+    "969TopSpeed": 196,
+    "9690to60": 3.6,
     "969Handling": 102,
 
-
-    "699TopSpeed": 195,
+    "699TopSpeed": 194,
     "6990to60": 3.4,
     "699Handling": 102
 }

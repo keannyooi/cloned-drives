@@ -9,7 +9,7 @@
     "handling": 77,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Muscle Car"],
+    "tags": ["Muscle Car", "Tuner"],
     "isPrize": false,
 
     "weight": 1732,
@@ -24,27 +24,31 @@
     "ola": 75.00,
     "description": "Is this a Saleen? Card by Keanny.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/806817460652343306/sms_supercars_570_challenger.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/806480318970069022/sms.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/806480359957069864/sms_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/806480369352048641/sms_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/806480399005515787/sms_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/806480381531783218/sms_969.jpg",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820913873614929941/sms_supercars_570_challenger.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820914409853026304/sms_challenger_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820914416647274506/sms_challenger_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820914423665000478/sms_challenger_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820914454077112340/sms_challenger_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820914443541413938/sms_challenger_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820914433265893387/sms_challenger_699.jpg",
 
-    "333TopSpeed": 159,
+    "333TopSpeed": 158,
     "3330to60": 4.4,
     "333Handling": 80,
 
-    "666TopSpeed": 163,
-    "6660to60": 4.1,
+    "666TopSpeed": 162,
+    "6660to60": 4.1, 
     "666Handling": 82,
 
-    "996TopSpeed": 167,
-    "9960to60": 3.7,
-    "996Handling": 83,
+    "996TopSpeed": 165,
+    "9960to60": 3.9,
+    "996Handling": 82,
 
-    "969TopSpeed": 167,
-    "9690to60": 3.9,
-    "969Handling": 85
+    "969TopSpeed": 165,
+    "9690to60": 4.1,
+    "969Handling": 85,
+
+    "699TopSpeed": 162,
+    "6990to60": 3.9,
+    "699Handling": 85
 }

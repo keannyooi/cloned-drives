@@ -1,5 +1,5 @@
 {
-    "rq": 64,
+    "rq": 58,
     "make": "BMW",
     "model": "X2 xDrive28i",
     "modelYear": 2018,
@@ -8,7 +8,7 @@
     "0to60": 6.4,
     "handling": 81,
     "driveType": "4WD",
-    "tyreType": "All-Surface",
+    "tyreType": "Standard",
     "tags": ["Servers Choice"],
     "isPrize": false,
 
@@ -22,25 +22,33 @@
     "fuelType": "Petrol",
     "mra": 57.66,
     "ola": 65.63,
-    "description": "",
+    "description": "Card by Macan",
 
-    "card": "https://cdn.discordapp.com/attachments/733973415366623274/779212990993530890/BMW_X2_xDrive28i_2018.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/780519628056952832/BMW_X2_xDrive28i_2018_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/780519647643828234/BMW_X2_xDrive28i_2018_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/780519659891982356/BMW_X2_xDrive28i_2018_666.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/780519682741633034/BMW_X2_xDrive28i_2018_969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824626535134265374/x2thigny.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824626916215881728/x2.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824626920599060512/x2333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824626925258407986/x2666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824626945626210334/x2996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824626938655801364/x2969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824626931953303592/x2699.png",
 
     "333TopSpeed": 147,
-    "3330to60": 6.0,
+    "3330to60": 6.1,
     "333Handling": 84,
 
     "666TopSpeed": 150,
-    "6660to60": 5.6,
-    "666Handling": 87,
+    "6660to60": 5.8,
+    "666Handling": 86,
 
-    "969TopSpeed": 153,
-    "9690to60": 5.2,
-    "969Handling": 90
+	"996TopSpeed": 154,
+    "9960to60": 5.4,
+    "996Handling": 86,
+
+    "969TopSpeed": 154,
+    "9690to60": 5.8,
+    "969Handling": 90,
+
+	"699TopSpeed": 150,
+    "6990to60": 5.4,
+    "699Handling": 90
 }

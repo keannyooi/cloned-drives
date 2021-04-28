@@ -1,5 +1,5 @@
 {
-    "rq": 17,
+    "rq": 21,
     "make": "Saab",
     "model": "99 EMS",
     "modelYear": 1977,
@@ -9,7 +9,7 @@
     "handling": 68,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["2021 Spring Collection"],
+    "tags": ["Rest of the World"],
     "isPrize": false,
 
     "weight": 1161,
@@ -22,25 +22,33 @@
     "fuelType": "Petrol",
     "mra": 37.66,
     "ola": 79.00,
-    "description": "Card by Andu.",
+    "description": "Called ‘Gudmund’ after the name Swedes give to the day of the year on which it began April the 2nd. Card by Andu.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/783367994327695390/saabems.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/783368469797535744/EMSStock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/783368495865528330/EMS11.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/783368516837441586/EMS12.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/783368546142912552/EMS1.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/822058719961284639/saabems.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/822059295473664070/99EMS.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/822059301648203776/99EMS1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/822059311198502942/99EMS2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/822059335470284830/99EMS996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/822059328751009802/99EMS969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/822059322565460028/99EMS699.png",
 
-    "333TopSpeed": 111,
-    "3330to60": 11.1,
-    "333Handling": 68,
+    "333TopSpeed": 113,
+    "3330to60": 11.4,
+    "333Handling": 70,
 
-    "666TopSpeed": 114,
-    "6660to60": 10.2,
+    "666TopSpeed": 118,
+    "6660to60": 10.8, 
     "666Handling": 72,
 
-    "969TopSpeed": 117,
-    "9690to60": 9.3,
-    "969Handling": 75
+    "996TopSpeed": 122,
+    "9960to60": 10.2,
+    "996Handling": 72,
+
+    "969TopSpeed": 122,
+    "9690to60": 10.8,
+    "969Handling": 75,
+
+    "699TopSpeed": 118,
+    "6990to60": 10.2,
+    "699Handling": 75
 }

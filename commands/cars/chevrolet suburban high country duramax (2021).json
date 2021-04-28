@@ -1,5 +1,5 @@
 {
-    "rq": 35,
+    "rq": 34,
     "make": "Chevrolet",
     "model": "Suburban High Country Duramax",
     "modelYear": 2021,
@@ -22,33 +22,33 @@
     "fuelType": "Petrol",
     "mra": 50.00,
     "ola": 66.66,
-    "description": "Card by DodgeDemon.",
+    "description": "Peak Karen vibes. Card by DodgeDemon.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/800140283349434410/2021_Chevrolet_Suburban_High_Country_Duramax.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/800141620468908032/sub.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/800141631881347072/sub333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/800141649342627910/sub666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/800141713989173278/sub996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/800141693533290496/sub969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/800141671173980170/sub699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/825415860897185822/suburbanthjinnigu.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/825416162874753084/Rsub.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/825416167258718268/Rsub333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/825416173302055022/Rsub666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/825416195632267304/rsub996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/825416189374365786/rsub969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/825416181652521010/rsub699.png",
 
-    "333TopSpeed": 115,
+    "333TopSpeed": 117,
     "3330to60": 8.1,
     "333Handling": 52,
 
-    "666TopSpeed": 118,
-    "6660to60": 7.8,
-    "666Handling": 54,
+    "666TopSpeed": 121,
+    "6660to60": 7.7,
+    "666Handling": 53,
 
-    "996TopSpeed": 122,
-    "9960to60": 7.5,
-    "996Handling": 55,
+    "996TopSpeed": 126,
+    "9960to60": 7.2,
+    "996Handling": 53,
 
-    "969TopSpeed": 121,
+    "969TopSpeed": 126,
     "9690to60": 7.7,
     "969Handling": 56,
 
-    "699TopSpeed": 120,
-    "6990to60": 7.7,
+    "699TopSpeed": 121,
+    "6990to60": 7.2,
     "699Handling": 56
 }

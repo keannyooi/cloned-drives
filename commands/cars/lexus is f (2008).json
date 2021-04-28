@@ -1,61 +1,54 @@
-﻿{
-    "rq": 63,
+{
+    "rq": 71,
     "make": "Lexus",
     "model": "IS F",
     "modelYear": 2008,
     "country": "JP",
-    "topSpeed": 168,
-    "0to60": 4.5,
-    "handling": 82,
+    "topSpeed": 171,
+    "0to60": 4.4,
+    "handling": 83,
     "driveType": "RWD",
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
 
-
     "weight": 1726,
-    "gc": "Low",
+    "gc": "Medium",
     "seatCount":5,
     "bodyStyle": "Sedan",
     "tcs": true,
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 77.59,
-    "ola": 86.67,
+    "mra": 77.19,
+    "ola": 81.82,
     "description": "Underrated sport sedan. Card by Kaiser ",
 
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826166044971237386/A.LexusISF.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826166119760658452/A.LexusISF.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826166131835404338/A.LexusISF-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826166141453205525/A.LexusISF-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826166170745831504/A.LexusISF-996.png",
+    "racehud969": "",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826166153138405396/A.LexusISF-699.png",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/798288167169032212/Lexus_IS_F_08.png",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/798207045631082556/Lexus_IS_F_Racehud.png",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/798207121375887360/Lexus_IS_F_Racehud_333.png",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/798207184198565948/Lexus_IS_F_Racehudding_666.png",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/798207344239706122/Lexus_IS_F_Racehud_996.png",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/798207232692322325/Lexus_IS_F_Racehudding_969.png",
-    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/798207304817836062/Lexus_IS_F_Racehud_699.png",
-
-
-    "333TopSpeed": 171,
+    "333TopSpeed": 174,
     "3330to60": 4.2,
-    "333Handling": 85,
+    "333Handling": 86,
 
-
-    "666TopSpeed": 174,
-    "6660to60": 3.9, 
+    "666TopSpeed": 177,
+    "6660to60": 4.0, 
     "666Handling": 88,
-
 
     "996TopSpeed": 180,
     "9960to60": 3.7,
     "996Handling": 88,
 
+    "969TopSpeed": 180,
+    "9690to60": 4.0,
+    "969Handling": 92,
 
-    "969TopSpeed": 179,
-    "9690to60": 3.8,
-    "969Handling": 91,
-
-
-    "699TopSpeed": 176,
-    "6990to60": 3.8,
-    "699Handling": 91
+    "699TopSpeed": 177,
+    "6990to60": 3.7,
+    "699Handling": 92
 }

@@ -1,5 +1,5 @@
 {
-    "rq": 20,
+    "rq": 16,
     "make": "Pontiac",
     "model": "Firebird Trans Am",
     "modelYear": 1977,
@@ -9,7 +9,7 @@
     "handling": 72,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [],
+    "tags": ["Muscle Car", "Silver Screen"],
     "isPrize": false,
 
     "weight": 1600,
@@ -24,28 +24,32 @@
     "ola": 68.82,
     "description": "Card by Johnny.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/796515824940351508/Pontiac-Firebird-Trans-Am-77.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/796513682859229195/Pontiac-Firebird-Trans-Am.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/796513689259081778/Pontiac-Firebird-Trans-Am-1-star.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/796513692594077717/Pontiac-Firebird-Trans-Am-2-star.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/796513717331165195/Pontiac-Firebird-Trans-Am-332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/796513704287797288/Pontiac-Firebird-Trans-Am-323.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/821725374903484476/cate-test.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821725524560183317/Pontiac-Firebird-Trans-Am.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821725529513656360/Pontiac-Firebird-Trans-Am-1-star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821725532314927174/Pontiac-Firebird-Trans-Am-2-star.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821725568479133736/Pontiac-Firebird-Trans-Am-332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821725559473963058/Pontiac-Firebird-Trans-Am-323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821725551324692501/Pontiac-Firebird-Trans-Am-233.png",
 
-    "333TopSpeed": 113,
-    "3330to60": 9.0,
-    "333Handling": 76,
+    "333TopSpeed": 115,
+    "3330to60": 8.8,
+    "333Handling": 74,
 
-    "666TopSpeed": 116,
-    "6660to60": 8.7,
-    "666Handling": 79,
+    "666TopSpeed": 119,
+    "6660to60": 8.4, 
+    "666Handling": 77,
 
-    "996TopSpeed": 121,
-    "9960to60": 8.1,
-    "996Handling": 79,
+    "996TopSpeed": 124,
+    "9960to60": 7.9,
+    "996Handling": 77,
 
-    "969TopSpeed": 119,
+    "969TopSpeed": 124,
     "9690to60": 8.4,
-    "969Handling": 82
+    "969Handling": 80,
+
+    "699TopSpeed": 119,
+    "6990to60": 7.9,
+    "699Handling": 80
 
 }

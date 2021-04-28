@@ -1,5 +1,5 @@
 {
-    "rq": 38,
+    "rq": 42,
     "make": "Kia",
     "model": "K5 EX",
     "modelYear": 2021,
@@ -22,30 +22,34 @@
     "fuelType": "Petrol",
     "mra": 56.52,
     "ola": 71.79,
-    "description": "Called the 'sportiest' Sedan by forbes. Card by Keanny.",
+    "description": "Called the 'sportiest' sedan by Forbes. Card by Keanny.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/794356240125001738/kia_k5_ex.png",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/799488423013646346/Kia_K5_EX_2021_000.png",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/799488449257668640/Kia_K5_EX_2021_333.png",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/799488469519826994/Kia_K5_EX_2021_666.png",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/799488551695024158/Kia_K5_EX_2021_996.png",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/799488536788336700/Kia_K5_EX_2021_969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819391321553764372/kia_k5_ex.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819837386782933003/k5_ex_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819837395742621716/k5_ex_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819837401119588402/k5_ex_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819837518638743582/k5_ex_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819837428143226910/k5_ex_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819837416771682344/k5_ex_699.jpg",
 
-    "333TopSpeed": 133,
-    "3330to60": 7.3,
-    "333Handling": 78,
+    "333TopSpeed": 132,
+    "3330to60": 7.4,
+    "333Handling": 77,
 
-    "666TopSpeed": 135,
-    "6660to60": 6.8,
+    "666TopSpeed": 136,
+    "6660to60": 7.0,
     "666Handling": 80,
 
-    "996TopSpeed": 138,
-    "9960to60": 6.2,
+    "996TopSpeed": 140,
+    "9960to60": 6.6,
     "996Handling": 80,
 
-    "969TopSpeed": 139,
-    "9690to60": 6.3,
-    "969Handling": 83
+    "969TopSpeed": 140,
+    "9690to60": 7.0,
+    "969Handling": 83,
+
+	"699TopSpeed": 136,
+    "6990to60": 6.6,
+    "699Handling": 83
 
 }

@@ -1,5 +1,5 @@
 {
-    "rq": 23,
+    "rq": 28,
     "make": "Nissan",
     "model": "Leaf",
     "modelYear": 2010,
@@ -20,27 +20,35 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Electric",
-    "mra": 0.00,
+    "mra": 30.00,
     "ola": 73.12,
-    "description": "",
+    "description": "Card by Keanny.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/785814830207991818/nissan_leaf.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/785805656875466772/image0.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/785805819735834634/image1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/785805856091930644/image2.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/785805966356381726/image3.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819383351721984020/lef.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819814080621183017/leaf_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819814089072443452/leaf_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819814095964078120/leaf_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819814127387672577/leaf_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819814116763238421/leaf_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819814106596900884/leaf_699.jpg",
 
-    "333TopSpeed": 95,
-    "3330to60": 9.2,
+    "333TopSpeed": 98,
+    "3330to60": 9.4,
     "333Handling": 73,
 
-    "666TopSpeed": 97,
-    "6660to60": 8.5,
+    "666TopSpeed": 103,
+    "6660to60": 8.9,
     "666Handling": 76,
 
-    "969TopSpeed": 100,
-    "9690to60": 7.8,
-    "969Handling": 78
+    "996TopSpeed": 109,
+    "9960to60": 8.4,
+    "996Handling": 76,
+
+    "969TopSpeed": 109,
+    "9690to60": 8.9,
+    "969Handling": 79,
+
+    "699TopSpeed": 103,
+    "6990to60": 8.4,
+    "699Handling": 79
 }

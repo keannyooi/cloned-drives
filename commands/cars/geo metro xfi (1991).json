@@ -1,5 +1,5 @@
 {
-    "rq": 12,
+    "rq": 18,
     "make": "Geo",
     "model": "Metro XFi",
     "modelYear": 1991,
@@ -24,23 +24,31 @@
     "ola": 71.11,
     "description": "Card by Connor",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/808441343252627506/F.GeoMetroXFi.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/808441388521357332/F.GeoMetroXFi.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/808441418825465876/F.GeoMetroXFi-1star.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/808441436642344960/F.GeoMetroXFi-2star.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/808441453436600340/F.GeoMetroXFi-969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820683050232184882/F.GeoMetroXFi.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820682278929432616/F.GeoMetroXFi.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820682292585955398/F.GeoMetroXFi-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820682306661777418/F.GeoMetroXFi-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820682335363006484/F.GeoMetroXFi-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820682322831081503/F.GeoMetroXFi-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820682314182164551/F.GeoMetroXFi-699.png",
 
-    "333TopSpeed": 95,
-    "3330to60": 12.6,
+    "333TopSpeed": 99,
+    "3330to60": 12.8,
     "333Handling": 61,
 
-    "666TopSpeed": 97,
-    "6660to60": 11.7, 
+    "666TopSpeed": 104,
+    "6660to60": 12.2, 
     "666Handling": 63,
 
-    "969TopSpeed": 99,
-    "9690to60": 10.8,
-    "969Handling": 65
+	"996TopSpeed": 110,
+    "9960to60": 11.5,
+    "996Handling": 63,
+
+    "969TopSpeed": 110,
+    "9690to60": 12.2,
+    "969Handling": 65,
+
+	"699TopSpeed": 104,
+    "6990to60": 11.5,
+    "699Handling": 65
 }

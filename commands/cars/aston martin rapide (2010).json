@@ -1,5 +1,5 @@
 {
-    "rq": 62,
+    "rq": 59,
     "make": "Aston Martin",
     "model": "Rapide",
     "modelYear": 2010,
@@ -24,31 +24,31 @@
     "ola": 79.05,
     "description": "Luxury in action, although loses to the Panamera. Card by havvy",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/803332879135539300/AstonMartinRapide.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/803332957091790858/000rapide.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/803332980886077450/111rapide.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/803332990418681927/222rapide.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/803333008970743819/332rapide.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/803333003165433896/323rapide.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/803332997452529715/233rapide.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/825736064513736754/AstonMartinRapide.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/825736118074736690/000_rapide.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/825736124580102154/111_rapide.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/828612700120023090/unknown.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/825736161598636102/332_rapide.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/825736156900884531/323_rapide.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/825736148949008404/233_rapide.png",
 
     "333TopSpeed": 189,
-    "3330to60": 4.6,
+    "3330to60": 4.7,
     "333Handling": 86,
 
     "666TopSpeed": 192,
-    "6660to60": 4.3,
-    "666Handling": 89,
+    "6660to60": 4.4,
+    "666Handling": 88,
 
-    "996TopSpeed": 197,
-    "9960to60": 3.9,
-    "996Handling": 89,
+    "996TopSpeed": 194,
+    "9960to60": 4.2,
+    "996Handling": 88,
 
-    "969TopSpeed": 197,
-    "9690to60": 4.0,
+    "969TopSpeed": 194,
+    "9690to60": 4.4,
     "969Handling": 92,
 
-	"699TopSpeed": 195,
-    "6990to60": 4.0,
+	"699TopSpeed": 192,
+    "6990to60": 4.2,
     "699Handling": 92
 }

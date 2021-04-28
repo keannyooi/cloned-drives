@@ -1,5 +1,5 @@
-﻿{
-    "rq": 15,
+{
+    "rq": 19,
     "make": "Chevrolet",
     "model": "Cavalier CS",
     "modelYear": 1982,
@@ -12,10 +12,9 @@
     "tags": ["2021 Spring Collection"],
     "isPrize": false,
 
-
     "weight": 1380,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Sedan",
     "tcs": false,
     "abs": false,
@@ -25,37 +24,31 @@
     "ola": 61.01,
     "description": "An Opel, but maybe not, but maybe yes. Card by Connor",
 
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819544891746680853/F.ChevyCavalierCS.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/833255673827295232/F.ChevyCavalierCS.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/833255687693271061/F.ChevyCavalierCS-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/833255700129120256/F.ChevyCavalierCS-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/833255752587673620/F.ChevyCavalierCS-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/833255738709245992/F.ChevyCavalierCS-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/833255713530183690/F.ChevyCavalierCS-699.png",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/803699093682520154/F.ChevyCavalierCS.png?width=1154&height=718",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/803699188701331466/F.ChevyCavalierCS.png",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/803699223321116702/F.ChevyCavalierCS-1star.png",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/803699264709591050/F.ChevyCavalierCS-2star.png",
-    "racehud996": "",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/803699299803332628/F.ChevyCavalierCS-969.png",
-    "racehud699": "",
-
-
-    "333TopSpeed": 103,
-    "3330to60": 12.3,
+    "333TopSpeed": 105,
+    "3330to60": 12.4,
     "333Handling": 70,
 
+    "666TopSpeed": 110,
+    "6660to60": 11.8,
+    "666Handling": 72,
 
-    "666TopSpeed": 106,
-    "6660to60": 11.5, 
-    "666Handling": 73,
+    "996TopSpeed": 116,
+    "9960to60": 11.1,
+    "996Handling": 72,
 
-
-    "996TopSpeed": 0,
-    "9960to60": 0,
-    "996Handling": 0,
-
-
-    "969TopSpeed": 108,
-    "9690to60": 10.7,
+    "969TopSpeed": 116,
+    "9690to60": 11.8,
     "969Handling": 75,
 
-
-    "699TopSpeed": 0,
-    "6990to60": 0,
-    "699Handling": 0
+    "699TopSpeed": 110,
+    "6990to60": 11.1,
+    "699Handling": 75
 }

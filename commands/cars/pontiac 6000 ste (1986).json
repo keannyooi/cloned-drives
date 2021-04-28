@@ -1,5 +1,5 @@
 {
-    "rq": 17,
+    "rq": 21,
     "make": "Pontiac",
     "model": "6000 STE",
     "modelYear": 1986,
@@ -22,25 +22,33 @@
     "fuelType": "Petrol",
     "mra": 38.65,
     "ola": 67.89,
-    "description": "",
+    "description": "The Pontiac 6000STE stands head and shoulders above every other Detroit sedan. Apparently. Card by Keanny",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/786039946061283358/pontiac_6000_ste.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/782773933258571806/pontiac_6000_ste.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/782773984416628736/pontiac_6000_ste_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/782773993681059840/pontiac_6000_ste_666.jpg",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/782774004653228052/pontiac_6000_ste_969.jpg",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820998516284719104/pontiac_6000_ste.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820998379249205289/6000_ste_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820998398378246216/6000_ste_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820998402489057291/6000_ste_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820998449511268383/6000_ste_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820998434738929734/6000_ste_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820998423448125470/6000_ste_699.jpg",
 
-    "333TopSpeed": 119,
-    "3330to60": 9.7,
-    "333Handling": 74,
+    "333TopSpeed": 120,
+    "3330to60": 9.9,
+    "333Handling": 73,
 
-    "666TopSpeed": 123,
-    "6660to60": 9.0,
+    "666TopSpeed": 125,
+    "6660to60": 9.4, 
     "666Handling": 76,
 
-    "969TopSpeed": 126,
-    "9690to60": 8.3,
-    "969Handling": 79
+    "996TopSpeed": 129,
+    "9960to60": 8.8,
+    "996Handling": 76,
+
+    "969TopSpeed": 129,
+    "9690to60": 9.4,
+    "969Handling": 79,
+
+    "699TopSpeed": 125,
+    "6990to60": 8.8,
+    "699Handling": 79
 }

@@ -1,5 +1,5 @@
 {
-    "rq": 42,
+    "rq": 38,
     "make": "Hummer",
     "model": "H3",
     "modelYear": 2005,
@@ -22,29 +22,33 @@
     "fuelType": "Petrol",
     "mra": 23.94,
     "ola": 68.84,
-    "description": "Smaller yet more capable. Card by Havvy",
+    "description": "Smaller yet more capable. Card by keanny",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/812631756422643712/hummer_h3.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/812631622880722964/hummer_h3.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/812631651737534524/hummer_h3_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/812631664181641237/hummer_h3_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/812631690962010153/hummer_h3_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/812631677892296705/hummer_h3_969.jpg",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819391177921003571/hummer_h3.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819757554976292926/hummer_h3_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819757561209028638/hummer_h3_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819757568591134750/hummer_h3_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819757603457335306/hummer_h3_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819757587049611274/hummer_h3_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819757580908757012/hummer_h3_699.jpg",
 
-    "333TopSpeed": 101,
-    "3330to60": 10.0,
+    "333TopSpeed": 103,
+    "3330to60": 10.3,
     "333Handling": 63,
 
-    "666TopSpeed": 104,
-    "6660to60": 9.2,
-    "666Handling": 66,
+    "666TopSpeed": 109,
+    "6660to60": 9.7,
+    "666Handling": 65,
 
-    "996TopSpeed": 107,
-    "9960to60": 8.2,
-    "996Handling": 66,
+    "996TopSpeed": 114,
+    "9960to60": 9.2,
+    "996Handling": 65,
 
-    "969TopSpeed": 107,
-    "9690to60": 8.5,
-    "969Handling": 68
+    "969TopSpeed": 114,
+    "9690to60": 9.7,
+    "969Handling": 68,
+
+	"699TopSpeed": 109,
+    "6990to60": 9.2,
+    "699Handling": 68
 }

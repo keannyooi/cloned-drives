@@ -1,5 +1,5 @@
 {
-    "rq": 11,
+    "rq": 2,
     "make": "MG",
     "model": "TA Tickford Drophead Coupe",
     "modelYear": 1938,
@@ -24,24 +24,32 @@
     "ola": 51.95,
     "description": "A more luxurious TA with individual bucket seats and wind-up windows. Card by Bnuuy.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/794658392140283934/MG_TA_Tickford_Drophead_Coupe.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/794658737285103657/tickford.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/794658750291247124/tickford333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/794658764799868928/tickford666.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/794658789214388254/tickford969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/823589710378172476/TATickford.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823590361342410782/tick.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823590366678089858/tick333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823590369819754526/tick666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823590399150915614/tick996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823590391579934740/tick969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823590380523356200/tick699.png",
 
-    "333TopSpeed": 82,
-    "3330to60": 22.1,
+    "333TopSpeed": 86,
+    "3330to60": 21.9,
     "333Handling": 60,
 
-    "666TopSpeed": 85,
-    "6660to60": 21.1,
-    "666Handling": 63,
+    "666TopSpeed": 92,
+    "6660to60": 20.8,
+    "666Handling": 62,
 
-    "969TopSpeed": 87,
-    "9690to60": 20.3,
-    "969Handling": 65
+    "996TopSpeed": 99,
+    "9960to60": 19.6,
+    "996Handling": 62,
+
+    "969TopSpeed": 99,
+    "9690to60": 20.8,
+    "969Handling": 64,
+
+    "699TopSpeed": 92,
+    "6990to60": 19.6,
+    "699Handling": 64
 
 }

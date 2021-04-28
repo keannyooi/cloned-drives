@@ -1,0 +1,54 @@
+{
+    "rq": 40,
+    "make": "Volkswagen",
+    "model": "Beetle 2.5",
+    "modelYear": 2011,
+    "country": "DE",
+    "topSpeed": 113,
+    "0to60": 8.7,
+    "handling": 78,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Servers Choice", "OG"],
+    "isPrize": false,
+
+    "weight": 1417,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 53.89,
+    "ola": 62.43,
+    "description": "The Cloned Drives Staple. Card by Keanny and Andu",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820025572049551380/Beetle25.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820026071592206366/Beetle25.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820026079741083668/Beetle25-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820026087093305384/Beetle25-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820026114625372170/Beetle25-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820026105665814574/Beetle25-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820026097617993748/Beetle25-699.png",
+
+    "333TopSpeed": 118,
+    "3330to60": 8.3,
+    "333Handling": 81,
+
+    "666TopSpeed": 122,
+    "6660to60": 7.8, 
+    "666Handling": 83,
+
+    "996TopSpeed": 127,
+    "9960to60": 7.4,
+    "996Handling": 83,
+
+    "969TopSpeed": 127,
+    "9690to60": 7.8,
+    "969Handling": 87,
+
+    "699TopSpeed": 122,
+    "6990to60": 7.4,
+    "699Handling": 87
+}

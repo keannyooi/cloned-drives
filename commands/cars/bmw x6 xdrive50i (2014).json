@@ -1,5 +1,5 @@
 {
-    "rq": 77,
+    "rq": 82,
     "make": "BMW",
     "model": "X6 xDrive50i",
     "modelYear": 2014,
@@ -22,29 +22,33 @@
     "fuelType": "Petrol",
     "mra": 71.43,
     "ola": 93.88,
-    "description": "",
+    "description": "Card by DodgeDemon",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/804945125247156252/2014_BMW_X6_xDrive50i.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/804946142390517813/BMWX6000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/804946172195373106/BMWX6333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/804946204676456458/BMWX6666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/804946246619758612/BMWX6996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/804946291313868840/BMWX6969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819418712070422558/2014_BMW_X6_xDrive50i.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824360221978919013/x6.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824360226274148392/x6333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824360230962855956/x6666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824360260802183211/x6996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824360246226059264/x6969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824360238575910992/x6699.png",
 
     "333TopSpeed": 158,
-    "3330to60": 4.2,
+    "3330to60": 4.3,
     "333Handling": 81,
 
-    "666TopSpeed": 161,
-    "6660to60": 4.0,
-    "666Handling": 84,
+    "666TopSpeed": 162,
+    "6660to60": 4.1,
+    "666Handling": 83,
 
     "996TopSpeed": 165,
     "9960to60": 3.8,
-    "996Handling": 85,
+    "996Handling": 83,
 
-    "969TopSpeed": 164,
-    "9690to60": 3.9,
-    "969Handling": 86
+    "969TopSpeed": 165,
+    "9690to60": 4.1,
+    "969Handling": 87,
+
+	"699TopSpeed": 162,
+    "6990to60": 3.8,
+    "699Handling": 87
 }

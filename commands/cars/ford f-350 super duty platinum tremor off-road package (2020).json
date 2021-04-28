@@ -1,5 +1,5 @@
 {
-    "rq": 56,
+    "rq": 50,
     "make": "Ford",
     "model": "F-350 Super Duty Platinum Tremor Off-Road Package",
     "modelYear": 2020,
@@ -24,27 +24,31 @@
     "ola": 67.20,
     "description": "Long name award winner of 2020. Card by Macan",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/798836128538558504/F-350_Super_Duty_Platinum_Tremor_Off-Road_Package_20.png?width=1154&height=718",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/798836322751610900/Ford_F-350_Super_Duty_Platinum_Tremor_Off-Road_Package_2020_000.png",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/798836337402314762/Ford_F-350_Super_Duty_Platinum_Tremor_Off-Road_Package_2020_333.png",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/798836340380794880/Ford_F-350_Super_Duty_Platinum_Tremor_Off-Road_Package_2020_666.png",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/798836445136683028/Ford_F-350_Super_Duty_Platinum_Tremor_Off-Road_Package_2020_996.png",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/798836349452550174/Ford_F-350_Super_Duty_Platinum_Tremor_Off-Road_Package_2020_969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826067883309924392/bigass_trocc.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826070651500625990/f-350_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826070659514892368/f-350_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826070664871542815/f-350_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826070715924086825/f-350_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826070705686052895/f-350_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826070687193366538/f-350_699.jpg",
 
-    "333TopSpeed": 98,
+    "333TopSpeed": 100,
     "3330to60": 7.1,
     "333Handling": 66,
 
-    "666TopSpeed": 100,
-    "6660to60": 6.6,
-    "666Handling": 69,
+    "666TopSpeed": 106,
+    "6660to60": 6.8,
+    "666Handling": 68,
 
-    "996TopSpeed": 103,
-    "9960to60": 5.9,
-    "996Handling": 69,
+    "996TopSpeed": 111,
+    "9960to60": 6.4,
+    "996Handling": 68,
 
-    "969TopSpeed": 103,
-    "9690to60": 6.2,
-    "969Handling": 71
+    "969TopSpeed": 111,
+    "9690to60": 6.8,
+    "969Handling": 71,
+
+	"699TopSpeed": 106,
+    "6990to60": 6.4,
+    "699Handling": 71
 }

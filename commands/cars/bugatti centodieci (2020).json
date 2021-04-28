@@ -24,13 +24,13 @@
     "ola": 91.67,
     "description": "Bugatti pays homage to its classic EB110 with a run of 10 special hypercars. Card by DodgeDemon.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/807520423268581426/2020_Bugatti_Centodieci.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/807520545976352808/BugattiCentodieci000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/807520602562494484/BugattiCentodieci333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/807520636389949470/BugattiCentodieci666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/807520732447375390/BugattiCentodieci996.png",
-    "racehud969": "",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/807520686502313984/BugattiCentodieci699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/823393441966718988/2020_Bugatti_Centodieci.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824349957465047120/centi.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824349961016967168/centi333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824349967183118366/centi666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824350006101540894/centi996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824349983025266808/centi969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824349974975742022/centi699.png",
 
     "333TopSpeed": 238,
     "3330to60": 2.3,
@@ -40,11 +40,15 @@
     "6660to60": 2.2,
     "666Handling": 98,
 
-    "996TopSpeed": 244,
+    "996TopSpeed": 243,
     "9960to60": 2.0,
-    "996Handling": 99,
+    "996Handling": 98,
 
-    "699TopSpeed": 242,
-    "6990to60": 2.1,
+	"969TopSpeed": 243,
+    "9690to60": 2.2,
+    "969Handling": 102,
+
+    "699TopSpeed": 240,
+    "6990to60": 2.0,
     "699Handling": 102
 }

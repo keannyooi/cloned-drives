@@ -1,0 +1,54 @@
+{
+    "rq": 87,
+    "make": "Acura",
+    "model": "NSX",
+    "modelYear": 2016,
+    "country": "US",
+    "topSpeed": 192,
+    "0to60": 3.2,
+    "handling": 92,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+
+    "weight": 1763,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Hybrid",
+    "mra": 82.05,
+    "ola": 81.25,
+    "description": "The highly controversial successor to what was once the Ferrari killer. It still is one, though. Card by Connor",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/821476531225493544/S.AcuraNSX.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821476573747478528/S.AcuraNSX.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821476651891949608/S.AcuraNSX-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/836348244949991424/acuransx666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821476864102891570/S.AcuraNSX-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821476787192201286/S.AcuraNSX-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821476771978281020/S.AcuraNSX-699.png",
+
+    "333TopSpeed": 195,
+    "3330to60": 3.0,
+    "333Handling": 95,
+
+    "666TopSpeed": 197,
+    "6660to60": 2.9,
+    "666Handling": 98,
+
+    "996TopSpeed": 200,
+    "9960to60": 2.7,
+    "996Handling": 98,
+
+    "969TopSpeed": 200,
+    "9690to60": 2.9,
+    "969Handling": 102,
+
+    "699TopSpeed": 197,
+    "6990to60": 2.7,
+    "699Handling": 102
+}

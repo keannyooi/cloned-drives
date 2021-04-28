@@ -1,15 +1,15 @@
 {
-    "rq": 90,
+    "rq": 86,
     "make": "Jaguar",
     "model": "XE SV Project 8",
     "modelYear": 2017,
     "country": "GB",
     "topSpeed": 200,
     "0to60": 3.5,
-    "handling": 92,
+    "handling": 91,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Track Day", "Wild Ride"],
+    "tags": ["Track Day"],
     "isPrize": true,
 
     "weight": 1745,
@@ -24,23 +24,31 @@
     "ola": 85.71,
     "description": "A Jaguar sedan that chewed 5 gum. ~~Stimulate your senses~~Card by havvy",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/775474738763530280/JaguarXESVProject8.png",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/775475071996657694/JagXESVP8Stock.png",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/775475126312763422/JagXESVP8333.png",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/775475260634955806/JagXESVP8666.png",
-    "racehud996": "",
-    "racehud969": "",
-    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/775475326775459850/JagXESVP8699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820929130596925450/JaguarXESVProject8.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820929194099605515/000_proj8.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820929199173926912/111_proj8.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820929203909558302/222_proj8.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820929218727903233/332_proj8.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820929214877270026/323_proj8.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820929209929039892/233_proj8.png",
 
     "333TopSpeed": 203,
-    "3330to60": 3.4,
-    "333Handling": 95,
+    "3330to60": 3.3,
+    "333Handling": 94,
 
-    "666TopSpeed": 206,
+    "666TopSpeed": 205,
     "6660to60": 3.2,
-    "666Handling": 98,
+    "666Handling": 97,
 
-    "699TopSpeed": 207,
-    "6990to60": 3.1,
-    "699Handling": 102
+	"996TopSpeed": 208,
+    "9960to60": 3.0,
+    "996Handling": 97,
+
+	"969TopSpeed": 208,
+    "9690to60": 3.2,
+    "969Handling": 101,
+
+    "699TopSpeed": 205,
+    "6990to60": 3.0,
+    "699Handling": 101
 }

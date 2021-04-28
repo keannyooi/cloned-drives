@@ -1,5 +1,5 @@
 {
-    "rq": 32,
+    "rq": 37,
     "make": "Ford",
     "model": "Focus ST170",
     "modelYear": 2002,
@@ -24,23 +24,31 @@
     "ola": 68.35,
     "description": "A European SVT. Card by keanny",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/812626760926494740/ford_focus_st170.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/812626620267495424/st170.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/812626642006310972/st170_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/812626653636460544/st170_666.jpg",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/812626663379697664/st170_969.jpg",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819390743654170634/ford_focus_st170.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819759798181691422/st170_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819759804809084938/st170_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819759812513366036/st170_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819759859296763914/st170_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819759848001765396/st170_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819759825167974400/st170_699.jpg",
 
     "333TopSpeed": 136,
-    "3330to60": 7.4,
-    "333Handling": 81,
+    "3330to60": 7.5,
+    "333Handling": 80,
 
-    "666TopSpeed": 139,
-    "6660to60": 6.9,
+    "666TopSpeed": 140,
+    "6660to60": 7.1,
     "666Handling": 83,
 
-    "969TopSpeed": 143,
-    "9690to60": 6.4,
-    "969Handling": 86
+	"996TopSpeed": 143,
+    "9960to60": 6.7,
+    "996Handling": 83,
+
+    "969TopSpeed": 144,
+    "9690to60": 7.1,
+    "969Handling": 87,
+
+	"699TopSpeed": 140,
+    "6990to60": 6.7,
+    "699Handling": 87
 }

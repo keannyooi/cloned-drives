@@ -1,5 +1,5 @@
 {
-    "rq": 79,
+    "rq": 77,
     "make": "Singer",
     "model": "911 Reimagined",
     "modelYear": 2010,
@@ -9,7 +9,7 @@
     "handling": 84,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [],
+    "tags": ["Tuner"],
     "isPrize": false,
 
     "weight": 1245,
@@ -24,31 +24,31 @@
     "ola": 66.67,
     "description": "How do you improve Perfection? give it to Singer. Card by DodgeDemon.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/807278053151342665/2010_Singer_911.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/807278201000689724/Singer911000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/807278241027063808/Singer911333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/807278286269841438/Singer911666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/807278413114245151/Singer911996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/807278384877928478/Singer911969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/807278322164826122/Singer911699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819418245240193024/2010_Singer_911.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/827076641972944916/singer_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/827076649753247744/singer_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/827076655569960990/singer_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/827076706971418664/singer_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/827076693847179264/singer_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/827076675187376178/singer_699.jpg",
 
     "333TopSpeed": 179,
     "3330to60": 3.1,
     "333Handling": 87,
 
     "666TopSpeed": 182,
-    "6660to60": 2.9,
+    "6660to60": 3.0, 
     "666Handling": 90,
 
-    "996TopSpeed": 186,
-    "9960to60": 2.7,
-    "996Handling": 91,
+    "996TopSpeed": 185,
+    "9960to60": 2.8,
+    "996Handling": 90,
 
     "969TopSpeed": 185,
-    "9690to60": 2.8,
+    "9690to60": 3.0,
     "969Handling": 93,
 
-    "699TopSpeed": 184,
+    "699TopSpeed": 185,
     "6990to60": 2.8,
     "699Handling": 93
 }

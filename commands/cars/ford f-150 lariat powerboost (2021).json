@@ -1,5 +1,5 @@
 {
-    "rq": 58,
+    "rq": 64,
     "make": "Ford",
     "model": "F-150 Lariat Powerboost",
     "modelYear": 2021,
@@ -24,27 +24,31 @@
     "ola": 63.98,
     "description": "The million tonne hauler. By DodgeDemon",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/788225793150418965/2021_Ford_F150_Hybrid.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/788227115577114665/f150.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/788227128436457522/f150333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/788227147185258507/f150666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/788227205448073227/f150996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/788227178688413706/f150969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/823956424434122762/2021_Ford_F150_Hybrid.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824287659798167572/laret.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824287664949690428/laret333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824287670212493343/laret666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824287696511172648/laret996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824287686034063380/laret969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824287677917429780/laret699.png",
 
-    "333TopSpeed": 110,
+    "333TopSpeed": 112,
     "3330to60": 5.1,
-    "333Handling": 70,
+    "333Handling": 69,
 
-    "666TopSpeed": 113,
-    "6660to60": 4.8,
-    "666Handling": 73,
+    "666TopSpeed": 117,
+    "6660to60": 4.9,
+    "666Handling": 71,
 
-    "996TopSpeed": 117,
-    "9960to60": 4.5,
-    "996Handling": 73,
+    "996TopSpeed": 122,
+    "9960to60": 4.6,
+    "996Handling": 71,
 
-    "969TopSpeed": 116,
-    "9690to60": 4.6,
-    "969Handling": 76
+    "969TopSpeed": 122,
+    "9690to60": 4.9,
+    "969Handling": 74,
+
+	"699TopSpeed": 117,
+    "6990to60": 4.6,
+    "699Handling": 74
 }

@@ -1,5 +1,5 @@
 {
-    "rq": 14,
+    "rq": 12,
     "make": ["Buick", "Opel", "Isuzu"],
     "model": "Opel by Isuzu",
     "modelYear": 1976,
@@ -24,31 +24,31 @@
     "ola": 62.12,
     "description": "Identity crisis intensifies. Card by Spence.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/803327813246648330/image0.jpg",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/803327903353667594/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/803327925344534558/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/803327945078734868/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/803328029949427773/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/803327969996177408/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/803327998606049361/image0.jpg",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/825422566737838090/BuickOpel.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/825422886255722527/BuickOpel.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/825422890350542918/BuickOpel1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/825422895014215730/BuickOpel2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/825422919282589716/BuickOpel996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/825422913434943488/BuickOpel969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/825422903470063707/BuickOpel699.png",
 
-    "333TopSpeed": 101,
-    "3330to60": 12.1,
-    "333Handling": 65,
+    "333TopSpeed": 103,
+    "3330to60": 12.5,
+    "333Handling": 67,
 
-    "666TopSpeed": 104,
-    "6660to60": 11.0,
-    "666Handling": 68,
+    "666TopSpeed": 109,
+    "6660to60": 11.9,
+    "666Handling": 69,
 
-    "996TopSpeed": 106,
-    "9960to60": 9.7,
-    "996Handling": 68,
+    "996TopSpeed": 114,
+    "9960to60": 10.2,
+    "996Handling": 69,
 
-    "969TopSpeed": 106,
-    "9690to60": 10.0,
+    "969TopSpeed": 114,
+    "9690to60": 11.9,
     "969Handling": 70,
 
-    "699TopSpeed": 104,
-    "6990to60": 10.3,
-    "699Handling": 70
+    "699TopSpeed": 109,
+    "6990to60": 10.2,
+    "699Handling": 72
 }

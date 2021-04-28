@@ -9,7 +9,7 @@
     "handling": 70,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [],
+    "tags": ["MotorSport"],
     "isPrize": true,
 
     "weight": 801,
@@ -25,27 +25,30 @@
     "description": "The only Aston Martin to win at Le Mans. Card by Bnuuy.",
 
     "card": "https://cdn.discordapp.com/attachments/715782088271331398/793622384430809088/astondbr1.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/793622927123152896/dbr1.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/793622940057862184/dbr1333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/793622953052471336/dbr1666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/793622994450382888/dbr1996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/793622972786802688/dbr1969.png",
-    "racehud699": "",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821061591411720272/dbr1.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821061597119905892/dbr1333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821061603767877632/dbr1666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821061630246912070/dbr1996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821061620393312316/dbr1969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821061611967610921/dbr1699.png",
 
     "333TopSpeed": 182,
     "3330to60": 4.0,
-    "333Handling": 73,
+    "333Handling": 72,
 
     "666TopSpeed": 185,
     "6660to60": 3.8,
     "666Handling": 75,
 
-    "996TopSpeed": 189,
+    "996TopSpeed": 188,
     "9960to60": 3.6,
-    "996Handling": 76,
+    "996Handling": 75,
 
     "969TopSpeed": 188,
-    "9690to60": 3.7,
-    "969Handling": 78
+    "9690to60": 3.8,
+    "969Handling": 78,
 
+	"699TopSpeed": 185,
+    "6990to60": 3.6,
+    "699Handling": 78
 }

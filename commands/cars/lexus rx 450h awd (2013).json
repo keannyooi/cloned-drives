@@ -1,5 +1,5 @@
 {
-    "rq": 53,
+    "rq": 46,
     "make": "Lexus",
     "model": "RX 450h AWD",
     "modelYear": 2013,
@@ -9,7 +9,7 @@
     "handling": 71,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": ["2021 Spring Collection"],
+    "tags": [],
     "isPrize": false,
 
     "weight": 2149,
@@ -24,23 +24,31 @@
     "ola": 80.00,
     "description": "A motorized spa treatment wrapped in 50 shades of green. Card by Macan.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/812827379331891200/RX_450h_AWD_13.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/812828538675134534/Lexus_RX_450h_AWD_2013_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/812828540776087582/Lexus_RX_450h_AWD_2013_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/812828545449459742/Lexus_RX_450h_AWD_2013_666.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/812828559861088276/Lexus_RX_450h_AWD_2013_969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826520381866901574/RX450h.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826522038893150249/RX450h.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826522044652847104/RX450h1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826522048586448926/RX450h2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826522068606517258/RX450h996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826522062968455258/RX450h969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826522056136720464/RX450h699.png",
 
-    "333TopSpeed": 119,
-    "3330to60": 6.4,
-    "333Handling": 74,
+    "333TopSpeed": 120,
+    "3330to60": 6.5,
+    "333Handling": 73,
 
     "666TopSpeed": 124,
-    "6660to60": 5.9,
+    "6660to60": 6.1,
     "666Handling": 76,
 
-    "969TopSpeed": 128,
-    "9690to60": 5.5,
-    "969Handling": 79
+    "996TopSpeed": 129,
+    "9960to60": 5.8,
+    "996Handling": 76,
+
+    "969TopSpeed": 129,
+    "9690to60": 6.1,
+    "969Handling": 79,
+
+    "699TopSpeed": 124,
+    "6990to60": 5.8,
+    "699Handling": 79
 }

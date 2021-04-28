@@ -1,5 +1,5 @@
 {
-    "rq": 62,
+    "rq": 58,
     "make": "Acura",
     "model": "RDX A-Spec",
     "modelYear": 2019,
@@ -24,31 +24,31 @@
     "ola": 58.46,
     "description": "It offers lively and athletic handling, a long list of standard features, and a high-quality, stylish cabin. Card by Spence.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/800139857477369936/image0_8.jpg",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/800140933626593310/rdx.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/800140945685217330/rdx333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/800140959437815848/rdx666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/800141019986526218/rdx996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/800141000746991676/rdx969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/800140979080134666/rdx699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824372563630489630/AcuraRDXA-Spec.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824373078481305650/RDX.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824373081887604766/rdx333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824373088828784680/rdx666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824373113915572294/rdx996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824373101562560602/rdx969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824373095204651038/rdx699.png",
 
-    "333TopSpeed": 116,
+    "333TopSpeed": 118,
     "3330to60": 6.2,
     "333Handling": 75,
 
-    "666TopSpeed": 119,
+    "666TopSpeed": 122,
     "6660to60": 5.9,
-    "666Handling": 79,
+    "666Handling": 78,
 
-    "996TopSpeed": 123,
+    "996TopSpeed": 127,
     "9960to60": 5.5,
-    "996Handling": 80,
+    "996Handling": 78,
 
-    "969TopSpeed": 122,
-    "9690to60": 5.6,
+    "969TopSpeed": 127,
+    "9690to60": 5.9,
     "969Handling": 81,
 
-    "699TopSpeed": 121,
-    "6990to60": 5.7,
+    "699TopSpeed": 122,
+    "6990to60": 5.5,
     "699Handling": 81
 }

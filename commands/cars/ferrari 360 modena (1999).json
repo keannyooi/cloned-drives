@@ -1,5 +1,5 @@
 {
-    "rq": 64,
+    "rq": 65,
     "make": "Ferrari",
     "model": "360 Modena",
     "modelYear": 1999,
@@ -24,31 +24,31 @@
     "ola": 87.86,
     "description": "A cleansheet for ferrari to style future cars on. Card by Havvy.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/800054773822914560/Ferrari360Modena.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/800054883154657310/000mdn.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/800054895989358612/111mdn.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/800054902914940948/222mdn.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/800054935696703548/332mdn.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/800054923508187146/323mdn.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/800054913534263336/233mdn.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/823515804418572329/Ferrari360Modena.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823515905475477514/000_360mod.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823515911355891752/111_360mod.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823515915437735976/222_360mod.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823515930331185162/332_360mod.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823515925399207936/323_360mod.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823515920336683008/233_360mod.png",
 
     "333TopSpeed": 184,
     "3330to60": 4.1,
     "333Handling": 85,
 
-    "666TopSpeed": 186,
+    "666TopSpeed": 187,
     "6660to60": 3.9,
-    "666Handling": 88,
+    "666Handling": 87,
 
-    "996TopSpeed": 191,
-    "9960to60": 3.6,
-    "996Handling": 88,
+    "996TopSpeed": 190,
+    "9960to60": 3.7,
+    "996Handling": 87,
 
-    "969TopSpeed": 191,
-    "9690to60": 3.7,
+    "969TopSpeed": 190,
+    "9690to60": 3.9,
     "969Handling": 91,
 
-    "699TopSpeed": 189,
+    "699TopSpeed": 187,
     "6990to60": 3.7,
     "699Handling": 91
 }

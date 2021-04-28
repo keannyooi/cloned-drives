@@ -1,5 +1,5 @@
 {
-    "rq": 92,
+    "rq": 88,
     "make": "Saleen",
     "model": "S7 Twin Turbo",
     "modelYear": 2005,
@@ -9,7 +9,7 @@
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [],
+    "tags": ["Supercar"],
     "isPrize": true,
 
     "weight": 1247,
@@ -24,27 +24,31 @@
     "ola": 91.46,
     "description": "Card by Havvy.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/806949587322798140/SaleenS7Turbo.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/806949661230759956/000_s7tt.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/806949669351456798/111_s7tt.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/806949673881436160/222_s7tt.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/806949683691126794/332_s7tt.png",
-    "racehud969": "",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/806949682688426016/233_s7tt.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/825411245603684392/S7TT.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/825411581335830528/s7tt.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/825411586159017984/s7tt333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/825411592698331186/s7tt666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/825411622797443092/s7tt996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/825411610566852608/s7tt969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/825411601272012870/s7tt699.png",
 
     "333TopSpeed": 251,
     "3330to60": 3.1,
     "333Handling": 94,
 
-    "666TopSpeed": 252,
-    "6660to60": 3.0,
+    "666TopSpeed": 253,
+    "6660to60": 3.0, 
     "666Handling": 97,
 
-    "996TopSpeed": 254,
-    "9960to60": 2.7,
-    "996Handling": 98,
+    "996TopSpeed": 255,
+    "9960to60": 2.8,
+    "996Handling": 97,
 
-    "699TopSpeed": 254,
+    "969TopSpeed": 255,
+    "9690to60": 3.0,
+    "969Handling": 101,
+
+    "699TopSpeed": 253,
     "6990to60": 2.8,
     "699Handling": 101
 }

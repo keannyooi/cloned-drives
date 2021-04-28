@@ -1,5 +1,5 @@
 {
-    "rq": 16,
+    "rq": 18,
     "make": "DMC",
     "model": "DeLorean",
     "modelYear": 1981,
@@ -24,23 +24,31 @@
     "ola": 68.57,
     "description": "1.21 gigawatts and 88mph required to time travel. Card by Olimato",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/786056242992775188/delorean.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/733621074536693785/delorean_stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/733621099404722278/delorean_1_star.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/733621135240986634/delorean_2_star.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/733621170917605496/delorean_max_323.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826018070953852938/Delorean.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826018173786390548/Delo.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826018182581190656/Delo1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826018189649117184/Delo2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826018209961345034/Delo996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826018203729002526/Delo969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826018195156107264/Delo699.png",
 
-    "333TopSpeed": 112,
-    "3330to60": 9.9,
+    "333TopSpeed": 114,
+    "3330to60": 10.0,
     "333Handling": 71,
 
-    "666TopSpeed": 115,
-    "6660to60": 9.3,
-    "666Handling": 73,
+    "666TopSpeed": 119,
+    "6660to60": 9.5,
+    "666Handling": 74,
 
-    "969TopSpeed": 118,
-    "9690to60": 8.7,
-    "969Handling": 75
+	"996TopSpeed": 123,
+    "9960to60": 8.9,
+    "996Handling": 74,
+
+    "969TopSpeed": 123,
+    "9690to60": 9.5,
+    "969Handling": 77,
+
+	"699TopSpeed": 119,
+    "6990to60": 8.9,
+    "699Handling": 77
 }

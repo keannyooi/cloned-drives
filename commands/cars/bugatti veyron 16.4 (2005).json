@@ -1,5 +1,5 @@
 {
-    "rq": 96,
+    "rq": 94,
     "make": "Bugatti",
     "model": "Veyron 16.4",
     "modelYear": 2005,
@@ -24,13 +24,13 @@
     "ola": 91.14,
     "description": "The most well-known Bugatti, even though there are faster ones made. Card by Havvy.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/806962823863336961/BugattiVeyron.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/806962884730814485/000_veyr.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/806962893777403984/111_veyr.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/806962896738320394/222_veyr.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/806962918821199913/332_veyr.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/806962911889063977/323_veyr.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/806962904674467960/233_veyr.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824389509910233158/veryon164thingy.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824390259160252476/veyron.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824390266134986752/veyron333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824390273697579099/veyron666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824390302998593586/veyron996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824390293222457404/veyron969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824390283931418634/veyron699.png",
 
     "333TopSpeed": 255,
     "3330to60": 2.5,
@@ -40,15 +40,15 @@
     "6660to60": 2.3,
     "666Handling": 93,
 
-    "996TopSpeed": 260,
-    "9960to60": 2.1,
-    "996Handling": 94,
+    "996TopSpeed": 259,
+    "9960to60": 2.2,
+    "996Handling": 93,
 
     "969TopSpeed": 259,
-    "9690to60": 2.2,
-    "969Handling": 96,
+    "9690to60": 2.3,
+    "969Handling": 97,
 
-    "699TopSpeed": 259,
+    "699TopSpeed": 257,
     "6990to60": 2.2,
     "699Handling": 97
 }

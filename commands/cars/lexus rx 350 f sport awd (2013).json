@@ -1,5 +1,5 @@
 {
-    "rq": 52,
+    "rq": 44,
     "make": "Lexus",
     "model": "RX 350 F Sport AWD",
     "modelYear": 2013,
@@ -24,23 +24,31 @@
     "ola": 79.66,
     "description": "Stretching the definition of sport. Card by Macan.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/812827341042352179/RX_350_F_Sport_AWD_13.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/812828480290029619/Lexus_RX_350_F_Sport_AWD_2013_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/812828488309538836/Lexus_RX_350_F_Sport_AWD_2013_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/812828492622331924/Lexus_RX_350_F_Sport_AWD_2013_666.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/812828503846158406/Lexus_RX_350_F_Sport_AWD_2013_969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826520825788104765/RX350F.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826521786844971028/RX350f.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826521796551508007/RX350f1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826521803068276746/RX350f2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826521825663516752/RX350f996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826521816562008134/RX350f969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826521809679417384/RX350f699.png",
 
-    "333TopSpeed": 112,
-    "3330to60": 6.6,
-    "333Handling": 74,
+    "333TopSpeed": 113,
+    "3330to60": 6.7,
+    "333Handling": 73,
 
-    "666TopSpeed": 117,
-    "6660to60": 6.1,
+    "666TopSpeed": 118,
+    "6660to60": 6.3,
     "666Handling": 76,
 
-    "969TopSpeed": 121,
-    "9690to60": 5.7,
-    "969Handling": 79
+    "996TopSpeed": 122,
+    "9960to60": 6.0,
+    "996Handling": 76,
+
+    "969TopSpeed": 122,
+    "9690to60": 6.3,
+    "969Handling": 79,
+
+    "699TopSpeed": 118,
+    "6990to60": 6.0,
+    "699Handling": 79
 }

@@ -1,5 +1,5 @@
 {
-    "rq": 72,
+    "rq": 70,
     "make": "BMW",
     "model": "M2",
     "modelYear": 2016,
@@ -24,31 +24,31 @@
     "ola": 82.26,
     "description": "The small BMW sports car worth its price tag. Card by Havvy.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/806970919955333220/BMWM2CD.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/806970985639182376/000_m2.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/806970992457940992/111_m2.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/806970999634526258/222_m2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/806971020854427648/332_m2.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/806971013623185448/323_m2.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/806971008367329351/233_m2.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826450541625868358/M22016.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826450690599288842/2015M2.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826450700644778014/2015M2333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826450709729640478/2015M2666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826450736518529084/2015M2996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826450728981233674/2015M2969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826450721498726430/2015M2699.png",
 
-    "333TopSpeed": 171,
+    "333TopSpeed": 170,
     "3330to60": 4.0,
     "333Handling": 93,
 
-    "666TopSpeed": 175,
-    "6660to60": 3.7,
+    "666TopSpeed": 173,
+    "6660to60": 3.8,
     "666Handling": 96,
     
-    "996TopSpeed": 179,
-    "9960to60": 3.4,
-    "996Handling": 97,
+    "996TopSpeed": 176,
+    "9960to60": 3.6,
+    "996Handling": 96,
 
-    "969TopSpeed": 179,
-    "9690to60": 3.5,
-    "969Handling": 99,
+    "969TopSpeed": 176,
+    "9690to60": 3.8,
+    "969Handling": 100,
 
-    "699TopSpeed": 175,
-    "6990to60": 3.5,
+    "699TopSpeed": 173,
+    "6990to60": 3.6,
     "699Handling": 100
 }

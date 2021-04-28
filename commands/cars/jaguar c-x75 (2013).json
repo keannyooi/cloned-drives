@@ -1,5 +1,5 @@
 {
-    "rq": 97,
+    "rq": 94,
     "make": "Jaguar",
     "model": "C-X75",
     "modelYear": 2013,
@@ -22,33 +22,33 @@
     "fuelType": "Hybrid",
     "mra": 107.41,
     "ola": 86.88,
-    "description": "one crazy concept thats kinda belivable in 2021. Card by Bnuuy",
+    "description": "One crazy concept thats kinda belivable in 2021. Card by Bnuuy",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/799322584671715348/cx75.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/799322653512957972/cx75.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/799322665151496212/cx75333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/799322678665674802/cx75666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/799322749112811561/cx75996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/799322728389279794/cx75969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/799322703059353610/cx75699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819596585956540466/1CX75.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819596756617658388/cx75.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819596762074710087/cx75333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819596777563881482/cx75666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819596820983447593/cx75996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819596801023410196/cx75969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819596788809728010/cx75699.png",
 
     "333TopSpeed": 222,
-    "3330to60": 2.7,
+    "3330to60": 2.8,
     "333Handling": 96,
 
-    "666TopSpeed": 224,
+    "666TopSpeed": 225,
     "6660to60": 2.6,
     "666Handling": 99,
 
-    "996TopSpeed": 228,
-    "9960to60": 2.4,
-    "996Handling": 100,
+    "996TopSpeed": 227,
+    "9960to60": 2.5,
+    "996Handling": 99,
 
     "969TopSpeed": 227,
-    "9690to60": 2.5,
+    "9690to60": 2.6,
     "969Handling": 103,
 
-    "699TopSpeed": 226,
+    "699TopSpeed": 225,
     "6990to60": 2.5,
     "699Handling": 103
 }

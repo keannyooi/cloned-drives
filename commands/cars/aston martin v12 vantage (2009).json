@@ -1,5 +1,5 @@
 {
-    "rq": 71,
+    "rq": 69,
     "make": "Aston Martin",
     "model": "V12 Vantage",
     "modelYear": 2009,
@@ -24,31 +24,31 @@
     "ola": 82.05,
     "description": "It's a compact, nuggety little missile, endowed with performance of casual violence and face-bending cornering ability. Card by Havvy",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/807539749090623488/AstonMartinV12Vantage.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/807539812835655690/000_v12vtg.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/807539822855585802/111_v12vtg.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/807539828244742164/222_v12vtg.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/807539847870545920/332_v12vtg.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/807539844511301672/323_v12vtg.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/807539835614396446/233_v12vtg.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826192798725177414/V12Vantage.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826192860462186526/V12vanta09.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826192865696546867/V12vanta09333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826192873677389824/V12vanta09666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826192911343026266/V12vanta09996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826192901993136178/V12vanta09969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826192889838567424/V12vanta09699.png",
 
-    "333TopSpeed": 194,
+    "333TopSpeed": 193,
     "3330to60": 4.0,
     "333Handling": 89,
 
-    "666TopSpeed": 197,
-    "6660to60": 3.7,
+    "666TopSpeed": 195,
+    "6660to60": 3.8,
     "666Handling": 92,
 
-    "996TopSpeed": 199,
-    "9960to60": 3.4,
+    "996TopSpeed": 198,
+    "9960to60": 3.6,
     "996Handling": 92,
     
-    "969TopSpeed": 199,
-    "9690to60": 3.5,
+    "969TopSpeed": 198,
+    "9690to60": 3.8,
     "969Handling": 95,
 
-    "699TopSpeed": 197,
-    "6990to60": 3.5,
+    "699TopSpeed": 195,
+    "6990to60": 3.6,
     "699Handling": 95
 }

@@ -1,5 +1,5 @@
 {
-    "rq": 86,
+    "rq": 80,
     "make": "Nissan",
     "model": "Nismo Super GT MOTUL AUTECH GT-R",
     "modelYear": 2014,
@@ -22,15 +22,15 @@
     "fuelType": "Petrol",
     "mra": 134.48,
     "ola": 89.00,
-    "description": "the RWD Godzilla. Card by Babanuuy.",
+    "description": "The RWD Godzilla. Card by Babanuuy.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/807694766086160444/NANIslowerthan2002gt500how.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/807694843534901258/motul.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/807694854674972713/motul333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/807694867744161812/motul666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/807694916196630528/motul996.png",
-    "racehud969": "",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/807694894180859994/motul699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/821038963942228038/SuperGT.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821039145379037184/GTRR.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821039152984227880/GTRR333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821039168708673536/GTRR666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821039197242130452/GTRR996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821039189419098173/GTRR969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821039179601018910/GTRR699.png",
 
     "333TopSpeed": 189,
     "3330to60": 3.7,
@@ -38,13 +38,17 @@
 
     "666TopSpeed": 192,
     "6660to60": 3.5,
-    "666Handling": 103,
+    "666Handling": 102,
 
-    "996TopSpeed": 196,
+    "996TopSpeed": 194,
     "9960to60": 3.3,
-    "996Handling": 104,
+    "996Handling": 102,
 
-    "699TopSpeed": 194,
-    "6990to60": 3.4,
-    "699Handling": 107
+    "699TopSpeed": 192,
+    "6990to60": 3.3,
+    "699Handling": 107,
+
+    "969TopSpeed": 194,
+    "969to60": 3.5,
+    "969Handling": 107
 }

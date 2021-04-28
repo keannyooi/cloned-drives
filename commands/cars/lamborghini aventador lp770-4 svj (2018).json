@@ -1,5 +1,5 @@
 {
-    "rq": 98,
+    "rq": 95,
     "make": "Lamborghini",
     "model": "Aventador LP770-4 SVJ",
     "modelYear": 2018,
@@ -24,31 +24,31 @@
     "ola": 96.30,
     "description": "The ultimate Aventador. Card by DodgeDemon",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/789748883412353071/2018_Lamborghini_Aventador_SVJ.png?width=705&height=439",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/789747703525015612/LamborghiniAventadorSVJStock.png?width=705&height=441",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/789747736932909066/LamborghiniAventadorSVJ333.png?width=705&height=441",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/789747763357286420/LamborghiniAventadorSVJ666.png?width=705&height=441",
-    "racehud996": "",
-    "racehud969": "",
-    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/789747810593013760/LamborghiniAventadorSVJ699.png?width=705&height=441",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/821045098275405905/2018_Lamborghini_Aventador_SVJ.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824373927400308776/svj.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824373933222395914/svj333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824373938120556575/svj666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824373979493957672/svj996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824373970391662592/svj969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824373960493498428/svj699.png",
 
     "333TopSpeed": 219,
     "3330to60": 2.6,
     "333Handling": 96,
 
-    "666TopSpeed": 221,
-    "6660to60": 2.5,
+    "666TopSpeed": 222,
+    "6660to60": 2.4,
     "666Handling": 99,
 
-    "996TopSpeed": 0,
-    "9960to60": 0,
-    "996Handling": 0,
+    "996TopSpeed": 224,
+    "9960to60": 2.3,
+    "996Handling": 99,
 
-    "969TopSpeed": 0,
-    "9690to60": 0,
-    "969Handling": 0,
+    "969TopSpeed": 224,
+    "9690to60": 2.4,
+    "969Handling": 103,
 
-    "699TopSpeed": 224,
-    "6990to60": 2.4,
+    "699TopSpeed": 222,
+    "6990to60": 2.3,
     "699Handling": 103
 }

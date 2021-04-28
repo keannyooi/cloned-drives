@@ -1,5 +1,5 @@
 {
-    "rq": 71,
+    "rq": 78,
     "make": ["Lingenfelter", "GMC"],
     "model": "GMC Suburban",
     "modelYear": 1994,
@@ -24,31 +24,31 @@
     "ola": 75.00,
     "description": "Jaw-dropping speed that was set back by its tyres. Card by Exist.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/809385171807240282/CD_Lingenfelter_GMC_Suburban.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/809385583083257887/CD_Lingenfelter_GMC_Suburban_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/809385595939192862/CD_Lingenfelter_GMC_Suburban_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/809385601975582750/CD_Lingenfelter_GMC_Suburban_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/809385635239428137/CD_Lingenfelter_GMC_Suburban_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/809385621567045653/CD_Lingenfelter_GMC_Suburban_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/809385615048572939/CD_Lingenfelter_GMC_Suburban_699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824654093392937021/lingen.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824654474558701589/lingen.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824654478782758933/lingen333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824654483497156688/lingen666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824654514816679936/lingen996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824654506322296882/lingen969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824654500664180776/lingen699.png",
 
-    "333TopSpeed": 133,
-    "3330to60": 4.3,
+    "333TopSpeed": 134,
+    "3330to60": 4.4,
     "333Handling": 63,
 
-    "666TopSpeed": 135,
-    "6660to60": 4.0,
-    "666Handling": 66,
+    "666TopSpeed": 138,
+    "6660to60": 4.1,
+    "666Handling": 65,
 
-    "996TopSpeed": 138,
-    "9960to60": 3.7,
-    "996Handling": 66,
+    "996TopSpeed": 142,
+    "9960to60": 3.9,
+    "996Handling": 65,
 
-    "969TopSpeed": 137,
-    "9690to60": 3.8,
+    "969TopSpeed": 142,
+    "9690to60": 4.1,
     "969Handling": 68,
 
-    "699TopSpeed": 136,
-    "6990to60": 3.8,
+    "699TopSpeed": 138,
+    "6990to60": 3.9,
     "699Handling": 68
 }

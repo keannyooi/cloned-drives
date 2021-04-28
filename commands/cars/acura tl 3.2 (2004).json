@@ -1,17 +1,16 @@
-﻿{
-    "rq": 60,
+{
+    "rq": 58,
     "make": "Acura",
     "model": "TL 3.2",
     "modelYear": 2004,
     "country": "US",
-    "topSpeed": 134,
-    "0to60": 5.8,
-    "handling": 80,
+    "topSpeed": 150,
+    "0to60": 5.9,
+    "handling": 77,
     "driveType": "FWD",
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
 
     "weight": 1580,
     "gc": "Medium",
@@ -21,41 +20,35 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 63.74,
-    "ola": 89.66,
+    "mra": 62.11,
+    "ola": 77.97,
     "description": "The third ultimate under 35k sedan for car and driver. Card by Connor",
 
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/823129479823360010/B.AcuraTL32.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823129467983364126/B.AcuraTL32.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823129493166096424/B.AcuraTL32-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823129509444059136/B.AcuraTL32-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823129562380632074/B.AcuraTL32-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823129532071542784/B.AcuraTL32-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823129523989512232/B.AcuraTL32-699.png",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/792145276726280222/B.AcuraTL32.png?width=1154&height=718",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/792145898590175262/TL32St.png",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/792145915762442281/TL3231.png",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/792145940726415360/TL3232.png",
-    "racehud996": "",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/792145951879069726/TL32323.png",
-    "racehud699": "",
+    "333TopSpeed": 153,
+    "3330to60": 5.6,
+    "333Handling": 80,
 
+    "666TopSpeed": 157,
+    "6660to60": 5.3,
+    "666Handling": 82,
 
-    "333TopSpeed": 138,
-    "3330to60": 5.5,
-    "333Handling": 83,
+    "996TopSpeed": 160,
+    "9960to60": 5.0,
+    "996Handling": 82,
 
+    "969TopSpeed": 160,
+    "9690to60": 5.3,
+    "969Handling": 85,
 
-    "666TopSpeed": 142,
-    "6660to60": 5.1,
-    "666Handling": 86,
-
-
-    "996TopSpeed": 0,
-    "9960to60": 0,
-    "996Handling": 0,
-
-
-    "969TopSpeed": 145,
-    "9690to60": 4.8,
-    "969Handling": 89,
-
-
-    "699TopSpeed": 0,
-    "6990to60": 0,
-    "699Handling": 0
+    "699TopSpeed": 157,
+    "6990to60": 5.0,
+    "699Handling": 85
 }

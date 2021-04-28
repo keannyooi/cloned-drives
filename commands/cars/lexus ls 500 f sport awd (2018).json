@@ -1,5 +1,5 @@
 {
-    "rq": 63,
+    "rq": 64,
     "make": "Lexus",
     "model": "LS 500 F Sport AWD",
     "modelYear": 2018,
@@ -24,23 +24,31 @@
     "ola": 72.00,
     "description": "Updated sportier version of the LS limo still weighs 2.2 tonnes. Card by Macan.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/812827252907442227/LS_500_F_Sport_AWD_18.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/812828254826004481/Lexus_LS_500_F_Sport_AWD_2018_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/812828259506323536/Lexus_LS_500_F_Sport_AWD_2018_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/812828263269269564/Lexus_LS_500_F_Sport_AWD_2018_666.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/812828274907414558/Lexus_LS_500_F_Sport_AWD_2018_969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/823925666641739777/LS_500_F_Sport_AWD_18.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823926177646641152/LS.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823926181946196049/LS333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823926188632309780/LS666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823926211549986856/LS996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823926203601649694/LS969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823926196941226014/LS699.png",
 
     "333TopSpeed": 145,
-    "3330to60": 4.7,
+    "3330to60": 4.8,
     "333Handling": 83,
 
-    "666TopSpeed": 149,
-    "6660to60": 4.4,
-    "666Handling": 86,
+    "666TopSpeed": 148,
+    "6660to60": 4.5,
+    "666Handling": 85,
 
-    "969TopSpeed": 153,
-    "9690to60": 4.1,
-    "969Handling": 89
+    "996TopSpeed": 152,
+    "9960to60": 4.3,
+    "996Handling": 85,
+
+    "969TopSpeed": 152,
+    "9690to60": 4.5,
+    "969Handling": 89,
+
+    "699TopSpeed": 148,
+    "6990to60": 4.3,
+    "699Handling": 89
 }

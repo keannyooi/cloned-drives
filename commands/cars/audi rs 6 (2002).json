@@ -1,5 +1,5 @@
-﻿{
-    "rq": 64,
+{
+    "rq": 63,
     "make": "Audi",
     "model": "RS 6",
     "modelYear": 2002,
@@ -12,10 +12,9 @@
     "tags": ["Sleeper"],
     "isPrize": false,
 
-
     "weight": 1845,
     "gc": "Low",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Sedan",
     "tcs": true,
     "abs": true,
@@ -25,37 +24,31 @@
     "ola": 73.01,
     "description": "An utterly beguiling and timeless car. Card by Havvy",
 
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824604593425350686/rs6.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824605051905114152/rs6.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824605061304680468/rs6333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824605068523339796/rs6666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824605105357455421/rs6996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824605091607609394/rs6969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824605083282440222/rs6699.png",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/803349302461071370/AudiRS6C5.png?width=1154&height=718",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/803349392115105862/000rs6.png?width=1154&height=718",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/803349403855093760/111rs6.png?width=1154&height=718",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/803349409546109018/222rs6.png?width=1154&height=718",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/803349443826286642/332rs6.png?width=1154&height=718",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/803349434142294016/323rs6.png?width=1154&height=718",
-    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/803349422951628857/233rs6.png?width=1154&height=718",
-
-
-    "333TopSpeed": 163,
+    "333TopSpeed": 162,
     "3330to60": 4.3,
     "333Handling": 82,
 
-
-    "666TopSpeed": 167,
-    "6660to60": 4.0, 
+    "666TopSpeed": 166,
+    "6660to60": 4.1,
     "666Handling": 84,
 
-
-    "996TopSpeed": 171,
-    "9960to60": 3.7,
+    "996TopSpeed": 169,
+    "9960to60": 3.8,
     "996Handling": 84,
 
+    "969TopSpeed": 169,
+    "9690to60": 4.1,
+    "969Handling": 88,
 
-    "969TopSpeed": 171,
-    "9690to60": 3.8,
-    "969Handling": 87,
-
-
-    "699TopSpeed": 167,
+    "699TopSpeed": 166,
     "6990to60": 3.8,
     "699Handling": 88
 }

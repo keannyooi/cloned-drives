@@ -1,5 +1,5 @@
 {
-    "rq": 10,
+    "rq": 1,
     "make": "Peel",
     "model": "P50",
     "modelYear": 1962,
@@ -24,24 +24,32 @@
     "ola": 0.00,
     "description": "Officially recognised as the smallest production car ever, it's also the lightest.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/803710487393075220/PeelbutGB.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/787363818153312256/peelp50.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/787363849157345290/peelp50333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/787363873610530816/peelp50666.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/787363906976874546/peelp50969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/823502138956578887/peelp50.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823502258305499146/p50.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823502263061970954/p50333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823502269961470012/p50666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823502298029228062/p50996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823502288055304222/p50969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823502278937149440/p50699.png",
 
-    "333TopSpeed": 41,
+    "333TopSpeed": 47,
     "3330to60": 99.9,
-    "333Handling": 52,
+    "333Handling": 51,
 
-    "666TopSpeed": 44,
+    "666TopSpeed": 55,
     "6660to60": 99.9,
-    "666Handling": 55,
+    "666Handling": 52,
 
-    "969TopSpeed": 46,
-    "9690to60": 99.9,
-    "969Handling": 57
+    "969TopSpeed": 64,
+    "9690to60": 58.5,
+    "969Handling": 54,
+
+    "699TopSpeed": 55,
+    "699to60": 99.9,
+    "699Handling": 54,
+    
+    "996TopSpeed": 64,
+    "996to60": 55.3,
+    "996Handling": 52
 
 }

@@ -1,5 +1,5 @@
 ﻿{
-    "rq": 25,
+    "rq": 34,
     "make": "Nissan",
     "model": "Versa 1.8S Sedan",
     "modelYear": 2007,
@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
 
     "weight": 1242,
     "gc": "Medium",
@@ -25,37 +24,31 @@
     "ola": 68.75,
     "description": "Cursed card. Card by Andu",
 
-
-    "card": "https://media.discordapp.net/attachments/715782088271331398/796127149416251392/NissanVersa18SS.png?width=1085&height=676",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/796096975715172352/Versa18St.png?width=705&height=441",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/796096990668652624/Versa181.png?width=705&height=441",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/796096997597249546/Versa182.png?width=705&height=441",
-    "racehud996": "",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/796097010838667305/Versa18323.png?width=705&height=441",
-    "racehud699": "",
-
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819514064363454464/Versa1.8.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819514323449544725/Versa18.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819514335389941790/Versa181.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819514342180388905/Versa182.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819514370345664542/Versa18996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819514359121313832/Versa18969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819514351618228264/Versa18699.png",
 
     "333TopSpeed": 126,
-    "3330to60": 8.4,
-    "333Handling": 73,
+    "3330to60": 8.6,
+    "333Handling": 72,
 
+    "666TopSpeed": 131,
+    "6660to60": 8.1,
+    "666Handling": 75,
 
-    "666TopSpeed": 130,
-    "6660to60": 7.8,
-    "666Handling": 76,
+    "996TopSpeed": 135,
+    "9960to60": 7.7,
+    "996Handling": 75,
 
-
-    "996TopSpeed": 0,
-    "9960to60": 0,
-    "996Handling": 0,
-
-
-    "969TopSpeed": 134,
-    "9690to60": 7.2,
+    "969TopSpeed": 135,
+    "9690to60": 8.1,
     "969Handling": 78,
 
-
-    "699TopSpeed": 0,
-    "6990to60": 0,
-    "699Handling": 0
+    "699TopSpeed": 131,
+    "6990to60": 7.7,
+    "699Handling": 78
 }

@@ -1,5 +1,5 @@
 {
-    "rq": 13,
+    "rq": 9,
     "make": "Bentley",
     "model": "8-Litre Limousine",
     "modelYear": 1931,
@@ -24,28 +24,31 @@
     "ola": 90.00,
     "description": "A huge car with a huge engine. Card by Bnuuy.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/788196323601416202/bentley8litreNEW.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/788197997686292501/bentley8litre.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/788198011724496916/bentley8litre333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/788198024677425172/bentley8litre666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/788198068633731102/bentley8litre996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/788198046332092476/bentley8litre969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/823515721254305842/Boatley8Litre.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823515839474565150/8l.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823515845367300156/8l333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823515851659542558/8l666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823515880390262804/8l996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823515871963512882/8l969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823515859397115904/8l699.png",
 
-    "333TopSpeed": 128,
-    "3330to60": 15.0,
-    "333Handling": 61,
+    "333TopSpeed": 129,
+    "3330to60": 15.2,
+    "333Handling": 60,
 
-    "666TopSpeed": 131,
-    "6660to60": 14.1,
-    "666Handling": 64,
+    "666TopSpeed": 133,
+    "6660to60": 14.4,
+    "666Handling": 62,
 
-    "996TopSpeed": 135,
-    "9960to60": 13.0,
-    "996Handling": 64,
+    "996TopSpeed": 137,
+    "9960to60": 13.6,
+    "996Handling": 62,
 
-    "969TopSpeed": 134,
-    "9690to60": 13.3,
-    "969Handling": 67
+    "969TopSpeed": 137,
+    "9690to60": 14.4,
+    "969Handling": 64,
 
+	"699TopSpeed": 133,
+    "6990to60": 13.6,
+    "699Handling": 64
 }

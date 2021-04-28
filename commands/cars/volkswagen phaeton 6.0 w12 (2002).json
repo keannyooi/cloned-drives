@@ -1,5 +1,5 @@
 {
-    "rq": 59,
+    "rq": 58,
     "make": "Volkswagen",
     "model": "Phaeton 6.0 W12",
     "modelYear": 2002,
@@ -12,8 +12,8 @@
     "tags": [],
     "isPrize": false,
 
-    "weight": 2317,
-    "gc": "Low",
+    "weight": 2310,
+    "gc": "Medium",
     "seatCount":5,
     "bodyStyle": "Sedan",
     "tcs": true,
@@ -24,27 +24,31 @@
     "ola": 73.33,
     "description": "So over engineered it could run at 300kmh with 50°C weather for a whole day. Card by Andu",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/802609130732257280/PhaetonW12.png?width=1154&height=719",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/802609732312498216/PhaetonW12.png",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/802609742912421969/PhaetonW121.png",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/802609756282814464/PhaetonW122.png",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/802609779528040488/PhaetonW12332.png",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/802609769159458816/PhaetonW12323.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/827999264658817024/PhaetonW12.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/827999010363146270/W12Phaeton.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/827999019627708426/W12Phaeton1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/827999023075819550/W12Phaeton2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/827999046521454612/W12Phaeton996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/827999040926515220/W12Phaeton969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/827999031443193906/W12Phaeton699.png",
 
     "333TopSpeed": 158,
     "3330to60": 5.7,
     "333Handling": 76,
 
-    "666TopSpeed": 161,
-    "6660to60": 5.5, 
-    "666Handling": 80,
+    "666TopSpeed": 162,
+    "6660to60": 5.4,
+    "666Handling": 79,   
 
     "996TopSpeed": 165,
-    "9960to60": 5.2,
-    "996Handling": 81,
+    "9960to60": 5.1,
+    "996Handling": 79,
 
-    "969TopSpeed": 164,
-    "9690to60": 5.3,
-    "969Handling": 82
+    "969TopSpeed": 165,
+    "9690to60": 5.4,
+    "969Handling": 82,
+
+    "699TopSpeed": 162,
+    "6990to60": 5.1,
+    "699Handling": 82
 }

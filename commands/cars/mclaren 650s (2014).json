@@ -1,5 +1,5 @@
 {
-    "rq": 92,
+    "rq": 90,
     "make": "McLaren",
     "model": "650S",
     "modelYear": 2014,
@@ -24,23 +24,31 @@
     "ola": 85.71,
     "description": "A hotted-up 12C wearing a P1 mask. Card by DodgeDemon",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/774558572666552320/2014_McLaren_650S.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/774565700521426975/mclaren_650s.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/774565744196845578/mclaren_650s_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/774565753885687808/mclaren_650s_666.jpg",
-    "racehud996": "",
-    "racehud969": "",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/774565769228976178/mclaren_650s_699.jpg",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826711879929298994/CD_McLaren_650S.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826712017334698034/CD_McLaren_570S_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826712029767008276/CD_McLaren_570S_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826712033482637362/CD_McLaren_570S_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826712058799456266/CD_McLaren_570S_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826712052125925376/CD_McLaren_570S_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826712040726855680/CD_McLaren_570S_699.png",
 
     "333TopSpeed": 210,
     "3330to60": 2.6,
     "333Handling": 95,
 
-    "666TopSpeed": 213,
-    "6660to60": 2.5,
-    "666Handling": 99,
+    "666TopSpeed": 212,
+    "6660to60": 2.4,
+    "666Handling": 98,
 
-    "699TopSpeed": 215,
-    "6990to60": 2.4,
+    "996TopSpeed": 215,
+    "9960to60": 2.3,
+    "996Handling": 98,
+
+    "969TopSpeed": 215,
+    "9690to60": 2.4,
+    "969Handling": 102,
+
+    "699TopSpeed": 212,
+    "6990to60": 2.3,
     "699Handling": 102
 }

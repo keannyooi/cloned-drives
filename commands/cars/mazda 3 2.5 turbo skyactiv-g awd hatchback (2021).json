@@ -1,5 +1,5 @@
 {
-    "rq": 67,
+    "rq": 61,
     "make": "Mazda",
     "model": "3 2.5 Turbo Skyactiv-G AWD Hatchback",
     "modelYear": 2021,
@@ -24,24 +24,32 @@
     "ola": 69.88,
     "description": "The little Mazda with big power, hatchback edition. Card by DodgeDemon.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/794123759212691466/3.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/793932467932626954/3HatchSt.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/793932478334500905/3Hatch1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/793932488069742662/3Hatch2.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/793932501647228928/3Hatch323.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826362499908632596/3Hatch.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826362579533561886/3Hat.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826362584873041920/3Hat1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826362590648860672/3Hat2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826362615885987850/3Hat996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826362608369401897/3Hat969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826362598470582282/3Hat699.png",
 
     "333TopSpeed": 134,
-    "3330to60": 5.5,
+    "3330to60": 5.6,
     "333Handling": 80,
 
     "666TopSpeed": 138,
-    "6660to60": 5.1,
-    "666Handling": 83,
+    "6660to60": 5.3,
+    "666Handling": 82,
+
+    "996TopSpeed": 142,
+    "9960to60": 5.0,
+    "996Handling": 82,
 
     "969TopSpeed": 142,
-    "9690to60": 4.9,
-    "969Handling": 85
+    "9690to60": 5.3,
+    "969Handling": 85,
+
+    "699TopSpeed": 138,
+    "6990to60": 5.0,
+    "699Handling": 85
 
 }

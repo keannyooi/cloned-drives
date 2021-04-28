@@ -9,7 +9,7 @@
     "handling": 90,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["2021 Spring Collection"],
+    "tags": [],
     "isPrize": false,
 
     "weight": 1940,
@@ -22,25 +22,33 @@
     "fuelType": "Petrol",
     "mra": 78.95,
     "ola": 73.33,
-    "description": "",
+    "description": "was one of the most unstopable city streets cars, until it was stopped. Card by DodgeDemon",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/774570642821087252/2018_BMW_M5_Comp.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/774572151205920798/bmw_m5_comp.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/774572169820504094/bmw_m5_comp_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/774572181651718224/bmw_m5_comp_666.jpg",
-    "racehud996": "",
-    "racehud969": "",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/774572197821546527/bmw_m5_comp_699.jpg",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819419372363186236/2018_BMW_M5_Compe.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823511637206106163/M5comp.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823511642338754581/m5comp333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823511650082226186/m5comp666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823511675746385930/m5comp996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823511667606159410/m5comp969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823511659066032178/m5comp699.png",
 
-    "333TopSpeed": 159,
+    "333TopSpeed": 158,
     "3330to60": 2.8,
     "333Handling": 93,
 
     "666TopSpeed": 162,
-    "6660to60": 2.6,
-    "666Handling": 97,
+    "6660to60": 2.7,
+    "666Handling": 96,
 
-    "699TopSpeed": 163,
+	"996TopSpeed": 165,
+    "9960to60": 2.6,
+    "996Handling": 96,
+
+	"969TopSpeed": 165,
+    "9690to60": 2.7,
+    "969Handling": 100,
+
+    "699TopSpeed": 162,
     "6990to60": 2.6,
     "699Handling": 100
 }

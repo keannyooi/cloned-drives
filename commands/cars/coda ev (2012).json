@@ -1,5 +1,5 @@
 {
-    "rq": 20,
+    "rq": 26,
     "make": "CODA",
     "model": "EV",
     "modelYear": 2012,
@@ -24,23 +24,31 @@
     "ola": 84.54,
     "description": "China attempted selling one of their electric cars in the USA, but the people there didn't buy them because they know that it's made in China, even though it was rebadged. Card by keanny",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/799858511102083082/coda_ev.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/799858340250910731/coda.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/799858368747536394/coda_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/799858374660980736/coda_666.jpg",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/799858385716904006/coda_969.jpg",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819390423529029702/coda.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819817182052745226/coda_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819817191876198420/coda_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819817198578958356/coda_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819817233387356180/coda_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819817221076418560/coda_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819817209924157450/coda_699.jpg",
 
-    "333TopSpeed": 87,
-    "3330to60": 9.0,
+    "333TopSpeed": 91,
+    "3330to60": 8.7,
     "333Handling": 70,
 
-    "666TopSpeed": 90,
-    "6660to60": 8.3, 
-    "666Handling": 73,
+    "666TopSpeed": 97,
+    "6660to60": 8.3,
+    "666Handling": 72,
 
-    "969TopSpeed": 92,
-    "9690to60": 7.6,
-    "969Handling": 75
+	"996TopSpeed": 103,
+    "9960to60": 7.8,
+    "996Handling": 72,
+
+    "969TopSpeed": 103,
+    "9690to60": 8.3,
+    "969Handling": 75,
+
+	"699TopSpeed": 97,
+    "6990to60": 7.8,
+    "699Handling": 75
 }

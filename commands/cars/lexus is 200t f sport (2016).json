@@ -1,5 +1,5 @@
 {
-    "rq": 39,
+    "rq": 41,
     "make": "Lexus",
     "model": "IS 200t F Sport",
     "modelYear": 2016,
@@ -24,23 +24,31 @@
     "ola": 79.00,
     "description": "This time, the F stands for 'Fixed'. Card by Macan.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/812827553130872882/Lexus_IS_200t_F_Sport_2016.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/812828042639441990/Lexus_IS_200t_F_Sport_2016_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/812828048675438612/Lexus_IS_200t_F_Sport_2016_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/812828056116527144/Lexus_IS_200t_F_Sport_2016_666.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/812828065595129886/Lexus_IS_200t_F_Sport_2016_969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/825825132085641276/is200t.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/825825890063351819/IS200t.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/825825895410302986/IS200t1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/825825899848794133/IS200t2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/825825923215523850/IS200t996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/825825915669577738/IS200t969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/825825907813122068/IS200t699.png",
 
-    "333TopSpeed": 146,
-    "3330to60": 6.4,
+    "333TopSpeed": 147,
+    "3330to60": 6.5,
     "333Handling": 80,
 
     "666TopSpeed": 150,
-    "6660to60": 6.0,
+    "6660to60": 6.1,
     "666Handling": 82,
 
-    "969TopSpeed": 153,
-    "9690to60": 5.6,
-    "969Handling": 85
+    "996TopSpeed": 154,
+    "9960to60": 5.8,
+    "996Handling": 82,
+
+    "969TopSpeed": 154,
+    "9690to60": 6.1,
+    "969Handling": 85,
+
+    "699TopSpeed": 150,
+    "6990to60": 5.8,
+    "699Handling": 85
 }

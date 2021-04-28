@@ -24,27 +24,31 @@
     "ola": 77.97,
     "description": "How Honda celebrated their 50th anniversary, a successor to their 60's S-lineup. Card by keanny",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/801990731136368650/honda_s2000_ap1.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/801986860866994186/s2000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/801986904777424926/s2000_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/801986917759320084/s2000_666.jpg",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/801986940634791936/s2000_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/801986928752590848/s2000_699.jpg",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819391149877755924/honda_s2000_ap1.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819849084726018060/s2k_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819849093391450143/s2k_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819849099594825758/s2k_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819849143145070602/s2k_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819849130964680724/s2k_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819849119819497503/s2k_699.jpg",
 
     "333TopSpeed": 152,
     "3330to60": 5.6,
     "333Handling": 85,
 
-    "666TopSpeed": 156,
-    "6660to60": 5.2,
-    "666Handling": 88,
+    "666TopSpeed": 155,
+    "6660to60": 5.3,
+    "666Handling": 87,
+ 
+    "996TopSpeed": 159,
+    "9960to60": 5.0,
+    "996Handling": 87,
 
-    "969TopSpeed": 160,
-    "9690to60": 4.9,
+    "969TopSpeed": 159,
+    "9690to60": 5.3,
     "969Handling": 91,
 
-	"699TopSpeed": 157,
+	"699TopSpeed": 155,
     "6990to60": 5.0,
     "699Handling": 91
 }

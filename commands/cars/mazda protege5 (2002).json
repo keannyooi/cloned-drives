@@ -1,5 +1,5 @@
 {
-    "rq": 24,
+    "rq": 32,
     "make": "Mazda",
     "model": "Protege5",
     "modelYear": 2002,
@@ -22,25 +22,33 @@
     "fuelType": "Petrol",
     "mra": 48.72,
     "ola": 73.68,
-    "description": "",
+    "description": "Card by Andu.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/765190402361655306/MazdaProt52002.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/765187812831395850/mazda_protege5.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/765187851599347762/mazda_protege5_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/765187861393309716/mazda_protege5_666.jpg",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/765187876367106108/mazda_protege5_969.jpg",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/821099223189291088/Protege5.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821100485536645120/Protege.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821100492096012298/Protege1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821100496500162580/Protege2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821100516179968030/Protege996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821100510135451658/Protege969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821100503114711120/Protege699.png",
 
-    "333TopSpeed": 121,
-    "3330to60": 8.9,
-    "333Handling": 74,
+    "333TopSpeed": 122,
+    "3330to60": 9.0,
+    "333Handling": 73,
 
-    "666TopSpeed": 125,
-    "6660to60": 8.2,
-    "666Handling": 77,
+    "666TopSpeed": 127,
+    "6660to60": 8.6,
+    "666Handling": 76,
 
-    "969TopSpeed": 128,
-    "9690to60": 7.6,
-    "969Handling": 79
+    "996TopSpeed": 131,
+    "9960to60": 8.1,
+    "996Handling": 76,
+
+    "969TopSpeed": 131,
+    "9690to60": 8.6,
+    "969Handling": 79,
+
+    "699TopSpeed": 127,
+    "6990to60": 8.1,
+    "699Handling": 79
 }

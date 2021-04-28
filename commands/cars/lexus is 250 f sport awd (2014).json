@@ -24,23 +24,31 @@
     "ola": 83.37,
     "description": "All-wheel-drive adds traction but does it actually make performance better? Card by Macan.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/812827583019221013/Lexus_IS_250_F_Sport_AWD_2014.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/812828105840001034/Lexus_IS_250_F_Sport_AWD_2014_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/812828110838956032/Lexus_IS_250_F_Sport_AWD_2014_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/812828117902819368/Lexus_IS_250_F_Sport_AWD_2014_666.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/812828130053324870/Lexus_IS_250_F_Sport_AWD_2014_969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/823925612984664134/Lexus_IS_250_F_Sport_AWD_2014.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823926091356962846/IS250.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823926094860124170/IS250333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823926099942703124/IS250666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823926124496027678/IS250996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823926116627775539/IS250969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823926108440625182/IS250699.png",
 
     "333TopSpeed": 138,
-    "3330to60": 7.3,
-    "333Handling": 76,
+    "3330to60": 7.4,
+    "333Handling": 75,
 
     "666TopSpeed": 142,
-    "6660to60": 6.8,
+    "6660to60": 7.0,
     "666Handling": 78,
 
+    "996TopSpeed": 146,
+    "9960to60": 6.6,
+    "996Handling": 78,
+
     "969TopSpeed": 146,
-    "9690to60": 6.3,
-    "969Handling": 81
+    "9690to60": 7.0,
+    "969Handling": 81,
+
+    "699TopSpeed": 142,
+    "6990to60": 6.6,
+    "699Handling": 81
 }

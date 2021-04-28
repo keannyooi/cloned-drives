@@ -1,17 +1,16 @@
 ﻿{
-    "rq": 25,
+    "rq": 33,
     "make": "Lotus",
     "model": "Elan Sprint Emission",
     "modelYear": 1971,
     "country": "GB",
     "topSpeed": 112,
     "0to60": 8.4,
-    "handling": 68,
+    "handling": 65,
     "driveType": "RWD",
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
 
     "weight": 680,
     "gc": "Medium",
@@ -25,37 +24,31 @@
     "ola": 69.05,
     "description": "Sprinting with lower hp cause USA regulations. Card by Andu",
 
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/822058715154219028/ElanEmissions.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/822059507110772836/ElanE.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/822059513967542302/ElanE1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/822059517960912907/ElanE2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/822059539691077683/ElanE996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/822059533714849842/ElanE969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/822059527196377098/ElanE699.png",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/797602641860755476/ElanEmissions.png?width=1154&height=719",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/797599452658532352/ElanSt.png",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/797599461073354753/Elan1.png",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/797599463991935006/Elan2.png",
-    "racehud996": "",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/797599473958256650/Elan323.png",
-    "racehud699": "",
-
-
-    "333TopSpeed": 116,
-    "3330to60": 7.8,
+    "333TopSpeed": 117,
+    "3330to60": 8.0,
     "333Handling": 67,
 
+    "666TopSpeed": 121,
+    "6660to60": 7.6, 
+    "666Handling": 69,
 
-    "666TopSpeed": 120,
-    "6660to60": 7.2, 
-    "666Handling": 70,
+    "996TopSpeed": 126,
+    "9960to60": 7.1,
+    "996Handling": 69,
 
-
-    "996TopSpeed": 0,
-    "9960to60": 0,
-    "996Handling": 0,
-
-
-    "969TopSpeed": 124,
-    "9690to60": 6.7,
+    "969TopSpeed": 126,
+    "9690to60": 7.6,
     "969Handling": 72,
 
-
-    "699TopSpeed": 0,
-    "6990to60": 0,
-    "699Handling": 0
+    "699TopSpeed": 121,
+    "6990to60": 7.1,
+    "699Handling": 72
 }

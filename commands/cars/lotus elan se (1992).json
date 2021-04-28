@@ -1,5 +1,5 @@
 {
-    "rq": 40,
+    "rq": 45,
     "make": "Lotus",
     "model": "Elan SE",
     "modelYear": 1992,
@@ -24,31 +24,31 @@
     "ola": 84.85,
     "description": "Lotus says hi. Card by Bnuuy.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/810469428079886356/lotus_elan_se.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/810468526745190411/unknown.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/810468584857927680/unknown.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/810468650057596938/unknown.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/810468862546018314/unknown.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/810468809248342016/unknown.png",
-    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/810468751236661288/unknown.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819576617067216907/ElanSE.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819576789461499984/Elan.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819576797741318154/Elan333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819576806767853629/Elan666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819576858898464848/Elan996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819576840033009664/Elan969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819576829425221645/Elan699.png",
 
-    "333TopSpeed": 138,
+    "333TopSpeed": 139,
     "3330to60": 6.3,
     "333Handling": 82,
 
-    "666TopSpeed": 141,
-    "6660to60": 6.1,
-    "666Handling": 85,
+    "666TopSpeed": 143,
+    "6660to60": 5.9,
+    "666Handling": 84,
 
-    "996TopSpeed": 145,
-    "9960to60": 5.8,
-    "996Handling": 86,
+    "996TopSpeed": 147,
+    "9960to60": 5.6,
+    "996Handling": 84,
 
-    "969TopSpeed": 144,
+    "969TopSpeed": 147,
     "9690to60": 5.9,
-    "969Handling": 87,
+    "969Handling": 88,
 
     "699TopSpeed": 143,
-    "6990to60": 5.9,
+    "6990to60": 5.6,
     "699Handling": 88
 }

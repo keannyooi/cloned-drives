@@ -1,5 +1,5 @@
 {
-    "rq": 21,
+    "rq": 28,
     "make": "Toyota",
     "model": "Prius C",
     "modelYear": 2012,
@@ -22,25 +22,33 @@
     "fuelType": "Hybrid",
     "mra": 40.69,
     "ola": 61.68,
-    "description": "",
+    "description": "It has wheels and gets good gas mileage. Card by Andu",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/787266099514310666/PriusCate.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/787266383071150100/PriusCSt.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/787266410208165888/PriusC1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/787266439790854144/PriusC2.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/787266473844015114/PriusC323.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/821107130266157086/PriusCate.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821107343692660786/PriusC.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821107344401498112/PriusC1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821107350005219338/PriusC2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821107377825644594/PriusC996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821107368653357096/PriusC969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821107358196432986/PriusC699.png",
 
-    "333TopSpeed": 105,
-    "3330to60": 9.8,
-    "333Handling": 75,
+    "333TopSpeed": 107,
+    "3330to60": 10.2,
+    "333Handling": 74,
 
-    "666TopSpeed": 109,
-    "6660to60": 9.0,
-    "666Handling": 78,
+    "666TopSpeed": 112,
+    "6660to60": 9.6,
+    "666Handling": 77,
 
-    "969TopSpeed": 112,
-    "9690to60": 8.3,
-    "969Handling": 80
+    "999TopSpeed": 117,
+    "9990to60": 9.1,
+    "999Handling": 77,
+    
+    "969TopSpeed": 117,
+    "9690to60": 9.6,
+    "969Handling": 80,
+    
+    "699TopSpeed": 112,
+    "6990to60": 9.1,
+    "699Handling": 80
 }

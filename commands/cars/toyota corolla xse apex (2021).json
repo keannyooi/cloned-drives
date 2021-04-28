@@ -1,5 +1,5 @@
 {
-    "rq": 24,
+    "rq": 25,
     "make": "Toyota",
     "model": "Corolla XSE Apex",
     "modelYear": 2021,
@@ -24,23 +24,31 @@
     "ola": 80.81,
     "description": "The Apex sedan made even slower, despite being 1 trim higher than the SE. Card by DodgeDemon",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/793940920781111327/2021_Toyota_Corolla_XSE_Apex.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/793941360167485440/CorollaXSEASt.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/793941375115722782/CorollaXSEA1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/793941389414629426/CorollaXSEA2.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/793941412114595840/CorollaXSEA323.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824462485385248808/oof.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824458395121352775/xse_apex_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824458404138319912/xse_apex_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824458414662221825/xse_apex_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824458458249166908/xse_apex_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824458439911931934/xse_apex_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824458425370148905/xse_apex_699.jpg",
 
     "333TopSpeed": 121,
-    "3330to60": 8.2,
+    "3330to60": 8.4,
     "333Handling": 82,
 
-    "666TopSpeed": 125,
-    "6660to60": 7.6,
-    "666Handling": 85,
+    "666TopSpeed": 126,
+    "6660to60": 7.9, 
+    "666Handling": 84,
 
-    "969TopSpeed": 129,
-    "9690to60": 7.1,
-    "969Handling": 87
+    "996TopSpeed": 130,
+    "9960to60": 7.5,
+    "996Handling": 84,
+
+    "969TopSpeed": 130,
+    "9690to60": 7.9,
+    "969Handling": 88,
+
+    "699TopSpeed": 126,
+    "6990to60": 7.5,
+    "699Handling": 88
 }

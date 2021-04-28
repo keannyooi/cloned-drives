@@ -1,5 +1,5 @@
-﻿{
-    "rq": 12,
+{
+    "rq": 16,
     "make": "Honda",
     "model": "Civic CVCC 4-Speed",
     "modelYear": 1975,
@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
 
     "weight": 680,
     "gc": "Medium",
@@ -25,37 +24,31 @@
     "ola": 59.76,
     "description": "At least it isn’t an automatic. Card by Connor",
 
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/835447542937419786/F.HondaCivicCVCC4spd.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820685054396989460/F.HondaCivicCVVC4.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820685064614051850/F.HondaCivicCVVC4-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820685070331281478/F.HondaCivicCVVC4-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820686032738713600/F.HondaCivicCVVC4-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820685097887727636/F.HondaCivicCVVC4-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820685080917442650/F.HondaCivicCVVC4-699.png",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/801847244298780702/F.HondaCivicCVCC4spd.png?width=1154&height=718",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/801855389296754698/CVCC4St.png",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/801855400609710100/CVCC41.png",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/801855406556708874/CVCC42.png",
-    "racehud996": "",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/801855415989305384/CVCC4323.png",
-    "racehud699": "",
+    "333TopSpeed": 94,
+    "3330to60": 15.6,
+    "333Handling": 67,
 
+    "666TopSpeed": 100,
+    "6660to60": 14.8, 
+    "666Handling": 69,
 
-    "333TopSpeed": 91,
-    "3330to60": 15.0,
-    "333Handling": 68,
+    "996TopSpeed": 106,
+    "9960to60": 13.9,
+    "996Handling": 69,
 
-
-    "666TopSpeed": 93,
-    "6660to60": 13.5, 
-    "666Handling": 70,
-
-
-    "996TopSpeed": 0,
-    "9960to60": 0,
-    "996Handling": 0,
-
-
-    "969TopSpeed": 96,
-    "9690to60": 12.0,
+    "969TopSpeed": 106,
+    "9690to60": 14.8,
     "969Handling": 72,
 
-
-    "699TopSpeed": 0,
-    "6990to60": 0,
-    "699Handling": 0
+    "699TopSpeed": 100,
+    "6990to60": 13.9,
+    "699Handling": 72
 }

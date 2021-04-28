@@ -1,5 +1,5 @@
 {
-    "rq": 44,
+    "rq": 40,
     "make": "Lexus",
     "model": "NX 300h Luxury AWD",
     "modelYear": 2020,
@@ -24,23 +24,31 @@
     "ola": 70.00,
     "description": " If you’re shopping for a luxury compact crossover with a hybrid drivetrain and styling that may scare small children, look no further than the NX 300h. Card by Macan.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/808051866214072330/NX_300h_Luxury_AWD_20.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/808051974675103775/Lexus_NX_300h_Luxury_AWD_2020_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/808051978684858368/Lexus_NX_300h_Luxury_AWD_2020_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/808051984556490752/Lexus_NX_300h_Luxury_AWD_2020_666.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/808051999375360051/Lexus_NX_300h_Luxury_AWD_2020_969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826520763355758622/NX300hAWD.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826521973093040169/RX350hLux.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826521978923909221/RX350hLux1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826521982547263518/RX350hLux2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826522003665059880/RX350hLux996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826521996565151794/RX350hLux969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826521989694619648/RX350hLux699.png",
 
-    "333TopSpeed": 119,
-    "3330to60": 7.6,
+    "333TopSpeed": 120,
+    "3330to60": 7.7,
     "333Handling": 75,
 
-    "666TopSpeed": 122,
-    "6660to60": 7.1,
+    "666TopSpeed": 125,
+    "6660to60": 7.3,
     "666Handling": 78,
 
-    "969TopSpeed": 126,
-    "9690to60": 6.7,
-    "969Handling": 81
+    "996TopSpeed": 129,
+    "9960to60": 6.9,
+    "996Handling": 78,
+
+    "969TopSpeed": 129,
+    "9690to60": 7.3,
+    "969Handling": 81,
+
+    "699TopSpeed": 125,
+    "6990to60": 6.9,
+    "699Handling": 81
 }

@@ -1,5 +1,5 @@
-﻿{
-    "rq": 56,
+{
+    "rq": 62,
     "make": "Cobb Tuning",
     "model": "Focus ST",
     "modelYear": 2013,
@@ -9,13 +9,12 @@
     "handling": 87,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Hot Hatch"],
+    "tags": ["Hot Hatch", "Tuner"],
     "isPrize": false,
-
 
     "weight": 1460,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
@@ -25,37 +24,31 @@
     "ola": 98.06,
     "description": "bb car bb car bb car bb car bb car. Card by Keanny",
 
-
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/810484283780366356/cobb_tuning_focus.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/810484155385249802/cobb.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/810484176825352192/cobb_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/810484185634570260/cobb_666.jpg",
-    "racehud996": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819390409901342790/cobb_tuning_focus.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819510804855652352/cobb_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819510814137909268/cobb_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819510821658034176/cobb_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819510871121723412/cobb_996.jpg",
     "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/810484209624940564/cobb_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/810484198694453248/cobb_699.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819510832799023124/cobb_699.jpg",
 
-
-    "333TopSpeed": 159,
+    "333TopSpeed": 158,
     "3330to60": 5.2,
     "333Handling": 90,
 
-
-    "666TopSpeed": 164,
-    "6660to60": 4.9, 
+    "666TopSpeed": 162,
+    "6660to60": 5.0, 
     "666Handling": 93,
 
+    "996TopSpeed": 165,
+    "9960to60": 4.7,
+    "996Handling": 93,
 
-    "996TopSpeed": 0,
-    "9960to60": 0,
-    "996Handling": 0,
+    "969TopSpeed": 165,
+    "9690to60": 5.0,
+    "969Handling": 97,
 
-
-    "969TopSpeed": 168,
-    "9690to60": 4.6,
-    "969Handling": 96,
-
-
-    "699TopSpeed": 164,
+    "699TopSpeed": 162,
     "6990to60": 4.7,
     "699Handling": 97
 }

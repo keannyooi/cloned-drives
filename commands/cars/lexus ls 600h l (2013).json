@@ -1,5 +1,5 @@
 {
-    "rq": 57,
+    "rq": 52,
     "make": "Lexus",
     "model": "LS 600h L",
     "modelYear": 2013,
@@ -24,23 +24,31 @@
     "ola": 75.00,
     "description": "Luxury and refinement come at a heavy cost, one that's nearly 2.5 tonnes. Card by Macan.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/812827652355653682/Lexus_LS_600h_L_2013.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/812828301496156190/Lexus_LS_600h_L_2013_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/812828308416364544/Lexus_LS_600h_L_2013_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/812828316981395466/Lexus_LS_600h_L_2013_666.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/812828320790085632/Lexus_LS_600h_L_2013_969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826370765045366824/Lexus_LS_600h_L_2013.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826370943655608320/LS600h.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826370950190596126/LS600h1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826370954807607296/LS600h2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826370980749377557/LS600h996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826370973400825856/LS600h969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826370966896508938/LS600h699.png",
 
     "333TopSpeed": 141,
-    "3330to60": 5.9,
-    "333Handling": 75,
+    "3330to60": 6.0,
+    "333Handling": 74,
 
     "666TopSpeed": 145,
-    "6660to60": 5.5,
+    "6660to60": 5.7,
     "666Handling": 77,
 
-    "969TopSpeed": 149,
-    "9690to60": 5.1,
-    "969Handling": 80
+    "996TopSpeed": 148,
+    "9960to60": 5.4,
+    "996Handling": 77,
+
+    "969TopSpeed": 148,
+    "9690to60": 5.7,
+    "969Handling": 80,
+
+    "699TopSpeed": 145,
+    "6990to60": 5.4,
+    "699Handling": 80
 }

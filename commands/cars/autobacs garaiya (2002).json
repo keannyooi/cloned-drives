@@ -1,5 +1,5 @@
 {
-    "rq": 67,
+    "rq": 68,
     "make": "Autobacs",
     "model": "Garaiya",
     "modelYear": 2002,
@@ -9,7 +9,7 @@
     "handling": 87,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["2021 Spring Collection"],
+    "tags": ["Tuner"],
     "isPrize": false,
 
     "weight": 795,
@@ -24,27 +24,32 @@
     "ola": 78.18,
     "description": "Autobacs, Japan's most popular automobile parts store chain decided to make its own car with the help of Tommykaira. Powered by Nissan's SR20VE sending 201hp and 151ft-lb of torque to the rear wheels. Card by Ahmed",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/812633758564876298/Autobacs-Garaiya-Remake.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/812633900076892170/A.ASLGaraiya.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/812633916858695730/A.ASLGaraiya-1star.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/812633934075789322/A.ASLGaraiya-2star.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/812633950941085696/A.ASLGaraiya-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/812633998974779423/A.ASLGaraiya-699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819576686604976218/Autobacs-Garaiya-Remake.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819576921942655047/Autobacs-Garaiya-stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819576938380918784/Autobacs-Garaiya-333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819576951664541716/Autobacs-Garaiya-666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819576996958044180/Autobacs-Garaiya-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819576987232239636/Autobacs-Garaiya-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819576970454892584/Autobacs-Garaiya-699.png",
 
-    "333TopSpeed": 140,
+    "333TopSpeed": 141,
     "3330to60": 4.8,
     "333Handling": 90,
 
-    "666TopSpeed": 143,
+    "666TopSpeed": 145,
     "6660to60": 4.5,
     "666Handling": 93,
-	
-	"969TopSpeed": 146,
-    "9690to60": 4.3,
-    "969Handling": 96,
 
-	"699TopSpeed": 145,
+    "996TopSpeed": 148,
+    "9960to60": 4.3,
+    "996Handling": 93,
+
+    "969TopSpeed": 148,
+    "9690to60": 4.5,
+    "969Handling": 97,
+
+    "699TopSpeed": 145,
     "6990to60": 4.3,
     "699Handling": 97
+
 }

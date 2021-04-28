@@ -1,5 +1,5 @@
 {
-    "rq": 75,
+    "rq": 73,
     "make": "Porsche",
     "model": "Boxster GTS",
     "modelYear": 2014,
@@ -22,25 +22,33 @@
     "fuelType": "Petrol",
     "mra": 68.33,
     "ola": 92.68,
-    "description": "",
+    "description": "It is high on drama and exhibits a total homogeny of parts that's a rare joy to experience. Card by Keanny",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/769761063620050974/porsche_boxster_gts.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/769760094933221416/porsche_boxster_gts.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/769760139262951474/porsche_boxster_gts_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/769760146842451968/porsche_boxster_gts_666.jpg",
-    "racehud996": "",
-    "racehud969": "",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/769760162319302656/porsche_boxster_gts_699.jpg",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819392161975762954/porsche_boxster_gts.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819544293974867978/boxster_gts_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819544303168389141/boxster_gts_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819544308431454228/boxster_gts_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819544348172746772/boxster_gts_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819544338366595072/boxster_gts_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819544323296329748/boxster_gts_699.jpg",
 
     "333TopSpeed": 176,
     "3330to60": 3.9,
     "333Handling": 95,
 
     "666TopSpeed": 179,
-    "6660to60": 3.7,
-    "666Handling": 99,
+    "6660to60": 3.7, 
+    "666Handling": 98,
 
-    "699TopSpeed": 182,
+    "996TopSpeed": 182,
+    "9960to60": 3.5,
+    "996Handling": 98,
+
+    "969TopSpeed": 182,
+    "9690to60": 3.7,
+    "969Handling": 102,
+
+    "699TopSpeed": 179,
     "6990to60": 3.5,
     "699Handling": 102
 }

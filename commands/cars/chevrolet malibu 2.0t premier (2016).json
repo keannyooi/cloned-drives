@@ -1,5 +1,5 @@
-﻿{
-    "rq": 57,
+{
+    "rq": 59,
     "make": "Chevrolet",
     "model": "Malibu 2.0T Premier",
     "modelYear": 2016,
@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
 
     "weight": 1678,
     "gc": "Medium",
@@ -25,37 +24,31 @@
     "ola": 79.50,
     "description": "Malibu in a Malibu, but faster. Card by Macan",
 
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824948451770368010/Malibu_2.0T_Premier_16.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824948675313795102/MalibuPre.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824948680590491648/MalibuPre1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824948685741883412/MalibuPre2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824948733447241738/MalibuPre999.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824948731953938482/MalibuPre969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824948701435920395/MalibuPre699.png",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/802303775883657226/Malibu_2.0T_Premier_16.png?width=1154&height=718",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/802303945896755210/Chevrolet_Malibu_2.0T_Premier_2016_000.png",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/802303949587742740/Chevrolet_Malibu_2.0T_Premier_2016_333.png",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/802303957464514630/Chevrolet_Malibu_2.0T_Premier_2016_666.png",
-    "racehud996": "",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/802303972626530304/Chevrolet_Malibu_2.0T_Premier_2016_969.png",
-    "racehud699": "",
-
-
-    "333TopSpeed": 160,
+    "333TopSpeed": 159,
     "3330to60": 5.6,
     "333Handling": 82,
 
-
     "666TopSpeed": 163,
-    "6660to60": 5.2, 
+    "6660to60": 5.3, 
     "666Handling": 84,
 
+    "996TopSpeed": 166,
+    "9960to60": 5.0,
+    "996Handling": 84,
 
-    "996TopSpeed": 0,
-    "9960to60": 0,
-    "996Handling": 0,
+    "969TopSpeed": 166,
+    "9690to60": 5.3,
+    "969Handling": 88,
 
-
-    "969TopSpeed": 167,
-    "9690to60": 4.9,
-    "969Handling": 87,
-
-
-    "699TopSpeed": 0,
-    "6990to60": 0,
-    "699Handling": 0
+    "699TopSpeed": 163,
+    "6990to60": 5.0,
+    "699Handling": 88
 }

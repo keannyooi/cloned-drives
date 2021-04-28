@@ -1,5 +1,5 @@
 {
-    "rq": 17,
+    "rq": 19,
     "make": "Mitsubishi",
     "model": "i-MiEV",
     "modelYear": 2009,
@@ -20,27 +20,35 @@
     "abs": true,
     "enginePos": "Middle",
     "fuelType": "Electric",
-    "mra": 0.00,
+    "mra": 7.77,
     "ola": 66.67,
     "description": "The electric kei car that has 2 french twins. Card by DodgeDemon",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/788195816405336114/2009_Mitsubishi_IMiEV.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/788196928717586443/imiev.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/788196948041662469/imiev333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/788196965077745704/imiev666.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/788196992492109844/imiev969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/825422351751053342/i-Miev.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/825422968469192755/imiev.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/825422974827757578/imiev1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/825422981085003836/imiev2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/825423006234705980/imiev996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/825422996772487218/imiev969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/825422992632709180/imiev699.png",
 
-    "333TopSpeed": 83,
-    "3330to60": 12.7,
-    "333Handling": 69,
+    "333TopSpeed": 87,
+    "3330to60": 12.8,
+    "333Handling": 68,
 
-    "666TopSpeed": 86,
-    "6660to60": 12.0,
-    "666Handling": 72,
+    "666TopSpeed": 93,
+    "6660to60": 12.2,
+    "666Handling": 70,
 
-    "969TopSpeed": 89,
-    "9690to60": 11.5,
-    "969Handling": 75
+    "969TopSpeed": 100,
+    "9690to60": 12.2,
+    "969Handling": 73,
+
+    "996TopSpeed": 100,
+    "996to60": 11.5,
+    "996Handling": 70,
+
+    "699TopSpeed": 93,
+    "699to60": 11.5,
+    "699Handling": 73
 }

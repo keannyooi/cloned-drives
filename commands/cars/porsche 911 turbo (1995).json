@@ -1,5 +1,5 @@
 ﻿{
-    "rq": 78,
+    "rq": 76,
     "make": "Porsche",
     "model": "911 Turbo",
     "modelYear": 1995,
@@ -9,7 +9,7 @@
     "handling": 85,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [],
+    "tags": ["Supercar"],
     "isPrize": false,
 
 
@@ -26,36 +26,32 @@
     "description": "The first ever 4WD 911 Turbo. Card by Havvy",
 
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/804465242129563688/Porsche911Turbo993.png?width=1154&height=718",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/804465420915703848/000_993turbo.png?width=1154&height=718",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/804465431208263750/111_993turbo.png?width=1154&height=718",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/804465435457880124/222_993turbo.png?width=1154&height=718",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/804465448539390003/332_993turbo.png?width=1154&height=718",
-    "racehud969": "",
-    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/804465442734735400/233_993turbo.png?width=1154&height=718",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824611695707291658/turbo95.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824615203202269184/pt95.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824615208152334397/pt95333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824615214221099008/pt95666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824615242058563634/pt95996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824615234022539294/pt95969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824615223007772762/pt95699.png",
 
 
-    "333TopSpeed": 181,
+    "333TopSpeed": 182,
     "3330to60": 3.7,
     "333Handling": 88,
 
-
-    "666TopSpeed": 184,
+    "666TopSpeed": 185,
     "6660to60": 3.5, 
     "666Handling": 91,
 
-
     "996TopSpeed": 188,
-    "9960to60": 3.2,
+    "9960to60": 3.3,
     "996Handling": 91,
 
+    "969TopSpeed": 188,
+    "9690to60": 3.5,
+    "969Handling": 94,
 
-    "969TopSpeed": 0,
-    "9690to60": 0,
-    "969Handling": 0,
-
-
-    "699TopSpeed": 186,
+    "699TopSpeed": 185,
     "6990to60": 3.3,
     "699Handling": 94
 }

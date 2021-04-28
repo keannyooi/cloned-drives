@@ -1,5 +1,5 @@
 {
-    "rq": 85,
+    "rq": 82,
     "make": "Mercedes-Benz",
     "model": "SLR McLaren Stirling Moss Edition",
     "modelYear": 2009,
@@ -24,31 +24,31 @@
     "ola": 88.00,
     "description": "Card by Exist.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/802764194738995220/CD_Mercedes-Benz_SLR_McLaren_Stirling_Moss_Edition.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/802763897449742376/CD_Mercedes-Benz_SLR_McLaren_Stirling_Moss_Edition_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/802763907327459328/CD_Mercedes-Benz_SLR_McLaren_Stirling_Moss_Edition_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/802763924507852830/CD_Mercedes-Benz_SLR_McLaren_Stirling_Moss_Edition_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/802763992585732146/CD_Mercedes-Benz_SLR_McLaren_Stirling_Moss_Edition_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/802763982418477056/CD_Mercedes-Benz_SLR_McLaren_Stirling_Moss_Edition_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/802763948947669002/CD_Mercedes-Benz_SLR_McLaren_Stirling_Moss_Edition_699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826765376431456256/CD_Mercedes-Benz_SLR_McLaren_Stirling_Moss_Edition.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826765576680243240/CD_Mercedes-Benz_SLR_McLaren_Stirling_Moss_Edition_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826765588042874930/CD_Mercedes-Benz_SLR_McLaren_Stirling_Moss_Edition_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826765593323241472/CD_Mercedes-Benz_SLR_McLaren_Stirling_Moss_Edition_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826765624684314694/CD_Mercedes-Benz_SLR_McLaren_Stirling_Moss_Edition_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826765617419386880/CD_Mercedes-Benz_SLR_McLaren_Stirling_Moss_Edition_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826765604424908840/CD_Mercedes-Benz_SLR_McLaren_Stirling_Moss_Edition_699.png",
 
-    "333TopSpeed": 220,
+    "333TopSpeed": 219,
     "3330to60": 3.1,
     "333Handling": 91,
 
-    "666TopSpeed": 223,
-    "6660to60": 2.8,
+    "666TopSpeed": 222,
+    "6660to60": 3.0,
     "666Handling": 94,
 
-    "996TopSpeed": 226,
-    "9960to60": 2.6,
-    "996Handling": 95,
+    "996TopSpeed": 224,
+    "9960to60": 2.8,
+    "996Handling": 94,
 
-    "969TopSpeed": 226,
-    "9690to60": 2.7,
-    "969Handling": 97,
+    "969TopSpeed": 224,
+    "9690to60": 3.0,
+    "969Handling": 98,
 
-    "699TopSpeed": 223,
-    "6990to60": 2.7,
+    "699TopSpeed": 222,
+    "6990to60": 2.8,
     "699Handling": 98
 }

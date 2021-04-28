@@ -1,5 +1,5 @@
 {
-    "rq": 61,
+    "rq": 56,
     "make": "Subaru",
     "model": "Legacy Touring XT",
     "modelYear": 2020,
@@ -24,31 +24,31 @@
     "ola": 65.57,
     "description": "A normal Subie sedan with some punch of power. Card by Spence",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/804345862595674122/image0.jpg?width=1154&height=716",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/804346119693402152/image0.jpg?width=1154&height=718",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/804346150416416798/image0.jpg?width=1154&height=718",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/804346171162099742/image0.jpg?width=1154&height=718",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/804346215688437760/image0.jpg?width=1154&height=718",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/804346195907969044/image0.jpg?width=1154&height=718",
-    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/804346239004049428/image0.jpg?width=1154&height=718",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820347943814037534/image0.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820347988492812288/image0.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820348009723592744/image0.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820348029721903144/image0.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820348095815483422/image0.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820348055689232404/image0.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820348075422908436/image0.jpg",
 
-    "333TopSpeed": 153,
+    "333TopSpeed": 152,
     "3330to60": 5.8,
-    "333Handling": 74,
+    "333Handling": 73,
 
-    "666TopSpeed": 157,
-    "6660to60": 5.3, 
+    "666TopSpeed": 156,
+    "6660to60": 5.5, 
     "666Handling": 76,
 
-    "996TopSpeed": 161,
-    "9960to60": 4.9,
+    "996TopSpeed": 159,
+    "9960to60": 5.2,
     "996Handling": 76,
 
-    "969TopSpeed": 161,
-    "9690to60": 5.0,
+    "969TopSpeed": 159,
+    "9690to60": 5.5,
     "969Handling": 79,
 
-    "699TopSpeed": 157,
-    "6990to60": 5.1,
+    "699TopSpeed": 156,
+    "6990to60": 5.2,
     "699Handling": 79
 }

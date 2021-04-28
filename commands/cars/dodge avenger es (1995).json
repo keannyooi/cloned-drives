@@ -1,5 +1,5 @@
 {
-    "rq": 25,
+    "rq": 34,
     "make": "Dodge",
     "model": "Avenger ES",
     "modelYear": 1995,
@@ -24,31 +24,31 @@
     "ola": 73.68,
     "description": "Card by Based",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/810261665484243024/Dodge_Avenger_ES.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/810248602071859280/Dodge_Avenger_ES_Stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/810248665616220170/Dodge_Avenger_ES_1_Star.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/810248691276840960/Dodge_Avenger_ES_2_Star.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/810248734955798548/Dodge_Avenger_ES_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/810248719910961172/Dodge_Avenger_ES_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/810248703444254730/Dodge_Avenger_ES_233.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824899442360451082/AvengerEs.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824899707758968902/AvengerEs.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824899713823277076/AvengerEs1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824899720929476629/AvengerEs2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824899742865424404/AvengerEs996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824899735537844224/AvengerEs969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824899729493983232/AvengerEs699.png",
 
-    "333TopSpeed": 126,
-    "3330to60": 8.8,
+    "333TopSpeed": 127,
+    "3330to60": 9.2,
     "333Handling": 76,
 
-    "666TopSpeed": 130,
-    "6660to60": 8.1,
+    "666TopSpeed": 131,
+    "6660to60": 8.6,
     "666Handling": 79,
 
-    "996TopSpeed": 134,
-    "9960to60": 7.3,
-    "996Handling": 80,
+    "996TopSpeed": 136,
+    "9960to60": 8.1,
+    "996Handling": 79,
 
-	"969TopSpeed": 134,
-    "9690to60": 7.5,
+	"969TopSpeed": 136,
+    "9690to60": 8.6,
     "969Handling": 82,
 
 	"699TopSpeed": 131,
-    "6990to60": 7.6,
+    "6990to60": 8.1,
     "699Handling": 82
 }

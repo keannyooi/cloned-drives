@@ -1,5 +1,5 @@
 {
-    "rq": 55,
+    "rq": 53,
     "make": "Chevrolet",
     "model": "Colorado ZR2 V6",
     "modelYear": 2017,
@@ -20,27 +20,35 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 44.94,
-    "ola": 70.42,
-    "description": "",
+    "mra": 45.22,
+    "ola": 73.24,
+    "description": "The Colorado for real men. Card by keanny",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/730320882941296690/chevrolet_colorado_zr2_v6.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/730352546962604082/chevrolet_colorado_zr2_v6.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/730352658640142356/chevrolet_colorado_zr2_v6_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/730352669696458752/chevrolet_colorado_zr2_v6_666.jpg",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/730352682174251048/chevrolet_colorado_zr2_v6_969.jpg",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819382840386912266/colorado_zr2_v6.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819481856549847040/colorado_zr2_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819481868352880640/colorado_zr2_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819481873956470794/colorado_zr2_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819481904746332160/colorado_zr2_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819481896463237180/colorado_zr2_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819481885029433354/colorado_zr2_699.jpg",
 
-    "333TopSpeed": 102,
+    "333TopSpeed": 105,
     "3330to60": 6.7,
     "333Handling": 65,
 
-    "666TopSpeed": 105,
-    "6660to60": 6.2,
-    "666Handling": 68,
+    "666TopSpeed": 110,
+    "6660to60": 6.4,
+    "666Handling": 67,
 
-    "969TopSpeed": 108,
-    "9690to60": 5.8,
-    "969Handling": 70
+	"996TopSpeed": 116,
+    "9960to60": 6.0,
+    "996Handling": 67,
+
+    "969TopSpeed": 116,
+    "9690to60": 6.4,
+    "969Handling": 70,
+
+	"699TopSpeed": 110,
+    "6990to60": 6.0,
+    "699Handling": 70
 }

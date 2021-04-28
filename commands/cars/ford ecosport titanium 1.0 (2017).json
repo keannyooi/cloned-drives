@@ -1,5 +1,5 @@
 {
-    "rq": 24,
+    "rq": 31,
     "make": "Ford",
     "model": "Ecosport Titanium 1.0",
     "modelYear": 2017,
@@ -24,27 +24,31 @@
     "ola": 66.36,
     "description": "A Fiesta on cheap steroids. Card by Andu",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/806833198418886706/EcoTitanium.png?width=1154&height=719",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/806833312043761674/Ecosportst.png",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/806833319278411796/Ecosport1.png",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/806833321845850112/Ecosport2.png",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/806833337414320188/Ecosport332.png",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/806833330099453976/Ecosport323.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/821696920980029490/EcoTitanium.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/834430044397895690/Ecosport.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/834430062681522196/Ecosport1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/834430094436335626/Ecosport2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/834430108982837248/Ecosport996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/834430122366074880/Ecosport969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/834430130122260490/Ecosport699.png",
 
-    "333TopSpeed": 116,
-    "3330to60": 9.9,
+    "333TopSpeed": 118,
+    "3330to60": 10.2,
     "333Handling": 72,
 
-    "666TopSpeed": 119,
-    "6660to60": 9.1, 
+    "666TopSpeed": 122,
+    "6660to60": 9.6, 
     "666Handling": 75,
 
-    "996TopSpeed": 125,
-    "9960to60": 8.2,
-    "996Handling": 74,
+    "996TopSpeed": 127,
+    "9960to60": 9.1,
+    "996Handling": 75,
 
-    "969TopSpeed": 124,
-    "9690to60": 8.4,
-    "969Handling": 77
+    "969TopSpeed": 127,
+    "9690to60": 9.6,
+    "969Handling": 78,
+    
+    "699TopSpeed": 122,
+    "6990to60": 9.1,
+    "699Handling": 78
 }

@@ -1,5 +1,5 @@
 {
-    "rq": 86,
+    "rq": 82,
     "make": "Lamborghini",
     "model": "Huracan LP580-2",
     "modelYear": 2015,
@@ -24,27 +24,31 @@
     "ola": 101.54,
     "description": "The poor man's Lamborghini. Card by havvy",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/807537025581973524/LamborghiniHuracanRWD.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/807537083789869066/000_hurarwd.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/807537093990678548/111_hurarwd.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/807537099590205460/222_hurarwd.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/807537114983170088/332_hurarwd.png",
-    "racehud969": "",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/807537105944707102/233_hurarwd.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826186007203282944/LP5802.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826186374549864528/lp580-2hura.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826186379049566248/lp580-2hura333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826186386461032499/lp580-2hura666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826186414596423680/lp580-2hura996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826186402868887552/lp580-2hura969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826186394744520734/lp580-2hura699.png",
 
-    "333TopSpeed": 201,
-    "3330to60": 3.2,
+    "333TopSpeed": 202,
+    "3330to60": 3.1,
     "333Handling": 93,
 
-    "666TopSpeed": 203,
+    "666TopSpeed": 204,
     "6660to60": 3.0,
     "666Handling": 96,
 
-    "996TopSpeed": 205,
+    "996TopSpeed": 207,
     "9960to60": 2.8,
-    "996Handling": 97,
+    "996Handling": 96,
 
-    "699TopSpeed": 203,
-    "6990to60": 2.9,
+    "969TopSpeed": 207,
+    "9690to60": 3.0,
+    "969Handling": 100,
+
+    "699TopSpeed": 204,
+    "6990to60": 2.8,
     "699Handling": 100
 }

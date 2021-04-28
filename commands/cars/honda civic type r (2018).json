@@ -1,5 +1,5 @@
 {
-    "rq": 61,
+    "rq": 60,
     "make": "Honda",
     "model": "Civic Type R",
     "modelYear": 2018,
@@ -24,13 +24,13 @@
     "ola": 81.48,
     "description": "Some people say that it's riced from factory, but being the fastest around Green Hell on front wheels makes this car no clown. Card by Connor",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/802982203293433906/B.HondaCivicTypeR.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/802982287829499974/B.HondaCivicTypeR.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/802982348575866980/B.HondaCivicTypeR-1star.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/802982375914733628/B.HondaCivicTypeR-2star.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/802982445271351306/B.HondaCivicTypeR-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/802982411889672212/B.HondaCivicTypeR-699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820375713718861834/B.HondaCivicTypeR.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820375851060953088/B.HondaCivicTypeR.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820375874472771666/B.HondaCivicTypeR-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820375895923228712/B.HondaCivicTypeR-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820375979590549514/B.HondaCivicTypeR-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820375946380836884/B.HondaCivicTypeR-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820375921210949732/B.HondaCivicTypeR-699.png",
 
     "333TopSpeed": 172,
     "3330to60": 5.1,
@@ -40,11 +40,15 @@
     "6660to60": 4.9,
     "666Handling": 96,
 
-    "969TopSpeed": 179,
-    "9690to60": 4.6,
+	"996TopSpeed": 178,
+    "9960to60": 4.6,
+    "996Handling": 96,
+
+    "969TopSpeed": 178,
+    "9690to60": 4.9,
     "969Handling": 100,
 
-	"699TopSpeed": 177,
+	"699TopSpeed": 175,
     "6990to60": 4.6,
     "699Handling": 100
 }

@@ -1,6 +1,6 @@
 ﻿{
-    "rq": 26,
-    "make": "Renault Sport",
+    "rq": 27,
+    "make": ["Renault Sport", "Renault"],
     "model": "Twingo 133 Cup",
     "modelYear": 2008,
     "country": "FR",
@@ -26,36 +26,32 @@
     "description": "Sporty Twingo here to save the world. Card by Fried",
 
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/795974975499796530/Renault_Sport_Twingo_133_Cup.png?width=705&height=439",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/795974939877572608/Renaultsport_Twingo_133_Cup_Hud_000.jpg?width=705&height=439",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/795974962049056818/Renaultsport_Twingo_133_Cup_Hud_333.jpg?width=705&height=439",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/795974976087261184/Renaultsport_Twingo_133_Cup_Hud_666.jpg?width=705&height=439",
-    "racehud996": "",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/795975001899139072/Renaultsport_Twingo_133_Cup_Hud_969.jpg?width=705&height=439",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/825043244063785030/Renault_Sport_Twingo_133_Cup.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/825097731202088980/Renault_Sport_Twingo_133_Hud_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/825097742136901672/Renault_Sport_Twingo_133_Hud_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/825097755470200882/Renault_Sport_Twingo_133_Hud_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/825097793295089714/Renault_Sport_Twingo_133_Hud_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/825097780146077706/Renault_Sport_Twingo_133_Hud_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/825097766522454107/Renault_Sport_Twingo_133_Hud_699.png",
 
 
     "333TopSpeed": 129,
-    "3330to60": 7.8,
+    "3330to60": 8.0,
     "333Handling": 80,
 
-
-    "666TopSpeed": 132,
-    "6660to60": 7.3,
+    "666TopSpeed": 133,
+    "6660to60": 7.6, 
     "666Handling": 82,
 
+    "996TopSpeed": 137,
+    "9960to60": 7.1,
+    "996Handling": 82,
 
-    "996TopSpeed": 0,
-    "9960to60": 0,
-    "996Handling": 0,
-
-
-    "969TopSpeed": 135,
-    "9690to60": 6.8,
+    "969TopSpeed": 137,
+    "9690to60": 7.6,
     "969Handling": 85,
 
-
-    "699TopSpeed": 0,
-    "6990to60": 0,
-    "699Handling": 0
+    "699TopSpeed": 133,
+    "6990to60": 7.1,
+    "699Handling": 85
 }

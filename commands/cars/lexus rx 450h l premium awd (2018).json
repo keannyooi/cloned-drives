@@ -1,5 +1,5 @@
 {
-    "rq": 46,
+    "rq": 45,
     "make": "Lexus",
     "model": "RX 450h L Premium AWD",
     "modelYear": 2018,
@@ -24,23 +24,31 @@
     "ola": 87.52,
     "description": "A continent which manages to have 71 MRA. Card by Macan.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/812827420730064976/RX_450h_L_Premium_AWD_18.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/812828606824841236/Lexus_RX_450h_L_Premium_AWD_2018_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/812828617209937920/Lexus_RX_450h_L_Premium_AWD_2018_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/812828622129725470/Lexus_RX_450h_L_Premium_AWD_2018_666.png",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/812828630815997982/Lexus_RX_450h_L_Premium_AWD_2018_969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826520436485521408/RX450hNew.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826522106711244810/RX450hL.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826522111459328100/RX450hL1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826522117074976768/RX450hL2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826522137790644285/RX450hL996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826522130920374332/RX450hL969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826522124683837460/RX450hL699.png",
 
-    "333TopSpeed": 118,
-    "3330to60": 6.9,
-    "333Handling": 73,
+    "333TopSpeed": 120,
+    "3330to60": 7.0,
+    "333Handling": 72,
 
-    "666TopSpeed": 121,
-    "6660to60": 6.5,
+    "666TopSpeed": 124,
+    "6660to60": 6.7,
     "666Handling": 75,
 
-    "969TopSpeed": 124,
-    "9690to60": 6.0,
-    "969Handling": 78
+    "996TopSpeed": 129,
+    "9960to60": 6.3,
+    "996Handling": 75,
+
+    "969TopSpeed": 129,
+    "9690to60": 6.7,
+    "969Handling": 78,
+
+    "699TopSpeed": 124,
+    "6990to60": 6.3,
+    "699Handling": 78
 }

@@ -1,5 +1,5 @@
-﻿{
-    "rq": 54,
+{
+    "rq": 56,
     "make": "Chevrolet",
     "model": "Corvette Convertible",
     "modelYear": 1998,
@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
 
     "weight": 1469,
     "gc": "Low",
@@ -26,36 +25,36 @@
     "description": "Top up top down, turn it all the way around. Card by Havvy",
 
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/799757670365265920/ChevroletCorvetteConvertible.png?width=1154&height=718",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/799757731488727040/000C5C.png?width=1154&height=720",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/799757750506225684/111C5C.png?width=1154&height=720",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/799757759692275712/222C5C.png?width=1154&height=720",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/799757797461590056/332C5C.png?width=1154&height=720",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/799757787114242068/323C5C.png?width=1154&height=720",
-    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/799757776384426025/233C5C.png?width=1154&height=720",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/822622393691668481/ChevroletCorvetteConvertible.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/822622447530147840/000_crvc.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/822622453095989298/111_crvc.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/822622457390694430/222_crvc.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/822622472552579072/332_crvc.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/822622468329963560/323_crvc.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/822622462633312326/233_crvc.png",
 
 
     "333TopSpeed": 170,
-    "3330to60": 4.7,
+    "3330to60": 4.8,
     "333Handling": 84,
 
 
     "666TopSpeed": 173,
-    "6660to60": 4.4, 
-    "666Handling": 87,
+    "6660to60": 4.5, 
+    "666Handling": 86,
 
 
     "996TopSpeed": 176,
-    "9960to60": 4.0,
-    "996Handling": 87,
+    "9960to60": 4.3,
+    "996Handling": 86,
 
 
     "969TopSpeed": 176,
-    "9690to60": 4.1,
+    "9690to60": 4.5,
     "969Handling": 90,
 
 
     "699TopSpeed": 173,
-    "6990to60": 4.1,
+    "6990to60": 4.3,
     "699Handling": 90
 }

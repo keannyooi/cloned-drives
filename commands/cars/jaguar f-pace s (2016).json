@@ -1,5 +1,5 @@
 {
-    "rq": 73,
+    "rq": 77,
     "make": "Jaguar",
     "model": "F-PACE S",
     "modelYear": 2016,
@@ -24,27 +24,31 @@
     "ola": 64.78,
     "description": "Card by Havvy.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/803263294001250365/JAGUARF-PACES.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/803263527174275072/000fpace.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/803263538852134932/111fpace.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/803263547589132298/222fpace.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/803263564089131018/332fpace.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/803263556148789288/323fpace.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824372738051014756/JAGUARF-PACES.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824373261739098192/fps.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824373266155175946/fps333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824373280101892136/fps666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824373300682817586/fps996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824373290105176104/fps969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824373281721286696/fps699.png",
 
-    "333TopSpeed": 159,
+    "333TopSpeed": 158,
     "3330to60": 4.9,
     "333Handling": 80,
 
-    "666TopSpeed": 163,
-    "6660to60": 4.6,
+    "666TopSpeed": 162,
+    "6660to60": 4.7,
     "666Handling": 82,
 
-    "996TopSpeed": 167,
-    "9960to60": 4.2,
+    "996TopSpeed": 165,
+    "9960to60": 4.4,
     "996Handling": 82,
 
-    "969TopSpeed": 167,
-    "9690to60": 4.3,
-    "969Handling": 85
+    "969TopSpeed": 165,
+    "9690to60": 4.7,
+    "969Handling": 85,
+
+	"699TopSpeed": 162,
+    "6990to60": 4.4,
+    "699Handling": 85
 }

@@ -24,27 +24,31 @@
     "ola": 118.18,
     "description": "Card by DodgeDemon.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/807521997138558986/2020_Bugatti_Chiron_Pur_Sport.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/807522092441534514/BugattiChironPS000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/807522194904711189/BugattiChironPS333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/807522235329675274/BugattiChironPS666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/807522313666428928/BugattiChironPS996.png",
-    "racehud969": "",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/807522276923801620/BugattiChironPS699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824389320902180884/2020_Bugatti_Chiron_Pur_Sport.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824389984214581289/pursport.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824389988158406666/pursport333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824389994080239667/pursport666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824390018784952380/pursport996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824390009590513674/pursport969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824390001563009072/pursport699.png",
 
     "333TopSpeed": 220,
     "3330to60": 2.1,
     "333Handling": 98,
 
-    "666TopSpeed": 222,
+    "666TopSpeed": 223,
     "6660to60": 2.0,
     "666Handling": 101,
 
-    "996TopSpeed": 226,
-    "9960to60": 1.8,
-    "996Handling": 102,
+    "996TopSpeed": 225,
+    "9960to60": 1.9,
+    "996Handling": 101,
 
-    "699TopSpeed": 224,
+	"969TopSpeed": 225,
+    "9690to60": 2.0,
+    "969Handling": 105,
+
+    "699TopSpeed": 223,
     "6990to60": 1.9,
     "699Handling": 105
 }

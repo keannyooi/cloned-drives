@@ -1,5 +1,5 @@
 ﻿{
-    "rq": 78,
+    "rq": 77,
     "make": "RUF",
     "model": "RTurbo",
     "modelYear": 2001,
@@ -12,7 +12,6 @@
     "tags": ["Supercar"],
     "isPrize": false,
 
-
     "weight": 1443,
     "gc": "Low",
     "seatCount":2,
@@ -23,39 +22,33 @@
     "fuelType": "Petrol",
     "mra": 88.37,
     "ola": 73.68,
-    "description": "How do you take one of Porsche's best performance values and make it even better? You send it to RUF.. Card by Spence",
+    "description": "How do you take one of Porsche's best performance values and make it even better? You send it to RUF. Card by Spence",
 
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826196961257455707/Rturbo.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826197012152188938/rturbo.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826197021944709140/rturbo333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826197030133170196/rturbo666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826197052954116106/rturbo996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826197045890646097/rturbo969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826197037375684658/rturbo699.png",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/803345460705230938/image0.jpg?width=1154&height=718",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/803345521661575220/image0.jpg?width=1154&height=722",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/803345555815661608/image0.jpg?width=1154&height=722",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/803345575701250128/image0.jpg?width=1154&height=722",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/803345665987837982/image0.jpg?width=1154&height=722",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/803345638636650526/image0.jpg?width=1154&height=722",
-    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/803345607171375160/image0.jpg?width=1154&height=722",
-
-
-    "333TopSpeed": 215,
+    "333TopSpeed": 214,
     "3330to60": 3.6,
     "333Handling": 90,
 
-
-    "666TopSpeed": 218,
+    "666TopSpeed": 217,
     "6660to60": 3.4, 
     "666Handling": 93,
 
+    "996TopSpeed": 219,
+    "9960to60": 3.2,
+    "996Handling": 93,
 
-    "996TopSpeed": 222,
-    "9960to60": 3.1,
-    "996Handling": 94,
+    "969TopSpeed": 219,
+    "9690to60": 3.4,
+    "969Handling": 97,
 
-
-    "969TopSpeed": 221,
-    "9690to60": 3.2,
-    "969Handling": 96,
-
-
-    "699TopSpeed": 219,
+    "699TopSpeed": 217,
     "6990to60": 3.2,
     "699Handling": 97
 }

@@ -1,5 +1,5 @@
 {
-    "rq": 94,
+    "rq": 90,
     "make": "Nissan",
     "model": "GT-R Nismo",
     "modelYear": 2015,
@@ -22,25 +22,33 @@
     "fuelType": "Petrol",
     "mra": 75.86,
     "ola": 72.50,
-    "description": "",
+    "description": "Card by Keanny.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/753225301663809616/nissan_gt-r_nismo_2015.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/753233949718741082/nissan_gt-r_nismo_2015.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/753233993075392532/nissan_gt-r_nismo_2015_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/753234003397705819/nissan_gt-r_nismo_2015_666.jpg",
-    "racehud996": "",
-    "racehud969": "",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/753234014340513892/nissan_gt-r_nismo_2015_699.jpg",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819392083370049577/nissan_gt-r_nismo.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819398454648373258/gt-r_nismo.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819398486097264705/gt-r_nismo_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819398494497407016/gt-r_nismo_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819398537434628146/gt-r_nismo_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819398523082506260/gt-r_nismo_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819398507336040488/gt-r_nismo_699.jpg",
 
-    "333TopSpeed": 193,
-    "3330to60": 2.7,
+    "333TopSpeed": 194,
+    "3330to60": 2.8,
     "333Handling": 94,
 
     "666TopSpeed": 196,
-    "6660to60": 2.5,
-    "666Handling": 98,
+    "6660to60": 2.6,
+    "666Handling": 97,
 
-    "699TopSpeed": 198,
-    "6990to60": 2.4,
+    "996TopSpeed": 199,
+    "9960to60": 2.5,
+    "996Handling": 97,
+
+    "969TopSpeed": 199,
+    "9690to60": 2.6,
+    "969Handling": 101,
+
+    "699TopSpeed": 196,
+    "6990to60": 2.5,
     "699Handling": 101
 }

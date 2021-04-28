@@ -1,5 +1,5 @@
 {
-    "rq": 29,
+    "rq": 30,
     "make": "Pontiac",
     "model": "Tempest LeMans GTO Convertible",
     "modelYear": 1964,
@@ -22,29 +22,33 @@
     "fuelType": "Petrol",
     "mra": 81.11,
     "ola": 101.37,
-    "description": "A legend but convertible. Card by DodgeDemon",
+    "description": "A car. Card by DodgeDemon",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/799858853574869002/1964_Pontiac_LM_GTO.png?width=1154&height=718",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/799851993111593000/tempest.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/799852027299495937/tempest_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/799852035767402537/tempest_666.jpg",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/799852066990325771/tempest_996.jpg",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/799852051105972254/tempest_969.jpg",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/825825067438702633/GTOTempest.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/825826218757849128/GTOT.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/825826224525017128/GTOT1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/825826235761295360/GTOT2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/825826261309718539/GTOT996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/825826254162493480/GTOT969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/825826244473913364/GTOT699.png",
 
-    "333TopSpeed": 119,
-    "3330to60": 6.8,
+    "333TopSpeed": 120,
+    "3330to60": 6.9,
     "333Handling": 71,
 
-    "666TopSpeed": 122,
-    "6660to60": 6.3, 
+    "666TopSpeed": 125,
+    "6660to60": 6.6, 
     "666Handling": 74,
 
-    "996TopSpeed": 125,
-    "9960to60": 5.7,
+    "996TopSpeed": 129,
+    "9960to60": 6.2,
     "996Handling": 74,
 
-    "969TopSpeed": 125,
-    "9690to60": 5.9,
-    "969Handling": 76
+    "969TopSpeed": 129,
+    "9690to60": 6.6,
+    "969Handling": 77,
+
+    "699TopSpeed": 125,
+    "6990to60": 6.2,
+    "699Handling": 77
 }

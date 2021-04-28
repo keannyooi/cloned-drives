@@ -1,5 +1,5 @@
 {
-    "rq": 39,
+    "rq": 45,
     "make": "Chevrolet",
     "model": "Malibu RS",
     "modelYear": 2019,
@@ -22,29 +22,33 @@
     "fuelType": "Petrol",
     "mra": 53.79,
     "ola": 76.92,
-    "description": "",
+    "description": "Card by keanny",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/729981381802721330/chevrolet_malibu_rs.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/729981783667507280/chevrolet_malibu_rs.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/729981828600954888/chevrolet_malibu_rs_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/729981842421448744/chevrolet_malibu_rs_666.jpg",
-    "racehud996": "",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/729981856312721463/chevrolet_malibu_rs_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/731851796309344336/chevrolet_malibu_rs_699.jpg",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819382760493023232/chevrolet_malibu_rs.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819909567731204106/malibu_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819909574676185108/malibu_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819909579361091644/malibu_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819909628203761664/malibu_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819909614647640084/malibu_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819909599191760906/malibu_699.jpg",
 
-    "333TopSpeed": 133,
-    "3330to60": 7.3,
+    "333TopSpeed": 134,
+    "3330to60": 7.4,
     "333Handling": 82,
 
-    "666TopSpeed": 137,
-    "6660to60": 6.8,
-    "666Handling": 85,
+    "666TopSpeed": 138,
+    "6660to60": 7.0,
+    "666Handling": 84,
 
-    "969TopSpeed": 141,
-    "9690to60": 6.3,
-    "969Handling": 87,
+	"996TopSpeed": 142,
+    "9960to60": 6.6,
+    "996Handling": 84,
+
+    "969TopSpeed": 142,
+    "9690to60": 7.0,
+    "969Handling": 88,
 
     "699TopSpeed": 138,
-    "6990to60": 6.4,
+    "6990to60": 6.6,
     "699Handling": 88
 }

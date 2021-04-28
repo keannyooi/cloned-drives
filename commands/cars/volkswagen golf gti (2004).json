@@ -1,5 +1,5 @@
 ﻿{
-    "rq": 44,
+    "rq": 48,
     "make": "Volkswagen",
     "model": "Golf GTI",
     "modelYear": 2004,
@@ -9,7 +9,7 @@
     "handling": 80,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Hot Hatch", "Driver’s Choice"],
+    "tags": ["Hot Hatch"],
     "isPrize": false,
 
 
@@ -26,36 +26,31 @@
     "description": "Back to greatness. Card by Andu ",
 
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/810569913818153070/GolfGTI5.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/810569998011465728/GolfGTI5sT.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/810570004058865715/GolfGTI51.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/810570007867686972/GolfGTI52.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/810570034316312576/GolfGTI5332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/810570026440065054/GolfGTI5323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/810570017225310208/GolfGTI5233.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819508259714498620/GTI5.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819508481153302538/GTI5.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819508493949992970/GTI5-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819508499351339029/GTI5-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819508527131131924/GTI5-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819508518461505536/GTI5-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819508508155314176/GTI5-699.png",
 
-
-    "333TopSpeed": 146,
-    "3330to60": 6.0,
+    "333TopSpeed": 147,
+    "3330to60": 6.1,
     "333Handling": 83,
 
-
     "666TopSpeed": 150,
-    "6660to60": 5.6, 
-    "666Handling": 86,
+    "6660to60": 5.8,
+    "666Handling": 85,   
 
+    "996TopSpeed": 154,
+    "9960to60": 5.4,
+    "996Handling": 85,
 
-    "996TopSpeed": 156,
-    "9960to60": 5.0,
-    "996Handling": 86,
-
-
-    "969TopSpeed": 153,
-    "9690to60": 5.2,
+    "969TopSpeed": 154,
+    "9690to60": 5.8,
     "969Handling": 89,
 
-
-    "699TopSpeed": 149,
-    "6990to60": 5.3,
+    "699TopSpeed": 150,
+    "6990to60": 5.4,
     "699Handling": 89
 }

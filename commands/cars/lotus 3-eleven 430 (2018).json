@@ -1,5 +1,5 @@
 {
-    "rq": 89,
+    "rq": 84,
     "make": "Lotus",
     "model": "3-Eleven 430",
     "modelYear": 2018,
@@ -22,25 +22,33 @@
     "fuelType": "Petrol",
     "mra": 83.78,
     "ola": 96.77,
-    "description": "",
+    "description": "Card by Keanny.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/729896829239689236/lotus_3-eleven_430.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/729903034934624317/lotus_3-eleven_430.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/729903086100938785/lotus_3-eleven_430_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/729903098599833641/lotus_3-eleven_430_666.jpg",
-    "racehud996": "",
-    "racehud969": "",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/729903112139047004/lotus_3-eleven_430_699.jpg",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819836046485094400/lotus_3-eleven_430.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819835901323509780/3-eleven_430_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819835908069130240/3-eleven_430_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819835914431627264/3-eleven_430_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819835953450450954/3-eleven_430_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819835943694368768/3-eleven_430_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819835928670765086/3-eleven_430_699.jpg",
 
     "333TopSpeed": 183,
     "3330to60": 2.9,
     "333Handling": 94,
 
     "666TopSpeed": 186,
-    "6660to60": 2.7,
-    "666Handling": 98,
+    "6660to60": 2.8,
+    "666Handling": 97,
 
-    "699TopSpeed": 189,
+    "996TopSpeed": 189,
+    "9960to60": 2.6,
+    "996Handling": 97,
+
+    "969TopSpeed": 189,
+    "9690to60": 2.8,
+    "969Handling": 101,
+
+    "699TopSpeed": 186,
     "6990to60": 2.6,
     "699Handling": 101
 }

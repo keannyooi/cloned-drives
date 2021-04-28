@@ -1,5 +1,5 @@
 ﻿{
-    "rq": 16,
+    "rq": 23,
     "make": "Mitsubishi",
     "model": "Mirage G4",
     "modelYear": 2017,
@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
 
     "weight": 960,
     "gc": "Medium",
@@ -25,37 +24,31 @@
     "ola": 67.19,
     "description": "Cheapest car in the usa standing proud. Card by AGE ",
 
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/823499778754609182/MirageG4.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823499874968010762/MirG4.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823499882114973756/MirG4-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823499887135031347/MirG4-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823499909692784640/MirG4-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823499902918328350/MirG4-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823499895011934239/MirG4-699.png",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/798173870208057394/image0.jpg?width=1154&height=708",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/798883962722058240/image0.jpg?width=1154&height=723",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/798884012378685490/image0.jpg?width=1154&height=723",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/798884110293532682/image0.jpg?width=1154&height=723",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/798884226455437342/image0.jpg?width=1154&height=723",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/798884161506246658/image0.jpg?width=1154&height=723",
-    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/798884268578439228/image0.jpg?width=1154&height=723",
-
-
-    "333TopSpeed": 103,
+    "333TopSpeed": 105,
     "3330to60": 11.9,
     "333Handling": 72,
 
-
-    "666TopSpeed": 106,
-    "6660to60": 10.9, 
+    "666TopSpeed": 110,
+    "6660to60": 11.3, 
     "666Handling": 75,
 
-
-    "996TopSpeed": 110,
-    "9960to60": 9.5,
+    "996TopSpeed": 116,
+    "9960to60": 10.6,
     "996Handling": 75,
 
+    "969TopSpeed": 116,
+    "9690to60": 11.3,
+    "969Handling": 78,
 
-    "969TopSpeed": 109,
-    "9690to60": 9.9,
-    "969Handling": 77,
-
-
-    "699TopSpeed": 106,
-    "6990to60": 10.3,
+    "699TopSpeed": 110,
+    "6990to60": 10.6,
     "699Handling": 78
 }

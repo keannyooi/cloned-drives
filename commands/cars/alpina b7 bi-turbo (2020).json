@@ -1,6 +1,6 @@
-﻿{
-    "rq": 90,
-    "make": "Alpina",
+{
+    "rq": 89,
+    "make": ["Alpina", "BMW"],
     "model": "B7 Bi-Turbo",
     "modelYear": 2020,
     "country": "DE",
@@ -9,9 +9,8 @@
     "handling": 85,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [],
+    "tags": ["Tuner"],
     "isPrize": false,
-
 
     "weight": 2207,
     "gc": "Medium",
@@ -25,37 +24,31 @@
     "ola": 82.35,
     "description": "When there are city bumps on a test bowl. Card by DodgeDemon",
 
-
-    "card": "https://media.discordapp.net/attachments/715782088271331398/793942379190026240/2020_Alpina_B7.png?width=1154&height=718",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/793945374712266752/AlpinaB7St.png",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/793945390159626310/AlpinaB71.png",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/793945401707200512/AlpinaB72.png",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/793945422724726784/AlpinaB7332.png",
-    "racehud969": "",
-    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/793945437282762772/AlpinaB7233.png",
-
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819421060323606579/2020_Alpina_B7_BiTurbo.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823598477409910815/B7.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823598483860488232/b7333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823598491821539379/b7666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823598521974128650/b7996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823598512741810186/b7969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823598504542732308/b7699.png",
 
     "333TopSpeed": 208,
     "3330to60": 3.0,
     "333Handling": 88,
 
-
-    "666TopSpeed": 211,
-    "6660to60": 2.8,
+    "666TopSpeed": 210,
+    "6660to60": 2.9,
     "666Handling": 91,
 
-
-    "996TopSpeed": 216,
-    "9960to60": 2.6,
+    "996TopSpeed": 213,
+    "9960to60": 2.7,
     "996Handling": 91,
 
+    "969TopSpeed": 213,
+    "9690to60": 2.9,
+    "969Handling": 94,
 
-    "969TopSpeed": 0,
-    "9690to60": 0,
-    "969Handling": 0,
-
-
-    "699TopSpeed": 214,
+    "699TopSpeed": 210,
     "6990to60": 2.7,
     "699Handling": 94
 }

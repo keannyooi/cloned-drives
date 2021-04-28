@@ -1,5 +1,5 @@
 {
-    "rq": 15,
+    "rq": 21,
     "make": "Nissan",
     "model": "Stanza GXE",
     "modelYear": 1987,
@@ -24,23 +24,31 @@
     "ola": 58.93,
     "description": "A room. Card by Connor",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/802644830181261373/F.NissanStanzaGXE.png?width=1154&height=718",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/802644938533503002/F.NissanStanzaGXE.png",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/802644968493416498/F.NissanStanzaGXE-1star.png",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/802644996976410654/F.NissanStanzaGXE-2star.png",
-    "racehud996": "",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/802645032980971570/F.NissanStanzaGXE-969.png",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820696339129303121/E.NissanStanzaGXE.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820694744598315048/E.NissanStanzaGXE.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820694754446278686/E.NissanStanzaGXE-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820694766148255784/E.NissanStanzaGXE-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820694808779030549/E.NissanStanzaGXE-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820694794111025192/E.NissanStanzaGXE-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820694783910477854/E.NissanStanzaGXE-699.png",
 
-    "333TopSpeed": 105,
-    "3330to60": 10.4,
+    "333TopSpeed": 107,
+    "3330to60": 10.6,
     "333Handling": 65,
 
-    "666TopSpeed": 108,
-    "6660to60": 9.6, 
-    "666Handling": 68,
+    "666TopSpeed": 112,
+    "6660to60": 10.1, 
+    "666Handling": 67,
 
-    "969TopSpeed": 110,
-    "9690to60": 8.8,
-    "969Handling": 70
+    "996TopSpeed": 117,
+    "9960to60": 9.5,
+    "996Handling": 67,
+
+    "969TopSpeed": 117,
+    "9690to60": 10.1,
+    "969Handling": 70,
+
+    "699TopSpeed": 112,
+    "6990to60": 9.5,
+    "699Handling": 70
 }

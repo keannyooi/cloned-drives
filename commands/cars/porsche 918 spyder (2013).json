@@ -1,5 +1,5 @@
 ﻿{
-    "rq": 99,
+    "rq": 98,
     "make": "Porsche",
     "model": "918 Spyder",
     "modelYear": 2013,
@@ -26,36 +26,32 @@
     "description": "A hybrid hypercar like no other. Two electric motors and a 9,000rpm 4.6-litre racing V8. Card by Keanny",
 
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/804190113030078484/image0.png?width=1154&height=710",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/804190193350869032/image0.jpg?width=1154&height=722",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/804190221137870848/image0.jpg?width=1154&height=722",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/804190240720945152/image0.jpg?width=1154&height=722",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/804190321801822298/image0.jpg?width=1154&height=722",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/804190280881537074/image0.jpg?width=1154&height=722",
-    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/804190301807706132/image0.jpg?width=1154&height=722",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819382690150088714/918_spoyder.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819512481834598440/918_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819512495789703178/918_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819512501968306176/918_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819512538034602004/918_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819512525829046292/918_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819512514105704458/918_699.jpg",
 
 
     "333TopSpeed": 216,
     "3330to60": 2.3,
-    "333Handling": 97,
+    "333Handling": 96,
 
-
-    "666TopSpeed": 218,
+    "666TopSpeed": 219,
     "6660to60": 2.2, 
-    "666Handling": 100,
+    "666Handling": 99,
 
-
-    "996TopSpeed": 223,
+    "996TopSpeed": 221,
     "9960to60": 2.0,
-    "996Handling": 100,
+    "996Handling": 99,
 
-
-    "969TopSpeed": 222,
-    "9690to60": 2.1,
+    "969TopSpeed": 221,
+    "9690to60": 2.2,
     "969Handling": 103,
 
-
-    "699TopSpeed": 220,
+    "699TopSpeed": 219,
     "6990to60": 2.0,
     "699Handling": 103
 }
