@@ -1,4 +1,4 @@
-﻿{
+{
     "rq": 63,
     "make": "Audi",
     "model": "TTS Coupe",
@@ -12,7 +12,6 @@
     "tags": [],
     "isPrize": false,
 
-
     "weight": 1395,
     "gc": "Low",
     "seatCount":4,
@@ -25,37 +24,31 @@
     "ola": 72.29,
     "description": "Tangerine orange fast. Card by Havvy",
 
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824046697482289202/unknown.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824046768555294751/000_tts.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824046776704303124/111_tts.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824046781335470140/222_tts.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824046802063458374/332_tts.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824046793745629184/323_tts.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824046787790503967/233_tts.png",
 
-    "card": "https://media.discordapp.net/attachments/715782088271331398/802610249420111892/AudiTTSCoupe.png?width=1154&height=718",
-    "racehud000": "https://media.discordapp.net/attachments/718097267621363744/802610335889621042/000tts.png?width=1154&height=718",
-    "racehud333": "https://media.discordapp.net/attachments/718097267621363744/802610346744741898/111tts.png?width=1154&height=718",
-    "racehud666": "https://media.discordapp.net/attachments/718097267621363744/802610350401912862/222tts.png?width=1154&height=718",
-    "racehud996": "https://media.discordapp.net/attachments/718097267621363744/802610367998066738/332tts.png?width=1154&height=718",
-    "racehud969": "https://media.discordapp.net/attachments/718097267621363744/802610363274625084/323tts.png?width=1154&height=718",
-    "racehud699": "https://media.discordapp.net/attachments/718097267621363744/802610359827300383/233tts.png?width=1154&height=718",
-
-
-    "333TopSpeed": 159,
-    "3330to60": 4.7,
+    "333TopSpeed": 158,
+    "3330to60": 4.8,
     "333Handling": 88,
 
-
-    "666TopSpeed": 163,
-    "6660to60": 4.4, 
+    "666TopSpeed": 162,
+    "6660to60": 4.5,
     "666Handling": 91,
 
-
-    "996TopSpeed": 167,
-    "9960to60": 4.0,
+    "996TopSpeed": 165,
+    "9960to60": 4.3,
     "996Handling": 91,
 
-
-    "969TopSpeed": 167,
-    "9690to60": 4.1,
+    "969TopSpeed": 165,
+    "9690to60": 4.5,
     "969Handling": 94,
 
-
-    "699TopSpeed": 163,
-    "6990to60": 4.1,
+    "699TopSpeed": 162,
+    "6990to60": 4.3,
     "699Handling": 94
 }

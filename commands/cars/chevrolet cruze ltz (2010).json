@@ -1,0 +1,54 @@
+{
+    "rq": 37,
+    "make": "Chevrolet",
+    "model": "Cruze LTZ",
+    "modelYear": 2010,
+    "country": "US",
+    "topSpeed": 124,
+    "0to60": 9.2,
+    "handling": 76,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1454,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 49.60,
+    "ola": 68.84,
+    "description": "Card by keanny",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/837574624400900126/cruze_ltz.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/837576318785814568/cruze_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/837576326055460944/cruze_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/837576330463019018/cruze_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/837576345071779860/cruze_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/837576340680605696/cruze_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/837576335257108500/cruze_699.jpg",
+
+    "333TopSpeed": 128,
+    "3330to60": 8.7,
+    "333Handling": 79,
+
+    "666TopSpeed": 132,
+    "6660to60": 8.3,
+    "666Handling": 81,
+
+	"996TopSpeed": 137,
+    "9960to60": 7.8,
+    "996Handling": 81,
+
+    "969TopSpeed": 137,
+    "9690to60": 8.3,
+    "969Handling": 84,
+
+	"699TopSpeed": 132,
+    "6990to60": 7.8,
+    "699Handling": 84
+}

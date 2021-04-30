@@ -1,5 +1,5 @@
 {
-    "rq": 80,
+    "rq": 77,
     "make": "Jaguar",
     "model": "F-Type R Coupe",
     "modelYear": 2015,
@@ -9,7 +9,7 @@
     "handling": 90,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["2021 Spring Collection"],
+    "tags": [],
     "isPrize": false,
 
     "weight": 1776,
@@ -24,13 +24,13 @@
     "ola": 100.00,
     "description": "A faster E-Type's Spiritual successor with a roary supercharged V8. Card by Spancecrab.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/803259588819681311/image0.jpg",
-    "racehud000": "https://cdn.discordapp.com/attachments/718097267621363744/803259666133811210/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/718097267621363744/803259688711094292/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/718097267621363744/803259718978109440/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/718097267621363744/803259806529749002/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/718097267621363744/803259756269010984/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/718097267621363744/803259781208080395/image0.jpg",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/837558519204544532/image0.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/837558602797023253/image0.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/837558619083636756/image0.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/837558635629510666/image0.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/837558695188758558/image0.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/837558657528496128/image0.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/837558679577690152/image0.jpg",
 
     "333TopSpeed": 191,
     "3330to60": 3.4,
@@ -38,14 +38,14 @@
 
     "666TopSpeed": 194,
     "6660to60": 3.2,
-    "666Handling": 97,
+    "666Handling": 96,
 
     "996TopSpeed": 196,
-    "9960to60": 3.0,
-    "996Handling": 97,
+    "9960to60": 3.1,
+    "996Handling": 96,
 
     "969TopSpeed": 196,
-    "9690to60": 3.1,
+    "9690to60": 3.2,
     "969Handling": 100,
 
     "699TopSpeed": 194,
