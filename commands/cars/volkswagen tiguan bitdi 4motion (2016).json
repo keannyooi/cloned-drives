@@ -1,0 +1,56 @@
+﻿{
+    "rq": 67,
+    "make": "Volkswagen",
+    "model": "Tiguan BiTDI 4Motion",
+    "modelYear": 2016,
+    "country": "DE",
+    "topSpeed": 141,
+    "0to60": 6.2,
+    "handling": 79,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1775,
+    "gc": "High",
+    "seatCount":5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 55.86,
+    "ola": 64.52,
+    "description": "This BiTDI is the most powerful Volkswagen Tiguan on sale and packs quite a punch, marrying performance with the usual refinement and high-tech ambience. Card by Andu",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/848299879335198761/BiTDI.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/848299764587823164/TiguanBiTDI.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/848302067217858589/TiguanBiTDI-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/848299775337168926/TiguanBiTDI-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/848299798712025096/TiguanBiTDI-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/848299790348976158/TiguanBiTDI-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/848299783734296586/TiguanBiTDI-699.png",
+
+    "333TopSpeed": 145,
+    "3330to60": 5.9,
+    "333Handling": 82,
+
+    "666TopSpeed": 148,
+    "6660to60": 5.6, 
+    "666Handling": 84,
+
+    "996TopSpeed": 152,
+    "9960to60": 5.3,
+    "996Handling": 84,
+
+    "969TopSpeed": 152,
+    "9690to60": 5.6,
+    "969Handling": 88,
+
+    "699TopSpeed": 148,
+    "6990to60": 5.3,
+    "699Handling": 88
+}

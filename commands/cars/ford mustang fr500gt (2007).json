@@ -9,7 +9,7 @@
     "handling": 94,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": ["Motorsport"],
+    "tags": ["Motorsport", "Unique"],
     "isPrize": false,
 
     "weight": 1510,
@@ -39,17 +39,16 @@
     "666TopSpeed": 178,
     "6660to60": 3.5,
     "666Handling": 100,
-
-    "699TopSpeed": 178,
-    "6990to60": 3.3,
-    "699Handling": 104,
     
     "996TopSpeed": 181,
-    "996to60": 3.3,
+    "9960to60": 3.3,
     "996Handling": 100,
 
     "969TopSpeed": 181,
-    "969to60": 3.5,
-    "969Handling": 104
+    "9690to60": 3.5,
+    "969Handling": 104,
 
+	"699TopSpeed": 178,
+    "6990to60": 3.3,
+    "699Handling": 104
 }

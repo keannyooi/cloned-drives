@@ -1,0 +1,54 @@
+{
+    "rq": 34,
+    "make": ["Abarth", "Fiat"],
+    "model": "500 esseesse",
+    "modelYear": 2009,
+    "country": "IT",
+    "topSpeed": 131,
+    "0to60": 7.2,
+    "handling": 77,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch", "Street Racer"],
+    "isPrize": false,
+
+    "weight": 1035,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 53.96,
+    "ola": 69.93,
+    "description": "This car differs from the normal Abarth 500 by having 17-inch alloy wheels, 205/40-section tyres, cross-drilled disc brakes, stiffer springs, a new engine ECU and a performance air filter along with some Essesse badges. Also an overly complicated name. Card by havvy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/838354132166639626/Abarth500ss.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/838348503490756629/esseessee_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/838348514991407114/esseessee_111.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/838348518225477632/esseessee_222.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/838348532783775764/esseessee_332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/838348528409247744/esseessee_323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/838348522675765258/esseessee_233.png",
+
+    "333TopSpeed": 135,
+    "3330to60": 6.8,
+    "333Handling": 80,
+
+    "666TopSpeed": 139,
+    "6660to60": 6.5,
+    "666Handling": 82,
+
+    "996TopSpeed": 143,
+    "9960to60": 6.1,
+    "996Handling": 82,
+
+    "969TopSpeed": 143,
+    "9690to60": 6.5,
+    "969Handling": 85,
+
+    "699TopSpeed": 139,
+    "6990to60": 6.1,
+    "699Handling": 85
+}

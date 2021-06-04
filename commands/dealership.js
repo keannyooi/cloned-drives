@@ -22,7 +22,7 @@ module.exports = {
 	adminOnly: false,
 	description: "Check what's on sale in the car dealership here!",
 	async execute(message) {
-		const wait = await message.channel.send("**Loading dealership, this may take a while... (please wait)**");
+		const wait = message.channel.send("**Loading dealership, this may take a while... (please wait)**");
 
 		try {
 			const db = message.client.db;
@@ -30,8 +30,8 @@ module.exports = {
 
 			const userData = await db.get(`acc${message.author.id}`);
 			const moneyEmoji = message.client.emojis.cache.get("726017235826770021");
-			var lastRefresh = await db.get("lastDealershipRefresh");
-			var catalog = await db.get("dealershipCatalog");
+			let lastRefresh = await db.get("lastDealershipRefresh");
+			let catalog = await db.get("dealershipCatalog");
 			console.log(`${lastRefresh} - ${moment().format("L")}`);
 
 			if (!lastRefresh) {
@@ -83,7 +83,7 @@ module.exports = {
 				deckScreen.addField(`${i + 1} - ${currentName}`, `Price: ${moneyEmoji}${catalog[i].price} \nStock Remaining: ${catalog[i].stock}`, true);
 			}
 
-			wait.delete();
+			(await wait).delete();
 			deckScreen.attachFiles(attachment);
 			deckScreen.setImage("attachment://dealership.png");
 			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
@@ -91,7 +91,7 @@ module.exports = {
 
 			async function refresh() {
 				const catalog = [];
-				var i = 0;
+				let i = 0;
 				while (i < 8) {
 					const randNum = Math.floor(Math.random() * 100);
 					let currentName, price, stock;
@@ -194,7 +194,7 @@ module.exports = {
 				await db.set("lastDealershipRefresh", moment().format("L"));
 
 				function isOnSale(card) {
-					var isOnSale = false;
+					let isOnSale = false;
 					for (i = 0; i < catalog.length; i++) {
 						const catalogCar = require(`./cars/${catalog[i].carFile}`);
 						if (catalogCar === card) {
@@ -213,7 +213,7 @@ module.exports = {
 				.setColor("#fc0303")
 				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 				.setTitle("Error, failed to load in dealership.")
-				.setDescription(`Something must have gone wrong. Please report this issue to the devs. \n\`${error}\``)
+				.setDescription(`Something must have gone wrong. Please report this issue to the devs. \n\`${error.stack}\``)
 				.setTimestamp();
 			return message.channel.send(errorMessage);
 		}

@@ -1,4 +1,4 @@
-﻿{
+{
     "rq": 22,
     "make": "Audi",
     "model": "Fox",
@@ -12,7 +12,6 @@
     "tags": [],
     "isPrize": false,
 
-
     "weight": 1060,
     "gc": "Medium",
     "seatCount":5,
@@ -25,7 +24,6 @@
     "ola": 62.60,
     "description": "Fox but 80 but Fox but not 80. Card by Connor",
 
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820678472355676200/E.AudiFox.png",
     "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820678295115923485/E.AudiFox.png",
     "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820678304033931304/E.AudiFox-1.png",
@@ -34,26 +32,21 @@
     "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820678335662260224/E.AudiFox-969.png",
     "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820678322324242472/E.AudiFox-699.png",
 
-
     "333TopSpeed": 100,
     "3330to60": 12.4,
     "333Handling": 72,
-
 
     "666TopSpeed": 105,
     "6660to60": 11.8, 
     "666Handling": 75,
 
-
     "996TopSpeed": 111,
     "9960to60": 11.1,
     "996Handling": 75,
 
-
     "969TopSpeed": 111,
     "9690to60": 11.8,
     "969Handling": 78,
-
 
     "699TopSpeed": 105,
     "6990to60": 11.1,

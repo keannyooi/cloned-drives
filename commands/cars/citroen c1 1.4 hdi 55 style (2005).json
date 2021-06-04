@@ -1,0 +1,54 @@
+﻿{
+    "rq": 20,
+    "make": "Citroen",
+    "model": "C1 1.4 HDi 55 Style",
+    "modelYear": 2005,
+    "country": "FR",
+    "topSpeed": 96,
+    "0to60": 15.4,
+    "handling": 69,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 921,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 25.83,
+    "ola": 64.98,
+    "description": "A city car that emits a lot of black smoke. Card by keanny",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/845922757228363786/citroen_c1_diesel_boi.png",
+    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/845921355962384394/c1_diesel_000.jpg",
+    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/845921362383077426/c1_diesel_333.jpg",
+    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/845921367606034482/c1_diesel_666.jpg",
+    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/845921384290713620/c1_diesel_996.jpg",
+    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/845921377684422666/c1_diesel_969.jpg",
+    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/845921371666120714/c1_diesel_699.jpg",
+
+    "333TopSpeed": 101,
+    "3330to60": 14.6,
+    "333Handling": 71,
+
+    "666TopSpeed": 107,
+    "6660to60": 13.9,
+    "666Handling": 74,
+
+    "996TopSpeed": 112,
+    "9960to60": 13.1,
+    "996Handling": 74,
+
+    "969TopSpeed": 112,
+    "9690to60": 13.9,
+    "969Handling": 77,
+
+    "699TopSpeed": 107,
+    "6990to60": 13.1,
+    "699Handling": 77
+}

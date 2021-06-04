@@ -1,0 +1,54 @@
+{
+    "rq": 95,
+    "make": "Koenigsegg",
+    "model": "Regera",
+    "modelYear": 2016,
+    "country": "SE",
+    "topSpeed": 255,
+    "0to60": 2.6,
+    "handling": 93,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Hypercar", "Ultra Expensive", "Eco-Friendly", "Rest of The World"],
+    "isPrize": false,
+
+    "weight": 1590,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Roadster",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Hybrid",
+    "mra": 108.33,
+    "ola": 107.69,
+    "description": "Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/843212436663566366/Regera3.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/843212862863179776/regera.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/843212870258786364/regera333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/843212878277771335/regera666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/843212902550208512/regera996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/843212894778687538/regera969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/843212886331490304/regera699.png",
+
+    "333TopSpeed": 257,
+    "3330to60": 2.5,
+    "333Handling": 96,
+
+    "666TopSpeed": 259,
+    "6660to60": 2.3,
+    "666Handling": 99,
+
+    "996TopSpeed": 261,
+    "9960to60": 2.2,
+    "996Handling": 99,
+
+    "969TopSpeed": 261,
+    "9690to60": 2.3,
+    "969Handling": 103,
+
+    "699TopSpeed": 259,
+    "6990to60": 2.2,
+    "699Handling": 103
+}

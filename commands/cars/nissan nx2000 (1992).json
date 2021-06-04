@@ -1,0 +1,56 @@
+﻿{
+    "rq": 37,
+    "make": "Nissan",
+    "model": "NX2000",
+    "modelYear": 1992,
+    "country": "JP",
+    "topSpeed": 130,
+    "0to60": 7.2,
+    "handling": 75,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch"],
+    "isPrize": false,
+
+
+    "weight": 1210,
+    "gc": "Medium",
+    "seatCount":4,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 47.37,
+    "ola": 83,
+    "description": "Maybe the world's quickest ovoid. (Go look it up.). Card by F4ST",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/839030661951258644/Nissan_NX2000.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/839030142469931018/Stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/839030170215251968/333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/839030201659686922/666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/839030314956357642/996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/839030280953266186/969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/839030239706480650/699.png",
+
+    "333TopSpeed": 134,
+    "3330to60": 6.8,
+    "333Handling": 77,
+
+    "666TopSpeed": 138,
+    "6660to60": 6.5, 
+    "666Handling": 80,
+
+    "996TopSpeed": 142,
+    "9960to60": 6.1,
+    "996Handling": 80,
+
+    "969TopSpeed": 142,
+    "9690to60": 6.4,
+    "969Handling": 83,
+
+    "699TopSpeed": 138,
+    "6990to60": 6.1,
+    "699Handling": 83
+}

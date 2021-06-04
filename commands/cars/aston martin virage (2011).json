@@ -1,0 +1,54 @@
+{
+    "rq": 66,
+    "make": "Aston Martin",
+    "model": "Virage",
+    "modelYear": 2011,
+    "country": "GB",
+    "topSpeed": 186,
+    "0to60": 4.4,
+    "handling": 85,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Grand Tourer", "The Royal Collection"],
+    "isPrize": false,
+
+    "weight": 1770,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 78.57,
+    "ola": 81.82,
+    "description": "Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/849757665793409074/Virage.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/849758379035197480/Virage11.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/849758384521478154/Virage11333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/849758390417621052/Virage11666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/849758415224176680/Virage11996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/849758407086833664/Virage11969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/849758399184240660/Virage11699.png",
+
+    "333TopSpeed": 189,
+    "3330to60": 4.2,
+    "333Handling": 88,
+
+    "666TopSpeed": 192,
+    "6660to60": 4.0,
+    "666Handling": 91,
+
+    "996TopSpeed": 194,
+    "9960to60": 3.7,
+    "996Handling": 91,
+
+    "969TopSpeed": 194,
+    "9690to60": 4.0,
+    "969Handling": 94,
+
+    "699TopSpeed": 192,
+    "6990to60": 3.7,
+    "699Handling": 94
+}

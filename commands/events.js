@@ -9,26 +9,31 @@
 
 const Discord = require("discord.js-light");
 const Canvas = require("canvas");
+const { DateTime, Interval } = require("luxon");
 
 module.exports = {
     name: "events",
     aliases: ["e", "event"],
     usage: "(optional) <event name>",
     args: 0,
-	isExternal: false,
+	isExternal: true,
     adminOnly: false,
     description: "Views all active and inactive events.",
     async execute(message, args) {
 		const db = message.client.db;
 		const events = await db.get("events");
+		const filter = response => {
+            return response.author.id === message.author.id;
+        };
 		const hudPlacement = [{ x: 9, y: 59 }, { x: 9, y: 183 }, { x: 9, y: 311 }, { x: 9, y: 437 }, { x: 9, y: 565 }, { x: 383, y: 59 }, { x: 383, y: 183 }, { x: 383, y: 311 }, { x: 383, y: 437 }, { x: 383, y: 565 }];
 		const rewardPlacement = [{ x: 204, y: 57 }, { x: 204, y: 182 }, { x: 204, y: 309 }, { x: 204, y: 436 }, { x: 204, y: 563 }, { x: 587, y: 57 }, { x: 587, y: 182 }, { x: 587, y: 309 }, { x: 587, y: 436 }, { x: 587, y: 563 }];
 
         if (!args.length) {
-			let activeEvents = events.filter(event => {
+			console.log(events);
+			let activeEvents = Object.values(events).filter(event => {
 				return event.isActive === true;
 			});
-			let inactiveEvents = events.filter(event => {
+			let inactiveEvents = Object.values(events).filter(event => {
 				return event.isActive === false;
 			});
 			let activeEventList = eventDisplay(activeEvents);
@@ -48,33 +53,92 @@ module.exports = {
             return message.channel.send(listMessage);
         }
         else {
-            const eventName = args.join(" ").toLowerCase();
-            const event = events.find(event => {
-				return event.name.toLowerCase().includes(eventName);
+            let eventName = args.map(i => i.toLowerCase());
+			let events = await db.get("events");
+			const searchResults = Object.values(events).filter(function(event) {
+				if (typeof event === "object") {
+					return eventName.every(part => event.name.toLowerCase().includes(part));
+				}
+				else {
+					return false;
+				}
 			});
 
-            if (!event) {
+			if (searchResults.length > 1) {
+				let eventList = "";
+				for (i = 1; i <= searchResults.length; i++) {
+					eventList += `${i} - ${searchResults[i - 1].name} \n`;
+				}
+
+				const infoScreen = new Discord.MessageEmbed()
+					.setColor("#34aeeb")
+					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+					.setTitle("Multiple events found, please type one of the following.")
+					.setDescription(eventList)
+					.setTimestamp();
+
+				message.channel.send(infoScreen).then(currentMessage => {
+					message.channel.awaitMessages(filter, {
+						max: 1,
+						time: 30000,
+						errors: ["time"]
+					})
+						.then(collected => {
+							collected.first().delete();
+							if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
+								message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+								const errorMessage = new Discord.MessageEmbed()
+									.setColor("#fc0303")
+									.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+									.setTitle("Error, invalid integer provided.")
+									.setDescription("It looks like your response was either not a number or not part of the selection.")
+									.setTimestamp();
+								return currentMessage.edit(errorMessage);
+							}
+							else {
+								viewEvent(searchResults[parseInt(collected.first()) - 1], currentMessage);
+							}
+						})
+						.catch(() => {
+							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+							const cancelMessage = new Discord.MessageEmbed()
+								.setColor("#34aeeb")
+								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+								.setTitle("Action cancelled automatically.")
+								.setTimestamp();
+							return currentMessage.edit(cancelMessage);
+						});
+				});
+			}
+			else if (searchResults.length > 0) {
+				viewEvent(searchResults[0]);
+			}
+			else {
 				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                const errorMessage = new Discord.MessageEmbed()
-                    .setColor("#fc0303")
-                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                    .setTitle("Error, 404 event not found.")
-                    .setDescription("It looks like this event doesn't exist. Try referring to the event list.")
-                    .setTimestamp();
-                return message.channel.send(errorMessage);
-            }
+				const errorMessage = new Discord.MessageEmbed()
+					.setColor("#fc0303")
+					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+					.setTitle("Error, 404 event not found.")
+					.setDescription("Try checking again using `cd-events`.")
+					.setTimestamp();
+				return message.channel.send(errorMessage);
+			}
+        }
+
+		async function viewEvent(event, currentMessage) {
 			console.log(event);
-			
 			if (event.isActive || message.member.roles.cache.has("802043346951340064")) {
 				const wait = await message.channel.send("**Loading event display, this may take a while... (please wait)**");
 				const infoScreen = new Discord.MessageEmbed()
 					.setColor("#34aeeb")
 					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 					.setTitle(event.name)
-					.setDescription(`This event's active status: **${event.isActive}**`)
+					.setDescription(`This event's active status: **${event.isActive}**
+					Duration (in days): \`${event.timeLeft}\``)
+					.setFooter(`Event ID: ${event.id}`)
 					.setTimestamp();
 
-				for (i = 0; i < event.roster.length; i++) {
+				for (let i = 0; i < event.roster.length; i++) {
 					let car = require(`./cars/${event.roster[i].car}`);
 					let make = car["make"];
 					let upgrade = `${event.roster[i].gearingUpgrade}${event.roster[i].engineUpgrade}${event.roster[i].chassisUpgrade}`;
@@ -88,7 +152,12 @@ module.exports = {
 					for (const [key, value] of Object.entries(event.roster[i].requirements)) {
 						switch (typeof value) {
 							case "object":
-								reqString += `\`${key}: ${value.start} - ${value.end}\`, `;
+								if (Array.isArray(value)) {
+									reqString += `\`${key}: ${value.join(" or ")}\`, `;
+								}
+								else {
+									reqString += `\`${key}: ${value.start} - ${value.end}\`, `;
+								}
 								break;
 							case "boolean":
 							case "string":
@@ -234,18 +303,42 @@ module.exports = {
 				const errorMessage = new Discord.MessageEmbed()
 					.setColor("#fc0303")
 					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-					.setTitle("Error, this event is not viewable yet.")
+					.setTitle("This event is not viewable yet.")
 					.setDescription("The event you are trying to view is not active currently. This is only bypassable if you are a part of Community Management.")
 					.setTimestamp();
-				return message.channel.send(errorMessage);
+				if (currentMessage && message.channel.type === "text") {
+					return currentMessage.edit(errorMessage);
+				}
+				else {
+					return message.channel.send(errorMessage);
+				}
 			}
-        }
+		}
 
         function eventDisplay(events) {
             if (events.length > 0) {
 				let eventList = "";
 				for (let event of events) {
-					eventList += `${event.name}\n`;
+					if (event.isActive && event.timeLeft !== "unlimited") {
+						let interval = Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(event.deadline));
+						if (interval.invalid === null) {
+							let days = Math.floor(interval.length("days"));
+							let hours = Math.floor(interval.length("hours") - (days * 24));
+							let minutes = Math.floor(interval.length("minutes") - (days * 1440) - (hours * 60));
+							let seconds = Math.floor(interval.length("seconds") - (days * 86400) - (hours * 3600) - (minutes * 60));
+							let intervalString = `${days}d ${hours}h ${minutes}m ${seconds}s`
+							eventList += `${event.name} \`${intervalString} remaining\`\n`;
+						}
+						else {
+							eventList += `${event.name} \`currently ending, no longer playable\`\n`;
+						}
+					}
+					else if (event.isActive) {
+						eventList += `${event.name} \`unlimited time remaining\`\n`;
+					}
+					else {
+						eventList += `${event.name}\n`;
+					}
 				}
 				return eventList;
 			}

@@ -1,0 +1,54 @@
+{
+    "rq": 47,
+    "make": "Cadillac",
+    "model": "XT4 Sport 2.0T AWD",
+    "modelYear": 2018,
+    "country": "US",
+    "topSpeed": 132,
+    "0to60": 7.6,
+    "handling": 79,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1805,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 49.35,
+    "ola": 71.05,
+    "description": "Cadillac's smallest SUV. Card by Connor",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/838136673690714112/C.CadillacXT4Sport20TAWD.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/838136777411788820/C.CadillacXT4.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/838136793294438420/C.CadillacXT4-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/838136809753935932/C.CadillacXT4-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/838136860814344272/C.CadillacXT4-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/838136843554783252/C.CadillacXT4-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/838136824316166204/C.CadillacXT4-699.png",
+
+    "333TopSpeed": 136,
+    "3330to60": 7.2,
+    "333Handling": 82,
+
+    "666TopSpeed": 140,
+    "6660to60": 6.8,
+    "666Handling": 84,
+
+    "996TopSpeed": 144,
+    "9960to60": 6.5,
+    "996Handling": 84,
+
+    "969TopSpeed": 144,
+    "9690to60": 6.8,
+    "969Handling": 88,
+
+    "699TopSpeed": 140,
+    "6990to60": 6.5,
+    "699Handling": 88
+}

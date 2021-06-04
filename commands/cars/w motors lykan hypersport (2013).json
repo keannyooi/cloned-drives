@@ -1,0 +1,54 @@
+{
+    "rq": 95,
+    "make": "W Motors",
+    "model": "Lykan HyperSport",
+    "modelYear": 2013,
+    "country": "AE",
+    "topSpeed": 245,
+    "0to60": 2.8,
+    "handling": 93,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Silver Screen", "Ultra Expensive", "Hypercar", "Rest of World"],
+    "isPrize": false,
+
+    "weight": 1380,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 121.74,
+    "ola": 80.00,
+    "description": "Cars dont fly. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/843212313813450752/LykanHyper.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/843212696115216404/Lykan.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/843212703626952714/Lykan333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/843212709822464000/Lykan666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/843212733909827654/Lykan996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/843212726112747551/Lykan969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/843212718092845066/Lykan699.png",
+
+    "333TopSpeed": 247,
+    "3330to60": 2.7,
+    "333Handling": 96,
+
+    "666TopSpeed": 249,
+    "6660to60": 2.5,
+    "666Handling": 99,
+
+    "996TopSpeed": 251,
+    "9960to60": 2.4,
+    "996Handling": 99,
+
+    "969TopSpeed": 251,
+    "9690to60": 2.5,
+    "969Handling": 103,
+
+    "699TopSpeed": 249,
+    "6990to60": 2.4,
+    "699Handling": 103
+}

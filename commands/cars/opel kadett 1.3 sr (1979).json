@@ -1,0 +1,54 @@
+{
+    "rq": 21,
+    "make": "Opel",
+    "model": "Kadett 1.3 SR",
+    "modelYear": 1979,
+    "country": "DE",
+    "topSpeed": 104,
+    "0to60": 12.8,
+    "handling": 66,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 825,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 21.44,
+    "ola": 65.63,
+    "description": "Slightly warm version of the GTE. Card by Connor",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/838842197268365322/E.OpelKadett13SR.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/838842519059693609/E.OpelKadett13.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/838842545446322226/E.OpelKadett13-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/838842596838473738/E.OpelKadett13-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/838842710693249035/E.OpelKadett13-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/838842656952025098/E.OpelKadett13-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/838842624227934248/E.OpelKadett13-699.png",
+
+    "333TopSpeed": 109,
+    "3330to60": 12.2,
+    "333Handling": 68,
+
+    "666TopSpeed": 114,
+    "6660to60": 11.5,
+    "666Handling": 70,
+
+    "996TopSpeed": 119,
+    "9960to60": 10.9,
+    "996Handling": 70,
+
+    "969TopSpeed": 119,
+    "9690to60": 11.5,
+    "969Handling": 73,
+
+    "699TopSpeed": 114,
+    "6990to60": 10.9,
+    "699Handling": 73
+}

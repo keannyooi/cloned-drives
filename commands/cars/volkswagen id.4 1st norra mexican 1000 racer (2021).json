@@ -1,0 +1,56 @@
+﻿{
+    "rq": 57,
+    "make": "Volkswagen",
+    "model": "ID.4 1st NORRA Mexican 1000 Racer",
+    "modelYear": 2021,
+    "country": "DE",
+    "topSpeed": 107,
+    "0to60": 7.3,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Off-Road",
+    "tags": ["Motorsport", "Eco-Friendly", "Oddity"],
+    "isPrize": false,
+
+
+    "weight": 1997,
+    "gc": "High",
+    "seatCount":1,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Electric",
+    "mra": 39.89,
+    "ola": 60.27,
+    "description": "The unlikely love child between Tanner Foust and VW. Card by Andu",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/846803671609245706/ID4rally.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/846801466780942426/IDOff.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/846801472796491776/IDOff-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/846801514734288896/IDOff-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/846801515720736778/IDOff-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/846801515616534538/IDOff-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/846801515497652224/IDOff-699.png",
+
+    "333TopSpeed": 112,
+    "3330to60": 6.9,
+    "333Handling": 80,
+
+    "666TopSpeed": 117,
+    "6660to60": 6.6, 
+    "666Handling": 82,
+
+    "996TopSpeed": 122,
+    "9960to60": 6.2,
+    "996Handling": 82,
+
+    "969TopSpeed": 122,
+    "9690to60": 6.6,
+    "969Handling": 85,
+
+    "699TopSpeed": 117,
+    "6990to60": 6.2,
+    "699Handling": 85
+}

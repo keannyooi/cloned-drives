@@ -2,6 +2,8 @@
 	"packName": "Japanese Pack",
 	"description": "A pack of 5 Japanese cars, known for their reliability and 'lack of passion', as Americans say.",
 	"price": 60000,
+	"limited": false,
+	"repetition": 1,
 	"pack": "https://cdn.discordapp.com/attachments/716917404868935691/718414529343520839/japanese_pack.png",
 	
 	"filter": {
@@ -11,11 +13,13 @@
 			"end": 3000
 		},
 		"country": "JP",
-		"tag": "None",
-		"driveType": "None",
-		"tyreType": "None",
-		"fuelType": "None",
-		"bodyStyle": "None"
+		"tags": "None",
+        "driveType": "None",
+        "tyreType": "None",
+		"enginePos": "None",
+        "fuelType": "None",
+        "bodyStyle": "None",
+		"seatCount": "None"
 	},
 
 	"packSequence": [

@@ -54,7 +54,7 @@ module.exports = {
                 .setColor("#fc0303")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                 .setTitle("Error, failed to reload command.")
-                .setDescription(`Something must have gone wrong. Please report this issue to the devs. \n\`${error}\``)
+                .setDescription(`Something must have gone wrong. Please report this issue to the devs. \n\`${error.stack}\``)
                 .setTimestamp();
             return message.channel.send(errorMessage);
         }

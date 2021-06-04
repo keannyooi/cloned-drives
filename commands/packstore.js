@@ -9,7 +9,10 @@
 
 const Discord = require("discord.js-light");
 const fs = require("fs");
-const packFiles = fs.readdirSync("./commands/packs").filter(file => file.endsWith('.json'));
+const packFiles = fs.readdirSync("./commands/packs").filter(file => {
+	let hmm = require(`./packs/${file}`);
+	return file.endsWith(".json") && hmm["limited"] === false;
+});
 
 module.exports = {
     name: "packstore",

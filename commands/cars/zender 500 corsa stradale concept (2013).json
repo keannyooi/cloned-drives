@@ -1,0 +1,54 @@
+{
+    "rq": 43,
+    "make": ["Zender", "Abarth", "Fiat"],
+    "model": "500 Corsa Stradale Concept",
+    "modelYear": 2013,
+    "country": "IT",
+    "topSpeed": 144,
+    "0to60": 6.2,
+    "handling": 78,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer", "Hot Hatch", "Tuner", "Concept"],
+    "isPrize": false,
+
+    "weight": 1055,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 61.39,
+    "ola": 74.19,
+    "description": "Aggressive looking bodykit, 18-inch alloys, and an additional 77 hp. Card by havvy.",
+
+    "card": "https://cdn.discordapp.com/attachments/812189395649560607/838849349713788958/Zender500CorsaStradaleConcept.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/840559864593776651/e_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/840559870901092392/e_111.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/840559871795658772/e_222.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/840559889595236352/e_332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/840559885116243978/e_323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/840559879696416768/e_233.png",
+
+    "333TopSpeed": 148,
+    "3330to60": 5.9,
+    "333Handling": 81,
+
+    "666TopSpeed": 151,
+    "6660to60": 5.6,
+    "666Handling": 83,
+
+    "996TopSpeed": 155,
+    "9960to60": 5.3,
+    "996Handling": 83,
+
+    "969TopSpeed": 155,
+    "9690to60": 5.6,
+    "969Handling": 87,
+
+    "699TopSpeed": 151,
+    "6990to60": 5.3,
+    "699Handling": 87
+}

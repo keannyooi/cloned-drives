@@ -17,26 +17,11 @@ module.exports = {
 	isExternal: false,
     adminOnly: false,
 	cooldown: 10,
-    description: "I wonder what this does...",
+    description: "Shows the current bot and API latency.",
     async execute(message) {
         message.channel.send(`bruh y u ping me
 anyway latency = \`${Date.now() - message.createdTimestamp}ms\` while api latency = \`${Math.round(message.client.ws.ping)}ms\`
 		`);
-
-        const handPlacement = [{x: 287, y: 964}, {x: 658, y: 964}, {x: 1029, y: 964}, {x: 1400, y: 964}, {x: 1771, y: 964}];
-        const canvas = Canvas.createCanvas(2135, 1200);
-        const ctx = canvas.getContext("2d");
-
-        //const background = await Canvas.loadImage("https://cdn.discordapp.com/attachments/716917404868935691/723837799991869470/stage_10_hollywood_usa.jpg");
-        const testHud = await Canvas.loadImage("https://cdn.discordapp.com/attachments/718097267621363744/734411117274857503/Arteonstock.png");
-        //ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
-
-        for (i = 0; i < 5; i++) {
-            ctx.drawImage(testHud, handPlacement[i].x, handPlacement[i].y, 334, 203);
-        }
-
-        const attachment = new Discord.MessageAttachment(canvas.toBuffer(), 'test.png');
-        message.channel.send(attachment);
 		message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
     }
 }

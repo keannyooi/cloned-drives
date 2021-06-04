@@ -1,0 +1,54 @@
+{
+    "rq": 85,
+    "make": "Koenigsegg",
+    "model": "CCR",
+    "modelYear": 2004,
+    "country": "SE",
+    "topSpeed": 242,
+    "0to60": 3.6,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Rest of The World", "Supercar", "Innovative"],
+    "isPrize": false,
+
+    "weight": 1180,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 105.08,
+    "ola": 83.33,
+    "description": "Card by Aqo.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/844603380508131378/4.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/844603431947993128/CCR.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/844603438625325096/CCR333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/844603445654716476/CCR666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/844603469566181376/CCR996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/844603462254985226/CCR969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/844603453758242826/CCR699.png",
+
+    "333TopSpeed": 244,
+    "3330to60": 3.4,
+    "333Handling": 94,
+
+    "666TopSpeed": 246,
+    "6660to60": 3.2,
+    "666Handling": 97,
+
+    "996TopSpeed": 248,
+    "9960to60": 3.1,
+    "996Handling": 97,
+
+    "969TopSpeed": 248,
+    "9690to60": 3.2,
+    "969Handling": 101,
+
+    "699TopSpeed": 246,
+    "6990to60": 3.1,
+    "699Handling": 101
+}

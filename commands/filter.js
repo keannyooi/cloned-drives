@@ -25,12 +25,60 @@ module.exports = {
 		var infoScreen, searchResults;
 
 		if (!args[1] && criteria !== "view") {
+			let desc = `In fact, this criteria doesn't exist. Here is a list of available filter criterias. 
+                        \`make\` - Filter by make/manufacturer. 
+						\`year\` - Filter by model year range.
+						\`country\` - Filter by country origin. 
+                        \`drivetype\` - Filter by drive type. 
+						\`tyretype\` - Filter by tyre type.
+						\`gc\` - Filter by ground clearance.
+						\`bodystyle\` - Filter by body type.  
+						\`seatcount\` - Filter by seat count.
+						\`enginepos\` - Filter by engine position.
+						\`fueltype\` - Filter by fuel type.
+						\`isprize\` - Filter prize cars.
+						\`isstock\` - Filter stock cars.
+						\`isupgraded\` - Filter upgraded cars.
+						\`ismaxed\` - Filter maxed cars.
+						\`isowned\` - Filter cars that you own.
+						\`tags\` - Filter by tag.`
+			switch (criteria) {
+				case "make":
+				case "Country":
+				case "tags":
+				case "tyreType":
+				case "driveType":
+				case "bodyStyle":
+				case "enginePos":
+				case "fuelType":
+				case "gc":
+					desc = "For this criteria, key in **exactly** what you want to filter.";
+					break;
+				case "modelYear":
+				case "seatCount":
+				case "rq":
+					desc = "For this criteria, key in the bottom end of the range, then the upper end. If you only want to filter the exact number, only type in said number.";
+					break;
+				case "isPrize":
+				case "isStock":
+				case "isUpgraded":
+				case "isMaxed":
+				case "isOwned":
+					desc = "For this criteria, key in either `true` or `false`.";
+					break;
+				case "remove":
+				case "disable":
+					desc = "For this criteria, key in the criteria that you want to remove, then the arguments if necessary. If you want to reset all filters, just type `all`.";
+					break;
+				default:
+					break;
+			}
 			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 			let errorMessage = new Discord.MessageEmbed()
 				.setColor("#fc0303")
 				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 				.setTitle("Error, arguments provided insufficient.")
-				.setDescription("What are you trying to filter?")
+				.setDescription(desc)
 				.setTimestamp();
 			return message.channel.send(errorMessage);
 		}

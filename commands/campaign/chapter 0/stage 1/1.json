@@ -2,47 +2,13 @@
     "raceName": "Chapter 0: The Learning Curve (Stage 1)",
     "description": "placeholder text",
 
-    "reqs": {
+    "requirements": {
         "rq": 300
     },
 
-    "deck": [
-        {
-            "carFile": "",
-            "gearingUpgrade": 0,
-            "engineUpgrade": 0,
-            "chassisUpgrade": 0,
-            "trackset": ""
-        },
-        {
-            "carFile": "",
-            "gearingUpgrade": 0,
-            "engineUpgrade": 0,
-            "chassisUpgrade": 0,
-            "trackset": ""
-        },
-        {
-            "carFile": "",
-            "gearingUpgrade": 0,
-            "engineUpgrade": 0,
-            "chassisUpgrade": 0,
-            "trackset": ""
-        },
-        {
-            "carFile": "",
-            "gearingUpgrade": 0,
-            "engineUpgrade": 0,
-            "chassisUpgrade": 0,
-            "trackset": ""
-        },
-        {
-            "carFile": "",
-            "gearingUpgrade": 0,
-            "engineUpgrade": 0,
-            "chassisUpgrade": 0,
-            "trackset": ""
-        }
-    ],
+	"hand": [],
+	"tunes": [],
+    "tracksets": [],
 
     "primaryRewards": {
         "money": 1000,

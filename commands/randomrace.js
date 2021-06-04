@@ -80,10 +80,8 @@ module.exports = {
 		}
 
 		const track = require(`./tracksets/${trackset}`);
-		const playerCar = createCar(player);
-		const opponentCar = createCar(opponent);
-		const playerList = createList(player);
-		const opponentList = createList(opponent);
+		const [playerCar, playerList] = createCar(player);
+		const [opponentCar, opponentList] = createCar(opponent);
 		const intermission = new Discord.MessageEmbed()
 			.setColor("#34aeeb")
 			.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -219,71 +217,90 @@ module.exports = {
 				});
 		});
 
-		function createList(currentCar) {
-			const car = require(`./cars/${currentCar.carFile}`);
+		function createCar(currentCar) {
+            const car = require(`./cars/${currentCar.carFile}`);
+			const rarity = rarityCheck(car);
 			let make = car["make"];
 			if (typeof make === "object") {
 				make = car["make"][0];
 			}
-			const rarity = rarityCheck(car);
-			var carSpecs = `(${rarity} ${car["rq"]}) ${make} ${car["model"]} (${car["modelYear"]}) [${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}]\n`;
 
-			if (currentCar.gearingUpgrade > 0) {
-				carSpecs += `Top Speed: ${car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}TopSpeed`]}MPH\n`;
-				carSpecs += `0-60MPH: ${car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}0to60`]} sec\n`;
-				carSpecs += `Handling: ${car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}Handling`]}\n`;
+            const carModule = {
+				rq: car["rq"],
+                topSpeed: car["topSpeed"],
+                accel: car["0to60"],
+                handling: car["handling"],
+                driveType: car["driveType"],
+                tyreType: car["tyreType"],
+                weight: car["weight"],
+                gc: car["gc"],
+                tcs: car["tcs"],
+                abs: car["abs"],
+                mra: car["mra"],
+                ola: car["ola"],
+                racehud: car[`racehud${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}`]
+            };
+
+            if (currentCar.gearingUpgrade > 0) {
+                carModule.topSpeed = car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}TopSpeed`];
+                carModule.accel = car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}0to60`];
+                carModule.handling = car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}Handling`];
+            }
+
+			let carSpecs = `(${rarity} ${car["rq"]}) ${make} ${car["model"]} (${car["modelYear"]}) [${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}]\n`;
+			carSpecs += `Top Speed: ${carModule.topSpeed}MPH\n`;
+			if (carModule.topSpeed < 60) {
+				carModule.accel = 99.9;
+				carSpecs += "0-60MPH: N/A\n";
 			}
 			else {
-				carSpecs += `Top Speed: ${car["topSpeed"]}MPH\n`;
-				carSpecs += `0-60MPH: ${car["0to60"]} sec\n`;
-				carSpecs += `Handling: ${car["handling"]}\n`;
+				carSpecs += `0-60MPH: ${carModule.accel} sec\n`;
 			}
-			carSpecs += `Drive Type: ${car["driveType"]}\n`;
-			carSpecs += `${car["tyreType"]} Tyres\n`;
-			carSpecs += `Weight: ${car["weight"]}kg\n`;
-			carSpecs += `Ground Clearance: ${car["gc"]}\n`;
-			carSpecs += `TCS: ${car["tcs"]}, ABS: ${car["abs"]}\n`;
-			carSpecs += `MRA: ${car["mra"]}\n`;
-			carSpecs += `OLA: ${car["ola"]}\n`;
+            carSpecs += `Handling: ${carModule.handling}\n`;
+			carSpecs += `Drive Type: ${carModule.driveType}\n`;
+            carSpecs += `${carModule.tyreType} Tyres\n`;
+            carSpecs += `Weight: ${carModule.weight}kg\n`;
+            carSpecs += `Ground Clearance: ${carModule.gc}\n`;
+            carSpecs += `TCS: ${carModule.tcs}, ABS: ${carModule.abs}\n`;
 
-			return carSpecs;
-		}
-
-		function createCar(currentCar) {
-			const car = require(`./cars/${currentCar.carFile}`);
-			const carModule = {
-				rq: car["rq"],
-				topSpeed: car["topSpeed"],
-				accel: car["0to60"],
-				handling: car["handling"],
-				driveType: car["driveType"],
-				tyreType: car["tyreType"],
-				weight: car["weight"],
-				gc: car["gc"],
-				tcs: car["tcs"],
-				abs: car["abs"],
-				mra: car["mra"],
-				ola: car["ola"],
-				racehud: car[`racehud${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}`]
-			};
-
-			if (currentCar.gearingUpgrade > 0) {
-				carModule.topSpeed = car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}TopSpeed`];
-				carModule.accel = car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}0to60`];
-				carModule.handling = car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}Handling`];
-			}
 			if (carModule.topSpeed < 100) {
 				carModule.mra = 0;
+				carSpecs += "MRA: N/A\n";
+			}
+			else {
+				carSpecs += `MRA: ${carModule.mra}\n`;
 			}
 			if (carModule.topSpeed < 30) {
 				carModule.ola = 0;
+				carSpecs += "OLA: N/A\n";
 			}
-			return carModule;
-		}
+			else {
+				carSpecs += `OLA: ${carModule.ola}\n`;
+			}
+
+            return [carModule, carSpecs];
+        }
 
 		async function randomize() {
 			trackset = tracksets[Math.floor(Math.random() * tracksets.length)];
+			let offroad = Math.floor(Math.random() * 2);
+			console.log(offroad);
+			switch (offroad) {
+				case 0:
+					while ((trackset.includes("(muddy)") || trackset.includes("(dirt)") || trackset.includes("(gravel)") || trackset.includes("(rainy gravel)") || trackset.includes("(snowy)") || trackset.includes("(ice)")) === false) { //off-road
+						trackset = tracksets[Math.floor(Math.random() * tracksets.length)];
+					}
+					break;
+				case 1:
+					while (trackset.includes("(muddy)") || trackset.includes("(dirt)") || trackset.includes("(gravel)") || trackset.includes("(rainy gravel)") || trackset.includes("(snowy)") || trackset.includes("(ice)")) { //on-road
+						trackset = tracksets[Math.floor(Math.random() * tracksets.length)];
+					}
+					break;
+				default:
+					break;
+			}
 			playerData.rrTrackset = trackset;
+			
 			let opponentCarFile = carFiles[Math.floor(Math.random() * carFiles.length)];
 		    let hmm = require(`./cars/${opponentCarFile}`);
 			let criteria = {};

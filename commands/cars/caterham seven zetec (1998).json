@@ -9,7 +9,7 @@
     "handling": 79,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [],
+    "tags": ["Track Day"],
     "isPrize": false,
 
     "weight": 605,
@@ -24,7 +24,7 @@
     "ola": 65.52,
     "description": "Card by DodgeDemon.",
 
-    "card": "https://cdn.discordapp.com/attachments/819200156623962122/827066242280063006/cate_000.jpg",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826468856712527882/zetecers.png",
     "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/827066242280063006/cate_000.jpg",
     "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/827066249153347594/cate_333.jpg",
     "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/827066257362649109/cate_666.jpg",
@@ -40,15 +40,15 @@
     "6660to60": 5.2,
     "666Handling": 84,
 
-    "969TopSpeed": 129,
-    "9690to60": 4.9,
+	"996TopSpeed": 133,
+    "9960to60": 4.9,
+    "996Handling": 84,
+
+    "969TopSpeed": 133,
+    "9690to60": 5.2,
     "969Handling": 88,
 
-    "699TopSpeed": 133,
-    "6990to60": 5.2,
-    "699Handling": 88,
-
-    "996TopSpeed": 133,
-    "996to60": 4.9,
-    "996Handling": 84
+    "699TopSpeed": 129,
+    "6990to60": 4.9,
+    "699Handling": 88
 }

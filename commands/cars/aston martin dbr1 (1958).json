@@ -1,5 +1,5 @@
 {
-    "rq": 48,
+    "rq": 58,
     "make": "Aston Martin",
     "model": "DBR1",
     "modelYear": 1958,
@@ -9,7 +9,7 @@
     "handling": 70,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["MotorSport"],
+    "tags": ["Motorsport", "Ultra Expensive"],
     "isPrize": true,
 
     "weight": 801,
@@ -24,7 +24,7 @@
     "ola": 80.95,
     "description": "The only Aston Martin to win at Le Mans. Card by Bnuuy.",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/793622384430809088/astondbr1.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/821061012739457074/DBR1.png",
     "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821061591411720272/dbr1.png",
     "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821061597119905892/dbr1333.png",
     "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821061603767877632/dbr1666.png",

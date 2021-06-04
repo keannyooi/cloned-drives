@@ -1,0 +1,54 @@
+{
+    "rq": 60,
+    "make": "Infiniti",
+    "model": "FX35 AWD",
+    "modelYear": 2008,
+    "country": "JP",
+    "topSpeed": 140,
+    "0to60": 6.1,
+    "handling": 74,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1947,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 63.54,
+    "ola": 68.85,
+    "description": "We were on the Verge of greatness, we were this close. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819590205933355008/NewFX35.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819590245041045564/FX35.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819590251952734238/FX35333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819590261662548008/FX35666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819590299428061224/FX35996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819590287164309544/FX35969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819590275634561034/FX35699.png",
+
+    "333TopSpeed": 144,
+    "3330to60": 5.8,
+    "333Handling": 76,
+
+    "666TopSpeed": 147,
+    "6660to60": 5.5,
+    "666Handling": 79,
+
+    "996TopSpeed": 151,
+    "9960to60": 5.2,
+    "996Handling": 79,
+
+    "969TopSpeed": 151,
+    "9690to60": 5.5,
+    "969Handling": 82,
+
+    "699TopSpeed": 147,
+    "6990to60": 5.2,
+    "699Handling": 82
+}

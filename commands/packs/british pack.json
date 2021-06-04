@@ -2,6 +2,8 @@
 	"packName": "British Pack",
 	"description": "A pack of 5 British cars, known for their appearances in OG Top Gear and their drop in retail value because of Brexit.",
 	"price": 60000,
+	"limited": false,
+	"repetition": 1,
 	"pack": "https://cdn.discordapp.com/attachments/716917404868935691/794152297717301248/british_pack.png",
 	
 	"filter": {
@@ -11,11 +13,13 @@
 			"end": 3000
 		},
 		"country": "GB",
-		"tag": "None",
-		"driveType": "None",
-		"tyreType": "None",
-		"fuelType": "None",
-		"bodyStyle": "None"
+		"tags": "None",
+        "driveType": "None",
+        "tyreType": "None",
+		"enginePos": "None",
+        "fuelType": "None",
+        "bodyStyle": "None",
+		"seatCount": "None"
 	},
 
 	"packSequence": [

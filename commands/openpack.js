@@ -13,7 +13,7 @@ const packFiles = fs.readdirSync("./commands/packs").filter(file => file.endsWit
 
 module.exports = {
     name: "openpack",
-	aliases: ["buypack"],
+	aliases: ["buypack", "op"],
     usage: "<pack name goes here>",
     args: 1,
 	isExternal: true,
@@ -24,7 +24,7 @@ module.exports = {
 		const openPackCommand = require("./sharedfiles/openpack.js");
 		const db = message.client.db;
 		const playerData = await db.get(`acc${message.author.id}`);
-		const money = playerData.money
+		const money = playerData.money;
 		const moneyEmoji = message.client.emojis.cache.get("726017235826770021");
 		const filter = response => {
             return response.author.id === message.author.id;
@@ -32,7 +32,8 @@ module.exports = {
 
     	let packName = args.map(i => i.toLowerCase());
         const searchResults = packFiles.filter(function (pack) {
-            return packName.every(part => pack.includes(part));
+			let checking = require(`./packs/${pack}`)
+            return packName.every(part => pack.includes(part)) && checking["limited"] === false;
         });
 
         if (searchResults.length > 1) {

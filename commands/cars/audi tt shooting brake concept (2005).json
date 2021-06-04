@@ -1,0 +1,54 @@
+{
+    "rq": 52,
+    "make": "Audi",
+    "model": "TT Shooting Brake Concept",
+    "modelYear": 2005,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 5.8,
+    "handling": 81,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Concept", "Unique"],
+    "isPrize": false,
+
+    "weight": 1587,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Shooting Brake",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 69.05,
+    "ola": 72.41,
+    "description": "The idea of a more versatile Audi TT is intriguing: combining the sportiness of the standard coupe with the extra practicality of a wagon. Card by Lemon",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/841576135144767498/audi_tt_shooting_brake_concept_for_cd.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/841576275827097640/tt_sb_racehud_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/841576316235284520/tt_sb_racehud_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/841576337792827432/tt_sb_racehud_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/841576419913760768/tt_sb_racehud_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/841576394491166730/tt_sb_racehud_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/841576366575058964/tt_sb_racehud_699.png",
+
+    "333TopSpeed": 158,
+    "3330to60": 5.5,
+    "333Handling": 84,
+
+    "666TopSpeed": 162,
+    "6660to60": 5.2,
+    "666Handling": 86,
+
+    "996TopSpeed": 165,
+    "9960to60": 4.9,
+    "996Handling": 86,
+
+    "969TopSpeed": 165,
+    "9690to60": 5.2,
+    "969Handling": 90,
+
+    "699TopSpeed": 162,
+    "6990to60": 4.9,
+    "699Handling": 90
+}

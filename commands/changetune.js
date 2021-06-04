@@ -310,11 +310,11 @@ module.exports = {
                 }
 			}
 			for (i = 0; i < playerData.decks.length; i++) {
-				let edit = playerData.decks[i].hand.findIndex(car => car.carFile === currentCar.carFile && `${car.gearingUpgrade}${car.engineUpgrade}${car.chassisUpgrade}` === origUpgrade);
-				if (edit >= 0) {
-					playerData.decks[i].hand[edit].gearingUpgrade = parseInt(upgrade[0]);
-					playerData.decks[i].hand[edit].engineUpgrade = parseInt(upgrade[1]);
-					playerData.decks[i].hand[edit].chassisUpgrade = parseInt(upgrade[2]);
+				for (x = 0; x < 5; x++) {
+					if (playerData.decks[i].hand[x] === currentCar.carFile && playerData.decks[i].tunes[x] === origUpgrade) {
+						playerData.decks[i].tunes[x] = upgrade;
+						break;
+					}
 				}
 			}
 			await db.set(`acc${user.id}`, playerData);

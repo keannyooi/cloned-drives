@@ -1,0 +1,54 @@
+{
+    "rq": 72,
+    "make": "McLaren",
+    "model": "F1 Ameritech",
+    "modelYear": 1993,
+    "country": "GB",
+    "topSpeed": 218,
+    "0to60": 3.4,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Ultra Expensive", "The Royal Collection"],
+    "isPrize": false,
+
+    "weight": 1288,
+    "gc": "Low",
+    "seatCount": 3,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 85.08,
+    "ola": 101.63,
+    "description": "The best road car ever made, except it was ruined by some americans. Card by Exist",
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/828269101839417355/CD_McLaren_F1_Ameritech.png?width=1410&height=878",
+    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/828269226430300190/CD_McLaren_F1_Ameritech_000.png?width=1410&height=878",
+    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/828269243313160192/CD_McLaren_F1_Ameritech_333.png?width=1410&height=878",
+    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/828269247297355826/CD_McLaren_F1_Ameritech_666.png?width=1410&height=878",
+    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/828269267190415400/CD_McLaren_F1_Ameritech_996.png?width=1410&height=878",
+    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/828269264150593576/CD_McLaren_F1_Ameritech_969.png?width=1410&height=878",
+    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/828269256126627880/CD_McLaren_F1_Ameritech_699.png?width=1410&height=878",
+
+    "333TopSpeed": 220,
+    "3330to60": 3.2,
+    "333Handling": 80,
+
+    "666TopSpeed": 223,
+    "6660to60": 3.1,
+    "666Handling": 82,
+
+    "996TopSpeed": 225,
+    "9960to60": 2.9,
+    "996Handling": 82,
+
+    "969TopSpeed": 225,
+    "9690to60": 3.1,
+    "969Handling": 85,
+
+    "699TopSpeed": 223,
+    "6990to60": 2.9,
+    "699Handling": 85
+}

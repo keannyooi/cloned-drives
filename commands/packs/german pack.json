@@ -2,6 +2,8 @@
 	"packName": "German Pack",
 	"description": "A pack of 5 German cars, known for their advancements in technology and engineering but not for their reliability.",
 	"price": 60000,
+	"limited": false,
+	"repetition": 1,
 	"pack": "https://cdn.discordapp.com/attachments/716917404868935691/718369005814939737/german_pack.png",
 	
 	"filter": {
@@ -11,11 +13,13 @@
 			"end": 3000
 		},
 		"country": "DE",
-		"tag": "None",
-		"driveType": "None",
-		"tyreType": "None",
-		"fuelType": "None",
-		"bodyStyle": "None"
+		"tags": "None",
+        "driveType": "None",
+        "tyreType": "None",
+		"enginePos": "None",
+        "fuelType": "None",
+        "bodyStyle": "None",
+		"seatCount": "None"
 	},
 
 	"packSequence": [

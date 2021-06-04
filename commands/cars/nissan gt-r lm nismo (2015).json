@@ -1,0 +1,54 @@
+{
+    "rq": 96,
+    "make": "Nissan",
+    "model": "GT-R LM Nismo",
+    "modelYear": 2015,
+    "country": "JP",
+    "topSpeed": 227,
+    "0to60": 2.7,
+    "handling": 98,
+    "driveType": "FWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport"],
+    "isPrize": true,
+
+    "weight": 880,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 117.39,
+    "ola": 103.51,
+    "description": "the best FWD car ever. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/844556579574382622/LemonNismothingy.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/844556967874658323/LMNISMOFWD.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/844556976964894720/LMNISMOFWD333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/844556984845074432/LMNISMOFWD666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/844557009835786241/LMNISMOFWD996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/844557002545037350/LMNISMOFWD969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/844556994391310346/LMNISMOFWD699.png",
+
+    "333TopSpeed": 229,
+    "3330to60": 2.6,
+    "333Handling": 101,
+
+    "666TopSpeed": 232,
+    "6660to60": 2.4,
+    "666Handling": 104,
+
+    "996TopSpeed": 234,
+    "9960to60": 2.3,
+    "996Handling": 104,
+
+    "969TopSpeed": 234,
+    "9690to60": 2.4,
+    "969Handling": 109,
+
+    "699TopSpeed": 232,
+    "6990to60": 2.3,
+    "699Handling": 109
+}

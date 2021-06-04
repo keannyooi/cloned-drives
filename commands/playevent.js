@@ -8,19 +8,23 @@
 */
 
 const Discord = require("discord.js-light");
+const { DateTime, Interval } = require("luxon");
 
 module.exports = {
 	name: "playevent",
 	aliases: ["pe"],
 	usage: "<event name>",
 	args: 1,
-	isExternal: false,
+	isExternal: true,
 	adminOnly: false,
 	cooldown: 10,
 	description: "Participates in an event by doing a race.",
 	async execute(message, args) {
 		const db = message.client.db;
-		const filter = (reaction, user) => {
+		const filter = response => {
+            return response.author.id === message.author.id;
+        };
+		const emojiFilter = (reaction, user) => {
 			return (reaction.emoji.name === "✅" || reaction.emoji.name === "❎") && user.id === message.author.id;
 		};
 		const raceCommand = require("./sharedfiles/race.js");
@@ -39,112 +43,199 @@ module.exports = {
 		}
 
 		let eventName = args.map(i => i.toLowerCase());
-		const events = await db.get("events");
-		const event = events.find(event => {
-			return event.name.toLowerCase().includes(eventName);
+		let events = await db.get("events");
+		const searchResults = Object.values(events).filter(function(event) {
+			if (typeof event === "object") {
+				return eventName.every(part => event.name.toLowerCase().includes(part));
+			}
+			else {
+				return false;
+			}
 		});
 
-        if (!event) {
-			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-            const errorMessage = new Discord.MessageEmbed()
-                .setColor("#fc0303")
-                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle("Error, 404 event not found.")
-                .setDescription("It looks like this event doesn't exist. Try referring to the event list.")
-                .setTimestamp();
-            return message.channel.send(errorMessage);
-        }
-		
-		let round = event.players[message.author.id];
-		if (!round) {
-			round = 1;
+		if (searchResults.length > 1) {
+			let eventList = "";
+			for (i = 1; i <= searchResults.length; i++) {
+				eventList += `${i} - ${searchResults[i - 1].name} \n`;
+			}
+
+			const infoScreen = new Discord.MessageEmbed()
+				.setColor("#34aeeb")
+				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+				.setTitle("Multiple events found, please type one of the following.")
+				.setDescription(eventList)
+				.setTimestamp();
+
+			message.channel.send(infoScreen).then(currentMessage => {
+				message.channel.awaitMessages(filter, {
+					max: 1,
+					time: 30000,
+					errors: ["time"]
+				})
+					.then(collected => {
+						collected.first().delete();
+						if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
+							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+							const errorMessage = new Discord.MessageEmbed()
+								.setColor("#fc0303")
+								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+								.setTitle("Error, invalid integer provided.")
+								.setDescription("It looks like your response was either not a number or not part of the selection.")
+								.setTimestamp();
+							return currentMessage.edit(errorMessage);
+						}
+						else {
+							playEvent(searchResults[parseInt(collected.first()) - 1], currentMessage);
+						}
+					})
+					.catch(() => {
+						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+						const cancelMessage = new Discord.MessageEmbed()
+							.setColor("#34aeeb")
+							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+							.setTitle("Action cancelled automatically.")
+							.setTimestamp();
+						return currentMessage.edit(cancelMessage);
+					});
+			});
 		}
-		else if (round > event.roster.length) {
+		else if (searchResults.length > 0) {
+			playEvent(searchResults[0]);
+		}
+		else {
 			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 			const errorMessage = new Discord.MessageEmbed()
-                .setColor("#34aeeb")
-                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle("You have already completed this event.")
-                .setDescription("Try out the other events, if available.")
-                .setTimestamp();
-            return message.channel.send(errorMessage);
+				.setColor("#fc0303")
+				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+				.setTitle("Error, 404 event not found.")
+				.setDescription("Try checking again using `cd-events`.")
+				.setTimestamp();
+			return message.channel.send(errorMessage);
 		}
 
-		let test = require(`./cars/${player.carFile}`), passed = true;
-		for (const [key, value] of Object.entries(event.roster[round - 1].requirements)) {
-			console.log(key, value);
-            switch (typeof value) {
-                case "object":
-					console.log(test[`${key}`]);
-					if (test[`${key}`] < value.start || test[`${key}`] > value.end) {
-						passed = false;
-					}
-                    break;
-                case "string":
-                case "boolean":
-					if (Array.isArray(test[`${key}`])) {
-						if (test[`${key}`].find(e => e.toLowerCase() === value) === undefined) {
-							passed = false;
-						}
-					}
-					else {
-						if (key === "car") {
-							if (value !== player.carFile) {
-								passed = false;
+        async function playEvent(event, currentMessage) {
+			console.log(event);
+			let round = event.players[`acc${message.author.id}`];
+			if (!round) {
+				round = 1;
+			}
+			else if (round > event.roster.length) {
+				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+				const errorMessage = new Discord.MessageEmbed()
+					.setColor("#34aeeb")
+					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+					.setTitle("You have already completed this event.")
+					.setDescription("Try out the other events, if available.")
+					.setTimestamp();
+				if (currentMessage && message.channel.type === "text") {
+					return currentMessage.edit(errorMessage);
+				}
+				else {
+					return message.channel.send(errorMessage);
+				}
+			}
+
+			let test = require(`./cars/${player.carFile}`), passed = true;
+			for (const [key, value] of Object.entries(event.roster[round - 1].requirements)) {
+				console.log(key, value);
+				switch (typeof value) {
+					case "object":
+						if (Array.isArray(value)) {
+							if (key === "search") {
+								let make = test["make"];
+								if (typeof make === "object") {
+									make = test["make"][0];
+								}
+								let name = `${make} ${test["model"]}`;
+
+								if (value.some(h => name.toLowerCase().includes(h)) === false) {
+									passed = false;
+								}
+							}
+							else if (Array.isArray(test[`${key}`])) {
+								if (value.some(h => test[`${key}`].map(i => i.toLowerCase()).includes(h)) === false) {
+									passed = false;
+								}
+							}
+							else {
+								if (value.some(h => test[`${key}`].toLowerCase() === h) === false) {
+									passed = false;
+								}	
 							}
 						}
 						else {
-							if (value !== test[`${key}`].toLowerCase()) {
+							if (test[`${key}`] < value.start || test[`${key}`] > value.end) {
 								passed = false;
 							}
 						}
-					}
-                    break;
-                default:
-                    break;
-            }
-        }
-		console.log(passed);
-
-		if (passed === false) {
-			let make = test["make"];
-			if (typeof make === "object") {
-				make = test["make"][0];
+						break;
+					case "boolean":
+						if (value !== test[`${key}`]) {
+							passed = false;
+						}
+						break;
+					case "string":
+						if (value !== player.carFile) {
+							passed = false;
+						}
+						break;
+					default:
+						break;
+				}
 			}
-			let rarity = rarityCheck(test);
-			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-			const errorMessage = new Discord.MessageEmbed()
-                .setColor("#fc0303")
-                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle("Error, it looks like your hand does not neet the event round's requirements.")
-                .setDescription(`Try referring to the event list. \nRound ${round} \nCar: (${rarity} ${test["rq"]}) ${make} ${test["model"]} (${test["modelYear"]}) [${player.gearingUpgrade}${player.engineUpgrade}${player.chassisUpgrade}]`)
-                .setTimestamp();
-            return message.channel.send(errorMessage);
-		}
 
-		if (event.isActive || message.member.roles.cache.has("802043346951340064")) {
-			const track = require(`./tracksets/${event.roster[round - 1].trackset}`);
-			const opponent = { carFile: event.roster[round - 1].car, gearingUpgrade: event.roster[round - 1].gearingUpgrade, engineUpgrade: event.roster[round - 1].engineUpgrade, chassisUpgrade: event.roster[round - 1].chassisUpgrade };
-			const playerCar = createCar(player);
-			const opponentCar = createCar(opponent);
-			const playerList = createList(player);
-			const opponentList = createList(opponent);
-			const intermission = new Discord.MessageEmbed()
-				.setColor("#34aeeb")
-				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-				.setTitle("Ready to Play? (React with ✅ to proceed or ❎ to cancel.)")
-				.setDescription(`Trackset: ${track["trackName"]}`)
-				.addFields(
-					{ name: "Your Hand", value: playerList, inline: true },
-					{ name: "Opponent's Hand", value: opponentList, inline: true }
-				)
-				.setFooter(`Event: ${event.name} (Round ${round})`)
-				.setTimestamp();
+			if (passed === false) {
+				let make = test["make"];
+				if (typeof make === "object") {
+					make = test["make"][0];
+				}
+				let rarity = rarityCheck(test); 
 
-			message.channel.send(intermission).then(reactionMessage => {
+				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+				const errorMessage = new Discord.MessageEmbed()
+					.setColor("#fc0303")
+					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+					.setTitle("Error, it looks like your hand does not meet the event round's requirements.")
+					.setDescription(`Try referring to the event list. 
+					Round ${round}
+					Current Hand: (${rarity} ${test["rq"]}) ${make} ${test["model"]} (${test["modelYear"]}) [${player.gearingUpgrade}${player.engineUpgrade}${player.chassisUpgrade}]`)
+					.setTimestamp();
+				if (currentMessage && message.channel.type === "text") {
+					return currentMessage.edit(errorMessage);
+				}
+				else {
+					return message.channel.send(errorMessage);
+				}
+			}
+
+			if (event.isActive || message.member.roles.cache.has("802043346951340064")) {
+				const track = require(`./tracksets/${event.roster[round - 1].trackset}`);
+				const opponent = { carFile: event.roster[round - 1].car, gearingUpgrade: event.roster[round - 1].gearingUpgrade, engineUpgrade: event.roster[round - 1].engineUpgrade, chassisUpgrade: event.roster[round - 1].chassisUpgrade };
+				const [playerCar, playerList] = createCar(player);
+				const [opponentCar, opponentList] = createCar(opponent);
+				const intermission = new Discord.MessageEmbed()
+					.setColor("#34aeeb")
+					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+					.setTitle("Ready to Play? (React with ✅ to proceed or ❎ to cancel.)")
+					.setDescription(`Trackset: ${track["trackName"]}`)
+					.addFields(
+						{ name: "Your Hand", value: playerList, inline: true },
+						{ name: "Opponent's Hand", value: opponentList, inline: true }
+					)
+					.setFooter(`Event: ${event.name} (Round ${round})`)
+					.setTimestamp();
+
+				let reactionMessage;
+				if (currentMessage && message.channel.type === "text") {
+					reactionMessage = await currentMessage.edit(intermission);
+				}
+				else {
+					reactionMessage = await message.channel.send(intermission);
+				}
+
 				reactionMessage.react("✅");
 				reactionMessage.react("❎");
-				reactionMessage.awaitReactions(filter, {
+				reactionMessage.awaitReactions(emojiFilter, {
 					max: 1,
 					time: 10000,
 					errors: ["time"]
@@ -153,14 +244,26 @@ module.exports = {
 						reactionMessage.reactions.removeAll();
 						switch (collected.first().emoji.name) {
 							case "✅":
+								if (event.isActive === true && event.timeLeft !== "unlimited" && Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(event.deadline)).invalid !== null) {
+									message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+									const end = new Discord.MessageEmbed()
+										.setColor("#34aeeb")
+										.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+										.setTitle("Looks like this event has ended.")
+										.setDescription("rip")
+										.setTimestamp();
+									return reactionMessage.edit(end);
+								}
+
 								const result = await raceCommand.race(message, playerCar, opponentCar, track);
 								const delay = ms => new Promise(res => setTimeout(res, ms));
 								await delay(2000);
 
 								if (result > 0) {
 									round++;
-									events[events.indexOf(event)].players[`${message.author.id}`] = round;
-									await db.set("events", events);	
+									event.players[`acc${message.author.id}`] = round;
+									await db.set(`events.evnt${event.id}`, event);
+									//await db.set(`events.evnt${event.id}.players.acc${message.author.id}`, round);	
 									for (let [key, value] of Object.entries(event.roster[round - 2].reward)) {
 										switch (key) {
 											case "money":
@@ -208,80 +311,81 @@ module.exports = {
 						intermission.setTitle("Action cancelled automatically.");
 						return reactionMessage.edit(intermission);
 					});
-			});
-		}
-		else {
-			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-			const errorMessage = new Discord.MessageEmbed()
-                .setColor("#fc0303")
-                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle("Erorr, you may not play this event yet.")
-                .setDescription("The event you are trying to play is not active currently. This is only bypassable if you are part of Community Management.")
-                .setTimestamp();
-            return message.channel.send(errorMessage);
+			}
+			else {
+				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+				const errorMessage = new Discord.MessageEmbed()
+					.setColor("#fc0303")
+					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+					.setTitle("Error, you may not play this event yet.")
+					.setDescription("The event you are trying to play is not active currently. This is only bypassable if you are part of Community Management.")
+					.setTimestamp();
+				return message.channel.send(errorMessage);
+			}
 		}
 
-		function createList(currentCar) {
-			const car = require(`./cars/${currentCar.carFile}`);
+		function createCar(currentCar) {
+            const car = require(`./cars/${currentCar.carFile}`);
+			const rarity = rarityCheck(car);
 			let make = car["make"];
 			if (typeof make === "object") {
 				make = car["make"][0];
 			}
-			const rarity = rarityCheck(car);
-			var carSpecs = `(${rarity} ${car["rq"]}) ${make} ${car["model"]} (${car["modelYear"]}) [${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}]\n`;
 
-			if (currentCar.gearingUpgrade > 0) {
-				carSpecs += `Top Speed: ${car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}TopSpeed`]}MPH\n`;
-				carSpecs += `0-60MPH: ${car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}0to60`]} sec\n`;
-				carSpecs += `Handling: ${car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}Handling`]}\n`;
+            const carModule = {
+                topSpeed: car["topSpeed"],
+                accel: car["0to60"],
+                handling: car["handling"],
+                driveType: car["driveType"],
+                tyreType: car["tyreType"],
+                weight: car["weight"],
+                gc: car["gc"],
+                tcs: car["tcs"],
+                abs: car["abs"],
+                mra: car["mra"],
+                ola: car["ola"],
+                racehud: car[`racehud${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}`]
+            };
+
+            if (currentCar.gearingUpgrade > 0) {
+                carModule.topSpeed = car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}TopSpeed`];
+                carModule.accel = car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}0to60`];
+                carModule.handling = car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}Handling`];
+            }
+
+			let carSpecs = `(${rarity} ${car["rq"]}) ${make} ${car["model"]} (${car["modelYear"]}) [${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}]\n`;
+			carSpecs += `Top Speed: ${carModule.topSpeed}MPH\n`;
+			if (carModule.topSpeed < 60) {
+				carModule.accel = 99.9;
+				carSpecs += "0-60MPH: N/A\n";
 			}
 			else {
-				carSpecs += `Top Speed: ${car["topSpeed"]}MPH\n`;
-				carSpecs += `0-60MPH: ${car["0to60"]} sec\n`;
-				carSpecs += `Handling: ${car["handling"]}\n`;
+				carSpecs += `0-60MPH: ${carModule.accel} sec\n`;
 			}
-			carSpecs += `Drive Type: ${car["driveType"]}\n`;
-			carSpecs += `${car["tyreType"]} Tyres\n`;
-			carSpecs += `Weight: ${car["weight"]}kg\n`;
-			carSpecs += `Ground Clearance: ${car["gc"]}\n`;
-			carSpecs += `TCS: ${car["tcs"]}, ABS: ${car["abs"]}\n`;
-			carSpecs += `MRA: ${car["mra"]}\n`;
-			carSpecs += `OLA: ${car["ola"]}\n`;
+            carSpecs += `Handling: ${carModule.handling}\n`;
+			carSpecs += `Drive Type: ${carModule.driveType}\n`;
+            carSpecs += `${carModule.tyreType} Tyres\n`;
+            carSpecs += `Weight: ${carModule.weight}kg\n`;
+            carSpecs += `Ground Clearance: ${carModule.gc}\n`;
+            carSpecs += `TCS: ${carModule.tcs}, ABS: ${carModule.abs}\n`;
 
-			return carSpecs;
-		}
-
-		function createCar(currentCar) {
-			const car = require(`./cars/${currentCar.carFile}`);
-			const carModule = {
-				rq: car["rq"],
-				topSpeed: car["topSpeed"],
-				accel: car["0to60"],
-				handling: car["handling"],
-				driveType: car["driveType"],
-				tyreType: car["tyreType"],
-				weight: car["weight"],
-				gc: car["gc"],
-				tcs: car["tcs"],
-				abs: car["abs"],
-				mra: car["mra"],
-				ola: car["ola"],
-				racehud: car[`racehud${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}`]
-			};
-
-			if (currentCar.gearingUpgrade > 0) {
-				carModule.topSpeed = car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}TopSpeed`];
-				carModule.accel = car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}0to60`];
-				carModule.handling = car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}Handling`];
-			}
 			if (carModule.topSpeed < 100) {
 				carModule.mra = 0;
+				carSpecs += "MRA: N/A\n";
+			}
+			else {
+				carSpecs += `MRA: ${carModule.mra}\n`;
 			}
 			if (carModule.topSpeed < 30) {
 				carModule.ola = 0;
+				carSpecs += "OLA: N/A\n";
 			}
-			return carModule;
-		}
+			else {
+				carSpecs += `OLA: ${carModule.ola}\n`;
+			}
+
+            return [carModule, carSpecs];
+        }
 
 		function rarityCheck(currentCar) {
 			if (currentCar["rq"] > 79) { //leggie

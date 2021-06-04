@@ -1,0 +1,54 @@
+{
+    "rq": 72,
+    "make": ["Mercedes-AMG", "Mercedes-Benz"],
+    "model": "SL 65",
+    "modelYear": 2004,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 4.0,
+    "handling": 83,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 2110,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 89.89,
+    "ola": 105.00,
+    "description": "A 604-horsepower slap in the face. Card by Havvy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/829021168446603284/AMGSL65.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/829021945403408424/sl65_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/829021953654259782/sl65_111.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/829021957697044550/sl65_222.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/829021970099470436/sl65_332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/829021967469248602/sl65_323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/829021963833442364/sl65_233.png",
+
+    "333TopSpeed": 158,
+    "3330to60": 3.8,
+    "333Handling": 86,
+
+    "666TopSpeed": 162,
+    "6660to60": 3.6,
+    "666Handling": 88,
+
+    "996TopSpeed": 165,
+    "9960to60": 3.4,
+    "996Handling": 88,
+
+    "969TopSpeed": 165,
+    "9690to60": 3.6,
+    "969Handling": 92,
+
+    "699TopSpeed": 162,
+    "6990to60": 3.4,
+    "699Handling": 92
+}

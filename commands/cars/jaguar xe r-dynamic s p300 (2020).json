@@ -1,0 +1,54 @@
+{
+    "rq": 56,
+    "make": "Jaguar",
+    "model": "XE R-Dynamic S P300",
+    "modelYear": 2020,
+    "country": "GB",
+    "topSpeed": 155,
+    "0to60": 5.6,
+    "handling": 85,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["The Royal Collection", "Super Sedan"],
+    "isPrize": false,
+
+    "weight": 1615,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 62.22,
+    "ola": 71.42,
+    "description": "Card by F4st.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/841654312845049866/Jaguar_XE_R-Dynamic_S_P300.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/841654470177587210/Stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/841654502645170196/333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/841654537441378324/666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/841654593170833408/996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/841654577791238154/969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/841654561021493278/699.png",
+
+    "333TopSpeed": 158,
+    "3330to60": 5.3,
+    "333Handling": 88,
+
+    "666TopSpeed": 162,
+    "6660to60": 5.0,
+    "666Handling": 91,
+
+    "996TopSpeed": 165,
+    "9960to60": 4.8,
+    "996Handling": 91,
+
+    "969TopSpeed": 165,
+    "9690to60": 5.0,
+    "969Handling": 94,
+
+    "699TopSpeed": 162,
+    "6990to60": 4.8,
+    "699Handling": 94
+}

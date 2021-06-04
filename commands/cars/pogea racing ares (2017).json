@@ -1,0 +1,54 @@
+{
+    "rq": 66,
+    "make": ["Pogea Racing","Abarth","Fiat"],
+    "model": "Ares",
+    "modelYear": 2017,
+    "country": "DE",
+    "topSpeed": 179,
+    "0to60": 4.5,
+    "handling": 83,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer", "Hot Hatch", "Tuner"],
+    "isPrize": false,
+
+    "weight": 1052,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 81.82,
+    "ola": 84.44,
+    "description": "The most insane Fiat 500 ever made features 404 hp and a pricetag of $76,300. Only 5 examples were ever made. Card by havvy. ",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/840556696086380564/PogeaRacingAres.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/840556747978833941/d_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/840556754240536626/d_111.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/840556759596269568/d_222.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/840556782074331186/d_332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/840556774763659274/d_323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/840556768798310460/d_233.png",
+
+    "333TopSpeed": 182,
+    "3330to60": 4.3,
+    "333Handling": 86,
+
+    "666TopSpeed": 185,
+    "6660to60": 4.1,
+    "666Handling": 88,
+
+    "996TopSpeed": 188,
+    "9960to60": 3.8,
+    "996Handling": 88,
+
+    "969TopSpeed": 188,
+    "9690to60": 4.1,
+    "969Handling": 92,
+
+    "699TopSpeed": 185,
+    "6990to60": 3.8,
+    "699Handling": 92
+}

@@ -1,4 +1,4 @@
-/*
+  /*
  __  ___  _______     ___      .__   __. .__   __. ____    ____ 
 |  |/  / |   ____|   /   \     |  \ |  | |  \ |  | \   \  /   / 
 |  '  /  |  |__     /  ^  \    |   \|  | |   \|  |  \   \/   /  
@@ -12,6 +12,7 @@ const fs = require("fs");
 const Discord = require("discord.js-light");
 const { Database } = require("quickmongo");
 const { prefix, token } = require("./config.json");
+const { DateTime, Interval } = require("luxon");
 
 const client = new Discord.Client({
 	cacheGuilds: true,
@@ -31,7 +32,7 @@ client.execList = [];
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 const starterGarage = [
 	{
-		carFile: "abarth 124 spider (2017).json",
+		carFile: "honda s2000 (1999).json",
 		"000": 1,
 		"333": 0,
 		"666": 0,
@@ -40,7 +41,7 @@ const starterGarage = [
 		"699": 0
 	},
 	{
-		carFile:"range rover classic 5-door (1984).json",
+		carFile:"peugeot 405 mi16 (1989).json",
 		"000": 1,
 		"333": 0,
 		"666": 0,
@@ -49,7 +50,7 @@ const starterGarage = [
 		"699": 0
 	},
 	{
-		carFile: "honda prelude type sh (1997).json",
+		carFile: "range rover county (1989).json",
 		"000": 1,
 		"333": 0,
 		"666": 0,
@@ -58,7 +59,7 @@ const starterGarage = [
 		"699": 0
 	},
 	{
-		carFile: "chevrolet impala ss 427 (1967).json",
+		carFile: "nissan leaf (2010).json",
 		"000": 1,
 		"333": 0,
 		"666": 0,
@@ -67,7 +68,7 @@ const starterGarage = [
 		"699": 0
 	},
 	{
-		carFile: "volkswagen beetle 2.5 (2012).json",
+		carFile: "de tomaso mangusta (1967).json",
 		"000": 1,
 		"333": 0,
 		"666": 0,
@@ -76,7 +77,7 @@ const starterGarage = [
 		"699": 0
 	}
 ];
-const keepAlive = require('./server');
+const keepAlive = require("./server.js");
 
 for (const file of commandFiles) {
 	let command = require(`./commands/${file}`);
@@ -92,19 +93,11 @@ client.once("ready", async () => {
 			await client.db.set(`acc${user.id}`, { money: 0, fuseTokens: 0, trophies: 0, garage: starterGarage, decks: [], campaignProgress: { chapter: 0, part: 1, race: 1 }, unclaimedRewards: { money: 0, fuseTokens: 0, trophies: 0, cars: [], packs: [] } });
 			console.log(user.id);
 		}
-		//for changing stuff in the database
-		//const garage = await client.db.get(`acc${user.id}.garage`);
-		//var i = 0;
-		//while (i < garage.length) {
-		//	if (garage[i].carFile === "lexus ls 400 f sport awd (2013).json") {
-		//		garage[i].carFile = "lexus ls 460 f sport awd (2013).json";
-		//	}
-		//	i++;
-		//}
-		//await client.db.set(`acc${user.id}.garage`, garage);
 	});
-	const catalog = await client.db.get("dealershipCatalog");
-	console.log(catalog);
+	//await client.db.set("limitedOffers", []);
+
+	//const catalog = await client.db.get("dealershipCatalog");
+	//console.log(catalog);
 	//var i = 0;
 	//while (i < catalog.length) {
 	// 	if (catalog[i].carFile === "lexus is300 (2003)") {
@@ -113,7 +106,7 @@ client.once("ready", async () => {
 	// 	i++;
 	//}
 	//await client.db.set("dealershipCatalog", catalog);
-
+	
 	client.user.setActivity("over everyone's garages", { type: "WATCHING" });
 });
 
@@ -227,7 +220,7 @@ client.on("message", async message => {
 			.setColor("#fc0303")
 			.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 			.setTitle("Error, failed to execute command.")
-			.setDescription(`Something must have gone wrong. Please report this issure to the devs. \n\`${error}\``)
+			.setDescription(`Something must have gone wrong. Please report this issure to the devs. \n\`${error.stack}\``)
 			.setTimestamp();
 		return message.channel.send(errorMessage);
 	}
@@ -315,8 +308,46 @@ client.on("messageUpdate", async (oldMessage, newMessage) => {
 			.setColor("#fc0303")
 			.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 			.setTitle("Error, failed to execute command.")
-			.setDescription(`Something must have gone wrong. Please report this issure to the devs. \n\`${error}\``)
+			.setDescription(`Something must have gone wrong. Please report this issue to the devs. \n\`${error.stack}\``)
 			.setTimestamp();
 		return newMessage.channel.send(errorMessage);
 	}
-}); 
+});
+
+//loop thingy
+setInterval(async () => {
+	const events = await client.db.get("events");
+	for (const [key, value] of Object.entries(events)) {
+		if (key.startsWith("evnt") && value.timeLeft !== "unlimited" && value.isActive === true) {
+			if (Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(value.deadline)).invalid !== null) {
+				await client.db.delete(`events.evnt${value.id}`);
+				client.channels.cache.get("798776756952629298").send(`**The ${value.name} event has officially finished. Thanks for playing!**`);
+			}
+		}
+	}
+
+	const offers = await client.db.get("limitedOffers");
+	for (let i = 0; i < offers.length; i++) {
+		if (offers[i].timeLeft !== "unlimited" && offers[i].isActive === true) {
+			if (Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(offers[i].deadline)).invalid !== null) {
+				client.channels.cache.get("798776756952629298").send(`**The ${offers[i].name} offer has officially ended.**`);
+				offers.splice(i, 1);
+			}
+		}
+	}
+	await client.db.set("limitedOffers", offers);
+
+	/**
+	const challenge = await client.db.get("challenge");
+	if (challenge.timeLeft !== "unlimited" && challenge.isActive === true) {
+		if (Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(challenge.deadline)).invalid !== null) {
+			client.channels.cache.get("798776756952629298").send(`**The ${challenge.name} challenge has officially finished. Thanks for playing!**`);
+			challenge.isActve = false;
+			challenge.players = {};
+			challenge.timeLeft = "unlimited";
+			challenge.deadline = "idk";
+		}
+	}
+	await client.db.set("challenge", challenge);
+	*/
+}, 180000);

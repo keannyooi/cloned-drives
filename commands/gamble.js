@@ -11,7 +11,7 @@ const Discord = require("discord.js-light");
 const fs = require("fs");
 const carFiles = fs.readdirSync("./commands/cars").filter(file => file.endsWith(".json"));
 const tracksets = fs.readdirSync("./commands/tracksets").filter(file => file.endsWith(".json"));
-const moment = require("moment");
+const { DateTime, Interval } = require("luxon");
 
 module.exports = {
 	name: "gamble",
@@ -28,10 +28,13 @@ module.exports = {
 		const garage = playerData.garage;
 
 		let lastGambleRefresh = playerData.lastGambleRefresh;
-		if (!lastGambleRefresh) {
-			lastGambleRefresh = moment(new Date(2020, 1, 1, 0, 0, 0));
+		if (!lastGambleRefresh || !isNaN(lastGambleRefresh)) {
+			lastGambleRefresh = DateTime.fromISO("2021-01-01");
 		}
-		let timeLeft = moment(lastGambleRefresh).add(8, "hours");
+		else {
+			lastGambleRefresh = DateTime.fromISO(lastGambleRefresh);
+		}
+		const interval = Interval.fromDateTimes(DateTime.now(), lastGambleRefresh.plus({ hours: 8 }))
 
 		if (isNaN(args[0]) || parseInt(args[0]) > playerData.money || parseInt(args[0]) > 1000000) {
 			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
@@ -48,7 +51,7 @@ module.exports = {
 			return message.channel.send(errorMessage);
 		}
 
-		if (moment().diff(timeLeft, "seconds") > 0) {
+		if (interval.invalid !== null) {
 			let bet = parseInt(args[0]);
 			let playerThing = garage[Math.floor(Math.random() * garage.length)];
 			let playerUpgrade = [];
@@ -119,20 +122,23 @@ module.exports = {
 				playerData.money -= bet;
 				message.channel.send(`**You have lost ${moneyEmoji}${bet} for losing the bet.**`);
 			}
-			playerData.lastGambleRefresh = moment();
+			playerData.lastGambleRefresh = DateTime.now().toISO();
 			await db.set(`acc${message.author.id}`, playerData);	
 			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 			return;
 		}
 		else {
+			let hours = Math.floor(interval.length("hours"));
+			let minutes = Math.floor(interval.length("minutes") - (hours * 60));
+			let seconds = Math.floor(interval.length("seconds") - (hours * 3600) - (minutes * 60));
 			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-			const errorMessage = new Discord.MessageEmbed()
-				.setColor("#fc0303")
+			const infoScreen = new Discord.MessageEmbed()
+				.setColor("#34aeeb")
 				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 				.setTitle("You may only gamble once every 8 hours.")
-				.setDescription(`Come back in ${moment().to(timeLeft, true)}!`)
+				.setDescription(`Come back in \`${hours}h ${minutes}m ${seconds}s\`!`)
 				.setTimestamp();
-			return message.channel.send(errorMessage);
+			return message.channel.send(infoScreen);
 		}
 		
 

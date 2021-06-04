@@ -1,0 +1,54 @@
+{
+    "rq": 89,
+    "make": "McLaren",
+    "model": "620R",
+    "modelYear": 2020,
+    "country": "GB",
+    "topSpeed": 200,
+    "0to60": 2.9,
+    "handling": 94,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Track Day", "The Royal Collection"],
+    "isPrize": false,
+
+    "weight": 1386,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 98.63,
+    "ola": 82.93,
+    "description": "Yet Another McLaren 570S Special Edition, Card by Exist",
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/828271852156747796/CD_McLaren_620R.png",
+    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/828272019199229992/CD_McLaren_620R_000.png?width=1410&height=878",
+    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/828272027349417994/CD_McLaren_620R_333.png?width=1410&height=878",
+    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/828272054724853760/CD_McLaren_620R_666.png?width=1410&height=878",
+    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/828272083897024572/CD_McLaren_620R_996.png?width=1410&height=878",
+    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/828272073506947122/CD_McLaren_620R_969.png?width=1410&height=878",
+    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/828272069484871710/CD_McLaren_620R_699.png?width=1410&height=878",
+
+    "333TopSpeed": 203,
+    "3330to60": 2.8,
+    "333Handling": 97,
+
+    "666TopSpeed": 205,
+    "6660to60": 2.6,
+    "666Handling": 100,
+
+    "996TopSpeed": 208,
+    "9960to60": 2.5,
+    "996Handling": 100,
+
+    "969TopSpeed": 208,
+    "9690to60": 2.6,
+    "969Handling": 104,
+
+    "699TopSpeed": 205,
+    "6990to60": 2.5,
+    "699Handling": 104
+}

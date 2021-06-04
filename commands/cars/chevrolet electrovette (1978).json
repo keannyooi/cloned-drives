@@ -1,0 +1,54 @@
+{
+    "rq": 1,
+    "make": "Chevrolet",
+    "model": "Electrovette",
+    "modelYear": 1978,
+    "country": "US",
+    "topSpeed": 53,
+    "0to60": 99.9,
+    "handling": 48,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly", "Unique", "Concept"],
+    "isPrize": false,
+
+    "weight": 1338,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 0.00,
+    "ola": 16.62,
+    "description": "A cheap EV prototyped by General Motors that was so unfavored that it never made an appearance in any auto shows. Card by keanny",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/840079525639487488/chevrolet_electrovette.png",
+    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/840078778616774677/electrovette_000.jpg",
+    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/840078785793884160/electrovette_333.jpg",
+    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/840078795620483082/electrovette_666.jpg",
+    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/840078812125069322/electrovette_996.jpg",
+    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/840078807750672425/electrovette_969.jpg",
+    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/840078803069566986/electrovette_699.jpg",
+
+    "333TopSpeed": 62,
+    "3330to60": 58.9,
+    "333Handling": 50,
+
+    "666TopSpeed": 70,
+    "6660to60": 55.8,
+    "666Handling": 51,
+
+    "996TopSpeed": 79,
+    "9960to60": 52.7,
+    "996Handling": 51,
+
+    "969TopSpeed": 79,
+    "9690to60": 55.8,
+    "969Handling": 53,
+
+    "699TopSpeed": 70,
+    "6990to60": 52.7,
+    "699Handling": 53
+}

@@ -14,19 +14,18 @@ const carFiles = fs.readdirSync('./commands/cars').filter(file => file.endsWith(
 module.exports = {
 	openPack(message, currentPack) {
 		const cardFilter = currentPack["filter"];
-
 		let rand, check;
 		let rqStart, rqEnd;
 		let currentCard = require(`../cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
-		let pulledCards = "";
-		let addedCars = [];
+		const pulledCards = [];
+		const addedCars = [];
 
-		for (i = 0; i < 5; i++) {
-			console.log(i);
+		for (let i = 0; i < currentPack["repetition"] * 5; i++) {
+			console.log(Math.floor(i / currentPack["repetition"]));
 			rand = Math.floor(Math.random() * 100);
 			check = 0;
-			for (let rarity of Object.keys(currentPack["packSequence"][i])) {
-				check += currentPack["packSequence"][i][rarity];
+			for (let rarity of Object.keys(currentPack["packSequence"][Math.floor(i / currentPack["repetition"])])) {
+				check += currentPack["packSequence"][Math.floor(i / currentPack["repetition"])][rarity];
 				if (check > rand) {
 					switch (rarity) {
 						case "common":
@@ -107,27 +106,38 @@ module.exports = {
             }
         });
 
-		for (i = 0; i < addedCars.length; i++) {
+		for (let i = 0; i < addedCars.length; i++) {
 			let currentCard = require(`../cars/${addedCars[i]}`);
 			let rarity = rarityCheck(currentCard);
 			let make = currentCard["make"];
 			if (typeof make === "object") {
 				make = currentCard["make"][0];
 			}
-			pulledCards += `(${rarity} ${currentCard["rq"]}) ${make} ${currentCard["model"]} (${currentCard["modelYear"]})\n`;
-		}
-		let d = require(`../cars/${addedCars[addedCars.length - 1]}`);
 
-		let packScreen = new Discord.MessageEmbed()
-			.setColor("#34aeeb")
-			.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-			.setTitle(`Opening ${currentPack["packName"]}...`)
-			.setDescription("Click on the image to see the cards better.")
-			.setThumbnail(currentPack["pack"])
-			.setImage(d["card"])
-			.addField("Cards Pulled:", pulledCards)
-			.setTimestamp();
-		message.channel.send(packScreen);
+			if (i % 5 === 0) {
+				pulledCards[Math.floor(i /5)] = "";
+			}
+			pulledCards[Math.floor(i / 5)] += `(${rarity} ${currentCard["rq"]}) ${make} ${currentCard["model"]} (${currentCard["modelYear"]})`;
+			if ((i + 1) % 5 !== 0) {
+				pulledCards[Math.floor(i / 5)] += ` **[[Card]](${currentCard["card"]})**\n`;
+			}
+		}
+
+		for (let i = 0; i < currentPack["repetition"]; i++) {
+			let d = require(`../cars/${addedCars[i * 5 + 4]}`);
+
+			const packScreen = new Discord.MessageEmbed()
+				.setColor("#34aeeb")
+				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+				.setTitle(`Opening ${currentPack["packName"]}...`)
+				.setDescription("Click on the image to see the cards better.")
+				.setThumbnail(currentPack["pack"])
+				.setImage(d["card"])
+				.addField("Cards Pulled:", pulledCards[i])
+				.setTimestamp();
+			message.channel.send(packScreen);
+		}
+
 		return addedCars;
 
 		function filterCard(currentCard, filter) {
@@ -136,8 +146,22 @@ module.exports = {
 				for (let criteria in filter) {
 					if (filter[criteria] !== "None") {
 						switch (criteria) {
+							case "make":
+							case "tags":
+								if (Array.isArray(currentCard[criteria])) {
+									if (currentCard[criteria].some(m => m === filter[criteria]) === false) {
+										passed = false;
+									}
+								}
+								else {
+									if (currentCard[criteria] !== filter[criteria]) {
+										passed = false;
+									}
+								}
+								break;
 							case "modelYear":
-								if (currentCard["modelYear"] < filter["modelYear"]["start"] || currentCard["modelYear"] > filter["modelYear"]["end"]) {
+							case "seatCount":
+								if (currentCard[criteria] < filter[criteria]["start"] || currentCard[criteria] > filter[criteria]["end"]) {
 									passed = false;
 								}
 								break;

@@ -43,20 +43,17 @@ module.exports = {
             for (i = 0; i < decks.length; i++) {
                 handList[i] = "";
                 for (x = 0; x < 5; x++) {
-                    console.log(x);
-
                     if (decks[i].hand[x] === "None") {
                         handList[i] += "(empty)\n";
                     }
                     else {
-                        console.log(decks[i].hand[x].carFile);
-                        let currentCar = require(`./cars/${decks[i].hand[x].carFile}`);
+                        let currentCar = require(`./cars/${decks[i].hand[x]}`);
                         let rarity = rarityCheck(currentCar);
 						let make = currentCar["make"];
 						if (typeof make === "object") {
 							make = currentCar["make"][0];
 						}
-                        handList[i] += `(${rarity} ${currentCar["rq"]}) ${make} ${currentCar["model"]} (${currentCar["modelYear"]}) [${decks[i].hand[x].gearingUpgrade}${decks[i].hand[x].engineUpgrade}${decks[i].hand[x].chassisUpgrade}]\n`;
+                        handList[i] += `(${rarity} ${currentCar["rq"]}) ${make} ${currentCar["model"]} (${currentCar["modelYear"]}) [${decks[i].tunes[x]}]\n`;
                     }
                 }
 
@@ -151,9 +148,9 @@ module.exports = {
 
                 for (i = 0; i < currentDeck.hand.length; i++) {
                     if (currentDeck.hand[i] !== "None") {
-                        const car = require(`./cars/${currentDeck.hand[i].carFile}`);
+                        const car = require(`./cars/${currentDeck.hand[i]}`);
 						totalRQ += car["rq"];
-                        let racehud = await Canvas.loadImage(car[`racehud${currentDeck.hand[i].gearingUpgrade}${currentDeck.hand[i].engineUpgrade}${currentDeck.hand[i].chassisUpgrade}`]);
+                        let racehud = await Canvas.loadImage(car[`racehud${currentDeck.tunes[i]}`]);
                         let rarity = rarityCheck(car);
 						let make = car["make"];
 						if (typeof make === "object") {
@@ -161,7 +158,7 @@ module.exports = {
 						}
 
                         ctx.drawImage(racehud, handPlacement[i].x, handPlacement[i].y, 334, 203);
-                        handList += `(${rarity} ${car["rq"]}) ${make} ${car["model"]} (${car["modelYear"]}) [${currentDeck.hand[i].gearingUpgrade}${currentDeck.hand[i].engineUpgrade}${currentDeck.hand[i].chassisUpgrade}]\n`;
+                        handList += `(${rarity} ${car["rq"]}) ${make} ${car["model"]} (${car["modelYear"]}) [${currentDeck.tunes[i]}]\n`;
                     }
 					else {
 						handList += "(None)\n"

@@ -1,0 +1,54 @@
+{
+    "rq": 93,
+    "make": "McLaren",
+    "model": "P1",
+    "modelYear": 2013,
+    "country": "GB",
+    "topSpeed": 217,
+    "0to60": 2.7,
+    "handling": 94,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Royal Collection", "HyperCar", "Ultra Expensive"],
+    "isPrize": false,
+
+    "weight": 1547,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 117.39,
+    "ola": 88.89,
+    "description": "The car that got Jeremy Clarkson's House demolished. Card by Exist",
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/828991664520691772/CD_McLaren_P1.png?width=1410&height=878",
+    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/828991756229804052/CD_McLaren_P1_000.png?width=1410&height=878",
+    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/828991768250024006/CD_McLaren_P1_333.png?width=1410&height=878",
+    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/828991777204731904/CD_McLaren_P1_666.png?width=1410&height=878",
+    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/828991800281661450/CD_McLaren_P1_996.png?width=1410&height=878",
+    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/828991793529618482/CD_McLaren_P1_969.png?width=1410&height=878",
+    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/828991790307868682/CD_McLaren_P1_699.png?width=1410&height=878",
+
+    "333TopSpeed": 219,
+    "3330to60": 2.6,
+    "333Handling": 97,
+
+    "666TopSpeed": 222,
+    "6660to60": 2.4,
+    "666Handling": 100,
+
+    "996TopSpeed": 224,
+    "9960to60": 2.3,
+    "996Handling": 100,
+
+    "969TopSpeed": 224,
+    "9690to60": 2.4,
+    "969Handling": 104,
+
+    "699TopSpeed": 222,
+    "6990to60": 2.3,
+    "699Handling": 104
+}

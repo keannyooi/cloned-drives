@@ -1,0 +1,54 @@
+{
+    "rq": 35,
+    "make": ["Top Fuel", "Honda"],
+    "model": "S660 Type RR",
+    "modelYear": 2017,
+    "country": "JP",
+    "topSpeed": 112,
+    "0to60": 7.2,
+    "handling": 81,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner", "Kei Car"],
+    "isPrize": false,
+
+    "weight": 807,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Roadster",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 56.25,
+    "ola": 69.44,
+    "description": "Track-serious S660 by Japanese tuners with an astronomical power output... for an S660. Card by keanny",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/837239452212265010/fast_s660_how.png",
+    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/837239117761871902/topfuel_s660_000.jpg",
+    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/837239125055766558/topfuel_s660_333.jpg",
+    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/837239131468726282/topfuel_s660_666.jpg",
+    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/837239146400841768/topfuel_s660_996.jpg",
+    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/837239141120344075/topfuel_s660_969.jpg",
+    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/837239135763955783/topfuel_s660_699.jpg",
+
+    "333TopSpeed": 117,
+    "3330to60": 6.8,
+    "333Handling": 84,
+
+    "666TopSpeed": 121,
+    "6660to60": 6.5,
+    "666Handling": 86,
+
+    "996TopSpeed": 126,
+    "9960to60": 6.1,
+    "996Handling": 86,
+
+    "969TopSpeed": 126,
+    "9690to60": 6.5,
+    "969Handling": 90,
+
+    "699TopSpeed": 121,
+    "6990to60": 6.1,
+    "699Handling": 90
+}

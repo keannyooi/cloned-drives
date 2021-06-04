@@ -1,0 +1,54 @@
+{
+    "rq": 37,
+    "make": "Mercedes-Benz",
+    "model": "500 GE",
+    "modelYear": 1993,
+    "country": "DE",
+    "topSpeed": 112,
+    "0to60": 10.8,
+    "handling": 59,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 2360,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 38.04,
+    "ola": 57.41,
+    "description": "The first-ever V8 engine for the G-Class. It was produced in a limited number from 1993 to 1994 and as a 5-door, long wheelbase station wagon only. The V8 engine wasn't reintroduced until 1998 when the G 500 entered into a regular production. Card by havvy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/833311799653826651/wallace.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/833312437427240960/wallace_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/833312444041658379/wallace_111.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/833312448441221161/wallace_222.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/833312465822548058/wallace_332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/833312459179294720/wallace_323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/833312454346932252/wallace_233.png",
+
+    "333TopSpeed": 117,
+    "3330to60": 10.3,
+    "333Handling": 61,
+
+    "666TopSpeed": 121,
+    "6660to60": 9.7,
+    "666Handling": 63,
+
+    "996TopSpeed": 126,
+    "9960to60": 9.2,
+    "996Handling": 63,
+
+    "969TopSpeed": 126,
+    "9690to60": 9.7,
+    "969Handling": 65,
+
+    "699TopSpeed": 121,
+    "6990to60": 9.2,
+    "699Handling": 65
+}

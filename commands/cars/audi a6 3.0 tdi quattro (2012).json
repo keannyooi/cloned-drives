@@ -1,0 +1,56 @@
+﻿{
+    "rq": 61,
+    "make": "Audi",
+    "model": "A6 3.0 TDI quattro",
+    "modelYear": 2012,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 5.6,
+    "handling": 84,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1902,
+    "gc": "Low",
+    "seatCount":5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 56.01,
+    "ola": 71.43,
+    "description": "Winner's Circles: Audi redefines the boundaries of best in class. Card by Lemon",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/840231052588089394/audi_a6_3.0_tdi_quattro_for_cd.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/840235794886819871/a6_racehud_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/840235858144919582/a6_racehud_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/840235921110466610/a6_racehud_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/840236108461113344/a6_racehud_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/840236052428881930/a6_racehud_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/840235995449262160/a6_racehud_699.png",
+
+    "333TopSpeed": 158,
+    "3330to60": 5.3,
+    "333Handling": 87,
+
+    "666TopSpeed": 162,
+    "6660to60": 5.0, 
+    "666Handling": 90,
+
+    "996TopSpeed": 165,
+    "9960to60": 4.8,
+    "996Handling": 90,
+
+    "969TopSpeed": 165,
+    "9690to60": 5.0,
+    "969Handling": 93,
+
+    "699TopSpeed": 162,
+    "6990to60": 4.8,
+    "699Handling": 93
+}

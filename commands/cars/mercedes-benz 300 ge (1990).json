@@ -1,0 +1,54 @@
+{
+    "rq": 32,
+    "make": "Mercedes-Benz",
+    "model": "300 GE",
+    "modelYear": 1990,
+    "country": "DE",
+    "topSpeed": 104,
+    "0to60": 13.2,
+    "handling": 58,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["Style Icon"],
+    "isPrize": false,
+
+    "weight": 2220,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 25.98,
+    "ola": 63.64,
+    "description": "The first major update of the iconic Gelandewagen since 1979, featuring an extensively updated chassis and a revised front end. Card by havvy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/833291106669953034/D32.Mercedes300GE.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/833292330123132948/g_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/833292333910982666/g_111.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/833292337332879361/g_222.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/833292350792925214/g_332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/833292348737585182/g_323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/833292344090034186/g_233.png",
+
+    "333TopSpeed": 109,
+    "3330to60": 12.5,
+    "333Handling": 60,
+
+    "666TopSpeed": 114,
+    "6660to60": 11.9,
+    "666Handling": 62,
+
+    "996TopSpeed": 119,
+    "9960to60": 11.2,
+    "996Handling": 62,
+
+    "969TopSpeed": 119,
+    "9690to60": 11.9,
+    "969Handling": 64,
+
+    "699TopSpeed": 114,
+    "6990to60": 11.2,
+    "699Handling": 64
+}

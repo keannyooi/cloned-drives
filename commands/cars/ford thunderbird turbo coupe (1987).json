@@ -1,5 +1,5 @@
 {
-    "rq": 27,
+    "rq": 31,
     "make": "Ford",
     "model": "Thunderbird Turbo Coupe",
     "modelYear": 1987,
@@ -9,7 +9,7 @@
     "handling": 72,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [],
+    "tags": ["Muscle Car"],
     "isPrize": false,
 
     "weight": 1542,
@@ -22,34 +22,34 @@
     "fuelType": "Petrol",
     "mra": 45.71,
     "ola": 60.00,
-    "description": "",
+    "description": "Hmm, it looks like Hutch has stolen our card. Card by spence",
 
-    "card": "",
-    "racehud000": "",
-    "racehud333": "",
-    "racehud666": "",
-    "racehud996": "",
-    "racehud969": "",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/822474787032530954/image0.jpg",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/822474926418034718/image0.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/822474947073933362/image0.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/822474963578912768/image0.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/822475052334317609/image0.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/822475008931528724/image0.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/822475029551513620/image0.jpg",
 
-    "333TopSpeed": ,
-    "3330to60": ,
-    "333Handling": ,
+    "333TopSpeed": 141,
+    "3330to60": 7.6,
+    "333Handling": 74,
 
-    "666TopSpeed": ,
-    "6660to60": ,
-    "666Handling": ,
+    "666TopSpeed": 145,
+    "6660to60": 7.2,
+    "666Handling": 77,
 
-    "996TopSpeed": ,
-    "9960to60": ,
-    "996Handling": ,
+    "996TopSpeed": 148,
+    "9960to60": 6.8,
+    "996Handling": 77,
 
-    "969TopSpeed": ,
-    "9690to60": ,
-    "969Handling": ,
+    "969TopSpeed": 148,
+    "9690to60": 7.2,
+    "969Handling": 80,
 
-    "699TopSpeed": ,
-    "6990to60": ,
-    "699Handling": 
+    "699TopSpeed": 145,
+    "6990to60": 6.8,
+    "699Handling": 80
 
 }

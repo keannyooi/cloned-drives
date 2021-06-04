@@ -11,6 +11,7 @@ const Discord = require("discord.js-light");
 const fs = require("fs");
 const carFiles = fs.readdirSync('./commands/cars').filter(file => file.endsWith('.json'));
 const tracksets = fs.readdirSync("./commands/tracksets").filter(file => file.endsWith('.json'));
+const { DateTime } = require("luxon");
 
 module.exports = {
     name: "createevent",
@@ -50,7 +51,14 @@ module.exports = {
 		}
 		rounds = parseInt(rounds);
 
-        if (events.findIndex(event => event.name === eventName) > -1) {
+		let isSame = false;
+		for (const [key, value] of Object.entries(events)) {
+			if (key.startsWith("evnt") && eventName === value.name) {
+				isSame = true;
+				break;
+			}
+		}
+        if (isSame) {
 			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             const errorScreen = new Discord.MessageEmbed()
                 .setColor("#fc0303")
@@ -114,12 +122,7 @@ module.exports = {
 					break;
 				case 3:
 					let maxedTunes = [996, 969, 699];
-					let i = Math.floor(Math.random() * maxedTunes.length);
-					let car = require(`./cars/${c}`);
-					while (!car[`${maxedTunes[i]}TopSpeed`]) {
-						i = Math.floor(Math.random() * maxedTunes.length);
-					}
-					upgradePattern = Array.from(maxedTunes[i].toString(), (val) => Number(val));
+					upgradePattern = Array.from(maxedTunes[Math.floor(Math.random() * maxedTunes.length)].toString(), (val) => Number(val));
 					break;
 				default:
 					break;
@@ -135,17 +138,22 @@ module.exports = {
 			})
 		}
 
-        await db.push("events", { 
-			name: eventName, 
+		await db.add(`events.currentID`, 1);
+        await db.set(`events.evnt${events.currentID}`, {
+			name: eventName,
+			id: events.currentID,
 			isActive: false,
+			timeLeft: "unlimited",
+			deadline: "until someone turns it off",
 			background: "https://cdn.discordapp.com/attachments/716917404868935691/801310401425440768/unknown.png",
 			roster: roster,
 			players: {}
 		});
+		
         const infoScreen = new Discord.MessageEmbed()
             .setColor("#34aeeb")
             .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-            .setTitle(`Successfully created new event named ${eventName}!`)
+            .setTitle(`Successfully created a new event named ${eventName}!`)
 			.setDescription("Apply changes to the event using `cd-editevent`.")
             .setTimestamp();
 		message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);

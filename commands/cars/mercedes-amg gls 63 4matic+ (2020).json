@@ -1,0 +1,54 @@
+{
+    "rq": 96,
+    "make": ["Mercedes-AMG", "Mercedes-Benz"],
+    "model": "GLS 63 4MATIC+",
+    "modelYear": 2020,
+    "country": "DE",
+    "topSpeed": 174,
+    "0to60": 3.6,
+    "handling": 83,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 2490,
+    "gc": "High",
+    "seatCount": 7,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 67.92,
+    "ola": 83.33,
+    "description": "A luxury boat. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/837989743895117874/GLS63.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/837989845682749460/MERCTHINGY.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/837989852019556373/MERCTHINGY333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/837989859213836338/MERCTHINGY666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/837989892776001556/MERCTHINGY996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/837989877952806992/MERCTHINGY969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/837989867584880680/MERCTHINGY699.png",
+
+    "333TopSpeed": 177,
+    "3330to60": 3.4,
+    "333Handling": 86,
+
+    "666TopSpeed": 180,
+    "6660to60": 3.2,
+    "666Handling": 88,
+
+    "996TopSpeed": 183,
+    "9960to60": 3.1,
+    "996Handling": 88,
+
+    "969TopSpeed": 183,
+    "9690to60": 3.2,
+    "969Handling": 92,
+
+    "699TopSpeed": 180,
+    "6990to60": 3.1,
+    "699Handling": 92
+}

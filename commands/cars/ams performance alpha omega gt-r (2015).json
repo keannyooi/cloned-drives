@@ -1,0 +1,54 @@
+{
+    "rq": 83,
+    "make": ["AMS Performance", "Nissan"],
+    "model": "Alpha Omega GT-R",
+    "modelYear": 2015,
+    "country": "US",
+    "topSpeed": 287,
+    "0to60": 1.6,
+    "handling": 35,
+    "driveType": "4WD",
+    "tyreType": "Slick",
+    "tags": ["Oddity", "Tuner", "Street Racer", "Track Day"],
+    "isPrize": true,
+
+    "weight": 1652,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 133.33,
+    "ola": 82.22,
+    "description": "The AWD Beast thats better than Chirons, wait hol up theres a 3200hp Version?? Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/849717884943073340/amsalphaomegathingy.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/849718143068012554/alphaomega.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/849718151633305630/alphaomega333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/849718159911944252/alphaomega666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/849718186241032272/alphaomega996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/849718176785760306/alphaomega969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/849718167299162162/alphaomega699.png",
+
+    "333TopSpeed": 289,
+    "3330to60": 1.5,
+    "333Handling": 36,
+
+    "666TopSpeed": 291,
+    "6660to60": 1.4,
+    "666Handling": 37,
+
+    "996TopSpeed": 292,
+    "9960to60": 1.4,
+    "996Handling": 37,
+
+    "969TopSpeed": 292,
+    "9690to60": 1.4,
+    "969Handling": 39,
+
+    "699TopSpeed": 291,
+    "6990to60": 1.4,
+    "699Handling": 39
+}

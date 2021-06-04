@@ -1,0 +1,54 @@
+{
+    "rq": 48,
+    "make": "Volkswagen",
+    "model": "Atlas Cross Sport SE VR6 R-Line",
+    "modelYear": 2020,
+    "country": "DE",
+    "topSpeed": 116,
+    "0to60": 7.5,
+    "handling": 74,
+    "driveType": "FWD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1944,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 63.56,
+    "ola": 74.67,
+    "description": "The Atlas, quite a useful SUV, now utterly stupid. Card by Macan",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/847353857863581696/Atlas_Cross_Sport_SE_VR6_R-Line_20.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/847363478272475136/Volkswagen_Atlas_Cross_Sport_SE_VR6_R-Line_2020_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/847363490775564306/Volkswagen_Atlas_Cross_Sport_SE_VR6_R-Line_2020_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/847363497239379988/Volkswagen_Atlas_Cross_Sport_SE_VR6_R-Line_2020_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/847363531232903168/Volkswagen_Atlas_Cross_Sport_SE_VR6_R-Line_2020_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/847363520117997568/Volkswagen_Atlas_Cross_Sport_SE_VR6_R-Line_2020_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/847363510886596638/Volkswagen_Atlas_Cross_Sport_SE_VR6_R-Line_2020_699.png",
+
+    "333TopSpeed": 120,
+    "3330to60": 7.1,
+    "333Handling": 76,
+
+    "666TopSpeed": 125,
+    "6660to60": 6.8,
+    "666Handling": 79,
+
+    "996TopSpeed": 129,
+    "9960to60": 6.4,
+    "996Handling": 79,
+
+    "969TopSpeed": 129,
+    "9690to60": 6.8,
+    "969Handling": 82,
+
+    "699TopSpeed": 125,
+    "6990to60": 6.4,
+    "699Handling": 82
+}

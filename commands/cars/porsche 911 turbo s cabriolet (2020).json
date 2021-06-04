@@ -1,0 +1,54 @@
+{
+    "rq": 94,
+    "make": "Porsche",
+    "model": "911 Turbo S Cabriolet",
+    "modelYear": 2020,
+    "country": "DE",
+    "topSpeed": 202,
+    "0to60": 2.6,
+    "handling": 92,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Supercar"],
+    "isPrize": false,
+
+    "weight": 1785,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Cabriolet",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 86.67,
+    "ola": 84.62,
+    "description": "Roof down. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/844556536834555994/992CabrioJP2.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/844556892319514634/992cabrio.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/844556900099031090/992cabrio333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/844556906571104256/992cabrio666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/844556927744475166/992cabrio996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/844556920530272296/992cabrio969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/844556913718460416/992cabrio699.png",
+
+    "333TopSpeed": 205,
+    "3330to60": 2.5,
+    "333Handling": 95,
+
+    "666TopSpeed": 207,
+    "6660to60": 2.3,
+    "666Handling": 98,
+
+    "996TopSpeed": 210,
+    "9960to60": 2.2,
+    "996Handling": 98,
+
+    "969TopSpeed": 210,
+    "9690to60": 2.3,
+    "969Handling": 102,
+
+    "699TopSpeed": 207,
+    "6990to60": 2.2,
+    "699Handling": 102
+}

@@ -1,4 +1,4 @@
-﻿{
+{
     "rq": 83,
     "make": "Porsche",
     "model": "718 Cayman S",
@@ -12,10 +12,9 @@
     "tags": [],
     "isPrize": false,
 
-
     "weight": 1355,
     "gc": "Medium",
-    "seatCount":2,
+    "seatCount": 2,
     "bodyStyle": "Coupe",
     "tcs": true,
     "abs": true,
@@ -25,15 +24,13 @@
     "ola": 71.07,
     "description": "Soft sky blue. Card by Havvy ",
 
-
-    "card": "https://cdn.discordapp.com/attachments/819200156623962122/823522244764368926/000_718s.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/823522170600292363/Porsche718CaymanS.png",
     "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823522244764368926/000_718s.png",
     "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823522248908079124/111_718s.png",
     "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823522254058946600/222_718s.png",
     "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823522270973657089/332_718s.png",
     "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823522265316589608/323_718s.png",
     "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823522259871334451/233_718s.png",
-
 
     "333TopSpeed": 180,
     "3330to60": 3.7,

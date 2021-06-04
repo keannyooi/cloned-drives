@@ -1,5 +1,5 @@
-﻿{
-    "rq"3126,
+{
+    "rq": 31,
     "make": "Mercedes-Benz",
     "model": "450 SEL 6.9",
     "modelYear": 1975,
@@ -9,7 +9,7 @@
     "handling": 62,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["2021 Spring Collection"],
+    "tags": [],
     "isPrize": false,
 
     "weight": 1795,
@@ -24,31 +24,31 @@
     "ola": 80.4,
     "description": "Long Classiness. Card by https://cdn.discordapp.com/attachments/819199720249360384/825099060716765234/450SEL.pngCenard",
 
-    "card":https://cdn.discordapp.com/attachments/819200156623962122/825099192602853406/450SEL.png "",
-    "racehud000":https://cdn.discordapp.com/attachments/819200156623962122/825099197984276530/450SEL1.png "",
-    "racehud333":https://cdn.discordapp.com/attachments/819200156623962122/825099203516432414/450SEL2.png "",
-    "racehud666":https://cdn.discordapp.com/attachments/819200156623962122/825099225615564840/450SEL996.png "",
-    "racehud996":https://cdn.discordapp.com/attachments/819200156623962122/825099217634328646/450SEL969.png "",
-    "racehud969":https://cdn.discordapp.com/attachments/819200156623962122/825099209970679808/450SEL699.png "",
-    "racehud699": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/825099060716765234/450SEL.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/825099192602853406/450SEL.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/825099197984276530/450SEL1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/825099203516432414/450SEL2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/825099225615564840/450SEL996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/825099217634328646/450SEL969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/825099209970679808/450SEL699.png",
 
-    "333TopSpeed8: 141,
+    "333TopSpeed": 141,
     "3330to60": 7.6,
     "333Handling": 64,
 
-    "666TopS4eed": 145,
+    "666TopSpeed": 145,
     "6660to60": 7.0, 
-    "666Handl8ng": 67,
+    "666Handling": 67,
 
-    "9760opSpeed": 149,
-    "9660to60": 6.2,
-    "99648ndling": 67,
+    "9960opSpeed": 149,
+    "9960to60": 6.2,
+    "996Handling": 67,
 
-  7.4969TopSpeed": 149,
+  	"969TopSpeed": 149,
     "9690to60": 6.5,
-   145"969Handling": 69,7.0
+   	"969Handling": 69,
 
-    "699TopSpeed": 69,
-    "6990to60": 0,
-    "699Handling": 0
+    "699TopSpeed": 145,
+    "6990to60": 7.0,
+    "699Handling": 69
 }

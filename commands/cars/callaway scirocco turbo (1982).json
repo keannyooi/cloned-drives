@@ -9,7 +9,7 @@
     "handling": 71,
     "driveType": "FWD",
     "tyreType": "Performance",
-	"tags": ["Hot Hatch"],
+	  "tags": ["Hot Hatch", "Tuner"],
     "isPrize": true,
 
     "weight": 1043,
@@ -49,6 +49,6 @@
     "969Handling": 79,
     
     "699TopSpeed": 134,
-    "699to60": 6.5,
+    "6990to60": 6.5,
     "699Handling": 79
 }

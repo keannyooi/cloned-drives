@@ -1,0 +1,54 @@
+{
+    "rq": 5,
+    "make": "Aston Martin",
+    "model": "Atom",
+    "modelYear": 1939,
+    "country": "GB",
+    "topSpeed": 90,
+    "0to60": 19.0,
+    "handling": 53,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Royal Collection", "Super Sedan", "Grand Tourer", "Unique", "Ultra Expensive", "Innovative", "Concept"],
+    "isPrize": false,
+
+    "weight": 1219,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 13.00,
+    "ola": 60.00,
+    "description": "The first ever Concept car. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/849757258623352882/atommmm.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/849757788380332103/atom.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/849757793648377877/atom333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/849757800255062056/atom666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/849757822265720842/atom996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/849757814909698078/atom969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/849757807401107496/atom699.png",
+
+    "333TopSpeed": 96,
+    "3330to60": 18.1,
+    "333Handling": 55,
+
+    "666TopSpeed": 102,
+    "6660to60": 17.1,
+    "666Handling": 56,
+
+    "996TopSpeed": 107,
+    "9960to60": 16.2,
+    "996Handling": 56,
+
+    "969TopSpeed": 107,
+    "9690to60": 17.1,
+    "969Handling": 59,
+
+    "699TopSpeed": 102,
+    "6990to60": 16.2,
+    "699Handling": 59
+}

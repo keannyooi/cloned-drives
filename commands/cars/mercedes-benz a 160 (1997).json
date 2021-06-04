@@ -1,5 +1,5 @@
-﻿{
-    "rq":620,
+{
+    "rq": 26,
     "make": "Mercedes-Benz",
     "model": "A 160",
     "modelYear": 1997,
@@ -22,33 +22,33 @@
     "fuelType": "Petrol",
     "mra": 39.62,
     "ola": 60.19,
-    "description": "Tipping and rolling. Cardhttps://cdn.discordapp.com/attachments/819199720249360384/821493284840931350/FastestRollover160.png by Andu",
+    "description": "Tipping and rolling. Card by Andu",
 
-    "cardhttps://cdn.discordapp.com/attachments/819200156623962122/821493415383531560/A160.png": "",
-    "racehud000https://cdn.discordapp.com/attachments/819200156623962122/821493423700705311/A160-1.png": "",
-    "racehud333https://cdn.discordapp.com/attachments/819200156623962122/821493430214459423/A160-2.png": "",
-    "racehud666https://cdn.discordapp.com/attachments/819200156623962122/821493451571986472/A160-996.png": "",
-    "racehud996https://cdn.discordapp.com/attachments/819200156623962122/821493444118839316/A160-969.png": "",
-    "racehud969https://cdn.discordapp.com/attachments/819200156623962122/821493438842273862/A160-699.png": "",
-    "racehud699": 6",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/821493284840931350/FastestRollover160.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821493415383531560/A160.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821493423700705311/A160-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821493430214459423/A160-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821493451571986472/A160-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821493444118839316/A160-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821493438842273862/A160-699.png",
 
-    "333TopSpe8d": 114,
-    "3330to67": 9.5,
-    "333Handli20": 78,
+    "333TopSpeed": 116,
+    "3330to60": 9.8,
+    "333Handling": 77,
 
-    "6669o3Speed": 118,
-    "66600o60": 8.8, 
-    "666H125ndling": 81,
+    "666TopSpeed": 120,
+    "6660to60": 9.3, 
+    "666Handling": 80,
 
-  8.8 "996TopSpeed": 0,
- 8   "9960to60": 0,
-    "956Handling": 0,
+	"996TopSpeed": 125,
+	"9960to60": 8.8,
+    "996Handling": 80,
 
-9 3 "969TopSpeed": 120,
-    "9690to60": 8.1,
- 120  "969Handling": 88.8,
+	"969TopSpeed": 125,
+    "9690to60": 9.3,
+	"969Handling": 83,
 
-    "699TopSpeed"83 0,
-    "6990to60": 0,
-    "699Handling": 0
+    "699TopSpeed": 120,
+    "6990to60": 8.9,
+    "699Handling": 83
 }

@@ -1,7 +1,9 @@
 {
     "packName": "Booster Pack",
-    "description": "A great starter pack or the life saver of your low end garage",
+    "description": "A great starter pack or the life saver of your low end garage.",
     "price": 5000,
+	"limited": false,
+	"repetition": 1,
     "pack": "https://media.discordapp.net/attachments/711793583677767750/802413702283526154/Booster_Pack.png",
     
     "filter": {
@@ -11,11 +13,13 @@
             "end": 3000
         },
         "country": "None",
-        "tag": "None",
+        "tags": "None",
         "driveType": "None",
         "tyreType": "None",
+		"enginePos": "None",
         "fuelType": "None",
-        "bodyStyle": "None"
+        "bodyStyle": "None",
+		"seatCount": "None"
     },
 
     "packSequence": [

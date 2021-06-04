@@ -25,7 +25,7 @@ module.exports = {
             return response.author.id === message.author.id;
         };
 
-        var packName = args.map(i => i.toLowerCase());
+        let packName = args.map(i => i.toLowerCase());
         const searchResults = packFiles.filter(function (packFile) {
             return packName.every(part => packFile.includes(part));
         });
@@ -52,7 +52,7 @@ module.exports = {
                 })
                     .then(collected => {
 						collected.first().delete();
-                        if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
+                        if (isNaN(collected.first().content) || parseInt(collected.first().content) > searchResults.length) {
 							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                             const errorMessage = new Discord.MessageEmbed()
                                 .setColor("#fc0303")
@@ -63,7 +63,7 @@ module.exports = {
                             return currentMessage.edit(errorMessage);
                         }
                         else {
-                            let currentPack = require(`./packs/${searchResults[parseInt(collected.first()) - 1]}`);
+                            let currentPack = require(`./packs/${searchResults[parseInt(collected.first().content) - 1]}`);
                             displayInfo(currentPack, currentMessage);
                         }
                     })
@@ -100,6 +100,7 @@ module.exports = {
                 .setTitle(currentPack["packName"])
                 .setDescription("Stats of requested pack:")
                 .addFields(
+					{ name: "Purchasable Normally?", value: !currentPack["limited"] },
                     { name: "Description", value: currentPack["description"] },
                 )
                 .setImage(currentPack["pack"])

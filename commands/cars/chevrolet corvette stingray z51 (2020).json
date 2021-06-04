@@ -1,0 +1,54 @@
+{
+    "rq": 92,
+    "make": "Chevrolet",
+    "model": "Corvette Stingray Z51",
+    "modelYear": 2020,
+    "country": "US",
+    "topSpeed": 184,
+    "0to60": 3.0,
+    "handling": 92,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Supercar"],
+    "isPrize": false,
+
+    "weight": 1643,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 68.18,
+    "ola": 73.33,
+    "description": "The first ever mid-engine Corvette built to compete vs the other mid engine supercars. Card by Connor.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820223074649112616/S.ChevyCorvetteStingrayZ51C8.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820223217049403392/S.ChevyCorvetteC8.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820223222393339914/S.ChevyCorvetteC8-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820223230236819456/S.ChevyCorvetteC8-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820223270371983390/S.ChevyCorvetteC8-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820223256472190986/S.ChevyCorvetteC8-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820223241963700255/S.ChevyCorvetteC8-699.png",
+
+    "333TopSpeed": 187,
+    "3330to60": 2.9,
+    "333Handling": 95,
+
+    "666TopSpeed": 190,
+    "6660to60": 2.7,
+    "666Handling": 98,
+
+    "996TopSpeed": 192,
+    "9960to60": 2.6,
+    "996Handling": 98,
+
+    "969TopSpeed": 192,
+    "9690to60": 2.7,
+    "969Handling": 102,
+
+    "699TopSpeed": 190,
+    "6990to60": 2.6,
+    "699Handling": 102
+}

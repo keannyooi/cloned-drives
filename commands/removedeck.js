@@ -44,7 +44,7 @@ module.exports = {
         });
 
         if (searchResults.length > 1) {
-            var deckList = "";
+            let deckList = "";
             for (i = 1; i <= searchResults.length; i++) {
                 deckList += `${i} - ${searchResults[i - 1].name} \n`;
             }
@@ -64,7 +64,7 @@ module.exports = {
                 })
                     .then(collected => {
 						collected.first().delete();
-                        if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
+                        if (isNaN(collected.first().content) || parseInt(collected.first().content) > searchResults.length || parseInt(collected.first().content) < 1) {
 							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                             const errorMessage = new Discord.MessageEmbed()
                                 .setColor("#fc0303")
@@ -75,8 +75,7 @@ module.exports = {
                             return currentMessage.edit(errorMessage);
                         }
                         else {
-                            let currentDeck = searchResults[parseInt(collected.first()) - 1].deck;
-                            removeDeck(currentDeck, currentMessage);
+                            removeDeck(searchResults[parseInt(collected.first().content) - 1], currentMessage);
                         }
                     })
                     .catch(() => {

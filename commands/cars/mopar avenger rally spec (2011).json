@@ -1,0 +1,54 @@
+{
+    "rq": 72,
+    "make": ["Mopar", "Dodge"],
+    "model": "Avenger Rally Spec",
+    "modelYear": 2011,
+    "country": "US",
+    "topSpeed": 121,
+    "0to60": 5.5,
+    "handling": 77,
+    "driveType": "FWD",
+    "tyreType": "Off-Road",
+    "tags": ["Motorsport"],
+    "isPrize": false,
+
+    "weight": 1428,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 80.90,
+    "ola": 90.91,
+    "description": "Card by McNuggets.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/840384398566359040/anvenger_rally.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/840382866948620318/rally_stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/840382891079106560/rally_1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/840382932131512320/rally_2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/840383070938857482/rally_332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/840383043804856321/rally_323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/840382954622681148/rally_233.png",
+
+    "333TopSpeed": 125,
+    "3330to60": 5.2,
+    "333Handling": 80,
+
+    "666TopSpeed": 130,
+    "6660to60": 5.0,
+    "666Handling": 82,
+
+    "996TopSpeed":134,
+    "9960to60": 4.7,
+    "996Handling": 82,
+
+    "969TopSpeed": 134,
+    "9690to60": 5.0,
+    "969Handling": 85,
+
+    "699TopSpeed": 130,
+    "6990to60": 4.7,
+    "699Handling": 85
+}

@@ -1,0 +1,54 @@
+{
+    "rq": 96,
+    "make": "McLaren",
+    "model": "P1 GTR",
+    "modelYear": 2015,
+    "country": "GB",
+    "topSpeed": 234,
+    "0to60": 2.4,
+    "handling": 97,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["The Royal Collection", "HyperCar", "Ultra Expensive", "Track Day"],
+    "isPrize": true,
+
+    "weight": 1490,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 114.29,
+    "ola": 116.67,
+    "description": "A non road-legal P1 only sold to owners of the P1. Card by Exist",
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/830687469392494632/CD_McLaren_P1_GTR.png?width=1410&height=878",
+    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/830687618135752714/CD_McLaren_P1_GTR_000.png?width=1410&height=878",
+    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/830687621037555742/CD_McLaren_P1_GTR_333.png?width=1410&height=878",
+    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/830687627053105183/CD_McLaren_P1_GTR_666.png?width=1410&height=878",
+    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/830687646157504582/CD_McLaren_P1_GTR_996.png?width=1410&height=878",
+    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/830687643897036800/CD_McLaren_P1_GTR_969.png?width=1410&height=878",
+    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/830687633838440468/CD_McLaren_P1_GTR_699.png?width=1410&height=878",
+
+    "333TopSpeed": 236,
+    "3330to60": 2.3,
+    "333Handling": 100,
+
+    "666TopSpeed": 238,
+    "6660to60": 2.2,
+    "666Handling": 103,
+
+    "996TopSpeed": 241,
+    "9960to60": 2.0,
+    "996Handling": 103,
+
+    "969TopSpeed": 241,
+    "9690to60": 2.2,
+    "969Handling": 108,
+
+    "699TopSpeed": 238,
+    "6990to60": 2.0,
+    "699Handling": 108
+}

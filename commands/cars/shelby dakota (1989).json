@@ -1,0 +1,54 @@
+{
+    "rq": 25,
+    "make": "Shelby",
+    "model": "Dakota",
+    "modelYear": 1989,
+    "country": "US",
+    "topSpeed": 113,
+    "0to60": 8.6,
+    "handling": 70,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1645,
+    "gc": "Medium",
+    "seatCount": 3,
+    "bodyStyle": "Pickup",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 36.10,
+    "ola": 59.77,
+    "description": "175bhp in a Dakota. Card by Johnny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/842482952894021642/Shelby-Dakota-V2.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/828596710108168192/Shelby-Dakota.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/828596714587291678/Shelby-Dakota-1-star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/828596717674299412/Shelby-Dakota-2-star.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/828596739921281065/Shelby-Dakota-332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/828596731486273556/Shelby-Dakota-323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/828596724434993152/Shelby-Dakota-233.png",
+
+    "333TopSpeed": 118,
+    "3330to60": 8.2,
+    "333Handling": 72,
+
+    "666TopSpeed": 122,
+    "6660to60": 7.7,
+    "666Handling": 75,
+
+    "996TopSpeed": 127,
+    "9960to60": 7.3,
+    "996Handling": 75,
+
+    "969TopSpeed": 127,
+    "9690to60": 7.7,
+    "969Handling": 78,
+
+    "699TopSpeed": 122,
+    "6990to60": 7.3,
+    "699Handling": 78
+}

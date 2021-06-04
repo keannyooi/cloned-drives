@@ -25,94 +25,147 @@ module.exports = {
             return response.author.id === message.author.id;
         };
 
-        let carName = args.map(i => i.toLowerCase());
-		const searchResults = new Set(garage);
-        searchResults.forEach(function (garageCar) {
-            if (carName.every(part => garageCar.carFile.includes(part)) === false || garageCar["000"] + garageCar["333"] + garageCar["666"] + garageCar["996"] + garageCar["969"] + garageCar["699"] === 0) {
-				searchResults.delete(garageCar);
+		if (args[0].toLowerCase() === "random") {
+			let randomCar = garage[Math.floor(Math.random() * garage.length)];
+			let randomTune = Object.keys(randomCar).filter(h => randomCar[h] > 0);
+			setHand(randomCar, randomTune);
+		}
+		else {
+			let carName, tune;
+			if (args[args.length - 1] === "000" || args[args.length - 1] === "333" || args[args.length - 1] === "666" || args[args.length - 1] === "996" || args[args.length - 1] === "969" || args[args.length - 1] === "699") {
+				carName = args.slice(0, args.length - 1).map(i => i.toLowerCase());
+				tune = args[args.length - 1];
 			}
-        });
-
-        if (searchResults.size > 1) {
-            let carList = "";
-			let redirect = [];
-			let i = 1;
-           	searchResults.forEach(function (garageCar) {
-                const car = require(`./cars/${garageCar.carFile}`);
-				let make = car["make"];
-				if (typeof make === "object") {
-					make = car["make"][0];
+			else {
+				carName = args.map(i => i.toLowerCase());
+			}
+			
+			const searchResults = new Set(garage);
+			searchResults.forEach(function (garageCar) {
+				if (carName.every(part => garageCar.carFile.includes(part)) === false || garageCar["000"] + garageCar["333"] + garageCar["666"] + garageCar["996"] + garageCar["969"] + garageCar["699"] === 0) {
+					searchResults.delete(garageCar);
 				}
-                carList += `${i} - ${make} ${car["model"]} (${car["modelYear"]})\n`;
-				redirect[i - 1] = garageCar;
-				i++;
-            });
+			});
 
-            if (carList.length > 2048) {
-				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                const errorMessage = new Discord.MessageEmbed()
-                    .setColor("#fc0303")
-                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                    .setTitle("Error, too many search results.")
-                    .setDescription("Due to Discord's embed limitations, the bot isn't able to show the full list of search results. Try again with a more specific keyword.")
-                    .setTimestamp();
-                return message.channel.send(errorMessage);
-            }
+			if (searchResults.size > 1) {
+				let carList = "";
+				let redirect = [];
+				let i = 1;
+				searchResults.forEach(function (garageCar) {
+					const car = require(`./cars/${garageCar.carFile}`);
+					let make = car["make"];
+					if (typeof make === "object") {
+						make = car["make"][0];
+					}
+					carList += `${i} - ${make} ${car["model"]} (${car["modelYear"]})\n`;
+					redirect[i - 1] = garageCar;
+					i++;
+				});
 
-            const infoScreen = new Discord.MessageEmbed()
-                .setColor("#34aeeb")
-                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle("Multiple cars found, please type one of the following.")
-                .setDescription(carList);
+				if (carList.length > 2048) {
+					message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+					const errorMessage = new Discord.MessageEmbed()
+						.setColor("#fc0303")
+						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+						.setTitle("Error, too many search results.")
+						.setDescription("Due to Discord's embed limitations, the bot isn't able to show the full list of search results. Try again with a more specific keyword.")
+						.setTimestamp();
+					return message.channel.send(errorMessage);
+				}
 
-            message.channel.send(infoScreen).then(currentMessage => {
-                message.channel.awaitMessages(filter, {
-                    max: 1,
-                    time: waitTime,
-                    errors: ["time"]
-                })
-                    .then(collected => {
-						if (message.channel.type === "text") {
-							collected.first().delete();
-						}
-                        if (isNaN(collected.first().content) || parseInt(collected.first().content) > searchResults.size || parseInt(collected.first().content) < 1) {
-							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
-                            const errorMessage = new Discord.MessageEmbed()
-                                .setColor("#fc0303")
-                                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                                .setTitle("Error, invalid integer provided.")
-                                .setDescription("It looks like your response was either not a number or not part of the selection.")
-                                .setTimestamp();
-                            return currentMessage.edit(errorMessage);
-                        }
-                        else {
-                            selectUpgrade(redirect[parseInt(collected.first().content) - 1], currentMessage);
-                        }
-                    })
-                    .catch(() => {
-						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                        const cancelMessage = new Discord.MessageEmbed()
-                            .setColor("#34aeeb")
-                            .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                            .setTitle("Action cancelled automatically.")
-                            .setTimestamp();
-                        return currentMessage.edit(cancelMessage);
-                    });
-            });
-        }
-        else if (searchResults.size > 0) {
-            selectUpgrade(Array.from(searchResults)[0]);
-        }
-        else {
+				const infoScreen = new Discord.MessageEmbed()
+					.setColor("#34aeeb")
+					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+					.setTitle("Multiple cars found, please type one of the following.")
+					.setDescription(carList);
+
+				message.channel.send(infoScreen).then(currentMessage => {
+					message.channel.awaitMessages(filter, {
+						max: 1,
+						time: waitTime,
+						errors: ["time"]
+					})
+						.then(collected => {
+							if (message.channel.type === "text") {
+								collected.first().delete();
+							}
+							if (isNaN(collected.first().content) || parseInt(collected.first().content) > searchResults.size || parseInt(collected.first().content) < 1) {
+								message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
+								const errorMessage = new Discord.MessageEmbed()
+									.setColor("#fc0303")
+									.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+									.setTitle("Error, invalid integer provided.")
+									.setDescription("It looks like your response was either not a number or not part of the selection.")
+									.setTimestamp();
+								return currentMessage.edit(errorMessage);
+							}
+							else {
+								if (tune === undefined) {
+									selectUpgrade(redirect[parseInt(collected.first().content) - 1], currentMessage);
+								}
+								else if (!redirect[parseInt(collected.first().content) - 1][tune]) {
+									throwError(redirect[parseInt(collected.first().content) - 1], currentMessage);
+								}
+								else {
+									setHand(redirect[parseInt(collected.first().content) - 1], tune, currentMessage);
+								}
+							}
+						})
+						.catch(() => {
+							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+							const cancelMessage = new Discord.MessageEmbed()
+								.setColor("#34aeeb")
+								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+								.setTitle("Action cancelled automatically.")
+								.setTimestamp();
+							return currentMessage.edit(cancelMessage);
+						});
+				});
+			}
+			else if (searchResults.size > 0) {
+				if (tune === undefined) {
+					selectUpgrade(Array.from(searchResults)[0]);
+				}
+				else if (!Array.from(searchResults)[0][tune]) {
+					throwError(Array.from(searchResults)[0]);
+				}
+				else {
+					setHand(Array.from(searchResults)[0], tune);
+				}
+			}
+			else {
+				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
+				const errorMessage = new Discord.MessageEmbed()
+					.setColor("#fc0303")
+					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+					.setTitle("Error, 404 car not found.")
+					.setDescription("Well that sucks.")
+					.setTimestamp();
+				return message.channel.send(errorMessage);
+			}
+		}
+
+		function throwError(currentCar, currentMessage) {
+			console.log(currentCar);
+			let count = Object.keys(currentCar).filter(m => !isNaN(currentCar[`${m}`]) && currentCar[`${m}`] >= 1);
+			let upgradeList = "";
+			for (i = 0; i < count.length; i++) {
+				upgradeList += `\`${count[i]}\`x${currentCar[count[i]]}, `;
+			}
 			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
-            const errorMessage = new Discord.MessageEmbed()
-                .setColor("#fc0303")
-                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle("Error, 404 car not found.")
-                .setDescription("Well that sucks.")
-                .setTimestamp();
-            return message.channel.send(errorMessage);
-        }
+			const errorMessage = new Discord.MessageEmbed()
+				.setColor("#fc0303")
+				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+				.setTitle("Error, it looks like you don't have this car in the requested tune.")
+				.addField("Current Tunes", upgradeList.slice(0, -2))
+				.setTimestamp();
+			if (currentMessage) {
+				return currentMessage.edit(errorMessage);
+			}
+			else {
+				return message.channel.send(errorMessage);
+			}
+		}
 
 		async function selectUpgrade(currentCar, currentMessage) {
 			let isOne = Object.keys(currentCar).filter(m => !isNaN(currentCar[m]) && currentCar[m] >= 1);

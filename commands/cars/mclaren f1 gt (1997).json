@@ -1,0 +1,54 @@
+{
+    "rq": 87,
+    "make": "Mclaren",
+    "model": "F1 GT",
+    "modelYear": 1997,
+    "country": "GB",
+    "topSpeed": 242,
+    "0to60": 3.1,
+    "handling": 92,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Ultra Expensive", "The Royal Collection"],
+    "isPrize": true,
+
+    "weight": 1138,
+    "gc": "Low",
+    "seatCount": 3,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 92.54,
+    "ola": 122.58,
+    "description": "When the tail is long :flushed:. Card by Exist",
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/828539131940306994/CD_McLaren_F1_GT.png?width=1410&height=878",
+    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/828539354229637160/CD_McLaren_F1_GT_000.png?width=1410&height=878",
+    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/828539361183793173/CD_McLaren_F1_GT_333.png?width=1410&height=878",
+    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/828539368883879966/CD_McLaren_F1_GT_666.png?width=1410&height=878",
+    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/828539393983119380/CD_McLaren_F1_GT_996.png?width=1410&height=878",
+    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/828539385435127828/CD_McLaren_F1_GT_969.png?width=1410&height=878",
+    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/828539380225409054/CD_McLaren_F1_GT_699.png?width=1410&height=878",
+
+    "333TopSpeed": 244,
+    "3330to60": 2.9,
+    "333Handling": 95,
+
+    "666TopSpeed": 246,
+    "6660to60": 2.8,
+    "666Handling": 98,
+
+    "996TopSpeed": 248,
+    "9960to60": 2.6,
+    "996Handling": 98,
+
+    "969TopSpeed": 248,
+    "9690to60": 2.8,
+    "969Handling": 102,
+
+    "699TopSpeed": 246,
+    "6990to60": 2.6,
+    "699Handling": 102
+}

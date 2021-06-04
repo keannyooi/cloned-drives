@@ -2,6 +2,8 @@
 	"packName": "American Pack",
 	"description": "A pack of 5 American cars, known for being big (size and engine wise) and their poor fuel economy.",
 	"price": 60000,
+	"limited": false,
+	"repetition": 1,
 	"pack": "https://cdn.discordapp.com/attachments/716917404868935691/718710752336150538/american_pack.png",
 	
 	"filter": {
@@ -11,11 +13,13 @@
 			"end": 3000
 		},
 		"country": "US",
-		"tag": "None",
-		"driveType": "None",
-		"tyreType": "None",
-		"fuelType": "None",
-		"bodyStyle": "None"
+		"tags": "None",
+        "driveType": "None",
+        "tyreType": "None",
+		"enginePos": "None",
+        "fuelType": "None",
+        "bodyStyle": "None",
+		"seatCount": "None"
 	},
 
 	"packSequence": [

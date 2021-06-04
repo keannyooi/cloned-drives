@@ -9,11 +9,11 @@
     "handling": 88,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [],
+    "tags": ["Supercar"],
     "isPrize": true,
 
     "weight": 1510,
-    "gc": "Low",
+    "gc": "Medium",
     "seatCount": 2,
     "bodyStyle": "Coupe",
     "tcs": true,

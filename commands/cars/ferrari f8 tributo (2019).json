@@ -1,0 +1,54 @@
+{
+    "rq": 90,
+    "make": "Ferrari",
+    "model": "F8 Tributo",
+    "modelYear": 2019,
+    "country": "IT",
+    "topSpeed": 210,
+    "0to60": 2.8,
+    "handling": 92,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Supercar"],
+    "isPrize": false,
+
+    "weight": 1425,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 96.55,
+    "ola": 92.86,
+    "description": "As it stands, the F8 Tributo is a suitably stunning send-off for the V8 bloodline. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/838136274988171264/F8Tributo.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/838137330228789309/F8tribute.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/838137336122441808/F8tribute333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/838137342861639711/F8tribute666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/838137372821946388/F8tribute996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/838137360951541800/F8tribute969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/838137352223981579/F8tribute699.png",
+
+    "333TopSpeed": 212,
+    "3330to60": 2.7,
+    "333Handling": 95,
+
+    "666TopSpeed": 215,
+    "6660to60": 2.5,
+    "666Handling": 98,
+
+    "996TopSpeed": 217,
+    "9960to60": 2.4,
+    "996Handling": 98,
+
+    "969TopSpeed": 217,
+    "9690to60": 2.5,
+    "969Handling": 102,
+
+    "699TopSpeed": 215,
+    "6990to60": 2.4,
+    "699Handling": 102
+}

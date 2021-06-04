@@ -41,19 +41,14 @@ module.exports = {
             return message.channel.send(errorMessage);
         }
 
-        var trackset = args[0].toLowerCase();
-        for (i = 1; i < args.length; i++) {
-            trackset += (" " + args[i].toLowerCase());
-        }
-
-        var trackset = args.map(i => i.toLowerCase());
-        var searchResults = tracksets.filter(function (track) {
+        let trackset = args.map(i => i.toLowerCase());
+        let searchResults = tracksets.filter(function (track) {
             return trackset.every(part => track.includes(part));
         });
 
-		var currentTrack;
+		let currentTrack;
         if (searchResults.length > 1) {
-            var trackList = "";
+            let trackList = "";
             for (i = 1; i <= searchResults.length; i++) {
                 let track = require(`./tracksets/${searchResults[i - 1]}`);
                 trackList += `${i} - ` + track["trackName"] + "\n";
@@ -76,7 +71,7 @@ module.exports = {
                 .setTitle("Multiple tracksets found, please type one of the following.")
                 .setDescription(trackList)
                 .setTimestamp();
-			console.log(message.client.execList);
+
             message.channel.send(infoScreen).then(currentMessage => {
                 message.channel.awaitMessages(filter, {
                     max: 1,
@@ -115,10 +110,10 @@ module.exports = {
                             .setTitle("Action cancelled automatically.")
                             .setTimestamp();
                         if (message.channel.type === "text") {
-							return currentMessage.edit(errorMessage);
+							return currentMessage.edit(cancelMessage);
 						}
 						else {
-							return message.channel.send(errorMessage);
+							return message.channel.send(cancelMessage);
 						}
                     });
             });
@@ -342,10 +337,8 @@ module.exports = {
 						}
 					}
 
-                    const playerList = createList(player);
-                    const opponentList = createList({ carFile: currentCar, gearingUpgrade: upgrade[0], engineUpgrade: upgrade[1], chassisUpgrade: upgrade[2] });
-                    const playerCar = createCar(player);
-                    const opponentCar = createCar({ carFile: currentCar, gearingUpgrade: upgrade[0], engineUpgrade: upgrade[1], chassisUpgrade: upgrade[2] });
+                    const [playerCar, playerList] = createCar(player);
+                    const [opponentCar, opponentList] = createCar({ carFile: currentCar, gearingUpgrade: upgrade[0], engineUpgrade: upgrade[1], chassisUpgrade: upgrade[2] });
                     const intermission = new Discord.MessageEmbed()
                         .setColor("#34aeeb")
                         .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -366,38 +359,14 @@ module.exports = {
                     return raceCommand.race(message, playerCar, opponentCar, currentTrack);
                 });
 
-            function createList(currentCar) {
+            function createCar(currentCar) {
                 const car = require(`./cars/${currentCar.carFile}`);
-                const rarity = rarityCheck(car);
+				const rarity = rarityCheck(car);
 				let make = car["make"];
 				if (typeof make === "object") {
 					make = car["make"][0];
 				}
-                let carSpecs = `(${rarity} ${car["rq"]}) ${make} ${car["model"]} (${car["modelYear"]}) [${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}]\n`;
 
-                if (currentCar.gearingUpgrade > 0) {
-                    carSpecs += `Top Speed: ${car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}TopSpeed`]}MPH\n`;
-                    carSpecs += `0-60MPH: ${car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}0to60`]} sec\n`;
-                    carSpecs += `Handling: ${car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}Handling`]}\n`;
-                }
-                else {
-                    carSpecs += `Top Speed: ${car["topSpeed"]}MPH\n`;
-                    carSpecs += `0-60MPH: ${car["0to60"]} sec\n`;
-                    carSpecs += `Handling: ${car["handling"]}\n`;
-                }
-                carSpecs += `Drive Type: ${car["driveType"]}\n`;
-                carSpecs += `${car["tyreType"]} Tyres\n`;
-                carSpecs += `Weight: ${car["weight"]}kg\n`;
-                carSpecs += `Ground Clearance: ${car["gc"]}\n`;
-                carSpecs += `TCS: ${car["tcs"]}, ABS: ${car["abs"]}\n`;
-                carSpecs += `MRA: ${car["mra"]}\n`;
-                carSpecs += `OLA: ${car["ola"]}\n`;
-
-                return carSpecs;
-            }
-
-            function createCar(currentCar) {
-                const car = require(`./cars/${currentCar.carFile}`);
                 const carModule = {
                     topSpeed: car["topSpeed"],
                     accel: car["0to60"],
@@ -418,13 +387,39 @@ module.exports = {
                     carModule.accel = car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}0to60`];
                     carModule.handling = car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}Handling`];
                 }
-                if (carModule.topSpeed < 100) {
-                    carModule.mra = 0;
-                }
-                if (carModule.topSpeed < 30) {
-                    carModule.ola = 0;
-                }
-                return carModule;
+
+				let carSpecs = `(${rarity} ${car["rq"]}) ${make} ${car["model"]} (${car["modelYear"]}) [${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}]\n`;
+				carSpecs += `Top Speed: ${carModule.topSpeed}MPH\n`;
+				if (carModule.topSpeed < 60) {
+					carModule.accel = 99.9;
+					carSpecs += "0-60MPH: N/A\n";
+				}
+				else {
+					carSpecs += `0-60MPH: ${carModule.accel} sec\n`;
+				}
+                carSpecs += `Handling: ${carModule.handling}\n`;
+				carSpecs += `Drive Type: ${carModule.driveType}\n`;
+                carSpecs += `${carModule.tyreType} Tyres\n`;
+                carSpecs += `Weight: ${carModule.weight}kg\n`;
+                carSpecs += `Ground Clearance: ${carModule.gc}\n`;
+                carSpecs += `TCS: ${carModule.tcs}, ABS: ${carModule.abs}\n`;
+
+				if (carModule.topSpeed < 100) {
+					carModule.mra = 0;
+					carSpecs += "MRA: N/A\n";
+				}
+				else {
+					carSpecs += `MRA: ${carModule.mra}\n`;
+				}
+				if (carModule.topSpeed < 30) {
+					carModule.ola = 0;
+					carSpecs += "OLA: N/A\n";
+				}
+				else {
+					carSpecs += `OLA: ${carModule.ola}\n`;
+				}
+
+                return [carModule, carSpecs];
             }
 
             function rarityCheck(currentCar) {

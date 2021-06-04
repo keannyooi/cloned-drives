@@ -55,7 +55,7 @@ module.exports = {
             }
         }
 
-        await db.push(`acc${message.author.id}.decks`, { name: deckName, hand: ["None", "None", "None", "None", "None"] });
+        await db.push(`acc${message.author.id}.decks`, { name: deckName, hand: ["None", "None", "None", "None", "None"], tunes: ["000", "000", "000", "000", "000"] });
         const infoScreen = new Discord.MessageEmbed()
             .setColor("#34aeeb")
             .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))

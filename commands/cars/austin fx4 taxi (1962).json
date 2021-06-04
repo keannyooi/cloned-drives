@@ -1,0 +1,54 @@
+{
+    "rq": 4,
+    "make": "Austin",
+    "model": "FX4 Taxi",
+    "modelYear": 1962,
+    "country": "GB",
+    "topSpeed": 75,
+    "0to60": 34.1,
+    "handling": 58,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Royal Collection", "Style Icon"],
+    "isPrize": false,
+
+    "weight": 1600,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Saloon",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 0.00,
+    "ola": 39.30,
+    "description": "The Classic London Taxi. Card by Exist",
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/847442246696697876/CD_Austin_FX4_Taxi.png",
+    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/847442300916203550/CD_Austin_FX4_Taxi_000.png",
+    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/847442316759007272/CD_Austin_FX4_Taxi_333.png",
+    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/847442317782024253/CD_Austin_FX4_Taxi_666.png",
+    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/847442339253321758/CD_Austin_FX4_Taxi_996.png",
+    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/847442334614683648/CD_Austin_FX4_Taxi_969.png",
+    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/847442326958768198/CD_Austin_FX4_Taxi_699.png",
+
+    "333TopSpeed": 82,
+    "3330to60": 32.4,
+    "333Handling": 60,
+
+    "666TopSpeed": 89,
+    "6660to60": 30.7,
+    "666Handling": 62,
+
+    "996TopSpeed": 96,
+    "9960to60": 29.0,
+    "996Handling": 62,
+
+    "969TopSpeed": 96,
+    "9690to60": 30.7,
+    "969Handling": 64,
+
+    "699TopSpeed": 89,
+    "6990to60": 29.0,
+    "699Handling": 64
+}

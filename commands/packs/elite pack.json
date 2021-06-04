@@ -1,7 +1,9 @@
 {
     "packName": "Elite Pack",
-    "description": "A pack of 5 super rares or better",
+    "description": "A pack of 5 super rares or better.",
     "price": 225000,
+	"limited": false,
+	"repetition": 1,
     "pack": "https://media.discordapp.net/attachments/711793583677767750/802413719258660884/ELITE_PACK.png",
     
     "filter": {
@@ -11,11 +13,13 @@
             "end": 3000
         },
         "country": "None",
-        "tag": "None",
+        "tags": "None",
         "driveType": "None",
         "tyreType": "None",
+		"enginePos": "None",
         "fuelType": "None",
-        "bodyStyle": "None"
+        "bodyStyle": "None",
+		"seatCount": "None"
     },
 
     "packSequence": [

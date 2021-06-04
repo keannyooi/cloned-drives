@@ -26,7 +26,7 @@ module.exports = {
                 .setColor("#fc0303")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                 .setTitle("Error, index provided is invalid or not a number.")
-                .setDescription("Indexes must be a number and must be between 1 to 5.")
+                .setDescription("Indexes must be a number between 1 to 5.")
                 .setTimestamp();
             return message.channel.send(errorMessage);
         }
@@ -35,9 +35,10 @@ module.exports = {
             return response.author.id === message.author.id;
         };
         const searchResults = playerData.decks.filter(deck => {
-			let currentName = deck.name.toLowerCase();
-			return currentName.includes(deckName);
+			return deck.name.toLowerCase().includes(deckName);
 		});
+
+		console.log(searchResults);
 
         if (searchResults.length > 1) {
             let deckList = "";
@@ -70,7 +71,7 @@ module.exports = {
                         return currentMessage.edit(errorMessage);
                     }
                     else {
-                        checkCar(earchResults[parseInt(collected.first()) - 1], currentMessage);
+                        checkCar(searchResults[parseInt(collected.first()) - 1], currentMessage);
                     }
                 })
                 .catch(() => {
@@ -98,34 +99,18 @@ module.exports = {
         }
 
         async function checkCar(currentDeck, currentMessage) {
-            const garage = playerData.garage.filter(function (garageCar) {
-                let upgrade = `${garageCar.gearingUpgrade}${garageCar.gearingUpgrade}${garageCar.gearingUpgrade}`
-                let find = currentDeck.hand.find(function (deckCar) {
-                    let currentUpgrade = `${deckCar.gearingUpgrade}${deckCar.gearingUpgrade}${deckCar.gearingUpgrade}`
-                    return deckCar.carFile === garageCar.carFile && upgrade === currentUpgrade;
-                });
-                return find === undefined;
+            const garage = playerData.garage.map(function (garageCar) {
+                for (let i = 0; i < 5; i++) {
+					if (garageCar.carFile === currentDeck.hand[i]) {
+						garageCar[currentDeck.tunes[i]] -= 1;
+					}
+				}
+				return garageCar;
             });
 
             let carName = args.slice(2, args.length).map(i => i.toLowerCase());
             let searchResults = garage.filter(function (garageCar) {
-                if (carName.every(part => garageCar.carFile.includes(part))) {
-					let dupe = garageCar;
-					for (let i = 0; i < currentDeck.hand.length; i++) {
-						if (currentDeck.hand[i].carFile === dupe.carFile) {
-							dupe[`${currentDeck.hand[i].gearingUpgrade}${currentDeck.hand[i].engineUpgrade}${currentDeck.hand[i].chassisUpgrade}`] -= 1;
-						}
-					}
-					if (dupe["000"] + dupe["333"] + dupe["666"] + dupe["996"] + dupe["969"] + dupe["699"] <= 0) {
-						return false;
-					}
-					else {
-						return true;
-					}
-				}
-				else {
-					return false;
-				}
+                return carName.every(part => garageCar.carFile.includes(part)) && garageCar["000"] + garageCar["333"] + garageCar["666"] + garageCar["699"] + garageCar["969"] + garageCar["996"] > 0;
             });
 
             if (searchResults.length > 1) {
@@ -136,7 +121,7 @@ module.exports = {
 					if (typeof make === "object") {
 						make = car["make"][0];
 					}
-                    carList += `${i} - ${make} ${car["model"]} (${car["modelYear"]}\n`;
+                    carList += `${i} - ${make} ${car["model"]} (${car["modelYear"]})\n`;
                 }
 
                 if (carList.length > 2048) {
@@ -160,7 +145,7 @@ module.exports = {
                 else {
                     message.channel.send(infoScreen);
                 }
-                message.channel.awaitMessages(filter, {
+                await message.channel.awaitMessages(filter, {
                     max: 1,
                     time: 30000,
                     errors: ["time"]
@@ -284,7 +269,8 @@ module.exports = {
             const currentName = `${make} ${car["model"]} (${car["modelYear"]}) [${upgrade}]`;
             const racehud = car[`racehud${upgrade}`];
 
-            currentDeck.hand[index - 1] = { carFile: currentCar.carFile, gearingUpgrade: parseInt(upgrade[0]), engineUpgrade: parseInt(upgrade[1]), chassisUpgrade: parseInt(upgrade[2]) };
+            currentDeck.hand[index - 1] = currentCar.carFile;
+			currentDeck.tunes[index - 1] = upgrade;
             await db.set(`acc${message.author.id}.decks`, playerData.decks);
 
 			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);

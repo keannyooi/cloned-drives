@@ -15,7 +15,7 @@ const packFiles = fs.readdirSync("./commands/packs").filter(file => file.endsWit
 
 module.exports = {
 	name: "editevent",
-	usage: "<event name> | <criteria> | <value>",
+	usage: "<event name> | <criteria> | (situationally optional) <value>",
 	args: 2,
 	isExternal: false,
 	adminOnly: false,
@@ -23,7 +23,6 @@ module.exports = {
 	async execute(message, args) {
 		const db = message.client.db;
 		const events = await db.get("events");
-		let criteria = args[1].toLowerCase();
 		let infoScreen;
 		let keyword = args[0].toLowerCase();
 		const filter = response => {
@@ -41,8 +40,13 @@ module.exports = {
 			return message.channel.send(errorMessage);
 		}
 
-		const searchResults = events.filter(function(event) {
-			return event.name.toLowerCase().includes(keyword);
+		const searchResults = Object.values(events).filter(event => {
+			if (typeof event === "object") {
+				return event.name.toLowerCase().includes(keyword);
+			}
+			else {
+				return false;
+			}
 		});
 
 		if (searchResults.length > 1) {
@@ -66,7 +70,7 @@ module.exports = {
 				})
 					.then(collected => {
 						collected.first().delete();
-						if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
+						if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length || parseInt(collected.first().content) < 1) {
 							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 							const errorMessage = new Discord.MessageEmbed()
 								.setColor("#fc0303")
@@ -77,8 +81,7 @@ module.exports = {
 							return currentMessage.edit(errorMessage);
 						}
 						else {
-							let currentEvent = searchResults[parseInt(collected.first()) - 1];
-							editEvent(currentEvent, criteria, currentMessage);
+							editEvent(searchResults[parseInt(collected.first()) - 1], currentMessage);
 						}
 					})
 					.catch(() => {
@@ -93,7 +96,7 @@ module.exports = {
 			});
 		}
 		else if (searchResults.length > 0) {
-			editEvent(searchResults[0], criteria);
+			editEvent(searchResults[0]);
 		}
 		else {
 			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
@@ -106,16 +109,16 @@ module.exports = {
 			return message.channel.send(errorMessage);
 		}
 
-		async function editEvent(currentEvent, criteria, currentMessage) {
-			let index;
+		async function editEvent(currentEvent, currentMessage) {
+			let index, criteria = args[1].toLowerCase();
 			if (criteria.startsWith("add") || criteria.startsWith("remove") || criteria.startsWith("set")) {
 				if (isNaN(args[2]) || args[2] < 1 || args[2] > currentEvent.roster.length) {
 					message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 					const errorScreen = new Discord.MessageEmbed()
 						.setColor("#fc0303")
 						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-						.setTitle("Error, roster index provided not a number.")
-						.setDescription("Roster indexes must be a number.")
+						.setTitle("Error, roster index provided is either not a number or inapplicable.")
+						.setDescription(`For this event, roster indexes must be a number between 1 and ${currentEvent.roster.length}.`)
 						.setTimestamp();
 					if (currentMessage) {
 						return currentMessage.edit(errorScreen);
@@ -131,6 +134,22 @@ module.exports = {
 
 			switch (criteria) {
 				case "name":
+					if (!args[2]) {
+						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+						const errorScreen = new Discord.MessageEmbed()
+							.setColor("#fc0303")
+							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+							.setTitle("Error, arguments provided incomplete.")
+							.setDescription("What are you trying to name the event as?")
+							.setTimestamp();
+						if (currentMessage) {
+							return currentMessage.edit(errorScreen);
+						}
+						else {
+							return message.channel.send(errorScreen);
+						}
+					}
+
 					let oldName = currentEvent.name;
 					let eventName = args.slice(2, args.length).join(" ");
 					currentEvent.name = eventName;
@@ -141,15 +160,14 @@ module.exports = {
 						.setTitle(`Successfully changed the event name from ${oldName} to ${eventName}!`)
 						.setTimestamp();
 					break;
-				case "isactive":
-					let value = args[2].toLowerCase();
-					if (value !== "true" && value !== "false") {
+				case "duration":
+					if (currentEvent.isActive) {
 						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 						const errorScreen = new Discord.MessageEmbed()
 							.setColor("#fc0303")
 							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-							.setTitle("Error, argument provided is not a boolean.")
-							.setDescription("Booleans only have 2 states, true or false.")
+							.setTitle("Error, this attribute cannot be edited while the event is live.")
+							.setDescription("Just deal with it ok?")
 							.setTimestamp();
 						if (currentMessage) {
 							return currentMessage.edit(errorScreen);
@@ -159,17 +177,63 @@ module.exports = {
 						}
 					}
 
-					currentEvent.isActive = JSON.parse(value);
-					if (currentEvent.isActive === true) {
-						message.client.channels.cache.get("798776756952629298").send(`**The ${currentEvent.name} event has officially started!**`); 
-					}     
+					if (!args[2]) {
+						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+						const errorScreen = new Discord.MessageEmbed()
+							.setColor("#fc0303")
+							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+							.setTitle("Error, arguments provided incomplete.")
+							.setDescription("How long, in days, are you trying to make the event last?")
+							.setTimestamp();
+						if (currentMessage) {
+							return currentMessage.edit(errorScreen);
+						}
+						else {
+							return message.channel.send(errorScreen);
+						}
+					}
+
+					let duration = args[2];
+					if ((duration !== "unlimited" && isNaN(duration)) || parseInt(duration) < 1) {
+						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+						const errorScreen = new Discord.MessageEmbed()
+							.setColor("#fc0303")
+							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+							.setTitle("Error, duration provided is invalid.")
+							.setDescription("The duration in days must be a positive number. If you want an event to last forever, just type `unlimited`.")
+							.setTimestamp();
+						if (currentMessage) {
+							return currentMessage.edit(errorScreen);
+						}
+						else {
+							return message.channel.send(errorScreen);
+						}
+					}
+
+					currentEvent.timeLeft = parseInt(duration);
 					infoScreen = new Discord.MessageEmbed()
 						.setColor("#03fc24")
 						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-						.setTitle(`Successfully set ${currentEvent.name}'s active status to \`${value}\`!`)
+						.setTitle(`Successfully changed the duration of the ${currentEvent.name} to \`${duration} day(s)\`!`)
 						.setTimestamp();
 					break;
 				case "background": {
+					if (!args[2]) {
+						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+						const errorScreen = new Discord.MessageEmbed()
+							.setColor("#fc0303")
+							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+							.setTitle("Error, arguments provided incomplete.")
+							.setDescription("Where is your image link?")
+							.setTimestamp();
+						if (currentMessage) {
+							return currentMessage.edit(errorScreen);
+						}
+						else {
+							return message.channel.send(errorScreen);
+						}
+					}
+
 					let imageLink = args[2];
 					if (imageLink.search(/\b(https:|http:)/) < 0 || imageLink.search(/(.jpeg|.jpg|.png|.gif)\b/) < 0) {
 						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
@@ -191,12 +255,28 @@ module.exports = {
 					infoScreen = new Discord.MessageEmbed()
 						.setColor("#03fc24")
 						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-						.setTitle("Successfully set the event's background image!")
+						.setTitle(`Successfully set the ${currentEvent.name} event's background image!`)
 						.setImage(imageLink)
 						.setTimestamp();
 					break;
 				}
 				case "setcar":
+					if (!args[2] || !args[3]) {
+						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+						const errorScreen = new Discord.MessageEmbed()
+							.setColor("#fc0303")
+							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+							.setTitle("Error, arguments provided incomplete.")
+							.setDescription("Which car are you trying to find and where should it go?")
+							.setTimestamp();
+						if (currentMessage) {
+							return currentMessage.edit(errorScreen);
+						}
+						else {
+							return message.channel.send(errorScreen);
+						}
+					}
+
 					let carName = args.slice(3, args.length).map(i => i.toLowerCase());
 					let searchResults = new Set(carFiles);
 					searchResults.forEach(function(car) {
@@ -288,7 +368,6 @@ module.exports = {
 						return message.channel.send(errorMessage);
 					}
 
-					currentEvent.roster[index - 1].gearingUpgrade = currentEvent.roster[index - 1].engineUpgrade = currentEvent.roster[index - 1].chassisUpgrade = 0;
 					let cardThing = require(`./cars/${currentEvent.roster[index - 1].car}`);
 					let make = cardThing["make"];
 					if (typeof make === "object") {
@@ -302,6 +381,22 @@ module.exports = {
 						.setTimestamp();
 					break;
 				case "settune":
+					if (!args[2] || !args[3]) {
+						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+						const errorScreen = new Discord.MessageEmbed()
+							.setColor("#fc0303")
+							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+							.setTitle("Error, arguments provided incomplete.")
+							.setDescription("Which car are you tuning and what tune?")
+							.setTimestamp();
+						if (currentMessage) {
+							return currentMessage.edit(errorScreen);
+						}
+						else {
+							return message.channel.send(errorScreen);
+						}
+					}
+
 					let upgrade = args[3];
 					let currentCar = require(`./cars/${currentEvent.roster[index - 1].car}`);
 					if (!currentCar[`racehud${upgrade}`] || currentCar[`racehud${upgrade}`].length === 0) {
@@ -330,12 +425,29 @@ module.exports = {
 						.setTimestamp();
 					break;
 				case "addreq":
+					if (!args[2] || !args[3]) {
+						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+						const errorScreen = new Discord.MessageEmbed()
+							.setColor("#fc0303")
+							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+							.setTitle("Error, arguments provided incomplete.")
+							.setDescription("Which round and what requirement?")
+							.setTimestamp();
+						if (currentMessage) {
+							return currentMessage.edit(errorScreen);
+						}
+						else {
+							return message.channel.send(errorScreen);
+						}
+					}
+
 					let req = args[3].toLowerCase().replace("type", "Type").replace("style", "Style").replace("count", "Count").replace("year", "Year").replace("pos", "Pos").replace("prize", "Prize").replace("stock", "Stock").replace("upgrade", "Upgrade").replace("max", "Max");
 					switch (req) {
 						case "make":
 						case "Country":
 						case "tags":
 						case "tyreType":
+						case "search":
 							let argument = args.slice(4, args.length).join(" ").toLowerCase();
 							let reqSearchResults = carFiles.filter(function(carFile) {
 								let currentCar = require(`./cars/${carFile}`);
@@ -343,19 +455,44 @@ module.exports = {
 									return currentCar[req.replace("C", "c")].some(tag => tag.toLowerCase() === argument);
 								}
 								else {
-									return currentCar[req.replace("C", "c")].toLowerCase() === argument;
+									if (req === "search") {
+										let make = currentCar["make"];
+										if (typeof make === "object") {
+											make = currentCar["make"][0];
+										}
+										let name = `${make} ${currentCar["model"]}`;
+										return name.toLowerCase().includes(argument);
+									}
+									else {
+										return currentCar[req.replace("C", "c")].toLowerCase() === argument;
+									}
 								}
 							});
 							if (reqSearchResults.length > 0) {
-								currentEvent.roster[index - 1].requirements[req.replace("C", "c")] = argument;
+								if (currentEvent.roster[index - 1].requirements[req.replace("C", "c")] === undefined) {
+									currentEvent.roster[index - 1].requirements[req.replace("C", "c")] = [argument];
+								}
+								else if (currentEvent.roster[index - 1].requirements[req.replace("C", "c")].some(r => r === argument) === false) {
+									currentEvent.roster[index - 1].requirements[req.replace("C", "c")].push(argument);
+								}
+								else {
+									message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+									let errorMessage = new Discord.MessageEmbed()
+										.setColor("#fc0303")
+										.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+										.setTitle("Error, argument provided is already part of the filter criteria.")
+										.setDescription("Check the filter criteria in said round again.")
+										.setTimestamp();
+									return message.channel.send(errorMessage);
+								}
 							}
 							else {
 								message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 								let errorMessage = new Discord.MessageEmbed()
 									.setColor("#fc0303")
 									.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-									.setTitle("Error, argument provided either does not exist in the game or is already part of the filter criteria.")
-									.setDescription("Make sure the manufacturer name you provided is as of in the game.")
+									.setTitle("Error, argument provided does not exist in the game.")
+									.setDescription("Make sure the argument you provided is as of in the game.")
 									.setTimestamp();
 								return message.channel.send(errorMessage);
 							}
@@ -364,7 +501,7 @@ module.exports = {
 								.setColor("#03fc24")
 								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 								.setTitle(`Successfully added a \`${req.replace("C", "c")}\` criteria to roster position ${index}!`)
-								.setDescription(`Value: \`${argument}\``)
+								.setDescription(`Value: \`${currentEvent.roster[index - 1].requirements[req.replace("C", "c")].join(", ")}\``)
 								.setTimestamp();
 							break;
 						case "modelYear":
@@ -423,15 +560,30 @@ module.exports = {
 								}
 							});
 							if (reqSearchResults2.length > 0) {
-								currentEvent.roster[index - 1].requirements[req] = arg;
+								if (currentEvent.roster[index - 1].requirements[req] === undefined) {
+									currentEvent.roster[index - 1].requirements[req] = [arg];
+								}
+								else if (currentEvent.roster[index - 1].requirements[req].some(r => r === arg) === false) {
+									currentEvent.roster[index - 1].requirements[req].push(arg);
+								}
+								else {
+									message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+									let errorMessage = new Discord.MessageEmbed()
+										.setColor("#fc0303")
+										.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+										.setTitle("Error, argument provided is already part of the filter criteria.")
+										.setDescription("Check the filter criteria in said round again.")
+										.setTimestamp();
+									return message.channel.send(errorMessage);
+								}
 							}
 							else {
 								message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 								let errorMessage = new Discord.MessageEmbed()
 									.setColor("#fc0303")
 									.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-									.setTitle("Error, argument provided either does not exist in the game or is already part of the filter criteria.")
-									.setDescription("Make sure the manufacturer name you provided is as of in the game.")
+									.setTitle("Error, argument provided does not exist in the game.")
+									.setDescription("Make sure the argument you provided is as of in the game.")
 									.setTimestamp();
 								return message.channel.send(errorMessage);
 							}
@@ -440,7 +592,7 @@ module.exports = {
 								.setColor("#03fc24")
 								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 								.setTitle(`Successfully added a \`${req}\` criteria to roster position ${index}!`)
-								.setDescription(`Value: \`${arg}\``)
+								.setDescription(`Value: \`${currentEvent.roster[index - 1].requirements[req].join(", ")}\``)
 								.setTimestamp();
 							break;
 						case "isPrize":
@@ -449,7 +601,7 @@ module.exports = {
 								infoScreen = new Discord.MessageEmbed()
 									.setColor("#03fc24")
 									.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-									.setTitle(`Successfully added a \`${req}\` criteria to roster position ${i}!`)
+									.setTitle(`Successfully added a \`${req}\` criteria to roster position ${index}!`)
 									.setDescription(`Value: \`${args[4].toLowerCase()}\``)
 									.setTimestamp();
 							}
@@ -564,7 +716,7 @@ module.exports = {
 							infoScreen = new Discord.MessageEmbed()
 								.setColor("#03fc24")
 								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-								.setTitle(`Successfully added a \`${req}\` criteria to roster position ${i}!`)
+								.setTitle(`Successfully added a \`${req}\` criteria to roster position ${index}!`)
 								.setDescription(`${make} ${cardThing["model"]} (${cardThing["modelYear"]})`)
 								.setImage(cardThing["card"])
 								.setTimestamp();
@@ -588,7 +740,8 @@ module.exports = {
 											\`fueltype\` - Filter by fuel type.
 											\`isprize\` - Filter prize cars.
 											\`tag\` - Filter by tag.
-											\`car\` - Filter by exact car.`)
+											\`car\` - Filter by exact car.
+											\`search\` - Filter by keyword in car name.`)
 								.setTimestamp();
 							return message.channel.send(errorScreen);
 					}
@@ -635,7 +788,8 @@ module.exports = {
 											\`fueltype\` - Filter by fuel type.
 											\`isprize\` - Filter prize cars.
 											\`tag\` - Filter by tag. 
-											\`car\` - Filter by exact car.  
+											\`car\` - Filter by exact car. 
+											\`search\` - Filter by keyword in car name.  
 											\`all\` - Removes all filters.`)
 							.setTimestamp();
 						return message.channel.send(errorScreen);
@@ -646,9 +800,28 @@ module.exports = {
 							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 							.setTitle(`Successfully removed the \`${rReq}\` criteria from roster position ${index}!`)
 							.setTimestamp();
+						if (rReq === "all") {
+							infoScreen.setTitle(`Successfully removed all criterias from roster position ${index}!`)
+						}
 					}
 					break;
 				case "settrack":
+					if (!args[2] || !args[3]) {
+						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+						const errorScreen = new Discord.MessageEmbed()
+							.setColor("#fc0303")
+							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+							.setTitle("Error, arguments provided incomplete.")
+							.setDescription("Which track are you trying to find and where should it go?")
+							.setTimestamp();
+						if (currentMessage) {
+							return currentMessage.edit(errorScreen);
+						}
+						else {
+							return message.channel.send(errorScreen);
+						}
+					}
+
 					let trackName = args.slice(3, args.length).map(i => i.toLowerCase());
 					const tSearchResults = tracksets.filter(function (trackset) {
 						return trackName.every(part => trackset.includes(part));
@@ -739,7 +912,7 @@ module.exports = {
 						.setTimestamp();
 					break;
 				case "setreward":
-					if (!args[3]) {
+					if (!args[2]|| !args[3]) {
 						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 						let errorMessage = new Discord.MessageEmbed()
 							.setColor("#fc0303")
@@ -749,6 +922,7 @@ module.exports = {
 							.setTimestamp();
 						return message.channel.send(errorMessage);
 					}
+
 					let rewardType = args[3].toLowerCase();
 					switch (rewardType) {
 						case "money":
@@ -1027,6 +1201,7 @@ module.exports = {
 							.setTimestamp();
 						return message.channel.send(errorMessage);
 					}
+					
 					let randomizeType = args[2].toLowerCase(), f;
 					switch (randomizeType) {
 						case "asphalt":
@@ -1206,7 +1381,7 @@ module.exports = {
 						.setTitle("Error, event editing criteria not found.")
 						.setDescription(`Here is a list of event editing criterias. 
                                     \`name\` - The name of the event. 
-									\`isactive\` - Whether the event is playable or not.
+									\`duration\` - How long an event is going to last for. 
 									\`background\` - The event's background image (image links only). 
 									\`setcar\` - Sets the opponent's car.
 									\`setreward\` - Sets the reward of a round.
@@ -1219,7 +1394,7 @@ module.exports = {
 					return message.channel.send(errorScreen);
 			}
 
-			await db.set("events", events);
+			await db.set(`events.evnt${currentEvent.id}`, currentEvent);
 			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 			if (currentMessage) {
 				return currentMessage.edit(infoScreen);

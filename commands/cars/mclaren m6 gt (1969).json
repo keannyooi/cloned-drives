@@ -1,0 +1,54 @@
+{
+    "rq": 64,
+    "make": "McLaren",
+    "model": "M6 GT",
+    "modelYear": 1969,
+    "country": "GB",
+    "topSpeed": 165,
+    "0to60": 4.2,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Royal Collection", "Ultra Expensive", "Track Day"],
+    "isPrize": true,
+
+    "weight": 800,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 110.53,
+    "ola": 90,
+    "description": "A Can-Am car built for the road. Card by Exist",
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/830980574733926400/CD_McLaren_M6_GT.png?width=1410&height=878",
+    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/830980691130581032/CD_McLaren_M6_GT_000.png?width=1410&height=878",
+    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/830980702332911676/CD_McLaren_M6_GT_333.png?width=1410&height=878",
+    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/830980706482126878/CD_McLaren_M6_GT_666.png?width=1410&height=878",
+    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/830980725934522418/CD_McLaren_M6_GT_996.png?width=1410&height=878",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/830980716887539752/CD_McLaren_M6_GT_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/830980715024744458/CD_McLaren_M6_GT_699.png",
+
+    "333TopSpeed": 168,
+    "3330to60": 4.0,
+    "333Handling": 80,
+
+    "666TopSpeed": 171,
+    "6660to60": 3.8,
+    "666Handling": 82,
+
+    "996TopSpeed": 174,
+    "9960to60": 3.6,
+    "996Handling": 82,
+
+    "969TopSpeed": 174,
+    "9690to60": 3.8,
+    "969Handling": 85,
+
+    "699TopSpeed": 171,
+    "6990to60": 3.6,
+    "699Handling": 85
+}

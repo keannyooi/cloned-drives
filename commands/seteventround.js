@@ -16,7 +16,7 @@ module.exports = {
     args: 3,
 	isExternal: false,
     adminOnly: true,
-    description: "Sets a player's round in an event to whatever.",
+    description: "Sets a player's round progress in an event to whatever.",
     execute(message, args) {
 		const db = message.client.db;
 		const filter = response => {
@@ -93,7 +93,7 @@ module.exports = {
 								return currentMessage.edit(errorMessage);
 							}
 							else {
-								editStuff(userList[parseInt(collected.first().content) - 1], currentMessage);
+								findEvent(userList[parseInt(collected.first().content) - 1], currentMessage);
 							}
 						})
 						.catch(() => {
@@ -108,7 +108,7 @@ module.exports = {
 				});
 			}
 			else if (userList.length > 0) {
-				editStuff(userList[0]);
+				findEvent(userList[0]);
 			}
 			else {
 				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
@@ -122,115 +122,175 @@ module.exports = {
 			}
 		}
 
-		async function editStuff(user, currentMessage) {
+		async function findEvent(user, currentMessage) {
 			const events = await db.get("events");
-			let eventName = args.slice(1, args.length - 1).join(" ").toLowerCase();
-			const event = events.find(event => {
-				return event.name.toLowerCase().includes(eventName)
+			let eventName = args.slice(1, args.length - 1).map(i => i.toLowerCase());
+			const searchResults = Object.values(events).filter(function(event) {
+				if (typeof event === "object") {
+					return eventName.every(part => event.name.toLowerCase().includes(part));
+				}
+				else {
+					return false;
+				}
 			});
 
-			if (event === undefined) {
-				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
-				const errorScreen = new Discord.MessageEmbed()
-					.setColor("#fc0303")
-					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-					.setTitle("Error, 404 event not found.")
-					.setDescription("Check the list of events using the command `cd-events`.")
-					.setTimestamp();
-				if (currentMessage) {
-					return currentMessage.edit(errorScreen);
+			if (searchResults.length > 1) {
+				let eventList = "";
+				for (i = 1; i <= searchResults.length; i++) {
+					eventList += `${i} - ${searchResults[i - 1].name} \n`;
 				}
-				else {
-					return message.channel.send(errorScreen);
-				}
-			}
-			else {
-				let round = args[args.length - 1];
-				if (isNaN(round) || Math.ceil(parseInt(round)) < 1 || Math.ceil(parseInt(round)) > event.roster.length) {
-					message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
-					const errorMessage = new Discord.MessageEmbed()
-						.setColor("#fc0303")
-						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-						.setTitle("Error, round requested is either not a number or inapplicable.")
-						.setDescription("Round numbers should be a number bigger than 0 and smaller or equal to the event's amount of rounds.")
-						.addField("Amount of rounds that this event has", event.roster.length)
-						.setTimestamp();
-					if (currentMessage) {
-						return currentMessage.edit(errorMessage);
-					}
-					else {
-						return message.channel.send(errorMessage);
-					}
-				}
-				round = Math.ceil(parseInt(round));
 
-				const confirmationMessage = new Discord.MessageEmbed()
+				const infoScreen = new Discord.MessageEmbed()
 					.setColor("#34aeeb")
 					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-					.setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
-					.setTitle(`Are you sure you want to set ${user.username}'s progress on ${event.name} to round ${round}?`)
-					.setDescription("React with ✅ to proceed or ❎ to cancel.")
+					.setTitle("Multiple events found, please type one of the following.")
+					.setDescription(eventList)
 					.setTimestamp();
 
-				let reactionMessage;
+				let currentMessage1;
 				if (currentMessage) {
-					reactionMessage = await currentMessage.edit(confirmationMessage);
+					currentMessage1 = await currentMessage.edit(infoScreen);
 				}
 				else {
-					reactionMessage = await message.channel.send(confirmationMessage);
+					currentMessage1 = await message.channel.send(infoScreen);
 				}
-				reactionMessage.react("✅");
-				reactionMessage.react("❎");
-				reactionMessage.awaitReactions(emojiFilter, {
+
+				message.channel.awaitMessages(filter, {
 					max: 1,
-					time: 10000,
-					errors: ['time']
+					time: 30000,
+					errors: ["time"]
 				})
-					.then(async collected => {
-						reactionMessage.reactions.removeAll();
-						switch (collected.first().emoji.name) {
-							case "✅":
-								if (round === 1) {
-									delete event.players[user.id]
-								}
-								else {
-									event.players[user.id] = round;
-								}
-								await db.set("events", events);
-								message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
-								const infoScreen = new Discord.MessageEmbed()
-									.setColor("#34aeeb")
-									.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-									.setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
-									.setTitle(`Successfully set ${user.username}'s progress on ${event.name} to round ${round}!`)
-									.setTimestamp();
-								return reactionMessage.edit(infoScreen);
-							case "❎":
-								message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
-								const cancelMessage = new Discord.MessageEmbed()
-									.setColor("#34aeeb")
-									.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-									.setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
-									.setTitle("Action cancelled.")
-									.setTimestamp();
-								return reactionMessage.edit(cancelMessage);
-							default:
-								break;
+					.then(collected => {
+						collected.first().delete();
+						if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
+							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+							const errorMessage = new Discord.MessageEmbed()
+								.setColor("#fc0303")
+								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+								.setTitle("Error, invalid integer provided.")
+								.setDescription("It looks like your response was either not a number or not part of the selection.")
+								.setTimestamp();
+							return currentMessage1.edit(errorMessage);
+						}
+						else {
+							editStuff(searchResults[parseInt(collected.first()) - 1], user, currentMessage1);
 						}
 					})
-					.catch(error => {
-						console.log(error);
-						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
+					.catch(() => {
+						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 						const cancelMessage = new Discord.MessageEmbed()
 							.setColor("#34aeeb")
 							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-							.setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
 							.setTitle("Action cancelled automatically.")
 							.setTimestamp();
-						return reactionMessage.edit(cancelMessage);
+						return currentMessage1.edit(cancelMessage);
 					});
-					
 			}
+			else if (searchResults.length > 0) {
+				editStuff(searchResults[0], user);
+			}
+			else {
+				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+				const errorMessage = new Discord.MessageEmbed()
+					.setColor("#fc0303")
+					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+					.setTitle("Error, 404 event not found.")
+					.setDescription("Try checking again using `cd-events`.")
+					.setTimestamp();
+				if (currentMessage) {
+					return currentMessage(errorMessage);
+				}
+				else {
+					return message.channel.send(errorMessage);
+				}
+			}
+		}
+
+		async function editStuff(event, user, currentMessage) {
+			let round = args[args.length - 1];
+			if (isNaN(round) || Math.ceil(parseInt(round)) < 1 || Math.ceil(parseInt(round)) > event.roster.length) {
+				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
+				const errorMessage = new Discord.MessageEmbed()
+					.setColor("#fc0303")
+					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+					.setTitle("Error, round requested is either not a number or inapplicable.")
+					.setDescription("Round numbers should be a number bigger than 0 and smaller or equal to the event's amount of rounds.")
+					.addField("Amount of rounds that this event has", event.roster.length)
+					.setTimestamp();
+				if (currentMessage) {
+					return currentMessage.edit(errorMessage);
+				}
+				else {
+					return message.channel.send(errorMessage);
+				}
+			}
+			round = Math.ceil(parseInt(round));
+
+			const confirmationMessage = new Discord.MessageEmbed()
+				.setColor("#34aeeb")
+				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+				.setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
+				.setTitle(`Are you sure you want to set ${user.username}'s progress on ${event.name} to round ${round}?`)
+				.setDescription("React with ✅ to proceed or ❎ to cancel.")
+				.setTimestamp();
+
+			let reactionMessage;
+			if (currentMessage) {
+				reactionMessage = await currentMessage.edit(confirmationMessage);
+			}
+			else {
+				reactionMessage = await message.channel.send(confirmationMessage);
+			}
+			reactionMessage.react("✅");
+			reactionMessage.react("❎");
+			reactionMessage.awaitReactions(emojiFilter, {
+				max: 1,
+				time: 10000,
+				errors: ['time']
+			})
+				.then(async collected => {
+					reactionMessage.reactions.removeAll();
+					switch (collected.first().emoji.name) {
+						case "✅":
+							if (round === 1) {
+								delete event.players[`acc${user.id}`];
+							}
+							else {
+								event.players[`acc${user.id}`] = round;
+							}
+							await db.set(`events.evnt${event.id}`, event);
+							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
+							const infoScreen = new Discord.MessageEmbed()
+								.setColor("#34aeeb")
+								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+								.setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
+								.setTitle(`Successfully set ${user.username}'s progress on ${event.name} to round ${round}!`)
+								.setTimestamp();
+							return reactionMessage.edit(infoScreen);
+						case "❎":
+							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
+							const cancelMessage = new Discord.MessageEmbed()
+								.setColor("#34aeeb")
+								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+								.setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
+								.setTitle("Action cancelled.")
+								.setTimestamp();
+							return reactionMessage.edit(cancelMessage);
+						default:
+							break;
+					}
+				})
+				.catch(error => {
+					console.log(error);
+					message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
+					const cancelMessage = new Discord.MessageEmbed()
+						.setColor("#34aeeb")
+						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+						.setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
+						.setTitle("Action cancelled automatically.")
+						.setTimestamp();
+					return reactionMessage.edit(cancelMessage);
+				});
 		}
     }
 }

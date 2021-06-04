@@ -12,11 +12,11 @@ const Canvas = require("canvas");
 
 module.exports = {
 	async race(message, player, opponent, currentTrack) {
-		const wait = await message.channel.send("**Loading race, please wait... (may take a while)**");
+		const wait = message.channel.send("**Loading race, please wait... (may take a while)**");
 
 		try {
-			var description = `__Selected Track: ${currentTrack["trackName"]}__`;
-			var attachment;
+			let description = `__Selected Track: ${currentTrack["trackName"]}__`;
+			let attachment;
 			try {
 				const canvas = Canvas.createCanvas(674, 379);
 				const ctx = canvas.getContext("2d");
@@ -47,7 +47,7 @@ module.exports = {
 			const result = evalScore(player, opponent);
 			const raceInfo = compare(player, opponent, (result > 0));
 
-			var raceMessage = "";
+			let raceMessage = "";
 			if (result > 0) {
 				raceMessage = `You won by ${result} point(s)! (insert crab rave here)`;
 				colorCode = "#03fc24";
@@ -73,7 +73,7 @@ module.exports = {
 				.setImage("attachment://thing.png")
 				.setTimestamp();
 			message.channel.send(resultScreen);
-			wait.delete();
+			(await wait).delete();
 			return result;
 
 			function compare(player, opponent, playerWon) {
@@ -109,7 +109,7 @@ module.exports = {
 
 				for (i = 0; i < Object.keys(comparison).length; i++) {
 					const compareValue = currentTrack["specsDistr"][Object.keys(comparison)[i]];
-					var value = Object.values(comparison)[i];
+					let value = Object.values(comparison)[i];
 					if (!playerWon) {
 						if (value > 0) {
 							value -= value * 2;
@@ -200,8 +200,8 @@ module.exports = {
 			}
 
 			function evalScore(player, opponent) {
-				var tyreIndex;
-				var score = 0;
+				let tyreIndex;
+				let score = 0;
 
 				score += (player.topSpeed - opponent.topSpeed) * (currentTrack["specsDistr"]["topSpeed"] / 100);
 				score += (opponent.accel - player.accel) * 10 * (currentTrack["specsDistr"]["0to60"] / 100);
@@ -210,10 +210,10 @@ module.exports = {
 				score += (player.mra - opponent.mra) / 3 * (currentTrack["specsDistr"]["mra"] / 100);
 				score += (opponent.ola - player.ola) * (currentTrack["specsDistr"]["ola"] / 100);
 
-				if (player.gc === "Low") {
+				if (player.gc.toLowerCase() === "low") {
 					score -= (10 * currentTrack["speedbumps"]);
 				}
-				if (opponent.gc === "Low") {
+				if (opponent.gc.toLowerCase() === "low") {
 					score += (10 * currentTrack["speedbumps"]);
 				}
 				score += (gcPlacement.indexOf(opponent.gc) - gcPlacement.indexOf(player.gc)) * 10 * currentTrack["humps"];

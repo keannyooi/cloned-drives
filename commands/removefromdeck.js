@@ -41,11 +41,11 @@ module.exports = {
         };
 
         const searchResults = decks.filter(function (deck) {
-            return deck.name.includes(deckName);
+            return deck.name.toLowerCase().includes(deckName);
         });
 
         if (searchResults.length > 1) {
-            var deckList = "";
+            let deckList = "";
             for (i = 1; i <= searchResults.length; i++) {
                 deckList += `${i} - ${searchResults[i - 1].name} \n`;
             }
@@ -65,7 +65,7 @@ module.exports = {
                 })
                     .then(collected => {
 						collected.first().delete();
-                        if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
+                        if (isNaN(collected.first().content) || parseInt(collected.first().content) > searchResults.length || parseInt(collected.first().content) < 1) {
 							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                             const errorMessage = new Discord.MessageEmbed()
                                 .setColor("#fc0303")
@@ -76,7 +76,7 @@ module.exports = {
                             return currentMessage.edit(errorMessage);
                         }
                         else {
-                            removeCar(searchResults[parseInt(collected.first()) - 1].deck, parseInt(index), currentMessage);
+                            removeCar(searchResults[parseInt(collected.first().content) - 1].deck, parseInt(index), currentMessage);
                         }
                     })
                     .catch(() => {
@@ -122,13 +122,13 @@ module.exports = {
                 }
             }
 
-            const car = require(`./cars/${currentCar.carFile}`);
+            const car = require(`./cars/${currentCar}`);
 			let make = car["make"];
 			if (typeof make === "object") {
 				make = car["make"][0];
 			}
-            const currentName = `${make} ${car["model"]} (${car["modelYear"]}) [${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}]`;
-            const racehud = car[`racehud${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}`];
+            const currentName = `${make} ${car["model"]} (${car["modelYear"]}) [${currentDeck.tunes[index - 1]}]`;
+            const racehud = car[`racehud${currentDeck.tunes[index - 1]}`];
 
             const confirmationMessage = new Discord.MessageEmbed()
                 .setColor("#34aeeb")
@@ -157,6 +157,7 @@ module.exports = {
                     switch (collected.first().emoji.name) {
                         case "✅":
                             currentDeck.hand[index - 1] = "None";
+							currentDeck.tunes[index - 1] = "000";
                             await db.set(`acc${message.author.id}`, playerData);
 							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
 

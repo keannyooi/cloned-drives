@@ -1,0 +1,54 @@
+{
+    "rq": 57,
+    "make": "Infiniti",
+    "model": "G35 Coupe",
+    "modelYear": 2002,
+    "country": "JP",
+    "topSpeed": 155,
+    "0to60": 6.2,
+    "handling": 81,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1580,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.31,
+    "ola": 80.61,
+    "description": "Card by Cenard.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/833697601404272701/IMG_20210405_103327.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/833697702633406555/IMG_20210415_112844.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/833697734221365278/IMG_20210415_113702.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/833697761727741992/IMG_20210415_113954.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/833697827359424552/IMG_20210415_115309.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/833697813795569735/IMG_20210415_115026.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/833697782086369290/IMG_20210415_114442.png",
+
+    "333TopSpeed": 158,
+    "3330to60": 5.9,
+    "333Handling": 84,
+
+    "666TopSpeed": 162,
+    "6660to60": 5.6,
+    "666Handling": 86,
+
+    "996TopSpeed": 165,
+    "9960to60": 5.3,
+    "996Handling": 86,
+
+    "969TopSpeed": 165,
+    "9690to60": 5.6,
+    "969Handling": 90,
+
+    "699TopSpeed": 162,
+    "6990to60": 5.3,
+    "699Handling": 90
+}

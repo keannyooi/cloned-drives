@@ -18,7 +18,7 @@ module.exports = {
     adminOnly: true,
     description: "Resets your stats.",
     async execute(message, args) {
-		const starterCars = ["abarth 124 spider (2017).json", "range rover classic 5-door (1984).json", "honda prelude type sh (1997).json", "chevrolet impala ss 427 (1967).json", "volkswagen beetle 2.5 (2012).json"];
+		const starterCars = ["honda s2000 (1999).json", "peugeot 405 mi16 (1989).json", "range rover county (1989).json", "nissan leaf (2010).json", "de tomaso mangusta (1967).json"];
 		const emojiFilter = (reaction, user) => {
             return (reaction.emoji.name === "✅" || reaction.emoji.name === "❎") && user.id === message.author.id;
         };

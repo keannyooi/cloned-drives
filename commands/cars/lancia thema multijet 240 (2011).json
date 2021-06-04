@@ -1,0 +1,54 @@
+{
+    "rq": 35,
+    "make": "Lancia",
+    "model": "Thema Multijet 240",
+    "modelYear": 2011,
+    "country": "IT",
+    "topSpeed": 142,
+    "0to60": 7.3,
+    "handling": 73,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 2038,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 57.48,
+    "ola": 63.01,
+    "description": "Italian Chrysler. Card by Connor",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/837992512652050432/D.LanciaThemaMultijet240.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/837992790297411624/D.LanciaThemaJTD240.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/837992806676168725/D.LanciaThemaJTD240-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/837992828423372840/D.LanciaThemaJTD240-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/837992885676670996/D.LanciaThemaJTD240-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/837992869511823373/D.LanciaThemaJTD240-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/837992849986420776/D.LanciaThemaJTD240-699.png",
+
+    "333TopSpeed": 146,
+    "3330to60": 6.9,
+    "333Handling": 75,
+
+    "666TopSpeed": 149,
+    "6660to60": 6.6,
+    "666Handling": 78,
+
+    "996TopSpeed": 153,
+    "9960to60": 6.2,
+    "996Handling": 78,
+
+    "969TopSpeed": 153,
+    "9690to60": 6.6,
+    "969Handling": 81,
+
+    "699TopSpeed": 149,
+    "6990to60": 6.2,
+    "699Handling": 81
+}

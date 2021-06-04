@@ -1,0 +1,54 @@
+{
+    "rq": 97,
+    "make": "Pagani",
+    "model": "Zonda Revolucion",
+    "modelYear": 2013,
+    "country": "IT",
+    "topSpeed": 217,
+    "0to60": 2.5,
+    "handling": 98,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Track Day", "Eargasm", "Unique", "Ultra Expensive"],
+    "isPrize": true,
+
+    "weight": 1070,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 116.72,
+    "ola": 81.22,
+    "description": "The ultimate Zonda. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/848196922682376202/PaganiRevolucion.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/848196962955821086/zondarevolutuibon.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/848196967107788860/zondarevolutuibon333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/848196974586494986/zondarevolutuibon666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/848197006894825512/zondarevolutuibon996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/848196997173346394/zondarevolutuibon969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/848196987895808070/zondarevolutuibon699.png",
+
+    "333TopSpeed": 219,
+    "3330to60": 2.4,
+    "333Handling": 101,
+
+    "666TopSpeed": 222,
+    "6660to60": 2.3,
+    "666Handling": 104,
+
+    "996TopSpeed": 224,
+    "9960to60": 2.1,
+    "996Handling": 104,
+
+    "969TopSpeed": 224,
+    "9690to60": 2.3,
+    "969Handling": 109,
+
+    "699TopSpeed": 222,
+    "6990to60": 2.1,
+    "699Handling": 109
+}

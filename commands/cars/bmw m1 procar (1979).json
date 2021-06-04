@@ -9,7 +9,7 @@
     "handling": 94,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": ["MotorSport", "Servers Choice"],
+    "tags": ["Motorsport", "Servers Choice"],
     "isPrize": false,
 
     "weight": 1020,
@@ -24,7 +24,7 @@
     "ola": 83.72,
     "description": "In 1979 and 1980 the BMW Procar Series was one of the most spectacular racing series in the motorsport world. Card by Keanny",
 
-    "card": "https://cdn.discordapp.com/attachments/715782088271331398/751059159578837043/bmw_m1_procar.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819383381233106944/m1_procar.png",
     "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819536184878301234/m1_procar_000.jpg",
     "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819536193057325076/m1_procar_333.jpg",
     "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819536195922034718/m1_procar_666.jpg",
@@ -45,10 +45,10 @@
     "699Handling": 104,
 
     "969TopSpeed": 201,
-    "969to60": 3.5,
+    "9690to60": 3.5,
     "969Handling": 104,
 
     "996TopSpeed": 201,
-    "996to60": 3.3,
+    "9960to60": 3.3,
     "996Handling": 100
 }

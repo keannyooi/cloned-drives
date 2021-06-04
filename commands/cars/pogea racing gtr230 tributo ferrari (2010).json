@@ -1,0 +1,54 @@
+{
+    "rq": 53,
+    "make": ["Pogea Racing","Abarth","Fiat"],
+    "model": "GTR230 Tributo Ferrari",
+    "modelYear": 2010,
+    "country": "DE",
+    "topSpeed": 159,
+    "0to60": 5.4,
+    "handling": 80,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer", "Hot Hatch", "Tuner"],
+    "isPrize": false,
+
+    "weight": 1100,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 72.97,
+    "ola": 81.48,
+    "description": "Pogea Racing's first attempt at spicing up the Abarth 500. On this model the T-Jet propulsion unit has been equipped with new components including an oversized turbocharger, a stainless steel exhaust system, an enlarged intercooler and a new electronic control unit to increase the power from 180 up to 264 hp with 330 Nm of torque. Card by havvy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/840554180854153236/PogeaRacingGTR230.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/840554247208435742/p_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/840554253230538772/p_111.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/840554256787570698/p_222.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/840554274114371594/p_332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/840554270507270174/p_323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/840554262971023380/p_233.png",
+
+    "333TopSpeed": 162,
+    "3330to60": 5.1,
+    "333Handling": 83,
+
+    "666TopSpeed": 166,
+    "6660to60": 4.9,
+    "666Handling": 85,
+
+    "996TopSpeed": 169,
+    "9960to60": 4.6,
+    "996Handling": 85,
+
+    "969TopSpeed": 169,
+    "9690to60": 4.9,
+    "969Handling": 85,
+
+    "699TopSpeed": 166,
+    "6990to60": 4.6,
+    "699Handling": 89
+}

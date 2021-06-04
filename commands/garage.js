@@ -142,9 +142,8 @@ module.exports = {
 
 		async function loop(user, page, currentMessage) {
 			const pageLimit = 10;
-			var garage = await db.get(`acc${user.id}.garage`);
-			var reactionIndex = 0;
-        	var page;
+			let garage = await db.get(`acc${user.id}.garage`);
+			let reactionIndex = 0;
 			let filter = (reaction, user) => {
 				return (reaction.emoji.name === "⬅️" || reaction.emoji.name === "➡️") && user.id === message.author.id;
 			};
@@ -377,6 +376,7 @@ module.exports = {
 				for (i = startsWith; i < endsWith; i++) {
 					garageList += `${i + 1 - ((page - 1) * 10)}. `;
 					amountList += `${i + 1 - ((page - 1) * 10)}. `;
+					//console.log(garage[i]);
 					let currentCar = require(`./cars/${garage[i].carFile}`);
 					let make = currentCar["make"];
 					if (typeof make === "object") {

@@ -1,0 +1,54 @@
+{
+    "rq": 52,
+    "make": "Hyundai",
+    "model": "Kona 1.6T",
+    "modelYear": 2017,
+    "country": "KR",
+    "topSpeed": 130,
+    "0to60": 6.4,
+    "handling": 77,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Rest of The World"],
+    "isPrize": false,
+
+    "weight": 1394,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 52.03,
+    "ola": 78.13,
+    "description": "A small SUV taking the first car market by storm. Card by Exist",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826719375192227850/CD_Hyundai_Kona_1.6T.png",
+    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/826719472239771658/CD_Hyundai_Kona_1.6T_000.png?width=1410&height=878",
+    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/826719476090404894/CD_Hyundai_Kona_1.6T_333.png?width=1410&height=878",
+    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/826719487389597746/CD_Hyundai_Kona_1.6T_666.png?width=1410&height=878",
+    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/826719519522291752/CD_Hyundai_Kona_1.6T_996.png?width=1410&height=878",
+    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/826719505458790480/CD_Hyundai_Kona_1.6T_969.png?width=1410&height=878",
+    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/826719495111573524/CD_Hyundai_Kona_1.6T_699.png?width=1410&height=878",
+
+    "333TopSpeed": 134,
+    "3330to60": 6.1,
+    "333Handling": 80,
+
+    "666TopSpeed": 138,
+    "6660to60": 5.8,
+    "666Handling": 82,
+
+    "996TopSpeed": 142,
+    "9960to60": 5.4,
+    "996Handling": 82,
+
+    "969TopSpeed": 142,
+    "9690to60": 5.8,
+    "969Handling": 85,
+
+    "699TopSpeed": 138,
+    "6990to60": 5.4,
+    "699Handling": 85
+}

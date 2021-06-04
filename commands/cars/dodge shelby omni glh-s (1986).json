@@ -1,6 +1,6 @@
 {
     "rq": 36,
-    "make": "Dodge",
+    "make": ["Dodge", "Shelby"],
     "model": "Shelby Omni GLH-S",
     "modelYear": 1986,
     "country": "US",
@@ -9,7 +9,7 @@
     "handling": 76,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": [],
+    "tags": ["Hot Hatch"],
     "isPrize": false,
 
     "weight": 997,

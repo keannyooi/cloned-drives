@@ -1,15 +1,15 @@
 ﻿{
-    "rq": 97,
+    "rq": 95,
     "make": "Pagani",
     "model": "Zonda R",
     "modelYear": 2009,
     "country": "IT",
-    "topSpeed": 233,
-    "0to60": 2.5,
+    "topSpeed": 229,
+    "0to60": 2.7,
     "handling": 97,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": ["Motorsport", "Eargasm"],
+    "tags": ["Track Day", "Eargasm", "Unique", "Ultra Expensive"],
     "isPrize": false,
 
 
@@ -19,43 +19,43 @@
     "bodyStyle": "Coupe",
     "tcs": true,
     "abs": true,
-    "enginePos": "Front",
+    "enginePos": "Middle",
     "fuelType": "Petrol",
-    "mra": 87.72,
+    "mra": 112.5,
     "ola": 82.22,
     "description": "Extreme. Card by Preston",
 
 
-    "card": "https://cdn.discordapp.com/attachments/819199720249360384/823462223376547860/Zonda_R_higher_handling_1.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823464038059081758/zonda_r_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823464047960653874/zonda_r_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823464054122479646/zonda_r_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823464079494610944/zonda_r_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823464070312886302/zonda_r_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823464062888575026/zonda_r_699.jpg",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/847298968881856532/Zonda_R_updated.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/847299012725440562/zonda_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/847299095299358752/zonda_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/847299115020189736/zonda_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/847299173119295498/zonda_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/847299156556513330/zonda_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/847299137966702592/zonda_699.png",
 
 
-    "333TopSpeed": 235,
-    "3330to60": 2.4,
+    "333TopSpeed": 231,
+    "3330to60": 2.6,
     "333Handling": 100,
 
 
-    "666TopSpeed": 237,
-    "6660to60": 2.3,
+    "666TopSpeed": 234,
+    "6660to60": 2.4,
     "666Handling": 103,
 
 
-    "996TopSpeed": 240,
-    "9960to60": 2.1,
+    "996TopSpeed": 236,
+    "9960to60": 2.3,
     "996Handling": 103,
 
 
-    "969TopSpeed": 240,
-    "9690to60": 2.3,
+    "969TopSpeed": 236,
+    "9690to60": 2.4,
     "969Handling": 108,
 
 
-    "699TopSpeed": 237,
-    "6990to60": 2.1,
+    "699TopSpeed": 234,
+    "6990to60": 2.3,
     "699Handling": 108
 }

@@ -1,0 +1,54 @@
+{
+    "rq": 32,
+    "make": "De Tomaso",
+    "model": "Pantera L",
+    "modelYear": 1973,
+    "country": "IT",
+    "topSpeed": 149,
+    "0to60": 6.8,
+    "handling": 73,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1454,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 75.11,
+    "ola": 78.93,
+    "description": "A marriage made in heaven between an Italian body and an American engine. Card by keanny",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/848059914525474848/de_tomasoo_pantera_l.png",
+    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/848057930687578112/pantera_l_000.jpg",
+    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/848057935074557992/pantera_l_333.jpg",
+    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/848057940204060672/pantera_l_666.jpg",
+    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/848057954124300288/pantera_l_996.jpg",
+    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/848057948995059753/pantera_l_969.jpg",
+    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/848057944347770880/pantera_l_699.jpg",
+
+    "333TopSpeed": 152,
+    "3330to60": 6.5,
+    "333Handling": 75,
+
+    "666TopSpeed": 156,
+    "6660to60": 6.1,
+    "666Handling": 78,
+
+    "996TopSpeed": 159,
+    "9960to60": 5.8,
+    "996Handling": 78,
+
+    "969TopSpeed": 159,
+    "9690to60": 6.1,
+    "969Handling": 81,
+
+    "699TopSpeed": 156,
+    "6990to60": 5.8,
+    "699Handling": 81
+}

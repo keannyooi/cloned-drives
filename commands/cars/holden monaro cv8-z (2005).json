@@ -1,0 +1,54 @@
+{
+    "rq": 51,
+    "make": "Holden",
+    "model": "Monaro CV8-Z",
+    "modelYear": 2005,
+    "country": "AU",
+    "topSpeed": 170,
+    "0to60": 5.3,
+    "handling": 78,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Muscle Car", "Rest of The World"],
+    "isPrize": false,
+
+    "weight": 1677,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 74.65,
+    "ola": 94.34,
+    "description": "The first true Holden in Cloned Drives, not some crummy rebadged Chevy hatchback. Card by Macan",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/829479787336433735/Monaro_CV8-Z_05.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/829479872937328640/Holden_Monaro_CV8-Z_2005_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/829479879316865064/Holden_Monaro_CV8-Z_2005_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/829479885708853308/Holden_Monaro_CV8-Z_2005_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/829479909066801192/Holden_Monaro_CV8-Z_2005_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/829479903862325298/Holden_Monaro_CV8-Z_2005_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/829479899160903740/Holden_Monaro_CV8-Z_2005_699.png",
+
+    "333TopSpeed": 173,
+    "3330to60": 5.0,
+    "333Handling": 81,
+
+    "666TopSpeed": 176,
+    "6660to60": 4.8,
+    "666Handling": 83,
+
+    "996TopSpeed": 179,
+    "9960to60": 4.5,
+    "996Handling": 83,
+
+    "969TopSpeed": 179,
+    "9690to60": 4.8,
+    "969Handling": 87,
+
+    "699TopSpeed": 176,
+    "6990to60": 4.5,
+    "699Handling": 87
+}

@@ -1,0 +1,54 @@
+﻿{
+    "rq": 16,
+    "make": "General Motors",
+    "model": "Impact Land Speed Record",
+    "modelYear": 1994,
+    "country": "US",
+    "topSpeed": 183,
+    "0to60": 7.4,
+    "handling": 32,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Eco-Friendly", "Innovative", "Unique"],
+    "isPrize": true,
+
+    "weight": 955, 
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 39.78,
+    "ola": 75.68,
+    "description": "A delimited EV1 prototype apparently can reach very fast speeds. Card by keanny",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/840079675749040148/general_motors_impact_lsr.png",
+    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/840079191281106964/impact_lsr_000.jpg",
+    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/840079202829074432/impact_lsr_333.jpg",
+    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/840079206495158282/impact_lsr_666.jpg",
+    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/840079225875857418/impact_lsr_996.jpg",
+    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/840079219358695434/impact_lsr_969.jpg",
+    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/840079214571946004/impact_lsr_699.jpg",
+
+    "333TopSpeed": 186,
+    "3330to60": 7.0,
+    "333Handling": 33,
+
+    "666TopSpeed": 189,
+    "6660to60": 6.7,
+    "666Handling": 34,
+
+    "996TopSpeed": 192,
+    "9960to60": 6.3,
+    "996Handling": 34,
+
+    "969TopSpeed": 192,
+    "9690to60": 6.7,
+    "969Handling": 36,
+
+    "699TopSpeed": 189,
+    "6990to60": 6.3,
+    "699Handling": 36
+}

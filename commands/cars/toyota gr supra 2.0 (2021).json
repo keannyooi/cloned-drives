@@ -1,0 +1,55 @@
+{
+    "rq": 63,
+    "make": "Toyota",
+    "model": "GR Supra 2.0",
+    "modelYear": 2021,
+    "country": "JP",
+    "topSpeed": 155,
+    "0to60": 4.9,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer"],
+    "isPrize": false,
+
+    "weight": 1422,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.22,
+    "ola": 77.55,
+    "description": "The lighter, less expensive, less powerful Toyota Supra makes a strong case for itself. Card by Ahmed",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/846757613831716945/Toyota-GR-Supra-2.0-Remade.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/846757658399997952/Toyota-GR-Supra-2.0-stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/846757682111447100/Toyota-GR-Supra-2.0-333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/846757881046892654/Toyota-GR-Supra-2.0-666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/846757938621186078/Toyota-GR-Supra-2.0-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/846757922704588820/Toyota-GR-Supra-2.0-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/846757906929287188/Toyota-GR-Supra-2.0-699.png",
+
+    "333TopSpeed": 158,
+    "3330to60": 4.7,
+    "333Handling": 94,
+
+    "666TopSpeed": 162,
+    "6660to60": 4.4,
+    "666Handling": 97,
+
+    "969TopSpeed": 165,
+    "9690to60": 4.4,
+    "969Handling": 101,
+	
+	"996TopSpeed": 165,
+	"9960to60": 4.2,
+	"996Handling": 97,
+	
+	"699TopSpeed": 162,
+	"6990to60": 4.2,
+	"699Handling": 101
+	
+}

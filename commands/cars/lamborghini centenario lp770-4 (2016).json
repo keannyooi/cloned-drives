@@ -1,0 +1,54 @@
+{
+    "rq": 96,
+    "make": "Lamborghini",
+    "model": "Centenario LP770-4",
+    "modelYear": 2016,
+    "country": "IT",
+    "topSpeed": 217,
+    "0to60": 2.7,
+    "handling": 95,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Hypercar", "Ultra Expensive", "Unique"],
+    "isPrize": true,
+
+    "weight": 1520,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 93.10,
+    "ola": 96.30,
+    "description": "Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/842473365117992970/CENTINANRIONO.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/842473676255002664/Centi.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/842473686194978816/Centi333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/842473691892023326/Centi666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/842473740150636544/Centi996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/842473727609405460/Centi969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/842473712058105876/Centi699.png",
+
+    "333TopSpeed": 219,
+    "3330to60": 2.6,
+    "333Handling": 98,
+
+    "666TopSpeed": 222,
+    "6660to60": 2.4,
+    "666Handling": 101,
+
+    "996TopSpeed": 224,
+    "9960to60": 2.3,
+    "996Handling": 101,
+
+    "969TopSpeed": 224,
+    "9690to60": 2.4,
+    "969Handling": 105,
+
+    "699TopSpeed": 222,
+    "6990to60": 2.3,
+    "699Handling": 105
+}

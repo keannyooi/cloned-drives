@@ -1,0 +1,54 @@
+{
+    "rq": 41,
+    "make": "Toyota",
+    "model": "Corolla XSE Hatchback Manual",
+    "modelYear": 2019,
+    "country": "JP",
+    "topSpeed": 119,
+    "0to60": 7.5,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Hot Hatch"],
+    "isPrize": false,
+
+    "weight": 1380,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 54.58,
+    "ola": 85.84,
+    "description": "The slightly hot Toyota hatchback. Card by Keanny",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819382946745286667/corolla_but_manual.png",
+    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/819463903653658674/corolla_xse_manual_000.jpg",
+    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/819463913316941824/corolla_xse_manual_333.jpg",
+    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/819463921563074580/corolla_xse_manual_666.jpg",
+    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/819463952017653780/corolla_xse_manual_996.jpg",
+    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/819463941750259732/corolla_xse_manual_969.jpg",
+    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/819463930711506984/corolla_xse_manual_699.jpg",
+
+	"333TopSpeed": 123,
+    "3330to60": 7.1,
+    "333Handling": 75,
+
+    "666TopSpeed": 128,
+    "6660to60": 6.8, 
+    "666Handling": 78,
+
+    "996TopSpeed": 132,
+    "9960to60": 6.4,
+    "996Handling": 78,
+
+    "969TopSpeed": 132,
+    "9690to60": 6.8,
+    "969Handling": 81,
+
+    "699TopSpeed": 128,
+    "6990to60": 6.4,
+    "699Handling": 81
+}

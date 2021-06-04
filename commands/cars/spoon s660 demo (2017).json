@@ -1,0 +1,54 @@
+{
+    "rq": 22,
+    "make": ["Spoon", "Honda"],
+    "model": "S660 Demo",
+    "modelYear": 2017,
+    "country": "JP",
+    "topSpeed": 99,
+    "0to60": 9.1,
+    "handling": 76,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner", "Kei Car"],
+    "isPrize": false,
+
+    "weight": 820,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Roadster",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 33.56,
+    "ola": 61.54,
+    "description": "A S660 tuned by a legendary Honda tuner that has seen faster days. Card by keanny",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/837229444279435264/spoon_s660.png",
+    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/837230605950386186/spon_s660_00.jpg",
+    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/837230615032102912/spon_s660_333.jpg",
+    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/837230621570236436/spon_s660_666.jpg",
+    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/837230635554439168/spon_s660_996.jpg",
+    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/837230629787009024/spon_s660_969.jpg",
+    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/837230626935013416/spon_s660_699.jpg",
+
+    "333TopSpeed": 104,
+    "3330to60": 8.6,
+    "333Handling": 79,
+
+    "666TopSpeed": 110,
+    "6660to60": 8.2,
+    "666Handling": 81,
+
+    "996TopSpeed": 115,
+    "9960to60": 7.7,
+    "996Handling": 81,
+
+    "969TopSpeed": 115,
+    "9690to60": 8.2,
+    "969Handling": 84,
+
+    "699TopSpeed": 110,
+    "6990to60": 7.7,
+    "699Handling": 84
+}

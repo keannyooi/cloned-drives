@@ -176,6 +176,7 @@ module.exports = {
 			else {
 				searchResults1 = searchResults;
 			}
+
 			if (searchResults1.length > 1) {
 				let carList = "";
 				for (i = 1; i <= searchResults1.length; i++) {
@@ -253,8 +254,7 @@ module.exports = {
 				const errorMessage = new Discord.MessageEmbed()
 					.setColor("#fc0303")
 					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-					.setTitle("Error, it looks like you don't have enough cars to perform this action.")
-					.setDescription("If you are bulk fusing cars, take note that you can't bulk fuse upgraded cars. Besides, you can't fuse maxed cars and prize cars.")
+					.setTitle("Error, it looks like the person doesn't have enough cars to perform this action.")
 					.setTimestamp();
 				return message.channel.send(errorMessage);
 			}
@@ -363,10 +363,10 @@ module.exports = {
                 				}
 							}
 							for (i = 0; i < playerData.decks.length; i++) {
-								for (x = 0; x < playerData.decks[i].hand.length; x++) {
-									let car = playerData.decks[i].hand[x];
-									if (car.carFile === currentCar.carFile && `${car.gearingUpgrade}${car.engineUpgrade}${car.chassisUpgrade}` === upgrade) {
+								for (x = 0; x < 5; x++) {
+									if (playerData.decks[i].hand[x] === currentCar.carFile && playerData.decks[i].tunes[x] === upgrade) {
 										playerData.decks[i].hand[x] = "None";
+										playerData.decks[i].tunes[x] = "000";
 									}
 								}
 							}

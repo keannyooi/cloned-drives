@@ -15,11 +15,12 @@ module.exports = {
     usage: "<criteria> (optional) <page number>",
     args: 1,
 	isExternal: false,
-    adminOnly: false,
+    adminOnly: true,
     description: "Shows the server's leaderboards.",
     async execute(message, args) {
         const db = message.client.db;
-        const all = await db.all();
+        const all = await db.all(); // this line is crashing the bot
+		console.log("checking");
         const pageLimit = 10;
         const filter = (reaction, user) => {
             return (reaction.emoji.name === "⬅️" || reaction.emoji.name === "➡️") && user.id === message.author.id;

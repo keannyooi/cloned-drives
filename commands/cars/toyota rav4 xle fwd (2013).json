@@ -1,7 +1,7 @@
-﻿{
+{
     "rq": 32,
     "make": "Toyota",
-    "model": "RAV4 LE FWD",
+    "model": "RAV4 XLE FWD",
     "modelYear": 2013,
     "country": "JP",
     "topSpeed": 108,
@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
 
     "weight": 1567,
     "gc": "Medium",
@@ -24,7 +23,6 @@
     "mra": 47.11,
     "ola": 72.51,
     "description": "One of the first crossovers in its 3rd gen. Card by Andu",
-
 
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819514008285347870/RAV4XLE.png",
     "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819514437533958144/RAV4FWD.png",

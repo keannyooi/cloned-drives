@@ -1,0 +1,54 @@
+﻿{
+    "rq": 27,
+    "make": "Citroen",
+    "model": "C1 1.0i Advance",
+    "modelYear": 2009,
+    "country": "FR",
+    "topSpeed": 98,
+    "0to60": 12.5,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 838,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 27.37,
+    "ola": 65.79,
+    "description": "If you live in a city, it's hard to justify driving anything but a C1. Card by keanny",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/845922697044557864/citroen_c1_advance.png",
+    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/846200868734763048/c1_advance_000.jpg",
+    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/846200877210402826/c1_advance_333.jpg",
+    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/846200881061953586/c1_advance_666.jpg",
+    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/846200898379972618/c1_advance_996.jpg",
+    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/846200895870992395/c1_advance_969.jpg",
+    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/846200887919116338/c1_advance_699.jpg",
+
+    "333TopSpeed": 103,
+    "3330to60": 11.9,
+    "333Handling": 75,
+
+    "666TopSpeed": 109,
+    "6660to60": 11.3,
+    "666Handling": 78,
+
+    "996TopSpeed": 114,
+    "9960to60": 10.6,
+    "996Handling": 78,
+
+    "969TopSpeed": 114,
+    "9690to60": 11.3,
+    "969Handling": 81,
+
+    "699TopSpeed": 109,
+    "6990to60": 10.6,
+    "699Handling": 81
+}

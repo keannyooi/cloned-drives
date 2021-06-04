@@ -54,30 +54,14 @@ module.exports = {
         }
 
 		const searchResults = garage.filter(function (garageCar) {
-            return carName.every(part => garageCar.carFile.includes(part)) && garageCar["000"] + garageCar["333"] + garageCar["666"] + garageCar["996"]  + garageCar["969"]  + garageCar["699"]  > 0;
+			let test = require(`./cars/${garageCar.carFile}`);
+            return carName.every(part => garageCar.carFile.includes(part)) && !test["isPrize"] && (garageCar["000"] >= amount || garageCar["333"] >= amount || garageCar["666"] >= amount);
         });
-		let searchResults1 = [];
 
-		if (args[0].toLowerCase() === "all" || amount > 1) {
-			for (let car of searchResults) {
-				let test = require(`./cars/${car.carFile}`);
-				if (car["000"] >= amount || car["333"] >= amount || car["666"] >= amount || car["996"] >= amount || car["969"] >= amount || car["699"] >= amount) {
-					if (test["isPrize"] === false) {
-						searchResults1.push(car);
-					}
-				}
-			}
-		}
-		else {
-			searchResults1 = searchResults.filter(c => {
-				let test = require(`./cars/${c.carFile}`);
-				return test["isPrize"] === false;
-			});
-		}
-        if (searchResults1.length > 1) {
+        if (searchResults.length > 1) {
             let carList = "";
-            for (i = 1; i <= searchResults1.length; i++) {
-                let car = require(`./cars/${searchResults1[i - 1].carFile}`);
+            for (i = 1; i <= searchResults.length; i++) {
+                let car = require(`./cars/${searchResults[i - 1].carFile}`);
 				let make = car["make"];
 				if (typeof make === "object") {
 					make = car["make"][0];
@@ -113,7 +97,7 @@ module.exports = {
 						if (message.channel.type === "text") {
 							collected.first().delete();
 						}
-                        if (isNaN(collected.first().content) || parseInt(collected.first().content) > searchResults1.length || parseInt(collected.first().content) < 1) {
+                        if (isNaN(collected.first().content) || parseInt(collected.first().content) > searchResults.length || parseInt(collected.first().content) < 1) {
 							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                             const errorMessage = new Discord.MessageEmbed()
                                 .setColor("#fc0303")
@@ -124,11 +108,11 @@ module.exports = {
                             return currentMessage.edit(errorMessage);
                         }
                         else {
-                            currentCar = searchResults1[parseInt(collected.first().content) - 1];
-                            selectUpgrade(currentCar, currentMessage);
+                            selectUpgrade(searchResults[parseInt(collected.first().content) - 1], currentMessage);
                         }
                     })
-                    .catch(() => {
+                    .catch(error => {
+						console.log(error);
 						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                         const cancelMessage = new Discord.MessageEmbed()
                             .setColor("#34aeeb")
@@ -139,8 +123,8 @@ module.exports = {
                     });
             });
         }
-        else if (searchResults1.length > 0) {
-            selectUpgrade(searchResults1[0]);
+        else if (searchResults.length > 0) {
+            selectUpgrade(searchResults[0]);
         }
         else {
 			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
@@ -154,7 +138,7 @@ module.exports = {
         }
 
 		async function selectUpgrade(currentCar, currentMessage) {
-			let isOne = Object.keys(currentCar).filter(m => !isNaN(currentCar[m]) && currentCar[m] >= amount);
+			let isOne = Object.keys(currentCar).filter(m => !isNaN(currentCar[m]) && !m.includes("96") && !m.includes("69") && currentCar[m] >= amount);
 			if (isOne.length === 1) {
 				fuse(currentCar, isOne[0], currentMessage);
 			}
@@ -200,7 +184,8 @@ module.exports = {
 							fuse(currentCar, collected.first().content, upgradeMessage);
 						}
 					})
-					.catch(() => {
+					.catch(error => {
+						console.log(error);
 						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 						const cancelMessage = new Discord.MessageEmbed()
 							.setColor("#34aeeb")
@@ -282,10 +267,10 @@ module.exports = {
                 				}
 							}
 							for (i = 0; i < playerData.decks.length; i++) {
-								for (x = 0; x < playerData.decks[i].hand.length; x++) {
-									let car = playerData.decks[i].hand[x];
-									if (car.carFile === currentCar.carFile && `${car.gearingUpgrade}${car.engineUpgrade}${car.chassisUpgrade}` === upgrade) {
+								for (x = 0; x < 5; x++) {
+									if (playerData.decks[i].hand[x] === currentCar.carFile && playerData.decks[i].tunes[x] === upgrade) {
 										playerData.decks[i].hand[x] = "None";
+										playerData.decks[i].tunes[x] = "000";
 									}
 								}
 							}

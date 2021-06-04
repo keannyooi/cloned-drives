@@ -1,0 +1,54 @@
+{
+    "rq": 26,
+    "make": "Fiat",
+    "model": "500e",
+    "modelYear": 2013,
+    "country": "IT",
+    "topSpeed": 87,
+    "0to60": 8.6,
+    "handling": 70 ,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+
+    "weight": 1355,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 0.00,
+    "ola": 65.50,
+    "description": "An electric cutie. Card by keanny",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/837229179577434112/fiat_500e.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/837228675396141086/500e_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/837228685719109632/500e_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/837228690563137576/500e_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/837228706770583592/500e_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/837228700960555018/500e_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/837228696045617172/500e_699.jpg",
+
+    "333TopSpeed": 93,
+    "3330to60": 8.2,
+    "333Handling": 72,
+
+    "666TopSpeed": 99,
+    "6660to60": 7.7,
+    "666Handling": 75,
+
+    "996TopSpeed": 105,
+    "9960to60": 7.3,
+    "996Handling": 75,
+
+    "969TopSpeed": 105,
+    "9690to60": 7.7,
+    "969Handling": 78,
+
+    "699TopSpeed": 99,
+    "6990to60": 7.3,
+    "699Handling": 78
+}

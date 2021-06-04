@@ -193,17 +193,16 @@ module.exports = {
                     { name: "Fuel Type", value: currentCar["fuelType"], inline: true },
                     { name: "TCS Enabled?", value: currentCar["tcs"], inline: true },
                     { name: "ABS Enabled?", value: currentCar["abs"], inline: true },
-                    { name: "Mid-Range Acceleration (MRA)", value: mra, inline: true },
-                    { name: "Off-the-Line Acceleration (OLA)", value: ola, inline: true },
                     { name: "Tags", value: tags, inline: true },
                     { name: "Prize Car?", value: currentCar["isPrize"], inline: true },
-                    { name: "Available Maxed Tunes", value: maxedTunes.join(", "), inline: true },
-                    { name: "Description", value: description },
+					{ name: "Mid-Range Acceleration (MRA)", value: mra, inline: true },
+                    { name: "Off-the-Line Acceleration (OLA)", value: ola, inline: true },
+                    { name: "Description", value: description }
                 )
                 .setImage(currentCar["card"])
                 .setTimestamp();
 
-			let hasCar = garage.find(c => c.carFile === car)
+			let hasCar = garage.find(c => c.carFile === car);
 			if (hasCar !== undefined) {
 				infoScreen.setFooter(`✅ You own ${hasCar["000"] + hasCar["333"] + hasCar["666"] + hasCar["996"] + hasCar["969"] + hasCar["699"]} of this car!`);
 			}

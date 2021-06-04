@@ -128,7 +128,7 @@ module.exports = {
 					.setColor("#fc0303")
 					.setTitle("Error, it looks like you attempted tuning your car in the wrong order.")
 					.setDescription("Correct tuning order: `000` => `333` => `666` => `996`, `969` or `699`.")
-					.addField("Current upgrades for your car", upgradeList.slice(0, -2))
+					.addField("Current Tunes", upgradeList.slice(0, -2))
 					.setTimestamp();
 				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 				if (currentMessage) {
@@ -254,11 +254,11 @@ module.exports = {
                 	}
 				}
 				for (i = 0; i < playerData.decks.length; i++) {
-					let edit = playerData.decks[i].hand.findIndex(car => car.carFile === currentCar.carFile && `${car.gearingUpgrade}${car.engineUpgrade}${car.chassisUpgrade}` === origUpgrade);
-					if (edit >= 0) {
-						playerData.decks[i].hand[edit].gearingUpgrade = parseInt(upgrade[0]);
-						playerData.decks[i].hand[edit].engineUpgrade = parseInt(upgrade[1]);
-						playerData.decks[i].hand[edit].chassisUpgrade = parseInt(upgrade[2]);
+					for (x = 0; x < 5; x++) {
+						if (playerData.decks[i].hand[x] === currentCar.carFile && playerData.decks[i].tunes[x] === origUpgrade) {
+							playerData.decks[i].tunes[x] = upgrade;
+							break;
+						}
 					}
 				}
 				await db.set(`acc${message.author.id}`, playerData);
