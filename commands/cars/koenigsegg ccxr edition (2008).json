@@ -1,0 +1,54 @@
+{
+    "rq": 93,
+    "make": "Koenigsegg",
+    "model": "CCXR Edition",
+    "modelYear": 2008,
+    "country": "SE",
+    "topSpeed": 250,
+    "0to60": 2.8,
+    "handling": 92,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Rest of The World", "Unique", "Ultra Expensive", "Hypercar"],
+    "isPrize": false,
+
+    "weight": 1280,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 127.27,
+    "ola": 107.14,
+    "description": "Card by Aqo",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/850294425238372382/ccxr.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/850294737159323648/Koenigsegg_CCXR_Edition_2008_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/850294742410461214/Koenigsegg_CCXR_Edition_2008_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/850294747897528340/Koenigsegg_CCXR_Edition_2008_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/850294762711416842/Koenigsegg_CCXR_Edition_2008_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/850294757946818560/Koenigsegg_CCXR_Edition_2008_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/850294754011775006/Koenigsegg_CCXR_Edition_2008_699.png",
+
+    "333TopSpeed": 252,
+    "3330to60": 2.7,
+    "333Handling": 95,
+
+    "666TopSpeed": 254,
+    "6660to60": 2.5,
+    "666Handling": 98,
+
+    "996TopSpeed": 256,
+    "9960to60": 2.4,
+    "996Handling": 98,
+
+    "969TopSpeed": 256,
+    "9690to60": 2.5,
+    "969Handling": 102,
+
+    "699TopSpeed": 254,
+    "6990to60": 2.4,
+    "699Handling": 102
+}

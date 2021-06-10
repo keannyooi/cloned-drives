@@ -72,6 +72,7 @@ module.exports = {
 								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 								.setTitle("Error, invalid integer provided.")
 								.setDescription("It looks like your response was either not a number or not part of the selection.")
+								.addField("Number Received", `\`${collected.first().content}\` (either not a number, smaller than 1 or bigger than ${searchResults.length})`)
 								.setTimestamp();
 							return currentMessage.edit(errorMessage);
 						}
@@ -98,8 +99,9 @@ module.exports = {
 			const errorMessage = new Discord.MessageEmbed()
 				.setColor("#fc0303")
 				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-				.setTitle("Error, 404 event not found.")
-				.setDescription("Try checking again using `cd-events`.")
+				.setTitle("Error, 404 offer not found.")
+				.setDescription("Try checking again using `cd-limitedoffers`.")
+				.addField("Keywords Received", `\`${offerName.join(" ")}\``)
 				.setTimestamp();
 			return message.channel.send(errorMessage);
 		}

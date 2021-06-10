@@ -94,13 +94,14 @@ module.exports = {
                         errors: ["time"]
                     })
                         .then(collected => {
-                            if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
+                            if (isNaN(collected.first().content) || parseInt(collected.first().content) > searchResults.length || parseInt(collected.first().content) < 1) {
 								message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                                 const errorMessage = new Discord.MessageEmbed()
                                     .setColor("#fc0303")
                                     .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                                     .setTitle("Error, invalid integer provided.")
                                     .setDescription("It looks like your response was either not a number or not part of the selection.")
+									.addField("Number Received", `\`${collected.first().content}\` (either not a number, smaller than 1 or bigger than ${searchResults.length})`)
                                     .setTimestamp();
                                 return currentMessage.edit(errorMessage);
                             }

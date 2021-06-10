@@ -60,13 +60,14 @@ module.exports = {
             })
                 .then(collected => {
 					collected.first().delete();
-                    if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
+                    if (isNaN(collected.first().content) || parseInt(collected.first().content) > searchResults.length || parseInt(collected.first().content) < 1) {
 						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                         const errorMessage = new Discord.MessageEmbed()
                             .setColor("#fc0303")
                             .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                             .setTitle("Error, invalid integer provided.")
                             .setDescription("It looks like your response was either not a number or not part of the selection.")
+							.addField("Number Received", `\`${collected.first().content}\` (either not a number, smaller than 1 or bigger than ${searchResults.length})`)
                             .setTimestamp();
                         return currentMessage.edit(errorMessage);
                     }
@@ -130,6 +131,7 @@ module.exports = {
                         .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                         .setTitle("Error, too many search results.")
                         .setDescription("Due to Discord's embed limitations, the bot isn't able to show the full list of search results. Try again with a more specific keyword.")
+						.addField("Total Characters in List", `\`${textList.length}\` > \`2048\``)
                         .setTimestamp();
                     return message.channel.send(errorMessage);
                 }
@@ -152,13 +154,14 @@ module.exports = {
                 })
                     .then(collected => {
 						collected.first().delete();
-                        if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {                         
+                        if (isNaN(collected.first().content) || parseInt(collected.first().content) > searchResults.length || parseInt(collected.first().content) < 1) {                         
 							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                             const errorMessage = new Discord.MessageEmbed()
                                 .setColor("#fc0303")
                                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                                 .setTitle("Error, invalid integer provided.")
                                 .setDescription("It looks like your response was either not a number or not part of the selection.")
+								.addField("Number Received", `\`${collected.first().content}\` (either not a number, smaller than 1 or bigger than ${searchResults.length})`)
                                 .setTimestamp();
                             return currentMessage.edit(errorMessage);
                         }
@@ -191,6 +194,7 @@ module.exports = {
                     .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                     .setTitle("Error, car requested not found.")
                     .setDescription("Well that sucks. Perhaps you already have this car inside this deck?")
+					.addField("Keywords Received", `\`${carName.join(" ")}\``)
                     .setTimestamp();
                 if (currentMessage) {
                     return currentMessage.edit(errorMessage);

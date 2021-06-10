@@ -1,0 +1,54 @@
+{
+    "rq": 88,
+    "make": "Ford",
+    "model": "GT90",
+    "modelYear": 1995,
+    "country": "US",
+    "topSpeed": 253,
+    "0to60": 3.1,
+    "handling": 92,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Unique", "Concept", "Supercar", "Ultra Expensive"],
+    "isPrize": false,
+
+    "weight": 1451,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 100,
+    "ola": 103.23,
+    "description": "The craziest Ford concept car ever made to date. setup to become the potential top speed record holder at the time. Card by Spence.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/850976292085170236/image0.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/850976361408495636/image0.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/850976388928503818/image0.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/850976406498312202/image0.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/850976496214474772/image0.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/850976483245555752/image0.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/850976466002640896/image0.jpg",
+
+    "333TopSpeed": 255,
+    "3330to60": 2.9,
+    "333Handling": 95,
+
+    "666TopSpeed": 257,
+    "6660to60": 2.8,
+    "666Handling": 98,
+
+    "996TopSpeed": 259,
+    "9960to60": 2.6,
+    "996Handling": 98,
+
+    "969TopSpeed": 259,
+    "9690to60": 2.8,
+    "969Handling": 102,
+
+    "699TopSpeed": 257,
+    "6990to60": 2.6,
+    "699Handling": 102
+}

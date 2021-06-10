@@ -47,10 +47,11 @@ module.exports = {
 
 			if (streak % 20 === 0) {
 				let randomPack = packFiles[Math.floor(Math.random() * packFiles.length)];
-				while (!randomPack.includes("elite")) {
-					randomPack = packFiles[Math.floor(Math.random() * packFiles.length)];
-				}
 				let currentPack = require(`./packs/${randomPack}`);
+				while (!randomPack.includes("elite") || currentPack.repetition > 1) {
+					randomPack = packFiles[Math.floor(Math.random() * packFiles.length)];
+					currentPack = require(`./packs/${randomPack}`);
+				}
 				let addedCars = openPackCommand.openPack(message, currentPack);
 
 				for (i = 0; i < addedCars.length; i++) {
@@ -77,10 +78,11 @@ module.exports = {
 			}
 			else if (streak % 7 === 0) {
 				let randomPack = packFiles[Math.floor(Math.random() * packFiles.length)];
-				while (randomPack.includes("elite") || randomPack.includes("booster")) {
-					randomPack = packFiles[Math.floor(Math.random() * packFiles.length)];
-				}
 				let currentPack = require(`./packs/${randomPack}`);
+				while (randomPack.includes("elite") || randomPack.includes("booster") || currentPack.repetition > 1) {
+					randomPack = packFiles[Math.floor(Math.random() * packFiles.length)];
+					currentPack = require(`./packs/${randomPack}`);
+				}
 				let addedCars = openPackCommand.openPack(message, currentPack);
 
 				for (i = 0; i < addedCars.length; i++) {
@@ -108,7 +110,7 @@ module.exports = {
 			else if (streak % 5 === 0) {
 				let randomCar = carFiles[Math.floor(Math.random() * carFiles.length)];
 				let hmm = require(`./cars/${randomCar}`);
-				while (hmm["rq"] > 64) {
+				while (hmm["rq"] > 64 || hmm["isPrize"] === true) {
 					randomCar = carFiles[Math.floor(Math.random() * carFiles.length)];
 					hmm = require(`./cars/${randomCar}`);
 				}

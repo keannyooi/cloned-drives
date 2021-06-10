@@ -409,7 +409,7 @@ module.exports = {
 				return car["isPrize"] === true || car["rq"] < 40 || car["rq"] > 79;
 			}
 			else if (playerData.rrWinStreak > 50 && playerData.rrWinStreak <= 75) {
-				return car["isPrize"] === true || car["rq"] < 50;
+				return car["isPrize"] === true || car["rq"] < 50 || car["rq"] > 90;
 			}
 			else if (playerData.rrWinStreak > 75 && playerData.rrWinStreak <= 125) {
 				return car["rq"] < 50;

@@ -87,6 +87,7 @@ module.exports = {
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                 .setTitle("Error, offer requested not found.")
                 .setDescription("Well that sucks.")
+				.addField("Keywords Received", `\`${offerName.join(" ")}\``)
                 .setTimestamp();
             return message.channel.send(errorMessage);
         }

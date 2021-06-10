@@ -52,6 +52,7 @@ module.exports = {
 						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 						.setTitle("Error, too many search results.")
 						.setDescription("Due to Discord's embed limitations, the bot isn't able to show the full list of search results. Try again with a more specific keyword.")
+						.addField("Total Characters in List", `\`${carList.length}\` > \`2048\``)
 						.setTimestamp();
 					return message.channel.send(errorMessage);
 				}
@@ -78,6 +79,7 @@ module.exports = {
 									.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 									.setTitle("Error, invalid integer provided.")
 									.setDescription("It looks like your response was either not a number or not part of the selection.")
+									.addField("Number Received", `\`${collected.first().content}\` (either not a number, smaller than 1 or bigger than ${searchResults.length})`)
 									.setTimestamp();
 								return currentMessage.edit(errorMessage);
 							}
@@ -106,6 +108,7 @@ module.exports = {
 					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 					.setTitle("Error, car requested not found.")
 					.setDescription("Well that sucks.")
+					.addField("Keywords Received", `\`${carName.join(" ")}\``)
 					.setTimestamp();
 				return message.channel.send(errorMessage);
 			}
@@ -165,10 +168,6 @@ module.exports = {
                 ola = accel = "N/A";
             }
 
-            const maxedTunes = [996, 969, 699].filter(function (tune) {
-                return currentCar[`${tune}TopSpeed`];
-            });
-
 			let make = currentCar["make"];
 			if (typeof make === "object") {
 				make = currentCar["make"][0];
@@ -204,7 +203,15 @@ module.exports = {
 
 			let hasCar = garage.find(c => c.carFile === car);
 			if (hasCar !== undefined) {
-				infoScreen.setFooter(`✅ You own ${hasCar["000"] + hasCar["333"] + hasCar["666"] + hasCar["996"] + hasCar["969"] + hasCar["699"]} of this car!`);
+				let str = "";
+				for (let [key, value] of Object.entries(hasCar)) {
+					if (!isNaN(value)) {
+						if (value > 0) {
+							str += `${value}x ${key}, `;
+						}
+					}
+				}
+				infoScreen.setFooter(`✅ You own ${str.slice(0, -2)} of this car!`);
 			}
 			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             if (currentMessage) {

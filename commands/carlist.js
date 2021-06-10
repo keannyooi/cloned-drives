@@ -58,7 +58,7 @@ module.exports = {
                             list = list.filter(function (carFile) {
                                 let currentCar = require(`./cars/${carFile}`);
                                 if (Array.isArray(currentCar[key])) {
-                                    var obj = {};
+                                    let obj = {};
                                     currentCar[key].forEach((tag, index) => obj[tag.toLowerCase()] = index);
                                     return value.every(tagFilter => { return obj[tagFilter] !== undefined });
                                 }
@@ -119,6 +119,7 @@ module.exports = {
                 case "weight":
                 case "mra":
                 case "ola":
+				case "mostowned":
                     sortBy = args[args.length - 1].toLowerCase();
                     break;
                 default:
@@ -133,53 +134,96 @@ module.exports = {
                                          \`-s handling\` - Sort by handling. 
                                          \`-s weight\` - Sort by weight. 
                                          \`-s mra\` - Sort by mid-range acceleraion. 
-                                         \`-s ola\` - Sort by off-the-line acceleration.`)
+                                         \`-s ola\` - Sort by off-the-line acceleration.
+										 \`-s mostowned\` - Sort by how many copies of the car owned.`)
                         .setTimestamp();
                     return message.channel.send(errorScreen);
             }
         }
 
         list.sort(function (a, b) {
-            const carA = require(`./cars/${a}`);
+			const carA = require(`./cars/${a}`);
             const carB = require(`./cars/${b}`);
-            if (carA[sortBy] === carB[sortBy]) {
-                let nameA = `${carA["make"]} ${carA["model"]}`.toLowerCase();
-                let nameB = `${carA["make"]} ${carA["model"]}`.toLowerCase();
-				if (typeof carA["make"] === "object") {
-					nameA = `${carA["make"][0]} ${carA["model"]}`.toLowerCase();
+			if (sortBy === "mostowned") {
+				const garA = garage.find(o => o.carFile === a);
+				const garB = garage.find(o => o.carFile === b);
+				let amountA = 0, amountB = 0;
+				if (garA !== undefined) {
+					amountA = garA["000"] + garA["333"] + garA["666"] + garA["996"] + garA["969"] + garA["699"];
 				}
-				if (typeof carB["make"] === "object") {
-					nameB = `${carB["make"][0]} ${carB["model"]}`.toLowerCase();
+				if (garB !== undefined) {
+					amountB = garB["000"] + garB["333"] + garB["666"] + garB["996"] + garB["969"] + garB["699"];
 				}
 
-                if (nameA < nameB) {
-                    return -1;
-                }
-                else if (nameA > nameB) {
-                    return 1;
-                }
-                else {
-                    return 0;
-                }
-            }
-            else {
-                if (sortBy === "0to60" || sortBy === "weight") {
-                    if (carA[sortBy] > carB[sortBy]) {
-                        return 1;
-                    }
-                    else {
-                        return -1;
-                    }
-                }
-                else {
-                    if (carA[sortBy] > carB[sortBy]) {
-                        return -1;
-                    }
-                    else {
-                        return 1;
-                    }
-                }
-            }
+				if (amountA === amountB) {
+					let nameA1 = `${carA["make"]} ${carA["model"]}`.toLowerCase();
+					let nameB1 = `${carA["make"]} ${carA["model"]}`.toLowerCase();
+					if (typeof carA["make"] === "object") {
+						nameA1 = `${carA["make"][0]} ${carA["model"]}`.toLowerCase();
+					}
+					if (typeof carB["make"] === "object") {
+						nameB1 = `${carB["make"][0]} ${carB["model"]}`.toLowerCase();
+					}
+
+					if (nameA1 < nameB1) {
+						return -1;
+					}
+					else if (nameA1 > nameB1) {
+						return 1;
+					}
+					else {
+						return 0;
+					}
+				}
+				else {
+					if (amountA > amountB) {
+						return -1;
+					}
+					else {
+						return 1;
+					}
+				}
+			}
+			else {
+				if (carA[sortBy] === carB[sortBy]) {
+					let nameA = `${carA["make"]} ${carA["model"]}`.toLowerCase();
+					let nameB = `${carA["make"]} ${carA["model"]}`.toLowerCase();
+					if (typeof carA["make"] === "object") {
+						nameA = `${carA["make"][0]} ${carA["model"]}`.toLowerCase();
+					}
+					if (typeof carB["make"] === "object") {
+						nameB = `${carB["make"][0]} ${carB["model"]}`.toLowerCase();
+					}
+
+					if (nameA < nameB) {
+						return -1;
+					}
+					else if (nameA > nameB) {
+						return 1;
+					}
+					else {
+						return 0;
+					}
+				}
+				else {
+					if (sortBy === "0to60" || sortBy === "weight") {
+						if (carA[sortBy] > carB[sortBy]) {
+							return 1;
+						}
+						else {
+							return -1;
+						}
+					}
+					else {
+						if (carA[sortBy] > carB[sortBy]) {
+							return -1;
+						}
+						else {
+							return 1;
+						}
+					}
+				}
+			}
         });
 
         if (page < 0 || totalPages < page) {
@@ -344,7 +388,15 @@ module.exports = {
                 if (currentCar["isPrize"]) {
                     carList += ` 🏆`;
                 }
-                if (sortBy !== "rq") {
+				if (sortBy === "mostowned") {
+					let count = garage.find(o => o.carFile === list[i]);
+					let countNumber = 0;
+					if (count !== undefined) {
+						countNumber = count["000"] + count["333"] + count["666"] + count["996"] + count["969"] + count["699"];
+					}
+					valueList += `\`${countNumber}\`\n`;
+				}
+                else if (sortBy !== "rq") {
                     valueList += `\`${currentCar[sortBy]}\`\n`;
                 }
                 if (garage.some(car => list[i].includes(car.carFile))) {

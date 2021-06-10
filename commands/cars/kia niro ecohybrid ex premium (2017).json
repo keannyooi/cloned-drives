@@ -1,0 +1,54 @@
+{
+    "rq": 34,
+    "make": "Kia",
+    "model": "Niro EcoHybrid EX Premium",
+    "modelYear": 2017,
+    "country": "KR",
+    "topSpeed": 110,
+    "0to60": 9.4,
+    "handling": 74,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Rest of The World", "Eco-Friendly"],
+    "isPrize": false,
+
+    "weight": 1468,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Hybrid",
+    "mra": 59.75,
+    "ola": 63.16,
+    "description": "Card by Aqo.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/850115334345064458/ihatekias_.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/850115538101338122/Kia_Niro_EcoHybrid_EX_Premium_2017_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/850115548893544449/Kia_Niro_EcoHybrid_EX_Premium_2017_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/850115551517999154/Kia_Niro_EcoHybrid_EX_Premium_2017_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/850115568828416010/Kia_Niro_EcoHybrid_EX_Premium_2017_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/850115565968293988/Kia_Niro_EcoHybrid_EX_Premium_2017_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/850115560683470928/Kia_Niro_EcoHybrid_EX_Premium_2017_699.png",
+
+    "333TopSpeed": 115,
+    "3330to60": 8.9,
+    "333Handling": 76,
+
+    "666TopSpeed": 119,
+    "6660to60": 8.5,
+    "666Handling": 79,
+
+    "996TopSpeed": 124,
+    "9960to60": 8.0,
+    "996Handling": 79,
+
+    "969TopSpeed": 124,
+    "9690to60": 8.5,
+    "969Handling": 82,
+
+    "699TopSpeed": 119,
+    "6990to60": 8.0,
+    "699Handling": 82
+}

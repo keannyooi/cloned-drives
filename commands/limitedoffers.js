@@ -136,8 +136,9 @@ module.exports = {
 				const errorMessage = new Discord.MessageEmbed()
 					.setColor("#fc0303")
 					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-					.setTitle("Error, pack requested not found.")
+					.setTitle("Error, offer requested not found.")
 					.setDescription("Well that sucks.")
+					.addField("Keywords Received", `\`${offerName.join(" ")}\``)
 					.setTimestamp();
 				return message.channel.send(errorMessage);
 			}
@@ -148,6 +149,7 @@ module.exports = {
 					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 					.setTitle(`${currentOffer.name} (x${currentOffer.amount - (currentOffer.players[message.author.id] || 0)} remaining)`)
 					.setDescription(`This offer's current status: **${currentOffer.isActive}**
+					Duration in days: \`${currentOffer.timeLeft}\`
 					Price: ${moneyEmoji}${currentOffer.price}
 					Contents of Offer:`)
 					.setTimestamp();

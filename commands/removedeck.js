@@ -40,7 +40,7 @@ module.exports = {
         }
 
         const searchResults = decks.filter(function (deck) {
-            return deck.name.includes(deckName);
+            return deck.name.toLowerCase().includes(deckName);
         });
 
         if (searchResults.length > 1) {
@@ -71,6 +71,7 @@ module.exports = {
                                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                                 .setTitle("Error, invalid integer provided.")
                                 .setDescription("It looks like your response was either not a number or not part of the selection.")
+								.addField("Number Received", `\`${collected.first().content}\` (either not a number, smaller than 1 or bigger than ${searchResults.length})`)
                                 .setTimestamp();
                             return currentMessage.edit(errorMessage);
                         }
@@ -111,7 +112,7 @@ module.exports = {
                 .setDescription("React with ✅ to proceed or ❎ to cancel.")
                 .setTimestamp();
 
-            var reactionMessage;
+            let reactionMessage;
             if (currentMessage) {
                 reactionMessage = await currentMessage.edit(confirmationMessage);
             }

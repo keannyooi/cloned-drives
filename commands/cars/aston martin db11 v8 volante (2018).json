@@ -1,0 +1,54 @@
+{
+    "rq": 68,
+    "make": "Aston Martin",
+    "model": "DB11 V8 Volante",
+    "modelYear": 2018,
+    "country": "GB",
+    "topSpeed": 187,
+    "0to60": 4.1,
+    "handling": 85,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Royal Collection", "Grand Tourer"],
+    "isPrize": false,
+
+    "weight": 1870,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Roadster",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 87.23,
+    "ola": 97.56,
+    "description": "Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/852120782884438026/db11VolanteV8.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/852121491889324032/db11v8volante.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/852121495864868864/db11v8volante333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/852121501871505418/db11v8volante666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/852121530649280512/db11v8volante996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/852121522741968906/db11v8volante969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/852121509660852254/db11v8volante699.png",
+
+    "333TopSpeed": 190,
+    "3330to60": 3.9,
+    "333Handling": 88,
+
+    "666TopSpeed": 193,
+    "6660to60": 3.7,
+    "666Handling": 91,
+
+    "996TopSpeed": 195,
+    "9960to60": 3.5,
+    "996Handling": 91,
+
+    "969TopSpeed": 195,
+    "9690to60": 3.7,
+    "969Handling": 94,
+
+    "699TopSpeed": 193,
+    "6990to60": 3.5,
+    "699Handling": 94
+}

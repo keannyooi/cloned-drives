@@ -1,6 +1,6 @@
 {
     "rq": 61,
-    "make": "Maybach",
+    "make": ["Maybach", "Mercedes-Benz"],
     "model": "57",
     "modelYear": 2002,
     "country": "DE",
@@ -9,7 +9,7 @@
     "handling": 68,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": [],
+    "tags": ["Sleeper"],
     "isPrize": false,
 
     "weight": 2735,

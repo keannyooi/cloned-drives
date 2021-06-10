@@ -75,6 +75,7 @@ module.exports = {
 								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 								.setTitle("Error, too many search results.")
 								.setDescription("Due to Discord's embed limitations, the bot isn't able to show the full list of search results. Try again with a more specific keyword.")
+								.addField("Total Characters in List", `\`${textList.length}\` > \`2048\``)
 								.setTimestamp();
 							return message.channel.send(errorMessage);
 						}
@@ -130,6 +131,7 @@ module.exports = {
 							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 							.setTitle("Error, 404 user not found.")
 							.setDescription("It looks like this user isn't in this server.")
+							.addField("Keywords Received", `\`${userName.join(" ")}\``)
 							.setTimestamp();
 						return message.channel.send(errorMessage);
 					}
@@ -157,7 +159,7 @@ module.exports = {
 								garage = garage.filter(function (car) {
 									let currentCar = require(`./cars/${car.carFile}`);
 									if (Array.isArray(currentCar[key])) {
-										var obj = {};
+										let obj = {};
 										currentCar[key].forEach((tag, index) => obj[tag.toLowerCase()] = index);
 										return value.every(tagFilter => { return obj[tagFilter] !== undefined });
 									}
@@ -239,13 +241,14 @@ module.exports = {
 				}
 			});
 
-			if (page < 0 || totalPages < page) {
+			if (page < 1 || totalPages < page) {
 				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 				const errorScreen = new Discord.MessageEmbed()
 					.setColor("#fc0303")
 					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 					.setTitle("Error, page number requested invalid.")
 					.setDescription(`This garage ends at page ${totalPages}.`)
+					.addField("Page Number Received", `\`${page}\` (either not a number, smaller than 1 or bigger than ${totalPages})`)
 					.setTimestamp();
 				if (currentMessage) {
 					return currentMessage.edit(errorScreen);

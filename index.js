@@ -163,7 +163,7 @@ client.on("message", async message => {
 			.setColor("#fc0303")
 			.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 			.setTitle("Error, it looks like you attempted using an Admin-only command.")
-			.setDescription("You must be an Admin to use this command!")
+			.setDescription("You don't have the Admin role, which is required to use this command.")
 			.setTimestamp();
 		return message.channel.send(errorMessage);
 	}
@@ -276,7 +276,7 @@ client.on("messageUpdate", async (oldMessage, newMessage) => {
 			.setColor("#fc0303")
 			.setAuthor(newMessage.author.tag, newMessage.author.displayAvatarURL({ format: "png", dynamic: true }))
 			.setTitle("Error, it looks like you attempted using an Admin-only command.")
-			.setDescription("You must be and Admin to use this command!")
+			.setDescription("You don't have the Admin role, which is required to use this command.")
 			.setTimestamp();
 		return newMessage.channel.send(errorMessage);
 	}

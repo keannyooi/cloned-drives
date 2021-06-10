@@ -1,17 +1,16 @@
 {
     "rq": 18,
     "make": "Porsche",
-    "model": "914-4",
+    "model": "914 1.7",
     "modelYear": 1970,
     "country": "DE",
     "topSpeed": 109,
-    "0to60": 13.3,
-    "handling": 75,
+    "0to60": 12.7,
+    "handling": 74,
     "driveType": "RWD",
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
 
     "weight": 950,
     "gc": "Low",
@@ -23,8 +22,7 @@
     "fuelType": "Petrol",
     "mra": 41.05,
     "ola": 60.15,
-    "description": "The company’s entry-level sports car, in collaboration with Volkswagen, that outsold the 911 in its lifetime. Card by Spence",
-
+    "description": "The company's entry-level sports car, in collaboration with Volkswagen, that outsold the 911 in its lifetime. Card by Spence",
 
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/825614906278805504/image0.jpg",
     "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/825615135074680842/image0.jpg",
@@ -33,7 +31,6 @@
     "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/825615227949023272/image0.jpg",
     "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/825615197959749651/image0.jpg",
     "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/825615215093481503/image0.jpg",
-
 
     "333TopSpeed": 114,
     "3330to60": 12.1,

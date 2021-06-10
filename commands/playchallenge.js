@@ -40,7 +40,7 @@ module.exports = {
 		}
 
 		const searchResults = decks.filter(function (deck) {
-            return deck.name.includes(deckName);
+            return deck.name.toLowerCase().includes(deckName);
         });
 
         if (searchResults.length > 1) {
@@ -71,6 +71,7 @@ module.exports = {
                                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                                 .setTitle("Error, invalid integer provided.")
                                 .setDescription("It looks like your response was either not a number or not part of the selection.")
+								.addField("Number Received", `\`${collected.first().content}\` (either not a number, smaller than 1 or bigger than ${searchResults.length})`)
                                 .setTimestamp();
                             return currentMessage.edit(errorMessage);
                         }
@@ -189,7 +190,7 @@ module.exports = {
 								}
 							}
 							else if (Array.isArray( test[`${key[0]}`])) {
-								if (key[1].some(h => test[`${key[0]}`].map(i => i.toLowerCase()).includes(h)) === false) {
+								if(test[`${key[0]}`].map(i => i.toLowerCase()).includes(key[1]) === false) {
 									passed = false;
 								}
 							}
@@ -238,7 +239,6 @@ module.exports = {
 					else {
 						return message.channel.send(errorMessage);
 					}
-					break;
 				}
 			}
 
@@ -279,6 +279,7 @@ module.exports = {
 					}
 				}
 				await db.set(`acc${message.author.id}`, playerData);
+				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 				return message.channel.send(`**You have successfully beaten Round ${round}! Claim your reward using \`cd-rewards\`.**`);
 			}
 		}

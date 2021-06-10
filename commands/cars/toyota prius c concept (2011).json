@@ -1,0 +1,54 @@
+{
+    "rq": 28,
+    "make": "Toyota",
+    "model": "Prius C Concept",
+    "modelYear": 2011,
+    "country": "JP",
+    "topSpeed": 102,
+    "0to60": 10.7,
+    "handling": 72,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Eco-Friendly", "Unique", "Concept"],
+    "isPrize": false,
+
+    "weight": 1100,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 40.69,
+    "ola": 61.68,
+    "description": "The pre-curser to the Prius C. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/850000767561760768/PriusCConcept.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/850001015062528100/CCONcept.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/850001023468175370/CCONcept333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/850001030338314260/CCONcept666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/850001059987324948/CCONcept996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/850001045886205972/CCONcept969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/850001037892517948/CCONcept699.png",
+
+    "333TopSpeed": 107,
+    "3330to60": 10.2,
+    "333Handling": 74,
+
+    "666TopSpeed": 112,
+    "6660to60": 9.6,
+    "666Handling": 77,
+
+    "996TopSpeed": 117,
+    "9960to60": 9.1,
+    "996Handling": 77,
+
+    "969TopSpeed": 117,
+    "9690to60": 9.6,
+    "969Handling": 80,
+
+    "699TopSpeed": 112,
+    "6990to60": 9.1,
+    "699Handling": 80
+}

@@ -59,6 +59,7 @@ module.exports = {
                                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                                 .setTitle("Error, invalid integer provided.")
                                 .setDescription("It looks like your response was either not a number or not part of the selection.")
+								.addField("Number Received", `\`${collected.first().content}\` (either not a number, smaller than 1 or bigger than ${searchResults.length})`)
                                 .setTimestamp();
                             return currentMessage.edit(errorMessage);
                         }
@@ -89,18 +90,24 @@ module.exports = {
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                 .setTitle("Error, pack requested not found.")
                 .setDescription("Well that sucks.")
+				.addField("Keywords Received", `\`${packName.join(" ")}\``)
                 .setTimestamp();
             return message.channel.send(errorMessage);
         }
 
         function displayInfo(currentPack, currentMessage) {
+			const moneyEmoji = message.client.emojis.cache.get("726017235826770021");
+			let priceString = "Not Purchasable"
+			if (currentPack["limited"] === false) {
+				priceString = `${moneyEmoji}${currentPack["price"]}`;
+			}
             let infoScreen = new Discord.MessageEmbed()
                 .setColor("#34aeeb")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                 .setTitle(currentPack["packName"])
                 .setDescription("Stats of requested pack:")
                 .addFields(
-					{ name: "Purchasable Normally?", value: !currentPack["limited"] },
+					{ name: "Price", value: `${priceString}` },
                     { name: "Description", value: currentPack["description"] },
                 )
                 .setImage(currentPack["pack"])

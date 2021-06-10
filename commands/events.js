@@ -120,6 +120,7 @@ module.exports = {
 					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 					.setTitle("Error, 404 event not found.")
 					.setDescription("Try checking again using `cd-events`.")
+					.addField("Keywords Received", `\`${eventName.join(" ")}\``)
 					.setTimestamp();
 				return message.channel.send(errorMessage);
 			}
@@ -247,6 +248,7 @@ module.exports = {
 					let background = await Canvas.loadImage(event.background);
 					ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
 					ctx.drawImage(overlay, 0, 0, canvas.width, canvas.height);
+					ctx.strokeStyle = "#000000";
 					
 					for (y = 0; y < event.roster.length; y++) {
 						console.log(y);
@@ -257,10 +259,12 @@ module.exports = {
 								case "money":
 									ctx.fillStyle = "#8ac545";
 									ctx.fillText(value, rewardPlacement[y].x + 88, rewardPlacement[y].y + 65);
+									ctx.strokeText(value, rewardPlacement[y].x + 88, rewardPlacement[y].y + 65);
 									break;
 								case "fuseTokens":
 									ctx.fillStyle = "#4800ff";
 									ctx.fillText(value, rewardPlacement[y].x + 88, rewardPlacement[y].y + 65);
+									ctx.strokeText(value, rewardPlacement[y].x + 88, rewardPlacement[y].y + 65);
 									break;
 								case "car":
 									let car = require(`./cars/${event.roster[y].reward.car}`);
@@ -279,6 +283,7 @@ module.exports = {
 						if (event.roster[y].reward.trophies) {
 							ctx.fillStyle = "#ff9c0d";
 							ctx.fillText(event.roster[y].reward.trophies, rewardPlacement[y].x + 88, rewardPlacement[y].y + 95);
+							ctx.strokeText(event.roster[y].reward.trophies, rewardPlacement[y].x + 88, rewardPlacement[y].y + 95);
 						}
 					}
 				}

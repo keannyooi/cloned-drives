@@ -25,7 +25,7 @@ module.exports = {
 			return (reaction.emoji.name === "⬅️" || reaction.emoji.name === "➡️") && user.id === message.author.id;
 		};
 
-		console.log(challenge);
+		console.log(challenge.roster);
 		if (challenge.isActive || message.member.roles.cache.has("802043346951340064")) {
 			let displayRound = challenge.players[`acc${message.author.id}`] || 0;
 			if (!isNaN(args[0])) {
@@ -40,6 +40,9 @@ module.exports = {
 						.setTimestamp();
 					return message.channel.send(errorScreen);
 				}
+				displayRound--;
+			}
+			else if (displayRound === challenge.roster.length) {
 				displayRound--;
 			}
 			var reactionIndex = 0;

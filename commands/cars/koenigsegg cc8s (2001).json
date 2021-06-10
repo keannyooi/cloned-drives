@@ -1,0 +1,54 @@
+{
+    "rq": 78,
+    "make": "Koenigsegg",
+    "model": "CC8S",
+    "modelYear": 2001,
+    "country": "SE",
+    "topSpeed": 241,
+    "0to60": 3.9,
+    "handling": 89,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Unique", "Innovative", "Rest of The World", "Supercar"],
+    "isPrize": false,
+
+    "weight": 1175,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 90.44,
+    "ola": 97.44,
+    "description": "Card by Aqo.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/850294628045422642/cc8s.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/850295045189009408/Koenigsegg_CC8S_2001_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/850295050822352926/Koenigsegg_CC8S_2001_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/850295056081879040/Koenigsegg_CC8S_2001_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/850295072717013002/Koenigsegg_CC8S_2001_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/850295066026311690/Koenigsegg_CC8S_2001_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/850295062588162068/Koenigsegg_CC8S_2001_699.png",
+
+    "333TopSpeed": 243,
+    "3330to60": 3.7,
+    "333Handling": 92,
+
+    "666TopSpeed": 245,
+    "6660to60": 3.5,
+    "666Handling": 95,
+
+    "996TopSpeed": 247,
+    "9960to60": 3.3,
+    "996Handling": 95,
+
+    "969TopSpeed": 247,
+    "9690to60": 3.5,
+    "969Handling": 99,
+
+    "699TopSpeed": 245,
+    "6990to60": 3.3,
+    "699Handling": 99
+}

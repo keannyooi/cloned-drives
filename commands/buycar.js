@@ -109,7 +109,8 @@ module.exports = {
                 .setColor("#fc0303")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                 .setTitle("Error, car requested not found.")
-                .setDescription("Well that sucks.")
+                .setDescription("Try checking the dealership again.")
+				.addField("Keywords Received", `\`${carName.join(" ")}\``)
                 .setTimestamp();
             return message.channel.send(errorMessage);
         }

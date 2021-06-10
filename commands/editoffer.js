@@ -35,7 +35,7 @@ module.exports = {
 				.setColor("#fc0303")
 				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 				.setTitle("Error, you don't have access to this command.")
-				.setDescription("This command is only accessible if you are a part of Community Management.")
+				.setDescription("This command is only accessible if you have the Community Management role.")
 				.setTimestamp();
 			return message.channel.send(errorMessage);
 		}
@@ -72,6 +72,7 @@ module.exports = {
 								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 								.setTitle("Error, invalid integer provided.")
 								.setDescription("It looks like your response was either not a number or not part of the selection.")
+								.addField("Number Received", `\`${collected.first().content}\` (either not a number, smaller than 1 or bigger than ${searchResults.length})`)
 								.setTimestamp();
 							return currentMessage.edit(errorMessage);
 						}
@@ -100,6 +101,7 @@ module.exports = {
 				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 				.setTitle("Error, 404 offer not found.")
 				.setDescription("Try checking again using `cd-limitedoffers`.")
+				.addField("Keywords Received", `\`${keyword}\``)
 				.setTimestamp();
 			return message.channel.send(errorMessage);
 		}
@@ -151,7 +153,7 @@ module.exports = {
 							.setColor("#fc0303")
 							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 							.setTitle("Error, this attribute cannot be edited while the offer is live.")
-							.setDescription("Just deal with it ok?")
+							.setDescription("If you edit this value while an offer is live, it would break the bot. So don't.")
 							.setTimestamp();
 						if (currentMessage) {
 							return currentMessage.edit(errorScreen);
@@ -237,13 +239,14 @@ module.exports = {
 								})
 									.then(collected => {
 										collected.first().delete();
-										if (isNaN(collected.first().content) || parseInt(collected.first().content) > searchResults.length) {
+										if (isNaN(collected.first().content) || parseInt(collected.first().content) > searchResults.length || parseInt(collected.first().content) < 1) {
 											message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 											const errorMessage = new Discord.MessageEmbed()
 												.setColor("#fc0303")
 												.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 												.setTitle("Error, invalid integer provided.")
 												.setDescription("It looks like your response was either not a number or not part of the selection.")
+												.addField("Number Received", `\`${collected.first().content}\` (either not a number, smaller than 1 or bigger than ${searchResults.length})`)
 												.setTimestamp();
 											return currentMessage.edit(errorMessage);
 										}
@@ -271,6 +274,7 @@ module.exports = {
 									.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 									.setTitle("Error, pack requested not found.")
 									.setDescription("Well that sucks.")
+									.addField("Keywords Received", `\`${packName.join(" ")}\``)
 									.setTimestamp();
 								if (currentMessage) {
 									await currentMessage.edit(errorMessage);
@@ -337,6 +341,7 @@ module.exports = {
 										.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 										.setTitle("Error, too many search results.")
 										.setDescription("Due to Discord's embed limitations, the bot isn't able to show the full list of search results. Try again with a more specific keyword.")
+										.addField("Total Characters in List", `\`${carList.length}\` > \`2048\``)
 										.setTimestamp();
 									return message.channel.send(errorMessage);
 								}
@@ -367,6 +372,7 @@ module.exports = {
 												.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 												.setTitle("Error, invalid integer provided.")
 												.setDescription("It looks like your response was either not a number or not part of the selection.")
+												.addField("Number Received", `\`${collected.first().content}\` (either not a number, smaller than 1 or bigger than ${searchResults1.size})`)
 												.setTimestamp();
 											return currentMessage.edit(errorMessage);
 										}
@@ -394,6 +400,7 @@ module.exports = {
 									.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 									.setTitle("Error, car requested not found.")
 									.setDescription("Well that sucks.")
+									.addField("Keywords Received", `\`${carName.join(" ")}\``)
 									.setTimestamp();
 								return message.channel.send(errorMessage);
 							}
@@ -545,6 +552,7 @@ module.exports = {
 												.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 												.setTitle("Error, invalid integer provided.")
 												.setDescription("It looks like your response was either not a number or not part of the selection.")
+												.addField("Number Received", `\`${collected.first().content}\` (either not a number, smaller than 1 or bigger than ${searchResults2.length})`)
 												.setTimestamp();
 											return currentMessage2.edit(errorMessage);
 										}
@@ -573,6 +581,7 @@ module.exports = {
 									.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 									.setTitle("Error, car requested not found.")
 									.setDescription("Well that sucks.")
+									.addField("Keywords Received", `\`${carName.join(" ")}\``)
 									.setTimestamp();
 								if (currentMessage) {
 									return currentMessage.edit(errorMessage);

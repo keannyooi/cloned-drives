@@ -39,7 +39,7 @@ module.exports = {
 		}
 
 		let criteria = args[0].toLowerCase();
-		let infoScreen;
+		let infoScreen, isError = false;
 		switch (criteria) {
 			case "name":
 				let oldName = challenge.name;
@@ -59,7 +59,7 @@ module.exports = {
 						.setColor("#fc0303")
 						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 						.setTitle("Error, this attribute cannot be edited while the event is live.")
-						.setDescription("Just deal with it ok?")
+						.setDescription("If you edit this value while the challenge is live, it would break the bot. So don't.")
 						.setTimestamp();
 					return message.channel.send(errorScreen);
 				}
@@ -257,12 +257,14 @@ module.exports = {
 							.then(collected => {
 								collected.first().delete();
 								if (isNaN(collected.first().content) || parseInt(collected.first().content) > searchResults.size || parseInt(collected.first().content) < 1) {
+									isError = true;
 									message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 									const errorMessage = new Discord.MessageEmbed()
 										.setColor("#fc0303")
 										.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 										.setTitle("Error, invalid integer provided.")
 										.setDescription("It looks like your response was either not a number or not part of the selection.")
+										.addField("Number Received", `\`${collected.first().content}\` (either not a number, smaller than 1 or bigger than ${searchResults.size})`)
 										.setTimestamp();
 									return currentMessage.edit(errorMessage);
 								}
@@ -291,6 +293,7 @@ module.exports = {
 						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 						.setTitle("Error, car requested not found.")
 						.setDescription("Well that sucks.")
+						.addField("Keywords Received", `\`${carName.join(" ")}\``)
 						.setTimestamp();
 					return message.channel.send(errorMessage);
 				}
@@ -681,12 +684,14 @@ module.exports = {
 									.then(collected => {
 										collected.first().delete();
 										if (isNaN(collected.first().content) || parseInt(collected.first().content) > searchResults.size || parseInt(collected.first().content) < 1) {
+											isError = true;
 											message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 											const errorMessage = new Discord.MessageEmbed()
 												.setColor("#fc0303")
 												.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 												.setTitle("Error, invalid integer provided.")
 												.setDescription("It looks like your response was either not a number or not part of the selection.")
+												.addField("Number Received", `\`${collected.first().content}\` (either not a number, smaller than 1 or bigger than ${searchResults.size})`)
 												.setTimestamp();
 											return currentMessage.edit(errorMessage);
 										}
@@ -741,6 +746,7 @@ module.exports = {
 								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 								.setTitle("Error, car requested not found.")
 								.setDescription("Well that sucks.")
+								.addField("Keywords Received", `\`${carName.join(" ")}\``)
 								.setTimestamp();
 							return message.channel.send(errorMessage);
 						}
@@ -959,12 +965,14 @@ module.exports = {
 							.then(collected => {
 								collected.first().delete();
 								if (isNaN(collected.first().content) || parseInt(collected.first().content) > tSearchResults.size || parseInt(collected.first().content) < 1) {
+									isError = true;
 									message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 									const errorMessage = new Discord.MessageEmbed()
 										.setColor("#fc0303")
 										.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 										.setTitle("Error, invalid integer provided.")
 										.setDescription("It looks like your response was either not a number or not part of the selection.")
+										.addField("Number Received", `\`${collected.first().content}\` (either not a number, smaller than 1 or bigger than ${tSearchResults.size})`)
 										.setTimestamp();
 									return currentMessage.edit(errorMessage);
 								}
@@ -994,6 +1002,7 @@ module.exports = {
 						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 						.setTitle("Error, track requested not found.")
 						.setDescription("Well that sucks.")
+						.addField("Keywords Received", `\`${trackName.join(" ")}\``)
 						.setTimestamp();
 					return message.channel.send(errorMessage);
 				}
@@ -1136,13 +1145,15 @@ module.exports = {
 							})
 								.then(collected => {
 									collected.first().delete();
-									if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults1.size) {
+									if (isNaN(collected.first().content) || parseInt(collected.first().content) > searchResults1.size || parseInt(collected.first().content) < 1) {
+										isError = true;
 										message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 										const errorMessage = new Discord.MessageEmbed()
 											.setColor("#fc0303")
 											.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 											.setTitle("Error, invalid integer provided.")
 											.setDescription("It looks like your response was either not a number or not part of the selection.")
+											.addField("Number Received", `\`${collected.first().content}\` (either not a number, smaller than 1 or bigger than ${searchResults1.size})`)
 											.setTimestamp();
 										return currentMessage.edit(errorMessage);
 									}
@@ -1170,6 +1181,7 @@ module.exports = {
 								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 								.setTitle("Error, car requested not found.")
 								.setDescription("Well that sucks.")
+								.addField("Keywords Received", `\`${carName.join(" ")}\``)
 								.setTimestamp();
 							return message.channel.send(errorMessage);
 						}
@@ -1223,12 +1235,14 @@ module.exports = {
 									.then(collected => {
 										collected.first().delete();
 										if (isNaN(collected.first().content) || parseInt(collected.first().content) > searchResults.length || parseInt(collected.first().content) < 1) {
+											isError = true;
 											message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 											const errorMessage = new Discord.MessageEmbed()
 												.setColor("#fc0303")
 												.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 												.setTitle("Error, invalid integer provided.")
 												.setDescription("It looks like your response was either not a number or not part of the selection.")
+												.addField("Number Received", `\`${collected.first().content}\` (either not a number, smaller than 1 or bigger than ${searchResults.length})`)
 												.setTimestamp();
 											return currentMessage.edit(errorMessage);
 										}
@@ -1257,6 +1271,7 @@ module.exports = {
 								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 								.setTitle("Error, pack requested not found.")
 								.setDescription("Well that sucks.")
+								.addField("Keywords Received", `\`${packName.join(" ")}\``)
 								.setTimestamp();
 							return message.channel.send(errorMessage);
 						}
@@ -1308,8 +1323,10 @@ module.exports = {
 				return message.channel.send(errorScreen);
 		}
 
-		await db.set("challenge", challenge);
-		message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-		return message.channel.send(infoScreen);
+		if (!isError) {
+			await db.set("challenge", challenge);
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+			return message.channel.send(infoScreen);
+		}
 	}
 }

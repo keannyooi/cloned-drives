@@ -1,0 +1,54 @@
+{
+    "rq": 60,
+    "make": ["AC Schnitzer", "BMW"],
+    "model": "S3 Sport CLS II",
+    "modelYear": 1995,
+    "country": "DE",
+    "topSpeed": 180,
+    "0to60": 4.9,
+    "handling": 83,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Concept", "Track Day", "Tuner", "Unique"],
+    "isPrize": false,
+
+    "weight": 1330,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 80.33,
+    "ola": 85.71,
+    "description": "A Cute Tuned M3. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/850408901899845742/acshitsnerS3SportCLSII.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/850409159747960862/acshitclsii.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/850409164299698236/acshitclsii333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/850409171110199345/acshitclsii666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/850409195541889074/acshitclsii996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/850409186512994404/acshitclsii969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/850409179797520454/acshitclsii699.png",
+
+    "333TopSpeed": 183,
+    "3330to60": 4.7,
+    "333Handling": 86,
+
+    "666TopSpeed": 186,
+    "6660to60": 4.4,
+    "666Handling": 88,
+
+    "996TopSpeed": 189,
+    "9960to60": 4.2,
+    "996Handling": 88,
+
+    "969TopSpeed": 189,
+    "9690to60": 4.4,
+    "969Handling": 92,
+
+    "699TopSpeed": 186,
+    "6990to60": 4.2,
+    "699Handling": 92
+}
