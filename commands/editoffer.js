@@ -11,6 +11,7 @@ const Discord = require("discord.js-light");
 const fs = require("fs");
 const carFiles = fs.readdirSync("./commands/cars").filter(file => file.endsWith(".json"));
 const packFiles = fs.readdirSync("./commands/packs").filter(file => file.endsWith(".json"));
+const { DateTime } = require("luxon");
 
 module.exports = {
 	name: "editoffer",
@@ -26,8 +27,8 @@ module.exports = {
 		const fuseEmoji = message.client.emojis.cache.get("726018658635218955");
 		const keyword = args[0].toLowerCase();
 		const filter = response => {
-            return response.author.id === message.author.id;
-        };
+			return response.author.id === message.author.id;
+		};
 
 		if (!message.member.roles.cache.has("802043346951340064")) {
 			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
@@ -40,7 +41,7 @@ module.exports = {
 			return message.channel.send(errorMessage);
 		}
 
-		const searchResults = offers.filter(function(offer) {
+		const searchResults = offers.filter(function (offer) {
 			return offer.name.toLowerCase().includes(keyword);
 		});
 
@@ -129,6 +130,7 @@ module.exports = {
 							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 							.setTitle("Error, price provided is either not a number or less than 1.")
 							.setDescription("An offer's price should always be a positive number, i.e: `360`, `42`, etc.")
+							.addField("Number Received", `\`${args[1]}\` (not a positive number)`)
 							.setTimestamp();
 						if (currentMessage) {
 							return currentMessage.edit(errorMessage);
@@ -169,7 +171,7 @@ module.exports = {
 							.setColor("#fc0303")
 							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 							.setTitle("Error, arguments provided incomplete.")
-							.setDescription("How long, in days, are you trying to make the offer last?")
+							.setDescription("You are expected to provide the number of days after the criteria, or `unlimited` if you want the offer to go on forever.")
 							.setTimestamp();
 						if (currentMessage) {
 							return currentMessage.edit(errorScreen);
@@ -201,6 +203,66 @@ module.exports = {
 						.setColor("#03fc24")
 						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 						.setTitle(`Successfully changed the duration of the ${offer.name} to \`${duration} day(s)\`!`)
+						.setTimestamp();
+					break;
+				case "extend":
+					if (!offer.isActive) {
+						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+						const errorScreen = new Discord.MessageEmbed()
+							.setColor("#fc0303")
+							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+							.setTitle("Error, this attribute can only be edited while an offer is live.")
+							.setDescription("This command is only intended for the unlikely scenario of bot-related delays.")
+							.setTimestamp();
+						if (currentMessage) {
+							return currentMessage.edit(errorScreen);
+						}
+						else {
+							return message.channel.send(errorScreen);
+						}
+					}
+
+					if (!args[2]) {
+						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+						const errorScreen = new Discord.MessageEmbed()
+							.setColor("#fc0303")
+							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+							.setTitle("Error, arguments provided incomplete.")
+							.setDescription("You are expected to provide the extended duration in hours after the criteria.")
+							.setTimestamp();
+						if (currentMessage) {
+							return currentMessage.edit(errorScreen);
+						}
+						else {
+							return message.channel.send(errorScreen);
+						}
+					}
+
+					let time = args[2];
+					if (isNaN(time) || parseInt(time) < 1) {
+						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+						const errorScreen = new Discord.MessageEmbed()
+							.setColor("#fc0303")
+							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+							.setTitle("Error, duration provided is invalid.")
+							.setDescription("The extended duration in hours must be a positive number.")
+							.addField("Duration Value Received", `\`${time}\` (not a positive number)`)
+							.setTimestamp();
+						if (currentMessage) {
+							return currentMessage.edit(errorScreen);
+						}
+						else {
+							return message.channel.send(errorScreen);
+						}
+					}
+
+					let origDate = DateTime.fromISO(offer.deadline);
+					offer.deadline = origDate.plus({ hours: time }).toISO();
+					offer.timeLeft += parseInt((time / 24).toFixed(2));
+					infoScreen = new Discord.MessageEmbed()
+						.setColor("#03fc24")
+						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+						.setTitle(`Successfully extended the duration of the ${offer.name} offer by \`${time} hour(s)\`!`)
 						.setTimestamp();
 					break;
 				case "addcontent":
@@ -300,7 +362,7 @@ module.exports = {
 									.setColor("#fc0303")
 									.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 									.setTitle("Error, car name not provided.")
-									.setDescription("What car are you trying to add?")
+									.setDescription("You are expected to provide the name of the car after `addcontent`.")
 									.setTimestamp();
 								if (currentMessage) {
 									return currentMessage.edit(errorScreen);
@@ -313,7 +375,7 @@ module.exports = {
 							let carFile;
 							let carName = args.slice(3, args.length).map(i => i.toLowerCase());
 							let searchResults1 = new Set(carFiles);
-							searchResults1.forEach(function(car) {
+							searchResults1.forEach(function (car) {
 								if (carName.every(part => car.includes(part)) === false) {
 									searchResults1.delete(car);
 								}
@@ -323,7 +385,7 @@ module.exports = {
 								let carList = "";
 								let redirect = [];
 								let i = 1;
-								searchResults1.forEach(function(thing) {
+								searchResults1.forEach(function (thing) {
 									const car = require(`./cars/${thing}`);
 									let make = car["make"];
 									if (typeof make === "object") {
@@ -443,6 +505,7 @@ module.exports = {
 									.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 									.setTitle("Error, fuse token amount provided is either not a number or less than 1.")
 									.setDescription("This amount should always be a positive number, i.e: `997`, `500`, etc.")
+									.addField("Number Received", `\`${args[3]}\` (either not a positive number or not \`unlimited\`)`)
 									.setTimestamp();
 								if (currentMessage) {
 									return currentMessage.edit(errorMessage);
@@ -451,7 +514,7 @@ module.exports = {
 									return message.channel.send(errorMessage);
 								}
 							}
-							
+
 							let amount = parseInt(args[3]);
 							offer.offer.fuseTokens = amount;
 							infoScreen = new Discord.MessageEmbed()
@@ -468,9 +531,9 @@ module.exports = {
 								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 								.setTitle("Error, offer editing criteria not found.")
 								.setDescription(`Here is a list of offer editing criterias. 
-											\`pack\` - Sets a pack to the offer bundle. 
-											\`car\` - Adds a car to the offer bundle.
-											\`fusetokens\` - Sets a certain amount of fuse tokens to the offer bundle.`)
+											\`pack\` - Sets a pack to the offer bundle. Provide the name of a pack after that.
+											\`car\` - Adds a car to the offer bundle. Provide the name of a car after that.
+											\`fusetokens\` - Sets a certain amount of fuse tokens to the offer bundle. Provide the amount of fuse tokens after that.`)
 								.setTimestamp();
 							if (currentMessage) {
 								return currentMessage.edit(errorScreen);
@@ -498,7 +561,7 @@ module.exports = {
 									.setColor("#fc0303")
 									.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 									.setTitle("Error, car name not provided.")
-									.setDescription("What car are you trying to remove?")
+									.setDescription("You are expected to provide the name of the car after `removecontent`.")
 									.setTimestamp();
 								if (currentMessage) {
 									return currentMessage.edit(errorScreen);
@@ -629,8 +692,8 @@ module.exports = {
 								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 								.setTitle("Error, offer editing criteria not found.")
 								.setDescription(`Here is a list of offer editing criterias. 
-											\`pack\` - Sets a pack to the offer bundle. 
-											\`car\` - Adds a car to the offer bundle.
+											\`pack\` - Sets a pack to the offer bundle.
+											\`car\` - Adds a car to the offer bundle. Provide the name of a car after that.
 											\`fusetokens\` - Sets a certain amount of fuse tokens to the offer bundle.`)
 								.setTimestamp();
 							return message.channel.send(errorScreen);
@@ -645,9 +708,10 @@ module.exports = {
 						.setDescription(`Here is a list of offer editing criterias. 
                                     \`name\` - The name of the offer. 
 									\`duration\` - How long the offer goes live for.
+									\`extend\` - How long an offer is going to be extended by (in hours). 
 									\`price\` - How much the offer is charged for. 
 									\`addcontent\` - Adds something to the offer bundle.
-									\`removecontent\` - Removes something from the offer bundle`)
+									\`removecontent\` - Removes something from the offer bundle.`)
 						.setTimestamp();
 					return message.channel.send(errorScreen);
 			}
@@ -663,27 +727,27 @@ module.exports = {
 		}
 
 		function rarityCheck(currentCar) {
-            if (currentCar["rq"] > 79) { //leggie
-                return message.client.emojis.cache.get("726025494138454097");
-            }
-            else if (currentCar["rq"] > 64 && currentCar["rq"] <= 79) { //epic
-                return message.client.emojis.cache.get("726025468230238268");
-            }
-            else if (currentCar["rq"] > 49 && currentCar["rq"] <= 64) { //ultra
-                return message.client.emojis.cache.get("726025431937187850");
-            }
-            else if (currentCar["rq"] > 39 && currentCar["rq"] <= 49) { //super
-                return message.client.emojis.cache.get("726025394104434759");
-            }
-            else if (currentCar["rq"] > 29 && currentCar["rq"] <= 39) { //rare
-                return message.client.emojis.cache.get("726025302656024586");
-            }
-            else if (currentCar["rq"] > 19 && currentCar["rq"] <= 29) { //uncommon
-                return message.client.emojis.cache.get("726025273421725756");
-            }
-            else { //common
-                return message.client.emojis.cache.get("726020544264273928");
-            }
-        }
+			if (currentCar["rq"] > 79) { //leggie
+				return message.client.emojis.cache.get("726025494138454097");
+			}
+			else if (currentCar["rq"] > 64 && currentCar["rq"] <= 79) { //epic
+				return message.client.emojis.cache.get("726025468230238268");
+			}
+			else if (currentCar["rq"] > 49 && currentCar["rq"] <= 64) { //ultra
+				return message.client.emojis.cache.get("726025431937187850");
+			}
+			else if (currentCar["rq"] > 39 && currentCar["rq"] <= 49) { //super
+				return message.client.emojis.cache.get("726025394104434759");
+			}
+			else if (currentCar["rq"] > 29 && currentCar["rq"] <= 39) { //rare
+				return message.client.emojis.cache.get("726025302656024586");
+			}
+			else if (currentCar["rq"] > 19 && currentCar["rq"] <= 29) { //uncommon
+				return message.client.emojis.cache.get("726025273421725756");
+			}
+			else { //common
+				return message.client.emojis.cache.get("726020544264273928");
+			}
+		}
 	}
 }

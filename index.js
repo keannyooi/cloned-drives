@@ -7,7 +7,7 @@
 |__|\__\ |_______/__/     \__\ |__| \__| |__| \__|     |__| 	(this is a watermark that proves that these lines of code are mine)
 */
 
-const backupMode = true;
+const backupMode = false;
 const fs = require("fs");
 const Discord = require("discord.js-light");
 const { Database } = require("quickmongo");
@@ -93,8 +93,20 @@ client.once("ready", async () => {
 			await client.db.set(`acc${user.id}`, { money: 0, fuseTokens: 0, trophies: 0, garage: starterGarage, decks: [], campaignProgress: { chapter: 0, part: 1, race: 1 }, unclaimedRewards: { money: 0, fuseTokens: 0, trophies: 0, cars: [], packs: [] } });
 			console.log(user.id);
 		}
+
+		// const garage = await client.db.get(`acc${user.id}.garage`);
+		// var i = 0;
+		// while (i < garage.length) {
+		//  	if (garage[i].carFile === "koenigsegg one:1 (2014).json") {
+		//  		garage[i].carFile = "koenigsegg one-1 (2014).json";
+		// 		console.log("done");
+		//  	}
+		//  	i++;
+		// }
+		// await client.db.set(`acc${user.id}.garage`, garage);
 	});
 	//await client.db.set("limitedOffers", []);
+
 
 	//const catalog = await client.db.get("dealershipCatalog");
 	//console.log(catalog);

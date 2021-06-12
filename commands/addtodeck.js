@@ -27,6 +27,7 @@ module.exports = {
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                 .setTitle("Error, index provided is invalid or not a number.")
                 .setDescription("Indexes must be a number between 1 to 5.")
+                .addField("Value Received", `\`${args[1]}\` (not a number or not within the range of \`1\` to \`5\`)`)
                 .setTimestamp();
             return message.channel.send(errorMessage);
         }
@@ -244,6 +245,7 @@ module.exports = {
 								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 								.setTitle("Error, invalid selection provided.")
 								.setDescription("It looks like your response was not part of the selection.")
+                                .addField("Value Received", `\`${collected.first().content}\``)
 								.setTimestamp();
 							return upgradeMessage.edit(errorMessage);
 						}

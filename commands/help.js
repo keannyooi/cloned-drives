@@ -122,6 +122,7 @@ module.exports = {
                     .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                     .setTitle("Error, 404 command not found.")
                     .setDescription("It looks like this command doesn't exist. Try referring to the command list.")
+                    .addField("Keywords Received", `\`${name}\``)
                     .setTimestamp();
                 return message.channel.send(errorMessage);
             }

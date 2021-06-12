@@ -58,7 +58,8 @@ module.exports = {
                 	            .setColor("#fc0303")
                     	        .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                         	    .setTitle("Error, invalid integer provided.")
- 	                           .setDescription("It looks like your response was either not a number or not part of the selection.")
+ 	                        	.setDescription("It looks like your response was either not a number or not part of the selection.")
+								.addField("Value Received", `\`${collected.first().content}\``)
     	                        .setTimestamp();
         	                return currentMessage.edit(errorMessage);
             	        }

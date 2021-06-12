@@ -75,10 +75,23 @@ module.exports = {
                         }
                         break;
                     case "string":
-                        list = list.filter(function (carFile) {
-                            let currentCar = require(`./cars/${carFile}`);
-                            return currentCar[key].toLowerCase() === value;
-                        });
+                        if (key === "search") {
+                            list = list.filter(function (carFile) {
+                                let currentCar = require(`./cars/${carFile}`);
+                                let make = currentCar["make"];
+                                if (typeof make === "object") {
+                                    make = currentCar["make"][0];
+                                }
+                                let name = `${make} ${currentCar["model"]}`;
+                                return name.toLowerCase().includes(value);
+                            });
+                        }
+                        else {
+                            list = list.filter(function (carFile) {
+                                let currentCar = require(`./cars/${carFile}`);
+                                return currentCar[key].toLowerCase() === value;
+                            });
+                        }
                         break;
                     case "boolean":
 						if (key === "isPrize") {

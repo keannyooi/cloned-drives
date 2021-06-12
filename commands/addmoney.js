@@ -129,8 +129,9 @@ module.exports = {
 				const errorMessage = new Discord.MessageEmbed()
 					.setColor("#fc0303")
 					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-					.setTitle("Error, money amount provided is either not a number or less than 1.")
+					.setTitle("Error, money amount provided is not a positive number.")
 					.setDescription("The amount of money you want to add should always be a positive number, i.e: `4`, `20`, etc.")
+					.addField("Value Received", `\`${amount}\` (not a number or smaller than 1)`)
 					.setTimestamp();
 				if (currentMessage) {
 					return currentMessage.edit(errorMessage);

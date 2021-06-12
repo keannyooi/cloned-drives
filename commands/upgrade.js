@@ -177,6 +177,7 @@ module.exports = {
 								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 								.setTitle("Error, invalid selection provided.")
 								.setDescription("It looks like your response was not part of the selection.")
+								.addField("Value Received", `\`${collected.first().content}\``)
 								.setTimestamp();
 							if (message.channel.type === "text") {
 								return upgradeMessage.edit(errorMessage);

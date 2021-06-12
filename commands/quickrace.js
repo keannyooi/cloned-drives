@@ -333,7 +333,8 @@ module.exports = {
                             .setColor("#fc0303")
                             .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                             .setTitle("Error, the tuning stage you requested is not supported.")
-                            .setDescription("There is a possiblity that the maxed tune your car has isn't available. If that's the case, report it to the devs.")
+                            .setDescription("In order to make the tuning system less complex, the tuning stages are limited to `000`, `333`, `666`, `996`, `969` and `699`.")
+                            .addField("Value Received", `\`${collected.first().content}\``)
                             .setTimestamp();
 						if (message.channel.type === "text") {
 							return currentMessage.edit(errorScreen);

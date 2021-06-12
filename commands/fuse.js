@@ -22,6 +22,7 @@ module.exports = {
         const playerData = await db.get(`acc${message.author.id}`);
         const garage = playerData.garage;
         const fuseEmoji = message.client.emojis.cache.get("726018658635218955");
+        const trophyEmoji = message.client.emojis.cache.get("775636479145148418");
         const filter = response => {
             return response.author.id === message.author.id;
         };
@@ -55,7 +56,12 @@ module.exports = {
 
 		const searchResults = garage.filter(function (garageCar) {
 			let test = require(`./cars/${garageCar.carFile}`);
-            return carName.every(part => garageCar.carFile.includes(part)) && !test["isPrize"] && (garageCar["000"] >= amount || garageCar["333"] >= amount || garageCar["666"] >= amount);
+            if (amount === 1) {
+                return carName.every(part => garageCar.carFile.includes(part)) && !test["isPrize"] && (garageCar["000"] >= amount || garageCar["333"] >= amount || garageCar["666"] >= amount);
+            }
+            else {
+                return carName.every(part => garageCar.carFile.includes(part)) && !test["isPrize"] && garageCar["000"] >= amount;
+            }
         });
 
         if (searchResults.length > 1) {
@@ -129,15 +135,54 @@ module.exports = {
             selectUpgrade(searchResults[0]);
         }
         else {
-			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-            const errorMessage = new Discord.MessageEmbed()
-                .setColor("#fc0303")
-                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle("Error, it looks like you don't have enough cars to perform this action.")
-                .setDescription("If you are bulk fusing cars, take note that you can't bulk fuse upgraded cars. Besides, you can't fuse maxed cars and prize cars.")
-				.addField("Keywords Received", `\`${carName.join(" ")}\``)
-                .setTimestamp();
-            return message.channel.send(errorMessage);
+            let find = garage.filter(g => {
+                return carName.every(part => g.carFile.includes(part));
+            })
+            console.log(find);
+            if (find.length === 0) {
+                message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+                const errorMessage = new Discord.MessageEmbed()
+                    .setColor("#fc0303")
+                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                    .setTitle("Error, it looks like you don't have this car.")
+                    .setDescription("Well that's sad.")
+                    .addField("Keywords Received", `\`${carName.join(" ")}\``)
+                    .setTimestamp();
+                return message.channel.send(errorMessage);
+            }
+            else {
+                let bannedList = "";
+                let errorMessage = new Discord.MessageEmbed()
+                    .setColor("#fc0303")
+                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                    .setTitle("Error, it looks like you either don't have this car, or you are unable to fuse it.")
+                    .setDescription("Note: You can't fuse maxed cars and prize cars.")
+                    .addField("Keywords Received", `\`${carName.join(" ")}\``)
+                    .setTimestamp();
+                for (let i = 0; i < find.length; i++) {
+                    let errCar = require(`./cars/${find[i].carFile}`);
+                    let make = errCar["make"];
+                    if (typeof make === "object") {
+                        make = errCar["make"][0];
+                    }
+
+                    if (errCar["isPrize"]) {
+                        bannedList += `${make} ${errCar["model"]} (${errCar["modelYear"]}) ${trophyEmoji}\n`;
+                    }
+                    else {
+                        let upgList = "";
+                        for (let [key, value] of Object.entries(find[i])) {
+                            if (!isNaN(value) && value !== 0) {
+                                upgList += `${value}x ${key}, `;
+                            }
+                        }
+                        bannedList += `${make} ${errCar["model"]} (${errCar["modelYear"]}) \`(${upgList.slice(0, -2)}, not enough to perform action) (${amount}x non-maxed car required)\`\n`;
+                    }
+                }
+                errorMessage.addField("Cars Found", bannedList);
+                message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+                return message.channel.send(errorMessage);
+            }
         }
 
 		async function selectUpgrade(currentCar, currentMessage) {
@@ -180,6 +225,7 @@ module.exports = {
 								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 								.setTitle("Error, invalid selection provided.")
 								.setDescription("It looks like your response was not part of the selection.")
+                                .addField("Value Received", `\`${collected.first().content}\``)
 								.setTimestamp();
 							return upgradeMessage.edit(errorMessage);
 						}

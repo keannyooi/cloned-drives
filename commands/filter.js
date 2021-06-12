@@ -25,23 +25,25 @@ module.exports = {
 		var infoScreen, searchResults;
 
 		if (!args[1] && criteria !== "view") {
-			let desc = `In fact, this criteria doesn't exist. Here is a list of available filter criterias. 
-                        \`make\` - Filter by make/manufacturer. 
-						\`year\` - Filter by model year range.
-						\`country\` - Filter by country origin. 
-                        \`drivetype\` - Filter by drive type. 
-						\`tyretype\` - Filter by tyre type.
-						\`gc\` - Filter by ground clearance.
-						\`bodystyle\` - Filter by body type.  
-						\`seatcount\` - Filter by seat count.
-						\`enginepos\` - Filter by engine position.
-						\`fueltype\` - Filter by fuel type.
-						\`isprize\` - Filter prize cars.
-						\`isstock\` - Filter stock cars.
-						\`isupgraded\` - Filter upgraded cars.
-						\`ismaxed\` - Filter maxed cars.
-						\`isowned\` - Filter cars that you own.
-						\`tags\` - Filter by tag.`
+			let desc = `In fact, the \`${criteria}\` criteria doesn't exist. Here is a list of available filter criterias. 
+						\`rq\` - Filter by RQ. Provide the start of the RQ range desired and the end after that.
+                        \`make\` - Filter by make/manufacturer. Provide a manufacturer name after that.
+						\`year\` - Filter by model year range. Provide the start of the model year range desired and the end after that.
+						\`country\` - Filter by country origin. Provide a country code after that.
+                        \`drivetype\` - Filter by drive type. Provide a drive type (\`FWD\`, \`RWD\`, etc.) after that.
+						\`tyretype\` - Filter by tyre type. Provide one kind of tyre (\`standard\`, \`performance\`, etc.) after that.
+						\`gc\` - Filter by ground clearance. Provide a ground clearance (\`low\`, \`medium\` or \`high\`) after that.
+						\`bodystyle\` - Filter by body type. Provide a drive type (\`sedan\`, \`coupe\`, etc.) after that.
+						\`seatcount\` - Filter by seat count. Provide the start of the seat count range desired and the end after that.
+						\`enginepos\` - Filter by engine position. Provide an engine position (\`front\`, \`middle\`, etc.) after that.
+						\`fueltype\` - Filter by fuel type. Provide a fuel type (\`petrol\`, \`electric\`, etc.) after that.
+						\`isprize\` - Filter prize cars. Provide a boolean (\`true\` or \`false\`) after that.
+						\`isstock\` - Filter stock cars. Provide a boolean (\`true\` or \`false\`) after that.
+						\`isupgraded\` - Filter upgraded cars. Provide a boolean (\`true\` or \`false\`) after that.
+						\`ismaxed\` - Filter maxed cars. Provide a boolean (\`true\` or \`false\`) after that.
+						\`isowned\` - Filter cars that you own. Provide a boolean (\`true\` or \`false\`) after that.
+						\`tags\` - Filter by tag. Provide the name of a car after that.
+						\`search\` - Filter by a certain keyword inside a car's name. Provide a keyword that is found in a in-game car's name after that.`
 			switch (criteria) {
 				case "make":
 				case "Country":
@@ -112,7 +114,8 @@ module.exports = {
 						.setColor("#fc0303")
 						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 						.setTitle("Error, argument provided either does not exist in the game or is already part of the filter criteria.")
-						.setDescription("Make sure the manufacturer name you provided is as of in the game.")
+						.setDescription("Make sure the argument you provided is as of in the game.")
+						.addField("Argument Received", `\`${argument}\` (argument provided does not exist in-game)`)
 						.setTimestamp();
 					return message.channel.send(errorMessage);
 				}
@@ -128,7 +131,7 @@ module.exports = {
 			case "seatCount":
 			case "rq":
 				const start = parseInt(args[1]);
-				var end = start;
+				let end = start;
 				if (args[2] && !isNaN(args[2])) {
 					end = parseInt(args[2]);
 				}
@@ -140,6 +143,7 @@ module.exports = {
 						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 						.setTitle("Error, criteria provided is not a number.")
 						.setDescription(`\`${criteria.replace("c", "C")}\` criterias must be a number, i.e: \`1969\`, \`2001\`, etc.`)
+						.addField("Argument Received", `\`${start}\` (not a number)`)
 						.setTimestamp();
 					return message.channel.send(errorMessage);
 				}
@@ -150,6 +154,7 @@ module.exports = {
 						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 						.setTitle("Error, order is wrong.")
 						.setDescription("Check if you got the order right: Smaller number first, bigger number later.")
+						.addField("Argument Received", `\`${start}\` ~ \`${end}\` (try flipping the order)`)
 						.setTimestamp();
 					return message.channel.send(errorMessage);
 				}
@@ -184,7 +189,8 @@ module.exports = {
 						.setColor("#fc0303")
 						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 						.setTitle("Error, argument provided either does not exist in the game or is already part of the filter criteria.")
-						.setDescription("Make sure the manufacturer name you provided is as of in the game.")
+						.setDescription("Make sure the argument you provided is as of in the game.")
+						.addField("Argument Received", `\`${arg}\``)
 						.setTimestamp();
 					return message.channel.send(errorMessage);
 				}
@@ -216,9 +222,43 @@ module.exports = {
 						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 						.setTitle("Error, argument provided is not a boolean.")
 						.setDescription("Booleans only have 2 states, true or false.")
+						.addField("Argument Received", `\`${args[1].toLowerCase()}\` (not a boolean)`)
 						.setTimestamp();
 					return message.channel.send(errorMessage);
 				}
+				break;
+			case "search":
+				let arg1 = args[1].toLowerCase();
+				searchResults = carFiles.filter(function (carFile) {
+					let currentCar = require(`./cars/${carFile}`);
+					let make = currentCar["make"];
+					if (typeof make === "object") {
+						make = currentCar["make"][0];
+					}
+					let name = `${make} ${currentCar["model"]}`;
+					return name.toLowerCase().includes(arg1);
+				});
+				if (searchResults.length > 0) {
+					filter[criteria] = arg1;
+				}
+				else {
+					message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+					let errorMessage = new Discord.MessageEmbed()
+						.setColor("#fc0303")
+						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+						.setTitle("Error, argument provided either does not exist in the game or is already part of the filter criteria.")
+						.setDescription("Make sure the argument you provided is as of in the game.")
+						.addField("Argument Received", `\`${arg1}\``)
+						.setTimestamp();
+					return message.channel.send(errorMessage);
+				}
+
+				infoScreen = new Discord.MessageEmbed()
+					.setColor("#03fc24")
+					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+					.setTitle(`Successfully changed the \`${criteria}\` criteria!`)
+					.addField("Current Criteria", filter[criteria])
+					.setTimestamp();
 				break;
 			case "disable":
 			case "remove":
@@ -293,6 +333,7 @@ module.exports = {
 					case "isOwned":
 					case "gc":
 					case "rq":
+					case "search":
 						delete filter[criteria2];
 						infoScreen = new Discord.MessageEmbed()
 							.setColor("#03fc24")
@@ -307,11 +348,12 @@ module.exports = {
 							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 							.setTitle("Error, criteria selected not found.")
 							.setDescription(`Here is a list of filter criterias. 
-                                    \`make\` - Filter by make/manufacturer. 
+									\`rq\` - Filter by RQ.
+                                    \`make\` - Filter by make/manufacturer. Provide the manufacturer name that you want to remove, or type \`all\` to remove all criterias in this category.
 									\`year\` - Filter by model year range.
-									\`country\` - Filter by country origin. 
+									\`country\` - Filter by country origin. Provide the country code that you want to remove, or type \`all\` to remove all criterias in this category.
                                     \`drivetype\` - Filter by drive type. 
-									\`tyretype\` - Filter by tyre type.
+									\`tyretype\` - Filter by tyre type. Provide the type of tyre that you want to remove, or type \`all\` to remove all criterias in this category.
 									\`gc\` - Filter by ground clearance.
 									\`bodystyle\` - Filter by body type.  
 									\`seatcount\` - Filter by seat count.
@@ -322,7 +364,9 @@ module.exports = {
 									\`isupgraded\` - Filter upgraded cars.
 									\`ismaxed\` - Filter maxed cars.
 									\`isowned\` - Filter cars that you own.
-									\`tags\` - Filter by tag.`)
+									\`tags\` - Filter by tag. Provide the tag that you want to remove, or type \`all\` to remove all criterias in this category.
+									\`search\` - Filter by keyword in car name.
+									\`all\` - Remove all filters.`)
 							.setTimestamp();
 						return message.channel.send(errorScreen);
 				}
@@ -358,31 +402,7 @@ module.exports = {
 				}
 				break;
 			default:
-				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-				const errorScreen = new Discord.MessageEmbed()
-					.setColor("#fc0303")
-					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-					.setTitle("Error, filter criteria not found.")
-					.setDescription(`Here is a list of filter criterias. 
-                                    \`make\` - Filter by make/manufacturer. 
-									\`modelyear\` - Filter by model year range.
-									\`country\` - Filter by country origin. 
-                                    \`drivetype\` - Filter by drive type. 
-									\`tyretype\` - Filter by tyre type.
-									\`gc\` - Filter by ground clearance.
-									\`bodystyle\` - Filter by body type.  
-									\`seatcount\` - Filter by seat count.
-									\`enginepos\` - Filter by engine position.
-									\`fueltype\` - Filter by fuel type.
-									\`isprize\` - Filter prize cars.
-									\`isstock\` - Filter stock cars.
-									\`isupgraded\` - Filter upgraded cars.
-									\`ismaxed\` - Filter maxed cars.
-									\`isowned\` - Filter cars that you own.
-									\`tags\` - Filter by tag.  
-                                    \`disable/remove\` - Removes current (or all) filter(s).`)
-					.setTimestamp();
-				return message.channel.send(errorScreen);
+				break;
 		}
 		if (Object.keys(filter).length === 0) {
 			await db.delete(`acc${message.author.id}.filter`);

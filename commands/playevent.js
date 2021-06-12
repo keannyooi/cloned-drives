@@ -320,7 +320,7 @@ module.exports = {
 					.setColor("#fc0303")
 					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 					.setTitle("Error, you may not play this event yet.")
-					.setDescription("The event you are trying to play is not active currently. This is only bypassable if you are part of Community Management.")
+					.setDescription("The event you are trying to play is not active currently. This is only bypassable if you have the Community Management role.")
 					.setTimestamp();
 				return message.channel.send(errorMessage);
 			}

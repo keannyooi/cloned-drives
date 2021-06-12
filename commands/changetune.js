@@ -185,6 +185,7 @@ module.exports = {
 								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 								.setTitle("Error, invalid integer provided.")
 								.setDescription("It looks like your response was either not a number or not part of the selection.")
+								.addField("Number Received", `\`${collected.first().content}\` (either not a number, smaller than 1 or bigger than ${searchResults.length})`)
 								.setTimestamp();
 							return currentMessage2.edit(errorMessage);
 						}
@@ -257,6 +258,7 @@ module.exports = {
 								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 								.setTitle("Error, invalid selection provided.")
 								.setDescription("It looks like your response was not part of the selection.")
+								.addField("Value Received", `\`${collected.first().content}\``)
 								.setTimestamp();
 							return upgradeMessage.edit(errorMessage);
 						}

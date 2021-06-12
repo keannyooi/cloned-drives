@@ -143,7 +143,7 @@ module.exports = {
 					.setColor("#fc0303")
 					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 					.setTitle("Error, you may not play the challenge yet.")
-					.setDescription("The challenge is not active currently. This is only bypassable if you are part of Community Management.")
+					.setDescription("The challenge is not active currently. This is only bypassable if you have the Community Management role.")
 					.setTimestamp();
 				return message.channel.send(errorMessage);
 			}

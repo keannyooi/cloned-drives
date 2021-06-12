@@ -128,15 +128,54 @@ module.exports = {
             selectUpgrade(searchResults[0]);
         }
         else {
-			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
-            const errorMessage = new Discord.MessageEmbed()
-                .setColor("#fc0303")
-                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle("Error, it looks like you don't have enough cars to perform this action.")
-                .setDescription("Note: You can't sell prize cars.")
-				.addField("Keywords Received", `\`${carName.join(" ")}\``)
-                .setTimestamp();
-            return message.channel.send(errorMessage);
+            let find = garage.filter(g => {
+                return carName.every(part => g.carFile.includes(part));
+            })
+            console.log(find);
+            if (find.length === 0) {
+                message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+                const errorMessage = new Discord.MessageEmbed()
+                    .setColor("#fc0303")
+                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                    .setTitle("Error, it looks like you don't have this car.")
+                    .setDescription("Well that's sad.")
+                    .addField("Keywords Received", `\`${carName.join(" ")}\``)
+                    .setTimestamp();
+                return message.channel.send(errorMessage);
+            }
+            else {
+                let bannedList = "";
+                let errorMessage = new Discord.MessageEmbed()
+                    .setColor("#fc0303")
+                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                    .setTitle("Error, it looks like you either don't have this car, or you are unable to sell it.")
+                    .setDescription("Note: You can't sell maxed cars and prize cars.")
+                    .addField("Keywords Received", `\`${carName.join(" ")}\``)
+                    .setTimestamp();
+                for (let i = 0; i < find.length; i++) {
+                    let errCar = require(`./cars/${find[i].carFile}`);
+                    let make = errCar["make"];
+                    if (typeof make === "object") {
+                        make = errCar["make"][0];
+                    }
+
+                    if (errCar["isPrize"]) {
+                        bannedList += `${make} ${errCar["model"]} (${errCar["modelYear"]}) ${trophyEmoji}\n`;
+                    }
+                    else {
+                        let upgList = "";
+                        for (let [key, value] of Object.entries(find[i])) {
+                            if (!isNaN(value) && value !== 0) {
+                                upgList += `${value}x ${key}, `;
+                            }
+                        }
+                        bannedList += `${make} ${errCar["model"]} (${errCar["modelYear"]}) \`(${upgList.slice(0, -2)}, not enough to perform action) (${amount}x non-maxed car required)\`\n`;
+                    }
+                }
+                errorMessage.addField("Cars Found", bannedList);
+                message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+                return message.channel.send(errorMessage);
+            }
         }
 
 		async function selectUpgrade(currentCar, currentMessage) {
@@ -179,6 +218,7 @@ module.exports = {
 								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 								.setTitle("Error, invalid selection provided.")
 								.setDescription("It looks like your response was not part of the selection.")
+                                .addField("Value Received", `\`${collected.first().content}\``)
 								.setTimestamp();
 							return upgradeMessage.edit(errorMessage);
 						}

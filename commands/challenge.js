@@ -37,6 +37,7 @@ module.exports = {
 						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 						.setTitle("Error, page number requested invalid.")
 						.setDescription(`The challenge only has a total of ${challenge.roster.length} rounds.`)
+						.addField("Page Number Received", `\`${displayRound}\` (not within the range of \`1\` and \`${challenge.roster.length}\`)`)
 						.setTimestamp();
 					return message.channel.send(errorScreen);
 				}

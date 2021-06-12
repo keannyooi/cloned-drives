@@ -12,6 +12,7 @@ const fs = require("fs");
 const carFiles = fs.readdirSync("./commands/cars").filter(file => file.endsWith(".json"));
 const tracksets = fs.readdirSync("./commands/tracksets").filter(file => file.endsWith(".json"));
 const packFiles = fs.readdirSync("./commands/packs").filter(file => file.endsWith(".json"));
+const { DateTime } = require("luxon");
 
 module.exports = {
 	name: "editevent",
@@ -105,7 +106,7 @@ module.exports = {
 				.setColor("#fc0303")
 				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 				.setTitle("Error, 404 event not found.")
-				.setDescription("Try checking again using `cd-events`.")
+				.setDescription("Note: This command only supports one keyword for event identification.")
 				.addField("Keywords Received", `\`${keyword}\``)
 				.setTimestamp();
 			return message.channel.send(errorMessage);
@@ -120,8 +121,9 @@ module.exports = {
 					const errorScreen = new Discord.MessageEmbed()
 						.setColor("#fc0303")
 						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-						.setTitle("Error, roster index provided is either not a number or inapplicable.")
+						.setTitle("Error, roster index provided is inapplicable.")
 						.setDescription(`For this event, roster indexes must be a number between 1 and ${currentEvent.roster.length}.`)
+						.addField("Indexed Received", `\`${args[2]} (either not a number or not within the range of 1 and ${currentEvent.roster.length})\``)
 						.setTimestamp();
 					if (currentMessage) {
 						return currentMessage.edit(errorScreen);
@@ -143,7 +145,7 @@ module.exports = {
 							.setColor("#fc0303")
 							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 							.setTitle("Error, arguments provided incomplete.")
-							.setDescription("What are you trying to name the event as?")
+							.setDescription("You are expected to provide a name for the event after the criteria.")
 							.setTimestamp();
 						if (currentMessage) {
 							return currentMessage.edit(errorScreen);
@@ -170,7 +172,7 @@ module.exports = {
 							.setColor("#fc0303")
 							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 							.setTitle("Error, this attribute cannot be edited while the event is live.")
-							.setDescription("If you edit this value while an event is live, it would break the bot. So don't.")
+							.setDescription("If you edit this value while an event is live, it would break the bot. If you want to extend the time of an event, use `cd-editevent <event name> extend <time in hours>`.")
 							.setTimestamp();
 						if (currentMessage) {
 							return currentMessage.edit(errorScreen);
@@ -186,7 +188,7 @@ module.exports = {
 							.setColor("#fc0303")
 							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 							.setTitle("Error, arguments provided incomplete.")
-							.setDescription("How long, in days, are you trying to make the event last?")
+							.setDescription("You are expected to provide the number of days after the criteria, or `unlimited` if you want the event to go on forever.")
 							.setTimestamp();
 						if (currentMessage) {
 							return currentMessage.edit(errorScreen);
@@ -204,7 +206,7 @@ module.exports = {
 							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 							.setTitle("Error, duration provided is invalid.")
 							.setDescription("The duration in days must be a positive number. If you want an event to last forever, just type `unlimited`.")
-							.addField("Duration Value Received", `\`${duration}\` (either not a number or not a positive integer)`)
+							.addField("Duration Value Received", `\`${duration}\` (either not a positive number or not \`unlimited\`)`)
 							.setTimestamp();
 						if (currentMessage) {
 							return currentMessage.edit(errorScreen);
@@ -218,7 +220,67 @@ module.exports = {
 					infoScreen = new Discord.MessageEmbed()
 						.setColor("#03fc24")
 						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-						.setTitle(`Successfully changed the duration of the ${currentEvent.name} to \`${duration} day(s)\`!`)
+						.setTitle(`Successfully changed the duration of the ${currentEvent.name} event to \`${duration} day(s)\`!`)
+						.setTimestamp();
+					break;
+				case "extend":
+					if (!currentEvent.isActive) {
+						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+						const errorScreen = new Discord.MessageEmbed()
+							.setColor("#fc0303")
+							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+							.setTitle("Error, this attribute can only be edited while an event is live.")
+							.setDescription("This command is only intended for the unlikely scenario of bot-related delays.")
+							.setTimestamp();
+						if (currentMessage) {
+							return currentMessage.edit(errorScreen);
+						}
+						else {
+							return message.channel.send(errorScreen);
+						}
+					}
+
+					if (!args[2]) {
+						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+						const errorScreen = new Discord.MessageEmbed()
+							.setColor("#fc0303")
+							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+							.setTitle("Error, arguments provided incomplete.")
+							.setDescription("You are expected to provide the extended duration in hours after the criteria.")
+							.setTimestamp();
+						if (currentMessage) {
+							return currentMessage.edit(errorScreen);
+						}
+						else {
+							return message.channel.send(errorScreen);
+						}
+					}
+
+					let time = args[2];
+					if (isNaN(time) || parseInt(time) < 1) {
+						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+						const errorScreen = new Discord.MessageEmbed()
+							.setColor("#fc0303")
+							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+							.setTitle("Error, duration provided is invalid.")
+							.setDescription("The extended duration in hours must be a positive number.")
+							.addField("Duration Value Received", `\`${time}\` (not a positive number)`)
+							.setTimestamp();
+						if (currentMessage) {
+							return currentMessage.edit(errorScreen);
+						}
+						else {
+							return message.channel.send(errorScreen);
+						}
+					}
+
+					let origDate = DateTime.fromISO(currentEvent.deadline);
+					currentEvent.deadline = origDate.plus({ hours: time }).toISO();
+					currentEvent.timeLeft += parseInt((time / 24).toFixed(2));
+					infoScreen = new Discord.MessageEmbed()
+						.setColor("#03fc24")
+						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+						.setTitle(`Successfully extended the duration of the ${currentEvent.name} event by \`${time} hour(s)\`!`)
 						.setTimestamp();
 					break;
 				case "background": {
@@ -228,7 +290,7 @@ module.exports = {
 							.setColor("#fc0303")
 							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 							.setTitle("Error, arguments provided incomplete.")
-							.setDescription("Where is your image link?")
+							.setDescription("You are expected to provide an image link after the criteria.")
 							.setTimestamp();
 						if (currentMessage) {
 							return currentMessage.edit(errorScreen);
@@ -244,8 +306,9 @@ module.exports = {
 						const errorScreen = new Discord.MessageEmbed()
 							.setColor("#fc0303")
 							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-							.setTitle("Error, link provided is not an image.")
+							.setTitle("Error, link provided is not an image link.")
 							.setDescription("This function supports `.jpeg`, `.jpg`, `.png` and `.gif` links only.")
+							.addField("Link Received", `\`${imageLink}\` (not an image link)`)
 							.setTimestamp();
 						if (currentMessage) {
 							return currentMessage.edit(errorScreen);
@@ -271,7 +334,7 @@ module.exports = {
 							.setColor("#fc0303")
 							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 							.setTitle("Error, arguments provided incomplete.")
-							.setDescription("Which car are you trying to find and where should it go?")
+							.setDescription("You are expected to provide the round number and the name of the car you want to add after the criteria.")
 							.setTimestamp();
 						if (currentMessage) {
 							return currentMessage.edit(errorScreen);
@@ -397,7 +460,7 @@ module.exports = {
 							.setColor("#fc0303")
 							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 							.setTitle("Error, arguments provided incomplete.")
-							.setDescription("Which car are you tuning and what tune?")
+							.setDescription("You are expected to provide the round number and the tune of your choice after the criteria.")
 							.setTimestamp();
 						if (currentMessage) {
 							return currentMessage.edit(errorScreen);
@@ -410,16 +473,12 @@ module.exports = {
 					let upgrade = args[3];
 					let currentCar = require(`./cars/${currentEvent.roster[index - 1].car}`);
 					if (!currentCar[`racehud${upgrade}`] || currentCar[`racehud${upgrade}`].length === 0) {
-						const maxedTunes = [996, 969, 699].filter(function (tune) {
-							return currentCar[`${tune}TopSpeed`];
-						});
-
 						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 						const errorMessage = new Discord.MessageEmbed()
 							.setColor("#fc0303")
 							.setTitle("Error, the tuning stage you requested is unavailable.")
 							.setDescription("In order to make the tuning system less complex, the tuning stages are limited to `333`, `666`, `996`, `969` and `699`.")
-							.addField("Your car's available maxed tunes", maxedTunes.join(", "))
+							.addField("Tune Received", `\`${upgrade}\``)
 							.setTimestamp();
 						return message.channel.send(errorMessage);
 					}
@@ -441,7 +500,22 @@ module.exports = {
 							.setColor("#fc0303")
 							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 							.setTitle("Error, arguments provided incomplete.")
-							.setDescription("Which round and what requirement?")
+							.setDescription(`You are expected to provide the round number, the requirement of your choice and the necessary arguments for said requirement after the criteria. Here are a list of criterias:
+							\`rq\` - Filter by RQ. Provide the start of the RQ range desired and the end after that.
+							\`make\` - Filter by make/manufacturer. Provide a manufacturer name after that.
+							\`modelyear\` - Filter by model year range. Provide the start of the model year range desired and the end after that.
+							\`country\` - Filter by country origin. Provide a country code after that.
+							\`drivetype\` - Filter by drive type. Provide a drive type (\`FWD\`, \`RWD\`, etc.) after that.
+							\`tyretype\` - Filter by tyre type. Provide one kind of tyre (\`standard\`, \`performance\`, etc.) after that.
+							\`gc\` - Filter by ground clearance. Provide a ground clearance (\`low\`, \`medium\` or \`high\`) after that.
+							\`bodystyle\` - Filter by body type. Provide a drive type (\`sedan\`, \`coupe\`, etc.) after that.
+							\`seatcount\` - Filter by seat count. Provide the start of the seat count range desired and the end after that.
+							\`enginepos\` - Filter by engine position. Provide a engine position (\`front\`, \`middle\`, etc.) after that.
+							\`fueltype\` - Filter by fuel type. Provide a fuel type (\`petrol\`, \`electric\`, etc.) after that.
+							\`isprize\` - Filter prize cars.  Provide a boolean (\`true\` or \`false\`) after that.
+							\`tag\` - Filter by tag. Provide a tag after that.
+							\`car\` - Filter by exact car. Provide the name of a car after that.
+							\`search\` - Filter by keyword in car name. Provide a keyword that is found in a in-game car's name after that.`)
 							.setTimestamp();
 						if (currentMessage) {
 							return currentMessage.edit(errorScreen);
@@ -491,7 +565,8 @@ module.exports = {
 										.setColor("#fc0303")
 										.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 										.setTitle("Error, argument provided is already part of the filter criteria.")
-										.setDescription("Check the filter criteria in said round again.")
+										.setDescription(`Check the requirements in round ${index} again.`)
+										.addField("Argument Received", `\`${argument}\` (already part of the criteria, maybe check again?)`)
 										.setTimestamp();
 									return message.channel.send(errorMessage);
 								}
@@ -529,6 +604,7 @@ module.exports = {
 									.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 									.setTitle("Error, criteria provided is not a number.")
 									.setDescription(`\`${req}\` criterias must be a number, i.e: \`1969\`, \`2001\`, etc.`)
+									.addField("Argument Received", `\`${start}\` (not a number)`)
 									.setTimestamp();
 								return message.channel.send(errorMessage);
 							}
@@ -539,6 +615,7 @@ module.exports = {
 									.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 									.setTitle("Error, order is wrong.")
 									.setDescription("Check if you got the order right: Smaller number first, bigger number later.")
+									.addField("Argument Received", `\`${start} ~ ${end}\` (try flipping the order)`)
 									.setTimestamp();
 								return message.channel.send(errorMessage);
 							}
@@ -582,7 +659,8 @@ module.exports = {
 										.setColor("#fc0303")
 										.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 										.setTitle("Error, argument provided is already part of the filter criteria.")
-										.setDescription("Check the filter criteria in said round again.")
+										.setDescription(`Check the filter criteria in round ${index} again.`)
+										.addField("Argument Received", `\`${arg}\` (already part of the criteria, maybe check again?)`)
 										.setTimestamp();
 									return message.channel.send(errorMessage);
 								}
@@ -594,6 +672,7 @@ module.exports = {
 									.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 									.setTitle("Error, argument provided does not exist in the game.")
 									.setDescription("Make sure the argument you provided is as of in the game.")
+									.addField("Argument Received", `\`${arg}\` (argument does not exist in-game)`)
 									.setTimestamp();
 								return message.channel.send(errorMessage);
 							}
@@ -621,7 +700,8 @@ module.exports = {
 									.setColor("#fc0303")
 									.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 									.setTitle("Error, argument provided is not a boolean.")
-									.setDescription("Booleans only have 2 states, true or false.")
+									.setDescription("Booleans only have 2 states, \`true\` or \`false\`.")
+									.addField("Argument Received", `\`${argument}\` (not a boolean)`)
 									.setTimestamp();
 								return message.channel.send(errorMessage);
 							}
@@ -742,20 +822,21 @@ module.exports = {
 								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 								.setTitle("Error, requirement criteria not found.")
 								.setDescription(`Here is a list of requirement criterias. 
-											\`make\` - Filter by make/manufacturer. 
-											\`modelyear\` - Filter by model year range.
-											\`country\` - Filter by country origin. 
-											\`drivetype\` - Filter by drive type. 
-											\`tyretype\` - Filter by tyre type.
-											\`gc\` - Filter by ground clearance.
-											\`bodystyle\` - Filter by body type.  
-											\`seatcount\` - Filter by seat count.
-											\`enginepos\` - Filter by engine position.
-											\`fueltype\` - Filter by fuel type.
-											\`isprize\` - Filter prize cars.
-											\`tag\` - Filter by tag.
-											\`car\` - Filter by exact car.
-											\`search\` - Filter by keyword in car name.`)
+								\`rq\` - Filter by RQ. Provide the start of the RQ range desired and the end after that.
+								\`make\` - Filter by make/manufacturer. Provide a manufacturer name after that.
+								\`modelyear\` - Filter by model year range. Provide the start of the model year range desired and the end after that.
+								\`country\` - Filter by country origin. Provide a country code after that.
+								\`drivetype\` - Filter by drive type. Provide a drive type (\`FWD\`, \`RWD\`, etc.) after that.
+								\`tyretype\` - Filter by tyre type. Provide one kind of tyre (\`standard\`, \`performance\`, etc.) after that.
+								\`gc\` - Filter by ground clearance. Provide a ground clearance (\`low\`, \`medium\` or \`high\`) after that.
+								\`bodystyle\` - Filter by body type. Provide a drive type (\`sedan\`, \`coupe\`, etc.) after that.
+								\`seatcount\` - Filter by seat count. Provide the start of the seat count range desired and the end after that.
+								\`enginepos\` - Filter by engine position. Provide an engine position (\`front\`, \`middle\`, etc.) after that.
+								\`fueltype\` - Filter by fuel type. Provide a fuel type (\`petrol\`, \`electric\`, etc.) after that.
+								\`isprize\` - Filter prize cars. Provide a boolean (\`true\` or \`false\`) after that.
+								\`tag\` - Filter by tag. Provide a tag after that.
+								\`car\` - Filter by exact car. Provide the name of a car after that.
+								\`search\` - Filter by keyword in car name. Provide a keyword that is found in a in-game car's name after that.`)
 								.setTimestamp();
 							return message.channel.send(errorScreen);
 					}
@@ -766,8 +847,8 @@ module.exports = {
 						let errorMessage = new Discord.MessageEmbed()
 							.setColor("#fc0303")
 							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-							.setTitle("Error, requirement criteria not provided.")
-							.setDescription("Provide one, please.")
+							.setTitle("Error, requirement not provided.")
+							.setDescription("You are expected to specify what requirement that needs to be removed. If you want to remove all criterias, type `all`.")
 							.setTimestamp();
 						return message.channel.send(errorMessage);
 					}
@@ -790,21 +871,22 @@ module.exports = {
 							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 							.setTitle("Error, requirement criteria not found.")
 							.setDescription(`Here is a list of requirement criterias. 
-											\`make\` - Filter by make/manufacturer. 
+											\`rq\` - Filter by RQ.
+											\`make\` - Filter by make/manufacturer. Provide the manufacturer name that you want to remove, or type \`all\` to remove all criterias in this category.
 											\`modelyear\` - Filter by model year range.
-											\`country\` - Filter by country origin. 
+											\`country\` - Filter by country origin. Provide the country code that you want to remove, or type \`all\` to remove all criterias in this category.
 											\`drivetype\` - Filter by drive type. 
-											\`tyretype\` - Filter by tyre type.
+											\`tyretype\` - Filter by tyre type. Provide the type of tyre that you want to remove, or type \`all\` to remove all criterias in this category.
 											\`gc\` - Filter by ground clearance.
 											\`bodystyle\` - Filter by body type.  
 											\`seatcount\` - Filter by seat count.
 											\`enginepos\` - Filter by engine position.
 											\`fueltype\` - Filter by fuel type.
 											\`isprize\` - Filter prize cars.
-											\`tag\` - Filter by tag. 
+											\`tag\` - Filter by tag. Provide the tag that you want to remove, or type \`all\` to remove all criterias in this category.
 											\`car\` - Filter by exact car. 
-											\`search\` - Filter by keyword in car name.  
-											\`all\` - Removes all filters.`)
+											\`search\` - Filter by keyword in car name. Provide the keyword that you want to remove, or type \`all\` to remove all criterias in this category.
+											\`all\` - Removes all requirements.`)
 							.setTimestamp();
 						return message.channel.send(errorScreen);
 					}
@@ -826,7 +908,7 @@ module.exports = {
 							.setColor("#fc0303")
 							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 							.setTitle("Error, arguments provided incomplete.")
-							.setDescription("Which track are you trying to find and where should it go?")
+							.setDescription("You are expected to provide the round number and the name of the track after the criteria.")
 							.setTimestamp();
 						if (currentMessage) {
 							return currentMessage.edit(errorScreen);
@@ -936,7 +1018,12 @@ module.exports = {
 							.setColor("#fc0303")
 							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 							.setTitle("Error, reward criteria not provided.")
-							.setDescription("Provide one, please.")
+							.setDescription(`You are expected to provide the round number, the requirement of your choice and the necessary arguments for said requirement after the criteria. Here is a list of reward criterias. 
+							\`money\` - Awards the player money. Provide the amount of money after that.
+							\`fusetokens\` - Awards the player fuse tokens. Provide the amount of fuse tokens after that.
+							\`trophies\` - Awards the player trophies. Provide the amount of trophies after that.
+							\`car\` - Awards the player a car. Provide the name of a car after that.
+							\`pack\` - Awards the player a pack. Provide the name of a pack after that.`)
 							.setTimestamp();
 						return message.channel.send(errorMessage);
 					}
@@ -954,6 +1041,7 @@ module.exports = {
 									.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 									.setTitle("Error, amount provided is either not a number or less than 1.")
 									.setDescription("This amount should always be a positive number, i.e: `4`, `20`, etc. 0 is only for deleting the reward for trophies.")
+									.addField("Number Received", `\`${amount}\``)
 									.setTimestamp();
 								return message.channel.send(errorMessage);
 							}
@@ -1206,11 +1294,11 @@ module.exports = {
 								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 								.setTitle("Error, reward criteria not found.")
 								.setDescription(`Here is a list of reward criterias. 
-											\`money\` - Awards the player money.
-											\`fusetokens\` - Awards the player fuse tokens.
-											\`trophies\` - Awards the player trophies.
-											\`car\` - Awards the player a car.
-											\`pack\` - Awards the player a pack.`)
+								\`money\` - Awards the player money. Provide the amount of money after that.
+								\`fusetokens\` - Awards the player fuse tokens. Provide the amount of fuse tokens after that.
+								\`trophies\` - Awards the player trophies. Provide the amount of trophies after that.
+								\`car\` - Awards the player a car. Provide the name of a car after that.
+								\`pack\` - Awards the player a pack. Provide the name of a pack after that.`)
 								.setTimestamp();
 							return message.channel.send(errorScreen);
 					}
@@ -1406,7 +1494,8 @@ module.exports = {
 						.setTitle("Error, event editing criteria not found.")
 						.setDescription(`Here is a list of event editing criterias. 
                                     \`name\` - The name of the event. 
-									\`duration\` - How long an event is going to last for. 
+									\`duration\` - How long an event is going to last for (in days). 
+									\`extend\` - How long an event is going to be extended by (in hours). 
 									\`background\` - The event's background image (image links only). 
 									\`setcar\` - Sets the opponent's car.
 									\`setreward\` - Sets the reward of a round.
