@@ -54,6 +54,7 @@ module.exports = {
 				case "enginePos":
 				case "fuelType":
 				case "gc":
+				case "search":
 					desc = "For this criteria, key in **exactly** what you want to filter.";
 					break;
 				case "modelYear":
@@ -81,6 +82,7 @@ module.exports = {
 				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 				.setTitle("Error, arguments provided insufficient.")
 				.setDescription(desc)
+				.addField("Criteria Received", `\`${criteria}\``)
 				.setTimestamp();
 			return message.channel.send(errorMessage);
 		}

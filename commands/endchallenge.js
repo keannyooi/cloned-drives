@@ -17,7 +17,7 @@ module.exports = {
 	isExternal: false,
     adminOnly: false,
     description: "Ends the ongoing challenge.",
-    async execute(message, args) {
+    async execute(message) {
 		const db = message.client.db;
 		const emojiFilter = (reaction, user) => {
             return (reaction.emoji.name === "✅" || reaction.emoji.name === "❎") && user.id === message.author.id;
@@ -30,7 +30,7 @@ module.exports = {
 				.setColor("#fc0303")
 				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 				.setTitle("Error, you don't have access to this command.")
-				.setDescription("This command is only accessible if you are a part of Community Management.")
+				.setDescription("This command is only accessible if you have the Community Management role.")
 				.setTimestamp();
 			return message.channel.send(errorMessage);
 		}

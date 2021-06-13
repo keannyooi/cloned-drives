@@ -12,7 +12,8 @@
     "moment": "^2.29.0",
     "mongodb": "^3.6.2",
     "os": "^0.1.1",
-    "quickmongo": "^2.0.4"
+    "quickmongo": "^2.0.4",
+    "string-similarity": "^4.0.4"
   },
   "devDependencies": {},
   "scripts": {

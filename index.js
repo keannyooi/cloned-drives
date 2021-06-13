@@ -13,6 +13,7 @@ const Discord = require("discord.js-light");
 const { Database } = require("quickmongo");
 const { prefix, token } = require("./config.json");
 const { DateTime, Interval } = require("luxon");
+const stringSimilarity = require("string-similarity");
 
 const client = new Discord.Client({
 	cacheGuilds: true,
@@ -134,11 +135,13 @@ client.on("message", async message => {
 	const commandName = args.shift().toLowerCase();
 	const command = client.commands.get(commandName) || client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
 	if (!command) {
+		let matches = stringSimilarity.findBestMatch(commandName, commandFiles.map(i => i.slice(0, -3)));
 		const errorMessage = new Discord.MessageEmbed()
 			.setColor("#fc0303")
 			.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 			.setTitle("Error, 404 command not found.")
 			.setDescription("It looks like this command doesn't exist. Try using `cd-help` to find the command you are looking for.")
+			.addField("You may be looking for", `\`cd-${matches.bestMatch.target}\``)
 			.setTimestamp();
 		return message.channel.send(errorMessage);
 	}
@@ -232,7 +235,7 @@ client.on("message", async message => {
 			.setColor("#fc0303")
 			.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 			.setTitle("Error, failed to execute command.")
-			.setDescription(`Something must have gone wrong. Please report this issure to the devs. \n\`${error.stack}\``)
+			.setDescription(`Something must have gone wrong. Please report this issue to the devs. \n\`${error.stack}\``)
 			.setTimestamp();
 		return message.channel.send(errorMessage);
 	}
@@ -263,7 +266,7 @@ client.on("messageUpdate", async (oldMessage, newMessage) => {
 		return newMessage.channel.send(errorMessage);
 	}
 	if (command.args && !args.length) {
-		var usage = command.usage;
+		let usage = command.usage;
 		if (usage === "(no arguments required)") {
 			const errorMessage = new Discord.MessageEmbed()
 				.setColor("#fc0303")
@@ -349,7 +352,6 @@ setInterval(async () => {
 	}
 	await client.db.set("limitedOffers", offers);
 
-	/**
 	const challenge = await client.db.get("challenge");
 	if (challenge.timeLeft !== "unlimited" && challenge.isActive === true) {
 		if (Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(challenge.deadline)).invalid !== null) {
@@ -361,5 +363,4 @@ setInterval(async () => {
 		}
 	}
 	await client.db.set("challenge", challenge);
-	*/
 }, 180000);

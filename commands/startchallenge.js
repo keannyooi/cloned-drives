@@ -31,7 +31,7 @@ module.exports = {
 				.setColor("#fc0303")
 				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 				.setTitle("Error, you don't have access to this command.")
-				.setDescription("This command is only accessible if you are a part of Community Management.")
+				.setDescription("This command is only accessible if you have the Community Management role.")
 				.setTimestamp();
 			return message.channel.send(errorMessage);
 		}
@@ -39,7 +39,7 @@ module.exports = {
 		const confirmationMessage = new Discord.MessageEmbed()
             .setColor("#34aeeb")
             .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-            .setTitle(`Are you sure you want to start the ${event.name} event?`)
+            .setTitle(`Are you sure you want to start the ${challenge.name} challenge?`)
             .setDescription("React with ✅ to proceed or ❎ to cancel.")
             .setTimestamp();
 
@@ -66,7 +66,7 @@ module.exports = {
 						const infoScreen = new Discord.MessageEmbed()
             				.setColor("#34aeeb")
             				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-            				.setTitle(`Successfully started the ${event.name} event!`)
+            				.setTitle(`Successfully started the ${challenge.name} challenge!`)
             				.setTimestamp();
         				return reactionMessage.edit(infoScreen);
                     case "❎":
