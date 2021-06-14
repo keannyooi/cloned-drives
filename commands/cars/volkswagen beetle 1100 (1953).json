@@ -1,0 +1,56 @@
+﻿{
+    "rq": 6,
+    "make": "Volkswagen",
+    "model": "Beetle 1100",
+    "modelYear": 1953,
+    "country": "DE",
+    "topSpeed": 66,
+    "0to60": 42.1,
+    "handling": 59,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Style Icon"],
+    "isPrize": false,
+
+
+    "weight": 726,
+    "gc": "Medium",
+    "seatCount":4,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 0.00,
+    "ola": 37.53,
+    "description": "Timeless. Card by Andu",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/853534833954521108/Beetle1100.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/853534907983986708/Beetle1100.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/853534914917826560/Beetle1100-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/853534939857551370/Beetle1100-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/853534962857803786/Beetle1100-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/853534978754478100/Beetle1100-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/853534992260005909/Beetle1100-699.png",
+
+    "333TopSpeed": 74,
+    "3330to60": 40.0,
+    "333Handling": 61,
+
+    "666TopSpeed": 82,
+    "6660to60": 37.9, 
+    "666Handling": 63,
+
+    "996TopSpeed": 90,
+    "9960to60": 35.8,
+    "996Handling": 63,
+
+    "969TopSpeed": 90,
+    "9690to60": 37.9,
+    "969Handling": 65,
+
+    "699TopSpeed": 82,
+    "6990to60": 35.8,
+    "699Handling": 65
+}
