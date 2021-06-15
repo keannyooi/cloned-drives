@@ -1,0 +1,54 @@
+{
+    "rq": 45,
+    "make": "Ferrari",
+    "model": "348 TS",
+    "modelYear": 1991,
+    "country": "IT",
+    "topSpeed": 168,
+    "0to60": 6.0,
+    "handling": 81,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer"],
+    "isPrize": false,
+
+    "weight": 1382,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 68.50,
+    "ola": 90.00,
+    "description": "Card by Lemonade.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/854253738683793428/Ferrari_348_TS.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/854243480797052968/Ferrari_348_TS_Stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/854243505655119902/Ferrari_348_TS_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/854243525821464586/Ferrari_348_TS_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/854243601576230942/Ferrari_348_TS_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/854243576779374632/Ferrari_348_TS_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/854243552954679326/Ferrari_348_TS_699.png",
+
+    "333TopSpeed": 171,
+    "3330to60": 5.7,
+    "333Handling": 84,
+
+    "666TopSpeed": 174,
+    "6660to60": 5.4,
+    "666Handling": 86,
+
+    "996TopSpeed": 177,
+    "9960to60": 5.1,
+    "996Handling": 86,
+
+    "969TopSpeed": 177,
+    "9690to60": 5.4,
+    "969Handling": 90,
+
+    "699TopSpeed": 174,
+    "6990to60": 5.1,
+    "699Handling": 90
+}

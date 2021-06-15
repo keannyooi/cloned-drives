@@ -1,0 +1,54 @@
+{
+    "rq": 61,
+    "make": "Cadillac",
+    "model": "STS-V",
+    "modelYear": 2005,
+    "country": "US",
+    "topSpeed": 155,
+    "0to60": 4.8,
+    "handling": 78,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Muscle Car"],
+    "isPrize": false,
+
+    "weight": 1986,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 72.69,
+    "ola": 78.67,
+    "description": "Card by Lemonade.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/852129307249737770/Cadillac_STS-V.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/852129114881130526/Cadillac_STS-V_Stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/852129135379480576/Cadillac_STS-V_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/852129158476595200/Cadillac_STS-V_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/852129244452093962/Cadillac_STS-V_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/852129220151083018/Cadillac_STS-V_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/852129192350187560/Cadillac_STS-V_699.png",
+
+    "333TopSpeed": 158,
+    "3330to60": 4.6,
+    "333Handling": 81,
+
+    "666TopSpeed": 162,
+    "6660to60": 4.3,
+    "666Handling": 83,
+
+    "996TopSpeed": 165,
+    "9960to60": 4.1,
+    "996Handling": 83,
+
+    "969TopSpeed": 165,
+    "9690to60": 4.3,
+    "969Handling": 87,
+
+    "699TopSpeed": 162,
+    "6990to60": 4.1,
+    "699Handling": 87
+}
