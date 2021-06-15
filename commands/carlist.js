@@ -44,6 +44,7 @@ module.exports = {
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                 .setTitle("Error, invalid integer provided.")
                 .setDescription("It looks like the page number you requested is not a number.")
+                .addField("Page Number Received", `\`${args[0]}\` (not a number)`)
                 .setTimestamp();
             return message.channel.send(errorScreen);
         }
@@ -239,13 +240,14 @@ module.exports = {
 			}
         });
 
-        if (page < 0 || totalPages < page) {
+        if (page < 1 || totalPages < page) {
 			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             const errorScreen = new Discord.MessageEmbed()
                 .setColor("#fc0303")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                 .setTitle("Error, page number requested invalid.")
                 .setDescription(`The car list ends at page ${totalPages}.`)
+                .addField("Page Number Received", `\`${page}\` (not within the range of 1 and ${totalPages})`)
                 .setTimestamp();
             return message.channel.send(errorScreen);
         }

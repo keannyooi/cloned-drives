@@ -58,6 +58,7 @@ module.exports = {
 			switch (typeof value) {
 				case "object":
 					reqList += `\`${key}: ${value.start} ~ ${value.end}\`, `;
+					break;
 				case "string":
 				case "boolean":
 				case "number":
@@ -284,7 +285,6 @@ module.exports = {
 		async function randomize() {
 			trackset = tracksets[Math.floor(Math.random() * tracksets.length)];
 			let offroad = Math.floor(Math.random() * 2);
-			console.log(offroad);
 			switch (offroad) {
 				case 0:
 					while ((trackset.includes("(muddy)") || trackset.includes("(dirt)") || trackset.includes("(gravel)") || trackset.includes("(rainy gravel)") || trackset.includes("(snowy)") || trackset.includes("(ice)")) === false) { //off-road

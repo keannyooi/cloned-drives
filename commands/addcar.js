@@ -119,7 +119,7 @@ module.exports = {
 					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 					.setTitle("Error, 404 user not found.")
 					.setDescription("It looks like this user isn't in this server.")
-					.addField("Keywords Received", `\`${userName.join(" ")}\``)
+					.addField("Keywords Received", `\`${userName}\``)
 					.setTimestamp();
 				return message.channel.send(errorMessage);
 			}
@@ -134,6 +134,18 @@ module.exports = {
 			else {
 				amount = Math.ceil(parseInt(args[1]));
 				carName = args.slice(2, args.length).map(i => i.toLowerCase());
+			}
+
+			if (amount < 1 || amount > 10) {
+				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+				const errorMessage = new Discord.MessageEmbed()
+					.setColor("#fc0303")
+					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+					.setTitle("Error, amount provided invalid.")
+					.setDescription("You may not add more than 10 cars at once.")
+					.addField("Amount Received", `\`${amount}\` (either smaller than 1 or bigger than 10)`)
+					.setTimestamp();
+				return message.channel.send(errorMessage);
 			}
 
 			const searchResults = new Set(carFiles);

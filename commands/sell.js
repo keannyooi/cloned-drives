@@ -329,7 +329,7 @@ module.exports = {
                             const infoScreen = new Discord.MessageEmbed()
                                 .setColor("#03fc24")
                                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                                .setTitle(`Successfully sold ${amount} your ${currentName}s!`)
+                                .setTitle(`Successfully sold ${amount} of your ${currentName}s!`)
                                 .setDescription(`You earned ${moneyEmoji}${money}!`)
                                 .addField("Your Money Balance", `${moneyEmoji}${playerData.money}`)
                                 .setImage(car["card"])

@@ -8,7 +8,9 @@
 */
 
 const Discord = require("discord.js-light");
+const fs = require("fs");
 const { prefix } = require("../config.json");
+const stringSimilarity = require("string-similarity");
 
 module.exports = {
     name: "help",
@@ -116,13 +118,16 @@ module.exports = {
             const command = commands.get(name) || commands.find(c => c.aliases && c.aliases.includes(name));
 
             if (!command) {
+                let commandFiles = fs.readdirSync("./commands").filter(file => file.endsWith(".js"));
+                let matches = stringSimilarity.findBestMatch(name, commandFiles.map(i => i.slice(0, -3)));
 				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                 const errorMessage = new Discord.MessageEmbed()
                     .setColor("#fc0303")
                     .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                     .setTitle("Error, 404 command not found.")
                     .setDescription("It looks like this command doesn't exist. Try referring to the command list.")
-                    .addField("Keywords Received", `\`${name}\``)
+                    .addField("Keywords Received", `\`${name}\``, true)
+                    .addField("You may be looking for", `\`${matches.bestMatch.target}\``, true)
                     .setTimestamp();
                 return message.channel.send(errorMessage);
             }

@@ -1,5 +1,5 @@
-  /*
- __  ___  _______     ___      .__   __. .__   __. ____    ____ 
+/*
+__  ___  _______     ___      .__   __. .__   __. ____    ____ 
 |  |/  / |   ____|   /   \     |  \ |  | |  \ |  | \   \  /   / 
 |  '  /  |  |__     /  ^  \    |   \|  | |   \|  |  \   \/   /  
 |    <   |   __|   /  /_\  \   |  . `  | |  . `  |   \_    _/   
@@ -30,7 +30,7 @@ const cooldowns = new Discord.Collection();
 client.db = new Database("mongodb+srv://keanny:6x6IsBae@databaseclusterthing.as94y.mongodb.net/DatabaseClusterThing?retryWrites=true&w=majority");
 client.execList = [];
 
-const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
+const commandFiles = fs.readdirSync("./commands").filter(file => file.endsWith(".js"));
 const starterGarage = [
 	{
 		carFile: "honda s2000 (1999).json",
@@ -42,7 +42,7 @@ const starterGarage = [
 		"699": 0
 	},
 	{
-		carFile:"peugeot 405 mi16 (1989).json",
+		carFile: "peugeot 405 mi16 (1989).json",
 		"000": 1,
 		"333": 0,
 		"666": 0,
@@ -98,8 +98,8 @@ client.once("ready", async () => {
 		// const garage = await client.db.get(`acc${user.id}.garage`);
 		// var i = 0;
 		// while (i < garage.length) {
-		//  	if (garage[i].carFile === "koenigsegg one:1 (2014).json") {
-		//  		garage[i].carFile = "koenigsegg one-1 (2014).json";
+		//  	if (garage[i].carFile === "mazda 3 mps (2010).json") {
+		//  		garage[i].carFile = "mazda 3 mps (2009).json";
 		// 		console.log("done");
 		//  	}
 		//  	i++;
@@ -119,7 +119,7 @@ client.once("ready", async () => {
 	// 	i++;
 	//}
 	//await client.db.set("dealershipCatalog", catalog);
-	
+
 	client.user.setActivity("over everyone's garages", { type: "WATCHING" });
 });
 

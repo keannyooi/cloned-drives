@@ -119,7 +119,7 @@ module.exports = {
 					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 					.setTitle("Error, 404 user not found.")
 					.setDescription("It looks like this user isn't in this server.")
-					.addField("Keywords Received", `\`${userName.join(" ")}\``)
+					.addField("Keywords Received", `\`${userName}\``)
 					.setTimestamp();
 				return message.channel.send(errorMessage);
 			}

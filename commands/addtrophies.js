@@ -18,7 +18,7 @@ module.exports = {
     description: "Adds a certain amount of trophies to someone.",
     execute(message, args) {
 		const db = message.client.db;
-        const moneyEmoji = message.client.emojis.cache.get("726017235826770021");
+        const trophyEmoji = message.client.emojis.cache.get("775636479145148418");
         const filter = response => {
             return response.author.id === message.author.id;
         };
@@ -116,7 +116,7 @@ module.exports = {
 					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 					.setTitle("Error, 404 user not found.")
 					.setDescription("It looks like this user isn't in this server.")
-					.addField("Keywords Received", `\`${userName.join(" ")}\``)
+					.addField("Keywords Received", `\`${userName}\``)
 					.setTimestamp();
 				return message.channel.send(errorMessage);
 			}
