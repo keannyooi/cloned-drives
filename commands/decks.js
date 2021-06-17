@@ -15,7 +15,7 @@ module.exports = {
     usage: "<(optional) name of deck>",
     args: 0,
 	isExternal: true,
-    adminOnly: true,
+    adminOnly: false,
     description: "Shows your decks.",
     async execute(message, args) {
         const db = message.client.db;
@@ -136,46 +136,64 @@ module.exports = {
         }
 
         async function display(currentDeck) {
-            const wait = await message.channel.send("**Loading deck, this may take a while... (please wait)**");
+            const wait = message.channel.send("**Loading deck, this may take a while... (please wait)**");
 
             try {
-				let totalRQ = 0;
-                let handList = "";
                 const handPlacement = [{ x: 287, y: 24 }, { x: 658, y: 24 }, { x: 1029, y: 24 }, { x: 1400, y: 24 }, { x: 1771, y: 24 }];
                 const canvas = Canvas.createCanvas(2135, 249);
                 const ctx = canvas.getContext("2d");
-                const background = await Canvas.loadImage("https://cdn.discordapp.com/attachments/716917404868935691/744882896828891136/deck_screen.png");
-                ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
+				let totalRQ = 0;
+                let handList = "", attachment, promises, cucked = false;
+
+                try {
+                    const background = await Canvas.loadImage("https://cdn.discordapp.com/attachments/716917404868935691/744882896828891136/deck_screen.png");
+                    ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
+
+                    for (i = 0; i < currentDeck.hand.length; i++) {
+                        if (currentDeck.hand[i] !== "None") {
+                            const car = require(`./cars/${currentDeck.hand[i]}`);
+                            let racehud = await Canvas.loadImage(car[`racehud${currentDeck.tunes[i]}`]);
+                            ctx.drawImage(racehud, handPlacement[i].x, handPlacement[i].y, 334, 203);
+                        }
+                    }
+                }
+                catch (error) {
+                    console.log(error);
+                    let errorPic = "https://cdn.discordapp.com/attachments/779577239514775552/854916055084695593/unknown.png";
+                    attachment = new Discord.MessageAttachment(errorPic, "deck.png");
+                    cucked = true;
+                }
 
                 for (i = 0; i < currentDeck.hand.length; i++) {
                     if (currentDeck.hand[i] !== "None") {
                         const car = require(`./cars/${currentDeck.hand[i]}`);
 						totalRQ += car["rq"];
-                        let racehud = await Canvas.loadImage(car[`racehud${currentDeck.tunes[i]}`]);
                         let rarity = rarityCheck(car);
 						let make = car["make"];
 						if (typeof make === "object") {
 							make = car["make"][0];
 						}
 
-                        ctx.drawImage(racehud, handPlacement[i].x, handPlacement[i].y, 334, 203);
                         handList += `(${rarity} ${car["rq"]}) ${make} ${car["model"]} (${car["modelYear"]}) [${currentDeck.tunes[i]}]\n`;
                     }
 					else {
 						handList += "(None)\n"
 					}
                 }
-
-                const attachment = new Discord.MessageAttachment(canvas.toBuffer(), 'deck.png');
-                const deckScreen = new Discord.MessageEmbed()
+                
+                let deckScreen = new Discord.MessageEmbed()
                     .setColor("#34aeeb")
                     .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                     .setTitle(currentDeck.name + ` (Total RQ: ${totalRQ})`)
                     .setDescription(handList)
-                    .attachFiles(attachment)
-                    .setImage("attachment://deck.png")
                     .setTimestamp();
-                wait.delete();
+                if (!cucked) {
+                    attachment = new Discord.MessageAttachment(canvas.toBuffer(), "deck.png");
+                }
+                
+                (await wait).delete();
+                deckScreen.attachFiles(attachment)
+                deckScreen.setImage("attachment://deck.png")
 				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                 return message.channel.send(deckScreen);
             }
@@ -185,7 +203,7 @@ module.exports = {
                     .setColor("#fc0303")
                     .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                     .setTitle("Error, failed to load in deck.")
-                    .setDescription(`Something must have gone wrong. Please report this issure to the devs. \n\`${error}\``)
+                    .setDescription(`Something must have gone wrong. Please report this issure to the devs. \n\`${error.stack}\``)
                     .setTimestamp()
                 wait.delete();
                 return message.channel.send(errorMessage);

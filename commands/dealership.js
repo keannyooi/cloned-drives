@@ -28,7 +28,6 @@ module.exports = {
 			const db = message.client.db;
 			const cardPlacement = [{ x: 7, y: 3 }, { x: 178, y: 3 }, { x: 349, y: 3 }, { x: 520, y: 3 }, { x: 7, y: 143 }, { x: 178, y: 143 }, { x: 349, y: 143 }, { x: 520, y: 143 }];
 
-			const userData = await db.get(`acc${message.author.id}`);
 			const moneyEmoji = message.client.emojis.cache.get("726017235826770021");
 			let lastRefresh = await db.get("lastDealershipRefresh");
 			let catalog = await db.get("dealershipCatalog");
@@ -42,7 +41,7 @@ module.exports = {
 			}
 
 			const canvas = Canvas.createCanvas(694, 249);
-			const ctx = canvas.getContext('2d');
+			const ctx = canvas.getContext("2d");
 			let attachment, promises, cucked = false;
 
 			try {
@@ -78,12 +77,14 @@ module.exports = {
 
 				if (!cucked) {
 					ctx.drawImage(promises[i], cardPlacement[i].x, cardPlacement[i].y, 167, 103);
-					attachment = new Discord.MessageAttachment(canvas.toBuffer(), "dealership.png");
 				}	
 				deckScreen.addField(`${i + 1} - ${currentName}`, `Price: ${moneyEmoji}${catalog[i].price} \nStock Remaining: ${catalog[i].stock}`, true);
 			}
 
 			(await wait).delete();
+			if (!cucked) {
+				attachment = new Discord.MessageAttachment(canvas.toBuffer(), "dealership.png");
+			}
 			deckScreen.attachFiles(attachment);
 			deckScreen.setImage("attachment://dealership.png");
 			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);

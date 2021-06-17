@@ -15,7 +15,7 @@ module.exports = {
     usage: "<deck name goes here>",
     args: 1,
 	isExternal: true,
-    adminOnly: true,
+    adminOnly: false,
     description: 'Creates a deck with the name of your choice. (NOTE: Deck names cannot contain spaces, use underscores "_" instead)',
     async execute(message, args) {
 		const db = message.client.db;

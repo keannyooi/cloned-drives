@@ -10,6 +10,7 @@
 const Discord = require("discord.js-light");
 const fs = require("fs");
 const packFiles = fs.readdirSync("./commands/packs").filter(file => file.endsWith('.json'));
+const stringSimilarity = require("string-similarity");
 
 module.exports = {
     name: "packinfo",
@@ -84,13 +85,15 @@ module.exports = {
             displayInfo(currentPack);
         }
         else {
+            let matches = stringSimilarity.findBestMatch(packName.join(" "), packFiles.map(i => i.slice(0, -5)));
 			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             const errorMessage = new Discord.MessageEmbed()
                 .setColor("#fc0303")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                 .setTitle("Error, pack requested not found.")
                 .setDescription("Well that sucks.")
-				.addField("Keywords Received", `\`${packName.join(" ")}\``)
+				.addField("Keywords Received", `\`${packName.join(" ")}\``, true)
+                .addField("You may be looking for", `\`${matches.bestMatch.target}\``, true)
                 .setTimestamp();
             return message.channel.send(errorMessage);
         }

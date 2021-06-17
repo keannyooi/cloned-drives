@@ -220,7 +220,7 @@ module.exports = {
 					}
 				}
 				else {
-					if (sortBy === "0to60" || sortBy === "weight") {
+					if (sortBy === "0to60" || sortBy === "weight" || sortBy === "ola") {
 						if (carA[sortBy] > carB[sortBy]) {
 							return 1;
 						}

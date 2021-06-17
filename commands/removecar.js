@@ -8,6 +8,7 @@
 */
 
 const Discord = require("discord.js-light");
+const stringSimilarity = require("string-similarity");
 
 module.exports = {
     name: "removecar",
@@ -255,12 +256,15 @@ module.exports = {
 				selectUpgrade(user, playerData, searchResults1[0], amount);
 			}
 			else {
+				let matches = stringSimilarity.findBestMatch(carName.join(" "), garage.map(i => i.carFile.slice(0, -5)));
 				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 				const errorMessage = new Discord.MessageEmbed()
 					.setColor("#fc0303")
 					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 					.setTitle("Error, it looks like the person doesn't have enough cars to perform this action.")
-					.addField("Keywords Received", `\`${carName.join(" ")}\``)
+					.setDescription(`${user.username} either doesn't own that car, or he/she has less than ${amount} of it.`)
+					.addField("Keywords Received", `\`${carName.join(" ")}\``, true)
+					.addField("You may be looking for", `\`${matches.bestMatch.target}\``, true)
 					.setTimestamp();
 				return message.channel.send(errorMessage);
 			}

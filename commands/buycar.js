@@ -8,6 +8,7 @@
 */
 
 const Discord = require("discord.js-light");
+const stringSimilarity = require("string-similarity");
 
 module.exports = {
     name: "buycar",
@@ -43,6 +44,7 @@ module.exports = {
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                 .setTitle("Error, you may not buy that many cars at once.")
                 .setDescription("The maximum amount of cars that you can buy at once is limited to 10 in order to prevent something like this (https://discordapp.com/channels/711769157078876305/750304321832222811/781217938069782599).")
+                .addField("Amount Received", `\`${amount}\``)
                 .setTimestamp();
             return message.channel.send(errorScreen);
         }
@@ -81,6 +83,7 @@ module.exports = {
                                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                                 .setTitle("Error, invalid integer provided.")
                                 .setDescription("It looks like your response was either not a number or not part of the selection.")
+                                .addField("Number Received", `\`${collected.first().content}\` (either not a number, smaller than 1 or bigger than ${searchResults.length})`)
                                 .setTimestamp();
                             return currentMessage.edit(errorMessage);
                         }
@@ -104,13 +107,15 @@ module.exports = {
             buyCar(currentCar, amount);
         }
         else {
+            let matches = stringSimilarity.findBestMatch(carName.join(" "), catalog.map(i => i.carFile));
 			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             const errorMessage = new Discord.MessageEmbed()
                 .setColor("#fc0303")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                 .setTitle("Error, car requested not found.")
                 .setDescription("Try checking the dealership again.")
-				.addField("Keywords Received", `\`${carName.join(" ")}\``)
+				.addField("Keywords Received", `\`${carName.join(" ")}\``, true)
+                .addField("You may be looking for", `\`${matches.bestMatch.target}\``, true)
                 .setTimestamp();
             return message.channel.send(errorMessage);
         }

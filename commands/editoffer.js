@@ -11,6 +11,7 @@ const Discord = require("discord.js-light");
 const fs = require("fs");
 const carFiles = fs.readdirSync("./commands/cars").filter(file => file.endsWith(".json"));
 const packFiles = fs.readdirSync("./commands/packs").filter(file => file.endsWith(".json"));
+const stringSimilarity = require("string-similarity");
 const { DateTime } = require("luxon");
 
 module.exports = {
@@ -155,7 +156,7 @@ module.exports = {
 							.setColor("#fc0303")
 							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 							.setTitle("Error, this attribute cannot be edited while the offer is live.")
-							.setDescription("If you edit this value while an offer is live, it would break the bot. So don't.")
+							.setDescription("If you edit this value while an offer is live, it would break the bot. If you want to extend the time of the challenge, use `cd-editoffer extend <time in hours>`.")
 							.setTimestamp();
 						if (currentMessage) {
 							return currentMessage.edit(errorScreen);
@@ -330,13 +331,15 @@ module.exports = {
 								packFile = searchResults[0];
 							}
 							else {
+								let matches = stringSimilarity.findBestMatch(packName.join(" "), packFiles.map(i => i.slice(0, -5)));
 								message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 								const errorMessage = new Discord.MessageEmbed()
 									.setColor("#fc0303")
 									.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 									.setTitle("Error, pack requested not found.")
 									.setDescription("Well that sucks.")
-									.addField("Keywords Received", `\`${packName.join(" ")}\``)
+									.addField("Keywords Received", `\`${packName.join(" ")}\``, true)
+									.addField("You may be looking for", `\`${matches.bestMatch.target}\``, true)
 									.setTimestamp();
 								if (currentMessage) {
 									await currentMessage.edit(errorMessage);
@@ -456,18 +459,20 @@ module.exports = {
 								carFile = Array.from(searchResults1)[0];
 							}
 							else {
+								let matches = stringSimilarity.findBestMatch(carName.join(" "), carFiles.map(i => i.slice(0, -5)));
 								message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 								const errorMessage = new Discord.MessageEmbed()
 									.setColor("#fc0303")
 									.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 									.setTitle("Error, car requested not found.")
 									.setDescription("Well that sucks.")
-									.addField("Keywords Received", `\`${carName.join(" ")}\``)
+									.addField("Keywords Received", `\`${carName.join(" ")}\``, true)
+									.addField("You may be looking for", `\`${matches.bestMatch.target}\``, true)
 									.setTimestamp();
 								return message.channel.send(errorMessage);
 							}
 
-							let carList = "";
+							let list = "";
 							if (offer.offer.cars) {
 								offer.offer.cars.push(carFile);
 							}
@@ -481,7 +486,7 @@ module.exports = {
 									make = car["make"][0];
 								}
 								let rarity = rarityCheck(car);
-								carList += `(${rarity} ${car["rq"]}) ${make} ${car["model"]} (${car["modelYear"]})\n`;
+								list += `(${rarity} ${car["rq"]}) ${make} ${car["model"]} (${car["modelYear"]})\n`;
 							}
 
 							let cardThing = require(`./cars/${carFile}`);
@@ -493,7 +498,7 @@ module.exports = {
 								.setColor("#03fc24")
 								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 								.setTitle(`Successfully added a car to the ${offer.name} offer!`)
-								.addField("Current Cars", carList)
+								.addField("Current Cars", list)
 								.setImage(cardThing["card"])
 								.setTimestamp();
 							break;

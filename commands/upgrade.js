@@ -8,6 +8,7 @@
 */
 
 const Discord = require("discord.js-light");
+const stringSimilarity = require("string-similarity");
 
 module.exports = {
 	name: "upgrade",
@@ -104,13 +105,15 @@ module.exports = {
 			selectUpgrade(searchResults[0], upgrade);
 		}
 		else {
+			let matches = stringSimilarity.findBestMatch(carName.join(" "), garage.map(i => i.carFile.slice(0, -5)));
 			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 			const errorMessage = new Discord.MessageEmbed()
 				.setColor("#fc0303")
 				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 				.setTitle("Error, it looks like you don't have a car that is compatible with your tune request.")
 				.setDescription("Check if you got the order right: `cd-upgrade <car name goes here> | <upgrade pattern>`")
-				.addField("Keywords Received", `\`${carName.join(" ")}\``)
+				.addField("Keywords Received", `\`${carName.join(" ")}\``, true)
+				.addField("You may be looking for", `\`${matches.bestMatch.target}\``, true)
 				.setTimestamp();
 			return message.channel.send(errorMessage);
 		}

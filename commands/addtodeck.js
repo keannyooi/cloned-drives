@@ -8,13 +8,14 @@
 */
 
 const Discord = require("discord.js-light");
+const stringSimilarity = require("string-similarity");
 
 module.exports = {
     name: "addtodeck",
     usage: "<deck name goes here> | <index> | <car name goes here>",
     args: 3,
 	isExternal: true,
-    adminOnly: true,
+    adminOnly: false,
     description: 'Adds (or replaces) a car to a specified slot in a specifed deck. (NOTE: Deck names cannot contain spaces, use underscores "_" instead)',
     async execute(message, args) {
         const db = message.client.db;
@@ -142,11 +143,12 @@ module.exports = {
                     .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                     .setTitle("Multiple cars found, please type one of the following.")
                     .setDescription(carList);
+                let currentMessage2;
                 if (currentMessage) {
-                    currentMessage.edit(infoScreen);
+                    currentMessage2 = await currentMessage.edit(infoScreen);
                 }
                 else {
-                    message.channel.send(infoScreen);
+                    currentMessage2 = await message.channel.send(infoScreen);
                 }
                 await message.channel.awaitMessages(filter, {
                     max: 1,
@@ -164,10 +166,10 @@ module.exports = {
                                 .setDescription("It looks like your response was either not a number or not part of the selection.")
 								.addField("Number Received", `\`${collected.first().content}\` (either not a number, smaller than 1 or bigger than ${searchResults.length})`)
                                 .setTimestamp();
-                            return currentMessage.edit(errorMessage);
+                            return currentMessage2.edit(errorMessage);
                         }
                         else {
-                            selectUpgrade(searchResults[parseInt(collected.first()) - 1], currentDeck, currentMessage);
+                            selectUpgrade(searchResults[parseInt(collected.first()) - 1], currentDeck, currentMessage2);
                         }
                     })
                     .catch(() => {
@@ -177,7 +179,7 @@ module.exports = {
                             .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                             .setTitle("Action cancelled automatically.")
                             .setTimestamp();
-                        return currentMessage.edit(cancelMessage);
+                        return currentMessage2.edit(cancelMessage);
                     })
             }
             else if (searchResults.length > 0) {
@@ -189,13 +191,15 @@ module.exports = {
                 }
             }
             else {
+                let matches = stringSimilarity.findBestMatch(carName.join(" "), garage.map(i => i.carFile.slice(0, -5)));
 				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                 const errorMessage = new Discord.MessageEmbed()
                     .setColor("#fc0303")
                     .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                     .setTitle("Error, car requested not found.")
-                    .setDescription("Well that sucks. Perhaps you already have this car inside this deck?")
-					.addField("Keywords Received", `\`${carName.join(" ")}\``)
+                    .setDescription("Perhaps you already have this car inside the specified deck?")
+					.addField("Keywords Received", `\`${carName.join(" ")}\``, true)
+                    .addField("You may be looking for", `\`${matches.bestMatch.target}\``, true)
                     .setTimestamp();
                 if (currentMessage) {
                     return currentMessage.edit(errorMessage);

@@ -95,30 +95,38 @@ client.once("ready", async () => {
 			console.log(user.id);
 		}
 
-		// const garage = await client.db.get(`acc${user.id}.garage`);
-		// var i = 0;
-		// while (i < garage.length) {
-		//  	if (garage[i].carFile === "mazda 3 mps (2010).json") {
-		//  		garage[i].carFile = "mazda 3 mps (2009).json";
-		// 		console.log("done");
-		//  	}
-		//  	i++;
-		// }
-		// await client.db.set(`acc${user.id}.garage`, garage);
+		const garage = await client.db.get(`acc${user.id}.garage`);
+		var i = 0;
+		while (i < garage.length) {
+		 	if (garage[i].carFile === "volkswagen touareg v6 tsi hybrid (20011).json") {
+		 		garage[i].carFile = "volkswagen touareg v6 tsi hybrid (2011).json";
+				console.log("done");
+		 	}
+		 	i++;
+		}
+		await client.db.set(`acc${user.id}.garage`, garage);
 	});
 	//await client.db.set("limitedOffers", []);
 
 
-	//const catalog = await client.db.get("dealershipCatalog");
-	//console.log(catalog);
-	//var i = 0;
-	//while (i < catalog.length) {
-	// 	if (catalog[i].carFile === "lexus is300 (2003)") {
-	// 		catalog[i].carFile = "lexus is 300 (2003)";
-	// 	}
-	// 	i++;
-	//}
-	//await client.db.set("dealershipCatalog", catalog);
+	// const catalog = await client.db.get("dealershipCatalog");
+	// console.log(catalog);
+	// var i = 0;
+	// while (i < catalog.length) {
+	//  	if (catalog[i].carFile === "lexus is300 (2003)") {
+	//  		catalog[i].carFile = "lexus is 300 (2003)";
+	//  	}
+	//  	i++;
+	// }
+	// await client.db.set("dealershipCatalog", catalog);
+
+	const challenge = await client.db.get("challenge");
+	var i = 0;
+	while (i < challenge.roster.length) {
+		challenge.roster[i].rqLimit = "None";
+	 	i++;
+	}
+	await client.db.set("challenge", challenge);
 
 	client.user.setActivity("over everyone's garages", { type: "WATCHING" });
 });

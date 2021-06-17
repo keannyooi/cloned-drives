@@ -8,6 +8,7 @@
 */
 
 const Discord = require("discord.js-light");
+const stringSimilarity = require("string-similarity");
 
 module.exports = {
     name: "fuse",
@@ -138,15 +139,16 @@ module.exports = {
             let find = garage.filter(g => {
                 return carName.every(part => g.carFile.includes(part));
             })
-            console.log(find);
             if (find.length === 0) {
+                let matches = stringSimilarity.findBestMatch(carName.join(" "), garage.map(i => i.carFile.slice(0, -5)));
                 message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                 const errorMessage = new Discord.MessageEmbed()
                     .setColor("#fc0303")
                     .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                     .setTitle("Error, it looks like you don't have this car.")
                     .setDescription("Well that's sad.")
-                    .addField("Keywords Received", `\`${carName.join(" ")}\``)
+                    .addField("Keywords Received", `\`${carName.join(" ")}\``, true)
+                    .addField("You may be looking for", `\`${matches.bestMatch.target}\``, true)
                     .setTimestamp();
                 return message.channel.send(errorMessage);
             }
@@ -155,7 +157,7 @@ module.exports = {
                 let errorMessage = new Discord.MessageEmbed()
                     .setColor("#fc0303")
                     .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                    .setTitle("Error, it looks like you either don't have this car, or you are unable to fuse it.")
+                    .setTitle("Error, it looks like you are unable to fuse this car.")
                     .setDescription("Note: You can't fuse maxed cars and prize cars.")
                     .addField("Keywords Received", `\`${carName.join(" ")}\``)
                     .setTimestamp();

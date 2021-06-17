@@ -12,6 +12,7 @@ const fs = require("fs");
 const carFiles = fs.readdirSync("./commands/cars").filter(file => file.endsWith(".json"));
 const tracksets = fs.readdirSync("./commands/tracksets").filter(file => file.endsWith(".json"));
 const packFiles = fs.readdirSync("./commands/packs").filter(file => file.endsWith(".json"));
+const stringSimilarity = require("string-similarity");
 const { DateTime } = require("luxon");
 
 module.exports = {
@@ -27,8 +28,8 @@ module.exports = {
 		let infoScreen;
 		let keyword = args[0].toLowerCase();
 		const filter = response => {
-            return response.author.id === message.author.id;
-        };
+			return response.author.id === message.author.id;
+		};
 
 		if (!message.member.roles.cache.has("802043346951340064")) {
 			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
@@ -346,7 +347,7 @@ module.exports = {
 
 					let carName = args.slice(3, args.length).map(i => i.toLowerCase());
 					let searchResults = new Set(carFiles);
-					searchResults.forEach(function(car) {
+					searchResults.forEach(function (car) {
 						if (carName.every(part => car.includes(part)) === false) {
 							searchResults.delete(car);
 						}
@@ -356,7 +357,7 @@ module.exports = {
 						let carList = "";
 						let redirect = [];
 						let i = 1;
-						searchResults.forEach(function(thing) {
+						searchResults.forEach(function (thing) {
 							const car = require(`./cars/${thing}`);
 							let make = car["make"];
 							if (typeof make === "object") {
@@ -430,13 +431,15 @@ module.exports = {
 						currentEvent.roster[index - 1].car = Array.from(searchResults)[0];
 					}
 					else {
+						let matches = stringSimilarity.findBestMatch(carName.join(" "), carFiles.map(i => i.slice(0, -5)));
 						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 						const errorMessage = new Discord.MessageEmbed()
 							.setColor("#fc0303")
 							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 							.setTitle("Error, car requested not found.")
 							.setDescription("Well that sucks.")
-							.addField("Keywords Received", `\`${carName.join(" ")}\``)
+							.addField("Keywords Received", `\`${carName.join(" ")}\``, true)
+							.addField("You may be looking for", `\`${matches.bestMatch.target}\``, true)
 							.setTimestamp();
 						return message.channel.send(errorMessage);
 					}
@@ -533,7 +536,7 @@ module.exports = {
 						case "tyreType":
 						case "search":
 							let argument = args.slice(4, args.length).join(" ").toLowerCase();
-							let reqSearchResults = carFiles.filter(function(carFile) {
+							let reqSearchResults = carFiles.filter(function (carFile) {
 								let currentCar = require(`./cars/${carFile}`);
 								if (Array.isArray(currentCar[req])) {
 									return currentCar[req.replace("C", "c")].some(tag => tag.toLowerCase() === argument);
@@ -637,7 +640,7 @@ module.exports = {
 						case "fuelType":
 						case "gc":
 							let arg = args[4].toLowerCase();
-							let reqSearchResults2 = carFiles.filter(function(carFile) {
+							let reqSearchResults2 = carFiles.filter(function (carFile) {
 								let currentCar = require(`./cars/${carFile}`);
 								if (Array.isArray(currentCar[req])) {
 									return currentCar[req].some(tag => tag.toLowerCase() === arg);
@@ -709,7 +712,7 @@ module.exports = {
 						case "car":
 							let carName = args.slice(4, args.length).map(i => i.toLowerCase());
 							let searchResults = new Set(carFiles);
-							searchResults.forEach(function(car) {
+							searchResults.forEach(function (car) {
 								if (carName.every(part => car.includes(part)) === false) {
 									searchResults.delete(car);
 								}
@@ -719,7 +722,7 @@ module.exports = {
 								let carList = "";
 								let redirect = [];
 								let i = 1;
-								searchResults.forEach(function(thing) {
+								searchResults.forEach(function (thing) {
 									const car = require(`./cars/${thing}`);
 									let make = car["make"];
 									if (typeof make === "object") {
@@ -791,17 +794,19 @@ module.exports = {
 								currentEvent.roster[index - 1].requirements[req] = Array.from(searchResults)[0];
 							}
 							else {
+								let matches = stringSimilarity.findBestMatch(carName.join(" "), carFiles.map(i => i.slice(0, -5)));
 								message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 								const errorMessage = new Discord.MessageEmbed()
 									.setColor("#fc0303")
 									.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 									.setTitle("Error, car requested not found.")
 									.setDescription("Well that sucks.")
-									.addField("Keywords Received", `\`${carName.join(" ")}\``)
+									.addField("Keywords Received", `\`${carName.join(" ")}\``, true)
+									.addField("You may be looking for", `\`${matches.bestMatch.target}\``, true)
 									.setTimestamp();
 								return message.channel.send(errorMessage);
 							}
-							
+
 							let cardThing = require(`./cars/${currentEvent.roster[index - 1].requirements[req]}`);
 							let make = cardThing["make"];
 							if (typeof make === "object") {
@@ -992,13 +997,15 @@ module.exports = {
 						currentEvent.roster[index - 1].trackset = tSearchResults[0];
 					}
 					else {
+						let matches = stringSimilarity.findBestMatch(trackName.join(" "), tracksets.map(i => i.slice(0, -5)));
 						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 						const errorMessage = new Discord.MessageEmbed()
 							.setColor("#fc0303")
 							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 							.setTitle("Error, track requested not found.")
 							.setDescription("Well that sucks.")
-							.addField("Keywords Received", `\`${trackName.join(" ")}\``)
+							.addField("Keywords Received", `\`${trackName.join(" ")}\``, true)
+							.addField("You may be looking for", `\`${matches.bestMatch.target}\``, true)
 							.setTimestamp();
 						return message.channel.send(errorMessage);
 					}
@@ -1012,7 +1019,7 @@ module.exports = {
 						.setTimestamp();
 					break;
 				case "setreward":
-					if (!args[2]|| !args[3]) {
+					if (!args[2] || !args[3]) {
 						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 						let errorMessage = new Discord.MessageEmbed()
 							.setColor("#fc0303")
@@ -1045,7 +1052,7 @@ module.exports = {
 									.setTimestamp();
 								return message.channel.send(errorMessage);
 							}
-							
+
 							let emoji;
 							if (rewardType === "money") {
 								emoji = message.client.emojis.cache.get("726017235826770021");
@@ -1085,7 +1092,7 @@ module.exports = {
 							let carFile;
 							let carName = args.slice(4, args.length).map(i => i.toLowerCase());
 							let searchResults1 = new Set(carFiles);
-							searchResults1.forEach(function(car) {
+							searchResults1.forEach(function (car) {
 								if (carName.every(part => car.includes(part)) === false) {
 									searchResults1.delete(car);
 								}
@@ -1095,7 +1102,7 @@ module.exports = {
 								let carList = "";
 								let redirect = [];
 								let i = 1;
-								searchResults1.forEach(function(thing) {
+								searchResults1.forEach(function (thing) {
 									const car = require(`./cars/${thing}`);
 									let make = car["make"];
 									if (typeof make === "object") {
@@ -1167,13 +1174,15 @@ module.exports = {
 								carFile = Array.from(searchResults1)[0];
 							}
 							else {
+								let matches = stringSimilarity.findBestMatch(carName.join(" "), carFiles.map(i => i.slice(0, -5)));
 								message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 								const errorMessage = new Discord.MessageEmbed()
 									.setColor("#fc0303")
 									.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 									.setTitle("Error, car requested not found.")
 									.setDescription("Well that sucks.")
-									.addField("Keywords Received", `\`${carName.join(" ")}\``)
+									.addField("Keywords Received", `\`${carName.join(" ")}\``, true)
+									.addField("You may be looking for", `\`${matches.bestMatch.target}\``, true)
 									.setTimestamp();
 								return message.channel.send(errorMessage);
 							}
@@ -1261,13 +1270,15 @@ module.exports = {
 								packFile = searchResults[0];
 							}
 							else {
+								let matches = stringSimilarity.findBestMatch(packName.join(" "), packFiles.map(i => i.slice(0, -5)));
 								message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 								const errorMessage = new Discord.MessageEmbed()
 									.setColor("#fc0303")
 									.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 									.setTitle("Error, pack requested not found.")
 									.setDescription("Well that sucks.")
-									.addField("Keywords Received", `\`${packName.join(" ")}\``)
+									.addField("Keywords Received", `\`${packName.join(" ")}\``, true)
+									.addField("You may be looking for", `\`${matches.bestMatch.target}\``, true)
 									.setTimestamp();
 								return message.channel.send(errorMessage);
 							}
@@ -1304,7 +1315,7 @@ module.exports = {
 					}
 					break;
 				case "regentracks":
-					if (!args[2])  {
+					if (!args[2]) {
 						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 						let errorMessage = new Discord.MessageEmbed()
 							.setColor("#fc0303")
@@ -1314,7 +1325,7 @@ module.exports = {
 							.setTimestamp();
 						return message.channel.send(errorMessage);
 					}
-					
+
 					let randomizeType = args[2].toLowerCase(), f;
 					switch (randomizeType) {
 						case "asphalt":

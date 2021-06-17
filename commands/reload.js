@@ -8,6 +8,8 @@
 */
 
 const Discord = require("discord.js-light");
+const fs = require("fs");
+const stringSimilarity = require("string-similarity");
 
 module.exports = {
     name: "reload",
@@ -23,13 +25,16 @@ module.exports = {
             || message.client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
 
         if (!command) {
+            let commandFiles = fs.readdirSync("./commands").filter(file => file.endsWith(".js"));
+            let matches = stringSimilarity.findBestMatch(commandName, commandFiles.map(i => i.slice(0, -3)));
 			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             const errorScreen = new Discord.MessageEmbed()
                 .setColor("#fc0303")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                 .setTitle("Error, 404 command not found.")
                 .setDescription("It looks like this command doesn't exist. Try using `cd-help` to find the command you are looking for.")
-				.addField("Keywords Received", `\`${commandName}\``)
+				.addField("Keywords Received", `\`${commandName}\``, true)
+                .addField("You may be looking for", `\`${matches.bestMatch.target}\``, true)
                 .setTimestamp();
             return message.channel.send(errorScreen);
         }

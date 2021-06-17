@@ -163,6 +163,29 @@ module.exports = {
 				}
 			}
 
+			let totalRQ = 0;
+			for (let car of deck.hand) {
+				let test = require(`./cars/${car}`);
+				totalRQ += test["rq"];
+			}
+			if (challenge.roster[challenge.players[`acc${message.author.id}`] || 0].rqLimit < totalRQ) {
+				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+				const errorMessage = new Discord.MessageEmbed()
+					.setColor("#fc0303")
+					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+					.setTitle("Error, total RQ of selected deck has exceeded the RQ limit.")
+					.setDescription("Try swapping to some lower-RQ cars.")
+					.addField(`RQ Limit of Round ${(challenge.players[`acc${message.author.id}`] || 0) + 1}`, challenge.roster[challenge.players[`acc${message.author.id}`] || 0].rqLimit, true)
+					.addField(`Total RQ of Selected Deck (${deck.name})`, totalRQ, true)
+					.setTimestamp();
+				if (currentMessage && message.channel.type === "text") {
+					return currentMessage.edit(errorMessage);
+				}
+				else {
+					return message.channel.send(errorMessage);
+				}
+			}
+
 			let checkArray = [];
 			for (let i = 0; i < challenge.roster[challenge.players[`acc${message.author.id}`] || 0].requirements.length; i++) {
 				let [key] = Object.entries(challenge.roster[challenge.players[`acc${message.author.id}`] || 0].requirements[i]);
@@ -172,6 +195,7 @@ module.exports = {
 				for (let car of deck.hand) {
 					let passed = true;
 					let test = require(`./cars/${car}`);
+					
 					switch (typeof key[1]) {
 						case "object":
 							if (test[`${key[0]}`] < key[1].start || test[`${key[0]}`] > key[1].end) {

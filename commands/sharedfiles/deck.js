@@ -88,7 +88,6 @@ module.exports = {
                 errors: ["time"]
         })
 			.then(async collected => {
-				console.log("work");
 				let indexes = collected.first().content.split(" ");
 				if (message.channel.type === "text") {
 					collected.first().delete();
@@ -101,6 +100,7 @@ module.exports = {
 						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 						.setTitle("Error, indexes provided incomplete.")
 						.setDescription("Where should the other cards go?")
+						.addField("Indexes Received", `\`${indexes}\` (less than 5 indexes detected)`)
 						.setTimestamp();
 					return message.channel.send(errorMessage);
 				}
@@ -110,8 +110,9 @@ module.exports = {
 					const errorMessage = new Discord.MessageEmbed()
 						.setColor("#fc0303")
 						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-						.setTitle("Error, indexes provided either not a number or not within the range.")
+						.setTitle("Error, indexes provided invalid.")
 						.setDescription("All indexes provided must be a number between `1 ~ 5`.")
+						.addField("Indexes Received", `\`${indexes}\` (at least 1 index either not a number or not within the range of 1 and 5)`)
 						.setTimestamp();
 					return message.channel.send(errorMessage);
 				}
@@ -123,12 +124,12 @@ module.exports = {
 						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 						.setTitle("Error, duplicate index values detected.")
 						.setDescription("You may not assign 2 cards into the same spot.")
+						.addField("Indexes Received", `\`${indexes}\` (at least 2 indexes found to be the same)`)
 						.setTimestamp();
 					return message.channel.send(errorMessage);
 				}
 
 				for (let i = 0; i < 5; i++) {
-					//console.log(`Round ${i+1}`);
 					let player = createCar({
 						carFile: deck["hand"][parseInt(indexes[i] - 1)],
 						gearingUpgrade: parseInt(deck["tunes"][parseInt(indexes[i] - 1)][0]),

@@ -337,7 +337,7 @@ module.exports = {
 						}
 					}
 					else {
-						if (sort === "0to60" || sort === "weight") {
+						if (sort === "0to60" || sort === "weight" || sort === "ola") {
 							if (critA < critB) {
 								return -1;
 							}

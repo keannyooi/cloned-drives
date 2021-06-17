@@ -125,13 +125,15 @@ module.exports = {
             chooseOpponent();
         }
         else {
+            let matches = stringSimilarity.findBestMatch(trackset.join(" "), tracksets.map(i => i.slice(0, -5)));
 			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             const errorMessage = new Discord.MessageEmbed()
                 .setColor("#fc0303")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                 .setTitle("Error, track requested not found.")
                 .setDescription("Well that sucks.")
-				.addField("Keywords Received", `\`${trackName.join(" ")}\``)
+				.addField("Keywords Received", `\`${trackset.join(" ")}\`, true`)
+                .addField("You may be looking for", `\`${matches.bestMatch.target}\``, true)
                 .setTimestamp();
             return message.channel.send(errorMessage);
         }
@@ -218,7 +220,7 @@ module.exports = {
                         message.channel.awaitMessages(filter, {
                             max: 1,
                             time: waitTime,
-                            errors: ['time']
+                            errors: ["time"]
                         })
                             .then(collected => {
 								if (message.channel.type === "text") {
@@ -263,13 +265,15 @@ module.exports = {
                         upgrade(searchResults[0], currentMessage2);
                     }
                     else {
+                        let matches = stringSimilarity.findBestMatch(carName.join(" "), carFiles.map(i => i.slice(0, -5)));
 						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                         const errorMessage = new Discord.MessageEmbed()
                             .setColor("#fc0303")
                             .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                             .setTitle("Error, car requested not found.")
                             .setDescription("Well that sucks. Try going against another car!")
-							.addField("Keywords Received", `\`${carName.join(" ")}\``)
+							.addField("Keywords Received", `\`${carName.join(" ")}\``, true)
+					        .addField("You may be looking for", `\`${matches.bestMatch.target}\``, true)
                             .setTimestamp();
                         if (message.channel.type === "text") {
 							return currentMessage2.edit(errorMessage);

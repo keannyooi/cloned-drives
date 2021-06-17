@@ -8,6 +8,7 @@
 */
 
 const Discord = require("discord.js-light");
+const stringSimilarity = require("string-similarity");
 
 module.exports = {
     name: "sethand",
@@ -27,8 +28,8 @@ module.exports = {
 
 		if (args[0].toLowerCase() === "random") {
 			let randomCar = garage[Math.floor(Math.random() * garage.length)];
-			let randomTune = Object.keys(randomCar).filter(h => randomCar[h] > 0);
-			setHand(randomCar, randomTune);
+			let randomTune = Object.keys(randomCar).filter(h => !isNaN(randomCar[h]) && randomCar[h] > 0);
+			setHand(randomCar, randomTune[Math.floor(Math.random() * randomTune.length)]);
 		}
 		else {
 			let carName, tune;
@@ -136,20 +137,21 @@ module.exports = {
 				}
 			}
 			else {
-				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
+				let matches = stringSimilarity.findBestMatch(carName.join(" "), garage.map(i => i.carFile.slice(0, -5)));
+				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 				const errorMessage = new Discord.MessageEmbed()
 					.setColor("#fc0303")
 					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-					.setTitle("Error, 404 car not found.")
-					.setDescription("It looks like you don't own this car.")
-					.addField("Keywords Received", `\`${carName.join(" ")}\``)
+					.setTitle("Error, car requested not found.")
+					.setDescription("It looks like you don't own that car.")
+					.addField("Keywords Received", `\`${carName.join(" ")}\``, true)
+					.addField("You may be looking for", `\`${matches.bestMatch.target}\``, true)
 					.setTimestamp();
 				return message.channel.send(errorMessage);
 			}
 		}
 
 		function throwError(currentCar, currentMessage) {
-			console.log(currentCar);
 			let count = Object.keys(currentCar).filter(m => !isNaN(currentCar[`${m}`]) && currentCar[`${m}`] >= 1);
 			let upgradeList = "";
 			for (i = 0; i < count.length; i++) {

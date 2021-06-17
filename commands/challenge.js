@@ -12,13 +12,13 @@ const Canvas = require("canvas");
 const { DateTime, Interval } = require("luxon");
 
 module.exports = {
-    name: "challenge",
-    usage: "(optional) <round>",
-    args: 0,
+	name: "challenge",
+	usage: "(optional) <round>",
+	args: 0,
 	isExternal: true,
-    adminOnly: false,
-    description: "Views the current ongoing challenge.",
-    async execute(message, args) {
+	adminOnly: false,
+	description: "Views the current ongoing challenge.",
+	async execute(message, args) {
 		const db = message.client.db;
 		const challenge = await db.get("challenge");
 		const filter = (reaction, user) => {
@@ -78,8 +78,15 @@ module.exports = {
 					{ name: "Rewards", value: lists.rewardString, inline: true }
 				)
 				.setTimestamp();
+			if (message.channel.type === "text") {
+				infoScreen.setFooter(`React with ⬅️ or ➡️ to navigate through pages.`);
+			}
+			else {
+				infoScreen.setFooter(`Arrow navigation is disabled in DMs, please use cd-challenge <round number> to view a different round.`);
+			}
+
 			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-			let clMessage = await message.channel.send(infoScreen);;
+			let clMessage = await message.channel.send(infoScreen);
 
 			if (message.channel.type === "text") {
 				switch (reactionIndex) {
@@ -120,7 +127,7 @@ module.exports = {
 					}
 					else if (challenge.isActive === false || challenge.timeLeft === "unlimited") {
 						intervalString = "unlimited";
-						}
+					}
 					else {
 						intervalString = "currently ending, no longer playable";
 					}
@@ -252,7 +259,7 @@ module.exports = {
 								default:
 									break;
 							}
-							
+
 							reqString += `\`${challenge.roster[displayRound].requirements[i].amount}x ${challenge.roster[displayRound].requirements[i][key]}${suffix}\`, `;
 						}
 						break;
@@ -261,21 +268,29 @@ module.exports = {
 				}
 			}
 			if (reqString === "") {
-				reqString = "Open Match";
+				if (challenge.roster[displayRound].rqLimit === "None") {
+					reqString = "Open Match";
+				}
+				else {
+					reqString = `**RQ Limit:** ${challenge.roster[displayRound].rqLimit}`;
+				}
 			}
 			else {
 				reqString = reqString.slice(0, -2);
+				if (challenge.roster[displayRound].rqLimit !== "None") {
+					reqString += `\n**RQ Limit:** ${challenge.roster[displayRound].rqLimit}`;
+				}
 			}
 
 			for (let [key, value] of Object.entries(challenge.roster[displayRound].rewards)) {
 				switch (key) {
 					case "money":
-						emoji = message.client.emojis.cache.get("726017235826770021"); 
+						emoji = message.client.emojis.cache.get("726017235826770021");
 						rewardString = `${emoji}${value}`;
 						break;
 					case "fuseTokens":
 						emoji = message.client.emojis.cache.get("726018658635218955");
-						rewardString = `${emoji}${value}`; 
+						rewardString = `${emoji}${value}`;
 						break;
 					case "car":
 						let car = require(`./cars/${challenge.roster[displayRound].rewards.car}`);
@@ -295,7 +310,7 @@ module.exports = {
 				}
 			}
 			if (challenge.roster[displayRound].rewards.trophies) {
-				emoji = message.client.emojis.cache.get("775636479145148418"); 
+				emoji = message.client.emojis.cache.get("775636479145148418");
 				if (rewardString === "") {
 					rewardString = `${emoji}${challenge.roster[displayRound].rewards.trophies}`;
 				}
@@ -310,60 +325,28 @@ module.exports = {
 			return { handString: handString, trackString: trackString, reqString: reqString, rewardString: rewardString };
 		}
 
-        function eventDisplay(events) {
-            if (events.length > 0) {
-				let eventList = "";
-				for (let event of events) {
-					if (event.isActive && event.timeLeft !== "unlimited") {
-						let interval = Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(event.deadline));
-						if (interval.invalid === null) {
-							let days = Math.floor(interval.length("days"));
-							let hours = Math.floor(interval.length("hours") - (days * 24));
-							let minutes = Math.floor(interval.length("minutes") - (days * 1440) - (hours * 60));
-							let seconds = Math.floor(interval.length("seconds") - (days * 86400) - (hours * 3600) - (minutes * 60));
-							let intervalString = `${days}d ${hours}h ${minutes}m ${seconds}s`
-							eventList += `${event.name} \`${intervalString} remaining\`\n`;
-						}
-						else {
-							eventList += `${event.name} \`currently ending, no longer playable\`\n`;
-						}
-					}
-					else if (event.isActive) {
-						eventList += `${event.name} \`unlimited time remaining\`\n`;
-					}
-					else {
-						eventList += `${event.name}\n`;
-					}
-				}
-				return eventList;
-			}
-			else {
-				return "There are currently no events under this category.\n";
-			}
-        }
-
 		function rarityCheck(currentCar) {
-            if (currentCar["rq"] > 79) { //leggie
-                return message.client.emojis.cache.get("726025494138454097");
-            }
-            else if (currentCar["rq"] > 64 && currentCar["rq"] <= 79) { //epic
-                return message.client.emojis.cache.get("726025468230238268");
-            }
-            else if (currentCar["rq"] > 49 && currentCar["rq"] <= 64) { //ultra
-                return message.client.emojis.cache.get("726025431937187850");
-            }
-            else if (currentCar["rq"] > 39 && currentCar["rq"] <= 49) { //super
-                return message.client.emojis.cache.get("726025394104434759");
-            }
-            else if (currentCar["rq"] > 29 && currentCar["rq"] <= 39) { //rare
-                return message.client.emojis.cache.get("726025302656024586");
-            }
-            else if (currentCar["rq"] > 19 && currentCar["rq"] <= 29) { //uncommon
-                return message.client.emojis.cache.get("726025273421725756");
-            }
-            else { //common
-                return message.client.emojis.cache.get("726020544264273928");
-            }
-        }
-    }
+			if (currentCar["rq"] > 79) { //leggie
+				return message.client.emojis.cache.get("726025494138454097");
+			}
+			else if (currentCar["rq"] > 64 && currentCar["rq"] <= 79) { //epic
+				return message.client.emojis.cache.get("726025468230238268");
+			}
+			else if (currentCar["rq"] > 49 && currentCar["rq"] <= 64) { //ultra
+				return message.client.emojis.cache.get("726025431937187850");
+			}
+			else if (currentCar["rq"] > 39 && currentCar["rq"] <= 49) { //super
+				return message.client.emojis.cache.get("726025394104434759");
+			}
+			else if (currentCar["rq"] > 29 && currentCar["rq"] <= 39) { //rare
+				return message.client.emojis.cache.get("726025302656024586");
+			}
+			else if (currentCar["rq"] > 19 && currentCar["rq"] <= 29) { //uncommon
+				return message.client.emojis.cache.get("726025273421725756");
+			}
+			else { //common
+				return message.client.emojis.cache.get("726020544264273928");
+			}
+		}
+	}
 }

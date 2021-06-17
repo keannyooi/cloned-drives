@@ -12,6 +12,7 @@ const fs = require("fs");
 const carFiles = fs.readdirSync("./commands/cars").filter(file => file.endsWith(".json"));
 const tracksets = fs.readdirSync("./commands/tracksets").filter(file => file.endsWith(".json"));
 const packFiles = fs.readdirSync("./commands/packs").filter(file => file.endsWith(".json"));
+const stringSimilarity = require("string-similarity");
 const { DateTime } = require("luxon");
 
 module.exports = {
@@ -358,13 +359,15 @@ module.exports = {
 					challenge.roster[rosterIndex - 1].hand[deckPos - 1] = Array.from(searchResults)[0];
 				}
 				else {
+					let matches = stringSimilarity.findBestMatch(carName.join(" "), carFiles.map(i => i.slice(0, -5)));
 					message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 					const errorMessage = new Discord.MessageEmbed()
 						.setColor("#fc0303")
 						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 						.setTitle("Error, car requested not found.")
 						.setDescription("Well that sucks.")
-						.addField("Keywords Received", `\`${carName.join(" ")}\``)
+						.addField("Keywords Received", `\`${carName.join(" ")}\``, true)
+						.addField("You may be looking for", `\`${matches.bestMatch.target}\``, true)
 						.setTimestamp();
 					return message.channel.send(errorMessage);
 				}
@@ -455,7 +458,7 @@ module.exports = {
 					.setTimestamp();
 				break;
 			case "addreq":
-				if (!args[1] || !args[2] || !args[3] || !args[4]) {
+				if (!args[1] || !args[2] || !args[3] || (args[2].toLowerCase() !== "rqlimit" && !args[4])) {
 					message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 					const errorScreen = new Discord.MessageEmbed()
 						.setColor("#fc0303")
@@ -476,7 +479,8 @@ module.exports = {
 						\`isprize\` - Filter prize cars.  Provide a boolean (\`true\` or \`false\`) after that.
 						\`tag\` - Filter by tag. Provide a tag after that.
 						\`car\` - Filter by exact car. Provide the name of a car after that.
-						\`search\` - Filter by keyword in car name. Provide a keyword that is found in a in-game car's name after that.`)
+						\`search\` - Filter by keyword in car name. Provide a keyword that is found in a in-game car's name after that.
+						\`rqlimit\` - Edits the RQ limit of a round.`)
 						.setTimestamp();
 					return message.channel.send(errorScreen);
 				}
@@ -511,17 +515,19 @@ module.exports = {
 				}
 
 				let req = args[2].toLowerCase().replace("type", "Type").replace("style", "Style").replace("count", "Count").replace("year", "Year").replace("pos", "Pos").replace("prize", "Prize").replace("stock", "Stock").replace("upgrade", "Upgrade").replace("max", "Max");
-				let reqAmount = parseInt(args[args.length - 1]);
-				if (reqAmount < 1 || reqAmount > 5) {
-					message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-					const errorMessage = new Discord.MessageEmbed()
-						.setColor("#fc0303")
-						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-						.setTitle("Error, required amount provided is invalid.")
-						.setDescription("This value should be a number between 1 and 5.")
-						.addField("Amount Provided", `\`${reqAmount}\` (either not a number or not within the range of 1 ~ 5)`)
-						.setTimestamp();
-					return message.channel.send(errorMessage);
+				if (req !== "rqlimit") {
+					let reqAmount = parseInt(args[args.length - 1]);
+					if (reqAmount < 1 || reqAmount > 5) {
+						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+						const errorMessage = new Discord.MessageEmbed()
+							.setColor("#fc0303")
+							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+							.setTitle("Error, required amount provided is invalid.")
+							.setDescription("This value should be a number between 1 and 5.")
+							.addField("Amount Provided", `\`${reqAmount}\` (either not a number or not within the range of 1 ~ 5)`)
+							.setTimestamp();
+						return message.channel.send(errorMessage);
+					}
 				}
 
 				switch (req) {
@@ -595,6 +601,7 @@ module.exports = {
 						}
 
 						if (isNaN(start) || isNaN(end)) {
+							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 							let errorMessage = new Discord.MessageEmbed()
 								.setColor("#fc0303")
 								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -844,13 +851,15 @@ module.exports = {
 							}
 						}
 						else {
+							let matches = stringSimilarity.findBestMatch(carName.join(" "), carFiles.map(i => i.slice(0, -5)));
 							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 							const errorMessage = new Discord.MessageEmbed()
 								.setColor("#fc0303")
 								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 								.setTitle("Error, car requested not found.")
 								.setDescription("Well that sucks.")
-								.addField("Keywords Received", `\`${carName.join(" ")}\``)
+								.addField("Keywords Received", `\`${carName.join(" ")}\``, true)
+								.addField("You may be looking for", `\`${matches.bestMatch.target}\``, true)
 								.setTimestamp();
 							return message.channel.send(errorMessage);
 						}
@@ -866,6 +875,26 @@ module.exports = {
 							.setTitle(`Successfully added a \`${req}\` criteria to roster position ${rosterIndex2}!`)
 							.setDescription(`${make} ${cardThing["model"]} (${cardThing["modelYear"]})`)
 							.setImage(cardThing["card"])
+							.setTimestamp();
+						break;
+					case "rqlimit":
+						if (isNaN(args[3])) {
+							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+							let errorMessage = new Discord.MessageEmbed()
+								.setColor("#fc0303")
+								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+								.setTitle("Error, RQ provided is not a number.")
+								.setDescription("RQ limits should be a number.")
+								.addField("Argument Received", `\`${args[3]}\``)
+								.setTimestamp();
+							return message.channel.send(errorMessage);
+						}
+
+						challenge.roster[rosterIndex2 - 1].rqLimit = parseInt(args[3]);
+						infoScreen = new Discord.MessageEmbed()
+							.setColor("#03fc24")
+							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+							.setTitle(`Successfully set the RQ limit of round ${rosterIndex2} to ${args[3]}!`)
 							.setTimestamp();
 						break;
 					default:
@@ -889,13 +918,14 @@ module.exports = {
 							\`isprize\` - Filter prize cars.  Provide a boolean (\`true\` or \`false\`) after that.
 							\`tag\` - Filter by tag. Provide a tag after that.
 							\`car\` - Filter by exact car. Provide the name of a car after that.
-							\`search\` - Filter by keyword in car name. Provide a keyword that is found in a in-game car's name after that.`)
+							\`search\` - Filter by keyword in car name. Provide a keyword that is found in a in-game car's name after that.
+							\`rqlimit\` - Edits the RQ limit of a round.`)
 							.setTimestamp();
 						return message.channel.send(errorScreen);
 				}
 				break;
 			case "removereq":
-				if (!args[1] || !args[2] || (args[2].toLowerCase() !== "all" && !args[3])) {
+				if (!args[1] || !args[2] || ((args[2].toLowerCase() !== "all" && args[2].toLowerCase() !== "rqlimit") && !args[3])) {
 					message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 					const errorScreen = new Discord.MessageEmbed()
 						.setColor("#fc0303")
@@ -933,7 +963,11 @@ module.exports = {
 				let rReq = args[2].toLowerCase();
 				let rValue = args.slice(3, args.length).join(" ").toLowerCase();
 				let hasReq = false;
-				if (rReq !== "all") {
+				if (rReq === "rqlimit") {
+					hasReq = true;
+					challenge.roster[rosterIndex3 - 1].rqLimit = "None";
+				}
+				else if (rReq !== "all") {
 					for (let i = 0; i < challenge.roster[rosterIndex3 - 1].requirements.length; i++) {
 						let anObj = Object.keys(challenge.roster[rosterIndex3 - 1].requirements[i])[0];
 						if ((anObj.toLowerCase().includes(rReq) && rValue === challenge.roster[rosterIndex3 - 1].requirements[i][anObj]) || rReq === "all") {
@@ -971,6 +1005,7 @@ module.exports = {
 											\`car\` - Filter by exact car.  
 											\`all\` - Removes all requirements.
 											\`search\` - Filter by keyword in car name.
+											\`rqlimit\` - The RQ limit of a round.
 											Do specify the value of the criterias alongside, unless you're removing all requirements.`)
 						.setTimestamp();
 					return message.channel.send(errorScreen);
@@ -983,6 +1018,9 @@ module.exports = {
 						.setTimestamp();
 					if (rReq === "all") {
 						infoScreen.setTitle(`Successfully removed all criterias from roster position ${rosterIndex3}!`)
+					}
+					else if (rReq === "rqlimit") {
+						infoScreen.setTitle(`Successfully removed the RQ limit from roster position ${rosterIndex3}!`)
 					}
 				}
 				break;
@@ -1115,13 +1153,15 @@ module.exports = {
 					challenge.roster[rosterIndex4 - 1].tracksets[deckPos2 - 1] = Array.from(tSearchResults)[0];
 				}
 				else {
+					let matches = stringSimilarity.findBestMatch(trackName.join(" "), tracksets.map(i => i.slice(0, -5)));
 					message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 					const errorMessage = new Discord.MessageEmbed()
 						.setColor("#fc0303")
 						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 						.setTitle("Error, track requested not found.")
 						.setDescription("Well that sucks.")
-						.addField("Keywords Received", `\`${trackName.join(" ")}\``)
+						.addField("Keywords Received", `\`${trackName.join(" ")}\``, true)
+						.addField("You may be looking for", `\`${matches.bestMatch.target}\``, true)
 						.setTimestamp();
 					return message.channel.send(errorMessage);
 				}
@@ -1313,13 +1353,15 @@ module.exports = {
 							carFile = Array.from(searchResults1)[0];
 						}
 						else {
+							let matches = stringSimilarity.findBestMatch(carName.join(" "), carFiles.map(i => i.slice(0, -5)));
 							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 							const errorMessage = new Discord.MessageEmbed()
 								.setColor("#fc0303")
 								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 								.setTitle("Error, car requested not found.")
 								.setDescription("Well that sucks.")
-								.addField("Keywords Received", `\`${carName.join(" ")}\``)
+								.addField("Keywords Received", `\`${carName.join(" ")}\``, true)
+								.addField("You may be looking for", `\`${matches.bestMatch.target}\``, true)
 								.setTimestamp();
 							return message.channel.send(errorMessage);
 						}
@@ -1403,13 +1445,15 @@ module.exports = {
 							packFile = searchResults[0];
 						}
 						else {
+							let matches = stringSimilarity.findBestMatch(packName.join(" "), packFiles.map(i => i.slice(0, -5)));
 							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 							const errorMessage = new Discord.MessageEmbed()
 								.setColor("#fc0303")
 								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 								.setTitle("Error, pack requested not found.")
 								.setDescription("Well that sucks.")
-								.addField("Keywords Received", `\`${packName.join(" ")}\``)
+								.addField("Keywords Received", `\`${packName.join(" ")}\``, true)
+								.addField("You may be looking for", `\`${matches.bestMatch.target}\``, true)
 								.setTimestamp();
 							return message.channel.send(errorMessage);
 						}

@@ -10,6 +10,7 @@
 const Discord = require("discord.js-light");
 const fs = require("fs");
 const carFiles = fs.readdirSync("./commands/cars").filter(file => file.endsWith('.json'));
+const stringSimilarity = require("string-similarity");
 
 module.exports = {
     name: "carinfo",
@@ -102,13 +103,15 @@ module.exports = {
 				displayInfo(searchResults[0]);
 			}
 			else {
+				let matches = stringSimilarity.findBestMatch(carName.join(" "), carFiles.map(i => i.slice(0, -5)));
 				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 				const errorMessage = new Discord.MessageEmbed()
 					.setColor("#fc0303")
 					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 					.setTitle("Error, car requested not found.")
 					.setDescription("Well that sucks.")
-					.addField("Keywords Received", `\`${carName.join(" ")}\``)
+					.addField("Keywords Received", `\`${carName.join(" ")}\``, true)
+					.addField("You may be looking for", `\`${matches.bestMatch.target}\``, true)
 					.setTimestamp();
 				return message.channel.send(errorMessage);
 			}
