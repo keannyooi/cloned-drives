@@ -95,16 +95,16 @@ client.once("ready", async () => {
 			console.log(user.id);
 		}
 
-		const garage = await client.db.get(`acc${user.id}.garage`);
-		var i = 0;
-		while (i < garage.length) {
-		 	if (garage[i].carFile === "volkswagen touareg v6 tsi hybrid (20011).json") {
-		 		garage[i].carFile = "volkswagen touareg v6 tsi hybrid (2011).json";
-				console.log("done");
-		 	}
-		 	i++;
-		}
-		await client.db.set(`acc${user.id}.garage`, garage);
+		// const garage = await client.db.get(`acc${user.id}.garage`);
+		// var i = 0;
+		// while (i < garage.length) {
+		//  	if (garage[i].carFile === "volkswagen touareg v6 tsi hybrid (20011).json") {
+		//  		garage[i].carFile = "volkswagen touareg v6 tsi hybrid (2011).json";
+		// 		console.log("done");
+		//  	}
+		//  	i++;
+		// }
+		// await client.db.set(`acc${user.id}.garage`, garage);
 	});
 	//await client.db.set("limitedOffers", []);
 
