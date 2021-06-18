@@ -1,0 +1,54 @@
+{
+    "rq": 49,
+    "make": "Lotus",
+    "model": "Elise",
+    "modelYear": 1996,
+    "country": "GB",
+    "topSpeed": 126,
+    "0to60": 5.9,
+    "handling": 87,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Royal Collection", "Style Icon"],
+    "isPrize": false,
+
+    "weight": 737,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Roadster",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 48.36,
+    "ola": 71.19,
+    "description": "The birth of the cracked supercar: Cheap, Daily capable and fast enough to keep up with the big boys. Card by Tom.",
+
+    "card": "https://cdn.discordapp.com/attachments/733973415366623274/853609593774669864/Lotus_Elise_1996.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/854311104334397440/Lotus_Elise_1996_111.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/854311110974898196/Lotus_Elise_1996_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/854311115046387712/Lotus_Elise_1996_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/854311134805622794/Lotus_Elise_1996_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/854311126099558400/Lotus_Elise_1996_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/854311119699181588/Lotus_Elise_1996_699.jpg",
+
+    "333TopSpeed": 130,
+    "3330to60": 5.6,
+    "333Handling": 90,
+
+    "666TopSpeed": 134,
+    "6660to60": 5.3,
+    "666Handling": 93,
+
+    "996TopSpeed": 138,
+    "9960to60": 5.0,
+    "996Handling": 93,
+
+    "969TopSpeed": 138,
+    "9690to60": 5.3,
+    "969Handling": 97,
+
+    "699TopSpeed": 134,
+    "6990to60": 5.0,
+    "699Handling": 97
+}

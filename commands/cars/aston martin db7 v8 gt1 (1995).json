@@ -1,0 +1,54 @@
+{
+    "rq": 81,
+    "make": "Aston Martin",
+    "model": "DB7 V8 GT1",
+    "modelYear": 1995,
+    "country": "GB",
+    "topSpeed": 196,
+    "0to60": 3.6,
+    "handling": 94,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["The Royal Collection", "Motorsport", "Unique", "Ultra Expensive"],
+    "isPrize": false,
+
+    "weight": 1330,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 120.00,
+    "ola": 77.78,
+    "description": "What happens when a billionaire throws money at a car maker to make a car for 1 race? throwing a 6.3L V8 into a DB7 is what. Card by bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/855242572180095016/db7gt1.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/855243743526125599/db7gt1.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/855243748639375370/db7gt1333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/855243753891823666/db7gt1666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/855243781987893248/db7gt1996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/855243775429181460/db7gt1969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/855243762036113428/db7gt1699.png",
+
+    "333TopSpeed": 199,
+    "3330to60": 3.4,
+    "333Handling": 97,
+
+    "666TopSpeed": 201,
+    "6660to60": 3.2,
+    "666Handling": 100,
+
+    "996TopSpeed": 204,
+    "9960to60": 3.1,
+    "996Handling": 100,
+
+    "969TopSpeed": 204,
+    "9690to60": 3.2,
+    "969Handling": 104,
+
+    "699TopSpeed": 201,
+    "6990to60": 3.1,
+    "699Handling": 104
+}

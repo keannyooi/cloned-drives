@@ -1,0 +1,54 @@
+{
+    "rq": 52,
+    "make": "Ford",
+    "model": "Escort RS Cosworth",
+    "modelYear": 1992,
+    "country": "GB",
+    "topSpeed": 141,
+    "0to60": 5.8,
+    "handling": 84,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch", "The Royal Collection", "Street Racer"],
+    "isPrize": false,
+
+    "weight": 1331,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 58.59,
+    "ola": 79.31,
+    "description": "Card by Thunk.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/852751068521037824/rect7774.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/852750879903711232/000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/852750895618850866/333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/852750908927770665/666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/852750952104198204/996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/852750937747488799/969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/852750925994786827/699.png",
+
+    "333TopSpeed": 145,
+    "3330to60": 5.5,
+    "333Handling": 87,
+
+    "666TopSpeed": 148,
+    "6660to60": 5.2,
+    "666Handling": 90,
+
+    "996TopSpeed": 152,
+    "9960to60": 4.9,
+    "996Handling": 90,
+
+    "969TopSpeed": 152,
+    "9690to60": 5.2,
+    "969Handling": 93,
+
+    "699TopSpeed": 148,
+    "6990to60": 4.9,
+    "699Handling": 93
+}

@@ -1,0 +1,54 @@
+{
+    "rq": 35,
+    "make": "Aston Martin",
+    "model": "DB7 Volante",
+    "modelYear": 1996,
+    "country": "GB",
+    "topSpeed": 152,
+    "0to60": 6.4,
+    "handling": 74,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Royal Collection"],
+    "isPrize": false,
+
+    "weight": 1900,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 55.65,
+    "ola": 75.00,
+    "description": "The Convertible DB7 that didnt go as planned. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/855242395939635210/db7volante.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/855243588677926912/db7volatne.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/855243593303064606/db7volatne333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/855243599498706954/db7volatne666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/855243624177598465/db7volatne996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/855243617018052637/db7volatne969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/855243608637833226/db7volatne699.png",
+
+    "333TopSpeed": 155,
+    "3330to60": 6.1,
+    "333Handling": 76,
+
+    "666TopSpeed": 159,
+    "6660to60": 5.8,
+    "666Handling": 79,
+
+    "996TopSpeed": 162,
+    "9960to60": 5.4,
+    "996Handling": 79,
+
+    "969TopSpeed": 162,
+    "9690to60": 5.8,
+    "969Handling": 82,
+
+    "699TopSpeed": 159,
+    "6990to60": 5.4,
+    "699Handling": 82
+}

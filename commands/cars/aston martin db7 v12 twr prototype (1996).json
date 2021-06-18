@@ -1,0 +1,54 @@
+{
+    "rq": 63,
+    "make": "Aston Martin",
+    "model": "DB7 V12 TWR Prototype",
+    "modelYear": 1996,
+    "country": "GB",
+    "topSpeed": 183,
+    "0to60": 4.6,
+    "handling": 82,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Royal Collection", "Unique", "Concept", "Oddity"],
+    "isPrize": true,
+
+    "weight": 1725,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 127.78,
+    "ola": 95.65,
+    "description": "Throw a big fat engine from Jaguar and fat tyres and produce almost 600bhp and this is the godsend gordon murray throws at you. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/855242667428413450/twrdb7.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/855243840906592256/db7twr.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/855243847607779389/db7twr333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/855243853702103050/db7twr666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/855243880332263424/db7twr996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/855243873742749716/db7twr969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/855243865165791253/db7twr699.png",
+
+    "333TopSpeed": 186,
+    "3330to60": 4.4,
+    "333Handling": 85,
+
+    "666TopSpeed": 189,
+    "6660to60": 4.1,
+    "666Handling": 87,
+
+    "996TopSpeed": 192,
+    "9960to60": 3.9,
+    "996Handling": 87,
+
+    "969TopSpeed": 192,
+    "9690to60": 4.1,
+    "969Handling": 91,
+
+    "699TopSpeed": 189,
+    "6990to60": 3.9,
+    "699Handling": 91
+}

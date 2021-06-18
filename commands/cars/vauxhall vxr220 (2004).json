@@ -1,0 +1,54 @@
+{
+    "rq": 79,
+    "make": "Vauxhall",
+    "model": "VXR220",
+    "modelYear": 2004,
+    "country": "GB",
+    "topSpeed": 155,
+    "0to60": 4.1,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Unique", "The Royal Collection"],
+    "isPrize": false,
+
+    "weight": 945,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Roadster",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 60.00,
+    "ola": 78.50,
+    "description": "A limted of sixty track focused Speedsters for UK only, equiped with larger brakes, upgraded tyres and lowered suspension, and tuned to produce 20 hp more than the Turbo. Card by Connor.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/854627423449776149/A.VauxhallVXR220.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/854627477384724500/A.VauxVXR220.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/854627488012959755/A.VauxVXR220-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/854627498049404938/A.VauxVXR220-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/854627533626015744/A.VauxVXR220-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/854627520725123092/A.VauxVXR220-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/854627509525807125/A.VauxVXR220-699.png",
+
+    "333TopSpeed": 158,
+    "3330to60": 3.9,
+    "333Handling": 94,
+
+    "666TopSpeed": 162,
+    "6660to60": 3.7,
+    "666Handling": 97,
+
+    "996TopSpeed": 165,
+    "9960to60": 3.5,
+    "996Handling": 97,
+
+    "969TopSpeed": 165,
+    "9690to60": 3.7,
+    "969Handling": 101,
+
+    "699TopSpeed": 162,
+    "6990to60": 3.5,
+    "699Handling": 101
+}

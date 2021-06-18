@@ -1,0 +1,54 @@
+{
+    "rq": 42,
+    "make": "Opel",
+    "model": "GT",
+    "modelYear": 2007,
+    "country": "DE",
+    "topSpeed": 143,
+    "0to60": 6.1,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1337,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Roadster",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 65.59,
+    "ola": 72.13,
+    "description": "Badge engineered, modern reincarnation of the legendary Opel GT. Card by Connor",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/854628851735986226/C.OpelGT.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/854628938680107008/C.OpelGT.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/854628953301843978/C.OpelGT-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/854628965217861642/C.OpelGT-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/854629004362645584/C.OpelGT-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/854628993009319946/C.OpelGT-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/854628979096420362/C.OpelGT-699.png",
+
+    "333TopSpeed": 147,
+    "3330to60": 5.8,
+    "333Handling": 80,
+
+    "666TopSpeed": 150,
+    "6660to60": 5.5,
+    "666Handling": 82,
+
+    "996TopSpeed": 154,
+    "9960to60": 5.2,
+    "996Handling": 82,
+
+    "969TopSpeed": 154,
+    "9690to60": 5.5,
+    "969Handling": 85,
+
+    "699TopSpeed": 150,
+    "6990to60": 5.2,
+    "699Handling": 85
+}

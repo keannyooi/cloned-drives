@@ -1,0 +1,54 @@
+{
+    "rq": 56,
+    "make": "Lotus",
+    "model": "Elise Sport 135",
+    "modelYear": 2002,
+    "country": "GB",
+    "topSpeed": 128,
+    "0to60": 5.4,
+    "handling": 90,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Royal Collection", "Unique"],
+    "isPrize": false,
+
+    "weight": 791,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Roadster",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 49.77,
+    "ola": 88.89,
+    "description": "No, i don't know why Sport means Catastrophic Hierarchy Killer and Soul Widowmaker in Cloned Drives. Card by Tom.",
+
+    "card": "https://cdn.discordapp.com/attachments/731698267573977099/851818351302672384/Elise_Sport_135_2002.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/852282897129275402/Lotus_Elise_Sport_135_2002_111.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/852282901038104596/Lotus_Elise_Sport_135_2002_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/852282908147712010/Lotus_Elise_Sport_135_2002_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/852282920483946556/Lotus_Elise_Sport_135_2002_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/852282914913255434/Lotus_Elise_Sport_135_2002_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/852282910379081769/Lotus_Elise_Sport_135_2002_699.jpg",
+
+    "333TopSpeed": 132,
+    "3330to60": 5.1,
+    "333Handling": 91,
+
+    "666TopSpeed": 136,
+    "6660to60": 4.9,
+    "666Handling": 96,
+
+    "996TopSpeed": 140,
+    "9960to60": 4.6,
+    "996Handling": 96,
+
+    "969TopSpeed": 140,
+    "9690to60": 4.9,
+    "969Handling": 100,
+
+    "699TopSpeed": 136,
+    "6990to60": 4.6,
+    "699Handling": 100
+}

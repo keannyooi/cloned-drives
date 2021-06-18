@@ -1,0 +1,54 @@
+{
+    "rq": 63,
+    "make": "Subaru",
+    "model": "Impreza WRX STI",
+    "modelYear": 2001,
+    "country": "JP",
+    "topSpeed": 148,
+    "0to60": 5.3,
+    "handling": 80,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer"],
+    "isPrize": false,
+
+    "weight": 1430,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 67.95,
+    "ola": 60.38,
+    "description": "The first version of the 2nd gen STI, well-known for its weirdly shaped headlights, hence it was called "Blobeye"",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/847991757463617546/image0.jpg",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/838875042703736842/image0.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/838875057576869978/image0.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/838875072030441522/image0.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/838875107509272606/image0.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/838875094553198632/image0.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/838875124168917002/image0.jpg",
+
+    "333TopSpeed": 148,
+    "3330to60": 5.3,
+    "333Handling": 80,
+
+    "666TopSpeed": 162,
+    "6660to60": 4.1,
+    "666Handling": 86,
+
+    "699TopSpeed": 162,
+    "6990to60": 3.9,
+    "699Handling": 90,
+
+    "969TopSpeed": 165,
+    "9690to60": 4.1,
+    "969Handling": 90,
+
+    "996TopSpeed": 165,
+    "9960to60": 3.9,
+    "996Handling": 86
+}
