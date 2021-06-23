@@ -1,0 +1,54 @@
+{
+    "rq": 48,
+    "make": "Nissan",
+    "model": "Maxima SE",
+    "modelYear": 2000,
+    "country": "JP",
+    "topSpeed": 145,
+    "0to60": 6.7,
+    "handling": 72,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1471,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.34,
+    "ola": 71.64,
+    "description": "Nissan's 'Four Door Sports Car' meets all the enthusiast's needs, but yearns for just a little more power from its 3.0-liter VQ motor.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/828458233483886622/max_se.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/828453152910737418/2000_maxima_stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/828453184493322250/2000_maxima_1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/837133810595528784/2000_maxima_2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/828453270581149696/2000_maxima_332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/828453241007636540/2000_maxima_323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/828453213925539910/2000_maxima_233.png",
+
+    "333TopSpeed": 149,
+    "3330to60": 6.4,
+    "333Handling": 74,
+
+    "666TopSpeed": 152,
+    "6660to60": 6.0,
+    "666Handling": 77,
+
+    "996TopSpeed": 156,
+    "9960to60": 5.7,
+    "996Handling": 77,
+
+    "969TopSpeed": 156,
+    "9690to60": 6.0,
+    "969Handling": 80,
+
+    "699TopSpeed": 152,
+    "6990to60": 5.7,
+    "699Handling": 80
+}

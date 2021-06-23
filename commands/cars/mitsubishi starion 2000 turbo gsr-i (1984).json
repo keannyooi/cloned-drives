@@ -1,0 +1,54 @@
+{
+    "rq": 29,
+    "make": "Mitsubishi",
+    "model": "Starion 2000 Turbo GSR-I",
+    "modelYear": 1984,
+    "country": "JP",
+    "topSpeed": 112,
+    "0to60": 8.6,
+    "handling": 74,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1200,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 47.25,
+    "ola": 72.09,
+    "description": "A turbocharger and nothing else. Card by Keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/856532533122301972/mitsubishi_starion_2000_turbo_gsr-i.png",
+    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/856531409787551814/starion_gsr-i_000.jpg",
+    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/856531414555688980/starion_gsr-i_333.jpg",
+    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/856531418749599794/starion_gsr-i_666.jpg",
+    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/856531435229675520/starion_gsr-i_996.jpg",
+    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/856531428150083624/starion_gsr-i_969.jpg",
+    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/856531423694815242/starion_gsr-i_699.jpg",
+
+    "333TopSpeed": 117,
+    "3330to60": 8.2,
+    "333Handling": 76,
+
+    "666TopSpeed": 121,
+    "6660to60": 7.7,
+    "666Handling": 79,
+
+    "996TopSpeed": 126,
+    "9960to60": 7.3,
+    "996Handling": 79,
+
+    "969TopSpeed": 126,
+    "9690to60": 7.7,
+    "969Handling": 82,
+
+    "699TopSpeed": 121,
+    "6990to60": 7.3,
+    "699Handling": 82
+}

@@ -1,0 +1,54 @@
+{
+    "rq": 55,
+    "make": "Nissan",
+    "model": "Maxima SE",
+    "modelYear": 2002,
+    "country": "JP",
+    "topSpeed": 145,
+    "0to60": 6.0,
+    "handling": 74,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1504,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 61.86,
+    "ola": 86.67,
+    "description": "Facelifted for 2002, the Maxima proved you didn't have to give up and buy a Camry just because you started a family.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/828458297589235742/max_se_02.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/828453325271334962/2002_maxima_stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/828453351456374834/2002_maxima_1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/828453384230404146/2002_maxima_2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/828453470872141834/2002_maxima_332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/828453443819536514/2002_maxima_323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/828453413746245662/2002_maxima_233.png",
+
+    "333TopSpeed": 149,
+    "3330to60": 5.7,
+    "333Handling": 76,
+
+    "666TopSpeed": 152,
+    "6660to60": 5.4,
+    "666Handling": 79,
+
+    "996TopSpeed": 156,
+    "9960to60": 5.1,
+    "996Handling": 79,
+
+    "969TopSpeed": 156,
+    "9690to60": 5.4,
+    "969Handling": 82,
+
+    "699TopSpeed": 152,
+    "6990to60": 5.1,
+    "699Handling": 82
+}

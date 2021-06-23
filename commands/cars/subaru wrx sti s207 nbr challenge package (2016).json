@@ -1,0 +1,54 @@
+{
+    "rq": 78,
+    "make": "Subaru",
+    "model": "WRX STI S207 NBR Challenge Package",
+    "modelYear": 2016,
+    "country": "JP",
+    "topSpeed": 155,
+    "0to60": 4.5,
+    "handling": 91,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer", "Track Day"],
+    "isPrize": false,
+
+    "weight": 1510,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 57.69,
+    "ola": 66.67,
+    "description": "The 7th S-Series edition, also with a NBR exterior package just like the last generation. Card by Spence",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/846670863063318568/image0.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/846574179050061834/image0.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/846574195559235654/image0.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/846574208703004732/image0.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/846574226563006494/image0.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/846574241721876500/image0.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/846574260884865106/image0.jpg",
+
+    "333TopSpeed": 158,
+    "3330to60": 4.3,
+    "333Handling": 94,
+
+    "666TopSpeed": 162,
+    "6660to60": 4.1,
+    "666Handling": 97,
+
+    "699TopSpeed": 162,
+    "6990to60": 3.8,
+    "699Handling": 101,
+
+    "969TopSpeed": 165,
+    "9690to60": 4.1,
+    "969Handling": 101,
+
+    "996TopSpeed": 165,
+    "9960to60": 3.8,
+    "996Handling": 97
+}

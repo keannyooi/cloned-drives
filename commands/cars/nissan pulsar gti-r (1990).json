@@ -1,0 +1,54 @@
+{
+    "rq": 57,
+    "make": "Nissan",
+    "model": "Pulsar GTi-R",
+    "modelYear": 1990,
+    "country": "JP",
+    "topSpeed": 142,
+    "0to60": 5.4,
+    "handling": 73,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch", "Street Racer"],
+    "isPrize": false,
+
+    "weight": 1188,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 59.34,
+    "ola": 70.37,
+    "description": "Card by Thunk.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/852749471715950623/rect7774.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/852749334613458944/000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/852749352937324544/333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/852749363662553088/666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/852749407018549278/996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/852749390681604136/969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/852749378988146738/699.png",
+
+    "333TopSpeed": 146,
+    "3330to60": 5.1,
+    "333Handling": 75,
+
+    "666TopSpeed": 149,
+    "6660to60": 4.9,
+    "666Handling": 78,
+
+    "996TopSpeed": 153,
+    "9960to60": 4.6,
+    "996Handling": 78,
+
+    "969TopSpeed": 153,
+    "9690to60": 4.9,
+    "969Handling": 81,
+
+    "699TopSpeed": 149,
+    "6990to60": 4.6,
+    "699Handling": 81
+}

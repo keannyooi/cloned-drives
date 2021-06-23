@@ -1,0 +1,54 @@
+{
+    "rq": 71,
+    "make": "Subaru",
+    "model": "Impreza S202 STI",
+    "modelYear": 2002,
+    "country": "JP",
+    "topSpeed": 112,
+    "0to60": 4.5,
+    "handling": 84,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer"],
+    "isPrize": false,
+
+    "weight": 1330,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 60,
+    "ola": 66.67,
+    "description": "The second S Special edition of the Impreza WRX STI. Card by Spence",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/840640734712561704/image0.jpg",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/840640802568011776/image0.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/840640955505311824/image0.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/840641008848863312/image0.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/840641067845025802/image0.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/840641053869473812/image0.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/840641083984707584/image0.jpg",
+
+    "333TopSpeed": 117,
+    "3330to60": 4.3,
+    "333Handling": 87,
+
+    "666TopSpeed": 121,
+    "6660to60": 4.1,
+    "666Handling": 90,
+
+    "699TopSpeed": 121,
+    "6990to60": 3.8,
+    "699Handling": 93,
+
+    "969TopSpeed": 126,
+    "9690to60": 4.1,
+    "969Handling": 93,
+
+    "996TopSpeed": 126,
+    "9960to60": 3.8,
+    "996Handling": 90
+}
