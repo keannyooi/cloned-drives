@@ -1,0 +1,54 @@
+{
+    "rq": 44,
+    "make": ["Kleemann", "Mercedes-Benz"],
+    "model": "C32K",
+    "modelYear": 2001,
+    "country": "DK",
+    "topSpeed": 134,
+    "0to60": 6.0,
+    "handling": 74,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner", "Rest of The World"],
+    "isPrize": false,
+
+    "weight": 1681,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 63.83,
+    "ola": 83.33,
+    "description": "Speaking German with a Scandinavian accent. Card by havvy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826942541991510026/KleemannC32K.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826945534824546324/000_kleem.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826945549764263936/111_kleem.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826945555547684904/222_kleem.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826945571251159100/332_kleem.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826945565517545512/323_kleem.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826945603800006726/233_kleem.png",
+
+    "333TopSpeed": 138,
+    "3330to60": 5.7,
+    "333Handling": 74,
+
+    "666TopSpeed": 142,
+    "6660to60": 5.4,
+    "666Handling": 77,
+
+    "996TopSpeed": 146,
+    "9960to60": 5.1,
+    "996Handling": 77,
+
+    "969TopSpeed": 146,
+    "9690to60": 5.4,
+    "969Handling": 80,
+
+    "699TopSpeed": 142,
+    "6990to60": 5.1,
+    "699Handling": 80
+}

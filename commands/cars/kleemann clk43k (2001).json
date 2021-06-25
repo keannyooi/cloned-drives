@@ -1,0 +1,54 @@
+{
+    "rq": 59,
+    "make": ["Kleemann", "Mercedes-Benz"],
+    "model": "CLK43K",
+    "modelYear": 2001,
+    "country": "DK",
+    "topSpeed": 134,
+    "0to60": 4.9,
+    "handling": 76,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner", "Rest of The World"],
+    "isPrize": false,
+
+    "weight": 1636,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 74.24,
+    "ola": 89.9,
+    "description": "Danish people added a supercharger to a CLK and managed to squeeze out 433hp. Card by havvy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826946163491078164/KleemannCLK43K.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826946262247014420/000_kleem2.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826946269061840906/111_kleem2.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826946278696026132/222_kleem2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826946289177985064/332_kleem2.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826946283965120572/323_kleem2.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826946280541388800/233_kleem2.png",
+
+    "333TopSpeed": 138,
+    "3330to60": 4.7,
+    "333Handling": 79,
+
+    "666TopSpeed": 142,
+    "6660to60": 4.4,
+    "666Handling": 81,
+
+    "996TopSpeed": 146,
+    "9960to60": 4.2,
+    "996Handling": 81,
+
+    "969TopSpeed": 146,
+    "9690to60": 4.4,
+    "969Handling": 84,
+
+    "699TopSpeed": 142,
+    "6990to60": 4.2,
+    "699Handling": 84
+}

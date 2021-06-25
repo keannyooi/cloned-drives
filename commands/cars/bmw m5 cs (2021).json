@@ -1,0 +1,54 @@
+{
+    "rq": 89,
+    "make": "BMW",
+    "model": "M5 CS",
+    "modelYear": 2021,
+    "country": "DE",
+    "topSpeed": 190,
+    "0to60": 2.9,
+    "handling": 91,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Super Sedan", "Track Day"],
+    "isPrize": false,
+
+    "weight": 1825,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 80.55,
+    "ola": 82.75,
+    "description": "Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/857961090742353940/m5cs21.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/857961291486068767/M5CS.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/857961300222541844/M5CS333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/857961308455960585/M5CS666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/857961335735844874/M5CS996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/857961325082443776/M5CS969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/857961317665865748/M5CS699.png",
+
+    "333TopSpeed": 193,
+    "3330to60": 2.8,
+    "333Handling": 94,
+
+    "666TopSpeed": 195,
+    "6660to60": 2.6,
+    "666Handling": 97,
+
+    "996TopSpeed": 198,
+    "9960to60": 2.5,
+    "996Handling": 97,
+
+    "969TopSpeed": 198,
+    "9690to60": 2.6,
+    "969Handling": 101,
+
+    "699TopSpeed": 195,
+    "6990to60": 2.5,
+    "699Handling": 101
+}

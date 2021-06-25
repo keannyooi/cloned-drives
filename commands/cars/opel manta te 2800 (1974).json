@@ -1,0 +1,54 @@
+{
+    "rq": 20,
+    "make": "Opel",
+    "model": "Manta TE 2800",
+    "modelYear": 1974,
+    "country": "DE",
+    "topSpeed": 125,
+    "0to60": 8.3,
+    "handling": 68,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1030,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 53.55,
+    "ola": 79.52,
+    "description": "TE 2800 was a totally different project that Opel refused to endorse, made by Belgian company called Transeurop Engineering. It was powered by a 2.8 litre engine from the Commodore GS/E that produced 142 PS. Only 79 cars were made at the end. Card by Connor.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/857524584198176768/E.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/857524727085662218/OpelMantaTE2800.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/857524745276620810/OpelMantaTE2800-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/857524762850230282/OpelMantaTE2800-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/857524812385878026/OpelMantaTE2800-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/857524794580926494/OpelMantaTE2800-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/857524778402316298/OpelMantaTE2800-699.png",
+
+    "333TopSpeed": 129,
+    "3330to60": 7.9,
+    "333Handling": 70,
+
+    "666TopSpeed": 133,
+    "6660to60": 7.5,
+    "666Handling": 72,
+
+    "996TopSpeed": 137,
+    "9960to60": 7.1,
+    "996Handling": 72,
+
+    "969TopSpeed": 137,
+    "9690to60": 7.5,
+    "969Handling": 75,
+
+    "699TopSpeed": 133,
+    "6990to60": 7.1,
+    "699Handling": 75
+}

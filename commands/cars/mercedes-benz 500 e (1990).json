@@ -1,0 +1,54 @@
+{
+    "rq": 49,
+    "make": "Mercedes-Benz",
+    "model": "500 E",
+    "modelYear": 1990,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 5.9,
+    "handling": 76,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Super Sedan"],
+    "isPrize": false,
+
+    "weight": 1775,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 72.21,
+    "ola": 87.03,
+    "description": "MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM. Card by Havvy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/827260894386847815/Mercedes-Benz500E.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/827266275700244510/000_500e.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/827266280213708830/111_500e.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/827266283543461888/222_500e.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/827266299021361242/332_500e.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/827266295451484220/323_500e.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/827266290497486938/233_500e.png",
+
+    "333TopSpeed": 158,
+    "3330to60": 5.6,
+    "333Handling": 79,
+
+    "666TopSpeed": 162,
+    "6660to60": 5.3,
+    "666Handling": 81,
+
+    "996TopSpeed": 165,
+    "9960to60": 5.1,
+    "996Handling": 81,
+
+    "969TopSpeed": 165,
+    "9690to60": 5.3,
+    "969Handling": 85,
+
+    "699TopSpeed": 162,
+    "6990to60": 5.1,
+    "699Handling": 85
+}
