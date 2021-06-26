@@ -49,9 +49,10 @@ module.exports = {
             return message.channel.send(errorScreen);
         }
 
-		const garage = await db.get(`acc${message.author.id}.garage`);
-        const carFilter = await db.get(`acc${message.author.id}.filter`);
-        if (carFilter !== null) {
+		const playerData = await db.get(`acc${message.author.id}`);
+		const garage = playerData.garage;
+        const carFilter = playerData.filter;
+        if (carFilter !== undefined && playerData.settings.filtercarlist === true) {
             for (const [key, value] of Object.entries(carFilter)) {
                 switch (typeof value) {
                     case "object":
@@ -257,7 +258,7 @@ module.exports = {
             .setColor("#34aeeb")
             .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
             .setTitle(`List of All Cars in Cloned Drives (${ownedCars.length}/${totalCars} Cars Owned)`)
-            .setDescription(`Current Sorting Criteria: \`${sortBy}\`, Filter Activated: \`${carFilter !== null}\``)
+            .setDescription(`Current Sorting Criteria: \`${sortBy}\`, Filter Activated: \`${(carFilter !== undefined && playerData.settings.filtercarlist === true)}\``)
             .addField("Car", carList, true)
             .setFooter(`Page ${page} of ${totalPages} - React with ⬅️ or ➡️ to navigate through pages.`)
             .setTimestamp();
@@ -306,7 +307,7 @@ module.exports = {
 						.setColor("#34aeeb")
 						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 						.setTitle(`List of All Cars in Cloned Drives (${ownedCars.length}/${totalCars} Cars Owned)`)
-						.setDescription(`Current Sorting Criteria: \`${sortBy}\`, Filter Activated: \`${carFilter !== null}\``)
+						.setDescription(`Current Sorting Criteria: \`${sortBy}\`, Filter Activated: \`${(carFilter !== undefined && playerData.settings.filtercarlist === true)}\``)
 						.addField("Car", carList, true)
 						.setFooter(`Page ${page} of ${totalPages} - React with ⬅️ or ➡️ to navigate through pages.`)
 						.setTimestamp();
@@ -341,28 +342,28 @@ module.exports = {
         });
 
         function rarityCheck(currentCar) {
-            if (currentCar["rq"] > 79) { //leggie
-                return message.client.emojis.cache.get("726025494138454097");
-            }
-            else if (currentCar["rq"] > 64 && currentCar["rq"] <= 79) { //epic
-                return message.client.emojis.cache.get("726025468230238268");
-            }
-            else if (currentCar["rq"] > 49 && currentCar["rq"] <= 64) { //ultra
-                return message.client.emojis.cache.get("726025431937187850");
-            }
-            else if (currentCar["rq"] > 39 && currentCar["rq"] <= 49) { //super
-                return message.client.emojis.cache.get("726025394104434759");
-            }
-            else if (currentCar["rq"] > 29 && currentCar["rq"] <= 39) { //rare
-                return message.client.emojis.cache.get("726025302656024586");
-            }
-            else if (currentCar["rq"] > 19 && currentCar["rq"] <= 29) { //uncommon
-                return message.client.emojis.cache.get("726025273421725756");
-            }
-            else { //common
-                return message.client.emojis.cache.get("726020544264273928");
-            }
-        }
+			if (currentCar["rq"] > 79) { //leggie
+				return message.client.emojis.cache.get("857512942471479337");
+			}
+			else if (currentCar["rq"] > 64 && currentCar["rq"] <= 79) { //epic
+				return message.client.emojis.cache.get("726025468230238268");
+			}
+			else if (currentCar["rq"] > 49 && currentCar["rq"] <= 64) { //ultra
+				return message.client.emojis.cache.get("726025431937187850");
+			}
+			else if (currentCar["rq"] > 39 && currentCar["rq"] <= 49) { //super
+				return message.client.emojis.cache.get("857513197937623042");
+			}
+			else if (currentCar["rq"] > 29 && currentCar["rq"] <= 39) { //rare
+				return message.client.emojis.cache.get("726025302656024586");
+			}
+			else if (currentCar["rq"] > 19 && currentCar["rq"] <= 29) { //uncommon
+				return message.client.emojis.cache.get("726025273421725756");
+			}
+			else { //common
+				return message.client.emojis.cache.get("726020544264273928");
+			}
+		}
 
         function carDisplay(page) {
             var startsWith, endsWith;

@@ -156,7 +156,8 @@ module.exports = {
 
 		async function loop(user, page, sort, currentMessage) {
 			const pageLimit = 10;
-			let garage = await db.get(`acc${user.id}.garage`);
+			const playerData = await db.get(`acc${user.id}`);
+			let garage = playerData.garage;
 			let reactionIndex = 0;
 			let filter = (reaction, user) => {
 				return (reaction.emoji.name === "⬅️" || reaction.emoji.name === "➡️") && user.id === message.author.id;
@@ -194,8 +195,8 @@ module.exports = {
 					return message.channel.send(errorScreen);
 			}
 
-			const carFilter = await db.get(`acc${message.author.id}.filter`);
-			if (carFilter !== null) {
+			const carFilter = playerData.filter;
+			if (carFilter !== undefined && playerData.settings.filtergarage === true) {
 				for (const [key, value] of Object.entries(carFilter)) {
 					switch (typeof value) {
 						case "object":
@@ -264,7 +265,6 @@ module.exports = {
 			}
 
 			const totalPages = Math.ceil(garage.length / pageLimit);
-			console.log(sort);
 			garage.sort(function (a, b) {
 				const carA = require(`./cars/${a.carFile}`);
 				const carB = require(`./cars/${b.carFile}`);
@@ -380,7 +380,7 @@ module.exports = {
 				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 				.setTitle(`${user.username}'s Garage`)
 				.setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
-				.setDescription(`Current Sorting Criteria: \`${sort}\`, Filter Activated: \`${carFilter !== null}\``)
+				.setDescription(`Current Sorting Criteria: \`${sort}\`, Filter Activated: \`${(carFilter !== undefined && playerData.settings.filtergarage === true)}\``)
 				.addField("Car", lists.garageList, true)
 				.addField("Amount", lists.amountList, true)
 				.setTimestamp();
@@ -437,7 +437,7 @@ module.exports = {
 						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 						.setTitle(`${user.username}'s Garage`)
 						.setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
-						.setDescription(`Current Sorting Criteria: \`${sort}\`, Filter Activated: \`${carFilter !== null}\``)
+						.setDescription(`Current Sorting Criteria: \`${sort}\`, Filter Activated: \`${(carFilter !== undefined && playerData.settings.filtergarage === true)}\``)
 						.addField("Car", lists.garageList, true)
 						.addField("Amount", lists.amountList, true)
 						.setFooter(`Page ${page} of ${totalPages} - React with ⬅️ or ➡️ to navigate through pages.`)
@@ -556,7 +556,7 @@ module.exports = {
 
 		function rarityCheck(currentCar) {
 			if (currentCar["rq"] > 79) { //leggie
-				return message.client.emojis.cache.get("726025494138454097");
+				return message.client.emojis.cache.get("857512942471479337");
 			}
 			else if (currentCar["rq"] > 64 && currentCar["rq"] <= 79) { //epic
 				return message.client.emojis.cache.get("726025468230238268");
@@ -565,7 +565,7 @@ module.exports = {
 				return message.client.emojis.cache.get("726025431937187850");
 			}
 			else if (currentCar["rq"] > 39 && currentCar["rq"] <= 49) { //super
-				return message.client.emojis.cache.get("726025394104434759");
+				return message.client.emojis.cache.get("857513197937623042");
 			}
 			else if (currentCar["rq"] > 29 && currentCar["rq"] <= 39) { //rare
 				return message.client.emojis.cache.get("726025302656024586");

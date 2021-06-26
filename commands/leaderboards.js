@@ -14,13 +14,13 @@ module.exports = {
     aliases: ["lb", "leader", "leaderboard", "lead"],
     usage: "<criteria> (optional) <page number>",
     args: 1,
-	isExternal: false,
+    isExternal: false,
     adminOnly: true,
     description: "Shows the server's leaderboards.",
     async execute(message, args) {
         const db = message.client.db;
-        const all = await db.all(); // this line is crashing the bot
-		console.log("checking");
+        const all = await db.startsWith("acc"); // this line is slow af
+        console.log("checking");
         const pageLimit = 10;
         const filter = (reaction, user) => {
             return (reaction.emoji.name === "⬅️" || reaction.emoji.name === "➡️") && user.id === message.author.id;
@@ -36,11 +36,9 @@ module.exports = {
                 criteria = "Money";
                 emoji = message.client.emojis.cache.get("726017235826770021");
                 for (i = 0; i < all.length; i++) {
-                    if (all[i].ID.startsWith("acc")) {
-                        const id = all[i].ID.substring(3);
-                        if (message.guild.member(id) && !message.client.users.cache.find(user => user.id === id).bot) {
-                            lb.push({ name: message.guild.members.cache.get(id).displayName, value: all[i].data.money });
-                        }
+                    const id = all[i].ID.substring(3);
+                    if (message.guild.member(id) && !message.client.users.cache.find(user => user.id === id).bot) {
+                        lb.push({ name: message.guild.members.cache.get(id).displayName, value: all[i].data.money });
                     }
                 }
                 break;
@@ -48,11 +46,9 @@ module.exports = {
                 criteria = "Fuse Tokens";
                 emoji = message.client.emojis.cache.get("726018658635218955");
                 for (i = 0; i < all.length; i++) {
-                    if (all[i].ID.startsWith("acc")) {
-                        const id = all[i].ID.substring(3);
-                        if (message.guild.member(id) && !message.client.users.cache.find(user => user.id === id).bot) {
-                            lb.push({ name: message.guild.members.cache.get(id).displayName, value: all[i].data.fuseTokens });
-                        }
+                    const id = all[i].ID.substring(3);
+                    if (message.guild.member(id) && !message.client.users.cache.find(user => user.id === id).bot) {
+                        lb.push({ name: message.guild.members.cache.get(id).displayName, value: all[i].data.fuseTokens });
                     }
                 }
                 break;
@@ -60,11 +56,9 @@ module.exports = {
                 criteria = "Trophies";
                 emoji = message.client.emojis.cache.get("775636479145148418");
                 for (i = 0; i < all.length; i++) {
-                    if (all[i].ID.startsWith("acc")) {
-                        const id = all[i].ID.substring(3);
-                        if (message.guild.member(id) && !message.client.users.cache.find(user => user.id === id).bot) {
-                            lb.push({ name: message.guild.members.cache.get(id).displayName, value: all[i].data.trophies });
-                        }
+                    const id = all[i].ID.substring(3);
+                    if (message.guild.member(id) && !message.client.users.cache.find(user => user.id === id).bot) {
+                        lb.push({ name: message.guild.members.cache.get(id).displayName, value: all[i].data.trophies });
                     }
                 }
                 break;
@@ -72,40 +66,36 @@ module.exports = {
                 criteria = "Garage Points";
                 emoji = "🚙";
                 for (i = 0; i < all.length; i++) {
-                    if (all[i].ID.startsWith("acc")) {
-                        const id = all[i].ID.substring(3);
-                        if (message.guild.member(id) && !message.client.users.cache.find(user => user.id === id).bot) {
-                            const garage = all[i].data.garage;
-                            let maxedCarAmount = 0;
-                            let garagePoints = 0;
-							let carAmount = 0;
-                            for (x = 0; x < garage.length; x++) {
-                                const currentCar = require(`./cars/${garage[x].carFile}`);
-                                const addedPoints = rarityCheck(currentCar);
-                                garagePoints += addedPoints;
-								carAmount += garage[x]["000"] + garage[x]["333"] + garage[x]["666"] + garage[x]["996"] + garage[x]["969"] + garage[x]["699"]
-                                maxedCarAmount += garage[x]["996"] + garage[x]["969"] + garage[x]["699"];
-                            }
-                            garagePoints *= maxedCarAmount / carAmount;
-                            lb.push({ name: message.guild.members.cache.get(id).displayName, value: Math.round(garagePoints) });
+                    const id = all[i].ID.substring(3);
+                    if (message.guild.member(id) && !message.client.users.cache.find(user => user.id === id).bot) {
+                        const garage = all[i].data.garage;
+                        let maxedCarAmount = 0;
+                        let garagePoints = 0;
+                        let carAmount = 0;
+                        for (x = 0; x < garage.length; x++) {
+                            const currentCar = require(`./cars/${garage[x].carFile}`);
+                            const addedPoints = rarityCheck(currentCar);
+                            garagePoints += addedPoints;
+                            carAmount += garage[x]["000"] + garage[x]["333"] + garage[x]["666"] + garage[x]["996"] + garage[x]["969"] + garage[x]["699"]
+                            maxedCarAmount += garage[x]["996"] + garage[x]["969"] + garage[x]["699"];
                         }
+                        garagePoints *= maxedCarAmount / carAmount;
+                        lb.push({ name: message.guild.members.cache.get(id).displayName, value: Math.round(garagePoints) });
                     }
                 }
                 break;
-			case "winstreak":
-				criteria = "Win Streak";
+            case "winstreak":
+                criteria = "Win Streak";
                 emoji = "⏫";
                 for (i = 0; i < all.length; i++) {
-                    if (all[i].ID.startsWith("acc")) {
-                        const id = all[i].ID.substring(3);
-                        if (message.guild.member(id) && !message.client.users.cache.find(user => user.id === id).bot) {
-                            lb.push({ name: message.guild.members.cache.get(id).displayName, value: all[i].data.rrWinStreak || 0 });
-                        }
+                    const id = all[i].ID.substring(3);
+                    if (message.guild.member(id) && !message.client.users.cache.find(user => user.id === id).bot) {
+                        lb.push({ name: message.guild.members.cache.get(id).displayName, value: all[i].data.rrWinStreak || 0 });
                     }
                 }
-				break;
+                break;
             default:
-				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+                message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                 const errorScreen = new Discord.MessageEmbed()
                     .setColor("#fc0303")
                     .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -153,7 +143,7 @@ module.exports = {
         }
 
         if (page < 0 || totalPages < page) {
-			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+            message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             const errorScreen = new Discord.MessageEmbed()
                 .setColor("#fc0303")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -175,7 +165,7 @@ module.exports = {
             )
             .setFooter(`Showing places ${startsWith + 1} to ${endsWith} - React with ⬅️ or ➡️ to navigate through pages.`)
             .setTimestamp();
-		message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+        message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
         message.channel.send(infoScreen).then(infoMessage => {
             console.log(reactionIndex);
             switch (reactionIndex) {

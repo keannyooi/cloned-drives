@@ -91,23 +91,31 @@ client.once("ready", async () => {
 	guild.members.cache.forEach(async user => {
 		if (await client.db.has(`acc${user.id}`) === false) {
 			console.log("creating new player's database...");
-			await client.db.set(`acc${user.id}`, { money: 0, fuseTokens: 0, trophies: 0, garage: starterGarage, decks: [], campaignProgress: { chapter: 0, part: 1, race: 1 }, unclaimedRewards: { money: 0, fuseTokens: 0, trophies: 0, cars: [], packs: [] } });
+			await client.db.set(`acc${user.id}`, {	
+				money: 0,
+				fuseTokens: 0,
+				trophies: 0,
+				garage: starterGarage,
+				decks: [],
+				campaignProgress: { chapter: 0, part: 1, race: 1 },
+				unclaimedRewards: { money: 0, fuseTokens: 0, trophies: 0, cars: [], packs: [] },
+				settings: { enablegraphics: true, senddailynotifs: false, filtercarlist: true, filtergarage: true, showbmcars: false }
+			});
 			console.log(user.id);
 		}
 
 		// const garage = await client.db.get(`acc${user.id}.garage`);
 		// var i = 0;
 		// while (i < garage.length) {
-		//  	if (garage[i].carFile === "volkswagen touareg v6 tsi hybrid (20011).json") {
-		//  		garage[i].carFile = "volkswagen touareg v6 tsi hybrid (2011).json";
-		// 			console.log("done");
+		//  	if (garage[i].carFile === "jeep grand cherokee 5.9 limited (1998).json") {
+		//  		garage[i].carFile = "jeep grand cherokee 5.9 limited (1999).json";
+		// 		console.log("done");
 		//  	}
 		//  	i++;
 		// }
 		// await client.db.set(`acc${user.id}.garage`, garage);
 	});
 	//await client.db.set("limitedOffers", []);
-
 
 	// const catalog = await client.db.get("dealershipCatalog");
 	// console.log(catalog);
@@ -119,14 +127,6 @@ client.once("ready", async () => {
 	//  	i++;
 	// }
 	// await client.db.set("dealershipCatalog", catalog);
-
-	const challenge = await client.db.get("challenge");
-	var i = 0;
-	while (i < challenge.roster.length) {
-		challenge.roster[i].rqLimit = "None";
-	 	i++;
-	}
-	await client.db.set("challenge", challenge);
 
 	client.user.setActivity("over everyone's garages", { type: "WATCHING" });
 });
@@ -172,14 +172,25 @@ client.on("message", async message => {
 			.setTimestamp();
 		return message.channel.send(errorMessage);
 	}
-	else if (!command.isExternal && message.guild.id !== "711769157078876305") {
-		const errorMessage = new Discord.MessageEmbed()
-			.setColor("#fc0303")
-			.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-			.setTitle("Error, this command can only be executed in the Cloned Drives discord server.")
-			.setDescription("Link to Discord server: https://discord.gg/PHgPyed")
-			.setTimestamp();
-		return message.channel.send(errorMessage);
+	else if (!command.isExternal) {
+		if (message.channel.type !== "text") {
+			const errorMessage = new Discord.MessageEmbed()
+				.setColor("#fc0303")
+				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+				.setTitle("Error, this command can only be executed in the Cloned Drives discord server.")
+				.setDescription("Link to Discord server: https://discord.gg/PHgPyed")
+				.setTimestamp();
+			return message.channel.send(errorMessage);
+		}
+		else if (message.guild.id !== "711769157078876305") {
+			const errorMessage = new Discord.MessageEmbed()
+				.setColor("#fc0303")
+				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+				.setTitle("Error, this command can only be executed in the Cloned Drives discord server.")
+				.setDescription("Link to Discord server: https://discord.gg/PHgPyed")
+				.setTimestamp();
+			return message.channel.send(errorMessage);
+		}
 	}
 	else if (command.adminOnly && !message.member.roles.cache.has("711790752853655563")) { //admin role
 		const errorMessage = new Discord.MessageEmbed()
@@ -252,7 +263,16 @@ client.on("message", async message => {
 client.on("guildMemberAdd", async member => {
 	if (await client.db.has(`acc${member.id}`) === false && member.guild.id === "711769157078876305") {
 		console.log("creating new player's database...");
-		await client.db.set(`acc${member.id}`, { money: 0, fuseTokens: 0, trophies: 0, garage: starterGarage, decks: [], campaignProgress: { chapter: 0, part: 1, race: 1 }, unclaimedRewards: { money: 0, fuseTokens: 0, trophies: 0, cars: [], packs: [] } });
+		await client.db.set(`acc${member.id}`, {	
+			money: 0,
+			fuseTokens: 0,
+			trophies: 0,
+			garage: starterGarage,
+			decks: [],
+			campaignProgress: { chapter: 0, part: 1, race: 1 },
+			unclaimedRewards: { money: 0, fuseTokens: 0, trophies: 0, cars: [], packs: [] },
+			settings: { enablegraphics: true, senddailynotifs: false, filtercarlist: true, filtergarage: true, showbmcars: false }
+		});
 		console.log(member.id);
 	}
 });
@@ -290,6 +310,26 @@ client.on("messageUpdate", async (oldMessage, newMessage) => {
 				.setAuthor(newMessage.author.tag, newMessage.author.displayAvatarURL({ format: "png", dynamic: true }))
 				.setTitle("Error, no arguments provided.")
 				.setDescription(`Here's the correct syntax: \`${prefix}${command.name} ${usage}\``)
+				.setTimestamp();
+			return newMessage.channel.send(errorMessage);
+		}
+	}
+	else if (!command.isExternal) {
+		if (newMessage.channel.type !== "text") {
+			const errorMessage = new Discord.MessageEmbed()
+				.setColor("#fc0303")
+				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+				.setTitle("Error, this command can only be executed in the Cloned Drives discord server.")
+				.setDescription("Link to Discord server: https://discord.gg/PHgPyed")
+				.setTimestamp();
+			return newMessage.channel.send(errorMessage);
+		}
+		else if (newMessage.guild.id !== "711769157078876305") {
+			const errorMessage = new Discord.MessageEmbed()
+				.setColor("#fc0303")
+				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+				.setTitle("Error, this command can only be executed in the Cloned Drives discord server.")
+				.setDescription("Link to Discord server: https://discord.gg/PHgPyed")
 				.setTimestamp();
 			return newMessage.channel.send(errorMessage);
 		}
@@ -371,4 +411,28 @@ setInterval(async () => {
 		}
 	}
 	await client.db.set("challenge", challenge);
+
+	const guild = client.guilds.cache.get("711769157078876305");
+	guild.members.cache.forEach(async user => {
+		const playerData = await client.db.get(`acc${user.id}`);
+		if (playerData) {
+			if (playerData.settings.senddailynotifs === true) {
+				let lastDaily = playerData.lastDaily;
+				if (!lastDaily || !isNaN(lastDaily)) {
+					lastDaily = DateTime.fromISO("2021-01-01");
+				}
+				else {
+					lastDaily = DateTime.fromISO(lastDaily);
+				}
+
+				const interval = Interval.fromDateTimes(DateTime.now(), lastDaily.plus({ days: 1 }));
+				if (interval.invalid !== null && !playerData.notifSent) {
+					playerData.notifSent = true;
+					user.send("Notification: Your daily reward is now available! Claim it using `cd-daily`.")
+						.catch(() => console.log(`unable to send notification to user ${user.id}`));
+					await client.db.set(`acc${user.id}`, playerData);
+				}
+			}
+		}
+	});
 }, 180000);

@@ -257,7 +257,7 @@ module.exports = {
 									return reactionMessage.edit(end);
 								}
 
-								const result = await raceCommand.race(message, playerCar, opponentCar, track);
+								const result = await raceCommand.race(message, playerCar, opponentCar, track, playerData.settings.enablegraphics);
 								const delay = ms => new Promise(res => setTimeout(res, ms));
 								await delay(2000);
 
@@ -391,7 +391,7 @@ module.exports = {
 
 		function rarityCheck(currentCar) {
 			if (currentCar["rq"] > 79) { //leggie
-				return message.client.emojis.cache.get("726025494138454097");
+				return message.client.emojis.cache.get("857512942471479337");
 			}
 			else if (currentCar["rq"] > 64 && currentCar["rq"] <= 79) { //epic
 				return message.client.emojis.cache.get("726025468230238268");
@@ -400,7 +400,7 @@ module.exports = {
 				return message.client.emojis.cache.get("726025431937187850");
 			}
 			else if (currentCar["rq"] > 39 && currentCar["rq"] <= 49) { //super
-				return message.client.emojis.cache.get("726025394104434759");
+				return message.client.emojis.cache.get("857513197937623042");
 			}
 			else if (currentCar["rq"] > 29 && currentCar["rq"] <= 39) { //rare
 				return message.client.emojis.cache.get("726025302656024586");

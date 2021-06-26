@@ -12,6 +12,7 @@ const Discord = require("discord.js-light");
 const fs = require("fs");
 const carFiles = fs.readdirSync("./commands/cars").filter(file => file.endsWith('.json'));
 const tracksets = fs.readdirSync("./commands/tracksets").filter(file => file.endsWith('.json'));
+const stringSimilarity = require("string-similarity");
 
 module.exports = {
     name: "quickrace",
@@ -29,7 +30,8 @@ module.exports = {
             return response.author.id === message.author.id;
         };
         const raceCommand = require("./sharedfiles/race.js");
-        const player = await db.get(`acc${message.author.id}.hand`);
+        const playerData = await db.get(`acc${message.author.id}`);
+        const player = playerData.hand;
         if (!player) {
 			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             const errorMessage = new Discord.MessageEmbed()
@@ -367,7 +369,7 @@ module.exports = {
 						message.channel.send(intermission);
 					}
 					message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                    return raceCommand.race(message, playerCar, opponentCar, currentTrack);
+                    return raceCommand.race(message, playerCar, opponentCar, currentTrack, playerData.settings.enablegraphics);
                 });
 
             function createCar(currentCar) {
@@ -379,12 +381,14 @@ module.exports = {
 				}
 
                 const carModule = {
+                    rq: car["rq"],
                     topSpeed: car["topSpeed"],
                     accel: car["0to60"],
                     handling: car["handling"],
                     driveType: car["driveType"],
                     tyreType: car["tyreType"],
                     weight: car["weight"],
+                    enginePos: car["enginePos"],
                     gc: car["gc"],
                     tcs: car["tcs"],
                     abs: car["abs"],
@@ -392,24 +396,24 @@ module.exports = {
                     ola: car["ola"],
                     racehud: car[`racehud${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}`]
                 };
-
+    
                 if (currentCar.gearingUpgrade > 0) {
                     carModule.topSpeed = car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}TopSpeed`];
                     carModule.accel = car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}0to60`];
                     carModule.handling = car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}Handling`];
                 }
-
-				let carSpecs = `(${rarity} ${car["rq"]}) ${make} ${car["model"]} (${car["modelYear"]}) [${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}]\n`;
-				carSpecs += `Top Speed: ${carModule.topSpeed}MPH\n`;
-				if (carModule.topSpeed < 60) {
-					carModule.accel = 99.9;
-					carSpecs += "0-60MPH: N/A\n";
-				}
-				else {
-					carSpecs += `0-60MPH: ${carModule.accel} sec\n`;
-				}
+    
+                let carSpecs = `(${rarity} ${car["rq"]}) ${make} ${car["model"]} (${car["modelYear"]}) [${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}]\n`;
+                carSpecs += `Top Speed: ${carModule.topSpeed}MPH\n`;
+                if (carModule.topSpeed < 60) {
+                    carModule.accel = 99.9;
+                    carSpecs += "0-60MPH: N/A\n";
+                }
+                else {
+                    carSpecs += `0-60MPH: ${carModule.accel} sec\n`;
+                }
                 carSpecs += `Handling: ${carModule.handling}\n`;
-				carSpecs += `Drive Type: ${carModule.driveType}\n`;
+                carSpecs += `${carModule.enginePos} Engine, ${carModule.driveType}\n`;
                 carSpecs += `${carModule.tyreType} Tyres\n`;
                 carSpecs += `Weight: ${carModule.weight}kg\n`;
                 carSpecs += `Ground Clearance: ${carModule.gc}\n`;
@@ -435,7 +439,7 @@ module.exports = {
 
             function rarityCheck(currentCar) {
                 if (currentCar["rq"] > 79) { //leggie
-                    return message.client.emojis.cache.get("726025494138454097");
+                    return message.client.emojis.cache.get("857512942471479337");
                 }
                 else if (currentCar["rq"] > 64 && currentCar["rq"] <= 79) { //epic
                     return message.client.emojis.cache.get("726025468230238268");
@@ -444,7 +448,7 @@ module.exports = {
                     return message.client.emojis.cache.get("726025431937187850");
                 }
                 else if (currentCar["rq"] > 39 && currentCar["rq"] <= 49) { //super
-                    return message.client.emojis.cache.get("726025394104434759");
+                    return message.client.emojis.cache.get("857513197937623042");
                 }
                 else if (currentCar["rq"] > 29 && currentCar["rq"] <= 39) { //rare
                     return message.client.emojis.cache.get("726025302656024586");

@@ -11,46 +11,12 @@ const Discord = require("discord.js-light");
 const Canvas = require("canvas");
 
 module.exports = {
-	async assignIndex(message, deck, currentRound) {
+	async assignIndex(message, deck, currentRound, graphics) {
 		const raceCommand = require("../sharedfiles/race.js");
 		const wait = message.channel.send("**Loading deck screen, this may take a while... (please wait)**");
 		const filter = response => {
             return response.author.id === message.author.id;
         };
-		let attachment;
-
-		try {
-			const opponentPlacement = [{x: 55, y: 63}, {x: 195, y: 63}, {x: 335, y: 63}, {x: 475, y: 63}, {x: 616, y: 63}];
-			const handPlacement = [{x: 96, y: 301}, {x: 236, y: 301}, {x: 377, y: 301}, {x: 517, y: 301}, {x: 657, y: 301}];
-			const canvas = Canvas.createCanvas(794, 390);
-			const ctx = canvas.getContext("2d");
-			const track1 = require(`../tracksets/${currentRound["tracksets"][0]}`);
-
-			const [foreground , background] = await Promise.all([
-				await Canvas.loadImage("https://cdn.discordapp.com/attachments/715771423779455077/848829168234135552/deck_thing.png"),
-				await Canvas.loadImage(track1["background"])
-			]);
-			ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
-			ctx.drawImage(foreground, 0, 0, canvas.width, canvas.height);
-
-			for (let i = 0; i < 5; i++) {
-				let playerCar = require(`../cars/${deck["hand"][i]}`);
-				let opponentCar = require(`../cars/${currentRound["hand"][i]}`);
-				let [playerHud, opponentHud] = await Promise.all([
-					Canvas.loadImage(playerCar[`racehud${deck["tunes"][i]}`]),
-					Canvas.loadImage(opponentCar[`racehud${currentRound["tunes"][i]}`])
-				]);
-				ctx.drawImage(playerHud, handPlacement[i].x, handPlacement[i].y, 126, 76);
-				ctx.drawImage(opponentHud, opponentPlacement[i].x, opponentPlacement[i].y, 126, 76);
-			}
-
-			attachment = new Discord.MessageAttachment(canvas.toBuffer(), "deck.png");
-		}
-		catch (error) {
-			console.log(error);
-			let errorPic = "https://cdn.discordapp.com/attachments/716917404868935691/786411449341837322/unknown.png";
-			attachment = new Discord.MessageAttachment(errorPic, "deck.png");
-		}
 
 		let opponentList = "", trackList = "";
 		for (let i = 0; i < 5; i++) {
@@ -66,7 +32,7 @@ module.exports = {
 			trackList += `${i + 1} - ${track.trackName}\n`;
 		}
 
-		const deckScreen = new Discord.MessageEmbed()
+		let deckScreen = new Discord.MessageEmbed()
 			.setColor("#34aeeb")
 			.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 			.setTitle("Assign the cards in your deck to their respective indexes, from left to right.")
@@ -75,9 +41,46 @@ module.exports = {
 				{ name: "Opponents", value: opponentList, inline: true },
 				{ name: "Tracksets", value: trackList, inline: true }
 			)
-			.attachFiles(attachment)
-			.setImage("attachment://deck.png")
 			.setTimestamp();
+
+		if (graphics) {
+			let attachment;
+			try {
+				const opponentPlacement = [{x: 55, y: 63}, {x: 195, y: 63}, {x: 335, y: 63}, {x: 475, y: 63}, {x: 616, y: 63}];
+				const handPlacement = [{x: 96, y: 301}, {x: 236, y: 301}, {x: 377, y: 301}, {x: 517, y: 301}, {x: 657, y: 301}];
+				const canvas = Canvas.createCanvas(794, 390);
+				const ctx = canvas.getContext("2d");
+				const track1 = require(`../tracksets/${currentRound["tracksets"][0]}`);
+	
+				const [foreground , background] = await Promise.all([
+					await Canvas.loadImage("https://cdn.discordapp.com/attachments/715771423779455077/848829168234135552/deck_thing.png"),
+					await Canvas.loadImage(track1["background"])
+				]);
+				ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
+				ctx.drawImage(foreground, 0, 0, canvas.width, canvas.height);
+	
+				for (let i = 0; i < 5; i++) {
+					let playerCar = require(`../cars/${deck["hand"][i]}`);
+					let opponentCar = require(`../cars/${currentRound["hand"][i]}`);
+					let [playerHud, opponentHud] = await Promise.all([
+						Canvas.loadImage(playerCar[`racehud${deck["tunes"][i]}`]),
+						Canvas.loadImage(opponentCar[`racehud${currentRound["tunes"][i]}`])
+					]);
+					ctx.drawImage(playerHud, handPlacement[i].x, handPlacement[i].y, 126, 76);
+					ctx.drawImage(opponentHud, opponentPlacement[i].x, opponentPlacement[i].y, 126, 76);
+				}
+	
+				attachment = new Discord.MessageAttachment(canvas.toBuffer(), "deck.png");
+			}
+			catch (error) {
+				console.log(error);
+				let errorPic = "https://cdn.discordapp.com/attachments/716917404868935691/786411449341837322/unknown.png";
+				attachment = new Discord.MessageAttachment(errorPic, "deck.png");
+			}
+		}
+		
+		deckScreen.attachFiles(attachment);
+		deckScreen.setImage("attachment://deck.png");
 		(await wait).delete();
 
 		let result = 0;
@@ -229,27 +232,27 @@ module.exports = {
         }
 
 		function rarityCheck(currentCar) {
-            if (currentCar["rq"] > 79) { //leggie
-                return message.client.emojis.cache.get("726025494138454097");
-            }
-            else if (currentCar["rq"] > 64 && currentCar["rq"] <= 79) { //epic
-                return message.client.emojis.cache.get("726025468230238268");
-            }
-            else if (currentCar["rq"] > 49 && currentCar["rq"] <= 64) { //ultra
-                return message.client.emojis.cache.get("726025431937187850");
-            }
-            else if (currentCar["rq"] > 39 && currentCar["rq"] <= 49) { //super
-                return message.client.emojis.cache.get("726025394104434759");
-            }
-            else if (currentCar["rq"] > 29 && currentCar["rq"] <= 39) { //rare
-                return message.client.emojis.cache.get("726025302656024586");
-            }
-            else if (currentCar["rq"] > 19 && currentCar["rq"] <= 29) { //uncommon
-                return message.client.emojis.cache.get("726025273421725756");
-            }
-            else { //common
-                return message.client.emojis.cache.get("726020544264273928");
-            }
-        }
+			if (currentCar["rq"] > 79) { //leggie
+				return message.client.emojis.cache.get("857512942471479337");
+			}
+			else if (currentCar["rq"] > 64 && currentCar["rq"] <= 79) { //epic
+				return message.client.emojis.cache.get("726025468230238268");
+			}
+			else if (currentCar["rq"] > 49 && currentCar["rq"] <= 64) { //ultra
+				return message.client.emojis.cache.get("726025431937187850");
+			}
+			else if (currentCar["rq"] > 39 && currentCar["rq"] <= 49) { //super
+				return message.client.emojis.cache.get("857513197937623042");
+			}
+			else if (currentCar["rq"] > 29 && currentCar["rq"] <= 39) { //rare
+				return message.client.emojis.cache.get("726025302656024586");
+			}
+			else if (currentCar["rq"] > 19 && currentCar["rq"] <= 29) { //uncommon
+				return message.client.emojis.cache.get("726025273421725756");
+			}
+			else { //common
+				return message.client.emojis.cache.get("726020544264273928");
+			}
+		}
 	}
 }

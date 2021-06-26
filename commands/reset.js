@@ -153,7 +153,15 @@ module.exports = {
 					reactionMessage.reactions.removeAll();
 					switch (collected.first().emoji.name) {
 						case "✅":
-							await message.client.db.set(`acc${user.id}`, { money: 0, fuseTokens: 0, trophies: 0, garage: [], decks: [], campaignProgress: { chapter: 0, part: 1, race: 1 }, unclaimedRewards: { money: 0, fuseTokens: 0, trophies: 0, cars: [], packs: [] } });
+							await message.client.db.set(`acc${user.id}`, { money: 0,
+								fuseTokens: 0,
+								trophies: 0,
+								garage: [],
+								decks: [],
+								campaignProgress: { chapter: 0, part: 1, race: 1 },
+								unclaimedRewards: { money: 0, fuseTokens: 0, trophies: 0, cars: [], packs: [] },
+								settings: { enablegraphics: true, senddailynotifs: false, filtercarlist: true, filtergarage: true, showbmcars: false }
+							});
 							let i = 0;
 							while (i < 5) {
 								let carFile = starterCars[i];

@@ -12,6 +12,7 @@ const fs = require("fs");
 const carFiles = fs.readdirSync("./commands/cars").filter(file => file.endsWith('.json'));
 const moment = require("moment");
 const Canvas = require("canvas");
+const { DateTime } = require("luxon");
 
 module.exports = {
 	name: "dealership",
@@ -26,6 +27,7 @@ module.exports = {
 
 		try {
 			const db = message.client.db;
+			const settings = await db.get(`acc${message.author.id}.settings`);
 			const cardPlacement = [{ x: 7, y: 3 }, { x: 178, y: 3 }, { x: 349, y: 3 }, { x: 520, y: 3 }, { x: 7, y: 143 }, { x: 178, y: 143 }, { x: 349, y: 143 }, { x: 520, y: 143 }];
 
 			const moneyEmoji = message.client.emojis.cache.get("726017235826770021");
@@ -44,20 +46,25 @@ module.exports = {
 			const ctx = canvas.getContext("2d");
 			let attachment, promises, cucked = false;
 
-			try {
-				const background = await Canvas.loadImage("https://cdn.discordapp.com/attachments/715771423779455077/799579880819785778/unknown.png");
-				ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
-
-				const cards = catalog.map(car => {
-					let currentCar = require(`./cars/${car.carFile}`);
-					return Canvas.loadImage(currentCar["card"]);
-				});
-				promises = await Promise.all(cards);
+			if (settings.enablegraphics) {
+				try {
+					const background = await Canvas.loadImage("https://cdn.discordapp.com/attachments/715771423779455077/799579880819785778/unknown.png");
+					ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
+	
+					const cards = catalog.map(car => {
+						let currentCar = require(`./cars/${car.carFile}`);
+						return Canvas.loadImage(currentCar["card"]);
+					});
+					promises = await Promise.all(cards);
+				}
+				catch (error) {
+					console.log(error);
+					let errorPic = "https://cdn.discordapp.com/attachments/715771423779455077/796213265532583966/unknown.png";
+					attachment = new Discord.MessageAttachment(errorPic, "dealership.png");
+					cucked = true;
+				}
 			}
-			catch (error) {
-				console.log(error);
-				let errorPic = "https://cdn.discordapp.com/attachments/715771423779455077/796213265532583966/unknown.png";
-				attachment = new Discord.MessageAttachment(errorPic, "dealership.png");
+			else {
 				cucked = true;
 			}
 
@@ -82,11 +89,14 @@ module.exports = {
 			}
 
 			(await wait).delete();
-			if (!cucked) {
-				attachment = new Discord.MessageAttachment(canvas.toBuffer(), "dealership.png");
+			if (settings.enablegraphics) {
+				if (!cucked) {
+					attachment = new Discord.MessageAttachment(canvas.toBuffer(), "dealership.png");
+				}
+				deckScreen.attachFiles(attachment);
+				deckScreen.setImage("attachment://dealership.png");
 			}
-			deckScreen.attachFiles(attachment);
-			deckScreen.setImage("attachment://dealership.png");
+			
 			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 			return message.channel.send(deckScreen);
 
@@ -209,7 +219,7 @@ module.exports = {
 		catch (error) {
 			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 			console.error(error);
-			wait.delete();
+			(await wait).delete();
 			const errorMessage = new Discord.MessageEmbed()
 				.setColor("#fc0303")
 				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))

@@ -32,7 +32,7 @@ module.exports = {
 		else {
 			lastDaily = DateTime.fromISO(lastDaily);
 		}
-		const interval = Interval.fromDateTimes(DateTime.now(), lastDaily.plus({ days: 1 }))
+		const interval = Interval.fromDateTimes(DateTime.now(), lastDaily.plus({ days: 1 }));
 
 		if (interval.invalid !== null) {
 			const openPackCommand = require("./sharedfiles/openpack.js");
@@ -147,6 +147,7 @@ module.exports = {
 			playerData.money += moneyReward;
 			playerData.fuseTokens += fuseReward;
 			playerData.dailyStreak = streak;
+			playerData.notifSent = false;
 			await db.set(`acc${message.author.id}`, playerData);
 
 			const moneyEmoji = message.client.emojis.cache.get("726017235826770021");

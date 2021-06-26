@@ -11,35 +11,37 @@ const Discord = require("discord.js-light");
 const Canvas = require("canvas");
 
 module.exports = {
-	async race(message, player, opponent, currentTrack) {
+	async race(message, player, opponent, currentTrack, graphics) {
 		const wait = message.channel.send("**Loading race, please wait... (may take a while)**");
 
 		try {
 			let description = `__Selected Track: ${currentTrack["trackName"]}__`;
 			let attachment;
-			try {
-				const canvas = Canvas.createCanvas(674, 379);
-				const ctx = canvas.getContext("2d");
-
-				const [background, overlay, playerHud, opponentHud, map] = await Promise.all([
-					Canvas.loadImage(currentTrack["background"]),
-					Canvas.loadImage("https://cdn.discordapp.com/attachments/716917404868935691/795177817116901386/race_template_thing.png"),
-					Canvas.loadImage(player.racehud),
-					Canvas.loadImage(opponent.racehud),
-					Canvas.loadImage(currentTrack["map"]) ]);
+			if (graphics) {
+				try {
+					const canvas = Canvas.createCanvas(674, 379);
+					const ctx = canvas.getContext("2d");
 	
-				ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
-				ctx.drawImage(overlay, 0, 0, canvas.width, canvas.height);
-				ctx.drawImage(playerHud, 35, 69, 186, 113);
-				ctx.drawImage(opponentHud, 457, 198, 186, 112);
-				ctx.drawImage(map, 258, 228, 142, 142);
-	
-				attachment = new Discord.MessageAttachment(canvas.toBuffer(), "thing.png");
-			}
-			catch (error) {
-				console.log(error);
-				let errorPic = "https://cdn.discordapp.com/attachments/716917404868935691/786411449341837322/unknown.png";
-				attachment = new Discord.MessageAttachment(errorPic, "thing.png");
+					const [background, overlay, playerHud, opponentHud, map] = await Promise.all([
+						Canvas.loadImage(currentTrack["background"]),
+						Canvas.loadImage("https://cdn.discordapp.com/attachments/716917404868935691/795177817116901386/race_template_thing.png"),
+						Canvas.loadImage(player.racehud),
+						Canvas.loadImage(opponent.racehud),
+						Canvas.loadImage(currentTrack["map"]) ]);
+		
+					ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
+					ctx.drawImage(overlay, 0, 0, canvas.width, canvas.height);
+					ctx.drawImage(playerHud, 35, 69, 186, 113);
+					ctx.drawImage(opponentHud, 457, 198, 186, 112);
+					ctx.drawImage(map, 258, 228, 142, 142);
+		
+					attachment = new Discord.MessageAttachment(canvas.toBuffer(), "thing.png");
+				}
+				catch (error) {
+					console.log(error);
+					let errorPic = "https://cdn.discordapp.com/attachments/716917404868935691/786411449341837322/unknown.png";
+					attachment = new Discord.MessageAttachment(errorPic, "thing.png");
+				}
 			}
 
 			const drivePlacement = ["4WD", "FWD", "RWD"];
@@ -64,14 +66,16 @@ module.exports = {
 				description += `\nThe winning car had the following advantages: ${raceInfo}`;
 			}
 
-			const resultScreen = new Discord.MessageEmbed()
+			let resultScreen = new Discord.MessageEmbed()
 				.setColor(colorCode)
 				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 				.setTitle(raceMessage)
 				.setDescription(description)
-				.attachFiles(attachment)
-				.setImage("attachment://thing.png")
 				.setTimestamp();
+			if (graphics) {
+				resultScreen.attachFiles(attachment)
+					.setImage("attachment://thing.png");
+			}
 			message.channel.send(resultScreen);
 			(await wait).delete();
 			return result;

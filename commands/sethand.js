@@ -259,27 +259,27 @@ module.exports = {
         }
 
 		function rarityCheck(currentCar) {
-            if (currentCar["rq"] > 79) { //leggie
-                return message.client.emojis.cache.get("726025494138454097");
-            }
-            else if (currentCar["rq"] > 64 && currentCar["rq"] <= 79) { //epic
-                return message.client.emojis.cache.get("726025468230238268");
-            }
-            else if (currentCar["rq"] > 49 && currentCar["rq"] <= 64) { //ultra
-                return message.client.emojis.cache.get("726025431937187850");
-            }
-            else if (currentCar["rq"] > 39 && currentCar["rq"] <= 49) { //super
-                return message.client.emojis.cache.get("726025394104434759");
-            }
-            else if (currentCar["rq"] > 29 && currentCar["rq"] <= 39) { //rare
-                return message.client.emojis.cache.get("726025302656024586");
-            }
-            else if (currentCar["rq"] > 19 && currentCar["rq"] <= 29) { //uncommon
-                return message.client.emojis.cache.get("726025273421725756");
-            }
-            else { //common
-                return message.client.emojis.cache.get("726020544264273928");
-            }
-        }
+			if (currentCar["rq"] > 79) { //leggie
+				return message.client.emojis.cache.get("857512942471479337");
+			}
+			else if (currentCar["rq"] > 64 && currentCar["rq"] <= 79) { //epic
+				return message.client.emojis.cache.get("726025468230238268");
+			}
+			else if (currentCar["rq"] > 49 && currentCar["rq"] <= 64) { //ultra
+				return message.client.emojis.cache.get("726025431937187850");
+			}
+			else if (currentCar["rq"] > 39 && currentCar["rq"] <= 49) { //super
+				return message.client.emojis.cache.get("857513197937623042");
+			}
+			else if (currentCar["rq"] > 29 && currentCar["rq"] <= 39) { //rare
+				return message.client.emojis.cache.get("726025302656024586");
+			}
+			else if (currentCar["rq"] > 19 && currentCar["rq"] <= 29) { //uncommon
+				return message.client.emojis.cache.get("726025273421725756");
+			}
+			else { //common
+				return message.client.emojis.cache.get("726020544264273928");
+			}
+		}
     }
 }

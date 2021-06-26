@@ -266,7 +266,7 @@ module.exports = {
 				}
 			}
 
-			let results = await deckCommand.assignIndex(message, deck, challenge.roster[challenge.players[`acc${message.author.id}`] || 0]);
+			let results = await deckCommand.assignIndex(message, deck, challenge.roster[challenge.players[`acc${message.author.id}`] || 0], playerData.settings.enablegraphics);
 			if (results === "kekw") return;
 			if (results > 0) {
 				let round = (challenge.players[`acc${message.author.id}`] + 1) || 1;
@@ -310,7 +310,7 @@ module.exports = {
 
 		function rarityCheck(currentCar) {
 			if (currentCar["rq"] > 79) { //leggie
-				return message.client.emojis.cache.get("726025494138454097");
+				return message.client.emojis.cache.get("857512942471479337");
 			}
 			else if (currentCar["rq"] > 64 && currentCar["rq"] <= 79) { //epic
 				return message.client.emojis.cache.get("726025468230238268");
@@ -319,7 +319,7 @@ module.exports = {
 				return message.client.emojis.cache.get("726025431937187850");
 			}
 			else if (currentCar["rq"] > 39 && currentCar["rq"] <= 49) { //super
-				return message.client.emojis.cache.get("726025394104434759");
+				return message.client.emojis.cache.get("857513197937623042");
 			}
 			else if (currentCar["rq"] > 29 && currentCar["rq"] <= 39) { //rare
 				return message.client.emojis.cache.get("726025302656024586");

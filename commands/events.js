@@ -22,6 +22,7 @@ module.exports = {
     async execute(message, args) {
 		const db = message.client.db;
 		const events = await db.get("events");
+		const settings = await db.get(`acc${message.author.id}.settings`);
 		const filter = response => {
             return response.author.id === message.author.id;
         };
@@ -237,68 +238,71 @@ module.exports = {
 				ctx.font = '36px "Roboto Condensed"';
 				ctx.textAlign = "center";
 				let attachment, promises, cucked = false;
-				try {
-					let huds = event.roster.map(car => {
-						let currentCar = require(`./cars/${car.car}`);
-						return Canvas.loadImage(currentCar[`racehud${car.gearingUpgrade}${car.engineUpgrade}${car.chassisUpgrade}`]);
-					});
-					promises = await Promise.all(huds);
-
-					let overlay = await Canvas.loadImage("https://cdn.discordapp.com/attachments/716917404868935691/801292983496474624/test.png");
-					let background = await Canvas.loadImage(event.background);
-					ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
-					ctx.drawImage(overlay, 0, 0, canvas.width, canvas.height);
-					ctx.strokeStyle = "#000000";
-					
-					for (y = 0; y < event.roster.length; y++) {
-						console.log(y);
-						ctx.drawImage(promises[y], hudPlacement[y].x, hudPlacement[y].y, 171, 103);
-
-						for (let [key, value] of Object.entries(event.roster[y].reward)) {
-							switch (key) {
-								case "money":
-									ctx.fillStyle = "#8ac545";
-									ctx.fillText(value, rewardPlacement[y].x + 88, rewardPlacement[y].y + 65);
-									ctx.strokeText(value, rewardPlacement[y].x + 88, rewardPlacement[y].y + 65);
-									break;
-								case "fuseTokens":
-									ctx.fillStyle = "#4800ff";
-									ctx.fillText(value, rewardPlacement[y].x + 88, rewardPlacement[y].y + 65);
-									ctx.strokeText(value, rewardPlacement[y].x + 88, rewardPlacement[y].y + 65);
-									break;
-								case "car":
-									let car = require(`./cars/${event.roster[y].reward.car}`);
-									let card = await Canvas.loadImage(car["card"]);
-									ctx.drawImage(card, rewardPlacement[y].x, rewardPlacement[y].y, 172, 105);
-									break;
-								case "pack":
-									let pack = require(`./packs/${event.roster[y].reward.pack}`);
-									let packPic = await Canvas.loadImage(pack["pack"]);
-									ctx.drawImage(packPic, rewardPlacement[y].x, rewardPlacement[y].y, 172, 105);
-									break;
-								default:
-									break;
+				if (settings.enablegraphics) {
+					try {
+						let huds = event.roster.map(car => {
+							let currentCar = require(`./cars/${car.car}`);
+							return Canvas.loadImage(currentCar[`racehud${car.gearingUpgrade}${car.engineUpgrade}${car.chassisUpgrade}`]);
+						});
+						promises = await Promise.all(huds);
+	
+						let overlay = await Canvas.loadImage("https://cdn.discordapp.com/attachments/716917404868935691/801292983496474624/test.png");
+						let background = await Canvas.loadImage(event.background);
+						ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
+						ctx.drawImage(overlay, 0, 0, canvas.width, canvas.height);
+						ctx.strokeStyle = "#000000";
+						
+						for (y = 0; y < event.roster.length; y++) {
+							console.log(y);
+							ctx.drawImage(promises[y], hudPlacement[y].x, hudPlacement[y].y, 171, 103);
+	
+							for (let [key, value] of Object.entries(event.roster[y].reward)) {
+								switch (key) {
+									case "money":
+										ctx.fillStyle = "#8ac545";
+										ctx.fillText(value, rewardPlacement[y].x + 88, rewardPlacement[y].y + 65);
+										ctx.strokeText(value, rewardPlacement[y].x + 88, rewardPlacement[y].y + 65);
+										break;
+									case "fuseTokens":
+										ctx.fillStyle = "#4800ff";
+										ctx.fillText(value, rewardPlacement[y].x + 88, rewardPlacement[y].y + 65);
+										ctx.strokeText(value, rewardPlacement[y].x + 88, rewardPlacement[y].y + 65);
+										break;
+									case "car":
+										let car = require(`./cars/${event.roster[y].reward.car}`);
+										let card = await Canvas.loadImage(car["card"]);
+										ctx.drawImage(card, rewardPlacement[y].x, rewardPlacement[y].y, 172, 105);
+										break;
+									case "pack":
+										let pack = require(`./packs/${event.roster[y].reward.pack}`);
+										let packPic = await Canvas.loadImage(pack["pack"]);
+										ctx.drawImage(packPic, rewardPlacement[y].x, rewardPlacement[y].y, 172, 105);
+										break;
+									default:
+										break;
+								}
+							}
+							if (event.roster[y].reward.trophies) {
+								ctx.fillStyle = "#ff9c0d";
+								ctx.fillText(event.roster[y].reward.trophies, rewardPlacement[y].x + 88, rewardPlacement[y].y + 95);
+								ctx.strokeText(event.roster[y].reward.trophies, rewardPlacement[y].x + 88, rewardPlacement[y].y + 95);
 							}
 						}
-						if (event.roster[y].reward.trophies) {
-							ctx.fillStyle = "#ff9c0d";
-							ctx.fillText(event.roster[y].reward.trophies, rewardPlacement[y].x + 88, rewardPlacement[y].y + 95);
-							ctx.strokeText(event.roster[y].reward.trophies, rewardPlacement[y].x + 88, rewardPlacement[y].y + 95);
-						}
 					}
+					catch (error) {
+						console.log(error);
+						let errorPic = "https://cdn.discordapp.com/attachments/716917404868935691/801370166826238002/unknown.png";
+						attachment = new Discord.MessageAttachment(errorPic, "event.png");
+						cucked = true;
+					}
+	
+					if (!cucked) {
+						attachment = new Discord.MessageAttachment(canvas.toBuffer(), "event.png");
+					}
+					infoScreen.attachFiles(attachment);
+					infoScreen.setImage("attachment://event.png");
 				}
-				catch (error) {
-					console.log(error);
-					let errorPic = "https://cdn.discordapp.com/attachments/716917404868935691/801370166826238002/unknown.png";
-					attachment = new Discord.MessageAttachment(errorPic, "event.png");
-					cucked = true;
-				}
-
-				if (!cucked) {
-					attachment = new Discord.MessageAttachment(canvas.toBuffer(), "event.png");
-				}
-				infoScreen.attachFiles(attachment);
-				infoScreen.setImage("attachment://event.png");
+				
 				wait.delete();
 				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 				return message.channel.send(infoScreen);
@@ -353,27 +357,27 @@ module.exports = {
         }
 
 		function rarityCheck(currentCar) {
-            if (currentCar["rq"] > 79) { //leggie
-                return message.client.emojis.cache.get("726025494138454097");
-            }
-            else if (currentCar["rq"] > 64 && currentCar["rq"] <= 79) { //epic
-                return message.client.emojis.cache.get("726025468230238268");
-            }
-            else if (currentCar["rq"] > 49 && currentCar["rq"] <= 64) { //ultra
-                return message.client.emojis.cache.get("726025431937187850");
-            }
-            else if (currentCar["rq"] > 39 && currentCar["rq"] <= 49) { //super
-                return message.client.emojis.cache.get("726025394104434759");
-            }
-            else if (currentCar["rq"] > 29 && currentCar["rq"] <= 39) { //rare
-                return message.client.emojis.cache.get("726025302656024586");
-            }
-            else if (currentCar["rq"] > 19 && currentCar["rq"] <= 29) { //uncommon
-                return message.client.emojis.cache.get("726025273421725756");
-            }
-            else { //common
-                return message.client.emojis.cache.get("726020544264273928");
-            }
-        }
+			if (currentCar["rq"] > 79) { //leggie
+				return message.client.emojis.cache.get("857512942471479337");
+			}
+			else if (currentCar["rq"] > 64 && currentCar["rq"] <= 79) { //epic
+				return message.client.emojis.cache.get("726025468230238268");
+			}
+			else if (currentCar["rq"] > 49 && currentCar["rq"] <= 64) { //ultra
+				return message.client.emojis.cache.get("726025431937187850");
+			}
+			else if (currentCar["rq"] > 39 && currentCar["rq"] <= 49) { //super
+				return message.client.emojis.cache.get("857513197937623042");
+			}
+			else if (currentCar["rq"] > 29 && currentCar["rq"] <= 39) { //rare
+				return message.client.emojis.cache.get("726025302656024586");
+			}
+			else if (currentCar["rq"] > 19 && currentCar["rq"] <= 29) { //uncommon
+				return message.client.emojis.cache.get("726025273421725756");
+			}
+			else { //common
+				return message.client.emojis.cache.get("726020544264273928");
+			}
+		}
     }
 }

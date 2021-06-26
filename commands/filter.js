@@ -21,8 +21,8 @@ module.exports = {
 	async execute(message, args) {
 		const db = message.client.db;
 		const criteria = args[0].toLowerCase().replace("type", "Type").replace("count", "Count").replace("year", "Year").replace("pos", "Pos").replace("style", "Style").replace("prize", "Prize").replace("stock", "Stock").replace("upgrade", "Upgrade").replace("max", "Max").replace("owned", "Owned");
-		var filter = await db.get(`acc${message.author.id}.filter`) || {};
-		var infoScreen, searchResults;
+		let filter = await db.get(`acc${message.author.id}.filter`) || {};
+		let infoScreen, searchResults;
 
 		if (!args[1] && criteria !== "view") {
 			let desc = `In fact, the \`${criteria}\` criteria doesn't exist. Here is a list of available filter criterias. 
