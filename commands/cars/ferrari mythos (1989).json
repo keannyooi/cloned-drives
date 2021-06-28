@@ -1,0 +1,54 @@
+{
+    "rq": 49,
+    "make": "Ferrari",
+    "model": "Mythos",
+    "modelYear": 1989,
+    "country": "IT",
+    "topSpeed": 180,
+    "0to60": 6.0,
+    "handling": 82,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Unique", "Ultra Expensive", "Sleeper", "Eargasm", "Concept"],
+    "isPrize": false,
+
+    "weight": 1250,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Low",
+    "fuelType": "Petrol",
+    "mra": 83.33,
+    "ola": 76.67,
+    "description": "Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/856545432649859082/RariMythos.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/856545874972115004/rarimythos.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/856545881725861938/rarimythos333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/856545885839163393/rarimythos666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/856545913173311518/rarimythos996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/856545914717601812/rarimythos969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/856545893327044608/rarimythos699.png",
+
+    "333TopSpeed": 183,
+    "3330to60": 5.7,
+    "333Handling": 85,
+
+    "666TopSpeed": 186,
+    "6660to60": 5.4,
+    "666Handling": 87,
+
+    "996TopSpeed": 189,
+    "9960to60": 5.1,
+    "996Handling": 87,
+
+    "969TopSpeed": 189,
+    "9690to60": 5.4,
+    "969Handling": 91,
+
+    "699TopSpeed": 186,
+    "6990to60": 5.1,
+    "699Handling": 91
+}
