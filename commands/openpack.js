@@ -41,7 +41,7 @@ module.exports = {
 			let packList = "";
 			for (i = 1; i <= searchResults.length; i++) {
 				let currentPack = require(`./packs/${searchResults[i - 1]}`);
-				packList += `${i} - ` + currentPack["packName"] + "\n";
+				packList += `${i} - ${currentPack["packName"]}\n`;
 			}
 
 			const infoScreen = new Discord.MessageEmbed()

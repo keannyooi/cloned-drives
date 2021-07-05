@@ -1,0 +1,54 @@
+{
+    "rq": 59,
+    "make": "Tesla",
+    "model": "Roadster",
+    "modelYear": 2006,
+    "country": "US",
+    "topSpeed": 127,
+    "0to60": 5.2,
+    "handling": 80,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+
+    "weight": 1220,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Roadster",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Electric",
+    "mra": 65.99,
+    "ola": 77.40,
+    "description": "Back when the car first used a 2-speed gearbox, its life expectancy is so short Tesla had to lock the car in second gear, severely impacting its acceelration. Card by keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/848059656869380096/tesla_roadster.png",
+    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/848058145162657792/roadster_2speed_000.jpg",
+    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/848058146873278494/roadster_2speed_333.jpg",
+    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/848058154238607390/roadster_2speed_666.jpg",
+    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/848058167304912896/roadster_2speed_996.jpg",
+    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/848058161998069800/roadster_2speed_969.jpg",
+    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/848058158970961920/roadster_2speed_699.jpg",
+
+    "333TopSpeed": 131,
+    "3330to60": 4.9,
+    "333Handling": 83,
+
+    "666TopSpeed": 135,
+    "6660to60": 4.7,
+    "666Handling": 85,
+
+    "996TopSpeed": 139,
+    "9960to60": 4.4,
+    "996Handling": 85,
+
+    "969TopSpeed": 139,
+    "9690to60": 4.7,
+    "969Handling": 89,
+
+    "699TopSpeed": 135,
+    "6990to60": 4.4,
+    "699Handling": 89
+}

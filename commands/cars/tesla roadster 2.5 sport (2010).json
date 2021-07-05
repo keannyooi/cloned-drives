@@ -1,0 +1,54 @@
+{
+    "rq": 75,
+    "make": "Tesla",
+    "model": "Roadster 2.5 Sport",
+    "modelYear": 2010,
+    "country": "US",
+    "topSpeed": 124,
+    "0to60": 3.8,
+    "handling": 85,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+
+    "weight": 1235,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Roadster",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Electric",
+    "mra": 50.66,
+    "ola": 88.89,
+    "description": "When Tesla's first vehicle truly shines. Card by keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/848059633808703518/tesla_roadster_2.5_sport.png",
+    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/848058222430650379/roadster_sport_000.jpg",
+    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/848058227823607828/roadster_sport_333.jpg",
+    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/848058231321919528/roadster_sport_666.jpg",
+    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/848058246308823050/roadster_sport_996.jpg",
+    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/848058239613534248/roadster_sport_969.jpg",
+    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/848058237830823936/roadster_sport_699.jpg",
+
+    "333TopSpeed": 128,
+    "3330to60": 3.6,
+    "333Handling": 88,
+
+    "666TopSpeed": 132,
+    "6660to60": 3.4,
+    "666Handling": 91,
+
+    "996TopSpeed": 137,
+    "9960to60": 3.2,
+    "996Handling": 91,
+
+    "969TopSpeed": 137,
+    "9690to60": 3.4,
+    "969Handling": 94,
+
+    "699TopSpeed": 132,
+    "6990to60": 3.2,
+    "699Handling": 94
+}

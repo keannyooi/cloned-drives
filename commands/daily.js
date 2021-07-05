@@ -79,7 +79,7 @@ module.exports = {
 			else if (streak % 7 === 0) {
 				let randomPack = packFiles[Math.floor(Math.random() * packFiles.length)];
 				let currentPack = require(`./packs/${randomPack}`);
-				while (randomPack.includes("elite") || randomPack.includes("booster") || currentPack.repetition > 1) {
+				while ((randomPack.includes("elite") && !message.client.guilds.cache.get("711769157078876305").members.cache.get(message.author.id).roles.cache.has("860147600459956224")) || randomPack.includes("booster") || currentPack.repetition > 1) {
 					randomPack = packFiles[Math.floor(Math.random() * packFiles.length)];
 					currentPack = require(`./packs/${randomPack}`);
 				}
@@ -141,8 +141,12 @@ module.exports = {
 				image = hmm["card"];
 			}
 
-			const moneyReward = 7500 + ((streak - 1) * 4000);
-			const fuseReward = 300 * streak;
+			let moneyReward = 7500 + ((streak - 1) * 4000);
+			let fuseReward = 300 * streak;
+			if (!message.client.guilds.cache.get("711769157078876305").members.cache.get(message.author.id).roles.cache.has("860144481109016607")) {
+				moneyReward *= 1.5;
+				fuseReward *= 1.5;
+			}
 			playerData.lastDaily = DateTime.now().toISO();
 			playerData.money += moneyReward;
 			playerData.fuseTokens += fuseReward;
@@ -163,6 +167,9 @@ module.exports = {
 				.setTimestamp();
 			if (desc !== " ") {
 				infoScreen.setImage(image);
+			}
+			if (message.client.guilds.cache.get("711769157078876305").members.cache.get(message.author.id).roles.cache.has("860144481109016607")) {
+				infoScreen.setFooter("As a token of appreciation for becoming a Cloned Drives patron, you now enjoy a x1.5 multiplier for your money and fuse token daily rewards!");
 			}
 			return message.channel.send(infoScreen);
 		}

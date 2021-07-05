@@ -1,0 +1,54 @@
+{
+    "rq": 85,
+    "make": "Tesla",
+    "model": "Model S P85D Electric GT Prototype",
+    "modelYear": 2016,
+    "country": "US",
+    "topSpeed": 155,
+    "0to60": 2.9,
+    "handling": 92,
+    "driveType": "4WD",
+    "tyreType": "Slick",
+    "tags": ["Concept", "Eco-Friendly", "Innovative", "Motorsport"],
+    "isPrize": false,
+
+    "weight": 1740,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 58.59,
+    "ola": 75.86,
+    "description": "The first serious attempt at an all-electric production-based race car series. Card by keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/858545167300296744/tesla_model_s_racecar_proto.png",
+    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/858542438285443122/model_s_electricgt_000.jpg",
+    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/858542443142447114/model_s_electricgt_333.jpg",
+    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/858542446149500928/model_s_electricgt_666.jpg",
+    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/858542463677235200/model_s_electricgt_996.jpg",
+    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/858542456727797790/model_s_electricgt_969.jpg",
+    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/858542449966186506/model_s_electricgt_699.jpg",
+
+    "333TopSpeed": 158,
+    "3330to60": 2.8,
+    "333Handling": 95,
+
+    "666TopSpeed": 162,
+    "6660to60": 2.6,
+    "666Handling": 98,
+
+    "996TopSpeed": 165,
+    "9960to60": 2.5,
+    "996Handling": 98,
+
+    "969TopSpeed": 165,
+    "9690to60": 2.6,
+    "969Handling": 102,
+
+    "699TopSpeed": 162,
+    "6990to60": 2.5,
+    "699Handling": 102
+}

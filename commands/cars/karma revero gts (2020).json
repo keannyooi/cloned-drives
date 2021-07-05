@@ -1,0 +1,54 @@
+{
+    "rq": 67,
+    "make": "Karma",
+    "model": "Revero GTS",
+    "modelYear": 2020,
+    "country": "US",
+    "topSpeed": 130,
+    "0to60": 3.9,
+    "handling": 87,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eco-Friendly", "Unique"],
+    "isPrize": false,
+
+    "weight": 2290,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Hybrid",
+    "mra": 76,
+    "ola": 94.74,
+    "description": "That's not the end of the Karma. This is the range extender version with more performance without adding more power. Card by Spence.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/857809600630489099/image0.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/857809837348749332/image0.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/857809856467042305/image0.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/857809875966885898/image0.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/857809899504533514/image0.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/857809919704039484/image0.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/857809944736170034/image0.jpg",
+
+    "333TopSpeed": 134,
+    "3330to60": 3.7,
+    "333Handling": 90,
+
+    "666TopSpeed": 138,
+    "6660to60": 3.5,
+    "666Handling": 93,
+
+    "699TopSpeed": 138,
+    "6990to60": 3.3,
+    "699Handling": 97,
+
+    "969TopSpeed": 142,
+    "9690to60": 3.5,
+    "969Handling": 97,
+
+    "996TopSpeed": 142,
+    "9960to60": 3.3,
+    "996Handling": 93
+}

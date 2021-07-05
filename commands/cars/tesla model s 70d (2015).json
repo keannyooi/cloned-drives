@@ -1,0 +1,54 @@
+{
+    "rq": 64,
+    "make": "Tesla",
+    "model": "Model S 70D",
+    "modelYear": 2015,
+    "country": "US",
+    "topSpeed": 140,
+    "0to60": 5.1,
+    "handling": 78,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+
+    "weight": 2090,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 61.45,
+    "ola": 82.35,
+    "description": "Card by keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/858544633431457811/tesla_model_s_70d.png",
+    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/858541924805771313/model_s_70d_000.jpg",
+    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/858541929317924874/model_s_70d_333.jpg",
+    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/858541933793640498/model_s_70d_666.jpg",
+    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/858541948558245899/model_s_70d_996.jpg",
+    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/858541941716156426/model_s_70d_969.jpg",
+    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/858541938880806922/model_s_70d_699.jpg",
+
+    "333TopSpeed": 144,
+    "3330to60": 4.8,
+    "333Handling": 81,
+
+    "666TopSpeed": 147,
+    "6660to60": 4.6,
+    "666Handling": 83,
+
+    "996TopSpeed": 151,
+    "9960to60": 4.3,
+    "996Handling": 83,
+
+    "969TopSpeed": 151,
+    "9690to60": 4.6,
+    "969Handling": 87,
+
+    "699TopSpeed": 147,
+    "6990to60": 4.3,
+    "699Handling": 87
+}

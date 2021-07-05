@@ -1,0 +1,54 @@
+{
+    "rq": 81,
+    "make": ["Unplugged Performance", "Tesla"],
+    "model": "Model 3 Performance Ascension-R",
+    "modelYear": 2020,
+    "country": "US",
+    "topSpeed": 162,
+    "0to60": 3.1,
+    "handling": 87,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eco-Friendly", "Tuner"],
+    "isPrize": false,
+
+    "weight": 1790,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 61.14,
+    "ola": 87.74,
+    "description": "As fast as the legendary McLaren F1 LM around Tsukuba. It is worth noting that this was achieved by a relatively inexperienced driver. Card by keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/858545842537234443/unplugged_performance_model_3_perf_tsukuba.png",
+    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/858543791765061632/up_model3_ascension-r_000.jpg",
+    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/858543796911341568/up_model3_ascension-r_333.jpg",
+    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/858543801622069298/up_model3_ascension-r_666.jpg",
+    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/858543813831819314/up_model3_ascension-r_996.jpg",
+    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/858543810526052352/up_model3_ascension-r_969.jpg",
+    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/858543806063181874/up_model3_ascension-r_699.jpg",
+
+    "333TopSpeed": 165,
+    "3330to60": 2.9,
+    "333Handling": 90,
+
+    "666TopSpeed": 168,
+    "6660to60": 2.8,
+    "666Handling": 93,
+
+    "996TopSpeed": 172,
+    "9960to60": 2.6,
+    "996Handling": 93,
+
+    "969TopSpeed": 172,
+    "9690to60": 2.8,
+    "969Handling": 97,
+
+    "699TopSpeed": 168,
+    "6990to60": 2.6,
+    "699Handling": 97
+}

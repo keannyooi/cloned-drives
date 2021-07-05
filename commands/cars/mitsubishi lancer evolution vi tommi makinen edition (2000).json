@@ -1,0 +1,54 @@
+{
+    "rq": 78,
+    "make": "Mitsubishi",
+    "model": "Lancer Evolution VI Tommi Makinen Edition",
+    "modelYear": 2000,
+    "country": "JP",
+    "topSpeed": 150,
+    "0to60": 4.4,
+    "handling": 88,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Track Day", "Street Racer"],
+    "isPrize": false,
+
+    "weight": 1360,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 64.71,
+    "ola": 70.00,
+    "description": "Bnuuys Best Evo :cateheart:. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819244420670816296/Evo6TME.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819558275200188447/Evotme.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819558287665528842/evotme333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819558301007216640/evotme666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819558378204168262/evotme996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819558358474031134/evotme969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819558335677857802/evotme699.png",
+
+    "333TopSpeed": 153,
+    "3330to60": 4.2,
+    "333Handling": 91,
+
+    "666TopSpeed": 157,
+    "6660to60": 4.0,
+    "666Handling": 94,
+
+    "996TopSpeed": 160,
+    "9960to60": 3.7,
+    "996Handling": 94,
+
+    "969TopSpeed": 160,
+    "9690to60": 4.0,
+    "969Handling": 98,
+
+    "699TopSpeed": 157,
+    "6990to60": 3.7,
+    "699Handling": 98
+}

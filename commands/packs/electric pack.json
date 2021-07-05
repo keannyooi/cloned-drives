@@ -1,0 +1,71 @@
+{
+	"packName": "Electric Pack",
+	"description": "A pack of 5 electric cars, they may sound like they have all their soul sucked away but they can be bloody quick. And they're less harmful to the environment too, assuming that they use solar/wind power.",
+	"limited": true,
+	"repetition": 1,
+	"pack": "https://cdn.discordapp.com/attachments/800047734035841037/848119637153808384/Standardpack.png",
+	
+	"filter": {
+		"make": "None",
+		"modelYear": {
+			"start": 1000,
+			"end": 3000
+		},
+		"country": "None",
+		"tags": "None",
+        "driveType": "None",
+        "tyreType": "None",
+		"enginePos": "None",
+        "fuelType": "Electric",
+        "bodyStyle": "None",
+		"seatCount": "None"
+	},
+
+	"packSequence": [
+		{
+			"common": 70,
+			"uncommon": 30,
+			"rare": 0,
+			"superRare": 0,
+			"ultraRare": 0,
+			"epic": 0,
+			"legendary": 0
+		},
+		{
+			"common": 0,
+			"uncommon": 70,
+			"rare": 30,
+			"superRare": 0,
+			"ultraRare": 0,
+			"epic": 0,
+			"legendary": 0
+		},
+		{
+			"common": 0,
+			"uncommon": 70,
+			"rare": 30,
+			"superRare": 0,
+			"ultraRare": 0,
+			"epic": 0,
+			"legendary": 0
+		},
+		{
+			"common": 0,
+			"uncommon": 0,
+			"rare": 70,
+			"superRare": 30,
+			"ultraRare": 0,
+			"epic": 0,
+			"legendary": 0
+		},
+		{
+			"common": 0,
+			"uncommon": 0,
+			"rare": 0,
+			"superRare": 70,
+			"ultraRare": 20,
+			"epic": 9,
+			"legendary": 1
+		}
+	]
+}

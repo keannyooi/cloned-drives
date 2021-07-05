@@ -1,0 +1,54 @@
+{
+    "rq": 84,
+    "make": "Tesla",
+    "model": "Model 3 Performance",
+    "modelYear": 2018,
+    "country": "US",
+    "topSpeed": 162,
+    "0to60": 3.4,
+    "handling": 85,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+
+    "weight": 1847,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 59.83,
+    "ola": 90.88,
+    "description": "The small Tesla without launch control gets fast. Card by keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/858544411301249034/tesla_model_3_performance.png",
+    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/858541382868008991/model_3_perf_000.jpg",
+    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/858541391146385428/model_3_perf_333.jpg",
+    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/858541396137869312/model_3_perf_666.jpg",
+    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/858541412886773800/model_3_perf_996.jpg",
+    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/858541408071188480/model_3_perf_969.jpg",
+    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/858541400940740618/model_3_perf_699.jpg",
+
+    "333TopSpeed": 165,
+    "3330to60": 3.2,
+    "333Handling": 88,
+
+    "666TopSpeed": 168,
+    "6660to60": 3.1,
+    "666Handling": 91,
+
+    "996TopSpeed": 172,
+    "9960to60": 2.9,
+    "996Handling": 91,
+
+    "969TopSpeed": 172,
+    "9690to60": 3.1,
+    "969Handling": 94,
+
+    "699TopSpeed": 168,
+    "6990to60": 2.9,
+    "699Handling": 94
+}

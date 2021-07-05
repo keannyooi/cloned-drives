@@ -1,0 +1,54 @@
+{
+    "rq": 62,
+    "make": "Fisker",
+    "model": "Tramonto V8",
+    "modelYear": 2005,
+    "country": "US",
+    "topSpeed": 155,
+    "0to60": 4.4,
+    "handling": 83,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1905,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 78.57,
+    "ola": 81.82,
+    "description": "Yes, before Fisker made the Karma, they rebodied cars so this one is a lighter, rebodied Mercedes SL 55. Card by Spence.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/857945761001111572/image0.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/857945814365765632/image0.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/857945828894834698/image0.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/857945843277496320/image0.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/857945856660471848/image0.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/857945872343236639/image0.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/857945884409856010/image0.jpg",
+
+    "333TopSpeed": 158,
+    "3330to60": 4.2,
+    "333Handling": 86,
+
+    "666TopSpeed": 162,
+    "6660to60": 4.0,
+    "666Handling": 88,
+
+    "699TopSpeed": 162,
+    "6990to60": 3.7,
+    "699Handling": 92,
+
+    "969TopSpeed": 165,
+    "9690to60": 4.0,
+    "969Handling": 92,
+
+    "996TopSpeed": 165,
+    "9960to60": 3.7,
+    "996Handling": 88
+}

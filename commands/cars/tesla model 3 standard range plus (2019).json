@@ -1,0 +1,54 @@
+{
+    "rq": 62,
+    "make": "Tesla",
+    "model": "Model 3 Standard Range Plus",
+    "modelYear": 2019,
+    "country": "US",
+    "topSpeed": 140,
+    "0to60": 5.3,
+    "handling": 76,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+
+    "weight": 1645,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Electric",
+    "mra": 75.45,
+    "ola": 89.22,
+    "description": "Currently the cheapest Tesla available. Card by keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/858544464809164800/tesla_model_3_standard_range_plus.png",
+    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/858541596865069116/model_3_standard_000.jpg",
+    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/858541602301673523/model_3_standard_333.jpg",
+    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/858541605996986388/model_3_standard_666.jpg",
+    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/858541619154124810/model_3_standard_996.jpg",
+    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/858541615748218890/model_3_standard_969.jpg",
+    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/858541611402395698/model_3_standard_699.jpg",
+
+    "333TopSpeed": 144,
+    "3330to60": 5.0,
+    "333Handling": 79,
+
+    "666TopSpeed": 147,
+    "6660to60": 4.8,
+    "666Handling": 81,
+
+    "996TopSpeed": 151,
+    "9960to60": 4.5,
+    "996Handling": 81,
+
+    "969TopSpeed": 151,
+    "9690to60": 4.8,
+    "969Handling": 84,
+
+    "699TopSpeed": 147,
+    "6990to60": 4.5,
+    "699Handling": 84
+}

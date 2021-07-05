@@ -1,0 +1,54 @@
+{
+    "rq": 62,
+    "make": "Tesla",
+    "model": "Model X 75D",
+    "modelYear": 2015,
+    "country": "US",
+    "topSpeed": 130,
+    "0to60": 5.4,
+    "handling": 76,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+
+    "weight": 2330,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 61.14,
+    "ola": 78.88,
+    "description": "Card by keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/858545304781848596/tesla_model_x_75d.png",
+    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/858543056123068426/model_x_75d_000.jpg",
+    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/858543061171437588/model_x_75d_333.jpg",
+    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/858543065819512842/model_x_75d_666.jpg",
+    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/858543078683443220/model_x_75d_996.jpg",
+    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/858543073852129290/model_x_75d_969.jpg",
+    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/858543070798807050/model_x_75d_699.jpg",
+
+    "333TopSpeed": 134,
+    "3330to60": 5.1,
+    "333Handling": 79,
+
+    "666TopSpeed": 138,
+    "6660to60": 4.9,
+    "666Handling": 81,
+
+    "996TopSpeed": 142,
+    "9960to60": 4.6,
+    "996Handling": 81,
+
+    "969TopSpeed": 142,
+    "9690to60": 4.9,
+    "969Handling": 84,
+
+    "699TopSpeed": 138,
+    "6990to60": 4.6,
+    "699Handling": 84
+}

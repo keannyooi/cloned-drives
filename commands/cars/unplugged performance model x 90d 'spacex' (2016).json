@@ -1,0 +1,54 @@
+{
+    "rq": 57,
+    "make": ["Unplugged Performance", "Tesla"],
+    "model": "Model X 90D 'SpaceX'",
+    "modelYear": 2016,
+    "country": "US",
+    "topSpeed": 155,
+    "0to60": 4.9,
+    "handling": 79,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eco-Friendly", "Tuner"],
+    "isPrize": false,
+
+    "weight": 2336,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 70.00,
+    "ola": 87.76,
+    "description": "A Model X goes to SEMA wearing an eye-catching suit tailored by the tuner next door. Card by keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/858545944933171220/unplugged_performance_model_x.png",
+    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/858543915635179560/up_modelx_000.jpg",
+    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/858543922879266826/up_modelx_333.jpg",
+    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/858543927254056990/up_modelx_666.jpg",
+    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/858543938377613363/up_modelx_996.jpg",
+    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/858543935596134420/up_modelx_969.jpg",
+    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/858543930038681650/up_modelx_699.jpg",
+
+    "333TopSpeed": 158,
+    "3330to60": 4.7,
+    "333Handling": 82,
+
+    "666TopSpeed": 162,
+    "6660to60": 4.4,
+    "666Handling": 84,
+
+    "996TopSpeed": 165,
+    "9960to60": 4.2,
+    "996Handling": 84,
+
+    "969TopSpeed": 165,
+    "9690to60": 4.4,
+    "969Handling": 88,
+
+    "699TopSpeed": 162,
+    "6990to60": 4.2,
+    "699Handling": 88
+}

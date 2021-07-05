@@ -1,0 +1,54 @@
+{
+    "rq": 81,
+    "make": "Tesla",
+    "model": "Model Y Performance",
+    "modelYear": 2020,
+    "country": "US",
+    "topSpeed": 155,
+    "0to60": 3.6,
+    "handling": 85,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+
+    "weight": 2003,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 69.22,
+    "ola": 92.60,
+    "description": "Despite looking and performing like the Model 3 Performance, the new compact SUV isn't as good to drive. Card by keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/858545488932110346/tesla_model_y_performance.png",
+    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/858543353415467008/model_y_perf_000.jpg",
+    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/858543364390649906/model_y_perf_333.jpg",
+    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/858543370208542720/model_y_perf_666.jpg",
+    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/858543398125961257/model_y_perf_996.jpg",
+    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/858543389733945414/model_y_perf_969.jpg",
+    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/858543372902072320/model_y_perf_699.jpg",
+
+    "333TopSpeed": 158,
+    "3330to60": 3.4,
+    "333Handling": 88,
+
+    "666TopSpeed": 162,
+    "6660to60": 3.2,
+    "666Handling": 91,
+
+    "996TopSpeed": 165,
+    "9960to60": 3.1,
+    "996Handling": 91,
+
+    "969TopSpeed": 165,
+    "9690to60": 3.2,
+    "969Handling": 94,
+
+    "699TopSpeed": 162,
+    "6990to60": 3.1,
+    "699Handling": 94
+}

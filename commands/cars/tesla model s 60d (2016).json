@@ -1,0 +1,54 @@
+{
+    "rq": 66,
+    "make": "Tesla",
+    "model": "Model S 60D",
+    "modelYear": 2016,
+    "country": "US",
+    "topSpeed": 130,
+    "0to60": 5.2,
+    "handling": 78,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+
+    "weight": 2108,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 70.27,
+    "ola": 78.85,
+    "description": "The base 60kWh model returns! Card by keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/858544595020021770/tesla_model_s_60d.png",
+    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/858541794793750548/model_s_60d_000.jpg",
+    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/858541800058126336/model_s_60d_333.jpg",
+    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/858541806168571904/model_s_60d_666.jpg",
+    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/858541821390094376/model_s_60d_996.jpg",
+    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/858541815946674186/model_s_60d_969.jpg",
+    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/858541811436879902/model_s_60d_699.jpg",
+
+    "333TopSpeed": 134,
+    "3330to60": 4.9,
+    "333Handling": 81,
+
+    "666TopSpeed": 138,
+    "6660to60": 4.7,
+    "666Handling": 83,
+
+    "996TopSpeed": 142,
+    "9960to60": 4.4,
+    "996Handling": 83,
+
+    "969TopSpeed": 142,
+    "9690to60": 4.7,
+    "969Handling": 87,
+
+    "699TopSpeed": 138,
+    "6990to60": 4.4,
+    "699Handling": 87
+}

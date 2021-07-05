@@ -8,11 +8,11 @@
 	"map": "https://cdn.discordapp.com/attachments/800047734035841037/835157394525782036/Australiathing.png",
 	
 	"specsDistr": {
-		"topSpeed": 80,
-		"0to60": 20,
+		"topSpeed": 10,
+		"0to60": 80,
 		"handling": 40,
 		"weight": 0,
-		"mra": 70,
+		"mra": 35,
 		"ola": 0
 	}
 }

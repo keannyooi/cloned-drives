@@ -1,0 +1,54 @@
+{
+    "rq": 76,
+    "make": "Tesla",
+    "model": "Model S 100D",
+    "modelYear": 2016,
+    "country": "US",
+    "topSpeed": 155,
+    "0to60": 4.0,
+    "handling": 83,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+
+    "weight": 2247,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 76.92,
+    "ola": 90.00,
+    "description": "It's not the quickest Tesla, but it sure goes far on a single charge. Card by keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/858544764948840468/tesla_model_s_100d.png",
+    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/858542280814100490/model_s_100d_000.jpg",
+    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/858542286530019348/model_s_100d_333.jpg",
+    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/858542292792246292/model_s_100d_666.jpg",
+    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/858542307293003796/model_s_100d_996.jpg",
+    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/858542301289775164/model_s_100d_969.jpg",
+    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/858542297859489802/model_s_100d_699.jpg",
+
+    "333TopSpeed": 158,
+    "3330to60": 3.8,
+    "333Handling": 86,
+
+    "666TopSpeed": 162,
+    "6660to60": 3.6,
+    "666Handling": 88,
+
+    "996TopSpeed": 165,
+    "9960to60": 3.4,
+    "996Handling": 88,
+
+    "969TopSpeed": 165,
+    "9690to60": 3.6,
+    "969Handling": 92,
+
+    "699TopSpeed": 162,
+    "6990to60": 3.4,
+    "699Handling": 92
+}

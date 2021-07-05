@@ -1,0 +1,54 @@
+{
+    "rq": 82,
+    "make": "Tesla",
+    "model": "Model X P100D",
+    "modelYear": 2016,
+    "country": "US",
+    "topSpeed": 155,
+    "0to60": 3.1,
+    "handling": 79,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+
+    "weight": 2497,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 60.50,
+    "ola": 84.12,
+    "description": "Casually overtaking supercars in a quiet space. Card by keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/858545386619666472/tesla_model_x_p100d.png",
+    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/858543221373272104/model_x_p100d_000.jpg",
+    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/858543226508410920/model_x_p100d_333.jpg",
+    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/858543232224198657/model_x_p100d_666.jpg",
+    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/858543243649351680/model_x_p100d_996.jpg",
+    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/858543239920746516/model_x_p100d_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/858966821825544232/model_x_p100d_699.jpg",
+
+    "333TopSpeed": 158,
+    "3330to60": 2.9,
+    "333Handling": 82,
+
+    "666TopSpeed": 162,
+    "6660to60": 2.8,
+    "666Handling": 84,
+
+    "996TopSpeed": 165,
+    "9960to60": 2.6,
+    "996Handling": 84,
+
+    "969TopSpeed": 165,
+    "9690to60": 2.8,
+    "969Handling": 88,
+
+    "699TopSpeed": 162,
+    "6990to60": 2.6,
+    "699Handling": 88
+}

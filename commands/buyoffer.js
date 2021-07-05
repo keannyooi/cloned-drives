@@ -16,6 +16,7 @@ module.exports = {
 	args: 1,
 	isExternal: true,
 	adminOnly: false,
+	cooldown: 4.388,
 	description: "Buy limited offers with this command!",
 	async execute(message, args) {
 		const db = message.client.db;

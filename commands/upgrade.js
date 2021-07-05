@@ -303,7 +303,7 @@ module.exports = {
 								const infoScreen = new Discord.MessageEmbed()
 									.setColor("#34aeeb")
 									.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-									.setTitle(`Successfully upgraded ${message.author.tag}'s ${currentName}!`)
+									.setTitle(`Successfully upgraded your ${currentName}!`)
 									.setDescription("Current upgrade status:")
 									.addFields(
 										{ name: "Gearing Upgrade", value: `\`${origUpgrade[0]} => ${upgrade[0]}\``, inline: true },
@@ -350,7 +350,7 @@ module.exports = {
 							.setColor("#34aeeb")
 							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 							.setTitle("Action cancelled automatically.")
-							.setDescription(`Your ${currentName} stays in its origina tune.`)
+							.setDescription(`Your ${currentName} stays in its original tune.`)
 							.setImage(car["card"])
 							.setTimestamp();
 						if (message.channel.type === "text") {

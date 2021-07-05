@@ -1,0 +1,54 @@
+{
+    "rq": 57,
+    "make": "Tesla",
+    "model": "Model S 60",
+    "modelYear": 2012,
+    "country": "US",
+    "topSpeed": 121,
+    "0to60": 5.5,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+
+    "weight": 1961,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Electric",
+    "mra": 57.89,
+    "ola": 87.27,
+    "description": "The base 60kWh model, also known as a cheap way to Tesla ownership back when the Model 3 wasn't a thing. Card by keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/858544558881898496/tesla_model_s_60.png",
+    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/858541740172247050/model_s_60_000.jpg",
+    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/858541744920854598/model_s_60_333.jpg",
+    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/858541750607675402/model_s_60_666.jpg",
+    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/858541762553446460/model_s_60_996.jpg",
+    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/858541757925949480/model_s_60_969.jpg",
+    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/858541754431963136/model_s_60_699.jpg",
+
+    "333TopSpeed": 125,
+    "3330to60": 5.2,
+    "333Handling": 80,
+
+    "666TopSpeed": 130,
+    "6660to60": 5.0,
+    "666Handling": 82,
+
+    "996TopSpeed": 134,
+    "9960to60": 4.7,
+    "996Handling": 82,
+
+    "969TopSpeed": 134,
+    "9690to60": 5.0,
+    "969Handling": 85,
+
+    "699TopSpeed": 130,
+    "6990to60": 4.7,
+    "699Handling": 85
+}

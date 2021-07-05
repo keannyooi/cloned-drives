@@ -107,9 +107,9 @@ client.once("ready", async () => {
 		// const garage = await client.db.get(`acc${user.id}.garage`);
 		// var i = 0;
 		// while (i < garage.length) {
-		//  	if (garage[i].carFile === "jeep grand cherokee 5.9 limited (1998).json") {
-		//  		garage[i].carFile = "jeep grand cherokee 5.9 limited (1999).json";
-		// 		console.log("done");
+		//  	if (garage[i].carFile === "mercedes-amg gt 63 s 4matic+ 4-door coupé (2018).json") {
+		//  		garage[i].carFile = "mercedes-amg gt 63 s 4matic+ 4-door coupe (2018).json";
+		// 			console.log("done");
 		//  	}
 		//  	i++;
 		// }
@@ -153,6 +153,7 @@ client.on("message", async message => {
 			.setTimestamp();
 		return message.channel.send(errorMessage);
 	}
+	console.log(command.adminOnly && !message.member.roles.cache.has("711790752853655563"));
 	if (command.args > 0 && args.length < command.args) {
 		let usage = command.usage;
 		const errorMessage = new Discord.MessageEmbed()
@@ -163,7 +164,7 @@ client.on("message", async message => {
 			.setTimestamp();
 		return message.channel.send(errorMessage);
 	}
-	else if (await client.db.has(`acc${message.author.id}`) === false) {
+	if (await client.db.has(`acc${message.author.id}`) === false) {
 		const errorMessage = new Discord.MessageEmbed()
 			.setColor("#fc0303")
 			.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -172,7 +173,7 @@ client.on("message", async message => {
 			.setTimestamp();
 		return message.channel.send(errorMessage);
 	}
-	else if (!command.isExternal) {
+	if (!command.isExternal) {
 		if (message.channel.type !== "text") {
 			const errorMessage = new Discord.MessageEmbed()
 				.setColor("#fc0303")
@@ -192,7 +193,7 @@ client.on("message", async message => {
 			return message.channel.send(errorMessage);
 		}
 	}
-	else if (command.adminOnly && !message.member.roles.cache.has("711790752853655563")) { //admin role
+	if (command.adminOnly && !message.member.roles.cache.has("711790752853655563")) { //admin role
 		const errorMessage = new Discord.MessageEmbed()
 			.setColor("#fc0303")
 			.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -314,7 +315,7 @@ client.on("messageUpdate", async (oldMessage, newMessage) => {
 			return newMessage.channel.send(errorMessage);
 		}
 	}
-	else if (!command.isExternal) {
+	if (!command.isExternal) {
 		if (newMessage.channel.type !== "text") {
 			const errorMessage = new Discord.MessageEmbed()
 				.setColor("#fc0303")
@@ -334,7 +335,7 @@ client.on("messageUpdate", async (oldMessage, newMessage) => {
 			return newMessage.channel.send(errorMessage);
 		}
 	}
-	else if (command.adminOnly && !newMessage.member.roles.cache.has("711790752853655563")) { //admin role
+	if (command.adminOnly && !newMessage.member.roles.cache.has("711790752853655563")) { //admin role
 		const errorMessage = new Discord.MessageEmbed()
 			.setColor("#fc0303")
 			.setAuthor(newMessage.author.tag, newMessage.author.displayAvatarURL({ format: "png", dynamic: true }))

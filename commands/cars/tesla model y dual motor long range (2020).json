@@ -1,0 +1,54 @@
+{
+    "rq": 76,
+    "make": "Tesla",
+    "model": "Model Y Dual Motor Long Range",
+    "modelYear": 2020,
+    "country": "US",
+    "topSpeed": 135,
+    "0to60": 4.4,
+    "handling": 78,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+
+    "weight": 2003,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 91.10,
+    "ola": 81.20,
+    "description": "I have great trouble trying to differentiate between the Model 3 and the Model Y, please help. Card by keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/858545446947782676/tesla_model_y_dual_motor_long_range.png",
+    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/858543298485157928/model_y_awd_000.jpg",
+    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/858543305801596959/model_y_awd_333.jpg",
+    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/858543310229733396/model_y_awd_666.jpg",
+    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/858543322867564584/model_y_awd_996.jpg",
+    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/858543317600305202/model_y_awd_969.jpg",
+    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/858543312683270144/model_y_awd_699.jpg",
+
+    "333TopSpeed": 139,
+    "3330to60": 4.2,
+    "333Handling": 81,
+
+    "666TopSpeed": 143,
+    "6660to60": 4.0,
+    "666Handling": 83,
+
+    "996TopSpeed": 147,
+    "9960to60": 3.7,
+    "996Handling": 83,
+
+    "969TopSpeed": 147,
+    "9690to60": 4.0,
+    "969Handling": 87,
+
+    "699TopSpeed": 143,
+    "6990to60": 3.7,
+    "699Handling": 87
+}

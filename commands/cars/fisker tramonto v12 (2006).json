@@ -1,0 +1,54 @@
+{
+    "rq": 77,
+    "make": "Fisker",
+    "model": "Tramonto V12",
+    "modelYear": 2006,
+    "country": "US",
+    "topSpeed": 205,
+    "0to60": 3.4,
+    "handling": 86,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1905,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 103.03,
+    "ola": 111.76,
+    "description": "The last Tramonto that ever made, now with a V12 from the Merc SL 65 that was tuned to 700 hp and 1000 lb-ft. Card by Spence.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/858482535926857749/image0.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/858482590302470154/image0.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/858482608206512138/image0.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/858482623549276230/image0.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/858482639812296724/image0.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/858482748913090610/image0.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/858482763300339763/image0.jpg",
+
+    "333TopSpeed": 208,
+    "3330to60": 3.2,
+    "333Handling": 89,
+
+    "666TopSpeed": 210,
+    "6660to60": 3.1,
+    "666Handling": 92,
+
+    "699TopSpeed": 210,
+    "6990to60": 2.9,
+    "699Handling": 95,
+
+    "969TopSpeed": 213,
+    "9690to60": 3.1,
+    "969Handling": 95,
+
+    "996TopSpeed": 213,
+    "9960to60": 2.9,
+    "996Handling": 92
+}
