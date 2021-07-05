@@ -1,0 +1,56 @@
+﻿{
+    "rq": 28,
+    "make": "Lancia",
+    "model": "Thema Turbo ds",
+    "modelYear": 1988,
+    "country": "IT",
+    "topSpeed": 121,
+    "0to60": 10.3,
+    "handling": 69,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Le Grandezze Italiane"],
+    "isPrize": false,
+
+
+    "weight": 1350,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 45.37,
+    "ola": 66.02,
+    "description": "it was stylish, although some would accused it of being a slight bit '80s Giugiaro-generic. Card by Andu",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/859139949570686976/ThemaTds.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/859140281004589076/Themads.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/859140289712226335/Themads-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/859140295936573470/Themads-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/859140310788735046/Themads-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/859140328719515678/Themads-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/859140346251313202/Themads-699.png",
+
+    "333TopSpeed": 125,
+    "3330to60": 9.8,
+    "333Handling": 71,
+
+    "666TopSpeed": 130,
+    "6660to60": 9.3, 
+    "666Handling": 74,
+
+    "996TopSpeed": 134,
+    "9960to60": 8.8,
+    "996Handling": 74,
+
+    "969TopSpeed": 134,
+    "9690to60": 9.3,
+    "969Handling": 77,
+
+    "699TopSpeed": 130,
+    "6990to60": 8.8,
+    "699Handling": 77
+}

@@ -1,0 +1,56 @@
+﻿{
+    "rq": 21,
+    "make": "Fiat",
+    "model": "Croma 1.6",
+    "modelYear": 1986,
+    "country": "IT",
+    "topSpeed": 106,
+    "0to60": 13.6,
+    "handling": 69,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Le Grandezze Italiane"],
+    "isPrize": false,
+
+
+    "weight": 1170,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 35.32,
+    "ola": 63.24,
+    "description": "Base model engine for base model needs. Card by Andu",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/859053645089865758/Croma16.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/859061672680357958/Croma16.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/859061681120215080/Croma16-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/859061685733687316/Croma16-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/859061701767987230/Croma16-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/859061712077848576/Croma16-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/859061725033922580/Croma16-699.png",
+
+    "333TopSpeed": 111,
+    "3330to60": 12.9,
+    "333Handling": 71,
+
+    "666TopSpeed": 116,
+    "6660to60": 12.2, 
+    "666Handling": 74,
+
+    "996TopSpeed": 121,
+    "9960to60": 11.6,
+    "996Handling": 74,
+
+    "969TopSpeed": 121,
+    "9690to60": 12.2,
+    "969Handling": 77,
+
+    "699TopSpeed": 116,
+    "6990to60": 11.6,
+    "699Handling": 77
+}
