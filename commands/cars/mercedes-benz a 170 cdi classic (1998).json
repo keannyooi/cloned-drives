@@ -1,0 +1,56 @@
+{
+    "rq": 16,
+    "make": "Mercedes-Benz",
+    "model": "A 170 CDI Classic",
+    "modelYear": 1998,
+    "country": "DE",
+    "topSpeed": 109,
+    "0to60": 9.0,
+    "handling": 71,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1168,
+    "gc": "Low",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 34.56,
+    "ola": 65.57,
+    "description": "Ecological, or so we thought, box on wheels. Card by Andu",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/861972193244086373/A170CDI.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/861974778734051328/A170CDI.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/861974789705826324/A170CDI-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/861974849194033172/A170CDI-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/861974864734978068/A170CDI-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/861974878742773790/A170CDI-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/861974891561091112/A170CDI-699.png",
+
+    "333TopSpeed": 114,
+    "3330to60": 11.4,
+    "333Handling": 70,
+
+    "666TopSpeed": 119,
+    "6660to60": 11.0, 
+    "666Handling": 72,
+
+    "996TopSpeed": 123,
+    "9960to60": 10.4,
+    "996Handling": 72,
+
+    "969TopSpeed": 123,
+    "9690to60": 11.0,
+    "969Handling": 75,
+
+    "699TopSpeed": 119,
+    "6990to60": 10.4,
+    "699Handling": 75
+}

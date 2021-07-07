@@ -1,0 +1,54 @@
+{
+    "rq": 40,
+    "make": "Opel",
+    "model": "Insignia Sports Tourer 2.0D",
+    "modelYear": 2017,
+    "country": "DE",
+    "topSpeed": 138,
+    "0to60": 8.5,
+    "handling": 76,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1633,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 59.87,
+    "ola": 75.29,
+    "description": "Card by Connor.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/858980503473618944/C.OpelInsigniaST20D.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/858980892377481216/OpelInsigniaST.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/858980904742944798/OpelInsigniaST-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/858980919087857744/OpelInsigniaST-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/858980960435175454/OpelInsigniaST-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/858980947717914624/OpelInsigniaST-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/858980935663747122/OpelInsigniaST-699.png",
+
+    "333TopSpeed": 142,
+    "3330to60": 8.1,
+    "333Handling": 79,
+
+    "666TopSpeed": 146,
+    "6660to60": 7.7,
+    "666Handling": 81,
+
+    "996TopSpeed": 149,
+    "9960to60": 7.2,
+    "996Handling": 81,
+
+    "969TopSpeed": 149,
+    "9690to60": 7.7,
+    "969Handling": 84,
+
+    "699TopSpeed": 146,
+    "6990to60": 7.2,
+    "699Handling": 84
+}

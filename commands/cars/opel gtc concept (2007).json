@@ -1,0 +1,54 @@
+{
+    "rq": 52,
+    "make": "Opel",
+    "model": "GTC Concept",
+    "modelYear": 2007,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 5.8,
+    "handling": 83,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Concept"],
+    "isPrize": false,
+
+    "weight": 1760,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 68.24,
+    "ola": 75.86,
+    "description": "Hot coupe which previewed the Insignia. Card by Connor.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/859692829831725086/B.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/859693734270992404/OpelGTC.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/859693747180273674/OpelGTC-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/859693758076289044/OpelGTC-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/859693799688372224/OpelGTC-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/859693784877760532/OpelGTC-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/859693771994562560/OpelGTC-699.png",
+
+    "333TopSpeed": 158,
+    "3330to60": 5.5,
+    "333Handling": 86,
+
+    "666TopSpeed": 162,
+    "6660to60": 5.2,
+    "666Handling": 88,
+
+    "996TopSpeed": 165,
+    "9960to60": 4.9,
+    "996Handling": 88,
+
+    "969TopSpeed": 165,
+    "9690to60": 5.2,
+    "969Handling": 92,
+
+    "699TopSpeed": 162,
+    "6990to60": 4.9,
+    "699Handling": 92
+}

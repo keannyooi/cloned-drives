@@ -1,0 +1,54 @@
+{
+    "rq": 1,
+    "make": "Opel",
+    "model": "4-8 PS 2-Sitzer Torpedo 'Doktorwagen'",
+    "modelYear": 1909,
+    "country": "DE",
+    "topSpeed": 37,
+    "0to60": 99.9,
+    "handling": 41,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 525,
+    "gc": "High",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 0.00,
+    "ola": 40.09,
+    "description": "Doctor's car I guess? The two-seater was small and agile compared to other cars of this time and was used by many doctors for house calls whereby the vehicle quickly got the nickname 'doctor's car'. Card by Connor",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/858675322027376660/F.Opel48PSTorpedo.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/858675112593063986/OpelDoktorwagen.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/858675129646055475/OpelDoktorwagen-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/858675144553791549/OpelDoktorwagen-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/858675188942110740/OpelDoktorwagen-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/858675175221362709/OpelDoktorwagen-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/858675158494347274/OpelDoktorwagen-699.png",
+
+    "333TopSpeed": 46,
+    "3330to60": 99.9,
+    "333Handling": 42,
+
+    "666TopSpeed": 54,
+    "6660to60": 99.9,
+    "666Handling": 44,
+
+    "996TopSpeed": 63,
+    "9960to60": 65.5,
+    "996Handling": 44,
+
+    "969TopSpeed": 63,
+    "9690to60": 66.3,
+    "969Handling": 46,
+
+    "699TopSpeed": 54,
+    "6990to60": 99.9,
+    "699Handling"  46
+}
