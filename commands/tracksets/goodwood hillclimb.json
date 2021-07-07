@@ -1,0 +1,18 @@
+{
+	"trackName": "GoodWood HillClimb",
+	"weather": "Sunny",
+	"surface": "Asphalt",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://cdn.discordapp.com/attachments/800047734035841037/862383542112485387/Screen_Shot_2019_07_05_at_1.31.08_PfM.0.jpg",
+	"map": "https://cdn.discordapp.com/attachments/800047734035841037/862382670133723167/goodwoodhillclimb.png",
+	
+	"specsDistr": {
+		"topSpeed": 50,
+		"0to60": 30,
+		"handling": 50,
+		"weight": 0,
+		"mra": 70,
+		"ola": 0
+	}
+}
