@@ -17,8 +17,7 @@ module.exports = {
     aliases: ["pinfo"],
     usage: "<pack name goes here>",
     args: 1,
-	isExternal: true,
-    adminOnly: false,
+	category: "Configuration",
     description: "Shows info about a specified card pack.",
     execute(message, args) {
         const waitTime = 60000;
@@ -52,7 +51,9 @@ module.exports = {
                     errors: ["time"]
                 })
                     .then(collected => {
-						collected.first().delete();
+                        if (message.channel.type === "text") {
+                            collected.first().delete();
+                        }
                         if (isNaN(collected.first().content) || parseInt(collected.first().content) > searchResults.length) {
 							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                             const errorMessage = new Discord.MessageEmbed()

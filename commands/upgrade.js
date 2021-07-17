@@ -8,6 +8,7 @@
 */
 
 const Discord = require("discord.js-light");
+const disbut = require("discord-buttons");
 const stringSimilarity = require("string-similarity");
 
 module.exports = {
@@ -15,22 +16,16 @@ module.exports = {
 	aliases: ["tune", "u"],
 	usage: "<car name goes here> | <upgrade pattern>",
 	args: 2,
-	isExternal: true,
-	adminOnly: false,
+	category: "Gameplay",
 	description: "Upgrades a car in your garage.",
 	async execute(message, args) {
 		const db = message.client.db;
 		const playerData = await db.get(`acc${message.author.id}`);
 		const garage = playerData.garage;
-
 		const waitTime = 60000;
 		const filter = response => {
 			return response.author.id === message.author.id;
 		};
-		const emojiFilter = (reaction, user) => {
-			return (reaction.emoji.name === "✅" || reaction.emoji.name === "❎") && user.id === message.author.id;
-		};
-
 		let carName = args.slice(0, args.length - 1).map(i => i.toLowerCase());
 		let upgrade = args[args.length - 1];
 
@@ -250,34 +245,39 @@ module.exports = {
 			definePrice(car["rq"], upgrade, origUpgrade);
 
 			if (playerData.money >= moneyLimit && playerData.fuseTokens >= fuseTokenLimit) {
+				let yse = new disbut.MessageButton()
+					.setStyle("green")
+					.setLabel("Yes!")
+					.setID("yse");
+				let nop = new disbut.MessageButton()
+					.setStyle("red")
+					.setLabel("No!")
+					.setID("nop");
+				let row = new disbut.MessageActionRow().addComponents(yse, nop);
+
 				const confirmationMessage = new Discord.MessageEmbed()
 					.setColor("#34aeeb")
 					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 					.setTitle(`Are you sure you want to upgrade your ${currentName} from \`${origUpgrade}\` to \`${upgrade}\` with ${moneyEmoji}${moneyLimit} and ${fuseEmoji}${fuseTokenLimit}?`)
-					.setDescription("React with ✅ to proceed or ❎ to cancel.")
 					.setImage(car[`racehud${origUpgrade}`])
 					.setTimestamp();
-
-				let reactionMessage;
+				let reactionMessage, processed = false;
 				if (currentMessage && message.channel.type === "text") {
-					reactionMessage = await currentMessage.edit(confirmationMessage);
+					reactionMessage = await currentMessage.edit(confirmationMessage, row);
 				}
 				else {
-					reactionMessage = await message.channel.send(confirmationMessage);
+					reactionMessage = await message.channel.send(confirmationMessage, row);
 				}
-				reactionMessage.react("✅");
-				reactionMessage.react("❎");
-				reactionMessage.awaitReactions(emojiFilter, {
-					max: 1,
-					time: 10000,
-					errors: ["time"]
-				})
-					.then(async collected => {
-						if (message.channel.type === "text") {
-							reactionMessage.reactions.removeAll();
-						}
-						switch (collected.first().emoji.name) {
-							case "✅":
+
+				message.client.on("clickButton", async (button) => {
+					if (button.clicker.id === message.author.id && button.message.id === reactionMessage.id) {
+						yse.setDisabled();
+						nop.setDisabled();
+						row = new disbut.MessageActionRow().addComponents(yse, nop);
+						processed = true;
+						switch (button.id) {
+							case "yse":
+								await button.reply.defer();
 								playerData.money -= moneyLimit;
 								playerData.fuseTokens -= fuseTokenLimit;
 								currentCar[upgrade]++;
@@ -316,12 +316,13 @@ module.exports = {
 									.setTimestamp();
 								message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 								if (message.channel.type === "text") {
-									return reactionMessage.edit(infoScreen);
+									return reactionMessage.edit(infoScreen, row);
 								}
 								else {
-									return message.channel.send(infoScreen);
+									return message.channel.send(infoScreen, row);
 								}
-							case "❎":
+							case "nop":
+								await button.reply.defer();
 								message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
 								const cancelMessage = new Discord.MessageEmbed()
 									.setColor("#34aeeb")
@@ -331,20 +332,23 @@ module.exports = {
 									.setImage(car["card"])
 									.setTimestamp();
 								if (message.channel.type === "text") {
-									return reactionMessage.edit(cancelMessage);
+									return reactionMessage.edit(cancelMessage, row);
 								}
 								else {
-									return message.channel.send(cancelMessage);
+									return message.channel.send(cancelMessage, row);
 								}
 							default:
 								break;
 						}
-					})
-					.catch(error => {
-						console.log(error);
-						if (message.channel.type === "text") {
-							reactionMessage.reactions.removeAll();
-						}
+					}
+				});
+
+				setTimeout(() => {
+					if (!processed) {
+						yse.setDisabled();
+						nop.setDisabled();
+						row = new disbut.MessageActionRow().addComponents(yse, nop);
+
 						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
 						const cancelMessage = new Discord.MessageEmbed()
 							.setColor("#34aeeb")
@@ -354,12 +358,13 @@ module.exports = {
 							.setImage(car["card"])
 							.setTimestamp();
 						if (message.channel.type === "text") {
-							return reactionMessage.edit(cancelMessage);
+							return reactionMessage.edit(cancelMessage, row);
 						}
 						else {
-							return message.channel.send(cancelMessage);
+							return message.channel.send(cancelMessage, row);
 						}
-					});
+					}
+				}, 10000);
 			}
 			else {
 				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);

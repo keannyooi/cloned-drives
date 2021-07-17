@@ -10,6 +10,7 @@ __  ___  _______     ___      .__   __. .__   __. ____    ____
 const backupMode = false;
 const fs = require("fs");
 const Discord = require("discord.js-light");
+const disbut = require("discord-buttons");
 const { Database } = require("quickmongo");
 const { prefix, token } = require("./config.json");
 const { DateTime, Interval } = require("luxon");
@@ -29,6 +30,7 @@ client.commands = new Discord.Collection();
 const cooldowns = new Discord.Collection();
 client.db = new Database("mongodb+srv://keanny:6x6IsBae@databaseclusterthing.as94y.mongodb.net/DatabaseClusterThing?retryWrites=true&w=majority");
 client.execList = [];
+disbut(client);
 
 const commandFiles = fs.readdirSync("./commands").filter(file => file.endsWith(".js"));
 const starterGarage = [
@@ -91,7 +93,7 @@ client.once("ready", async () => {
 	guild.members.cache.forEach(async user => {
 		if (await client.db.has(`acc${user.id}`) === false) {
 			console.log("creating new player's database...");
-			await client.db.set(`acc${user.id}`, {	
+			await client.db.set(`acc${user.id}`, {
 				money: 0,
 				fuseTokens: 0,
 				trophies: 0,
@@ -107,10 +109,14 @@ client.once("ready", async () => {
 		// const garage = await client.db.get(`acc${user.id}.garage`);
 		// var i = 0;
 		// while (i < garage.length) {
-		//  	if (garage[i].carFile === "mercedes-amg gt 63 s 4matic+ 4-door coupé (2018).json") {
-		//  		garage[i].carFile = "mercedes-amg gt 63 s 4matic+ 4-door coupe (2018).json";
-		// 			console.log("done");
+		//  	if (garage[i].carFile === "porsche cayenne turbo coupe (2020).json") {
+		//  		garage[i].carFile = "porsche cayenne turbo coupe (2019).json";
+		// 		console.log("done");
 		//  	}
+		// 	if (garage[i].carFile === "mercedes-benz a 160 (1997).json") {
+		// 		garage[i].carFile = "mercedes-benz a 160 classic (1997).json";
+		// 	   console.log("done");
+		// 	}
 		//  	i++;
 		// }
 		// await client.db.set(`acc${user.id}.garage`, garage);
@@ -153,7 +159,66 @@ client.on("message", async message => {
 			.setTimestamp();
 		return message.channel.send(errorMessage);
 	}
-	console.log(command.adminOnly && !message.member.roles.cache.has("711790752853655563"));
+
+	if (command.category === "Admin") {
+		if (message.channel.type !== "text") {
+			const errorMessage = new Discord.MessageEmbed()
+				.setColor("#fc0303")
+				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+				.setTitle("Error, this command can only be executed in the Cloned Drives discord server.")
+				.setDescription("Link to Discord server: https://discord.gg/PHgPyed")
+				.setTimestamp();
+			return message.channel.send(errorMessage);
+		}
+		if (message.guild.id !== "711769157078876305") {
+			const errorMessage = new Discord.MessageEmbed()
+				.setColor("#fc0303")
+				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+				.setTitle("Error, this command can only be executed in the Cloned Drives discord server.")
+				.setDescription("Link to Discord server: https://discord.gg/PHgPyed")
+				.setTimestamp();
+			return message.channel.send(errorMessage);
+		}
+		if (!message.member.roles.cache.has("711790752853655563")) {
+			const errorMessage = new Discord.MessageEmbed()
+				.setColor("#fc0303")
+				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+				.setTitle("Error, it looks like you attempted using an Admin-only command.")
+				.setDescription("You don't have the <@&711790752853655563> role, which is required to use this command.")
+				.setTimestamp();
+			return message.channel.send(errorMessage);
+		}
+	}
+	if (command.category === "Community Management") {
+		if (message.channel.type !== "text") {
+			const errorMessage = new Discord.MessageEmbed()
+				.setColor("#fc0303")
+				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+				.setTitle("Error, this command can only be executed in the Cloned Drives discord server.")
+				.setDescription("Link to Discord server: https://discord.gg/PHgPyed")
+				.setTimestamp();
+			return message.channel.send(errorMessage);
+		}
+		if (message.guild.id !== "711769157078876305") {
+			const errorMessage = new Discord.MessageEmbed()
+				.setColor("#fc0303")
+				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+				.setTitle("Error, this command can only be executed in the Cloned Drives discord server.")
+				.setDescription("Link to Discord server: https://discord.gg/PHgPyed")
+				.setTimestamp();
+			return message.channel.send(errorMessage);
+		}
+		if (!message.member.roles.cache.has("802043346951340064")) {
+			const errorMessage = new Discord.MessageEmbed()
+				.setColor("#fc0303")
+				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+				.setTitle("Error, it looks like you attempted using a Community Management-only command.")
+				.setDescription("You don't have the <@&802043346951340064> role, which is required to use this command.")
+				.setTimestamp();
+			return message.channel.send(errorMessage);
+		}
+	}
+
 	if (command.args > 0 && args.length < command.args) {
 		let usage = command.usage;
 		const errorMessage = new Discord.MessageEmbed()
@@ -170,35 +235,6 @@ client.on("message", async message => {
 			.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 			.setTitle("Error, the bot has no record of you in the Cloned Drives discord server.")
 			.setDescription("Join the Discord server now to unlock access to the bot: https://discord.gg/PHgPyed")
-			.setTimestamp();
-		return message.channel.send(errorMessage);
-	}
-	if (!command.isExternal) {
-		if (message.channel.type !== "text") {
-			const errorMessage = new Discord.MessageEmbed()
-				.setColor("#fc0303")
-				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-				.setTitle("Error, this command can only be executed in the Cloned Drives discord server.")
-				.setDescription("Link to Discord server: https://discord.gg/PHgPyed")
-				.setTimestamp();
-			return message.channel.send(errorMessage);
-		}
-		else if (message.guild.id !== "711769157078876305") {
-			const errorMessage = new Discord.MessageEmbed()
-				.setColor("#fc0303")
-				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-				.setTitle("Error, this command can only be executed in the Cloned Drives discord server.")
-				.setDescription("Link to Discord server: https://discord.gg/PHgPyed")
-				.setTimestamp();
-			return message.channel.send(errorMessage);
-		}
-	}
-	if (command.adminOnly && !message.member.roles.cache.has("711790752853655563")) { //admin role
-		const errorMessage = new Discord.MessageEmbed()
-			.setColor("#fc0303")
-			.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-			.setTitle("Error, it looks like you attempted using an Admin-only command.")
-			.setDescription("You don't have the Admin role, which is required to use this command.")
 			.setTimestamp();
 		return message.channel.send(errorMessage);
 	}
@@ -264,7 +300,7 @@ client.on("message", async message => {
 client.on("guildMemberAdd", async member => {
 	if (await client.db.has(`acc${member.id}`) === false && member.guild.id === "711769157078876305") {
 		console.log("creating new player's database...");
-		await client.db.set(`acc${member.id}`, {	
+		await client.db.set(`acc${member.id}`, {
 			money: 0,
 			fuseTokens: 0,
 			trophies: 0,

@@ -14,8 +14,7 @@ module.exports = {
     aliases: ["rmvfusetokens", "rft"],
     usage: "<username> <amount here>",
     args: 2,
-	isExternal: false,
-    adminOnly: true,
+	category: "Admin",
     description: "Removes a certain amount of fuse tokens from someone.",
     execute(message, args) {
         const db = message.client.db;
@@ -165,7 +164,7 @@ module.exports = {
 				const infoScreen = new Discord.MessageEmbed()
 					.setColor("#03fc24")
 					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-					.setTitle(`Successfully removed ${fuseEmoji}${amount} from ${member.displayName}'s fuse token balance!`)
+					.setTitle(`Successfully removed ${fuseEmoji}${amount} from ${user.username}'s fuse token balance!`)
 					.setDescription(`Current Fuse Token Balance: ${fuseEmoji}${fuseTokens}`)
 					.setTimestamp();
 				if (currentMessage) {
@@ -183,7 +182,7 @@ module.exports = {
 					.setTitle("Error, a user's balance cannot be in the negatives.")
 					.setDescription("The amount of money that can be taken away should not be bigger than the user's money balance")
 					.addFields(
-						{ name: `${member.displayName}'s Fuse Token Balance`, value: `${fuseEmoji}${fuseTokens}`, inline: true },
+						{ name: `${user.username}'s Fuse Token Balance`, value: `${fuseEmoji}${fuseTokens}`, inline: true },
 						{ name: "Amount You Are Tyring to Take Away", value: `${fuseEmoji}${amount}`, inline: true }
 					)
 					.setTimestamp();

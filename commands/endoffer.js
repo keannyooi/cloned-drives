@@ -8,36 +8,22 @@
 */
 
 const Discord = require("discord.js-light");
+const disbut = require("discord-buttons");
 
 module.exports = {
     name: "endoffer",
 	aliases: ["removeoffer", "rmvoffer"],
     usage: "<offer name goes here>",
     args: 1,
-	isExternal: false,
-    adminOnly: false,
+	category: "Community Management",
     description: "Ends an ongoing offer.",
     async execute(message, args) {
 		const db = message.client.db;
 		const filter = response => {
             return response.author.id === message.author.id;
         };
-		const emojiFilter = (reaction, user) => {
-            return (reaction.emoji.name === "✅" || reaction.emoji.name === "❎") && user.id === message.author.id;
-        };
+		
         let offers = await db.get("limitedOffers");
-
-		if (!message.member.roles.cache.has("802043346951340064")) {
-			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-			const errorMessage = new Discord.MessageEmbed()
-				.setColor("#fc0303")
-				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-				.setTitle("Error, you don't have access to this command.")
-				.setDescription("This command is only accessible if you are a part of Community Management.")
-				.setTimestamp();
-			return message.channel.send(errorMessage);
-		}
-
 		const offerName = args.join(" ").toLowerCase();
 		const searchResults = offers.filter(function(offer) {
 			return offer.name.toLowerCase().includes(offerName);
@@ -106,33 +92,39 @@ module.exports = {
 		}
 
 		async function endOffer(offer, currentMessage) {
+			let yse = new disbut.MessageButton()
+				.setStyle("green")
+				.setLabel("Yes!")
+				.setID("yse");
+			let nop = new disbut.MessageButton()
+				.setStyle("red")
+				.setLabel("No!")
+				.setID("nop");
+			let row = new disbut.MessageActionRow().addComponents(yse, nop);
 			const confirmationMessage = new Discord.MessageEmbed()
                 .setColor("#34aeeb")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                 .setTitle(`Are you sure you want to end the ${offer.name} offer?`)
-                .setDescription("React with ✅ to proceed or ❎ to cancel.")
                 .setTimestamp();
 
-            let reactionMessage;
+            let reactionMessage, processed = false;
 			if (currentMessage) {
 				reactionMessage = await currentMessage.edit(confirmationMessage);
 			}
 			else {
 				reactionMessage = await message.channel.send(confirmationMessage);
 			}
-			
-            reactionMessage.react("✅");
-            reactionMessage.react("❎");
-            reactionMessage.awaitReactions(emojiFilter, {
-                max: 1,
-                time: 10000,
-                errors: ["time"]
-            })
-                .then(async collected => {
-					reactionMessage.reactions.removeAll();
-					switch (collected.first().emoji.name) {
-                        case "✅":
-                            offers.splice(offers.indexOf(offer), 1);
+
+			message.client.on("clickButton", async (button) => {
+				if (button.clicker.id === message.author.id && button.message.id === reactionMessage.id) {
+					yse.setDisabled();
+					nop.setDisabled();
+					row = new disbut.MessageActionRow().addComponents(yse, nop);
+					processed = true;
+					switch (button.id) {
+						case "yse":
+							await button.reply.defer();
+							offers.splice(offers.indexOf(offer), 1);
 							await db.set("limitedOffers", offers);
 							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 
@@ -141,29 +133,37 @@ module.exports = {
             					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
             					.setTitle(`Successfully ended the ${offer.name} offer!`)
             					.setTimestamp();
-        					return reactionMessage.edit(infoScreen);
-                        case "❎":
+							return reactionMessage.edit(infoScreen, row);
+						case "nop":
+							await button.reply.defer();
 							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                            const cancelMessage = new Discord.MessageEmbed()
-                                .setColor("#34aeeb")
-                                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                                .setTitle("Action cancelled.")
-                                .setTimestamp();
-                            return reactionMessage.edit(cancelMessage);
-                        default:
-                            break;
-                    }
-				})
-				.catch(error => {
+							const cancelMessage = new Discord.MessageEmbed()
+								.setColor("#34aeeb")
+								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+								.setTitle("Action cancelled.")
+								.setTimestamp();
+							return reactionMessage.edit(cancelMessage, row);
+						default:
+							break;
+					}
+				}
+			});
+	
+			setTimeout(() => {
+				if (!processed) {
+					yse.setDisabled();
+					nop.setDisabled();
+					row = new disbut.MessageActionRow().addComponents(yse, nop);
+	
 					message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-					console.log(error);
-                    const cancelMessage = new Discord.MessageEmbed()
-                        .setColor("#34aeeb")
-                        .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                        .setTitle("Action cancelled automatically.")
-                        .setTimestamp();
-                    return reactionMessage.edit(cancelMessage);
-                });
+					const cancelMessage = new Discord.MessageEmbed()
+						.setColor("#34aeeb")
+						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+						.setTitle("Action cancelled automatically.")
+						.setTimestamp();
+					return reactionMessage.edit(cancelMessage, row);
+				}
+			}, 10000);
 		}
     }
 }

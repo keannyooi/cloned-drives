@@ -18,8 +18,7 @@ module.exports = {
 	name: "editoffer",
 	usage: "<offer name> | <criteria> | <value>",
 	args: 3,
-	isExternal: false,
-	adminOnly: false,
+	category: "Community Management",
 	description: "Edits an offer.",
 	async execute(message, args) {
 		const db = message.client.db;
@@ -30,17 +29,6 @@ module.exports = {
 		const filter = response => {
 			return response.author.id === message.author.id;
 		};
-
-		if (!message.member.roles.cache.has("802043346951340064")) {
-			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-			const errorMessage = new Discord.MessageEmbed()
-				.setColor("#fc0303")
-				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-				.setTitle("Error, you don't have access to this command.")
-				.setDescription("This command is only accessible if you have the Community Management role.")
-				.setTimestamp();
-			return message.channel.send(errorMessage);
-		}
 
 		const searchResults = offers.filter(function (offer) {
 			return offer.name.toLowerCase().includes(keyword);

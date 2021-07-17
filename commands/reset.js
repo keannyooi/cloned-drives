@@ -8,20 +8,17 @@
 */
 
 const Discord = require("discord.js-light");
+const disbut = require("discord-buttons");
 
 module.exports = {
     name: "reset",
     aliases: ["rs", "noneandquitthegame"],
     usage: "<username>",
     args: 1,
-	isExternal: false,
-    adminOnly: true,
+	category: "Admin",
     description: "Resets your stats.",
     async execute(message, args) {
 		const starterCars = ["honda s2000 (1999).json", "peugeot 405 mi16 (1989).json", "range rover county (1989).json", "nissan leaf (2010).json", "de tomaso mangusta (1967).json"];
-		const emojiFilter = (reaction, user) => {
-            return (reaction.emoji.name === "✅" || reaction.emoji.name === "❎") && user.id === message.author.id;
-        };
 		const filter = response => {
             return response.author.id === message.author.id;
         };
@@ -126,34 +123,40 @@ module.exports = {
 		}
 
 		async function noneAndQuitTheGame(user, currentMessage) {
+			let yse = new disbut.MessageButton()
+                .setStyle("green")
+                .setLabel("Yes!")
+                .setID("yse");
+            let nop = new disbut.MessageButton()
+                .setStyle("red")
+                .setLabel("No!")
+                .setID("nop");
+            let row = new disbut.MessageActionRow().addComponents(yse, nop);
 			const confirmationMessage = new Discord.MessageEmbed()
 				.setColor("#34aeeb")
 				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 				.setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
 				.setTitle(`Are you sure you want to reset ${user.username}'s data? (WARNING: THIS ACTION IS IRREVERSIBLE)`)
-				.setDescription("React with ✅ to proceed or ❎ to cancel.")
 				.setTimestamp();
 
-			let reactionMessage;
+			let reactionMessage, processed = false;
 			if (currentMessage) {
-				reactionMessage = await currentMessage.edit(confirmationMessage);
+				reactionMessage = await currentMessage.edit(confirmationMessage, row);
 			}
 			else {
-				reactionMessage = await message.channel.send(confirmationMessage);
+				reactionMessage = await message.channel.send(confirmationMessage, row);
 			}
-			
-			reactionMessage.react("✅");
-			reactionMessage.react("❎");
-			reactionMessage.awaitReactions(emojiFilter, {
-				max: 1,
-				time: 10000,
-				errors: ["time"]
-			})
-				.then(async collected => {
-					reactionMessage.reactions.removeAll();
-					switch (collected.first().emoji.name) {
-						case "✅":
-							await message.client.db.set(`acc${user.id}`, { money: 0,
+
+			message.client.on("clickButton", async (button) => {
+                if (button.clicker.id === message.author.id && button.message.id === reactionMessage.id) {
+                    yse.setDisabled();
+                    nop.setDisabled();
+                    row = new disbut.MessageActionRow().addComponents(yse, nop);
+                    processed = true;
+                    switch (button.id) {
+                        case "yse":
+							await button.reply.defer();
+                            await message.client.db.set(`acc${user.id}`, { money: 0,
 								fuseTokens: 0,
 								trophies: 0,
 								garage: [],
@@ -182,33 +185,39 @@ module.exports = {
 								.setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
 								.setTitle(`Successfully reset ${user.username}'s data!`)
 								.setTimestamp();
-							return reactionMessage.edit(infoScreen);
-						case "❎":
-							reactionMessage.reactions.removeAll();
-							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
-							let cancelMessage = new Discord.MessageEmbed()
-								.setColor("#34aeeb")
-								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                            return reactionMessage.edit(infoScreen, row);
+                        case "nop":
+                            await button.reply.defer();
+                            message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+                            const cancelMessage = new Discord.MessageEmbed()
+                                .setColor("#34aeeb")
+                                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 								.setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
-								.setTitle("Action cancelled.")
-								.setTimestamp();
-							return reactionMessage.edit(cancelMessage);
-						default:
-							break;
-					}
-				})
-				.catch(error => {
-					console.error(error);
-					reactionMessage.reactions.removeAll();
-					message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
-					let cancelMessage = new Discord.MessageEmbed()
-						.setColor("#34aeeb")
-						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                                .setTitle("Action cancelled.")
+                                .setTimestamp();
+                            return reactionMessage.edit(cancelMessage, row);
+                        default:
+                            break;
+                    }
+                }
+            });
+
+            setTimeout(() => {
+                if (!processed) {
+                    yse.setDisabled();
+                    nop.setDisabled();
+                    row = new disbut.MessageActionRow().addComponents(yse, nop);
+
+					message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+                    const cancelMessage = new Discord.MessageEmbed()
+                        .setColor("#34aeeb")
+                        .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 						.setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
-						.setTitle("Action cancelled automatically.")
-						.setTimestamp();
-					return reactionMessage.edit(cancelMessage);
-				});
+                        .setTitle("Action cancelled automatically.")
+                        .setTimestamp();
+                    return reactionMessage.edit(cancelMessage, row);
+                }
+            }, 10000);
 		}
     }
 }

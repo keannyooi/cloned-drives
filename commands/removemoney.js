@@ -14,8 +14,7 @@ module.exports = {
 	aliases: ["rmvmoney"],
     usage: "<username> <amount here>",
     args: 2,
-	isExternal: false,
-    adminOnly: true,
+	category: "Admin",
     description: "Removes a certain amount of money from someone.",
     async execute(message, args) {
 		const db = message.client.db;

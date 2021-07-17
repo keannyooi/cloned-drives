@@ -14,8 +14,7 @@ module.exports = {
 	name: "buyoffer",
 	usage: "<offer name>",
 	args: 1,
-	isExternal: true,
-	adminOnly: false,
+	category: "Gameplay",
 	cooldown: 4.388,
 	description: "Buy limited offers with this command!",
 	async execute(message, args) {

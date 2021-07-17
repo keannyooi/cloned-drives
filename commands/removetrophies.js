@@ -14,8 +14,7 @@ module.exports = {
 	aliases: ["rmvtrophies"],
     usage: "<username> <amount here>",
     args: 2,
-	isExternal: false,
-    adminOnly: true,
+	category: "Admin",
     description: "Removes a certain amount of trophies from someone.",
     execute(message, args) {
 		const db = message.client.db;

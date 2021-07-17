@@ -14,8 +14,7 @@ module.exports = {
     aliases: ["calc", "cal"],
     usage: "<what to calculate> | <variables>",
     args: 0,
-	isExternal: true,
-    adminOnly: false,
+    category: "Miscellaneous",
     description: "Calculates stuff like handling value, mid-range acceleration, off-the-line acceleration and averages.",
     execute(message, args) {
         let answer;

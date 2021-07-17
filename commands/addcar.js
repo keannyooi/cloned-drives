@@ -16,8 +16,7 @@ module.exports = {
     name: "addcar",
     usage: "<username> | (optional) <amount> | <car name goes here>",
     args: 2,
-	isExternal: false,
-    adminOnly: true,
+	category: "Admin",
     description: "Adds a car into your garage. (data transferring)",
     execute(message, args) {
         const db = message.client.db;

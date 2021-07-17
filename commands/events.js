@@ -16,8 +16,7 @@ module.exports = {
     aliases: ["e", "event"],
     usage: "(optional) <event name>",
     args: 0,
-	isExternal: true,
-    adminOnly: false,
+	category: "Gameplay",
     description: "Views all active and inactive events.",
     async execute(message, args) {
 		const db = message.client.db;

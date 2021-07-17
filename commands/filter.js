@@ -15,8 +15,7 @@ module.exports = {
 	name: "filter",
 	usage: "<criteria> <supporting values>",
 	args: 0,
-	isExternal: true,
-	adminOnly: false,
+	category: "Configuration",
 	description: "Sets up a filter for car lists.",
 	async execute(message, args) {
 		const db = message.client.db;

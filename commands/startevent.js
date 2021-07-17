@@ -8,36 +8,22 @@
 */
 
 const Discord = require("discord.js-light");
+const disbut = require("discord-buttons");
 const { DateTime } = require("luxon");
 
 module.exports = {
-    name: "startevent",
+	name: "startevent",
 	aliases: ["launchevent"],
-    usage: "<event name goes here>",
-    args: 1,
-	isExternal: false,
-    adminOnly: false,
-    description: "Starts an inactive event.",
-    async execute(message, args) {
+	usage: "<event name goes here>",
+	args: 1,
+	category: "Community Management",
+	description: "Starts an inactive event.",
+	async execute(message, args) {
 		const db = message.client.db;
 		const filter = response => {
-            return response.author.id === message.author.id;
-        };
-		const emojiFilter = (reaction, user) => {
-            return (reaction.emoji.name === "✅" || reaction.emoji.name === "❎") && user.id === message.author.id;
-        };
-        const events = await db.get("events");
-
-		if (!message.member.roles.cache.has("802043346951340064")) {
-			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-			const errorMessage = new Discord.MessageEmbed()
-				.setColor("#fc0303")
-				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-				.setTitle("Error, you don't have access to this command.")
-				.setDescription("This command is only accessible if you are a part of Community Management.")
-				.setTimestamp();
-			return message.channel.send(errorMessage);
-		}
+			return response.author.id === message.author.id;
+		};
+		const events = await db.get("events");
 
 		let eventName = args.join(" ").toLowerCase();
 		const searchResults = Object.values(events).filter(event => {
@@ -112,32 +98,39 @@ module.exports = {
 		}
 
 		async function startEvent(event, currentMessage) {
+			let yse = new disbut.MessageButton()
+				.setStyle("green")
+				.setLabel("Yes!")
+				.setID("yse");
+			let nop = new disbut.MessageButton()
+				.setStyle("red")
+				.setLabel("No!")
+				.setID("nop");
+			let row = new disbut.MessageActionRow().addComponents(yse, nop);
 			const confirmationMessage = new Discord.MessageEmbed()
-                .setColor("#34aeeb")
-                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle(`Are you sure you want to start the ${event.name} event?`)
-                .setDescription("React with ✅ to proceed or ❎ to cancel.")
-                .setTimestamp();
+				.setColor("#34aeeb")
+				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+				.setTitle(`Are you sure you want to start the ${event.name} event?`)
+				.setDescription("React with ✅ to proceed or ❎ to cancel.")
+				.setTimestamp();
 
-            let reactionMessage;
+			let reactionMessage, processed = false;
 			if (currentMessage) {
-				reactionMessage = await currentMessage.edit(confirmationMessage);
+				reactionMessage = await currentMessage.edit(confirmationMessage, row);
 			}
 			else {
-				reactionMessage = await message.channel.send(confirmationMessage);
+				reactionMessage = await message.channel.send(confirmationMessage, row);
 			}
-			
-            reactionMessage.react("✅");
-            reactionMessage.react("❎");
-            reactionMessage.awaitReactions(emojiFilter, {
-                max: 1,
-                time: 10000,
-                errors: ["time"]
-            })
-                .then(async collected => {
-					reactionMessage.reactions.removeAll();
-					switch (collected.first().emoji.name) {
-                        case "✅":
+
+			message.client.on("clickButton", async (button) => {
+				if (button.clicker.id === message.author.id && button.message.id === reactionMessage.id) {
+					yse.setDisabled();
+					nop.setDisabled();
+					row = new disbut.MessageActionRow().addComponents(yse, nop);
+					processed = true;
+					switch (button.id) {
+						case "yse":
+							await button.reply.defer();
 							event.isActive = true;
 							if (event.timeLeft !== "unlimited") {
 								event.deadline = DateTime.now().plus({ days: event.timeLeft }).toISO();
@@ -147,33 +140,41 @@ module.exports = {
 							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 
 							const infoScreen = new Discord.MessageEmbed()
-            					.setColor("#34aeeb")
-            					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-            					.setTitle(`Successfully started the ${event.name} event!`)
-            					.setTimestamp();
-        					return reactionMessage.edit(infoScreen);
-                        case "❎":
+								.setColor("#34aeeb")
+								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+								.setTitle(`Successfully started the ${event.name} event!`)
+								.setTimestamp();
+							return reactionMessage.edit(infoScreen, row);
+						case "nop":
+							await button.reply.defer();
 							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                            const cancelMessage = new Discord.MessageEmbed()
-                                .setColor("#34aeeb")
-                                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                                .setTitle("Action cancelled.")
-                                .setTimestamp();
-                            return reactionMessage.edit(cancelMessage);
-                        default:
-                            break;
-                    }
-				})
-				.catch(error => {
+							const cancelMessage = new Discord.MessageEmbed()
+								.setColor("#34aeeb")
+								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+								.setTitle("Action cancelled.")
+								.setTimestamp();
+							return reactionMessage.edit(cancelMessage, row);
+						default:
+							break;
+					}
+				}
+			});
+	
+			setTimeout(() => {
+				if (!processed) {
+					yse.setDisabled();
+					nop.setDisabled();
+					row = new disbut.MessageActionRow().addComponents(yse, nop);
+	
 					message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-					console.log(error);
-                    const cancelMessage = new Discord.MessageEmbed()
-                        .setColor("#34aeeb")
-                        .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                        .setTitle("Action cancelled automatically.")
-                        .setTimestamp();
-                    return reactionMessage.edit(cancelMessage);
-                });
+					const cancelMessage = new Discord.MessageEmbed()
+						.setColor("#34aeeb")
+						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+						.setTitle("Action cancelled automatically.")
+						.setTimestamp();
+					return reactionMessage.edit(cancelMessage, row);
+				}
+			}, 10000);
 		}
-    }
+	}
 }

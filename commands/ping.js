@@ -7,16 +7,11 @@
 |__|\__\ |_______/__/     \__\ |__| \__| |__| \__|     |__| 	(this is a watermark that proves that these lines of code are mine)
 */
 
-const Discord = require("discord.js-light");
-const Canvas = require("canvas");
-
 module.exports = {
     name: "ping",
     usage: "(no arguments required)",
     args: 0,
-	isExternal: false,
-    adminOnly: false,
-	cooldown: 10,
+	category: "Miscellaneous",
     description: "Shows the current bot and API latency.",
     async execute(message) {
         message.channel.send(`bruh y u ping me

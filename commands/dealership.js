@@ -19,8 +19,7 @@ module.exports = {
 	aliases: ["deal", "dealer"],
 	usage: "(no arguments required)",
 	args: 0,
-	isExternal: true,
-	adminOnly: false,
+	category: "Gameplay",
 	description: "Check what's on sale in the car dealership here!",
 	async execute(message) {
 		const wait = message.channel.send("**Loading dealership, this may take a while... (please wait)**");

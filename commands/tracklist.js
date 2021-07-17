@@ -8,6 +8,7 @@
 */
 
 const Discord = require("discord.js-light");
+const disbut = require("discord-buttons");
 const fs = require("fs");
 const trackFiles = fs.readdirSync("./commands/tracksets").filter(file => file.endsWith('.json'));
 
@@ -16,14 +17,10 @@ module.exports = {
     aliases: ["alltracks"],
     usage: "(optional) <page number>",
     args: 0,
-	isExternal: true,
-    adminOnly: false,
+	category: "Info",
     description: "Shows all the cars that are available in Cloned Drives in list form.",
     async execute(message, args) {
         const pageLimit = 10;
-        const filter = (reaction, user) => {
-            return (reaction.emoji.name === "⬅️" || reaction.emoji.name === "➡️") && user.id === message.author.id;
-        };
         var trackList = "";
         var reactionIndex = 0;
         var page;
@@ -72,84 +69,133 @@ module.exports = {
         }
         trackDisplay(page);
 
+        let firstPage = new disbut.MessageButton()
+			.setStyle("red")
+			.setLabel("<<")
+			.setID("first_page");
+		let prevPage = new disbut.MessageButton()
+			.setStyle("blurple")
+			.setLabel("<")
+			.setID("prev_page");
+		let nextPage = new disbut.MessageButton()
+			.setStyle("blurple")
+			.setLabel(">")
+			.setID("next_page");
+		let lastPage = new disbut.MessageButton()
+			.setStyle("red")
+			.setLabel(">>")
+			.setID("last_page");
         let infoScreen = new Discord.MessageEmbed()
             .setColor("#34aeeb")
             .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
             .setTitle("List of All Tracks in Cloned Drives")
             .addField("Track", trackList, true)
-            .setFooter(`Page ${page} of ${totalPages} - React with ⬅️ or ➡️ to navigate through pages.`)
+            .setFooter(`Page ${page} of ${totalPages} - Interact with the buttons below to navigate through pages.`)
             .setTimestamp();
-		if (message.channel.type === "text") {
-			infoScreen.setFooter(`Page ${page} of ${totalPages} - React with ⬅️ or ➡️ to navigate through pages.`);
-		}
-		else {
-			infoScreen.setFooter(`Page ${page} of ${totalPages} - Arrow navigation is disabled in DMs, please use cd-carlist <page number> to view a different page.`);
-		}
 
+        switch (reactionIndex) {
+			case 0:
+				firstPage.setDisabled();
+				prevPage.setDisabled();
+				nextPage.setDisabled();
+				lastPage.setDisabled();
+				break;
+			case 1:
+				firstPage.setDisabled();
+				prevPage.setDisabled();
+				break;
+			case 2:
+				nextPage.setDisabled();
+				lastPage.setDisabled();
+				break;
+			case 3:
+				break;
+			default:
+				break;
+		}
+		let row = new disbut.MessageActionRow().addComponents(firstPage, prevPage, nextPage, lastPage);
 		message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-        message.channel.send(infoScreen).then(infoMessage => {
-			if (message.channel.type === "text") {
-				switch (reactionIndex) {
-					case 0:
+        let listMessage = await message.channel.send(infoScreen, row);
+
+        message.client.on("clickButton", async (button) => {
+			if (button.clicker.id === message.author.id && button.message.id === listMessage.id) {
+				switch (button.id) {
+					case "first_page":
+						page = 1;
 						break;
-					case 1:
-						infoMessage.react("➡️");
+					case "prev_page":
+						page -= 1;
 						break;
-					case 2:
-						infoMessage.react("⬅️");
+					case "next_page":
+						page += 1;
 						break;
-					case 3:
-						infoMessage.react("⬅️");
-						infoMessage.react("➡️");
+					case "last_page":
+						page = totalPages;
 						break;
 					default:
 						break;
 				}
+				trackDisplay(page);
 
-				const collector = infoMessage.createReactionCollector(filter, { time: 60000 });
-				collector.on("collect", reaction => {
-					if (reaction.emoji.name === "⬅️") {
-						page -= 1;
-					}
-					else if (reaction.emoji.name === "➡️") {
-						page += 1;
-					}
-					trackDisplay(page);
-					infoMessage.reactions.removeAll();
+				firstPage = new disbut.MessageButton()
+					.setStyle("red")
+					.setLabel("<<")
+					.setID("first_page");
+				prevPage = new disbut.MessageButton()
+					.setStyle("blurple")
+					.setLabel("<")
+					.setID("prev_page");
+				nextPage = new disbut.MessageButton()
+					.setStyle("blurple")
+					.setLabel(">")
+					.setID("next_page");
+				lastPage = new disbut.MessageButton()
+					.setStyle("red")
+					.setLabel(">>")
+					.setID("last_page");
 
-					let infoScreen = new Discord.MessageEmbed()
-						.setColor("#34aeeb")
-						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-						.setTitle("List of All Tracks in Cloned Drives")
-						.addField("Track", trackList, true)
-						.setFooter(`Page ${page} of ${totalPages} - React with ⬅️ or ➡️ to navigate through pages.`)
-						.setTimestamp();
-					infoMessage.edit(infoScreen);
+                    let infoScreen = new Discord.MessageEmbed()
+                    .setColor("#34aeeb")
+                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                    .setTitle("List of All Tracks in Cloned Drives")
+                    .addField("Track", trackList, true)
+                    .setFooter(`Page ${page} of ${totalPages} - Interact with the buttons below to navigate through pages.`)
+                    .setTimestamp();
 
-					switch (reactionIndex) {
-						case 0:
-							break;
-						case 1:
-							infoMessage.react("➡️");
-							break;
-						case 2:
-							infoMessage.react("⬅️");
-							break;
-						case 3:
-							infoMessage.react("⬅️");
-							infoMessage.react("➡️");
-							break;
-						default:
-							break;
-					}
-				});
-
-				collector.on("end", () => {
-					console.log("end of collection");
-					infoMessage.reactions.removeAll();
-				});
+				switch (reactionIndex) {
+					case 0:
+						firstPage.setDisabled();
+						prevPage.setDisabled();
+						nextPage.setDisabled();
+						lastPage.setDisabled();
+						break;
+					case 1:
+						firstPage.setDisabled();
+						prevPage.setDisabled();
+						break;
+					case 2:
+						nextPage.setDisabled();
+						lastPage.setDisabled();
+						break;
+					case 3:
+						break;
+					default:
+						break;
+				}
+				row = new disbut.MessageActionRow().addComponents(firstPage, prevPage, nextPage, lastPage);
+				await listMessage.edit(infoScreen, row);
+				await button.reply.defer();
 			}
-        });
+		});
+
+		setTimeout(() => {
+			firstPage.setDisabled();
+			prevPage.setDisabled();
+			nextPage.setDisabled();
+			lastPage.setDisabled();
+			row = new disbut.MessageActionRow().addComponents(firstPage, prevPage, nextPage, lastPage);
+			listMessage.edit(infoScreen, row);
+		}, 70000);
 
         function trackDisplay(page) {
             let startsWith, endsWith;

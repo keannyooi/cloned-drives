@@ -1,0 +1,54 @@
+﻿{
+    "rq": 102,
+    "make": "Porsche",
+    "model": "Cayenne Turbo Coupe",
+    "modelYear": 2019,
+    "country": "DE",
+    "topSpeed": 178,
+    "0to60": 3.4,
+    "handling": 88,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 2200,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 68.09,
+    "ola": 74.03,
+    "description": "A Fire-Breathing SUV with Fashion Sense. Card by Exist",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/859603301998002186/CD_Porsche_Cayenne_Turbo_Coupe.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824360712414691358/broken.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824360717654294558/broken333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824360723286851594/broken666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824360750218608680/broken996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824360739582115850/broken969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824360730182156348/broken699.png",
+
+    "333TopSpeed": 181,
+    "3330to60": 3.2,
+    "333Handling": 91,
+
+    "666TopSpeed": 184,
+    "6660to60": 3.1, 
+    "666Handling": 94,
+
+    "996TopSpeed": 187,
+    "9960to60": 2.9,
+    "996Handling": 94,
+
+    "969TopSpeed": 187,
+    "9690to60": 3.1,
+    "969Handling": 98,
+
+    "699TopSpeed": 184,
+    "6990to60": 2.9,
+    "699Handling": 98
+}

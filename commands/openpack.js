@@ -17,8 +17,7 @@ module.exports = {
 	aliases: ["buypack", "op"],
 	usage: "<pack name goes here>",
 	args: 1,
-	isExternal: true,
-	adminOnly: false,
+	category: "Gameplay",
 	cooldown: 4.388,
 	description: "Opens a pack.",
 	async execute(message, args) {
@@ -55,7 +54,7 @@ module.exports = {
 				message.channel.awaitMessages(filter, {
 					max: 1,
 					time: 30000,
-					errors: ['time']
+					errors: ["time"]
 				})
 					.then(collected => {
 						if (message.channel.type === "text") {

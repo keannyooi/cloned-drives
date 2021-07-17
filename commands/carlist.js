@@ -8,142 +8,139 @@
 */
 
 const Discord = require("discord.js-light");
+const disbut = require("discord-buttons");
 const fs = require("fs");
 const carFiles = fs.readdirSync("./commands/cars").filter(file => file.endsWith('.json'));
 
 module.exports = {
-    name: "carlist",
-    aliases: ["allcars"],
-    usage: "(all optional) <page number> | -s <sorting criteria>",
-    args: 0,
-	isExternal: true,
-    adminOnly: false,
-    description: "Shows all the cars that are available in Cloned Drives in list form.",
-    async execute(message, args) {
-        const db = message.client.db;
-        const pageLimit = 10;
-        const filter = (reaction, user) => {
-            return (reaction.emoji.name === "⬅️" || reaction.emoji.name === "➡️") && user.id === message.author.id;
-        };
-        var list = carFiles;
-        var carList = "", valueList = "";
-        var reactionIndex = 0;
-        var sortBy = "rq";
-        var page;
+	name: "carlist",
+	aliases: ["allcars"],
+	usage: "(all optional) <page number> | -s <sorting criteria>",
+	args: 0,
+	category: "Info",
+	description: "Shows all the cars that are available in Cloned Drives in list form.",
+	async execute(message, args) {
+		const db = message.client.db;
+		const pageLimit = 10;
+		var list = carFiles;
+		var carList = "", valueList = "";
+		var reactionIndex = 0;
+		var sortBy = "rq";
+		var page;
 
-        if (!args.length || (args[0] === "-s" && args[1])) {
-            page = 1;
-        }
-        else if (!isNaN(args[0])) {
-            page = parseInt(args[0]);
-        }
-        else {
+		if (!args.length || (args[0] === "-s" && args[1])) {
+			page = 1;
+		}
+		else if (!isNaN(args[0])) {
+			page = parseInt(args[0]);
+		}
+		else {
 			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-            const errorScreen = new Discord.MessageEmbed()
-                .setColor("#fc0303")
-                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle("Error, invalid integer provided.")
-                .setDescription("It looks like the page number you requested is not a number.")
-                .addField("Page Number Received", `\`${args[0]}\` (not a number)`)
-                .setTimestamp();
-            return message.channel.send(errorScreen);
-        }
+			const errorScreen = new Discord.MessageEmbed()
+				.setColor("#fc0303")
+				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+				.setTitle("Error, invalid integer provided.")
+				.setDescription("It looks like the page number you requested is not a number.")
+				.addField("Page Number Received", `\`${args[0]}\` (not a number)`)
+				.setTimestamp();
+			return message.channel.send(errorScreen);
+		}
 
 		const playerData = await db.get(`acc${message.author.id}`);
 		const garage = playerData.garage;
-        const carFilter = playerData.filter;
-        if (carFilter !== undefined && playerData.settings.filtercarlist === true) {
-            for (const [key, value] of Object.entries(carFilter)) {
-                switch (typeof value) {
-                    case "object":
-                        if (Array.isArray(value)) {
-                            list = list.filter(function (carFile) {
-                                let currentCar = require(`./cars/${carFile}`);
-                                if (Array.isArray(currentCar[key])) {
-                                    let obj = {};
-                                    currentCar[key].forEach((tag, index) => obj[tag.toLowerCase()] = index);
-                                    return value.every(tagFilter => { return obj[tagFilter] !== undefined });
-                                }
-                                else {
-                                    return value.includes(currentCar[key].toLowerCase());
-                                }
-                            });
-                        }
-                        else {
-                            list = list.filter(function (carFile) {
-                                let currentCar = require(`./cars/${carFile}`);
-                                return currentCar[key] >= value.start && currentCar[key.replace("count", "Count").replace("y", "Y")] <= value.end;
-                            });
-                        }
-                        break;
-                    case "string":
-                        if (key === "search") {
-                            list = list.filter(function (carFile) {
-                                let currentCar = require(`./cars/${carFile}`);
-                                let make = currentCar["make"];
-                                if (typeof make === "object") {
-                                    make = currentCar["make"][0];
-                                }
-                                let name = `${make} ${currentCar["model"]}`;
-                                return name.toLowerCase().includes(value);
-                            });
-                        }
-                        else {
-                            list = list.filter(function (carFile) {
-                                let currentCar = require(`./cars/${carFile}`);
-                                return currentCar[key].toLowerCase() === value;
-                            });
-                        }
-                        break;
-                    case "boolean":
+		const carFilter = playerData.filter;
+		if (carFilter !== undefined && playerData.settings.filtercarlist === true) {
+			for (const [key, value] of Object.entries(carFilter)) {
+				switch (typeof value) {
+					case "object":
+						if (Array.isArray(value)) {
+							list = list.filter(function (carFile) {
+								let currentCar = require(`./cars/${carFile}`);
+								if (Array.isArray(currentCar[key])) {
+									let obj = {};
+									currentCar[key].forEach((tag, index) => obj[tag.toLowerCase()] = index);
+									return value.every(tagFilter => { return obj[tagFilter] !== undefined });
+								}
+								else {
+									return value.includes(currentCar[key].toLowerCase());
+								}
+							});
+						}
+						else {
+							list = list.filter(function (carFile) {
+								let currentCar = require(`./cars/${carFile}`);
+								return currentCar[key] >= value.start && currentCar[key.replace("count", "Count").replace("y", "Y")] <= value.end;
+							});
+						}
+						break;
+					case "string":
+						if (key === "search") {
+							list = list.filter(function (carFile) {
+								let currentCar = require(`./cars/${carFile}`);
+								let make = currentCar["make"];
+								if (typeof make === "object") {
+									make = currentCar["make"][0];
+								}
+								let name = `${make} ${currentCar["model"]}`;
+								return name.toLowerCase().includes(value);
+							});
+						}
+						else {
+							list = list.filter(function (carFile) {
+								let currentCar = require(`./cars/${carFile}`);
+								return currentCar[key].toLowerCase() === value;
+							});
+						}
+						break;
+					case "boolean":
 						if (key === "isPrize") {
 							list = list.filter(function (carFile) {
-                            	let currentCar = require(`./cars/${carFile}`);
-                            	return currentCar[key] === value;
-                        	});
+								let currentCar = require(`./cars/${carFile}`);
+								return currentCar[key] === value;
+							});
 						}
 						else if (key === "isOwned") {
 							list = list.filter(function (carFile) {
-                            	return garage.some(car => carFile.includes(car.carFile)) === value;
-                        	});
+								return garage.some(car => carFile.includes(car.carFile)) === value;
+							});
 						}
-                        break
-                    default:
-                        break;
-                }
-            }
-        }
+						break
+					default:
+						break;
+				}
+			}
+		}
 		const ownedCars = list.filter(function (carFile) {
-            return garage.some(part => carFile.includes(part.carFile));
-        });
+			return garage.some(part => carFile.includes(part.carFile));
+		});
 
 		const totalCars = list.length;
-        const totalPages = Math.ceil(totalCars / pageLimit);
+		const totalPages = Math.ceil(totalCars / pageLimit);
 
-        if (args[args.length - 2] === "-s") {
-            switch (args[args.length - 1].toLowerCase()) {
-                case "rq":
-                    break;
-                case "topspeed":
-                    sortBy = "topSpeed";
-                    break;
-                case "accel":
-                    sortBy = "0to60";
-                    break;
-                case "handling":
-                case "weight":
-                case "mra":
-                case "ola":
+		if (args[args.length - 2] === "-s") {
+			switch (args[args.length - 1].toLowerCase()) {
+				case "rq":
+					break;
+				case "topspeed":
+					sortBy = "topSpeed";
+					break;
+				case "accel":
+					sortBy = "0to60";
+					break;
+				case "handling":
+				case "weight":
+				case "mra":
+				case "ola":
 				case "mostowned":
-                    sortBy = args[args.length - 1].toLowerCase();
-                    break;
-                default:
+					sortBy = args[args.length - 1].toLowerCase();
+					break;
+				default:
 					message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                    const errorScreen = new Discord.MessageEmbed()
-                        .setColor("#fc0303")
-                        .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                        .setTitle("Error, sorting criteria not found.")
-                        .setDescription(`Here is a list of sorting criterias. 
+					const errorScreen = new Discord.MessageEmbed()
+						.setColor("#fc0303")
+						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+						.setTitle("Error, sorting criteria not found.")
+						.setDescription(`Here is a list of sorting criterias. 
                                          \`-s topspeed\` - Sort by top speed. 
                                          \`-s accel\` - Sort by acceleration. 
                                          \`-s handling\` - Sort by handling. 
@@ -151,14 +148,14 @@ module.exports = {
                                          \`-s mra\` - Sort by mid-range acceleraion. 
                                          \`-s ola\` - Sort by off-the-line acceleration.
 										 \`-s mostowned\` - Sort by how many copies of the car owned.`)
-                        .setTimestamp();
-                    return message.channel.send(errorScreen);
-            }
-        }
+						.setTimestamp();
+					return message.channel.send(errorScreen);
+			}
+		}
 
-        list.sort(function (a, b) {
+		list.sort(function (a, b) {
 			const carA = require(`./cars/${a}`);
-            const carB = require(`./cars/${b}`);
+			const carB = require(`./cars/${b}`);
 			if (sortBy === "mostowned") {
 				const garA = garage.find(o => o.carFile === a);
 				const garB = garage.find(o => o.carFile === b);
@@ -239,109 +236,160 @@ module.exports = {
 					}
 				}
 			}
-        });
+		});
 
-        if (page < 1 || totalPages < page) {
+		if (page < 1 || totalPages < page) {
 			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-            const errorScreen = new Discord.MessageEmbed()
-                .setColor("#fc0303")
-                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle("Error, page number requested invalid.")
-                .setDescription(`The car list ends at page ${totalPages}.`)
-                .addField("Page Number Received", `\`${page}\` (not within the range of 1 and ${totalPages})`)
-                .setTimestamp();
-            return message.channel.send(errorScreen);
-        }
-        carDisplay(page);
+			const errorScreen = new Discord.MessageEmbed()
+				.setColor("#fc0303")
+				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+				.setTitle("Error, page number requested invalid.")
+				.setDescription(`The car list ends at page ${totalPages}.`)
+				.addField("Page Number Received", `\`${page}\` (not within the range of 1 and ${totalPages})`)
+				.setTimestamp();
+			return message.channel.send(errorScreen);
+		}
+		carDisplay(page);
 
-        let infoScreen = new Discord.MessageEmbed()
-            .setColor("#34aeeb")
-            .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-            .setTitle(`List of All Cars in Cloned Drives (${ownedCars.length}/${totalCars} Cars Owned)`)
-            .setDescription(`Current Sorting Criteria: \`${sortBy}\`, Filter Activated: \`${(carFilter !== undefined && playerData.settings.filtercarlist === true)}\``)
-            .addField("Car", carList, true)
-            .setFooter(`Page ${page} of ${totalPages} - React with ⬅️ or ➡️ to navigate through pages.`)
-            .setTimestamp();
-        if (sortBy !== "rq") {
-            infoScreen.addField("Value", valueList, true)
-        }
-		if (message.channel.type === "text") {
-			infoScreen.setFooter(`Page ${page} of ${totalPages} - React with ⬅️ or ➡️ to navigate through pages.`);
+		let firstPage = new disbut.MessageButton()
+			.setStyle("red")
+			.setLabel("<<")
+			.setID("first_page");
+		let prevPage = new disbut.MessageButton()
+			.setStyle("blurple")
+			.setLabel("<")
+			.setID("prev_page");
+		let nextPage = new disbut.MessageButton()
+			.setStyle("blurple")
+			.setLabel(">")
+			.setID("next_page");
+		let lastPage = new disbut.MessageButton()
+			.setStyle("red")
+			.setLabel(">>")
+			.setID("last_page");
+
+		let infoScreen = new Discord.MessageEmbed()
+			.setColor("#34aeeb")
+			.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+			.setTitle(`List of All Cars in Cloned Drives (${ownedCars.length}/${totalCars} Cars Owned)`)
+			.setDescription(`Current Sorting Criteria: \`${sortBy}\`, Filter Activated: \`${(carFilter !== undefined && playerData.settings.filtercarlist === true)}\``)
+			.addField("Car", carList, true)
+			.setFooter(`Page ${page} of ${totalPages} - Interact with the buttons below to navigate through pages.`)
+			.setTimestamp();
+		if (sortBy !== "rq") {
+			infoScreen.addField("Value", valueList, true)
 		}
-		else {
-			infoScreen.setFooter(`Page ${page} of ${totalPages} - Arrow navigation is disabled in DMs, please use cd-carlist <page number> to view a different page.`);
+
+		switch (reactionIndex) {
+			case 0:
+				firstPage.setDisabled();
+				prevPage.setDisabled();
+				nextPage.setDisabled();
+				lastPage.setDisabled();
+				break;
+			case 1:
+				firstPage.setDisabled();
+				prevPage.setDisabled();
+				break;
+			case 2:
+				nextPage.setDisabled();
+				lastPage.setDisabled();
+				break;
+			case 3:
+				break;
+			default:
+				break;
 		}
+		let row = new disbut.MessageActionRow().addComponents(firstPage, prevPage, nextPage, lastPage);
 
 		message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-        message.channel.send(infoScreen).then(infoMessage => {
-			if (message.channel.type === "text") {
-				switch (reactionIndex) {
-					case 0:
+		let listMessage = await message.channel.send(infoScreen, row);
+
+		message.client.on("clickButton", async (button) => {
+			if (button.clicker.id === message.author.id && button.message.id === listMessage.id) {
+				switch (button.id) {
+					case "first_page":
+						page = 1;
 						break;
-					case 1:
-						infoMessage.react("➡️");
+					case "prev_page":
+						page -= 1;
 						break;
-					case 2:
-						infoMessage.react("⬅️");
+					case "next_page":
+						page += 1;
 						break;
-					case 3:
-						infoMessage.react("⬅️");
-						infoMessage.react("➡️");
+					case "last_page":
+						page = totalPages;
 						break;
 					default:
 						break;
 				}
+				carDisplay(page);
 
-				const collector = infoMessage.createReactionCollector(filter, { time: 60000 });
-				collector.on("collect", reaction => {
-					if (reaction.emoji.name === "⬅️") {
-						page -= 1;
-					}
-					else if (reaction.emoji.name === "➡️") {
-						page += 1;
-					}
-					carDisplay(page);
-					infoMessage.reactions.removeAll();
+				firstPage = new disbut.MessageButton()
+					.setStyle("red")
+					.setLabel("<<")
+					.setID("first_page");
+				prevPage = new disbut.MessageButton()
+					.setStyle("blurple")
+					.setLabel("<")
+					.setID("prev_page");
+				nextPage = new disbut.MessageButton()
+					.setStyle("blurple")
+					.setLabel(">")
+					.setID("next_page");
+				lastPage = new disbut.MessageButton()
+					.setStyle("red")
+					.setLabel(">>")
+					.setID("last_page");
 
-					let infoScreen = new Discord.MessageEmbed()
-						.setColor("#34aeeb")
-						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-						.setTitle(`List of All Cars in Cloned Drives (${ownedCars.length}/${totalCars} Cars Owned)`)
-						.setDescription(`Current Sorting Criteria: \`${sortBy}\`, Filter Activated: \`${(carFilter !== undefined && playerData.settings.filtercarlist === true)}\``)
-						.addField("Car", carList, true)
-						.setFooter(`Page ${page} of ${totalPages} - React with ⬅️ or ➡️ to navigate through pages.`)
-						.setTimestamp();
-					if (sortBy !== "rq") {
-						infoScreen.addField("Value", valueList, true)
-					}
-					infoMessage.edit(infoScreen);
+				infoScreen = new Discord.MessageEmbed()
+					.setColor("#34aeeb")
+					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+					.setTitle(`List of All Cars in Cloned Drives (${ownedCars.length}/${totalCars} Cars Owned)`)
+					.setDescription(`Current Sorting Criteria: \`${sortBy}\`, Filter Activated: \`${(carFilter !== undefined && playerData.settings.filtercarlist === true)}\``)
+					.addField("Car", carList, true)
+					.setFooter(`Page ${page} of ${totalPages} - Interact with the buttons below to navigate through pages.`)
+					.setTimestamp();
+				if (sortBy !== "rq") {
+					infoScreen.addField("Value", valueList, true)
+				}
 
-					switch (reactionIndex) {
-						case 0:
-							break;
-						case 1:
-							infoMessage.react("➡️");
-							break;
-						case 2:
-							infoMessage.react("⬅️");
-							break;
-						case 3:
-							infoMessage.react("⬅️");
-							infoMessage.react("➡️");
-							break;
-						default:
-							break;
-					}
-				});
-
-				collector.on("end", () => {
-					console.log("end of collection");
-					infoMessage.reactions.removeAll();
-				});
+				switch (reactionIndex) {
+					case 0:
+						firstPage.setDisabled();
+						prevPage.setDisabled();
+						nextPage.setDisabled();
+						lastPage.setDisabled();
+						break;
+					case 1:
+						firstPage.setDisabled();
+						prevPage.setDisabled();
+						break;
+					case 2:
+						nextPage.setDisabled();
+						lastPage.setDisabled();
+						break;
+					case 3:
+						break;
+					default:
+						break;
+				}
+				row = new disbut.MessageActionRow().addComponents(firstPage, prevPage, nextPage, lastPage);
+				await listMessage.edit(infoScreen, row);
+				await button.reply.defer();
 			}
-        });
+		});
 
-        function rarityCheck(currentCar) {
+		setTimeout(() => {
+			firstPage.setDisabled();
+			prevPage.setDisabled();
+			nextPage.setDisabled();
+			lastPage.setDisabled();
+			row = new disbut.MessageActionRow().addComponents(firstPage, prevPage, nextPage, lastPage);
+			listMessage.edit(infoScreen, row);
+		}, 70000);
+
+		function rarityCheck(currentCar) {
 			if (currentCar["rq"] > 79) { //leggie
 				return message.client.emojis.cache.get("857512942471479337");
 			}
@@ -365,45 +413,45 @@ module.exports = {
 			}
 		}
 
-        function carDisplay(page) {
-            var startsWith, endsWith;
+		function carDisplay(page) {
+			var startsWith, endsWith;
 
-            if (list.length - pageLimit <= 0) {
-                startsWith = 0;
-                endsWith = list.length;
-                reactionIndex = 0;
-            }
-            else if (page * pageLimit === pageLimit) {
-                startsWith = 0;
-                endsWith = pageLimit;
-                reactionIndex = 1;
-            }
-            else if (list.length - (pageLimit * page) <= 0) {
-                startsWith = pageLimit * (page - 1);
-                endsWith = list.length;
-                reactionIndex = 2;
-            }
-            else {
-                startsWith = pageLimit * (page - 1);
-                endsWith = startsWith + pageLimit;
-                reactionIndex = 3;
-            }
-            carList = valueList = "";
+			if (list.length - pageLimit <= 0) {
+				startsWith = 0;
+				endsWith = list.length;
+				reactionIndex = 0;
+			}
+			else if (page * pageLimit === pageLimit) {
+				startsWith = 0;
+				endsWith = pageLimit;
+				reactionIndex = 1;
+			}
+			else if (list.length - (pageLimit * page) <= 0) {
+				startsWith = pageLimit * (page - 1);
+				endsWith = list.length;
+				reactionIndex = 2;
+			}
+			else {
+				startsWith = pageLimit * (page - 1);
+				endsWith = startsWith + pageLimit;
+				reactionIndex = 3;
+			}
+			carList = valueList = "";
 
-            for (i = startsWith; i < endsWith; i++) {
+			for (i = startsWith; i < endsWith; i++) {
 				carList += `${i + 1 - ((page - 1) * 10)}. `;
 				valueList += `${i + 1 - ((page - 1) * 10)}. `;
-                const currentCar = require(`./cars/${list[i]}`);
-                const rarity = rarityCheck(currentCar);
+				const currentCar = require(`./cars/${list[i]}`);
+				const rarity = rarityCheck(currentCar);
 
 				let make = currentCar["make"];
 				if (typeof make === "object") {
 					make = currentCar["make"][0];
 				}
-                carList += `(${rarity} ${currentCar["rq"]}) ${make} ${currentCar["model"]} (${currentCar["modelYear"]})`;
-                if (currentCar["isPrize"]) {
-                    carList += ` 🏆`;
-                }
+				carList += `(${rarity} ${currentCar["rq"]}) ${make} ${currentCar["model"]} (${currentCar["modelYear"]})`;
+				if (currentCar["isPrize"]) {
+					carList += ` 🏆`;
+				}
 				if (sortBy === "mostowned") {
 					let count = garage.find(o => o.carFile === list[i]);
 					let countNumber = 0;
@@ -412,16 +460,16 @@ module.exports = {
 					}
 					valueList += `\`${countNumber}\`\n`;
 				}
-                else if (sortBy !== "rq") {
-                    valueList += `\`${currentCar[sortBy]}\`\n`;
-                }
-                if (garage.some(car => list[i].includes(car.carFile))) {
-                    carList += " ✅\n";
-                }
-                else {
-                    carList += "\n";
-                }
-            }
-        }
-    }
+				else if (sortBy !== "rq") {
+					valueList += `\`${currentCar[sortBy]}\`\n`;
+				}
+				if (garage.some(car => list[i].includes(car.carFile))) {
+					carList += " ✅\n";
+				}
+				else {
+					carList += "\n";
+				}
+			}
+		}
+	}
 }

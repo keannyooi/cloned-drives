@@ -13,8 +13,7 @@ module.exports = {
     name: "addtrophies",
     usage: "<username> <trophies here>",
     args: 2,
-	isExternal: false,
-    adminOnly: true,
+    category: "Admin",
     description: "Adds a certain amount of trophies to someone.",
     execute(message, args) {
 		const db = message.client.db;

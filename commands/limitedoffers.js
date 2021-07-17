@@ -15,8 +15,7 @@ module.exports = {
     aliases: ["lo", "offers"],
     usage: "(no arguments required)",
     args: 0,
-	isExternal: false,
-    adminOnly: false,
+	category: "Gameplay",
     description: "Views all currently available offers.",
     async execute(message, args) {
 		const db = message.client.db;

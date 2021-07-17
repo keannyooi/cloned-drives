@@ -19,8 +19,7 @@ module.exports = {
     aliases: ["packshop"],
     usage: "(optional) <page number>",
     args: 0,
-	isExternal: false,
-    adminOnly: false,
+	category: "Info",
     description: "Shows all the packs that are available for purchase in list form.",
     execute(message, args) {
         const pageLimit = 25;

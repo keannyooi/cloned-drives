@@ -15,8 +15,7 @@ module.exports = {
 	aliases: ["ct"],
 	usage: "<username goes here> | <car name goes here> | <upgrade pattern>",
 	args: 3,
-	isExternal: false,
-	adminOnly: true,
+	category: "Admin",
 	description: "Changes a tune of a car in someone's garage.",
 	async execute(message, args) {
 		const db = message.client.db;

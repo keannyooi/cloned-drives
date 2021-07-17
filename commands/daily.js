@@ -17,8 +17,7 @@ module.exports = {
 	name: "daily",
 	usage: "(no arguments required)",
 	args: 0,
-	isExternal: true,
-	adminOnly: false,
+	category: "Gameplay",
 	description: "Collect your daily reward with this command!",
 	async execute(message) {
 		const db = message.client.db;

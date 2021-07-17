@@ -8,22 +8,19 @@
 */
 
 const Discord = require("discord.js-light");
+const disbut = require("discord-buttons");
 
 module.exports = {
     name: "seteventround",
 	aliases: ["ser"],
     usage: "<player name> <event name> <round>",
     args: 3,
-	isExternal: false,
-    adminOnly: true,
+	category: "Community Management",
     description: "Sets a player's round progress in an event to whatever.",
     execute(message, args) {
 		const db = message.client.db;
 		const filter = response => {
             return response.author.id === message.author.id;
-        };
-		const emojiFilter = (reaction, user) => {
-            return (reaction.emoji.name === "✅" || reaction.emoji.name === "❎") && user.id === message.author.id;
         };
 
 		if (message.mentions.users.first()) {
@@ -231,32 +228,40 @@ module.exports = {
 			}
 			round = Math.ceil(parseInt(round));
 
+			let yse = new disbut.MessageButton()
+                .setStyle("green")
+                .setLabel("Yes!")
+                .setID("yse");
+            let nop = new disbut.MessageButton()
+                .setStyle("red")
+                .setLabel("No!")
+                .setID("nop");
+            let row = new disbut.MessageActionRow().addComponents(yse, nop);
+
 			const confirmationMessage = new Discord.MessageEmbed()
 				.setColor("#34aeeb")
 				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 				.setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
 				.setTitle(`Are you sure you want to set ${user.username}'s progress on ${event.name} to round ${round}?`)
-				.setDescription("React with ✅ to proceed or ❎ to cancel.")
 				.setTimestamp();
 
-			let reactionMessage;
+			let reactionMessage, processed = false;
 			if (currentMessage) {
-				reactionMessage = await currentMessage.edit(confirmationMessage);
+				reactionMessage = await currentMessage.edit(confirmationMessage, row);
 			}
 			else {
-				reactionMessage = await message.channel.send(confirmationMessage);
+				reactionMessage = await message.channel.send(confirmationMessage, row);
 			}
-			reactionMessage.react("✅");
-			reactionMessage.react("❎");
-			reactionMessage.awaitReactions(emojiFilter, {
-				max: 1,
-				time: 10000,
-				errors: ['time']
-			})
-				.then(async collected => {
-					reactionMessage.reactions.removeAll();
-					switch (collected.first().emoji.name) {
-						case "✅":
+
+			message.client.on("clickButton", async (button) => {
+                if (button.clicker.id === message.author.id && button.message.id === reactionMessage.id) {
+                    yse.setDisabled();
+                    nop.setDisabled();
+                    row = new disbut.MessageActionRow().addComponents(yse, nop);
+                    processed = true;
+                    switch (button.id) {
+                        case "yse":
+							await button.reply.defer();
 							if (round === 1) {
 								delete event.players[`acc${user.id}`];
 							}
@@ -271,22 +276,29 @@ module.exports = {
 								.setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
 								.setTitle(`Successfully set ${user.username}'s progress on ${event.name} to round ${round}!`)
 								.setTimestamp();
-							return reactionMessage.edit(infoScreen);
-						case "❎":
-							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
+							return reactionMessage.edit(infoScreen, row);
+                        case "nop":
+                            await button.reply.defer();
+                            message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
 							const cancelMessage = new Discord.MessageEmbed()
 								.setColor("#34aeeb")
 								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 								.setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
 								.setTitle("Action cancelled.")
 								.setTimestamp();
-							return reactionMessage.edit(cancelMessage);
-						default:
-							break;
-					}
-				})
-				.catch(error => {
-					console.log(error);
+                            return reactionMessage.edit(cancelMessage, row);
+                        default:
+                            break;
+                    }
+                }
+            });
+
+            setTimeout(() => {
+                if (!processed) {
+                    yse.setDisabled();
+                    nop.setDisabled();
+                    row = new disbut.MessageActionRow().addComponents(yse, nop);
+
 					message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
 					const cancelMessage = new Discord.MessageEmbed()
 						.setColor("#34aeeb")
@@ -294,8 +306,9 @@ module.exports = {
 						.setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
 						.setTitle("Action cancelled automatically.")
 						.setTimestamp();
-					return reactionMessage.edit(cancelMessage);
-				});
+					return reactionMessage.edit(cancelMessage, row);
+                }
+            }, 10000);
 		}
     }
 }

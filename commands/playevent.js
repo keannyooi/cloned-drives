@@ -8,6 +8,7 @@
 */
 
 const Discord = require("discord.js-light");
+const disbut = require("discord-buttons");
 const { DateTime, Interval } = require("luxon");
 
 module.exports = {
@@ -15,17 +16,13 @@ module.exports = {
 	aliases: ["pe"],
 	usage: "<event name>",
 	args: 1,
-	isExternal: true,
-	adminOnly: false,
+	category: "Gameplay",
 	cooldown: 10,
 	description: "Participates in an event by doing a race.",
 	async execute(message, args) {
 		const db = message.client.db;
 		const filter = response => {
-            return response.author.id === message.author.id;
-        };
-		const emojiFilter = (reaction, user) => {
-			return (reaction.emoji.name === "✅" || reaction.emoji.name === "❎") && user.id === message.author.id;
+			return response.author.id === message.author.id;
 		};
 		const raceCommand = require("./sharedfiles/race.js");
 		const playerData = await db.get(`acc${message.author.id}`);
@@ -44,7 +41,7 @@ module.exports = {
 
 		let eventName = args.map(i => i.toLowerCase());
 		let events = await db.get("events");
-		const searchResults = Object.values(events).filter(function(event) {
+		const searchResults = Object.values(events).filter(function (event) {
 			if (typeof event === "object") {
 				return eventName.every(part => event.name.toLowerCase().includes(part));
 			}
@@ -115,7 +112,7 @@ module.exports = {
 			return message.channel.send(errorMessage);
 		}
 
-        async function playEvent(event, currentMessage) {
+		async function playEvent(event, currentMessage) {
 			console.log(event);
 			let round = event.players[`acc${message.author.id}`];
 			if (!round) {
@@ -162,7 +159,7 @@ module.exports = {
 							else {
 								if (value.some(h => test[`${key}`].toLowerCase() === h) === false) {
 									passed = false;
-								}	
+								}
 							}
 						}
 						else {
@@ -191,7 +188,7 @@ module.exports = {
 				if (typeof make === "object") {
 					make = test["make"][0];
 				}
-				let rarity = rarityCheck(test); 
+				let rarity = rarityCheck(test);
 
 				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 				const errorMessage = new Discord.MessageEmbed()
@@ -215,6 +212,15 @@ module.exports = {
 				const opponent = { carFile: event.roster[round - 1].car, gearingUpgrade: event.roster[round - 1].gearingUpgrade, engineUpgrade: event.roster[round - 1].engineUpgrade, chassisUpgrade: event.roster[round - 1].chassisUpgrade };
 				const [playerCar, playerList] = createCar(player);
 				const [opponentCar, opponentList] = createCar(opponent);
+				let yse = new disbut.MessageButton()
+					.setStyle("grey")
+					.setLabel("✅")
+					.setID("yse");
+				let nop = new disbut.MessageButton()
+					.setStyle("grey")
+					.setLabel("❎")
+					.setID("nop");
+				let row = new disbut.MessageActionRow().addComponents(yse, nop);
 				const intermission = new Discord.MessageEmbed()
 					.setColor("#34aeeb")
 					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -227,25 +233,23 @@ module.exports = {
 					.setFooter(`Event: ${event.name} (Round ${round})`)
 					.setTimestamp();
 
-				let reactionMessage;
+				let reactionMessage, processed = false;
 				if (currentMessage && message.channel.type === "text") {
-					reactionMessage = await currentMessage.edit(intermission);
+					reactionMessage = await currentMessage.edit(intermission, row);
 				}
 				else {
-					reactionMessage = await message.channel.send(intermission);
+					reactionMessage = await message.channel.send(intermission, row);
 				}
 
-				reactionMessage.react("✅");
-				reactionMessage.react("❎");
-				reactionMessage.awaitReactions(emojiFilter, {
-					max: 1,
-					time: 10000,
-					errors: ["time"]
-				})
-					.then(async collected => {
-						reactionMessage.reactions.removeAll();
-						switch (collected.first().emoji.name) {
-							case "✅":
+				message.client.on("clickButton", async (button) => {
+					if (button.clicker.id === message.author.id && button.message.id === reactionMessage.id) {
+						yse.setDisabled();
+						nop.setDisabled();
+						row = new disbut.MessageActionRow().addComponents(yse, nop);
+						processed = true;
+						switch (button.id) {
+							case "yse":
+								await button.reply.defer();
 								if (event.isActive === true && event.timeLeft !== "unlimited" && Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(event.deadline)).invalid !== null) {
 									message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 									const end = new Discord.MessageEmbed()
@@ -254,9 +258,10 @@ module.exports = {
 										.setTitle("Looks like this event has ended.")
 										.setDescription("rip")
 										.setTimestamp();
-									return reactionMessage.edit(end);
+									return reactionMessage.edit(end, row);
 								}
 
+								await reactionMessage.edit(intermission, row);
 								const result = await raceCommand.race(message, playerCar, opponentCar, track, playerData.settings.enablegraphics);
 								const delay = ms => new Promise(res => setTimeout(res, ms));
 								await delay(2000);
@@ -298,21 +303,29 @@ module.exports = {
 									message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 									return message.channel.send(`**You have beaten Round ${round - 1}! Claim your reward using \`cd-rewards\`.**`);
 								}
-							case "❎":
-								message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+								break;
+							case "nop":
+								await button.reply.defer();
 								intermission.setTitle("Action cancelled.");
-								return reactionMessage.edit(intermission);
+								message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+								return reactionMessage.edit(intermission, row);
 							default:
 								break;
 						}
-					})
-					.catch(error => {
-						console.log(error);
-						reactionMessage.reactions.removeAll();
+					}
+				});
+		
+				setTimeout(() => {
+					if (!processed) {
+						yse.setDisabled();
+						nop.setDisabled();
+						row = new disbut.MessageActionRow().addComponents(yse, nop);
+		
 						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 						intermission.setTitle("Action cancelled automatically.");
-						return reactionMessage.edit(intermission);
-					});
+						return reactionMessage.edit(intermission, row);
+					}
+				}, 10000);
 			}
 			else {
 				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
@@ -327,33 +340,33 @@ module.exports = {
 		}
 
 		function createCar(currentCar) {
-            const car = require(`./cars/${currentCar.carFile}`);
+			const car = require(`./cars/${currentCar.carFile}`);
 			const rarity = rarityCheck(car);
 			let make = car["make"];
 			if (typeof make === "object") {
 				make = car["make"][0];
 			}
 
-            const carModule = {
-                topSpeed: car["topSpeed"],
-                accel: car["0to60"],
-                handling: car["handling"],
-                driveType: car["driveType"],
-                tyreType: car["tyreType"],
-                weight: car["weight"],
-                gc: car["gc"],
-                tcs: car["tcs"],
-                abs: car["abs"],
-                mra: car["mra"],
-                ola: car["ola"],
-                racehud: car[`racehud${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}`]
-            };
+			const carModule = {
+				topSpeed: car["topSpeed"],
+				accel: car["0to60"],
+				handling: car["handling"],
+				driveType: car["driveType"],
+				tyreType: car["tyreType"],
+				weight: car["weight"],
+				gc: car["gc"],
+				tcs: car["tcs"],
+				abs: car["abs"],
+				mra: car["mra"],
+				ola: car["ola"],
+				racehud: car[`racehud${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}`]
+			};
 
-            if (currentCar.gearingUpgrade > 0) {
-                carModule.topSpeed = car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}TopSpeed`];
-                carModule.accel = car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}0to60`];
-                carModule.handling = car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}Handling`];
-            }
+			if (currentCar.gearingUpgrade > 0) {
+				carModule.topSpeed = car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}TopSpeed`];
+				carModule.accel = car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}0to60`];
+				carModule.handling = car[`${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}Handling`];
+			}
 
 			let carSpecs = `(${rarity} ${car["rq"]}) ${make} ${car["model"]} (${car["modelYear"]}) [${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}]\n`;
 			carSpecs += `Top Speed: ${carModule.topSpeed}MPH\n`;
@@ -364,12 +377,12 @@ module.exports = {
 			else {
 				carSpecs += `0-60MPH: ${carModule.accel} sec\n`;
 			}
-            carSpecs += `Handling: ${carModule.handling}\n`;
+			carSpecs += `Handling: ${carModule.handling}\n`;
 			carSpecs += `Drive Type: ${carModule.driveType}\n`;
-            carSpecs += `${carModule.tyreType} Tyres\n`;
-            carSpecs += `Weight: ${carModule.weight}kg\n`;
-            carSpecs += `Ground Clearance: ${carModule.gc}\n`;
-            carSpecs += `TCS: ${carModule.tcs}, ABS: ${carModule.abs}\n`;
+			carSpecs += `${carModule.tyreType} Tyres\n`;
+			carSpecs += `Weight: ${carModule.weight}kg\n`;
+			carSpecs += `Ground Clearance: ${carModule.gc}\n`;
+			carSpecs += `TCS: ${carModule.tcs}, ABS: ${carModule.abs}\n`;
 
 			if (carModule.topSpeed < 100) {
 				carModule.mra = 0;
@@ -386,8 +399,8 @@ module.exports = {
 				carSpecs += `OLA: ${carModule.ola}\n`;
 			}
 
-            return [carModule, carSpecs];
-        }
+			return [carModule, carSpecs];
+		}
 
 		function rarityCheck(currentCar) {
 			if (currentCar["rq"] > 79) { //leggie

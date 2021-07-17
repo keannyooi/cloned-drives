@@ -8,6 +8,7 @@
 */
 
 const Discord = require("discord.js-light");
+const disbut = require("discord-buttons");
 const stringSimilarity = require("string-similarity");
 
 module.exports = {
@@ -15,8 +16,7 @@ module.exports = {
     aliases: ["f"],
     usage: "(optional) <amount> | <car name goes here>",
     args: 1,
-    isExternal: true,
-    adminOnly: false,
+    category: "Gameplay",
     description: "Converts one or more cars inside your garage into fuse tokens.",
     async execute(message, args) {
         const db = message.client.db;
@@ -26,9 +26,6 @@ module.exports = {
         const trophyEmoji = message.client.emojis.cache.get("775636479145148418");
         const filter = response => {
             return response.author.id === message.author.id;
-        };
-        const emojiFilter = (reaction, user) => {
-            return (reaction.emoji.name === "✅" || reaction.emoji.name === "❎") && user.id === message.author.id;
         };
 
         if (garage.length <= 5) {
@@ -284,34 +281,38 @@ module.exports = {
             }
             fuseTokens *= amount;
 
+            let yse = new disbut.MessageButton()
+                .setStyle("green")
+                .setLabel("Yes!")
+                .setID("yse");
+            let nop = new disbut.MessageButton()
+                .setStyle("red")
+                .setLabel("No!")
+                .setID("nop");
+            let row = new disbut.MessageActionRow().addComponents(yse, nop);
+
             const confirmationMessage = new Discord.MessageEmbed()
                 .setColor("#34aeeb")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                 .setTitle(`Are you sure you want to fuse ${amount} of your ${currentName} for ${fuseEmoji}${fuseTokens}?`)
-                .setDescription("React with ✅ to proceed or ❎ to cancel.")
                 .setImage(car["card"])
                 .setTimestamp();
-            let reactionMessage;
+            let reactionMessage, processed = false;
             if (currentMessage && message.channel.type === "text") {
-                reactionMessage = await currentMessage.edit(confirmationMessage);
+                reactionMessage = await currentMessage.edit(confirmationMessage, row);
             }
             else {
-                reactionMessage = await message.channel.send(confirmationMessage);
+                reactionMessage = await message.channel.send(confirmationMessage, row);
             }
 
-            reactionMessage.react("✅");
-            reactionMessage.react("❎");
-            reactionMessage.awaitReactions(emojiFilter, {
-                max: 1,
-                time: 10000,
-                errors: ["time"]
-            })
-                .then(async collected => {
-                    if (message.channel.type === "text") {
-                        reactionMessage.reactions.removeAll();
-                    }
-                    switch (collected.first().emoji.name) {
-                        case "✅":
+            message.client.on("clickButton", async (button) => {
+                if (button.clicker.id === message.author.id && button.message.id === reactionMessage.id) {
+                    yse.setDisabled();
+                    nop.setDisabled();
+                    row = new disbut.MessageActionRow().addComponents(yse, nop);
+                    processed = true;
+                    switch (button.id) {
+                        case "yse":
                             if (playerData.hand) {
                                 if (playerData.hand.carFile === currentCar.carFile) {
                                     delete playerData.hand;
@@ -336,6 +337,8 @@ module.exports = {
                             playerData.fuseTokens += fuseTokens;
 
                             await db.set(`acc${message.author.id}`, playerData);
+                            await button.reply.defer();
+                            message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
 
                             const infoScreen = new Discord.MessageEmbed()
                                 .setColor("#03fc24")
@@ -346,14 +349,15 @@ module.exports = {
                                 .setImage(car["card"])
                                 .setTimestamp();
                             message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                            if (currentMessage && message.channel.type === "text") {
-                                return currentMessage.edit(infoScreen);
+                            if (message.channel.type === "text") {
+                                return reactionMessage.edit(infoScreen, row);
                             }
                             else {
-                                return message.channel.send(infoScreen);
+                                return message.channel.send(infoScreen, row);
                             }
-                        case "❎":
-                            message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+                        case "nop":
+                            await button.reply.defer();
+                            message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
                             const cancelMessage = new Discord.MessageEmbed()
                                 .setColor("#34aeeb")
                                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -361,34 +365,40 @@ module.exports = {
                                 .setDescription(`Your ${currentName}s stays in your garage.`)
                                 .setImage(car["card"])
                                 .setTimestamp();
-                            if (currentMessage && message.channel.type === "text") {
-                                return currentMessage.edit(cancelMessage);
+                            if (message.channel.type === "text") {
+                                return reactionMessage.edit(cancelMessage, row);
                             }
                             else {
-                                return message.channel.send(cancelMessage);
+                                return message.channel.send(cancelMessage, row);
                             }
                         default:
                             break;
                     }
-                })
-                .catch(error => {
-                    console.log(error);
-                    reactionMessage.reactions.removeAll();
-                    message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+                }
+            });
+
+            setTimeout(() => {
+                if (!processed) {
+                    yse.setDisabled();
+                    nop.setDisabled();
+                    row = new disbut.MessageActionRow().addComponents(yse, nop);
+
+                    message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
                     const cancelMessage = new Discord.MessageEmbed()
                         .setColor("#34aeeb")
                         .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                         .setTitle("Action cancelled automatically.")
-                        .setDescription(`Your ${currentName} stays in your garage.`)
+                        .setDescription(`Your ${currentName}s stays in your garage.`)
                         .setImage(car["card"])
                         .setTimestamp();
-                    if (currentMessage && message.channel.type === "text") {
-                        return currentMessage.edit(cancelMessage);
+                    if (message.channel.type === "text") {
+                        return reactionMessage.edit(cancelMessage, row);
                     }
                     else {
-                        return message.channel.send(cancelMessage);
+                        return message.channel.send(cancelMessage, row);
                     }
-                });
+                }
+            }, 10000);
         }
     }
 }

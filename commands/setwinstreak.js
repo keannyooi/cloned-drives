@@ -13,8 +13,7 @@ module.exports = {
     name: "setwinstreak",
     usage: "<username> | <amount>",
     args: 2,
-	isExternal: false,
-    adminOnly: true,
+	category: "Admin",
     description: "Sets a player's win streak to a certain number.",
     execute(message, args) {
 		const filter = response => {

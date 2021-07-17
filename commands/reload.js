@@ -16,8 +16,7 @@ module.exports = {
     aliases: ["rl"],
     usage: "<command here>",
     args: 1,
-	isExternal: false,
-    adminOnly: true,
+	category: "Admin",
     description: "Reloads a command.",
     execute(message, args) {
         const commandName = args[0].toLowerCase();

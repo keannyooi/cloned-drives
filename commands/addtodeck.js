@@ -14,8 +14,7 @@ module.exports = {
     name: "addtodeck",
     usage: "<deck name goes here> | <index> | <car name goes here>",
     args: 3,
-	isExternal: true,
-    adminOnly: false,
+    category: "Configuration",
     description: 'Adds (or replaces) a car to a specified slot in a specifed deck. (NOTE: Deck names cannot contain spaces, use underscores "_" instead)',
     async execute(message, args) {
         const db = message.client.db;

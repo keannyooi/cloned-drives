@@ -15,8 +15,7 @@ module.exports = {
 	aliases: ["sh"],
     usage: "<car name goes here>",
     args: 1,
-	isExternal: true,
-    adminOnly: false,
+	category: "Configuration",
     description: "Sets your hand for quick race, random race and event gamemodes.",
     async execute(message, args) {
         const db = message.client.db;

@@ -15,8 +15,7 @@ module.exports = {
 	aliases: ["pc"],
 	usage: "<deck name>",
 	args: 1,
-	isExternal: true,
-	adminOnly: false,
+	category: "Gameplay",
 	cooldown: 10,
 	description: "Participates in the challenge by doing a round of the challenge.",
 	async execute(message, args) {

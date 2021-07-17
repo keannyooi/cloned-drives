@@ -13,8 +13,7 @@ module.exports = {
     name: "credits",
     usage: "<no arguments here>",
     args: 0,
-	isExternal: true,
-    adminOnly: false,
+	category: "Info",
     description: "A list of everyone that participated in the making of this server.",
     execute(message) {
         const credits = new Discord.MessageEmbed()

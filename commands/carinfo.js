@@ -17,8 +17,7 @@ module.exports = {
 	aliases: ["cinfo"],
 	usage: "<car name goes here>",
 	args: 1,
-	isExternal: true,
-	adminOnly: false,
+	category: "Info",
 	description: "Shows info about a specified car.",
 	execute(message, args) {
 		const waitTime = 60000;

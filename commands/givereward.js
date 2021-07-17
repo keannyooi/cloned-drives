@@ -9,19 +9,16 @@
 
 const Discord = require("discord.js-light");
 const fs = require("fs");
-const carFiles = fs.readdirSync("./commands/cars").filter(file => file.endsWith(".json"));
 const packFiles = fs.readdirSync("./commands/packs").filter(file => file.endsWith(".json"));
 
 module.exports = {
     name: "givereward",
     usage: "<username> <pack or offer> <pack/offer name>",
     args: 3,
-	isExternal: false,
-    adminOnly: true,
+	category: "Admin",
     description: "Gifts someone a pack or offer. Those who are given a pack/offer via this command can claim them through cd-rewards.",
     execute(message, args) {
 		const db = message.client.db;
-        const moneyEmoji = message.client.emojis.cache.get("726017235826770021");
         const filter = response => {
             return response.author.id === message.author.id;
         };

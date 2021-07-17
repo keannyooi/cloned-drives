@@ -15,8 +15,7 @@ module.exports = {
     aliases: ["stats"],
     usage: "(optional) <username>",
     args: 0,
-	isExternal: true,
-    adminOnly: false,
+	category: "Info",
     description: "Shows someone's stats.",
     execute(message, args) {
 		const db = message.client.db;

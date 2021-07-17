@@ -8,22 +8,18 @@
 */
 
 const Discord = require("discord.js-light");
-const Canvas = require("canvas");
+const disbut = require("discord-buttons");
 const { DateTime, Interval } = require("luxon");
 
 module.exports = {
 	name: "challenge",
 	usage: "(optional) <round>",
 	args: 0,
-	isExternal: true,
-	adminOnly: false,
+	category: "Gameplay",
 	description: "Views the current ongoing challenge.",
 	async execute(message, args) {
 		const db = message.client.db;
 		const challenge = await db.get("challenge");
-		const filter = (reaction, user) => {
-			return (reaction.emoji.name === "⬅️" || reaction.emoji.name === "➡️") && user.id === message.author.id;
-		};
 
 		console.log(challenge.roster);
 		if (challenge.isActive || message.member.roles.cache.has("802043346951340064")) {
@@ -65,6 +61,23 @@ module.exports = {
 				intervalString = "currently ending, no longer playable";
 			}
 
+			let firstPage = new disbut.MessageButton()
+				.setStyle("red")
+				.setLabel("<<")
+				.setID("first_page");
+			let prevPage = new disbut.MessageButton()
+				.setStyle("blurple")
+				.setLabel("<")
+				.setID("prev_page");
+			let nextPage = new disbut.MessageButton()
+				.setStyle("blurple")
+				.setLabel(">")
+				.setID("next_page");
+			let lastPage = new disbut.MessageButton()
+				.setStyle("red")
+				.setLabel(">>")
+				.setID("last_page");
+
 			let infoScreen = new Discord.MessageEmbed()
 				.setColor("#34aeeb")
 				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -77,46 +90,54 @@ module.exports = {
 					{ name: "Requirements", value: lists.reqString, inline: true },
 					{ name: "Rewards", value: lists.rewardString, inline: true }
 				)
+				.setFooter(`Interact with the buttons below to navigate through rounds.`)
 				.setTimestamp();
-			if (message.channel.type === "text") {
-				infoScreen.setFooter(`React with ⬅️ or ➡️ to navigate through pages.`);
+
+			switch (reactionIndex) {
+				case 0:
+					firstPage.setDisabled();
+					prevPage.setDisabled();
+					nextPage.setDisabled();
+					lastPage.setDisabled();
+					break;
+				case 1:
+					firstPage.setDisabled();
+					prevPage.setDisabled();
+					break;
+				case 2:
+					nextPage.setDisabled();
+					lastPage.setDisabled();
+					break;
+				case 3:
+					break;
+				default:
+					break;
 			}
-			else {
-				infoScreen.setFooter(`Arrow navigation is disabled in DMs, please use cd-challenge <round number> to view a different round.`);
-			}
+			let row = new disbut.MessageActionRow().addComponents(firstPage, prevPage, nextPage, lastPage);
 
 			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-			let clMessage = await message.channel.send(infoScreen);
+			let clMessage = await message.channel.send(infoScreen, row);
 
-			if (message.channel.type === "text") {
-				switch (reactionIndex) {
-					case 0:
-						break;
-					case 1:
-						clMessage.react("➡️");
-						break;
-					case 2:
-						clMessage.react("⬅️");
-						break;
-					case 3:
-						clMessage.react("⬅️");
-						clMessage.react("➡️");
-						break;
-					default:
-						break;
-				}
+			message.client.on("clickButton", async (button) => {
+				if (button.clicker.id === message.author.id && button.message.id === clMessage.id) {
+					switch (button.id) {
+						case "first_page":
+							displayRound = 0;
+							break;
+						case "prev_page":
+							displayRound -= 1;
+							break;
+						case "next_page":
+							displayRound += 1;
+							break;
+						case "last_page":
+							displayRound = challenge.roster.length - 1;
+							break;
+						default:
+							break;
+					}
 
-				const collector = clMessage.createReactionCollector(filter, { time: 60000 });
-				collector.on("collect", reaction => {
-					if (reaction.emoji.name === "⬅️") {
-						displayRound -= 1;
-					}
-					else if (reaction.emoji.name === "➡️") {
-						displayRound += 1;
-					}
 					lists = clDisplay(displayRound);
-					clMessage.reactions.removeAll();
-
 					interval = Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(challenge.deadline));
 					if (challenge.isActive === true && interval.invalid === null) {
 						let days = Math.floor(interval.length("days"));
@@ -131,7 +152,24 @@ module.exports = {
 					else {
 						intervalString = "currently ending, no longer playable";
 					}
-
+	
+					firstPage = new disbut.MessageButton()
+						.setStyle("red")
+						.setLabel("<<")
+						.setID("first_page");
+					prevPage = new disbut.MessageButton()
+						.setStyle("blurple")
+						.setLabel("<")
+						.setID("prev_page");
+					nextPage = new disbut.MessageButton()
+						.setStyle("blurple")
+						.setLabel(">")
+						.setID("next_page");
+					lastPage = new disbut.MessageButton()
+						.setStyle("red")
+						.setLabel(">>")
+						.setID("last_page");
+	
 					infoScreen = new Discord.MessageEmbed()
 						.setColor("#34aeeb")
 						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -144,32 +182,43 @@ module.exports = {
 							{ name: "Requirements", value: lists.reqString, inline: true },
 							{ name: "Rewards", value: lists.rewardString, inline: true }
 						)
+						.setFooter(`Interact with the buttons below to navigate through rounds.`)
 						.setTimestamp();
-					clMessage.edit(infoScreen);
-
+	
 					switch (reactionIndex) {
 						case 0:
+							firstPage.setDisabled();
+							prevPage.setDisabled();
+							nextPage.setDisabled();
+							lastPage.setDisabled();
 							break;
 						case 1:
-							clMessage.react("➡️");
+							firstPage.setDisabled();
+							prevPage.setDisabled();
 							break;
 						case 2:
-							clMessage.react("⬅️");
+							nextPage.setDisabled();
+							lastPage.setDisabled();
 							break;
 						case 3:
-							clMessage.react("⬅️");
-							clMessage.react("➡️");
 							break;
 						default:
 							break;
 					}
-				});
+					row = new disbut.MessageActionRow().addComponents(firstPage, prevPage, nextPage, lastPage);
+					await clMessage.edit(infoScreen, row);
+					await button.reply.defer();
+				}
+			});
 
-				collector.on("end", () => {
-					console.log("end of collection");
-					clMessage.reactions.removeAll();
-				});
-			}
+			setTimeout(() => {
+				firstPage.setDisabled();
+				prevPage.setDisabled();
+				nextPage.setDisabled();
+				lastPage.setDisabled();
+				row = new disbut.MessageActionRow().addComponents(firstPage, prevPage, nextPage, lastPage);
+				clMessage.edit(infoScreen, row);
+			}, 70000);
 		}
 		else {
 			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);

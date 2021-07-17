@@ -13,8 +13,7 @@ module.exports = {
 	name: "rewards",
 	usage: "(no arguments required)",
 	args: 0,
-	isExternal: true,
-	adminOnly: false,
+	category: "Gameplay",
 	description: "Collect your race rewards with this command!",
 	async execute(message) {
 		const db = message.client.db;

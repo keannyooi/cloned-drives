@@ -19,8 +19,7 @@ module.exports = {
     aliases: ["qr"],
     usage: "<track name goes here>",
     args: 1,
-	isExternal: true,
-    adminOnly: false,
+	category: "Gameplay",
     cooldown: 10,
     description: "Does a quick race where you can choose the trackset and the opponent car. Great for testing out cars.",
     async execute(message, args) {

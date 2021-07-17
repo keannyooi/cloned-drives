@@ -8,14 +8,14 @@
 */
 
 const Discord = require("discord.js-light");
+const disbut = require("discord-buttons");
 
 module.exports = {
 	name: "garage",
 	aliases: ["g"],
 	usage: "(all optional) <username goes here> | <page number>",
 	args: 0,
-	isExternal: true,
-	adminOnly: false,
+	category: "Configuration",
 	description: "Shows your (or other people's) garage.",
 	async execute(message, args) {
 		const db = message.client.db;
@@ -159,9 +159,6 @@ module.exports = {
 			const playerData = await db.get(`acc${user.id}`);
 			let garage = playerData.garage;
 			let reactionIndex = 0;
-			let filter = (reaction, user) => {
-				return (reaction.emoji.name === "⬅️" || reaction.emoji.name === "➡️") && user.id === message.author.id;
-			};
 
 			switch (sort) {
 				case "rq":
@@ -375,6 +372,23 @@ module.exports = {
 			}
 			let lists = garageDisplay(page, garage);
 
+			let firstPage = new disbut.MessageButton()
+				.setStyle("red")
+				.setLabel("<<")
+				.setID("first_page");
+			let prevPage = new disbut.MessageButton()
+				.setStyle("blurple")
+				.setLabel("<")
+				.setID("prev_page");
+			let nextPage = new disbut.MessageButton()
+				.setStyle("blurple")
+				.setLabel(">")
+				.setID("next_page");
+			let lastPage = new disbut.MessageButton()
+				.setStyle("red")
+				.setLabel(">>")
+				.setID("last_page");
+
 			let infoScreen = new Discord.MessageEmbed()
 				.setColor("#34aeeb")
 				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -383,56 +397,81 @@ module.exports = {
 				.setDescription(`Current Sorting Criteria: \`${sort}\`, Filter Activated: \`${(carFilter !== undefined && playerData.settings.filtergarage === true)}\``)
 				.addField("Car", lists.garageList, true)
 				.addField("Amount", lists.amountList, true)
+				.setFooter(`Page ${page} of ${totalPages} - Interact with the buttons below to navigate through pages.`)
 				.setTimestamp();
 			if (sort !== "rq") {
 				infoScreen.addField("Values", lists.valueList, true);
 			}
-			if (message.channel.type === "text") {
-				infoScreen.setFooter(`Page ${page} of ${totalPages} - React with ⬅️ or ➡️ to navigate through pages.`);
+
+			switch (reactionIndex) {
+				case 0:
+					firstPage.setDisabled();
+					prevPage.setDisabled();
+					nextPage.setDisabled();
+					lastPage.setDisabled();
+					break;
+				case 1:
+					firstPage.setDisabled();
+					prevPage.setDisabled();
+					break;
+				case 2:
+					nextPage.setDisabled();
+					lastPage.setDisabled();
+					break;
+				case 3:
+					break;
+				default:
+					break;
 			}
-			else {
-				infoScreen.setFooter(`Page ${page} of ${totalPages} - Arrow navigation is disabled in DMs, please use cd-garage <user or blank if it's you> <page number> to view a different page.`);
-			}
+			let row = new disbut.MessageActionRow().addComponents(firstPage, prevPage, nextPage, lastPage);
 
 			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 			let garageMessage;
 			if (currentMessage) {
-				garageMessage = await currentMessage.edit(infoScreen);
+				garageMessage = await currentMessage.edit(infoScreen, row);
 			}
 			else {
-				garageMessage = await message.channel.send(infoScreen);
+				garageMessage = await message.channel.send(infoScreen, row);
 			}
 
-			if (message.channel.type === "text") {
-				switch (reactionIndex) {
-					case 0:
-						break;
-					case 1:
-						garageMessage.react("➡️");
-						break;
-					case 2:
-						garageMessage.react("⬅️");
-						break;
-					case 3:
-						garageMessage.react("⬅️");
-						garageMessage.react("➡️");
-						break;
-					default:
-						break;
-				}
-
-				const collector = garageMessage.createReactionCollector(filter, { time: 60000 });
-				collector.on("collect", reaction => {
-					if (reaction.emoji.name === "⬅️") {
-						page -= 1;
-					}
-					else if (reaction.emoji.name === "➡️") {
-						page += 1;
+			message.client.on("clickButton", async (button) => {
+				if (button.clicker.id === message.author.id && button.message.id === garageMessage.id) {
+					switch (button.id) {
+						case "first_page":
+							page = 1;
+							break;
+						case "prev_page":
+							page -= 1;
+							break;
+						case "next_page":
+							page += 1;
+							break;
+						case "last_page":
+							page = totalPages;
+							break;
+						default:
+							break;
 					}
 					lists = garageDisplay(page, garage);
-					garageMessage.reactions.removeAll();
-
-					let infoScreen = new Discord.MessageEmbed()
+	
+					firstPage = new disbut.MessageButton()
+						.setStyle("red")
+						.setLabel("<<")
+						.setID("first_page");
+					prevPage = new disbut.MessageButton()
+						.setStyle("blurple")
+						.setLabel("<")
+						.setID("prev_page");
+					nextPage = new disbut.MessageButton()
+						.setStyle("blurple")
+						.setLabel(">")
+						.setID("next_page");
+					lastPage = new disbut.MessageButton()
+						.setStyle("red")
+						.setLabel(">>")
+						.setID("last_page");
+	
+					infoScreen = new Discord.MessageEmbed()
 						.setColor("#34aeeb")
 						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 						.setTitle(`${user.username}'s Garage`)
@@ -440,39 +479,48 @@ module.exports = {
 						.setDescription(`Current Sorting Criteria: \`${sort}\`, Filter Activated: \`${(carFilter !== undefined && playerData.settings.filtergarage === true)}\``)
 						.addField("Car", lists.garageList, true)
 						.addField("Amount", lists.amountList, true)
-						.setFooter(`Page ${page} of ${totalPages} - React with ⬅️ or ➡️ to navigate through pages.`)
+						.setFooter(`Page ${page} of ${totalPages} - Interact with the buttons below to navigate through pages.`)
 						.setTimestamp();
 					if (sort !== "rq") {
 						infoScreen.addField("Values", lists.valueList, true);
 					}
-					garageMessage.edit(infoScreen);
-
+	
 					switch (reactionIndex) {
 						case 0:
+							firstPage.setDisabled();
+							prevPage.setDisabled();
+							nextPage.setDisabled();
+							lastPage.setDisabled();
 							break;
 						case 1:
-							garageMessage.react("➡️");
+							firstPage.setDisabled();
+							prevPage.setDisabled();
 							break;
 						case 2:
-							garageMessage.react("⬅️");
+							nextPage.setDisabled();
+							lastPage.setDisabled();
 							break;
 						case 3:
-							garageMessage.react("⬅️");
-							garageMessage.react("➡️");
 							break;
 						default:
 							break;
 					}
-				});
+					row = new disbut.MessageActionRow().addComponents(firstPage, prevPage, nextPage, lastPage);
+					await garageMessage.edit(infoScreen, row);
+					await button.reply.defer();
+				}
+			});
 
-				collector.on("end", () => {
-					console.log("end of collection");
-					garageMessage.reactions.removeAll();
-				});
-			}
+			setTimeout(() => {
+				firstPage.setDisabled();
+				prevPage.setDisabled();
+				nextPage.setDisabled();
+				lastPage.setDisabled();
+				row = new disbut.MessageActionRow().addComponents(firstPage, prevPage, nextPage, lastPage);
+				garageMessage.edit(infoScreen, row);
+			}, 70000);
 
 			function garageDisplay(page, garage) {
-				const trophyEmoji = message.client.emojis.cache.get("775636479145148418");
 				const pageLimit = 10;
 				let startsWith, endsWith;
 
@@ -517,7 +565,7 @@ module.exports = {
 						}
 					}
 					if (currentCar["isPrize"]) {
-						garageList += ` ${trophyEmoji}`;
+						garageList += ` 🏆`;
 					}
 					garageList += "\n";
 					amountList = amountList.slice(0, -2);
@@ -527,7 +575,7 @@ module.exports = {
 						valueList += `\`${garage[i]["000"] + garage[i]["333"] + garage[i]["666"] + garage[i]["996"] + garage[i]["969"] + garage[i]["699"]}\`\n`;
 					}
 					else if (sort !== "rq") {
-						let thonk = ""; 
+						let thonk = "";
 						if (sort === "topSpeed" || sort === "0to60" || sort === "handling") {
 							for (let [key, value] of Object.entries(garage[i])) {
 								if (!isNaN(value)) {

@@ -17,8 +17,7 @@ module.exports = {
 	aliases: ["tp"],
 	usage: "<pack name goes here>",
 	args: 1,
-	isExternal: true,
-	adminOnly: false,
+	category: "Miscellaneous",
 	cooldown: 4.388,
 	description: "Opens a pack, however the cars in said pack won't be added into your garage and you won't be charged. Perfect for those who have a gambling addiction.",
 	async execute(message, args) {

@@ -14,8 +14,7 @@ module.exports = {
     aliases: ["aft"],
     usage: "<username> | <amount>",
     args: 2,
-	isExternal: false,
-    adminOnly: true,
+    category: "Admin",
     description: "Adds a certain amount of fuse tokens to someone's cash balance.",
     execute(message, args) {
 		const db = message.client.db;

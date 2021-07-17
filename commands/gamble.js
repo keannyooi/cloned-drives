@@ -17,8 +17,7 @@ module.exports = {
 	name: "gamble",
 	usage: "<money here>",
 	args: 1,
-	isExternal: true,
-	adminOnly: false,
+	category: "Gameplay",
 	description: "Gamble where the randomness of random races increases with your hand being random too. A great way to lose all your money.",
 	async execute(message, args) {
 		const db = message.client.db;

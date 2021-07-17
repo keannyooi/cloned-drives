@@ -13,8 +13,7 @@ module.exports = {
     name: "addmoney",
     usage: "<username> <amount here>",
     args: 2,
-	isExternal: false,
-    adminOnly: true,
+    category: "Admin",
     description: "Adds a certain amount of money to someone's cash balance.",
     execute(message, args) {
 		const db = message.client.db;

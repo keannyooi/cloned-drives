@@ -18,8 +18,7 @@ module.exports = {
     aliases: ["newevent"],
     usage: "<number of rounds> <event name goes here>",
     args: 2,
-	isExternal: false,
-    adminOnly: false,
+	category: "Community Management",
     description: "Creates an event with the name of your choice.",
     async execute(message, args) {
 		const db = message.client.db;
