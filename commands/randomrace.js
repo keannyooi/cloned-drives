@@ -107,9 +107,10 @@ module.exports = {
 			.setFooter(`Current Win Streak: ${playerData.rrWinStreak}`)
 			.setTimestamp();
 
-		let reactionMessage = await message.channel.send(intermission, row), processed = false;
-		message.client.on("clickButton", async (button) => {
+		let reactionMessage = await message.channel.send({ embed: intermission, component: row}), processed = false;
+		message.client.once("clickButton", async (button) => {
 			if (button.clicker.id === message.author.id && button.message.id === reactionMessage.id) {
+				await button.reply.defer();
 				yse.setDisabled();
 				nop.setDisabled();
 				skip.setDisabled();
@@ -118,7 +119,6 @@ module.exports = {
 				switch (button.id) {
 					case "yse":
 						await reactionMessage.edit(intermission, row);
-						await button.reply.defer();
 						let test = require(`./cars/${player.carFile}`), passed = true;
 						for (const [key, value] of Object.entries(reqs)) {
 							console.log(key, value);
@@ -153,7 +153,7 @@ module.exports = {
 						if (!passed) {
 							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 							intermission.setTitle("Your hand does not meet the random race's requirements.");
-							return reactionMessage.edit(intermission, row);
+							return reactionMessage.edit({ embed: intermission, component: row});
 						}
 
 						const result = await raceCommand.race(message, playerCar, opponentCar, track, playerData.settings.enablegraphics);
@@ -199,14 +199,12 @@ module.exports = {
 						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 						return;
 					case "nop":
-						await button.reply.defer();
 						intermission.setTitle("Action cancelled.");
 						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-						return reactionMessage.edit(intermission, row);
+						return reactionMessage.edit({ embed: intermission, component: row});
 					case "skip":
 						playerData.rrWinStreak = 0;
 						await randomize();
-						await button.reply.defer();
 
 						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 						const skipMessage = new Discord.MessageEmbed()
@@ -215,7 +213,7 @@ module.exports = {
 							.setTitle("Successfully skipped race.")
 							.setDescription("Your win streak has been reset.")
 							.setTimestamp();
-						return reactionMessage.edit(skipMessage, row);
+						return reactionMessage.edit({ embed: skipMessage, component: row});
 					default:
 						break;
 				}
@@ -231,7 +229,7 @@ module.exports = {
 
 				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 				intermission.setTitle("Action cancelled automatically.");
-				return reactionMessage.edit(intermission, row);
+				return reactionMessage.edit({ embed: intermission, component: row});
 			}
 		}, 10000);
 

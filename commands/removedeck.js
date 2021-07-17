@@ -118,13 +118,13 @@ module.exports = {
                 .setTimestamp();
             let reactionMessage, processed = false;
             if (currentMessage) {
-                reactionMessage = await currentMessage.edit(confirmationMessage, row);
+                reactionMessage = await currentMessage.edit({ embed: confirmationMessage, component: row });
             }
             else {
-                reactionMessage = await message.channel.send(confirmationMessage, row);
+                reactionMessage = await message.channel.send({ embed: confirmationMessage, component: row });
             }
 
-            message.client.on("clickButton", async (button) => {
+            message.client.once("clickButton", async (button) => {
                 if (button.clicker.id === message.author.id && button.message.id === reactionMessage.id) {
                     yse.setDisabled();
                     nop.setDisabled();
@@ -143,7 +143,7 @@ module.exports = {
                                 .setTitle(`Successfully removed deck named ${currentDeck.name}!`)
                                 .setDescription("You earned nothing!")
                                 .setTimestamp();
-                            return reactionMessage.edit(infoScreen, row);
+                            return reactionMessage.edit({ embed: infoScreen, component: row });
                         case "nop":
                             await button.reply.defer();
                             message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
@@ -152,7 +152,7 @@ module.exports = {
                                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                                 .setTitle("Action cancelled.")
                                 .setTimestamp();
-                            return reactionMessage.edit(cancelMessage, row);
+                            return reactionMessage.edit({ embed: cancelMessage, component: row });
                         default:
                             break;
                     }
@@ -171,7 +171,7 @@ module.exports = {
                         .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                         .setTitle("Action cancelled automatically.")
                         .setTimestamp();
-                    return reactionMessage.edit(cancelMessage, row);
+                    return reactionMessage.edit({ embed: cancelMessage, component: row });
                 }
             }, 10000);
         }

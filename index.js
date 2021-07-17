@@ -105,34 +105,8 @@ client.once("ready", async () => {
 			});
 			console.log(user.id);
 		}
-
-		// const garage = await client.db.get(`acc${user.id}.garage`);
-		// var i = 0;
-		// while (i < garage.length) {
-		//  	if (garage[i].carFile === "porsche cayenne turbo coupe (2020).json") {
-		//  		garage[i].carFile = "porsche cayenne turbo coupe (2019).json";
-		// 		console.log("done");
-		//  	}
-		// 	if (garage[i].carFile === "mercedes-benz a 160 (1997).json") {
-		// 		garage[i].carFile = "mercedes-benz a 160 classic (1997).json";
-		// 	   console.log("done");
-		// 	}
-		//  	i++;
-		// }
-		// await client.db.set(`acc${user.id}.garage`, garage);
 	});
 	//await client.db.set("limitedOffers", []);
-
-	// const catalog = await client.db.get("dealershipCatalog");
-	// console.log(catalog);
-	// var i = 0;
-	// while (i < catalog.length) {
-	//  	if (catalog[i].carFile === "lexus is300 (2003)") {
-	//  		catalog[i].carFile = "lexus is 300 (2003)";
-	//  	}
-	//  	i++;
-	// }
-	// await client.db.set("dealershipCatalog", catalog);
 
 	client.user.setActivity("over everyone's garages", { type: "WATCHING" });
 });

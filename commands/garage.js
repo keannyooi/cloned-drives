@@ -428,14 +428,15 @@ module.exports = {
 			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 			let garageMessage;
 			if (currentMessage) {
-				garageMessage = await currentMessage.edit(infoScreen, row);
+				garageMessage = await currentMessage.edit({ embed: infoScreen, component: row });
 			}
 			else {
-				garageMessage = await message.channel.send(infoScreen, row);
+				garageMessage = await message.channel.send({ embed: infoScreen, component: row });
 			}
 
 			message.client.on("clickButton", async (button) => {
 				if (button.clicker.id === message.author.id && button.message.id === garageMessage.id) {
+					await button.reply.defer();
 					switch (button.id) {
 						case "first_page":
 							page = 1;
@@ -506,8 +507,7 @@ module.exports = {
 							break;
 					}
 					row = new disbut.MessageActionRow().addComponents(firstPage, prevPage, nextPage, lastPage);
-					await garageMessage.edit(infoScreen, row);
-					await button.reply.defer();
+					await garageMessage.edit({ embed: infoScreen, component: row });
 				}
 			});
 
@@ -517,7 +517,7 @@ module.exports = {
 				nextPage.setDisabled();
 				lastPage.setDisabled();
 				row = new disbut.MessageActionRow().addComponents(firstPage, prevPage, nextPage, lastPage);
-				garageMessage.edit(infoScreen, row);
+				garageMessage.edit({ embed: infoScreen, component: row });
 			}, 70000);
 
 			function garageDisplay(page, garage) {

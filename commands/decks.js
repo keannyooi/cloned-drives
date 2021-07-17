@@ -21,6 +21,7 @@ module.exports = {
         const decks = await db.get(`acc${message.author.id}.decks`);
 
         if (!args[0]) {
+            console.log(decks);
             if (decks.length === 0) {
                 message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                 const infoScreen = new Discord.MessageEmbed()

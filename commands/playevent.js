@@ -235,13 +235,14 @@ module.exports = {
 
 				let reactionMessage, processed = false;
 				if (currentMessage && message.channel.type === "text") {
-					reactionMessage = await currentMessage.edit(intermission, row);
+					reactionMessage = await currentMessage.edit({ embed: intermission, component: row});
 				}
 				else {
-					reactionMessage = await message.channel.send(intermission, row);
+					reactionMessage = await message.channel.send({ embed: intermission, component: row});
 				}
 
-				message.client.on("clickButton", async (button) => {
+				message.client.once("clickButton", async (button) => {
+					await button.reply.defer();
 					if (button.clicker.id === message.author.id && button.message.id === reactionMessage.id) {
 						yse.setDisabled();
 						nop.setDisabled();
@@ -249,7 +250,6 @@ module.exports = {
 						processed = true;
 						switch (button.id) {
 							case "yse":
-								await button.reply.defer();
 								if (event.isActive === true && event.timeLeft !== "unlimited" && Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(event.deadline)).invalid !== null) {
 									message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 									const end = new Discord.MessageEmbed()
@@ -258,10 +258,10 @@ module.exports = {
 										.setTitle("Looks like this event has ended.")
 										.setDescription("rip")
 										.setTimestamp();
-									return reactionMessage.edit(end, row);
+									return reactionMessage.edit({ embed: end, component: row});
 								}
 
-								await reactionMessage.edit(intermission, row);
+								await reactionMessage.edit({ embed: intermission, component: row});
 								const result = await raceCommand.race(message, playerCar, opponentCar, track, playerData.settings.enablegraphics);
 								const delay = ms => new Promise(res => setTimeout(res, ms));
 								await delay(2000);
@@ -305,10 +305,9 @@ module.exports = {
 								}
 								break;
 							case "nop":
-								await button.reply.defer();
 								intermission.setTitle("Action cancelled.");
 								message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-								return reactionMessage.edit(intermission, row);
+								return reactionMessage.edit({ embed: intermission, component: row});
 							default:
 								break;
 						}
@@ -323,7 +322,7 @@ module.exports = {
 		
 						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 						intermission.setTitle("Action cancelled automatically.");
-						return reactionMessage.edit(intermission, row);
+						return reactionMessage.edit({ embed: intermission, component: row});
 					}
 				}, 10000);
 			}

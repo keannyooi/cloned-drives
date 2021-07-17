@@ -115,10 +115,11 @@ module.exports = {
 		}
 		let row = new disbut.MessageActionRow().addComponents(firstPage, prevPage, nextPage, lastPage);
 		message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-        let listMessage = await message.channel.send(infoScreen, row);
+        let listMessage = await message.channel.send({ embed: infoScreen, component: row });
 
         message.client.on("clickButton", async (button) => {
 			if (button.clicker.id === message.author.id && button.message.id === listMessage.id) {
+				await button.reply.defer();
 				switch (button.id) {
 					case "first_page":
 						page = 1;
@@ -183,8 +184,7 @@ module.exports = {
 						break;
 				}
 				row = new disbut.MessageActionRow().addComponents(firstPage, prevPage, nextPage, lastPage);
-				await listMessage.edit(infoScreen, row);
-				await button.reply.defer();
+				await listMessage.edit({ embed: infoScreen, component: row });
 			}
 		});
 
@@ -194,7 +194,7 @@ module.exports = {
 			nextPage.setDisabled();
 			lastPage.setDisabled();
 			row = new disbut.MessageActionRow().addComponents(firstPage, prevPage, nextPage, lastPage);
-			listMessage.edit(infoScreen, row);
+			listMessage.edit({ embed: infoScreen, component: row });
 		}, 70000);
 
         function trackDisplay(page) {

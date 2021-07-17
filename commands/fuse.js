@@ -299,13 +299,13 @@ module.exports = {
                 .setTimestamp();
             let reactionMessage, processed = false;
             if (currentMessage && message.channel.type === "text") {
-                reactionMessage = await currentMessage.edit(confirmationMessage, row);
+                reactionMessage = await currentMessage.edit({ embed: confirmationMessage, component: row });
             }
             else {
-                reactionMessage = await message.channel.send(confirmationMessage, row);
+                reactionMessage = await message.channel.send({ embed: confirmationMessage, component: row });
             }
 
-            message.client.on("clickButton", async (button) => {
+            message.client.once("clickButton", async (button) => {
                 if (button.clicker.id === message.author.id && button.message.id === reactionMessage.id) {
                     yse.setDisabled();
                     nop.setDisabled();
@@ -350,10 +350,10 @@ module.exports = {
                                 .setTimestamp();
                             message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                             if (message.channel.type === "text") {
-                                return reactionMessage.edit(infoScreen, row);
+                                return reactionMessage.edit({ embed: infoScreen, component: row });
                             }
                             else {
-                                return message.channel.send(infoScreen, row);
+                                return message.channel.send({ embed: infoScreen, component: row });
                             }
                         case "nop":
                             await button.reply.defer();
@@ -366,10 +366,10 @@ module.exports = {
                                 .setImage(car["card"])
                                 .setTimestamp();
                             if (message.channel.type === "text") {
-                                return reactionMessage.edit(cancelMessage, row);
+                                return reactionMessage.edit({ embed: cancelMessage, component: row });
                             }
                             else {
-                                return message.channel.send(cancelMessage, row);
+                                return message.channel.send({ embed: cancelMessage, component: row });
                             }
                         default:
                             break;
@@ -392,10 +392,10 @@ module.exports = {
                         .setImage(car["card"])
                         .setTimestamp();
                     if (message.channel.type === "text") {
-                        return reactionMessage.edit(cancelMessage, row);
+                        return reactionMessage.edit({ embed: cancelMessage, component: row });
                     }
                     else {
-                        return message.channel.send(cancelMessage, row);
+                        return message.channel.send({ embed: cancelMessage, component: row });
                     }
                 }
             }, 10000);
