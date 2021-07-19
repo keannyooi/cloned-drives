@@ -1,5 +1,5 @@
 {
-    "rq": 16,
+    "rq": 14,
     "make": "Honda",
     "model": "Civic CVCC 4-Speed",
     "modelYear": 1975,
@@ -20,11 +20,11 @@
     "abs": false,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 0.00,
+    "mra": 8.45,
     "ola": 59.76,
     "description": "At least it isn’t an automatic. Card by Connor",
 
-    "card": "https://cdn.discordapp.com/attachments/819199720249360384/835447542937419786/F.HondaCivicCVCC4spd.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/865597796916265000/F.HondaCivicCVCC4spd.png",
     "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820685054396989460/F.HondaCivicCVVC4.png",
     "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820685064614051850/F.HondaCivicCVVC4-1.png",
     "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820685070331281478/F.HondaCivicCVVC4-2.png",
