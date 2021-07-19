@@ -1,5 +1,5 @@
 {
-    "rq": 16,
+    "rq": 14,
     "make": "Plymouth",
     "model": "Voyager LE",
     "modelYear": 1984,
@@ -20,11 +20,11 @@
     "abs": false,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 30.97,
+    "mra": 14.47,
     "ola": 62.86,
     "description": "Card by Andu.",
 
-    "card": "https://cdn.discordapp.com/attachments/819199720249360384/821485890491908127/VoyagerLE.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/865589180439986266/VoyagerLE.png",
     "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821486716946612234/Voyager.png",
     "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821486722428829716/Voyager1.png",
     "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821486728741257226/Voyager2.png",
