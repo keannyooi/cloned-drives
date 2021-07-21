@@ -12,19 +12,19 @@ const disbut = require("discord-buttons");
 const stringSimilarity = require("string-similarity");
 
 module.exports = {
-    name: "removecar",
-    aliases: ["rmvcar"],
-    usage: "<username> | (optional) <amount> | <car name goes here>",
-    args: 2,
+	name: "removecar",
+	aliases: ["rmvcar"],
+	usage: "<username> | (optional) <amount> | <car name goes here>",
+	args: 2,
 	category: "Admin",
-    description: "Removes one or more cars from someone's garage. (data transferring)",
-    execute(message, args) {
-        const db = message.client.db;
-        const filter = response => {
-            return response.author.id === message.author.id;
-        };
+	description: "Removes one or more cars from someone's garage. (data transferring)",
+	execute(message, args) {
+		const db = message.client.db;
+		const filter = response => {
+			return response.author.id === message.author.id;
+		};
 
-        if (message.mentions.users.first()) {
+		if (message.mentions.users.first()) {
 			if (message.mentions.users.first()) {
 				if (!message.mentions.users.first().bot) {
 					getCar(message.mentions.users.first());
@@ -177,6 +177,7 @@ module.exports = {
 			else {
 				searchResults1 = searchResults;
 			}
+			// console.log(searchResults1);
 
 			if (searchResults1.length > 1) {
 				let carList = "";
@@ -277,7 +278,7 @@ module.exports = {
 				for (let upg of isOne) {
 					upgradeList += `\`${upg}\`, `;
 				}
-				
+
 				let infoScreen = new Discord.MessageEmbed()
 					.setColor("#34aeeb")
 					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -326,54 +327,55 @@ module.exports = {
 			}
 		}
 
-        async function removeCar(user, playerData, currentCar, amount, upgrade, currentMessage) {
-            const car = require(`./cars/${currentCar.carFile}`);
+		async function removeCar(user, playerData, currentCar, amount, upgrade, currentMessage) {
+			const buttonFilter = (button) => {
+				return button.clicker.user.id === message.author.id;
+			};
+			const car = require(`./cars/${currentCar.carFile}`);
 			let make = car["make"];
 			if (typeof make === "object") {
 				make = car["make"][0];
 			}
-            const currentName = `${make} ${car["model"]} (${car["modelYear"]}) [${upgrade}]`;
+			const currentName = `${make} ${car["model"]} (${car["modelYear"]}) [${upgrade}]`;
 
 			if (args[1].toLowerCase() === "all") {
 				amount = currentCar[upgrade];
 			}
 			let yse = new disbut.MessageButton()
-                .setStyle("green")
-                .setLabel("Yes!")
-                .setID("yse");
-            let nop = new disbut.MessageButton()
-                .setStyle("red")
-                .setLabel("No!")
-                .setID("nop");
-            let row = new disbut.MessageActionRow().addComponents(yse, nop);
+				.setStyle("green")
+				.setLabel("Yes!")
+				.setID("yse");
+			let nop = new disbut.MessageButton()
+				.setStyle("red")
+				.setLabel("No!")
+				.setID("nop");
+			let row = new disbut.MessageActionRow().addComponents(yse, nop);
 
-            const confirmationMessage = new Discord.MessageEmbed()
-                .setColor("#34aeeb")
-                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle(`Are you sure you want to remove ${amount} of ${user.username}'s ${currentName} from their garage?`)
-                .setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
-                .setImage(car["card"])
-                .setTimestamp();
-            let reactionMessage, processed = false;
-            if (currentMessage) {
-                reactionMessage = await currentMessage.edit({ embed: confirmationMessage, component: row });
-            }
-            else {
-                reactionMessage = await message.channel.send({ embed: confirmationMessage, component: row });
-            }
+			const confirmationMessage = new Discord.MessageEmbed()
+				.setColor("#34aeeb")
+				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+				.setTitle(`Are you sure you want to remove ${amount} of ${user.username}'s ${currentName} from their garage?`)
+				.setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
+				.setImage(car["card"])
+				.setTimestamp();
+			let reactionMessage, processed = false;
+			if (currentMessage) {
+				reactionMessage = await currentMessage.edit({ embed: confirmationMessage, component: row });
+			}
+			else {
+				reactionMessage = await message.channel.send({ embed: confirmationMessage, component: row });
+			}
 
-			message.client.once("clickButton", async (button) => {
-                if (button.clicker.id === message.author.id && button.message.id === reactionMessage.id) {
-                    yse.setDisabled();
-                    nop.setDisabled();
-                    row = new disbut.MessageActionRow().addComponents(yse, nop);
-                    processed = true;
-                    switch (button.id) {
-                        case "yse":
-                            if (playerData.hand) {
+			const collector = reactionMessage.createButtonCollector(buttonFilter, { time: 10000 });
+			collector.on("collect", async button => {
+				if (!processed) {
+					processed = true;
+					switch (button.id) {
+						case "yse":
+							if (playerData.hand) {
 								if (playerData.hand.carFile === currentCar.carFile) {
-                   					delete playerData.hand;
-                				}
+									delete playerData.hand;
+								}
 							}
 							for (i = 0; i < playerData.decks.length; i++) {
 								for (x = 0; x < 5; x++) {
@@ -390,54 +392,48 @@ module.exports = {
 							remove[upgrade] -= amount;
 							if (remove["000"] + remove["333"] + remove["666"] + remove["996"] + remove["969"] + remove["699"] === 0) {
 								playerData.garage.splice(playerData.garage.indexOf(currentCar), 1);
-                        	}
-                            await db.set(`acc${user.id}`, playerData);
+							}
+							await db.set(`acc${user.id}`, playerData);
 							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 
-                            const infoScreen = new Discord.MessageEmbed()
-                                .setColor("#03fc24")
-                                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                                .setTitle(`Successfully removed ${amount} of ${user.username}'s ${currentName}!`)
-                                .setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
-                                .setImage(car["card"])
-                                .setTimestamp();
-                            return reactionMessage.edit({ embed: infoScreen, component: row });
-                        case "nop":
-                            await button.reply.defer();
-                            message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                            const cancelMessage = new Discord.MessageEmbed()
-                                .setColor("#34aeeb")
-                                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                                .setTitle("Action cancelled.")
-                                .setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
-                                .setDescription(`${user.username}'s ${currentName} stays in their garage.`)
-                                .setImage(car["card"])
-                                .setTimestamp();
-                            return reactionMessage.edit({ embed: cancelMessage, component: row });
-                        default:
-                            break;
-                    }
-                }
-            });
-
-            setTimeout(() => {
-                if (!processed) {
-                    yse.setDisabled();
-                    nop.setDisabled();
-                    row = new disbut.MessageActionRow().addComponents(yse, nop);
-
+							const infoScreen = new Discord.MessageEmbed()
+								.setColor("#03fc24")
+								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+								.setTitle(`Successfully removed ${amount} of ${user.username}'s ${currentName}!`)
+								.setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
+								.setImage(car["card"])
+								.setTimestamp();
+							return reactionMessage.edit({ embed: infoScreen, component: null });
+						case "nop":
+							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+							const cancelMessage = new Discord.MessageEmbed()
+								.setColor("#34aeeb")
+								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+								.setTitle("Action cancelled.")
+								.setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
+								.setDescription(`${user.username}'s ${currentName} stays in their garage.`)
+								.setImage(car["card"])
+								.setTimestamp();
+							return reactionMessage.edit({ embed: cancelMessage, component: null });
+						default:
+							break;
+					}
+				}
+			});
+			collector.on("end", () => {
+				if (!processed) {
 					message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                    const cancelMessage = new Discord.MessageEmbed()
-                        .setColor("#34aeeb")
-                        .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                        .setTitle("Action cancelled automatically.")
-                        .setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
-                        .setDescription(`${user.username}'s ${currentName} stays in their garage.`)
-                        .setImage(car["card"])
-                        .setTimestamp();
-                    return reactionMessage.edit({ embed: cancelMessage, component: row });
-                }
-            }, 10000);
-        }
-    }
+					const cancelMessage = new Discord.MessageEmbed()
+						.setColor("#34aeeb")
+						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+						.setTitle("Action cancelled automatically.")
+						.setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
+						.setDescription(`${user.username}'s ${currentName} stays in their garage.`)
+						.setImage(car["card"])
+						.setTimestamp();
+					return reactionMessage.edit({ embed: cancelMessage, component: null });
+				}
+			});
+		}
+	}
 }

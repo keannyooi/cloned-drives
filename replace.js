@@ -35,17 +35,20 @@ client.once("ready", async () => {
             playerData.garage[i].carFile = compare(hmm);
             i++;
         }
-        playerData.decks.forEach(deck => {
-            for (let x = 0; x < deck.hand.length; x++) {
-                let oop = deck.hand[x];
-                deck.hand[x] = compare(oop);
-            }
-        });
+        // playerData.decks.forEach(deck => {
+        //     for (let x = 0; x < deck.hand.length; x++) {
+        //         let oop = deck.hand[x];
+        //         deck.hand[x] = compare(oop);
+        //     }
+        // });
 
-        if (playerData.hand) {
-            let uwu = playerData.hand.carFile;
-            playerData.hand.carFile = compare(uwu);
-        }
+        // if (playerData.hand) {
+        //     let uwu = playerData.hand.carFile;
+        //     playerData.hand.carFile = compare(uwu);
+        // }
+        // playerData.settings.unitpreference = "british";
+        // playerData.settings.sortingorder = "descending";
+        // console.log("options updated");
         await client.db.set(`acc${user.id}`, playerData);
     });
 
@@ -75,9 +78,9 @@ client.once("ready", async () => {
 client.login(token);
 
 function compare(carFile) {
-    if (carFile === "fiat tempra 2.5 td (1989).json") {
-        console.log("croma done");
-        return "fiat croma 2.5 td (1989).json";
+    if (carFile === "mercedes-benz a 160 (1997).json") {
+        console.log("merc done");
+        return "mercedes-benz a 160 classic (1997).json";
     }
     else if (carFile === "gmc s-15 jimmy slx (1990).json") {
         console.log("jimmy done");

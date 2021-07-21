@@ -22,6 +22,9 @@ module.exports = {
 	async execute(message, args) {
 		const db = message.client.db;
 		const pageLimit = 10;
+		const filter = (button) => {
+			return button.clicker.user.id === message.author.id;
+		};
 		var list = carFiles;
 		var carList = "", valueList = "";
 		var reactionIndex = 0;
@@ -188,15 +191,39 @@ module.exports = {
 					}
 				}
 				else {
-					if (amountA > amountB) {
-						return -1;
+					if (playerData.settings.sortingorder === "descending") {
+						if (amountA > amountB) {
+							return -1;
+						}
+						else {
+							return 1;
+						}
 					}
 					else {
-						return 1;
+						if (amountA < amountB) {
+							return -1;
+						}
+						else {
+							return 1;
+						}
 					}
 				}
 			}
 			else {
+				let critA = carA[sortBy], critB = carB[sortBy];
+				if (sortBy === "topSpeed" || sortBy === "0to60" || sortBy === "handling") {
+					let checkOrder = ["333", "666", "699", "969", "996"];
+
+					for (let i = 0; i < checkOrder.length; i++) {
+						if (a[checkOrder[i]] > 0) {
+							critA = carA[`${checkOrder[i]}${sortBy.charAt(0).toUpperCase() + sortBy.slice(1)}`];
+						}
+						if (b[checkOrder[i]] > 0) {
+							critB = carB[`${checkOrder[i]}${sortBy.charAt(0).toUpperCase() + sortBy.slice(1)}`];
+						}
+					}
+				}
+
 				if (carA[sortBy] === carB[sortBy]) {
 					let nameA = `${carA["make"]} ${carA["model"]}`.toLowerCase();
 					let nameB = `${carA["make"]} ${carA["model"]}`.toLowerCase();
@@ -218,20 +245,40 @@ module.exports = {
 					}
 				}
 				else {
-					if (sortBy === "0to60" || sortBy === "weight" || sortBy === "ola") {
-						if (carA[sortBy] > carB[sortBy]) {
-							return 1;
+					if (playerData.settings.sortingorder === "descending") {
+						if (sortBy === "0to60" || sortBy === "weight" || sortBy === "ola") {
+							if (critA < critB) {
+								return -1;
+							}
+							else {
+								return 1;
+							}
 						}
 						else {
-							return -1;
+							if (critA > critB) {
+								return -1;
+							}
+							else {
+								return 1;
+							}
 						}
 					}
 					else {
-						if (carA[sortBy] > carB[sortBy]) {
-							return -1;
+						if (sortBy === "0to60" || sortBy === "weight" || sortBy === "ola") {
+							if (critA > critB) {
+								return -1;
+							}
+							else {
+								return 1;
+							}
 						}
 						else {
-							return 1;
+							if (critA < critB) {
+								return -1;
+							}
+							else {
+								return 1;
+							}
 						}
 					}
 				}
@@ -303,11 +350,9 @@ module.exports = {
 		let row = new disbut.MessageActionRow().addComponents(firstPage, prevPage, nextPage, lastPage);
 
 		message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-		let listMessage = await message.channel.send({ embed: infoScreen, component: row });
-
-		message.client.on("clickButton", async (button) => {
-			if (button.clicker.id === message.author.id && button.message.id === listMessage.id) {
-				await button.reply.defer();
+		await message.channel.send({ embed: infoScreen, component: row }).then(listMessage => {
+			const collector = listMessage.createButtonCollector(filter, { time: 60000 });
+			collector.on("collect", async button => {
 				switch (button.id) {
 					case "first_page":
 						page = 1;
@@ -377,17 +422,13 @@ module.exports = {
 				}
 				row = new disbut.MessageActionRow().addComponents(firstPage, prevPage, nextPage, lastPage);
 				await listMessage.edit({ embed: infoScreen, component: row });
-			}
-		});
+				await button.reply.defer();
+			});
 
-		setTimeout(() => {
-			firstPage.setDisabled();
-			prevPage.setDisabled();
-			nextPage.setDisabled();
-			lastPage.setDisabled();
-			row = new disbut.MessageActionRow().addComponents(firstPage, prevPage, nextPage, lastPage);
-			listMessage.edit({ embed: infoScreen, component: row });
-		}, 70000);
+			collector.on("end", () => {
+				listMessage.edit({ embed: infoScreen, component: null });
+			});
+		});
 
 		function rarityCheck(currentCar) {
 			if (currentCar["rq"] > 79) { //leggie

@@ -29,7 +29,9 @@ module.exports = {
                     { name: "Enable Daily Reward Notifications (ID: \`senddailynotifs\`)", value: `Having this set to \`true\` enables automated DM notifications when your daily reward can be claimed.\n**Value:** \`${settings.senddailynotifs}\``, inline: true },
                     { name: "Enable Car List Filtering (ID: \`filtercarlist\`)", value: `Having this set to \`true\` applies your current filter to the car list.\n**Value:** \`${settings.filtercarlist}\``, inline: true },
                     { name: "Enable Garage Filtering (ID: \`filtergarage\`)", value: `Having this set to \`true\` applies your current filter to the garage.\n**Value:** \`${settings.filtergarage}\``, inline: true },
-                    { name: "Show Black Market Cars (ID: \`showbmcars\`)", value: `(This is WIP, doesn't do anything currently)\n**Value:** \`${settings.showbmcars}\``, inline: true }
+                    { name: "Show Black Market Cars (ID: \`showbmcars\`)", value: `(This is WIP, doesn't do anything currently)\n**Value:** \`${settings.showbmcars}\``, inline: true },
+                    { name: "Sorting Order For List Filtering (ID: \`sortingorder\`)", value: `Lets you choose to sort either by ascending or descending. Affects the following commands: \`cd-garage, cd-carlist, cd-tracklist\`\n**Value:** \`${settings.sortingorder}\``, inline: true },
+                    { name: "Unit Preference (ID: \`unitpreference\`)", value: `Lets you choose the unit system of your preference. Graphics aren't affected by this setting.\n**Value:** \`${settings.unitpreference}\``, inline: true }
                 )
                 .setTimestamp();
             message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
@@ -88,6 +90,68 @@ module.exports = {
                         return message.channel.send(errorMessage);
                     }
                     break;
+                case "unitpreference":
+                    if (!args[1]) {
+                        message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+                        let errorMessage = new Discord.MessageEmbed()
+                            .setColor("#fc0303")
+                            .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                            .setTitle("Error, argument not provided.")
+                            .setDescription("You are expected to provide a unit system after the setting name. Here are the unit systems available: `british`, `metric` (SI), `imperial` (US)")
+                            .setTimestamp();
+                        return message.channel.send(errorMessage);
+                    }
+                    if (args[1].toLowerCase() === "british" || args[1].toLowerCase() === "imperial" || args[1].toLowerCase() === "metric") {
+                        settings[setting] = args[1].toLowerCase();
+                        infoScreen = new Discord.MessageEmbed()
+                            .setColor("#03fc24")
+                            .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                            .setTitle(`Successfully set your unit system of choice to the \`${args[1].toLowerCase()}\` system!`)
+                            .setTimestamp();
+                    }
+                    else {
+                        message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+                        let errorMessage = new Discord.MessageEmbed()
+                            .setColor("#fc0303")
+                            .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                            .setTitle("Error, argument provided is not a valid unit system.")
+                            .setDescription("This game supports `british`, `imperial` (US) and `metric` (SI) unit systems only.")
+                            .addField("Argument Received", `\`${args[1].toLowerCase()}\``)
+                            .setTimestamp();
+                        return message.channel.send(errorMessage);
+                    }
+                    break;
+                case "sortingorder":
+                    if (!args[1]) {
+                        message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+                        let errorMessage = new Discord.MessageEmbed()
+                            .setColor("#fc0303")
+                            .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                            .setTitle("Error, argument not provided.")
+                            .setDescription("You are expected to provide either `ascending` or `descending` after the setting name.")
+                            .setTimestamp();
+                        return message.channel.send(errorMessage);
+                    }
+                    if (args[1].toLowerCase() === "ascending" || args[1].toLowerCase() === "descending") {
+                        settings[setting] = args[1].toLowerCase();
+                        infoScreen = new Discord.MessageEmbed()
+                            .setColor("#03fc24")
+                            .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                            .setTitle(`Successfully set the sorting order to \`${args[1].toLowerCase()}\`!`)
+                            .setTimestamp();
+                    }
+                    else {
+                        message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+                        let errorMessage = new Discord.MessageEmbed()
+                            .setColor("#fc0303")
+                            .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                            .setTitle("Error, argument provided is invalid")
+                            .setDescription("You are expected to provide either `ascending` or `descending`.")
+                            .addField("Argument Received", `\`${args[1].toLowerCase()}\``)
+                            .setTimestamp();
+                        return message.channel.send(errorMessage);
+                    }
+                    break;
                 default:
                     message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                     const errorScreen = new Discord.MessageEmbed()
@@ -99,7 +163,9 @@ module.exports = {
                                     \`senddailynotifs\` - Enable automated daily reward notifications. Provide a boolean (\`true\` or \`false\`) after that. Remember to enable \`DMs from server members\` for this to work.
                                     \`filtercarlist\` - Enable cd-carlist filtering. Provide a boolean (\`true\` or \`false\`) after that.
                                     \`filtergarage\` - Enable garage filtering. Provide a boolean (\`true\` or \`false\`) after that.
-                                    \`showbmcars\` - Enable black market car visibility. Provide a boolean (\`true\` or \`false\`) after that.`)
+                                    \`showbmcars\` - Enable black market car visibility. Provide a boolean (\`true\` or \`false\`) after that.
+                                    \`unitpreference\` - Choose a unit system of your liking. Provide a the name of a unit system (\`british\`, \`imperial\` or \`metric\`) after that.
+                                    \`sortingorder\` - Choose the order that items are sorted in. Provide either \`ascending\` or \`descending\` after that.`)
                         .setTimestamp();
                     return message.channel.send(errorScreen);
             }

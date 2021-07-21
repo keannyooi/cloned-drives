@@ -1,0 +1,54 @@
+{
+    "rq": 52,
+    "make": "Opel",
+    "model": "Lotus Omega",
+    "modelYear": 1990,
+    "country": "DE",
+    "topSpeed": 175,
+    "0to60": 5.0,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Super Sedan", "Street Racer", "Sleeper"],
+    "isPrize": false,
+
+    "weight": 1652,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 88.92,
+    "ola": 94.38,
+    "description": "The ultimate Q-Car. Faster than a ZR1 of the day. Card by Connor.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/855182876743565353/B.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/855182986042540061/B.OpelLotus.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/855183007311855709/B.OpelLotus-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/855183018455728148/B.OpelLotus-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/855183055040151592/B.OpelLotus-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/855183041290305546/B.OpelLotus-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/855183030288252938/B.OpelLotus-699.png",
+
+    "333TopSpeed": 178,
+    "3330to60": 4.8,
+    "333Handling": 77,
+
+    "666TopSpeed": 181,
+    "6660to60": 4.5,
+    "666Handling": 80,
+
+    "996TopSpeed": 184,
+    "9960to60": 4.3,
+    "996Handling": 80,
+
+    "969TopSpeed": 184,
+    "9690to60": 4.5,
+    "969Handling": 83,
+
+    "699TopSpeed": 181,
+    "6990to60": 4.3,
+    "699Handling": 83
+}

@@ -91,6 +91,7 @@ module.exports = {
             }
 
             const collector = infoMessage.createReactionCollector(filter, { time: 60000 });
+            console.log(collector);
             collector.on("collect", reaction => {
                 if (reaction.emoji.name === "⬅️") {
                     page -= 1;

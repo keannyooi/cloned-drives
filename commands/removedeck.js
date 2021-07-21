@@ -15,7 +15,7 @@ module.exports = {
     aliases: ["deletedeck", "rmvdeck"],
     usage: "<deck name goes here>",
     args: 1,
-	category: "Configuration",
+    category: "Configuration",
     description: 'Deletes a deck of your choice. (NOTE: Deck names cannot contain spaces, use underscores "_" instead)',
     async execute(message, args) {
         const db = message.client.db;
@@ -26,7 +26,7 @@ module.exports = {
         };
 
         if (args[1]) {
-			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+            message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             const infoScreen = new Discord.MessageEmbed()
                 .setColor("#fc0303")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -60,15 +60,15 @@ module.exports = {
                     errors: ["time"]
                 })
                     .then(collected => {
-						collected.first().delete();
+                        collected.first().delete();
                         if (isNaN(collected.first().content) || parseInt(collected.first().content) > searchResults.length || parseInt(collected.first().content) < 1) {
-							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+                            message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                             const errorMessage = new Discord.MessageEmbed()
                                 .setColor("#fc0303")
                                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                                 .setTitle("Error, invalid integer provided.")
                                 .setDescription("It looks like your response was either not a number or not part of the selection.")
-								.addField("Number Received", `\`${collected.first().content}\` (either not a number, smaller than 1 or bigger than ${searchResults.length})`)
+                                .addField("Number Received", `\`${collected.first().content}\` (either not a number, smaller than 1 or bigger than ${searchResults.length})`)
                                 .setTimestamp();
                             return currentMessage.edit(errorMessage);
                         }
@@ -77,7 +77,7 @@ module.exports = {
                         }
                     })
                     .catch(() => {
-						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+                        message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                         const cancelMessage = new Discord.MessageEmbed()
                             .setColor("#34aeeb")
                             .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -91,7 +91,7 @@ module.exports = {
             removeDeck(searchResults[0]);
         }
         else {
-			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+            message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             const errorMessage = new Discord.MessageEmbed()
                 .setColor("#fc0303")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -102,6 +102,9 @@ module.exports = {
         }
 
         async function removeDeck(currentDeck, currentMessage) {
+            const buttonFilter = (button) => {
+                return button.clicker.user.id === message.author.id;
+            };
             let yse = new disbut.MessageButton()
                 .setStyle("green")
                 .setLabel("Yes!")
@@ -124,18 +127,15 @@ module.exports = {
                 reactionMessage = await message.channel.send({ embed: confirmationMessage, component: row });
             }
 
-            message.client.once("clickButton", async (button) => {
-                if (button.clicker.id === message.author.id && button.message.id === reactionMessage.id) {
-                    yse.setDisabled();
-                    nop.setDisabled();
-                    row = new disbut.MessageActionRow().addComponents(yse, nop);
+            const collector = reactionMessage.createButtonCollector(buttonFilter, { time: 10000 });
+            collector.on("collect", async button => {
+                if (!processed) {
                     processed = true;
                     switch (button.id) {
                         case "yse":
-							await button.reply.defer();
                             decks.splice(decks.indexOf(currentDeck), 1);
                             await db.set(`acc${message.author.id}.decks`, decks);
-							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+                            message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 
                             const infoScreen = new Discord.MessageEmbed()
                                 .setColor("#03fc24")
@@ -143,37 +143,31 @@ module.exports = {
                                 .setTitle(`Successfully removed deck named ${currentDeck.name}!`)
                                 .setDescription("You earned nothing!")
                                 .setTimestamp();
-                            return reactionMessage.edit({ embed: infoScreen, component: row });
+                            return reactionMessage.edit({ embed: infoScreen, component: null });
                         case "nop":
-                            await button.reply.defer();
                             message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                             const cancelMessage = new Discord.MessageEmbed()
                                 .setColor("#34aeeb")
                                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                                 .setTitle("Action cancelled.")
                                 .setTimestamp();
-                            return reactionMessage.edit({ embed: cancelMessage, component: row });
+                            return reactionMessage.edit({ embed: cancelMessage, component: null });
                         default:
                             break;
                     }
                 }
             });
-
-            setTimeout(() => {
+            collector.on("end", () => {
                 if (!processed) {
-                    yse.setDisabled();
-                    nop.setDisabled();
-                    row = new disbut.MessageActionRow().addComponents(yse, nop);
-
-					message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+                    message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
                     const cancelMessage = new Discord.MessageEmbed()
                         .setColor("#34aeeb")
                         .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                         .setTitle("Action cancelled automatically.")
                         .setTimestamp();
-                    return reactionMessage.edit({ embed: cancelMessage, component: row });
+                    return reactionMessage.edit({ embed: cancelMessage, component: null });
                 }
-            }, 10000);
+            });
         }
     }
 }

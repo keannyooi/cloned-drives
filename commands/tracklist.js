@@ -21,6 +21,9 @@ module.exports = {
     description: "Shows all the cars that are available in Cloned Drives in list form.",
     async execute(message, args) {
         const pageLimit = 10;
+		const filter = (button) => {
+			return button.clicker.user.id === message.author.id;
+		};
         var trackList = "";
         var reactionIndex = 0;
         var page;
@@ -115,11 +118,9 @@ module.exports = {
 		}
 		let row = new disbut.MessageActionRow().addComponents(firstPage, prevPage, nextPage, lastPage);
 		message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-        let listMessage = await message.channel.send({ embed: infoScreen, component: row });
-
-        message.client.on("clickButton", async (button) => {
-			if (button.clicker.id === message.author.id && button.message.id === listMessage.id) {
-				await button.reply.defer();
+        await message.channel.send({ embed: infoScreen, component: row }).then(listMessage => {
+			const collector = listMessage.createButtonCollector(filter, { time: 60000 });
+			collector.on("collect", async button => {
 				switch (button.id) {
 					case "first_page":
 						page = 1;
@@ -185,17 +186,12 @@ module.exports = {
 				}
 				row = new disbut.MessageActionRow().addComponents(firstPage, prevPage, nextPage, lastPage);
 				await listMessage.edit({ embed: infoScreen, component: row });
-			}
+				await button.reply.defer();
+			});
+			collector.on("end", () => {
+				listMessage.edit({ embed: infoScreen, component: null });
+			});
 		});
-
-		setTimeout(() => {
-			firstPage.setDisabled();
-			prevPage.setDisabled();
-			nextPage.setDisabled();
-			lastPage.setDisabled();
-			row = new disbut.MessageActionRow().addComponents(firstPage, prevPage, nextPage, lastPage);
-			listMessage.edit({ embed: infoScreen, component: row });
-		}, 70000);
 
         function trackDisplay(page) {
             let startsWith, endsWith;

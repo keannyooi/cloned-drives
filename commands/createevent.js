@@ -142,6 +142,7 @@ module.exports = {
 			name: eventName,
 			id: events.currentID,
 			isActive: false,
+			isVIP: false,
 			timeLeft: "unlimited",
 			deadline: "until someone turns it off",
 			background: "https://cdn.discordapp.com/attachments/716917404868935691/801310401425440768/unknown.png",

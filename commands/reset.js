@@ -11,19 +11,19 @@ const Discord = require("discord.js-light");
 const disbut = require("discord-buttons");
 
 module.exports = {
-    name: "reset",
-    aliases: ["rs", "noneandquitthegame"],
-    usage: "<username>",
-    args: 1,
+	name: "reset",
+	aliases: ["rs", "noneandquitthegame"],
+	usage: "<username>",
+	args: 1,
 	category: "Admin",
-    description: "Resets your stats.",
-    async execute(message, args) {
+	description: "Resets your stats.",
+	async execute(message, args) {
 		const starterCars = ["honda s2000 (1999).json", "peugeot 405 mi16 (1989).json", "range rover county (1989).json", "nissan leaf (2010).json", "de tomaso mangusta (1967).json"];
 		const filter = response => {
-            return response.author.id === message.author.id;
-        };
+			return response.author.id === message.author.id;
+		};
 
-        if (message.mentions.users.first()) {
+		if (message.mentions.users.first()) {
 			if (!message.mentions.users.first().bot) {
 				noneAndQuitTheGame(message.mentions.users.first());
 			}
@@ -123,15 +123,18 @@ module.exports = {
 		}
 
 		async function noneAndQuitTheGame(user, currentMessage) {
+			const buttonFilter = (button) => {
+				return button.clicker.user.id === message.author.id;
+			};
 			let yse = new disbut.MessageButton()
-                .setStyle("green")
-                .setLabel("Yes!")
-                .setID("yse");
-            let nop = new disbut.MessageButton()
-                .setStyle("red")
-                .setLabel("No!")
-                .setID("nop");
-            let row = new disbut.MessageActionRow().addComponents(yse, nop);
+				.setStyle("green")
+				.setLabel("Yes!")
+				.setID("yse");
+			let nop = new disbut.MessageButton()
+				.setStyle("red")
+				.setLabel("No!")
+				.setID("nop");
+			let row = new disbut.MessageActionRow().addComponents(yse, nop);
 			const confirmationMessage = new Discord.MessageEmbed()
 				.setColor("#34aeeb")
 				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -147,35 +150,34 @@ module.exports = {
 				reactionMessage = await message.channel.send({ embed: confirmationMessage, component: row });
 			}
 
-			message.client.once("clickButton", async (button) => {
-                if (button.clicker.id === message.author.id && button.message.id === reactionMessage.id) {
-                    yse.setDisabled();
-                    nop.setDisabled();
-                    row = new disbut.MessageActionRow().addComponents(yse, nop);
-                    processed = true;
-                    switch (button.id) {
-                        case "yse":
-							await button.reply.defer();
-                            await message.client.db.set(`acc${user.id}`, { money: 0,
+			const collector = reactionMessage.createButtonCollector(buttonFilter, { time: 10000 });
+			collector.on("collect", async button => {
+				if (!processed) {
+					processed = true;
+					switch (button.id) {
+						case "yse":
+							await message.client.db.set(`acc${user.id}`, {
+								money: 0,
 								fuseTokens: 0,
 								trophies: 0,
 								garage: [],
 								decks: [],
 								campaignProgress: { chapter: 0, part: 1, race: 1 },
 								unclaimedRewards: { money: 0, fuseTokens: 0, trophies: 0, cars: [], packs: [] },
-								settings: { enablegraphics: true, senddailynotifs: false, filtercarlist: true, filtergarage: true, showbmcars: false }
+								settings: { enablegraphics: true, senddailynotifs: false, filtercarlist: true, filtergarage: true, showbmcars: false, unitpreference: "british", sortingorder: "descending" }
 							});
 							let i = 0;
 							while (i < 5) {
 								let carFile = starterCars[i];
-								await message.client.db.push(`acc${user.id}.garage`, { carFile: carFile,
-																"000": 1,
-																"333": 0,
-																"666": 0,
-																"996": 0,
-																"969": 0,
-																"699": 0
-																});
+								await message.client.db.push(`acc${user.id}.garage`, {
+									carFile: carFile,
+									"000": 1,
+									"333": 0,
+									"666": 0,
+									"996": 0,
+									"969": 0,
+									"699": 0
+								});
 								i++;
 							}
 							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
@@ -185,39 +187,35 @@ module.exports = {
 								.setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
 								.setTitle(`Successfully reset ${user.username}'s data!`)
 								.setTimestamp();
-                            return reactionMessage.edit({ embed: infoScreen, component: row });
-                        case "nop":
-                            await button.reply.defer();
-                            message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                            const cancelMessage = new Discord.MessageEmbed()
-                                .setColor("#34aeeb")
-                                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+							return reactionMessage.edit({ embed: infoScreen, component: null });
+						case "nop":
+							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+							const cancelMessage = new Discord.MessageEmbed()
+								.setColor("#34aeeb")
+								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 								.setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
-                                .setTitle("Action cancelled.")
-                                .setTimestamp();
-                            return reactionMessage.edit({ embed: cancelMessage, component: row });
-                        default:
-                            break;
-                    }
-                }
-            });
-
-            setTimeout(() => {
-                if (!processed) {
-                    yse.setDisabled();
-                    nop.setDisabled();
-                    row = new disbut.MessageActionRow().addComponents(yse, nop);
-
-					message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                    const cancelMessage = new Discord.MessageEmbed()
-                        .setColor("#34aeeb")
-                        .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+								.setTitle("Action cancelled.")
+								.setImage(racehud)
+								.setTimestamp();
+							return reactionMessage.edit({ embed: cancelMessage, component: null });
+						default:
+							break;
+					}
+				}
+			});
+			collector.on("end", () => {
+				if (!processed) {
+					message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
+					const cancelMessage = new Discord.MessageEmbed()
+						.setColor("#34aeeb")
+						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 						.setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
-                        .setTitle("Action cancelled automatically.")
-                        .setTimestamp();
-                    return reactionMessage.edit({ embed: cancelMessage, component: row });
-                }
-            }, 10000);
+						.setTitle("Action cancelled automatically.")
+						.setImage(racehud)
+						.setTimestamp();
+					return reactionMessage.edit({ embed: cancelMessage, component: null });
+				}
+			});
 		}
-    }
+	}
 }

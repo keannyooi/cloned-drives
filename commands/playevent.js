@@ -113,7 +113,10 @@ module.exports = {
 		}
 
 		async function playEvent(event, currentMessage) {
-			console.log(event);
+			//console.log(event);
+			const filter = (button) => {
+				return button.clicker.user.id === message.author.id;
+			};
 			let round = event.players[`acc${message.author.id}`];
 			if (!round) {
 				round = 1;
@@ -235,18 +238,15 @@ module.exports = {
 
 				let reactionMessage, processed = false;
 				if (currentMessage && message.channel.type === "text") {
-					reactionMessage = await currentMessage.edit({ embed: intermission, component: row});
+					reactionMessage = await currentMessage.edit({ embed: intermission, component: row });
 				}
 				else {
-					reactionMessage = await message.channel.send({ embed: intermission, component: row});
+					reactionMessage = await message.channel.send({ embed: intermission, component: row });
 				}
 
-				message.client.once("clickButton", async (button) => {
-					await button.reply.defer();
-					if (button.clicker.id === message.author.id && button.message.id === reactionMessage.id) {
-						yse.setDisabled();
-						nop.setDisabled();
-						row = new disbut.MessageActionRow().addComponents(yse, nop);
+				const collector = reactionMessage.createButtonCollector(filter, { time: 10000 });
+				collector.on("collect", async button => {
+					if (!processed) {
 						processed = true;
 						switch (button.id) {
 							case "yse":
@@ -258,10 +258,10 @@ module.exports = {
 										.setTitle("Looks like this event has ended.")
 										.setDescription("rip")
 										.setTimestamp();
-									return reactionMessage.edit({ embed: end, component: row});
+									return reactionMessage.edit({ embed: end, component: null });
 								}
 
-								await reactionMessage.edit({ embed: intermission, component: row});
+								await reactionMessage.edit({ embed: intermission, component: null });
 								const result = await raceCommand.race(message, playerCar, opponentCar, track, playerData.settings.enablegraphics);
 								const delay = ms => new Promise(res => setTimeout(res, ms));
 								await delay(2000);
@@ -299,32 +299,27 @@ module.exports = {
 												break;
 										}
 									}
-									await db.set(`acc${message.author.id}`, playerData);
 									message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+									await db.set(`acc${message.author.id}`, playerData);
 									return message.channel.send(`**You have beaten Round ${round - 1}! Claim your reward using \`cd-rewards\`.**`);
 								}
 								break;
 							case "nop":
 								intermission.setTitle("Action cancelled.");
 								message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-								return reactionMessage.edit({ embed: intermission, component: row});
+								return reactionMessage.edit({ embed: intermission, component: null });
 							default:
 								break;
 						}
 					}
 				});
-		
-				setTimeout(() => {
+				collector.on("end", () => {
 					if (!processed) {
-						yse.setDisabled();
-						nop.setDisabled();
-						row = new disbut.MessageActionRow().addComponents(yse, nop);
-		
 						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 						intermission.setTitle("Action cancelled automatically.");
-						return reactionMessage.edit({ embed: intermission, component: row});
+						return reactionMessage.edit({ embed: intermission, component: null });
 					}
-				}, 10000);
+				});
 			}
 			else {
 				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);

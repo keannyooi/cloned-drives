@@ -117,7 +117,8 @@ module.exports = {
 		}
 
 		async function displayInfo(car, currentMessage) {
-			let garage = await message.client.db.get(`acc${message.author.id}.garage`);
+			const playerData = await message.client.db.get(`acc${message.author.id}`);
+			let garage = playerData.garage;
 			let currentCar = require(`./cars/${car}`);
 
 			let rarity;
@@ -143,7 +144,7 @@ module.exports = {
 				rarity = message.client.emojis.cache.get("726020544264273928");
 			}
 
-			let tags = "", description, mra, ola, accel;
+			let tags = "", description, mra, ola, topSpeed, accel, weight;
 			if (currentCar["tags"].length > 0) {
 				tags = currentCar["tags"].join(", ");
 			}
@@ -163,7 +164,12 @@ module.exports = {
 				mra = "N/A";
 			}
 			if (currentCar["topSpeed"] >= 60) {
-				accel = currentCar["0to60"];
+				if (playerData.settings.unitpreference === "metric") {
+					accel = `${currentCar["0to60"]} (${(currentCar["0to60"] * 1.036).toFixed(1)})`;
+				}
+				else {
+					accel = currentCar["0to60"];
+				}
 			}
 			else {
 				accel = "N/A";
@@ -173,6 +179,18 @@ module.exports = {
 			}
 			else {
 				ola = "N/A";
+			}
+			if (playerData.settings.unitpreference === "metric") {
+				topSpeed = `${currentCar["topSpeed"]}MPH (${Math.round(currentCar["topSpeed"] * 1.60934)}KM/H)`;
+				weight = `${currentCar["weight"]}kg`;
+			}
+			else if (playerData.settings.unitpreference === "imperial") {
+				topSpeed = `${currentCar["topSpeed"]}MPH`;
+				weight = `${currentCar["weight"]}kg (${Math.round(currentCar["weight"] * 2.20462262185)}lbs)`;
+			}
+			else {
+				topSpeed = `${currentCar["topSpeed"]}MPH`;
+				weight = `${currentCar["weight"]}kg`;
 			}
 
 			let make = currentCar["make"];
@@ -186,12 +204,12 @@ module.exports = {
 				.setTitle(`(${rarity} ${currentCar["rq"]}) ` + currentName)
 				.setDescription("Stats of requested car:")
 				.addFields(
-					{ name: "Top Speed (MPH)", value: currentCar["topSpeed"], inline: true },
-					{ name: "0-60MPH", value: accel, inline: true },
+					{ name: "Top Speed", value: topSpeed, inline: true },
+					{ name: "0-60MPH (0-100KM/H)", value: accel, inline: true },
 					{ name: "Handling", value: currentCar["handling"], inline: true },
 					{ name: "Drive Type", value: currentCar["driveType"], inline: true },
 					{ name: "Tyre Type", value: currentCar["tyreType"], inline: true },
-					{ name: "Weight (kg)", value: currentCar["weight"], inline: true },
+					{ name: "Weight", value: weight, inline: true },
 					{ name: "Ground Clearance", value: currentCar["gc"], inline: true },
 					{ name: "Seat Count", value: currentCar["seatCount"], inline: true },
 					{ name: "Body Style", value: currentCar["bodyStyle"], inline: true },

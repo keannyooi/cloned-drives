@@ -403,18 +403,36 @@ module.exports = {
                 }
     
                 let carSpecs = `(${rarity} ${car["rq"]}) ${make} ${car["model"]} (${car["modelYear"]}) [${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}]\n`;
-                carSpecs += `Top Speed: ${carModule.topSpeed}MPH\n`;
+                if (playerData.settings.unitpreference === "metric") {
+                    let kph = Math.round(carModule.topSpeed * 1.60934);
+                    carSpecs += `Top Speed: ${carModule.topSpeed}MPH (${kph}KM/H)\n`;
+                }
+                else {
+                    carSpecs += `Top Speed: ${carModule.topSpeed}MPH\n`;
+                }
                 if (carModule.topSpeed < 60) {
                     carModule.accel = 99.9;
                     carSpecs += "0-60MPH: N/A\n";
                 }
                 else {
-                    carSpecs += `0-60MPH: ${carModule.accel} sec\n`;
+                    if (playerData.settings.unitpreference === "metric") {
+                        let convertedAccel = (carModule.accel * 1.036).toFixed(1);
+                        carSpecs += `0-60MPH: ${carModule.accel} sec (0-100KM/H: ${convertedAccel} sec)\n`;
+                    }
+                    else {
+                        carSpecs += `0-60MPH: ${carModule.accel} sec\n`;
+                    }
                 }
                 carSpecs += `Handling: ${carModule.handling}\n`;
                 carSpecs += `${carModule.enginePos} Engine, ${carModule.driveType}\n`;
                 carSpecs += `${carModule.tyreType} Tyres\n`;
-                carSpecs += `Weight: ${carModule.weight}kg\n`;
+                if (playerData.settings.unitpreference === "imperial") {
+                    let pounds = Math.round(carModule.weight * 2.20462262185);
+                    carSpecs += `Weight: ${carModule.weight}kg (${pounds}lbs)\n`;
+                }
+                else {
+                    carSpecs += `Weight: ${carModule.weight}kg\n`;
+                }
                 carSpecs += `Ground Clearance: ${carModule.gc}\n`;
                 carSpecs += `TCS: ${carModule.tcs}, ABS: ${carModule.abs}\n`;
 

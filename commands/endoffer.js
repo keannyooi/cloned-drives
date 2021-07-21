@@ -11,21 +11,21 @@ const Discord = require("discord.js-light");
 const disbut = require("discord-buttons");
 
 module.exports = {
-    name: "endoffer",
+	name: "endoffer",
 	aliases: ["removeoffer", "rmvoffer"],
-    usage: "<offer name goes here>",
-    args: 1,
+	usage: "<offer name goes here>",
+	args: 1,
 	category: "Community Management",
-    description: "Ends an ongoing offer.",
-    async execute(message, args) {
+	description: "Ends an ongoing offer.",
+	async execute(message, args) {
 		const db = message.client.db;
 		const filter = response => {
-            return response.author.id === message.author.id;
-        };
-		
-        let offers = await db.get("limitedOffers");
+			return response.author.id === message.author.id;
+		};
+
+		let offers = await db.get("limitedOffers");
 		const offerName = args.join(" ").toLowerCase();
-		const searchResults = offers.filter(function(offer) {
+		const searchResults = offers.filter(function (offer) {
 			return offer.name.toLowerCase().includes(offerName);
 		});
 
@@ -92,6 +92,9 @@ module.exports = {
 		}
 
 		async function endOffer(offer, currentMessage) {
+			const buttonFilter = (button) => {
+				return button.clicker.user.id === message.author.id;
+			};
 			let yse = new disbut.MessageButton()
 				.setStyle("green")
 				.setLabel("Yes!")
@@ -102,12 +105,12 @@ module.exports = {
 				.setID("nop");
 			let row = new disbut.MessageActionRow().addComponents(yse, nop);
 			const confirmationMessage = new Discord.MessageEmbed()
-                .setColor("#34aeeb")
-                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle(`Are you sure you want to end the ${offer.name} offer?`)
-                .setTimestamp();
+				.setColor("#34aeeb")
+				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+				.setTitle(`Are you sure you want to end the ${offer.name} offer?`)
+				.setTimestamp();
 
-            let reactionMessage, processed = false;
+			let reactionMessage, processed = false;
 			if (currentMessage) {
 				reactionMessage = await currentMessage.edit({ embed: confirmationMessage, component: row });
 			}
@@ -115,55 +118,49 @@ module.exports = {
 				reactionMessage = await message.channel.send({ embed: confirmationMessage, component: row });
 			}
 
-			message.client.once("clickButton", async (button) => {
-				if (button.clicker.id === message.author.id && button.message.id === reactionMessage.id) {
-					yse.setDisabled();
-					nop.setDisabled();
-					row = new disbut.MessageActionRow().addComponents(yse, nop);
+			const collector = reactionMessage.createButtonCollector(buttonFilter, { time: 10000 });
+			collector.on("collect", async button => {
+				if (!processed) {
 					processed = true;
 					switch (button.id) {
 						case "yse":
-							await button.reply.defer();
+							if (offer.isActive) {
+								message.client.channels.cache.get("798776756952629298").send(`**The ${offer.name} event has officially finished.**`);
+							}
 							offers.splice(offers.indexOf(offer), 1);
 							await db.set("limitedOffers", offers);
 							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 
 							const infoScreen = new Discord.MessageEmbed()
-            					.setColor("#34aeeb")
-            					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-            					.setTitle(`Successfully ended the ${offer.name} offer!`)
-            					.setTimestamp();
-							return reactionMessage.edit({ embed: infoScreen, component: row });
+								.setColor("#34aeeb")
+								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+								.setTitle(`Successfully ended the ${offer.name} offer!`)
+								.setTimestamp();
+							return reactionMessage.edit({ embed: infoScreen, component: null });
 						case "nop":
-							await button.reply.defer();
 							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 							const cancelMessage = new Discord.MessageEmbed()
 								.setColor("#34aeeb")
 								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 								.setTitle("Action cancelled.")
 								.setTimestamp();
-							return reactionMessage.edit({ embed: cancelMessage, component: row });
+							return reactionMessage.edit({ embed: cancelMessage, component: null });
 						default:
 							break;
 					}
 				}
 			});
-	
-			setTimeout(() => {
+			collector.on("end", () => {
 				if (!processed) {
-					yse.setDisabled();
-					nop.setDisabled();
-					row = new disbut.MessageActionRow().addComponents(yse, nop);
-	
 					message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 					const cancelMessage = new Discord.MessageEmbed()
 						.setColor("#34aeeb")
 						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 						.setTitle("Action cancelled automatically.")
 						.setTimestamp();
-					return reactionMessage.edit({ embed: cancelMessage, component: row });
+					return reactionMessage.edit({ embed: cancelMessage, component: null });
 				}
-			}, 10000);
+			});
 		}
-    }
+	}
 }

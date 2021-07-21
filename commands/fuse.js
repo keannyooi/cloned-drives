@@ -246,6 +246,9 @@ module.exports = {
         }
 
         async function fuse(currentCar, upgrade, currentMessage) {
+            const buttonFilter = (button) => {
+                return button.clicker.user.id === message.author.id;
+            };
             let car = require(`./cars/${currentCar.carFile}`);
             let make = car["make"];
             if (typeof make === "object") {
@@ -305,11 +308,9 @@ module.exports = {
                 reactionMessage = await message.channel.send({ embed: confirmationMessage, component: row });
             }
 
-            message.client.once("clickButton", async (button) => {
-                if (button.clicker.id === message.author.id && button.message.id === reactionMessage.id) {
-                    yse.setDisabled();
-                    nop.setDisabled();
-                    row = new disbut.MessageActionRow().addComponents(yse, nop);
+            const collector = reactionMessage.createButtonCollector(buttonFilter, { time: 10000 });
+            collector.on("collect", async button => {
+                if (!processed) {
                     processed = true;
                     switch (button.id) {
                         case "yse":
@@ -337,7 +338,6 @@ module.exports = {
                             playerData.fuseTokens += fuseTokens;
 
                             await db.set(`acc${message.author.id}`, playerData);
-                            await button.reply.defer();
                             message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
 
                             const infoScreen = new Discord.MessageEmbed()
@@ -350,13 +350,12 @@ module.exports = {
                                 .setTimestamp();
                             message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                             if (message.channel.type === "text") {
-                                return reactionMessage.edit({ embed: infoScreen, component: row });
+                                return reactionMessage.edit({ embed: infoScreen, component: null });
                             }
                             else {
-                                return message.channel.send({ embed: infoScreen, component: row });
+                                return message.channel.send({ embed: infoScreen, component: null });
                             }
                         case "nop":
-                            await button.reply.defer();
                             message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
                             const cancelMessage = new Discord.MessageEmbed()
                                 .setColor("#34aeeb")
@@ -366,23 +365,18 @@ module.exports = {
                                 .setImage(car["card"])
                                 .setTimestamp();
                             if (message.channel.type === "text") {
-                                return reactionMessage.edit({ embed: cancelMessage, component: row });
+                                return reactionMessage.edit({ embed: cancelMessage, component: null });
                             }
                             else {
-                                return message.channel.send({ embed: cancelMessage, component: row });
+                                return message.channel.send({ embed: cancelMessage, component: null });
                             }
                         default:
                             break;
                     }
                 }
             });
-
-            setTimeout(() => {
+            collector.on("end", () => {
                 if (!processed) {
-                    yse.setDisabled();
-                    nop.setDisabled();
-                    row = new disbut.MessageActionRow().addComponents(yse, nop);
-
                     message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
                     const cancelMessage = new Discord.MessageEmbed()
                         .setColor("#34aeeb")
@@ -392,13 +386,13 @@ module.exports = {
                         .setImage(car["card"])
                         .setTimestamp();
                     if (message.channel.type === "text") {
-                        return reactionMessage.edit({ embed: cancelMessage, component: row });
+                        return reactionMessage.edit({ embed: cancelMessage, component: null });
                     }
                     else {
-                        return message.channel.send({ embed: cancelMessage, component: row });
+                        return message.channel.send({ embed: cancelMessage, component: null });
                     }
                 }
-            }, 10000);
+            });
         }
     }
 }

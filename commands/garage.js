@@ -156,8 +156,10 @@ module.exports = {
 
 		async function loop(user, page, sort, currentMessage) {
 			const pageLimit = 10;
-			const playerData = await db.get(`acc${user.id}`);
-			let garage = playerData.garage;
+			const filter = (button) => {
+				return button.clicker.user.id === message.author.id;
+			};
+			let garage = await db.get(`acc${user.id}.garage`);
 			let reactionIndex = 0;
 
 			switch (sort) {
@@ -192,6 +194,7 @@ module.exports = {
 					return message.channel.send(errorScreen);
 			}
 
+			const playerData = await db.get(`acc${message.author.id}`);
 			const carFilter = playerData.filter;
 			if (carFilter !== undefined && playerData.settings.filtergarage === true) {
 				for (const [key, value] of Object.entries(carFilter)) {
@@ -290,11 +293,21 @@ module.exports = {
 						}
 					}
 					else {
-						if (amountA > amountB) {
-							return -1;
+						if (playerData.settings.sortingorder === "descending") {
+							if (amountA > amountB) {
+								return -1;
+							}
+							else {
+								return 1;
+							}
 						}
 						else {
-							return 1;
+							if (amountA < amountB) {
+								return -1;
+							}
+							else {
+								return 1;
+							}
 						}
 					}
 				}
@@ -334,20 +347,40 @@ module.exports = {
 						}
 					}
 					else {
-						if (sort === "0to60" || sort === "weight" || sort === "ola") {
-							if (critA < critB) {
-								return -1;
+						if (playerData.settings.sortingorder === "descending") {
+							if (sort === "0to60" || sort === "weight" || sort === "ola") {
+								if (critA < critB) {
+									return -1;
+								}
+								else {
+									return 1;
+								}
 							}
 							else {
-								return 1;
+								if (critA > critB) {
+									return -1;
+								}
+								else {
+									return 1;
+								}
 							}
 						}
 						else {
-							if (critA > critB) {
-								return -1;
+							if (sort === "0to60" || sort === "weight" || sort === "ola") {
+								if (critA > critB) {
+									return -1;
+								}
+								else {
+									return 1;
+								}
 							}
 							else {
-								return 1;
+								if (critA < critB) {
+									return -1;
+								}
+								else {
+									return 1;
+								}
 							}
 						}
 					}
@@ -434,91 +467,85 @@ module.exports = {
 				garageMessage = await message.channel.send({ embed: infoScreen, component: row });
 			}
 
-			message.client.on("clickButton", async (button) => {
-				if (button.clicker.id === message.author.id && button.message.id === garageMessage.id) {
-					await button.reply.defer();
-					switch (button.id) {
-						case "first_page":
-							page = 1;
-							break;
-						case "prev_page":
-							page -= 1;
-							break;
-						case "next_page":
-							page += 1;
-							break;
-						case "last_page":
-							page = totalPages;
-							break;
-						default:
-							break;
-					}
-					lists = garageDisplay(page, garage);
-	
-					firstPage = new disbut.MessageButton()
-						.setStyle("red")
-						.setLabel("<<")
-						.setID("first_page");
-					prevPage = new disbut.MessageButton()
-						.setStyle("blurple")
-						.setLabel("<")
-						.setID("prev_page");
-					nextPage = new disbut.MessageButton()
-						.setStyle("blurple")
-						.setLabel(">")
-						.setID("next_page");
-					lastPage = new disbut.MessageButton()
-						.setStyle("red")
-						.setLabel(">>")
-						.setID("last_page");
-	
-					infoScreen = new Discord.MessageEmbed()
-						.setColor("#34aeeb")
-						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-						.setTitle(`${user.username}'s Garage`)
-						.setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
-						.setDescription(`Current Sorting Criteria: \`${sort}\`, Filter Activated: \`${(carFilter !== undefined && playerData.settings.filtergarage === true)}\``)
-						.addField("Car", lists.garageList, true)
-						.addField("Amount", lists.amountList, true)
-						.setFooter(`Page ${page} of ${totalPages} - Interact with the buttons below to navigate through pages.`)
-						.setTimestamp();
-					if (sort !== "rq") {
-						infoScreen.addField("Values", lists.valueList, true);
-					}
-	
-					switch (reactionIndex) {
-						case 0:
-							firstPage.setDisabled();
-							prevPage.setDisabled();
-							nextPage.setDisabled();
-							lastPage.setDisabled();
-							break;
-						case 1:
-							firstPage.setDisabled();
-							prevPage.setDisabled();
-							break;
-						case 2:
-							nextPage.setDisabled();
-							lastPage.setDisabled();
-							break;
-						case 3:
-							break;
-						default:
-							break;
-					}
-					row = new disbut.MessageActionRow().addComponents(firstPage, prevPage, nextPage, lastPage);
-					await garageMessage.edit({ embed: infoScreen, component: row });
+			const collector = garageMessage.createButtonCollector(filter, { time: 60000 });
+			collector.on("collect", async button => {
+				switch (button.id) {
+					case "first_page":
+						page = 1;
+						break;
+					case "prev_page":
+						page -= 1;
+						break;
+					case "next_page":
+						page += 1;
+						break;
+					case "last_page":
+						page = totalPages;
+						break;
+					default:
+						break;
 				}
+				lists = garageDisplay(page, garage);
+
+				firstPage = new disbut.MessageButton()
+					.setStyle("red")
+					.setLabel("<<")
+					.setID("first_page");
+				prevPage = new disbut.MessageButton()
+					.setStyle("blurple")
+					.setLabel("<")
+					.setID("prev_page");
+				nextPage = new disbut.MessageButton()
+					.setStyle("blurple")
+					.setLabel(">")
+					.setID("next_page");
+				lastPage = new disbut.MessageButton()
+					.setStyle("red")
+					.setLabel(">>")
+					.setID("last_page");
+
+				infoScreen = new Discord.MessageEmbed()
+					.setColor("#34aeeb")
+					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+					.setTitle(`${user.username}'s Garage`)
+					.setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
+					.setDescription(`Current Sorting Criteria: \`${sort}\`, Filter Activated: \`${(carFilter !== undefined && playerData.settings.filtergarage === true)}\``)
+					.addField("Car", lists.garageList, true)
+					.addField("Amount", lists.amountList, true)
+					.setFooter(`Page ${page} of ${totalPages} - Interact with the buttons below to navigate through pages.`)
+					.setTimestamp();
+				if (sort !== "rq") {
+					infoScreen.addField("Values", lists.valueList, true);
+				}
+
+				switch (reactionIndex) {
+					case 0:
+						firstPage.setDisabled();
+						prevPage.setDisabled();
+						nextPage.setDisabled();
+						lastPage.setDisabled();
+						break;
+					case 1:
+						firstPage.setDisabled();
+						prevPage.setDisabled();
+						break;
+					case 2:
+						nextPage.setDisabled();
+						lastPage.setDisabled();
+						break;
+					case 3:
+						break;
+					default:
+						break;
+				}
+				row = new disbut.MessageActionRow().addComponents(firstPage, prevPage, nextPage, lastPage);
+				await garageMessage.edit({ embed: infoScreen, component: row });
+				await button.reply.defer();
 			});
 
-			setTimeout(() => {
-				firstPage.setDisabled();
-				prevPage.setDisabled();
-				nextPage.setDisabled();
-				lastPage.setDisabled();
-				row = new disbut.MessageActionRow().addComponents(firstPage, prevPage, nextPage, lastPage);
-				garageMessage.edit({ embed: infoScreen, component: row });
-			}, 70000);
+			collector.on("end", () => {
+				garageMessage.edit({ embed: infoScreen, component: null });
+			});
 
 			function garageDisplay(page, garage) {
 				const pageLimit = 10;

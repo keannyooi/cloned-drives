@@ -14,7 +14,7 @@ module.exports = {
     name: "removefromdeck",
     usage: "<deck name goes here> | <index>",
     args: 2,
-	category: "Configuration",
+    category: "Configuration",
     description: 'Removes a car from a specified slot in a specifed deck. (NOTE: Deck names cannot contain spaces, use underscores "_" instead)',
     async execute(message, args) {
         const db = message.client.db;
@@ -23,7 +23,7 @@ module.exports = {
         const deckName = args[0].toLowerCase();
         const index = Math.ceil(parseInt(args[1]));
         if (isNaN(index) || index > 5 || index < 1) {
-			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+            message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             const errorMessage = new Discord.MessageEmbed()
                 .setColor("#fc0303")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -61,9 +61,9 @@ module.exports = {
                     errors: ['time']
                 })
                     .then(collected => {
-						collected.first().delete();
+                        collected.first().delete();
                         if (isNaN(collected.first().content) || parseInt(collected.first().content) > searchResults.length || parseInt(collected.first().content) < 1) {
-							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+                            message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                             const errorMessage = new Discord.MessageEmbed()
                                 .setColor("#fc0303")
                                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -77,7 +77,7 @@ module.exports = {
                         }
                     })
                     .catch(() => {
-						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+                        message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                         const cancelMessage = new Discord.MessageEmbed()
                             .setColor("#34aeeb")
                             .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -91,7 +91,7 @@ module.exports = {
             removeCar(searchResults[0], parseInt(index));
         }
         else {
-			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+            message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             const errorMessage = new Discord.MessageEmbed()
                 .setColor("#fc0303")
                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -102,9 +102,12 @@ module.exports = {
         }
 
         async function removeCar(currentDeck, index, currentMessage) {
+            const buttonFilter = (button) => {
+                return button.clicker.user.id === message.author.id;
+            };
             const currentCar = currentDeck.hand[index - 1];
             if (currentCar === "None") {
-				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
+                message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
                 const errorMessage = new Discord.MessageEmbed()
                     .setColor("#fc0303")
                     .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -120,10 +123,10 @@ module.exports = {
             }
 
             const car = require(`./cars/${currentCar}`);
-			let make = car["make"];
-			if (typeof make === "object") {
-				make = car["make"][0];
-			}
+            let make = car["make"];
+            if (typeof make === "object") {
+                make = car["make"][0];
+            }
             const currentName = `${make} ${car["model"]} (${car["modelYear"]}) [${currentDeck.tunes[index - 1]}]`;
             const racehud = car[`racehud${currentDeck.tunes[index - 1]}`];
 
@@ -150,19 +153,16 @@ module.exports = {
                 reactionMessage = await message.channel.send({ embed: confirmationMessage, component: row });
             }
 
-            message.client.once("clickButton", async (button) => {
-                if (button.clicker.id === message.author.id && button.message.id === reactionMessage.id) {
-                    yse.setDisabled();
-                    nop.setDisabled();
-                    row = new disbut.MessageActionRow().addComponents(yse, nop);
+            const collector = reactionMessage.createButtonCollector(buttonFilter, { time: 10000 });
+            collector.on("collect", async button => {
+                if (!processed) {
                     processed = true;
                     switch (button.id) {
                         case "yse":
-							await button.reply.defer();
                             currentDeck.hand[index - 1] = "None";
-							currentDeck.tunes[index - 1] = "000";
+                            currentDeck.tunes[index - 1] = "000";
                             await db.set(`acc${message.author.id}`, playerData);
-							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
+                            message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
 
                             const infoScreen = new Discord.MessageEmbed()
                                 .setColor("#34aeeb")
@@ -170,37 +170,33 @@ module.exports = {
                                 .setTitle(`Successfully removed ${currentName} from slot ${index} of deck ${currentDeck.name}.`)
                                 .setImage(racehud)
                                 .setTimestamp();
-                            return reactionMessage.edit({ embed: infoScreen, component: row });
+                            return reactionMessage.edit({ embed: infoScreen, component: null });
                         case "nop":
-                            await button.reply.defer();
                             message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                             const cancelMessage = new Discord.MessageEmbed()
                                 .setColor("#34aeeb")
                                 .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                                 .setTitle("Action cancelled.")
+                                .setImage(racehud)
                                 .setTimestamp();
-                            return reactionMessage.edit({ embed: cancelMessage, component: row });
+                            return reactionMessage.edit({ embed: cancelMessage, component: null });
                         default:
                             break;
                     }
                 }
             });
-
-            setTimeout(() => {
+            collector.on("end", () => {
                 if (!processed) {
-                    yse.setDisabled();
-                    nop.setDisabled();
-                    row = new disbut.MessageActionRow().addComponents(yse, nop);
-
-					message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+                    message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
                     const cancelMessage = new Discord.MessageEmbed()
                         .setColor("#34aeeb")
                         .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
                         .setTitle("Action cancelled automatically.")
+                        .setImage(racehud)
                         .setTimestamp();
-                    return reactionMessage.edit({ embed: cancelMessage, component: row });
+                    return reactionMessage.edit({ embed: cancelMessage, component: null });
                 }
-            }, 10000);
+            });
         }
     }
 }

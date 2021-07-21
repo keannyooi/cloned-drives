@@ -26,6 +26,9 @@ module.exports = {
 		const raceCommand = require("./sharedfiles/race.js");
 		const playerData = await db.get(`acc${message.author.id}`);
 		const player = playerData.hand;
+		const filter = (button) => {
+			return button.clicker.user.id === message.author.id;
+		};
 
 		if (!player) {
 			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
@@ -107,131 +110,123 @@ module.exports = {
 			.setFooter(`Current Win Streak: ${playerData.rrWinStreak}`)
 			.setTimestamp();
 
-		let reactionMessage = await message.channel.send({ embed: intermission, component: row}), processed = false;
-		message.client.once("clickButton", async (button) => {
-			if (button.clicker.id === message.author.id && button.message.id === reactionMessage.id) {
-				await button.reply.defer();
-				yse.setDisabled();
-				nop.setDisabled();
-				skip.setDisabled();
-				row = new disbut.MessageActionRow().addComponents(yse, nop, skip);
-				processed = true;
-				switch (button.id) {
-					case "yse":
-						await reactionMessage.edit(intermission, row);
-						let test = require(`./cars/${player.carFile}`), passed = true;
-						for (const [key, value] of Object.entries(reqs)) {
-							console.log(key, value);
-							switch (typeof value) {
-								case "object":
-									if (test[`${key}`] < value.start || test[`${key}`] > value.end) {
-										passed = false;
-									}
-									break;
-								case "string":
-								case "boolean":
-									if (Array.isArray(test[`${key}`])) {
-										if (test[`${key}`].find(e => e === value) === undefined) {
+		let processed = false;
+		await message.channel.send({ embed: intermission, component: row }).then(async reactionMessage => {
+			const collector = reactionMessage.createButtonCollector(filter, { time: 10000 });
+			collector.on("collect", async button => {
+				if (!processed) {
+					processed = true;
+					switch (button.id) {
+						case "yse":
+							await reactionMessage.edit(intermission, null);
+							let test = require(`./cars/${player.carFile}`), passed = true;
+							for (const [key, value] of Object.entries(reqs)) {
+								console.log(key, value);
+								switch (typeof value) {
+									case "object":
+										if (test[`${key}`] < value.start || test[`${key}`] > value.end) {
 											passed = false;
 										}
-									}
-									else {
-										if (value.toLowerCase() !== test[`${key}`].toLowerCase()) {
+										break;
+									case "string":
+									case "boolean":
+										if (Array.isArray(test[`${key}`])) {
+											if (test[`${key}`].find(e => e === value) === undefined) {
+												passed = false;
+											}
+										}
+										else {
+											if (value.toLowerCase() !== test[`${key}`].toLowerCase()) {
+												passed = false;
+											}
+										}
+										break;
+									case "number":
+										if (value < test[`${key}`]) {
 											passed = false;
 										}
-									}
-									break;
-								case "number":
-									if (value < test[`${key}`]) {
-										passed = false;
-									}
-									break;
-								default:
-									break;
+										break;
+									default:
+										break;
+								}
 							}
-						}
-						if (!passed) {
-							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-							intermission.setTitle("Your hand does not meet the random race's requirements.");
-							return reactionMessage.edit({ embed: intermission, component: row});
-						}
+							if (!passed) {
+								message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+								intermission.setTitle("Your hand does not meet the random race's requirements.");
+								return reactionMessage.edit({ embed: intermission, component: null });
+							}
 
-						const result = await raceCommand.race(message, playerCar, opponentCar, track, playerData.settings.enablegraphics);
-						const delay = ms => new Promise(res => setTimeout(res, ms));
-						await delay(2000);
+							const result = await raceCommand.race(message, playerCar, opponentCar, track, playerData.settings.enablegraphics);
+							const delay = ms => new Promise(res => setTimeout(res, ms));
+							await delay(2000);
 
-						if (result > 0) {
-							playerData.rrWinStreak++;
-							let reward = 0, rqBonus = 0, yse = 0;
-							if (playerData.rrWinStreak <= 58) {
-								reward = playerData.rrWinStreak * 500 + 1000;
-								yse = 100;
+							if (result > 0) {
+								playerData.rrWinStreak++;
+								let reward = 0, rqBonus = 0, yse = 0;
+								if (playerData.rrWinStreak <= 58) {
+									reward = playerData.rrWinStreak * 500 + 1000;
+									yse = 100;
+								}
+								else if (playerData.rrWinStreak > 58 && playerData.rrWinStreak <= 98) {
+									reward = playerData.rrWinStreak * 250 + 30000;
+									yse = 500;
+								}
+								else if (playerData.rrWinStreak > 98 && playerData.rrWinStreak <= 198) {
+									reward = playerData.rrWinStreak * 200 + 50000;
+									yse = 1000;
+								}
+								else {
+									reward = playerData.rrWinStreak * 100 + 100000;
+									yse = 5000;
+								}
+
+								if (playerCar.rq - opponentCar.rq <= 3) {
+									rqBonus = (opponentCar.rq - playerCar.rq + 4) * yse;
+								}
+								playerData.unclaimedRewards.money += reward + rqBonus;
+								message.channel.send(`**You have earned ${moneyEmoji}${reward} (+${moneyEmoji}${rqBonus} low RQ bonus)! Claim your reward using \`cd-rewards\`.**`);
+								await randomize();
 							}
-							else if (playerData.rrWinStreak > 58 && playerData.rrWinStreak <= 98) {
-								reward = playerData.rrWinStreak * 250 + 30000;
-								yse = 500;
-							}
-							else if (playerData.rrWinStreak > 98 && playerData.rrWinStreak <= 198) {
-								reward = playerData.rrWinStreak * 200 + 50000;
-								yse = 1000;
+							else if (result === 0) {
+								await randomize();
 							}
 							else {
-								reward = playerData.rrWinStreak * 100 + 100000;
-								yse = 5000;
+								playerData.rrWinStreak = 0;
+								await randomize();
 							}
 
-							if (playerCar.rq - opponentCar.rq <= 3) {
-								rqBonus = (opponentCar.rq - playerCar.rq + 4) * yse;
-							}
-							playerData.unclaimedRewards.money += reward + rqBonus;
-							message.channel.send(`**You have earned ${moneyEmoji}${reward} (+${moneyEmoji}${rqBonus} low RQ bonus)! Claim your reward using \`cd-rewards\`.**`);
-							await randomize();
-						}
-						else if (result === 0) {
-							await randomize();
-						}
-						else {
+							await db.set(`acc${message.author.id}`, playerData);
+							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+							return;
+						case "nop":
+							intermission.setTitle("Action cancelled.");
+							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+							return reactionMessage.edit({ embed: intermission, component: null });
+						case "skip":
 							playerData.rrWinStreak = 0;
 							await randomize();
-						}
 
-						await db.set(`acc${message.author.id}`, playerData);
-						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-						return;
-					case "nop":
-						intermission.setTitle("Action cancelled.");
-						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-						return reactionMessage.edit({ embed: intermission, component: row});
-					case "skip":
-						playerData.rrWinStreak = 0;
-						await randomize();
-
-						message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-						const skipMessage = new Discord.MessageEmbed()
-							.setColor("#34aeeb")
-							.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-							.setTitle("Successfully skipped race.")
-							.setDescription("Your win streak has been reset.")
-							.setTimestamp();
-						return reactionMessage.edit({ embed: skipMessage, component: row});
-					default:
-						break;
+							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+							const skipMessage = new Discord.MessageEmbed()
+								.setColor("#34aeeb")
+								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+								.setTitle("Successfully skipped race.")
+								.setDescription("Your win streak has been reset.")
+								.setTimestamp();
+							return reactionMessage.edit({ embed: skipMessage, component: null });
+						default:
+							break;
+					}
 				}
-			}
+			});
+			collector.on("end", () => {
+				if (!processed) {
+					message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+					intermission.setTitle("Action cancelled automatically.");
+					return reactionMessage.edit({ embed: intermission, component: null });
+				}
+			});
 		});
-
-		setTimeout(() => {
-			if (!processed) {
-				yse.setDisabled();
-				nop.setDisabled();
-				skip.setDisabled();
-				row = new disbut.MessageActionRow().addComponents(yse, nop, skip);
-
-				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-				intermission.setTitle("Action cancelled automatically.");
-				return reactionMessage.edit({ embed: intermission, component: row});
-			}
-		}, 10000);
 
 		function createCar(currentCar) {
 			const car = require(`./cars/${currentCar.carFile}`);
@@ -265,18 +260,36 @@ module.exports = {
 			}
 
 			let carSpecs = `(${rarity} ${car["rq"]}) ${make} ${car["model"]} (${car["modelYear"]}) [${currentCar.gearingUpgrade}${currentCar.engineUpgrade}${currentCar.chassisUpgrade}]\n`;
-			carSpecs += `Top Speed: ${carModule.topSpeed}MPH\n`;
+			if (playerData.settings.unitpreference === "metric") {
+				let kph = Math.round(carModule.topSpeed * 1.60934);
+				carSpecs += `Top Speed: ${carModule.topSpeed}MPH (${kph}KM/H)\n`;
+			}
+			else {
+				carSpecs += `Top Speed: ${carModule.topSpeed}MPH\n`;
+			}
 			if (carModule.topSpeed < 60) {
 				carModule.accel = 99.9;
 				carSpecs += "0-60MPH: N/A\n";
 			}
 			else {
-				carSpecs += `0-60MPH: ${carModule.accel} sec\n`;
+				if (playerData.settings.unitpreference === "metric") {
+					let convertedAccel = (carModule.accel * 1.036).toFixed(1);
+					carSpecs += `0-60MPH: ${carModule.accel} sec (0-100KM/H: ${convertedAccel} sec)\n`;
+				}
+				else {
+					carSpecs += `0-60MPH: ${carModule.accel} sec\n`;
+				}
 			}
 			carSpecs += `Handling: ${carModule.handling}\n`;
 			carSpecs += `${carModule.enginePos} Engine, ${carModule.driveType}\n`;
 			carSpecs += `${carModule.tyreType} Tyres\n`;
-			carSpecs += `Weight: ${carModule.weight}kg\n`;
+			if (playerData.settings.unitpreference === "imperial") {
+				let pounds = Math.round(carModule.weight * 2.20462262185);
+				carSpecs += `Weight: ${carModule.weight}kg (${pounds}lbs)\n`;
+			}
+			else {
+				carSpecs += `Weight: ${carModule.weight}kg\n`;
+			}
 			carSpecs += `Ground Clearance: ${carModule.gc}\n`;
 			carSpecs += `TCS: ${carModule.tcs}, ABS: ${carModule.abs}\n`;
 
