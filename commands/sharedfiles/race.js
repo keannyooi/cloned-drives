@@ -286,10 +286,10 @@ module.exports = {
 
 							tyreIndex = {
 								"Standard": 5,
-								"Performance": 15,
+								"Performance": 22.5,
 								"All-Surface": 1,
 								"Off-Road": 2.5,
-								"Slick": 32.5
+								"Slick": 45
 							};
 							score += (tyreIndex[opponent.tyreType] - tyreIndex[player.tyreType]);
 						}

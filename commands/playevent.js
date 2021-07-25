@@ -216,18 +216,18 @@ module.exports = {
 				const [playerCar, playerList] = createCar(player);
 				const [opponentCar, opponentList] = createCar(opponent);
 				let yse = new disbut.MessageButton()
-					.setStyle("grey")
-					.setLabel("✅")
+					.setStyle("green")
+					.setLabel("I'm ready!")
 					.setID("yse");
 				let nop = new disbut.MessageButton()
-					.setStyle("grey")
-					.setLabel("❎")
+					.setStyle("red")
+					.setLabel("Hold on!")
 					.setID("nop");
 				let row = new disbut.MessageActionRow().addComponents(yse, nop);
 				const intermission = new Discord.MessageEmbed()
 					.setColor("#34aeeb")
 					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-					.setTitle("Ready to Play? (React with ✅ to proceed or ❎ to cancel.)")
+					.setTitle("Ready to Play?")
 					.setDescription(`Trackset: ${track["trackName"]}`)
 					.addFields(
 						{ name: "Your Hand", value: playerList, inline: true },

@@ -49,7 +49,7 @@ module.exports = {
 		if (!playerData.rrWinStreak) {
 			playerData.rrWinStreak = 0;
 		}
-		if (!trackset || !opponent || !carFiles.includes(opponent.carFile) || (playerData.rrWinStreak > 75 && !reqs)) {
+		if (!trackset || !opponent || !carFiles.includes(opponent.carFile) || (playerData.rrWinStreak > 75 && reqs === {})) {
 			await randomize();
 			reqs = {};
 		}
@@ -85,23 +85,23 @@ module.exports = {
 		const [opponentCar, opponentList] = createCar(opponent);
 
 		let yse = new disbut.MessageButton()
-			.setStyle("grey")
-			.setLabel("✅")
+			.setStyle("green")
+			.setLabel("I'm ready!")
 			.setID("yse");
 		let nop = new disbut.MessageButton()
-			.setStyle("grey")
-			.setLabel("❎")
+			.setStyle("red")
+			.setLabel("Hold on!")
 			.setID("nop");
 		let skip = new disbut.MessageButton()
-			.setStyle("grey")
-			.setLabel("⏩")
+			.setStyle("blurple")
+			.setLabel("I give up. (Skips and resets streak)")
 			.setID("skip");
 		let row = new disbut.MessageActionRow().addComponents(yse, nop, skip);
 
 		const intermission = new Discord.MessageEmbed()
 			.setColor("#34aeeb")
 			.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-			.setTitle("Ready to Play? (React with ✅ to proceed, ❎ to cancel or ⏩ to skip the race and have your progress reset.)")
+			.setTitle("Ready to Play?")
 			.setDescription(`Trackset: ${track["trackName"]}, Requirements: ${reqList}`)
 			.addFields(
 				{ name: "Your Hand", value: playerList, inline: true },
@@ -185,16 +185,12 @@ module.exports = {
 								}
 								playerData.unclaimedRewards.money += reward + rqBonus;
 								message.channel.send(`**You have earned ${moneyEmoji}${reward} (+${moneyEmoji}${rqBonus} low RQ bonus)! Claim your reward using \`cd-rewards\`.**`);
-								await randomize();
 							}
-							else if (result === 0) {
-								await randomize();
-							}
-							else {
+							else if (result < 0) {
 								playerData.rrWinStreak = 0;
-								await randomize();
 							}
 
+							await randomize();
 							await db.set(`acc${message.author.id}`, playerData);
 							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 							return;

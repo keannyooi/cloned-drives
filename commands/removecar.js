@@ -177,7 +177,7 @@ module.exports = {
 			else {
 				searchResults1 = searchResults;
 			}
-			// console.log(searchResults1);
+			console.log(searchResults1);
 
 			if (searchResults1.length > 1) {
 				let carList = "";

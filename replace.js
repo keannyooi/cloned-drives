@@ -78,17 +78,9 @@ client.once("ready", async () => {
 client.login(token);
 
 function compare(carFile) {
-    if (carFile === "mercedes-benz a 160 (1997).json") {
+    if (carFile === "toyota sienna xle awd (2009).json") {
         console.log("merc done");
-        return "mercedes-benz a 160 classic (1997).json";
-    }
-    else if (carFile === "gmc s-15 jimmy slx (1990).json") {
-        console.log("jimmy done");
-        return "gmc s-15 jimmy glx (1990).json";
-    }
-    else if (carFile === "opel lotus carlton (1990).json") {
-        console.log("omega done");
-        return "opel lotus omega (1990).json";
+        return "toyota sienna xle limtied awd (2009).json";
     }
     else {
         return carFile;
