@@ -20,7 +20,8 @@ module.exports = {
     async execute(message, args) {
         const db = message.client.db;
         const deckName = args[0].toLowerCase();
-        const decks = await db.get(`acc${message.author.id}.decks`);
+        const playerData = await db.get(`acc${message.author.id}`);
+        const decks = playerData.decks;
         const filter = response => {
             return response.author.id === message.author.id;
         };
@@ -105,14 +106,27 @@ module.exports = {
             const buttonFilter = (button) => {
                 return button.clicker.user.id === message.author.id;
             };
-            let yse = new disbut.MessageButton()
-                .setStyle("green")
-                .setLabel("Yes!")
-                .setID("yse");
-            let nop = new disbut.MessageButton()
-                .setStyle("red")
-                .setLabel("No!")
-                .setID("nop");
+            let yse, nop;
+            if (playerData.settings.buttonstyle === "classic") {
+                yse = new disbut.MessageButton()
+                    .setStyle("grey")
+                    .setEmoji("✅")
+                    .setID("yse");
+                nop = new disbut.MessageButton()
+                    .setStyle("grey")
+                    .setEmoji("❎")
+                    .setID("nop");
+            }
+            else {
+                yse = new disbut.MessageButton()
+                    .setStyle("green")
+                    .setLabel("Yes!")
+                    .setID("yse");
+                nop = new disbut.MessageButton()
+                    .setStyle("red")
+                    .setLabel("No!")
+                    .setID("nop");
+            }
             let row = new disbut.MessageActionRow().addComponents(yse, nop);
             const confirmationMessage = new Discord.MessageEmbed()
                 .setColor("#34aeeb")

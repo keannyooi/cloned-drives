@@ -21,6 +21,7 @@ module.exports = {
 	description: "Shows all the cars that are available in Cloned Drives in list form.",
 	async execute(message, args) {
 		const db = message.client.db;
+		const trophyEmoji = message.client.emojis.cache.get("775636479145148418");
 		const pageLimit = 10;
 		const filter = (button) => {
 			return button.clicker.user.id === message.author.id;
@@ -297,23 +298,55 @@ module.exports = {
 			return message.channel.send(errorScreen);
 		}
 		carDisplay(page);
+		if (carList.length > 1024) {
+			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+			const errorScreen = new Discord.MessageEmbed()
+				.setColor("#fc0303")
+				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+				.setTitle("Due to Discord's embed limitations, this page has too many characters and thus cannot be shown.")
+				.setDescription("Try turning `Shortened Lists` on in `cd-settings`.")
+				.addField("Total Characters in List", `\`${carList.length}\` > \`1024\``)
+				.setTimestamp();
+			return message.channel.send(errorScreen);
+		}
 
-		let firstPage = new disbut.MessageButton()
-			.setStyle("red")
-			.setLabel("<<")
-			.setID("first_page");
-		let prevPage = new disbut.MessageButton()
-			.setStyle("blurple")
-			.setLabel("<")
-			.setID("prev_page");
-		let nextPage = new disbut.MessageButton()
-			.setStyle("blurple")
-			.setLabel(">")
-			.setID("next_page");
-		let lastPage = new disbut.MessageButton()
-			.setStyle("red")
-			.setLabel(">>")
-			.setID("last_page");
+		let firstPage, prevPage, nextPage, lastPage;
+		if (playerData.settings.buttonstyle === "classic") {
+			firstPage = new disbut.MessageButton()
+				.setStyle("grey")
+				.setEmoji("⏪")
+				.setID("first_page");
+			prevPage = new disbut.MessageButton()
+				.setStyle("grey")
+				.setEmoji("⬅️")
+				.setID("prev_page");
+			nextPage = new disbut.MessageButton()
+				.setStyle("grey")
+				.setEmoji("➡️")
+				.setID("next_page");
+			lastPage = new disbut.MessageButton()
+				.setStyle("grey")
+				.setEmoji("⏩")
+				.setID("last_page");
+		}
+		else {
+			firstPage = new disbut.MessageButton()
+				.setStyle("red")
+				.setLabel("<<")
+				.setID("first_page");
+			prevPage = new disbut.MessageButton()
+				.setStyle("blurple")
+				.setLabel("<")
+				.setID("prev_page");
+			nextPage = new disbut.MessageButton()
+				.setStyle("blurple")
+				.setLabel(">")
+				.setID("next_page");
+			lastPage = new disbut.MessageButton()
+				.setStyle("red")
+				.setLabel(">>")
+				.setID("last_page");
+		}
 
 		let infoScreen = new Discord.MessageEmbed()
 			.setColor("#34aeeb")
@@ -370,23 +403,53 @@ module.exports = {
 						break;
 				}
 				carDisplay(page);
+				if (carList.length > 1024) {
+					const errorScreen = new Discord.MessageEmbed()
+						.setColor("#fc0303")
+						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+						.setTitle("Due to Discord's embed limitations, this page has too many characters and thus cannot be shown.")
+						.setDescription("Try turning `Shortened Lists` on in `cd-settings`.")
+						.addField("Total Characters in List", `\`${carList.length}\` > \`1024\``)
+						.setTimestamp();
+					return listMessage.edit(errorScreen);
+				}
 
-				firstPage = new disbut.MessageButton()
-					.setStyle("red")
-					.setLabel("<<")
-					.setID("first_page");
-				prevPage = new disbut.MessageButton()
-					.setStyle("blurple")
-					.setLabel("<")
-					.setID("prev_page");
-				nextPage = new disbut.MessageButton()
-					.setStyle("blurple")
-					.setLabel(">")
-					.setID("next_page");
-				lastPage = new disbut.MessageButton()
-					.setStyle("red")
-					.setLabel(">>")
-					.setID("last_page");
+				if (playerData.settings.buttonstyle === "classic") {
+					firstPage = new disbut.MessageButton()
+						.setStyle("grey")
+						.setEmoji("⏪")
+						.setID("first_page");
+					prevPage = new disbut.MessageButton()
+						.setStyle("grey")
+						.setEmoji("⬅️")
+						.setID("prev_page");
+					nextPage = new disbut.MessageButton()
+						.setStyle("grey")
+						.setEmoji("➡️")
+						.setID("next_page");
+					lastPage = new disbut.MessageButton()
+						.setStyle("grey")
+						.setEmoji("⏩")
+						.setID("last_page");
+				}
+				else {
+					firstPage = new disbut.MessageButton()
+						.setStyle("red")
+						.setLabel("<<")
+						.setID("first_page");
+					prevPage = new disbut.MessageButton()
+						.setStyle("blurple")
+						.setLabel("<")
+						.setID("prev_page");
+					nextPage = new disbut.MessageButton()
+						.setStyle("blurple")
+						.setLabel(">")
+						.setID("next_page");
+					lastPage = new disbut.MessageButton()
+						.setStyle("red")
+						.setLabel(">>")
+						.setID("last_page");
+				}
 
 				infoScreen = new Discord.MessageEmbed()
 					.setColor("#34aeeb")
@@ -455,7 +518,7 @@ module.exports = {
 		}
 
 		function carDisplay(page) {
-			var startsWith, endsWith;
+			let startsWith, endsWith;
 
 			if (list.length - pageLimit <= 0) {
 				startsWith = 0;
@@ -483,7 +546,13 @@ module.exports = {
 				carList += `${i + 1 - ((page - 1) * 10)}. `;
 				valueList += `${i + 1 - ((page - 1) * 10)}. `;
 				const currentCar = require(`./cars/${list[i]}`);
-				const rarity = rarityCheck(currentCar);
+				let rarity;
+				if (playerData.settings.shortenedlists) {
+					rarity = "RQ";
+				}
+				else {
+					rarity = rarityCheck(currentCar);
+				}
 
 				let make = currentCar["make"];
 				if (typeof make === "object") {
@@ -491,7 +560,12 @@ module.exports = {
 				}
 				carList += `(${rarity} ${currentCar["rq"]}) ${make} ${currentCar["model"]} (${currentCar["modelYear"]})`;
 				if (currentCar["isPrize"]) {
-					carList += ` 🏆`;
+					if (playerData.settings.shortenedlists) {
+						carList += ` 🏆`;
+					}
+					else {
+						carList += ` ${trophyEmoji}`;
+					}
 				}
 				if (sortBy === "mostowned") {
 					let count = garage.find(o => o.carFile === list[i]);

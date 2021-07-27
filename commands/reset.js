@@ -13,8 +13,8 @@ const disbut = require("discord-buttons");
 module.exports = {
 	name: "reset",
 	aliases: ["rs", "noneandquitthegame"],
-	usage: "<username>",
-	args: 1,
+	usage: "<username> <what to reset>",
+	args: 2,
 	category: "Admin",
 	description: "Resets your stats.",
 	async execute(message, args) {
@@ -123,24 +123,70 @@ module.exports = {
 		}
 
 		async function noneAndQuitTheGame(user, currentMessage) {
+			const settings = await db.get(`acc${message.author.id}.settings`);
 			const buttonFilter = (button) => {
 				return button.clicker.user.id === message.author.id;
 			};
-			let yse = new disbut.MessageButton()
-				.setStyle("green")
-				.setLabel("Yes!")
-				.setID("yse");
-			let nop = new disbut.MessageButton()
-				.setStyle("red")
-				.setLabel("No!")
-				.setID("nop");
+			let reset = args[1].toLowerCase(), yse, nop;
+			if (settings.buttonstyle === "classic") {
+				yse = new disbut.MessageButton()
+					.setStyle("grey")
+					.setEmoji("✅")
+					.setID("yse");
+				nop = new disbut.MessageButton()
+					.setStyle("grey")
+					.setEmoji("❎")
+					.setID("nop");
+			}
+			else {
+				yse = new disbut.MessageButton()
+					.setStyle("green")
+					.setLabel("Yes!")
+					.setID("yse");
+				nop = new disbut.MessageButton()
+					.setStyle("red")
+					.setLabel("No!")
+					.setID("nop");
+			}
 			let row = new disbut.MessageActionRow().addComponents(yse, nop);
-			const confirmationMessage = new Discord.MessageEmbed()
+			let confirmationMessage = new Discord.MessageEmbed()
 				.setColor("#34aeeb")
 				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 				.setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
-				.setTitle(`Are you sure you want to reset ${user.username}'s data? (WARNING: THIS ACTION IS IRREVERSIBLE)`)
 				.setTimestamp();
+
+			switch (reset) {
+				case "money":
+					confirmationMessage.setTitle(`Are you sure you want to reset ${user.username}'s cash balance?`)
+					break;
+				case "fusetokens":
+					confirmationMessage.setTitle(`Are you sure you want to reset ${user.username}'s fuse token balance?`)
+					break;
+				case "trophies":
+					confirmationMessage.setTitle(`Are you sure you want to reset ${user.username}'s trophy balance?`)
+					break;
+				case "garage":
+					confirmationMessage.setTitle(`Are you sure you want to reset ${user.username}'s garage? (WARNING: THIS ACTION IS IRREVERSIBLE)`)
+					break;
+				case "all":
+					confirmationMessage.setTitle(`Are you sure you want to reset all of ${user.username}'s data? (WARNING: THIS ACTION IS IRREVERSIBLE)`)
+					break;
+				default:
+					message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+					const errorScreen = new Discord.MessageEmbed()
+						.setColor("#fc0303")
+						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+						.setTitle("Error, reset criteria selected not found.")
+						.setDescription(`Here is a list of reset criterias. 
+										\`money\` - Resets the user's money balance to 0.
+										\`fusetokens\` - Resets the user's fuse token balance to 0.
+										\`trophies\` - Resets the user's trophy balance to 0.
+										\`garage\` - Resets the user's garage to the five starter cars.
+										\`all\` - Performs a total data wipe for the user.`)
+						.addField("Criteria Received", `\`${reset}\``)
+						.setTimestamp();
+					return message.channel.send(errorScreen);
+			}
 
 			let reactionMessage, processed = false;
 			if (currentMessage) {
@@ -156,37 +202,88 @@ module.exports = {
 					processed = true;
 					switch (button.id) {
 						case "yse":
-							await message.client.db.set(`acc${user.id}`, {
-								money: 0,
-								fuseTokens: 0,
-								trophies: 0,
-								garage: [],
-								decks: [],
-								campaignProgress: { chapter: 0, part: 1, race: 1 },
-								unclaimedRewards: { money: 0, fuseTokens: 0, trophies: 0, cars: [], packs: [] },
-								settings: { enablegraphics: true, senddailynotifs: false, filtercarlist: true, filtergarage: true, showbmcars: false, unitpreference: "british", sortingorder: "descending" }
-							});
-							let i = 0;
-							while (i < 5) {
-								let carFile = starterCars[i];
-								await message.client.db.push(`acc${user.id}.garage`, {
-									carFile: carFile,
-									"000": 1,
-									"333": 0,
-									"666": 0,
-									"996": 0,
-									"969": 0,
-									"699": 0
-								});
-								i++;
+							let infoScreen, newGarage = [];
+							switch (reset) {
+								case "money":
+									await message.client.db.set(`acc${user.id}.money`, 0);
+									infoScreen = new Discord.MessageEmbed()
+										.setColor("#03fc24")
+										.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+										.setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
+										.setTitle(`Successfully reset ${user.username}'s money balance!`)
+										.setTimestamp();
+									break;
+								case "fusetokens":
+									await message.client.db.set(`acc${user.id}.fuseTokens`, 0);
+									infoScreen = new Discord.MessageEmbed()
+										.setColor("#03fc24")
+										.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+										.setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
+										.setTitle(`Successfully reset ${user.username}'s fuse token balance!`)
+										.setTimestamp();
+									break;
+								case "trophies":
+									await message.client.db.set(`acc${user.id}.trophies`, 0);
+									infoScreen = new Discord.MessageEmbed()
+										.setColor("#03fc24")
+										.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+										.setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
+										.setTitle(`Successfully reset ${user.username}'s trophy balance!`)
+										.setTimestamp();
+									break;
+								case "garage":
+									for (let i = 0; i < 5; i++) {
+										newGarage[i] = {
+											carFile: starterCars[i],
+											"000": 1,
+											"333": 0,
+											"666": 0,
+											"996": 0,
+											"969": 0,
+											"699": 0
+										};
+									}
+									await message.client.db.set(`acc${user.id}.garage`, newGarage);
+									infoScreen = new Discord.MessageEmbed()
+										.setColor("#03fc24")
+										.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+										.setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
+										.setTitle(`Successfully reset ${user.username}'s garage!`)
+										.setTimestamp();
+									break;
+								case "all":
+									for (let i = 0; i < 5; i++) {
+										newGarage[i] = {
+											carFile: starterCars[i],
+											"000": 1,
+											"333": 0,
+											"666": 0,
+											"996": 0,
+											"969": 0,
+											"699": 0
+										};
+									}
+									await message.client.db.set(`acc${user.id}`, {
+										money: 0,
+										fuseTokens: 0,
+										trophies: 0,
+										garage: newGarage,
+										decks: [],
+										campaignProgress: { chapter: 0, part: 1, race: 1 },
+										unclaimedRewards: { money: 0, fuseTokens: 0, trophies: 0, cars: [], packs: [] },
+										settings: { enablegraphics: true, senddailynotifs: false, filtercarlist: true, filtergarage: true, showbmcars: false, unitpreference: "british", sortingorder: "descending", buttonstyle: "default", shortenedlists: false }
+									});
+									infoScreen = new Discord.MessageEmbed()
+										.setColor("#03fc24")
+										.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+										.setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
+										.setTitle(`Successfully reset ${user.username}'s data!`)
+										.setTimestamp();
+									break;
+								default:
+									break;
 							}
-							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
-							let infoScreen = new Discord.MessageEmbed()
-								.setColor("#03fc24")
-								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-								.setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
-								.setTitle(`Successfully reset ${user.username}'s data!`)
-								.setTimestamp();
+							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
 							return reactionMessage.edit({ embed: infoScreen, component: null });
 						case "nop":
 							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
@@ -195,7 +292,6 @@ module.exports = {
 								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 								.setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
 								.setTitle("Action cancelled.")
-								.setImage(racehud)
 								.setTimestamp();
 							return reactionMessage.edit({ embed: cancelMessage, component: null });
 						default:
@@ -211,7 +307,6 @@ module.exports = {
 						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 						.setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
 						.setTitle("Action cancelled automatically.")
-						.setImage(racehud)
 						.setTimestamp();
 					return reactionMessage.edit({ embed: cancelMessage, component: null });
 				}

@@ -118,6 +118,7 @@ module.exports = {
 
 		async function displayInfo(car, currentMessage) {
 			const playerData = await message.client.db.get(`acc${message.author.id}`);
+			const trophyEmoji = message.client.emojis.cache.get("775636479145148418");
 			let garage = playerData.garage;
 			let currentCar = require(`./cars/${car}`);
 
@@ -198,10 +199,13 @@ module.exports = {
 				make = currentCar["make"][0];
 			}
 			let currentName = `${make} ${currentCar["model"]} (${currentCar["modelYear"]})`;
+			if (currentCar["isPrize"]) {
+				currentName += ` ${trophyEmoji}`;
+			}
 			const infoScreen = new Discord.MessageEmbed()
 				.setColor("#34aeeb")
 				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-				.setTitle(`(${rarity} ${currentCar["rq"]}) ` + currentName)
+				.setTitle(`(${rarity} ${currentCar["rq"]}) ${currentName}`)
 				.setDescription("Stats of requested car:")
 				.addFields(
 					{ name: "Top Speed", value: topSpeed, inline: true },
@@ -218,7 +222,7 @@ module.exports = {
 					{ name: "TCS Enabled?", value: currentCar["tcs"], inline: true },
 					{ name: "ABS Enabled?", value: currentCar["abs"], inline: true },
 					{ name: "Tags", value: tags, inline: true },
-					{ name: "Prize Car?", value: currentCar["isPrize"], inline: true },
+					{ name: "Black Market Collection", value: currentCar["bmCollection"] || "None", inline: true },
 					{ name: "Mid-Range Acceleration (MRA)", value: mra, inline: true },
 					{ name: "Off-the-Line Acceleration (OLA)", value: ola, inline: true },
 					{ name: "Description", value: description }

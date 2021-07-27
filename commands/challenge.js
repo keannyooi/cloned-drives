@@ -20,6 +20,7 @@ module.exports = {
 	async execute(message, args) {
 		const db = message.client.db;
 		const challenge = await db.get("challenge");
+		const settings = await db.get(`acc${message.author.id}.settings`);
 
 		console.log(challenge.roster);
 		if (challenge.isActive || message.member.roles.cache.has("802043346951340064")) {
@@ -61,22 +62,43 @@ module.exports = {
 				intervalString = "currently ending, no longer playable";
 			}
 
-			let firstPage = new disbut.MessageButton()
-				.setStyle("red")
-				.setLabel("<<")
-				.setID("first_page");
-			let prevPage = new disbut.MessageButton()
-				.setStyle("blurple")
-				.setLabel("<")
-				.setID("prev_page");
-			let nextPage = new disbut.MessageButton()
-				.setStyle("blurple")
-				.setLabel(">")
-				.setID("next_page");
-			let lastPage = new disbut.MessageButton()
-				.setStyle("red")
-				.setLabel(">>")
-				.setID("last_page");
+			let firstPage, prevPage, nextPage, lastPage;
+			if (settings.buttonstyle === "classic") {
+				firstPage = new disbut.MessageButton()
+					.setStyle("grey")
+					.setEmoji("⏪")
+					.setID("first_page");
+				prevPage = new disbut.MessageButton()
+					.setStyle("grey")
+					.setEmoji("⬅️")
+					.setID("prev_page");
+				nextPage = new disbut.MessageButton()
+					.setStyle("grey")
+					.setEmoji("➡️")
+					.setID("next_page");
+				lastPage = new disbut.MessageButton()
+					.setStyle("grey")
+					.setEmoji("⏩")
+					.setID("last_page");
+			}
+			else {
+				firstPage = new disbut.MessageButton()
+					.setStyle("red")
+					.setLabel("<<")
+					.setID("first_page");
+				prevPage = new disbut.MessageButton()
+					.setStyle("blurple")
+					.setLabel("<")
+					.setID("prev_page");
+				nextPage = new disbut.MessageButton()
+					.setStyle("blurple")
+					.setLabel(">")
+					.setID("next_page");
+				lastPage = new disbut.MessageButton()
+					.setStyle("red")
+					.setLabel(">>")
+					.setID("last_page");
+			}
 
 			let infoScreen = new Discord.MessageEmbed()
 				.setColor("#34aeeb")
@@ -153,24 +175,44 @@ module.exports = {
 					else {
 						intervalString = "currently ending, no longer playable";
 					}
-	
-					firstPage = new disbut.MessageButton()
-						.setStyle("red")
-						.setLabel("<<")
-						.setID("first_page");
-					prevPage = new disbut.MessageButton()
-						.setStyle("blurple")
-						.setLabel("<")
-						.setID("prev_page");
-					nextPage = new disbut.MessageButton()
-						.setStyle("blurple")
-						.setLabel(">")
-						.setID("next_page");
-					lastPage = new disbut.MessageButton()
-						.setStyle("red")
-						.setLabel(">>")
-						.setID("last_page");
-	
+
+					if (settings.buttonstyle === "classic") {
+						firstPage = new disbut.MessageButton()
+							.setStyle("grey")
+							.setEmoji("⏪")
+							.setID("first_page");
+						prevPage = new disbut.MessageButton()
+							.setStyle("grey")
+							.setEmoji("⬅️")
+							.setID("prev_page");
+						nextPage = new disbut.MessageButton()
+							.setStyle("grey")
+							.setEmoji("➡️")
+							.setID("next_page");
+						lastPage = new disbut.MessageButton()
+							.setStyle("grey")
+							.setEmoji("⏩")
+							.setID("last_page");
+					}
+					else {
+						firstPage = new disbut.MessageButton()
+							.setStyle("red")
+							.setLabel("<<")
+							.setID("first_page");
+						prevPage = new disbut.MessageButton()
+							.setStyle("blurple")
+							.setLabel("<")
+							.setID("prev_page");
+						nextPage = new disbut.MessageButton()
+							.setStyle("blurple")
+							.setLabel(">")
+							.setID("next_page");
+						lastPage = new disbut.MessageButton()
+							.setStyle("red")
+							.setLabel(">>")
+							.setID("last_page");
+					}
+
 					infoScreen = new Discord.MessageEmbed()
 						.setColor("#34aeeb")
 						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -185,7 +227,7 @@ module.exports = {
 						)
 						.setFooter(`Interact with the buttons below to navigate through rounds.`)
 						.setTimestamp();
-	
+
 					switch (reactionIndex) {
 						case 0:
 							firstPage.setDisabled();

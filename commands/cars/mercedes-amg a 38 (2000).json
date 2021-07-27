@@ -12,19 +12,17 @@
     "tags": ["Hot Hatch", "Oddity", "Unique"],
     "isPrize": false,
 
-
     "weight": 1365,
     "gc": "Low",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
-    "enginePos": "Front",
+    "enginePos": "Mixed",
     "fuelType": "Petrol",
     "mra": 72.15,
     "ola": 77.19,
-    "description": "Conceived as a gift for Mika Häkkinen, but The crazy boffins at AMG deemed it an excellent idea to simply stick another engine in the rear, mounted under the boot floor like a Smart ForTwo. Card by Andu",
-
+    "description": "Conceived as a gift for Mika Häkkinen, but the crazy boffins at AMG deemed it an excellent idea to simply stick another engine in the rear, mounted under the boot floor like a Smart ForTwo. Card by Andu",
 
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/861972048104390666/A38.png",
     "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/861978612294090752/A38.png",

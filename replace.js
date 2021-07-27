@@ -11,7 +11,7 @@ __  ___  _______     ___      .__   __. .__   __. ____    ____
 
 const Discord = require("discord.js-light");
 const { Database } = require("quickmongo");
-const { prefix, token } = require("./config.json");
+const { token, mongoPassword } = require("./config.json");
 
 const client = new Discord.Client({
     cacheGuilds: true,
@@ -22,19 +22,19 @@ const client = new Discord.Client({
     cachePresences: false,
     fetchAllMembers: true
 });
-client.db = new Database("mongodb+srv://keanny:6x6IsBae@databaseclusterthing.as94y.mongodb.net/DatabaseClusterThing?retryWrites=true&w=majority");
+client.db = new Database(mongoPassword);
 
 client.once("ready", async () => {
     console.log("database replace mode initiated");
     const guild = client.guilds.cache.get("711769157078876305"); //don't mind me lmao
     guild.members.cache.forEach(async user => {
         const playerData = await client.db.get(`acc${user.id}`);
-        let i = 0;
-        while (i < playerData.garage.length) {
-            let hmm = playerData.garage[i].carFile;
-            playerData.garage[i].carFile = compare(hmm);
-            i++;
-        }
+        // let i = 0;
+        // while (i < playerData.garage.length) {
+        //     let hmm = playerData.garage[i].carFile;
+        //     playerData.garage[i].carFile = compare(hmm);
+        //     i++;
+        // }
         // playerData.decks.forEach(deck => {
         //     for (let x = 0; x < deck.hand.length; x++) {
         //         let oop = deck.hand[x];
@@ -46,9 +46,9 @@ client.once("ready", async () => {
         //     let uwu = playerData.hand.carFile;
         //     playerData.hand.carFile = compare(uwu);
         // }
-        // playerData.settings.unitpreference = "british";
-        // playerData.settings.sortingorder = "descending";
-        // console.log("options updated");
+        playerData.settings.buttonstyle = "default";
+        playerData.settings.shortenedlists = false;
+        console.log("options updated");
         await client.db.set(`acc${user.id}`, playerData);
     });
 

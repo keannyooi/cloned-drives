@@ -83,19 +83,36 @@ module.exports = {
 		const track = require(`./tracksets/${trackset}`);
 		const [playerCar, playerList] = createCar(player);
 		const [opponentCar, opponentList] = createCar(opponent);
+		let yse, nop, skip;
 
-		let yse = new disbut.MessageButton()
-			.setStyle("green")
-			.setLabel("I'm ready!")
-			.setID("yse");
-		let nop = new disbut.MessageButton()
-			.setStyle("red")
-			.setLabel("Hold on!")
-			.setID("nop");
-		let skip = new disbut.MessageButton()
-			.setStyle("blurple")
-			.setLabel("I give up. (Skips and resets streak)")
-			.setID("skip");
+		if (playerData.settings.buttonstyle === "classic") {
+			yse = new disbut.MessageButton()
+				.setStyle("grey")
+				.setEmoji("✅")
+				.setID("yse");
+			nop = new disbut.MessageButton()
+				.setStyle("grey")
+				.setEmoji("❎")
+				.setID("nop");
+			skip = new disbut.MessageButton()
+				.setStyle("grey")
+				.setEmoji("⏩")
+				.setID("skip");
+		}
+		else {
+			yse = new disbut.MessageButton()
+				.setStyle("green")
+				.setLabel("I'm ready!")
+				.setID("yse");
+			nop = new disbut.MessageButton()
+				.setStyle("red")
+				.setLabel("Hold on!")
+				.setID("nop");
+			skip = new disbut.MessageButton()
+				.setStyle("blurple")
+				.setLabel("I give up. (Skips and resets streak)")
+				.setID("skip");
+		}
 		let row = new disbut.MessageActionRow().addComponents(yse, nop, skip);
 
 		const intermission = new Discord.MessageEmbed()

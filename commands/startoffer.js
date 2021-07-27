@@ -93,23 +93,36 @@ module.exports = {
 		}
 
 		async function startOffer(offer, currentMessage) {
+			const settings = await db.get(`acc${message.author.id}.settings`);
 			const buttonFilter = (button) => {
 				return button.clicker.user.id === message.author.id;
 			};
-			let yse = new disbut.MessageButton()
-				.setStyle("green")
-				.setLabel("Yes!")
-				.setID("yse");
-			let nop = new disbut.MessageButton()
-				.setStyle("red")
-				.setLabel("No!")
-				.setID("nop");
+			let yse, nop;
+			if (settings.buttonstyle === "classic") {
+				yse = new disbut.MessageButton()
+					.setStyle("grey")
+					.setEmoji("✅")
+					.setID("yse");
+				nop = new disbut.MessageButton()
+					.setStyle("grey")
+					.setEmoji("❎")
+					.setID("nop");
+			}
+			else {
+				yse = new disbut.MessageButton()
+					.setStyle("green")
+					.setLabel("Yes!")
+					.setID("yse");
+				nop = new disbut.MessageButton()
+					.setStyle("red")
+					.setLabel("No!")
+					.setID("nop");
+			}
 			let row = new disbut.MessageActionRow().addComponents(yse, nop);
 			const confirmationMessage = new Discord.MessageEmbed()
 				.setColor("#34aeeb")
 				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
 				.setTitle(`Are you sure you want to start the ${offer.name} offer?`)
-				.setDescription("React with ✅ to proceed or ❎ to cancel.")
 				.setTimestamp();
 
 			let reactionMessage, processed = false;

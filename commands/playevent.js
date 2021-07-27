@@ -215,14 +215,27 @@ module.exports = {
 				const opponent = { carFile: event.roster[round - 1].car, gearingUpgrade: event.roster[round - 1].gearingUpgrade, engineUpgrade: event.roster[round - 1].engineUpgrade, chassisUpgrade: event.roster[round - 1].chassisUpgrade };
 				const [playerCar, playerList] = createCar(player);
 				const [opponentCar, opponentList] = createCar(opponent);
-				let yse = new disbut.MessageButton()
-					.setStyle("green")
-					.setLabel("I'm ready!")
-					.setID("yse");
-				let nop = new disbut.MessageButton()
-					.setStyle("red")
-					.setLabel("Hold on!")
-					.setID("nop");
+				let yse, nop;
+				if (playerData.settings.buttonstyle === "classic") {
+					yse = new disbut.MessageButton()
+						.setStyle("grey")
+						.setEmoji("✅")
+						.setID("yse");
+					nop = new disbut.MessageButton()
+						.setStyle("grey")
+						.setEmoji("❎")
+						.setID("nop");
+				}
+				else {
+					yse = new disbut.MessageButton()
+						.setStyle("green")
+						.setLabel("I'm ready!")
+						.setID("yse");
+					nop = new disbut.MessageButton()
+						.setStyle("red")
+						.setLabel("Hold on!")
+						.setID("nop");
+				}
 				let row = new disbut.MessageActionRow().addComponents(yse, nop);
 				const intermission = new Discord.MessageEmbed()
 					.setColor("#34aeeb")

@@ -20,17 +20,31 @@ module.exports = {
     async execute(message) {
         const db = message.client.db;
         const challenge = await db.get("challenge");
-        const filter = response => {
-            return response.author.id === message.author.id;
+        const settings = await db.get(`acc${message.author.id}.settings`);
+        const filter = (button) => {
+            return button.clicker.user.id === message.author.id;
         };
-        let yse = new disbut.MessageButton()
-            .setStyle("green")
-            .setLabel("Yes!")
-            .setID("yse");
-        let nop = new disbut.MessageButton()
-            .setStyle("red")
-            .setLabel("No!")
-            .setID("nop");
+        let yse, nop;
+        if (settings.buttonstyle === "classic") {
+            yse = new disbut.MessageButton()
+                .setStyle("grey")
+                .setEmoji("✅")
+                .setID("yse");
+            nop = new disbut.MessageButton()
+                .setStyle("grey")
+                .setEmoji("❎")
+                .setID("nop");
+        }
+        else {
+            yse = new disbut.MessageButton()
+                .setStyle("green")
+                .setLabel("Yes!")
+                .setID("yse");
+            nop = new disbut.MessageButton()
+                .setStyle("red")
+                .setLabel("No!")
+                .setID("nop");
+        }
         let row = new disbut.MessageActionRow().addComponents(yse, nop);
 
         const confirmationMessage = new Discord.MessageEmbed()

@@ -20,29 +20,42 @@ module.exports = {
     description: "Starts the inactive challenge.",
     async execute(message) {
         const db = message.client.db;
+        const settings = await db.get(`acc${message.author.id}.settings`);
         const challenge = await db.get("challenge");
         const buttonFilter = (button) => {
             return button.clicker.user.id === message.author.id;
         };
-        let yse = new disbut.MessageButton()
-            .setStyle("green")
-            .setLabel("Yes!")
-            .setID("yse");
-        let nop = new disbut.MessageButton()
-            .setStyle("red")
-            .setLabel("No!")
-            .setID("nop");
+        let yse, nop;
+        if (settings.buttonstyle === "classic") {
+            yse = new disbut.MessageButton()
+                .setStyle("grey")
+                .setEmoji("✅")
+                .setID("yse");
+            nop = new disbut.MessageButton()
+                .setStyle("grey")
+                .setEmoji("❎")
+                .setID("nop");
+        }
+        else {
+            yse = new disbut.MessageButton()
+                .setStyle("green")
+                .setLabel("Yes!")
+                .setID("yse");
+            nop = new disbut.MessageButton()
+                .setStyle("red")
+                .setLabel("No!")
+                .setID("nop");
+        }
         let row = new disbut.MessageActionRow().addComponents(yse, nop);
         const confirmationMessage = new Discord.MessageEmbed()
             .setColor("#34aeeb")
             .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
             .setTitle(`Are you sure you want to start the ${challenge.name} challenge?`)
-            .setDescription("React with ✅ to proceed or ❎ to cancel.")
             .setTimestamp();
         let reactionMessage = await message.channel.send({ embed: confirmationMessage, component: row }), processed = false;
 
         const collector = reactionMessage.createButtonCollector(buttonFilter, { time: 10000 });
-		collector.on("collect", async button => {
+        collector.on("collect", async button => {
             if (!processed) {
                 processed = true;
                 switch (button.id) {

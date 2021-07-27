@@ -12,7 +12,7 @@ const fs = require("fs");
 const Discord = require("discord.js-light");
 const disbut = require("discord-buttons");
 const { Database } = require("quickmongo");
-const { prefix, token } = require("./config.json");
+const { prefix, token, mongoPassword } = require("./config.json");
 const { DateTime, Interval } = require("luxon");
 const stringSimilarity = require("string-similarity");
 
@@ -28,7 +28,7 @@ const client = new Discord.Client({
 
 client.commands = new Discord.Collection();
 const cooldowns = new Discord.Collection();
-client.db = new Database("mongodb+srv://keanny:6x6IsBae@databaseclusterthing.as94y.mongodb.net/DatabaseClusterThing?retryWrites=true&w=majority");
+client.db = new Database(mongoPassword);
 client.execList = [];
 disbut(client);
 
@@ -101,7 +101,7 @@ client.once("ready", async () => {
 				decks: [],
 				campaignProgress: { chapter: 0, part: 1, race: 1 },
 				unclaimedRewards: { money: 0, fuseTokens: 0, trophies: 0, cars: [], packs: [] },
-				settings: { enablegraphics: true, senddailynotifs: false, filtercarlist: true, filtergarage: true, showbmcars: false, unitpreference: "british", sortingorder: "descending" }
+				settings: { enablegraphics: true, senddailynotifs: false, filtercarlist: true, filtergarage: true, showbmcars: false, unitpreference: "british", sortingorder: "descending", buttonstyle: "default", shortenedlists: false }
 			});
 			console.log(user.id);
 		}
@@ -282,7 +282,7 @@ client.on("guildMemberAdd", async member => {
 			decks: [],
 			campaignProgress: { chapter: 0, part: 1, race: 1 },
 			unclaimedRewards: { money: 0, fuseTokens: 0, trophies: 0, cars: [], packs: [] },
-			settings: { enablegraphics: true, senddailynotifs: false, filtercarlist: true, filtergarage: true, showbmcars: false, unitpreference: "british", sortingorder: "descending" }
+			settings: { enablegraphics: true, senddailynotifs: false, filtercarlist: true, filtergarage: true, showbmcars: false, unitpreference: "british", sortingorder: "descending", buttonstyle: "default", shortenedlists: false }
 		});
 		console.log(member.id);
 	}

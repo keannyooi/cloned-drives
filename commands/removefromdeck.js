@@ -130,14 +130,27 @@ module.exports = {
             const currentName = `${make} ${car["model"]} (${car["modelYear"]}) [${currentDeck.tunes[index - 1]}]`;
             const racehud = car[`racehud${currentDeck.tunes[index - 1]}`];
 
-            let yse = new disbut.MessageButton()
-                .setStyle("green")
-                .setLabel("Yes!")
-                .setID("yse");
-            let nop = new disbut.MessageButton()
-                .setStyle("red")
-                .setLabel("No!")
-                .setID("nop");
+            let yse, nop;
+            if (playerData.settings.buttonstyle === "classic") {
+                yse = new disbut.MessageButton()
+                    .setStyle("grey")
+                    .setEmoji("✅")
+                    .setID("yse");
+                nop = new disbut.MessageButton()
+                    .setStyle("grey")
+                    .setEmoji("❎")
+                    .setID("nop");
+            }
+            else {
+                yse = new disbut.MessageButton()
+                    .setStyle("green")
+                    .setLabel("Yes!")
+                    .setID("yse");
+                nop = new disbut.MessageButton()
+                    .setStyle("red")
+                    .setLabel("No!")
+                    .setID("nop");
+            }
             let row = new disbut.MessageActionRow().addComponents(yse, nop);
             const confirmationMessage = new Discord.MessageEmbed()
                 .setColor("#34aeeb")

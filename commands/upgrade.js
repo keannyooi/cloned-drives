@@ -248,14 +248,27 @@ module.exports = {
 			definePrice(car["rq"], upgrade, origUpgrade);
 
 			if (playerData.money >= moneyLimit && playerData.fuseTokens >= fuseTokenLimit) {
-				let yse = new disbut.MessageButton()
-					.setStyle("green")
-					.setLabel("Yes!")
-					.setID("yse");
-				let nop = new disbut.MessageButton()
-					.setStyle("red")
-					.setLabel("No!")
-					.setID("nop");
+				let yse, nop;
+				if (playerData.settings.buttonstyle === "classic") {
+					yse = new disbut.MessageButton()
+						.setStyle("grey")
+						.setEmoji("✅")
+						.setID("yse");
+					nop = new disbut.MessageButton()
+						.setStyle("grey")
+						.setEmoji("❎")
+						.setID("nop");
+				}
+				else {
+					yse = new disbut.MessageButton()
+						.setStyle("green")
+						.setLabel("Yes!")
+						.setID("yse");
+					nop = new disbut.MessageButton()
+						.setStyle("red")
+						.setLabel("No!")
+						.setID("nop");
+				}
 				let row = new disbut.MessageActionRow().addComponents(yse, nop);
 
 				const confirmationMessage = new Discord.MessageEmbed()
@@ -315,12 +328,7 @@ module.exports = {
 									.setImage(racehud)
 									.setTimestamp();
 								message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-								if (message.channel.type === "text") {
-									return reactionMessage.edit({ embed: infoScreen, component: null });
-								}
-								else {
-									return message.channel.send({ embed: infoScreen, component: null });
-								}
+								return reactionMessage.edit({ embed: infoScreen, component: null });
 							case "nop":
 								message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
 								const cancelMessage = new Discord.MessageEmbed()
@@ -330,12 +338,7 @@ module.exports = {
 									.setDescription(`Your ${currentName} stays in its original tune.`)
 									.setImage(car["card"])
 									.setTimestamp();
-								if (message.channel.type === "text") {
-									return reactionMessage.edit({ embed: cancelMessage, component: null });
-								}
-								else {
-									return message.channel.send({ embed: cancelMessage, component: null });
-								}
+								return reactionMessage.edit({ embed: cancelMessage, component: null });
 							default:
 								break;
 						}
@@ -351,12 +354,7 @@ module.exports = {
 							.setDescription(`Your ${currentName} stays in its original tune.`)
 							.setImage(car["card"])
 							.setTimestamp();
-						if (message.channel.type === "text") {
-							return reactionMessage.edit({ embed: cancelMessage, component: null });
-						}
-						else {
-							return message.channel.send({ embed: cancelMessage, component: null });
-						}
+						return reactionMessage.edit({ embed: cancelMessage, component: null });
 					}
 				});
 			}

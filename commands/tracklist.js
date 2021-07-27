@@ -24,6 +24,7 @@ module.exports = {
 		const filter = (button) => {
 			return button.clicker.user.id === message.author.id;
 		};
+		const settings = await db.get(`acc${message.author.id}.settings`);
         var trackList = "";
         var reactionIndex = 0;
         var page;
@@ -72,22 +73,43 @@ module.exports = {
         }
         trackDisplay(page);
 
-        let firstPage = new disbut.MessageButton()
-			.setStyle("red")
-			.setLabel("<<")
-			.setID("first_page");
-		let prevPage = new disbut.MessageButton()
-			.setStyle("blurple")
-			.setLabel("<")
-			.setID("prev_page");
-		let nextPage = new disbut.MessageButton()
-			.setStyle("blurple")
-			.setLabel(">")
-			.setID("next_page");
-		let lastPage = new disbut.MessageButton()
-			.setStyle("red")
-			.setLabel(">>")
-			.setID("last_page");
+        let firstPage, prevPage, nextPage, lastPage;
+		if (settings.buttonstyle === "classic") {
+			firstPage = new disbut.MessageButton()
+				.setStyle("grey")
+				.setEmoji("⏪")
+				.setID("first_page");
+			prevPage = new disbut.MessageButton()
+				.setStyle("grey")
+				.setEmoji("⬅️")
+				.setID("prev_page");
+			nextPage = new disbut.MessageButton()
+				.setStyle("grey")
+				.setEmoji("➡️")
+				.setID("next_page");
+			lastPage = new disbut.MessageButton()
+				.setStyle("grey")
+				.setEmoji("⏩")
+				.setID("last_page");
+		}
+		else {
+			firstPage = new disbut.MessageButton()
+				.setStyle("red")
+				.setLabel("<<")
+				.setID("first_page");
+			prevPage = new disbut.MessageButton()
+				.setStyle("blurple")
+				.setLabel("<")
+				.setID("prev_page");
+			nextPage = new disbut.MessageButton()
+				.setStyle("blurple")
+				.setLabel(">")
+				.setID("next_page");
+			lastPage = new disbut.MessageButton()
+				.setStyle("red")
+				.setLabel(">>")
+				.setID("last_page");
+		}
         let infoScreen = new Discord.MessageEmbed()
             .setColor("#34aeeb")
             .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
@@ -139,22 +161,42 @@ module.exports = {
 				}
 				trackDisplay(page);
 
-				firstPage = new disbut.MessageButton()
-					.setStyle("red")
-					.setLabel("<<")
-					.setID("first_page");
-				prevPage = new disbut.MessageButton()
-					.setStyle("blurple")
-					.setLabel("<")
-					.setID("prev_page");
-				nextPage = new disbut.MessageButton()
-					.setStyle("blurple")
-					.setLabel(">")
-					.setID("next_page");
-				lastPage = new disbut.MessageButton()
-					.setStyle("red")
-					.setLabel(">>")
-					.setID("last_page");
+				if (settings.buttonstyle === "classic") {
+					firstPage = new disbut.MessageButton()
+						.setStyle("grey")
+						.setEmoji("⏪")
+						.setID("first_page");
+					prevPage = new disbut.MessageButton()
+						.setStyle("grey")
+						.setEmoji("⬅️")
+						.setID("prev_page");
+					nextPage = new disbut.MessageButton()
+						.setStyle("grey")
+						.setEmoji("➡️")
+						.setID("next_page");
+					lastPage = new disbut.MessageButton()
+						.setStyle("grey")
+						.setEmoji("⏩")
+						.setID("last_page");
+				}
+				else {
+					firstPage = new disbut.MessageButton()
+						.setStyle("red")
+						.setLabel("<<")
+						.setID("first_page");
+					prevPage = new disbut.MessageButton()
+						.setStyle("blurple")
+						.setLabel("<")
+						.setID("prev_page");
+					nextPage = new disbut.MessageButton()
+						.setStyle("blurple")
+						.setLabel(">")
+						.setID("next_page");
+					lastPage = new disbut.MessageButton()
+						.setStyle("red")
+						.setLabel(">>")
+						.setID("last_page");
+				}
 
                     let infoScreen = new Discord.MessageEmbed()
                     .setColor("#34aeeb")
