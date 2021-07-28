@@ -11,7 +11,6 @@ __  ___  _______     ___      .__   __. .__   __. ____    ____
 
 const Discord = require("discord.js-light");
 const { Database } = require("quickmongo");
-const { token, mongoPassword } = require("./config.json");
 
 const client = new Discord.Client({
     cacheGuilds: true,
@@ -22,7 +21,7 @@ const client = new Discord.Client({
     cachePresences: false,
     fetchAllMembers: true
 });
-client.db = new Database(mongoPassword);
+client.db = new Database(process.env.MONGO_PW);
 
 client.once("ready", async () => {
     console.log("database replace mode initiated");
@@ -75,7 +74,7 @@ client.once("ready", async () => {
     client.user.setActivity("with database update code", { type: "PLAYING" });
 });
 
-client.login(token);
+client.login(process.env.BOT_TOKEN);
 
 function compare(carFile) {
     if (carFile === "toyota sienna xle awd (2009).json") {

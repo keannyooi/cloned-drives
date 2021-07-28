@@ -9,7 +9,7 @@
 
 const Discord = require("discord.js-light");
 const fs = require("fs");
-const { prefix } = require("../config.json");
+const prefix = process.env.PREFIX;
 const stringSimilarity = require("string-similarity");
 
 module.exports = {

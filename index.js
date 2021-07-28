@@ -7,29 +7,44 @@ __  ___  _______     ___      .__   __. .__   __. ____    ____
 |__|\__\ |_______/__/     \__\ |__| \__| |__| \__|     |__| 	(this is a watermark that proves that these lines of code are mine)
 */
 
-const backupMode = false;
+require("dotenv").config();
 const fs = require("fs");
-const Discord = require("discord.js-light");
+const Discord = require("discord.js");
 const disbut = require("discord-buttons");
 const { Database } = require("quickmongo");
-const { prefix, token, mongoPassword } = require("./config.json");
 const { DateTime, Interval } = require("luxon");
 const stringSimilarity = require("string-similarity");
 
-const client = new Discord.Client({
-	cacheGuilds: true,
-	cacheChannels: true,
-	cacheOverwrites: false,
-	cacheRoles: false,
-	cacheEmojis: true,
-	cachePresences: false,
-	fetchAllMembers: true
-});
+class ErrorMessage {
+	constructor(title, desc, received, checkArray) {
+		this.title = title;
+		this.desc = desc;
+		this.received = received;
+		this.checkArray = checkArray;
+	}
+	error(message) {
+		let errorMessage = new Discord.MessageEmbed()
+			.setColor("#fc0303")
+			.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+			.setTitle(`Error, ${this.title}`)
+			.setDescription(this.desc)
+			.setTimestamp();
+		if (this.received) {
+			errorMessage.addField("Value Received", `\`${this.received}\``, true);
+		}
+		if (this.checkArray) {
+			let matches = stringSimilarity.findBestMatch(this.received, this.checkArray);
+			errorMessage.addField("You may be looking for", `\`${matches.bestMatch.target}\``, true);
+		}
+		return errorMessage;
+	}
+}
 
+const client = new Discord.Client();
 client.commands = new Discord.Collection();
 const cooldowns = new Discord.Collection();
-client.db = new Database(mongoPassword);
-client.execList = [];
+client.db = new Database(process.env.MONGO_PW);
+client.execList = {};
 disbut(client);
 
 const commandFiles = fs.readdirSync("./commands").filter(file => file.endsWith(".js"));
@@ -80,7 +95,6 @@ const starterGarage = [
 		"699": 0
 	}
 ];
-const keepAlive = require("./server.js");
 
 for (const file of commandFiles) {
 	let command = require(`./commands/${file}`);
@@ -91,330 +105,24 @@ client.once("ready", async () => {
 	console.log("Bote Ready!");
 	const guild = client.guilds.cache.get("711769157078876305"); //don't mind me lmao
 	guild.members.cache.forEach(async user => {
-		if (await client.db.has(`acc${user.id}`) === false) {
-			console.log("creating new player's database...");
-			await client.db.set(`acc${user.id}`, {
-				money: 0,
-				fuseTokens: 0,
-				trophies: 0,
-				garage: starterGarage,
-				decks: [],
-				campaignProgress: { chapter: 0, part: 1, race: 1 },
-				unclaimedRewards: { money: 0, fuseTokens: 0, trophies: 0, cars: [], packs: [] },
-				settings: { enablegraphics: true, senddailynotifs: false, filtercarlist: true, filtergarage: true, showbmcars: false, unitpreference: "british", sortingorder: "descending", buttonstyle: "default", shortenedlists: false }
-			});
-			console.log(user.id);
-		}
+		await newUser(user);
 	});
-	//await client.db.set("limitedOffers", []);
 
 	client.user.setActivity("over everyone's garages", { type: "WATCHING" });
 });
 
-if (backupMode) {
-	keepAlive();
-}
-client.login(token);
+client.login(process.env.BOT_TOKEN);
 
-client.on("message", async message => {
-	if (!message.content.toLowerCase().startsWith(prefix) || message.author.bot) return;
-
-	const args = message.content.slice(prefix.length).split(/ +/);
-	const commandName = args.shift().toLowerCase();
-	const command = client.commands.get(commandName) || client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
-	if (!command) {
-		let matches = stringSimilarity.findBestMatch(commandName, commandFiles.map(i => i.slice(0, -3)));
-		const errorMessage = new Discord.MessageEmbed()
-			.setColor("#fc0303")
-			.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-			.setTitle("Error, 404 command not found.")
-			.setDescription("It looks like this command doesn't exist. Try using `cd-help` to find the command you are looking for.")
-			.addField("You may be looking for", `\`cd-${matches.bestMatch.target}\``)
-			.setTimestamp();
-		return message.channel.send(errorMessage);
-	}
-
-	if (command.category === "Admin") {
-		if (message.channel.type !== "text") {
-			const errorMessage = new Discord.MessageEmbed()
-				.setColor("#fc0303")
-				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-				.setTitle("Error, this command can only be executed in the Cloned Drives discord server.")
-				.setDescription("Link to Discord server: https://discord.gg/PHgPyed")
-				.setTimestamp();
-			return message.channel.send(errorMessage);
-		}
-		if (message.guild.id !== "711769157078876305") {
-			const errorMessage = new Discord.MessageEmbed()
-				.setColor("#fc0303")
-				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-				.setTitle("Error, this command can only be executed in the Cloned Drives discord server.")
-				.setDescription("Link to Discord server: https://discord.gg/PHgPyed")
-				.setTimestamp();
-			return message.channel.send(errorMessage);
-		}
-		if (!message.member.roles.cache.has("711790752853655563")) {
-			const errorMessage = new Discord.MessageEmbed()
-				.setColor("#fc0303")
-				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-				.setTitle("Error, it looks like you attempted using an Admin-only command.")
-				.setDescription("You don't have the <@&711790752853655563> role, which is required to use this command.")
-				.setTimestamp();
-			return message.channel.send(errorMessage);
-		}
-	}
-	if (command.category === "Community Management") {
-		if (message.channel.type !== "text") {
-			const errorMessage = new Discord.MessageEmbed()
-				.setColor("#fc0303")
-				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-				.setTitle("Error, this command can only be executed in the Cloned Drives discord server.")
-				.setDescription("Link to Discord server: https://discord.gg/PHgPyed")
-				.setTimestamp();
-			return message.channel.send(errorMessage);
-		}
-		if (message.guild.id !== "711769157078876305") {
-			const errorMessage = new Discord.MessageEmbed()
-				.setColor("#fc0303")
-				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-				.setTitle("Error, this command can only be executed in the Cloned Drives discord server.")
-				.setDescription("Link to Discord server: https://discord.gg/PHgPyed")
-				.setTimestamp();
-			return message.channel.send(errorMessage);
-		}
-		if (!message.member.roles.cache.has("802043346951340064")) {
-			const errorMessage = new Discord.MessageEmbed()
-				.setColor("#fc0303")
-				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-				.setTitle("Error, it looks like you attempted using a Community Management-only command.")
-				.setDescription("You don't have the <@&802043346951340064> role, which is required to use this command.")
-				.setTimestamp();
-			return message.channel.send(errorMessage);
-		}
-	}
-
-	if (command.args > 0 && args.length < command.args) {
-		let usage = command.usage;
-		const errorMessage = new Discord.MessageEmbed()
-			.setColor("#fc0303")
-			.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-			.setTitle("Error, arguments provided insufficient or missing.")
-			.setDescription(`Here's the correct syntax: \`${prefix}${command.name} ${usage}\``)
-			.setTimestamp();
-		return message.channel.send(errorMessage);
-	}
-	if (await client.db.has(`acc${message.author.id}`) === false) {
-		const errorMessage = new Discord.MessageEmbed()
-			.setColor("#fc0303")
-			.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-			.setTitle("Error, the bot has no record of you in the Cloned Drives discord server.")
-			.setDescription("Join the Discord server now to unlock access to the bot: https://discord.gg/PHgPyed")
-			.setTimestamp();
-		return message.channel.send(errorMessage);
-	}
-
-	if (!cooldowns.has(command.name)) {
-		cooldowns.set(command.name, new Discord.Collection());
-	}
-
-	const now = Date.now();
-	const timestamps = cooldowns.get(command.name);
-	const cooldownAmount = (command.cooldown || 1) * 1000;
-
-	if (timestamps.has(message.author.id)) {
-		const expTime = timestamps.get(message.author.id) + cooldownAmount;
-		if (now < expTime) {
-			const timeLeft = (expTime - now) / 1000;
-			const infoScreen = new Discord.MessageEmbed()
-				.setColor("#34aeeb")
-				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-				.setTitle("It looks like the cooldown for this command is not over yet.")
-				.setDescription(`Try again in ${Math.round(timeLeft) + 1} seconds!`)
-				.setTimestamp();
-			return message.channel.send(infoScreen);
-		}
-	}
-	timestamps.set(message.author.id, now);
-	setTimeout(() => timestamps.delete(message.author.id), cooldownAmount);
-
-	try {
-		if (client.execList.indexOf(message.author.id) < 0) {
-			//console.log(client.execList);
-			client.execList.push(message.author.id);
-			await command.execute(message, args);
-			setTimeout(() => {
-				if (client.execList.indexOf(message.author.id) < 0) {
-					client.execList = client.execList.splice([message.author.id], 1);
-				}
-			}, 30000);
-		}
-		else {
-			const errorMessage = new Discord.MessageEmbed()
-				.setColor("#fc0303")
-				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-				.setTitle("You may not execute more than 1 command at a time.")
-				.setDescription("Please wait patiently.")
-				.setTimestamp();
-			return message.channel.send(errorMessage);
-		}
-	}
-	catch (error) {
-		console.error(error);
-		client.execList.splice(client.execList.indexOf(message.author.id), 1);
-		const errorMessage = new Discord.MessageEmbed()
-			.setColor("#fc0303")
-			.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-			.setTitle("Error, failed to execute command.")
-			.setDescription(`Something must have gone wrong. Please report this issue to the devs. \n\`${error.stack}\``)
-			.setTimestamp();
-		return message.channel.send(errorMessage);
-	}
+client.on("message", message => {
+	processCommand(message);
 });
 
 client.on("guildMemberAdd", async member => {
-	if (await client.db.has(`acc${member.id}`) === false && member.guild.id === "711769157078876305") {
-		console.log("creating new player's database...");
-		await client.db.set(`acc${member.id}`, {
-			money: 0,
-			fuseTokens: 0,
-			trophies: 0,
-			garage: starterGarage,
-			decks: [],
-			campaignProgress: { chapter: 0, part: 1, race: 1 },
-			unclaimedRewards: { money: 0, fuseTokens: 0, trophies: 0, cars: [], packs: [] },
-			settings: { enablegraphics: true, senddailynotifs: false, filtercarlist: true, filtergarage: true, showbmcars: false, unitpreference: "british", sortingorder: "descending", buttonstyle: "default", shortenedlists: false }
-		});
-		console.log(member.id);
-	}
+	await newUser(member);
 });
 
-client.on("messageUpdate", async (oldMessage, newMessage) => {
-	if (!newMessage.content.startsWith(prefix) || newMessage.author.bot) return;
-
-	const args = newMessage.content.slice(prefix.length).split(/ +/);
-	const commandName = args.shift().toLowerCase();
-
-	const command = client.commands.get(commandName) || client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
-	if (!command) {
-		const errorMessage = new Discord.MessageEmbed()
-			.setColor("#fc0303")
-			.setAuthor(newMessage.author.tag, newMessage.author.displayAvatarURL({ format: "png", dynamic: true }))
-			.setTitle("Error, 404 command not found.")
-			.setDescription("It looks like this command doesn't exist. Try using `cd-help` to find the command you are looking for.")
-			.setTimestamp();
-		return newMessage.channel.send(errorMessage);
-	}
-	if (command.args && !args.length) {
-		let usage = command.usage;
-		if (usage === "(no arguments required)") {
-			const errorMessage = new Discord.MessageEmbed()
-				.setColor("#fc0303")
-				.setAuthor(newMessage.author.tag, newMessage.author.displayAvatarURL({ format: "png", dynamic: true }))
-				.setTitle("Error, no arguments provided.")
-				.setDescription(`Here's the correct syntax: \`${prefix}${command.name}\``)
-				.setTimestamp();
-			return newMessage.channel.send(errorMessage);
-		}
-		else {
-			const errorMessage = new Discord.MessageEmbed()
-				.setColor("#fc0303")
-				.setAuthor(newMessage.author.tag, newMessage.author.displayAvatarURL({ format: "png", dynamic: true }))
-				.setTitle("Error, no arguments provided.")
-				.setDescription(`Here's the correct syntax: \`${prefix}${command.name} ${usage}\``)
-				.setTimestamp();
-			return newMessage.channel.send(errorMessage);
-		}
-	}
-	if (command.category === "Admin") {
-		if (newMessage.channel.type !== "text") {
-			const errorMessage = new Discord.MessageEmbed()
-				.setColor("#fc0303")
-				.setAuthor(newMessage.author.tag, newMessage.author.displayAvatarURL({ format: "png", dynamic: true }))
-				.setTitle("Error, this command can only be executed in the Cloned Drives discord server.")
-				.setDescription("Link to Discord server: https://discord.gg/PHgPyed")
-				.setTimestamp();
-			return message.channel.send(errorMessage);
-		}
-		if (newMessage.guild.id !== "711769157078876305") {
-			const errorMessage = new Discord.MessageEmbed()
-				.setColor("#fc0303")
-				.setAuthor(newMessage.author.tag, newMessage.author.displayAvatarURL({ format: "png", dynamic: true }))
-				.setTitle("Error, this command can only be executed in the Cloned Drives discord server.")
-				.setDescription("Link to Discord server: https://discord.gg/PHgPyed")
-				.setTimestamp();
-			return newMessage.channel.send(errorMessage);
-		}
-		if (!newMessage.member.roles.cache.has("711790752853655563")) {
-			const errorMessage = new Discord.MessageEmbed()
-				.setColor("#fc0303")
-				.setAuthor(newMessage.author.tag, newMessage.author.displayAvatarURL({ format: "png", dynamic: true }))
-				.setTitle("Error, it looks like you attempted using an Admin-only command.")
-				.setDescription("You don't have the <@&711790752853655563> role, which is required to use this command.")
-				.setTimestamp();
-			return newMessage.channel.send(errorMessage);
-		}
-	}
-	if (command.category === "Community Management") {
-		if (newMessage.channel.type !== "text") {
-			const errorMessage = new Discord.MessageEmbed()
-				.setColor("#fc0303")
-				.setAuthor(newMessage.author.tag, newMessage.author.displayAvatarURL({ format: "png", dynamic: true }))
-				.setTitle("Error, this command can only be executed in the Cloned Drives discord server.")
-				.setDescription("Link to Discord server: https://discord.gg/PHgPyed")
-				.setTimestamp();
-			return newMessage.channel.send(errorMessage);
-		}
-		if (newMessage.guild.id !== "711769157078876305") {
-			const errorMessage = new Discord.MessageEmbed()
-				.setColor("#fc0303")
-				.setAuthor(newMessage.author.tag, newMessage.author.displayAvatarURL({ format: "png", dynamic: true }))
-				.setTitle("Error, this command can only be executed in the Cloned Drives discord server.")
-				.setDescription("Link to Discord server: https://discord.gg/PHgPyed")
-				.setTimestamp();
-			return newMessage.channel.send(errorMessage);
-		}
-		if (!newMessage.member.roles.cache.has("802043346951340064")) {
-			const errorMessage = new Discord.MessageEmbed()
-				.setColor("#fc0303")
-				.setAuthor(newMessage.author.tag, newMessage.author.displayAvatarURL({ format: "png", dynamic: true }))
-				.setTitle("Error, it looks like you attempted using a Community Management-only command.")
-				.setDescription("You don't have the <@&802043346951340064> role, which is required to use this command.")
-				.setTimestamp();
-			return newMessage.channel.send(errorMessage);
-		}
-	}
-
-	try {
-		if (client.execList.indexOf(newMessage.author.id) < 0) {
-			client.execList.push(newMessage.author.id);
-			await command.execute(newMessage, args);
-			setTimeout(() => {
-				if (client.execList.indexOf(newMessage.author.id) < 0) {
-					client.execList.splice([newMessage.author.id], 1);
-				}
-			}, 30000);
-		}
-		else {
-			const errorMessage = new Discord.MessageEmbed()
-				.setColor("#fc0303")
-				.setAuthor(newMessage.author.tag, newMessage.author.displayAvatarURL({ format: "png", dynamic: true }))
-				.setTitle("You may not execute more than 1 command at a time.")
-				.setDescription("Please wait patiently.")
-				.setTimestamp();
-			return newMessage.channel.send(errorMessage);
-		}
-	}
-	catch (error) {
-		console.error(error);
-		client.execList.splice(client.execList.indexOf(newMessage.author.id), 1);
-		const errorMessage = new Discord.MessageEmbed()
-			.setColor("#fc0303")
-			.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-			.setTitle("Error, failed to execute command.")
-			.setDescription(`Something must have gone wrong. Please report this issue to the devs. \n\`${error.stack}\``)
-			.setTimestamp();
-		return newMessage.channel.send(errorMessage);
-	}
+client.on("messageUpdate", (oldMessage, newMessage) => {
+	processCommand(newMessage);
 });
 
 //loop thingy
@@ -476,3 +184,159 @@ setInterval(async () => {
 		}
 	});
 }, 180000);
+
+function processCommand(message) {
+	if (!message.content.toLowerCase().startsWith(process.env.PREFIX) || message.author.bot) return;
+
+	const args = message.content.slice(process.env.PREFIX.length).split(/ +/);
+	const commandName = args.shift().toLowerCase();
+	const command = client.commands.get(commandName) || client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
+	if (!command) {
+		return notFound(message, commandName, commandFiles.map(i => i.slice(0, -3)));
+	}
+
+	checkPermissions(command, message.author);
+	if (command.args > 0 && args.length < command.args) {
+		return missingArgs(message, command.name, command.usage);
+	}
+	cooldown(message, command);
+	executeCommand(message, command, args);
+}
+
+async function newUser(user) {
+	if (await client.db.has(`acc${user.id}`) === false && user.guild.id === "711769157078876305") {
+		console.log("creating new player's database...");
+		await client.db.set(`acc${user.id}`, {
+			money: 0,
+			fuseTokens: 0,
+			trophies: 0,
+			garage: starterGarage,
+			decks: [],
+			campaignProgress: { chapter: 0, part: 1, race: 1 },
+			unclaimedRewards: { money: 0, fuseTokens: 0, trophies: 0, cars: [], packs: [] },
+			settings: { enablegraphics: true, senddailynotifs: false, filtercarlist: true, filtergarage: true, showbmcars: false, unitpreference: "british", sortingorder: "descending", buttonstyle: "default", shortenedlists: false }
+		});
+		console.log(user.id);
+	}
+}
+
+async function checkPermissions(command, message) {
+	if (await client.db.has(`acc${message.author.id}`) === false) {
+		return noRecord(message);
+	}
+	switch (command.category) {
+		case "Admin":
+			if (!message.member.roles.cache.has("711790752853655563")) {
+				return accessDenied(message, "711790752853655563");
+			}
+			break;
+		case "Community Management":
+			if (!message.member.roles.cache.has("802043346951340064")) {
+				return accessDenied(message, "802043346951340064");
+			}
+			break;
+		default:
+			break;
+	}
+}
+
+function cooldown(message, command) {
+	if (!cooldowns.has(command.name)) {
+		cooldowns.set(command.name, new Discord.Collection());
+	}
+
+	const now = Date.now();
+	const timestamps = cooldowns.get(command.name);
+	const cooldownAmount = (command.cooldown || 1) * 1000;
+
+	if (timestamps.has(message.author.id)) {
+		const expTime = timestamps.get(message.author.id) + cooldownAmount;
+		if (now < expTime) {
+			const timeLeft = (expTime - now) / 1000;
+			const infoScreen = new Discord.MessageEmbed()
+				.setColor("#34aeeb")
+				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+				.setTitle("It looks like the cooldown for this command is not over yet.")
+				.setDescription(`Try again in ${Math.round(timeLeft) + 1} seconds!`)
+				.setTimestamp();
+			return message.channel.send(infoScreen);
+		}
+	}
+	timestamps.set(message.author.id, now);
+	setTimeout(() => timestamps.delete(message.author.id), cooldownAmount);
+}
+
+async function executeCommand(message, command, args) {
+	try {
+		if (!client.execList[message.author.id]) {
+			client.execList[message.author.id] = command.name;
+			await command.execute(message, args);
+			setTimeout(() => {
+				if (client.execList[message.author.id]) {
+					delete client.execList[message.author.id];
+				}
+			}, 30000);
+		}
+		else {
+			return multiExec(message, client.execList[message.author.id]);
+		}
+	}
+	catch (error) {
+		return execFailed(message, error);
+	}
+}
+
+function notFound(message, command, commandList) {
+	const errorMessage = new ErrorMessage(
+		"404 command not found.",
+		"It looks like this command doesn't exist. Try using `cd-help` to find the command you are looking for.",
+		command,
+		commandList
+	)
+	console.log(errorMessage);
+	return message.channel.send(errorMessage.error(message));
+}
+
+function accessDenied(message, roleID) {
+	const errorMessage = new ErrorMessage(
+		"it looks like you dont have access to this command.",
+		`You don't have the <@&${roleID}> role, which is required to use this command.`
+	)
+	return message.channel.send(errorMessage.error(message));
+}
+
+function noRecord(message) {
+	const errorMessage = new ErrorMessage(
+		"the bot has no record of you in the Cloned Drives discord server.",
+		"Join the Discord server now to unlock access to the bot: https://discord.gg/PHgPyed"
+	)
+	return message.channel.send(errorMessage.error(message));
+}
+
+function missingArgs(message, commandName, usage) {
+	const errorMessage = new ErrorMessage(
+		"arguments provided insufficient or missing.",
+		`Here's the correct syntax: \`${process.env.PREFIX}${commandName} ${usage}\``,
+	)
+	return message.channel.send(errorMessage.error(message));
+}
+
+function multiExec(message, currentCommand) {
+	const errorMessage = new ErrorMessage(
+		"you may not execute more than 1 command at a time.",
+		`This will expire after the previous command has ended or after 30 seconds, whichever comes first. Please wait patiently.
+		Currenty Executing: \`cd-${currentCommand.name}\``,
+	)
+	return message.channel.send(errorMessage.error(message));
+}
+
+function execFailed(message, error) {
+	console.error(error);
+	delete client.execList[message.author.id];
+	const errorMessage = new ErrorMessage(
+		"failed to execute command.",
+		`Something must have gone wrong. Please report this issue to the devs.
+		\`${error.stack}\``,
+	)
+	return message.channel.send(errorMessage.error(message));
+}
