@@ -13,32 +13,7 @@ const Discord = require("discord.js");
 const disbut = require("discord-buttons");
 const { Database } = require("quickmongo");
 const { DateTime, Interval } = require("luxon");
-const stringSimilarity = require("string-similarity");
-
-class ErrorMessage {
-	constructor(title, desc, received, checkArray) {
-		this.title = title;
-		this.desc = desc;
-		this.received = received;
-		this.checkArray = checkArray;
-	}
-	error(message) {
-		let errorMessage = new Discord.MessageEmbed()
-			.setColor("#fc0303")
-			.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-			.setTitle(`Error, ${this.title}`)
-			.setDescription(this.desc)
-			.setTimestamp();
-		if (this.received) {
-			errorMessage.addField("Value Received", `\`${this.received}\``, true);
-		}
-		if (this.checkArray) {
-			let matches = stringSimilarity.findBestMatch(this.received, this.checkArray);
-			errorMessage.addField("You may be looking for", `\`${matches.bestMatch.target}\``, true);
-		}
-		return errorMessage;
-	}
-}
+const { ErrorMessage, InfoMessage } = require("./sharedstuff.js");
 
 const client = new Discord.Client();
 client.commands = new Discord.Collection();
@@ -46,6 +21,7 @@ const cooldowns = new Discord.Collection();
 client.db = new Database(process.env.MONGO_PW);
 client.execList = {};
 disbut(client);
+let awakenTime = 0;
 
 const commandFiles = fs.readdirSync("./commands").filter(file => file.endsWith(".js"));
 const starterGarage = [
@@ -103,6 +79,7 @@ for (const file of commandFiles) {
 
 client.once("ready", async () => {
 	console.log("Bote Ready!");
+	awakenTime = Date.now();
 	const guild = client.guilds.cache.get("711769157078876305"); //don't mind me lmao
 	guild.members.cache.forEach(async user => {
 		await newUser(user);
@@ -122,7 +99,9 @@ client.on("guildMemberAdd", async member => {
 });
 
 client.on("messageUpdate", (oldMessage, newMessage) => {
-	processCommand(newMessage);
+	if (awakenTime < oldMessage.createdTimestamp) {
+		processCommand(newMessage);
+	}
 });
 
 //loop thingy
@@ -195,12 +174,60 @@ function processCommand(message) {
 		return notFound(message, commandName, commandFiles.map(i => i.slice(0, -3)));
 	}
 
-	checkPermissions(command, message.author);
+	// if (await client.db.has(`acc${message.author.id}`) === false) {
+	// 	return noRecord(message);
+	// }
+	switch (command.category) {
+		case "Admin":
+			if (!message.member.roles.cache.has("711790752853655563")) {
+				return accessDenied(message, "711790752853655563");
+			}
+			break;
+		case "Community Management":
+			if (!message.member.roles.cache.has("802043346951340064")) {
+				return accessDenied(message, "802043346951340064");
+			}
+			break;
+		default:
+			break;
+	}
 	if (command.args > 0 && args.length < command.args) {
 		return missingArgs(message, command.name, command.usage);
 	}
-	cooldown(message, command);
-	executeCommand(message, command, args);
+
+	if (!cooldowns.has(command.name)) {
+		cooldowns.set(command.name, new Discord.Collection());
+	}
+	const now = Date.now();
+	const timestamps = cooldowns.get(command.name);
+	const cooldownAmount = (command.cooldown || 1) * 1000;
+
+	if (timestamps.has(message.author.id)) {
+		const expTime = timestamps.get(message.author.id) + cooldownAmount;
+		if (now < expTime) {
+			return cooldowned(message, (expTime - now) / 1000);
+		}
+	}
+	timestamps.set(message.author.id, now);
+	setTimeout(() => timestamps.delete(message.author.id), cooldownAmount);
+
+	try {
+		if (!client.execList[message.author.id]) {
+			client.execList[message.author.id] = command.name;
+			command.execute(message, args);
+			setTimeout(() => {
+				if (client.execList[message.author.id]) {
+					delete client.execList[message.author.id];
+				}
+			}, 30000);
+		}
+		else {
+			return multiExec(message, client.execList[message.author.id]);
+		}
+	}
+	catch (error) {
+		return execFailed(message, error);
+	}
 }
 
 async function newUser(user) {
@@ -220,72 +247,6 @@ async function newUser(user) {
 	}
 }
 
-async function checkPermissions(command, message) {
-	if (await client.db.has(`acc${message.author.id}`) === false) {
-		return noRecord(message);
-	}
-	switch (command.category) {
-		case "Admin":
-			if (!message.member.roles.cache.has("711790752853655563")) {
-				return accessDenied(message, "711790752853655563");
-			}
-			break;
-		case "Community Management":
-			if (!message.member.roles.cache.has("802043346951340064")) {
-				return accessDenied(message, "802043346951340064");
-			}
-			break;
-		default:
-			break;
-	}
-}
-
-function cooldown(message, command) {
-	if (!cooldowns.has(command.name)) {
-		cooldowns.set(command.name, new Discord.Collection());
-	}
-
-	const now = Date.now();
-	const timestamps = cooldowns.get(command.name);
-	const cooldownAmount = (command.cooldown || 1) * 1000;
-
-	if (timestamps.has(message.author.id)) {
-		const expTime = timestamps.get(message.author.id) + cooldownAmount;
-		if (now < expTime) {
-			const timeLeft = (expTime - now) / 1000;
-			const infoScreen = new Discord.MessageEmbed()
-				.setColor("#34aeeb")
-				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-				.setTitle("It looks like the cooldown for this command is not over yet.")
-				.setDescription(`Try again in ${Math.round(timeLeft) + 1} seconds!`)
-				.setTimestamp();
-			return message.channel.send(infoScreen);
-		}
-	}
-	timestamps.set(message.author.id, now);
-	setTimeout(() => timestamps.delete(message.author.id), cooldownAmount);
-}
-
-async function executeCommand(message, command, args) {
-	try {
-		if (!client.execList[message.author.id]) {
-			client.execList[message.author.id] = command.name;
-			await command.execute(message, args);
-			setTimeout(() => {
-				if (client.execList[message.author.id]) {
-					delete client.execList[message.author.id];
-				}
-			}, 30000);
-		}
-		else {
-			return multiExec(message, client.execList[message.author.id]);
-		}
-	}
-	catch (error) {
-		return execFailed(message, error);
-	}
-}
-
 function notFound(message, command, commandList) {
 	const errorMessage = new ErrorMessage(
 		"404 command not found.",
@@ -293,8 +254,7 @@ function notFound(message, command, commandList) {
 		command,
 		commandList
 	)
-	console.log(errorMessage);
-	return message.channel.send(errorMessage.error(message));
+	return message.channel.send(errorMessage.create(message));
 }
 
 function accessDenied(message, roleID) {
@@ -302,7 +262,7 @@ function accessDenied(message, roleID) {
 		"it looks like you dont have access to this command.",
 		`You don't have the <@&${roleID}> role, which is required to use this command.`
 	)
-	return message.channel.send(errorMessage.error(message));
+	return message.channel.send(errorMessage.create(message));
 }
 
 function noRecord(message) {
@@ -310,7 +270,7 @@ function noRecord(message) {
 		"the bot has no record of you in the Cloned Drives discord server.",
 		"Join the Discord server now to unlock access to the bot: https://discord.gg/PHgPyed"
 	)
-	return message.channel.send(errorMessage.error(message));
+	return message.channel.send(errorMessage.create(message));
 }
 
 function missingArgs(message, commandName, usage) {
@@ -318,25 +278,31 @@ function missingArgs(message, commandName, usage) {
 		"arguments provided insufficient or missing.",
 		`Here's the correct syntax: \`${process.env.PREFIX}${commandName} ${usage}\``,
 	)
-	return message.channel.send(errorMessage.error(message));
+	return message.channel.send(errorMessage.create(message));
+}
+
+function cooldowned(message, timeLeft) {
+	const infoMessage = new InfoMessage(
+		"It looks like the cooldown for this command is not over yet.",
+		`Try again in ${Math.round(timeLeft) + 1} seconds!`
+	)
+	return message.channel.send(infoMessage.create(message));
 }
 
 function multiExec(message, currentCommand) {
 	const errorMessage = new ErrorMessage(
 		"you may not execute more than 1 command at a time.",
-		`This will expire after the previous command has ended or after 30 seconds, whichever comes first. Please wait patiently.
-		Currenty Executing: \`cd-${currentCommand.name}\``,
+		"This will expire after the previous command has ended or after 30 seconds, whichever comes first. Please wait patiently.",
 	)
-	return message.channel.send(errorMessage.error(message));
+	return message.channel.send(errorMessage.create(message).addField("Currenty Executing", `\`cd-${currentCommand}\``));
 }
 
 function execFailed(message, error) {
 	console.error(error);
-	delete client.execList[message.author.id];
 	const errorMessage = new ErrorMessage(
 		"failed to execute command.",
 		`Something must have gone wrong. Please report this issue to the devs.
-		\`${error.stack}\``,
+		\`${error.stack}\``
 	)
-	return message.channel.send(errorMessage.error(message));
+	return message.channel.send(errorMessage.create(message, true));
 }

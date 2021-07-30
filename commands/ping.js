@@ -13,10 +13,10 @@ module.exports = {
     args: 0,
 	category: "Miscellaneous",
     description: "Shows the current bot and API latency.",
-    async execute(message) {
+    execute(message) {
         message.channel.send(`bruh y u ping me
-anyway latency = \`${Date.now() - message.createdTimestamp}ms\` while api latency = \`${Math.round(message.client.ws.ping)}ms\`
+anyway latency = \`${Date.now() - (message.editedTimestamp || message.createdTimestamp)}ms\` while api latency = \`${Math.round(message.client.ws.ping)}ms\`
 		`);
-		message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+		delete message.client.execList[message.author.id];
     }
 }
