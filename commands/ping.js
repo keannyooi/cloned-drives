@@ -6,17 +6,14 @@
 |  .  \  |  |____ /  _____  \  |  |\   | |  |\   |     |  |     
 |__|\__\ |_______/__/     \__\ |__| \__| |__| \__|     |__| 	(this is a watermark that proves that these lines of code are mine)
 */
-
 module.exports = {
     name: "ping",
     usage: "(no arguments required)",
     args: 0,
-	category: "Miscellaneous",
+    category: "Miscellaneous",
     description: "Shows the current bot and API latency.",
     async execute(message) {
-        message.channel.send(`bruh y u ping me
-anyway latency = \`${Date.now() - message.createdTimestamp}ms\` while api latency = \`${Math.round(message.client.ws.ping)}ms\`
-		`);
-		message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+        message.channel.send(`bruh y u ping me. Anyway latency = \`${Date.now() - message.createdTimestamp}ms\` While api latency = \`${Math.round(message.client.ws.ping)}\``)
+        message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
     }
 }

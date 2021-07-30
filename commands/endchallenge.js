@@ -6,7 +6,6 @@
 |  .  \  |  |____ /  _____  \  |  |\   | |  |\   |     |  |     
 |__|\__\ |_______/__/     \__\ |__| \__| |__| \__|     |__| 	(this is a watermark that proves that these lines of code are mine)
 */
-
 const Discord = require("discord.js-light");
 const disbut = require("discord-buttons");
 
@@ -34,8 +33,7 @@ module.exports = {
                 .setStyle("grey")
                 .setEmoji("❎")
                 .setID("nop");
-        }
-        else {
+        } else {
             yse = new disbut.MessageButton()
                 .setStyle("green")
                 .setLabel("Yes!")
@@ -49,12 +47,20 @@ module.exports = {
 
         const confirmationMessage = new Discord.MessageEmbed()
             .setColor("#34aeeb")
-            .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+            .setAuthor(message.author.tag, message.author.displayAvatarURL({
+                format: "png",
+                dynamic: true
+            }))
             .setTitle(`Are you sure you want to end the ${challenge.name} challenge?`)
             .setTimestamp();
         let processed = false;
-        await message.channel.send({ embed: confirmationMessage, component: row }).then(reactionMessage => {
-            const collector = reactionMessage.createButtonCollector(filter, { time: 10000 });
+        await message.channel.send({
+            embed: confirmationMessage,
+            component: row
+        }).then(reactionMessage => {
+            const collector = reactionMessage.createButtonCollector(filter, {
+                time: 10000
+            });
             collector.on("collect", async button => {
                 if (!processed) {
                     processed = true;
@@ -73,19 +79,31 @@ module.exports = {
 
                             const infoScreen = new Discord.MessageEmbed()
                                 .setColor("#34aeeb")
-                                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                                .setAuthor(message.author.tag, message.author.displayAvatarURL({
+                                    format: "png",
+                                    dynamic: true
+                                }))
                                 .setTitle(`Successfully ended the ${challenge.name} challenge!`)
                                 .setTimestamp();
-                            return reactionMessage.edit({ embed: infoScreen, component: null });
+                            return reactionMessage.edit({
+                                embed: infoScreen,
+                                component: null
+                            });
                         case "nop":
                             await button.reply.defer();
                             message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                             const cancelMessage = new Discord.MessageEmbed()
                                 .setColor("#34aeeb")
-                                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                                .setAuthor(message.author.tag, message.author.displayAvatarURL({
+                                    format: "png",
+                                    dynamic: true
+                                }))
                                 .setTitle("Action cancelled.")
                                 .setTimestamp();
-                            return reactionMessage.edit({ embed: cancelMessage, component: null });
+                            return reactionMessage.edit({
+                                embed: cancelMessage,
+                                component: null
+                            });
                         default:
                             break;
                     }
@@ -96,10 +114,16 @@ module.exports = {
                     message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                     const cancelMessage = new Discord.MessageEmbed()
                         .setColor("#34aeeb")
-                        .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                        .setAuthor(message.author.tag, message.author.displayAvatarURL({
+                            format: "png",
+                            dynamic: true
+                        }))
                         .setTitle("Action cancelled automatically.")
                         .setTimestamp();
-                    return reactionMessage.edit({ embed: cancelMessage, component: null });
+                    return reactionMessage.edit({
+                        embed: cancelMessage,
+                        component: null
+                    });
                 }
             });
         });

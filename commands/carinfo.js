@@ -6,249 +6,300 @@
 |  .  \  |  |____ /  _____  \  |  |\   | |  |\   |     |  |     
 |__|\__\ |_______/__/     \__\ |__| \__| |__| \__|     |__| 	(this is a watermark that proves that these lines of code are mine)
 */
-
 const Discord = require("discord.js-light");
 const fs = require("fs");
 const carFiles = fs.readdirSync("./commands/cars").filter(file => file.endsWith('.json'));
 const stringSimilarity = require("string-similarity");
 
 module.exports = {
-	name: "carinfo",
-	aliases: ["cinfo"],
-	usage: "<car name goes here>",
-	args: 1,
-	category: "Info",
-	description: "Shows info about a specified car.",
-	execute(message, args) {
-		const waitTime = 60000;
-		const filter = response => {
-			return response.author.id === message.author.id;
-		};
+    name: "carinfo",
+    aliases: ["cinfo"],
+    usage: "<car name goes here>",
+    args: 1,
+    category: "Info",
+    description: "Shows info about a specified car.",
+    execute(message, args) {
+        const waitTime = 60000;
+        const filter = response => {
+            return response.author.id === message.author.id;
+        };
 
-		if (args[0].toLowerCase() === "random") {
-			displayInfo(carFiles[Math.floor(Math.random() * carFiles.length)]);
-		}
-		else {
-			let carName = args.map(i => i.toLowerCase());
-			const searchResults = carFiles.filter(function (carFile) {
-				return carName.every(part => carFile.includes(part));
-			});
+        if (args[0].toLowerCase() === "random") {
+            displayInfo(carFiles[Math.floor(Math.random() * carFiles.length)]);
+        } else {
+            let carName = args.map(i => i.toLowerCase());
+            const searchResults = carFiles.filter(function(carFile) {
+                return carName.every(part => carFile.includes(part));
+            });
 
-			if (searchResults.length > 1) {
-				let carList = "";
-				for (i = 1; i <= searchResults.length; i++) {
-					let car = require(`./cars/${searchResults[i - 1]}`);
-					let make = car["make"];
-					if (typeof make === "object") {
-						make = car["make"][0];
-					}
-					carList += `${i} - ${make} ${car["model"]} (${car["modelYear"]})\n`;
-				}
+            if (searchResults.length > 1) {
+                let carList = "";
+                for (i = 1; i <= searchResults.length; i++) {
+                    let car = require(`./cars/${searchResults[i - 1]}`);
+                    let make = car["make"];
+                    if (typeof make === "object") {
+                        make = car["make"][0];
+                    }
+                    carList += `${i} - ${make} ${car["model"]} (${car["modelYear"]})\n`;
+                }
 
-				if (carList.length > 2048) {
-					message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-					const errorMessage = new Discord.MessageEmbed()
-						.setColor("#fc0303")
-						.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-						.setTitle("Error, too many search results.")
-						.setDescription("Due to Discord's embed limitations, the bot isn't able to show the full list of search results. Try again with a more specific keyword.")
-						.addField("Total Characters in List", `\`${carList.length}\` > \`2048\``)
-						.setTimestamp();
-					return message.channel.send(errorMessage);
-				}
+                if (carList.length > 2048) {
+                    message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+                    const errorMessage = new Discord.MessageEmbed()
+                        .setColor("#fc0303")
+                        .setAuthor(message.author.tag, message.author.displayAvatarURL({
+                            format: "png",
+                            dynamic: true
+                        }))
+                        .setTitle("Error, too many search results.")
+                        .setDescription("Due to Discord's embed limitations, the bot isn't able to show the full list of search results. Try again with a more specific keyword.")
+                        .addField("Total Characters in List", `\`${carList.length}\` > \`2048\``)
+                        .setTimestamp();
+                    return message.channel.send(errorMessage);
+                }
 
-				const infoScreen = new Discord.MessageEmbed()
-					.setColor("#34aeeb")
-					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-					.setTitle("Multiple cars found, please type one of the following.")
-					.setDescription(carList)
-					.setTimestamp();
+                const infoScreen = new Discord.MessageEmbed()
+                    .setColor("#34aeeb")
+                    .setAuthor(message.author.tag, message.author.displayAvatarURL({
+                        format: "png",
+                        dynamic: true
+                    }))
+                    .setTitle("Multiple cars found, please type one of the following.")
+                    .setDescription(carList)
+                    .setTimestamp();
 
-				message.channel.send(infoScreen).then(currentMessage => {
-					message.channel.awaitMessages(filter, {
-						max: 1,
-						time: waitTime,
-						errors: ["time"]
-					})
-						.then(collected => {
-							collected.first().delete();
-							if (isNaN(collected.first().content) || parseInt(collected.first().content) > searchResults.length || parseInt(collected.first().content) < 1) {
-								message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-								const errorMessage = new Discord.MessageEmbed()
-									.setColor("#fc0303")
-									.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-									.setTitle("Error, invalid integer provided.")
-									.setDescription("It looks like your response was either not a number or not part of the selection.")
-									.addField("Number Received", `\`${collected.first().content}\` (either not a number, smaller than 1 or bigger than ${searchResults.length})`)
-									.setTimestamp();
-								return currentMessage.edit(errorMessage);
-							}
-							else {
-								displayInfo(searchResults[parseInt(collected.first().content) - 1], currentMessage);
-							}
-						})
-						.catch(() => {
-							message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-							const cancelMessage = new Discord.MessageEmbed()
-								.setColor("#34aeeb")
-								.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-								.setTitle("Action cancelled automatically.")
-								.setTimestamp();
-							return currentMessage.edit(cancelMessage);
-						});
-				});
-			}
-			else if (searchResults.length > 0) {
-				displayInfo(searchResults[0]);
-			}
-			else {
-				let matches = stringSimilarity.findBestMatch(carName.join(" "), carFiles.map(i => i.slice(0, -5)));
-				message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-				const errorMessage = new Discord.MessageEmbed()
-					.setColor("#fc0303")
-					.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-					.setTitle("Error, car requested not found.")
-					.setDescription("Well that sucks.")
-					.addField("Keywords Received", `\`${carName.join(" ")}\``, true)
-					.addField("You may be looking for", `\`${matches.bestMatch.target}\``, true)
-					.setTimestamp();
-				return message.channel.send(errorMessage);
-			}
-		}
+                message.channel.send(infoScreen).then(currentMessage => {
+                    message.channel.awaitMessages(filter, {
+                            max: 1,
+                            time: waitTime,
+                            errors: ["time"]
+                        })
+                        .then(collected => {
+                            collected.first().delete();
+                            if (isNaN(collected.first().content) || parseInt(collected.first().content) > searchResults.length || parseInt(collected.first().content) < 1) {
+                                message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+                                const errorMessage = new Discord.MessageEmbed()
+                                    .setColor("#fc0303")
+                                    .setAuthor(message.author.tag, message.author.displayAvatarURL({
+                                        format: "png",
+                                        dynamic: true
+                                    }))
+                                    .setTitle("Error, invalid integer provided.")
+                                    .setDescription("It looks like your response was either not a number or not part of the selection.")
+                                    .addField("Number Received", `\`${collected.first().content}\` (either not a number, smaller than 1 or bigger than ${searchResults.length})`)
+                                    .setTimestamp();
+                                return currentMessage.edit(errorMessage);
+                            } else {
+                                displayInfo(searchResults[parseInt(collected.first().content) - 1], currentMessage);
+                            }
+                        })
+                        .catch(() => {
+                            message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+                            const cancelMessage = new Discord.MessageEmbed()
+                                .setColor("#34aeeb")
+                                .setAuthor(message.author.tag, message.author.displayAvatarURL({
+                                    format: "png",
+                                    dynamic: true
+                                }))
+                                .setTitle("Action cancelled automatically.")
+                                .setTimestamp();
+                            return currentMessage.edit(cancelMessage);
+                        });
+                });
+            } else if (searchResults.length > 0) {
+                displayInfo(searchResults[0]);
+            } else {
+                let matches = stringSimilarity.findBestMatch(carName.join(" "), carFiles.map(i => i.slice(0, -5)));
+                message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+                const errorMessage = new Discord.MessageEmbed()
+                    .setColor("#fc0303")
+                    .setAuthor(message.author.tag, message.author.displayAvatarURL({
+                        format: "png",
+                        dynamic: true
+                    }))
+                    .setTitle("Error, car requested not found.")
+                    .setDescription("Well that sucks.")
+                    .addField("Keywords Received", `\`${carName.join(" ")}\``, true)
+                    .addField("You may be looking for", `\`${matches.bestMatch.target}\``, true)
+                    .setTimestamp();
+                return message.channel.send(errorMessage);
+            }
+        }
 
-		async function displayInfo(car, currentMessage) {
-			const playerData = await message.client.db.get(`acc${message.author.id}`);
-			const trophyEmoji = message.client.emojis.cache.get("775636479145148418");
-			let garage = playerData.garage;
-			let currentCar = require(`./cars/${car}`);
+        async function displayInfo(car, currentMessage) {
+            const playerData = await message.client.db.get(`acc${message.author.id}`);
+            const trophyEmoji = message.client.emojis.cache.get("775636479145148418");
+            let garage = playerData.garage;
+            let currentCar = require(`./cars/${car}`);
 
-			let rarity;
-			if (currentCar["rq"] > 79) { //leggie
-				rarity = message.client.emojis.cache.get("857512942471479337");
-			}
-			else if (currentCar["rq"] > 64 && currentCar["rq"] <= 79) { //epic
-				rarity = message.client.emojis.cache.get("726025468230238268");
-			}
-			else if (currentCar["rq"] > 49 && currentCar["rq"] <= 64) { //ultra
-				rarity = message.client.emojis.cache.get("726025431937187850");
-			}
-			else if (currentCar["rq"] > 39 && currentCar["rq"] <= 49) { //super
-				rarity = message.client.emojis.cache.get("857513197937623042");
-			}
-			else if (currentCar["rq"] > 29 && currentCar["rq"] <= 39) { //rare
-				rarity = message.client.emojis.cache.get("726025302656024586");
-			}
-			else if (currentCar["rq"] > 19 && currentCar["rq"] <= 29) { //uncommon
-				rarity = message.client.emojis.cache.get("726025273421725756");
-			}
-			else { //common
-				rarity = message.client.emojis.cache.get("726020544264273928");
-			}
+            let rarity;
+            if (currentCar["rq"] > 79) { //leggie
+                rarity = message.client.emojis.cache.get("857512942471479337");
+            } else if (currentCar["rq"] > 64 && currentCar["rq"] <= 79) { //epic
+                rarity = message.client.emojis.cache.get("726025468230238268");
+            } else if (currentCar["rq"] > 49 && currentCar["rq"] <= 64) { //ultra
+                rarity = message.client.emojis.cache.get("726025431937187850");
+            } else if (currentCar["rq"] > 39 && currentCar["rq"] <= 49) { //super
+                rarity = message.client.emojis.cache.get("857513197937623042");
+            } else if (currentCar["rq"] > 29 && currentCar["rq"] <= 39) { //rare
+                rarity = message.client.emojis.cache.get("726025302656024586");
+            } else if (currentCar["rq"] > 19 && currentCar["rq"] <= 29) { //uncommon
+                rarity = message.client.emojis.cache.get("726025273421725756");
+            } else { //common
+                rarity = message.client.emojis.cache.get("726020544264273928");
+            }
 
-			let tags = "", description, mra, ola, topSpeed, accel, weight;
-			if (currentCar["tags"].length > 0) {
-				tags = currentCar["tags"].join(", ");
-			}
-			else {
-				tags = "None";
-			}
-			if (currentCar["description"].length > 0) {
-				description = currentCar["description"];
-			}
-			else {
-				description = "None";
-			}
-			if (currentCar["topSpeed"] >= 100) {
-				mra = currentCar["mra"];
-			}
-			else {
-				mra = "N/A";
-			}
-			if (currentCar["topSpeed"] >= 60) {
-				if (playerData.settings.unitpreference === "metric") {
-					accel = `${currentCar["0to60"]} (${(currentCar["0to60"] * 1.036).toFixed(1)})`;
-				}
-				else {
-					accel = currentCar["0to60"];
-				}
-			}
-			else {
-				accel = "N/A";
-			}
-			if (currentCar["topSpeed"] >= 30) {
-				ola = currentCar["ola"];
-			}
-			else {
-				ola = "N/A";
-			}
-			if (playerData.settings.unitpreference === "metric") {
-				topSpeed = `${currentCar["topSpeed"]}MPH (${Math.round(currentCar["topSpeed"] * 1.60934)}KM/H)`;
-				weight = `${currentCar["weight"]}kg`;
-			}
-			else if (playerData.settings.unitpreference === "imperial") {
-				topSpeed = `${currentCar["topSpeed"]}MPH`;
-				weight = `${currentCar["weight"]}kg (${Math.round(currentCar["weight"] * 2.20462262185)}lbs)`;
-			}
-			else {
-				topSpeed = `${currentCar["topSpeed"]}MPH`;
-				weight = `${currentCar["weight"]}kg`;
-			}
+            let tags = "",
+                description, mra, ola, topSpeed, accel, weight;
+            if (currentCar["tags"].length > 0) {
+                tags = currentCar["tags"].join(", ");
+            } else {
+                tags = "None";
+            }
+            if (currentCar["description"].length > 0) {
+                description = currentCar["description"];
+            } else {
+                description = "None";
+            }
+            if (currentCar["topSpeed"] >= 100) {
+                mra = currentCar["mra"];
+            } else {
+                mra = "N/A";
+            }
+            if (currentCar["topSpeed"] >= 60) {
+                if (playerData.settings.unitpreference === "metric") {
+                    accel = `${currentCar["0to60"]} (${(currentCar["0to60"] * 1.036).toFixed(1)})`;
+                } else {
+                    accel = currentCar["0to60"];
+                }
+            } else {
+                accel = "N/A";
+            }
+            if (currentCar["topSpeed"] >= 30) {
+                ola = currentCar["ola"];
+            } else {
+                ola = "N/A";
+            }
+            if (playerData.settings.unitpreference === "metric") {
+                topSpeed = `${currentCar["topSpeed"]}MPH (${Math.round(currentCar["topSpeed"] * 1.60934)}KM/H)`;
+                weight = `${currentCar["weight"]}kg`;
+            } else if (playerData.settings.unitpreference === "imperial") {
+                topSpeed = `${currentCar["topSpeed"]}MPH`;
+                weight = `${currentCar["weight"]}kg (${Math.round(currentCar["weight"] * 2.20462262185)}lbs)`;
+            } else {
+                topSpeed = `${currentCar["topSpeed"]}MPH`;
+                weight = `${currentCar["weight"]}kg`;
+            }
 
-			let make = currentCar["make"];
-			if (typeof make === "object") {
-				make = currentCar["make"][0];
-			}
-			let currentName = `${make} ${currentCar["model"]} (${currentCar["modelYear"]})`;
-			if (currentCar["isPrize"]) {
-				currentName += ` ${trophyEmoji}`;
-			}
-			const infoScreen = new Discord.MessageEmbed()
-				.setColor("#34aeeb")
-				.setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-				.setTitle(`(${rarity} ${currentCar["rq"]}) ${currentName}`)
-				.setDescription("Stats of requested car:")
-				.addFields(
-					{ name: "Top Speed", value: topSpeed, inline: true },
-					{ name: "0-60MPH (0-100KM/H)", value: accel, inline: true },
-					{ name: "Handling", value: currentCar["handling"], inline: true },
-					{ name: "Drive Type", value: currentCar["driveType"], inline: true },
-					{ name: "Tyre Type", value: currentCar["tyreType"], inline: true },
-					{ name: "Weight", value: weight, inline: true },
-					{ name: "Ground Clearance", value: currentCar["gc"], inline: true },
-					{ name: "Seat Count", value: currentCar["seatCount"], inline: true },
-					{ name: "Body Style", value: currentCar["bodyStyle"], inline: true },
-					{ name: "Engine Position", value: currentCar["enginePos"], inline: true },
-					{ name: "Fuel Type", value: currentCar["fuelType"], inline: true },
-					{ name: "TCS Enabled?", value: currentCar["tcs"], inline: true },
-					{ name: "ABS Enabled?", value: currentCar["abs"], inline: true },
-					{ name: "Tags", value: tags, inline: true },
-					{ name: "Black Market Collection", value: currentCar["bmCollection"] || "None", inline: true },
-					{ name: "Mid-Range Acceleration (MRA)", value: mra, inline: true },
-					{ name: "Off-the-Line Acceleration (OLA)", value: ola, inline: true },
-					{ name: "Description", value: description }
-				)
-				.setImage(currentCar["card"])
-				.setTimestamp();
+            let make = currentCar["make"];
+            if (typeof make === "object") {
+                make = currentCar["make"][0];
+            }
+            let currentName = `${make} ${currentCar["model"]} (${currentCar["modelYear"]})`;
+            if (currentCar["isPrize"]) {
+                currentName += ` ${trophyEmoji}`;
+            }
+            const infoScreen = new Discord.MessageEmbed()
+                .setColor("#34aeeb")
+                .setAuthor(message.author.tag, message.author.displayAvatarURL({
+                    format: "png",
+                    dynamic: true
+                }))
+                .setTitle(`(${rarity} ${currentCar["rq"]}) ${currentName}`)
+                .setDescription("Stats of requested car:")
+                .addFields({
+                    name: "Top Speed",
+                    value: topSpeed,
+                    inline: true
+                }, {
+                    name: "0-60MPH (0-100KM/H)",
+                    value: accel,
+                    inline: true
+                }, {
+                    name: "Handling",
+                    value: currentCar["handling"],
+                    inline: true
+                }, {
+                    name: "Drive Type",
+                    value: currentCar["driveType"],
+                    inline: true
+                }, {
+                    name: "Tyre Type",
+                    value: currentCar["tyreType"],
+                    inline: true
+                }, {
+                    name: "Weight",
+                    value: weight,
+                    inline: true
+                }, {
+                    name: "Ground Clearance",
+                    value: currentCar["gc"],
+                    inline: true
+                }, {
+                    name: "Seat Count",
+                    value: currentCar["seatCount"],
+                    inline: true
+                }, {
+                    name: "Body Style",
+                    value: currentCar["bodyStyle"],
+                    inline: true
+                }, {
+                    name: "Engine Position",
+                    value: currentCar["enginePos"],
+                    inline: true
+                }, {
+                    name: "Fuel Type",
+                    value: currentCar["fuelType"],
+                    inline: true
+                }, {
+                    name: "TCS Enabled?",
+                    value: currentCar["tcs"],
+                    inline: true
+                }, {
+                    name: "ABS Enabled?",
+                    value: currentCar["abs"],
+                    inline: true
+                }, {
+                    name: "Tags",
+                    value: tags,
+                    inline: true
+                }, {
+                    name: "Black Market Collection",
+                    value: currentCar["bmCollection"] || "None",
+                    inline: true
+                }, {
+                    name: "Mid-Range Acceleration (MRA)",
+                    value: mra,
+                    inline: true
+                }, {
+                    name: "Off-the-Line Acceleration (OLA)",
+                    value: ola,
+                    inline: true
+                }, {
+                    name: "Description",
+                    value: description
+                })
+                .setImage(currentCar["card"])
+                .setTimestamp();
 
-			let hasCar = garage.find(c => c.carFile === car);
-			if (hasCar !== undefined) {
-				let str = "";
-				for (let [key, value] of Object.entries(hasCar)) {
-					if (!isNaN(value)) {
-						if (value > 0) {
-							str += `${value}x ${key}, `;
-						}
-					}
-				}
-				infoScreen.setFooter(`✅ You own ${str.slice(0, -2)} of this car!`);
-			}
-			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-			if (currentMessage) {
-				return currentMessage.edit(infoScreen);
-			}
-			else {
-				return message.channel.send(infoScreen);
-			}
-		}
-	}
+            let hasCar = garage.find(c => c.carFile === car);
+            if (hasCar !== undefined) {
+                let str = "";
+                for (let [key, value] of Object.entries(hasCar)) {
+                    if (!isNaN(value)) {
+                        if (value > 0) {
+                            str += `${value}x ${key}, `;
+                        }
+                    }
+                }
+                infoScreen.setFooter(`✅ You own ${str.slice(0, -2)} of this car!`);
+            }
+            message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
+            if (currentMessage) {
+                return currentMessage.edit(infoScreen);
+            } else {
+                return message.channel.send(infoScreen);
+            }
+        }
+    }
 }

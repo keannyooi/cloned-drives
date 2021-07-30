@@ -6,7 +6,6 @@
 |  .  \  |  |____ /  _____  \  |  |\   | |  |\   |     |  |     
 |__|\__\ |_______/__/     \__\ |__| \__| |__| \__|     |__| 	(this is a watermark that proves that these lines of code are mine)
 */
-
 const Discord = require("discord.js-light");
 const disbut = require("discord-buttons");
 const stringSimilarity = require("string-similarity");
@@ -32,7 +31,10 @@ module.exports = {
             message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             const errorMessage = new Discord.MessageEmbed()
                 .setColor("#fc0303")
-                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                .setAuthor(message.author.tag, message.author.displayAvatarURL({
+                    format: "png",
+                    dynamic: true
+                }))
                 .setTitle("HOLD ON RIGHT THERE!")
                 .setDescription("You can't do anything without more than 5 cars. Please don't fuse any more cars and build up your garage!")
                 .setTimestamp();
@@ -43,21 +45,18 @@ module.exports = {
         let amount = 1;
         if (args[0].toLowerCase() === "all" && args[1]) {
             carName = args.slice(1, args.length).map(i => i.toLowerCase());
-        }
-        else if (isNaN(args[0]) || !args[1]) {
+        } else if (isNaN(args[0]) || !args[1]) {
             carName = args.slice(0, args.length).map(i => i.toLowerCase());
-        }
-        else {
+        } else {
             amount = Math.ceil(parseInt(args[0]));
             carName = args.slice(1, args.length).map(i => i.toLowerCase());
         }
 
-        const searchResults = garage.filter(function (garageCar) {
+        const searchResults = garage.filter(function(garageCar) {
             let test = require(`./cars/${garageCar.carFile}`);
             if (amount === 1) {
                 return carName.every(part => garageCar.carFile.includes(part)) && !test["isPrize"] && (garageCar["000"] >= amount || garageCar["333"] >= amount || garageCar["666"] >= amount);
-            }
-            else {
+            } else {
                 return carName.every(part => garageCar.carFile.includes(part)) && !test["isPrize"] && garageCar["000"] >= amount;
             }
         });
@@ -77,7 +76,10 @@ module.exports = {
                 message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                 const errorMessage = new Discord.MessageEmbed()
                     .setColor("#fc0303")
-                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                    .setAuthor(message.author.tag, message.author.displayAvatarURL({
+                        format: "png",
+                        dynamic: true
+                    }))
                     .setTitle("Error, too many search results.")
                     .setDescription("Due to Discord's embed limitations, the bot isn't able to show the full list of search results. Try again with a more specific keyword.")
                     .addField("Total Characters in List", `\`${carList.length}\` > \`2048\``)
@@ -87,17 +89,20 @@ module.exports = {
 
             const infoScreen = new Discord.MessageEmbed()
                 .setColor("#34aeeb")
-                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                .setAuthor(message.author.tag, message.author.displayAvatarURL({
+                    format: "png",
+                    dynamic: true
+                }))
                 .setTitle("Multiple cars found, please type one of the following.")
                 .setDescription(carList)
                 .setTimestamp();
 
             message.channel.send(infoScreen).then(currentMessage => {
                 message.channel.awaitMessages(filter, {
-                    max: 1,
-                    time: 30000,
-                    errors: ["time"]
-                })
+                        max: 1,
+                        time: 30000,
+                        errors: ["time"]
+                    })
                     .then(collected => {
                         if (message.channel.type === "text") {
                             collected.first().delete();
@@ -106,14 +111,16 @@ module.exports = {
                             message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                             const errorMessage = new Discord.MessageEmbed()
                                 .setColor("#fc0303")
-                                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                                .setAuthor(message.author.tag, message.author.displayAvatarURL({
+                                    format: "png",
+                                    dynamic: true
+                                }))
                                 .setTitle("Error, invalid integer provided.")
                                 .setDescription("It looks like your response was either not a number or not part of the selection.")
                                 .addField("Number Received", `\`${collected.first().content}\` (either not a number, smaller than 1 or bigger than ${searchResults.length})`)
                                 .setTimestamp();
                             return currentMessage.edit(errorMessage);
-                        }
-                        else {
+                        } else {
                             selectUpgrade(searchResults[parseInt(collected.first().content) - 1], currentMessage);
                         }
                     })
@@ -122,17 +129,18 @@ module.exports = {
                         message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                         const cancelMessage = new Discord.MessageEmbed()
                             .setColor("#34aeeb")
-                            .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                            .setAuthor(message.author.tag, message.author.displayAvatarURL({
+                                format: "png",
+                                dynamic: true
+                            }))
                             .setTitle("Action cancelled automatically.")
                             .setTimestamp();
                         return currentMessage.edit(cancelMessage);
                     });
             });
-        }
-        else if (searchResults.length > 0) {
+        } else if (searchResults.length > 0) {
             selectUpgrade(searchResults[0]);
-        }
-        else {
+        } else {
             let find = garage.filter(g => {
                 return carName.every(part => g.carFile.includes(part));
             })
@@ -141,19 +149,24 @@ module.exports = {
                 message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                 const errorMessage = new Discord.MessageEmbed()
                     .setColor("#fc0303")
-                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                    .setAuthor(message.author.tag, message.author.displayAvatarURL({
+                        format: "png",
+                        dynamic: true
+                    }))
                     .setTitle("Error, it looks like you don't have this car.")
                     .setDescription("Well that's sad.")
                     .addField("Keywords Received", `\`${carName.join(" ")}\``, true)
                     .addField("You may be looking for", `\`${matches.bestMatch.target}\``, true)
                     .setTimestamp();
                 return message.channel.send(errorMessage);
-            }
-            else {
+            } else {
                 let bannedList = "";
                 let errorMessage = new Discord.MessageEmbed()
                     .setColor("#fc0303")
-                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                    .setAuthor(message.author.tag, message.author.displayAvatarURL({
+                        format: "png",
+                        dynamic: true
+                    }))
                     .setTitle("Error, it looks like you are unable to fuse this car.")
                     .setDescription("Note: You can't fuse maxed cars and prize cars.")
                     .addField("Keywords Received", `\`${carName.join(" ")}\``)
@@ -167,8 +180,7 @@ module.exports = {
 
                     if (errCar["isPrize"]) {
                         bannedList += `${make} ${errCar["model"]} (${errCar["modelYear"]}) ${trophyEmoji}\n`;
-                    }
-                    else {
+                    } else {
                         let upgList = "";
                         for (let [key, value] of Object.entries(find[i])) {
                             if (!isNaN(value) && value !== 0) {
@@ -188,31 +200,32 @@ module.exports = {
             let isOne = Object.keys(currentCar).filter(m => !isNaN(currentCar[m]) && !m.includes("96") && !m.includes("69") && currentCar[m] >= amount);
             if (isOne.length === 1) {
                 fuse(currentCar, isOne[0], currentMessage);
-            }
-            else {
+            } else {
                 let upgradeList = "Type in any tune that is displayed here.\n";
                 for (i = 0; i < isOne.length; i++) {
                     upgradeList += `\`${isOne[i]}\`, `;
                 }
                 let infoScreen = new Discord.MessageEmbed()
                     .setColor("#34aeeb")
-                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                    .setAuthor(message.author.tag, message.author.displayAvatarURL({
+                        format: "png",
+                        dynamic: true
+                    }))
                     .setTitle("Fuse car of which tune?")
                     .setDescription(upgradeList.slice(0, -2))
                     .setTimestamp();
                 let upgradeMessage;
                 if (currentMessage && message.channel.type === "text") {
                     upgradeMessage = await currentMessage.edit(infoScreen);
-                }
-                else {
+                } else {
                     upgradeMessage = await message.channel.send(infoScreen);
                 }
 
                 message.channel.awaitMessages(filter, {
-                    max: 1,
-                    time: 60000,
-                    errors: ["time"]
-                })
+                        max: 1,
+                        time: 60000,
+                        errors: ["time"]
+                    })
                     .then(collected => {
                         if (message.channel.type === "text") {
                             collected.first().delete();
@@ -221,14 +234,16 @@ module.exports = {
                             message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                             const errorMessage = new Discord.MessageEmbed()
                                 .setColor("#fc0303")
-                                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                                .setAuthor(message.author.tag, message.author.displayAvatarURL({
+                                    format: "png",
+                                    dynamic: true
+                                }))
                                 .setTitle("Error, invalid selection provided.")
                                 .setDescription("It looks like your response was not part of the selection.")
                                 .addField("Value Received", `\`${collected.first().content}\``)
                                 .setTimestamp();
                             return upgradeMessage.edit(errorMessage);
-                        }
-                        else {
+                        } else {
                             fuse(currentCar, collected.first().content, upgradeMessage);
                         }
                     })
@@ -237,7 +252,10 @@ module.exports = {
                         message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                         const cancelMessage = new Discord.MessageEmbed()
                             .setColor("#34aeeb")
-                            .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                            .setAuthor(message.author.tag, message.author.displayAvatarURL({
+                                format: "png",
+                                dynamic: true
+                            }))
                             .setTitle("Action cancelled automatically.")
                             .setTimestamp();
                         return upgradeMessage.edit(cancelMessage);
@@ -263,23 +281,17 @@ module.exports = {
             let fuseTokens;
             if (car["rq"] > 79) { //leggie
                 fuseTokens = 12500;
-            }
-            else if (car["rq"] > 64 && car["rq"] <= 79) { //epic
+            } else if (car["rq"] > 64 && car["rq"] <= 79) { //epic
                 fuseTokens = 2500;
-            }
-            else if (car["rq"] > 49 && car["rq"] <= 64) { //ultra
+            } else if (car["rq"] > 49 && car["rq"] <= 64) { //ultra
                 fuseTokens = 750;
-            }
-            else if (car["rq"] > 39 && car["rq"] <= 49) { //super
+            } else if (car["rq"] > 39 && car["rq"] <= 49) { //super
                 fuseTokens = 350;
-            }
-            else if (car["rq"] > 29 && car["rq"] <= 39) { //rare
+            } else if (car["rq"] > 29 && car["rq"] <= 39) { //rare
                 fuseTokens = 100;
-            }
-            else if (car["rq"] > 19 && car["rq"] <= 29) { //uncommon
+            } else if (car["rq"] > 19 && car["rq"] <= 29) { //uncommon
                 fuseTokens = 30;
-            }
-            else { //common
+            } else { //common
                 fuseTokens = 10;
             }
             fuseTokens *= amount;
@@ -294,8 +306,7 @@ module.exports = {
                     .setStyle("grey")
                     .setEmoji("❎")
                     .setID("nop");
-            }
-            else {
+            } else {
                 yse = new disbut.MessageButton()
                     .setStyle("green")
                     .setLabel("Yes!")
@@ -309,19 +320,29 @@ module.exports = {
 
             const confirmationMessage = new Discord.MessageEmbed()
                 .setColor("#34aeeb")
-                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                .setAuthor(message.author.tag, message.author.displayAvatarURL({
+                    format: "png",
+                    dynamic: true
+                }))
                 .setTitle(`Are you sure you want to fuse ${amount} of your ${currentName} for ${fuseEmoji}${fuseTokens}?`)
                 .setImage(car["card"])
                 .setTimestamp();
             let reactionMessage, processed = false;
             if (currentMessage && message.channel.type === "text") {
-                reactionMessage = await currentMessage.edit({ embed: confirmationMessage, component: row });
-            }
-            else {
-                reactionMessage = await message.channel.send({ embed: confirmationMessage, component: row });
+                reactionMessage = await currentMessage.edit({
+                    embed: confirmationMessage,
+                    component: row
+                });
+            } else {
+                reactionMessage = await message.channel.send({
+                    embed: confirmationMessage,
+                    component: row
+                });
             }
 
-            const collector = reactionMessage.createButtonCollector(buttonFilter, { time: 10000 });
+            const collector = reactionMessage.createButtonCollector(buttonFilter, {
+                time: 10000
+            });
             collector.on("collect", async button => {
                 if (!processed) {
                     processed = true;
@@ -355,24 +376,36 @@ module.exports = {
 
                             const infoScreen = new Discord.MessageEmbed()
                                 .setColor("#03fc24")
-                                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                                .setAuthor(message.author.tag, message.author.displayAvatarURL({
+                                    format: "png",
+                                    dynamic: true
+                                }))
                                 .setTitle(`Successfully fused your ${currentName}!`)
                                 .setDescription(`You earned ${fuseEmoji}${fuseTokens}!`)
                                 .addField("Your Fuse Tokens", `${fuseEmoji}${playerData.fuseTokens}`)
                                 .setImage(car["card"])
                                 .setTimestamp();
                             message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                            return reactionMessage.edit({ embed: infoScreen, component: null });
+                            return reactionMessage.edit({
+                                embed: infoScreen,
+                                component: null
+                            });
                         case "nop":
                             message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
                             const cancelMessage = new Discord.MessageEmbed()
                                 .setColor("#34aeeb")
-                                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                                .setAuthor(message.author.tag, message.author.displayAvatarURL({
+                                    format: "png",
+                                    dynamic: true
+                                }))
                                 .setTitle("Action cancelled.")
                                 .setDescription(`Your ${currentName}s stays in your garage.`)
                                 .setImage(car["card"])
                                 .setTimestamp();
-                            return reactionMessage.edit({ embed: cancelMessage, component: null });
+                            return reactionMessage.edit({
+                                embed: cancelMessage,
+                                component: null
+                            });
                         default:
                             break;
                     }
@@ -383,12 +416,18 @@ module.exports = {
                     message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1)
                     const cancelMessage = new Discord.MessageEmbed()
                         .setColor("#34aeeb")
-                        .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                        .setAuthor(message.author.tag, message.author.displayAvatarURL({
+                            format: "png",
+                            dynamic: true
+                        }))
                         .setTitle("Action cancelled automatically.")
                         .setDescription(`Your ${currentName}s stays in your garage.`)
                         .setImage(car["card"])
                         .setTimestamp();
-                    return reactionMessage.edit({ embed: cancelMessage, component: null });
+                    return reactionMessage.edit({
+                        embed: cancelMessage,
+                        component: null
+                    });
                 }
             });
         }

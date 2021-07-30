@@ -6,7 +6,6 @@
 |  .  \  |  |____ /  _____  \  |  |\   | |  |\   |     |  |     
 |__|\__\ |_______/__/     \__\ |__| \__| |__| \__|     |__| 	(this is a watermark that proves that these lines of code are mine)
 */
-
 const Discord = require("discord.js-light");
 
 module.exports = {
@@ -37,7 +36,10 @@ module.exports = {
                 for (i = 0; i < all.length; i++) {
                     const id = all[i].ID.substring(3);
                     if (message.guild.member(id) && !message.client.users.cache.find(user => user.id === id).bot) {
-                        lb.push({ name: message.guild.members.cache.get(id).displayName, value: all[i].data.money });
+                        lb.push({
+                            name: message.guild.members.cache.get(id).displayName,
+                            value: all[i].data.money
+                        });
                     }
                 }
                 break;
@@ -47,7 +49,10 @@ module.exports = {
                 for (i = 0; i < all.length; i++) {
                     const id = all[i].ID.substring(3);
                     if (message.guild.member(id) && !message.client.users.cache.find(user => user.id === id).bot) {
-                        lb.push({ name: message.guild.members.cache.get(id).displayName, value: all[i].data.fuseTokens });
+                        lb.push({
+                            name: message.guild.members.cache.get(id).displayName,
+                            value: all[i].data.fuseTokens
+                        });
                     }
                 }
                 break;
@@ -57,7 +62,10 @@ module.exports = {
                 for (i = 0; i < all.length; i++) {
                     const id = all[i].ID.substring(3);
                     if (message.guild.member(id) && !message.client.users.cache.find(user => user.id === id).bot) {
-                        lb.push({ name: message.guild.members.cache.get(id).displayName, value: all[i].data.trophies });
+                        lb.push({
+                            name: message.guild.members.cache.get(id).displayName,
+                            value: all[i].data.trophies
+                        });
                     }
                 }
                 break;
@@ -79,7 +87,10 @@ module.exports = {
                             maxedCarAmount += garage[x]["996"] + garage[x]["969"] + garage[x]["699"];
                         }
                         garagePoints *= maxedCarAmount / carAmount;
-                        lb.push({ name: message.guild.members.cache.get(id).displayName, value: Math.round(garagePoints) });
+                        lb.push({
+                            name: message.guild.members.cache.get(id).displayName,
+                            value: Math.round(garagePoints)
+                        });
                     }
                 }
                 break;
@@ -89,7 +100,10 @@ module.exports = {
                 for (i = 0; i < all.length; i++) {
                     const id = all[i].ID.substring(3);
                     if (message.guild.member(id) && !message.client.users.cache.find(user => user.id === id).bot) {
-                        lb.push({ name: message.guild.members.cache.get(id).displayName, value: all[i].data.rrWinStreak || 0 });
+                        lb.push({
+                            name: message.guild.members.cache.get(id).displayName,
+                            value: all[i].data.rrWinStreak || 0
+                        });
                     }
                 }
                 break;
@@ -97,7 +111,10 @@ module.exports = {
                 message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
                 const errorScreen = new Discord.MessageEmbed()
                     .setColor("#fc0303")
-                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                    .setAuthor(message.author.tag, message.author.displayAvatarURL({
+                        format: "png",
+                        dynamic: true
+                    }))
                     .setTitle("Error, criteria requested unavailable.")
                     .setDescription("Choose between `money`, `fusetokens`, `trophies`, `garage` and `winstreak`.")
                     .setTimestamp();
@@ -106,30 +123,25 @@ module.exports = {
 
         if (!args[1]) {
             page = 1;
-        }
-        else {
+        } else {
             page = parseInt(args[1]);
         }
 
         const totalPages = Math.ceil(lb.length / pageLimit);
 
-        lb.sort(function (a, b) {
+        lb.sort(function(a, b) {
             if (a.value === b.value) {
                 if (a.name < b.name) {
                     return -1;
-                }
-                else if (a.name > b.name) {
+                } else if (a.name > b.name) {
                     return 1;
-                }
-                else {
+                } else {
                     return 0;
                 }
-            }
-            else {
+            } else {
                 if (a.value > b.value) {
                     return -1;
-                }
-                else {
+                } else {
                     return 1;
                 }
             }
@@ -145,7 +157,10 @@ module.exports = {
             message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
             const errorScreen = new Discord.MessageEmbed()
                 .setColor("#fc0303")
-                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                .setAuthor(message.author.tag, message.author.displayAvatarURL({
+                    format: "png",
+                    dynamic: true
+                }))
                 .setTitle("Error, page number requested invalid.")
                 .setDescription(`The leaderboard ends at page ${totalPages}.`)
                 .setTimestamp();
@@ -155,13 +170,21 @@ module.exports = {
 
         const infoScreen = new Discord.MessageEmbed()
             .setColor("#34aeeb")
-            .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+            .setAuthor(message.author.tag, message.author.displayAvatarURL({
+                format: "png",
+                dynamic: true
+            }))
             .setTitle(`Cloned Drives Leaderboards (Selected Criteria: ${criteria})`)
             .setDescription(`Your current placement: ${currentPlacement}/${message.guild.memberCount}`)
-            .addFields(
-                { name: "Placement", value: lbList, inline: true },
-                { name: criteria, value: valueList, inline: true }
-            )
+            .addFields({
+                name: "Placement",
+                value: lbList,
+                inline: true
+            }, {
+                name: criteria,
+                value: valueList,
+                inline: true
+            })
             .setFooter(`Showing places ${startsWith + 1} to ${endsWith} - React with ⬅️ or ➡️ to navigate through pages.`)
             .setTimestamp();
         message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
@@ -184,12 +207,13 @@ module.exports = {
                     break;
             }
 
-            const collector = infoMessage.createReactionCollector(filter, { time: 60000 });
+            const collector = infoMessage.createReactionCollector(filter, {
+                time: 60000
+            });
             collector.on("collect", reaction => {
                 if (reaction.emoji.name === "⬅️") {
                     page -= 1;
-                }
-                else if (reaction.emoji.name === "➡️") {
+                } else if (reaction.emoji.name === "➡️") {
                     page += 1;
                 }
                 lbDisplay(page);
@@ -197,13 +221,21 @@ module.exports = {
 
                 const infoScreen = new Discord.MessageEmbed()
                     .setColor("#34aeeb")
-                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
+                    .setAuthor(message.author.tag, message.author.displayAvatarURL({
+                        format: "png",
+                        dynamic: true
+                    }))
                     .setTitle(`Cloned Drives Leaderboards (Selected Criteria: ${criteria})`)
                     .setDescription(`Your current placement: ${currentPlacement}/${message.guild.memberCount}`)
-                    .addFields(
-                        { name: "Placement", value: lbList, inline: true },
-                        { name: criteria, value: valueList, inline: true }
-                    )
+                    .addFields({
+                        name: "Placement",
+                        value: lbList,
+                        inline: true
+                    }, {
+                        name: criteria,
+                        value: valueList,
+                        inline: true
+                    })
                     .setFooter(`Showing places ${startsWith + 1} to ${endsWith} - React with ⬅️ or ➡️ to navigate through pages.`)
                     .setTimestamp();
                 infoMessage.edit(infoScreen);
@@ -234,23 +266,17 @@ module.exports = {
         function rarityCheck(currentCar) {
             if (currentCar["rq"] > 79) { //leggie
                 return 10000;
-            }
-            else if (currentCar["rq"] > 64 && currentCar["rq"] <= 79) { //epic
+            } else if (currentCar["rq"] > 64 && currentCar["rq"] <= 79) { //epic
                 return 3000;
-            }
-            else if (currentCar["rq"] > 49 && currentCar["rq"] <= 64) { //ultra
+            } else if (currentCar["rq"] > 49 && currentCar["rq"] <= 64) { //ultra
                 return 750;
-            }
-            else if (currentCar["rq"] > 39 && currentCar["rq"] <= 49) { //super
+            } else if (currentCar["rq"] > 39 && currentCar["rq"] <= 49) { //super
                 return 200;
-            }
-            else if (currentCar["rq"] > 29 && currentCar["rq"] <= 39) { //rare
+            } else if (currentCar["rq"] > 29 && currentCar["rq"] <= 39) { //rare
                 return 90;
-            }
-            else if (currentCar["rq"] > 19 && currentCar["rq"] <= 29) { //uncommon
+            } else if (currentCar["rq"] > 19 && currentCar["rq"] <= 29) { //uncommon
                 return 30;
-            }
-            else { //common
+            } else { //common
                 return 10;
             }
         }
@@ -260,18 +286,15 @@ module.exports = {
                 startsWith = 0;
                 endsWith = carFiles.length;
                 reactionIndex = 0;
-            }
-            else if (page * pageLimit === pageLimit) {
+            } else if (page * pageLimit === pageLimit) {
                 startsWith = 0;
                 endsWith = pageLimit;
                 reactionIndex = 1;
-            }
-            else if (lb.length - (pageLimit * page) < 0) {
+            } else if (lb.length - (pageLimit * page) < 0) {
                 startsWith = pageLimit * (page - 1);
                 endsWith = lb.length;
                 reactionIndex = 2;
-            }
-            else {
+            } else {
                 startsWith = pageLimit * (page - 1);
                 endsWith = startsWith + pageLimit;
                 reactionIndex = 3;

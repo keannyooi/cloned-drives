@@ -8,9 +8,10 @@ __  ___  _______     ___      .__   __. .__   __. ____    ____
 */
 
 // only run this when updating database shiet
-
 const Discord = require("discord.js-light");
-const { Database } = require("quickmongo");
+const {
+    Database
+} = require("quickmongo");
 
 const client = new Discord.Client({
     cacheGuilds: true,
@@ -71,7 +72,9 @@ client.once("ready", async () => {
     // })
     // await client.db.set("challenge", challenge);
 
-    client.user.setActivity("with database update code", { type: "PLAYING" });
+    client.user.setActivity("with database update code", {
+        type: "PLAYING"
+    });
 });
 
 client.login(process.env.BOT_TOKEN);
@@ -80,8 +83,7 @@ function compare(carFile) {
     if (carFile === "toyota sienna xle awd (2009).json") {
         console.log("merc done");
         return "toyota sienna xle limtied awd (2009).json";
-    }
-    else {
+    } else {
         return carFile;
     }
 }
