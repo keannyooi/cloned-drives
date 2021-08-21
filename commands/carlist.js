@@ -8,7 +8,6 @@
 */
 
 const Discord = require("discord.js-light");
-const disbut = require("discord-buttons");
 const fs = require("fs");
 const carFiles = fs.readdirSync("./commands/cars").filter(file => file.endsWith('.json'));
 

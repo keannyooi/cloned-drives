@@ -1,0 +1,54 @@
+{
+    "rq": 51,
+    "make": "De Tomaso",
+    "model": "Pantera GT5-S",
+    "modelYear": 1984,
+    "country": "IT",
+    "topSpeed": 165,
+    "0to60": 5.4,
+    "handling": 80,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1460,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 70.13,
+    "ola": 85.19,
+    "description": "The widebody kit for the GT5 has blended in to the body more with the GT5-S. Both cars are pretty much identical otherwise. Card by keanny",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/848059846842122280/de_tomaso_pantera_gt5-s.png",
+    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/848057815490363402/pantera_gt5-s_000.jpg",
+    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/848057818647887882/pantera_gt5-s_333.jpg",
+    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/848057825112490024/pantera_gt5-s_666.jpg",
+    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/848057840035299399/pantera_gt5-s_996.jpg",
+    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/848057836357419058/pantera_gt5-s_969.jpg",
+    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/848057832037154836/pantera_gt5-s_699.jpg",
+
+    "333TopSpeed": 168,
+    "3330to60": 5.1,
+    "333Handling": 83,
+
+    "666TopSpeed": 171,
+    "6660to60": 4.9,
+    "666Handling": 85,
+
+    "996TopSpeed": 174,
+    "9960to60": 4.6,
+    "996Handling": 85,
+
+    "969TopSpeed": 174,
+    "9690to60": 4.9,
+    "969Handling": 89,
+
+    "699TopSpeed": 171,
+    "6990to60": 4.6,
+    "699Handling": 89
+}

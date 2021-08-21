@@ -1,0 +1,54 @@
+﻿{
+    "rq": 77,
+    "make": "RUF",
+    "model": "RTurbo",
+    "modelYear": 2001,
+    "country": "DE",
+    "topSpeed": 212,
+    "0to60": 3.8,
+    "handling": 87,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Supercar"],
+    "isPrize": false,
+
+    "weight": 1443,
+    "gc": "Low",
+    "seatCount":2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 88.37,
+    "ola": 73.68,
+    "description": "How do you take one of Porsche's best performance values and make it even better? You send it to RUF. Card by Spence",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826196961257455707/Rturbo.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826197012152188938/rturbo.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826197021944709140/rturbo333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826197030133170196/rturbo666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826197052954116106/rturbo996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826197045890646097/rturbo969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826197037375684658/rturbo699.png",
+
+    "333TopSpeed": 214,
+    "3330to60": 3.6,
+    "333Handling": 90,
+
+    "666TopSpeed": 217,
+    "6660to60": 3.4, 
+    "666Handling": 93,
+
+    "996TopSpeed": 219,
+    "9960to60": 3.2,
+    "996Handling": 93,
+
+    "969TopSpeed": 219,
+    "9690to60": 3.4,
+    "969Handling": 97,
+
+    "699TopSpeed": 217,
+    "6990to60": 3.2,
+    "699Handling": 97
+}

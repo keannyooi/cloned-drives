@@ -1,0 +1,54 @@
+{
+    "rq": 53,
+    "make": "Land Rover",
+    "model": "Discovery Sport P250 SE",
+    "modelYear": 2020,
+    "country": "GB",
+    "topSpeed": 132,
+    "0to60": 7.5,
+    "handling": 75,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1864,
+    "gc": "High",
+    "seatCount": 7,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 52.82,
+    "ola": 64.00,
+    "description": "Card by Macan",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826073344680001566/Land_Rover_Discovery_Sport_P250_SE_2020.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826073879982243900/LRD.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826073885132718140/lrd333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826073890378743858/lrd666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826073913938935838/lrd996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826073906725126144/lrd969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826073899212472360/lrd699.png",
+
+    "333TopSpeed": 136,
+    "3330to60": 7.1,
+    "333Handling": 77,
+
+    "666TopSpeed": 140,
+    "6660to60": 6.8,
+    "666Handling": 80,
+
+	"996TopSpeed": 144,
+    "9960to60": 6.4,
+    "996Handling": 80, 
+
+    "969TopSpeed": 144,
+    "9690to60": 6.8,
+    "969Handling": 83,
+
+    "699TopSpeed": 140,
+    "6990to60": 6.4,
+    "699Handling": 83
+}

@@ -1,0 +1,54 @@
+﻿{
+    "rq": 66,
+    "make": "Nissan",
+    "model": "Skyline GT-R V-Spec (R33)",
+    "modelYear": 1995,
+    "country": "JP",
+    "topSpeed": 155,
+    "0to60": 5.3,
+    "handling": 85,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer"],
+    "isPrize": false,
+
+    "weight": 1530,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 69.74,
+    "ola": 86.79,
+    "description": "When that speed limiter hits. Card by Havvy",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/821882344938930206/NissanSkylineGT-RV-SpecR33.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821882399184650310/000_r33.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821882403500720198/111_r33.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821882408222588948/222_r33.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821882424211669002/332_r33.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821882418373591040/323_r33.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821882414413774868/233_r33.png",
+
+    "333TopSpeed": 158,
+    "3330to60": 5.0,
+    "333Handling": 88,
+
+    "666TopSpeed": 162,
+    "6660to60": 4.8,
+    "666Handling": 91,
+
+    "996TopSpeed": 165,
+    "9960to60": 4.5,
+    "996Handling": 91,
+
+    "969TopSpeed": 165,
+    "9690to60": 4.8,
+    "969Handling": 94,
+
+    "699TopSpeed": 162,
+    "6990to60": 4.5,
+    "699Handling": 94
+}

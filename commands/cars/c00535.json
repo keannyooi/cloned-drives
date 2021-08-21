@@ -1,0 +1,54 @@
+{
+    "rq": 25,
+    "make": "Honda",
+    "model": "CRX 1.5Si",
+    "modelYear": 1985,
+    "country": "JP",
+    "topSpeed": 114,
+    "0to60": 8.9,
+    "handling": 68,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch"],
+    "isPrize": false,
+
+    "weight": 777,
+    "gc": "Medium",
+    "seatCount":4,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 32.48,
+    "ola": 76.40,
+    "description": "No CRX, just food. Card by Ahmed",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/828064202425368576/Honda-CRX-Si.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/828064480671039508/Honda-CRX-Si-stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/828064524719357992/Honda-CRX-Si-333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/828064541601955840/Honda-CRX-Si-666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/828064601823641630/Honda-CRX-Si-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/828064654990639134/Honda-CRX-Si-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/828064577048674314/Honda-CRX-Si-699.png",
+
+    "333TopSpeed": 118,
+    "3330to60": 8.5,
+    "333Handling": 70,
+
+    "666TopSpeed": 123,
+    "6660to60": 8.0, 
+    "666Handling": 72,
+
+    "996TopSpeed": 128,
+    "9960to60": 7.6,
+    "996Handling": 72,
+
+    "969TopSpeed": 128,
+    "9690to60": 8.0,
+    "969Handling": 75,
+
+    "699TopSpeed": 123,
+    "6990to60": 7.6,
+    "699Handling": 75
+}

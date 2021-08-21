@@ -1,0 +1,54 @@
+{
+    "rq": 88,
+    "make": "TVR",
+    "model": "Griffith",
+    "modelYear": 2021,
+    "country": "GB",
+    "topSpeed": 200,
+    "0to60": 3.8,
+    "handling": 92,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Supercar"],
+    "isPrize": false,
+
+    "weight": 1200,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 115.15,
+    "ola": 84.21,
+    "description": "After 20 years, TVR return with a bombshell of a sports car. Card by DodgeDemon.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/823396499341574144/2021_TVR_Griffith.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824288047935127582/tvrmed.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824288051987218462/tvrmed333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824288058521682030/tvrmed666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824288083541098527/tvrmed996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824288075475714108/tvrmed969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824288067270737981/tvrmed699.png",
+
+    "333TopSpeed": 203,
+    "3330to60": 3.6,
+    "333Handling": 95,
+
+    "666TopSpeed": 205,
+    "6660to60": 3.4, 
+    "666Handling": 98,
+
+    "996TopSpeed": 208,
+    "9960to60": 3.2,
+    "996Handling": 98,
+
+    "969TopSpeed": 208,
+    "9690to60": 3.4,
+    "969Handling": 102,
+
+    "699TopSpeed": 205,
+    "6990to60": 3.2,
+    "699Handling": 102
+}

@@ -1,0 +1,54 @@
+{
+    "rq": 22,
+    "make": "Volkswagen",
+    "model": "EuroVan VR6 (T4)",
+    "modelYear": 2001,
+    "country": "DE",
+    "topSpeed": 121,
+    "0to60": 10.8,
+    "handling": 59,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Servers Choice"],
+    "isPrize": false,
+
+    "weight": 1912,
+    "gc": "Medium",
+    "seatCount": 7,
+    "bodyStyle": "Minivan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 65.20,
+    "ola": 68.03,
+    "description": "EuroVan cause europeans amirite? Card by Andu",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/821476774113837133/Europeansbelixke.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821477202054873130/Euro.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821477210367328306/Euro1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821477217393049640/Euro2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821477243897249842/Euro996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821477236149583893/Euro969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821477227736465408/Euro699.png",
+
+    "333TopSpeed": 125,
+    "3330to60": 10.3,
+    "333Handling": 61,
+
+    "666TopSpeed": 130,
+    "6660to60": 9.7, 
+    "666Handling": 63,
+
+    "996TopSpeed": 134,
+    "9960to60": 9.2,
+    "996Handling": 63,
+
+    "969TopSpeed": 134,
+    "9690to60": 9.7,
+    "969Handling": 65,
+
+    "699TopSpeed": 130,
+    "6990to60": 9.2,
+    "699Handling": 65
+}

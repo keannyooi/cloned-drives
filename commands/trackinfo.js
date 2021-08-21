@@ -9,7 +9,7 @@
 
 const Discord = require("discord.js-light");
 const fs = require("fs");
-const tracksets = fs.readdirSync("./commands/tracksets").filter(file => file.endsWith(".json"));
+const tracksets = fs.readdirSync("./commands/tracks").filter(file => file.endsWith(".json"));
 const stringSimilarity = require("string-similarity");
 
 module.exports = {

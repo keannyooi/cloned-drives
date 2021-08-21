@@ -1,0 +1,54 @@
+{
+    "rq": 69,
+    "make": "Bugatti",
+    "model": "EB112",
+    "modelYear": 1993,
+    "country": "FR",
+    "topSpeed": 186,
+    "0to60": 4.2,
+    "handling": 81,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Concept", "Unique"],
+    "isPrize": false,
+
+    "weight": 1800,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 67.74,
+    "ola": 85.71,
+    "description": "This is the result when Giugaro was asked by Bugatti to make a full-size sedan version of the EB110. Card by Spence.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/854096385708523531/image0.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/854096459489869824/image0.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/854096480671760434/image0.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/854096494834221076/image0.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/854096508898246676/image0.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/854096527748628510/image0.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/854096542230380584/image0.jpg",
+
+    "333TopSpeed": 189,
+    "3330to60": 4.0,
+    "333Handling": 84,
+
+    "666TopSpeed": 192,
+    "6660to60": 3.8,
+    "666Handling": 86,
+
+    "699TopSpeed": 192,
+    "6990to60": 3.6,
+    "699Handling": 90,
+
+    "969TopSpeed": 194,
+    "9690to60": 3.8,
+    "969Handling": 90,
+
+    "996TopSpeed": 194,
+    "9960to60": 3.6,
+    "996Handling": 86
+}

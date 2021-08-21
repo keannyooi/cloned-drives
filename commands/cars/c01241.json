@@ -1,0 +1,54 @@
+{
+    "rq": 74,
+    "make": "Suzuki",
+    "model": "GSX-R4",
+    "modelYear": 2001,
+    "country": "JP",
+    "topSpeed": 181,
+    "0to60": 4.3,
+    "handling": 92,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Concept", "Motorsport"],
+    "isPrize": false,
+
+    "weight": 640,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Roadster",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 63.24,
+    "ola": 62.85,
+    "description": "Basically, it’s a bike on four wheels, literally. Card by Spence",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/823612495968993310/suzukithingy.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823612596259127396/suz.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823612603065565214/suz333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823612611336732742/suz666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823612648267972658/suz996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823612638722129980/suz969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823612621529940028/suz699.png",
+
+    "333TopSpeed": 184,
+    "3330to60": 4.1,
+    "333Handling": 95,
+
+    "666TopSpeed": 187,
+    "6660to60": 3.9, 
+    "666Handling": 98,
+
+    "996TopSpeed": 190,
+    "9960to60": 3.7,
+    "996Handling": 98,
+
+    "969TopSpeed": 190,
+    "9690to60": 3.9,
+    "969Handling": 102,
+
+    "699TopSpeed": 187,
+    "6990to60": 3.7,
+    "699Handling": 102
+}

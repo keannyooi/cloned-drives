@@ -1,0 +1,54 @@
+{
+    "rq": 34,
+    "make": "Ford",
+    "model": "Focus ZX3",
+    "modelYear": 2001,
+    "country": "US",
+    "topSpeed": 104,
+    "0to60": 8.9,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1228,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 40.09,
+    "ola": 65.17,
+    "description": "A Focus but slowish. Card by Keanny",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819391009921302566/ford_focus_zx3.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819764740578345011/zx3_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819764749796900895/zx3_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819764755257622528/zx3_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819764795351629875/zx3_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819764778808377354/zx3_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819764767865569300/zx3_699.jpg",
+
+    "333TopSpeed": 109,
+    "3330to60": 8.5,
+    "333Handling": 75,
+
+    "666TopSpeed": 114,
+    "6660to60": 8.0, 
+    "666Handling": 78,
+
+	"996TopSpeed": 119,
+    "9960to60": 7.6,
+    "996Handling": 78,
+
+    "969TopSpeed": 119,
+    "9690to60": 8.0,
+    "969Handling": 81,
+
+	"699TopSpeed": 114,
+    "6990to60": 7.6,
+    "699Handling": 81
+}

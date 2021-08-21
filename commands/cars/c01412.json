@@ -1,0 +1,56 @@
+{
+    "rq": 13,
+    "make": "Volkswagen",
+    "model": "Type 2 Syncro (T3)",
+    "modelYear": 1980,
+    "country": "DE",
+    "topSpeed": 79,
+    "0to60": 18.3,
+    "handling": 59,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": true,
+
+
+    "weight": 1814,
+    "gc": "High",
+    "seatCount": 9,
+    "bodyStyle": "Minivan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 0.00,
+    "ola": 49.18,
+    "description": "The now hillclimber hippie van. Card by Andu",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/865589132663193690/T3Syncroo.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/822443448992268318/SyncroT3.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/822443460988633120/SyncroT3-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/822443466784243712/SyncroT3-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/822443487596380190/SyncroT3-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/822443480386109492/SyncroT3-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/822443475114000424/SyncroT3-699.png",
+
+    "333TopSpeed": 86,
+    "3330to60": 17.4,
+    "333Handling": 61,
+
+    "666TopSpeed": 92,
+    "6660to60": 16.5,
+    "666Handling": 63,   
+
+    "996TopSpeed": 99,
+    "9960to60": 15.6,
+    "996Handling": 63,
+
+    "969TopSpeed": 99,
+    "9690to60": 16.5,
+    "969Handling": 65,
+
+    "699TopSpeed": 92,
+    "6990to60": 15.6,
+    "699Handling": 65
+}

@@ -1,0 +1,54 @@
+{
+    "rq": 87,
+    "make": "Honda",
+    "model": "NSX",
+    "modelYear": 2016,
+    "country": "JP",
+    "topSpeed": 191,
+    "0to60": 3.2,
+    "handling": 92,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer", "Supercar", "Eco-Friendly"],
+    "isPrize": false,
+
+    "weight": 1725,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Hybrid",
+    "mra": 82.05,
+    "ola": 81.25,
+    "description": "The REAL modern NSX. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824389433088278548/NSXNEW.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824390144189923348/nsx.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824390148648206406/nsx333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824390153451470919/nsx666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824390176343851038/nsx996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824390169053364234/nsx969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824390161575968808/nsx699.png",
+
+    "333TopSpeed": 194,
+    "3330to60": 3.0,
+    "333Handling": 95,
+
+    "666TopSpeed": 196,
+    "6660to60": 2.9,
+    "666Handling": 98,
+
+    "996TopSpeed": 199,
+    "9960to60": 2.7,
+    "996Handling": 98,
+
+    "969TopSpeed": 199,
+    "9690to60": 2.9,
+    "969Handling": 102,
+
+    "699TopSpeed": 196,
+    "6990to60": 2.7,
+    "699Handling": 102
+}

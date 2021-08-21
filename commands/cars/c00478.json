@@ -1,0 +1,54 @@
+{
+    "rq": 56,
+    "make": "Ford",
+    "model": "Mustang SVT Cobra",
+    "modelYear": 2003,
+    "country": "US",
+    "topSpeed": 155,
+    "0to60": 4.8,
+    "handling": 79,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Muscle Car", "Street Racer"],
+    "isPrize": false,
+
+    "weight": 1695,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 80.67,
+    "ola": 87.50,
+    "description": "Nicknamed the 'Terminator Cobra', the 2003 SVT Cobra is an American street racing legend. A simple change of the supercharger's pulley drastically increased the power, resulting in it eventually being called 'the Original Hellcat' by Road & Track. Card by Preston.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/827631071888670730/03_terminator.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/827631190647111750/03_terminator_thumb_corners_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/827631214146879569/03_terminator_thumb_corners_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/827631239368015952/03_terminator_thumb_corners_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/827631319465984000/03_terminator_thumb_corners_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/827631292022521906/03_terminator_thumb_corners_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/827631268920557628/03_terminator_thumb_corners_699.png",
+
+    "333TopSpeed": 158,
+    "3330to60": 4.6,
+    "333Handling": 82,
+
+    "666TopSpeed": 162,
+    "6660to60": 4.3,
+    "666Handling": 84,
+
+    "996TopSpeed": 165,
+    "9960to60": 4.1,
+    "996Handling": 84,
+
+    "969TopSpeed": 165,
+    "9690to60": 4.3,
+    "969Handling": 88,
+
+    "699TopSpeed": 162,
+    "6990to60": 4.1,
+    "699Handling": 88
+}

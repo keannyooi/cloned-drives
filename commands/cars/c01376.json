@@ -1,0 +1,56 @@
+﻿{
+    "rq": 42,
+    "make": "Volkswagen",
+    "model": "ID.4 1st",
+    "modelYear": 2021,
+    "country": "DE",
+    "topSpeed": 100,
+    "0to60": 7.6,
+    "handling": 76,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+
+
+    "weight": 2097,
+    "gc": "High",
+    "seatCount":5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Electric",
+    "mra": 41.09,
+    "ola": 68.27,
+    "description": "The electric car for the people. Apparently. Card by Andu",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/846803629209419776/ID4.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/846801411576692746/ID4.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/846801412821745766/ID4-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/846801411395944488/ID4-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/846801425136877568/ID4-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/846801415363624960/ID4-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/846801411086090341/ID4-699.png",
+
+    "333TopSpeed": 105,
+    "3330to60": 7.2,
+    "333Handling": 79,
+
+    "666TopSpeed": 110,
+    "6660to60": 6.8, 
+    "666Handling": 81,
+
+    "996TopSpeed": 116,
+    "9960to60": 6.5,
+    "996Handling": 81,
+
+    "969TopSpeed": 116,
+    "9690to60": 6.8,
+    "969Handling": 84,
+
+    "699TopSpeed": 110,
+    "6990to60": 6.5,
+    "699Handling": 84
+}

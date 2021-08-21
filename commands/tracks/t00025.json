@@ -1,0 +1,18 @@
+{
+	"trackName": "City Streets Off-Ramp Long",
+	"weather": "Sunny",
+	"surface": "Asphalt",
+	"speedbumps": 6,
+	"humps": 0,
+	"background": "https://cdn.discordapp.com/attachments/800047734035841037/835166653305585734/sunset-bridge-rendering-final1200x6001.jpg",
+	"map": "https://cdn.discordapp.com/attachments/800047734035841037/835166312459927574/vu.png",
+	
+	"specsDistr": {
+		"topSpeed": 15,
+		"0to60": 75,
+		"handling": 90,
+		"weight": 0,
+		"mra": 35,
+		"ola": 0
+	}
+}

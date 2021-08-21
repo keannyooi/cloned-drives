@@ -1,0 +1,54 @@
+{
+    "rq": 48,
+    "make": "Kia",
+    "model": "K5 GT-Line",
+    "modelYear": 2021,
+    "country": "KR",
+    "topSpeed": 128,
+    "0to60": 7.0,
+    "handling": 77,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Rest of The World"],
+    "isPrize": false,
+
+    "weight": 1464,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 59.32,
+    "ola": 74.36,
+    "description": "The fake K5 GT. Card by Keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819391353729450004/kia_k5_gt-line.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819844448086523934/k5_gt-line_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819844456609480754/k5_gt-line_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819844464176005120/k5_gt-line_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819844494211416064/k5_gt-line_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819844485633671168/k5_gt-line_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819844475257356288/k5_gt-line_699.jpg",
+
+    "333TopSpeed": 132,
+    "3330to60": 6.7,
+    "333Handling": 80,
+
+    "666TopSpeed": 136,
+    "6660to60": 6.3,
+    "666Handling": 82,
+
+	"996TopSpeed": 140,
+    "9960to60": 6.0,
+    "996Handling": 82,
+
+    "969TopSpeed": 140,
+    "9690to60": 6.3,
+    "969Handling": 85,
+
+	"699TopSpeed": 136,
+    "6990to60": 6.0,
+    "699Handling": 85
+}

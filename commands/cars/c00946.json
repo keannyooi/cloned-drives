@@ -1,0 +1,54 @@
+{
+    "rq": 58,
+    "make": "Nissan",
+    "model": "Maxima Platinum",
+    "modelYear": 2019,
+    "country": "JP",
+    "topSpeed": 133,
+    "0to60": 5.9,
+    "handling": 79,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1662,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 71.95,
+    "ola": 96.77,
+    "description": "Let down by its CVT, which is about as inspiring as listening to an audiobook. Card by ChickenMcNuggets.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/840384420770480168/max_plat.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/840382322204737546/max_plat_stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/840382348389384192/max_plat_1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/840382399593709568/max_plat_2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/840382473363128380/max_plat_332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/840382445483851826/max_plat_323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/840382421207744563/max_plat_233.png",
+
+    "333TopSpeed": 137,
+    "3330to60": 5.6,
+    "333Handling": 82,
+
+    "666TopSpeed": 141,
+    "6660to60": 5.3,
+    "666Handling": 84,
+
+    "996TopSpeed": 145,
+    "9960to60": 5.0,
+    "996Handling": 84,
+
+    "969TopSpeed": 145,
+    "9690to60": 5.3,
+    "969Handling": 88,
+
+    "699TopSpeed": 141,
+    "6990to60": 5.0,
+    "699Handling": 88
+}

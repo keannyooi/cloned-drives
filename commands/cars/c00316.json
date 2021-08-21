@@ -1,0 +1,54 @@
+{
+    "rq": 6,
+    "make": "Citroen",
+    "model": "2CV6",
+    "modelYear": 1970,
+    "country": "FR",
+    "topSpeed": 72,
+    "0to60": 37.3,
+    "handling": 59,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Style Icon"],
+    "isPrize": false,
+
+    "weight": 550,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 0,
+    "ola": 37.53,
+    "description": "Despite only having 28 hurspurs, its the most powerful that ever came out from the factory. Card by Spence.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/865620300216533022/image0_1.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/854389731315023922/image0.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/854389757249323018/image0.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/854389785011421261/image0.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/854389824554663976/image0.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/854389812491845633/image0.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/854389799259078656/image0.jpg",
+
+    "333TopSpeed": 79,
+    "3330to60": 35.4,
+    "333Handling": 61,
+
+    "666TopSpeed": 86,
+    "6660to60": 33.6,
+    "666Handling": 63,
+
+    "996TopSpeed": 94,
+    "9960to60": 31.7,
+    "996Handling": 63,
+
+    "969TopSpeed": 94,
+    "9690to60": 33.6,
+    "969Handling": 65,
+
+    "699TopSpeed": 86,
+    "6990to60": 31.7,
+    "699Handling": 65
+}

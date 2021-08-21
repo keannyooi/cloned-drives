@@ -1,0 +1,54 @@
+{
+    "rq": 79,
+    "make": "Vector",
+    "model": "W8 TwinTurbo",
+    "modelYear": 1992,
+    "country": "US",
+    "topSpeed": 218,
+    "0to60": 4.2,
+    "handling": 87,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1619,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 102.44,
+    "ola": 90.48,
+    "description": "The W8 combined the design characteristics of the Carabo with technologies and geometry from fighter jets of the era. What more can you ask for? Card by Based",
+
+    "card": "https://cdn.discordapp.com/attachments/733973415366623274/826747687557922896/Vector_W8_TwinTurbo.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/837784548548804608/Vector_W8_Stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/837784615367213086/Vector_W8_1_Star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/837784630034694174/Vector_W8_2_Star.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/837784944751280208/Vector_W8_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/837784656136110120/Vector_W8_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/837784643654778940/Vector_W8_699.png",
+
+    "333TopSpeed": 220,
+    "3330to60": 4.0,
+    "333Handling": 90,
+
+    "666TopSpeed": 223,
+    "6660to60": 3.8,
+    "666Handling": 93,
+
+    "996TopSpeed": 225,
+    "9960to60": 3.6,
+    "996Handling": 93,
+
+    "969TopSpeed": 225,
+    "9690to60": 3.8,
+    "969Handling": 97,
+
+    "699TopSpeed": 223,
+    "6990to60": 3.6,
+    "699Handling": 97
+}

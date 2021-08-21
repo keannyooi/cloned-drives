@@ -1,0 +1,54 @@
+{
+    "rq": 39,
+    "make": "Volvo",
+    "model": "C30 T5 R-Design",
+    "modelYear": 2010,
+    "country": "SE",
+    "topSpeed": 149,
+    "0to60": 6.6,
+    "handling": 78,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Rest of The World"],
+    "isPrize": false,
+
+    "weight": 1452,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 67.01,
+    "ola": 69.70,
+    "description": "Card by Ahmed.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/849600295951925258/Volvo-C30-T5-R-Design-3.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/856283568857677854/Volvo-C30-T5-R-Design-Stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/856283586634055711/Volvo-C30-T5-R-Design-333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/856283600533061643/Volvo-C30-T5-R-Design-666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/856283637741387786/Volvo-C30-T5-R-Design-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/856283625023733790/Volvo-C30-T5-R-Design-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/856283612110782494/Volvo-C30-T5-R-Design-699.png",
+
+    "333TopSpeed": 152,
+    "3330to60": 6.3,
+    "333Handling": 81,
+
+    "666TopSpeed": 156,
+    "6660to60": 5.9,
+    "666Handling": 83,
+
+    "996TopSpeed": 159,
+    "9960to60": 5.6,
+    "996Handling": 83,
+
+    "969TopSpeed": 159,
+    "9690to60": 5.9,
+    "969Handling": 87,
+
+    "699TopSpeed": 156,
+    "6990to60": 5.6,
+    "699Handling": 87
+}

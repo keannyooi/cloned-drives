@@ -1,0 +1,55 @@
+{
+    "rq": 58,
+    "make": "Mercedes-Benz",
+    "model": "300 SLR Roadster Mille Miglia #722",
+    "modelYear": 1955,
+    "country": "DE",
+    "topSpeed": 186,
+    "0to60": 4.5,
+    "handling": 72,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Unique", "Ultra Expensive", "Motorsport"],
+    "isPrize": true,
+
+    "weight": 900,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Roadster",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 75.00,
+    "ola": 67.33,
+    "description": "A very expensive and exotic racecar from the 50's. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/821061340130050058/SLRMille.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821061893171052564/slrm.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821061899201413140/slrm333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821061908508835850/slrm666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821061935436791808/slrm996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821061927492255744/slrm969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821061919360024576/slrm699.png",
+
+    "333TopSpeed": 189,
+    "3330to60": 4.3,
+    "333Handling": 74,
+
+    "666TopSpeed": 192,
+    "6660to60": 4.1,
+    "666Handling": 77,
+
+    "996TopSpeed": 194,
+    "9960to60": 3.8,
+    "996Handling": 77,
+
+    "969TopSpeed": 194,
+    "9690to60": 4.1,
+    "969Handling": 80,
+
+    "699TopSpeed": 192,
+    "6990to60": 3.8,
+    "699Handling": 80
+
+}

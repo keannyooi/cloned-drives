@@ -1,0 +1,18 @@
+{
+	"trackName": "Spiral Car Park",
+	"weather": "Sunny",
+	"surface": "Asphalt",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://cdn.discordapp.com/attachments/800047734035841037/835160511284903986/1crtyvguhbijnokm.jpg",
+	"map": "https://cdn.discordapp.com/attachments/800047734035841037/835161145601687562/carpark.png",
+	
+	"specsDistr": {
+		"topSpeed": 0,
+		"0to60": 40,
+		"handling": 100,
+		"weight": 50,
+		"mra": 10,
+		"ola": 25
+	}
+}

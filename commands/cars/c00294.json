@@ -1,0 +1,54 @@
+{
+    "rq": 72,
+    "make": "Chevrolet",
+    "model": "S-10 Lingenfelter Pro Stock",
+    "modelYear": 1999,
+    "country": "US",
+    "topSpeed": 213,
+    "0to60": 1.1,
+    "handling": 10,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport", "Unique"],
+    "isPrize": true,
+
+    "weight": 1043,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Pick-up",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 80.88,
+    "ola": 76.36,
+    "description": "Ok, who allowed this? Card by DodgeDemon.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/823954438334316584/1999_Chevrolet_S10_Pro_Stock.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824299550113792030/prostock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824299557638111262/prostock333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824299564927287326/prostock666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824299592849817620/prostock996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824299584892960788/prostock969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824299578257440788/prostock699.png",
+
+    "333TopSpeed": 215,
+    "3330to60": 1.0,
+    "333Handling": 10,
+
+    "666TopSpeed": 218,
+    "6660to60": 1.0,
+    "666Handling": 11,
+
+    "996TopSpeed": 220,
+    "9960to60": 0.9,
+    "996Handling": 11,
+
+    "969TopSpeed": 220,
+    "9690to60": 1.0,
+    "969Handling": 11,
+
+    "699TopSpeed": 218,
+    "6990to60": 0.9,
+    "699Handling": 11
+}

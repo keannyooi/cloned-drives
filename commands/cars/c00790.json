@@ -1,0 +1,54 @@
+{
+    "rq": 86,
+    "make": "McLaren",
+    "model": "625C",
+    "modelYear": 2014,
+    "country": "GB",
+    "topSpeed": 207,
+    "0to60": 3.1,
+    "handling": 92,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Supercar", "The Royal Collection"],
+    "isPrize": false,
+
+    "weight": 1428,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 87.10,
+    "ola": 85.71,
+    "description": "Card by Smega.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/854722552379080754/CD_McLaren_625C.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/854722633043804260/CD_McLaren_625C_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/854722634595434516/CD_McLaren_625C_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/854722642383732766/CD_McLaren_625C_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/854722672222928916/CD_McLaren_625C_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/854722658835234826/CD_McLaren_625C_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/854722649414565898/CD_McLaren_625C_699.png",
+
+    "333TopSpeed": 210,
+    "3330to60": 2.9,
+    "333Handling": 95,
+
+    "666TopSpeed": 212,
+    "6660to60": 2.8,
+    "666Handling": 98,
+
+    "996TopSpeed": 215,
+    "9960to60": 2.6,
+    "996Handling": 98,
+
+    "969TopSpeed": 215,
+    "9690to60": 2.8,
+    "969Handling": 102,
+
+    "699TopSpeed": 212,
+    "6990to60": 2.6,
+    "699Handling": 102
+}

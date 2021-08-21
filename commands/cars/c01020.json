@@ -1,0 +1,54 @@
+{
+    "rq": 78,
+    "make": "Pagani",
+    "model": "Zonda C12 S",
+    "modelYear": 2000,
+    "country": "IT",
+    "topSpeed": 208,
+    "0to60": 3.7,
+    "handling": 88,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eargasm", "Supercar", "Ultra Expensive", "Unique"],
+    "isPrize": false,
+
+    "weight": 1210,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 112.12,
+    "ola": 97.30,
+    "description": "C Dodici Esse. Card by Keanny",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819384158953537586/zonda_c12_s.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819542155457855568/zonda_c12_s_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819542165847146536/zonda_c12_s_333.jpg1",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819542168897060874/zonda_c12_s_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819542207039930368/zonda_c12_s_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819542195681755166/zonda_c12_s_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819542183966277642/zonda_c12_s_699.jpg",
+
+    "333TopSpeed": 211,
+    "3330to60": 3.5,
+    "333Handling": 91,
+
+    "666TopSpeed": 213,
+    "6660to60": 3.3,
+    "666Handling": 94,
+
+    "996TopSpeed": 216,
+    "9960to60": 3.1,
+    "996Handling": 94,
+
+    "969TopSpeed": 216,
+    "9690to60": 3.3,
+    "969Handling": 98,
+
+    "699TopSpeed": 213,
+    "6990to60": 3.1,
+    "699Handling": 98
+}

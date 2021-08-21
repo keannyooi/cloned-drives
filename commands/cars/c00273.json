@@ -1,0 +1,54 @@
+{
+    "rq": 83,
+    "make": "Chevrolet",
+    "model": "Corvette Stingray Z06",
+    "modelYear": 2015,
+    "country": "US",
+    "topSpeed": 185,
+    "0to60": 3.2,
+    "handling": 94,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Supercar"],
+    "isPrize": false,
+
+    "weight": 1598,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 76.19,
+    "ola": 100.00,
+    "description": "Card by Ahmed.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/822283795616497664/Chevrolet-Corvette-Stingray-Z06.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/822284296286896148/Chevrolet-Corvette-Z06-stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/822284319510495302/Chevrolet-Corvette-Z06-333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/822284337722556446/Chevrolet-Corvette-Z06-666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/822284399231893624/Chevrolet-Corvette-Z06-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/822284379153235988/Chevrolet-Corvette-Z06-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/822284360220803092/Chevrolet-Corvette-Z06-699.png",
+
+    "333TopSpeed": 188,
+    "3330to60": 3.0,
+    "333Handling": 97,
+
+    "666TopSpeed": 191,
+    "6660to60": 2.9,
+    "666Handling": 100,
+
+    "996TopSpeed": 193,
+    "9960to60": 2.7,
+    "996Handling": 100,
+
+    "969TopSpeed": 193,
+    "9690to60": 2.9,
+    "969Handling": 104,
+
+    "699TopSpeed": 191,
+    "6990to60": 2.7,
+    "699Handling": 104
+}

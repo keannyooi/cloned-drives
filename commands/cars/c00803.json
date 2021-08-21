@@ -1,0 +1,54 @@
+{
+    "rq": 90,
+    "make": "McLaren",
+    "model": "F1 LM",
+    "modelYear": 1995,
+    "country": "GB",
+    "topSpeed": 225,
+    "0to60": 2.9,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Ultra Expensive", "Eargasm", "The Royal Collection", "Track Day", "Unique"],
+    "isPrize": true,
+
+    "weight": 1062,
+    "gc": "Low",
+    "seatCount": 3,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 126.09,
+    "ola": 93.45,
+    "description": "The road-going version of the legendary Le-Mans winning GTR. Card by Exist",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/854634368534315028/CD_McLaren_F1_LM.png",
+    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/828536753526013982/CD_McLaren_F1_000.png?width=1410&height=878",
+    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/828536759721263104/CD_McLaren_F1_333.png?width=1410&height=878",
+    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/828536771653926922/CD_McLaren_F1_666.png?width=1410&height=878",
+    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/828536796275146802/CD_McLaren_F1_996.png?width=1410&height=878",
+    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/828536788242137088/CD_McLaren_F1_969.png?width=1410&height=878",
+    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/828536777861758977/CD_McLaren_F1_699.png?width=1410&height=878",
+
+    "333TopSpeed": 227,
+    "3330to60": 2.8,
+    "333Handling": 94,
+
+    "666TopSpeed": 230,
+    "6660to60": 2.6,
+    "666Handling": 97,
+
+    "996TopSpeed": 232,
+    "9960to60": 2.5,
+    "996Handling": 97,
+
+    "969TopSpeed": 232,
+    "9690to60": 2.6,
+    "969Handling": 101,
+
+    "699TopSpeed": 230,
+    "6990to60": 2.5,
+    "699Handling": 101
+}

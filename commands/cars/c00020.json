@@ -1,0 +1,54 @@
+{
+    "rq": 58,
+    "make": "Acura",
+    "model": "TL 3.2",
+    "modelYear": 2004,
+    "country": "US",
+    "topSpeed": 150,
+    "0to60": 5.9,
+    "handling": 77,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1580,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 62.11,
+    "ola": 77.97,
+    "description": "The third ultimate under 35k sedan for car and driver. Card by Connor",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/823129479823360010/B.AcuraTL32.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823129467983364126/B.AcuraTL32.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823129493166096424/B.AcuraTL32-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823129509444059136/B.AcuraTL32-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823129562380632074/B.AcuraTL32-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823129532071542784/B.AcuraTL32-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823129523989512232/B.AcuraTL32-699.png",
+
+    "333TopSpeed": 153,
+    "3330to60": 5.6,
+    "333Handling": 80,
+
+    "666TopSpeed": 157,
+    "6660to60": 5.3,
+    "666Handling": 82,
+
+    "996TopSpeed": 160,
+    "9960to60": 5.0,
+    "996Handling": 82,
+
+    "969TopSpeed": 160,
+    "9690to60": 5.3,
+    "969Handling": 85,
+
+    "699TopSpeed": 157,
+    "6990to60": 5.0,
+    "699Handling": 85
+}

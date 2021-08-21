@@ -1,0 +1,54 @@
+{
+    "rq": 23,
+    "make": "Ford",
+    "model": "Fiesta Ghia",
+    "modelYear": 1976,
+    "country": "GB",
+    "topSpeed": 101,
+    "0to60": 11.4,
+    "handling": 64,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 730,
+    "gc": "Medium",
+    "seatCount":4,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 25.56,
+    "ola": 57.89,
+    "description": "Ghia. For luxury. Card by Andu",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/821476822356721714/FiestaGhia76.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821477276478734376/Fiesta.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821477281133232128/Fiesta1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821477286217646131/Fiesta2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821477308581806100/Fiesta996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821477301261697134/Fiesta969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821477293565149215/Fiesta699.png",
+
+    "333TopSpeed": 106,
+    "3330to60": 10.8,
+    "333Handling": 66,
+
+    "666TopSpeed": 111,
+    "6660to60": 10.3,
+    "666Handling": 68,
+
+    "996TopSpeed": 116,
+    "9960to60": 9.7,
+    "996Handling": 68,
+
+    "969TopSpeed": 116,
+    "9690to60": 10.3,
+    "969Handling": 71,
+
+    "699TopSpeed": 111,
+    "6990to60": 9.7,
+    "699Handling": 71
+}

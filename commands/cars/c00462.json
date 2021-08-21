@@ -1,0 +1,54 @@
+{
+    "rq": 33,
+    "make": "Ford",
+    "model": "Focus ZX4 ST",
+    "modelYear": 2005,
+    "country": "US",
+    "topSpeed": 120,
+    "0to60": 7.8,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1214,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 50.65,
+    "ola": 61.54,
+    "description": "A replacement for the discontinued SVT Focus. Card by Keanny",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819391053941178368/ford_focus_zx4_st.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819761872169336832/zx4_st_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819761881366528060/zx4_st_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819761888295780432/zx4_st_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819761932470321172/zx4_st_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819761921741684766/zx4_st_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819761906998706207/zx4_st_699.jpg",
+
+    "333TopSpeed": 124,
+    "3330to60": 7.4,
+    "333Handling": 75,
+
+    "666TopSpeed": 129,
+    "6660to60": 7.0, 
+    "666Handling": 78,
+
+	"996TopSpeed": 133,
+    "9960to60": 6.6,
+    "996Handling": 78,
+
+    "969TopSpeed": 133,
+    "9690to60": 7.0,
+    "969Handling": 81,
+
+	"699TopSpeed": 129,
+    "6990to60": 6.6,
+    "699Handling": 81
+}

@@ -10,7 +10,7 @@
 const Discord = require("discord.js-light");
 const fs = require("fs");
 const carFiles = fs.readdirSync("./commands/cars").filter(file => file.endsWith(".json"));
-const tracksets = fs.readdirSync("./commands/tracksets").filter(file => file.endsWith(".json"));
+const tracksets = fs.readdirSync("./commands/tracks").filter(file => file.endsWith(".json"));
 const packFiles = fs.readdirSync("./commands/packs").filter(file => file.endsWith(".json"));
 const stringSimilarity = require("string-similarity");
 const { DateTime } = require("luxon");

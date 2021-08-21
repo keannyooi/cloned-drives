@@ -1,0 +1,54 @@
+{
+    "rq": 41,
+    "make": "Chevrolet",
+    "model": "El Camino SS 454",
+    "modelYear": 1970,
+    "country": "US",
+    "topSpeed": 163,
+    "0to60": 6.1,
+    "handling": 65,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Muscle Car", "Sleeper"],
+    "isPrize": false,
+
+    "weight": 1723,
+    "gc": "Medium",
+    "seatCount":2,
+    "bodyStyle": "Pickup",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 82.43,
+    "ola": 91.80,
+    "description": "The gorgeous looks of a Chevelle with the ability and convenience of a truck. Card by Johnny",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/821711245492092938/cate-test.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821711134913593344/Chevrolet-El-Camino-SS-454.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821711139179462666/Chevrolet-El-Camino-SS-454-1-star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821711143848116244/Chevrolet-El-Camino-SS-454-2-star.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821711174520406016/Chevrolet-El-Camino-SS-454-332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821711163472740372/Chevrolet-El-Camino-SS-454-323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821711152768614430/Chevrolet-El-Camino-SS-454-233.png",
+
+    "333TopSpeed": 166,
+    "3330to60": 5.8,
+    "333Handling": 67,
+
+    "666TopSpeed": 169,
+    "6660to60": 5.5, 
+    "666Handling": 69,
+
+    "996TopSpeed": 173,
+    "9960to60": 5.2,
+    "996Handling": 69,
+
+    "969TopSpeed": 173,
+    "9690to60": 5.5,
+    "969Handling": 72,
+
+    "699TopSpeed": 169,
+    "6990to60": 5.2,
+    "699Handling": 72
+}

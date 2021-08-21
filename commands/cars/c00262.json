@@ -1,0 +1,54 @@
+{
+    "rq": 29,
+    "make": "Chevrolet",
+    "model": "Citation X-11 Hatchback",
+    "modelYear": 1982,
+    "country": "US",
+    "topSpeed": 108,
+    "0to60": 9.6,
+    "handling": 68,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1297,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 41.20,
+    "ola": 66.67,
+    "description": "Oh the Golf is getting popular, let’s make a no quality disaster hatchback then!. Card by Connor",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819543362092793876/E.ChevyCitationX11Hatch.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819543414806282240/E.ChevyCiitationX11.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819543429717295104/E.ChevyCiitationX11-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819543444006895626/E.ChevyCiitationX11-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819543569680564264/E.ChevyCiitationX11-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819543480967757834/E.ChevyCiitationX11-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819543459911434300/E.ChevyCiitationX11-699.png",
+
+    "333TopSpeed": 113,
+    "3330to60": 9.1,
+    "333Handling": 70,
+
+    "666TopSpeed": 118,
+    "6660to60": 8.6, 
+    "666Handling": 72,
+
+    "996TopSpeed": 122,
+    "9960to60": 8.2,
+    "996Handling": 72,
+
+    "969TopSpeed": 122,
+    "9690to60": 8.6,
+    "969Handling": 75,
+
+    "699TopSpeed": 118,
+    "6990to60": 8.2,
+    "699Handling": 75
+}

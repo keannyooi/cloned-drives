@@ -1,0 +1,57 @@
+﻿{
+    "rq": 71,
+    "make": "Porsche",
+    "model": "911 GT3",
+    "modelYear": 2003,
+    "country": "DE",
+    "topSpeed": 190,
+    "0to60": 4.3,
+    "handling": 88,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Supercar"],
+    "isPrize": false,
+
+
+    "weight": 1380,
+    "gc": "Low",
+    "seatCount":2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 83.98,
+    "ola": 79.07,
+    "description": "21 more hp and a stiffer body. Card by Havvy",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/823436873317482567/Porsche911GT3996.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823447601755193365/996.2_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823447610894319616/996.2_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823447617450672138/996.2_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823447651991158814/996.2_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823447640519475230/996.2_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823447629203111966/996.2_699.jpg",
+
+
+    "333TopSpeed": 193,
+    "3330to60": 4.1,
+    "333Handling": 91,
+
+    "666TopSpeed": 195,
+    "6660to60": 3.9, 
+    "666Handling": 94,
+
+    "996TopSpeed": 198,
+    "9960to60": 3.7,
+    "996Handling": 94,
+
+    "969TopSpeed": 198,
+    "9690to60": 3.9,
+    "969Handling": 98,
+
+    "699TopSpeed": 195,
+    "6990to60": 3.7,
+    "699Handling": 98
+}

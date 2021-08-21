@@ -1,0 +1,54 @@
+{
+    "rq": 57,
+    "make": "Chevrolet",
+    "model": "Suburban High Country",
+    "modelYear": 2021,
+    "country": "US",
+    "topSpeed": 113,
+    "0to60": 6.1,
+    "handling": 68,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 2780,
+    "gc": "High",
+    "seatCount": 7,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 63.54,
+    "ola": 79.00,
+    "description": "Card by DodgeDemon.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824681482433462319/2021_Chevrolet_Suburban_High_Country.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/825416095136743445/usub.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/825416101570805810/usub333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/825416109238255676/usub666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/825416135142277130/usub996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/825416128155091003/usub969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/825416118947545099/usub699.png",
+
+    "333TopSpeed": 118,
+    "3330to60": 5.8,
+    "333Handling": 70,
+
+    "666TopSpeed": 122,
+    "6660to60": 5.5,
+    "666Handling": 72,
+
+    "996TopSpeed": 127,
+    "9960to60": 5.2,
+    "996Handling": 72,
+
+    "969TopSpeed": 127,
+    "9690to60": 5.5,
+    "969Handling": 75,
+
+    "699TopSpeed": 122,
+    "6990to60": 5.2,
+    "699Handling": 75
+}

@@ -1,0 +1,56 @@
+﻿{
+    "rq": 38,
+    "make": "Volkswagen",
+    "model": "Golf VR6",
+    "modelYear": 1991,
+    "country": "DE",
+    "topSpeed": 139,
+    "0to60": 7.1,
+    "handling": 72,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch", "Eargasm"],
+    "isPrize": false,
+
+
+    "weight": 1155,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 62.18,
+    "ola": 80.36,
+    "description": "One of the best sounding hot hatches. Card by Andu",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/840289228126421022/Golf_VR61.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819508790218063912/GolfVR6.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819508798922031104/GolfVR61.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819508805934776330/GolfVR62.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819508834333753364/GolfVR6996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819508824880709632/GolfVR6969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819508814910193674/GolfVR6699.png",
+
+    "333TopSpeed": 143,
+    "3330to60": 6.7,
+    "333Handling": 74,
+
+    "666TopSpeed": 146,
+    "6660to60": 6.4,
+    "666Handling": 77,   
+
+    "996TopSpeed": 150,
+    "9960to60": 6.0,
+    "996Handling": 77,
+
+    "969TopSpeed": 150,
+    "9690to60": 6.4,
+    "969Handling": 80,
+
+    "699TopSpeed": 146,
+    "6990to60": 6.0,
+    "699Handling": 80
+}

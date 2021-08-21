@@ -1,0 +1,54 @@
+{
+    "rq": 96,
+    "make": "Lamborghini",
+    "model": "Sian FKP 37",
+    "modelYear": 2020,
+    "country": "IT",
+    "topSpeed": 221,
+    "0to60": 2.6,
+    "handling": 93,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Hypercar", "Ultra Expensive"],
+    "isPrize": true,
+
+    "weight": 1600,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 96.30,
+    "ola": 100,
+    "description": "Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/856545495882137640/sianfkp38.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/856545970450989096/sian.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/856545975815110656/sian333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/856545983453462528/sian666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/856546022372540436/sian996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/856546011371012096/sian969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/856545998528708638/sian699.png",
+
+    "333TopSpeed": 223,
+    "3330to60": 2.5,
+    "333Handling": 96,
+
+    "666TopSpeed": 226,
+    "6660to60": 2.3,
+    "666Handling": 99,
+
+    "996TopSpeed": 228,
+    "9960to60": 2.2,
+    "996Handling": 99,
+
+    "969TopSpeed": 228,
+    "9690to60": 2.3,
+    "969Handling": 103,
+
+    "699TopSpeed": 226,
+    "6990to60": 2.2,
+    "699Handling": 103
+}

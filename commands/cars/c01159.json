@@ -1,0 +1,57 @@
+﻿{
+    "rq": 49,
+    "make": "Saab",
+    "model": "9-3 Convertible",
+    "modelYear": 1998,
+    "country": "SE",
+    "topSpeed": 143,
+    "0to60": 6.9,
+    "handling": 77,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Rest of the World"],
+    "isPrize": false,
+
+
+    "weight": 1633,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 64.00,
+    "ola": 70.00,
+    "description": "katten sitter. Card by Johnny",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820633427488669766/cate-test.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820633529918423080/Saab-9-3-Convertible.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820633535869353984/Saab-9-3-Convertible-1-star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820633537811972166/Saab-9-3-Convertible-2-star.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820633567473565716/Saab-9-3-Convertible-332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820633551921479681/Saab-9-3-Convertible-323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820633544602025994/Saab-9-3-Convertible-233.png",
+
+
+    "333TopSpeed": 147,
+    "3330to60": 6.6,
+    "333Handling": 80,
+
+    "666TopSpeed": 150,
+    "6660to60": 6.2, 
+    "666Handling": 82,
+
+    "996TopSpeed": 154,
+    "9960to60": 5.9,
+    "996Handling": 82,
+
+    "969TopSpeed": 154,
+    "9690to60": 6.2,
+    "969Handling": 85,
+
+    "699TopSpeed": 150,
+    "6990to60": 5.9,
+    "699Handling": 85
+}

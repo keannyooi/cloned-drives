@@ -1,0 +1,54 @@
+{
+    "rq": 18,
+    "make": "Mitsubishi",
+    "model": "Starion 2000 GX",
+    "modelYear": 1982,
+    "country": "JP",
+    "topSpeed": 112,
+    "0to60": 11.3,
+    "handling": 71,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1185,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 40.21,
+    "ola": 67.26,
+    "description": "The absolute most basic Starion. Card by Keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/856532418974187550/mitsubishi_starion_2000_ex.png",
+    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/856531901451993088/starion_gx_000.jpg",
+    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/856531907935338496/starion_gx_333.jpg",
+    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/856531915116118046/starion_gx_666.jpg",
+    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/856531926905913384/starion_gx_996.jpg",
+    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/856531923039813682/starion_gx_969.jpg",
+    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/856531919079604245/starion_gx_699.jpg",
+
+    "333TopSpeed": 117,
+    "3330to60": 10.7,
+    "333Handling": 73,
+
+    "666TopSpeed": 121,
+    "6660to60": 10.2,
+    "666Handling": 76,
+
+    "996TopSpeed": 126,
+    "9960to60": 9.6,
+    "996Handling": 76,
+
+    "969TopSpeed": 126,
+    "9690to60": 10.2,
+    "969Handling": 79,
+
+    "699TopSpeed": 121,
+    "6990to60": 9.6,
+    "699Handling": 79
+}

@@ -1,0 +1,54 @@
+{
+    "rq": 42,
+    "make": "Opel",
+    "model": "Astra OPC",
+    "modelYear": 2012,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 6.4,
+    "handling": 80,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch"],
+    "isPrize": false,
+
+    "weight": 1550,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 73.56,
+    "ola": 84.38,
+    "description": "Card by Connor",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/845753858100822026/C.OpelAstraOPCnew.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/845754688431325184/C.OpelAstraOPCnew.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/845754701773668352/C.OpelAstraOPCnew-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/845754722891071498/C.OpelAstraOPCnew-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/845754854458130463/C.OpelAstraOPCnew-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/845754753907556412/C.OpelAstraOPCnew-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/845754735289172008/C.OpelAstraOPCnew-699.png",
+
+    "333TopSpeed": 158,
+    "3330to60": 6.1,
+    "333Handling": 83,
+
+    "666TopSpeed": 162,
+    "6660to60": 5.8,
+    "666Handling": 85,
+
+    "996TopSpeed": 165,
+    "9960to60": 5.4,
+    "996Handling": 85,
+
+    "969TopSpeed": 165,
+    "9690to60": 5.8,
+    "969Handling": 89,
+
+    "699TopSpeed": 162,
+    "6990to60": 5.4,
+    "699Handling": 89
+}

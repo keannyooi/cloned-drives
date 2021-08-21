@@ -1,0 +1,54 @@
+{
+    "rq": 48,
+    "make": ["Comptech", "Honda"],
+    "model": "CL Type-S",
+    "modelYear": 2003,
+    "country": "US",
+    "topSpeed": 146,
+    "0to60": 5.7,
+    "handling": 80,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner", "Street Racer", "Sleeper"],
+    "isPrize": false,
+
+    "weight": 1578,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 76.00,
+    "ola": 88.43,
+    "description": "What happens when you throw an additional 100 horsepower at a CL via a supercharger? An Acura that could've dispatched muscle cars of the time. Card by ChickenMcNuggets",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820437730605400124/comptech_cl.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820436145355358208/comptech_stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820436185402966036/comptech_1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820436216729829406/comptech_2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820436313916047420/comptech_332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820436286775099452/comptech_323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820436259032793129/comptech_233.png",
+
+    "333TopSpeed": 150,
+    "3330to60": 5.4,
+    "333Handling": 83,
+
+    "666TopSpeed": 153,
+    "6660to60": 5.1,
+    "666Handling": 85,
+
+	"996TopSpeed": 157,
+    "9960to60": 4.8,
+    "996Handling": 85,
+
+    "969TopSpeed": 157,
+    "9690to60": 5.1,
+    "969Handling": 89,
+
+	"699TopSpeed": 153,
+    "6990to60": 4.8,
+    "699Handling": 89
+}

@@ -1,0 +1,57 @@
+﻿{
+    "rq": 67,
+    "make": "Porsche",
+    "model": "911 GT3",
+    "modelYear": 1999,
+    "country": "DE",
+    "topSpeed": 188,
+    "0to60": 4.6,
+    "handling": 87,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Supercar"],
+    "isPrize": false,
+
+
+    "weight": 1350,
+    "gc": "Low",
+    "seatCount":2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 86.10,
+    "ola": 82.41,
+    "description": "This is a harder-edged, faster 911, for the hundreds of racing Porsche enthusiasts around the world. Card by Havvy",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826574496273006602/Porsche911GT3996.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826574535167836181/000_gt3.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826574539054907423/111_gt3.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826574543577022524/222_gt3.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826574564917116938/332_gt3.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826574553085247530/323_gt3.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826574550334177290/233_gt3.png",
+
+
+    "333TopSpeed": 191,
+    "3330to60": 4.4,
+    "333Handling": 90,
+
+    "666TopSpeed": 194,
+    "6660to60": 4.1, 
+    "666Handling": 93,
+
+    "996TopSpeed": 196,
+    "9960to60": 3.9,
+    "996Handling": 93,
+
+    "969TopSpeed": 196,
+    "9690to60": 4.1,
+    "969Handling": 97,
+
+    "699TopSpeed": 194,
+    "6990to60": 3.9,
+    "699Handling": 97
+}

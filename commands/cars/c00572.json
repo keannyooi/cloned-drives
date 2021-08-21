@@ -1,0 +1,54 @@
+{
+    "rq": 76,
+    "make": "Infiniti",
+    "model": "Q60 Project Black S Concept",
+    "modelYear": 2017,
+    "country": "JP",
+    "topSpeed": 155,
+    "0to60": 3.7,
+    "handling": 94,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Concept", "Unique"],
+    "isPrize": true,
+
+    "weight": 1776,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 78.72,
+    "ola": 89.19,
+    "description": "Head-turning looks, top-shelf speed, and a bright hybrid future. Card by keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/828199752864235570/infiniti_q60_project_black_s_concept.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/828201609594535956/blacc_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/828201617979342878/blacc_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/828201622726377472/blacc_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/828201686069673994/blacc_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/828201666943385630/blacc_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/828201634814361600/blacc_699.jpg",
+
+    "333TopSpeed": 158,
+    "3330to60": 3.5,
+    "333Handling": 97,
+
+    "666TopSpeed": 162,
+    "6660to60": 3.3,
+    "666Handling": 100,
+
+	"996TopSpeed": 165,
+    "9960to60": 3.1,
+    "996Handling": 100,
+
+	"969TopSpeed": 165,
+    "9690to60": 3.3,
+    "969Handling": 104,
+
+    "699TopSpeed": 162,
+    "6990to60": 3.1,
+    "699Handling": 104
+}

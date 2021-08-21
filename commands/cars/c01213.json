@@ -1,0 +1,55 @@
+{
+    "rq": 65,
+    "make": "Subaru",
+    "model": "Impreza WRX STI",
+    "modelYear": 2011,
+    "country": "JP",
+    "topSpeed": 152,
+    "0to60": 5.3,
+    "handling": 82,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer"],
+    "isPrize": false,
+
+    "weight": 1525,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra":  60.92,
+    "ola": 60.38,
+    "description": "Looks like a proper Impreza STI, but more modern. Card by spence",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/828834067486998528/image0.jpg",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/828834151373340672/image0.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/828834165881045062/image0.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/828834179571384320/image0.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/828834223057535026/image0.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/828834196730150922/image0.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/828834210991046656/image0.jpg",
+
+    "333TopSpeed": 155,
+    "3330to60": 5.0,
+    "333Handling": 85,
+
+    "666TopSpeed": 159,
+    "6660to60": 4.8,
+    "666Handling": 87,
+
+    "996TopSpeed": 162,
+    "9960to60": 4.5,
+    "996Handling": 87,
+
+    "969TopSpeed": 162,
+    "9690to60": 4.8,
+    "969Handling": 91,
+
+    "699TopSpeed": 159,
+    "6990to60": 4.5,
+    "699Handling": 91
+
+}

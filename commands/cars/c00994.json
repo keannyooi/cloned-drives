@@ -1,0 +1,54 @@
+{
+    "rq": 58,
+    "make": "Opel",
+    "model": "Insignia Concept",
+    "modelYear": 2003,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 5.8,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Concept"],
+    "isPrize": false,
+
+    "weight": 1950,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 75.32,
+    "ola": 75.86,
+    "description": "LS1 powered full-sized luxury sedan with sliding rear doors. Yeah. Card by Connor.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/859692784771530782/B.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/859693579656232970/OpelInsigniaConcept.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/859693592619384872/OpelInsigniaConcept-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/859693605484494848/OpelInsigniaConcept-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/859693643212652574/OpelInsigniaConcept-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/859693631076827156/OpelInsigniaConcept-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/859693616704651264/OpelInsigniaConcept-699.png",
+
+    "333TopSpeed": 158,
+    "3330to60": 5.5,
+    "333Handling": 80,
+
+    "666TopSpeed": 162,
+    "6660to60": 5.2,
+    "666Handling": 82,
+
+    "996TopSpeed": 165,
+    "9960to60": 4.9,
+    "996Handling": 82,
+
+    "969TopSpeed": 165,
+    "9690to60": 5.2,
+    "969Handling": 85,
+
+    "699TopSpeed": 162,
+    "6990to60": 4.9,
+    "699Handling": 85
+}

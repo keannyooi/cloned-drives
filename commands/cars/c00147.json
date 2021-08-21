@@ -1,0 +1,54 @@
+{
+    "rq": 59,
+    "make": "Bentley",
+    "model": "Mulsanne Speed",
+    "modelYear": 2014,
+    "country": "GB",
+    "topSpeed": 190,
+    "0to60": 4.9,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Royal Collection", "Super Sedan"],
+    "isPrize": false,
+
+    "weight": 2685,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 65.33,
+    "ola": 81.63,
+    "description": "A 190mph limo pop. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/849757452214730762/MulsaneSpeon.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/849758094916714536/MulsaneSpeeeeeed.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/849758099506331688/MulsaneSpeeeeeed333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/849758105273368646/MulsaneSpeeeeeed666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/849758132305002536/MulsaneSpeeeeeed996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/849758122969137173/MulsaneSpeeeeeed969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/849758114202648596/MulsaneSpeeeeeed699.png",
+
+    "333TopSpeed": 193,
+    "3330to60": 4.7,
+    "333Handling": 77,
+
+    "666TopSpeed": 195,
+    "6660to60": 4.4,
+    "666Handling": 80,
+
+    "996TopSpeed": 198,
+    "9960to60": 4.2,
+    "996Handling": 80,
+
+    "969TopSpeed": 198,
+    "9690to60": 4.4,
+    "969Handling": 83,
+
+    "699TopSpeed": 195,
+    "6990to60": 4.2,
+    "699Handling": 83
+}

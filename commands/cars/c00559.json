@@ -1,0 +1,54 @@
+{
+    "rq": 26,
+    "make": "Hyundai",
+    "model": "Accent GL",
+    "modelYear": 1996,
+    "country": "KR",
+    "topSpeed": 117,
+    "0to60": 10.9,
+    "handling": 67,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Rest of The World"],
+    "isPrize": false,
+
+    "weight": 955,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 45.42,
+    "ola": 66.06,
+    "description": "It offers the thrill of being unsafe and the excitement of a rock. Card by Andu",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/821332452966137886/Accento.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821332843749703700/Accent.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821332858588233768/Accent1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821332865203437628/Accent2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821332886044803122/Accent996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821332878473822218/Accent969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821332871196573736/Accent699.png",
+
+    "333TopSpeed": 121,
+    "3330to60": 10.4,
+    "333Handling": 69,
+
+    "666TopSpeed": 126,
+    "6660to60": 9.8,
+    "666Handling": 71,
+
+    "996TopSpeed": 130,
+    "9960to60": 9.3,
+    "996Handling": 71,
+
+    "969TopSpeed": 130,
+    "9690to60": 9.8,
+    "969Handling": 74,
+
+    "699TopSpeed": 126,
+    "6990to60": 9.3,
+    "699Handling": 74
+}

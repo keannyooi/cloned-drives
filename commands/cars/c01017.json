@@ -1,0 +1,54 @@
+{
+    "rq": 87,
+    "make": "Pagani",
+    "model": "Huayra",
+    "modelYear": 2012,
+    "country": "IT",
+    "topSpeed": 224,
+    "0to60": 3.2,
+    "handling": 93,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Hypercar", "Ultra expensive"],
+    "isPrize": false,
+
+    "weight": 1350,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 100.00,
+    "ola": 95.22,
+    "description": "The glitzy, gorgeous Pagani Huayra is simply the king of the niche hypercar market. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/838136367925035068/Huvuyuyray.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/838137409316585472/hyurara.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/838137421237452820/hyurara333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/838137431689003048/hyurara666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/838137460721582080/hyurara996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/838137449079111680/hyurara969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/838137440459030588/hyurara699.png",
+
+    "333TopSpeed": 226,
+    "3330to60": 3.0,
+    "333Handling": 96,
+
+    "666TopSpeed": 229,
+    "6660to60": 2.9,
+    "666Handling": 99,
+
+    "996TopSpeed": 231,
+    "9960to60": 2.7,
+    "996Handling": 99,
+
+    "969TopSpeed": 231,
+    "9690to60": 2.9,
+    "969Handling": 103,
+
+    "699TopSpeed": 229,
+    "6990to60": 2.7,
+    "699Handling": 103
+}

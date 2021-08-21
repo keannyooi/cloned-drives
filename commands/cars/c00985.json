@@ -1,0 +1,54 @@
+{
+    "rq": 30,
+    "make": "Opel",
+    "model": "Corsa 'Color Edition' 1.0 Turbo",
+    "modelYear": 2014,
+    "country": "DE",
+    "topSpeed": 118,
+    "0to60": 10.2,
+    "handling": 71,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1282,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 45.54,
+    "ola": 74.51,
+    "description": "Card by Connor.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/849363368229994556/F.OpelCorsaColorEd10Turbo.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/849363604302331964/E.OpelCorsa10T.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/849363624379416657/E.OpelCorsa10T-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/849363658378706954/E.OpelCorsa10T-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/849363710095130664/E.OpelCorsa10T-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/849363692260032573/E.OpelCorsa10T-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/849363675327889498/E.OpelCorsa10T-699.png",
+
+    "333TopSpeed": 122,
+    "3330to60": 9.7,
+    "333Handling": 73,
+
+    "666TopSpeed": 127,
+    "6660to60": 9.2,
+    "666Handling": 76,
+
+    "996TopSpeed": 131,
+    "9960to60": 8.7,
+    "996Handling": 76,
+
+    "969TopSpeed": 131,
+    "9690to60": 9.2,
+    "969Handling": 79,
+
+    "699TopSpeed": 127,
+    "6990to60": 8.7,
+    "699Handling": 79
+}

@@ -8,7 +8,6 @@
 */
 
 const Discord = require("discord.js-light");
-const disbut = require("discord-buttons");
 const stringSimilarity = require("string-similarity");
 
 module.exports = {

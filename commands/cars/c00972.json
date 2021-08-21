@@ -1,0 +1,54 @@
+{
+    "rq": 39,
+    "make": "Opel",
+    "model": "Astra 2.0 Turbo",
+    "modelYear": 2004,
+    "country": "DE",
+    "topSpeed": 140,
+    "0to60": 7.4,
+    "handling": 77,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1385,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 67.89,
+    "ola": 81.08,
+    "description": "Card by Connor",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/842020495612575754/D.OpelAstra20T.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/842104459605835796/D.OpelAstra20T.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/842104481856749638/D.OpelAstra20T-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/842104501258158110/D.OpelAstra20T-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/842104560516464670/D.OpelAstra20T-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/842104541104570388/D.OpelAstra20T-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/842104523760730152/D.OpelAstra20T-699.png",
+
+    "333TopSpeed": 144,
+    "3330to60": 7.0,
+    "333Handling": 80,
+
+    "666TopSpeed": 147,
+    "6660to60": 6.7,
+    "666Handling": 82,
+
+    "996TopSpeed": 151,
+    "9960to60": 6.3,
+    "996Handling": 82,
+
+    "969TopSpeed": 151,
+    "9690to60": 6.7,
+    "969Handling": 85,
+
+    "699TopSpeed": 144,
+    "6990to60": 6.3,
+    "699Handling": 85
+}

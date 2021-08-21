@@ -1,0 +1,54 @@
+{
+    "rq": 61,
+    "make": "Hyundai",
+    "model": "Genesis Coupe 3.8 R-Spec",
+    "modelYear": 2013,
+    "country": "KR",
+    "topSpeed": 151,
+    "0to60": 5.1,
+    "handling": 81,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Rest of The World"],
+    "isPrize": false,
+
+    "weight": 1537,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 67.11,
+    "ola": 82.35,
+    "description": "Second gen of the surprisingly great Hyundai. Card by Spence",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/825458933626961920/redgenny.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/825459594536812544/GenesisR.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/825459600676880434/GenesisR1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/825459606532259860/GenesisR2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/825459630086815764/GenesisR996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/825459623268057174/GenesisR969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/825459614812078170/GenesisR699.png",
+
+    "333TopSpeed": 154,
+    "3330to60": 4.8,
+    "333Handling": 84,
+
+    "666TopSpeed": 158,
+    "6660to60": 4.6,
+    "666Handling": 86,
+
+    "996TopSpeed": 161,
+    "9960to60": 4.3,
+    "996Handling": 86,
+
+    "969TopSpeed": 161,
+    "9690to60": 4.6,
+    "969Handling": 90,
+
+    "699TopSpeed": 158,
+    "6990to60": 4.3,
+    "699Handling": 90
+}

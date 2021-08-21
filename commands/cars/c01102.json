@@ -1,0 +1,54 @@
+{
+    "rq": 73,
+    "make": "Porsche",
+    "model": "959 Komfort",
+    "modelYear": 1987,
+    "country": "DE",
+    "topSpeed": 195,
+    "0to60": 3.8,
+    "handling": 79,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Supercar"],
+    "isPrize": false,
+
+    "weight": 1450,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 77.55,
+    "ola": 84.21,
+    "description": "Elegant, timeless style. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/844561267209666590/porsche959komfort2.png",
+    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/844561805288144902/959komfort.png",
+    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/844561811897974834/959komfort333.png",
+    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/844561818768900146/959komfort666.png",
+    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/844561868500762634/959komfort996.png",
+    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/844561861851742218/959komfort969.png",
+    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/844561854080745482/959komfort699.png",
+
+    "333TopSpeed": 198,
+    "3330to60": 3.6,
+    "333Handling": 82,
+
+    "666TopSpeed": 200,
+    "6660to60": 3.4, 
+    "666Handling": 84,
+
+    "996TopSpeed": 203,
+    "9960to60": 3.2,
+    "996Handling": 84,
+
+    "969TopSpeed": 203,
+    "9690to60": 3.4,
+    "969Handling": 88,
+
+    "699TopSpeed": 200,
+    "6990to60": 3.2,
+    "699Handling": 88
+}

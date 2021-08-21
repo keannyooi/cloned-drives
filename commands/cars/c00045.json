@@ -1,0 +1,54 @@
+{
+    "rq": 49,
+    "make": ["Alpina", "BMW"],
+    "model": "B8 4.6 Cabrio",
+    "modelYear": 1995,
+    "country": "DE",
+    "topSpeed": 170,
+    "0to60": 5.6,
+    "handling": 79,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner", "Unique"],
+    "isPrize": false,
+
+    "weight": 1650,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Cabriolet",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 70.00,
+    "ola": 78.57,
+    "description": "Only 23 B8 4.6 Cabrios were made, as opposed to 221 sedans. Card by havvy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/828970344772796446/unknown.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/828970217614213130/alpina2_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/828970224799187014/alpina2_111.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/828970225910153226/alpina2_222.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/828970246831865876/alpina2_332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/828970243543400519/alpina2_323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/828970230834659338/alpina2_233.png",
+
+    "333TopSpeed": 173,
+    "3330to60": 5.3,
+    "333Handling": 82,
+
+    "666TopSpeed": 176,
+    "6660to60": 5.0,
+    "666Handling": 84,
+
+    "996TopSpeed": 179,
+    "9960to60": 4.8,
+    "996Handling": 84,
+
+    "969TopSpeed": 179,
+    "9690to60": 5.0,
+    "969Handling": 88,
+
+    "699TopSpeed": 176,
+    "6990to60": 4.8,
+    "699Handling": 88
+}

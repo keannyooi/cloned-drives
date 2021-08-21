@@ -1,0 +1,55 @@
+{
+    "rq": 33,
+    "make": "Mercedes-Benz",
+    "model": "300 GE SWB",
+    "modelYear": 1990,
+    "country": "DE",
+    "topSpeed": 103,
+    "0to60": 12.8,
+    "handling": 59,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 2085,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 26.56,
+    "ola": 62.5,
+    "description": "Powered by Mercedes' 3.0L inline six M103 E30 engine, that generated 168 hp and 140 lb ft of torque. Card by havvy",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/833298435145859082/D33.Mercedes300GESWB.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/833298490003947530/mg_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/833298494306910248/mg_111.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/833298499675750400/mg_222.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/833298516948287518/mg_332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/833298512460251166/mg_323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/833298509767376916/mg_233.png",
+
+    "333TopSpeed": 108,
+    "3330to60": 12.2,
+    "333Handling": 61,
+
+    "666TopSpeed": 113,
+    "6660to60": 11.5,
+    "666Handling": 63,
+
+    "969TopSpeed": 118,
+    "9690to60": 11.5,
+    "969Handling": 65,
+	
+	"996TopSpeed": 118,
+	"9960to60": 10.9,
+	"996Handling": 63,
+	
+	"699TopSpeed": 113,
+	"6990to60": 10.9,
+	"699Handling": 65
+	
+}

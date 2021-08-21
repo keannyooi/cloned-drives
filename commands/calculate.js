@@ -7,35 +7,20 @@
 |__|\__\ |_______/__/     \__\ |__| \__| |__| \__|     |__| 	(this is a watermark that proves that these lines of code are mine)
 */
 
-const Discord = require("discord.js-light");
+const { ErrorMessage, InfoMessage, sendMessage } = require("./sharedfiles/primary.js");
 
 module.exports = {
     name: "calculate",
     aliases: ["calc", "cal"],
     usage: "<what to calculate> | <variables>",
-    args: 0,
+    args: 2,
     category: "Miscellaneous",
     description: "Calculates stuff like handling value, mid-range acceleration, off-the-line acceleration and averages.",
     execute(message, args) {
         let answer;
 		let average = args.slice(1, args.length).map(arg => Number(arg));
-        if (!args.length) {
-			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-            const errorMessage = new Discord.MessageEmbed()
-                .setColor('#fc0303')
-                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle('Error, no calculation specified.')
-                .setDescription("Don't worry, here are some syntax examples for reference.")
-                .addFields(
-                    { name: "Calculating Handling", value: "`cd-calculate handling (insert lateral g-force value here)`" },
-                    { name: "Calculating Mid-Range Acceleration (MRA)", value: "`cd-calculate mra (insert 0-60mph time here) (insert 0-100mph time here)`" },
-                    { name: "Calculating Off-the-Line Acceleration (OLA)", value: "`cd-calculate ola (insert 0-30mph value here) (insert 0-60 time here)`" },
-					{ name: "Averaging Numbers", value: "`cd-calculate average (insert numbers here)`" }
-                )
-                .setTimestamp();
-            return message.channel.send(errorMessage);
-        }
-        else if (args[0].toLowerCase() === "handling" && !isNaN(args[1])) {
+
+        if (args[0].toLowerCase() === "handling" && !isNaN(args[1])) {
             if (args[1] > 1 && args[1] <= 1.0165) {
                 answer = 90;
             }
@@ -112,35 +97,16 @@ module.exports = {
 			answer = plus / average.length;
         }
         else {
-			message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-            const errorMessage = new Discord.MessageEmbed()
-                .setColor('#fc0303')
-                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle('Error, arguments given insufficient or not suitable.')
-                .setDescription("Don't worry, here are some syntax examples for reference.")
-                .addFields(
-                    { name: 'Calculating Handling', value: '`cd-calculate handling (insert lateral g-force value here)`'},
-                    { name: 'Calculating Mid-Ranged Acceleration (MRA)', value: '`cd-calculate mra (insert 0-60mph time here) (insert 0-100mph time here)`'},
-                    { name: 'Calculating Off-the-Line Acceleration (OLA)', value: '`cd-calculate ola (insert 0-30mph value here) (insert 0-60 time here)`'},
-					{ name: "Averaging Numbers", value: "`cd-calculate average (insert numbers here)`" }
-                )
-                .setTimestamp();
-            return message.channel.send(errorMessage);
+            const errorMessage = new ErrorMessage(
+                "arguments given invalid.",
+                "Here are some syntax examples for reference."
+            );
+            return sendMessage(message, errorMessage.create(message));
         }
-        const resultMessage = new Discord.MessageEmbed()
-            .setColor('#03fc24')
-            .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-            .setTitle(`Calculation successful! Result: ${answer}`)
-            .setDescription("Wonder how the value is calculated? Here are the formulas.")
-            .addFields(
-                { name: 'Calculating Handling', value: '`lateral g-force * 90`' },
-				{ name: 'Estimating Handling', value: '`lateral g-force * 90`' },
-                { name: 'Calculating Mid-Ranged Acceleration (MRA)', value: '`100 * (0-60mph time / (0-100mph time - 0-60mph time))`' },
-                { name: 'Calculating Off-the-Line Acceleration (OLA)', value: '`100 * (0-30mph time / (0-60mph time / 2))`' },
-				{ name: "Averaging Numbers", value: "`if you don't know that then your mafs bad`" }
-            )
-            .setTimestamp();
-		message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-        return message.channel.send(resultMessage);
+        const resultMessage = new InfoMessage(
+            "Calculation successful!",
+            `Result: **${answer}**`
+        );
+        return sendMessage(message, resultMessage.create(message));
     }
 }

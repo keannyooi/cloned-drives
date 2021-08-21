@@ -1,0 +1,55 @@
+{
+    "rq": 43,
+    "make": "Ford",
+    "model": "Mustang Boss 302",
+    "modelYear": 1970,
+    "country": "US",
+    "topSpeed": 133,
+    "0to60": 5.8,
+    "handling": 68,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Muscle Car", "Style Icon"],
+    "isPrize": false,
+
+    "weight": 1464,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 50.43,
+    "ola": 82.76,
+    "description": "Made in the golden age of BIG chunky V8s and bad MPG. Card by DodgeDemon.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/825825192260927558/boss302.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/825825951261917224/302Boss.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/825825958173868072/302Boss1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/825825961953329166/302Boss2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/825825983898583101/302Boss996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/825825976540987432/302Boss969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/825825969893670942/302Boss699.png",
+
+    "333TopSpeed": 141,
+    "3330to60": 5.5,
+    "333Handling": 70,
+
+    "666TopSpeed": 141,
+    "6660to60": 5.2,
+    "666Handling": 72,
+
+    "996TopSpeed": 145,
+    "9960to60": 4.9,
+    "996Handling": 72,
+
+    "969TopSpeed": 145,
+    "9690to60": 5.2,
+    "969Handling": 75,
+
+    "699TopSpeed": 141,
+    "6990to60": 4.9,
+    "699Handling": 75
+
+}

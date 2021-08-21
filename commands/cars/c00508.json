@@ -1,0 +1,55 @@
+{
+    "rq": 79,
+    "make": ["Hennessey", "Dodge"],
+    "model": "Viper Venom 600 GTS",
+    "modelYear": 1997,
+    "country": "US",
+    "topSpeed": 205,
+    "0to60": 3.7,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner", "Unique", "Supercar"],
+    "isPrize": true,
+
+    "weight": 1474,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 100,
+    "ola": 86.49,
+    "description": "A tuned Viper by Hennessey that adds 150 more hp to the original Viper GTS. Card by Spence",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/841185770962419722/image0.jpg",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/841185850683424788/image0.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/841185869062864896/image0.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/841185893410144266/image0.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/841185937555980348/image0.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/841185908145651742/image0.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/841185923525115944/image0.jpg",
+
+    "333TopSpeed": 208,
+    "3330to60": 3.5,
+    "333Handling": 94,
+
+    "666TopSpeed": 210,
+    "6660to60": 3.3,
+    "666Handling": 97,
+
+    "969TopSpeed": 213,
+    "9690to60": 3.3,
+    "969Handling": 101,
+	
+	"996TopSpeed": 213,
+	"9960to60": 3.1,
+	"996Handling": 97,
+	
+	"699TopSpeed": 210,
+	"6990to60": 3.1,
+	"699Handling": 101
+	
+}

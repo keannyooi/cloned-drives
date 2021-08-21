@@ -1,0 +1,57 @@
+﻿{
+    "rq": 63,
+    "make": "Porsche",
+    "model": "911 Carrera 4 Cabriolet",
+    "modelYear": 1998,
+    "country": "DE",
+    "topSpeed": 174,
+    "0to60": 5.1,
+    "handling": 85,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1450,
+    "gc": "Low",
+    "seatCount":2,
+    "bodyStyle": "Cabriolet",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 68.92,
+    "ola": 82.35,
+    "description": "Dreaming of a blue sky. Card by Havvy",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824405425952391218/Porsche911Carrera4Cabriolet996.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824405497347964958/car4.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824405501395599460/car4333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824405507220963359/car4666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824405528817041458/car4996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824405522106941450/car4969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824405515798446140/car4699.png",
+
+
+    "333TopSpeed": 177,
+    "3330to60": 4.8,
+    "333Handling": 88,
+
+    "666TopSpeed": 180,
+    "6660to60": 4.6, 
+    "666Handling": 91,
+
+    "996TopSpeed": 180,
+    "9960to60": 4.3,
+    "996Handling": 91,
+
+    "969TopSpeed": 183,
+    "9690to60": 4.6,
+    "969Handling": 94,
+
+    "699TopSpeed": 180,
+    "6990to60": 4.3,
+    "699Handling": 94
+}

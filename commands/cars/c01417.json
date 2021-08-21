@@ -1,0 +1,54 @@
+{
+    "rq": 68,
+    "make": "Volvo",
+    "model": "C30 Polestar Performance Concept",
+    "modelYear": 2010,
+    "country": "SE",
+    "topSpeed": 155,
+    "0to60": 4.4,
+    "handling": 83,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Rest of the World", "Unique", "Concept", "Hot Hatch", "Sleeper"],
+    "isPrize": false,
+
+    "weight": 1420,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 86.27,
+    "ola": 77.27,
+    "description": "Card by Ahmed.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/849600227224190986/Volvo-C30-Polestar-Performance-Concept-2.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/849600468132167700/Volvo-C30-Polestar-Performance-Concept-Stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/849600489040642078/Volvo-C30-Polestar-Performance-Concept-333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/849600512327286794/Volvo-C30-Polestar-Performance-Concept-666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/849600560968630272/Volvo-C30-Polestar-Performance-Concept-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/849600545759952956/Volvo-C30-Polestar-Performance-Concept-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/849600527993929728/Volvo-C30-Polestar-Performance-Concept-699.png",
+
+    "333TopSpeed": 158,
+    "3330to60": 4.2,
+    "333Handling": 86,
+
+    "666TopSpeed": 162,
+    "6660to60": 4.0,
+    "666Handling": 88,
+
+    "996TopSpeed": 165,
+    "9960to60": 3.7,
+    "996Handling": 88,
+
+    "969TopSpeed": 165,
+    "9690to60": 4.0,
+    "969Handling": 92,
+
+    "699TopSpeed": 162,
+    "6990to60": 3.7,
+    "699Handling": 92
+}

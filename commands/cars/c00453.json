@@ -1,0 +1,54 @@
+{
+    "rq": 32,
+    "make": "Ford",
+    "model": "Focus SE",
+    "modelYear": 2000,
+    "country": "US",
+    "topSpeed": 106,
+    "0to60": 9.3,
+    "handling": 72,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1163,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 45.99,
+    "ola": 60.99,
+    "description": "A Focus but sedan. Card by Keanny",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819390705138008104/ford_focus_se.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819770945593016370/focus_se_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819770953340682260/focus_se_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819770961183899658/focus_se_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819771021489602600/focus_se_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819771001683443793/focus_se_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819770986991190036/focus_se_699.jpg",
+
+    "333TopSpeed": 111,
+    "3330to60": 8.8,
+    "333Handling": 74,
+
+    "666TopSpeed": 116,
+    "6660to60": 8.4,
+    "666Handling": 77,
+
+	"996TopSpeed": 121,
+    "9960to60": 7.9,
+    "996Handling": 77,
+
+    "969TopSpeed": 121,
+    "9690to60": 8.4,
+    "969Handling": 80,
+
+	"699TopSpeed": 116,
+    "6990to60": 7.9,
+    "699Handling": 80
+}

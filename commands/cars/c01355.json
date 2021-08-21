@@ -1,0 +1,54 @@
+{
+    "rq": 49,
+    "make": "Volkswagen",
+    "model": "Atlas Cross Sport SEL VR6 R-Line 4Motion",
+    "modelYear": 2020,
+    "country": "DE",
+    "topSpeed": 116,
+    "0to60": 7.9,
+    "handling": 73,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 2074,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 64.23,
+    "ola": 70.89,
+    "description": "The Atlas, quite a useful SUV, now utterly stupid. Added 4WD for the 0% of buyers that will use it. Card by Macan",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/848297581754974308/Atlas_Cross_Sport_SEL_VR6_R-Line_4Motion_20.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/848297746225037366/Volkswagen_Atlas_Cross_Sport_SEL_VR6_R-Line_4Motion_2020_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/848297751346151464/Volkswagen_Atlas_Cross_Sport_SEL_VR6_R-Line_4Motion_2020_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/848297759446794310/Volkswagen_Atlas_Cross_Sport_SEL_VR6_R-Line_4Motion_2020_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/848297785883230278/Volkswagen_Atlas_Cross_Sport_SEL_VR6_R-Line_4Motion_2020_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/848297777096294419/Volkswagen_Atlas_Cross_Sport_SEL_VR6_R-Line_4Motion_2020_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/848297768635596850/Volkswagen_Atlas_Cross_Sport_SEL_VR6_R-Line_4Motion_2020_699.png",
+
+    "333TopSpeed": 120,
+    "3330to60": 7.5,
+    "333Handling": 75,
+
+    "666TopSpeed": 125,
+    "6660to60": 7.1,
+    "666Handling": 78,
+
+    "996TopSpeed": 129,
+    "9960to60": 6.7,
+    "996Handling": 78,
+
+    "969TopSpeed": 129,
+    "9690to60": 7.1,
+    "969Handling": 81,
+
+    "699TopSpeed": 125,
+    "6990to60": 6.7,
+    "699Handling": 81
+}

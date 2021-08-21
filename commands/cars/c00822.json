@@ -1,0 +1,54 @@
+{
+    "rq": 48,
+    "make": ["Mercedes-AMG", "Mercedes-Benz"],
+    "model": "A 38",
+    "modelYear": 2000,
+    "country": "DE",
+    "topSpeed": 130,
+    "0to60": 5.7,
+    "handling": 76,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch", "Oddity", "Unique"],
+    "isPrize": false,
+
+    "weight": 1365,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Petrol",
+    "mra": 72.15,
+    "ola": 77.19,
+    "description": "Conceived as a gift for Mika Häkkinen, but the crazy boffins at AMG deemed it an excellent idea to simply stick another engine in the rear, mounted under the boot floor like a Smart ForTwo. Card by Andu",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/861972048104390666/A38.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/861978612294090752/A38.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/861978629558763550/A38-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/861978642486001674/A38-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/861978656989249546/A38-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/861978671577038868/A38-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/861978688232226816/A38-699.png",
+
+    "333TopSpeed": 134,
+    "3330to60": 5.4,
+    "333Handling": 79,
+
+    "666TopSpeed": 138,
+    "6660to60": 5.1, 
+    "666Handling": 81,
+
+    "996TopSpeed": 142,
+    "9960to60": 4.8,
+    "996Handling": 81,
+
+    "969TopSpeed": 142,
+    "9690to60": 5.1,
+    "969Handling": 84,
+
+    "699TopSpeed": 138,
+    "6990to60": 4.8,
+    "699Handling": 84
+}

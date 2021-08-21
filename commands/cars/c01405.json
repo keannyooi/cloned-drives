@@ -1,0 +1,56 @@
+﻿{
+    "rq": 80,
+    "make": "Volkswagen",
+    "model": "Touareg 4.0 V8 TDI",
+    "modelYear": 2018,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 4.8,
+    "handling": 78,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 2310,
+    "gc": "High",
+    "seatCount":5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 68.57,
+    "ola": 70.83,
+    "description": "The mighty V10 TDI has died, but now there's an even more potent V8 diesel for VW's full-size SUV. Card by Andu",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/848492191835750440/Touareg940.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/848493923948429333/Touareg40TDI18.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/848493923714203688/Touareg40TDI18-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/848493937954127882/Touareg40TDI18-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/848493963895242772/Touareg40TDI18-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/848493975966842931/Touareg40TDI18-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/848493992308244490/Touareg40TDI18-699.png",
+
+    "333TopSpeed": 158,
+    "3330to60": 4.6,
+    "333Handling": 81,
+
+    "666TopSpeed": 162,
+    "6660to60": 4.3, 
+    "666Handling": 83,
+
+    "996TopSpeed": 165,
+    "9960to60": 4.1,
+    "996Handling": 83,
+
+    "969TopSpeed": 165,
+    "9690to60": 4.3,
+    "969Handling": 87,
+
+    "699TopSpeed": 162,
+    "6990to60": 4.1,
+    "699Handling": 87
+}

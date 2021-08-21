@@ -1,0 +1,54 @@
+{
+    "rq": 53,
+    "make": "Lotus",
+    "model": "Elise S Club Racer",
+    "modelYear": 2009,
+    "country": "GB",
+    "topSpeed": 129,
+    "0to60": 5.7,
+    "handling": 89,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Royal Collection", "Unique"],
+    "isPrize": false,
+
+    "weight": 830,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Roadster",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 46.72,
+    "ola": 84.21,
+    "description": "Director of Lotus Car, Luke Bennett, calls the design 'Modern with a classic twist'. He is without a doubt correct. Card by Tom.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/851820970741989436/Lotus_Elise_S_Club_Racer_2009.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/851821210790002698/Lotus_Elise_S_Club_Racer_2009_111.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/851821215345934376/Lotus_Elise_S_Club_Racer_2009_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/851821219745234954/Lotus_Elise_S_Club_Racer_2009_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/851821231904129054/Lotus_Elise_S_Club_Racer_2009_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/851821228192825424/Lotus_Elise_S_Club_Racer_2009_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/851821224358838282/Lotus_Elise_S_Club_Racer_2009_699.jpg",
+
+    "333TopSpeed": 133,
+    "3330to60": 5.4,
+    "333Handling": 92,
+
+    "666TopSpeed": 137,
+    "6660to60": 5.1,
+    "666Handling": 95,
+
+    "996TopSpeed": 141,
+    "9960to60": 4.8,
+    "996Handling": 95,
+
+    "969TopSpeed": 141,
+    "9690to60": 5.1,
+    "969Handling": 99,
+
+    "699TopSpeed": 137,
+    "6990to60": 4.8,
+    "699Handling": 99
+}

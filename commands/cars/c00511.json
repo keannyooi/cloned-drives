@@ -1,0 +1,54 @@
+{
+    "rq": 91,
+    "make": ["HKS", "Mitsubishi"],
+    "model": "Lancer Evolution IX CT230R",
+    "modelYear": 2006,
+    "country": "JP",
+    "topSpeed": 170,
+    "0to60": 2.5,
+    "handling": 91,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Motorsport", "Tuner", "Unique"],
+    "isPrize": true,
+
+    "weight": 1068,
+    "gc": "Low",
+    "seatCount":1,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 45.45,
+    "ola": 78.24,
+    "description": "A superb combination of HKS technology in a car that has beaten numerous best circuit lap times. Card by Johnny",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/822207870716215306/cate-test.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/822207986931335198/HKS-Lancer-Evolution-IX-CT230R.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/822207993131040808/HKS-Lancer-Evolution-IX-CT230R-1-star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/822207995534377021/HKS-Lancer-Evolution-IX-CT230R-2-star.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/822208024663687218/HKS-Lancer-Evolution-IX-CT230R-332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/822208017994743888/HKS-Lancer-Evolution-IX-CT230R-323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/822208012353011762/HKS-Lancer-Evolution-IX-CT230R-233.png",
+
+    "333TopSpeed": 173,
+    "3330to60": 2.4,
+    "333Handling": 94,
+
+    "666TopSpeed": 176,
+    "6660to60": 2.3, 
+    "666Handling": 97,
+
+    "996TopSpeed": 179,
+    "9960to60": 2.1,
+    "996Handling": 97,
+
+    "969TopSpeed": 179,
+    "9690to60": 2.3,
+    "969Handling": 101,
+
+    "699TopSpeed": 176,
+    "6990to60": 2.1,
+    "699Handling": 101
+}

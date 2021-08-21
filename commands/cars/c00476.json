@@ -1,0 +1,55 @@
+{
+    "rq": 66,
+    "make": "Ford",
+    "model": "Mustang Mach-E 4X",
+    "modelYear": 2021,
+    "country": "US",
+    "topSpeed": 114,
+    "0to60": 5.0,
+    "handling": 77,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Eco Friendly", "Muscle Car"],
+    "isPrize": false,
+
+    "weight": 2203,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Electric",
+    "mra": 58.82,
+    "ola": 76.00,
+    "description": "No, this is not a Mustang but behind that name it lived up to the expectations from the crowd. Card by Spence",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819566629242404894/SpenceMachE.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819633434560430110/image0.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819633458308448296/image0.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819633480891236352/image0.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819633550110097438/image0.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819633529877037066/image0.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819633507440656404/image0.jpg",
+
+    "333TopSpeed": 119,
+    "3330to60": 4.8,
+    "333Handling": 80,
+
+    "666TopSpeed": 123,
+    "6660to60": 4.5,
+    "666Handling": 82,
+
+    "996TopSpeed": 128,
+    "9960to60": 4.3,
+    "996Handling": 82,
+
+    "969TopSpeed": 128,
+    "9690to60": 4.5,
+    "969Handling": 85,
+
+    "699TopSpeed": 123,
+    "6990to60": 4.3,
+    "699Handling": 85
+
+}

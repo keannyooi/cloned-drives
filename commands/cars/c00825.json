@@ -1,0 +1,54 @@
+﻿{
+    "rq": 53,
+    "make": ["Mercedes-AMG", "Mercedes-Benz"],
+    "model": "CLK 55",
+    "modelYear": 1999,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 5.2,
+    "handling": 80,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1520,
+    "gc": "Low",
+    "seatCount":4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 76.34,
+    "ola": 80.51,
+    "description": "The naturally aspirated AMG days. Card by Havvy",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824038281599647764/AMGCLK55.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824038353409933352/000_clk55.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824038403493986334/111_clk55.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824038438374342656/222_clk55.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824038557441327184/332_clk55.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824038524691939379/323_clk55.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824038499786817563/233_clk55.png",
+
+    "333TopSpeed": 158,
+    "3330to60": 4.9,
+    "333Handling": 83,
+
+    "666TopSpeed": 162,
+    "6660to60": 4.7, 
+    "666Handling": 85,
+
+    "996TopSpeed": 165,
+    "9960to60": 4.4,
+    "996Handling": 85,
+
+    "969TopSpeed": 165,
+    "9690to60": 4.7,
+    "969Handling": 89,
+
+    "699TopSpeed": 162,
+    "6990to60": 4.4,
+    "699Handling": 89
+}

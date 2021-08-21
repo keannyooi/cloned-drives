@@ -1,0 +1,54 @@
+{
+    "rq": 38,
+    "make": "Mugen",
+    "model": "Civic Si Sedan",
+    "modelYear": 2008,
+    "country": "JP",
+    "topSpeed": 130,
+    "0to60": 6.8,
+    "handling": 79,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer", "Tuner"],
+    "isPrize": false,
+
+    "weight": 1335,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 62.97,
+    "ola": 64.99,
+    "description": "A small taste of Type-R for the USA. Card by Based",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826064293724160040/Mugen_civic_si_sedan.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826064423135215656/Mugen_Civic_Sedan_Stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826064494182268958/Mugen_Civic_Sedan_1_Star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826064502318432316/Mugen_Civic_Sedan_2_Star.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826064533264793600/Mugen_Civic_Sedan_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826064521524412416/Mugen_Civic_Sedan_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826064508676997180/Mugen_Civic_Sedan_699.png",
+
+    "333TopSpeed": 134,
+    "3330to60": 6.5,
+    "333Handling": 82,
+
+    "666TopSpeed": 138,
+    "6660to60": 6.1,
+    "666Handling": 84,
+
+    "996TopSpeed": 142,
+    "9960to60": 5.8,
+    "996Handling": 84,
+
+    "969TopSpeed": 142,
+    "9690to60": 6.1,
+    "969Handling": 88,
+
+    "699TopSpeed": 138,
+    "6990to60": 5.8,
+    "699Handling": 88
+}

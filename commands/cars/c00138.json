@@ -1,0 +1,54 @@
+{
+    "rq": 9,
+    "make": "Bentley",
+    "model": "8-Litre Limousine",
+    "modelYear": 1931,
+    "country": "GB",
+    "topSpeed": 125,
+    "0to60": 16.0,
+    "handling": 58,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Ultra Expensive", "Grand Tourer"],
+    "isPrize": false,
+
+    "weight": 2540,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 47.06,
+    "ola": 90.00,
+    "description": "A huge car with a huge engine. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/823515721254305842/Boatley8Litre.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823515839474565150/8l.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823515845367300156/8l333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823515851659542558/8l666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823515880390262804/8l996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823515871963512882/8l969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823515859397115904/8l699.png",
+
+    "333TopSpeed": 129,
+    "3330to60": 15.2,
+    "333Handling": 60,
+
+    "666TopSpeed": 133,
+    "6660to60": 14.4,
+    "666Handling": 62,
+
+    "996TopSpeed": 137,
+    "9960to60": 13.6,
+    "996Handling": 62,
+
+    "969TopSpeed": 137,
+    "9690to60": 14.4,
+    "969Handling": 64,
+
+	"699TopSpeed": 133,
+    "6990to60": 13.6,
+    "699Handling": 64
+}

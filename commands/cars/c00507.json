@@ -1,0 +1,54 @@
+{
+    "rq": 88,
+    "make": ["Hennessey", "Dodge"],
+    "model": "Viper Venom 1000TT",
+    "modelYear": 2006,
+    "country": "US",
+    "topSpeed": 231,
+    "0to60": 3.1,
+    "handling": 93,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner", "Supercar", "Unique", "Track Day"],
+    "isPrize": false,
+
+    "weight": 1574,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 114.81,
+    "ola": 100.00,
+    "description": "Viper but with double fat twin turbos pushing 1000 hursprs. Card by Preston.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/845345152209518592/2206_Hennessey_Viper_Venom_1000TT.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/837541657817776168/2006_Hennessey_Viper_Venom_1000TT_thumb_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/837541687416717322/2006_Hennessey_Viper_Venom_1000TT_thumb_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/837541708262408202/2006_Hennessey_Viper_Venom_1000TT_thumb_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/837541799944912896/2006_Hennessey_Viper_Venom_1000TT_thumb_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/837541767636451348/2006_Hennessey_Viper_Venom_1000TT_thumb_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/837541733423120425/2006_Hennessey_Viper_Venom_1000TT_thumb_699.png",
+
+    "333TopSpeed": 233,
+    "3330to60": 2.9,
+    "333Handling": 96,
+
+    "666TopSpeed": 236,
+    "6660to60": 2.8,
+    "666Handling": 99,
+
+    "996TopSpeed": 238,
+    "9960to60": 2.6,
+    "996Handling": 99,
+
+    "969TopSpeed": 238,
+    "9690to60": 2.8,
+    "969Handling": 103,
+
+    "699TopSpeed": 236,
+    "6990to60": 2.6,
+    "699Handling": 103
+}

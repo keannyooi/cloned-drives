@@ -1,0 +1,54 @@
+{
+    "rq": 80,
+    "make": "Nissan",
+    "model": "Nismo Super GT MOTUL AUTECH GT-R",
+    "modelYear": 2014,
+    "country": "JP",
+    "topSpeed": 186,
+    "0to60": 3.9,
+    "handling": 96,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport", "Unique"],
+    "isPrize": true,
+
+    "weight": 1020,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 134.48,
+    "ola": 89.00,
+    "description": "The RWD Godzilla. Card by Babanuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/821038963942228038/SuperGT.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821039145379037184/GTRR.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821039152984227880/GTRR333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821039168708673536/GTRR666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821039197242130452/GTRR996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821039189419098173/GTRR969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821039179601018910/GTRR699.png",
+
+    "333TopSpeed": 189,
+    "3330to60": 3.7,
+    "333Handling": 99,
+
+    "666TopSpeed": 192,
+    "6660to60": 3.5,
+    "666Handling": 102,
+
+    "996TopSpeed": 194,
+    "9960to60": 3.3,
+    "996Handling": 102,
+
+    "699TopSpeed": 192,
+    "6990to60": 3.3,
+    "699Handling": 107,
+
+    "969TopSpeed": 194,
+    "969to60": 3.5,
+    "969Handling": 107
+}

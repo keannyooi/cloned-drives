@@ -1,0 +1,55 @@
+{
+    "rq": 72,
+    "make": "Mitsubishi",
+    "model": "Lancer Evolution VIII",
+    "modelYear": 2003,
+    "country": "JP",
+    "topSpeed": 156,
+    "0to60": 4.8,
+    "handling": 86,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer"],
+    "isPrize": false,
+
+    "weight": 1475,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 65.00,
+    "ola": 73.47,
+    "description": "The lowest spec Evo VIII. Card by DodgeDemon.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/823925383119896626/evoorsomething.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823925911577034752/VIII.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823925914705330226/VIII333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823925920468434974/VIII666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823925945047580742/VIII996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823925936578887720/VIII969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823925928337997824/VIII699.png",
+
+    "333TopSpeed": 159,
+    "3330to60": 4.6,
+    "333Handling": 89,
+
+    "666TopSpeed": 163,
+    "6660to60": 4.3,
+    "666Handling": 92,
+
+    "996TopSpeed": 166,
+    "9960to60": 4.1,
+    "996Handling": 92,
+
+    "969TopSpeed": 166,
+    "9690to60": 4.3,
+    "969Handling": 95,
+
+    "699TopSpeed": 163,
+    "6990to60": 4.1,
+    "699Handling": 95
+
+}

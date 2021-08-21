@@ -1,0 +1,54 @@
+{
+    "rq": 36,
+    "make": ["Autodelta", "Alfa Romeo"],
+    "model": "147 1.6 TwinSpark J12",
+    "modelYear": 2002,
+    "country": "GB",
+    "topSpeed": 135,
+    "0to60": 7.0,
+    "handling": 79,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner", "Hot Hatch"],
+    "isPrize": false,
+
+    "weight": 1200,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 53.85,
+    "ola": 80.00,
+    "description": "The lesser-known Autodelta 147. Card by keanny",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/837239408565420042/autodelta_147_1.6_ts_j12.png",
+    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/837238915924361256/autodelta_147_j12_000.jpg",
+    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/837238932272971838/autodelta_147_j12_333.jpg",
+    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/837238936165810206/autodelta_147_j12_666.jpg",
+    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/837238952934244372/autodelta_147_j12_996.jpg",
+    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/837238947762536478/autodelta_147_j12_969.jpg",
+    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/837238944017678336/autodelta_147_j12_699.jpg",
+
+    "333TopSpeed": 139,
+    "3330to60": 6.7,
+    "333Handling": 82,
+
+    "666TopSpeed": 143,
+    "6660to60": 6.3,
+    "666Handling": 84,
+
+    "996TopSpeed": 147,
+    "9960to60": 6.0,
+    "996Handling": 84,
+
+    "969TopSpeed": 147,
+    "9690to60": 6.3,
+    "969Handling": 88,
+
+    "699TopSpeed": 143,
+    "6990to60": 6.0,
+    "699Handling": 88
+}

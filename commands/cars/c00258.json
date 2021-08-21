@@ -1,0 +1,54 @@
+{
+    "rq": 19,
+    "make": "Chevrolet",
+    "model": "Cavalier CS",
+    "modelYear": 1982,
+    "country": "US",
+    "topSpeed": 100,
+    "0to60": 13.1,
+    "handling": 68,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1380,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 21.55,
+    "ola": 61.01,
+    "description": "An Opel, but maybe not, but maybe yes. Card by Connor",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819544891746680853/F.ChevyCavalierCS.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/833255673827295232/F.ChevyCavalierCS.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/833255687693271061/F.ChevyCavalierCS-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/833255700129120256/F.ChevyCavalierCS-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/833255752587673620/F.ChevyCavalierCS-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/833255738709245992/F.ChevyCavalierCS-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/833255713530183690/F.ChevyCavalierCS-699.png",
+
+    "333TopSpeed": 105,
+    "3330to60": 12.4,
+    "333Handling": 70,
+
+    "666TopSpeed": 110,
+    "6660to60": 11.8,
+    "666Handling": 72,
+
+    "996TopSpeed": 116,
+    "9960to60": 11.1,
+    "996Handling": 72,
+
+    "969TopSpeed": 116,
+    "9690to60": 11.8,
+    "969Handling": 75,
+
+    "699TopSpeed": 110,
+    "6990to60": 11.1,
+    "699Handling": 75
+}

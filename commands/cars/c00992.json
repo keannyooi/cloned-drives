@@ -1,0 +1,54 @@
+{
+    "rq": 43,
+    "make": "Opel",
+    "model": "Insignia 2.0 CDTI BiTurbo",
+    "modelYear": 2013,
+    "country": "DE",
+    "topSpeed": 143,
+    "0to60": 8.0,
+    "handling": 77,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1708,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Standard",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 56.74,
+    "ola": 70.00,
+    "description": "Mid cycle update for the Insignia delivered mostly cosmetic updates but also amongst them a 2 litre twin-turbocharged diesel with 195 hp. Card by Connor.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/857960091907260476/C.OpelInsignia20CDTI2Turbo.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/857960331015356456/OpelInsignia2Turbo.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/857960342750756864/OpelInsignia2Turbo-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/857960355975266334/OpelInsignia2Turbo-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/857960399634563072/OpelInsignia2Turbo-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/857960380529639434/OpelInsignia2Turbo-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/857960367355461632/OpelInsignia2Turbo-699.png",
+
+    "333TopSpeed": 147,
+    "3330to60": 7.6,
+    "333Handling": 80,
+
+    "666TopSpeed": 150,
+    "6660to60": 7.2,
+    "666Handling": 82,
+
+    "996TopSpeed": 154,
+    "9960to60": 6.8,
+    "996Handling": 82,
+
+    "969TopSpeed": 154,
+    "9690to60": 7.2,
+    "969Handling": 85,
+
+    "699TopSpeed": 150,
+    "6990to60": 6.8,
+    "699Handling": 85
+}

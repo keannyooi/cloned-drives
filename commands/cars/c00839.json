@@ -1,0 +1,54 @@
+{
+    "rq": 77,
+    "make": ["Mercedes-AMG", "Mercedes-Benz"],
+    "model": "SLS",
+    "modelYear": 2010,
+    "country": "DE",
+    "topSpeed": 197,
+    "0to60": 3.6,
+    "handling": 88,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Grand Tourer","Supercar"],
+    "isPrize": false,
+
+    "weight": 1620,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 90.02,
+    "ola": 90.28,
+    "description": "Sure, you can have the sharper handling McLaren 12C for the same money, while a Ferrari 458 Italia is not much more. But then neither of those have gullwing doors, do they? Card by havvy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/860514656443826194/unknown.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/860515641349898271/sls_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/860514729588162570/sls_111.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/860514733412450304/sls_222.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/860514750618271774/sls_332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/860514744486068264/sls_323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/860514739292864542/sls_233.png",
+
+    "333TopSpeed": 200,
+    "3330to60": 3.4,
+    "333Handling": 91,
+
+    "666TopSpeed": 202,
+    "6660to60": 3.2,
+    "666Handling": 94,
+
+    "996TopSpeed": 205,
+    "9960to60": 3.1,
+    "996Handling": 94,
+
+    "969TopSpeed": 205,
+    "9690to60": 3.2,
+    "969Handling": 98,
+
+    "699TopSpeed": 202,
+    "6990to60": 3.1,
+    "699Handling": 98
+}

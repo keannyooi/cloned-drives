@@ -1,0 +1,54 @@
+﻿{
+    "rq": 22,
+    "make": "Lotus",
+    "model": "Eleven",
+    "modelYear": 1957,
+    "country": "GB",
+    "topSpeed": 134,
+    "0to60": 9.0,
+    "handling": 70,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Ultra Expensive", "Unique", "Innovative", "Motorsport", "Eargasm"],
+    "isPrize": false,
+
+    "weight": 412,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Roadster",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 69.23,
+    "ola": 64.44,
+    "description": "The car form of aerodynamics. Card by Spence",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826132895373983764/loltus11.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826133201951916132/L11.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826133206800793691/l11333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826133211389886474/l11666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826133238283108352/l11996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826133227978489916/l11969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826133220239081562/l11699.png",
+
+    "333TopSpeed": 138,
+    "3330to60": 8.6,
+    "333Handling": 72,
+
+    "666TopSpeed": 142,
+    "6660to60": 8.1,
+    "666Handling": 75,
+
+    "996TopSpeed": 146,
+    "9960to60": 7.7,
+    "996Handling": 75,
+
+    "969TopSpeed": 146,
+    "9690to60": 8.1,
+    "969Handling": 78,
+
+    "699TopSpeed": 142,
+    "6990to60": 7.7,
+    "699Handling": 78
+}

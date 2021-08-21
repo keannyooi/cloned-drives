@@ -1,0 +1,56 @@
+﻿{
+    "rq": 37,
+    "make": "Subaru",
+    "model": "Legacy 2.5 GT",
+    "modelYear": 1993,
+    "country": "JP",
+    "topSpeed": 110,
+    "0to60": 8.6,
+    "handling": 71,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1422,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 52.4,
+    "ola": 68.52,
+    "description": "Blue filter. Card by Havvy",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/823446260816019496/SubaruLegacy2.5GT.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823446310651822140/000_leg2.5.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823446318546419722/111_leg2.5.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823446322594054144/222_leg2.5.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823446339572596736/332_leg2.5.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823446334061019156/323_leg2.5.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823446329791217684/233_leg2.5.png",
+
+"333TopSpeed": 115,
+    "3330to60": 8.2,
+    "333Handling": 73,
+
+    "666TopSpeed": 119,
+    "6660to60": 7.7, 
+    "666Handling": 76,
+
+    "996TopSpeed": 124,
+    "9960to60": 7.3,
+    "996Handling": 76,
+
+    "969TopSpeed": 124,
+    "9690to60": 7.7,
+    "969Handling": 79,
+
+    "699TopSpeed": 119,
+    "6990to60": 7.3,
+    "699Handling": 79
+}

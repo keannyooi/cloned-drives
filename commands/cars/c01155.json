@@ -1,0 +1,54 @@
+{
+    "rq": 89,
+    "make": "RUF",
+    "model": "CTR3",
+    "modelYear": 2007,
+    "country": "DE",
+    "topSpeed": 233,
+    "0to60": 3.1,
+    "handling": 92,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Supercar", "Unique", "Track Day"],
+    "isPrize": false,
+
+    "weight": 1400,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 106.9,
+    "ola": 90.32,
+    "description": "Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/850408997801820180/ctr3withnewtopspeed.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/850409321325527160/rufcrt3.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/850409326685847632/rufcrt3333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/850409334286319646/rufcrt3666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/850409366288859206/rufcrt3996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/850409352309243914/rufcrt3969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/850409342724341800/rufcrt3699.png",
+
+    "333TopSpeed": 235,
+    "3330to60": 2.9,
+    "333Handling": 95,
+
+    "666TopSpeed": 237,
+    "6660to60": 2.8,
+    "666Handling": 98,
+
+    "996TopSpeed": 240,
+    "9960to60": 2.6,
+    "996Handling": 98,
+
+    "969TopSpeed": 240,
+    "9690to60": 2.8,
+    "969Handling": 102,
+
+    "699TopSpeed": 237,
+    "6990to60": 2.6,
+    "699Handling": 102
+}

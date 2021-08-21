@@ -1,0 +1,54 @@
+{
+    "rq": 10,
+    "make": "Honda",
+    "model": "EV Plus",
+    "modelYear": 1997,
+    "country": "JP",
+    "topSpeed": 80,
+    "0to60": 17.0,
+    "handling": 63,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+
+    "weight": 1628,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 0.00,
+    "ola": 57.65,
+    "description": "Legend has it that Honda's project leader once flipped shit on the car's early prototype. Card by Keanny",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/865583268102537216/ev_plos.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819550068926971935/ev_plus_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819550077123166248/ev_plus_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819550082088304661/ev_plus_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819550112967688202/ev_plus_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819550103698276372/ev_plus_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819550092574851112/ev_plus_699.jpg",
+
+    "333TopSpeed": 87,
+    "3330to60": 16.2,
+    "333Handling": 65,
+
+    "666TopSpeed": 93,
+    "6660to60": 15.3, 
+    "666Handling": 67,
+
+	"996TopSpeed": 100,
+    "9960to60": 14.5,
+    "996Handling": 77,
+
+    "969TopSpeed": 100,
+    "9690to60": 15.3,
+    "969Handling": 70,
+
+	"699TopSpeed": 93,
+    "6990to60": 14.5,
+    "699Handling": 70
+}

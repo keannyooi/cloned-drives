@@ -1,0 +1,54 @@
+{
+    "rq": 89,
+    "make": ["Alpina", "BMW"],
+    "model": "B7 Bi-Turbo",
+    "modelYear": 2020,
+    "country": "DE",
+    "topSpeed": 205,
+    "0to60": 3.2,
+    "handling": 85,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Tuner", "Super Sedan"],
+    "isPrize": false,
+
+    "weight": 2207,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 76.19,
+    "ola": 82.35,
+    "description": "When there are city bumps on a test bowl. Card by DodgeDemon",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819421060323606579/2020_Alpina_B7_BiTurbo.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823598477409910815/B7.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823598483860488232/b7333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823598491821539379/b7666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823598521974128650/b7996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823598512741810186/b7969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823598504542732308/b7699.png",
+
+    "333TopSpeed": 208,
+    "3330to60": 3.0,
+    "333Handling": 88,
+
+    "666TopSpeed": 210,
+    "6660to60": 2.9,
+    "666Handling": 91,
+
+    "996TopSpeed": 213,
+    "9960to60": 2.7,
+    "996Handling": 91,
+
+    "969TopSpeed": 213,
+    "9690to60": 2.9,
+    "969Handling": 94,
+
+    "699TopSpeed": 210,
+    "6990to60": 2.7,
+    "699Handling": 94
+}

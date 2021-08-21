@@ -1,0 +1,57 @@
+﻿{
+    "rq": 77,
+    "make": "Porsche",
+    "model": "911 GT2",
+    "modelYear": 2001,
+    "country": "DE",
+    "topSpeed": 195,
+    "0to60": 3.8,
+    "handling": 90,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Supercar"],
+    "isPrize": false,
+
+
+    "weight": 1440,
+    "gc": "Low",
+    "seatCount":4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 82.83,
+    "ola": 72.83,
+    "description": "The 911 GT2 has all the ingredients wanted and expected from a high-end Porsche, but all to a greater degree. Card by Havvy",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826536593577082880/Porsche911GT2996.1.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826536652687147059/000_gt2.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826536657099817010/111_gt2.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826536661574746192/222_gt2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826536675458941017/332_gt2.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826536671155191828/323_gt2.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826536665299812412/233_gt2.png",
+
+
+    "333TopSpeed": 198,
+    "3330to60": 3.6,
+    "333Handling": 93,
+
+    "666TopSpeed": 200,
+    "6660to60": 3.4, 
+    "666Handling": 96,
+
+    "996TopSpeed": 203,
+    "9960to60": 3.2,
+    "996Handling": 96,
+
+    "969TopSpeed": 203,
+    "9690to60": 3.4,
+    "969Handling": 100,
+
+    "699TopSpeed": 200,
+    "6990to60": 3.2,
+    "699Handling": 100
+}

@@ -1,0 +1,54 @@
+{
+    "rq": 11,
+    "make": "Honda",
+    "model": "S660",
+    "modelYear": 2015,
+    "country": "JP",
+    "topSpeed": 87,
+    "0to60": 11.9,
+    "handling": 72,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Kei Car"],
+    "isPrize": false,
+
+    "weight": 840,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Roadster",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 0.00,
+    "ola": 58.70,
+    "description": "The epitome of driving a slow car fast. Card by Keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819392195165290516/s660_yayyyyyyyyyyyy.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819458161471389726/s660_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819458170837663794/s660_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819458174712807424/s660_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819458218911989840/s660_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819458205146415114/s660_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819458191284240394/s660_699.jpg",
+
+    "333TopSpeed": 93,
+    "3330to60": 11.3,
+    "333Handling": 74,
+
+    "666TopSpeed": 99,
+    "6660to60": 10.7,
+    "666Handling": 77,
+
+    "996TopSpeed": 105,
+    "9960to60": 10.1,
+    "996Handling": 77,
+
+    "969TopSpeed": 105,
+    "9690to60": 10.7,
+    "969Handling": 80,
+
+    "699TopSpeed": 99,
+    "6990to60": 10.1,
+    "699Handling": 80
+}

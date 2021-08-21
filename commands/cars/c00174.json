@@ -1,0 +1,54 @@
+{
+    "rq": 49,
+    "make": "BMW",
+    "model": "i8 Hydrogen Fuel Cell eDrive Prototype",
+    "modelYear": 2015,
+    "country": "DE",
+    "topSpeed": 124,
+    "0to60": 5.7,
+    "handling": 78,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eco-Friendly", "Unique", "Concept"],
+    "isPrize": false,
+
+    "weight": 1600,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Hydrogen",
+    "mra": 64.04,
+    "ola": 66.67,
+    "description": "Built in 2012, this prototype has been called one of the brands most advanced test mules, despite being unveiled 3 years later and being slower than the production i8. Card by keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/840048720829218848/bmw_i8_hydrogen_fuel_cell_edrive.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/840052957742628874/i8_hydrogen_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/840052965738151966/i8_hydrogen_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/840052969508831242/i8_hydrogen_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/840052982133555200/i8_hydrogen_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/840052977195941898/i8_hydrogen_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/840052972805029898/i8_hydrogen_699.jpg",
+
+    "333TopSpeed": 128,
+    "3330to60": 5.4,
+    "333Handling": 81,
+
+    "666TopSpeed": 132,
+    "6660to60": 5.1,
+    "666Handling": 83,
+
+    "996TopSpeed": 137,
+    "9960to60": 4.8,
+    "996Handling": 83,
+
+    "969TopSpeed": 137,
+    "9690to60": 5.1,
+    "969Handling": 87,
+
+    "699TopSpeed": 132,
+    "6990to60": 4.8,
+    "699Handling": 87
+}

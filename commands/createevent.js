@@ -10,7 +10,7 @@
 const Discord = require("discord.js-light");
 const fs = require("fs");
 const carFiles = fs.readdirSync('./commands/cars').filter(file => file.endsWith('.json'));
-const tracksets = fs.readdirSync("./commands/tracksets").filter(file => file.endsWith('.json'));
+const tracksets = fs.readdirSync("./commands/tracks").filter(file => file.endsWith('.json'));
 const { DateTime } = require("luxon");
 
 module.exports = {

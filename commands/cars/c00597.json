@@ -1,0 +1,54 @@
+{
+    "rq": 64,
+    "make": "Jaguar",
+    "model": "XE S",
+    "modelYear": 2017,
+    "country": "GB",
+    "topSpeed": 155,
+    "0to60": 4.5,
+    "handling": 86,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1717,
+    "gc": "Low",
+    "seatCount":5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 67.31,
+    "ola": 66.67,
+    "description": "The XE S is a sleeper; no one would expect such admirable results out of something that looks exactly like a generic upscale sedan. Card by ChickenMcNuggets",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820437013206401044/xes.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820131005259448390/xes_stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820131046174490634/xes_1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820131080383758336/xes_2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820131174466846772/xes_332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820131142564577310/xes_323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820131110834143242/xes_233.png",
+
+    "333TopSpeed": 158,
+    "3330to60": 4.3,
+    "333Handling": 89,
+
+    "666TopSpeed": 162,
+    "6660to60": 4.1, 
+    "666Handling": 92,
+
+    "996TopSpeed": 165,
+    "9960to60": 3.8,
+    "996Handling": 92,
+
+    "969TopSpeed": 165,
+    "9690to60": 4.1,
+    "969Handling": 95,
+
+    "699TopSpeed": 162,
+    "6990to60": 3.8,
+    "699Handling": 95
+}

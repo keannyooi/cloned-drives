@@ -1,0 +1,54 @@
+﻿{
+    "rq": 10,
+    "make": ["Electric Car Corporation", "Citroen"],
+    "model": "C1 ev'ie",
+    "modelYear": 2009,
+    "country": "GB",
+    "topSpeed": 60,
+    "0to60": 19.5,
+    "handling": 67,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+
+    "weight": 890,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 0.00,
+    "ola": 61.54,
+    "description": "The first reasonable electric car in the UK is a Citroen that some fellows at Hertfordshire converted to a pleasant and safely-driving EV in 24 man-hours. Card by keanny",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/865584726714089482/electric_c1_yse.png",
+    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/845923096627904512/evie_000.jpg",
+    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/845923103229608006/evie_333.jpg",
+    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/845923107498885150/evie_666.jpg",
+    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/845923120108011522/evie_996.jpg",
+    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/845923115481300992/evie_969.jpg",
+    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/845923111861878834/evie_699.jpg",
+
+    "333TopSpeed": 69,
+    "3330to60": 18.5,
+    "333Handling": 69,
+
+    "666TopSpeed": 77,
+    "6660to60": 17.6,
+    "666Handling": 71,
+
+    "996TopSpeed": 86,
+    "9960to60": 16.6,
+    "996Handling": 71,
+
+    "969TopSpeed": 86,
+    "9690to60": 17.6,
+    "969Handling": 74,
+
+    "699TopSpeed": 77,
+    "6990to60": 16.6,
+    "699Handling": 74
+}

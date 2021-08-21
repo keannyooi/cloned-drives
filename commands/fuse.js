@@ -7,8 +7,7 @@
 |__|\__\ |_______/__/     \__\ |__| \__| |__| \__|     |__| 	(this is a watermark that proves that these lines of code are mine)
 */
 
-const Discord = require("discord.js-light");
-const disbut = require("discord-buttons");
+const Discord = require("discord.js");
 const stringSimilarity = require("string-similarity");
 
 module.exports = {

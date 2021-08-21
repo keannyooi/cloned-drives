@@ -1,0 +1,54 @@
+{
+    "rq": 26,
+    "make": "Subaru",
+    "model": "GL Turbo Wagon",
+    "modelYear": 1983,
+    "country": "JP",
+    "topSpeed": 94,
+    "0to60": 13.6,
+    "handling": 59,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1185,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 17.00,
+    "ola": 60.29,
+    "description": "Subaru's attempt at making the public forget about the 360 and it's previous lineup. Offered with a turbocharged engine producing a mindblowing 95hp with a seven psi boost. It was also the US Official Ski Team car. Card by Ahmed.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/865591501332152360/Subaru-GL-Turbo-Wagon-1_1.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/848401527390339122/Subaru-GL-Turbo-Wagon-Stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/848401552132931594/Subaru-GL-Turbo-Wagon-333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/848401564359589918/Subaru-GL-Turbo-Wagon-666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/848401610652385330/Subaru-GL-Turbo-Wagon-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/848401598917115924/Subaru-GL-Turbo-Wagon-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/848401578812768257/Subaru-GL-Turbo-Wagon-699.png",
+
+    "333TopSpeed": 100,
+    "3330to60": 12.9,
+    "333Handling": 61,
+
+    "666TopSpeed": 105,
+    "6660to60": 12.2,
+    "666Handling": 63,
+
+    "996TopSpeed": 111,
+    "9960to60": 11.6,
+    "996Handling": 63,
+
+    "969TopSpeed": 111,
+    "9690to60": 12.2,
+    "969Handling": 65,
+
+    "699TopSpeed": 105,
+    "6990to60": 11.6,
+    "699Handling": 65
+}

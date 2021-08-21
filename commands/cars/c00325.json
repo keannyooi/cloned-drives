@@ -1,0 +1,54 @@
+{
+    "rq": 62,
+    "make": "Cobb Tuning",
+    "model": "Focus ST",
+    "modelYear": 2013,
+    "country": "US",
+    "topSpeed": 155,
+    "0to60": 5.5,
+    "handling": 87,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch", "Tuner"],
+    "isPrize": false,
+
+    "weight": 1460,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.27,
+    "ola": 98.06,
+    "description": "bb car bb car bb car bb car bb car. Card by Keanny",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819390409901342790/cobb_tuning_focus.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819510804855652352/cobb_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819510814137909268/cobb_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819510821658034176/cobb_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819510871121723412/cobb_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819510843447443476/cobb_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819510832799023124/cobb_699.jpg",
+
+    "333TopSpeed": 158,
+    "3330to60": 5.2,
+    "333Handling": 90,
+
+    "666TopSpeed": 162,
+    "6660to60": 5.0, 
+    "666Handling": 93,
+
+    "996TopSpeed": 165,
+    "9960to60": 4.7,
+    "996Handling": 93,
+
+    "969TopSpeed": 165,
+    "9690to60": 5.0,
+    "969Handling": 97,
+
+    "699TopSpeed": 162,
+    "6990to60": 4.7,
+    "699Handling": 97
+}

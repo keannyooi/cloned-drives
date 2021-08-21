@@ -1,0 +1,54 @@
+{
+    "rq": 52,
+    "make": "Ford",
+    "model": "Focus ST",
+    "modelYear": 2012,
+    "country": "GB",
+    "topSpeed": 152,
+    "0to60": 6.3,
+    "handling": 84,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch"],
+    "isPrize": false,
+
+    "weight": 1362,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 63.00,
+    "ola": 92.06,
+    "description": "Wheelspin gang. Card by Andu",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820393646548451378/FocusST.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820393432160665611/FocusST.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820393442228043817/FocusST1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820393450117529651/FocusST2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820393471298633811/FocusST996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820393465329745950/FocusST969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820393458073075712/FocusST699.png",
+
+    "333TopSpeed": 155,
+    "3330to60": 6.0,
+    "333Handling": 87,
+
+    "666TopSpeed": 159,
+    "6660to60": 5.7,
+    "666Handling": 90,
+
+    "996TopSpeed": 162,
+    "9960to60": 5.4,
+    "996Handling": 90,
+
+    "969TopSpeed": 162,
+    "9690to60": 5.7,
+    "969Handling": 93,
+
+    "699TopSpeed": 159,
+    "6990to60": 5.4,
+    "699Handling": 93
+}

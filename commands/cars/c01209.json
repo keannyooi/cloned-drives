@@ -1,0 +1,54 @@
+{
+    "rq": 71,
+    "make": "Subaru",
+    "model": "Impreza WRX STI",
+    "modelYear": 1997,
+    "country": "JP",
+    "topSpeed": 155,
+    "0to60": 4.6,
+    "handling": 81,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer"],
+    "isPrize": false,
+
+    "weight": 1250,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.27,
+    "ola": 60,
+    "description": "The first STI variant of the Impreza, made with the DNA from its rally counterpart",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/838928678515114044/image0.jpg",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/838928752255828028/image0.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/838928768977862656/image0.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/838928783359868959/image0.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/838928809608347670/image0.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/838928797876486204/image0.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/838928823109025792/image0.jpg",
+
+    "333TopSpeed": 158,
+    "3330to60": 4.4,
+    "333Handling": 84,
+
+    "666TopSpeed": 162,
+    "6660to60": 4.1,
+    "666Handling": 86,
+
+    "699TopSpeed": 162,
+    "6990to60": 3.9,
+    "699Handling": 90,
+
+    "969TopSpeed": 165,
+    "9690to60": 4.1,
+    "969Handling": 90,
+
+    "996TopSpeed": 165,
+    "9960to60": 3.9,
+    "996Handling": 86
+}

@@ -1,0 +1,54 @@
+{
+    "rq": 93,
+    "make": "Chrysler",
+    "model": "ME Four-Twelve",
+    "modelYear": 2004,
+    "country": "US",
+    "topSpeed": 248,
+    "0to60": 2.9,
+    "handling": 94,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Concept", "Supercar", "Unique"],
+    "isPrize": true,
+
+    "weight": 1310,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 87.88,
+    "ola": 87.93,
+    "description": "That time Chrysler went all in, they created this one-of-a-kind masterpiece. Card by DodgeDemon.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824680428489277521/me12.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/825389132141821972/412.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/825389137351671808/412333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/825389147899691018/412666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/825389180405809172/412996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/825389168484941824/412969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/825389157832196166/412699.png",
+
+    "333TopSpeed": 250,
+    "3330to60": 2.8,
+    "333Handling": 97,
+
+    "666TopSpeed": 252,
+    "6660to60": 2.6,
+    "666Handling": 100,
+
+    "996TopSpeed": 254,
+    "9960to60": 2.5,
+    "996Handling": 100,
+
+	"969TopSpeed": 254,
+    "9690to60": 2.6,
+    "969Handling": 104,
+
+    "699TopSpeed": 252,
+    "6990to60": 2.5,
+    "699Handling": 104
+}

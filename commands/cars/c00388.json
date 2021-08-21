@@ -1,0 +1,54 @@
+{
+    "rq": 83,
+    "make": "Ferrari",
+    "model": "599 GTB Fiorano",
+    "modelYear": 2006,
+    "country": "IT",
+    "topSpeed": 205,
+    "0to60": 3.3,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Supercar"],
+    "isPrize": false,
+
+    "weight": 1700,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 86.84,
+    "ola": 72.73,
+    "description": "One of the Fastest Ferrari's For its time, trading blows with the Enzo. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/834774523818672188/599GTBFiorano.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/834774758264274994/599GTB.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/834774764312461332/599GTB333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/834774769755881512/599GTB666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/834774792950251530/599GTB996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/834774785912340480/599GTB969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/834774777713524756/599GTB699.png",
+
+    "333TopSpeed": 208,
+    "3330to60": 3.1,
+    "333Handling": 94,
+
+    "666TopSpeed": 210,
+    "6660to60": 3.0,
+    "666Handling": 97,
+
+    "996TopSpeed": 213,
+    "9960to60": 2.8,
+    "996Handling": 97,
+
+    "969TopSpeed": 213,
+    "9690to60": 3.0,
+    "969Handling": 101,
+
+    "699TopSpeed": 210,
+    "6990to60": 2.8,
+    "699Handling": 101
+}

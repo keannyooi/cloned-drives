@@ -1,0 +1,54 @@
+{
+    "rq": 102,
+    "make": "Bugatti",
+    "model": "Chiron Super Sport 300+ Prototype",
+    "modelYear": 2019,
+    "country": "FR",
+    "topSpeed": 304,
+    "0to60": 2.4,
+    "handling": 90,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Hypercar", "Ultra Expensive", "Unique"],
+    "isPrize": true,
+
+    "weight": 1978,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 133.33,
+    "ola": 100.00,
+    "description": "The Record setter for the first to get 300Mph. Card by DodgeDemon.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/821046694766313502/2019_Bugatti_Chiron_SS_300.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824350499016409098/300.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824350503768948746/300333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824350510471315506/300666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824350532021780510/300996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824350525956161547/300969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824350519307927572/300699.png",
+
+    "333TopSpeed": 306,
+    "3330to60": 2.3,
+    "333Handling": 93,
+
+    "666TopSpeed": 307,
+    "6660to60": 2.2,
+    "666Handling": 96,
+
+    "996TopSpeed": 309,
+    "9960to60": 2.0,
+    "996Handling": 96,
+
+    "969TopSpeed": 309,
+    "9690to60": 2.2,
+    "969Handling": 100,
+
+    "699TopSpeed": 307,
+    "6990to60": 2.0,
+    "699Handling": 100
+}

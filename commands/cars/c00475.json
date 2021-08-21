@@ -1,0 +1,55 @@
+{
+    "rq": 28,
+    "make": "Ford",
+    "model": "Mustang GT Convertible",
+    "modelYear": 1965,
+    "country": "US",
+    "topSpeed": 116,
+    "0to60": 7.5,
+    "handling": 67,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Muscle Car"],
+    "isPrize": false,
+
+    "weight": 1352,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 40.32,
+    "ola": 85.33,
+    "description": "The pony car released 4 months earlier than planned. Card by Johnny",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820615896803704842/cate-test.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820616028908159036/Ford-Mustang-GT-Convertible.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820616037048909874/Ford-Mustang-GT-Convertible-1-star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820616040584839198/Ford-Mustang-GT-Convertible-2-star.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820616064534315018/Ford-Mustang-GT-Convertible-332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820616056179654747/Ford-Mustang-GT-Convertible-323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820616049707057222/Ford-Mustang-GT-Convertible-233.png",
+
+    "333TopSpeed": 120,
+    "3330to60": 7.1,
+    "333Handling": 69,
+
+    "666TopSpeed": 125,
+    "6660to60": 6.8,
+    "666Handling": 71,
+
+    "996TopSpeed": 129,
+    "9960to60": 6.4,
+    "996Handling": 71,
+
+    "969TopSpeed": 129,
+    "9690to60": 6.8,
+    "969Handling": 74,
+
+    "699TopSpeed": 125,
+    "6990to60": 6.4,
+    "699Handling": 74
+
+}

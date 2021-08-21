@@ -1,0 +1,54 @@
+{
+    "rq": 32,
+    "make": "Kia",
+    "model": "Amanti",
+    "modelYear": 2004,
+    "country": "KR",
+    "topSpeed": 132,
+    "0to60": 8.9,
+    "handling": 66,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Rest of The World"],
+    "isPrize": false,
+
+    "weight": 1824,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 62.68,
+    "ola": 71.91,
+    "description": "Card by Exist.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/840847826589843466/CD_Kia_Amanti.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/840847941786271774/CD_Kia_Amanti_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/840847948047712306/CD_Kia_Amanti_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/840847953677647892/CD_Kia_Amanti_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/840847971297656832/CD_Kia_Amanti_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/840847966624546846/CD_Kia_Amanti_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/840847959847075840/CD_Kia_Amanti_699.png",
+
+    "333TopSpeed": 136,
+    "3330to60": 8.5,
+    "333Handling": 68,
+
+    "666TopSpeed": 140,
+    "6660to60": 8.0,
+    "666Handling": 70,
+
+    "996TopSpeed": 144,
+    "9960to60": 7.6,
+    "996Handling": 70,
+
+    "969TopSpeed": 144,
+    "9690to60": 8.0,
+    "969Handling": 73,
+
+    "699TopSpeed": 140,
+    "6990to60": 7.6,
+    "699Handling": 73
+}

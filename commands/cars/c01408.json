@@ -1,0 +1,56 @@
+﻿{
+    "rq": 78,
+    "make": "Volkswagen",
+    "model": "Touareg R",
+    "modelYear": 2020,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 5.0,
+    "handling": 78,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Sleeper", "Eco-Friendly"],
+    "isPrize": false,
+
+
+    "weight": 2485,
+    "gc": "High",
+    "seatCount":5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 79.37,
+    "ola": 76.00,
+    "description": "A curious mix of speed and efficiency with a big dollop of comfort. Card by Andu",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/848497528034164806/Touareg1030.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/848497382526025758/TouaregR.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/848497389575864330/TouaregR-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/848497393090953276/TouaregR-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/848497420177637376/TouaregR3996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/848497423827599371/TouaregR3969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/848497437999497226/TouaregR3699.png",
+
+    "333TopSpeed": 158,
+    "3330to60": 4.8,
+    "333Handling": 81,
+
+    "666TopSpeed": 162,
+    "6660to60": 4.5, 
+    "666Handling": 83,
+
+    "996TopSpeed": 165,
+    "9960to60": 4.3,
+    "996Handling": 83,
+
+    "969TopSpeed": 165,
+    "9690to60": 4.5,
+    "969Handling": 87,
+
+    "699TopSpeed": 162,
+    "6990to60": 4.3,
+    "699Handling": 87
+}

@@ -1,0 +1,54 @@
+{
+    "rq": 92,
+    "make": "Porsche",
+    "model": "911 GT2 RS",
+    "modelYear": 2017,
+    "country": "DE",
+    "topSpeed": 211,
+    "0to60": 2.7,
+    "handling": 94,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Supercar", "Track Day"],
+    "isPrize": false,
+
+    "weight": 1470,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 91.83,
+    "ola": 90.40,
+    "description": "The ultimate porke track toy. Card by Havvy",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824683358931517460/911gt2rs17.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/825388933650055208/911GT2RS17.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/825388940617580544/911GT2RS17333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/825388947927990362/911GT2RS17666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/825388977846091787/911GT2RS17996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/825388969515941888/911GT2RS17969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/825388960612089906/911GT2RS17699.png",
+
+    "333TopSpeed": 213,
+    "3330to60": 2.6,
+    "333Handling": 97,
+
+    "666TopSpeed": 216,
+    "6660to60": 2.4, 
+    "666Handling": 100,
+
+    "996TopSpeed": 218,
+    "9960to60": 2.3,
+    "996Handling": 100,
+
+    "969TopSpeed": 218,
+    "9690to60": 2.4,
+    "969Handling": 104,
+
+    "699TopSpeed": 216,
+    "6990to60": 2.3,
+    "699Handling": 104
+}

@@ -1,0 +1,54 @@
+{
+    "rq": 68,
+    "make": "Infiniti",
+    "model": "Q60 Concept",
+    "modelYear": 2015,
+    "country": "JP",
+    "topSpeed": 188,
+    "0to60": 4.0,
+    "handling": 82,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Concept", "Unique"],
+    "isPrize": false,
+
+    "weight": 1656,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 78.43,
+    "ola": 82.17,
+    "description": "The concept for a sleek coupe. Card by DodgeDemon.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826878632211120168/image0.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826878869461270568/image0.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826878908422684722/image0.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826878926843412530/image0.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826878970800373860/image0.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826878945328627712/image0.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826878957857144842/image0.jpg",
+
+    "333TopSpeed": 191,
+    "3330to60": 3.8,
+    "333Handling": 85,
+
+    "666TopSpeed": 194,
+    "6660to60": 3.6,
+    "666Handling": 87,
+
+	"996TopSpeed": 196,
+    "9960to60": 3.4,
+    "996Handling": 87,
+
+    "969TopSpeed": 196,
+    "9690to60": 3.6,
+    "969Handling": 91,
+
+    "699TopSpeed": 194,
+    "6990to60": 3.4,
+    "699Handling": 91
+}

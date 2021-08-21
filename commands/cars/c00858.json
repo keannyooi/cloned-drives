@@ -1,0 +1,56 @@
+{
+    "rq": 28,
+    "make": "Mercedes-Benz",
+    "model": "A 190 Avantgarde",
+    "modelYear": 1999,
+    "country": "DE",
+    "topSpeed": 122,
+    "0to60": 9.0,
+    "handling": 71,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1190,
+    "gc": "Low",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 55.90,
+    "ola": 64.44,
+    "description": "Smallest Merc's top luxurious trim. Card by Andu",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/861972258007941160/A190.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/861974030730133544/A190.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/861974082592702504/A190-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/861974094374109194/A190-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/861974109743480872/A190-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/861974123739611166/A190-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/861974136606687323/A190-699.png",
+
+    "333TopSpeed": 126,
+    "3330to60": 8.6,
+    "333Handling": 73,
+
+    "666TopSpeed": 131,
+    "6660to60": 8.1, 
+    "666Handling": 76,
+
+    "996TopSpeed": 135,
+    "9960to60": 7.7,
+    "996Handling": 76,
+
+    "969TopSpeed": 135,
+    "9690to60": 8.1,
+    "969Handling": 79,
+
+    "699TopSpeed": 131,
+    "6990to60": 7.7,
+    "699Handling": 79
+}

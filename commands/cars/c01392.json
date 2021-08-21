@@ -1,0 +1,56 @@
+﻿{
+    "rq": 31,
+    "make": "Volkswagen",
+    "model": "Tiguan 2.0 TDI",
+    "modelYear": 2011,
+    "country": "DE",
+    "topSpeed": 110,
+    "0to60": 11.6,
+    "handling": 68,
+    "driveType": "FWD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1585,
+    "gc": "High",
+    "seatCount":5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 33.53,
+    "ola": 65.52,
+    "description": "Revised Tiguan is a talented all-rounder. Card by Andu",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/848306424399790120/20TDIFWD.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/848306574162526220/TiguanTDI11.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/848306617971114045/TiguanTDI11-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/848306659750314034/TiguanTDI11-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/848306750419107890/TiguanTDI11-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/848306768982573066/TiguanTDI11-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/848306780240085012/TiguanTDI11-699.png",
+
+    "333TopSpeed": 115,
+    "3330to60": 11.0,
+    "333Handling": 70,
+
+    "666TopSpeed": 119,
+    "6660to60": 10.4, 
+    "666Handling": 72,
+
+    "996TopSpeed": 124,
+    "9960to60": 9.9,
+    "996Handling": 72,
+
+    "969TopSpeed": 124,
+    "9690to60": 10.4,
+    "969Handling": 75,
+
+    "699TopSpeed": 119,
+    "6990to60": 9.9,
+    "699Handling": 75
+}

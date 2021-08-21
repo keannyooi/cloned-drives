@@ -1,0 +1,54 @@
+{
+    "rq": 27,
+    "make": "Opel",
+    "model": "Kadett GTE",
+    "modelYear": 1983,
+    "country": "DE",
+    "topSpeed": 116,
+    "0to60": 8.9,
+    "handling": 72,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch"],
+    "isPrize": false,
+
+    "weight": 980,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 41.20,
+    "ola": 69.66,
+    "description": "Opel's answer to immensly popular Golf GTI. Card by Connor",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/838842262439460914/E.OpelKadettGTE.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/838842737502584932/E.OpelKadettGTE.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/838842778087587870/E.OpelKadettGTE-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/838842816141852743/E.OpelKadettGTE-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/838842910249975838/E.OpelKadettGTE-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/838842873532383252/E.OpelKadettGTE-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/838842845859282944/E.OpelKadettGTE-699.png",
+
+    "333TopSpeed": 120,
+    "3330to60": 8.5,
+    "333Handling": 74,
+
+    "666TopSpeed": 125,
+    "6660to60": 8.0,
+    "666Handling": 77,
+
+    "996TopSpeed": 129,
+    "9960to60": 7.6,
+    "996Handling": 77,
+
+    "969TopSpeed": 129,
+    "9690to60": 8.0,
+    "969Handling": 80,
+
+    "699TopSpeed": 125,
+    "6990to60": 7.6,
+    "699Handling": 80
+}

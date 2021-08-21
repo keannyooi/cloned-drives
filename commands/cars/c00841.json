@@ -1,0 +1,54 @@
+{
+    "rq": 83,
+    "make": ["Mercedes-AMG", "Mercedes-Benz"],
+    "model": "SLS GT3",
+    "modelYear": 2010,
+    "country": "DE",
+    "topSpeed": 182,
+    "0to60": 3.3,
+    "handling": 96,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport", "Unique"],
+    "isPrize": true,
+
+    "weight": 1660,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 85.71,
+    "ola": 90.91,
+    "description": "GT3 Version of the SLS ig. Total of 86 were sold. Card by havvy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/861976745707962418/unknown.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/861976832114294854/gt3_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/861976836157603850/gt3_111.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/861976840418492466/gt3_222.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/861976856999755808/gt3_332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/861976850363842610/gt3_323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/861976845603700746/gt3_233.png",
+
+    "333TopSpeed": 185,
+    "3330to60": 3.1,
+    "333Handling": 99,
+
+    "666TopSpeed": 188,
+    "6660to60": 3.0,
+    "666Handling": 102,
+
+    "996TopSpeed": 191,
+    "9960to60": 2.8,
+    "996Handling": 102,
+
+    "969TopSpeed": 191,
+    "9690to60": 3.0,
+    "969Handling": 107,
+
+    "699TopSpeed": 188,
+    "6990to60": 2.8,
+    "699Handling": 107
+}

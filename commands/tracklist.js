@@ -8,9 +8,8 @@
 */
 
 const Discord = require("discord.js-light");
-const disbut = require("discord-buttons");
 const fs = require("fs");
-const trackFiles = fs.readdirSync("./commands/tracksets").filter(file => file.endsWith('.json'));
+const trackFiles = fs.readdirSync("./commands/tracks").filter(file => file.endsWith('.json'));
 
 module.exports = {
     name: "tracklist",

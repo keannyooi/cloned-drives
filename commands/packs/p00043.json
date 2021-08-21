@@ -1,0 +1,71 @@
+{
+	"packName": "The Royal Collection Elite Pack",
+	"description": "5 cars from The Royal Collection.",
+	"limited": true,
+        "repetition": 1,
+	"pack": "https://cdn.discordapp.com/attachments/800047734035841037/848119630563508274/ElitePack.png",
+	
+	"filter": {
+		"make": "None",
+		"modelYear": {
+			"start": 1000,
+			"end": 3000
+		},
+		"country": "None",
+		"tags": "The Royal Collection",
+        "driveType": "None",
+        "tyreType": "None",
+		"enginePos": "None",
+        "fuelType": "None",
+        "bodyStyle": "None",
+		"seatCount": "None"
+	},
+
+	"packSequence": [
+        {
+            "common": 0,
+            "uncommon": 0,
+            "rare": 0,
+            "superRare": 70,
+            "ultraRare": 20,
+            "epic": 9,
+            "legendary": 1
+        },
+        {
+            "common": 0,
+            "uncommon": 0,
+            "rare": 0,
+            "superRare": 70,
+            "ultraRare": 20,
+            "epic": 9,
+            "legendary": 1
+        },
+        {
+            "common": 0,
+            "uncommon": 0,
+            "rare": 0,
+            "superRare": 70,
+            "ultraRare": 20,
+            "epic": 9,
+            "legendary": 1
+        },
+        {
+            "common": 0,
+            "uncommon": 0,
+            "rare": 0,
+            "superRare": 70,
+            "ultraRare": 20,
+            "epic": 9,
+            "legendary": 1
+        },
+        {
+            "common": 0,
+            "uncommon": 0,
+            "rare": 0,
+            "superRare": 70,
+            "ultraRare": 20,
+            "epic": 9,
+            "legendary": 1
+        }
+    ]
+}

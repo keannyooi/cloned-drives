@@ -1,0 +1,54 @@
+{
+    "rq": 90,
+    "make": "McLaren",
+    "model": "MSO X",
+    "modelYear": 2018,
+    "country": "GB",
+    "topSpeed": 204,
+    "0to60": 2.9,
+    "handling": 94,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Track Day", "Supercar", "Unique", "The Royal Collection"],
+    "isPrize": true,
+
+    "weight": 1313,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 92.06,
+    "ola": 93.10,
+    "description": "Card by smega.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/854726377198321684/CD_McLaren_MSO_X.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/854726431615615016/CD_McLaren_MSO_X_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/854726439147667476/CD_McLaren_MSO_X_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/854726446010466344/CD_McLaren_MSO_X_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/854726464473792533/CD_McLaren_MSO_X_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/854726456432787496/CD_McLaren_MSO_X_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/854726450124554250/CD_McLaren_MSO_X_699.png",
+
+    "333TopSpeed": 207,
+    "3330to60": 2.8,
+    "333Handling": 97,
+
+    "666TopSpeed": 209,
+    "6660to60": 2.6,
+    "666Handling": 100,
+
+    "996TopSpeed": 212,
+    "9960to60": 2.5,
+    "996Handling": 100,
+
+    "969TopSpeed": 212,
+    "9690to60": 2.6,
+    "969Handling": 104,
+
+    "699TopSpeed": 209,
+    "6990to60": 2.5,
+    "699Handling": 104
+}

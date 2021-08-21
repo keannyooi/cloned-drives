@@ -1,0 +1,54 @@
+{
+    "rq": 42,
+    "make": "Opel",
+    "model": "Insignia OPC Sports Tourer",
+    "modelYear": 2009,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 6.6,
+    "handling": 80,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1875,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 69.47,
+    "ola": 75.76,
+    "description": "CD-CINFO Insignia OPC. Card by Connor.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/858672835455221781/C.OpelInsigniaOPCST.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/858673115747188746/OpelInsigniaOPCST.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/858673133845741588/OpelInsigniaOPCST-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/858673146613858315/OpelInsigniaOPCST-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/858673183560433694/OpelInsigniaOPCST-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/858673172513423360/OpelInsigniaOPCST-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/858673160560181248/OpelInsigniaOPCST-699.png",
+
+    "333TopSpeed": 158,
+    "3330to60": 6.3,
+    "333Handling": 83,
+
+    "666TopSpeed": 162,
+    "6660to60": 5.9,
+    "666Handling": 85,
+
+    "996TopSpeed": 165,
+    "9960to60": 5.6,
+    "996Handling": 85,
+
+    "969TopSpeed": 165,
+    "9690to60": 5.9,
+    "969Handling": 89,
+
+    "699TopSpeed": 162,
+    "6990to60": 5.6,
+    "699Handling": 89
+}

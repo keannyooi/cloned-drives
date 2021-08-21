@@ -1,0 +1,61 @@
+﻿{
+    "rq": 95,
+    "make": "Pagani",
+    "model": "Zonda R",
+    "modelYear": 2009,
+    "country": "IT",
+    "topSpeed": 229,
+    "0to60": 2.7,
+    "handling": 97,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Eargasm", "Track Day", "Unique", "Ultra Expensive"],
+    "isPrize": false,
+
+
+    "weight": 1070,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 112.5,
+    "ola": 82.22,
+    "description": "Extreme. Card by Preston",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/847298968881856532/Zonda_R_updated.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/847299012725440562/zonda_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/847299095299358752/zonda_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/847299115020189736/zonda_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/847299173119295498/zonda_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/847299156556513330/zonda_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/847299137966702592/zonda_699.png",
+
+
+    "333TopSpeed": 231,
+    "3330to60": 2.6,
+    "333Handling": 100,
+
+
+    "666TopSpeed": 234,
+    "6660to60": 2.4,
+    "666Handling": 103,
+
+
+    "996TopSpeed": 236,
+    "9960to60": 2.3,
+    "996Handling": 103,
+
+
+    "969TopSpeed": 236,
+    "9690to60": 2.4,
+    "969Handling": 108,
+
+
+    "699TopSpeed": 234,
+    "6990to60": 2.3,
+    "699Handling": 108
+}

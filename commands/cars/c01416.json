@@ -1,0 +1,56 @@
+﻿{
+    "rq": 35,
+    "make": "Volvo",
+    "model": "960",
+    "modelYear": 1994,
+    "country": "SE",
+    "topSpeed": 129,
+    "0to60": 8.6,
+    "handling": 72,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1500,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 62.10,
+    "ola": 76.77,
+    "description": "What distinguishes the leaders from the followers? Card by Havvy",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/825100091458584606/960.p.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/825099265084096573/960New.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/825099268233756702/960New1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/825099275154751508/960New2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/825099297032634408/960New996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/825099290270498816/960New969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/825099282691784744/960New699.png",
+
+    "333TopSpeed": 133,
+    "3330to60": 8.2,
+    "333Handling": 74,
+
+    "666TopSpeed": 137,
+    "6660to60": 7.7,
+    "666Handling": 77,   
+
+    "996TopSpeed": 141,
+    "9960to60": 7.3,
+    "996Handling": 77,
+
+    "969TopSpeed": 141,
+    "9690to60": 7.7,
+    "969Handling": 80,
+
+    "699TopSpeed": 137,
+    "6990to60": 7.3,
+    "699Handling": 80
+}

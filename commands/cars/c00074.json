@@ -1,0 +1,54 @@
+{
+    "rq": 52,
+    "make": "Aston Martin",
+    "model": "DB7 Vantage",
+    "modelYear": 1999,
+    "country": "GB",
+    "topSpeed": 180,
+    "0to60": 5.1,
+    "handling": 78,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Royal Collection", "Grand Tourer"],
+    "isPrize": false,
+
+    "weight": 1780,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 73.91,
+    "ola": 94.12,
+    "description": "Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/855242972458909736/db7vantage.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/855243939166027776/db7vantage.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/855243944370634762/db7vantage333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/855243951460319242/db7vantage666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/855243981168312330/db7vantage996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/855243971638198282/db7vantage969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/855243965146464256/db7vantage699.png",
+
+    "333TopSpeed": 183,
+    "3330to60": 4.8,
+    "333Handling": 81,
+
+    "666TopSpeed": 186,
+    "6660to60": 4.6,
+    "666Handling": 83,
+
+    "996TopSpeed": 189,
+    "9960to60": 4.3,
+    "996Handling": 83,
+
+    "969TopSpeed": 189,
+    "9690to60": 4.6,
+    "969Handling": 87,
+
+    "699TopSpeed": 186,
+    "6990to60": 4.3,
+    "699Handling": 87
+}

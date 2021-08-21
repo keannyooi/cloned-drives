@@ -1,0 +1,57 @@
+﻿{
+    "rq": 45,
+    "make": ["Range Rover", "Land Rover"],
+    "model": "4.6HSE",
+    "modelYear": 1994,
+    "country": "GB",
+    "topSpeed": 120,
+    "0to60": 9.6,
+    "handling": 67,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 2031,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 48.74,
+    "ola": 74.74,
+    "description": "4.0 + 0.6 + H. Card by Havvy",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826073682303909898/range.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826076307054002197/range_4.6_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826076315525840899/range_4.6_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826076320265797642/range_4.6_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826076359792918538/range_4.6_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826076349353164821/range_4.6_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826076335855632424/range_4.6_699.jpg",
+
+
+    "333TopSpeed": 124,
+    "3330to60": 9.1,
+    "333Handling": 69,
+
+    "666TopSpeed": 129,
+    "6660to60": 8.6, 
+    "666Handling": 71,
+
+    "996TopSpeed": 133,
+    "9960to60": 8.2,
+    "996Handling": 71,
+
+    "969TopSpeed": 133,
+    "9690to60": 8.6,
+    "969Handling": 74,
+
+    "699TopSpeed": 129,
+    "6990to60": 8.2,
+    "699Handling": 74
+}

@@ -1,0 +1,56 @@
+﻿{
+    "rq": 18,
+    "make": "Toyota",
+    "model": "Prius",
+    "modelYear": 1999,
+    "country": "JP",
+    "topSpeed": 99,
+    "0to60": 13.3,
+    "handling": 65,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+
+
+    "weight": 1225,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 19.17,
+    "ola": 64.66,
+    "description": "The not so loved and recognized first gen. Card by Connor",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/865597584395862056/F.ToyotaPriusog.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820000978169495582/F.ToyotaPriusog.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820000986692452372/F.ToyotaPriusog-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820000997501435964/F.ToyotaPriusog-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820001043873792120/F.ToyotaPriusog-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820001024910688336/F.ToyotaPriusog-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820001015155785758/F.ToyotaPriusog-699.png",
+
+    "333TopSpeed": 104,
+    "3330to60": 12.6,
+    "333Handling": 67,
+
+    "666TopSpeed": 110,
+    "6660to60": 12.0, 
+    "666Handling": 69,
+
+    "996TopSpeed": 115,
+    "9960to60": 11.3,
+    "996Handling": 69,
+
+    "969TopSpeed": 115,
+    "9690to60": 12.0,
+    "969Handling": 72,
+
+    "699TopSpeed": 110,
+    "6990to60": 11.3,
+    "699Handling": 72  
+}

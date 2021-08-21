@@ -1,0 +1,54 @@
+{
+    "rq": 69,
+    "make": "Jaguar",
+    "model": "XFR-S",
+    "modelYear": 2013,
+    "country": "GB",
+    "topSpeed": 186,
+    "0to60": 4.1,
+    "handling": 85,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Super Sedan"],
+    "isPrize": false,
+
+    "weight": 1998,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 82.02,
+    "ola": 78.05,
+    "description": "It's a Jaaaag capable of challenging the M5 in nearly everything, what's not to like?. Card by ChickenMcNuggets",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820437522358206514/jag_xfrs.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820131238752419870/xkrs_stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820131273913401344/xkrs_1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820131302846103582/xkrs_2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820131399717486662/xkrs_332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820131366360186900/xkrs_323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820131333367529482/xkrs_233.png",
+
+    "333TopSpeed": 189,
+    "3330to60": 3.9,
+    "333Handling": 88,
+
+    "666TopSpeed": 192,
+    "6660to60": 3.7,
+    "666Handling": 91,
+
+    "996TopSpeed": 194,
+    "9960to60": 3.5,
+    "996Handling": 91,
+
+    "969TopSpeed": 194,
+    "9690to60": 3.7,
+    "969Handling": 94,
+
+    "699TopSpeed": 192,
+    "6990to60": 3.5,
+    "699Handling": 94
+}

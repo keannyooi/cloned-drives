@@ -1,0 +1,54 @@
+﻿{
+    "rq": 54,
+    "make": "Mercedes-Benz",
+    "model": "E 500",
+    "modelYear": 2002,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 5.9,
+    "handling": 73,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1900,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.67,
+    "ola": 75.09,
+    "description": "Smooth luxurious V8. Card by Havvy",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/825086935395467264/E500-02.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/825087291311390741/E500.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/825087296386367568/E500-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/825087301708152852/E500-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/825087323540160572/E500-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/825087317546762280/E500-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/825087308558630922/E500-699.png",
+
+    "333TopSpeed": 158,
+    "3330to60": 5.6,
+    "333Handling": 75,
+
+    "666TopSpeed": 162,
+    "6660to60": 5.3, 
+    "666Handling": 78,
+
+    "996TopSpeed": 165,
+    "9960to60": 5.0,
+    "996Handling": 78,
+
+    "969TopSpeed": 165,
+    "9690to60": 5.3,
+    "969Handling": 81,
+
+    "699TopSpeed": 162,
+    "6990to60": 5.0,
+    "699Handling": 81
+}

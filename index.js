@@ -10,23 +10,29 @@ __  ___  _______     ___      .__   __. .__   __. ____    ____
 require("dotenv").config();
 const fs = require("fs");
 const Discord = require("discord.js");
-const disbut = require("discord-buttons");
-const { Database } = require("quickmongo");
+const mongoose = require("mongoose");
 const { DateTime, Interval } = require("luxon");
-const { ErrorMessage, InfoMessage } = require("./sharedstuff.js");
+const { ErrorMessage, InfoMessage, sendMessage } = require("./commands/sharedfiles/primary.js");
+const profileModel = require("./models/profileSchema.js");
 
-const client = new Discord.Client();
+const client = new Discord.Client({
+	intents: [
+		Discord.Intents.FLAGS.GUILDS,
+		Discord.Intents.FLAGS.GUILD_MESSAGES,
+		Discord.Intents.FLAGS.GUILD_MEMBERS,
+		Discord.Intents.FLAGS.DIRECT_MESSAGES
+	],
+	partials: ["CHANNEL"]
+});
 client.commands = new Discord.Collection();
 const cooldowns = new Discord.Collection();
-client.db = new Database(process.env.MONGO_PW);
 client.execList = {};
-disbut(client);
 let awakenTime = 0;
 
 const commandFiles = fs.readdirSync("./commands").filter(file => file.endsWith(".js"));
 const starterGarage = [
 	{
-		carFile: "honda s2000 (1999).json",
+		carID: "c00552",
 		"000": 1,
 		"333": 0,
 		"666": 0,
@@ -35,7 +41,7 @@ const starterGarage = [
 		"699": 0
 	},
 	{
-		carFile: "peugeot 405 mi16 (1989).json",
+		carID: "c01032",
 		"000": 1,
 		"333": 0,
 		"666": 0,
@@ -44,7 +50,7 @@ const starterGarage = [
 		"699": 0
 	},
 	{
-		carFile: "range rover county (1989).json",
+		carID: "c01134",
 		"000": 1,
 		"333": 0,
 		"666": 0,
@@ -53,7 +59,7 @@ const starterGarage = [
 		"699": 0
 	},
 	{
-		carFile: "nissan leaf (2010).json",
+		carID: "c00943",
 		"000": 1,
 		"333": 0,
 		"666": 0,
@@ -62,7 +68,7 @@ const starterGarage = [
 		"699": 0
 	},
 	{
-		carFile: "de tomaso mangusta (1967).json",
+		carID: "c00335",
 		"000": 1,
 		"333": 0,
 		"666": 0,
@@ -72,16 +78,32 @@ const starterGarage = [
 	}
 ];
 
-for (const file of commandFiles) {
-	let command = require(`./commands/${file}`);
-	client.commands.set(command.name, command);
-}
+const allowedCommands = ["carinfo", "calculate", "garage", "carinfo", "reload"];
+commandFiles.forEach(function (file) {
+	if (allowedCommands.includes(file)) {
+		let command = require(`./commands/${file}`);
+		client.commands.set(command.name, command);
+	}
+});
+
+mongoose.connect(process.env.MONGO_PW, {
+	useNewUrlParser: true,
+	useUnifiedTopology: true,
+	useFindAndModify: false,
+})
+	.then(() => {
+		console.log("database connect successful!");
+	})
+	.catch(error => {
+		console.log(error);
+	});
 
 client.once("ready", async () => {
 	console.log("Bote Ready!");
 	awakenTime = Date.now();
-	const guild = client.guilds.cache.get("711769157078876305"); //don't mind me lmao
-	guild.members.cache.forEach(async user => {
+	const guild = await client.guilds.fetch("711769157078876305"); //don't mind me lmao
+	const members = await guild.members.fetch();
+	members.forEach(async user => {
 		await newUser(user);
 	});
 
@@ -90,12 +112,12 @@ client.once("ready", async () => {
 
 client.login(process.env.BOT_TOKEN);
 
-client.on("message", message => {
+client.on("messageCreate", async message => {
 	processCommand(message);
 });
 
 client.on("guildMemberAdd", async member => {
-	await newUser(member);
+	//await newUser(member);
 });
 
 client.on("messageUpdate", (oldMessage, newMessage) => {
@@ -105,78 +127,89 @@ client.on("messageUpdate", (oldMessage, newMessage) => {
 });
 
 //loop thingy
-setInterval(async () => {
-	const events = await client.db.get("events");
-	for (const [key, value] of Object.entries(events)) {
-		if (key.startsWith("evnt") && value.timeLeft !== "unlimited" && value.isActive === true) {
-			if (Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(value.deadline)).invalid !== null) {
-				await client.db.delete(`events.evnt${value.id}`);
-				client.channels.cache.get("798776756952629298").send(`**The ${value.name} event has officially finished. Thanks for playing!**`);
-			}
-		}
-	}
+// setInterval(async () => {
+// 	const events = await client.db.get("events");
+// 	for (const [key, value] of Object.entries(events)) {
+// 		if (key.startsWith("evnt") && value.timeLeft !== "unlimited" && value.isActive === true) {
+// 			if (Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(value.deadline)).invalid !== null) {
+// 				await client.db.delete(`events.evnt${value.id}`);
+// 				client.channels.cache.get("798776756952629298").send(`**The ${value.name} event has officially finished. Thanks for playing!**`);
+// 			}
+// 		}
+// 	}
 
-	const offers = await client.db.get("limitedOffers");
-	for (let i = 0; i < offers.length; i++) {
-		if (offers[i].timeLeft !== "unlimited" && offers[i].isActive === true) {
-			if (Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(offers[i].deadline)).invalid !== null) {
-				client.channels.cache.get("798776756952629298").send(`**The ${offers[i].name} offer has officially ended.**`);
-				offers.splice(i, 1);
-			}
-		}
-	}
-	await client.db.set("limitedOffers", offers);
+// 	const offers = await client.db.get("limitedOffers");
+// 	for (let i = 0; i < offers.length; i++) {
+// 		if (offers[i].timeLeft !== "unlimited" && offers[i].isActive === true) {
+// 			if (Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(offers[i].deadline)).invalid !== null) {
+// 				client.channels.cache.get("798776756952629298").send(`**The ${offers[i].name} offer has officially ended.**`);
+// 				offers.splice(i, 1);
+// 			}
+// 		}
+// 	}
+// 	await client.db.set("limitedOffers", offers);
 
-	const challenge = await client.db.get("challenge");
-	if (challenge.timeLeft !== "unlimited" && challenge.isActive === true) {
-		if (Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(challenge.deadline)).invalid !== null) {
-			client.channels.cache.get("798776756952629298").send(`**The ${challenge.name} challenge has officially finished. Thanks for playing!**`);
-			challenge.isActve = false;
-			challenge.players = {};
-			challenge.timeLeft = "unlimited";
-			challenge.deadline = "idk";
-		}
-	}
-	await client.db.set("challenge", challenge);
+// 	const challenge = await client.db.get("challenge");
+// 	if (challenge.timeLeft !== "unlimited" && challenge.isActive === true) {
+// 		if (Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(challenge.deadline)).invalid !== null) {
+// 			client.channels.cache.get("798776756952629298").send(`**The ${challenge.name} challenge has officially finished. Thanks for playing!**`);
+// 			challenge.isActve = false;
+// 			challenge.players = {};
+// 			challenge.timeLeft = "unlimited";
+// 			challenge.deadline = "idk";
+// 		}
+// 	}
+// 	await client.db.set("challenge", challenge);
 
-	const guild = client.guilds.cache.get("711769157078876305");
-	guild.members.cache.forEach(async user => {
-		const playerData = await client.db.get(`acc${user.id}`);
-		if (playerData) {
-			if (playerData.settings.senddailynotifs === true) {
-				let lastDaily = playerData.lastDaily;
-				if (!lastDaily || !isNaN(lastDaily)) {
-					lastDaily = DateTime.fromISO("2021-01-01");
-				}
-				else {
-					lastDaily = DateTime.fromISO(lastDaily);
-				}
+// 	const guild = client.guilds.cache.get("711769157078876305");
+// 	guild.members.cache.forEach(async user => {
+// 		const playerData = await client.db.get(`acc${user.id}`);
+// 		if (playerData) {
+// 			if (playerData.settings.senddailynotifs === true) {
+// 				let lastDaily = playerData.lastDaily;
+// 				if (!lastDaily || !isNaN(lastDaily)) {
+// 					lastDaily = DateTime.fromISO("2021-01-01");
+// 				}
+// 				else {
+// 					lastDaily = DateTime.fromISO(lastDaily);
+// 				}
 
-				const interval = Interval.fromDateTimes(DateTime.now(), lastDaily.plus({ days: 1 }));
-				if (interval.invalid !== null && !playerData.notifSent) {
-					playerData.notifSent = true;
-					user.send("Notification: Your daily reward is now available! Claim it using `cd-daily`.")
-						.catch(() => console.log(`unable to send notification to user ${user.id}`));
-					await client.db.set(`acc${user.id}`, playerData);
-				}
-			}
-		}
-	});
-}, 180000);
+// 				const interval = Interval.fromDateTimes(DateTime.now(), lastDaily.plus({ days: 1 }));
+// 				if (interval.invalid !== null && !playerData.notifSent) {
+// 					playerData.notifSent = true;
+// 					user.send("Notification: Your daily reward is now available! Claim it using `cd-daily`.")
+// 						.catch(() => console.log(`unable to send notification to user ${user.id}`));
+// 					await client.db.set(`acc${user.id}`, playerData);
+// 				}
+// 			}
+// 		}
+// 	});
+// }, 180000);
 
-function processCommand(message) {
+async function processCommand(message) {
 	if (!message.content.toLowerCase().startsWith(process.env.PREFIX) || message.author.bot) return;
 
 	const args = message.content.slice(process.env.PREFIX.length).split(/ +/);
 	const commandName = args.shift().toLowerCase();
 	const command = client.commands.get(commandName) || client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
 	if (!command) {
-		return notFound(message, commandName, commandFiles.map(i => i.slice(0, -3)));
+		const errorMessage = new ErrorMessage(
+			"404 command not found.",
+			"It looks like this command doesn't exist. Try using `cd-help` to find the command you are looking for.",
+			commandName,
+			commandFiles.map(i => i.slice(0, -3))
+		);
+		return sendMessage(message, errorMessage.create(message));
 	}
 
-	// if (await client.db.has(`acc${message.author.id}`) === false) {
-	// 	return noRecord(message);
-	// }
+	let hasProfile = await profileModel.exists({ userID: message.author.id });
+	if (!hasProfile) {
+		const errorMessage = new ErrorMessage(
+			"the bot has no record of you in the Cloned Drives discord server.",
+			"Join the Discord server now to unlock access to the bot: https://discord.gg/PHgPyed"
+		);
+		return sendMessage(message, errorMessage.create(message));
+	}
 	switch (command.category) {
 		case "Admin":
 			if (!message.member.roles.cache.has("711790752853655563")) {
@@ -192,7 +225,11 @@ function processCommand(message) {
 			break;
 	}
 	if (command.args > 0 && args.length < command.args) {
-		return missingArgs(message, command.name, command.usage);
+		const errorMessage = new ErrorMessage(
+			"arguments provided insufficient or missing.",
+			`Here's the correct syntax: \`${process.env.PREFIX}${command.name} ${command.usage}\``,
+		);
+		return sendMessage(message, errorMessage.create(message));
 	}
 
 	if (!cooldowns.has(command.name)) {
@@ -205,7 +242,11 @@ function processCommand(message) {
 	if (timestamps.has(message.author.id)) {
 		const expTime = timestamps.get(message.author.id) + cooldownAmount;
 		if (now < expTime) {
-			return cooldowned(message, (expTime - now) / 1000);
+			const cooldownMessage = new InfoMessage(
+				"You may not execute this command yet, there's a cooldown in place.",
+				`The cooldown is there to prevent spamming. Try again in \`${Math.round((expTime - now) / 1000)}\` second(s).`,
+			);
+			return sendMessage(message, cooldownMessage.create(message));
 		}
 	}
 	timestamps.set(message.author.id, now);
@@ -214,7 +255,7 @@ function processCommand(message) {
 	try {
 		if (!client.execList[message.author.id]) {
 			client.execList[message.author.id] = command.name;
-			command.execute(message, args);
+			await command.execute(message, args);
 			setTimeout(() => {
 				if (client.execList[message.author.id]) {
 					delete client.execList[message.author.id];
@@ -222,87 +263,74 @@ function processCommand(message) {
 			}, 30000);
 		}
 		else {
-			return multiExec(message, client.execList[message.author.id]);
+			const errorMessage = new ErrorMessage(
+				"you may not execute more than 1 command at a time.",
+				"This will expire after the previous command has ended or after 30 seconds, whichever comes first. Please wait patiently.",
+			)
+			return sendMessage(message, errorMessage.create(message).addField("Currenty Executing", `\`cd-${client.execList[message.author.id]}\``));
 		}
 	}
 	catch (error) {
-		return execFailed(message, error);
+		console.error(error);
+		const errorMessage = new ErrorMessage(
+			"failed to execute command.",
+			`Something must have gone wrong. Please report this issue to the devs.
+		\`${error.stack}\``
+		);
+		return sendMessage(message, errorMessage.create(message));
 	}
 }
 
 async function newUser(user) {
-	if (await client.db.has(`acc${user.id}`) === false && user.guild.id === "711769157078876305") {
-		console.log("creating new player's database...");
-		await client.db.set(`acc${user.id}`, {
+	let hasProfile = await profileModel.exists({ userID: user.id });
+	if (!hasProfile && !user.bot) {
+		let profile = await profileModel.create({
+			userID: user.id,
 			money: 0,
 			fuseTokens: 0,
 			trophies: 0,
 			garage: starterGarage,
 			decks: [],
-			campaignProgress: { chapter: 0, part: 1, race: 1 },
-			unclaimedRewards: { money: 0, fuseTokens: 0, trophies: 0, cars: [], packs: [] },
-			settings: { enablegraphics: true, senddailynotifs: false, filtercarlist: true, filtergarage: true, showbmcars: false, unitpreference: "british", sortingorder: "descending", buttonstyle: "default", shortenedlists: false }
+			hand: {},
+			rrStats: {
+				opponent: {},
+				trackset: "",
+				reqs: {},
+				streak: 0,
+				highestStreak: 0,
+				usedCars: {}
+			},
+			dailyStats: {
+				lastDaily: "",
+				streak: 0,
+				highestStreak: 0,
+				notifSent: false,
+			},
+			campaignProgress: {
+				chapter: 0,
+				stage: 1,
+				race: 1,
+			},
+			unclaimedRewards: {
+				money: 0,
+				fuseTokens: 0,
+				trophies: 0,
+				cars: [],
+				packs: []
+			},
+			cooldowns: {},
+			filter: {},
+			settings: {},
 		});
-		console.log(user.id);
+		profile.save();
+		console.log(`profile created for user ${user.id}`);
 	}
-}
-
-function notFound(message, command, commandList) {
-	const errorMessage = new ErrorMessage(
-		"404 command not found.",
-		"It looks like this command doesn't exist. Try using `cd-help` to find the command you are looking for.",
-		command,
-		commandList
-	)
-	return message.channel.send(errorMessage.create(message));
 }
 
 function accessDenied(message, roleID) {
 	const errorMessage = new ErrorMessage(
 		"it looks like you dont have access to this command.",
 		`You don't have the <@&${roleID}> role, which is required to use this command.`
-	)
-	return message.channel.send(errorMessage.create(message));
-}
-
-function noRecord(message) {
-	const errorMessage = new ErrorMessage(
-		"the bot has no record of you in the Cloned Drives discord server.",
-		"Join the Discord server now to unlock access to the bot: https://discord.gg/PHgPyed"
-	)
-	return message.channel.send(errorMessage.create(message));
-}
-
-function missingArgs(message, commandName, usage) {
-	const errorMessage = new ErrorMessage(
-		"arguments provided insufficient or missing.",
-		`Here's the correct syntax: \`${process.env.PREFIX}${commandName} ${usage}\``,
-	)
-	return message.channel.send(errorMessage.create(message));
-}
-
-function cooldowned(message, timeLeft) {
-	const infoMessage = new InfoMessage(
-		"It looks like the cooldown for this command is not over yet.",
-		`Try again in ${Math.round(timeLeft) + 1} seconds!`
-	)
-	return message.channel.send(infoMessage.create(message));
-}
-
-function multiExec(message, currentCommand) {
-	const errorMessage = new ErrorMessage(
-		"you may not execute more than 1 command at a time.",
-		"This will expire after the previous command has ended or after 30 seconds, whichever comes first. Please wait patiently.",
-	)
-	return message.channel.send(errorMessage.create(message).addField("Currenty Executing", `\`cd-${currentCommand}\``));
-}
-
-function execFailed(message, error) {
-	console.error(error);
-	const errorMessage = new ErrorMessage(
-		"failed to execute command.",
-		`Something must have gone wrong. Please report this issue to the devs.
-		\`${error.stack}\``
-	)
-	return message.channel.send(errorMessage.create(message, true));
+	);
+	return sendMessage(message, errorMessage.create(message));
 }

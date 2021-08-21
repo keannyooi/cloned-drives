@@ -1,0 +1,54 @@
+{
+    "rq": 31,
+    "make": "Alfa Romeo",
+    "model": "147 2.0 TwinSpark",
+    "modelYear": 2000,
+    "country": "IT",
+    "topSpeed": 126,
+    "0to60": 8.8,
+    "handling": 75,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1225,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 54.66,
+    "ola": 79.23,
+    "description": "With over 20 awards won, this car is favored by all. By 'all' I mean the general public. Card by keanny",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/837239339079303168/alfa_romeo_147_2.0_ts.png",
+    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/837238349839597578/147_2.0_000.jpg",
+    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/837238358114828338/147_2.0_333.jpg",
+    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/837238362468909066/147_2.0_666.jpg",
+    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/837238376063041596/147_2.0_996.jpg",
+    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/837238371495444540/147_2.0_969.jpg",
+    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/837238367963447316/147_2.0_699.jpg",
+
+    "333TopSpeed": 130,
+    "3330to60": 8.4,
+    "333Handling": 77,
+
+    "666TopSpeed": 134,
+    "6660to60": 7.9,
+    "666Handling": 80,
+
+    "996TopSpeed": 138,
+    "9960to60": 7.5,
+    "996Handling": 80,
+
+    "969TopSpeed": 138,
+    "9690to60": 7.9,
+    "969Handling": 83,
+
+    "699TopSpeed": 134,
+    "6990to60": 7.5,
+    "699Handling": 83
+}

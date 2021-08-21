@@ -7,10 +7,10 @@
 |__|\__\ |_______/__/     \__\ |__| \__| |__| \__|     |__| 	(this is a watermark that proves that these lines of code are mine)
 */
 
-const Discord = require("discord.js-light");
+const Discord = require("discord.js");
 const fs = require("fs");
 const carFiles = fs.readdirSync("./commands/cars").filter(file => file.endsWith(".json"));
-const tracksets = fs.readdirSync("./commands/tracksets").filter(file => file.endsWith(".json"));
+const tracksets = fs.readdirSync("./commands/tracks").filter(file => file.endsWith(".json"));
 const { DateTime, Interval } = require("luxon");
 
 module.exports = {

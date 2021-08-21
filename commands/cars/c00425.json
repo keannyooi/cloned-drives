@@ -1,0 +1,54 @@
+{
+    "rq": 31,
+    "make": "Ford",
+    "model": "Ecosport Titanium 1.0",
+    "modelYear": 2017,
+    "country": "GB",
+    "topSpeed": 113,
+    "0to60": 10.7,
+    "handling": 70,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1385,
+    "gc": "High",
+    "seatCount":5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 42.89,
+    "ola": 66.36,
+    "description": "A Fiesta on cheap steroids. Card by Andu",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/821696920980029490/EcoTitanium.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/834430044397895690/Ecosport.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/834430062681522196/Ecosport1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/834430094436335626/Ecosport2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/834430108982837248/Ecosport996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/834430122366074880/Ecosport969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/834430130122260490/Ecosport699.png",
+
+    "333TopSpeed": 118,
+    "3330to60": 10.2,
+    "333Handling": 72,
+
+    "666TopSpeed": 122,
+    "6660to60": 9.6, 
+    "666Handling": 75,
+
+    "996TopSpeed": 127,
+    "9960to60": 9.1,
+    "996Handling": 75,
+
+    "969TopSpeed": 127,
+    "9690to60": 9.6,
+    "969Handling": 78,
+    
+    "699TopSpeed": 122,
+    "6990to60": 9.1,
+    "699Handling": 78
+}

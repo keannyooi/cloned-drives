@@ -1,0 +1,54 @@
+{
+    "rq": 86,
+    "make": "Chevrolet",
+    "model": "CERV III",
+    "modelYear": 1990,
+    "country": "US",
+    "topSpeed": 225,
+    "0to60": 3.9,
+    "handling": 93,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Concept", "Unique", "Oddity", "Innovative"],
+    "isPrize": false,
+
+    "weight": 1542,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 130.00,
+    "ola": 76.92,
+    "description": "The closest thing to a mid-engine Corvette before the C8. Card by DodgeDemon.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820815680530153502/1990_Chevrolet_CERV_III.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824389899112939590/cerv.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824389907237044264/cerv333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824389914325942323/cerv666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824389938354323526/cerv996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824389928535326720/cerv969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824389921758249051/cerv699.png",
+
+    "333TopSpeed": 227,
+    "3330to60": 3.7,
+    "333Handling": 96,
+
+    "666TopSpeed": 230,
+    "6660to60": 3.5,
+    "666Handling": 99,
+
+    "996TopSpeed": 232,
+    "9960to60": 3.3,
+    "996Handling": 99,
+
+	"969TopSpeed": 232,
+    "9690to60": 3.5,
+    "969Handling": 103,
+
+    "699TopSpeed": 230,
+    "6990to60": 3.3,
+    "699Handling": 103
+}

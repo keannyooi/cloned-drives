@@ -1,0 +1,54 @@
+﻿{
+    "rq": 63,
+    "make": "Volkswagen",
+    "model": "Touareg V6 TSI Hybrid",
+    "modelYear": 2011,
+    "country": "DE",
+    "topSpeed": 147,
+    "0to60": 6.2,
+    "handling": 75,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+
+    "weight": 2315,
+    "gc": "High",
+    "seatCount":5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 57.36,
+    "ola": 67.38,
+    "description": "Not what you'd call the most cost-effective option. Card by Andu",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/848486605761151016/TouaregHy.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/848487511827415060/TouaregHybrid.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/848487519557124096/TouaregHybrid-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/848487528562688070/TouaregHybrid-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/848487544668553266/TouaregHybrid-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/848487556013490206/TouaregHybrid-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/848487589727961118/TouaregHybrid-699.png",
+
+    "333TopSpeed": 151,
+    "3330to60": 5.9,
+    "333Handling": 77,
+
+    "666TopSpeed": 154,
+    "6660to60": 5.6, 
+    "666Handling": 80,
+
+    "996TopSpeed": 158,
+    "9960to60": 5.3,
+    "996Handling": 80,
+
+    "969TopSpeed": 158,
+    "9690to60": 5.6,
+    "969Handling": 83,
+
+    "699TopSpeed": 154,
+    "6990to60": 5.3,
+    "699Handling": 83
+}

@@ -1,0 +1,55 @@
+{
+    "rq": 55,
+    "make": "Subaru",
+    "model": "Impreza WRX",
+    "modelYear": 2006,
+    "country": "JP",
+    "topSpeed": 143,
+    "0to60": 5.7,
+    "handling": 75,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer"],
+    "isPrize": false,
+
+    "weight": 1448,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 60.96,
+    "ola": 66.66,
+    "description": "A new WRX with a restyled headlights, hence it was called Hawkeye. Card by spence",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/836744455855538186/image0.jpg",
+    "racehud000": " https://cdn.discordapp.com/attachments/819200156623962122/836744555167481906/image0.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/836744567557455892/image0.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/836744580820762644/image0.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/836744660990427146/image0.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/836744607601000518/image0.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/836744629466169344/image0.jpg",
+
+    "333TopSpeed": 147,
+    "3330to60": 5.4,
+    "333Handling": 77,
+
+    "666TopSpeed": 150,
+    "6660to60": 5.1,
+    "666Handling": 80,
+
+    "996TopSpeed": 154,
+    "9960to60": 4.8,
+    "996Handling": 80,
+
+    "969TopSpeed": 154,
+    "9690to60": 5.1,
+    "969Handling": 83,
+
+    "699TopSpeed": 150,
+    "6990to60": 4.8,
+    "699Handling": 83
+
+}

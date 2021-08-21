@@ -1,0 +1,54 @@
+{
+    "rq": 29,
+    "make": "Chevrolet",
+    "model": "Spark 2LT CVT",
+    "modelYear": 2016,
+    "country": "US",
+    "topSpeed": 105,
+    "0to60": 10.7,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1035,
+    "gc": "Medium",
+    "seatCount":4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 34.85,
+    "ola": 68.81,
+    "description": "Uh... see 1LT for description. Card by Macan",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824597238142468096/Spark_2LT_CVT_16.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824597510445465600/2LTCVT16.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824597515717312552/2LTCVT16-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824597523796590672/2LTCVT16-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824597545761243136/2LTCVT16-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824597540162764810/2LTCVT16-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824597531525775360/2LTCVT16-699.png",
+
+    "333TopSpeed": 110,
+    "3330to60": 10.2,
+    "333Handling": 75,
+
+    "666TopSpeed": 115,
+    "6660to60": 9.6, 
+    "666Handling": 78,
+
+    "996TopSpeed": 120,
+    "9960to60": 9.1,
+    "996Handling": 78,
+
+    "969TopSpeed": 120,
+    "9690to60": 9.6,
+    "969Handling": 81,
+
+    "699TopSpeed": 115,
+    "6990to60": 9.1,
+    "699Handling": 81
+}

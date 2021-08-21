@@ -1,0 +1,56 @@
+﻿{
+    "rq": 50,
+    "make": "Volkswagen",
+    "model": "Touareg 4.2 V8",
+    "modelYear": 2002,
+    "country": "DE",
+    "topSpeed": 134,
+    "0to60": 7.7,
+    "handling": 72,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 2317,
+    "gc": "High",
+    "seatCount":5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 58.57,
+    "ola": 64.77,
+    "description": "Just what you didn't expect from the Beetle company, a really fearless SUV. Card by Andu",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/848478244512202752/Touareg42.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/848478319007105034/TouaregV8.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/848478332626403338/TouaregV8-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/848478342931808286/TouaregV8-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/848478359906156564/TouaregV8-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/848478379421466624/TouaregV8-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/848478396854173726/TouaregV8-699.png",
+
+    "333TopSpeed": 138,
+    "3330to60": 7.3,
+    "333Handling": 74,
+
+    "666TopSpeed": 142,
+    "6660to60": 6.9, 
+    "666Handling": 77,
+
+    "996TopSpeed": 146,
+    "9960to60": 6.5,
+    "996Handling": 77,
+
+    "969TopSpeed": 146,
+    "9690to60": 6.9,
+    "969Handling": 80,
+
+    "699TopSpeed": 142,
+    "6990to60": 6.5,
+    "699Handling": 80
+}

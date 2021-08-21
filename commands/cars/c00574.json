@@ -1,0 +1,54 @@
+{
+    "rq": 64,
+    "make": "Infiniti",
+    "model": "Q60 Red Sport 400 AWD",
+    "modelYear": 2017,
+    "country": "JP",
+    "topSpeed": 155,
+    "0to60": 4.5,
+    "handling": 81,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Sleeper"],
+    "isPrize": false,
+
+    "weight": 1875,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 77.59,
+    "ola": 75.56,
+    "description": "Red cherry but AWD. Card by DodgeDemon",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/821043867976597504/2017_Infiniti_Q60S_400_AWD.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824605284923998218/Q60.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824605291290951680/q60333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824605296172859422/q60666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824605329433427998/q60996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824605312094568498/q60969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824605304821907477/q60699.png",
+
+    "333TopSpeed": 159,
+    "3330to60": 4.3,
+    "333Handling": 84,
+
+    "666TopSpeed": 162,
+    "6660to60": 4.1, 
+    "666Handling": 86,
+
+    "996TopSpeed": 165,
+    "9960to60": 3.8,
+    "996Handling": 86,
+
+    "969TopSpeed": 165,
+    "9690to60": 4.1,
+    "969Handling": 90,
+
+    "699TopSpeed": 162,
+    "6990to60": 3.8,
+    "699Handling": 90
+}

@@ -1,0 +1,54 @@
+{
+    "rq": 24,
+    "make": "Toyota",
+    "model": "Corolla FX-16 GT-S",
+    "modelYear": 1987,
+    "country": "JP",
+    "topSpeed": 107,
+    "0to60": 9.1,
+    "handling": 70,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch"],
+    "isPrize": false,
+
+    "weight": 1106,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 29.07,
+    "ola": 70.33,
+    "description": "Card by Ahmed.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/846378094973157446/Toyota-Corolla-FX16-GT-S.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/846377860037083136/Toyota-Corolla-FX-16-Stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/846377873442865192/Toyota-Corolla-FX-16-333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/846377887287476224/Toyota-Corolla-FX-16-666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/846377936042852392/Toyota-Corolla-FX-16-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/846377920251166781/Toyota-Corolla-FX-16-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/846377907432718366/Toyota-Corolla-FX-16-699.png",
+
+    "333TopSpeed": 112,
+    "3330to60": 8.6,
+    "333Handling": 72,
+
+    "666TopSpeed": 117,
+    "6660to60": 8.2,
+    "666Handling": 75,
+
+    "996TopSpeed": 122,
+    "9960to60": 7.7,
+    "996Handling": 75,
+
+    "969TopSpeed": 122,
+    "9690to60": 8.2,
+    "969Handling": 78,
+
+    "699TopSpeed": 117,
+    "6990to60": 7.7,
+    "699Handling": 78
+}

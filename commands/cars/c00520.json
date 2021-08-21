@@ -1,0 +1,54 @@
+{
+    "rq": 18,
+    "make": "Honda",
+    "model": "City Cabriolet",
+    "modelYear": 1984,
+    "country": "JP",
+    "topSpeed": 88,
+    "0to60": 13.0,
+    "handling": 63,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Kei Car"],
+    "isPrize": false,
+
+    "weight": 800,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Cabriolet",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 0.00,
+    "ola": 63.08,
+    "description": "Thanks to Pininfarina, a little kei car can now do the kind of stuff that you can do on a convertible. Card by keanny",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/865584934353633290/honda_city_cabrio.png",
+    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/867310508759711759/city_cabrio_000.jpg",
+    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/867310513842683925/city_cabrio_333.jpg",
+    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/867310518234120242/city_cabrio_666.jpg",
+    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/867310554620100648/city_cabrio_996.jpg",
+    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/867310553746898954/city_cabrio_969.jpg",
+    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/867310528061898802/city_cabrio_699.jpg",
+
+    "333TopSpeed": 94,
+    "3330to60": 12.4,
+    "333Handling": 65,
+
+    "666TopSpeed": 100,
+    "6660to60": 11.7,
+    "666Handling": 67,
+
+    "996TopSpeed": 106,
+    "9960to60": 11.1,
+    "996Handling": 67,
+
+    "969TopSpeed": 106,
+    "9690to60": 11.7,
+    "969Handling": 70,
+
+    "699TopSpeed": 100,
+    "6990to60": 11.1,
+    "699Handling": 70
+}

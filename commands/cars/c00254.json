@@ -1,0 +1,54 @@
+{
+    "rq": 27,
+    "make": "Chevrolet",
+    "model": "Camaro SS 350",
+    "modelYear": 1967,
+    "country": "US",
+    "topSpeed": 115,
+    "0to60": 7.8,
+    "handling": 68,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Muscle Car"],
+    "isPrize": false,
+
+    "weight": 1402,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 51.32,
+    "ola": 81.32,
+    "description": "The birth of another muscle car icon. Card by Johnny",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/821756321556201513/cate-test.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821756391731101786/Chevrolet-Camaro-SS-350.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821756395606114354/Chevrolet-Camaro-SS-350-1-star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821756399457402880/Chevrolet-Camaro-SS-350-2-star.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821756424937668668/Chevrolet-Camaro-SS-350-332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821756416757858324/Chevrolet-Camaro-SS-350-323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821756408708988967/Chevrolet-Camaro-SS-350-233.png",
+
+    "333TopSpeed": 120,
+    "3330to60": 7.4,
+    "333Handling": 70,
+
+    "666TopSpeed": 124,
+    "6660to60": 7.0,
+    "666Handling": 72,
+
+    "996TopSpeed": 129,
+    "9960to60": 6.6,
+    "996Handling": 72,
+
+    "969TopSpeed": 129,
+    "9690to60": 7.0,
+    "969Handling": 75,
+
+    "699TopSpeed": 124,
+    "6990to60": 6.6,
+    "699Handling": 75
+}

@@ -1,0 +1,57 @@
+﻿{
+    "rq": 47,
+    "make": "Porsche",
+    "model": "Boxster 2.5",
+    "modelYear": 1998,
+    "country": "DE",
+    "topSpeed": 152,
+    "0to60": 6.1,
+    "handling": 85,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1250,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Roadster",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 65.59,
+    "ola": 81.97,
+    "description": "Affordable fun 90s Porsche . Card by Spence",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/823384783216050176/image0.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823386208457588736/boxster_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823386221765722122/boxster_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823386227780485170/boxster_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823386259149684766/boxster_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823386248081178664/boxster_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823386238920163328/boxster_699.jpg",
+
+
+    "333TopSpeed": 155,
+    "3330to60": 5.8,
+    "333Handling": 88,
+
+    "666TopSpeed": 159,
+    "6660to60": 5.5, 
+    "666Handling": 91,
+
+    "996TopSpeed": 162,
+    "9960to60": 5.2,
+    "996Handling": 91,
+
+    "969TopSpeed": 162,
+    "9690to60": 5.5,
+    "969Handling": 94,
+
+    "699TopSpeed": 159,
+    "6990to60": 5.2,
+    "699Handling": 94
+}

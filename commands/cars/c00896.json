@@ -1,0 +1,54 @@
+{
+    "rq": 91,
+    "make": "Mitsubishi",
+    "model": "Lancer Evolution VIII MR FQ-400",
+    "modelYear": 2005,
+    "country": "JP",
+    "topSpeed": 175,
+    "0to60": 3.5,
+    "handling": 92,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer", "Super Sedan", "Unique"],
+    "isPrize": false,
+
+    "weight": 1410,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 76.00,
+    "ola": 78.95,
+    "description": "Probally the most recognised car to come from Mitsubishi UK. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/865206325240004618/evo8fq400.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819936121957253170/fq400.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819936125719674890/fq400333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819936132233560114/fq400666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819936161534967898/fq400996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819936151569563688/fq400969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819936141960413234/fq400699.png",
+
+    "333TopSpeed": 178,
+    "3330to60": 3.3,
+    "333Handling": 95,
+
+    "666TopSpeed": 181,
+    "6660to60": 3.2,
+    "666Handling": 98,
+
+    "996TopSpeed": 184,
+    "9960to60": 3.0,
+    "996Handling": 98,
+
+    "969TopSpeed": 184,
+    "9690to60": 3.2,
+    "969Handling": 102,
+
+    "699TopSpeed": 181,
+    "6990to60": 3.0,
+    "699Handling": 102
+}

@@ -1,0 +1,56 @@
+﻿{
+    "rq": 55,
+    "make": "Volkswagen",
+    "model": "Touareg 3.0 V6 TDI",
+    "modelYear": 2011,
+    "country": "DE",
+    "topSpeed": 131,
+    "0to60": 7.2,
+    "handling": 76,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 2174,
+    "gc": "High",
+    "seatCount":5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 52.11,
+    "ola": 69.83,
+    "description": "Volkswagen's diesel Touareg seeks to make the hybrid model obsolete. We all know how that went don't we. Card by Andu",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/848488710965952542/Touareg302.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/848490097786880040/Touareg30TDI11.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/848490104078729226/Touareg30TDI11-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/848490109204299776/Touareg30TDI11-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/848490138233339904/Touareg30TDI11-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/848490154376167464/Touareg30TDI11-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/848490166528376842/Touareg30TDI11-699.png",
+
+    "333TopSpeed": 136,
+    "3330to60": 6.8,
+    "333Handling": 79,
+
+    "666TopSpeed": 140,
+    "6660to60": 6.5, 
+    "666Handling": 81,
+
+    "996TopSpeed": 144,
+    "9960to60": 6.1,
+    "996Handling": 81,
+
+    "969TopSpeed": 144,
+    "9690to60": 6.5,
+    "969Handling": 84,
+
+    "699TopSpeed": 140,
+    "6990to60": 6.1,
+    "699Handling": 84
+}

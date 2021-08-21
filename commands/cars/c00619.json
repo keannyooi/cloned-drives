@@ -1,0 +1,54 @@
+{
+    "rq": 34,
+    "make": "Kia",
+    "model": "Seltos S FWD",
+    "modelYear": 2020,
+    "country": "KR",
+    "topSpeed": 116,
+    "0to60": 8.3,
+    "handling": 69,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Rest of the World"],
+    "isPrize": false,
+
+    "weight": 1337,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 36.24,
+    "ola": 77.11,
+    "description": "Base model vibes. Card by Andu",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820025403527528488/Seltos.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820026197760147456/Seltos.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820026202739703839/Seltos1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820026211996532796/Seltos2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820026243193634836/Seltos996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820026231348658217/Seltos969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820026220724355082/Seltos699.png",
+
+    "333TopSpeed": 120,
+    "3330to60": 7.9,
+    "333Handling": 71,
+
+    "666TopSpeed": 125,
+    "6660to60": 7.5,
+    "666Handling": 74,
+
+    "996TopSpeed": 129,
+    "9960to60": 7.1,
+    "996Handling": 74,
+
+    "969TopSpeed": 129,
+    "9690to60": 7.5,
+    "969Handling": 77,
+
+    "699TopSpeed": 125,
+    "6990to60": 7.1,
+    "699Handling": 77
+}

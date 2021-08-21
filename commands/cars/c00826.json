@@ -1,0 +1,54 @@
+﻿{
+    "rq": 56,
+    "make": ["Mercedes-AMG", "Mercedes-Benz"],
+    "model": "E 55",
+    "modelYear": 2002,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 4.5,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Sleeper"],
+    "isPrize": false,
+
+    "weight": 1709,
+    "gc": "Low",
+    "seatCount":5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 85.53,
+    "ola": 102.60,
+    "description": "With a supercharged 5.4-litre V8 calling the shots from the front end, this took performance saloons to a whole new level. Card by Havvy",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/823389745748508672/unknown.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823393603107029002/amg_e55_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823393613257637918/amg_e55_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823393619335315526/amg_e55_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823393657625378826/amg_e55_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823393647344091166/amg_e55_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823393635991158788/amg_e55_699.jpg",
+
+    "333TopSpeed": 158,
+    "3330to60": 4.3,
+    "333Handling": 77,
+
+    "666TopSpeed": 162,
+    "6660to60": 4.1, 
+    "666Handling": 80,
+
+    "996TopSpeed": 165,
+    "9960to60": 3.8,
+    "996Handling": 80,
+
+    "969TopSpeed": 165,
+    "9690to60": 4.1,
+    "969Handling": 83,
+
+    "699TopSpeed": 162,
+    "6990to60": 3.8,
+    "699Handling": 83
+}

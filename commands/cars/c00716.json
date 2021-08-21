@@ -1,0 +1,54 @@
+{
+    "rq": 37,
+    "make": "Lexus",
+    "model": "UX 200 Luxury",
+    "modelYear": 2019,
+    "country": "JP",
+    "topSpeed": 118,
+    "0to60": 8.8,
+    "handling": 76,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1500,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 52.69,
+    "ola": 72.73,
+    "description": " Lexus's new entry-level crossover is convincingly premium, despite being little more than a dressed-up Toyota hatchback. Card by Macan.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824673025298268210/UX_200_Luxury_19.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824673411677552720/ux200.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824673416849391656/ux200-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824673421895270471/ux200-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824673443144007700/ux200-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824673437024911410/ux200-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824673429813985300/ux200-699.png",
+    
+    "333TopSpeed": 122,
+    "3330to60": 8.4,
+    "333Handling": 79,
+
+    "666TopSpeed": 127,
+    "6660to60": 7.9,
+    "666Handling": 81,
+
+    "996TopSpeed": 131,
+    "9960to60": 7.5,
+    "996Handling": 81,
+
+    "969TopSpeed": 131,
+    "9690to60": 7.9,
+    "969Handling": 84,
+
+    "699TopSpeed": 127,
+    "6990to60": 7.5,
+    "699Handling": 84
+}

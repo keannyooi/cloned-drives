@@ -1,0 +1,54 @@
+{
+    "rq": 89,
+    "make": "Ferrari",
+    "model": "599XX",
+    "modelYear": 2009,
+    "country": "IT",
+    "topSpeed": 196,
+    "0to60": 2.9,
+    "handling": 96,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Track Day", "Unique", "Ultra Expensive"],
+    "isPrize": false,
+
+    "weight": 1345,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 103.57,
+    "ola": 88.88,
+    "description": "The Track-Day Focused 599 which cant be raced without having ferrari at the track. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/834774602440900668/599XX.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/834774899452018759/599XX.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/834774909137715260/599XX333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/834774915999203409/599XX666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/834774948408852510/599XX996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/834774940251193404/599XX969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/834774932335755294/599XX699.png",
+
+    "333TopSpeed": 199,
+    "3330to60": 2.8,
+    "333Handling": 99,
+
+    "666TopSpeed": 201,
+    "6660to60": 2.6,
+    "666Handling": 102,
+
+    "996TopSpeed": 204,
+    "9960to60": 2.5,
+    "996Handling": 102,
+
+    "969TopSpeed": 204,
+    "9690to60": 2.6,
+    "969Handling": 107,
+
+    "699TopSpeed": 201,
+    "6990to60": 2.5,
+    "699Handling": 107
+}

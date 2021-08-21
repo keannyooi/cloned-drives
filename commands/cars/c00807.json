@@ -1,0 +1,54 @@
+{
+    "rq": 82,
+    "make": "McLaren",
+    "model": "MP4-12C GT3",
+    "modelYear": 2011,
+    "country": "GB",
+    "topSpeed": 178,
+    "0to60": 3.4,
+    "handling": 96,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["The Royal Collection", "Motorsport", "Unique"],
+    "isPrize": false,
+
+    "weight": 1270,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 88.31,
+    "ola": 82.35,
+    "description": "Card by Smega.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/849646462359175238/CD_McLaren_MP4-12C_GT3.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/849646258129731634/CD_McLaren_MP4-12C_GT3_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/849646265674235985/CD_McLaren_MP4-12C_GT3_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/849646268031828048/CD_McLaren_MP4-12C_GT3_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/849646301573283840/CD_McLaren_MP4-12C_GT3_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/849646284696322048/CD_McLaren_MP4-12C_GT3_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/849646277570199552/CD_McLaren_MP4-12C_GT3_699.png",
+
+    "333TopSpeed": 181,
+    "3330to60": 3.2,
+    "333Handling": 99,
+
+    "666TopSpeed": 184,
+    "6660to60": 3.1,
+    "666Handling": 102,
+
+    "996TopSpeed": 187,
+    "9960to60": 2.9,
+    "996Handling": 102,
+
+    "969TopSpeed": 187,
+    "9690to60": 3.1,
+    "969Handling": 107,
+
+    "699TopSpeed": 184,
+    "6990to60": 2.9,
+    "699Handling": 107
+}
