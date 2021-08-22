@@ -8,8 +8,9 @@
     "0to60": 5.8,
     "handling": 75,
     "driveType": "4WD",
-    "tyreType": "Performance",	"tags": ["Hot Hatch"],
-    "isPrize": false,
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch"],
+    "isPrize": true,
 
     "weight": 1340,
     "gc": "Medium",
