@@ -7,29 +7,37 @@ __  ___  _______     ___      .__   __. .__   __. ____    ____
 |__|\__\ |_______/__/     \__\ |__| \__| |__| \__|     |__| 	(this is a watermark that proves that these lines of code are mine)
 */
 
+const devMode: boolean = true;
 require("dotenv").config();
-const fs = require("fs");
-const Discord = require("discord.js");
-const mongoose = require("mongoose");
-const { DateTime, Interval } = require("luxon");
-const { ErrorMessage, InfoMessage, sendMessage } = require("./commands/sharedfiles/primary.js");
-const profileModel = require("./models/profileSchema.js");
+import fs from "fs";
+import { Message, User, Collection, Intents, Client } from "discord.js";
+import mongoose from "mongoose";
+// import { DateTime, Interval } from "luxon";
+import { ErrorMessage, InfoMessage } from "./commands/sharedfiles/classes";
+import { profileModel } from "./models/profileSchema";
+const prefix: string = (devMode ? process.env.DEV_PREFIX : process.env.BOT_PREFIX)!;
+const token: string = (devMode ? process.env.DEV_TOKEN : process.env.BOT_TOKEN)!;
+const allowedCommands = ["carinfo.ts", "calculate.ts", "garage.ts", "ping.ts"];
 
-const client = new Discord.Client({
+const client = new Client({
 	intents: [
-		Discord.Intents.FLAGS.GUILDS,
-		Discord.Intents.FLAGS.GUILD_MESSAGES,
-		Discord.Intents.FLAGS.GUILD_MEMBERS,
-		Discord.Intents.FLAGS.DIRECT_MESSAGES
+		Intents.FLAGS.GUILDS,
+		Intents.FLAGS.GUILD_MESSAGES,
+		Intents.FLAGS.GUILD_MEMBERS,
+		Intents.FLAGS.DIRECT_MESSAGES
 	],
 	partials: ["CHANNEL"]
 });
-client.commands = new Discord.Collection();
-const cooldowns = new Discord.Collection();
-client.execList = {};
+
+client.commands = new Collection();
+const cooldowns = new Collection();
+const execList: {
+	[key: string]: string;
+} = {};
+client.execList = execList;
 let awakenTime = 0;
 
-const commandFiles = fs.readdirSync("./commands").filter(file => file.endsWith(".js"));
+const commandFiles = fs.readdirSync("./commands").filter(file => file.endsWith(".ts"));
 const starterGarage = [
 	{
 		carID: "c00552",
@@ -78,7 +86,6 @@ const starterGarage = [
 	}
 ];
 
-const allowedCommands = ["carinfo", "calculate", "garage", "carinfo", "reload"];
 commandFiles.forEach(function (file) {
 	if (allowedCommands.includes(file)) {
 		let command = require(`./commands/${file}`);
@@ -86,7 +93,7 @@ commandFiles.forEach(function (file) {
 	}
 });
 
-mongoose.connect(process.env.MONGO_PW, {
+mongoose.connect(process.env.MONGO_PW!, {
 	useNewUrlParser: true,
 	useUnifiedTopology: true,
 	useFindAndModify: false,
@@ -99,28 +106,28 @@ mongoose.connect(process.env.MONGO_PW, {
 	});
 
 client.once("ready", async () => {
-	console.log("Bote Ready!");
+	devMode ? console.log("DevBote Ready!") : console.log("Bote Ready!");
 	awakenTime = Date.now();
 	const guild = await client.guilds.fetch("711769157078876305"); //don't mind me lmao
 	const members = await guild.members.fetch();
-	members.forEach(async user => {
+	members.forEach(async (user: User) => {
 		await newUser(user);
 	});
 
-	client.user.setActivity("over everyone's garages", { type: "WATCHING" });
+	devMode ? client.user.setActivity("around with code", { type: "PLAYING" }) : client.user.setActivity("over everyone's garages", { type: "WATCHING" });
 });
 
-client.login(process.env.BOT_TOKEN);
+client.login(token);
 
-client.on("messageCreate", async message => {
+client.on("messageCreate", async (message: Message) => {
 	processCommand(message);
 });
 
-client.on("guildMemberAdd", async member => {
-	//await newUser(member);
-});
+// client.on("guildMemberAdd", async member => {
+// 	//await newUser(member);
+// });
 
-client.on("messageUpdate", (oldMessage, newMessage) => {
+client.on("messageUpdate", (oldMessage: Message, newMessage: Message) => {
 	if (awakenTime < oldMessage.createdTimestamp) {
 		processCommand(newMessage);
 	}
@@ -177,7 +184,7 @@ client.on("messageUpdate", (oldMessage, newMessage) => {
 // 				const interval = Interval.fromDateTimes(DateTime.now(), lastDaily.plus({ days: 1 }));
 // 				if (interval.invalid !== null && !playerData.notifSent) {
 // 					playerData.notifSent = true;
-// 					user.send("Notification: Your daily reward is now available! Claim it using `cd-daily`.")
+// 					user.send(`Notification: Your daily reward is now available! Claim it using \`${prefix}-daily\`.`)
 // 						.catch(() => console.log(`unable to send notification to user ${user.id}`));
 // 					await client.db.set(`acc${user.id}`, playerData);
 // 				}
@@ -186,38 +193,52 @@ client.on("messageUpdate", (oldMessage, newMessage) => {
 // 	});
 // }, 180000);
 
-async function processCommand(message) {
-	if (!message.content.toLowerCase().startsWith(process.env.PREFIX) || message.author.bot) return;
+async function processCommand(message: Message) {
+	if (!message.content.toLowerCase().startsWith(prefix) || message.author.bot) return;
+	if (devMode && !message.member!.roles.cache.has("711790752853655563")) return;
 
-	const args = message.content.slice(process.env.PREFIX.length).split(/ +/);
-	const commandName = args.shift().toLowerCase();
-	const command = client.commands.get(commandName) || client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
+	const args: Array<string> = message.content.slice(prefix.length).split(/ +/);
+	const commandName = args.shift()!.toLowerCase();
+	const command = client.commands.get(commandName) || client.commands.find((cmd: { aliases: Array<string> }) =>
+		cmd.aliases && cmd.aliases.includes(commandName));
 	if (!command) {
-		const errorMessage = new ErrorMessage(
-			"404 command not found.",
-			"It looks like this command doesn't exist. Try using `cd-help` to find the command you are looking for.",
-			commandName,
-			commandFiles.map(i => i.slice(0, -3))
-		);
-		return sendMessage(message, errorMessage.create(message));
+		const errorMessage = new ErrorMessage({
+			channel: message.channel,
+			title: "Error, 404 command not found.",
+			description: `It looks like this command doesn't exist. Try using \`${prefix}-help\` to find the command you are looking for.`,
+			author: {
+				name: message.author.tag,
+				iconURL: message.author.displayAvatarURL()
+			}
+		})
+			.displayClosest({
+				received: commandName,
+				checkArray: commandFiles.map(i => i.slice(0, -3))
+			});
+		return errorMessage.sendMessage({ message: message });
 	}
 
 	let hasProfile = await profileModel.exists({ userID: message.author.id });
 	if (!hasProfile) {
-		const errorMessage = new ErrorMessage(
-			"the bot has no record of you in the Cloned Drives discord server.",
-			"Join the Discord server now to unlock access to the bot: https://discord.gg/PHgPyed"
-		);
-		return sendMessage(message, errorMessage.create(message));
+		const errorMessage = new ErrorMessage({
+			channel: message.channel,
+			title: "Error, the bot has no record of you in the Cloned Drives discord server.",
+			description: "Join the Discord server now to unlock access to the bot: https://discord.gg/PHgPyed",
+			author: {
+				name: message.author.tag,
+				iconURL: message.author.displayAvatarURL()
+			}
+		});
+		return errorMessage.sendMessage({ message: message });
 	}
 	switch (command.category) {
 		case "Admin":
-			if (!message.member.roles.cache.has("711790752853655563")) {
+			if (!message.member!.roles.cache.has("711790752853655563")) {
 				return accessDenied(message, "711790752853655563");
 			}
 			break;
 		case "Community Management":
-			if (!message.member.roles.cache.has("802043346951340064")) {
+			if (!message.member!.roles.cache.has("802043346951340064")) {
 				return accessDenied(message, "802043346951340064");
 			}
 			break;
@@ -225,15 +246,20 @@ async function processCommand(message) {
 			break;
 	}
 	if (command.args > 0 && args.length < command.args) {
-		const errorMessage = new ErrorMessage(
-			"arguments provided insufficient or missing.",
-			`Here's the correct syntax: \`${process.env.PREFIX}${command.name} ${command.usage}\``,
-		);
-		return sendMessage(message, errorMessage.create(message));
+		const errorMessage = new ErrorMessage({
+			channel: message.channel,
+			title: "Error, arguments provided insufficient or missing.",
+			description: `Here's the correct syntax: \`${prefix}${command.name} ${command.usage}\``,
+			author: {
+				name: message.author.tag,
+				iconURL: message.author.displayAvatarURL()
+			}
+		});
+		return errorMessage.sendMessage({ message: message });
 	}
 
 	if (!cooldowns.has(command.name)) {
-		cooldowns.set(command.name, new Discord.Collection());
+		cooldowns.set(command.name, new Collection());
 	}
 	const now = Date.now();
 	const timestamps = cooldowns.get(command.name);
@@ -242,11 +268,18 @@ async function processCommand(message) {
 	if (timestamps.has(message.author.id)) {
 		const expTime = timestamps.get(message.author.id) + cooldownAmount;
 		if (now < expTime) {
-			const cooldownMessage = new InfoMessage(
-				"You may not execute this command yet, there's a cooldown in place.",
-				`The cooldown is there to prevent spamming. Try again in \`${Math.round((expTime - now) / 1000)}\` second(s).`,
-			);
-			return sendMessage(message, cooldownMessage.create(message));
+			const cooldownMessage = new InfoMessage({
+				channel: message.channel,
+				title: "You may not execute this command yet, there's a cooldown in place.",
+				description: `The cooldown is there to prevent spamming. Try again in \`${Math.round((expTime - now) / 1000)}\` second(s).`,
+				author: {
+					name: message.author.tag,
+					iconURL: message.author.displayAvatarURL()
+				}
+			});
+			return cooldownMessage.sendMessage({
+				message: message
+			});
 		}
 	}
 	timestamps.set(message.author.id, now);
@@ -263,25 +296,39 @@ async function processCommand(message) {
 			}, 30000);
 		}
 		else {
-			const errorMessage = new ErrorMessage(
-				"you may not execute more than 1 command at a time.",
-				"This will expire after the previous command has ended or after 30 seconds, whichever comes first. Please wait patiently.",
-			)
-			return sendMessage(message, errorMessage.create(message).addField("Currenty Executing", `\`cd-${client.execList[message.author.id]}\``));
+			const errorMessage = new ErrorMessage({
+				channel: message.channel,
+				title: "Error, you may not execute more than 1 command at a time.",
+				description: "This will expire after the previous command has ended or after 30 seconds, whichever comes first. Please wait patiently.",
+				fields: [
+					{ name: "Currently Executing", value: client.execList[message.author.id] }
+				],
+				author: {
+					name: message.author.tag,
+					iconURL: message.author.displayAvatarURL()
+				}
+			});
+			return errorMessage.sendMessage({
+				message: message
+			});
 		}
 	}
 	catch (error) {
 		console.error(error);
-		const errorMessage = new ErrorMessage(
-			"failed to execute command.",
-			`Something must have gone wrong. Please report this issue to the devs.
-		\`${error.stack}\``
-		);
-		return sendMessage(message, errorMessage.create(message));
+		const errorMessage = new ErrorMessage({
+			channel: message.channel,
+			title: "Error, failed to execute command.",
+			description: "Something must have gone wrong. Please report this issue to the devs. \n`${error.stack}`",
+			author: {
+				name: message.author.tag,
+				iconURL: message.author.displayAvatarURL()
+			}
+		});
+		return errorMessage.sendMessage({ message: message });
 	}
 }
 
-async function newUser(user) {
+async function newUser(user: User) {
 	let hasProfile = await profileModel.exists({ userID: user.id });
 	if (!hasProfile && !user.bot) {
 		let profile = await profileModel.create({
@@ -327,10 +374,15 @@ async function newUser(user) {
 	}
 }
 
-function accessDenied(message, roleID) {
-	const errorMessage = new ErrorMessage(
-		"it looks like you dont have access to this command.",
-		`You don't have the <@&${roleID}> role, which is required to use this command.`
-	);
-	return sendMessage(message, errorMessage.create(message));
+function accessDenied(message: Message, roleID: string) {
+	const errorMessage = new ErrorMessage({
+		channel: message.channel,
+		title: "Error, it looks like you dont have access to this command.",
+		description: `You don't have the <@&${roleID}> role, which is required to use this command.`,
+		author: {
+			name: message.author.tag,
+			iconURL: message.author.displayAvatarURL()
+		}
+	});
+	return errorMessage.sendMessage({ message: message });
 }

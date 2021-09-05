@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 const profileSchema = new mongoose.Schema({
     userID: { type: String, require: true, unique: true },
@@ -17,5 +17,5 @@ const profileSchema = new mongoose.Schema({
     settings: { type: Object, default: {} },
 }, { minimize: false });
 
-const model = mongoose.model("Profiles", profileSchema);
-module.exports = model;
+const profileModel = mongoose.model("Profiles", profileSchema);
+export { profileModel };

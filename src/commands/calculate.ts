@@ -17,7 +17,7 @@ module.exports = {
     category: "Miscellaneous",
     description: "Calculates stuff like handling value, mid-range acceleration, off-the-line acceleration and averages.",
     execute(message, args) {
-        let answer;
+        let answer: number = 0;
 		let average = args.slice(1, args.length).map(arg => Number(arg));
 
         if (args[0].toLowerCase() === "handling" && !isNaN(args[1])) {

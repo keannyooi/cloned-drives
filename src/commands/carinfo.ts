@@ -7,11 +7,12 @@
 |__|\__\ |_______/__/     \__\ |__| \__| |__| \__|     |__| 	(this is a watermark that proves that these lines of code are mine)
 */
 
-const fs = require("fs");
-const carFiles = fs.readdirSync("./commands/cars").filter(file => file.endsWith('.json'));
-const { InfoMessage, sendMessage, rarityCheck, carNameGen, unbritish } = require("./sharedfiles/primary.js");
-const { search } = require("./sharedfiles/secondary.js");
-const profileModel = require("../models/profileSchema.js");
+import fs from "fs";
+import { sendMessage, rarityCheck, carNameGen, unbritish } from "./sharedfiles/primary";
+import { InfoMessage } from "./sharedfiles/classes";
+import { search } from "./sharedfiles/secondary";
+import { profileModel } from "../models/profileSchema";
+const carFiles = fs.readdirSync("./commands/cars").filter(file => file.endsWith(".json"));
 
 module.exports = {
 	name: "carinfo",
@@ -21,9 +22,9 @@ module.exports = {
 	category: "Info",
 	description: "Shows info about a specified car.",
 	execute(message, args) {
-		let test;
+		let test: Promise<any>;
 		if (args[0].toLowerCase() === "random") {
-			return displayInfo(carFiles[Math.floor(Math.random() * carFiles.length)]);
+			return displayInfo(carFiles[Math.floor(Math.random() * carFiles.length)], null);
 		}
 		else if (args[0].toLowerCase().startsWith("-c")) {
 			let carID = [args[0].toLowerCase().slice(1)];
@@ -43,10 +44,10 @@ module.exports = {
 			await displayInfo(result, currentMessage);
 		});
 
-		async function displayInfo(car, currentMessage) {
+		async function displayInfo(car: object, currentMessage) {
 			const playerData = await profileModel.findOne({ userID: message.author.id });
 			let currentCar = require(`./cars/${car}`);
-			const rarity = rarityCheck(message, currentCar["rq"]);
+			const rarity = rarityCheck(message, currentCar["rq"], null);
 
 			let tags = "None", description = "None", mra = "N/A", ola = "N/A";
 			let topSpeed = `${currentCar["topSpeed"]}MPH`, accel = "N/A", weight = `${currentCar["weight"]}kg`;

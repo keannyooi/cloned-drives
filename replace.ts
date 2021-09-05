@@ -10,11 +10,11 @@ __  ___  _______     ___      .__   __. .__   __. ____    ____
 // only run this when updating database shiet
 
 require("dotenv").config();
-const fs = require("fs");
-const Discord = require("discord.js");
-const carFiles = fs.readdirSync("./commands/cars").filter(file => file.endsWith('.json'));
-const packFiles = fs.readdirSync("./commands/packs").filter(file => file.endsWith('.json'));
-const trackFiles = fs.readdirSync("./commands/tracks").filter(file => file.endsWith('.json'));
+import fs from "fs";
+import Discord from "discord.js";
+const carFiles = fs.readdirSync("./commands/cars").filter(file => file.endsWith(".json"));
+const packFiles = fs.readdirSync("./commands/packs").filter(file => file.endsWith(".json"));
+const trackFiles = fs.readdirSync("./commands/tracks").filter(file => file.endsWith(".json"));
 const client = new Discord.Client({ intents: [Discord.Intents.FLAGS.GUILDS, Discord.Intents.FLAGS.GUILD_MESSAGES] });
 
 client.once("ready", async () => {
@@ -30,7 +30,7 @@ client.once("ready", async () => {
 
 client.login(process.env.BOT_TOKEN);
 
-function updateIDs(group, index) {
+function updateIDs(group: Array<string>, index: number) {
     let reference = ["cars", "packs", "tracks"], type = reference[index];
     let idAmount = group.filter(f => f.startsWith(type.charAt(0)) && !isNaN(f.substring(1))).length;
     for (let file of group) {
@@ -38,7 +38,7 @@ function updateIDs(group, index) {
         if (!test.startsWith(type.charAt(0)) || isNaN(test.substring(1))) {
             idAmount++;
             let id = String(idAmount).padStart(5, "0");
-            currentName = `${type.charAt(0)}${id}.json`;
+            let currentName = `${type.charAt(0)}${id}.json`;
             console.log(currentName);
             fs.renameSync(`./commands/${type}/${file}`, `./commands/${type}/${currentName.toLowerCase()}`);
         }

@@ -7,8 +7,9 @@
 |__|\__\ |_______/__/     \__\ |__| \__| |__| \__|     |__| 	(this is a watermark that proves that these lines of code are mine)
 */
 
-const { ErrorMessage, InfoMessage, rarityCheck, carNameGen, filterCheck, sendMessage } = require("./sharedfiles/primary.js");
-const { search, sortCars, listDisplay } = require("./sharedfiles/secondary.js");
+const { sendMessage } = require("./sharedfiles/primary.js");
+const { ErrorMessage } = require("./sharedfiles/classes.js");
+const { search, sortCars, filterCheck, listDisplay } = require("./sharedfiles/secondary.js");
 const profileModel = require("../models/profileSchema.js");
 
 module.exports = {

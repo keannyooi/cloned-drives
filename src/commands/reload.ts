@@ -9,7 +9,8 @@
 
 const fs = require("fs");
 const commandFiles = fs.readdirSync("./commands").filter(file => file.endsWith(".js"));
-const { ErrorMessage, SuccessMessage, sendMessage } = require("./sharedfiles/primary.js");
+const { sendMessage } = require("./sharedfiles/primary.js");
+const { ErrorMessage, SuccessMessage } = require("./sharedfiles/classes.js");
 
 module.exports = {
     name: "reload",

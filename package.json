@@ -15,8 +15,13 @@
     "npm": "^7.20.5",
     "string-similarity": "^4.0.4"
   },
+  "devDependencies": {
+    "@types/string-similarity": "^4.0.0",
+    "typescript": "^4.4.2"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./src/index.ts",
+    "replace": "node ./src/replace.ts"
   },
   "keywords": [],
   "author": "",

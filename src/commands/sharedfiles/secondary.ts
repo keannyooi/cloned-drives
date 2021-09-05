@@ -7,11 +7,10 @@
 |__|\__\ |_______/__/     \__\ |__| \__| |__| \__|     |__| 	(this is a watermark that proves that these lines of code are mine)
 */
 
-const Discord = require("discord.js");
-const Canvas = require("canvas");
-const fs = require("fs");
-const carFiles = fs.readdirSync("./commands/cars").filter(file => file.endsWith('.json'));
-const { ErrorMessage, InfoMessage, sendMessage, rarityCheck, carNameGen } = require("./primary.js");
+import Discord from "discord.js";
+import Canvas from "canvas";
+import { rarityCheck, carNameGen, getButtons } from "./primary";
+import { ErrorMessage, InfoMessage } from "./classes";
 
 async function assignIndex(message, deck, currentRound, graphics) {
 	const raceCommand = require("./race.js");
@@ -241,12 +240,8 @@ async function search(message, query, searchList, type) {
 
 	const searchResults = searchList.filter(function (s) {
 		let test = listGen(message, s, type).toLowerCase().split(" ");
-		if (type === "user" && s[1].nickname !== null) {
-			return query.every(part => test.includes(part) || s[1].nickname.toLowerCase().includes(part));
-		}
-		else {
-			return query.every(part => test.includes(part));
-		}
+		let matches = query.every(part => test.includes(part));
+		return (type === "user" && s[1].nickname !== null) ? (matches || s[1].nickname.toLowerCase().includes(part)) : matches;
 	});
 
 	if (searchResults.length > 1) {
@@ -260,7 +255,7 @@ async function search(message, query, searchList, type) {
 			const errorMessage = new ErrorMessage(
 				"too many search results.",
 				"Due to Discord's embed limitations, the bot isn't able to show the full list of search results. Try again with a more specific keyword."
-			)
+			);
 			return sendMessage(message, errorMessage.create(message).addField("Total Characters in List", `\`${list.length}\` > \`2048\``));
 		}
 
@@ -269,7 +264,7 @@ async function search(message, query, searchList, type) {
 			list,
 			null,
 			"You have been given 1 minute to decide."
-		)
+		);
 		const currentMessage = await sendMessage(message, infoScreen.create(message), null, true);
 		const collected = await message.channel.awaitMessages({
 			filter,
@@ -287,8 +282,8 @@ async function search(message, query, searchList, type) {
 					"invalid integer provided.",
 					`It looks like your response was either not a number or not within \`1\` and \`${searchResults.length}\`.`,
 					collected.first().content
-				)
-				return sendMessage(message, errorMessage.create(message), false, currentMessage);
+				);
+				return sendMessage(message, errorMessage.create(message), null, false, currentMessage);
 			}
 			else {
 				return [searchResults[parseInt(collected.first().content) - 1], currentMessage];
@@ -310,9 +305,7 @@ async function search(message, query, searchList, type) {
 			"query provided yielded no results.",
 			"Well that sucks.",
 			query.join(" "),
-			searchList.map(i => {
-				return listGen(message, i, type, true).toLowerCase();
-			})
+			searchList.map(i => listGen(message, i, type, true).toLowerCase())
 		)
 		return sendMessage(message, errorMessage.create(message));
 	}
@@ -330,12 +323,7 @@ async function search(message, query, searchList, type) {
 			case "track":
 				return getDetails[`${type}Name`];
 			case "id":
-				if (typeof item === "string") {
-					return item.slice(item.length - 12, item.length - 6);
-				}
-				else {
-					return item.id;
-				}
+				return typeof item === "string" ? item.slice(item.length - 12, item.length - 6) : item.id;
 			case "user":
 				return `${item[1].user.username}#${item[1].user.discriminator}`;
 			default:
@@ -345,53 +333,53 @@ async function search(message, query, searchList, type) {
 }
 
 function sortCars(message, list, sort, order, garage) {
-    return list.sort(function (a, b) {
-        let carA, carB;
-        if (typeof a === "string") {
-            carA = require(`../cars/${a}`);
-            carB = require(`../cars/${b}`);
-        }
-        else {
-            carA = require(`../cars/${a.carID}.json`);
-            carB = require(`../cars/${b.carID}.json`);
-        }
+	return list.sort(function (a, b) {
+		let carA, carB;
+		if (typeof a === "string") {
+			carA = require(`../cars/${a}`);
+			carB = require(`../cars/${b}`);
+		}
+		else {
+			carA = require(`../cars/${a.carID}.json`);
+			carB = require(`../cars/${b.carID}.json`);
+		}
 
-        let critA = carA[sort], critB = carB[sort];
-        if (sort === "topSpeed" || sort === "0to60" || sort === "handling") {
-            let checkOrder = ["333", "666", "699", "969", "996"];
+		let critA = carA[sort], critB = carB[sort];
+		if (sort === "topSpeed" || sort === "0to60" || sort === "handling") {
+			let checkOrder = ["333", "666", "699", "969", "996"];
 			let format = sort.charAt(0).toUpperCase() + sort.slice(1);
-            for (let upg of checkOrder) {
-                if (a[upg] > 0) {
-                    critA = carA[`${upg}${format}`];
-                }
-                if (b[upg] > 0) {
-                    critB = carB[`${upg}${format}`];
-                }
-            }
-        }
-        else if (sort === "mostowned") {
+			for (let upg of checkOrder) {
+				if (a[upg] > 0) {
+					critA = carA[`${upg}${format}`];
+				}
+				if (b[upg] > 0) {
+					critB = carB[`${upg}${format}`];
+				}
+			}
+		}
+		else if (sort === "mostowned") {
 			let fileA = a, fileB = b;
-            if (garage) {
-                fileA = garage.find(c => a.includes(c.carID));
+			if (garage) {
+				fileA = garage.find(c => a.includes(c.carID));
 				fileB = garage.find(c => b.includes(c.carID));
-            }
-            critA = fileA["000"] + fileA["333"] + fileA["666"] + fileA["996"] + fileA["969"] + fileA["699"];
-            critB = fileB["000"] + fileB["333"] + fileB["666"] + fileB["996"] + fileB["969"] + fileB["699"];
-        }
+			}
+			critA = fileA["000"] + fileA["333"] + fileA["666"] + fileA["996"] + fileA["969"] + fileA["699"];
+			critB = fileB["000"] + fileB["333"] + fileB["666"] + fileB["996"] + fileB["969"] + fileB["699"];
+		}
 
-        if (critA === critB) {
-            return carNameGen(message, carA) > carNameGen(message, carB) ? 1 : -1;
-        }
-        else {
-            let someBool = (sort === "0to60" || sort === "weight" || sort === "ola");
-            if ((order === "ascending") ? !someBool : someBool) { //basically a logical XOR gate
-                return critA - critB;
-            }
-            else {
-                return critB - critA;
-            }
-        }
-    });
+		if (critA === critB) {
+			return carNameGen(message, carA) > carNameGen(message, carB) ? 1 : -1;
+		}
+		else {
+			let someBool = (sort === "0to60" || sort === "weight" || sort === "ola");
+			if ((order === "ascending") ? !someBool : someBool) { //basically a logical XOR gate
+				return critA - critB;
+			}
+			else {
+				return critB - critA;
+			}
+		}
+	});
 }
 
 async function listDisplay(message, user, page, garage, sort, playerData, currentMessage) {
@@ -432,13 +420,7 @@ async function listDisplay(message, user, page, garage, sort, playerData, curren
 		if (typeof make === "object") {
 			make = currentCar["make"][0];
 		}
-		let rarity;
-		if (playerData.settings.shortenedlists) {
-			rarity = "RQ";
-		}
-		else {
-			rarity = rarityCheck(message, currentCar["rq"]);
-		}
+		let rarity = rarityCheck(message, currentCar["rq"], playerData.settings.shortenedlists);
 
 		garageList += carNameGen(message, currentCar, rarity);
 		for (const [key, value] of Object.entries(garage[i])) {
@@ -465,15 +447,13 @@ async function listDisplay(message, user, page, garage, sort, playerData, curren
 			let thonk = "";
 			if (sort === "topSpeed" || sort === "0to60" || sort === "handling") {
 				for (let [key, value] of Object.entries(garage[i])) {
-					if (!isNaN(value)) {
-						if (value > 0 && thonk.includes(key) === false) {
-							let clarkson = currentCar[sort];
-							if (key !== "000") {
-								clarkson = currentCar[`${key}${sort.charAt(0).toUpperCase() + sort.slice(1)}`];
-							}
-							if (!thonk.includes(clarkson)) {
-								thonk += `${clarkson}, `;
-							}
+					if (!isNaN(value) && value > 0 && thonk.includes(key) === false) {
+						let clarkson = currentCar[sort];
+						if (key !== "000") {
+							clarkson = currentCar[`${key}${sort.charAt(0).toUpperCase() + sort.slice(1)}`];
+						}
+						if (!thonk.includes(clarkson)) {
+							thonk += `${clarkson}, `;
 						}
 					}
 				}
@@ -493,44 +473,7 @@ async function listDisplay(message, user, page, garage, sort, playerData, curren
 		return sendMessage(message, errorMessage.create(message));
 	}
 
-	let firstPage, prevPage, nextPage, lastPage;
-	if (playerData.settings.buttonstyle === "classic") {
-		firstPage = new Discord.MessageButton()
-			.setStyle("SECONDARY")
-			.setEmoji("⏪")
-			.setCustomId("first_page");
-		prevPage = new Discord.MessageButton()
-			.setStyle("SECONDARY")
-			.setEmoji("⬅️")
-			.setCustomId("prev_page");
-		nextPage = new Discord.MessageButton()
-			.setStyle("SECONDARY")
-			.setEmoji("➡️")
-			.setCustomId("next_page");
-		lastPage = new Discord.MessageButton()
-			.setStyle("SECONDARY")
-			.setEmoji("⏩")
-			.setCustomId("last_page");
-	}
-	else {
-		firstPage = new Discord.MessageButton()
-			.setStyle("DANGER")
-			.setLabel("<<")
-			.setCustomId("first_page");
-		prevPage = new Discord.MessageButton()
-			.setStyle("PRIMARY")
-			.setLabel("<")
-			.setCustomId("prev_page");
-		nextPage = new Discord.MessageButton()
-			.setStyle("PRIMARY")
-			.setLabel(">")
-			.setCustomId("next_page");
-		lastPage = new Discord.MessageButton()
-			.setStyle("DANGER")
-			.setLabel(">>")
-			.setCustomId("last_page");
-	}
-
+	let { firstPage, prevPage, nextPage, lastPage } = getButtons("menu", playerData.settings.buttonstyle);
 	let infoMessage = new InfoMessage(
 		`${user.username}'s Garage`,
 		`Current Sorting Criteria: \`${sort}\`, Filter Activated: \`${(playerData.filter !== undefined && playerData.settings.filtergarage === true)}\``,
@@ -577,9 +520,56 @@ async function listDisplay(message, user, page, garage, sort, playerData, curren
 	return { listMessage: listMessage, embed: infoMessage };
 }
 
-module.exports = {
+function filterCheck(message, car, filter) {
+    let currentCar = typeof car === "string" ? require(`../cars/${car}`) : require(`../cars/${carFiles.find(f => f.includes(car.carID))}`);
+    for (const [key, value] of Object.entries(filter)) {
+        switch (typeof value) {
+            case "object":
+                if (Array.isArray(value)) {
+                    if (Array.isArray(currentCar[key])) {
+                        let obj = {};
+                        currentCar[key].forEach((tag, index) => obj[tag.toLowerCase()] = index);
+                        return value.every(tagFilter => obj[tagFilter] !== undefined);
+                    }
+                    else {
+                        return value.includes(currentCar[key].toLowerCase());
+                    }
+                }
+                else {
+                    return currentCar[key] >= value.start && currentCar[key] <= value.end;
+                }
+            case "string":
+                if (key === "search") {
+                    return carNameGen(message, currentCar).toLowerCase().includes(value);
+                }
+                else {
+                    return currentCar[key].toLowerCase() === value;
+                }
+            case "boolean":
+                switch (key) {
+                    case "isPrize":
+                        return currentCar[key] === value;
+                    case "isStock":
+                        return (car["000"] > 0) === value;
+                    case "isUpgraded":
+                        return (car["333"] + car["666"] + car["996"] + car["969"] + car["699"] > 0) === value;
+                    case "isMaxed":
+                        return (car["996"] + car["969"] + car["699"] > 0) === value;
+                    case "isOwned":
+                        return true;
+                    default:
+                        break;
+                }
+            default:
+                return;
+        }
+    }
+}
+
+export {
 	assignIndex,
 	search,
 	sortCars,
-	listDisplay
-}
+	listDisplay,
+	filterCheck
+};
