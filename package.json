@@ -13,15 +13,16 @@
     "mongoose": "^5.13.3",
     "node-cron": "^3.0.0",
     "npm": "^7.20.5",
-    "string-similarity": "^4.0.4"
+    "string-similarity": "^4.0.4",
+    "ts-node": "^10.2.1"
   },
   "devDependencies": {
     "@types/string-similarity": "^4.0.0",
     "typescript": "^4.4.2"
   },
   "scripts": {
-    "start": "node ./src/index.ts",
-    "replace": "node ./src/replace.ts"
+    "start": "node .",
+    "replace": "node replace.js"
   },
   "keywords": [],
   "author": "",

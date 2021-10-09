@@ -1,0 +1,54 @@
+﻿{
+    "rq": 41,
+    "make": "Nissan",
+    "model": "Leaf e+",
+    "modelYear": 2019,
+    "country": "JP",
+    "topSpeed": 104,
+    "0to60": 6.8,
+    "handling": 70,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+
+    "weight": 1756,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 50.12,
+    "ola": 87.76,
+    "description": "One of the first cheap EVs modernized. Card by keanny.",
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/861146493800546334/nissan_leaf_e.png",
+    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/861145462778494976/lef_e_000.jpg",
+    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/861145466904117258/lef_e_333.jpg",
+    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/861145470645567519/lef_e_666.jpg",
+    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/861145483313807410/lef_e_996.jpg",
+    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/861145477956370462/lef_e_969.jpg",
+    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/861145475595239434/lef_e_699.jpg",
+
+    "333TopSpeed": 109,
+    "3330to60": 6.5,
+    "333Handling": 72,
+
+    "666TopSpeed": 114,
+    "6660to60": 6.1,
+    "666Handling": 75,
+
+    "996TopSpeed": 119,
+    "9960to60": 5.8,
+    "996Handling": 75,
+
+    "969TopSpeed": 119,
+    "9690to60": 6.1,
+    "969Handling": 78,
+
+    "699TopSpeed": 114,
+    "6990to60": 5.8,
+    "699Handling": 78
+}

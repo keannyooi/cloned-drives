@@ -1,0 +1,54 @@
+{
+    "rq": 25,
+    "make": "Nissan",
+    "model": "Leaf",
+    "modelYear": 2010,
+    "country": "JP",
+    "topSpeed": 93,
+    "0to60": 10.1,
+    "handling": 69,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+
+    "weight": 1525,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 30.00,
+    "ola": 64.94,
+    "description": "For the first time since the early 20th century, people are actually considering buying an electric vehicle and it's all thanks to this. Card by Keanny.",
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/865585083979923476/nissan_leaf.png",
+    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/861145348320002048/lef_000.jpg",
+    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/861145356867338240/lef_333.jpg",
+    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/861145363700514846/lef_666.jpg",
+    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/861145373854400532/lef_996.jpg",
+    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/861145371304132628/lef_969.jpg",
+    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/861145367001432064/lef_699.jpg",
+
+    "333TopSpeed": 99,
+    "3330to60": 9.6,
+    "333Handling": 71,
+
+    "666TopSpeed": 104,
+    "6660to60": 9.1,
+    "666Handling": 74,
+
+    "996TopSpeed": 110,
+    "9960to60": 8.6,
+    "996Handling": 74,
+
+    "969TopSpeed": 110,
+    "9690to60": 9.1,
+    "969Handling": 77,
+
+    "699TopSpeed": 104,
+    "6990to60": 8.6,
+    "699Handling": 77
+}
