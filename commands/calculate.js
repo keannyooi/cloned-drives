@@ -1,13 +1,7 @@
 "use strict";
-/*
- __  ___  _______     ___      .__   __. .__   __. ____    ____
-|  |/  / |   ____|   /   \     |  \ |  | |  \ |  | \   \  /   /
-|  '  /  |  |__     /  ^  \    |   \|  | |   \|  |  \   \/   /
-|    <   |   __|   /  /_\  \   |  . `  | |  . `  |   \_    _/
-|  .  \  |  |____ /  _____  \  |  |\   | |  |\   |     |  |
-|__|\__\ |_______/__/     \__\ |__| \__| |__| \__|     |__| 	(this is a watermark that proves that these lines of code are mine)
-*/
-const { ErrorMessage, InfoMessage, sendMessage } = require("./sharedfiles/primary.js");
+
+const { ErrorMessage, SuccessMessage } = require("./sharedfiles/classes.js");
+
 module.exports = {
     name: "calculate",
     aliases: ["calc", "cal"],
@@ -17,7 +11,6 @@ module.exports = {
     description: "Calculates stuff like handling value, mid-range acceleration, off-the-line acceleration and averages.",
     execute(message, args) {
         let answer;
-        let average = args.slice(1, args.length).map(arg => Number(arg));
         if (args[0].toLowerCase() === "handling" && !isNaN(args[1])) {
             if (args[1] > 1 && args[1] <= 1.0165) {
                 answer = 90;
@@ -89,17 +82,34 @@ module.exports = {
             answer = answer.toFixed(2);
         }
         else if (args[0].toLowerCase() === "average" && average.includes(NaN) === false) {
+            let average = args.slice(1, args.length).map(arg => Number(arg));
             let plus = average.reduce(function (total, num) {
                 return total + num;
             });
             answer = plus / average.length;
         }
         else {
-            const errorMessage = new ErrorMessage("arguments given invalid.", "Here are some syntax examples for reference.");
-            return sendMessage(message, errorMessage.create(message));
+            const errorMessage = new ErrorMessage({
+                channel: message.channel,
+                title: "Error, arguments given invalid.",
+                desc: "Don't worry, here are some syntax examples for reference.",
+                author: message.author,
+                fields: [
+                    { name: "Calculating Handling", value: "`cd-calculate handling (insert lateral g-force value here)`" },
+                    { name: "Calculating Mid-Range Acceleration (MRA)", value: "`cd-calculate mra (insert 0-60mph time here) (insert 0-100mph time here)`" },
+                    { name: "Calculating Off-the-Line Acceleration (OLA)", value: "`cd-calculate ola (insert 0-30mph value here) (insert 0-60 time here)`" },
+                    { name: "Averaging Numbers", value: "`cd-calculate average (insert numbers here)`" }
+                ]
+            });
+            return errorMessage.sendMessage();
         }
-        const resultMessage = new InfoMessage("Calculation successful!", `Result: **${answer}**`);
-        return sendMessage(message, resultMessage.create(message));
+        
+        const resultMessage = new SuccessMessage({
+            channel: message.channel,
+            title: "Calculation successful!",
+            desc: `Result: **${answer}**`,
+            author: message.author,
+        });
+        return resultMessage.sendMessage();
     }
 };
-//# sourceMappingURL=calculate.js.map

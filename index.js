@@ -6,12 +6,12 @@ const { readdirSync } = require("fs");
 const { Collection } = require("discord.js");
 const { connect } = require("mongoose");
 const { DateTime, Interval } = require("luxon");
-const { ErrorMessage, InfoMessage } = require("./commands/sharedfiles/classes.js");
+const { ErrorMessage, InfoMessage, BotError } = require("./commands/sharedfiles/classes.js");
 const bot = require("./config.js");
 const profileModel = require("./models/profileSchema.js");
 const prefix = bot.devMode ? process.env.DEV_PREFIX : process.env.BOT_PREFIX;
 const token = bot.devMode ? process.env.DEV_TOKEN : process.env.BOT_TOKEN;
-const allowedCommands = ["carinfo.js", "calculate.js", "garage.js", "ping.js", "reload.js", "statistics.js", "addmoney.js", "removemoney.js"];
+const allowedCommands = ["carinfo.js", "calculate.js", "garage.js", "ping.js", "reload.js", "statistics.js", "addcar.js", "removecar.js", "addmoney.js", "removemoney.js", "carlist.js"];
 const commandFiles = readdirSync("./commands").filter(file => file.endsWith(".js"));
 
 commandFiles.forEach(function (file) {
@@ -31,8 +31,8 @@ connect(process.env.MONGO_PW, {
 
 bot.once("ready", async () => {
     bot.devMode ? console.log("DevBote Ready!") : console.log("Bote Ready!");
-    bot.awakenTime = Date.now();
-    const guild = await bot.guilds.fetch("711769157078876305"); //don't mind me lmao
+    bot.awakenTime = DateTime.now();
+    const guild = await bot.guilds.fetch("711769157078876305");
     const members = await guild.members.fetch();
     members.forEach(async (user) => {
         await newUser(user);
@@ -213,11 +213,18 @@ async function processCommand(message) {
         const errorMessage = new ErrorMessage({
             channel: message.channel,
             title: "Error, failed to execute command.",
-            desc: `Something must have gone wrong. Please report this issue to the devs.
-            \`${error.stack}\``,
+            desc: `Something must have gone wrong. Don't worry, I've already reported this issue to the devs.\n\`${error.stack}\``,
             author: message.author
         });
-        return errorMessage.sendMessage();
+        await errorMessage.sendMessage();
+        
+        const errorReport = new BotError({
+            guild: message.guild,
+            channel: message.channel,
+            message,
+            stack: error.stack,
+        });
+        return errorReport.sendReport();
     }
 }
 

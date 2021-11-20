@@ -52,13 +52,13 @@ module.exports = {
             }
 
             const playerData = await profileModel.findOne({ userID: user.id });
-            playerData.trophies += amount;
-            await playerData.save();
+            const balance = playerData.trophies + amount;
+            await profileModel.updateOne({ userID: user.id }, { trophies: balance });
 
             const successMessage = new SuccessMessage({
                 channel: message.channel,
                 title: `Successfully added ${trophyEmoji}${amount} to ${user.username}'s trophy amount!`,
-                desc: `Current Trophy Amount: ${trophyEmoji}${playerData.trophies}`,
+                desc: `Current Trophy Amount: ${trophyEmoji}${balance}`,
                 author: message.author,
                 thumbnail: user.displayAvatarURL({ format: "png", dynamic: true })
             });

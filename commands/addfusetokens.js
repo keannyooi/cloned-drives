@@ -53,13 +53,13 @@ module.exports = {
             }
 
             const playerData = await profileModel.findOne({ userID: user.id });
-            playerData.fuseTokens += amount;
-            await playerData.save();
+            const balance = playerData.fuseTokens + amount;
+            await profileModel.updateOne({ userID: user.id }, { fuseTokens: balance });
 
             const successMessage = new SuccessMessage({
                 channel: message.channel,
                 title: `Successfully added ${fuseEmoji}${amount} to ${user.username}'s fuse token balance!`,
-                desc: `Current Fuse Token Balance: ${fuseEmoji}${playerData.fuseTokens}`,
+                desc: `Current Fuse Token Balance: ${fuseEmoji}${balance}`,
                 author: message.author,
                 thumbnail: user.displayAvatarURL({ format: "png", dynamic: true })
             });

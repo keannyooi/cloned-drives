@@ -1,6 +1,8 @@
 "use strict";
 
-const Discord = require("discord.js");
+const { MessageButton } = require("discord.js");
+const { ErrorMessage, InfoMessage } = require("./classes.js");
+const { defaultWaitTime, pageLimit } = require("./consts.js");
 const bot = require("../../config.js");
 
 function rarityCheck(car, shortenedLists) {
@@ -33,7 +35,7 @@ function rarityCheck(car, shortenedLists) {
     }
 }
 
-function carNameGen(currentCar, rarity, upgrade) {
+function carNameGen(currentCar, rarity, upgrade, shortenedlists) {
     const trophyEmoji = bot.emojis.cache.get("775636479145148418");
     let make = currentCar["make"];
     if (typeof make === "object") {
@@ -47,7 +49,7 @@ function carNameGen(currentCar, rarity, upgrade) {
         currentName += ` [${upgrade}]`;
     }
     if (currentCar["isPrize"]) {
-        currentName += ` ${trophyEmoji}`;
+        currentName += shortenedlists ? ` 🏆` : ` ${trophyEmoji}`;
     }
     return currentName;
 }
@@ -71,72 +73,158 @@ function getButtons(type, buttonStyle) {
         case "menu":
             let firstPage, prevPage, nextPage, lastPage;
             if (buttonStyle === "classic") {
-                firstPage = new Discord.MessageButton()
-                    .setStyle("SECONDARY")
-                    .setEmoji("⏪")
-                    .setCustomId("first_page");
-                prevPage = new Discord.MessageButton()
-                    .setStyle("SECONDARY")
-                    .setEmoji("⬅️")
-                    .setCustomId("prev_page");
-                nextPage = new Discord.MessageButton()
-                    .setStyle("SECONDARY")
-                    .setEmoji("➡️")
-                    .setCustomId("next_page");
-                lastPage = new Discord.MessageButton()
-                    .setStyle("SECONDARY")
-                    .setEmoji("⏩")
-                    .setCustomId("last_page");
+                firstPage = new MessageButton({
+                    emoji: "⏪",
+                    style: "SECONDARY",
+                    customId: "first_page"
+                });
+                prevPage = new MessageButton({
+                    emoji: "⬅️",
+                    style: "SECONDARY",
+                    customId: "prev_page"
+                });
+                nextPage = new MessageButton({
+                    emoji: "➡️",
+                    style: "SECONDARY",
+                    customId: "next_page"
+                });
+                lastPage = new MessageButton({
+                    emoji: "⏩",
+                    style: "SECONDARY",
+                    customId: "last_page"
+                });
             }
             else {
-                firstPage = new Discord.MessageButton()
-                    .setStyle("DANGER")
-                    .setLabel("<<")
-                    .setCustomId("first_page");
-                prevPage = new Discord.MessageButton()
-                    .setStyle("PRIMARY")
-                    .setLabel("<")
-                    .setCustomId("prev_page");
-                nextPage = new Discord.MessageButton()
-                    .setStyle("PRIMARY")
-                    .setLabel(">")
-                    .setCustomId("next_page");
-                lastPage = new Discord.MessageButton()
-                    .setStyle("DANGER")
-                    .setLabel(">>")
-                    .setCustomId("last_page");
+                firstPage = new MessageButton({
+                    label: "<<",
+                    style: "DANGER",
+                    customId: "first_page"
+                });
+                prevPage = new MessageButton({
+                    label: "<",
+                    style: "PRIMARY",
+                    customId: "prev_page"
+                });
+                nextPage = new MessageButton({
+                    label: ">",
+                    style: "PRIMARY",
+                    customId: "next_page"
+                });
+                lastPage = new MessageButton({
+                    label: ">>",
+                    style: "DANGER",
+                    customId: "last_page"
+                });
             }
-            return { firstPage: firstPage, prevPage: prevPage, nextPage: nextPage, lastPage: lastPage };
+            return { firstPage, prevPage, nextPage, lastPage };
         case "choice":
+            let yse, nop;
+            if (buttonStyle === "classic") {
+                yse = new MessageButton({
+                    emoji: "✅",
+                    style: "SECONDARY",
+                    customId: "yse"
+                });
+                nop = new MessageButton({
+                    emoji: "❎",
+                    style: "SECONDARY",
+                    customId: "nop"
+                });
+            }
+            else {
+                yse = new MessageButton({
+                    label: "Yes!",
+                    style: "SUCCESS",
+                    customId: "yse"
+                });
+                nop = new MessageButton({
+                    label: "No!",
+                    style: "DANGER",
+                    customId: "nop"
+                });
+            }
+            return { yse, nop };
+        case "rr":
             return;
         default:
             return;
     }
 }
 
-function listInit(list, page) {
-    let reactionIndex = 0, pageLimit = 10, startsWith, endsWith;
-    if (list.length <= pageLimit) {
-        startsWith = 0;
-        endsWith = list.length;
-        reactionIndex = 0;
+function paginate(list, page) {
+    return list.slice((page - 1) * pageLimit, page * pageLimit);
+}
+
+async function selectUpgrade(message, currentCar, amount, currentMessage, removeMaxed) {
+    const filter = (response) => response.author.id === message.author.id;
+    let isOne = Object.keys(currentCar.upgrades).filter(m => {
+        if (removeMaxed && m.includes("6") && m.includes("9")) return false;
+        return currentCar.upgrades[m] >= amount;
+    });
+    if (isOne.length > 0) {
+        return isOne[0];
     }
-    else if (page * pageLimit === pageLimit) {
-        startsWith = 0;
-        endsWith = pageLimit;
-        reactionIndex = 1;
-    }
-    else if (list.length <= (pageLimit * page)) {
-        startsWith = pageLimit * (page - 1);
-        endsWith = list.length;
-        reactionIndex = 2;
+    else if (isOne.length > 1) {
+        let upgradeList = "Type in any tune that is displayed here.\n";
+        for (let upg of isOne) {
+            upgradeList += `\`${upg}\`, `;
+        }
+
+        const infoMessage = new InfoMessage({
+            channel: message.channel,
+            title: "Remove car from which tune?",
+            desc: upgradeList.slice(0, -2),
+            author: message.author,
+            footer: `You have been given ${defaultWaitTime / 1000} seconds to consider.`
+        });
+        const upgradeMessage = await infoMessage.sendMessage({ currentMessage });
+
+        const collected = await message.channel.awaitMessages({
+            filter,
+            max: 1,
+            time: defaultWaitTime,
+            errors: ["time"]
+        });
+        try {
+            collected.first().delete();
+            if (isOne.find(m => m === collected.first().content) === undefined) {
+                const errorMessage = new ErrorMessage({
+                    channel: message.channel,
+                    title: "Error, invalid selection provided.",
+                    desc: "It looks like your response was not part of the selection.",
+                    author: message.author
+                }).displayClosest(collected.first().content);
+                return errorMessage.sendMessage({ currentMessage: upgradeMessage });
+            }
+            else {
+                return collected.first().content;
+            }
+        }
+        catch (error) {
+            console.log(error);
+            const cancelMessage = new InfoMessage({
+                channel: message.channel,
+                title: "Action cancelled automatically.",
+                desc: `I can only wait for your response for ${defaultWaitTime / 1000} seconds. Act quicker next time.`,
+                author: message.author
+            });
+            return cancelMessage.sendMessage({ currentMessage: upgradeMessage });
+        }
     }
     else {
-        startsWith = pageLimit * (page - 1);
-        endsWith = startsWith + pageLimit;
-        reactionIndex = 3;
+        const cancelMessage = new ErrorMessage({
+            channel: message.channel,
+            title: "Error, not enough cars to perform bulk fusing action.",
+            desc: "Maxed cars cannot be fused/sold. In any case, do check how many of the car you're trying to get rid of using `cd-garage` or `cd-carinfo`.",
+            author: message.author
+        }).displayClosest(amount);
+        return cancelMessage.sendMessage({ currentMessage });
     }
-    return { startsWith, endsWith, reactionIndex };
+}
+
+function calcTotal(car) {
+    if (typeof car !== "object") return 0;
+    return Object.values(car.upgrades).reduce((total, amount) => total + amount);
 }
 
 module.exports = {
@@ -144,5 +232,7 @@ module.exports = {
     carNameGen,
     unbritish,
     getButtons,
-    listInit
+    paginate,
+    selectUpgrade,
+    calcTotal
 };

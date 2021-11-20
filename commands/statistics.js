@@ -36,12 +36,22 @@ module.exports = {
                     .then(async (hmm) => {
                         if (!Array.isArray(hmm)) return;
                         let [result, currentMessage] = hmm;
-                        await displayData(result.user, currentMessage);
+                        try {
+                            await displayData(result.user, currentMessage);
+                        }
+                        catch (error) {
+                            throw error;
+                        }
                     });
             }
         }
         else {
-            await displayData(message.author);
+            try {
+                await displayData(message.author);
+            }
+            catch (error) {
+                throw error;
+            }
         }
 
         async function displayData(user, currentMessage) {

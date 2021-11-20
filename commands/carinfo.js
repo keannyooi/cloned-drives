@@ -28,7 +28,12 @@ module.exports = {
             .then(async (hmm) => {
                 if (!Array.isArray(hmm)) return;
                 let [result, currentMessage] = hmm;
-                await displayInfo(result, currentMessage);
+                try {
+                    await displayInfo(result, currentMessage);
+                }
+                catch (error) {
+                    throw error;
+                }
             });
 
         async function displayInfo(car, currentMessage) {

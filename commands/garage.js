@@ -1,10 +1,9 @@
 "use strict";
 
 const { ErrorMessage, InfoMessage } = require("./sharedfiles/classes.js");
-const { listInit, carNameGen, rarityCheck } = require("./sharedfiles/primary.js");
+const { carNameGen, rarityCheck, calcTotal } = require("./sharedfiles/primary.js");
 const { searchUser, sortCars, filterCheck, listUpdate } = require("./sharedfiles/secondary.js");
 const profileModel = require("../models/profileSchema.js");
-const bot = require("../config.js");
 
 module.exports = {
     name: "garage",
@@ -41,7 +40,12 @@ module.exports = {
 
                 if (message.mentions.users.first()) {
                     if (!message.mentions.users.first().bot) {
-                        loop(message.mentions.users.first(), page, sort);
+                        try {
+                            await loop(message.mentions.users.first(), page, sort);
+                        }
+                        catch (error) {
+                            throw error;
+                        }
                     }
                     else {
                         const errorMessage = new ErrorMessage({
@@ -62,7 +66,12 @@ module.exports = {
                         .then(async (hmm) => {
                             if (!Array.isArray(hmm)) return;
                             let [result, currentMessage] = hmm;
-                            await loop(result.user, page, sort, currentMessage);
+                            try {
+                                await loop(result.user, page, sort, currentMessage);
+                            }
+                            catch (error) {
+                                throw error;
+                            }
                         });
                 }
             }
@@ -70,19 +79,20 @@ module.exports = {
                 if (args[args.length - 2] === "-s" && args[args.length - 1]) {
                     sort = args[args.length - 1].toLowerCase();
                 }
-                loop(user, parseInt(args[0]), sort);
+                try {
+                    await loop(user, parseInt(args[0]), sort);
+                }
+                catch (error) {
+                    throw error;
+                }
             }
         }
 
         async function loop(user, page, sort, currentMessage) {
-            const trophyEmoji = bot.emojis.cache.get("775636479145148418");
-            const playerData = await profileModel.findOne({ userID: message.author.id });
+            const playerData = await profileModel.findOne({ userID: user.id });
             let garage = playerData.garage;
             if (Object.keys(playerData.filter).length > 0 && playerData.settings.filtergarage === true) {
-                garage.filter(car => {
-                    console.log(car);
-                    return filterCheck(car, playerData.filter);
-                });
+                garage.filter(car => filterCheck(car, playerData.filter));
             }
 
             switch (sort) {
@@ -117,7 +127,6 @@ module.exports = {
             }
 
             const totalPages = Math.ceil(garage.length / 10);
-            garage = sortCars(garage, sort, playerData.settings.sortorder);
             if (page < 1 || totalPages < page) {
                 const errorMessage = new ErrorMessage({
                     channel: message.channel,
@@ -127,37 +136,38 @@ module.exports = {
                 }).displayClosest(page);
                 return errorMessage.sendMessage({ currentMessage });
             }
+            garage = sortCars(garage, sort, playerData.settings.sortorder);
 
-            let { startsWith, endsWith, reactionIndex } = listInit(garage, page);
-            let listMessage = listDisplay(startsWith, endsWith, totalPages);
-            listUpdate(listMessage, listDisplay, reactionIndex, playerData.settings.buttonstyle, currentMessage);
+            try {
+                listUpdate(garage, page, listDisplay, playerData.settings.buttonstyle, currentMessage);
+            }
+            catch (error) {
+                throw error;
+            }
 
-            function listDisplay(startsWith, endsWith, totalPages) {
+            function listDisplay(section, page, totalPages, currentMessage) {
                 let garageList = "", amountList = "", valueList = "";
-                for (let i = startsWith; i < endsWith; i++) {
-                    garageList += `**${i - ((page - 1) * 10) + 1}.** `;
-                    amountList += `**${i - ((page - 1) * 10) + 1}.** `;
-                    valueList += `**${i - ((page - 1) * 10) + 1}.** `;
+                for (let i = 0; i < section.length; i++) {
+                    garageList += `**${i + 1}.** `;
+                    amountList += `**${i + 1}.** `;
+                    valueList += `**${i + 1}.** `;
 
-                    let car = garage[i];
+                    let car = section[i];
                     let currentCar = require(`./cars/${car.carID}.json`);
                     let rarity = rarityCheck(currentCar, playerData.settings.shortenedlists);
-                    garageList += carNameGen(currentCar, rarity);
+                    garageList += carNameGen(currentCar, rarity, null, playerData.settings.shortenedlists);
 
                     for (let [upgrade, value] of Object.entries(car.upgrades)) {
                         if (value > 0) {
                             amountList += `${upgrade} x${value}, `;
                         }
                     }
-                    if (currentCar["isPrize"]) {
-                        garage += playerData.settings.shortenedlists ? ` 🏆` : ` ${trophyEmoji}`;
-                    }
 
                     garageList += "\n";
                     amountList = amountList.slice(0, -2);
                     amountList += "\n";
                     if (sort === "mostowned") {
-                        valueList += `\`${Object.values(car.upgrades).reduce((total, i) => total += i)}\`\n`;
+                        valueList += `\`${calcTotal(car)}\`\n`;
                     }
                     else if (sort !== "rq") {
                         let values = "";
@@ -189,10 +199,10 @@ module.exports = {
                     return errorMessage.sendMessage({ currentMessage });
                 }
 
-                let infoMessage = new InfoMessage({
+                const infoMessage = new InfoMessage({
                     channel: message.channel,
                     title: `${user.username}'s Garage`,
-                    desc: `Current Sorting Criteria: \`${sort}\`, Filter Activated: \`${(playerData.filter !== undefined && playerData.settings.filtergarage === true)}\``,
+                    desc: `Current Sorting Criteria: \`${sort}\`, Filter Activated: \`${playerData.filter !== undefined && playerData.settings.filtergarage === true}\``,
                     author: message.author,
                     thumbnail: user.displayAvatarURL({ format: "png", dynamic: true }),
                     fields: [

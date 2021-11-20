@@ -2,16 +2,14 @@
 
 const { MessageActionRow } = require("discord.js");
 const Canvas = require("canvas");
-const { rarityCheck, carNameGen, getButtons } = require("./primary.js");
+const { rarityCheck, carNameGen, getButtons, paginate, calcTotal } = require("./primary.js");
 const { ErrorMessage, InfoMessage } = require("./classes.js");
-const bot = require("../../config.js");
-const { defaultWaitTime } = require("./consts.js");
+const { defaultWaitTime, defaultChoiceTime, pageLimit } = require("./consts.js");
 
 // assisting functions (these won't be exported to other files)
-async function processResults(message, searchResults, listGen) {
-    const filter = (response) => {
-        return response.author.id === message.author.id;
-    };
+
+async function processResults(message, searchResults, listGen, currentMessage) {
+    const filter = (response) => response.author.id === message.author.id;
     const size = Array.isArray(searchResults) ? searchResults.length : searchResults.size;
 
     if (size > 1) {
@@ -23,7 +21,7 @@ async function processResults(message, searchResults, listGen) {
                 desc: "Try again with a more specific keyword.",
                 author: message.author
             });
-            return errorMessage.sendMessage();
+            return errorMessage.sendMessage({ currentMessage });
         }
 
         const infoScreen = new InfoMessage({
@@ -31,9 +29,9 @@ async function processResults(message, searchResults, listGen) {
             title: "Multiple results found, please type one of the following.",
             desc: list,
             author: message.author,
-            footer: "You have been given 1 minute to decide."
+            footer: `You have been given ${defaultWaitTime / 1000} seconds to decide.`
         });
-        const currentMessage = await infoScreen.sendMessage();
+        currentMessage = await infoScreen.sendMessage({ currentMessage });
 
         try {
             const collected = await message.channel.awaitMessages({
@@ -50,7 +48,7 @@ async function processResults(message, searchResults, listGen) {
                 const errorMessage = new ErrorMessage({
                     channel: message.channel,
                     title: "Error, invalid integer provided.",
-                    desc: `It looks like your response was either not a number or not within \`1\` and \`${size}\`.`,
+                    desc: `Your response was not a number between \`1\` and \`${size}\`.`,
                     author: message.author
                 }).displayClosest(collected.first().content);
                 return errorMessage.sendMessage({ currentMessage });
@@ -71,14 +69,20 @@ async function processResults(message, searchResults, listGen) {
             const infoMessage = new InfoMessage({
                 channel: message.channel,
                 title: "Action cancelled automatically.",
-                desc: "I can only wait for your response for 1 minute. Act quicker next time.",
+                desc: `I can only wait for your response for ${defaultWaitTime / 1000} seconds. Act quicker next time.`,
                 author: message.author
             });
             return infoMessage.sendMessage({ currentMessage });
         }
     }
     else if (size > 0) {
-        return Array.isArray(searchResults) ? searchResults : [Array.from(searchResults)[0][1]];
+        if (Array.isArray(searchResults)) {
+            searchResults.push(currentMessage);
+            return searchResults;
+        }
+        else {
+            return [Array.from(searchResults)[0][1], currentMessage];
+        }
     }
     else {
         throw ((query, searchList) => {
@@ -88,7 +92,7 @@ async function processResults(message, searchResults, listGen) {
                 desc: "Well that sucks.",
                 author: message.author
             }).displayClosest(query, searchList);
-            return errorMessage.sendMessage();
+            return errorMessage.sendMessage({ currentMessage });
         });
     }
 }
@@ -300,7 +304,7 @@ async function assignIndex(deck, currentRound, graphics) {
     }
 }
 
-async function searchUser(message, username, playerList) {
+async function searchUser(message, username, playerList, currentMessage) {
     const searchResults = playerList.filter(function (s) {
         return s.nickname?.toLowerCase().includes(username) || s.user.username.includes(username);
     });
@@ -311,7 +315,7 @@ async function searchUser(message, username, playerList) {
             i++;
         });
         return list;
-    })
+    }, currentMessage)
         .catch(error => {
             const list = [];
             playerList.forEach(player => {
@@ -321,7 +325,7 @@ async function searchUser(message, username, playerList) {
         });
 }
 
-async function search(message, query, searchList, type) {
+async function search(message, query, searchList, type, currentMessage) {
     const searchResults = searchList.filter(function (s) {
         let test = listGen(s, type).toLowerCase().split(" ");
         return query.every(part => test.includes(part));
@@ -333,7 +337,7 @@ async function search(message, query, searchList, type) {
             list += `${i} - ${hmm}\n`;
         }
         return list;
-    })
+    }, currentMessage)
         .catch(error => {
             return error(query.join(" "), searchList.map(i => listGen(i, type, true).toLowerCase()));
         });
@@ -384,13 +388,20 @@ function sortCars(list, sort, order, garage) {
             }
         }
         else if (sort === "mostowned") {
-            let fileA = a, fileB = b;
+            let upgA, upgB;
             if (garage) {
-                fileA = garage.find(c => a.includes(c.carID));
-                fileB = garage.find(c => b.includes(c.carID));
+                upgA = garage.find(c => a.includes(c.carID));
+                upgB = garage.find(c => b.includes(c.carID));
             }
-            critA = fileA["000"] + fileA["333"] + fileA["666"] + fileA["996"] + fileA["969"] + fileA["699"];
-            critB = fileB["000"] + fileB["333"] + fileB["666"] + fileB["996"] + fileB["969"] + fileB["699"];
+
+            if (upgA === 0 && upgB === 0) {
+                critA = critB = 0;
+            }
+            else {
+                critA = calcTotal(upgA ?? a);
+                critB = calcTotal(upgB ?? b);
+            }
+            
         }
 
         if (critA === critB) {
@@ -408,43 +419,42 @@ function sortCars(list, sort, order, garage) {
     });
 }
 
-async function listUpdate(embed, listDisplay, reactionIndex, buttonStyle, currentMessage) {
-    const filter = (button) => button.user.id === message.author.id;
+async function listUpdate(list, page, listDisplay, buttonStyle, currentMessage) {
+    const totalPages = Math.ceil(list.length / 10);
+    let section = paginate(list, page);
     let { firstPage, prevPage, nextPage, lastPage } = getButtons("menu", buttonStyle);
-    let index = reactionIndex;
-    switch (index) {
-        case 0:
-            firstPage.setDisabled(true);
-            prevPage.setDisabled(true);
-            nextPage.setDisabled(true);
-            lastPage.setDisabled(true);
-            break;
-        case 1:
-            firstPage.setDisabled(true);
-            prevPage.setDisabled(true);
-            nextPage.setDisabled(false);
-            lastPage.setDisabled(false);
-            break;
-        case 2:
-            firstPage.setDisabled(false);
-            prevPage.setDisabled(false);
-            nextPage.setDisabled(true);
-            lastPage.setDisabled(true);
-            break;
-        case 3:
-            firstPage.setDisabled(false);
-            prevPage.setDisabled(false);
-            nextPage.setDisabled(false);
-            lastPage.setDisabled(false);
-            break;
-        default:
-            break;
+    let embed = listDisplay(section, page, totalPages, currentMessage);
+    const filter = button => button.user.id === embed.authorID;
+
+    if (list.length <= 10) {
+        firstPage.setDisabled(true);
+        prevPage.setDisabled(true);
+        nextPage.setDisabled(true);
+        lastPage.setDisabled(true);
+    }
+    else if (list.length <= page * pageLimit) {
+        firstPage.setDisabled(false);
+        prevPage.setDisabled(false);
+        nextPage.setDisabled(true);
+        lastPage.setDisabled(true);
+    }
+    else if (page === 1) {
+        firstPage.setDisabled(true);
+        prevPage.setDisabled(true);
+        nextPage.setDisabled(false);
+        lastPage.setDisabled(false);
+    }
+    else {
+        firstPage.setDisabled(false);
+        prevPage.setDisabled(false);
+        nextPage.setDisabled(false);
+        lastPage.setDisabled(false);
     }
 
     let row = new MessageActionRow({ components: [firstPage, prevPage, nextPage, lastPage] });
     let listMessage = await embed.sendMessage({ buttons: [row], currentMessage });
 
-    const collector = embed.channel.createMessageComponentCollector({ filter, time: defaultWaitTime });
+    const collector = listMessage.message.createMessageComponentCollector({ filter, time: defaultWaitTime });
     collector.on("collect", async (button) => {
         switch (button.customId) {
             case "first_page":
@@ -462,16 +472,45 @@ async function listUpdate(embed, listDisplay, reactionIndex, buttonStyle, curren
             default:
                 break;
         }
-        let newEmbed = listDisplay(startsWith, endsWith, index, totalPages);
-        listMessage = await newEmbed.sendMessage({ buttons: [row], currentMessage: embed.currentMessage });
-        await button.reply.defer();
+
+        section = paginate(list, page);
+        if (list.length <= 10) {
+            firstPage.setDisabled(true);
+            prevPage.setDisabled(true);
+            nextPage.setDisabled(true);
+            lastPage.setDisabled(true);
+        }
+        else if (list.length <= page * pageLimit) {
+            firstPage.setDisabled(false);
+            prevPage.setDisabled(false);
+            nextPage.setDisabled(true);
+            lastPage.setDisabled(true);
+        }
+        else if (page === 1) {
+            firstPage.setDisabled(true);
+            prevPage.setDisabled(true);
+            nextPage.setDisabled(false);
+            lastPage.setDisabled(false);
+        }
+        else {
+            firstPage.setDisabled(false);
+            prevPage.setDisabled(false);
+            nextPage.setDisabled(false);
+            lastPage.setDisabled(false);
+        }
+
+        row = new MessageActionRow({ components: [firstPage, prevPage, nextPage, lastPage] });
+        embed = listDisplay(section, page, totalPages, listMessage);
+        listMessage = await embed.sendMessage({ buttons: [row], currentMessage: listMessage });
+
+        await button.deferUpdate();
     });
     collector.on("end", () => {
         return listMessage.removeButtons();
     });
 }
 
-function filterCheck(car, filter) {
+function filterCheck(car, filter, garage) {
     let currentCar = typeof car === "string" ? require(`../cars/${car}`) : require(`../cars/${carFiles.find(f => f.includes(car.carID))}`);
     for (const [key, value] of Object.entries(filter)) {
         switch (typeof value) {
@@ -501,13 +540,13 @@ function filterCheck(car, filter) {
                     case "isPrize":
                         return currentCar[key] === value;
                     case "isStock":
-                        return (car["000"] > 0) === value;
+                        return (car.upgrades["000"] > 0) === value;
                     case "isUpgraded":
-                        return (car["333"] + car["666"] + car["996"] + car["969"] + car["699"] > 0) === value;
+                        return (car.upgrades["333"] + car.upgrades["666"] + car.upgrades["996"] + car.upgrades["969"] + car.upgrades["699"] > 0) === value;
                     case "isMaxed":
-                        return (car["996"] + car["969"] + car["699"] > 0) === value;
+                        return (car.upgrades["996"] + car.upgrades["969"] + car.upgrades["699"] > 0) === value;
                     case "isOwned":
-                        return true;
+                        return garage ? garage.find(c => c.carID === car.carID) : true;
                     default:
                         break;
                 }
@@ -517,11 +556,54 @@ function filterCheck(car, filter) {
     }
 }
 
+async function confirm(message, confirmationMessage, acceptedFunction, buttonStyle, currentMessage) {
+    const buttonFilter = (button) => button.user.id === message.author.id;
+    const { yse, nop } = getButtons("choice", buttonStyle);
+    const row = new MessageActionRow({ components: [yse, nop] });
+    const reactionMessage = await confirmationMessage.sendMessage({ currentMessage, buttons: [row] });
+    let processed = false;
+
+    const collector = message.channel.createMessageComponentCollector({ filter: buttonFilter, time: defaultChoiceTime });
+    collector.on("collect", async (button) => {
+        if (!processed) {
+            processed = true;
+            switch (button.customId) {
+                case "yse":
+                    await acceptedFunction(reactionMessage);
+                    break;
+                case "nop":
+                    const cancelMessage = new InfoMessage({
+                        channel: message.channel,
+                        title: "Action cancelled.",
+                        author: message.author,
+                    });
+                    await cancelMessage.sendMessage({ currentMessage: reactionMessage });
+                    return cancelMessage.removeButtons();
+                default:
+                    break;
+            }
+        }
+    });
+    collector.on("end", async () => {
+        if (!processed) {
+            const cancelMessage = new InfoMessage({
+                channel: message.channel,
+                title: "Action cancelled automatically.",
+                desc: "Please act quicker next time.",
+                author: message.author,
+            });
+            await cancelMessage.sendMessage({ currentMessage: reactionMessage });
+            return cancelMessage.removeButtons();
+        }
+    });
+}
+
 module.exports = {
     assignIndex,
     search,
     searchUser,
     sortCars,
     listUpdate,
-    filterCheck
+    filterCheck,
+    confirm
 };

@@ -54,12 +54,12 @@ module.exports = {
 
             const playerData = await profileModel.findOne({ userID: user.id });
             if (amount <= playerData.fuseTokens) {
-                playerData.fuseTokens -= amount;
-                await playerData.save();
+                const balance = playerData.fuseTokens - amount;
+                await profileModel.updateOne({ userID: user.id }, { fuseTokens: balance });
                 const successMessage = new SuccessMessage({
                     channel: message.channel,
                     title: `Successfully removed ${fuseEmoji}${amount} from ${user.username}'s fuse token balance!`,
-                    desc: `Current Fuse Token Balance: ${fuseEmoji}${playerData.fuseTokens}`,
+                    desc: `Current Fuse Token Balance: ${fuseEmoji}${balance}`,
                     author: message.author,
                     thumbnail: user.displayAvatarURL({ format: "png", dynamic: true })
                 });

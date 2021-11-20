@@ -54,12 +54,12 @@ module.exports = {
 
             const playerData = await profileModel.findOne({ userID: user.id });
             if (amount <= playerData.money) {
-                playerData.money -= amount;
-                await playerData.save();
+                const balance = playerData.money - amount;
+                await profileModel.updateOne({ userID: user.id }, { money: balance });
                 const successMessage = new SuccessMessage({
                     channel: message.channel,
                     title: `Successfully removed ${moneyEmoji}${amount} from ${user.username}'s cash balance!`,
-                    desc: `Current Money Balance: ${moneyEmoji}${playerData.money}`,
+                    desc: `Current Money Balance: ${moneyEmoji}${balance}`,
                     author: message.author,
                     thumbnail: user.displayAvatarURL({ format: "png", dynamic: true })
                 });
