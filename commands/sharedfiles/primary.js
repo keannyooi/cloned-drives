@@ -2,7 +2,7 @@
 
 const { MessageButton } = require("discord.js");
 const { ErrorMessage, InfoMessage } = require("./classes.js");
-const { defaultWaitTime, pageLimit } = require("./consts.js");
+const { defaultWaitTime, pageLimit, carSave } = require("./consts.js");
 const bot = require("../../config.js");
 
 function rarityCheck(car, shortenedLists) {
@@ -227,6 +227,22 @@ function calcTotal(car) {
     return Object.values(car.upgrades).reduce((total, amount) => total + amount);
 }
 
+function addCars(garage, cars) {
+    for (let i = 0; i < cars.length; i++) {
+        let isInGarage = garage.findIndex(garageCar => garageCar.carID === cars[i]);
+        if (isInGarage !== -1) {
+            garage[isInGarage].upgrades["000"] += 1;
+        }
+        else {
+            garage.push({
+                carID: cars[i].slice(0, 6),
+                upgrades: carSave
+            });
+        }
+    }
+    return garage;
+}
+
 module.exports = {
     rarityCheck,
     carNameGen,
@@ -234,5 +250,6 @@ module.exports = {
     getButtons,
     paginate,
     selectUpgrade,
-    calcTotal
+    calcTotal,
+    addCars
 };

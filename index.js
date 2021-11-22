@@ -11,7 +11,7 @@ const bot = require("./config.js");
 const profileModel = require("./models/profileSchema.js");
 const prefix = bot.devMode ? process.env.DEV_PREFIX : process.env.BOT_PREFIX;
 const token = bot.devMode ? process.env.DEV_TOKEN : process.env.BOT_TOKEN;
-const allowedCommands = ["carinfo.js", "calculate.js", "garage.js", "ping.js", "reload.js", "statistics.js", "addcar.js", "removecar.js", "addmoney.js", "removemoney.js", "carlist.js"];
+const allowedCommands = ["carinfo.js", "calculate.js", "garage.js", "ping.js", "reload.js", "statistics.js", "addcar.js", "removecar.js", "addmoney.js", "removemoney.js", "carlist.js", "testpack.js", "trackinfo.js", "packinfo.js"];
 const commandFiles = readdirSync("./commands").filter(file => file.endsWith(".js"));
 
 commandFiles.forEach(function (file) {
@@ -201,9 +201,7 @@ async function processCommand(message) {
                 title: "Error, you may only execute 1 command at a time.",
                 desc: "This error will disappear once the currently executing command finishes or after 30 seconds, whichever comes first.",
                 author: message.author,
-                fields: [
-                    { name: "Currenty Executing", value: `\`${bot.execList[message.author.id]}\`` }
-                ]
+                fields: [{ name: "Currenty Executing", value: `\`${bot.execList[message.author.id]}\`` }]
             });
             return errorMessage.sendMessage();
         }

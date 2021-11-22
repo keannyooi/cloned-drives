@@ -1,8 +1,7 @@
 {
 	"packName": "Rest of The World Elite Pack",
 	"description": "A pack with 5 Rest of The World Super rares or better.",
-	"limited": true,
-        "repetition": 1,
+    "repetition": 1,
 	"pack": "https://cdn.discordapp.com/attachments/800047734035841037/848119630563508274/ElitePack.png",
 	
 	"filter": {

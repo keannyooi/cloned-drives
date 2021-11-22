@@ -5,10 +5,12 @@ const Canvas = require("canvas");
 const { rarityCheck, carNameGen, getButtons, paginate, calcTotal } = require("./primary.js");
 const { ErrorMessage, InfoMessage } = require("./classes.js");
 const { defaultWaitTime, defaultChoiceTime, pageLimit } = require("./consts.js");
+const fs = require("fs");
+const carFiles = fs.readdirSync("./commands/cars").filter(file => file.endsWith(".json"));
 
 // assisting functions (these won't be exported to other files)
 
-async function processResults(message, searchResults, listGen, currentMessage) {
+async function processResults(message, searchResults, listGen, type, currentMessage) {
     const filter = (response) => response.author.id === message.author.id;
     const size = Array.isArray(searchResults) ? searchResults.length : searchResults.size;
 
@@ -91,7 +93,7 @@ async function processResults(message, searchResults, listGen, currentMessage) {
                 title: "Error, query provided yielded no results.",
                 desc: "Well that sucks.",
                 author: message.author
-            }).displayClosest(query, searchList);
+            }).displayClosest(query, type !== "id" ? searchList : null);
             return errorMessage.sendMessage({ currentMessage });
         });
     }
@@ -315,7 +317,7 @@ async function searchUser(message, username, playerList, currentMessage) {
             i++;
         });
         return list;
-    }, currentMessage)
+    }, null, currentMessage)
         .catch(error => {
             const list = [];
             playerList.forEach(player => {
@@ -326,10 +328,11 @@ async function searchUser(message, username, playerList, currentMessage) {
 }
 
 async function search(message, query, searchList, type, currentMessage) {
-    const searchResults = searchList.filter(function (s) {
+    const searchResults = searchList.filter(s => {
         let test = listGen(s, type).toLowerCase().split(" ");
         return query.every(part => test.includes(part));
     });
+
     return processResults(message, searchResults, () => {
         let list = "";
         for (let i = 1; i <= searchResults.length; i++) {
@@ -337,7 +340,7 @@ async function search(message, query, searchList, type, currentMessage) {
             list += `${i} - ${hmm}\n`;
         }
         return list;
-    }, currentMessage)
+    }, type, currentMessage)
         .catch(error => {
             return error(query.join(" "), searchList.map(i => listGen(i, type, true).toLowerCase()));
         });
@@ -345,17 +348,18 @@ async function search(message, query, searchList, type, currentMessage) {
     function listGen(item, type, includeBrackets) {
         switch (type) {
             case "car":
-                let getDetails = require(`../cars/${item}`);
-                let a = carNameGen(getDetails);
+                let carDetails = require(`../cars/${item}`);
+                let a = carNameGen(carDetails);
                 if (!includeBrackets) {
                     a = a.replace("(", "").replace(")", "");
                 }
                 return a;
             case "pack":
             case "track":
-                return getDetails[`${type}Name`];
+                let details = require(`../${type}s/${item}`);
+                return details[`${type}Name`];
             case "id":
-                return typeof item === "string" ? item.slice(item.length - 12, item.length - 6) : item.id;
+                return typeof item === "string" ? item.slice(0, 6) : item.id;
             default:
                 return item.name;
         }
@@ -401,7 +405,7 @@ function sortCars(list, sort, order, garage) {
                 critA = calcTotal(upgA ?? a);
                 critB = calcTotal(upgB ?? b);
             }
-            
+
         }
 
         if (critA === critB) {
@@ -598,6 +602,146 @@ async function confirm(message, confirmationMessage, acceptedFunction, buttonSty
     });
 }
 
+function openPack(message, currentPack, currentMessage) {
+    const cardFilter = currentPack["filter"];
+    let rand, check, rqStart, rqEnd, pulledCards = "";
+    let currentCard = require(`../cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
+    const addedCars = [];
+
+    for (let i = 0; i < currentPack["repetition"] * 5; i++) {
+        rand = Math.floor(Math.random() * 1000 / 10);
+        check = 0;
+        for (let rarity of Object.keys(currentPack["packSequence"][Math.floor(i / currentPack["repetition"])])) {
+            check += currentPack["packSequence"][Math.floor(i / currentPack["repetition"])][rarity];
+            if (check > rand) {
+                switch (rarity) {
+                    case "common":
+                        rqStart = 1;
+                        rqEnd = 19;
+                        break;
+                    case "uncommon":
+                        rqStart = 20;
+                        rqEnd = 29;
+                        break;
+                    case "rare":
+                        rqStart = 30;
+                        rqEnd = 39;
+                        break;
+                    case "superRare":
+                        rqStart = 40;
+                        rqEnd = 49;
+                        break;
+                    case "ultraRare":
+                        rqStart = 50;
+                        rqEnd = 64;
+                        break;
+                    case "epic":
+                        rqStart = 65;
+                        rqEnd = 79;
+                        break;
+                    case "legendary":
+                        rqStart = 80;
+                        rqEnd = 999;
+                        break;
+                    default:
+                        break;
+                }
+                break;
+            }
+        }
+
+        let carFile = carFiles[Math.floor(Math.random() * carFiles.length)], counter = 0;
+        currentCard = require(`../cars/${carFile}`);
+        while (currentCard["rq"] < rqStart || currentCard["rq"] > rqEnd || filterCard(currentCard, cardFilter) === false || counter < 5000) {
+            carFile = carFiles[Math.floor(Math.random() * carFiles.length)];
+            currentCard = require(`../cars/${carFile}`);
+            counter++;
+        }
+
+        if (counter >= 5000) {
+            const errorScreen = new ErrorMessage({
+                channel: message.channel,
+                title: "Error, pack generation timed out likely due to no cars in generation pool.",
+                desc: "Don't worry, your money is refunded. (provided that you bought the pack)",
+                author: message.author,
+                footer: "Disclaimer: There is an *extremely* rare chance of this error to pop up even though nothing went wrong."
+            });
+            return errorScreen.sendMessage({ currentMessage });
+        }
+        addedCars.push(carFile);
+    }
+
+    addedCars.sort(function (a, b) {
+        const carA = require(`../cars/${a}`);
+        const carB = require(`../cars/${b}`);
+        if (carA["rq"] === carB["rq"]) {
+            let nameA = carNameGen(carA);
+            let nameB = carNameGen(carB);
+
+            return nameA > nameB ? 1 : -1;
+        }
+        else {
+            return carA["rq"] - carB["rq"];
+        }
+    });
+
+    for (let i = 0; i < addedCars.length; i++) {
+        let currentCar = require(`../cars/${addedCars[i]}`);
+        pulledCards += carNameGen(currentCar, rarityCheck(currentCar));
+        if ((i > 0 && (i + 1) % 5 !== 0)) {
+            pulledCards += ` **[[Card]](${currentCar["card"]})**`;
+        }
+        pulledCards += "\n";
+
+        if ((i + 1) % 5 === 0) {
+            const packScreen = new InfoMessage({
+                channel: message.channel,
+                title: `Opening ${currentPack["packName"]}...`,
+                desc: "Click on the image to see the cards better.",
+                author: message.author,
+                image: currentCar["card"],
+                thumbnail: currentPack["pack"],
+                fields: [{ name: "Cards Pulled", value: pulledCards }]
+            });
+            i === 4 ? packScreen.sendMessage({ currentMessage }) : packScreen.sendMessage();
+            pulledCards = "";
+        }
+    }
+    return addedCars;
+
+    function filterCard(currentCard, filter) {
+        let passed = true;
+        if (currentCard["isPrize"] === false) {
+            for (let criteria in filter) {
+                if (filter[criteria] !== "None") {
+                    switch (criteria) {
+                        case "make":
+                        case "tags":
+                            if (Array.isArray(currentCard[criteria])) {
+                                if (currentCard[criteria].some(m => m === filter[criteria]) === false) passed = false;
+                            }
+                            else {
+                                if (currentCard[criteria] !== filter[criteria]) passed = false;
+                            }
+                            break;
+                        case "modelYear":
+                        case "seatCount":
+                            if (currentCard[criteria] < filter[criteria]["start"] || currentCard[criteria] > filter[criteria]["end"]) passed = false;
+                            break;
+                        default:
+                            if (currentCard[criteria] !== filter[criteria]) passed = false;
+                            break;
+                    }
+                }
+            }
+        }
+        else {
+            passed = false;
+        }
+        return passed;
+    }
+}
+
 module.exports = {
     assignIndex,
     search,
@@ -605,5 +749,6 @@ module.exports = {
     sortCars,
     listUpdate,
     filterCheck,
-    confirm
+    confirm,
+    openPack
 };

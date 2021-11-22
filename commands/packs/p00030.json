@@ -1,9 +1,8 @@
 {
 	"packName": "Italian Pack",
 	"description": "5 Italian Cars.",
-  "price": 60000,
-	"limited": false,
-  "repetition": 1,
+    "price": 60000,
+    "repetition": 1,
 	"pack": "https://cdn.discordapp.com/attachments/800047734035841037/848119637153808384/Standardpack.png",
 	
 	"filter": {

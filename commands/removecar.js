@@ -36,7 +36,6 @@ module.exports = {
                 .then(async (hmm) => {
                     if (!Array.isArray(hmm)) return;
                     let [result, currentMessage] = hmm;
-                    console.log(currentMessage);
                     await getCar(result.user, currentMessage);
                 });
         }

@@ -3,7 +3,7 @@
 const fs = require("fs");
 const carFiles = fs.readdirSync("./commands/cars").filter(file => file.endsWith('.json'));
 const { SuccessMessage, ErrorMessage } = require("./sharedfiles/classes.js");
-const { carNameGen } = require("./sharedfiles/primary.js");
+const { carNameGen, addCars } = require("./sharedfiles/primary.js");
 const { search, searchUser } = require("./sharedfiles/secondary.js");
 const profileModel = require("../models/profileSchema.js");
 
@@ -68,25 +68,12 @@ module.exports = {
                     const playerData = await profileModel.findOne({ userID: user.id });
                     const currentCar = require(`./cars/${result}`);
                     const currentName = carNameGen(currentCar);
-                    const id = result.slice(0, 6);
-                    const isInGarage = playerData.garage.findIndex(garageCar => garageCar.carID === id);
-                    if (isInGarage !== -1) {
-                        playerData.garage[isInGarage].upgrades["000"] += amount;
+
+                    let addedCars = [result];
+                    for (let i = 1; i < amount; i++) {
+                        addedCars.push(result);
                     }
-                    else {
-                        playerData.garage.push({
-                            carID: id,
-                            upgrades: {
-                                "000": amount,
-                                "333": 0,
-                                "666": 0,
-                                "996": 0,
-                                "969": 0,
-                                "699": 0
-                            }
-                        });
-                    }
-                    await profileModel.updateOne({ userID: user.id }, { garage: playerData.garage });
+                    await profileModel.updateOne({ userID: user.id }, { garage: addCars(playerData.garage, addedCars) });
 
                     const successMessage = new SuccessMessage({
                         channel: message.channel,
