@@ -155,13 +155,14 @@ function paginate(list, page) {
     return list.slice((page - 1) * pageLimit, page * pageLimit);
 }
 
-async function selectUpgrade(message, currentCar, amount, currentMessage, removeMaxed) {
+async function selectUpgrade(message, currentCar, amount, currentMessage, targetUpgrade) {
     const filter = (response) => response.author.id === message.author.id;
     let isOne = Object.keys(currentCar.upgrades).filter(m => {
-        if (removeMaxed && m.includes("6") && m.includes("9")) return false;
+        if (targetUpgrade && ((m.includes("6") && m.includes("9")) || Number(targetUpgrade) <= Number(m))) return false;
         return currentCar.upgrades[m] >= amount;
     });
-    if (isOne.length > 0) {
+
+    if (isOne.length === 1) {
         return isOne[0];
     }
     else if (isOne.length > 1) {
@@ -214,10 +215,10 @@ async function selectUpgrade(message, currentCar, amount, currentMessage, remove
     else {
         const cancelMessage = new ErrorMessage({
             channel: message.channel,
-            title: "Error, not enough cars to perform bulk fusing action.",
-            desc: "Maxed cars cannot be fused/sold. In any case, do check how many of the car you're trying to get rid of using `cd-garage` or `cd-carinfo`.",
+            title: "Error, no compatible upgrades found for target upgrade.",
+            desc: "Correct tuning order: `000` => `333` => `666` => `996`, `969` or `699`.",
             author: message.author
-        }).displayClosest(amount);
+        }).displayClosest(targetUpgrade);
         return cancelMessage.sendMessage({ currentMessage });
     }
 }

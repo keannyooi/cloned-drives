@@ -1,14 +1,12 @@
 "use strict";
-/*
- __  ___  _______     ___      .__   __. .__   __. ____    ____
-|  |/  / |   ____|   /   \     |  \ |  | |  \ |  | \   \  /   /
-|  '  /  |  |__     /  ^  \    |   \|  | |   \|  |  \   \/   /
-|    <   |   __|   /  /_\  \   |  . `  | |  . `  |   \_    _/
-|  .  \  |  |____ /  _____  \  |  |\   | |  |\   |     |  |
-|__|\__\ |_______/__/     \__\ |__| \__| |__| \__|     |__| 	(this is a watermark that proves that these lines of code are mine)
-*/
-const Discord = require("discord.js-light");
-const stringSimilarity = require("string-similarity");
+
+const { SuccessMessage, InfoMessage, ErrorMessage } = require("./sharedfiles/classes.js");
+const { carNameGen, selectUpgrade } = require("./sharedfiles/primary.js");
+const { search, confirm } = require("./sharedfiles/secondary.js");
+const { carSave, defaultChoiceTime } = require("./sharedfiles/consts.js");
+const profileModel = require("../models/profileSchema.js");
+const bot = require("../config.js");
+
 module.exports = {
     name: "upgrade",
     aliases: ["tune", "u"],
@@ -17,406 +15,143 @@ module.exports = {
     category: "Gameplay",
     description: "Upgrades a car in your garage.",
     async execute(message, args) {
-        const db = message.client.db;
-        const playerData = await db.get(`acc${message.author.id}`);
-        const garage = playerData.garage;
-        const waitTime = 60000;
-        const filter = response => {
-            return response.author.id === message.author.id;
-        };
+        if (!Object.keys(carSave).includes(args[args.length - 1])) {
+            const errorMessage = new ErrorMessage({
+                channel: message.channel,
+                title: "Error, invalid upgrade provided.",
+                desc: "Upgrades are limited to `333`, `666`, `699`, `969` and `996` for simplicity sake.",
+                author: message.author
+            }).displayClosest(args[args.length - 1]);
+            return errorMessage.sendMessage();
+        }
+
+        const playerData = await profileModel.findOne({ userID: message.author.id });
+        const ownedCars = playerData.garage.map(c => c.carID);
         let carName = args.slice(0, args.length - 1).map(i => i.toLowerCase());
-        let upgrade = args[args.length - 1];
-        const searchResults = garage.filter(function (garageCar) {
-            return carName.every(part => garageCar.carFile.includes(part)) && garageCar["000"] + garageCar["333"] + garageCar["666"] + garageCar["996"] + garageCar["969"] + garageCar["699"] > 0;
-        });
-        if (searchResults.length > 1) {
-            let carList = "";
-            for (i = 1; i <= searchResults.length; i++) {
-                const car = require(`./cars/${searchResults[i - 1].carFile}`);
-                let make = car["make"];
-                if (typeof make === "object") {
-                    make = car["make"][0];
+        new Promise(resolve => resolve(search(message, carName, ownedCars, "car")))
+            .then(async (hmm) => {
+                if (!Array.isArray(hmm)) return;
+                let [result, currentMessage] = hmm;
+                result = playerData.garage.find(c => c.carID === result);
+                try {
+                    await upgradeCar(result, playerData, currentMessage);
                 }
-                carList += `${i} - ${make} ${car["model"]} (${car["modelYear"]})\n`;
-            }
-            if (carList.length > 2048) {
-                message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                const errorMessage = new Discord.MessageEmbed()
-                    .setColor("#fc0303")
-                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                    .setTitle("Error, too many search results.")
-                    .setDescription("Due to Discord's embed limitations, the bot isn't able to show the full list of search results. Try again with a more specific keyword.")
-                    .addField("Total Characters in List", `\`${carList.length}\` > \`2048\``)
-                    .setTimestamp();
-                return message.channel.send(errorMessage);
-            }
-            const infoScreen = new Discord.MessageEmbed()
-                .setColor("#34aeeb")
-                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle("Multiple cars found, please type one of the following.")
-                .setDescription(carList)
-                .setTimestamp();
-            message.channel.send(infoScreen).then(currentMessage => {
-                message.channel.awaitMessages(filter, {
-                    max: 1,
-                    time: waitTime,
-                    errors: ["time"]
-                })
-                    .then(collected => {
-                    if (message.channel.type === "text") {
-                        collected.first().delete();
-                    }
-                    if (isNaN(collected.first().content) || parseInt(collected.first().content) > searchResults.length || parseInt(collected.first().content) < 1) {
-                        message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                        const errorMessage = new Discord.MessageEmbed()
-                            .setColor("#fc0303")
-                            .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                            .setTitle("Error, invalid integer provided.")
-                            .setDescription("It looks like your response was either not a number or not part of the selection.")
-                            .addField("Number Received", `\`${collected.first().content}\` (either not a number, smaller than 1 or bigger than ${searchResults.length})`)
-                            .setTimestamp();
-                        return currentMessage.edit(errorMessage);
-                    }
-                    else {
-                        selectUpgrade(searchResults[parseInt(collected.first().content) - 1], upgrade, currentMessage);
-                    }
-                })
-                    .catch(() => {
-                    message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                    const cancelMessage = new Discord.MessageEmbed()
-                        .setColor("#34aeeb")
-                        .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                        .setTitle("Action cancelled automatically.")
-                        .setTimestamp();
-                    return currentMessage.edit(cancelMessage);
-                });
+                catch (error) {
+                    throw error;
+                }
             });
-        }
-        else if (searchResults.length > 0) {
-            selectUpgrade(searchResults[0], upgrade);
-        }
-        else {
-            let matches = stringSimilarity.findBestMatch(carName.join(" "), garage.map(i => i.carFile.slice(0, -5)));
-            message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-            const errorMessage = new Discord.MessageEmbed()
-                .setColor("#fc0303")
-                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle("Error, it looks like you don't have a car that is compatible with your tune request.")
-                .setDescription("Check if you got the order right: `cd-upgrade <car name goes here> | <upgrade pattern>`")
-                .addField("Keywords Received", `\`${carName.join(" ")}\``, true)
-                .addField("You may be looking for", `\`${matches.bestMatch.target}\``, true)
-                .setTimestamp();
-            return message.channel.send(errorMessage);
-        }
-        async function selectUpgrade(currentCar, upgrade, currentMessage) {
-            let upgradeIndex = parseInt(upgrade[0]) + parseInt(upgrade[1]) + parseInt(upgrade[2]);
-            let isOne = Object.keys(currentCar).filter(m => !isNaN(currentCar[m]) && currentCar[m] >= 1 && parseInt(m[0]) + parseInt(m[1]) + parseInt(m[2]) < upgradeIndex);
-            if (isOne.length === 1) {
-                upgradeCar(currentCar, isOne[0], upgrade, currentMessage);
-            }
-            else if (isOne.length === 0) {
-                let count = Object.keys(currentCar).filter(m => !isNaN(currentCar[m]) && currentCar[m] >= 1);
-                let upgradeList = "";
-                for (i = 0; i < count.length; i++) {
-                    upgradeList += `\`${count[i]}\`x${currentCar[count[i]]}, `;
-                }
-                const errorScreen = new Discord.MessageEmbed()
-                    .setColor("#fc0303")
-                    .setTitle("Error, it looks like you attempted tuning your car in the wrong order.")
-                    .setDescription("Correct tuning order: `000` => `333` => `666` => `996`, `969` or `699`.")
-                    .addField("Current Tunes", upgradeList.slice(0, -2))
-                    .setTimestamp();
-                message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                if (currentMessage) {
-                    return currentMessage.edit(errorScreen);
-                }
-                else {
-                    return message.channel.send(errorScreen);
-                }
-            }
-            else {
-                let upgradeList = "Type in any tune that is displayed here.\n";
-                for (let upg of isOne) {
-                    upgradeList += `\`${upg}\`, `;
-                }
-                let infoScreen = new Discord.MessageEmbed()
-                    .setColor("#34aeeb")
-                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                    .setTitle("Upgrade car from which tune?")
-                    .setDescription(upgradeList.slice(0, -2))
-                    .setTimestamp();
-                let upgradeMessage;
-                if (currentMessage && message.channel.type === "text") {
-                    upgradeMessage = await currentMessage.edit(infoScreen);
-                }
-                else {
-                    upgradeMessage = await message.channel.send(infoScreen);
-                }
-                message.channel.awaitMessages(filter, {
-                    max: 1,
-                    time: 60000,
-                    errors: ["time"]
-                })
-                    .then(collected => {
-                    if (message.channel.type === "text") {
-                        collected.first().delete();
-                    }
-                    if (isOne.find(m => m === collected.first().content) === undefined) {
-                        message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                        const errorMessage = new Discord.MessageEmbed()
-                            .setColor("#fc0303")
-                            .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                            .setTitle("Error, invalid selection provided.")
-                            .setDescription("It looks like your response was not part of the selection.")
-                            .addField("Value Received", `\`${collected.first().content}\``)
-                            .setTimestamp();
-                        if (message.channel.type === "text") {
-                            return upgradeMessage.edit(errorMessage);
+
+        async function upgradeCar(currentCar, playerData, currentMessage) {
+            let upgrade = args[args.length - 1];
+            new Promise(resolve => resolve(selectUpgrade(message, currentCar, 1, currentMessage, upgrade)))
+                .then(async (origUpgrade) => {
+                    if (isNaN(origUpgrade)) return;
+                    try {
+                        const moneyEmoji = bot.emojis.cache.get("726017235826770021");
+                        const fuseEmoji = bot.emojis.cache.get("726018658635218955");
+                        const car = require(`./cars/${currentCar.carID}`);
+                        let [moneyLimit, fuseTokenLimit] = definePrice(car["rq"], upgrade, origUpgrade);
+                        if (playerData.money >= moneyLimit && playerData.fuseTokens >= fuseTokenLimit) {
+                            const confirmationMessage = new InfoMessage({
+                                channel: message.channel,
+                                title: `Are you sure you want to upgrade your ${carNameGen(car)} from \`${origUpgrade}\` to \`${upgrade}\` with ${moneyEmoji}${moneyLimit} and ${fuseEmoji}${fuseTokenLimit}?`,
+                                desc: `You have been given ${defaultChoiceTime / 1000} seconds to consider.`,
+                                author: message.author,
+                                image: car[`racehud${origUpgrade}`]
+                            });
+
+                            await confirm(message, confirmationMessage, acceptedFunction, playerData.settings.buttonstyle, currentMessage);
+
+                            async function acceptedFunction(currentMessage) {
+                                currentCar.upgrades[upgrade]++;
+                                currentCar.upgrades[origUpgrade]--;
+                                if (playerData.hand?.carID === currentCar.carID) {
+                                    playerData.upgrade = upgrade;
+                                }
+                                for (let i = 0; i < playerData.decks.length; i++) {
+                                    let x = playerData.decks[i].hand.findIndex(c => c.carID === currentCar.carID && c.upgrade === upgrade);
+                                    if (x > -1) playerData.decks[i].tunes[x] = upgrade;
+                                }
+
+                                let moneyBalance = playerData.money - moneyLimit, fuseBalance = playerData.fuseTokens - fuseTokenLimit;
+                                await profileModel.updateOne({ userID: message.author.id }, {
+                                    money: moneyBalance,
+                                    fuseTokens: fuseBalance,
+                                    garage: playerData.garage,
+                                    hand: playerData.hand,
+                                    decks: playerData.decks
+                                });
+
+                                const successMessage = new SuccessMessage({
+                                    channel: message.channel,
+                                    title: `Successfully upgraded your ${carNameGen(car)}!`,
+                                    desc: "Current upgrade status:",
+                                    author: message.author,
+                                    fields: [
+                                        { name: "Gearing Upgrade", value: `\`${origUpgrade[0]} => ${upgrade[0]}\``, inline: true },
+                                        { name: "Engine Upgrade", value: `\`${origUpgrade[1]} => ${upgrade[1]}\``, inline: true },
+                                        { name: "Chassis Upgrade", value: `\`${origUpgrade[2]} => ${upgrade[2]}\``, inline: true },
+                                        { name: "Current Money Balance", value: `${moneyEmoji}${moneyBalance}`, inline: true },
+                                        { name: "Current Fuse Token Balance", value: `${fuseEmoji}${fuseBalance}`, inline: true }
+                                    ],
+                                    image: car[`racehud${upgrade}`]
+                                });
+                                return successMessage.sendMessage({ currentMessage });
+                            }
                         }
                         else {
-                            return message.channel.send(errorMessage);
+                            const errorMessage = new ErrorMessage({
+                                channel: message.channel,
+                                title: "Error, it looks like you don't have enough money and/or fuse tokens.",
+                                desc: `You currently have ${moneyEmoji}${playerData.money}, ${fuseEmoji}${playerData.fuseTokens}.`,
+                                author: message.author,
+                                fields: [
+                                    { name: "Required Amount of Money", value: `${moneyEmoji}${moneyLimit}`, inline: true },
+                                    { name: "Required Amount of Fuse Tokens", value: `${fuseEmoji}${fuseTokenLimit}`, inline: true }
+                                ]
+                            });
+                            return errorMessage.sendMessage({ currentMessage });
                         }
                     }
-                    else {
-                        upgradeCar(currentCar, collected.first().content, upgrade, upgradeMessage);
-                    }
-                })
-                    .catch(error => {
-                    console.log(error);
-                    message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                    const cancelMessage = new Discord.MessageEmbed()
-                        .setColor("#34aeeb")
-                        .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                        .setTitle("Action cancelled automatically.")
-                        .setTimestamp();
-                    if (message.channel.type === "text") {
-                        return upgradeMessage.edit(cancelMessage);
-                    }
-                    else {
-                        return message.channel.send(cancelMessage);
+                    catch (error) {
+                        throw error;
                     }
                 });
-            }
         }
-        async function upgradeCar(currentCar, origUpgrade, upgrade, currentMessage) {
-            const buttonFilter = (button) => {
-                return button.clicker.user.id === message.author.id;
-            };
-            const car = require(`./cars/${currentCar.carFile}`);
-            let make = car["make"];
-            if (typeof make === "object") {
-                make = car["make"][0];
+
+        function definePrice(rq, upgrade, origUpgrade) {
+            let a = parseInt(upgrade[0]) + parseInt(upgrade[1]) + parseInt(upgrade[2]);
+            let b = parseInt(origUpgrade[0]) + parseInt(origUpgrade[1]) + parseInt(origUpgrade[2]);
+            let moneyMultiplier = 0, fuseMultiplier = 0;
+            if (rq > 79) { //leggie
+                moneyMultiplier = 4500;
+                fuseMultiplier = 1200;
             }
-            const currentName = `${make} ${car["model"]} (${car["modelYear"]})`;
-            const moneyEmoji = message.client.emojis.cache.get("726017235826770021");
-            const fuseEmoji = message.client.emojis.cache.get("726018658635218955");
-            const racehud = car[`racehud${upgrade}`];
-            var moneyLimit = 0;
-            var fuseTokenLimit = 0;
-            if (car[`racehud${upgrade}`] === "" || !car[`racehud${upgrade}`]) {
-                message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                const maxedTunes = [996, 969, 699].filter(function (tune) {
-                    return car[`racehud${tune}`];
-                });
-                const errorScreen = new Discord.MessageEmbed()
-                    .setColor("#fc0303")
-                    .setTitle("Error, the tuning stage you requested is unavailable.")
-                    .setDescription("In order to make the tuning system less complex, the tuning stages are limited to `333`, `666`, `996`, `969` and `699`.")
-                    .addField("Your car's available maxed tunes", maxedTunes.join(", "))
-                    .setTimestamp();
-                if (currentMessage && message.channel.type === "text") {
-                    return currentMessage.edit(errorScreen);
-                }
-                else {
-                    return message.channel.send(errorScreen);
-                }
+            else if (rq > 64 && rq <= 79) { //epic
+                moneyMultiplier = 3750;
+                fuseMultiplier = 700;
             }
-            definePrice(car["rq"], upgrade, origUpgrade);
-            if (playerData.money >= moneyLimit && playerData.fuseTokens >= fuseTokenLimit) {
-                let yse, nop;
-                if (playerData.settings.buttonstyle === "classic") {
-                    yse = new disbut.MessageButton()
-                        .setStyle("grey")
-                        .setEmoji("✅")
-                        .setID("yse");
-                    nop = new disbut.MessageButton()
-                        .setStyle("grey")
-                        .setEmoji("❎")
-                        .setID("nop");
-                }
-                else {
-                    yse = new disbut.MessageButton()
-                        .setStyle("green")
-                        .setLabel("Yes!")
-                        .setID("yse");
-                    nop = new disbut.MessageButton()
-                        .setStyle("red")
-                        .setLabel("No!")
-                        .setID("nop");
-                }
-                let row = new disbut.MessageActionRow().addComponents(yse, nop);
-                const confirmationMessage = new Discord.MessageEmbed()
-                    .setColor("#34aeeb")
-                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                    .setTitle(`Are you sure you want to upgrade your ${currentName} from \`${origUpgrade}\` to \`${upgrade}\` with ${moneyEmoji}${moneyLimit} and ${fuseEmoji}${fuseTokenLimit}?`)
-                    .setImage(car[`racehud${origUpgrade}`])
-                    .setTimestamp();
-                let reactionMessage, processed = false;
-                if (currentMessage && message.channel.type === "text") {
-                    reactionMessage = await currentMessage.edit({ embed: confirmationMessage, component: row });
-                }
-                else {
-                    reactionMessage = await message.channel.send({ embed: confirmationMessage, component: row });
-                }
-                const collector = reactionMessage.createButtonCollector(buttonFilter, { time: 10000 });
-                collector.on("collect", async (button) => {
-                    if (!processed) {
-                        processed = true;
-                        switch (button.id) {
-                            case "yse":
-                                playerData.money -= moneyLimit;
-                                playerData.fuseTokens -= fuseTokenLimit;
-                                currentCar[upgrade]++;
-                                currentCar[origUpgrade]--;
-                                if (playerData.hand) {
-                                    if (playerData.hand.carFile === currentCar.carFile) {
-                                        playerData.hand.gearingUpgrade = parseInt(upgrade[0]);
-                                        playerData.hand.engineUpgrade = parseInt(upgrade[1]);
-                                        playerData.hand.chassisUpgrade = parseInt(upgrade[2]);
-                                    }
-                                }
-                                for (i = 0; i < playerData.decks.length; i++) {
-                                    for (x = 0; x < 5; x++) {
-                                        if (playerData.decks[i].hand[x] === currentCar.carFile && playerData.decks[i].tunes[x] === origUpgrade) {
-                                            playerData.decks[i].tunes[x] = upgrade;
-                                            break;
-                                        }
-                                    }
-                                }
-                                await db.set(`acc${message.author.id}`, playerData);
-                                const infoScreen = new Discord.MessageEmbed()
-                                    .setColor("#34aeeb")
-                                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                                    .setTitle(`Successfully upgraded your ${currentName}!`)
-                                    .setDescription("Current upgrade status:")
-                                    .addFields({ name: "Gearing Upgrade", value: `\`${origUpgrade[0]} => ${upgrade[0]}\``, inline: true }, { name: "Engine Upgrade", value: `\`${origUpgrade[1]} => ${upgrade[1]}\``, inline: true }, { name: "Chassis Upgrade", value: `\`${origUpgrade[2]} => ${upgrade[2]}\``, inline: true }, { name: "Your Money Balance", value: `${moneyEmoji}${playerData.money}`, inline: true }, { name: "Your Fuse Tokens", value: `${fuseEmoji}${playerData.fuseTokens}`, inline: true })
-                                    .setImage(racehud)
-                                    .setTimestamp();
-                                message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                                return reactionMessage.edit({ embed: infoScreen, component: null });
-                            case "nop":
-                                message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                                const cancelMessage = new Discord.MessageEmbed()
-                                    .setColor("#34aeeb")
-                                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                                    .setTitle("Action cancelled.")
-                                    .setDescription(`Your ${currentName} stays in its original tune.`)
-                                    .setImage(car["card"])
-                                    .setTimestamp();
-                                return reactionMessage.edit({ embed: cancelMessage, component: null });
-                            default:
-                                break;
-                        }
-                    }
-                });
-                collector.on("end", () => {
-                    if (!processed) {
-                        message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                        const cancelMessage = new Discord.MessageEmbed()
-                            .setColor("#34aeeb")
-                            .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                            .setTitle("Action cancelled automatically.")
-                            .setDescription(`Your ${currentName} stays in its original tune.`)
-                            .setImage(car["card"])
-                            .setTimestamp();
-                        return reactionMessage.edit({ embed: cancelMessage, component: null });
-                    }
-                });
+            else if (rq > 49 && rq <= 64) { //ultra
+                moneyMultiplier = 3000;
+                fuseMultiplier = 275;
             }
-            else {
-                message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                const errorScreen = new Discord.MessageEmbed()
-                    .setColor("#fc0303")
-                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                    .setTitle("Error, it looks like you don't have enough money and/or fuse tokens.")
-                    .setDescription(`You currently have ${moneyEmoji}${playerData.money}, ${fuseEmoji}${playerData.fuseTokens}`)
-                    .addFields({ name: "Required Amount of Money", value: `${moneyEmoji}${moneyLimit}`, inline: true }, { name: "Required Amount of Fuse Tokens", value: `${fuseEmoji}${fuseTokenLimit}`, inline: true })
-                    .setTimestamp();
-                if (currentMessage && message.channel.type === "text") {
-                    return currentMessage.edit(errorScreen);
-                }
-                else {
-                    return message.channel.send(errorScreen);
-                }
+            else if (rq > 39 && rq <= 49) { //super
+                moneyMultiplier = 2250;
+                fuseMultiplier = 100;
             }
-            function definePrice(rq, upgradeIndex, origUpgrade) {
-                let a = parseInt(upgradeIndex[0]) + parseInt(upgradeIndex[1]) + parseInt(upgradeIndex[2]);
-                let b = parseInt(origUpgrade[0]) + parseInt(origUpgrade[1]) + parseInt(origUpgrade[2]);
-                if (rq > 79) { //leggie
-                    moneyLimit = 4500 * (a - b);
-                    if (a >= 18 && b >= 9) {
-                        fuseTokenLimit = 1200 * (a - b) / 3;
-                    }
-                    else {
-                        fuseTokenLimit = 1200 * (a - b - 9) / 3;
-                    }
-                }
-                else if (rq > 64 && rq <= 79) { //epic
-                    moneyLimit = 3750 * (a - b);
-                    if (a >= 18 && b >= 9) {
-                        fuseTokenLimit = 700 * (a - b) / 3;
-                    }
-                    else {
-                        fuseTokenLimit = 700 * (a - b - 9) / 3;
-                    }
-                }
-                else if (rq > 49 && rq <= 64) { //ultra
-                    moneyLimit = 3000 * (a - b);
-                    if (a >= 18 && b >= 9) {
-                        fuseTokenLimit = 275 * (a - b) / 3;
-                    }
-                    else {
-                        fuseTokenLimit = 275 * (a - b - 9) / 3;
-                    }
-                }
-                else if (rq > 39 && rq <= 49) { //super
-                    moneyLimit = 2250 * (a - b);
-                    if (a >= 18 && b >= 9) {
-                        fuseTokenLimit = 100 * (a - b) / 3;
-                    }
-                    else {
-                        fuseTokenLimit = 100 * (a - b - 9) / 3;
-                    }
-                }
-                else if (rq > 29 && rq <= 39) { //rare
-                    moneyLimit = 1500 * (a - b);
-                    if (a >= 18 && b >= 9) {
-                        fuseTokenLimit = 35 * (a - b) / 3;
-                    }
-                    else {
-                        fuseTokenLimit = 35 * (a - b - 9) / 3;
-                    }
-                }
-                else if (rq > 19 && rq <= 29) { //uncommon
-                    moneyLimit = 750 * (a - b);
-                    if (upgradeIndex >= 18 && origUpgrade >= 9) {
-                        fuseTokenLimit = 10 * (a - b) / 3;
-                    }
-                    else {
-                        fuseTokenLimit = 10 * (a - b - 9) / 3;
-                    }
-                }
-                else { //common
-                    moneyLimit = 500 * (a - b);
-                    if (upgradeIndex >= 18 && origUpgrade >= 9) {
-                        fuseTokenLimit = 10 * (a - b) / 3;
-                    }
-                    else {
-                        fuseTokenLimit = 10 * (a - b - 9) / 3;
-                    }
-                }
+            else if (rq > 29 && rq <= 39) { //rare
+                moneyMultiplier = 1500;
+                fuseMultiplier = 35;
             }
+            else if (rq > 19 && rq <= 29) { //uncommon
+                moneyMultiplier = 750;
+                fuseMultiplier = 10;
+            }
+            else { //common
+                moneyMultiplier = 500;
+                fuseMultiplier = 10;
+            }
+            return [moneyMultiplier * (a - b), fuseMultiplier * (a - b - (a >= 18 && b >= 9 ? 0 : 9)) / 3];
         }
     }
 };
-//# sourceMappingURL=upgrade.js.map

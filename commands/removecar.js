@@ -80,14 +80,11 @@ module.exports = {
                         thumbnail: user.displayAvatarURL({ format: "png", dynamic: true }),
                         image: car["card"]
                     });
-
                     await confirm(message, confirmationMessage, acceptedFunction, playerData.settings.buttonstyle, currentMessage);
 
                     async function acceptedFunction(currentMessage) {
-                        if (playerData.hand) {
-                            if (playerData.hand.carID === currentCar.carID) {
-                                playerData.hand = { carID: "", upgrade: "000" };
-                            }
+                        if (playerData.hand?.carID === currentCar.carID) {
+                            playerData.hand = { carID: "", upgrade: "000" };
                         }
                         for (let i = 0; i < playerData.decks.length; i++) {
                             let x = playerData.decks[i].hand.findIndex(c => c.carID === currentCar.carID && c.upgrade === upgrade);

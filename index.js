@@ -11,7 +11,7 @@ const bot = require("./config.js");
 const profileModel = require("./models/profileSchema.js");
 const prefix = bot.devMode ? process.env.DEV_PREFIX : process.env.BOT_PREFIX;
 const token = bot.devMode ? process.env.DEV_TOKEN : process.env.BOT_TOKEN;
-const allowedCommands = ["carinfo.js", "calculate.js", "garage.js", "ping.js", "reload.js", "statistics.js", "addcar.js", "removecar.js", "addmoney.js", "removemoney.js", "carlist.js", "testpack.js", "trackinfo.js", "packinfo.js"];
+const allowedCommands = ["carinfo.js", "calculate.js", "garage.js", "ping.js", "reload.js", "statistics.js", "addcar.js", "removecar.js", "addmoney.js", "removemoney.js", "carlist.js", "testpack.js", "trackinfo.js", "packinfo.js", "changetune.js", "upgrade.js"];
 const commandFiles = readdirSync("./commands").filter(file => file.endsWith(".js"));
 
 commandFiles.forEach(function (file) {

@@ -573,7 +573,12 @@ async function confirm(message, confirmationMessage, acceptedFunction, buttonSty
             processed = true;
             switch (button.customId) {
                 case "yse":
-                    await acceptedFunction(reactionMessage);
+                    try {
+                        await acceptedFunction(reactionMessage);
+                    }
+                    catch (error) {
+                        throw error;
+                    }
                     break;
                 case "nop":
                     const cancelMessage = new InfoMessage({
@@ -652,7 +657,7 @@ function openPack(message, currentPack, currentMessage) {
 
         let carFile = carFiles[Math.floor(Math.random() * carFiles.length)], counter = 0;
         currentCard = require(`../cars/${carFile}`);
-        while (currentCard["rq"] < rqStart || currentCard["rq"] > rqEnd || filterCard(currentCard, cardFilter) === false || counter < 5000) {
+        while ((currentCard["rq"] < rqStart || currentCard["rq"] > rqEnd || filterCard(currentCard, cardFilter) === false) && counter < 5000) {
             carFile = carFiles[Math.floor(Math.random() * carFiles.length)];
             currentCard = require(`../cars/${carFile}`);
             counter++;
