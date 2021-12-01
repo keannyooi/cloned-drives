@@ -173,7 +173,7 @@ async function selectUpgrade(message, currentCar, amount, currentMessage, target
 
         const infoMessage = new InfoMessage({
             channel: message.channel,
-            title: "Remove car from which tune?",
+            title: "Choose either one of the original tunes below.",
             desc: upgradeList.slice(0, -2),
             author: message.author,
             footer: `You have been given ${defaultWaitTime / 1000} seconds to consider.`

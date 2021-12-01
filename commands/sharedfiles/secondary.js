@@ -359,7 +359,7 @@ async function search(message, query, searchList, type, currentMessage) {
                 let details = require(`../${type}s/${item}`);
                 return details[`${type}Name`];
             case "id":
-                return typeof item === "string" ? item.slice(0, 6) : item.id;
+                return typeof item === "string" ? (item.endsWith(".json") ? item.slice(0, 6) : item) : item.id;
             default:
                 return item.name;
         }

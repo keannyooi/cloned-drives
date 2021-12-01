@@ -42,18 +42,27 @@ module.exports = {
 
         async function getCar(user, currentMessage) {
             const playerData = await profileModel.findOne({ userID: user.id });
-            let carName;
-            let amount = 1;
-            if (isNaN(args[1]) || !args[2]) {
-                carName = args.slice(1, args.length).map(i => i.toLowerCase());
+            let query, amount = 1, startFrom, searchBy = "car";
+            if (args[1].toLowerCase() === "all" && args[2]) {
+                startFrom = 2;
+            }
+            else if (isNaN(args[1]) || !args[2]) {
+                startFrom = 1;
             }
             else {
                 amount = Math.ceil(parseInt(args[1]));
-                carName = args.slice(2, args.length).map(i => i.toLowerCase());
+                startFrom = 2;
+            }
+            if (args[startFrom].toLowerCase().startsWith("-c")) {
+                query = [args[startFrom].toLowerCase().slice(1)];
+                searchBy = "id";
+            }
+            else {
+                query = args.slice(startFrom, args.length).map(i => i.toLowerCase());
             }
 
             const ownedCars = playerData.garage.map(c => c.carID);
-            new Promise(resolve => resolve(search(message, carName, ownedCars, "car", currentMessage)))
+            new Promise(resolve => resolve(search(message, query, ownedCars, searchBy, currentMessage)))
                 .then(async (hmm) => {
                     if (!Array.isArray(hmm)) return;
                     let [result, currentMessage] = hmm;
@@ -69,7 +78,7 @@ module.exports = {
                     const car = require(`./cars/${currentCar.carID}.json`);
                     const currentName = carNameGen(car, null, upgrade);
                     if (args[1].toLowerCase() === "all") {
-                        amount = currentCar.upgrades[result];
+                        amount = currentCar.upgrades[upgrade];
                     }
 
                     const confirmationMessage = new InfoMessage({
