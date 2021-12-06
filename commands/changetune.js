@@ -87,7 +87,7 @@ module.exports = {
 
                     const successMessage = new SuccessMessage({
                         channel: message.channel,
-                        title: `Successfully changed tune for ${user.username}'s ${carNameGen(car)}!`,
+                        title: `Successfully changed tune for ${user.username}'s ${carNameGen({ currentCar: car })}!`,
                         desc: "Current upgrade status:",
                         author: message.author,
                         fields: [

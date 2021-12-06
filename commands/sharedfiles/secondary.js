@@ -318,12 +318,77 @@ async function searchUser(message, username, playerList, currentMessage) {
         });
         return list;
     }, null, currentMessage)
-        .catch(error => {
+        .catch(throwError => {
             const list = [];
             playerList.forEach(player => {
                 list.push(player.user.tag);
             });
-            return error(username, list);
+            return throwError(username, list);
+        });
+}
+
+//args list: message, query, garage, amount, searchByID, restrictedMode, currentMessage
+async function searchGarage(args) {
+    let matchList = [];
+    const searchResults = args.garage.filter(s => {
+        let matchFound, isSufficient;
+        if (args.searchByID) {
+            matchFound = s.carID === args.query[0];
+        }
+        else {
+            let currentCar = require(`../cars/${s.carID}.json`);
+            let name = carNameGen({ currentCar, removePrizeTag: true }).toLowerCase().split(" ");
+            matchFound = args.query.every(part => name.includes(part));
+            if (matchFound) matchList.push(s); 
+        }
+        if (args.restrictedMode) {
+            isSufficient = (s.upgrades["000"] + s.upgrades["333"] + s.upgrades["666"]) >= args.amount;
+        }
+        else {
+            isSufficient = calcTotal(s) >= args.amount;
+        }
+
+        return matchFound && isSufficient;
+    });
+
+    return processResults(args.message, searchResults, () => {
+        let list = "", i = 1;
+        searchResults.map(car => {
+            let currentCar = require(`../cars/${car.carID}.json`);
+            list += `${i} - ${carNameGen({ currentCar })}\n`;
+            i++;
+        });
+        return list;
+    }, null, args.currentMessage)
+        .catch(throwError => {
+            if (matchList.length > 0) {
+                let list = "";
+                for (let i = 0; i < matchList.length; i++) {
+                    let currentCar = require(`../cars/${matchList[i].carID}.json`);
+                    list += carNameGen({ currentCar, rarity: rarityCheck(currentCar) });
+                    if (!currentCar["isPrize"]) {
+                        let upgList = "";
+                        for (let [key, value] of Object.entries(matchList[i].upgrades)) {
+                            if (value !== 0) upgList += `${value}x ${key}, `;
+                        }
+                        list += ` \`(${upgList.slice(0, -2)}, not enough to perform action)\`\n`;
+                    }
+                }
+                const errorMessage = new ErrorMessage({
+                    channel: args.message.channel,
+                    title: `Error, ${args.amount} non-maxed, non-prize car(s) of the same tune required to perform this action.`,
+                    author: args.message.author,
+                    fields: [{ name: "Cars Found", value: list }]
+                });
+                return errorMessage.sendMessage({ currentMessage: args.currentMessage });
+            }
+            else {
+                const list = args.garage.map(car => {
+                    let currentCar = require(`../cars/${car.carID}.json`);
+                    return carNameGen({ currentCar, removePrizeTag: true }).toLowerCase();
+                });
+                return throwError(args.query.join(" "), list);
+            }
         });
 }
 
@@ -332,7 +397,6 @@ async function search(message, query, searchList, type, currentMessage) {
         let test = listGen(s, type).toLowerCase().split(" ");
         return query.every(part => test.includes(part));
     });
-
     return processResults(message, searchResults, () => {
         let list = "";
         for (let i = 1; i <= searchResults.length; i++) {
@@ -341,15 +405,15 @@ async function search(message, query, searchList, type, currentMessage) {
         }
         return list;
     }, type, currentMessage)
-        .catch(error => {
-            return error(query.join(" "), searchList.map(i => listGen(i, type, true).toLowerCase()));
+        .catch(throwError => {
+            return throwError(query.join(" "), searchList.map(i => listGen(i, type, true).toLowerCase()));
         });
 
     function listGen(item, type, includeBrackets) {
         switch (type) {
             case "car":
-                let carDetails = require(`../cars/${item}`);
-                let a = carNameGen(carDetails);
+                let currentCar = require(`../cars/${item}`);
+                let a = carNameGen({ currentCar });
                 if (!includeBrackets) {
                     a = a.replace("(", "").replace(")", "");
                 }
@@ -359,7 +423,7 @@ async function search(message, query, searchList, type, currentMessage) {
                 let details = require(`../${type}s/${item}`);
                 return details[`${type}Name`];
             case "id":
-                return typeof item === "string" ? (item.endsWith(".json") ? item.slice(0, 6) : item) : item.id;
+                return typeof item === "string" ? item.replace(".json", "") : item.id;
             default:
                 return item.name;
         }
@@ -368,15 +432,8 @@ async function search(message, query, searchList, type, currentMessage) {
 
 function sortCars(list, sort, order, garage) {
     return list.sort(function (a, b) {
-        let carA, carB;
-        if (typeof a === "string") {
-            carA = require(`../cars/${a}`);
-            carB = require(`../cars/${b}`);
-        }
-        else {
-            carA = require(`../cars/${a.carID}.json`);
-            carB = require(`../cars/${b.carID}.json`);
-        }
+        let carA = require(`../cars/${typeof a === "string" ? a : a.carID}`);
+        let carB = require(`../cars/${typeof b === "string" ? b : b.carID}`);
 
         let critA = carA[sort], critB = carB[sort];
         if (sort === "topSpeed" || sort === "0to60" || sort === "handling") {
@@ -409,7 +466,7 @@ function sortCars(list, sort, order, garage) {
         }
 
         if (critA === critB) {
-            return carNameGen(carA) > carNameGen(carB) ? 1 : -1;
+            return carNameGen({ currentCar: carA }) > carNameGen({ currentCar: carB }) ? 1 : -1;
         }
         else {
             let someBool = (sort === "0to60" || sort === "weight" || sort === "ola");
@@ -534,7 +591,7 @@ function filterCheck(car, filter, garage) {
                 }
             case "string":
                 if (key === "search") {
-                    return carNameGen(currentCar).toLowerCase().includes(value);
+                    return carNameGen({ currentCar: currentCar }).toLowerCase().includes(value);
                 }
                 else {
                     return currentCar[key].toLowerCase() === value;
@@ -614,7 +671,7 @@ function openPack(message, currentPack, currentMessage) {
     const addedCars = [];
 
     for (let i = 0; i < currentPack["repetition"] * 5; i++) {
-        rand = Math.floor(Math.random() * 1000 / 10);
+        rand = Math.floor(Math.random() * 1000) / 10;
         check = 0;
         for (let rarity of Object.keys(currentPack["packSequence"][Math.floor(i / currentPack["repetition"])])) {
             check += currentPack["packSequence"][Math.floor(i / currentPack["repetition"])][rarity];
@@ -657,13 +714,13 @@ function openPack(message, currentPack, currentMessage) {
 
         let carFile = carFiles[Math.floor(Math.random() * carFiles.length)], counter = 0;
         currentCard = require(`../cars/${carFile}`);
-        while ((currentCard["rq"] < rqStart || currentCard["rq"] > rqEnd || filterCard(currentCard, cardFilter) === false) && counter < 5000) {
+        while ((currentCard["rq"] < rqStart || currentCard["rq"] > rqEnd || filterCard(currentCard, cardFilter) === false) && counter < 10000) {
             carFile = carFiles[Math.floor(Math.random() * carFiles.length)];
             currentCard = require(`../cars/${carFile}`);
             counter++;
         }
 
-        if (counter >= 5000) {
+        if (counter >= 10000) {
             const errorScreen = new ErrorMessage({
                 channel: message.channel,
                 title: "Error, pack generation timed out likely due to no cars in generation pool.",
@@ -680,8 +737,8 @@ function openPack(message, currentPack, currentMessage) {
         const carA = require(`../cars/${a}`);
         const carB = require(`../cars/${b}`);
         if (carA["rq"] === carB["rq"]) {
-            let nameA = carNameGen(carA);
-            let nameB = carNameGen(carB);
+            let nameA = carNameGen({ currentCar: carA });
+            let nameB = carNameGen({ currentCar: carB });
 
             return nameA > nameB ? 1 : -1;
         }
@@ -692,13 +749,13 @@ function openPack(message, currentPack, currentMessage) {
 
     for (let i = 0; i < addedCars.length; i++) {
         let currentCar = require(`../cars/${addedCars[i]}`);
-        pulledCards += carNameGen(currentCar, rarityCheck(currentCar));
-        if ((i > 0 && (i + 1) % 5 !== 0)) {
-            pulledCards += ` **[[Card]](${currentCar["card"]})**`;
-        }
-        pulledCards += "\n";
+        pulledCards += carNameGen({ currentCar: currentCar, rarity: rarityCheck(currentCar) });
 
-        if ((i + 1) % 5 === 0) {
+        if ((i + 1) % 5 !== 0) {
+            pulledCards += ` **[[Card]](${currentCar["card"]})**`;
+            pulledCards += "\n";
+        }
+        else {
             const packScreen = new InfoMessage({
                 channel: message.channel,
                 title: `Opening ${currentPack["packName"]}...`,
@@ -751,6 +808,7 @@ module.exports = {
     assignIndex,
     search,
     searchUser,
+    searchGarage,
     sortCars,
     listUpdate,
     filterCheck,

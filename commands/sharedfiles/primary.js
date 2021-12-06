@@ -35,21 +35,22 @@ function rarityCheck(car, shortenedLists) {
     }
 }
 
-function carNameGen(currentCar, rarity, upgrade, shortenedlists) {
+//args list: currentCar, rarity, upgrade, shortenedLists
+function carNameGen(args) {
     const trophyEmoji = bot.emojis.cache.get("775636479145148418");
-    let make = currentCar["make"];
+    let make = args.currentCar["make"];
     if (typeof make === "object") {
-        make = currentCar["make"][0];
+        make = args.currentCar["make"][0];
     }
-    let currentName = `${make} ${currentCar["model"]} (${currentCar["modelYear"]})`;
-    if (rarity) {
-        currentName = `(${rarity} ${currentCar["rq"]}) ${currentName}`;
+    let currentName = `${make} ${args.currentCar["model"]} (${args.currentCar["modelYear"]})`;
+    if (args.rarity) {
+        currentName = `(${args.rarity} ${args.currentCar["rq"]}) ${currentName}`;
     }
-    if (upgrade) {
-        currentName += ` [${upgrade}]`;
+    if (args.upgrade) {
+        currentName += ` [${args.upgrade}]`;
     }
-    if (currentCar["isPrize"]) {
-        currentName += shortenedlists ? ` 🏆` : ` ${trophyEmoji}`;
+    if (!args.removePrizeTag && args.currentCar["isPrize"]) {
+        currentName += args.shortenedLists ? ` 🏆` : ` ${trophyEmoji}`;
     }
     return currentName;
 }

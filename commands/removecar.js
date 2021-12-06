@@ -76,7 +76,7 @@ module.exports = {
                 .then(async (upgrade) => {
                     if (isNaN(upgrade)) return;
                     const car = require(`./cars/${currentCar.carID}.json`);
-                    const currentName = carNameGen(car, null, upgrade);
+                    const currentName = carNameGen({ currentCar: car, upgrade });
                     if (args[1].toLowerCase() === "all") {
                         amount = currentCar.upgrades[upgrade];
                     }

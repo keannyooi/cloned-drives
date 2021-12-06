@@ -67,7 +67,7 @@ module.exports = {
 
                     const playerData = await profileModel.findOne({ userID: user.id });
                     const currentCar = require(`./cars/${result}`);
-                    const currentName = carNameGen(currentCar);
+                    const currentName = carNameGen({ currentCar });
 
                     let addedCars = [result];
                     for (let i = 1; i < amount; i++) {

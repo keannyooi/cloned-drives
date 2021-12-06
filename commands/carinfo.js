@@ -72,7 +72,7 @@ module.exports = {
 
             const infoMessage = new InfoMessage({
                 channel: message.channel,
-                title: carNameGen(currentCar, rarity),
+                title: carNameGen({ currentCar, rarity }),
                 desc: `Car ID: \`${car.slice(0, 6)}\``,
                 author: message.author,
                 image: currentCar["card"],

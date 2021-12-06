@@ -104,7 +104,7 @@ module.exports = {
 
                 let currentCar = require(`./cars/${section[i]}`);
                 let rarity = rarityCheck(currentCar, playerData.settings.shortenedlists);
-                carList += `${carNameGen(currentCar, rarity, null, playerData.settings.shortenedlists)}`;
+                carList += `${carNameGen({ currentCar, rarity, shortenedLists: playerData.settings.shortenedlists })}`;
                 if (playerData.garage.some(car => section[i].includes(car.carID))) {
                     carList += " ✅\n";
                 }

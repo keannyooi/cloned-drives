@@ -3,7 +3,7 @@
 const { SuccessMessage, InfoMessage } = require("./sharedfiles/classes.js");
 const { defaultChoiceTime } = require("./sharedfiles/consts.js");
 const { carNameGen, selectUpgrade, calcTotal } = require("./sharedfiles/primary.js");
-const { search, confirm } = require("./sharedfiles/secondary.js");
+const { searchGarage, confirm } = require("./sharedfiles/secondary.js");
 const profileModel = require("../models/profileSchema.js");
 const bot = require("../config.js");
 
@@ -16,7 +16,7 @@ module.exports = {
     description: "Converts one or more cars inside your garage into fuse tokens.",
     async execute(message, args) {
         const playerData = await profileModel.findOne({ userID: message.author.id });
-        let query, amount = 1, startFrom, searchBy = "car";
+        let query, amount = 1, startFrom, searchByID = false;
         if (args[0].toLowerCase() === "all" && args[1]) {
             startFrom = 1;
         }
@@ -29,19 +29,24 @@ module.exports = {
         }
         if (args[startFrom].toLowerCase().startsWith("-c")) {
             query = [args[startFrom].toLowerCase().slice(1)];
-            searchBy = "id";
+            searchByID = true;
         }
         else {
             query = args.slice(startFrom, args.length).map(i => i.toLowerCase());
         }
 
-        const ownedCars = playerData.garage.map(c => c.carID);
-        new Promise(resolve => resolve(search(message, query, ownedCars, searchBy)))
+        new Promise(resolve => resolve(searchGarage({
+            message,
+            query,
+            garage: playerData.garage,
+            amount,
+            searchByID,
+            restrictedMode: true
+        })))
             .then(async (hmm) => {
                 if (!Array.isArray(hmm)) return;
                 let [result, currentMessage] = hmm;
                 try {
-                    result = playerData.garage.find(c => c.carID === result);
                     await fuse(result, amount, playerData, currentMessage);
                 }
                 catch (error) {
@@ -54,7 +59,7 @@ module.exports = {
                 .then(async (upgrade) => {
                     if (isNaN(upgrade)) return;
                     const car = require(`./cars/${currentCar.carID}.json`);
-                    const currentName = carNameGen(car, null, upgrade);
+                    const currentName = carNameGen({ currentCar: car, upgrade });
                     const fuseEmoji = bot.emojis.cache.get("726018658635218955");
                     if (args[0].toLowerCase() === "all") {
                         amount = currentCar.upgrades[upgrade];

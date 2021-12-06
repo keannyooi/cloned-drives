@@ -50,11 +50,13 @@ module.exports = {
                         const moneyEmoji = bot.emojis.cache.get("726017235826770021");
                         const fuseEmoji = bot.emojis.cache.get("726018658635218955");
                         const car = require(`./cars/${currentCar.carID}`);
+                        const carName = carNameGen({ currentCar: car });
                         let [moneyLimit, fuseTokenLimit] = definePrice(car["rq"], upgrade, origUpgrade);
+
                         if (playerData.money >= moneyLimit && playerData.fuseTokens >= fuseTokenLimit) {
                             const confirmationMessage = new InfoMessage({
                                 channel: message.channel,
-                                title: `Are you sure you want to upgrade your ${carNameGen(car)} from \`${origUpgrade}\` to \`${upgrade}\` with ${moneyEmoji}${moneyLimit} and ${fuseEmoji}${fuseTokenLimit}?`,
+                                title: `Are you sure you want to upgrade your ${carName} from \`${origUpgrade}\` to \`${upgrade}\` with ${moneyEmoji}${moneyLimit} and ${fuseEmoji}${fuseTokenLimit}?`,
                                 desc: `You have been given ${defaultChoiceTime / 1000} seconds to consider.`,
                                 author: message.author,
                                 image: car[`racehud${origUpgrade}`]
@@ -84,7 +86,7 @@ module.exports = {
 
                                 const successMessage = new SuccessMessage({
                                     channel: message.channel,
-                                    title: `Successfully upgraded your ${carNameGen(car)}!`,
+                                    title: `Successfully upgraded your ${carName}!`,
                                     desc: "Current upgrade status:",
                                     author: message.author,
                                     fields: [
