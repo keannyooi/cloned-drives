@@ -8,7 +8,7 @@ const { search } = require("./sharedfiles/secondary.js");
 module.exports = {
     name: "trackinfo",
     aliases: ["tinfo"],
-    usage: "<track name goes here>",
+    usage: ["<track name>", "-<track id>"],
     args: 1,
     category: "Info",
     description: "Shows info about a specified track.",

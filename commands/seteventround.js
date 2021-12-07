@@ -13,7 +13,7 @@ module.exports = {
     aliases: ["ser"],
     usage: "<player name> <event name> <round>",
     args: 3,
-    category: "Community Management",
+    category: "Events",
     description: "Sets a player's round progress in an event to whatever.",
     execute(message, args) {
         const db = message.client.db;

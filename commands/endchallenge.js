@@ -13,7 +13,7 @@ module.exports = {
     aliases: ["removechallenge", "rmvchallenge"],
     usage: "(no arguments required)",
     args: 0,
-    category: "Community Management",
+    category: "Events",
     description: "Ends the ongoing challenge.",
     async execute(message) {
         const db = message.client.db;

@@ -10,7 +10,7 @@ const profileModel = require("../models/profileSchema.js");
 module.exports = {
     name: "carlist",
     aliases: ["allcars"],
-    usage: "(all optional) <page number> | -s <sorting criteria>",
+    usage: ["[page number] | -s [sorting criteria]"],
     args: 0,
     category: "Info",
     description: "Shows all the cars that are available in Cloned Drives in list form.",
@@ -104,17 +104,12 @@ module.exports = {
 
                 let currentCar = require(`./cars/${section[i]}`);
                 let rarity = rarityCheck(currentCar, playerData.settings.shortenedlists);
+                let findCar = playerData.garage.find(c => c.carID === section[i].slice(0, 6));
                 carList += `${carNameGen({ currentCar, rarity, shortenedLists: playerData.settings.shortenedlists })}`;
-                if (playerData.garage.some(car => section[i].includes(car.carID))) {
-                    carList += " ✅\n";
-                }
-                else {
-                    carList += "\n";
-                }
+                carList += findCar ? " ✅\n" : "\n";
 
                 if (sort === "mostowned") {
-                    let findCar = playerData.garage.find(c => c.carID.includes(section[i].slice(0, 6)));
-                    valueList += `\`${findCar ? calcTotal(findCar) : 0}\`\n`;
+                    valueList += `\`${calcTotal(findCar)}\`\n`;
                 }
                 else if (sort !== "rq") {
                     valueList += `\`${currentCar[sort]}\`\n`;

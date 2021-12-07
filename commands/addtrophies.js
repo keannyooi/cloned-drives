@@ -7,7 +7,7 @@ const bot = require("../config.js");
 
 module.exports = {
     name: "addtrophies",
-    usage: "<username> <trophies here>",
+    usage: ["<username> | <amount of trophies>"],
     args: 2,
     category: "Admin",
     description: "Adds a certain amount of trophies to someone.",

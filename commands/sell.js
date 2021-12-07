@@ -10,7 +10,7 @@ const bot = require("../config.js");
 module.exports = {
     name: "sell",
     aliases: ["s"],
-    usage: ["<car name goes here>", "<amount> | <car name goes here>", "-<car ID>", "<amount> | -<car ID>"],
+    usage: ["[amount / 'all'] | <car name goes here>", "[amount / 'all'] | -<car ID>"],
     description: "Sells one or more cars from your garage.",
     args: 1,
     category: "Gameplay",
@@ -20,7 +20,7 @@ module.exports = {
             const errorMessage = new ErrorMessage({
                 channel: message.channel,
                 title: "Error, 5 or less cars detected in your garage.",
-                desc: "The minimum amount of cars you are supposed to have is 5. This is to prevent people selling/fusing their entire garage and get stuck.",
+                desc: "The minimum amount of cars you are supposed to have is 5. This is to prevent people selling/fusing their entire garage early on and getting stuck.",
                 author: message.author
             });
             return errorMessage.sendMessage();

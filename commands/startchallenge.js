@@ -14,7 +14,7 @@ module.exports = {
     aliases: ["launchchallenge"],
     usage: "(no arguments required)",
     args: 0,
-    category: "Community Management",
+    category: "Events",
     description: "Starts the inactive challenge.",
     async execute(message) {
         const db = message.client.db;

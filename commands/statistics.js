@@ -8,7 +8,7 @@ const bot = require("../config.js");
 module.exports = {
     name: "statistics",
     aliases: ["stats"],
-    usage: "(optional) <username>",
+    usage: ["[username]"],
     args: 0,
     category: "Info",
     description: "Shows someone's stats.",

@@ -7,7 +7,7 @@ const { search, openPack } = require("./sharedfiles/secondary.js");
 module.exports = {
     name: "testpack",
     aliases: ["tp"],
-    usage: "<pack name goes here>",
+    usage: ["<pack name>", "-<pack id>"],
     args: 1,
     category: "Miscellaneous",
     cooldown: 4.388,

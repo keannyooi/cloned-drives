@@ -9,7 +9,7 @@ const profileModel = require("../models/profileSchema.js");
 
 module.exports = {
     name: "addcar",
-    usage: ["<username> | <car name goes here>", "<username> | <amount> | <car name goes here>"],
+    usage: ["<username> | [amount] | <car name>"],
     args: 2,
     category: "Admin",
     description: "Adds a car into your garage.",

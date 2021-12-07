@@ -8,7 +8,7 @@ const profileModel = require("../models/profileSchema.js");
 module.exports = {
     name: "garage",
     aliases: ["g"],
-    usage: "(all optional) <username goes here> | <page number>",
+    usage: ["[username] | [page number] | -s [sorting criteria]"],
     args: 0,
     category: "Configuration",
     description: "Shows your (or other people's) garage.",

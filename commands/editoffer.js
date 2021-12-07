@@ -17,7 +17,7 @@ module.exports = {
     name: "editoffer",
     usage: "<offer name> | <criteria> | <value>",
     args: 3,
-    category: "Community Management",
+    category: "Events",
     description: "Edits an offer.",
     async execute(message, args) {
         const db = message.client.db;

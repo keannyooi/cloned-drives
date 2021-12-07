@@ -9,7 +9,7 @@ const bot = require("../config.js");
 module.exports = {
     name: "packinfo",
     aliases: ["pinfo"],
-    usage: "<pack name goes here>",
+    usage: ["<pack name>", "-<pack id>"],
     args: 1,
     category: "Configuration",
     description: "Shows info about a specified card pack.",

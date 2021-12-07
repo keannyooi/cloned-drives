@@ -14,7 +14,7 @@ module.exports = {
     aliases: ["launchoffer"],
     usage: "<offer name goes here>",
     args: 1,
-    category: "Community Management",
+    category: "Events",
     description: "Starts an inactive offer.",
     async execute(message, args) {
         const db = message.client.db;

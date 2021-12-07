@@ -2,7 +2,7 @@
 
 const { SuccessMessage, ErrorMessage } = require("./sharedfiles/classes.js");
 const { carNameGen, selectUpgrade } = require("./sharedfiles/primary.js");
-const { search, searchUser } = require("./sharedfiles/secondary.js");
+const { searchGarage, searchUser } = require("./sharedfiles/secondary.js");
 const { carSave } = require("./sharedfiles/consts.js");
 const profileModel = require("../models/profileSchema.js");
 

@@ -8,7 +8,7 @@ const bot = require("../config.js");
 module.exports = {
     name: "addfusetokens",
     aliases: ["aft"],
-    usage: "<username> | <amount>",
+    usage: ["<username> | <amount of fuse tokens>"],
     args: 2,
     category: "Admin",
     description: "Adds a certain amount of fuse tokens to someone's cash balance.",

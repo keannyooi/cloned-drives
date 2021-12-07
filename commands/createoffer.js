@@ -14,7 +14,7 @@ module.exports = {
     aliases: ["newoffer"],
     usage: "<amount purchasable> <offer name goes here>",
     args: 2,
-    category: "Community Management",
+    category: "Events",
     description: "Creates a limited offer with the name of your choice.",
     async execute(message, args) {
         const db = message.client.db;

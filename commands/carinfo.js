@@ -10,7 +10,7 @@ const profileModel = require("../models/profileSchema.js");
 module.exports = {
     name: "carinfo",
     aliases: ["cinfo"],
-    usage: ["<car name>", "<car id with a slash (-) at the front>"],
+    usage: ["<car name>", "-<car ID>"],
     args: 1,
     category: "Info",
     description: "Shows info about a specified car.",

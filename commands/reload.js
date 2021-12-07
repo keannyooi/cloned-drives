@@ -16,7 +16,7 @@ const { ErrorMessage, SuccessMessage } = require("./sharedfiles/classes.js");
 module.exports = {
     name: "reload",
     aliases: ["rl"],
-    usage: "<command here>",
+    usage: ["<command name/alias>"],
     args: 1,
     category: "Admin",
     description: "Reloads a command.",

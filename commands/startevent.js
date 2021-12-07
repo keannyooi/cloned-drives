@@ -14,7 +14,7 @@ module.exports = {
     aliases: ["launchevent"],
     usage: "<event name goes here>",
     args: 1,
-    category: "Community Management",
+    category: "Events",
     description: "Starts an inactive event.",
     async execute(message, args) {
         const db = message.client.db;

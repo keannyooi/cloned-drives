@@ -11,7 +11,7 @@ const bot = require("../config.js");
 module.exports = {
     name: "openpack",
     aliases: ["buypack", "op"],
-    usage: "<pack name goes here>",
+    usage: ["<pack name>", "-<pack id>"],
     args: 1,
     category: "Gameplay",
     cooldown: 4.388,

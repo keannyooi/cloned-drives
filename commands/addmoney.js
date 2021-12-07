@@ -7,7 +7,7 @@ const bot = require("../config.js");
 
 module.exports = {
     name: "addmoney",
-    usage: "<username> <amount here>",
+    usage: ["<username> | <amount of money>"],
     args: 2,
     category: "Admin",
     description: "Adds a certain amount of money to someone's cash balance.",

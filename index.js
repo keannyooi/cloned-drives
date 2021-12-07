@@ -11,7 +11,7 @@ const bot = require("./config.js");
 const profileModel = require("./models/profileSchema.js");
 const prefix = bot.devMode ? process.env.DEV_PREFIX : process.env.BOT_PREFIX;
 const token = bot.devMode ? process.env.DEV_TOKEN : process.env.BOT_TOKEN;
-const allowedCommands = ["carinfo.js", "calculate.js", "garage.js", "ping.js", "reload.js", "statistics.js", "addcar.js", "removecar.js", "addmoney.js", "removemoney.js", "carlist.js", "testpack.js", "trackinfo.js", "packinfo.js", "changetune.js", "upgrade.js", "fuse.js", "sell.js"];
+const allowedCommands = ["carinfo.js", "calculate.js", "garage.js", "ping.js", "reload.js", "statistics.js", "addcar.js", "removecar.js", "addmoney.js", "removemoney.js", "carlist.js", "testpack.js", "trackinfo.js", "packinfo.js", "changetune.js", "upgrade.js", "fuse.js", "sell.js", "help.js"];
 const commandFiles = readdirSync("./commands").filter(file => file.endsWith(".js"));
 
 commandFiles.forEach(function (file) {
@@ -123,7 +123,7 @@ async function processCommand(message) {
         const errorMessage = new ErrorMessage({
             channel: message.channel,
             title: "Error, 404 command not found.",
-            desc: `It looks like this command doesn't exist. Try using \`${prefix}help\` to find the command you are looking for.`,
+            desc: "It looks like this command doesn't exist. Try using \`cd-help\` to find the command you are looking for.",
             author: message.author
         }).displayClosest(commandName, commandFiles.map(i => i.slice(0, -3)));
         return errorMessage.sendMessage();
@@ -146,9 +146,9 @@ async function processCommand(message) {
                 return accessDenied(message, "711790752853655563");
             }
             break;
-        case "Community Management":
-            if (!message.member.roles.cache.has("802043346951340064")) {
-                return accessDenied(message, "802043346951340064");
+        case "Events":
+            if (!message.member.roles.cache.has("917685033995751435")) {
+                return accessDenied(message, "917685033995751435");
             }
             break;
         default:
@@ -159,7 +159,7 @@ async function processCommand(message) {
         const errorMessage = new ErrorMessage({
             channel: message.channel,
             title: "Error, arguments provided insufficient or missing.",
-            desc: `Here's the correct syntax: \`${prefix}${command.name} ${command.usage}\``,
+            desc: `Here's the correct syntax: \`cd-${command.name} ${command.usage}\``,
             author: message.author
         });
         return errorMessage.sendMessage();

@@ -13,7 +13,7 @@ module.exports = {
     aliases: ["removeevent", "rmvevent"],
     usage: "<event name goes here>",
     args: 1,
-    category: "Community Management",
+    category: "Events",
     description: "Ends an ongoing event.",
     async execute(message, args) {
         const db = message.client.db;
