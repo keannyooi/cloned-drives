@@ -3,16 +3,16 @@
 const { SuccessMessage, InfoMessage, ErrorMessage } = require("./sharedfiles/classes.js");
 const { defaultChoiceTime } = require("./sharedfiles/consts.js");
 const { carNameGen, selectUpgrade, calcTotal } = require("./sharedfiles/primary.js");
-const { search, searchUser, confirm } = require("./sharedfiles/secondary.js");
+const { searchGarage, searchUser, confirm } = require("./sharedfiles/secondary.js");
 const profileModel = require("../models/profileSchema.js");
 
 module.exports = {
     name: "removecar",
     aliases: ["rmvcar"],
-    usage: "<username> | (optional) <amount> | <car name goes here>",
+    usage: ["<username> | <car name goes here>", "<username> | <amount> | <car name goes here>"],
     args: 2,
     category: "Admin",
-    description: "Removes one or more cars from someone's garage. (data transferring)",
+    description: "Removes one or more cars from someone's garage.",
     async execute(message, args) {
         if (message.mentions.users.first()) {
             if (!message.mentions.users.first().bot) {
@@ -42,7 +42,7 @@ module.exports = {
 
         async function getCar(user, currentMessage) {
             const playerData = await profileModel.findOne({ userID: user.id });
-            let query, amount = 1, startFrom, searchBy = "car";
+            let query, amount = 1, startFrom, searchByID = false;
             if (args[1].toLowerCase() === "all" && args[2]) {
                 startFrom = 2;
             }
@@ -55,19 +55,29 @@ module.exports = {
             }
             if (args[startFrom].toLowerCase().startsWith("-c")) {
                 query = [args[startFrom].toLowerCase().slice(1)];
-                searchBy = "id";
+                searchByID = true;
             }
             else {
                 query = args.slice(startFrom, args.length).map(i => i.toLowerCase());
             }
 
-            const ownedCars = playerData.garage.map(c => c.carID);
-            new Promise(resolve => resolve(search(message, query, ownedCars, searchBy, currentMessage)))
+            new Promise(resolve => resolve(searchGarage({
+                message,
+                query,
+                garage: playerData.garage,
+                amount,
+                searchByID,
+                currentMessage
+            })))
                 .then(async (hmm) => {
                     if (!Array.isArray(hmm)) return;
                     let [result, currentMessage] = hmm;
-                    result = playerData.garage.find(c => c.carID === result);
-                    await removeCar(user, result, amount, playerData, currentMessage);
+                    try {
+                        await removeCar(user, result, amount, playerData, currentMessage);
+                    }
+                    catch (error) {
+                        throw error;
+                    }
                 });
         }
 

@@ -364,16 +364,24 @@ async function searchGarage(args) {
             if (matchList.length > 0) {
                 let list = "";
                 for (let i = 0; i < matchList.length; i++) {
-                    let currentCar = require(`../cars/${matchList[i].carID}.json`);
-                    list += carNameGen({ currentCar, rarity: rarityCheck(currentCar) });
+                    let currentCar = require(`../cars/${matchList[i].carID}.json`), newLine = "";
+                    newLine = carNameGen({ currentCar, rarity: rarityCheck(currentCar) });
                     if (!currentCar["isPrize"]) {
                         let upgList = "";
                         for (let [key, value] of Object.entries(matchList[i].upgrades)) {
                             if (value !== 0) upgList += `${value}x ${key}, `;
                         }
-                        list += ` \`(${upgList.slice(0, -2)}, not enough to perform action)\`\n`;
+                        newLine += ` \`(${upgList.slice(0, -2)}, not enough to perform action)\`\n`;
+                    }
+                    if (list.length + newLine.length > 1024) { //discord embed field value limit
+                        list += "...etc";
+                        break;
+                    }
+                    else {
+                        list += newLine;
                     }
                 }
+
                 const errorMessage = new ErrorMessage({
                     channel: args.message.channel,
                     title: `Error, ${args.amount} non-maxed, non-prize car(s) of the same tune required to perform this action.`,
@@ -383,10 +391,16 @@ async function searchGarage(args) {
                 return errorMessage.sendMessage({ currentMessage: args.currentMessage });
             }
             else {
-                const list = args.garage.map(car => {
-                    let currentCar = require(`../cars/${car.carID}.json`);
-                    return carNameGen({ currentCar, removePrizeTag: true }).toLowerCase();
-                });
+                let list = [];
+                if (args.searchByID) {
+                    list = args.garage.map(car => car.carID);
+                }
+                else {
+                    list = args.garage.map(car => {
+                        let currentCar = require(`../cars/${car.carID}.json`);
+                        return carNameGen({ currentCar, removePrizeTag: true }).toLowerCase();
+                    });
+                }
                 return throwError(args.query.join(" "), list);
             }
         });

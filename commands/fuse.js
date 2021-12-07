@@ -1,6 +1,6 @@
 "use strict";
 
-const { SuccessMessage, InfoMessage } = require("./sharedfiles/classes.js");
+const { SuccessMessage, InfoMessage, ErrorMessage } = require("./sharedfiles/classes.js");
 const { defaultChoiceTime } = require("./sharedfiles/consts.js");
 const { carNameGen, selectUpgrade, calcTotal } = require("./sharedfiles/primary.js");
 const { searchGarage, confirm } = require("./sharedfiles/secondary.js");
@@ -10,12 +10,22 @@ const bot = require("../config.js");
 module.exports = {
     name: "fuse",
     aliases: ["f"],
-    usage: "(optional) <amount> | <car name goes here>",
+    usage: ["<car name goes here>", "<amount> | <car name goes here>", "-<car ID>", "<amount> | -<car ID>"],
     args: 1,
     category: "Gameplay",
     description: "Converts one or more cars inside your garage into fuse tokens.",
     async execute(message, args) {
         const playerData = await profileModel.findOne({ userID: message.author.id });
+        if (playerData.garage.length <= 5) {
+            const errorMessage = new ErrorMessage({
+                channel: message.channel,
+                title: "Error, 5 or less cars detected in your garage.",
+                desc: "The minimum amount of cars you are supposed to have is 5. This is to prevent people selling/fusing their entire garage and get stuck.",
+                author: message.author
+            });
+            return errorMessage.sendMessage();
+        }
+
         let query, amount = 1, startFrom, searchByID = false;
         if (args[0].toLowerCase() === "all" && args[1]) {
             startFrom = 1;

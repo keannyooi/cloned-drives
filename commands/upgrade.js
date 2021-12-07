@@ -2,7 +2,7 @@
 
 const { SuccessMessage, InfoMessage, ErrorMessage } = require("./sharedfiles/classes.js");
 const { carNameGen, selectUpgrade } = require("./sharedfiles/primary.js");
-const { search, confirm } = require("./sharedfiles/secondary.js");
+const { searchGarage, confirm } = require("./sharedfiles/secondary.js");
 const { carSave, defaultChoiceTime } = require("./sharedfiles/consts.js");
 const profileModel = require("../models/profileSchema.js");
 const bot = require("../config.js");
@@ -26,13 +26,35 @@ module.exports = {
         }
 
         const playerData = await profileModel.findOne({ userID: message.author.id });
-        const ownedCars = playerData.garage.map(c => c.carID);
-        let carName = args.slice(0, args.length - 1).map(i => i.toLowerCase());
-        new Promise(resolve => resolve(search(message, carName, ownedCars, "car")))
+        let query, amount = 1, startFrom, searchByID = false;
+        if (args[0].toLowerCase() === "all" && args[1]) {
+            startFrom = 1;
+        }
+        else if (isNaN(args[0]) || !args[1]) {
+            startFrom = 0;
+        }
+        else {
+            amount = Math.ceil(parseInt(args[0]));
+            startFrom = 1;
+        }
+        if (args[startFrom].toLowerCase().startsWith("-c")) {
+            query = [args[startFrom].toLowerCase().slice(1)];
+            searchByID = true;
+        }
+        else {
+            query = args.slice(startFrom, args.length).map(i => i.toLowerCase());
+        }
+
+        new Promise(resolve => resolve(searchGarage({
+            message,
+            query,
+            garage: playerData.garage,
+            amount,
+            searchByID
+        })))
             .then(async (hmm) => {
                 if (!Array.isArray(hmm)) return;
                 let [result, currentMessage] = hmm;
-                result = playerData.garage.find(c => c.carID === result);
                 try {
                     await upgradeCar(result, playerData, currentMessage);
                 }

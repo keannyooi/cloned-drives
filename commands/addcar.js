@@ -9,10 +9,10 @@ const profileModel = require("../models/profileSchema.js");
 
 module.exports = {
     name: "addcar",
-    usage: "<username> | (optional) <amount> | <car name goes here>",
+    usage: ["<username> | <car name goes here>", "<username> | <amount> | <car name goes here>"],
     args: 2,
     category: "Admin",
-    description: "Adds a car into your garage. (data transferring)",
+    description: "Adds a car into your garage.",
     async execute(message, args) {
         if (message.mentions.users.first()) {
             if (!message.mentions.users.first().bot) {

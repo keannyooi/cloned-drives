@@ -52,14 +52,42 @@ module.exports = {
 
         async function getCar(user, currentMessage) {
             const playerData = await profileModel.findOne({ userID: user.id });
-            const ownedCars = playerData.garage.map(c => c.carID);
-            let carName = args.slice(1, args.length - 1).map(i => i.toLowerCase());
-            new Promise(resolve => resolve(search(message, carName, ownedCars, "car", currentMessage)))
+            let query, amount = 1, startFrom, searchByID = false;
+            if (args[1].toLowerCase() === "all" && args[2]) {
+                startFrom = 2;
+            }
+            else if (isNaN(args[1]) || !args[2]) {
+                startFrom = 1;
+            }
+            else {
+                amount = Math.ceil(parseInt(args[1]));
+                startFrom = 2;
+            }
+            if (args[startFrom].toLowerCase().startsWith("-c")) {
+                query = [args[startFrom].toLowerCase().slice(1)];
+                searchByID = true;
+            }
+            else {
+                query = args.slice(startFrom, args.length).map(i => i.toLowerCase());
+            }
+
+            new Promise(resolve => resolve(searchGarage({
+                message,
+                query,
+                garage: playerData.garage,
+                amount,
+                searchByID,
+                currentMessage
+            })))
                 .then(async (hmm) => {
                     if (!Array.isArray(hmm)) return;
                     let [result, currentMessage] = hmm;
-                    result = playerData.garage.find(c => c.carID === result);
-                    await changeTune(user, result, playerData, currentMessage);
+                    try {
+                        await changeTune(user, result, playerData, currentMessage);
+                    }
+                    catch (error) {
+                        throw error;
+                    }
                 });
         }
 
