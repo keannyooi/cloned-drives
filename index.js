@@ -6,6 +6,8 @@ const { readdirSync } = require("fs");
 const { Collection } = require("discord.js");
 const { connect } = require("mongoose");
 const { DateTime, Interval } = require("luxon");
+const { spawn } = require("child_process");
+const { schedule } = require("node-cron");
 const { ErrorMessage, InfoMessage, BotError } = require("./commands/sharedfiles/classes.js");
 const bot = require("./config.js");
 const profileModel = require("./models/profileSchema.js");
@@ -248,8 +250,6 @@ function accessDenied(message, roleID) {
 }
 
 //automatic database backup system
-const { spawn } = require("child_process");
-const { schedule } = require("node-cron");
 schedule("59 23 * * *", () => {
     const backupProcess = spawn("mongodump", [
         `--uri=${process.env.MONGO_URI}`,
