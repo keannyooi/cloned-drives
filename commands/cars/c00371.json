@@ -1,7 +1,7 @@
 {
     "rq": 64,
     "make": "Dodge",
-    "model": "Viper RT10",
+    "model": "Viper RT/10",
     "modelYear": 1992,
     "country": "US",
     "topSpeed": 168,
@@ -15,7 +15,7 @@
     "weight": 1603,
     "gc": "Low",
     "seatCount": 2,
-    "bodyStyle": "Roadster",
+    "bodyStyle": "Convertible",
     "tcs": false,
     "abs": false,
     "enginePos": "Front",
