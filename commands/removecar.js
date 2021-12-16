@@ -2,7 +2,7 @@
 
 const { SuccessMessage, InfoMessage, ErrorMessage } = require("./sharedfiles/classes.js");
 const { defaultChoiceTime } = require("./sharedfiles/consts.js");
-const { carNameGen, selectUpgrade, calcTotal } = require("./sharedfiles/primary.js");
+const { carNameGen, selectUpgrade, calcTotal, updateHands } = require("./sharedfiles/primary.js");
 const { searchGarage, searchUser, confirm } = require("./sharedfiles/secondary.js");
 const profileModel = require("../models/profileSchema.js");
 
@@ -83,8 +83,9 @@ module.exports = {
 
         async function removeCar(user, currentCar, amount, playerData, currentMessage) {
             new Promise(resolve => resolve(selectUpgrade(message, currentCar, amount, currentMessage)))
-                .then(async (upgrade) => {
-                    if (isNaN(upgrade)) return;
+                .then(async (response) => {
+                    if (!Array.isArray(response)) return;
+                    const [upgrade, currentMessage] = response;
                     const car = require(`./cars/${currentCar.carID}.json`);
                     const currentName = carNameGen({ currentCar: car, upgrade });
                     if (args[1].toLowerCase() === "all") {
@@ -102,17 +103,7 @@ module.exports = {
                     await confirm(message, confirmationMessage, acceptedFunction, playerData.settings.buttonstyle, currentMessage);
 
                     async function acceptedFunction(currentMessage) {
-                        if (playerData.hand?.carID === currentCar.carID) {
-                            playerData.hand = { carID: "", upgrade: "000" };
-                        }
-                        for (let i = 0; i < playerData.decks.length; i++) {
-                            let x = playerData.decks[i].hand.findIndex(c => c.carID === currentCar.carID && c.upgrade === upgrade);
-                            if (x > -1) {
-                                playerData.decks[i].hand[x] = "";
-                                playerData.decks[i].tunes[x] = "000";
-                            }
-                        }
-
+                        updateHands(playerData, currentCar.carID, upgrade, "remove");
                         currentCar.upgrades[upgrade] -= amount;
                         if (calcTotal(currentCar) === 0) {
                             playerData.garage.splice(playerData.garage.indexOf(currentCar), 1);

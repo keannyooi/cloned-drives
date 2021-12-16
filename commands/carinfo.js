@@ -2,7 +2,7 @@
 
 const fs = require("fs");
 const carFiles = fs.readdirSync("./commands/cars").filter(file => file.endsWith('.json'));
-const { rarityCheck, carNameGen, unbritish } = require("./sharedfiles/primary.js");
+const { rarityCheck, carNameGen, unbritish, getFlag } = require("./sharedfiles/primary.js");
 const { InfoMessage } = require("./sharedfiles/classes.js");
 const { search } = require("./sharedfiles/secondary.js");
 const profileModel = require("../models/profileSchema.js");
@@ -76,6 +76,7 @@ module.exports = {
                 desc: `Car ID: \`${car.slice(0, 6)}\``,
                 author: message.author,
                 image: currentCar["card"],
+                thumbnail: getFlag(currentCar["country"]),
                 fields: [
                     { name: "Top Speed", value: topSpeed, inline: true },
                     { name: "0-60MPH (0-100KM/H)", value: accel, inline: true },

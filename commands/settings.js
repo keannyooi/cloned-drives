@@ -1,13 +1,11 @@
 "use strict";
-/*
- __  ___  _______     ___      .__   __. .__   __. ____    ____
-|  |/  / |   ____|   /   \     |  \ |  | |  \ |  | \   \  /   /
-|  '  /  |  |__     /  ^  \    |   \|  | |   \|  |  \   \/   /
-|    <   |   __|   /  /_\  \   |  . `  | |  . `  |   \_    _/
-|  .  \  |  |____ /  _____  \  |  |\   | |  |\   |     |  |
-|__|\__\ |_______/__/     \__\ |__| \__| |__| \__|     |__| 	(this is a watermark that proves that these lines of code are mine)
-*/
-const Discord = require("discord.js-light");
+
+const { MessageButton, MessageActionRow, MessageSelectMenu } = require("discord.js");
+const { SuccessMessage, InfoMessage, ErrorMessage } = require("./sharedfiles/classes.js");
+const { defaultWaitTime } = require("./sharedfiles/consts.js");
+const profileModel = require("../models/profileSchema.js");
+const { getFlag } = require("./sharedfiles/primary.js");
+
 module.exports = {
     name: "settings",
     usage: "<(optional) name of deck>",
@@ -15,187 +13,370 @@ module.exports = {
     category: "Configuration",
     description: "Configure settings here.",
     async execute(message, args) {
-        const db = message.client.db;
-        const settings = await db.get(`acc${message.author.id}.settings`);
+        const playerData = await profileModel.findOne({ userID: message.author.id });
+        let settings = playerData.settings;
+
         if (!args[0]) {
-            const infoScreen = new Discord.MessageEmbed()
-                .setColor("#34aeeb")
-                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle("Your Settings")
-                .addFields({ name: "Enable Graphics (ID: \`enablegraphics\`)", value: `Having this set to \`false\` skips through all bot-generated graphics. Perfect for faster loading times.\n**Value:** \`${settings.enablegraphics}\``, inline: true }, { name: "Enable Daily Reward Notifications (ID: \`senddailynotifs\`)", value: `Having this set to \`true\` enables automated DM notifications when your daily reward can be claimed.\n**Value:** \`${settings.senddailynotifs}\``, inline: true }, { name: "Enable Car List Filtering (ID: \`filtercarlist\`)", value: `Having this set to \`true\` applies your current filter to the car list.\n**Value:** \`${settings.filtercarlist}\``, inline: true }, { name: "Enable Garage Filtering (ID: \`filtergarage\`)", value: `Having this set to \`true\` applies your current filter to the garage.\n**Value:** \`${settings.filtergarage}\``, inline: true }, { name: "Show Black Market Cars (ID: \`showbmcars\`)", value: `(This is WIP, doesn't do anything currently)\n**Value:** \`${settings.showbmcars}\``, inline: true }, { name: "Sorting Order For List Filtering (ID: \`sortingorder\`)", value: `Lets you choose to sort either by ascending or descending. Affects the following commands: \`cd-garage, cd-carlist, cd-tracklist\`\n**Value:** \`${settings.sortingorder}\``, inline: true }, { name: "Unit Preference (ID: \`unitpreference\`)", value: `Lets you choose the unit system of your preference. Graphics aren't affected by this setting. The game uses British units by default.\n**Value:** \`${settings.unitpreference}\``, inline: true }, { name: "Button Style (ID: \`buttonstyle\`)", value: `Lets you choose the button style of your preference. \n**Value:** \`${settings.buttonstyle}\``, inline: true }, { name: "Shortened Lists (ID: \`shortenedlists\`)", value: `Saves at least 450 characters from lists, allowing longer lists to be shown. Affects the following commands: \`cd-garage, cd-carlist\`\n**Value:** \`${settings.shortenedlists}\``, inline: true })
-                .setTimestamp();
-            message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-            return message.channel.send(infoScreen);
+            const filter = (button) => button.user.id === message.author.id;
+            let { infoMessage, row } = menu();
+            let currentMessage = await infoMessage.sendMessage({ buttons: [row] });
+
+            const collector = message.channel.createMessageComponentCollector({ filter, time: defaultWaitTime });
+            collector.on("collect", async (button) => {
+                switch (button.customId) {
+                    case "category_select":
+                        let backButton;
+                        if (playerData.settings.buttonstyle === "classic") {
+                            backButton = new MessageButton({
+                                emoji: "⬅️",
+                                style: "SECONDARY",
+                                customId: "back"
+                            });
+                        }
+                        else {
+                            backButton = new MessageButton({
+                                label: "Back",
+                                style: "PRIMARY",
+                                customId: "back"
+                            });
+                        }
+
+                        infoMessage = new InfoMessage({
+                            channel: message.channel,
+                            title: "Settings",
+                            desc: `Category Selected: \`${button.values[0]}\``,
+                            author: message.author
+                        });
+                        row = new MessageActionRow({ components: [backButton] });
+
+                        switch (button.values[0]) {
+                            case "Gameplay":
+                                infoMessage.addFields([
+                                    {
+                                        name: "Disable Graphics (ID: \`disablegraphics\`)",
+                                        value: `Having this set to \`true\` skips through all bot-generated graphics. Perfect for faster loading times.
+                                **Value:** \`${settings.disablegraphics ?? false}\``,
+                                        inline: true
+                                    },
+                                    {
+                                        name: "Enable Daily Reward Notifications (ID: \`senddailynotifs\`)",
+                                        value: `Having this set to \`true\` enables automated DM notifications when your daily reward can be claimed.
+                                **Value:** \`${settings.senddailynotifs ?? false}\``,
+                                        inline: true
+                                    },
+                                    {
+                                        name: "Unit Preference (ID: \`unitpreference\`)",
+                                        value: `Lets you choose the unit system of your preference. Graphics aren't affected by this setting. The game uses British units by default and you can switch to metric and imperial units.
+                                        **Value:** \`${settings.unitpreference ?? "british"}`,
+                                        inline: true
+                                    },
+                                    {
+                                        name: "Button Style (ID: \`buttonstyle\`)",
+                                        value: `Lets you choose the button style of your preference. The \`default\` style gives a more modern look with Discord's new embed buttons while the \`classic\` style resembles old-school emoji buttons.
+                                        **Value:** \`${settings.buttonstyle ?? "default"}\``,
+                                        inline: true
+                                    },
+                                ]);
+                                break;
+                            case "Garage + Lists":
+                                infoMessage.addFields([
+                                    {
+                                        name: "Disable Filter for Garage (ID: \`disablegaragefilter\`)",
+                                        value: `Having this set to \`true\` disables your current filter when viewing your (or other people's) garage.
+                                **Value:** \`${settings.disablegaragefilter ?? false}\``,
+                                        inline: true
+                                    },
+                                    {
+                                        name: "Disable Filter for Car List (ID: \`disablecarlistfilter\`)",
+                                        value: `Having this set to \`true\` disables your current filter when viewing the car list.
+                                **Value:** \`${settings.disablecarlistfilter ?? false}\``,
+                                        inline: true
+                                    },
+                                    {
+                                        name: "Hide Black Market Cars (ID: \`hidebmcars\`)",
+                                        value: `(This is WIP, doesn't do anything currently)
+                                        **Value:** \`${settings.hidebmcars ?? false}\``,
+                                        inline: true
+                                    },
+                                    {
+                                        name: "Sorting Order (ID: \`sortorder\`)",
+                                        value: `Lets you choose to sort either by ascending or descending.
+                                        **Value:** \`${settings.sortorder ?? "descending"}\``,
+                                        inline: true
+                                    },
+                                    {
+                                        name: "Amount of Items Listed Per Page (ID: \`listamount\`)",
+                                        value: `Lets you choose the amount of items listed per page. Values are restricted between \`5\` and \`10\`.
+                                        **Value:** \`${settings.listamount ?? 10}\``,
+                                        inline: true
+                                    },
+                                ]);
+                                break;
+                            case "Profile":
+                                infoMessage.addFields([
+                                    {
+                                        name: "About Me (ID: \`bio\`)",
+                                        value: "Tells people who you are when doing \`cd-stats\`.",
+                                        inline: true
+                                    }
+                                ]);
+                                break;
+                            default:
+                                break;
+                        }
+
+                        await infoMessage.sendMessage({ currentMessage, buttons: [row] });
+                        break;
+                    case "back":
+                        ({ infoMessage, row } = menu());
+                        await infoMessage.sendMessage({ currentMessage, buttons: [row] });
+                        break;
+                    default:
+                        break;
+                }
+                await button.deferUpdate();
+            });
+            collector.on("end", () => {
+                return currentMessage.removeButtons();
+            });
         }
         else {
-            let infoScreen;
+            let infoMessage;
             const setting = args[0].toLowerCase();
+            if (!args[1]) {
+                let errorMessage = new ErrorMessage({
+                    channel: message.channel,
+                    title: "Error, argument not provided.",
+                    desc: "You are expected to provide a value after the setting ID. Refer to the help section by running `cd-help settings`.",
+                    author: message.author
+                });
+                return errorMessage.sendMessage();
+            }
+            const argument = args[1].toLowerCase();
+
             switch (setting) {
-                case "enablegraphics":
+                case "disablegraphics":
                 case "senddailynotifs":
-                case "filtercarlist":
-                case "filtergarage":
-                case "showbmcars":
-                case "shortenedlists":
-                    if (!args[1]) {
-                        message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                        let errorMessage = new Discord.MessageEmbed()
-                            .setColor("#fc0303")
-                            .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                            .setTitle("Error, argument not provided.")
-                            .setDescription("You are expected to provide a boolean value after the setting name.")
-                            .setTimestamp();
-                        return message.channel.send(errorMessage);
-                    }
-                    if (args[1].toLowerCase() === "true" || args[1].toLowerCase() === "false") {
+                case "disablecarlistfilter":
+                case "disablegaragefilter":
+                case "hidebmcars":
+                    if (argument === "true") {
                         if (setting === "senddailynotifs") {
                             message.author.send("You have activated daily reward notifications! Notifications will be sent here.")
                                 .catch(() => {
-                                message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                                let errorMessage = new Discord.MessageEmbed()
-                                    .setColor("#fc0303")
-                                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                                    .setTitle("Error, it looks like I am unable to DM you.")
-                                    .setDescription("This notification system requires the bot to have access to your DMs.")
-                                    .setTimestamp();
-                                return message.channel.send(errorMessage);
-                            });
+                                    let errorMessage = new ErrorMessage({
+                                        channel: message.channel,
+                                        title: "Error, it looks like I can't DM you.",
+                                        desc: "This notification system requires the bot to have access to your DMs. Try enabling **Allow direct messages from server members**.",
+                                        author: message.author
+                                    });
+                                    return errorMessage.sendMessage();
+                                });
                         }
-                        settings[setting] = JSON.parse(args[1].toLowerCase());
-                        infoScreen = new Discord.MessageEmbed()
-                            .setColor("#03fc24")
-                            .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                            .setTitle(`Successfully set the \`${setting}\` setting to \`${args[1].toLowerCase()}\`!`)
-                            .setTimestamp();
+                        settings[setting] = JSON.parse(argument);
                     }
+                    else if (argument === "false") {
+                        delete settings[setting];
+                    } 
                     else {
-                        message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                        let errorMessage = new Discord.MessageEmbed()
-                            .setColor("#fc0303")
-                            .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                            .setTitle("Error, argument provided is not a boolean.")
-                            .setDescription("Booleans only have 2 states, true or false.")
-                            .addField("Argument Received", `\`${args[1].toLowerCase()}\` (not a boolean)`)
-                            .setTimestamp();
-                        return message.channel.send(errorMessage);
+                        let errorMessage = new ErrorMessage({
+                            channel: message.channel,
+                            title: "Error, argument provided is not a boolean.",
+                            desc: "Booleans only have 2 states, `true` or `false`.",
+                            author: message.author
+                        }).displayClosest(argument);
+                        return errorMessage.sendMessage();
                     }
+
+                    infoMessage = new SuccessMessage({
+                        channel: message.channel,
+                        title: `Successfully set the \`${setting}\` setting to \`${argument}\`!`,
+                        author: message.author
+                    });
                     break;
                 case "unitpreference":
-                    if (!args[1]) {
-                        message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                        let errorMessage = new Discord.MessageEmbed()
-                            .setColor("#fc0303")
-                            .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                            .setTitle("Error, argument not provided.")
-                            .setDescription("You are expected to provide a unit system after the setting name. Here are the unit systems available: `british`, `metric` (SI), `imperial` (US)")
-                            .setTimestamp();
-                        return message.channel.send(errorMessage);
-                    }
-                    if (args[1].toLowerCase() === "british" || args[1].toLowerCase() === "imperial" || args[1].toLowerCase() === "metric") {
-                        settings[setting] = args[1].toLowerCase();
-                        infoScreen = new Discord.MessageEmbed()
-                            .setColor("#03fc24")
-                            .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                            .setTitle(`Successfully set your unit system of choice to the \`${args[1].toLowerCase()}\` system!`)
-                            .setTimestamp();
+                    if (argument === "british" || argument === "imperial" || argument === "metric") {
+                        if (argument === "british") {
+                            delete settings[setting];
+                        }
+                        else {
+                            settings[setting] = argument;
+                        }
+
+                        infoMessage = new SuccessMessage({
+                            channel: message.channel,
+                            title: `Successfully set your unit system of choice to the \`${argument}\` system!`,
+                            author: message.author
+                        });
                     }
                     else {
-                        message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                        let errorMessage = new Discord.MessageEmbed()
-                            .setColor("#fc0303")
-                            .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                            .setTitle("Error, argument provided is not a valid unit system.")
-                            .setDescription("This game supports `british`, `imperial` (US) and `metric` (SI) unit systems only.")
-                            .addField("Argument Received", `\`${args[1].toLowerCase()}\``)
-                            .setTimestamp();
-                        return message.channel.send(errorMessage);
+                        let errorMessage = new ErrorMessage({
+                            channel: message.channel,
+                            title: "Error, argument provided is not a valid unit system.",
+                            desc: "This game supports `british`, `imperial` (US) and `metric` (SI) unit systems only.",
+                            author: message.author
+                        }).displayClosest(argument);
+                        return errorMessage.sendMessage();
                     }
                     break;
-                case "sortingorder":
-                    if (!args[1]) {
-                        message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                        let errorMessage = new Discord.MessageEmbed()
-                            .setColor("#fc0303")
-                            .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                            .setTitle("Error, argument not provided.")
-                            .setDescription("You are expected to provide either `ascending` or `descending` after the setting name.")
-                            .setTimestamp();
-                        return message.channel.send(errorMessage);
+                case "sortorder":
+                    if (argument === "ascending") {
+                        settings[setting] = argument;
                     }
-                    if (args[1].toLowerCase() === "ascending" || args[1].toLowerCase() === "descending") {
-                        settings[setting] = args[1].toLowerCase();
-                        infoScreen = new Discord.MessageEmbed()
-                            .setColor("#03fc24")
-                            .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                            .setTitle(`Successfully set the sorting order to \`${args[1].toLowerCase()}\`!`)
-                            .setTimestamp();
-                    }
+                    else if (argument === "descending") {
+                        delete settings[setting];
+                    } 
                     else {
-                        message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                        let errorMessage = new Discord.MessageEmbed()
-                            .setColor("#fc0303")
-                            .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                            .setTitle("Error, argument provided is invalid")
-                            .setDescription("You are expected to provide either `ascending` or `descending`.")
-                            .addField("Argument Received", `\`${args[1].toLowerCase()}\``)
-                            .setTimestamp();
-                        return message.channel.send(errorMessage);
+                        let errorMessage = new ErrorMessage({
+                            channel: message.channel,
+                            title: "Error, argument provided is invalid.",
+                            desc: "You are expected to provide either `ascending` or `descending`.",
+                            author: message.author
+                        }).displayClosest(argument);
+                        return errorMessage.sendMessage();
                     }
+
+                    infoMessage = new SuccessMessage({
+                        channel: message.channel,
+                        title: `Successfully set the sorting order to \`${argument}\`!`,
+                        author: message.author
+                    });
                     break;
                 case "buttonstyle":
-                    if (!args[1]) {
-                        message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                        let errorMessage = new Discord.MessageEmbed()
-                            .setColor("#fc0303")
-                            .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                            .setTitle("Error, argument not provided.")
-                            .setDescription("There are 2 styles to choose from: `default` and `classic`.")
-                            .setTimestamp();
-                        return message.channel.send(errorMessage);
+                    if (argument === "classic") {
+                        settings[setting] = argument;
                     }
-                    if (args[1].toLowerCase() === "default" || args[1].toLowerCase() === "classic") {
-                        settings[setting] = args[1].toLowerCase();
-                        infoScreen = new Discord.MessageEmbed()
-                            .setColor("#03fc24")
-                            .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                            .setTitle(`Successfully set the button style to \`${args[1].toLowerCase()}\`!`)
-                            .setTimestamp();
+                    else if (argument === "default") {
+                        delete settings[setting];
+                    } 
+                    else {
+                        let errorMessage = new ErrorMessage({
+                            channel: message.channel,
+                            title: "Error, argument provided is invalid.",
+                            desc: "There are 2 styles to choose from: `default` and `classic`.",
+                            author: message.author
+                        }).displayClosest(argument);
+                        return errorMessage.sendMessage();
+                    }
+
+                    infoMessage = new SuccessMessage({
+                        channel: message.channel,
+                        title: `Successfully set the button style to \`${argument}\`!`,
+                        author: message.author
+                    });
+                    break;
+                case "listamount":
+                    if (!isNaN(argument)) {
+                        let amount = parseInt(argument);
+                        if (amount === 10) {
+                            delete settings[setting];
+                        }
+                        else if (amount >= 5 && amount < 10) {
+                            settings[setting] = amount;
+                        }
+                        else {
+                            let errorMessage = new ErrorMessage({
+                                channel: message.channel,
+                                title: "Error, argument provided is out of range.",
+                                desc: "The value should be a number between `5` and `10`.",
+                                author: message.author
+                            }).displayClosest(amount);
+                            return errorMessage.sendMessage();
+                        }
+
+                        infoMessage = new SuccessMessage({
+                            channel: message.channel,
+                            title: `Successfully set the amount of items per page to \`${amount}\`!`,
+                            author: message.author
+                        });
                     }
                     else {
-                        message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                        let errorMessage = new Discord.MessageEmbed()
-                            .setColor("#fc0303")
-                            .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                            .setTitle("Error, argument provided is invalid")
-                            .setDescription("There are 2 styles to choose from: `default` and `classic`.")
-                            .addField("Argument Received", `\`${args[1].toLowerCase()}\``)
-                            .setTimestamp();
-                        return message.channel.send(errorMessage);
+                        let errorMessage = new ErrorMessage({
+                            channel: message.channel,
+                            title: "Error, argument provided is not a number.",
+                            desc: "The value should be a number between `5` and `10`.",
+                            author: message.author
+                        }).displayClosest(argument);
+                        return errorMessage.sendMessage();
                     }
                     break;
+                case "bio":
+                    let bio = args.slice(1, args.length).join(" ");
+                    if (bio > 1024) {
+                        let errorMessage = new ErrorMessage({
+                            channel: message.channel,
+                            title: "Error, bio is too long.",
+                            desc: "Due to Discord's embed limitations, your bio may not be more than `1024` characters long.",
+                            author: message.author,
+                            fields: [{ name: "Amount of Characters in Bio", value: `\`${bio.length}\` (> 1024)` }]
+                        });
+                        return errorMessage.sendMessage();
+                    }
+
+                    settings[setting] = bio;
+                    infoMessage = new SuccessMessage({
+                        channel: message.channel,
+                        title: "Successfully updated your bio!",
+                        desc: bio,
+                        author: message.author,
+                        thumbnail: getFlag(argument)
+                    });
+                    break;
                 default:
-                    message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                    const errorScreen = new Discord.MessageEmbed()
-                        .setColor("#fc0303")
-                        .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                        .setTitle("Error, criteria selected not found.")
-                        .setDescription(`Here is a list of setting criterias. 
-									\`enablegraphics\` - Enable bot-generated graphics. Provide a boolean (\`true\` or \`false\`) after that.
-                                    \`senddailynotifs\` - Enable automated daily reward notifications. Provide a boolean (\`true\` or \`false\`) after that. Remember to enable \`DMs from server members\` for this to work.
-                                    \`filtercarlist\` - Enable cd-carlist filtering. Provide a boolean (\`true\` or \`false\`) after that.
-                                    \`filtergarage\` - Enable garage filtering. Provide a boolean (\`true\` or \`false\`) after that.
-                                    \`showbmcars\` - Enable black market car visibility. Provide a boolean (\`true\` or \`false\`) after that.
-                                    \`unitpreference\` - Choose a unit system of your liking. Provide a the name of a unit system (\`british\`, \`imperial\` or \`metric\`) after that.
-                                    \`sortingorder\` - Choose the order that items are sorted in. Provide either \`ascending\` or \`descending\` after that.
-                                    \`buttonstyle\` - Choose the order that items are sorted in. Provide either \`default\` or \`classic\` after that.
-                                    \`shortenedlists\` - Enable shortened lists in \`cd-garage\` and \`cd-carlist\`. Provide a boolean (\`true\` or \`false\`) after that.`)
-                        .setTimestamp();
-                    return message.channel.send(errorScreen);
+                    const errorMessage = new ErrorMessage({
+                        channel: message.channel,
+                        title: "Error, setting provided not found.",
+                        desc: `Here is a list of setting IDs. 
+                        \`disablegraphics\` - Disable bot-generated graphics. Provide a boolean (\`true\` or \`false\`) after that.
+                        \`senddailynotifs\` - Eable automated daily reward notifications. Provide a boolean (\`true\` or \`false\`) after that. Remember to enable \`DMs from server members\` for this to work.
+                        \`disablecarlistfilter\` - Disable cd-carlist filtering. Provide a boolean (\`true\` or \`false\`) after that.
+                        \`disablegaragefilter\` - Disable garage filtering. Provide a boolean (\`true\` or \`false\`) after that.
+                        \`hidebmcars\` - Disable black market car visibility. Provide a boolean (\`true\` or \`false\`) after that.
+                        \`unitpreference\` - Choose a unit system of your liking. Provide a the name of a unit system (\`british\`, \`imperial\` or \`metric\`) after that.
+                        \`sortorder\` - Choose the order that items are sorted in. Provide either \`ascending\` or \`descending\` after that.
+                        \`buttonstyle\` - Choose the order that items are sorted in. Provide either \`default\` or \`classic\` after that.
+                        \`listamount\` - Choose the amount of items listed per page. Provide a number between \`5\` and \`10\` after that.
+                        \`bio\` - Edits the text in your About Me.`,
+                        author: message.author
+                    }).displayClosest(setting);
+                    return errorMessage.sendMessage();
             }
-            await db.set(`acc${message.author.id}.settings`, settings);
-            message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-            return message.channel.send(infoScreen);
+
+            await profileModel.updateOne({ userID: message.author.id }, { settings });
+            return infoMessage.sendMessage();
+        }
+
+        function menu() {
+            const dropdownList = new MessageSelectMenu({
+                customId: "category_select",
+                placeholder: "Select a category...",
+                options: [
+                    {
+                        label: "Gameplay Settings",
+                        description: "Affects general gameplay.",
+                        value: "Gameplay"
+                    },
+                    {
+                        label: "Garage + List Settings",
+                        description: "Affects the garage and list commands.",
+                        value: "Garage + Lists"
+                    },
+                    {
+                        label: "Profile Settings",
+                        description: "Affects your profile.",
+                        value: "Profile"
+                    }
+                ]
+            });
+            let row = new MessageActionRow({ components: [dropdownList] });
+            let infoMessage = new InfoMessage({
+                channel: message.channel,
+                title: "Settings",
+                desc: "Choose a settings category to view.",
+                author: message.author
+            });
+
+            return { row, infoMessage };
         }
     }
 };
-//# sourceMappingURL=settings.js.map

@@ -1,8 +1,8 @@
 "use strict";
 
-const { MessageButton } = require("discord.js");
+const { MessageButton, MessageActionRow, MessageSelectMenu } = require("discord.js");
 const { ErrorMessage, InfoMessage } = require("./classes.js");
-const { defaultWaitTime, pageLimit, carSave } = require("./consts.js");
+const { defaultWaitTime, defaultPageLimit, carSave } = require("./consts.js");
 const bot = require("../../config.js");
 
 function rarityCheck(car, shortenedLists) {
@@ -152,66 +152,65 @@ function getButtons(type, buttonStyle) {
     }
 }
 
-function paginate(list, page) {
-    return list.slice((page - 1) * pageLimit, page * pageLimit);
+function paginate(list, page, pageLimit) {
+    let limit = pageLimit || defaultPageLimit;
+    return list.slice((page - 1) * limit, page * limit);
 }
 
 async function selectUpgrade(message, currentCar, amount, currentMessage, targetUpgrade) {
-    const filter = (response) => response.author.id === message.author.id;
+    const filter = (button) => button.user.id === message.author.id && button.customId === "upgrade_select";
     let isOne = Object.keys(currentCar.upgrades).filter(m => {
         if (targetUpgrade && ((m.includes("6") && m.includes("9")) || Number(targetUpgrade) <= Number(m))) return false;
         return currentCar.upgrades[m] >= amount;
     });
 
     if (isOne.length === 1) {
-        return isOne[0];
+        return [isOne[0]];
     }
     else if (isOne.length > 1) {
-        let upgradeList = "Type in any tune that is displayed here.\n";
+        const options = [];
         for (let upg of isOne) {
-            upgradeList += `\`${upg}\`, `;
+            options.push({
+                label: upg === "000" ? "Stock upgrade" : `${upg} upgrade`,
+                value: upg
+            });
         }
+        const dropdownList = new MessageSelectMenu({
+            customId: "upgrade_select",
+            placeholder: "Select a tune...",
+            options,
+        });
+        const row = new MessageActionRow({ components: [dropdownList] });
 
         const infoMessage = new InfoMessage({
             channel: message.channel,
-            title: "Choose either one of the original tunes below.",
-            desc: upgradeList.slice(0, -2),
+            title: `Choose one of the ${isOne.length} available tunes below.`,
             author: message.author,
             footer: `You have been given ${defaultWaitTime / 1000} seconds to consider.`
         });
-        const upgradeMessage = await infoMessage.sendMessage({ currentMessage });
+        currentMessage = await infoMessage.sendMessage({ currentMessage, buttons: [row] });
 
-        const collected = await message.channel.awaitMessages({
+        const selection = await message.channel.awaitMessageComponent({
             filter,
             max: 1,
             time: defaultWaitTime,
             errors: ["time"]
         });
         try {
-            collected.first().delete();
-            if (isOne.find(m => m === collected.first().content) === undefined) {
-                const errorMessage = new ErrorMessage({
-                    channel: message.channel,
-                    title: "Error, invalid selection provided.",
-                    desc: "It looks like your response was not part of the selection.",
-                    author: message.author
-                }).displayClosest(collected.first().content);
-                return errorMessage.sendMessage({ currentMessage: upgradeMessage });
-            }
-            else {
-                return collected.first().content;
-            }
+            await selection.deferUpdate();
+            await currentMessage.removeButtons();
         }
         catch (error) {
-            console.log(error);
             const cancelMessage = new InfoMessage({
                 channel: message.channel,
                 title: "Action cancelled automatically.",
-                desc: `I can only wait for your response for ${defaultWaitTime / 1000} seconds. Act quicker next time.`,
+                desc: `I can only wait for your response for ${defaultWaitTime / 1000} seconds. Please act quicker next time.`,
                 author: message.author
             });
-            return cancelMessage.sendMessage({ currentMessage: upgradeMessage });
+            await cancelMessage.sendMessage({ currentMessage });
+            return cancelMessage.removeButtons();
         }
+        return [selection.values[0], currentMessage];
     }
     else {
         const cancelMessage = new ErrorMessage({
@@ -245,6 +244,70 @@ function addCars(garage, cars) {
     return garage;
 }
 
+function updateHands(playerData, carID, origUpg, newUpg) {
+    if (playerData.hand?.carID === carID && playerData.hand?.upgrade === origUpg) {
+        if (newUpg === "remove") {
+            playerData.hand = { carID: "", upgrade: "000" };
+        }
+        else {
+            playerData.hand.upgrade = newUpg;
+        }
+    }
+    for (let i = 0; i < playerData.decks.length; i++) {
+        let x = playerData.decks[i].hand.findIndex(c => c.carID === carID && c.upgrade === origUpg);
+        if (x > -1) {
+            if (newUpg === "remove") {
+                playerData.decks[i].hand[x] = "";
+                playerData.decks[i].tunes[x] = "000";
+            }
+            else {
+                playerData.decks[i].tunes[x] = newUpg;
+            }
+        }
+    }
+    return playerData;
+}
+
+function sortCheck(message, sort, currentMessage) {
+    switch (sort) {
+        case "rq":
+        case "handling":
+        case "weight":
+        case "mra":
+        case "ola":
+        case "mostowned":
+            return sort;
+        case "topspeed":
+            return "topSpeed";
+        case "accel":
+            return "0to60";
+        default:
+            const errorMessage = new ErrorMessage({
+                channel: message.channel,
+                title: "Error, sorting criteria not found.",
+                desc: `Here is a list of sorting criterias. 
+                \`-s topspeed\` - Sort by top speed. 
+                \`-s accel\` - Sort by acceleration. 
+                \`-s handling\` - Sort by handling. 
+                \`-s weight\` - Sort by weight. 
+                \`-s mra\` - Sort by mid-range acceleraion. 
+                \`-s ola\` - Sort by off-the-line acceleration.
+                \`-s mostowned\` - Sort by how many copies of the car owned.`,
+                author: message.author
+            }).displayClosest(sort);
+            return errorMessage.sendMessage({ currentMessage });
+    }
+}
+
+function getFlag(code) {
+    switch (code) {
+        case "YU":
+            return "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Flag_of_Yugoslavia_%281946-1992%29.svg/1000px-Flag_of_Yugoslavia_%281946-1992%29.svg.png";
+        default:
+            return `https://getflags.net/img1000/${code.toLowerCase()}.png`;
+    }
+}
+
 module.exports = {
     rarityCheck,
     carNameGen,
@@ -253,5 +316,8 @@ module.exports = {
     paginate,
     selectUpgrade,
     calcTotal,
-    addCars
+    addCars,
+    updateHands,
+    sortCheck,
+    getFlag
 };

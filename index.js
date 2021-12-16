@@ -11,7 +11,8 @@ const bot = require("./config.js");
 const profileModel = require("./models/profileSchema.js");
 const prefix = bot.devMode ? process.env.DEV_PREFIX : process.env.BOT_PREFIX;
 const token = bot.devMode ? process.env.DEV_TOKEN : process.env.BOT_TOKEN;
-const allowedCommands = ["carinfo.js", "calculate.js", "garage.js", "ping.js", "reload.js", "statistics.js", "addcar.js", "removecar.js", "addmoney.js", "removemoney.js", "carlist.js", "testpack.js", "trackinfo.js", "packinfo.js", "changetune.js", "upgrade.js", "fuse.js", "sell.js", "help.js"];
+// this is for testing purposes, the line below will be deleted once everything is complete
+const allowedCommands = ["carinfo.js", "calculate.js", "garage.js", "ping.js", "reload.js", "statistics.js", "addcar.js", "removecar.js", "addmoney.js", "removemoney.js", "carlist.js", "testpack.js", "trackinfo.js", "packinfo.js", "changetune.js", "upgrade.js", "fuse.js", "sell.js", "help.js", "filter.js", "settings.js", "sethand.js"];
 const commandFiles = readdirSync("./commands").filter(file => file.endsWith(".js"));
 
 commandFiles.forEach(function (file) {
@@ -158,8 +159,8 @@ async function processCommand(message) {
     if (command.args > 0 && args.length < command.args) {
         const errorMessage = new ErrorMessage({
             channel: message.channel,
-            title: "Error, arguments provided insufficient or missing.",
-            desc: `Here's the correct syntax: \`cd-${command.name} ${command.usage}\``,
+            title: "Error, arguments provided insufficient.",
+            desc: `Please refer to the command's syntax by running \`cd-help ${command.name}\``,
             author: message.author
         });
         return errorMessage.sendMessage();
@@ -245,3 +246,24 @@ function accessDenied(message, roleID) {
     });
     return errorMessage.sendMessage();
 }
+
+//automatic database backup system
+const { spawn } = require("child_process");
+const { schedule } = require("node-cron");
+schedule("59 23 * * *", () => {
+    const backupProcess = spawn("mongodump", [
+        `--uri=${process.env.MONGO_URI}`,
+        "--gzip"
+    ]);
+    backupProcess.on("exit", (code, signal) => {
+        if (code) {
+            console.error("database backup process exited with code ", code);
+        }
+        else if (signal) {
+            console.error("database backup process killed with signal ", signal);
+        }
+        else {
+            console.log("database backup success!");
+        }
+    });
+});

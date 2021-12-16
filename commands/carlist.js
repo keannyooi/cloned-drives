@@ -3,7 +3,8 @@
 const fs = require("fs");
 const carFiles = fs.readdirSync("./commands/cars").filter(file => file.endsWith('.json'));
 const { ErrorMessage, InfoMessage } = require("./sharedfiles/classes.js");
-const { carNameGen, rarityCheck, calcTotal } = require("./sharedfiles/primary.js");
+const { defaultPageLimit } = require("./sharedfiles/consts.js");
+const { carNameGen, rarityCheck, calcTotal, sortCheck } = require("./sharedfiles/primary.js");
 const { sortCars, filterCheck, listUpdate } = require("./sharedfiles/secondary.js");
 const profileModel = require("../models/profileSchema.js");
 
@@ -35,49 +36,19 @@ module.exports = {
         }
 
         const playerData = await profileModel.findOne({ userID: message.author.id });
-        const filterEnabled = playerData.filter !== undefined && playerData.settings.filtercarlist === true;
-        if (filterEnabled) {
-            list.filter(c => filterCheck(c, playerData.filter));
+        if (!playerData.settings.disablecarlistfilter) {
+            list = list.filter(car => filterCheck(car, playerData.filter));
         }
         const ownedCars = list.filter(function (carID) {
             return playerData.garage.some(part => carID.includes(part.carID));
         });
 
         if (args[args.length - 2] === "-s") {
-            sort = args[args.length - 1].toLowerCase();
-            switch (sort) {
-                case "rq":
-                case "handling":
-                case "weight":
-                case "mra":
-                case "ola":
-                case "mostowned":
-                    break;
-                case "topspeed":
-                    sort = "topSpeed";
-                    break;
-                case "accel":
-                    sort = "0to60";
-                    break;
-                default:
-                    const errorMessage = new ErrorMessage({
-                        channel: message.channel,
-                        title: "Error, sorting criteria not found.",
-                        desc: `Here is a list of sorting criterias. 
-                        \`-s topspeed\` - Sort by top speed. 
-                        \`-s accel\` - Sort by acceleration. 
-                        \`-s handling\` - Sort by handling. 
-                        \`-s weight\` - Sort by weight. 
-                        \`-s mra\` - Sort by mid-range acceleraion. 
-                        \`-s ola\` - Sort by off-the-line acceleration.
-                        \`-s mostowned\` - Sort by how many copies of the car owned.`,
-                        author: message.author
-                    }).displayClosest(sort);
-                    return errorMessage.sendMessage();
-            }
+            sort = sortCheck(message, args[args.length - 1].toLowerCase());
+            if (typeof sort !== "string") return;
         }
 
-        const totalPages = Math.ceil(list.length / 10);
+        const totalPages = Math.ceil(list.length / (playerData.settings.listamount || defaultPageLimit));
         if (page < 1 || totalPages < page) {
             const errorMessage = new ErrorMessage({
                 channel: message.channel,
@@ -90,13 +61,13 @@ module.exports = {
         list = sortCars(list, sort, playerData.settings.sortorder, playerData.garage);
 
         try {
-            listUpdate(list, page, listDisplay, playerData.settings.buttonstyle);
+            listUpdate(list, page, totalPages, listDisplay, playerData.settings);
         }
         catch (error) {
             throw error;
         }
 
-        function listDisplay(section, page, totalPages, currentMessage) {
+        function listDisplay(section, page, totalPages) {
             let carList = "", valueList = "";
             for (let i = 0; i < section.length; i++) {
                 carList += `**${i + 1}.** `;
@@ -105,7 +76,7 @@ module.exports = {
                 let currentCar = require(`./cars/${section[i]}`);
                 let rarity = rarityCheck(currentCar, playerData.settings.shortenedlists);
                 let findCar = playerData.garage.find(c => c.carID === section[i].slice(0, 6));
-                carList += `${carNameGen({ currentCar, rarity, shortenedLists: playerData.settings.shortenedlists })}`;
+                carList += carNameGen({ currentCar, rarity, shortenedLists: playerData.settings.shortenedlists });
                 carList += findCar ? " ✅\n" : "\n";
 
                 if (sort === "mostowned") {
@@ -120,15 +91,16 @@ module.exports = {
                     channel: message.channel,
                     title: "This page has too many characters and thus cannot be shown due to Discord's embed limitations.",
                     desc: "Try turning on `Shortened Lists` in `cd-settings`.",
-                    author: message.author
+                    author: message.author,
+                    fields: [{ name: `Amount of Characters in Page ${page}`, value: `\`${carList.length}\` (> 1024)` }]
                 });
-                return errorMessage.sendMessage({ currentMessage });
+                return errorMessage;
             }
 
             const infoMessage = new InfoMessage({
                 channel: message.channel,
                 title: `List of All Cars in Cloned Drives (${ownedCars.length}/${list.length} Cars Owned)`,
-                desc: `Current Sorting Criteria: \`${sort}\`, Filter Activated: \`${(filterEnabled)}\``,
+                desc: `Current Sorting Criteria: \`${sort}\`, Filter Activated: \`${Object.keys(playerData.filter).length > 0 && !playerData.settings.disablecarlistfilter}\``,
                 author: message.author,
                 thumbnail: message.author.displayAvatarURL({ format: "png", dynamic: true }),
                 fields: [{ name: "Car", value: carList, inline: true }],

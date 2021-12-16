@@ -24,9 +24,9 @@ module.exports = {
         });
 
         new Promise(resolve => resolve(search(message, query, packs, "pack")))
-            .then(async (hmm) => {
-                if (!Array.isArray(hmm)) return;
-                let [result, currentMessage] = hmm;
+            .then(async (response) => {
+                if (!Array.isArray(response)) return;
+                let [result, currentMessage] = response;
                 try {
                     const playerData = await profileModel.findOne({ userID: message.author.id });
                     const moneyEmoji = bot.emojis.cache.get("726017235826770021");

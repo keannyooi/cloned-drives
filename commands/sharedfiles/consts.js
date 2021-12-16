@@ -20,7 +20,7 @@ const defaultWaitTime = 60000;
 const defaultChoiceTime = 10000;
 const defaultQTETime = 5000;
 
-const pageLimit = 10;
+const defaultPageLimit = 10;
 
 module.exports = {
     carSave,
@@ -28,5 +28,5 @@ module.exports = {
     defaultWaitTime,
     defaultQTETime,
     defaultChoiceTime,
-    pageLimit
+    defaultPageLimit
 }

@@ -1,5 +1,6 @@
 "use strict";
 
+const { calcTotal } = require("./sharedfiles/primary.js");
 const { searchUser } = require("./sharedfiles/secondary.js");
 const profileModel = require("../models/profileSchema.js");
 const { InfoMessage, ErrorMessage } = require("./sharedfiles/classes.js");
@@ -64,7 +65,7 @@ module.exports = {
             let totalCars = 0, maxedCars = 0;
             playerData.garage.forEach(car => {
                 maxedCars += (car.upgrades["996"] + car.upgrades["969"] + car.upgrades["699"]);
-                totalCars += (car.upgrades["000"] + car.upgrades["333"] + car.upgrades["666"] + maxedCars);
+                totalCars += calcTotal(car);
             });
 
             const MCpercentage = maxedCars / totalCars * 100;
@@ -80,7 +81,8 @@ module.exports = {
                     { name: "Trophies", value: `${trophyEmoji}${playerData.trophies.toString() ?? 0}`, inline: true },
                     { name: "Total Cars in Garage", value: totalCars.toString(), inline: true },
                     { name: "Total Maxed Cars in Garage", value: maxedCars.toString(), inline: true },
-                    { name: "Maxed Car Percentage", value: `${MCpercentage.toFixed(2)}%`, inline: true }
+                    { name: "Maxed Car Percentage", value: `${MCpercentage.toFixed(2)}%`, inline: true },
+                    { name: "About Me", value: playerData.settings.bio ?? "None", inline: true }
                 ]
             });
             return infoMessage.sendMessage({ currentMessage });

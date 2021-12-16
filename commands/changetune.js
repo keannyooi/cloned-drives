@@ -1,7 +1,7 @@
 "use strict";
 
 const { SuccessMessage, ErrorMessage } = require("./sharedfiles/classes.js");
-const { carNameGen, selectUpgrade } = require("./sharedfiles/primary.js");
+const { carNameGen, selectUpgrade, updateHands } = require("./sharedfiles/primary.js");
 const { searchGarage, searchUser } = require("./sharedfiles/secondary.js");
 const { carSave } = require("./sharedfiles/consts.js");
 const profileModel = require("../models/profileSchema.js");
@@ -68,7 +68,7 @@ module.exports = {
                 searchByID = true;
             }
             else {
-                query = args.slice(startFrom, args.length).map(i => i.toLowerCase());
+                query = args.slice(startFrom, args.length - 1).map(i => i.toLowerCase());
             }
 
             new Promise(resolve => resolve(searchGarage({
@@ -93,20 +93,15 @@ module.exports = {
 
         async function changeTune(user, currentCar, playerData, currentMessage) {
             new Promise(resolve => resolve(selectUpgrade(message, currentCar, 1, currentMessage)))
-                .then(async (origUpgrade) => {
-                    if (isNaN(origUpgrade)) return;
+                .then(async (response) => {
+                    if (!Array.isArray(response)) return;
+                    const [origUpgrade, currentMessage] = response;
                     let upgrade = args[args.length - 1];
-                    const car = require(`./cars/${currentCar.carID}`);
                     currentCar.upgrades[upgrade]++;
                     currentCar.upgrades[origUpgrade]--;
-
-                    if (playerData.hand?.carID === currentCar.carID) {
-                        playerData.upgrade = upgrade;
-                    }
-                    for (let i = 0; i < playerData.decks.length; i++) {
-                        let x = playerData.decks[i].hand.findIndex(c => c.carID === currentCar.carID && c.upgrade === upgrade);
-                        if (x > -1) playerData.decks[i].tunes[x] = upgrade;
-                    }
+                    updateHands(playerData, currentCar.carID, origUpgrade, upgrade);
+                    
+                    const car = require(`./cars/${currentCar.carID}`);
                     await profileModel.updateOne({ userID: user.id }, {
                         garage: playerData.garage,
                         hand: playerData.hand,

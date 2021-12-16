@@ -4,7 +4,7 @@ const { MessageActionRow } = require("discord.js");
 const Canvas = require("canvas");
 const { rarityCheck, carNameGen, getButtons, paginate, calcTotal } = require("./primary.js");
 const { ErrorMessage, InfoMessage } = require("./classes.js");
-const { defaultWaitTime, defaultChoiceTime, pageLimit } = require("./consts.js");
+const { defaultWaitTime, defaultChoiceTime, defaultPageLimit } = require("./consts.js");
 const fs = require("fs");
 const carFiles = fs.readdirSync("./commands/cars").filter(file => file.endsWith(".json"));
 
@@ -16,7 +16,7 @@ async function processResults(message, searchResults, listGen, type, currentMess
 
     if (size > 1) {
         const list = listGen();
-        if (list.length > 2048) {
+        if (list.length > 4096) {
             const errorMessage = new ErrorMessage({
                 channel: message.channel,
                 title: "Due to Discord's embed limitations, the bot isn't able to show the full list of search results.",
@@ -494,14 +494,14 @@ function sortCars(list, sort, order, garage) {
     });
 }
 
-async function listUpdate(list, page, listDisplay, buttonStyle, currentMessage) {
-    const totalPages = Math.ceil(list.length / 10);
-    let section = paginate(list, page);
-    let { firstPage, prevPage, nextPage, lastPage } = getButtons("menu", buttonStyle);
-    let embed = listDisplay(section, page, totalPages, currentMessage);
+async function listUpdate(list, page, totalPages, listDisplay, settings, currentMessage) {
+    const pageLimit = settings.listamount || defaultPageLimit;
     const filter = button => button.user.id === embed.authorID;
+    let section = paginate(list, page, settings.listamount);
+    let { firstPage, prevPage, nextPage, lastPage } = getButtons("menu", settings.buttonstyle);
+    let embed = listDisplay(section, page, totalPages);
 
-    if (list.length <= 10) {
+    if (list.length <= pageLimit) {
         firstPage.setDisabled(true);
         prevPage.setDisabled(true);
         nextPage.setDisabled(true);
@@ -548,8 +548,8 @@ async function listUpdate(list, page, listDisplay, buttonStyle, currentMessage) 
                 break;
         }
 
-        section = paginate(list, page);
-        if (list.length <= 10) {
+        section = paginate(list, page, settings.listamount);
+        if (list.length <= pageLimit) {
             firstPage.setDisabled(true);
             prevPage.setDisabled(true);
             nextPage.setDisabled(true);
@@ -575,9 +575,8 @@ async function listUpdate(list, page, listDisplay, buttonStyle, currentMessage) 
         }
 
         row = new MessageActionRow({ components: [firstPage, prevPage, nextPage, lastPage] });
-        embed = listDisplay(section, page, totalPages, listMessage);
+        embed = listDisplay(section, page, totalPages, currentMessage);
         listMessage = await embed.sendMessage({ buttons: [row], currentMessage: listMessage });
-
         await button.deferUpdate();
     });
     collector.on("end", () => {
@@ -586,59 +585,71 @@ async function listUpdate(list, page, listDisplay, buttonStyle, currentMessage) 
 }
 
 function filterCheck(car, filter, garage) {
-    let currentCar = typeof car === "string" ? require(`../cars/${car}`) : require(`../cars/${carFiles.find(f => f.includes(car.carID))}`);
+    let passed = true;
+    let file = typeof car === "string" ? car : carFiles.find(f => f.includes(car.carID));
+    let currentCar = require(`../cars/${file}`)
     for (const [key, value] of Object.entries(filter)) {
         switch (typeof value) {
             case "object":
                 if (Array.isArray(value)) {
                     if (Array.isArray(currentCar[key])) {
                         let obj = {};
-                        currentCar[key].forEach((tag, index) => obj[tag.toLowerCase()] = index);
-                        return value.every(tagFilter => obj[tagFilter] !== undefined);
+                        currentCar[key].forEach((item, index) => obj[item.toLowerCase()] = index);
+                        if (value.findIndex(tagFilter => obj[tagFilter] !== undefined) === -1) passed = false;
                     }
                     else {
-                        return value.includes(currentCar[key].toLowerCase());
+                        let compareValue = currentCar[key].toLowerCase();
+                        if (value.findIndex(tagFilter => tagFilter === compareValue) === -1) passed = false;
                     }
                 }
                 else {
-                    return currentCar[key] >= value.start && currentCar[key] <= value.end;
+                    if (currentCar[key] < value.start || currentCar[key] > value.end) passed = false;
                 }
+                break;
             case "string":
                 if (key === "search") {
-                    return carNameGen({ currentCar: currentCar }).toLowerCase().includes(value);
+                    if (!carNameGen({ currentCar }).toLowerCase().includes(value)) passed = false;
                 }
                 else {
-                    return currentCar[key].toLowerCase() === value;
+                    if (currentCar[key].toLowerCase() !== value) passed = false;
                 }
+                break;
             case "boolean":
                 switch (key) {
                     case "isPrize":
-                        return currentCar[key] === value;
+                        if (currentCar[key] !== value) passed = false;
+                        break;
                     case "isStock":
-                        return (car.upgrades["000"] > 0) === value;
+                        if ((car.upgrades["000"] > 0) !== value) passed = false;
+                        break;
                     case "isUpgraded":
-                        return (car.upgrades["333"] + car.upgrades["666"] + car.upgrades["996"] + car.upgrades["969"] + car.upgrades["699"] > 0) === value;
+                        if ((car.upgrades["333"] + car.upgrades["666"] + car.upgrades["996"] + car.upgrades["969"] + car.upgrades["699"] > 0) !== value) passed = false;
+                        break;
                     case "isMaxed":
-                        return (car.upgrades["996"] + car.upgrades["969"] + car.upgrades["699"] > 0) === value;
+                        if ((car.upgrades["996"] + car.upgrades["969"] + car.upgrades["699"] > 0) !== value) passed = false;
+                        break;
                     case "isOwned":
-                        return garage ? garage.find(c => c.carID === car.carID) : true;
+                        if (!(garage ? garage.find(c => c.carID === car.carID) : true)) passed = false;
+                        break;
                     default:
                         break;
                 }
+                break;
             default:
-                return;
+                break;
         }
     }
+    return passed;
 }
 
 async function confirm(message, confirmationMessage, acceptedFunction, buttonStyle, currentMessage) {
-    const buttonFilter = (button) => button.user.id === message.author.id;
+    const filter = (button) => button.user.id === message.author.id;
     const { yse, nop } = getButtons("choice", buttonStyle);
     const row = new MessageActionRow({ components: [yse, nop] });
     const reactionMessage = await confirmationMessage.sendMessage({ currentMessage, buttons: [row] });
     let processed = false;
 
-    const collector = message.channel.createMessageComponentCollector({ filter: buttonFilter, time: defaultChoiceTime });
+    const collector = message.channel.createMessageComponentCollector({ filter, time: defaultChoiceTime });
     collector.on("collect", async (button) => {
         if (!processed) {
             processed = true;
@@ -669,7 +680,7 @@ async function confirm(message, confirmationMessage, acceptedFunction, buttonSty
             const cancelMessage = new InfoMessage({
                 channel: message.channel,
                 title: "Action cancelled automatically.",
-                desc: "Please act quicker next time.",
+                desc: `I can only wait for you for ${defaultChoiceTime / 1000} seconds. Please act quicker next time.`,
                 author: message.author,
             });
             await cancelMessage.sendMessage({ currentMessage: reactionMessage });

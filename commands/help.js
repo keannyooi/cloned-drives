@@ -86,8 +86,6 @@ module.exports = {
                     break;
             }
             
-            let aliases = command.aliases ? command.aliases.join(", ") : "None";
-            let cooldown = command.cooldown ? command.cooldown : 1;
             let syntax = "";
             if (typeof command.usage === "object") {
                 for (let i = 0; i < command.usage.length; i++) {
@@ -104,9 +102,9 @@ module.exports = {
                 desc: "Info about this command:",
                 author: message.author,
                 fields: [
-                    { name: "Aliases", value: aliases, inline: true },
+                    { name: "Aliases", value: command.aliases ? command.aliases.join(", ") : "None", inline: true },
                     { name: "Category", value: command.category, inline: true },
-                    { name: "Cooldown", value: `${cooldown} second(s)`, inline: true },
+                    { name: "Cooldown", value: `${command.cooldown ?? 1} second(s)`, inline: true },
                     { name: "Syntax", value: syntax },
                     { name: "Description", value: command.description }
                 ],

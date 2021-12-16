@@ -1,7 +1,7 @@
 "use strict";
 
 const { SuccessMessage, InfoMessage, ErrorMessage } = require("./sharedfiles/classes.js");
-const { carNameGen, selectUpgrade } = require("./sharedfiles/primary.js");
+const { carNameGen, selectUpgrade, updateHands } = require("./sharedfiles/primary.js");
 const { searchGarage, confirm } = require("./sharedfiles/secondary.js");
 const { carSave, defaultChoiceTime } = require("./sharedfiles/consts.js");
 const profileModel = require("../models/profileSchema.js");
@@ -42,7 +42,7 @@ module.exports = {
             searchByID = true;
         }
         else {
-            query = args.slice(startFrom, args.length).map(i => i.toLowerCase());
+            query = args.slice(startFrom, args.length - 1).map(i => i.toLowerCase());
         }
 
         new Promise(resolve => resolve(searchGarage({
@@ -66,8 +66,9 @@ module.exports = {
         async function upgradeCar(currentCar, playerData, currentMessage) {
             let upgrade = args[args.length - 1];
             new Promise(resolve => resolve(selectUpgrade(message, currentCar, 1, currentMessage, upgrade)))
-                .then(async (origUpgrade) => {
-                    if (isNaN(origUpgrade)) return;
+                .then(async (response) => {
+                    if (!Array.isArray(response)) return;
+                    const [origUpgrade, currentMessage] = response;
                     try {
                         const moneyEmoji = bot.emojis.cache.get("726017235826770021");
                         const fuseEmoji = bot.emojis.cache.get("726018658635218955");
@@ -89,13 +90,7 @@ module.exports = {
                             async function acceptedFunction(currentMessage) {
                                 currentCar.upgrades[upgrade]++;
                                 currentCar.upgrades[origUpgrade]--;
-                                if (playerData.hand?.carID === currentCar.carID) {
-                                    playerData.upgrade = upgrade;
-                                }
-                                for (let i = 0; i < playerData.decks.length; i++) {
-                                    let x = playerData.decks[i].hand.findIndex(c => c.carID === currentCar.carID && c.upgrade === upgrade);
-                                    if (x > -1) playerData.decks[i].tunes[x] = upgrade;
-                                }
+                                updateHands(playerData, currentCar.carID, origUpgrade, upgrade);
 
                                 let moneyBalance = playerData.money - moneyLimit, fuseBalance = playerData.fuseTokens - fuseTokenLimit;
                                 await profileModel.updateOne({ userID: message.author.id }, {

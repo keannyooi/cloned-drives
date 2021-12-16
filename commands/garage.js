@@ -1,7 +1,8 @@
 "use strict";
 
 const { ErrorMessage, InfoMessage } = require("./sharedfiles/classes.js");
-const { carNameGen, rarityCheck, calcTotal } = require("./sharedfiles/primary.js");
+const { defaultPageLimit } = require("./sharedfiles/consts.js");
+const { carNameGen, rarityCheck, calcTotal, sortCheck } = require("./sharedfiles/primary.js");
 const { searchUser, sortCars, filterCheck, listUpdate } = require("./sharedfiles/secondary.js");
 const profileModel = require("../models/profileSchema.js");
 
@@ -91,42 +92,14 @@ module.exports = {
         async function loop(user, page, sort, currentMessage) {
             const playerData = await profileModel.findOne({ userID: user.id });
             let garage = playerData.garage;
-            if (Object.keys(playerData.filter).length > 0 && playerData.settings.filtergarage === true) {
-                garage.filter(car => filterCheck(car, playerData.filter));
+            if (!playerData.settings.disablegaragefilter) {
+                garage = garage.filter(car => filterCheck(car, playerData.filter));
             }
 
-            switch (sort) {
-                case "rq":
-                case "handling":
-                case "weight":
-                case "mra":
-                case "ola":
-                case "mostowned":
-                    break;
-                case "topspeed":
-                    sort = "topSpeed";
-                    break;
-                case "accel":
-                    sort = "0to60";
-                    break;
-                default:
-                    const errorMessage = new ErrorMessage({
-                        channel: message.channel,
-                        title: "Error, sorting criteria not found.",
-                        desc: `Here is a list of sorting criterias. 
-                        \`-s topspeed\` - Sort by top speed. 
-                        \`-s accel\` - Sort by acceleration. 
-                        \`-s handling\` - Sort by handling. 
-                        \`-s weight\` - Sort by weight. 
-                        \`-s mra\` - Sort by mid-range acceleraion. 
-                        \`-s ola\` - Sort by off-the-line acceleration.
-                        \`-s mostowned\` - Sort by how many copies of the car owned.`,
-                        author: message.author
-                    }).displayClosest(sort);
-                    return errorMessage.sendMessage({ currentMessage });
-            }
+            sort = sortCheck(message, sort, currentMessage);
+            if (typeof sort !== "string") return;
 
-            const totalPages = Math.ceil(garage.length / 10);
+            const totalPages = Math.ceil(garage.length / (playerData.settings.listamount || defaultPageLimit));
             if (page < 1 || totalPages < page) {
                 const errorMessage = new ErrorMessage({
                     channel: message.channel,
@@ -139,13 +112,13 @@ module.exports = {
             garage = sortCars(garage, sort, playerData.settings.sortorder);
 
             try {
-                listUpdate(garage, page, listDisplay, playerData.settings.buttonstyle, currentMessage);
+                listUpdate(garage, page, totalPages, listDisplay, playerData.settings, currentMessage);
             }
             catch (error) {
                 throw error;
             }
 
-            function listDisplay(section, page, totalPages, currentMessage) {
+            function listDisplay(section, page, totalPages) {
                 let garageList = "", amountList = "", valueList = "";
                 for (let i = 0; i < section.length; i++) {
                     garageList += `**${i + 1}.** `;
@@ -194,15 +167,16 @@ module.exports = {
                         channel: message.channel,
                         title: "This page has too many characters and thus cannot be shown due to Discord's embed limitations.",
                         desc: "Try turning on `Shortened Lists` in `cd-settings`.",
-                        author: message.author
+                        author: message.author,
+                        fields: [{ name: `Amount of Characters in Page ${page}`, value: `\`${garageList.length}\` (> 1024)` }]
                     });
-                    return errorMessage.sendMessage({ currentMessage });
+                    return errorMessage;
                 }
 
                 const infoMessage = new InfoMessage({
                     channel: message.channel,
                     title: `${user.username}'s Garage`,
-                    desc: `Current Sorting Criteria: \`${sort}\`, Filter Activated: \`${playerData.filter !== undefined && playerData.settings.filtergarage === true}\``,
+                    desc: `Current Sorting Criteria: \`${sort}\`, Filter Activated: \`${Object.keys(playerData.filter).length > 0 && !playerData.settings.disablegaragefilter}\``,
                     author: message.author,
                     thumbnail: user.displayAvatarURL({ format: "png", dynamic: true }),
                     fields: [
