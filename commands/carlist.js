@@ -74,9 +74,9 @@ module.exports = {
                 valueList += `**${i + 1}.** `;
 
                 let currentCar = require(`./cars/${section[i]}`);
-                let rarity = rarityCheck(currentCar, playerData.settings.shortenedlists);
+                let rarity = rarityCheck(currentCar);
                 let findCar = playerData.garage.find(c => c.carID === section[i].slice(0, 6));
-                carList += carNameGen({ currentCar, rarity, shortenedLists: playerData.settings.shortenedlists });
+                carList += carNameGen({ currentCar, rarity });
                 carList += findCar ? " ✅\n" : "\n";
 
                 if (sort === "mostowned") {

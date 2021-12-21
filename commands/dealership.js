@@ -41,7 +41,7 @@ module.exports = {
             let attachment, promises, cucked = false;
             if (settings.enablegraphics) {
                 try {
-                    const background = await Canvas.loadImage("https://cdn.discordapp.com/attachments/715771423779455077/799579880819785778/unknown.png");
+                    const background = await Canvas.loadImage("https://cdn.discordapp.com/attachments/716917404868935691/801292983496474624/test.png");
                     ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
                     const cards = catalog.map(car => {
                         let currentCar = require(`./cars/${car.carFile}`);

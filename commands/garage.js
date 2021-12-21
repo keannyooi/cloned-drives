@@ -127,8 +127,8 @@ module.exports = {
 
                     let car = section[i];
                     let currentCar = require(`./cars/${car.carID}.json`);
-                    let rarity = rarityCheck(currentCar, playerData.settings.shortenedlists);
-                    garageList += carNameGen({ currentCar, rarity, shortenedLists: playerData.settings.shortenedlists });
+                    let rarity = rarityCheck(currentCar);
+                    garageList += carNameGen({ currentCar, rarity });
 
                     for (let [upgrade, value] of Object.entries(car.upgrades)) {
                         if (value > 0) {

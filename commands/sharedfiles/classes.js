@@ -27,23 +27,32 @@ class BotMessage {
         this.channel = args.channel;
         this.authorID = args.author.id;
     }
+
     async sendMessage(args) {
         let currentMessage = args?.currentMessage?.message;
-        let contents = { embeds: [this.embed], components: args?.buttons ?? [] };
+        let contents = { embeds: [this.embed], components: args?.buttons ?? [], files: null };
+        if (args?.attachment) {
+            contents.files = [args?.attachment];
+            this.embed.setImage(`attachment://${args?.attachment["name"]}`);
+        }
+
         if (!args?.preserve) {
             bot.deleteID(this.authorID);
         }
         this.message = currentMessage ? await currentMessage.edit(contents) : await this.channel.send(contents);
         return this;
     }
+
     addFields(fields) {
         this.embed.addFields(fields);
         return this;
     }
+
     setFooter(footer) {
         this.embed.setFooter(footer);
         return this;
     }
+
     removeButtons() {
         return this.message.edit({ embeds: [this.embed], components: [] });
     }
@@ -61,6 +70,7 @@ class ErrorMessage extends BotMessage {
         super(args);
         this.embed.setColor("#fc0303");
     }
+
     displayClosest(received, checkArray) {
         this.embed.addField("Value Received", `\`${received}\``, true);
         if (checkArray) {
@@ -88,6 +98,7 @@ class BotError {
             this.link = `https://discord.com/channels/${args.guild.id}/${args.channel.id}/${args.message.id}`;
         }
     }
+
     async sendReport() {
         const guild = await bot.guilds.fetch("711769157078876305");
         const bugReportsChannel = await guild.channels.fetch("750304569422250064");

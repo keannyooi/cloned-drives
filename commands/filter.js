@@ -155,11 +155,11 @@ module.exports = {
                         fields: [{ name: "Current Value", value: `\`${filter[criteria]}\`` }]
                     });
                     break;
-                case "isprize":
-                case "isstock":
-                case "isupgraded":
-                case "ismaxed":
-                case "isowned":
+                case "isPrize":
+                case "isStock":
+                case "isUpgraded":
+                case "isMaxed":
+                case "isOwned":
                     try {
                         filter[criteria] = JSON.parse(arg1);
                         infoMessage = new SuccessMessage({

@@ -25,9 +25,9 @@ module.exports = {
         }
 
         new Promise(resolve => resolve(search(message, query, carFiles, searchBy)))
-            .then(async (hmm) => {
-                if (!Array.isArray(hmm)) return;
-                let [result, currentMessage] = hmm;
+            .then(async (response) => {
+                if (!Array.isArray(response)) return;
+                let [result, currentMessage] = response;
                 try {
                     await displayInfo(result, currentMessage);
                 }
@@ -40,12 +40,9 @@ module.exports = {
             const playerData = await profileModel.findOne({ userID: message.author.id });
             let currentCar = require(`./cars/${car}`);
             const rarity = rarityCheck(currentCar);
-            let tags = "None", description = "None", mra = "N/A", ola = "N/A";
+            let description = "None", mra = "N/A", ola = "N/A";
             let topSpeed = `${currentCar["topSpeed"]}MPH`, accel = "N/A", weight = `${currentCar["weight"]}kg`;
 
-            if (currentCar["tags"].length > 0) {
-                tags = currentCar["tags"].join(", ");
-            }
             if (currentCar["description"].length > 0) {
                 description = currentCar["description"];
             }
@@ -91,7 +88,7 @@ module.exports = {
                     { name: "Fuel Type", value: currentCar["fuelType"], inline: true },
                     { name: "TCS Enabled?", value: currentCar["tcs"].toString(), inline: true },
                     { name: "ABS Enabled?", value: currentCar["abs"].toString(), inline: true },
-                    { name: "Tags", value: tags, inline: true },
+                    { name: "Tags", value: currentCar["tags"].join(", ") || "None", inline: true },
                     { name: "Collection", value: currentCar["collection"] || "None", inline: true },
                     { name: "Mid-Range Acceleration (MRA)", value: mra, inline: true },
                     { name: "Off-the-Line Acceleration (OLA)", value: ola, inline: true },

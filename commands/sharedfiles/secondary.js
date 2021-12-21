@@ -2,7 +2,7 @@
 
 const { MessageActionRow } = require("discord.js");
 const Canvas = require("canvas");
-const { rarityCheck, carNameGen, getButtons, paginate, calcTotal } = require("./primary.js");
+const { rarityCheck, carNameGen, getButtons, paginate, calcTotal, unbritish } = require("./primary.js");
 const { ErrorMessage, InfoMessage } = require("./classes.js");
 const { defaultWaitTime, defaultChoiceTime, defaultPageLimit } = require("./consts.js");
 const fs = require("fs");
@@ -33,7 +33,7 @@ async function processResults(message, searchResults, listGen, type, currentMess
             author: message.author,
             footer: `You have been given ${defaultWaitTime / 1000} seconds to decide.`
         });
-        currentMessage = await infoScreen.sendMessage({ currentMessage });
+        currentMessage = await infoScreen.sendMessage({ currentMessage, preserve: true });
 
         try {
             const collected = await message.channel.awaitMessages({
@@ -43,25 +43,26 @@ async function processResults(message, searchResults, listGen, type, currentMess
                 errors: ["time"]
             });
 
+            let selection = collected.first().content;
             if (!message.channel.type.includes("DM")) {
                 collected.first().delete();
             }
-            if (isNaN(collected.first().content) || parseInt(collected.first().content) > size || parseInt(collected.first().content) < 1) {
+            if (isNaN(selection) || parseInt(selection) > size || parseInt(selection) < 1) {
                 const errorMessage = new ErrorMessage({
                     channel: message.channel,
                     title: "Error, invalid integer provided.",
                     desc: `Your response was not a number between \`1\` and \`${size}\`.`,
                     author: message.author
-                }).displayClosest(collected.first().content);
+                }).displayClosest(selection);
                 return errorMessage.sendMessage({ currentMessage });
             }
             else {
                 let result;
                 if (Array.isArray(searchResults)) {
-                    result = searchResults[parseInt(collected.first().content) - 1];
+                    result = searchResults[parseInt(selection) - 1];
                 }
                 else {
-                    result = searchResults.get(Array.from(searchResults.keys())[parseInt(collected.first().content) - 1]);
+                    result = searchResults.get(Array.from(searchResults.keys())[parseInt(selection) - 1]);
                 }
                 return [result, currentMessage];
             }
@@ -339,7 +340,7 @@ async function searchGarage(args) {
             let currentCar = require(`../cars/${s.carID}.json`);
             let name = carNameGen({ currentCar, removePrizeTag: true }).toLowerCase().split(" ");
             matchFound = args.query.every(part => name.includes(part));
-            if (matchFound) matchList.push(s); 
+            if (matchFound) matchList.push(s);
         }
         if (args.restrictedMode) {
             isSufficient = (s.upgrades["000"] + s.upgrades["333"] + s.upgrades["666"]) >= args.amount;
@@ -587,7 +588,7 @@ async function listUpdate(list, page, totalPages, listDisplay, settings, current
 function filterCheck(car, filter, garage) {
     let passed = true;
     let file = typeof car === "string" ? car : carFiles.find(f => f.includes(car.carID));
-    let currentCar = require(`../cars/${file}`)
+    let currentCar = require(`../cars/${file}`);
     for (const [key, value] of Object.entries(filter)) {
         switch (typeof value) {
             case "object":
@@ -646,7 +647,7 @@ async function confirm(message, confirmationMessage, acceptedFunction, buttonSty
     const filter = (button) => button.user.id === message.author.id;
     const { yse, nop } = getButtons("choice", buttonStyle);
     const row = new MessageActionRow({ components: [yse, nop] });
-    const reactionMessage = await confirmationMessage.sendMessage({ currentMessage, buttons: [row] });
+    const reactionMessage = await confirmationMessage.sendMessage({ currentMessage, buttons: [row], preserve: true });
     let processed = false;
 
     const collector = message.channel.createMessageComponentCollector({ filter, time: defaultChoiceTime });
@@ -829,6 +830,81 @@ function openPack(message, currentPack, currentMessage) {
     }
 }
 
+function createCar(currentCar, unitPreference) {
+    const car = require(`../cars/${currentCar.carID}.json`);
+    const rarity = rarityCheck(car);
+    const carModule = {
+        rq: car["rq"],
+        topSpeed: car["topSpeed"],
+        accel: car["0to60"],
+        handling: car["handling"],
+        driveType: car["driveType"],
+        tyreType: car["tyreType"],
+        weight: car["weight"],
+        enginePos: car["enginePos"],
+        gc: car["gc"],
+        tcs: car["tcs"],
+        abs: car["abs"],
+        mra: car["mra"],
+        ola: car["ola"],
+        racehud: car[`racehud${currentCar.upgrade}`]
+    };
+    if (currentCar.upgrade !== "000") {
+        carModule.topSpeed = car[`${currentCar.upgrade}TopSpeed`];
+        carModule.accel = car[`${currentCar.upgrade}0to60`];
+        carModule.handling = car[`${currentCar.upgrade}Handling`];
+    }
+
+    let carSpecs = carNameGen({ currentCar: car, rarity, upgrade: currentCar.upgrade });
+    if (unitPreference === "metric") {
+        carSpecs += `\nTop Speed: ${carModule.topSpeed}MPH (${unbritish(carModule.topSpeed, "topSpeed")}KM/H)\n`;
+    }
+    else {
+        carSpecs += `\nTop Speed: ${carModule.topSpeed}MPH\n`;
+    }
+    if (carModule.topSpeed < 60) {
+        carModule.accel = 99.9;
+        carSpecs += "0-60MPH: N/A\n";
+    }
+    else {
+        if (unitPreference === "metric") {
+            carSpecs += `0-60MPH: ${carModule.accel} sec (0-100KM/H: ${unbritish(carModule.accel, "0to60")} sec)\n`;
+        }
+        else {
+            carSpecs += `0-60MPH: ${carModule.accel} sec\n`;
+        }
+    }
+
+    carSpecs += `Handling: ${carModule.handling}
+    ${carModule.enginePos} Engine, ${carModule.driveType}
+    ${carModule.tyreType} Tyres\n`;
+    if (unitPreference === "imperial") {
+        carSpecs += `Weight: ${carModule.weight}kg (${unbritish(carModule.weight, "weight")}lbs)\n`;
+    }
+    else {
+        carSpecs += `Weight: ${carModule.weight}kg\n`;
+    }
+
+    carSpecs += `Ground Clearance: ${carModule.gc}
+    TCS: ${carModule.tcs}, ABS: ${carModule.abs}\n`;
+    if (carModule.topSpeed < 100) {
+        carModule.mra = 0;
+        carSpecs += "MRA: N/A\n";
+    }
+    else {
+        carSpecs += `MRA: ${carModule.mra}\n`;
+    }
+    if (carModule.topSpeed < 30) {
+        carModule.ola = 0;
+        carSpecs += "OLA: N/A\n";
+    }
+    else {
+        carSpecs += `OLA: ${carModule.ola}\n`;
+    }
+
+    return [carModule, carSpecs];
+}
+
 module.exports = {
     assignIndex,
     search,
@@ -838,5 +914,6 @@ module.exports = {
     listUpdate,
     filterCheck,
     confirm,
-    openPack
+    openPack,
+    createCar
 };

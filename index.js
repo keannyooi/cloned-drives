@@ -14,7 +14,7 @@ const profileModel = require("./models/profileSchema.js");
 const prefix = bot.devMode ? process.env.DEV_PREFIX : process.env.BOT_PREFIX;
 const token = bot.devMode ? process.env.DEV_TOKEN : process.env.BOT_TOKEN;
 // this is for testing purposes, the line below will be deleted once everything is complete
-const allowedCommands = ["carinfo.js", "calculate.js", "garage.js", "ping.js", "reload.js", "statistics.js", "addcar.js", "removecar.js", "addmoney.js", "removemoney.js", "carlist.js", "testpack.js", "trackinfo.js", "packinfo.js", "changetune.js", "upgrade.js", "fuse.js", "sell.js", "help.js", "filter.js", "settings.js", "sethand.js"];
+const allowedCommands = ["carinfo.js", "calculate.js", "garage.js", "ping.js", "reload.js", "statistics.js", "addcar.js", "removecar.js", "addmoney.js", "removemoney.js", "carlist.js", "testpack.js", "trackinfo.js", "packinfo.js", "changetune.js", "upgrade.js", "fuse.js", "sell.js", "help.js", "filter.js", "settings.js", "sethand.js", "quickrace.js"];
 const commandFiles = readdirSync("./commands").filter(file => file.endsWith(".js"));
 
 commandFiles.forEach(function (file) {
@@ -35,6 +35,7 @@ connect(process.env.MONGO_PW, {
 bot.once("ready", async () => {
     bot.devMode ? console.log("DevBote Ready!") : console.log("Bote Ready!");
     bot.awakenTime = DateTime.now();
+
     const guild = await bot.guilds.fetch("711769157078876305");
     const members = await guild.members.fetch();
     members.forEach(async (user) => {
@@ -117,7 +118,7 @@ bot.on("messageUpdate", (oldMessage, newMessage) => {
 
 async function processCommand(message) {
     if (!message.content.toLowerCase().startsWith(prefix) || message.author.bot) return;
-    if (bot.devMode && !message.member.roles.cache.has("711790752853655563")) return;
+    if (bot.devMode && !(message.member.roles.cache.has("711790752853655563") || message.member.roles.cache.has("915846116656959538"))) return;
 
     const args = message.content.slice(prefix.length).split(/ +/);
     const commandName = args.shift().toLowerCase();
@@ -218,7 +219,7 @@ async function processCommand(message) {
             author: message.author
         });
         await errorMessage.sendMessage();
-        
+
         const errorReport = new BotError({
             guild: message.guild,
             channel: message.channel,
@@ -243,7 +244,7 @@ function accessDenied(message, roleID) {
     const errorMessage = new ErrorMessage({
         channel: message.channel,
         title: "Error, it looks like you dont have access to this command.",
-        desc:  `You don't have the <@&${roleID}> role, which is required to use this command.`,
+        desc: `You don't have the <@&${roleID}> role, which is required to use this command.`,
         author: message.author
     });
     return errorMessage.sendMessage();
@@ -251,19 +252,19 @@ function accessDenied(message, roleID) {
 
 //automatic database backup system
 schedule("59 23 * * *", () => {
-    const backupProcess = spawn("mongodump", [
+    spawn("mongodump", [
         `--uri=${process.env.MONGO_URI}`,
         "--gzip"
-    ]);
-    backupProcess.on("exit", (code, signal) => {
-        if (code) {
-            console.error("database backup process exited with code ", code);
-        }
-        else if (signal) {
-            console.error("database backup process killed with signal ", signal);
-        }
-        else {
-            console.log("database backup success!");
-        }
-    });
+    ])
+        .on("exit", (code, signal) => {
+            if (code) {
+                console.error("database backup process exited with code ", code);
+            }
+            else if (signal) {
+                console.error("database backup process killed with signal ", signal);
+            }
+            else {
+                console.log("database backup success!");
+            }
+        });
 });
