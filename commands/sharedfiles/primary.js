@@ -317,18 +317,16 @@ async function race(message, player, opponent, currentTrack, disablegraphics) {
             try {
                 const canvas = createCanvas(674, 379);
                 const ctx = canvas.getContext("2d");
-                const [background, playerHud, opponentHud, map] = await Promise.all([
+                const [background, playerHud, opponentHud] = await Promise.all([
                     loadImage(currentTrack["background"]),
                     loadImage(player.racehud),
                     loadImage(opponent.racehud),
-                    loadImage(currentTrack["map"])
                 ]);
 
                 ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
                 ctx.drawImage(bot.graphics.raceTemp, 0, 0, canvas.width, canvas.height);
                 ctx.drawImage(playerHud, 35, 69, 186, 113);
                 ctx.drawImage(opponentHud, 457, 198, 186, 112);
-                ctx.drawImage(map, 258, 228, 142, 142);
                 attachment = new MessageAttachment(canvas.toBuffer(), "thing.png");
             }
             catch (error) {
@@ -361,7 +359,7 @@ async function race(message, player, opponent, currentTrack, disablegraphics) {
         else {
             resultMessage = new ErrorMessage({
                 channel: message.channel,
-                title: `You lost by ${result} point(s). (insert sad violin noises)`,
+                title: `You lost by ${Math.abs(result)} point(s). (insert sad violin noises)`,
                 desc: description + `\nThe winning car had the following advantages: ${raceInfo}`,
                 author: message.author,
             });
@@ -491,7 +489,7 @@ async function race(message, player, opponent, currentTrack, disablegraphics) {
 
             //special cases
             if (currentTrack["trackName"].includes("MPH")) {
-                let [startMPH, endMPH] = currentTrack["trackName"].slice(4, currentTrack["trackName"].length).split("-");
+                let [startMPH, endMPH] = currentTrack["trackName"].split("-");
                 startMPH = parseInt(startMPH);
                 endMPH = parseInt(endMPH);
 

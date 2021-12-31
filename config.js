@@ -3,6 +3,8 @@
 const { Client, Collection, Intents } = require("discord.js");
 const { DateTime } = require("luxon");
 const { loadImage } = require("canvas");
+const { spawn } = require("child_process");
+const { schedule } = require("node-cron");
 
 class Bot extends Client {
     constructor(intents, devMode) {
@@ -45,4 +47,23 @@ const bot = new Bot({
 }, true); //<------------- devMode is here
 
 bot.loadGraphics();
+
+schedule("30 * * * *", () => {
+    spawn("mongodump", [
+        `--uri=${process.env.MONGO_URI}`,
+        "--gzip"
+    ])
+        .on("exit", (code, signal) => {
+            if (code) {
+                console.error("database backup process exited with code ", code);
+            }
+            else if (signal) {
+                console.error("database backup process killed with signal ", signal);
+            }
+            else {
+                console.log("database backup success!");
+            }
+        });
+});
+
 module.exports = bot;

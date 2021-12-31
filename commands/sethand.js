@@ -17,7 +17,7 @@ module.exports = {
         const garage = playerData.garage;
         if (args[0].toLowerCase() === "random") {
             let randomCar = garage[Math.floor(Math.random() * garage.length)];
-            let randomTune = Object.keys(randomCar.upgrades).filter(h => randomCar[h] > 0);
+            let randomTune = Object.keys(randomCar.upgrades).filter(u => randomCar.upgrades[u] > 0);
             await setHand(randomCar, randomTune[Math.floor(Math.random() * randomTune.length)]);
         }
         else {

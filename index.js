@@ -6,8 +6,6 @@ const { readdirSync } = require("fs");
 const { Collection } = require("discord.js");
 const { connect } = require("mongoose");
 const { DateTime, Interval } = require("luxon");
-const { spawn } = require("child_process");
-const { schedule } = require("node-cron");
 const { ErrorMessage, InfoMessage, BotError } = require("./commands/sharedfiles/classes.js");
 const bot = require("./config.js");
 const profileModel = require("./models/profileSchema.js");
@@ -249,22 +247,3 @@ function accessDenied(message, roleID) {
     });
     return errorMessage.sendMessage();
 }
-
-//automatic database backup system
-schedule("59 23 * * *", () => {
-    spawn("mongodump", [
-        `--uri=${process.env.MONGO_URI}`,
-        "--gzip"
-    ])
-        .on("exit", (code, signal) => {
-            if (code) {
-                console.error("database backup process exited with code ", code);
-            }
-            else if (signal) {
-                console.error("database backup process killed with signal ", signal);
-            }
-            else {
-                console.log("database backup success!");
-            }
-        });
-});

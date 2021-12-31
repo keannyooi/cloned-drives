@@ -28,8 +28,8 @@ module.exports = {
         else {
             const errorMessage = new ErrorMessage({
                 channel: message.channel,
-                title: "Error, page number requested invalid.",
-                desc: `The car list ends at page ${totalPages}.`,
+                title: "Error, page number requested not a number.",
+                desc: "One does not simply go to page `NaN` of a website.",
                 author: message.author
             }).displayClosest(page);
             return errorMessage.sendMessage();

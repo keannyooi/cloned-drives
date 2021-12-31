@@ -12,7 +12,7 @@ const profileModel = require("../models/profileSchema.js");
 module.exports = {
     name: "quickrace",
     aliases: ["qr"],
-    usage: "<track name goes here>",
+    usage: ["<track name goes here>"],
     args: 1,
     category: "Gameplay",
     cooldown: 10,
@@ -31,7 +31,7 @@ module.exports = {
 
         let query = args.map(i => i.toLowerCase()), searchBy = "track";
         if (args[0].toLowerCase() === "random") {
-            return displayInfo(trackFiles[Math.floor(Math.random() * trackFiles.length)]);
+            return chooseOpponent(trackFiles[Math.floor(Math.random() * trackFiles.length)]);
         }
         else if (args[0].toLowerCase().startsWith("-t")) {
             query = [args[0].toLowerCase().slice(1)];
@@ -83,17 +83,22 @@ module.exports = {
                     searchBy = "id";
                 }
 
-                new Promise(resolve => resolve(search(message, query, carFiles, searchBy, currentMessage)))
-                    .then(async (response) => {
-                        if (!Array.isArray(response)) return;
-                        let [result, currentMessage] = response;
-                        try {
-                            selectTune(result, currentTrack, currentMessage);
-                        }
-                        catch (error) {
-                            throw error;
-                        }
-                    });
+                if (query[0].toLowerCase() === "random") {
+                    selectTune(carFiles[Math.floor(Math.random() * carFiles.length)], currentTrack, currentMessage);
+                }
+                else {
+                    new Promise(resolve => resolve(search(message, query, carFiles, searchBy, currentMessage)))
+                        .then(async (response) => {
+                            if (!Array.isArray(response)) return;
+                            let [result, currentMessage] = response;
+                            try {
+                                selectTune(result, currentTrack, currentMessage);
+                            }
+                            catch (error) {
+                                throw error;
+                            }
+                        });
+                }
             }
             catch (error) {
                 console.log(error);

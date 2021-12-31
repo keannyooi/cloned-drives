@@ -102,7 +102,7 @@ module.exports = {
                 desc: "Info about this command:",
                 author: message.author,
                 fields: [
-                    { name: "Aliases", value: command.aliases ? command.aliases.join(", ") : "None", inline: true },
+                    { name: "Aliases", value: `\`${command.aliases ? command.aliases.join(", ") : "None"}\``, inline: true },
                     { name: "Category", value: command.category, inline: true },
                     { name: "Cooldown", value: `${command.cooldown ?? 1} second(s)`, inline: true },
                     { name: "Syntax", value: syntax },

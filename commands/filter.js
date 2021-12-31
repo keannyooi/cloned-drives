@@ -8,10 +8,18 @@ const profileModel = require("../models/profileSchema.js");
 
 module.exports = {
     name: "filter",
-    usage: ["<criteria> <supporting values>"],
+    usage: [
+        "<make / country / drivetype / tyretype / gc / bodystyle / enginepos / fueltype / tags / search> <corresponding value>",
+        "<rq / modelyear / seatcount> <starting value> [ending value]",
+        "<isprize / isstock / isupgraded / ismaxed / isowned> <true / false>",
+        "<remove / disable> <make / country / tags / tyretype> <corresponding value>",
+        "<remove / disable> <make / country / tags / tyretype> all",
+        "<remove / disable> <rq / modelyear / seatcount / drivetype / tyretype / gc / bodystyle / enginepos / fueltype / isprize / isstock / isupgraded / ismaxed / isowned / search>",
+        "<remove / disable> all"
+    ],
     args: 0,
     category: "Configuration",
-    description: "Sets up a filter for car lists.",
+    description: "Sets up a filter for garages and car lists.",
     async execute(message, args) {
         const playerData = await profileModel.findOne({ userID: message.author.id });
         let filter = playerData.filter;
@@ -45,7 +53,17 @@ module.exports = {
             }
         }
         else {
+            if (!args[1]) {
+                let errorMessage = new ErrorMessage({
+                    channel: message.channel,
+                    title: "Error, arguments provided incomplete.",
+                    desc: "Refer to the help section by typing `cd-help filter`.",
+                    author: message.author
+                });
+                return errorMessage.sendMessage();
+            }
             const criteria = format(args[0]), arg1 = args[1].toLowerCase(), arg2 = args[2]?.toLowerCase();
+
             switch (criteria) {
                 case "make":
                 case "country":
@@ -73,7 +91,7 @@ module.exports = {
                     else {
                         let errorMessage = new ErrorMessage({
                             channel: message.channel,
-                            title: "Error, argument provided either does not exist in the game or is already part of the filter criteria.",
+                            title: "Error, argument provided either does not exist in the game or is already part of the specified filter category.",
                             desc: "Maybe you have made a typo.",
                             author: message.author
                         }).displayClosest(argument);
@@ -82,7 +100,7 @@ module.exports = {
 
                     infoMessage = new SuccessMessage({
                         channel: message.channel,
-                        title: `Successfully modified \`${criteria}\` criterias!`,
+                        title: `Successfully modified the \`${criteria}\` filter category!`,
                         author: message.author,
                         fields: [{ name: "Current Value(s)", value: `\`${filter[criteria].join(", ")}\`` }]
                     });
@@ -98,7 +116,7 @@ module.exports = {
                     if (isNaN(start)) {
                         let errorMessage = new ErrorMessage({
                             channel: message.channel,
-                            title: "Error, criteria provided is not a number.",
+                            title: "Error, filter criteria provided is not a number.",
                             desc: `\`${criteria}\` criterias must be a number, i.e: \`1969\`, \`2001\`, etc.`,
                             author: message.author
                         }).displayClosest(start);
@@ -117,7 +135,7 @@ module.exports = {
                     filter[criteria] = { start: start, end: end };
                     infoMessage = new SuccessMessage({
                         channel: message.channel,
-                        title: `Successfully modified \`${criteria}\` criterias!`,
+                        title: `Successfully modified the \`${criteria}\` filter category!`,
                         author: message.author,
                         fields: [
                             { name: "Start", value: `\`${start}\``, inline: true },
@@ -150,7 +168,7 @@ module.exports = {
 
                     infoMessage = new SuccessMessage({
                         channel: message.channel,
-                        title: `Successfully modified the \`${criteria}\` criteria!`,
+                        title: `Successfully modified the \`${criteria}\` filter category!`,
                         author: message.author,
                         fields: [{ name: "Current Value", value: `\`${filter[criteria]}\`` }]
                     });
@@ -199,7 +217,7 @@ module.exports = {
 
                     infoMessage = new SuccessMessage({
                         channel: message.channel,
-                        title: "Successfully modified the model name search criteria!",
+                        title: "Successfully modified the model name search category!",
                         author: message.author,
                         fields: [{ name: "Current Value", value: `\`${filter[criteria]}\`` }]
                     });
@@ -212,7 +230,7 @@ module.exports = {
                             filter = {};
                             infoMessage = new SuccessMessage({
                                 channel: message.channel,
-                                title: "Successfully cleared all criterias!",
+                                title: "Successfully cleared all filter categories!",
                                 author: message.author
                             });
                             break;
@@ -223,11 +241,11 @@ module.exports = {
                             if (!arg2) {
                                 const errorMessage = new ErrorMessage({
                                     channel: message.channel,
-                                    title: "Error, filter not provided.",
-                                    desc: "You are expected to provide the name of the criteria argument after the criteria name.",
+                                    title: "Error, filter criteria not provided.",
+                                    desc: "You are expected to provide the name of a filter criteria after the filter category.",
                                     author: message.author
                                 });
-                                return message.channel.send(errorMessage);
+                                return errorMessage.sendMessage();
                             }
 
                             let string = args.slice(2, args.length).join(" ").toLowerCase();
@@ -235,7 +253,7 @@ module.exports = {
                                 delete filter[criteria2];
                                 infoMessage = new SuccessMessage({
                                     channel: message.channel,
-                                    title: `Successfully cleared the \`${criteria2}\` criteria!`,
+                                    title: `Successfully cleared the \`${criteria2}\` filter category!`,
                                     author: message.author
                                 });
                             }
@@ -243,7 +261,7 @@ module.exports = {
                                 filter[criteria2].splice(filter[criteria2].indexOf(string), 1);
                                 infoMessage = new SuccessMessage({
                                     channel: message.channel,
-                                    title: `Successfully modified the \`${criteria2}\` criteria!`,
+                                    title: `Successfully modified the \`${criteria2}\` filter category!`,
                                     author: message.author
                                 });
                                 if (filter[criteria2].length === 0) {
@@ -256,7 +274,7 @@ module.exports = {
                             else {
                                 const errorMessage = new ErrorMessage({
                                     channel: message.channel,
-                                    title: "Error, 404 criteria argument not found.",
+                                    title: "Error, 404 filter category argument not found.",
                                     desc: "Try rechecking the filter list using `cd-filter view`.",
                                     author: message.author
                                 }).displayClosest(string);
@@ -287,7 +305,7 @@ module.exports = {
                         default:
                             const errorMessage = new ErrorMessage({
                                 channel: message.channel,
-                                title: "Error, criteria provided doesn't exist.",
+                                title: "Error, filter category provided doesn't exist.",
                                 desc: `Here is a list of available filter criterias. 
                                 \`rq\` - Filter by RQ.
                                 \`make\` - Filter by make/manufacturer. Provide the manufacturer name that you want to remove, or type \`all\` to remove all criterias in this category.
@@ -316,10 +334,10 @@ module.exports = {
                 default:
                     let errorMessage = new ErrorMessage({
                         channel: message.channel,
-                        title: "Error, criteria provided doesn't exist.",
+                        title: "Error, filter category provided doesn't exist.",
                         desc: `Here is a list of available filter criterias. 
                         \`rq\` - Filter by RQ. Provide the start of the RQ range desired and the end after that.
-                        \`make\` - Filter by make/manufacturer. Provide a manufacturer name after that.
+                        \`make\` - Filter by make/manufacturer. Provide a valid manufacturer name after that.
                         \`modelyear\` - Filter by model year range. Provide the start of the model year range desired and the end after that.
                         \`country\` - Filter by country origin. Provide a country code after that.
                         \`drivetype\` - Filter by drive type. Provide a drive type (\`FWD\`, \`RWD\`, etc.) after that.
@@ -334,8 +352,9 @@ module.exports = {
                         \`isupgraded\` - Filter upgraded cars. Provide a boolean (\`true\` or \`false\`) after that.
                         \`ismaxed\` - Filter maxed cars. Provide a boolean (\`true\` or \`false\`) after that.
                         \`isowned\` - Filter cars that you own. Provide a boolean (\`true\` or \`false\`) after that.
-                        \`tags\` - Filter by tag. Provide the name of a car after that.
-                        \`search\` - Filter by a certain keyword inside a car's name. Provide a keyword that is found in a in-game car's name after that.`,
+                        \`tags\` - Filter by tag. Provide a valid tag after that.
+                        \`search\` - Filter by a certain keyword inside a car's name. Provide a keyword that is found in a in-game car's name after that.
+                        \`remove / disable\` - Remove a filter criteria. Provide a filter category and a value (if necessary) after that.`,
                         author: message.author
                     }).displayClosest(criteria);
                     return errorMessage.sendMessage();
