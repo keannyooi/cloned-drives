@@ -10,7 +10,7 @@ module.exports = {
     name: "rewards",
     usage: [],
     args: 0,
-    category: "Gameplay",
+    category: "Testing", // actual category Gameplay
     description: "Collects your rewards from random races, events and challenges.",
     async execute(message) {
         const moneyEmoji = bot.emojis.cache.get("726017235826770021");

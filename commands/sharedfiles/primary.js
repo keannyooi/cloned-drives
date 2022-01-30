@@ -254,6 +254,7 @@ function addCars(garage, cars) {
         }
         else {
             let upgrades = carSave;
+            upgrades["000"] = 0;
             upgrades[upgrade] = 1;
             garage.push({
                 carID: carID,

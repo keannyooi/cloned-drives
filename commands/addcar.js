@@ -29,14 +29,14 @@ module.exports = {
             }
         }
         else {
-            const userSaves = await profileModel.find({});
-            const availableUsers = await message.guild.members.fetch();
-            availableUsers.filter(user => userSaves.find(f => f.userID === user.id));
-            new Promise(resolve => resolve(searchUser(message, args[0].toLowerCase(), availableUsers)))
+            await new Promise(resolve => resolve(searchUser(message, args[0].toLowerCase())))
                 .then(async (hmm) => {
                     if (!Array.isArray(hmm)) return;
                     let [result, currentMessage] = hmm;
                     await getCar(result.user, currentMessage);
+                })
+                .catch(error => {
+                    throw error;
                 });
         }
 
@@ -60,7 +60,7 @@ module.exports = {
                 return errorMessage.sendMessage({ currentMessage });
             }
 
-            new Promise(resolve => resolve(search(message, carName, carFiles, "car", currentMessage)))
+            await new Promise(resolve => resolve(search(message, carName, carFiles, "car", currentMessage)))
                 .then(async (response) => {
                     if (!Array.isArray(response)) return;
                     let [result, currentMessage] = response;
@@ -69,11 +69,10 @@ module.exports = {
                     const currentCar = require(`./cars/${result}`);
                     const currentName = carNameGen({ currentCar });
 
-                    let addedCars = [result];
-                    for (let i = 1; i < amount; i++) {
-                        addedCars.push({ carID: result, upgrade: "000" });
+                    let addedCars = [];
+                    for (let i = 0; i < amount; i++) {
+                        addedCars.push({ carID: result.slice(0, 6), upgrade: "000" });
                     }
-                    return console.log(addedCars);
                     await profileModel.updateOne({ userID: user.id }, { garage: addCars(playerData.garage, addedCars) });
 
                     const successMessage = new SuccessMessage({
@@ -85,7 +84,10 @@ module.exports = {
                         image: currentCar["card"]
                     });
                     return successMessage.sendMessage({ currentMessage });
-                });
+                })
+                .catch(error => {
+                    throw error;
+                })
         }
     }
-};
+}

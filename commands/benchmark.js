@@ -1,23 +1,23 @@
 "use strict";
 
 const { weatherVars, driveHierarchy, gcHierarchy } = require("./sharedfiles/consts.js");
-const bot = require("../config.js")
+const bot = require("../config.js");
+const { InfoMessage } = require("./sharedfiles/classes.js");
 
 module.exports = {
     name: "benchmark",
     usage: [],
     args: 0,
-    category: "Admin",
-    description: "A test command for benchmark tests. Probably won't be used by anyone other than Keanny.",
+    category: "Testing",
+    description: "A test command for benchmark tests. May also be repurposed for testing throwaway code.",
     execute(message) {
-        console.log("==================================");
         //setup
         const player = createCar({ carID: "c01130", upgrade: "996" });
         const opponent = createCar({ carID: "c00496", upgrade: "333" });
         const track = require("./tracks/t00020.json");
         
         // test condition 1
-        console.time("test 1");
+        const test1Start = performance.now();
         function compare(player, opponent, track, playerWon) {
             const { tyrePen } = weatherVars[`${track["weather"]} ${track["surface"]}`];
             const comparison = {
@@ -116,10 +116,10 @@ module.exports = {
         for (let i = 0; i < 10000; i++) {
             let test = compare(player, opponent, track, true);
         }
-        console.timeEnd("test 1");
+        const test1End = performance.now();
 
         // test condition 2
-        console.time("test 2");
+        const test2Start = performance.now();
         function compare2(player, opponent, track, playerWon) {
             const { tyrePen } = weatherVars[`${track["weather"]} ${track["surface"]}`];
             const comparison = {
@@ -219,11 +219,18 @@ module.exports = {
         for (let i = 0; i < 10000; i++) {
             let test = compare2(player, opponent, track, true);
         }
-        console.timeEnd("test 2");
-        console.log("==================================");
+        const test2End = performance.now();
 
-        bot.deleteID(message.author.id);
-        message.channel.send("**Test complete, please take a look at the terminal for results.**");
+        const resultMessage = new InfoMessage({
+            channel: message.channel,
+            title: "Benchmark test complete!",
+            author: message.author,
+            fields: [
+                { name: "Test Condition 1", value: `\`${(test1End - test1Start).toFixed(3)}ms\``, inline: true },
+                { name: "Test Condition 2", value: `\`${(test2End - test2Start).toFixed(3)}ms\``, inline: true }
+            ]
+        });
+        return resultMessage.sendMessage();
 
         //additional functions
         function createCar(currentCar) {

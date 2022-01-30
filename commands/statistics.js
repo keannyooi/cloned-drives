@@ -35,10 +35,7 @@ module.exports = {
                 }
             }
             else {
-                const userSaves = await profileModel.find({});
-                const availableUsers = await message.guild.members.fetch();
-                availableUsers.filter(user => userSaves.find(f => f.userID = user.id));
-                await new Promise(resolve => resolve(searchUser(message, args[0].toLowerCase(), availableUsers)))
+                await new Promise(resolve => resolve(searchUser(message, args[0].toLowerCase())))
                     .then(async (response) => {
                         if (!Array.isArray(response)) return;
                         let [result, currentMessage] = response;

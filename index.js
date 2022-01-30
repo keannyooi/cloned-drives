@@ -35,10 +35,10 @@ bot.once("ready", async () => {
     bot.devMode ? console.log("DevBote Ready!") : console.log("Bote Ready!");
     bot.awakenTime = DateTime.now();
 
-    const guild = await bot.guilds.fetch("711769157078876305");
-    const members = await guild.members.fetch();
+    await bot.fetchHomeGuild();
+    const members = await bot.homeGuild.members.fetch();
     members.forEach(async (user) => {
-        await addUserRecordIfNecessary(user);
+        await upsertUserRecord(user);
     });
 
     // for updating profile model structure
@@ -56,7 +56,7 @@ bot.on("messageCreate", async (message) => {
 });
 
 bot.on("guildMemberAdd", async (member) => {
-    await newUser(member);
+    await upsertUserRecord(member);
 });
 
 bot.on("messageUpdate", (oldMessage, newMessage) => {
@@ -182,6 +182,11 @@ async function processCommand(message) {
                 return accessDenied(message, "917685033995751435");
             }
             break;
+        case "Testing":
+            if (!message.member.roles.cache.has("915846116656959538")) {
+                return accessDenied(message, "915846116656959538");
+            }
+            break;
         default:
             break;
     }
@@ -257,7 +262,7 @@ async function processCommand(message) {
     }
 }
 
-async function addUserRecordIfNecessary(user) {
+async function upsertUserRecord(user) {
     let params = { userID: user.id };
     let hasProfile = await profileModel.exists(params);
     if (!hasProfile && !user.bot) {

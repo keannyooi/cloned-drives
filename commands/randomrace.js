@@ -16,7 +16,7 @@ module.exports = {
     aliases: ["rr"],
     usage: [],
     args: 0,
-    category: "Gameplay",
+    category: "Testing", // actual category Gameplay
     description: "Does a random race where you are faced with a randomly generated opponent on a randomly generated track. May the RNG be with you.",
     async execute(message) {
         const playerData = await profileModel.findOne({ userID: message.author.id });
@@ -183,6 +183,12 @@ module.exports = {
                     case "skip":
                         streak = 0;
                         await randomize();
+                        await profileModel.updateOne({ userID: message.author.id }, {
+                            "$set": {
+                                "rrStats.streak": 0,
+                            },
+                            unclaimedRewards: playerData.unclaimedRewards
+                        });
                         const skipMessage = new InfoMessage({
                             channel: message.channel,
                             title: "Successfully skipped race.",

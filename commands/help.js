@@ -12,9 +12,13 @@ module.exports = {
     description: "...wait, what are you doing here?",
     execute(message, args) {
         const { commands } = bot;
-        const adminCommands = [], eventCommands = [], miscCommands = [], configCommands = [], gameplayCommands = [], infoCommands = [];
+        const testingCommands = [], adminCommands = [], eventCommands = [], miscCommands = [],
+            configCommands = [], gameplayCommands = [], infoCommands = [];
         commands.forEach(function (command) {
             switch (command.category) {
+                case "Testing":
+                    testingCommands.push(`\`${command.name}\``);
+                    break;
                 case "Admin":
                     adminCommands.push(`\`${command.name}\``);
                     break;
@@ -52,10 +56,13 @@ module.exports = {
                 ]
             });
             // if (message.member.roles.cache.has("917685033995751435")) {
-            //     infoMessage.addFields({ name: "Events", value: eventCommands.join(", ") });
+            //     infoMessage.editEmbed({ fields: [{ name: "Events", value: eventCommands.join(", ") }] });
             // }
             if (message.member.roles.cache.has("711790752853655563")) {
-                infoMessage.addFields({ name: "Admin", value: adminCommands.join(", ") });
+                infoMessage.editEmbed({ fields: [{ name: "Admin", value: adminCommands.join(", ") }] });
+            }
+            if (message.member.roles.cache.has("915846116656959538")) {
+                infoMessage.editEmbed({ fields: [{ name: "Testing", value: testingCommands.join(", ") }] });
             }
             return infoMessage.sendMessage();
         }
@@ -81,6 +88,10 @@ module.exports = {
                 case "Events":
                     if (!message.member.roles.cache.has("917685033995751435")) {
                         return accessDenied("917685033995751435");
+                    }
+                case "Testing":
+                    if (!message.member.roles.cache.has("915846116656959538")) {
+                        return accessDenied("915846116656959538");
                     }
                 default:
                     break;

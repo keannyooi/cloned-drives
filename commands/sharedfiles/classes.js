@@ -44,7 +44,6 @@ class BotMessage {
     }
 
     editEmbed(args) {
-        if (!this.message) return;
         for (let [key, value] of Object.entries(args)) {
             switch (key) {
                 case "title":

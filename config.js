@@ -21,6 +21,10 @@ class Bot extends Client {
         delete this.execList[id];
     }
 
+    async fetchHomeGuild() {
+        this.homeGuild = await this.guilds.fetch("711769157078876305");
+    }
+
     async loadGraphics() {
         await Promise.all([
             loadImage("https://cdn.discordapp.com/attachments/716917404868935691/795177817116901386/race_template_thing.png"),

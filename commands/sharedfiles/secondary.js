@@ -7,6 +7,8 @@ const { ErrorMessage, InfoMessage } = require("./classes.js");
 const { defaultWaitTime, defaultChoiceTime, defaultPageLimit } = require("./consts.js");
 const fs = require("fs");
 const carFiles = fs.readdirSync("./commands/cars").filter(file => file.endsWith(".json"));
+const profileModel = require("../../models/profileSchema.js");
+const bot = require("../../config.js");
 
 // assisting functions (these won't be exported to other files)
 
@@ -307,10 +309,12 @@ async function assignIndex(deck, currentRound, graphics) {
     }
 }
 
-async function searchUser(message, username, playerList, currentMessage) {
-    const searchResults = playerList.filter(function (s) {
-        return s.nickname?.toLowerCase().includes(username) || s.user.username.includes(username);
+async function searchUser(message, username, currentMessage) {
+    const playerList = await bot.homeGuild.members.fetch();
+    const searchResults = playerList.filter(member => {
+        return member.nickname?.toLowerCase().includes(username) || member.user.username.includes(username);
     });
+    
     return processResults(message, searchResults, () => {
         let list = "", i = 1;
         searchResults.map(player => {
@@ -755,12 +759,12 @@ function openPack(message, currentPack, currentMessage) {
             });
             return errorScreen.sendMessage({ currentMessage });
         }
-        addedCars.push(carFile);
+        addedCars.push({ carID: carFile.slice(0, 6), upgrade: "000"});
     }
 
     addedCars.sort(function (a, b) {
-        const carA = require(`../cars/${a}`);
-        const carB = require(`../cars/${b}`);
+        const carA = require(`../cars/${a.carID}.json`);
+        const carB = require(`../cars/${b.carID}.json`);
         if (carA["rq"] === carB["rq"]) {
             let nameA = carNameGen({ currentCar: carA });
             let nameB = carNameGen({ currentCar: carB });
@@ -773,7 +777,7 @@ function openPack(message, currentPack, currentMessage) {
     });
 
     for (let i = 0; i < addedCars.length; i++) {
-        let currentCar = require(`../cars/${addedCars[i]}`);
+        let currentCar = require(`../cars/${addedCars[i].carID}.json`);
         pulledCards += carNameGen({ currentCar: currentCar, rarity: rarityCheck(currentCar) });
 
         if ((i + 1) % 5 !== 0) {
