@@ -35,7 +35,7 @@ class BotMessage {
             contents.files = [args?.attachment];
             this.embed.setImage(`attachment://${args?.attachment["name"]}`);
         }
-
+    
         if (!args?.preserve) {
             bot.deleteID(this.authorID);
         }
@@ -43,19 +43,32 @@ class BotMessage {
         return this;
     }
 
-    addFields(fields) {
-        this.embed.addFields(fields);
-        return this;
-    }
-
-    setFooter(footer) {
-        this.embed.setFooter(footer);
+    editEmbed(args) {
+        if (!this.message) return;
+        for (let [key, value] of Object.entries(args)) {
+            switch (key) {
+                case "title":
+                    this.embed.setTitle(value);
+                    break;
+                case "desc":
+                    this.embed.setDescription(value);
+                    break;
+                case "fields":
+                    this.embed.addFields(value);
+                    break;
+                case "footer":
+                    this.embed.setFooter(value);
+                    break;
+                default:
+                    break;
+            }
+        }
         return this;
     }
 
     removeButtons() {
         return this.message.edit({ embeds: [this.embed], components: [] });
-    }
+    } 
 }
 
 class SuccessMessage extends BotMessage {
@@ -94,6 +107,7 @@ class BotError {
         this.guild = args.guild;
         this.channel = args.channel;
         this.message = args.message;
+        this.isFatal = args.isFatal;
         if (this.guild && this.channel && this.message) {
             this.link = `https://discord.com/channels/${args.guild.id}/${args.channel.id}/${args.message.id}`;
         }
@@ -102,9 +116,9 @@ class BotError {
     async sendReport() {
         const guild = await bot.guilds.fetch("711769157078876305");
         const bugReportsChannel = await guild.channels.fetch("750304569422250064");
-        const source = (this.guild && this.channel && this.message) ? `guild ${this.guild.name} in #${this.channel.name}` : "a DM channel";
+        const source = (this.link) ? `guild ${this.guild.name} in #${this.channel.name}` : "a DM channel";
         const reportMessage = new MessageEmbed({
-            title: `Error report from ${source}`,
+            title: this.isFatal ? "FATAL ERROR: FIX THIS IMMEDIATELY" : `Error report from ${source}`,
             description: `\`${this.stack}\``,
             author: {
                 name: bot.user.tag,

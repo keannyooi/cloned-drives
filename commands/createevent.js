@@ -149,4 +149,3 @@ module.exports = {
         return message.channel.send(infoScreen);
     }
 };
-//# sourceMappingURL=createevent.js.map

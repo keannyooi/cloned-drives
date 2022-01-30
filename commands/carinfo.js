@@ -104,7 +104,7 @@ module.exports = {
                         str += `${value}x ${key}, `;
                     }
                 }
-                infoMessage.setFooter(`✅ You own ${str.slice(0, -2)} of this car!`);
+                infoMessage.editEmbed({ footer: `✅ You own ${str.slice(0, -2)} of this car!` });
             }
             return infoMessage.sendMessage({ currentMessage });
         }

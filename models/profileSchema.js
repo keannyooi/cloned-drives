@@ -28,6 +28,7 @@ const profileSchema = new Schema({
                 upgrade: "000"
             },
             trackID: "",
+            reqs: {}
         }
     },
     dailyStats: {

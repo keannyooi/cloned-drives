@@ -1,146 +1,100 @@
 "use strict";
-/*
- __  ___  _______     ___      .__   __. .__   __. ____    ____
-|  |/  / |   ____|   /   \     |  \ |  | |  \ |  | \   \  /   /
-|  '  /  |  |__     /  ^  \    |   \|  | |   \|  |  \   \/   /
-|    <   |   __|   /  /_\  \   |  . `  | |  . `  |   \_    _/
-|  .  \  |  |____ /  _____  \  |  |\   | |  |\   |     |  |
-|__|\__\ |_______/__/     \__\ |__| \__| |__| \__|     |__| 	(this is a watermark that proves that these lines of code are mine)
-*/
-const Discord = require("discord.js-light");
+
+const { InfoMessage, SuccessMessage } = require("./sharedfiles/classes.js");
+const { rarityCheck, carNameGen, addCars } = require("./sharedfiles/primary.js");
+const { openPack } = require("./sharedfiles/secondary.js");
+const profileModel = require("../models/profileSchema.js");
+const bot = require("../config.js");
+
 module.exports = {
     name: "rewards",
-    usage: "(no arguments required)",
+    usage: [],
     args: 0,
     category: "Gameplay",
-    description: "Collect your race rewards with this command!",
+    description: "Collects your rewards from random races, events and challenges.",
     async execute(message) {
-        const db = message.client.db;
-        const playerData = await db.get(`acc${message.author.id}`);
-        const rewards = playerData.unclaimedRewards;
-        if (rewards.money === 0 && rewards.fuseTokens === 0 && rewards.trophies === 0 && rewards.cars.length === 0 && rewards.packs.length === 0) {
-            message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-            const infoScreen = new Discord.MessageEmbed()
-                .setColor("#34aeeb")
-                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle("It looks like you don't have any unclaimed rewards.")
-                .setDescription("Come back when you have pending rewards!")
-                .setTimestamp();
-            return message.channel.send(infoScreen);
+        const moneyEmoji = bot.emojis.cache.get("726017235826770021");
+        const fuseEmoji = bot.emojis.cache.get("726018658635218955");
+        const trophyEmoji = bot.emojis.cache.get("775636479145148418");
+
+        const playerData = await profileModel.findOne({ userID: message.author.id });
+        if (playerData.unclaimedRewards.length > 0) {
+            let rewardLog = "", line = "", limitExceeded = false;
+            for (let reward of playerData.unclaimedRewards) {
+                let { origin } = reward;
+                switch (Object.keys(reward)[0]) {
+                    case "money":
+                        playerData.money += reward.money;
+                        line = `Received **${moneyEmoji}${reward.money}** from **${origin}**\n`
+                        break;
+                    case "fuseTokens":
+                        playerData.fuseTokens += reward.fuseTokens;
+                        line = `Received **${fuseEmoji}${reward.fuseTokens}** from **${origin}**\n`
+                        break;
+                    case "trophies":
+                        playerData.trophies += reward.trophies;
+                        line = `Received **${trophyEmoji}${reward.trophies}** from **${origin}**\n`
+                        break;
+                    case "cars":
+                        playerData.garage = addCars(playerData.garage, reward.cars);
+
+                        let carList = "";
+                        for (let { carID, upgrade, amount } of reward.cars) {
+                            let currentCar = require(`./cars/${carID}.json`);
+                            let rarity = rarityCheck(currentCar);
+                            carList += `${amount}x ${carNameGen({ currentCar, rarity, upgrade })}`
+                        }
+                        line = `Received **${carList}** from **${origin}**\n`
+                        break;
+                    case "packs":
+                        let packList = "";
+                        for (let packID of reward.packs) {
+                            let pack = require(`./packs/${packID}.json`);
+                            let addedCars = await openPack(message, pack);
+                            if (!Array.isArray(addedCars)) return;
+
+                            playerData.garage = addCars(playerData.garage, addedCars);
+                            packList += `1x ${pack["packName"]}`;
+                        }
+                        line = `Received **${packList}** from **${origin}**\n`
+                        break;
+                    default:
+                        break;
+                }
+
+                if (rewardLog.length + line.length > 4096) { // discord embed desc limit
+                    rewardLog += `Received **${moneyEmoji}${reward.money}** from **${origin}**\n`;
+                }
+                else if (!limitExceeded) {
+                    limitExceeded = true;
+                    rewardLog += "...etc";
+                }
+            }
+
+            await profileModel.updateOne({ userID: message.author.id }, {
+                money: playerData.money,
+                fuseTokens: playerData.fuseTokens,
+                trophies: playerData.trophies,
+                garage: playerData.garage,
+                unclaimedRewards: []
+            });
+
+            const successMessage = new SuccessMessage({
+                channel: message.channel,
+                title: "Successfully claimed your rewards!",
+                desc: rewardLog,
+                author: message.author
+            });
+            return successMessage.sendMessage();
         }
         else {
-            const infoScreen = new Discord.MessageEmbed()
-                .setColor("#34aeeb")
-                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle(`Successfully claimed your rewards!`)
-                .setTimestamp();
-            if (rewards.money > 0) {
-                const moneyEmoji = message.client.emojis.cache.get("726017235826770021");
-                playerData.money += rewards.money;
-                infoScreen.addField("Claimed Money", `${moneyEmoji}${rewards.money}`, true);
-                rewards.money = 0;
-            }
-            if (rewards.fuseTokens > 0) {
-                const fuseEmoji = message.client.emojis.cache.get("726018658635218955");
-                playerData.fuseTokens += rewards.fuseTokens;
-                infoScreen.addField("Claimed Fuse Tokens", `${fuseEmoji}${rewards.fuseTokens}`, true);
-                rewards.fuseTokens = 0;
-            }
-            if (rewards.trophies > 0) {
-                const trophyEmoji = message.client.emojis.cache.get("775636479145148418");
-                playerData.trophies += rewards.trophies;
-                infoScreen.addField("Claimed Trophies", `${trophyEmoji}${rewards.trophies}`, true);
-                rewards.trophies = 0;
-            }
-            if (rewards.cars.length > 0) {
-                let carList = "";
-                for (i = 0; i < rewards.cars.length; i++) {
-                    let isInGarage = playerData.garage.findIndex(garageCar => {
-                        return garageCar.carFile === rewards.cars[i].carFile;
-                    });
-                    if (isInGarage !== -1) {
-                        playerData.garage[isInGarage]["000"] += rewards.cars[i].amount;
-                    }
-                    else {
-                        playerData.garage.push({
-                            carFile: rewards.cars[i].carFile,
-                            "000": rewards.cars[i].amount,
-                            "333": 0,
-                            "666": 0,
-                            "996": 0,
-                            "969": 0,
-                            "699": 0,
-                        });
-                    }
-                    let currentCar = require(`./cars/${rewards.cars[i].carFile}`);
-                    let rarity = rarityCheck(currentCar);
-                    let make = currentCar["make"];
-                    if (typeof make === "object") {
-                        make = currentCar["make"][0];
-                    }
-                    carList += `(${rarity} ${currentCar["rq"]}) ${make} ${currentCar["model"]} (${currentCar["modelYear"]})\n`;
-                }
-                infoScreen.addField("Claimed Cars", carList);
-                rewards.cars = [];
-            }
-            if (rewards.packs.length > 0) {
-                let packList = "";
-                const openPackCommand = require("./sharedfiles/openpack.js");
-                for (y = 0; y < rewards.packs.length; y++) {
-                    console.log(y);
-                    let currentPack = require(`./packs/${rewards.packs[y]}`);
-                    packList += `${currentPack["packName"]}\n`;
-                    let addedCars = openPackCommand.openPack(message, currentPack);
-                    for (x = 0; x < addedCars.length; x++) {
-                        let isInGarage = playerData.garage.findIndex(garageCar => {
-                            return garageCar.carFile === addedCars[x];
-                        });
-                        if (isInGarage !== -1) {
-                            playerData.garage[isInGarage]["000"] += 1;
-                        }
-                        else {
-                            playerData.garage.push({
-                                carFile: addedCars[x],
-                                "000": 1,
-                                "333": 0,
-                                "666": 0,
-                                "996": 0,
-                                "969": 0,
-                                "699": 0,
-                            });
-                        }
-                    }
-                }
-                infoScreen.addField("Claimed Packs", packList);
-                rewards.packs = [];
-            }
-            await db.set(`acc${message.author.id}`, playerData);
-            message.channel.send(infoScreen);
-            message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-        }
-        function rarityCheck(currentCar) {
-            if (currentCar["rq"] > 79) { //leggie
-                return message.client.emojis.cache.get("857512942471479337");
-            }
-            else if (currentCar["rq"] > 64 && currentCar["rq"] <= 79) { //epic
-                return message.client.emojis.cache.get("726025468230238268");
-            }
-            else if (currentCar["rq"] > 49 && currentCar["rq"] <= 64) { //ultra
-                return message.client.emojis.cache.get("726025431937187850");
-            }
-            else if (currentCar["rq"] > 39 && currentCar["rq"] <= 49) { //super
-                return message.client.emojis.cache.get("857513197937623042");
-            }
-            else if (currentCar["rq"] > 29 && currentCar["rq"] <= 39) { //rare
-                return message.client.emojis.cache.get("726025302656024586");
-            }
-            else if (currentCar["rq"] > 19 && currentCar["rq"] <= 29) { //uncommon
-                return message.client.emojis.cache.get("726025273421725756");
-            }
-            else { //common
-                return message.client.emojis.cache.get("726020544264273928");
-            }
+            const infoMessage = new InfoMessage({
+                channel: message.channel,
+                title: "It looks like you don't have any unclaimed rewards.",
+                desc: "Please come back here when you have pending rewards!",
+                author: message.author
+            });
+            return infoMessage.sendMessage();
         }
     }
 };
-//# sourceMappingURL=rewards.js.map

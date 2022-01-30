@@ -63,16 +63,14 @@ module.exports = {
                     const availableUsers = await message.guild.members.fetch();
                     availableUsers.filter(user => userSaves.find(f => f.userID = user.id));
                     userName = args[0].toLowerCase();
-                    new Promise(resolve => resolve(searchUser(message, userName, availableUsers)))
-                        .then(async (hmm) => {
-                            if (!Array.isArray(hmm)) return;
-                            let [result, currentMessage] = hmm;
-                            try {
-                                await loop(result.user, page, sort, currentMessage);
-                            }
-                            catch (error) {
-                                throw error;
-                            }
+                    await new Promise(resolve => resolve(searchUser(message, userName, availableUsers)))
+                        .then(async response => {
+                            if (!Array.isArray(response)) return;
+                            let [result, currentMessage] = response;
+                            await loop(user, result, sort, currentMessage);
+                        })
+                        .catch(error => {
+                            throw error;
                         });
                 }
             }
@@ -80,6 +78,7 @@ module.exports = {
                 if (args[args.length - 2] === "-s" && args[args.length - 1]) {
                     sort = args[args.length - 1].toLowerCase();
                 }
+
                 try {
                     await loop(user, parseInt(args[0]), sort);
                 }
@@ -90,16 +89,13 @@ module.exports = {
         }
 
         async function loop(user, page, sort, currentMessage) {
-            const playerData = await profileModel.findOne({ userID: user.id });
-            let garage = playerData.garage;
-            if (!playerData.settings.disablegaragefilter) {
-                garage = garage.filter(car => filterCheck(car, playerData.filter));
-            }
+            const { garage, settings, filter } = await profileModel.findOne({ userID: user.id });
+            let filteredGarage = settings.disablegaragefilter ? garage : garage.filter(car => filterCheck(car, filter));
 
             sort = sortCheck(message, sort, currentMessage);
             if (typeof sort !== "string") return;
 
-            const totalPages = Math.ceil(garage.length / (playerData.settings.listamount || defaultPageLimit));
+            const totalPages = Math.ceil(filteredGarage.length / (settings.listamount || defaultPageLimit));
             if (page < 1 || totalPages < page) {
                 const errorMessage = new ErrorMessage({
                     channel: message.channel,
@@ -109,10 +105,10 @@ module.exports = {
                 }).displayClosest(page);
                 return errorMessage.sendMessage({ currentMessage });
             }
-            garage = sortCars(garage, sort, playerData.settings.sortorder);
+            filteredGarage = sortCars(filteredGarage, sort, settings.sortorder);
 
             try {
-                listUpdate(garage, page, totalPages, listDisplay, playerData.settings, currentMessage);
+                await listUpdate(filteredGarage, page, totalPages, listDisplay, settings, currentMessage);
             }
             catch (error) {
                 throw error;
@@ -176,7 +172,7 @@ module.exports = {
                 const infoMessage = new InfoMessage({
                     channel: message.channel,
                     title: `${user.username}'s Garage`,
-                    desc: `Current Sorting Criteria: \`${sort}\`, Filter Activated: \`${Object.keys(playerData.filter).length > 0 && !playerData.settings.disablegaragefilter}\``,
+                    desc: `Current Sorting Criteria: \`${sort}\`, Filter Activated: \`${Object.keys(filter).length > 0 && !settings.disablegaragefilter}\``,
                     author: message.author,
                     thumbnail: user.displayAvatarURL({ format: "png", dynamic: true }),
                     fields: [
@@ -186,7 +182,7 @@ module.exports = {
                     footer: `Page ${page} of ${totalPages} - Interact with the buttons below to navigate through pages.`
                 });
                 if (sort !== "rq") {
-                    infoMessage.addFields([{ name: "Value", value: valueList, inline: true }]);
+                    infoMessage.editEmbed({ fields: [{ name: "Value", value: valueList, inline: true }] });
                 }
                 return infoMessage;
             }

@@ -16,7 +16,7 @@ module.exports = {
     category: "Gameplay",
     cooldown: 4.388,
     description: "Opens a pack.",
-    async execute(message, args) {
+    execute(message, args) {
         let query = args.map(i => i.toLowerCase());
         let packs = packFiles.filter(pack => {
             let contents = require(`./packs/${pack}`);
@@ -32,7 +32,7 @@ module.exports = {
                     const moneyEmoji = bot.emojis.cache.get("726017235826770021");
                     let currentPack = require(`./packs/${result}`);
                     if (playerData.money >= currentPack["price"]) {
-                        let addedCars = openPack(message, currentPack, currentMessage);
+                        let addedCars = await openPack(message, currentPack, currentMessage);
                         if (!Array.isArray(addedCars)) return;
                         await profileModel.updateOne({ userID: message.author.id }, {
                             money: playerData.money - currentPack["price"],

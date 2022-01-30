@@ -17,7 +17,12 @@ module.exports = {
         if (args.length) {
             if (message.mentions.users.first()) {
                 if (!message.mentions.users.first().bot) {
-                    displayData(message.mentions.users.first());
+                    try {
+                        await displayData(message.mentions.users.first());
+                    }
+                    catch (error) {
+                        throw error;
+                    }
                 }
                 else {
                     const errorMessage = new ErrorMessage({
@@ -33,16 +38,14 @@ module.exports = {
                 const userSaves = await profileModel.find({});
                 const availableUsers = await message.guild.members.fetch();
                 availableUsers.filter(user => userSaves.find(f => f.userID = user.id));
-                new Promise(resolve => resolve(searchUser(message, args[0].toLowerCase(), availableUsers)))
-                    .then(async (hmm) => {
-                        if (!Array.isArray(hmm)) return;
-                        let [result, currentMessage] = hmm;
-                        try {
-                            await displayData(result.user, currentMessage);
-                        }
-                        catch (error) {
-                            throw error;
-                        }
+                await new Promise(resolve => resolve(searchUser(message, args[0].toLowerCase(), availableUsers)))
+                    .then(async (response) => {
+                        if (!Array.isArray(response)) return;
+                        let [result, currentMessage] = response;
+                        await displayData(result.user, currentMessage);
+                    })
+                    .catch(error => {
+                        throw error;
                     });
             }
         }
@@ -82,7 +85,9 @@ module.exports = {
                     { name: "Total Cars in Garage", value: totalCars.toString(), inline: true },
                     { name: "Total Maxed Cars in Garage", value: maxedCars.toString(), inline: true },
                     { name: "Maxed Car Percentage", value: `${MCpercentage.toFixed(2)}%`, inline: true },
-                    { name: "About Me", value: playerData.settings.bio ?? "None", inline: true }
+                    { name: "Highest Random Race Streak", value: playerData.rrStats.highestStreak.toString(), inline: true },
+                    { name: "Highest Daily Reward Streak", value: playerData.dailyStats.highestStreak.toString(), inline: true },
+                    { name: "About Me", value: playerData.settings.bio ?? "None" }
                 ]
             });
             return infoMessage.sendMessage({ currentMessage });

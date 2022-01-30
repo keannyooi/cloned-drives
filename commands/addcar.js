@@ -61,9 +61,9 @@ module.exports = {
             }
 
             new Promise(resolve => resolve(search(message, carName, carFiles, "car", currentMessage)))
-                .then(async (hmm) => {
-                    if (!Array.isArray(hmm)) return;
-                    let [result, currentMessage] = hmm;
+                .then(async (response) => {
+                    if (!Array.isArray(response)) return;
+                    let [result, currentMessage] = response;
 
                     const playerData = await profileModel.findOne({ userID: user.id });
                     const currentCar = require(`./cars/${result}`);
@@ -71,8 +71,9 @@ module.exports = {
 
                     let addedCars = [result];
                     for (let i = 1; i < amount; i++) {
-                        addedCars.push(result);
+                        addedCars.push({ carID: result, upgrade: "000" });
                     }
+                    return console.log(addedCars);
                     await profileModel.updateOne({ userID: user.id }, { garage: addCars(playerData.garage, addedCars) });
 
                     const successMessage = new SuccessMessage({

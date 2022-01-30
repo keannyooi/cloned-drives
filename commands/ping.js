@@ -1,15 +1,23 @@
 "use strict";
 
+const { InfoMessage } = require("./sharedfiles/classes.js");
+
 module.exports = {
     name: "ping",
-    usage: "(no arguments required)",
+    usage: [],
     args: 0,
     category: "Miscellaneous",
     description: "Shows the current bot and API latency.",
     execute(message) {
-        message.channel.send(`bruh y u ping me
-anyway latency = \`${Date.now() - (message.editedTimestamp || message.createdTimestamp)}ms\` while api latency = \`${Math.round(message.client.ws.ping)}ms\`
-		`);
-        delete message.client.execList[message.author.id];
+        let pingMessage = new InfoMessage({
+            channel: message.channel,
+            title: "bruh y u ping me",
+            author: message.author,
+            fields: [
+                { name: "Bot Latency", value: `\`${Date.now() - (message.editedTimestamp || message.createdTimestamp)}ms\``, inline: true },
+                { name: "API Latency", value: `\`${Math.round(message.client.ws.ping)}ms\``, inline: true }
+            ]
+        });
+        return pingMessage.sendMessage;
     }
 };

@@ -12,7 +12,7 @@ const profileModel = require("./models/profileSchema.js");
 const prefix = bot.devMode ? process.env.DEV_PREFIX : process.env.BOT_PREFIX;
 const token = bot.devMode ? process.env.DEV_TOKEN : process.env.BOT_TOKEN;
 // this is for testing purposes, the line below will be deleted once everything is complete
-const allowedCommands = ["carinfo.js", "calculate.js", "garage.js", "ping.js", "reload.js", "statistics.js", "addcar.js", "removecar.js", "addmoney.js", "removemoney.js", "carlist.js", "testpack.js", "trackinfo.js", "packinfo.js", "changetune.js", "upgrade.js", "fuse.js", "sell.js", "help.js", "filter.js", "settings.js", "sethand.js", "quickrace.js"];
+const allowedCommands = ["benchmark.js", "carinfo.js", "calculate.js", "garage.js", "ping.js", "reload.js", "statistics.js", "addcar.js", "removecar.js", "addmoney.js", "removemoney.js", "carlist.js", "testpack.js", "trackinfo.js", "packinfo.js", "changetune.js", "upgrade.js", "fuse.js", "sell.js", "help.js", "filter.js", "settings.js", "sethand.js", "quickrace.js", "randomrace.js", "rewards.js"];
 const commandFiles = readdirSync("./commands").filter(file => file.endsWith(".js"));
 
 commandFiles.forEach(function (file) {
@@ -30,6 +30,7 @@ connect(process.env.MONGO_PW, {
     .then(() => console.log("database connect successful!"))
     .catch(error => console.log(error));
 
+// bot events
 bot.once("ready", async () => {
     bot.devMode ? console.log("DevBote Ready!") : console.log("Bote Ready!");
     bot.awakenTime = DateTime.now();
@@ -37,28 +38,45 @@ bot.once("ready", async () => {
     const guild = await bot.guilds.fetch("711769157078876305");
     const members = await guild.members.fetch();
     members.forEach(async (user) => {
-        await newUser(user);
+        await addUserRecordIfNecessary(user);
     });
+
+    // for updating profile model structure
+    // await profileModel.updateMany({}, {
+    //     "unclaimedRewards": []
+    // });
+
     bot.devMode ? bot.user.setActivity("around with code", { type: "PLAYING" }) : bot.user.setActivity("over everyone's garages", { type: "WATCHING" });
 });
 
 bot.login(token);
 
 bot.on("messageCreate", async (message) => {
-    processCommand(message);
+    return processCommand(message);
 });
 
 bot.on("guildMemberAdd", async (member) => {
-    //await newUser(member);
+    await newUser(member);
 });
 
 bot.on("messageUpdate", (oldMessage, newMessage) => {
     if (bot.awakenTime < oldMessage.createdTimestamp) {
-        processCommand(newMessage);
+        return processCommand(newMessage);
     }
 });
 
-//loop thingy
+// for when i really done goofed up
+process.on("uncaughtException", async error => {
+    console.log(error.stack);
+    const errorReport = new BotError({
+        stack: error.stack,
+        isFatal: true
+    });
+    await errorReport.sendReport();
+    process.exit(1);
+});
+
+// loop thingy
 // setInterval(async () => {
 // 	const events = await bot.db.get("events");
 // 	for (const [key, value] of Object.entries(events)) {
@@ -131,12 +149,23 @@ async function processCommand(message) {
         return errorMessage.sendMessage();
     }
 
-    let hasProfile = await profileModel.exists({ userID: message.author.id });
-    if (!hasProfile) {
+    try {
+        let hasProfile = await profileModel.findOne({ userID: message.author.id });
+        if (!hasProfile) {
+            const errorMessage = new ErrorMessage({
+                channel: message.channel,
+                title: "Error, the bot has no record of you in the Cloned Drives discord server.",
+                desc: "Join the Discord server now to unlock access to the bot: https://discord.gg/PHgPyed",
+                author: message.author
+            });
+            return errorMessage.sendMessage();
+        }
+    }
+    catch (error) {
         const errorMessage = new ErrorMessage({
             channel: message.channel,
-            title: "Error, the bot has no record of you in the Cloned Drives discord server.",
-            desc: "Join the Discord server now to unlock access to the bot: https://discord.gg/PHgPyed",
+            title: "Error, failed to perform record check.",
+            desc: "Your connection is probably slow or unstable right now, please try again later.",
             author: message.author
         });
         return errorMessage.sendMessage();
@@ -187,48 +216,48 @@ async function processCommand(message) {
     timestamps.set(message.author.id, now);
     setTimeout(() => timestamps.delete(message.author.id), cooldownAmount);
 
-    try {
-        if (!bot.execList[message.author.id]) {
+    if (!bot.execList[message.author.id]) {
+        try {
             bot.execList[message.author.id] = command.name;
-            await command.execute(message, args);
             setTimeout(() => {
                 if (bot.execList[message.author.id]) {
                     delete bot.execList[message.author.id];
                 }
             }, 30000);
+            await command.execute(message, args);
         }
-        else {
+        catch (error) {
+            console.error(error.stack);
             const errorMessage = new ErrorMessage({
                 channel: message.channel,
-                title: "Error, you may only execute 1 command at a time.",
-                desc: "This error will disappear once the currently executing command finishes or after 30 seconds, whichever comes first.",
-                author: message.author,
-                fields: [{ name: "Currenty Executing", value: `\`${bot.execList[message.author.id]}\`` }]
+                title: "Error, failed to execute command.",
+                desc: `Something must have gone wrong. Don't worry, I've already reported this issue to the devs.\n\`${error.stack}\``,
+                author: message.author
             });
-            return errorMessage.sendMessage();
+            await errorMessage.sendMessage();
+
+            const errorReport = new BotError({
+                guild: message.guild,
+                channel: message.channel,
+                message,
+                stack: error.stack,
+            });
+            return errorReport.sendReport();
         }
     }
-    catch (error) {
-        console.error(error);
+    else {
         const errorMessage = new ErrorMessage({
             channel: message.channel,
-            title: "Error, failed to execute command.",
-            desc: `Something must have gone wrong. Don't worry, I've already reported this issue to the devs.\n\`${error.stack}\``,
-            author: message.author
+            title: "Error, you may only execute 1 command at a time.",
+            desc: "This error will disappear once the currently executing command finishes or after 30 seconds, whichever comes first.",
+            author: message.author,
+            fields: [{ name: "Currenty Executing", value: `\`${bot.execList[message.author.id]}\`` }]
         });
-        await errorMessage.sendMessage();
-
-        const errorReport = new BotError({
-            guild: message.guild,
-            channel: message.channel,
-            message,
-            stack: error.stack,
-        });
-        return errorReport.sendReport();
+        return errorMessage.sendMessage();
     }
 }
 
-async function newUser(user) {
+async function addUserRecordIfNecessary(user) {
     let params = { userID: user.id };
     let hasProfile = await profileModel.exists(params);
     if (!hasProfile && !user.bot) {

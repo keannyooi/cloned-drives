@@ -100,7 +100,7 @@ async function processResults(message, searchResults, listGen, type, currentMess
     }
 }
 
-//main function (these will be exported to other files)
+//main functions (these will be exported to other files)
 
 async function assignIndex(deck, currentRound, graphics) {
     const raceCommand = require("./race.js");
@@ -532,53 +532,58 @@ async function listUpdate(list, page, totalPages, listDisplay, settings, current
 
     const collector = listMessage.message.createMessageComponentCollector({ filter, time: defaultWaitTime });
     collector.on("collect", async (button) => {
-        switch (button.customId) {
-            case "first_page":
-                page = 1;
-                break;
-            case "prev_page":
-                page -= 1;
-                break;
-            case "next_page":
-                page += 1;
-                break;
-            case "last_page":
-                page = totalPages;
-                break;
-            default:
-                break;
+        try {
+            switch (button.customId) {
+                case "first_page":
+                    page = 1;
+                    break;
+                case "prev_page":
+                    page -= 1;
+                    break;
+                case "next_page":
+                    page += 1;
+                    break;
+                case "last_page":
+                    page = totalPages;
+                    break;
+                default:
+                    break;
+            }
+    
+            section = paginate(list, page, settings.listamount);
+            if (list.length <= pageLimit) {
+                firstPage.setDisabled(true);
+                prevPage.setDisabled(true);
+                nextPage.setDisabled(true);
+                lastPage.setDisabled(true);
+            }
+            else if (list.length <= page * pageLimit) {
+                firstPage.setDisabled(false);
+                prevPage.setDisabled(false);
+                nextPage.setDisabled(true);
+                lastPage.setDisabled(true);
+            }
+            else if (page === 1) {
+                firstPage.setDisabled(true);
+                prevPage.setDisabled(true);
+                nextPage.setDisabled(false);
+                lastPage.setDisabled(false);
+            }
+            else {
+                firstPage.setDisabled(false);
+                prevPage.setDisabled(false);
+                nextPage.setDisabled(false);
+                lastPage.setDisabled(false);
+            }
+    
+            row = new MessageActionRow({ components: [firstPage, prevPage, nextPage, lastPage] });
+            embed = listDisplay(section, page, totalPages, currentMessage);
+            listMessage = await embed.sendMessage({ buttons: [row], currentMessage: listMessage });
+            await button.deferUpdate();
         }
-
-        section = paginate(list, page, settings.listamount);
-        if (list.length <= pageLimit) {
-            firstPage.setDisabled(true);
-            prevPage.setDisabled(true);
-            nextPage.setDisabled(true);
-            lastPage.setDisabled(true);
+        catch (error) {
+            console.log("mmm error found");
         }
-        else if (list.length <= page * pageLimit) {
-            firstPage.setDisabled(false);
-            prevPage.setDisabled(false);
-            nextPage.setDisabled(true);
-            lastPage.setDisabled(true);
-        }
-        else if (page === 1) {
-            firstPage.setDisabled(true);
-            prevPage.setDisabled(true);
-            nextPage.setDisabled(false);
-            lastPage.setDisabled(false);
-        }
-        else {
-            firstPage.setDisabled(false);
-            prevPage.setDisabled(false);
-            nextPage.setDisabled(false);
-            lastPage.setDisabled(false);
-        }
-
-        row = new MessageActionRow({ components: [firstPage, prevPage, nextPage, lastPage] });
-        embed = listDisplay(section, page, totalPages, currentMessage);
-        listMessage = await embed.sendMessage({ buttons: [row], currentMessage: listMessage });
-        await button.deferUpdate();
     });
     collector.on("end", () => {
         return listMessage.removeButtons();
@@ -664,13 +669,9 @@ async function confirm(message, confirmationMessage, acceptedFunction, buttonSty
                     }
                     break;
                 case "nop":
-                    const cancelMessage = new InfoMessage({
-                        channel: message.channel,
-                        title: "Action cancelled.",
-                        author: message.author,
-                    });
-                    await cancelMessage.sendMessage({ currentMessage: reactionMessage });
-                    return cancelMessage.removeButtons();
+                    confirmationMessage.editEmbed({ title: "Action cancelled." });
+                    await confirmationMessage.sendMessage({ currentMessage: reactionMessage });
+                    return confirmationMessage.removeButtons();
                 default:
                     break;
             }
@@ -678,14 +679,12 @@ async function confirm(message, confirmationMessage, acceptedFunction, buttonSty
     });
     collector.on("end", async () => {
         if (!processed) {
-            const cancelMessage = new InfoMessage({
-                channel: message.channel,
+            confirmationMessage.editEmbed({
                 title: "Action cancelled automatically.",
-                desc: `I can only wait for you for ${defaultChoiceTime / 1000} seconds. Please act quicker next time.`,
-                author: message.author,
+                desc: `I can only wait for you for ${defaultChoiceTime / 1000} seconds. Please act quicker next time.`
             });
-            await cancelMessage.sendMessage({ currentMessage: reactionMessage });
-            return cancelMessage.removeButtons();
+            await confirmationMessage.sendMessage({ currentMessage: reactionMessage });
+            return confirmationMessage.removeButtons();
         }
     });
 }

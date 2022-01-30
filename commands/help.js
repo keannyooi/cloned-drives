@@ -87,7 +87,7 @@ module.exports = {
             }
             
             let syntax = "";
-            if (typeof command.usage === "object") {
+            if (command.usage.length > 0) {
                 for (let i = 0; i < command.usage.length; i++) {
                     syntax += `\`cd-${command.name} ${command.usage[i]}\`\n`;
                 }

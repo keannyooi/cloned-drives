@@ -14,7 +14,7 @@ const moment = require("moment");
 module.exports = {
     name: "refreshdealership",
     aliases: ["rfdeal", "refreshdeal", "rfdealership"],
-    usage: "(no arguments required)",
+    usage: [],
     args: 0,
     category: "Admin",
     description: "Refreshes the dealership catalog immediately.",

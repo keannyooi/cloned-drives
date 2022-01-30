@@ -107,7 +107,7 @@ module.exports = {
                 footer: `Page ${page} of ${totalPages} - Interact with the buttons below to navigate through pages.`
             });
             if (sort !== "rq") {
-                infoMessage.addFields([{ name: "Value", value: valueList, inline: true }]);
+                infoMessage.editEmbed({ fields: [{ name: "Value", value: valueList, inline: true }] });
             }
             return infoMessage;
         }

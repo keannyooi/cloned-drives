@@ -67,7 +67,7 @@ module.exports = {
                                     {
                                         name: "Unit Preference (ID: \`unitpreference\`)",
                                         value: `Lets you choose the unit system of your preference. Graphics aren't affected by this setting. The game uses British units by default and you can switch to metric and imperial units.
-                                        **Value:** \`${settings.unitpreference ?? "british"}`,
+                                        **Value:** \`${settings.unitpreference ?? "british"}\``,
                                         inline: true
                                     },
                                     {
@@ -137,7 +137,7 @@ module.exports = {
                 await button.deferUpdate();
             });
             collector.on("end", () => {
-                return currentMessage.removeButtons();
+                return infoMessage.removeButtons();
             });
         }
         else {
