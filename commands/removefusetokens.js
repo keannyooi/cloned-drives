@@ -4,6 +4,7 @@ const { SuccessMessage, ErrorMessage } = require("./sharedfiles/classes.js");
 const { searchUser } = require("./sharedfiles/secondary.js");
 const profileModel = require("../models/profileSchema.js");
 const bot = require("../config.js");
+const { botUserError } = require("./sharedfiles/primary.js");
 
 module.exports = {
     name: "removefusetokens",
@@ -18,24 +19,18 @@ module.exports = {
                 await removeTokens(message.mentions.users.first());
             }
             else {
-                const errorMessage = new ErrorMessage({
-                    channel: message.channel,
-                    title: "Error, user requested is a bot.",
-                    desc: "Bots can't play Cloned Drives.",
-                    author: message.author
-                });
-                return errorMessage.sendMessage();
+                return botUserError();
             }
         }
         else {
-            const userSaves = await profileModel.find({});
-            const availableUsers = await message.guild.members.fetch();
-            availableUsers.filter(user => userSaves.find(f => f.userID = user.id));
-            new Promise(resolve => resolve(searchUser(message, args[0].toLowerCase(), availableUsers)))
-                .then(async (hmm) => {
-                    if (!Array.isArray(hmm)) return;
-                    let [result, currentMessage] = hmm;
+            await new Promise(resolve => resolve(searchUser(message, args[0].toLowerCase())))
+                .then(async (response) => {
+                    if (!Array.isArray(response)) return;
+                    let [result, currentMessage] = response;
                     await removeTokens(result.user, currentMessage);
+                })
+                .catch(error => {
+                    throw error;
                 });
         }
 

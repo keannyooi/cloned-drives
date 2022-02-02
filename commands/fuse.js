@@ -30,7 +30,7 @@ module.exports = {
         if (args[0].toLowerCase() === "all" && args[1]) {
             startFrom = 1;
         }
-        else if (isNaN(args[0]) || !args[1]) {
+        else if (isNaN(args[0]) || !args[1] || parseInt(args[0]) > 10) {
             startFrom = 0;
         }
         else {
@@ -45,7 +45,7 @@ module.exports = {
             query = args.slice(startFrom, args.length).map(i => i.toLowerCase());
         }
 
-        new Promise(resolve => resolve(searchGarage({
+        await new Promise(resolve => resolve(searchGarage({
             message,
             query,
             garage: playerData.garage,
@@ -56,16 +56,14 @@ module.exports = {
             .then(async (hmm) => {
                 if (!Array.isArray(hmm)) return;
                 let [result, currentMessage] = hmm;
-                try {
-                    await fuse(result, amount, playerData, currentMessage);
-                }
-                catch (error) {
-                    throw error;
-                }
+                await fuse(result, amount, playerData, currentMessage);
+            })
+            .catch(error => {
+                throw error;
             });
 
         async function fuse(currentCar, amount, playerData, currentMessage) {
-            new Promise(resolve => resolve(selectUpgrade(message, currentCar, amount, currentMessage)))
+            await new Promise(resolve => resolve(selectUpgrade(message, currentCar, amount, currentMessage)))
                 .then(async (response) => {
                     if (!Array.isArray(response)) return;
                     const [upgrade, currentMessage] = response;

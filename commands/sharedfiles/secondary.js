@@ -376,14 +376,14 @@ async function searchGarage(args) {
                         for (let [key, value] of Object.entries(matchList[i].upgrades)) {
                             if (value !== 0) upgList += `${value}x ${key}, `;
                         }
-                        newLine += ` \`(${upgList.slice(0, -2)}, not enough to perform action)\`\n`;
+                        newLine += ` \`(${upgList.slice(0, -2)}, not enough to perform action)\``;
                     }
                     if (list.length + newLine.length > 1024) { //discord embed field value limit
                         list += "...etc";
                         break;
                     }
                     else {
-                        list += newLine;
+                        list += `${newLine}\n`;
                     }
                 }
 
@@ -741,15 +741,15 @@ function openPack(message, currentPack, currentMessage) {
             }
         }
 
-        let carFile = carFiles[Math.floor(Math.random() * carFiles.length)], counter = 0;
+        let carFile = carFiles[Math.floor(Math.random() * carFiles.length)], timeoutCounter = 0;
         currentCard = require(`../cars/${carFile}`);
-        while ((currentCard["rq"] < rqStart || currentCard["rq"] > rqEnd || filterCard(currentCard, cardFilter) === false) && counter < 10000) {
+        while ((currentCard["rq"] < rqStart || currentCard["rq"] > rqEnd || filterCard(currentCard, cardFilter) === false) && timeoutCounter < 10000) {
             carFile = carFiles[Math.floor(Math.random() * carFiles.length)];
             currentCard = require(`../cars/${carFile}`);
-            counter++;
+            timeoutCounter++;
         }
 
-        if (counter >= 10000) {
+        if (timeoutCounter >= 10000) {
             const errorScreen = new ErrorMessage({
                 channel: message.channel,
                 title: "Error, pack generation timed out likely due to no cars in generation pool.",

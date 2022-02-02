@@ -12,7 +12,7 @@ const profileModel = require("./models/profileSchema.js");
 const prefix = bot.devMode ? process.env.DEV_PREFIX : process.env.BOT_PREFIX;
 const token = bot.devMode ? process.env.DEV_TOKEN : process.env.BOT_TOKEN;
 // this is for testing purposes, the line below will be deleted once everything is complete
-const allowedCommands = ["benchmark.js", "carinfo.js", "calculate.js", "garage.js", "ping.js", "reload.js", "statistics.js", "addcar.js", "removecar.js", "addmoney.js", "removemoney.js", "carlist.js", "testpack.js", "trackinfo.js", "packinfo.js", "changetune.js", "upgrade.js", "fuse.js", "sell.js", "help.js", "filter.js", "settings.js", "sethand.js", "quickrace.js", "randomrace.js", "rewards.js"];
+const allowedCommands = ["benchmark.js", "carinfo.js", "calculate.js", "garage.js", "ping.js", "reload.js", "statistics.js", "addcar.js", "removecar.js", "addmoney.js", "removemoney.js", "carlist.js", "testpack.js", "openpack.js", "trackinfo.js", "packinfo.js", "changetune.js", "upgrade.js", "fuse.js", "sell.js", "help.js", "filter.js", "settings.js", "sethand.js", "quickrace.js", "randomrace.js", "rewards.js", "setwinstreak.js"];
 const commandFiles = readdirSync("./commands").filter(file => file.endsWith(".js"));
 
 commandFiles.forEach(function (file) {
@@ -52,7 +52,9 @@ bot.once("ready", async () => {
 bot.login(token);
 
 bot.on("messageCreate", async (message) => {
-    return processCommand(message);
+    //if (message.author.id === "494120116422967325") {
+        processCommand(message);
+    //}
 });
 
 bot.on("guildMemberAdd", async (member) => {
@@ -61,19 +63,26 @@ bot.on("guildMemberAdd", async (member) => {
 
 bot.on("messageUpdate", (oldMessage, newMessage) => {
     if (bot.awakenTime < oldMessage.createdTimestamp) {
-        return processCommand(newMessage);
+        //if (newMessage.author.id === "494120116422967325") {
+            processCommand(newMessage);
+        //}
     }
 });
 
 // for when i really done goofed up
+let fatalErrorCount = 0;
 process.on("uncaughtException", async error => {
     console.log(error.stack);
+    fatalErrorCount++
     const errorReport = new BotError({
         stack: error.stack,
         isFatal: true
     });
     await errorReport.sendReport();
-    process.exit(1);
+
+    if (fatalErrorCount >= 5) {
+        process.exit(1);
+    }
 });
 
 // loop thingy
@@ -133,8 +142,11 @@ process.on("uncaughtException", async error => {
 // }, 180000);
 
 async function processCommand(message) {
+    if (message.webhookId) return; //webhooks not allowed
+
+    const member = await bot.homeGuild.members.fetch(message.author.id);
     if (!message.content.toLowerCase().startsWith(prefix) || message.author.bot) return;
-    if (bot.devMode && !(message.member.roles.cache.has("711790752853655563") || message.member.roles.cache.has("915846116656959538"))) return;
+    if (bot.devMode && !(member.roles.cache.has("711790752853655563") || member.roles.cache.has("915846116656959538"))) return;
 
     const args = message.content.slice(prefix.length).split(/ +/);
     const commandName = args.shift().toLowerCase();
@@ -173,17 +185,17 @@ async function processCommand(message) {
 
     switch (command.category) {
         case "Admin":
-            if (!message.member.roles.cache.has("711790752853655563")) {
+            if (!member.roles.cache.has("711790752853655563")) {
                 return accessDenied(message, "711790752853655563");
             }
             break;
         case "Events":
-            if (!message.member.roles.cache.has("917685033995751435")) {
+            if (!member.roles.cache.has("917685033995751435")) {
                 return accessDenied(message, "917685033995751435");
             }
             break;
         case "Testing":
-            if (!message.member.roles.cache.has("915846116656959538")) {
+            if (!member.roles.cache.has("915846116656959538")) {
                 return accessDenied(message, "915846116656959538");
             }
             break;
@@ -258,7 +270,7 @@ async function processCommand(message) {
             author: message.author,
             fields: [{ name: "Currenty Executing", value: `\`${bot.execList[message.author.id]}\`` }]
         });
-        return errorMessage.sendMessage();
+        return errorMessage.sendMessage({ preserve: true });
     }
 }
 

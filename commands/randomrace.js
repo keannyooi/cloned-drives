@@ -4,7 +4,7 @@ const { MessageActionRow } = require("discord.js");
 const fs = require("fs");
 const carFiles = fs.readdirSync("./commands/cars").filter(file => file.endsWith(".json"));
 const tracks = fs.readdirSync("./commands/tracks").filter(file => file.endsWith(".json"));
-const { ErrorMessage, InfoMessage } = require("./sharedfiles/classes.js");
+const { InfoMessage } = require("./sharedfiles/classes.js");
 const { defaultChoiceTime } = require("./sharedfiles/consts.js");
 const { getButtons, race, handMissingError } = require("./sharedfiles/primary.js");
 const { createCar } = require("./sharedfiles/secondary.js");
@@ -16,7 +16,7 @@ module.exports = {
     aliases: ["rr"],
     usage: [],
     args: 0,
-    category: "Testing", // actual category Gameplay
+    category: "Gameplay",
     description: "Does a random race where you are faced with a randomly generated opponent on a randomly generated track. May the RNG be with you.",
     async execute(message) {
         const playerData = await profileModel.findOne({ userID: message.author.id });
@@ -24,13 +24,13 @@ module.exports = {
             return handMissingError();
         }
 
-        const filter = (button) => button.user.id === message.author.id;
         let { streak, highestStreak, opponent, trackID, reqs } = playerData.rrStats;
-        let reqList = "";
         if (!carFiles.includes(`${opponent.carID}.json`) || (streak > 75 && reqs === {})) {
             await randomize();
         }
 
+        const filter = (button) => button.user.id === message.author.id;
+        let reqList = "";
         for (let [key, value] of Object.entries(reqs)) {
             switch (typeof value) {
                 case "object":
@@ -68,6 +68,7 @@ module.exports = {
             title: "Ready to Play?",
             desc: `Track: ${track["trackName"]}, Requirements: ${reqList}`,
             author: message.author,
+            thumbnail: track["map"],
             fields: [
                 { name: "Your Hand", value: playerList, inline: true },
                 { name: "Opponent's Hand", value: opponentList, inline: true }
@@ -87,7 +88,6 @@ module.exports = {
                         reactionMessage.removeButtons();
                         let test = require(`./cars/${playerData.hand.carID}`), passed = true;
                         for (const [key, value] of Object.entries(reqs)) {
-                            console.log(key, value);
                             switch (typeof value) {
                                 case "object":
                                     if (test[`${key}`] < value.start || test[`${key}`] > value.end) {
@@ -115,10 +115,11 @@ module.exports = {
                                 default:
                                     break;
                             }
-                        }
-                        if (!passed) {
-                            intermission.editEmbed({ title: "Your hand does not meet the requirements." });
-                            return intermission.sendMessage({ currentMessage: reactionMessage });
+
+                            if (!passed) {
+                                intermission.editEmbed({ title: "Your hand does not meet the requirements." });
+                                return intermission.sendMessage({ currentMessage: reactionMessage });
+                            }
                         }
 
                         const result = await race(message, playerCar, opponentCar, track, playerData.settings.enablegraphics);
@@ -154,29 +155,26 @@ module.exports = {
                                 playerData.unclaimedRewards.push({
                                     money: reward + rqBonus,
                                     origin: "Random Races"
-                                });   
+                                });
                             }
                             message.channel.send(`**You have earned ${moneyEmoji}${reward} (+${moneyEmoji}${rqBonus} low RQ bonus)! Claim your reward using \`cd-rewards\`.**`);
                         }
                         else if (result < 0) {
                             streak = 0;
                         }
-
                         if (streak > highestStreak) {
                             highestStreak = streak;
                         }
 
                         await randomize();
                         await profileModel.updateOne({ userID: message.author.id }, {
-                            "$inc": {
-                                "rrStats.streak": 1,
-                            },
                             "$set": {
+                                "rrStats.streak": streak,
                                 "rrStats.highestStreak": highestStreak
                             },
                             unclaimedRewards: playerData.unclaimedRewards
                         });
-                        return;
+                        return bot.deleteID(message.author.id);
                     case "nop":
                         intermission.editEmbed({ title: "Action cancelled." });
                         return intermission.sendMessage({ currentMessage: reactionMessage });
@@ -305,12 +303,13 @@ module.exports = {
                 default:
                     break;
             }
+            opponent = { carID: opponentCarID.slice(0, 6), upgrade };
 
             await profileModel.updateOne({ userID: message.author.id }, {
                 "$set": {
-                    "rrStats.opponent": { carID: opponentCarID.slice(0, 6), upgrade },
+                    "rrStats.opponent": opponent,
                     "rrStats.trackID": trackID,
-                    "rrStats.reqs": {}
+                    "rrStats.reqs": criteria
                 }
             });
         }

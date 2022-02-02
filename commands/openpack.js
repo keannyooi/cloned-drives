@@ -13,8 +13,8 @@ module.exports = {
     aliases: ["buypack", "op"],
     usage: ["<pack name>", "-<pack id>"],
     args: 1,
-    category: "Gameplay",
-    cooldown: 4.388,
+    category: "Testing", // actual category Gameplay
+    cooldown: 5,
     description: "Opens a pack.",
     execute(message, args) {
         let query = args.map(i => i.toLowerCase());

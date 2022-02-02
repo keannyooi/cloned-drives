@@ -49,7 +49,7 @@ module.exports = {
                     default:
                         break;
                 }
-                infoMessage.addFields({ name: key, value: `\`${value}\``, inline: true });
+                infoMessage.editEmbed({ fields: [{ name: key, value: `\`${value}\``, inline: true }] });
             }
         }
         else {
@@ -268,7 +268,7 @@ module.exports = {
                                     delete filter[criteria2];
                                 }
                                 else {
-                                    infoMessage.addFields({ name: "Current Value(s)", value: `\`${filter[criteria2]}\`` });
+                                    infoMessage.editEmbed({ fields: [{ name: "Current Value(s)", value: `\`${filter[criteria2]}\`` }] });
                                 }
                             }
                             else {

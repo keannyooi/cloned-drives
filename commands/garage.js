@@ -2,7 +2,7 @@
 
 const { ErrorMessage, InfoMessage } = require("./sharedfiles/classes.js");
 const { defaultPageLimit } = require("./sharedfiles/consts.js");
-const { carNameGen, rarityCheck, calcTotal, sortCheck } = require("./sharedfiles/primary.js");
+const { carNameGen, rarityCheck, calcTotal, sortCheck, botUserError } = require("./sharedfiles/primary.js");
 const { searchUser, sortCars, filterCheck, listUpdate } = require("./sharedfiles/secondary.js");
 const profileModel = require("../models/profileSchema.js");
 
@@ -49,21 +49,12 @@ module.exports = {
                         }
                     }
                     else {
-                        const errorMessage = new ErrorMessage({
-                            channel: message.channel,
-                            title: "Error, user requested is a bot.",
-                            desc: "Bots can't play Cloned Drives.",
-                            author: message.author
-                        });
-                        return errorMessage.sendMessage();
+                        return botUserError();
                     }
                 }
                 else {
-                    const userSaves = await profileModel.find({});
-                    const availableUsers = await message.guild.members.fetch();
-                    availableUsers.filter(user => userSaves.find(f => f.userID = user.id));
                     userName = args[0].toLowerCase();
-                    await new Promise(resolve => resolve(searchUser(message, userName, availableUsers)))
+                    await new Promise(resolve => resolve(searchUser(message, userName)))
                         .then(async response => {
                             if (!Array.isArray(response)) return;
                             let [result, currentMessage] = response;

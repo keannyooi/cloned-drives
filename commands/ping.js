@@ -18,6 +18,6 @@ module.exports = {
                 { name: "API Latency", value: `\`${Math.round(message.client.ws.ping)}ms\``, inline: true }
             ]
         });
-        return pingMessage.sendMessage;
+        return pingMessage.sendMessage();
     }
 };

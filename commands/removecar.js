@@ -1,8 +1,8 @@
 "use strict";
 
-const { SuccessMessage, InfoMessage, ErrorMessage } = require("./sharedfiles/classes.js");
+const { SuccessMessage, InfoMessage } = require("./sharedfiles/classes.js");
 const { defaultChoiceTime } = require("./sharedfiles/consts.js");
-const { carNameGen, selectUpgrade, calcTotal, updateHands } = require("./sharedfiles/primary.js");
+const { carNameGen, selectUpgrade, calcTotal, updateHands, botUserError } = require("./sharedfiles/primary.js");
 const { searchGarage, searchUser, confirm } = require("./sharedfiles/secondary.js");
 const profileModel = require("../models/profileSchema.js");
 
@@ -13,30 +13,29 @@ module.exports = {
     args: 2,
     category: "Admin",
     description: "Removes one or more cars from someone's garage.",
-    async execute(message, args) {
+    execute(message, args) {
         if (message.mentions.users.first()) {
             if (!message.mentions.users.first().bot) {
-                await getCar(message.mentions.users.first());
+                try {
+                    getCar(message.mentions.users.first());
+                }
+                catch (error) {
+                    throw error;
+                }
             }
             else {
-                const errorMessage = new ErrorMessage({
-                    channel: message.channel,
-                    title: "Error, user requested is a bot.",
-                    desc: "Bots can't play Cloned Drives.",
-                    author: message.author
-                });
-                return errorMessage.sendMessage();
+                return botUserError();
             }
         }
         else {
-            const userSaves = await profileModel.find({});
-            const availableUsers = await message.guild.members.fetch();
-            availableUsers.filter(user => userSaves.find(f => f.userID = user.id));
-            new Promise(resolve => resolve(searchUser(message, args[0].toLowerCase(), availableUsers)))
-                .then(async (hmm) => {
-                    if (!Array.isArray(hmm)) return;
-                    let [result, currentMessage] = hmm;
-                    await getCar(result.user, currentMessage);
+            new Promise(resolve => resolve(searchUser(message, args[0].toLowerCase())))
+                .then(async (response) => {
+                    if (!Array.isArray(response)) return;
+                    let [result, currentMessage] = response;
+                    getCar(result.user, currentMessage);
+                })
+                .catch(error => {
+                    throw error;
                 });
         }
 
@@ -46,7 +45,7 @@ module.exports = {
             if (args[1].toLowerCase() === "all" && args[2]) {
                 startFrom = 2;
             }
-            else if (isNaN(args[1]) || !args[2]) {
+            else if (isNaN(args[1]) || !args[2] || parseInt(args[1]) > 10) {
                 startFrom = 1;
             }
             else {
@@ -61,7 +60,7 @@ module.exports = {
                 query = args.slice(startFrom, args.length).map(i => i.toLowerCase());
             }
 
-            new Promise(resolve => resolve(searchGarage({
+            await new Promise(resolve => resolve(searchGarage({
                 message,
                 query,
                 garage: playerData.garage,
@@ -69,20 +68,18 @@ module.exports = {
                 searchByID,
                 currentMessage
             })))
-                .then(async (hmm) => {
-                    if (!Array.isArray(hmm)) return;
-                    let [result, currentMessage] = hmm;
-                    try {
-                        await removeCar(user, result, amount, playerData, currentMessage);
-                    }
-                    catch (error) {
-                        throw error;
-                    }
+                .then(async (response) => {
+                    if (!Array.isArray(response)) return;
+                    let [result, currentMessage] = response;
+                    await removeCar(user, result, amount, playerData, currentMessage);
+                })
+                .catch(error => {
+                    throw error;
                 });
         }
 
         async function removeCar(user, currentCar, amount, playerData, currentMessage) {
-            new Promise(resolve => resolve(selectUpgrade(message, currentCar, amount, currentMessage)))
+            await new Promise(resolve => resolve(selectUpgrade(message, currentCar, amount, currentMessage)))
                 .then(async (response) => {
                     if (!Array.isArray(response)) return;
                     const [upgrade, currentMessage] = response;

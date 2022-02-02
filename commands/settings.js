@@ -51,75 +51,81 @@ module.exports = {
 
                         switch (button.values[0]) {
                             case "Gameplay":
-                                infoMessage.addFields([
-                                    {
-                                        name: "Disable Graphics (ID: \`disablegraphics\`)",
-                                        value: `Having this set to \`true\` skips through all bot-generated graphics. Perfect for faster loading times.
+                                infoMessage.editEmbed({
+                                    fields: [
+                                        {
+                                            name: "Disable Graphics (ID: \`disablegraphics\`)",
+                                            value: `Having this set to \`true\` skips through all bot-generated graphics. Perfect for faster loading times.
                                 **Value:** \`${settings.disablegraphics ?? false}\``,
-                                        inline: true
-                                    },
-                                    {
-                                        name: "Enable Daily Reward Notifications (ID: \`senddailynotifs\`)",
-                                        value: `Having this set to \`true\` enables automated DM notifications when your daily reward can be claimed.
+                                            inline: true
+                                        },
+                                        {
+                                            name: "Enable Daily Reward Notifications (ID: \`senddailynotifs\`)",
+                                            value: `Having this set to \`true\` enables automated DM notifications when your daily reward can be claimed.
                                 **Value:** \`${settings.senddailynotifs ?? false}\``,
-                                        inline: true
-                                    },
-                                    {
-                                        name: "Unit Preference (ID: \`unitpreference\`)",
-                                        value: `Lets you choose the unit system of your preference. Graphics aren't affected by this setting. The game uses British units by default and you can switch to metric and imperial units.
+                                            inline: true
+                                        },
+                                        {
+                                            name: "Unit Preference (ID: \`unitpreference\`)",
+                                            value: `Lets you choose the unit system of your preference. Graphics aren't affected by this setting. The game uses British units by default and you can switch to metric and imperial units.
                                         **Value:** \`${settings.unitpreference ?? "british"}\``,
-                                        inline: true
-                                    },
-                                    {
-                                        name: "Button Style (ID: \`buttonstyle\`)",
-                                        value: `Lets you choose the button style of your preference. The \`default\` style gives a more modern look with Discord's new embed buttons while the \`classic\` style resembles old-school emoji buttons.
+                                            inline: true
+                                        },
+                                        {
+                                            name: "Button Style (ID: \`buttonstyle\`)",
+                                            value: `Lets you choose the button style of your preference. The \`default\` style gives a more modern look with Discord's new embed buttons while the \`classic\` style resembles old-school emoji buttons.
                                         **Value:** \`${settings.buttonstyle ?? "default"}\``,
-                                        inline: true
-                                    },
-                                ]);
+                                            inline: true
+                                        }
+                                    ]
+                                });
                                 break;
                             case "Garage + Lists":
-                                infoMessage.addFields([
-                                    {
-                                        name: "Disable Filter for Garage (ID: \`disablegaragefilter\`)",
-                                        value: `Having this set to \`true\` disables your current filter when viewing your (or other people's) garage.
-                                **Value:** \`${settings.disablegaragefilter ?? false}\``,
-                                        inline: true
-                                    },
-                                    {
-                                        name: "Disable Filter for Car List (ID: \`disablecarlistfilter\`)",
-                                        value: `Having this set to \`true\` disables your current filter when viewing the car list.
-                                **Value:** \`${settings.disablecarlistfilter ?? false}\``,
-                                        inline: true
-                                    },
-                                    {
-                                        name: "Hide Black Market Cars (ID: \`hidebmcars\`)",
-                                        value: `(This is WIP, doesn't do anything currently)
-                                        **Value:** \`${settings.hidebmcars ?? false}\``,
-                                        inline: true
-                                    },
-                                    {
-                                        name: "Sorting Order (ID: \`sortorder\`)",
-                                        value: `Lets you choose to sort either by ascending or descending.
-                                        **Value:** \`${settings.sortorder ?? "descending"}\``,
-                                        inline: true
-                                    },
-                                    {
-                                        name: "Amount of Items Listed Per Page (ID: \`listamount\`)",
-                                        value: `Lets you choose the amount of items listed per page. Values are restricted between \`5\` and \`10\`.
-                                        **Value:** \`${settings.listamount ?? 10}\``,
-                                        inline: true
-                                    },
-                                ]);
+                                infoMessage.editEmbed({
+                                    fields: [
+                                        {
+                                            name: "Disable Filter for Garage (ID: \`disablegaragefilter\`)",
+                                            value: `Having this set to \`true\` disables your current filter when viewing your (or other people's) garage.
+                                    **Value:** \`${settings.disablegaragefilter ?? false}\``,
+                                            inline: true
+                                        },
+                                        {
+                                            name: "Disable Filter for Car List (ID: \`disablecarlistfilter\`)",
+                                            value: `Having this set to \`true\` disables your current filter when viewing the car list.
+                                    **Value:** \`${settings.disablecarlistfilter ?? false}\``,
+                                            inline: true
+                                        },
+                                        {
+                                            name: "Hide Black Market Cars (ID: \`hidebmcars\`)",
+                                            value: `(This is WIP, doesn't do anything currently)
+                                            **Value:** \`${settings.hidebmcars ?? false}\``,
+                                            inline: true
+                                        },
+                                        {
+                                            name: "Sorting Order (ID: \`sortorder\`)",
+                                            value: `Lets you choose to sort either by ascending or descending.
+                                            **Value:** \`${settings.sortorder ?? "descending"}\``,
+                                            inline: true
+                                        },
+                                        {
+                                            name: "Amount of Items Listed Per Page (ID: \`listamount\`)",
+                                            value: `Lets you choose the amount of items listed per page. Values are restricted between \`5\` and \`10\`.
+                                            **Value:** \`${settings.listamount ?? 10}\``,
+                                            inline: true
+                                        }
+                                    ]
+                                });
                                 break;
                             case "Profile":
-                                infoMessage.addFields([
-                                    {
-                                        name: "About Me (ID: \`bio\`)",
-                                        value: "Tells people who you are when doing \`cd-stats\`.",
-                                        inline: true
-                                    }
-                                ]);
+                                infoMessage.editEmbed({
+                                    fields: [
+                                        {
+                                            name: "About Me (ID: \`bio\`)",
+                                            value: "Tells people who you are when doing \`cd-stats\`.",
+                                            inline: true
+                                        }
+                                    ]
+                                });
                                 break;
                             default:
                                 break;
@@ -177,7 +183,7 @@ module.exports = {
                     }
                     else if (argument === "false") {
                         delete settings[setting];
-                    } 
+                    }
                     else {
                         let errorMessage = new ErrorMessage({
                             channel: message.channel,
@@ -225,7 +231,7 @@ module.exports = {
                     }
                     else if (argument === "descending") {
                         delete settings[setting];
-                    } 
+                    }
                     else {
                         let errorMessage = new ErrorMessage({
                             channel: message.channel,
@@ -248,7 +254,7 @@ module.exports = {
                     }
                     else if (argument === "default") {
                         delete settings[setting];
-                    } 
+                    }
                     else {
                         let errorMessage = new ErrorMessage({
                             channel: message.channel,

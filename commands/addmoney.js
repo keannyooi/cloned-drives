@@ -1,6 +1,7 @@
 "use strict";
 
 const { SuccessMessage, ErrorMessage } = require("./sharedfiles/classes.js");
+const { botUserError } = require("./sharedfiles/primary.js");
 const { searchUser } = require("./sharedfiles/secondary.js");
 const profileModel = require("../models/profileSchema.js");
 const bot = require("../config.js");
@@ -17,25 +18,18 @@ module.exports = {
                 await addMoney(message.mentions.users.first());
             }
             else {
-                const errorMessage = new ErrorMessage({
-                    channel: message.channel,
-                    title: "Error, user requested is a bot.",
-                    desc: "Bots can't play Cloned Drives.",
-                    author: message.author
-                });
-                return errorMessage.sendMessage();
+                return botUserError();
             }
         }
         else {
-            const userSaves = await profileModel.find({});
-            const availableUsers = await message.guild.members.fetch();
-            availableUsers.filter(user => userSaves.find(f => f.userID = user.id));
-
-            new Promise(resolve => resolve(searchUser(message, args[0].toLowerCase(), availableUsers)))
+            await new Promise(resolve => resolve(searchUser(message, args[0].toLowerCase())))
                 .then(async (hmm) => {
                     if (!Array.isArray(hmm)) return;
                     let [result, currentMessage] = hmm;
                     await addMoney(result.user, currentMessage);
+                })
+                .catch(error => {
+                    throw error;
                 });
         }
 

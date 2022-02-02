@@ -3,7 +3,7 @@
 const fs = require("fs");
 const carFiles = fs.readdirSync("./commands/cars").filter(file => file.endsWith('.json'));
 const { SuccessMessage, ErrorMessage } = require("./sharedfiles/classes.js");
-const { carNameGen, addCars } = require("./sharedfiles/primary.js");
+const { carNameGen, addCars, botUserError } = require("./sharedfiles/primary.js");
 const { search, searchUser } = require("./sharedfiles/secondary.js");
 const profileModel = require("../models/profileSchema.js");
 
@@ -19,20 +19,14 @@ module.exports = {
                 await getCar(message.mentions.users.first());
             }
             else {
-                const errorMessage = new ErrorMessage({
-                    channel: message.channel,
-                    title: "Error, user requested is a bot.",
-                    desc: "Bots can't play Cloned Drives.",
-                    author: message.author
-                });
-                return errorMessage.sendMessage();
+                return botUserError();
             }
         }
         else {
             await new Promise(resolve => resolve(searchUser(message, args[0].toLowerCase())))
-                .then(async (hmm) => {
-                    if (!Array.isArray(hmm)) return;
-                    let [result, currentMessage] = hmm;
+                .then(async (response) => {
+                    if (!Array.isArray(response)) return;
+                    let [result, currentMessage] = response;
                     await getCar(result.user, currentMessage);
                 })
                 .catch(error => {

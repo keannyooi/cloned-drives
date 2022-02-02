@@ -27,13 +27,10 @@ module.exports = {
         new Promise(resolve => resolve(search(message, query, carFiles, searchBy)))
             .then(async (response) => {
                 if (!Array.isArray(response)) return;
-                let [result, currentMessage] = response;
-                try {
-                    await displayInfo(result, currentMessage);
-                }
-                catch (error) {
-                    throw error;
-                }
+                await displayInfo(...response);
+            })
+            .catch(error => {
+                throw error;
             });
 
         async function displayInfo(car, currentMessage) {

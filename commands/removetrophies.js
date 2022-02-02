@@ -12,7 +12,7 @@ module.exports = {
     args: 2,
     category: "Admin",
     description: "Removes a certain amount of trophies from someone.",
-    execute(message, args) {
+    async execute(message, args) {
         if (message.mentions.users.first()) {
             if (!message.mentions.users.first().bot) {
                 await removeTrophies(message.mentions.users.first());
@@ -28,14 +28,14 @@ module.exports = {
             }
         }
         else {
-            const userSaves = await profileModel.find({});
-            const availableUsers = await message.guild.members.fetch();
-            availableUsers.filter(user => userSaves.find(f => f.userID = user.id));
-            new Promise(resolve => resolve(searchUser(message, args[0].toLowerCase(), availableUsers)))
-                .then(async (hmm) => {
-                    if (!Array.isArray(hmm)) return;
-                    let [result, currentMessage] = hmm;
+            await new Promise(resolve => resolve(searchUser(message, args[0].toLowerCase())))
+                .then(async (response) => {
+                    if (!Array.isArray(response)) return;
+                    let [result, currentMessage] = response;
                     await removeTrophies(result.user, currentMessage);
+                })
+                .catch(error => {
+                    throw error;
                 });
         }
 

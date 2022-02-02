@@ -13,8 +13,7 @@ module.exports = {
     category: "Configuration",
     description: "Sets your hand for quick race, random race and event gamemodes.",
     async execute(message, args) {
-        const playerData = await profileModel.findOne({ userID: message.author.id });
-        const garage = playerData.garage;
+        const { garage } = await profileModel.findOne({ userID: message.author.id });
         if (args[0].toLowerCase() === "random") {
             let randomCar = garage[Math.floor(Math.random() * garage.length)];
             let randomTune = Object.keys(randomCar.upgrades).filter(u => randomCar.upgrades[u] > 0);
@@ -30,31 +29,30 @@ module.exports = {
                 query = args.map(i => i.toLowerCase());
             }
 
-            new Promise(resolve => resolve(searchGarage({
+            await new Promise(resolve => resolve(searchGarage({
                 message,
                 query,
                 garage,
                 amount: 1,
                 searchByID
             })))
-                .then(async (response) => {
+                .then(response => {
                     if (!Array.isArray(response)) return;
-                    let [result, currentMessage] = response;
-                    try {
-                        await chooseTune(result, currentMessage);
-                    }
-                    catch (error) {
-                        throw error;
-                    }
+                    chooseTune(...response);
+                })
+                .catch(error => {
+                    throw error;
                 });
         }
 
-        async function chooseTune(currentCar, currentMessage) {
+        function chooseTune(currentCar, currentMessage) {
             new Promise(resolve => resolve(selectUpgrade(message, currentCar, 1, currentMessage)))
                 .then(async (response) => {
                     if (!Array.isArray(response)) return;
-                    const [upgrade, currentMessage] = response;
-                    await setHand(currentCar, upgrade, currentMessage)
+                    await setHand(currentCar, ...response)
+                })
+                .catch(error => {
+                    throw error;
                 });
         }
 

@@ -10,7 +10,7 @@ module.exports = {
     name: "rewards",
     usage: [],
     args: 0,
-    category: "Testing", // actual category Gameplay
+    category: "Gameplay",
     description: "Collects your rewards from random races, events and challenges.",
     async execute(message) {
         const moneyEmoji = bot.emojis.cache.get("726017235826770021");
@@ -62,7 +62,7 @@ module.exports = {
                         break;
                 }
 
-                if (rewardLog.length + line.length > 4096) { // discord embed desc limit
+                if (rewardLog.length + line.length < 4096) { // discord embed desc limit
                     rewardLog += `Received **${moneyEmoji}${reward.money}** from **${origin}**\n`;
                 }
                 else if (!limitExceeded) {

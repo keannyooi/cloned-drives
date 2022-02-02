@@ -23,16 +23,13 @@ module.exports = {
         }
 
         new Promise(resolve => resolve(search(message, query, trackFiles, searchBy)))
-            .then(async (hmm) => {
-                if (!Array.isArray(hmm)) return;
-                let [result, currentMessage] = hmm;
-                try {
-                    displayInfo(result, currentMessage);
-                }
-                catch (error) {
-                    throw error;
-                }
-            });
+            .then(async (response) => {
+                if (!Array.isArray(response)) return;
+                displayInfo(...response);
+            })
+            .catch(error => {
+                throw error;
+            })
         
         function displayInfo(track, currentMessage) {
             let currentTrack = require(`./tracks/${track}`);

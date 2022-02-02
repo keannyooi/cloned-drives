@@ -26,46 +26,34 @@ module.exports = {
         }
 
         const playerData = await profileModel.findOne({ userID: message.author.id });
-        let query, amount = 1, startFrom, searchByID = false;
-        if (args[0].toLowerCase() === "all" && args[1]) {
-            startFrom = 1;
-        }
-        else if (isNaN(args[0]) || !args[1]) {
-            startFrom = 0;
-        }
-        else {
-            amount = Math.ceil(parseInt(args[0]));
-            startFrom = 1;
-        }
-        if (args[startFrom].toLowerCase().startsWith("-c")) {
-            query = [args[startFrom].toLowerCase().slice(1)];
+        let query, searchByID = false;
+        if (args[0].toLowerCase().startsWith("-c")) {
+            query = [args[0].toLowerCase().slice(1)];
             searchByID = true;
         }
         else {
-            query = args.slice(startFrom, args.length - 1).map(i => i.toLowerCase());
+            query = args.slice(0, args.length - 1).map(i => i.toLowerCase());
         }
 
-        new Promise(resolve => resolve(searchGarage({
+        await new Promise(resolve => resolve(searchGarage({
             message,
             query,
             garage: playerData.garage,
-            amount,
+            amount: 1,
             searchByID
         })))
-            .then(async (hmm) => {
-                if (!Array.isArray(hmm)) return;
-                let [result, currentMessage] = hmm;
-                try {
-                    await upgradeCar(result, playerData, currentMessage);
-                }
-                catch (error) {
-                    throw error;
-                }
+            .then(async response => {
+                if (!Array.isArray(response)) return;
+                let [result, currentMessage] = response;
+                await upgradeCar(result, playerData, currentMessage);
+            })
+            .catch(error => {
+                throw error;
             });
 
         async function upgradeCar(currentCar, playerData, currentMessage) {
             let upgrade = args[args.length - 1];
-            new Promise(resolve => resolve(selectUpgrade(message, currentCar, 1, currentMessage, upgrade)))
+            await new Promise(resolve => resolve(selectUpgrade(message, currentCar, 1, currentMessage, upgrade)))
                 .then(async (response) => {
                     if (!Array.isArray(response)) return;
                     const [origUpgrade, currentMessage] = response;

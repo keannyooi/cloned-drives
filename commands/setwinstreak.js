@@ -1,149 +1,60 @@
 "use strict";
-/*
- __  ___  _______     ___      .__   __. .__   __. ____    ____
-|  |/  / |   ____|   /   \     |  \ |  | |  \ |  | \   \  /   /
-|  '  /  |  |__     /  ^  \    |   \|  | |   \|  |  \   \/   /
-|    <   |   __|   /  /_\  \   |  . `  | |  . `  |   \_    _/
-|  .  \  |  |____ /  _____  \  |  |\   | |  |\   |     |  |
-|__|\__\ |_______/__/     \__\ |__| \__| |__| \__|     |__| 	(this is a watermark that proves that these lines of code are mine)
-*/
-const Discord = require("discord.js-light");
+
+const { ErrorMessage, SuccessMessage } = require("./sharedfiles/classes.js");
+const { botUserError } = require("./sharedfiles/primary.js");
+const { searchUser } = require("./sharedfiles/secondary.js");
+const profileModel = require("../models/profileSchema.js");
+
 module.exports = {
     name: "setwinstreak",
-    usage: "<username> | <amount>",
+    usage: ["<username> | <amount>"],
     args: 2,
     category: "Admin",
     description: "Sets a player's win streak to a certain number.",
-    execute(message, args) {
-        const filter = response => {
-            return response.author.id === message.author.id;
-        };
+    async execute(message, args) {
         if (message.mentions.users.first()) {
             if (!message.mentions.users.first().bot) {
-                editStuff(message.mentions.users.first());
+                await editWinStreak(message.mentions.users.first());
             }
             else {
-                message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                const errorMessage = new Discord.MessageEmbed()
-                    .setColor("#fc0303")
-                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                    .setTitle("Error, user requested is a bot.")
-                    .setDescription("Bots can't play Cloned Drives.")
-                    .setTimestamp();
-                return message.channel.send(errorMessage);
+                return botUserError();
             }
         }
         else {
-            let userName = args[0].toLowerCase();
-            let userList = [];
-            message.guild.members.cache.forEach(User => {
-                if ((User.displayName.toLowerCase().includes(userName) || User.user.username.toLowerCase().includes(userName)) && !User.user.bot) {
-                    userList.push(User.user);
+            await new Promise(resolve => resolve(searchUser(message, args[0].toLowerCase())))
+                .then(async (response) => {
+                    if (!Array.isArray(response)) return;
+                    let [result, currentMessage] = response;
+                    await editWinStreak(result.user, currentMessage);
+                })
+                .catch(error => {
+                    throw error;
+                });
+        }
+
+        async function editWinStreak(user, currentMessage) {
+            if (isNaN(args[1]) || Math.ceil(parseInt(args[1])) < 0) {
+                const errorMessage = new ErrorMessage({
+                    channel: message.channel,
+                    title: "Error, win streak requested is either not a number or inapplicable.",
+                    desc: "Win streaks should be a number bigger or equal to 0.",
+                    author: message.author
+                }).displayClosest(args[1]);
+                return errorMessage.sendMessage({ currentMessage });
+            }
+
+            await profileModel.updateOne({ userID: user.id }, {
+                "$set": {
+                    "rrStats.streak": parseInt(args[1])
                 }
             });
-            if (userList.length > 1) {
-                let textList = "";
-                for (i = 1; i <= userList.length; i++) {
-                    textList += `${i} - ${userList[i - 1].tag}\n`;
-                }
-                if (textList.length > 2048) {
-                    message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                    const errorMessage = new Discord.MessageEmbed()
-                        .setColor("#fc0303")
-                        .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                        .setTitle("Error, too many search results.")
-                        .setDescription("Due to Discord's embed limitations, the bot isn't able to show the full list of search results. Try again with a more specific keyword.")
-                        .addField("Total Characters in List", `\`${textList.length}\` > \`2048\``)
-                        .setTimestamp();
-                    return message.channel.send(errorMessage);
-                }
-                const infoScreen = new Discord.MessageEmbed()
-                    .setColor("#34aeeb")
-                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                    .setTitle("Multiple users found, please type one of the following.")
-                    .setDescription(textList)
-                    .setTimestamp();
-                message.channel.send(infoScreen).then(currentMessage => {
-                    message.channel.awaitMessages(filter, {
-                        max: 1,
-                        time: 30000,
-                        errors: ["time"]
-                    })
-                        .then(collected => {
-                        collected.first().delete();
-                        if (isNaN(collected.first().content) || parseInt(collected.first().content) > userList.length || parseInt(collected.first().content) < 1) {
-                            message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                            const errorMessage = new Discord.MessageEmbed()
-                                .setColor("#fc0303")
-                                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                                .setTitle("Error, invalid integer provided.")
-                                .setDescription("It looks like your response was either not a number or not part of the selection.")
-                                .addField("Number Received", `\`${collected.first().content}\` (either not a number, smaller than 1 or bigger than ${userList.length})`)
-                                .setTimestamp();
-                            return currentMessage.edit(errorMessage);
-                        }
-                        else {
-                            editStuff(userList[parseInt(collected.first().content) - 1], currentMessage);
-                        }
-                    })
-                        .catch(() => {
-                        message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                        const cancelMessage = new Discord.MessageEmbed()
-                            .setColor("#34aeeb")
-                            .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                            .setTitle("Action cancelled automatically.")
-                            .setTimestamp();
-                        return currentMessage.edit(cancelMessage);
-                    });
-                });
-            }
-            else if (userList.length > 0) {
-                editStuff(userList[0]);
-            }
-            else {
-                message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                const errorMessage = new Discord.MessageEmbed()
-                    .setColor("#fc0303")
-                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                    .setTitle("Error, 404 user not found.")
-                    .setDescription("It looks like this user isn't in this server.")
-                    .addField("Keywords Received", `\`${userName}\``)
-                    .setTimestamp();
-                return message.channel.send(errorMessage);
-            }
-        }
-        async function editStuff(user, currentMessage) {
-            if (isNaN(args[1]) || Math.ceil(parseInt(args[1])) < 0) {
-                message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                const errorMessage = new Discord.MessageEmbed()
-                    .setColor("#fc0303")
-                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                    .setTitle("Error, win streak requested is either not a number or inapplicable.")
-                    .setDescription("Win streaks should be a number bigger or equal to 0.")
-                    .setTimestamp();
-                if (currentMessage) {
-                    return currentMessage.edit(errorMessage);
-                }
-                else {
-                    return message.channel.send(errorMessage);
-                }
-            }
-            const db = message.client.db;
-            await db.set(`acc${user.id}.rrWinStreak`, Math.ceil(parseInt(args[1])));
-            const infoScreen = new Discord.MessageEmbed()
-                .setColor("#03fc24")
-                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle(`Successfully set ${user.username}'s win streak to ${args[1]}!`)
-                .setThumbnail(user.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTimestamp();
-            message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-            if (currentMessage) {
-                return currentMessage.edit(infoScreen);
-            }
-            else {
-                return message.channel.send(infoScreen);
-            }
+            const successMessage = new SuccessMessage({
+                channel: message.channel,
+                title: `Successfully set ${user.username}'s win streak to ${args[1]}!`,
+                author: message.author,
+                thumbnail: user.displayAvatarURL({ format: "png", dynamic: true })
+            });
+            return successMessage.sendMessage({ currentMessage });
         }
     }
 };
-//# sourceMappingURL=setwinstreak.js.map

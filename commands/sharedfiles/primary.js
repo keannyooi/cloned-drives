@@ -356,8 +356,8 @@ async function race(message, player, opponent, currentTrack, disablegraphics) {
         }
     }
 
-    const result = evalScore(player, opponent, currentTrack);
-    const raceInfo = compare(player, opponent, currentTrack, (result > 0));
+    const result = evalScore(player, opponent);
+    const raceInfo = compare(player, opponent, (result > 0));
     let resultMessage;
     if (result > 0) {
         resultMessage = new SuccessMessage({
@@ -386,7 +386,7 @@ async function race(message, player, opponent, currentTrack, disablegraphics) {
         });
     }
 
-    await resultMessage.sendMessage({ attachment });
+    await resultMessage.sendMessage({ attachment, preserve: true });
     return result;
 
     function compare(player, opponent, playerWon) {
@@ -564,6 +564,16 @@ async function handMissingError() {
     return errorMessage.sendMessage();
 }
 
+async function botUserError() {
+    const errorMessage = new ErrorMessage({
+        channel: message.channel,
+        title: "Error, user requested is a bot.",
+        desc: "Bots can't play Cloned Drives.",
+        author: message.author
+    });
+    return errorMessage.sendMessage();
+}
+
 module.exports = {
     rarityCheck,
     carNameGen,
@@ -577,5 +587,6 @@ module.exports = {
     sortCheck,
     getFlag,
     race,
-    handMissingError
+    handMissingError,
+    botUserError
 };

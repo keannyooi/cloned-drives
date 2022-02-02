@@ -134,7 +134,8 @@ module.exports = {
                     });
 
                     await intermission.sendMessage({ currentMessage, preserve: true });
-                    return race(message, playerCar, opponentCar, currentTrack, playerData.settings.disablegraphics);
+                    await race(message, playerCar, opponentCar, currentTrack, playerData.settings.disablegraphics);
+                    return bot.deleteID(message.author.id);
                 });
         }
     }
