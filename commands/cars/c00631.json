@@ -1,11 +1,11 @@
 {
-    "rq": 94,
+    "rq": 93,
     "make": "Koenigsegg",
     "model": "Agera R",
     "modelYear": 2011,
     "country": "SE",
     "topSpeed": 273,
-    "0to60": 2.7,
+    "0to60": 2.8,
     "handling": 92,
     "driveType": "RWD",
     "tyreType": "Performance",
@@ -24,31 +24,31 @@
     "ola": 118.52,
     "description": "Card by Aqo.",
 
-    "card": "https://cdn.discordapp.com/attachments/819199720249360384/844556429297451028/agerar.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/844556804767088720/AgeraR.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/844556813575389214/AgeraR333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/844556819875889233/AgeraR666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/844556845967998976/AgeraR996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/844556836707106876/AgeraR969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/844556829312417792/AgeraR699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/932607745008472064/agerar.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/932607780173533274/stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/932607805263843348/333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/932607826809987093/666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/932607895554621490/996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/932607871844253776/969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/932607849807351898/699.png",
 
     "333TopSpeed": 275,
-    "3330to60": 2.6,
+    "3330to60": 2.7,
     "333Handling": 95,
 
     "666TopSpeed": 277,
-    "6660to60": 2.4,
+    "6660to60": 2.5,
     "666Handling": 98,
 
     "996TopSpeed": 279,
-    "9960to60": 2.3,
+    "9960to60": 2.4,
     "996Handling": 98,
 
     "969TopSpeed": 279,
-    "9690to60": 2.4,
+    "9690to60": 2.5,
     "969Handling": 102,
 
     "699TopSpeed": 277,
-    "6990to60": 2.3,
+    "6990to60": 2.4,
     "699Handling": 102
 }
