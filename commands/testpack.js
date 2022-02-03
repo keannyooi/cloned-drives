@@ -12,7 +12,7 @@ module.exports = {
     category: "Miscellaneous",
     cooldown: 5,
     description: "Opens a pack, however the cars in said pack won't be added into your garage and you won't be charged. Perfect for those who have a gambling addiction.",
-    execute(message, args) {
+    async execute(message, args) {
         let query = args.map(i => i.toLowerCase());
         if (args[0].toLowerCase() === "random") {
             let currentPack = require(`./packs/${Math.floor(Math.random() * packFiles.length)}`);
@@ -20,7 +20,7 @@ module.exports = {
             return message.channel.send("**Note: Since you opened this pack using `cd-testpack`, these cars won't be added into your garage and you won't be charged with money.**");
         }
 
-        new Promise(resolve => resolve(search(message, query, packFiles, "pack")))
+        await new Promise(resolve => resolve(search(message, query, packFiles, "pack")))
             .then(async (response) => {
                 if (!Array.isArray(response)) return;
                 let [result, currentMessage] = response;

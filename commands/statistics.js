@@ -25,7 +25,7 @@ module.exports = {
                     }
                 }
                 else {
-                    return botUserError();
+                    return botUserError(message);
                 }
             }
             else {

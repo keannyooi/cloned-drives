@@ -36,18 +36,18 @@ module.exports = {
                 amount: 1,
                 searchByID
             })))
-                .then(response => {
+                .then(async response => {
                     if (!Array.isArray(response)) return;
-                    chooseTune(...response);
+                    await chooseTune(...response);
                 })
                 .catch(error => {
                     throw error;
                 });
         }
 
-        function chooseTune(currentCar, currentMessage) {
-            new Promise(resolve => resolve(selectUpgrade(message, currentCar, 1, currentMessage)))
-                .then(async (response) => {
+        async function chooseTune(currentCar, currentMessage) {
+            await new Promise(resolve => resolve(selectUpgrade(message, currentCar, 1, currentMessage)))
+                .then(async response => {
                     if (!Array.isArray(response)) return;
                     await setHand(currentCar, ...response)
                 })

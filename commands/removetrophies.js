@@ -1,6 +1,7 @@
 "use strict";
 
 const { SuccessMessage, ErrorMessage } = require("./sharedfiles/classes.js");
+const { botUserError } = require("./sharedfiles/primary.js");
 const { searchUser } = require("./sharedfiles/secondary.js");
 const profileModel = require("../models/profileSchema.js");
 const bot = require("../config.js");
@@ -18,13 +19,7 @@ module.exports = {
                 await removeTrophies(message.mentions.users.first());
             }
             else {
-                const errorMessage = new ErrorMessage({
-                    channel: message.channel,
-                    title: "Error, user requested is a bot.",
-                    desc: "Bots can't play Cloned Drives.",
-                    author: message.author
-                });
-                return errorMessage.sendMessage();
+                return botUserError(message);
             }
         }
         else {

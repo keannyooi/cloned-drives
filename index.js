@@ -12,7 +12,7 @@ const profileModel = require("./models/profileSchema.js");
 const prefix = bot.devMode ? process.env.DEV_PREFIX : process.env.BOT_PREFIX;
 const token = bot.devMode ? process.env.DEV_TOKEN : process.env.BOT_TOKEN;
 // this is for testing purposes, the line below will be deleted once everything is complete
-const allowedCommands = ["benchmark.js", "carinfo.js", "calculate.js", "garage.js", "ping.js", "reload.js", "statistics.js", "addcar.js", "removecar.js", "addmoney.js", "removemoney.js", "carlist.js", "testpack.js", "openpack.js", "trackinfo.js", "packinfo.js", "changetune.js", "upgrade.js", "fuse.js", "sell.js", "help.js", "filter.js", "settings.js", "sethand.js", "quickrace.js", "randomrace.js", "rewards.js", "setwinstreak.js"];
+const allowedCommands = ["benchmark.js", "carinfo.js", "calculate.js", "garage.js", "ping.js", "reload.js", "statistics.js", "addcar.js", "removecar.js", "addmoney.js", "addfusetokens.js", "removefusetokens.js", "removemoney.js", "carlist.js", "testpack.js", "openpack.js", "trackinfo.js", "packinfo.js", "changetune.js", "upgrade.js", "fuse.js", "sell.js", "help.js", "filter.js", "settings.js", "sethand.js", "quickrace.js", "randomrace.js", "rewards.js", "setwinstreak.js"];
 const commandFiles = readdirSync("./commands").filter(file => file.endsWith(".js"));
 
 commandFiles.forEach(function (file) {
@@ -142,9 +142,20 @@ process.on("uncaughtException", async error => {
 // }, 180000);
 
 async function processCommand(message) {
-    if (message.webhookId) return; //webhooks not allowed
+    if (message.webhookId !== null || !bot.homeGuild) return; //webhooks not allowed
 
-    const member = await bot.homeGuild.members.fetch(message.author.id);
+    const member = await bot.homeGuild.members.fetch(message.author.id)
+        .catch(() => {
+            if (message.content.toLowerCase().startsWith(prefix)) {
+                const errorMessage = new ErrorMessage({
+                    channel: message.channel,
+                    title: "Error, you are required to be in the Cloned Drives discord server to use this bot.",
+                    desc: "Join the Discord server now to unlock access to the bot: https://discord.gg/PHgPyed",
+                    author: message.author
+                });
+                return errorMessage.sendMessage();
+            }
+        });
     if (!message.content.toLowerCase().startsWith(prefix) || message.author.bot) return;
     if (bot.devMode && !(member.roles.cache.has("711790752853655563") || member.roles.cache.has("915846116656959538"))) return;
 
@@ -158,28 +169,6 @@ async function processCommand(message) {
             desc: "It looks like this command doesn't exist. Try using \`cd-help\` to find the command you are looking for.",
             author: message.author
         }).displayClosest(commandName, commandFiles.map(i => i.slice(0, -3)));
-        return errorMessage.sendMessage();
-    }
-
-    try {
-        let hasProfile = await profileModel.findOne({ userID: message.author.id });
-        if (!hasProfile) {
-            const errorMessage = new ErrorMessage({
-                channel: message.channel,
-                title: "Error, the bot has no record of you in the Cloned Drives discord server.",
-                desc: "Join the Discord server now to unlock access to the bot: https://discord.gg/PHgPyed",
-                author: message.author
-            });
-            return errorMessage.sendMessage();
-        }
-    }
-    catch (error) {
-        const errorMessage = new ErrorMessage({
-            channel: message.channel,
-            title: "Error, failed to perform record check.",
-            desc: "Your connection is probably slow or unstable right now, please try again later.",
-            author: message.author
-        });
         return errorMessage.sendMessage();
     }
 

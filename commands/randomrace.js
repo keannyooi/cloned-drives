@@ -21,7 +21,7 @@ module.exports = {
     async execute(message) {
         const playerData = await profileModel.findOne({ userID: message.author.id });
         if (playerData.hand.carID === "") {
-            return handMissingError();
+            return handMissingError(message);
         }
 
         let { streak, highestStreak, opponent, trackID, reqs } = playerData.rrStats;

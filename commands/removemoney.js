@@ -19,7 +19,7 @@ module.exports = {
                 await removeMoney(message.mentions.users.first());
             }
             else {
-                return botUserError();
+                return botUserError(message);
             }
         }
         else {

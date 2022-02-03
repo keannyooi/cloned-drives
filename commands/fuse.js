@@ -53,9 +53,9 @@ module.exports = {
             searchByID,
             restrictedMode: true
         })))
-            .then(async (hmm) => {
-                if (!Array.isArray(hmm)) return;
-                let [result, currentMessage] = hmm;
+            .then(async (response) => {
+                if (!Array.isArray(response)) return;
+                let [result, currentMessage] = response;
                 await fuse(result, amount, playerData, currentMessage);
             })
             .catch(error => {
@@ -74,7 +74,7 @@ module.exports = {
                         amount = currentCar.upgrades[upgrade];
                     }
 
-                    let fuseTokens = 10, upgMultiplier = parseInt(upgrade[0]) + parseInt(upgrade[1]) + parseInt(upgrade[2]);
+                    let fuseTokens = 10, upgMultiplier = parseInt(upgrade[0]) / 3;
                     if (car["rq"] > 79) { //leggie
                         fuseTokens = 12500 + (upgMultiplier * 12500);
                     }

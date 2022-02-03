@@ -12,7 +12,7 @@ module.exports = {
     args: 1,
     category: "Info",
     description: "Shows info about a specified track.",
-    execute(message, args) {
+    async execute(message, args) {
         let query = args.map(i => i.toLowerCase()), searchBy = "track";
         if (args[0].toLowerCase() === "random") {
             return displayInfo(trackFiles[Math.floor(Math.random() * trackFiles.length)]);
@@ -22,7 +22,7 @@ module.exports = {
             searchBy = "id";
         }
 
-        new Promise(resolve => resolve(search(message, query, trackFiles, searchBy)))
+        await new Promise(resolve => resolve(search(message, query, trackFiles, searchBy)))
             .then(async (response) => {
                 if (!Array.isArray(response)) return;
                 displayInfo(...response);

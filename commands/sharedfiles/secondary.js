@@ -7,7 +7,6 @@ const { ErrorMessage, InfoMessage } = require("./classes.js");
 const { defaultWaitTime, defaultChoiceTime, defaultPageLimit } = require("./consts.js");
 const fs = require("fs");
 const carFiles = fs.readdirSync("./commands/cars").filter(file => file.endsWith(".json"));
-const profileModel = require("../../models/profileSchema.js");
 const bot = require("../../config.js");
 
 // assisting functions (these won't be exported to other files)
@@ -312,7 +311,7 @@ async function assignIndex(deck, currentRound, graphics) {
 async function searchUser(message, username, currentMessage) {
     const playerList = await bot.homeGuild.members.fetch();
     const searchResults = playerList.filter(member => {
-        return member.nickname?.toLowerCase().includes(username) || member.user.username.includes(username);
+        return member.nickname?.toLowerCase().includes(username) || member.user.username.toLowerCase().includes(username);
     });
     
     return processResults(message, searchResults, () => {
@@ -602,44 +601,60 @@ function filterCheck(car, filter, garage) {
         switch (typeof value) {
             case "object":
                 if (Array.isArray(value)) {
-                    if (Array.isArray(currentCar[key])) {
-                        let obj = {};
-                        currentCar[key].forEach((item, index) => obj[item.toLowerCase()] = index);
-                        if (value.findIndex(tagFilter => obj[tagFilter] !== undefined) === -1) passed = false;
+                    let checkArray = currentCar[key];
+                    if (!Array.isArray(checkArray)) {
+                        checkArray = [checkArray];
                     }
-                    else {
-                        let compareValue = currentCar[key].toLowerCase();
-                        if (value.findIndex(tagFilter => tagFilter === compareValue) === -1) passed = false;
+                    checkArray = checkArray.map(tag => tag.toLowerCase());
+
+                    if (value.every(tag => checkArray.includes(tag)) === false) {
+                        passed = false;
                     }
                 }
                 else {
-                    if (currentCar[key] < value.start || currentCar[key] > value.end) passed = false;
+                    if (currentCar[key] < value.start || currentCar[key] > value.end) {
+                        passed = false;
+                    }
                 }
                 break;
             case "string":
                 if (key === "search") {
-                    if (!carNameGen({ currentCar }).toLowerCase().includes(value)) passed = false;
+                    if (!carNameGen({ currentCar }).toLowerCase().includes(value)) {
+                        passed = false;
+                    }
                 }
                 else {
-                    if (currentCar[key].toLowerCase() !== value) passed = false;
+                    if (currentCar[key].toLowerCase() !== value) {
+                        passed = false;
+                    }
                 }
                 break;
             case "boolean":
                 switch (key) {
                     case "isPrize":
-                        if (currentCar[key] !== value) passed = false;
+                        if (currentCar[key] !== value) {
+                            passed = false;
+                        }
                         break;
                     case "isStock":
-                        if ((car.upgrades["000"] > 0) !== value) passed = false;
+                        if ((car.upgrades["000"] > 0) !== value) {
+                            passed = false;
+                        }
                         break;
                     case "isUpgraded":
-                        if ((car.upgrades["333"] + car.upgrades["666"] + car.upgrades["996"] + car.upgrades["969"] + car.upgrades["699"] > 0) !== value) passed = false;
+                        if ((car.upgrades["333"] + car.upgrades["666"] + car.upgrades["996"] + car.upgrades["969"] + car.upgrades["699"] > 0) !== value) {
+                            passed = false;
+                        }
                         break;
                     case "isMaxed":
-                        if ((car.upgrades["996"] + car.upgrades["969"] + car.upgrades["699"] > 0) !== value) passed = false;
+                        if ((car.upgrades["996"] + car.upgrades["969"] + car.upgrades["699"] > 0) !== value) {
+                            passed = false;
+                        }
                         break;
                     case "isOwned":
-                        if (!(garage ? garage.find(c => c.carID === car.carID) : true)) passed = false;
+                        if (!(garage ? garage.find(c => c.carID === car.carID) : true)) {
+                            passed = false;
+                        }
                         break;
                     default:
                         break;

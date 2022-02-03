@@ -1,7 +1,7 @@
 "use strict";
 
 const { SuccessMessage, ErrorMessage } = require("./sharedfiles/classes.js");
-const { carNameGen, selectUpgrade, updateHands } = require("./sharedfiles/primary.js");
+const { carNameGen, selectUpgrade, updateHands, botUserError } = require("./sharedfiles/primary.js");
 const { searchGarage, searchUser } = require("./sharedfiles/secondary.js");
 const { carSave } = require("./sharedfiles/consts.js");
 const profileModel = require("../models/profileSchema.js");
@@ -29,69 +29,51 @@ module.exports = {
                 await getCar(message.mentions.users.first());
             }
             else {
-                const errorMessage = new ErrorMessage({
-                    channel: message.channel,
-                    title: "Error, user requested is a bot.",
-                    desc: "Bots can't play Cloned Drives.",
-                    author: message.author
-                });
-                return errorMessage.sendMessage();
+                return botUserError(message);
             }
         }
         else {
-            const userSaves = await profileModel.find({});
-            const availableUsers = await message.guild.members.fetch();
-            availableUsers.filter(user => userSaves.find(f => f.userID = user.id));
-            new Promise(resolve => resolve(searchUser(message, args[0].toLowerCase(), availableUsers)))
-                .then(async (hmm) => {
-                    if (!Array.isArray(hmm)) return;
-                    let [result, currentMessage] = hmm;
+            await new Promise(resolve => resolve(searchUser(message, args[0].toLowerCase(), availableUsers)))
+                .then(async response => {
+                    if (!Array.isArray(response)) return;
+                    let [result, currentMessage] = response;
                     await getCar(result.user, currentMessage);
+                })
+                .catch(error => {
+                    throw error;
                 });
         }
 
         async function getCar(user, currentMessage) {
             const playerData = await profileModel.findOne({ userID: user.id });
-            let query, amount = 1, startFrom, searchByID = false;
-            if (args[1].toLowerCase() === "all" && args[2]) {
-                startFrom = 2;
-            }
-            else if (isNaN(args[1]) || !args[2]) {
-                startFrom = 1;
-            }
-            else {
-                amount = Math.ceil(parseInt(args[1]));
-                startFrom = 2;
-            }
-            if (args[startFrom].toLowerCase().startsWith("-c")) {
-                query = [args[startFrom].toLowerCase().slice(1)];
+            let query, searchByID = false;
+            if (args[1].toLowerCase().startsWith("-c")) {
+                query = [args[1].toLowerCase().slice(1)];
                 searchByID = true;
             }
             else {
-                query = args.slice(startFrom, args.length - 1).map(i => i.toLowerCase());
+                query = args.slice(1, args.length - 1).map(i => i.toLowerCase());
             }
 
-            new Promise(resolve => resolve(searchGarage({
+            await new Promise(resolve => resolve(searchGarage({
                 message,
                 query,
                 garage: playerData.garage,
-                amount,
+                amount: 1,
                 searchByID,
                 currentMessage
             })))
-                .then(async (hmm) => {
-                    if (!Array.isArray(hmm)) return;
-                    let [result, currentMessage] = hmm;
-                    try {
-                        await changeTune(user, result, playerData, currentMessage);
-                    }
-                    catch (error) {
-                        throw error;
-                    }
+                .then(response => {
+                    if (!Array.isArray(response)) return;
+                    let [result, currentMessage] = response;
+                    changeTune(user, result, playerData, currentMessage);
+                })
+                .catch(error => {
+                    throw error;
                 });
         }
 
-        async function changeTune(user, currentCar, playerData, currentMessage) {
+        function changeTune(user, currentCar, playerData, currentMessage) {
             new Promise(resolve => resolve(selectUpgrade(message, currentCar, 1, currentMessage)))
                 .then(async (response) => {
                     if (!Array.isArray(response)) return;

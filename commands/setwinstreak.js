@@ -17,7 +17,7 @@ module.exports = {
                 await editWinStreak(message.mentions.users.first());
             }
             else {
-                return botUserError();
+                return botUserError(message);
             }
         }
         else {

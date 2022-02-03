@@ -10,8 +10,9 @@ module.exports = {
     args: 0,
     category: "Info",
     description: "...wait, what are you doing here?",
-    execute(message, args) {
-        const { commands } = bot;
+    async execute(message, args) {
+        const { commands, homeGuild } = bot;
+        const member = await homeGuild.members.fetch(message.author.id);
         const testingCommands = [], adminCommands = [], eventCommands = [], miscCommands = [],
             configCommands = [], gameplayCommands = [], infoCommands = [];
         commands.forEach(function (command) {
@@ -55,13 +56,13 @@ module.exports = {
                     { name: "Miscellaneous", value: miscCommands.join(", ") }
                 ]
             });
-            // if (message.member.roles.cache.has("917685033995751435")) {
+            // if (member.roles.cache.has("917685033995751435")) {
             //     infoMessage.editEmbed({ fields: [{ name: "Events", value: eventCommands.join(", ") }] });
             // }
-            if (message.member.roles.cache.has("711790752853655563")) {
+            if (member.roles.cache.has("711790752853655563")) {
                 infoMessage.editEmbed({ fields: [{ name: "Admin", value: adminCommands.join(", ") }] });
             }
-            if (message.member.roles.cache.has("915846116656959538")) {
+            if (member.roles.cache.has("915846116656959538")) {
                 infoMessage.editEmbed({ fields: [{ name: "Testing", value: testingCommands.join(", ") }] });
             }
             return infoMessage.sendMessage();
@@ -82,15 +83,15 @@ module.exports = {
 
             switch (command.category) {
                 case "Admin":
-                    if (!message.member.roles.cache.has("711790752853655563")) {
+                    if (!member.roles.cache.has("711790752853655563")) {
                         return accessDenied("711790752853655563");
                     }
                 case "Events":
-                    if (!message.member.roles.cache.has("917685033995751435")) {
+                    if (!member.roles.cache.has("917685033995751435")) {
                         return accessDenied("917685033995751435");
                     }
                 case "Testing":
-                    if (!message.member.roles.cache.has("915846116656959538")) {
+                    if (!member.roles.cache.has("915846116656959538")) {
                         return accessDenied("915846116656959538");
                     }
                 default:

@@ -18,14 +18,14 @@ module.exports = {
                 await addMoney(message.mentions.users.first());
             }
             else {
-                return botUserError();
+                return botUserError(message);
             }
         }
         else {
             await new Promise(resolve => resolve(searchUser(message, args[0].toLowerCase())))
-                .then(async (hmm) => {
-                    if (!Array.isArray(hmm)) return;
-                    let [result, currentMessage] = hmm;
+                .then(async (response) => {
+                    if (!Array.isArray(response)) return;
+                    let [result, currentMessage] = response;
                     await addMoney(result.user, currentMessage);
                 })
                 .catch(error => {

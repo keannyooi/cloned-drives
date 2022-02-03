@@ -182,7 +182,7 @@ async function selectUpgrade(message, currentCar, amount, currentMessage, target
     });
 
     if (isOne.length === 1) {
-        return [isOne[0]];
+        return [isOne[0], currentMessage];
     }
     else if (isOne.length > 1) {
         const options = [];
@@ -554,7 +554,7 @@ async function race(message, player, opponent, currentTrack, disablegraphics) {
 }
 
 //these errors are shared among 2 or more commands in multiple use cases, thus they are written as functions
-async function handMissingError() {
+async function handMissingError(message) {
     const errorMessage = new ErrorMessage({
         channel: message.channel,
         title: "Error, it looks like your hand is empty.",
@@ -564,7 +564,7 @@ async function handMissingError() {
     return errorMessage.sendMessage();
 }
 
-async function botUserError() {
+async function botUserError(message) {
     const errorMessage = new ErrorMessage({
         channel: message.channel,
         title: "Error, user requested is a bot.",

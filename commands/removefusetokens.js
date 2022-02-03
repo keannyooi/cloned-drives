@@ -13,13 +13,13 @@ module.exports = {
     args: 2,
     category: "Admin",
     description: "Removes a certain amount of fuse tokens from someone.",
-    execute(message, args) {
+    async execute(message, args) {
         if (message.mentions.users.first()) {
             if (!message.mentions.users.first().bot) {
                 await removeTokens(message.mentions.users.first());
             }
             else {
-                return botUserError();
+                return botUserError(message);
             }
         }
         else {

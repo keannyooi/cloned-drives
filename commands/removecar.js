@@ -13,7 +13,7 @@ module.exports = {
     args: 2,
     category: "Admin",
     description: "Removes one or more cars from someone's garage.",
-    execute(message, args) {
+    async execute(message, args) {
         if (message.mentions.users.first()) {
             if (!message.mentions.users.first().bot) {
                 try {
@@ -24,11 +24,11 @@ module.exports = {
                 }
             }
             else {
-                return botUserError();
+                return botUserError(message);
             }
         }
         else {
-            new Promise(resolve => resolve(searchUser(message, args[0].toLowerCase())))
+            await new Promise(resolve => resolve(searchUser(message, args[0].toLowerCase())))
                 .then(async (response) => {
                     if (!Array.isArray(response)) return;
                     let [result, currentMessage] = response;

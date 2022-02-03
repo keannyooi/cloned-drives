@@ -29,7 +29,7 @@ module.exports = {
             const errorMessage = new ErrorMessage({
                 channel: message.channel,
                 title: "Error, page number requested not a number.",
-                desc: "One does not simply go to page `NaN` of a website.",
+                desc: "One does not simply go to page `NaN` of a book.",
                 author: message.author
             }).displayClosest(page);
             return errorMessage.sendMessage();

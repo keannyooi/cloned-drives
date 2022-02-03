@@ -3,11 +3,12 @@
 const fs = require("fs");
 const carFiles = fs.readdirSync("./commands/cars").filter(file => file.endsWith('.json'));
 const trackFiles = fs.readdirSync("./commands/tracks").filter(file => file.endsWith('.json'));
-const { ErrorMessage, InfoMessage } = require("./sharedfiles/classes.js");
+const { InfoMessage } = require("./sharedfiles/classes.js");
 const { defaultWaitTime } = require("./sharedfiles/consts.js");
 const { carNameGen, rarityCheck, selectUpgrade, race, handMissingError } = require("./sharedfiles/primary.js");
 const { search, createCar } = require("./sharedfiles/secondary.js");
 const profileModel = require("../models/profileSchema.js");
+const bot = require("../config.js");
 
 module.exports = {
     name: "quickrace",
@@ -20,7 +21,7 @@ module.exports = {
     async execute(message, args) {
         const playerData = await profileModel.findOne({ userID: message.author.id });
         if (playerData.hand.carID === "") {
-            return handMissingError();
+            return handMissingError(message);
         }
 
         let query = args.map(i => i.toLowerCase()), searchBy = "track";
@@ -115,8 +116,7 @@ module.exports = {
             };
 
             await new Promise(resolve => resolve(selectUpgrade(message, chooseEverything, 1, currentMessage)))
-                .then(async (response) => {
-                    console.log(response);
+                .then(async response => {
                     if (!Array.isArray(response)) return;
                     let [upgrade, currentMessage] = response;
                     const [playerCar, playerList] = createCar(playerData.hand, playerData.settings.unitpreference);

@@ -14,7 +14,7 @@ module.exports = {
     args: 1,
     category: "Info",
     description: "Shows info about a specified car.",
-    execute(message, args) {
+    async execute(message, args) {
         let query = args.map(i => i.toLowerCase()), searchBy = "car";
         if (args[0].toLowerCase() === "random") {
             return displayInfo(carFiles[Math.floor(Math.random() * carFiles.length)]);
@@ -24,7 +24,7 @@ module.exports = {
             searchBy = "id";
         }
 
-        new Promise(resolve => resolve(search(message, query, carFiles, searchBy)))
+        await new Promise(resolve => resolve(search(message, query, carFiles, searchBy)))
             .then(async (response) => {
                 if (!Array.isArray(response)) return;
                 await displayInfo(...response);
@@ -39,6 +39,7 @@ module.exports = {
             const rarity = rarityCheck(currentCar);
             let description = "None", mra = "N/A", ola = "N/A";
             let topSpeed = `${currentCar["topSpeed"]}MPH`, accel = "N/A", weight = `${currentCar["weight"]}kg`;
+            let bodyStyle = Array.isArray(currentCar["bodyStyle"]) ? currentCar["bodyStyle"].join(", ") : currentCar["bodyStyle"];
 
             if (currentCar["description"].length > 0) {
                 description = currentCar["description"];
@@ -80,7 +81,7 @@ module.exports = {
                     { name: "Weight", value: weight, inline: true },
                     { name: "Ground Clearance", value: currentCar["gc"], inline: true },
                     { name: "Seat Count", value: currentCar["seatCount"].toString(), inline: true },
-                    { name: "Body Style", value: currentCar["bodyStyle"], inline: true },
+                    { name: "Body Style", value: bodyStyle, inline: true },
                     { name: "Engine Position", value: currentCar["enginePos"], inline: true },
                     { name: "Fuel Type", value: currentCar["fuelType"], inline: true },
                     { name: "TCS Enabled?", value: currentCar["tcs"].toString(), inline: true },

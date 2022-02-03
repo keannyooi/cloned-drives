@@ -66,9 +66,8 @@ module.exports = {
 
             switch (criteria) {
                 case "make":
-                case "country":
                 case "tags":
-                case "tyreType":
+                case "bodyStyle":
                     let argument = args.slice(1, args.length).join(" ").toLowerCase();
                     isValid = carFiles.findIndex(function (carFile) {
                         let currentCar = require(`./cars/${carFile}`);
@@ -143,8 +142,9 @@ module.exports = {
                         ]
                     });
                     break;
+                case "country":
+                case "tyreType":
                 case "driveType":
-                case "bodyStyle":
                 case "enginePos":
                 case "fuelType":
                 case "gc":
@@ -235,9 +235,8 @@ module.exports = {
                             });
                             break;
                         case "make":
-                        case "country":
-                        case "tyreType":
                         case "tags":
+                        case "bodyStyle":
                             if (!arg2) {
                                 const errorMessage = new ErrorMessage({
                                     channel: message.channel,
@@ -282,10 +281,11 @@ module.exports = {
                             }
                             break;
                         case "modelYear":
+                        case "country":
+                        case "tyreType":
                         case "seatCount":
                         case "enginePos":
                         case "driveType":
-                        case "bodyStyle":
                         case "fuelType":
                         case "isPrize":
                         case "isStock":

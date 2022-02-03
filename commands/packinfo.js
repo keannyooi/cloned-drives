@@ -14,7 +14,7 @@ module.exports = {
     args: 1,
     category: "Configuration",
     description: "Shows info about a specified card pack.",
-    execute(message, args) {
+    async execute(message, args) {
         let query = args.map(i => i.toLowerCase()), searchBy = "pack";
         if (args[0].toLowerCase() === "random") {
             return displayInfo(packFiles[Math.floor(Math.random() * packFiles.length)]);
@@ -24,7 +24,7 @@ module.exports = {
             searchBy = "id";
         }
 
-        new Promise(resolve => resolve(search(message, query, packFiles, searchBy)))
+        await new Promise(resolve => resolve(search(message, query, packFiles, searchBy)))
             .then(response => {
                 if (!Array.isArray(response)) return;
                 displayInfo(...response);
