@@ -39,8 +39,13 @@ class BotMessage {
         if (!args?.preserve) {
             bot.deleteID(this.authorID);
         }
-        this.message = currentMessage ? await currentMessage.edit(contents) : await this.channel.send(contents);
-        return this;
+        try {
+            this.message = currentMessage ? await currentMessage.edit(contents) : await this.channel.send(contents);
+            return this;
+        }
+        catch (error) {
+            return console.log(error);
+        }
     }
 
     editEmbed(args) {

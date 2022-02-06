@@ -48,16 +48,7 @@ const profileSchema = new Schema({
             race: 1
         }
     },
-    unclaimedRewards: {
-        type: Object,
-        default: {
-            money: 0,
-            fuseTokens: 0,
-            trophies: 0,
-            cars: [],
-            packs: []
-        }
-    },
+    unclaimedRewards: { type: Array, default: [] },
     cooldowns: { type: Object, default: {} },
     filter: { type: Object, default: {} },
     settings: { type: Object, default: {} },

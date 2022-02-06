@@ -42,7 +42,7 @@ bot.once("ready", async () => {
     });
 
     // for updating profile model structure
-    // await profileModel.updateMany({}, {
+    // await profileModel.updateMany({ u }, {
     //     "unclaimedRewards": []
     // });
 

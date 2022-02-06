@@ -4,7 +4,6 @@ const { MessageButton, MessageActionRow, MessageSelectMenu } = require("discord.
 const { SuccessMessage, InfoMessage, ErrorMessage } = require("./sharedfiles/classes.js");
 const { defaultWaitTime } = require("./sharedfiles/consts.js");
 const profileModel = require("../models/profileSchema.js");
-const { getFlag } = require("./sharedfiles/primary.js");
 
 module.exports = {
     name: "settings",
@@ -307,7 +306,7 @@ module.exports = {
                     }
                     break;
                 case "bio":
-                    let bio = args.slice(1, args.length).join(" ");
+                    let bio = args.slice(1, args.length).join(" ").trim();
                     if (bio > 1024) {
                         let errorMessage = new ErrorMessage({
                             channel: message.channel,
@@ -324,8 +323,7 @@ module.exports = {
                         channel: message.channel,
                         title: "Successfully updated your bio!",
                         desc: bio,
-                        author: message.author,
-                        thumbnail: getFlag(argument)
+                        author: message.author
                     });
                     break;
                 default:

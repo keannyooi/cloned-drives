@@ -35,12 +35,12 @@ module.exports = {
             return errorMessage.sendMessage();
         }
 
-        const playerData = await profileModel.findOne({ userID: message.author.id });
-        if (!playerData.settings.disablecarlistfilter) {
-            list = list.filter(car => filterCheck(car, playerData.filter));
+        const { filter, garage, settings } = await profileModel.findOne({ userID: message.author.id });
+        if (!settings.disablecarlistfilter) {
+            list = list.filter(car => filterCheck(car.slice(0, 6), filter, garage));
         }
         const ownedCars = list.filter(function (carID) {
-            return playerData.garage.some(part => carID.includes(part.carID));
+            return garage.some(part => carID.includes(part.carID));
         });
 
         if (args[args.length - 2] === "-s") {
@@ -48,7 +48,7 @@ module.exports = {
             if (typeof sort !== "string") return;
         }
 
-        const totalPages = Math.ceil(list.length / (playerData.settings.listamount || defaultPageLimit));
+        const totalPages = Math.ceil(list.length / (settings.listamount || defaultPageLimit));
         if (page < 1 || totalPages < page) {
             const errorMessage = new ErrorMessage({
                 channel: message.channel,
@@ -58,10 +58,10 @@ module.exports = {
             }).displayClosest(page);
             return errorMessage.sendMessage();
         }
-        list = sortCars(list, sort, playerData.settings.sortorder, playerData.garage);
+        list = sortCars(list, sort, settings.sortorder, garage);
 
         try {
-            listUpdate(list, page, totalPages, listDisplay, playerData.settings);
+            listUpdate(list, page, totalPages, listDisplay, settings);
         }
         catch (error) {
             throw error;
@@ -75,7 +75,7 @@ module.exports = {
 
                 let currentCar = require(`./cars/${section[i]}`);
                 let rarity = rarityCheck(currentCar);
-                let findCar = playerData.garage.find(c => c.carID === section[i].slice(0, 6));
+                let findCar = garage.find(c => c.carID === section[i].slice(0, 6));
                 carList += carNameGen({ currentCar, rarity });
                 carList += findCar ? " ✅\n" : "\n";
 
@@ -100,7 +100,7 @@ module.exports = {
             const infoMessage = new InfoMessage({
                 channel: message.channel,
                 title: `List of All Cars in Cloned Drives (${ownedCars.length}/${list.length} Cars Owned)`,
-                desc: `Current Sorting Criteria: \`${sort}\`, Filter Activated: \`${Object.keys(playerData.filter).length > 0 && !playerData.settings.disablecarlistfilter}\``,
+                desc: `Current Sorting Criteria: \`${sort}\`, Filter Activated: \`${Object.keys(filter).length > 0 && !settings.disablecarlistfilter}\``,
                 author: message.author,
                 thumbnail: message.author.displayAvatarURL({ format: "png", dynamic: true }),
                 fields: [{ name: "Car", value: carList, inline: true }],

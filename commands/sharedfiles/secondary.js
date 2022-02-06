@@ -594,9 +594,19 @@ async function listUpdate(list, page, totalPages, listDisplay, settings, current
 }
 
 function filterCheck(car, filter, garage) {
-    let passed = true;
-    let file = typeof car === "string" ? car : carFiles.find(f => f.includes(car.carID));
-    let currentCar = require(`../cars/${file}`);
+    let passed = true, carObject = garage ? {
+        carID: car,
+        upgrades: garage.find(c => car.includes(c.carID))?.upgrades ?? {
+            "000": 0,
+            "333": 0,
+            "666": 0,
+            "996": 0,
+            "969": 0,
+            "699": 0,
+        }
+    } : car;
+    let currentCar = require(`../cars/${carObject.carID}`);
+
     for (const [key, value] of Object.entries(filter)) {
         switch (typeof value) {
             case "object":
@@ -637,22 +647,17 @@ function filterCheck(car, filter, garage) {
                         }
                         break;
                     case "isStock":
-                        if ((car.upgrades["000"] > 0) !== value) {
-                            passed = false;
-                        }
-                        break;
-                    case "isUpgraded":
-                        if ((car.upgrades["333"] + car.upgrades["666"] + car.upgrades["996"] + car.upgrades["969"] + car.upgrades["699"] > 0) !== value) {
+                        if ((carObject.upgrades["000"] > 0) !== value) {
                             passed = false;
                         }
                         break;
                     case "isMaxed":
-                        if ((car.upgrades["996"] + car.upgrades["969"] + car.upgrades["699"] > 0) !== value) {
+                        if ((carObject.upgrades["996"] + carObject.upgrades["969"] + carObject.upgrades["699"] > 0) !== value) {
                             passed = false;
                         }
                         break;
                     case "isOwned":
-                        if (!(garage ? garage.find(c => c.carID === car.carID) : true)) {
+                        if ((calcTotal(carObject) > 0) !== value) {
                             passed = false;
                         }
                         break;

@@ -21,8 +21,7 @@ module.exports = {
     category: "Configuration",
     description: "Sets up a filter for garages and car lists.",
     async execute(message, args) {
-        const playerData = await profileModel.findOne({ userID: message.author.id });
-        let filter = playerData.filter;
+        let { filter, rrStats } = await profileModel.findOne({ userID: message.author.id });
         let infoMessage, isValid;
 
         if (!args[0]) {
@@ -131,7 +130,7 @@ module.exports = {
                         return errorMessage.sendMessage();
                     }
 
-                    filter[criteria] = { start: start, end: end };
+                    filter[criteria] = { start, end };
                     infoMessage = new SuccessMessage({
                         channel: message.channel,
                         title: `Successfully modified the \`${criteria}\` filter category!`,
@@ -175,7 +174,6 @@ module.exports = {
                     break;
                 case "isPrize":
                 case "isStock":
-                case "isUpgraded":
                 case "isMaxed":
                 case "isOwned":
                     try {
@@ -221,6 +219,44 @@ module.exports = {
                         author: message.author,
                         fields: [{ name: "Current Value", value: `\`${filter[criteria]}\`` }]
                     });
+                    break;
+                case "applyreqs":
+                    switch (arg1) {
+                        case "rr":
+                        case "randomrace":
+                            filter = {};
+                            for (let [req, value] of Object.entries(rrStats.reqs)) {
+                                switch (req) {
+                                    case "make":
+                                    case "tags":
+                                    case "bodyStyle":
+                                        filter[req] = [value];
+                                        break;
+                                    case "rq":
+                                        filter[req] = { start: 1, end: value };
+                                        break;
+                                    default:
+                                        filter[req] = value;
+                                        break;
+                                }
+                            }
+
+                            infoMessage = new SuccessMessage({
+                                channel: message.channel,
+                                title: "Successfully applied random race criterias!",
+                                author: message.author
+                            });
+                            break;
+                        default:
+                            const errorMessage = new ErrorMessage({
+                                channel: message.channel,
+                                title: "Error, filter application category provided doesn't exist.",
+                                desc: `Here is a list of available filter application category. 
+                                \`rr/randomrace\` - Applies random race crtierias to your filter.`,
+                                author: message.author
+                            }).displayClosest(arg1);
+                            return errorMessage.sendMessage();
+                    }
                     break;
                 case "disable":
                 case "remove":
@@ -289,7 +325,6 @@ module.exports = {
                         case "fuelType":
                         case "isPrize":
                         case "isStock":
-                        case "isUpgraded":
                         case "isMaxed":
                         case "isOwned":
                         case "gc":

@@ -7,7 +7,7 @@ const tracks = fs.readdirSync("./commands/tracks").filter(file => file.endsWith(
 const { InfoMessage } = require("./sharedfiles/classes.js");
 const { defaultChoiceTime } = require("./sharedfiles/consts.js");
 const { getButtons, race, handMissingError } = require("./sharedfiles/primary.js");
-const { createCar } = require("./sharedfiles/secondary.js");
+const { createCar, filterCheck } = require("./sharedfiles/secondary.js");
 const profileModel = require("../models/profileSchema.js");
 const bot = require("../config.js");
 
@@ -86,40 +86,9 @@ module.exports = {
                 switch (button.customId) {
                     case "yse":
                         reactionMessage.removeButtons();
-                        let test = require(`./cars/${playerData.hand.carID}`), passed = true;
-                        for (const [key, value] of Object.entries(reqs)) {
-                            switch (typeof value) {
-                                case "object":
-                                    if (test[`${key}`] < value.start || test[`${key}`] > value.end) {
-                                        passed = false;
-                                    }
-                                    break;
-                                case "string":
-                                case "boolean":
-                                    if (Array.isArray(test[`${key}`])) {
-                                        if (test[`${key}`].find(e => e === value) === undefined) {
-                                            passed = false;
-                                        }
-                                    }
-                                    else {
-                                        if (value.toLowerCase() !== test[`${key}`].toLowerCase()) {
-                                            passed = false;
-                                        }
-                                    }
-                                    break;
-                                case "number":
-                                    if (value < test[`${key}`]) {
-                                        passed = false;
-                                    }
-                                    break;
-                                default:
-                                    break;
-                            }
-
-                            if (!passed) {
-                                intermission.editEmbed({ title: "Your hand does not meet the requirements." });
-                                return intermission.sendMessage({ currentMessage: reactionMessage });
-                            }
+                        if (!filterCheck(playerData.hand, reqs)) {
+                            intermission.editEmbed({ title: "Your hand does not meet the requirements." });
+                            return intermission.sendMessage({ currentMessage: reactionMessage });
                         }
 
                         const result = await race(message, playerCar, opponentCar, track, playerData.settings.enablegraphics);
@@ -235,7 +204,7 @@ module.exports = {
                 if (reqCar[req].toLowerCase() === "Mixed") {
                     reqCar = require(`./cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
                 }
-                criteria[req] = reqCar[req];
+                criteria[req] = reqCar[req].toLowerCase();
             }
             else if (streak > 125 && streak <= 175) {
                 criteria = { rq: opponentCar["rq"] + Math.floor(Math.random() * 6) };
@@ -245,7 +214,7 @@ module.exports = {
                     case "bodyStyle":
                     case "seatCount":
                         let reqCar = require(`./cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
-                        criteria[req] = reqCar[req];
+                        criteria[req] = req === "seatCount" ? reqCar[req] : reqCar[req].toLowerCase();
                         break;
                     case "modelYear":
                         let myStart = 1960 + (Math.floor(Math.random() * 6) * 10);
@@ -265,10 +234,10 @@ module.exports = {
                     case "tags":
                         let reqCar = require(`./cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
                         if (Array.isArray(reqCar[req])) {
-                            criteria[req] = reqCar[req][0];
+                            criteria[req] = reqCar[req][0].toLowerCase();
                         }
                         else {
-                            criteria[req] = reqCar[req];
+                            criteria[req] = reqCar[req].toLowerCase();
                         }
                         break;
                     case "modelYear":
