@@ -17,129 +17,133 @@ module.exports = {
 
         if (!args[0]) {
             const filter = (button) => button.user.id === message.author.id;
-            let { infoMessage, row } = menu();
+            let { infoMessage, row } = menu(), processing = false;
             let currentMessage = await infoMessage.sendMessage({ buttons: [row] });
 
             const collector = message.channel.createMessageComponentCollector({ filter, time: defaultWaitTime });
             collector.on("collect", async (button) => {
-                switch (button.customId) {
-                    case "category_select":
-                        let backButton;
-                        if (playerData.settings.buttonstyle === "classic") {
-                            backButton = new MessageButton({
-                                emoji: "⬅️",
-                                style: "SECONDARY",
-                                customId: "back"
+                if (processing === false) {
+                    processing = true;
+                    switch (button.customId) {
+                        case "category_select":
+                            let backButton;
+                            if (playerData.settings.buttonstyle === "classic") {
+                                backButton = new MessageButton({
+                                    emoji: "⬅️",
+                                    style: "SECONDARY",
+                                    customId: "back"
+                                });
+                            }
+                            else {
+                                backButton = new MessageButton({
+                                    label: "Back",
+                                    style: "PRIMARY",
+                                    customId: "back"
+                                });
+                            }
+    
+                            infoMessage = new InfoMessage({
+                                channel: message.channel,
+                                title: "Settings",
+                                desc: `Category Selected: \`${button.values[0]}\``,
+                                author: message.author
                             });
-                        }
-                        else {
-                            backButton = new MessageButton({
-                                label: "Back",
-                                style: "PRIMARY",
-                                customId: "back"
-                            });
-                        }
-
-                        infoMessage = new InfoMessage({
-                            channel: message.channel,
-                            title: "Settings",
-                            desc: `Category Selected: \`${button.values[0]}\``,
-                            author: message.author
-                        });
-                        row = new MessageActionRow({ components: [backButton] });
-
-                        switch (button.values[0]) {
-                            case "Gameplay":
-                                infoMessage.editEmbed({
-                                    fields: [
-                                        {
-                                            name: "Disable Graphics (ID: \`disablegraphics\`)",
-                                            value: `Having this set to \`true\` skips through all bot-generated graphics. Perfect for faster loading times.
-                                **Value:** \`${settings.disablegraphics ?? false}\``,
-                                            inline: true
-                                        },
-                                        {
-                                            name: "Enable Daily Reward Notifications (ID: \`senddailynotifs\`)",
-                                            value: `Having this set to \`true\` enables automated DM notifications when your daily reward can be claimed.
-                                **Value:** \`${settings.senddailynotifs ?? false}\``,
-                                            inline: true
-                                        },
-                                        {
-                                            name: "Unit Preference (ID: \`unitpreference\`)",
-                                            value: `Lets you choose the unit system of your preference. Graphics aren't affected by this setting. The game uses British units by default and you can switch to metric and imperial units.
-                                        **Value:** \`${settings.unitpreference ?? "british"}\``,
-                                            inline: true
-                                        },
-                                        {
-                                            name: "Button Style (ID: \`buttonstyle\`)",
-                                            value: `Lets you choose the button style of your preference. The \`default\` style gives a more modern look with Discord's new embed buttons while the \`classic\` style resembles old-school emoji buttons.
-                                        **Value:** \`${settings.buttonstyle ?? "default"}\``,
-                                            inline: true
-                                        }
-                                    ]
-                                });
-                                break;
-                            case "Garage + Lists":
-                                infoMessage.editEmbed({
-                                    fields: [
-                                        {
-                                            name: "Disable Filter for Garage (ID: \`disablegaragefilter\`)",
-                                            value: `Having this set to \`true\` disables your current filter when viewing your (or other people's) garage.
-                                    **Value:** \`${settings.disablegaragefilter ?? false}\``,
-                                            inline: true
-                                        },
-                                        {
-                                            name: "Disable Filter for Car List (ID: \`disablecarlistfilter\`)",
-                                            value: `Having this set to \`true\` disables your current filter when viewing the car list.
-                                    **Value:** \`${settings.disablecarlistfilter ?? false}\``,
-                                            inline: true
-                                        },
-                                        {
-                                            name: "Hide Black Market Cars (ID: \`hidebmcars\`)",
-                                            value: `(This is WIP, doesn't do anything currently)
-                                            **Value:** \`${settings.hidebmcars ?? false}\``,
-                                            inline: true
-                                        },
-                                        {
-                                            name: "Sorting Order (ID: \`sortorder\`)",
-                                            value: `Lets you choose to sort either by ascending or descending.
-                                            **Value:** \`${settings.sortorder ?? "descending"}\``,
-                                            inline: true
-                                        },
-                                        {
-                                            name: "Amount of Items Listed Per Page (ID: \`listamount\`)",
-                                            value: `Lets you choose the amount of items listed per page. Values are restricted between \`5\` and \`10\`.
-                                            **Value:** \`${settings.listamount ?? 10}\``,
-                                            inline: true
-                                        }
-                                    ]
-                                });
-                                break;
-                            case "Profile":
-                                infoMessage.editEmbed({
-                                    fields: [
-                                        {
-                                            name: "About Me (ID: \`bio\`)",
-                                            value: "Tells people who you are when doing \`cd-stats\`.",
-                                            inline: true
-                                        }
-                                    ]
-                                });
-                                break;
-                            default:
-                                break;
-                        }
-
-                        await infoMessage.sendMessage({ currentMessage, buttons: [row] });
-                        break;
-                    case "back":
-                        ({ infoMessage, row } = menu());
-                        await infoMessage.sendMessage({ currentMessage, buttons: [row] });
-                        break;
-                    default:
-                        break;
+                            row = new MessageActionRow({ components: [backButton] });
+    
+                            switch (button.values[0]) {
+                                case "Gameplay":
+                                    infoMessage.editEmbed({
+                                        fields: [
+                                            {
+                                                name: "Disable Graphics (ID: \`disablegraphics\`)",
+                                                value: `Having this set to \`true\` skips through all bot-generated graphics. Perfect for faster loading times.
+                                    **Value:** \`${settings.disablegraphics ?? false}\``,
+                                                inline: true
+                                            },
+                                            {
+                                                name: "Enable Daily Reward Notifications (ID: \`senddailynotifs\`)",
+                                                value: `Having this set to \`true\` enables automated DM notifications when your daily reward can be claimed.
+                                    **Value:** \`${settings.senddailynotifs ?? false}\``,
+                                                inline: true
+                                            },
+                                            {
+                                                name: "Unit Preference (ID: \`unitpreference\`)",
+                                                value: `Lets you choose the unit system of your preference. Graphics aren't affected by this setting. The game uses British units by default and you can switch to metric and imperial units.
+                                            **Value:** \`${settings.unitpreference ?? "british"}\``,
+                                                inline: true
+                                            },
+                                            {
+                                                name: "Button Style (ID: \`buttonstyle\`)",
+                                                value: `Lets you choose the button style of your preference. The \`default\` style gives a more modern look with Discord's new embed buttons while the \`classic\` style resembles old-school emoji buttons.
+                                            **Value:** \`${settings.buttonstyle ?? "default"}\``,
+                                                inline: true
+                                            }
+                                        ]
+                                    });
+                                    break;
+                                case "Garage + Lists":
+                                    infoMessage.editEmbed({
+                                        fields: [
+                                            {
+                                                name: "Disable Filter for Garage (ID: \`disablegaragefilter\`)",
+                                                value: `Having this set to \`true\` disables your current filter when viewing your (or other people's) garage.
+                                        **Value:** \`${settings.disablegaragefilter ?? false}\``,
+                                                inline: true
+                                            },
+                                            {
+                                                name: "Disable Filter for Car List (ID: \`disablecarlistfilter\`)",
+                                                value: `Having this set to \`true\` disables your current filter when viewing the car list.
+                                        **Value:** \`${settings.disablecarlistfilter ?? false}\``,
+                                                inline: true
+                                            },
+                                            {
+                                                name: "Hide Black Market Cars (ID: \`hidebmcars\`)",
+                                                value: `(This is WIP, doesn't do anything currently)
+                                                **Value:** \`${settings.hidebmcars ?? false}\``,
+                                                inline: true
+                                            },
+                                            {
+                                                name: "Sorting Order (ID: \`sortorder\`)",
+                                                value: `Lets you choose to sort either by ascending or descending.
+                                                **Value:** \`${settings.sortorder ?? "descending"}\``,
+                                                inline: true
+                                            },
+                                            {
+                                                name: "Amount of Items Listed Per Page (ID: \`listamount\`)",
+                                                value: `Lets you choose the amount of items listed per page. Values are restricted between \`5\` and \`10\`.
+                                                **Value:** \`${settings.listamount ?? 10}\``,
+                                                inline: true
+                                            }
+                                        ]
+                                    });
+                                    break;
+                                case "Profile":
+                                    infoMessage.editEmbed({
+                                        fields: [
+                                            {
+                                                name: "About Me (ID: \`bio\`)",
+                                                value: "Tells people who you are when doing \`cd-stats\`.",
+                                                inline: true
+                                            }
+                                        ]
+                                    });
+                                    break;
+                                default:
+                                    break;
+                            }
+    
+                            await infoMessage.sendMessage({ currentMessage, buttons: [row] });
+                            break;
+                        case "back":
+                            ({ infoMessage, row } = menu());
+                            await infoMessage.sendMessage({ currentMessage, buttons: [row] });
+                            break;
+                        default:
+                            break;
+                    }
+                    await button.deferUpdate();
+                    processing = false;
                 }
-                await button.deferUpdate();
             });
             collector.on("end", () => {
                 return infoMessage.removeButtons();
@@ -321,7 +325,7 @@ module.exports = {
                     settings[setting] = bio;
                     infoMessage = new SuccessMessage({
                         channel: message.channel,
-                        title: "Successfully updated your bio!",
+                        title: "Successfully updated your About Me!",
                         desc: bio,
                         author: message.author
                     });

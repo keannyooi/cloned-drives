@@ -14,68 +14,55 @@ module.exports = {
     category: "Configuration",
     description: "Shows your (or other people's) garage.",
     async execute(message, args) {
-        let user = message.author;
-        let sort = "rq";
-
-        if (!args.length || (args[0] === "-s" && args[1])) {
-            if (args[0] === "-s" && args[1]) {
-                sort = args[1].toLowerCase();
-            }
-            loop(user, 1, sort);
+        let user = message.author, page = 1, sort = "rq";
+        if (args[args.length - 2] === "-s" && args[args.length - 1]) {
+            sort = args[args.length - 1].toLowerCase();
+            args = args.slice(0, args.length - 2);
         }
-        else {
-            if (isNaN(args[0])) {
-                let page = 1;
-                let userName;
-                if (isNaN(args[args.length - 1])) {
-                    userName = args.map(i => i.toLowerCase());
-                }
-                else {
-                    userName = args.slice(0, args.length - 1).map(i => i.toLowerCase());
-                    page = parseInt(args[args.length - 1]);
-                }
-                if (args[args.length - 2] === "-s" && args[args.length - 1]) {
-                    sort = args[args.length - 1].toLowerCase();
+        if (!isNaN(args[0])) {
+            
+        }
+        else if (args[0]) {
+            let userName;
+            if (isNaN(args[args.length - 1])) {
+                userName = args.map(i => i.toLowerCase());
+            }
+            else {
+                userName = args.slice(0, args.length - 1).join(" ").toLowerCase();
+                page = parseInt(args[args.length - 1]);
+            }
 
-                }
-
-                if (message.mentions.users.first()) {
-                    if (!message.mentions.users.first().bot) {
-                        try {
-                            await loop(message.mentions.users.first(), page, sort);
-                        }
-                        catch (error) {
-                            throw error;
-                        }
+            if (message.mentions.users.first()) {
+                if (!message.mentions.users.first().bot) {
+                    try {
+                        await loop(message.mentions.users.first(), page, sort);
                     }
-                    else {
-                        return botUserError(message);
+                    catch (error) {
+                        throw error;
                     }
                 }
                 else {
-                    userName = args[0].toLowerCase();
-                    await new Promise(resolve => resolve(searchUser(message, userName)))
-                        .then(async response => {
-                            if (!Array.isArray(response)) return;
-                            let [result, currentMessage] = response;
-                            await loop(user, result, sort, currentMessage);
-                        })
-                        .catch(error => {
-                            throw error;
-                        });
+                    return botUserError(message);
                 }
             }
             else {
-                if (args[args.length - 2] === "-s" && args[args.length - 1]) {
-                    sort = args[args.length - 1].toLowerCase();
-                }
-
-                try {
-                    await loop(user, parseInt(args[0]), sort);
-                }
-                catch (error) {
-                    throw error;
-                }
+                await new Promise(resolve => resolve(searchUser(message, userName)))
+                    .then(async response => {
+                        if (!Array.isArray(response)) return;
+                        let [result, currentMessage] = response;
+                        await loop(result.user, page, sort, currentMessage);
+                    })
+                    .catch(error => {
+                        throw error;
+                    });
+            }
+        }
+        else {
+            try {
+                await loop(user, page, sort);
+            }
+            catch (error) {
+                throw error;
             }
         }
 

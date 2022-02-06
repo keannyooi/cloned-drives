@@ -59,7 +59,7 @@ module.exports = {
                     if (!Array.isArray(response)) return;
                     let [result, currentMessage] = response;
 
-                    const playerData = await profileModel.findOne({ userID: user.id });
+                    const { garage } = await profileModel.findOne({ userID: user.id });
                     const currentCar = require(`./cars/${result}`);
                     const currentName = carNameGen({ currentCar });
 
@@ -67,7 +67,7 @@ module.exports = {
                     for (let i = 0; i < amount; i++) {
                         addedCars.push({ carID: result.slice(0, 6), upgrade: "000" });
                     }
-                    await profileModel.updateOne({ userID: user.id }, { garage: addCars(playerData.garage, addedCars) });
+                    await profileModel.updateOne({ userID: user.id }, { garage: addCars(garage, addedCars) });
 
                     const successMessage = new SuccessMessage({
                         channel: message.channel,

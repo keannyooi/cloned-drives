@@ -12,7 +12,7 @@ const profileModel = require("./models/profileSchema.js");
 const prefix = bot.devMode ? process.env.DEV_PREFIX : process.env.BOT_PREFIX;
 const token = bot.devMode ? process.env.DEV_TOKEN : process.env.BOT_TOKEN;
 // this is for testing purposes, the line below will be deleted once everything is complete
-const allowedCommands = ["benchmark.js", "carinfo.js", "calculate.js", "garage.js", "ping.js", "reload.js", "statistics.js", "addcar.js", "removecar.js", "addmoney.js", "addfusetokens.js", "removefusetokens.js", "removemoney.js", "carlist.js", "testpack.js", "openpack.js", "trackinfo.js", "packinfo.js", "changetune.js", "upgrade.js", "fuse.js", "sell.js", "help.js", "filter.js", "settings.js", "sethand.js", "quickrace.js", "randomrace.js", "rewards.js", "setwinstreak.js"];
+const allowedCommands = ["benchmark.js", "carinfo.js", "calculate.js", "garage.js", "ping.js", "reload.js", "statistics.js", "addcar.js", "removecar.js", "addmoney.js", "addfusetokens.js", "removefusetokens.js", "removemoney.js", "addtrophies.js", "removetrophies.js", "carlist.js", "testpack.js", "openpack.js", "trackinfo.js", "packinfo.js", "changetune.js", "upgrade.js", "fuse.js", "sell.js", "help.js", "filter.js", "settings.js", "sethand.js", "quickrace.js", "randomrace.js", "rewards.js", "setwinstreak.js", "reset.js"];
 const commandFiles = readdirSync("./commands").filter(file => file.endsWith(".js"));
 
 commandFiles.forEach(function (file) {

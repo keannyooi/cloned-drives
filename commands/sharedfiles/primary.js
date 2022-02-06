@@ -176,9 +176,9 @@ function paginate(list, page, pageLimit) {
 async function selectUpgrade(message, currentCar, amount, currentMessage, targetUpgrade) {
     const filter = (button) => button.user.id === message.author.id && button.customId === "upgrade_select";
     const getCard = require(`../cars/${currentCar.carID}.json`);
-    let isOne = Object.keys(currentCar.upgrades).filter(m => {
-        if (targetUpgrade && ((m.includes("6") && m.includes("9")) || Number(targetUpgrade) <= Number(m))) return false;
-        return currentCar.upgrades[m] >= amount;
+    let isOne = Object.keys(currentCar.upgrades).filter(upgrade => {
+        if (targetUpgrade && (upgrade.includes("6") && upgrade.includes("9") || Number(targetUpgrade) <= Number(upgrade))) return false;
+        return currentCar.upgrades[upgrade] >= amount;
     });
 
     if (isOne.length === 1) {
@@ -253,7 +253,7 @@ function addCars(garage, cars) {
             garage[isInGarage].upgrades[upgrade] += 1;
         }
         else {
-            let upgrades = carSave;
+            let upgrades = Object.assign({}, carSave);
             upgrades["000"] = 0;
             upgrades[upgrade] = 1;
             garage.push({

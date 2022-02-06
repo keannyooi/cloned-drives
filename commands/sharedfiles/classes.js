@@ -44,7 +44,7 @@ class BotMessage {
             return this;
         }
         catch (error) {
-            return console.log(error);
+            throw error;
         }
     }
 

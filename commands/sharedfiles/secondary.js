@@ -685,12 +685,10 @@ async function confirm(message, confirmationMessage, acceptedFunction, buttonSty
             processed = true;
             switch (button.customId) {
                 case "yse":
-                    try {
-                        await acceptedFunction(reactionMessage);
-                    }
-                    catch (error) {
-                        throw error;
-                    }
+                    await acceptedFunction(reactionMessage)
+                        .catch(error => {
+                            throw error;
+                        });
                     break;
                 case "nop":
                     confirmationMessage.editEmbed({ title: "Action cancelled." });
