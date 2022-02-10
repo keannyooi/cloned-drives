@@ -194,10 +194,16 @@ module.exports = {
             }
 
             if (streak > 75 && streak <= 100) {
-                criteria = { rq: opponentCar["rq"] + Math.floor(Math.random() * 6) + 5 };
+                criteria.rq = {
+                    start: 1,
+                    end: opponentCar["rq"] + Math.floor(Math.random() * 6) + 5
+                };
             }
             else if (streak > 100 && streak <= 125) {
-                criteria = { rq: opponentCar["rq"] + Math.floor(Math.random() * 6) + 5 };
+                criteria.rq = {
+                    start: 1,
+                    end: opponentCar["rq"] + Math.floor(Math.random() * 6) + 5
+                };
                 let reqs = ["tyreType", "driveType", "enginePos"];
                 let req = reqs[Math.floor(Math.random() * reqs.length)];
                 let reqCar = require(`./cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
@@ -207,7 +213,10 @@ module.exports = {
                 criteria[req] = reqCar[req].toLowerCase();
             }
             else if (streak > 125 && streak <= 175) {
-                criteria = { rq: opponentCar["rq"] + Math.floor(Math.random() * 6) };
+                criteria.rq = {
+                    start: 1,
+                    end: opponentCar["rq"] + Math.floor(Math.random() * 6) + 2
+                };
                 let reqs = ["modelYear", "seatCount", "bodyStyle"];
                 let req = reqs[Math.floor(Math.random() * reqs.length)];
                 switch (req) {
@@ -224,8 +233,11 @@ module.exports = {
                         break;
                 }
             }
-            else if (streak > 175) {
-                criteria = { rq: opponentCar["rq"] + Math.floor(Math.random() * 6) };
+            else {
+                criteria.rq = {
+                    start: 1,
+                    end: opponentCar["rq"] + Math.floor(Math.random() * 6) + 2
+                };
                 let reqs = ["make", "modelYear", "gc", "tags"];
                 let req = reqs[Math.floor(Math.random() * reqs.length)];
                 switch (req) {

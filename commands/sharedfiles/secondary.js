@@ -333,29 +333,32 @@ async function searchUser(message, username, currentMessage) {
 
 //args list: message, query, garage, amount, searchByID, restrictedMode, currentMessage
 async function searchGarage(args) {
+    let { message, query, garage, amount, searchByID, restrictedMode, currentMessage } = args;
     let matchList = [];
-    const searchResults = args.garage.filter(s => {
+    const searchResults = garage.filter(s => {
         let matchFound, isSufficient;
-        if (args.searchByID) {
-            matchFound = s.carID === args.query[0];
+        if (searchByID) {
+            matchFound = s.carID === query[0];
         }
         else {
             let currentCar = require(`../cars/${s.carID}.json`);
-            let name = carNameGen({ currentCar, removePrizeTag: true }).toLowerCase().split(" ");
-            matchFound = args.query.every(part => name.includes(part));
-            if (matchFound) matchList.push(s);
+            let name = carNameGen({ currentCar, removePrizeTag: true }).replace(/[()"]/g, "").toLowerCase().split(" ");
+            matchFound = query.every(part => name.replace(/[()"]/g, "").includes(part));
+            if (matchFound) {
+                matchList.push(s);
+            }
         }
-        if (args.restrictedMode) {
-            isSufficient = (s.upgrades["000"] + s.upgrades["333"] + s.upgrades["666"]) >= args.amount;
+        if (restrictedMode) {
+            isSufficient = (s.upgrades["000"] + s.upgrades["333"] + s.upgrades["666"]) >= amount;
         }
         else {
-            isSufficient = calcTotal(s) >= args.amount;
+            isSufficient = calcTotal(s) >= amount;
         }
 
         return matchFound && isSufficient;
     });
 
-    return processResults(args.message, searchResults, () => {
+    return processResults(message, searchResults, () => {
         let list = "", i = 1;
         searchResults.map(car => {
             let currentCar = require(`../cars/${car.carID}.json`);
@@ -363,7 +366,7 @@ async function searchGarage(args) {
             i++;
         });
         return list;
-    }, null, args.currentMessage)
+    }, null, currentMessage)
         .catch(throwError => {
             if (matchList.length > 0) {
                 let list = "";
@@ -387,55 +390,51 @@ async function searchGarage(args) {
                 }
 
                 const errorMessage = new ErrorMessage({
-                    channel: args.message.channel,
-                    title: `Error, ${args.amount} non-maxed, non-prize car(s) of the same tune required to perform this action.`,
-                    author: args.message.author,
+                    channel: message.channel,
+                    title: `Error, ${amount} non-maxed, non-prize car(s) of the same tune required to perform this action.`,
+                    author: message.author,
                     fields: [{ name: "Cars Found", value: list }]
                 });
-                return errorMessage.sendMessage({ currentMessage: args.currentMessage });
+                return errorMessage.sendMessage({ currentMessage: currentMessage });
             }
             else {
                 let list = [];
-                if (args.searchByID) {
-                    list = args.garage.map(car => car.carID);
+                if (searchByID) {
+                    list = garage.map(car => car.carID);
                 }
                 else {
-                    list = args.garage.map(car => {
+                    list = garage.map(car => {
                         let currentCar = require(`../cars/${car.carID}.json`);
                         return carNameGen({ currentCar, removePrizeTag: true }).toLowerCase();
                     });
                 }
-                return throwError(args.query.join(" "), list);
+                return throwError(query.join(" "), list);
             }
         });
 }
 
 async function search(message, query, searchList, type, currentMessage) {
     const searchResults = searchList.filter(s => {
-        let test = listGen(s, type).toLowerCase().split(" ");
-        return query.every(part => test.includes(part));
+        let test = listGen(s, type).toLowerCase().replace(/[()"]/g, "").split(" ");
+        return query.every(part => test.includes(part.replace(/[()"]/g, "")));
     });
     return processResults(message, searchResults, () => {
         let list = "";
         for (let i = 1; i <= searchResults.length; i++) {
-            let hmm = listGen(searchResults[i - 1], type, true);
+            let hmm = listGen(searchResults[i - 1], type);
             list += `${i} - ${hmm}\n`;
         }
         return list;
     }, type, currentMessage)
         .catch(throwError => {
-            return throwError(query.join(" "), searchList.map(i => listGen(i, type, true).toLowerCase()));
+            return throwError(query.join(" "), searchList.map(i => listGen(i, type).toLowerCase()));
         });
 
-    function listGen(item, type, includeBrackets) {
+    function listGen(item, type) {
         switch (type) {
             case "car":
                 let currentCar = require(`../cars/${item}`);
-                let a = carNameGen({ currentCar });
-                if (!includeBrackets) {
-                    a = a.replace("(", "").replace(")", "");
-                }
-                return a;
+                return carNameGen({ currentCar });
             case "pack":
             case "track":
                 let details = require(`../${type}s/${item}`);

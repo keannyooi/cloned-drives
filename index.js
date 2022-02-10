@@ -58,7 +58,9 @@ bot.on("messageCreate", async (message) => {
 });
 
 bot.on("guildMemberAdd", async (member) => {
-    await upsertUserRecord(member);
+    if (!bot.devMode) {
+        await upsertUserRecord(member);
+    }
 });
 
 bot.on("messageUpdate", (oldMessage, newMessage) => {

@@ -19,13 +19,10 @@ module.exports = {
             sort = args[args.length - 1].toLowerCase();
             args = args.slice(0, args.length - 2);
         }
-        if (!isNaN(args[0])) {
-            
-        }
-        else if (args[0]) {
+        if (args[0] && isNaN(args[0])) {
             let userName;
             if (isNaN(args[args.length - 1])) {
-                userName = args.map(i => i.toLowerCase());
+                userName = args.join(" ").toLowerCase();
             }
             else {
                 userName = args.slice(0, args.length - 1).join(" ").toLowerCase();
@@ -58,6 +55,9 @@ module.exports = {
             }
         }
         else {
+            if (args[0]) {
+                page = parseInt(args[0]);
+            }
             try {
                 await loop(user, page, sort);
             }
@@ -67,7 +67,8 @@ module.exports = {
         }
 
         async function loop(user, page, sort, currentMessage) {
-            const { garage, settings, filter } = await profileModel.findOne({ userID: user.id });
+            const { garage } = await profileModel.findOne({ userID: user.id });
+            const { settings, filter } = await profileModel.findOne({ userID: message.author.id });
             let filteredGarage = settings.disablegaragefilter ? garage : garage.filter(car => filterCheck(car, filter));
 
             sort = sortCheck(message, sort, currentMessage);

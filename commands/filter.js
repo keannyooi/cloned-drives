@@ -232,9 +232,6 @@ module.exports = {
                                     case "bodyStyle":
                                         filter[req] = [value];
                                         break;
-                                    case "rq":
-                                        filter[req] = { start: 1, end: value };
-                                        break;
                                     default:
                                         filter[req] = value;
                                         break;

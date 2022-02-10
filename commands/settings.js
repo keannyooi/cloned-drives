@@ -12,8 +12,7 @@ module.exports = {
     category: "Configuration",
     description: "Configure settings here.",
     async execute(message, args) {
-        const playerData = await profileModel.findOne({ userID: message.author.id });
-        let settings = playerData.settings;
+        let { settings } = await profileModel.findOne({ userID: message.author.id });
 
         if (!args[0]) {
             const filter = (button) => button.user.id === message.author.id;
@@ -81,7 +80,7 @@ module.exports = {
                                         ]
                                     });
                                     break;
-                                case "Garage + Lists":
+                                case "Garage + List":
                                     infoMessage.editEmbed({
                                         fields: [
                                             {
@@ -367,7 +366,7 @@ module.exports = {
                     {
                         label: "Garage + List Settings",
                         description: "Affects the garage and list commands.",
-                        value: "Garage + Lists"
+                        value: "Garage + List"
                     },
                     {
                         label: "Profile Settings",
