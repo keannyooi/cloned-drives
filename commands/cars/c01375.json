@@ -6,10 +6,10 @@
     "country": "DE",
     "topSpeed": 170,
     "0to60": 2.3,
-    "handling": 99,
+    "handling": 101,
     "driveType": "4WD",
     "tyreType": "Slick",
-    "tags": ["Motorsport","Eco-Friendly"],
+    "tags": ["Motorsport","Eco-Friendly","Oddity","Unique"],
     "isPrize": true,
 
 
@@ -26,31 +26,31 @@
     "description": "The electric world record setter. Card by Andu",
 
 
-    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819486709518958592/NotOPAtAll.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819487257987514378/IDR.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819487266992029696/IDR1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819487274562617374/IDR2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819487299594616912/IDR996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819487287578460230/IDR969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819487281563435018/IDR699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/940556101886287932/IDR.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/940556203203899412/IDRUpdated.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/940556216755683348/IDRUpdated-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/940556227778330674/IDRUpdated-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/940556258480623636/IDRUpdated-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/940556279313735690/IDRUpdated-9669.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/940556295918989363/IDRUpdated-6699.png",
 
     "333TopSpeed": 173,
     "3330to60": 2.2,
-    "333Handling": 102,
+    "333Handling": 104,
 
     "666TopSpeed": 176,
     "6660to60": 2.1,
-    "666Handling": 106,   
+    "666Handling": 108,   
 
     "996TopSpeed": 179,
     "9960to60": 2.0,
-    "996Handling": 106,
+    "996Handling": 108,
 
     "969TopSpeed": 179,
     "9690to60": 2.1,
-    "969Handling": 110,
+    "969Handling": 112,
 
     "699TopSpeed": 176,
     "6990to60": 2.0,
-    "699Handling": 110
+    "699Handling": 112
 }
