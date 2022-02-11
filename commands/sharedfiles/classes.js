@@ -61,7 +61,7 @@ class BotMessage {
                     this.embed.addFields(value);
                     break;
                 case "footer":
-                    this.embed.setFooter(value);
+                    this.embed.setFooter({ text: value });
                     break;
                 default:
                     break;

@@ -5,7 +5,7 @@ const fs = require("fs");
 const carFiles = fs.readdirSync("./commands/cars").filter(file => file.endsWith(".json"));
 const tracks = fs.readdirSync("./commands/tracks").filter(file => file.endsWith(".json"));
 const { InfoMessage } = require("./sharedfiles/classes.js");
-const { defaultChoiceTime } = require("./sharedfiles/consts.js");
+const { defaultChoiceTime, carSave } = require("./sharedfiles/consts.js");
 const { getButtons, race, handMissingError } = require("./sharedfiles/primary.js");
 const { createCar, filterCheck } = require("./sharedfiles/secondary.js");
 const profileModel = require("../models/profileSchema.js");
@@ -19,12 +19,12 @@ module.exports = {
     category: "Gameplay",
     description: "Does a random race where you are faced with a randomly generated opponent on a randomly generated track. May the RNG be with you.",
     async execute(message) {
-        const playerData = await profileModel.findOne({ userID: message.author.id });
-        if (playerData.hand.carID === "") {
+        const { hand, rrStats, settings, unclaimedRewards } = await profileModel.findOne({ userID: message.author.id });
+        if (hand.carID === "") {
             return handMissingError(message);
         }
 
-        let { streak, highestStreak, opponent, trackID, reqs } = playerData.rrStats;
+        let { streak, highestStreak, opponent, trackID, reqs } = rrStats;
         if (!carFiles.includes(`${opponent.carID}.json`) || (streak > 75 && reqs === {})) {
             await randomize();
         }
@@ -58,9 +58,9 @@ module.exports = {
         }
 
         const track = require(`./tracks/${trackID}.json`);
-        const [playerCar, playerList] = createCar(playerData.hand);
+        const [playerCar, playerList] = createCar(hand);
         const [opponentCar, opponentList] = createCar(opponent);
-        const { yse, nop, skip } = getButtons("rr", playerData.settings.buttonstyle);
+        const { yse, nop, skip } = getButtons("rr", settings.buttonstyle);
         const row = new MessageActionRow({ components: [yse, nop, skip] });
 
         const intermission = new InfoMessage({
@@ -86,12 +86,12 @@ module.exports = {
                 switch (button.customId) {
                     case "yse":
                         reactionMessage.removeButtons();
-                        if (!filterCheck(playerData.hand, reqs)) {
+                        if (!filterCheck(hand, reqs)) {
                             intermission.editEmbed({ title: "Your hand does not meet the requirements." });
                             return intermission.sendMessage({ currentMessage: reactionMessage });
                         }
 
-                        const result = await race(message, playerCar, opponentCar, track, playerData.settings.enablegraphics);
+                        const result = await race(message, playerCar, opponentCar, track, settings.enablegraphics);
                         if (result > 0) {
                             streak++;
                             let reward = 0, rqBonus = 0, rqBonusBase = 0;
@@ -116,12 +116,12 @@ module.exports = {
                             }
 
                             const moneyEmoji = bot.emojis.cache.get("726017235826770021");
-                            let hasEntry = playerData.unclaimedRewards.findIndex(entry => entry.origin === "Random Races");
+                            let hasEntry = unclaimedRewards.findIndex(entry => entry.origin === "Random Races");
                             if (hasEntry > -1) {
-                                playerData.unclaimedRewards[hasEntry].money += reward + rqBonus;
+                                unclaimedRewards[hasEntry].money += reward + rqBonus;
                             }
                             else {
-                                playerData.unclaimedRewards.push({
+                                unclaimedRewards.push({
                                     money: reward + rqBonus,
                                     origin: "Random Races"
                                 });
@@ -141,7 +141,7 @@ module.exports = {
                                 "rrStats.streak": streak,
                                 "rrStats.highestStreak": highestStreak
                             },
-                            unclaimedRewards: playerData.unclaimedRewards
+                            unclaimedRewards: unclaimedRewards
                         });
                         return bot.deleteID(message.author.id);
                     case "nop":
@@ -154,7 +154,7 @@ module.exports = {
                             "$set": {
                                 "rrStats.streak": 0,
                             },
-                            unclaimedRewards: playerData.unclaimedRewards
+                            unclaimedRewards: unclaimedRewards
                         });
                         const skipMessage = new InfoMessage({
                             channel: message.channel,
@@ -233,7 +233,7 @@ module.exports = {
                         break;
                 }
             }
-            else {
+            else if (streak > 175) {
                 criteria.rq = {
                     start: 1,
                     end: opponentCar["rq"] + Math.floor(Math.random() * 6) + 2

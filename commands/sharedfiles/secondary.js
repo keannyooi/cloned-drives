@@ -343,7 +343,7 @@ async function searchGarage(args) {
         else {
             let currentCar = require(`../cars/${s.carID}.json`);
             let name = carNameGen({ currentCar, removePrizeTag: true }).replace(/[()"]/g, "").toLowerCase().split(" ");
-            matchFound = query.every(part => name.replace(/[()"]/g, "").includes(part));
+            matchFound = query.every(part => name.includes(part.replace(/[()"]/g, "")));
             if (matchFound) {
                 matchList.push(s);
             }

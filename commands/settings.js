@@ -26,7 +26,7 @@ module.exports = {
                     switch (button.customId) {
                         case "category_select":
                             let backButton;
-                            if (playerData.settings.buttonstyle === "classic") {
+                            if (settings.buttonstyle === "classic") {
                                 backButton = new MessageButton({
                                     emoji: "⬅️",
                                     style: "SECONDARY",
