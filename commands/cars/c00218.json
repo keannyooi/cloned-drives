@@ -1,7 +1,7 @@
 {
     "rq": 72,
     "make": "Bugatti",
-    "model": "EB 18-3 Chiron Concept",
+    "model": "EB 18/3 Chiron Concept",
     "modelYear": 1999,
     "country": "FR",
     "topSpeed": 205,
@@ -9,7 +9,7 @@
     "handling": 86,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Concept", "Sleeper", "Unique"],
+    "tags": ["Concept", "Unique"],
     "isPrize": false,
 
     "weight": 1700,

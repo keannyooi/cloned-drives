@@ -1,7 +1,7 @@
 {
     "rq": 20,
     "make": "Fiat",
-    "model": "X1-9",
+    "model": "X1/9",
     "modelYear": 1972,
     "country": "IT",
     "topSpeed": 101,
@@ -15,7 +15,7 @@
     "weight": 880,
     "gc": "Low",
     "seatCount": 2,
-    "bodyStyle": "Roadster",
+    "bodyStyle": "Convertible",
     "tcs": false,
     "abs": false,
     "enginePos": "Middle",

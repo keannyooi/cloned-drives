@@ -1,7 +1,7 @@
 {
     "rq": 3,
     "make": "MG",
-    "model": "TA 'Airline' Coupe",
+    "model": "TA \"Airline\" Coupe",
     "modelYear": 1936,
     "country": "GB",
     "topSpeed": 79,
@@ -15,7 +15,7 @@
     "weight": 621,
     "gc": "Medium",
     "seatCount": 2,
-    "bodyStyle": "coupe",
+    "bodyStyle": "Coupe",
     "tcs": false,
     "abs": false,
     "enginePos": "Front",

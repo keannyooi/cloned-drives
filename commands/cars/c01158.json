@@ -12,10 +12,9 @@
     "tags": ["Rest of the World"],
     "isPrize": false,
 
-
     "weight": 1456,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Wagon",
     "tcs": true,
     "abs": true,
@@ -25,7 +24,6 @@
     "ola": 68.85,
     "description": "The Swedish Subaru with a dream. Card by Havvy",
 
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/821879606663184424/unknown.png",
     "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821879674350993468/000_saab.png",
     "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821879679040356382/111_saab.png",
@@ -33,7 +31,6 @@
     "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821879699289931796/332_saab.png",
     "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821879695804334090/323_saab.png",
     "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821879688690925608/233_saab.png",
-
 
     "333TopSpeed": 144,
     "3330to60": 5.8,

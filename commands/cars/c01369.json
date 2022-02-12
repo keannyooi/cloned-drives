@@ -12,10 +12,9 @@
     "tags": ["Hot Hatch"],
     "isPrize": false,
 
-
     "weight": 1307,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
@@ -24,7 +23,6 @@
     "mra": 69.84,
     "ola": 89.95,
     "description": "Still the class benchmark and the quintessential hot hatch. Card by Andu ",
-
 
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820392570190168094/GTI7.png",
     "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820392392267137084/GTI7.png",

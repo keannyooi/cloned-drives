@@ -12,10 +12,9 @@
     "tags": ["Supercar"],
     "isPrize": false,
 
-
     "weight": 1350,
     "gc": "Low",
-    "seatCount":2,
+    "seatCount": 2,
     "bodyStyle": "Coupe",
     "tcs": true,
     "abs": true,
@@ -25,7 +24,6 @@
     "ola": 82.41,
     "description": "This is a harder-edged, faster 911, for the hundreds of racing Porsche enthusiasts around the world. Card by Havvy",
 
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/826574496273006602/Porsche911GT3996.png",
     "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826574535167836181/000_gt3.png",
     "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826574539054907423/111_gt3.png",
@@ -33,7 +31,6 @@
     "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826574564917116938/332_gt3.png",
     "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826574553085247530/323_gt3.png",
     "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826574550334177290/233_gt3.png",
-
 
     "333TopSpeed": 191,
     "3330to60": 4.4,

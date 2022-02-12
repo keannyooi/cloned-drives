@@ -1,6 +1,6 @@
 {
     "rq": 82,
-    "make": "Mercedes-Benz",
+    "make": ["Mercedes-Benz", "McLaren"],
     "model": "SLR McLaren Stirling Moss Edition",
     "modelYear": 2009,
     "country": "DE",
@@ -15,7 +15,7 @@
     "weight": 1568,
     "gc": "Low",
     "seatCount": 2,
-    "bodyStyle": "Roadster",
+    "bodyStyle": "Open Air",
     "tcs": true,
     "abs": true,
     "enginePos": "Front",

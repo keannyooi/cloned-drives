@@ -12,10 +12,9 @@
     "tags": ["Supercar"],
     "isPrize": false,
 
-
     "weight": 1380,
     "gc": "Low",
-    "seatCount":2,
+    "seatCount": 2,
     "bodyStyle": "Coupe",
     "tcs": true,
     "abs": true,
@@ -25,7 +24,6 @@
     "ola": 79.07,
     "description": "21 more hp and a stiffer body. Card by Havvy",
 
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/823436873317482567/Porsche911GT3996.png",
     "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823447601755193365/996.2_000.jpg",
     "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823447610894319616/996.2_333.jpg",
@@ -33,7 +31,6 @@
     "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823447651991158814/996.2_996.jpg",
     "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823447640519475230/996.2_969.jpg",
     "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823447629203111966/996.2_699.jpg",
-
 
     "333TopSpeed": 193,
     "3330to60": 4.1,

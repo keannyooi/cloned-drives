@@ -12,10 +12,9 @@
     "tags": ["Hot Hatch"],
     "isPrize": false,
 
-
     "weight": 1213,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
@@ -24,7 +23,6 @@
     "mra": 63.23,
     "ola": 76.70,
     "description": "When GTI was a trim level. Card by Andu ",
-
 
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819486588614475796/GTI4.png",
     "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819487118183104512/GTI4.png",

@@ -12,10 +12,9 @@
     "tags": ["Supercar"],
     "isPrize": false,
 
-
     "weight": 1440,
     "gc": "Low",
-    "seatCount":4,
+    "seatCount": 4,
     "bodyStyle": "Coupe",
     "tcs": true,
     "abs": true,
@@ -25,7 +24,6 @@
     "ola": 72.83,
     "description": "The 911 GT2 has all the ingredients wanted and expected from a high-end Porsche, but all to a greater degree. Card by Havvy",
 
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/826536593577082880/Porsche911GT2996.1.png",
     "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826536652687147059/000_gt2.png",
     "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826536657099817010/111_gt2.png",
@@ -33,7 +31,6 @@
     "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826536675458941017/332_gt2.png",
     "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826536671155191828/323_gt2.png",
     "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826536665299812412/233_gt2.png",
-
 
     "333TopSpeed": 198,
     "3330to60": 3.6,

@@ -12,10 +12,9 @@
     "tags": ["Hot Hatch"],
     "isPrize": false,
 
-
     "weight": 907,
     "gc": "Low",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": false,
@@ -24,7 +23,6 @@
     "mra": 52.13,
     "ola": 71.43,
     "description": "The classiest and most complete hot hatch of its era. Card by Andu ",
-
 
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820342819238838332/GTI2.png",
     "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820342639517892638/GTI2.png",

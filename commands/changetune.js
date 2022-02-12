@@ -33,7 +33,7 @@ module.exports = {
             }
         }
         else {
-            await new Promise(resolve => resolve(searchUser(message, args[0].toLowerCase(), availableUsers)))
+            await new Promise(resolve => resolve(searchUser(message, args[0].toLowerCase())))
                 .then(async response => {
                     if (!Array.isArray(response)) return;
                     let [result, currentMessage] = response;

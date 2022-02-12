@@ -1,6 +1,6 @@
 {
     "rq": 60,
-    "make": "Veilside",
+    "make": ["Veilside", "Honda"],
     "model": "S2000",
     "modelYear": 2003,
     "country": "JP",
@@ -15,7 +15,7 @@
     "weight": 1276,
     "gc": "Low",
     "seatCount": 2,
-    "bodyStyle": "Roadster",
+    "bodyStyle": "Convertible",
     "tcs": true,
     "abs": true,
     "enginePos": "Front",

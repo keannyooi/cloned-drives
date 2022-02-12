@@ -12,10 +12,9 @@
     "tags": ["Hot Hatch"],
     "isPrize": false,
 
-
     "weight": 1432,
     "gc": "Medium",
-    "seatCount":4,
+    "seatCount": 4,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
@@ -23,8 +22,7 @@
     "fuelType": "Petrol",
     "mra": 64.29,
     "ola": 79.37,
-    "description": "The driver’s beetle re-born. Card by Spence",
-
+    "description": "The driver's beetle re-born. Card by Spence",
 
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/824738829989707796/BeetleGSR.png",
     "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824739353241583666/BGSR.png",
