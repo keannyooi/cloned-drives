@@ -1,0 +1,54 @@
+{
+    "rq": 78,
+    "make": "Maserati",
+    "model": "MC12",
+    "modelYear": 2004,
+    "country": "IT",
+    "topSpeed": 205,
+    "0to60": 3.7,
+    "handling": 90,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Track Day"],
+    "isPrize": false,
+
+    "weight": 1429,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 86.05,
+    "ola": 91.89,
+    "description": "Card by Lemonade.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/903506427488903200/Maserati_MC12_CD.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/903506156520099870/Maserati_MC12_Stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/903506177567121448/Maserati_MC12_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/903506203550834738/Maserati_MC12_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/903506309075308545/Maserati_MC12_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/903506285964722196/Maserati_MC12_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/903506229966561320/Maserati_MC12_699.png",
+
+    "333TopSpeed": 208,
+    "3330to60": 3.3,
+    "333Handling": 93,
+
+    "666TopSpeed": 210,
+    "6660to60": 3.2,
+    "666Handling": 96,
+
+    "996TopSpeed": 213,
+    "9960to60": 3.0,
+    "996Handling": 96,
+
+    "969TopSpeed": 213,
+    "9690to60": 3.2,
+    "969Handling": 100,
+
+    "699TopSpeed": 210,
+    "6990to60": 3.0,
+    "699Handling": 100
+}
