@@ -1,0 +1,54 @@
+{
+    "rq": 79,
+    "make": "Porsche",
+    "model": "718 Boxster S",
+    "modelYear": 2017,
+    "country": "DE",
+    "topSpeed": 177,
+    "0to60": 4.3,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1355,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 80.77,
+    "ola": 76.2,
+    "description": "Card by Olimato.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/945207974970949692/718_boxster_s.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/945208045032587274/718_boxster_s_stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/945208057988800532/718_boxster_s_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/945208067774095421/718_boxster_s_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/945208105438957598/718_boxster_s_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/945208093996879932/718_boxster_s_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/945208081858568252/718_boxster_s_699.png",
+
+    "333TopSpeed": 180,
+    "3330to60": 4.1,
+    "333Handling": 94,
+
+    "666TopSpeed": 183,
+    "6660to60": 3.9,
+    "666Handling": 97,
+
+    "996TopSpeed": 186,
+    "9960to60": 3.7,
+    "996Handling": 97,
+
+    "969TopSpeed": 186,
+    "9690to60": 3.9,
+    "969Handling": 101,
+
+    "699TopSpeed": 183,
+    "6990to60": 3.7,
+    "699Handling": 101
+}
