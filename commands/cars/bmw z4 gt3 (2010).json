@@ -1,5 +1,5 @@
 {
-    "rq": 82,
+    "rq": 81,
     "make": "BMW",
     "model": "Z4 GT3",
     "modelYear": 2010,
@@ -10,7 +10,7 @@
     "driveType": "RWD",
     "tyreType": "Slick",
     "tags": ["Motorsport"],
-    "isPrize": true,
+    "isPrize": false,
 
     "weight": 1200,
     "gc": "Low",
@@ -20,11 +20,11 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 112.5,
-    "ola": 94.44,
+    "mra": 106.06,
+    "ola": 102.85,
     "description": "Card by Aqo.",
 
-    "card": "https://cdn.discordapp.com/attachments/819199720249360384/945428656111644842/z4gt3.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/945469350113079356/hhh.png",
     "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/945428710209765467/stock.png",
     "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/945428729432252487/333.png",
     "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/945428749036441750/666.png",
