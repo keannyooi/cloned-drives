@@ -1,6 +1,5 @@
 
 .env
-node_modules/
-dist/
+src/config/node_modules/
 dump/
 mongodump.exe

@@ -6,21 +6,17 @@ const { readdirSync } = require("fs");
 const { Collection } = require("discord.js");
 const { connect } = require("mongoose");
 const { DateTime, Interval } = require("luxon");
-const { ErrorMessage, InfoMessage, BotError } = require("./commands/sharedfiles/classes.js");
-const bot = require("./config.js");
-const profileModel = require("./models/profileSchema.js");
+const { ErrorMessage, InfoMessage, BotError } = require("./src/util/classes/classes.js");
+const bot = require("./src/config/config.js");
+const profileModel = require("./src/models/profileSchema.js");
 const prefix = bot.devMode ? process.env.DEV_PREFIX : process.env.BOT_PREFIX;
 const token = bot.devMode ? process.env.DEV_TOKEN : process.env.BOT_TOKEN;
-// this is for testing purposes, the line below will be deleted once everything is complete
-const allowedCommands = ["benchmark.js", "carinfo.js", "calculate.js", "garage.js", "ping.js", "reload.js", "statistics.js", "addcar.js", "removecar.js", "addmoney.js", "addfusetokens.js", "removefusetokens.js", "removemoney.js", "addtrophies.js", "removetrophies.js", "carlist.js", "testpack.js", "openpack.js", "trackinfo.js", "packinfo.js", "changetune.js", "upgrade.js", "fuse.js", "sell.js", "help.js", "filter.js", "settings.js", "sethand.js", "quickrace.js", "randomrace.js", "rewards.js", "setwinstreak.js", "reset.js"];
-const commandFiles = readdirSync("./commands").filter(file => file.endsWith(".js"));
+const commandFiles = readdirSync("./src/commands").filter(file => file.endsWith(".js"));
 
-commandFiles.forEach(function (file) {
-    if (allowedCommands.includes(file)) {
-        let command = require(`./commands/${file}`);
-        bot.commands.set(command.name, command);
-    }
-});
+for (let commandFile of commandFiles) {
+    let command = require(`./src/commands/${commandFile}`);
+    bot.commands.set(command.name, command);
+}
 
 connect(process.env.MONGO_PW, {
     useNewUrlParser: true,
@@ -29,6 +25,8 @@ connect(process.env.MONGO_PW, {
 })
     .then(() => console.log("database connect successful!"))
     .catch(error => console.log(error));
+
+bot.login(token);
 
 // bot events
 bot.once("ready", async () => {
@@ -42,14 +40,14 @@ bot.once("ready", async () => {
     });
 
     // for updating profile model structure
-    // await profileModel.updateMany({ u }, {
-    //     "unclaimedRewards": []
+    // await profileModel.updateMany({}, {
+    //     "$set": {
+    //         "dailyStats.lastDaily": DateTime.fromISO("2021-09-10").toISO(),
+    //     }
     // });
 
     bot.devMode ? bot.user.setActivity("around with code", { type: "PLAYING" }) : bot.user.setActivity("over everyone's garages", { type: "WATCHING" });
 });
-
-bot.login(token);
 
 bot.on("messageCreate", async (message) => {
     //if (message.author.id === "494120116422967325") {
@@ -65,83 +63,69 @@ bot.on("guildMemberAdd", async (member) => {
 
 bot.on("messageUpdate", (oldMessage, newMessage) => {
     if (bot.awakenTime < oldMessage.createdTimestamp) {
-        //if (newMessage.author.id === "494120116422967325") {
-            processCommand(newMessage);
-        //}
+        processCommand(newMessage);
     }
 });
 
-// for when i really done goofed up
-let fatalErrorCount = 0;
+// try me
 process.on("uncaughtException", async error => {
     console.log(error.stack);
-    fatalErrorCount++
     const errorReport = new BotError({
         stack: error.stack,
-        isFatal: true
+        unknownSource: true
     });
     await errorReport.sendReport();
-
-    if (fatalErrorCount >= 5) {
-        process.exit(1);
-    }
 });
 
 // loop thingy
-// setInterval(async () => {
-// 	const events = await bot.db.get("events");
-// 	for (const [key, value] of Object.entries(events)) {
-// 		if (key.startsWith("evnt") && value.timeLeft !== "unlimited" && value.isActive === true) {
-// 			if (Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(value.deadline)).invalid !== null) {
-// 				await bot.db.delete(`events.evnt${value.id}`);
-// 				bot.channels.cache.get("798776756952629298").send(`**The ${value.name} event has officially finished. Thanks for playing!**`);
-// 			}
-// 		}
-// 	}
-// 	const offers = await bot.db.get("limitedOffers");
-// 	for (let i = 0; i < offers.length; i++) {
-// 		if (offers[i].timeLeft !== "unlimited" && offers[i].isActive === true) {
-// 			if (Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(offers[i].deadline)).invalid !== null) {
-// 				bot.channels.cache.get("798776756952629298").send(`**The ${offers[i].name} offer has officially ended.**`);
-// 				offers.splice(i, 1);
-// 			}
-// 		}
-// 	}
-// 	await bot.db.set("limitedOffers", offers);
-// 	const challenge = await bot.db.get("challenge");
-// 	if (challenge.timeLeft !== "unlimited" && challenge.isActive === true) {
-// 		if (Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(challenge.deadline)).invalid !== null) {
-// 			bot.channels.cache.get("798776756952629298").send(`**The ${challenge.name} challenge has officially finished. Thanks for playing!**`);
-// 			challenge.isActve = false;
-// 			challenge.players = {};
-// 			challenge.timeLeft = "unlimited";
-// 			challenge.deadline = "idk";
-// 		}
-// 	}
-// 	await bot.db.set("challenge", challenge);
-// 	const guild = bot.guilds.cache.get("711769157078876305");
-// 	guild.members.cache.forEach(async user => {
-// 		const playerData = await bot.db.get(`acc${user.id}`);
-// 		if (playerData) {
-// 			if (playerData.settings.senddailynotifs === true) {
-// 				let lastDaily = playerData.lastDaily;
-// 				if (!lastDaily || !isNaN(lastDaily)) {
-// 					lastDaily = DateTime.fromISO("2021-01-01");
-// 				}
-// 				else {
-// 					lastDaily = DateTime.fromISO(lastDaily);
-// 				}
-// 				const interval = Interval.fromDateTimes(DateTime.now(), lastDaily.plus({ days: 1 }));
-// 				if (interval.invalid !== null && !playerData.notifSent) {
-// 					playerData.notifSent = true;
-// 					user.send(`Notification: Your daily reward is now available! Claim it using \`${prefix}-daily\`.`)
-// 						.catch(() => console.log(`unable to send notification to user ${user.id}`));
-// 					await bot.db.set(`acc${user.id}`, playerData);
-// 				}
-// 			}
-// 		}
-// 	});
-// }, 180000);
+setInterval(async () => {
+	// const events = await bot.db.get("events");
+	// for (const [key, value] of Object.entries(events)) {
+	// 	if (key.startsWith("evnt") && value.timeLeft !== "unlimited" && value.isActive === true) {
+	// 		if (Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(value.deadline)).invalid !== null) {
+	// 			await bot.db.delete(`events.evnt${value.id}`);
+	// 			bot.channels.cache.get("798776756952629298").send(`**The ${value.name} event has officially finished. Thanks for playing!**`);
+	// 		}
+	// 	}
+	// }
+	// const offers = await bot.db.get("limitedOffers");
+	// for (let i = 0; i < offers.length; i++) {
+	// 	if (offers[i].timeLeft !== "unlimited" && offers[i].isActive === true) {
+	// 		if (Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(offers[i].deadline)).invalid !== null) {
+	// 			bot.channels.cache.get("798776756952629298").send(`**The ${offers[i].name} offer has officially ended.**`);
+	// 			offers.splice(i, 1);
+	// 		}
+	// 	}
+	// }
+	// await bot.db.set("limitedOffers", offers);
+	// const challenge = await bot.db.get("challenge");
+	// if (challenge.timeLeft !== "unlimited" && challenge.isActive === true) {
+	// 	if (Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(challenge.deadline)).invalid !== null) {
+	// 		bot.channels.cache.get("798776756952629298").send(`**The ${challenge.name} challenge has officially finished. Thanks for playing!**`);
+	// 		challenge.isActve = false;
+	// 		challenge.players = {};
+	// 		challenge.timeLeft = "unlimited";
+	// 		challenge.deadline = "idk";
+	// 	}
+	// }
+	// await bot.db.set("challenge", challenge);
+
+    const playerDatum = await profileModel.find({ "settings.senddailynotifs": true, "dailyStats.notifReceived": false });
+    for (let { userID, dailyStats } of playerDatum) {
+        let { lastDaily } = dailyStats;
+        let interval = Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(lastDaily).plus({ days: 1 }));
+        if (interval.invalid !== null) {
+            let user = await bot.homeGuild.members.fetch(userID);
+            await user.send("**Notification: Your daily reward is now available! Claim it using `cd-daily`.**")
+				.catch(() => console.log(`unable to send notification to user ${userID}`));
+            await profileModel.updateOne({ userID }, {
+                "$set": {
+                    "dailyStats.notifReceived": true
+                }
+            })
+        }
+    }
+}, 180000);
 
 async function processCommand(message) {
     if (message.webhookId !== null || !bot.homeGuild) return; //webhooks not allowed

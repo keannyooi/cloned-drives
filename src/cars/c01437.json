@@ -1,0 +1,54 @@
+{
+    "rq": 81,
+    "make": "BMW",
+    "model": "Z4 GT3",
+    "modelYear": 2010,
+    "country": "DE",
+    "topSpeed": 174,
+    "0to60": 3.5,
+    "handling": 96,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport"],
+    "isPrize": false,
+
+    "weight": 1200,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 100.00,
+    "ola": 102.85,
+    "description": "Card by Aqo.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/945469350113079356/hhh.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/945428710209765467/stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/945428729432252487/333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/945428749036441750/666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/945428812840185976/996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/945428792317472819/969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/945428769554976778/699.png",
+
+    "333TopSpeed": 177,
+    "3330to60": 3.3,
+    "333Handling": 99,
+
+    "666TopSpeed": 180,
+    "6660to60": 3.2,
+    "666Handling": 102,
+
+    "996TopSpeed": 183,
+    "9960to60": 3.0,
+    "996Handling": 102,
+
+    "969TopSpeed": 183,
+    "9690to60": 3.2,
+    "969Handling": 107,
+
+    "699TopSpeed": 180,
+    "6990to60": 3.0,
+    "699Handling": 107
+}

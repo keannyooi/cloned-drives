@@ -1,0 +1,54 @@
+{
+    "rq": 64,
+    "make": "Lancia",
+    "model": "Hyena",
+    "modelYear": 1993,
+    "country": "IT",
+    "topSpeed": 155,
+    "0to60": 5.1,
+    "handling": 78,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer"],
+    "isPrize": false,
+
+    "weight": 1150,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 64.56,
+    "ola": 70.00,
+    "description": "Card by Exist.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/860124159933546496/CD_Lancia_Hyena.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/860124199862272034/CD_Lancia_Hyena_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/860124207492497408/CD_Lancia_Hyena_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/860124213162803221/CD_Lancia_Hyena_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/860124231232782376/CD_Lancia_Hyena_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/860124224986021929/CD_Lancia_Hyena_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/860124218984759346/CD_Lancia_Hyena_699.png",
+
+    "333TopSpeed": 158,
+    "3330to60": 4.8,
+    "333Handling": 81,
+
+    "666TopSpeed": 162,
+    "6660to60": 4.6,
+    "666Handling": 83,
+
+    "996TopSpeed": 165,
+    "9960to60": 4.3,
+    "996Handling": 83,
+
+    "969TopSpeed": 165,
+    "9690to60": 4.6,
+    "969Handling": 87,
+
+    "699TopSpeed": 162,
+    "6990to60": 4.3,
+    "699Handling": 87
+}

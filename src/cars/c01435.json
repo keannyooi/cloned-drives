@@ -1,0 +1,54 @@
+{
+    "rq": 15,
+    "make": "ARO",
+    "model": "M-461",
+    "modelYear": 1964,
+    "country": "RO",
+    "topSpeed": 62,
+    "0to60": 28.0,
+    "handling": 44,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1550,
+    "gc": "High",
+    "seatCount": 2,
+    "bodyStyle": ["Convertible", "SUV"],
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 0,
+    "ola": 40.00,
+    "description": "Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/930857462083510352/AROM461.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/930858441549946940/AROM416.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/930858451268153434/AROM416333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/930858458998255657/AROM416666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/930858488224170034/AROM416996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/930858477239304234/AROM416969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/930858468133462016/AROM416699.png",
+
+    "333TopSpeed": 70,
+    "3330to60": 26.6,
+    "333Handling": 45,
+
+    "666TopSpeed": 79,
+    "6660to60": 25.2,
+    "666Handling": 47,
+
+    "996TopSpeed": 87,
+    "9960to60": 23.8,
+    "996Handling": 47,
+
+    "969TopSpeed": 87,
+    "9690to60": 25.2,
+    "969Handling": 49,
+
+    "699TopSpeed": 79,
+    "6990to60": 23.8,
+    "699Handling": 49
+}

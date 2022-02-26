@@ -1,0 +1,54 @@
+{
+    "rq": 32,
+    "make": "Porsche",
+    "model": "550 Spyder",
+    "modelYear": 1954,
+    "country": "DE",
+    "topSpeed": 140,
+    "0to60": 8.1,
+    "handling": 70,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Motorsport", "Unique", "Ultra Expensive"],
+    "isPrize": false,
+
+    "weight": 550,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "OpenAir",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 47.37,
+    "ola": 64.19,
+    "description": "Top contender in the 1500cc class. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/930193751257780224/550NEW.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/930194612163866644/550spoder.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/930194620703473705/550spoder333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/930194628353884190/550spoder666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/930194653158981682/550spoder996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/930194644841668728/550spoder969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/930194637904289792/550spoder699.png",
+
+    "333TopSpeed": 144,
+    "3330to60": 7.7,
+    "333Handling": 72,
+
+    "666TopSpeed": 147,
+    "6660to60": 7.3,
+    "666Handling": 75,
+
+    "996TopSpeed": 151,
+    "9960to60": 6.9,
+    "996Handling": 75,
+
+    "969TopSpeed": 151,
+    "9690to60": 7.3,
+    "969Handling": 78,
+
+    "699TopSpeed": 147,
+    "6990to60": 6.9,
+    "699Handling": 78
+}
