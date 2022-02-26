@@ -88,7 +88,7 @@ module.exports = {
                 .then(async (response) => {
                     if (!Array.isArray(response)) return;
                     const [upgrade, currentMessage] = response;
-                    const car = require(`./cars/${currentCar.carID}.json`);
+                    const car = require(`../cars/${currentCar.carID}.json`);
                     const currentName = carNameGen({ currentCar: car, upgrade });
                     if (args[1].toLowerCase() === "all") {
                         amount = currentCar.upgrades[upgrade];

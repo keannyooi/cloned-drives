@@ -1,6 +1,7 @@
 "use strict";
 
 const carNameGen = require("./carNameGen.js");
+const calcTotal = require("./calcTotal.js");
 
 function filterCheck(car, filter, garage) {
     let passed = true, carObject = garage ? {

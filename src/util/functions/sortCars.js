@@ -1,6 +1,7 @@
 "use strict";
 
 const carNameGen = require("./carNameGen.js");
+const calcTotal = require("./calcTotal.js");
 
 function sortCars(list, sort, order, garage) {
     return list.sort(function (a, b) {

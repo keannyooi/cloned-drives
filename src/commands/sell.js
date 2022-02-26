@@ -71,7 +71,7 @@ module.exports = {
                 .then(async (response) => {
                     if (!Array.isArray(response)) return;
                     const [upgrade, currentMessage] = response;
-                    const car = require(`./cars/${currentCar.carID}.json`);
+                    const car = require(`../cars/${currentCar.carID}.json`);
                     const currentName = carNameGen({ currentCar: car, upgrade });
                     const moneyEmoji = bot.emojis.cache.get("726017235826770021");
                     if (args[0].toLowerCase() === "all") {

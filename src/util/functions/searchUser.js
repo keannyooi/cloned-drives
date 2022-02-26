@@ -1,5 +1,6 @@
 "use strict";
 
+const bot = require("../../config/config.js");
 const processResults = require("./corefiles/processResults.js");
 
 async function searchUser(message, username, currentMessage) {

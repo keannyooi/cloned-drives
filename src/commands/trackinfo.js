@@ -32,7 +32,7 @@ module.exports = {
             })
         
         function displayInfo(track, currentMessage) {
-            let currentTrack = require(`./tracks/${track}`);
+            let currentTrack = require(`../tracks/${track}`);
             const infoMessage = new InfoMessage({
                 channel: message.channel,
                 title: currentTrack["trackName"],

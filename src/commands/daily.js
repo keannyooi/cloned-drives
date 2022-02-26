@@ -15,7 +15,7 @@ module.exports = {
     name: "daily",
     usage: "(no arguments required)",
     args: 0,
-    category: "Testing", //Gameplay
+    category: "Gameplay",
     description: "Collect your daily reward with this command!",
     async execute(message) {
         let { dailyStats, money, fuseTokens, garage } = await profileModel.findOne({ userID: message.author.id });

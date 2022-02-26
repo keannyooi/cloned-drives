@@ -6,7 +6,7 @@ const { defaultWaitTime } = require("../consts/consts.js");
 const carNameGen = require("./carNameGen.js");
 
 async function selectUpgrade(args) {
-    const { message, currentCar, amount, currentMessage, targetUpgrade } = args;
+    let { message, currentCar, amount, currentMessage, targetUpgrade } = args;
     const filter = (button) => button.user.id === message.author.id && button.customId === "upgrade_select";
     const getCard = require(`../../cars/${currentCar.carID}.json`);
     let isOne = Object.keys(currentCar.upgrades).filter(upgrade => {
@@ -39,10 +39,10 @@ async function selectUpgrade(args) {
             title: `Choose one of the ${isOne.length} available tunes below.`,
             author: message.author,
             footer: `You have been given ${defaultWaitTime / 1000} seconds to consider.`,
-            fields: [{ name: "Selected Car", value: carNameGen({ currentCar, rarity: true }) }],
+            fields: [{ name: "Selected Car", value: carNameGen({ currentCar: getCard, rarity: true }) }],
             image: getCard["card"]
         });
-        currentMessage = await infoMessage.sendMessage({ currentMessage, buttons: [row] });
+        currentMessage = await infoMessage.sendMessage({ currentMessage, buttons: [row], preserve: true });
 
         try {
             const selection = await message.channel.awaitMessageComponent({

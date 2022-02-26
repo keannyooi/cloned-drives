@@ -63,7 +63,7 @@ module.exports = {
                     try {
                         const moneyEmoji = bot.emojis.cache.get("726017235826770021");
                         const fuseEmoji = bot.emojis.cache.get("726018658635218955");
-                        const car = require(`./cars/${currentCar.carID}`);
+                        const car = require(`../cars/${currentCar.carID}`);
                         const carName = carNameGen({ currentCar: car });
                         let [moneyLimit, fuseTokenLimit] = definePrice(car["rq"], upgrade, origUpgrade);
 

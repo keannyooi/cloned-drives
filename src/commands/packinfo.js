@@ -34,7 +34,7 @@ module.exports = {
 
         function displayInfo(pack, currentMessage) {
             const moneyEmoji = bot.emojis.cache.get("726017235826770021");
-            let currentPack = require(`./packs/${pack}`);
+            let currentPack = require(`../packs/${pack}`);
             let infoMessage = new InfoMessage({
                 channel: message.channel,
                 title: currentPack["packName"],

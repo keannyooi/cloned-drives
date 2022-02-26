@@ -1,6 +1,7 @@
 "use strict";
 
 const { MessageActionRow } = require("discord.js");
+const { defaultChoiceTime } = require("../consts/consts.js");
 const getButtons = require("./getButtons.js");
 
 async function confirm(message, confirmationMessage, acceptedFunction, buttonStyle, currentMessage) {
