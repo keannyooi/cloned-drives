@@ -9,7 +9,7 @@
     "handling": 90,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Track Day"],
+    "tags": ["Track Day", "Ultra Expensive", "Style Icon"],
     "isPrize": false,
 
     "weight": 1429,
@@ -25,30 +25,30 @@
     "description": "Card by Lemonade.",
 
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/903506427488903200/Maserati_MC12_CD.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/903506156520099870/Maserati_MC12_Stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/903506177567121448/Maserati_MC12_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/903506203550834738/Maserati_MC12_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/903506309075308545/Maserati_MC12_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/903506285964722196/Maserati_MC12_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/903506229966561320/Maserati_MC12_699.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/947139610415333426/stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/947139635723771986/333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/947139659119611974/666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/947139776253948005/996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/947139729235775518/969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/947139691621253150/699.png",
 
     "333TopSpeed": 208,
-    "3330to60": 3.3,
+    "3330to60": 3.5,
     "333Handling": 93,
 
     "666TopSpeed": 210,
-    "6660to60": 3.2,
+    "6660to60": 3.3,
     "666Handling": 96,
 
     "996TopSpeed": 213,
-    "9960to60": 3.0,
+    "9960to60": 3.1,
     "996Handling": 96,
 
     "969TopSpeed": 213,
-    "9690to60": 3.2,
+    "9690to60": 3.3,
     "969Handling": 100,
 
     "699TopSpeed": 210,
-    "6990to60": 3.0,
+    "6990to60": 3.1,
     "699Handling": 100
 }
