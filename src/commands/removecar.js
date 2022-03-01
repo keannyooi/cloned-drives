@@ -1,6 +1,7 @@
 "use strict";
 
 const { SuccessMessage, InfoMessage } = require("../util/classes/classes.js");
+const { defaultChoiceTime } = require("../util/consts/consts.js");
 const searchUser = require("../util/functions/searchUser.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const selectUpgrade = require("../util/functions/selectUpgrade.js");

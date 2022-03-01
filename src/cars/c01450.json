@@ -1,0 +1,56 @@
+{
+    "rq": 51,
+    "make": ["Alpina","BMW"],
+    "model": "B7 S Turbo Coupe",
+    "modelYear": 1982,
+    "country": "DE",
+    "topSpeed": 167,
+    "0to60": 5.8,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Grand Tourer","Tuner","Unique"],
+    "isPrize": false,
+
+
+    "weight": 1535,
+    "gc": "Medium",
+    "seatCount":4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 80.42,
+    "ola": 86.96,
+    "description": "Alpina adding the spice. Card by Andu.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/945395623719493632/B7SBiTurbo.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/945396034568339466/B7S.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/945396055258841108/B7S-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/945396064851214356/B7S-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/945396081276100618/B7S-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/945396094878236672/B7S-9669.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/945396111693197402/B7S-699.png",
+
+    "333TopSpeed": 170,
+    "3330to60": 5.5,
+    "333Handling": 77,
+
+    "666TopSpeed": 173,
+    "6660to60": 5.2, 
+    "666Handling": 80,
+
+    "996TopSpeed": 176,
+    "9960to60": 4.9,
+    "996Handling": 80,
+
+    "969TopSpeed": 176,
+    "9690to60": 5.2,
+    "969Handling": 83,
+
+    "699TopSpeed": 173,
+    "6990to60": 4.9,
+    "699Handling": 83
+}

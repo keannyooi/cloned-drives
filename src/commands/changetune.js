@@ -87,7 +87,7 @@ module.exports = {
                     currentCar.upgrades[origUpgrade]--;
                     updateHands(playerData, currentCar.carID, origUpgrade, upgrade);
                     
-                    const car = require(`./cars/${currentCar.carID}`);
+                    const car = require(`../cars/${currentCar.carID}`);
                     await profileModel.updateOne({ userID: user.id }, {
                         garage: playerData.garage,
                         hand: playerData.hand,

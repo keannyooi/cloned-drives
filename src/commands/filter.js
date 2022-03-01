@@ -69,7 +69,7 @@ module.exports = {
                 case "bodyStyle":
                     let argument = args.slice(1, args.length).join(" ").toLowerCase();
                     isValid = carFiles.findIndex(function (carFile) {
-                        let currentCar = require(`./cars/${carFile}`);
+                        let currentCar = require(`../cars/${carFile}`);
                         if (Array.isArray(currentCar[criteria])) {
                             return currentCar[criteria].some(tag => tag.toLowerCase() === argument);
                         }
@@ -148,7 +148,7 @@ module.exports = {
                 case "fuelType":
                 case "gc":
                     isValid = carFiles.findIndex(function (carFile) {
-                        let currentCar = require(`./cars/${carFile}`);
+                        let currentCar = require(`../cars/${carFile}`);
                         return currentCar[criteria].toLowerCase() === arg1;
                     });
 
@@ -197,7 +197,7 @@ module.exports = {
                 case "search":
                     let arg = args.slice(1, args.length).join(" ").toLowerCase();
                     isValid = carFiles.findIndex(function (carFile) {
-                        let currentCar = require(`./cars/${carFile}`);
+                        let currentCar = require(`../cars/${carFile}`);
                         return carNameGen({ currentCar }).toLowerCase().includes(arg);
                     });
                     if (isValid > -1) {
