@@ -8,11 +8,11 @@
 	"map": "https://cdn.discordapp.com/attachments/716917404868935691/809772618876977152/unknown.png",
 	
 	"specsDistr": {
-		"topSpeed":0,
+		"topSpeed":5,
 		"0to60": 80,
 		"handling": 70,
 		"weight": 0,
 		"mra": 40,
-		"ola": 10
+		"ola": 0
 	}
 }
