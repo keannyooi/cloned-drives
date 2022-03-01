@@ -1,5 +1,5 @@
 {
-    "rq": 56,
+    "rq": 63,
     "make": "Ford",
     "model": "Mustang SVT Cobra",
     "modelYear": 2003,
@@ -13,7 +13,7 @@
     "isPrize": false,
 
     "weight": 1695,
-    "gc": "Low",
+    "gc": "Medium",
     "seatCount": 2,
     "bodyStyle": "Coupe",
     "tcs": true,
@@ -21,10 +21,10 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 80.67,
-    "ola": 87.50,
+    "ola": 83.33,
     "description": "Nicknamed the 'Terminator Cobra', the 2003 SVT Cobra is an American street racing legend. A simple change of the supercharger's pulley drastically increased the power, resulting in it eventually being called 'the Original Hellcat' by Road & Track. Card by Preston.",
 
-    "card": "https://cdn.discordapp.com/attachments/819199720249360384/827631071888670730/03_terminator.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/948258663808778260/03_terminator.png",
     "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/827631190647111750/03_terminator_thumb_corners_000.png",
     "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/827631214146879569/03_terminator_thumb_corners_333.png",
     "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/827631239368015952/03_terminator_thumb_corners_666.png",
