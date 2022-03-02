@@ -1,0 +1,54 @@
+{
+    "rq": 92,
+    "make": ["MTM", "Audi"],
+    "model": "RS 6 Avant",
+    "modelYear": 2020,
+    "country": "DE",
+    "topSpeed": 227,
+    "0to60": 2.8,
+    "handling": 89,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Tuner"],
+    "isPrize": false,
+
+    "weight": 2075,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 103.7,
+    "ola": 78.57,
+    "description": "1,000 horsepower in an estate.... only thing holding it back is its tires. Card by Exist.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/948543260039708682/CD_MTM_RS_6_Avant.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/948543328373317713/MTMRS6.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/948543339832160306/MTMRS6333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/948543351664283708/MTMRS6666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/948543383297744896/MTMRS6996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/948543372392542208/MTMRS6969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/948543363311869962/MTMRS6699.png",
+
+    "333TopSpeed": 229,
+    "3330to60": 2.7,
+    "333Handling": 92,
+
+    "666TopSpeed": 232,
+    "6660to60": 2.5,
+    "666Handling": 95,
+
+    "996TopSpeed": 234,
+    "9960to60": 2.4,
+    "996Handling": 95,
+
+    "969TopSpeed": 234,
+    "9690to60": 2.5,
+    "969Handling": 99,
+
+    "699TopSpeed": 232,
+    "6990to60": 2.4,
+    "699Handling": 99
+}
