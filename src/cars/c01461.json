@@ -1,0 +1,56 @@
+{
+    "rq": 41,
+    "make": ["Mugen","Honda"],
+    "model": "CRX Si PRO.2",
+    "modelYear": 1989,
+    "country": "JP",
+    "topSpeed": 140,
+    "0to60": 6.9,
+    "handling": 75,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch","Tuner","Unique"],
+    "isPrize": false,
+
+
+    "weight": 1000,
+    "gc": "Medium",
+    "seatCount":2,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 59.48,
+    "ola": 78.26,
+    "description": "Fun fact, it appeared in Gran Turismo 2. Card by Andu.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/947540505594564629/CRXMugenPRO.2.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/947541066897309727/Pro2.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/947541126158639204/Pro2-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/947541135801335888/Pro2-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/947541152859574293/Pro2-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/947541166247800862/Pro2-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/947541182664306698/Pro2-699.png",
+
+    "333TopSpeed": 144,
+    "3330to60": 6.6,
+    "333Handling": 77,
+
+    "666TopSpeed": 147,
+    "6660to60": 6.2, 
+    "666Handling": 80,
+
+    "996TopSpeed": 151,
+    "9960to60": 5.9,
+    "996Handling": 80,
+
+    "969TopSpeed": 151,
+    "9690to60": 6.2,
+    "969Handling": 83,
+
+    "699TopSpeed": 147,
+    "6990to60": 5.9,
+    "699Handling": 83
+}

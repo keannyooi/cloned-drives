@@ -1,17 +1,9 @@
 "use strict";
-/*
- __  ___  _______     ___      .__   __. .__   __. ____    ____
-|  |/  / |   ____|   /   \     |  \ |  | |  \ |  | \   \  /   /
-|  '  /  |  |__     /  ^  \    |   \|  | |   \|  |  \   \/   /
-|    <   |   __|   /  /_\  \   |  . `  | |  . `  |   \_    _/
-|  .  \  |  |____ /  _____  \  |  |\   | |  |\   |     |  |
-|__|\__\ |_______/__/     \__\ |__| \__| |__| \__|     |__| 	(this is a watermark that proves that these lines of code are mine)
-*/
-const Discord = require("discord.js-light");
+
 module.exports = {
     name: "endevent",
     aliases: ["removeevent", "rmvevent"],
-    usage: "<event name goes here>",
+    usage: ["<event name goes here>"],
     args: 1,
     category: "Events",
     description: "Ends an ongoing event.",
