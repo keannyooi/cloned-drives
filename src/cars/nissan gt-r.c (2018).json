@@ -1,0 +1,54 @@
+{
+    "rq": 82,
+    "make": "Nissan",
+    "model": "GT-R/C",
+    "modelYear": 2018,
+    "country": "JP",
+    "topSpeed": 191,
+    "0to60": 3.4,
+    "handling": 88,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Unique", "Oddity"],
+    "isPrize": false,
+
+    "weight": 1904,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 73.91,
+    "ola": 74.7,
+    "description": "To celebrate the release of Gran Turismo 7, this car was added to the game. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/948591448402571344/GTRC.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/948591819707518996/GTRRCcar.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/948591827089522768/GTRRCcar333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/948591834203045908/GTRRCcar666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/948591860526481498/GTRRCcar996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/948591849365454928/GTRRCcar969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/948591843141124156/GTRRCcar699.png",
+
+    "333TopSpeed": 194,
+    "3330to60": 3.2,
+    "333Handling": 91,
+
+    "666TopSpeed": 196,
+    "6660to60": 3.1,
+    "666Handling": 94,
+
+    "996TopSpeed": 199,
+    "9960to60": 2.9,
+    "996Handling": 94,
+
+    "969TopSpeed": 199,
+    "9690to60": 3.1,
+    "969Handling": 98,
+
+    "699TopSpeed": 196,
+    "6990to60": 2.9,
+    "699Handling": 98
+}
