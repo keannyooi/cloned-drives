@@ -8,9 +8,9 @@
 	"map": "https://cdn.discordapp.com/attachments/800047734035841037/862382670133723167/goodwoodhillclimb.png",
 	
 	"specsDistr": {
-		"topSpeed": 50,
-		"0to60": 30,
-		"handling": 50,
+		"topSpeed": 7.5,
+		"0to60": 25,
+		"handling": 70,
 		"weight": 0,
 		"mra": 70,
 		"ola": 0
