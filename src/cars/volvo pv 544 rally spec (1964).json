@@ -1,0 +1,55 @@
+{
+    "rq": 29,
+    "make": "Volvo",
+    "model": "PV 544 Rally Spec",
+    "modelYear": 1964,
+    "country": "SE",
+    "topSpeed": 96,
+    "0to60": 13.5,
+    "handling": 58,
+    "driveType": "RWD",
+    "tyreType": "Off-Road",
+    "tags": ["Motorsport", "Unique", "Rest of The World"],
+    "isPrize": false,
+
+    "weight": 1080,
+    "gc": "High",
+    "seatCount": 2,
+    "bodyStyle": "Sedan",
+    "tcs": false,	
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 17.43,
+    "ola": 59.26,
+    "description": "One of the most successful Volvo rally cars that won the European Rally Championship three times and the East African Safari Rally in 1965. Card by Johnny",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/942131543445504080/Volvo-PV-544-Rally-Spec.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/942131736739991592/Volvo-PV-544-Rally-Spec.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/942131771749830709/Volvo-PV-544-Rally-Spec-1-star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/942131799902007296/Volvo-PV-544-Rally-Spec-2-star.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/942131892520615936/Volvo-PV-544-Rally-Spec-332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/942131857665970286/Volvo-PV-544-Rally-Spec-323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/942131831678074890/Volvo-PV-544-Rally-Spec-233.png",
+
+    "333TopSpeed": 101,
+    "3330to60": 12.8,
+    "333Handling": 60,
+
+    "666TopSpeed": 107,
+    "6660to60": 12.2,
+    "666Handling": 62,
+
+    "969TopSpeed": 112,
+    "9690to60": 12.2,
+    "969Handling": 64,
+	
+	"996TopSpeed": 112,
+	"9960to60": 11.5,
+	"996Handling": 62,
+	
+	"699TopSpeed": 107,
+	"6990to60": 11.5,
+	"699Handling": 64
+	
+}
