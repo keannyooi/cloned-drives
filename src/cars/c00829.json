@@ -1,15 +1,15 @@
-﻿{
-    "rq": 61,
+{
+    "rq": 68,
     "make": ["Mercedes-AMG", "Mercedes-Benz"],
     "model": "G 63",
     "modelYear": 2012,
     "country": "DE",
-    "topSpeed": 130,
+    "topSpeed": 131,
     "0to60": 5.1,
-    "handling": 51,
+    "handling": 67,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": ["Sleeper", "Style Icon"],
+    "tags": ["Style Icon"],
     "isPrize": false,
 
     "weight": 2550,
@@ -24,31 +24,31 @@
     "ola": 82.08,
     "description": "Boxy. Card by Havvy",
 
-    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824534689850982410/AMGG63.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824534731009294376/000_g63.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824534736571203614/111_g63.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824534741532409856/222_g63.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824534757090132010/332_g63.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824534751859310602/323_g63.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824534746956300307/233_g63.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/951477421880803398/63Updated.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/951477462058020924/G632012.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/951477469867814972/G6320121.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/951477478688456736/G6320122.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/951477504835723274/G632012996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/951477497101422592/G632012969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/951477488452792330/G632012699.png",
 
-    "333TopSpeed": 134,
+    "333TopSpeed": 135,
     "3330to60": 4.8,
-    "333Handling": 53,
+    "333Handling": 69,
 
-    "666TopSpeed": 138,
+    "666TopSpeed": 139,
     "6660to60": 4.6, 
-    "666Handling": 54,
+    "666Handling": 71,
 
-    "996TopSpeed": 142,
+    "996TopSpeed": 143,
     "9960to60": 4.3,
-    "996Handling": 54,
+    "996Handling": 71,
 
-    "969TopSpeed": 142,
+    "969TopSpeed": 143,
     "9690to60": 4.6,
-    "969Handling": 57,
+    "969Handling": 71,
 
-    "699TopSpeed": 138,
+    "699TopSpeed": 139,
     "6990to60": 4.3,
-    "699Handling": 57
+    "699Handling": 74
 }
