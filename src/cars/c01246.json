@@ -1,5 +1,5 @@
 {
-    "rq": 98,
+    "rq": 99,
     "make": ["TechArt", "Porsche"],
     "model": "911 Turbo S",
     "modelYear": 2020,
@@ -12,7 +12,7 @@
     "tags": ["Tuner", "Supercar"],
     "isPrize": false,
 
-    "weight": 1725,
+    "weight": 1625,
     "gc": "Low",
     "seatCount": 2,
     "bodyStyle": "Coupe",
@@ -21,10 +21,10 @@
     "enginePos": "Rear",
     "fuelType": "Petrol",
     "mra": 86.21,
-    "ola": 78.26,
+    "ola": 73.33,
     "description": "Tuners go brr. Card by Bnuuy.",
 
-    "card": "https://cdn.discordapp.com/attachments/819199720249360384/844556733610328064/Techart911TS.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/951463318219026452/techartTubroS.png",
     "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/844557159912046612/Techart992TS.png",
     "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/844557164940623882/Techart992TS333.png",
     "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/844557170405146634/Techart992TS666.png",
