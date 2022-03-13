@@ -1,133 +1,70 @@
 "use strict";
-/*
- __  ___  _______     ___      .__   __. .__   __. ____    ____
-|  |/  / |   ____|   /   \     |  \ |  | |  \ |  | \   \  /   /
-|  '  /  |  |__     /  ^  \    |   \|  | |   \|  |  \   \/   /
-|    <   |   __|   /  /_\  \   |  . `  | |  . `  |   \_    _/
-|  .  \  |  |____ /  _____  \  |  |\   | |  |\   |     |  |
-|__|\__\ |_______/__/     \__\ |__| \__| |__| \__|     |__| 	(this is a watermark that proves that these lines of code are mine)
-*/
-const Discord = require("discord.js-light");
+
+const bot = require("../config/config.js");
 const Canvas = require("canvas");
 const { DateTime, Interval } = require("luxon");
+const { InfoMessage } = require("../util/classes/classes.js");
+const profileModel = require("../models/profileSchema.js");
+const eventModel = require("../models/eventSchema.js");
+
 module.exports = {
     name: "events",
     aliases: ["e", "event"],
-    usage: "(optional) <event name>",
+    usage: ["[event name]"],
     args: 0,
     category: "Gameplay",
     description: "Views all active and inactive events.",
     async execute(message, args) {
-        const db = message.client.db;
-        const events = await db.get("events");
-        const settings = await db.get(`acc${message.author.id}.settings`);
-        const filter = response => {
-            return response.author.id === message.author.id;
-        };
-        const hudPlacement = [{ x: 9, y: 59 }, { x: 9, y: 183 }, { x: 9, y: 311 }, { x: 9, y: 437 }, { x: 9, y: 565 }, { x: 383, y: 59 }, { x: 383, y: 183 }, { x: 383, y: 311 }, { x: 383, y: 437 }, { x: 383, y: 565 }];
-        const rewardPlacement = [{ x: 204, y: 57 }, { x: 204, y: 182 }, { x: 204, y: 309 }, { x: 204, y: 436 }, { x: 204, y: 563 }, { x: 587, y: 57 }, { x: 587, y: 182 }, { x: 587, y: 309 }, { x: 587, y: 436 }, { x: 587, y: 563 }];
+        const events = await eventModel.find();
+        const { settings } = await profileModel.findOne({ userID: message.author.id });
+
         if (!args.length) {
-            console.log(events);
-            let activeEvents = Object.values(events).filter(event => {
-                return event.isActive === true;
-            });
-            let inactiveEvents = Object.values(events).filter(event => {
-                return event.isActive === false;
-            });
+            let activeEvents = events.filter(event => event.isActive === true);
+            let inactiveEvents = events.filter(event => event.isActive === false);
             let activeEventList = eventDisplay(activeEvents);
             let inactiveEventList = eventDisplay(inactiveEvents);
-            let listMessage = new Discord.MessageEmbed()
-                .setColor("#34aeeb")
-                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                .setTitle("Events")
-                .addFields({ name: "Active Events", value: activeEventList }, { name: "Inactive Events", value: inactiveEventList })
-                .setFooter("More info about an event can be found by using cd-events <event name>.")
-                .setTimestamp();
-            message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-            return message.channel.send(listMessage);
+            let listMessage = new InfoMessage({
+                channel: message.channel,
+                title: "Cloned Drives Events",
+                author: message.author,
+                fields: [
+                    { name: "Active Events", value: activeEventList },
+                    { name: "Inactive Events", value: inactiveEventList }
+                ],
+                footer: "More info about an event can be found by using cd-events <event name>."
+            });
+            return listMessage.sendMessage();
         }
         else {
             let eventName = args.map(i => i.toLowerCase());
-            let events = await db.get("events");
-            const searchResults = Object.values(events).filter(function (event) {
-                if (typeof event === "object") {
-                    return eventName.every(part => event.name.toLowerCase().includes(part));
-                }
-                else {
-                    return false;
-                }
-            });
-            if (searchResults.length > 1) {
-                let eventList = "";
-                for (i = 1; i <= searchResults.length; i++) {
-                    eventList += `${i} - ${searchResults[i - 1].name} \n`;
-                }
-                const infoScreen = new Discord.MessageEmbed()
-                    .setColor("#34aeeb")
-                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                    .setTitle("Multiple events found, please type one of the following.")
-                    .setDescription(eventList)
-                    .setTimestamp();
-                message.channel.send(infoScreen).then(currentMessage => {
-                    message.channel.awaitMessages(filter, {
-                        max: 1,
-                        time: 30000,
-                        errors: ["time"]
-                    })
-                        .then(collected => {
-                        collected.first().delete();
-                        if (isNaN(collected.first().content) || parseInt(collected.first()) > searchResults.length) {
-                            message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                            const errorMessage = new Discord.MessageEmbed()
-                                .setColor("#fc0303")
-                                .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                                .setTitle("Error, invalid integer provided.")
-                                .setDescription("It looks like your response was either not a number or not part of the selection.")
-                                .setTimestamp();
-                            return currentMessage.edit(errorMessage);
-                        }
-                        else {
-                            viewEvent(searchResults[parseInt(collected.first()) - 1], currentMessage);
-                        }
-                    })
-                        .catch(() => {
-                        message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                        const cancelMessage = new Discord.MessageEmbed()
-                            .setColor("#34aeeb")
-                            .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                            .setTitle("Action cancelled automatically.")
-                            .setTimestamp();
-                        return currentMessage.edit(cancelMessage);
-                    });
+            await new Promise(resolve => resolve(search(message, eventName, events, "event")))
+                .then(async (response) => {
+                    if (!Array.isArray(response)) return;
+                    let [result, currentMessage] = response;
+                    await viewEvent(result, currentMessage);
+                })
+                .catch(error => {
+                    throw error;
                 });
-            }
-            else if (searchResults.length > 0) {
-                viewEvent(searchResults[0]);
-            }
-            else {
-                message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                const errorMessage = new Discord.MessageEmbed()
-                    .setColor("#fc0303")
-                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                    .setTitle("Error, 404 event not found.")
-                    .setDescription("Try checking again using `cd-events`.")
-                    .addField("Keywords Received", `\`${eventName.join(" ")}\``)
-                    .setTimestamp();
-                return message.channel.send(errorMessage);
-            }
         }
+
         async function viewEvent(event, currentMessage) {
+            const hudPlacement = [{ x: 9, y: 59 }, { x: 9, y: 183 }, { x: 9, y: 311 }, { x: 9, y: 437 }, { x: 9, y: 565 }, { x: 383, y: 59 }, { x: 383, y: 183 }, { x: 383, y: 311 }, { x: 383, y: 437 }, { x: 383, y: 565 }];
+            const rewardPlacement = [{ x: 204, y: 57 }, { x: 204, y: 182 }, { x: 204, y: 309 }, { x: 204, y: 436 }, { x: 204, y: 563 }, { x: 587, y: 57 }, { x: 587, y: 182 }, { x: 587, y: 309 }, { x: 587, y: 436 }, { x: 587, y: 563 }];
+            const guildMember = await bot.homeGuild.members.fetch(message.author.id);
             console.log(event);
-            if (event.isActive || message.member.roles.cache.has("802043346951340064")) {
+
+            if (event.isActive || guildMember.roles.cache.has("917685033995751435")) {
                 const wait = await message.channel.send("**Loading event display, this may take a while... (please wait)**");
-                const infoScreen = new Discord.MessageEmbed()
-                    .setColor("#34aeeb")
-                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                    .setTitle(event.name)
-                    .setDescription(`This event's active status: **${event.isActive}**
-					Duration (in days): \`${event.timeLeft}\``)
-                    .setFooter(`Event ID: ${event.id}`)
-                    .setTimestamp();
+                const infoMessage = new InfoMessage({
+                    channel: message.channel,
+                    title: event.name,
+                    desc: `This event's active status: **${event.isActive}**
+					Duration (in days): \`${event.timeLeft}\``,
+                    author: message.author,
+                    footer: `Event ID: ${event.id}`
+                });
+
                 for (let i = 0; i < event.roster.length; i++) {
                     let car = require(`./cars/${event.roster[i].car}`);
                     let make = car["make"];
@@ -210,7 +147,7 @@ module.exports = {
                     if (rewardString === "") {
                         rewardString = "None";
                     }
-                    infoScreen.addField(`Round ${i + 1}`, `Car: ${make} ${car["model"]} (${car["modelYear"]}) [${upgrade}]
+                    infoMessage.addField(`Round ${i + 1}`, `Car: ${make} ${car["model"]} (${car["modelYear"]}) [${upgrade}]
 					Trackset: ${track["trackName"]}
 					Requirements: ${reqString}
 					Reward: ${rewardString}`, true);
@@ -278,29 +215,28 @@ module.exports = {
                     if (!cucked) {
                         attachment = new Discord.MessageAttachment(canvas.toBuffer(), "event.png");
                     }
-                    infoScreen.attachFiles(attachment);
-                    infoScreen.setImage("attachment://event.png");
+                    infoMessage.attachFiles(attachment);
+                    infoMessage.setImage("attachment://event.png");
                 }
                 wait.delete();
-                message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                return message.channel.send(infoScreen);
+
+                return message.channel.send(infoMessage);
             }
             else {
-                message.client.execList.splice(message.client.execList.indexOf(message.author.id), 1);
-                const errorMessage = new Discord.MessageEmbed()
+                const errorMessage = new ErrorMessage({
+                    channel: message.channel,
+                    title: "Error, you do not have the necessary role to view this event right now.",
+                    desc: "The event you are trying to view is not active currently. This is only bypassable if you have the <@&917685033995751435> role",
+                    author: message.author,
+                })
                     .setColor("#fc0303")
                     .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                    .setTitle("This event is not viewable yet.")
-                    .setDescription("The event you are trying to view is not active currently. This is only bypassable if you are a part of Community Management.")
+                    .setTitle()
+                    .setDescription()
                     .setTimestamp();
-                if (currentMessage && message.channel.type === "text") {
-                    return currentMessage.edit(errorMessage);
-                }
-                else {
-                    return message.channel.send(errorMessage);
-                }
             }
         }
+
         function eventDisplay(events) {
             if (events.length > 0) {
                 let eventList = "";
@@ -332,29 +268,5 @@ module.exports = {
                 return "There are currently no events under this category.\n";
             }
         }
-        function rarityCheck(currentCar) {
-            if (currentCar["rq"] > 79) { //leggie
-                return message.client.emojis.cache.get("857512942471479337");
-            }
-            else if (currentCar["rq"] > 64 && currentCar["rq"] <= 79) { //epic
-                return message.client.emojis.cache.get("726025468230238268");
-            }
-            else if (currentCar["rq"] > 49 && currentCar["rq"] <= 64) { //ultra
-                return message.client.emojis.cache.get("726025431937187850");
-            }
-            else if (currentCar["rq"] > 39 && currentCar["rq"] <= 49) { //super
-                return message.client.emojis.cache.get("857513197937623042");
-            }
-            else if (currentCar["rq"] > 29 && currentCar["rq"] <= 39) { //rare
-                return message.client.emojis.cache.get("726025302656024586");
-            }
-            else if (currentCar["rq"] > 19 && currentCar["rq"] <= 29) { //uncommon
-                return message.client.emojis.cache.get("726025273421725756");
-            }
-            else { //common
-                return message.client.emojis.cache.get("726020544264273928");
-            }
-        }
     }
 };
-//# sourceMappingURL=events.js.map

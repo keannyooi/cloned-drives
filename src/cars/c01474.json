@@ -1,0 +1,54 @@
+{
+    "rq": 68,
+    "make": "Hyundai",
+    "model": "Veloster N DCT",
+    "modelYear": 2021,
+    "country": "KR",
+    "topSpeed": 155,
+    "0to60": 5.0,
+    "handling": 88,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch", "Rest of The World"],
+    "isPrize": false,
+
+    "weight": 1440,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 70.21,
+    "ola": 84.85,
+    "description": "Card by Spence.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/915072262758092840/94950BF1-754A-4588-A03E-223779C8E609.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/915075101983125574/8660F1B8-2631-4C59-B374-24815589BC37.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/915075134203756544/1C05A31B-F9E6-4E0B-B290-1ABC1494A268.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/915075187576275005/DCEA1DE4-1C80-4707-BFCB-5998C1D7805A.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/915075415910023238/5745F896-64BE-40E3-93B1-CB22FFBD1A2E.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/915075358485778472/98A66A7B-74BB-4297-A731-57B0F9DB388F.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/915075220509982761/009B8BF0-A3B8-4952-BF40-BC902CD52A04.jpg",
+
+    "333TopSpeed": 158,
+    "3330to60": 4.8,
+    "333Handling": 91,
+
+    "666TopSpeed": 162,
+    "6660to60": 4.5,
+    "666Handling": 94,
+
+    "996TopSpeed": 165,
+    "9960to60": 4.3,
+    "996Handling": 94,
+
+    "969TopSpeed": 165,
+    "9690to60": 4.5,
+    "969Handling": 98,
+
+    "699TopSpeed": 162,
+    "6990to60": 4.3,
+    "699Handling": 98
+}

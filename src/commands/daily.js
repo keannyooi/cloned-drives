@@ -27,7 +27,7 @@ module.exports = {
             const moneyEmoji = bot.emojis.cache.get("726017235826770021");
             const fuseEmoji = bot.emojis.cache.get("726018658635218955");
             const streakCheck = Interval.fromDateTimes(nextDay, DateTime.now());
-            const guildMember = bot.homeGuild.members.cache.get(message.author.id);
+            const guildMember = await bot.homeGuild.members.fetch(message.author.id);
             let desc = "", image = null;
             if (streakCheck.length("days") > 1) {
                 streak = 1;

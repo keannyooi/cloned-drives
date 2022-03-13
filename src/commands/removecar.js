@@ -23,7 +23,7 @@ module.exports = {
         if (message.mentions.users.first()) {
             if (!message.mentions.users.first().bot) {
                 try {
-                    getCar(message.mentions.users.first());
+                    await getCar(message.mentions.users.first());
                 }
                 catch (error) {
                     throw error;
@@ -38,7 +38,7 @@ module.exports = {
                 .then(async (response) => {
                     if (!Array.isArray(response)) return;
                     let [result, currentMessage] = response;
-                    getCar(result.user, currentMessage);
+                    await getCar(result.user, currentMessage);
                 })
                 .catch(error => {
                     throw error;
@@ -117,7 +117,7 @@ module.exports = {
                             decks: playerData.decks
                         });
 
-                        const infoMessage = new SuccessMessage({
+                        const successMessage = new SuccessMessage({
                             channel: message.channel,
                             title: `Successfully removed ${amount} of ${user.username}'s ${currentName}!`,
                             desc: `Use \`cd-garage\` to check if the car has been removed from ${user.username}'s garage. If it hasn't, try running this command again.`,
@@ -125,8 +125,8 @@ module.exports = {
                             thumbnail: user.displayAvatarURL({ format: "png", dynamic: true }),
                             image: car["card"]
                         });
-                        await infoMessage.sendMessage({ currentMessage });
-                        return infoMessage.removeButtons();
+                        await successMessage.sendMessage({ currentMessage });
+                        return successMessage.removeButtons();
                     }
                 });
         }
