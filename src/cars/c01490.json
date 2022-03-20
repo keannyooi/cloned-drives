@@ -1,0 +1,55 @@
+{
+    "rq": 24,
+    "make": "Shelby",
+    "model": "Dodge Charger",
+    "modelYear": 1983,
+    "country": "US",
+    "topSpeed": 111,
+    "0to60": 10.0,
+    "handling": 74,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Muslce Car", "Tuner"],
+    "isPrize": false,
+
+    "weight": 1105,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 38.76,
+    "ola": 64,
+    "description": "Carroll Shelby’s personal Dodge Charger. Card by Johnny",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/827594197321646120/Shelby-Dodge-Charger.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/827594073069322271/Shelby-Dodge-Charger.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/827594081433419876/Shelby-Dodge-Charger-1-star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/827594085354700812/Shelby-Dodge-Charger-2-star.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/827594107383185439/Shelby-Dodge-Charger-332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/827594101137342474/Shelby-Dodge-Charger-323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/827594092238209024/Shelby-Dodge-Charger-233.png",
+
+    "333TopSpeed": 116,
+    "3330to60": 9.5,
+    "333Handling": 76,
+
+    "666TopSpeed": 120,
+    "6660to60": 9.0,
+    "666Handling": 79,
+
+    "969TopSpeed": 125,
+    "9690to60": 9.0,
+    "969Handling": 82,
+	
+    "996TopSpeed": 125,
+    "9960to60": 8.5,
+    "996Handling": 79,
+	
+    "699TopSpeed": 120,
+    "6990to60": 8.5,
+    "699Handling": 82
+	
+}
