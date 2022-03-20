@@ -1,0 +1,54 @@
+{
+    "rq": 85,
+    "make": "McLaren",
+    "model": "12C Spider",
+    "modelYear": 2012,
+    "country": "GB",
+    "topSpeed": 203,
+    "0to60": 3.1,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Supercar"],
+    "isPrize": false,
+
+    "weight": 1490,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Petrol",
+    "mra": 96.66,
+    "ola": 89.02,
+    "description": "Card by Exist",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/859629546297753640/CD_McLaren_12C_Spider.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/859629590875209728/CD_McLaren_12C_Spider_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/859629602225520640/CD_McLaren_12C_Spider_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/859629603227303956/CD_McLaren_12C_Spider_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/859629622411657226/CD_McLaren_12C_Spider_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/859629615621472276/CD_McLaren_12C_Spider_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/859629612833046558/CD_McLaren_12C_Spider_699.png",
+
+    "333TopSpeed": 206,
+    "3330to60": 2.9,
+    "333Handling": 94,
+
+    "666TopSpeed": 208,
+    "6660to60": 2.8,
+    "666Handling": 97,
+
+    "996TopSpeed": 211,
+    "9960to60": 2.6,
+    "996Handling": 97,
+
+    "969TopSpeed": 211,
+    "9690to60": 2.8,
+    "969Handling": 101,
+
+    "699TopSpeed": 208,
+    "6990to60": 2.6,
+    "699Handling": 101
+}
