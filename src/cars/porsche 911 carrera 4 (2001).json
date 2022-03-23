@@ -1,0 +1,54 @@
+{
+    "rq": 68,
+    "make": "Porsche",
+    "model": "911 Carrera 4",
+    "modelYear": 2001,
+    "country": "DE",
+    "topSpeed": 177,
+    "0to60": 4.8,
+    "handling": 88,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1430,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 75.00,
+    "ola": 83.33,
+    "description": "Card by Havvy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/828406601315909672/unknown.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/828406660259250286/000_9964.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/828406664410955816/111_9964.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/828406667795365978/222_9964.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/828406687978487818/332_9964.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/828406683628863533/323_9964.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/828406673689149460/233_9964.png",
+
+    "333TopSpeed": 180,
+    "3330to60": 4.6,
+    "333Handling": 91,
+
+    "666TopSpeed": 183,
+    "6660to60": 4.3,
+    "666Handling": 94,
+
+    "996TopSpeed": 186,
+    "9960to60": 4.1,
+    "996Handling": 94,
+
+    "969TopSpeed": 186,
+    "9690to60": 4.3,
+    "969Handling": 98,
+
+    "699TopSpeed": 183,
+    "6990to60": 4.1,
+    "699Handling": 98
+}
