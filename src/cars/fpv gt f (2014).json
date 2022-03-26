@@ -1,0 +1,54 @@
+{
+    "rq": 62,
+    "make": "FPV",
+    "model": "GT F",
+    "modelYear": 2014,
+    "country": "AU",
+    "topSpeed": 181,
+    "0to60": 4.5,
+    "handling": 79,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Rest of The World", "Sleeper"],
+    "isPrize": false,
+
+    "weight": 1700,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 100,
+    "ola": 88.88,
+    "description": "An Aussie Drag car :floosh:. Card by Exist.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/849635124332724234/CD_FPV_GT_F.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/849635189826912276/CD_FPV_GT_F_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/849635198908104714/CD_FPV_GT_F_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/849635204259250246/CD_FPV_GT_F_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/849635228057600010/CD_FPV_GT_F_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/849635223326556170/CD_FPV_GT_F_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/849635209820241920/CD_FPV_GT_F_699.png",
+
+    "333TopSpeed": 184,
+    "3330to60": 4.3,
+    "333Handling": 82,
+
+    "666TopSpeed": 187,
+    "6660to60": 4.1,
+    "666Handling": 84,
+
+    "996TopSpeed": 190,
+    "9960to60": 3.8,
+    "996Handling": 84,
+
+    "969TopSpeed": 190,
+    "9690to60": 4.1,
+    "969Handling": 88,
+
+    "699TopSpeed": 187,
+    "6990to60": 3.8,
+    "699Handling": 88
+}
