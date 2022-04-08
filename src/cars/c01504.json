@@ -1,0 +1,54 @@
+{
+    "rq": 85,
+    "make": "Lucid",
+    "model": "Air Dream Edition Performance",
+    "modelYear": 2022,
+    "country": "US",
+    "topSpeed": 173,
+    "0to60": 2.6,
+    "handling": 83,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eco-Friendly", "Super Sedan"],
+    "isPrize": false,
+
+    "weight": 2396,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 96.3,
+    "ola": 85,
+    "description": "Card by Aqo.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/958292622152175616/lucid.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/958292669493309490/lucidadep.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/958292675939926037/lucidadep1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/958292683904929833/lucidadep2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/958292707359465472/lucidadep996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/958292698840825886/lucidadep969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/958292691643416626/lucidadep699.png",
+
+    "333TopSpeed": 176,
+    "3330to60": 2.5,
+    "333Handling": 86,
+
+    "666TopSpeed": 179,
+    "6660to60": 2.3,
+    "666Handling": 88,
+
+    "996TopSpeed": 182,
+    "9960to60": 2.2,
+    "996Handling": 88,
+
+    "969TopSpeed": 182,
+    "9690to60": 2.3,
+    "969Handling": 92,
+
+    "699TopSpeed": 179,
+    "6990to60": 2.2,
+    "699Handling": 92
+}

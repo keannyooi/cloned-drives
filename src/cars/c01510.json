@@ -1,0 +1,54 @@
+{
+    "rq": 73,
+    "make": "Porsche",
+    "model": "911 GT3 RS",
+    "modelYear": 2003,
+    "country": "DE",
+    "topSpeed": 190,
+    "0to60": 4.2,
+    "handling": 89,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Track Day"],
+    "isPrize": false,
+
+    "weight": 1360,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 85.62,
+    "ola": 76.80,
+    "description": "Card by Havvy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/828409537211531264/Porsche911GT3RS.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/828410281121546240/Porsche911GT3RS2001_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/828410282279698442/Porsche911GT3RS2001_111.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/828410286334541824/Porsche911GT3RS2001_222.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/828410300587835402/Porsche911GT3RS2001_332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/828410295759667230/Porsche911GT3RS2001_323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/828410291389202452/Porsche911GT3RS2001_233.png",
+
+    "333TopSpeed": 193,
+    "3330to60": 4.0,
+    "333Handling": 92,
+
+    "666TopSpeed": 195,
+    "6660to60": 3.8,
+    "666Handling": 95,
+
+    "996TopSpeed": 198,
+    "9960to60": 3.6,
+    "996Handling": 95,
+
+    "969TopSpeed": 198,
+    "9690to60": 3.8,
+    "969Handling": 99,
+
+    "699TopSpeed": 195,
+    "6990to60": 3.6,
+    "699Handling": 99
+}
