@@ -1,5 +1,5 @@
 {
-    "rq": 83,
+    "rq": 82,
     "make": "Dodge",
     "model": "Durango SRT Hellcat",
     "modelYear": 2021,
@@ -12,7 +12,7 @@
     "tags": ["Muscle Car"],
     "isPrize": false,
 
-    "weight": 2149,
+    "weight": 2585,
     "gc": "High",
     "seatCount": 6,
     "bodyStyle": "SUV",
@@ -22,15 +22,15 @@
     "fuelType": "Petrol",
     "mra": 67.92,
     "ola": 71.79,
-    "description": "You will never be late to soccer practice again. Card by DodgeDemon.",
+    "description": "You will never be late to soccer practice again. Card by Bnuuy.",
 
-    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819422420531150858/2021_Dodge_Durango_SRT_Hellcate.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823933332672479262/durango.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823933340444131338/durango333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823933345910095872/durango666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823933376356417566/durango996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823933361386291200/durango969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823933353941663814/durango699.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/958780930540044348/dodgedur.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/958781285952786442/DurangoSRTHell.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/958781299034841098/DurangoSRTHell1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/958781305921876028/DurangoSRTHell2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/958781330114641950/DurangoSRTHell996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/958781323764449310/DurangoSRTHell969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/958781316764143646/DurangoSRTHell699.png",
 
     "333TopSpeed": 183,
     "3330to60": 3.4,
@@ -48,7 +48,7 @@
     "9690to60": 3.2,
     "969Handling": 87,
 
-	"699TopSpeed": 186,
+    "699TopSpeed": 186,
     "6990to60": 3.1,
     "699Handling": 87
 }
