@@ -6,7 +6,7 @@ const { readdirSync } = require("fs");
 const carFiles = readdirSync("./src/cars").filter(file => file.endsWith(".json"));
 const tracks = readdirSync("./src/tracks").filter(file => file.endsWith(".json"));
 const { InfoMessage } = require("../util/classes/classes.js");
-const { defaultChoiceTime } = require("../util/consts/consts.js");
+const { defaultChoiceTime, moneyEmojiID } = require("../util/consts/consts.js");
 const getButtons = require("../util/functions/getButtons.js");
 const race = require("../util/functions/race.js");
 const createCar = require("../util/functions/createCar.js");
@@ -54,7 +54,7 @@ module.exports = {
             }
         }
         if (reqList.length === 0) {
-            reqList = "None";
+            reqList = "Open Match";
         }
         else {
             reqList = reqList.slice(0, -2);
@@ -118,7 +118,7 @@ module.exports = {
                                 rqBonus = (opponentCar.rq - playerCar.rq + 4) * rqBonusBase;
                             }
 
-                            const moneyEmoji = bot.emojis.cache.get("726017235826770021");
+                            const moneyEmoji = bot.emojis.cache.get(moneyEmojiID);
                             let hasEntry = unclaimedRewards.findIndex(entry => entry.origin === "Random Races");
                             if (hasEntry > -1) {
                                 unclaimedRewards[hasEntry].money += reward + rqBonus;
@@ -222,11 +222,12 @@ module.exports = {
                 };
                 let reqs = ["modelYear", "seatCount", "bodyStyle"];
                 let req = reqs[Math.floor(Math.random() * reqs.length)];
+                let reqCar = require(`../cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
                 switch (req) {
                     case "bodyStyle":
+                        criteria[req] = [reqCar[req].toLowerCase()];
                     case "seatCount":
-                        let reqCar = require(`../cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
-                        criteria[req] = req === "seatCount" ? reqCar[req] : reqCar[req].toLowerCase();
+                        criteria[req] = reqCar[req];
                         break;
                     case "modelYear":
                         let myStart = 1960 + (Math.floor(Math.random() * 6) * 10);
@@ -243,17 +244,19 @@ module.exports = {
                 };
                 let reqs = ["make", "modelYear", "gc", "tags"];
                 let req = reqs[Math.floor(Math.random() * reqs.length)];
+                let reqCar = require(`../cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
                 switch (req) {
                     case "make":
-                    case "gc":
                     case "tags":
-                        let reqCar = require(`../cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
                         if (Array.isArray(reqCar[req])) {
                             criteria[req] = [reqCar[req][0].toLowerCase()];
                         }
                         else {
                             criteria[req] = [reqCar[req].toLowerCase()];
                         }
+                        break;
+                    case "gc":
+                        criteria[req] = reqCar[req].toLowerCase();
                         break;
                     case "modelYear":
                         let myStart = 1960 + (Math.floor(Math.random() * 12) * 5);

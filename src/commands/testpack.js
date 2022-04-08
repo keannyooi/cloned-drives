@@ -16,7 +16,7 @@ module.exports = {
     async execute(message, args) {
         let query = args.map(i => i.toLowerCase());
         if (args[0].toLowerCase() === "random") {
-            let currentPack = require(`../packs/${Math.floor(Math.random() * packFiles.length)}`);
+            let currentPack = require(`../packs/${packFiles[Math.floor(Math.random() * packFiles.length)]}`);
             openPack(message, currentPack);
             return message.channel.send("**Note: Since you opened this pack using `cd-testpack`, these cars won't be added into your garage and you won't be charged with money.**");
         }

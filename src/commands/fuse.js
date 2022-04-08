@@ -2,7 +2,7 @@
 
 const bot = require("../config/config.js");
 const { SuccessMessage, InfoMessage, ErrorMessage } = require("../util/classes/classes.js");
-const { defaultChoiceTime } = require("../util/consts/consts.js");
+const { defaultChoiceTime, fuseEmojiID } = require("../util/consts/consts.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const selectUpgrade = require("../util/functions/selectUpgrade.js");
 const calcTotal = require("../util/functions/calcTotal.js");
@@ -73,7 +73,7 @@ module.exports = {
                     const [upgrade, currentMessage] = response;
                     const car = require(`../cars/${currentCar.carID}.json`);
                     const currentName = carNameGen({ currentCar: car, upgrade });
-                    const fuseEmoji = bot.emojis.cache.get("726018658635218955");
+                    const fuseEmoji = bot.emojis.cache.get(fuseEmojiID);
                     if (args[0].toLowerCase() === "all") {
                         amount = currentCar.upgrades[upgrade];
                     }

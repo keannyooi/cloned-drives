@@ -6,6 +6,7 @@ const { readdirSync } = require("fs");
 const carFiles = readdirSync("./src/cars").filter(file => file.endsWith(".json"));
 const packFiles = readdirSync("./src/packs").filter(file => file.endsWith(".json"));
 const { SuccessMessage, InfoMessage } = require("../util/classes/classes.js");
+const { moneyEmojiID, fuseEmojiID } = require("../util/consts/consts.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const addCars = require("../util/functions/addCars.js");
 const openPack = require("../util/functions/openPack.js");
@@ -24,8 +25,8 @@ module.exports = {
         const interval = Interval.fromDateTimes(DateTime.now(), nextDay);
 
         if (interval.invalid !== null) {
-            const moneyEmoji = bot.emojis.cache.get("726017235826770021");
-            const fuseEmoji = bot.emojis.cache.get("726018658635218955");
+            const moneyEmoji = bot.emojis.cache.get(moneyEmojiID);
+            const fuseEmoji = bot.emojis.cache.get(fuseEmojiID);
             const streakCheck = Interval.fromDateTimes(nextDay, DateTime.now());
             const guildMember = await bot.homeGuild.members.fetch(message.author.id);
             let desc = "", image = null;
@@ -46,7 +47,12 @@ module.exports = {
                     randomPack = packFiles[Math.floor(Math.random() * packFiles.length)];
                     currentPack = require(`../packs/${randomPack}`);
                 }
-                garage = addCars(garage, openPack(message, currentPack))
+                
+                let pulledCars = openPack(message, currentPack);
+                if (!Array.isArray(pulledCars)) {
+                    return bot.deleteID(message.author.id);
+                }
+                garage = addCars(garage, pulledCars)
                 desc = " and you've received a free random elite pack as a bonus!";
                 image = currentPack.pack;
             }
@@ -59,7 +65,12 @@ module.exports = {
                     currentPack = require(`../packs/${randomPack}`);
                     packName = currentPack.packName.toLowerCase();
                 }
-                garage = addCars(garage, openPack(message, currentPack))
+
+                let pulledCars = openPack(message, currentPack);
+                if (!Array.isArray(pulledCars)) {
+                    return bot.deleteID(message.author.id);
+                }
+                garage = addCars(garage, pulledCars)
                 desc = " and you've received a free random pack as a bonus!";
                 image = currentPack.pack;
             }
@@ -124,4 +135,4 @@ module.exports = {
             return infoMessage.sendMessage();
         }
     }
-}
+};

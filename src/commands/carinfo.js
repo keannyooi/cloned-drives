@@ -36,7 +36,7 @@ module.exports = {
             });
 
         async function displayInfo(carFile, currentMessage) {
-            const playerData = await profileModel.findOne({ userID: message.author.id });
+            const { garage, settings } = await profileModel.findOne({ userID: message.author.id });
             let currentCar = require(`../cars/${carFile}`);
             let description = "None", mra = "N/A", ola = "N/A";
             let topSpeed = `${currentCar.topSpeed}MPH`, accel = "N/A", weight = `${currentCar.weight}kg`;
@@ -49,7 +49,7 @@ module.exports = {
                 mra = currentCar.mra.toString();
             }
             if (currentCar.topSpeed >= 60) {
-                if (playerData.settings.unitpreference === "metric") {
+                if (settings.unitpreference === "metric") {
                     accel = `${currentCar["0to60"]} (${unbritish(currentCar["0to60"], "0to60")})`;
                 }
                 else {
@@ -59,10 +59,10 @@ module.exports = {
             if (currentCar.topSpeed >= 30) {
                 ola = currentCar.ola.toString();
             }
-            if (playerData.settings.unitpreference === "metric") {
+            if (settings.unitpreference === "metric") {
                 topSpeed += ` (${unbritish(currentCar.topSpeed, "topSpeed")}KM/H)`;
             }
-            else if (playerData.settings.unitpreference === "imperial") {
+            else if (settings.unitpreference === "imperial") {
                 weight += ` (${unbritish(currentCar.weight, "weight")}lbs)`;
             }
 
@@ -95,7 +95,7 @@ module.exports = {
                 ]
             });
 
-            let hasCar = playerData.garage.find(c => carFile.includes(c.carID));
+            let hasCar = garage.find(c => carFile.includes(c.carID));
             if (hasCar !== undefined) {
                 let str = "";
                 for (let [key, value] of Object.entries(hasCar.upgrades)) {

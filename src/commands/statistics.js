@@ -2,6 +2,7 @@
 
 const bot = require("../config/config.js");
 const { InfoMessage } = require("../util/classes/classes.js");
+const { moneyEmojiID, fuseEmojiID, trophyEmojiID } = require("../util/consts/consts.js");
 const searchUser = require("../util/functions/searchUser.js");
 const calcTotal = require("../util/functions/calcTotal.js");
 const botUserError = require("../util/commonerrors/botUserError.js");
@@ -51,9 +52,9 @@ module.exports = {
         }
 
         async function displayData(user, currentMessage) {
-            const moneyEmoji = bot.emojis.cache.get("726017235826770021");
-            const fuseEmoji = bot.emojis.cache.get("726018658635218955");
-            const trophyEmoji = bot.emojis.cache.get("775636479145148418");
+            const moneyEmoji = bot.emojis.cache.get(moneyEmojiID);
+            const fuseEmoji = bot.emojis.cache.get(fuseEmojiID);
+            const trophyEmoji = bot.emojis.cache.get(trophyEmojiID);
 
             const playerData = await profileModel.findOne({ userID: user.id });
             console.log(playerData);

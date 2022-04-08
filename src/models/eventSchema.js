@@ -7,9 +7,7 @@ const eventSchema = new Schema({
     name: String,
     isActive: { type: Boolean, default: false },
     isVIP: { type: Boolean, default: false },
-    timeLeft: { type: String, default: "unlimited" },
-    deadline: { type: String, default: "unknown" },
-    background: { type: String, default: "https://cdn.discordapp.com/attachments/716917404868935691/801310401425440768/unknown.png" },
+    deadline: { type: String, default: "unlimited" },
     roster: Array,
 }, { minimize: false });
 

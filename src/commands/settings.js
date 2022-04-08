@@ -310,7 +310,7 @@ module.exports = {
                     break;
                 case "bio":
                     let bio = args.slice(1, args.length).join(" ").trim();
-                    if (bio > 1024) {
+                    if (bio.length > 1024) {
                         let errorMessage = new ErrorMessage({
                             channel: message.channel,
                             title: "Error, bio is too long.",

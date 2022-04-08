@@ -2,13 +2,14 @@
 
 const bot = require("../config/config.js");
 const { SuccessMessage, ErrorMessage } = require("../util/classes/classes.js");
+const { trophyEmojiID } = require("../util/consts/consts.js");
 const searchUser = require("../util/functions/searchUser.js");
 const botUserError = require("../util/commonerrors/botUserError.js");
 const profileModel = require("../models/profileSchema.js");
 
 module.exports = {
     name: "addtrophies",
-    usage: ["<username> | <amount of trophies>"],
+    usage: ["<username> <amount of trophies>"],
     args: 2,
     category: "Admin",
     description: "Adds a certain amount of trophies to someone.",
@@ -34,7 +35,7 @@ module.exports = {
         }
 
         async function addTrophies(user, currentMessage) {
-            const trophyEmoji = bot.emojis.cache.get("775636479145148418");
+            const trophyEmoji = bot.emojis.cache.get(trophyEmojiID);
             const amount = Math.ceil(parseInt(args[1]));
             if (isNaN(amount) || amount < 1) {
                 const errorMessage = new ErrorMessage({

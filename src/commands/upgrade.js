@@ -2,7 +2,7 @@
 
 const bot = require("../config/config.js");
 const { SuccessMessage, InfoMessage, ErrorMessage } = require("../util/classes/classes.js");
-const { carSave, defaultChoiceTime } = require("../util/consts/consts.js");
+const { carSave, defaultChoiceTime, moneyEmojiID, fuseEmojiID } = require("../util/consts/consts.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const selectUpgrade = require("../util/functions/selectUpgrade.js");
 const updateHands = require("../util/functions/updateHands.js");
@@ -61,8 +61,8 @@ module.exports = {
                     if (!Array.isArray(response)) return;
                     const [origUpgrade, currentMessage] = response;
                     try {
-                        const moneyEmoji = bot.emojis.cache.get("726017235826770021");
-                        const fuseEmoji = bot.emojis.cache.get("726018658635218955");
+                        const moneyEmoji = bot.emojis.cache.get(moneyEmojiID);
+                        const fuseEmoji = bot.emojis.cache.get(fuseEmojiID);
                         const car = require(`../cars/${currentCar.carID}`);
                         const carName = carNameGen({ currentCar: car });
                         let [moneyLimit, fuseTokenLimit] = definePrice(car["rq"], upgrade, origUpgrade);

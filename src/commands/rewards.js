@@ -2,6 +2,7 @@
 
 const bot = require("../config/config.js");
 const { SuccessMessage, InfoMessage } = require("../util/classes/classes.js");
+const { moneyEmojiID, fuseEmojiID, trophyEmojiID } = require("../util/consts/consts.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const addCars = require("../util/functions/addCars.js");
 const openPack = require("../util/functions/openPack.js");
@@ -14,9 +15,9 @@ module.exports = {
     category: "Gameplay",
     description: "Collects your rewards from random races, events and challenges.",
     async execute(message) {
-        const moneyEmoji = bot.emojis.cache.get("726017235826770021");
-        const fuseEmoji = bot.emojis.cache.get("726018658635218955");
-        const trophyEmoji = bot.emojis.cache.get("775636479145148418");
+        const moneyEmoji = bot.emojis.cache.get(moneyEmojiID);
+        const fuseEmoji = bot.emojis.cache.get(fuseEmojiID);
+        const trophyEmoji = bot.emojis.cache.get(trophyEmojiID);
 
         const playerData = await profileModel.findOne({ userID: message.author.id });
         if (playerData.unclaimedRewards.length > 0) {

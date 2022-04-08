@@ -46,7 +46,7 @@ module.exports = {
         list.sort((a, b) => a - b);
 
         try {
-            listUpdate(list, page, totalPages, listDisplay, settings);
+            await listUpdate(list, page, totalPages, listDisplay, settings);
         }
         catch (error) {
             throw error;

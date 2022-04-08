@@ -2,8 +2,9 @@
 
 const { Schema, model } = require("mongoose");
 
-const serverStatSchema = new Schema({ // this schema is a placeholder and doesn't affect the actual data
-    placeholder: String
+const serverStatSchema = new Schema({
+    totalEvents: Number,
+    dealershipStats: Object
 }, { minimize: false });
 
 const serverStatModel = model("System", serverStatSchema, "system");

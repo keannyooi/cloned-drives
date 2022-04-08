@@ -2,13 +2,14 @@
 
 const bot = require("../config/config.js");
 const { SuccessMessage, ErrorMessage } = require("../util/classes/classes.js");
+const { moneyEmojiID } = require("../util/consts/consts.js");
 const searchUser = require("../util/functions/searchUser.js");
 const botUserError = require("../util/commonerrors/botUserError.js");
 const profileModel = require("../models/profileSchema.js");
 
 module.exports = {
     name: "addmoney",
-    usage: ["<username> | <amount of money>"],
+    usage: ["<username> <amount of money>"],
     args: 2,
     category: "Admin",
     description: "Adds a certain amount of money to someone's cash balance.",
@@ -34,7 +35,7 @@ module.exports = {
         }
 
         async function addMoney(user, currentMessage) {
-            const moneyEmoji = bot.emojis.cache.get("726017235826770021");
+            const moneyEmoji = bot.emojis.cache.get(moneyEmojiID);
             const amount = Math.ceil(parseInt(args[1]));
             if (isNaN(amount) || amount < 1) {
                 const errorMessage = new ErrorMessage({

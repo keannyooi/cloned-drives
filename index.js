@@ -7,6 +7,7 @@ const { Collection } = require("discord.js");
 const { connect } = require("mongoose");
 const { DateTime, Interval } = require("luxon");
 const { ErrorMessage, InfoMessage, BotError } = require("./src/util/classes/classes.js");
+const { adminRoleID, eventMakerRoleID, testerRoleID } = require("./src/util/consts/consts.js");
 const bot = require("./src/config/config.js");
 const profileModel = require("./src/models/profileSchema.js");
 const prefix = bot.devMode ? process.env.DEV_PREFIX : process.env.BOT_PREFIX;
@@ -143,7 +144,7 @@ async function processCommand(message) {
             }
         });
     if (!message.content.toLowerCase().startsWith(prefix) || message.author.bot) return;
-    if (bot.devMode && !(member.roles.cache.has("711790752853655563") || member.roles.cache.has("915846116656959538"))) return;
+    if (bot.devMode && !(member.roles.cache.has(adminRoleID) || member.roles.cache.has(testerRoleID))) return;
 
     const args = message.content.slice(prefix.length).split(/ +/);
     const commandName = args.shift().toLowerCase();
@@ -160,18 +161,18 @@ async function processCommand(message) {
 
     switch (command.category) {
         case "Admin":
-            if (!member.roles.cache.has("711790752853655563")) {
-                return accessDenied(message, "711790752853655563");
+            if (!member.roles.cache.has(adminRoleID)) {
+                return accessDenied(message, adminRoleID);
             }
             break;
         case "Events":
-            if (!member.roles.cache.has("917685033995751435")) {
-                return accessDenied(message, "917685033995751435");
+            if (!member.roles.cache.has(eventMakerRoleID)) {
+                return accessDenied(message, eventMakerRoleID);
             }
             break;
         case "Testing":
-            if (!member.roles.cache.has("915846116656959538")) {
-                return accessDenied(message, "915846116656959538");
+            if (!member.roles.cache.has(testerRoleID)) {
+                return accessDenied(message, testerRoleID);
             }
             break;
         default:
@@ -253,8 +254,7 @@ async function upsertUserRecord(user) {
     let params = { userID: user.id };
     let hasProfile = await profileModel.exists(params);
     if (!hasProfile && !user.bot) {
-        let profile = await profileModel.create(params);
-        profile.save();
+        await profileModel.create(params);
         console.log(`profile created for user ${user.id}`);
     }
 }

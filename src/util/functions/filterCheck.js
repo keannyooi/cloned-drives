@@ -27,7 +27,7 @@ function filterCheck(car, filter, garage) {
                     }
                     checkArray = checkArray.map(tag => tag.toLowerCase());
 
-                    if (value.every(tag => checkArray.includes(tag)) === false) {
+                    if (value.every(tag => checkArray.findIndex(tag2 => tag === tag2) > -1) === false) {
                         passed = false;
                     }
                 }
@@ -43,6 +43,11 @@ function filterCheck(car, filter, garage) {
                         passed = false;
                     }
                 }
+                else if (Array.isArray(currentCar[key])) {
+                    if (currentCar[key].findIndex(element => element.toLowerCase() === value) === -1) {
+                        passed = false;
+                    }
+                } 
                 else {
                     if (currentCar[key].toLowerCase() !== value) {
                         passed = false;

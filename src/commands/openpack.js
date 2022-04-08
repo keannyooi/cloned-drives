@@ -4,6 +4,7 @@ const bot = require("../config/config.js");
 const { readdirSync } = require("fs");
 const packFiles = readdirSync("./src/packs").filter(file => file.endsWith(".json"));
 const { ErrorMessage } = require("../util/classes/classes.js");
+const { moneyEmojiID } = require("../util/consts/consts.js");
 const addCars = require("../util/functions/addCars.js");
 const search = require("../util/functions/search.js");
 const openPack = require("../util/functions/openPack.js");
@@ -29,7 +30,7 @@ module.exports = {
                 if (!Array.isArray(response)) return;
                 let [result, currentMessage] = response;
                 const { money, garage } = await profileModel.findOne({ userID: message.author.id });
-                const moneyEmoji = bot.emojis.cache.get("726017235826770021");
+                const moneyEmoji = bot.emojis.cache.get(moneyEmojiID);
                 let currentPack = require(`../packs/${result}`);
                 if (money >= currentPack["price"]) {
                     let addedCars = openPack(message, currentPack, currentMessage);

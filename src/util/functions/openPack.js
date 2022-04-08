@@ -63,14 +63,14 @@ function openPack(message, currentPack, currentMessage) {
         }
 
         if (timeoutCounter >= 10000) {
-            const errorScreen = new ErrorMessage({
+            const errorMessage = new ErrorMessage({
                 channel: message.channel,
                 title: "Error, pack generation timed out likely due to no cars in generation pool.",
                 desc: "Don't worry, your money is refunded. (provided that you bought the pack)",
                 author: message.author,
                 footer: "Disclaimer: There is an *extremely* rare chance of this error to pop up even though nothing went wrong."
             });
-            return errorScreen.sendMessage({ currentMessage });
+            return errorMessage.sendMessage({ currentMessage });
         }
         addedCars.push({ carID: carFile.slice(0, 6), upgrade: "000"});
     }

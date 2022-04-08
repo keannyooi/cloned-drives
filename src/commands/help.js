@@ -3,6 +3,7 @@
 const bot = require("../config/config.js");
 const { readdirSync } = require("fs");
 const { InfoMessage, ErrorMessage } = require("../util/classes/classes.js");
+const { adminRoleID, eventMakerRoleID, testerRoleID } = require("../util/consts/consts.js");
 
 module.exports = {
     name: "help",
@@ -56,13 +57,13 @@ module.exports = {
                     { name: "Miscellaneous", value: miscCommands.join(", ") }
                 ]
             });
-            // if (member.roles.cache.has("917685033995751435")) {
-            //     infoMessage.editEmbed({ fields: [{ name: "Events", value: eventCommands.join(", ") }] });
-            // }
-            if (member.roles.cache.has("711790752853655563")) {
+            if (member.roles.cache.has(eventMakerRoleID)) {
+                infoMessage.editEmbed({ fields: [{ name: "Events", value: eventCommands.join(", ") }] });
+            }
+            if (member.roles.cache.has(adminRoleID)) {
                 infoMessage.editEmbed({ fields: [{ name: "Admin", value: adminCommands.join(", ") }] });
             }
-            if (member.roles.cache.has("915846116656959538")) {
+            if (member.roles.cache.has(testerRoleID)) {
                 infoMessage.editEmbed({ fields: [{ name: "Testing", value: testingCommands.join(", ") }] });
             }
             return infoMessage.sendMessage();
@@ -71,7 +72,7 @@ module.exports = {
             const commandName = args[0].toLowerCase();
             const command = commands.get(commandName) || commands.find(c => c.aliases && c.aliases.includes(commandName));
             if (!command) {
-                let commandFiles = readdirSync("./commands").filter(file => file.endsWith(".js")).map(file => file.replace(".js", ""));
+                let commandFiles = readdirSync("./src/commands").filter(file => file.endsWith(".js")).map(file => file.replace(".js", ""));
                 const errorMessage = new ErrorMessage({
                     channel: message.channel,
                     title: "Error, 404 command not found.",
@@ -83,16 +84,16 @@ module.exports = {
 
             switch (command.category) {
                 case "Admin":
-                    if (!member.roles.cache.has("711790752853655563")) {
-                        return accessDenied("711790752853655563");
+                    if (!member.roles.cache.has(adminRoleID)) {
+                        return accessDenied(adminRoleID);
                     }
                 case "Events":
-                    if (!member.roles.cache.has("917685033995751435")) {
-                        return accessDenied("917685033995751435");
+                    if (!member.roles.cache.has(eventMakerRoleID)) {
+                        return accessDenied(eventMakerRoleID);
                     }
                 case "Testing":
-                    if (!member.roles.cache.has("915846116656959538")) {
-                        return accessDenied("915846116656959538");
+                    if (!member.roles.cache.has(testerRoleID)) {
+                        return accessDenied(testerRoleID);
                     }
                 default:
                     break;

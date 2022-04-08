@@ -4,7 +4,7 @@ const bot = require("../../config/config.js");
 const { createCanvas, loadImage } = require("canvas");
 const { MessageAttachment } = require("discord.js");
 const { SuccessMessage, InfoMessage, ErrorMessage } = require("../classes/classes.js");
-const { weatherVars, driveHierarchy, gcHierarchy } = require("../consts/consts.js");
+const { weatherVars, driveHierarchy, gcHierarchy, failedToLoadImageLink } = require("../consts/consts.js");
 
 async function race(message, player, opponent, currentTrack, disablegraphics) {
     message.channel.sendTyping();
@@ -28,8 +28,7 @@ async function race(message, player, opponent, currentTrack, disablegraphics) {
         }
         catch (error) {
             console.log(error);
-            let errorPic = "https://cdn.discordapp.com/attachments/716917404868935691/786411449341837322/unknown.png";
-            attachment = new MessageAttachment(errorPic, "thing.png");
+            attachment = new MessageAttachment(failedToLoadImageLink, "thing.png");
         }
     }
 

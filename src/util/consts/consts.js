@@ -123,6 +123,24 @@ const weatherVars = {
     }
 };
 
+const adminRoleID = "711790752853655563";
+const eventMakerRoleID = "917685033995751435";
+const testerRoleID = "915846116656959538";
+
+const moneyEmojiID = "726017235826770021";
+const fuseEmojiID = "726018658635218955";
+const trophyEmojiID = "775636479145148418";
+const blackMarketEmojiID = "831967206446465064";
+const legendaryEmojiID = "857512942471479337";
+const epicEmojiID = "726025468230238268";
+const ultraRareEmojiID = "726025431937187850";
+const superRareEmojiID = "857513197937623042";
+const rareEmojiID = "726025302656024586";
+const uncommonEmojiID = "726025273421725756";
+const commonEmojiID = "726020544264273928";
+
+const failedToLoadImageLink = "https://cdn.discordapp.com/attachments/716917404868935691/801370166826238002/unknown.png";
+
 module.exports = {
     carSave,
     starterGarage,
@@ -132,5 +150,20 @@ module.exports = {
     defaultPageLimit,
     weatherVars,
     driveHierarchy,
-    gcHierarchy
+    gcHierarchy,
+    adminRoleID,
+    eventMakerRoleID,
+    testerRoleID,
+    moneyEmojiID,
+    fuseEmojiID,
+    trophyEmojiID,
+    blackMarketEmojiID,
+    legendaryEmojiID,
+    epicEmojiID,
+    ultraRareEmojiID,
+    superRareEmojiID,
+    rareEmojiID,
+    uncommonEmojiID,
+    commonEmojiID,
+    failedToLoadImageLink
 };

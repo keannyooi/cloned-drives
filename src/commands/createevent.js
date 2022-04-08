@@ -2,7 +2,7 @@
 
 const { readdirSync } = require("fs");
 const carFiles = readdirSync('./src/cars').filter(file => file.endsWith('.json'));
-const tracksets = readdirSync("./src/tracks").filter(file => file.endsWith('.json'));
+const tracks = readdirSync("./src/tracks").filter(file => file.endsWith('.json'));
 const { SuccessMessage, ErrorMessage } = require("../util/classes/classes.js");
 const sortCars = require("../util/functions/sortCars.js");
 const eventModel = require("../models/eventSchema.js");
@@ -50,14 +50,14 @@ module.exports = {
             roster.push({
                 car: opponent,
                 upgrade: upgrades[Math.floor(Math.random() * upgrades.length)],
-                trackset: tracksets[Math.floor(Math.random() * tracksets.length)],
+                track: tracks[Math.floor(Math.random() * tracks.length)].slice(0, 6),
                 reqs: {},
-                reward: {}
+                rewards: {}
             });
         }
 
         await eventModel.create({
-            eventID: totalEvents + 1,
+            eventID: `evnt${totalEvents + 1}`,
             name: eventName,
             roster
         });

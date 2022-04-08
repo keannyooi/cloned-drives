@@ -2,6 +2,7 @@
 
 const bot = require("../config/config.js");
 const { SuccessMessage, ErrorMessage } = require("../util/classes/classes.js");
+const { fuseEmojiID } = require("../util/consts/consts.js");
 const searchUser = require("../util/functions/searchUser.js");
 const botUserError = require("../util/commonerrors/botUserError.js");
 const profileModel = require("../models/profileSchema.js");
@@ -9,7 +10,7 @@ const profileModel = require("../models/profileSchema.js");
 module.exports = {
     name: "addfusetokens",
     aliases: ["aft"],
-    usage: ["<username> | <amount of fuse tokens>"],
+    usage: ["<username> <amount of fuse tokens>"],
     args: 2,
     category: "Admin",
     description: "Adds a certain amount of fuse tokens to someone's cash balance.",
@@ -35,7 +36,7 @@ module.exports = {
         }
 
         async function addTokens(user, currentMessage) {
-            const fuseEmoji = bot.emojis.cache.get("726018658635218955");
+            const fuseEmoji = bot.emojis.cache.get(fuseEmojiID);
             const amount = Math.ceil(parseInt(args[1]));
             if (isNaN(amount) || amount < 1) {
                 const errorMessage = new ErrorMessage({

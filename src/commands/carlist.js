@@ -15,7 +15,7 @@ const profileModel = require("../models/profileSchema.js");
 module.exports = {
     name: "carlist",
     aliases: ["allcars"],
-    usage: ["[page number] | -s [sorting criteria]"],
+    usage: ["", "[page number]", "-s [sorting criteria]", "[page number] -s [sorting criteria]"],
     args: 0,
     category: "Info",
     description: "Shows all the cars that are available in Cloned Drives in list form.",
@@ -65,7 +65,7 @@ module.exports = {
         list = sortCars(list, sort, settings.sortorder, garage);
 
         try {
-            listUpdate(list, page, totalPages, listDisplay, settings);
+            await listUpdate(list, page, totalPages, listDisplay, settings);
         }
         catch (error) {
             throw error;

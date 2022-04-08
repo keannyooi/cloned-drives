@@ -106,7 +106,7 @@ module.exports = {
                     answer = (100 * (numberArgs[0] / (numberArgs[1] / 2))).toFixed(2);
                     break;
                 case "average":
-                    let average = numberArgs.slice(1, numberArgs.length).map(arg => Number(arg));
+                    let average = numberArgs.slice(0, numberArgs.length).map(arg => Number(arg));
                     let plus = average.reduce(function (total, num) {
                         return total + num;
                     });

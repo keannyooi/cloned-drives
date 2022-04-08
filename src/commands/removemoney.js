@@ -2,6 +2,7 @@
 
 const bot = require("../config/config.js");
 const { SuccessMessage, ErrorMessage } = require("../util/classes/classes.js");
+const { moneyEmojiID } = require("../util/consts/consts.js");
 const searchUser = require("../util/functions/searchUser.js");
 const botUserError = require("../util/commonerrors/botUserError.js");
 const profileModel = require("../models/profileSchema.js");
@@ -35,7 +36,7 @@ module.exports = {
         }
 
         async function removeMoney(user, currentMessage) {
-            const moneyEmoji = bot.emojis.cache.get("726017235826770021");
+            const moneyEmoji = bot.emojis.cache.get(moneyEmojiID);
             const amount = Math.ceil(parseInt(args[1]));
             if (isNaN(amount) || parseInt(amount) < 1) {
                 const errorMessage = new ErrorMessage({

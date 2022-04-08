@@ -4,6 +4,7 @@ const bot = require("../config/config.js");
 const { readdirSync } = require("fs");
 const packFiles = readdirSync("./src/packs").filter(file => file.endsWith('.json'));
 const { InfoMessage } = require("../util/classes/classes.js");
+const { moneyEmojiID } = require("../util/consts/consts.js");
 const search = require("../util/functions/search.js");
 
 module.exports = {
@@ -33,7 +34,7 @@ module.exports = {
             });
 
         function displayInfo(pack, currentMessage) {
-            const moneyEmoji = bot.emojis.cache.get("726017235826770021");
+            const moneyEmoji = bot.emojis.cache.get(moneyEmojiID);
             let currentPack = require(`../packs/${pack}`);
             let infoMessage = new InfoMessage({
                 channel: message.channel,
