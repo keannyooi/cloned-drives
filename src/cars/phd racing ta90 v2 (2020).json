@@ -1,0 +1,54 @@
+{
+    "rq": 84,
+    "make": ["PhD Racing", "Toyota"],
+    "model": "TA90 V2",
+    "modelYear": 2020,
+    "country": "US",
+    "topSpeed": 201,
+    "0to60": 3.4,
+    "handling": 93,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner", "Track Day"],
+    "isPrize": false,
+
+    "weight": 1486,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 103.03,
+    "ola": 82.35,
+    "description": "Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/959441404873048074/TA90V2.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/959441987633840198/TA90V2.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/959441993946267678/TA90V21.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/959442000829108254/TA90V22.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/959442025952968764/TA90V2996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/959442016406741032/TA90V2969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/959442007598710844/TA90V2699.png",
+
+    "333TopSpeed": 204,
+    "3330to60": 3.2,
+    "333Handling": 96,
+
+    "666TopSpeed": 206,
+    "6660to60": 3.1,
+    "666Handling": 99,
+
+    "996TopSpeed": 209,
+    "9960to60": 2.9,
+    "996Handling": 99,
+
+    "969TopSpeed": 209,
+    "9690to60": 3.1,
+    "969Handling": 103,
+
+    "699TopSpeed": 206,
+    "6990to60": 2.9,
+    "699Handling": 103
+}
