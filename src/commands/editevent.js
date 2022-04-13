@@ -11,7 +11,10 @@ const { carSave, moneyEmojiID, fuseEmojiID, trophyEmojiID } = require("../util/c
 const search = require("../util/functions/search.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const editFilter = require("../util/functions/editFilter.js");
+const filterCheck = require("../util/functions/filterCheck.js");
 const listRewards = require("../util/functions/listRewards.js");
+const sortCars = require("../util/functions/sortCars.js");
+const profileModel = require("../models/profileSchema.js");
 const eventModel = require("../models/eventSchema.js");
 
 module.exports = {
@@ -27,7 +30,9 @@ module.exports = {
         "<event name> addreward <round number> <money/fusetokens/trophies> <amount>",
         "<event name> addreward <round number> car <car name> <upgrade>",
         "<event name> addreward <round number> pack <pack name>",
-        "<event name> removereward <round number> <reward type / all>"
+        "<event name> removereward <round number> <reward type / all>",
+        "<event name> regentracks <asphalt / dirt / snow>",
+        "<event name> regenopponents <random / filter>"
     ],
     args: 3,
     category: "Events",
@@ -334,7 +339,7 @@ module.exports = {
                                         let [packFile, currentMessage2] = response;
                                         currentMessage = currentMessage2;
                                         currentEvent.roster[index - 1].rewards.pack = packFile.slice(0, 6);
-    
+
                                         let currentPack = require(`../packs/${packFile}`);
                                         successMessage = new SuccessMessage({
                                             channel: message.channel,
@@ -393,182 +398,109 @@ module.exports = {
                         return errorMessage.sendMessage({ currentMessage });
                     }
                     break;
-                // case "regentracks":
-                //     if (!args[2]) {
-                //         let errorMessage = new ErrorMessage({
-                //             channel: message.channel,
-                //             title: "Error, track regeneration criteria not provided.",
-                //             desc: "Provide one, please.",
-                //             author: message.author
-                //         });
-                //         return errorMessage.sendMessage({ currentMessage });
-                //     }
-                //     let randomizeType = args[2].toLowerCase(), f;
-                //     switch (randomizeType) {
-                //         case "asphalt":
-                //             f = tracksets.filter(track => {
-                //                 return track.includes("(rainy)") || !track.includes("(");
-                //             });
-                //             break;
-                //         case "dirt":
-                //             f = tracksets.filter(track => {
-                //                 return track.includes("(muddy)") || track.includes("(dirt)") || track.includes("(gravel)") || track.includes("(rainy gravel)");
-                //             });
-                //             break;
-                //         case "snow":
-                //             f = tracksets.filter(track => {
-                //                 return track.includes("(snowy)") || track.includes("(ice)");
-                //             });
-                //             break;
-                //         default:
-                //             const errorMessage = new ErrorMessage({
-                //                 channel: message.channel,
-                //                 title: "Error, track regeneration criteria not found.",
-                //                 desc: `Here is a list of track regeneration criterias. 
-                //                 \`asphalt\` - Generates asphalt tracksets.
-                //                 \`dirt\` - Generates dirt tracksets.
-                //                 \`snow\` - Generates snow tracksets.`,
-                //                 author: message.author
-                //             });
-                //             return errorMessage.sendMessage({ currentMessage });
-                //     }
-                //     for (i = 0; i < currentEvent.roster.length; i++) {
-                //         currentEvent.roster[i].trackset = f[Math.floor(Math.random() * f.length)];
-                //     }
+                case "regentracks":
+                    let randomizeType = args[2].toLowerCase(), generationPool;
+                    switch (randomizeType) {
+                        case "asphalt":
+                            generationPool = trackFiles.filter(track => {
+                                let trackContents = require(`../tracks/${track}`);
+                                return trackContents["surface"] === "Asphalt";
+                            });
+                            break;
+                        case "dirt":
+                            generationPool = trackFiles.filter(track => {
+                                let trackContents = require(`../tracks/${track}`);
+                                return trackContents["surface"] === "Dirt" || trackContents["surface"] === "Gravel";
+                            });
+                            break;
+                        case "snow":
+                            generationPool = trackFiles.filter(track => {
+                                let trackContents = require(`../tracks/${track}`);
+                                return trackContents["surface"] === "Snow" || trackContents["surface"] === "Ice";
+                            });
+                            break;
+                        default:
+                            const errorMessage = new ErrorMessage({
+                                channel: message.channel,
+                                title: "Error, track regeneration criteria not found.",
+                                desc: `Here is a list of track regeneration criterias. 
+                                \`asphalt\` - Generates asphalt tracks.
+                                \`dirt\` - Generates dirt tracks.
+                                \`snow\` - Generates snow tracks.`,
+                                author: message.author
+                            }).displayClosest(randomizeType);
+                            return errorMessage.sendMessage({ currentMessage });
+                    }
+                    for (let i = 0; i < currentEvent.roster.length; i++) {
+                        currentEvent.roster[i].track = generationPool[Math.floor(Math.random() * generationPool.length)];
+                    }
 
-                //     successMessage = new SuccessMessage({
-                //         channel: message.channel,
-                //         title: `Successfully regenerated tracksets for the ${currentEvent.name} event!`,
-                //         author: message.author
-                //     });
-                //     break;
-                // case "regenopponents":
-                //     let regenSelect = carFiles;
-                //     const carFilter = await db.get(`acc${message.author.id}.filter`);
-                //     if (carFilter !== null) {
-                //         for (const [key, value] of Object.entries(carFilter)) {
-                //             switch (typeof value) {
-                //                 case "object":
-                //                     if (Array.isArray(value)) {
-                //                         regenSelect = regenSelect.filter(function (carFile) {
-                //                             let currentCar = require(`./cars/${carFile}`);
-                //                             if (Array.isArray(currentCar[key])) {
-                //                                 let obj = {};
-                //                                 currentCar[key].forEach((tag, index) => obj[tag.toLowerCase()] = index);
-                //                                 return value.every(tagFilter => { return obj[tagFilter] !== undefined; });
-                //                             }
-                //                             else {
-                //                                 return value.includes(currentCar[key].toLowerCase());
-                //                             }
-                //                         });
-                //                     }
-                //                     else {
-                //                         regenSelect = regenSelect.filter(function (carFile) {
-                //                             let currentCar = require(`./cars/${carFile}`);
-                //                             return currentCar[key] >= value.start && currentCar[key.replace("count", "Count").replace("y", "Y")] <= value.end;
-                //                         });
-                //                     }
-                //                     break;
-                //                 case "string":
-                //                     regenSelect = regenSelect.filter(function (carFile) {
-                //                         let currentCar = require(`./cars/${carFile}`);
-                //                         return currentCar[key].toLowerCase() === value;
-                //                     });
-                //                     break;
-                //                 case "boolean":
-                //                     if (key === "isPrize") {
-                //                         regenSelect = regenSelect.filter(function (carFile) {
-                //                             let currentCar = require(`./cars/${carFile}`);
-                //                             return currentCar[key] === value;
-                //                         });
-                //                     }
-                //                     break;
-                //                 default:
-                //                     break;
-                //             }
-                //         }
-                //     }
-                //     if (regenSelect.length < 1) {
-                //         const errorMessage = new ErrorMessage({
-                //             channel: message.channel,
-                //             title: "Error, it looks like there are no cars available with your filter settings.",
-                //             desc: "Check your filter settings using `cd-filter view`.",
-                //             author: message.author
-                //         });
-                //         return errorMessage.sendMessage({ currentMessage });
-                //     }
-                //     const opponents = [];
-                //     for (let x = 0; x < currentEvent.roster.length; x++) {
-                //         opponents[x] = regenSelect[Math.floor(Math.random() * regenSelect.length)];
-                //     }
-                //     opponents.sort(function (a, b) {
-                //         const carA = require(`./cars/${a}`);
-                //         const carB = require(`./cars/${b}`);
-                //         if (carA["rq"] === carB["rq"]) {
-                //             let nameA = `${carA["make"]} ${carA["model"]}`.toLowerCase();
-                //             let nameB = `${carA["make"]} ${carA["model"]}`.toLowerCase();
-                //             if (typeof carA["make"] === "object") {
-                //                 nameA = `${carA["make"][0]} ${carA["model"]}`.toLowerCase();
-                //             }
-                //             if (typeof carB["make"] === "object") {
-                //                 nameB = `${carB["make"][0]} ${carB["model"]}`.toLowerCase();
-                //             }
-                //             if (nameA < nameB) {
-                //                 return -1;
-                //             }
-                //             else if (nameA > nameB) {
-                //                 return 1;
-                //             }
-                //             else {
-                //                 return 0;
-                //             }
-                //         }
-                //         else {
-                //             if (carA["rq"] > carB["rq"]) {
-                //                 return 1;
-                //             }
-                //             else {
-                //                 return -1;
-                //             }
-                //         }
-                //     });
+                    successMessage = new SuccessMessage({
+                        channel: message.channel,
+                        title: `Successfully regenerated tracks for the ${currentEvent.name} event!`,
+                        author: message.author
+                    });
+                    break;
+                case "regenopponents":
+                    let filterType = args[2].toLowerCase(), filter;
+                    switch (filterType) {
+                        case "random":
+                            filter = {};
+                            break;
+                        case "filter":
+                            let playerData = await profileModel.findOne({ userID: message.author.id })
+                            filter = playerData.filter;
+                            break;
+                        default:
+                            const errorMessage = new ErrorMessage({
+                                channel: message.channel,
+                                title: "Error, opponent generation criteria not found.",
+                                desc: `Here is a list of opponent generation criterias. 
+                                \`random\` - Generates cars without limitations.
+                                \`filter\` - Generates cars that comply with the current filter set by the user.`,
+                                author: message.author
+                            }).displayClosest(filterType);
+                            return errorMessage.sendMessage({ currentMessage });
+                    }
 
-                //     for (let x = 0; x < currentEvent.roster.length; x++) {
-                //         let upgradeIndex = Math.floor(Math.random() * 4);
-                //         let upgradePattern = [0, 0, 0];
-                //         switch (upgradeIndex) {
-                //             case 0:
-                //                 break;
-                //             case 1:
-                //                 upgradePattern = [3, 3, 3];
-                //                 break;
-                //             case 2:
-                //                 upgradePattern = [6, 6, 6];
-                //                 break;
-                //             case 3:
-                //                 let maxedTunes = [996, 969, 699];
-                //                 let i = Math.floor(Math.random() * maxedTunes.length);
-                //                 let car = require(`./cars/${opponents[x]}`);
-                //                 while (!car[`${maxedTunes[i]}TopSpeed`]) {
-                //                     i = Math.floor(Math.random() * maxedTunes.length);
-                //                 }
-                //                 upgradePattern = Array.from(maxedTunes[i].toString(), (val) => Number(val));
-                //                 break;
-                //             default:
-                //                 break;
-                //         }
-                //         currentEvent.roster[x].car = opponents[x];
-                //         currentEvent.roster[x].gearingUpgrade = upgradePattern[0];
-                //         currentEvent.roster[x].engineUpgrade = upgradePattern[1];
-                //         currentEvent.roster[x].chassisUpgrade = upgradePattern[2];
-                //     }
+                    let regenPool = carFiles;
+                    regenPool = regenPool.filter(car => filterCheck({
+                        carID: car.slice(0, 6),
+                        "000": 1,
+                        "333": 1,
+                        "666": 1,
+                        "996": 1,
+                        "969": 1,
+                        "699": 1
+                    }, filter));
+                    if (regenPool.length < 1) {
+                        const errorMessage = new SuccessMessage({
+                            channel: message.channel,
+                            title: "Error, it looks like there are no cars available with your filter settings.",
+                            desc: "Check your filter settings using `cd-filter view`.",
+                            author: message.author
+                        });
+                        return errorMessage.sendMessage({ currentMessage });
+                    }
 
-                //     successMessage = new ErrorMessage({
-                //         channel: message.channel,
-                //         title: `Successfully regenerated opponents for the ${currentEvent.name} event!`,
-                //         author: message.author
-                //     });
-                //     break;
+                    let opponentIDs = [];
+                    for (let i = 0; i < currentEvent.roster.length; i++) {
+                        opponentIDs[i] = regenPool[Math.floor(Math.random() * regenPool.length)].slice(0, 6);
+                    }
+                    opponentIDs = sortCars(opponentIDs, "rq", "ascending");
+
+                    let upgrades = ["000", "333", "666", "699", "969", "996"];
+                    for (let i = 0; i < currentEvent.roster.length; i++) {
+                        currentEvent.roster[i].car = opponentIDs[i];
+                        currentEvent.roster[i].upgrade = upgrades[Math.floor(Math.random() * upgrades.length)];
+                    }
+
+                    successMessage = new SuccessMessage({
+                        channel: message.channel,
+                        title: `Successfully regenerated opponents for the ${currentEvent.name} event!`,
+                        author: message.author
+                    });
+                    break;
                 default:
                     const errorMessage = new ErrorMessage({
                         channel: message.channel,
@@ -582,7 +514,7 @@ module.exports = {
                             \`settune\` - Sets the tune for the opponent's car.
                             \`addreq\` - Adds a requirement to a round.
                             \`removereq\` - Removes a requirement from a round.
-                            \`regentracks\` - Regenerates tracksets for every single round of an event.
+                            \`regentracks\` - Regenerates tracks for every single round of an event.
                             \`regenopponents\` - Regenerates opponents for every single round of an event.`,
                         author: message.author
                     });
