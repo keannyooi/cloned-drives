@@ -2,6 +2,7 @@
 
 const { findBestMatch } = require("string-similarity");
 const { MessageEmbed } = require("discord.js");
+const { bugReportsChannelID } = require("../consts/consts.js");
 const bot = require("../../config/config.js");
 
 class BotMessage {
@@ -118,8 +119,8 @@ class BotError {
     }
 
     async sendReport() {
-        const bugReportsChannel = await bot.homeGuild.channels.fetch("750304569422250064");
-        const source = (this.link) ? `guild ${this.guild.name} in #${this.channel.name}` : "a DM channel";
+        const bugReportsChannel = await bot.homeGuild.channels.fetch(bugReportsChannelID);
+        const source = this.link ? `guild ${this.guild.name} in #${this.channel.name}` : "a DM channel";
         const reportMessage = new MessageEmbed({
             title: `Error report from ${this.unknownSource ? "an unknown source" : source}`,
             description: `\`${this.stack}\``,

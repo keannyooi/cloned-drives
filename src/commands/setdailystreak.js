@@ -8,7 +8,7 @@ const profileModel = require("../models/profileSchema.js");
 
 module.exports = {
     name: "setdailystreak",
-    usage: ["<username> | <amount>"],
+    usage: ["<username> <amount>"],
     args: 2,
     category: "Admin",
     description: "Sets a player's daily reward streak to a certain number.",
@@ -26,38 +26,34 @@ module.exports = {
                 .then(async (response) => {
                     if (!Array.isArray(response)) return;
                     let [result, currentMessage] = response;
-                    await editDailyStreak(result.user, currentMessage);
+                    if (isNaN(args[1]) || Math.ceil(parseInt(args[1])) < 0) {
+                        const errorMessage = new ErrorMessage({
+                            channel: message.channel,
+                            title: "Error, daily reward streak requested invalid.",
+                            desc: "Daily reward streaks should be a number bigger or equal to 0.",
+                            author: message.author
+                        }).displayClosest(args[1]);
+                        return errorMessage.sendMessage({ currentMessage });
+                    }
+        
+                    await profileModel.updateOne({ userID: result.user.id }, {
+                        "$set": {
+                            "dailyStats.streak": parseInt(args[1]) - 1,
+                            "dailyStats.lastDaily": DateTime.now().minus({ days: 1 }).toISO(),
+                            "dailyStats.notifReceived": true
+                        }
+                    });
+                    const successMessage = new SuccessMessage({
+                        channel: message.channel,
+                        title: `Successfully set ${result.user.username}'s daily reward streak to ${args[1]}!`,
+                        author: message.author,
+                        thumbnail: result.user.displayAvatarURL({ format: "png", dynamic: true })
+                    });
+                    return successMessage.sendMessage({ currentMessage });
                 })
                 .catch(error => {
                     throw error;
                 });
-        }
-
-        async function editDailyStreak(user, currentMessage) {
-            if (isNaN(args[1]) || Math.ceil(parseInt(args[1])) < 0) {
-                const errorMessage = new ErrorMessage({
-                    channel: message.channel,
-                    title: "Error, daily reward streak requested is either not a number or inapplicable.",
-                    desc: "Daily reward streaks should be a number bigger or equal to 0.",
-                    author: message.author
-                }).displayClosest(args[1]);
-                return errorMessage.sendMessage({ currentMessage });
-            }
-
-            await profileModel.updateOne({ userID: user.id }, {
-                "$set": {
-                    "dailyStats.streak": parseInt(args[1]) - 1,
-                    "dailyStats.lastDaily": DateTime.now().minus({ days: 1 }).toISO(),
-                    "dailyStats.notifReceived": true
-                }
-            });
-            const successMessage = new SuccessMessage({
-                channel: message.channel,
-                title: `Successfully set ${user.username}'s daily reward streak to ${args[1]}!`,
-                author: message.author,
-                thumbnail: user.displayAvatarURL({ format: "png", dynamic: true })
-            });
-            return successMessage.sendMessage({ currentMessage });
         }
     }
 };

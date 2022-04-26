@@ -127,9 +127,14 @@ const adminRoleID = "711790752853655563";
 const eventMakerRoleID = "917685033995751435";
 const testerRoleID = "915846116656959538";
 
+const bugReportsChannelID = "750304569422250064";
+const currentEventsChannelID = "955467202138620014";
+
 const moneyEmojiID = "726017235826770021";
 const fuseEmojiID = "726018658635218955";
 const trophyEmojiID = "775636479145148418";
+const glofEmojiID = "967031943222923335";
+const packEmojiID = "966972757415972884";
 const blackMarketEmojiID = "831967206446465064";
 const legendaryEmojiID = "857512942471479337";
 const epicEmojiID = "726025468230238268";
@@ -155,8 +160,12 @@ module.exports = {
     eventMakerRoleID,
     testerRoleID,
     moneyEmojiID,
+    bugReportsChannelID,
+    currentEventsChannelID,
     fuseEmojiID,
     trophyEmojiID,
+    glofEmojiID,
+    packEmojiID,
     blackMarketEmojiID,
     legendaryEmojiID,
     epicEmojiID,

@@ -7,7 +7,7 @@ const profileModel = require("../models/profileSchema.js");
 
 module.exports = {
     name: "setwinstreak",
-    usage: ["<username> | <amount>"],
+    usage: ["<username> <win streak>"],
     args: 2,
     category: "Admin",
     description: "Sets a player's win streak to a certain number.",

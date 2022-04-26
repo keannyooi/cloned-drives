@@ -43,8 +43,7 @@ module.exports = {
         await new Promise(resolve => resolve(search(message, query, events, "event")))
             .then(async (response) => {
                 if (!Array.isArray(response)) return;
-                let [result, currentMessage] = response;
-                await editEvent(result, currentMessage);
+                await editEvent(...response);
             })
             .catch(error => {
                 throw error;
@@ -267,7 +266,7 @@ module.exports = {
                             }
                             else if (rewardType === "fusetokens") {
                                 emoji = bot.emojis.cache.get(fuseEmojiID);
-                                currentEvent.roster[index - 1].rewards.fusetokens = parseInt(amount);
+                                currentEvent.roster[index - 1].rewards.fuseTokens = parseInt(amount);
                             }
                             else {
                                 emoji = bot.emojis.cache.get(trophyEmojiID);
@@ -432,7 +431,7 @@ module.exports = {
                             return errorMessage.sendMessage({ currentMessage });
                     }
                     for (let i = 0; i < currentEvent.roster.length; i++) {
-                        currentEvent.roster[i].track = generationPool[Math.floor(Math.random() * generationPool.length)];
+                        currentEvent.roster[i].track = generationPool[Math.floor(Math.random() * generationPool.length)].slice(0, 6);
                     }
 
                     successMessage = new SuccessMessage({
@@ -491,7 +490,7 @@ module.exports = {
 
                     let upgrades = ["000", "333", "666", "699", "969", "996"];
                     for (let i = 0; i < currentEvent.roster.length; i++) {
-                        currentEvent.roster[i].car = opponentIDs[i];
+                        currentEvent.roster[i].carID = opponentIDs[i];
                         currentEvent.roster[i].upgrade = upgrades[Math.floor(Math.random() * upgrades.length)];
                     }
 

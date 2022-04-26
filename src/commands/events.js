@@ -56,8 +56,6 @@ module.exports = {
         }
 
         async function viewEvent(event, page, currentMessage) {
-            // const hudPlacement = [{ x: 9, y: 59 }, { x: 9, y: 183 }, { x: 9, y: 311 }, { x: 9, y: 437 }, { x: 9, y: 565 }, { x: 383, y: 59 }, { x: 383, y: 183 }, { x: 383, y: 311 }, { x: 383, y: 437 }, { x: 383, y: 565 }];
-            // const rewardPlacement = [{ x: 204, y: 57 }, { x: 204, y: 182 }, { x: 204, y: 309 }, { x: 204, y: 436 }, { x: 204, y: 563 }, { x: 587, y: 57 }, { x: 587, y: 182 }, { x: 587, y: 309 }, { x: 587, y: 436 }, { x: 587, y: 563 }];
             const guildMember = await bot.homeGuild.members.fetch(message.author.id);
             console.log(event);
 
@@ -85,14 +83,15 @@ module.exports = {
                 function listDisplay(section, page, totalPages) {
                     const fields = [];
                     for (let i = 0; i < section.length; i++) {
-                        let currentCar = require(`../cars/${section[i].car}`);
+                        let round = (page - 1) * 10 + i + 1;
+                        let currentCar = require(`../cars/${section[i].carID}`);
                         let track = require(`../tracks/${section[i].track}`);
                         let reqString = "";
                         for (const [key, value] of Object.entries(section[i].reqs)) {
                             switch (typeof value) {
                                 case "object":
                                     if (Array.isArray(value)) {
-                                        reqString += `\`${key}: ${value.join(" or ")}\`, `;
+                                        reqString += `\`${key}: ${value.join(" and ")}\`, `;
                                     }
                                     else {
                                         reqString += `\`${key}: ${value.start} - ${value.end}\`, `;
@@ -120,7 +119,7 @@ module.exports = {
                         }
 
                         fields.push({
-                            name: `Round ${(page - 1) * 10 + i + 1}`,
+                            name: `Round ${round} ${round < event.playerProgress[message.author.id] ? "✅" : ""}`,
                             value: `Car: ${carNameGen({ currentCar, rarity: true, upgrade: section[i].upgrade })}
                             Track: ${track["trackName"]}
                             Reqs: ${reqString}
@@ -129,78 +128,12 @@ module.exports = {
                         });
                     }
 
-                    // Canvas.registerFont("RobotoCondensed-Bold.ttf", { family: "Roboto Condensed" });
-                    // const canvas = Canvas.createCanvas(767, 677);
-                    // const ctx = canvas.getContext("2d");
-                    // ctx.font = '36px "Roboto Condensed"';
-                    // ctx.textAlign = "center";
-                    // let attachment, promises, cucked = false;
-                    // if (settings.enablegraphics && event.roster.length <= 10) {
-                    //     try {
-                    //         let huds = event.roster.map(car => {
-                    //             let currentCar = require(`./cars/${car.car}`);
-                    //             return Canvas.loadImage(currentCar[`racehud${car.gearingUpgrade}${car.engineUpgrade}${car.chassisUpgrade}`]);
-                    //         });
-                    //         promises = await Promise.all(huds);
-                    //         let overlay = await Canvas.loadImage("https://cdn.discordapp.com/attachments/716917404868935691/801292983496474624/test.png");
-                    //         let background = await Canvas.loadImage(event.background);
-                    //         ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
-                    //         ctx.drawImage(overlay, 0, 0, canvas.width, canvas.height);
-                    //         ctx.strokeStyle = "#000000";
-                    //         for (y = 0; y < event.roster.length; y++) {
-                    //             console.log(y);
-                    //             ctx.drawImage(promises[y], hudPlacement[y].x, hudPlacement[y].y, 171, 103);
-                    //             for (let [key, value] of Object.entries(event.roster[y].reward)) {
-                    //                 switch (key) {
-                    //                     case "money":
-                    //                         ctx.fillStyle = "#8ac545";
-                    //                         ctx.fillText(value, rewardPlacement[y].x + 88, rewardPlacement[y].y + 65);
-                    //                         ctx.strokeText(value, rewardPlacement[y].x + 88, rewardPlacement[y].y + 65);
-                    //                         break;
-                    //                     case "fuseTokens":
-                    //                         ctx.fillStyle = "#4800ff";
-                    //                         ctx.fillText(value, rewardPlacement[y].x + 88, rewardPlacement[y].y + 65);
-                    //                         ctx.strokeText(value, rewardPlacement[y].x + 88, rewardPlacement[y].y + 65);
-                    //                         break;
-                    //                     case "car":
-                    //                         let car = require(`./cars/${event.roster[y].reward.car}`);
-                    //                         let card = await Canvas.loadImage(car["card"]);
-                    //                         ctx.drawImage(card, rewardPlacement[y].x, rewardPlacement[y].y, 172, 105);
-                    //                         break;
-                    //                     case "pack":
-                    //                         let pack = require(`./packs/${event.roster[y].reward.pack}`);
-                    //                         let packPic = await Canvas.loadImage(pack["pack"]);
-                    //                         ctx.drawImage(packPic, rewardPlacement[y].x, rewardPlacement[y].y, 172, 105);
-                    //                         break;
-                    //                     default:
-                    //                         break;
-                    //                 }
-                    //             }
-                    //             if (event.roster[y].reward.trophies) {
-                    //                 ctx.fillStyle = "#ff9c0d";
-                    //                 ctx.fillText(event.roster[y].reward.trophies, rewardPlacement[y].x + 88, rewardPlacement[y].y + 95);
-                    //                 ctx.strokeText(event.roster[y].reward.trophies, rewardPlacement[y].x + 88, rewardPlacement[y].y + 95);
-                    //             }
-                    //         }
-                    //     }
-                    //     catch (error) {
-                    //         console.log(error);
-                    //         attachment = new Discord.MessageAttachment(failedToLoadImageLink, "event.png");
-                    //         cucked = true;
-                    //     }
-                    //     if (!cucked) {
-                    //         attachment = new Discord.MessageAttachment(canvas.toBuffer(), "event.png");
-                    //     }
-                    //     infoMessage.attachFiles(attachment);
-                    //     infoMessage.setImage("attachment://event.png");
-                    // }
-
                     const infoMessage = new InfoMessage({
                         channel: message.channel,
                         title: event.name,
                         desc: `This event's active status: **${event.isActive}**
                         Event ID: \`${event.eventID}\`
-                        Time Remaining: ${event.deadline.length > 10 ? `<t:${event.deadline.toUnixInteger() * 1000}:R>` : `\`${event.deadline}\``}`,
+                        Time Remaining: ${event.deadline.length > 9 ? `<t:${event.deadline.toUnixInteger() * 1000}:R>` : `\`${event.deadline}\``}`,
                         author: message.author,
                         image: event.background,
                         fields,
@@ -225,7 +158,7 @@ module.exports = {
                 let eventList = "";
                 for (let event of events) {
                     let intervalString = "";
-                    if (event.isActive && event.timeLeft !== "unlimited") {
+                    if (event.isActive && event.deadline !== "unlimited") {
                         let interval = Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(event.deadline));
                         if (interval.invalid === null) {
                             let days = Math.floor(interval.length("days"));

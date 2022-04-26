@@ -5,7 +5,7 @@ const carFiles = readdirSync("./src/cars").filter(file => file.endsWith('.json')
 const { SuccessMessage, ErrorMessage } = require("../classes/classes.js");
 const carNameGen = require("./carNameGen.js");
 
-function setFilter(message, filter, args) {
+function editFilter(message, filter, args) {
     const criteria = format(args[0]),
         arg1 = typeof args[1] === "object" ? args[1] : args[1].toLowerCase(),
         arg2 = args[2]?.toLowerCase();
@@ -334,4 +334,4 @@ function setFilter(message, filter, args) {
     }
 }
 
-module.exports = setFilter;
+module.exports = editFilter;

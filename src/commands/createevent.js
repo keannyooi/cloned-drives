@@ -48,7 +48,7 @@ module.exports = {
         const roster = [], upgrades = ["000", "333", "666", "699", "969", "996"];
         for (let opponent of opponentIDs) {
             roster.push({
-                car: opponent,
+                carID: opponent,
                 upgrade: upgrades[Math.floor(Math.random() * upgrades.length)],
                 track: tracks[Math.floor(Math.random() * tracks.length)].slice(0, 6),
                 reqs: {},
@@ -59,7 +59,8 @@ module.exports = {
         await eventModel.create({
             eventID: `evnt${totalEvents + 1}`,
             name: eventName,
-            roster
+            roster,
+            playerProgress: {}
         });
 
         const successMessage = new SuccessMessage({

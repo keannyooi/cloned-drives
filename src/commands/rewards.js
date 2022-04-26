@@ -27,44 +27,35 @@ module.exports = {
                 switch (Object.keys(reward)[0]) {
                     case "money":
                         playerData.money += reward.money;
-                        line = `Received **${moneyEmoji}${reward.money}** from **${origin}**\n`
+                        line = `Received **${moneyEmoji}${reward.money}** from **${origin}**\n`;
                         break;
                     case "fuseTokens":
                         playerData.fuseTokens += reward.fuseTokens;
-                        line = `Received **${fuseEmoji}${reward.fuseTokens}** from **${origin}**\n`
+                        line = `Received **${fuseEmoji}${reward.fuseTokens}** from **${origin}**\n`;
                         break;
                     case "trophies":
                         playerData.trophies += reward.trophies;
-                        line = `Received **${trophyEmoji}${reward.trophies}** from **${origin}**\n`
+                        line = `Received **${trophyEmoji}${reward.trophies}** from **${origin}**\n`;
                         break;
-                    case "cars":
-                        playerData.garage = addCars(playerData.garage, reward.cars);
-
-                        let carList = "";
-                        for (let { carID, upgrade, amount } of reward.cars) {
-                            let currentCar = require(`./cars/${carID}.json`);
-                            carList += `${amount}x ${carNameGen({ currentCar, rarity: true, upgrade })}`
-                        }
-                        line = `Received **${carList}** from **${origin}**\n`
+                    case "car":
+                        let currentCar = require(`../cars/${reward.car.carID}.json`);
+                        playerData.garage = addCars(playerData.garage, [reward.car]);
+                        line = `Received **1x ${carNameGen({ currentCar, rarity: true, upgrade: reward.car.upgrade })}** from **${origin}**\n`;
                         break;
-                    case "packs":
-                        let packList = "";
-                        for (let packID of reward.packs) {
-                            let pack = require(`./packs/${packID}.json`);
-                            let addedCars = await openPack(message, pack);
-                            if (!Array.isArray(addedCars)) return;
+                    case "pack":
+                        let pack = require(`../packs/${reward.pack}.json`);
+                        let addedCars = await openPack(message, pack);
+                        if (!Array.isArray(addedCars)) return;
 
-                            playerData.garage = addCars(playerData.garage, addedCars);
-                            packList += `1x ${pack["packName"]}`;
-                        }
-                        line = `Received **${packList}** from **${origin}**\n`
+                        playerData.garage = addCars(playerData.garage, addedCars);
+                        line = `Received **1x ${pack["packName"]}** from **${origin}**\n`;
                         break;
                     default:
                         break;
                 }
 
                 if (rewardLog.length + line.length < 4096) { // discord embed desc limit
-                    rewardLog += `Received **${moneyEmoji}${reward.money}** from **${origin}**\n`;
+                    rewardLog += line;
                 }
                 else if (!limitExceeded) {
                     limitExceeded = true;

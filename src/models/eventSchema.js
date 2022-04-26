@@ -9,6 +9,7 @@ const eventSchema = new Schema({
     isVIP: { type: Boolean, default: false },
     deadline: { type: String, default: "unlimited" },
     roster: Array,
+    playerProgress: Object
 }, { minimize: false });
 
 const eventModel = model("Events", eventSchema);

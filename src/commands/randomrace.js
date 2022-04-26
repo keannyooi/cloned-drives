@@ -82,7 +82,6 @@ module.exports = {
         let processed = false;
         const reactionMessage = await intermission.sendMessage({ buttons: [row], preserve: true });
         const collector = message.channel.createMessageComponentCollector({ filter, time: defaultChoiceTime });
-
         collector.on("collect", async (button) => {
             if (!processed) {
                 processed = true;
@@ -144,7 +143,7 @@ module.exports = {
                                 "rrStats.streak": streak,
                                 "rrStats.highestStreak": highestStreak
                             },
-                            unclaimedRewards: unclaimedRewards
+                            unclaimedRewards
                         });
                         return bot.deleteID(message.author.id);
                     case "nop":

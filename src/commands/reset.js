@@ -10,7 +10,7 @@ const profileModel = require("../models/profileSchema.js");
 module.exports = {
     name: "reset",
     aliases: ["rs", "noneandquitthegame"],
-    usage: ["<username> <what to reset>"],
+    usage: ["<username> <money / fusetokens / trophies / garage / all>"],
     args: 2,
     category: "Admin",
     description: "Resets your stats.",

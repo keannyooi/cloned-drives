@@ -29,7 +29,7 @@ class Bot extends Client {
         await Promise.all([
             loadImage("https://cdn.discordapp.com/attachments/716917404868935691/795177817116901386/race_template_thing.png"),
             loadImage("https://cdn.discordapp.com/attachments/715771423779455077/799579880819785778/unknown.png"),
-            loadImage("https://cdn.discordapp.com/attachments/716917404868935691/801292983496474624/test.png"),
+            loadImage("https://cdn.discordapp.com/attachments/716917404868935691/966636049809932288/unknown.png"),
             loadImage("https://cdn.discordapp.com/attachments/716917404868935691/744882896828891136/deck_screen.png"),
             loadImage("https://cdn.discordapp.com/attachments/715771423779455077/848829168234135552/deck_thing.png")
         ])
