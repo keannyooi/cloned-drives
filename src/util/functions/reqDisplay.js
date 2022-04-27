@@ -1,21 +1,54 @@
 const action = {
+	rq: arg => {
+        let { start, end } = arg;
+        if (start === end) return `RQ${start} `;
+        else return `RQ${start} ~ ${end} `;
+    },
     modelYear: arg => {
         let { start, end } = arg;
         if (start % 10 === 0 && end === start + 9) return `${start}s `;
+		else if (start === end) return `${start} `;
         else return `${start} ~ ${end} `;
     },
+	country: country => `${country.toUpperCase()} `,
+	enginePos: enginePos => `${enginePos[0].toUpperCase() + enginePos.slice(1, enginePos.length)}-Engine `,
+	driveType: drive => `${drive.toUpperCase()} `,
+	gc: gc => `${gc[0].toUpperCase() + gc.slice(1, gc.length)}-GC `,
+	seatCount: arg => {
+        let { start, end } = arg;
+        if (start === end) return `${start}-Seat `;
+        else return `${start} ~ ${end}-Seat `;
+    },
+	fuelType: fuel => `${fuel[0].toUpperCase() + fuel.slice(1, fuel.length)} `,
+	bodyStyle: bodyTypes => `${bodyTypes.join(" + ").split(" ").map(i => i[0].toUpperCase() + i.slice(1, i.length)).join(" ")} `,
+	tags: tags => `${tags.join(" + ").split(" ").map(i => i[0].toUpperCase() + i.slice(1, i.length)).join(" ")} `,
     isPrize: isPrize => {
         if (isPrize === false) return "Non-Prize ";
         else return "";
     },
-    make: make => {
-        return `${make} `;
-    },
-    search: keyword => {
-        return `${keyword} `;
-    }
+    make: makes => {
+		makes = makes.map(make => {
+			let getExample = carFiles.find(function (carFile) {
+	            let currentCar = require(`../../cars/${carFile}`);
+	            if (Array.isArray(currentCar["make"])) {
+	                return currentCar["make"].some(tag => tag.toLowerCase() === make.toLowerCase());
+	            }
+	            else {
+	                return currentCar["make"].toLowerCase() === make.toLowerCase();
+	            }
+			});
+			if (Array.isArray(getExample["make"])) {
+				return getExample.find(i => i.toLowerCase() === make.toLowerCase());
+			}
+			else {
+				return getExample["make"];
+			}
+		});
+		return `${makes.join(" + ").split(" ").map(i => i[0].toUpperCase() + i.slice(1, i.length)).join(" ")} `;
+	},
+    search: keyword => `${keyword.split(" ").map(i => i[0].toUpperCase() + i.slice(1, i.length)).join(" ")} `
 }
-const order = ["modelYear", "country", "enginePos", "driveType", "gc", "seatCount", "fuelType", "tags", "isPrize", "make", "search"];
+const order = ["rq", "modelYear", "country", "enginePos", "driveType", "gc", "seatCount", "fuelType", "bodyStyle", "tags", "isPrize", "make", "search"];
 
 function reqDisplay(reqs) {
     let str = "";
