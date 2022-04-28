@@ -8,6 +8,7 @@ const tracks = readdirSync("./src/tracks").filter(file => file.endsWith(".json")
 const { InfoMessage } = require("../util/classes/classes.js");
 const { defaultChoiceTime, moneyEmojiID } = require("../util/consts/consts.js");
 const getButtons = require("../util/functions/getButtons.js");
+const reqDisplay = require("../util/functions/reqDisplay.js");
 const race = require("../util/functions/race.js");
 const createCar = require("../util/functions/createCar.js");
 const filterCheck = require("../util/functions/filterCheck.js");
@@ -33,33 +34,6 @@ module.exports = {
         }
 
         const filter = (button) => button.user.id === message.author.id;
-        let reqList = "";
-        for (let [key, value] of Object.entries(reqs)) {
-            switch (typeof value) {
-                case "object":
-                    reqList += `\`${key}: ${value.start} ~ ${value.end}\`, `;
-                    break;
-                case "string":
-                case "boolean":
-                case "number":
-                    if (key === "rq") {
-                        reqList += `\`${key}: 1 ~ ${value}\`, `;
-                    }
-                    else {
-                        reqList += `\`${key}: ${value}\`, `;
-                    }
-                    break;
-                default:
-                    break;
-            }
-        }
-        if (reqList.length === 0) {
-            reqList = "Open Match";
-        }
-        else {
-            reqList = reqList.slice(0, -2);
-        }
-
         const track = require(`../tracks/${trackID}.json`);
         const [playerCar, playerList] = createCar(hand);
         const [opponentCar, opponentList] = createCar(opponent);
@@ -69,7 +43,7 @@ module.exports = {
         const intermission = new InfoMessage({
             channel: message.channel,
             title: "Ready to Play?",
-            desc: `Track: ${track["trackName"]}, Requirements: ${reqList}`,
+            desc: `Track: ${track["trackName"]}, Requirements: ${reqDisplay(reqs)}`,
             author: message.author,
             thumbnail: track["map"],
             fields: [

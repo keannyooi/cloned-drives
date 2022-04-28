@@ -3,10 +3,12 @@
 const bot = require("../config/config.js");
 const { DateTime, Interval } = require("luxon");
 const { ErrorMessage, InfoMessage } = require("../util/classes/classes.js");
-const { eventMakerRoleID } = require("../util/consts/consts.js");
+const { eventMakerRoleID, defaultPageLimit } = require("../util/consts/consts.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const listUpdate = require("../util/functions/listUpdate.js");
 const listRewards = require("../util/functions/listRewards.js");
+const reqDisplay = require("../util/functions/reqDisplay.js");
+const timeDisplay = require("../util/functions/timeDisplay.js");
 const search = require("../util/functions/search.js");
 const profileModel = require("../models/profileSchema.js");
 const eventModel = require("../models/eventSchema.js");
@@ -57,12 +59,12 @@ module.exports = {
 
         async function viewEvent(event, page, currentMessage) {
             const guildMember = await bot.homeGuild.members.fetch(message.author.id);
-            console.log(event);
+            // console.log(event);
 
             if (event.isActive || guildMember.roles.cache.has(eventMakerRoleID)) {
                 const { settings } = await profileModel.findOne({ userID: message.author.id });
                 let list = event.roster;
-                const totalPages = Math.ceil(list.length / 10);
+                const totalPages = Math.ceil(list.length / defaultPageLimit);
                 if (page < 1 || totalPages < page) {
                     const errorMessage = new ErrorMessage({
                         channel: message.channel,
@@ -83,46 +85,15 @@ module.exports = {
                 function listDisplay(section, page, totalPages) {
                     const fields = [];
                     for (let i = 0; i < section.length; i++) {
-                        let round = (page - 1) * 10 + i + 1;
+                        let round = (page - 1) * defaultPageLimit + i + 1;
                         let currentCar = require(`../cars/${section[i].carID}`);
                         let track = require(`../tracks/${section[i].track}`);
-                        let reqString = "";
-                        for (const [key, value] of Object.entries(section[i].reqs)) {
-                            switch (typeof value) {
-                                case "object":
-                                    if (Array.isArray(value)) {
-                                        reqString += `\`${key}: ${value.join(" and ")}\`, `;
-                                    }
-                                    else {
-                                        reqString += `\`${key}: ${value.start} - ${value.end}\`, `;
-                                    }
-                                    break;
-                                case "boolean":
-                                case "string":
-                                    if (key === "car") {
-                                        let reqCar = require(`../cars/${value}`);
-                                        reqString += `\`${key}: ${carNameGen({ currentCar: reqCar, rarity: true })}\`, `;
-                                    }
-                                    else {
-                                        reqString += `\`${key}: ${value}\`, `;
-                                    }
-                                    break;
-                                default:
-                                    break;
-                            }
-                        }
-                        if (reqString === "") {
-                            reqString = "Open Match";
-                        }
-                        else {
-                            reqString = reqString.slice(0, -2);
-                        }
 
                         fields.push({
                             name: `Round ${round} ${round < event.playerProgress[message.author.id] ? "✅" : ""}`,
                             value: `Car: ${carNameGen({ currentCar, rarity: true, upgrade: section[i].upgrade })}
                             Track: ${track["trackName"]}
-                            Reqs: ${reqString}
+                            Reqs: ${reqDisplay(section[i].reqs)}
                             Reward: ${listRewards(section[i].rewards)}`,
                             inline: true
                         });
@@ -130,12 +101,10 @@ module.exports = {
 
                     const infoMessage = new InfoMessage({
                         channel: message.channel,
-                        title: event.name,
-                        desc: `This event's active status: **${event.isActive}**
-                        Event ID: \`${event.eventID}\`
-                        Time Remaining: ${event.deadline.length > 9 ? `<t:${event.deadline.toUnixInteger() * 1000}:R>` : `\`${event.deadline}\``}`,
+                        title: `${event.name} \`(${event.eventID})\``,
+                        desc: `**This event is ${event.isActive ? "active!" : "not active."}**
+                        Time Remaining: ${event.deadline.length > 9 ? `\`${timeDisplay(Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(event.deadline)))}\`` : `\`${event.deadline}\``}`,
                         author: message.author,
-                        image: event.background,
                         fields,
                         footer: `Page ${page} of ${totalPages} - Interact with the buttons below to navigate through pages.`
                     });
@@ -161,11 +130,7 @@ module.exports = {
                     if (event.isActive && event.deadline !== "unlimited") {
                         let interval = Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(event.deadline));
                         if (interval.invalid === null) {
-                            let days = Math.floor(interval.length("days"));
-                            let hours = Math.floor(interval.length("hours") - (days * 24));
-                            let minutes = Math.floor(interval.length("minutes") - (days * 1440) - (hours * 60));
-                            let seconds = Math.floor(interval.length("seconds") - (days * 86400) - (hours * 3600) - (minutes * 60));
-                            intervalString = `\`${days}d ${hours}h ${minutes}m ${seconds}s\``;
+                            intervalString = timeDisplay(interval);
                         }
                         else {
                             intervalString = `\`currently ending, no longer playable\`\n`;

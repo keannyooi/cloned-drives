@@ -38,7 +38,7 @@ module.exports = {
             await confirm(message, confirmationMessage, acceptedFunction, settings.buttonstyle, currentMessage);
 
             async function acceptedFunction(currentMessage) {
-                await eventModel.deleteOne({ eventID: event.eventID });
+                await endEvent(event);
                 const successMessage = new SuccessMessage({
                     channel: message.channel,
                     title: `Successfully ended the ${event.name} event!`,

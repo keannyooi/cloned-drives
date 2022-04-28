@@ -7,6 +7,7 @@ const { eventMakerRoleID } = require("../util/consts/consts.js");
 const createCar = require("../util/functions/createCar.js");
 const confirm = require("../util/functions/confirm.js");
 const filterCheck = require("../util/functions/filterCheck.js");
+const reqDisplay = require("../util/functions/reqDisplay.js");
 const race = require("../util/functions/race.js");
 const search = require("../util/functions/search.js");
 const handMissingError = require("../util/commonerrors/handMissingError.js");
@@ -18,7 +19,7 @@ module.exports = {
     aliases: ["pe"],
     usage: "<event name>",
     args: 1,
-    category: "Gameplay",
+    category: "Testing", // Gameplay
     cooldown: 10,
     description: "Participates in an event by doing a race.",
     async execute(message, args) {
@@ -69,37 +70,10 @@ module.exports = {
                 const [playerCar, playerList] = createCar(hand);
                 const [opponentCar, opponentList] = createCar(event.roster[round - 1]);
 
-                let reqList = "";
-                for (let [key, value] of Object.entries(event.roster[round - 1].reqs)) {
-                    switch (typeof value) {
-                        case "object":
-                            reqList += `\`${key}: ${value.start} ~ ${value.end}\`, `;
-                            break;
-                        case "string":
-                        case "boolean":
-                        case "number":
-                            if (key === "rq") {
-                                reqList += `\`${key}: 1 ~ ${value}\`, `;
-                            }
-                            else {
-                                reqList += `\`${key}: ${value}\`, `;
-                            }
-                            break;
-                        default:
-                            break;
-                    }
-                }
-                if (reqList.length === 0) {
-                    reqList = "Open Match";
-                }
-                else {
-                    reqList = reqList.slice(0, -2);
-                }
-
                 const intermission = new InfoMessage({
                     channel: message.channel,
                     title: "Ready to Play?",
-                    desc: `Track: ${track["trackName"]}, Requirements: ${reqList}`,
+                    desc: `Track: ${track["trackName"]}, Requirements: ${reqDisplay(event.roster[round - 1].reqs)}`,
                     author: message.author,
                     thumbnail: track["map"],
                     fields: [

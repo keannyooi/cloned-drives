@@ -2,14 +2,15 @@
 //devMode switch is in config.js
 
 require("dotenv").config();
+const bot = require("./src/config/config.js");
 const { readdirSync } = require("fs");
 const { Collection } = require("discord.js");
 const { connect } = require("mongoose");
 const { DateTime, Interval } = require("luxon");
 const { ErrorMessage, InfoMessage, BotError } = require("./src/util/classes/classes.js");
 const { adminRoleID, eventMakerRoleID, testerRoleID } = require("./src/util/consts/consts.js");
-const bot = require("./src/config/config.js");
 const profileModel = require("./src/models/profileSchema.js");
+const eventModel = require("./src/models/eventSchema.js");
 const prefix = bot.devMode ? process.env.DEV_PREFIX : process.env.BOT_PREFIX;
 const token = bot.devMode ? process.env.DEV_TOKEN : process.env.BOT_TOKEN;
 const commandFiles = readdirSync("./src/commands").filter(file => file.endsWith(".js"));
@@ -80,15 +81,12 @@ process.on("uncaughtException", async error => {
 
 // loop thingy
 setInterval(async () => {
-	// const events = await bot.db.get("events");
-	// for (const [key, value] of Object.entries(events)) {
-	// 	if (key.startsWith("evnt") && value.timeLeft !== "unlimited" && value.isActive === true) {
-	// 		if (Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(value.deadline)).invalid !== null) {
-	// 			await bot.db.delete(`events.evnt${value.id}`);
-	// 			bot.channels.cache.get("798776756952629298").send(`**The ${value.name} event has officially finished. Thanks for playing!**`);
-	// 		}
-	// 	}
-	// }
+	const events = await eventModel.find({ isActive: true });
+	for (let event of events) {
+		if (event.deadline !== "unlimited" && Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(event.deadline)).invalid !== null) {
+			await endEvent(event);
+		}
+	}
 	// const offers = await bot.db.get("limitedOffers");
 	// for (let i = 0; i < offers.length; i++) {
 	// 	if (offers[i].timeLeft !== "unlimited" && offers[i].isActive === true) {

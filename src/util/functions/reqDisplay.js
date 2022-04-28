@@ -1,3 +1,8 @@
+"use strict";
+
+const { readdirSync } = require("fs");
+const carFiles = readdirSync("./src/cars").filter(file => file.endsWith(".json"));
+
 const action = {
     rq: arg => {
         let { start, end } = arg;
@@ -27,24 +32,26 @@ const action = {
         else return "";
     },
     make: makes => {
-	makes = makes.map(make => {
-	    let getExample = carFiles.find(function (carFile) {
-	        let currentCar = require(`../../cars/${carFile}`);
-	        if (Array.isArray(currentCar["make"])) {
-	            return currentCar["make"].some(tag => tag.toLowerCase() === make.toLowerCase());
-	        }
-		else {
-	            return currentCar["make"].toLowerCase() === make.toLowerCase();
-	        }
-	    });
-	    if (Array.isArray(getExample["make"])) {
-		return getExample.find(i => i.toLowerCase() === make.toLowerCase());
-	    }
-	    else {
-		return getExample["make"];
-	    }
-	});
-	return `${makes.join(" + ").split(" ").map(i => i[0].toUpperCase() + i.slice(1, i.length)).join(" ")} `;
+        makes = makes.map(make => {
+            let getExample = carFiles.find(carFile => {
+                let currentCar = require(`../../cars/${carFile}`);
+                if (Array.isArray(currentCar["make"])) {
+                    return currentCar["make"].some(tag => tag.toLowerCase() === make.toLowerCase());
+                }
+                else {
+                    return currentCar["make"].toLowerCase() === make.toLowerCase();
+                }
+            });
+            
+            let car = require(`../../cars/${getExample}`);
+            if (Array.isArray(car["make"])) {
+                return car.find(i => i.toLowerCase() === make.toLowerCase());
+            }
+            else {
+                return car["make"];
+            }
+        });
+        return `${makes.join(" + ").split(" ").map(i => i[0].toUpperCase() + i.slice(1, i.length)).join(" ")} `;
     },
     search: keyword => `${keyword.split(" ").map(i => i[0].toUpperCase() + i.slice(1, i.length)).join(" ")} `
 }
@@ -57,7 +64,8 @@ function reqDisplay(reqs) {
             str += action[criteria](reqs[criteria]);
         }
     }
-    return str.slice(0, -1);
+    if (Object.keys(reqs).length === 0) return "Open Match";
+    else return str.slice(0, -1);
 }
 
 module.exports = reqDisplay;
