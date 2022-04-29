@@ -2,7 +2,7 @@
 	"packName": "SUV Pack",
 	"description": "A pack full of the average car enthusiast's worst nightmare: SUVs.",
 	"repetition": 1,
-	"pack": "https://cdn.discordapp.com/attachments/800047734035841037/848119637153808384/Standardpack.png",
+	"pack": "https://cdn.discordapp.com/attachments/956106029635088384/956106386369024000/Standard_Pack.png",
 	
 	"filter": {
 		"make": "None",
@@ -22,8 +22,8 @@
 
 	"packSequence": [
 		{
-			"common": 0,
-			"uncommon": 100,
+			"common": 70,
+			"uncommon": 30,
 			"rare": 0,
 			"superRare": 0,
 			"ultraRare": 0,
