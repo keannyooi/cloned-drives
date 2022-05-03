@@ -1,0 +1,18 @@
+{
+	"trackName": "Tokyo City Streets Parking Lot (Rainy)",
+	"weather": "Rainy",
+	"surface": "Asphalt",
+	"speedbumps": 3,
+	"humps": 0,
+	"background": "https://cdn.discordapp.com/attachments/800047734035841037/969565307800784906/hukhkhu.png",
+	"map": "https://cdn.discordapp.com/attachments/800047734035841037/969564992464625694/citytopackinlot.png",
+	
+	"specsDistr": {
+		"topSpeed": 0,
+		"0to60": 80,
+		"handling": 100,
+		"weight": 10,
+		"mra": 45,
+		"ola": 5
+	}
+}

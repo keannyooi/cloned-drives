@@ -1,0 +1,18 @@
+{
+	"trackName": "River Crossing Downstream",
+	"weather": "Sunny",
+	"surface": "Dirt",
+	"speedbumps": 5,
+	"humps": 15,
+	"background": "https://cdn.discordapp.com/attachments/800047734035841037/969551639436492830/9a409ce72418d1eba1399e326b30f32b.jpg",
+	"map": "https://cdn.discordapp.com/attachments/800047734035841037/969551653869064202/riverdownstrem.png",
+	
+	"specsDistr": {
+		"topSpeed": 5,
+		"0to60": 100,
+		"handling": 40,
+		"weight": 0,
+		"mra": 5,
+		"ola": 30
+	}
+}

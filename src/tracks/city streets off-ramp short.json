@@ -1,0 +1,18 @@
+{
+	"trackName": "City Streets Off-Ramp Short",
+	"weather": "Sunny",
+	"surface": "Asphalt",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://cdn.discordapp.com/attachments/800047734035841037/969554119339683890/york-bay-off-ramp2x.jpg",
+	"map": "https://cdn.discordapp.com/attachments/800047734035841037/969554100347863080/offrampshort.png",
+	
+	"specsDistr": {
+		"topSpeed": 5,
+		"0to60": 100,
+		"handling": 100,
+		"weight": 0,
+		"mra": 20,
+		"ola": 0
+	}
+}
