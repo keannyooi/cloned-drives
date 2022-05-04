@@ -58,7 +58,7 @@ function createCar(currentCar, unitPreference) {
     }
 
     carSpecs += `Ground Clearance: ${carModule.gc}
-    TCS: ${carModule.tcs}, ABS: ${carModule.abs}\n`;
+    ${carModule.tcs ? "✅" : "❎"} TCS, ${carModule.abs ? "✅" : "❎"} ABS\n`;
     if (carModule.topSpeed < 100) {
         carModule.mra = 0;
         carSpecs += "MRA: N/A\n";

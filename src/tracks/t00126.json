@@ -1,0 +1,18 @@
+{
+	"trackName": "Shuto Expressway - BayShore Route",
+	"weather": "Sunny",
+	"surface": "Asphalt",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://cdn.discordapp.com/attachments/800047734035841037/867733420276973588/chrome_p25duYoswH.png",
+	"map": "https://cdn.discordapp.com/attachments/800047734035841037/867733121041563678/BayShore_Route_Wangan-Sen.png",
+	
+	"specsDistr": {
+		"topSpeed": 100,
+		"0to60": 20,
+		"handling": 40,
+		"weight": 0,
+		"mra": 100,
+		"ola": 0
+	}
+}

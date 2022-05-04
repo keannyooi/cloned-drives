@@ -1,0 +1,18 @@
+{
+	"trackName": "Akina Pass Downhill (Rainy)",
+	"weather": "Rainy",
+	"surface": "Asphalt",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://cdn.discordapp.com/attachments/800047734035841037/867731543669080134/chrome_7EVqK2SG67.png",
+	"map": "https://cdn.discordapp.com/attachments/800047734035841037/867730777625460746/akina.png",
+	
+	"specsDistr": {
+		"topSpeed": 0,
+		"0to60": 70,
+		"handling": 80,
+		"weight": 90,
+		"mra": 30,
+		"ola": 10
+	}
+}

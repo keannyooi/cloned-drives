@@ -19,14 +19,14 @@ async function processResults(message, searchResults, listGen, type, currentMess
             return errorMessage.sendMessage({ currentMessage });
         }
 
-        const infoScreen = new InfoMessage({
+        const infoMessage = new InfoMessage({
             channel: message.channel,
             title: "Multiple results found, please type one of the following.",
             desc: list,
             author: message.author,
             footer: `You have been given ${defaultWaitTime / 1000} seconds to decide.`
         });
-        currentMessage = await infoScreen.sendMessage({ currentMessage, preserve: true });
+        currentMessage = await infoMessage.sendMessage({ currentMessage, preserve: true });
 
         try {
             const collected = await message.channel.awaitMessages({
@@ -82,6 +82,9 @@ async function processResults(message, searchResults, listGen, type, currentMess
     }
     else {
         throw ((query, searchList) => {
+            if (searchList.length === 0) {
+                searchList.push("(none found)");
+            }
             const errorMessage = new ErrorMessage({
                 channel: message.channel,
                 title: "Error, query provided yielded no results.",

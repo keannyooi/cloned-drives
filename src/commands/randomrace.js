@@ -43,7 +43,7 @@ module.exports = {
         const intermission = new InfoMessage({
             channel: message.channel,
             title: "Ready to Play?",
-            desc: `Track: ${track["trackName"]}, Requirements: ${reqDisplay(reqs)}`,
+            desc: `Track: ${track["trackName"]}, Requirements: \`${reqDisplay(reqs)}\``,
             author: message.author,
             thumbnail: track["map"],
             fields: [
@@ -198,9 +198,10 @@ module.exports = {
                 let reqCar = require(`../cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
                 switch (req) {
                     case "bodyStyle":
-                        criteria[req] = [reqCar[req].toLowerCase()];
+                        criteria[req] = Array.isArray(reqCar[req]) ? [reqCar[req][0].toLowerCase()] : [reqCar[req].toLowerCase()];
+                        break;
                     case "seatCount":
-                        criteria[req] = reqCar[req];
+                        criteria[req] = { start: reqCar[req], end: reqCar[req] + 1 };
                         break;
                     case "modelYear":
                         let myStart = 1960 + (Math.floor(Math.random() * 6) * 10);
@@ -221,12 +222,7 @@ module.exports = {
                 switch (req) {
                     case "make":
                     case "tags":
-                        if (Array.isArray(reqCar[req])) {
-                            criteria[req] = [reqCar[req][0].toLowerCase()];
-                        }
-                        else {
-                            criteria[req] = [reqCar[req].toLowerCase()];
-                        }
+                        criteria[req] = Array.isArray(reqCar[req]) ? [reqCar[req][0].toLowerCase()] : [reqCar[req].toLowerCase()];
                         break;
                     case "gc":
                         criteria[req] = reqCar[req].toLowerCase();

@@ -5,32 +5,32 @@ const { defaultChoiceTime } = require("../util/consts/consts.js");
 const confirm = require("../util/functions/confirm.js");
 const search = require("../util/functions/search.js");
 const profileModel = require("../models/profileSchema.js");
-const eventModel = require("../models/eventSchema.js");
+const offerModel = require("../models/offerSchema.js");
 
 module.exports = {
-    name: "endevent",
-    aliases: ["removeevent", "rmvevent"],
-    usage: ["<event name>"],
+    name: "endoffer",
+    aliases: ["removeoffer", "rmvoffer"],
+    usage: ["<offer name>"],
     args: 1,
     category: "Events",
-    description: "Ends an ongoing event.",
+    description: "Ends an ongoing offer.",
     async execute(message, args) {
-        const events = await eventModel.find();
-        const eventName = args.map(arg => arg.toLowerCase());
-        await new Promise(resolve => resolve(search(message, eventName, events, "event")))
+        const offers = await offerModel.find();
+        let query = args.map(i => i.toLowerCase());
+        await new Promise(resolve => resolve(search(message, query, offers, "offer")))
             .then(async (response) => {
                 if (!Array.isArray(response)) return;
-                await endEvent(...response);
+                await endOffer(...response);
             })
             .catch(error => {
                 throw error;
             });
 
-        async function endEvent(event, currentMessage) {
+        async function endOffer(offer, currentMessage) {
             const { settings } = await profileModel.findOne({ userID: message.author.id });
             const confirmationMessage = new InfoMessage({
                 channel: message.channel,
-                title: `Are you sure you want to end the ${event.name} event?`,
+                title: `Are you sure you want to end the ${offer.name} offer?`,
                 desc: `You have been given ${defaultChoiceTime / 1000} seconds to consider.`,
                 author: message.author
             });
@@ -42,11 +42,11 @@ module.exports = {
             }
 
             async function acceptedFunction(currentMessage) {
-                const endEvent = require("../util/functions/endEvent.js");
-                await endEvent(event);
+                const endOffer = require("../util/functions/endOffer.js");
+                await endOffer(offer);
                 const successMessage = new SuccessMessage({
                     channel: message.channel,
-                    title: `Successfully ended the ${event.name} event!`,
+                    title: `Successfully ended the ${offer.name} offer!`,
                     author: message.author,
                 });
                 await successMessage.sendMessage({ currentMessage });

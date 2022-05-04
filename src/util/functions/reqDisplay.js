@@ -26,6 +26,7 @@ const action = {
     },
     fuelType: fuel => `${fuel[0].toUpperCase() + fuel.slice(1, fuel.length)} `,
     bodyStyle: bodyTypes => `${bodyTypes.join(" + ").split(" ").map(i => i[0].toUpperCase() + i.slice(1, i.length)).join(" ")} `,
+    tyreType: tyreType => `${tyreType.split("-").map(i => i[0].toUpperCase() + i.slice(1, i.length)).join(" ")}-Tyre `,
     tags: tags => `${tags.join(" + ").split(" ").map(i => i[0].toUpperCase() + i.slice(1, i.length)).join(" ")} `,
     isPrize: isPrize => {
         if (isPrize === false) return "Non-Prize ";
@@ -45,7 +46,7 @@ const action = {
             
             let car = require(`../../cars/${getExample}`);
             if (Array.isArray(car["make"])) {
-                return car.find(i => i.toLowerCase() === make.toLowerCase());
+                return car["make"].find(i => i.toLowerCase() === make.toLowerCase());
             }
             else {
                 return car["make"];
@@ -55,7 +56,7 @@ const action = {
     },
     search: keyword => `${keyword.split(" ").map(i => i[0].toUpperCase() + i.slice(1, i.length)).join(" ")} `
 }
-const order = ["rq", "modelYear", "country", "enginePos", "driveType", "gc", "seatCount", "fuelType", "bodyStyle", "tags", "isPrize", "make", "search"];
+const order = ["rq", "modelYear", "country", "enginePos", "driveType", "gc", "tyreType", "seatCount", "fuelType", "bodyStyle", "tags", "isPrize", "make", "search"];
 
 function reqDisplay(reqs) {
     let str = "";

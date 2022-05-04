@@ -16,9 +16,9 @@ const eventModel = require("../models/eventSchema.js");
 module.exports = {
     name: "events",
     aliases: ["e", "event"],
-    usage: ["[event name]"],
+    usage: ["[event name]", "[event name] [page number]"],
     args: 0,
-    category: "Testing", //Gameplay
+    category: "Gameplay",
     description: "Views all active and inactive events.",
     async execute(message, args) {
         const events = await eventModel.find();
@@ -40,11 +40,11 @@ module.exports = {
             return listMessage.sendMessage();
         }
         else {
-            let page = 1, query;
+            let page = 1;
             if (args.length > 1 && !isNaN(args[args.length - 1])) {
                 page = parseInt(args.pop());
             }
-            query = args.map(i => i.toLowerCase());
+            let query = args.map(i => i.toLowerCase());
 
             await new Promise(resolve => resolve(search(message, query, events, "event")))
                 .then(async (response) => {
@@ -59,12 +59,12 @@ module.exports = {
 
         async function viewEvent(event, page, currentMessage) {
             const guildMember = await bot.homeGuild.members.fetch(message.author.id);
-            // console.log(event);
+            console.log(event);
 
             if (event.isActive || guildMember.roles.cache.has(eventMakerRoleID)) {
                 const { settings } = await profileModel.findOne({ userID: message.author.id });
                 let list = event.roster;
-                const totalPages = Math.ceil(list.length / defaultPageLimit);
+                const totalPages = Math.ceil(list.length / (settings.listamount || defaultPageLimit));
                 if (page < 1 || totalPages < page) {
                     const errorMessage = new ErrorMessage({
                         channel: message.channel,
@@ -72,7 +72,7 @@ module.exports = {
                         desc: `The event view ends at page ${totalPages}.`,
                         author: message.author
                     }).displayClosest(page);
-                    return errorMessage.sendMessage();
+                    return errorMessage.sendMessage({ currentMessage });
                 }
 
                 try {
@@ -85,7 +85,7 @@ module.exports = {
                 function listDisplay(section, page, totalPages) {
                     const fields = [];
                     for (let i = 0; i < section.length; i++) {
-                        let round = (page - 1) * defaultPageLimit + i + 1;
+                        let round = (page - 1) * (settings.listamount || defaultPageLimit) + i + 1;
                         let currentCar = require(`../cars/${section[i].carID}`);
                         let track = require(`../tracks/${section[i].track}`);
 
@@ -93,7 +93,7 @@ module.exports = {
                             name: `Round ${round} ${round < event.playerProgress[message.author.id] ? "✅" : ""}`,
                             value: `Car: ${carNameGen({ currentCar, rarity: true, upgrade: section[i].upgrade })}
                             Track: ${track["trackName"]}
-                            Reqs: ${reqDisplay(section[i].reqs)}
+                            Reqs: \`${reqDisplay(section[i].reqs)}\`
                             Reward: ${listRewards(section[i].rewards)}`,
                             inline: true
                         });
@@ -101,9 +101,9 @@ module.exports = {
 
                     const infoMessage = new InfoMessage({
                         channel: message.channel,
-                        title: `${event.name} \`(${event.eventID})\``,
+                        title: `${event.name} \`(ID: ${event.eventID})\``,
                         desc: `**This event is ${event.isActive ? "active!" : "not active."}**
-                        Time Remaining: ${event.deadline.length > 9 ? `\`${timeDisplay(Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(event.deadline)))}\`` : `\`${event.deadline}\``}`,
+                        Time Remaining: \`${event.deadline.length > 9 ? timeDisplay(Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(event.deadline))) : event.deadline}\``,
                         author: message.author,
                         fields,
                         footer: `Page ${page} of ${totalPages} - Interact with the buttons below to navigate through pages.`
@@ -115,10 +115,10 @@ module.exports = {
                 const errorMessage = new ErrorMessage({
                     channel: message.channel,
                     title: "Error, you do not have the necessary role to view this event right now.",
-                    desc: "The event you are trying to view is not active currently. You may only view this event if you're an <@&917685033995751435>.",
+                    desc: `The event you are trying to view is not active currently. You may only view this event if you're an <@&${eventMakerRoleID}>.`,
                     author: message.author,
                 });
-                return errorMessage.sendMessage();
+                return errorMessage.sendMessage({ currentMessage });
             }
         }
 

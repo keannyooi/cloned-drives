@@ -129,6 +129,7 @@ const testerRoleID = "915846116656959538";
 
 const bugReportsChannelID = "750304569422250064";
 const currentEventsChannelID = "955467202138620014";
+const currentOffersChannelID = "969786587191849011";
 
 const moneyEmojiID = "726017235826770021";
 const fuseEmojiID = "726018658635218955";
@@ -162,6 +163,7 @@ module.exports = {
     moneyEmojiID,
     bugReportsChannelID,
     currentEventsChannelID,
+    currentOffersChannelID,
     fuseEmojiID,
     trophyEmojiID,
     glofEmojiID,

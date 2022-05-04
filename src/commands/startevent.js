@@ -3,14 +3,14 @@
 const bot = require("../config/config.js");
 const { MessageAttachment } = require("discord.js");
 const { DateTime } = require("luxon");
+const { registerFont, loadImage, createCanvas } = require("canvas");
 const { SuccessMessage, InfoMessage, ErrorMessage } = require("../util/classes/classes.js");
-const { currentEventsChannelID, defaultChoiceTime } = require("../util/consts/consts.js");
+const { currentEventsChannelID, defaultChoiceTime, failedToLoadImageLink, moneyEmojiID, fuseEmojiID, trophyEmojiID, glofEmojiID, packEmojiID } = require("../util/consts/consts.js");
 const confirm = require("../util/functions/confirm.js");
 const search = require("../util/functions/search.js");
 const reqDisplay = require("../util/functions/reqDisplay.js");
 const profileModel = require("../models/profileSchema.js");
 const eventModel = require("../models/eventSchema.js");
-const serverStatModel = require("../models/serverStatSchema.js");
 
 module.exports = {
     name: "startevent",
@@ -59,16 +59,16 @@ module.exports = {
                 }
 
                 registerFont("RobotoCondensed-Bold.ttf", { family: "Roboto Condensed" });
-                const canvas = createCanvas(903 * Math.ceil(roster.length / 5), 299 * (roster.length <= 5 ? roster.length : 5));
+                const canvas = createCanvas(903 * Math.ceil(event.roster.length / 5), 299 * (event.roster.length <= 5 ? event.roster.length : 5));
                 const ctx = canvas.getContext("2d");
                 let attachment, cucked = false;
 
                 try {
-                    let huds = roster.map(car => {
+                    let huds = event.roster.map(car => {
                         let currentCar = require(`../cars/${car.carID}`);
                         return loadImage(currentCar[`racehud${car.upgrade}`]);
                     });
-                    let maps = roster.map(track => {
+                    let maps = event.roster.map(track => {
                         let currentTrack = require(`../tracks/${track.track}`);
                         return loadImage(currentTrack["map"]);
                     });
@@ -76,7 +76,7 @@ module.exports = {
                     let mapPromises = await Promise.all(maps);
                     ctx.fillStyle = "#ffffff";
 
-                    for (let i = 0; i < roster.length; i++) {
+                    for (let i = 0; i < event.roster.length; i++) {
                         let baseX = Math.floor(i / 5) * 903;
                         let baseY = (i % 5) * 299;
 
@@ -88,7 +88,7 @@ module.exports = {
                         ctx.fillText(i + 1, baseX + 130, baseY + 41);
 
                         let x = 0;
-                        for await (let [key, value] of Object.entries(roster[i].rewards)) {
+                        for await (let [key, value] of Object.entries(event.roster[i].rewards)) {
                             let image;
                             switch (key) {
                                 case "money":
@@ -120,7 +120,7 @@ module.exports = {
                         ctx.textAlign = "center";
                         ctx.font = '30px "Roboto Condensed"';
                         let reqString = "";
-                        let words = reqDisplay(roster[i].reqs).split(" "), line = "", rowY = 0;
+                        let words = reqDisplay(event.roster[i].reqs).split(" "), line = "", rowY = 0;
                         for (let x = 0; x < words.length; x++) {
                             reqString = line + words[x] + " ";
                             let metrics = ctx.measureText(reqString);
@@ -145,11 +145,11 @@ module.exports = {
                 }
                 catch (error) {
                     console.log(error);
-                    attachment = new MessageAttachment(failedToLoadImageLink, "png");
+                    attachment = new MessageAttachment(failedToLoadImageLink, "event.png");
                     cucked = true;
                 }
                 if (!cucked) {
-                    attachment = new MessageAttachment(canvas.toBuffer(), "png");
+                    attachment = new MessageAttachment(canvas.toBuffer(), "event.png");
                 }
 
                 const successMessage = new SuccessMessage({
@@ -163,7 +163,6 @@ module.exports = {
                 });
 
                 await eventModel.updateOne({ eventID: event.eventID }, event);
-                await serverStatModel.updateOne({}, { "$inc": { totalEvents: 1 } });
                 return successMessage.sendMessage({ attachment, currentMessage });
             }
         }

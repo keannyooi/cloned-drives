@@ -1,0 +1,18 @@
+{
+	"trackName": "Okayama International Circuit",
+	"weather": "Sunny",
+	"surface": "Asphalt",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://cdn.discordapp.com/attachments/800047734035841037/921519454800715826/chrome_toeQhmvYhy.png",
+	"map": "https://cdn.discordapp.com/attachments/800047734035841037/921518777257041960/okayama.png",
+	
+	"specsDistr": {
+		"topSpeed": 20,
+		"0to60": 30,
+		"handling": 70,
+		"weight": 0,
+		"mra": 50,
+		"ola": 5
+	}
+}

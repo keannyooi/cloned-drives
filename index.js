@@ -9,8 +9,11 @@ const { connect } = require("mongoose");
 const { DateTime, Interval } = require("luxon");
 const { ErrorMessage, InfoMessage, BotError } = require("./src/util/classes/classes.js");
 const { adminRoleID, eventMakerRoleID, testerRoleID } = require("./src/util/consts/consts.js");
+const endEvent = require("./src/util/functions/endEvent.js");
+const endOffer = require("./src/util/functions/endOffer.js");
 const profileModel = require("./src/models/profileSchema.js");
 const eventModel = require("./src/models/eventSchema.js");
+const offerModel = require("./src/models/offerSchema.js");
 const prefix = bot.devMode ? process.env.DEV_PREFIX : process.env.BOT_PREFIX;
 const token = bot.devMode ? process.env.DEV_TOKEN : process.env.BOT_TOKEN;
 const commandFiles = readdirSync("./src/commands").filter(file => file.endsWith(".js"));
@@ -87,16 +90,13 @@ setInterval(async () => {
 			await endEvent(event);
 		}
 	}
-	// const offers = await bot.db.get("limitedOffers");
-	// for (let i = 0; i < offers.length; i++) {
-	// 	if (offers[i].timeLeft !== "unlimited" && offers[i].isActive === true) {
-	// 		if (Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(offers[i].deadline)).invalid !== null) {
-	// 			bot.channels.cache.get("798776756952629298").send(`**The ${offers[i].name} offer has officially ended.**`);
-	// 			offers.splice(i, 1);
-	// 		}
-	// 	}
-	// }
-	// await bot.db.set("limitedOffers", offers);
+
+	const offers = await offerModel.find({ isActive: true });
+	for (let offer of offers) {
+		if (offer.deadline !== "unlimited" && Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(offer.deadline)).invalid !== null) {
+			await endOffer(offer);
+		}
+	}
 	// const challenge = await bot.db.get("challenge");
 	// if (challenge.timeLeft !== "unlimited" && challenge.isActive === true) {
 	// 	if (Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(challenge.deadline)).invalid !== null) {

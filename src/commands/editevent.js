@@ -157,7 +157,7 @@ module.exports = {
                             else {
                                 let [carFile, currentMessage2] = response;
                                 currentMessage = currentMessage2;
-                                currentEvent.roster[index - 1].car = carFile.slice(0, 6);
+                                currentEvent.roster[index - 1].carID = carFile.slice(0, 6);
 
                                 let currentCar = require(`../cars/${carFile}`);
                                 successMessage = new SuccessMessage({
@@ -174,7 +174,7 @@ module.exports = {
                     break;
                 case "settune":
                     let upgrade = args[3];
-                    let currentCar = require(`../cars/${currentEvent.roster[index - 1].car}.json`);
+                    let currentCar = require(`../cars/${currentEvent.roster[index - 1].carID}.json`);
                     if (!currentCar[`racehud${upgrade}`]) {
                         const errorMessage = new ErrorMessage({
                             channel: message.channel,
@@ -318,7 +318,7 @@ module.exports = {
                                             channel: message.channel,
                                             title: `Successfully added 1 ${carNameGen({ currentCar: cardThing, rarity: true, upgrade })} to the rewards for round ${index}!`,
                                             author: message.author,
-                                            fields: [{ name: "Current Rewards", value: listRewards(currentEvent.roster[index - 1].rewards), inline: true }],
+                                            fields: [{ name: "Current Rewards", value: listRewards(currentEvent.roster[index - 1].rewards) }],
                                             image: cardThing[`racehud${upgrade}`]
                                         });
                                     }
@@ -344,7 +344,7 @@ module.exports = {
                                             channel: message.channel,
                                             title: `Successfully added 1 ${currentPack["packName"]} to the rewards for round ${index}!`,
                                             author: message.author,
-                                            fields: [{ name: "Current Rewards", value: listRewards(currentEvent.roster[index - 1].rewards), inline: true }],
+                                            fields: [{ name: "Current Rewards", value: listRewards(currentEvent.roster[index - 1].rewards) }],
                                             image: currentPack["pack"]
                                         });
                                     }

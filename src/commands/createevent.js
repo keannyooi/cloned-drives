@@ -16,8 +16,8 @@ module.exports = {
     category: "Events",
     description: "Creates an event with the name of your choice.",
     async execute(message, args) {
-        const { totalEvents } = await serverStatModel.findOne({});
         const events = await eventModel.find();
+        const { totalEvents } = await serverStatModel.findOne({});
         const eventName = args.splice(1, args.length).join(" ");
         if (isNaN(args[0]) || parseInt(args[0]) < 1 || parseInt(args[0]) > 30) {
             const errorMessage = new ErrorMessage({
@@ -55,13 +55,12 @@ module.exports = {
                 rewards: {}
             });
         }
-
         await eventModel.create({
             eventID: `evnt${totalEvents + 1}`,
             name: eventName,
-            roster,
-            playerProgress: {}
+            roster
         });
+        await serverStatModel.updateOne({}, { "$inc": { totalEvents: 1 } });
 
         const successMessage = new SuccessMessage({
             channel: message.channel,

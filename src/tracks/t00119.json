@@ -1,0 +1,18 @@
+{
+	"trackName": "Imperial Palace Sprint",
+	"weather": "Sunny",
+	"surface": "Asphalt",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://cdn.discordapp.com/attachments/800047734035841037/969552449532751932/photo_l.jpg",
+	"map": "https://cdn.discordapp.com/attachments/800047734035841037/969552462891589632/imperialpalaceJPsprint.png",
+	
+	"specsDistr": {
+		"topSpeed": 40,
+		"0to60": 70,
+		"handling": 70,
+		"weight": 0,
+		"mra": 25,
+		"ola": 0
+	}
+}

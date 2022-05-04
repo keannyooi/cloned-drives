@@ -7,9 +7,9 @@ module.exports = {
     aliases: ["calc", "cal"],
     usage: [
         "handling <skidpad value>",
-        "mra <0-60mph time> | <0-100mph time>",
-        "ola <0-30mph time> | <0-60mph time>",
-        "handlingest <original skidpad value> | <original 0-60mph time> | <new 0-60mph time> | <original weight (kg)> | <new weight (kg)>",
+        "mra <0-60mph time> <0-100mph time>",
+        "ola <0-30mph time> <0-60mph time>",
+        "handlingest <original skidpad value> <original 0-60mph time> <new 0-60mph time> <original weight (kg)> <new weight (kg)>",
         "average <value 1> <value 2> <value 3> <...etc>"
     ],
     args: 2,

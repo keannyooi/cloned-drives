@@ -3,6 +3,9 @@
 const bot = require("../../config/config.js");
 const { InfoMessage } = require("../classes/classes.js");
 const { currentEventsChannelID } = require("../consts/consts.js");
+const carNameGen = require("./carNameGen.js");
+const reqDisplay = require("./reqDisplay.js");
+const eventModel = require("../../models/eventSchema.js");
 
 async function endEvent(event) {
     await eventModel.deleteOne({ eventID: event.eventID });
