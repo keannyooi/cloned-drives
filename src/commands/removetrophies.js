@@ -54,8 +54,8 @@ module.exports = {
                 await profileModel.updateOne({ userID: user.id }, { trophies: balance });
                 const successMessage = new SuccessMessage({
                     channel: message.channel,
-                    title: `Successfully removed ${trophyEmoji}${amount} from ${user.username}'s trophy amount!`,
-                    desc: `Current Trophy Amount: ${trophyEmoji}${balance}`,
+                    title: `Successfully removed ${trophyEmoji}${amount.toLocaleString("en")} from ${user.username}'s trophy amount!`,
+                    desc: `Current Trophy Amount: ${trophyEmoji}${balance.toLocaleString("en")}`,
                     author: message.author,
                     thumbnail: user.displayAvatarURL({ format: "png", dynamic: true })
                 });
@@ -69,7 +69,7 @@ module.exports = {
                     author: message.author,
                     thumbnail: user.displayAvatarURL({ format: "png", dynamic: true }),
                     fields: [
-                        { name: `${user.username}'s Trophy Amount (${trophyEmoji})`, value: `\`${playerData.trophies}\``, inline: true }
+                        { name: `${user.username}'s Trophy Amount (${trophyEmoji})`, value: `\`${playerData.trophies.toLocaleString("en")}\``, inline: true }
                     ]
                 }).displayClosest(amount);
                 return errorMessage.sendMessage({ currentMessage });

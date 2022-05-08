@@ -54,8 +54,8 @@ module.exports = {
                 await profileModel.updateOne({ userID: user.id }, { money: balance });
                 const successMessage = new SuccessMessage({
                     channel: message.channel,
-                    title: `Successfully removed ${moneyEmoji}${amount} from ${user.username}'s cash balance!`,
-                    desc: `Current Money Balance: ${moneyEmoji}${balance}`,
+                    title: `Successfully removed ${moneyEmoji}${amount.toLocaleString("en")} from ${user.username}'s cash balance!`,
+                    desc: `Current Money Balance: ${moneyEmoji}${balance.toLocaleString("en")}`,
                     author: message.author,
                     thumbnail: user.displayAvatarURL({ format: "png", dynamic: true })
                 });
@@ -69,7 +69,7 @@ module.exports = {
                     author: message.author,
                     thumbnail: user.displayAvatarURL({ format: "png", dynamic: true }),
                     fields: [
-                        { name: `${user.username}'s Money Balance (${moneyEmoji})`, value: `\`${playerData.money}\``, inline: true }
+                        { name: `${user.username}'s Money Balance (${moneyEmoji})`, value: `\`${playerData.money.toLocaleString("en")}\``, inline: true }
                     ]
                 }).displayClosest(amount);
                 return errorMessage.sendMessage({ currentMessage });

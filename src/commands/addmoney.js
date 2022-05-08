@@ -53,8 +53,8 @@ module.exports = {
 
             const successMessage = new SuccessMessage({
                 channel: message.channel,
-                title: `Successfully added ${moneyEmoji}${amount} to ${user.username}'s cash balance!`,
-                desc: `Current Money Balance: ${moneyEmoji}${balance}`,
+                title: `Successfully added ${moneyEmoji}${amount.toLocaleString("en")} to ${user.username}'s cash balance!`,
+                desc: `Current Money Balance: ${moneyEmoji}${balance.toLocaleString("en")}`,
                 author: message.author,
                 thumbnail: user.displayAvatarURL({ format: "png", dynamic: true })
             });

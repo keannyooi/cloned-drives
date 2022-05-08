@@ -62,7 +62,7 @@ function openPack(message, currentPack, currentMessage) {
             timeoutCounter++;
         }
 
-        if (timeoutCounter >= 10000) {
+        if (timeoutCounter >= 50000) {
             const errorMessage = new ErrorMessage({
                 channel: message.channel,
                 title: "Error, pack generation timed out likely due to no cars in generation pool.",

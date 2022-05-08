@@ -55,9 +55,7 @@ bot.once("ready", async () => {
 });
 
 bot.on("messageCreate", async (message) => {
-    //if (message.author.id === "494120116422967325") {
-        processCommand(message);
-    //}
+    processCommand(message);
 });
 
 bot.on("guildMemberAdd", async (member) => {

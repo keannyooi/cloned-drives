@@ -62,7 +62,7 @@ module.exports = {
                 switch (button.customId) {
                     case "yse":
                         reactionMessage.removeButtons();
-                        if (!filterCheck(hand, reqs)) {
+                        if (!filterCheck({ car: hand, filter: reqs })) {
                             intermission.editEmbed({ title: "Your hand does not meet the requirements." });
                             return intermission.sendMessage({ currentMessage: reactionMessage });
                         }

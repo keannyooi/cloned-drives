@@ -25,9 +25,9 @@ const action = {
         else return `${start} ~ ${end}-Seat `;
     },
     fuelType: fuel => `${fuel[0].toUpperCase() + fuel.slice(1, fuel.length)} `,
-    bodyStyle: bodyTypes => `${bodyTypes.join(" + ").split(" ").map(i => i[0].toUpperCase() + i.slice(1, i.length)).join(" ")} `,
-    tyreType: tyreType => `${tyreType.split("-").map(i => i[0].toUpperCase() + i.slice(1, i.length)).join(" ")}-Tyre `,
-    tags: tags => `${tags.join(" + ").split(" ").map(i => i[0].toUpperCase() + i.slice(1, i.length)).join(" ")} `,
+    bodyStyle: bodyTypes => `${bodyTypes.join(" or ").split(" ").map(i => i[0].toUpperCase() + i.slice(1, i.length)).join(" ")} `,
+    tyreType: tyreType => `${tyreType.split("-").map(i => i[0].toUpperCase() + i.slice(1, i.length)).join("-")}-Tyre `,
+    tags: tags => `${tags.join(" or ").split(" ").map(i => i[0].toUpperCase() + i.slice(1, i.length)).join(" ")} `,
     isPrize: isPrize => {
         if (isPrize === false) return "Non-Prize ";
         else return "";
@@ -52,7 +52,7 @@ const action = {
                 return car["make"];
             }
         });
-        return `${makes.join(" + ").split(" ").map(i => i[0].toUpperCase() + i.slice(1, i.length)).join(" ")} `;
+        return `${makes.join(" or ").split(" ").map(i => i[0].toUpperCase() + i.slice(1, i.length)).join(" ")} `;
     },
     search: keyword => `${keyword.split(" ").map(i => i[0].toUpperCase() + i.slice(1, i.length)).join(" ")} `
 }

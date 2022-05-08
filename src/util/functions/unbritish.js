@@ -6,9 +6,9 @@ function unbritish(value, type) {
         case "accel":
             return (value * 1.036).toFixed(1);
         case "weight":
-            return Math.round(value * 2.20462262185).toString();
+            return Math.round(value * 2.20462262185).toLocaleString("en");
         case "topSpeed":
-            return Math.round(value * 1.60934).toString();
+            return Math.round(value * 1.60934).toLocaleString("en");
         default:
             return;
     }

@@ -4,7 +4,7 @@ const bot = require("../config/config.js");
 const { MessageAttachment } = require("discord.js");
 const { DateTime } = require("luxon");
 const { registerFont, loadImage, createCanvas } = require("canvas");
-const { SuccessMessage, InfoMessage, ErrorMessage } = require("../util/classes/classes.js");
+const { SuccessMessage, InfoMessage } = require("../util/classes/classes.js");
 const { currentEventsChannelID, defaultChoiceTime, failedToLoadImageLink, moneyEmojiID, fuseEmojiID, trophyEmojiID, glofEmojiID, packEmojiID } = require("../util/consts/consts.js");
 const confirm = require("../util/functions/confirm.js");
 const search = require("../util/functions/search.js");
@@ -20,7 +20,7 @@ module.exports = {
     category: "Events",
     description: "Starts an inactive event.",
     async execute(message, args) {
-        const events = await eventModel.find({});
+        const events = await eventModel.find({ isActive: false });
         let query = args.map(i => i.toLowerCase());
         await new Promise(resolve => resolve(search(message, query, events, "event")))
             .then(async (response) => {
@@ -32,16 +32,6 @@ module.exports = {
             });
 
         async function startEvent(event, currentMessage) {
-            if (event.isActive === true) {
-                const errorMessage = new ErrorMessage({
-                    channel: message.channel,
-                    title: "Error, this event is already active.",
-                    desc: "Check the active status for all events using `cd-events`.",
-                    author: message.author,
-                });
-                return errorMessage.sendMessage({ currentMessage });
-            }
-
             const { settings } = await profileModel.findOne({ userID: message.author.id });
             const confirmationMessage = new InfoMessage({
                 channel: message.channel,
@@ -52,6 +42,7 @@ module.exports = {
             await confirm(message, confirmationMessage, acceptedFunction, settings.buttonstyle, currentMessage);
 
             async function acceptedFunction(currentMessage) {
+                const playerDatum = await profileModel.find({ "settings.sendeventnotifs": true });
                 const currentEventsChannel = await bot.homeGuild.channels.fetch(currentEventsChannelID);
                 event.isActive = true;
                 if (event.deadline.length < 9) {
@@ -89,23 +80,59 @@ module.exports = {
 
                         let x = 0;
                         for await (let [key, value] of Object.entries(event.roster[i].rewards)) {
+                            ctx.fillStyle = "#ffffff";
                             let image;
                             switch (key) {
                                 case "money":
                                     image = await loadImage(bot.emojis.cache.get(moneyEmojiID).url);
+                                    value = value.toLocaleString("en");
                                     break;
                                 case "fuseTokens":
                                     image = await loadImage(bot.emojis.cache.get(fuseEmojiID).url);
+                                    value = value.toLocaleString("en");
                                     break;
                                 case "trophies":
                                     image = await loadImage(bot.emojis.cache.get(trophyEmojiID).url);
+                                    value = value.toLocaleString("en");
                                     break;
                                 case "car":
                                     image = await loadImage(bot.emojis.cache.get(glofEmojiID).url);
                                     value = value.carID;
+                                    let car = require(`../cars/${value}`);
+                                    if (car["rq"] > 79) {
+                                        ctx.fillStyle = "#ffb80d";
+                                    }
+                                    else if (car["rq"] <= 79 && car["rq"] > 64) {
+                                        ctx.fillStyle = "#9e3fff";
+                                    }
+                                    else if (car["rq"] <= 64 && car["rq"] > 49) {
+                                        ctx.fillStyle = "#ff3639";
+                                    }
+                                    else if (car["rq"] <= 49 && car["rq"] > 39) {
+                                        ctx.fillStyle = "#ffd737";
+                                    }
+                                    else if (car["rq"] <= 39 && car["rq"] > 29) {
+                                        ctx.fillStyle = "37cdff";
+                                    }
+                                    else if (car["rq"] <= 29 && car["rq"] > 19) {
+                                        ctx.fillStyle = "#78ff53";
+                                    }
+                                    else {
+                                        ctx.fillStyle = "#aaaaaa";
+                                    }
                                     break;
                                 case "pack":
                                     image = await loadImage(bot.emojis.cache.get(packEmojiID).url);
+                                    let pack = require(`../packs/${value}`);
+                                    if (pack["packName"].toLowerCase().contains("elite")) {
+                                        ctx.fillStyle = "#ff3639";
+                                    }
+                                    else if (pack["packName"].toLowerCase().contains("booster")) {
+                                        ctx.fillStyle = "#78ff53";
+                                    }
+                                    else {
+                                        ctx.fillStyle = "#ffd737";
+                                    }
                                     break;
                                 default:
                                     break;
@@ -162,6 +189,11 @@ module.exports = {
                     files: [attachment]
                 });
 
+                for (let { userID } of playerDatum) {
+                    let user = await bot.homeGuild.members.fetch(userID);
+                    await user.send(`**Notification: The ${event.name} event has officially started!.**`)
+				        .catch(() => console.log(`unable to send notification to user ${userID}`));
+                }
                 await eventModel.updateOne({ eventID: event.eventID }, event);
                 return successMessage.sendMessage({ attachment, currentMessage });
             }

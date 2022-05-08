@@ -127,17 +127,18 @@ module.exports = {
                 let eventList = "";
                 for (let event of events) {
                     let intervalString = "";
+                    let progress = event.playerProgress[message.author.id] ?? 1;
                     if (event.isActive && event.deadline !== "unlimited") {
                         let interval = Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(event.deadline));
                         if (interval.invalid === null) {
-                            intervalString = timeDisplay(interval);
+                            intervalString = `${timeDisplay(interval)} ${progress > event.roster.length ? "✅" : ""}`;
                         }
                         else {
-                            intervalString = `\`currently ending, no longer playable\`\n`;
+                            intervalString = `\`currently ending, no longer playable\` ${progress > event.roster.length ? "✅" : ""}`;
                         }
                     }
                     else if (event.isActive) {
-                        intervalString = `\`unlimited time remaining\`\n`;
+                        intervalString = `\`unlimited time remaining\` ${progress > event.roster.length ? "✅" : ""}`;
                     }
                     eventList += `${event.name} ${intervalString}\n`;
                 }

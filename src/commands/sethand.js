@@ -59,17 +59,16 @@ module.exports = {
 
         async function setHand(currentCar, upgrade, currentMessage) {
             const car = require(`../cars/${currentCar.carID}`);
-            const currentName = carNameGen({ currentCar: car, upgrade });
             await profileModel.updateOne({ userID: message.author.id }, {
                 hand: {
                     carID: currentCar.carID,
-                    upgrade: upgrade
+                    upgrade
                 }
             });
 
             const successMessage = new SuccessMessage({
                 channel: message.channel,
-                title: `Successfully set your ${currentName} as your quick race, random race and event hand!`,
+                title: `Successfully set your ${carNameGen({ currentCar: car, upgrade, rarity: true })} as your quick race, random race and event hand!`,
                 author: message.author,
                 image: car[`racehud${upgrade}`]
             });

@@ -10,6 +10,7 @@ const sortCheck = require("../util/functions/sortCheck.js");
 const sortCars = require("../util/functions/sortCars.js");
 const listUpdate = require("../util/functions/listUpdate.js");
 const filterCheck = require("../util/functions/filterCheck.js");
+const reqDisplay = require("../util/functions/reqDisplay.js");
 const profileModel = require("../models/profileSchema.js");
 
 module.exports = {
@@ -41,7 +42,7 @@ module.exports = {
 
         const { filter, garage, settings } = await profileModel.findOne({ userID: message.author.id });
         if (!settings.disablecarlistfilter) {
-            list = list.filter(car => filterCheck(car.slice(0, 6), filter, garage));
+            list = list.filter(car => filterCheck({ car: car.slice(0, 6), filter, garage, applyOrLogic: settings.filterlogic === "or" ? true : false }));
         }
         const ownedCars = list.filter(function (carID) {
             return garage.some(part => carID.includes(part.carID));
@@ -103,7 +104,7 @@ module.exports = {
             const infoMessage = new InfoMessage({
                 channel: message.channel,
                 title: `List of All Cars in Cloned Drives (${ownedCars.length}/${list.length} Cars Owned)`,
-                desc: `Current Sorting Criteria: \`${sort}\`, Filter Activated: \`${Object.keys(filter).length > 0 && !settings.disablecarlistfilter}\``,
+                desc: `Current Sorting Criteria: \`${sort}\`, Filter: \`${reqDisplay(filter)}\``,
                 author: message.author,
                 thumbnail: message.author.displayAvatarURL({ format: "png", dynamic: true }),
                 fields: [{ name: "Car", value: carList, inline: true }],

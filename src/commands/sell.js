@@ -72,7 +72,6 @@ module.exports = {
                     if (!Array.isArray(response)) return;
                     const [upgrade, currentMessage] = response;
                     const car = require(`../cars/${currentCar.carID}.json`);
-                    const currentName = carNameGen({ currentCar: car, upgrade });
                     const moneyEmoji = bot.emojis.cache.get(moneyEmojiID);
                     if (args[0].toLowerCase() === "all") {
                         amount = currentCar.upgrades[upgrade];
@@ -104,7 +103,7 @@ module.exports = {
 
                     const confirmationMessage = new InfoMessage({
                         channel: message.channel,
-                        title: `Are you sure you want to sell ${amount} of your ${currentName} for ${moneyEmoji}${money}?`,
+                        title: `Are you sure you want to sell ${amount} of your ${carNameGen({ currentCar: car, upgrade, rarity: true })} for ${moneyEmoji}${money.toLocaleString("en")}?`,
                         desc: `You have been given ${defaultChoiceTime / 1000} seconds to consider.`,
                         author: message.author,
                         image: car["card"]
@@ -133,12 +132,12 @@ module.exports = {
 
                         const infoMessage = new SuccessMessage({
                             channel: message.channel,
-                            title: `Successfully sold your ${currentName}!`,
-                            desc: `You earned ${moneyEmoji}${money}!`,
+                            title: `Successfully sold your ${carNameGen({ currentCar: car, upgrade, rarity: true })}!`,
+                            desc: `You earned ${moneyEmoji}${money.toLocaleString("en")}!`,
                             author: message.author,
                             image: car["card"],
                             fields: [
-                                { name: "Your Money Balance", value: `${moneyEmoji}${balance}` }
+                                { name: "Your Money Balance", value: `${moneyEmoji}${balance.toLocaleString("en")}` }
                             ]
                         });
                         await infoMessage.sendMessage({ currentMessage });

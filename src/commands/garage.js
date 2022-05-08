@@ -9,6 +9,7 @@ const sortCheck = require("../util/functions/sortCheck.js");
 const sortCars = require("../util/functions/sortCars.js");
 const listUpdate = require("../util/functions/listUpdate.js");
 const filterCheck = require("../util/functions/filterCheck.js");
+const reqDisplay = require("../util/functions/reqDisplay.js");
 const botUserError = require("../util/commonerrors/botUserError.js");
 const profileModel = require("../models/profileSchema.js");
 
@@ -75,7 +76,7 @@ module.exports = {
         async function loop(user, page, sort, currentMessage) {
             const { garage } = await profileModel.findOne({ userID: user.id });
             const { settings, filter } = await profileModel.findOne({ userID: message.author.id });
-            let filteredGarage = settings.disablegaragefilter ? garage : garage.filter(car => filterCheck(car, filter));
+            let filteredGarage = settings.disablegaragefilter ? garage : garage.filter(car => filterCheck({ car, filter, applyOrLogic: settings.filterlogic === "or" ? true : false }));
 
             sort = sortCheck(message, sort, currentMessage);
             if (typeof sort !== "string") return;
@@ -156,7 +157,7 @@ module.exports = {
                 const infoMessage = new InfoMessage({
                     channel: message.channel,
                     title: `${user.username}'s Garage`,
-                    desc: `Current Sorting Criteria: \`${sort}\`, Filter Activated: \`${Object.keys(filter).length > 0 && !settings.disablegaragefilter}\``,
+                    desc: `Current Sorting Criteria: \`${sort}\`, Filter: \`${reqDisplay(filter)}\``,
                     author: message.author,
                     thumbnail: user.displayAvatarURL({ format: "png", dynamic: true }),
                     fields: [

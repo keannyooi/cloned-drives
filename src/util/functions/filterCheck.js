@@ -3,7 +3,8 @@
 const carNameGen = require("./carNameGen.js");
 const calcTotal = require("./calcTotal.js");
 
-function filterCheck(car, filter, garage) {
+function filterCheck(args) {
+    let { car, filter, garage, applyOrLogic } = args;
     let passed = true, carObject = garage ? {
         carID: car,
         upgrades: garage.find(c => car.includes(c.carID))?.upgrades ?? {
@@ -27,8 +28,15 @@ function filterCheck(car, filter, garage) {
                     }
                     checkArray = checkArray.map(tag => tag.toLowerCase());
 
-                    if (value.every(tag => checkArray.findIndex(tag2 => tag === tag2) > -1) === false) {
-                        passed = false;
+                    if (applyOrLogic) {
+                        if (value.some(tag => checkArray.findIndex(tag2 => tag === tag2) > -1) === false) {
+                            passed = false;
+                        }
+                    }
+                    else {
+                        if (value.every(tag => checkArray.findIndex(tag2 => tag === tag2) > -1) === false) {
+                            passed = false;
+                        }
                     }
                 }
                 else {

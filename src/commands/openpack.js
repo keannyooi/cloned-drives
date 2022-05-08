@@ -36,7 +36,9 @@ module.exports = {
                     let addedCars = openPack(message, currentPack, currentMessage);
                     if (!Array.isArray(addedCars)) return;
                     await profileModel.updateOne({ userID: message.author.id }, {
-                        money: money - currentPack["price"],
+                        "$inc": {
+                            money: currentPack["price"] * -1
+                        },
                         garage: addCars(garage, addedCars)
                     });
                 }
@@ -46,8 +48,8 @@ module.exports = {
                         title: "Error, it looks like you don't have enough money for this purchase.",
                         author: message.author,
                         fields: [
-                            { name: "Required Amount of Money", value: `${moneyEmoji}${currentPack["price"]}`, inline: true },
-                            { name: "Your Money Balance", value: `${moneyEmoji}${money}`, inline: true }
+                            { name: "Required Amount of Money", value: `${moneyEmoji}${currentPack["price"].toLocaleString("en")}`, inline: true },
+                            { name: "Your Money Balance", value: `${moneyEmoji}${money.toLocaleString("en")}`, inline: true }
                         ]
                     });
                     return errorMessage.sendMessage({ currentMessage });

@@ -53,8 +53,8 @@ module.exports = {
 
             const successMessage = new SuccessMessage({
                 channel: message.channel,
-                title: `Successfully added ${trophyEmoji}${amount} to ${user.username}'s trophy amount!`,
-                desc: `Current Trophy Amount: ${trophyEmoji}${balance}`,
+                title: `Successfully added ${trophyEmoji}${amount.toLocaleString("en")} to ${user.username}'s trophy amount!`,
+                desc: `Current Trophy Amount: ${trophyEmoji}${balance.toLocaleString("en")}`,
                 author: message.author,
                 thumbnail: user.displayAvatarURL({ format: "png", dynamic: true })
             });

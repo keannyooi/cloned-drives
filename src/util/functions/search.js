@@ -5,7 +5,7 @@ const processResults = require("./corefiles/processResults.js");
 
 async function search(message, query, searchList, type, currentMessage) {
     const searchResults = searchList.filter(s => {
-        let test = listGen(s, type).toLowerCase().replace(/[()"]/g, "").split(" ");
+        let test = listGen(s, type).toLocaleLowerCase("en").replace(/[()"]/g, "").split(" ");
         return query.every(part => test.includes(part.replace(/[()"]/g, "")));
     });
     return processResults(message, searchResults, () => {

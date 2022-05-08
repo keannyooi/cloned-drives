@@ -7,6 +7,7 @@ const profileModel = require("../models/profileSchema.js");
 
 module.exports = {
     name: "settings",
+    aliases: ["options"],
     usage: ["[setting id] [value] (more info is within the command itself)"],
     args: 0,
     category: "Configuration",
@@ -19,7 +20,7 @@ module.exports = {
             let { infoMessage, row } = menu(), processing = false;
             let currentMessage = await infoMessage.sendMessage({ buttons: [row] });
 
-            const collector = message.channel.createMessageComponentCollector({ filter, time: defaultWaitTime });
+            const collector = currentMessage.message.createMessageComponentCollector({ filter, time: defaultWaitTime });
             collector.on("collect", async (button) => {
                 if (processing === false) {
                     processing = true;
@@ -40,7 +41,7 @@ module.exports = {
                                     customId: "back"
                                 });
                             }
-    
+
                             infoMessage = new InfoMessage({
                                 channel: message.channel,
                                 title: "Settings",
@@ -48,7 +49,7 @@ module.exports = {
                                 author: message.author
                             });
                             row = new MessageActionRow({ components: [backButton] });
-    
+
                             switch (button.values[0]) {
                                 case "Gameplay":
                                     infoMessage.editEmbed({
@@ -56,25 +57,37 @@ module.exports = {
                                             {
                                                 name: "Disable Graphics (ID: \`disablegraphics\`)",
                                                 value: `Having this set to \`true\` skips through all bot-generated graphics. Perfect for faster loading times.
-                                    **Value:** \`${settings.disablegraphics ?? false}\``,
+                                                **Value:** \`${settings.disablegraphics ?? false}\``,
                                                 inline: true
                                             },
                                             {
                                                 name: "Enable Daily Reward Notifications (ID: \`senddailynotifs\`)",
                                                 value: `Having this set to \`true\` enables automated DM notifications when your daily reward can be claimed.
-                                    **Value:** \`${settings.senddailynotifs ?? false}\``,
+                                                **Value:** \`${settings.senddailynotifs ?? false}\``,
+                                                inline: true
+                                            },
+                                            {
+                                                name: "Enable Event Notifications (ID: \`sendeventnotifs\`)",
+                                                value: `Having this set to \`true\` enables automated DM notifications when a new event goes live.
+                                                **Value:** \`${settings.sendeventnotifs ?? false}\``,
+                                                inline: true
+                                            },
+                                            {
+                                                name: "Enable Limited Offer Notifications (ID: \`sendoffernotifs\`)",
+                                                value: `Having this set to \`true\` enables automated DM notifications when a new offer is on sale.
+                                                **Value:** \`${settings.senddoffernotifs ?? false}\``,
                                                 inline: true
                                             },
                                             {
                                                 name: "Unit Preference (ID: \`unitpreference\`)",
                                                 value: `Lets you choose the unit system of your preference. Graphics aren't affected by this setting. The game uses British units by default and you can switch to metric and imperial units.
-                                            **Value:** \`${settings.unitpreference ?? "british"}\``,
+                                                **Value:** \`${settings.unitpreference ?? "british"}\``,
                                                 inline: true
                                             },
                                             {
                                                 name: "Button Style (ID: \`buttonstyle\`)",
                                                 value: `Lets you choose the button style of your preference. The \`default\` style gives a more modern look with Discord's new embed buttons while the \`classic\` style resembles old-school emoji buttons.
-                                            **Value:** \`${settings.buttonstyle ?? "default"}\``,
+                                                **Value:** \`${settings.buttonstyle ?? "default"}\``,
                                                 inline: true
                                             }
                                         ]
@@ -86,13 +99,13 @@ module.exports = {
                                             {
                                                 name: "Disable Filter for Garage (ID: \`disablegaragefilter\`)",
                                                 value: `Having this set to \`true\` disables your current filter when viewing your (or other people's) garage.
-                                        **Value:** \`${settings.disablegaragefilter ?? false}\``,
+                                                **Value:** \`${settings.disablegaragefilter ?? false}\``,
                                                 inline: true
                                             },
                                             {
                                                 name: "Disable Filter for Car List (ID: \`disablecarlistfilter\`)",
                                                 value: `Having this set to \`true\` disables your current filter when viewing the car list.
-                                        **Value:** \`${settings.disablecarlistfilter ?? false}\``,
+                                                **Value:** \`${settings.disablecarlistfilter ?? false}\``,
                                                 inline: true
                                             },
                                             {
@@ -112,6 +125,12 @@ module.exports = {
                                                 value: `Lets you choose the amount of items listed per page. Values are restricted between \`5\` and \`10\`.
                                                 **Value:** \`${settings.listamount ?? 10}\``,
                                                 inline: true
+                                            },
+                                            {
+                                                name: "Filter Logic (ID: \`filterlogic\`)",
+                                                value: `\`and\` logic narrows the filter selection when more criterias are added while \`or\` logic widens it.
+                                                **Value:** \`${settings.filterlogic ?? "and"}\``,
+                                                inline: true
                                             }
                                         ]
                                     });
@@ -130,7 +149,7 @@ module.exports = {
                                 default:
                                     break;
                             }
-    
+
                             await infoMessage.sendMessage({ currentMessage, buttons: [row] });
                             break;
                         case "back":
@@ -165,12 +184,28 @@ module.exports = {
             switch (setting) {
                 case "disablegraphics":
                 case "senddailynotifs":
+                case "sendeventnotifs":
+                case "sendoffernotifs":
                 case "disablecarlistfilter":
                 case "disablegaragefilter":
                 case "hidebmcars":
                     if (argument === "true") {
-                        if (setting === "senddailynotifs") {
-                            message.author.send("You have activated daily reward notifications! Notifications will be sent here.")
+                        if (setting.startsWith("send")) {
+                            let msg = "";
+                            switch (setting) {
+                                case "senddailynotifs":
+                                    msg = "You have activated daily reward notifications! Notifications will be sent here.";
+                                    break;
+                                case "sendeventnotifs":
+                                    msg = "You have activated event notifications! Notifications will be sent here.";
+                                    break;
+                                case "sendoffernotifs":
+                                    msg = "You have activated offer notifications! Notifications will be sent here.";
+                                    break;
+                                default:
+                                    break;
+                            }
+                            message.author.send(msg)
                                 .catch(() => {
                                     let errorMessage = new ErrorMessage({
                                         channel: message.channel,
@@ -247,6 +282,29 @@ module.exports = {
                     infoMessage = new SuccessMessage({
                         channel: message.channel,
                         title: `Successfully set the sorting order to \`${argument}\`!`,
+                        author: message.author
+                    });
+                    break;
+                case "filterlogic":
+                    if (argument === "or") {
+                        settings[setting] = argument;
+                    }
+                    else if (argument === "and") {
+                        delete settings[setting];
+                    }
+                    else {
+                        let errorMessage = new ErrorMessage({
+                            channel: message.channel,
+                            title: "Error, argument provided is invalid.",
+                            desc: "You are expected to provide either `and` or `or`.",
+                            author: message.author
+                        }).displayClosest(argument);
+                        return errorMessage.sendMessage();
+                    }
+
+                    infoMessage = new SuccessMessage({
+                        channel: message.channel,
+                        title: `Successfully set the filter logic to \`${argument}\`!`,
                         author: message.author
                     });
                     break;
@@ -335,12 +393,15 @@ module.exports = {
                         title: "Error, setting provided not found.",
                         desc: `Here is a list of setting IDs. 
                         \`disablegraphics\` - Disable bot-generated graphics. Provide a boolean (\`true\` or \`false\`) after that.
-                        \`senddailynotifs\` - Eable automated daily reward notifications. Provide a boolean (\`true\` or \`false\`) after that. Remember to enable \`DMs from server members\` for this to work.
+                        \`senddailynotifs\` - Enable automated daily reward notifications. Provide a boolean (\`true\` or \`false\`) after that. Remember to enable \`DMs from server members\` for this to work.
+                        \`sendeventnotifs\` - Enable automated event notifications. Provide a boolean (\`true\` or \`false\`) after that. Remember to enable \`DMs from server members\` for this to work.
+                        \`sendoffernotifs\` - Enable automated offer notifications. Provide a boolean (\`true\` or \`false\`) after that. Remember to enable \`DMs from server members\` for this to work.
                         \`disablecarlistfilter\` - Disable cd-carlist filtering. Provide a boolean (\`true\` or \`false\`) after that.
                         \`disablegaragefilter\` - Disable garage filtering. Provide a boolean (\`true\` or \`false\`) after that.
                         \`hidebmcars\` - Disable black market car visibility. Provide a boolean (\`true\` or \`false\`) after that.
                         \`unitpreference\` - Choose a unit system of your liking. Provide a the name of a unit system (\`british\`, \`imperial\` or \`metric\`) after that.
                         \`sortorder\` - Choose the order that items are sorted in. Provide either \`ascending\` or \`descending\` after that.
+                        \`filterlogic\` - Choose the preferred filter logic. Provide \`and\` or \`or\` after that.
                         \`buttonstyle\` - Choose the order that items are sorted in. Provide either \`default\` or \`classic\` after that.
                         \`listamount\` - Choose the amount of items listed per page. Provide a number between \`5\` and \`10\` after that.
                         \`bio\` - Edits the text in your About Me.`,

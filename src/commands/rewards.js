@@ -27,15 +27,15 @@ module.exports = {
                 switch (Object.keys(reward)[0]) {
                     case "money":
                         playerData.money += reward.money;
-                        line = `Received **${moneyEmoji}${reward.money}** from **${origin}**\n`;
+                        line = `Received **${moneyEmoji}${reward.money.toLocaleString("en")}** from **${origin}**\n`;
                         break;
                     case "fuseTokens":
                         playerData.fuseTokens += reward.fuseTokens;
-                        line = `Received **${fuseEmoji}${reward.fuseTokens}** from **${origin}**\n`;
+                        line = `Received **${fuseEmoji}${reward.fuseTokens.toLocaleString("en")}** from **${origin}**\n`;
                         break;
                     case "trophies":
                         playerData.trophies += reward.trophies;
-                        line = `Received **${trophyEmoji}${reward.trophies}** from **${origin}**\n`;
+                        line = `Received **${trophyEmoji}${reward.trophies.toLocaleString("en")}** from **${origin}**\n`;
                         break;
                     case "car":
                         let currentCar = require(`../cars/${reward.car.carID}.json`);

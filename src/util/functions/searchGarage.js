@@ -10,12 +10,16 @@ async function searchGarage(args) {
     let matchList = [];
     const searchResults = garage.filter(car => {
         let matchFound, isSufficient;
+        let currentCar = require(`../../cars/${car.carID}.json`);
+        if (restrictedMode && currentCar["isPrize"] === true) {
+            return false;
+        }
+
         if (searchByID) {
             matchFound = car.carID === query[0];
         }
         else {
-            let currentCar = require(`../../cars/${car.carID}.json`);
-            let name = carNameGen({ currentCar, removePrizeTag: true }).replace(/[()"]/g, "").toLowerCase().split(" ");
+            let name = carNameGen({ currentCar, removePrizeTag: true }).replace(/[()"]/g, "").toLocaleLowerCase("en").split(" ");
             matchFound = query.every(part => name.includes(part.replace(/[()"]/g, "")));
             if (matchFound) {
                 matchList.push(car);

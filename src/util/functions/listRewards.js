@@ -11,15 +11,15 @@ function listRewards(rewards) {
         switch (key) {
             case "money":
                 emoji = bot.emojis.cache.get(moneyEmojiID);
-                rewardString += `${emoji}${value}, `;
+                rewardString += `${emoji}${value.toLocaleString("en")}, `;
                 break;
             case "fuseTokens":
                 emoji = bot.emojis.cache.get(fuseEmojiID);
-                rewardString += `${emoji}${value}, `;
+                rewardString += `${emoji}${value.toLocaleString("en")}, `;
                 break;
             case "trophies":
                 emoji = bot.emojis.cache.get(trophyEmojiID);
-                rewardString += `${emoji}${value}, `;
+                rewardString += `${emoji}${value.toLocaleString("en")}, `;
                 break;
             case "car":
                 let currentCar = require(`../../cars/${value.carID}`);

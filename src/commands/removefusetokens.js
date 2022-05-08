@@ -54,8 +54,8 @@ module.exports = {
                 await profileModel.updateOne({ userID: user.id }, { fuseTokens: balance });
                 const successMessage = new SuccessMessage({
                     channel: message.channel,
-                    title: `Successfully removed ${fuseEmoji}${amount} from ${user.username}'s fuse token balance!`,
-                    desc: `Current Fuse Token Balance: ${fuseEmoji}${balance}`,
+                    title: `Successfully removed ${fuseEmoji}${amount.toLocaleString("en")} from ${user.username}'s fuse token balance!`,
+                    desc: `Current Fuse Token Balance: ${fuseEmoji}${balance.toLocaleString("en")}`,
                     author: message.author,
                     thumbnail: user.displayAvatarURL({ format: "png", dynamic: true })
                 });
@@ -69,7 +69,7 @@ module.exports = {
                     author: message.author,
                     thumbnail: user.displayAvatarURL({ format: "png", dynamic: true }),
                     fields: [
-                        { name: `${user.username}'s Fuse Token Balance (${fuseEmoji})`, value: `\`${playerData.fuseTokens}\``, inline: true }
+                        { name: `${user.username}'s Fuse Token Balance (${fuseEmoji})`, value: `\`${playerData.fuseTokens.toLocaleString("en")}\``, inline: true }
                     ]
                 }).displayClosest(amount);
                 return errorMessage.sendMessage({ currentMessage });

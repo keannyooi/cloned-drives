@@ -54,14 +54,13 @@ module.exports = {
                 return errorMessage.sendMessage({ currentMessage });
             }
 
-            if (!filterCheck(hand, event.roster[round - 1].reqs)) {
+            if (!filterCheck({ car: hand, filter: event.roster[round - 1].reqs, applyOrLogic: true })) {
                 let currentCar = require(`../cars/${hand.carID}`);
                 const errorMessage = new ErrorMessage({
                     channel: message.channel,
                     title: "Error, it looks like your hand does not meet the event round's requirements.",
-                    desc: `Try referring to the event list. 
-					Round ${round}
-					Current Hand: ${carNameGen({ currentCar, rarity: true, upgrade: hand.upgrade })}`,
+                    desc: `**Round ${round} (Reqs: \`${reqDisplay(event.roster[round - 1].reqs)}\`)**
+					**Current Hand:** ${carNameGen({ currentCar, rarity: true, upgrade: hand.upgrade })}`,
                     author: message.author
                 });
                 return errorMessage.sendMessage({ currentMessage });
@@ -87,7 +86,7 @@ module.exports = {
                 await confirm(message, intermission, acceptedFunction, settings.buttonstyle, currentMessage);
 
                 async function acceptedFunction(currentMessage) {
-                    if (event.isActive === true && event.deadline !== "unlimited" && Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(event.deadline)).invalid !== null) {
+                    if (event.isActive && event.deadline !== "unlimited" && Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(event.deadline)).invalid !== null) {
                         intermission.editEmbed({ title: "Looks like this event just ended.", desc: "That's just sad." });
                         return intermission.sendMessage({ currentMessage });
                     }
@@ -100,10 +99,16 @@ module.exports = {
                                 case "money":
                                 case "fuseTokens":
                                 case "trophies":
-                                    let template = {};
-                                    template[key] = value;
-                                    template.origin = event.name;
-                                    unclaimedRewards.push(template);
+                                    let hasEntry = unclaimedRewards.findIndex(entry => entry.origin === event.name && entry[key] !== undefined);
+                                    if (hasEntry > -1) {
+                                        unclaimedRewards[hasEntry][key] += value;
+                                    }
+                                    else {
+                                        let template = {};
+                                        template[key] = value;
+                                        template.origin = event.name;
+                                        unclaimedRewards.push(template);
+                                    }
                                     break;
                                 case "car":
                                     unclaimedRewards.push({

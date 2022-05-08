@@ -39,7 +39,7 @@ module.exports = {
             const { garage, settings } = await profileModel.findOne({ userID: message.author.id });
             let currentCar = require(`../cars/${carFile}`);
             let description = "None", mra = "N/A", ola = "N/A";
-            let topSpeed = `${currentCar.topSpeed}MPH`, accel = "N/A", weight = `${currentCar.weight}kg`;
+            let topSpeed = `${currentCar.topSpeed}MPH`, accel = "N/A", weight = `${currentCar.weight.toLocaleString("en")}kg`;
             let bodyStyle = Array.isArray(currentCar["bodyStyle"]) ? currentCar["bodyStyle"].join(", ") : currentCar["bodyStyle"];
 
             if (currentCar["description"].length > 0) {

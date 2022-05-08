@@ -130,7 +130,7 @@ module.exports = {
             const resultMessage = new SuccessMessage({
                 channel: message.channel,
                 title: "Calculation successful!",
-                desc: `Result: **${answer}**`,
+                desc: `Result: **${answer.toLocaleString("en")}**`,
                 author: message.author,
             });
             return resultMessage.sendMessage();

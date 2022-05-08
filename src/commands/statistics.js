@@ -72,14 +72,14 @@ module.exports = {
                 author: message.author,
                 thumbnail: user.displayAvatarURL({ format: "png", dynamic: true }),
                 fields: [
-                    { name: "Money Balance", value: `${moneyEmoji}${playerData.money.toString() ?? 0}`, inline: true },
-                    { name: "Fuse Tokens", value: `${fuseEmoji}${playerData.fuseTokens.toString() ?? 0}`, inline: true },
-                    { name: "Trophies", value: `${trophyEmoji}${playerData.trophies.toString() ?? 0}`, inline: true },
-                    { name: "Total Cars in Garage", value: totalCars.toString(), inline: true },
-                    { name: "Total Maxed Cars in Garage", value: maxedCars.toString(), inline: true },
+                    { name: "Money Balance", value: `${moneyEmoji}${playerData.money.toLocaleString("en")}`, inline: true },
+                    { name: "Fuse Tokens", value: `${fuseEmoji}${playerData.fuseTokens.toLocaleString("en")}`, inline: true },
+                    { name: "Trophies", value: `${trophyEmoji}${playerData.trophies.toLocaleString("en")}`, inline: true },
+                    { name: "Total Cars in Garage", value: totalCars.toLocaleString("en"), inline: true },
+                    { name: "Total Maxed Cars in Garage", value: maxedCars.toLocaleString("en"), inline: true },
                     { name: "Maxed Car Percentage", value: `${MCpercentage.toFixed(2)}%`, inline: true },
-                    { name: "Highest Random Race Streak", value: playerData.rrStats.highestStreak.toString(), inline: true },
-                    { name: "Highest Daily Reward Streak", value: playerData.dailyStats.highestStreak.toString(), inline: true },
+                    { name: "Highest Random Race Streak", value: playerData.rrStats.highestStreak.toLocaleString("en"), inline: true },
+                    { name: "Highest Daily Reward Streak", value: playerData.dailyStats.highestStreak.toLocaleString("en"), inline: true },
                     { name: "About Me", value: playerData.settings.bio ?? "None" }
                 ]
             });

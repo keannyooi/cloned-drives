@@ -463,15 +463,18 @@ module.exports = {
                     }
 
                     let regenPool = carFiles;
-                    regenPool = regenPool.filter(car => filterCheck({
-                        carID: car.slice(0, 6),
-                        "000": 1,
-                        "333": 1,
-                        "666": 1,
-                        "996": 1,
-                        "969": 1,
-                        "699": 1
-                    }, filter));
+                    regenPool = regenPool.filter(car => filterCheck({ 
+                        car: {
+                            carID: car.slice(0, 6),
+                            "000": 1,
+                            "333": 1,
+                            "666": 1,
+                            "996": 1,
+                            "969": 1,
+                            "699": 1
+                        },
+                        filter
+                    }));
                     if (regenPool.length < 1) {
                         const errorMessage = new SuccessMessage({
                             channel: message.channel,

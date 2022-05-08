@@ -54,8 +54,8 @@ module.exports = {
 
             const successMessage = new SuccessMessage({
                 channel: message.channel,
-                title: `Successfully added ${fuseEmoji}${amount} to ${user.username}'s fuse token balance!`,
-                desc: `Current Fuse Token Balance: ${fuseEmoji}${balance}`,
+                title: `Successfully added ${fuseEmoji}${amount.toLocaleString("en")} to ${user.username}'s fuse token balance!`,
+                desc: `Current Fuse Token Balance: ${fuseEmoji}${balance.toLocaleString("en")}`,
                 author: message.author,
                 thumbnail: user.displayAvatarURL({ format: "png", dynamic: true })
             });

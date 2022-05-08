@@ -43,7 +43,7 @@ module.exports = {
                 author: message.author,
                 image: currentPack["pack"],
                 fields: [
-                    { name: "Price", value: currentPack["price"] ? `${moneyEmoji}${currentPack["price"]}` : "Not Purchasable" },
+                    { name: "Price", value: currentPack["price"] ? `${moneyEmoji}${currentPack["price"].toLocaleString("en")}` : "Not Purchasable" },
                     { name: "Description", value: currentPack["description"] }
                 ]
             });

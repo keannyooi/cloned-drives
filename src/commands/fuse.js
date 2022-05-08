@@ -72,7 +72,6 @@ module.exports = {
                     if (!Array.isArray(response)) return;
                     const [upgrade, currentMessage] = response;
                     const car = require(`../cars/${currentCar.carID}.json`);
-                    const currentName = carNameGen({ currentCar: car, upgrade });
                     const fuseEmoji = bot.emojis.cache.get(fuseEmojiID);
                     if (args[0].toLowerCase() === "all") {
                         amount = currentCar.upgrades[upgrade];
@@ -104,7 +103,7 @@ module.exports = {
 
                     const confirmationMessage = new InfoMessage({
                         channel: message.channel,
-                        title: `Are you sure you want to fuse ${amount} of your ${currentName} for ${fuseEmoji}${fuseTokens}?`,
+                        title: `Are you sure you want to fuse ${amount} of your ${carNameGen({ currentCar: car, upgrade, rarity: true })} for ${fuseEmoji}${fuseTokens.toLocaleString("en")}?`,
                         desc: `You have been given ${defaultChoiceTime / 1000} seconds to consider.`,
                         author: message.author,
                         image: car["card"]
@@ -132,12 +131,12 @@ module.exports = {
 
                         const infoMessage = new SuccessMessage({
                             channel: message.channel,
-                            title: `Successfully fused your ${currentName}!`,
-                            desc: `You earned ${fuseEmoji}${fuseTokens}!`,
+                            title: `Successfully fused your ${carNameGen({ currentCar: car, upgrade, rarity: true })}!`,
+                            desc: `You earned ${fuseEmoji}${fuseTokens.toLocaleString("en")}!`,
                             author: message.author,
                             image: car["card"],
                             fields: [
-                                { name: "Your Fuse Tokens", value: `${fuseEmoji}${balance}` }
+                                { name: "Your Fuse Tokens", value: `${fuseEmoji}${balance.toLocaleString("en")}` }
                             ]
                         });
                         await infoMessage.sendMessage({ currentMessage });

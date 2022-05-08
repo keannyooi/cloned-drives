@@ -108,13 +108,13 @@ module.exports = {
 
             const infoMessage = new SuccessMessage({
                 channel: message.channel,
-                title: `You've received your daily reward of ${moneyEmoji}${moneyReward} and ${fuseEmoji}${fuseReward}!`,
+                title: `You've received your daily reward of ${moneyEmoji}${moneyReward.toLocaleString("en")} and ${fuseEmoji}${fuseReward.toLocaleString("en")}!`,
                 desc: `Current Streak: \`${streak}\`${desc}`,
                 author: message.author,
                 image,
                 fields: [
-                    { name: "Current Money Balance", value: `${moneyEmoji}${money}`, inline: true },
-                    { name: "Current Fuse Token Balance", value: `${fuseEmoji}${fuseTokens}`, inline: true }
+                    { name: "Current Money Balance", value: `${moneyEmoji}${money.toLocaleString("en")}`, inline: true },
+                    { name: "Current Fuse Token Balance", value: `${fuseEmoji}${fuseTokens.toLocaleString("en")}`, inline: true }
                 ]
             });
             if (guildMember.roles.cache.has("860144481109016607")) {
