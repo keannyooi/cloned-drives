@@ -1,0 +1,54 @@
+{
+    "rq": 40,
+    "make": "Infiniti",
+    "model": "Q60 2.0t AWD",
+    "modelYear": 2017,
+    "country": "JP",
+    "topSpeed": 146,
+    "0to60": 7.4,
+    "handling": 75,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1750,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 54.48,
+    "ola": 63.01,
+    "description": "This is perfect for people who lives in places with frequent snowy condition occurrences while wanting to look rich. Card by Spence.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/969686924736471100/64E9331D-6235-4F63-8160-5C13603E76F5.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/969687592662601778/D7EF3A36-E6AD-4BAD-81A3-DD7296992ED4.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/969687610194804756/CF093616-19F8-4816-B812-313435911A9E.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/969687627836039268/97B2E479-829D-4A0D-B19B-72D35ECC9626.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/969687679379836998/2DFDB488-9E11-4AA7-9F26-6744EE46704B.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/969687666339766292/748475D7-A0E2-4314-85BC-FAC28B583C44.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/969687652985098350/0177D9F3-3DA8-4D34-BB32-471A49A9DBEE.jpg",
+
+    "333TopSpeed": 150,
+    "3330to60": 7.0,
+    "333Handling": 77,
+
+    "666TopSpeed": 153,
+    "6660to60": 6.7,
+    "666Handling": 80,
+
+    "996TopSpeed": 157,
+    "9960to60": 6.3,
+    "996Handling": 80,
+
+    "969TopSpeed": 157,
+    "9690to60": 6.7,
+    "969Handling": 83,
+
+    "699TopSpeed": 153,
+    "6990to60": 6.3,
+    "699Handling": 83
+}

@@ -1,0 +1,54 @@
+{
+    "rq": 12,
+    "make": "Daihatsu",
+    "model": "Charade CSX",
+    "modelYear": 1988,
+    "country": "JP",
+    "topSpeed": 90,
+    "0to60": 15.0,
+    "handling": 63,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 830,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 14.44,
+    "ola": 68,
+    "description": "Card by Aqo.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/973318053314035782/charadecsx.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/973318233530703912/charadegsx.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/973318241466322974/charadegsx1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/973318248047194112/charadegsx2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/973318268691578941/charadegsx996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/973318262895030302/charadegsx969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/973318255450153012/charadegsx699.png",
+
+    "333TopSpeed": 96,
+    "3330to60": 14.3,
+    "333Handling": 65,
+
+    "666TopSpeed": 102,
+    "6660to60": 13.5,
+    "666Handling": 67,
+
+    "996TopSpeed": 107,
+    "9960to60": 12.8,
+    "996Handling": 67,
+
+    "969TopSpeed": 107,
+    "9690to60": 13.5,
+    "969Handling": 70,
+
+    "699TopSpeed": 102,
+    "6990to60": 12.8,
+    "699Handling": 70
+}
