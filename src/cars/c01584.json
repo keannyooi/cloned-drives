@@ -1,0 +1,54 @@
+{
+    "rq": 92,
+    "make": ["JUN AUTO", "Nissan"],
+    "model": "Hyper Lemon 350Z-R AWD",
+    "modelYear": 2007,
+    "country": "JP",
+    "topSpeed": 221,
+    "0to60": 2.9,
+    "handling": 91,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Tuner", "Unique","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1297,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 96.67,
+    "ola": 89.66,
+    "description": "Possibly the only 350Z with a custom AWD system based on a Skyline R32 the world will ever see. Card by Keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/869498436536393758/jun_auto_hyper_lemon_350z-r_awd.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/869218604338520104/jun_350z_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/869218607589122128/jun_350z_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/869218611829542912/jun_350z_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/869218622680219698/jun_350z_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/869218619798724658/jun_350z_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/869218614169964575/jun_350z_699.jpg",
+
+    "333TopSpeed": 223,
+    "3330to60": 2.8,
+    "333Handling": 94,
+
+    "666TopSpeed": 226,
+    "6660to60": 2.6,
+    "666Handling": 97,
+
+    "996TopSpeed": 228,
+    "9960to60": 2.5,
+    "996Handling": 97,
+
+    "969TopSpeed": 228,
+    "9690to60": 2.6,
+    "969Handling": 101,
+
+    "699TopSpeed": 226,
+    "6990to60": 2.5,
+    "699Handling": 101
+}

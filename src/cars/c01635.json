@@ -1,0 +1,54 @@
+{
+    "rq": 50,
+    "make": "Mitsubishi",
+    "model": "FTO GP Version R",
+    "modelYear": 1997,
+    "country": "JP",
+    "topSpeed": 112,
+    "0to60": 6.6,
+    "handling": 77,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1150,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 61.68,
+    "ola": 78.78,
+    "description": "Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/945446660035727370/FTOGPVersionR.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/945447176824307752/FTOGP.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/945447187918237706/FTOGP333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/945447207782469693/FTOGP666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/945447230519795763/FTOGP996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/945447223649525760/FTOGP969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/945447215281868830/FTOGP699.png",
+
+    "333TopSpeed": 117,
+    "3330to60": 6.3,
+    "333Handling": 80,
+
+    "666TopSpeed": 121,
+    "6660to60": 5.9,
+    "666Handling": 82,
+
+    "996TopSpeed": 126,
+    "9960to60": 5.6,
+    "996Handling": 82,
+
+    "969TopSpeed": 126,
+    "9690to60": 5.9,
+    "969Handling": 85,
+
+    "699TopSpeed": 121,
+    "6990to60": 5.6,
+    "699Handling": 85
+}

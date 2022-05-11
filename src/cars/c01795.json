@@ -1,0 +1,54 @@
+{
+    "rq": 34,
+    "make": "Nissan",
+    "model": "Stagea 25X Aero Selection",
+    "modelYear": 1997,
+    "country": "JP",
+    "topSpeed": 112,
+    "0to60": 8.4,
+    "handling": 71,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1500,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 57.53,
+    "ola": 80.95,
+    "description": "Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/968273026141528064/Stagea25XAero.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/968273873269301359/Stagea25XAero.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/968273880399626290/Stagea25XAero1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/968273888146518087/Stagea25XAero2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/968273911190016030/Stagea25XAero996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/968273904302948372/Stagea25XAero969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/968273898380611654/Stagea25XAero699.png",
+
+    "333TopSpeed": 117,
+    "3330to60": 8.0,
+    "333Handling": 73,
+
+    "666TopSpeed": 121,
+    "6660to60": 7.6,
+    "666Handling": 76,
+
+    "996TopSpeed": 126,
+    "9960to60": 7.1,
+    "996Handling": 76,
+
+    "969TopSpeed": 126,
+    "9690to60": 7.6,
+    "969Handling": 79,
+
+    "699TopSpeed": 121,
+    "6990to60": 7.1,
+    "699Handling": 79
+}

@@ -1,0 +1,54 @@
+{
+    "rq": 78,
+    "make": "Nissan",
+    "model": "Leaf Nismo RC",
+    "modelYear": 2019,
+    "country": "JP",
+    "topSpeed": 137,
+    "0to60": 3.3,
+    "handling": 85,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Motorsport", "Unique","The Japanese Odyssey","Eco-Friendly"],
+    "isPrize": false,
+
+    "weight": 1220,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 57.43,
+    "ola": 79.2,
+    "description": "That's more liek it, a fully fledged EV racecar with electrifying looks, still slow compared to the Model S, however. Card by Keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/861146600473624586/nissan_leaf_nismo_rc_02.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/861145633133428756/lef_nismo2_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/861145637206622248/lef_nismo2_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/861145641055944744/lef_nismo2_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/861145650060984330/lef_nismo2_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/861145647571140618/lef_nismo2_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/861145645138051092/lef_nismo2_699.jpg",
+
+    "333TopSpeed": 141,
+    "3330to60": 3.1,
+    "333Handling": 88,
+
+    "666TopSpeed": 145,
+    "6660to60": 3.0,
+    "666Handling": 91,
+
+    "996TopSpeed": 148,
+    "9960to60": 2.8,
+    "996Handling": 91,
+
+    "969TopSpeed": 148,
+    "9690to60": 3.0,
+    "969Handling": 94,
+
+    "699TopSpeed": 145,
+    "6990to60": 2.8,
+    "699Handling": 94
+}

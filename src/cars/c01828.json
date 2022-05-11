@@ -1,0 +1,54 @@
+{
+    "rq": 52,
+    "make": ["Stillen", "Nissan"],
+    "model": "300ZX Twin Turbo SMZ",
+    "modelYear": 1995,
+    "country": "US",
+    "topSpeed": 155,
+    "0to60": 5.3,
+    "handling": 83,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1622,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 65.44,
+    "ola": 93.63,
+    "description": "Card by Keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/869499977867616266/stillen_smz.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/869219663769370654/stillen_smz_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/869219667259052042/stillen_smz_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/869219671356882984/stillen_smz_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/869219682320793630/stillen_smz_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/869219677690290316/stillen_smz_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/869219675169488896/stillen_smz_699.jpg",
+
+    "333TopSpeed": 158,
+    "3330to60": 5.0,
+    "333Handling": 86,
+
+    "666TopSpeed": 162,
+    "6660to60": 4.8,
+    "666Handling": 88,
+
+    "996TopSpeed": 165,
+    "9960to60": 4.5,
+    "996Handling": 88,
+
+    "969TopSpeed": 165,
+    "9690to60": 4.8,
+    "969Handling": 92,
+
+    "699TopSpeed": 162,
+    "6990to60": 4.5,
+    "699Handling": 92
+}

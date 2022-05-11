@@ -1,0 +1,56 @@
+{
+    "rq": 36,
+    "make": "Toyota",
+    "model": "Yaris 1.5 Hybrid GR Sport",
+    "modelYear": 2020,
+    "country": "JP",
+    "topSpeed": 110,
+    "0to60": 9.7,
+    "handling": 77,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly","The Japanese Odyssey"],
+    "isPrize": false,
+
+
+    "weight": 1125,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 56.40,
+    "ola": 68.04,
+    "description": "Fun Fact: there was a special GT7 version of this in Spain that came with a free PS5 and GT7! truly an amzing deal. Card by Andu.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/963493807612129360/YarisGRSportHy.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/963494561202720768/YarisGRHy.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/963494433695887460/YarisG10-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/963494573387153458/YarisGRHy-1.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/963494595159785553/YarisGRHy-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/963494607478489168/YarisGRHy-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/963494620535341117/YarisGRHy-699.png",
+
+    "333TopSpeed": 115,
+    "3330to60": 9.2,
+    "333Handling": 80,
+
+    "666TopSpeed": 119,
+    "6660to60": 8.7, 
+    "666Handling": 82,
+
+    "996TopSpeed": 124,
+    "9960to60": 8.2,
+    "996Handling": 82,
+
+    "969TopSpeed": 124,
+    "9690to60": 8.7,
+    "969Handling": 85,
+
+    "699TopSpeed": 119,
+    "6990to60": 8.2,
+    "699Handling": 85
+}

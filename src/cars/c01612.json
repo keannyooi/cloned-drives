@@ -1,0 +1,54 @@
+{
+    "rq": 33,
+    "make": "Mazda",
+    "model": "RX-7",
+    "modelYear": 1978,
+    "country": "JP",
+    "topSpeed": 120,
+    "0to60": 9.3,
+    "handling": 73,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Street Racer","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1065,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 45.29,
+    "ola": 68.67,
+    "description": "Card by DodgeDemon",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/970457610182615060/Mazda_RX-7_1978.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/970458477157838858/Mazda_RX-7_1978_H000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/970458508501872700/Mazda_RX-7_1978_H111.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/970458542769307728/Mazda_RX-7_1978_H222.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/970458603750314094/Mazda_RX-7_1978_H332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/970458590248849438/Mazda_RX-7_1978_H323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/970458568358768650/Mazda_RX-7_1978_H233.png",
+
+    "333TopSpeed": 124,
+    "3330to60": 8.8,
+    "333Handling": 75,
+
+    "666TopSpeed": 129,
+    "6660to60": 8.4,
+    "666Handling": 78,
+
+    "996TopSpeed": 133,
+    "9960to60": 7.9,
+    "996Handling": 78,
+
+    "969TopSpeed": 133,
+    "9690to60": 8.4,
+    "969Handling": 81,
+
+    "699TopSpeed": 129,
+    "6990to60": 7.9,
+    "699Handling": 81
+}

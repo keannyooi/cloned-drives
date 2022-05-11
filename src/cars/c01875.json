@@ -1,0 +1,54 @@
+{
+    "rq": 38,
+    "make": "Toyota",
+    "model": "Camry XLE V6",
+    "modelYear": 1997,
+    "country": "JP",
+    "topSpeed": 130,
+    "0to60": 8.0,
+    "handling": 70,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1460,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 62.99,
+    "ola": 75.00,
+    "description": "Available in a plethora of colors, such as beige, tan, burgundy... Card by ChickenMcNuggets.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/882732019510050896/camry_xle_1997.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/882730252026122260/camry_xle_97_stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/882730288000696340/camry_xle_97_1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/882730311086145556/camry_xle_97_2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/882730392736661504/camry_xle_97_332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/882730363036794950/camry_xle_97_323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/882730330279280690/camry_xle_97_233.png",
+
+    "333TopSpeed": 134,
+    "3330to60": 7.6,
+    "333Handling": 72,
+
+    "666TopSpeed": 138,
+    "6660to60": 7.2,
+    "666Handling": 75,
+
+    "996TopSpeed": 142,
+    "9960to60": 6.8,
+    "996Handling": 75,
+
+    "969TopSpeed": 142,
+    "9690to60": 7.2,
+    "969Handling": 78,
+
+    "699TopSpeed": 138,
+    "6990to60": 6.8,
+    "699Handling": 78
+}

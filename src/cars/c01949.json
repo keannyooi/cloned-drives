@@ -1,0 +1,54 @@
+{
+    "rq": 38,
+    "make": "Toyota",
+    "model": "Yaris Sedan",
+    "modelYear": 2019,
+    "country": "JP",
+    "topSpeed": 119,
+    "0to60": 9.2,
+    "handling": 77,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1083,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 48.17,
+    "ola": 69.57,
+    "description": "Cute Mazda you got there, oh wait. Card by Connor",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/868932163335241768/D.ToyotaYarisSedan.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/868932252187373648/ToyotaYarisSedan.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/868932264698970182/ToyotaYarisSedan-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/868932275092475984/ToyotaYarisSedan-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/868932307422175272/ToyotaYarisSedan-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/868932297775251556/ToyotaYarisSedan-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/868932286068969532/ToyotaYarisSedan-699.png",
+
+    "333TopSpeed": 123,
+    "3330to60": 8.7,
+    "333Handling": 80,
+
+    "666TopSpeed": 128,
+    "6660to60": 8.3,
+    "666Handling": 82,
+
+    "996TopSpeed": 132,
+    "9960to60": 7.8,
+    "996Handling": 82,
+
+    "969TopSpeed": 132,
+    "9690to60": 8.3,
+    "969Handling": 85,
+
+    "699TopSpeed": 128,
+    "6990to60": 7.8,
+    "699Handling": 85
+}

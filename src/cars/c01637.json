@@ -1,0 +1,54 @@
+{
+    "rq": 15,
+    "make": "Mitsubishi",
+    "model": "i-MiEV Cargo Concept",
+    "modelYear": 2009,
+    "country": "JP",
+    "topSpeed": 80,
+    "0to60": 13.5,
+    "handling": 64,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Unique", "Oddity", "Concept", "Eco-Friendly","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1280,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Van",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Electric",
+    "mra": 3.33,
+    "ola": 66.67,
+    "description": "Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/930221404778008586/argoconc.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/930222687064838274/ICargo.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/930222699081515128/ICargo333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/930222708678094908/ICargo666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/930222751048953917/ICargo996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/930222737505529947/ICargo969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/930222717452554250/ICargo699.png",
+
+    "333TopSpeed": 87,
+    "3330to60": 12.8,
+    "333Handling": 66,
+
+    "666TopSpeed": 93,
+    "6660to60": 12.2,
+    "666Handling": 68,
+
+    "996TopSpeed": 100,
+    "9960to60": 11.5,
+    "996Handling": 68,
+
+    "969TopSpeed": 100,
+    "9690to60": 12.2,
+    "969Handling": 71,
+
+    "699TopSpeed": 93,
+    "6990to60": 11.5,
+    "699Handling": 71
+}

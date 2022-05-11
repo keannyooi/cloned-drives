@@ -1,0 +1,54 @@
+{
+    "rq": 8,
+    "make": "Honda",
+    "model": "N360",
+    "modelYear": 1967,
+    "country": "JP",
+    "topSpeed": 71,
+    "0to60": 23.4,
+    "handling": 63,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Kei Car","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 475,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 0,
+    "ola": 42.74,
+    "description": "The Honda's first attempt to compete on the Japanese kei car category. Card by Spence.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/866642276653465671/image0.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/862154656007454730/image0.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/862154698336501790/image0.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/862154739491143680/image0.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/862154805749481472/image0.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/862154848961953822/image0.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/862154879204065280/image0.jpg",
+
+    "333TopSpeed": 78,
+    "3330to60": 22.2,
+    "333Handling": 65,
+
+    "666TopSpeed": 86,
+    "6660to60": 21.1,
+    "666Handling": 67,
+
+    "699TopSpeed": 86,
+    "6990to60": 19.9,
+    "699Handling": 70,
+
+    "969TopSpeed": 93,
+    "9690to60": 21.1,
+    "969Handling": 70,
+
+    "996TopSpeed": 93,
+    "9960to60": 19.9,
+    "996Handling": 67
+}

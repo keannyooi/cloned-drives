@@ -1,0 +1,54 @@
+{
+    "rq": 75,
+    "make": "Mitsubishi",
+    "model": "Lancer Evolution VIII FQ-320",
+    "modelYear": 2004,
+    "country": "JP",
+    "topSpeed": 157,
+    "0to60": 4.7,
+    "handling": 87,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1400,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 72.31,
+    "ola": 72.34,
+    "description": "Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/948544014167187466/evo8fq320.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/948544574928859176/evo8fq320.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/948544583187443772/evo8fq320333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/948544589717987344/evo8fq320666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/948544621301080074/evo8fq320996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/948544610156814406/evo8fq320969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/948544596273659904/evo8fq320699.png",
+
+    "333TopSpeed": 160,
+    "3330to60": 4.5,
+    "333Handling": 90,
+
+    "666TopSpeed": 164,
+    "6660to60": 4.2,
+    "666Handling": 93,
+
+    "996TopSpeed": 167,
+    "9960to60": 4.0,
+    "996Handling": 93,
+
+    "969TopSpeed": 167,
+    "9690to60": 4.2,
+    "969Handling": 97,
+
+    "699TopSpeed": 164,
+    "6990to60": 4.0,
+    "699Handling": 97
+}

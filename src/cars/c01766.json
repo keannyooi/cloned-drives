@@ -1,0 +1,54 @@
+{
+    "rq": 33,
+    "make": "Nissan",
+    "model": "Sentra SR",
+    "modelYear": 2019,
+    "country": "JP",
+    "topSpeed": 125,
+    "0to60": 8.7,
+    "handling": 79,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1413,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 49.15,
+    "ola": 72.69,
+    "description": "Card by Fried.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/885608840920457246/Nissan_Sentra_SR_Card.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/918630223271063642/Nissan_Sentra_SR_Hud.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/918630261724422174/Nissan_Sentra_SR_Hud_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/918630287712342066/Nissan_Sentra_SR_Hud_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/918630355131564093/Nissan_Sentra_SR_Hud_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/918630328992690226/Nissan_Sentra_SR_Hud_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/918630308327337994/Nissan_Sentra_SR_Hud_699.png",
+
+    "333TopSpeed": 129,
+    "3330to60": 8.3,
+    "333Handling": 82,
+
+    "666TopSpeed": 133,
+    "6660to60": 7.8,
+    "666Handling": 84,
+
+    "996TopSpeed": 137,
+    "9960to60": 7.4,
+    "996Handling": 84,
+
+    "969TopSpeed": 137,
+    "9690to60": 7.8,
+    "969Handling": 88,
+
+    "699TopSpeed": 133,
+    "6990to60": 7.4,
+    "699Handling": 88
+}

@@ -1,0 +1,54 @@
+{
+    "rq": 43,
+    "make": "Toyota",
+    "model": "Camry XLE V6",
+    "modelYear": 2005,
+    "country": "JP",
+    "topSpeed": 135,
+    "0to60": 7.4,
+    "handling": 70,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Sleeper","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1439,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 86.05,
+    "ola": 64.86,
+    "description": "Don't ask about the MRA; I don't know either. Card by McNuggets.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/957389519055896606/camry_xle_2005.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/957389253321556049/camry_xle_05_stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/957389277627576402/camry_xle_05_1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/957389305817497650/camry_xle_05_2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/957389372636942387/camry_xle_05_332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/957389353364095066/camry_xle_05_323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/957389327246184518/camry_xle_05_233.png",
+
+    "333TopSpeed": 139,
+    "3330to60": 7.0,
+    "333Handling": 72,
+
+    "666TopSpeed": 143,
+    "6660to60": 6.7,
+    "666Handling": 75,
+
+    "996TopSpeed": 147,
+    "9960to60": 6.3,
+    "996Handling": 75,
+
+    "969TopSpeed": 147,
+    "9690to60": 6.7,
+    "969Handling": 78,
+
+    "699TopSpeed": 143,
+    "6990to60": 6.3,
+    "699Handling": 78
+}

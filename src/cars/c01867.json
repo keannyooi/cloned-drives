@@ -1,0 +1,54 @@
+{
+    "rq": 48,
+    "make": "Toyota",
+    "model": "Avalon XLS",
+    "modelYear": 2005,
+    "country": "JP",
+    "topSpeed": 135,
+    "0to60": 6.4,
+    "handling": 71,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1632,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 63.37,
+    "ola": 77.42,
+    "description": "A big, beige boat that used to be the official car of retirement centers in the US. Card by McNuggets.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/882731995115954236/avalon_05.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/882728844111523861/avalon_xls_last_stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/882728875996610590/avalon_xls_last_1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/882728903398023178/avalon_xls_last_2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/882729014740021288/avalon_xls_last_332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/882728955503857706/avalon_xls_last_323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/882728930694529074/avalon_xls_last_233.png",
+
+    "333TopSpeed": 139,
+    "3330to60": 6.1,
+    "333Handling": 73,
+
+    "666TopSpeed": 143,
+    "6660to60": 5.8,
+    "666Handling": 76,
+
+    "996TopSpeed": 147,
+    "9960to60": 5.4,
+    "996Handling": 76,
+
+    "969TopSpeed": 147,
+    "9690to60": 5.8,
+    "969Handling": 79,
+
+    "699TopSpeed": 143,
+    "6990to60": 5.4,
+    "699Handling": 79
+}

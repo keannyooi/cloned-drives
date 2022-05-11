@@ -70,7 +70,7 @@ module.exports = {
                         if (playerData.money >= moneyLimit && playerData.fuseTokens >= fuseTokenLimit) {
                             const confirmationMessage = new InfoMessage({
                                 channel: message.channel,
-                                title: `Are you sure you want to upgrade your ${carName} from \`${origUpgrade}\` to \`${upgrade}\` with ${moneyEmoji}${moneyLimit} and ${fuseEmoji}${fuseTokenLimit}?`,
+                                title: `Are you sure you want to upgrade your ${carName} from \`${origUpgrade}\` to \`${upgrade}\` with ${moneyEmoji}${moneyLimit.toLocaleString("en")} and ${fuseEmoji}${fuseTokenLimit.toLocaleString("en")}?`,
                                 desc: `You have been given ${defaultChoiceTime / 1000} seconds to consider.`,
                                 author: message.author,
                                 image: car[`racehud${origUpgrade}`]
@@ -101,8 +101,8 @@ module.exports = {
                                         { name: "Gearing Upgrade", value: `\`${origUpgrade[0]} => ${upgrade[0]}\``, inline: true },
                                         { name: "Engine Upgrade", value: `\`${origUpgrade[1]} => ${upgrade[1]}\``, inline: true },
                                         { name: "Chassis Upgrade", value: `\`${origUpgrade[2]} => ${upgrade[2]}\``, inline: true },
-                                        { name: "Current Money Balance", value: `${moneyEmoji}${moneyBalance}`, inline: true },
-                                        { name: "Current Fuse Token Balance", value: `${fuseEmoji}${fuseBalance}`, inline: true }
+                                        { name: "Current Money Balance", value: `${moneyEmoji}${moneyBalance.toLocaleString("en")}`, inline: true },
+                                        { name: "Current Fuse Token Balance", value: `${fuseEmoji}${fuseBalance.toLocaleString("en")}`, inline: true }
                                     ],
                                     image: car[`racehud${upgrade}`]
                                 });
@@ -113,11 +113,11 @@ module.exports = {
                             const errorMessage = new ErrorMessage({
                                 channel: message.channel,
                                 title: "Error, it looks like you don't have enough money and/or fuse tokens.",
-                                desc: `You currently have ${moneyEmoji}${playerData.money}, ${fuseEmoji}${playerData.fuseTokens}.`,
+                                desc: `You currently have ${moneyEmoji}${playerData.money.toLocaleString("en")}, ${fuseEmoji}${playerData.fuseTokens.toLocaleString("en")}.`,
                                 author: message.author,
                                 fields: [
-                                    { name: "Required Amount of Money", value: `${moneyEmoji}${moneyLimit}`, inline: true },
-                                    { name: "Required Amount of Fuse Tokens", value: `${fuseEmoji}${fuseTokenLimit}`, inline: true }
+                                    { name: "Required Amount of Money", value: `${moneyEmoji}${moneyLimit.toLocaleString("en")}`, inline: true },
+                                    { name: "Required Amount of Fuse Tokens", value: `${fuseEmoji}${fuseTokenLimit.toLocaleString("en")}`, inline: true }
                                 ]
                             });
                             return errorMessage.sendMessage({ currentMessage });

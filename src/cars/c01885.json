@@ -1,0 +1,54 @@
+{
+    "rq": 17,
+    "make": "Toyota",
+    "model": "Century Type E",
+    "modelYear": 1982,
+    "country": "JP",
+    "topSpeed": 112,
+    "0to60": 12.7,
+    "handling": 60,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1840,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 49.8,
+    "ola": 59.84,
+    "description": "The definition of Timeless:tm: Card by Keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/867728936162820126/toyota_century_type_e.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/867728190419238912/century_type_e_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/867728193087209492/century_type_e_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/867728197768314910/century_type_e_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/867728206407794688/century_type_e_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/867728204927598592/century_type_e_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/867728200658452490/century_type_e_699.jpg",
+
+    "333TopSpeed": 117,
+    "3330to60": 12.1,
+    "333Handling": 62,
+
+    "666TopSpeed": 121,
+    "6660to60": 11.4,
+    "666Handling": 64,
+
+    "996TopSpeed": 126,
+    "9960to60": 10.8,
+    "996Handling": 62,
+
+    "969TopSpeed": 126,
+    "9690to60": 11.4,
+    "969Handling": 67,
+
+    "699TopSpeed": 121,
+    "6990to60": 10.8,
+    "699Handling": 67
+}

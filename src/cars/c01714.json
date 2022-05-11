@@ -1,0 +1,54 @@
+{
+    "rq": 30,
+    "make": "Nissan",
+    "model": "Fairlady Z 200ZR-I",
+    "modelYear": 1985,
+    "country": "JP",
+    "topSpeed": 112,
+    "0to60": 7.8,
+    "handling": 72,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1280,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 57.56,
+    "ola": 75.64,
+    "description": "Card by Keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/869499148875989093/nissan_fairlady_z_200zr-i.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/869211771318198272/200zr-i_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/869211776737239050/200zr-i_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/869211785327165560/200zr-i_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/869211800611213332/200zr-i_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/869211796672770058/200zr-i_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/869211789286592563/200zr-i_699.jpg",
+
+    "333TopSpeed": 117,
+    "3330to60": 7.4,
+    "333Handling": 74,
+
+    "666TopSpeed": 121,
+    "6660to60": 7.0,
+    "666Handling": 77,
+
+    "996TopSpeed": 126,
+    "9960to60": 6.6,
+    "996Handling": 77,
+
+    "969TopSpeed": 126,
+    "9690to60": 7.0,
+    "969Handling": 80,
+
+    "699TopSpeed": 121,
+    "6990to60": 6.6,
+    "699Handling": 80
+}

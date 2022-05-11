@@ -1,0 +1,54 @@
+{
+    "rq": 33,
+    "make": "Toyota",
+    "model": "Auris 1.6 VVT-i Sol",
+    "modelYear": 2009,
+    "country": "JP",
+    "topSpeed": 121,
+    "0to60": 9.7,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1312,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 51.32,
+    "ola": 63.92,
+    "description": "Card by Connor",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/867157210836893726/D.ToyotaAuris16VVTiSol.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/867157575517601872/ToyotaAuris16VVTi.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/867157591020142602/ToyotaAuris16VVTi-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/867157607989903370/ToyotaAuris16VVTi-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/867157652979318794/ToyotaAuris16VVTi-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/867157637274927114/ToyotaAuris16VVTi-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/867157623475142666/ToyotaAuris16VVTi-699.png",
+
+    "333TopSpeed": 125,
+    "3330to60": 9.2,
+    "333Handling": 75,
+
+    "666TopSpeed": 130,
+    "6660to60": 8.7,
+    "666Handling": 78,
+
+    "996TopSpeed": 134,
+    "9960to60": 8.2,
+    "996Handling": 78,
+
+    "969TopSpeed": 134,
+    "9690to60": 8.7,
+    "969Handling": 81,
+
+    "699TopSpeed": 130,
+    "6990to60": 8.2,
+    "699Handling": 81
+}

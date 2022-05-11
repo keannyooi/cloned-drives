@@ -1,0 +1,54 @@
+{
+    "rq": 34,
+    "make": "Nissan",
+    "model": "Fairlady ZG",
+    "modelYear": 1971,
+    "country": "JP",
+    "topSpeed": 131,
+    "0to60": 7.5,
+    "handling": 73,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Style Icon", "Street Racer","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1010,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 50,
+    "ola": 77.33,
+    "description": "Aerodynamics can change a car drastically. This car further proves the point. Card by Keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/869499516699705344/nissan_fairlady_zg.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/869217975692058684/fairlady_zg_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/869217981647945770/fairlady_zg_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/869217985439612988/fairlady_zg_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/869218003554828328/fairlady_zg_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/869217992708333568/fairlady_zg_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/869217989248053328/fairlady_zg_699.jpg",
+
+    "333TopSpeed": 135,
+    "3330to60": 7.1,
+    "333Handling": 75,
+
+    "666TopSpeed": 139,
+    "6660to60": 6.8,
+    "666Handling": 78,
+
+    "996TopSpeed": 143,
+    "9960to60": 6.4,
+    "996Handling": 78,
+
+    "969TopSpeed": 143,
+    "9690to60": 6.8,
+    "969Handling": 81,
+
+    "699TopSpeed": 139,
+    "6990to60": 6.4,
+    "699Handling": 81
+}

@@ -1,0 +1,54 @@
+{
+    "rq": 61,
+    "make": "Nissan",
+    "model": "Fairlady Z Nismo Type 380RS",
+    "modelYear": 2007,
+    "country": "JP",
+    "topSpeed": 112,
+    "0to60": 4.6,
+    "handling": 87,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer","The Japanese Odyssey"],
+    "isPrize": true,
+
+    "weight": 1510,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 74.19,
+    "ola": 86.96,
+    "description": "Japanese carmakers tend to lock their goodies in their own country. So of course only japan gets to have a 350hp racing derived Z. Card by Keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/869499359887253534/nissan_fairlady_z_nismo_type_380rs.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/869217409326788658/fairlady_380rs_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/869217413525282826/fairlady_380rs_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/869217416843001856/fairlady_380rs_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/869217426657640488/fairlady_380rs_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/869217423004434543/fairlady_380rs_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/869217420424904724/fairlady_380rs_699.jpg",
+
+    "333TopSpeed": 117,
+    "3330to60": 4.4,
+    "333Handling": 90,
+
+    "666TopSpeed": 121,
+    "6660to60": 4.1,
+    "666Handling": 93,
+
+    "996TopSpeed": 126,
+    "9960to60": 3.9,
+    "996Handling": 93,
+
+    "969TopSpeed": 126,
+    "9690to60": 4.1,
+    "969Handling": 97,
+
+    "699TopSpeed": 121,
+    "6990to60": 3.9,
+    "699Handling": 97
+}

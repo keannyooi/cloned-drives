@@ -1,0 +1,54 @@
+{
+    "rq": 24,
+    "make": "Nissan",
+    "model": "Hardbody Pickup 4x2",
+    "modelYear": 1993,
+    "country": "JP",
+    "topSpeed": 89,
+    "0to60": 12.0,
+    "handling": 61,
+    "driveType": "RWD",
+    "tyreType": "All-Surface",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1364,
+    "gc": "High",
+    "seatCount": 4,
+    "bodyStyle": "Pickup",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 15.31,
+    "ola": 63.33,
+    "description": "Card by DodgeDemon",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/968179680958111764/Nissan_Hardbody_Pickup_4x2_1993.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/968180626580705380/Nissan_Hardbody_Pickup_4x2_1993_H000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/968180646793076797/Nissan_Hardbody_Pickup_4x2_1993_H111.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/968180664719540284/Nissan_Hardbody_Pickup_4x2_1993_H222.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/968180714124222494/Nissan_Hardbody_Pickup_4x2_1993_H996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/968180697368002632/Nissan_Hardbody_Pickup_4x2_1993_H969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/968180679575756820/Nissan_Hardbody_Pickup_4x2_1993_H233.png",
+
+    "333TopSpeed": 95,
+    "3330to60": 11.4,
+    "333Handling": 63,
+
+    "666TopSpeed": 101,
+    "6660to60": 10.8,
+    "666Handling": 65,
+
+    "996TopSpeed": 107,
+    "9960to60": 10.2,
+    "996Handling": 65,
+
+    "969TopSpeed": 107,
+    "9690to60": 10.8,
+    "969Handling": 68,
+
+    "699TopSpeed": 101,
+    "6990to60": 10.2,
+    "699Handling": 68
+}

@@ -1,0 +1,54 @@
+{
+    "rq": 27,
+    "make": "Lexus",
+    "model": "IS 200",
+    "modelYear": 1999,
+    "country": "JP",
+    "topSpeed": 134,
+    "0to60": 9.4,
+    "handling": 73,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1435,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Engine Pos",
+    "fuelType": "Petrol",
+    "mra": 56.96,
+    "ola": 65.95,
+    "description": "Entry-level IS with a inline-6 2 litre engine. Card by Connor.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/866803171941417020/E.LexusIS200.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/866803284689813544/LexusIS200.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/866803295100207134/LexusIS200-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/866803305846145034/LexusIS200-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/866803334203965440/LexusIS200-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/866803325291069490/LexusIS200-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/866803316969570324/LexusIS200-699.png",
+
+    "333TopSpeed": 138,
+    "3330to60": 8.9,
+    "333Handling": 75,
+
+    "666TopSpeed": 142,
+    "6660to60": 8.5,
+    "666Handling": 78,
+
+    "996TopSpeed": 146,
+    "9960to60": 8.0,
+    "996Handling": 78,
+
+    "969TopSpeed": 146,
+    "9690to60": 8.5,
+    "969Handling": 81,
+
+    "699TopSpeed": 142,
+    "6990to60": 8.0,
+    "699Handling": 81
+}

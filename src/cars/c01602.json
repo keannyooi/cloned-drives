@@ -1,0 +1,54 @@
+{
+    "rq": 41,
+    "make": "Mazda",
+    "model": "CX-3 Grand Touring AWD",
+    "modelYear": 2016,
+    "country": "JP",
+    "topSpeed": 119,
+    "0to60": 8.6,
+    "handling": 75,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1339,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 53.42,
+    "ola": 65.12,
+    "description": "Card by Olimato.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/869732134783430726/cx-3_gt.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/869731874069676132/cx-3_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/869731888959455263/cx-3_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/869731913089286204/cx-3_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/869731950934507580/cx-3_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/869731935503663154/cx-3_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/869731926523650128/cx-3_699.png",
+
+    "333TopSpeed": 123,
+    "3330to60": 8.2,
+    "333Handling": 77,
+
+    "666TopSpeed": 128,
+    "6660to60": 7.7,
+    "666Handling": 80,
+
+    "996TopSpeed": 132,
+    "9960to60": 7.3,
+    "996Handling": 80,
+
+    "969TopSpeed": 132,
+    "9690to60": 7.7,
+    "969Handling": 83,
+
+    "699TopSpeed": 128,
+    "6990to60": 7.3,
+    "699Handling": 83
+}

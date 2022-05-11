@@ -32,6 +32,7 @@ module.exports = {
             });
 
         async function startEvent(event, currentMessage) {
+            console.log(event.roster[0].rewards);
             const { settings } = await profileModel.findOne({ userID: message.author.id });
             const confirmationMessage = new InfoMessage({
                 channel: message.channel,
@@ -124,10 +125,10 @@ module.exports = {
                                 case "pack":
                                     image = await loadImage(bot.emojis.cache.get(packEmojiID).url);
                                     let pack = require(`../packs/${value}`);
-                                    if (pack["packName"].toLowerCase().contains("elite")) {
+                                    if (pack["packName"].toLowerCase().includes("elite")) {
                                         ctx.fillStyle = "#ff3639";
                                     }
-                                    else if (pack["packName"].toLowerCase().contains("booster")) {
+                                    else if (pack["packName"].toLowerCase().includes("booster")) {
                                         ctx.fillStyle = "#78ff53";
                                     }
                                     else {

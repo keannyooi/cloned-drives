@@ -1,0 +1,54 @@
+{
+    "rq": 43,
+    "make": ["TOM's", "Toyota"],
+    "model": "Century",
+    "modelYear": 2020,
+    "country": "JP",
+    "topSpeed": 155,
+    "0to60": 5.7,
+    "handling": 74,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 2370,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 68.61,
+    "ola": 68.46,
+    "description": "moment. Card by Keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/867728680943616020/toms_century.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/867728418070069248/toms_century_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/867728421903400991/toms_century_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/867728426696966154/toms_century_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/867728518183649310/toms_century_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/867728435727433738/toms_century_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/867728433278484500/toms_century_699.jpg",
+
+    "333TopSpeed": 158,
+    "3330to60": 5.4,
+    "333Handling": 76,
+
+    "666TopSpeed": 162,
+    "6660to60": 5.1,
+    "666Handling": 79,
+
+    "996TopSpeed": 165,
+    "9960to60": 4.8,
+    "996Handling": 79,
+
+    "969TopSpeed": 165,
+    "9690to60": 5.1,
+    "969Handling": 82,
+
+    "699TopSpeed": 162,
+    "6990to60": 4.8,
+    "699Handling": 82
+}

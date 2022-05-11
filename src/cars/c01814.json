@@ -1,0 +1,54 @@
+{
+    "rq": 61,
+    "make": ["Prince", "Nissan"],
+    "model": "R380-I",
+    "modelYear": 1965,
+    "country": "JP",
+    "topSpeed": 159,
+    "0to60": 4.2,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Unique", "Motorsport","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 615,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 66.66,
+    "ola": 104.76,
+    "description": "Prince took a swing at motorsports by building a car for the Japanese GP. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/969546614404415548/R380-I.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/969547044974895124/R380I.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/969547050670764042/R380I1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/969547055842353192/R380I2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/969547076256014346/R380I996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/969547070295904266/R380I969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/969547064184827954/R380I699.png",
+
+    "333TopSpeed": 162,
+    "3330to60": 4.0,
+    "333Handling": 80,
+
+    "666TopSpeed": 166,
+    "6660to60": 3.8,
+    "666Handling": 82,
+
+    "996TopSpeed": 169,
+    "9960to60": 3.6,
+    "996Handling": 82,
+
+    "969TopSpeed": 169,
+    "9690to60": 3.8,
+    "969Handling": 85,
+
+    "699TopSpeed": 166,
+    "6990to60": 3.6,
+    "699Handling": 85
+}

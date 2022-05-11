@@ -1,0 +1,54 @@
+{
+    "rq": 51,
+    "make": "Toyota",
+    "model": "Tacoma V6 TRD Off-Road Double Cab",
+    "modelYear": 2016,
+    "country": "JP",
+    "topSpeed": 114,
+    "0to60": 7.6,
+    "handling": 63,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 2053,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "Pickup",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 52.82,
+    "ola": 74.67,
+    "description": "Card by Macan.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/870245397438791790/Tacoma_V6_TRD_Off-Road_Double_Cab_16.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/870246655914573834/Toyota_Tacoma_V6_TRD_Off-Road_Double_Cab_2016_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/870246657701335060/Toyota_Tacoma_V6_TRD_Off-Road_Double_Cab_2016_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/870246660847058974/Toyota_Tacoma_V6_TRD_Off-Road_Double_Cab_2016_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/870246678689644614/Toyota_Tacoma_V6_TRD_Off-Road_Double_Cab_2016_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/870246673304145971/Toyota_Tacoma_V6_TRD_Off-Road_Double_Cab_2016_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/870246669227290654/Toyota_Tacoma_V6_TRD_Off-Road_Double_Cab_2016_699.png",
+
+    "333TopSpeed": 119,
+    "3330to60": 7.1,
+    "333Handling": 66,
+
+    "666TopSpeed": 123,
+    "6660to60": 6.8,
+    "666Handling": 68,
+
+    "996TopSpeed": 128,
+    "9960to60": 6.4,
+    "996Handling": 68,
+
+    "969TopSpeed": 128,
+    "9690to60": 6.8,
+    "969Handling": 71,
+
+    "699TopSpeed": 123,
+    "6990to60": 6.4,
+    "699Handling": 71
+}

@@ -1,0 +1,54 @@
+{
+    "rq": 58,
+    "make": "Infiniti",
+    "model": "G35x Sedan",
+    "modelYear": 2002,
+    "country": "JP",
+    "topSpeed": 151,
+    "0to60": 6.2,
+    "handling": 76,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1676,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.55,
+    "ola": 67.38,
+    "description": "The Premier Japanese Luxury Sedan Now With The Same AWD System As The Skyline GT-R's. Card by Spence.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/963498041619402773/IMG_3918.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/963498101119782962/91712637-6444-4C16-BA39-E80A67F9A8DF.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/963498120883363900/BAC7F86A-3C37-439E-8E76-7FC2A08D9DB1.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/963498138776268810/D1380A05-1E19-4E51-8D76-33BB18AAE6F3.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/963498177581973545/26217954-9DE7-4D56-9744-8DCDD45080D0.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/963498166005669938/A6B760F5-A1FB-438B-ABFE-7C6B7994B8BB.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/963498152965570610/FEE092B3-9059-4D1B-A5CF-316FC4261A0F.jpg",
+
+    "333TopSpeed": 154,
+    "3330to60": 5.9,
+    "333Handling": 79,
+
+    "666TopSpeed": 158,
+    "6660to60": 5.6,
+    "666Handling": 81,
+
+    "996TopSpeed": 161,
+    "9960to60": 5.3,
+    "996Handling": 81,
+
+    "969TopSpeed": 161,
+    "9690to60": 5.6,
+    "969Handling": 84,
+
+    "699TopSpeed": 158,
+    "6990to60": 5.3,
+    "699Handling": 84
+}

@@ -1,0 +1,54 @@
+{
+    "rq": 51,
+    "make": "Toyota",
+    "model": "Century",
+    "modelYear": 2018,
+    "country": "JP",
+    "topSpeed": 112,
+    "0to60": 5.7,
+    "handling": 70,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 2370,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 68.61,
+    "ola": 68.46,
+    "description": "Sticking to a design for more than 50 years is extremely rare in the automotive world. The fact that the new Century still looks similar to the royalty-and-yakuza-favorite Century of the past is astounding. Card by Keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/867728789324038164/toyota_century_new.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/867727896545591296/century_new_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/867727900684845086/century_new_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/867727904745324554/century_new_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/867727913272737802/century_new_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/867727911456210954/century_new_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/867727907387211826/century_new_699.jpg",
+
+    "333TopSpeed": 117,
+    "3330to60": 5.4,
+    "333Handling": 72,
+
+    "666TopSpeed": 121,
+    "6660to60": 5.1,
+    "666Handling": 75,
+
+    "996TopSpeed": 126,
+    "9960to60": 4.8,
+    "996Handling": 75,
+
+    "969TopSpeed": 126,
+    "9690to60": 5.1,
+    "969Handling": 78,
+
+    "699TopSpeed": 121,
+    "6990to60": 4.8,
+    "699Handling": 78
+}

@@ -1,0 +1,54 @@
+{
+    "rq": 29,
+    "make": "Toyota",
+    "model": "Corolla ZR Hybrid",
+    "modelYear": 2018,
+    "country": "JP",
+    "topSpeed": 111,
+    "0to60": 10.5,
+    "handling": 74,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Japanese Odyssey", "Eco-Friendly"],
+    "isPrize": false,
+
+    "weight": 1408,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 34.77,
+    "ola": 72.38,
+    "description": "Card by Macan.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/870245353524449330/Corolla_ZR_Hybrid_18.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/870246559953072128/Toyota_Corolla_ZR_Hybrid_2018_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/870246577577558026/Toyota_Corolla_ZR_Hybrid_2018_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/870246589086715914/Toyota_Corolla_ZR_Hybrid_2018_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/870246605033451530/Toyota_Corolla_ZR_Hybrid_2018_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/870246602848206888/Toyota_Corolla_ZR_Hybrid_2018_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/870246596397367296/Toyota_Corolla_ZR_Hybrid_2018_699.png",
+
+    "333TopSpeed": 116,
+    "3330to60": 10.0,
+    "333Handling": 76,
+
+    "666TopSpeed": 120,
+    "6660to60": 9.5,
+    "666Handling": 79,
+
+    "996TopSpeed": 125,
+    "9960to60": 8.9,
+    "996Handling": 79,
+
+    "969TopSpeed": 125,
+    "9690to60": 9.5,
+    "969Handling": 82,
+
+    "699TopSpeed": 120,
+    "6990to60": 8.9,
+    "699Handling": 82
+}

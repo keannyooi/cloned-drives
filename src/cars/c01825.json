@@ -1,0 +1,54 @@
+{
+    "rq": 35,
+    "make": "Scion",
+    "model": "iM",
+    "modelYear": 2016,
+    "country": "US",
+    "topSpeed": 112,
+    "0to60": 9.3,
+    "handling": 75,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1380,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 51.67,
+    "ola": 68.82,
+    "description": "The iM only lasted a year before Toyota decided to ditch the Scion marque",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/865682149079121970/D.ScioniM.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/865682246644269106/ScioniM.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/865682258789793822/ScioniM-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/865682270513266698/ScioniM-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/865682307095986206/ScioniM-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/865682295309467688/ScioniM-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/865682280218755132/ScioniM-699.png",
+
+    "333TopSpeed": 117,
+    "3330to60": 8.8,
+    "333Handling": 77,
+
+    "666TopSpeed": 121,
+    "6660to60": 8.4,
+    "666Handling": 80,
+
+    "996TopSpeed": 126,
+    "9960to60": 7.9,
+    "996Handling": 80,
+
+    "969TopSpeed": 126,
+    "9690to60": 8.4,
+    "969Handling": 83,
+
+    "699TopSpeed": 121,
+    "6990to60": 7.9,
+    "699Handling": 83
+}

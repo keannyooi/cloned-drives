@@ -1,0 +1,56 @@
+{
+    "rq": 42,
+    "make": "Nissan",
+    "model": "Titan XD Pro-4X 4x4 Crew Cab Diesel",
+    "modelYear": 2016,
+    "country": "JP",
+    "topSpeed": 104,
+    "0to60": 9.3,
+    "handling": 62,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+
+    "weight": 3316,
+    "gc": "High",
+    "seatCount":6,
+    "bodyStyle": "Pick-Up",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 47.99,
+    "ola": 70.08,
+    "description": "issa diesel brotha. Card by Spence.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/970056995833008168/IMG_4655.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/970059077180862534/TitXDPro4X4x4CCD.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/970059085879869450/TitXDPro4X4x4CCD-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/970059094838894602/TitXDPro4X4x4CCD-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/970059106566144030/TitXDPro4X4x4CCD-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/970059125268578355/TitXDPro4X4x4CCD-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/970059137239097424/TitXDPro4X4x4CCD-699.png",
+
+    "333TopSpeed": 109,
+    "3330to60": 8.8,
+    "333Handling": 64,
+
+    "666TopSpeed": 114,
+    "6660to60": 8.4, 
+    "666Handling": 66,
+
+    "996TopSpeed": 119,
+    "9960to60": 7.9,
+    "996Handling": 66,
+
+    "969TopSpeed": 119,
+    "9690to60": 8.4,
+    "969Handling": 69,
+
+    "699TopSpeed": 114,
+    "6990to60": 7.9,
+    "699Handling": 69
+}

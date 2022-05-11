@@ -1,0 +1,56 @@
+{
+    "rq": 26,
+    "make": "Toyota",
+    "model": "Yaris 1.4 D-4D SR M-MT",
+    "modelYear": 2009,
+    "country": "JP",
+    "topSpeed": 109,
+    "0to60": 11.0,
+    "handling": 70,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+
+    "weight": 1090,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 37.04,
+    "ola": 63.64,
+    "description": "Toyota's Yaris SR is at its sportiest when it is standing still. Card by Andu",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/867322914910896148/Yaris14D4DSRMMT.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/867323696850665482/YarisSRD4D.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/867323706338443304/YarisSRD4D-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/867323713060732988/YarisSRD4D-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/867323725849821204/YarisSRD4D-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/867323737200525333/YarisSRD4D-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/867323751435862046/YarisSRD4D-699.png",
+
+    "333TopSpeed": 114,
+    "3330to60": 10.5,
+    "333Handling": 72,
+
+    "666TopSpeed": 119,
+    "6660to60": 9.9, 
+    "666Handling": 75,
+
+    "996TopSpeed": 123,
+    "9960to60": 9.4,
+    "996Handling": 75,
+
+    "969TopSpeed": 123,
+    "9690to60": 9.9,
+    "969Handling": 78,
+
+    "699TopSpeed": 119,
+    "6990to60": 9.4,
+    "699Handling": 78
+}

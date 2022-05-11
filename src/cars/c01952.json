@@ -1,0 +1,56 @@
+{
+    "rq": 33,
+    "make": "Toyota",
+    "model": "Yaris TS Turbo",
+    "modelYear": 2004,
+    "country": "JP",
+    "topSpeed": 127,
+    "0to60": 7.8,
+    "handling": 72,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch","The Japanese Odyssey"],
+    "isPrize": false,
+
+
+    "weight": 1025,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 52.54,
+    "ola": 74.84,
+    "description": "Put the pedal to the metal!. Card by Andu",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/866935453214179379/YarisTSTurbo.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/866937532749971486/YarisTST.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/866937539515777054/YarisTST-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/866937546088513566/YarisTST-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/866937564832989244/YarisTST-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/866937578861887518/YarisTST-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/866937591299440700/YarisTST-699.png",
+
+    "333TopSpeed": 131,
+    "3330to60": 7.4,
+    "333Handling": 74,
+
+    "666TopSpeed": 135,
+    "6660to60": 7.0, 
+    "666Handling": 77,
+
+    "996TopSpeed": 139,
+    "9960to60": 6.6,
+    "996Handling": 77,
+
+    "969TopSpeed": 139,
+    "9690to60": 7.0,
+    "969Handling": 80,
+
+    "699TopSpeed": 135,
+    "6990to60": 6.6,
+    "699Handling": 80
+}

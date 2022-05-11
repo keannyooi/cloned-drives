@@ -1,0 +1,54 @@
+{
+    "rq": 38,
+    "make": "Toyota",
+    "model": "Camry XLE V6",
+    "modelYear": 2000,
+    "country": "JP",
+    "topSpeed": 130,
+    "0to60": 8.1,
+    "handling": 70,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1475,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 61.83,
+    "ola": 74.07,
+    "description": "Bland like a stick of butter. Card by McNuggets.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/882732016381091870/camry_xle_2000.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/882730083876483133/camry_xle_stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/882730107297480711/camry_xle_1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/882730128772309052/camry_xle_2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/882730180555178074/camry_xle_332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/882730163597619200/camry_xle_323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/882730147579572224/camry_xle_233.png",
+
+    "333TopSpeed": 134,
+    "3330to60": 7.7,
+    "333Handling": 72,
+
+    "666TopSpeed": 138,
+    "6660to60": 7.3,
+    "666Handling": 75,
+
+    "996TopSpeed": 142,
+    "9960to60": 6.9,
+    "996Handling": 75,
+
+    "969TopSpeed": 142,
+    "9690to60": 7.3,
+    "969Handling": 78,
+
+    "699TopSpeed": 138,
+    "6990to60": 6.9,
+    "699Handling": 78
+}

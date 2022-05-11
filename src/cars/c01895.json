@@ -1,0 +1,56 @@
+{
+    "rq": 53,
+    "make": "Toyota",
+    "model": "Crown Athlete G Package",
+    "modelYear": 2003,
+    "country": "JP",
+    "topSpeed": 112,
+    "0to60": 6.0,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+
+    "weight": 1620,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 73.62,
+    "ola": 75,
+    "description": "Usain Bolt be scared. Card by Havvy.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/969596944798322698/ToyotaCro0wnAthleteG.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/969599484294234142/CrownAthleteGP.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/969599496365428797/CrownAthleteGP-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/969599510605086760/CrownAthleteGP-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/969599524886687794/CrownAthleteGP-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/969599537511530536/CrownAthleteGP-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/969599551767978024/CrownAthleteGP-699.png",
+
+    "333TopSpeed": 117,
+    "3330to60": 5.7,
+    "333Handling": 77,
+
+    "666TopSpeed": 121,
+    "6660to60": 5.4, 
+    "666Handling": 80,
+
+    "996TopSpeed": 126,
+    "9960to60": 5.1,
+    "996Handling": 80,
+
+    "969TopSpeed": 126,
+    "9690to60": 5.4,
+    "969Handling": 83,
+
+    "699TopSpeed": 121,
+    "6990to60": 5.1,
+    "699Handling": 83
+}

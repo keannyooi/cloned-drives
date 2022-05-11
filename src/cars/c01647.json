@@ -1,0 +1,54 @@
+{
+    "rq": 59,
+    "make": "Mitsubishi",
+    "model": "Lancer Evolution IV GSR",
+    "modelYear": 1996,
+    "country": "JP",
+    "topSpeed": 112,
+    "0to60": 5.5,
+    "handling": 80,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1350,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 76.39,
+    "ola": 76.36,
+    "description": "Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/930222352065781851/evo4gsr.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/930223239437881405/evo4gsr.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/930223246605942874/evo4gsr333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/930223255615340614/evo4gsr666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/930223282425303050/evo4gsr996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/930223274351284235/evo4gsr969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/930223263639031858/evo4gsr699.png",
+
+    "333TopSpeed": 117,
+    "3330to60": 5.2,
+    "333Handling": 83,
+
+    "666TopSpeed": 121,
+    "6660to60": 5.0,
+    "666Handling": 85,
+
+    "996TopSpeed": 126,
+    "9960to60": 4.7,
+    "996Handling": 85,
+
+    "969TopSpeed": 126,
+    "9690to60": 5.0,
+    "969Handling": 89,
+
+    "699TopSpeed": 121,
+    "6990to60": 4.7,
+    "699Handling": 89
+}

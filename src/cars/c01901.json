@@ -1,0 +1,54 @@
+{
+    "rq": 39,
+    "make": "Toyota",
+    "model": "Highlander Limited 4WD",
+    "modelYear": 2001,
+    "country": "JP",
+    "topSpeed": 109,
+    "0to60": 8.4,
+    "handling": 65,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1787,
+    "gc": "Medium",
+    "seatCount": 7,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 55.7,
+    "ola": 67.06,
+    "description": "A 'Sport Utility Vehicle' based off the Sienna that managed to beat two actual body-on-frame SUVs in a comparison test. Card by McNuggets.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/957389767006359572/highlander_2001.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/957388800571637760/highlander_stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/957388824932139038/highlander_1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/957388849410113647/highlander_2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/957388901478191114/highlander_332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/957388884277338182/highlander_323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/957388866426380368/highlander_233.png",
+
+    "333TopSpeed": 114,
+    "3330to60": 8.0,
+    "333Handling": 67,
+
+    "666TopSpeed": 119,
+    "6660to60": 7.6,
+    "666Handling": 69,
+
+    "996TopSpeed": 123,
+    "9960to60": 7.1,
+    "996Handling": 69,
+
+    "969TopSpeed": 123,
+    "9690to60": 7.6,
+    "969Handling": 72,
+
+    "699TopSpeed": 119,
+    "6990to60": 7.1,
+    "699Handling": 72
+}

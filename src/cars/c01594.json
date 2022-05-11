@@ -1,0 +1,56 @@
+{
+    "rq": 37,
+    "make": "Mazda",
+    "model": "2 Skyactiv-G 115 Genki",
+    "modelYear": 2014,
+    "country": "JP",
+    "topSpeed": 124,
+    "0to60": 9.4,
+    "handling": 77,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+
+    "weight": 1055,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 50.54,
+    "ola": 74.47,
+    "description": "The handling king of the sub compacts, aussie trim. Card by Andu",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/897114627006160936/2Genki.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/897115043190145024/Genki.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/897115050232393808/Genki-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/897115055697584128/Genki-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/897115068783792158/Genki-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/897115096629792809/Genki-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/897115111506985020/Genki-699.png",
+
+    "333TopSpeed": 128,
+    "3330to60": 8.9,
+    "333Handling": 80,
+
+    "666TopSpeed": 132,
+    "6660to60": 8.5, 
+    "666Handling": 82,
+
+    "996TopSpeed": 137,
+    "9960to60": 8.0,
+    "996Handling": 82,
+
+    "969TopSpeed": 137,
+    "9690to60": 8.5,
+    "969Handling": 80,
+
+    "699TopSpeed": 132,
+    "6990to60": 8.0,
+    "699Handling": 85
+}

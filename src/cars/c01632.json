@@ -1,0 +1,54 @@
+{
+    "rq": 100,
+    "make": "Mitsubishi",
+    "model": "Carisma GT Evolution IV Safari",
+    "modelYear": 1998,
+    "country": "JP",
+    "topSpeed": 127,
+    "0to60": 4.1,
+    "handling": 88,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["Motorsport", "Unique","The Japanese Odyssey"],
+    "isPrize": true,
+
+    "weight": 1300,
+    "gc": "High",
+    "seatCount": 2,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 70.67,
+    "ola": 87.80,
+    "description": "Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/930222440657870918/evocarismasafari.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/930223331792273418/CarismaSafari.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/930223338536730654/CarismaSafari333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/930223346182930452/CarismaSafari666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/930223372665774151/CarismaSafari996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/930223363085992007/CarismaSafari969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/930223354185658428/CarismaSafari699.png",
+
+    "333TopSpeed": 131,
+    "3330to60": 3.9,
+    "333Handling": 91,
+
+    "666TopSpeed": 135,
+    "6660to60": 3.7,
+    "666Handling": 94,
+
+    "996TopSpeed": 139,
+    "9960to60": 3.5,
+    "996Handling": 94,
+
+    "969TopSpeed": 139,
+    "9690to60": 3.7,
+    "969Handling": 98,
+
+    "699TopSpeed": 135,
+    "6990to60": 3.5,
+    "699Handling": 98
+}

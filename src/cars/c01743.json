@@ -1,0 +1,54 @@
+{
+    "rq": 90,
+    "make": "Nissan",
+    "model": "GT-R Track Edition",
+    "modelYear": 2018,
+    "country": "JP",
+    "topSpeed": 195,
+    "0to60": 2.9,
+    "handling": 91,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Track Day","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1776,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 72.5,
+    "ola": 68.96,
+    "description": "Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/938017369069060126/GTR2018TRacc.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/938019410067726396/GTRtrack2018.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/938019418200490004/GTRtrack2018333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/938019432154939392/GTRtrack2018666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/938019456662241321/GTRtrack2018996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/938019450458869790/GTRtrack2018969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/938019442460348416/GTRtrack2018699.png",
+
+    "333TopSpeed": 198,
+    "3330to60": 2.8,
+    "333Handling": 94,
+
+    "666TopSpeed": 200,
+    "6660to60": 2.6,
+    "666Handling": 97,
+
+    "996TopSpeed": 203,
+    "9960to60": 2.5,
+    "996Handling": 97,
+
+    "969TopSpeed": 203,
+    "9690to60": 2.6,
+    "969Handling": 101,
+
+    "699TopSpeed": 200,
+    "6990to60": 2.5,
+    "699Handling": 101
+}

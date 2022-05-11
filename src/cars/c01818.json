@@ -1,0 +1,54 @@
+{
+    "rq": 3,
+    "make": ["Prince","Nissan"],
+    "model": "Skyline 1500 ALSI-1",
+    "modelYear": 1957,
+    "country": "JP",
+    "topSpeed": 78,
+    "0to60": 27.6,
+    "handling": 49,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1265,
+    "gc": "High",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 0,
+    "ola": 49.27,
+    "description": "Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/968470979544227880/Skyline1500alsi1.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/968471305659756564/skyline1500alsi1b.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/968471312114802708/skyline1500alsi1b1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/968471317789675530/skyline1500alsi1b2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/968471339713323058/skyline1500alsi1b996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/968471332448768040/skyline1500alsi1b969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/968471325792436234/skyline1500alsi1b699.png",
+
+    "333TopSpeed": 85,
+    "3330to60": 26.2,
+    "333Handling": 51,
+
+    "666TopSpeed": 91,
+    "6660to60": 24.8,
+    "666Handling": 52,
+
+    "996TopSpeed": 98,
+    "9960to60": 23.5,
+    "996Handling": 52,
+
+    "969TopSpeed": 98,
+    "9690to60": 24.8,
+    "969Handling": 54,
+
+    "699TopSpeed": 91,
+    "6990to60": 23.5,
+    "699Handling": 54
+}

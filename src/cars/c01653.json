@@ -1,0 +1,54 @@
+{
+    "rq": 85,
+    "make": "Mitsubishi",
+    "model": "Lancer Evolution IX FQ-360",
+    "modelYear": 2005,
+    "country": "JP",
+    "topSpeed": 157,
+    "0to60": 3.9,
+    "handling": 91,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer", "Super Sedan","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1390,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 68.42,
+    "ola": 76.92,
+    "description": "Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/948547863519055872/evo9fq360.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/948548160660332596/evo9fq360.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/948548186518192158/evo9fq360333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/948548193573040128/evo9fq360666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/948548219774849024/evo9fq360996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/948548210769682472/evo9fq360969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/948548200682373120/evo9fq360699.png",
+
+    "333TopSpeed": 160,
+    "3330to60": 3.7,
+    "333Handling": 94,
+
+    "666TopSpeed": 164,
+    "6660to60": 3.5,
+    "666Handling": 97,
+
+    "996TopSpeed": 167,
+    "9960to60": 3.3,
+    "996Handling": 97,
+
+    "969TopSpeed": 167,
+    "9690to60": 3.5,
+    "969Handling": 101,
+
+    "699TopSpeed": 164,
+    "6990to60": 3.3,
+    "699Handling": 101
+}

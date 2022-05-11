@@ -1,0 +1,56 @@
+{
+    "rq": 32,
+    "make": "Mazda",
+    "model": "Protegé ES",
+    "modelYear": 1995,
+    "country": "JP",
+    "topSpeed": 120,
+    "0to60": 8.9,
+    "handling": 68,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+
+    "weight": 1167,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 46.61,
+    "ola": 74.16,
+    "description": "The uniqueness company sits one out. Card by Churrito.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/965202620346167326/unknown.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/965202921316831252/Mazda_Protege_es_1995_Stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/965202940522545152/Mazda_Protege_es_1995_1_Star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/965202957886963712/Mazda_Protege_es_1995_2_Star.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/965203036123316254/Mazda_Protege_es_1995_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/965202998953402388/Mazda_Protege_es_1995_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/965202975335272448/Mazda_Protege_es_1995_699.png",
+
+    "333TopSpeed": 124,
+    "3330to60": 8.5,
+    "333Handling": 70,
+
+    "666TopSpeed": 129,
+    "6660to60": 8.0, 
+    "666Handling": 72,
+
+    "996TopSpeed": 133,
+    "9960to60": 7.6,
+    "996Handling": 72,
+
+    "969TopSpeed": 133,
+    "9690to60": 8.0,
+    "969Handling": 75,
+
+    "699TopSpeed": 129,
+    "6990to60": 7.6,
+    "699Handling": 75
+}

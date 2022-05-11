@@ -1,0 +1,54 @@
+{
+    "rq": 37,
+    "make": "Honda",
+    "model": "Clarity PHEV",
+    "modelYear": 2017,
+    "country": "JP",
+    "topSpeed": 101,
+    "0to60": 7.6,
+    "handling": 72,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1838,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 49.67,
+    "ola": 81.58,
+    "description": "Card by Keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/861147458772008980/hodna_clarity_phev.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/861144698018201620/clarity_phev_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/861144707991076884/clarity_phev_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/861144711930839060/clarity_phev_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/861144724395130900/clarity_phev_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/861144720662331412/clarity_phev_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/861144716175343636/clarity_phev_699.jpg",
+
+    "333TopSpeed": 106,
+    "3330to60": 7.2,
+    "333Handling": 74,
+
+    "666TopSpeed": 111,
+    "6660to60": 6.8,
+    "666Handling": 77,
+
+    "996TopSpeed": 226,
+    "9960to60": 6.5,
+    "996Handling": 77,
+
+    "969TopSpeed": 116,
+    "9690to60": 6.8,
+    "969Handling": 80,
+
+    "699TopSpeed": 111,
+    "6990to60": 6.5,
+    "699Handling": 80
+}

@@ -1,0 +1,56 @@
+{
+    "rq": 29,
+    "make": "Isuzu",
+    "model": "Impulse Turbo",
+    "modelYear": 1987,
+    "country": "JP",
+    "topSpeed": 129,
+    "0to60": 8.4,
+    "handling": 72,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch","The Japanese Odyssey"],
+    "isPrize": false,
+
+
+    "weight": 1247,
+    "gc": "Medium",
+    "seatCount":4,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 51.38,
+    "ola": 69.46,
+    "description": "Finger on the (im)pulse. Card by Andu.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/948299244614344714/ImpulseT87.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/948299532494585946/ImpulseT.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/948299579630161970/ImpulseT-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/948299592124997673/ImpulseT-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/948299605580341268/ImpulseT-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/948299617655742494/ImpulseT-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/948299626086297660/ImpulseT-699.png",
+
+    "333TopSpeed": 133,
+    "3330to60": 8.0,
+    "333Handling": 74,
+
+    "666TopSpeed": 137,
+    "6660to60": 7.6, 
+    "666Handling": 77,
+
+    "996TopSpeed": 141,
+    "9960to60": 7.1,
+    "996Handling": 77,
+
+    "969TopSpeed": 141,
+    "9690to60": 7.6,
+    "969Handling": 80,
+
+    "699TopSpeed": 137,
+    "6990to60": 7.1,
+    "699Handling": 80
+}

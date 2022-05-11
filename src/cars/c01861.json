@@ -1,0 +1,54 @@
+{
+    "rq": 27,
+    "make": "Toyota",
+    "model": "Auris HSD",
+    "modelYear": 2010,
+    "country": "JP",
+    "topSpeed": 113,
+    "0to60": 11.1,
+    "handling": 71,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1411,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 56.63,
+    "ola": 68.47,
+    "description": "Card by Connor",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/867157156250517515/E.ToyotaAurisHSD.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/867157403875541012/ToyotaAurisHSD.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/867157419292491777/ToyotaAurisHSD-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/867157431867408404/ToyotaAurisHSD-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/867157472510345246/ToyotaAurisHSD-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/867157458791039006/ToyotaAurisHSD-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/867157445809930270/ToyotaAurisHSD-699.png",
+
+    "333TopSpeed": 118,
+    "3330to60": 10.5,
+    "333Handling": 73,
+
+    "666TopSpeed": 122,
+    "6660to60": 10.0,
+    "666Handling": 76,
+
+    "996TopSpeed": 127,
+    "9960to60": 9.4,
+    "996Handling": 76,
+
+    "969TopSpeed": 127,
+    "9690to60": 10.0,
+    "969Handling": 79,
+
+    "699TopSpeed": 122,
+    "6990to60": 9.4,
+    "699Handling": 79
+}

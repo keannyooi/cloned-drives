@@ -1,0 +1,54 @@
+{
+    "rq": 47,
+    "make": "Mazda",
+    "model": "Savanna RX-7",
+    "modelYear": 1985,
+    "country": "JP",
+    "topSpeed": 149,
+    "0to60": 6.3,
+    "handling": 79,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1240,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 56.76,
+    "ola": 73.02,
+    "description": "The Japanese 924/944. Card by DodgeDemon",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/971796793404850266/Mazda_Savanna_RX-7_1985.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/971801463028346910/Mazda_Savanna_RX-7_1985_H000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/971801485115527168/Mazda_Savanna_RX-7_1985_H111.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/971801503801147392/Mazda_Savanna_RX-7_1985_H222.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/971801567953051658/Mazda_Savanna_RX-7_1985_H332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/971801546255921252/Mazda_Savanna_RX-7_1985_H323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/971801521668911194/Mazda_Savanna_RX-7_1985_H233.png",
+
+    "333TopSpeed": 152,
+    "3330to60": 6.0,
+    "333Handling": 82,
+
+    "666TopSpeed": 156,
+    "6660to60": 5.7,
+    "666Handling": 84,
+
+    "996TopSpeed": 159,
+    "9960to60": 5.4,
+    "996Handling": 84,
+
+    "969TopSpeed": 159,
+    "9690to60": 5.7,
+    "969Handling": 88,
+
+    "699TopSpeed": 156,
+    "6990to60": 5.4,
+    "699Handling": 88
+}

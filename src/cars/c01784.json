@@ -1,0 +1,54 @@
+{
+    "rq": 74,
+    "make": "Nissan",
+    "model": "Skyline GT-R V-Spec II (R34)",
+    "modelYear": 2000,
+    "country": "JP",
+    "topSpeed": 167,
+    "0to60": 4.8,
+    "handling": 87,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Silver Screen", "Street Racer","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1540,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 82.76,
+    "ola": 70.83,
+    "description": "Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/886972369074278470/NissanR34VspecII.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/886973145691615232/r34VSpecII.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/886973163085393950/r34VSpecII333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/886973169850777700/r34VSpecII666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/886973192034471976/r34VSpecII996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/886973183750721596/r34VSpecII969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/886973177039814736/r34VSpecII699.png",
+
+    "333TopSpeed": 170,
+    "3330to60": 4.6,
+    "333Handling": 90,
+
+    "666TopSpeed": 173,
+    "6660to60": 4.3,
+    "666Handling": 93,
+
+    "996TopSpeed": 176,
+    "9960to60": 4.1,
+    "996Handling": 93,
+
+    "969TopSpeed": 176,
+    "9690to60": 4.3,
+    "969Handling": 97,
+
+    "699TopSpeed": 173,
+    "6990to60": 4.1,
+    "699Handling": 97
+}

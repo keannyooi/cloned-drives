@@ -1,0 +1,56 @@
+{
+    "rq": 31,
+    "make": "Mitsubishi",
+    "model": "Diamante LS",
+    "modelYear": 1995,
+    "country": "JP",
+    "topSpeed": 149,
+    "0to60": 8.2,
+    "handling": 68,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+
+    "weight": 1531,
+    "gc": "Low",
+    "seatCount":5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 59.85,
+    "ola": 68.29,
+    "description": "Holds up surprisingly well in demolition derbies. Card by ChickenMcNuggets.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/969610168604184576/diamante.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/969597752013127730/Diamante.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/969597764927369286/Diamante-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/969597778563067924/Diamante-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/969598015054704700/Diamante-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/969598051356397618/Diamante-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/969598063977070622/Diamante-699.png",
+
+    "333TopSpeed": 152,
+    "3330to60": 7.8,
+    "333Handling": 70,
+
+    "666TopSpeed": 156,
+    "6660to60": 7.4, 
+    "666Handling": 72,
+
+    "996TopSpeed": 159,
+    "9960to60": 7.0,
+    "996Handling": 72,
+
+    "969TopSpeed": 159,
+    "9690to60": 7.4,
+    "969Handling": 75,
+
+    "699TopSpeed": 156,
+    "6990to60": 7.0,
+    "699Handling": 75
+}

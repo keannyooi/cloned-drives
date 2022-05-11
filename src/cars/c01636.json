@@ -1,0 +1,54 @@
+{
+    "rq": 53,
+    "make": "Mitsubishi",
+    "model": "GTO Twin Turbo",
+    "modelYear": 1990,
+    "country": "JP",
+    "topSpeed": 112,
+    "0to60": 5.9,
+    "handling": 80,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1700,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 62.11,
+    "ola": 64.41,
+    "description": "Card by Havvy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/866711461316788254/MitsubishiGTOTT.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/866711530149904415/gto_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/866711534570307634/gto_111.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/866711538198380654/gto_222.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/866711554346582067/gto_332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/866711548260515850/gto_323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/866711543260643368/gto_233.png",
+
+    "333TopSpeed": 117,
+    "3330to60": 5.6,
+    "333Handling": 83,
+
+    "666TopSpeed": 121,
+    "6660to60": 5.3,
+    "666Handling": 85,
+
+    "996TopSpeed": 126,
+    "9960to60": 5.0,
+    "996Handling": 85,
+
+    "969TopSpeed": 126,
+    "9690to60": 5.3,
+    "969Handling": 89,
+
+    "699TopSpeed": 121,
+    "6990to60": 5.0,
+    "699Handling": 89
+}

@@ -1,0 +1,56 @@
+{
+    "rq": 10,
+    "make": "Suzuki",
+    "model": "SC100",
+    "modelYear": 1979,
+    "country": "JP",
+    "topSpeed": 84,
+    "0to60": 16.8,
+    "handling": 59,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+
+    "weight": 655,
+    "gc": "Medium",
+    "seatCount":4,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 5.63,
+    "ola": 57.31,
+    "description": "Nicknamed Whizzkid in the UK, also named Cervo, for its engine in the back that powers the rear wheels making it a whole lot of fun for its price. Card by Keanny.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/969596543516692540/suzuki_sc100.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/969598982236037140/SC100.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/969598992575004712/SC100-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/969599000988766330/SC100-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/969599012586008626/SC100-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/969599032785780836/SC100-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/969599047419715684/SC100-699.png",
+
+    "333TopSpeed": 90,
+    "3330to60": 16.0,
+    "333Handling": 61,
+
+    "666TopSpeed": 96,
+    "6660to60": 15.1, 
+    "666Handling": 63,
+
+    "996TopSpeed": 103,
+    "9960to60": 14.3,
+    "996Handling": 63,
+
+    "969TopSpeed": 103,
+    "9690to60": 15.1,
+    "969Handling": 65,
+
+    "699TopSpeed": 96,
+    "6990to60": 14.3,
+    "699Handling": 65
+}

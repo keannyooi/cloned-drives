@@ -1,0 +1,54 @@
+{
+    "rq": 55,
+    "make": "Toyota",
+    "model": "Camry LE V6",
+    "modelYear": 2010,
+    "country": "JP",
+    "topSpeed": 143,
+    "0to60": 5.9,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1570,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 68.6,
+    "ola": 91.53,
+    "description": "The cheapest way to get into a V-6 Camry. Card by McNuggets.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/882732004540579880/camry_le.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/882730934087073832/camry_le_stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/882730955914240040/camry_le_1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/882730972997640242/camry_le_2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/882731048658673684/camry_le_332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/882731006921170945/camry_le_323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/882730988285886464/camry_le_233.png",
+
+    "333TopSpeed": 147,
+    "3330to60": 5.6,
+    "333Handling": 75,
+
+    "666TopSpeed": 150,
+    "6660to60": 5.3,
+    "666Handling": 78,
+
+    "996TopSpeed": 154,
+    "9960to60": 5.0,
+    "996Handling": 78,
+
+    "969TopSpeed": 154,
+    "9690to60": 5.3,
+    "969Handling": 81,
+
+    "699TopSpeed": 150,
+    "6990to60": 5.0,
+    "699Handling": 81
+}

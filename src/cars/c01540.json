@@ -1,0 +1,56 @@
+{
+    "rq": 5,
+    "make": "Honda",
+    "model": "Beat",
+    "modelYear": 1991,
+    "country": "JP",
+    "topSpeed": 83,
+    "0to60": 12.7,
+    "handling": 68,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Japanese Odyssey", "Kei Car"],
+    "isPrize": false,
+
+
+    "weight": 760,
+    "gc": "Low",
+    "seatCount":2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 19.47,
+    "ola": 66.14,
+    "description": "Let the beat take over. Card by Havvy.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/963513233279418398/HondaBEat.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/963513806561091675/Beat.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/963513819508920330/Beat-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/963513828291797032/Beat-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/963513842145562634/Beat-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/963513857182142514/Beat-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/963513871509909555/Beat-699.png",
+
+    "333TopSpeed": 89,
+    "3330to60": 12.1,
+    "333Handling": 70,
+
+    "666TopSpeed": 96,
+    "6660to60": 11.4, 
+    "666Handling": 72,
+
+    "996TopSpeed": 102,
+    "9960to60": 10.8,
+    "996Handling": 72,
+
+    "969TopSpeed": 102,
+    "9690to60": 11.4,
+    "969Handling": 75,
+
+    "699TopSpeed": 96,
+    "6990to60": 10.8,
+    "699Handling": 75
+}

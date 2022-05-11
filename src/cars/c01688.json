@@ -1,0 +1,54 @@
+{
+    "rq": 68,
+    "make": "Mitsubishi",
+    "model": "Lancer Evolution VIII GSR",
+    "modelYear": 2003,
+    "country": "JP",
+    "topSpeed": 155,
+    "0to60": 5.1,
+    "handling": 84,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1410,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 67.11,
+    "ola": 66.67,
+    "description": "Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/948545144012042240/evo8gsr.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/948545422127951932/evo8GSR.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/948545427496636476/evo8GSR333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/948545432584339546/evo8GSR666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/948545454705098822/evo8GSR996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/948545448698871848/evo8GSR969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/948545441493032991/evo8GSR699.png",
+
+    "333TopSpeed": 158,
+    "3330to60": 4.8,
+    "333Handling": 87,
+
+    "666TopSpeed": 162,
+    "6660to60": 4.6,
+    "666Handling": 90,
+
+    "996TopSpeed": 165,
+    "9960to60": 4.3,
+    "996Handling": 90,
+
+    "969TopSpeed": 165,
+    "9690to60": 4.6,
+    "969Handling": 93,
+
+    "699TopSpeed": 162,
+    "6990to60": 4.3,
+    "699Handling": 93
+}

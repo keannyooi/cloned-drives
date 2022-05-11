@@ -1,0 +1,54 @@
+{
+    "rq": 40,
+    "make": "Subaru",
+    "model": "Impreza 2.0i Sport Sedan",
+    "modelYear": 2017,
+    "country": "JP",
+    "topSpeed": 120,
+    "0to60": 8.7,
+    "handling": 75,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1412,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 51.48,
+    "ola": 75.86,
+    "description": "An Impreza without the thrills and only with the basics. Card by Spence.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/860168405508030514/image0.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/860170083946987579/image0.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/860170121200533554/image0.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/860170150903939072/image0.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/860170173918871562/image0.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/860170199076700170/image0.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/860170270454054912/image0.jpg",
+
+    "333TopSpeed": 124,
+    "3330to60": 8.3,
+    "333Handling": 77,
+
+    "666TopSpeed": 129,
+    "6660to60": 7.8,
+    "666Handling": 80,
+
+    "699TopSpeed": 129,
+    "6990to60": 7.4,
+    "699Handling": 83,
+
+    "969TopSpeed": 133,
+    "9690to60": 7.8,
+    "969Handling": 83,
+
+    "996TopSpeed": 133,
+    "9960to60": 7.4,
+    "996Handling": 80
+}

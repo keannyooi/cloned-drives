@@ -1,0 +1,54 @@
+{
+    "rq": 38,
+    "make": "Toyota",
+    "model": "Avalon XLS",
+    "modelYear": 1995,
+    "country": "JP",
+    "topSpeed": 130,
+    "0to60": 8.1,
+    "handling": 70,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1472,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 67.5,
+    "ola": 76.54,
+    "description": "Driving one has been likened to an out-of-body experience, if said experience was sitting in the Nashville Airport staging area and watching infomercials. Card by McNuggets.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/882732005073244160/avalon_95.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/882728470080270346/avalon_xls_stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/882728545674219600/avalon_xls_1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/882728571578253372/avalon_xls_2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/882728624808136744/avalon_xls_332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/882728605631803402/avalon_xls_323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/882728588766486578/avalon_xls_233.png",
+
+    "333TopSpeed": 134,
+    "3330to60": 7.7,
+    "333Handling": 74,
+
+    "666TopSpeed": 138,
+    "6660to60": 7.3,
+    "666Handling": 77,
+
+    "996TopSpeed": 142,
+    "9960to60": 6.9,
+    "996Handling": 77,
+
+    "969TopSpeed": 142,
+    "9690to60": 7.3,
+    "969Handling": 80,
+
+    "699TopSpeed": 138,
+    "6990to60": 6.9,
+    "699Handling": 80
+}

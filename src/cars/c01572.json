@@ -1,0 +1,56 @@
+{
+    "rq": 30,
+    "make": "Infiniti",
+    "model": "M30",
+    "modelYear": 1990,
+    "country": "JP",
+    "topSpeed": 126,
+    "0to60": 9.5,
+    "handling": 70,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+
+    "weight": 1512,
+    "gc": "Medium",
+    "seatCount":4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 53.67,
+    "ola": 71.57,
+    "description": "Samsung Galaxy M30. Card by Cenard.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/969595898348851240/IMG_20210406_191104.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/969598345490350140/M30.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/969598355745406996/M30-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/969598369330790420/M30-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/969598383276834896/M30-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/969598393695481997/M30-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/969598407448621066/M30-699.png",
+
+    "333TopSpeed": 130,
+    "3330to60": 9.0,
+    "333Handling": 72,
+
+    "666TopSpeed": 134,
+    "6660to60": 8.6, 
+    "666Handling": 75,
+
+    "996TopSpeed": 138,
+    "9960to60": 8.1,
+    "996Handling": 75,
+
+    "969TopSpeed": 138,
+    "9690to60": 8.6,
+    "969Handling": 78,
+
+    "699TopSpeed": 134,
+    "6990to60": 8.1,
+    "699Handling": 78
+}

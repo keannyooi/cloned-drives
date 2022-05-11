@@ -1,0 +1,54 @@
+{
+    "rq": 15,
+    "make": "Honda",
+    "model": "Vamos",
+    "modelYear": 1970,
+    "country": "JP",
+    "topSpeed": 56,
+    "0to60": 99.9,
+    "handling": 56,
+    "driveType": "RWD",
+    "tyreType": "Off-Road",
+    "tags": ["Kei Car","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 520,
+    "gc": "High",
+    "seatCount": 4,
+    "bodyStyle": ["Pickup", "Convertible"],
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 0,
+    "ola": 42.61,
+    "description": "A little Honda kei offroader that aims to associate the off-road image like they did on their bikes. Card by Spence.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/865775325190946846/image0.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/862154032746987520/image0.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/862154431872892928/image0.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/862154461857841152/image0.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/862154491357036595/image0.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/862154520950865950/image0.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/862154552295555082/image0.jpg",
+
+    "333TopSpeed": 65,
+    "3330to60": 43.7,
+    "333Handling": 58,
+
+    "666TopSpeed": 73,
+    "6660to60": 41.4,
+    "666Handling": 60,
+
+    "699TopSpeed": 73,
+    "6990to60": 39.1,
+    "699Handling": 62,
+
+    "969TopSpeed": 82,
+    "9690to60": 41.4,
+    "969Handling": 62,
+
+    "996TopSpeed": 82,
+    "9960to60": 39.1,
+    "996Handling": 60
+}

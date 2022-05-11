@@ -4,6 +4,7 @@ const bot = require("../../config/config.js");
 const { InfoMessage } = require("../classes/classes.js");
 const { currentEventsChannelID } = require("../consts/consts.js");
 const carNameGen = require("./carNameGen.js");
+const listRewards = require("./listRewards.js");
 const reqDisplay = require("./reqDisplay.js");
 const eventModel = require("../../models/eventSchema.js");
 
@@ -24,7 +25,7 @@ async function endEvent(event) {
             let currentCar = require(`../../cars/${event.roster[i].carID}`);
             let track = require(`../../tracks/${event.roster[i].track}`);
             let field = {
-                name: `Round ${i}`,
+                name: `Round ${i + 1}`,
                 value: `Car: ${carNameGen({ currentCar, rarity: true, upgrade: event.roster[i].upgrade })}
                 Track: ${track["trackName"]}
                 Reqs: ${reqDisplay(event.roster[i].reqs)}

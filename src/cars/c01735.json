@@ -1,0 +1,54 @@
+{
+    "rq": 80,
+    "make": "Nissan",
+    "model": "GT-R Nismo Clubsport Package",
+    "modelYear": 2008,
+    "country": "JP",
+    "topSpeed": 193,
+    "0to60": 3.6,
+    "handling": 88,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Supercar","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1720,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 70.38,
+    "ola": 76.82,
+    "description": "Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/948591365728641074/GTRNismoClubsportPDK08.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/948591661242548274/GTRNismoClubsport.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/948591667127136266/GTRNismoClubsport333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/948591673779302400/GTRNismoClubsport666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/948591702040531034/GTRNismoClubsport996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/948591689705070622/GTRNismoClubsport969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/948591681798815784/GTRNismoClubsport699.png",
+
+    "333TopSpeed": 196,
+    "3330to60": 3.4,
+    "333Handling": 91,
+
+    "666TopSpeed": 198,
+    "6660to60": 3.2,
+    "666Handling": 94,
+
+    "996TopSpeed": 201,
+    "9960to60": 3.1,
+    "996Handling": 94,
+
+    "969TopSpeed": 201,
+    "9690to60": 3.2,
+    "969Handling": 98,
+
+    "699TopSpeed": 198,
+    "6990to60": 3.1,
+    "699Handling": 98
+}

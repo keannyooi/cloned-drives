@@ -1,0 +1,54 @@
+{
+    "rq": 96,
+    "make": ["HKS", "Mitsubishi"],
+    "model": "Lancer Evolution IX CT230R-NGV",
+    "modelYear": 2013,
+    "country": "JP",
+    "topSpeed": 173,
+    "0to60": 2.6,
+    "handling": 94,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Oddity", "Motorsport", "Unique", "Eco-Friendly", "Tuner", "The Japanese Odyssey"],
+    "isPrize": true,
+
+    "weight": 1088,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": ["Hybrid"],
+    "mra": 87.28,
+    "ola": 75.23,
+    "description": "After the car was retired from competitive racing HKS added a CNG tank and made it so the car could opperate using both CNG and Petrol. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/869168797808984104/ECOEVO.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/869169299460358194/blueHKSEVO.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/869169306829742100/blueHKSEVO333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/869169314215890944/blueHKSEVO666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/869169344859492392/blueHKSEVO996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/869169334163996702/blueHKSEVO969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/869169326953992192/blueHKSEVO699.png",
+
+    "333TopSpeed": 176,
+    "3330to60": 2.5,
+    "333Handling": 97,
+
+    "666TopSpeed": 179,
+    "6660to60": 2.3,
+    "666Handling": 100,
+
+    "996TopSpeed": 182,
+    "9960to60": 2.2,
+    "996Handling": 100,
+
+    "969TopSpeed": 182,
+    "9690to60": 2.3,
+    "969Handling": 104,
+
+    "699TopSpeed": 179,
+    "6990to60": 2.2,
+    "699Handling": 104
+}

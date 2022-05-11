@@ -1,0 +1,56 @@
+{
+    "rq": 19,
+    "make": "Toyota",
+    "model": "Yaris 1.0 Active",
+    "modelYear": 2017,
+    "country": "JP",
+    "topSpeed": 98,
+    "0to60": 14.8,
+    "handling": 70,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+
+    "weight": 996,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 16.55,
+    "ola": 56.88,
+    "description": "Smallest engine got the grunt and the doubts ready on tap. Card by Andu",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/868587289301909514/Yaris10Active.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/868587866849181707/Yaris10Active.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/868587880103161886/Yaris10Active-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/868587880438710292/Yaris10Active-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/868587890756685864/Yaris10Active-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/868587910394433567/Yaris10Active-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/868587923283525683/Yaris10Active-699.png",
+
+    "333TopSpeed": 103,
+    "3330to60": 14.1,
+    "333Handling": 72,
+
+    "666TopSpeed": 109,
+    "6660to60": 13.3, 
+    "666Handling": 75,
+
+    "996TopSpeed": 114,
+    "9960to60": 12.6,
+    "996Handling": 75,
+
+    "969TopSpeed": 114,
+    "9690to60": 13.3,
+    "969Handling": 78,
+
+    "699TopSpeed": 109,
+    "6990to60": 12.6,
+    "699Handling": 78
+}

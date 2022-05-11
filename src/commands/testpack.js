@@ -11,7 +11,6 @@ module.exports = {
     usage: ["<pack name>", "-<pack id>"],
     args: 1,
     category: "Miscellaneous",
-    cooldown: 5,
     description: "Opens a pack, however the cars in said pack won't be added into your garage and you won't be charged. Perfect for those who have a gambling addiction.",
     async execute(message, args) {
         let query = args.map(i => i.toLowerCase());

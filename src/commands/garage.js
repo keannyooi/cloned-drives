@@ -16,7 +16,7 @@ const profileModel = require("../models/profileSchema.js");
 module.exports = {
     name: "garage",
     aliases: ["g"],
-    usage: ["[username] | [page number] | -s [sorting criteria]"],
+    usage: ["[user]", "[user] [page number]", "[user] -s [sorting criteria]", "[user] [page number] -s [sorting criteria]"],
     args: 0,
     category: "Configuration",
     description: "Shows your (or other people's) garage.",

@@ -1,0 +1,54 @@
+{
+    "rq": 106,
+    "make": "Aspark",
+    "model": "Owl",
+    "modelYear": 2021,
+    "country": "JP",
+    "topSpeed": 249,
+    "0to60": 1.7,
+    "handling": 92,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Unique", "Hypercar", "Ultra Expensive", "The Japanese Odyssey"],
+    "isPrize": true,
+
+    "weight": 1900,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 121.41,
+    "ola": 105.88,
+    "description": "Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/966803673424482304/AsparkOWL.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/966804353061097512/Owl.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/966804360086552626/Owl1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/966804371323117648/Owl2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/966804395390013440/Owl996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/966804388641382440/Owl969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/966804382580633660/Owl699.png",
+
+    "333TopSpeed": 251,
+    "3330to60": 1.6,
+    "333Handling": 95,
+
+    "666TopSpeed": 253,
+    "6660to60": 1.5,
+    "666Handling": 98,
+
+    "996TopSpeed": 255,
+    "9960to60": 1.4,
+    "996Handling": 98,
+
+    "969TopSpeed": 255,
+    "9690to60": 1.5,
+    "969Handling": 102,
+
+    "699TopSpeed": 253,
+    "6990to60": 1.4,
+    "699Handling": 102
+}

@@ -1,0 +1,54 @@
+{
+    "rq": 41,
+    "make": "Honda",
+    "model": "CR-X del Sol SiR",
+    "modelYear": 1992,
+    "country": "JP",
+    "topSpeed": 112,
+    "0to60": 6.7,
+    "handling": 75,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1090,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 53.6,
+    "ola": 80.6,
+    "description": "crx the sun sir cate the second. Card by Havvy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/864133212631466024/HondaCR-XdelSolSiR.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/864133336259362826/delsol_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/864133348322836490/delsol_111.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/864133355854888970/delsol_222.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/864133372234563584/delsol_332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/864133367527112714/delsol_323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/864133361455071263/delsol_233.png",
+
+    "333TopSpeed": 117,
+    "3330to60": 6.4,
+    "333Handling": 77,
+
+    "666TopSpeed": 120,
+    "6660to60": 6.0,
+    "666Handling": 80,
+
+    "996TopSpeed": 126,
+    "9960to60": 5.7,
+    "996Handling": 80,
+
+    "969TopSpeed": 126,
+    "9690to60": 6.0,
+    "969Handling": 83,
+
+    "699TopSpeed": 121,
+    "6990to60": 5.7,
+    "699Handling": 83
+}

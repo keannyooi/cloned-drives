@@ -1,0 +1,54 @@
+{
+    "rq": 49,
+    "make": "Toyota",
+    "model": "RAV4 Edge",
+    "modelYear": 2019,
+    "country": "JP",
+    "topSpeed": 122,
+    "0to60": 8.3,
+    "handling": 74,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1658,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 59.71,
+    "ola": 72.29,
+    "description": "Card by Macan.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/869483717167554570/RAV4_Edge_19.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/869484447840493608/Toyota_RAV4_Edge_2019_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/869484452101914684/Toyota_RAV4_Edge_2019_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/869484453251129354/Toyota_RAV4_Edge_2019_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/869484470795902976/Toyota_RAV4_Edge_2019_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/869484467809554482/Toyota_RAV4_Edge_2019_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/869484461400670278/Toyota_RAV4_Edge_2019_699.png",
+
+    "333TopSpeed": 126,
+    "3330to60": 7.9,
+    "333Handling": 76,
+
+    "666TopSpeed": 131,
+    "6660to60": 7.5,
+    "666Handling": 79,
+
+    "996TopSpeed": 135,
+    "9960to60": 7.1,
+    "996Handling": 79,
+
+    "969TopSpeed": 135,
+    "9690to60": 7.5,
+    "969Handling": 82,
+
+    "699TopSpeed": 131,
+    "6990to60": 7.1,
+    "699Handling": 82
+}

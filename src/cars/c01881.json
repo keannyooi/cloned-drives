@@ -1,0 +1,54 @@
+{
+    "rq": 48,
+    "make": "Toyota",
+    "model": "Century GRMN",
+    "modelYear": 2018,
+    "country": "JP",
+    "topSpeed": 155,
+    "0to60": 5.7,
+    "handling": 72,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Unique","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 2370,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 68.61,
+    "ola": 68.46,
+    "description": "Akio's one-off Century. Card by Keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/867728761863536640/toyota_century_grmn.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/867727839913836544/century_grmn_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/867727844272242729/century_grmn_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/867727847522566184/century_grmn_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/867727860282425355/century_grmn_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/867727857668194304/century_grmn_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/867727854536097812/century_grmn_699.jpg",
+
+    "333TopSpeed": 158,
+    "3330to60": 5.4,
+    "333Handling": 74,
+
+    "666TopSpeed": 162,
+    "6660to60": 5.1,
+    "666Handling": 77,
+
+    "996TopSpeed": 165,
+    "9960to60": 4.8,
+    "996Handling": 77,
+
+    "969TopSpeed": 165,
+    "9690to60": 5.1,
+    "969Handling": 80,
+
+    "699TopSpeed": 162,
+    "6990to60": 4.8,
+    "699Handling": 80
+}

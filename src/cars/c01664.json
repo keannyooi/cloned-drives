@@ -1,0 +1,54 @@
+{
+    "rq": 47,
+    "make": "Mitsubishi",
+    "model": "Lancer Evolution MiEV",
+    "modelYear": 2005,
+    "country": "JP",
+    "topSpeed": 112,
+    "0to60": 7.7,
+    "handling": 79,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Oddity", "Concept", "Unique", "Eco-Friendly","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1490,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 62.60,
+    "ola": 77.92,
+    "description": "An Electric Evo. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/869165996877951016/evomiev.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/869166067220635669/evoElectric.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/869166073797279784/evoElectric333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/869166081808420894/evoElectric666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/869166107691462656/evoElectric996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/869166098749222912/evoElectric969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/869166091203653642/evoElectric699.png",
+
+    "333TopSpeed": 117,
+    "3330to60": 7.3,
+    "333Handling": 82,
+
+    "666TopSpeed": 121,
+    "6660to60": 6.9,
+    "666Handling": 84,
+
+    "996TopSpeed": 126,
+    "9960to60": 6.5,
+    "996Handling": 84,
+
+    "969TopSpeed": 126,
+    "9690to60": 6.9,
+    "969Handling": 88,
+
+    "699TopSpeed": 121,
+    "6990to60": 6.5,
+    "699Handling": 88
+}

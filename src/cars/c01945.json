@@ -1,0 +1,56 @@
+{
+    "rq": 37,
+    "make": "Toyota",
+    "model": "Yaris Hatchback",
+    "modelYear": 2020,
+    "country": "JP",
+    "topSpeed": 119,
+    "0to60": 9.4,
+    "handling": 77,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+
+    "weight": 1094,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 49.21,
+    "ola": 73.19,
+    "description": "Cool looking mazda dude, oh wait. Card by Andu.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/963493704134447104/YarisHatch20.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/963494092589891614/YarisHatch20.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/963494158742474832/YarisHatch20-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/963494174026518628/YarisHatch20-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/963494200513548398/YarisHatch20-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/963494213998215199/YarisHatch20-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/963494227445174362/YarisHatch20-699.png",
+
+    "333TopSpeed": 123,
+    "3330to60": 8.9,
+    "333Handling": 80,
+
+    "666TopSpeed": 128,
+    "6660to60": 8.5, 
+    "666Handling": 82,
+
+    "996TopSpeed": 132,
+    "9960to60": 8.0,
+    "996Handling": 82,
+
+    "969TopSpeed": 132,
+    "9690to60": 8.5,
+    "969Handling": 85,
+
+    "699TopSpeed": 128,
+    "6990to60": 8.0,
+    "699Handling": 85
+}

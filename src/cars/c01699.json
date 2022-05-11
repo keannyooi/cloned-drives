@@ -1,0 +1,54 @@
+{
+    "rq": 47,
+    "make": "Mitsubishi",
+    "model": "Oz TMR 380 Concept",
+    "modelYear": 2006,
+    "country": "AU",
+    "topSpeed": 136,
+    "0to60": 5.8,
+    "handling": 71,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Concept","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1650,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 64.44,
+    "ola": 72.41,
+    "description": "Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/912470741876891698/MitsubishiOZTMRConcept.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/912471344967454740/OZTMR.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/912471354807308309/OZTMR333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/912471364798128168/OZTMR666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/912471395768872980/OZTMR996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/912471384700112896/OZTMR969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/912471374801555476/OZTMR699.png",
+
+    "333TopSpeed": 140,
+    "3330to60": 5.5,
+    "333Handling": 73,
+
+    "666TopSpeed": 144,
+    "6660to60": 5.2,
+    "666Handling": 76,
+
+    "996TopSpeed": 147,
+    "9960to60": 4.9,
+    "996Handling": 76,
+
+    "969TopSpeed": 147,
+    "9690to60": 5.2,
+    "969Handling": 79,
+
+    "699TopSpeed": 144,
+    "6990to60": 4.9,
+    "699Handling": 79
+}

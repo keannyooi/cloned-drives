@@ -1,0 +1,54 @@
+{
+    "rq": 36,
+    "make": "Nissan",
+    "model": "Stagea 25 RS",
+    "modelYear": 1998,
+    "country": "JP",
+    "topSpeed": 112,
+    "0to60": 8.0,
+    "handling": 71,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1490,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 57.55,
+    "ola": 80.00,
+    "description": "Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/968272624004243566/Stagea25RS.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/968273441272791130/Stagea25RS.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/968273447157366804/Stagea25RS1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/968273452853243945/Stagea25RS2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/968273474122555423/Stagea25RS996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/968273467231309874/Stagea25RS969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/968273459631255572/Stagea25RS699.png",
+
+    "333TopSpeed": 117,
+    "3330to60": 7.6,
+    "333Handling": 73,
+
+    "666TopSpeed": 121,
+    "6660to60": 7.2,
+    "666Handling": 76,
+
+    "996TopSpeed": 126,
+    "9960to60": 6.8,
+    "996Handling": 76,
+
+    "969TopSpeed": 126,
+    "9690to60": 7.2,
+    "969Handling": 79,
+
+    "699TopSpeed": 121,
+    "6990to60": 6.8,
+    "699Handling": 79
+}

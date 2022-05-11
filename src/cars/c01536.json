@@ -1,0 +1,54 @@
+{
+    "rq": 51,
+    "make": ["GReddy", "Nissan"],
+    "model": "Fugu Z",
+    "modelYear": 2015,
+    "country": "JP",
+    "topSpeed": 178,
+    "0to60": 5.5,
+    "handling": 79,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1100,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 84.5,
+    "ola": 93.58,
+    "description": "Han brought Fast & Furious to real life with his IRL car named after a poisonous pufferfish in Japan. Card by Keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/869498252767137812/greddy_fugu_z.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/869218079262003221/fugu_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/869218085683462185/fugu_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/869218090313981952/fugu_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/869218104427814963/fugu_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/869218097872113664/fugu_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/869218094319534150/fugu_699.jpg",
+
+    "333TopSpeed": 181,
+    "3330to60": 5.2,
+    "333Handling": 82,
+
+    "666TopSpeed": 184,
+    "6660to60": 5.0,
+    "666Handling": 84,
+
+    "996TopSpeed": 184,
+    "9960to60": 4.7,
+    "996Handling": 84,
+
+    "969TopSpeed": 187,
+    "9690to60": 5.0,
+    "969Handling": 88,
+
+    "699TopSpeed": 184,
+    "6990to60": 4.7,
+    "699Handling": 88
+}

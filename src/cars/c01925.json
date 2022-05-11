@@ -1,0 +1,54 @@
+{
+    "rq": 5,
+    "make": "Toyota",
+    "model": "Van LE",
+    "modelYear": 1984,
+    "country": "JP",
+    "topSpeed": 93,
+    "0to60": 16.9,
+    "handling": 53,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1557,
+    "gc": "Medium",
+    "seatCount": 7,
+    "bodyStyle": "MPV",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 0.00,
+    "ola": 53.25,
+    "description": "One van, million names. Card by Connor",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/868931487465086976/F.ToyotaVanLE.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/868931586865901678/ToyotaVan.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/868931598756749332/ToyotaVan-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/868931607485095996/ToyotaVan-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/868931641287004231/ToyotaVan-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/868931630788661278/ToyotaVan-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/868931616368627722/ToyotaVan-699.png",
+
+    "333TopSpeed": 99,
+    "3330to60": 16.1,
+    "333Handling": 55,
+
+    "666TopSpeed": 104,
+    "6660to60": 15.2,
+    "666Handling": 56,
+
+    "996TopSpeed": 110,
+    "9960to60": 14.4,
+    "996Handling": 56,
+
+    "969TopSpeed": 110,
+    "9690to60": 15.2,
+    "969Handling": 59,
+
+    "699TopSpeed": 104,
+    "6990to60": 14.4,
+    "699Handling": 59
+}

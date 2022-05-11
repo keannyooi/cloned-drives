@@ -1,0 +1,54 @@
+{
+    "rq": 90,
+    "make": "Nissan",
+    "model": "GT-R Track Edition",
+    "modelYear": 2013,
+    "country": "JP",
+    "topSpeed": 191,
+    "0to60": 2.8,
+    "handling": 90,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Supercar", "Track Day","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1762,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.66,
+    "ola": 71.42,
+    "description": "Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/945446840436936745/GTRTrack13.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/945447283116347452/GTRTrack2013.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/945447288648642570/GTRTrack2013333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/945447315357966356/GTRTrack2013666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/945447360547397712/GTRTrack2013996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/945447352381095966/GTRTrack2013969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/945447338485350430/GTRTrack2013699.png",
+
+    "333TopSpeed": 194,
+    "3330to60": 2.7,
+    "333Handling": 93,
+
+    "666TopSpeed": 196,
+    "6660to60": 2.5,
+    "666Handling": 96,
+
+    "996TopSpeed": 199,
+    "9960to60": 2.4,
+    "996Handling": 96,
+
+    "969TopSpeed": 199,
+    "9690to60": 2.5,
+    "969Handling": 100,
+
+    "699TopSpeed": 196,
+    "6990to60": 2.4,
+    "699Handling": 100
+}

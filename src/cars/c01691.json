@@ -1,0 +1,54 @@
+{
+    "rq": 106,
+    "make": "Mitsubishi",
+    "model": "Lancer Evolution WRC2",
+    "modelYear": 2002,
+    "country": "JP",
+    "topSpeed": 150,
+    "0to60": 3.6,
+    "handling": 91,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["Motorsport", "Unique","The Japanese Odyssey"],
+    "isPrize": true,
+
+    "weight": 1230,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 67.92,
+    "ola": 77.78,
+    "description": "Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/951601691709550592/evowrc2.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/951602059210285056/EvoWRC2.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/951602066109915266/EvoWRC2333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/951602075131854848/EvoWRC2666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/951602099471401021/EvoWRC2996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/951602091250548766/EvoWRC2969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/951602082476089354/EvoWRC2699.png",
+
+    "333TopSpeed": 153,
+    "3330to60": 3.4,
+    "333Handling": 94,
+
+    "666TopSpeed": 157,
+    "6660to60": 3.2,
+    "666Handling": 97,
+
+    "996TopSpeed": 160,
+    "9960to60": 3.1,
+    "996Handling": 97,
+
+    "969TopSpeed": 160,
+    "9690to60": 3.2,
+    "969Handling": 101,
+
+    "699TopSpeed": 157,
+    "6990to60": 3.1,
+    "699Handling": 101
+}

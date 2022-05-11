@@ -1,0 +1,56 @@
+{
+    "rq": 65,
+    "make": "Subaru",
+    "model": "Outback Wilderness",
+    "modelYear": 2022,
+    "country": "JP",
+    "topSpeed": 117,
+    "0to60": 6.1,
+    "handling": 68,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+
+    "weight": 1792,
+    "gc": "High",
+    "seatCount":5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 43.57,
+    "ola": 75.41,
+    "description": "The good outback, outback but offroad. Card and Quote by Corentin.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/963512797776449677/Subaru_Outback_Wilderness_CD.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/963513333464563722/OutbackWild.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/963513343052775474/OutbackWild-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/963513352917753906/OutbackWild-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/963513363697123338/OutbackWild-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/963513391803158619/OutbackWild-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/963513408571985970/OutbackWild-699.png",
+
+    "333TopSpeed": 121,
+    "3330to60": 5.8,
+    "333Handling": 70,
+
+    "666TopSpeed": 126,
+    "6660to60": 5.5, 
+    "666Handling": 72,
+
+    "996TopSpeed": 130,
+    "9960to60": 5.2,
+    "996Handling": 72,
+
+    "969TopSpeed": 130,
+    "9690to60": 5.5,
+    "969Handling": 75,
+
+    "699TopSpeed": 126,
+    "6990to60": 5.2,
+    "699Handling": 75
+}

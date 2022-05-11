@@ -1,0 +1,54 @@
+{
+    "rq": 76,
+    "make": "Nissan",
+    "model": "GT-R Concept",
+    "modelYear": 2001,
+    "country": "JP",
+    "topSpeed": 180,
+    "0to60": 3.9,
+    "handling": 87,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Innovative", "Concept", "Unique","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1560,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 81.25,
+    "ola": 97.43,
+    "description": "A unique showcar used to showoff the future of the GTR, people did not like some of the changes from the R34 however so development continuted. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/930193302307868682/GTR2001.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/930194151566348288/GTRProto2001.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/930194157035733062/GTRProto2001333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/930194165327888414/GTRProto2001666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/930194192301449247/GTRProto2001996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/930194182474194984/GTRProto2001969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/930194174614073394/GTRProto2001699.png",
+
+    "333TopSpeed": 183,
+    "3330to60": 3.7,
+    "333Handling": 90,
+
+    "666TopSpeed": 186,
+    "6660to60": 3.5,
+    "666Handling": 93,
+
+    "996TopSpeed": 189,
+    "9960to60": 3.3,
+    "996Handling": 93,
+
+    "969TopSpeed": 189,
+    "9690to60": 3.5,
+    "969Handling": 97,
+
+    "699TopSpeed": 186,
+    "6990to60": 3.3,
+    "699Handling": 97
+}

@@ -1,0 +1,54 @@
+{
+    "rq": 48,
+    "make": "Nissan",
+    "model": "Silvia Spec-S Aero (S15)",
+    "modelYear": 1999,
+    "country": "JP",
+    "topSpeed": 112,
+    "0to60": 6.0,
+    "handling": 78,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1200,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 63.16,
+    "ola": 83.33,
+    "description": "not really Mona Lisa but still :weary: . Card by Havvy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/866725540538089532/NissanSilviaSpecSAero.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/866725626539016232/v15_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/866725630237081610/v15_111.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/866725633279131648/v15_222.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/866725651967639552/v15_332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/866725647246426112/v15_323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/866725640295809064/v15_233.png",
+
+    "333TopSpeed": 117,
+    "3330to60": 5.7,
+    "333Handling": 81,
+
+    "666TopSpeed": 121,
+    "6660to60": 5.4,
+    "666Handling": 83,
+
+    "996TopSpeed": 126,
+    "9960to60": 5.1,
+    "996Handling": 83,
+
+    "969TopSpeed": 126,
+    "9690to60": 5.4,
+    "969Handling": 87,
+
+    "699TopSpeed": 121,
+    "6990to60": 5.1,
+    "699Handling": 87
+}

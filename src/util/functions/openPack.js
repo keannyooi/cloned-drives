@@ -109,11 +109,12 @@ function openPack(message, currentPack, currentMessage) {
                     switch (criteria) {
                         case "make":
                         case "tags":
+                        case "bodyStyle":
                             if (Array.isArray(currentCard[criteria])) {
-                                if (currentCard[criteria].some(m => m === filter[criteria]) === false) passed = false;
+                                if (currentCard[criteria].some(m => m.toLowerCase() === filter[criteria].toLowerCase()) === false) passed = false;
                             }
                             else {
-                                if (currentCard[criteria] !== filter[criteria]) passed = false;
+                                if (currentCard[criteria].toLowerCase() !== filter[criteria].toLowerCase()) passed = false;
                             }
                             break;
                         case "modelYear":
@@ -121,7 +122,7 @@ function openPack(message, currentPack, currentMessage) {
                             if (currentCard[criteria] < filter[criteria]["start"] || currentCard[criteria] > filter[criteria]["end"]) passed = false;
                             break;
                         default:
-                            if (currentCard[criteria] !== filter[criteria]) passed = false;
+                            if (currentCard[criteria].toLowerCase() !== filter[criteria].toLowerCase()) passed = false;
                             break;
                     }
                 }

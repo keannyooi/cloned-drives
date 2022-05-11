@@ -1,0 +1,56 @@
+{
+    "rq": 79,
+    "make": ["JUN","Toyota"],
+    "model": "Akira Supra",
+    "modelYear": 2001,
+    "country": "JP",
+    "topSpeed": 249,
+    "0to60": 2.8,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner", "Unique","The Japanese Odyssey"],
+    "isPrize": true,
+
+
+    "weight": 1520,
+    "gc": "Low",
+    "seatCount":1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 116.67,
+    "ola": 114.29,
+    "description": "The heart of the beast is this fully reworked 2JZ engine. Card by Havvy.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/969597233353859122/junakira.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/969599623528329286/JUNAkiraSoup.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/969599630507655168/JUNAkiraSoup-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/969599643962966036/JUNAkiraSoup-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/969599655828684821/JUNAkiraSoup-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/969599670764601454/JUNAkiraSoup-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/969599682869354496/JUNAkiraSoup-699.png",
+
+    "333TopSpeed": 251,
+    "3330to60": 2.7,
+    "333Handling": 77,
+
+    "666TopSpeed": 253,
+    "6660to60": 2.5, 
+    "666Handling": 80,
+
+    "996TopSpeed": 255,
+    "9960to60": 2.4,
+    "996Handling": 80,
+
+    "969TopSpeed": 255,
+    "9690to60": 2.5,
+    "969Handling": 83,
+
+    "699TopSpeed": 253,
+    "6990to60": 2.4,
+    "699Handling": 83
+}

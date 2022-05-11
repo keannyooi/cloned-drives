@@ -1,0 +1,54 @@
+{
+    "rq": 85,
+    "make": "Nissan",
+    "model": "GT-R Egoist",
+    "modelYear": 2012,
+    "country": "JP",
+    "topSpeed": 192,
+    "0to60": 3.1,
+    "handling": 88,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Supercar","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1790,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 70.45,
+    "ola": 81.48,
+    "description": "Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/948591410045653002/GTRegoist.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/948591733959172137/GTRegoist.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/948591739424362516/GTRegoist333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/948591763189272626/GTRegoist666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/948591788560621639/GTRegoist996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/948591780209762374/GTRegoist969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/948591773532438559/GTRegoist699.png",
+
+    "333TopSpeed": 195,
+    "3330to60": 2.9,
+    "333Handling": 91,
+
+    "666TopSpeed": 197,
+    "6660to60": 2.8,
+    "666Handling": 94,
+
+    "996TopSpeed": 200,
+    "9960to60": 2.6,
+    "996Handling": 94,
+
+    "969TopSpeed": 200,
+    "9690to60": 2.8,
+    "969Handling": 98,
+
+    "699TopSpeed": 197,
+    "6990to60": 2.6,
+    "699Handling": 98
+}

@@ -1,0 +1,54 @@
+{
+    "rq": 49,
+    "make": "Nissan",
+    "model": "Silvia K's Club Selection (S13)",
+    "modelYear": 1991,
+    "country": "JP",
+    "topSpeed": 112,
+    "0to60": 5.6,
+    "handling": 73,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer","The Japanese Odyssey","Silver Screen"],
+    "isPrize": true,
+
+    "weight": 1170,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 59.57,
+    "ola": 75.00,
+    "description": "Iketani. Card by Havvy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/867917328032100362/NissanSilviaKsClubSelection.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/867917389600260146/club_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/867917393807167509/club_111.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/867917398831939675/club_222.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/867917412715094046/club_332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/867917408814366740/club_323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/867917402212565022/club_233.png",
+
+    "333TopSpeed": 117,
+    "3330to60": 5.3,
+    "333Handling": 75,
+
+    "666TopSpeed": 121,
+    "6660to60": 5.0,
+    "666Handling": 78,
+
+    "996TopSpeed": 126,
+    "9960to60": 4.8,
+    "996Handling": 78,
+
+    "969TopSpeed": 126,
+    "9690to60": 5.0,
+    "969Handling": 81,
+
+    "699TopSpeed": 121,
+    "6990to60": 4.8,
+    "699Handling": 81
+}

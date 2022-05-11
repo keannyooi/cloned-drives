@@ -1,0 +1,54 @@
+{
+    "rq": 70,
+    "make": "Mitsubishi",
+    "model": "Lancer Evolution VI RS II",
+    "modelYear": 1999,
+    "country": "JP",
+    "topSpeed": 151,
+    "0to60": 4.8,
+    "handling": 83,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1280,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.67,
+    "ola": 75.00,
+    "description": "Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/939601259692978256/evo6rs2.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/939601780239646770/evo6RSII.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/939601792566693908/evo6RSII333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/939601807343239238/evo6RSII666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/939601836531392562/evo6RSII996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/939601825039020042/evo6RSII969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/939601816407142520/evo6RSII699.png",
+
+    "333TopSpeed": 154,
+    "3330to60": 4.6,
+    "333Handling": 86,
+
+    "666TopSpeed": 158,
+    "6660to60": 4.3,
+    "666Handling": 88,
+
+    "996TopSpeed": 161,
+    "9960to60": 4.1,
+    "996Handling": 88,
+
+    "969TopSpeed": 161,
+    "9690to60": 4.3,
+    "969Handling": 92,
+
+    "699TopSpeed": 158,
+    "6990to60": 4.1,
+    "699Handling": 92
+}

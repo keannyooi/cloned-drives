@@ -1,0 +1,54 @@
+{
+    "rq": 1,
+    "make": ["Prince", "Nissan"],
+    "model": "Sedan AISH",
+    "modelYear": 1952,
+    "country": "JP",
+    "topSpeed": 68,
+    "0to60": 44.3,
+    "handling": 43,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1254,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 0,
+    "ola": 37.02,
+    "description": "One of the first ever Nissan's. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/963209079872970792/princesedan52.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/963209188941643786/sedanaish52.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/963209194029322270/sedanaish521.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/963209201113530408/sedanaish522.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/963209221086785596/sedanaish52996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/963209215122477067/sedanaish52969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/963209207660826664/sedanaish52699.png",
+
+    "333TopSpeed": 76,
+    "3330to60": 42.1,
+    "333Handling": 44,
+
+    "666TopSpeed": 83,
+    "6660to60": 39.9,
+    "666Handling": 46,
+
+    "996TopSpeed": 91,
+    "9960to60": 37.7,
+    "996Handling": 46,
+
+    "969TopSpeed": 91,
+    "9690to60": 39.9,
+    "969Handling": 48,
+
+    "699TopSpeed": 83,
+    "6990to60": 37.7,
+    "699Handling": 48
+}

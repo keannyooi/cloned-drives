@@ -1,0 +1,54 @@
+{
+    "rq": 43,
+    "make": ["Top Fuel", "Honda"],
+    "model": "S660 Type RRII",
+    "modelYear": 2019,
+    "country": "JP",
+    "topSpeed": 144,
+    "0to60": 6.6,
+    "handling": 84,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Kei Car", "Track Day", "Oddity","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 800,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 69.47,
+    "ola": 78.79,
+    "description": "yes. Card by Keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/868778921414516747/top_fuel_s660_type_rrii.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/868778247922528316/topfuel2_s660_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/868778253228326952/topfuel2_s660_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/868778258915815434/topfuel2_s660_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/868778267216347197/topfuel2_s660_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/868778264309686282/topfuel2_s660_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/868778261591777300/topfuel2_s660_699.jpg",
+
+    "333TopSpeed": 148,
+    "3330to60": 6.3,
+    "333Handling": 87,
+
+    "666TopSpeed": 151,
+    "6660to60": 5.9,
+    "666Handling": 90,
+
+    "996TopSpeed": 155,
+    "9960to60": 5.6,
+    "996Handling": 90,
+
+    "969TopSpeed": 155,
+    "9690to60": 5.9,
+    "969Handling": 93,
+
+    "699TopSpeed": 151,
+    "6990to60": 5.6,
+    "699Handling": 93
+}

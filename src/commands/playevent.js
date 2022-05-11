@@ -140,12 +140,12 @@ module.exports = {
                 }
             }
             else {
-                const errorMessage = new ErrorMessage()
-                    .setColor("#fc0303")
-                    .setAuthor(message.author.tag, message.author.displayAvatarURL({ format: "png", dynamic: true }))
-                    .setTitle("Error, you may not play this event yet.")
-                    .setDescription("The event you are trying to play is not active currently. This is only bypassable if you have the Community Management role.")
-                    .setTimestamp();
+                const errorMessage = new ErrorMessage({
+                    channel: message.channel,
+                    title: "Error, you may not play this event yet.",
+                    desc: `The event you are trying to view is not active currently. You may only view this event if you're an <@&${eventMakerRoleID}>.`,
+                    author: message.author,
+                });
                 return message.channel.send(errorMessage);
             }
         }

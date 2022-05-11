@@ -1,0 +1,54 @@
+{
+    "rq": 77,
+    "make": "Mitsubishi",
+    "model": "Lancer Evolution IX RS",
+    "modelYear": 2005,
+    "country": "JP",
+    "topSpeed": 142,
+    "0to60": 4.4,
+    "handling": 88,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1320,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 57.89,
+    "ola": 72.27,
+    "description": "Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/951600524090834995/evo9RS.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/951600831680110652/evo9rs.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/951600837908648057/evo9rs333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/951600845466767380/evo9rs666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/951600880715726868/evo9rs996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/951600871324680292/evo9rs969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/951600854551650355/evo9rs699.png",
+
+    "333TopSpeed": 146,
+    "3330to60": 4.2,
+    "333Handling": 91,
+
+    "666TopSpeed": 149,
+    "6660to60": 4.0,
+    "666Handling": 94,
+
+    "996TopSpeed": 153,
+    "9960to60": 3.7,
+    "996Handling": 94,
+
+    "969TopSpeed": 153,
+    "9690to60": 4.0,
+    "969Handling": 98,
+
+    "699TopSpeed": 149,
+    "6990to60": 3.7,
+    "699Handling": 98
+}

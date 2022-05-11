@@ -1,0 +1,56 @@
+{
+    "rq": 27,
+    "make": "Toyota",
+    "model": "Verso-S 1.3 Style",
+    "modelYear": 2010,
+    "country": "JP",
+    "topSpeed": 109,
+    "0to60": 10.6,
+    "handling": 69,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+
+    "weight": 1180,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 34.19,
+    "ola": 60.38,
+    "description": "Move over GT86 and BRZ, this was the original Toyota-Subaru collab. Card by Andu",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/897035586127417394/VersoS13Style.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/897035446838788096/VersoS.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/897035451993571329/VersoS-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/897035465352413235/VersoS-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/897035479587909642/VersoS-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/897035491835265054/VersoS-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/897035151777873920/VersoTDI-699.png",
+
+    "333TopSpeed": 114,
+    "3330to60": 10.1,
+    "333Handling": 71,
+
+    "666TopSpeed": 119,
+    "6660to60": 9.5, 
+    "666Handling": 74,
+
+    "996TopSpeed": 123,
+    "9960to60": 9.0,
+    "996Handling": 74,
+
+    "969TopSpeed": 123,
+    "9690to60": 9.5,
+    "969Handling": 77,
+
+    "699TopSpeed": 119,
+    "6990to60": 9.0,
+    "699Handling": 77
+}

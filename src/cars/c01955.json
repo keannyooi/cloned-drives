@@ -1,0 +1,56 @@
+{
+    "rq": 36,
+    "make": "Toyota",
+    "model": "Yaris Z 1.5 Hybrid E-Four",
+    "modelYear": 2020,
+    "country": "JP",
+    "topSpeed": 105,
+    "0to60": 10.1,
+    "handling": 76,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly","The Japanese Odyssey"],
+    "isPrize": false,
+
+
+    "weight": 1200,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 53.44,
+    "ola": 66.34,
+    "description": "The Japanese market exclusive 4WD Hybrid. Card by Andu.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/963493843225956382/YarisZHyE4.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/963494666840453200/YarisZHyE4.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/963494678962004038/YarisZHyE4-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/963494687551934514/YarisZHyE4-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/963494702873727006/YarisZHyE4-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/963494715603423322/YarisZHyE4-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/963494727200686080/YarisZHyE4-699.png",
+
+    "333TopSpeed": 110,
+    "3330to60": 9.6,
+    "333Handling": 79,
+
+    "666TopSpeed": 115,
+    "6660to60": 9.1, 
+    "666Handling": 81,
+
+    "996TopSpeed": 120,
+    "9960to60": 8.6,
+    "996Handling": 81,
+
+    "969TopSpeed": 120,
+    "9690to60": 9.1,
+    "969Handling": 84,
+
+    "699TopSpeed": 115,
+    "6990to60": 8.6,
+    "699Handling": 84
+}

@@ -1,0 +1,54 @@
+{
+    "rq": 84,
+    "make": "Nissan",
+    "model": "Juke-R 2.0",
+    "modelYear": 2015,
+    "country": "JP",
+    "topSpeed": 200,
+    "0to60": 3.1,
+    "handling": 87,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Unique", "Oddity", "Street Racer","The Japanese Odyssey"],
+    "isPrize": true,
+
+    "weight": 1800,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 65.96,
+    "ola": 83.87,
+    "description": "Imagine a Juke keeping up with a GT-R Nismo on a drag race. Card by Spence.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/860168188603531315/image0.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/860169888852738048/image0.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/860169915579498497/image0.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/860169932610994226/image0.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/860169950219993128/image0.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/860169971782385664/image0.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/860169993827123200/image0.jpg",
+
+    "333TopSpeed": 163,
+    "3330to60": 3.3,
+    "333Handling": 89,
+
+    "666TopSpeed": 167,
+    "6660to60": 3.2,
+    "666Handling": 92,
+
+    "699TopSpeed": 167,
+    "6990to60": 3.0,
+    "699Handling": 95,
+
+    "969TopSpeed": 170,
+    "9690to60": 3.2,
+    "969Handling": 95,
+
+    "996TopSpeed": 170,
+    "9960to60": 3.0,
+    "996Handling": 92
+}

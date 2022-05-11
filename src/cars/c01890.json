@@ -1,0 +1,54 @@
+{
+    "rq": 41,
+    "make": "Toyota",
+    "model": "Corolla T-Sport",
+    "modelYear": 2004,
+    "country": "JP",
+    "topSpeed": 140,
+    "0to60": 7.2,
+    "handling": 77,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1295,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 70.59,
+    "ola": 86.11,
+    "description": "Incredibly boring-looking Hot Hatch powered by the engine found in the Lotus Elise. Card by Connor",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/866800561105534997/C.ToyotaCorollaTSport.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/866802704105209876/ToyotaCorollaTS.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/866802715937341451/ToyotaCorollaTS-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/866802726142607411/ToyotaCorollaTS-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/866802759394918410/ToyotaCorollaTS-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/866802747370242058/ToyotaCorollaTS-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/866802735788851220/ToyotaCorollaTS-699.png",
+
+    "333TopSpeed": 144,
+    "3330to60": 6.8,
+    "333Handling": 80,
+
+    "666TopSpeed": 147,
+    "6660to60": 6.5,
+    "666Handling": 82,
+
+    "996TopSpeed": 151,
+    "9960to60": 6.1,
+    "996Handling": 82,
+
+    "969TopSpeed": 151,
+    "9690to60": 6.5,
+    "969Handling": 85,
+
+    "699TopSpeed": 147,
+    "6990to60": 6.1,
+    "699Handling": 85
+}

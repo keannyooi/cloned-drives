@@ -1,0 +1,54 @@
+{
+    "rq": 39,
+    "make": "Toyota",
+    "model": "Century",
+    "modelYear": 1997,
+    "country": "JP",
+    "topSpeed": 130,
+    "0to60": 7.2,
+    "handling": 67,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1990,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 62.66,
+    "ola": 66.28,
+    "description": "Gives a Rolls-Royce a run for its money, at least in the Japanese market. Card by Keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/867728987484848148/toyota_century.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/867728341401468928/century_v12_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/867728345974571048/century_v12_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/867728351962464256/century_v12_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/867728370178719764/century_v12_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/867728368279486504/century_v12_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/867728354777235486/century_v12_699.jpg",
+
+    "333TopSpeed": 134,
+    "3330to60": 6.8,
+    "333Handling": 69,
+
+    "666TopSpeed": 138,
+    "6660to60": 6.5,
+    "666Handling": 71,
+
+    "996TopSpeed": 142,
+    "9960to60": 6.1,
+    "996Handling": 71,
+
+    "969TopSpeed": 142,
+    "9690to60": 6.5,
+    "969Handling": 74,
+
+    "699TopSpeed": 138,
+    "6990to60": 6.1,
+    "699Handling": 74
+}

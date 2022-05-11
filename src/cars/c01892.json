@@ -1,0 +1,54 @@
+{
+    "rq": 37,
+    "make": "Toyota",
+    "model": "Corolla Touring Sports 2.0 Sport Hybrid",
+    "modelYear": 2019,
+    "country": "JP",
+    "topSpeed": 115,
+    "0to60": 8.8,
+    "handling": 75,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1523,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 62.85,
+    "ola": 75.00,
+    "description": "Card by Connor",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/867795846703743046/D.ToyotaCorollaTS20SHybrid.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/867796545326809088/ToyotaCorolla20HyTS.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/867796563106463764/ToyotaCorolla20HyTS-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/867796573769695282/ToyotaCorolla20HyTS-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/867796604693774356/ToyotaCorolla20HyTS-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/867796593549508628/ToyotaCorolla20HyTS-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/867796583756070922/ToyotaCorolla20HyTS-699.png",
+
+    "333TopSpeed": 120,
+    "3330to60": 8.4,
+    "333Handling": 77,
+
+    "666TopSpeed": 124,
+    "6660to60": 7.9,
+    "666Handling": 80,
+
+    "996TopSpeed": 129,
+    "9960to60": 7.5,
+    "996Handling" 80,
+
+    "969TopSpeed": 129,
+    "9690to60": 7.9,
+    "969Handling": 83,
+
+    "699TopSpeed": 124,
+    "6990to60": 7.5,
+    "699Handling": 83
+}

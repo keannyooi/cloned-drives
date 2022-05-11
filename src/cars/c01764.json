@@ -1,0 +1,54 @@
+{
+    "rq": 68,
+    "make": "Nissan",
+    "model": "R380A-III Revised",
+    "modelYear": 1969,
+    "country": "JP",
+    "topSpeed": 174,
+    "0to60": 3.9,
+    "handling": 79,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Motorsport","Unique","The Japanese Odyssey"],
+    "isPrize": true,
+
+    "weight": 680,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 86.66,
+    "ola": 97.43,
+    "description": "Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/969546778728857611/R380A-IIIRevised.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/969547337200451604/R380AIIIR.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/969547342833418240/R380AIIIR1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/969547351255564288/R380AIIIR2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/969547370914279444/R380AIIIR996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/969547363771375646/R380AIIIR969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/969547357622501426/R380AIIIR699.png",
+
+    "333TopSpeed": 177,
+    "3330to60": 3.7,
+    "333Handling": 82,
+
+    "666TopSpeed": 180,
+    "6660to60": 3.5,
+    "666Handling": 84,
+
+    "996TopSpeed": 183,
+    "9960to60": 3.3,
+    "996Handling": 84,
+
+    "969TopSpeed": 183,
+    "9690to60": 3.5,
+    "969Handling": 88,
+
+    "699TopSpeed": 180,
+    "6990to60": 3.3,
+    "699Handling": 88
+}

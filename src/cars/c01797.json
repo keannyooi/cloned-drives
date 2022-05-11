@@ -1,0 +1,54 @@
+{
+    "rq": 61,
+    "make": "Nissan",
+    "model": "Stagea 260RS Autech Version",
+    "modelYear": 1997,
+    "country": "JP",
+    "topSpeed": 150,
+    "0to60": 5.5,
+    "handling": 82,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1716,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 63.22,
+    "ola": 80,
+    "description": "The GT-R wagon. Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/966804037951455232/Stagea260RSAutech.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/966804794209607691/Stagea260RS.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/966804800270372956/Stagea260RS1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/966804807157424229/Stagea260RS2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/966804829122998312/Stagea260RS996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/966804821715869737/Stagea260RS969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/966804815084675102/Stagea260RS699.png",
+
+    "333TopSpeed": 153,
+    "3330to60": 5.2,
+    "333Handling": 85,
+
+    "666TopSpeed": 157,
+    "6660to60": 5.0,
+    "666Handling": 87,
+
+    "996TopSpeed": 160,
+    "9960to60": 4.7,
+    "996Handling": 87,
+
+    "969TopSpeed": 160,
+    "9690to60": 5.0,
+    "969Handling": 91,
+
+    "699TopSpeed": 157,
+    "6990to60": 4.7,
+    "699Handling": 91
+}

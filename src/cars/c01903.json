@@ -1,0 +1,54 @@
+{
+    "rq": 17,
+    "make": "Toyota",
+    "model": "iQ 1.0 VVT-i",
+    "modelYear": 2009,
+    "country": "JP",
+    "topSpeed": 93,
+    "0to60": 15.1,
+    "handling": 67,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 897,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 0.00,
+    "ola": 70.19,
+    "description": "Zanussi with a Zanussi engine. Card by Connor.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/864254421198045254/F.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/864254530416672818/ToyotaiQ10.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/864254543521120256/ToyotaiQ10-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/864254555612512329/ToyotaiQ10-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/864254588672278540/ToyotaiQ10-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/864254579189612574/ToyotaiQ10-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/864254567632863232/ToyotaiQ10-699.png",
+
+    "333TopSpeed": 99,
+    "3330to60": 14.3,
+    "333Handling": 69,
+
+    "666TopSpeed": 104,
+    "6660to60": 13.6,
+    "666Handling": 71,
+
+    "996TopSpeed": 110,
+    "9960to60": 12.8,
+    "996Handling": 71,
+
+    "969TopSpeed": 110,
+    "9690to60": 13.6,
+    "969Handling": 74,
+
+    "699TopSpeed": 104,
+    "6990to60": 12.8,
+    "699Handling": 74
+}

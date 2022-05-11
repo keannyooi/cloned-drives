@@ -1,0 +1,54 @@
+{
+    "rq": 32,
+    "make": "Nissan",
+    "model": "Fairlady Z 432",
+    "modelYear": 1969,
+    "country": "JP",
+    "topSpeed": 131,
+    "0to60": 7.7,
+    "handling": 72,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1040,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 53.85,
+    "ola": 77.92,
+    "description": "4 valves per cylinder, 3 Mikuni carburetors and 2 camshafts. Card by Keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/869499259710476298/nissan_fairlady_z_432.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/869217464809041930/fairlady_432_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/869217468831379506/fairlady_432_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/869217473528987658/fairlady_432_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/869217482878095440/fairlady_432_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/869217480533483580/fairlady_432_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/869217477173850132/fairlady_432_699.jpg",
+
+    "333TopSpeed": 135,
+    "3330to60": 7.3,
+    "333Handling": 74,
+
+    "666TopSpeed": 139,
+    "6660to60": 6.9,
+    "666Handling": 77,
+
+    "996TopSpeed": 143,
+    "9960to60": 6.5,
+    "996Handling": 77,
+
+    "969TopSpeed": 143,
+    "9690to60": 6.9,
+    "969Handling": 80,
+
+    "699TopSpeed": 139,
+    "6990to60": 6.5,
+    "699Handling": 80
+}

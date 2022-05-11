@@ -1,0 +1,54 @@
+{
+    "rq": 56,
+    "make": "Nissan",
+    "model": "Fairlady Z Nismo S-Tune GT",
+    "modelYear": 2005,
+    "country": "JP",
+    "topSpeed": 112,
+    "0to60": 4.9,
+    "handling": 86,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Track Day","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1475,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 67.12,
+    "ola": 85.71,
+    "description": "Made to celebrate the 350's Super GT success. You might see one rolling around in the UK, if you are very lucky. Card by Keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/869499009008533514/nissan_350z_nismo_s-tune_gt.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/869217927801483324/fairlady_s-gt_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/869217933241499678/fairlady_s-gt_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/869217936575967232/fairlady_s-gt_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/869217949041426483/fairlady_s-gt_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/869217945530793984/fairlady_s-gt_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/869217941638504508/fairlady_s-gt_699.jpg",
+
+    "333TopSpeed": 117,
+    "3330to60": 4.7,
+    "333Handling": 89,
+
+    "666TopSpeed": 121,
+    "6660to60": 4.4,
+    "666Handling": 92,
+
+    "996TopSpeed": 126,
+    "9960to60": 4.2,
+    "996Handling": 92,
+
+    "969TopSpeed": 126,
+    "9690to60": 4.4,
+    "969Handling": 95,
+
+    "699TopSpeed": 121,
+    "6990to60": 4.2,
+    "699Handling": 95
+}

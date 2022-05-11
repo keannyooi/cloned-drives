@@ -1,0 +1,54 @@
+{
+    "rq": 102,
+    "make": "Mitsubishi",
+    "model": "Lancer Evolution V Gr.A WRC",
+    "modelYear": 1998,
+    "country": "JP",
+    "topSpeed": 142,
+    "0to60": 3.7,
+    "handling": 89,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["Motorsport","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1230,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 69.81,
+    "ola": 86.49,
+    "description": "Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/930857931656806470/evo5wrc.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/930859026059767828/evo5WRC.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/930859035341762560/evo5WRC333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/930859041746472990/evo5WRC666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/930859067507867719/evo5WRC996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/930859058662113281/evo5WRC969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/930859049707249715/evo5WRC699.png",
+
+    "333TopSpeed": 146,
+    "3330to60": 3.5,
+    "333Handling": 92,
+
+    "666TopSpeed": 149,
+    "6660to60": 3.3,
+    "666Handling": 95,
+
+    "996TopSpeed": 153,
+    "9960to60": 3.1,
+    "996Handling": 95,
+
+    "969TopSpeed": 153,
+    "9690to60": 3.3,
+    "969Handling": 99,
+
+    "699TopSpeed": 149,
+    "6990to60": 3.1,
+    "699Handling": 99
+}

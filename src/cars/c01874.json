@@ -1,0 +1,54 @@
+{
+    "rq": 37,
+    "make": "Toyota",
+    "model": "Camry XLE V6",
+    "modelYear": 1996,
+    "country": "JP",
+    "topSpeed": 128,
+    "0to60": 8.4,
+    "handling": 70,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1257,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 65.00,
+    "ola": 76.19,
+    "description": "Card by ChickenMcNuggets.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/882732041144262737/camry_xle_v6.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/882730635117084722/camry_96_stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/882730664997314580/camry_96_1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/882730687378124830/camry_96_2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/882730736644403240/camry_96_332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/882730721133854741/camry_96_323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/882730705027739729/camry_96_233.png",
+
+    "333TopSpeed": 132,
+    "3330to60": 8.0,
+    "333Handling": 72,
+
+    "666TopSpeed": 136,
+    "6660to60": 7.6,
+    "666Handling": 75,
+
+    "996TopSpeed": 140,
+    "9960to60": 7.1,
+    "996Handling": 75,
+
+    "969TopSpeed": 140,
+    "9690to60": 7.6,
+    "969Handling": 78,
+
+    "699TopSpeed": 136,
+    "6990to60": 7.1,
+    "699Handling": 78
+}

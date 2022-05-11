@@ -1,0 +1,54 @@
+{
+    "rq": 36,
+    "make": "Mitsubishi",
+    "model": "Montero 3.8 V6",
+    "modelYear": 2003,
+    "country": "JP",
+    "topSpeed": 114,
+    "0to60": 9.6,
+    "handling": 60,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 2171,
+    "gc": "High",
+    "seatCount": 7,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 36.92,
+    "ola": 58.33,
+    "description": "Card by Lemonade.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/869106735128928316/Mitsubishi_Montero_3.8_V6_2003.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/869106460427173938/Mitsubishi_Montero_3.8_V6_Stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/869106495462187048/Mitsubishi_Montero_3.8_V6_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/869106520871272488/Mitsubishi_Montero_3.8_V6_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/869106650710147092/Mitsubishi_Montero_3.8_V6_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/869106626597097492/Mitsubishi_Montero_3.8_V6_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/869106584075264090/Mitsubishi_Montero_3.8_V6_699.png",
+
+    "333TopSpeed": 119,
+    "3330to60": 9.1,
+    "333Handling": 62,
+
+    "666TopSpeed": 123,
+    "6660to60": 8.6,
+    "666Handling": 64,
+
+    "996TopSpeed": 128,
+    "9960to60": 8.2,
+    "996Handling": 64,
+
+    "969TopSpeed": 128,
+    "9690to60": 8.6,
+    "969Handling": 67,
+
+    "699TopSpeed": 123,
+    "6990to60": 8.2,
+    "699Handling": 67
+}

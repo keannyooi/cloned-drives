@@ -1,0 +1,54 @@
+{
+    "rq": 23,
+    "make": "Toyota",
+    "model": "Aygo 1.0 VVT-i City",
+    "modelYear": 2008,
+    "country": "JP",
+    "topSpeed": 98,
+    "0to60": 13.1,
+    "handling": 72,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 849,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 0.00,
+    "ola": 61.07,
+    "description": "Just when we thought the Yaris was the definitive small Toyota, the Japanese company brought us the Aygo.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/864253656920227880/E.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/864253755985887263/ToyotaAygo.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/864253769360867379/ToyotaAygo-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/864253780625981460/ToyotaAygo-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/864253828266065940/ToyotaAygo-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/864253817800884224/ToyotaAygo-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/864253794216575046/ToyotaAygo-699.png",
+
+    "333TopSpeed": 103,
+    "3330to60": 12.4,
+    "333Handling": 74,
+
+    "666TopSpeed": 109,
+    "6660to60": 11.8,
+    "666Handling": 77,
+
+    "996TopSpeed": 114,
+    "9960to60": 11.1,
+    "996Handling": 77,
+
+    "969TopSpeed": 114,
+    "9690to60": 11.8,
+    "969Handling": 80,
+
+    "699TopSpeed": 109,
+    "6990to60": 11.1,
+    "699Handling": 80
+}

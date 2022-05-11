@@ -1,0 +1,54 @@
+{
+    "rq": 25,
+    "make": ["Trial", "Honda"],
+    "model": "S660 GT100R+",
+    "modelYear": 2018,
+    "country": "JP",
+    "topSpeed": 122,
+    "0to60": 8.9,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Kei Car", "Tuner","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 817,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 51.74,
+    "ola": 74.16,
+    "description": "A one-up to the HKS GT100R kit that is used in many Honda S660 builds. Card by Keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/868778954427883560/trial_s660.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/868778296966524958/trial_s660_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/868778301265702912/trial_s660_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/868778305476784158/trial_s660_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/868778316415533096/trial_s660_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/868778311256522772/trial_s660_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/868778308341477376/trial_s660_699.jpg",
+
+    "333TopSpeed": 126,
+    "3330to60": 8.5,
+    "333Handling": 80,
+
+    "666TopSpeed": 131,
+    "6660to60": 8.0,
+    "666Handling": 82,
+
+    "996TopSpeed": 135,
+    "9960to60": 7.6,
+    "996Handling": 82,
+
+    "969TopSpeed": 135,
+    "9690to60": 8.0,
+    "969Handling": 85,
+
+    "699TopSpeed": 131,
+    "6990to60": 7.6,
+    "699Handling": 85
+}

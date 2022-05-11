@@ -1,0 +1,54 @@
+{
+    "rq": 46,
+    "make": "Infiniti",
+    "model": "I35",
+    "modelYear": 2002,
+    "country": "JP",
+    "topSpeed": 127,
+    "0to60": 6.9,
+    "handling": 74,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1516,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 61.06,
+    "ola": 78.26,
+    "description": "Card by Cenard.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/847561295837528074/IMG_20210405_153606-1.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/847561363148374076/IMG_20210415_165118.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/847561389152665690/IMG_20210415_165450.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/847561409218871366/IMG_20210415_165852.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/847561474934177852/1618487333141_458963cfd1f98e31c43125e3eb0899d7_2_-1_photo.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/847561451190878228/IMG_20210415_170507.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/847561435575091240/IMG_20210415_170202.png",
+
+    "333TopSpeed": 131,
+    "3330to60": 6.6,
+    "333Handling": 76,
+
+    "666TopSpeed": 135,
+    "6660to60": 6.2,
+    "666Handling": 79,
+
+    "996TopSpeed": 139,
+    "9960to60": 5.9,
+    "996Handling": 79,
+
+    "969TopSpeed": 139,
+    "9690to60": 6.2,
+    "969Handling": 82,
+
+    "699TopSpeed": 135,
+    "6990to60": 5.9,
+    "699Handling": 82
+}

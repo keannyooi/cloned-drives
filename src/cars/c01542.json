@@ -1,0 +1,56 @@
+{
+    "rq": 29,
+    "make": "Honda",
+    "model": "Civic CRX ESi",
+    "modelYear": 1992,
+    "country": "JP",
+    "topSpeed": 118,
+    "0to60": 8.6,
+    "handling": 72,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+
+    "weight": 1060,
+    "gc": "Medium",
+    "seatCount":2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 49.28,
+    "ola": 77.19,
+    "description": "A nippy performer. Card by Havvy.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/969596226406350858/HondaCivicCRXESi.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/969598449865596958/CRXESI.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/969598462326890516/CRXESI-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/969598471554367588/CRXESI-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/969598481863946280/CRXESI-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/969598494237143040/CRXESI-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/969598507495354418/CRXESI-699.png",
+
+    "333TopSpeed": 122,
+    "3330to60": 8.2,
+    "333Handling": 74,
+
+    "666TopSpeed": 127,
+    "6660to60": 7.7, 
+    "666Handling": 77,
+
+    "996TopSpeed": 131,
+    "9960to60": 7.3,
+    "996Handling": 77,
+
+    "969TopSpeed": 131,
+    "9690to60": 7.7,
+    "969Handling": 80,
+
+    "699TopSpeed": 127,
+    "6990to60": 7.3,
+    "699Handling": 80
+}

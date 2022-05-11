@@ -1,0 +1,56 @@
+{
+    "rq": 35,
+    "make": "Mazda",
+    "model": "2 1.5 MZR Sport",
+    "modelYear": 2010,
+    "country": "JP",
+    "topSpeed": 112,
+    "0to60": 9.7,
+    "handling": 75,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+
+    "weight": 1036,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 39.9,
+    "ola": 60.55,
+    "description": "Slight facelift brings smoother lines alongside fun and sharp handling. Card by Andu",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/866666200859410502/215MZRS.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/866666459705769984/215MZR.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/866666469109792778/215MZR-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/866666474385834034/215MZR-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/866666495277793340/215MZR-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/866666507579818014/215MZR-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/866666520763695114/215MZR-699.png",
+
+    "333TopSpeed": 117,
+    "3330to60": 9.2,
+    "333Handling": 77,
+
+    "666TopSpeed": 121,
+    "6660to60": 8.7, 
+    "666Handling": 80,
+
+    "996TopSpeed": 126,
+    "9960to60": 8.2,
+    "996Handling": 80,
+
+    "969TopSpeed": 126,
+    "9690to60": 8.7,
+    "969Handling": 83,
+
+    "699TopSpeed": 121,
+    "6990to60": 8.2,
+    "699Handling": 83
+}

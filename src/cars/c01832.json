@@ -1,0 +1,54 @@
+{
+    "rq": 45,
+    "make": "Subaru",
+    "model": "Crosstrek 2.0i",
+    "modelYear": 2018,
+    "country": "JP",
+    "topSpeed": 122,
+    "0to60": 9.2,
+    "handling": 75,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1463,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 50.64,
+    "ola": 78.26,
+    "description": "A Subaru crossover that slots in between the Outback and the Forester. Card by Spence.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/860168502597648434/image0.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/860170360299978762/image0.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/860170369838612500/image0.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/860170383407317022/image0.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/860170397067640852/image0.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/860170412515917894/image0.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/860170425475268648/image0.jpg",
+
+    "333TopSpeed": 126,
+    "3330to60": 8.7,
+    "333Handling": 75,
+
+    "666TopSpeed": 131,
+    "6660to60": 8.3,
+    "666Handling": 78,
+
+    "699TopSpeed": 131,
+    "6990to60": 7.8,
+    "699Handling": 81,
+
+    "969TopSpeed": 135,
+    "9690to60": 8.3,
+    "969Handling": 81,
+
+    "996TopSpeed": 135,
+    "9960to60": 7.8,
+    "996Handling": 78
+}

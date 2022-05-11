@@ -1,0 +1,54 @@
+{
+    "rq": 50,
+    "make": "toyota",
+    "model": "Tacoma V6 TRD Pro Series Double Cab",
+    "modelYear": 2015,
+    "country": "JP",
+    "topSpeed": 109,
+    "0to60": 7.7,
+    "handling": 61,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1968,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "Pickup",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 43.6,
+    "ola": 66.67,
+    "description": "Card by Macan.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/870245442468860014/Tacoma_V6_TRD_Pro_Series_Double_Cab_15.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/870246808771788830/Toyota_Tacoma_V6_TRD_Pro_Series_Double_Cab_2015_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/870246827679682590/Toyota_Tacoma_V6_TRD_Pro_Series_Double_Cab_2015_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/870246828032008222/Toyota_Tacoma_V6_TRD_Pro_Series_Double_Cab_2015_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/870246843555123210/Toyota_Tacoma_V6_TRD_Pro_Series_Double_Cab_2015_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/870246838018646016/Toyota_Tacoma_V6_TRD_Pro_Series_Double_Cab_2015_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/870246834524794891/Toyota_Tacoma_V6_TRD_Pro_Series_Double_Cab_2015_699.png",
+
+    "333TopSpeed": 114,
+    "3330to60": 7.3,
+    "333Handling": 63,
+
+    "666TopSpeed": 119,
+    "6660to60": 6.9,
+    "666Handling": 65,
+
+    "996TopSpeed": 123,
+    "9960to60": 6.5,
+    "996Handling": 65,
+
+    "969TopSpeed": 123,
+    "9690to60": 6.9,
+    "969Handling": 68,
+
+    "699TopSpeed": 119,
+    "6990to60": 6.5,
+    "699Handling": 68
+}

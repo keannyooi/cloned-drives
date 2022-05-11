@@ -1,0 +1,54 @@
+{
+    "rq": 48,
+    "make": "Nissan",
+    "model": "Skyline Coupe 350GT",
+    "modelYear": 2002,
+    "country": "JP",
+    "topSpeed": 112,
+    "0to60": 5.8,
+    "handling": 78,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Street Racer","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1580,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 65.91,
+    "ola": 75.86,
+    "description": "CD-CINFO G35 Coupe. Card by Connor",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/962746324002951248/C.NissanSkylineCoupe350GT.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/962747342228967464/SkylineCoupe.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/962747372134334484/SkylineCoupe-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/962747393596588102/SkylineCoupe-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/962747590695325766/SkylineCoupe-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/962747565714063420/SkylineCoupe-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/962747427406901288/SkylineCoupe-699.png",
+
+    "333TopSpeed": 117,
+    "3330to60": 5.5,
+    "333Handling": 81,
+
+    "666TopSpeed": 121,
+    "6660to60": 5.2,
+    "666Handling": 83,
+
+    "996TopSpeed": 126,
+    "9960to60": 4.9,
+    "996Handling": 83,
+
+    "969TopSpeed": 126,
+    "9690to60": 5.2,
+    "969Handling": 87,
+
+    "699TopSpeed": 121,
+    "6990to60": 6.9,
+    "699Handling": 87
+}

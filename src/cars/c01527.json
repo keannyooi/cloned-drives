@@ -1,0 +1,56 @@
+{
+    "rq": 23,
+    "make": "Daihatsu",
+    "model": "Taft G Turbo",
+    "modelYear": 2020,
+    "country": "JP",
+    "topSpeed": 87,
+    "0to60": 13.5,
+    "handling": 67,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Kei Car", "The Japanese Odyssey"],
+    "isPrize": true,
+
+
+    "weight": 840,
+    "gc": "High",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 8.91,
+    "ola": 60.74,
+    "description": "Tough and Almighty Fun Tool. Card by Macan.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/969596731392147466/Taft_G_Turbo_20.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/969599255817904138/TaftGT.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/969599267054428160/TaftGT-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/969599279175962675/TaftGT-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/969599291360428062/TaftGT-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/969599304794787870/TaftGT-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/969599316677255168/TaftGT-699.png",
+
+    "333TopSpeed": 93,
+    "3330to60": 12.8,
+    "333Handling": 69,
+
+    "666TopSpeed": 99,
+    "6660to60": 12.2, 
+    "666Handling": 71,
+
+    "996TopSpeed": 105,
+    "9960to60": 11.5,
+    "996Handling": 71,
+
+    "969TopSpeed": 105,
+    "9690to60": 12.2,
+    "969Handling": 74,
+
+    "699TopSpeed": 99,
+    "6990to60": 11.5,
+    "699Handling": 74
+}

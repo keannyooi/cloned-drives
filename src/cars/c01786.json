@@ -1,0 +1,54 @@
+{
+    "rq": 79,
+    "make": "Nissan",
+    "model": "Skyline GT-R V-Spec II Nur (R34)",
+    "modelYear": 2002,
+    "country": "JP",
+    "topSpeed": 177,
+    "0to60": 4.5,
+    "handling": 88,
+    "driveType": "Drive Type",
+    "tyreType": "Tyre Type",
+    "tags": ["Sleeper", "Street Racer", "Silver Screen","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1500,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 80.36,
+    "ola": 66.66,
+    "description": "The fastest non-nismo R34 to ever leave the factory.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/886972675573051422/nissanr34vspeciinur.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/886973425904676894/r34VspecIINur.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/886973430736511016/r34VspecIINur333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/886973437342531704/r34VspecIINur666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/886973464622276619/r34VspecIINur996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/886973455440949258/r34VspecIINur969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/886973446406422578/r34VspecIINur699.png",
+
+    "333TopSpeed": 180,
+    "3330to60": 4.3,
+    "333Handling": 91,
+
+    "666TopSpeed": 183,
+    "6660to60": 4.1,
+    "666Handling": 94,
+
+    "996TopSpeed": 186,
+    "9960to60": 3.8,
+    "996Handling": 94,
+
+    "969TopSpeed": 186,
+    "9690to60": 4.1,
+    "969Handling": 98,
+
+    "699TopSpeed": 183,
+    "6990to60": 3.8,
+    "699Handling": 98
+}

@@ -1,0 +1,56 @@
+{
+    "rq": 27,
+    "make": "Subaru",
+    "model": "Vivio RX-R",
+    "modelYear": 1992,
+    "country": "JP",
+    "topSpeed": 87,
+    "0to60": 8.5,
+    "handling": 68,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch", "Kei Car","The Japanese Odyssey"],
+    "isPrize": false,
+
+
+    "weight": 760,
+    "gc": "Medium",
+    "seatCount":4,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 15.41,
+    "ola": 70.93,
+    "description": "Tiny tiny tiny 4wd hot hatch. Card by Keanny.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/963512866261074011/subaru_vivio_rx-r.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/963513473768247367/Vizio.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/963513483926847538/Vizio-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/963513499500285992/Vizio-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/963513511567315004/Vizio-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/963513525706293288/Vizio-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/963513536477290576/Vizio-699.png",
+
+    "333TopSpeed": 93,
+    "3330to60": 8.1,
+    "333Handling": 70,
+
+    "666TopSpeed": 99,
+    "6660to60": 7.7, 
+    "666Handling": 72,
+
+    "996TopSpeed": 105,
+    "9960to60": 7.2,
+    "996Handling": 72,
+
+    "969TopSpeed": 105,
+    "9690to60": 7.7,
+    "969Handling": 75,
+
+    "699TopSpeed": 99,
+    "6990to60": 7.2,
+    "699Handling": 75
+}

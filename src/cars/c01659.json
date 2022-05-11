@@ -1,0 +1,54 @@
+{
+    "rq": 110,
+    "make": "Mitsubishi",
+    "model": "Lancer Evolution IX Rally Car",
+    "modelYear": 2005,
+    "country": "JP",
+    "topSpeed": 155,
+    "0to60": 3.3,
+    "handling": 91,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["Motorsport","The Japanese Odyssey"],
+    "isPrize": true,
+
+    "weight": 1300,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 70.21,
+    "ola": 66.67,
+    "description": "Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/951600583993856050/evo9rally.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/951600912412069948/evo9rallycar.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/951600918581878814/evo9rallycar333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/951600927805169674/evo9rallycar666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/951600953725947954/evo9rallycar996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/951600944825630720/evo9rallycar969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/951600936898412584/evo9rallycar699.png",
+
+    "333TopSpeed": 158,
+    "3330to60": 3.1,
+    "333Handling": 94,
+
+    "666TopSpeed": 162,
+    "6660to60": 3.0,
+    "666Handling": 97,
+
+    "996TopSpeed": 165,
+    "9960to60": 2.8,
+    "996Handling": 97,
+
+    "969TopSpeed": 165,
+    "9690to60": 3.0,
+    "969Handling": 101,
+
+    "699TopSpeed": 162,
+    "6990to60": 2.8,
+    "699Handling": 101
+}

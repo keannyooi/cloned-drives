@@ -1,0 +1,56 @@
+{
+    "rq": 57,
+    "make": "Nissan",
+    "model": "Titan SV 4x4 Single Cab",
+    "modelYear": 2017,
+    "country": "JP",
+    "topSpeed": 113,
+    "0to60": 6.1,
+    "handling": 68,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+
+    "weight": 2539,
+    "gc": "High",
+    "seatCount":3,
+    "bodyStyle": "Pick-Up",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 56,
+    "ola": 69.49,
+    "description": "When the Titan does not need 3 more seats so it can haul more stuff in the bed. Card by Spence.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/970056480587927602/IMG_4922.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/970058774612181062/TitSV4x4SC.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/970058785659957258/TitSV4x4SC-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/970058797567606844/TitSV4x4SC-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/970058810171482202/TitSV4x4SC-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/970058822737608714/TitSV4x4SC-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/970058836658503700/TitSV4x4SC-699.png",
+
+    "333TopSpeed": 118,
+    "3330to60": 5.8,
+    "333Handling": 70,
+
+    "666TopSpeed": 122,
+    "6660to60": 5.5, 
+    "666Handling": 72,
+
+    "996TopSpeed": 127,
+    "9960to60": 5.2,
+    "996Handling": 72,
+
+    "969TopSpeed": 127,
+    "9690to60": 5.5,
+    "969Handling": 75,
+
+    "699TopSpeed": 122,
+    "6990to60": 5.2,
+    "699Handling": 75
+}

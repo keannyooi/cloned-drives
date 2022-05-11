@@ -1,0 +1,54 @@
+{
+    "rq": 46,
+    "make": "Nissan",
+    "model": "Frontier LE",
+    "modelYear": 2005,
+    "country": "JP",
+    "topSpeed": 113,
+    "0to60": 7.6,
+    "handling": 67,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 2074,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "Pickup",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 53.15,
+    "ola": 71.05,
+    "description": "Card by DodgeDemon",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/968179498128384000/Nissan_Frontier_LE_2005.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/968180191128068136/Nissan_Frontier_LE_2005_H000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/968180211353006111/Nissan_Frontier_LE_2005_H111.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/968180231087222794/Nissan_Frontier_LE_2005_H222.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/968180299991236638/Nissan_Frontier_LE_2005_H332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/968180275706224680/Nissan_Frontier_LE_2005_H323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/968180255061860383/Nissan_Frontier_LE_2005_H233.png",
+
+    "333TopSpeed": 118,
+    "3330to60": 7.2,
+    "333Handling": 69,
+
+    "666TopSpeed": 122,
+    "6660to60": 6.8,
+    "666Handling": 71,
+
+    "996TopSpeed": 127,
+    "9960to60": 6.5,
+    "996Handling": 71,
+
+    "969TopSpeed": 127,
+    "9690to60": 6.8,
+    "969Handling": 74,
+
+    "699TopSpeed": 122,
+    "6990to60": 6.5,
+    "699Handling": 74
+}

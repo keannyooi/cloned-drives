@@ -1,0 +1,56 @@
+{
+    "rq": 36,
+    "make": "Toyota",
+    "model": "Yaris TS",
+    "modelYear": 2008,
+    "country": "JP",
+    "topSpeed": 122,
+    "0to60": 8.8,
+    "handling": 72,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Hot Hatch","The Japanese Odyssey"],
+    "isPrize": false,
+
+
+    "weight": 1120,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 53.99,
+    "ola": 72.73,
+    "description": "This car is chock-a-block with kit. Card by Andu",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/867322798748860447/YarisTS08.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/867323539240910878/YarisTS08.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/867323548081848330/YarisTS08-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/867323554718285834/YarisTS08-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/867323579271217182/YarisTS08-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/867323591049347082/YarisTS08-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/867323602562711573/YarisTS08-699.png",
+
+    "333TopSpeed": 126,
+    "3330to60": 8.4,
+    "333Handling": 74,
+
+    "666TopSpeed": 131,
+    "6660to60": 7.9, 
+    "666Handling": 77,
+
+    "996TopSpeed": 135,
+    "9960to60": 7.5,
+    "996Handling": 77,
+
+    "969TopSpeed": 135,
+    "9690to60": 7.9,
+    "969Handling": 80,
+
+    "699TopSpeed": 131,
+    "6990to60": 7.5,
+    "699Handling": 80
+}

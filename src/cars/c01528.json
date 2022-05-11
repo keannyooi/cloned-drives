@@ -1,0 +1,54 @@
+{
+    "rq": 27,
+    "make": ["Datsun", "Nissan"],
+    "model": "260Z",
+    "modelYear": 1974,
+    "country": "JP",
+    "topSpeed": 122,
+    "0to60": 8.4,
+    "handling": 69,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1100,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 54.21,
+    "ola": 75.3,
+    "description": "Card by Keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/869497876156399666/datsun_260z.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/869214405928292362/260z_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/869214412081340436/260z_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/869214416275669042/260z_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/869214426962751498/260z_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/869214422126710784/260z_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/869214419530440754/260z_699.jpg",
+
+    "333TopSpeed": 126,
+    "3330to60": 8.0,
+    "333Handling": 71,
+
+    "666TopSpeed": 131,
+    "6660to60": 7.6,
+    "666Handling": 74,
+
+    "996TopSpeed": 135,
+    "9960to60": 7.1,
+    "996Handling": 74,
+
+    "969TopSpeed": 135,
+    "9690to60": 7.6,
+    "969Handling": 77,
+
+    "699TopSpeed": 131,
+    "6990to60": 7.1,
+    "699Handling": 77
+}

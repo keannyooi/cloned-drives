@@ -1,0 +1,54 @@
+{
+    "rq": 63,
+    "make": "Mitsubishi",
+    "model": "Lancer Evolution IX Wagon GT-A",
+    "modelYear": 2005,
+    "country": "JP",
+    "topSpeed": 147,
+    "0to60": 5.5,
+    "handling": 84,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1470,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 65.48,
+    "ola": 80,
+    "description": "Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/951601205359026286/evo9wagongta.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/951601289572261938/Evo9WagGTA.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/951601295184244746/Evo9WagGTA333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/951601302348132372/Evo9WagGTA666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/951601323504185395/Evo9WagGTA996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/951601317237907476/Evo9WagGTA969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/951601311370059817/Evo9WagGTA699.png",
+
+    "333TopSpeed": 151,
+    "3330to60": 5.2,
+    "333Handling": 87,
+
+    "666TopSpeed": 154,
+    "6660to60": 5.0,
+    "666Handling": 90,
+
+    "996TopSpeed": 158,
+    "9960to60": 4.7,
+    "996Handling": 90,
+
+    "969TopSpeed": 158,
+    "9690to60": 5.0,
+    "969Handling": 93,
+
+    "699TopSpeed": 154,
+    "6990to60": 4.7,
+    "699Handling": 93
+}

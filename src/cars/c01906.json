@@ -1,0 +1,56 @@
+{
+    "rq": 34,
+    "make": "Toyota",
+    "model": "Land Cruiser 4.7 V8",
+    "modelYear": 1997,
+    "country": "JP",
+    "topSpeed": 109,
+    "0to60": 10.2,
+    "handling": 64,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+
+    "weight": 2193,
+    "gc": "High",
+    "seatCount":5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 36.02,
+    "ola": 66.67,
+    "description": "One of the most loved SUVs of all time. Card by AK.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/969596398716719124/Toyota_Land_Cruiser_1997_CD.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/969598681051463730/LC47V8.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/969598686717939782/LC47V8-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/969598704824778862/LC47V8-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/969598716803706910/LC47V8-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/969598727641788456/LC47V8-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/969598740543451136/LC47V8-699.png",
+
+    "333TopSpeed": 114,
+    "3330to60": 9.7,
+    "333Handling": 66,
+
+    "666TopSpeed": 119,
+    "6660to60": 9.2, 
+    "666Handling": 68,
+
+    "996TopSpeed": 123,
+    "9960to60": 8.7,
+    "996Handling": 68,
+
+    "969TopSpeed": 123,
+    "9690to60": 9.2,
+    "969Handling": 71,
+
+    "699TopSpeed": 119,
+    "6990to60": 8.7,
+    "699Handling": 71
+}

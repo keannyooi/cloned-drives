@@ -1,0 +1,54 @@
+{
+    "rq": 55,
+    "make": "Nissan",
+    "model": "350Z Nismo R-Tune",
+    "modelYear": 2004,
+    "country": "JP",
+    "topSpeed": 155,
+    "0to60": 5.4,
+    "handling": 86,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Track Day", "Street Racer","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1465,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 67.5,
+    "ola": 79.63,
+    "description": "To void or not to void warranty, that is the question. Or maybe not if you are a hardcore import tuner afficionado. Card by Keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/869498934979076116/nissan_350z_nismo_r-tune.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/869212269077213194/350z_r-tune_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/869212274500435998/350z_r-tune_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/869212280447979580/350z_r-tune_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/869212291101491200/350z_r-tune_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/869212287171461150/350z_r-tune_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/869212283681767424/350z_r-tune_699.jpg",
+
+    "333TopSpeed": 158,
+    "3330to60": 5.1,
+    "333Handling": 89,
+
+    "666TopSpeed": 162,
+    "6660to60": 4.9,
+    "666Handling": 92,
+
+    "996TopSpeed": 165,
+    "9960to60": 4.6,
+    "996Handling": 92,
+
+    "969TopSpeed": 165,
+    "9690to60": 4.9,
+    "969Handling": 95,
+
+    "699TopSpeed": 162,
+    "6990to60": 4.6,
+    "699Handling": 95
+}

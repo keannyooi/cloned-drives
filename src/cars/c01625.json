@@ -1,0 +1,54 @@
+{
+    "rq": 54,
+    "make": "Mazda",
+    "model": "Savanna RX-7 Infini",
+    "modelYear": 1987,
+    "country": "JP",
+    "topSpeed": 112,
+    "0to60": 5.6,
+    "handling": 81,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer","The Japanese Odyssey",, "Silver Screen"],
+    "isPrize": false,
+
+    "weight": 1230,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 63.64,
+    "ola": 71.43,
+    "description": "The ultimate RX-7 of the time. Card by DodgeDemon",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/971797059088822332/Mazda_Savanna_RX-7_Infini_1987.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/971802289377534003/Mazda_Savanna_RX-7_Infini_1987_H000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/971802309115908147/Mazda_Savanna_RX-7_Infini_1987_H111.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/971802326400643142/Mazda_Savanna_RX-7_Infini_1987_H222.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/971802388509917204/Mazda_Savanna_RX-7_Infini_1987_H332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/971802366611447818/Mazda_Savanna_RX-7_Infini_1987_H323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/971802344520036362/Mazda_Savanna_RX-7_Infini_1987_H233.png",
+
+    "333TopSpeed": 117,
+    "3330to60": 5.3,
+    "333Handling": 84,
+
+    "666TopSpeed": 121,
+    "6660to60": 5.0,
+    "666Handling": 86,
+
+    "996TopSpeed": 126,
+    "9960to60": 4.8,
+    "996Handling": 86,
+
+    "969TopSpeed": 126,
+    "9690to60": 5.0,
+    "969Handling": 90,
+
+    "699TopSpeed": 121,
+    "6990to60": 4.8,
+    "699Handling": 90
+}

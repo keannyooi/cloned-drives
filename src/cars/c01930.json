@@ -1,0 +1,56 @@
+{
+    "rq": 28,
+    "make": "Toyota",
+    "model": "Vitz U 1.3 4WD",
+    "modelYear": 2010,
+    "country": "JP",
+    "topSpeed": 108,
+    "0to60": 11.6,
+    "handling": 70,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+
+    "weight": 1115,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 37.06,
+    "ola": 61.21,
+    "description": "Why are these Vitz giving me Panda 4x4 vibes. Card by Andu.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/963493982409736202/VitzU4WD10.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/963495088217010187/VitzU10.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/963495100674080798/VitzU10-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/963495110413275267/VitzU10-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/963495121398165514/VitzU10-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/963495167480971354/VitzU10-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/963495143820890172/VitzU10-699.png",
+
+    "333TopSpeed": 113,
+    "3330to60": 11.0,
+    "333Handling": 72,
+
+    "666TopSpeed": 118,
+    "6660to60": 10.4, 
+    "666Handling": 75,
+
+    "996TopSpeed": 122,
+    "9960to60": 9.9,
+    "996Handling": 75,
+
+    "969TopSpeed": 122,
+    "9690to60": 10.4,
+    "969Handling": 78,
+
+    "699TopSpeed": 118,
+    "6990to60": 9.9,
+    "699Handling": 78
+}

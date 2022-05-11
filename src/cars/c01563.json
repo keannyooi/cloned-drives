@@ -1,0 +1,54 @@
+{
+    "rq": 66,
+    "make": "Infiniti",
+    "model": "EMERG-E",
+    "modelYear": 2012,
+    "country": "JP",
+    "topSpeed": 134,
+    "0to60": 4.2,
+    "handling": 87,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Concept", "Unique", "Eco-Friendly","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1610,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Electric",
+    "mra": 52.7,
+    "ola": 65.96,
+    "description": "Infinitis very own halo car - oh wait it's an Evora in the internals. Card by Keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/868852264582909982/infiniti_emerg-e.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/861144821485010975/emerg-e_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/861144828879831040/emerg-e_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/861144836005953536/emerg-e_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/861144848061038592/emerg-e_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/861144843278876682/emerg-e_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/861144839906525224/emerg-e_699.jpg",
+
+    "333TopSpeed": 138,
+    "3330to60": 4.0,
+    "333Handling": 90,
+
+    "666TopSpeed": 142,
+    "6660to60": 3.8,
+    "666Handling": 93,
+
+    "996TopSpeed": 146,
+    "9960to60": 3.6,
+    "996Handling": 93,
+
+    "969TopSpeed": 146,
+    "9690to60": 3.8,
+    "969Handling": 97,
+
+    "699TopSpeed": 142,
+    "6990to60": 3.6,
+    "699Handling": 97
+}

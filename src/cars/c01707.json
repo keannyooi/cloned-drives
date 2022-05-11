@@ -1,0 +1,54 @@
+{
+    "rq": 37,
+    "make": "Nissan",
+    "model": "300ZX Turbo",
+    "modelYear": 1987,
+    "country": "JP",
+    "topSpeed": 153,
+    "0to60": 7.0,
+    "handling": 71,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1481,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 60.87,
+    "ola": 71.43,
+    "description": "Card by Keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/869498710931935262/nissan_300zx_turbo_kouki.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/869218755543191622/kouki_turbo_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/869218761159344188/kouki_turbo_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/869218765487890512/kouki_turbo_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/869218776879628348/kouki_turbo_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/869218773733879808/kouki_turbo_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/869218769791250493/kouki_turbo_699.jpg",
+
+    "333TopSpeed": 156,
+    "3330to60": 6.7,
+    "333Handling": 73,
+
+    "666TopSpeed": 160,
+    "6660to60": 6.3,
+    "666Handling": 76,
+
+    "996TopSpeed": 163,
+    "9960to60": 6.0,
+    "996Handling": 76,
+
+    "969TopSpeed": 163,
+    "9690to60": 6.3,
+    "969Handling": 79,
+
+    "699TopSpeed": 160,
+    "6990to60": 6.0,
+    "699Handling": 79
+}

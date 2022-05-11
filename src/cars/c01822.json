@@ -1,0 +1,54 @@
+{
+    "rq": 33,
+    "make": ["Samuri", "Nissan", "Datsun"],
+    "model": "240Z Super Samuri",
+    "modelYear": 1973,
+    "country": "GB",
+    "topSpeed": 140,
+    "0to60": 6.7,
+    "handling": 73,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner","The Japanese Odyssey"],
+    "isPrize": true,
+
+    "weight": 1000,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 53.6,
+    "ola": 65.67,
+    "description": "A British racing ico, despite originally being a japanese car. Card by Keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/869497837489102858/datsun_240z_super_samuri.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/869219349813141525/samuri_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/869219355987156992/samuri_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/869219360852570142/samuri_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/869219369232760872/samuri_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/869219367462789140/samuri_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/869219363616604200/samuri_699.jpg",
+
+    "333TopSpeed": 144,
+    "3330to60": 6.4,
+    "333Handling": 75,
+
+    "666TopSpeed": 147,
+    "6660to60": 6.0,
+    "666Handling": 78,
+
+    "996TopSpeed": 151,
+    "9960to60": 5.7,
+    "996Handling": 78,
+
+    "969TopSpeed": 151,
+    "9690to60": 6.0,
+    "969Handling": 81,
+
+    "699TopSpeed": 147,
+    "6990to60": 5.7,
+    "699Handling": 81
+}

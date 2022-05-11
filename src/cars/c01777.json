@@ -1,0 +1,54 @@
+{
+    "rq": 54,
+    "make": "Nissan",
+    "model": "Skyline 350GT-8",
+    "modelYear": 2002,
+    "country": "JP",
+    "topSpeed": 112,
+    "0to60": 6.0,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1550,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 65.22,
+    "ola": 76.67,
+    "description": "First ever eight-speed CVT. Technology. Card by Connor",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/962746172873801779/B.NissanSkyline350GT8.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/962746839579369502/Skyline3508.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/962746858181116004/Skyline3508-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/962746874593423390/Skyline3508-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/962746938502049902/Skyline3508-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/962746912879022171/Skyline3508-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/962746893228720198/Skyline3508-699.png",
+
+    "333TopSpeed": 117,
+    "3330to60": 5.7,
+    "333Handling": 80,
+
+    "666TopSpeed": 121,
+    "6660to60": 5.4,
+    "666Handling": 82,
+
+    "996TopSpeed": 126,
+    "9960to60": 5.1,
+    "996Handling": 82,
+
+    "969TopSpeed": 126,
+    "9690to60": 5.4,
+    "969Handling": 85,
+
+    "699TopSpeed": 121,
+    "6990to60": 5.1,
+    "699Handling": 85
+}

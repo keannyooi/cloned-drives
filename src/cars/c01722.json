@@ -1,0 +1,54 @@
+{
+    "rq": 66,
+    "make": "Nissan",
+    "model": "Fairlady ZG GTS-II",
+    "modelYear": 1973,
+    "country": "JP",
+    "topSpeed": 165,
+    "0to60": 4.3,
+    "handling": 87,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 825,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 69.35,
+    "ola": 83.72,
+    "description": "The Fuji slayer that came from Nissan's famed Omori factory. Card by Keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/869499479097770024/nissan_fairlady_zg_gts-ii.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/869217818799927436/fairlady_gts-ii_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/869217823023591465/fairlady_gts-ii_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/869217826488078366/fairlady_gts-ii_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/869217842900398121/fairlady_gts-ii_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/869217835128328262/fairlady_gts-ii_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/869217832292999218/fairlady_gts-ii_699.jpg",
+
+    "333TopSpeed": 168,
+    "3330to60": 4.1,
+    "333Handling": 90,
+
+    "666TopSpeed": 171,
+    "6660to60": 3.9,
+    "666Handling": 93,
+
+    "996TopSpeed": 174,
+    "9960to60": 3.7,
+    "996Handling": 93,
+
+    "969TopSpeed": 174,
+    "9690to60": 3.9,
+    "969Handling": 97,
+
+    "699TopSpeed": 171,
+    "6990to60": 3.7,
+    "699Handling": 97
+}

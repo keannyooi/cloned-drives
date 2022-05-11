@@ -1,0 +1,54 @@
+{
+    "rq": 41,
+    "make": "Mazda",
+    "model": "CX-7 2.2 MZR-DC High-Line",
+    "modelYear": 2009,
+    "country": "JP",
+    "topSpeed": 122,
+    "0to60": 9.7,
+    "handling": 70,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1875,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 47.78,
+    "ola": 65.97,
+    "description": "Card by Connor.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/863860696797675550/C.MazdaCX722CD.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/863860907201658920/C.MazdaCX7.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/863860915870760960/C.MazdaCX7-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/863860924216377354/C.MazdaCX7-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/863860953045270558/C.MazdaCX7-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/863860943092056094/C.MazdaCX7-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/863860933462196224/C.MazdaCX7-699.png",
+
+    "333TopSpeed": 126,
+    "3330to60": 9.2,
+    "333Handling": 72,
+
+    "666TopSpeed": 131,
+    "6660to60": 8.7,
+    "666Handling": 75,
+
+    "996TopSpeed": 135,
+    "9960to60": 8.2,
+    "996Handling": 75,
+
+    "969TopSpeed": 135,
+    "9690to60": 8.7,
+    "969Handling": 78,
+
+    "699TopSpeed": 131,
+    "6990to60": 8.2,
+    "699Handling": 78
+}

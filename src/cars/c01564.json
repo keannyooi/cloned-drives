@@ -1,0 +1,56 @@
+{
+    "rq": 37,
+    "make": "Infiniti",
+    "model": "G20",
+    "modelYear": 1990,
+    "country": "JP",
+    "topSpeed": 130,
+    "0to60": 8.4,
+    "handling": 72,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+
+    "weight": 1245,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 53.07,
+    "ola": 80.71,
+    "description": "The second luxury sedan Infiniti to take on the old mighty german rivals. Card by Andu.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/940180106733813820/G20.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/940180163826700318/G20.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/940180178649370684/G20-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/940180188715708446/G20-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/940180223117381662/G20-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/940180211461402634/G20-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/940180199767679036/G20-699.png",
+
+    "333TopSpeed": 134,
+    "3330to60": 8.0,
+    "333Handling": 74,
+
+    "666TopSpeed": 138,
+    "6660to60": 7.6, 
+    "666Handling": 77,
+
+    "996TopSpeed": 142,
+    "9960to60": 7.1,
+    "996Handling": 77,
+
+    "969TopSpeed": 142,
+    "9690to60": 7.6,
+    "969Handling": 80,
+
+    "699TopSpeed": 138,
+    "6990to60": 7.1,
+    "699Handling": 80
+}

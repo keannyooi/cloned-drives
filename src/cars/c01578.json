@@ -1,0 +1,56 @@
+{
+    "rq": 23,
+    "make": "Isuzu",
+    "model": "Piazza 1.5",
+    "modelYear": 1981,
+    "country": "JP",
+    "topSpeed": 106,
+    "0to60": 11.3,
+    "handling": 69,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+
+    "weight": 1140,
+    "gc": "Medium",
+    "seatCount":4,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 39.93,
+    "ola": 65.46,
+    "description": "Forgotten Giugiaro Gem. Card by Andu.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/948299288419651604/Piazza15.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/948299667593117826/Piazza15.pngg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/948299676522799114/Piazza15-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/948299686899486730/Piazza15-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/948299702686855308/Piazza15-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/948299721913561128/Piazza15-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/948299754301952020/Piazza15-699.png",
+
+    "333TopSpeed": 111,
+    "3330to60": 10.9,
+    "333Handling": 71,
+
+    "666TopSpeed": 116,
+    "6660to60": 10.4, 
+    "666Handling": 74,
+
+    "996TopSpeed": 141,
+    "9960to60": 9.8,
+    "996Handling": 74,
+
+    "969TopSpeed": 121,
+    "9690to60": 10.4,
+    "969Handling": 77,
+
+    "699TopSpeed": 116,
+    "6990to60": 9.8,
+    "699Handling": 77
+}

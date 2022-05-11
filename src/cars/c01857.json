@@ -1,0 +1,54 @@
+{
+    "rq": 33,
+    "make": "Toyota",
+    "model": "Auris 1.2 Turbo",
+    "modelYear": 2015,
+    "country": "JP",
+    "topSpeed": 123,
+    "0to60": 10.0,
+    "handling": 74,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1304,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 53.19,
+    "ola": 68.00,
+    "description": "Card by Connor",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/867523641218826260/D.ToyotaAuris12T.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/867523889998069780/ToyotaAuris12T.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/867523900886614066/ToyotaAuris12T-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/867523911973601310/ToyotaAuris12T-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/867523971087597588/ToyotaAuris12T-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/867523956629438504/ToyotaAuris12T-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/867523922232606750/ToyotaAuris12T-699.png",
+
+    "333TopSpeed": 127,
+    "3330to60": 9.5,
+    "333Handling": 76,
+
+    "666TopSpeed": 131,
+    "6660to60": 9.0,
+    "666Handling": 79,
+
+    "996TopSpeed": 136,
+    "9960to60": 8.5,
+    "996Handling": 79,
+
+    "969TopSpeed": 136,
+    "9690to60": 9.0,
+    "969Handling": 82,
+
+    "699TopSpeed": 131,
+    "6990to60": 8.5,
+    "699Handling": 82
+}

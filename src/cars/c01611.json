@@ -1,0 +1,56 @@
+{
+    "rq": 33,
+    "make": "Mazda",
+    "model": "Protegé MP3",
+    "modelYear": 2001,
+    "country": "JP",
+    "topSpeed": 120,
+    "0to60": 8.3,
+    "handling": 77,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer","The Japanese Odyssey"],
+    "isPrize": false,
+
+
+    "weight": 1262,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 52.88,
+    "ola": 72.29,
+    "description": "How do you do, fellow kids? Card by Churrito.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/965203437555974174/Mazda_Protege_MP3.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/965203921960312852/Mazda_Protege_MP3_Stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/965203954134839307/Mazda_Protege_MP3_1_Star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/965203979854307368/Mazda_Protege_MP3_2_Star.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/965204055376928768/Mazda_Protege_MP3_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/965204030144000040/Mazda_Protege_MP3_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/965204007704461342/Mazda_Protege_MP3_699.png",
+
+    "333TopSpeed": 124,
+    "3330to60": 7.9,
+    "333Handling": 80,
+
+    "666TopSpeed": 129,
+    "6660to60": 7.5, 
+    "666Handling": 82,
+
+    "996TopSpeed": 133,
+    "9960to60": 7.1,
+    "996Handling": 82,
+
+    "969TopSpeed": 133,
+    "9690to60": 7.5,
+    "969Handling": 85,
+
+    "699TopSpeed": 129,
+    "6990to60": 7.1,
+    "699Handling": 85
+}

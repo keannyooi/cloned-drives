@@ -1,0 +1,56 @@
+{
+    "rq": 22,
+    "make": "Suzuki",
+    "model": "Hustler Hybrid X Turbo 4WD",
+    "modelYear": 2020,
+    "country": "JP",
+    "topSpeed": 87,
+    "0to60": 14.0,
+    "handling": 67,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Kei Car", "Eco-Friendly","The Japanese Odyssey"],
+    "isPrize": false,
+
+
+    "weight": 870,
+    "gc": "High",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 8.91,
+    "ola": 55.71,
+    "description": "Do the hustle. Card by Macan.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/969596832621674616/Hustler_Hybrid_X_Turbo_4WD_20.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/969599371048017982/Hustler.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/969599380648771644/Hustler-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/969599391725912124/Hustler-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/969599402761138226/Hustler-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/969599420603707502/Hustler-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/969599431831875674/Hustler-699.png",
+
+    "333TopSpeed": 93,
+    "3330to60": 13.3,
+    "333Handling": 68,
+
+    "666TopSpeed": 99,
+    "6660to60": 12.6, 
+    "666Handling": 70,
+
+    "996TopSpeed": 105,
+    "9960to60": 11.9,
+    "996Handling": 70,
+
+    "969TopSpeed": 105,
+    "9690to60": 12.6,
+    "969Handling": 73,
+
+    "699TopSpeed": 99,
+    "6990to60": 11.9,
+    "699Handling": 73
+}

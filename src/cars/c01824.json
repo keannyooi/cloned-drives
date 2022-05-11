@@ -1,0 +1,54 @@
+{
+    "rq": 38,
+    "make": "Scion",
+    "model": "iA",
+    "modelYear": 2016,
+    "country": "US",
+    "topSpeed": 120,
+    "0to60": 9.1,
+    "handling": 77,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1082,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 47.89,
+    "ola": 68.13,
+    "description": "The last Scion to debut wasn't even an Toyota. Card by Connor",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/868931786196004864/D.ScioniA.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/868931860787515443/ScioniA.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/868931873995374592/ScioniA-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/868931888713203754/ScioniA-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/868931929058185236/ScioniA-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/868931919868465252/ScioniA-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/868931901405134918/ScioniA-699.png",
+
+    "333TopSpeed": 124,
+    "3330to60": 8.6,
+    "333Handling": 80,
+
+    "666TopSpeed": 129,
+    "6660to60": 8.2,
+    "666Handling": 82,
+
+    "996TopSpeed": 133,
+    "9960to60": 7.7,
+    "996Handling": 82,
+
+    "969TopSpeed": 133,
+    "9690to60": 8.2,
+    "969Handling": 85,
+
+    "699TopSpeed": 129,
+    "6990to60": 7.7,
+    "699Handling": 85
+}

@@ -1,0 +1,54 @@
+{
+    "rq": 48,
+    "make": "Toyota",
+    "model": "Highlander Hybrid Limited",
+    "modelYear": 2006,
+    "country": "JP",
+    "topSpeed": 109,
+    "0to60": 6.8,
+    "handling": 67,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Eco-Friendly","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1926,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 53.54,
+    "ola": 61.76,
+    "description": "Card by McNuggets.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/957389909616918538/highlander_hybrid.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/957388981857812510/highlander_hybrid_stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/957389044185182228/highlander_hybrid_1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/957389085914308688/highlander_hybrid_2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/957389176913920051/highlander_hybrid_332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/957389145972547625/highlander_hybrid_323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/957389122811617370/highlander_hybrid_233.png",
+
+    "333TopSpeed": 114,
+    "3330to60": 6.5,
+    "333Handling": 69,
+
+    "666TopSpeed": 119,
+    "6660to60": 6.1,
+    "666Handling": 71,
+
+    "996TopSpeed": 123,
+    "9960to60": 5.8,
+    "996Handling": 71,
+
+    "969TopSpeed": 123,
+    "9690to60": 6.1,
+    "969Handling": 74,
+
+    "699TopSpeed": 119,
+    "6990to60": 5.8,
+    "699Handling": 74
+}

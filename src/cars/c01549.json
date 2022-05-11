@@ -1,0 +1,56 @@
+{
+    "rq": 31,
+    "make": "Honda",
+    "model": "CRX 1.6i-16 Si",
+    "modelYear": 1988,
+    "country": "JP",
+    "topSpeed": 131,
+    "0to60": 8.5,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch","The Japanese Odyssey"],
+    "isPrize": false,
+
+
+    "weight": 959,
+    "gc": "Medium",
+    "seatCount":2,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 57.43,
+    "ola": 70.53,
+    "description": "Blobbified CRX. Card by Andu.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/947539947404029972/CRX16i16Si.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/947540763842072576/CRX16i16Si88.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/947540774990540850/CRX16i16Si88-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/947540792514314280/CRX16i16Si88-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/947540812038832159/CRX16i16Si88-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/947540833459142676/CRX16i16Si88-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/947540853021376552/CRX16i16Si88-699.png",
+
+    "333TopSpeed": 135,
+    "3330to60": 8.1,
+    "333Handling": 75,
+
+    "666TopSpeed": 139,
+    "6660to60": 7.7, 
+    "666Handling": 78,
+
+    "996TopSpeed": 143,
+    "9960to60": 7.2,
+    "996Handling": 78,
+
+    "969TopSpeed": 143,
+    "9690to60": 7.7,
+    "969Handling": 81,
+
+    "699TopSpeed": 139,
+    "6990to60": 7.2,
+    "699Handling": 81
+}

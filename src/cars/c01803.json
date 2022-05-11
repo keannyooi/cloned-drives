@@ -1,0 +1,56 @@
+{
+    "rq": 50,
+    "make": "Nissan",
+    "model": "Titan SV 4x2 King Cab",
+    "modelYear": 2020,
+    "country": "JP",
+    "topSpeed": 115,
+    "0to60": 6.3,
+    "handling": 66,
+    "driveType": "RWD",
+    "tyreType": "All-Surface",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+
+    "weight": 2527,
+    "gc": "High",
+    "seatCount":5,
+    "bodyStyle": "Pick-Up",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 60.58,
+    "ola": 79.37,
+    "description": "With the absence of the rear doors, less leg room and no power being sent to the front wheels; this is a 400hp V8 Titan that lacks practicality and capability. Card by Spence.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/970057781774274560/IMG_4727.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/970059375135838258/TitSV4x2KC.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/970059383885148220/TitSV4x2KC-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/970059392873545728/TitSV4x2KC-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/970059404219134012/TitSV4x2KC-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/970059417942917140/TitSV4x2KC-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/970059429561135175/TitSV4x2KC-699.png",
+
+    "333TopSpeed": 120,
+    "3330to60": 6.0,
+    "333Handling": 68,
+
+    "666TopSpeed": 124,
+    "6660to60": 5.7, 
+    "666Handling": 70,
+
+    "996TopSpeed": 129,
+    "9960to60": 5.4,
+    "996Handling": 70,
+
+    "969TopSpeed": 129,
+    "9690to60": 5.7,
+    "969Handling": 73,
+
+    "699TopSpeed": 124,
+    "6990to60": 5.4,
+    "699Handling": 73
+}

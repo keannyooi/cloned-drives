@@ -1,0 +1,54 @@
+{
+    "rq": 17,
+    "make": "Toyota",
+    "model": "Century Type L",
+    "modelYear": 1990,
+    "country": "JP",
+    "topSpeed": 112,
+    "0to60": 12.6,
+    "handling": 60,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1890,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 51.22,
+    "ola": 60.32,
+    "description": "Drive like an emperor, if an emperor actually drives. Card by Keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/867728951861575720/toyota_century_type_l.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/867728257225981972/century_type_l_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/867728262545014804/century_type_l_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/867728264697086012/century_type_l_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/867728277666136084/century_type_l_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/867728273461870592/century_type_l_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/867728270618394654/century_type_l_699.jpg",
+
+    "333TopSpeed": 117,
+    "3330to60": 12.0,
+    "333Handling": 62,
+
+    "666TopSpeed": 121,
+    "6660to60": 11.3,
+    "666Handling": 64,
+
+    "996TopSpeed": 126,
+    "9960to60": 10.7,
+    "996Handling": 64,
+
+    "969TopSpeed": 126,
+    "9690to60": 11.3,
+    "969Handling": 67,
+
+    "699TopSpeed": 121,
+    "6990to60": 10.7,
+    "699Handling": 67
+}

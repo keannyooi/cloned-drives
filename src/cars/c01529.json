@@ -1,0 +1,54 @@
+{
+    "rq": 27,
+    "make": ["Datsun", "Nissan],
+    "model": "280Z",
+    "modelYear": 1975,
+    "country": "JP",
+    "topSpeed": 125,
+    "0to60": 8.3,
+    "handling": 68,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer", "Style Icon", "The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1304,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 54.23,
+    "ola": 76.8,
+    "description": "The 280Z took the 260Z's place after a brief 1 year of sales and production to cope with increasingly strict US regulations. Card by Keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/869497910088310784/datsun_280z.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/869214442502647838/280z_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/869214445132451900/280z_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/869214448844423218/280z_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/869214458776522812/280z_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/869214455194615808/280z_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/869214452262793288/280z_699.jpg",
+
+    "333TopSpeed": 129,
+    "3330to60": 7.9,
+    "333Handling": 70,
+
+    "666TopSpeed": 133,
+    "6660to60": 7.5,
+    "666Handling": 72,
+
+    "996TopSpeed": 137,
+    "9960to60": 7.1,
+    "996Handling": 72,
+
+    "969TopSpeed": 137,
+    "9690to60": 7.5,
+    "969Handling": 75,
+
+    "699TopSpeed": 133,
+    "6990to60": 7.1,
+    "699Handling": 75
+}

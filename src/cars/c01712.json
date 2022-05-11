@@ -1,0 +1,54 @@
+{
+    "rq": 55,
+    "make": "Nissan",
+    "model": "350Z Nismo S-Tune",
+    "modelYear": 2004,
+    "country": "JP",
+    "topSpeed": 155,
+    "0to60": 5.5,
+    "handling": 88,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer","The Japanese Odyssey"],
+    "isPrize": false,
+
+    "weight": 1465,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.27,
+    "ola": 78.18,
+    "description": "One of the factory upgrade packages you can get for a 350Z. IDK what else there is to say. Card by Keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/869499064453050368/nissan_350z_nismo_s-tune.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/869212322760110120/350z_s-tune_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/869212328795709470/350z_s-tune_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/869212332323127336/350z_s-tune_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/869212346369855588/350z_s-tune_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/869212351457558549/350z_s-tune_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/869212335934423070/350z_s-tune_699.jpg",
+
+    "333TopSpeed": 158,
+    "3330to60": 5.2,
+    "333Handling": 91,
+
+    "666TopSpeed": 162,
+    "6660to60": 5.0,
+    "666Handling": 94,
+
+    "996TopSpeed": 165,
+    "9960to60": 4.7,
+    "996Handling": 94,
+
+    "969TopSpeed": 165,
+    "9690to60": 5.0,
+    "969Handling": 98,
+
+    "699TopSpeed": 162,
+    "6990to60": 4.7,
+    "699Handling": 98
+}
