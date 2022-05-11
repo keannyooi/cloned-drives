@@ -1,0 +1,54 @@
+{
+    "rq": 75,
+    "make": ["ABR Hosoki", "Nissan"],
+    "model": "Fairlady Z 'Devil Z'",
+    "modelYear": 1994,
+    "country": "JP",
+    "topSpeed": 212,
+    "0to60": 3.4,
+    "handling": 81,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Unique", "Street Racer", "Tuner", "Silver Screen","The Japanese Odyssey"],
+    "isPrize": true,
+
+    "weight": 1150,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 85.00,
+    "ola": 94.12,
+    "description": "The infamous Devil Z owned by a member of Midnight Club (not the game, the Japanese Wangan racing team in the 90's). Card by Keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/869498088706945034/devil_z_real.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/869217166573064242/devil_z_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/869217170373087232/devil_z_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/869217180317810748/devil_z_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/869217192506449950/devil_z_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/869217188404416562/devil_z_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/869217186345000999/devil_z_699.jpg",
+
+    "333TopSpeed": 214,
+    "3330to60": 3.2,
+    "333Handling": 84,
+
+    "666TopSpeed": 217,
+    "6660to60": 3.1,
+    "666Handling": 86,
+
+    "996TopSpeed": 219,
+    "9960to60": 2.9,
+    "996Handling": 86,
+
+    "969TopSpeed": 219,
+    "9690to60": 3.1,
+    "969Handling": 90,
+
+    "699TopSpeed": 217,
+    "6990to60": 2.9,
+    "699Handling": 90
+}
