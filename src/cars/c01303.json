@@ -9,11 +9,10 @@
     "handling": 75,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": [],
+    "tags": ["The Japanese Odyssey"],
     "isPrize": false,
 
-
-    "weight": 1335,
+    "weight": 1373,
     "gc": "Medium",
     "seatCount": 5,
     "bodyStyle": "Hatchback",
@@ -21,26 +20,24 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 51.63,
-    "ola": 75.95,
+    "mra": 48.40,
+    "ola": 68.13,
     "description": "Corolla but iM but Corolla. Card by Connor",
 
-
-    "card": "https://cdn.discordapp.com/attachments/819200156623962122/865679002449346579/ToyotaCorollaiM.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820017517954859118/D.ToyotaCorollaiM.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/865678909021618176/D.ToyotaCorollaiM.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/865679002449346579/ToyotaCorollaiM.png",
     "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/865679012129931264/ToyotaCorollaiM-1.png",
     "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/865679025014964254/ToyotaCorollaiM-2.png",
     "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/865679062507585576/ToyotaCorollaiM-996.png",
     "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/865679050487627797/ToyotaCorollaiM-969.png",
     "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/865679037309779978/ToyotaCorollaiM-699.png",
 
-
     "333TopSpeed": 117,
     "3330to60": 8.6,
     "333Handling": 77,
 
     "666TopSpeed": 121,
-    "6660to60": 8.2, 
+    "6660to60": 8.2,
     "666Handling": 80,
 
     "996TopSpeed": 126,

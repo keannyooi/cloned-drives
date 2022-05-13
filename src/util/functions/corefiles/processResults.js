@@ -1,64 +1,41 @@
 "use strict";
 
+const { MessageActionRow } = require("discord.js");
 const { InfoMessage, ErrorMessage } = require("../../classes/classes.js");
 const { defaultWaitTime } = require("../../consts/consts.js");
 
 async function processResults(message, searchResults, listGen, type, currentMessage) {
-    const filter = (response) => response.author.id === message.author.id;
-    const size = Array.isArray(searchResults) ? searchResults.length : searchResults.size;
-
-    if (size > 1) {
-        const list = listGen();
-        if (list.length > 4096) {
-            const errorMessage = new ErrorMessage({
-                channel: message.channel,
-                title: "Due to Discord's embed limitations, the bot isn't able to show the full list of search results.",
-                desc: "Try again with a more specific keyword.",
-                author: message.author
-            });
-            return errorMessage.sendMessage({ currentMessage });
-        }
-
+    const filter = (button) => button.user.id === message.author.id && button.customId === "search";
+    if (searchResults.length > 25) {
+        const errorMessage = new ErrorMessage({
+            channel: message.channel,
+            title: "Due to Discord's dropdown menu limitations, the bot isn't able to show the full list of search results.",
+            desc: "Try again with a more specific keyword.",
+            author: message.author,
+            fields: [{ name: "Number of Items in List", value: `\`${searchResults.length} (> 25)\`` }]
+        });
+        return errorMessage.sendMessage({ currentMessage });
+    }
+    else if (searchResults.length > 1) {
+        const row = new MessageActionRow({ components: [listGen()] });
         const infoMessage = new InfoMessage({
             channel: message.channel,
             title: "Multiple results found, please type one of the following.",
-            desc: list,
             author: message.author,
             footer: `You have been given ${defaultWaitTime / 1000} seconds to decide.`
         });
-        currentMessage = await infoMessage.sendMessage({ currentMessage, preserve: true });
+        currentMessage = await infoMessage.sendMessage({ currentMessage, buttons: [row], preserve: true });
 
         try {
-            const collected = await message.channel.awaitMessages({
+            const selection = await message.channel.awaitMessageComponent({
                 filter,
                 max: 1,
                 time: defaultWaitTime,
                 errors: ["time"]
             });
-
-            let selection = collected.first().content;
-            if (!message.channel.type.includes("DM")) {
-                collected.first().delete();
-            }
-            if (isNaN(selection) || parseInt(selection) > size || parseInt(selection) < 1) {
-                const errorMessage = new ErrorMessage({
-                    channel: message.channel,
-                    title: "Error, invalid integer provided.",
-                    desc: `Your response was not a number between \`1\` and \`${size}\`.`,
-                    author: message.author
-                }).displayClosest(selection);
-                return errorMessage.sendMessage({ currentMessage });
-            }
-            else {
-                let result;
-                if (Array.isArray(searchResults)) {
-                    result = searchResults[parseInt(selection) - 1];
-                }
-                else {
-                    result = searchResults.get(Array.from(searchResults.keys())[parseInt(selection) - 1]);
-                }
-                return [result, currentMessage];
-            }
+            await selection.deferUpdate();
+            await currentMessage.removeButtons();
+            return [searchResults[parseInt(selection.values[0]) - 1], currentMessage];
         }
         catch (error) {
             console.log(error);
@@ -71,7 +48,7 @@ async function processResults(message, searchResults, listGen, type, currentMess
             return infoMessage.sendMessage({ currentMessage });
         }
     }
-    else if (size > 0) {
+    else if (searchResults.length > 0) {
         if (Array.isArray(searchResults)) {
             searchResults.push(currentMessage);
             return searchResults;

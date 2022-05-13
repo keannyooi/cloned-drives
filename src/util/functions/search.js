@@ -1,19 +1,28 @@
 "use strict";
 
+const { MessageSelectMenu } = require("discord.js");
 const carNameGen = require("./carNameGen.js");
 const processResults = require("./corefiles/processResults.js");
 
 async function search(message, query, searchList, type, currentMessage) {
     const searchResults = searchList.filter(s => {
-        let test = listGen(s, type).toLocaleLowerCase("en").replace(/[()"]/g, "").split(" ");
+        let test = listGen(s, type).replace(/[()"]/g, "").toLocaleLowerCase("en").split(" ");
         return query.every(part => test.includes(part.replace(/[()"]/g, "")));
     });
     return processResults(message, searchResults, () => {
-        let list = "";
-        for (let i = 1; i <= searchResults.length; i++) {
-            let hmm = listGen(searchResults[i - 1], type);
-            list += `${i} - ${hmm}\n`;
+        const options = [];
+        for (let i = 0; i < searchResults.length; i++) {
+            options.push({
+                label: listGen(searchResults[i], type),
+                value: `${i + 1}`
+            });
         }
+
+        let list = new MessageSelectMenu({
+            customId: "search",
+            placeholder: "Select something...",
+            options
+        });
         return list;
     }, type, currentMessage)
         .catch(throwError => {

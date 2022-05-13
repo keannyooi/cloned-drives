@@ -3,7 +3,7 @@
 const bot = require("../../config/config.js");
 const { createCanvas, loadImage } = require("canvas");
 const { MessageAttachment } = require("discord.js");
-const { SuccessMessage, InfoMessage, ErrorMessage } = require("../classes/classes.js");
+const { SuccessMessage, InfoMessage, ErrorMessage, BotError } = require("../classes/classes.js");
 const { weatherVars, driveHierarchy, gcHierarchy, failedToLoadImageLink } = require("../consts/consts.js");
 
 async function race(message, player, opponent, currentTrack, disablegraphics) {
@@ -35,7 +35,23 @@ async function race(message, player, opponent, currentTrack, disablegraphics) {
     const result = evalScore(player, opponent);
     const raceInfo = compare(player, opponent, (result > 0));
     let resultMessage;
-    if (result > 0) {
+    if (isNaN(result)) {
+        resultMessage = new ErrorMessage({
+            channel: message.channel,
+            title: `Erroneous result detected. Don't worry, I've already reported this to the devs and this race won't affect anything.`,
+            desc: `__Selected Track: ${currentTrack["trackName"]}__`,
+            author: message.author
+        });
+
+        const errorReport = new BotError({
+            guild: message.guild,
+            channel: message.channel,
+            message,
+            stack: "Erroneous race result detected, click on link for more info.",
+        });
+        await errorReport.sendReport();
+    }
+    else if (result > 0) {
         resultMessage = new SuccessMessage({
             channel: message.channel,
             title: `You won by ${result} point(s)! (insert crab rave here)`,

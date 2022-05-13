@@ -81,7 +81,6 @@ module.exports = {
 
                         let x = 0;
                         for await (let [key, value] of Object.entries(event.roster[i].rewards)) {
-                            ctx.fillStyle = "#ffffff";
                             let image;
                             switch (key) {
                                 case "money":
@@ -142,6 +141,7 @@ module.exports = {
                             let { w, h } = adjustSize(image);
                             ctx.drawImage(image, baseX + 676 + ((65 - w) / 2), baseY + 58 + (x * 77) + ((64 - h) / 2), w, h);
                             ctx.fillText(value, baseX + 754, baseY + 103 + (x * 77));
+                            ctx.fillStyle = "#ffffff";
                             x++;
                         }
 

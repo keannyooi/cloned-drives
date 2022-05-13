@@ -1,5 +1,6 @@
 "use strict";
 
+const { MessageSelectMenu } = require("discord.js");
 const { ErrorMessage } = require("../classes/classes.js");
 const carNameGen = require("./carNameGen.js");
 const calcTotal = require("./calcTotal.js")
@@ -36,11 +37,19 @@ async function searchGarage(args) {
     });
 
     return processResults(message, searchResults, () => {
-        let list = "", i = 1;
-        searchResults.map(car => {
-            let currentCar = require(`../../cars/${car.carID}.json`);
-            list += `${i} - ${carNameGen({ currentCar })}\n`;
-            i++;
+        const options = [];
+        for (let i = 0; i < searchResults.length; i++) {
+            let currentCar = require(`../../cars/${searchResults[i].carID}.json`);
+            options.push({
+                label: carNameGen({ currentCar }),
+                value: `${i + 1}`
+            });
+        }
+
+        let list = new MessageSelectMenu({
+            customId: "search",
+            placeholder: "Select a car...",
+            options
         });
         return list;
     }, null, currentMessage)

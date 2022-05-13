@@ -28,10 +28,10 @@ const action = {
     bodyStyle: bodyTypes => `${bodyTypes.join(" or ").split(" ").map(i => i[0].toUpperCase() + i.slice(1, i.length)).join(" ")} `,
     tyreType: tyreType => `${tyreType.split("-").map(i => i[0].toUpperCase() + i.slice(1, i.length)).join("-")}-Tyre `,
     tags: tags => `${tags.join(" or ").split(" ").map(i => i[0].toUpperCase() + i.slice(1, i.length)).join(" ")} `,
-    isPrize: isPrize => {
-        if (isPrize === false) return "Non-Prize ";
-        else return "";
-    },
+    isPrize: isPrize => `${isPrize === false ? "Non-Prize" : "Prize"} `,
+    isStock: isStock => `${isStock === false ? "Non-Stock" : "Stock"} `,
+    isMaxed: isMaxed => `${isMaxed === false ? "Non-Maxed" : "Maxed"} `,
+    isOwned: isOwned => `${isOwned === false ? "Unowned" : "Owned"} `,
     make: makes => {
         makes = makes.map(make => {
             let getExample = carFiles.find(carFile => {
@@ -56,7 +56,7 @@ const action = {
     },
     search: keyword => `${keyword.split(" ").map(i => i[0].toUpperCase() + i.slice(1, i.length)).join(" ")} `
 }
-const order = ["rq", "modelYear", "country", "enginePos", "driveType", "gc", "tyreType", "seatCount", "fuelType", "bodyStyle", "tags", "isPrize", "make", "search"];
+const order = ["rq", "modelYear", "country", "enginePos", "driveType", "gc", "tyreType", "seatCount", "fuelType", "bodyStyle", "tags", "isOwned", "isStock", "isMaxed", "isPrize", "make", "search"];
 
 function reqDisplay(reqs) {
     let str = "";

@@ -13,7 +13,7 @@ const profileModel = require("../models/profileSchema.js");
 module.exports = {
     name: "upgrade",
     aliases: ["tune", "u"],
-    usage: "<car name> <upgrade>",
+    usage: ["<car name> <upgrade>"],
     args: 2,
     category: "Gameplay",
     description: "Upgrades a car in your garage.",
