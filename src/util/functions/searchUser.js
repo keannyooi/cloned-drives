@@ -6,9 +6,10 @@ const processResults = require("./corefiles/processResults.js");
 
 async function searchUser(message, username, currentMessage) {
     const playerList = await bot.homeGuild.members.fetch();
-    const searchResults = playerList.filter(member => {
-        return member.nickname?.toLowerCase().includes(username) || member.user.username.toLowerCase().includes(username);
+    let searchResults = playerList.filter(member => {
+        return member.nickname?.toLowerCase().includes(username) || member.user.tag.toLowerCase().includes(username);
     });
+    searchResults = [...searchResults.values()];
     
     return processResults(message, searchResults, () => {
         const options = [];
@@ -27,6 +28,7 @@ async function searchUser(message, username, currentMessage) {
         return list;
     }, null, currentMessage)
         .catch(throwError => {
+            console.log(throwError);
             const list = [];
             playerList.forEach(player => {
                 list.push(player.user.tag);

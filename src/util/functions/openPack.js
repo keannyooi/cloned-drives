@@ -102,34 +102,30 @@ function openPack(message, currentPack, currentMessage) {
     return addedCars;
 
     function filterCard(currentCard, filter) {
+        if (currentCard["isPrize"] === true) return false;
         let passed = true;
-        if (currentCard["isPrize"] === false) {
-            for (let criteria in filter) {
-                if (filter[criteria] !== "None") {
-                    switch (criteria) {
-                        case "make":
-                        case "tags":
-                        case "bodyStyle":
-                            if (Array.isArray(currentCard[criteria])) {
-                                if (currentCard[criteria].some(m => m.toLowerCase() === filter[criteria].toLowerCase()) === false) passed = false;
-                            }
-                            else {
-                                if (currentCard[criteria].toLowerCase() !== filter[criteria].toLowerCase()) passed = false;
-                            }
-                            break;
-                        case "modelYear":
-                        case "seatCount":
-                            if (currentCard[criteria] < filter[criteria]["start"] || currentCard[criteria] > filter[criteria]["end"]) passed = false;
-                            break;
-                        default:
+        for (let criteria in filter) {
+            if (filter[criteria] !== "None") {
+                switch (criteria) {
+                    case "make":
+                    case "tags":
+                    case "bodyStyle":
+                        if (Array.isArray(currentCard[criteria])) {
+                            if (currentCard[criteria].some(m => m.toLowerCase() === filter[criteria].toLowerCase()) === false) passed = false;
+                        }
+                        else {
                             if (currentCard[criteria].toLowerCase() !== filter[criteria].toLowerCase()) passed = false;
-                            break;
-                    }
+                        }
+                        break;
+                    case "modelYear":
+                    case "seatCount":
+                        if (currentCard[criteria] < filter[criteria]["start"] || currentCard[criteria] > filter[criteria]["end"]) passed = false;
+                        break;
+                    default:
+                        if (currentCard[criteria].toLowerCase() !== filter[criteria].toLowerCase()) passed = false;
+                        break;
                 }
             }
-        }
-        else {
-            passed = false;
         }
         return passed;
     }
