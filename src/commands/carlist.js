@@ -59,7 +59,8 @@ module.exports = {
                 channel: message.channel,
                 title: "Error, page number requested invalid.",
                 desc: `The car list ends at page ${totalPages}.`,
-                author: message.author
+                author: message.author,
+                fields: [{ name: "Current Filter", value: `\`${reqDisplay(filter)}\`` }]
             }).displayClosest(page);
             return errorMessage.sendMessage();
         }
