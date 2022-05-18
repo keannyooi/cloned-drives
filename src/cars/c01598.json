@@ -9,7 +9,7 @@
     "handling": 79,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Concept","The Japanese Odyssey"],
+    "tags": ["Concept", "The Japanese Odyssey"],
     "isPrize": false,
 
     "weight": 1233,
@@ -42,7 +42,7 @@
 
     "996TopSpeed": 162,
     "9960to60": 4.8,
-    "996Handling": 88,
+    "996Handling": 84,
 
     "969TopSpeed": 165,
     "9690to60": 5.1,
@@ -50,5 +50,5 @@
 
     "699TopSpeed": 165,
     "6990to60": 4.8,
-    "699Handling": 84
+    "699Handling": 88
 }

@@ -2,6 +2,7 @@
 
 const { MessageSelectMenu } = require("discord.js");
 const { ErrorMessage } = require("../classes/classes.js");
+const { trophyEmojiID } = require("../consts/consts.js");
 const carNameGen = require("./carNameGen.js");
 const calcTotal = require("./calcTotal.js")
 const processResults = require("./corefiles/processResults.js");
@@ -41,8 +42,9 @@ async function searchGarage(args) {
         for (let i = 0; i < searchResults.length; i++) {
             let currentCar = require(`../../cars/${searchResults[i].carID}.json`);
             options.push({
-                label: carNameGen({ currentCar }),
-                value: `${i + 1}`
+                label: carNameGen({ currentCar, removePrizeTag: true }),
+                value: `${i + 1}`,
+                emoji: currentCar["isPrize"] ? { id: trophyEmojiID } : null
             });
         }
 

@@ -192,7 +192,7 @@ module.exports = {
 
                 for (let { userID } of playerDatum) {
                     let user = await bot.homeGuild.members.fetch(userID);
-                    await user.send(`**Notification: The ${event.name} event has officially started!.**`)
+                    await user.send(`**Notification: The ${event.name} event has officially started!**`)
 				        .catch(() => console.log(`unable to send notification to user ${userID}`));
                 }
                 await eventModel.updateOne({ eventID: event.eventID }, event);

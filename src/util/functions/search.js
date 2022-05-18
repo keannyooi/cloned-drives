@@ -1,6 +1,7 @@
 "use strict";
 
 const { MessageSelectMenu } = require("discord.js");
+const { trophyEmojiID } = require("../consts/consts.js");
 const carNameGen = require("./carNameGen.js");
 const processResults = require("./corefiles/processResults.js");
 
@@ -12,9 +13,11 @@ async function search(message, query, searchList, type, currentMessage) {
     return processResults(message, searchResults, () => {
         const options = [];
         for (let i = 0; i < searchResults.length; i++) {
+            let isPrize = type === "car" ? require(`../../cars/${searchResults[i]}`) : {}
             options.push({
                 label: listGen(searchResults[i], type),
-                value: `${i + 1}`
+                value: `${i + 1}`,
+                emoji: isPrize["isPrize"] ? { id: trophyEmojiID }  : null
             });
         }
 
@@ -33,7 +36,7 @@ async function search(message, query, searchList, type, currentMessage) {
         switch (type) {
             case "car":
                 let currentCar = require(`../../cars/${item}`);
-                return carNameGen({ currentCar });
+                return carNameGen({ currentCar, removePrizeTag: true });
             case "pack":
             case "track":
                 let details = require(`../../${type}s/${item}`);

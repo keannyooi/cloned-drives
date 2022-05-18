@@ -20,7 +20,7 @@ async function processResults(message, searchResults, listGen, type, currentMess
         const row = new MessageActionRow({ components: [listGen()] });
         const infoMessage = new InfoMessage({
             channel: message.channel,
-            title: "Multiple results found, please type one of the following.",
+            title: "Multiple results found, please choose one of the following.",
             author: message.author,
             footer: `You have been given ${defaultWaitTime / 1000} seconds to decide.`
         });

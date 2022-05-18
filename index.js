@@ -240,7 +240,7 @@ async function processCommand(message) {
             title: "Error, you may only execute 1 command at a time.",
             desc: "This error will disappear once the currently executing command finishes or after 30 seconds, whichever comes first.",
             author: message.author,
-            fields: [{ name: "Currenty Executing", value: `\`${bot.execList[message.author.id]}\`` }]
+            fields: [{ name: "Currently Executing", value: `\`${bot.execList[message.author.id]}\`` }]
         });
         return errorMessage.sendMessage({ preserve: true });
     }
