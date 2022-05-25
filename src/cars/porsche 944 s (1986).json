@@ -1,0 +1,56 @@
+{
+    "rq": 30,
+    "make": "Porsche",
+    "model": "944 S",
+    "modelYear": 1986,
+    "country": "DE",
+    "topSpeed": 141,
+    "0to60": 7.4,
+    "handling": 76,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 1300,
+    "gc": "Low",
+    "seatCount":4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 57.36,
+    "ola": 67.57,
+    "description": "Card by Olimato",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/970960140566151168/944_s.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/970960183549370388/944_s_stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/970960198107807774/944_s_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/970960207213637652/944_s_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/970960247059546193/944_s_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/970960236863160331/944_s_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/970960224473198612/944_s_699.png",
+
+    "333TopSpeed": 145,
+    "3330to60": 7.0,
+    "333Handling": 79,
+
+    "666TopSpeed": 148,
+    "6660to60": 6.7, 
+    "666Handling": 81,
+
+    "996TopSpeed": 152,
+    "9960to60": 6.3,
+    "996Handling": 81,
+
+    "969TopSpeed": 152,
+    "9690to60": 6.7,
+    "969Handling": 84,
+
+    "699TopSpeed": 148,
+    "6990to60": 6.3,
+    "699Handling": 84
+}
