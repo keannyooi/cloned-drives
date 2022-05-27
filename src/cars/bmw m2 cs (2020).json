@@ -1,0 +1,54 @@
+{
+    "rq": 74,
+    "make": "BMW",
+    "model": "M2 CS",
+    "modelYear": 2020,
+    "country": "DE",
+    "topSpeed": 174,
+    "0to60": 3.9,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer"],
+    "isPrize": false,
+
+    "weight": 1572,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 82.97,
+    "ola": 90.56,
+    "description": "Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/978709380692324442/M2CS.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/978709823937998888/M2CS.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/978709831496134666/M2CS1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/978709838508998736/M2CS2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/978709857689550898/M2CS996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/978709852010446868/M2CS969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/978709845085683762/M2CS699.png",
+
+    "333TopSpeed": 177,
+    "3330to60": 3.7,
+    "333Handling": 94,
+
+    "666TopSpeed": 180,
+    "6660to60": 3.5,
+    "666Handling": 97,
+
+    "996TopSpeed": 183,
+    "9960to60": 3.3,
+    "996Handling": 97,
+
+    "969TopSpeed": 183,
+    "9690to60": 3.5,
+    "969Handling": 101,
+
+    "699TopSpeed": 180,
+    "6990to60": 3.3,
+    "699Handling": 101
+}
