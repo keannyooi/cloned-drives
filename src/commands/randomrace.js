@@ -43,7 +43,7 @@ module.exports = {
         const intermission = new InfoMessage({
             channel: message.channel,
             title: "Ready to Play?",
-            desc: `Track: ${track["trackName"]}, Requirements: \`${reqDisplay(reqs)}\``,
+            desc: `Track: ${track["trackName"]}, Requirements: \`${reqDisplay(reqs, settings.filterlogic)}\``,
             author: message.author,
             thumbnail: track["map"],
             fields: [

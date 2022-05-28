@@ -19,7 +19,7 @@ module.exports = {
     category: "Configuration",
     description: "Sets up a filter for garages and car lists.",
     async execute(message, args) {
-        let { filter, rrStats } = await profileModel.findOne({ userID: message.author.id });
+        let { filter, rrStats, settings } = await profileModel.findOne({ userID: message.author.id });
         let infoMessage;
 
         if (!args[0]) {
@@ -28,7 +28,7 @@ module.exports = {
                 switch (typeof value) {
                     case "object":
                         if (Array.isArray(value)) {
-                            value = value.join(", ");
+                            value = value.join(settings.filterlogic ? " or " : " and ");
                         }
                         else {
                             value = `${value.start} ~ ${value.end}`;

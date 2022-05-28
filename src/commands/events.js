@@ -93,7 +93,7 @@ module.exports = {
                             name: `Round ${round} ${round < event.playerProgress[message.author.id] ? "✅" : ""}`,
                             value: `Car: ${carNameGen({ currentCar, rarity: true, upgrade: section[i].upgrade })}
                             Track: ${track["trackName"]}
-                            Reqs: \`${reqDisplay(section[i].reqs)}\`
+                            Reqs: \`${reqDisplay(section[i].reqs, settings.filterlogic)}\`
                             Reward: ${listRewards(section[i].rewards)}`,
                             inline: true
                         });

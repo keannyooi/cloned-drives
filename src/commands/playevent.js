@@ -74,7 +74,7 @@ module.exports = {
                 const intermission = new InfoMessage({
                     channel: message.channel,
                     title: "Ready to Play?",
-                    desc: `Track: ${track["trackName"]}, Requirements: \`${reqDisplay(event.roster[round - 1].reqs)}\``,
+                    desc: `Track: ${track["trackName"]}, Requirements: \`${reqDisplay(event.roster[round - 1].reqs, settings.filterlogic)}\``,
                     author: message.author,
                     thumbnail: track["map"],
                     fields: [

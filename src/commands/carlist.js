@@ -105,7 +105,7 @@ module.exports = {
             const infoMessage = new InfoMessage({
                 channel: message.channel,
                 title: `List of All Cars in Cloned Drives (${ownedCars.length}/${list.length} Cars Owned)`,
-                desc: `Current Sorting Criteria: \`${sort}\`, Filter: \`${reqDisplay(filter)}\``,
+                desc: `Current Sorting Criteria: \`${sort}\`, Filter: \`${reqDisplay(filter, settings.filterlogic)}\``,
                 author: message.author,
                 thumbnail: message.author.displayAvatarURL({ format: "png", dynamic: true }),
                 fields: [{ name: "Car", value: carList, inline: true }],
