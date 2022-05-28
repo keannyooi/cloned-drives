@@ -158,7 +158,7 @@ module.exports = {
                 const infoMessage = new InfoMessage({
                     channel: message.channel,
                     title: `${user.username}'s Garage`,
-                    desc: `Current Sorting Criteria: \`${sort}\`, Filter: \`${reqDisplay(filter)}\``,
+                    desc: `Current Sorting Criteria: \`${sort}\`, Filter: \`${reqDisplay(filter, settings.filterlogic)}\``,
                     author: message.author,
                     thumbnail: user.displayAvatarURL({ format: "png", dynamic: true }),
                     fields: [

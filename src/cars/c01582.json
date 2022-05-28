@@ -1,6 +1,6 @@
 {
     "rq": 79,
-    "make": ["JUN","Toyota"],
+    "make": ["JUN AUTO","Toyota"],
     "model": "Akira Supra",
     "modelYear": 2001,
     "country": "JP",
@@ -12,10 +12,9 @@
     "tags": ["Tuner", "Unique","The Japanese Odyssey"],
     "isPrize": true,
 
-
     "weight": 1520,
     "gc": "Low",
-    "seatCount":1,
+    "seatCount": 1,
     "bodyStyle": "Coupe",
     "tcs": false,
     "abs": false,
@@ -24,7 +23,6 @@
     "mra": 116.67,
     "ola": 114.29,
     "description": "The heart of the beast is this fully reworked 2JZ engine. Card by Havvy.",
-
 
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/969597233353859122/junakira.png",
     "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/969599623528329286/JUNAkiraSoup.png",
