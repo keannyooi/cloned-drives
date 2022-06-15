@@ -1,0 +1,54 @@
+{
+    "rq": 87,
+    "make": "BMW",
+    "model": "M8 GT3",
+    "modelYear": 2017,
+    "country": "DE",
+    "topSpeed": 195,
+    "0to60": 3.1,
+    "handling": 96,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport"],
+    "isPrize": false,
+
+    "weight": 1250,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 104.03,
+    "ola": 90.32,
+    "description": "Card by Aqo.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/948619082750623784/m8gt3.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/948619221825384499/stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/948619242171944982/333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/948619263936172042/666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/948619337340686356/996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/948619314636935238/969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/948619289978601532/699.png",
+
+    "333TopSpeed": 198,
+    "3330to60": 2.9,
+    "333Handling": 99,
+
+    "666TopSpeed": 200,
+    "6660to60": 2.8,
+    "666Handling": 102,
+
+    "996TopSpeed": 203,
+    "9960to60": 2.6,
+    "996Handling": 102,
+
+    "969TopSpeed": 203,
+    "9690to60": 2.8,
+    "969Handling": 107,
+
+    "699TopSpeed": 200,
+    "6990to60": 2.6,
+    "699Handling": 107
+}

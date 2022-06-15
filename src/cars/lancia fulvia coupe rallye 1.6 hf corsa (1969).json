@@ -1,0 +1,54 @@
+{
+    "rq": 49,
+    "make": "Lancia",
+    "model": "Fulvia Coupe Rallye 1.6 HF Corsa",
+    "modelYear": 1969,
+    "country": "IT",
+    "topSpeed": 112,
+    "0to60": 8.6,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Off-Road",
+    "tags": ["Motorsport"],
+    "isPrize": false,
+
+    "weight": 815,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 69.23,
+    "ola": 60.00,
+    "description": "Card by Exist.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/860116842214588416/CD_Lancia_Fulvia_Coupe_Rallye_1.6_HF_Corsa.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/860116900465082388/CD_Lancia_Fulvia_Coupe_Rallye_1.6_HF_Corsa_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/860116906715774986/CD_Lancia_Fulvia_Coupe_Rallye_1.6_HF_Corsa_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/860116913044193291/CD_Lancia_Fulvia_Coupe_Rallye_1.6_HF_Corsa_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/860116930538373120/CD_Lancia_Fulvia_Coupe_Rallye_1.6_HF_Corsa_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/860116924636987402/CD_Lancia_Fulvia_Coupe_Rallye_1.6_HF_Corsa_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/860116918860906496/CD_Lancia_Fulvia_Coupe_Rallye_1.6_HF_Corsa_699.png",
+
+    "333TopSpeed": 117,
+    "3330to60": 8.2,
+    "333Handling": 75,
+
+    "666TopSpeed": 121,
+    "6660to60": 7.7,
+    "666Handling": 78,
+
+    "996TopSpeed": 126,
+    "9960to60": 7.3,
+    "996Handling": 78,
+
+    "969TopSpeed": 126,
+    "9690to60": 7.7,
+    "969Handling": 81,
+
+    "699TopSpeed": 121,
+    "6990to60": 7.3,
+    "699Handling": 81
+}

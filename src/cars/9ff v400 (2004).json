@@ -1,0 +1,54 @@
+{
+    "rq": 88,
+    "make": ["9ff", "Porsche"],
+    "model": "V400",
+    "modelYear": 2004,
+    "country": "DE",
+    "topSpeed": 241,
+    "0to60": 3.3,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Unique", "Tuner"],
+    "isPrize": true,
+
+    "weight": 1297,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 126.92,
+    "ola": 90.91,
+    "description": ":fastcate: Card by Havvy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/828951752740831264/unknown.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/828951791735013446/9969ff1_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/828951796814446592/9969ff1_111.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/828951802124828693/9969ff1_222.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/828951819614027786/9969ff1_332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/828951814330122260/9969ff1_323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/828951808113377290/9969ff1_233.png",
+
+    "333TopSpeed": 243,
+    "3330to60": 3.1,
+    "333Handling": 94,
+
+    "666TopSpeed": 245,
+    "6660to60": 3.0,
+    "666Handling": 97,
+
+    "996TopSpeed": 247,
+    "9960to60": 2.8,
+    "996Handling": 97,
+
+    "969TopSpeed": 247,
+    "9690to60": 3.0,
+    "969Handling": 101,
+
+    "699TopSpeed": 245,
+    "6990to60": 2.8,
+    "699Handling": 101
+}
