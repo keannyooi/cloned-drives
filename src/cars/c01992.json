@@ -1,0 +1,54 @@
+{
+    "rq": 72,
+    "make": "BMW",
+    "model": "1 Series M Coupe",
+    "modelYear": 2011,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 4.5,
+    "handling": 88,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1500,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 71.89,
+    "ola": 78.21,
+    "description": "The real M1. Card by Havvy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/979078744197177364/THEYAINTWANNASEEMEDOIT.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/979078838434803782/1MCoup.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/979078848245268520/1MCoup1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/979078858458411070/1MCoup2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/979078888430907422/1MCoup996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/979078878922424351/1MCoup969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/979078870282170398/1MCoup699.png",
+
+    "333TopSpeed": 158,
+    "3330to60": 4.3,
+    "333Handling": 91,
+
+    "666TopSpeed": 162,
+    "6660to60": 4.1,
+    "666Handling": 94,
+
+    "996TopSpeed": 165,
+    "9960to60": 3.8,
+    "996Handling": 94,
+
+    "969TopSpeed": 165,
+    "9690to60": 4.1,
+    "969Handling": 98,
+
+    "699TopSpeed": 162,
+    "6990to60": 3.8,
+    "699Handling": 98
+}

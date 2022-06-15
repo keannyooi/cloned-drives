@@ -1,0 +1,54 @@
+{
+    "rq": 83,
+    "make": "BMW",
+    "model": "M6 GT3",
+    "modelYear": 2015,
+    "country": "DE",
+    "topSpeed": 190,
+    "0to60": 3.4,
+    "handling": 96,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport"],
+    "isPrize": false,
+
+    "weight": 1260,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 94.44,
+    "ola": 88.24,
+    "description": "Card by Aqo.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/948620483266506812/m6gt3.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/977972149023285258/M6GT3q.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/977972154568146994/M6GT3q1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/977972161153224774/M6GT3q2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/977972183647256636/M6GT3q996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/977972175707439155/M6GT3q969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/977972168942051368/M6GT3q699.png",
+
+    "333TopSpeed": 193,
+    "3330to60": 3.2,
+    "333Handling": 99,
+
+    "666TopSpeed": 195,
+    "6660to60": 3.1,
+    "666Handling": 102,
+
+    "996TopSpeed": 198,
+    "9960to60": 2.9,
+    "996Handling": 102,
+
+    "969TopSpeed": 198,
+    "9690to60": 3.1,
+    "969Handling": 107,
+
+    "699TopSpeed": 195,
+    "6990to60": 2.9,
+    "699Handling": 107
+}
