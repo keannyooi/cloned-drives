@@ -82,44 +82,48 @@ process.on("uncaughtException", async error => {
 
 // loop thingy
 setInterval(async () => {
-	const events = await eventModel.find({ isActive: true });
-	for (let event of events) {
-		if (event.deadline !== "unlimited" && Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(event.deadline)).invalid !== null) {
-			await endEvent(event);
-		}
-	}
+    const events = await eventModel.find({ isActive: true });
+    for (let event of events) {
+        if (event.deadline !== "unlimited" && Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(event.deadline)).invalid !== null) {
+            await endEvent(event);
+        }
+    }
 
-	const offers = await offerModel.find({ isActive: true });
-	for (let offer of offers) {
-		if (offer.deadline !== "unlimited" && Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(offer.deadline)).invalid !== null) {
-			await endOffer(offer);
-		}
-	}
-	// const challenge = await bot.db.get("challenge");
-	// if (challenge.timeLeft !== "unlimited" && challenge.isActive === true) {
-	// 	if (Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(challenge.deadline)).invalid !== null) {
-	// 		bot.channels.cache.get("798776756952629298").send(`**The ${challenge.name} challenge has officially finished. Thanks for playing!**`);
-	// 		challenge.isActve = false;
-	// 		challenge.players = {};
-	// 		challenge.timeLeft = "unlimited";
-	// 		challenge.deadline = "idk";
-	// 	}
-	// }
-	// await bot.db.set("challenge", challenge);
+    const offers = await offerModel.find({ isActive: true });
+    for (let offer of offers) {
+        if (offer.deadline !== "unlimited" && Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(offer.deadline)).invalid !== null) {
+            await endOffer(offer);
+        }
+    }
+    // const challenge = await bot.db.get("challenge");
+    // if (challenge.timeLeft !== "unlimited" && challenge.isActive === true) {
+    // 	if (Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(challenge.deadline)).invalid !== null) {
+    // 		bot.channels.cache.get("798776756952629298").send(`**The ${challenge.name} challenge has officially finished. Thanks for playing!**`);
+    // 		challenge.isActve = false;
+    // 		challenge.players = {};
+    // 		challenge.timeLeft = "unlimited";
+    // 		challenge.deadline = "idk";
+    // 	}
+    // }
+    // await bot.db.set("challenge", challenge);
 
     const playerDatum = await profileModel.find({ "settings.senddailynotifs": true, "dailyStats.notifReceived": false });
     for (let { userID, dailyStats } of playerDatum) {
         let { lastDaily } = dailyStats;
         let interval = Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(lastDaily).plus({ days: 1 }));
         if (interval.invalid !== null) {
-            let user = await bot.homeGuild.members.fetch(userID);
-            await user.send("**Notification: Your daily reward is now available! Claim it using `cd-daily`.**")
-				.catch(() => console.log(`unable to send notification to user ${userID}`));
-            await profileModel.updateOne({ userID }, {
-                "$set": {
-                    "dailyStats.notifReceived": true
-                }
-            })
+            let user = await bot.homeGuild.members.fetch(userID)
+                .catch(() => "unable to find user, next");
+
+            if (typeof user !== "string") {
+                await user.send("**Notification: Your daily reward is now available! Claim it using `cd-daily`.**")
+                    .catch(() => console.log(`unable to send notification to user ${userID}`));
+                await profileModel.updateOne({ userID }, {
+                    "$set": {
+                        "dailyStats.notifReceived": true
+                    }
+                });
+            }
         }
     }
 }, 180000);

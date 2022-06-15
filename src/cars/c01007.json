@@ -1,6 +1,6 @@
 {
     "rq": 52,
-    "make": "Opel",
+    "make": ["Opel", "Lotus"],
     "model": "Lotus Omega",
     "modelYear": 1990,
     "country": "DE",

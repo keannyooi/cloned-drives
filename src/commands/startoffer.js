@@ -58,9 +58,13 @@ module.exports = {
                 });
                 await currentOffersChannel.send(`**The ${offer.name} offer has officially gone up for sale!**`);
                 for (let { userID } of playerDatum) {
-                    let user = await bot.homeGuild.members.fetch(userID);
-                    await user.send(`**Notification: The ${offer.name} offer has officially gone up for sale!**`)
-				        .catch(() => console.log(`unable to send notification to user ${userID}`));
+                    let user = await bot.homeGuild.members.fetch(userID)
+                        .catch(() => "unable to find user, next");
+                    
+                    if (typeof user !== "string") {
+                        await user.send(`**Notification: The ${offer.name} offer has officially gone up for sale!**`)
+				            .catch(() => console.log(`unable to send notification to user ${userID}`));
+                    }
                 }
 
                 await offerModel.updateOne({ offerID: offer.offerID }, offer);

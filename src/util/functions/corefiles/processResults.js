@@ -67,7 +67,7 @@ async function processResults(message, searchResults, listGen, type, currentMess
                 title: "Error, query provided yielded no results.",
                 desc: "Well that sucks.",
                 author: message.author
-            }).displayClosest(query, type !== "id" ? searchList : null);
+            }).displayClosest(query.length > 1024 ? "i think you might be just spamming" : query, type !== "id" ? searchList : null);
             return errorMessage.sendMessage({ currentMessage });
         });
     }

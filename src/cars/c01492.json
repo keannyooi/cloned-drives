@@ -1,6 +1,6 @@
 {
     "rq": 52,
-    "make": "Vauxhall",
+    "make": ["Vauxhall", "Lotus"],
     "model": "Lotus Carlton",
     "modelYear": 1990,
     "country": "GB",

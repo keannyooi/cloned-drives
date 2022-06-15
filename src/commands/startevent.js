@@ -32,7 +32,6 @@ module.exports = {
             });
 
         async function startEvent(event, currentMessage) {
-            console.log(event.roster[0].rewards);
             const { settings } = await profileModel.findOne({ userID: message.author.id });
             const confirmationMessage = new InfoMessage({
                 channel: message.channel,
@@ -191,9 +190,13 @@ module.exports = {
                 });
 
                 for (let { userID } of playerDatum) {
-                    let user = await bot.homeGuild.members.fetch(userID);
-                    await user.send(`**Notification: The ${event.name} event has officially started!**`)
-				        .catch(() => console.log(`unable to send notification to user ${userID}`));
+                    let user = await bot.homeGuild.members.fetch(userID)
+                        .catch(() => "unable to find user, next");
+                    
+                    if (typeof user !== "string") {
+                        await user.send(`**Notification: The ${event.name} event has officially started!**`)
+				            .catch(() => console.log(`unable to send notification to user ${userID}`));
+                    }
                 }
                 await eventModel.updateOne({ eventID: event.eventID }, event);
                 return successMessage.sendMessage({ attachment, currentMessage });

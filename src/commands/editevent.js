@@ -194,6 +194,16 @@ module.exports = {
                     });
                     break;
                 case "addreq":
+                    if (!args[4]) {
+                        const errorMessage = new ErrorMessage({
+                            channel: message.channel,
+                            title: "Error, arguments provided incomplete.",
+                            desc: "Please refer to `cd-help editevent` for the syntax list.",
+                            author: message.author
+                        });
+                        return errorMessage.sendMessage({ currentMessage });
+                    }
+                    
                     let result = editFilter(message, currentEvent.roster[index - 1].reqs, args.slice(3, args.length));
                     if (!Array.isArray(result)) return;
                     currentEvent.roster[index - 1].reqs = result[0];
@@ -369,7 +379,7 @@ module.exports = {
                     }
                     break;
                 case "removereward":
-                    let type = args[3].toLowerCase();
+                    let type = args[3].toLowerCase().replace("token", "Token");
                     if (type === "all") {
                         currentEvent.roster[index - 1].rewards = {};
                         successMessage = new SuccessMessage({
@@ -512,7 +522,8 @@ module.exports = {
                             \`duration\` - How long an event is going to last for (in days). 
                             \`extend\` - How long an event is going to be extended by (in hours). 
                             \`setcar\` - Sets the opponent's car.
-                            \`setreward\` - Sets the reward of a round.
+                            \`addreward\` - Adds a reward of a round.
+                            \`removereward\` - Removes a reward from a round.
                             \`settune\` - Sets the tune for the opponent's car.
                             \`addreq\` - Adds a requirement to a round.
                             \`removereq\` - Removes a requirement from a round.
