@@ -1,0 +1,54 @@
+{
+    "rq": 96,
+    "make": "Koenigsegg",
+    "model": "Agera R",
+    "modelYear": 2013,
+    "country": "SE",
+    "topSpeed": 275,
+    "0to60": 2.7,
+    "handling": 93,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Rest of The World", "Unique", "Ultra Expensive", "Hypercar"],
+    "isPrize": false,
+
+    "weight": 1435,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 128.57,
+    "ola": 115.55,
+    "description": "Card by Aqo.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/932605875661725706/agerar14.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/932605931689234483/stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/932605948520984606/333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/932606003839631360/666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/932606079664271400/996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/932606057644191834/969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/932606032541261876/699.png",
+
+    "333TopSpeed": 277,
+    "3330to60": 2.6,
+    "333Handling": 96,
+
+    "666TopSpeed": 279,
+    "6660to60": 2.4,
+    "666Handling": 99,
+
+    "996TopSpeed": 281,
+    "9960to60": 2.3,
+    "996Handling": 99,
+
+    "969TopSpeed": 281,
+    "9690to60": 2.4,
+    "969Handling": 103,
+
+    "699TopSpeed": 279,
+    "6990to60": 2.3,
+    "699Handling": 103
+}

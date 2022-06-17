@@ -1,0 +1,54 @@
+{
+    "rq": 92,
+    "make": "Lamborghini",
+    "model": "Urus",
+    "modelYear": 2018,
+    "country": "IT",
+    "topSpeed": 190,
+    "0to60": 3.2,
+    "handling": 91,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Supercar", "Innovative"],
+    "isPrize": false,
+
+    "weight": 2261,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 72.08,
+    "ola": 78.17,
+    "description": "The ultimate Lamborghini SUV, with underpinnings and engine from a Porsche Cayenne. Card by Spence.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/973811635791728650/C864F84C-45C9-470C-8FD9-63E13D14CB1A.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/973811689738887178/5C4CD787-E3B8-4D84-956C-8AF06E400D7E.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/973811704272150538/160A8289-DA47-4EE4-A64A-09B99A2B837C.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/973811718570541056/C35892DA-EFBB-484A-A941-EBE71D5DDDA7.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/973811732441071666/2962F3C8-F593-4C83-99A9-A99B3623846B.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/973811748878565376/022680C0-E885-4745-87E3-4419A2230DDD.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/973811760719093790/61B88B37-FC81-46BC-9CD6-BC337BD7CE9E.jpg",
+
+    "333TopSpeed": 193,
+    "3330to60": 3.0,
+    "333Handling": 93,
+
+    "666TopSpeed": 195,
+    "6660to60": 2.9,
+    "666Handling": 97,
+
+    "699TopSpeed": 195,
+    "6990to60": 2.7,
+    "699Handling": 101,
+
+    "969TopSpeed": 198,
+    "9690to60": 2.9,
+    "969Handling": 101,
+
+    "996TopSpeed": 198,
+    "9960to60": 2.7,
+    "996Handling": 97
+}
