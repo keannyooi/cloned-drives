@@ -1,0 +1,54 @@
+{
+    "rq": 91,
+    "make": ["Alpina", "BMW"],
+    "model": "B8 Gran Coupe",
+    "modelYear": 2021,
+    "country": "DE",
+    "topSpeed": 201,
+    "0to60": 3.3,
+    "handling": 89,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Grand Tourer"],
+    "isPrize": false,
+
+    "weight": 2120,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 84.61,
+    "ola": 84.84,
+    "description": "Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/976513002863992932/B8GC.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/976513653257928804/AlpinaB8GC.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/976513659490664458/AlpinaB8GC1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/976513666025410570/AlpinaB8GC2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/976513693066084422/AlpinaB8GC996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/976513685596037170/AlpinaB8GC969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/976513673801637918/AlpinaB8GC699.png",
+
+    "333TopSpeed": 204,
+    "3330to60": 3.1,
+    "333Handling": 92,
+
+    "666TopSpeed": 206,
+    "6660to60": 3.0,
+    "666Handling": 95,
+
+    "996TopSpeed": 209,
+    "9960to60": 2.8,
+    "996Handling": 95,
+
+    "969TopSpeed": 209,
+    "9690to60": 3.0,
+    "969Handling": 99,
+
+    "699TopSpeed": 206,
+    "6990to60": 2.8,
+    "699Handling": 99
+}

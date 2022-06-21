@@ -1,0 +1,54 @@
+{
+    "rq": 88,
+    "make": "Lotus",
+    "model": "3-Eleven Race",
+    "modelYear": 2016,
+    "country": "GB",
+    "topSpeed": 180,
+    "0to60": 3.1,
+    "handling": 94,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Track Day"],
+    "isPrize": true,
+
+    "weight": 950,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 110.71,
+    "ola": 85.16,
+    "description": "Card by Tom.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/865925767715618826/image0.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/865927020395757568/Lotus_3-Eleven_Race_111.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/865927025796972544/Lotus_3-Eleven_Race_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/865927032050810910/Lotus_3-Eleven_Race_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/865927048048279562/Lotus_3-Eleven_Race_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/865927042515599400/Lotus_3-Eleven_Race_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/865927036751839242/Lotus_3-Eleven_Race_699.jpg",
+
+    "333TopSpeed": 183,
+    "3330to60": 2.9,
+    "333Handling": 97,
+
+    "666TopSpeed": 186,
+    "6660to60": 2.8,
+    "666Handling": 100,
+
+    "996TopSpeed": 189,
+    "9960to60": 2.6,
+    "996Handling": 100,
+
+    "969TopSpeed": 189,
+    "9690to60": 2.8,
+    "969Handling": 104,
+
+    "699TopSpeed": 186,
+    "6990to60": 2.6,
+    "699Handling": 104
+}

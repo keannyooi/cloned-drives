@@ -1,0 +1,54 @@
+{
+    "rq": 43,
+    "make": "Mercedes-Benz",
+    "model": "Vision G-Code Concept",
+    "modelYear": 2014,
+    "country": "DE",
+    "topSpeed": 125,
+    "0to60": 8.0,
+    "handling": 74,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Concept", "Unique"],
+    "isPrize": false,
+
+    "weight": 1950,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.66,
+    "ola": 65.00,
+    "description": "Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/948545837481492560/Gcode.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/948546037407186994/GcodeCon.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/948546043849613332/GcodeCon333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/948546049847459860/GcodeCon666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/948546075403366420/GcodeCon996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/948546067102847026/GcodeCon969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/948546059645386792/GcodeCon699.png",
+
+    "333TopSpeed": 129,
+    "3330to60": 7.6,
+    "333Handling": 76,
+
+    "666TopSpeed": 133,
+    "6660to60": 7.2,
+    "666Handling": 79,
+
+    "996TopSpeed": 137,
+    "9960to60": 6.8,
+    "996Handling": 79,
+
+    "969TopSpeed": 137,
+    "9690to60": 7.2,
+    "969Handling": 82,
+
+    "699TopSpeed": 133,
+    "6990to60": 6.8,
+    "699Handling": 82
+}
