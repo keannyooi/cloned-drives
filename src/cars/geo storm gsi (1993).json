@@ -1,0 +1,56 @@
+{
+    "rq": 31,
+    "make": "Geo",
+    "model": "Storm GSi",
+    "modelYear": 1993,
+    "country": "US",
+    "topSpeed": 121,
+    "0to60": 8.5,
+    "handling": 74,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch"],
+    "isPrize": false,
+
+
+    "weight": 1129,
+    "gc": "Medium",
+    "seatCount":4,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 57.69,
+    "ola": 70.69,
+    "description": "Unfortunately this Storm didn't blow away any of its competition. Cars by Andu.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/949221771465330698/StormGSi.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/949222101435428924/StormGSi.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/949222113397600336/StormGSi-1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/949222124478943272/StormGSi-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/949222135761600533/StormGSi-996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/949222149036589056/StormGSi-969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/949222160868704266/StormGSi-699.png",
+
+    "333TopSpeed": 125,
+    "3330to60": 8.1,
+    "333Handling": 76,
+
+    "666TopSpeed": 130,
+    "6660to60": 7.7, 
+    "666Handling": 79,
+
+    "996TopSpeed": 134,
+    "9960to60": 7.2,
+    "996Handling": 79,
+
+    "969TopSpeed": 134,
+    "9690to60": 7.7,
+    "969Handling": 82,
+
+    "699TopSpeed": 130,
+    "6990to60": 7.2,
+    "699Handling": 82
+}
