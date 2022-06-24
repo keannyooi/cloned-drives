@@ -1,0 +1,54 @@
+{
+    "rq": 92,
+    "make": "Spania",
+    "model": "GTA Spano",
+    "modelYear": 2016,
+    "country": "ES",
+    "topSpeed": 230,
+    "0to60": 2.9,
+    "handling": 92,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Hypercar", "Rest of The World", "Unique"],
+    "isPrize": true,
+
+    "weight": 1400,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 126.09,
+    "ola": 91.23,
+    "description": "Card by Aqo.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/939929706659188746/gtaspano.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/939929767606620190/stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/939929792336244756/333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/939929816583503942/666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/939929883558174730/996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/939929863115137124/969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/939929839702532096/699.png",
+
+    "333TopSpeed": 232,
+    "3330to60": 2.8,
+    "333Handling": 95,
+
+    "666TopSpeed": 235,
+    "6660to60": 2.6,
+    "666Handling": 98,
+
+    "996TopSpeed": 237,
+    "9960to60": 2.5,
+    "996Handling": 98,
+
+    "969TopSpeed": 237,
+    "9690to60": 2.6,
+    "969Handling": 102,
+
+    "699TopSpeed": 235,
+    "6990to60": 2.5,
+    "699Handling": 102
+}
