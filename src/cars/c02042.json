@@ -1,0 +1,54 @@
+{
+    "rq": 32,
+    "make": "Lotus",
+    "model": "Ethos City Car Concept",
+    "modelYear": 2010,
+    "country": "GB",
+    "topSpeed": 110,
+    "0to60": 8.7,
+    "handling": 68,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Concept", "Unique"],
+    "isPrize": false,
+
+    "weight": 1400,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 41.2,
+    "ola": 85.25,
+    "description": "Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/976512123184238622/Ethos.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/976513589353533530/Ethos.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/976513594516725781/Ethos1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/976513600875298866/Ethos2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/976513622589198496/Ethos996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/976513616385822740/Ethos969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/976513607766507560/Ethos699.png",
+
+    "333TopSpeed": 115,
+    "3330to60": 8.3,
+    "333Handling": 70,
+
+    "666TopSpeed": 119,
+    "6660to60": 7.8,
+    "666Handling": 72,
+
+    "996TopSpeed": 124,
+    "9960to60": 7.4,
+    "996Handling": 72,
+
+    "969TopSpeed": 124,
+    "9690to60": 7.8,
+    "969Handling": 75,
+
+    "699TopSpeed": 119,
+    "6990to60": 7.4,
+    "699Handling": 75
+}

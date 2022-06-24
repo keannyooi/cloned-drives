@@ -1,0 +1,54 @@
+{
+    "rq": 93,
+    "make": "Nissan",
+    "model": "R383 Turbo Prototype",
+    "modelYear": 1970,
+    "country": "JP",
+    "topSpeed": 227,
+    "0to60": 2.7,
+    "handling": 94,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Unique", "Concept", "Eargasm"],
+    "isPrize": true,
+
+    "weight": 744,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 117.39,
+    "ola": 96.29,
+    "description": "Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/969546926972338236/R383Turbo.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/969547538388635678/R383Turbo.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/969547542993973268/R383Turbo1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/969547549360939028/R383Turbo2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/969547571733340170/R383Turbo996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/969547563197927474/R383Turbo969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/969547556021477386/R383Turbo699.png",
+
+    "333TopSpeed": 229,
+    "3330to60": 2.6,
+    "333Handling": 97,
+
+    "666TopSpeed": 232,
+    "6660to60": 2.4,
+    "666Handling": 100,
+
+    "996TopSpeed": 234,
+    "9960to60": 2.3,
+    "996Handling": 100,
+
+    "969TopSpeed": 234,
+    "9690to60": 2.4,
+    "969Handling": 104,
+
+    "699TopSpeed": 232,
+    "6990to60": 2.3,
+    "699Handling": 104
+}

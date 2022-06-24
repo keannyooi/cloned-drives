@@ -1,0 +1,54 @@
+{
+    "rq": 91,
+    "make": "McLaren",
+    "model": "12C Can-Am",
+    "modelYear": 2012,
+    "country": "GB",
+    "topSpeed": 209,
+    "0to60": 2.9,
+    "handling": 97,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport"],
+    "isPrize": true,
+
+    "weight": 1200,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 107.41,
+    "ola": 96.55,
+    "description": "Card by Exist.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/859626971708129280/CD_McLaren_12C_Can-Am.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/859627023537012766/CD_McLaren_12C_Can-Am_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/859627029091057684/CD_McLaren_12C_Can-Am_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/859627033709248552/CD_McLaren_12C_Can-Am_666.png",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/859627046702940200/CD_McLaren_12C_Can-Am_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/859627041721024542/CD_McLaren_12C_Can-Am_699.png",
+
+    "333TopSpeed": 211,
+    "3330to60": 2.8,
+    "333Handling": 100,
+
+    "666TopSpeed": 214,
+    "6660to60": 2.6,
+    "666Handling": 103,
+
+    "996TopSpeed": 216,
+    "9960to60": 2.5,
+    "996Handling": 103,
+
+    "969TopSpeed": 216,
+    "9690to60": 2.6,
+    "969Handling": 108,
+
+    "699TopSpeed": 214,
+    "6990to60": 2.5,
+    "699Handling": 108
+}

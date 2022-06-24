@@ -1,0 +1,54 @@
+{
+    "rq": 37,
+    "make": "AMC",
+    "model": "Rebel 'The Machine'",
+    "modelYear": 1970,
+    "country": "US",
+    "topSpeed": 125,
+    "0to60": 6.4,
+    "handling": 65,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Muscle Car"],
+    "isPrize": true,
+
+    "weight": 1656,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 79.01,
+    "ola": 68.75,
+    "description": "JohnnyModern. Card by Johnny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/917845317624410112/AMC-Rebel-The-Machine-CD.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/917845085662609408/AMC-Rebel-The-Machine.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/917845123889508362/AMC-Rebel-The-Machine-1-star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/917845141702709330/AMC-Rebel-The-Machine-2-star.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/917845191870775376/AMC-Rebel-The-Machine-332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/917845177828261969/AMC-Rebel-The-Machine-323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/917845167136964608/AMC-Rebel-The-Machine-233.png",
+
+    "333TopSpeed": 129,
+    "3330to60": 6.1,
+    "333Handling": 67,
+
+    "666TopSpeed": 133,
+    "6660to60": 5.8,
+    "666Handling": 69,
+
+    "996TopSpeed": 137,
+    "9960to60": 5.4,
+    "996Handling": 69,
+
+    "969TopSpeed": 137,
+    "9690to60": 5.8,
+    "969Handling": 72,
+
+    "699TopSpeed": 133,
+    "6990to60": 5.4,
+    "699Handling": 72
+}

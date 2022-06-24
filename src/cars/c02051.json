@@ -1,0 +1,54 @@
+{
+    "rq": 18,
+    "make": "Scion",
+    "model": "iQ EV",
+    "modelYear": 2013,
+    "country": "US",
+    "topSpeed": 78,
+    "0to60": 13.3,
+    "handling": 67,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+
+    "weight": 985,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 0,
+    "ola": 73.68,
+    "description": "Toyota/Scion was ready for an EV city vehicle, but their customers were not. Card by Keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/978709115830419466/scion-iq-not-my-card.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/978709167596503081/scioniqev.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/978709172302512178/scioniqev1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/978709179629973514/scioniqev2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/978709201222271027/scioniqev996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/978709195761279006/scioniqev969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/978709187959853086/scioniqev699.png",
+
+    "333TopSpeed": 85,
+    "3330to60": 12.6,
+    "333Handling": 69,
+
+    "666TopSpeed": 91,
+    "6660to60": 12.0,
+    "666Handling": 71,
+
+    "996TopSpeed": 98,
+    "9960to60": 11.3,
+    "996Handling": 71,
+
+    "969TopSpeed": 98,
+    "9690to60": 12.0,
+    "969Handling": 74,
+
+    "699TopSpeed": 91,
+    "6990to60": 11.3,
+    "699Handling": 74
+}
