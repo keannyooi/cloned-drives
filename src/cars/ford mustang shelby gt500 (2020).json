@@ -1,0 +1,54 @@
+{
+    "rq": 77,
+    "make": "Ford",
+    "model": "Mustang Shelby GT500",
+    "modelYear": 2020,
+    "country": "US",
+    "topSpeed": 180,
+    "0to60": 3.6,
+    "handling": 90,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Muscle Car", "Street Racer"],
+    "isPrize": false,
+
+    "weight": 1892,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 104.05,
+    "ola": 93.06,
+    "description": "Seven hundred and sixty horsepower. The most powerful production Ford engine in history. A full 100 horsepower more than the twin-turbocharged V-6 in the Ford GT supercar. All for a base price of just $73,995. Card by Preston.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/977987307187609700/2020_Ford_Mustang_Shelby_GT500.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/977818611311853568/000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/977818649480015892/333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/977818673567920178/666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/977818747496722442/996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/977818725313024030/969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/977818700596002886/699.png",
+
+    "333TopSpeed": 183,
+    "3330to60": 3.4,
+    "333Handling": 93,
+
+    "666TopSpeed": 186,
+    "6660to60": 3.2,
+    "666Handling": 96,
+
+    "996TopSpeed": 189,
+    "9960to60": 3.1,
+    "996Handling": 96,
+
+    "969TopSpeed": 189,
+    "9690to60": 3.2,
+    "969Handling": 100,
+
+    "699TopSpeed": 186,
+    "6990to60": 3.1,
+    "699Handling": 100
+}

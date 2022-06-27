@@ -1,0 +1,54 @@
+{
+    "rq": 91,
+    "make": "Chevrolet",
+    "model": "CERV II",
+    "modelYear": 1964,
+    "country": "US",
+    "topSpeed": 212,
+    "0to60": 3.0,
+    "handling": 91,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Concept", "Unqiue", "Innovative"],
+    "isPrize": true,
+
+    "weight": 838,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 85.71,
+    "ola": 96,
+    "description": "Card by Aqo.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/944969802378797096/cerv2.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/944969865184305232/stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/944969884704575568/333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/944969903402795038/666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/944969970960445530/996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/944969947568828416/969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/944969924533714965/699.png",
+
+    "333TopSpeed": 214,
+    "3330to60": 2.9,
+    "333Handling": 94,
+
+    "666TopSpeed": 217,
+    "6660to60": 2.7,
+    "666Handling": 97,
+
+    "996TopSpeed": 219,
+    "9960to60": 2.6,
+    "996Handling": 97,
+
+    "969TopSpeed": 219,
+    "9690to60": 2.7,
+    "969Handling": 101,
+
+    "699TopSpeed": 217,
+    "6990to60": 2.6,
+    "699Handling": 101
+}
