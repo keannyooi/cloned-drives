@@ -1,0 +1,54 @@
+{
+    "rq": 80,
+    "make": ["Mercedes-AMG", "Mercedes-Benz"],
+    "model": "G 63",
+    "modelYear": 2018,
+    "country": "DE",
+    "topSpeed": 149,
+    "0to60": 4.1,
+    "handling": 68,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 2485,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 68.33,
+    "ola": 73.17,
+    "description": "Card by Havvy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/952619388899586108/AMGG63_18.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/959435989351284796/G632018.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/959436002831761499/G6320181.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/959436013430779984/G6320182.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/959436045320093716/G632018996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/959436031134945320/G632018969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/959436022536622170/G632018699.png",
+
+    "333TopSpeed": 152,
+    "3330to60": 3.9,
+    "333Handling": 70,
+
+    "666TopSpeed": 156,
+    "6660to60": 3.7,
+    "666Handling": 72,
+
+    "996TopSpeed": 159,
+    "9960to60": 3.5,
+    "996Handling": 72,
+
+    "969TopSpeed": 159,
+    "9690to60": 3.7,
+    "969Handling": 75,
+
+    "699TopSpeed": 156,
+    "6990to60": 3.5,
+    "699Handling": 75
+}
