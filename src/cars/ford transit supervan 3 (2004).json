@@ -1,0 +1,54 @@
+{
+    "rq": 68,
+    "make": "Ford",
+    "model": "Transit SuperVan 3",
+    "modelYear": 2004,
+    "country": "GB",
+    "topSpeed": 150,
+    "0to60": 4.2,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Unique", "Eargasm", "Oddity"],
+    "isPrize": false,
+
+    "weight": 890,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Van",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 72.41,
+    "ola": 90.48,
+    "description": "The original 650HP McLaren V8 was swapped out for a more practical Ford-Cosworth Pro Sports 3000 V6 in 2000, which made a comparatively measly 260 horsepower. Card by Based.",
+
+    "card": "https://cdn.discordapp.com/attachments/813162860884262972/944616208962035722/Ford_Transit_SuperVan_3_Slow.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/942142388460199946/Ford_Transit_Supervan_3_slowe_Stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/942142519666434098/Ford_Transit_Supervan_3_slowe_1_Star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/942142550985297930/Ford_Transit_Supervan_3_slowe_2_Star.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/942142704215818250/Ford_Transit_Supervan_3_slowe_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/942142658879561788/Ford_Transit_Supervan_3_slowe_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/942142624058462278/Ford_Transit_Supervan_3_slowe_699.png",
+
+    "333TopSpeed": 153,
+    "3330to60": 4.0,
+    "333Handling": 94,
+
+    "666TopSpeed": 157,
+    "6660to60": 3.8,
+    "666Handling": 97,
+
+    "996TopSpeed": 160,
+    "9960to60": 3.6,
+    "996Handling": 97,
+
+    "969TopSpeed": 160,
+    "9690to60": 3.8,
+    "969Handling": 101,
+
+    "699TopSpeed": 157,
+    "6990to60": ,3.6
+    "699Handling": 101
+}
