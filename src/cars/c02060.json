@@ -1,0 +1,54 @@
+{
+    "rq": 87,
+    "make": "Ford",
+    "model": "Transit SuperVan 3",
+    "modelYear": 1994,
+    "country": "GB",
+    "topSpeed": 204,
+    "0to60": 3.0,
+    "handling": 92,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Unique", "Eargasm", "Oddity", "Motorsport"],
+    "isPrize": true,
+
+    "weight": 890,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Van",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 115.38,
+    "ola": 80,
+    "description": "They took the V8 from Senna's McLaren MP4/8 and shoved it into the back of a van. The blue and white devil was then born, with one superb soundtrack riding along. Card by Based.",
+
+    "card": "https://cdn.discordapp.com/attachments/813162860884262972/944616207724732447/Ford_Transit_SuperVan_3_Fast.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/942142790433910894/Ford_Transit_Supervan_3_FAST_Stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/942142841361170432/Ford_Transit_Supervan_3_FAST_1_Star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/942142867168714773/Ford_Transit_Supervan_3_FAST_2_Star.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/942142951490998272/Ford_Transit_Supervan_3_FAST_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/942142916770529380/Ford_Transit_Supervan_3_FAST_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/942142890182860810/Ford_Transit_Supervan_3_FAST_699.png",
+
+    "333TopSpeed": 207,
+    "3330to60": 2.9,
+    "333Handling": 95,
+
+    "666TopSpeed": 209,
+    "6660to60": 2.7,
+    "666Handling": 98,
+
+    "996TopSpeed": 212,
+    "9960to60": 2.6,
+    "996Handling": 98,
+
+    "969TopSpeed": 212,
+    "9690to60": 2.7,
+    "969Handling": 102,
+
+    "699TopSpeed": 209,
+    "6990to60": 2.6,
+    "699Handling": 102
+}

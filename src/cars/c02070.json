@@ -1,0 +1,54 @@
+{
+    "rq": 38,
+    "make": "Mercedes-Benz",
+    "model": "500 SL",
+    "modelYear": 1989,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 7.2,
+    "handling": 74,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Sleeper"],
+    "isPrize": false,
+
+    "weight": 1835,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 85.7,
+    "ola": 72.2,
+    "description": "Card by Saabsut.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/948556495547682856/benz_500_sl_89_cd.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/948555842544889946/500_SL_racehud_stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/948555874832625684/500_SL_racehud_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/948555904196968448/500_SL_racehud_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/948556013001404456/500_SL_racehud_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/948555973365207070/500_SL_racehud_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/948555932554633217/500_SL_racehud_699.png",
+
+    "333TopSpeed": 158,
+    "3330to60": 6.8,
+    "333Handling": 76,
+
+    "666TopSpeed": 162,
+    "6660to60": 6.5,
+    "666Handling": 79,
+
+    "996TopSpeed": 165,
+    "9960to60": 6.1,
+    "996Handling": 79,
+
+    "969TopSpeed": 165,
+    "9690to60": 6.5,
+    "969Handling": 82,
+
+    "699TopSpeed": 162,
+    "6990to60": 6.1,
+    "699Handling": 82
+}
