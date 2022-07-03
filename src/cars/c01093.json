@@ -1,4 +1,4 @@
-﻿{
+{
     "rq": 98,
     "make": "Porsche",
     "model": "918 Spyder",
@@ -13,7 +13,7 @@
     "isPrize": false,
 
 
-    "weight": 1685,
+    "weight": 1680,
     "gc": "Low",
     "seatCount":2,
     "bodyStyle": "Convertible",
@@ -21,19 +21,18 @@
     "abs": true,
     "enginePos": "Middle",
     "fuelType": "Hybrid",
-    "mra": 96.00,
-    "ola": 83.33,
-    "description": "A hybrid hypercar like no other. Two electric motors and a 9,000rpm 4.6-litre racing V8. Card by Keanny",
+    "mra": 91.14,
+    "ola": 91.67,
+    "description": "A hybrid hypercar like no other. Two electric motors and a 9,000rpm 4.6-litre racing V8. Card by c6",
 
 
-    "card": "https://cdn.discordapp.com/attachments/819199720249360384/819382690150088714/918_spoyder.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819512481834598440/918_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819512495789703178/918_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819512501968306176/918_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819512538034602004/918_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819512525829046292/918_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819512514105704458/918_699.jpg",
-
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/987362341312147456/porsche_918_spyder.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/987362478751105094/porsche_918_spyder_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/987362495930957844/porsche_918_spyder_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/987362511886110801/porsche_918_spyder_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/987362576054775859/porsche_918_spyder_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/987362552545706064/porsche_918_spyder_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/987362527782502500/porsche_918_spyder_699.png",
 
     "333TopSpeed": 216,
     "3330to60": 2.3,
