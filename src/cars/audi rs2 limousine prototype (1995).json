@@ -1,0 +1,54 @@
+{
+    "rq": 56,
+    "make": "Audi",
+    "model": "RS2 Limousine Prototype",
+    "modelYear": 1995,
+    "country": "DE",
+    "topSpeed": 165,
+    "0to60": 5.2,
+    "handling": 78,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Unique", "Street Racer"],
+    "isPrize": false,
+
+    "weight": 1470,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.24,
+    "ola": 65.38,
+    "description": "Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/976510431801774110/rs2limousine4.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/976511057197682688/RS2Limo.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/976511064269279252/RS2Limo1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/976511072427184178/RS2Limo2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/976511096833859584/RS2Limo996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/976511089246363658/RS2Limo969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/976511083508539443/RS2Limo699.png",
+
+    "333TopSpeed": 168,
+    "3330to60": 4.9,
+    "333Handling": 81,
+
+    "666TopSpeed": 171,
+    "6660to60": 4.7,
+    "666Handling": 83,
+
+    "996TopSpeed": 174,
+    "9960to60": 4.5,
+    "996Handling": 83,
+
+    "969TopSpeed": 174,
+    "9690to60": 4.7,
+    "969Handling": 87,
+
+    "699TopSpeed": 171,
+    "6990to60": 4.4,
+    "699Handling": 87
+}
