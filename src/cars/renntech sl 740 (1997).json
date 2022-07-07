@@ -1,0 +1,54 @@
+{
+    "rq": 67,
+    "make": ["RENNtech", "Mercedes-Benz"],
+    "model": "SL 740",
+    "modelYear": 1997,
+    "country": "US",
+    "topSpeed": 179,
+    "0to60": 4.4,
+    "handling": 78,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner"],
+    "isPrize": false,
+
+    "weight": 1840,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Medium",
+    "fuelType": "Petrol",
+    "mra": 72.13,
+    "ola": 81.82,
+    "description": "Card by Havvy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/827300439347298394/RENNtechSL740.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/827301457619189810/000_rennsl3.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/827301461700247582/111_rennsl3.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/827301466573373480/222_rennsl3.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/827301479433764884/332_rennsl3.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/827301475532144690/323_rennsl3.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/827301473163018301/233_rennsl3.png",
+
+    "333TopSpeed": 182,
+    "3330to60": 4.2,
+    "333Handling": 81,
+
+    "666TopSpeed": 185,
+    "6660to60": 4.0,
+    "666Handling": 83,
+
+    "996TopSpeed": 188,
+    "9960to60": 3.7,
+    "996Handling": 83,
+
+    "969TopSpeed": 188,
+    "9690to60": 4.0,
+    "969Handling": 87,
+
+    "699TopSpeed": 185,
+    "6990to60": 3.7,
+    "699Handling": 87
+}

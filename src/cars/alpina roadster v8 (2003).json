@@ -1,0 +1,54 @@
+{
+    "rq": 54,
+    "make": ["Alpina", "BMW"],
+    "model": "Roadster V8",
+    "modelYear": 2003,
+    "country": "DE",
+    "topSpeed": 162,
+    "0to60": 5.2,
+    "handling": 80,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner"],
+    "isPrize": false,
+
+    "weight": 1619,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 80.00,
+    "ola": 73.07,
+    "description": "Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/930193972150824990/alpinaRoadsterV8.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/930194886345515028/alpinaV8.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/930194895782694912/alpinaV8333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/930194904162918470/alpinaV8666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/930194938635911218/alpinaV8996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/930194929840427028/alpinaV8969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/930194914090815499/alpinaV8699.png",
+
+    "333TopSpeed": 165,
+    "3330to60": 4.9,
+    "333Handling": 83,
+
+    "666TopSpeed": 168,
+    "6660to60": 4.7,
+    "666Handling": 85,
+
+    "996TopSpeed": 172,
+    "9960to60": 4.4,
+    "996Handling": 85,
+
+    "969TopSpeed": 172,
+    "9690to60": 4.7,
+    "969Handling": 89,
+
+    "699TopSpeed": 168,
+    "6990to60": 4.4,
+    "699Handling": 89
+}

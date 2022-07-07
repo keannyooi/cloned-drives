@@ -1,0 +1,54 @@
+{
+    "rq": 74,
+    "make": ["Cargraphic", "Porsche"],
+    "model": "911 GT3 RSC 3.8",
+    "modelYear": 2003,
+    "country": "DE",
+    "topSpeed": 193,
+    "0to60": 4.0,
+    "handling": 89,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner"],
+    "isPrize": false,
+
+    "weight": 1418,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 76.92,
+    "ola": 80.00,
+    "description": "Card by Havvy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/828646556529328159/unknown.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/828646623290195968/996Cargraph_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/828646627933159444/996Cargraph_111.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/828646631045070848/996Cargraph_222.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/828646647873405049/996Cargraph_332.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/828646643099369472/996Cargraph_323.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/828646636946325504/996Cargraph_233.png",
+
+    "333TopSpeed": 196,
+    "3330to60": 3.8,
+    "333Handling": 92,
+
+    "666TopSpeed": 198,
+    "6660to60": 3.6,
+    "666Handling": 95,
+
+    "996TopSpeed": 201,
+    "9960to60": 3.4,
+    "996Handling": 95,
+
+    "969TopSpeed": 201,
+    "9690to60": 3.6,
+    "969Handling": 99,
+
+    "699TopSpeed": 198,
+    "6990to60": 3.4,
+    "699Handling": 99
+}

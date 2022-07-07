@@ -1,0 +1,54 @@
+{
+    "rq": 77,
+    "make": ["RENNtech", "Mercedes-Benz"],
+    "model": "E7.4RS",
+    "modelYear": 1998,
+    "country": "US",
+    "topSpeed": 198,
+    "0to60": 3.9,
+    "handling": 83,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner", "Super Sedan"],
+    "isPrize": false,
+
+    "weight": 1835,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 82.98,
+    "ola": 91.31,
+    "description": "Card by Havvy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/827307832529125446/RENNtechE7.4RS.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/827307911273250846/000_rennw210.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/827307915680809040/111_rennw210.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/827307919405482014/222_rennw210.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/827307932181463110/332_rennw210.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/827307928268570674/323_rennw210.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/827307924145438720/233_rennw210.png",
+
+    "333TopSpeed": 201,
+    "3330to60": 3.7,
+    "333Handling": 86,
+
+    "666TopSpeed": 203,
+    "6660to60": 3.5,
+    "666Handling": 88,
+
+    "996TopSpeed": 206,
+    "9960to60": 3.3,
+    "996Handling": 88,
+
+    "969TopSpeed": 206,
+    "9690to60": 3.5,
+    "969Handling": 92,
+
+    "699TopSpeed": 203,
+    "6990to60": 3.3,
+    "699Handling": 92
+}

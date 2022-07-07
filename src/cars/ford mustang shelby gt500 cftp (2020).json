@@ -1,0 +1,54 @@
+{
+    "rq": 79,
+    "make": "Ford",
+    "model": "Mustang Shelby GT500 CFTP",
+    "modelYear": 2020,
+    "country": "US",
+    "topSpeed": 180,
+    "0to60": 3.6,
+    "handling": 93,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Track Day"],
+    "isPrize": true,
+
+    "weight": 1892,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 104.05,
+    "ola": 93.06,
+    "description": "The Carbon Fiber Track Package (CFTP) adds better tires, more aggressive aero, and a few other goodies, making an already insane car even faster. Card by Preston.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/977987441325670480/2020_Ford_Mustang_Shelby_GT500_CFTP.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/977827218560544818/000-2.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/977827277071060992/333-2.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/977827295836389416/666-2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/977827385703538718/996-2.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/977827363150770206/969-2.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/977827330124828692/699-2.png",
+
+    "333TopSpeed": 183,
+    "3330to60": 3.4,
+    "333Handling": 96,
+
+    "666TopSpeed": 186,
+    "6660to60": 3.2,
+    "666Handling": 99,
+
+    "996TopSpeed": 189,
+    "9960to60": 3.1,
+    "996Handling": 99,
+
+    "969TopSpeed": 189,
+    "9690to60": 3.2,
+    "969Handling": 103,
+
+    "699TopSpeed": 186,
+    "6990to60": 3.1,
+    "699Handling": 103
+}

@@ -1,0 +1,54 @@
+{
+    "rq": 50,
+    "make": "ZAP",
+    "model": "Alias Concept",
+    "modelYear": 2007,
+    "country": "US",
+    "topSpeed": 156,
+    "0to60": 5.7,
+    "handling": 81,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Unique", "Concept"],
+    "isPrize": false,
+
+    "weight": 1200,
+    "gc": "Low",
+    "seatCount": 3,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Petrol",
+    "mra": 55.88,
+    "ola": 80.7,
+    "description": "It was supposed to beat porsches. Card by Keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/976470485242118264/zap_alias_concept.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/976441535874871396/zap_concept_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/976441553151225876/zap_concept_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/976441566778511400/zap_concept_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/976441601507344384/zap_concept_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/976441588517580850/zap_concept_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/976441574923841536/zap_concept_699.jpg",
+
+    "333TopSpeed": 159,
+    "3330to60": 5.4,
+    "333Handling": 84,
+
+    "666TopSpeed": 163,
+    "6660to60": 5.1,
+    "666Handling": 86,
+
+    "996TopSpeed": 166,
+    "9960to60": 4.8,
+    "996Handling": 86,
+
+    "969TopSpeed": 166,
+    "9690to60": 5.1,
+    "969Handling": 90,
+
+    "699TopSpeed": 163,
+    "6990to60": 4.8,
+    "699Handling": 90
+}

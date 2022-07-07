@@ -1,0 +1,54 @@
+{
+    "rq": 90,
+    "make": "Pagani",
+    "model": "Huayra Roadster",
+    "modelYear": 2017,
+    "country": "IT",
+    "topSpeed": 230,
+    "0to60": 3.1,
+    "handling": 94,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Hypercar", "Unique", "Ultra Expensive"],
+    "isPrize": false,
+
+    "weight": 1280,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 103.33,
+    "ola": 95.48,
+    "description": "Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/978709357317484554/HuayraRoadster.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/978709749719785592/HuayraRoad.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/978709756401315880/HuayraRoad1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/978709763300921444/HuayraRoad2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/978709786906480690/HuayraRoad996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/978709776882102322/HuayraRoad969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/978709769948893185/HuayraRoad699.png",
+
+    "333TopSpeed": 232,
+    "3330to60": 2.9,
+    "333Handling": 97,
+
+    "666TopSpeed": 235,
+    "6660to60": 2.8,
+    "666Handling": 100,
+
+    "996TopSpeed": 237,
+    "9960to60": 2.6,
+    "996Handling": 100,
+
+    "969TopSpeed": 237,
+    "9690to60": 2.8,
+    "969Handling": 104,
+
+    "699TopSpeed": 235,
+    "6990to60": 2.6,
+    "699Handling": 104
+}

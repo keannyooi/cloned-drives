@@ -1,0 +1,54 @@
+{
+    "rq": 61,
+    "make": ["Banks Power", "GMC"],
+    "model": "Syclone Land Speed Record",
+    "modelYear": 1991,
+    "country": "US",
+    "topSpeed": 204,
+    "0to60": 3.2,
+    "handling": 36,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Tuner", "Unique"],
+    "isPrize": true,
+
+    "weight": 1590,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Pickup",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 91.43,
+    "ola": 84.38,
+    "description": "I believe in speed and power. power and speed solves many things - Jeremy Clarkson. Card by Keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/976470722593583114/gmc_syclone_land_speed_record.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/976440038193786930/banks_power_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/976440055067459664/banks_power_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/976440067881058314/banks_power_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/976440107823427625/banks_power_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/976440093856370709/banks_power_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/976440080971477063/banks_power_699.jpg",
+
+    "333TopSpeed": 207,
+    "3330to60": 3.0,
+    "333Handling": 37,
+
+    "666TopSpeed": 209,
+    "6660to60": 2.9,
+    "666Handling": 38,
+
+    "996TopSpeed": 212,
+    "9960to60": 2.7,
+    "996Handling": 38,
+
+    "969TopSpeed": 212,
+    "9690to60": 2.9,
+    "969Handling": 40,
+
+    "699TopSpeed": 209,
+    "6990to60": 2.7,
+    "699Handling": 40
+}

@@ -1,0 +1,54 @@
+{
+    "rq": 61,
+    "make": ["Protech Performance", "Mazda"],
+    "model": "RX-8 Turbo",
+    "modelYear": 2004,
+    "country": "US",
+    "topSpeed": 175,
+    "0to60": 4.9,
+    "handling": 85,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner"],
+    "isPrize": false,
+
+    "weight": 1369,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 60.49,
+    "ola": 71.84,
+    "description": "The first forced induction kit for the Mazda RX-8, which was so good it got featured in Car & Driver. Card by Keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/974663878812258324/unknown.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/974665609201713212/protech_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/974665629829324841/protech_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/974665642340925540/protech_666.jpg",
+    "racehud996": "",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/974665681771565106/protech_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/974665657700462602/protech_699.jpg",
+
+    "333TopSpeed": 178,
+    "3330to60": 4.7,
+    "333Handling": 88,
+
+    "666TopSpeed": 181,
+    "6660to60": 4.4,
+    "666Handling": 91,
+
+    "996TopSpeed": 184,
+    "9960to60": 4.2,
+    "996Handling": 91,
+
+    "969TopSpeed": 184,
+    "9690to60": 4.4,
+    "969Handling": 94,
+
+    "699TopSpeed": 181,
+    "6990to60": 4.2,
+    "699Handling": 94
+}

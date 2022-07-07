@@ -1,0 +1,54 @@
+{
+    "rq": 81,
+    "make": "Ford",
+    "model": "Falcon V8 Supercar #5 Prodrive Racing Australia",
+    "modelYear": 2015,
+    "country": "AU",
+    "topSpeed": 174,
+    "0to60": 3.3,
+    "handling": 95,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Rest of The World", "Motorsport"],
+    "isPrize": false,
+
+    "weight": 1410,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 94.29,
+    "ola": 84.85,
+    "description": "Card by Exist.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/847998299214315530/CD_Ford_Falcon_V8_Supercar_5_Prodrive_Racing_Australia.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/847998460481503242/CD_Ford_Falcon_V8_Supercar_5_Prodrive_Racing_Australia_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/847998464158859284/CD_Ford_Falcon_V8_Supercar_5_Prodrive_Racing_Australia_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/847998474074718238/CD_Ford_Falcon_V8_Supercar_5_Prodrive_Racing_Australia_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/847998494509236224/CD_Ford_Falcon_V8_Supercar_5_Prodrive_Racing_Australia_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/847998490897285120/CD_Ford_Falcon_V8_Supercar_5_Prodrive_Racing_Australia_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/847998482446942238/CD_Ford_Falcon_V8_Supercar_5_Prodrive_Racing_Australia_699.png",
+
+    "333TopSpeed": 177,
+    "3330to60": 3.1,
+    "333Handling": 98,
+
+    "666TopSpeed": 180,
+    "6660to60": 3.0,
+    "666Handling": 101,
+
+    "996TopSpeed": 183,
+    "9960to60": 2.8,
+    "996Handling": 105,
+
+    "969TopSpeed": 183,
+    "9690to60": 3.0,
+    "969Handling": 105,
+
+    "699TopSpeed": 180,
+    "6990to60": 2.8,
+    "699Handling": 105
+}
