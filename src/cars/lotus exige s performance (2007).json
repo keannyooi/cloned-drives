@@ -1,0 +1,54 @@
+{
+    "rq": 69,
+    "make": "Lotus",
+    "model": "Exige S Performance",
+    "modelYear": 2007,
+    "country": "GB",
+    "topSpeed": 153,
+    "0to60": 4.4,
+    "handling": 90,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Track Day"],
+    "isPrize": false,
+
+    "weight": 956,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 70.97,
+    "ola": 72.73,
+    "description": "Card by Tom.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/950083859742072903/Lotus_Exige_S_Performance_2007.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/950346495150944326/S_perf_111.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/950346501530472490/S_perf_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/950346505716371516/S_perf_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/950346521348546580/S_perf_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/950346516294430720/S_perf_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/950346510820859904/S_perf_699.jpg",
+
+    "333TopSpeed": 156,
+    "3330to60": 4.2,
+    "333Handling": 93,
+
+    "666TopSpeed": 160,
+    "6660to60": 4.0,
+    "666Handling": 96,
+
+    "996TopSpeed": 163,
+    "9960to60": 3.7,
+    "996Handling": 96,
+
+    "969TopSpeed": 163,
+    "9690to60": 4.0,
+    "969Handling": 100,
+
+    "699TopSpeed": 160,
+    "6990to60": 3.7,
+    "699Handling": 100
+}

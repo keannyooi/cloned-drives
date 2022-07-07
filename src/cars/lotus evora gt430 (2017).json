@@ -1,0 +1,54 @@
+{
+    "rq": 81,
+    "make": "Lotus",
+    "model": "Evora GT430",
+    "modelYear": 2017,
+    "country": "GB",
+    "topSpeed": 190,
+    "0to60": 3.7,
+    "handling": 93,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Royal Collection", "Track Day"],
+    "isPrize": false,
+
+    "weight": 1337,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 88.1,
+    "ola": 70.27,
+    "description": "Card by Tom.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/855066068184072223/Lotus_Evora_GT430_2017.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/855065973215592468/Lotus_Evora_GT430_2017_111.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/855065978991018004/Lotus_Evora_GT430_2017_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/855065981842882560/Lotus_Evora_GT430_2017_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/855065994258546718/Lotus_Evora_GT430_2017_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/855065989664997406/Lotus_Evora_GT430_2017_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/855065985810563092/Lotus_Evora_GT430_2017_699.jpg",
+
+    "333TopSpeed": 193,
+    "3330to60": 3.5,
+    "333Handling": 96,
+
+    "666TopSpeed": 195,
+    "6660to60": 3.3,
+    "666Handling": 99,
+
+    "996TopSpeed": 198,
+    "9960to60": 3.1,
+    "996Handling": 99,
+
+    "969TopSpeed": 198,
+    "9690to60": 3.3,
+    "969Handling": 103,
+
+    "699TopSpeed": 195,
+    "6990to60": 3.1,
+    "699Handling": 103
+}

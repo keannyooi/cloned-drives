@@ -1,0 +1,54 @@
+{
+    "rq": 62,
+    "make": "Land Rover",
+    "model": "Discovery Sport P300e S R-Dynamic",
+    "modelYear": 2020,
+    "country": "GB",
+    "topSpeed": 130,
+    "0to60": 6.2,
+    "handling": 75,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+
+    "weight": 2093,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Hybrid",
+    "mra": 55.86,
+    "ola": 74.19,
+    "description": "Card by Macan",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/855185131059937290/Discovery_Sport_P300e_S_R-Dynamic_20.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/855186123432525824/Land_Rover_Discovery_Sport_P300e_S_R-Dynamic_2020_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/855186126254768138/Land_Rover_Discovery_Sport_P300e_S_R-Dynamic_2020_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/855186134265757706/Land_Rover_Discovery_Sport_P300e_S_R-Dynamic_2020_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/855186153699409950/Land_Rover_Discovery_Sport_P300e_S_R-Dynamic_2020_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/855186146803974164/Land_Rover_Discovery_Sport_P300e_S_R-Dynamic_2020_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/855186138691928104/Land_Rover_Discovery_Sport_P300e_S_R-Dynamic_2020_699.png",
+
+    "333TopSpeed": 134,
+    "3330to60": 5.9,
+    "333Handling": 77,
+
+    "666TopSpeed": 138,
+    "6660to60": 5.6,
+    "666Handling": 80,
+
+    "996TopSpeed": 142,
+    "9960to60": 5.3,
+    "996Handling": 80,
+
+    "969TopSpeed": 142,
+    "9690to60": 5.6,
+    "969Handling": 83,
+
+    "699TopSpeed": 138,
+    "6990to60": 5.3,
+    "699Handling": 83
+}

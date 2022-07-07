@@ -1,0 +1,54 @@
+{
+    "rq": 78,
+    "make": "Lotus",
+    "model": "Exige Sport 350",
+    "modelYear": 2015,
+    "country": "GB",
+    "topSpeed": 170,
+    "0to60": 3.7,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Track Day"],
+    "isPrize": false,
+
+    "weight": 1125,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 71.15,
+    "ola": 70.27,
+    "description": "Card by Tom.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/950084048200540180/Lotus_Exige_Sport_350_2015.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/950084965163483136/350_111.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/950084973166198874/350_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/950084978606231563/350_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/950084995773505556/350_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/950084991994462269/350_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/950084984927055892/350_699.jpg",
+
+    "333TopSpeed": 173,
+    "3330to60": 3.5,
+    "333Handling": 94,
+
+    "666TopSpeed": 176,
+    "6660to60": 3.3,
+    "666Handling": 97,
+
+    "996TopSpeed": 179,
+    "9960to60": 3.1,
+    "996Handling": 97,
+
+    "969TopSpeed": 179,
+    "9690to60": 3.3,
+    "969Handling": 101,
+
+    "699TopSpeed": 176,
+    "6990to60": 3.1,
+    "699Handling": 101
+}

@@ -1,0 +1,54 @@
+{
+    "rq": 64,
+    "make": ["Range Rover", "Land Rover"],
+    "model": "Velar P300 SE R-Dynamic",
+    "modelYear": 2018,
+    "country": "GB",
+    "topSpeed": 141,
+    "0to60": 6.2,
+    "handling": 75,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1884,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 59.62,
+    "ola": 70.97,
+    "description": "Card by Macan.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/949494767413231666/Range_Rover_Velar_P300_SE_R-Dynamic_18.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/949496853563580456/Range_Rover_Velar_P300_SE_R-Dynamic_18_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/949496883292811264/Range_Rover_Velar_P300_SE_R-Dynamic_18_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/949496919451918406/Range_Rover_Velar_P300_SE_R-Dynamic_18_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/949497067577954324/Range_Rover_Velar_P300_SE_R-Dynamic_18_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/949497035181162516/Range_Rover_Velar_P300_SE_R-Dynamic_18_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/949496973306781726/Range_Rover_Velar_P300_SE_R-Dynamic_18_699.png",
+
+    "333TopSpeed": 145,
+    "3330to60": 5.9,
+    "333Handling": 77,
+
+    "666TopSpeed": 148,
+    "6660to60": 5.6,
+    "666Handling": 80,
+
+    "996TopSpeed": 152,
+    "9960to60": 5.3,
+    "996Handling": 80,
+
+    "969TopSpeed": 152,
+    "9690to60": 5.6,
+    "969Handling": 83,
+
+    "699TopSpeed": 148,
+    "6990to60": 5.3,
+    "699Handling": 83
+}
