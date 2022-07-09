@@ -1,0 +1,54 @@
+{
+    "rq": 30,
+    "make": "BMW",
+    "model": "Z4 2.0i",
+    "modelYear": 2006,
+    "country": "DE",
+    "topSpeed": 133,
+    "0to60": 8.0,
+    "handling": 79,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1295,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 53.22,
+    "ola": 67.89,
+    "description": "Card by Keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/975650490958368808/bmw_z4_2.0i.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/973563504017690644/z4_2.0i_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/973563543087616111/z4_2.0i_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/973563563081891840/z4_2.0i_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/973563753918529557/z4_2.0i_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/973563728769458226/z4_2.0i_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/973563706850041876/z4_2.0i_699.jpg",
+
+    "333TopSpeed": 137,
+    "3330to60": 7.6,
+    "333Handling": 82,
+
+    "666TopSpeed": 141,
+    "6660to60": 7.2,
+    "666Handling": 84,
+
+    "996TopSpeed": 145,
+    "9960to60": 6.8,
+    "996Handling": 84,
+
+    "969TopSpeed": 145,
+    "9690to60": 7.2,
+    "969Handling": 88,
+
+    "699TopSpeed": 141,
+    "6990to60": 6.8,
+    "699Handling": 88
+}
