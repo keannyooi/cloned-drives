@@ -1,0 +1,54 @@
+{
+    "rq": 57,
+    "make": ["Range Rover", "Land Rover"],
+    "model": "Velar D275 SE",
+    "modelYear": 2019,
+    "country": "GB",
+    "topSpeed": 135,
+    "0to60": 6.7,
+    "handling": 73,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 2029,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 61.47,
+    "ola": 77.61,
+    "description": "Card by Macan.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/949494532108587068/Range_Rover_Velar_D275_SE_19.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/949495901003587644/Range_Rover_Velar_D275_SE_19_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/949495941516361758/Range_Rover_Velar_D275_SE_19_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/949496018213408888/Range_Rover_Velar_D275_SE_19_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/949496123700178944/Range_Rover_Velar_D275_SE_19_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/949496093627002890/Range_Rover_Velar_D275_SE_19_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/949496057799254016/Range_Rover_Velar_D275_SE_19_699.png",
+
+    "333TopSpeed": 139,
+    "3330to60": 6.4,
+    "333Handling": 75,
+
+    "666TopSpeed": 143,
+    "6660to60": 6.0,
+    "666Handling": 78,
+
+    "996TopSpeed": 147,
+    "9960to60": 5.7,
+    "996Handling": 78,
+
+    "969TopSpeed": 147,
+    "9690to60": 6.0,
+    "969Handling": 81,
+
+    "699TopSpeed": 143,
+    "6990to60": 5.7,
+    "699Handling": 81
+}

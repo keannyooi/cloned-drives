@@ -1,0 +1,54 @@
+{
+    "rq": 81,
+    "make": "Alfa Romeo",
+    "model": "TZ3 Stradale",
+    "modelYear": 2011,
+    "country": "IT",
+    "topSpeed": 202,
+    "0to60": 3.4,
+    "handling": 93,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Unique", "Ultra Expensive"],
+    "isPrize": false,
+
+    "weight": 1450,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 79.09,
+    "ola": 100,
+    "description": "Card by Lemon.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/958000808903970846/alfa_romeo_tz3_stradale_for_cd.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/958001083920318515/TZ3Stradale.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/958001088647299092/TZ3Stradale1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/958001096083779654/TZ3Stradale2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/958001118397472808/TZ3Stradale996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/958001110881284197/TZ3Stradale969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/958001102740156527/TZ3Stradale699.png",
+
+    "333TopSpeed": 205,
+    "3330to60": 3.2,
+    "333Handling": 96,
+
+    "666TopSpeed": 207,
+    "6660to60": 3.1,
+    "666Handling": 99,
+
+    "996TopSpeed": 210,
+    "9960to60": 2.9,
+    "996Handling": 99,
+
+    "969TopSpeed": 210,
+    "9690to60": 3.1,
+    "969Handling": 103,
+
+    "699TopSpeed": 207,
+    "6990to60": 2.9,
+    "699Handling": 103
+}

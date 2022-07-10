@@ -1,0 +1,54 @@
+{
+    "rq": 35,
+    "make": "BMW",
+    "model": "318is Coupe",
+    "modelYear": 1989,
+    "country": "DE",
+    "topSpeed": 126,
+    "0to60": 8.9,
+    "handling": 72,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1124,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 54.43,
+    "ola": 67.41,
+    "description": "Card by Olimato.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/945201645283840040/318is_coupe.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/945206445912231936/318is_stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/945206463167619182/318is_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/945206473401696276/318is_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/945206513612509184/318is_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/945206498215227402/318is_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/945206487872065556/318is_699.png",
+
+    "333TopSpeed": 130,
+    "3330to60": 8.5,
+    "333Handling": 74,
+
+    "666TopSpeed": 134,
+    "6660to60": 8.0,
+    "666Handling": 77,
+
+    "996TopSpeed": 138,
+    "9960to60": 7.6,
+    "996Handling": 77,
+
+    "969TopSpeed": 138,
+    "9690to60": 8.0,
+    "969Handling": 80,
+
+    "699TopSpeed": 134,
+    "6990to60": 7.6,
+    "699Handling": 80
+}

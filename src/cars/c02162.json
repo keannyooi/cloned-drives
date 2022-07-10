@@ -1,0 +1,54 @@
+{
+    "rq": 45,
+    "make": "Land Rover",
+    "model": "Discovery Sport P200 S",
+    "modelYear": 2020,
+    "country": "GB",
+    "topSpeed": 129,
+    "0to60": 9.3,
+    "handling": 73,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1826,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 50.54,
+    "ola": 68.82,
+    "description": "Card by Macan.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/855185010498469948/Discovery_Sport_P200_S_20.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/855185869416562768/Land_Rover_Discovery_Sport_P200_S_2020_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/855185874849234984/Land_Rover_Discovery_Sport_P200_S_2020_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/855185881278709800/Land_Rover_Discovery_Sport_P200_S_2020_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/855185922056126489/Land_Rover_Discovery_Sport_P200_S_2020_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/855185916629221426/Land_Rover_Discovery_Sport_P200_S_2020_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/855185907233325056/Land_Rover_Discovery_Sport_P200_S_2020_699.png",
+
+    "333TopSpeed": 133,
+    "3330to60": 8.8,
+    "333Handling": 75,
+
+    "666TopSpeed": 137,
+    "6660to60": 8.4,
+    "666Handling": 78,
+
+    "996TopSpeed": 141,
+    "9960to60": 7.9,
+    "996Handling": 78,
+
+    "969TopSpeed": 141,
+    "9690to60": 8.4,
+    "969Handling": 81,
+
+    "699TopSpeed": 137,
+    "6990to60": 7.9,
+    "699Handling": 81
+}

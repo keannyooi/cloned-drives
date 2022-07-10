@@ -1,0 +1,54 @@
+{
+    "rq": 60,
+    "make": ["Hartge", "BMW"],
+    "model": "H50 V8",
+    "modelYear": 2001,
+    "country": "DE",
+    "topSpeed": 170,
+    "0to60": 4.6,
+    "handling": 80,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner"],
+    "isPrize": false,
+
+    "weight": 1530,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 83.99,
+    "ola": 90.65,
+    "description": "Card by Havvy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/826948305560666122/HartgeH50V8.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826948356597088325/000_hard.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826948371267846144/111_hard.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826948375047962644/222_hard.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826948388057907240/332_hard.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826948384933806091/323_hard.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826948380181266442/233_hard.png",
+
+    "333TopSpeed": 173,
+    "3330to60": 4.4,
+    "333Handling": 83,
+
+    "666TopSpeed": 176,
+    "6660to60": 4.1,
+    "666Handling": 85,
+
+    "996TopSpeed": 179,
+    "9960to60": 3.9,
+    "996Handling": 85,
+
+    "969TopSpeed": 179,
+    "9690to60": 4.1,
+    "969Handling": 89,
+
+    "699TopSpeed": 176,
+    "6990to60": 3.9,
+    "699Handling": 89
+}

@@ -1,0 +1,54 @@
+{
+    "rq": 54,
+    "make": ["XV Motorsports", "Dodge"],
+    "model": "Challenger XV001",
+    "modelYear": 2006,
+    "country": "US",
+    "topSpeed": 158,
+    "0to60": 5.1,
+    "handling": 81,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Restomod", "Tuner"],
+    "isPrize": false,
+
+    "weight": 1686,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 77.27,
+    "ola": 82.35,
+    "description": "Combining past with present. Card by Keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/976470393500102666/xv_motorsports_challenger.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/976435530948563024/xv_challenger_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/976435558173773865/xv_challenger_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/976435572925136906/xv_challenger_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/976435620593418280/xv_challenger_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/976435607410720848/xv_challenger_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/976435592328007720/xv_challenger_699.jpg",
+
+    "333TopSpeed": 161,
+    "3330to60": 4.8,
+    "333Handling": 84,
+
+    "666TopSpeed": 165,
+    "6660to60": 4.6,
+    "666Handling": 86,
+
+    "996TopSpeed": 168,
+    "9960to60": 4.3,
+    "996Handling": 86,
+
+    "969TopSpeed": 168,
+    "9690to60": 4.6,
+    "969Handling": 90,
+
+    "699TopSpeed": 165,
+    "6990to60": 4.3,
+    "699Handling": 90
+}

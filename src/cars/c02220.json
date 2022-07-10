@@ -1,0 +1,54 @@
+{
+    "rq": 50,
+    "make": ["Range Rover", "Land Rover"],
+    "model": "Velar D200 R-Dynamic",
+    "modelYear": 2021,
+    "country": "GB",
+    "topSpeed": 130,
+    "0to60": 7.7,
+    "handling": 72,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1928,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 47.24,
+    "ola": 70.13,
+    "description": "Card by Macan.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/949494372137857104/Range_Rover_Velar_D200_R-Dynamic_21.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/949495439311372309/Range_Rover_Velar_D200_R-Dynamic_21_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/949495466020720731/Range_Rover_Velar_D200_R-Dynamic_21_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/949495499159924736/Range_Rover_Velar_D200_R-Dynamic_21_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/949495583796789318/Range_Rover_Velar_D200_R-Dynamic_21_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/949495559025221632/Range_Rover_Velar_D200_R-Dynamic_21_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/949495529048535070/Range_Rover_Velar_D200_R-Dynamic_21_699.png",
+
+    "333TopSpeed": 134,
+    "3330to60": 7.3,
+    "333Handling": 74,
+
+    "666TopSpeed": 138,
+    "6660to60": 6.9,
+    "666Handling": 77,
+
+    "996TopSpeed": 142,
+    "9960to60": 6.5,
+    "996Handling": 77,
+
+    "969TopSpeed": 142,
+    "9690to60": 6.9,
+    "969Handling": 80,
+
+    "699TopSpeed": 138,
+    "6990to60": 6.5,
+    "699Handling": 80
+}

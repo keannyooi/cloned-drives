@@ -1,0 +1,54 @@
+{
+    "rq": 59,
+    "make": "BMW",
+    "model": "Z4 M Roadster",
+    "modelYear": 2006,
+    "country": "DE",
+    "topSpeed": 157,
+    "0to60": 4.9,
+    "handling": 84,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1450,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.78,
+    "ola": 81.22,
+    "description": "Card by Keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/975650702774898698/bmw_z4_m_roadster.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/975650242055766066/z4_m_roadster_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/975650262817574912/z4_m_roadster_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/975650279204745276/z4_m_roadster_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/975650318706675802/z4_m_roadster_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/975650306719367218/z4_m_roadster_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/975650292978827274/z4_m_roadster_699.jpg",
+
+    "333TopSpeed": 160,
+    "3330to60": 4.7,
+    "333Handling": 87,
+
+    "666TopSpeed": 164,
+    "6660to60": 4.4,
+    "666Handling": 90,
+
+    "996TopSpeed": 167,
+    "9960to60": 4.2,
+    "996Handling": 90,
+
+    "969TopSpeed": 167,
+    "9690to60": 4.4,
+    "969Handling": 93,
+
+    "699TopSpeed": 164,
+    "6990to60": 4.2,
+    "699Handling": 93
+}

@@ -1,0 +1,54 @@
+{
+    "rq": 80,
+    "make": "Lotus",
+    "model": "Exige Cup 380",
+    "modelYear": 2017,
+    "country": "GB",
+    "topSpeed": 175,
+    "0to60": 3.6,
+    "handling": 92,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Track Day", "Eargasm", "Unique"],
+    "isPrize": true,
+
+    "weight": 1057,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 73.47,
+    "ola": 66.67,
+    "description": "Card by Tom.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/950083573153681429/Lotus_Exige_Cup_380_2017.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/950346173472993310/C380_111.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/950346181328900147/C380_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/950346184847925248/C380_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/950346199632871444/C380_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/950346196197732352/C380_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/950346191567212574/C380_699.jpg",
+
+    "333TopSpeed": 178,
+    "3330to60": 3.4,
+    "333Handling": 95,
+
+    "666TopSpeed": 181,
+    "6660to60": 3.2,
+    "666Handling": 98,
+
+    "996TopSpeed": 184,
+    "9960to60": 3.1,
+    "996Handling": 98,
+
+    "969TopSpeed": 183,
+    "9690to60": 3.2,
+    "969Handling": 102,
+
+    "699TopSpeed": 181,
+    "6990to60": 3.1,
+    "699Handling": 102
+}

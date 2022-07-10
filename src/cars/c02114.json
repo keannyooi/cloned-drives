@@ -1,0 +1,54 @@
+{
+    "rq": 78,
+    "make": "BMW",
+    "model": "M3 Competition",
+    "modelYear": 2021,
+    "country": "DE",
+    "topSpeed": 181,
+    "0to60": 3.6,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1730,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 90,
+    "ola": 88.89,
+    "description": "It's not that bad please. Card by Based.",
+
+    "card": "https://cdn.discordapp.com/attachments/731698267573977099/947420046521696256/BMW_M3_Competition.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/947552543649726524/BMW_M3_Competition_Stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/947552562977058856/BMW_M3_Competition_1_Star.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/947552581545246770/BMW_M3_Competition_2_Star.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/947552648155004938/BMW_M3_Competition_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/947552627082821632/BMW_M3_Competition_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/947552608585928764/BMW_M3_Competition_699.png",
+
+    "333TopSpeed": 184,
+    "3330to60": 3.4,
+    "333Handling": 94,
+
+    "666TopSpeed": 187,
+    "6660to60": 3.2,
+    "666Handling": 97,
+
+    "996TopSpeed": 190,
+    "9960to60": 3.1,
+    "996Handling": 97,
+
+    "969TopSpeed": 190,
+    "9690to60": 3.2,
+    "969Handling": 101,
+
+    "699TopSpeed": 187,
+    "6990to60": 3.1,
+    "699Handling": 101
+}

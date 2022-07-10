@@ -1,0 +1,54 @@
+{
+    "rq": 57,
+    "make": ["RENNtech", "Mercedes-Benz"],
+    "model": "600E",
+    "modelYear": 1992,
+    "country": "US",
+    "topSpeed": 155,
+    "0to60": 4.9,
+    "handling": 71,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner"],
+    "isPrize": false,
+
+    "weight": 1682,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 70,
+    "ola": 77.55,
+    "description": "Card by Havvy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/827187693032964136/RENNtech600E.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/827187830291300372/000_renn500e.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/827187833356681216/111_renn500e.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/827187838670995476/222_renn500e.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/827187850483073044/332_renn500e.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/827187846930104400/323_renn500e.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/827187841750663168/233_renn500e.png",
+
+    "333TopSpeed": 158,
+    "3330to60": 4.7,
+    "333Handling": 73,
+
+    "666TopSpeed": 162,
+    "6660to60": 4.4,
+    "666Handling": 76,
+
+    "996TopSpeed": 165,
+    "9960to60": 4.2,
+    "996Handling": 76,
+
+    "969TopSpeed": 165,
+    "9690to60": 4.4,
+    "969Handling": 79,
+
+    "699TopSpeed": 162,
+    "6990to60": 4.2,
+    "699Handling": 79
+}

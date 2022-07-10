@@ -1,0 +1,56 @@
+{
+    "rq": 92,
+    "make": "Porsche",
+    "model": "918 Spyder RSR Concept",
+    "modelYear": 2011,
+    "country": "DE",
+    "topSpeed": 199,
+    "0to60": 3.0,
+    "handling": 96,
+    "driveType": "4WD",
+    "tyreType": "Slick",
+    "tags": ["Hypercar", "Eco-Friendly"],
+    "isPrize": true,
+
+
+    "weight": 1490,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Hybrid",
+    "mra": 107.14,
+    "ola": 93.33,
+    "description": "A wing bigger than your mom. Oh and sidepipes, the two ingredients for a pure-blooded race car. Card by c6",
+
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/987362303580196874/porsche_918_rsr_concept.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/987362709853077535/porsche_918_rsr_concept_000.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/987362726949032037/porsche_918_rsr_concept_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/987362738152034344/porsche_918_rsr_concept_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/987362784931094638/porsche_918_rsr_concept_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/987362770246840330/porsche_918_rsr_concept_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/987362754237190225/porsche_918_rsr_concept_699.png",
+
+    "333TopSpeed": 202,
+    "3330to60": 2.9,
+    "333Handling": 99,
+
+    "666TopSpeed": 204,
+    "6660to60": 2.7, 
+    "666Handling": 102,
+
+    "996TopSpeed": 207,
+    "9960to60": 2.6,
+    "996Handling": 102,
+
+    "969TopSpeed": 207,
+    "9690to60": 2.7,
+    "969Handling": 107,
+
+    "699TopSpeed": 204,
+    "6990to60": 2.6,
+    "699Handling": 107
+}

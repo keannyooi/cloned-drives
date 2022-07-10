@@ -1,0 +1,54 @@
+{
+    "rq": 93,
+    "make": ["Manhart", "BMW"],
+    "model": "MH5 GTR",
+    "modelYear": 2021,
+    "country": "DE",
+    "topSpeed": 205,
+    "0to60": 2.7,
+    "handling": 92,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Tuner", "Super Sedan"],
+    "isPrize": false,
+
+    "weight": 1830,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 93.1,
+    "ola": 84.44,
+    "description": "Card by Bnuuy.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/976510086061117520/ManhartMH5GTR.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/976510619526258708/MH5GTR.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/976510624685256764/MH5GTR1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/976510632910290975/MH5GTR2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/976510657044312144/MH5GTR996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/976510649398095882/MH5GTR969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/976510640787161139/MH5GTR699.png",
+
+    "333TopSpeed": 208,
+    "3330to60": 2.6,
+    "333Handling": 95,
+
+    "666TopSpeed": 210,
+    "6660to60": 2.4,
+    "666Handling": 98,
+
+    "996TopSpeed": 213,
+    "9960to60": 2.3,
+    "996Handling": 98,
+
+    "969TopSpeed": 213,
+    "9690to60": 2.4,
+    "969Handling": 102,
+
+    "699TopSpeed": 210,
+    "6990to60": 2.3,
+    "699Handling": 102
+}

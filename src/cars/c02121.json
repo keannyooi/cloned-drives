@@ -1,0 +1,54 @@
+{
+    "rq": 52,
+    "make": "BMW",
+    "model": "Z4 3.0si Coupe",
+    "modelYear": 2006,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 5.6,
+    "handling": 83,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1395,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.77,
+    "ola": 67.32,
+    "description": "Card by Keanny.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/975650631744389170/bmw_z4_3.0si_coupe.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/975648509070016543/z4_3.0si_coupe_000.jpg",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/975648523901079562/z4_3.0si_coupe_333.jpg",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/975648538501464084/z4_3.0si_coupe_666.jpg",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/975648586786279525/z4_3.0si_coupe_996.jpg",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/975648569212141578/z4_3.0si_coupe_969.jpg",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/975648554976702514/z4_3.0si_coupe_699.jpg",
+
+    "333TopSpeed": 158,
+    "3330to60": 5.3,
+    "333Handling": 86,
+
+    "666TopSpeed": 162,
+    "6660to60": 5.0,
+    "666Handling": 88,
+
+    "996TopSpeed": 165,
+    "9960to60": 4.8,
+    "996Handling": 88,
+
+    "969TopSpeed": 165,
+    "9690to60": 5.0,
+    "969Handling": 92,
+
+    "699TopSpeed": 162,
+    "6990to60": 4.8,
+    "699Handling": 92
+}

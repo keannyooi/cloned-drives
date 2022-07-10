@@ -1,0 +1,54 @@
+{
+    "rq": 70,
+    "make": ["ABT", "Audi"],
+    "model": "Q8 50 TDI quattro",
+    "modelYear": 2018,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 5.8,
+    "handling": 78,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Tuner"],
+    "isPrize": false,
+
+    "weight": 2145,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 52.73,
+    "ola": 68.97,
+    "description": "Card by Macan.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/944933829112643594/Q8_50_TDI_quattro_18.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/944933913531404288/stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/944933933844398151/333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/944933956049043476/666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/944934024084848640/996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/944934001037160488/969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/944933976999620658/699.png",
+
+    "333TopSpeed": 158,
+    "3330to60": 5.5,
+    "333Handling": 81,
+
+    "666TopSpeed": 162,
+    "6660to60": 5.2,
+    "666Handling": 83,
+
+    "996TopSpeed": 165,
+    "9960to60": 4.9,
+    "996Handling": 83,
+
+    "969TopSpeed": 165,
+    "9690to60": 5.2,
+    "969Handling": 87,
+
+    "699TopSpeed": 162,
+    "6990to60": 4.9,
+    "699Handling": 87
+}

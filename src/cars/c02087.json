@@ -1,0 +1,54 @@
+{
+    "rq": 58,
+    "make": "Acura",
+    "model": "TL SH-AWD",
+    "modelYear": 2009,
+    "country": "US",
+    "topSpeed": 125,
+    "0to60": 6.4,
+    "handling": 82,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1808,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 68.09,
+    "ola": 68.75,
+    "description": "Card by Based.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/987711201742053406/TLSHAWDBased.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/987711265709387796/09TLSHAWD.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/987711273426878545/09TLSHAWD1.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/987711280397819914/09TLSHAWD2.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/987711307031666699/09TLSHAWD996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/987711298005516308/09TLSHAWD969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/987711290090876928/09TLSHAWD699.png",
+
+    "333TopSpeed": 129,
+    "3330to60": 6.1,
+    "333Handling": 85,
+
+    "666TopSpeed": 133,
+    "6660to60": 5.8,
+    "666Handling": 87,
+
+    "996TopSpeed": 137,
+    "9960to60": 5.4,
+    "996Handling": 87,
+
+    "969TopSpeed": 137,
+    "9690to60": 5.8,
+    "969Handling": 91,
+
+    "699TopSpeed": 133,
+    "6990to60": 5.4,
+    "699Handling": 91
+}

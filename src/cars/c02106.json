@@ -1,0 +1,54 @@
+{
+    "rq": 32,
+    "make": "BMW",
+    "model": "325e",
+    "modelYear": 1984,
+    "country": "DE",
+    "topSpeed": 122,
+    "0to60": 9.0,
+    "handling": 71,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1160,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 31.22,
+    "ola": 55.56,
+    "description": "Card by Olimato.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/945197533326622730/325e.png",
+    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/945197606659842058/325e_stock.png",
+    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/945197622644330537/325e_333.png",
+    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/945197633704689734/325e_666.png",
+    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/945197667187839056/325e_996.png",
+    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/945197655447973919/325e_969.png",
+    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/945197645490683904/325e_699.png",
+
+    "333TopSpeed": 126,
+    "3330to60": 8.6,
+    "333Handling": 73,
+
+    "666TopSpeed": 131,
+    "6660to60": 8.1,
+    "666Handling": 76,
+
+    "996TopSpeed": 135,
+    "9960to60": 7.7,
+    "996Handling": 76,
+
+    "969TopSpeed": 135,
+    "9690to60": 8.1,
+    "969Handling": 79,
+
+    "699TopSpeed": 131,
+    "6990to60": 7.7,
+    "699Handling": 79
+}
