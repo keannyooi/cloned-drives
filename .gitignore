@@ -1,5 +1,6 @@
 
 .env
-src/config/node_modules/
+.vscode/
+node_modules/
 dump/
 mongodump.exe

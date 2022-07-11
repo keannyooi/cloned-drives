@@ -7,10 +7,12 @@ const { readdirSync } = require("fs");
 const { Collection } = require("discord.js");
 const { connect } = require("mongoose");
 const { DateTime, Interval } = require("luxon");
+const { schedule } = require("node-cron");
 const { ErrorMessage, InfoMessage, BotError } = require("./src/util/classes/classes.js");
 const { adminRoleID, eventMakerRoleID, testerRoleID } = require("./src/util/consts/consts.js");
 const endEvent = require("./src/util/functions/endEvent.js");
 const endOffer = require("./src/util/functions/endOffer.js");
+const regenDealership = require("./src/util/functions/regenDealership.js");
 const profileModel = require("./src/models/profileSchema.js");
 const eventModel = require("./src/models/eventSchema.js");
 const offerModel = require("./src/models/offerSchema.js");
@@ -95,17 +97,6 @@ setInterval(async () => {
             await endOffer(offer);
         }
     }
-    // const challenge = await bot.db.get("challenge");
-    // if (challenge.timeLeft !== "unlimited" && challenge.isActive === true) {
-    // 	if (Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(challenge.deadline)).invalid !== null) {
-    // 		bot.channels.cache.get("798776756952629298").send(`**The ${challenge.name} challenge has officially finished. Thanks for playing!**`);
-    // 		challenge.isActve = false;
-    // 		challenge.players = {};
-    // 		challenge.timeLeft = "unlimited";
-    // 		challenge.deadline = "idk";
-    // 	}
-    // }
-    // await bot.db.set("challenge", challenge);
 
     const playerDatum = await profileModel.find({ "settings.senddailynotifs": true, "dailyStats.notifReceived": false });
     for (let { userID, dailyStats } of playerDatum) {
@@ -127,6 +118,20 @@ setInterval(async () => {
         }
     }
 }, 180000);
+
+schedule("59 23 * * *", async () => {
+    try {
+        await regenDealership();
+    }
+    catch (error) {
+        console.log(error.stack);
+        const errorReport = new BotError({
+            stack: error.stack,
+            unknownSource: true
+        });
+        return errorReport.sendReport();
+    }
+});
 
 async function processCommand(message) {
     if (message.webhookId !== null || !bot.homeGuild) return; //webhooks not allowed

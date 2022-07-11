@@ -37,6 +37,9 @@ async function search(message, query, searchList, type, currentMessage) {
             case "car":
                 let currentCar = require(`../../cars/${item}`);
                 return carNameGen({ currentCar, removePrizeTag: true });
+            case "dealership":
+                let car = require(`../../cars/${item.carID}`);
+                return carNameGen({ currentCar: car, removePrizeTag: true });
             case "pack":
             case "track":
                 let details = require(`../../${type}s/${item}`);

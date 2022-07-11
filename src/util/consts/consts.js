@@ -15,6 +15,16 @@ const starterGarage = [
     { carID: "c00943", upgrades: carSave },
     { carID: "c00335", upgrades: carSave }
 ];
+const cardPlacement = [
+    { x: 7, y: 3 },
+    { x: 178, y: 3 },
+    { x: 349, y: 3 },
+    { x: 520, y: 3 },
+    { x: 7, y: 143 },
+    { x: 178, y: 143 },
+    { x: 349, y: 143 },
+    { x: 520, y: 143 }
+];
 
 const defaultWaitTime = 60000;
 const defaultChoiceTime = 10000;
@@ -130,6 +140,7 @@ const testerRoleID = "915846116656959538";
 const bugReportsChannelID = "750304569422250064";
 const currentEventsChannelID = "955467202138620014";
 const currentOffersChannelID = "969786587191849011";
+const dealershipChannelID = "995938671209500702";
 
 const moneyEmojiID = "726017235826770021";
 const fuseEmojiID = "726018658635218955";
@@ -150,6 +161,7 @@ const failedToLoadImageLink = "https://cdn.discordapp.com/attachments/7169174048
 module.exports = {
     carSave,
     starterGarage,
+    cardPlacement,
     defaultWaitTime,
     defaultQTETime,
     defaultChoiceTime,
@@ -164,6 +176,7 @@ module.exports = {
     bugReportsChannelID,
     currentEventsChannelID,
     currentOffersChannelID,
+    dealershipChannelID,
     fuseEmojiID,
     trophyEmojiID,
     glofEmojiID,
