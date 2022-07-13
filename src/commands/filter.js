@@ -12,7 +12,7 @@ module.exports = {
         "<isprize / isstock / isupgraded / ismaxed / isowned> <true / false>",
         "<remove / disable> <make / country / tags / tyretype> <corresponding value>",
         "<remove / disable> <make / country / tags / tyretype> all",
-        "<remove / disable> <rq / modelyear / seatcount / drivetype / tyretype / gc / bodystyle / enginepos / fueltype / isprize / isstock / isupgraded / ismaxed / isowned / search>",
+        "<remove / disable> <rq / modelyear / seatcount / drivetype / tyretype / gc / bodystyle / enginepos / fueltype / abs / tcs / isprize / isstock / isupgraded / ismaxed / isowned / search>",
         "<remove / disable> all"
     ],
     args: 0,

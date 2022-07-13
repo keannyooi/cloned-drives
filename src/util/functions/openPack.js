@@ -6,7 +6,8 @@ const { InfoMessage, ErrorMessage } = require("../classes/classes.js");
 const carNameGen = require("./carNameGen.js");
 const sortCars = require("./sortCars.js");
 
-function openPack(message, currentPack, currentMessage) {
+function openPack(args) {
+    const { message, currentPack, currentMessage, test } = args;
     const cardFilter = currentPack["filter"];
     let rand, check, rqStart, rqEnd, pulledCards = "";
     let currentCard = require(`../../cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
@@ -93,7 +94,8 @@ function openPack(message, currentPack, currentMessage) {
                 author: message.author,
                 image: currentCar["card"],
                 thumbnail: currentPack["pack"],
-                fields: [{ name: "Cards Pulled", value: pulledCards }]
+                fields: [{ name: "Cards Pulled", value: pulledCards }],
+                footer: test ? "This is a test pack, meaning that these cars won't be added into your garage and you won't be charged with money." : null
             });
             i === 4 ? packScreen.sendMessage({ currentMessage }) : packScreen.sendMessage();
             pulledCards = "";

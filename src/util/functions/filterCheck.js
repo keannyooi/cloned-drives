@@ -65,6 +65,8 @@ function filterCheck(args) {
             case "boolean":
                 switch (key) {
                     case "isPrize":
+                    case "abs":
+                    case "tcs":
                         if (currentCar[key] !== value) {
                             passed = false;
                         }

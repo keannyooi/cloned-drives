@@ -78,7 +78,7 @@ module.exports = {
                             break;
                         case "pack":
                             let currentPack = require(`../packs/${value}`);
-                            let addedCars = openPack(message, currentPack);
+                            let addedCars = openPack({ message, currentPack });
                             if (!Array.isArray(addedCars)) return;
 
                             playerData.garage = addCars(playerData.garage, addedCars);

@@ -35,11 +35,10 @@ module.exports = {
 
         const filter = (button) => button.user.id === message.author.id;
         const track = require(`../tracks/${trackID}.json`);
-        const [playerCar, playerList] = createCar(hand);
-        const [opponentCar, opponentList] = createCar(opponent);
+        const [playerCar, playerList] = createCar(hand, settings.unitpreference, settings.hideownstats);
+        const [opponentCar, opponentList] = createCar(opponent, settings.unitpreference);
         const { yse, nop, skip } = getButtons("rr", settings.buttonstyle);
         const row = new MessageActionRow({ components: [yse, nop, skip] });
-
         const intermission = new InfoMessage({
             channel: message.channel,
             title: "Ready to Play?",

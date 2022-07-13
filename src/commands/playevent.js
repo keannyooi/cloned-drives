@@ -24,6 +24,16 @@ module.exports = {
     cooldown: 10,
     description: "Participates in an event by doing a race.",
     async execute(message, args) {
+        if (message.channel.type !== "DM") {
+            const errorMessage = new ErrorMessage({
+                channel: message.channel,
+                title: "Sorry, this command can only be used in DMs.",
+                desc: "This is to avoid people from leaking event solutions and, as a result, making events trivial.",
+                author: message.author
+            });
+            return errorMessage.sendMessage();
+        }
+
         const events = await eventModel.find();
         const { hand, unclaimedRewards, settings } = await profileModel.findOne({ userID: message.author.id });
         if (hand.carID === "") {
@@ -68,8 +78,8 @@ module.exports = {
 
             if (event.isActive || guildMember.roles.cache.has(eventMakerRoleID)) {
                 const track = require(`../tracks/${event.roster[round - 1].track}.json`);
-                const [playerCar, playerList] = createCar(hand);
-                const [opponentCar, opponentList] = createCar(event.roster[round - 1]);
+                const [playerCar, playerList] = createCar(hand, settings.unitpreference, settings.hideownstats);
+                const [opponentCar, opponentList] = createCar(event.roster[round - 1], settings.unitpreference);
 
                 const intermission = new InfoMessage({
                     channel: message.channel,

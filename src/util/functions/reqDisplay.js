@@ -2,7 +2,7 @@
 
 const { readdirSync } = require("fs");
 const carFiles = readdirSync("./src/cars").filter(file => file.endsWith(".json"));
-const order = ["rq", "modelYear", "country", "enginePos", "driveType", "gc", "tyreType", "seatCount", "fuelType", "bodyStyle", "tags", "isOwned", "isStock", "isMaxed", "isPrize", "make", "search"];
+const order = ["rq", "modelYear", "country", "enginePos", "driveType", "gc", "tyreType", "seatCount", "fuelType", "bodyStyle", "abs", "tcs", "tags", "isOwned", "isStock", "isMaxed", "isPrize", "make", "search"];
 
 function reqDisplay(reqs, filterLogic) {
     const action = {
@@ -29,6 +29,8 @@ function reqDisplay(reqs, filterLogic) {
         fuelType: fuel => `${fuel[0].toUpperCase() + fuel.slice(1, fuel.length)} `,
         bodyStyle: bodyTypes => `${bodyTypes.join(filterLogic ? " or " : " and ").split(" ").map(i => i[0].toUpperCase() + i.slice(1, i.length)).join(" ")} `,
         tyreType: tyreType => `${tyreType.split("-").map(i => i[0].toUpperCase() + i.slice(1, i.length)).join("-")}-Tyre `,
+        abs: abs => abs ? "ABS-inclusive " : "ABS-less ",
+        tcs: tcs => tcs ? "TCS-inclusive " : "TCS-less ",
         tags: tags => `${tags.join(filterLogic ? " or " : " and ").split(" ").map(i => i[0].toUpperCase() + i.slice(1, i.length)).join(" ")} `,
         isPrize: isPrize => `${isPrize === false ? "Non-Prize" : "Prize"} `,
         isStock: isStock => `${isStock === false ? "Non-Stock" : "Stock"} `,

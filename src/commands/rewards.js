@@ -43,8 +43,8 @@ module.exports = {
                         line = `Received **1x ${carNameGen({ currentCar, rarity: true, upgrade: reward.car.upgrade })}** from **${origin}**\n`;
                         break;
                     case "pack":
-                        let pack = require(`../packs/${reward.pack}.json`);
-                        let addedCars = await openPack(message, pack);
+                        let currentPack = require(`../packs/${reward.pack}.json`);
+                        let addedCars = await openPack({ message, currentPack });
                         if (!Array.isArray(addedCars)) return;
 
                         playerData.garage = addCars(playerData.garage, addedCars);

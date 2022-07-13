@@ -29,18 +29,36 @@ module.exports = {
             .then(async (response) => {
                 if (!Array.isArray(response)) return;
                 let [result, currentMessage] = response;
-                const { money, garage } = await profileModel.findOne({ userID: message.author.id });
+                let { money, garage } = await profileModel.findOne({ userID: message.author.id });
                 const moneyEmoji = bot.emojis.cache.get(moneyEmojiID);
                 let currentPack = require(`../packs/${result}`);
                 if (money >= currentPack["price"]) {
-                    let addedCars = openPack(message, currentPack, currentMessage);
+                    let addedCars = openPack({ message, currentPack, currentMessage });
                     if (!Array.isArray(addedCars)) return;
+                    const oldGarage = JSON.parse(JSON.stringify(garage));
+                    garage = addCars(garage, addedCars);
                     await profileModel.updateOne({ userID: message.author.id }, {
                         "$inc": {
                             money: currentPack["price"] * -1
                         },
-                        garage: addCars(garage, addedCars)
+                        garage
                     });
+
+                    const changes = [];
+                    for (let car of garage) {
+                        let hasCar = oldGarage.find(c => c.carID === car.carID);
+                        if (!hasCar || hasCar.upgrades["000"] < car.upgrades["000"]) {
+                            for (let i = 0; i < car.upgrades["000"] - (hasCar ? hasCar.upgrades["000"] : 0); i++) {
+                                changes.push(car.carID); 
+                            }
+                        }
+                    }
+                    console.log(changes);
+                    console.log(`${changes.length} cars added into garage`);
+                    console.log("------------------------------------------------");
+                    if (changes.length < addedCars) {
+                        await message.channel.send("**Error, one or more cars pulled didn't save properly.**");
+                    }
                 }
                 else {
                     const errorMessage = new ErrorMessage({

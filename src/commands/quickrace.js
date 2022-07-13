@@ -23,8 +23,8 @@ module.exports = {
     cooldown: 10,
     description: "Does a quick race where you can choose the trackset and the opponent car. Great for testing out cars.",
     async execute(message, args) {
-        const playerData = await profileModel.findOne({ userID: message.author.id });
-        if (playerData.hand.carID === "") {
+        const { hand, settings } = await profileModel.findOne({ userID: message.author.id });
+        if (hand.carID === "") {
             return handMissingError(message);
         }
 
@@ -49,7 +49,7 @@ module.exports = {
         async function chooseOpponent(track, currentMessage) {
             const filter = response => response.author.id === message.author.id;
             const currentTrack = require(`../tracks/${track}`);
-            const handCar = require(`../cars/${playerData.hand.carID}`);
+            const handCar = require(`../cars/${hand.carID}`);
             const chooseMessage = new InfoMessage({
                 channel: message.channel,
                 title: `${currentTrack["trackName"]} has been chosen!`,
@@ -57,7 +57,7 @@ module.exports = {
                 author: message.author,
                 image: currentTrack["background"],
                 thumbnail: currentTrack["map"],
-                fields: [{ name: "Your Hand", value: carNameGen({ currentCar: handCar, upgrade: playerData.hand.upgrade, rarity: true }) }],
+                fields: [{ name: "Your Hand", value: carNameGen({ currentCar: handCar, upgrade: hand.upgrade, rarity: true }) }],
                 footer: `You have ${defaultWaitTime / 1000} seconds to consider.`
             });
             currentMessage = await chooseMessage.sendMessage({ currentMessage, preserve: true });
@@ -123,8 +123,8 @@ module.exports = {
                 .then(async response => {
                     if (!Array.isArray(response)) return;
                     let [upgrade, currentMessage] = response;
-                    const [playerCar, playerList] = createCar(playerData.hand, playerData.settings.unitpreference);
-                    const [opponentCar, opponentList] = createCar({ carID: opponent.slice(0, 6), upgrade }, playerData.settings.unitpreference);
+                    const [playerCar, playerList] = createCar(hand, settings.unitpreference, settings.hideownstats);
+                    const [opponentCar, opponentList] = createCar({ carID: opponent.slice(0, 6), upgrade }, settings.unitpreference);
                     const intermission = new InfoMessage({
                         channel: message.channel,
                         title: "Ready to Play!",
@@ -138,7 +138,7 @@ module.exports = {
                     });
 
                     await intermission.sendMessage({ currentMessage, preserve: true });
-                    await race(message, playerCar, opponentCar, currentTrack, playerData.settings.disablegraphics);
+                    await race(message, playerCar, opponentCar, currentTrack, settings.disablegraphics);
                     return bot.deleteID(message.author.id);
                 });
         }

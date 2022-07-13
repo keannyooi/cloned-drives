@@ -25,8 +25,7 @@ module.exports = {
                 if (!Array.isArray(response)) return;
                 let [result, currentMessage] = response;
                 let currentPack = require(`../packs/${result}`);
-                openPack(message, currentPack, currentMessage);
-                return message.channel.send("**Note: Since you opened this pack using `cd-testpack`, these cars won't be added into your garage and you won't be charged with money.**");
+                return openPack({ message, currentPack, currentMessage, test: true });
             })
             .catch(error => {
                 throw error;

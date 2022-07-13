@@ -46,7 +46,7 @@ module.exports = {
                 const currentEventsChannel = await bot.homeGuild.channels.fetch(currentEventsChannelID);
                 event.isActive = true;
                 if (event.deadline.length < 9) {
-                    event.deadline = DateTime.now().plus({ days: parseInt(event.deadline[0]) }).toISO();
+                    event.deadline = DateTime.now().plus({ days: parseInt(event.deadline) }).toISO();
                 }
 
                 registerFont("RobotoCondensed-Bold.ttf", { family: "Roboto Condensed" });

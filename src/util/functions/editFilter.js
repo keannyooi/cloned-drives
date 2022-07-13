@@ -119,6 +119,8 @@ function editFilter(message, filter, args) {
                 fields: [{ name: "Current Value", value: `\`${filter[criteria]}\`` }]
             });
             break;
+        case "abs":
+        case "tcs":
         case "isPrize":
         case "isStock":
         case "isMaxed":

@@ -119,6 +119,13 @@ setInterval(async () => {
     }
 }, 180000);
 
+
+// setInterval(async () => {
+//     let channel = await bot.homeGuild.channels.fetch("715771423779455077");
+//     let aMessage = await channel.messages.fetch("996357896692584468");
+//     await bot.commands.get("openpack").execute(aMessage, ["elite"]);
+// }, 5000);
+
 schedule("59 23 * * *", async () => {
     try {
         await regenDealership();

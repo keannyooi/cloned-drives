@@ -105,7 +105,7 @@ async function regenDealership() {
 
     const dealershipChannel = await bot.homeGuild.channels.fetch(dealershipChannelID);
     return dealershipChannel.send({
-        content: "The dealership has refreshed!",
+        content: "**The dealership has refreshed!**",
         files: [attachment]
     });
 }

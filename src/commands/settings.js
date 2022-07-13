@@ -89,6 +89,12 @@ module.exports = {
                                                 value: `Lets you choose the button style of your preference. The \`default\` style gives a more modern look with Discord's new embed buttons while the \`classic\` style resembles old-school emoji buttons.
                                                 **Value:** \`${settings.buttonstyle ?? "default"}\``,
                                                 inline: true
+                                            },
+                                            {
+                                                name: "Hide Own Car Stats Before Races (ID: \`hideownstats\`)",
+                                                value: `Having this set to \`true\` hides all specifications of the car in your hand before a race. Useful for removing clutter if you're playing on mobile.
+                                                **Value:** \`${settings.hideownstats ?? false}\``,
+                                                inline: true
                                             }
                                         ]
                                     });
@@ -189,6 +195,7 @@ module.exports = {
                 case "disablecarlistfilter":
                 case "disablegaragefilter":
                 case "hidebmcars":
+                case "hideownstats":
                     if (argument === "true") {
                         if (setting.startsWith("send")) {
                             let msg = "";
