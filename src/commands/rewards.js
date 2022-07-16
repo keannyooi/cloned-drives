@@ -48,7 +48,7 @@ module.exports = {
                         if (!Array.isArray(addedCars)) return;
 
                         playerData.garage = addCars(playerData.garage, addedCars);
-                        line = `Received **1x ${pack["packName"]}** from **${origin}**\n`;
+                        line = `Received **1x ${currentPack["packName"]}** from **${origin}**\n`;
                         break;
                     default:
                         break;

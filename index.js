@@ -9,13 +9,14 @@ const { connect } = require("mongoose");
 const { DateTime, Interval } = require("luxon");
 const { schedule } = require("node-cron");
 const { ErrorMessage, InfoMessage, BotError } = require("./src/util/classes/classes.js");
-const { adminRoleID, eventMakerRoleID, testerRoleID } = require("./src/util/consts/consts.js");
+const { adminRoleID, eventMakerRoleID, testerRoleID, lbWhitelist } = require("./src/util/consts/consts.js");
 const endEvent = require("./src/util/functions/endEvent.js");
 const endOffer = require("./src/util/functions/endOffer.js");
 const regenDealership = require("./src/util/functions/regenDealership.js");
 const profileModel = require("./src/models/profileSchema.js");
 const eventModel = require("./src/models/eventSchema.js");
 const offerModel = require("./src/models/offerSchema.js");
+const serverStatModel = require("./src/models/serverStatSchema.js");
 const prefix = bot.devMode ? process.env.DEV_PREFIX : process.env.BOT_PREFIX;
 const token = bot.devMode ? process.env.DEV_TOKEN : process.env.BOT_TOKEN;
 const commandFiles = readdirSync("./src/commands").filter(file => file.endsWith(".js"));
@@ -138,6 +139,24 @@ schedule("59 23 * * *", async () => {
         });
         return errorReport.sendReport();
     }
+
+    const playerDatum = await profileModel.find({});
+    const leaderboards = [];
+    for (let { userID, money, fuseTokens, trophies, rrStats, dailyStats } of playerDatum) {
+        let user = await bot.homeGuild.members.fetch(userID)
+            .catch(() => "unable to find user, next");
+        if (typeof user !== "string" && !lbWhitelist.find(id => id === userID)) {
+            leaderboards.push({
+                user: user.user.tag,
+                money,
+                fuseTokens,
+                trophies,
+                rrStreak: rrStats.highestStreak,
+                dailyStreak: dailyStats.highestStreak
+            });
+        }
+    }
+    await serverStatModel.updateOne({}, { leaderboards });
 });
 
 async function processCommand(message) {

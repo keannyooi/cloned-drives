@@ -48,7 +48,7 @@ module.exports = {
                     currentPack = require(`../packs/${randomPack}`);
                 }
                 
-                let pulledCars = openPack({ message, currentPack });
+                let pulledCars = await openPack({ message, currentPack });
                 if (!Array.isArray(pulledCars)) {
                     return bot.deleteID(message.author.id);
                 }
@@ -66,7 +66,7 @@ module.exports = {
                     packName = currentPack.packName.toLowerCase();
                 }
 
-                let pulledCars = openPack({ message, currentPack });
+                let pulledCars = await openPack({ message, currentPack });
                 if (!Array.isArray(pulledCars)) {
                     return bot.deleteID(message.author.id);
                 }

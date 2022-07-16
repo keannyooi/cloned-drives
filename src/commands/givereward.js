@@ -116,12 +116,12 @@ module.exports = {
                         });
                     break;
                 default:
+                    operationFailed = true;
                     const errorMessage = new ErrorMessage({
                         channel: message.channel,
                         title: `Error, I don't know the kind of thing you want to gift to ${user.username}.`,
                         desc: "FYI, you can either gift a `pack` or an `offer`.",
                         author: message.author,
-                        image: currentPack["pack"]
                     }).displayClosest(args[1].toLowerCase());
                     await errorMessage.sendMessage({ currentMessage });
             }

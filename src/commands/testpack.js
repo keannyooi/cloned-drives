@@ -1,5 +1,6 @@
 "use strict";
 
+const bot = require("../config/config.js");
 const { readdirSync } = require("fs");
 const packFiles = readdirSync("./src/packs").filter(file => file.endsWith(".json"));
 const search = require("../util/functions/search.js");
@@ -16,7 +17,7 @@ module.exports = {
         let query = args.map(i => i.toLowerCase());
         if (args[0].toLowerCase() === "random") {
             let currentPack = require(`../packs/${packFiles[Math.floor(Math.random() * packFiles.length)]}`);
-            openPack(message, currentPack);
+            openPack({ message, currentPack });
             return message.channel.send("**Note: Since you opened this pack using `cd-testpack`, these cars won't be added into your garage and you won't be charged with money.**");
         }
 
@@ -25,7 +26,8 @@ module.exports = {
                 if (!Array.isArray(response)) return;
                 let [result, currentMessage] = response;
                 let currentPack = require(`../packs/${result}`);
-                return openPack({ message, currentPack, currentMessage, test: true });
+                await openPack({ message, currentPack, currentMessage, test: true });
+                return bot.deleteID(this.authorID);
             })
             .catch(error => {
                 throw error;

@@ -3,19 +3,22 @@
 const bot = require("../config/config.js");
 const { ErrorMessage, InfoMessage } = require("../util/classes/classes.js");
 const { defaultPageLimit } = require("../util/consts/consts.js");
+const listUpdate = require("../util/functions/listUpdate.js");
 const profileModel = require("../models/profileSchema.js");
+const serverStatModel = require("../models/serverStatSchema.js");
 
 module.exports = {
     name: "leaderboards",
     aliases: ["lb", "leader", "leaderboard", "lead"],
-    usage: ["<criteria>", "<> [page number]"],
+    usage: ["<criteria>", "<criteria> <page number>"],
     args: 1,
     category: "Testing",
     description: "Shows the leaderboards.",
     async execute(message, args) {
         const { settings } = await profileModel.findOne({ userID: message.author.id });
-        const lb = [];
+        let { leaderboards } = await serverStatModel.findOne({});
         let emoji, page, criteria;
+        let compareValue = args[0].toLowerCase().replace("tokens", "Tokens").replace("streak", "Streak");
         if (!args[1]) {
             page = 1;
         }
@@ -23,47 +26,26 @@ module.exports = {
             page = parseInt(args[1]);
         }
 
-        switch (args[0].toLowerCase()) {
+        switch (compareValue) {
             case "money":
                 criteria = "Money";
                 emoji = bot.emojis.cache.get("726017235826770021");
-                for await (let playerData of profileModel.find().lean()) {
-                    console.log(playerData.userID);
-                    const id = playerData.userID;
-                    if (bot.homeGuild.member(id) && !bot.users.cache.find(user => user.id === id).bot) {
-                        lb.push({ name: bot.homeGuild.members.cache.get(id).tag, value: playerData.money });
-                    }
-                }
                 break;
-            case "fusetokens":
+            case "fuseTokens":
                 criteria = "Fuse Tokens";
                 emoji = bot.emojis.cache.get("726018658635218955");
-                for await (let playerData of profileModel.find().lean()) {
-                    const id = playerData.userID;
-                    if (bot.homeGuild.member(id) && !bot.users.cache.find(user => user.id === id).bot) {
-                        lb.push({ name: bot.homeGuild.members.cache.get(id).tag, value: playerData.fuseTokens });
-                    }
-                }
                 break;
             case "trophies":
                 criteria = "Trophies";
                 emoji = bot.emojis.cache.get("775636479145148418");
-                for await (let playerData of profileModel.find().lean()) {
-                    const id = playerData.userID;
-                    if (bot.homeGuild.member(id) && !bot.users.cache.find(user => user.id === id).bot) {
-                        lb.push({ name: bot.homeGuild.members.cache.get(id).tag, value: playerData.trophies });
-                    }
-                }
                 break;
-            case "rrstreak":
+            case "rrStreak":
                 criteria = "Random Race Win Streak";
                 emoji = "⏫";
-                for await (let playerData of profileModel.find().lean()) {
-                    const id = playerData.userID;
-                    if (bot.homeGuild.member(id) && !bot.users.cache.find(user => user.id === id).bot) {
-                        lb.push({ name: bot.homeGuild.members.cache.get(id).tag, value: playerData.rrStats.highestStreak });
-                    }
-                }
+                break;
+            case "dailyStreak":
+                criteria = "Daily Streak";
+                emoji = "⏫";
                 break;
             default:
                 const errorMessage = new ErrorMessage({
@@ -71,11 +53,11 @@ module.exports = {
                     title: "Error, criteria requested unavailable.",
                     desc: "Choose between `money`, `fusetokens`, `trophies`, `rrstreak` and `dailystreak`.",
                     author: message.author
-                }).displayClosest();
+                }).displayClosest(compareValue);
                 return errorMessage.sendMessage();
         }
 
-        const totalPages = Math.ceil(lb.length / (settings.listamount || defaultPageLimit));
+        const totalPages = Math.ceil(leaderboards.length / (settings.listamount || defaultPageLimit));
         if (page < 0 || totalPages < page) {
             const errorMessage = new ErrorMessage({
                 channel: message.channel,
@@ -85,17 +67,17 @@ module.exports = {
             });
             return errorMessage.sendMessage();
         }
-        lb.sort(function (a, b) {
-            if (a.value === b.value) {
+        leaderboards.sort(function (a, b) {
+            if (a[compareValue] === b[compareValue]) {
                 return a.name > b.name ? 1 : -1;
             }
             else {
-                return b.value - a.value;
+                return b[compareValue] - a[compareValue];
             }
         });
 
         try {
-            listUpdate(lb, page, totalPages, listDisplay, settings);
+            listUpdate(leaderboards, page, totalPages, listDisplay, settings);
         }
         catch (error) {
             throw error;
@@ -103,10 +85,10 @@ module.exports = {
 
         function listDisplay(section, page, totalPages) {
             let lbList = "", valueList = "";
-            let currentPlacement = lb.findIndex(place => place.name === message.author.tag);
+            let currentPlacement = leaderboards.findIndex(place => place.user === message.author.tag) + 1;
             for (let i = 0; i < section.length; i++) {
-                lbList += `**${i + 1}.** \`${lb[i].name}\`\n`;
-                valueList += `**${i + 1}.** ${emoji}${lb[i].value}\n`;
+                lbList += `**${((page - 1) * 10) + i + 1}.** \`${section[i].user}\`\n`;
+                valueList += `**${((page - 1) * 10) + i + 1}.** ${emoji}${section[i][compareValue]}\n`;
             }
             if (lbList.length > 1024) {
                 const errorMessage = new ErrorMessage({
@@ -121,14 +103,15 @@ module.exports = {
 
             const infoMessage = new InfoMessage({
                 channel: message.channel,
-                title: `Cloned Drives Leaderboards (Selected Criteria: \`${criteria})\``,
-                desc: `Your current placement: ${currentPlacement}/${bot.homeGuild.memberCount}`,
+                title: `Cloned Drives Leaderboards (Selected Criteria: \`${criteria}\`)`,
+                desc: `The leaderboards refreshes every day at 11:59p.m. UTC.
+                Your current placement: **${currentPlacement}/${bot.homeGuild.memberCount}**`,
                 author: message.author,
                 fields: [
                     { name: "Placement", value: lbList, inline: true },
                     { name: criteria, value: valueList, inline: true }
                 ],
-                footer: `Showing places ${page} to ${totalPages} - Interact with the buttons below to navigate through pages.`
+                footer: `Showing page ${page} of ${totalPages} - Interact with the buttons below to navigate through pages.`
             });
             return infoMessage;
         }

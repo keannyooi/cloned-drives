@@ -25,6 +25,14 @@ const cardPlacement = [
     { x: 349, y: 143 },
     { x: 520, y: 143 }
 ];
+const lbWhitelist = [
+    "494120116422967325",
+    "169739243277516800",
+    "545760499460079616",
+    "209038568138604546",
+    "632186768304766976",
+    "764218288154345594"
+];
 
 const defaultWaitTime = 60000;
 const defaultChoiceTime = 10000;
@@ -162,6 +170,7 @@ module.exports = {
     carSave,
     starterGarage,
     cardPlacement,
+    lbWhitelist,
     defaultWaitTime,
     defaultQTETime,
     defaultChoiceTime,
