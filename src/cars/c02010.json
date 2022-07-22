@@ -1,9 +1,6 @@
 {
     "rq": 84,
-    "make": [
-        "Ruf",
-        "Porsche"
-    ],
+    "make": ["Ruf","Porsche"],
     "model": "SCR",
     "modelYear": 2018,
     "country": "DE",
@@ -12,9 +9,7 @@
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Unique"
-    ],
+    "tags": ["Unique"],
     "isPrize": false,
     "weight": 1250,
     "gc": "Low",
@@ -26,23 +21,23 @@
     "fuelType": "Petrol",
     "mra": 80.48,
     "ola": 78.78,
-    "description": "Card by Bnuuy.",
+    "description": "Pure driving pleasure.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/978713498479624202/SCR.png",
     "333TopSpeed": 202,
     "3330to60": 3.1,
     "333Handling": 94,
     "666TopSpeed": 204,
-    "6660to60": 3,
+    "6660to60": 3.0,
     "666Handling": 97,
     "996TopSpeed": 207,
     "9960to60": 2.8,
     "996Handling": 97,
     "969TopSpeed": 207,
-    "9690to60": 3,
+    "9690to60": 3.0,
     "969Handling": 101,
     "699TopSpeed": 204,
     "6990to60": 2.8,
     "699Handling": 101,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995688284011368490/rufSCR.png",
+    "creator": "Bnuuy"
 }

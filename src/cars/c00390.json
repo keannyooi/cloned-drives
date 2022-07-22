@@ -9,11 +9,7 @@
     "handling": 96,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": [
-        "Track Day",
-        "Unique",
-        "Ultra Expensive"
-    ],
+    "tags": ["Track Day", "Unique", "Ultra Expensive"],
     "isPrize": false,
     "weight": 1345,
     "gc": "Low",
@@ -25,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 103.57,
     "ola": 88.88,
-    "description": "The Track-Day Focused 599 which cant be raced without having ferrari at the track. Card by Bnuuy.",
+    "description": "The Track-Day Focused 599 which cant be raced without having ferrari at the track.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/834774602440900668/599XX.png",
     "333TopSpeed": 199,
     "3330to60": 2.8,
@@ -42,6 +38,6 @@
     "699TopSpeed": 201,
     "6990to60": 2.5,
     "699Handling": 107,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995688622852411473/599XX.png",
+    "creator": "Bnuuy"
 }

@@ -1,9 +1,6 @@
 {
     "rq": 79,
-    "make": [
-        "Gunther Werks",
-        "Porsche"
-    ],
+    "make": ["Gunther Werks","Porsche"],
     "model": "400R",
     "modelYear": 2019,
     "country": "US",
@@ -12,11 +9,7 @@
     "handling": 93,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner",
-        "Unique",
-        "Track Day"
-    ],
+    "tags": ["Tuner", "Unique", "Track Day", "RestoMod"],
     "isPrize": true,
     "weight": 1211,
     "gc": "Low",
@@ -28,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 82.22,
     "ola": 80,
-    "description": "This is not a Singer. Card by Bnuuy.",
+    "description": "This is not a Singer.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820726041903497226/guntherwerks.png",
     "333TopSpeed": 173,
     "3330to60": 3.5,
@@ -45,6 +38,6 @@
     "699TopSpeed": 176,
     "6990to60": 3.1,
     "699Handling": 103,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995687957291876432/GW400R.png",
+    "creator": "Bnuuy"
 }

@@ -9,9 +9,7 @@
     "handling": 92,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Supercar"
-    ],
+    "tags": ["Supercar"],
     "isPrize": false,
     "weight": 1425,
     "gc": "Low",
@@ -23,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 96.55,
     "ola": 92.86,
-    "description": "As it stands, the F8 Tributo is a suitably stunning send-off for the V8 bloodline. Card by Bnuuy.",
+    "description": "As it stands, the F8 Tributo is a suitably stunning send-off for the V8 bloodline.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/838136274988171264/F8Tributo.png",
     "333TopSpeed": 212,
     "3330to60": 2.7,
@@ -40,6 +38,6 @@
     "699TopSpeed": 215,
     "6990to60": 2.4,
     "699Handling": 102,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995688229481234542/f8trib.png",
+    "creator": "Bnuuy"
 }
