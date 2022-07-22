@@ -1,9 +1,6 @@
 {
     "rq": 28,
-    "make": [
-        "Abarth",
-        "Fiat"
-    ],
+    "make": ["Abarth","Fiat"],
     "model": "500C",
     "modelYear": 2010,
     "country": "IT",
@@ -12,9 +9,7 @@
     "handling": 74,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": [
-        "Hot Hatch"
-    ],
+    "tags": ["Hot Hatch"],
     "isPrize": false,
     "weight": 1075,
     "gc": "Low",

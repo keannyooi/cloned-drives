@@ -1,9 +1,6 @@
 {
     "rq": 96,
-    "make": [
-        "Mercedes-AMG",
-        "Mercedes-Benz"
-    ],
+    "make": ["Mercedes-AMG", "Mercedes-Benz"],
     "model": "GLS 63 4MATIC+",
     "modelYear": 2020,
     "country": "DE",
@@ -12,7 +9,7 @@
     "handling": 83,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": [],
+    "tags": ["Extreme Juggernaut"],
     "isPrize": false,
     "weight": 2490,
     "gc": "High",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 67.92,
     "ola": 83.33,
-    "description": "A luxury boat. Card by Bnuuy.",
+    "description": "A luxury boat.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/837989743895117874/GLS63.png",
     "333TopSpeed": 177,
     "3330to60": 3.4,
@@ -41,6 +38,6 @@
     "699TopSpeed": 180,
     "6990to60": 3.1,
     "699Handling": 92,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995379231993372682/GLS.png",
+    "creator": "Bnuuy"
 }
