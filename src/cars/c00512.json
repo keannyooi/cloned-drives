@@ -1,6 +1,9 @@
 {
     "rq": 17,
-    "make": ["HKS", "Honda"],
+    "make": [
+        "HKS",
+        "Honda"
+    ],
     "model": "S660 GT100R",
     "modelYear": 2015,
     "country": "JP",
@@ -9,9 +12,12 @@
     "handling": 74,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Tuner", "Kei Car", "Street Racer"],
+    "tags": [
+        "Tuner",
+        "Kei Car",
+        "Street Racer"
+    ],
     "isPrize": false,
-
     "weight": 839,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +29,22 @@
     "mra": 50.12,
     "ola": 73.58,
     "description": "The bread and butter of Honda S660 tuning. Card by keanny",
-
     "card": "https://media.discordapp.net/attachments/819199720249360384/868778710252261387/hks_s660.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/868777883655614464/hks_s660_000.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/868777891553480734/hks_s660_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/868777894359486485/hks_s660_666.jpg",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/868777904627122216/hks_s660_996.jpg",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/868777902899089468/hks_s660_969.jpg",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/868777898658639902/hks_s660_699.jpg",
-
     "333TopSpeed": 122,
     "3330to60": 10.1,
     "333Handling": 76,
-
     "666TopSpeed": 127,
     "6660to60": 9.5,
     "666Handling": 79,
-
     "996TopSpeed": 131,
-    "9960to60": 9.0,
+    "9960to60": 9,
     "996Handling": 79,
-
     "969TopSpeed": 131,
     "9690to60": 9.5,
     "969Handling": 82,
-
     "699TopSpeed": 127,
-    "6990to60": 9.0,
-    "699Handling": 82
+    "6990to60": 9,
+    "699Handling": 82,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

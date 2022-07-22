@@ -7,6 +7,7 @@ const carNameGen = require("../util/functions/carNameGen.js");
 const selectUpgrade = require("../util/functions/selectUpgrade.js");
 const updateHands = require("../util/functions/updateHands.js");
 const searchGarage = require("../util/functions/searchGarage.js");
+const generateHud = require("../util/functions/generateHud.js");
 const confirm = require("../util/functions/confirm.js");
 const profileModel = require("../models/profileSchema.js");
 
@@ -73,7 +74,7 @@ module.exports = {
                                 title: `Are you sure you want to upgrade your ${carName} from \`${origUpgrade}\` to \`${upgrade}\` with ${moneyEmoji}${moneyLimit.toLocaleString("en")} and ${fuseEmoji}${fuseTokenLimit.toLocaleString("en")}?`,
                                 desc: `You have been given ${defaultChoiceTime / 1000} seconds to consider.`,
                                 author: message.author,
-                                image: car[`racehud${origUpgrade}`]
+                                image: car["card"]
                             });
 
                             await confirm(message, confirmationMessage, acceptedFunction, playerData.settings.buttonstyle, currentMessage);
@@ -84,13 +85,16 @@ module.exports = {
                                 updateHands(playerData, currentCar.carID, origUpgrade, upgrade);
 
                                 let moneyBalance = playerData.money - moneyLimit, fuseBalance = playerData.fuseTokens - fuseTokenLimit;
-                                await profileModel.updateOne({ userID: message.author.id }, {
-                                    money: moneyBalance,
-                                    fuseTokens: fuseBalance,
-                                    garage: playerData.garage,
-                                    hand: playerData.hand,
-                                    decks: playerData.decks
-                                });
+                                const [, attachment] = await Promise.all([
+                                    profileModel.updateOne({ userID: message.author.id }, {
+                                        money: moneyBalance,
+                                        fuseTokens: fuseBalance,
+                                        garage: playerData.garage,
+                                        hand: playerData.hand,
+                                        decks: playerData.decks
+                                    }),
+                                    generateHud(car, upgrade)
+                                ]);
 
                                 const successMessage = new SuccessMessage({
                                     channel: message.channel,
@@ -103,10 +107,9 @@ module.exports = {
                                         { name: "Chassis Upgrade", value: `\`${origUpgrade[2]} => ${upgrade[2]}\``, inline: true },
                                         { name: "Current Money Balance", value: `${moneyEmoji}${moneyBalance.toLocaleString("en")}`, inline: true },
                                         { name: "Current Fuse Token Balance", value: `${fuseEmoji}${fuseBalance.toLocaleString("en")}`, inline: true }
-                                    ],
-                                    image: car[`racehud${upgrade}`]
+                                    ]
                                 });
-                                return successMessage.sendMessage({ currentMessage });
+                                return successMessage.sendMessage({ attachment, currentMessage });
                             }
                         }
                         else {

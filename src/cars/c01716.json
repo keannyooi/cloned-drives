@@ -9,9 +9,13 @@
     "handling": 76,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Street Racer", "Unique", "Ultra Expensive","The Japanese Odyssey"],
+    "tags": [
+        "Street Racer",
+        "Unique",
+        "Ultra Expensive",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 855,
     "gc": "Medium",
     "seatCount": 2,
@@ -23,32 +27,22 @@
     "mra": 52.59,
     "ola": 84.51,
     "description": "20 rally homologation specials were made to qualify the car. One of them was sold for over 1 million dollars. Card by Keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/869499310394445834/nissan_fairlady_z_432-r.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/869217518361903114/fairlady_432-r_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/869217521398603796/fairlady_432-r_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/869217524460437564/fairlady_432-r_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/869217534790995978/fairlady_432-r_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/869217531494289408/fairlady_432-r_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/869217528822517790/fairlady_432-r_699.jpg",
-
     "333TopSpeed": 135,
     "3330to60": 6.7,
     "333Handling": 79,
-
     "666TopSpeed": 139,
     "6660to60": 6.4,
     "666Handling": 81,
-
     "996TopSpeed": 143,
-    "9960to60": 6.0,
+    "9960to60": 6,
     "996Handling": 81,
-
     "969TopSpeed": 143,
     "9690to60": 6.4,
     "969Handling": 84,
-
     "699TopSpeed": 139,
-    "6990to60": 6.0,
-    "699Handling": 84
+    "6990to60": 6,
+    "699Handling": 84,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

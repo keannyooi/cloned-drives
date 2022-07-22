@@ -1,6 +1,9 @@
 {
     "rq": 71,
-    "make": ["Stielow Engineering", "Chevrolet"],
+    "make": [
+        "Stielow Engineering",
+        "Chevrolet"
+    ],
     "model": "Red Devil",
     "modelYear": 2011,
     "country": "US",
@@ -9,9 +12,11 @@
     "handling": 88,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Muscle Car", "Tuner"],
+    "tags": [
+        "Muscle Car",
+        "Tuner"
+    ],
     "isPrize": false,
-
     "weight": 1632,
     "gc": "Low",
     "seatCount": 4,
@@ -23,32 +28,22 @@
     "mra": 110.81,
     "ola": 105.81,
     "description": "A '69 camaro on steroids. Card by Johnny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/821803873194475601/cate-test.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821804054475702312/Stielow-Engineering-Red-Devil.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821804058548633690/Stielow-Engineering-Red-Devil-1-star.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821804063430803466/Stielow-Engineering-Red-Devil-2-star.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821804088131190854/Stielow-Engineering-Red-Devil-332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821804079767879710/Stielow-Engineering-Red-Devil-323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821804069617926177/Stielow-Engineering-Red-Devil-233.png",
-
     "333TopSpeed": 196,
     "3330to60": 3.9,
     "333Handling": 91,
-
     "666TopSpeed": 198,
-    "6660to60": 3.7, 
+    "6660to60": 3.7,
     "666Handling": 94,
-
     "996TopSpeed": 201,
     "9960to60": 3.5,
     "996Handling": 94,
-
     "969TopSpeed": 201,
     "9690to60": 3.7,
     "969Handling": 98,
-
     "699TopSpeed": 198,
     "6990to60": 3.5,
-    "699Handling": 98
+    "699Handling": 98,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

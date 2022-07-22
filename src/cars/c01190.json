@@ -11,7 +11,6 @@
     "tyreType": "All-Surface",
     "tags": [],
     "isPrize": false,
-
     "weight": 1185,
     "gc": "High",
     "seatCount": 5,
@@ -20,35 +19,25 @@
     "abs": false,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 17.00,
+    "mra": 17,
     "ola": 60.29,
     "description": "Card by.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/865591501332152360/Subaru-GL-Turbo-Wagon-1_1.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/848401527390339122/Subaru-GL-Turbo-Wagon-Stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/848401552132931594/Subaru-GL-Turbo-Wagon-333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/848401564359589918/Subaru-GL-Turbo-Wagon-666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/848401610652385330/Subaru-GL-Turbo-Wagon-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/848401598917115924/Subaru-GL-Turbo-Wagon-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/848401578812768257/Subaru-GL-Turbo-Wagon-699.png",
-
     "333TopSpeed": 100,
     "3330to60": 12.9,
     "333Handling": 61,
-
     "666TopSpeed": 105,
     "6660to60": 12.2,
     "666Handling": 63,
-
     "996TopSpeed": 111,
     "9960to60": 11.6,
     "996Handling": 63,
-
     "969TopSpeed": 111,
     "9690to60": 12.2,
     "969Handling": 65,
-
     "699TopSpeed": 105,
     "6990to60": 11.6,
-    "699Handling": 65
+    "699Handling": 65,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

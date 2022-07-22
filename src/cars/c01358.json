@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1479,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +22,22 @@
     "mra": 56.49,
     "ola": 85.02,
     "description": "Inspired by Baja, at home in Bakersfield. Card by Andu",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820196441234210856/BeetleDuneCoupe.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820196746541400084/BeetleDune.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820196755077070878/BeetleDune1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820196761951666186/BeetleDune2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820196789726216252/BeetleDune996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820196780003426334/BeetleDune969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820196771388325888/BeetleDune699.png",
-
     "333TopSpeed": 122,
-    "3330to60": 7.0,
+    "3330to60": 7,
     "333Handling": 77,
-
     "666TopSpeed": 127,
-    "6660to60": 6.7, 
+    "6660to60": 6.7,
     "666Handling": 80,
-
     "996TopSpeed": 131,
     "9960to60": 6.3,
     "996Handling": 80,
-
     "969TopSpeed": 131,
     "9690to60": 6.7,
     "969Handling": 83,
-
     "699TopSpeed": 127,
     "6990to60": 6.3,
-    "699Handling": 83
+    "699Handling": 83,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

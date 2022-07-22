@@ -9,9 +9,11 @@
     "handling": 45,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Style Icon", "Oddity"],
+    "tags": [
+        "Style Icon",
+        "Oddity"
+    ],
     "isPrize": true,
-
     "weight": 150,
     "gc": "Low",
     "seatCount": 2,
@@ -20,35 +22,25 @@
     "abs": false,
     "enginePos": "Middle",
     "fuelType": "Petrol",
-    "mra": 0.00,
-    "ola": 0.00,
+    "mra": 0,
+    "ola": 0,
     "description": "The slightly more stylish but slightly slower version of the P50. Card by bnuuy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/823502086506545202/trident.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823502178966437908/trident.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823502183931707402/trident333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823502190592917514/trident666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823502222734262322/trident996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823502214475677706/trident969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823502203314372628/trident699.png",
-
     "333TopSpeed": 38,
     "3330to60": 99.9,
     "333Handling": 46,
-
     "666TopSpeed": 45,
     "6660to60": 99.9,
     "666Handling": 48,
-
-	"996TopSpeed": 54,
+    "996TopSpeed": 54,
     "9960to60": 99.9,
     "996Handling": 48,
-
     "969TopSpeed": 54,
     "9690to60": 99.9,
     "969Handling": 50,
-
     "699TopSpeed": 45,
     "6990to60": 99.9,
-    "699Handling": 50
+    "699Handling": 50,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -9,9 +9,12 @@
     "handling": 92,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Eargasm", "Supercar", "Track Day"],
+    "tags": [
+        "Eargasm",
+        "Supercar",
+        "Track Day"
+    ],
     "isPrize": true,
-
     "weight": 1480,
     "gc": "Low",
     "seatCount": 2,
@@ -20,35 +23,25 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 99.00,
+    "mra": 99,
     "ola": 88.25,
     "description": "The track-focused LFA. Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819241772957696020/LFAnurberg.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819548373731246120/LFANur.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819548384931217448/LFANur333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819548397101908008/LFANur666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819548453742444554/LFANur996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819548434175492116/LFANur969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819548415615565824/LFANur699.png",
-
     "333TopSpeed": 205,
     "3330to60": 3.5,
     "333Handling": 95,
-
     "666TopSpeed": 207,
     "6660to60": 3.3,
     "666Handling": 98,
-
     "996TopSpeed": 210,
     "9960to60": 3.1,
     "996Handling": 98,
-
     "969TopSpeed": 210,
     "9690to60": 3.3,
     "969Handling": 102,
-
     "699TopSpeed": 207,
     "6990to60": 3.1,
-    "699Handling": 102
+    "699Handling": 102,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

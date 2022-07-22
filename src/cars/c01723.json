@@ -9,9 +9,10 @@
     "handling": 62,
     "driveType": "RWD",
     "tyreType": "All-Surface",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1409,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +24,22 @@
     "mra": 16.11,
     "ola": 61.67,
     "description": "Card by Demon.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/964378032905277520/Nissan_Frontier_4x2_1998.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/964378147359449118/Nissan_Frontier_4x2_1998_H000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/964378175054438531/Nissan_Frontier_4x2_1998_H111.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/964378194402738196/Nissan_Frontier_4x2_1998_H222.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/964378261696167986/Nissan_Frontier_4x2_1998_H332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/964378235179778098/Nissan_Frontier_4x2_1998_H323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/964378213465849856/Nissan_Frontier_4x2_1998_H233.png",
-
     "333TopSpeed": 97,
     "3330to60": 10.8,
     "333Handling": 64,
-
     "666TopSpeed": 102,
     "6660to60": 10.3,
     "666Handling": 66,
-
     "996TopSpeed": 108,
     "9960to60": 9.7,
     "996Handling": 66,
-
     "969TopSpeed": 108,
     "9690to60": 10.3,
     "969Handling": 69,
-
     "699TopSpeed": 102,
     "6990to60": 9.7,
-    "699Handling": 69
+    "699Handling": 69,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

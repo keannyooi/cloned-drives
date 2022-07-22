@@ -9,9 +9,13 @@
     "handling": 94,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Hypercar", "Ultra Expensive", "Eco-Friendly", "Rest of The World"],
+    "tags": [
+        "Hypercar",
+        "Ultra Expensive",
+        "Eco-Friendly",
+        "Rest of The World"
+    ],
     "isPrize": true,
-
     "weight": 1590,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +27,22 @@
     "mra": 108.33,
     "ola": 107.69,
     "description": "Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/843212513435844609/RegeraGhostPack.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/843212934460080208/regeraghost.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/843212941561692160/regeraghost333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/843212948319371314/regeraghost666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/843212985107087400/regeraghost996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/843212966987038720/regeraghost969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/843212956002156564/regeraghost699.png",
-
     "333TopSpeed": 257,
     "3330to60": 2.5,
     "333Handling": 97,
-
     "666TopSpeed": 259,
     "6660to60": 2.3,
     "666Handling": 100,
-
     "996TopSpeed": 261,
     "9960to60": 2.2,
     "996Handling": 100,
-
     "969TopSpeed": 261,
     "9690to60": 2.3,
     "969Handling": 104,
-
     "699TopSpeed": 259,
     "6990to60": 2.2,
-    "699Handling": 104
+    "699Handling": 104,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -9,9 +9,12 @@
     "handling": 88,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["The Royal Collection", "Supercar", "Style Icon"],
+    "tags": [
+        "The Royal Collection",
+        "Supercar",
+        "Style Icon"
+    ],
     "isPrize": false,
-
     "weight": 1470,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +26,22 @@
     "mra": 103.08,
     "ola": 98.29,
     "description": "The fastest production car for it's time, before the F1 Came in '93. Card by Exist",
-
     "card": "https://media.discordapp.net/attachments/819199720249360384/859607969309261874/CD_Jaguar_XJ220.png?width=1410&height=878",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/859608025915326484/CD_Jaguar_XJ220_000.png?width=1410&height=878",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/859608027510734848/CD_Jaguar_XJ220_333.png?width=1410&height=878",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/859608030714396742/CD_Jaguar_XJ220_666.png?width=1410&height=878",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/859608050070192148/CD_Jaguar_XJ220_996.png?width=1410&height=878",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/859608041779363850/CD_Jaguar_XJ220_969.png?width=1410&height=878",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/859608038213550120/CD_Jaguar_XJ220_699.png?width=1410&height=878",
-
     "333TopSpeed": 218,
     "3330to60": 3.9,
     "333Handling": 91,
-
     "666TopSpeed": 221,
     "6660to60": 3.7,
     "666Handling": 94,
-
     "996TopSpeed": 223,
     "9960to60": 3.5,
     "996Handling": 94,
-
     "969TopSpeed": 223,
     "9690to60": 3.7,
     "969Handling": 98,
-
     "699TopSpeed": 221,
     "6990to60": 3.5,
-    "699Handling": 98
+    "699Handling": 98,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

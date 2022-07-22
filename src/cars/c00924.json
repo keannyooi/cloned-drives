@@ -1,17 +1,22 @@
 {
     "rq": 49,
-    "make": ["Mugen", "Honda"],
+    "make": [
+        "Mugen",
+        "Honda"
+    ],
     "model": "Civic Type-R (FN2)",
     "modelYear": 2009,
     "country": "JP",
     "topSpeed": 150,
-    "0to60": 6.0,
+    "0to60": 6,
     "handling": 84,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Tuner", "Street Racer"],
+    "tags": [
+        "Tuner",
+        "Street Racer"
+    ],
     "isPrize": true,
-
     "weight": 1233,
     "gc": "Low",
     "seatCount": 5,
@@ -23,32 +28,22 @@
     "mra": 65.75,
     "ola": 80.67,
     "description": "moogen ufo. Card by Havvy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/863876011959386132/unknown.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/863876078506082334/fn2mug_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/863876083027279872/fn2mug_111.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/863876087418585088/fn2mug_222.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/863876105873653800/fn2mug_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/863876099598712872/fn2mug_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/863876093853171722/fn2mug_233.png",
-
     "333TopSpeed": 153,
     "3330to60": 5.7,
     "333Handling": 87,
-
     "666TopSpeed": 157,
     "6660to60": 5.4,
     "666Handling": 90,
-
     "996TopSpeed": 160,
     "9960to60": 5.1,
     "996Handling": 90,
-
     "969TopSpeed": 160,
     "9690to60": 5.4,
     "969Handling": 93,
-
     "699TopSpeed": 157,
     "6990to60": 5.1,
-    "699Handling": 93
+    "699Handling": 93,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

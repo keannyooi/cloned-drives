@@ -9,9 +9,11 @@
     "handling": 85,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Supercar", "Style Icon"],
+    "tags": [
+        "Supercar",
+        "Style Icon"
+    ],
     "isPrize": false,
-
     "weight": 1804,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +25,22 @@
     "mra": 71.31,
     "ola": 77.75,
     "description": "The epitome poster car back in the 2000s. Card by Spence.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/954406833630633984/6C36A596-6495-42B1-B47D-0256438219A5.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/954407117769539655/27031E0D-5140-4E10-B192-994EBF24D271.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/954407175223119923/316B1A89-0E90-4D27-916E-614826E32CFE.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/954407194860851200/095129ED-2191-4774-9D68-B35921405A6F.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/954407289715052615/EFC1A595-27D9-4D2A-92CC-E9355ED5A1BA.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/954407289715052615/EFC1A595-27D9-4D2A-92CC-E9355ED5A1BA.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/954407227173785660/35F1648C-BFE3-4BB4-A555-DCEC137CE6AB.jpg",
-
     "333TopSpeed": 208,
     "3330to60": 3.5,
     "333Handling": 88,
-
     "666TopSpeed": 210,
     "6660to60": 3.3,
     "666Handling": 91,
-
     "996TopSpeed": 213,
     "9960to60": 3.1,
     "996Handling": 91,
-
     "969TopSpeed": 213,
     "9690to60": 3.3,
     "969Handling": 94,
-
     "699TopSpeed": 210,
     "6990to60": 3.1,
-    "699Handling": 94
+    "699Handling": 94,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -9,9 +9,11 @@
     "handling": 77,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Hot Hatch", "Street Racer"],
+    "tags": [
+        "Hot Hatch",
+        "Street Racer"
+    ],
     "isPrize": true,
-
     "weight": 1070,
     "gc": "Low",
     "seatCount": 2,
@@ -23,33 +25,22 @@
     "mra": 61.06,
     "ola": 86.96,
     "description": "The special edition Abarth-fettled 695 Tributo Ferrari has been on a diet of automotive steroids to pay homage to the legendary stable of Prancing Horses. Card by havvy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/840552628030406656/omgferrari.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/840552688500736010/c_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/840552693440708657/c_111.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/840552697325027358/c_222.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/840552714541989898/c_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/840552708490264636/c_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/840552703888326686/c_233.png",
-
     "333TopSpeed": 144,
     "3330to60": 6.6,
     "333Handling": 80,
-
     "666TopSpeed": 147,
     "6660to60": 6.2,
     "666Handling": 82,
-
     "969TopSpeed": 151,
     "9690to60": 6.2,
     "969Handling": 85,
-	
-	"996TopSpeed": 151,
-	"9960to60": 5.9,
-	"996Handling": 82,
-	
-	"699TopSpeed": 147,
-	"6990to60": 5.9,
-	"699Handling": 85
-	
+    "996TopSpeed": 151,
+    "9960to60": 5.9,
+    "996Handling": 82,
+    "699TopSpeed": 147,
+    "6990to60": 5.9,
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

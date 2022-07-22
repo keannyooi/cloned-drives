@@ -1,6 +1,9 @@
 {
     "rq": 71,
-    "make": ["Amuse", "Nissan"],
+    "make": [
+        "Amuse",
+        "Nissan"
+    ],
     "model": "Fairlady Z Nismo Type 380RS Superleggera",
     "modelYear": 2008,
     "country": "JP",
@@ -9,9 +12,12 @@
     "handling": 90,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Tuner", "Unique", "The Japanese Odyssey"],
+    "tags": [
+        "Tuner",
+        "Unique",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1370,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +29,22 @@
     "mra": 75.15,
     "ola": 78.98,
     "description": "Hideki Tanabe's final creation. Card by Keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/869499803938209853/rip_hideki.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/869212492121899018/amuse_380rs_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/869212495921954896/amuse_380rs_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/869212501299068978/amuse_380rs_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/869212513848418325/amuse_380rs_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/869212507649232986/amuse_380rs_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/869212505916989540/amuse_380rs_699.jpg",
-
     "333TopSpeed": 165,
-    "3330to60": 4.0,
+    "3330to60": 4,
     "333Handling": 93,
-
     "666TopSpeed": 168,
     "6660to60": 3.8,
     "666Handling": 96,
-
     "996TopSpeed": 172,
     "9960to60": 3.6,
     "996Handling": 96,
-
     "969TopSpeed": 172,
     "9690to60": 3.8,
     "969Handling": 100,
-
     "699TopSpeed": 168,
     "6990to60": 3.6,
-    "699Handling": 100
+    "699Handling": 100,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -9,9 +9,10 @@
     "handling": 80,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": ["Eco-Friendly"],
+    "tags": [
+        "Eco-Friendly"
+    ],
     "isPrize": false,
-
     "weight": 1847,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 77.86,
     "ola": 88.19,
     "description": "The car that managed to strand Car & Driver's crew while parked on a Christmas evening. Card by keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/858544280692064277/tesla_model_3_dual_motor_long_range.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/858541053614227466/model_3_awd_000.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/858541060464705536/model_3_awd_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/858541063848984616/model_3_awd_666.jpg",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/858541077628059679/model_3_awd_996.jpg",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/858541072329998357/model_3_awd_969.jpg",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/858541068155617290/model_3_awd_699.jpg",
-
     "333TopSpeed": 149,
-    "3330to60": 4.0,
+    "3330to60": 4,
     "333Handling": 83,
-
     "666TopSpeed": 152,
     "6660to60": 3.8,
     "666Handling": 85,
-
     "996TopSpeed": 151,
     "9960to60": 3.6,
     "996Handling": 85,
-
     "969TopSpeed": 156,
     "9690to60": 3.8,
     "969Handling": 89,
-
     "699TopSpeed": 152,
     "6990to60": 3.6,
-    "699Handling": 89
+    "699Handling": 89,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

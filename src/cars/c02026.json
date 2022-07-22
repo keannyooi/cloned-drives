@@ -9,9 +9,12 @@
     "handling": 88,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Concept", "Unique", "Hypercar"],
+    "tags": [
+        "Concept",
+        "Unique",
+        "Hypercar"
+    ],
     "isPrize": true,
-
     "weight": 1120,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +26,22 @@
     "mra": 86.66,
     "ola": 97.44,
     "description": "Card by Aqo.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/948625044127494174/cc.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/948625154936823878/stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/948625179947438171/333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/948625199606136903/666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/948625277351768074/996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/948625252341137469/969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/948625220288254033/699.png",
-
     "333TopSpeed": 242,
     "3330to60": 3.7,
     "333Handling": 91,
-
     "666TopSpeed": 244,
     "6660to60": 3.5,
     "666Handling": 94,
-
     "996TopSpeed": 247,
     "9960to60": 3.3,
     "996Handling": 94,
-
     "969TopSpeed": 247,
     "9690to60": 3.5,
     "969Handling": 98,
-
     "699TopSpeed": 244,
     "6990to60": 3.3,
-    "699Handling": 98
+    "699Handling": 98,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

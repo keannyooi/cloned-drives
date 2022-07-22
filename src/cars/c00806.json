@@ -9,9 +9,11 @@
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["OG", "Supercar"],
+    "tags": [
+        "OG",
+        "Supercar"
+    ],
     "isPrize": false,
-
     "weight": 1433,
     "gc": "Low",
     "seatCount": 2,
@@ -20,35 +22,25 @@
     "abs": true,
     "enginePos": "Middle",
     "fuelType": "Petrol",
-    "mra": 100.00,
+    "mra": 100,
     "ola": 90.32,
     "description": "McLaren Automotive's debut supercar. Card by Connor.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820741428220526612/S.McLarenMP412C.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820741253699600454/S.McLaren12C.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820741271043440650/S.McLaren12C-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820741281797767168/S.McLaren12C-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820741315016917012/S.McLaren12C-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820741305885786162/S.McLaren12C-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820741290541973504/S.McLaren12C-699.png",
-
     "333TopSpeed": 209,
     "3330to60": 2.9,
     "333Handling": 94,
-
     "666TopSpeed": 210,
     "6660to60": 2.8,
     "666Handling": 97,
-
     "996TopSpeed": 213,
     "9960to60": 2.6,
     "996Handling": 97,
-
     "969TopSpeed": 213,
     "9690to60": 2.8,
     "969Handling": 101,
-
     "699TopSpeed": 210,
     "6990to60": 2.6,
-    "699Handling": 101
+    "699Handling": 101,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

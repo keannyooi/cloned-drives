@@ -9,9 +9,10 @@
     "handling": 69,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": ["OG"],
+    "tags": [
+        "OG"
+    ],
     "isPrize": false,
-
     "weight": 1525,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 45.08,
     "ola": 68.97,
     "description": "Back before Packs were a thing, this was annoyingly hard to get...and it was nessassary for some of the first events. Card by Connor.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/947597123262763018/D.Fiat500X24TrekkingAWD.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/947597256893276191/Fiat500X.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/947597283837497495/Fiat500X-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/947597432462667786/Fiat500X-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/947597533595697172/Fiat500X-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/947597509889515540/Fiat500X-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/947597487714209873/Fiat500X-699.png",
-
     "333TopSpeed": 124,
     "3330to60": 8.3,
     "333Handling": 71,
-
     "666TopSpeed": 129,
     "6660to60": 7.8,
     "666Handling": 74,
-
     "996TopSpeed": 133,
     "9960to60": 7.4,
     "996Handling": 74,
-
     "969TopSpeed": 133,
     "9690to60": 7.8,
     "969Handling": 77,
-
     "699TopSpeed": 129,
     "6990to60": 7.4,
-    "699Handling": 77
+    "699Handling": 77,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

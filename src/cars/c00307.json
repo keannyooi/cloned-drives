@@ -9,9 +9,11 @@
     "handling": 71,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Eco-Friendly", "Silver Screen"],
+    "tags": [
+        "Eco-Friendly",
+        "Silver Screen"
+    ],
     "isPrize": false,
-
     "weight": 1721,
     "gc": "Low",
     "seatCount": 4,
@@ -23,32 +25,22 @@
     "mra": 44.13,
     "ola": 73.83,
     "description": "An award-winning range-extended electric car. Card by keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819384031455739914/volt.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819832632342216764/volt_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819832634891829248/volt_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819832655621128232/volt_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819832694996336681/volt_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819832683852070972/volt_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819832670501732392/volt_699.jpg",
-
     "333TopSpeed": 106,
     "3330to60": 8.5,
     "333Handling": 73,
-
     "666TopSpeed": 111,
-    "6660to60": 8.0,
+    "6660to60": 8,
     "666Handling": 76,
-
-	"996TopSpeed": 116,
+    "996TopSpeed": 116,
     "9960to60": 7.6,
     "996Handling": 76,
-
     "969TopSpeed": 116,
-    "9690to60": 8.0,
+    "9690to60": 8,
     "969Handling": 79,
-
-	"699TopSpeed": 111,
+    "699TopSpeed": 111,
     "6990to60": 7.6,
-    "699Handling": 79
+    "699Handling": 79,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1763,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 59.65,
     "ola": 70.59,
     "description": "Back when Ford actually made good sedans. Card by McNuggets.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/828458582722609222/fusion.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/828453831562100756/fusion_stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/828453873450483712/fusion_1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/828453928441741362/fusion_2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/828454035593494588/fusion_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/828454001149345852/fusion_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/828453964642517083/fusion_233.png",
-
     "333TopSpeed": 130,
     "3330to60": 6.5,
     "333Handling": 74,
-
     "666TopSpeed": 134,
     "6660to60": 6.1,
     "666Handling": 77,
-
     "996TopSpeed": 138,
     "9960to60": 5.8,
     "996Handling": 77,
-
     "969TopSpeed": 138,
     "9690to60": 6.1,
     "969Handling": 80,
-
     "699TopSpeed": 134,
     "6990to60": 5.8,
-    "699Handling": 80
+    "699Handling": 80,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

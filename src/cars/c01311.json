@@ -9,9 +9,10 @@
     "handling": 83,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Street Racer"],
+    "tags": [
+        "Street Racer"
+    ],
     "isPrize": false,
-
     "weight": 1410,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +24,22 @@
     "mra": 62.63,
     "ola": 83.87,
     "description": "Yes, a slow, 197hp GR Supra, only found in Japanese roads. Card by F4ST",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/850370832186343474/Toyota_GR_Supra_SZ.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/850370980303601704/Stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/851357220557815808/unknown.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/850371009991147530/666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/850371049945301072/996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/850371036830367795/969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/850371027170885632/699.png",
-
     "333TopSpeed": 158,
     "3330to60": 5.9,
     "333Handling": 85,
-
     "666TopSpeed": 162,
     "6660to60": 5.6,
     "666Handling": 87,
-
     "996TopSpeed": 165,
     "9960to60": 5.3,
     "996Handling": 87,
-
     "969TopSpeed": 165,
     "9690to60": 5.6,
     "969Handling": 91,
-
     "699TopSpeed": 162,
     "6990to60": 5.3,
-    "699Handling": 91
+    "699Handling": 91,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

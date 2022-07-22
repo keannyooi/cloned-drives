@@ -9,9 +9,10 @@
     "handling": 90,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Supercar"],
+    "tags": [
+        "Supercar"
+    ],
     "isPrize": false,
-
     "weight": 1429,
     "gc": "Low",
     "seatCount": 2,
@@ -20,35 +21,25 @@
     "abs": true,
     "enginePos": "Middle",
     "fuelType": "Petrol",
-    "mra": 82.50,
+    "mra": 82.5,
     "ola": 84.85,
     "description": "Ferrari's F430 goes on a track day. Card by RushHour",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/821107595074076672/S.Ferrari430Scuderia.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821107692088066088/S.Ferrari430Scuderia.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821107705791381514/S.Ferrari430Scuderia-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821107716914806844/S.Ferrari430Scuderia-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821107785194143764/S.Ferrari430Scuderia-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821107763902939146/S.Ferrari430Scuderia-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821107739840741376/S.Ferrari430Scuderia-699.png",
-
     "333TopSpeed": 202,
     "3330to60": 3.1,
     "333Handling": 93,
-
     "666TopSpeed": 204,
-    "6660to60": 3.0,
+    "6660to60": 3,
     "666Handling": 96,
-
-	"996TopSpeed": 207,
+    "996TopSpeed": 207,
     "9960to60": 2.8,
     "996Handling": 96,
-
-	"969TopSpeed": 207,
-    "9690to60": 3.0,
+    "969TopSpeed": 207,
+    "9690to60": 3,
     "969Handling": 100,
-
     "699TopSpeed": 204,
     "6990to60": 2.8,
-    "699Handling": 100
+    "699Handling": 100,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

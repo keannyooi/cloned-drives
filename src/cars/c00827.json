@@ -1,6 +1,9 @@
 {
     "rq": 78,
-    "make": ["Mercedes-AMG", "Mercedes-Benz"],
+    "make": [
+        "Mercedes-AMG",
+        "Mercedes-Benz"
+    ],
     "model": "E 63 S",
     "modelYear": 2013,
     "country": "DE",
@@ -9,9 +12,10 @@
     "handling": 86,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Super Sedan"],
+    "tags": [
+        "Super Sedan"
+    ],
     "isPrize": false,
-
     "weight": 1865,
     "gc": "Low",
     "seatCount": 4,
@@ -23,33 +27,22 @@
     "mra": 75.18,
     "ola": 75.73,
     "description": "Merc's super sedan. By Havvy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/822359084480462848/Mercedes-AMGE63S.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/822359162976600084/000_e63s.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/822359168342163466/111_e63s.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/822359173017632838/222_e63s.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/822359192157028392/332_e63s.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/822359186246467594/323_e63s.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/822359177518514186/233_e63s.png",
-
     "333TopSpeed": 158,
     "3330to60": 3.2,
     "333Handling": 89,
-
     "666TopSpeed": 162,
     "6660to60": 3.1,
     "666Handling": 92,
-
     "996TopSpeed": 165,
     "9960to60": 2.9,
     "996Handling": 92,
-
     "969TopSpeed": 165,
     "9690to60": 3.1,
     "969Handling": 95,
-
     "699TopSpeed": 162,
     "6990to60": 2.9,
-    "699Handling": 95
-
+    "699Handling": 95,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

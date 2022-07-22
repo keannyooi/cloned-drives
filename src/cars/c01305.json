@@ -9,9 +9,11 @@
     "handling": 77,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Hot Hatch", "Street Racer"],
+    "tags": [
+        "Hot Hatch",
+        "Street Racer"
+    ],
     "isPrize": false,
-
     "weight": 950,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +25,22 @@
     "mra": 49.71,
     "ola": 71.26,
     "description": "Deja vu, I have been to this place before, higher on the streets, and I know it's my time to go. Card by bnuuy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819665997295517706/AE86.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819666059069751336/ea86.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819666068229455922/ae86333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819666077617094676/ae86666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819666112697729026/ae86996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819666100643823646/ae86969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819666089754624051/ae86699.png",
-
     "333TopSpeed": 129,
     "3330to60": 8.3,
     "333Handling": 80,
-
     "666TopSpeed": 133,
-    "6660to60": 7.8, 
+    "6660to60": 7.8,
     "666Handling": 82,
-
     "996TopSpeed": 137,
     "9960to60": 7.4,
     "996Handling": 82,
-
     "969TopSpeed": 137,
     "9690to60": 7.8,
     "969Handling": 85,
-
     "699TopSpeed": 133,
     "6990to60": 7.4,
-    "699Handling": 85
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

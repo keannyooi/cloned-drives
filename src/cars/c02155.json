@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1286,
     "gc": "Medium",
     "seatCount": 2,
@@ -23,33 +22,22 @@
     "mra": 43.88,
     "ola": 59.7,
     "description": "Before Corvette, before Cobra, there was Kurtis - MotorTrend's first ever cover car. Card by Johnny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/858300825079119892/Kurtis-Sports-Car.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/858301158649233458/Kurtis-Sports-Car.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/858301162557538304/Kurtis-Sports-Car-1-star.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/858301170695274506/Kurtis-Sports-Car-2-star.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/858301190579159080/Kurtis-Sports-Car-332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/858301185710096404/Kurtis-Sports-Car-323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/858301178576371733/Kurtis-Sports-Car-233.png",
-
     "333TopSpeed": 110,
     "3330to60": 12.7,
     "333Handling": 46,
-
     "666TopSpeed": 115,
     "6660to60": 12.1,
     "666Handling": 48,
-
     "969TopSpeed": 120,
     "9690to60": 12.1,
     "969Handling": 50,
-	
     "996TopSpeed": 120,
     "9960to60": 11.4,
     "996Handling": 48,
-	
     "699TopSpeed": 115,
     "6990to60": 11.4,
-    "699Handling": 50
-	
+    "699Handling": 50,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

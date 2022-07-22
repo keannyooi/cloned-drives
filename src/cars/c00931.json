@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1505,
     "gc": "Low",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 64.29,
     "ola": 85.71,
     "description": "At time time, was considered one of the pinnacles of front-wheel drive performance. Card by ChickenMcNuggets.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/828458112334692372/altima.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/828453555207667762/altima_stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/828453587306151936/altima_1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/828453638687031342/altima_2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/828453749168799844/altima_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/828453714460803143/altima_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/828453673498574858/altima_233.png",
-
     "333TopSpeed": 144,
-    "3330to60": 6.0,
+    "3330to60": 6,
     "333Handling": 77,
-
     "666TopSpeed": 147,
     "6660to60": 5.7,
     "666Handling": 80,
-
     "996TopSpeed": 151,
     "9960to60": 5.4,
     "996Handling": 80,
-
     "969TopSpeed": 151,
     "9690to60": 5.7,
     "969Handling": 83,
-
     "699TopSpeed": 147,
     "6990to60": 5.4,
-    "699Handling": 83
+    "699Handling": 83,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

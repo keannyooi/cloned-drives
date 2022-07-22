@@ -1,6 +1,10 @@
 {
     "rq": 59,
-    "make": ["MZR Roadsports", "Datsun", "Nissan"],
+    "make": [
+        "MZR Roadsports",
+        "Datsun",
+        "Nissan"
+    ],
     "model": "240Z Sport Design",
     "modelYear": 2019,
     "country": "GB",
@@ -9,9 +13,11 @@
     "handling": 78,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Tuner","The Japanese Odyssey"],
+    "tags": [
+        "Tuner",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1030,
     "gc": "Medium",
     "seatCount": 2,
@@ -23,32 +29,22 @@
     "mra": 66.67,
     "ola": 73.08,
     "description": "The old Z that grew up eating crumpets. Card by Keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/869498675209056276/mzr_roadsports_240z_sport_design.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/869218946178510848/mzr_240z_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/869218950251159602/mzr_240z_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/869218955632468048/mzr_240z_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/869218964063002684/mzr_240z_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/869218960715972608/mzr_240z_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/869218957880623134/mzr_240z_699.jpg",
-
     "333TopSpeed": 153,
     "3330to60": 4.9,
     "333Handling": 81,
-
     "666TopSpeed": 157,
     "6660to60": 4.7,
     "666Handling": 83,
-
     "996TopSpeed": 160,
     "9960to60": 4.4,
     "996Handling": 83,
-
     "969TopSpeed": 160,
     "9690to60": 4.7,
     "969Handling": 87,
-
     "699TopSpeed": 157,
     "6990to60": 4.4,
-    "699Handling": 87
+    "699Handling": 87,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

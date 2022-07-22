@@ -9,9 +9,10 @@
     "handling": 67,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 2775,
     "gc": "High",
     "seatCount": 7,
@@ -23,32 +24,22 @@
     "mra": 65.42,
     "ola": 65.71,
     "description": "Card by Lemonade.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/869101198563770368/Lexus_Flexus.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/869100972578852924/2015_Lexus_LX570_Stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/869100993147715604/2015_Lexus_LX570_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/869101025930403850/2015_Lexus_LX570_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/869101118590967828/2015_Lexus_LX570_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/869101087188201532/2015_Lexus_LX570_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/869101060667605002/2015_Lexus_LX570_699.png",
-
     "333TopSpeed": 139,
     "3330to60": 6.7,
     "333Handling": 69,
-
     "666TopSpeed": 143,
     "6660to60": 6.4,
     "666Handling": 71,
-
     "996TopSpeed": 147,
-    "9960to60": 6.0,
+    "9960to60": 6,
     "996Handling": 71,
-
     "969TopSpeed": 147,
     "9690to60": 6.4,
     "969Handling": 74,
-
     "699TopSpeed": 143,
-    "6990to60": 6.0,
-    "699Handling": 74
+    "6990to60": 6,
+    "699Handling": 74,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

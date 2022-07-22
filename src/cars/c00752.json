@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1880,
     "gc": "Low",
     "seatCount": 4,
@@ -23,32 +22,22 @@
     "mra": 69.48,
     "ola": 72.97,
     "description": "The designers of this car hold the world record speedrun for designing a car for mass production, at just nine months. Card by havvy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/826197143374004274/Maserati_GranTurismo_Card.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826197258453516328/Maserati_GranTurismo_HUD_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826197281409204284/Maserati_GranTurismo_HUD_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826197294494908426/Maserati_GranTurismo_HUD_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826197334852763669/Maserati_GranTurismo_HUD_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826197321980444714/Maserati_GranTurismo_HUD_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826197309481156648/Maserati_GranTurismo_HUD_699.png",
-
     "333TopSpeed": 179,
     "3330to60": 4.7,
     "333Handling": 89,
-
     "666TopSpeed": 182,
     "6660to60": 4.4,
     "666Handling": 92,
-
     "996TopSpeed": 185,
     "9960to60": 4.2,
     "996Handling": 92,
-
     "969TopSpeed": 185,
     "9690to60": 4.4,
     "969Handling": 95,
-    
     "699TopSpeed": 182,
     "6990to60": 4.2,
-    "699Handling": 95
+    "699Handling": 95,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

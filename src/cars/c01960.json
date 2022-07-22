@@ -9,9 +9,10 @@
     "handling": 79,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1823,
     "gc": "Low",
     "seatCount": 4,
@@ -23,32 +24,22 @@
     "mra": 63.64,
     "ola": 75,
     "description": "Modern Infiniti coupe with all-wheel drive system. Card by Spence.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/969686790594261052/18522B44-8737-485E-89C6-2204D02FF3B6.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/969687188709212180/E044AF92-07B2-4790-BB7A-C259124FA1E6.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/969687208703447091/6186B300-E95F-4E62-AB36-BAC2704243A5.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/969687228446044230/4278487B-661F-4E1B-916D-16230CD8406A.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/969687304887210004/3DAB196D-39C7-453C-AE2A-D99BE7A1AB29.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/969687279369093140/86D87127-514B-460C-9AF5-FE84D170F822.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/969687249153327104/64F00C0E-F763-4968-A42F-918D813A63F2.jpg",
-
     "333TopSpeed": 158,
     "3330to60": 4.8,
     "333Handling": 82,
-
     "666TopSpeed": 162,
     "6660to60": 4.6,
     "666Handling": 84,
-
     "996TopSpeed": 165,
     "9960to60": 4.3,
     "996Handling": 84,
-
     "969TopSpeed": 165,
     "9690to60": 4.6,
     "969Handling": 88,
-
     "699TopSpeed": 162,
     "6990to60": 4.3,
-    "699Handling": 88
+    "699Handling": 88,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

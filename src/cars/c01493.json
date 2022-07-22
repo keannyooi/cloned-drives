@@ -1,6 +1,9 @@
 {
     "rq": 83,
-    "make": ["9ff", "Porsche"],
+    "make": [
+        "9ff",
+        "Porsche"
+    ],
     "model": "911 Turbo Cabriolet",
     "modelYear": 2003,
     "country": "DE",
@@ -9,9 +12,10 @@
     "handling": 88,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Tuner"],
+    "tags": [
+        "Tuner"
+    ],
     "isPrize": false,
-
     "weight": 1610,
     "gc": "Low",
     "seatCount": 4,
@@ -23,32 +27,22 @@
     "mra": 92.11,
     "ola": 91.43,
     "description": "Cab. Card by Havvy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/828953449885859861/unknown.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/828953572468981790/9969ff2_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/828953576381480980/9969ff2_111.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/828953582433861632/9969ff2_222.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/828953598989697034/9969ff2_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/828953593671188480/9969ff2_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/828953589996716032/9969ff2_233.png",
-
     "333TopSpeed": 203,
     "3330to60": 3.3,
     "333Handling": 91,
-
     "666TopSpeed": 205,
     "6660to60": 3.2,
     "666Handling": 94,
-
     "996TopSpeed": 208,
-    "9960to60": 3.0,
+    "9960to60": 3,
     "996Handling": 94,
-
     "969TopSpeed": 208,
     "9690to60": 3.2,
     "969Handling": 98,
-
     "699TopSpeed": 205,
-    "6990to60": 3.0,
-    "699Handling": 98
+    "6990to60": 3,
+    "699Handling": 98,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -1,6 +1,9 @@
 {
     "rq": 75,
-    "make": ["RENNtech", "Mercedes-Benz"],
+    "make": [
+        "RENNtech",
+        "Mercedes-Benz"
+    ],
     "model": "ML60RS",
     "modelYear": 1999,
     "country": "US",
@@ -9,9 +12,10 @@
     "handling": 77,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": ["Tuner"],
+    "tags": [
+        "Tuner"
+    ],
     "isPrize": false,
-
     "weight": 2069,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +27,22 @@
     "mra": 50.49,
     "ola": 65.38,
     "description": "Card by Havvy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/827311530218356816/RENNtechML60RS.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/827311593037234206/000_rennml.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/827311597705887794/111_rennml.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/827311601833082910/222_rennml.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/827311615942459392/332_rennml.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/827311611387314196/323_rennml.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/827311608472535070/233_rennml.png",
-
     "333TopSpeed": 159,
     "3330to60": 4.9,
     "333Handling": 80,
-
     "666TopSpeed": 163,
     "6660to60": 4.7,
     "666Handling": 82,
-
     "996TopSpeed": 166,
     "9960to60": 4.4,
     "996Handling": 82,
-
     "969TopSpeed": 166,
     "9690to60": 4.7,
     "969Handling": 85,
-
     "699TopSpeed": 163,
     "6990to60": 4.4,
-    "699Handling": 85
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

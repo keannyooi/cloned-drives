@@ -1,6 +1,9 @@
 {
     "rq": 120,
-    "make": ["Marc Philipp Gemballa", "Porsche"],
+    "make": [
+        "Marc Philipp Gemballa",
+        "Porsche"
+    ],
     "model": "Marsien (Off-Road)",
     "modelYear": 2021,
     "country": "DE",
@@ -9,9 +12,12 @@
     "handling": 92,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": ["Oddity", "Concept", "Unique"],
+    "tags": [
+        "Oddity",
+        "Concept",
+        "Unique"
+    ],
     "isPrize": true,
-
     "weight": 1750,
     "gc": "High",
     "seatCount": 2,
@@ -23,32 +29,22 @@
     "mra": 100,
     "ola": 76,
     "description": "Stupid. Card by Exist.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/947182484519542784/CD_Marc_Philipp_Gemballa_Marsien_Off-Road.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/947182543554355300/stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/947182572251787290/333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/947182598248071188/666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/947182682171899984/996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/947182655194148884/969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/947182628480626768/699.png",
-
     "333TopSpeed": 134,
     "3330to60": 2.4,
     "333Handling": 95,
-
     "666TopSpeed": 138,
     "6660to60": 2.3,
     "666Handling": 98,
-
     "996TopSpeed": 142,
     "9960to60": 2.1,
     "996Handling": 98,
-
     "969TopSpeed": 142,
     "9690to60": 2.3,
     "969Handling": 102,
-
     "699TopSpeed": 138,
     "6990to60": 2.1,
-    "699Handling": 102
+    "699Handling": 102,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -9,9 +9,12 @@
     "handling": 69,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Silver Screen", "Style Icon", "Oddity"],
+    "tags": [
+        "Silver Screen",
+        "Style Icon",
+        "Oddity"
+    ],
     "isPrize": true,
-
     "weight": 1288,
     "gc": "Medium",
     "seatCount": 2,
@@ -23,32 +26,22 @@
     "mra": 35.59,
     "ola": 68.57,
     "description": "1.21 gigawatts and 88mph required to time travel. Card by Olimato",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/826018070953852938/Delorean.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826018173786390548/Delo.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826018182581190656/Delo1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826018189649117184/Delo2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826018209961345034/Delo996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826018203729002526/Delo969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826018195156107264/Delo699.png",
-
     "333TopSpeed": 114,
-    "3330to60": 10.0,
+    "3330to60": 10,
     "333Handling": 71,
-
     "666TopSpeed": 119,
     "6660to60": 9.5,
     "666Handling": 74,
-
-	"996TopSpeed": 123,
+    "996TopSpeed": 123,
     "9960to60": 8.9,
     "996Handling": 74,
-
     "969TopSpeed": 123,
     "9690to60": 9.5,
     "969Handling": 77,
-
-	"699TopSpeed": 119,
+    "699TopSpeed": 119,
     "6990to60": 8.9,
-    "699Handling": 77
+    "699Handling": 77,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

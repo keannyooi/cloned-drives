@@ -9,9 +9,10 @@
     "handling": 83,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Track Day"],
+    "tags": [
+        "Track Day"
+    ],
     "isPrize": true,
-
     "weight": 530,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +24,22 @@
     "mra": 73.55,
     "ola": 74.16,
     "description": "Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/912490732097515581/westfield11.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/912491130510245968/westfeld11.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/912491140975050822/westfeld11333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/912491150030536734/westfeld11666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/912491181273923644/westfeld11996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/912491170813333564/westfeld11969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/912491158943449178/westfeld11699.png",
-
     "333TopSpeed": 130,
     "3330to60": 8.5,
     "333Handling": 86,
-
     "666TopSpeed": 134,
-    "6660to60": 8.0,
+    "6660to60": 8,
     "666Handling": 88,
-
     "996TopSpeed": 138,
     "9960to60": 7.6,
     "996Handling": 88,
-
     "969TopSpeed": 138,
-    "9690to60": 8.0,
+    "9690to60": 8,
     "969Handling": 92,
-
     "699TopSpeed": 134,
     "6990to60": 7.6,
-    "699Handling": 92
+    "699Handling": 92,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

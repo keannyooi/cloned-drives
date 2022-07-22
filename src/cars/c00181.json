@@ -9,9 +9,11 @@
     "handling": 80,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Street Racer", "Style Icon"],
+    "tags": [
+        "Street Racer",
+        "Style Icon"
+    ],
     "isPrize": false,
-
     "weight": 1442,
     "gc": "Low",
     "seatCount": 4,
@@ -23,32 +25,22 @@
     "mra": 65.88,
     "ola": 78.57,
     "description": "The legendary E36 generation M3. Card by havvy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/826469416627077161/oldslowM3thing.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826531265150844948/C.BMWM3.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826531280992600114/C.BMWM3-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826531306237067315/C.BMWM3-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826531351414702090/C.BMWM3-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826531339121459210/C.BMWM3-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826531329054081104/C.BMWM3-699.png",
-
     "333TopSpeed": 158,
     "3330to60": 5.3,
     "333Handling": 83,
-
     "666TopSpeed": 162,
-    "6660to60": 5.0,
+    "6660to60": 5,
     "666Handling": 85,
-
-	"996TopSpeed": 165,
+    "996TopSpeed": 165,
     "9960to60": 4.8,
     "996Handling": 85,
-
     "969TopSpeed": 165,
-    "9690to60": 5.0,
+    "9690to60": 5,
     "969Handling": 89,
-
-	"699TopSpeed": 165,
+    "699TopSpeed": 165,
     "6990to60": 4.8,
-    "699Handling": 89
+    "699Handling": 89,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

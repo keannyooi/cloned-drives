@@ -1,17 +1,21 @@
 {
     "rq": 78,
-    "make": ["Polestar", "Volvo"],
+    "make": [
+        "Polestar",
+        "Volvo"
+    ],
     "model": "1",
     "modelYear": 2020,
     "country": "SE",
     "topSpeed": 155,
-    "0to60": 4.0,
+    "0to60": 4,
     "handling": 87,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Eco-Friendly"],
+    "tags": [
+        "Eco-Friendly"
+    ],
     "isPrize": false,
-
     "weight": 2345,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +27,22 @@
     "mra": 78.43,
     "ola": 95.01,
     "description": "An interesting and rather beguiling take on a luxury GT. Card by DodgeDemon",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819420670617452594/2020_Polestar_1.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823592604368896030/pole.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823592605366354020/pole333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823592612199661598/pole666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823592638295834684/pole996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823592629802631188/pole969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823592622140424262/pole699.png",
-
     "333TopSpeed": 158,
     "3330to60": 3.8,
     "333Handling": 90,
-
     "666TopSpeed": 162,
-    "6660to60": 3.6, 
+    "6660to60": 3.6,
     "666Handling": 93,
-
     "996TopSpeed": 165,
     "9960to60": 3.4,
     "996Handling": 93,
-
     "969TopSpeed": 165,
     "9690to60": 3.6,
     "969Handling": 97,
-
     "699TopSpeed": 162,
     "6990to60": 3.4,
-    "699Handling": 97
+    "699Handling": 97,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

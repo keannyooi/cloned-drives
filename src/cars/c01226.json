@@ -11,10 +11,9 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1719,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Sedan",
     "tcs": true,
     "abs": true,
@@ -23,32 +22,22 @@
     "mra": 69.32,
     "ola": 65.57,
     "description": "A normal Subie sedan with some punch of power. Card by Spence",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820347943814037534/image0.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820347988492812288/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820348009723592744/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820348029721903144/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820348095815483422/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820348055689232404/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820348075422908436/image0.jpg",
-
     "333TopSpeed": 152,
     "3330to60": 5.8,
     "333Handling": 73,
-
     "666TopSpeed": 156,
-    "6660to60": 5.5, 
+    "6660to60": 5.5,
     "666Handling": 76,
-
     "996TopSpeed": 159,
     "9960to60": 5.2,
     "996Handling": 76,
-
     "969TopSpeed": 159,
     "9690to60": 5.5,
     "969Handling": 79,
-
     "699TopSpeed": 156,
     "6990to60": 5.2,
-    "699Handling": 79
+    "699Handling": 79,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

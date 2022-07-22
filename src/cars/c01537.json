@@ -1,6 +1,9 @@
 {
     "rq": 72,
-    "make": ["Green Lord Motors", "Tommykaira"],
+    "make": [
+        "Green Lord Motors",
+        "Tommykaira"
+    ],
     "model": "Tommykaira ZZ",
     "modelYear": 2014,
     "country": "JP",
@@ -9,9 +12,11 @@
     "handling": 90,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Unique","The Japanese Odyssey"],
+    "tags": [
+        "Unique",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 850,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +28,22 @@
     "mra": 55.93,
     "ola": 69.04,
     "description": "Japan's obscure Tesla Roadster rival that has a very pitiful range. Card by Keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/861147215413641236/tommykaira_zz_glm.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/861150271039209512/glm_tommykaira_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/861150278408994816/glm_tommykaira_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/861150285010042900/glm_tommykaira_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/861150298022477824/glm_tommykaira_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/861150293994242079/glm_tommykaira_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/861150290014765086/glm_tommykaira_699.jpg",
-
     "333TopSpeed": 117,
     "3330to60": 3.6,
     "333Handling": 93,
-
     "666TopSpeed": 121,
     "6660to60": 3.4,
     "666Handling": 96,
-
     "996TopSpeed": 126,
     "9960to60": 3.2,
     "996Handling": 96,
-
     "969TopSpeed": 126,
     "9690to60": 3.4,
     "969Handling": 100,
-
     "699TopSpeed": 121,
     "6990to60": 3.2,
-    "699Handling": 100
+    "699Handling": 100,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

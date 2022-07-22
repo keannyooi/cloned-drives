@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1055,
     "gc": "Low",
     "seatCount": 4,
@@ -23,32 +22,22 @@
     "mra": 40.99,
     "ola": 71.21,
     "description": "Heptadecaphobian Italians need not worry, for the car was sold as the R177. Card by spence",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/822556083745718342/image0.jpg",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/822556301333626880/17G.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/822556309508325406/17G1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/822556314605453333/17G2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/822556334070693908/17G996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/822556328420442172/17G969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/822556321773256756/17G699.png",
-
     "333TopSpeed": 113,
     "3330to60": 12.5,
     "333Handling": 66,
-
     "666TopSpeed": 118,
-    "6660to60": 11.9, 
+    "6660to60": 11.9,
     "666Handling": 68,
-
     "996TopSpeed": 122,
     "9960to60": 11.2,
     "996Handling": 68,
-
     "969TopSpeed": 122,
     "9690to60": 11.9,
     "969Handling": 71,
-
     "699TopSpeed": 118,
     "6990to60": 11.2,
-    "699Handling": 71
+    "699Handling": 71,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

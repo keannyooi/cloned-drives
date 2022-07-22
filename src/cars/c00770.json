@@ -1,4 +1,4 @@
-﻿{
+{
     "rq": 37,
     "make": "Mazda",
     "model": "MX-5 Roadster",
@@ -9,12 +9,13 @@
     "handling": 80,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Street Racer"],
+    "tags": [
+        "Street Racer"
+    ],
     "isPrize": false,
-
     "weight": 1133,
     "gc": "Low",
-    "seatCount":2,
+    "seatCount": 2,
     "bodyStyle": "Convertible",
     "tcs": true,
     "abs": true,
@@ -23,32 +24,22 @@
     "mra": 51.11,
     "ola": 62.32,
     "description": "This MX-5 is now bigger, heavier and more grownup but still handles as well as the original did. Card by Spence",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/824476380930244708/image0.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824476254098817034/mx-5_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824476262550077470/mx-5_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824476269168689192/mx-5_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824476301963427846/mx-5_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824476290982608916/mx-5_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824476281953452092/mx-5_699.jpg",
-
     "333TopSpeed": 135,
     "3330to60": 6.6,
     "333Handling": 83,
-
     "666TopSpeed": 139,
-    "6660to60": 6.2, 
+    "6660to60": 6.2,
     "666Handling": 85,
-
     "996TopSpeed": 143,
     "9960to60": 5.9,
     "996Handling": 85,
-
     "969TopSpeed": 143,
     "9690to60": 6.2,
     "969Handling": 89,
-
     "699TopSpeed": 139,
     "6990to60": 5.9,
-    "699Handling": 89
+    "699Handling": 89,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

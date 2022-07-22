@@ -9,9 +9,10 @@
     "handling": 71,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Style Icon"],
+    "tags": [
+        "Style Icon"
+    ],
     "isPrize": true,
-
     "weight": 1255,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +24,22 @@
     "mra": 62.96,
     "ola": 91.23,
     "description": "One of the rarest coach-built Ferraris. Card by Johnny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820625466074726420/cate-test.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820625592503762964/Thomassima-III.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820625596073639956/Thomassima-III-1-star.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820625601945010186/Thomassima-III-2-star.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820625644860997652/Thomassima-III-332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820625633888567306/Thomassima-III-323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820625616260956160/Thomassima-III-233.png",
-
     "333TopSpeed": 153,
     "3330to60": 7.8,
     "333Handling": 73,
-
     "666TopSpeed": 157,
-    "6660to60": 7.0, 
+    "6660to60": 7,
     "666Handling": 79,
-
     "996TopSpeed": 160,
-    "9960to60": 7.0,
+    "9960to60": 7,
     "996Handling": 76,
-
     "969TopSpeed": 160,
     "9690to60": 7.4,
     "969Handling": 79,
-
     "699TopSpeed": 157,
-    "6990to60": 7.0,
-    "699Handling": 79
+    "6990to60": 7,
+    "699Handling": 79,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

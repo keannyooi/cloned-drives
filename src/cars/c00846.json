@@ -9,9 +9,13 @@
     "handling": 67,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Style Icon", "Grand Tourer", "Sleeper", "Silver Screen"],
+    "tags": [
+        "Style Icon",
+        "Grand Tourer",
+        "Sleeper",
+        "Silver Screen"
+    ],
     "isPrize": false,
-
     "weight": 1500,
     "gc": "Low",
     "seatCount": 2,
@@ -20,35 +24,25 @@
     "abs": false,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 88.00,
+    "mra": 88,
     "ola": 63.64,
     "description": "Car goes brrrrr. Card by bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820707896341561384/300SL.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820708298138451978/300sl.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820708301816725564/300sl333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820708307094208532/300sl666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820708337296867388/300sl996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820708329990520853/300sl969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820708320620707851/300sl699.png",
-
     "333TopSpeed": 150,
     "3330to60": 8.4,
     "333Handling": 69,
-
     "666TopSpeed": 153,
     "6660to60": 7.9,
     "666Handling": 71,
-
     "996TopSpeed": 157,
     "9960to60": 7.5,
     "996Handling": 71,
-
     "969TopSpeed": 157,
     "9690to60": 7.9,
     "969Handling": 74,
-
     "699TopSpeed": 153,
     "6990to60": 7.5,
-    "699Handling": 74
+    "699Handling": 74,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

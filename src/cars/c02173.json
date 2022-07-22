@@ -5,13 +5,15 @@
     "modelYear": 2016,
     "country": "GB",
     "topSpeed": 186,
-    "0to60": 4.0,
+    "0to60": 4,
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Grand Tourer", "The Royal Collection"],
+    "tags": [
+        "Grand Tourer",
+        "The Royal Collection"
+    ],
     "isPrize": false,
-
     "weight": 1406,
     "gc": "Low",
     "seatCount": 2,
@@ -21,34 +23,24 @@
     "enginePos": "Middle",
     "fuelType": "Petrol",
     "mra": 78.43,
-    "ola": 65.00,
+    "ola": 65,
     "description": "Card by Tom.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/854315023803219968/Lotus_Evora_Sport_410_2016.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/854315299775709204/Lotus_Evora_Sport_410_2016_111.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/854315303336280095/Lotus_Evora_Sport_410_2016_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/854315306360635412/Lotus_Evora_Sport_410_2016_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/854315317936521226/Lotus_Evora_Sport_410_2016_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/854315314916491274/Lotus_Evora_Sport_410_2016_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/854315310152024064/Lotus_Evora_Sport_410_2016_699.jpg",
-
     "333TopSpeed": 189,
     "3330to60": 3.8,
     "333Handling": 94,
-
     "666TopSpeed": 192,
     "6660to60": 3.6,
     "666Handling": 97,
-
     "996TopSpeed": 194,
     "9960to60": 3.4,
     "996Handling": 97,
-
     "969TopSpeed": 194,
     "9690to60": 3.6,
     "969Handling": 101,
-
     "699TopSpeed": 192,
     "6990to60": 3.4,
-    "699Handling": 101
+    "699Handling": 101,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -19,7 +19,7 @@ function createCar(currentCar, unitPreference, hideStats) {
         abs: car["abs"],
         mra: car["mra"],
         ola: car["ola"],
-        racehud: car[`racehud${currentCar.upgrade}`]
+        racehud: car["racehud"]
     };
     if (currentCar.upgrade !== "000") {
         carModule.topSpeed = car[`${currentCar.upgrade}TopSpeed`];

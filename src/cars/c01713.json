@@ -9,9 +9,10 @@
     "handling": 77,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1513,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 73.8,
     "ola": 90.32,
     "description": "One quick rental car. Card by McNuggets.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/837075600287072276/fast_rental_car.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/837073180198961162/altie_stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/837073230518026250/altie_1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/837073263317614632/altie_2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/837073390740439103/altie_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/837073355076796545/altie_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/837073322349035571/altie_233.png",
-
     "333TopSpeed": 135,
     "3330to60": 5.9,
     "333Handling": 80,
-
     "666TopSpeed": 139,
     "6660to60": 5.6,
     "666Handling": 82,
-
     "996TopSpeed": 143,
     "9960to60": 5.3,
     "996Handling": 82,
-
     "969TopSpeed": 143,
     "9690to60": 5.6,
     "969Handling": 85,
-
     "699TopSpeed": 139,
     "6990to60": 5.3,
-    "699Handling": 85
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -1,6 +1,9 @@
 {
     "rq": 78,
-    "make": ["Option", "Nissan"],
+    "make": [
+        "Option",
+        "Nissan"
+    ],
     "model": "Stream Z",
     "modelYear": 2004,
     "country": "JP",
@@ -9,9 +12,12 @@
     "handling": 88,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Unique", "Tuner","The Japanese Odyssey"],
+    "tags": [
+        "Unique",
+        "Tuner",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1440,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +29,22 @@
     "mra": 125.36,
     "ola": 105.88,
     "description": "Option Magazine's founder entered Nevada's Silver State Classic challenge with this 900hp beast. Unfortunately, he crashed the car and it was like that ever since. Card by Keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/869499746363007006/option_stream_z.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/869219702038224966/stream_z_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/869219706748428328/stream_z_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/869219712490422272/stream_z_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/869219722183442452/stream_z_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/869219719893360660/stream_z_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/869219716072345711/stream_z_699.jpg",
-
     "333TopSpeed": 211,
     "3330to60": 3.4,
     "333Handling": 91,
-
     "666TopSpeed": 213,
     "6660to60": 3.2,
     "666Handling": 94,
-
     "996TopSpeed": 216,
     "9960to60": 3.1,
     "996Handling": 94,
-
     "969TopSpeed": 216,
     "9690to60": 3.2,
     "969Handling": 98,
-
     "699TopSpeed": 213,
     "6990to60": 3.1,
-    "699Handling": 98
+    "699Handling": 98,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

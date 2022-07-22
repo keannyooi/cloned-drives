@@ -9,9 +9,12 @@
     "handling": 73,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Eco-Friendly", "Concept", "Unique"],
+    "tags": [
+        "Eco-Friendly",
+        "Concept",
+        "Unique"
+    ],
     "isPrize": false,
-
     "weight": 1460,
     "gc": "Low",
     "seatCount": 4,
@@ -23,32 +26,22 @@
     "mra": 41.85,
     "ola": 69.47,
     "description": "Pure blasphemy - wait no, hydrogen fun for the average wankel fan. Card by keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/837193349273747466/ruined_rx-8.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/837193058256289802/hydro_rx8_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/837193067311923247/hydro_rx8_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/837193074823659530/hydro_rx8_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/837193123703816202/hydro_rx8_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/837193104657219605/hydro_rx8_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/837193084579479582/hydro_rx8_699.jpg",
-
     "333TopSpeed": 108,
-    "3330to60": 9.0,
+    "3330to60": 9,
     "333Handling": 75,
-
     "666TopSpeed": 113,
     "6660to60": 8.6,
     "666Handling": 78,
-
     "996TopSpeed": 118,
     "9960to60": 8.1,
     "996Handling": 78,
-
     "969TopSpeed": 118,
     "9690to60": 8.6,
     "969Handling": 81,
-
     "699TopSpeed": 113,
     "6990to60": 8.1,
-    "699Handling": 81
+    "699Handling": 81,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -9,9 +9,10 @@
     "handling": 74,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Grand Tourer"],
+    "tags": [
+        "Grand Tourer"
+    ],
     "isPrize": false,
-
     "weight": 1614,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +24,22 @@
     "mra": 60.56,
     "ola": 79.69,
     "description": "The slower american cousin everyone puts up with. Card by Andu.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/945395559345324062/M6.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/945395908244275220/M684.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/945395926288187392/M684-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/945395936220311602/M684-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/945395956038373396/M684-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/945395970613604412/M684-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/945395988904943707/M684-699.png",
-
     "333TopSpeed": 148,
     "3330to60": 6.2,
     "333Handling": 76,
-
     "666TopSpeed": 151,
-    "6660to60": 5.9, 
+    "6660to60": 5.9,
     "666Handling": 79,
-
     "996TopSpeed": 155,
     "9960to60": 5.5,
     "996Handling": 79,
-
     "969TopSpeed": 155,
     "9690to60": 5.9,
     "969Handling": 82,
-
     "699TopSpeed": 151,
     "6990to60": 5.5,
-    "699Handling": 82
+    "699Handling": 82,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

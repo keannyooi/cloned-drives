@@ -9,9 +9,12 @@
     "handling": 90,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Track Day", "Wild Ride", "Supercar"],
+    "tags": [
+        "Track Day",
+        "Wild Ride",
+        "Supercar"
+    ],
     "isPrize": true,
-
     "weight": 975,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +26,22 @@
     "mra": 127.27,
     "ola": 96.55,
     "description": "TVR's wildest beast. By Bnuuy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819944487634599956/TVRSPOD12.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819944822831972372/Spod12.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819944830502830200/spod12333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819944837755174942/spod12666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819944867454386196/spod12996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819944858290356264/spod12969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819944848399794206/spod12699.png",
-
     "333TopSpeed": 242,
     "3330to60": 2.8,
     "333Handling": 93,
-
     "666TopSpeed": 244,
-    "6660to60": 2.6, 
+    "6660to60": 2.6,
     "666Handling": 96,
-
     "996TopSpeed": 247,
     "9960to60": 2.5,
     "996Handling": 96,
-
     "969TopSpeed": 247,
     "9690to60": 2.6,
     "969Handling": 100,
-
     "699TopSpeed": 244,
     "6990to60": 2.5,
-    "699Handling": 100
+    "699Handling": 100,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

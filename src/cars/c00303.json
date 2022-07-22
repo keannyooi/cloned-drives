@@ -11,7 +11,6 @@
     "tyreType": "All-Surface",
     "tags": [],
     "isPrize": false,
-
     "weight": 2767,
     "gc": "High",
     "seatCount": 7,
@@ -23,32 +22,22 @@
     "mra": 48.15,
     "ola": 57.47,
     "description": "GM's Duramax Diesel meets Chevy's redesigned Tahoe. Card by DodgeDemon.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/824681793533116426/2021_Chevy_Tahoe_Duramax.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/825416015231582286/tahoe.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/825416022773202974/tahoe333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/825416033589264415/tahoe666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/825416063755354172/tahoe996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/825416054754377778/tahoe969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/825416045099089970/tahoe699.png",
-
     "333TopSpeed": 117,
     "3330to60": 7.4,
     "333Handling": 50,
-
     "666TopSpeed": 121,
-    "6660to60": 7.0,
+    "6660to60": 7,
     "666Handling": 51,
-
     "996TopSpeed": 126,
     "9960to60": 6.6,
     "996Handling": 51,
-
-	"969TopSpeed": 126,
-    "9690to60": 7.0,
+    "969TopSpeed": 126,
+    "9690to60": 7,
     "969Handling": 53,
-
-	"699TopSpeed": 121,
+    "699TopSpeed": 121,
     "6990to60": 6.6,
-    "699Handling": 53
+    "699Handling": 53,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

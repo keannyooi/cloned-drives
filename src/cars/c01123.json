@@ -9,9 +9,10 @@
     "handling": 91,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Super Sedan"],
+    "tags": [
+        "Super Sedan"
+    ],
     "isPrize": false,
-
     "weight": 2020,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 64.63,
     "ola": 67.92,
     "description": "A Powerful but slow-selling family hauler. Card by Exist.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/860138517597126656/CD_Porsche_Panamera_GTS.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/860138570500800532/CD_Porsche_Panamera_GTS_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/860138574807302144/CD_Porsche_Panamera_GTS_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/860138580872396821/CD_Porsche_Panamera_GTS_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/860138595222683658/CD_Porsche_Panamera_GTS_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/860138590729404416/CD_Porsche_Panamera_GTS_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/860138584807833610/CD_Porsche_Panamera_GTS_699.png",
-
     "333TopSpeed": 189,
     "3330to60": 3.3,
     "333Handling": 94,
-
     "666TopSpeed": 192,
     "6660to60": 3.2,
     "666Handling": 97,
-
     "996TopSpeed": 194,
-    "9960to60": 3.0,
+    "9960to60": 3,
     "996Handling": 97,
-
     "969TopSpeed": 194,
     "9690to60": 3.2,
     "969Handling": 101,
-
     "699TopSpeed": 192,
-    "6990to60": 3.0,
-    "699Handling": 101
+    "6990to60": 3,
+    "699Handling": 101,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

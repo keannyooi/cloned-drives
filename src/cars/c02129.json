@@ -1,6 +1,9 @@
 {
     "rq": 47,
-    "make": ["Carlsson", "Mercedes-Benz"],
+    "make": [
+        "Carlsson",
+        "Mercedes-Benz"
+    ],
     "model": "C 37 RS",
     "modelYear": 1995,
     "country": "DE",
@@ -9,9 +12,10 @@
     "handling": 77,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Tuner"],
+    "tags": [
+        "Tuner"
+    ],
     "isPrize": false,
-
     "weight": 1548,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +27,22 @@
     "mra": 79.38,
     "ola": 88.19,
     "description": "Card by Havvy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/828370297559580712/unknown.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/828370390736175114/000_w202Carl1.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/828370398554619924/111_w202Carl1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/828370403054714920/222_w202Carl1.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/828370417512742912/332_w202Carl1.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/828370413167837245/323_w202Carl1.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/828370407928889364/233_w202Carl1.png",
-
     "333TopSpeed": 174,
     "3330to60": 6.1,
     "333Handling": 80,
-
     "666TopSpeed": 177,
     "6660to60": 5.8,
     "666Handling": 82,
-
     "996TopSpeed": 180,
     "9960to60": 5.4,
     "996Handling": 82,
-
     "969TopSpeed": 180,
     "9690to60": 5.8,
     "969Handling": 85,
-
     "699TopSpeed": 177,
     "6990to60": 5.4,
-    "699Handling": 85
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

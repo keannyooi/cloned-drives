@@ -9,9 +9,10 @@
     "handling": 80,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": ["Rest of The World"],
+    "tags": [
+        "Rest of The World"
+    ],
     "isPrize": false,
-
     "weight": 1919,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 69,
     "ola": 74,
     "description": "Card by Saabsut.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/940638480323731476/G80_2.5T_AWD_cloned.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/940637926281326642/g80_2.5t_awd_stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/940637982589857812/g80_2.5t_awd_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/940638011559936020/g80_2.5t_awd_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/940638131118567474/g80_2.5t_awd_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/940638066287210517/g80_2.5t_awd_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/940638041435955230/g80_2.5t_awd_699.png",
-
     "333TopSpeed": 158,
     "3330to60": 5.4,
     "333Handling": 83,
-
     "666TopSpeed": 162,
     "6660to60": 5.1,
     "666Handling": 85,
-
     "996TopSpeed": 165,
     "9960to60": 4.8,
     "996Handling": 85,
-
     "969TopSpeed": 165,
     "9690to60": 5.1,
     "969Handling": 89,
-
     "699TopSpeed": 162,
     "6990to60": 4.8,
-    "699Handling": 89
+    "699Handling": 89,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

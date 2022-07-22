@@ -9,9 +9,11 @@
     "handling": 88,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Style Icon", "Supercar"],
+    "tags": [
+        "Style Icon",
+        "Supercar"
+    ],
     "isPrize": false,
-
     "weight": 1581,
     "gc": "Low",
     "seatCount": 2,
@@ -23,33 +25,22 @@
     "mra": 80.63,
     "ola": 96.37,
     "description": "The legendary GT40's road-going descendant. Card by havvy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/826206964291600444/GT05.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826207025662394378/FordGT05.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826207032742641684/FordGT05333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826207038148968458/FordGT05666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826207088023568452/FordGT05996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826207073041776670/FordGT05969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826207046880985138/FordGT05699.png",
-
     "333TopSpeed": 205,
     "3330to60": 3.4,
     "333Handling": 91,
-
     "666TopSpeed": 207,
     "6660to60": 3.2,
     "666Handling": 94,
-
     "996TopSpeed": 210,
     "9960to60": 3.1,
     "996Handling": 94,
-
     "969TopSpeed": 210,
     "9690to60": 3.2,
     "969Handling": 98,
-
     "699TopSpeed": 207,
     "6990to60": 3.1,
-    "699Handling": 98
-
+    "699Handling": 98,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -9,9 +9,11 @@
     "handling": 82,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Street Racer", "Hot Hatch"],
+    "tags": [
+        "Street Racer",
+        "Hot Hatch"
+    ],
     "isPrize": false,
-
     "weight": 1444,
     "gc": "Low",
     "seatCount": 5,
@@ -23,32 +25,22 @@
     "mra": 67.81,
     "ola": 88.13,
     "description": "The second generation of Mazda's hot hatch. Card by Connor.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/963513078610276362/C.Mazda3MPS09.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/963513714034745384/3MPSRemake.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/963513724658925609/3MPSRemake-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/963513733362106438/3MPSRemake-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/963513748012826694/3MPSRemake-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/963513758892826664/3MPSRemake-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/963513773937819698/3MPSRemake-699.png",
-
     "333TopSpeed": 158,
     "3330to60": 5.6,
     "333Handling": 85,
-
     "666TopSpeed": 162,
     "6660to60": 5.3,
     "666Handling": 87,
-
     "996TopSpeed": 165,
-    "9960to60": 5.0,
+    "9960to60": 5,
     "996Handling": 87,
-
     "969TopSpeed": 165,
     "9690to60": 5.3,
     "969Handling": 91,
-
     "699TopSpeed": 162,
-    "6990to60": 5.0,
-    "699Handling": 91
+    "6990to60": 5,
+    "699Handling": 91,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

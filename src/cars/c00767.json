@@ -9,9 +9,12 @@
     "handling": 74,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Servers Choice", "Street Racer", "Style Icon"],
+    "tags": [
+        "Servers Choice",
+        "Street Racer",
+        "Style Icon"
+    ],
     "isPrize": false,
-
     "weight": 960,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +26,22 @@
     "mra": 47.92,
     "ola": 65.22,
     "description": "Miata is always the answer. Card by andu",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/822208868821237850/MazdaMX51990.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/822208703012274176/MX589.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/822208711850065949/MX589-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/822208719927377940/MX589-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/822208743726776320/MX589-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/822208734062706758/MX589-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/822208727968382996/MX589-699.png",
-
     "333TopSpeed": 120,
     "3330to60": 8.7,
     "333Handling": 76,
-
     "666TopSpeed": 125,
     "6660to60": 8.3,
     "666Handling": 79,
-
     "996TopSpeed": 129,
     "9960to60": 7.8,
     "996Handling": 79,
-
     "969TopSpeed": 129,
     "9690to60": 8.3,
     "969Handling": 82,
-
     "699TopSpeed": 125,
     "6990to60": 7.8,
-    "699Handling": 82
+    "699Handling": 82,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

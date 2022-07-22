@@ -5,16 +5,17 @@
     "modelYear": 1998,
     "country": "US",
     "topSpeed": 167,
-    "0to60": 5.0,
+    "0to60": 5,
     "handling": 81,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Supercar"],
+    "tags": [
+        "Supercar"
+    ],
     "isPrize": false,
-
     "weight": 1469,
     "gc": "Low",
-    "seatCount":2,
+    "seatCount": 2,
     "bodyStyle": "Convertible",
     "tcs": true,
     "abs": true,
@@ -23,38 +24,22 @@
     "mra": 66.52,
     "ola": 79.47,
     "description": "Top up top down, turn it all the way around. Card by Havvy",
-
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/822622393691668481/ChevroletCorvetteConvertible.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/822622447530147840/000_crvc.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/822622453095989298/111_crvc.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/822622457390694430/222_crvc.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/822622472552579072/332_crvc.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/822622468329963560/323_crvc.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/822622462633312326/233_crvc.png",
-
-
     "333TopSpeed": 170,
     "3330to60": 4.8,
     "333Handling": 84,
-
-
     "666TopSpeed": 173,
-    "6660to60": 4.5, 
+    "6660to60": 4.5,
     "666Handling": 86,
-
-
     "996TopSpeed": 176,
     "9960to60": 4.3,
     "996Handling": 86,
-
-
     "969TopSpeed": 176,
     "9690to60": 4.5,
     "969Handling": 90,
-
-
     "699TopSpeed": 173,
     "6990to60": 4.3,
-    "699Handling": 90
+    "699Handling": 90,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

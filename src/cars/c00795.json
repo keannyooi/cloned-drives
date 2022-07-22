@@ -9,9 +9,11 @@
     "handling": 93,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Supercar", "The Royal Collection"],
+    "tags": [
+        "Supercar",
+        "The Royal Collection"
+    ],
     "isPrize": false,
-
     "weight": 1368,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +25,22 @@
     "mra": 96.34,
     "ola": 94.03,
     "description": "Card by Smega.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/854728257841004554/CD_McLaren_675LT_Spider.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/854728321132789780/CD_McLaren_675LT_Spider_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/854728329097248788/CD_McLaren_675LT_Spider_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/854728334688780338/CD_McLaren_675LT_Spider_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/854728356038049852/CD_McLaren_675LT_Spider_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/854728353671020554/CD_McLaren_675LT_Spider_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/854728342065643550/CD_McLaren_675LT_Spider_699.png",
-
     "333TopSpeed": 206,
     "3330to60": 2.8,
     "333Handling": 96,
-
     "666TopSpeed": 208,
     "6660to60": 2.6,
     "666Handling": 99,
-
     "996TopSpeed": 211,
     "9960to60": 2.5,
     "996Handling": 99,
-
     "969TopSpeed": 211,
     "9690to60": 2.6,
     "969Handling": 103,
-
     "699TopSpeed": 208,
     "6990to60": 2.5,
-    "699Handling": 103
+    "699Handling": 103,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

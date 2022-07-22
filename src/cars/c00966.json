@@ -9,9 +9,10 @@
     "handling": 71,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Eco-Friendly"],
+    "tags": [
+        "Eco-Friendly"
+    ],
     "isPrize": false,
-
     "weight": 1609,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 18.99,
     "ola": 90.14,
     "description": "Opel's first mass market electric car and one of the last cars to be made under GM. Card by Connor",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/865597624643747840/D.OpelAmperae.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/827896522246848522/D.OpelAmperae.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/827896533496102933/D.OpelAmperae-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/827896552512553011/D.OpelAmperae-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/827896613862375454/D.OpelAmperae-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/827896592995975228/D.OpelAmperae-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/827896576000655431/D.OpelAmperae-699.png",
-
     "333TopSpeed": 99,
     "3330to60": 6.7,
     "333Handling": 73,
-
     "666TopSpeed": 104,
     "6660to60": 6.4,
     "666Handling": 76,
-
     "996TopSpeed": 110,
-    "9960to60": 6.0,
+    "9960to60": 6,
     "996Handling": 76,
-
     "969TopSpeed": 110,
     "9690to60": 6.4,
     "969Handling": 79,
-
     "699TopSpeed": 104,
-    "6990to60": 6.0,
-    "699Handling": 79
+    "6990to60": 6,
+    "699Handling": 79,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

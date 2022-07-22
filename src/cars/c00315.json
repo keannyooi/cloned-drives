@@ -9,9 +9,11 @@
     "handling": 67,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Rest of The World", "Muscle Car"],
+    "tags": [
+        "Rest of The World",
+        "Muscle Car"
+    ],
     "isPrize": false,
-
     "weight": 1375,
     "gc": "Medium",
     "seatCount": 4,
@@ -21,34 +23,24 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 76.35,
-    "ola": 91.80,
+    "ola": 91.8,
     "description": "Card by Johnny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/822153741464895548/cate-test.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/822153854715559996/Chrysler-Valiant-Charger-RT-E49.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/822153860088070154/Chrysler-Valiant-Charger-RT-E49-1-star.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/822153863036403772/Chrysler-Valiant-Charger-RT-E49-2-star.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/822153887079071795/Chrysler-Valiant-Charger-RT-E49-332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/822153878945529886/Chrysler-Valiant-Charger-RT-E49-323.png ",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/822153871635382303/Chrysler-Valiant-Charger-RT-E49-233.png",
-
     "333TopSpeed": 143,
     "3330to60": 5.8,
     "333Handling": 69,
-
     "666TopSpeed": 146,
     "6660to60": 5.5,
     "666Handling": 71,
-
     "996TopSpeed": 150,
     "9960to60": 5.2,
     "996Handling": 71,
-
     "969TopSpeed": 150,
     "9690to60": 5.5,
     "969Handling": 74,
-
     "699TopSpeed": 146,
     "6990to60": 5.2,
-    "699Handling": 74
+    "699Handling": 74,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

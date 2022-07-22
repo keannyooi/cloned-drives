@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1505,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 64.88,
     "ola": 71.22,
     "description": "Citroen ready for the 90s. Card by Andu",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819903513396117504/XMV6.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819903651039805480/XM.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819903660812402719/XM1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819903667197050880/XM2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819903694048067624/XM996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819903686331072542/XM969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819903676617064468/XM699.png",
-
     "333TopSpeed": 138,
     "3330to60": 8.8,
     "333Handling": 74,
-
     "666TopSpeed": 142,
     "6660to60": 8.4,
     "666Handling": 77,
-
     "996TopSpeed": 146,
     "9960to60": 7.9,
     "996Handling": 77,
-
     "969TopSpeed": 146,
     "9690to60": 8.4,
     "969Handling": 80,
-
-	"699TopSpeed": 142,
+    "699TopSpeed": 142,
     "6990to60": 7.9,
-    "699Handling": 80
+    "699Handling": 80,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

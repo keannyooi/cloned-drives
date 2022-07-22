@@ -9,9 +9,10 @@
     "handling": 70,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Eco-Friendly"],
+    "tags": [
+        "Eco-Friendly"
+    ],
     "isPrize": false,
-
     "weight": 1667,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 52.42,
     "ola": 79.49,
     "description": "Two Cylinders Go Missing, a Battery Fills In. Card by Connor",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/834502198065889280/D.ToyotaAvalonHybridLTD.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/834502540925075527/D.ToyotaAvalonHybridLTD.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/834502564430741564/D.ToyotaAvalonHybridLTD-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/834502599863697478/D.ToyotaAvalonHybridLTD-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/834502652690956309/D.ToyotaAvalonHybridLTD-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/834502645762359326/D.ToyotaAvalonHybridLTD-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/834502618423754813/D.ToyotaAvalonHybridLTD-699.png",
-
     "333TopSpeed": 121,
     "3330to60": 7.4,
     "333Handling": 72,
-
     "666TopSpeed": 126,
-    "6660to60": 7.0,
+    "6660to60": 7,
     "666Handling": 75,
-
     "996TopSpeed": 130,
     "9960to60": 6.6,
     "996Handling": 75,
-
     "969TopSpeed": 130,
-    "9690to60": 7.0,
+    "9690to60": 7,
     "969Handling": 78,
-
     "699TopSpeed": 126,
     "6990to60": 6.6,
-    "699Handling": 78
+    "699Handling": 78,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

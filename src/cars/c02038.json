@@ -9,9 +9,12 @@
     "handling": 92,
     "driveType": "4WD",
     "tyreType": "Slick",
-    "tags": ["Motorsport", "Unique", "Concept"],
+    "tags": [
+        "Motorsport",
+        "Unique",
+        "Concept"
+    ],
     "isPrize": true,
-
     "weight": 910,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +26,22 @@
     "mra": 94.2,
     "ola": 90.9,
     "description": "The final evolution of the Delta, unfortunately did not make it to production. Card by Lemon.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/947972214379151370/Lancia_ECV2.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/947971968181878784/Lancia_ECV2_Stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/947972028726665277/Lancia_ECV2_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/947972057268908042/Lancia_ECV2_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/947972125225021510/Lancia_ECV2_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/947972105796993074/Lancia_ECV2_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/947972087971213322/Lancia_ECV2_699.png",
-
     "333TopSpeed": 142,
     "3330to60": 2.1,
     "333Handling": 95,
-
     "666TopSpeed": 146,
-    "6660to60": 2.0,
+    "6660to60": 2,
     "666Handling": 98,
-
     "996TopSpeed": 149,
     "9960to60": 1.9,
     "996Handling": 98,
-
     "969TopSpeed": 149,
-    "9690to60": 2.0,
+    "9690to60": 2,
     "969Handling": 102,
-
     "699TopSpeed": 146,
     "6990to60": 1.9,
-    "699Handling": 102
+    "699Handling": 102,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

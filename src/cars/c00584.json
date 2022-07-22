@@ -9,9 +9,13 @@
     "handling": 73,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Motorsport", "Supercar", "Ultra Expensive", "Unique"],
+    "tags": [
+        "Motorsport",
+        "Supercar",
+        "Ultra Expensive",
+        "Unique"
+    ],
     "isPrize": true,
-
     "weight": 1040,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +27,22 @@
     "mra": 70.69,
     "ola": 102.44,
     "description": "The competition spec E-Type. Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819950054394691644/ETypeComp.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819950324454129673/etype.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819950329410879498/etype333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819950335614910526/etype666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819950359224647700/etype996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819950351746334781/etype969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819950344011644979/etype699.png",
-
     "333TopSpeed": 173,
     "3330to60": 3.9,
     "333Handling": 75,
-
     "666TopSpeed": 176,
     "6660to60": 3.7,
     "666Handling": 78,
-
     "996TopSpeed": 179,
     "9960to60": 3.5,
     "996Handling": 78,
-
-	"969TopSpeed": 179,
+    "969TopSpeed": 179,
     "9690to60": 3.7,
     "969Handling": 81,
-
-	"699TopSpeed": 176,
+    "699TopSpeed": 176,
     "6990to60": 3.5,
-    "699Handling": 81
+    "699Handling": 81,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

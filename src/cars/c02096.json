@@ -1,6 +1,9 @@
 {
     "rq": 1,
-    "make": ["Aston-Martin", "Aston Martin"],
+    "make": [
+        "Aston-Martin",
+        "Aston Martin"
+    ],
     "model": "Prototype A2 'Bunny'",
     "modelYear": 1920,
     "country": "GB",
@@ -9,9 +12,13 @@
     "handling": 47,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Concept", "Unqiue", "Ultra Expensive", "Motorsport"],
+    "tags": [
+        "Concept",
+        "Unqiue",
+        "Ultra Expensive",
+        "Motorsport"
+    ],
     "isPrize": true,
-
     "weight": 721,
     "gc": "Medium",
     "seatCount": 2,
@@ -23,32 +30,22 @@
     "mra": 0,
     "ola": 54.47,
     "description": "Bnuuy car!, Bnuuy car!, Bnuuy car! Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/957983096219795546/A2Bunny.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/957983421852975135/bnuuycar.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/957983429599842304/bnuuycar1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/957983439351607356/bnuuycar2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/957983459677208616/bnuuycar996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/957983453272498187/bnuuycar969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/957983447006212167/bnuuycar699.png",
-
     "333TopSpeed": 85,
     "3330to60": 25.5,
     "333Handling": 49,
-
     "666TopSpeed": 91,
     "6660to60": 24.1,
     "666Handling": 50,
-
     "996TopSpeed": 98,
     "9960to60": 22.8,
     "996Handling": 50,
-
     "969TopSpeed": 98,
     "9690to60": 24.1,
     "969Handling": 52,
-
     "699TopSpeed": 91,
     "6990to60": 22.8,
-    "699Handling": 52
+    "699Handling": 52,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

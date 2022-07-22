@@ -9,9 +9,11 @@
     "handling": 83,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Unique","The Japanese Odyssey"],
+    "tags": [
+        "Unique",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1050,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +25,22 @@
     "mra": 63.33,
     "ola": 77.19,
     "description": "Toyota is known most for their reliable/mundane vehicles, but whatever the heck this is speaks a lot about what the Japanese manufacturer can do without any constraints. Card by Keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/861147257016942602/toyota_aygo_crazy.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/861144581802426388/aygo_crazy_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/861144588437159936/aygo_crazy_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/861144593550147604/aygo_crazy_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/861144607479431208/aygo_crazy_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/861144602941063168/aygo_crazy_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/861144598805086218/aygo_crazy_699.jpg",
-
     "333TopSpeed": 131,
     "3330to60": 5.4,
     "333Handling": 86,
-
     "666TopSpeed": 135,
     "6660to60": 5.1,
     "666Handling": 88,
-
     "996TopSpeed": 139,
     "9960to60": 4.8,
     "996Handling": 88,
-
     "969TopSpeed": 139,
     "9690to60": 5.1,
     "969Handling": 92,
-
     "699TopSpeed": 135,
     "6990to60": 4.8,
-    "699Handling": 92
+    "699Handling": 92,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

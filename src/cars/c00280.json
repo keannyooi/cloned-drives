@@ -9,9 +9,11 @@
     "handling": 94,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Supercar", "Track Day"],
+    "tags": [
+        "Supercar",
+        "Track Day"
+    ],
     "isPrize": true,
-
     "weight": 1669,
     "gc": "Low",
     "seatCount": 2,
@@ -21,34 +23,24 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 93.93,
-    "ola": 90.00,
+    "ola": 90,
     "description": "The most extreme, powerful, the most everything Corvette ever. Card by Connor.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/934143865953353738/S.ChevyCorvetteZR1C7.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/934143947486408744/ChevyCorvetteZR1.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/934143965098307664/ChevyCorvetteZR1-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/934143987395231764/ChevyCorvetteZR1-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/934144042864885880/ChevyCorvetteZR1-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/934144022874845194/ChevyCorvetteZR1-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/934144002599559178/ChevyCorvetteZR1-699.png",
-
     "333TopSpeed": 214,
     "3330to60": 2.9,
     "333Handling": 97,
-
     "666TopSpeed": 217,
     "6660to60": 2.8,
     "666Handling": 100,
-
     "996TopSpeed": 219,
     "9960to60": 2.6,
     "996Handling": 100,
-
     "969TopSpeed": 219,
     "9690to60": 2.8,
     "969Handling": 104,
-
     "699TopSpeed": 217,
     "6990to60": 2.6,
-    "699Handling": 104
+    "699Handling": 104,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

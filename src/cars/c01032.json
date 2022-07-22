@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1085,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 55.86,
     "ola": 74.07,
     "description": "A Peugeot in the USA just before they withdrew their cars away. Card by DodgeDemon",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/824644824572493904/405mi16thingy.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824645006606336020/pigot.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824645011878314004/pigot333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824645019188985927/pigot666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824645043578994749/pigot996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824645035928322068/pigot969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824645027129065532/pigot699.png",
-
     "333TopSpeed": 139,
     "3330to60": 7.7,
     "333Handling": 80,
-
     "666TopSpeed": 143,
     "6660to60": 7.3,
     "666Handling": 82,
-
-	"996TopSpeed": 147,
+    "996TopSpeed": 147,
     "9960to60": 6.9,
     "996Handling": 82,
-
     "969TopSpeed": 147,
     "9690to60": 7.3,
     "969Handling": 85,
-
-	"699TopSpeed": 143,
+    "699TopSpeed": 143,
     "6990to60": 6.9,
-    "699Handling": 85
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

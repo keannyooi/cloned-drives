@@ -1,18 +1,21 @@
-﻿{
+{
     "rq": 15,
     "make": "General Motors",
     "model": "EV1 CNG",
     "modelYear": 1998,
     "country": "US",
     "topSpeed": 80,
-    "0to60": 11.0,
+    "0to60": 11,
     "handling": 68,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Eco-Friendly", "Innovative", "Unique"],
+    "tags": [
+        "Eco-Friendly",
+        "Innovative",
+        "Unique"
+    ],
     "isPrize": false,
-
-    "weight": 901, 
+    "weight": 901,
     "gc": "Low",
     "seatCount": 2,
     "bodyStyle": "Coupe",
@@ -23,32 +26,22 @@
     "mra": 38.69,
     "ola": 70.91,
     "description": "The only non-electric EV1, with disappointing performance. Card by keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/865584829436395570/general_motors_ev1_cng.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/840079033986711562/fake_ev1_000.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/840079039816794112/fake_ev1_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/840079046490587136/fake_ev1_666.jpg",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/840079066622459945/fake_ev1_996.jpg",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/840079060972994560/fake_ev1_969.jpg",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/840079052696977408/fake_ev1_699.jpg",
-
     "333TopSpeed": 87,
     "3330to60": 10.5,
     "333Handling": 69,
-
     "666TopSpeed": 93,
     "6660to60": 9.9,
     "666Handling": 71,
-
     "996TopSpeed": 100,
     "9960to60": 9.4,
     "996Handling": 71,
-
     "969TopSpeed": 100,
     "9690to60": 9.9,
     "969Handling": 74,
-
     "699TopSpeed": 93,
     "6990to60": 9.4,
-    "699Handling": 74
+    "699Handling": 74,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

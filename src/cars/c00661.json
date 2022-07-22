@@ -9,9 +9,10 @@
     "handling": 70,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Grand Tourer"],
+    "tags": [
+        "Grand Tourer"
+    ],
     "isPrize": false,
-
     "weight": 1450,
     "gc": "Low",
     "seatCount": 4,
@@ -23,32 +24,22 @@
     "mra": 77.27,
     "ola": 94.12,
     "description": "It was Feruccio Lamborghini's favorite car. Card by Spence.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/847170692679991366/image0.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/847170742373974036/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/847170757281054730/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/847170772551335946/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/847170814474190878/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/847170800608215040/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/847170786095792209/image0.jpg",
-
     "333TopSpeed": 165,
     "3330to60": 5.4,
     "333Handling": 72,
-
     "666TopSpeed": 168,
     "6660to60": 5.1,
     "666Handling": 75,
-
     "996TopSpeed": 172,
     "9960to60": 4.8,
     "996Handling": 75,
-
     "969TopSpeed": 172,
     "9690to60": 5.1,
     "969Handling": 78,
-
     "699TopSpeed": 168,
     "6990to60": 4.8,
-    "699Handling": 78
+    "699Handling": 78,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

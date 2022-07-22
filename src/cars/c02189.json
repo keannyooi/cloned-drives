@@ -9,9 +9,12 @@
     "handling": 93,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Eargasm", "Motorsport", "Unique"],
+    "tags": [
+        "Eargasm",
+        "Motorsport",
+        "Unique"
+    ],
     "isPrize": true,
-
     "weight": 998,
     "gc": "Low",
     "seatCount": 2,
@@ -20,35 +23,25 @@
     "abs": true,
     "enginePos": "Middle",
     "fuelType": "Petrol",
-    "mra": 85.00,
+    "mra": 85,
     "ola": 70.59,
     "description": "Card by Tom.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/950083792767422474/Lotus_Exige_Race_380_2017.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/950346316242907136/R380_111.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/950346324786708480/R380_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/950346328750305311/R380_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/950346350216740914/R380_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/950346344353103892/R380_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/950346333305311242/R380_699.jpg",
-
     "333TopSpeed": 185,
     "3330to60": 3.2,
     "333Handling": 96,
-
     "666TopSpeed": 188,
     "6660to60": 3.1,
     "666Handling": 99,
-
     "996TopSpeed": 191,
     "9960to60": 2.9,
     "996Handling": 99,
-
     "969TopSpeed": 191,
     "9690to60": 3.1,
     "969Handling": 103,
-
     "699TopSpeed": 188,
     "6990to60": 2.9,
-    "699Handling": 103
+    "699Handling": 103,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

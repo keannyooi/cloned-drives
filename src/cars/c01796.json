@@ -5,13 +5,14 @@
     "modelYear": 1997,
     "country": "JP",
     "topSpeed": 112,
-    "0to60": 8.0,
+    "0to60": 8,
     "handling": 72,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1620,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 53.33,
     "ola": 82.5,
     "description": "Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/968272974870380544/Stagea25X4Aero.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/968273809192927232/Stagea25XFourAero.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/968273814712619008/Stagea25XFourAero1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/968273821398351902/Stagea25XFourAero2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/968273842516672542/Stagea25XFourAero996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/968273835721916446/Stagea25XFourAero969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/968273828725792818/Stagea25XFourAero699.png",
-
     "333TopSpeed": 117,
     "3330to60": 7.6,
     "333Handling": 74,
-
     "666TopSpeed": 121,
     "6660to60": 7.2,
     "666Handling": 77,
-
     "996TopSpeed": 126,
     "9960to60": 6.8,
     "996Handling": 77,
-
     "969TopSpeed": 126,
     "9690to60": 7.2,
     "969Handling": 80,
-
     "699TopSpeed": 121,
     "6990to60": 6.8,
-    "699Handling": 80
+    "699Handling": 80,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

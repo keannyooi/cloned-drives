@@ -1,6 +1,9 @@
 {
     "rq": 75,
-    "make": ["Alpina", "BMW" ],
+    "make": [
+        "Alpina",
+        "BMW"
+    ],
     "model": "B6 Bi-Turbo Gran Coupe Allrad",
     "modelYear": 2014,
     "country": "DE",
@@ -9,9 +12,11 @@
     "handling": 83,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Super Sedan", "Grand Tourer"],
+    "tags": [
+        "Super Sedan",
+        "Grand Tourer"
+    ],
     "isPrize": false,
-
     "weight": 2149,
     "gc": "Low",
     "seatCount": 5,
@@ -23,32 +28,22 @@
     "mra": 72.55,
     "ola": 86.49,
     "description": "Sedan go brrrr. card by bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/846703159739940874/B6allrad2014.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/846703671122067476/AlpinaB614.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/846703677624156190/AlpinaB614333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/846703684225466388/AlpinaB614666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/846703709165191178/AlpinaB614996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/846703700172472340/AlpinaB614969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/846703691103993866/AlpinaB614699.png",
-
     "333TopSpeed": 201,
     "3330to60": 3.5,
     "333Handling": 86,
-
     "666TopSpeed": 203,
     "6660to60": 3.3,
     "666Handling": 88,
-
     "996TopSpeed": 206,
     "9960to60": 3.1,
     "996Handling": 88,
-
     "969TopSpeed": 206,
     "9690to60": 3.3,
     "969Handling": 92,
-
     "699TopSpeed": 203,
     "6990to60": 3.1,
-    "699Handling": 92
+    "699Handling": 92,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

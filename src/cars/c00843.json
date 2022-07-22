@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1305,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 59.68,
     "ola": 70.86,
     "description": "Card by Havvy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/827183163280851034/Mercedes-Benz190E2.3-16.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/827183217035313192/000_190e2.3.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/827183222219735054/111_190e2.3.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/827183225859866624/222_190e2.3.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/827183244512198716/332_190e2.3.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/827183240347385866/323_190e2.3.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/827183233715666954/233_190e2.3.png",
-
     "333TopSpeed": 145,
     "3330to60": 7.2,
     "333Handling": 72,
-
     "666TopSpeed": 148,
     "6660to60": 6.8,
     "666Handling": 75,
-
     "996TopSpeed": 152,
     "9960to60": 6.5,
     "996Handling": 75,
-
     "969TopSpeed": 152,
     "9690to60": 6.8,
     "969Handling": 78,
-
     "699TopSpeed": 148,
     "6990to60": 6.5,
-    "699Handling": 78
+    "699Handling": 78,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -9,9 +9,10 @@
     "handling": 79,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Rest of The World"],
+    "tags": [
+        "Rest of The World"
+    ],
     "isPrize": false,
-
     "weight": 1290,
     "gc": "Medium",
     "seatCount": 5,
@@ -21,34 +22,24 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 46.44,
-    "ola": 81.70,
+    "ola": 81.7,
     "description": "Kia's funk recipe guarantees civilized fun. Card by Exist",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/824738619482832896/CD_Kia_Soul_X-Line.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824739530698653746/SoulX.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824739538274484255/SoulX1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/835812197145116672/unknown.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824739571442647070/SoulX996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824739563980718140/SoulX969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824739555546365962/SoulX699.png",
-
     "333TopSpeed": 124,
     "3330to60": 7.4,
     "333Handling": 82,
-
     "666TopSpeed": 129,
-    "6660to60": 7.0,
+    "6660to60": 7,
     "666Handling": 84,
-
-	"996TopSpeed": 133,
+    "996TopSpeed": 133,
     "9960to60": 6.6,
     "996Handling": 84,
-
     "969TopSpeed": 133,
-    "9690to60": 7.0,
+    "9690to60": 7,
     "969Handling": 88,
-
-	"699TopSpeed": 129,
+    "699TopSpeed": 129,
     "6990to60": 6.6,
-    "699Handling": 88
+    "699Handling": 88,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

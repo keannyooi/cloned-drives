@@ -11,7 +11,6 @@
     "tyreType": "All-Surface",
     "tags": [],
     "isPrize": false,
-
     "weight": 1856,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 49.28,
     "ola": 71.84,
     "description": "Seemingly useless slightly rugged Insignia wagon. Card by Connor.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/858672929323614208/D.OpelInsigniaCT20CDTI4x4ALL.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/858673261793247242/OpelInsigniaCT.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/858673279069585468/OpelInsigniaCT-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/858673290255532072/OpelInsigniaCT-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/858673332424671233/OpelInsigniaCT-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/858673322962059264/OpelInsigniaCT-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/858673303655940096/OpelInsigniaCT-699.png",
-
     "333TopSpeed": 131,
     "3330to60": 9.8,
     "333Handling": 76,
-
     "666TopSpeed": 135,
     "6660to60": 9.3,
     "666Handling": 79,
-
     "996TopSpeed": 139,
     "9960to60": 8.8,
     "996Handling": 79,
-
     "969TopSpeed": 139,
     "9690to60": 9.3,
     "969Handling": 82,
-
     "699TopSpeed": 135,
     "6990to60": 8.8,
-    "699Handling": 82
+    "699Handling": 82,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

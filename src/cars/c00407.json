@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 985,
     "gc": "Low",
     "seatCount": 4,
@@ -23,32 +22,22 @@
     "mra": 34.83,
     "ola": 57.43,
     "description": "A sporty-ish version of the small 500. Card by Andu",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/821493219585163284/500Sport.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821493569658945556/500S.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821493579796709396/500S1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821493584594731028/500S2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821493603611312188/500S996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821493598700044348/500S969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821493590198583327/500S699.png",
-
     "333TopSpeed": 116,
     "3330to60": 9.6,
     "333Handling": 76,
-
     "666TopSpeed": 120,
     "6660to60": 9.1,
     "666Handling": 79,
-
-  	"996TopSpeed": 125,
+    "996TopSpeed": 125,
     "9960to60": 8.6,
     "996Handling": 79,
-
     "969TopSpeed": 125,
     "9690to60": 9.1,
     "969Handling": 82,
-
-	  "699TopSpeed": 120,
+    "699TopSpeed": 120,
     "6990to60": 8.6,
-    "699Handling": 82
+    "699Handling": 82,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -9,9 +9,11 @@
     "handling": 87,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Supercar", "Silver Screen"],
+    "tags": [
+        "Supercar",
+        "Silver Screen"
+    ],
     "isPrize": false,
-
     "weight": 1360,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +25,22 @@
     "mra": 76.06,
     "ola": 77.78,
     "description": "Supercate. Card by Havvy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/863864145875435570/LamboGallardoSuperleggera.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/863864219857584158/superleggera_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/863864222546788372/superleggera_111.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/863864227033776178/superleggera_222.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/863864247162765352/superleggera_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/863864243602456587/superleggera_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/863864236824461334/superleggera_233.png",
-
     "333TopSpeed": 199,
     "3330to60": 3.4,
     "333Handling": 90,
-
     "666TopSpeed": 201,
     "6660to60": 3.2,
     "666Handling": 93,
-
     "996TopSpeed": 204,
     "9960to60": 3.1,
     "996Handling": 93,
-
     "969TopSpeed": 204,
     "9690to60": 3.2,
     "969Handling": 97,
-
     "699TopSpeed": 201,
     "6990to60": 3.1,
-    "699Handling": 97
+    "699Handling": 97,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

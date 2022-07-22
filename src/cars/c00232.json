@@ -9,9 +9,12 @@
     "handling": 72,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Muscle Car", "Servers Choice", "Style Icon"],
+    "tags": [
+        "Muscle Car",
+        "Servers Choice",
+        "Style Icon"
+    ],
     "isPrize": true,
-
     "weight": 1470,
     "gc": "Medium",
     "seatCount": 5,
@@ -21,34 +24,24 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 59.08,
-    "ola": 88.00,
+    "ola": 88,
     "description": "Lord Vader, your car is ready. Card by keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819383080258633798/gnx.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819437764709449768/gnx_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819437773181681666/gnx_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819437778710167562/gnx_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819437818937737226/gnx_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819437806073544744/gnx_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819437795558293514/gnx_699.jpg",
-
     "333TopSpeed": 128,
     "3330to60": 4.6,
     "333Handling": 74,
-
     "666TopSpeed": 132,
     "6660to60": 4.3,
     "666Handling": 77,
-
     "996TopSpeed": 137,
     "9960to60": 4.1,
     "996Handling": 77,
-
     "969TopSpeed": 137,
     "9690to60": 4.3,
     "969Handling": 80,
-
-	"699TopSpeed": 132,
+    "699TopSpeed": 132,
     "6990to60": 4.1,
-    "699Handling": 80
+    "699Handling": 80,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

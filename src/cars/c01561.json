@@ -9,9 +9,12 @@
     "handling": 71,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Kei Car", "Motorsport","The Japanese Odyssey"],
+    "tags": [
+        "Kei Car",
+        "Motorsport",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 660,
     "gc": "Low",
     "seatCount": 4,
@@ -23,32 +26,22 @@
     "mra": 49.32,
     "ola": 73.97,
     "description": "An S800 race car that was established by Honda's racing firm, RSC that famously won 12 hours of Suzuka in its class and finished 3rd overall, ahead of the much powerful cars and behind the Toyota 7s. Card by Spence.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/862150769390256168/image0.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/862155212281217054/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/862155238751469588/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/862155276895125533/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/862155295492800532/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/862155360119160862/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/862155409371824137/image0.jpg",
-
     "333TopSpeed": 124,
     "3330to60": 6.9,
     "333Handling": 73,
-
     "666TopSpeed": 129,
     "6660to60": 6.6,
     "666Handling": 76,
-
     "699TopSpeed": 129,
     "6990to60": 6.2,
     "699Handling": 79,
-
     "969TopSpeed": 133,
     "9690to60": 6.6,
     "969Handling": 79,
-
     "996TopSpeed": 133,
     "9960to60": 6.2,
-    "996Handling": 76
+    "996Handling": 76,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

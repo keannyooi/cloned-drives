@@ -9,9 +9,11 @@
     "handling": 77,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Street Racer","The Japanese Odyssey"],
+    "tags": [
+        "Street Racer",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1381,
     "gc": "Medium",
     "seatCount": 2,
@@ -23,32 +25,22 @@
     "mra": 63.72,
     "ola": 67.15,
     "description": "Card by DodgeDemon",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/971796695715291136/Mazda_RX-7_TII_Conv_1989.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/971801193082925146/Mazda_RX-7_TII_Conv_1989_H000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/971801210606718976/Mazda_RX-7_TII_Conv_1989_H111.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/971801229602750525/Mazda_RX-7_TII_Conv_1989_H222.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/971801293922402384/Mazda_RX-7_TII_Conv_1989_H332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/971801275748458506/Mazda_RX-7_TII_Conv_1989_H323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/971801247910871090/Mazda_RX-7_TII_Conv_1989_H233.png",
-
     "333TopSpeed": 147,
     "3330to60": 6.6,
     "333Handling": 80,
-
     "666TopSpeed": 150,
     "6660to60": 6.2,
     "666Handling": 82,
-
     "996TopSpeed": 154,
     "9960to60": 5.9,
     "996Handling": 82,
-
     "969TopSpeed": 154,
     "9690to60": 6.2,
     "969Handling": 85,
-
     "699TopSpeed": 150,
     "6990to60": 5.9,
-    "699Handling": 85
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

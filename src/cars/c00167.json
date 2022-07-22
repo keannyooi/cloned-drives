@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1725,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 76.54,
     "ola": 81.48,
     "description": "A great sports car disguised as a luxury sedan. Card by Macan.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/825087097605587013/540i.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/825087219236077588/540i.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/825087224928403487/540i1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/825087230556110898/540i2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/825087250919587910/540i996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/825087245236568074/540i969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/825087236869455882/540i699.png",
-
     "333TopSpeed": 158,
     "3330to60": 5.9,
     "333Handling": 74,
-
     "666TopSpeed": 162,
     "6660to60": 5.6,
     "666Handling": 77,
-
     "996TopSpeed": 165,
     "9960to60": 5.3,
     "996Handling": 77,
-
     "969TopSpeed": 165,
     "9690to60": 5.6,
     "969Handling": 80,
-
-	"699TopSpeed": 162,
+    "699TopSpeed": 162,
     "6990to60": 5.3,
-    "699Handling": 80
+    "699Handling": 80,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

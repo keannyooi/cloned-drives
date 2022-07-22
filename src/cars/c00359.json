@@ -9,9 +9,12 @@
     "handling": 86,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Muscle Car", "Super Sedan", "Silver Screen"],
+    "tags": [
+        "Muscle Car",
+        "Super Sedan",
+        "Silver Screen"
+    ],
     "isPrize": false,
-
     "weight": 2080,
     "gc": "Low",
     "seatCount": 4,
@@ -20,35 +23,25 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 88.10,
-    "ola": 97.30,
+    "mra": 88.1,
+    "ola": 97.3,
     "description": "The W I D E B O I by DodgeDemon.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/821954038714728478/2020_Dodge_Charger_SRT_Thicc_Cate.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826224177186471956/bluecharger.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826224184333172756/bluecharger333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826224195456991252/bluecharger666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826224218307297321/bluecharger996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826224210468798464/bluecharger969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826224203371511808/bluecharger699.png",
-
     "333TopSpeed": 199,
     "3330to60": 3.5,
     "333Handling": 89,
-
     "666TopSpeed": 201,
     "6660to60": 3.3,
     "666Handling": 92,
-
     "996TopSpeed": 204,
     "9960to60": 3.1,
     "996Handling": 92,
-
-	"969TopSpeed": 204,
+    "969TopSpeed": 204,
     "9690to60": 3.3,
     "969Handling": 95,
-
     "699TopSpeed": 201,
     "6990to60": 3.1,
-    "699Handling": 95
+    "699Handling": 95,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

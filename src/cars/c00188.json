@@ -9,9 +9,10 @@
     "handling": 78,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Super Sedan"],
+    "tags": [
+        "Super Sedan"
+    ],
     "isPrize": false,
-
     "weight": 1795,
     "gc": "Low",
     "seatCount": 4,
@@ -21,34 +22,24 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 70.59,
-    "ola": 87.50,
+    "ola": 87.5,
     "description": "Card by keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819383426384658452/m5_e39.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819483574851076108/m5_e39_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819483583046877204/m5_e39_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819483589837717555/m5_e39_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819483624696709130/m5_e39_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819483612041707530/m5_e39_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819483603112558602/m5_e39_699.jpg",
-
     "333TopSpeed": 160,
     "3330to60": 4.6,
     "333Handling": 81,
-
     "666TopSpeed": 164,
     "6660to60": 4.3,
     "666Handling": 83,
-
-	"996TopSpeed": 167,
+    "996TopSpeed": 167,
     "9960to60": 4.1,
     "996Handling": 83,
-
     "969TopSpeed": 167,
     "9690to60": 4.3,
     "969Handling": 87,
-
-	"699TopSpeed": 164,
+    "699TopSpeed": 164,
     "6990to60": 4.1,
-    "699Handling": 87
+    "699Handling": 87,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -9,9 +9,13 @@
     "handling": 49,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Oddity", "Servers Choice", "Style Icon", "Unique"],
+    "tags": [
+        "Oddity",
+        "Servers Choice",
+        "Style Icon",
+        "Unique"
+    ],
     "isPrize": false,
-
     "weight": 56,
     "gc": "Low",
     "seatCount": 1,
@@ -20,35 +24,25 @@
     "abs": false,
     "enginePos": "Rear",
     "fuelType": "Petrol",
-    "mra": 0.00,
-    "ola": 0.00,
+    "mra": 0,
+    "ola": 0,
     "description": "Officially recognised as the smallest production car ever, it's also the lightest. Card by bnuuy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/823502138956578887/peelp50.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823502258305499146/p50.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823502263061970954/p50333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823502269961470012/p50666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823502298029228062/p50996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823502288055304222/p50969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823502278937149440/p50699.png",
-
     "333TopSpeed": 47,
     "3330to60": 99.9,
     "333Handling": 51,
-
     "666TopSpeed": 55,
     "6660to60": 99.9,
     "666Handling": 52,
-
-	"996TopSpeed": 64,
+    "996TopSpeed": 64,
     "9960to60": 55.3,
     "996Handling": 52,
-
     "969TopSpeed": 64,
     "9690to60": 58.5,
     "969Handling": 54,
-
     "699TopSpeed": 55,
     "6990to60": 99.9,
-    "699Handling": 54
+    "699Handling": 54,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

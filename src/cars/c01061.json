@@ -1,4 +1,4 @@
-﻿{
+{
     "rq": 63,
     "make": "Porsche",
     "model": "911 Carrera",
@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1315,
     "gc": "Low",
     "seatCount": 4,
@@ -20,36 +19,25 @@
     "abs": true,
     "enginePos": "Rear",
     "fuelType": "Petrol",
-    "mra": 74.90,
+    "mra": 74.9,
     "ola": 72.34,
     "description": "Omg a 911 Carrera is right by us!!!. Card by Havvy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/826806061985824768/Porsche911Carrera.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826806107309211678/000_carrer.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826806111960563722/111_carrer.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826806116280172594/222_carrer.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826806134388031518/332_carrer.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826806128913416212/323_carrer.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826806122806640680/233_carrer.png",
-
-
     "333TopSpeed": 180,
     "3330to60": 4.5,
     "333Handling": 86,
-
     "666TopSpeed": 183,
-    "6660to60": 4.2, 
+    "6660to60": 4.2,
     "666Handling": 88,
-
     "996TopSpeed": 186,
-    "9960to60": 4.0,
+    "9960to60": 4,
     "996Handling": 88,
-
     "969TopSpeed": 186,
     "9690to60": 4.2,
     "969Handling": 92,
-
     "699TopSpeed": 183,
-    "6990to60": 4.0,
-    "699Handling": 92
+    "6990to60": 4,
+    "699Handling": 92,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

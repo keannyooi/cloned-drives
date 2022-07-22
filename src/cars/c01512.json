@@ -11,7 +11,6 @@
     "tyreType": "All-Surface",
     "tags": [],
     "isPrize": false,
-
     "weight": 2205,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 70.44,
     "ola": 64.28,
     "description": "Card by Lemonade.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/879296611228991508/Porsche_Cayenne_GTS.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/879296382148689920/Porsche_Cayenne_GTS_Stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/879296413245276190/Porsche_Cayenne_GTS_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/879296450272571393/Porsche_Cayenne_GTS_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/879296529775599657/Porsche_Cayenne_GTS_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/879296505125679114/Porsche_Cayenne_GTS_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/879296475853623296/Porsche_Cayenne_GTS_699.png",
-
     "333TopSpeed": 164,
     "3330to60": 5.3,
     "333Handling": 88,
-
     "666TopSpeed": 167,
-    "6660to60": 5.0,
+    "6660to60": 5,
     "666Handling": 91,
-
     "996TopSpeed": 171,
     "9960to60": 4.8,
     "996Handling": 91,
-
     "969TopSpeed": 171,
-    "9690to60": 5.0,
+    "9690to60": 5,
     "969Handling": 94,
-
     "699TopSpeed": 167,
     "6990to60": 4.8,
-    "699Handling": 94
+    "699Handling": 94,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

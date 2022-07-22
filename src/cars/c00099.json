@@ -9,9 +9,10 @@
     "handling": 83,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["The Royal Collection"],
+    "tags": [
+        "The Royal Collection"
+    ],
     "isPrize": false,
-
     "weight": 1890,
     "gc": "Low",
     "seatCount": 4,
@@ -23,32 +24,22 @@
     "mra": 78.33,
     "ola": 89.36,
     "description": "Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/849757723913617448/viragevolante.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/849758451373965312/virageroadsterthingy.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/849758456742805525/virageroadsterthingy333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/849758462639603823/virageroadsterthingy666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/849758485196439603/virageroadsterthingy996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/849758479014559784/virageroadsterthingy969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/849758471107641354/virageroadsterthingy699.png",
-
     "333TopSpeed": 186,
     "3330to60": 4.5,
     "333Handling": 86,
-
     "666TopSpeed": 189,
     "6660to60": 4.2,
     "666Handling": 88,
-
     "996TopSpeed": 192,
-    "9960to60": 4.0,
+    "9960to60": 4,
     "996Handling": 88,
-
     "969TopSpeed": 192,
     "9690to60": 4.2,
     "969Handling": 92,
-
     "699TopSpeed": 189,
-    "6990to60": 4.0,
-    "699Handling": 92
+    "6990to60": 4,
+    "699Handling": 92,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

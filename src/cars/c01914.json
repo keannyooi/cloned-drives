@@ -9,9 +9,11 @@
     "handling": 74,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": ["Eco-Friendly","The Japanese Odyssey"],
+    "tags": [
+        "Eco-Friendly",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1710,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +25,22 @@
     "mra": 62.71,
     "ola": 70.27,
     "description": "Card by Macan.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/869483569611952178/RAV4_Hybrid_AWD_19.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/869484194873610300/Toyota_RAV4_Hybrid_AWD_2019_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/869484201966198784/Toyota_RAV4_Hybrid_AWD_2019_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/869484210535153684/Toyota_RAV4_Hybrid_AWD_2019_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/869484222220501022/Toyota_RAV4_Hybrid_AWD_2019_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/869484218839875604/Toyota_RAV4_Hybrid_AWD_2019_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/869484214377144360/Toyota_RAV4_Hybrid_AWD_2019_699.png",
-
     "333TopSpeed": 121,
-    "3330to60": 7.0,
+    "3330to60": 7,
     "333Handling": 76,
-
     "666TopSpeed": 126,
     "6660to60": 6.7,
     "666Handling": 79,
-
     "996TopSpeed": 130,
     "9960to60": 6.3,
     "996Handling": 79,
-
     "969TopSpeed": 130,
     "9690to60": 6.7,
     "969Handling": 82,
-
     "699TopSpeed": 126,
     "6990to60": 6.3,
-    "699Handling": 82
+    "699Handling": 82,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

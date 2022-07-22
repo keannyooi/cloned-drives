@@ -11,7 +11,6 @@
     "tyreType": "All-Surface",
     "tags": [],
     "isPrize": false,
-
     "weight": 2389,
     "gc": "High",
     "seatCount": 7,
@@ -23,32 +22,22 @@
     "mra": 53.33,
     "ola": 66.67,
     "description": "Lexus updates its aging yet versatile three-row SUV with a larger-than-ever spindle grille. Card by Macan",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/826073416137310258/Lexus_GX_460_Luxury_2020.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826073950211538974/gx460.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826073954702589992/gx460333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826073959006994462/gx460666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826073989242814484/gx460996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826073982028480582/gx460969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826073970256248862/gx460699.png",
-
     "333TopSpeed": 116,
     "3330to60": 6.8,
     "333Handling": 70,
-
     "666TopSpeed": 120,
     "6660to60": 6.5,
     "666Handling": 72,
-
     "996TopSpeed": 125,
     "9960to60": 6.1,
     "996Handling": 72,
-
     "969TopSpeed": 125,
     "9690to60": 6.5,
     "969Handling": 75,
-
     "699TopSpeed": 120,
     "6990to60": 6.1,
-    "699Handling": 75
+    "699Handling": 75,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

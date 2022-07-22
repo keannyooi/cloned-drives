@@ -9,9 +9,11 @@
     "handling": 77,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Muscle Car", "Street Racer"],
+    "tags": [
+        "Muscle Car",
+        "Street Racer"
+    ],
     "isPrize": false,
-
     "weight": 1476,
     "gc": "Low",
     "seatCount": 4,
@@ -23,33 +25,22 @@
     "mra": 60.43,
     "ola": 82.76,
     "description": "One of the best things about a standard Mustang 5.0 is its low-rpm squirt. This is where the Mustang Cobra frustrates. Sure, it's got the beans to rip your head off when you've strained the tach needle deep into the vast yellow zone, but drop below about 2500 rpm, and there's little forward thrust.. Card by Preston",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/826465964840189992/Ford_Mustang_SVT_Cobra_1993.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/822517786361593906/Cobra_thumb_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/822517821455335425/Cobra_thumb_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/822517849129353277/Cobra_thumb_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/822517946575224832/Cobra_thumb_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/822517919903645776/Cobra_thumb_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/822517883111211038/Cobra_thumb_699.png",
-
     "333TopSpeed": 145,
     "3330to60": 5.5,
     "333Handling": 80,
-
     "666TopSpeed": 148,
     "6660to60": 5.2,
     "666Handling": 82,
-
     "996TopSpeed": 152,
     "9960to60": 4.9,
     "996Handling": 82,
-
     "969TopSpeed": 152,
     "9690to60": 5.2,
     "969Handling": 85,
-
     "699TopSpeed": 148,
     "6990to60": 4.9,
-    "699Handling": 85
-
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -9,9 +9,10 @@
     "handling": 68,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Eco-Friendly"],
+    "tags": [
+        "Eco-Friendly"
+    ],
     "isPrize": false,
-
     "weight": 1858,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +24,22 @@
     "mra": 39.07,
     "ola": 67.42,
     "description": "",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819383537726914600/mirai.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819451338496540672/mirai_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819451349632024596/mirai_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819451356141715456/mirai_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819451395598057502/mirai_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819451381915058186/mirai_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819451372223070218/mirai_699.jpg",
-
     "333TopSpeed": 115,
     "3330to60": 8.7,
     "333Handling": 70,
-
     "666TopSpeed": 119,
-    "6660to60": 8.3, 
+    "6660to60": 8.3,
     "666Handling": 72,
-
     "996TopSpeed": 124,
     "9960to60": 7.8,
     "996Handling": 72,
-
     "969TopSpeed": 124,
     "9690to60": 8.3,
     "969Handling": 75,
-
     "699TopSpeed": 119,
     "6990to60": 7.8,
-    "699Handling": 75
+    "699Handling": 75,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

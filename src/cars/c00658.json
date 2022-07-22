@@ -9,9 +9,12 @@
     "handling": 93,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Supercar", "Track Day", "OG"],
+    "tags": [
+        "Supercar",
+        "Track Day",
+        "OG"
+    ],
     "isPrize": false,
-
     "weight": 1382,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +26,22 @@
     "mra": 77.29,
     "ola": 81.93,
     "description": "The very first card in Cloned Drives. Card by keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/836190350216527902/huracan_perf.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/836189118005510175/unknown.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/836189404611215400/unknown.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/836189792198721546/unknown.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/836190212681105458/unknown.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/836190042094698496/unknown.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/836189936192323595/unknown.png",
-
     "333TopSpeed": 206,
     "3330to60": 2.3,
     "333Handling": 96,
-
     "666TopSpeed": 208,
     "6660to60": 2.2,
     "666Handling": 99,
-
     "996TopSpeed": 211,
-    "9960to60": 2.0,
+    "9960to60": 2,
     "996Handling": 99,
-
     "969TopSpeed": 211,
     "9690to60": 2.2,
     "969Handling": 103,
-
     "699TopSpeed": 208,
-    "6990to60": 2.0,
-    "699Handling": 103
+    "6990to60": 2,
+    "699Handling": 103,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

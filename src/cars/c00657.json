@@ -9,9 +9,11 @@
     "handling": 91,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Supercar", "Silver Screen"],
+    "tags": [
+        "Supercar",
+        "Silver Screen"
+    ],
     "isPrize": false,
-
     "weight": 1553,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +25,22 @@
     "mra": 93.55,
     "ola": 75.86,
     "description": "One green AWD budget supercar. By DodgeDemon",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/821952211839615016/2014_Lamborghini_Huracan_LP610_4.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824288422909968394/h6104.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824288427646124052/h6104333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824288435723698216/h6104666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824288460915343420/h6104996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824288452002578482/h6104969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824288443827617812/h6104699.png",
-
     "333TopSpeed": 205,
     "3330to60": 2.8,
     "333Handling": 94,
-
     "666TopSpeed": 207,
     "6660to60": 2.6,
     "666Handling": 97,
-
     "996TopSpeed": 210,
     "9960to60": 2.5,
     "996Handling": 97,
-
     "969TopSpeed": 210,
     "9690to60": 2.6,
     "969Handling": 101,
-
     "699TopSpeed": 207,
     "6990to60": 2.5,
-    "699Handling": 101
+    "699Handling": 101,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

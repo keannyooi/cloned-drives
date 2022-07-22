@@ -16,7 +16,6 @@ const regenDealership = require("./src/util/functions/regenDealership.js");
 const profileModel = require("./src/models/profileSchema.js");
 const eventModel = require("./src/models/eventSchema.js");
 const offerModel = require("./src/models/offerSchema.js");
-const serverStatModel = require("./src/models/serverStatSchema.js");
 const prefix = bot.devMode ? process.env.DEV_PREFIX : process.env.BOT_PREFIX;
 const token = bot.devMode ? process.env.DEV_TOKEN : process.env.BOT_TOKEN;
 const commandFiles = readdirSync("./src/commands").filter(file => file.endsWith(".js"));
@@ -120,13 +119,6 @@ setInterval(async () => {
     }
 }, 180000);
 
-
-// setInterval(async () => {
-//     let channel = await bot.homeGuild.channels.fetch("715771423779455077");
-//     let aMessage = await channel.messages.fetch("996357896692584468");
-//     await bot.commands.get("openpack").execute(aMessage, ["elite"]);
-// }, 5000);
-
 schedule("59 23 * * *", async () => {
     try {
         await regenDealership();
@@ -140,23 +132,15 @@ schedule("59 23 * * *", async () => {
         return errorReport.sendReport();
     }
 
-    const playerDatum = await profileModel.find({});
-    const leaderboards = [];
-    for (let { userID, money, fuseTokens, trophies, rrStats, dailyStats } of playerDatum) {
+    const playerDatum = await profileModel.find({ "settings.senddealnotifs": true });
+    for (let { userID } of playerDatum) {
         let user = await bot.homeGuild.members.fetch(userID)
             .catch(() => "unable to find user, next");
-        if (typeof user !== "string" && !lbWhitelist.find(id => id === userID)) {
-            leaderboards.push({
-                user: user.user.tag,
-                money,
-                fuseTokens,
-                trophies,
-                rrStreak: rrStats.highestStreak,
-                dailyStreak: dailyStats.highestStreak
-            });
+        if (typeof user !== "string") {
+            await user.send("**Notification: The dealership has refreshed!**")
+                .catch(() => console.log(`unable to send notification to user ${userID}`));
         }
     }
-    await serverStatModel.updateOne({}, { leaderboards });
 });
 
 async function processCommand(message) {

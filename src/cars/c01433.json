@@ -1,6 +1,9 @@
 {
     "rq": 74,
-    "make": ["Norris Designs", "Mitsubishi"],
+    "make": [
+        "Norris Designs",
+        "Mitsubishi"
+    ],
     "model": "Colt Ralliart Time Attack",
     "modelYear": 2009,
     "country": "GB",
@@ -9,9 +12,11 @@
     "handling": 86,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Tuner", "Motorsport"],
+    "tags": [
+        "Tuner",
+        "Motorsport"
+    ],
     "isPrize": false,
-
     "weight": 890,
     "gc": "Low",
     "seatCount": 1,
@@ -23,32 +28,22 @@
     "mra": 107.89,
     "ola": 82.93,
     "description": "A quick lil hatch. Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/912490936850870322/NorrisColtTimeAttacc.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/912491339613102130/NorrisColtTimeAttack.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/912491352099553300/NorrisColtTimeAttack333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/912491367689769000/NorrisColtTimeAttack666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/912491396970205244/NorrisColtTimeAttack996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/912491385964351498/NorrisColtTimeAttack969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/912491378049687592/NorrisColtTimeAttack699.png",
-
     "333TopSpeed": 179,
     "3330to60": 3.9,
     "333Handling": 89,
-
     "666TopSpeed": 182,
     "6660to60": 3.7,
     "666Handling": 92,
-
     "996TopSpeed": 185,
     "9960to60": 3.5,
     "996Handling": 92,
-
     "969TopSpeed": 185,
     "9690to60": 3.7,
     "969Handling": 95,
-
     "699TopSpeed": 182,
     "6990to60": 3.5,
-    "699Handling": 95
+    "699Handling": 95,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

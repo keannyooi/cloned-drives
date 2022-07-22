@@ -5,13 +5,15 @@
     "modelYear": 1974,
     "country": "JP",
     "topSpeed": 103,
-    "0to60": 11.0,
+    "0to60": 11,
     "handling": 61,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Servers Choice", "Oddity"],
+    "tags": [
+        "Servers Choice",
+        "Oddity"
+    ],
     "isPrize": false,
-
     "weight": 1286,
     "gc": "High",
     "seatCount": 2,
@@ -23,32 +25,22 @@
     "mra": 32.93,
     "ola": 70.91,
     "description": "Wankel meets pickup. What could go wrong? Card by andu",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/822058707302744074/MazdaREPU.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/822059560466120724/epu.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/822059571748143124/epu1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/822059574013722695/epu2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/822059596628623370/epu996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/822059590220382208/epu969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/822059578987511848/epu699.png",
-
     "333TopSpeed": 108,
     "3330to60": 10.5,
     "333Handling": 63,
-
     "666TopSpeed": 113,
     "6660to60": 9.9,
     "666Handling": 65,
-
     "996TopSpeed": 118,
     "9960to60": 9.4,
     "996Handling": 65,
-
     "969TopSpeed": 118,
     "9690to60": 9.9,
     "969Handling": 68,
-
     "699TopSpeed": 113,
     "6990to60": 9.4,
-    "699Handling": 68
+    "699Handling": 68,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -5,13 +5,14 @@
     "modelYear": 2017,
     "country": "GB",
     "topSpeed": 186,
-    "0to60": 4.0,
+    "0to60": 4,
     "handling": 81,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Super Sedan"],
+    "tags": [
+        "Super Sedan"
+    ],
     "isPrize": false,
-
     "weight": 1885,
     "gc": "Low",
     "seatCount": 5,
@@ -21,34 +22,24 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 81.63,
-    "ola": 90.00,
+    "ola": 90,
     "description": "The Jaguar XJR575 features a unique version of Jaguar's legendary 5.0-litre supercharged V8 engine, delivering 575BHP and 700Nm of torque. Card by Havvy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/821025256528805918/JaguarXJR575.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821025325278167052/000_575.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821025332076871760/111_575.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821025335973117962/222_575.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821025354004037632/332_575.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821025345992916992/323_575.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821025340960014386/233_575.png",
-
     "333TopSpeed": 189,
     "3330to60": 3.8,
     "333Handling": 84,
-
     "666TopSpeed": 192,
     "6660to60": 3.6,
     "666Handling": 86,
-
     "996TopSpeed": 194,
     "9960to60": 3.4,
     "996Handling": 86,
-
     "969TopSpeed": 194,
     "9690to60": 3.6,
     "969Handling": 90,
-
     "699TopSpeed": 192,
     "6990to60": 3.4,
-    "699Handling": 90
+    "699Handling": 90,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

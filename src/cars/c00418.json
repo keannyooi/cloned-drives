@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1710,
     "gc": "Low",
     "seatCount": 4,
@@ -23,32 +22,22 @@
     "mra": 105.41,
     "ola": 102.56,
     "description": "A rebodied BMW M6 with a tuning package from RD Sport. Card by Spence.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/858554092825870346/image0.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/858554237881417769/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/858554253265731584/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/858554267823243264/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/858554281598779432/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/858554296361811998/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/858554310378651658/image0.jpg",
-
     "333TopSpeed": 208,
     "3330to60": 3.7,
     "333Handling": 83,
-
     "666TopSpeed": 210,
     "6660to60": 3.5,
     "666Handling": 85,
-
     "699TopSpeed": 210,
     "6990to60": 3.3,
     "699Handling": 89,
-
     "969TopSpeed": 213,
     "9690to60": 3.5,
     "969Handling": 89,
-
     "996TopSpeed": 213,
     "9960to60": 3.3,
-    "996Handling": 85
+    "996Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

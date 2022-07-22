@@ -9,9 +9,12 @@
     "handling": 80,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["The Royal Collection", "Track Day", "Servers Choice"],
+    "tags": [
+        "The Royal Collection",
+        "Track Day",
+        "Servers Choice"
+    ],
     "isPrize": false,
-
     "weight": 490,
     "gc": "Low",
     "seatCount": 2,
@@ -20,35 +23,25 @@
     "abs": false,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 20.70,
+    "mra": 20.7,
     "ola": 76.06,
     "description": "STANDARD CATE POG. Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/855205901999800360/cate160165.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/855206551395762176/catestandards.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/855206556169666580/catestandards333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/855206563252666388/catestandards666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/855206587295334420/catestandards996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/855206579006603264/catestandards969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/855206571646386186/catestandards699.png",
-
     "333TopSpeed": 106,
     "3330to60": 6.7,
     "333Handling": 83,
-
     "666TopSpeed": 111,
     "6660to60": 6.4,
     "666Handling": 85,
-
     "996TopSpeed": 116,
-    "9960to60": 6.0,
+    "9960to60": 6,
     "996Handling": 85,
-
     "969TopSpeed": 116,
     "9690to60": 6.4,
     "969Handling": 89,
-
     "699TopSpeed": 111,
-    "6990to60": 6.0,
-    "699Handling": 89
+    "6990to60": 6,
+    "699Handling": 89,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

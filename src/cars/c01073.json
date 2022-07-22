@@ -9,9 +9,11 @@
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Supercar", "Track Day"],
+    "tags": [
+        "Supercar",
+        "Track Day"
+    ],
     "isPrize": false,
-
     "weight": 1368,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +25,22 @@
     "mra": 93.48,
     "ola": 84.85,
     "description": "It still has all those wonderful 911 qualities like interactive steering and immense traction, but mixes GT3 RS dynamism with Turbo-humbling punch. Card by Havvy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/821151959809523782/Porsche911GT2RS.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821152037935775774/000_997g2rs.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821152042876796938/111_997g2rs.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821152050468356116/222_997g2rs.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821152064599490590/332_997g2rs.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821152058404503552/323_997g2rs.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821152112003121163/233_997g2rs.png",
-
     "333TopSpeed": 208,
     "3330to60": 3.1,
     "333Handling": 94,
-
     "666TopSpeed": 210,
-    "6660to60": 3.0, 
+    "6660to60": 3,
     "666Handling": 97,
-
     "996TopSpeed": 213,
     "9960to60": 2.8,
     "996Handling": 97,
-
     "969TopSpeed": 213,
-    "9690to60": 3.0,
+    "9690to60": 3,
     "969Handling": 101,
-
     "699TopSpeed": 210,
     "6990to60": 2.8,
-    "699Handling": 101
+    "699Handling": 101,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

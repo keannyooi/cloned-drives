@@ -1,6 +1,10 @@
 {
     "rq": 33,
-    "make": ["Samuri", "Nissan", "Datsun"],
+    "make": [
+        "Samuri",
+        "Nissan",
+        "Datsun"
+    ],
     "model": "240Z Super Samuri",
     "modelYear": 1973,
     "country": "GB",
@@ -9,9 +13,11 @@
     "handling": 73,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Tuner","The Japanese Odyssey"],
+    "tags": [
+        "Tuner",
+        "The Japanese Odyssey"
+    ],
     "isPrize": true,
-
     "weight": 1000,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +29,22 @@
     "mra": 53.6,
     "ola": 65.67,
     "description": "A British racing icon, despite originally being a Japanese car. Card by Keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/869497837489102858/datsun_240z_super_samuri.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/869219349813141525/samuri_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/869219355987156992/samuri_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/869219360852570142/samuri_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/869219369232760872/samuri_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/869219367462789140/samuri_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/869219363616604200/samuri_699.jpg",
-
     "333TopSpeed": 144,
     "3330to60": 6.4,
     "333Handling": 75,
-
     "666TopSpeed": 147,
-    "6660to60": 6.0,
+    "6660to60": 6,
     "666Handling": 78,
-
     "996TopSpeed": 151,
     "9960to60": 5.7,
     "996Handling": 78,
-
     "969TopSpeed": 151,
-    "9690to60": 6.0,
+    "9690to60": 6,
     "969Handling": 81,
-
     "699TopSpeed": 147,
     "6990to60": 5.7,
-    "699Handling": 81
+    "699Handling": 81,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -9,9 +9,10 @@
     "handling": 80,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": ["Eco-Friendly"],
+    "tags": [
+        "Eco-Friendly"
+    ],
     "isPrize": false,
-
     "weight": 2133,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 67.74,
     "ola": 90.48,
     "description": "Jaguar's Tesla rival that outclassed the Model X in off-roading. Card by DodgeDemon",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/826157268903002132/IPACE.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826157968239886376/Ipace.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826157973834301500/Ipace1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826157980318695444/Ipace2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826158005232992266/Ipace996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826157996778192937/Ipace969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826157989915918366/Ipace699.png",
-
     "333TopSpeed": 128,
-    "3330to60": 4.0,
+    "3330to60": 4,
     "333Handling": 83,
-
     "666TopSpeed": 132,
     "6660to60": 3.8,
     "666Handling": 85,
-
-	"996TopSpeed": 137,
+    "996TopSpeed": 137,
     "9960to60": 3.6,
     "996Handling": 85,
-
     "969TopSpeed": 137,
     "9690to60": 3.8,
     "969Handling": 89,
-
-	"699TopSpeed": 132,
+    "699TopSpeed": 132,
     "6990to60": 3.6,
-    "699Handling": 89
+    "699Handling": 89,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

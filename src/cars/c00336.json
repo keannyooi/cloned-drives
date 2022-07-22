@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1413,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +22,22 @@
     "mra": 68.13,
     "ola": 74.19,
     "description": "https://www.youtube.com/watch?v=ADkLBtSGKMo | Card by keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/848059940115578981/de_tomasoo_pantera.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/848057743885074432/pantera_000.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/848057753053298719/pantera_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/848057757214703626/pantera_666.jpg",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/848057769088647238/pantera_996.jpg",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/848057764202414130/pantera_969.jpg",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/848057762322579476/pantera_699.jpg",
-
     "333TopSpeed": 162,
     "3330to60": 5.9,
     "333Handling": 77,
-
     "666TopSpeed": 166,
     "6660to60": 5.6,
     "666Handling": 80,
-
     "996TopSpeed": 169,
     "9960to60": 5.3,
     "996Handling": 80,
-
     "969TopSpeed": 169,
     "9690to60": 5.6,
     "969Handling": 83,
-
     "699TopSpeed": 166,
     "6990to60": 5.3,
-    "699Handling": 83
+    "699Handling": 83,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

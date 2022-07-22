@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1534,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 60.75,
     "ola": 72.05,
     "description": "A face lift to the already aging Passat to grapple on a dying market. Card by Andu",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/822164643510353930/PassatNMS.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/822164733020340234/NMS.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/822164737210843228/NMS1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/822164744257404958/NMS2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/822164766658658344/NMS996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/822164760166137886/NMS969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/822164751584460890/NMS699.png",
-
     "333TopSpeed": 120,
     "3330to60": 7.7,
     "333Handling": 77,
-
     "666TopSpeed": 125,
     "6660to60": 7.3,
-    "666Handling": 80,   
-
+    "666Handling": 80,
     "996TopSpeed": 129,
     "9960to60": 6.9,
     "996Handling": 80,
-
     "969TopSpeed": 129,
     "9690to60": 7.3,
     "969Handling": 83,
-
     "699TopSpeed": 125,
     "6990to60": 6.9,
-    "699Handling": 83
+    "699Handling": 83,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

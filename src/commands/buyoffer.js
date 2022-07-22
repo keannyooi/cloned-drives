@@ -98,12 +98,14 @@ module.exports = {
 
                 const set = {};
                 set[`purchasedPlayers.${message.author.id}`] = amountBought + 1;
-                await offerModel.updateOne({ offerID: offer.offerID }, { "$set": set });
-                await profileModel.updateOne({ userID: message.author.id }, {
-                    money: playerData.money,
-                    fuseTokens: playerData.fuseTokens,
-                    garage: playerData.garage
-                });
+                await Promise.all([
+                    offerModel.updateOne({ offerID: offer.offerID }, { "$set": set }),
+                    profileModel.updateOne({ userID: message.author.id }, {
+                        money: playerData.money,
+                        fuseTokens: playerData.fuseTokens,
+                        garage: playerData.garage
+                    })
+                ]);
                 return successMessage.sendMessage({ currentMessage });
             }
             else {

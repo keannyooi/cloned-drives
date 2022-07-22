@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1290,
     "gc": "Medium",
     "seatCount": 5,
@@ -20,35 +19,25 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra":  58.93,
+    "mra": 58.93,
     "ola": 63.64,
     "description": "No one expected back in 1994 for a Subaru Wagon to have 230 hp but here it is. Card by spence",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/828712317231038464/image0.jpg",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/828712851593363516/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/828712902642106387/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/828712922434764820/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/828713557222621184/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/828712946782961714/image0.jpg", 
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/828713529363136603/image0.jpg",
-
     "333TopSpeed": 139,
     "3330to60": 6.3,
     "333Handling": 79,
-
     "666TopSpeed": 143,
     "6660to60": 5.9,
     "666Handling": 81,
-
     "996TopSpeed": 147,
     "9960to60": 5.6,
     "996Handling": 81,
-
     "969TopSpeed": 147,
     "9690to60": 5.9,
     "969Handling": 84,
-
     "699TopSpeed": 143,
     "6990to60": 5.6,
-    "699Handling": 84
+    "699Handling": 84,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

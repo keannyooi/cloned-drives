@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1890,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 45,
     "ola": 71.55,
     "description": "I broke mao zedong's house, i'm going to the gulag. Card by Keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/976471150085439528/hongqi_e-hs3_awd.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/976444497183535124/hongqi_e-hs3_awd_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/976444513583235102/hongqi_e-hs3_awd_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/976444532545687552/hongqi_e-hs3_awd_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/976444570273447946/hongqi_e-hs3_awd_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/976444557241757716/hongqi_e-hs3_awd_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/976444546152005632/hongqi_e-hs3_awd_699.jpg",
-
     "333TopSpeed": 104,
     "3330to60": 5.5,
     "333Handling": 81,
-
     "666TopSpeed": 110,
     "6660to60": 5.2,
     "666Handling": 83,
-
     "996TopSpeed": 115,
     "9960to60": 4.9,
     "996Handling": 83,
-
     "969TopSpeed": 115,
     "9690to60": 5.2,
     "969Handling": 87,
-
     "699TopSpeed": 110,
     "6990to60": 4.9,
-    "699Handling": 87
+    "699Handling": 87,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

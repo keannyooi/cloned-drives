@@ -9,9 +9,13 @@
     "handling": 67,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Muscle Car", "Silver Screen", "Style Icon", "Servers Choice"],
+    "tags": [
+        "Muscle Car",
+        "Silver Screen",
+        "Style Icon",
+        "Servers Choice"
+    ],
     "isPrize": false,
-
     "weight": 1639,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +27,22 @@
     "mra": 64.77,
     "ola": 73.68,
     "description": "The ultra-popular model of the 1st generation Charger, powered by a 440 ci Magnum V8. Card by DodgeDemon",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/825824887532683334/Charger.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/825826098402951218/Charger.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/825826106120208414/Charger1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/825826111703351306/Charger2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/825826137363054632/Charger996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/825826130825052220/Charger969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/825826118966837358/Charger699.png",
-
     "333TopSpeed": 135,
     "3330to60": 5.4,
     "333Handling": 69,
-
     "666TopSpeed": 139,
     "6660to60": 5.1,
     "666Handling": 71,
-
     "996TopSpeed": 143,
     "9960to60": 4.8,
     "996Handling": 71,
-
-	"969TopSpeed": 143,
+    "969TopSpeed": 143,
     "9690to60": 5.1,
     "969Handling": 74,
-
-	"699TopSpeed": 139,
+    "699TopSpeed": 139,
     "6990to60": 4.8,
-    "699Handling": 74
+    "699Handling": 74,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

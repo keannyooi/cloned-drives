@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1647,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 62.64,
     "ola": 82.33,
     "description": "Card by Macan.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/824644731250278461/Grandpricks.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824644945108664361/Pontic.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824644951102062592/pontic333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824644956358574170/pontic666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824644975177236570/pontic996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824644968617476096/pontic969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824644962481471569/pontic699.png",
-
-     "333TopSpeed": 147,
+    "333TopSpeed": 147,
     "3330to60": 5.4,
     "333Handling": 76,
-
     "666TopSpeed": 150,
-    "6660to60": 5.1, 
+    "6660to60": 5.1,
     "666Handling": 79,
-
     "996TopSpeed": 154,
     "9960to60": 4.8,
     "996Handling": 79,
-
     "969TopSpeed": 154,
     "9690to60": 5.1,
     "969Handling": 82,
-
     "699TopSpeed": 150,
     "6990to60": 4.8,
-    "699Handling": 82
+    "699Handling": 82,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

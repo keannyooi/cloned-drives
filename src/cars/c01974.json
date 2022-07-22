@@ -9,9 +9,10 @@
     "handling": 72,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Muscle Car"],
+    "tags": [
+        "Muscle Car"
+    ],
     "isPrize": false,
-
     "weight": 1688,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 59.52,
     "ola": 69.33,
     "description": "Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/952198908753375294/ChallengerSE.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/952199086285660290/challengerSE.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/952199090916196382/challengerSE1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/952199096645591110/challengerSE2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/952199128614600784/challengerSE996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/952199115557699654/challengerSE969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/952199106003095552/challengerSE699.png",
-
     "333TopSpeed": 119,
     "3330to60": 7.1,
     "333Handling": 74,
-
     "666TopSpeed": 123,
     "6660to60": 6.8,
     "666Handling": 77,
-
     "996TopSpeed": 128,
     "9960to60": 6.4,
     "996Handling": 77,
-
     "969TopSpeed": 128,
     "9690to60": 6.8,
     "969Handling": 80,
-
     "699TopSpeed": 123,
     "6990to60": 6.4,
-    "699Handling": 80
+    "699Handling": 80,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

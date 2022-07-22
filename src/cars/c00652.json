@@ -9,9 +9,12 @@
     "handling": 96,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": ["Track Day", "Supercar", "Unique"],
+    "tags": [
+        "Track Day",
+        "Supercar",
+        "Unique"
+    ],
     "isPrize": true,
-
     "weight": 1395,
     "gc": "Low",
     "seatCount": 2,
@@ -23,33 +26,22 @@
     "mra": 71.43,
     "ola": 108.57,
     "description": "When the devil got an upgrade for the racetrack. Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819969632130564126/diblogtr.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819969899290951700/diablo.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819969903691038790/diablo333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819969911211556864/diablo666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819969943847174174/diablo996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819969932535136266/diablo969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819969923526688788/diablo699.png",
-
     "333TopSpeed": 212,
     "3330to60": 3.3,
     "333Handling": 99,
-
     "666TopSpeed": 215,
     "6660to60": 3.2,
     "666Handling": 102,
-
     "996TopSpeed": 217,
-    "9960to60": 3.0,
+    "9960to60": 3,
     "996Handling": 102,
-
     "969TopSpeed": 217,
     "9690to60": 3.2,
     "969Handling": 107,
-
     "699TopSpeed": 215,
-    "6990to60": 3.0,
-    "699Handling": 107
-    
+    "6990to60": 3,
+    "699Handling": 107,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

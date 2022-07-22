@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1355,
     "gc": "Medium",
     "seatCount": 2,
@@ -23,32 +22,22 @@
     "mra": 79.97,
     "ola": 71.07,
     "description": "Soft sky blue. Card by Havvy ",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/823522170600292363/Porsche718CaymanS.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823522244764368926/000_718s.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823522248908079124/111_718s.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823522254058946600/222_718s.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823522270973657089/332_718s.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823522265316589608/323_718s.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823522259871334451/233_718s.png",
-
     "333TopSpeed": 180,
     "3330to60": 3.7,
     "333Handling": 94,
-
     "666TopSpeed": 183,
-    "6660to60": 3.5, 
+    "6660to60": 3.5,
     "666Handling": 97,
-
     "996TopSpeed": 186,
     "9960to60": 3.3,
     "996Handling": 97,
-
     "969TopSpeed": 186,
     "9690to60": 3.5,
     "969Handling": 101,
-
     "699TopSpeed": 183,
     "6990to60": 3.3,
-    "699Handling": 101
+    "699Handling": 101,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

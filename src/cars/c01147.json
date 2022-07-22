@@ -9,9 +9,13 @@
     "handling": 94,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Eco-Friendly", "Hypercar", "Ultra Expensive", "Rest of the World"],
+    "tags": [
+        "Eco-Friendly",
+        "Hypercar",
+        "Ultra Expensive",
+        "Rest of the World"
+    ],
     "isPrize": false,
-
     "weight": 1850,
     "gc": "Low",
     "seatCount": 2,
@@ -21,34 +25,24 @@
     "enginePos": "Mixed",
     "fuelType": "Electric",
     "mra": 96.15,
-    "ola": 76.00,
+    "ola": 76,
     "description": "Rimac's first hyper- *(CRASH)* ...aaaaaand Hammond does what he does best again. Card by DodgeDemon.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/823395084850036736/2013_Rimac_C1.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823943418178699324/C1.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823943422133534800/c1333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823943428630773861/c1666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823943453380444220/c1996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823943446079209492/c1969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823943435375345714/c1699.png",
-
     "333TopSpeed": 223,
     "3330to60": 2.4,
     "333Handling": 97,
-
     "666TopSpeed": 226,
-    "6660to60": 2.3, 
+    "6660to60": 2.3,
     "666Handling": 100,
-
     "996TopSpeed": 228,
     "9960to60": 2.1,
     "996Handling": 100,
-
     "969TopSpeed": 228,
     "9690to60": 2.3,
     "969Handling": 104,
-
     "699TopSpeed": 226,
     "6990to60": 2.1,
-    "699Handling": 104
+    "699Handling": 104,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

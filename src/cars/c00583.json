@@ -9,9 +9,11 @@
     "handling": 68,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Silver Screen", "Style Icon"],
+    "tags": [
+        "Silver Screen",
+        "Style Icon"
+    ],
     "isPrize": false,
-
     "weight": 1256,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +25,22 @@
     "mra": 75.79,
     "ola": 83.33,
     "description": "Even Enzo Ferrari himself called it the most beautiful car ever made. Card by Spence",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/825063273333522502/image0.jpg",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/825063381227667456/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/825063399004045312/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/825063413750693918/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/835771300370448394/unknown.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/825063450878541844/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/835771183324463124/unknown.png",
-
     "333TopSpeed": 153,
     "3330to60": 6.8,
     "333Handling": 70,
-
     "666TopSpeed": 157,
     "6660to60": 6.5,
     "666Handling": 72,
-
     "996TopSpeed": 160,
     "9960to60": 6.1,
     "996Handling": 72,
-
     "969TopSpeed": 160,
     "9690to60": 6.5,
     "969Handling": 75,
-
     "699TopSpeed": 157,
     "6990to60": 6.1,
-    "699Handling": 75
+    "699Handling": 75,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

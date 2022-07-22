@@ -9,9 +9,10 @@
     "handling": 90,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Grand Tourer"],
+    "tags": [
+        "Grand Tourer"
+    ],
     "isPrize": false,
-
     "weight": 1745,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +24,22 @@
     "mra": 73.91,
     "ola": 79.49,
     "description": "AWD variant of a quick cat. Card by ChickenMcNuggets.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820437673968664586/new_ftype.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820128568062771220/jag_stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820128602104397905/jag_1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820128631191502868/jag_2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820129476637360158/jag_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820129433821380608/jag_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820128661797339156/jag_233.png",
-
     "333TopSpeed": 189,
     "3330to60": 3.2,
     "333Handling": 93,
-
     "666TopSpeed": 192,
     "6660to60": 3.1,
     "666Handling": 96,
-
     "996TopSpeed": 194,
     "9960to60": 2.9,
     "996Handling": 96,
-
-	"969TopSpeed": 194,
+    "969TopSpeed": 194,
     "9690to60": 3.1,
     "969Handling": 100,
-
     "699TopSpeed": 192,
     "6990to60": 2.9,
-    "699Handling": 100
+    "699Handling": 100,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

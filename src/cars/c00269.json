@@ -9,9 +9,10 @@
     "handling": 88,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Supercar"],
+    "tags": [
+        "Supercar"
+    ],
     "isPrize": false,
-
     "weight": 1507,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +24,22 @@
     "mra": 79.25,
     "ola": 85.71,
     "description": "Red for sport. Are you red-y for her?. Card by Havvy ",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/822617850296270889/ChevroletCorvetteGS.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/822617902006927370/000_crvgs.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/822617907879608380/111_crvgs.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/822617914267009054/222_crvgs.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/822617954041856011/332_crvgs.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/822618197604958289/323_crvgs.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/822617918641799178/233_crvgs.png",
-
     "333TopSpeed": 191,
-    "3330to60": 4.0,
+    "3330to60": 4,
     "333Handling": 91,
-
     "666TopSpeed": 194,
-    "6660to60": 3.8, 
+    "6660to60": 3.8,
     "666Handling": 94,
-
     "996TopSpeed": 196,
     "9960to60": 3.6,
     "996Handling": 94,
-
     "969TopSpeed": 196,
     "9690to60": 3.8,
     "969Handling": 98,
-
     "699TopSpeed": 194,
     "6990to60": 3.6,
-    "699Handling": 98
+    "699Handling": 98,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

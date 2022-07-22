@@ -9,9 +9,11 @@
     "handling": 81,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Sleeper", "Rest of The World"],
+    "tags": [
+        "Sleeper",
+        "Rest of The World"
+    ],
     "isPrize": false,
-
     "weight": 1677,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,33 +25,22 @@
     "mra": 79.52,
     "ola": 81.82,
     "description": "A beautifully crafted compact luxury car and a surprisingly capable sports sedan. Card and photo by Johnny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/864613450608934932/Volvo-S60-T5-Momentum-FWD.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/864613300418379777/Volvo-S60-T5-Momemtum-FWD.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/864613304198889502/Volvo-S60-T5-Momemtum-FWD-1-star.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/864613308229091398/Volvo-S60-T5-Momemtum-FWD-2-star.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/864613336955879434/Volvo-S60-T5-Momemtum-FWD-332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/864613328126869534/Volvo-S60-T5-Momemtum-FWD-323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/864613320082718780/Volvo-S60-T5-Momemtum-FWD-233.png",
-
     "333TopSpeed": 149,
     "3330to60": 6.3,
     "333Handling": 84,
-
     "666TopSpeed": 152,
     "6660to60": 5.9,
     "666Handling": 86,
-
     "969TopSpeed": 156,
     "9690to60": 5.9,
     "969Handling": 90,
-	
     "996TopSpeed": 156,
     "9960to60": 5.6,
     "996Handling": 86,
-	
     "699TopSpeed": 152,
     "6990to60": 5.6,
-    "699Handling": 90
-	
+    "699Handling": 90,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

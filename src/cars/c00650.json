@@ -9,9 +9,12 @@
     "handling": 76,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Style Icon", "Supercar", "Silver Screen"],
+    "tags": [
+        "Style Icon",
+        "Supercar",
+        "Silver Screen"
+    ],
     "isPrize": false,
-
     "weight": 1488,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +26,22 @@
     "mra": 79.66,
     "ola": 97.87,
     "description": "The Countach to commemorate 25 years of the raging bull. Card by DodgeDemon",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/835934519483826242/Countach.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/827075015383449630/countach_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/827075025449386015/countach_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/827075033997508659/countach_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/827075079028211732/countach_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/827075067833352212/countach_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/827075056835756082/countach_699.jpg",
-
     "333TopSpeed": 186,
     "3330to60": 4.5,
     "333Handling": 79,
-
     "666TopSpeed": 189,
     "6660to60": 4.2,
     "666Handling": 81,
-
-	 "996TopSpeed": 192,
-    "9960to60": 4.0,
+    "996TopSpeed": 192,
+    "9960to60": 4,
     "996Handling": 81,
-
     "969TopSpeed": 192,
     "9690to60": 4.2,
     "969Handling": 84,
-
-	 "699TopSpeed": 189,
-    "6990to60": 4.0,
-    "699Handling": 84
+    "699TopSpeed": 189,
+    "6990to60": 4,
+    "699Handling": 84,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -9,9 +9,12 @@
     "handling": 77,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Silver Screen", "Grand Tourer", "The Royal Collection"],
+    "tags": [
+        "Silver Screen",
+        "Grand Tourer",
+        "The Royal Collection"
+    ],
     "isPrize": false,
-
     "weight": 1650,
     "gc": "Low",
     "seatCount": 4,
@@ -23,32 +26,22 @@
     "mra": 67.44,
     "ola": 75.86,
     "description": "The Original DB7. Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/855242331406204948/db777777.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/855243506061541396/db7.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/855243530230431788/db7333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/855243538199216148/db7666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/855243558872154133/db7996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/855243550664818688/db7969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/855243544394334248/db7699.png",
-
     "333TopSpeed": 168,
     "3330to60": 5.5,
     "333Handling": 80,
-
     "666TopSpeed": 171,
     "6660to60": 5.2,
     "666Handling": 82,
-
     "996TopSpeed": 174,
     "9960to60": 4.9,
     "996Handling": 82,
-
     "969TopSpeed": 174,
     "9690to60": 5.2,
     "969Handling": 85,
-
     "699TopSpeed": 171,
     "6990to60": 4.9,
-    "699Handling": 85
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

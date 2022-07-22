@@ -1,6 +1,9 @@
 {
     "rq": 81,
-    "make": ["Mercedes-AMG", "Mercedes-Benz"],
+    "make": [
+        "Mercedes-AMG",
+        "Mercedes-Benz"
+    ],
     "model": "GT C",
     "modelYear": 2017,
     "country": "DE",
@@ -9,12 +12,14 @@
     "handling": 92,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Supercar", "Grand Tourer"],
+    "tags": [
+        "Supercar",
+        "Grand Tourer"
+    ],
     "isPrize": false,
-
     "weight": 1760,
     "gc": "Low",
-    "seatCount":2,
+    "seatCount": 2,
     "bodyStyle": "Coupe",
     "tcs": true,
     "abs": true,
@@ -23,32 +28,22 @@
     "mra": 94.59,
     "ola": 85.71,
     "description": "A toned down AMG GT R. Card by Havvy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/826185870566490162/GTC.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/836320679095435284/Blacc.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/836320687353495585/Blacc333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/836320693372059680/Blacc666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/836320717825769502/Blacc996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/836320709827100682/Blacc969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/836320702738333766/Blacc699.png",
-
     "333TopSpeed": 200,
     "3330to60": 3.3,
     "333Handling": 95,
-
     "666TopSpeed": 202,
-    "6660to60": 3.2, 
+    "6660to60": 3.2,
     "666Handling": 98,
-
     "996TopSpeed": 205,
-    "9960to60": 3.0,
+    "9960to60": 3,
     "996Handling": 98,
-
     "969TopSpeed": 205,
     "9690to60": 3.2,
     "969Handling": 102,
-
     "699TopSpeed": 202,
-    "6990to60": 3.0,
-    "699Handling": 102
+    "6990to60": 3,
+    "699Handling": 102,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

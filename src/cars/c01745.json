@@ -9,9 +9,14 @@
     "handling": 93,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Unique", "Ultra Expensive", "Track Day", "Concept","The Japanese Odyssey"],
+    "tags": [
+        "Unique",
+        "Ultra Expensive",
+        "Track Day",
+        "Concept",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1700,
     "gc": "Low",
     "seatCount": 2,
@@ -21,34 +26,24 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 78.12,
-    "ola": 80.00,
+    "ola": 80,
     "description": "Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/930221907469537340/GTR50Concept.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/930223064208265246/GTR50Concept.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/930223072101945424/GTR50Concept333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/930223080058544128/GTR50Concept666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/930223117270401054/GTR50Concept996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/930223107678031872/GTR50Concept969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/930223088686202920/GTR50Concept699.png",
-
     "333TopSpeed": 208,
     "3330to60": 2.4,
     "333Handling": 96,
-
     "666TopSpeed": 210,
     "6660to60": 2.3,
     "666Handling": 99,
-
     "996TopSpeed": 213,
     "9960to60": 2.1,
     "996Handling": 99,
-
     "969TopSpeed": 213,
     "9690to60": 2.3,
     "969Handling": 103,
-
     "699TopSpeed": 210,
     "6990to60": 2.1,
-    "699Handling": 103
+    "699Handling": 103,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

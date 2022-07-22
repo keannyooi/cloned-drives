@@ -9,9 +9,11 @@
     "handling": 96,
     "driveType": "4WD",
     "tyreType": "Slick",
-    "tags": ["Motorsport", "Eco-Friendly"],
+    "tags": [
+        "Motorsport",
+        "Eco-Friendly"
+    ],
     "isPrize": true,
-
     "weight": 1463,
     "gc": "Low",
     "seatCount": 1,
@@ -20,35 +22,25 @@
     "abs": true,
     "enginePos": "Middle",
     "fuelType": "Electric",
-    "mra": 93.10,
-    "ola": 96.30,
+    "mra": 93.1,
+    "ola": 96.3,
     "description": "For purple mountain, majesties… wEEEo—wEEEo … wEEE—wEEEo…wEEEo—wEEEo. Card by keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819383487114903602/miev_evo_iii.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819522328021958707/miev_evo_iii_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819522335131828224/miev_evo_iii_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819522340215193620/miev_evo_iii_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819522382166622208/miev_evo_iii_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819522378945658920/miev_evo_iii_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819522364664184842/miev_evo_iii_699.jpg",
-
     "333TopSpeed": 189,
     "3330to60": 2.6,
     "333Handling": 99,
-
     "666TopSpeed": 192,
     "6660to60": 2.4,
     "666Handling": 102,
-
     "699TopSpeed": 192,
     "6990to60": 2.3,
     "699Handling": 107,
-
     "969TopSpeed": 194,
     "9690to60": 2.4,
     "969Handling": 107,
-
     "996TopSpeed": 194,
     "9960to60": 2.3,
-    "996Handling": 102
+    "996Handling": 102,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

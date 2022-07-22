@@ -5,17 +5,18 @@
     "modelYear": 2020,
     "country": "JP",
     "topSpeed": 112,
-    "0to60": 10.0,
+    "0to60": 10,
     "handling": 76,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Eco-Friendly","The Japanese Odyssey"],
+    "tags": [
+        "Eco-Friendly",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
-
     "weight": 1025,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
@@ -24,33 +25,22 @@
     "mra": 33.48,
     "ola": 71.76,
     "description": "Small hybrid, Big Looks. Card by Andu",
-
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/897114880107216967/2Hybrid.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/897115318479126598/Evolve.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/897115326272127028/Evolve-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/897115333528256542/Evolve-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/897115349407907911/Evolve-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/897115363077136384/Evolve-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/897115375660068864/Evolve-699.png",
-
     "333TopSpeed": 117,
     "3330to60": 9.5,
     "333Handling": 79,
-
     "666TopSpeed": 121,
-    "6660to60": 9.0, 
+    "6660to60": 9,
     "666Handling": 81,
-
     "996TopSpeed": 126,
     "9960to60": 8.5,
     "996Handling": 81,
-
     "969TopSpeed": 126,
-    "9690to60": 9.0,
+    "9690to60": 9,
     "969Handling": 84,
-
     "699TopSpeed": 121,
     "6990to60": 8.5,
-    "699Handling": 84
+    "699Handling": 84,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

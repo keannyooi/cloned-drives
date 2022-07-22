@@ -9,9 +9,12 @@
     "handling": 86,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Innovative", "Supercar", "Unique"],
+    "tags": [
+        "Innovative",
+        "Supercar",
+        "Unique"
+    ],
     "isPrize": true,
-
     "weight": 1700,
     "gc": "Low",
     "seatCount": 2,
@@ -23,37 +26,22 @@
     "mra": 77.36,
     "ola": 85.43,
     "description": "Bold in terms of performance, design, and mechanism. A supercar packing all the dreams of a mature driver, completed with double popups because yes. Card by Based",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/825827272455094302/Cizeta_Morouder_V16T_goes_brrr.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/825827443432357908/Cizeta_Stocc.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/825827617428471838/Cizeta_1_Star.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/825827625955229706/Cizeta_2_Star.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/825827659070046268/Cizeta_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/825827645768859688/Cizeta_969.png",
-	"racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/825827637104476170/Cizeta_699.png",
-
     "333TopSpeed": 207,
     "3330to60": 3.9,
     "333Handling": 89,
-
     "666TopSpeed": 209,
     "6660to60": 3.7,
     "666Handling": 92,
-
     "996TopSpeed": 212,
     "9960to60": 3.5,
     "996Handling": 92,
-   
-	"969TopSpeed": 212,
+    "969TopSpeed": 212,
     "9690to60": 3.7,
     "969Handling": 95,
-	
-	"699TopSpeed": 209,
+    "699TopSpeed": 209,
     "6990to60": 3.5,
-    "699Handling": 95
-    
-    
-    
-
-   
+    "699Handling": 95,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

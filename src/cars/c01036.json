@@ -5,13 +5,12 @@
     "modelYear": 1984,
     "country": "US",
     "topSpeed": 94,
-    "0to60": 14.0,
+    "0to60": 14,
     "handling": 61,
     "driveType": "FWD",
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1432,
     "gc": "Medium",
     "seatCount": 7,
@@ -23,32 +22,22 @@
     "mra": 14.47,
     "ola": 62.86,
     "description": "Card by Andu.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/865589180439986266/VoyagerLE.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821486716946612234/Voyager.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821486722428829716/Voyager1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821486728741257226/Voyager2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821486770050433064/Voyager996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821486764047859712/Voyager969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821486754938748989/Voyager699.png",
-
     "333TopSpeed": 100,
     "3330to60": 13.3,
     "333Handling": 63,
-
     "666TopSpeed": 105,
     "6660to60": 12.6,
     "666Handling": 65,
-
     "996TopSpeed": 111,
     "9960to60": 11.9,
     "996Handling": 65,
-
     "969TopSpeed": 111,
     "9690to60": 12.6,
     "969Handling": 68,
-
     "699TopSpeed": 105,
     "6990to60": 11.9,
-    "699Handling": 68
+    "699Handling": 68,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

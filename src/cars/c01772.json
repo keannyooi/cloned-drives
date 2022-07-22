@@ -9,9 +9,11 @@
     "handling": 79,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Street Racer","The Japanese Odyssey"],
+    "tags": [
+        "Street Racer",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1249,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +25,22 @@
     "mra": 64.63,
     "ola": 83.02,
     "description": "Mona Lisa :weary: . Card by Havvy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/866723743791448064/NissanSilviaSpecRAeroS15.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/866723833226854420/s15_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/866723835108655114/s15_111.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/866723838360158238/s15_222.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/866723858101698571/s15_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/866723850858528809/s15_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/866723844593025034/s15_233.png",
-
     "333TopSpeed": 117,
-    "3330to60": 5.0,
+    "3330to60": 5,
     "333Handling": 82,
-
     "666TopSpeed": 121,
     "6660to60": 4.8,
     "666Handling": 84,
-
     "996TopSpeed": 126,
     "9960to60": 4.5,
     "996Handling": 84,
-
     "969TopSpeed": 126,
     "9690to60": 4.8,
     "969Handling": 88,
-
     "699TopSpeed": 121,
     "6990to60": 4.5,
-    "699Handling": 88
+    "699Handling": 88,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

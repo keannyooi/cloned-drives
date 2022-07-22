@@ -5,13 +5,16 @@
     "modelYear": 2005,
     "country": "JP",
     "topSpeed": 197,
-    "0to60": 4.0,
+    "0to60": 4,
     "handling": 87,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Concept", "Unique","The Japanese Odyssey"],
+    "tags": [
+        "Concept",
+        "Unique",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1730,
     "gc": "Low",
     "seatCount": 4,
@@ -21,34 +24,24 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 74.07,
-    "ola": 70.00,
+    "ola": 70,
     "description": "Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/930857764996145162/GTR2005.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/930858844391866378/GTRProtoCon.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/930858851983556678/GTRProtoCon333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/930858858837061682/GTRProtoCon666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/930858886620151839/GTRProtoCon996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/930858877594001408/GTRProtoCon969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/930858868416856135/GTRProtoCon699.png",
-
     "333TopSpeed": 200,
     "3330to60": 3.8,
     "333Handling": 90,
-
     "666TopSpeed": 202,
     "6660to60": 3.6,
     "666Handling": 93,
-
     "996TopSpeed": 205,
     "9960to60": 3.4,
     "996Handling": 93,
-
     "969TopSpeed": 205,
     "9690to60": 3.6,
     "969Handling": 97,
-
     "699TopSpeed": 202,
     "6990to60": 3.4,
-    "699Handling": 97
+    "699Handling": 97,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

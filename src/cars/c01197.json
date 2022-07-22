@@ -9,9 +9,11 @@
     "handling": 78,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Street Racer", "Track Day"],
+    "tags": [
+        "Street Racer",
+        "Track Day"
+    ],
     "isPrize": false,
-
     "weight": 1285,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +25,22 @@
     "mra": 67.46,
     "ola": 64.29,
     "description": "This special edition was made to celebrate Richard Burns' return to his rally team",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/968280744571047936/unknown_1.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/839341858903031809/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/839341870882226236/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/839341882394935296/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/839341908195147786/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/839341895977009202/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/839341920438059008/image0.jpg",
-
     "333TopSpeed": 147,
     "3330to60": 5.3,
     "333Handling": 81,
-
     "666TopSpeed": 150,
-    "6660to60": 5.0,
+    "6660to60": 5,
     "666Handling": 83,
-
     "699TopSpeed": 150,
     "6990to60": 4.8,
     "699Handling": 87,
-
     "969TopSpeed": 154,
-    "9690to60": 5.0,
+    "9690to60": 5,
     "969Handling": 87,
-
     "996TopSpeed": 154,
     "9960to60": 4.8,
-    "996Handling": 83
+    "996Handling": 83,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

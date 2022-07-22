@@ -9,9 +9,11 @@
     "handling": 86,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Supercar", "Silver Screen"],
+    "tags": [
+        "Supercar",
+        "Silver Screen"
+    ],
     "isPrize": false,
-
     "weight": 1597,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +25,22 @@
     "mra": 76.74,
     "ola": 91.34,
     "description": "It was the poor man's Lamborghini, then the Huracan was introduced and the prices went stonks. Card by havvy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820783031282827304/LamborghiniGallardo.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820783091723010068/000_gallar.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820783099872149544/111_gallar.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820783103874039838/222_gallar.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820783121448042496/332_gallar.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820783116637437973/323_gallar.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820783109037359154/233_gallar.png",
-
     "333TopSpeed": 195,
-    "3330to60": 4.0,
+    "3330to60": 4,
     "333Handling": 89,
-
     "666TopSpeed": 197,
     "6660to60": 3.8,
     "666Handling": 92,
-
     "996TopSpeed": 200,
     "9960to60": 3.6,
     "996Handling": 92,
-
     "969TopSpeed": 200,
     "9690to60": 3.8,
     "969Handling": 95,
-
     "699TopSpeed": 197,
     "6990to60": 3.6,
-    "699Handling": 95
+    "699Handling": 95,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

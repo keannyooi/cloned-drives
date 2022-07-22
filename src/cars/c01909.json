@@ -9,9 +9,10 @@
     "handling": 78,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1228,
     "gc": "Medium",
     "seatCount": 2,
@@ -23,32 +24,22 @@
     "mra": 55.07,
     "ola": 68.42,
     "description": "Card by Havvy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/866710045142810664/unknown.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/866710104681086986/mr2_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/866710109782802432/mr2_111.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/866710110210097162/mr2_222.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/866710126136131644/mr2_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/866710120410513408/mr2_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/866710115314958366/mr2_233.png",
-
     "333TopSpeed": 141,
     "3330to60": 7.2,
     "333Handling": 81,
-
     "666TopSpeed": 145,
     "6660to60": 6.8,
     "666Handling": 83,
-
     "996TopSpeed": 148,
     "9960to60": 6.5,
     "996Handling": 83,
-
     "969TopSpeed": 148,
     "9690to60": 6.8,
     "969Handling": 87,
-
     "699TopSpeed": 145,
     "6990to60": 6.5,
-    "699Handling": 87
+    "699Handling": 87,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -1,6 +1,9 @@
 {
     "rq": 8,
-    "make": ["Prince","Nissan"],
+    "make": [
+        "Prince",
+        "Nissan"
+    ],
     "model": "Skyline Super S21",
     "modelYear": 1962,
     "country": "JP",
@@ -9,9 +12,10 @@
     "handling": 54,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1365,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +27,22 @@
     "mra": 2.67,
     "ola": 61.62,
     "description": "Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/968470808227872768/skylinesupers21.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/968471166534709249/skylinesuper.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/968471172381560862/skylinesuper1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/968471188076625950/skylinesuper2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/968471210839130132/skylinesuper996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/968471201276108820/skylinesuper969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/968471194435223602/skylinesuper699.png",
-
     "333TopSpeed": 93,
     "3330to60": 16.3,
     "333Handling": 56,
-
     "666TopSpeed": 99,
     "6660to60": 15.5,
     "666Handling": 58,
-
     "996TopSpeed": 105,
     "9960to60": 14.6,
     "996Handling": 58,
-
     "969TopSpeed": 105,
     "9690to60": 15.5,
     "969Handling": 60,
-
     "699TopSpeed": 99,
     "6990to60": 14.6,
-    "699Handling": 60
+    "699Handling": 60,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

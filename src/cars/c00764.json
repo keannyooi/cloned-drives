@@ -1,4 +1,4 @@
-﻿{
+{
     "rq": 31,
     "make": "Mazda",
     "model": "929 HC",
@@ -11,10 +11,9 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1518,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Sedan",
     "tcs": false,
     "abs": false,
@@ -23,32 +22,22 @@
     "mra": 45.01,
     "ola": 60.59,
     "description": "Mazda’s big sedan. Card by Based",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819904112052666388/Mazda_989_HC.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819903715208331274/Mazda_HC_929_Stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819903750901596181/Mazda_HC_929_1_star.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819903759475015710/Mazda_HC_929_2_star.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819903792916987924/Mazda_HC_929_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819903781382389820/Mazda_HC_929_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819903771874033724/Mazda_HC_929_699.png",
-
     "333TopSpeed": 125,
     "3330to60": 8.5,
     "333Handling": 70,
-
     "666TopSpeed": 130,
-    "6660to60": 8.0, 
+    "6660to60": 8,
     "666Handling": 72,
-
     "996TopSpeed": 134,
     "9960to60": 7.6,
     "996Handling": 72,
-
     "969TopSpeed": 134,
-    "9690to60": 8.0,
+    "9690to60": 8,
     "969Handling": 75,
-
     "699TopSpeed": 130,
     "6990to60": 7.6,
-    "699Handling": 75
+    "699Handling": 75,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

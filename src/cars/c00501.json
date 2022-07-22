@@ -5,13 +5,15 @@
     "modelYear": 1991,
     "country": "US",
     "topSpeed": 126,
-    "0to60": 5.0,
+    "0to60": 5,
     "handling": 73,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": ["Innovative", "Muscle Car"],
+    "tags": [
+        "Innovative",
+        "Muscle Car"
+    ],
     "isPrize": false,
-
     "weight": 1636,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +25,22 @@
     "mra": 44.38,
     "ola": 65.87,
     "description": "Beating a Ferrari to 60mph on a drag strip on a truck, now THAT's America. Card by Keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819391134483873842/gmc_syclone.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819545374938890280/syclone_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819545381648990258/syclone_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819545388196560896/syclone_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819545435412496424/syclone_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819545414801686538/syclone_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819545402822623272/syclone_699.jpg",
-
     "333TopSpeed": 130,
     "3330to60": 4.8,
     "333Handling": 75,
-
     "666TopSpeed": 134,
     "6660to60": 4.5,
     "666Handling": 78,
-
-	"996TopSpeed": 138,
+    "996TopSpeed": 138,
     "9960to60": 4.3,
     "996Handling": 78,
-
     "969TopSpeed": 138,
     "9690to60": 4.5,
     "969Handling": 81,
-
-	"699TopSpeed": 134,
+    "699TopSpeed": 134,
     "6990to60": 4.3,
-    "699Handling": 81
+    "699Handling": 81,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

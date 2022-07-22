@@ -9,9 +9,10 @@
     "handling": 72,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Eco-Friendly"],
+    "tags": [
+        "Eco-Friendly"
+    ],
     "isPrize": false,
-
     "weight": 1178,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 40.69,
     "ola": 61.68,
     "description": "It has wheels and gets good gas mileage. Card by Andu",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/821107130266157086/PriusCate.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821107343692660786/PriusC.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821107344401498112/PriusC1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821107350005219338/PriusC2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821107377825644594/PriusC996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821107368653357096/PriusC969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821107358196432986/PriusC699.png",
-
     "333TopSpeed": 107,
     "3330to60": 10.2,
     "333Handling": 74,
-
     "666TopSpeed": 112,
     "6660to60": 9.6,
     "666Handling": 77,
-
     "996TopSpeed": 117,
     "9960to60": 9.1,
     "996Handling": 77,
-    
     "969TopSpeed": 117,
     "9690to60": 9.6,
     "969Handling": 80,
-    
     "699TopSpeed": 112,
     "6990to60": 9.1,
-    "699Handling": 80
+    "699Handling": 80,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

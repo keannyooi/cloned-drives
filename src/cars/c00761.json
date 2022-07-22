@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1539,
     "gc": "Medium",
     "seatCount": 5,
@@ -21,35 +20,24 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 66.37,
-    "ola": 70.00,
+    "ola": 70,
     "description": "The little Mazda with big power. Card by DodgeDemon.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/826157203937165342/3Seda.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826157901471023174/3Sed.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826157906775769148/3Sed1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826157914036633640/3Sed2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826157932948619295/3Sed996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826157925960646676/3Sed969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826157918763745340/3Sed699.png",
-
     "333TopSpeed": 138,
     "3330to60": 5.3,
     "333Handling": 80,
-
     "666TopSpeed": 142,
-    "6660to60": 5.0,
+    "6660to60": 5,
     "666Handling": 82,
-
     "996TopSpeed": 146,
     "9960to60": 4.8,
     "996Handling": 82,
-
     "969TopSpeed": 146,
-    "9690to60": 5.0,
+    "9690to60": 5,
     "969Handling": 85,
-
     "699TopSpeed": 142,
     "6990to60": 4.8,
-    "699Handling": 85
-
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

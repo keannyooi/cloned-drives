@@ -1,17 +1,23 @@
 {
     "rq": 16,
-    "make": ["Pandora-Inc", "Honda"],
+    "make": [
+        "Pandora-Inc",
+        "Honda"
+    ],
     "model": "S660 Demo Version II",
     "modelYear": 2017,
     "country": "JP",
     "topSpeed": 114,
-    "0to60": 11.0,
+    "0to60": 11,
     "handling": 76,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Kei Car", "Motorsport","The Japanese Odyssey"],
+    "tags": [
+        "Kei Car",
+        "Motorsport",
+        "The Japanese Odyssey"
+    ],
     "isPrize": true,
-
     "weight": 825,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +29,22 @@
     "mra": 47.51,
     "ola": 72.88,
     "description": "Pandora's box in kei car form. Card by Keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/868778807287500820/pandora_s660.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/868777999015768065/pandora_s660_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/868778003256209438/pandora_s660_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/868778006548713482/pandora_s660_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/868778015411290112/pandora_s660_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/868778012819193866/pandora_s660_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/868778011531554816/pandora_s660_699.jpg",
-
     "333TopSpeed": 119,
     "3330to60": 10.5,
     "333Handling": 79,
-
     "666TopSpeed": 123,
     "6660to60": 9.9,
     "666Handling": 81,
-
     "996TopSpeed": 128,
     "9960to60": 9.4,
     "996Handling": 81,
-
     "969TopSpeed": 128,
     "9690to60": 9.9,
     "969Handling": 84,
-
     "699TopSpeed": 123,
     "6990to60": 9.4,
-    "699Handling": 84
+    "699Handling": 84,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

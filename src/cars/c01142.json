@@ -1,6 +1,9 @@
 {
     "rq": 53,
-    "make": ["Renault Sport", "Renault"],
+    "make": [
+        "Renault Sport",
+        "Renault"
+    ],
     "model": "Megane",
     "modelYear": 2018,
     "country": "FR",
@@ -9,9 +12,10 @@
     "handling": 88,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Hot Hatch"],
+    "tags": [
+        "Hot Hatch"
+    ],
     "isPrize": false,
-
     "weight": 1407,
     "gc": "Low",
     "seatCount": 5,
@@ -23,32 +27,22 @@
     "mra": 71.17,
     "ola": 84.48,
     "description": "The Baguette hot hatch that still doesn't undergo the AWD treatment. Card by Spence",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/849480082589745172/image0.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/849480148424327208/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/849480212864303134/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/849480226677194782/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/849480300182110228/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/849480267110416394/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/849480254376378369/image0.jpg",
-
     "333TopSpeed": 160,
     "3330to60": 5.5,
     "333Handling": 91,
-
     "666TopSpeed": 164,
     "6660to60": 5.2,
     "666Handling": 94,
-
     "996TopSpeed": 167,
     "9960to60": 4.9,
     "996Handling": 94,
-
     "969TopSpeed": 167,
     "9690to60": 5.2,
     "969Handling": 98,
-
     "699TopSpeed": 164,
     "6990to60": 4.9,
-    "699Handling": 98
+    "699Handling": 98,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

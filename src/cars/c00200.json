@@ -9,9 +9,10 @@
     "handling": 81,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": ["Servers Choice"],
+    "tags": [
+        "Servers Choice"
+    ],
     "isPrize": false,
-
     "weight": 1680,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 57.66,
     "ola": 65.63,
     "description": "Card by Macan",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/824626535134265374/x2thigny.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824626916215881728/x2.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824626920599060512/x2333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824626925258407986/x2666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824626945626210334/x2996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824626938655801364/x2969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824626931953303592/x2699.png",
-
     "333TopSpeed": 147,
     "3330to60": 6.1,
     "333Handling": 84,
-
     "666TopSpeed": 150,
     "6660to60": 5.8,
     "666Handling": 86,
-
-	"996TopSpeed": 154,
+    "996TopSpeed": 154,
     "9960to60": 5.4,
     "996Handling": 86,
-
     "969TopSpeed": 154,
     "9690to60": 5.8,
     "969Handling": 90,
-
-	"699TopSpeed": 150,
+    "699TopSpeed": 150,
     "6990to60": 5.4,
-    "699Handling": 90
+    "699Handling": 90,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

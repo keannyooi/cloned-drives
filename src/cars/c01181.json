@@ -9,9 +9,10 @@
     "handling": 83,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Rest of the World"],
+    "tags": [
+        "Rest of the World"
+    ],
     "isPrize": false,
-
     "weight": 1354,
     "gc": "Medium",
     "seatCount": 2,
@@ -23,32 +24,22 @@
     "mra": 77.88,
     "ola": 63.88,
     "description": "Its styling is wild and its interior is sublime. Card by Havvy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/821166408112013322/SpykerC8Spyder.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821166457588416582/000_spijker.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821166461150035998/111_spijker.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821166464714145802/222_spijker.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821166478199750666/332_spijker.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821166475842682900/323_spijker.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821166469600772136/233_spijker.png",
-
     "333TopSpeed": 189,
     "3330to60": 4.4,
     "333Handling": 86,
-
     "666TopSpeed": 192,
-    "6660to60": 4.1, 
+    "6660to60": 4.1,
     "666Handling": 88,
-
     "996TopSpeed": 194,
     "9960to60": 3.9,
     "996Handling": 88,
-
     "969TopSpeed": 194,
     "9690to60": 4.1,
     "969Handling": 92,
-
     "699TopSpeed": 192,
     "6990to60": 3.9,
-    "699Handling": 92
+    "699Handling": 92,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

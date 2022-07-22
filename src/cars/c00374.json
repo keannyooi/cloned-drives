@@ -1,6 +1,9 @@
 {
     "rq": 83,
-    "make": ["Drive eO", "Tesla"],
+    "make": [
+        "Drive eO",
+        "Tesla"
+    ],
     "model": "PP02",
     "modelYear": 2014,
     "country": "LV",
@@ -9,9 +12,11 @@
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Eco-Friendly", "Motorsport"],
+    "tags": [
+        "Eco-Friendly",
+        "Motorsport"
+    ],
     "isPrize": true,
-
     "weight": 1060,
     "gc": "Low",
     "seatCount": 1,
@@ -23,32 +28,22 @@
     "mra": 60.42,
     "ola": 96.55,
     "description": "Despite outputting 360kW, a Honda Fit EV managed to beat this car at the Pikes Peak Hillclimb in 2014. Card by keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/848059389264527360/drive_eo_pp02.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/848057985582366741/pp02_000.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/848057990716325918/pp02_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/848057995039473664/pp02_666.jpg",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/848058008768610324/pp02_996.jpg",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/848058004355022868/pp02_969.jpg",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/848057998656012308/pp02_699.jpg",
-
     "333TopSpeed": 151,
     "3330to60": 2.8,
     "333Handling": 94,
-
     "666TopSpeed": 154,
     "6660to60": 2.6,
     "666Handling": 97,
-
     "996TopSpeed": 158,
     "9960to60": 2.5,
     "996Handling": 97,
-
     "969TopSpeed": 158,
     "9690to60": 2.6,
     "969Handling": 101,
-
     "699TopSpeed": 154,
     "6990to60": 2.5,
-    "699Handling": 101
+    "699Handling": 101,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

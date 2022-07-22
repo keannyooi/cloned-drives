@@ -5,13 +5,14 @@
     "modelYear": 1977,
     "country": "SE",
     "topSpeed": 108,
-    "0to60": 12.0,
+    "0to60": 12,
     "handling": 68,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Rest of the World"],
+    "tags": [
+        "Rest of the World"
+    ],
     "isPrize": false,
-
     "weight": 1161,
     "gc": "Medium",
     "seatCount": 5,
@@ -21,34 +22,24 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 37.66,
-    "ola": 79.00,
+    "ola": 79,
     "description": "Called \"Gudmund\" after the name Swedes give to the day of the year on which it began April the 2nd. Card by Andu.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/822058719961284639/saabems.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/822059295473664070/99EMS.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/822059301648203776/99EMS1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/822059311198502942/99EMS2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/822059335470284830/99EMS996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/822059328751009802/99EMS969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/822059322565460028/99EMS699.png",
-
     "333TopSpeed": 113,
     "3330to60": 11.4,
     "333Handling": 70,
-
     "666TopSpeed": 118,
-    "6660to60": 10.8, 
+    "6660to60": 10.8,
     "666Handling": 72,
-
     "996TopSpeed": 122,
     "9960to60": 10.2,
     "996Handling": 72,
-
     "969TopSpeed": 122,
     "9690to60": 10.8,
     "969Handling": 75,
-
     "699TopSpeed": 118,
     "6990to60": 10.2,
-    "699Handling": 75
+    "699Handling": 75,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

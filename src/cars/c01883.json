@@ -9,9 +9,10 @@
     "handling": 60,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1700,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 47.96,
     "ola": 58.16,
     "description": "The first. Card by Keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/867728875969314826/toyota_century_type_a.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/867728066381479957/century_type_a_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/867728076552929290/century_type_a_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/867728079874162708/century_type_a_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/867728093329752064/century_type_a_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/867728088284528660/century_type_a_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/867728084748468264/century_type_a_699.jpg",
-
     "333TopSpeed": 111,
     "3330to60": 13.4,
     "333Handling": 62,
-
     "666TopSpeed": 116,
     "6660to60": 12.7,
     "666Handling": 64,
-
     "996TopSpeed": 121,
-    "9960to60": 12.0,
+    "9960to60": 12,
     "996Handling": 64,
-
     "969TopSpeed": 121,
     "9690to60": 12.7,
     "969Handling": 67,
-
     "699TopSpeed": 116,
-    "6990to60": 12.0,
-    "699Handling": 67
+    "6990to60": 12,
+    "699Handling": 67,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

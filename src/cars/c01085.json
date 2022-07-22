@@ -1,4 +1,4 @@
-﻿{
+{
     "rq": 76,
     "make": "Porsche",
     "model": "911 Turbo",
@@ -9,9 +9,10 @@
     "handling": 85,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Supercar"],
+    "tags": [
+        "Supercar"
+    ],
     "isPrize": false,
-
     "weight": 1500,
     "gc": "Low",
     "seatCount": 4,
@@ -23,32 +24,22 @@
     "mra": 73.15,
     "ola": 67.99,
     "description": "The first ever 4WD 911 Turbo. Card by Havvy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/824611695707291658/turbo95.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824615203202269184/pt95.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824615208152334397/pt95333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824615214221099008/pt95666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824615242058563634/pt95996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824615234022539294/pt95969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824615223007772762/pt95699.png",
-
     "333TopSpeed": 182,
     "3330to60": 3.7,
     "333Handling": 88,
-
     "666TopSpeed": 185,
-    "6660to60": 3.5, 
+    "6660to60": 3.5,
     "666Handling": 91,
-
     "996TopSpeed": 188,
     "9960to60": 3.3,
     "996Handling": 91,
-
     "969TopSpeed": 188,
     "9690to60": 3.5,
     "969Handling": 94,
-
     "699TopSpeed": 185,
     "6990to60": 3.3,
-    "699Handling": 94
+    "699Handling": 94,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

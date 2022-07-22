@@ -11,7 +11,6 @@
     "tyreType": "All-Surface",
     "tags": [],
     "isPrize": false,
-
     "weight": 1945,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 64.41,
     "ola": 73.68,
     "description": "Hey Macan, i heard you like Macan's so we put a Macan on your Macan so you can Macan while you Macan the Macan. Card by Macan.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/862466524249325628/Macan_Turbo_19.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/862466874905067600/Porsche_Macan_Turbo_2019_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/862466883751772190/Porsche_Macan_Turbo_2019_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/862466885509578762/Porsche_Macan_Turbo_2019_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/862466900755349534/Porsche_Macan_Turbo_2019_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/862466897739644958/Porsche_Macan_Turbo_2019_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/862466892857212938/Porsche_Macan_Turbo_2019_699.png",
-
     "333TopSpeed": 171,
     "3330to60": 3.6,
     "333Handling": 88,
-
     "666TopSpeed": 174,
     "6660to60": 3.4,
     "666Handling": 91,
-
     "996TopSpeed": 177,
     "9960to60": 3.2,
     "996Handling": 91,
-
     "969TopSpeed": 177,
     "9690to60": 3.4,
     "969Handling": 94,
-
     "699TopSpeed": 174,
     "6990to60": 3.2,
-    "699Handling": 94
+    "699Handling": 94,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

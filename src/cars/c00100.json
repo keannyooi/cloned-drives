@@ -9,9 +9,10 @@
     "handling": 70,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": ["Innovative"],
+    "tags": [
+        "Innovative"
+    ],
     "isPrize": false,
-
     "weight": 1290,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 53.96,
     "ola": 69.93,
     "description": "German Quattro excellence. Card by Havvy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/822624671777947679/Audi200TurboQuattro.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/822624714315792404/000_200tq.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/822624720376954880/111_200tq.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/822624724383170560/222_200tq.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/822624739172024330/332_200tq.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/822624735057805352/323_200tq.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/941786727872364604/699-200T.png",
-
     "333TopSpeed": 150,
     "3330to60": 6.8,
     "333Handling": 72,
-
     "666TopSpeed": 153,
     "6660to60": 6.5,
     "666Handling": 75,
-
     "996TopSpeed": 157,
     "9960to60": 6.1,
     "996Handling": 75,
-
     "969TopSpeed": 157,
     "9690to60": 6.5,
     "969Handling": 78,
-
     "699TopSpeed": 153,
     "6990to60": 6.1,
-    "699Handling": 78
+    "699Handling": 78,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

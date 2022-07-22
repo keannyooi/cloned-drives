@@ -1,6 +1,9 @@
 {
     "rq": 57,
-    "make": ["Rinspeed", "Porsche"],
+    "make": [
+        "Rinspeed",
+        "Porsche"
+    ],
     "model": "Bedouin",
     "modelYear": 2003,
     "country": "CH",
@@ -9,9 +12,12 @@
     "handling": 81,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Oddity", "Tuner", "Rest of The World"],
+    "tags": [
+        "Oddity",
+        "Tuner",
+        "Rest of The World"
+    ],
     "isPrize": false,
-
     "weight": 1640,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +29,22 @@
     "mra": 66.29,
     "ola": 74.58,
     "description": "how. Card by Havvy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/828652320312524871/unknown.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/828652373060091915/996Rinspeed_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/828652377778159620/996Rinspeed_111.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/828652381780312064/996Rinspeed_222.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/828652399761424414/996Rinspeed_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/828652393259466812/996Rinspeed_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/828652386926067752/996Rinspeed_233.png",
-
     "333TopSpeed": 158,
     "3330to60": 5.6,
     "333Handling": 84,
-
     "666TopSpeed": 162,
     "6660to60": 5.3,
     "666Handling": 86,
-
     "996TopSpeed": 165,
-    "9960to60": 5.0,
+    "9960to60": 5,
     "996Handling": 86,
-
     "969TopSpeed": 165,
     "9690to60": 5.3,
     "969Handling": 90,
-
     "699TopSpeed": 162,
-    "6990to60": 5.0,
-    "699Handling": 90
+    "6990to60": 5,
+    "699Handling": 90,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -9,9 +9,11 @@
     "handling": 94,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Track Day", "Servers Choice"],
+    "tags": [
+        "Track Day",
+        "Servers Choice"
+    ],
     "isPrize": false,
-
     "weight": 920,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +25,22 @@
     "mra": 91.18,
     "ola": 90.32,
     "description": "Card by Tom.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/943648072775368764/toms3peleve.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/865926879096602654/Lotus_3-Eleven_430_111.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/865926885460803584/Lotus_3-Eleven_430_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/865926890157375539/Lotus_3-Eleven_430_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/865926916862378004/Lotus_3-Eleven_430_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/865926911956221972/Lotus_3-Eleven_430_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/865926894377631754/Lotus_3-Eleven_430_699.jpg",
-
     "333TopSpeed": 183,
     "3330to60": 2.9,
     "333Handling": 97,
-
     "666TopSpeed": 186,
     "6660to60": 2.8,
     "666Handling": 100,
-
     "996TopSpeed": 189,
     "9960to60": 2.6,
     "996Handling": 100,
-
     "969TopSpeed": 189,
     "9690to60": 2.8,
     "969Handling": 104,
-
     "699TopSpeed": 186,
     "6990to60": 2.6,
-    "699Handling": 104
+    "699Handling": 104,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

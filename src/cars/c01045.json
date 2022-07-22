@@ -9,9 +9,11 @@
     "handling": 72,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Muscle Car", "Silver Screen"],
+    "tags": [
+        "Muscle Car",
+        "Silver Screen"
+    ],
     "isPrize": false,
-
     "weight": 1600,
     "gc": "Low",
     "seatCount": 2,
@@ -20,36 +22,25 @@
     "abs": false,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 46.50,
+    "mra": 46.5,
     "ola": 68.82,
     "description": "Card by Johnny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/821725374903484476/cate-test.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821725524560183317/Pontiac-Firebird-Trans-Am.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821725529513656360/Pontiac-Firebird-Trans-Am-1-star.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821725532314927174/Pontiac-Firebird-Trans-Am-2-star.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821725568479133736/Pontiac-Firebird-Trans-Am-332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821725559473963058/Pontiac-Firebird-Trans-Am-323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821725551324692501/Pontiac-Firebird-Trans-Am-233.png",
-
     "333TopSpeed": 115,
     "3330to60": 8.8,
     "333Handling": 74,
-
     "666TopSpeed": 119,
-    "6660to60": 8.4, 
+    "6660to60": 8.4,
     "666Handling": 77,
-
     "996TopSpeed": 124,
     "9960to60": 7.9,
     "996Handling": 77,
-
     "969TopSpeed": 124,
     "9690to60": 8.4,
     "969Handling": 80,
-
     "699TopSpeed": 119,
     "6990to60": 7.9,
-    "699Handling": 80
-
+    "699Handling": 80,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

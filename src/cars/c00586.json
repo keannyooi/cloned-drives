@@ -9,9 +9,10 @@
     "handling": 77,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": ["Sleeper" ],
+    "tags": [
+        "Sleeper"
+    ],
     "isPrize": false,
-
     "weight": 1775,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 77.67,
     "ola": 64.78,
     "description": "Card by Havvy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/824372738051014756/JAGUARF-PACES.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824373261739098192/fps.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824373266155175946/fps333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824373280101892136/fps666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824373300682817586/fps996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824373290105176104/fps969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824373281721286696/fps699.png",
-
     "333TopSpeed": 158,
     "3330to60": 4.9,
     "333Handling": 80,
-
     "666TopSpeed": 162,
     "6660to60": 4.7,
     "666Handling": 82,
-
     "996TopSpeed": 165,
     "9960to60": 4.4,
     "996Handling": 82,
-
     "969TopSpeed": 165,
     "9690to60": 4.7,
     "969Handling": 85,
-
-	"699TopSpeed": 162,
+    "699TopSpeed": 162,
     "6990to60": 4.4,
-    "699Handling": 85
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

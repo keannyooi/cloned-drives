@@ -9,9 +9,10 @@
     "handling": 70,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 945,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +24,22 @@
     "mra": 33.15,
     "ola": 69.23,
     "description": "Diesel Zanussi. Card by Connor.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/864255012779851816/E.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/864255180174524436/ToyotaiQ14.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/864255192932679710/ToyotaiQ14-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/864255206169903134/ToyotaiQ14-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/864255241330229311/ToyotaiQ14-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/864255231062573116/ToyotaiQ14-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/864255217687330856/ToyotaiQ14-699.png",
-
     "333TopSpeed": 112,
     "3330to60": 9.9,
     "333Handling": 72,
-
     "666TopSpeed": 117,
     "6660to60": 9.4,
     "666Handling": 75,
-
     "996TopSpeed": 122,
     "9960to60": 8.8,
     "996Handling": 75,
-
     "969TopSpeed": 122,
     "9690to60": 9.4,
     "969Handling": 78,
-
     "699TopSpeed": 117,
     "6990to60": 8.8,
-    "699Handling": 78
+    "699Handling": 78,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

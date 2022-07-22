@@ -9,9 +9,11 @@
     "handling": 95,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Track Day", "The Royal Collection"],
+    "tags": [
+        "Track Day",
+        "The Royal Collection"
+    ],
     "isPrize": false,
-
     "weight": 545,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +25,22 @@
     "mra": 71.05,
     "ola": 98.73,
     "description": "Cate. Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/848201538564390912/620Rbut89.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/846704005094440971/cate620R.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/846704008499822612/cate620R333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/846704013625655306/cate620R666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/846704034794569728/cate620R996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/846704026875068466/cate620R969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/846704021594570772/cate620R699.png",
-
     "333TopSpeed": 158,
     "3330to60": 2.6,
     "333Handling": 98,
-
     "666TopSpeed": 162,
     "6660to60": 2.4,
     "666Handling": 101,
-
     "996TopSpeed": 165,
     "9960to60": 2.3,
     "996Handling": 101,
-
     "969TopSpeed": 165,
     "9690to60": 2.4,
     "969Handling": 105,
-
     "699TopSpeed": 162,
     "6990to60": 2.3,
-    "699Handling": 105
+    "699Handling": 105,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -9,9 +9,10 @@
     "handling": 75,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Eco-Friendly"],
+    "tags": [
+        "Eco-Friendly"
+    ],
     "isPrize": false,
-
     "weight": 1530,
     "gc": "Low",
     "seatCount": 4,
@@ -20,35 +21,25 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Hybrid",
-    "mra": 48.60,
-    "ola": 73.00,
+    "mra": 48.6,
+    "ola": 73,
     "description": "Plug in version of the innovator. Card by Connor",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820008111959572490/E.ToyotaPriusPluginHybrid.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820008228552704100/E.ToyotaPriusPlugin.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820008235306057778/E.ToyotaPriusPlugin-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820008244508098560/E.ToyotaPriusPlugin-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820008284484403310/E.ToyotaPriusPlugin-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820008274131812423/E.ToyotaPriusPlugin-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820008261838569472/E.ToyotaPriusPlugin-699.png",
-
     "333TopSpeed": 109,
     "3330to60": 9.9,
     "333Handling": 77,
-
     "666TopSpeed": 114,
-    "6660to60": 9.4, 
+    "6660to60": 9.4,
     "666Handling": 80,
-
     "996TopSpeed": 119,
     "9960to60": 8.8,
     "996Handling": 80,
-
     "969TopSpeed": 119,
     "9690to60": 9.4,
     "969Handling": 83,
-
     "699TopSpeed": 114,
     "6990to60": 8.8,
-    "699Handling": 83
+    "699Handling": 83,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

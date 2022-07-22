@@ -9,13 +9,13 @@
     "handling": 73,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
-
     "weight": 1104,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
@@ -24,33 +24,22 @@
     "mra": 34.92,
     "ola": 66.21,
     "description": "The Toyota Yaris gets cleaner, more efficient engines, but its established competition is tougher than ever. Card by Andu",
-
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/868587152135569429/YarisLE.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/868588310627500032/YarisLe.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/868588313454473256/YarisLe-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/868588321754972160/YarisLe-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/868588335998840832/YarisLe-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/868588350779584562/YarisLe-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/868588360275468288/YarisLe-699.png",
-
     "333TopSpeed": 115,
     "3330to60": 9.3,
     "333Handling": 75,
-
     "666TopSpeed": 119,
-    "6660to60": 8.8, 
+    "6660to60": 8.8,
     "666Handling": 78,
-
     "996TopSpeed": 124,
     "9960to60": 8.3,
     "996Handling": 78,
-
     "969TopSpeed": 124,
     "9690to60": 8.8,
     "969Handling": 81,
-
     "699TopSpeed": 119,
     "6990to60": 8.3,
-    "699Handling": 81
+    "699Handling": 81,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

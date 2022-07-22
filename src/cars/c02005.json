@@ -9,9 +9,11 @@
     "handling": 97,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Unique", "Hypercar"],
+    "tags": [
+        "Unique",
+        "Hypercar"
+    ],
     "isPrize": true,
-
     "weight": 1374,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +25,22 @@
     "mra": 122.73,
     "ola": 96.3,
     "description": "A Senna-based McLaren made exclusively for the US. Card by Exist.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/860133170620006410/CD_McLaren_Sabre.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/860133217621508126/CD_McLaren_Sabre_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/860133224999288883/CD_McLaren_Sabre_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/860133229670301696/CD_McLaren_Sabre_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/860133245839474708/CD_McLaren_Sabre_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/860133240215437352/CD_McLaren_Sabre_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/860133235086327838/CD_McLaren_Sabre_699.png",
-
     "333TopSpeed": 220,
     "3330to60": 2.6,
     "333Handling": 100,
-
     "666TopSpeed": 223,
     "6660to60": 2.4,
     "666Handling": 103,
-
     "996TopSpeed": 225,
     "9960to60": 2.3,
     "996Handling": 103,
-
     "969TopSpeed": 225,
     "9690to60": 2.4,
     "969Handling": 108,
-
     "699TopSpeed": 223,
     "6990to60": 2.3,
-    "699Handling": 108
+    "699Handling": 108,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

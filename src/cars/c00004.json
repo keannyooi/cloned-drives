@@ -1,6 +1,9 @@
 {
     "rq": 1,
-    "make": ["Abarth", "Fiat"],
+    "make": [
+        "Abarth",
+        "Fiat"
+    ],
     "model": "500 Carozzeria Zagato",
     "modelYear": 1957,
     "country": "IT",
@@ -9,9 +12,10 @@
     "handling": 57,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Unique"],
+    "tags": [
+        "Unique"
+    ],
     "isPrize": true,
-
     "weight": 465,
     "gc": "Low",
     "seatCount": 2,
@@ -20,35 +24,25 @@
     "abs": false,
     "enginePos": "Rear",
     "fuelType": "Petrol",
-    "mra": 0.00,
+    "mra": 0,
     "ola": 37.13,
     "description": "A refined redesigned 500 by Zagato. Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/823589168499392532/500Z.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823589846328672276/500Z.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823589852347367476/500Z333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823589859432202250/500Z666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823589885738876938/500Z996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823589877090222080/500Z969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823589867933007892/500Z699.png",
-
     "333TopSpeed": 78,
     "3330to60": 38.4,
     "333Handling": 59,
-
     "666TopSpeed": 86,
     "6660to60": 36.4,
     "666Handling": 61,
-
     "996TopSpeed": 93,
     "9960to60": 34.3,
     "996Handling": 61,
-
     "969TopSpeed": 93,
     "9690to60": 36.4,
     "969Handling": 63,
-
     "699TopSpeed": 86,
     "6990to60": 34.3,
-    "699Handling": 63
+    "699Handling": 63,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

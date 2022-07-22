@@ -9,9 +9,12 @@
     "handling": 96,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["The Royal Collection", "Unique", "Track Day"],
+    "tags": [
+        "The Royal Collection",
+        "Unique",
+        "Track Day"
+    ],
     "isPrize": false,
-
     "weight": 1350,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +26,22 @@
     "mra": 86.05,
     "ola": 86.49,
     "description": "Card by Smega.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/850349946795851856/CD_Ascari_KZ1-R_LM.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/850350019767697428/CD_Ascari_KZ1-R_LM_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/850350025753886750/CD_Ascari_KZ1-R_LM_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/850350033378213908/CD_Ascari_KZ1-R_LM_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/850350047245762570/CD_Ascari_KZ1-R_LM_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/850350041490522112/CD_Ascari_KZ1-R_LM_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/850350039750148136/CD_Ascari_KZ1-R_LM_699.png",
-
     "333TopSpeed": 203,
     "3330to60": 3.5,
     "333Handling": 99,
-
     "666TopSpeed": 205,
     "6660to60": 3.3,
     "666Handling": 102,
-
     "996TopSpeed": 208,
     "9960to60": 3.1,
     "996Handling": 102,
-
     "969TopSpeed": 208,
     "9690to60": 3.3,
     "969Handling": 107,
-
     "699TopSpeed": 205,
     "6990to60": 3.1,
-    "699Handling": 107
+    "699Handling": 107,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

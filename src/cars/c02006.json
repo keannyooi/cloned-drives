@@ -1,6 +1,9 @@
 {
     "rq": 73,
-    "make": ["Mercedes-AMG", "Mercedes-Benz"],
+    "make": [
+        "Mercedes-AMG",
+        "Mercedes-Benz"
+    ],
     "model": "S 63 4MATIC",
     "modelYear": 2014,
     "country": "DE",
@@ -9,9 +12,10 @@
     "handling": 83,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Super Sedan"],
+    "tags": [
+        "Super Sedan"
+    ],
     "isPrize": false,
-
     "weight": 2172,
     "gc": "Low",
     "seatCount": 5,
@@ -23,32 +27,22 @@
     "mra": 82.98,
     "ola": 82.05,
     "description": "Card by Lemonade.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/895631889128382464/Mercedes_S_63_AMG_4MATIC_CD.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/890452543455526922/Mercedes_S_63_AMG_4MATIC_CD_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/890452573004394496/Mercedes_S_63_AMG_4MATIC_CD_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/890452606156165130/Mercedes_S_63_AMG_4MATIC_CD_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/890452709570932777/Mercedes_S_63_AMG_4MATIC_CD_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/890452677014732872/Mercedes_S_63_AMG_4MATIC_CD_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/890452639953870848/Mercedes_S_63_AMG_4MATIC_CD_699.png",
-
     "333TopSpeed": 189,
     "3330to60": 3.7,
     "333Handling": 86,
-
     "666TopSpeed": 192,
     "6660to60": 3.5,
     "666Handling": 88,
-
     "996TopSpeed": 194,
     "9960to60": 3.3,
     "996Handling": 88,
-
     "969TopSpeed": 194,
     "9690to60": 3.5,
     "969Handling": 92,
-
     "699TopSpeed": 192,
     "6990to60": 3.3,
-    "699Handling": 92
+    "699Handling": 92,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

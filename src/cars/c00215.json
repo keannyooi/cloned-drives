@@ -9,9 +9,12 @@
     "handling": 93,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Hypercar", "Ultra Expensive", "Unique"],
+    "tags": [
+        "Hypercar",
+        "Ultra Expensive",
+        "Unique"
+    ],
     "isPrize": false,
-
     "weight": 1973,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +26,22 @@
     "mra": 124.32,
     "ola": 90.43,
     "description": "The best made better. Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/951467691921768448/ChironSuperSport.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/951467733567041596/chironss.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/951467739392925696/chironss1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/951467747592777778/chironss2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/951467775476531290/chironss996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/951467766026747974/chironss969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/951467756983816252/chironss699.png",
-
     "333TopSpeed": 275,
     "3330to60": 2.2,
     "333Handling": 96,
-
     "666TopSpeed": 277,
     "6660to60": 2.1,
     "666Handling": 99,
-
     "996TopSpeed": 279,
-    "9960to60": 2.0,
+    "9960to60": 2,
     "996Handling": 99,
-
-	"969TopSpeed": 279,
+    "969TopSpeed": 279,
     "9690to60": 2.1,
     "969Handling": 103,
-
     "699TopSpeed": 277,
-    "6990to60": 2.0,
-    "699Handling": 103
+    "6990to60": 2,
+    "699Handling": 103,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

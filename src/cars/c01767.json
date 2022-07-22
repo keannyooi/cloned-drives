@@ -9,9 +9,11 @@
     "handling": 68,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Street Racer","The Japanese Odyssey"],
+    "tags": [
+        "Street Racer",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1250,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +25,22 @@
     "mra": 53.15,
     "ola": 71.05,
     "description": "Card by Havvy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/867921138595037204/NissanSilviaConvertibleS13.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/867921213392056371/cs_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/867921215183007854/cs_111.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/867921219079516180/cs_222.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/867921236083241000/cs_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/867921232794902558/cs_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/867921224125263872/cs_233.png",
-
     "333TopSpeed": 117,
     "3330to60": 7.2,
     "333Handling": 70,
-
     "666TopSpeed": 121,
     "6660to60": 6.8,
     "666Handling": 72,
-
     "996TopSpeed": 126,
     "9960to60": 6.5,
     "996Handling": 72,
-
     "969TopSpeed": 126,
     "9690to60": 6.8,
     "969Handling": 75,
-
     "699TopSpeed": 121,
     "6990to60": 6.5,
-    "699Handling": 75
+    "699Handling": 75,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

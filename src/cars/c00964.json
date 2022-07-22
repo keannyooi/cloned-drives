@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1135,
     "gc": "Low",
     "seatCount": 4,
@@ -23,32 +22,22 @@
     "mra": 54.86,
     "ola": 77.88,
     "description": "Red Hot Chili Adam. Card by Connor",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819552585388130334/D.OpelAdamS.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819552752736665640/D.OpelAdamS.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819552770176712734/D.OpelAdamS-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819552786453889095/D.OpelAdamS-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819552854120857620/D.OpelAdamS-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819552824287035452/D.OpelAdamS-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819552807048183808/D.OpelAdamS-699.png",
-
     "333TopSpeed": 130,
     "3330to60": 7.4,
     "333Handling": 80,
-
     "666TopSpeed": 134,
-    "6660to60": 7.0,
+    "6660to60": 7,
     "666Handling": 82,
-
     "996TopSpeed": 138,
     "9960to60": 6.6,
     "996Handling": 82,
-
     "969TopSpeed": 138,
-    "9690to60": 7.0,
+    "9690to60": 7,
     "969Handling": 85,
-
     "699TopSpeed": 134,
     "6990to60": 6.6,
-    "699Handling": 85
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

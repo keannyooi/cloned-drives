@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1449,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 51.08,
     "ola": 73.58,
     "description": "Card by Connor.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/851472200531574784/D.OpelMokka17CDTI.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/851472345334939678/D.OpelMokka.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/851472361534390302/D.OpelMokka-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/851472382186881105/D.OpelMokka-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/851472431314894848/D.OpelMokka-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/851472412688252938/D.OpelMokka-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/851472397173391420/D.OpelMokka-699.png",
-
     "333TopSpeed": 122,
-    "3330to60": 9.0,
+    "3330to60": 9,
     "333Handling": 76,
-
     "666TopSpeed": 127,
     "6660to60": 8.6,
     "666Handling": 79,
-
     "996TopSpeed": 131,
     "9960to60": 8.1,
     "996Handling": 79,
-
     "969TopSpeed": 131,
     "9690to60": 8.6,
     "969Handling": 82,
-
     "699TopSpeed": 127,
     "6990to60": 8.1,
-    "699Handling": 82
+    "699Handling": 82,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

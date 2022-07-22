@@ -9,9 +9,11 @@
     "handling": 81,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Muscle Car", "Silver Screen"],
+    "tags": [
+        "Muscle Car",
+        "Silver Screen"
+    ],
     "isPrize": false,
-
     "weight": 1746,
     "gc": "Low",
     "seatCount": 4,
@@ -23,32 +25,22 @@
     "mra": 79.28,
     "ola": 82.98,
     "description": "'Hey look, it's red Bumblebee!'. Card by havvy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820742726156156968/ChevroletCamaroSS.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820742777427197982/000_camaro.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820742783207473212/111_camaro.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820742785958674462/222_camaro.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820742803734265906/332_camaro.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820742799304818688/323_camaro.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820742791436697630/233_camaro.png",
-
     "333TopSpeed": 158,
     "3330to60": 4.5,
     "333Handling": 84,
-
     "666TopSpeed": 162,
     "6660to60": 4.2,
     "666Handling": 86,
-
-	"996TopSpeed": 165,
-    "9960to60": 4.0,
+    "996TopSpeed": 165,
+    "9960to60": 4,
     "996Handling": 86,
-
     "969TopSpeed": 165,
     "9690to60": 4.2,
     "969Handling": 90,
-
-	"699TopSpeed": 162,
-    "6990to60": 4.0,
-    "699Handling": 90
+    "699TopSpeed": 162,
+    "6990to60": 4,
+    "699Handling": 90,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -1,17 +1,21 @@
 {
     "rq": 40,
-    "make": ["AC Propulsion", "Scion"],
+    "make": [
+        "AC Propulsion",
+        "Scion"
+    ],
     "model": "eBox",
     "modelYear": 2007,
     "country": "US",
     "topSpeed": 95,
-    "0to60": 7.0,
+    "0to60": 7,
     "handling": 72,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Eco-Friendly"],
+    "tags": [
+        "Eco-Friendly"
+    ],
     "isPrize": false,
-
     "weight": 1383,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +27,22 @@
     "mra": 39.97,
     "ola": 62.86,
     "description": "A Scion xB converted into an electric car that Tom Hanks owns. Card by keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/865584491687182356/ac_propulsion_ebox.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/845921718273835048/ebox_000.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/845921724956016690/ebox_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/845921729267892234/ebox_666.jpg",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/845921745168498738/ebox_996.jpg",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/845921739983552562/ebox_969.jpg",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/845921735294844979/ebox_699.jpg",
-
     "333TopSpeed": 100,
     "3330to60": 6.7,
     "333Handling": 74,
-
     "666TopSpeed": 106,
     "6660to60": 6.3,
     "666Handling": 77,
-
     "996TopSpeed": 111,
-    "9960to60": 6.0,
+    "9960to60": 6,
     "996Handling": 77,
-
     "969TopSpeed": 111,
     "9690to60": 6.3,
     "969Handling": 80,
-
     "699TopSpeed": 106,
-    "6990to60": 6.0,
-    "699Handling": 80
+    "6990to60": 6,
+    "699Handling": 80,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -9,9 +9,11 @@
     "handling": 73,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Eco-Friendly","The Japanese Odyssey"],
+    "tags": [
+        "Eco-Friendly",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1410,
     "gc": "Medium",
     "seatCount": 5,
@@ -20,35 +22,25 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Hybrid",
-    "mra": 50.00,
+    "mra": 50,
     "ola": 69.16,
     "description": "Card by Connor",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/867523733911633930/E.ToyotaAuris18Hybrid.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/867524067619504148/ToyotaAurisHybrid.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/867524077974585364/ToyotaAurisHybrid-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/867524088121131068/ToyotaAurisHybrid-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/867524130140061747/ToyotaAurisHybrid-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/867524120492114000/ToyotaAurisHybrid-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/867524110368243762/ToyotaAurisHybrid-699.png",
-
     "333TopSpeed": 118,
     "3330to60": 10.2,
     "333Handling": 75,
-
     "666TopSpeed": 122,
     "6660to60": 9.6,
     "666Handling": 78,
-
     "996TopSpeed": 127,
     "9960to60": 9.1,
     "996Handling": 78,
-
     "969TopSpeed": 127,
     "9690to60": 9.6,
     "969Handling": 81,
-
     "699TopSpeed": 122,
     "6990to60": 9.1,
-    "699Handling": 81
+    "699Handling": 81,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

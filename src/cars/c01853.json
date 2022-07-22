@@ -1,6 +1,9 @@
 {
     "rq": 69,
-    "make": ["Tommykaira", "Nissan"],
+    "make": [
+        "Tommykaira",
+        "Nissan"
+    ],
     "model": "M30Z",
     "modelYear": 1991,
     "country": "JP",
@@ -9,9 +12,12 @@
     "handling": 83,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Tuner","The Japanese Odyssey", "Unique"],
+    "tags": [
+        "Tuner",
+        "The Japanese Odyssey",
+        "Unique"
+    ],
     "isPrize": false,
-
     "weight": 1510,
     "gc": "Medium",
     "seatCount": 2,
@@ -23,32 +29,22 @@
     "mra": 61.64,
     "ola": 84.44,
     "description": "Only 11 of these exist. However, it's fairly well known in the JDM community compared to Tommykaira's other offerings bar the ZZ. Card by Keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/869500048197685268/tommykaira_m30z.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/869218877538701392/m30z_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/869218885583376444/m30z_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/869218885780529232/m30z_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/869218896991911986/m30z_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/869218892575281243/m30z_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/869218890973073418/m30z_699.jpg",
-
     "333TopSpeed": 171,
     "3330to60": 4.3,
     "333Handling": 86,
-
     "666TopSpeed": 174,
     "6660to60": 4.1,
     "666Handling": 88,
-
     "996TopSpeed": 177,
     "9960to60": 3.8,
     "996Handling": 88,
-
     "969TopSpeed": 177,
     "9690to60": 4.1,
     "969Handling": 92,
-
     "699TopSpeed": 174,
     "6990to60": 3.8,
-    "699Handling": 92
+    "699Handling": 92,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

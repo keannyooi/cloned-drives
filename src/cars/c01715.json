@@ -9,9 +9,11 @@
     "handling": 69,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Street Racer","The Japanese Odyssey"],
+    "tags": [
+        "Street Racer",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1450,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +25,22 @@
     "mra": 61.65,
     "ola": 74.42,
     "description": "Card by Keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/869499211811532820/nissan_fairlady_z_300zr.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/869212134486212628/300zr_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/869212137912950856/300zr_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/869212142522494976/300zr_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/869212153628991558/300zr_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/869212149023658024/300zr_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/869212144955183124/300zr_699.jpg",
-
     "333TopSpeed": 117,
     "3330to60": 8.2,
     "333Handling": 71,
-
     "666TopSpeed": 121,
     "6660to60": 7.7,
     "666Handling": 74,
-
     "996TopSpeed": 126,
     "9960to60": 7.3,
     "996Handling": 74,
-
     "969TopSpeed": 126,
     "9690to60": 7.7,
     "969Handling": 77,
-
     "699TopSpeed": 121,
     "6990to60": 7.3,
-    "699Handling": 77
+    "699Handling": 77,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

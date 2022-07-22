@@ -9,9 +9,11 @@
     "handling": 77,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Concept", "Eco-Friendly"],
+    "tags": [
+        "Concept",
+        "Eco-Friendly"
+    ],
     "isPrize": false,
-
     "weight": 1725,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +25,22 @@
     "mra": 61.45,
     "ola": 82.35,
     "description": "One of those times when the concept car looks less appealing than the production model. Card by keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/858544811656347648/tesla_model_s_concept.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/858542348777553980/model_s_concept_000.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/858542359653646386/model_s_concept_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/858542363126530048/model_s_concept_666.jpg",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/858542377190555668/model_s_concept_996.jpg",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/858542373113823252/model_s_concept_969.jpg",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/858542367639076864/model_s_concept_699.jpg",
-
     "333TopSpeed": 129,
     "3330to60": 5.5,
     "333Handling": 80,
-
     "666TopSpeed": 133,
     "6660to60": 5.2,
     "666Handling": 82,
-
     "996TopSpeed": 137,
     "9960to60": 4.9,
     "996Handling": 82,
-
     "969TopSpeed": 137,
     "9690to60": 5.2,
     "969Handling": 85,
-
     "699TopSpeed": 133,
     "6990to60": 4.9,
-    "699Handling": 85
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

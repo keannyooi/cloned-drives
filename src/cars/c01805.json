@@ -9,13 +9,15 @@
     "handling": 65,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": ["Concept", "Unique","The Japanese Odyssey"],
+    "tags": [
+        "Concept",
+        "Unique",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
-
     "weight": 3169,
     "gc": "High",
-    "seatCount":6,
+    "seatCount": 6,
     "bodyStyle": "Pick-Up",
     "tcs": true,
     "abs": true,
@@ -24,33 +26,22 @@
     "mra": 48.07,
     "ola": 72.75,
     "description": "Play this in any Forza Horizon. Fit it with wheels, size it up and now it weighs more than the Buckingham Palace. Card by Spence.",
-
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/970058396617306162/IMG_4768.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/970059832671490128/TitWarrior.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/970059840875548732/TitWarrior-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/970059851831083038/TitWarrior-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/970059864904720484/TitWarrior-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/970059878762692618/TitWarrior-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/970059894134820884/TitWarrior-699.png",
-
     "333TopSpeed": 135,
     "3330to60": 8.7,
     "333Handling": 67,
-
     "666TopSpeed": 139,
-    "6660to60": 8.3, 
+    "6660to60": 8.3,
     "666Handling": 69,
-
     "996TopSpeed": 143,
     "9960to60": 7.8,
     "996Handling": 69,
-
     "969TopSpeed": 143,
     "9690to60": 8.3,
     "969Handling": 72,
-
     "699TopSpeed": 139,
     "6990to60": 7.8,
-    "699Handling": 72
+    "699Handling": 72,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -1,6 +1,9 @@
 {
     "rq": 68,
-    "make": ["Mercedes-AMG", "Mercedes-Benz"],
+    "make": [
+        "Mercedes-AMG",
+        "Mercedes-Benz"
+    ],
     "model": "G 63",
     "modelYear": 2012,
     "country": "DE",
@@ -9,12 +12,13 @@
     "handling": 67,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": ["Style Icon"],
+    "tags": [
+        "Style Icon"
+    ],
     "isPrize": false,
-
     "weight": 2550,
     "gc": "High",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Suv",
     "tcs": true,
     "abs": true,
@@ -23,32 +27,22 @@
     "mra": 74.33,
     "ola": 82.08,
     "description": "Boxy. Card by Havvy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/951477421880803398/63Updated.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/951477462058020924/G632012.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/951477469867814972/G6320121.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/951477478688456736/G6320122.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/951477504835723274/G632012996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/951477497101422592/G632012969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/951477488452792330/G632012699.png",
-
     "333TopSpeed": 135,
     "3330to60": 4.8,
     "333Handling": 69,
-
     "666TopSpeed": 139,
-    "6660to60": 4.6, 
+    "6660to60": 4.6,
     "666Handling": 71,
-
     "996TopSpeed": 143,
     "9960to60": 4.3,
     "996Handling": 71,
-
     "969TopSpeed": 143,
     "9690to60": 4.6,
     "969Handling": 74,
-
     "699TopSpeed": 139,
     "6990to60": 4.3,
-    "699Handling": 74
+    "699Handling": 74,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

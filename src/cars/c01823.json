@@ -1,6 +1,10 @@
 {
     "rq": 45,
-    "make": ["Scarab", "Datsun", "Nissan"],
+    "make": [
+        "Scarab",
+        "Datsun",
+        "Nissan"
+    ],
     "model": "240Z Stage 2",
     "modelYear": 1971,
     "country": "US",
@@ -9,9 +13,12 @@
     "handling": 74,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Tuner", "Street Racer","The Japanese Odyssey"],
+    "tags": [
+        "Tuner",
+        "Street Racer",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1269,
     "gc": "Medium",
     "seatCount": 2,
@@ -23,32 +30,22 @@
     "mra": 72.09,
     "ola": 82.26,
     "description": "Yes, a car re-engineered by a speedboat company. Card by Keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/869499837983371264/scarab_240z.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/869219394994196540/scarab_240z_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/869219398945210388/scarab_240z_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/869219407690334269/scarab_240z_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/869219416620015636/scarab_240z_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/869219412278911026/scarab_240z_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/869219409611354162/scarab_240z_699.jpg",
-
     "333TopSpeed": 153,
     "3330to60": 5.9,
     "333Handling": 76,
-
     "666TopSpeed": 157,
     "6660to60": 5.6,
     "666Handling": 79,
-
     "996TopSpeed": 160,
     "9960to60": 5.3,
     "996Handling": 79,
-
     "969TopSpeed": 160,
     "9690to60": 5.6,
     "969Handling": 82,
-
     "699TopSpeed": 157,
     "6990to60": 5.3,
-    "699Handling": 82
+    "699Handling": 82,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

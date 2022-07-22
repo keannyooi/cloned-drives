@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1580,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 62.11,
     "ola": 77.97,
     "description": "The third ultimate under 35k sedan for car and driver. Card by Connor",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/823129479823360010/B.AcuraTL32.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823129467983364126/B.AcuraTL32.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823129493166096424/B.AcuraTL32-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823129509444059136/B.AcuraTL32-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823129562380632074/B.AcuraTL32-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823129532071542784/B.AcuraTL32-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823129523989512232/B.AcuraTL32-699.png",
-
     "333TopSpeed": 153,
     "3330to60": 5.6,
     "333Handling": 80,
-
     "666TopSpeed": 157,
     "6660to60": 5.3,
     "666Handling": 82,
-
     "996TopSpeed": 160,
-    "9960to60": 5.0,
+    "9960to60": 5,
     "996Handling": 82,
-
     "969TopSpeed": 160,
     "9690to60": 5.3,
     "969Handling": 85,
-
     "699TopSpeed": 157,
-    "6990to60": 5.0,
-    "699Handling": 85
+    "6990to60": 5,
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

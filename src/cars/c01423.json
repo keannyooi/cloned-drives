@@ -9,9 +9,11 @@
     "handling": 74,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": ["Eco-Friendly", "Rest of the World"],
+    "tags": [
+        "Eco-Friendly",
+        "Rest of the World"
+    ],
     "isPrize": false,
-
     "weight": 2299,
     "gc": "High",
     "seatCount": 7,
@@ -23,32 +25,22 @@
     "mra": 56.99,
     "ola": 83.02,
     "description": "The legendary SUV is hard to fault across the board, this new XC90 is almost perfect. Now useful. Card by Demon.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819423660094914600/2015_Volvo_XC90_T8_TE_RD.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823933715721879552/xc90.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823933719403298906/xc90333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823933728677953586/xc90666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823933756641116180/xc90996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823933743122088016/xc90969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823933736054947860/xc90699.png",
-
     "333TopSpeed": 147,
     "3330to60": 5.1,
     "333Handling": 76,
-
     "666TopSpeed": 150,
     "6660to60": 4.9,
     "666Handling": 79,
-
     "996TopSpeed": 154,
     "9960to60": 4.6,
     "996Handling": 79,
-
     "969TopSpeed": 154,
     "9690to60": 4.9,
     "969Handling": 82,
-
     "699TopSpeed": 150,
     "6990to60": 4.6,
-    "699Handling": 82
+    "699Handling": 82,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

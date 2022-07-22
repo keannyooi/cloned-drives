@@ -9,13 +9,13 @@
     "handling": 71,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
-
     "weight": 1018,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
@@ -24,33 +24,22 @@
     "mra": 15.78,
     "ola": 55.36,
     "description": "Cheap frugal fun in a hot burger bun. Card by Andu",
-
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/866666320425517087/214MZCDF.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/866667339407425536/214MZCD.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/866667348559265807/214MZCD-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/866667354837745684/214MZCD-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/866667371048599572/214MZCD-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/866667383196221470/214MZCD-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/866667398518145054/214MZCD-699.png",
-
     "333TopSpeed": 105,
     "3330to60": 13.8,
     "333Handling": 73,
-
     "666TopSpeed": 110,
-    "6660to60": 13.1, 
+    "6660to60": 13.1,
     "666Handling": 76,
-
     "996TopSpeed": 116,
     "9960to60": 12.3,
     "996Handling": 76,
-
     "969TopSpeed": 116,
     "9690to60": 13.1,
     "969Handling": 79,
-
     "699TopSpeed": 110,
     "6990to60": 12.3,
-    "699Handling": 79
+    "699Handling": 79,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

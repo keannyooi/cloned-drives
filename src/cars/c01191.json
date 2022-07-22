@@ -9,9 +9,10 @@
     "handling": 72,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Street Racer"],
+    "tags": [
+        "Street Racer"
+    ],
     "isPrize": false,
-
     "weight": 1285,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 47.43,
     "ola": 60.24,
     "description": "The best performing Impreza in the US at time of release. Card by Spence.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/844642986670293032/image0.jpg",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/844643041309491220/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/844643058486345788/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/844643078919815183/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/844643127327064074/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/844643114353295391/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/844643099431141426/image0.jpg",
-
     "333TopSpeed": 130,
     "3330to60": 7.9,
     "333Handling": 74,
-
     "666TopSpeed": 134,
     "6660to60": 7.5,
     "666Handling": 77,
-
     "996TopSpeed": 138,
     "9960to60": 7.1,
     "996Handling": 77,
-
     "969TopSpeed": 138,
     "9690to60": 7.5,
     "969Handling": 80,
-
     "699TopSpeed": 134,
     "6990to60": 7.1,
-    "699Handling": 80
+    "699Handling": 80,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

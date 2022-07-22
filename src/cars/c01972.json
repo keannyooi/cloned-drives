@@ -9,9 +9,10 @@
     "handling": 77,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Sleeper"],
+    "tags": [
+        "Sleeper"
+    ],
     "isPrize": false,
-
     "weight": 1420,
     "gc": "Low",
     "seatCount": 4,
@@ -20,35 +21,25 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 80.00,
+    "mra": 80,
     "ola": 80.77,
     "description": "Card by Olimato.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/945195575417139240/z3_m_coupe_cd.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/945195672834015292/z3_m_stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/945195688705277972/z3_m_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/945195702827487252/z3_m_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/945195739540254790/z3_m_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/945195725837447188/z3_m_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/945195717721464842/z3_m_699.png",
-
     "333TopSpeed": 158,
     "3330to60": 4.9,
     "333Handling": 80,
-
     "666TopSpeed": 162,
     "6660to60": 4.7,
     "666Handling": 82,
-
     "996TopSpeed": 165,
     "9960to60": 4.4,
     "996Handling": 82,
-
     "969TopSpeed": 165,
     "9690to60": 4.7,
     "969Handling": 85,
-
     "699TopSpeed": 162,
     "6990to60": 4.4,
-    "699Handling": 85
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

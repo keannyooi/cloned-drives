@@ -9,9 +9,11 @@
     "handling": 93,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Hypercar", "Track Day"],
+    "tags": [
+        "Hypercar",
+        "Track Day"
+    ],
     "isPrize": false,
-
     "weight": 1525,
     "gc": "Low",
     "seatCount": 2,
@@ -21,34 +23,24 @@
     "enginePos": "Middle",
     "fuelType": "Petrol",
     "mra": 96.43,
-    "ola": 96.30,
+    "ola": 96.3,
     "description": "The ultimate Aventador. Card by DodgeDemon",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/821045098275405905/2018_Lamborghini_Aventador_SVJ.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824373927400308776/svj.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824373933222395914/svj333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824373938120556575/svj666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824373979493957672/svj996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824373970391662592/svj969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824373960493498428/svj699.png",
-
     "333TopSpeed": 219,
     "3330to60": 2.6,
     "333Handling": 96,
-
     "666TopSpeed": 222,
     "6660to60": 2.4,
     "666Handling": 99,
-
     "996TopSpeed": 224,
     "9960to60": 2.3,
     "996Handling": 99,
-
     "969TopSpeed": 224,
     "9690to60": 2.4,
     "969Handling": 103,
-
     "699TopSpeed": 222,
     "6990to60": 2.3,
-    "699Handling": 103
+    "699Handling": 103,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

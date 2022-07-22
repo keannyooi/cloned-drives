@@ -11,7 +11,6 @@
     "tyreType": "All-Surface",
     "tags": [],
     "isPrize": false,
-
     "weight": 2660,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 81.03,
     "ola": 76.59,
     "description": "Royalty to be taken anywhere. Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/947578521147019314/Cullinan.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/947578559009013790/stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/947578582148972655/333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/947578610737361006/666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/947578708099756133/996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/947578681897938964/969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/947578657944240138/699.png",
-
     "333TopSpeed": 158,
     "3330to60": 4.5,
     "333Handling": 77,
-
     "666TopSpeed": 162,
     "6660to60": 4.2,
     "666Handling": 80,
-
     "996TopSpeed": 165,
-    "9960to60": 4.0,
+    "9960to60": 4,
     "996Handling": 80,
-
     "969TopSpeed": 165,
     "9690to60": 4.2,
     "969Handling": 83,
-
     "699TopSpeed": 162,
-    "6990to60": 4.0,
-    "699Handling": 83
+    "6990to60": 4,
+    "699Handling": 83,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1833,
     "gc": "Low",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 68.48,
     "ola": 79.37,
     "description": "High performance version of the Insignia powered by the 2.8 litre Australian made V6 delivering 325 PS. Card by Connor",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/858672801745207316/C.OpelInsigniaOPC.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/858673028317839380/OpelInsigniaOPC.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/858673039909847040/OpelInsigniaOPC-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/858673049161957386/OpelInsigniaOPC-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/858673084357279764/OpelInsigniaOPC-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/858673072060104724/OpelInsigniaOPC-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/858673061528338432/OpelInsigniaOPC-699.png",
-
     "333TopSpeed": 158,
-    "3330to60": 6.0,
+    "3330to60": 6,
     "333Handling": 84,
-
     "666TopSpeed": 162,
     "6660to60": 5.7,
     "666Handling": 86,
-
     "996TopSpeed": 165,
     "9960to60": 5.4,
     "996Handling": 86,
-
     "969TopSpeed": 165,
     "9690to60": 5.7,
     "969Handling": 90,
-
     "699TopSpeed": 162,
     "6990to60": 5.4,
-    "699Handling": 90
+    "699Handling": 90,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

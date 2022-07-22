@@ -9,9 +9,10 @@
     "handling": 74,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1435,
     "gc": "Medium",
     "seatCount": 5,
@@ -20,35 +21,25 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Diesel",
-    "mra": 55.00,
+    "mra": 55,
     "ola": 70.45,
     "description": "Replacement for the hatchback Corolla named after Latin word for gold 'aurum'. Card by Connor",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/867157277253042176/D.ToyotaAuris22DCAT.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/867157762650406912/ToyotaAuris22DCAT.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/867157776211902494/ToyotaAuris22DCAT-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/867157787296399380/ToyotaAuris22DCAT-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/867157823351291914/ToyotaAuris22DCAT-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/867157811292405770/ToyotaAuris22DCAT-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/867157798969016391/ToyotaAuris22DCAT-699.png",
-
     "333TopSpeed": 134,
     "3330to60": 8.4,
     "333Handling": 76,
-
     "666TopSpeed": 138,
     "6660to60": 7.9,
     "666Handling": 79,
-
     "996TopSpeed": 142,
     "9960to60": 7.5,
     "996Handling": 79,
-
     "969TopSpeed": 142,
     "9690to60": 7.9,
     "969Handling": 82,
-
     "699TopSpeed": 138,
     "6990to60": 7.5,
-    "699Handling": 82
+    "699Handling": 82,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

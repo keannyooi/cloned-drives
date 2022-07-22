@@ -1,6 +1,9 @@
 {
     "rq": 84,
-    "make": ["Go Puck", "Tesla"],
+    "make": [
+        "Go Puck",
+        "Tesla"
+    ],
     "model": "Model S P90D Pikes Peak",
     "modelYear": 2016,
     "country": "US",
@@ -9,9 +12,11 @@
     "handling": 86,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Eco-Friendly", "Motorsport"],
+    "tags": [
+        "Eco-Friendly",
+        "Motorsport"
+    ],
     "isPrize": true,
-
     "weight": 1887,
     "gc": "Low",
     "seatCount": 1,
@@ -23,32 +28,22 @@
     "mra": 64.29,
     "ola": 92.59,
     "description": "The founder of Go Puck piloted this car up Pikes Peak and broke the Electric Production Class record. Card by keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/858544998689407006/tesla_model_s_p90d_pikes_peak.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/858542737241276426/model_s_pikes_000.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/858542742560964618/model_s_pikes_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/858542747903983647/model_s_pikes_666.jpg",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/858542762743169044/model_s_pikes_996.jpg",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/858542758758973521/model_s_pikes_969.jpg",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/858542755391078441/model_s_pikes_699.jpg",
-
     "333TopSpeed": 158,
     "3330to60": 2.6,
     "333Handling": 89,
-
     "666TopSpeed": 162,
     "6660to60": 2.4,
     "666Handling": 92,
-
     "996TopSpeed": 165,
     "9960to60": 2.3,
     "996Handling": 92,
-
     "969TopSpeed": 165,
     "9690to60": 2.4,
     "969Handling": 95,
-
     "699TopSpeed": 162,
     "6990to60": 2.3,
-    "699Handling": 95
+    "699Handling": 95,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

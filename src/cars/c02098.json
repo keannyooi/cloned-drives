@@ -9,9 +9,10 @@
     "handling": 68,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["The Royal Collection"],
+    "tags": [
+        "The Royal Collection"
+    ],
     "isPrize": false,
-
     "weight": 1077,
     "gc": "low",
     "seatCount": 2,
@@ -23,32 +24,22 @@
     "mra": 55.54,
     "ola": 73.34,
     "description": "One of the true greats spawned from the British Sports-Classic Era. Card by Exist",
-
     "card": "https://media.discordapp.net/attachments/819199720249360384/859610395672969236/CD_Austin-Healey_3000_Mk_III.png?width=1410&height=878",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/859610451520126996/CD_Austin-Healey_3000_Mk_III_000.png?width=1410&height=878",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/859610460511797268/CD_Austin-Healey_3000_Mk_III_333.png?width=1410&height=878",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/859610467957735424/CD_Austin-Healey_3000_Mk_III_666.png?width=1410&height=878",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/859610492155068456/CD_Austin-Healey_3000_Mk_III_996.png?width=1410&height=878",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/859610478103494686/CD_Austin-Healey_3000_Mk_III_969.png?width=1410&height=878",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/859610471258128414/CD_Austin-Healey_3000_Mk_III_699.png?width=1410&height=878",
-
     "333TopSpeed": 125,
     "3330to60": 9.3,
     "333Handling": 70,
-
     "666TopSpeed": 130,
     "6660to60": 8.8,
     "666Handling": 72,
-
     "996TopSpeed": 134,
     "9960to60": 8.3,
     "996Handling": 72,
-
     "969TopSpeed": 134,
     "9690to60": 8.8,
     "969Handling": 75,
-
     "699TopSpeed": 130,
     "6990to60": 8.3,
-    "699Handling": 75
+    "699Handling": 75,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

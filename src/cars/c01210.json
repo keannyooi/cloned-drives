@@ -9,9 +9,10 @@
     "handling": 80,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Street Racer"],
+    "tags": [
+        "Street Racer"
+    ],
     "isPrize": false,
-
     "weight": 1430,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 67.95,
     "ola": 60.38,
     "description": "The first version of the 2nd gen STI, well-known for its weirdly shaped headlights, hence it was called 'Blobeye'. Card by spence",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/847991757463617546/image0.jpg",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/838875042703736842/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/838875057576869978/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/838875072030441522/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/838875107509272606/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/838875094553198632/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/838875124168917002/image0.jpg",
-
     "333TopSpeed": 152,
-    "3330to60": 5.0,
+    "3330to60": 5,
     "333Handling": 83,
-
     "666TopSpeed": 155,
     "6660to60": 4.8,
     "666Handling": 85,
-
     "699TopSpeed": 155,
     "6990to60": 4.5,
     "699Handling": 89,
-
     "969TopSpeed": 159,
     "9690to60": 4.8,
     "969Handling": 89,
-
     "996TopSpeed": 158,
     "9960to60": 4.5,
-    "996Handling": 85
+    "996Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

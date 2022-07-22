@@ -9,9 +9,12 @@
     "handling": 88,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Concept", "Eargasm", "Unique"],
+    "tags": [
+        "Concept",
+        "Eargasm",
+        "Unique"
+    ],
     "isPrize": false,
-
     "weight": 1520,
     "gc": "Low",
     "seatCount": 2,
@@ -21,34 +24,24 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 97.83,
-    "ola": 80.00,
+    "ola": 80,
     "description": "The 2nd Concept LFA by Lexus. Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819962358738583582/LF-ASports.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819962869479112774/LFASports.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819962876847587328/lfasports333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819962884665770034/lfasports666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819962915888562186/lfasports996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819962906786922556/lfasports969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819962894392492082/lfasports699.png",
-
     "333TopSpeed": 203,
     "3330to60": 4.3,
     "333Handling": 91,
-
     "666TopSpeed": 205,
     "6660to60": 4.1,
     "666Handling": 94,
-
     "996TopSpeed": 208,
     "9960to60": 3.8,
     "996Handling": 94,
-
     "969TopSpeed": 208,
     "9690to60": 4.1,
     "969Handling": 98,
-
     "699TopSpeed": 205,
     "6990to60": 3.8,
-    "699Handling": 98
+    "699Handling": 98,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -9,9 +9,11 @@
     "handling": 58,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Rest of The World", "Eco-Friendly"],
+    "tags": [
+        "Rest of The World",
+        "Eco-Friendly"
+    ],
     "isPrize": false,
-
     "weight": 1038,
     "gc": "Medium",
     "seatCount": 2,
@@ -20,35 +22,25 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Electric",
-    "mra": 0.00,
+    "mra": 0,
     "ola": 63.11,
     "description": "A very clever clean, green car. Card by Aqo.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/939931283583295518/city.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/939931381042131054/stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/939931401267085362/333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/939931431075979324/666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/939931502953758760/996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/939931480589758535/969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/939931455952420874/699.png",
-
     "333TopSpeed": 76,
     "3330to60": 19.6,
     "333Handling": 60,
-
     "666TopSpeed": 83,
     "6660to60": 18.5,
     "666Handling": 62,
-
     "996TopSpeed": 91,
     "9960to60": 17.5,
     "996Handling": 62,
-
     "969TopSpeed": 91,
     "9690to60": 18.5,
     "969Handling": 64,
-
     "699TopSpeed": 83,
     "6990to60": 17.5,
-    "699Handling": 64
+    "699Handling": 64,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

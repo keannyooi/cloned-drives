@@ -9,9 +9,13 @@
     "handling": 91,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Unique", "Super Sedan", "Street Racer","The Japanese Odyssey"],
+    "tags": [
+        "Unique",
+        "Super Sedan",
+        "Street Racer",
+        "The Japanese Odyssey"
+    ],
     "isPrize": true,
-
     "weight": 1390,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +27,22 @@
     "mra": 70.37,
     "ola": 73.68,
     "description": "Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/948547936147636284/evo9fq360mr.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/948548265702486107/evo9mrfq360.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/948548272463683654/evo9mrfq360333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/948548279812100146/evo9mrfq360666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/948548326872186920/evo9mrfq360996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/948548320681414746/evo9mrfq360969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/948548304491393034/evo9mrfq360699.png",
-
     "333TopSpeed": 160,
     "3330to60": 3.6,
     "333Handling": 94,
-
     "666TopSpeed": 164,
     "6660to60": 3.4,
     "666Handling": 97,
-
     "996TopSpeed": 167,
     "9960to60": 3.2,
     "996Handling": 97,
-
     "969TopSpeed": 167,
     "9690to60": 3.4,
     "969Handling": 101,
-
     "699TopSpeed": 164,
     "6990to60": 3.2,
-    "699Handling": 101
+    "699Handling": 101,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

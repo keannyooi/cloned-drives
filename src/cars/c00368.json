@@ -9,9 +9,11 @@
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Supercar", "Style Icon"],
+    "tags": [
+        "Supercar",
+        "Style Icon"
+    ],
     "isPrize": false,
-
     "weight": 1490,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +25,22 @@
     "mra": 85.05,
     "ola": 108.84,
     "description": "The latest generation Viper sold under the SRT name. Card by keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/834395834186989598/srt_viper.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/834395932929949696/srt_viper_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/834395939874668554/srt_viper_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/834395945746563102/srt_viper_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/834395976517025792/srt_viper_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/834395966638784552/srt_viper_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/834395956140703754/srt_viper_699.jpg",
-
     "333TopSpeed": 209,
     "3330to60": 3.5,
     "333Handling": 94,
-
     "666TopSpeed": 211,
     "6660to60": 3.3,
     "666Handling": 97,
-
-	"996TopSpeed": 214,
+    "996TopSpeed": 214,
     "9960to60": 3.1,
     "996Handling": 97,
-
-	"969TopSpeed": 214,
+    "969TopSpeed": 214,
     "9690to60": 3.3,
     "969Handling": 101,
-
     "699TopSpeed": 211,
     "6990to60": 3.1,
-    "699Handling": 101
+    "699Handling": 101,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

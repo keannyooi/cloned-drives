@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1565,
     "gc": "Low",
     "seatCount": 4,
@@ -23,32 +22,22 @@
     "mra": 71.46,
     "ola": 82.84,
     "description": "A weird departure from Porsche that turned out great. Card by Havvy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/823373170328207380/Havvy928S.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823373237278736395/928_s_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823373251849879563/928_s_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823373265354752060/928_s_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823373319125336064/928_s_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823373306727104552/928_s_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823373292589154304/928_s_699.jpg",
-
     "333TopSpeed": 158,
     "3330to60": 5.9,
     "333Handling": 77,
-
     "666TopSpeed": 162,
-    "6660to60": 5.6, 
+    "6660to60": 5.6,
     "666Handling": 80,
-
     "996TopSpeed": 165,
     "9960to60": 5.3,
     "996Handling": 80,
-
     "969TopSpeed": 165,
     "9690to60": 5.6,
     "969Handling": 83,
-
     "699TopSpeed": 162,
     "6990to60": 5.3,
-    "699Handling": 83
+    "699Handling": 83,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -1,6 +1,9 @@
 {
     "rq": 81,
-    "make": ["ABT", "Audi"],
+    "make": [
+        "ABT",
+        "Audi"
+    ],
     "model": "Q8 60 TFSI e quattro",
     "modelYear": 2020,
     "country": "DE",
@@ -9,9 +12,10 @@
     "handling": 79,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": ["Tuner"],
+    "tags": [
+        "Tuner"
+    ],
     "isPrize": false,
-
     "weight": 2440,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +27,22 @@
     "mra": 71.64,
     "ola": 70.84,
     "description": "Card by Macan.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/944935475033034782/Q8_60_TFSI_e_quattro_20.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/944935532687933480/stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/944935575226576896/333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/944935598324588544/666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/944935693870850149/996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/944935648320700416/969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/944935624425746462/699.png",
-
     "333TopSpeed": 158,
     "3330to60": 4.6,
     "333Handling": 82,
-
     "666TopSpeed": 162,
     "6660to60": 4.3,
     "666Handling": 84,
-
     "996TopSpeed": 165,
     "9960to60": 4.1,
     "996Handling": 84,
-
     "969TopSpeed": 165,
     "9690to60": 4.3,
     "969Handling": 88,
-
     "699TopSpeed": 162,
     "6990to60": 4.1,
-    "699Handling": 88
+    "699Handling": 88,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

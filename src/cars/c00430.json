@@ -9,9 +9,11 @@
     "handling": 84,
     "driveType": "RWD",
     "tyreType": "Off-Road",
-    "tags": ["Motorsport", "Unique"],
+    "tags": [
+        "Motorsport",
+        "Unique"
+    ],
     "isPrize": false,
-
     "weight": 990,
     "gc": "Medium",
     "seatCount": 2,
@@ -20,35 +22,25 @@
     "abs": false,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 57.50,
-    "ola": 60.00,
+    "mra": 57.5,
+    "ola": 60,
     "description": "A faster take on the 1979 WRC champion. Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819950262893543424/RS1700T.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819950455018618911/rs1700.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819950461243097119/rs1700333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819950466653618216/rs1700666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819950513923162142/rs1700996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819950504355954688/rs1700969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819950496659013662/rs1700699.png",
-
     "333TopSpeed": 144,
-    "3330to60": 4.0,
+    "3330to60": 4,
     "333Handling": 87,
-
     "666TopSpeed": 147,
     "6660to60": 3.8,
     "666Handling": 90,
-
     "996TopSpeed": 151,
     "9960to60": 3.6,
     "996Handling": 90,
-
     "969TopSpeed": 151,
     "9690to60": 3.8,
     "969Handling": 93,
-
     "699TopSpeed": 147,
     "6990to60": 3.6,
-    "699Handling": 93
+    "699Handling": 93,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

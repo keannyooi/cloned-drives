@@ -9,13 +9,13 @@
     "handling": 70,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
-
     "weight": 1085,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Sedan",
     "tcs": false,
     "abs": true,
@@ -24,33 +24,22 @@
     "mra": 45.63,
     "ola": 58.03,
     "description": "America's taste can really create some cursed cars. Card by Andu",
-
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/867322759301169172/YarisSSedan.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/867323300702715924/YarisSSedan.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/867323306554556426/YarisSSedan-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/867323312228007956/YarisSSedan-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/867323328850821140/YarisSSedan-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/867323339554684928/YarisSSedan-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/867323352586387466/YarisSSedan-699.png",
-
     "333TopSpeed": 118,
     "3330to60": 9.2,
     "333Handling": 72,
-
     "666TopSpeed": 122,
-    "6660to60": 8.7, 
+    "6660to60": 8.7,
     "666Handling": 75,
-
     "996TopSpeed": 127,
     "9960to60": 8.2,
     "996Handling": 75,
-
     "969TopSpeed": 127,
     "9690to60": 8.7,
     "969Handling": 78,
-
     "699TopSpeed": 122,
     "6990to60": 8.2,
-    "699Handling": 78
+    "699Handling": 78,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -9,9 +9,14 @@
     "handling": 86,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Concept", "Super Sedan", "Unique", "Innovative","The Japanese Odyssey"],
+    "tags": [
+        "Concept",
+        "Super Sedan",
+        "Unique",
+        "Innovative",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1400,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +28,22 @@
     "mra": 79.59,
     "ola": 76.92,
     "description": "The Hybrid 4WD sports concept announced at the opening of the 21st century. Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/867874918595035176/dualnote.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/867875303924432957/dualnote.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/867875316362248213/dualnote333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/867875328411435038/dualnote666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/867875364671717376/dualnote996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/867875350821208144/dualnote969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/867875339551768576/dualnote699.png",
-
     "333TopSpeed": 182,
     "3330to60": 3.7,
     "333Handling": 89,
-
     "666TopSpeed": 185,
     "6660to60": 3.5,
     "666Handling": 92,
-
     "996TopSpeed": 188,
     "9960to60": 3.3,
     "996Handling": 92,
-
     "969TopSpeed": 188,
     "9690to60": 3.5,
     "969Handling": 95,
-
     "699TopSpeed": 185,
     "6990to60": 3.3,
-    "699Handling": 95
+    "699Handling": 95,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

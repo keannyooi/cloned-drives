@@ -5,13 +5,16 @@
     "modelYear": 1999,
     "country": "IT",
     "topSpeed": 185,
-    "0to60": 4.0,
+    "0to60": 4,
     "handling": 87,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Eargasm", "Supercar", "Unique"],
+    "tags": [
+        "Eargasm",
+        "Supercar",
+        "Unique"
+    ],
     "isPrize": false,
-
     "weight": 1250,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +26,22 @@
     "mra": 97.56,
     "ola": 100,
     "description": "The original politically incorrect Italian. By Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/952198886187995186/ZondaC12.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/952198968564129852/zondac12.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/952198975753191535/zondac121.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/952198981302247424/zondac122.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/952199018820292678/zondac12996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/952199005931176008/zondac12969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/952198994082299964/zondac12699.png",
-
     "333TopSpeed": 188,
     "3330to60": 3.8,
     "333Handling": 90,
-
     "666TopSpeed": 191,
     "6660to60": 3.6,
     "666Handling": 93,
-
     "996TopSpeed": 193,
     "9960to60": 3.4,
     "996Handling": 93,
-
     "969TopSpeed": 193,
     "9690to60": 3.6,
     "969Handling": 97,
-
     "699TopSpeed": 191,
     "6990to60": 3.4,
-    "699Handling": 97
+    "699Handling": 97,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

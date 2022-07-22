@@ -9,9 +9,10 @@
     "handling": 79,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Servers Choice"],
+    "tags": [
+        "Servers Choice"
+    ],
     "isPrize": false,
-
     "weight": 1378,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 69.08,
     "ola": 72.72,
     "description": "The Sentra finally gets a sporty trim, but compared to its competitors it can seem inferior. Card by keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819383759807840256/sentra_nismo.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819847964163702785/sentra_nismo_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819847972102733864/sentra_nismo_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819847978554228776/sentra_nismo_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819848017997463572/sentra_nismo_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819848005322670120/sentra_nismo_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819847996861579295/sentra_nismo_699.jpg",
-
     "333TopSpeed": 135,
     "3330to60": 6.8,
     "333Handling": 82,
-
     "666TopSpeed": 139,
     "6660to60": 6.5,
     "666Handling": 84,
-
     "996TopSpeed": 143,
     "9960to60": 6.1,
     "996Handling": 84,
-
     "969TopSpeed": 143,
     "9690to60": 6.5,
     "969Handling": 88,
-
     "699TopSpeed": 139,
     "6990to60": 6.1,
-    "699Handling": 88
+    "699Handling": 88,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

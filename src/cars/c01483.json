@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1390,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +22,22 @@
     "mra": 67.35,
     "ola": 72.73,
     "description": "Handling matches with srt-6 how fun. Card by Churrito.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/869307190048079952/unknown.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/869308112492961842/chrysler_crossfire_racehud_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/869308389442863205/chrysler_crossfire_racehud_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/869308598914781234/chrysler_crossfire_racehud_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/869309227192168508/chrysler_crossfire_racehud_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/869309015132364830/chrysler_crossfire_racehud_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/869308785754267708/chrysler_crossfire_racehud_699.png",
-
     "333TopSpeed": 155,
     "3330to60": 6.3,
     "333Handling": 84,
-
     "666TopSpeed": 159,
     "6660to60": 5.9,
     "666Handling": 86,
-
     "996TopSpeed": 162,
     "9960to60": 5.6,
     "996Handling": 86,
-
     "969TopSpeed": 162,
     "9690to60": 5.9,
     "969Handling": 90,
-
     "699TopSpeed": 159,
     "6990to60": 5.6,
-    "699Handling": 90
+    "699Handling": 90,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

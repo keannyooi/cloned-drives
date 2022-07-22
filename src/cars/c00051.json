@@ -9,9 +9,11 @@
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Track Day", "The Royal Collection"],
+    "tags": [
+        "Track Day",
+        "The Royal Collection"
+    ],
     "isPrize": true,
-
     "weight": 456,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +25,22 @@
     "mra": 47.27,
     "ola": 73.08,
     "description": "If you think that a 120 hp Rover engine will not do this car's justice, you will be dead wrong.. Card by Spence.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/848792251488665610/image0.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/848792295645118464/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/848792309239119872/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/848792325907677194/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/848792369686904913/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/848792356421763112/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/848792341761753108/image0.jpg",
-
     "333TopSpeed": 120,
     "3330to60": 4.9,
     "333Handling": 94,
-
     "666TopSpeed": 124,
     "6660to60": 4.7,
     "666Handling": 97,
-
     "996TopSpeed": 129,
     "9960to60": 4.4,
     "996Handling": 97,
-
     "969TopSpeed": 129,
     "9690to60": 4.7,
     "969Handling": 101,
-
     "699TopSpeed": 124,
     "6990to60": 4.4,
-    "699Handling": 101
+    "699Handling": 101,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

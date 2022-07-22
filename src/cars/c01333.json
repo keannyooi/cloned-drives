@@ -9,9 +9,12 @@
     "handling": 87,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Silver Screen", "Street Racer", "Style Icon"],
+    "tags": [
+        "Silver Screen",
+        "Street Racer",
+        "Style Icon"
+    ],
     "isPrize": false,
-
     "weight": 1579,
     "gc": "Medium",
     "seatCount": 2,
@@ -23,32 +26,22 @@
     "mra": 70.83,
     "ola": 86.27,
     "description": "Think of it as a Lexus for Smokey Yunick. Card by Connor",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/821835762366152714/A.ToyotaSupraTurbo.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821835866941947914/A.ToyotaSupraRZ.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821835876299702312/A.ToyotaSupraRZ-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821835923565314118/A.ToyotaSupraRZ-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821835956192542720/A.ToyotaSupraRZ-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821835946071687238/A.ToyotaSupraRZ-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821835935292981278/A.ToyotaSupraRZ-699.png",
-
     "333TopSpeed": 160,
     "3330to60": 4.8,
     "333Handling": 90,
-
     "666TopSpeed": 164,
-    "6660to60": 4.6, 
+    "6660to60": 4.6,
     "666Handling": 93,
-
     "996TopSpeed": 167,
     "9960to60": 4.3,
     "996Handling": 93,
-
     "969TopSpeed": 167,
     "9690to60": 4.6,
     "969Handling": 97,
-
     "699TopSpeed": 164,
     "6990to60": 4.3,
-    "699Handling": 97
+    "699Handling": 97,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -9,9 +9,13 @@
     "handling": 90,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Unique", "Concept", "Eco-Friendly", "Innovative"],
+    "tags": [
+        "Unique",
+        "Concept",
+        "Eco-Friendly",
+        "Innovative"
+    ],
     "isPrize": false,
-
     "weight": 1800,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +27,22 @@
     "mra": 74.32,
     "ola": 79.99,
     "description": "One of Lamborghini's first attempts at Phev, turned out well. Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/848253562471579716/AsterionB.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/848253928466153492/asterion.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/848253933741670410/asterion333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/848253938755043408/asterion666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/848253975765844018/asterion996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/848253954324299776/asterion969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/848253947173273630/asterion699.png",
-
     "333TopSpeed": 202,
     "3330to60": 2.8,
     "333Handling": 93,
-
     "666TopSpeed": 204,
     "6660to60": 2.6,
     "666Handling": 96,
-
     "996TopSpeed": 207,
     "9960to60": 2.5,
     "996Handling": 96,
-
     "969TopSpeed": 207,
     "9690to60": 2.6,
     "969Handling": 100,
-
     "699TopSpeed": 204,
     "6990to60": 2.5,
-    "699Handling": 100
+    "699Handling": 100,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

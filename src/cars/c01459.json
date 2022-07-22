@@ -9,9 +9,11 @@
     "handling": 98,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": ["Motorsport", "Unique"],
+    "tags": [
+        "Motorsport",
+        "Unique"
+    ],
     "isPrize": true,
-
     "weight": 1210,
     "gc": "Low",
     "seatCount": 2,
@@ -20,35 +22,25 @@
     "abs": true,
     "enginePos": "Rear",
     "fuelType": "Petrol",
-    "mra": 132.00,
-    "ola": 85.00,
+    "mra": 132,
+    "ola": 85,
     "description": "Card by Exist.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/859634294712696842/CD_McLaren_720S_GT3X.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/859634337170325504/CD_McLaren_720S_GT3X_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/859634341323866122/CD_McLaren_720S_GT3X_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/859634348775964682/CD_McLaren_720S_GT3X_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/859634365255254016/CD_McLaren_720S_GT3X_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/859634359576821760/CD_McLaren_720S_GT3X_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/859634353235820544/CD_McLaren_720S_GT3X_699.png",
-
     "333TopSpeed": 217,
     "3330to60": 2.2,
     "333Handling": 101,
-
     "666TopSpeed": 220,
     "6660to60": 2.1,
     "666Handling": 104,
-
     "996TopSpeed": 222,
-    "9960to60": 2.0,
+    "9960to60": 2,
     "996Handling": 104,
-
     "969TopSpeed": 222,
     "9690to60": 2.1,
     "969Handling": 109,
-
     "699TopSpeed": 220,
-    "6990to60": 2.0,
-    "699Handling": 109
+    "6990to60": 2,
+    "699Handling": 109,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

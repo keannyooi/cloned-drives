@@ -11,7 +11,6 @@
     "tyreType": "Off-Road",
     "tags": [],
     "isPrize": false,
-
     "weight": 2240,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 13.33,
     "ola": 66.17,
     "description": "A slightly faster bbbbbrrgggrgrrbegebr. Card by Havvier.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/866707538590302208/Mercedes-Benz350GDTDSWB.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/866707609477578752/swb_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/866707613521805312/swb_111.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/866707617157611540/swb_222.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/866707631829418044/swb_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/866707627064295434/swb_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/866707621200658472/swb_233.png",
-
     "333TopSpeed": 96,
     "3330to60": 12.6,
     "333Handling": 60,
-
     "666TopSpeed": 102,
-    "6660to60": 12.0,
+    "6660to60": 12,
     "666Handling": 62,
-
     "996TopSpeed": 107,
     "9960to60": 11.3,
     "996Handling": 62,
-
     "969TopSpeed": 107,
-    "9690to60": 12.0,
+    "9690to60": 12,
     "969Handling": 64,
-
     "699TopSpeed": 102,
     "6990to60": 11.3,
-    "699Handling": 64
+    "699Handling": 64,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -5,13 +5,17 @@
     "modelYear": 2017,
     "country": "US",
     "topSpeed": 240,
-    "0to60": 3.0,
+    "0to60": 3,
     "handling": 95,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Eco-Friendly", "Hypercar", "Unique", "Ultra Expensive"],
+    "tags": [
+        "Eco-Friendly",
+        "Hypercar",
+        "Unique",
+        "Ultra Expensive"
+    ],
     "isPrize": true,
-
     "weight": 1338,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +27,22 @@
     "mra": 142.86,
     "ola": 86.67,
     "description": "An electric fighter jet on wheels. Card by keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/848061266882461726/raesr_tachyon_speed.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/848061172447838249/tachyon_000.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/848061177636585482/tachyon_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/848061181994467328/tachyon_666.jpg",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/848061197638303774/tachyon_996.jpg",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/848061189476450304/tachyon_969.jpg",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/848061185872887828/tachyon_699.jpg",
-
     "333TopSpeed": 242,
     "3330to60": 2.9,
     "333Handling": 98,
-
     "666TopSpeed": 244,
     "6660to60": 2.7,
     "666Handling": 101,
-
     "996TopSpeed": 247,
     "9960to60": 2.6,
     "996Handling": 101,
-
     "969TopSpeed": 247,
     "9690to60": 2.7,
     "969Handling": 105,
-
     "699TopSpeed": 244,
     "6990to60": 2.6,
-    "699Handling": 105
+    "699Handling": 105,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

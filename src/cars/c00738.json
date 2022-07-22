@@ -9,9 +9,10 @@
     "handling": 89,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["The Royal Collection"],
+    "tags": [
+        "The Royal Collection"
+    ],
     "isPrize": false,
-
     "weight": 910,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +24,22 @@
     "mra": 59.46,
     "ola": 77.23,
     "description": "A Supercharged Elise, you cannot tell me that isn't the most brilliant idea ever. Card by Based.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/851899114069164072/Lotus_Elise_SC.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/851537817704333372/Lotus_Elise_SC_Stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/851537918949457950/Lotus_Elise_SC_1_Star.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/851537932422217748/Lotus_Elise_SC_2_Star.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/851537970012225566/Lotus_Elise_SC_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/851537962546233344/Lotus_Elise_SC_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/851537952336511046/Lotus_Elise_SC_699.png",
-
     "333TopSpeed": 152,
     "3330to60": 4.2,
     "333Handling": 92,
-
     "666TopSpeed": 155,
-    "6660to60": 4.0,
+    "6660to60": 4,
     "666Handling": 95,
-
     "996TopSpeed": 159,
     "9960to60": 3.7,
     "996Handling": 95,
-
     "969TopSpeed": 159,
-    "9690to60": 4.0,
+    "9690to60": 4,
     "969Handling": 99,
-
     "699TopSpeed": 155,
     "6990to60": 3.7,
-    "699Handling": 99
+    "699Handling": 99,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

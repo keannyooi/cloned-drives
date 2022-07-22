@@ -9,9 +9,11 @@
     "handling": 76,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Muscle Car", "Silver Screen"],
+    "tags": [
+        "Muscle Car",
+        "Silver Screen"
+    ],
     "isPrize": false,
-
     "weight": 2270,
     "gc": "High",
     "seatCount": 3,
@@ -23,32 +25,22 @@
     "mra": 47.79,
     "ola": 77.78,
     "description": "The hot-rod pickup of the beginning of the 21st century. Card by spence",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819568519736983592/SpenceF150Lightning.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819764440315854867/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819764467713310720/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819764486814433350/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819764638853365800/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819764613934481408/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819764579713810482/image0.jpg",
-
     "333TopSpeed": 152,
     "3330to60": 5.2,
     "333Handling": 79,
-
     "666TopSpeed": 156,
-    "6660to60": 5.0,
+    "6660to60": 5,
     "666Handling": 81,
-
     "996TopSpeed": 159,
     "9960to60": 4.7,
     "996Handling": 81,
-
-	"969TopSpeed": 159,
-    "9690to60": 5.0,
+    "969TopSpeed": 159,
+    "9690to60": 5,
     "969Handling": 84,
-
-	"699TopSpeed": 156,
+    "699TopSpeed": 156,
     "6990to60": 4.7,
-    "699Handling": 84
+    "699Handling": 84,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

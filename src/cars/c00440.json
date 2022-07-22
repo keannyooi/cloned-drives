@@ -11,7 +11,6 @@
     "tyreType": "All-Surface",
     "tags": [],
     "isPrize": false,
-
     "weight": 2721,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 38.19,
     "ola": 60.68,
     "description": "Tenth gen of the most famous pick-up. Card by Andu",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819486499975594014/FR150XLT.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819486979230007316/F150XLT.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819486987530272778/F150XLT1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819486992408379392/F150XLT2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819487018190897212/F150XLT996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819487008585941052/F150XLT969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819487001082331136/F150XLT699.png",
-
     "333TopSpeed": 109,
     "3330to60": 9.9,
     "333Handling": 61,
-
     "666TopSpeed": 114,
     "6660to60": 9.4,
     "666Handling": 63,
-
     "996TopSpeed": 119,
     "9960to60": 8.8,
     "996Handling": 63,
-
     "969TopSpeed": 119,
     "9690to60": 9.4,
     "969Handling": 65,
-
     "699TopSpeed": 114,
     "6990to60": 8.8,
-    "699Handling": 65
+    "699Handling": 65,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

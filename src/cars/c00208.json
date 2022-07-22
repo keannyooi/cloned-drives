@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1562,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +22,22 @@
     "mra": 69.86,
     "ola": 81.05,
     "description": "A German Supra. Card by keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819384128909606922/z4_m40i.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819541610265968640/z4_m40i_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819541617944952852/z4_m40i_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819541623763501092/z4_m40i_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819541657124864050/z4_m40i_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819541647779430410/z4_m40i_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819541633250754590/z4_m40i_699.jpg",
-
     "333TopSpeed": 168,
     "3330to60": 3.6,
     "333Handling": 94,
-
     "666TopSpeed": 171,
     "6660to60": 3.4,
     "666Handling": 97,
-
-	"996TopSpeed": 174,
+    "996TopSpeed": 174,
     "9960to60": 3.2,
     "996Handling": 97,
-
-	"969TopSpeed": 174,
+    "969TopSpeed": 174,
     "9690to60": 3.4,
     "969Handling": 101,
-
     "699TopSpeed": 171,
     "6990to60": 3.2,
-    "699Handling": 101
+    "699Handling": 101,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

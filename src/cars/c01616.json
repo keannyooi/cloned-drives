@@ -9,9 +9,11 @@
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": ["Motorsport","The Japanese Odyssey"],
+    "tags": [
+        "Motorsport",
+        "The Japanese Odyssey"
+    ],
     "isPrize": true,
-
     "weight": 1021,
     "gc": "Low",
     "seatCount": 1,
@@ -23,32 +25,22 @@
     "mra": 74.67,
     "ola": 85.71,
     "description": "Racing Beat's collab with Mazda that won the 24 Hours of Daytona seven years in a row under the GTU class. Card by DodgeDemon",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/970458339056160768/Mazda_RX-7_IMSA_GTU_1979.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/970460079474225182/Mazda_RX-7_IMSA_GTU_1979_H000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/970460096746356786/Mazda_RX-7_IMSA_GTU_1979_H111.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/970460112957353984/Mazda_RX-7_IMSA_GTU_1979_H222.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/970460166539591742/Mazda_RX-7_IMSA_GTU_1979_H332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/970460149963710514/Mazda_RX-7_IMSA_GTU_1979_H323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/970460129533247578/Mazda_RX-7_IMSA_GTU_1979_H233.png",
-
     "333TopSpeed": 168,
     "3330to60": 5.3,
     "333Handling": 94,
-
     "666TopSpeed": 171,
-    "6660to60": 5.0,
+    "6660to60": 5,
     "666Handling": 97,
-
     "996TopSpeed": 174,
     "9960to60": 4.8,
     "996Handling": 97,
-
     "969TopSpeed": 174,
-    "9690to60": 5.0,
+    "9690to60": 5,
     "969Handling": 101,
-
     "699TopSpeed": 171,
     "6990to60": 4.8,
-    "699Handling": 101
+    "699Handling": 101,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

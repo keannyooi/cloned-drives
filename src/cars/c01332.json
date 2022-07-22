@@ -9,9 +9,10 @@
     "handling": 96,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": ["Motorsport"],
+    "tags": [
+        "Motorsport"
+    ],
     "isPrize": true,
-
     "weight": 1100,
     "gc": "Low",
     "seatCount": 1,
@@ -21,34 +22,24 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 106.06,
-    "ola": 75.00,
+    "ola": 75,
     "description": "Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/821061443670900816/SupraGT500.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821061969230168144/suprar.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821061974724837426/suprar333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821061987331997790/suprar666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821062017254686720/suprar996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821062006991224862/suprar969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821061997336461372/suprar699.png",
-
     "333TopSpeed": 185,
     "3330to60": 3.3,
     "333Handling": 99,
-
     "666TopSpeed": 188,
-    "6660to60": 3.2, 
+    "6660to60": 3.2,
     "666Handling": 102,
-
     "996TopSpeed": 191,
-    "9960to60": 3.0,
+    "9960to60": 3,
     "996Handling": 102,
-
     "969TopSpeed": 191,
     "9690to60": 3.2,
     "969Handling": 107,
-
     "699TopSpeed": 188,
-    "6990to60": 3.0,
-    "699Handling": 107
+    "6990to60": 3,
+    "699Handling": 107,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

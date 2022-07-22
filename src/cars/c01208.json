@@ -9,9 +9,10 @@
     "handling": 80,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Street Racer"],
+    "tags": [
+        "Street Racer"
+    ],
     "isPrize": false,
-
     "weight": 1230,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 61.25,
     "ola": 61.22,
     "description": "The first STI that has ever made. Card by Spence.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/838625922478768128/image0.jpg",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/838625979596931092/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/838625992515780618/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/838626006545596456/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/838626050216427530/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/838626024832630784/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/838626036962295889/image0.jpg",
-
     "333TopSpeed": 151,
     "3330to60": 4.7,
     "333Handling": 83,
-
     "666TopSpeed": 154,
     "6660to60": 4.4,
     "666Handling": 85,
-
     "996TopSpeed": 158,
     "9960to60": 4.2,
     "996Handling": 85,
-
     "969TopSpeed": 158,
     "9690to60": 4.4,
     "969Handling": 89,
-
     "699TopSpeed": 154,
     "6990to60": 4.2,
-    "699Handling": 89
+    "699Handling": 89,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

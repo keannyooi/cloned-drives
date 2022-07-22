@@ -1,17 +1,18 @@
-﻿{
+{
     "rq": 76,
     "make": "Porsche",
     "model": "718 Cayman GT4",
     "modelYear": 2019,
     "country": "DE",
     "topSpeed": 188,
-    "0to60": 4.0,
+    "0to60": 4,
     "handling": 92,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Track Day"],
+    "tags": [
+        "Track Day"
+    ],
     "isPrize": true,
-
     "weight": 1451,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +24,22 @@
     "mra": 85.47,
     "ola": 83.33,
     "description": "One of the best track cars. Card by Havvy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/823580582779945000/Porsche718CaymanGT4.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823580626438717440/000_718gt4.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823580631673733180/111_718gt4.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823580636824076309/222_718gt4.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823580650526605362/332_718gt4.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823580646219055174/323_718gt4.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823580641387479080/233_718gt4.png",
-
     "333TopSpeed": 191,
     "3330to60": 3.8,
     "333Handling": 95,
-
     "666TopSpeed": 194,
-    "6660to60": 3.6, 
+    "6660to60": 3.6,
     "666Handling": 98,
-
     "996TopSpeed": 196,
     "9960to60": 3.4,
     "996Handling": 98,
-
     "969TopSpeed": 196,
     "9690to60": 3.6,
     "969Handling": 102,
-
     "699TopSpeed": 194,
     "6990to60": 3.4,
-    "699Handling": 102
+    "699Handling": 102,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

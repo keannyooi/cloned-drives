@@ -1,6 +1,9 @@
 {
     "rq": 33,
-    "make": ["HKS", "Honda"],
+    "make": [
+        "HKS",
+        "Honda"
+    ],
     "model": "Turbocharged Accord Coupe",
     "modelYear": 1998,
     "country": "JP",
@@ -9,9 +12,11 @@
     "handling": 77,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Street Racer", "Tuner"],
+    "tags": [
+        "Street Racer",
+        "Tuner"
+    ],
     "isPrize": false,
-
     "weight": 1450,
     "gc": "Low",
     "seatCount": 2,
@@ -20,35 +25,25 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 54.00,
+    "mra": 54,
     "ola": 76.06,
     "description": "The legitimate turbo Accord so many J-series fans wanted. Card by ChickenMcNuggets.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820437599126683658/hks_accord.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820128271789850624/hks_stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820128314467287070/hks_1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820128342979379210/hks_2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820128454443270145/hks_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820128420633116712/hks_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820128373728084008/hks_233.png",
-
     "333TopSpeed": 136,
     "3330to60": 6.7,
     "333Handling": 80,
-
     "666TopSpeed": 140,
     "6660to60": 6.4,
     "666Handling": 82,
-
     "996TopSpeed": 144,
-    "9960to60": 6.0,
+    "9960to60": 6,
     "996Handling": 82,
-
     "969TopSpeed": 144,
     "9690to60": 6.4,
     "969Handling": 85,
-
     "699TopSpeed": 140,
-    "6990to60": 6.0,
-    "699Handling": 85
+    "6990to60": 6,
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

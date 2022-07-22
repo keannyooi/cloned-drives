@@ -9,9 +9,10 @@
     "handling": 70,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 930,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +24,22 @@
     "mra": 33.3,
     "ola": 66.04,
     "description": "Slightly faster Zanussi. Card by Connor.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/864254711996743691/E.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/864254837867413524/ToyotaiQ133.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/864254849234894878/ToyotaiQ133-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/864254859989745664/ToyotaiQ133-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/864254894557626388/ToyotaiQ133-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/864254883321479178/ToyotaiQ133-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/864254870588358666/ToyotaiQ133-699.png",
-
     "333TopSpeed": 110,
     "3330to60": 10.1,
     "333Handling": 72,
-
     "666TopSpeed": 115,
     "6660to60": 9.5,
     "666Handling": 75,
-
     "996TopSpeed": 120,
-    "9960to60": 9.0,
+    "9960to60": 9,
     "996Handling": 75,
-
     "969TopSpeed": 120,
     "9690to60": 9.5,
     "969Handling": 78,
-
     "699TopSpeed": 115,
-    "6990to60": 9.0,
-    "699Handling": 78
+    "6990to60": 9,
+    "699Handling": 78,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

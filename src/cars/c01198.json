@@ -9,9 +9,10 @@
     "handling": 81,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Street Racer"],
+    "tags": [
+        "Street Racer"
+    ],
     "isPrize": false,
-
     "weight": 1270,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 60.53,
     "ola": 65.21,
     "description": "Subaru launched a final edition of the first generation Impreza WRX STI as a farewell for that generation. Card by Spence",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/839667826083889192/image0.jpg",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/839669606569607198/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/839669631567265852/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/839669649595564082/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/839669738447044628/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/839669721023774760/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/839669751248322590/image0.jpg",
-
     "333TopSpeed": 117,
     "3330to60": 4.4,
     "333Handling": 84,
-
     "666TopSpeed": 121,
     "6660to60": 4.1,
     "666Handling": 86,
-
     "699TopSpeed": 121,
     "6990to60": 3.9,
     "699Handling": 90,
-
     "969TopSpeed": 126,
     "9690to60": 4.1,
     "969Handling": 90,
-
     "996TopSpeed": 126,
     "9960to60": 3.9,
-    "996Handling": 86
+    "996Handling": 86,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1314,
     "gc": "Low",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 65.38,
     "ola": 73.53,
     "description": "Card by Macan.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/824425246735859732/civicSi.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824430077981884426/csi.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824430084030464010/csi333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824430090435559454/csi666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824430113142734858/csi996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824430107220377660/csi969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824430099663159316/csi699.png",
-
     "333TopSpeed": 141,
     "3330to60": 6.5,
     "333Handling": 89,
-
     "666TopSpeed": 145,
     "6660to60": 6.1,
     "666Handling": 92,
-
     "996TopSpeed": 150,
     "9960to60": 5.8,
     "996Handling": 92,
-
     "969TopSpeed": 150,
     "9690to60": 6.1,
     "969Handling": 95,
-
     "699TopSpeed": 145,
     "6990to60": 5.8,
-    "699Handling": 95
+    "699Handling": 95,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

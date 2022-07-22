@@ -1,17 +1,22 @@
 {
     "rq": 55,
-    "make": ["Mugen", "Honda"],
+    "make": [
+        "Mugen",
+        "Honda"
+    ],
     "model": "Civic Type-R (EP3)",
     "modelYear": 2003,
     "country": "JP",
     "topSpeed": 150,
-    "0to60": 6.0,
+    "0to60": 6,
     "handling": 83,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Tuner", "Street Racer"],
+    "tags": [
+        "Tuner",
+        "Street Racer"
+    ],
     "isPrize": false,
-
     "weight": 1173,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +28,22 @@
     "mra": 70.41,
     "ola": 82.35,
     "description": "moogen van. Card by Havvy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/863877326071922718/MugenCivicType-REP3.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/863877383606239282/ep3mug_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/863877386193469480/ep3mug_111.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/863877391108407366/ep3mug_222.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/863877409928773632/ep3mug_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/863877403998945310/ep3mug_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/863877397304967188/ep3mug_233.png",
-
     "333TopSpeed": 153,
     "3330to60": 5.7,
     "333Handling": 86,
-
     "666TopSpeed": 157,
     "6660to60": 5.4,
     "666Handling": 88,
-
     "996TopSpeed": 160,
     "9960to60": 5.1,
     "996Handling": 88,
-
     "969TopSpeed": 160,
     "9690to60": 5.4,
     "969Handling": 92,
-
     "699TopSpeed": 157,
     "6990to60": 5.1,
-    "699Handling": 92
+    "699Handling": 92,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

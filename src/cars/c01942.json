@@ -9,13 +9,13 @@
     "handling": 73,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
-
     "weight": 1085,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
@@ -24,33 +24,22 @@
     "mra": 18.58,
     "ola": 57.45,
     "description": "The new barebones basic entry level Yaris.. Card by Andu.",
-
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/963493775966109797/YarisG10.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/963494418923552858/YarisG10.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/963494433695887460/YarisG10-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/963494446467530853/YarisG10-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/963494489194917908/YarisG10-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/963494503824621598/YarisG10-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/963494518550855700/YarisG10-699.png",
-
     "333TopSpeed": 105,
     "3330to60": 13.4,
     "333Handling": 75,
-
     "666TopSpeed": 110,
-    "6660to60": 12.7, 
+    "6660to60": 12.7,
     "666Handling": 78,
-
     "996TopSpeed": 116,
-    "9960to60": 12.0,
+    "9960to60": 12,
     "996Handling": 78,
-
     "969TopSpeed": 116,
     "9690to60": 12.7,
     "969Handling": 81,
-
     "699TopSpeed": 110,
-    "6990to60": 12.0,
-    "699Handling": 81
+    "6990to60": 12,
+    "699Handling": 81,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

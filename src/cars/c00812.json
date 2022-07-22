@@ -9,9 +9,14 @@
     "handling": 97,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["The Royal Collection", "Ultra Expensive", "Track Day", "Hypercar", "Unique"],
+    "tags": [
+        "The Royal Collection",
+        "Ultra Expensive",
+        "Track Day",
+        "Hypercar",
+        "Unique"
+    ],
     "isPrize": true,
-
     "weight": 1440,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +28,22 @@
     "mra": 114.29,
     "ola": 83.07,
     "description": "A P1 GTR Converted to be road legal, by the wonderful people at Lanzante. Card by Exist",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/854709529698238474/CD_McLaren_P1_GTR_Road_Car_by_Lanzante.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/854709618873466910/CD_McLaren_P1_GTR_Road_Car_by_Lanzante_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/854709627785314304/CD_McLaren_P1_GTR_Road_Car_by_Lanzante_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/854709633540948028/CD_McLaren_P1_GTR_Road_Car_by_Lanzante_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/854709656148901918/CD_McLaren_P1_GTR_Road_Car_by_Lanzante_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/854709649075863573/CD_McLaren_P1_GTR_Road_Car_by_Lanzante_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/854709643912544296/CD_McLaren_P1_GTR_Road_Car_by_Lanzante_699.png",
-
     "333TopSpeed": 227,
     "3330to60": 2.3,
     "333Handling": 100,
-
     "666TopSpeed": 230,
     "6660to60": 2.2,
     "666Handling": 103,
-
     "996TopSpeed": 232,
-    "9960to60": 2.0,
+    "9960to60": 2,
     "996Handling": 103,
-
     "969TopSpeed": 232,
     "9690to60": 2.2,
     "969Handling": 108,
-
     "699TopSpeed": 230,
-    "6990to60": 2.0,
-    "699Handling": 108
+    "6990to60": 2,
+    "699Handling": 108,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -1,6 +1,9 @@
 {
     "rq": 86,
-    "make": ["Garage G Force", "Mitsubishi"],
+    "make": [
+        "Garage G Force",
+        "Mitsubishi"
+    ],
     "model": "Lancer Evolution IX Wagon MR",
     "modelYear": 2015,
     "country": "JP",
@@ -9,9 +12,12 @@
     "handling": 90,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Tuner", "Street Racer", "The Japanese Odyssey"],
+    "tags": [
+        "Tuner",
+        "Street Racer",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1290,
     "gc": "Medium",
     "seatCount": 2,
@@ -23,32 +29,22 @@
     "mra": 83.67,
     "ola": 63.41,
     "description": "The Wangan Wagon. Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/912470892964089916/thewanganwagon.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/912471213958373397/wanganwagon.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/912471227115925524/wanganwagon333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/912471238516023306/wanganwagon666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/912471281876754442/wanganwagon996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/912471261475635230/wanganwagon969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/912471251279302696/wanganwagon699.png",
-
     "333TopSpeed": 196,
     "3330to60": 3.9,
     "333Handling": 93,
-
     "666TopSpeed": 198,
     "6660to60": 3.7,
     "666Handling": 96,
-
     "996TopSpeed": 201,
     "9960to60": 3.5,
     "996Handling": 96,
-
     "969TopSpeed": 201,
     "9690to60": 3.7,
     "969Handling": 100,
-
     "699TopSpeed": 198,
     "6990to60": 3.5,
-    "699Handling": 100
+    "699Handling": 100,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

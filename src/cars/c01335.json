@@ -9,46 +9,37 @@
     "handling": 72,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": ["Eco-Friendly"],
+    "tags": [
+        "Eco-Friendly"
+    ],
     "isPrize": false,
-
     "weight": 1759,
     "gc": "High",
     "seatCount": 5,
     "bodyStyle": "SUV",
     "tcs": true,
     "abs": true,
-	"enginePos": "Front",
+    "enginePos": "Front",
     "fuelType": "Hybrid",
     "mra": 57.14,
     "ola": 71.23,
     "description": "Yet another old nameplate resurrected as a boring crossover. Card by Dodge",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/826520675723378728/Venza.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826522372895015002/Venza.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826522377894363186/Venza1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826522382952300594/Venza2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826522403260727326/Venza996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826522397136912424/Venza969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826522389974220872/Venza699.png",
-
     "333TopSpeed": 122,
     "3330to60": 7.2,
     "333Handling": 74,
-
     "666TopSpeed": 127,
-    "6660to60": 6.8, 
+    "6660to60": 6.8,
     "666Handling": 77,
-
     "996TopSpeed": 131,
     "9960to60": 6.5,
     "996Handling": 77,
-
     "969TopSpeed": 131,
     "9690to60": 6.8,
     "969Handling": 80,
-
     "699TopSpeed": 127,
     "6990to60": 6.5,
-    "699Handling": 80
+    "699Handling": 80,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

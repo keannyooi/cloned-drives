@@ -5,13 +5,14 @@
     "modelYear": 2020,
     "country": "KR",
     "topSpeed": 132,
-    "0to60": 7.0,
+    "0to60": 7,
     "handling": 74,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": ["Rest of The World"],
+    "tags": [
+        "Rest of The World"
+    ],
     "isPrize": false,
-
     "weight": 2044,
     "gc": "High",
     "seatCount": 7,
@@ -23,32 +24,22 @@
     "mra": 65.42,
     "ola": 71.43,
     "description": "Card by andu",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/826073571972743178/TellurideSXAWD.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826074024625831956/kiat.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826074031328854046/kiat333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826074036894302249/kiat666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826074059783143474/kiat996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826074051909910538/kiat969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826074044016492554/kiat699.png",
-
     "333TopSpeed": 136,
     "3330to60": 6.7,
     "333Handling": 76,
-
     "666TopSpeed": 140,
     "6660to60": 6.3,
     "666Handling": 79,
-
-	"996TopSpeed": 144,
-    "9960to60": 6.0,
+    "996TopSpeed": 144,
+    "9960to60": 6,
     "996Handling": 79,
-
     "969TopSpeed": 144,
     "9690to60": 6.3,
     "969Handling": 82,
-
-	"699TopSpeed": 140,
-    "6990to60": 6.0,
-    "699Handling": 82
+    "699TopSpeed": 140,
+    "6990to60": 6,
+    "699Handling": 82,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

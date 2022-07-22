@@ -9,9 +9,14 @@
     "handling": 101,
     "driveType": "4WD",
     "tyreType": "Slick",
-    "tags": ["Unique", "Track Day", "Concept", "Ultra Expensive", "Eargasm" ],
+    "tags": [
+        "Unique",
+        "Track Day",
+        "Concept",
+        "Ultra Expensive",
+        "Eargasm"
+    ],
     "isPrize": true,
-
     "weight": 1240,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +28,22 @@
     "mra": 150,
     "ola": 85.71,
     "description": "The ultimate Track weapon powered by a W16. Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/958780802139824149/bolideconcept.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/958781209964597269/bolideconcept.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/958781216780345344/bolideconcept1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/958781225361895474/bolideconcept2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/958781251345604618/bolideconcept996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/958781241811943474/bolideconcept969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/958781233981173780/bolideconcept699.png",
-
     "333TopSpeed": 319,
-    "3330to60": 2.0,
+    "3330to60": 2,
     "333Handling": 104,
-
     "666TopSpeed": 320,
     "6660to60": 1.9,
     "666Handling": 108,
-
     "996TopSpeed": 322,
     "9960to60": 1.8,
     "996Handling": 108,
-
     "969TopSpeed": 322,
     "9690to60": 1.9,
     "969Handling": 112,
-
     "699TopSpeed": 320,
     "6990to60": 1.8,
-    "699Handling": 112
+    "699Handling": 112,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

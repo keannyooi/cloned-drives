@@ -11,7 +11,6 @@
     "tyreType": "All-Surface",
     "tags": [],
     "isPrize": false,
-
     "weight": 2638,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 56.31,
     "ola": 65.28,
     "description": "GMC's flagship Yukon with 4 additional gears and a refreshed grille. Card by Johnny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/822227044687544390/cate-test.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/822226865133453352/GMC-Yukon-Denali.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/822226868832043068/GMC-Yukon-Denali-1-star.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/822226873886310400/GMC-Yukon-Denali-2-star.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/822226894673281054/GMC-Yukon-Denali-332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/822226888624963614/GMC-Yukon-Denali-323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/822226882321842247/GMC-Yukon-Denali-233.png",
-
     "333TopSpeed": 118,
     "3330to60": 5.5,
     "333Handling": 70,
-
     "666TopSpeed": 122,
     "6660to60": 5.2,
     "666Handling": 72,
-
-	"996TopSpeed": 127,
+    "996TopSpeed": 127,
     "9960to60": 4.9,
     "996Handling": 72,
-
     "969TopSpeed": 127,
     "9690to60": 5.2,
     "969Handling": 75,
-    
     "699TopSpeed": 122,
     "6990to60": 4.9,
-    "699Handling": 75
+    "699Handling": 75,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -5,13 +5,14 @@
     "modelYear": 2019,
     "country": "US",
     "topSpeed": 140,
-    "0to60": 5.0,
+    "0to60": 5,
     "handling": 77,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Eco-Friendly"],
+    "tags": [
+        "Eco-Friendly"
+    ],
     "isPrize": false,
-
     "weight": 1726,
     "gc": "Medium",
     "seatCount": 5,
@@ -20,35 +21,25 @@
     "abs": true,
     "enginePos": "Rear",
     "fuelType": "Electric",
-    "mra": 63.40,
+    "mra": 63.4,
     "ola": 84.56,
     "description": "When Tesla focuses on quantity instead of quality. Card by keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/858544311648780298/tesla_model_3_long_range.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/858541247223824384/model_3_long_000.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/858541252956651540/model_3_long_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/858541257710239784/model_3_long_666.jpg",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/858541272305893376/model_3_long_996.jpg",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/858541265331552276/model_3_long_969.jpg",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/858541261875052584/model_3_long_699.jpg",
-
     "333TopSpeed": 144,
     "3330to60": 4.8,
     "333Handling": 80,
-
     "666TopSpeed": 147,
     "6660to60": 4.5,
     "666Handling": 82,
-
     "996TopSpeed": 151,
     "9960to60": 4.3,
     "996Handling": 82,
-
     "969TopSpeed": 151,
     "9690to60": 4.5,
     "969Handling": 85,
-
     "699TopSpeed": 147,
     "6990to60": 4.3,
-    "699Handling": 85
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -1,6 +1,9 @@
 {
     "rq": 24,
-    "make": ["Spoon", "Honda"],
+    "make": [
+        "Spoon",
+        "Honda"
+    ],
     "model": "S660 Demo",
     "modelYear": 2017,
     "country": "JP",
@@ -9,9 +12,11 @@
     "handling": 77,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Tuner", "Kei Car"],
+    "tags": [
+        "Tuner",
+        "Kei Car"
+    ],
     "isPrize": false,
-
     "weight": 820,
     "gc": "Low",
     "seatCount": 2,
@@ -21,34 +26,24 @@
     "enginePos": "Middle",
     "fuelType": "Petrol",
     "mra": 58.49,
-    "ola": 71.10,
+    "ola": 71.1,
     "description": "A S660 tuned by a legendary Honda tuner that has seen faster days. Card by keanny",
-
     "card": "https://media.discordapp.net/attachments/819199720249360384/868778832759488533/spoon_s660.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/868778077176614922/spoon_s660_000.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/868778079730937856/spoon_s660_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/868778085196111892/spoon_s660_666.jpg",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/868778094171930654/spoon_s660_996.jpg",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/868778091835691008/spoon_s660_969.jpg",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/868778088962596864/spoon_s660_699.jpg",
-
     "333TopSpeed": 123,
     "3330to60": 8.7,
     "333Handling": 80,
-
     "666TopSpeed": 128,
     "6660to60": 8.3,
     "666Handling": 82,
-
     "996TopSpeed": 132,
     "9960to60": 7.8,
     "996Handling": 82,
-
     "969TopSpeed": 132,
     "9690to60": 8.3,
     "969Handling": 85,
-
     "699TopSpeed": 128,
     "6990to60": 7.8,
-    "699Handling": 85
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

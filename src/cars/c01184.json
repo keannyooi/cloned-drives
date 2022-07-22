@@ -1,6 +1,9 @@
 {
     "rq": 78,
-    "make": ["Startech", "Tesla"],
+    "make": [
+        "Startech",
+        "Tesla"
+    ],
     "model": "Model 3 Performance",
     "modelYear": 2020,
     "country": "DE",
@@ -9,9 +12,11 @@
     "handling": 86,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Eco-Friendly", "Tuner"],
+    "tags": [
+        "Eco-Friendly",
+        "Tuner"
+    ],
     "isPrize": false,
-
     "weight": 1847,
     "gc": "Low",
     "seatCount": 5,
@@ -23,32 +28,22 @@
     "mra": 63.97,
     "ola": 98.22,
     "description": "Apparently Shmee150 featured and drove this car on his YouTube channel. Card by keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/858544196808605716/startech_model_3.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/858541670210994226/model_3_startech_000.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/858541674903896115/model_3_startech_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/858541679996829726/model_3_startech_666.jpg",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/858541695766495263/model_3_startech_996.jpg",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/858541690674348042/model_3_startech_969.jpg",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/858541685894283274/model_3_startech_699.jpg",
-
     "333TopSpeed": 165,
     "3330to60": 3.1,
     "333Handling": 89,
-
     "666TopSpeed": 168,
-    "6660to60": 3.0,
+    "6660to60": 3,
     "666Handling": 92,
-
     "996TopSpeed": 172,
     "9960to60": 2.8,
     "996Handling": 92,
-
     "969TopSpeed": 172,
-    "9690to60": 3.0,
+    "9690to60": 3,
     "969Handling": 95,
-
     "699TopSpeed": 169,
     "6990to60": 2.8,
-    "699Handling": 95
+    "699Handling": 95,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -5,13 +5,14 @@
     "modelYear": 1933,
     "country": "GB",
     "topSpeed": 65,
-    "0to60": 32.0,
+    "0to60": 32,
     "handling": 57,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["The Royal Collection"],
+    "tags": [
+        "The Royal Collection"
+    ],
     "isPrize": false,
-
     "weight": 495,
     "gc": "Low",
     "seatCount": 2,
@@ -20,35 +21,25 @@
     "abs": false,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 0.00,
-    "ola": 67.00,
+    "mra": 0,
+    "ola": 67,
     "description": "Some old car... Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/848253643425054770/J2Midget.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/848254074196459580/MGJ2.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/848254079176015903/MGJ2333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/848254083608477746/MGJ2666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/848254104341708800/MGJ2996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/848254097060003840/MGJ2969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/848254090919411782/MGJ2699.png",
-
     "333TopSpeed": 73,
     "3330to60": 30.4,
     "333Handling": 59,
-
     "666TopSpeed": 81,
     "6660to60": 28.8,
     "666Handling": 61,
-
     "996TopSpeed": 89,
     "9960to60": 27.2,
     "996Handling": 61,
-
     "969TopSpeed": 89,
     "9690to60": 28.8,
     "969Handling": 63,
-
     "699TopSpeed": 81,
     "6990to60": 27.2,
-    "699Handling": 63
+    "699Handling": 63,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

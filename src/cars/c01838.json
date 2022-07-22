@@ -9,9 +9,10 @@
     "handling": 71,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1740,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 66.98,
     "ola": 81.69,
     "description": "The Outback gains refinement but retains its off-road capability. Card by McNuggets.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/828457925134778368/outbak.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/828455478924673044/outback_stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/828455527125221386/outback_1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/828455576370413578/outback_2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/828455720684879892/outback_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/828455676468396082/outback_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/828455612609331250/outback_233.png",
-
     "333TopSpeed": 143,
     "3330to60": 6.7,
     "333Handling": 73,
-
     "666TopSpeed": 146,
     "6660to60": 6.4,
     "666Handling": 76,
-
     "996TopSpeed": 150,
-    "9960to60": 6.0,
+    "9960to60": 6,
     "996Handling": 76,
-
     "969TopSpeed": 150,
     "9690to60": 6.4,
     "969Handling": 79,
-
     "699TopSpeed": 146,
-    "6990to60": 6.0,
-    "699Handling": 79
+    "6990to60": 6,
+    "699Handling": 79,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

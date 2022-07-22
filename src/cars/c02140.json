@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1348,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 47.29,
     "ola": 54.17,
     "description": "Card by Macan.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/858836869771952138/Focus_SE_1.0T_EcoBoost_Sedan_Manual_15.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/858837903203762176/Ford_Focus_SE_1.0T_EcoBoost_Sedan_Manual_2015_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/858837908656226304/Ford_Focus_SE_1.0T_EcoBoost_Sedan_Manual_2015_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/858837919773884456/Ford_Focus_SE_1.0T_EcoBoost_Sedan_Manual_2015_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/858838042973306950/Ford_Focus_SE_1.0T_EcoBoost_Sedan_Manual_2015_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/858837932470435900/Ford_Focus_SE_1.0T_EcoBoost_Sedan_Manual_2015_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/858837929228369960/Ford_Focus_SE_1.0T_EcoBoost_Sedan_Manual_2015_699.png",
-
     "333TopSpeed": 133,
     "3330to60": 9.1,
     "333Handling": 79,
-
     "666TopSpeed": 137,
     "6660to60": 8.6,
     "666Handling": 81,
-
     "996TopSpeed": 141,
     "9960to60": 8.2,
     "996Handling": 81,
-
     "969TopSpeed": 141,
     "9690to60": 8.6,
     "969Handling": 84,
-
     "699TopSpeed": 137,
     "6990to60": 8.2,
-    "699Handling": 84
+    "699Handling": 84,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

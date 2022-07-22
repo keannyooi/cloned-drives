@@ -5,13 +5,12 @@
     "modelYear": 1979,
     "country": "JP",
     "topSpeed": 106,
-    "0to60": 12.0,
+    "0to60": 12,
     "handling": 68,
     "driveType": "FWD",
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 925,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 23.59,
     "ola": 56.67,
     "description": "The Accord that started it all. Card by Connor",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/835447502819819520/E.HondaAccordCVCCEXL.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820683755210801192/E.HondaAccordCVVC.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820683762580717598/E.HondaAccordCVVC-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820683773996826694/E.HondaAccordCVVC-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820683797279670272/E.HondaAccordCVVC-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820683789369475132/E.HondaAccordCVVC-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820683779940941854/E.HondaAccordCVVC-699.png",
-
     "333TopSpeed": 111,
     "3330to60": 11.4,
     "333Handling": 70,
-
     "666TopSpeed": 116,
     "6660to60": 10.8,
     "666Handling": 72,
-
     "996TopSpeed": 121,
     "9960to60": 10.2,
     "996Handling": 72,
-
     "969TopSpeed": 121,
     "9690to60": 10.8,
     "969Handling": 75,
-
     "699TopSpeed": 116,
     "6990to60": 10.2,
-    "699Handling": 75
+    "699Handling": 75,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

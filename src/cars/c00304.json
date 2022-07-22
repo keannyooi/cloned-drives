@@ -11,7 +11,6 @@
     "tyreType": "Off-Road",
     "tags": [],
     "isPrize": false,
-
     "weight": 2661,
     "gc": "High",
     "seatCount": 7,
@@ -23,32 +22,22 @@
     "mra": 57.69,
     "ola": 66.67,
     "description": "The latest version of Chevy's offroader, now with added offroad. By DodgeDemon",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/827079939433955388/obese_tahoe.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/827080760866373642/tahoe_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/827080767665733702/tahoe_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/827080783499231273/tahoe_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/827080827417788486/tahoe_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/827080812566544424/tahoe_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/827080800053887026/tahoe_699.jpg",
-
     "333TopSpeed": 120,
     "3330to60": 7.1,
     "333Handling": 63,
-
     "666TopSpeed": 124,
     "6660to60": 6.8,
     "666Handling": 65,
-
     "996TopSpeed": 129,
     "9960to60": 6.4,
     "996Handling": 65,
-
     "969TopSpeed": 129,
     "9690to60": 6.8,
     "969Handling": 68,
-
     "699TopSpeed": 124,
     "6990to60": 6.4,
-    "699Handling": 68
+    "699Handling": 68,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

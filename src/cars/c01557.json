@@ -5,13 +5,15 @@
     "modelYear": 1964,
     "country": "JP",
     "topSpeed": 81,
-    "0to60": 21.0,
+    "0to60": 21,
     "handling": 58,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Kei Car", "The Japanese Odyssey"],
+    "tags": [
+        "Kei Car",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 703,
     "gc": "Medium",
     "seatCount": 2,
@@ -23,32 +25,22 @@
     "mra": 10.23,
     "ola": 48.57,
     "description": "The first Honda sports car ever made, and it can even rev up to 9500 rpm. Card by Spence.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/865719033373655080/image0.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/862151735032283136/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/862151836886892564/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/862151871584927784/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/862151907182510080/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/862151948215910410/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/862151982965063761/image0.jpg",
-
     "333TopSpeed": 87,
-    "3330to60": 20.0,
+    "3330to60": 20,
     "333Handling": 60,
-
     "666TopSpeed": 94,
     "6660to60": 18.9,
     "666Handling": 62,
-
     "699TopSpeed": 94,
     "6990to60": 17.9,
     "699Handling": 64,
-
     "969TopSpeed": 100,
     "9690to60": 18.9,
     "969Handling": 64,
-
     "996TopSpeed": 100,
     "9960to60": 17.9,
-    "996Handling": 62
+    "996Handling": 62,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

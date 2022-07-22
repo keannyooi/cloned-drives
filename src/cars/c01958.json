@@ -9,9 +9,10 @@
     "handling": 76,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1703,
     "gc": "Low",
     "seatCount": 4,
@@ -23,32 +24,22 @@
     "mra": 59.86,
     "ola": 69.49,
     "description": "Basically a more reliable understated Mercedes-Benz C200 Coupe. Card by Spence.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/969686859116597258/D8FBF0A9-096D-4022-8822-2AFC4D00BB5D.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/969687379604545636/29D34659-66C2-42B1-AC8B-D56E937CF438.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/969687426136174672/9B9D9933-55B4-4ADA-8996-73DE5EBA4F21.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/969687444976992306/435BC94F-3A3E-46D8-8EB4-582CEBF0C0AA.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/969687510492016650/F7817DA0-71AF-497C-86A6-CE85AEDC924B.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/969687491902840862/4AB649A2-138E-4158-9DDF-CBBD380F96AF.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/969687464237203566/4E32ECD8-AFD0-4C28-BBBC-2E9A48588448.jpg",
-
     "333TopSpeed": 150,
     "3330to60": 6.9,
     "333Handling": 79,
-
     "666TopSpeed": 153,
     "6660to60": 6.6,
     "666Handling": 81,
-
     "996TopSpeed": 157,
     "9960to60": 6.2,
     "996Handling": 81,
-
     "969TopSpeed": 157,
     "9690to60": 6.6,
     "969Handling": 84,
-
     "699TopSpeed": 153,
     "6990to60": 6.2,
-    "699Handling": 84
+    "699Handling": 84,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

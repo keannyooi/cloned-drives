@@ -9,9 +9,11 @@
     "handling": 73,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Track Day","The Japanese Odyssey"],
+    "tags": [
+        "Track Day",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1395,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +25,22 @@
     "mra": 67.09,
     "ola": 64.15,
     "description": "A limited edition WRX Bugeye Impreza for the bri ish market as a celebration for the rally success in UK. Only 300 were made. Card by Spence.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/845837882681196585/image0.jpg",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/845837928747368459/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/845837969163419698/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/845837986449063976/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/845838042861404180/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/845838029705052160/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/845838000641671168/image0.jpg",
-
     "333TopSpeed": 152,
-    "3330to60": 5.0,
+    "3330to60": 5,
     "333Handling": 75,
-
     "666TopSpeed": 155,
     "6660to60": 4.8,
     "666Handling": 78,
-
     "996TopSpeed": 159,
     "9960to60": 4.5,
     "996Handling": 78,
-
     "969TopSpeed": 159,
     "9690to60": 4.8,
     "969Handling": 81,
-
     "699TopSpeed": 155,
     "6990to60": 4.5,
-    "699Handling": 81
+    "699Handling": 81,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

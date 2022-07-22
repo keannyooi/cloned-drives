@@ -9,9 +9,10 @@
     "handling": 76,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Eco-Friendly"],
+    "tags": [
+        "Eco-Friendly"
+    ],
     "isPrize": false,
-
     "weight": 1420,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 46.67,
     "ola": 72.38,
     "description": "Card by Keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820988029413097504/lexus_ct_200h.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820989379014688769/ct200h_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820989389206585384/ct200h_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820989395632914452/ct200h_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820989439492096010/ct200h_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820989427538067476/ct200h_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820989418948526100/ct200h_699.jpg",
-
     "333TopSpeed": 118,
-    "3330to60": 10.0,
+    "3330to60": 10,
     "333Handling": 79,
-
     "666TopSpeed": 122,
     "6660to60": 9.5,
     "666Handling": 81,
-
     "996TopSpeed": 127,
     "9960to60": 8.9,
     "996Handling": 81,
-
     "969TopSpeed": 127,
     "9690to60": 9.5,
     "969Handling": 84,
-
     "699TopSpeed": 122,
     "6990to60": 8.9,
-    "699Handling": 84
+    "699Handling": 84,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

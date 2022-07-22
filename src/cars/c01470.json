@@ -9,9 +9,10 @@
     "handling": 54,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Unique"],
+    "tags": [
+        "Unique"
+    ],
     "isPrize": false,
-
     "weight": 2705,
     "gc": "Medium",
     "seatCount": 8,
@@ -23,32 +24,22 @@
     "mra": 4.88,
     "ola": 61.28,
     "description": "Card by Preston.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/858808401798234172/2rq_for_cd.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/858808453782831154/000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/858808512871530517/333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/858808540227829770/666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/858808606224810004/996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/858808581213257769/969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/858808561220059147/699.png",
-
     "333TopSpeed": 99,
     "3330to60": 22.3,
     "333Handling": 56,
-
     "666TopSpeed": 104,
     "6660to60": 21.2,
     "666Handling": 58,
-
     "996TopSpeed": 110,
-    "9960to60": 20.0,
+    "9960to60": 20,
     "996Handling": 58,
-
     "969TopSpeed": 110,
     "9690to60": 21.2,
     "969Handling": 60,
-
     "699TopSpeed": 104,
-    "6990to60": 20.0,
-    "699Handling": 60
+    "6990to60": 20,
+    "699Handling": 60,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

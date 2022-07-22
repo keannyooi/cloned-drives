@@ -9,12 +9,14 @@
     "handling": 83,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Super Sedan", "Sleeper"],
+    "tags": [
+        "Super Sedan",
+        "Sleeper"
+    ],
     "isPrize": false,
-
     "weight": 1726,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Sedan",
     "tcs": true,
     "abs": true,
@@ -23,32 +25,22 @@
     "mra": 77.19,
     "ola": 81.82,
     "description": "Underrated sport sedan. Card by Connor",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/826166044971237386/A.LexusISF.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826166119760658452/A.LexusISF.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826166131835404338/A.LexusISF-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826166141453205525/A.LexusISF-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826166170745831504/A.LexusISF-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826166162454347786/A.LexusISF-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826166153138405396/A.LexusISF-699.png",
-
     "333TopSpeed": 174,
     "3330to60": 4.2,
     "333Handling": 86,
-
     "666TopSpeed": 177,
-    "6660to60": 4.0, 
+    "6660to60": 4,
     "666Handling": 88,
-
     "996TopSpeed": 180,
     "9960to60": 3.7,
     "996Handling": 88,
-
     "969TopSpeed": 180,
-    "9690to60": 4.0,
+    "9690to60": 4,
     "969Handling": 92,
-
     "699TopSpeed": 177,
     "6990to60": 3.7,
-    "699Handling": 92
+    "699Handling": 92,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

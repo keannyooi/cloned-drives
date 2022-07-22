@@ -9,9 +9,14 @@
     "handling": 87,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Hypercar", "Ultra Expensive", "Style Icon", "Silver Screen", "Innovative"],
+    "tags": [
+        "Hypercar",
+        "Ultra Expensive",
+        "Style Icon",
+        "Silver Screen",
+        "Innovative"
+    ],
     "isPrize": false,
-
     "weight": 1888,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +28,22 @@
     "mra": 93.49,
     "ola": 91.14,
     "description": "The most well-known Bugatti, even though there are faster ones made. Card by Havvy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/824389509910233158/veryon164thingy.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824390259160252476/veyron.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824390266134986752/veyron333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824390273697579099/veyron666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824390302998593586/veyron996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824390293222457404/veyron969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824390283931418634/veyron699.png",
-
     "333TopSpeed": 255,
     "3330to60": 2.5,
     "333Handling": 90,
-
     "666TopSpeed": 257,
     "6660to60": 2.3,
     "666Handling": 93,
-
     "996TopSpeed": 259,
     "9960to60": 2.2,
     "996Handling": 93,
-
     "969TopSpeed": 259,
     "9690to60": 2.3,
     "969Handling": 97,
-
     "699TopSpeed": 257,
     "6990to60": 2.2,
-    "699Handling": 97
+    "699Handling": 97,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

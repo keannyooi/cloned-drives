@@ -9,9 +9,11 @@
     "handling": 90,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Eco-Friendly", "Super Sedan"],
+    "tags": [
+        "Eco-Friendly",
+        "Super Sedan"
+    ],
     "isPrize": false,
-
     "weight": 2365,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +25,22 @@
     "mra": 74.29,
     "ola": 84.62,
     "description": "First electric car by Porsche going straight for the Tesla. Card by Connor.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/916731819481759744/S.PorscheTaycanTurboS1.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/916731878961193020/TaycanTurboS.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/916731902206033950/TaycanTurboS1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/916731923164962847/TaycanTurboS2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/916732002101772318/TaycanTurboS996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/916731965313531945/TaycanTurboS969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/916731947349336074/TaycanTurboS699.png",
-
     "333TopSpeed": 165,
     "3330to60": 2.5,
     "333Handling": 93,
-
     "666TopSpeed": 168,
     "6660to60": 2.3,
     "666Handling": 96,
-
     "996TopSpeed": 172,
     "9960to60": 2.2,
     "996Handling": 96,
-
     "969TopSpeed": 172,
     "9690to60": 2.3,
     "969Handling": 100,
-
     "699TopSpeed": 168,
     "6990to60": 2.2,
-    "699Handling": 100
+    "699Handling": 100,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

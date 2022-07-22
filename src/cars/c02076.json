@@ -1,6 +1,9 @@
 {
     "rq": 71,
-    "make": ["ABT", "Audi"],
+    "make": [
+        "ABT",
+        "Audi"
+    ],
     "model": "RS 4 Avant",
     "modelYear": 2012,
     "country": "DE",
@@ -9,9 +12,10 @@
     "handling": 87,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Tuner"],
+    "tags": [
+        "Tuner"
+    ],
     "isPrize": false,
-
     "weight": 1795,
     "gc": "Low",
     "seatCount": 5,
@@ -23,32 +27,22 @@
     "mra": 77.82,
     "ola": 76.92,
     "description": "It's just a B8 with the limiter removed. Card by Exist.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/947804226631901194/CD_ABT_RS_4_Avant_B8.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/947804274568622110/stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/947804302326517801/333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/947804322081701928/666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/947804384727793665/996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/947804366797176842/969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/947804344386994206/699.png",
-
     "333TopSpeed": 183,
     "3330to60": 4.2,
     "333Handling": 90,
-
     "666TopSpeed": 186,
-    "6660to60": 4.0,
+    "6660to60": 4,
     "666Handling": 93,
-
     "996TopSpeed": 189,
     "9960to60": 3.7,
     "996Handling": 93,
-
     "969TopSpeed": 189,
-    "9690to60": 4.0,
+    "9690to60": 4,
     "969Handling": 97,
-
     "699TopSpeed": 186,
     "6990to60": 3.7,
-    "699Handling": 97
+    "699Handling": 97,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

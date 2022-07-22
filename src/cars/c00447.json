@@ -5,13 +5,12 @@
     "modelYear": 1998,
     "country": "GB",
     "topSpeed": 113,
-    "0to60": 11.0,
+    "0to60": 11,
     "handling": 69,
     "driveType": "FWD",
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1086,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 41.51,
     "ola": 69.09,
     "description": "Card by keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819390576557555732/ford_focus_1.6.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819805317273092096/british_focus_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819805320217493514/british_focus_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819805331357827092/british_focus_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819805359417982996/british_focus_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819805349296078868/british_focus_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819805340551741450/british_focus_699.jpg",
-
     "333TopSpeed": 118,
     "3330to60": 10.5,
     "333Handling": 71,
-
     "666TopSpeed": 122,
     "6660to60": 9.9,
     "666Handling": 74,
-
-	"996TopSpeed": 127,
+    "996TopSpeed": 127,
     "9960to60": 9.4,
     "996Handling": 74,
-
     "969TopSpeed": 127,
     "9690to60": 9.9,
     "969Handling": 77,
-
-	"699TopSpeed": 122,
+    "699TopSpeed": 122,
     "6990to60": 9.4,
-    "699Handling": 77
+    "699Handling": 77,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

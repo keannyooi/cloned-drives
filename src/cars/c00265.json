@@ -9,9 +9,11 @@
     "handling": 63,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": ["OG", "Servers Choice"],
+    "tags": [
+        "OG",
+        "Servers Choice"
+    ],
     "isPrize": false,
-
     "weight": 2234,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +25,22 @@
     "mra": 45.22,
     "ola": 73.24,
     "description": "The Colorado for real men. Card by keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819382840386912266/colorado_zr2_v6.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819481856549847040/colorado_zr2_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819481868352880640/colorado_zr2_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819481873956470794/colorado_zr2_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819481904746332160/colorado_zr2_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819481896463237180/colorado_zr2_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819481885029433354/colorado_zr2_699.jpg",
-
     "333TopSpeed": 105,
     "3330to60": 6.7,
     "333Handling": 65,
-
     "666TopSpeed": 110,
     "6660to60": 6.4,
     "666Handling": 67,
-
-	"996TopSpeed": 116,
-    "9960to60": 6.0,
+    "996TopSpeed": 116,
+    "9960to60": 6,
     "996Handling": 67,
-
     "969TopSpeed": 116,
     "9690to60": 6.4,
     "969Handling": 70,
-
-	"699TopSpeed": 110,
-    "6990to60": 6.0,
-    "699Handling": 70
+    "699TopSpeed": 110,
+    "6990to60": 6,
+    "699Handling": 70,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

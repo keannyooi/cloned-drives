@@ -9,9 +9,10 @@
     "handling": 72,
     "driveType": "FWD",
     "tyreType": "All-Surface",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1467,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 55.36,
     "ola": 65.66,
     "description": "The beginning of one of mazda's top-sellers. Card by c6.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/970690180212228166/mazda_cx-5_2.0_skyactiv-g.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/970689579843731476/mazda_cx-5_2.0_skyactiv-g_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/970689610910933062/mazda_cx-5_2.0_skyactiv-g_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/970689727638417498/mazda_cx-5_2.0_skyactiv-g_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/970689992391274596/mazda_cx-5_2.0_skyactiv-g_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/970689898854088724/mazda_cx-5_2.0_skyactiv-g_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/970689818046660668/mazda_cx-5_2.0_skyactiv-g_699.png",
-
     "333TopSpeed": 128,
     "3330to60": 8.9,
     "333Handling": 74,
-
     "666TopSpeed": 132,
     "6660to60": 8.5,
     "666Handling": 77,
-
     "996TopSpeed": 137,
-    "9960to60": 8.0,
+    "9960to60": 8,
     "996Handling": 77,
-
     "969TopSpeed": 137,
     "9690to60": 8.5,
     "969Handling": 80,
-
     "699TopSpeed": 132,
-    "6990to60": 8.0,
-    "699Handling": 80
+    "6990to60": 8,
+    "699Handling": 80,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

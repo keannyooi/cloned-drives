@@ -9,9 +9,10 @@
     "handling": 87,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Supercar"],
+    "tags": [
+        "Supercar"
+    ],
     "isPrize": false,
-
     "weight": 1414,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +24,22 @@
     "mra": 77.19,
     "ola": 86.38,
     "description": "Card by Connor",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/826902987217567825/A.ChevyCorvetteZ06C5.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826903052342263858/A.ChevyCorvetteZ06.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826903087188148224/A.ChevyCorvetteZ06-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826903108914511872/A.ChevyCorvetteZ06-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826903187898105886/A.ChevyCorvetteZ06-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826903162241286205/A.ChevyCorvetteZ06-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826903136806371369/A.ChevyCorvetteZ06-699.png",
-
     "333TopSpeed": 174,
     "3330to60": 4.2,
     "333Handling": 90,
-
     "666TopSpeed": 177,
-    "6660to60": 4.0,
+    "6660to60": 4,
     "666Handling": 93,
-
-	"996TopSpeed": 180,
+    "996TopSpeed": 180,
     "9960to60": 3.7,
     "996Handling": 93,
-
-	"969TopSpeed": 180,
-    "9690to60": 4.0,
+    "969TopSpeed": 180,
+    "9690to60": 4,
     "969Handling": 97,
-
     "699TopSpeed": 177,
     "6990to60": 3.7,
-    "699Handling": 97
+    "699Handling": 97,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

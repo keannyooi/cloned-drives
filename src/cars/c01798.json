@@ -9,9 +9,10 @@
     "handling": 73,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1620,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 50.75,
     "ola": 82.35,
     "description": "Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/966804081190535228/StageaRS4.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/966804864413868162/StageaRSFour.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/966804871791673375/StageaRSFour1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/966804879177814156/StageaRSFour2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/966804904859557948/StageaRSFour996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/966804896772927508/StageaRSFour969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/966804887159574548/StageaRSFour699.png",
-
     "333TopSpeed": 117,
     "3330to60": 6.5,
     "333Handling": 75,
-
     "666TopSpeed": 121,
     "6660to60": 6.1,
     "666Handling": 78,
-
     "996TopSpeed": 126,
     "9960to60": 5.8,
     "996Handling": 78,
-
     "969TopSpeed": 126,
     "9690to60": 6.1,
     "969Handling": 81,
-
     "699TopSpeed": 121,
     "6990to60": 5.8,
-    "699Handling": 81
+    "699Handling": 81,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

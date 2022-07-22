@@ -9,9 +9,12 @@
     "handling": 81,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Hot Hatch","Street Racer","The Japanese Odyssey"],
+    "tags": [
+        "Hot Hatch",
+        "Street Racer",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1204,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +26,22 @@
     "mra": 69.13,
     "ola": 85.37,
     "description": "Breadvan with a classic high-revving VTEC. Card by havvy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/863870790943506442/unknown.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/863870850314928158/ep3_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/863870855066943528/ep3_111.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/863870858572726322/ep3_222.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/863870876474146826/ep3_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/863870870858760212/ep3_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/863870864872570920/ep3_233.png",
-
     "333TopSpeed": 150,
     "3330to60": 6.3,
     "333Handling": 84,
-
     "666TopSpeed": 153,
     "6660to60": 5.9,
     "666Handling": 86,
-
     "996TopSpeed": 157,
     "9960to60": 5.6,
     "996Handling": 86,
-
     "969TopSpeed": 157,
     "9690to60": 5.9,
     "969Handling": 90,
-
     "699TopSpeed": 153,
     "6990to60": 5.6,
-    "699Handling": 90
+    "699Handling": 90,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

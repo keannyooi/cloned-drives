@@ -1,6 +1,9 @@
 {
     "rq": 99,
-    "make": ["TechArt", "Porsche"],
+    "make": [
+        "TechArt",
+        "Porsche"
+    ],
     "model": "911 Turbo S",
     "modelYear": 2020,
     "country": "DE",
@@ -9,9 +12,11 @@
     "handling": 93,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Tuner", "Supercar"],
+    "tags": [
+        "Tuner",
+        "Supercar"
+    ],
     "isPrize": false,
-
     "weight": 1625,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +28,22 @@
     "mra": 86.21,
     "ola": 73.33,
     "description": "Tuners go brr. Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/951463318219026452/techartTubroS.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/844557159912046612/Techart992TS.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/844557164940623882/Techart992TS333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/844557170405146634/Techart992TS666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/844557192594325524/Techart992TS996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/844557185560215562/Techart992TS969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/844557178551795712/Techart992TS699.png",
-
     "333TopSpeed": 208,
     "3330to60": 2.2,
     "333Handling": 96,
-
     "666TopSpeed": 210,
     "6660to60": 2.1,
     "666Handling": 99,
-
     "996TopSpeed": 213,
-    "9960to60": 2.0,
+    "9960to60": 2,
     "996Handling": 99,
-
     "969TopSpeed": 213,
     "9690to60": 2.1,
     "969Handling": 103,
-
     "699TopSpeed": 210,
-    "6990to60": 2.0,
-    "699Handling": 103
+    "6990to60": 2,
+    "699Handling": 103,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

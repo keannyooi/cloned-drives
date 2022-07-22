@@ -1,6 +1,9 @@
 {
     "rq": 64,
-    "make": ["Comptech", "Acura"],
+    "make": [
+        "Comptech",
+        "Acura"
+    ],
     "model": "NSX-T",
     "modelYear": 1999,
     "country": "US",
@@ -9,9 +12,11 @@
     "handling": 86,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Street Racer", "Unique"],
+    "tags": [
+        "Street Racer",
+        "Unique"
+    ],
     "isPrize": true,
-
     "weight": 1497,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +28,22 @@
     "mra": 75.81,
     "ola": 89.36,
     "description": "An Acura NSX-T that is a widebodied, supercharged and elevated in terms of spirit. Card by Keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/848060086382886942/comptech_nsx-t.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/848058685195812874/comptech_nsx-t_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/848058695660863499/comptech_nsx-t_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/848058699947704330/comptech_nsx-t_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/848058710915022858/comptech_nsx-t_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/848058708318617621/comptech_nsx-t_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/848058703826780170/comptech_nsx-t_699.jpg",
-
     "333TopSpeed": 194,
     "3330to60": 4.5,
     "333Handling": 89,
-
     "666TopSpeed": 196,
     "6660to60": 4.2,
     "666Handling": 92,
-
     "996TopSpeed": 199,
-    "9960to60": 4.0,
+    "9960to60": 4,
     "996Handling": 92,
-
     "969TopSpeed": 199,
     "9690to60": 4.2,
     "969Handling": 95,
-
     "699TopSpeed": 196,
-    "6990to60": 4.0,
-    "699Handling": 95
+    "6990to60": 4,
+    "699Handling": 95,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

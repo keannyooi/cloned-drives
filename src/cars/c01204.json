@@ -9,9 +9,10 @@
     "handling": 72,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Street Racer"],
+    "tags": [
+        "Street Racer"
+    ],
     "isPrize": false,
-
     "weight": 1414,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 50.43,
     "ola": 58.62,
     "description": "The mid-level performance variant of the Bugeye Impreza for the people that can't afford an STI. Card by Spence",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/844761185608794122/image0.jpg",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/844761232099770389/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/844761246414012466/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/844761260340150272/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/844761276626239508/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/844761288885403658/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/844761307903164426/image0.jpg",
-
     "333TopSpeed": 150,
     "3330to60": 5.5,
     "333Handling": 74,
-
     "666TopSpeed": 153,
     "6660to60": 5.2,
     "666Handling": 77,
-
     "699TopSpeed": 153,
     "6990to60": 4.9,
     "699Handling": 80,
-
     "969TopSpeed": 157,
     "9690to60": 5.2,
     "969Handling": 80,
-
     "996TopSpeed": 157,
     "9960to60": 4.9,
-    "996Handling": 77
+    "996Handling": 77,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

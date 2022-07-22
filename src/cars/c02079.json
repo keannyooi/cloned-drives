@@ -1,6 +1,9 @@
 {
     "rq": 89,
-    "make": ["ABT", "Audi"],
+    "make": [
+        "ABT",
+        "Audi"
+    ],
     "model": "RS Q8-S",
     "modelYear": 2021,
     "country": "DE",
@@ -9,9 +12,10 @@
     "handling": 90,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Tuner"],
+    "tags": [
+        "Tuner"
+    ],
     "isPrize": false,
-
     "weight": 2135,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +27,22 @@
     "mra": 68,
     "ola": 76.47,
     "description": "Card by Macan.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/944944812765876234/RS_Q8-S_21.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/944944864431308810/stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/944944909327171615/333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/944944930013466664/666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/944944994924494919/996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/944944972619190343/969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/944944950389395496/699.png",
-
     "333TopSpeed": 193,
     "3330to60": 3.2,
     "333Handling": 93,
-
     "666TopSpeed": 195,
     "6660to60": 3.1,
     "666Handling": 96,
-
     "996TopSpeed": 198,
     "9960to60": 2.9,
     "996Handling": 96,
-
     "969TopSpeed": 198,
     "9690to60": 3.1,
     "969Handling": 100,
-
     "699TopSpeed": 195,
     "6990to60": 2.9,
-    "699Handling": 100
+    "699Handling": 100,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

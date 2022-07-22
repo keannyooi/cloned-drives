@@ -5,13 +5,15 @@
     "modelYear": 2017,
     "country": "GB",
     "topSpeed": 188,
-    "0to60": 4.0,
+    "0to60": 4,
     "handling": 86,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["The Royal Collection", "Grand Tourer"],
+    "tags": [
+        "The Royal Collection",
+        "Grand Tourer"
+    ],
     "isPrize": false,
-
     "weight": 1705,
     "gc": "Low",
     "seatCount": 2,
@@ -21,34 +23,24 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 90.91,
-    "ola": 90.00,
+    "ola": 90,
     "description": "Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/852108706446835733/DB11V8New.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/852109156805902376/db11V8.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/852109165354024960/db11V8333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/852109174200205392/db11V8666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/852109202058641408/db11V8996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/852109194504437760/db11V8969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/852109182500864010/db11V8699.png",
-
     "333TopSpeed": 191,
     "3330to60": 3.8,
     "333Handling": 89,
-
     "666TopSpeed": 194,
     "6660to60": 3.6,
     "666Handling": 92,
-
     "996TopSpeed": 196,
     "9960to60": 3.4,
     "996Handling": 92,
-
     "969TopSpeed": 196,
     "9690to60": 3.6,
     "969Handling": 95,
-
     "699TopSpeed": 194,
     "6990to60": 3.4,
-    "699Handling": 95
+    "699Handling": 95,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

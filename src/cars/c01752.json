@@ -9,9 +9,11 @@
     "handling": 70,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Eco-Friendly","The Japanese Odyssey"],
+    "tags": [
+        "Eco-Friendly",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1573,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +25,22 @@
     "mra": 33.33,
     "ola": 74.31,
     "description": "The previous Leaf looked like a squished froggy, so the second generation completely changed its styling to look more in line with the make's other vehicles. Card by Keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/865585035348672532/nissan_leaf_new.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/861145509800443904/lef_new_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/861145513372680212/lef_new_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/861145519823912970/lef_new_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/861145533024043016/lef_new_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/861145530143211550/lef_new_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/861145524727840818/lef_new_699.jpg",
-
     "333TopSpeed": 98,
     "3330to60": 7.3,
     "333Handling": 72,
-
     "666TopSpeed": 103,
     "6660to60": 6.9,
     "666Handling": 75,
-
     "996TopSpeed": 109,
     "9960to60": 6.5,
     "996Handling": 75,
-
     "969TopSpeed": 109,
     "9690to60": 6.9,
     "969Handling": 78,
-
     "699TopSpeed": 103,
     "6990to60": 6.5,
-    "699Handling": 78
+    "699Handling": 78,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

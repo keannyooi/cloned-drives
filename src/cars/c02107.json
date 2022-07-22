@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1195,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 56.3,
     "ola": 69.74,
     "description": "Card by Olimato.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/945198845346865202/325I.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/945198908622131281/325i_stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/945198950087032872/325i_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/945198959591305246/325i_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/945198993837809764/325i_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/945198983758884874/325i_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/945198974858584074/325i_699.png",
-
     "333TopSpeed": 132,
     "3330to60": 7.2,
     "333Handling": 74,
-
     "666TopSpeed": 136,
     "6660to60": 6.8,
     "666Handling": 77,
-
     "996TopSpeed": 140,
     "9960to60": 6.5,
     "996Handling": 77,
-
     "969TopSpeed": 140,
     "9690to60": 6.8,
     "969Handling": 80,
-
     "699TopSpeed": 136,
     "6990to60": 6.5,
-    "699Handling": 80
+    "699Handling": 80,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

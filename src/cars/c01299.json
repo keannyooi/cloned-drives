@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1585,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 66.67,
     "ola": 72.41,
     "description": "Maybe just slap a 2JZ inside and its no different from a supra. Card by Macan.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/827936159266504734/Camry_XSE_V6_18.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/827936249553092628/CamryXSEV6.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/827936253751197706/CamryXSEV6-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/827936258881355810/CamryXSEV6-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/827936278653829185/CamryXSEV6-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/827936272110321714/CamryXSEV6-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/827936266506469386/CamryXSEV6-699.png",
-
     "333TopSpeed": 140,
     "3330to60": 5.5,
     "333Handling": 79,
-
     "666TopSpeed": 144,
-    "6660to60": 5.2, 
+    "6660to60": 5.2,
     "666Handling": 81,
-
     "996TopSpeed": 147,
     "9960to60": 4.9,
     "996Handling": 81,
-
     "969TopSpeed": 147,
     "9690to60": 5.2,
     "969Handling": 84,
-
     "699TopSpeed": 144,
     "6990to60": 4.9,
-    "699Handling": 84
+    "699Handling": 84,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

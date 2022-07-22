@@ -9,13 +9,13 @@
     "handling": 68,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
-
     "weight": 1250,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
@@ -24,33 +24,22 @@
     "mra": 25.25,
     "ola": 57.81,
     "description": "A mix of 4388 cars with some off-road capabilities. Card by Andu",
-
-
     "card": "https://cdn.discordapp.com/attachments/812062652917481533/866588921004425226/UrbanCru.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/897035669057179648/UrbanC.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/897035689999339540/UrbanC-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/897035702477422602/UrbanC-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/897035718713552906/UrbanC-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/897035731996913674/UrbanC-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/897035743619334204/UrbanC-699.png",
-
     "333TopSpeed": 113,
     "3330to60": 12.2,
     "333Handling": 68,
-
     "666TopSpeed": 118,
-    "6660to60": 11.5, 
+    "6660to60": 11.5,
     "666Handling": 70,
-
     "996TopSpeed": 122,
     "9960to60": 10.9,
     "996Handling": 70,
-
     "969TopSpeed": 122,
     "9690to60": 11.5,
     "969Handling": 73,
-
     "699TopSpeed": 118,
     "6990to60": 10.9,
-    "699Handling": 73
+    "699Handling": 73,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

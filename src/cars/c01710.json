@@ -9,9 +9,11 @@
     "handling": 85,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Street Racer","The Japanese Odyssey"],
+    "tags": [
+        "Street Racer",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1520,
     "gc": "Low",
     "seatCount": 4,
@@ -23,32 +25,22 @@
     "mra": 76.64,
     "ola": 83.81,
     "description": "The only factory upgrade for the Z in the US. Still could be worse. Card by Keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/869499093364383765/nissan_350z_nismo.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/869212219295027210/350z_nismo_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/869212223615139891/350z_nismo_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/869212227780100127/350z_nismo_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/869212237955485706/350z_nismo_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/869212234302246962/350z_nismo_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/869212231265583115/350z_nismo_699.jpg",
-
     "333TopSpeed": 158,
-    "3330to60": 5.0,
+    "3330to60": 5,
     "333Handling": 88,
-
     "666TopSpeed": 162,
     "6660to60": 4.8,
     "666Handling": 91,
-
     "996TopSpeed": 165,
     "9960to60": 4.5,
     "996Handling": 91,
-
     "969TopSpeed": 165,
     "9690to60": 4.8,
     "969Handling": 94,
-
     "699TopSpeed": 162,
     "6990to60": 4.5,
-    "699Handling": 94
+    "699Handling": 94,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

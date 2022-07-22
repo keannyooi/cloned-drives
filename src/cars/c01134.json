@@ -1,6 +1,9 @@
-﻿{
+{
     "rq": 35,
-    "make": ["Range Rover", "Land Rover"],
+    "make": [
+        "Range Rover",
+        "Land Rover"
+    ],
     "model": "County",
     "modelYear": 1989,
     "country": "GB",
@@ -11,7 +14,6 @@
     "tyreType": "Off-Road",
     "tags": [],
     "isPrize": false,
-
     "weight": 2074,
     "gc": "High",
     "seatCount": 5,
@@ -21,34 +23,24 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 38.54,
-    "ola": 65.20,
+    "ola": 65.2,
     "description": "The only Hors in cloned drives. RIP Datsun Hors. Card by Havvy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/826071562457317416/hors.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826073012028964904/hors_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826073019701002250/hors_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826073023454904320/hors_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826073056672874536/hors_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826073047677009940/hors_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826073036180422686/hors_699.jpg",
-
     "333TopSpeed": 113,
     "3330to60": 10.8,
     "333Handling": 61,
-
     "666TopSpeed": 118,
-    "6660to60": 10.3, 
+    "6660to60": 10.3,
     "666Handling": 63,
-
     "996TopSpeed": 122,
     "9960to60": 9.7,
     "996Handling": 63,
-
     "969TopSpeed": 122,
     "9690to60": 10.3,
     "969Handling": 65,
-
     "699TopSpeed": 118,
     "6990to60": 9.7,
-    "699Handling": 65
+    "699Handling": 65,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

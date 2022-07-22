@@ -5,13 +5,15 @@
     "modelYear": 1929,
     "country": "DE",
     "topSpeed": 114,
-    "0to60": 14.0,
+    "0to60": 14,
     "handling": 59,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Ultra Expensive", "Unique"],
+    "tags": [
+        "Ultra Expensive",
+        "Unique"
+    ],
     "isPrize": false,
-
     "weight": 1690,
     "gc": "Medium",
     "seatCount": 2,
@@ -20,35 +22,25 @@
     "abs": false,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 35.90,
+    "mra": 35.9,
     "ola": 58.57,
     "description": "A timeless classic which is highly sought after for its rarity and engineering, even for thieves in a certain manga series. Card by bnuuy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/823515654358827009/710SSK.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823515770679328796/ssk.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823515776689897502/ssk333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823515783690321960/ssk666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823515805630988319/ssk996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823515797803499601/ssk969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823515790773846016/ssk699.png",
-
     "333TopSpeed": 119,
     "3330to60": 13.3,
     "333Handling": 61,
-
     "666TopSpeed": 123,
     "6660to60": 12.6,
     "666Handling": 63,
-
     "996TopSpeed": 128,
     "9960to60": 11.9,
     "996Handling": 63,
-
     "969TopSpeed": 128,
     "9690to60": 12.6,
     "969Handling": 65,
-
     "699TopSpeed": 123,
     "6990to60": 11.9,
-    "699Handling": 65
+    "699Handling": 65,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

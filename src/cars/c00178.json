@@ -9,9 +9,10 @@
     "handling": 90,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Street Racer"],
+    "tags": [
+        "Street Racer"
+    ],
     "isPrize": false,
-
     "weight": 1592,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +24,22 @@
     "mra": 67.69,
     "ola": 82.26,
     "description": "The small BMW sports car worth its price tag. Card by Havvy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/826450541625868358/M22016.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826450690599288842/2015M2.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826450700644778014/2015M2333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826450709729640478/2015M2666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826450736518529084/2015M2996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826450728981233674/2015M2969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826450721498726430/2015M2699.png",
-
     "333TopSpeed": 170,
-    "3330to60": 4.0,
+    "3330to60": 4,
     "333Handling": 93,
-
     "666TopSpeed": 173,
     "6660to60": 3.8,
     "666Handling": 96,
-    
     "996TopSpeed": 176,
     "9960to60": 3.6,
     "996Handling": 96,
-
     "969TopSpeed": 176,
     "9690to60": 3.8,
     "969Handling": 100,
-
     "699TopSpeed": 173,
     "6990to60": 3.6,
-    "699Handling": 100
+    "699Handling": 100,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

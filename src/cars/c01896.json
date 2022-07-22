@@ -9,13 +9,13 @@
     "handling": 68,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
-
     "weight": 965,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Sedan",
     "tcs": false,
     "abs": false,
@@ -24,33 +24,22 @@
     "mra": 41.92,
     "ola": 63.04,
     "description": "Echoing through a canyon of obsolescence. Card by Andu",
-
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/866935185512464384/EchoLe.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/866936022167453696/Echo.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/866936031549587476/Echo-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/866936058837860362/Echo-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/866936060553592832/Echo-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/866936090639335454/Echo-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/866936109295861780/Echo-699.png",
-
     "333TopSpeed": 117,
     "3330to60": 8.2,
     "333Handling": 70,
-
     "666TopSpeed": 121,
-    "6660to60": 7.7, 
+    "6660to60": 7.7,
     "666Handling": 72,
-
     "996TopSpeed": 126,
     "9960to60": 7.3,
     "996Handling": 72,
-
     "969TopSpeed": 126,
     "9690to60": 7.7,
     "969Handling": 75,
-
     "699TopSpeed": 121,
     "6990to60": 7.3,
-    "699Handling": 75
+    "699Handling": 75,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

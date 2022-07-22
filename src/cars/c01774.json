@@ -9,9 +9,10 @@
     "handling": 73,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1330,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +24,22 @@
     "mra": 55.92,
     "ola": 77.65,
     "description": "Mona Lisa Cabrio!. Card by Havvy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/866727068761587722/NissanSilviaVarietta.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/866727139646373908/variet_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/866727143702921247/variet_111.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/866727146696867860/variet_222.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/866727162487636008/variet_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/866727156826112010/variet_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/866727152267690004/variet_233.png",
-
     "333TopSpeed": 117,
     "3330to60": 8.1,
     "333Handling": 75,
-
     "666TopSpeed": 121,
     "6660to60": 7.7,
     "666Handling": 78,
-
     "996TopSpeed": 126,
     "9960to60": 7.2,
     "996Handling": 78,
-
     "969TopSpeed": 126,
     "9690to60": 7.7,
     "969Handling": 81,
-
     "699TopSpeed": 121,
     "6990to60": 7.2,
-    "699Handling": 81
+    "699Handling": 81,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

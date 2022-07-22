@@ -9,9 +9,10 @@
     "handling": 77,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1664,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 65.59,
     "ola": 78.69,
     "description": "The OG 'Max' would cry if it saw the existential crisis the 2009 version of itself was going through. Card by McNuggets.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/914264322463645746/max_sv.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/914263822066397254/maxima_2009_stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/914263906401259580/maxima_2009_1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/914263932053630998/maxima_2009_2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/914264002236919808/maxima_2009_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/914263977645715536/maxima_2009_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/914263955394936842/maxima_2009_233.png",
-
     "333TopSpeed": 136,
     "3330to60": 5.8,
     "333Handling": 80,
-
     "666TopSpeed": 140,
     "6660to60": 5.5,
     "666Handling": 82,
-
     "996TopSpeed": 144,
     "9960to60": 5.2,
     "996Handling": 82,
-
     "969TopSpeed": 144,
     "9690to60": 5.5,
     "969Handling": 85,
-
     "699TopSpeed": 140,
     "6990to60": 5.2,
-    "699Handling": 85
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

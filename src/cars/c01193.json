@@ -9,9 +9,11 @@
     "handling": 87,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Street Racer", "Hot Hatch"],
+    "tags": [
+        "Street Racer",
+        "Hot Hatch"
+    ],
     "isPrize": false,
-
     "weight": 1505,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +25,22 @@
     "mra": 56.25,
     "ola": 72.22,
     "description": "Cosworth is well known for their engineering prowess and with this Subaru, they have produced one of the most powerful Subarus ever made. Card by Spence",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/846484438954410004/image0.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/846484495800729650/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/846484512347127818/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/846484529455693874/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/846484546743828490/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/846484562170740776/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/846484577311653928/image0.jpg",
-
     "333TopSpeed": 158,
     "3330to60": 3.4,
     "333Handling": 90,
-
     "666TopSpeed": 162,
     "6660to60": 3.2,
     "666Handling": 93,
-
     "699TopSpeed": 162,
     "6990to60": 3.1,
     "699Handling": 97,
-
     "969TopSpeed": 165,
     "9690to60": 3.2,
     "969Handling": 97,
-
     "996TopSpeed": 165,
     "9960to60": 3.1,
-    "996Handling": 93
+    "996Handling": 93,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

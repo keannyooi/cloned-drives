@@ -9,46 +9,37 @@
     "handling": 65,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Style Icon"],
+    "tags": [
+        "Style Icon"
+    ],
     "isPrize": false,
-
     "weight": 820,
     "gc": "Medium",
-    "seatCount":2,
+    "seatCount": 2,
     "bodyStyle": "Coupe",
     "tcs": true,
     "abs": true,
     "enginePos": "Rear",
     "fuelType": "Petrol",
     "mra": 15.96,
-    "ola": 65.90,
+    "ola": 65.9,
     "description": "If swatch was a car. Card by Andu",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/865589029578997800/Smartnotcaps.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/938472852179521556/smart.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/938472872400285726/smart1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/938472882303037540/smart2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/938472904738340994/smart996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/938472916650197042/smart969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/938472933196697671/smart699.png",
-
     "333TopSpeed": 96,
     "3330to60": 12.4,
     "333Handling": 67,
-
     "666TopSpeed": 102,
-    "6660to60": 11.8, 
+    "6660to60": 11.8,
     "666Handling": 69,
-
     "996TopSpeed": 107,
     "9960to60": 11.1,
     "996Handling": 69,
-
     "969TopSpeed": 107,
     "9690to60": 11.8,
     "969Handling": 72,
-
     "699TopSpeed": 102,
     "6990to60": 11.1,
-    "699Handling": 72
+    "699Handling": 72,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

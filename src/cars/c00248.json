@@ -9,9 +9,11 @@
     "handling": 89,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Track Day", "The Royal Collection"],
+    "tags": [
+        "Track Day",
+        "The Royal Collection"
+    ],
     "isPrize": false,
-
     "weight": 550,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +25,22 @@
     "mra": 71.64,
     "ola": 83.33,
     "description": "Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/848253705614000148/SevenSVR175.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/848254138055131157/svroadsport175thingy.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/848254142945951774/svroadsport175thingy333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/848254149929861130/svroadsport175thingy666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/848254190827601941/svroadsport175thingy996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/848254182486048768/svroadsport175thingy969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/848254163104432128/svroadsport175thingy699.png",
-
     "333TopSpeed": 142,
     "3330to60": 4.6,
     "333Handling": 92,
-
     "666TopSpeed": 146,
     "6660to60": 4.3,
     "666Handling": 95,
-
     "996TopSpeed": 149,
     "9960to60": 4.1,
     "996Handling": 95,
-
     "969TopSpeed": 149,
     "9690to60": 4.3,
     "969Handling": 99,
-
     "699TopSpeed": 146,
     "6990to60": 4.1,
-    "699Handling": 99
+    "699Handling": 99,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

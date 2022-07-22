@@ -9,9 +9,11 @@
     "handling": 86,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Silver Screen", "Grand Tourer"],
+    "tags": [
+        "Silver Screen",
+        "Grand Tourer"
+    ],
     "isPrize": false,
-
     "weight": 1885,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +25,22 @@
     "mra": 89.29,
     "ola": 101.33,
     "description": "The Aston that marked a new chapter. Card by Havvy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/821034187905433670/AstonMartinDB11.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821034237662330900/000_db12.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821034242468347934/111_db12.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821034254632484884/222_db12.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821034274592391228/332_db12.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821034269529997342/323_db12.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821034266166820925/233_db12.png",
-
     "333TopSpeed": 203,
     "3330to60": 3.6,
     "333Handling": 89,
-
     "666TopSpeed": 205,
     "6660to60": 3.4,
     "666Handling": 92,
-
-	"996TopSpeed": 208,
+    "996TopSpeed": 208,
     "9960to60": 3.2,
     "996Handling": 92,
-
-	"969TopSpeed": 208,
+    "969TopSpeed": 208,
     "9690to60": 3.4,
     "969Handling": 95,
-
     "699TopSpeed": 205,
     "6990to60": 3.2,
-    "699Handling": 95
+    "699Handling": 95,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

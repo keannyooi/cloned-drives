@@ -9,9 +9,11 @@
     "handling": 88,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Supercar", "Eargasm"],
+    "tags": [
+        "Supercar",
+        "Eargasm"
+    ],
     "isPrize": true,
-
     "weight": 1510,
     "gc": "Medium",
     "seatCount": 2,
@@ -23,32 +25,22 @@
     "mra": 69.36,
     "ola": 82.78,
     "description": "It's an Alfa like no other, and not just because it's built by Maserati... Card by Havvy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820717412458037268/AlfaRomeo8CCompetizione.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820717460377305158/000_8c.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820717472863748096/111_8c.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820717476073439322/222_8c.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820717490517835796/332_8c.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820717485535264768/323_8c.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820717481697607742/233_8c.png",
-
     "333TopSpeed": 186,
     "3330to60": 4.1,
     "333Handling": 91,
-
     "666TopSpeed": 189,
     "6660to60": 3.9,
     "666Handling": 94,
-
-	"996TopSpeed": 192,
+    "996TopSpeed": 192,
     "9960to60": 3.7,
     "996Handling": 94,
-
-	"969TopSpeed": 192,
+    "969TopSpeed": 192,
     "9690to60": 3.9,
     "969Handling": 98,
-
     "699TopSpeed": 189,
     "6990to60": 3.7,
-    "699Handling": 98
+    "699Handling": 98,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

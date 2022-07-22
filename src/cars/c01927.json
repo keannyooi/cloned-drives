@@ -9,9 +9,11 @@
     "handling": 77,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Hot Hatch","The Japanese Odyssey"],
+    "tags": [
+        "Hot Hatch",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1070,
     "gc": "Low",
     "seatCount": 5,
@@ -23,32 +25,22 @@
     "mra": 60.16,
     "ola": 80.52,
     "description": "Japan only and limited to just 200 copies, this Yaris was a insight what to expect from GRMN. Card by Connor",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/963171480944910446/E.ToyotaVitzTurboGRMN.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/963171560242429962/YarisTurbo.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/963171585194344579/YarisTurbo-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/963171606333636648/YarisTurbo-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/963171668916854814/YarisTurbo-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/963171649933422612/YarisTurbo-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/963171625497411614/YarisTurbo-699.png",
-
     "333TopSpeed": 117,
     "3330to60": 7.3,
     "333Handling": 80,
-
     "666TopSpeed": 121,
     "6660to60": 6.9,
     "666Handling": 82,
-
     "996TopSpeed": 126,
     "9960to60": 6.5,
     "996Handling": 82,
-
     "969TopSpeed": 126,
     "9690to60": 6.9,
     "969Handling": 85,
-
     "699TopSpeed": 121,
     "6990to60": 6.5,
-    "699Handling": 85
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

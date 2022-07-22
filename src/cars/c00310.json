@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1378,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +22,22 @@
     "mra": 55.32,
     "ola": 74.36,
     "description": "The Conquest, which is definitely not a rebadged Japanese sports car (satire intended), was America's answer to the rise of Japanese sports cars, and it would beat the (insert Japanese text) out of them. Card by Keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/856532840311947294/chrysler_conquest_tsi.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/856532256205963294/conquest_tsi_000.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/856532259922247690/conquest_tsi_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/856532264732065792/conquest_tsi_666.jpg",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/856532278100230155/conquest_tsi_996.jpg",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/856532272740171876/conquest_tsi_969.jpg",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/856532270617591848/conquest_tsi_699.jpg",
-
     "333TopSpeed": 131,
     "3330to60": 7.4,
     "333Handling": 74,
-
     "666TopSpeed": 135,
-    "6660to60": 7.0,
+    "6660to60": 7,
     "666Handling": 77,
-
     "996TopSpeed": 139,
     "9960to60": 6.6,
     "996Handling": 77,
-
     "969TopSpeed": 139,
-    "9690to60": 7.0,
+    "9690to60": 7,
     "969Handling": 80,
-
     "699TopSpeed": 135,
     "6990to60": 6.6,
-    "699Handling": 80
+    "699Handling": 80,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

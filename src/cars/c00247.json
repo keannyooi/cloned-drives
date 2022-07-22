@@ -9,9 +9,11 @@
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Servers Choice", "Track Day"],
+    "tags": [
+        "Servers Choice",
+        "Track Day"
+    ],
     "isPrize": false,
-
     "weight": 638,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +25,22 @@
     "mra": 44.59,
     "ola": 76.62,
     "description": "MotorSport Magazine called it a 'recreational grin machine for the Good Lord'. Card by havvy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/826701130070884372/image0.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826701276707684384/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826701358085701652/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826701376260014099/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826701453040418836/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826701401044156416/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826701426901254204/image0.jpg",
-
     "333TopSpeed": 124,
     "3330to60": 4.9,
     "333Handling": 94,
-
     "666TopSpeed": 129,
     "6660to60": 4.7,
     "666Handling": 97,
-
-	  "996TopSpeed": 133,
+    "996TopSpeed": 133,
     "9960to60": 4.4,
     "996Handling": 97,
-
-	  "969TopSpeed": 133,
+    "969TopSpeed": 133,
     "9690to60": 4.7,
     "969Handling": 101,
-
     "699TopSpeed": 129,
     "6990to60": 4.4,
-    "699Handling": 101
+    "699Handling": 101,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

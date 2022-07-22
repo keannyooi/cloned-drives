@@ -1,6 +1,9 @@
 {
     "rq": 42,
-    "make": ["Abarth", "Fiat"],
+    "make": [
+        "Abarth",
+        "Fiat"
+    ],
     "model": "124 GT",
     "modelYear": 2018,
     "country": "IT",
@@ -11,7 +14,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1094,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +25,22 @@
     "mra": 55.75,
     "ola": 66.67,
     "description": "Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/930222611366051881/barth124gt.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/930223428332564500/124SpidGT.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/930223434359795733/124SpidGT333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/930223441771134976/124SpidGT666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/930223465557032960/124SpidGT996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/930223456610549841/124SpidGT969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/930223450054860840/124SpidGT699.png",
-
     "333TopSpeed": 148,
     "3330to60": 6.3,
     "333Handling": 86,
-
     "666TopSpeed": 151,
     "6660to60": 5.9,
     "666Handling": 88,
-
     "996TopSpeed": 155,
     "9960to60": 5.6,
     "996Handling": 88,
-
     "969TopSpeed": 155,
     "9690to60": 5.9,
     "969Handling": 92,
-
     "699TopSpeed": 151,
     "6990to60": 5.6,
-    "699Handling": 92
+    "699Handling": 92,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -11,7 +11,6 @@
     "tyreType": "Off-Road",
     "tags": [],
     "isPrize": false,
-
     "weight": 2347,
     "gc": "High",
     "seatCount": 4,
@@ -23,32 +22,22 @@
     "mra": 53.13,
     "ola": 65.88,
     "description": "If you ever need to take a sofa up the Rubicon, here's your car. By Dodgedemon",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/867385116271575080/mojave.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/827085472043630612/mojave_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/827085480230518834/mojave_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/827085485373390878/mojave_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/827085525164621854/mojave_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/827085502363598908/mojave_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/827085493140324392/mojave_699.jpg",
-
     "333TopSpeed": 102,
     "3330to60": 8.1,
     "333Handling": 67,
-
     "666TopSpeed": 108,
     "6660to60": 7.7,
     "666Handling": 69,
-
-	"996TopSpeed": 113,
+    "996TopSpeed": 113,
     "9960to60": 7.2,
     "996Handling": 69,
-
     "969TopSpeed": 113,
     "9690to60": 7.7,
     "969Handling": 72,
-
-	"699TopSpeed": 108,
+    "699TopSpeed": 108,
     "6990to60": 7.2,
-    "699Handling": 72
+    "699Handling": 72,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

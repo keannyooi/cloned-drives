@@ -9,9 +9,13 @@
     "handling": 85,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": ["Ultra Expensive", "Unique", "Motorsport", "Hot Hatch"],
+    "tags": [
+        "Ultra Expensive",
+        "Unique",
+        "Motorsport",
+        "Hot Hatch"
+    ],
     "isPrize": false,
-
     "weight": 940,
     "gc": "Medium",
     "seatCount": 2,
@@ -23,32 +27,22 @@
     "mra": 68.63,
     "ola": 91.43,
     "description": "Peugeot's main answer to the mighty Audi Quattro that dominated the years prior, with its shorter wheelbase and mid-engine placement. Card by Spence.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/984468615950647377/unknown.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/984488498553827369/Peugeot205Turbo16GroupBStock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/984488515146494032/Peugeot205Turbo16GroupB1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/984488523958726726/Peugeot205Turbo16GroupB2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/984488563590701096/Peugeot205Turbo16GroupB996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/984488549674025040/Peugeot205Turbo16GroupB969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/984488536499695657/Peugeot205Turbo16GroupB699.png",
-
     "333TopSpeed": 135,
     "3330to60": 3.1,
     "333Handling": 88,
-
     "666TopSpeed": 139,
-    "6660to60": 3.0,
+    "6660to60": 3,
     "666Handling": 91,
-
     "996TopSpeed": 143,
     "9960to60": 2.8,
     "996Handling": 91,
-
     "969TopSpeed": 143,
-    "9690to60": 3.0,
+    "9690to60": 3,
     "969Handling": 94,
-
     "699TopSpeed": 139,
     "6990to60": 2.8,
-    "699Handling": 94
+    "699Handling": 94,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

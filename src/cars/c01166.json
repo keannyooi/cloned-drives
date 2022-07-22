@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1397,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +22,22 @@
     "mra": 58.06,
     "ola": 74.07,
     "description": "A fake Opel. Card by Spence.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/826467693447479306/saturnRedthingy.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/827047057645633546/sky_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/827047070782193674/sky_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/827047077804113940/sky_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/827047114101489684/sky_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/827047103917850634/sky_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/827047094111305798/sky_699.jpg",
-
     "333TopSpeed": 146,
     "3330to60": 5.1,
     "333Handling": 81,
-
     "666TopSpeed": 149,
-    "6660to60": 4.9, 
+    "6660to60": 4.9,
     "666Handling": 83,
-
     "996TopSpeed": 153,
     "9960to60": 4.6,
     "996Handling": 83,
-
     "969TopSpeed": 153,
     "9690to60": 4.9,
     "969Handling": 87,
-
     "699TopSpeed": 149,
     "6990to60": 4.6,
-    "699Handling": 87
+    "699Handling": 87,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

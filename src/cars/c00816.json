@@ -9,9 +9,14 @@
     "handling": 99,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": ["Track Day", "Hypercar", "Ultra Expensive", "The Royal Collection", "Unique"],
+    "tags": [
+        "Track Day",
+        "Hypercar",
+        "Ultra Expensive",
+        "The Royal Collection",
+        "Unique"
+    ],
     "isPrize": true,
-
     "weight": 1187,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +28,22 @@
     "mra": 112.5,
     "ola": 86.73,
     "description": "A Senna built for taking corners at ridiculously high speeds. Card by Exist",
-
     "card": "https://media.discordapp.net/attachments/819199720249360384/828795000363679794/CD_McLaren_Senna_GTR.png?width=1410&height=878",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/828795086237859861/CD_McLaren_Senna_GTR_000.png?width=1410&height=878",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/828795094227484692/CD_McLaren_Senna_GTR_333.png?width=1410&height=878",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/828795099379007579/CD_McLaren_Senna_GTR_666.png?width=1410&height=878",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/828795117099417600/CD_McLaren_Senna_GTR_996.png?width=1410&height=878",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/828795108001579059/CD_McLaren_Senna_GTR_969.png?width=1410&height=878",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/828795103338168320/CD_McLaren_Senna_GTR_699.png?width=1410&height=878",
-
     "333TopSpeed": 203,
     "3330to60": 2.6,
     "333Handling": 102,
-
     "666TopSpeed": 205,
     "6660to60": 2.4,
     "666Handling": 106,
-
     "996TopSpeed": 208,
     "9960to60": 2.3,
     "996Handling": 106,
-
     "969TopSpeed": 208,
     "9690to60": 2.4,
     "969Handling": 110,
-
     "699TopSpeed": 205,
     "6990to60": 2.3,
-    "699Handling": 110
+    "699Handling": 110,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

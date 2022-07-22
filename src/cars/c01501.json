@@ -5,13 +5,14 @@
     "modelYear": 1951,
     "country": "AU",
     "topSpeed": 83,
-    "0to60": 19.0,
+    "0to60": 19,
     "handling": 60,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Rest of The World"],
+    "tags": [
+        "Rest of The World"
+    ],
     "isPrize": false,
-
     "weight": 985,
     "gc": "Medium",
     "seatCount": 3,
@@ -23,32 +24,22 @@
     "mra": 11.11,
     "ola": 63.16,
     "description": "Card by Exist.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/865586956616335380/CD_Holden_50-2106_Ute.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/849639027384909864/CD_Holden_50-2106_Ute_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/849639036623781908/CD_Holden_50-2106_Ute_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/849639042357919764/CD_Holden_50-2106_Ute_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/849639061022965760/CD_Holden_50-2106_Ute_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/849639055256059945/CD_Holden_50-2106_Ute_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/849639049567797258/CD_Holden_50-2106_Ute_699.png",
-
     "333TopSpeed": 89,
     "3330to60": 18.1,
     "333Handling": 62,
-
     "666TopSpeed": 96,
     "6660to60": 17.1,
     "666Handling": 64,
-
     "996TopSpeed": 102,
     "9960to60": 16.2,
     "996Handling": 64,
-
     "969TopSpeed": 102,
     "9690to60": 17.1,
     "969Handling": 67,
-
     "699TopSpeed": 96,
     "6990to60": 16.2,
-    "699Handling": 67
+    "699Handling": 67,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

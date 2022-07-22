@@ -9,9 +9,11 @@
     "handling": 90,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Concept", "Unique"],
+    "tags": [
+        "Concept",
+        "Unique"
+    ],
     "isPrize": false,
-
     "weight": 1000,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +25,22 @@
     "mra": 67.21,
     "ola": 92.68,
     "description": "Card by Olimato.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/947751012658188348/nazca_c2.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/947751066815062046/c2_stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/947751083424510003/c2_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/947751097957765170/c2_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/947751135052177458/c2_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/947751126814564382/c2_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/947751110049955891/c2_699.png",
-
     "333TopSpeed": 180,
     "3330to60": 3.9,
     "333Handling": 93,
-
     "666TopSpeed": 183,
     "6660to60": 3.7,
     "666Handling": 96,
-
     "996TopSpeed": 186,
     "9960to60": 3.5,
     "996Handling": 96,
-
     "969TopSpeed": 186,
     "9690to60": 3.7,
     "969Handling": 100,
-
     "699TopSpeed": 183,
     "6990to60": 3.5,
-    "699Handling": 100
+    "699Handling": 100,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

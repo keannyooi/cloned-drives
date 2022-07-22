@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1300,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +22,22 @@
     "mra": 63.51,
     "ola": 85.11,
     "description": "Ruf technicians performed a heart transplant by substituting the stock powerplant with a Ruf massaged 3.4L flat 6 sourced from the roadster's big brother. Card by Bnuuy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819944657050927135/3400S.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819945002556719124/Ruf.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819945010061115422/ruf333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819945021230940241/ruf666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819945048287215686/ruf996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819945038712406036/ruf969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819945029987729469/ruf699.png",
-
     "333TopSpeed": 178,
     "3330to60": 4.8,
     "333Handling": 84,
-
     "666TopSpeed": 181,
-    "6660to60": 4.6, 
+    "6660to60": 4.6,
     "666Handling": 86,
-
     "996TopSpeed": 184,
     "9960to60": 4.3,
     "996Handling": 86,
-
     "969TopSpeed": 184,
     "9690to60": 4.6,
     "969Handling": 90,
-
     "699TopSpeed": 181,
     "6990to60": 4.3,
-    "699Handling": 90
+    "699Handling": 90,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

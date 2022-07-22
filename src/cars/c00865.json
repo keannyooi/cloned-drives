@@ -9,9 +9,10 @@
     "handling": 80,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": ["Oddity"],
+    "tags": [
+        "Oddity"
+    ],
     "isPrize": false,
-
     "weight": 2065,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 69.11,
     "ola": 72.34,
     "description": "It'll never sell as well as a GLC but it's the superior car in our hearts. Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/958785525253279794/E450all.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/958781366772854864/E450All.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/958781373815074886/E450All1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/958781379406098602/E450All2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/958781404580290590/E450All996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/958781395839381575/E450All969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/958781385856942120/E450All699.png",
-
     "333TopSpeed": 158,
     "3330to60": 4.5,
     "333Handling": 83,
-
     "666TopSpeed": 162,
     "6660to60": 4.2,
     "666Handling": 85,
-
     "996TopSpeed": 165,
-    "9960to60": 4.0,
+    "9960to60": 4,
     "996Handling": 85,
-
     "969TopSpeed": 165,
     "9690to60": 4.2,
     "969Handling": 89,
-
     "699TopSpeed": 162,
-    "6990to60": 4.0,
-    "699Handling": 89
+    "6990to60": 4,
+    "699Handling": 89,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

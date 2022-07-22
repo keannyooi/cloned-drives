@@ -9,9 +9,10 @@
     "handling": 73,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1585,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 62.38,
     "ola": 69.84,
     "description": "Grandpa can now dust hot-hatches in stop light drags and be home in time for Bingo Night in style. Card by McNuggets.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/882731998379139142/avalon_11.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/882728103179350098/avalon_limited_stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/882728150080061450/avalon_limited_1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/882728164277768232/avalon_limited_2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/882728203335114773/avalon_limited_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/882728190714462248/avalon_limited_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/882728178735521812/avalon_limited_233.png",
-
     "333TopSpeed": 139,
     "3330to60": 6.1,
     "333Handling": 75,
-
     "666TopSpeed": 143,
     "6660to60": 5.8,
     "666Handling": 78,
-
     "996TopSpeed": 147,
     "9960to60": 5.4,
     "996Handling": 78,
-
     "969TopSpeed": 147,
     "9690to60": 5.8,
     "969Handling": 81,
-
     "699TopSpeed": 143,
     "6990to60": 5.4,
-    "699Handling": 81
+    "699Handling": 81,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

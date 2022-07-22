@@ -9,9 +9,12 @@
     "handling": 97,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["HyperCar", "Ultra Expensive", "The Royal Collection"],
+    "tags": [
+        "HyperCar",
+        "Ultra Expensive",
+        "The Royal Collection"
+    ],
     "isPrize": false,
-
     "weight": 1374,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +26,22 @@
     "mra": 121.74,
     "ola": 94.32,
     "description": "A Hyper McLaren with a legendary name. Card by Exist",
-
     "card": "https://media.discordapp.net/attachments/819199720249360384/828561042937348116/CD_McLaren_Senna.png?width=1410&height=878",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/828561166439546880/CD_McLaren_Senna_000.png?width=1410&height=878",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/828561170403164170/CD_McLaren_Senna_333.png?width=1410&height=878",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/828561177474236446/CD_McLaren_Senna_666.png?width=1410&height=878",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/828561200324935721/CD_McLaren_Senna_996.png?width=1410&height=878",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/828561189343854623/CD_McLaren_Senna_969.png?width=1410&height=878",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/828561185778827305/CD_McLaren_Senna_699.png?width=1410&height=878",
-
     "333TopSpeed": 211,
     "3330to60": 2.7,
     "333Handling": 100,
-
     "666TopSpeed": 213,
     "6660to60": 2.5,
     "666Handling": 103,
-
     "996TopSpeed": 216,
     "9960to60": 2.4,
     "996Handling": 103,
-
     "969TopSpeed": 216,
     "9690to60": 2.5,
     "969Handling": 108,
-
     "699TopSpeed": 213,
     "6990to60": 2.4,
-    "699Handling": 108
+    "699Handling": 108,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

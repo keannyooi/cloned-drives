@@ -9,9 +9,11 @@
     "handling": 86,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": ["Motorsport", "Innovative"],
+    "tags": [
+        "Motorsport",
+        "Innovative"
+    ],
     "isPrize": true,
-
     "weight": 1200,
     "gc": "Medium",
     "seatCount": 2,
@@ -21,34 +23,24 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 75.61,
-    "ola": 96.30,
+    "ola": 96.3,
     "description": "The legendary rally winning Audi. Card by Havvy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/824653841915052052/audirally.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824654286793343016/S1Q.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824654292136099941/s1q333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824654298424016896/s1q666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824654321371054160/s1q996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824654314559111258/s1q969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824654307499966494/s1q699.png",
-
     "333TopSpeed": 141,
     "3330to60": 2.9,
     "333Handling": 89,
-
     "666TopSpeed": 145,
     "6660to60": 2.8,
     "666Handling": 92,
-
-	"996TopSpeed": 148,
+    "996TopSpeed": 148,
     "9960to60": 2.6,
     "996Handling": 92,
-
-	"969TopSpeed": 148,
+    "969TopSpeed": 148,
     "9690to60": 2.8,
     "969Handling": 95,
-
     "699TopSpeed": 145,
     "6990to60": 2.6,
-    "699Handling": 95
+    "699Handling": 95,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

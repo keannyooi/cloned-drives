@@ -9,9 +9,10 @@
     "handling": 71,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1689,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 66.98,
     "ola": 67.61,
     "description": "Subaru's mainstream sedan grows a little long in the tooth. Card by ChickenMcNuggets.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/828457631425232906/3.6ar.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/828452768603308062/3.6r_stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/828452813394542592/3.6r_1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/828452838673350726/3.6r_2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/828452905102737408/3.6r_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/828452881060462622/3.6r_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/828452861687889991/3.6r_233.png",
-
     "333TopSpeed": 143,
     "3330to60": 6.7,
     "333Handling": 73,
-
     "666TopSpeed": 146,
     "6660to60": 6.4,
     "666Handling": 76,
-
     "996TopSpeed": 150,
-    "9960to60": 6.0,
+    "9960to60": 6,
     "996Handling": 76,
-
     "969TopSpeed": 150,
     "9690to60": 6.4,
     "969Handling": 79,
-
     "699TopSpeed": 146,
-    "6990to60": 6.0,
-    "699Handling": 79
+    "6990to60": 6,
+    "699Handling": 79,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

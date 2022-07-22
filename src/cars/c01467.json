@@ -1,6 +1,9 @@
 {
     "rq": 75,
-    "make": ["TechArt", "Porsche"],
+    "make": [
+        "TechArt",
+        "Porsche"
+    ],
     "model": "GT Street XL",
     "modelYear": 2001,
     "country": "DE",
@@ -9,9 +12,10 @@
     "handling": 87,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Tuner"],
+    "tags": [
+        "Tuner"
+    ],
     "isPrize": false,
-
     "weight": 1580,
     "gc": "Low",
     "seatCount": 4,
@@ -23,32 +27,22 @@
     "mra": 88.99,
     "ola": 84.21,
     "description": "Card by Havvy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/828636121205964840/unknown.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/828636188994568242/996Techart_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/828636192605339688/996Techart_111.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/828636196519411732/996Techart_222.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/828636210175279144/996Techart_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/828636206031437874/996Techart_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/828636201476292628/996Techart_233.png",
-
     "333TopSpeed": 204,
     "3330to60": 3.6,
     "333Handling": 90,
-
     "666TopSpeed": 206,
     "6660to60": 3.4,
     "666Handling": 93,
-
     "996TopSpeed": 209,
     "9960to60": 3.2,
     "996Handling": 93,
-
     "969TopSpeed": 209,
     "9690to60": 3.4,
     "969Handling": 97,
-
     "699TopSpeed": 206,
     "6990to60": 3.2,
-    "699Handling": 97
+    "699Handling": 97,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -9,9 +9,10 @@
     "handling": 86,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Sleeper"],
+    "tags": [
+        "Sleeper"
+    ],
     "isPrize": false,
-
     "weight": 2047,
     "gc": "Low",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 87.23,
     "ola": 92.68,
     "description": "Card by Olimato.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/949419215406899221/m6_conv.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/949419307794841700/m6_conv_stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/949419329223548988/m6_conv_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/949419344327245896/m6_conv_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/949419374719164416/m6_conv_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/949419364065620029/m6_conv_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/949419350643859496/m6_conv_699.png",
-
     "333TopSpeed": 158,
     "3330to60": 3.9,
     "333Handling": 89,
-
     "666TopSpeed": 162,
     "6660to60": 3.7,
     "666Handling": 92,
-
     "996TopSpeed": 165,
     "9960to60": 3.5,
     "996Handling": 92,
-
     "969TopSpeed": 165,
     "9690to60": 3.7,
     "969Handling": 95,
-
     "699TopSpeed": 162,
     "6990to60": 3.5,
-    "699Handling": 95
+    "699Handling": 95,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

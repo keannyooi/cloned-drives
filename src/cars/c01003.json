@@ -5,13 +5,12 @@
     "modelYear": 2008,
     "country": "DE",
     "topSpeed": 155,
-    "0to60": 7.0,
+    "0to60": 7,
     "handling": 77,
     "driveType": "4WD",
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1853,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 64.22,
     "ola": 77.14,
     "description": "Powered by the same but detuned engine as in OPC, you will definetly get to where you're going. Card by Connor.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/858070662605438996/B.OpelInsigniaST28V6T4X4.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/858076327445528616/OpelInsigniaSTV6.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/858076338978947092/OpelInsigniaSTV6-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/858076350632296448/OpelInsigniaSTV6-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/858076385053507594/OpelInsigniaSTV6-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/858076371662405632/OpelInsigniaSTV6-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/858076360907948102/OpelInsigniaSTV6-699.png",
-
     "333TopSpeed": 158,
     "3330to60": 6.7,
     "333Handling": 80,
-
     "666TopSpeed": 162,
     "6660to60": 6.3,
     "666Handling": 82,
-
     "996TopSpeed": 165,
-    "9960to60": 6.0,
+    "9960to60": 6,
     "996Handling": 82,
-
     "969TopSpeed": 165,
     "9690to60": 6.3,
     "969Handling": 85,
-
     "699TopSpeed": 162,
-    "6990to60": 6.0,
-    "699Handling": 85
+    "6990to60": 6,
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

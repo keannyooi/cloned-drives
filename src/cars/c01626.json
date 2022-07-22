@@ -9,9 +9,11 @@
     "handling": 77,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Street Racer","The Japanese Odyssey"],
+    "tags": [
+        "Street Racer",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1020,
     "gc": "Medium",
     "seatCount": 4,
@@ -21,34 +23,24 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 54.24,
-    "ola": 75.00,
+    "ola": 75,
     "description": "The RX-7's first go with the mighty turbo wankel, for Japan only. Card by DodgeDemon",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/970458292801392692/Mazda_Savanna_RX-7_Turbo_1983.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/970459258208530483/Mazda_Savanna_RX-7_Turbo_1983_H000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/970459280790650880/Mazda_Savanna_RX-7_Turbo_1983_H111.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/970459296729034782/Mazda_Savanna_RX-7_Turbo_1983_H222.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/970459351628271616/Mazda_Savanna_RX-7_Turbo_1983_H332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/970459335450837022/Mazda_Savanna_RX-7_Turbo_1983_H323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/970459321638998066/Mazda_Savanna_RX-7_Turbo_1983_H233.png",
-
     "333TopSpeed": 139,
     "3330to60": 6.1,
     "333Handling": 79,
-
     "666TopSpeed": 143,
     "6660to60": 5.8,
     "666Handling": 81,
-
     "996TopSpeed": 147,
     "9960to60": 5.4,
     "996Handling": 81,
-
     "969TopSpeed": 147,
     "9690to60": 5.8,
     "969Handling": 84,
-
     "699TopSpeed": 143,
     "6990to60": 5.4,
-    "699Handling": 84
+    "699Handling": 84,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

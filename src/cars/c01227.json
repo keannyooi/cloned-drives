@@ -11,7 +11,6 @@
     "tyreType": "All-Surface",
     "tags": [],
     "isPrize": false,
-
     "weight": 1781,
     "gc": "High",
     "seatCount": 7,
@@ -23,32 +22,22 @@
     "mra": 44.06,
     "ola": 78.34,
     "description": "Card by Corentin.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/856218618940751922/image0.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/856218708283883560/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/856218723110617098/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/856218735722627112/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/856218774713925643/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/856218760029274122/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/856218747852947496/image0.jpg",
-
     "333TopSpeed": 134,
-    "3330to60": 6.0,
+    "3330to60": 6,
     "333Handling": 72,
-
     "666TopSpeed": 138,
     "6660to60": 5.7,
     "666Handling": 75,
-
     "996TopSpeed": 142,
     "9960to60": 5.4,
     "996Handling": 75,
-
     "969TopSpeed": 142,
     "9690to60": 5.7,
     "969Handling": 78,
-
     "699TopSpeed": 138,
     "6990to60": 5.4,
-    "699Handling": 78
+    "699Handling": 78,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

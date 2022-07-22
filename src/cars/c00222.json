@@ -9,9 +9,13 @@
     "handling": 89,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Supercar", "Ultra Expensive", "Innovative", "Unique"],
+    "tags": [
+        "Supercar",
+        "Ultra Expensive",
+        "Innovative",
+        "Unique"
+    ],
     "isPrize": false,
-
     "weight": 1418,
     "gc": "Low",
     "seatCount": 2,
@@ -20,35 +24,25 @@
     "abs": true,
     "enginePos": "Rear",
     "fuelType": "Petrol",
-    "mra": 100.00,
+    "mra": 100,
     "ola": 84.84,
     "description": "The Italian Bugatti that became a top speed record holder at the time. Card by Spence",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/852765986611789855/image0.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/852766088474656818/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/852766124755124224/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/852766158054752306/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/852766309052710932/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/852766235628142592/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/852766202065584128/image0.jpg",
-
     "333TopSpeed": 219,
     "3330to60": 3.1,
     "333Handling": 92,
-
     "666TopSpeed": 222,
-    "6660to60": 3.0,
+    "6660to60": 3,
     "666Handling": 95,
-
     "996TopSpeed": 224,
     "9960to60": 2.8,
     "996Handling": 95,
-
-	"969TopSpeed": 224,
-    "9690to60": 3.0,
+    "969TopSpeed": 224,
+    "9690to60": 3,
     "969Handling": 99,
-
     "699TopSpeed": 222,
     "6990to60": 2.8,
-    "699Handling": 99
+    "699Handling": 99,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

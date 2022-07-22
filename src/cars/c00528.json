@@ -9,9 +9,10 @@
     "handling": 68,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Eco-Friendly"],
+    "tags": [
+        "Eco-Friendly"
+    ],
     "isPrize": false,
-
     "weight": 1314,
     "gc": "Medium",
     "seatCount": 5,
@@ -20,35 +21,25 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Hybrid",
-    "mra": 40.30,
+    "mra": 40.3,
     "ola": 72.22,
     "description": "The second best choice for a hybrid electric vehicle in the USA. Card by Connor",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820688267074600980/E.HondaCivicHybridLX.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/837900608488603692/civic_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/837900152504975360/civic_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/837900158061903872/civic_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/837900173736673331/civic_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/837900169718398986/civic_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/837900164831117323/civic_699.jpg",
-
     "333TopSpeed": 117,
     "3330to60": 10.3,
     "333Handling": 70,
-
     "666TopSpeed": 121,
     "6660to60": 9.7,
     "666Handling": 72,
-
-	"996TopSpeed": 126,
+    "996TopSpeed": 126,
     "9960to60": 9.2,
     "996Handling": 72,
-
     "969TopSpeed": 126,
     "9690to60": 9.7,
     "969Handling": 75,
-
-	"699TopSpeed": 121,
+    "699TopSpeed": 121,
     "6990to60": 9.2,
-    "699Handling": 75
+    "699Handling": 75,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

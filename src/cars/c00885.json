@@ -9,9 +9,10 @@
     "handling": 76,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Street Racer"],
+    "tags": [
+        "Street Racer"
+    ],
     "isPrize": false,
-
     "weight": 1520,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 59.38,
     "ola": 57.89,
     "description": "Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/835918219281563688/Airtrek.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/835918277698912326/airtrekR.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/835918283584045086/airtrekR333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/835918291066421298/airtrekR666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/835918314349002856/airtrekR996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/835918306266578984/airtrekR969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/835918298851835924/airtrekR699.png",
-
     "333TopSpeed": 117,
     "3330to60": 7.2,
     "333Handling": 79,
-
     "666TopSpeed": 121,
     "6660to60": 6.8,
     "666Handling": 81,
-
     "996TopSpeed": 126,
     "9960to60": 6.5,
     "996Handling": 81,
-
     "969TopSpeed": 126,
     "9690to60": 6.8,
     "969Handling": 84,
-
     "699TopSpeed": 121,
     "6990to60": 6.5,
-    "699Handling": 84
+    "699Handling": 84,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

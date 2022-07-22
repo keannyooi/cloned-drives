@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1687,
     "gc": "Medium",
     "seatCount": 7,
@@ -23,32 +22,22 @@
     "mra": 56.72,
     "ola": 71.05,
     "description": "Card by Andu.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/821696739584901140/vibescarMercE320W.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824951455290359858/E320.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824951462911410176/E320-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824951472198123540/E320-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824951493437554719/E320-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824951486047715379/E320-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824951477880619038/E320-699.png",
-
     "333TopSpeed": 134,
     "3330to60": 7.2,
     "333Handling": 71,
-
     "666TopSpeed": 138,
     "6660to60": 6.8,
     "666Handling": 74,
-
     "996TopSpeed": 142,
     "9960to60": 6.5,
     "996Handling": 74,
-
     "969TopSpeed": 142,
     "9690to60": 6.8,
     "969Handling": 77,
-
     "699TopSpeed": 138,
     "6990to60": 6.5,
-    "699Handling": 77
+    "699Handling": 77,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -9,9 +9,10 @@
     "handling": 75,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Street Racer"],
+    "tags": [
+        "Street Racer"
+    ],
     "isPrize": false,
-
     "weight": 1040,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +24,22 @@
     "mra": 39.29,
     "ola": 78.57,
     "description": "The M stands for Miata. Card by Johnny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/822215750348570624/cate-test.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/822215861242036294/Mazda-MX-5-M-Edition.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/822215876865425469/Mazda-MX-5-M-Edition-1-star.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/822215870671486996/Mazda-MX-5-M-Edition-2-star.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/822215892431536178/Mazda-MX-5-M-Edition-332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/822215883983814739/Mazda-MX-5-M-Edition-323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/822215879017365534/Mazda-MX-5-M-Edition-233.png",
-
     "333TopSpeed": 120,
     "3330to60": 8.4,
     "333Handling": 77,
-
     "666TopSpeed": 125,
     "6660to60": 7.9,
     "666Handling": 80,
-
-	"996TopSpeed": 129,
+    "996TopSpeed": 129,
     "9960to60": 7.5,
     "996Handling": 80,
-
     "969TopSpeed": 129,
     "9690to60": 7.9,
     "969Handling": 83,
-    
     "699TopSpeed": 125,
     "6990to60": 7.5,
-    "699Handling": 83
+    "699Handling": 83,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

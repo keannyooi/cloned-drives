@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1589,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 71.59,
     "ola": 82.54,
     "description": "It's fast and has torque steer for days, but the redesigned Maxima strays further from the '4DSC' mantra. Card by ChickenMcNuggets.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/828458020170104932/04_max.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/828452951907237928/04_max_stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/828452985318539264/04_max_1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/828453011197526016/04_max_2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/828453092365565972/04_max_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/828453067233427476/04_max_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/828453035784142898/04_max_233.png",
-
     "333TopSpeed": 143,
-    "3330to60": 6.0,
+    "3330to60": 6,
     "333Handling": 76,
-
     "666TopSpeed": 146,
     "6660to60": 5.7,
     "666Handling": 79,
-
     "996TopSpeed": 150,
     "9960to60": 5.4,
     "996Handling": 79,
-
     "969TopSpeed": 150,
     "9690to60": 5.7,
     "969Handling": 82,
-
     "699TopSpeed": 146,
     "6990to60": 5.4,
-    "699Handling": 82
+    "699Handling": 82,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -9,9 +9,11 @@
     "handling": 83,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Sleeper", "Silver Screen"],
+    "tags": [
+        "Sleeper",
+        "Silver Screen"
+    ],
     "isPrize": false,
-
     "weight": 2010,
     "gc": "Medium",
     "seatCount": 2,
@@ -23,32 +25,22 @@
     "mra": 81.36,
     "ola": 83.33,
     "description": "Card by Connor.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/821473573431672913/A.LexusLC500.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821473630344970279/A.LexusLC500.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821473638628458576/A.LexusLC500-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821473649194172466/A.LexusLC500-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821473724477210684/A.LexusLC500-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821473718126641212/A.LexusLC500-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821473695624200232/A.LexusLC500-699.png",
-
     "333TopSpeed": 171,
     "3330to60": 4.6,
     "333Handling": 86,
-
     "666TopSpeed": 174,
     "6660to60": 4.3,
     "666Handling": 88,
-
     "996TopSpeed": 177,
     "9960to60": 4.1,
     "996Handling": 88,
-
     "969TopSpeed": 177,
     "9690to60": 4.3,
     "969Handling": 92,
-
     "699TopSpeed": 174,
     "6990to60": 4.1,
-    "699Handling": 92
+    "699Handling": 92,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -9,13 +9,14 @@
     "handling": 92,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Concept", "Eco-Friendly"],
+    "tags": [
+        "Concept",
+        "Eco-Friendly"
+    ],
     "isPrize": false,
-
-
     "weight": 1490,
     "gc": "Low",
-    "seatCount":2,
+    "seatCount": 2,
     "bodyStyle": "Convertible",
     "tcs": true,
     "abs": true,
@@ -24,33 +25,22 @@
     "mra": 88.89,
     "ola": 96.88,
     "description": "Watch out not to burn your feet, this baby has sidepipes unlike its production brother. Card by c6",
-
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/987362259057668176/porsche_918_spyder_concept_study.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/987362598334922782/porsche_918_spyder_concept_study_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/987362616215212033/porsche_918_spyder_concept_study_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/987362631419572264/porsche_918_spyder_concept_study_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/987362684968267896/porsche_918_spyder_concept_study_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/987362665343111198/porsche_918_spyder_concept_study_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/987362649132122163/porsche_918_spyder_concept_study_699.png",
-
     "333TopSpeed": 202,
-    "3330to60": 3.0,
+    "3330to60": 3,
     "333Handling": 95,
-
     "666TopSpeed": 204,
-    "6660to60": 2.9, 
+    "6660to60": 2.9,
     "666Handling": 98,
-
     "996TopSpeed": 207,
     "9960to60": 2.7,
     "996Handling": 98,
-
     "969TopSpeed": 207,
     "9690to60": 2.9,
     "969Handling": 102,
-
     "699TopSpeed": 204,
     "6990to60": 2.7,
-    "699Handling": 102
+    "699Handling": 102,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

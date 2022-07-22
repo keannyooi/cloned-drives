@@ -9,9 +9,12 @@
     "handling": 80,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["The Royal Collection", "Sleeper", "Servers Choice"],
+    "tags": [
+        "The Royal Collection",
+        "Sleeper",
+        "Servers Choice"
+    ],
     "isPrize": false,
-
     "weight": 1740,
     "gc": "Low",
     "seatCount": 2,
@@ -20,35 +23,25 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 98.00,
+    "mra": 98,
     "ola": 77.55,
     "description": "Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/855243249941479444/db7zagato.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/855244284172828672/db7zagato.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/855244289743257600/db7zagato333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/855244298713956369/db7zagato666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/855244325301911572/db7zagato996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/855244316855369768/db7zagato969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/855244307857539072/db7zagato699.png",
-
     "333TopSpeed": 193,
     "3330to60": 4.7,
     "333Handling": 83,
-
     "666TopSpeed": 195,
     "6660to60": 4.4,
     "666Handling": 85,
-
     "996TopSpeed": 198,
     "9960to60": 4.2,
     "996Handling": 85,
-
     "969TopSpeed": 198,
     "9690to60": 4.4,
     "969Handling": 89,
-
     "699TopSpeed": 195,
     "6990to60": 4.2,
-    "699Handling": 89
+    "699Handling": 89,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

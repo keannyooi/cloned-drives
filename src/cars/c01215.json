@@ -9,9 +9,11 @@
     "handling": 84,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Street Racer", "Hot Hatch"],
+    "tags": [
+        "Street Racer",
+        "Hot Hatch"
+    ],
     "isPrize": false,
-
     "weight": 1505,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +25,22 @@
     "mra": 62.16,
     "ola": 60.87,
     "description": "An ECU tuning offered by Prodrive that bumps up the power to 325 hp. Card by Spence",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/846266748511715348/image0.jpg",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/846266855164870686/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/846266875335278602/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/846266892926844948/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/846266909921902592/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/846266928171712552/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/846266940976791562/image0.jpg",
-
     "333TopSpeed": 158,
     "3330to60": 4.4,
     "333Handling": 87,
-
     "666TopSpeed": 162,
     "6660to60": 4.1,
     "666Handling": 90,
-
     "699TopSpeed": 162,
     "6990to60": 3.9,
     "699Handling": 93,
-
     "969TopSpeed": 165,
     "9690to60": 4.1,
     "969Handling": 93,
-
     "996TopSpeed": 165,
     "9960to60": 3.9,
-    "996Handling": 90
+    "996Handling": 90,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

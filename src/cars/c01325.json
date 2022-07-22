@@ -9,9 +9,10 @@
     "handling": 70,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Eco-Friendly"],
+    "tags": [
+        "Eco-Friendly"
+    ],
     "isPrize": false,
-
     "weight": 1370,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 49.76,
     "ola": 67.31,
     "description": "Second gen ready for taxis. Card by Connor",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820004981075345408/E.ToyotaPriusPremium.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820005080886935593/E.ToyotaPriusPremium.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820005090668052510/E.ToyotaPriusPremium-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820005099505975396/E.ToyotaPriusPremium-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820005131968839739/E.ToyotaPriusPremium-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820005124679401492/E.ToyotaPriusPremium-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820005111743905852/E.ToyotaPriusPremium-699.png",
-
     "333TopSpeed": 119,
     "3330to60": 9.9,
     "333Handling": 72,
-
     "666TopSpeed": 123,
-    "6660to60": 9.4, 
+    "6660to60": 9.4,
     "666Handling": 75,
-
     "996TopSpeed": 128,
     "9960to60": 8.8,
     "996Handling": 75,
-
     "969TopSpeed": 128,
     "9690to60": 9.4,
     "969Handling": 78,
-
     "699TopSpeed": 123,
     "6990to60": 8.8,
-    "699Handling": 78
+    "699Handling": 78,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

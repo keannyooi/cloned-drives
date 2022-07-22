@@ -9,13 +9,13 @@
     "handling": 73,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
-
     "weight": 1020,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
@@ -24,33 +24,22 @@
     "mra": 35.77,
     "ola": 64,
     "description": "Breaking grounds and stealing crowns. Card by Andu.",
-
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/866666250604380202/213MZRPlay.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/866666578417287248/213MZR.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/866666586080542720/213MZR-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/866666590752866324/213MZR-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/866666604649775114/213MZR-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/866666670280802376/213MZR-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/866666681848954880/213MZR-699.png",
-
     "333TopSpeed": 111,
     "3330to60": 10.7,
     "333Handling": 75,
-
     "666TopSpeed": 116,
-    "6660to60": 10.2, 
+    "6660to60": 10.2,
     "666Handling": 78,
-
     "996TopSpeed": 121,
     "9960to60": 9.6,
     "996Handling": 78,
-
     "969TopSpeed": 121,
     "9690to60": 10.2,
     "969Handling": 81,
-
     "699TopSpeed": 116,
     "6990to60": 9.6,
-    "699Handling": 81
+    "699Handling": 81,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

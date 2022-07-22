@@ -9,9 +9,13 @@
     "handling": 63,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Concept", "Unique", "Ultra Expensive", "Grand Tourer"],
+    "tags": [
+        "Concept",
+        "Unique",
+        "Ultra Expensive",
+        "Grand Tourer"
+    ],
     "isPrize": true,
-
     "weight": 1330,
     "gc": "Medium",
     "seatCount": 2,
@@ -23,32 +27,22 @@
     "mra": 78.68,
     "ola": 57.94,
     "description": "Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/857393881674285076/bmw507vignale.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/857394374857981982/507vignale.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/857394381592985600/507vignale333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/857394387902267402/507vignale666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/857394418683871232/507vignale996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/857394405097734144/507vignale969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/857394397717331968/507vignale699.png",
-
     "333TopSpeed": 131,
     "3330to60": 10.2,
     "333Handling": 65,
-
     "666TopSpeed": 135,
     "6660to60": 9.6,
     "666Handling": 67,
-
     "996TopSpeed": 139,
     "9960to60": 9.1,
     "996Handling": 67,
-
     "969TopSpeed": 139,
     "9690to60": 9.6,
     "969Handling": 70,
-
     "699TopSpeed": 135,
     "6990to60": 9.1,
-    "699Handling": 70
+    "699Handling": 70,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

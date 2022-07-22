@@ -5,13 +5,14 @@
     "modelYear": 2009,
     "country": "JP",
     "topSpeed": 79,
-    "0to60": 14.0,
+    "0to60": 14,
     "handling": 64,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": ["Kei Car"],
+    "tags": [
+        "Kei Car"
+    ],
     "isPrize": true,
-
     "weight": 971,
     "gc": "Medium",
     "seatCount": 4,
@@ -20,35 +21,25 @@
     "abs": true,
     "enginePos": "Middle",
     "fuelType": "Petrol",
-    "mra": 0.00,
+    "mra": 0,
     "ola": 52.86,
     "description": "Kei cars don't sell well in the land of big things, and so did this. Card by bnuuy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/865599191127556106/IAWD.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823566755196174376/iawd.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823566760422146048/iawd333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823566766981513236/iawd666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823566793439445052/iawd996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823566783315181598/iawd969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823566780114796554/iawd699.png",
-
     "333TopSpeed": 86,
     "3330to60": 13.3,
     "333Handling": 66,
-
     "666TopSpeed": 92,
     "6660to60": 12.6,
     "666Handling": 68,
-
     "996TopSpeed": 99,
     "9960to60": 11.9,
     "996Handling": 68,
-
     "969TopSpeed": 99,
     "9690to60": 12.6,
     "969Handling": 71,
-
     "699TopSpeed": 92,
     "6990to60": 11.9,
-    "699Handling": 71
+    "699Handling": 71,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

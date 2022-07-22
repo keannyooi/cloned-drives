@@ -9,9 +9,10 @@
     "handling": 64,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 2042,
     "gc": "High",
     "seatCount": 5,
@@ -20,35 +21,25 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 54.00,
+    "mra": 54,
     "ola": 69.96,
     "description": "Card by Demon.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/964176538541101066/Nissan_Frontier_Pro-4X_2012.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/964179066771095602/Nissan_Frontier_Pro-4X_2012_H000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/964179083774799872/Nissan_Frontier_Pro-4X_2012_H111.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/964179103886479420/Nissan_Frontier_Pro-4X_2012_H222.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/964179162455748728/Nissan_Frontier_Pro-4X_2012_H332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/964179143040327740/Nissan_Frontier_Pro-4X_2012_H323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/964179123142557696/Nissan_Frontier_Pro-4X_2012_H233.png",
-
     "333TopSpeed": 118,
-    "3330to60": 7.0,
+    "3330to60": 7,
     "333Handling": 66,
-
     "666TopSpeed": 122,
     "6660to60": 6.7,
     "666Handling": 68,
-
     "996TopSpeed": 127,
     "9960to60": 6.3,
     "996Handling": 68,
-
     "969TopSpeed": 127,
     "9690to60": 6.7,
     "969Handling": 71,
-
     "699TopSpeed": 122,
     "6990to60": 6.3,
-    "699Handling": 71
+    "699Handling": 71,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

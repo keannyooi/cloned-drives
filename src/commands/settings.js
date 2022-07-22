@@ -79,6 +79,12 @@ module.exports = {
                                                 inline: true
                                             },
                                             {
+                                                name: "Enable Dealership Refresh Notifications (ID: \`senddealnotifs\`)",
+                                                value: `Having this set to \`true\` enables automated DM notifications when the dealership refreshes.
+                                                **Value:** \`${settings.senddealnotifs ?? false}\``,
+                                                inline: true
+                                            },
+                                            {
                                                 name: "Unit Preference (ID: \`unitpreference\`)",
                                                 value: `Lets you choose the unit system of your preference. Graphics aren't affected by this setting. The game uses British units by default and you can switch to metric and imperial units.
                                                 **Value:** \`${settings.unitpreference ?? "british"}\``,
@@ -192,6 +198,7 @@ module.exports = {
                 case "senddailynotifs":
                 case "sendeventnotifs":
                 case "sendoffernotifs":
+                case "senddealnotifs":
                 case "disablecarlistfilter":
                 case "disablegaragefilter":
                 case "hidebmcars":
@@ -403,6 +410,7 @@ module.exports = {
                         \`senddailynotifs\` - Enable automated daily reward notifications. Provide a boolean (\`true\` or \`false\`) after that. Remember to enable \`DMs from server members\` for this to work.
                         \`sendeventnotifs\` - Enable automated event notifications. Provide a boolean (\`true\` or \`false\`) after that. Remember to enable \`DMs from server members\` for this to work.
                         \`sendoffernotifs\` - Enable automated offer notifications. Provide a boolean (\`true\` or \`false\`) after that. Remember to enable \`DMs from server members\` for this to work.
+                        \`senddealnotifs\` - Enable automated dealership refresh notifications. Provide a boolean (\`true\` or \`false\`) after that. Remember to enable \`DMs from server members\` for this to work.
                         \`disablecarlistfilter\` - Disable cd-carlist filtering. Provide a boolean (\`true\` or \`false\`) after that.
                         \`disablegaragefilter\` - Disable garage filtering. Provide a boolean (\`true\` or \`false\`) after that.
                         \`hidebmcars\` - Disable black market car visibility. Provide a boolean (\`true\` or \`false\`) after that.

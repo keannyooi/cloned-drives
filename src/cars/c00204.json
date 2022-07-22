@@ -11,7 +11,6 @@
     "tyreType": "All-Surface",
     "tags": [],
     "isPrize": false,
-
     "weight": 2304,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 71.43,
     "ola": 93.88,
     "description": "Card by DodgeDemon",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819418712070422558/2014_BMW_X6_xDrive50i.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824360221978919013/x6.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824360226274148392/x6333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824360230962855956/x6666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824360260802183211/x6996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824360246226059264/x6969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824360238575910992/x6699.png",
-
     "333TopSpeed": 158,
     "3330to60": 4.3,
     "333Handling": 81,
-
     "666TopSpeed": 162,
     "6660to60": 4.1,
     "666Handling": 83,
-
     "996TopSpeed": 165,
     "9960to60": 3.8,
     "996Handling": 83,
-
     "969TopSpeed": 165,
     "9690to60": 4.1,
     "969Handling": 87,
-
-	"699TopSpeed": 162,
+    "699TopSpeed": 162,
     "6990to60": 3.8,
-    "699Handling": 87
+    "699Handling": 87,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

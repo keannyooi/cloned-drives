@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1821,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 52.99,
     "ola": 64.79,
     "description": "Yet another 'sporty' Lexus. Toyota is running out of ideas.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/826520723265945670/NX200t.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826521720449794098/NX200t.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826521727180865576/NX200t1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826521732813684766/NX200t2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826521753479544832/NX200t996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826521746126798868/NX200t969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826521738723721276/NX200t699.png",
-
     "333TopSpeed": 130,
     "3330to60": 6.7,
     "333Handling": 72,
-
     "666TopSpeed": 134,
     "6660to60": 6.4,
     "666Handling": 75,
-
     "996TopSpeed": 138,
-    "9960to60": 6.0,
+    "9960to60": 6,
     "996Handling": 75,
-
     "969TopSpeed": 138,
     "9690to60": 6.4,
     "969Handling": 78,
-
     "699TopSpeed": 134,
-    "6990to60": 6.0,
-    "699Handling": 78
+    "6990to60": 6,
+    "699Handling": 78,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

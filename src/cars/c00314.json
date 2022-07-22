@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 2262,
     "gc": "Medium",
     "seatCount": 7,
@@ -23,32 +22,22 @@
     "mra": 77.88,
     "ola": 69.14,
     "description": "Card by Macan.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/827286192630005841/Pacifica_Pinnacle_AWD_21.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/827286296938545182/Chrysler_Pacifica_Pinnacle_AWD_2021_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/827286304491307038/Chrysler_Pacifica_Pinnacle_AWD_2021_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/827286311026425934/Chrysler_Pacifica_Pinnacle_AWD_2021_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/827286335295193148/Chrysler_Pacifica_Pinnacle_AWD_2021_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/827286328290050068/Chrysler_Pacifica_Pinnacle_AWD_2021_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/827286321633427456/Chrysler_Pacifica_Pinnacle_AWD_2021_699.png",
-
     "333TopSpeed": 116,
     "3330to60": 7.7,
     "333Handling": 73,
-
     "666TopSpeed": 120,
     "6660to60": 7.3,
     "666Handling": 76,
-
-	"996TopSpeed": 125,
+    "996TopSpeed": 125,
     "9960to60": 6.9,
     "996Handling": 76,
-
     "969TopSpeed": 125,
     "9690to60": 7.3,
     "969Handling": 79,
-
-	"699TopSpeed": 120,
+    "699TopSpeed": 120,
     "6990to60": 6.9,
-    "699Handling": 79
+    "699Handling": 79,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

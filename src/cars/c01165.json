@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1210,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +22,22 @@
     "mra": 47.94,
     "ola": 71.43,
     "description": "An American-rebadged Astra with only 1 engine option. Card by havvy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/824639855815426068/AstraXR.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824640011563040778/AstraXR.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824640017682137128/AstraXR1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824640022782279680/AstraXR2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824640043917246474/AstraXR996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824640037891080252/AstraXR969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824640028344188928/AstraXR699.png",
-
-     "333TopSpeed": 134,
+    "333TopSpeed": 134,
     "3330to60": 8.8,
     "333Handling": 79,
-
     "666TopSpeed": 138,
-    "6660to60": 8.4, 
+    "6660to60": 8.4,
     "666Handling": 81,
-
     "996TopSpeed": 142,
     "9960to60": 7.9,
     "996Handling": 81,
-
     "969TopSpeed": 142,
     "9690to60": 8.4,
     "969Handling": 84,
-
     "699TopSpeed": 138,
     "6990to60": 7.9,
-    "699Handling": 84
+    "699Handling": 84,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

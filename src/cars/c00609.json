@@ -11,7 +11,6 @@
     "tyreType": "Off-Road",
     "tags": [],
     "isPrize": false,
-
     "weight": 1933,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 43.67,
     "ola": 60.87,
     "description": "Late 90s Balkan mob boss favourite car. Card by Connor",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/821017557296480316/B.JeepGrandCherokee59Limited.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821017475612409906/B.JeepGC59.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821017697465925662/B.JeepGC59-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821017708245942292/B.JeepGC59-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821017783240228874/B.JeepGC59-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821017741598130216/B.JeepGC59-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821017722912768000/B.JeepGC59-699.png",
-
     "333TopSpeed": 115,
     "3330to60": 6.6,
     "333Handling": 69,
-
     "666TopSpeed": 119,
     "6660to60": 6.2,
     "666Handling": 71,
-
     "996TopSpeed": 125,
     "9960to60": 5.9,
     "996Handling": 71,
-	 
-	  "969TopSpeed": 124,
+    "969TopSpeed": 124,
     "9690to60": 6.2,
     "969Handling": 74,
-	
-	  "699TopSpeed": 119,
+    "699TopSpeed": 119,
     "6990to60": 5.9,
-    "699Handling": 74
+    "699Handling": 74,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

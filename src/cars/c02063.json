@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1611,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 67.5,
     "ola": 92.86,
     "description": "With a 0-60 time of 5.6 seconds, schooling hot hatches in your family sedan has never been quicker (or more ridiculously hilarious). Card by McNuggets.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/943374662115667998/accord_touring.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/943372012167004160/old_stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/943372037274107914/old_1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/943372054802087956/old_2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/943372139002724392/old_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/943372095788822528/old_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/943372069993853008/old_233.png",
-
     "333TopSpeed": 129,
     "3330to60": 5.3,
     "333Handling": 77,
-
     "666TopSpeed": 133,
-    "6660to60": 5.0,
+    "6660to60": 5,
     "666Handling": 80,
-
     "996TopSpeed": 137,
     "9960to60": 4.8,
     "996Handling": 80,
-
     "969TopSpeed": 137,
-    "9690to60": 5.0,
+    "9690to60": 5,
     "969Handling": 83,
-
     "699TopSpeed": 133,
     "6990to60": 4.8,
-    "699Handling": 83
+    "699Handling": 83,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -1,18 +1,21 @@
-﻿{
+{
     "rq": 17,
     "make": "General Motors",
     "model": "EV1 Fuel Cell",
     "modelYear": 1998,
     "country": "US",
     "topSpeed": 80,
-    "0to60": 9.0,
+    "0to60": 9,
     "handling": 61,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Eco-Friendly", "Innovative", "Unique"],
+    "tags": [
+        "Eco-Friendly",
+        "Innovative",
+        "Unique"
+    ],
     "isPrize": false,
-
-    "weight": 1558, 
+    "weight": 1558,
     "gc": "Low",
     "seatCount": 2,
     "bodyStyle": "Coupe",
@@ -23,32 +26,22 @@
     "mra": 39.54,
     "ola": 68.89,
     "description": "This EV1 uses Daimler-Benz's NECAR platform, which helped extended the car's range to 300 miles. Card by keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/865584844049481738/general_motors_ev1_fuel_cell.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/840078921487745034/ev1_fcv_000.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/840078928927260673/ev1_fcv_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/840078933755953172/ev1_fcv_666.jpg",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/840078953926754315/ev1_fcv_996.jpg",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/840078949979652146/ev1_fcv_969.jpg",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/840078940818636800/ev1_fcv_699.jpg",
-
     "333TopSpeed": 87,
     "3330to60": 8.6,
     "333Handling": 63,
-
     "666TopSpeed": 93,
     "6660to60": 8.1,
     "666Handling": 65,
-
     "996TopSpeed": 100,
     "9960to60": 7.7,
     "996Handling": 65,
-
     "969TopSpeed": 100,
     "9690to60": 8.1,
     "969Handling": 68,
-
     "699TopSpeed": 93,
     "6990to60": 7.7,
-    "699Handling": 68
+    "699Handling": 68,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

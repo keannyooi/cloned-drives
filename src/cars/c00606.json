@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1780,
     "gc": "Low",
     "seatCount": 4,
@@ -23,32 +22,22 @@
     "mra": 73.77,
     "ola": 84.44,
     "description": "The 2000’s Jag Coupe, for drivers that likes to go sideways with a cigar on his hand. Card by Spence",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/823405975679270912/image0.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823406046122344459/xkr_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823406052442898482/xkr_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823406062132133928/xkr_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823406114132459550/xkr_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823406104364712006/xkr_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823406087951745074/xkr_699.jpg",
-
     "333TopSpeed": 158,
     "3330to60": 4.3,
     "333Handling": 84,
-
     "666TopSpeed": 162,
     "6660to60": 4.1,
     "666Handling": 86,
-
     "996TopSpeed": 165,
     "9960to60": 3.8,
     "996Handling": 86,
-
     "969TopSpeed": 165,
     "9690to60": 4.1,
     "969Handling": 90,
-
     "699TopSpeed": 162,
     "6990to60": 3.8,
-    "699Handling": 90
+    "699Handling": 90,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

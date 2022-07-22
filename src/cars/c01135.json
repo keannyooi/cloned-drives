@@ -1,6 +1,9 @@
-﻿{
+{
     "rq": 36,
-    "make": ["Range Rover", "Land Rover"],
+    "make": [
+        "Range Rover",
+        "Land Rover"
+    ],
     "model": "County SE",
     "modelYear": 1991,
     "country": "GB",
@@ -11,7 +14,6 @@
     "tyreType": "Off-Road",
     "tags": [],
     "isPrize": false,
-
     "weight": 1996,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +25,22 @@
     "mra": 35.99,
     "ola": 69.03,
     "description": "SE version of the County. Card by Havvy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/826803010817884191/RangeRoverCountySE.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826803051468947516/000_countcontessa.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826803056812228705/111_countcontessa.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826803060947812402/222_countcontessa.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826803072772734976/332_countcontessa.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826803068624306236/323_countcontessa.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826803065251561482/233_countcontessa.png",
-
     "333TopSpeed": 109,
     "3330to60": 10.7,
     "333Handling": 63,
-
     "666TopSpeed": 114,
-    "6660to60": 10.2, 
+    "6660to60": 10.2,
     "666Handling": 65,
-
     "996TopSpeed": 119,
     "9960to60": 9.6,
     "996Handling": 65,
-
     "969TopSpeed": 119,
     "9690to60": 10.2,
     "969Handling": 68,
-
     "699TopSpeed": 114,
     "6990to60": 9.6,
-    "699Handling": 68
+    "699Handling": 68,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

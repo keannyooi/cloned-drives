@@ -9,9 +9,12 @@
     "handling": 85,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Muscle Car", "Servers Choice", "Super Sedan"],
+    "tags": [
+        "Muscle Car",
+        "Servers Choice",
+        "Super Sedan"
+    ],
     "isPrize": false,
-
     "weight": 2080,
     "gc": "Low",
     "seatCount": 5,
@@ -20,35 +23,25 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 95.00,
+    "mra": 95,
     "ola": 94.74,
     "description": "The ultimate muscle sedan of the modern era. Card by DodgeDemon",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/821953597625204746/2015_Dodge_Charger_SRT_Hellcat.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826224095993004062/whitecharger.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826224102850691103/whitecharger333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826224108756533288/whitecharger666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826224131523215360/whitecharger996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826224123926806528/whitecharger969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826224116243365928/whitecharger699.png",
-
     "333TopSpeed": 207,
     "3330to60": 3.6,
     "333Handling": 88,
-
     "666TopSpeed": 209,
     "6660to60": 3.4,
     "666Handling": 91,
-
     "996TopSpeed": 212,
     "9960to60": 3.2,
     "996Handling": 91,
-
-	"969TopSpeed": 212,
+    "969TopSpeed": 212,
     "9690to60": 3.4,
     "969Handling": 94,
-
     "699TopSpeed": 209,
     "6990to60": 3.2,
-    "699Handling": 94
+    "699Handling": 94,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

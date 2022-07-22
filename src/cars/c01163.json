@@ -9,9 +9,11 @@
     "handling": 90,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Supercar", "Silver Screen"],
+    "tags": [
+        "Supercar",
+        "Silver Screen"
+    ],
     "isPrize": false,
-
     "weight": 1300,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +25,22 @@
     "mra": 70.83,
     "ola": 91.18,
     "description": "The Slower S7. Card by Havvy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/826093036017811486/SaleenS7.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826094069523546132/saleen_s7_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826094078424514621/saleen_s7_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826094085080481792/saleen_s7_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826094120078540810/saleen_s7_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826094110376460298/saleen_s7_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826094098522963968/saleen_s7_699.jpg",
-
     "333TopSpeed": 203,
     "3330to60": 3.2,
     "333Handling": 93,
-
     "666TopSpeed": 205,
-    "6660to60": 3.1, 
+    "6660to60": 3.1,
     "666Handling": 96,
-
     "996TopSpeed": 208,
     "9960to60": 2.9,
     "996Handling": 96,
-
     "969TopSpeed": 208,
     "9690to60": 3.1,
     "969Handling": 100,
-
     "699TopSpeed": 205,
     "6990to60": 2.9,
-    "699Handling": 100
+    "699Handling": 100,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

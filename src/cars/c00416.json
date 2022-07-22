@@ -9,9 +9,12 @@
     "handling": 81,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Eco-Friendly", "Unique", "Innovative"],
+    "tags": [
+        "Eco-Friendly",
+        "Unique",
+        "Innovative"
+    ],
     "isPrize": false,
-
     "weight": 2430,
     "gc": "Low",
     "seatCount": 4,
@@ -23,32 +26,22 @@
     "mra": 50.83,
     "ola": 81.96,
     "description": "The Karma that the company made became the company's karma at the end. Card by Spence.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/855695968913063946/image0.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/855696023007264808/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/855696041524854804/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/855696055605395456/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/855696070150455296/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/855696096806043658/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/855696109006225418/image0.jpg",
-
     "333TopSpeed": 130,
     "3330to60": 5.8,
     "333Handling": 84,
-
     "666TopSpeed": 134,
     "6660to60": 5.5,
     "666Handling": 86,
-
     "699TopSpeed": 134,
     "6990to60": 5.2,
     "699Handling": 90,
-
     "969TopSpeed": 138,
     "9690to60": 5.5,
     "969Handling": 90,
-
     "996TopSpeed": 138,
     "9960to60": 5.2,
-    "996Handling": 86
+    "996Handling": 86,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

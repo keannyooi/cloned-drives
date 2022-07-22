@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1250,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +22,22 @@
     "mra": 58.72,
     "ola": 68.75,
     "description": "Card by Churrito.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/868953579094966282/porsche_Boxster_2.5.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/868953345577062410/Porsche_Boxster_2.5_Stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/868953412308451388/Porsche_Boxster_2.5_1_Star.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/868953421355569212/Porsche_Boxster_2.5_2_Star.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/868953458517110784/Porsche_Boxster_2.5_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/868953448236871700/Porsche_Boxster_2.5_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/868953435867840583/Porsche_Boxster_2.5_699.png",
-
     "333TopSpeed": 152,
     "3330to60": 6.1,
     "333Handling": 83,
-
     "666TopSpeed": 156,
     "6660to60": 5.8,
     "666Handling": 85,
-
     "996TopSpeed": 159,
     "9960to60": 5.4,
     "996Handling": 85,
-
     "969TopSpeed": 159,
     "9690to60": 5.8,
     "969Handling": 89,
-
     "699TopSpeed": 156,
     "6990to60": 5.4,
-    "699Handling": 89
+    "699Handling": 89,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

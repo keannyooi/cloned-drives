@@ -9,13 +9,13 @@
     "handling": 67,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
-
     "weight": 880,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": false,
@@ -24,33 +24,22 @@
     "mra": 29.61,
     "ola": 67.92,
     "description": "Toyota hasn't abandoned the silly name tradition and picked a name that rhymes with Paris to suggest something tres chic and fashionable. Card by Andu",
-
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/866935346839420958/Yaris1316VLuna.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/866937249618591744/Yaris13Sol.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/866937258471981066/Yaris13Sol-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/866937266085298207/Yaris13Sol-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/866937282064547840/Yaris13Sol-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/866937294718763008/Yaris13Sol-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/866937307402862613/Yaris13Sol-699.png",
-
     "333TopSpeed": 112,
     "3330to60": 10.1,
     "333Handling": 69,
-
     "666TopSpeed": 117,
-    "6660to60": 9.5, 
+    "6660to60": 9.5,
     "666Handling": 71,
-
     "996TopSpeed": 122,
-    "9960to60": 9.0,
+    "9960to60": 9,
     "996Handling": 71,
-
     "969TopSpeed": 122,
     "9690to60": 9.5,
     "969Handling": 74,
-
     "699TopSpeed": 117,
-    "6990to60": 9.0,
-    "699Handling": 74
+    "6990to60": 9,
+    "699Handling": 74,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

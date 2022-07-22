@@ -1,4 +1,4 @@
-﻿{
+{
     "rq": 42,
     "make": "Lamborghini",
     "model": "Miura P400",
@@ -9,13 +9,16 @@
     "handling": 77,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Supercar", "Innovative", "Style Icon", "Silver Screen"],
+    "tags": [
+        "Supercar",
+        "Innovative",
+        "Style Icon",
+        "Silver Screen"
+    ],
     "isPrize": false,
-
-
     "weight": 1100,
     "gc": "Low",
-    "seatCount":2,
+    "seatCount": 2,
     "bodyStyle": "Coupe",
     "tcs": false,
     "abs": false,
@@ -24,32 +27,22 @@
     "mra": 78.85,
     "ola": 82.54,
     "description": "Fashion legend icon. Card by Based",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/826075412311310376/Lamborghini_Miura_P400.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826075479949443072/Lambo_Miura_P400_Stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826075508575043664/Lambo_Miura_P400_1_Star.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826075517269966868/Lambo_Miura_P400_2_Star.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826075584543064064/Lambo_Miura_P400_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826075575461347328/Lambo_Miura_P400_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826075548307816458/Lambo_Miura_P400_699.png",
-
     "333TopSpeed": 177,
-    "3330to60": 6.0,
+    "3330to60": 6,
     "333Handling": 80,
-
     "666TopSpeed": 180,
-    "6660to60": 5.7, 
+    "6660to60": 5.7,
     "666Handling": 82,
-
     "996TopSpeed": 183,
     "9960to60": 5.4,
     "996Handling": 82,
-
     "969TopSpeed": 183,
     "9690to60": 5.7,
     "969Handling": 85,
-
     "699TopSpeed": 180,
     "6990to60": 5.4,
-    "699Handling": 85
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

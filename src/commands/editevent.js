@@ -14,6 +14,7 @@ const editFilter = require("../util/functions/editFilter.js");
 const filterCheck = require("../util/functions/filterCheck.js");
 const listRewards = require("../util/functions/listRewards.js");
 const sortCars = require("../util/functions/sortCars.js");
+const generateHud = require("../util/functions/generateHud.js");
 const profileModel = require("../models/profileSchema.js");
 const eventModel = require("../models/eventSchema.js");
 
@@ -51,7 +52,7 @@ module.exports = {
 
         async function editEvent(currentEvent, currentMessage) {
             let successMessage, operationFailed = false;
-            let index, criteria = args[1].toLowerCase();
+            let index, criteria = args[1].toLowerCase(), attachment = null;
             if (criteria.startsWith("add") || criteria.startsWith("remove") || criteria.startsWith("set")) {
                 if (!args[3]) {
                     const errorMessage = new ErrorMessage({
@@ -175,7 +176,7 @@ module.exports = {
                 case "settune":
                     let upgrade = args[3];
                     let currentCar = require(`../cars/${currentEvent.roster[index - 1].carID}.json`);
-                    if (!currentCar[`racehud${upgrade}`]) {
+                    if (upgrade !== "000" && !currentCar[`${upgrade}TopSpeed`]) {
                         const errorMessage = new ErrorMessage({
                             channel: message.channel,
                             title: "Error, the tuning stage you requested is unavailable.",
@@ -185,12 +186,12 @@ module.exports = {
                         return errorMessage.sendMessage({ currentMessage });
                     }
 
+                    attachment = await generateHud(currentCar, upgrade);
                     currentEvent.roster[index - 1].upgrade = upgrade;
                     successMessage = new SuccessMessage({
                         channel: message.channel,
                         title: `Successfully set the car tune of roster position ${index} to ${upgrade}!`,
                         author: message.author,
-                        image: currentCar[`racehud${upgrade}`]
                     });
                     break;
                 case "addreq":
@@ -536,7 +537,7 @@ module.exports = {
 
             if (!operationFailed) {
                 await eventModel.updateOne({ eventID: currentEvent.eventID }, currentEvent);
-                return successMessage.sendMessage({ currentMessage });
+                return successMessage.sendMessage({ attachment, currentMessage });
             }
         }
     }

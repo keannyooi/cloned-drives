@@ -9,12 +9,13 @@
     "handling": 74,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Eco-Friendly"],
+    "tags": [
+        "Eco-Friendly"
+    ],
     "isPrize": false,
-
     "weight": 1565,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
@@ -23,32 +24,22 @@
     "mra": 17.94,
     "ola": 68.18,
     "description": "Green Golf. Card by Andu",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/865588912760160296/egolf.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819923018368155668/egolf.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819923027587629056/egolf1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819923035287977994/egolf2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819923060445413436/egolf996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819923050623401984/egolf969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819923042717007872/egolf699.png",
-
     "333TopSpeed": 99,
     "3330to60": 8.4,
     "333Handling": 76,
-
     "666TopSpeed": 104,
-    "6660to60": 7.9, 
+    "6660to60": 7.9,
     "666Handling": 79,
-
     "996TopSpeed": 110,
     "9960to60": 7.5,
     "996Handling": 79,
-
     "969TopSpeed": 110,
     "9690to60": 7.9,
     "969Handling": 82,
-
     "699TopSpeed": 104,
     "6990to60": 7.5,
-    "699Handling": 82
+    "699Handling": 82,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

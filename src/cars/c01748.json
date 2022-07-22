@@ -9,9 +9,11 @@
     "handling": 77,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Oddity","The Japanese Odyssey"],
+    "tags": [
+        "Oddity",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1469,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +25,22 @@
     "mra": 62.83,
     "ola": 73.24,
     "description": "How in the world that a Nismo version with a CVT transmssion of the 4WD Juke exists?. Card by Spence.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/860167866582171668/image0.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/860169195388272650/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/860169247304056852/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/860169273758711878/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/860169307249704990/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/860169344256704542/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/860169397591343124/image0.jpg",
-
     "333TopSpeed": 133,
     "3330to60": 6.7,
     "333Handling": 80,
-
     "666TopSpeed": 137,
     "6660to60": 6.4,
     "666Handling": 82,
-
     "699TopSpeed": 137,
-    "6990to60": 6.0,
+    "6990to60": 6,
     "699Handling": 85,
-
     "969TopSpeed": 141,
     "9690to60": 6.4,
     "969Handling": 85,
-
     "996TopSpeed": 141,
-    "9960to60": 6.0,
-    "996Handling": 82
+    "9960to60": 6,
+    "996Handling": 82,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

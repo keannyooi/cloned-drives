@@ -9,9 +9,10 @@
     "handling": 82,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Super Sedan"],
+    "tags": [
+        "Super Sedan"
+    ],
     "isPrize": false,
-
     "weight": 1900,
     "gc": "Low",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 73.33,
     "ola": 109.09,
     "description": "Card by Connor.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/826904511082659870/B.Maserati4PorteGTS.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826904550434013214/B.Maserati4porteGTS.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826904572831203345/B.Maserati4porteGTS-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826904606239752223/B.Maserati4porteGTS-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826904686912208906/B.Maserati4porteGTS-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826904664209358868/B.Maserati4porteGTS-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826904636862496768/B.Maserati4porteGTS-699.png",
-
     "333TopSpeed": 196,
     "3330to60": 4.2,
     "333Handling": 85,
-
     "666TopSpeed": 198,
-    "6660to60": 4.0,
+    "6660to60": 4,
     "666Handling": 87,
-
     "996TopSpeed": 201,
     "9960to60": 3.7,
     "996Handling": 87,
-
     "969TopSpeed": 201,
-    "9690to60": 4.0,
+    "9690to60": 4,
     "969Handling": 91,
-
     "699TopSpeed": 198,
     "6990to60": 3.7,
-    "699Handling": 91
+    "699Handling": 91,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

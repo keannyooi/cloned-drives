@@ -9,9 +9,10 @@
     "handling": 76,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1100,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 52.14,
     "ola": 68.49,
     "description": "Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/869168641738952704/andtheysayionlymakelegends.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/869169110985080862/colt.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/869169126764072960/colt333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/869169136796827738/colt666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/869169163703316500/colt996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/869169154085752893/colt969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/869169145168683008/colt699.png",
-
     "333TopSpeed": 134,
     "3330to60": 6.9,
     "333Handling": 79,
-
     "666TopSpeed": 138,
     "6660to60": 6.6,
     "666Handling": 81,
-
     "996TopSpeed": 142,
     "9960to60": 6.2,
     "996Handling": 81,
-
     "969TopSpeed": 142,
     "9690to60": 6.6,
     "969Handling": 84,
-
     "699TopSpeed": 138,
     "6990to60": 6.2,
-    "699Handling": 84
+    "699Handling": 84,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

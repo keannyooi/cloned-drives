@@ -9,9 +9,10 @@
     "handling": 82,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1457,
     "gc": "Medium",
     "seatCount": 2,
@@ -23,32 +24,22 @@
     "mra": 65.66,
     "ola": 76.92,
     "description": "A laid back version of the Supra with turbo-less 2JZ. Card by Connor",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/897204502258651146/C.ToyotaSupraSZ.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/897204621980872744/ToyotaSupraSZ.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/897204634895126528/ToyotaSupraSZ-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/897204648161706035/ToyotaSupraSZ-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/897204687126810684/ToyotaSupraSZ-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/897204675084959774/ToyotaSupraSZ-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/897204662321684560/ToyotaSupraSZ-699.png",
-
     "333TopSpeed": 144,
     "3330to60": 6.2,
     "333Handling": 85,
-
     "666TopSpeed": 147,
     "6660to60": 5.9,
     "666Handling": 87,
-
     "996TopSpeed": 151,
     "9960to60": 5.5,
     "996Handling": 87,
-
     "969TopSpeed": 151,
     "9690to60": 5.9,
     "969Handling": 91,
-
     "699TopSpeed": 147,
     "6990to60": 5.5,
-    "699Handling": 91
+    "699Handling": 91,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

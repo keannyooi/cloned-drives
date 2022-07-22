@@ -9,9 +9,10 @@
     "handling": 88,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Supercar"],
+    "tags": [
+        "Supercar"
+    ],
     "isPrize": false,
-
     "weight": 1812,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +24,22 @@
     "mra": 74.51,
     "ola": 82.49,
     "description": "The italian Bull with one of the most stupidest, most italian 'putting the top up' mechanism ever. Card by Spence.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/958021311366569984/375822D4-B2B4-4341-9FB3-0149A70B7BC5.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/958021386306207764/FB723F72-E137-4005-9949-9346AE75AB22.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/958021403242795088/2A6A41A8-12C4-4ACF-A45B-363273F54826.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/958021415934763038/28D422D6-172E-4F1F-8369-9D1224691DDA.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/958021459480043640/1DD314D0-6BC5-4989-92AB-55C1F2BFBF1D.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/958021442199486624/1E6E64A9-A791-4327-A2E9-7DB0A4923894.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/958021430669361212/C8A68FB5-8735-41ED-88B5-AD2EC6C93BC9.jpg",
-
     "333TopSpeed": 208,
     "3330to60": 3.2,
     "333Handling": 91,
-
     "666TopSpeed": 210,
     "6660to60": 3.1,
     "666Handling": 94,
-
     "996TopSpeed": 213,
     "9960to60": 2.9,
     "996Handling": 94,
-
     "969TopSpeed": 213,
     "9690to60": 3.1,
     "969Handling": 98,
-
     "699TopSpeed": 210,
     "6990to60": 2.9,
-    "699Handling": 98
+    "699Handling": 98,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

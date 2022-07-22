@@ -9,9 +9,10 @@
     "handling": 69,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Sleeper"],
+    "tags": [
+        "Sleeper"
+    ],
     "isPrize": false,
-
     "weight": 2190,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 76.25,
     "ola": 75.41,
     "description": "Fastest long boi W140 available. Card by havvy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/823584444966764554/M-B600SEL.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823584511937871882/000_600sel.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823584516673241088/111_600sel.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823584521143320576/222_600sel.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823584538109935686/332_600sel.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823584531843776543/323_600sel.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823584526214234112/233_600sel.png",
-
     "333TopSpeed": 158,
     "3330to60": 5.8,
     "333Handling": 71,
-
     "666TopSpeed": 162,
     "6660to60": 5.5,
     "666Handling": 74,
-
     "996TopSpeed": 165,
     "9960to60": 5.2,
     "996Handling": 74,
-
     "969TopSpeed": 165,
     "9690to60": 5.5,
     "969Handling": 77,
-
     "699TopSpeed": 162,
     "6990to60": 5.2,
-    "699Handling": 77
+    "699Handling": 77,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

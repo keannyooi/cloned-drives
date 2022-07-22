@@ -9,9 +9,14 @@
     "handling": 78,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Motorsport", "Style Icon", "Ultra Expensive", "Supercar", "Unique"],
+    "tags": [
+        "Motorsport",
+        "Style Icon",
+        "Ultra Expensive",
+        "Supercar",
+        "Unique"
+    ],
     "isPrize": true,
-
     "weight": 1217,
     "gc": "Low",
     "seatCount": 2,
@@ -23,33 +28,22 @@
     "mra": 94.62,
     "ola": 107.69,
     "description": "Ford's Ferrari win streak breaker. Card by havvy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/826571127719591956/FordGT40MkII.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826571179603132436/000_gt40.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826571183649718272/111_gt40.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826571187579650058/222_gt40.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826571201249673286/332_gt40.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826571196530425866/323_gt40.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826571192046714970/233_gt40.png",
-
     "333TopSpeed": 202,
-    "3330to60": 4.0,
+    "3330to60": 4,
     "333Handling": 81,
-
     "666TopSpeed": 204,
     "6660to60": 3.8,
     "666Handling": 83,
-
     "996TopSpeed": 207,
     "9960to60": 3.6,
     "996Handling": 83,
-
     "969TopSpeed": 207,
     "9690to60": 3.8,
     "969Handling": 87,
-
     "699TopSpeed": 204,
     "6990to60": 3.6,
-    "699Handling": 87
-
+    "699Handling": 87,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

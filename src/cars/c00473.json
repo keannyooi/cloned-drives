@@ -9,9 +9,11 @@
     "handling": 94,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": ["Motorsport", "Unique"],
+    "tags": [
+        "Motorsport",
+        "Unique"
+    ],
     "isPrize": false,
-
     "weight": 1510,
     "gc": "Low",
     "seatCount": 1,
@@ -20,35 +22,25 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 90.00,
-    "ola": 75.00,
+    "mra": 90,
+    "ola": 75,
     "description": "A very fast pony. Card by Johnny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/822224780890865723/cate-test.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/822224882402066443/Ford-Mustang-FR500GT.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/822224887048306718/Ford-Mustang-FR500GT-1-star.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/822224890715045888/Ford-Mustang-FR500GT-2-star.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/822224912503537704/Ford-Mustang-FR500GT-332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/822224905142534184/Ford-Mustang-FR500GT-323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/822224898873229362/Ford-Mustang-FR500GT-233.png",
-
     "333TopSpeed": 175,
     "3330to60": 3.7,
     "333Handling": 97,
-
     "666TopSpeed": 178,
     "6660to60": 3.5,
     "666Handling": 100,
-    
     "996TopSpeed": 181,
     "9960to60": 3.3,
     "996Handling": 100,
-
     "969TopSpeed": 181,
     "9690to60": 3.5,
     "969Handling": 104,
-
-	"699TopSpeed": 178,
+    "699TopSpeed": 178,
     "6990to60": 3.3,
-    "699Handling": 104
+    "699Handling": 104,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

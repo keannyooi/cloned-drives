@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1600,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 52.86,
     "ola": 64.86,
     "description": "One day I lost my mind and made a modern diesel crossover. Card by havvy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/828977386829774888/BMWX2xDrive20d.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/828976778110173255/x21_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/828976781141868574/x21_111.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/828976785780899910/x21_222.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/828976813341540372/x21_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/828976805683134534/x21_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/828976795013349396/x21_233.png",
-
     "333TopSpeed": 141,
-    "3330to60": 7.0,
+    "3330to60": 7,
     "333Handling": 83,
-
     "666TopSpeed": 145,
     "6660to60": 6.7,
     "666Handling": 85,
-
     "996TopSpeed": 148,
     "9960to60": 6.3,
     "996Handling": 85,
-
     "969TopSpeed": 148,
     "9690to60": 6.7,
     "969Handling": 89,
-
     "699TopSpeed": 145,
     "6990to60": 6.3,
-    "699Handling": 89
+    "699Handling": 89,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

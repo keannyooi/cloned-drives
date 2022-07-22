@@ -9,9 +9,13 @@
     "handling": 83,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["The Royal Collection", "Unique", "Ultra Expensive", "Concept"],
+    "tags": [
+        "The Royal Collection",
+        "Unique",
+        "Ultra Expensive",
+        "Concept"
+    ],
     "isPrize": true,
-
     "weight": 1990,
     "gc": "Low",
     "seatCount": 4,
@@ -23,32 +27,22 @@
     "mra": 81.32,
     "ola": 79.05,
     "description": "Luxury in action, but fatter. Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/855205851065090050/bertonejet.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/855206377542385724/rapidebertonejet22.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/855206384194289704/rapidebertonejet22333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/855206393001541632/rapidebertonejet22666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/855206418684968960/rapidebertonejet22996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/855206411267997716/rapidebertonejet22969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/855206403378905088/rapidebertonejet22699.png",
-
     "333TopSpeed": 189,
     "3330to60": 4.7,
     "333Handling": 86,
-
     "666TopSpeed": 192,
     "6660to60": 4.4,
     "666Handling": 88,
-
     "996TopSpeed": 194,
     "9960to60": 4.2,
     "996Handling": 88,
-
     "969TopSpeed": 194,
     "9690to60": 4.4,
     "969Handling": 92,
-
     "699TopSpeed": 192,
     "6990to60": 4.2,
-    "699Handling": 92
+    "699Handling": 92,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -1,6 +1,9 @@
 {
     "rq": 19,
-    "make": ["Auto Avio Construzioni", "Ferrari"],
+    "make": [
+        "Auto Avio Construzioni",
+        "Ferrari"
+    ],
     "model": "Tipo 815",
     "modelYear": 1940,
     "country": "IT",
@@ -9,9 +12,14 @@
     "handling": 62,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Oddity", "Unique", "Ultra Expensive", "Innovative", "Street Racer"],
+    "tags": [
+        "Oddity",
+        "Unique",
+        "Ultra Expensive",
+        "Innovative",
+        "Street Racer"
+    ],
     "isPrize": true,
-
     "weight": 650,
     "gc": "Medium",
     "seatCount": 2,
@@ -23,32 +31,22 @@
     "mra": 55.38,
     "ola": 67.63,
     "description": "The first ever car made by Enzo Ferrari. Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/855065502010310686/autoavioconstruzionitipo815.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/855065752972558336/firstrariever.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/855065755786412032/firstrariever333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/855065763173105694/firstrariever666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/855065789378592798/firstrariever996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/855065778398429214/firstrariever969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/855065770144169984/firstrariever699.png",
-
     "333TopSpeed": 113,
     "3330to60": 13.2,
     "333Handling": 64,
-
     "666TopSpeed": 118,
     "6660to60": 12.5,
     "666Handling": 66,
-
     "996TopSpeed": 122,
     "9960to60": 11.8,
     "996Handling": 66,
-
     "969TopSpeed": 122,
     "9690to60": 12.5,
     "969Handling": 69,
-
     "699TopSpeed": 118,
     "6990to60": 11.8,
-    "699Handling": 69
+    "699Handling": 69,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

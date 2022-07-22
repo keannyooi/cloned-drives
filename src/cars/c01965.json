@@ -9,9 +9,12 @@
     "handling": 96,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": ["The Japanese Odyssey", "Motorsport", "Unique"],
+    "tags": [
+        "The Japanese Odyssey",
+        "Motorsport",
+        "Unique"
+    ],
     "isPrize": true,
-
     "weight": 1020,
     "gc": "Low",
     "seatCount": 1,
@@ -23,32 +26,22 @@
     "mra": 123.07,
     "ola": 87.5,
     "description": "Card by Aqo.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/973318147157409822/r390gt1long.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/973318418197528637/R390GT1Long.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/973318423734009946/R390GT1Long1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/973318429723492413/R390GT1Long2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/973318451097636904/R390GT1Long996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/973318444080562196/R390GT1Long969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/973318438095319091/R390GT1Long699.png",
-
     "333TopSpeed": 226,
-    "3330to60": 3.0,
+    "3330to60": 3,
     "333Handling": 99,
-
     "666TopSpeed": 229,
     "6660to60": 2.9,
     "666Handling": 102,
-
     "996TopSpeed": 231,
     "9960to60": 2.7,
     "996Handling": 102,
-
     "969TopSpeed": 231,
     "9690to60": 2.9,
     "969Handling": 107,
-
     "699TopSpeed": 229,
     "6990to60": 2.7,
-    "699Handling": 107
+    "699Handling": 107,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

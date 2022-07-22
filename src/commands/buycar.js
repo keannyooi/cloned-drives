@@ -59,11 +59,13 @@ module.exports = {
                 let balance = money - price;
                 currentCar.stock -= amount;
 
-                await profileModel.updateOne({ userID: message.author.id }, {
-                    money: balance,
-                    garage: addCars(garage, addedCars)
-                });
-                await serverStatModel.updateOne({}, { dealershipCatalog });
+                await Promise.all([
+                    profileModel.updateOne({ userID: message.author.id }, {
+                        money: balance,
+                        garage: addCars(garage, addedCars)
+                    }),
+                    serverStatModel.updateOne({}, { dealershipCatalog })
+                ]);
 
                 const successMessage = new SuccessMessage({
                     channel: message.channel,

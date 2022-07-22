@@ -9,9 +9,14 @@
     "handling": 93,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Concept", "Oddity", "Unique", "Innovative", "Servers Choice"],
+    "tags": [
+        "Concept",
+        "Oddity",
+        "Unique",
+        "Innovative",
+        "Servers Choice"
+    ],
     "isPrize": false,
-
     "weight": 1542,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +28,22 @@
     "mra": 105.4,
     "ola": 97.22,
     "description": "The closest thing to a mid-engine Corvette before the C8. Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/947574092784095293/CERVIIIPart2.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/947574172282933379/stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/947574195032838195/333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/947574245137973298/666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/947574322183151716/996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/947574297080246292/969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/947574270060531762/699.png",
-
     "333TopSpeed": 227,
     "3330to60": 3.4,
     "333Handling": 96,
-
     "666TopSpeed": 230,
     "6660to60": 3.2,
     "666Handling": 99,
-
     "996TopSpeed": 232,
     "9960to60": 3.1,
     "996Handling": 99,
-
     "969TopSpeed": 232,
     "9690to60": 3.2,
     "969Handling": 103,
-
     "699TopSpeed": 230,
     "6990to60": 3.1,
-    "699Handling": 103
+    "699Handling": 103,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

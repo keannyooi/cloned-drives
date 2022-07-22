@@ -1,6 +1,9 @@
 {
     "rq": 86,
-    "make": ["Top Secret", "Toyota"],
+    "make": [
+        "Top Secret",
+        "Toyota"
+    ],
     "model": "0-300 Supra",
     "modelYear": 2001,
     "country": "JP",
@@ -9,9 +12,14 @@
     "handling": 89,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Track Day", "Tuner", "Unique", "Street Racer","The Japanese Odyssey"],
+    "tags": [
+        "Track Day",
+        "Tuner",
+        "Unique",
+        "Street Racer",
+        "The Japanese Odyssey"
+    ],
     "isPrize": true,
-
     "weight": 1490,
     "gc": "Low",
     "seatCount": 2,
@@ -20,35 +28,25 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 124.00,
+    "mra": 124,
     "ola": 103.23,
     "description": "Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/867875049344466965/topsecretsupra.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/867875451720171530/topsecretpoopra.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/867875462885146665/topsecretpoopra333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/867875473651400714/topsecretpoopra666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/867875509903818792/topsecretpoopra996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/867875500009062440/topsecretpoopra969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/867875486285168681/topsecretpoopra699.png",
-
     "333TopSpeed": 218,
     "3330to60": 2.9,
     "333Handling": 92,
-
     "666TopSpeed": 221,
     "6660to60": 2.8,
     "666Handling": 95,
-
     "996TopSpeed": 223,
     "9960to60": 2.6,
     "996Handling": 95,
-
     "969TopSpeed": 223,
     "9690to60": 2.8,
     "969Handling": 99,
-
     "699TopSpeed": 221,
     "6990to60": 2.6,
-    "699Handling": 99
+    "699Handling": 99,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

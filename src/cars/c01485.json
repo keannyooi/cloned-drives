@@ -9,9 +9,10 @@
     "handling": 76,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["The Royal Collection"],
+    "tags": [
+        "The Royal Collection"
+    ],
     "isPrize": false,
-
     "weight": 1705,
     "gc": "Low",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 56.1,
     "ola": 75.36,
     "description": "Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/952195113679994890/XF25T.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/952195721694674944/xf25t.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/952195730183970816/xf25t333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/952195738249601034/xf25t666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/952195763805507705/xf25t996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/952195755496603658/xf25t969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/952195746982146078/xf25t699.png",
-
     "333TopSpeed": 153,
     "3330to60": 6.6,
     "333Handling": 79,
-
     "666TopSpeed": 157,
     "6660to60": 6.2,
     "666Handling": 81,
-
     "996TopSpeed": 160,
     "9960to60": 5.9,
     "996Handling": 81,
-
     "969TopSpeed": 160,
     "9690to60": 6.2,
     "969Handling": 84,
-
     "699TopSpeed": 157,
     "6990to60": 5.9,
-    "699Handling": 84
+    "699Handling": 84,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

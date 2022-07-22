@@ -11,11 +11,9 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
-
     "weight": 1075,
     "gc": "Medium",
-    "seatCount":4,
+    "seatCount": 4,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": false,
@@ -24,33 +22,22 @@
     "mra": 41.15,
     "ola": 65.42,
     "description": "A 3 door wagon is truly cool in my book. Cars by Andu.",
-
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/949221686182543370/StormWagonB.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/949221879036669962/Wagonback.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/949221888641622056/Wagonback-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/949221899978833920/Wagonback-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/949221926184845352/Wagonback-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/949221942400004176/Wagonback-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/949221955297476638/Wagonback-699.png",
-
     "333TopSpeed": 113,
     "3330to60": 10.2,
     "333Handling": 73,
-
     "666TopSpeed": 118,
-    "6660to60": 9.6, 
+    "6660to60": 9.6,
     "666Handling": 76,
-
     "996TopSpeed": 122,
     "9960to60": 9.1,
     "996Handling": 76,
-
     "969TopSpeed": 122,
     "9690to60": 9.6,
     "969Handling": 79,
-
     "699TopSpeed": 118,
     "6990to60": 9.1,
-    "699Handling": 79
+    "699Handling": 79,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

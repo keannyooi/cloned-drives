@@ -9,10 +9,10 @@
     "handling": 72,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Servers Choice"],
+    "tags": [
+        "Servers Choice"
+    ],
     "isPrize": false,
-
-
     "weight": 950,
     "gc": "Low",
     "seatCount": 4,
@@ -21,36 +21,25 @@
     "abs": false,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 34.70,
+    "mra": 34.7,
     "ola": 66.67,
     "description": "The Golf mk2 GTI just in an american flavor. Card by Andu",
-
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/824673768009760768/VWJettaGLI.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821100411703525403/JettaGLI.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821100417156382770/JettaGLI1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821100430254800963/JettaGLI2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821100452929077248/JettaGLI996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821100446675763210/JettaGLI969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821100438358458438/JettaGLI699.png",
-
     "333TopSpeed": 123,
     "3330to60": 8.8,
     "333Handling": 74,
-
     "666TopSpeed": 128,
     "6660to60": 8.4,
-    "666Handling": 77,   
-
+    "666Handling": 77,
     "996TopSpeed": 132,
     "9960to60": 7.9,
     "996Handling": 77,
-
     "969TopSpeed": 132,
     "9690to60": 8.4,
     "969Handling": 80,
-
     "699TopSpeed": 128,
     "6990to60": 7.9,
-    "699Handling": 80
+    "699Handling": 80,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

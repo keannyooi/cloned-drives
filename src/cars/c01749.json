@@ -9,9 +9,10 @@
     "handling": 76,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1455,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 54.89,
     "ola": 73.06,
     "description": "I HATE YOU I HATE YOU I HATE YOU. Card by Spence.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/860167716383359016/image0.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/860168919565991967/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/860168974142930944/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/860169002995417088/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/860169034833985576/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/860169062193692692/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/860169088013828096/image0.jpg",
-
     "333TopSpeed": 128,
     "3330to60": 6.9,
     "333Handling": 79,
-
     "666TopSpeed": 132,
     "6660to60": 6.6,
     "666Handling": 81,
-
     "699TopSpeed": 132,
     "6990to60": 6.2,
     "699Handling": 84,
-
     "969TopSpeed": 137,
     "9690to60": 6.6,
     "969Handling": 84,
-
     "996TopSpeed": 137,
     "9960to60": 6.2,
-    "996Handling": 81
+    "996Handling": 81,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

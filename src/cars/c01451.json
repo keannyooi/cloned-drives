@@ -9,13 +9,13 @@
     "handling": 74,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Grand Tourer"],
+    "tags": [
+        "Grand Tourer"
+    ],
     "isPrize": false,
-
-
     "weight": 1586,
     "gc": "Medium",
-    "seatCount":4,
+    "seatCount": 4,
     "bodyStyle": "Coupe",
     "tcs": false,
     "abs": true,
@@ -24,33 +24,22 @@
     "mra": 68.14,
     "ola": 82.79,
     "description": "The Grandaddy of the modern M cars. Card by Andu.",
-
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/945392733986652232/M635csi.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/945393114661675018/M635CSi.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/945393126296674304/M635CSi-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/945393136652415016/M635CSi-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/945393153647726622/M635CSi-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/945393171242823720/M635CSi-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/945393187390914651/M635CSi-6699.png",
-
     "333TopSpeed": 159,
     "3330to60": 5.9,
     "333Handling": 76,
-
     "666TopSpeed": 163,
-    "6660to60": 5.6, 
+    "6660to60": 5.6,
     "666Handling": 79,
-
     "996TopSpeed": 166,
     "9960to60": 5.3,
     "996Handling": 79,
-
     "969TopSpeed": 166,
     "9690to60": 5.6,
     "969Handling": 82,
-
     "699TopSpeed": 163,
     "6990to60": 5.3,
-    "699Handling": 82
+    "699Handling": 82,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

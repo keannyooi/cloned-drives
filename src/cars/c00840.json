@@ -1,6 +1,9 @@
 {
     "rq": 82,
-    "make": ["Mercedes-AMG", "Mercedes-Benz"],
+    "make": [
+        "Mercedes-AMG",
+        "Mercedes-Benz"
+    ],
     "model": "SLS Black Series",
     "modelYear": 2013,
     "country": "DE",
@@ -9,9 +12,11 @@
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Supercar", "Grand Tourer"],
+    "tags": [
+        "Supercar",
+        "Grand Tourer"
+    ],
     "isPrize": true,
-
     "weight": 1550,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +28,22 @@
     "mra": 85.71,
     "ola": 90.91,
     "description": "Card by havvy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/860517220600512530/unknown.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/860517283629498378/bs_000.png",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/860517288587427840/bs_111.png",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/860517292118638612/bs_222.png",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/860517307046297690/bs_332.png",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/860517302104489994/bs_323.png",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/860517296879304714/bs_233.png",
-
     "333TopSpeed": 199,
     "3330to60": 3.1,
     "333Handling": 94,
-
     "666TopSpeed": 201,
-    "6660to60": 3.0,
+    "6660to60": 3,
     "666Handling": 97,
-
     "996TopSpeed": 204,
     "9960to60": 2.8,
     "996Handling": 97,
-
     "969TopSpeed": 204,
-    "9690to60": 3.0,
+    "9690to60": 3,
     "969Handling": 101,
-
     "699TopSpeed": 201,
     "6990to60": 2.8,
-    "699Handling": 101
+    "699Handling": 101,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

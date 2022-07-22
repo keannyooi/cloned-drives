@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1124,
     "gc": "Low",
     "seatCount": 4,
@@ -23,32 +22,22 @@
     "mra": 28.24,
     "ola": 71.43,
     "description": "Card by andu",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/845694464499384321/500C2017.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821493483642683452/500c.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821493495630004266/500c1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821493502244159538/500c2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821493524875968512/500c996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821493519092023356/500c969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821493509759828048/500c699.png",
-
     "333TopSpeed": 112,
     "3330to60": 9.3,
     "333Handling": 76,
-
     "666TopSpeed": 117,
     "6660to60": 8.8,
     "666Handling": 79,
-
-	"996TopSpeed": 122,
+    "996TopSpeed": 122,
     "9960to60": 8.3,
     "996Handling": 79,
-
     "969TopSpeed": 122,
     "9690to60": 8.8,
     "969Handling": 82,
-
-	"699TopSpeed": 117,
+    "699TopSpeed": 117,
     "6990to60": 8.3,
-    "699Handling": 82
+    "699Handling": 82,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

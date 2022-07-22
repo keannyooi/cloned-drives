@@ -5,13 +5,14 @@
     "modelYear": 2013,
     "country": "US",
     "topSpeed": 185,
-    "0to60": 4.0,
+    "0to60": 4,
     "handling": 90,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Supercar"],
+    "tags": [
+        "Supercar"
+    ],
     "isPrize": false,
-
     "weight": 1577,
     "gc": "Medium",
     "seatCount": 2,
@@ -21,34 +22,24 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 78.43,
-    "ola": 90.00,
+    "ola": 90,
     "description": "Resting on a new aluminum frame, the seventh-generation Corvette arrives in 2013 and marks the model's biggest change in more than a decade. Card by Connor.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/934136899898052708/S.ChevyCorvetteStingrayZ51C7.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/934136984040005712/ChevyCorvetteC7.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/934137075110920285/ChevyCorvetteC7-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/934137099697926174/ChevyCorvetteC7-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/934137178919936050/ChevyCorvetteC7-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/934137152550367232/ChevyCorvetteC7-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/934137127858499614/ChevyCorvetteC7-699.png",
-
     "333TopSpeed": 188,
     "3330to60": 3.8,
     "333Handling": 93,
-
     "666TopSpeed": 191,
     "6660to60": 3.6,
     "666Handling": 96,
-
     "996TopSpeed": 193,
     "9960to60": 3.4,
     "996Handling": 96,
-
     "969TopSpeed": 193,
     "9690to60": 3.6,
     "969Handling": 100,
-
     "699TopSpeed": 191,
     "6990to60": 3.4,
-    "699Handling": 100
+    "699Handling": 100,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

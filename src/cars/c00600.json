@@ -9,9 +9,11 @@
     "handling": 78,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Super Sedan", "Sleeper"],
+    "tags": [
+        "Super Sedan",
+        "Sleeper"
+    ],
     "isPrize": false,
-
     "weight": 1890,
     "gc": "Low",
     "seatCount": 5,
@@ -23,32 +25,22 @@
     "mra": 85.71,
     "ola": 88.89,
     "description": "An M5 challenger from a British luxury brand. Card by havvy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/821157310214045716/JaguarXFR.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821157347182641222/000_xfr.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821157354304700436/111_xfr.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821157358851588116/222_xfr.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821157381941624902/332_xfr.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821157376979632148/323_xfr.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821157364324761640/233_xfr.png",
-
     "333TopSpeed": 158,
     "3330to60": 4.3,
     "333Handling": 81,
-
     "666TopSpeed": 162,
     "6660to60": 4.1,
     "666Handling": 83,
-
     "996TopSpeed": 165,
     "9960to60": 3.8,
     "996Handling": 83,
-
     "969TopSpeed": 165,
     "9690to60": 4.1,
     "969Handling": 87,
-
-	"699TopSpeed": 162,
+    "699TopSpeed": 162,
     "6990to60": 3.8,
-    "699Handling": 87
+    "699Handling": 87,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

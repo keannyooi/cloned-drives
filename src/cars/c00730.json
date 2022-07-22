@@ -5,13 +5,15 @@
     "modelYear": 2001,
     "country": "GB",
     "topSpeed": 124,
-    "0to60": 6.0,
+    "0to60": 6,
     "handling": 89,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["The Royal Collection", "Style Icon"],
+    "tags": [
+        "The Royal Collection",
+        "Style Icon"
+    ],
     "isPrize": false,
-
     "weight": 774,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +25,22 @@
     "mra": 51.28,
     "ola": 83.33,
     "description": "A new beginning for the old icon. Hot rq yes i do agree! Card by Tom.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/851548385299398736/Lotus_Elise_2001.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/851548732562473011/Lotus_Elise_2001_111.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/851548737151303680/Lotus_Elise_2001_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/851548744205860954/Lotus_Elise_2001_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/851548759346380814/Lotus_Elise_2001_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/851548755484213308/Lotus_Elise_2001_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/851548749972766790/Lotus_Elise_2001_699.jpg",
-
     "333TopSpeed": 128,
     "3330to60": 5.7,
     "333Handling": 92,
-
     "666TopSpeed": 132,
     "6660to60": 5.4,
     "666Handling": 95,
-
     "996TopSpeed": 137,
     "9960to60": 5.1,
     "996Handling": 95,
-
     "969TopSpeed": 137,
     "9690to60": 5.4,
     "969Handling": 99,
-
     "699TopSpeed": 132,
     "6990to60": 5.1,
-    "699Handling": 99
+    "699Handling": 99,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -9,9 +9,10 @@
     "handling": 78,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1513,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 55.32,
     "ola": 61.54,
     "description": "Kizashi is a Japanese word which means 'something great is coming', and Kizashi was great but it was launched just after the financial crisis which led to poor sales. Card by Connor.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/865675873607745556/C.SuzukiKizashiSport.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/865676112936042526/SuzukiKizashiSport.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/865676122432077834/SuzukiKizashiSport-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/865676132825169930/SuzukiKizashiSport-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/865676162739077160/SuzukiKizashiSport-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/865676153858555914/SuzukiKizashiSport-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/865676144023961660/SuzukiKizashiSport-699.png",
-
     "333TopSpeed": 138,
     "3330to60": 7.4,
     "333Handling": 81,
-
     "666TopSpeed": 142,
-    "6660to60": 7.0,
+    "6660to60": 7,
     "666Handling": 83,
-
     "996TopSpeed": 146,
     "9960to60": 6.6,
     "996Handling": 83,
-
     "969TopSpeed": 146,
-    "9690to60": 7.0,
+    "9690to60": 7,
     "969Handling": 87,
-
     "699TopSpeed": 142,
     "6990to60": 6.6,
-    "699Handling": 87
+    "699Handling": 87,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

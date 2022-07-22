@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1340,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,33 +22,22 @@
     "mra": 52.17,
     "ola": 71.43,
     "description": "In 1986, Toyota switched its iconic Celica from rear to front-wheel drive, but it didn't ruin the car. Card by Connor",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820013697803616266/D.ToyotaCelicaGTSLiftback.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820013688836456468/D.ToyotaCelicaGTSLiftback.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820013715919208498/D.ToyotaCelicaGTSLiftback-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820013737129541702/D.ToyotaCelicaGTSLiftback-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820013816254300170/D.ToyotaCelicaGTSLiftback-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820013780830126160/D.ToyotaCelicaGTSLiftback-969.png",
-	  "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820013760277381160/D.ToyotaCelicaGTSLiftback-699.png",
-
     "333TopSpeed": 128,
-    "3330to60": 8.0,
+    "3330to60": 8,
     "333Handling": 75,
-
     "666TopSpeed": 132,
-    "6660to60": 7.6, 
+    "6660to60": 7.6,
     "666Handling": 78,
-
     "996TopSpeed": 137,
     "9960to60": 7.1,
     "996Handling": 78,
-
     "969TopSpeed": 137,
     "9690to60": 7.6,
     "969Handling": 81,
-
     "699TopSpeed": 132,
     "6990to60": 7.1,
-    "699Handling": 81
-
+    "699Handling": 81,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

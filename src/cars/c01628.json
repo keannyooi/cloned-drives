@@ -9,9 +9,11 @@
     "handling": 80,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Street Racer","The Japanese Odyssey"],
+    "tags": [
+        "Street Racer",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1720,
     "gc": "Medium",
     "seatCount": 2,
@@ -23,32 +25,22 @@
     "mra": 62.58,
     "ola": 65.24,
     "description": "Card by Havvy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/866713645353271316/Mitsubishi3000GT.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/866713703326941265/3kgt_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/866713704719187969/3kgt_111.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/866713709023461396/3kgt_222.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/866713728198901760/3kgt_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/866713723624620082/3kgt_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/866713715617693706/3kgt_233.png",
-
     "333TopSpeed": 158,
     "3330to60": 5.5,
     "333Handling": 83,
-
     "666TopSpeed": 162,
     "6660to60": 5.2,
     "666Handling": 85,
-
     "996TopSpeed": 165,
     "9960to60": 4.9,
     "996Handling": 85,
-
     "969TopSpeed": 165,
     "9690to60": 5.2,
     "969Handling": 89,
-
     "699TopSpeed": 162,
     "6990to60": 4.9,
-    "699Handling": 89
+    "699Handling": 89,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

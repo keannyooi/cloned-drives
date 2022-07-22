@@ -9,9 +9,11 @@
     "handling": 70,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": ["Concept", "Unique"],
+    "tags": [
+        "Concept",
+        "Unique"
+    ],
     "isPrize": true,
-
     "weight": 2344,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +25,22 @@
     "mra": 40.31,
     "ola": 66.67,
     "description": "Peter Schweitzer's experimental Ford Bronco with the F-150 Lightning flow. Card by Preston",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/823460195119267880/white_boi.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823461883620622366/whiteboi_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823461891677356062/whiteboi_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823461896841199656/whiteboi_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823461929530949692/whiteboi_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823461917887561728/whiteboi_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823461906991415296/whiteboi_699.jpg",
-
     "333TopSpeed": 115,
     "3330to60": 7.3,
     "333Handling": 72,
-
     "666TopSpeed": 119,
     "6660to60": 6.9,
     "666Handling": 75,
-
-	"996TopSpeed": 124,
+    "996TopSpeed": 124,
     "9960to60": 6.5,
     "996Handling": 75,
-
     "969TopSpeed": 124,
     "9690to60": 6.9,
     "969Handling": 78,
-
-	"699TopSpeed": 119,
+    "699TopSpeed": 119,
     "6990to60": 6.5,
-    "699Handling": 78
+    "699Handling": 78,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

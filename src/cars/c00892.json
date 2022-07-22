@@ -5,13 +5,15 @@
     "modelYear": 1999,
     "country": "JP",
     "topSpeed": 144,
-    "0to60": 5.0,
+    "0to60": 5,
     "handling": 81,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Street Racer", "Super Sedan"],
+    "tags": [
+        "Street Racer",
+        "Super Sedan"
+    ],
     "isPrize": false,
-
     "weight": 1360,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +25,22 @@
     "mra": 64.95,
     "ola": 76,
     "description": "Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/938016595031257128/evo6GSR.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/938018187918860298/evo6gsr.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/938018197116968980/evo6gsr333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/938018203446157332/evo6gsr666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/938018231250194452/evo6gsr996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/938018223490732092/evo6gsr969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/938018214737240135/evo6gsr699.png",
-
     "333TopSpeed": 148,
     "3330to60": 4.8,
     "333Handling": 84,
-
     "666TopSpeed": 151,
     "6660to60": 4.5,
     "666Handling": 86,
-
     "996TopSpeed": 155,
     "9960to60": 4.3,
     "996Handling": 86,
-
     "969TopSpeed": 155,
     "9690to60": 4.5,
     "969Handling": 90,
-
     "699TopSpeed": 151,
     "6990to60": 4.3,
-    "699Handling": 90
+    "699Handling": 90,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

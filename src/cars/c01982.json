@@ -11,46 +11,33 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
-
     "weight": 1300,
     "gc": "Low",
-    "seatCount":4,
+    "seatCount": 4,
     "bodyStyle": "Coupe",
     "tcs": false,
     "abs": false,
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 64.37,
-    "ola":82.14,
+    "ola": 82.14,
     "description": "The holy grail of the 944. Card by Olimato",
-
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/970962659140833300/944_turbo_s.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/970962712483991572/944_turbo_s_stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/970962724441960538/944_turbo_s_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/970962735405875200/944_turbo_s_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/970962771221041182/944_turbo_s_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/970962760202600468/944_turbo_s_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/970962749658124308/944_turbo_s_699.png",
-
     "333TopSpeed": 165,
     "3330to60": 5.3,
     "333Handling": 83,
-
     "666TopSpeed": 168,
-    "6660to60": 5.0, 
+    "6660to60": 5,
     "666Handling": 85,
-
     "996TopSpeed": 172,
     "9960to60": 4.8,
     "996Handling": 85,
-
     "969TopSpeed": 172,
-    "9690to60": 5.0,
+    "9690to60": 5,
     "969Handling": 89,
-
     "699TopSpeed": 168,
     "6990to60": 4.8,
-    "699Handling": 89
+    "699Handling": 89,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

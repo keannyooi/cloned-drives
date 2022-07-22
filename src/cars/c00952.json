@@ -9,9 +9,12 @@
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Ultra Expensive", "Unique", "Track Day"],
+    "tags": [
+        "Ultra Expensive",
+        "Unique",
+        "Track Day"
+    ],
     "isPrize": true,
-
     "weight": 1098,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +26,22 @@
     "mra": 134.48,
     "ola": 61.54,
     "description": "A unicorn Le Mans racecar built for the road. Card by Spence.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819466092476891136/image0.jpg",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819466222592065556/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819466266167345182/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819466293177483274/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819466559847923732/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819466328754487326/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819466446848786483/image0.jpg",
-
     "333TopSpeed": 222,
     "3330to60": 3.7,
     "333Handling": 94,
-
     "666TopSpeed": 225,
     "6660to60": 3.5,
     "666Handling": 97,
-
     "996TopSpeed": 227,
     "9960to60": 3.3,
     "996Handling": 97,
-
     "969TopSpeed": 227,
     "9690to60": 3.5,
     "969Handling": 101,
-
     "699TopSpeed": 225,
     "6990to60": 3.3,
-    "699Handling": 101
+    "699Handling": 101,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -5,13 +5,15 @@
     "modelYear": 2002,
     "country": "JP",
     "topSpeed": 137,
-    "0to60": 5.0,
+    "0to60": 5,
     "handling": 87,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Tuner", "Street Racer"],
+    "tags": [
+        "Tuner",
+        "Street Racer"
+    ],
     "isPrize": false,
-
     "weight": 795,
     "gc": "Medium",
     "seatCount": 2,
@@ -23,33 +25,22 @@
     "mra": 84.75,
     "ola": 78.18,
     "description": "Autobacs, Japan's most popular automobile parts store chain decided to make its own car with the help of Tommykaira. Powered by Nissan's SR20VE sending 201hp and 151ft-lb of torque to the rear wheels. Card by Ahmed",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819576686604976218/Autobacs-Garaiya-Remake.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819576921942655047/Autobacs-Garaiya-stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819576938380918784/Autobacs-Garaiya-333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819576951664541716/Autobacs-Garaiya-666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819576996958044180/Autobacs-Garaiya-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819576987232239636/Autobacs-Garaiya-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819576970454892584/Autobacs-Garaiya-699.png",
-
     "333TopSpeed": 141,
     "3330to60": 4.8,
     "333Handling": 90,
-
     "666TopSpeed": 145,
     "6660to60": 4.5,
     "666Handling": 93,
-
     "996TopSpeed": 148,
     "9960to60": 4.3,
     "996Handling": 93,
-
     "969TopSpeed": 148,
     "9690to60": 4.5,
     "969Handling": 97,
-
     "699TopSpeed": 145,
     "6990to60": 4.3,
-    "699Handling": 97
-
+    "699Handling": 97,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

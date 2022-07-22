@@ -5,13 +5,14 @@
     "modelYear": 1984,
     "country": "FR",
     "topSpeed": 132,
-    "0to60": 7.0,
+    "0to60": 7,
     "handling": 77,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Hot Hatch"],
+    "tags": [
+        "Hot Hatch"
+    ],
     "isPrize": false,
-
     "weight": 1145,
     "gc": "Medium",
     "seatCount": 2,
@@ -21,34 +22,24 @@
     "enginePos": "Middle",
     "fuelType": "Petrol",
     "mra": 49.86,
-    "ola": 73.00,
+    "ola": 73,
     "description": "The homologated special edition 205 with AWD and engine at the middle was built with Group B rally car DNA. Card by Spence.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/946594716772868127/C351B7CF-AD8B-43D7-B4DF-176F74196F0D.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/946594820682555502/75D7ED59-A724-49CB-8592-863E8FA92698.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/946594830962819183/5DA4D0DA-9250-4C51-B53E-4E16F80A141B.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/946594843453456404/57855BC7-B997-4A5A-974E-6D04067EC05B.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/946594964840804382/62E6D52F-9BE3-4A2C-9B7A-2D2EB6475AB8.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/946594885488746536/C354F627-696B-41B9-93FF-651AEA9642AB.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/946594869562990632/43924311-F70C-411C-9068-11B45E7B8A9A.jpg",
-
     "333TopSpeed": 136,
     "3330to60": 6.7,
     "333Handling": 80,
-
     "666TopSpeed": 140,
     "6660to60": 6.3,
     "666Handling": 82,
-
     "996TopSpeed": 144,
-    "9960to60": 6.0,
+    "9960to60": 6,
     "996Handling": 82,
-
     "969TopSpeed": 144,
     "9690to60": 6.3,
     "969Handling": 85,
-
     "699TopSpeed": 140,
-    "6990to60": 6.0,
-    "699Handling": 85
+    "6990to60": 6,
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -9,9 +9,10 @@
     "handling": 72,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": ["Eco-Friendly"],
+    "tags": [
+        "Eco-Friendly"
+    ],
     "isPrize": false,
-
     "weight": 2187,
     "gc": "Medium",
     "seatCount": 7,
@@ -23,32 +24,22 @@
     "mra": 57.89,
     "ola": 62.34,
     "description": "The new refined sienna ready to shock people and convince them to not buy a useless crossover. Card by Macan.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/869483937251082300/Sienna_Limited_AWD_21.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/869485027409399859/Toyota_Sienna_Limited_AWD_2021_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/869485028936130560/Toyota_Sienna_Limited_AWD_2021_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/869485035240161301/Toyota_Sienna_Limited_AWD_2021_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/869485053640593448/Toyota_Sienna_Limited_AWD_2021_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/869485047219105802/Toyota_Sienna_Limited_AWD_2021_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/869485041804251136/Toyota_Sienna_Limited_AWD_2021_699.png",
-
     "333TopSpeed": 120,
     "3330to60": 7.3,
     "333Handling": 74,
-
     "666TopSpeed": 125,
     "6660to60": 6.9,
     "666Handling": 77,
-
     "996TopSpeed": 129,
     "9960to60": 6.5,
     "996Handling": 77,
-
     "969TopSpeed": 129,
     "9690to60": 6.9,
     "969Handling": 80,
-
     "699TopSpeed": 125,
     "6990to60": 6.5,
-    "699Handling": 80
+    "699Handling": 80,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

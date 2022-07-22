@@ -1,4 +1,4 @@
-﻿{
+{
     "rq": 74,
     "make": "Lincoln",
     "model": "MKZ 3.0T AWD",
@@ -11,11 +11,9 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
-
     "weight": 1930,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Sedan",
     "tcs": true,
     "abs": true,
@@ -24,33 +22,22 @@
     "mra": 73.91,
     "ola": 62.75,
     "description": "Slow, sleeper, buy a Merc instead, looks bad. Card by misopasko and quote by the CD Community",
-
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/855224230874841118/2017_Lincoln_MKZ_3.0T_AWD_F.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/855223357981327401/LM000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/855223442398511104/LM333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/855223480882823168/LM666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/855223974009897000/LM996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/855223946537861130/LM969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/855223917656145950/LM699.png",
-
     "333TopSpeed": 153,
     "3330to60": 4.8,
     "333Handling": 87,
-
     "666TopSpeed": 157,
-    "6660to60": 4.6, 
+    "6660to60": 4.6,
     "666Handling": 90,
-
     "996TopSpeed": 160,
     "9960to60": 4.3,
     "996Handling": 90,
-
     "969TopSpeed": 160,
     "9690to60": 4.6,
     "969Handling": 93,
-
     "699TopSpeed": 157,
     "6990to60": 4.3,
-    "699Handling": 93
+    "699Handling": 93,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

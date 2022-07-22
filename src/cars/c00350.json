@@ -9,9 +9,12 @@
     "handling": 90,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Muscle Car", "Silver Screen", "Supercar"],
+    "tags": [
+        "Muscle Car",
+        "Silver Screen",
+        "Supercar"
+    ],
     "isPrize": false,
-
     "weight": 1941,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +26,22 @@
     "mra": 82.14,
     "ola": 86.96,
     "description": "*(proceeds to wheelie off the production line)* Card by, you guessed it, DodgeDemon",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819422978386296832/2018_Dodge_Challenger_SRT_Demon.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/825397426901876796/demon.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/825397433784729620/demon333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/825397440110526484/demon666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/825397471495979088/demon996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/825397462722150420/demon969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/825397453925646366/demon699.png",
-
     "333TopSpeed": 206,
     "3330to60": 2.2,
     "333Handling": 93,
-
     "666TopSpeed": 208,
     "6660to60": 2.1,
     "666Handling": 96,
-
     "996TopSpeed": 211,
-    "9960to60": 2.0,
+    "9960to60": 2,
     "996Handling": 96,
-
-	"969TopSpeed": 211,
+    "969TopSpeed": 211,
     "9690to60": 2.1,
     "969Handling": 100,
-
-	"699TopSpeed": 208,
-    "6990to60": 2.0,
-    "699Handling": 100
+    "699TopSpeed": 208,
+    "6990to60": 2,
+    "699Handling": 100,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1325,
     "gc": "Medium",
     "seatCount": 4,
@@ -21,34 +20,24 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 56.37,
-    "ola": 74.30,
+    "ola": 74.3,
     "description": "Some say that Japanese engineers struggle to pronounce the word \"stallion\", and that they named a car after the handicap. Card by Keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/856532686919041064/mitsubishi_starion_esi-r.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/856531320377180180/starion_esi-r_000.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/856531327755354122/starion_esi-r_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/856531334742278194/starion_esi-r_666.jpg",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/856531347945553921/starion_esi-r_996.jpg",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/856531343919546368/starion_esi-r_969.jpg",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/856531339774656532/starion_esi-r_699.jpg",
-
     "333TopSpeed": 135,
     "3330to60": 7.7,
     "333Handling": 75,
-
     "666TopSpeed": 139,
     "6660to60": 7.3,
     "666Handling": 78,
-
     "996TopSpeed": 143,
     "9960to60": 6.9,
     "996Handling": 78,
-
     "969TopSpeed": 143,
     "9690to60": 7.3,
     "969Handling": 81,
-
     "699TopSpeed": 139,
     "6990to60": 6.9,
-    "699Handling": 81
+    "699Handling": 81,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

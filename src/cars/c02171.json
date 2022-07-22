@@ -9,9 +9,12 @@
     "handling": 92,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Track Day", "The Royal Collection", "Grand Tourer"],
+    "tags": [
+        "Track Day",
+        "The Royal Collection",
+        "Grand Tourer"
+    ],
     "isPrize": false,
-
     "weight": 1327,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +26,22 @@
     "mra": 90.24,
     "ola": 70.27,
     "description": "Card by Tom.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/855069416273346600/Lotus_Evora_GT430_Sport_2017.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/855069505378320384/Lotus_Evora_GT430_Sport_2017_111.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/855069510155632640/Lotus_Evora_GT430_Sport_2017_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/855069514671849492/Lotus_Evora_GT430_Sport_2017_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/855069527435378718/Lotus_Evora_GT430_Sport_2017_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/855069522771705896/Lotus_Evora_GT430_Sport_2017_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/855069518400585728/Lotus_Evora_GT430_Sport_2017_699.jpg",
-
     "333TopSpeed": 199,
     "3330to60": 3.5,
     "333Handling": 95,
-
     "666TopSpeed": 201,
     "6660to60": 3.3,
     "666Handling": 98,
-
     "996TopSpeed": 204,
     "9960to60": 3.1,
     "996Handling": 98,
-
     "969TopSpeed": 204,
     "9690to60": 3.3,
     "969Handling": 102,
-
     "699TopSpeed": 201,
     "6990to60": 3.1,
-    "699Handling": 102
+    "699Handling": 102,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

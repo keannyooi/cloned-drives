@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1380,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,33 +22,22 @@
     "mra": 45.79,
     "ola": 67.35,
     "description": "Ford hit a homerun with its radically styled and superb Taurus Sedan. Card by Connor",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/822556871289339944/E.FordTaurusLX.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/822557048927289364/E.FordTaurusLX.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/822557095085211718/E.FordTaurusLX-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/822557141135130694/E.FordTaurusLX-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/822557310773493840/E.FordTaurusLX-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/822557245677764638/E.FordTaurusLX-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/822557198944436285/E.FordTaurusLX-699.png",
-
     "333TopSpeed": 119,
     "3330to60": 9.3,
     "333Handling": 70,
-
     "666TopSpeed": 123,
     "6660to60": 8.8,
     "666Handling": 72,
-
     "996TopSpeed": 128,
     "9960to60": 8.3,
     "996Handling": 72,
-
     "969TopSpeed": 128,
     "9690to60": 8.8,
     "969Handling": 75,
-
     "699TopSpeed": 123,
     "6990to60": 8.3,
-    "699Handling": 75
-
+    "699Handling": 75,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

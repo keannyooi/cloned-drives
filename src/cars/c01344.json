@@ -1,6 +1,9 @@
 {
     "rq": 86,
-    "make": ["Unplugged Performance", "Tesla"],
+    "make": [
+        "Unplugged Performance",
+        "Tesla"
+    ],
     "model": "Model 3 Performance Ascension-R Pikes Peak",
     "modelYear": 2020,
     "country": "US",
@@ -9,9 +12,12 @@
     "handling": 92,
     "driveType": "4WD",
     "tyreType": "Slick",
-    "tags": ["Eco-Friendly", "Motorsport", "Tuner"],
+    "tags": [
+        "Eco-Friendly",
+        "Motorsport",
+        "Tuner"
+    ],
     "isPrize": false,
-
     "weight": 1765,
     "gc": "Low",
     "seatCount": 1,
@@ -23,32 +29,22 @@
     "mra": 62.22,
     "ola": 82.14,
     "description": "Unplugged Performance takes on Pikes Peak - and crashes, but fortunately the car was repaired just in time for the event. Card by keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/858545821624827924/unplugged_performance_model_3_perf_pikes_peak.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/858543834261356554/up_model3_pikes_000.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/858543839907545108/up_model3_pikes_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/858543845132992542/up_model3_pikes_666.jpg",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/858543860148994058/up_model3_pikes_996.jpg",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/858543857246666772/up_model3_pikes_969.jpg",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/858543849676603442/up_model3_pikes_699.jpg",
-
     "333TopSpeed": 165,
     "3330to60": 2.7,
     "333Handling": 95,
-
     "666TopSpeed": 168,
     "6660to60": 2.5,
     "666Handling": 98,
-
     "996TopSpeed": 172,
     "9960to60": 2.4,
     "996Handling": 98,
-
     "969TopSpeed": 172,
     "9690to60": 2.5,
     "969Handling": 102,
-
     "699TopSpeed": 168,
     "6990to60": 2.4,
-    "699Handling": 102
+    "699Handling": 102,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

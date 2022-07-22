@@ -5,17 +5,17 @@
     "modelYear": 2000,
     "country": "JP",
     "topSpeed": 116,
-    "0to60": 11.0,
+    "0to60": 11,
     "handling": 70,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
-
     "weight": 1300,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Sedan",
     "tcs": false,
     "abs": true,
@@ -24,33 +24,22 @@
     "mra": 52.63,
     "ola": 65.45,
     "description": "The legendary world renowned, car of all years of all time and all days in diesel form. Card by Andu",
-
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/866751313790763039/Carisma19DIDGL.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/866751925260255273/Carisma19did.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/866751934437261332/Carisma19did-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/866751957468446740/Carisma19did-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/866751958488317983/Carisma19did-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/866751980952092692/Carisma19did-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/866752000616038460/Carisma19did-699.png",
-
     "333TopSpeed": 120,
     "3330to60": 10.5,
     "333Handling": 72,
-
     "666TopSpeed": 125,
-    "6660to60": 9.9, 
+    "6660to60": 9.9,
     "666Handling": 75,
-
     "996TopSpeed": 129,
     "9960to60": 9.4,
     "996Handling": 75,
-
     "969TopSpeed": 129,
     "9690to60": 9.9,
     "969Handling": 78,
-
     "699TopSpeed": 125,
     "6990to60": 9.4,
-    "699Handling": 78
+    "699Handling": 78,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

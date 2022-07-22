@@ -9,9 +9,10 @@
     "handling": 80,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Style Icon"],
+    "tags": [
+        "Style Icon"
+    ],
     "isPrize": true,
-
     "weight": 1417,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +24,22 @@
     "mra": 73.29,
     "ola": 74.77,
     "description": "W I D E   P A N T E R A. Card by keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/827026378548969482/de_tomaso_pantera_gt5.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/827041652190740520/pantera_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/827041660680273979/pantera_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/827041667865509888/pantera_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/827041706620354570/pantera_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/827041695832866826/pantera_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/827041684348600330/pantera_699.jpg",
-
     "333TopSpeed": 157,
     "3330to60": 5.1,
     "333Handling": 83,
-
     "666TopSpeed": 161,
     "6660to60": 4.9,
     "666Handling": 85,
-
-	"996TopSpeed": 164,
+    "996TopSpeed": 164,
     "9960to60": 4.6,
     "996Handling": 85,
-
     "969TopSpeed": 164,
     "9690to60": 4.9,
     "969Handling": 89,
-
-	"699TopSpeed": 161,
+    "699TopSpeed": 161,
     "6990to60": 4.6,
-    "699Handling": 89
+    "699Handling": 89,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

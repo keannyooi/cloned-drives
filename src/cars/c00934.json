@@ -11,7 +11,6 @@
     "tyreType": "All-Surface",
     "tags": [],
     "isPrize": false,
-
     "weight": 2673,
     "gc": "High",
     "seatCount": 7,
@@ -23,32 +22,22 @@
     "mra": 57.82,
     "ola": 70.43,
     "description": "Ultra Luxury at no extra cost. Card by Andu.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/985997050250399855/ArmadaPlatinumReserve.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/985998191428239411/ArmadaPlatinumReserve.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/985998208599748638/ArmadaPlatinumReserve-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/985998220155052052/ArmadaPlatinumReserve-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/985998247145390140/ArmadaPlatinumReserve-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/985998255294918656/ArmadaPlatinumReserve-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/985998270599938078/ArmadaPlatinumReserve-699.png",
-
     "333TopSpeed": 137,
     "3330to60": 5.8,
     "333Handling": 69,
-
     "666TopSpeed": 141,
     "6660to60": 5.5,
     "666Handling": 71,
-
     "996TopSpeed": 145,
     "9960to60": 5.2,
     "996Handling": 71,
-
     "969TopSpeed": 145,
     "9690to60": 5.5,
     "969Handling": 74,
-
     "699TopSpeed": 141,
     "6990to60": 5.2,
-    "699Handling": 74
+    "699Handling": 74,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

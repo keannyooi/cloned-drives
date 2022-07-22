@@ -9,9 +9,12 @@
     "handling": 78,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Supercar", "Style Icon", "Ultra Expensive"],
+    "tags": [
+        "Supercar",
+        "Style Icon",
+        "Ultra Expensive"
+    ],
     "isPrize": false,
-
     "weight": 1180,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +26,22 @@
     "mra": 79.17,
     "ola": 82.05,
     "description": "An updated P400, retaining what made the Miura special with added horses. Card by DodgeDemon",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/976699682833190962/Lamborghini_Miura_S_1968.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/976700428152614942/Lamborghini_Miura_S_1968_H0.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/976700446913740820/Lamborghini_Miura_S_1968_H1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/976700463338651678/Lamborghini_Miura_S_1968_H2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/976700535476461608/Lamborghini_Miura_S_1968_H332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/976700510600052826/Lamborghini_Miura_S_1968_H323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/976700480858226688/Lamborghini_Miura_S_1968_H233.png",
-
     "333TopSpeed": 180,
     "3330to60": 5.6,
     "333Handling": 81,
-
     "666TopSpeed": 183,
     "6660to60": 5.3,
     "666Handling": 83,
-
     "996TopSpeed": 185,
-    "9960to60": 5.0,
+    "9960to60": 5,
     "996Handling": 83,
-
     "969TopSpeed": 186,
     "9690to60": 5.3,
     "969Handling": 87,
-
     "699TopSpeed": 183,
-    "6990to60": 5.0,
-    "699Handling": 87
+    "6990to60": 5,
+    "699Handling": 87,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1630,
     "gc": "Low",
     "seatCount": 4,
@@ -23,32 +22,22 @@
     "mra": 61.08,
     "ola": 100.08,
     "description": "Card by Exist.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/840844653531103262/CD_Audi_A4_2.0_T_Cabrio.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/840844742241681408/CD_Audi_A4_2.0_T_Cabrio_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/840844750034829342/CD_Audi_A4_2.0_T_Cabrio_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/840844760473403413/CD_Audi_A4_2.0_T_Cabrio_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/840844773719408640/CD_Audi_A4_2.0_T_Cabrio_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/840844768371015730/CD_Audi_A4_2.0_T_Cabrio_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/840844764642410496/CD_Audi_A4_2.0_T_Cabrio_699.png",
-
     "333TopSpeed": 149,
     "3330to60": 6.9,
     "333Handling": 81,
-
     "666TopSpeed": 152,
     "6660to60": 6.6,
     "666Handling": 83,
-
     "996TopSpeed": 156,
     "9960to60": 6.2,
     "996Handling": 83,
-
     "969TopSpeed": 156,
     "9690to60": 6.6,
     "969Handling": 87,
-
     "699TopSpeed": 152,
     "6990to60": 6.2,
-    "699Handling": 87
+    "699Handling": 87,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

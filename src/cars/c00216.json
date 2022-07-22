@@ -9,9 +9,12 @@
     "handling": 90,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Hypercar", "Ultra Expensive", "Unique"],
+    "tags": [
+        "Hypercar",
+        "Ultra Expensive",
+        "Unique"
+    ],
     "isPrize": true,
-
     "weight": 1979,
     "gc": "Low",
     "seatCount": 1,
@@ -23,32 +26,22 @@
     "mra": 141.17,
     "ola": 87.5,
     "description": "The Record setter for the first 'production car' to get 300Mph. Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/952192290376515634/Chiron300Proto.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/952192643331420212/chiron300proto.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/952192651468365894/chiron300proto1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/952192663694766100/chiron300proto2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/952192701300899890/chiron300proto996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/952192684796289084/chiron300proto969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/952192674163728414/chiron300proto699.png",
-
     "333TopSpeed": 307,
     "3330to60": 2.3,
     "333Handling": 93,
-
     "666TopSpeed": 308,
     "6660to60": 2.2,
     "666Handling": 96,
-
     "996TopSpeed": 310,
-    "9960to60": 2.0,
+    "9960to60": 2,
     "996Handling": 96,
-
     "969TopSpeed": 310,
     "9690to60": 2.2,
     "969Handling": 100,
-
     "699TopSpeed": 308,
-    "6990to60": 2.0,
-    "699Handling": 100
+    "6990to60": 2,
+    "699Handling": 100,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

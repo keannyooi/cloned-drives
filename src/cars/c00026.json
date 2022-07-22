@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1410,
     "gc": "Low",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 70.61,
     "ola": 87.57,
     "description": "Launched at the Frankfurt Motor Show in 2001 and introduced in May 2002, the GTA dropped the manufacturer’s sonorous 3.2-litre V6 behind the 156’s V-shaped grille, deploying 247bhp to the front wheels. Card by havvy.",
-
     "card": "https://media.discordapp.net/attachments/819199720249360384/829009473715568690/AlfaRomeo156GTA.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/829009885546545202/156gta_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/829009890047557642/156gta_111.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/829009893729632306/156gta_222.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/829009909005418516/156gta_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/829009905235001344/156gta_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/829009899269783593/156gta_233.png",
-
     "333TopSpeed": 158,
     "3330to60": 5.9,
     "333Handling": 84,
-
     "666TopSpeed": 162,
     "6660to60": 5.6,
     "666Handling": 86,
-
     "996TopSpeed": 165,
     "9960to60": 5.3,
     "996Handling": 86,
-
     "969TopSpeed": 165,
     "9690to60": 5.6,
     "969Handling": 90,
-
     "699TopSpeed": 162,
     "6990to60": 5.3,
-    "699Handling": 90
+    "699Handling": 90,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -1,4 +1,4 @@
-﻿{
+{
     "rq": 12,
     "make": "Renault",
     "model": "5 GTL",
@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 775,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +22,22 @@
     "mra": 12.98,
     "ola": 59.88,
     "description": "Sitting by the Christmas tree. Card by Andu ",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/865588814202404874/GTL.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821486343983988746/5GTL.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821486348858294352/5GTL1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821486354936234004/5GTL2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821486377627680889/5GTL996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821486369872412712/5GTL969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821486362191593512/5GTL699.png",
-
     "333TopSpeed": 97,
     "3330to60": 15.9,
     "333Handling": 63,
-
     "666TopSpeed": 102,
-    "6660to60": 15.0, 
+    "6660to60": 15,
     "666Handling": 65,
-
     "996TopSpeed": 108,
     "9960to60": 14.2,
     "996Handling": 65,
-
     "969TopSpeed": 108,
-    "9690to60": 15.0,
+    "9690to60": 15,
     "969Handling": 68,
-
     "699TopSpeed": 102,
     "6990to60": 14.2,
-    "699Handling": 68
+    "699Handling": 68,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

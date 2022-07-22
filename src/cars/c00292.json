@@ -9,9 +9,10 @@
     "handling": 79,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Servers Choice"],
+    "tags": [
+        "Servers Choice"
+    ],
     "isPrize": false,
-
     "weight": 1422,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 53.79,
     "ola": 76.92,
     "description": "Card by keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819382760493023232/chevrolet_malibu_rs.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819909567731204106/malibu_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819909574676185108/malibu_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819909579361091644/malibu_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819909628203761664/malibu_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819909614647640084/malibu_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819909599191760906/malibu_699.jpg",
-
     "333TopSpeed": 134,
     "3330to60": 7.4,
     "333Handling": 82,
-
     "666TopSpeed": 138,
-    "6660to60": 7.0,
+    "6660to60": 7,
     "666Handling": 84,
-
-	"996TopSpeed": 142,
+    "996TopSpeed": 142,
     "9960to60": 6.6,
     "996Handling": 84,
-
     "969TopSpeed": 142,
-    "9690to60": 7.0,
+    "9690to60": 7,
     "969Handling": 88,
-
     "699TopSpeed": 138,
     "6990to60": 6.6,
-    "699Handling": 88
+    "699Handling": 88,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

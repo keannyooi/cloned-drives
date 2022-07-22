@@ -9,9 +9,13 @@
     "handling": 97,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": ["Motorsport", "Ultra Expensive", "Unique", "Eargasm"],
+    "tags": [
+        "Motorsport",
+        "Ultra Expensive",
+        "Unique",
+        "Eargasm"
+    ],
     "isPrize": true,
-
     "weight": 902,
     "gc": "Low",
     "seatCount": 1,
@@ -23,32 +27,22 @@
     "mra": 156.52,
     "ola": 67.5,
     "description": "time to run... Card by Thunk.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/851885880859033600/TS020.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/851885977261178900/000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/851886000002433054/333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/851886015940526140/666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/851886069011316746/996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/851886052016783380/969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/851886031133081661/699.png",
-
     "333TopSpeed": 238,
     "3330to60": 3.4,
     "333Handling": 100,
-
     "666TopSpeed": 240,
     "6660to60": 3.2,
     "666Handling": 103,
-
     "996TopSpeed": 243,
     "9960to60": 3.1,
     "996Handling": 103,
-
     "969TopSpeed": 243,
     "9690to60": 3.2,
     "969Handling": 108,
-
     "699TopSpeed": 240,
     "6990to60": 3.1,
-    "699Handling": 108
+    "699Handling": 108,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

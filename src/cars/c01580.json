@@ -9,13 +9,13 @@
     "handling": 70,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
-
     "weight": 1190,
     "gc": "Medium",
-    "seatCount":4,
+    "seatCount": 4,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": false,
@@ -24,33 +24,22 @@
     "mra": 46.67,
     "ola": 67.35,
     "description": "XE for jp-spec. Cars by Andu.",
-
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/948299351023841290/PiazzaXE.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/948299804084174898/PiazzaXE.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/948299813236137984/PiazzaXE-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/948299822790750228/PiazzaXE-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/948299845943328798/PiazzaXE-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/948299860526899270/PiazzaXE-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/948299871578886154/PiazzaXE-699.png",
-
     "333TopSpeed": 117,
     "3330to60": 9.3,
     "333Handling": 72,
-
     "666TopSpeed": 121,
-    "6660to60": 8.8, 
+    "6660to60": 8.8,
     "666Handling": 75,
-
     "996TopSpeed": 126,
     "9960to60": 8.3,
     "996Handling": 75,
-
     "969TopSpeed": 126,
     "9690to60": 8.8,
     "969Handling": 78,
-
     "699TopSpeed": 121,
     "6990to60": 8.3,
-    "699Handling": 78
+    "699Handling": 78,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

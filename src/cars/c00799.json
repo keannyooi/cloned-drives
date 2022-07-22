@@ -9,9 +9,12 @@
     "handling": 94,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["The Royal Collection", "Track Day", "Supercar"],
+    "tags": [
+        "The Royal Collection",
+        "Track Day",
+        "Supercar"
+    ],
     "isPrize": false,
-
     "weight": 1229,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +26,22 @@
     "mra": 117.02,
     "ola": 96.07,
     "description": "Card by Smega.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/854634441631858698/CD_McLaren_765LT.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/850357753930317834/CD_McLaren_765LT_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/850357766186729472/CD_McLaren_765LT_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/850357768643674122/CD_McLaren_765LT_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/850357787577024532/CD_McLaren_765LT_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/850357785417744414/CD_McLaren_765LT_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/850357779151060992/CD_McLaren_765LT_699.png",
-
     "333TopSpeed": 208,
     "3330to60": 2.7,
     "333Handling": 97,
-
     "666TopSpeed": 210,
     "6660to60": 2.5,
     "666Handling": 100,
-
     "996TopSpeed": 213,
     "9960to60": 2.4,
     "996Handling": 100,
-
     "969TopSpeed": 213,
     "9690to60": 2.5,
     "969Handling": 104,
-
     "699TopSpeed": 210,
     "6990to60": 2.4,
-    "699Handling": 104
+    "699Handling": 104,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -9,9 +9,10 @@
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Grand Tourer"],
+    "tags": [
+        "Grand Tourer"
+    ],
     "isPrize": false,
-
     "weight": 1361,
     "gc": "Low",
     "seatCount": 2,
@@ -20,35 +21,25 @@
     "abs": true,
     "enginePos": "Middle",
     "fuelType": "Petrol",
-    "mra": 80.00,
-    "ola": 90.00,
+    "mra": 80,
+    "ola": 90,
     "description": "Card by McNuggets.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/861692837388615700/gt410.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/861692739736829993/Evora_GT410_2020_111.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/861692746531340318/Evora_GT410_2020_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/861692751228567552/Evora_GT410_2020_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/861692763601633310/Evora_GT410_2020_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/861692759403266058/Evora_GT410_2020_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/861692755767984128/Evora_GT410_2020_699.jpg",
-
     "333TopSpeed": 188,
     "3330to60": 3.9,
     "333Handling": 94,
-
     "666TopSpeed": 191,
     "6660to60": 3.7,
     "666Handling": 97,
-
     "996TopSpeed": 193,
     "9960to60": 3.5,
     "996Handling": 97,
-
     "969TopSpeed": 193,
     "9690to60": 3.7,
     "969Handling": 101,
-
     "699TopSpeed": 191,
     "6990to60": 3.5,
-    "699Handling": 101
+    "699Handling": 101,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

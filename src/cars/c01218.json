@@ -9,9 +9,11 @@
     "handling": 86,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Street Racer", "Track Day"],
+    "tags": [
+        "Street Racer",
+        "Track Day"
+    ],
     "isPrize": false,
-
     "weight": 1470,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +25,22 @@
     "mra": 56.96,
     "ola": 66.67,
     "description": "The 6th S-Series edition with a NBR exterior package as a commemoration of the team's class victory in the 24 Hrs of Nurburgring. Card by Spence",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/846538977179861012/image0.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/846539042212151306/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/846539059173785691/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/846539072779714590/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/846539086608203776/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/846539100910780466/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/846539114459037756/image0.jpg",
-
     "333TopSpeed": 158,
     "3330to60": 4.3,
     "333Handling": 89,
-
     "666TopSpeed": 162,
     "6660to60": 4.1,
     "666Handling": 92,
-
     "699TopSpeed": 162,
     "6990to60": 3.8,
     "699Handling": 95,
-
     "969TopSpeed": 165,
     "9690to60": 4.1,
     "969Handling": 95,
-
     "996TopSpeed": 165,
     "9960to60": 3.8,
-    "996Handling": 92
+    "996Handling": 92,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -9,9 +9,13 @@
     "handling": 92,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Unique", "Concept", "Supercar", "Ultra Expensive"],
+    "tags": [
+        "Unique",
+        "Concept",
+        "Supercar",
+        "Ultra Expensive"
+    ],
     "isPrize": false,
-
     "weight": 1451,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +27,22 @@
     "mra": 100,
     "ola": 103.23,
     "description": "The craziest Ford concept car ever made to date. setup to become the potential top speed record holder at the time. Card by Spence.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/939710758248386610/D3AED03E-600E-4776-A1F0-EA68AF1F4780.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/939710887663652945/38D9782B-EF39-4CD7-82B1-EAA5734B66D2.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/939710905061609512/D310362E-4E77-421F-805C-6F01D12DC71F.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/939710916210069615/07CCB294-522C-4BD2-8ACD-CB0A244A94E0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/939710955703664650/7B7CF132-4B86-445F-90AE-961E01504C0C.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/939710944131571783/F20BC20F-0863-4068-8130-ACCB8EECC4EA.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/939710931389276180/A6BCA68E-3B5F-40FC-B029-4F93929CAAF6.jpg",
-
     "333TopSpeed": 255,
     "3330to60": 2.9,
     "333Handling": 95,
-
     "666TopSpeed": 257,
     "6660to60": 2.8,
     "666Handling": 98,
-
     "996TopSpeed": 259,
     "9960to60": 2.6,
     "996Handling": 98,
-
     "969TopSpeed": 259,
     "9690to60": 2.8,
     "969Handling": 102,
-
     "699TopSpeed": 257,
     "6990to60": 2.6,
-    "699Handling": 102
+    "699Handling": 102,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

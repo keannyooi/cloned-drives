@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1360,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 50.28,
     "ola": 69.66,
     "description": "Luxury and space for the kids. Card by Macan",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/851223174343163914/218i_Active_Tourer_Luxury_Line_14.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/851223262138728458/BMW_218i_Active_Tourer_Luxury_Line_2014_000.png",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/851223268429004852/BMW_218i_Active_Tourer_Luxury_Line_2014_333.png",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/851223275061379082/BMW_218i_Active_Tourer_Luxury_Line_2014_666.png",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/851223290797096981/BMW_218i_Active_Tourer_Luxury_Line_2014_996.png",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/851223287211753503/BMW_218i_Active_Tourer_Luxury_Line_2014_969.png",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/851223281558224976/BMW_218i_Active_Tourer_Luxury_Line_2014_699.png",
-
     "333TopSpeed": 131,
     "3330to60": 8.5,
     "333Handling": 73,
-
     "666TopSpeed": 135,
-    "6660to60": 8.0,
+    "6660to60": 8,
     "666Handling": 76,
-
     "996TopSpeed": 139,
     "9960to60": 7.6,
     "996Handling": 76,
-
     "969TopSpeed": 139,
-    "9690to60": 8.0,
+    "9690to60": 8,
     "969Handling": 79,
-
     "699TopSpeed": 135,
     "6990to60": 7.6,
-    "699Handling": 79
+    "699Handling": 79,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

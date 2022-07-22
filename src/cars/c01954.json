@@ -9,13 +9,13 @@
     "handling": 64,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
-
     "weight": 1018,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Minivan",
     "tcs": false,
     "abs": true,
@@ -24,33 +24,22 @@
     "mra": 19.96,
     "ola": 63.02,
     "description": "Phenomenal space inside, but an eye sore to look at. Card by Andu",
-
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/897035322074988574/YarisVerso14D4DSol.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/897035090750767104/VersoTDI.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/897035098547957760/VersoTDI-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/897035104742936596/VersoTDI-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/897035123990605824/VersoTDI-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/897035137508855808/VersoTDI-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/897035151777873920/VersoTDI-699.png",
-
     "333TopSpeed": 105,
     "3330to60": 12.6,
     "333Handling": 66,
-
     "666TopSpeed": 110,
-    "6660to60": 12.0, 
+    "6660to60": 12,
     "666Handling": 68,
-
     "996TopSpeed": 116,
     "9960to60": 11.3,
     "996Handling": 68,
-
     "969TopSpeed": 116,
-    "9690to60": 12.0,
+    "9690to60": 12,
     "969Handling": 71,
-
     "699TopSpeed": 110,
     "6990to60": 11.3,
-    "699Handling": 71
+    "699Handling": 71,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

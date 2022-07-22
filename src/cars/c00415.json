@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 880,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +22,22 @@
     "mra": 38.76,
     "ola": 61.92,
     "description": "Proof that you don't have to pay big bucks for a mid-engined sports car. Card by keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/973945186600247306/x19.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/973950107840028743/x19000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/973950121324711966/x19333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/973950137384718396/x19666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/973950151901212772/x19996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/973950173967421521/x19969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/973950191294111824/x19699.png",
-
     "333TopSpeed": 106,
     "3330to60": 13.4,
     "333Handling": 72,
-
     "666TopSpeed": 111,
     "6660to60": 12.7,
     "666Handling": 75,
-
     "996TopSpeed": 116,
-    "9960to60": 12.0,
+    "9960to60": 12,
     "996Handling": 75,
-
     "969TopSpeed": 116,
     "9690to60": 12.7,
     "969Handling": 78,
-
     "699TopSpeed": 111,
-    "6990to60": 12.0,
-    "699Handling": 78
+    "6990to60": 12,
+    "699Handling": 78,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

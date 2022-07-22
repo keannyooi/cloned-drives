@@ -11,7 +11,6 @@
     "tyreType": "All-Surface",
     "tags": [],
     "isPrize": false,
-
     "weight": 1285,
     "gc": "High",
     "seatCount": 4,
@@ -23,32 +22,22 @@
     "mra": 21.11,
     "ola": 64.63,
     "description": "Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/952194661039087646/NivaLegendClassic.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/952195405490311258/NivaLegendClassic.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/952195412939386950/NivaLegendClassic333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/952195422980554752/NivaLegendClassic666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/952195446296682506/NivaLegendClassic996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/952195437773852732/NivaLegendClassic969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/952195429884362782/NivaLegendClassic699.png",
-
     "333TopSpeed": 94,
     "3330to60": 15.6,
     "333Handling": 70,
-
     "666TopSpeed": 100,
     "6660to60": 14.8,
     "666Handling": 72,
-
     "996TopSpeed": 106,
     "9960to60": 13.9,
     "996Handling": 72,
-
     "969TopSpeed": 106,
     "9690to60": 14.8,
     "969Handling": 75,
-
     "699TopSpeed": 100,
     "6990to60": 13.9,
-    "699Handling": 75
+    "699Handling": 75,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

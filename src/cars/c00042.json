@@ -1,6 +1,9 @@
 {
     "rq": 67,
-    "make": ["Alpina", "BMW"],
+    "make": [
+        "Alpina",
+        "BMW"
+    ],
     "model": "B7 Bi-Turbo",
     "modelYear": 2009,
     "country": "DE",
@@ -9,9 +12,12 @@
     "handling": 77,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Sleeper", "Tuner", "Super Sedan"],
+    "tags": [
+        "Sleeper",
+        "Tuner",
+        "Super Sedan"
+    ],
     "isPrize": false,
-
     "weight": 2050,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +29,22 @@
     "mra": 75.65,
     "ola": 82.76,
     "description": "The marque’s attempt at beating AMG at its own game. It is effectively a BMW 7-series with the dials twisted around to 11. Card by Havvy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/825459064712462396/alpinab7.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/825459433256910868/B7T.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/825459443490750527/B7T1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/825459454497259591/B7T2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/825459465742319636/B7T996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/825459461274861648/B7T969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/825459456309198911/B7T699.png",
-
     "333TopSpeed": 191,
     "3330to60": 4.2,
     "333Handling": 80,
-
     "666TopSpeed": 194,
-    "6660to60": 4.0,
+    "6660to60": 4,
     "666Handling": 82,
-
     "996TopSpeed": 196,
     "9960to60": 3.7,
     "996Handling": 82,
-
     "969TopSpeed": 196,
-    "9690to60": 4.0,
+    "9690to60": 4,
     "969Handling": 85,
-
-	"699TopSpeed": 194,
+    "699TopSpeed": 194,
     "6990to60": 3.7,
-    "699Handling": 85
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

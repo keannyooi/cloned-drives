@@ -9,9 +9,11 @@
     "handling": 86,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["The Royal Collection", "Grand Tourer"],
+    "tags": [
+        "The Royal Collection",
+        "Grand Tourer"
+    ],
     "isPrize": false,
-
     "weight": 1844,
     "gc": "Low",
     "seatCount": 4,
@@ -23,32 +25,22 @@
     "mra": 73.08,
     "ola": 94.74,
     "description": "Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/852108985535954944/ysevanquishvolante.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/852109570461270067/VanquishVolante.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/852109575251427349/VanquishVolante333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/852109580104368128/VanquishVolante666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/852109608238579712/VanquishVolante996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/852109597589897236/VanquishVolante969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/852109588656160768/VanquishVolante699.png",
-
     "333TopSpeed": 200,
     "3330to60": 3.6,
     "333Handling": 89,
-
     "666TopSpeed": 202,
     "6660to60": 3.4,
     "666Handling": 92,
-
     "996TopSpeed": 205,
     "9960to60": 3.2,
     "996Handling": 92,
-
     "969TopSpeed": 205,
     "9690to60": 3.4,
     "969Handling": 95,
-
     "699TopSpeed": 202,
     "6990to60": 3.2,
-    "699Handling": 95
+    "699Handling": 95,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

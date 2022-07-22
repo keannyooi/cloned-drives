@@ -11,7 +11,6 @@
     "tyreType": "All-Surface",
     "tags": [],
     "isPrize": false,
-
     "weight": 1999,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 60.02,
     "ola": 63.16,
     "description": "Making salespeople's lives easier at a dealer near you. Card by Aqo",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/840250686855184434/edge.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/840254453503229982/EdgeSp.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/840254459933491261/EdgeSp1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/840254468347658260/EdgeSp2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/840254491285913610/EdgeSp992.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/840254481245011989/EdgeSp969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/840254473645457428/EdgeSp699.png",
-
     "333TopSpeed": 136,
     "3330to60": 5.4,
     "333Handling": 80,
-
     "666TopSpeed": 140,
-    "6660to60": 5.1, 
+    "6660to60": 5.1,
     "666Handling": 82,
-
     "996TopSpeed": 144,
     "9960to60": 4.8,
     "996Handling": 82,
-
     "969TopSpeed": 144,
     "9690to60": 5.1,
     "969Handling": 85,
-
     "699TopSpeed": 140,
     "6990to60": 4.8,
-    "699Handling": 85
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -9,9 +9,11 @@
     "handling": 73,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Eco-Friendly", "Rest of The World"],
+    "tags": [
+        "Eco-Friendly",
+        "Rest of The World"
+    ],
     "isPrize": false,
-
     "weight": 1760,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +25,22 @@
     "mra": 64.32,
     "ola": 84.17,
     "description": "Hyundai's second EV takes form of a crossover SUV. Card by Exist",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/824720171674370048/KonaEl.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824720494477443112/KonaE.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824720501553365032/KonaE1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824720507383316581/KonaE2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824720530317246484/KonaE996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824720522964238427/KonaE969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824720516211408956/KonaE699.png",
-
     "333TopSpeed": 112,
     "3330to60": 6.3,
     "333Handling": 75,
-
     "666TopSpeed": 117,
     "6660to60": 5.9,
     "666Handling": 78,
-
-	"996TopSpeed": 122,
+    "996TopSpeed": 122,
     "9960to60": 5.6,
     "996Handling": 78,
-
     "969TopSpeed": 122,
     "9690to60": 5.9,
     "969Handling": 81,
-
-	"699TopSpeed": 117,
+    "699TopSpeed": 117,
     "6990to60": 5.6,
-    "699Handling": 81
+    "699Handling": 81,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

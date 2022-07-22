@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1880,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +22,22 @@
     "mra": 74.19,
     "ola": 82.61,
     "description": "Card by Keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819383144414183454/gt_sport.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819533677188481024/gt_sport_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819533685132755004/gt_sport_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819533698121596958/gt_sport_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819533733266456586/gt_sport_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819533720120983552/gt_sport_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819533710608957490/gt_sport_699.jpg",
-
     "333TopSpeed": 189,
     "3330to60": 4.4,
     "333Handling": 90,
-
     "666TopSpeed": 192,
     "6660to60": 4.1,
     "666Handling": 93,
-
     "996TopSpeed": 194,
     "9960to60": 3.9,
     "996Handling": 93,
-
     "969TopSpeed": 194,
     "9690to60": 4.1,
     "969Handling": 97,
-
     "699TopSpeed": 192,
     "6990to60": 3.9,
-    "699Handling": 97
+    "699Handling": 97,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

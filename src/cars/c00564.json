@@ -5,13 +5,15 @@
     "modelYear": 2018,
     "country": "KR",
     "topSpeed": 96,
-    "0to60": 9.0,
+    "0to60": 9,
     "handling": 71,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Eco-Friendly", "Rest of The World"],
+    "tags": [
+        "Eco-Friendly",
+        "Rest of The World"
+    ],
     "isPrize": false,
-
     "weight": 1535,
     "gc": "Medium",
     "seatCount": 5,
@@ -20,35 +22,25 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Electric",
-    "mra": 23.00,
+    "mra": 23,
     "ola": 70.89,
     "description": "yse ev. Card by Keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/867698982684065802/hyundai_kona_electric_lite.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/867706116124573726/kona_electric_000.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/867706123242176512/kona_electric_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/867706126232322058/kona_electric_666.jpg",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/867706135939121162/kona_electric_996.jpg",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/867706131752288276/kona_electric_969.jpg",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/867706130153996288/kona_electric_699.jpg",
-
     "333TopSpeed": 101,
     "3330to60": 8.6,
     "333Handling": 73,
-
     "666TopSpeed": 107,
     "6660to60": 8.1,
     "666Handling": 76,
-
     "996TopSpeed": 112,
     "9960to60": 7.7,
     "996Handling": 76,
-
     "969TopSpeed": 112,
     "9690to60": 8.1,
     "969Handling": 79,
-
     "699TopSpeed": 107,
     "6990to60": 7.7,
-    "699Handling": 79
+    "699Handling": 79,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

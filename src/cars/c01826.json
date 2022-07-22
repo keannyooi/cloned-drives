@@ -1,6 +1,10 @@
 {
     "rq": 59,
-    "make": ["Star Road", "Nissan", "Datsun"],
+    "make": [
+        "Star Road",
+        "Nissan",
+        "Datsun"
+    ],
     "model": "Neo Fairlady Z",
     "modelYear": 2014,
     "country": "JP",
@@ -9,9 +13,12 @@
     "handling": 81,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Tuner", "Track Day","The Japanese Odyssey"],
+    "tags": [
+        "Tuner",
+        "Track Day",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1200,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +30,22 @@
     "mra": 87.27,
     "ola": 89.58,
     "description": "When you want to be a fast boi around Tsukuba but you only have a 50-year-old car to work with. Card by Keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/869499876247994389/star_road_neo_fairlay_z.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/869219242002771988/rainbow_road_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/869219248931741726/rainbow_road_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/869219250714316820/rainbow_road_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/869219261690810368/rainbow_road_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/869219257089667112/rainbow_road_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/869219254845710366/rainbow_road_699.jpg",
-
     "333TopSpeed": 171,
     "3330to60": 4.6,
     "333Handling": 84,
-
     "666TopSpeed": 174,
     "6660to60": 4.3,
     "666Handling": 86,
-
     "996TopSpeed": 177,
     "9960to60": 4.1,
     "996Handling": 86,
-
     "969TopSpeed": 177,
     "9690to60": 4.3,
     "969Handling": 90,
-
     "699TopSpeed": 174,
     "6990to60": 4.1,
-    "699Handling": 90
+    "699Handling": 90,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

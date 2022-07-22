@@ -1,6 +1,9 @@
 {
     "rq": 96,
-    "make": ["Keyvanny", "Lamborghini"],
+    "make": [
+        "Keyvanny",
+        "Lamborghini"
+    ],
     "model": "Keyrus",
     "modelYear": 2020,
     "country": "DE",
@@ -9,9 +12,11 @@
     "handling": 91,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Tuner", "Unique"],
+    "tags": [
+        "Tuner",
+        "Unique"
+    ],
     "isPrize": false,
-
     "weight": 2186,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +28,22 @@
     "mra": 76.31,
     "ola": 75.86,
     "description": "Keanny Brand :floosh: Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/976510041035268106/keyvanurus.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/976510541277310976/KeyvannyKeyrus.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/976510547560390676/KeyvannyKeyrus1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/976510555315642438/KeyvannyKeyrus2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/976510580418564106/KeyvannyKeyrus996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/976510571212075158/KeyvannyKeyrus969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/976510563385507920/KeyvannyKeyrus699.png",
-
     "333TopSpeed": 205,
     "3330to60": 2.8,
     "333Handling": 94,
-
     "666TopSpeed": 207,
     "6660to60": 2.6,
     "666Handling": 97,
-
     "996TopSpeed": 210,
     "9960to60": 2.5,
     "996Handling": 97,
-
     "969TopSpeed": 210,
     "9690to60": 2.6,
     "969Handling": 101,
-
     "699TopSpeed": 207,
     "6990to60": 2.5,
-    "699Handling": 101
+    "699Handling": 101,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

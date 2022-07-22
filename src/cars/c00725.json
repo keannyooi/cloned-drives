@@ -9,9 +9,13 @@
     "handling": 89,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["The Royal Collection", "Concept", "Eco-Friendly", "Unique"],
+    "tags": [
+        "The Royal Collection",
+        "Concept",
+        "Eco-Friendly",
+        "Unique"
+    ],
     "isPrize": true,
-
     "weight": 828,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +27,22 @@
     "mra": 48.76,
     "ola": 77.97,
     "description": "A very different twist to the regular eco car: Most body panels and the interior are made out of biodegradable wood and hemp, with two solar panels on the roof, minimazing Co2 productions to a bare minimum. Card by Based.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/851899049035431936/Lotus_Eco_Elise.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/851887987313737758/Lotus_Eco_Elise_Stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/851888023662624778/Lotus_Eco_Elise_1_Star.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/851888028694609930/Lotus_Eco_Elise_2_Star.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/851888057074188288/Lotus_Eco_Elise_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/851888038166659193/Lotus_Eco_Elise_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/851888036454203472/Lotus_Eco_Elise_699.png",
-
     "333TopSpeed": 132,
     "3330to60": 5.6,
     "333Handling": 92,
-
     "666TopSpeed": 136,
     "6660to60": 5.3,
     "666Handling": 95,
-
     "996TopSpeed": 140,
-    "9960to60": 5.0,
+    "9960to60": 5,
     "996Handling": 95,
-
     "969TopSpeed": 140,
     "9690to60": 5.3,
     "969Handling": 99,
-
     "699TopSpeed": 136,
-    "6990to60": 5.0,
-    "699Handling": 99
+    "6990to60": 5,
+    "699Handling": 99,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

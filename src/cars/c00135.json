@@ -1,6 +1,9 @@
 {
     "rq": 63,
-    "make": ["Autodelta", "Alfa Romeo"],
+    "make": [
+        "Autodelta",
+        "Alfa Romeo"
+    ],
     "model": "147 GTA AM 3.7 Super",
     "modelYear": 2005,
     "country": "GB",
@@ -9,9 +12,12 @@
     "handling": 85,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Hot Hatch", "Tuner", "Sleeper"],
+    "tags": [
+        "Hot Hatch",
+        "Tuner",
+        "Sleeper"
+    ],
     "isPrize": false,
-
     "weight": 1360,
     "gc": "Low",
     "seatCount": 5,
@@ -23,32 +29,22 @@
     "mra": 76.19,
     "ola": 91.67,
     "description": "After the GTA 3.7's Top Gear fame, the Londoners go even further with the GTA by adding a supercharger. Card by keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/837302717596041296/autodelta_147_gta_am_3.7_super.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/837303130597097492/autodelta_147_super_000.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/837303136360071229/autodelta_147_super_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/837303141513822259/autodelta_147_super_666.jpg",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/837303157158707220/autodelta_147_super_996.jpg",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/837303152129867786/autodelta_147_super_969.jpg",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/837303146367418368/autodelta_147_super_699.jpg",
-
     "333TopSpeed": 183,
     "3330to60": 4.6,
     "333Handling": 88,
-
     "666TopSpeed": 186,
     "6660to60": 4.3,
     "666Handling": 91,
-
     "996TopSpeed": 189,
     "9960to60": 4.1,
     "996Handling": 91,
-
     "969TopSpeed": 189,
     "9690to60": 4.3,
     "969Handling": 94,
-
     "699TopSpeed": 186,
     "6990to60": 4.1,
-    "699Handling": 94
+    "699Handling": 94,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

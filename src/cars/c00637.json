@@ -9,9 +9,16 @@
     "handling": 98,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Unique", "Hypercar", "Track Day", "Eargasm", "Rest of The World", "Ultra Expensive", "Innovative"],
+    "tags": [
+        "Unique",
+        "Hypercar",
+        "Track Day",
+        "Eargasm",
+        "Rest of The World",
+        "Ultra Expensive",
+        "Innovative"
+    ],
     "isPrize": true,
-
     "weight": 1420,
     "gc": "Low",
     "seatCount": 2,
@@ -21,34 +28,24 @@
     "enginePos": "Middle",
     "fuelType": "Petrol",
     "mra": 158.82,
-    "ola": 103.70,
+    "ola": 103.7,
     "description": "After all that waiting and its still insane. Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/849717740448120842/YeskoReal.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/849717990634291240/yesko.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/849717997530382376/yesko333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/849718005096251422/yesko666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/849718028304384070/yesko996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/849718020137680896/yesko969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/849718011505410119/yesko699.png",
-
     "333TopSpeed": 302,
     "3330to60": 2.6,
     "333Handling": 101,
-
     "666TopSpeed": 303,
     "6660to60": 2.4,
     "666Handling": 104,
-
     "996TopSpeed": 305,
     "9960to60": 2.3,
     "996Handling": 104,
-
     "969TopSpeed": 305,
     "9690to60": 2.4,
     "969Handling": 109,
-
     "699TopSpeed": 303,
     "6990to60": 2.3,
-    "699Handling": 109
+    "699Handling": 109,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

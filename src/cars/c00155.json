@@ -9,9 +9,8 @@
     "handling": 79,
     "driveType": "RWD",
     "tyreType": "Standard",
-  	"tags": [],
+    "tags": [],
     "isPrize": false,
-
     "weight": 1485,
     "gc": "Low",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 59.02,
     "ola": 85.71,
     "description": "Card by Connor",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820218365837574152/C.BMW325iE46.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820218427028799558/C.BMW325i.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820218435224600617/C.BMW325i-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820218440899231744/C.BMW325i-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820218484381319188/C.BMW325i-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820218470943686656/C.BMW325i-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820218449279582228/C.BMW325i-699.png",
-
     "333TopSpeed": 144,
     "3330to60": 6.8,
     "333Handling": 82,
-
     "666TopSpeed": 147,
     "6660to60": 6.5,
     "666Handling": 84,
-
-	"996TopSpeed": 151,
+    "996TopSpeed": 151,
     "9960to60": 6.1,
     "996Handling": 84,
-
     "969TopSpeed": 151,
     "9690to60": 6.5,
     "969Handling": 88,
-
-	"699TopSpeed": 147,
+    "699TopSpeed": 147,
     "6990to60": 6.1,
-    "699Handling": 88
+    "699Handling": 88,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

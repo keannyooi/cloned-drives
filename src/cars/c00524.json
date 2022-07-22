@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1030,
     "gc": "Low",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 51.53,
     "ola": 76.19,
     "description": "This EG3 Civic harnesses the power of VTEC to deliver driving fun. Card by havvy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/822230105836879872/HondaCivic1.5VTi.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/822230259658915881/000_kivik.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/822230266818199552/111_kivik.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/822230268550447124/222_kivik.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/822230286031913022/332_kivik.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/822230282487726120/323_kivik.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/822230275911843880/233_kivik.png",
-
     "333TopSpeed": 133,
-    "3330to60": 8.0,
+    "3330to60": 8,
     "333Handling": 80,
-
     "666TopSpeed": 137,
     "6660to60": 7.6,
     "666Handling": 82,
-
-	"996TopSpeed": 141,
+    "996TopSpeed": 141,
     "9960to60": 7.1,
     "996Handling": 82,
-
     "969TopSpeed": 141,
     "9690to60": 7.6,
     "969Handling": 85,
-
-	"699TopSpeed": 137,
+    "699TopSpeed": 137,
     "6990to60": 7.1,
-    "699Handling": 85
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

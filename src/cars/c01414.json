@@ -1,4 +1,4 @@
-﻿{
+{
     "rq": 20,
     "make": "Volvo",
     "model": "1800ES",
@@ -9,13 +9,13 @@
     "handling": 59,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Rest of the World"],
+    "tags": [
+        "Rest of the World"
+    ],
     "isPrize": false,
-
-
     "weight": 1165,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Wagon",
     "tcs": false,
     "abs": false,
@@ -24,33 +24,22 @@
     "mra": 49.34,
     "ola": 65.49,
     "description": "Classic beauty. Card by Connor",
-
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820696398105542686/E.Volvo1800ES.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820696557904855060/E.Volvo1800ES.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820696569875398706/E.Volvo1800ES-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820696577583611924/E.Volvo1800ES-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820696615312556052/E.Volvo1800ES-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820696608106348554/E.Volvo1800ES-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820696592746151956/E.Volvo1800ES-699.png",
-
     "333TopSpeed": 120,
     "3330to60": 10.7,
     "333Handling": 61,
-
     "666TopSpeed": 125,
     "6660to60": 10.2,
-    "666Handling": 63,   
-
+    "666Handling": 63,
     "996TopSpeed": 129,
     "9960to60": 9.6,
     "996Handling": 63,
-
     "969TopSpeed": 129,
     "9690to60": 10.2,
     "969Handling": 65,
-
     "699TopSpeed": 125,
     "6990to60": 9.6,
-    "699Handling": 65
+    "699Handling": 65,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

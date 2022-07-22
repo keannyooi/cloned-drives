@@ -9,13 +9,13 @@
     "handling": 69,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
-
     "weight": 1076,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": true,
@@ -24,33 +24,22 @@
     "mra": 31.23,
     "ola": 60.5,
     "description": " Other manufacturers quickly cottoned onto Toyota's formula and ruthlessly improved quality. Toyota's response was the second generation Yaris that was bigger and better than ever before. Card by Andu",
-
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/867322837592571924/Yaris13Now.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/867323822465744916/YarisNow.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/867323831680761856/YarisNow-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/867323837897375764/YarisNow-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/867323849808936970/YarisNow-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/867323862207299584/YarisNow-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/867323873849901076/YarisNow-699.png",
-
     "333TopSpeed": 111,
     "3330to60": 11.3,
     "333Handling": 71,
-
     "666TopSpeed": 116,
-    "6660to60": 10.7, 
+    "6660to60": 10.7,
     "666Handling": 74,
-
     "996TopSpeed": 121,
     "9960to60": 10.1,
     "996Handling": 74,
-
     "969TopSpeed": 121,
     "9690to60": 10.7,
     "969Handling": 77,
-
     "699TopSpeed": 116,
     "6990to60": 10.1,
-    "699Handling": 77
+    "699Handling": 77,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

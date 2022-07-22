@@ -9,9 +9,10 @@
     "handling": 80,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Eco-Friendly"],
+    "tags": [
+        "Eco-Friendly"
+    ],
     "isPrize": false,
-
     "weight": 2241,
     "gc": "Low",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 60.71,
     "ola": 83.02,
     "description": "A sedan that manages to become the quickest production vehicle of its time thanks to Motortrend's test. Card by keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/858545060799184927/tesla_model_s_p100d.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/858542607314845696/model_s_p100d_000.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/858542612645675028/model_s_p100d_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/858922685522378782/model_s_p100d_666.jpg",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/858542637464289280/model_s_p100d_996.jpg",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/858922773006909450/model_s_p100d_969.jpg",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/858542620594798592/model_s_p100d_699.jpg",
-
     "333TopSpeed": 166,
     "3330to60": 2.4,
     "333Handling": 83,
-
     "666TopSpeed": 169,
     "6660to60": 2.3,
     "666Handling": 85,
-
     "996TopSpeed": 173,
     "9960to60": 2.1,
     "996Handling": 85,
-
     "969TopSpeed": 173,
     "9690to60": 2.3,
     "969Handling": 89,
-
     "699TopSpeed": 169,
     "6990to60": 2.1,
-    "699Handling": 89
+    "699Handling": 89,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

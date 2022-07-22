@@ -9,9 +9,11 @@
     "handling": 89,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Hot Hatch", "Tuner"],
+    "tags": [
+        "Hot Hatch",
+        "Tuner"
+    ],
     "isPrize": false,
-
     "weight": 1464,
     "gc": "Low",
     "seatCount": 4,
@@ -20,35 +22,25 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 66.10,
+    "mra": 66.1,
     "ola": 87.18,
     "description": "A special SEMA project with 500hp mated to a Manual. Card by Andu.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819469352038170664/SuperBeetle.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819469597332865034/SuperBeetle.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819469603105013760/SuperBeetle1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819469608830369802/SuperBeetle2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819469636281303060/SuperBeetle996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819469626039337018/SuperBeetle969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819469618271879188/SuperBeetle699.png",
-
     "333TopSpeed": 190,
     "3330to60": 3.7,
     "333Handling": 92,
-
     "666TopSpeed": 193,
     "6660to60": 3.5,
-    "666Handling": 95,   
-
+    "666Handling": 95,
     "996TopSpeed": 195,
     "9960to60": 3.3,
     "996Handling": 95,
-
     "969TopSpeed": 195,
     "9690to60": 3.5,
     "969Handling": 99,
-
     "699TopSpeed": 193,
     "6990to60": 3.3,
-    "699Handling": 99
+    "699Handling": 99,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

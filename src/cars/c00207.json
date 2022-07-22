@@ -9,9 +9,10 @@
     "handling": 85,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Street Racer"],
+    "tags": [
+        "Street Racer"
+    ],
     "isPrize": false,
-
     "weight": 1465,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +24,22 @@
     "mra": 65.98,
     "ola": 76.39,
     "description": "A rare and highly sought after driving experience. Card by keanny",
-
     "card": "https://media.discordapp.net/attachments/819199720249360384/926428316028772372/m_coupe_z4.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/926430199162224680/z4_m_coupe_000.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/926430199443251240/z4_m_coupe_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/926430199774605322/z4_m_coupe_666.jpg",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/926430200609247292/z4_m_coupe_996.jpg",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/926430200294694982/z4_m_coupe_969.jpg",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/926430200034639882/z4_m_coupe_699.jpg",
-
     "333TopSpeed": 162,
     "3330to60": 4.6,
     "333Handling": 88,
-
     "666TopSpeed": 166,
     "6660to60": 4.3,
     "666Handling": 91,
-
-	"996TopSpeed": 169,
+    "996TopSpeed": 169,
     "9960to60": 4.1,
     "996Handling": 91,
-
     "969TopSpeed": 169,
     "9690to60": 4.3,
     "969Handling": 94,
-
-	"699TopSpeed": 166,
+    "699TopSpeed": 166,
     "6990to60": 4.1,
-    "699Handling": 94
+    "699Handling": 94,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

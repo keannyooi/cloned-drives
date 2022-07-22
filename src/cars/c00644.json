@@ -9,9 +9,12 @@
     "handling": 92,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Style Icon", "Supercar", "Silver Screen"],
+    "tags": [
+        "Style Icon",
+        "Supercar",
+        "Silver Screen"
+    ],
     "isPrize": false,
-
     "weight": 1575,
     "gc": "Low",
     "seatCount": 2,
@@ -23,33 +26,22 @@
     "mra": 86.05,
     "ola": 79.28,
     "description": "Havvy's Childhood Dream Car. Card by Havvy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820923239114080266/LamborghiniAventadorLP700-4.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820923300603363338/000_avent.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820923309201555466/111_avent.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820923313475944518/222_avent.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820923333566529536/332_avent.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820923326187962388/323_avent.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820923320492621854/233_avent.png",
-
     "333TopSpeed": 220,
     "3330to60": 2.7,
     "333Handling": 95,
-
     "666TopSpeed": 223,
     "6660to60": 2.5,
     "666Handling": 98,
-
     "996TopSpeed": 225,
     "9960to60": 2.4,
     "996Handling": 98,
-
     "969TopSpeed": 225,
     "9690to60": 2.5,
     "969Handling": 102,
-
     "699TopSpeed": 223,
     "6990to60": 2.4,
-    "699Handling": 102
-
+    "699Handling": 102,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

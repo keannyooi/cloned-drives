@@ -5,13 +5,17 @@
     "modelYear": 2011,
     "country": "SE",
     "topSpeed": 249,
-    "0to60": 3.0,
+    "0to60": 3,
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Hypercar", "Ultra Expensive", "Rest of The World", "Unique"],
+    "tags": [
+        "Hypercar",
+        "Ultra Expensive",
+        "Rest of The World",
+        "Unique"
+    ],
     "isPrize": false,
-
     "weight": 1435,
     "gc": "Low",
     "seatCount": 2,
@@ -20,35 +24,25 @@
     "abs": true,
     "enginePos": "Middle",
     "fuelType": "Petrol",
-    "mra": 125.00,
+    "mra": 125,
     "ola": 106.67,
     "description": "Card by Aqo.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/844537448406843392/agera.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/844537692711813150/Agera.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/844537701418926120/Agera333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/844537709489946664/Agera666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/844537741782024202/Agera996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/844537731878617108/Agera969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/844537717584166922/Agera699.png",
-
     "333TopSpeed": 251,
     "3330to60": 2.9,
     "333Handling": 94,
-
     "666TopSpeed": 253,
     "6660to60": 2.7,
     "666Handling": 97,
-
     "996TopSpeed": 255,
     "9960to60": 2.6,
     "996Handling": 97,
-
     "969TopSpeed": 255,
     "9690to60": 2.7,
     "969Handling": 101,
-
     "699TopSpeed": 253,
     "6990to60": 2.6,
-    "699Handling": 101
+    "699Handling": 101,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

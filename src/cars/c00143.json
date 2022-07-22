@@ -9,9 +9,10 @@
     "handling": 76,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": ["The Royal Collection"],
+    "tags": [
+        "The Royal Collection"
+    ],
     "isPrize": false,
-
     "weight": 2497,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 68.52,
     "ola": 86.48,
     "description": "Bentley's very first SUV that's capable as a Land Rover, luxurious as a yatch and fast as a bullet. Card by Connor. ",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/849739592538128434/S.BentleyBentaygaW12.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/849739615862128670/S.BentleyBentayga.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/849739635831996437/S.BentleyBentayga-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/849739656845066300/S.BentleyBentayga-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/849739719989395507/S.BentleyBentayga-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/849739701622669332/S.BentleyBentayga-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/849739679003443220/S.BentleyBentayga-699.png",
-
     "333TopSpeed": 190,
     "3330to60": 3.5,
     "333Handling": 79,
-
     "666TopSpeed": 193,
     "6660to60": 3.3,
     "666Handling": 81,
-
     "996TopSpeed": 195,
     "9960to60": 3.1,
     "996Handling": 81,
-
     "969TopSpeed": 195,
     "9690to60": 3.3,
     "969Handling": 84,
-
     "699TopSpeed": 193,
     "6990to60": 3.1,
-    "699Handling": 84
+    "699Handling": 84,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

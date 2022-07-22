@@ -1,6 +1,9 @@
 {
     "rq": 38,
-    "make": ["Mazdaspeed", "Mazda"],
+    "make": [
+        "Mazdaspeed",
+        "Mazda"
+    ],
     "model": "MX-5",
     "modelYear": 2004,
     "country": "JP",
@@ -9,9 +12,10 @@
     "handling": 81,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Street Racer"],
+    "tags": [
+        "Street Racer"
+    ],
     "isPrize": false,
-
     "weight": 1147,
     "gc": "Low",
     "seatCount": 2,
@@ -21,34 +25,24 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 57.31,
-    "ola": 69.00,
+    "ola": 69,
     "description": "Miat. Card by Havvy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/823176964759617556/MazdaspeedMX-5.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823179873954299904/schpeed_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823179883558862858/schpeed_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823179890127929404/schpeed_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823179926655205376/schpeed_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823179914630529024/schpeed_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823179902831689748/schpeed_699.jpg",
-
     "333TopSpeed": 131,
     "3330to60": 6.4,
     "333Handling": 84,
-
     "666TopSpeed": 135,
-    "6660to60": 6.0,
+    "6660to60": 6,
     "666Handling": 86,
-
     "996TopSpeed": 139,
     "9960to60": 5.7,
     "996Handling": 86,
-
     "969TopSpeed": 139,
-    "9690to60": 6.0,
+    "9690to60": 6,
     "969Handling": 90,
-    
     "699TopSpeed": 135,
     "6990to60": 5.7,
-    "699Handling": 90
+    "699Handling": 90,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

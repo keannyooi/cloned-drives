@@ -9,9 +9,10 @@
     "handling": 79,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Street Racer"],
+    "tags": [
+        "Street Racer"
+    ],
     "isPrize": false,
-
     "weight": 1381,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +24,22 @@
     "mra": 60.85,
     "ola": 65.57,
     "description": "Card by keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/835496444507979776/prelude.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/835499234815639592/unknown.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/835499728933355530/unknown.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/835499932680323102/unknown.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/835500472264687616/unknown.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/835500389322588200/unknown.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/835500235123589180/unknown.png",
-
     "333TopSpeed": 145,
     "3330to60": 6.9,
     "333Handling": 82,
-
     "666TopSpeed": 148,
     "6660to60": 6.6,
     "666Handling": 84,
-
-	"996TopSpeed": 152,
+    "996TopSpeed": 152,
     "9960to60": 6.2,
     "996Handling": 84,
-
     "969TopSpeed": 152,
     "9690to60": 6.6,
     "969Handling": 88,
-
-	"699TopSpeed": 148,
+    "699TopSpeed": 148,
     "6990to60": 6.2,
-    "699Handling": 88
+    "699Handling": 88,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

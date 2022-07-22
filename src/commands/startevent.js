@@ -49,53 +49,61 @@ module.exports = {
                     event.deadline = DateTime.now().plus({ days: parseInt(event.deadline) }).toISO();
                 }
 
-                registerFont("RobotoCondensed-Bold.ttf", { family: "Roboto Condensed" });
+                registerFont("RobotoCondensed-Bold.ttf", { family: "Roboto Condensed", weight: "bold" });
                 const canvas = createCanvas(903 * Math.ceil(event.roster.length / 5), 299 * (event.roster.length <= 5 ? event.roster.length : 5));
                 const ctx = canvas.getContext("2d");
                 let attachment, cucked = false;
 
                 try {
-                    let huds = event.roster.map(car => {
+                    let hudPromises = await Promise.all(event.roster.map(car => {
                         let currentCar = require(`../cars/${car.carID}`);
-                        return loadImage(currentCar[`racehud${car.upgrade}`]);
-                    });
-                    let maps = event.roster.map(track => {
+                        return loadImage(currentCar["racehud"]);
+                    }));
+                    let mapPromises = await Promise.all(event.roster.map(track => {
                         let currentTrack = require(`../tracks/${track.track}`);
                         return loadImage(currentTrack["map"]);
-                    });
-                    let hudPromises = await Promise.all(huds);
-                    let mapPromises = await Promise.all(maps);
+                    }));
+                    let [moneyImage, fuseImage,
+                        trophyImage, carImage, packImage] = await Promise.all([
+                            loadImage(bot.emojis.cache.get(moneyEmojiID).url),
+                            loadImage(bot.emojis.cache.get(fuseEmojiID).url),
+                            loadImage(bot.emojis.cache.get(trophyEmojiID).url),
+                            loadImage(bot.emojis.cache.get(glofEmojiID).url),
+                            loadImage(bot.emojis.cache.get(packEmojiID).url)
+                        ]);
                     ctx.fillStyle = "#ffffff";
 
                     for (let i = 0; i < event.roster.length; i++) {
                         let baseX = Math.floor(i / 5) * 903;
                         let baseY = (i % 5) * 299;
 
-                        ctx.font = '41px "Roboto Condensed"';
+                        ctx.font = 'bold 41px "Roboto Condensed"';
                         ctx.textAlign = "left";
                         ctx.drawImage(bot.graphics.eventTemp, baseX, baseY);
                         ctx.drawImage(hudPromises[i], baseX + 13, baseY + 59, 374, 224);
                         ctx.drawImage(mapPromises[i], baseX + 482, baseY + 190, 98, 98);
                         ctx.fillText(i + 1, baseX + 130, baseY + 41);
+                        ctx.fillText(event.roster[i].upgrade, baseX + 31, baseY + 277);
 
                         let x = 0;
+                        ctx.font = 'bold 38px "Roboto Condensed"';
                         for await (let [key, value] of Object.entries(event.roster[i].rewards)) {
                             let image;
                             switch (key) {
                                 case "money":
-                                    image = await loadImage(bot.emojis.cache.get(moneyEmojiID).url);
+                                    image = moneyImage;
                                     value = value.toLocaleString("en");
                                     break;
                                 case "fuseTokens":
-                                    image = await loadImage(bot.emojis.cache.get(fuseEmojiID).url);
+                                    image = fuseImage;
                                     value = value.toLocaleString("en");
                                     break;
                                 case "trophies":
-                                    image = await loadImage(bot.emojis.cache.get(trophyEmojiID).url);
+                                    image = trophyImage;
                                     value = value.toLocaleString("en");
                                     break;
                                 case "car":
-                                    image = await loadImage(bot.emojis.cache.get(glofEmojiID).url);
+                                    image = carImage
                                     value = value.carID;
                                     let car = require(`../cars/${value}`);
                                     if (car["rq"] > 79) {
@@ -121,7 +129,7 @@ module.exports = {
                                     }
                                     break;
                                 case "pack":
-                                    image = await loadImage(bot.emojis.cache.get(packEmojiID).url);
+                                    image = packImage
                                     let pack = require(`../packs/${value}`);
                                     if (pack["packName"].toLowerCase().includes("elite")) {
                                         ctx.fillStyle = "#ff3639";
@@ -145,7 +153,7 @@ module.exports = {
                         }
 
                         ctx.textAlign = "center";
-                        ctx.font = '30px "Roboto Condensed"';
+                        ctx.font = 'bold 30px "Roboto Condensed"';
                         let reqString = "";
                         let words = reqDisplay(event.roster[i].reqs).split(" "), line = "", rowY = 0;
                         for (let x = 0; x < words.length; x++) {

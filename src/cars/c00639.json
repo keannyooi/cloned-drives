@@ -9,9 +9,14 @@
     "handling": 96,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Ultra Expensive", "Hypercar", "Track Day", "Rest of The World", "Unique"],
+    "tags": [
+        "Ultra Expensive",
+        "Hypercar",
+        "Track Day",
+        "Rest of The World",
+        "Unique"
+    ],
     "isPrize": true,
-
     "weight": 1360,
     "gc": "Low",
     "seatCount": 2,
@@ -21,34 +26,24 @@
     "enginePos": "Middle",
     "fuelType": "Petrol",
     "mra": 142.11,
-    "ola": 103.70,
+    "ola": 103.7,
     "description": "Card by Aqo.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/932597611259646022/one1.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/932597701747544105/stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/932597725743169596/333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/932597752561532938/666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/932597861588275230/996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/932597829359255572/696.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/932597787298770954/699.png",
-
     "333TopSpeed": 282,
     "3330to60": 2.6,
     "333Handling": 99,
-
     "666TopSpeed": 284,
     "6660to60": 2.4,
     "666Handling": 102,
-
     "996TopSpeed": 286,
     "9960to60": 2.3,
     "996Handling": 102,
-
     "969TopSpeed": 286,
     "9690to60": 2.4,
     "969Handling": 107,
-
     "699TopSpeed": 284,
     "6990to60": 2.3,
-    "699Handling": 107
+    "699Handling": 107,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

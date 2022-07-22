@@ -9,9 +9,10 @@
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Track Day"],
+    "tags": [
+        "Track Day"
+    ],
     "isPrize": false,
-
     "weight": 1110,
     "gc": "Low",
     "seatCount": 2,
@@ -20,35 +21,25 @@
     "abs": true,
     "enginePos": "Middle",
     "fuelType": "Petrol",
-    "mra": 76.00,
+    "mra": 76,
     "ola": 68.42,
     "description": "Card by Tom.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/950084223094628382/Lotus_Exige_V6_Cup_2012.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/950345694621859880/C_111.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/950345707796201492/C_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/950345713072627782/C_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/950345727316492329/C_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/950345722606288956/C_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/950345718382600222/C_699.jpg",
-
     "333TopSpeed": 173,
     "3330to60": 3.6,
     "333Handling": 94,
-
     "666TopSpeed": 176,
     "6660to60": 3.4,
     "666Handling": 97,
-
     "996TopSpeed": 179,
     "9960to60": 3.2,
     "996Handling": 97,
-
     "969TopSpeed": 179,
     "9690to60": 3.4,
     "969Handling": 101,
-
     "699TopSpeed": 176,
     "6990to60": 3.2,
-    "699Handling": 101
+    "699Handling": 101,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

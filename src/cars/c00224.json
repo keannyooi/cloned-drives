@@ -9,9 +9,11 @@
     "handling": 80,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Concept", "Unique"],
+    "tags": [
+        "Concept",
+        "Unique"
+    ],
     "isPrize": false,
-
     "weight": 2177,
     "gc": "Low",
     "seatCount": 4,
@@ -23,32 +25,22 @@
     "mra": 72.13,
     "ola": 90.91,
     "description": "If W16 wasn't good enough, add two more cylinders instead. Card by Spence.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/854123369779560488/image0.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/854123418756841472/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/854123436570181653/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/854123451048919040/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/854123465656238080/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/854123478591209472/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/854123492194516992/image0.jpg",
-
     "333TopSpeed": 202,
     "3330to60": 4.2,
     "333Handling": 83,
-
     "666TopSpeed": 204,
-    "6660to60": 4.0,
+    "6660to60": 4,
     "666Handling": 85,
-
     "699TopSpeed": 204,
     "6990to60": 3.7,
     "699Handling": 89,
-
     "969TopSpeed": 207,
-    "9690to60": 4.0,
+    "9690to60": 4,
     "969Handling": 89,
-
     "996TopSpeed": 207,
     "9960to60": 3.7,
-    "996Handling": 85
+    "996Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

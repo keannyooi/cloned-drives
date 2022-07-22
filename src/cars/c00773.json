@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1232,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 49.73,
     "ola": 71.74,
     "description": "A Calvinist wagon. Card by Churrito.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/965203380383395910/Mazda_Protege5.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/965203680934645760/Mazda_Protege5_Stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/965203703260930088/Mazda_Protege5_1_Star.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/965203778242506772/Mazda_Protege5_2_Star.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/965203839814885396/Mazda_Protege5_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/965203817727676466/Mazda_Protege5_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/965203798463250522/Mazda_Protege5_699.png",
-
     "333TopSpeed": 122,
     "3330to60": 8.7,
     "333Handling": 73,
-
     "666TopSpeed": 127,
     "6660to60": 8.3,
     "666Handling": 76,
-
     "996TopSpeed": 131,
     "9960to60": 7.8,
     "996Handling": 76,
-
     "969TopSpeed": 131,
     "9690to60": 8.3,
     "969Handling": 79,
-
     "699TopSpeed": 127,
     "6990to60": 7.8,
-    "699Handling": 79
+    "699Handling": 79,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

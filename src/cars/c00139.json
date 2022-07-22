@@ -9,9 +9,10 @@
     "handling": 78,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": ["The Royal Collection"],
+    "tags": [
+        "The Royal Collection"
+    ],
     "isPrize": false,
-
     "weight": 2499,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 65.33,
     "ola": 77.55,
     "description": "The Not-so-Eco-Friendly-Bentley. Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/849746861291339776/BentleyBDiesel.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/849748306749816832/bentaygadie.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/849748312562073620/bentaygadie333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/849748322192457828/bentaygadie666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/849748348043001896/bentaygadie996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/849748339254624276/bentaygadie969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/849748330778591295/bentaygadie699.png",
-
     "333TopSpeed": 171,
     "3330to60": 4.7,
     "333Handling": 81,
-
     "666TopSpeed": 174,
     "6660to60": 4.4,
     "666Handling": 83,
-
     "996TopSpeed": 177,
     "9960to60": 4.2,
     "996Handling": 83,
-
     "969TopSpeed": 177,
     "9690to60": 4.4,
     "969Handling": 87,
-
     "699TopSpeed": 174,
     "6990to60": 4.2,
-    "699Handling": 87
+    "699Handling": 87,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

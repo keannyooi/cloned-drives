@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 916,
     "gc": "Medium",
     "seatCount": 4,
@@ -20,35 +19,25 @@
     "abs": false,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 10.00,
-    "ola": 61.80,
+    "mra": 10,
+    "ola": 61.8,
     "description": "A hillariously slow shitbox that surprises even cars forty years from now with its fuel economy. Card by keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/865584526578024468/cehvette.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/834046630545195048/chevette_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/834046639261483097/chevette_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/834046645368651776/chevette_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/834046685776838746/chevette_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/834046671024816158/chevette_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/834046655774588978/chevette_699.jpg",
-
     "333TopSpeed": 87,
     "3330to60": 16.9,
     "333Handling": 65,
-
     "666TopSpeed": 94,
-    "6660to60": 16.0,
+    "6660to60": 16,
     "666Handling": 67,
-
-	"996TopSpeed": 100,
+    "996TopSpeed": 100,
     "9960to60": 15.1,
     "996Handling": 67,
-
     "969TopSpeed": 100,
-    "9690to60": 16.0,
+    "9690to60": 16,
     "969Handling": 70,
-
-	"699TopSpeed": 89,
+    "699TopSpeed": 89,
     "6990to60": 15.1,
-    "699Handling": 70
+    "699Handling": 70,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

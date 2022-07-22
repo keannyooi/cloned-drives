@@ -1,4 +1,4 @@
-﻿{
+{
     "rq": 23,
     "make": "General Motors",
     "model": "EV1",
@@ -9,10 +9,12 @@
     "handling": 64,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Eco-Friendly", "Innovative"],
+    "tags": [
+        "Eco-Friendly",
+        "Innovative"
+    ],
     "isPrize": false,
-
-    "weight": 1361, 
+    "weight": 1361,
     "gc": "Low",
     "seatCount": 2,
     "bodyStyle": "Coupe",
@@ -21,34 +23,24 @@
     "enginePos": "Front",
     "fuelType": "Electric",
     "mra": 41.83,
-    "ola": 71.60,
+    "ola": 71.6,
     "description": "The grandfather of the modern-day electric car, now crushed into pieces by its manufacturer. Card by keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/865584901050990622/general_motors_ev1.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/840040646131056660/ev1_000.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/840040650652123148/ev1_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/840040653923942440/ev1_666.jpg",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/840040674232762408/ev1_996.jpg",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/840040668524052520/ev1_969.jpg",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/840040663244734474/ev1_699.jpg",
-
     "333TopSpeed": 87,
     "3330to60": 7.7,
     "333Handling": 66,
-
     "666TopSpeed": 93,
     "6660to60": 7.3,
     "666Handling": 68,
-
     "996TopSpeed": 100,
     "9960to60": 6.9,
     "996Handling": 68,
-
     "969TopSpeed": 100,
     "9690to60": 7.3,
     "969Handling": 71,
-
     "699TopSpeed": 93,
     "6990to60": 6.9,
-    "699Handling": 71
+    "699Handling": 71,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

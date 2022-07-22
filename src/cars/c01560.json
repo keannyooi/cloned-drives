@@ -9,9 +9,11 @@
     "handling": 62,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Kei Car","The Japanese Odyssey"],
+    "tags": [
+        "Kei Car",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 740,
     "gc": "Medium",
     "seatCount": 2,
@@ -23,32 +25,22 @@
     "mra": 12.41,
     "ola": 85.29,
     "description": "A classic S kei sports car, with a roof. Card by Spence.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/862149845408808980/image0.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/862151339043586058/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/862151442097897482/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/862151470094090270/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/862151505436082226/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/862151547693432872/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/862151581449060352/image0.jpg",
-
     "333TopSpeed": 106,
     "3330to60": 12.9,
     "333Handling": 64,
-
     "666TopSpeed": 111,
     "6660to60": 12.2,
     "666Handling": 66,
-
     "699TopSpeed": 111,
     "6990to60": 11.6,
     "699Handling": 69,
-
     "969TopSpeed": 116,
     "9690to60": 12.2,
     "969Handling": 69,
-
     "996TopSpeed": 116,
     "9960to60": 11.6,
-    "996Handling": 66
+    "996Handling": 66,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

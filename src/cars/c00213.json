@@ -9,9 +9,13 @@
     "handling": 95,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Hypercar", "Ultra Expensive", "Track Day", "Unique"],
+    "tags": [
+        "Hypercar",
+        "Ultra Expensive",
+        "Track Day",
+        "Unique"
+    ],
     "isPrize": true,
-
     "weight": 1946,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +27,22 @@
     "mra": 104.76,
     "ola": 90.9,
     "description": "The ultimate track chiron part 2? Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/951473204034146334/ChironPurSport.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/951473258564321350/pursport.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/951473264914493450/pursport1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/951473271772172378/pursport2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/951473295037980702/pursport996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/951473287580516402/pursport969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/951473280227872798/pursport699.png",
-
     "333TopSpeed": 219,
     "3330to60": 2.1,
     "333Handling": 98,
-
     "666TopSpeed": 222,
-    "6660to60": 2.0,
+    "6660to60": 2,
     "666Handling": 101,
-
     "996TopSpeed": 224,
     "9960to60": 1.9,
     "996Handling": 101,
-
-	"969TopSpeed": 224,
-    "9690to60": 2.0,
+    "969TopSpeed": 224,
+    "9690to60": 2,
     "969Handling": 105,
-
     "699TopSpeed": 222,
     "6990to60": 1.9,
-    "699Handling": 105
+    "699Handling": 105,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -9,9 +9,10 @@
     "handling": 86,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Tuner"],
+    "tags": [
+        "Tuner"
+    ],
     "isPrize": false,
-
     "weight": 1905,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +24,22 @@
     "mra": 85.71,
     "ola": 105.56,
     "description": "This Finnish rebodied Mercedes SL 55 has been beefed up by a Danish tuning company Kleemann. Card by Spence.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/858027887528640532/image0.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/858027986041176086/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/858027997595959346/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/858028011202543656/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/858028025107054633/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/858028037392433153/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/858028058585202698/image0.jpg",
-
     "333TopSpeed": 205,
     "3330to60": 3.4,
     "333Handling": 89,
-
     "666TopSpeed": 207,
     "6660to60": 3.2,
     "666Handling": 92,
-
     "699TopSpeed": 207,
     "6990to60": 3.1,
     "699Handling": 95,
-
     "969TopSpeed": 210,
     "9690to60": 3.2,
     "969Handling": 95,
-
     "996TopSpeed": 210,
     "9960to60": 3.1,
-    "996Handling": 92
+    "996Handling": 92,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

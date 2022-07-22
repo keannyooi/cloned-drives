@@ -9,9 +9,11 @@
     "handling": 86,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Hot Hatch", "Rest of The World"],
+    "tags": [
+        "Hot Hatch",
+        "Rest of The World"
+    ],
     "isPrize": false,
-
     "weight": 1393,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +25,22 @@
     "mra": 69.95,
     "ola": 82.16,
     "description": "Card by Spence.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/915072202607570974/0D63E449-DFA7-4617-96EA-41BFB4561DEC.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/915074355438952480/4AAC768D-C584-4259-B3D7-E92DB2DA786B.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/915074457847099462/E60D84BD-AF6C-40D4-905F-CEB87B92A733.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/915074765230837800/47368DE7-770A-4514-9057-7DFE075CDB6E.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/915075003874172928/CA42FBCC-703C-4F92-995A-78DD1B1D3F45.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/915074819798753351/AD6BDE3E-28E0-4BDA-AA26-6F046961D613.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/915074800295247872/D152EFFE-C2F5-4B20-873D-3A873A03B1C4.jpg",
-
     "333TopSpeed": 158,
     "3330to60": 5.4,
     "333Handling": 89,
-
     "666TopSpeed": 162,
     "6660to60": 5.1,
     "666Handling": 92,
-
     "996TopSpeed": 165,
     "9960to60": 4.8,
     "996Handling": 92,
-
     "969TopSpeed": 165,
     "9690to60": 5.1,
     "969Handling": 95,
-
     "699TopSpeed": 162,
     "6990to60": 4.8,
-    "699Handling": 95
+    "699Handling": 95,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

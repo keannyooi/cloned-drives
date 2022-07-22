@@ -9,9 +9,10 @@
     "handling": 89,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["The Royal Collection"],
+    "tags": [
+        "The Royal Collection"
+    ],
     "isPrize": false,
-
     "weight": 858,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +24,22 @@
     "mra": 60.26,
     "ola": 59.57,
     "description": "Of course they had to beef up the Elise to be sold in the US. Of course. Card by Tom.",
-
     "card": "https://cdn.discordapp.com/attachments/780219369480257556/855188635111129088/Lotus_Federal_Elise.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/851821083740995604/Lotus_Federal_Elise_2005_111.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/851821093731303464/Lotus_Federal_Elise_2005_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/851821097958899763/Lotus_Federal_Elise_2005_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/851821116673622046/Lotus_Federal_Elise_2005_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/851821111931043910/Lotus_Federal_Elise_2005_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/851821107878559764/Lotus_Federal_Elise_2005_699.jpg",
-
     "333TopSpeed": 153,
     "3330to60": 4.5,
     "333Handling": 92,
-
     "666TopSpeed": 157,
     "6660to60": 4.2,
     "666Handling": 95,
-
     "996TopSpeed": 160,
-    "9960to60": 4.0,
+    "9960to60": 4,
     "996Handling": 95,
-
     "969TopSpeed": 160,
     "9690to60": 4.2,
     "969Handling": 99,
-
     "699TopSpeed": 157,
-    "6990to60": 4.0,
-    "699Handling": 99
+    "6990to60": 4,
+    "699Handling": 99,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

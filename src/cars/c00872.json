@@ -1,4 +1,4 @@
-﻿{
+{
     "rq": 34,
     "make": "Mercury",
     "model": "Marauder",
@@ -9,12 +9,14 @@
     "handling": 78,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Sleeper", "Muscle Car"],
+    "tags": [
+        "Sleeper",
+        "Muscle Car"
+    ],
     "isPrize": false,
-
     "weight": 1963,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Sedan",
     "tcs": false,
     "abs": true,
@@ -23,32 +25,22 @@
     "mra": 81.91,
     "ola": 81.82,
     "description": "Started life as a rebadged Crown Vic, then turned up to 11 and transforms into a stealthy sleeper. Card by Spence",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/823376660178665472/image0.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823384956977545226/merc_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823384964862836767/merc_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823384972797673472/merc_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823385007288221756/merc_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823384995740647444/merc_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823384984085069904/merc_699.jpg",
-
     "333TopSpeed": 121,
     "3330to60": 7.3,
     "333Handling": 81,
-
     "666TopSpeed": 126,
-    "6660to60": 6.9, 
+    "6660to60": 6.9,
     "666Handling": 83,
-
     "996TopSpeed": 130,
     "9960to60": 6.5,
     "996Handling": 83,
-
     "969TopSpeed": 130,
     "9690to60": 6.9,
     "969Handling": 87,
-
     "699TopSpeed": 126,
     "6990to60": 6.5,
-    "699Handling": 87
+    "699Handling": 87,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

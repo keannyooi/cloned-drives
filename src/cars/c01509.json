@@ -9,9 +9,10 @@
     "handling": 94,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": ["Motorsport"],
+    "tags": [
+        "Motorsport"
+    ],
     "isPrize": false,
-
     "weight": 1207,
     "gc": "Low",
     "seatCount": 1,
@@ -23,32 +24,22 @@
     "mra": 87.47,
     "ola": 79.07,
     "description": "Card by Havvy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/828405706616864768/unknown.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/927678262694539314/GT3Cup.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/927678272161087598/GT3Cup333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/927678280088297482/GT3Cup666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/927678312388624494/GT3Cup996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/927678302100004974/GT3Cup969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/927678288493686894/GT3Cup699.png",
-
     "333TopSpeed": 179,
     "3330to60": 4.1,
     "333Handling": 97,
-
     "666TopSpeed": 182,
     "6660to60": 3.9,
     "666Handling": 100,
-
     "996TopSpeed": 185,
     "9960to60": 3.7,
     "996Handling": 100,
-
     "969TopSpeed": 185,
     "9690to60": 3.9,
     "969Handling": 104,
-
     "699TopSpeed": 182,
     "6990to60": 3.7,
-    "699Handling": 104
+    "699Handling": 104,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

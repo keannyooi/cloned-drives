@@ -9,9 +9,11 @@
     "handling": 84,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Eco-Friendly", "Silver Screen"],
+    "tags": [
+        "Eco-Friendly",
+        "Silver Screen"
+    ],
     "isPrize": false,
-
     "weight": 1539,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +25,22 @@
     "mra": 71.07,
     "ola": 89.53,
     "description": "Three cylinder glory. Card by keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/831142563599089714/i8.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/831142728078983248/i8_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/831142741038858260/i8_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/831142748400255016/i8_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/831142777164791818/i8_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/831142766901198888/i8_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/831142758885752852/i8_699.jpg",
-
     "333TopSpeed": 159,
     "3330to60": 3.7,
     "333Handling": 87,
-
     "666TopSpeed": 163,
     "6660to60": 3.5,
     "666Handling": 90,
-
-	"996TopSpeed": 166,
+    "996TopSpeed": 166,
     "9960to60": 3.3,
     "996Handling": 90,
-
-	"969TopSpeed": 166,
+    "969TopSpeed": 166,
     "9690to60": 3.5,
     "969Handling": 93,
-
     "699TopSpeed": 163,
     "6990to60": 3.3,
-    "699Handling": 93
+    "699Handling": 93,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

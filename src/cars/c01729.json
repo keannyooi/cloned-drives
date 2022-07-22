@@ -9,9 +9,10 @@
     "handling": 63,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1864,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 35.39,
     "ola": 58.72,
     "description": "Card by Demon.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/964176947292831814/Nissan_Frontier_SE-V6_4x4_1999.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/964179616807927859/Nissan_Frontier_SE-V6_4x4_1999_H000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/964179633178292244/Nissan_Frontier_SE-V6_4x4_1999_H111.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/964179652476305478/Nissan_Frontier_SE-V6_4x4_1999_H222.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/964179709543985264/Nissan_Frontier_SE-V6_4x4_1999_H332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/964179691995009074/Nissan_Frontier_SE-V6_4x4_1999_H323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/964179672554422353/Nissan_Frontier_SE-V6_4x4_1999_H233.png",
-
     "333TopSpeed": 107,
     "3330to60": 10.4,
     "333Handling": 65,
-
     "666TopSpeed": 112,
     "6660to60": 9.8,
     "666Handling": 67,
-
     "996TopSpeed": 117,
     "9960to60": 9.3,
     "996Handling": 67,
-
     "969TopSpeed": 117,
     "9690to60": 9.8,
     "969Handling": 70,
-
     "699TopSpeed": 112,
     "6990to60": 9.3,
-    "699Handling": 70
+    "699Handling": 70,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

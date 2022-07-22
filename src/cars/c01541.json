@@ -9,13 +9,14 @@
     "handling": 67,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Kei Car", "The Japanese Odyssey"],
+    "tags": [
+        "Kei Car",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
-
     "weight": 1100,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": true,
@@ -24,33 +25,22 @@
     "mra": 7.24,
     "ola": 64.41,
     "description": "A box with amazing mra. Card by Havvy.",
-
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/969596474981773322/HondaCapaC.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/969598862035660810/CapaC.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/969598871430918174/CapaC-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/969598883367886878/CapaC-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/969598897934721074/CapaC-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/969598924472066068/CapaC-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/969598938829164654/CapaC-699.png",
-
     "333TopSpeed": 105,
     "3330to60": 11.2,
     "333Handling": 69,
-
     "666TopSpeed": 110,
-    "6660to60": 10.6, 
+    "6660to60": 10.6,
     "666Handling": 71,
-
     "996TopSpeed": 116,
-    "9960to60": 10.0,
+    "9960to60": 10,
     "996Handling": 71,
-
     "969TopSpeed": 116,
     "9690to60": 10.6,
     "969Handling": 74,
-
     "699TopSpeed": 110,
-    "6990to60": 10.0,
-    "699Handling": 74
+    "6990to60": 10,
+    "699Handling": 74,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

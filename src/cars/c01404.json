@@ -1,4 +1,4 @@
-﻿{
+{
     "rq": 39,
     "make": "Volkswagen",
     "model": "Touareg 3.2 VR6",
@@ -11,11 +11,9 @@
     "tyreType": "All-Surface",
     "tags": [],
     "isPrize": false,
-
-
     "weight": 2306,
     "gc": "High",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "SUV",
     "tcs": true,
     "abs": true,
@@ -24,33 +22,22 @@
     "mra": 54.18,
     "ola": 67.85,
     "description": "Another case of being overshadowed by a big brother. Card by Andu",
-
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/848476445571678239/Touareg321.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/848477091049242624/TouaregVR632.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/848477097400074250/TouaregVR632-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/848477104361701386/TouaregVR632-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/848477128595996692/TouaregVR632-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/848477155905634334/TouaregVR632-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/848477176911364106/TouaregVR632-699.png",
-
     "333TopSpeed": 126,
     "3330to60": 9.4,
     "333Handling": 70,
-
     "666TopSpeed": 131,
-    "6660to60": 8.9, 
+    "6660to60": 8.9,
     "666Handling": 72,
-
     "996TopSpeed": 135,
     "9960to60": 8.4,
     "996Handling": 72,
-
     "969TopSpeed": 135,
     "9690to60": 8.9,
     "969Handling": 75,
-
     "699TopSpeed": 131,
     "6990to60": 8.4,
-    "699Handling": 75
+    "699Handling": 75,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

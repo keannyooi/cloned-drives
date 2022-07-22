@@ -5,13 +5,14 @@
     "modelYear": 2015,
     "country": "US",
     "topSpeed": 154,
-    "0to60": 5.0,
+    "0to60": 5,
     "handling": 77,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": ["Eco-Friendly"],
+    "tags": [
+        "Eco-Friendly"
+    ],
     "isPrize": false,
-
     "weight": 2390,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 69.61,
     "ola": 91.87,
     "description": "Card by keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/858545322358734848/tesla_model_x_90d.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/858543090926878770/model_x_90d_000.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/858543098472038430/model_x_90d_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/858543104277348372/model_x_90d_666.jpg",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/858543118013431818/model_x_90d_996.jpg",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/858543112313372672/model_x_90d_969.jpg",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/858543108555538482/model_x_90d_699.jpg",
-
     "333TopSpeed": 157,
     "3330to60": 4.8,
     "333Handling": 80,
-
     "666TopSpeed": 161,
     "6660to60": 4.5,
     "666Handling": 82,
-
     "996TopSpeed": 164,
     "9960to60": 4.3,
     "996Handling": 82,
-
     "969TopSpeed": 164,
     "9690to60": 4.5,
     "969Handling": 85,
-
     "699TopSpeed": 161,
     "6990to60": 4.3,
-    "699Handling": 85
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

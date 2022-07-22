@@ -9,9 +9,11 @@
     "handling": 63,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Kei Car","The Japanese Odyssey"],
+    "tags": [
+        "Kei Car",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 555,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +25,22 @@
     "mra": 10,
     "ola": 56.48,
     "description": "Honda's answer to the Mini Cooper at its time. Card by Spence.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/866647951572074546/image0.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/862154974993580062/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/862155004604710932/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/862155043067133972/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/862155072649822208/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/862155103016583198/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/862155139322609705/image0.jpg",
-
     "333TopSpeed": 87,
     "3330to60": 17.2,
     "333Handling": 65,
-
     "666TopSpeed": 94,
     "6660to60": 16.3,
     "666Handling": 67,
-
     "699TopSpeed": 94,
     "6990to60": 15.4,
     "699Handling": 70,
-
     "969TopSpeed": 100,
     "9690to60": 16.3,
     "969Handling": 70,
-
     "996TopSpeed": 100,
     "9960to60": 15.4,
-    "996Handling": 67
+    "996Handling": 67,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

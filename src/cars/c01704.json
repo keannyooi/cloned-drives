@@ -9,9 +9,11 @@
     "handling": 73,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Street Racer","The Japanese Odyssey"],
+    "tags": [
+        "Street Racer",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1275,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +25,22 @@
     "mra": 66.02,
     "ola": 73.53,
     "description": "euro S14 pogga. Card by Havvy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/867398749771530240/unknown.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/867398829544046633/200sx_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/867398833448943616/200sx_111.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/867398835366395934/200sx_222.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/867398853745573908/200sx_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/867398848226000896/200sx_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/867398842907623444/200sx_233.png",
-
     "333TopSpeed": 150,
     "3330to60": 6.5,
     "333Handling": 75,
-
     "666TopSpeed": 153,
     "6660to60": 6.1,
     "666Handling": 78,
-
     "996TopSpeed": 157,
     "9960to60": 5.8,
     "996Handling": 78,
-
     "969TopSpeed": 157,
     "9690to60": 6.1,
     "969Handling": 81,
-
     "699TopSpeed": 153,
     "6990to60": 5.8,
-    "699Handling": 81
+    "699Handling": 81,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

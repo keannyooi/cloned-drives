@@ -9,9 +9,10 @@
     "handling": 84,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Grand Tourer"],
+    "tags": [
+        "Grand Tourer"
+    ],
     "isPrize": false,
-
     "weight": 1630,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +24,22 @@
     "mra": 65.42,
     "ola": 81.43,
     "description": "The most successful Aston Martin model ever. Card by keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820964145603280906/v8_vantage.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820965078933045278/v8_vantage_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820965087388106763/v8_vantage_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820965092707008562/v8_vantage_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820965138668060683/v8_vantage_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820965130018881536/v8_vantage_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820965106942869534/v8_vantage_699.jpg",
-
     "333TopSpeed": 178,
     "3330to60": 4.5,
     "333Handling": 87,
-
     "666TopSpeed": 181,
     "6660to60": 4.2,
     "666Handling": 90,
-
-	"996TopSpeed": 184,
-    "9960to60": 4.0,
+    "996TopSpeed": 184,
+    "9960to60": 4,
     "996Handling": 90,
-
     "969TopSpeed": 184,
     "9690to60": 4.2,
     "969Handling": 93,
-
-	"699TopSpeed": 181,
-    "6990to60": 4.0,
-    "699Handling": 93
+    "699TopSpeed": 181,
+    "6990to60": 4,
+    "699Handling": 93,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -9,9 +9,10 @@
     "handling": 86,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Supercar"],
+    "tags": [
+        "Supercar"
+    ],
     "isPrize": false,
-
     "weight": 1695,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +24,22 @@
     "mra": 83.25,
     "ola": 82.05,
     "description": "It's a compact, nuggety little missile, endowed with performance of casual violence and face-bending cornering ability. Card by Havvy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/826192798725177414/V12Vantage.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826192860462186526/V12vanta09.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826192865696546867/V12vanta09333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826192873677389824/V12vanta09666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826192911343026266/V12vanta09996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826192901993136178/V12vanta09969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826192889838567424/V12vanta09699.png",
-
     "333TopSpeed": 193,
-    "3330to60": 4.0,
+    "3330to60": 4,
     "333Handling": 89,
-
     "666TopSpeed": 195,
     "6660to60": 3.8,
     "666Handling": 92,
-
     "996TopSpeed": 198,
     "9960to60": 3.6,
     "996Handling": 92,
-    
     "969TopSpeed": 198,
     "9690to60": 3.8,
     "969Handling": 95,
-
     "699TopSpeed": 195,
     "6990to60": 3.6,
-    "699Handling": 95
+    "699Handling": 95,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

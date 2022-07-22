@@ -1,6 +1,9 @@
 {
     "rq": 41,
-    "make": ["Range Rover", "Land Rover"],
+    "make": [
+        "Range Rover",
+        "Land Rover"
+    ],
     "model": "Velar D180 R-Dynamic Black",
     "modelYear": 2020,
     "country": "GB",
@@ -11,7 +14,6 @@
     "tyreType": "All-Surface",
     "tags": [],
     "isPrize": false,
-
     "weight": 1899,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +25,22 @@
     "mra": 61.54,
     "ola": 58.33,
     "description": "Card by Macan.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/949494288717328424/Range_Rover_Velar_D180_R-Dynamic_Black_20.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/949495226890874930/Range_Rover_Velar_D180_R-Dynamic_Black_20_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/949495263377113198/Range_Rover_Velar_D180_R-Dynamic_Black_20_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/949495286315753563/Range_Rover_Velar_D180_R-Dynamic_Black_20_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/949495369279098890/Range_Rover_Velar_D180_R-Dynamic_Black_20_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/949495343383457822/Range_Rover_Velar_D180_R-Dynamic_Black_20_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/949495320000213032/Range_Rover_Velar_D180_R-Dynamic_Black_20_699.png",
-
     "333TopSpeed": 124,
     "3330to60": 9.1,
     "333Handling": 71,
-
     "666TopSpeed": 129,
     "6660to60": 8.6,
     "666Handling": 74,
-
     "996TopSpeed": 133,
     "9960to60": 8.2,
     "996Handling": 74,
-
     "969TopSpeed": 133,
     "9690to60": 8.6,
     "969Handling": 77,
-
     "699TopSpeed": 129,
     "6990to60": 8.2,
-    "699Handling": 77
+    "699Handling": 77,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

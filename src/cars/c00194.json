@@ -5,13 +5,15 @@
     "modelYear": 2019,
     "country": "DE",
     "topSpeed": 155,
-    "0to60": 3.0,
+    "0to60": 3,
     "handling": 91,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Grand Tourer", "Silver Screen"],
+    "tags": [
+        "Grand Tourer",
+        "Silver Screen"
+    ],
     "isPrize": false,
-
     "weight": 1960,
     "gc": "Medium",
     "seatCount": 2,
@@ -23,32 +25,22 @@
     "mra": 83.33,
     "ola": 86.67,
     "description": "M5 who? Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/843212380506685450/M8Competition.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/843212762854981653/M8Comp.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/843212769872183376/M8Comp333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/843212776118026260/M8Comp666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/843212824930418704/M8Comp996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/843212809512550410/M8Comp969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/843212795776073728/M8Comp699.png",
-
     "333TopSpeed": 158,
     "3330to60": 2.9,
     "333Handling": 94,
-
     "666TopSpeed": 162,
     "6660to60": 2.7,
     "666Handling": 97,
-
     "996TopSpeed": 165,
     "9960to60": 2.6,
     "996Handling": 97,
-
     "969TopSpeed": 165,
     "9690to60": 2.7,
     "969Handling": 101,
-
     "699TopSpeed": 162,
     "6990to60": 2.6,
-    "699Handling": 101
+    "699Handling": 101,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

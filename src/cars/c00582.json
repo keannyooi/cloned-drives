@@ -11,7 +11,6 @@
     "tyreType": "All-Surface",
     "tags": [],
     "isPrize": false,
-
     "weight": 1832,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 54.14,
     "ola": 63.89,
     "description": "Card by Macan",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/826073197300154408/Jaguar_E-PACE_P250_AWD_2018.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826073777879253002/jaggg.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826073790505025536/jaggg333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826073795110109224/jaggg666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826073827914022973/jaggg996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826073819205599262/jaggg969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826073805242892338/jaggg699.png",
-
     "333TopSpeed": 139,
     "3330to60": 6.8,
     "333Handling": 77,
-
     "666TopSpeed": 143,
     "6660to60": 6.5,
     "666Handling": 80,
-
-	"996TopSpeed": 147,
+    "996TopSpeed": 147,
     "9960to60": 6.1,
     "996Handling": 80,
-
     "969TopSpeed": 147,
     "9690to60": 6.5,
     "969Handling": 83,
-
-	"699TopSpeed": 143,
+    "699TopSpeed": 143,
     "6990to60": 6.1,
-    "699Handling": 83
+    "699Handling": 83,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

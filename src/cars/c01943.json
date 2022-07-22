@@ -9,9 +9,11 @@
     "handling": 80,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Hot Hatch","The Japanese Odyssey"],
+    "tags": [
+        "Hot Hatch",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1135,
     "gc": "Low",
     "seatCount": 5,
@@ -23,32 +25,22 @@
     "mra": 75.29,
     "ola": 81.25,
     "description": "Second GRMN prepared Yaris with a Series 3 Elise sourced supercharged engine. Card by Connor",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/963171237520105512/C.ToyotaYarisGRMN.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/963171286459219978/YarisGRMN.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/963171300736663622/YarisGRMN-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/963171314489774140/YarisGRMN-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/963171395678896148/YarisGRMN-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/963171374858387486/YarisGRMN-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/963171332642709534/YarisGRMN-699.png",
-
     "333TopSpeed": 146,
     "3330to60": 6.1,
     "333Handling": 83,
-
     "666TopSpeed": 149,
     "6660to60": 5.8,
     "666Handling": 85,
-
     "996TopSpeed": 153,
     "9960to60": 5.4,
     "996Handling": 85,
-
     "969TopSpeed": 153,
     "9690to60": 5.8,
     "969Handling": 89,
-
     "699TopSpeed": 149,
     "6990to60": 5.4,
-    "699Handling": 89
+    "699Handling": 89,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

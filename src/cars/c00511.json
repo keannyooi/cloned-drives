@@ -1,6 +1,9 @@
 {
     "rq": 96,
-    "make": ["HKS", "Mitsubishi"],
+    "make": [
+        "HKS",
+        "Mitsubishi"
+    ],
     "model": "Lancer Evolution IX CT230R",
     "modelYear": 2006,
     "country": "JP",
@@ -9,9 +12,12 @@
     "handling": 94,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Motorsport", "Tuner", "Unique"],
+    "tags": [
+        "Motorsport",
+        "Tuner",
+        "Unique"
+    ],
     "isPrize": true,
-
     "weight": 1068,
     "gc": "Low",
     "seatCount": 1,
@@ -23,32 +29,22 @@
     "mra": 87.28,
     "ola": 75.23,
     "description": "A superb combination of HKS technology in a car that has beaten numerous best circuit lap times. Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/930193692411699250/hksevoreal.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/930194353241079808/redHKSEVO.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/930194362611154964/redHKSEVO333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/930194371071078510/redHKSEVO666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/930194398766047303/redHKSEVO996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/930194387403689994/redHKSEVO969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/930194379291901972/redHKSEVO699.png",
-
     "333TopSpeed": 176,
     "3330to60": 2.5,
     "333Handling": 97,
-
     "666TopSpeed": 179,
     "6660to60": 2.3,
     "666Handling": 100,
-
     "996TopSpeed": 182,
     "9960to60": 2.2,
     "996Handling": 100,
-
     "969TopSpeed": 182,
     "9690to60": 2.3,
     "969Handling": 104,
-
     "699TopSpeed": 179,
     "6990to60": 2.2,
-    "699Handling": 104
+    "699Handling": 104,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

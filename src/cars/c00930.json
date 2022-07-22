@@ -9,9 +9,10 @@
     "handling": 86,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Street Racer"],
+    "tags": [
+        "Street Racer"
+    ],
     "isPrize": false,
-
     "weight": 1520,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +24,22 @@
     "mra": 70.13,
     "ola": 66.67,
     "description": "A 370Z without the top, simple as that. Card by Connor.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/826176371306659870/B.Nissan370ZRoadster.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826176485198397500/B.Nissan370Z.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826176501573353533/B.Nissan370Z-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826176515443261450/B.Nissan370Z-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826176568225169438/B.Nissan370Z-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826176560402661456/B.Nissan370Z-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826176543553617950/B.Nissan370Z-699.png",
-
     "333TopSpeed": 159,
     "3330to60": 5.1,
     "333Handling": 89,
-
     "666TopSpeed": 163,
     "6660to60": 4.9,
     "666Handling": 92,
-
-	 "996TopSpeed": 166,
+    "996TopSpeed": 166,
     "9960to60": 4.6,
     "996Handling": 92,
-
     "969TopSpeed": 166,
     "9690to60": 4.9,
     "969Handling": 95,
-
-	 "699TopSpeed": 163,
+    "699TopSpeed": 163,
     "6990to60": 4.6,
-    "699Handling": 95
+    "699Handling": 95,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

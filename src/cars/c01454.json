@@ -9,9 +9,11 @@
     "handling": 79,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Unique", "Concept"],
+    "tags": [
+        "Unique",
+        "Concept"
+    ],
     "isPrize": false,
-
     "weight": 1450,
     "gc": "Medium",
     "seatCount": 2,
@@ -23,32 +25,22 @@
     "mra": 77.55,
     "ola": 84.21,
     "description": "Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/913408155608834048/959Vorserie.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/913408350841106482/959Vor.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/913408361108758549/959Vor333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/913408372131377202/959Vor666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/913408401004974120/959Vor996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/913408391643271188/959Vor969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/913408382134808606/959Vor699.png",
-
     "333TopSpeed": 198,
     "3330to60": 3.6,
     "333Handling": 82,
-
     "666TopSpeed": 200,
     "6660to60": 3.4,
     "666Handling": 84,
-
     "996TopSpeed": 203,
     "9960to60": 3.2,
     "996Handling": 84,
-
     "969TopSpeed": 203,
     "9690to60": 3.4,
     "969Handling": 88,
-
     "699TopSpeed": 200,
     "6990to60": 3.2,
-    "699Handling": 88
+    "699Handling": 88,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

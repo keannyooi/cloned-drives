@@ -1,17 +1,21 @@
 {
     "rq": 59,
-    "make": ["Alpina", "BMW"],
+    "make": [
+        "Alpina",
+        "BMW"
+    ],
     "model": "Roadster S",
     "modelYear": 2004,
     "country": "DE",
     "topSpeed": 165,
-    "0to60": 5.0,
+    "0to60": 5,
     "handling": 84,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Tuner"],
+    "tags": [
+        "Tuner"
+    ],
     "isPrize": false,
-
     "weight": 1320,
     "gc": "Low",
     "seatCount": 2,
@@ -21,34 +25,24 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 71.42,
-    "ola": 73.20,
+    "ola": 73.2,
     "description": "Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/930193928135778304/AlpinaRoadsterS.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/930194777331355708/alpinaroadster.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/930194784646201364/alpinaroadster333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/930194791864610896/alpinaroadster666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/930194856679178240/alpinaroadster996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/930194839256043541/alpinaroadster969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/930194802404909096/alpinaroadster699.png",
-
     "333TopSpeed": 168,
     "3330to60": 4.8,
     "333Handling": 87,
-
     "666TopSpeed": 171,
     "6660to60": 4.5,
     "666Handling": 90,
-
     "996TopSpeed": 174,
     "9960to60": 4.3,
     "996Handling": 90,
-
     "969TopSpeed": 174,
     "9690to60": 4.5,
     "969Handling": 93,
-
     "699TopSpeed": 171,
     "6990to60": 4.3,
-    "699Handling": 93
+    "699Handling": 93,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

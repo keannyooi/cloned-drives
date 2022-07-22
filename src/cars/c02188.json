@@ -9,9 +9,12 @@
     "handling": 92,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Track Day", "Concept", "Unique"],
+    "tags": [
+        "Track Day",
+        "Concept",
+        "Unique"
+    ],
     "isPrize": true,
-
     "weight": 920,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +26,22 @@
     "mra": 53.13,
     "ola": 88.24,
     "description": "Card by Tom.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/950083762358714418/Lotus_Exige_GT3_Road_Vehicle_Concept_2007.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/950346249662496778/GT3_111.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/950346256755085342/GT3_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/950346261691781190/GT3_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/950346275029659658/GT3_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/950346270998937630/GT3_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/950346266741706762/GT3_699.jpg",
-
     "333TopSpeed": 163,
     "3330to60": 3.2,
     "333Handling": 97,
-
     "666TopSpeed": 167,
     "6660to60": 3.1,
     "666Handling": 98,
-
     "996TopSpeed": 167,
     "9960to60": 2.9,
     "996Handling": 102,
-
     "969TopSpeed": 170,
     "9690to60": 3.1,
     "969Handling": 102,
-
     "699TopSpeed": 170,
     "6990to60": 2.9,
-    "699Handling": 98
+    "699Handling": 98,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -11,7 +11,6 @@
     "tyreType": "All-Surface",
     "tags": [],
     "isPrize": false,
-
     "weight": 1836,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 64.58,
     "ola": 77.42,
     "description": "An Australian designed and developed car. But the American version. Card by Macan",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/838222218499981342/Ranger_XL_STX_SuperCab_4x2_6_Box_19.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/838222284845744148/Ford_Ranger_XL_STX_SuperCab_4x2_6_Box_2019_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/838222306991931442/Ford_Ranger_XL_STX_SuperCab_4x2_6_Box_2019_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/838222310913605652/Ford_Ranger_XL_STX_SuperCab_4x2_6_Box_2019_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/838222343460618240/Ford_Ranger_XL_STX_SuperCab_4x2_6_Box_2019_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/838222332429991976/Ford_Ranger_XL_STX_SuperCab_4x2_6_Box_2019_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/838222319327510528/Ford_Ranger_XL_STX_SuperCab_4x2_6_Box_2019_699.png",
-
     "333TopSpeed": 116,
     "3330to60": 5.9,
     "333Handling": 71,
-
     "666TopSpeed": 120,
     "6660to60": 5.6,
     "666Handling": 74,
-
     "996TopSpeed": 125,
     "9960to60": 5.3,
     "996Handling": 74,
-
     "969TopSpeed": 125,
     "9690to60": 5.6,
     "969Handling": 77,
-
     "699TopSpeed": 120,
     "6990to60": 5.3,
-    "699Handling": 77
+    "699Handling": 77,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

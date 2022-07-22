@@ -9,9 +9,12 @@
     "handling": 85,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": ["Motorsport", "Style Icon", "Unique"],
+    "tags": [
+        "Motorsport",
+        "Style Icon",
+        "Unique"
+    ],
     "isPrize": true,
-
     "weight": 960,
     "gc": "Medium",
     "seatCount": 2,
@@ -23,32 +26,22 @@
     "mra": 54.76,
     "ola": 88.88,
     "description": "The car that ended Group B. Card by Havvy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/824653772974063636/lancharally.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824654187211128862/Delta.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824654191342780436/delta333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824654201866027058/delta666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824654255020834846/delta996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824654246234161162/delta969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824654212909891594/delta699.png",
-
     "333TopSpeed": 144,
     "3330to60": 2.2,
     "333Handling": 88,
-
     "666TopSpeed": 147,
     "6660to60": 2.1,
     "666Handling": 91,
-
     "996TopSpeed": 151,
-    "9960to60": 2.0,
+    "9960to60": 2,
     "996Handling": 91,
-
     "969TopSpeed": 151,
     "9690to60": 2.1,
     "969Handling": 94,
-
     "699TopSpeed": 147,
-    "6990to60": 2.0,
-    "699Handling": 94
+    "6990to60": 2,
+    "699Handling": 94,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

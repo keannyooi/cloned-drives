@@ -9,9 +9,10 @@
     "handling": 86,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Motorsport"],
+    "tags": [
+        "Motorsport"
+    ],
     "isPrize": false,
-
     "weight": 1450,
     "gc": "Low",
     "seatCount": 1,
@@ -23,32 +24,22 @@
     "mra": 80.77,
     "ola": 82.05,
     "description": "The acid dipped car. Card by Johnny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819542053377671210/cate-test.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819541711810068540/Chevrolet-Penske-Camaro-Z28.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819541716188004362/Chevrolet-Penske-Camaro-Z28-1-star.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819541726921228298/Chevrolet-Penske-Camaro-Z28-2-star.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819541827556081704/Chevrolet-Penske-Camaro-Z28-332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819541747033964584/Chevrolet-Penske-Camaro-Z28-323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819541737290727444/Chevrolet-Penske-Camaro-Z28-233.png",
-
     "333TopSpeed": 153,
-    "3330to60": 4.0,
+    "3330to60": 4,
     "333Handling": 89,
-
     "666TopSpeed": 157,
     "6660to60": 3.8,
     "666Handling": 92,
-
     "996TopSpeed": 160,
     "9960to60": 3.6,
     "996Handling": 92,
-    
     "969TopSpeed": 160,
     "9690to60": 3.8,
     "969Handling": 95,
-
     "699TopSpeed": 157,
     "6990to60": 3.6,
-    "699Handling": 95
+    "699Handling": 95,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

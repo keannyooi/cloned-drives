@@ -5,17 +5,18 @@
     "modelYear": 1991,
     "country": "JP",
     "topSpeed": 130,
-    "0to60": 7.0,
+    "0to60": 7,
     "handling": 75,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Hot Hatch","The Japanese Odyssey"],
+    "tags": [
+        "Hot Hatch",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
-
     "weight": 1202,
     "gc": "Medium",
-    "seatCount":4,
+    "seatCount": 4,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": true,
@@ -24,33 +25,22 @@
     "mra": 58.33,
     "ola": 71.43,
     "description": "Fading into the Background with a Long-Lasting Impression. Cars by Andu.",
-
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/949228377431236638/ImpulseRS.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/949222209929506866/ImpulseRS.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/949222221287661568/ImpulseRS-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/949222231223963648/ImpulseRS-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/949222246847770634/ImpulseRS-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/949222257333518356/ImpulseRS-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/949222271707389972/ImpulseRS-699.png",
-
     "333TopSpeed": 134,
     "3330to60": 6.7,
     "333Handling": 77,
-
     "666TopSpeed": 138,
-    "6660to60": 6.3, 
+    "6660to60": 6.3,
     "666Handling": 80,
-
     "996TopSpeed": 142,
-    "9960to60": 6.0,
+    "9960to60": 6,
     "996Handling": 80,
-
     "969TopSpeed": 142,
     "9690to60": 6.3,
     "969Handling": 83,
-
     "699TopSpeed": 138,
-    "6990to60": 6.0,
-    "699Handling": 83
+    "6990to60": 6,
+    "699Handling": 83,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

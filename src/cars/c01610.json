@@ -9,13 +9,13 @@
     "handling": 71,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
-
     "weight": 1151,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Sedan",
     "tcs": false,
     "abs": true,
@@ -24,33 +24,22 @@
     "mra": 44.85,
     "ola": 71.26,
     "description": "A New Blend Of Sophistication For $13,000. Card by Churrito.",
-
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/965202703758282772/unknown.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/965203126657384508/Mazda_Protege_ES_1999_Stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/965203148522270720/Mazda_Protege_ES_1999_1_Star.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/965203168537481236/Mazda_Protege_ES_1999_2_Star.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/965203192184983602/Mazda_Protege_ES_1999_699.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/965203228876750879/Mazda_Protege_ES_1999_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/965203253669285908/Mazda_Protege_ES_1999_996.png",
-
     "333TopSpeed": 122,
     "3330to60": 8.3,
     "333Handling": 73,
-
     "666TopSpeed": 127,
-    "6660to60": 7.8, 
+    "6660to60": 7.8,
     "666Handling": 76,
-
     "996TopSpeed": 131,
     "9960to60": 7.4,
     "996Handling": 76,
-
     "969TopSpeed": 131,
     "9690to60": 7.8,
     "969Handling": 79,
-
     "699TopSpeed": 127,
     "6990to60": 7.4,
-    "699Handling": 79
+    "699Handling": 79,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

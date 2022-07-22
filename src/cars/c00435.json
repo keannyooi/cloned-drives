@@ -11,7 +11,6 @@
     "tyreType": "All-Surface",
     "tags": [],
     "isPrize": false,
-
     "weight": 2628,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 65.06,
     "ola": 63.98,
     "description": "The million tonne hauler. By DodgeDemon",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/823956424434122762/2021_Ford_F150_Hybrid.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824287659798167572/laret.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824287664949690428/laret333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824287670212493343/laret666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824287696511172648/laret996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824287686034063380/laret969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824287677917429780/laret699.png",
-
     "333TopSpeed": 112,
     "3330to60": 5.1,
     "333Handling": 69,
-
     "666TopSpeed": 117,
     "6660to60": 4.9,
     "666Handling": 71,
-
     "996TopSpeed": 122,
     "9960to60": 4.6,
     "996Handling": 71,
-
     "969TopSpeed": 122,
     "9690to60": 4.9,
     "969Handling": 74,
-
-	"699TopSpeed": 117,
+    "699TopSpeed": 117,
     "6990to60": 4.6,
-    "699Handling": 74
+    "699Handling": 74,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

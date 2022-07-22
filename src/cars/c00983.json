@@ -9,9 +9,10 @@
     "handling": 96,
     "driveType": "4WD",
     "tyreType": "Slick",
-    "tags": ["Motorsport"],
+    "tags": [
+        "Motorsport"
+    ],
     "isPrize": true,
-
     "weight": 980,
     "gc": "Low",
     "seatCount": 1,
@@ -23,32 +24,22 @@
     "mra": 93.55,
     "ola": 82.76,
     "description": "1995 DTM Calibra driven by Klaus Ludwig and Keke Rosberg for Opel Team Rosberg. Card by Connor.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/856621121281851442/S.OpelCalibraV6DTM.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/856621248167280720/OpelCalibraDTM.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/856621282632138752/OpelCalibraDTM-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/856621314726821938/OpelCalibraDTM-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/856621368208785458/OpelCalibraDTM-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/856621354249617438/OpelCalibraDTM-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/856621337405030411/OpelCalibraDTM-699.png",
-
     "333TopSpeed": 189,
     "3330to60": 2.5,
     "333Handling": 99,
-
     "666TopSpeed": 192,
     "6660to60": 2.3,
     "666Handling": 102,
-
     "996TopSpeed": 194,
     "9960to60": 2.2,
     "996Handling": 102,
-
     "969TopSpeed": 194,
     "9690to60": 2.3,
     "969Handling": 107,
-
     "699TopSpeed": 192,
     "6990to60": 2.2,
-    "699Handling": 107
+    "699Handling": 107,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

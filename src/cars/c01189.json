@@ -9,9 +9,10 @@
     "handling": 88,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Servers Choice"],
+    "tags": [
+        "Servers Choice"
+    ],
     "isPrize": false,
-
     "weight": 1281,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +24,22 @@
     "mra": 58.49,
     "ola": 74.19,
     "description": "A living testimony of how tyres and aero can change a car's handling. Card by keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819382694668009482/brz_ts.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819906524276588584/brz_ts_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819906532904927252/brz_ts_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819906538252140574/brz_ts_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819906589414391838/brz_ts_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819906569872736276/brz_ts_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819906555100397648/brz_ts_699.jpg",
-
     "333TopSpeed": 138,
-    "3330to60": 6.0,
+    "3330to60": 6,
     "333Handling": 91,
-
     "666TopSpeed": 142,
-    "6660to60": 5.7, 
+    "6660to60": 5.7,
     "666Handling": 94,
-
     "996TopSpeed": 146,
     "9960to60": 5.4,
     "996Handling": 94,
-
     "969TopSpeed": 146,
     "9690to60": 5.7,
     "969Handling": 98,
-
     "699TopSpeed": 142,
     "6990to60": 5.4,
-    "699Handling": 98
+    "699Handling": 98,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

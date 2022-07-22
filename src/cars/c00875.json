@@ -9,9 +9,12 @@
     "handling": 82,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["The Royal Collection", "Track Day", "Hot Hatch"],
+    "tags": [
+        "The Royal Collection",
+        "Track Day",
+        "Hot Hatch"
+    ],
     "isPrize": false,
-
     "weight": 1088,
     "gc": "Medium",
     "seatCount": 2,
@@ -23,32 +26,22 @@
     "mra": 51.72,
     "ola": 75.56,
     "description": "Card by Thunk.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/851224793008439317/Metro_6R4.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/851225024622231612/000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/851225040887480330/333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/851225056377962537/666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/851225123284451338/996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/851225111460708364/969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/851225088379846666/699.png",
-
     "333TopSpeed": 134,
     "3330to60": 4.3,
     "333Handling": 85,
-
     "666TopSpeed": 138,
     "6660to60": 4.1,
     "666Handling": 87,
-
     "996TopSpeed": 142,
     "9960to60": 3.8,
     "996Handling": 87,
-
     "969TopSpeed": 142,
     "9690to60": 4.1,
     "969Handling": 91,
-
     "699TopSpeed": 138,
     "6990to60": 3.8,
-    "699Handling": 91
+    "699Handling": 91,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

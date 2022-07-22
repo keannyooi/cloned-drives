@@ -9,9 +9,10 @@
     "handling": 77,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Innovative"],
+    "tags": [
+        "Innovative"
+    ],
     "isPrize": true,
-
     "weight": 1595,
     "gc": "Low",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 66.24,
     "ola": 65.38,
     "description": "The sporty wagon that started the RS lineup. Card by Spence",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/824534044241821736/image0.jpg",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824534131878264842/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824534154191437834/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824534172134932500/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824534225411506196/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824534197305212938/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824534212354900008/image0.jpg",
-
     "333TopSpeed": 165,
     "3330to60": 4.9,
     "333Handling": 80,
-
     "666TopSpeed": 168,
-    "6660to60": 4.7, 
+    "6660to60": 4.7,
     "666Handling": 82,
-
     "996TopSpeed": 172,
     "9960to60": 4.4,
     "996Handling": 82,
-
     "969TopSpeed": 172,
     "9690to60": 4.7,
     "969Handling": 85,
-
     "699TopSpeed": 168,
     "6990to60": 4.4,
-    "699Handling": 85
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

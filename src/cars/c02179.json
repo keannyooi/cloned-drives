@@ -9,9 +9,10 @@
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Track Day"],
+    "tags": [
+        "Track Day"
+    ],
     "isPrize": false,
-
     "weight": 1125,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +24,22 @@
     "mra": 73.25,
     "ola": 70.27,
     "description": "Card by Tom.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/950083382866501712/Lotus_Exige_360_Cup_2015.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/950085138631516190/360_111.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/950085147930284132/360_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/950085152850198649/360_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/950085176174727198/360_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/950085177055543306/360_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/950085158629965855/360_699.jpg",
-
     "333TopSpeed": 173,
     "3330to60": 3.5,
     "333Handling": 94,
-
     "666TopSpeed": 176,
     "6660to60": 3.3,
     "666Handling": 97,
-
     "996TopSpeed": 179,
     "9960to60": 3.1,
     "996Handling": 97,
-
     "969TopSpeed": 179,
     "9690to60": 3.3,
     "969Handling": 101,
-
     "699TopSpeed": 176,
     "6990to60": 3.1,
-    "699Handling": 101
+    "699Handling": 101,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -1,4 +1,4 @@
-﻿{
+{
     "rq": 44,
     "make": "Volkswagen",
     "model": "Tiguan 1.5 TSI",
@@ -11,11 +11,9 @@
     "tyreType": "All-Surface",
     "tags": [],
     "isPrize": false,
-
-
     "weight": 1633,
     "gc": "High",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "SUV",
     "tcs": true,
     "abs": true,
@@ -24,33 +22,22 @@
     "mra": 56.44,
     "ola": 71.74,
     "description": "Perfectly developed for family life, the Volkswagen Tiguan is well-built and delivers useful practicality, but it lacks a sense of style. Card by Andu",
-
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/848313572047192115/15TSIIFWD.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/848314072264605696/TiguanTSI19.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/848314080098779166/TiguanTSI19-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/848314088626585630/TiguanTSI19-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/848314098215288902/TiguanTSI19-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/848314116115922944/TiguanTSI19-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/848314125524402226/TiguanTSI19-699.png",
-
     "333TopSpeed": 130,
     "3330to60": 8.7,
     "333Handling": 77,
-
     "666TopSpeed": 134,
-    "6660to60": 8.3, 
+    "6660to60": 8.3,
     "666Handling": 80,
-
     "996TopSpeed": 138,
     "9960to60": 7.8,
     "996Handling": 80,
-
     "969TopSpeed": 138,
     "9690to60": 8.3,
     "969Handling": 83,
-
     "699TopSpeed": 134,
     "6990to60": 7.8,
-    "699Handling": 83
+    "699Handling": 83,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

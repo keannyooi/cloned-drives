@@ -9,9 +9,11 @@
     "handling": 90,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Supercar", "Track Day"],
+    "tags": [
+        "Supercar",
+        "Track Day"
+    ],
     "isPrize": false,
-
     "weight": 1733,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +25,22 @@
     "mra": 76.78,
     "ola": 83.63,
     "description": "The final iteration of the supercar that defined the whole automotive decade. Card by Spence.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/958029843579174962/8C982871-0EB1-45DE-A1F7-88AD460E0F9C.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/958029887292198972/327FDE01-F5FE-4329-951B-7F7DC0E5EA45.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/958029900034482227/FBF6383D-7887-4B83-9303-E47BE287729D.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/958029912080531496/5DD519C1-306A-4E9D-B41A-E64DFCF89C0A.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/958029950181576756/18124E46-9EF6-4608-9C55-176F9300AAEC.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/958029936617205830/912810AB-1E50-491C-83D7-0627F1175029.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/958029925015748669/8B11A547-5AA8-49B6-B371-B96A6D9CE41E.jpg",
-
     "333TopSpeed": 214,
     "3330to60": 2.9,
     "333Handling": 93,
-
     "666TopSpeed": 217,
     "6660to60": 2.8,
     "666Handling": 96,
-
     "996TopSpeed": 219,
     "9960to60": 2.6,
     "996Handling": 96,
-
     "969TopSpeed": 219,
     "9690to60": 2.8,
     "969Handling": 100,
-
     "699TopSpeed": 217,
     "6990to60": 2.6,
-    "699Handling": 100
+    "699Handling": 100,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

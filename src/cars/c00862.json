@@ -9,9 +9,10 @@
     "handling": 85,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": ["Servers Choice"],
+    "tags": [
+        "Servers Choice"
+    ],
     "isPrize": false,
-
     "weight": 1584,
     "gc": "Low",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 57.94,
     "ola": 67.74,
     "description": "Cate8. Card by Spence.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/842245559222140958/image0.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/842245762460680212/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/842245781524185118/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/842245795428565013/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/842245838319386625/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/842245824460881930/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/842245809591287818/image0.jpg",
-
     "333TopSpeed": 137,
     "3330to60": 5.9,
     "333Handling": 88,
-
     "666TopSpeed": 141,
     "6660to60": 5.6,
     "666Handling": 91,
-
     "996TopSpeed": 145,
     "9960to60": 5.3,
     "996Handling": 91,
-
     "969TopSpeed": 145,
     "9690to60": 5.6,
     "969Handling": 94,
-
     "699TopSpeed": 141,
     "6990to60": 5.3,
-    "699Handling": 94
+    "699Handling": 94,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

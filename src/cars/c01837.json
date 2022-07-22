@@ -9,9 +9,10 @@
     "handling": 72,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1618,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 68.65,
     "ola": 66.67,
     "description": "Card by ChickenMcNuggets.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/828457759392399400/legacy_3.6r_2010.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/927273293134835722/old_3.6r_stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/927273340509515806/old_3.6r_1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/927273365071343736/old_3.6r_2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/927273439314739200/old_3.6r_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/927273415591731220/old_3.6r_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/927273389477986314/old_3.6r_233.png",
-
     "333TopSpeed": 149,
     "3330to60": 6.3,
     "333Handling": 74,
-
     "666TopSpeed": 152,
     "6660to60": 5.9,
     "666Handling": 77,
-
     "996TopSpeed": 156,
     "9960to60": 5.6,
     "996Handling": 77,
-
     "969TopSpeed": 156,
     "9690to60": 5.9,
     "969Handling": 80,
-
     "699TopSpeed": 152,
     "6990to60": 5.6,
-    "699Handling": 80
+    "699Handling": 80,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

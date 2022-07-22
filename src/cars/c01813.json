@@ -1,6 +1,9 @@
 {
     "rq": 23,
-    "make": ["Prince", "Nissan"],
+    "make": [
+        "Prince",
+        "Nissan"
+    ],
     "model": "1900 Sprint Concept",
     "modelYear": 1963,
     "country": "JP",
@@ -9,9 +12,12 @@
     "handling": 64,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Concept", "Unique","The Japanese Odyssey"],
+    "tags": [
+        "Concept",
+        "Unique",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 850,
     "gc": "Medium",
     "seatCount": 2,
@@ -23,32 +29,22 @@
     "mra": 54.02,
     "ola": 57.89,
     "description": "The pre-cursor to the Legendary Z. Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/966803974755860541/princesprintconcept.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/966804720914157588/princesprintconcept.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/966804727289507900/princesprintconcept1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/966804733593522276/princesprintconcept2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/966804758620938280/princesprintconcept996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/966804750223945748/princesprintconcept969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/966804740807745546/princesprintconcept699.png",
-
     "333TopSpeed": 117,
     "3330to60": 10.8,
     "333Handling": 66,
-
     "666TopSpeed": 121,
     "6660to60": 10.3,
     "666Handling": 68,
-
     "996TopSpeed": 126,
     "9960to60": 9.7,
     "996Handling": 68,
-
     "969TopSpeed": 126,
     "9690to60": 10.3,
     "969Handling": 71,
-
     "699TopSpeed": 121,
     "6990to60": 9.7,
-    "699Handling": 71
+    "699Handling": 71,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

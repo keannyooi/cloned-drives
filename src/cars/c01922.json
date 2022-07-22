@@ -9,9 +9,10 @@
     "handling": 63,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 2028,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 48.73,
     "ola": 67.53,
     "description": "Card by Macan.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/870246166418309120/Tacoma_V6_TRD_Pro_Double_Cab_17.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/870246736424230912/Toyota_Tacoma_V6_TRD_Pro_Double_Cab_2017_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/870246741134413824/Toyota_Tacoma_V6_TRD_Pro_Double_Cab_2017_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/870246743718100992/Toyota_Tacoma_V6_TRD_Pro_Double_Cab_2017_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/870246759283163146/Toyota_Tacoma_V6_TRD_Pro_Double_Cab_2017_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/870246754707210260/Toyota_Tacoma_V6_TRD_Pro_Double_Cab_2017_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/870246749355257896/Toyota_Tacoma_V6_TRD_Pro_Double_Cab_2017_699.png",
-
     "333TopSpeed": 118,
     "3330to60": 7.3,
     "333Handling": 65,
-
     "666TopSpeed": 122,
     "6660to60": 6.9,
     "666Handling": 67,
-
     "996TopSpeed": 127,
     "9960to60": 6.5,
     "996Handling": 67,
-
     "969TopSpeed": 127,
     "9690to60": 6.9,
     "969Handling": 70,
-
     "699TopSpeed": 122,
     "6990to60": 6.5,
-    "699Handling": 70
+    "699Handling": 70,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

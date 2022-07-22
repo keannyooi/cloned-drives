@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1682,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 63.53,
     "ola": 70.37,
     "description": "The latest ultimate driving machine. By Bnuuy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819962196028162121/330ixdriver.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819962639077474364/330i.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819962646098608168/330i333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819962654281957396/330i666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819962690964422676/330i996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819962675584827422/330i969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819962665505390664/330i699.png",
-
     "333TopSpeed": 159,
     "3330to60": 5.1,
     "333Handling": 84,
-
     "666TopSpeed": 163,
     "6660to60": 4.9,
     "666Handling": 86,
-
-	"996TopSpeed": 166,
+    "996TopSpeed": 166,
     "9960to60": 4.6,
     "996Handling": 86,
-
     "969TopSpeed": 166,
     "9690to60": 4.9,
     "969Handling": 90,
-
-	"699TopSpeed": 163,
+    "699TopSpeed": 163,
     "6990to60": 4.6,
-    "699Handling": 90
+    "699Handling": 90,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

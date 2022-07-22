@@ -1,4 +1,4 @@
-﻿{
+{
     "rq": 69,
     "make": "Volkswagen",
     "model": "Touareg 6.0 W12",
@@ -9,9 +9,10 @@
     "handling": 74,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": ["Sleeper"],
+    "tags": [
+        "Sleeper"
+    ],
     "isPrize": false,
-
     "weight": 2617,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 70.01,
     "ola": 67.86,
     "description": "Rapid and refined but dynamically challenged and hugely thirsty. Card by Andu",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/848480951898341426/Touareg60.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/848481600173113375/TouaregW12.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/848481606594199572/TouaregW12-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/848481612319686677/TouaregW12-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/848481630917885972/TouaregW12-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/848481644784779294/TouaregW12-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/848481657870614538/TouaregW12-699.png",
-
     "333TopSpeed": 158,
     "3330to60": 5.3,
     "333Handling": 76,
-
     "666TopSpeed": 162,
-    "6660to60": 5.0, 
+    "6660to60": 5,
     "666Handling": 79,
-
     "996TopSpeed": 165,
     "9960to60": 4.8,
     "996Handling": 79,
-
     "969TopSpeed": 165,
-    "9690to60": 5.0,
+    "9690to60": 5,
     "969Handling": 82,
-
     "699TopSpeed": 162,
     "6990to60": 4.8,
-    "699Handling": 82
+    "699Handling": 82,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

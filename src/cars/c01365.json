@@ -11,7 +11,6 @@
     "tyreType": "All-Surface",
     "tags": [],
     "isPrize": false,
-
     "weight": 1577,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 49.65,
     "ola": 61.97,
     "description": "A notable all-weather warrior. Card by Andu",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/822058708006993920/Alltrack.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/822059373529661460/Alltrack.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/822059379447562240/Alltrack1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/822059390655660042/Alltrack2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/822059411623116810/Alltrack996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/822059404576161792/Alltrack969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/822059397340463125/Alltrack699.png",
-
     "333TopSpeed": 133,
     "3330to60": 6.7,
     "333Handling": 79,
-
     "666TopSpeed": 137,
-    "6660to60": 6.4, 
+    "6660to60": 6.4,
     "666Handling": 81,
-
     "996TopSpeed": 141,
-    "9960to60": 6.0,
+    "9960to60": 6,
     "996Handling": 81,
-
     "969TopSpeed": 141,
     "9690to60": 6.4,
     "969Handling": 84,
-
     "699TopSpeed": 137,
-    "6990to60": 6.0,
-    "699Handling": 84
+    "6990to60": 6,
+    "699Handling": 84,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

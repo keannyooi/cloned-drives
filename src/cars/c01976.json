@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1510,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 62.86,
     "ola": 69.7,
     "description": "Card by Macan.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/858836760317132880/Clubman_S_DKG_20.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/858837745488101396/Mini_Clubman_S_DKG_2020_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/858837748924678154/Mini_Clubman_S_DKG_2020_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/858837751998840872/Mini_Clubman_S_DKG_2020_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/858837763012821002/Mini_Clubman_S_DKG_2020_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/858837759028494416/Mini_Clubman_S_DKG_2020_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/858837754669170688/Mini_Clubman_S_DKG_2020_699.png",
-
     "333TopSpeed": 146,
     "3330to60": 6.3,
     "333Handling": 85,
-
     "666TopSpeed": 149,
     "6660to60": 5.9,
     "666Handling": 87,
-
     "996TopSpeed": 153,
     "9960to60": 5.6,
     "996Handling": 87,
-
     "969TopSpeed": 153,
     "9690to60": 5.9,
     "969Handling": 91,
-
     "699TopSpeed": 149,
     "6990to60": 5.6,
-    "699Handling": 91
+    "699Handling": 91,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

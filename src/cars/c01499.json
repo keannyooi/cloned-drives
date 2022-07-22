@@ -1,17 +1,22 @@
 {
     "rq": 74,
-    "make": ["Gemballa", "Porsche"],
+    "make": [
+        "Gemballa",
+        "Porsche"
+    ],
     "model": "GTR 600 Biturbo",
     "modelYear": 2000,
     "country": "DE",
     "topSpeed": 207,
-    "0to60": 4.0,
+    "0to60": 4,
     "handling": 87,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Tuner", "Unique"],
+    "tags": [
+        "Tuner",
+        "Unique"
+    ],
     "isPrize": false,
-
     "weight": 1558,
     "gc": "Low",
     "seatCount": 4,
@@ -23,32 +28,22 @@
     "mra": 97.17,
     "ola": 86.08,
     "description": "Card by Havvy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/828634240089718784/unknown.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/828634374755975218/000_996Gemballa.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/828634377222094908/111_996Gemballa.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/828634381194231808/222_996Gemballa.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/828634399183994912/332_996Gemballa.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/828634392502075432/323_996Gemballa.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/828634386122670160/233_996Gemballa.png",
-
     "333TopSpeed": 210,
     "3330to60": 3.8,
     "333Handling": 90,
-
     "666TopSpeed": 212,
     "6660to60": 3.6,
     "666Handling": 93,
-
     "996TopSpeed": 215,
     "9960to60": 3.4,
     "996Handling": 93,
-
     "969TopSpeed": 215,
     "9690to60": 3.6,
     "969Handling": 97,
-
     "699TopSpeed": 212,
     "6990to60": 3.4,
-    "699Handling": 97
+    "699Handling": 97,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

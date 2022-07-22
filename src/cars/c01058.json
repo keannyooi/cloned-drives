@@ -1,4 +1,4 @@
-﻿{
+{
     "rq": 73,
     "make": "Porsche",
     "model": "718 Cayman T",
@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1325,
     "gc": "Medium",
     "seatCount": 2,
@@ -20,35 +19,25 @@
     "abs": true,
     "enginePos": "Middle",
     "fuelType": "Petrol",
-    "mra": 80.00,
-    "ola": 87.50,
+    "mra": 80,
+    "ola": 87.5,
     "description": "A 4 cylinder? Sacrilegious!. Card by Havvy ",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/823449428714192977/Porsche718CaymanT.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823451048139554876/cayman_t_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823451055659548702/cayman_t_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823451060659421204/cayman_t_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823451099112407050/cayman_t_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823451086757167104/cayman_t_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823451071082397716/cayman_t_699.jpg",
-
     "333TopSpeed": 174,
     "3330to60": 4.6,
     "333Handling": 94,
-
     "666TopSpeed": 177,
-    "6660to60": 4.3, 
+    "6660to60": 4.3,
     "666Handling": 97,
-
     "996TopSpeed": 180,
     "9960to60": 4.1,
     "996Handling": 97,
-
     "969TopSpeed": 180,
     "9690to60": 4.3,
     "969Handling": 101,
-
     "699TopSpeed": 177,
     "6990to60": 4.1,
-    "699Handling": 101
+    "699Handling": 101,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

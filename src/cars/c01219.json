@@ -9,9 +9,11 @@
     "handling": 85,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Street Racer", "Hot Hatch"],
+    "tags": [
+        "Street Racer",
+        "Hot Hatch"
+    ],
     "isPrize": false,
-
     "weight": 1451,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +25,22 @@
     "mra": 55,
     "ola": 63.64,
     "description": "A lighter, more powerful Hatchback STI. Card by Spence",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/846289942979149834/image0.jpg",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/846290009396871179/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/846290029905969152/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/846290044493758464/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/846290061661700126/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/846290077058465833/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/846290089608347658/image0.jpg",
-
     "333TopSpeed": 158,
     "3330to60": 4.2,
     "333Handling": 88,
-
     "666TopSpeed": 162,
-    "6660to60": 4.0,
+    "6660to60": 4,
     "666Handling": 91,
-
     "699TopSpeed": 162,
     "6990to60": 3.7,
     "699Handling": 94,
-
     "969TopSpeed": 165,
-    "9690to60": 4.0,
+    "9690to60": 4,
     "969Handling": 94,
-
     "996TopSpeed": 165,
     "9960to60": 3.7,
-    "996Handling": 91
+    "996Handling": 91,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

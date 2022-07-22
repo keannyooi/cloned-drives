@@ -9,9 +9,11 @@
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Supercar", "Ultra Expensive"],
+    "tags": [
+        "Supercar",
+        "Ultra Expensive"
+    ],
     "isPrize": false,
-
     "weight": 1520,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +25,22 @@
     "mra": 96.67,
     "ola": 103.45,
     "description": "Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/856545283440902164/MonzaSP2thingy.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/856545720106352690/monzasp2.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/856545726225186836/monzasp2333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/856545733138055208/monzasp2666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/856545757472620564/monzasp2996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/856545750245965864/monzasp2969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/856545743001878558/monzasp2699.png",
-
     "333TopSpeed": 189,
     "3330to60": 2.8,
     "333Handling": 94,
-
     "666TopSpeed": 192,
     "6660to60": 2.6,
     "666Handling": 97,
-
     "996TopSpeed": 194,
     "9960to60": 2.5,
     "996Handling": 97,
-
     "969TopSpeed": 194,
     "9690to60": 2.6,
     "969Handling": 101,
-
     "699TopSpeed": 192,
     "6990to60": 2.5,
-    "699Handling": 101
+    "699Handling": 101,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

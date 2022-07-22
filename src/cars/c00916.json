@@ -9,9 +9,10 @@
     "handling": 76,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Unique"],
+    "tags": [
+        "Unique"
+    ],
     "isPrize": false,
-
     "weight": 1240,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +24,22 @@
     "mra": 53.97,
     "ola": 64.71,
     "description": "The rarest Starion ever made, with only around 73 built and sold inside Japan. Card by Keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/856532600268390410/mitsubishi_starion_2000_turbo_gsr-vr.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/856531841333985290/starion_gsr-vrare_000.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/856531845025759272/starion_gsr-vrare_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/856531853090881576/starion_gsr-vrare_666.jpg",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/856531866052329492/starion_gsr-vrare_996.jpg",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/856531861497053194/starion_gsr-vrare_969.jpg",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/856531857198022707/starion_gsr-vrare_699.jpg",
-
     "333TopSpeed": 117,
     "3330to60": 6.5,
     "333Handling": 79,
-
     "666TopSpeed": 121,
     "6660to60": 6.1,
     "666Handling": 81,
-
     "996TopSpeed": 126,
     "9960to60": 5.8,
     "996Handling": 81,
-
     "969TopSpeed": 126,
     "9690to60": 6.1,
     "969Handling": 84,
-
     "699TopSpeed": 121,
     "6990to60": 5.8,
-    "699Handling": 84
+    "699Handling": 84,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

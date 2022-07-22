@@ -9,9 +9,10 @@
     "handling": 81,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Unique"],
+    "tags": [
+        "Unique"
+    ],
     "isPrize": false,
-
     "weight": 1440,
     "gc": "Medium",
     "seatCount": 2,
@@ -23,32 +24,22 @@
     "mra": 74.65,
     "ola": 98.11,
     "description": "Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/912480372242128996/Zagatobyferrarifz93.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/912480546821644308/rarifz93.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/912480554094563328/rarifz93333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/912480561073881098/rarifz93666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/912480596427702292/rarifz93996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/912480583731535894/rarifz93969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/912480570477531166/rarifz93699.png",
-
     "333TopSpeed": 191,
-    "3330to60": 5.0,
+    "3330to60": 5,
     "333Handling": 84,
-
     "666TopSpeed": 194,
     "6660to60": 4.8,
     "666Handling": 86,
-
     "996TopSpeed": 196,
     "9960to60": 4.5,
     "996Handling": 86,
-
     "969TopSpeed": 196,
     "9690to60": 4.8,
     "969Handling": 90,
-
     "699TopSpeed": 194,
     "6990to60": 4.5,
-    "699Handling": 90
+    "699Handling": 90,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

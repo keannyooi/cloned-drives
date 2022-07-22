@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 825,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 21.44,
     "ola": 65.63,
     "description": "Slightly warm version of the GTE. Card by Connor",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/838842197268365322/E.OpelKadett13SR.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/838842519059693609/E.OpelKadett13.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/838842545446322226/E.OpelKadett13-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/838842596838473738/E.OpelKadett13-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/838842710693249035/E.OpelKadett13-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/838842656952025098/E.OpelKadett13-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/838842624227934248/E.OpelKadett13-699.png",
-
     "333TopSpeed": 109,
     "3330to60": 12.2,
     "333Handling": 68,
-
     "666TopSpeed": 114,
     "6660to60": 11.5,
     "666Handling": 70,
-
     "996TopSpeed": 119,
     "9960to60": 10.9,
     "996Handling": 70,
-
     "969TopSpeed": 119,
     "9690to60": 11.5,
     "969Handling": 73,
-
     "699TopSpeed": 114,
     "6990to60": 10.9,
-    "699Handling": 73
+    "699Handling": 73,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -1,6 +1,9 @@
 {
     "rq": 32,
-    "make": ["Abarth", "Fiat"],
+    "make": [
+        "Abarth",
+        "Fiat"
+    ],
     "model": "500",
     "modelYear": 2008,
     "country": "IT",
@@ -9,9 +12,10 @@
     "handling": 76,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Street Racer"],
+    "tags": [
+        "Street Racer"
+    ],
     "isPrize": false,
-
     "weight": 1035,
     "gc": "Low",
     "seatCount": 4,
@@ -23,32 +27,22 @@
     "mra": 50.79,
     "ola": 70.1,
     "description": "The reintroduced Cinquecento gets injected with scorpion poison. Card by havvy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820433001539960842/unknown.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820433058330837012/000_abar.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820433068744638464/111_abar.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820433073312104468/222_abar.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820433087900155914/332_abar.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820433083148140554/323_abar.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820433080019058798/233_abar.png",
-
     "333TopSpeed": 131,
     "3330to60": 6.9,
     "333Handling": 79,
-
     "666TopSpeed": 135,
     "6660to60": 6.6,
     "666Handling": 81,
-    
     "996TopSpeed": 139,
     "9960to60": 6.2,
     "996Handling": 81,
-
     "969TopSpeed": 139,
     "9690to60": 6.6,
     "969Handling": 84,
-
     "699TopSpeed": 135,
     "6990to60": 6.2,
-    "699Handling": 84
+    "699Handling": 84,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

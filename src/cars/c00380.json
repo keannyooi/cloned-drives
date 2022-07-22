@@ -9,9 +9,13 @@
     "handling": 77,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Motorsport", "Ultra Expensive", "Unique", "Sleeper"],
+    "tags": [
+        "Motorsport",
+        "Ultra Expensive",
+        "Unique",
+        "Sleeper"
+    ],
     "isPrize": true,
-
     "weight": 1111,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +27,22 @@
     "mra": 85.29,
     "ola": 86.21,
     "description": "Card by Lemon.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/959841456045047888/ferrari_250_gto_64_for_cd.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/959842800260763778/25064hud000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/959847136340619304/25064hud333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/959847229219283034/25064hud666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/959847528264790016/25064hud996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/959847427203039292/25064hud969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/959847327835779112/25064hud699.png",
-
     "333TopSpeed": 158,
     "3330to60": 5.5,
     "333Handling": 80,
-
     "666TopSpeed": 162,
-    "6660to60": 5.2, 
+    "6660to60": 5.2,
     "666Handling": 82,
-
     "996TopSpeed": 165,
     "9960to60": 4.9,
     "996Handling": 82,
-
     "969TopSpeed": 165,
     "9690to60": 5.2,
     "969Handling": 85,
-
     "699TopSpeed": 162,
     "6990to60": 4.9,
-    "699Handling": 85
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

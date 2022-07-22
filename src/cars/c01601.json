@@ -9,48 +9,38 @@
     "handling": 51,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Kei Car","The Japanese Odyssey"],
+    "tags": [
+        "Kei Car",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
-
     "weight": 490,
     "gc": "Medium",
-    "seatCount":4,
+    "seatCount": 4,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": false,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 0.00,
+    "mra": 0,
     "ola": 48.02,
     "description": "This was supposed to be powered by a rotary engine, but every other kei car manufacturer disliked that, so they had to use another engine instead which resulted in Mazda's lost interest in the kei class. Card by Keanny.",
-
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/969596315585609758/mazda_chantex_gfii.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/969598571580096592/ChantezGF.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/969598578014187570/ChantezGF-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/969598590420934727/ChantezGF-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/969598600533377044/ChantezGF-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/969598616157171782/ChantezGF-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/969598630392635472/ChantezGF-699.png",
-
     "333TopSpeed": 77,
     "3330to60": 32.9,
     "333Handling": 53,
-
     "666TopSpeed": 85,
-    "6660to60": 31.1, 
+    "6660to60": 31.1,
     "666Handling": 54,
-
     "996TopSpeed": 92,
     "9960to60": 29.4,
     "996Handling": 54,
-
     "969TopSpeed": 92,
     "9690to60": 31.1,
     "969Handling": 57,
-
     "699TopSpeed": 85,
     "6990to60": 29.4,
-    "699Handling": 57
+    "699Handling": 57,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

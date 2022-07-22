@@ -9,9 +9,11 @@
     "handling": 61,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": ["Style Icon", "Silver Screen"],
+    "tags": [
+        "Style Icon",
+        "Silver Screen"
+    ],
     "isPrize": false,
-
     "weight": 2155,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +25,22 @@
     "mra": 23.94,
     "ola": 68.84,
     "description": "Smaller yet more capable. Card by keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/865583300412178442/hummer_h3.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819757554976292926/hummer_h3_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819757561209028638/hummer_h3_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819757568591134750/hummer_h3_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819757603457335306/hummer_h3_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819757587049611274/hummer_h3_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819757580908757012/hummer_h3_699.jpg",
-
     "333TopSpeed": 103,
     "3330to60": 10.3,
     "333Handling": 63,
-
     "666TopSpeed": 109,
     "6660to60": 9.7,
     "666Handling": 65,
-
     "996TopSpeed": 114,
     "9960to60": 9.2,
     "996Handling": 65,
-
     "969TopSpeed": 114,
     "9690to60": 9.7,
     "969Handling": 68,
-
-	"699TopSpeed": 109,
+    "699TopSpeed": 109,
     "6990to60": 9.2,
-    "699Handling": 68
+    "699Handling": 68,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

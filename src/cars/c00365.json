@@ -9,9 +9,10 @@
     "handling": 59,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": ["Servers Choice"],
+    "tags": [
+        "Servers Choice"
+    ],
     "isPrize": false,
-
     "weight": 1888,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 53.49,
     "ola": 78.26,
     "description": "A tamed Jeep renowned for having shit handling. Card by keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819383596820594739/nitro.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819908521016950844/nitro_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819908527161999360/nitro_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819908533347680276/nitro_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819908613815664641/nitro_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819908561802100736/nitro_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819908552034484224/nitro_699.jpg",
-
     "333TopSpeed": 119,
     "3330to60": 6.6,
     "333Handling": 61,
-
     "666TopSpeed": 123,
     "6660to60": 6.2,
     "666Handling": 63,
-
     "996TopSpeed": 128,
     "9960to60": 5.9,
     "996Handling": 63,
-
     "969TopSpeed": 128,
     "9690to60": 6.2,
     "969Handling": 65,
-
-	"699TopSpeed": 123,
+    "699TopSpeed": 123,
     "6990to60": 5.9,
-    "699Handling": 65
+    "699Handling": 65,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -9,13 +9,13 @@
     "handling": 66,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
-
     "weight": 980,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": false,
@@ -24,33 +24,22 @@
     "mra": 28.72,
     "ola": 65.74,
     "description": "The Japanese only Vitz with the added practicality of 4WD. Card by Andu.",
-
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/963493920656998421/VitzU4WD99.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/963494878090764319/VitzU99.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/963494888895303760/VitzU99-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/963494901335609364/VitzU99-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/963494912375017572/VitzU99-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/963494924639146024/VitzU99-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/963494938350329867/VitzU99-699.png",
-
     "333TopSpeed": 110,
     "3330to60": 10.3,
     "333Handling": 68,
-
     "666TopSpeed": 115,
-    "6660to60": 9.7, 
+    "6660to60": 9.7,
     "666Handling": 70,
-
     "996TopSpeed": 120,
     "9960to60": 9.2,
     "996Handling": 70,
-
     "969TopSpeed": 120,
     "9690to60": 9.7,
     "969Handling": 73,
-
     "699TopSpeed": 115,
     "6990to60": 9.2,
-    "699Handling": 73
+    "699Handling": 73,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

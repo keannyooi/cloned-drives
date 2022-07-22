@@ -9,9 +9,12 @@
     "handling": 82,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Hot Hatch","Street Racer","The Japanese Odyssey"],
+    "tags": [
+        "Hot Hatch",
+        "Street Racer",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1263,
     "gc": "Low",
     "seatCount": 5,
@@ -20,35 +23,25 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 61.40,
+    "mra": 61.4,
     "ola": 84.85,
     "description": "Controversial design Civic, criticized for being heavier, slower and handling worse than the previous one. Card by havvy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/863871939842801675/HondaCivicType-RFN2.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/863872002225340466/fn2_111.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/863872005480775700/fn2_222.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/863870858572726322/ep3_222.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/863872024924389417/fn2_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/863872020622213120/fn2_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/863872013566345216/fn2_233.png",
-
     "333TopSpeed": 150,
     "3330to60": 6.3,
     "333Handling": 85,
-
     "666TopSpeed": 153,
     "6660to60": 5.9,
     "666Handling": 87,
-
     "996TopSpeed": 157,
     "9960to60": 5.6,
     "996Handling": 87,
-
     "969TopSpeed": 157,
     "9690to60": 5.9,
     "969Handling": 91,
-
     "699TopSpeed": 153,
     "6990to60": 5.6,
-    "699Handling": 91
+    "699Handling": 91,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

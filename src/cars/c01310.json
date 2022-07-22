@@ -5,13 +5,15 @@
     "modelYear": 2019,
     "country": "JP",
     "topSpeed": 162,
-    "0to60": 4.0,
+    "0to60": 4,
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Street Racer", "Silver Screen"],
+    "tags": [
+        "Street Racer",
+        "Silver Screen"
+    ],
     "isPrize": false,
-
     "weight": 1570,
     "gc": "Low",
     "seatCount": 2,
@@ -21,34 +23,24 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 70.18,
-    "ola": 85.00,
+    "ola": 85,
     "description": "Return of the legend with BMW mechanicals, not very well recieved amongst 13 year olds. Card by Connor",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/837996099901325352/A.ToyotaGRSupraRZCD.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/837996236203229224/A.ToyotaGRSupraRZ.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/837996254041997342/A.ToyotaGRSupraRZ-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/837996267757109248/A.ToyotaGRSupraRZ-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/837996319771197452/A.ToyotaGRSupraRZ-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/837996304495411210/A.ToyotaGRSupraRZ-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/837996290545025054/A.ToyotaGRSupraRZ-699.png",
-
     "333TopSpeed": 165,
     "3330to60": 3.8,
     "333Handling": 94,
-
     "666TopSpeed": 168,
     "6660to60": 3.6,
     "666Handling": 97,
-
     "996TopSpeed": 172,
     "9960to60": 3.4,
     "996Handling": 97,
-
     "969TopSpeed": 172,
     "9690to60": 3.6,
     "969Handling": 101,
-
     "699TopSpeed": 168,
     "6990to60": 3.4,
-    "699Handling": 101
+    "699Handling": 101,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

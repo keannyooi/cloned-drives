@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 990,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 44.92,
     "ola": 62.75,
     "description": "Obscure japanese sedan with multiple weird trims, a classic. Card by Based.",
-
     "card": "https://cdn.discordapp.com/attachments/731698267573977099/858045434895138816/Suzuki_Esteem_GLX.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/859562390298689586/Suzuki_Esteeem_GLX_Stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/859562509244956702/Suzuki_Esteeem_GLX_1_Star.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/859562528048414730/Suzuki_Esteeem_GLX_2_Star.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/859562562899148840/Suzuki_Esteeem_GLX_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/859562551465869352/Suzuki_Esteeem_GLX_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/859562540802899988/Suzuki_Esteeem_GLX_699.png",
-
     "333TopSpeed": 111,
     "3330to60": 10.1,
     "333Handling": 69,
-
     "666TopSpeed": 116,
     "6660to60": 9.5,
     "666Handling": 71,
-
     "996TopSpeed": 121,
-    "9960to60": 9.0,
+    "9960to60": 9,
     "996Handling": 71,
-
     "969TopSpeed": 121,
     "9690to60": 9.5,
     "969Handling": 74,
-
     "699TopSpeed": 116,
-    "6990to60": 9.0,
-    "699Handling": 74
+    "6990to60": 9,
+    "699Handling": 74,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

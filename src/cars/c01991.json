@@ -9,9 +9,11 @@
     "handling": 94,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Hypercar", "Unique"],
+    "tags": [
+        "Hypercar",
+        "Unique"
+    ],
     "isPrize": true,
-
     "weight": 1600,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +25,22 @@
     "mra": 103.33,
     "ola": 77.42,
     "description": "Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/966804119291560006/vicoteeeer.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/966804940246892634/Victor.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/966804945003249694/Victor1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/966804951005298808/Victor2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/966804975185440788/Victor996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/966804969334407198/Victor969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/966804961725931571/Victor699.png",
-
     "333TopSpeed": 230,
     "3330to60": 2.9,
     "333Handling": 97,
-
     "666TopSpeed": 233,
     "6660to60": 2.8,
     "666Handling": 100,
-
     "996TopSpeed": 235,
     "9960to60": 2.6,
     "996Handling": 100,
-
     "969TopSpeed": 235,
     "9690to60": 2.8,
     "969Handling": 104,
-
     "699TopSpeed": 233,
     "6990to60": 2.6,
-    "699Handling": 104
+    "699Handling": 104,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -11,7 +11,6 @@
     "tyreType": "All-Surface",
     "tags": [],
     "isPrize": false,
-
     "weight": 1567,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 47.11,
     "ola": 72.51,
     "description": "One of the first crossovers in its 3rd gen. Card by Andu",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/912371540899803206/RAV4XLE.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/912371391016341564/Rav4.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/912371411736199168/Rav4-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/912371422351982652/Rav4-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/912371435639545897/Rav4-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/912371448285364284/Rav4-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/912371461480661032/Rav4-699.png",
-
     "333TopSpeed": 113,
     "3330to60": 8.2,
     "333Handling": 70,
-
     "666TopSpeed": 118,
-    "6660to60": 7.7, 
+    "6660to60": 7.7,
     "666Handling": 72,
-
     "996TopSpeed": 122,
     "9960to60": 7.3,
     "996Handling": 72,
-
     "969TopSpeed": 122,
     "9690to60": 7.7,
     "969Handling": 75,
-
     "699TopSpeed": 118,
     "6990to60": 7.3,
-    "699Handling": 75
+    "699Handling": 75,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

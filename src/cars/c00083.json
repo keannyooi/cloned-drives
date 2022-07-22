@@ -9,9 +9,10 @@
     "handling": 83,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Sleeper"],
+    "tags": [
+        "Sleeper"
+    ],
     "isPrize": false,
-
     "weight": 1950,
     "gc": "Low",
     "seatCount": 4,
@@ -23,32 +24,22 @@
     "mra": 81.32,
     "ola": 79.05,
     "description": "Luxury in action, although loses to the Panamera. Card by havvy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/825736064513736754/AstonMartinRapide.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/825736118074736690/000_rapide.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/825736124580102154/111_rapide.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/828612700120023090/unknown.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/825736161598636102/332_rapide.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/825736156900884531/323_rapide.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/825736148949008404/233_rapide.png",
-
     "333TopSpeed": 189,
     "3330to60": 4.7,
     "333Handling": 86,
-
     "666TopSpeed": 192,
     "6660to60": 4.4,
     "666Handling": 88,
-
     "996TopSpeed": 194,
     "9960to60": 4.2,
     "996Handling": 88,
-
     "969TopSpeed": 194,
     "9690to60": 4.4,
     "969Handling": 92,
-
-	"699TopSpeed": 192,
+    "699TopSpeed": 192,
     "6990to60": 4.2,
-    "699Handling": 92
+    "699Handling": 92,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -5,13 +5,20 @@
     "modelYear": 1962,
     "country": "IT",
     "topSpeed": 174,
-    "0to60": 6.0,
+    "0to60": 6,
     "handling": 74,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Motorsport", "Ultra Expensive", "Unique", "Style Icon", "Sleeper", "Supercar", "Silver Screen"],
+    "tags": [
+        "Motorsport",
+        "Ultra Expensive",
+        "Unique",
+        "Style Icon",
+        "Sleeper",
+        "Supercar",
+        "Silver Screen"
+    ],
     "isPrize": true,
-
     "weight": 1047,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +30,22 @@
     "mra": 90.91,
     "ola": 86.67,
     "description": "It was born in a tumultuous chapter in Ferrari history and never even won Le Mans. So how did the 250 GTO become a $70 million collectible? Card by Lemon.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/959824901341073438/ferrari_250_gto_62_for_cd.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/959832192140345415/25062hud000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/959832257961529434/25062hud333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/959832326676815892/25062hud666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/959832478389002330/25062hud996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/959832439172247602/25062hud969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/959832395559891014/25062hud699.png",
-
     "333TopSpeed": 177,
     "3330to60": 5.7,
     "333Handling": 76,
-
     "666TopSpeed": 180,
     "6660to60": 5.4,
     "666Handling": 79,
-
     "996TopSpeed": 183,
     "9960to60": 5.1,
     "996Handling": 79,
-
     "969TopSpeed": 183,
     "9690to60": 5.4,
     "969Handling": 82,
-
     "699TopSpeed": 180,
     "6990to60": 5.1,
-    "699Handling": 82
+    "699Handling": 82,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -1,6 +1,9 @@
 {
     "rq": 70,
-    "make": ["RENNtech", "Mercedes-Benz"],
+    "make": [
+        "RENNtech",
+        "Mercedes-Benz"
+    ],
     "model": "6.0 500SL",
     "modelYear": 1991,
     "country": "US",
@@ -9,9 +12,10 @@
     "handling": 84,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Tuner"],
+    "tags": [
+        "Tuner"
+    ],
     "isPrize": false,
-
     "weight": 1888,
     "gc": "Medium",
     "seatCount": 2,
@@ -23,32 +27,22 @@
     "mra": 74.19,
     "ola": 77.69,
     "description": "Card by Havvy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/827193695920586787/unknown.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/827193744079323196/000_rennsl1.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/827193748265107456/111_rennsl1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/827193753940918332/222_rennsl1.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/827193765060018196/332_rennsl1.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/827193760562544690/323_rennsl1.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/827193757249568839/233_rennsl1.png",
-
     "333TopSpeed": 185,
     "3330to60": 4.4,
     "333Handling": 87,
-
     "666TopSpeed": 188,
     "6660to60": 4.1,
     "666Handling": 90,
-
     "996TopSpeed": 191,
     "9960to60": 3.9,
     "996Handling": 90,
-
     "969TopSpeed": 191,
     "9690to60": 4.1,
     "969Handling": 93,
-
     "699TopSpeed": 188,
     "6990to60": 3.9,
-    "699Handling": 93
+    "699Handling": 93,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

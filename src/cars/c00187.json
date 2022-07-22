@@ -9,9 +9,12 @@
     "handling": 75,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Innovative", "Street Racer", "Super Sedan"],
+    "tags": [
+        "Innovative",
+        "Street Racer",
+        "Super Sedan"
+    ],
     "isPrize": false,
-
     "weight": 1500,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +26,22 @@
     "mra": 66.67,
     "ola": 78.13,
     "description": "The super sedan that paved the way. Card by Connor",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/944334250088480818/C.BMWM5E28-u.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821832079632498688/C.BMWM5.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821832086105096302/C.BMWM5-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821832099056320522/C.BMWM5-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821832140047253544/C.BMWM5-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821832127665668177/C.BMWM5-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821832112763043950/C.BMWM5-699.png",
-
     "333TopSpeed": 156,
     "3330to60": 6.1,
     "333Handling": 77,
-
     "666TopSpeed": 160,
     "6660to60": 5.8,
     "666Handling": 80,
-
     "996TopSpeed": 163,
     "9960to60": 5.4,
     "996Handling": 80,
-
     "969TopSpeed": 163,
     "9690to60": 5.8,
     "969Handling": 83,
-
     "699TopSpeed": 160,
     "6990to60": 5.4,
-    "699Handling": 83
+    "699Handling": 83,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

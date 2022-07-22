@@ -9,9 +9,10 @@
     "handling": 85,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["The Royal Collection"],
+    "tags": [
+        "The Royal Collection"
+    ],
     "isPrize": false,
-
     "weight": 995,
     "gc": "Medium",
     "seatCount": 2,
@@ -23,32 +24,22 @@
     "mra": 69.51,
     "ola": 70.18,
     "description": "Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/849757406362599424/LotusEuropaS.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/849758007612407828/EuropaS.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/849758013110747186/EuropaS333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/849758018383118406/EuropaS666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/849758052638261258/EuropaS996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/849758042089193492/EuropaS969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/849758033654448158/EuropaS699.png",
-
     "333TopSpeed": 150,
     "3330to60": 5.4,
     "333Handling": 88,
-
     "666TopSpeed": 153,
     "6660to60": 5.1,
     "666Handling": 91,
-
     "996TopSpeed": 157,
     "9960to60": 4.8,
     "996Handling": 91,
-
     "969TopSpeed": 157,
     "9690to60": 5.1,
     "969Handling": 94,
-
     "699TopSpeed": 153,
     "6990to60": 4.8,
-    "699Handling": 94
+    "699Handling": 94,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

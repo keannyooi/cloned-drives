@@ -9,9 +9,11 @@
     "handling": 72,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Eco-Friendly", "Rest of The World"],
+    "tags": [
+        "Eco-Friendly",
+        "Rest of The World"
+    ],
     "isPrize": false,
-
     "weight": 1677,
     "gc": "Medium",
     "seatCount": 5,
@@ -21,34 +23,24 @@
     "enginePos": "Front",
     "fuelType": "Electric",
     "mra": 45.64,
-    "ola": 83.40,
+    "ola": 83.4,
     "description": "Card by andu",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819923452471410708/Ioniq.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819922856744845312/IONIQ.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819922866992054322/IONIQ1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819922874101530624/IONIQ2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819922901649195018/IONIQ996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819922890182492190/IONIQ969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819922883014164481/IONIQ699.png",
-
     "333TopSpeed": 113,
     "3330to60": 8.2,
     "333Handling": 74,
-
     "666TopSpeed": 118,
     "6660to60": 7.7,
     "666Handling": 77,
-
-	"996TopSpeed": 122,
+    "996TopSpeed": 122,
     "9960to60": 7.3,
     "996Handling": 77,
-
     "969TopSpeed": 122,
     "9690to60": 7.7,
     "969Handling": 80,
-
-	"699TopSpeed": 118,
+    "699TopSpeed": 118,
     "6990to60": 7.3,
-    "699Handling": 80
+    "699Handling": 80,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

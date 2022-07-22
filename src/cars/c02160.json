@@ -11,7 +11,6 @@
     "tyreType": "All-Surface",
     "tags": [],
     "isPrize": false,
-
     "weight": 1873,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 43.75,
     "ola": 65.93,
     "description": "Card by Macan.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/855184927280857108/Discovery_Sport_D180_SE_19.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/855185425168859206/Land_Rover_Discovery_Sport_D180_SE_2019_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/855185430755672074/Land_Rover_Discovery_Sport_D180_SE_2019_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/855185441934540810/Land_Rover_Discovery_Sport_D180_SE_2019_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/855185468349874196/Land_Rover_Discovery_Sport_D180_SE_2019_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/855185461093728287/Land_Rover_Discovery_Sport_D180_SE_2019_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/855185454756134934/Land_Rover_Discovery_Sport_D180_SE_2019_699.png",
-
     "333TopSpeed": 130,
     "3330to60": 9.3,
     "333Handling": 74,
-
     "666TopSpeed": 134,
     "6660to60": 8.8,
     "666Handling": 77,
-
     "996TopSpeed": 138,
     "9960to60": 8.3,
     "996Handling": 77,
-
     "969TopSpeed": 138,
     "9690to60": 8.8,
     "969Handling": 80,
-
     "699TopSpeed": 134,
     "6990to60": 8.3,
-    "699Handling": 80
+    "699Handling": 80,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

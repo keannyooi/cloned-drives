@@ -9,9 +9,11 @@
     "handling": 87,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Tuner", "Unique"],
+    "tags": [
+        "Tuner",
+        "Unique"
+    ],
     "isPrize": false,
-
     "weight": 1100,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +25,22 @@
     "mra": 91.89,
     "ola": 94.12,
     "description": "A TVR Specialist Str8six has decided to make Tuscans chassis that he still owned with a Chevy V8 in which the Russians didn't continue. Card by Spence.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/976538782448881745/TVRTuscanVulcanbyStr8Six.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/976538954818011206/TVRTuscanVulcanbyStr8SixStock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/976538987885912074/TVRTuscanVulcanbyStr8Six1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/976539006378590228/TVRTuscanVulcanbyStr8Six2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/976539111156482088/TVRTuscanVulcanbyStr8Six996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/976539087454490644/TVRTuscanVulcanbyStr8Six969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/976539026624507934/TVRTuscanVulcanbyStr8Six699.png",
-
     "333TopSpeed": 202,
     "3330to60": 3.2,
     "333Handling": 90,
-
     "666TopSpeed": 204,
     "6660to60": 3.1,
     "666Handling": 93,
-
     "996TopSpeed": 207,
     "9960to60": 2.9,
     "996Handling": 93,
-
     "969TopSpeed": 207,
     "9690to60": 3.1,
     "969Handling": 97,
-
     "699TopSpeed": 204,
     "6990to60": 2.9,
-    "699Handling": 97
+    "699Handling": 97,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

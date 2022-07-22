@@ -9,13 +9,13 @@
     "handling": 65,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
-
     "weight": 855,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": false,
@@ -24,33 +24,22 @@
     "mra": 18.96,
     "ola": 63.16,
     "description": "Base model to get you into that new millenium fantasy. Car by Andu",
-
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/866935292430123018/Yaris1016VSol.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/866937063743160360/Yaris10Sol.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/866937080596398161/Yaris10Sol-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/866937092726194186/Yaris10Sol-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/866937108492582922/Yaris10Sol-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/866937123739009034/Yaris10Sol-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/866937139086360606/Yaris10Sol-699.png",
-
     "333TopSpeed": 102,
     "3330to60": 13.2,
     "333Handling": 67,
-
     "666TopSpeed": 108,
-    "6660to60": 12.5, 
+    "6660to60": 12.5,
     "666Handling": 69,
-
     "996TopSpeed": 113,
     "9960to60": 11.8,
     "996Handling": 69,
-
     "969TopSpeed": 113,
     "9690to60": 12.5,
     "969Handling": 72,
-
     "699TopSpeed": 108,
     "6990to60": 11.8,
-    "699Handling": 72
+    "699Handling": 72,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

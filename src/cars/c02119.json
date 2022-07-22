@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1360,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +22,22 @@
     "mra": 59.47,
     "ola": 67.42,
     "description": "Card by Keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/975650586911465532/bmw_z4_2.5si.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/975645622109630504/z4_2.5si_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/975645640065421353/z4_2.5si_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/975645672520949791/z4_2.5si_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/975645723255259147/z4_2.5si_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/975645707631489064/z4_2.5si_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/975645692045438976/z4_2.5si_699.jpg",
-
     "333TopSpeed": 152,
     "3330to60": 6.2,
     "333Handling": 84,
-
     "666TopSpeed": 156,
     "6660to60": 5.9,
     "666Handling": 86,
-
     "996TopSpeed": 159,
     "9960to60": 5.5,
     "996Handling": 86,
-
     "969TopSpeed": 159,
     "9690to60": 5.9,
     "969Handling": 90,
-
     "699TopSpeed": 156,
     "6990to60": 5.5,
-    "699Handling": 90
+    "699Handling": 90,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

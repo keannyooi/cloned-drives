@@ -9,13 +9,13 @@
     "handling": 64,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
-
     "weight": 1029,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Minivan",
     "tcs": false,
     "abs": false,
@@ -24,33 +24,22 @@
     "mra": 21.18,
     "ola": 63.67,
     "description": "It looks like its missing 7 chromosome. Quote by Corentin. Card by Andu",
-
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/897035299899719680/YarisVerso1316VSol.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/897034913642074122/Verso13.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/897034927705567252/Verso13-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/897034942930907146/Verso13-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/897034983158464512/Verso13-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/897035001395310632/Verso13-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/897035016704491530/Verso13-699.png",
-
     "333TopSpeed": 105,
     "3330to60": 11.7,
     "333Handling": 66,
-
     "666TopSpeed": 110,
-    "6660to60": 11.1, 
+    "6660to60": 11.1,
     "666Handling": 68,
-
     "996TopSpeed": 116,
     "9960to60": 10.5,
     "996Handling": 68,
-
     "969TopSpeed": 116,
     "9690to60": 11.1,
     "969Handling": 71,
-
     "699TopSpeed": 110,
     "6990to60": 10.5,
-    "699Handling": 71
+    "699Handling": 71,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

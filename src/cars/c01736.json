@@ -9,9 +9,11 @@
     "handling": 96,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": ["Motorsport","The Japanese Odyssey"],
+    "tags": [
+        "Motorsport",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1300,
     "gc": "Low",
     "seatCount": 1,
@@ -23,32 +25,22 @@
     "mra": 94.44,
     "ola": 82.35,
     "description": "Card by Aqo.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/962650186444832829/unknown.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/962650233731432488/stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/962650265079652402/333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/962650292673982484/666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/962650356368687155/996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/962650335002898472/969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/962650314295619614/699.png",
-
     "333TopSpeed": 197,
     "3330to60": 3.2,
     "333Handling": 99,
-
     "666TopSpeed": 199,
     "6660to60": 3.1,
     "666Handling": 102,
-
     "996TopSpeed": 202,
     "9960to60": 2.9,
     "996Handling": 102,
-
     "969TopSpeed": 202,
     "9690to60": 3.1,
     "969Handling": 107,
-
     "699TopSpeed": 199,
     "6990to60": 2.9,
-    "699Handling": 107
+    "699Handling": 107,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

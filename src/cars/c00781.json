@@ -5,13 +5,15 @@
     "modelYear": 2015,
     "country": "GB",
     "topSpeed": 199,
-    "0to60": 3.0,
+    "0to60": 3,
     "handling": 92,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["The Royal Collection", "Supercar"],
+    "tags": [
+        "The Royal Collection",
+        "Supercar"
+    ],
     "isPrize": false,
-
     "weight": 1450,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +25,22 @@
     "mra": 100.33,
     "ola": 93.55,
     "description": "Card by Smega.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/854718274457042974/CD_McLaren_540C.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/854718327581310976/CD_McLaren_540C_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/854718338692677652/CD_McLaren_540C_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/854718343789412392/CD_McLaren_540C_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/854718362545815562/CD_McLaren_540C_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/854718355986579476/CD_McLaren_540C_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/854718354195480597/CD_McLaren_540C_699.png",
-
     "333TopSpeed": 202,
     "3330to60": 2.9,
     "333Handling": 95,
-
     "666TopSpeed": 204,
     "6660to60": 2.7,
     "666Handling": 98,
-
     "996TopSpeed": 207,
     "9960to60": 2.6,
     "996Handling": 98,
-
     "969TopSpeed": 207,
     "9690to60": 2.7,
     "969Handling": 102,
-
     "699TopSpeed": 204,
     "6990to60": 2.6,
-    "699Handling": 102
+    "699Handling": 102,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

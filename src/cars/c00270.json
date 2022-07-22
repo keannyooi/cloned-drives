@@ -9,9 +9,10 @@
     "handling": 90,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Supercar"],
+    "tags": [
+        "Supercar"
+    ],
     "isPrize": false,
-
     "weight": 1585,
     "gc": "Low",
     "seatCount": 2,
@@ -20,35 +21,25 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 75.00,
-    "ola": 92.30,
+    "mra": 75,
+    "ola": 92.3,
     "description": "Track oriented C7, with an uprated engine. Card by Connor.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/934142935438614558/A.ChevyCorvetteGSC7.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/934142980233777243/ChevyCorvetteGS.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/934143001096257546/ChevyCorvetteGS-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/934143020868198420/ChevyCorvetteGS-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/934143078627950622/ChevyCorvetteGS-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/934143061032837151/ChevyCorvetteGS-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/934143039000166512/ChevyCorvetteGS-699.png",
-
     "333TopSpeed": 185,
     "3330to60": 3.7,
     "333Handling": 93,
-
     "666TopSpeed": 188,
     "6660to60": 3.5,
     "666Handling": 96,
-
     "996TopSpeed": 191,
     "9960to60": 3.3,
     "996Handling": 96,
-
     "969TopSpeed": 191,
     "9690to60": 3.5,
     "969Handling": 100,
-
     "699TopSpeed": 188,
     "6990to60": 3.3,
-    "699Handling": 100
+    "699Handling": 100,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

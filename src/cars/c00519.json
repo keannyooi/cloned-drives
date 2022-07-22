@@ -9,9 +9,11 @@
     "handling": 74,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Sleeper", "Street Racer"],
+    "tags": [
+        "Sleeper",
+        "Street Racer"
+    ],
     "isPrize": false,
-
     "weight": 1544,
     "gc": "Low",
     "seatCount": 5,
@@ -20,35 +22,25 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 83.00,
+    "mra": 83,
     "ola": 81.82,
     "description": "Don't ask how the MRA is stonks. Card by ChickenMcNuggets",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820437214911004702/acored_hfp.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820081345790869574/hfp_stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820081384491319346/hfp_1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820081425025204265/hfp_2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820081526649782302/hfp_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820081495363551272/hfp_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820081458282233866/hfp_233.png",
-
     "333TopSpeed": 136,
     "3330to60": 6.3,
     "333Handling": 76,
-
     "666TopSpeed": 140,
     "6660to60": 5.9,
     "666Handling": 79,
-
-	"996TopSpeed": 144,
+    "996TopSpeed": 144,
     "9960to60": 5.6,
     "996Handling": 79,
-
     "969TopSpeed": 144,
     "9690to60": 5.9,
     "969Handling": 82,
-
-	"699TopSpeed": 140,
+    "699TopSpeed": 140,
     "6990to60": 5.6,
-    "699Handling": 82
+    "699Handling": 82,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -1,4 +1,4 @@
-﻿{
+{
     "rq": 50,
     "make": "Porsche",
     "model": "928 GTS",
@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1612,
     "gc": "Low",
     "seatCount": 4,
@@ -23,33 +22,22 @@
     "mra": 67.95,
     "ola": 83.02,
     "description": "The front-engined Porsche with a dream. Card by Bnuuy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819393620670414848/928GTS.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819393678937292830/928.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819393701292933200/928333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819393715911131236/928666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819393798714687488/928996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819393777517068379/928969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819393746567036978/928699.png",
-
     "333TopSpeed": 169,
-    "3330to60": 5.0,
+    "3330to60": 5,
     "333Handling": 81,
-
     "666TopSpeed": 172,
-    "6660to60": 4.8, 
+    "6660to60": 4.8,
     "666Handling": 83,
-
     "996TopSpeed": 175,
     "9960to60": 4.5,
     "996Handling": 83,
-
     "969TopSpeed": 175,
     "9690to60": 4.8,
     "969Handling": 87,
-
     "699TopSpeed": 172,
     "6990to60": 4.5,
-    "699Handling": 87
-
+    "699Handling": 87,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

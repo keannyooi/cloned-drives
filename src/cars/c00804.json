@@ -9,9 +9,10 @@
     "handling": 90,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Grand Tourer"],
+    "tags": [
+        "Grand Tourer"
+    ],
     "isPrize": false,
-
     "weight": 1530,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +24,22 @@
     "mra": 84.85,
     "ola": 85.71,
     "description": "The sensible McLaren, compared to other McLaren models that is. Card by Exist",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/826709882086227968/CD_McLaren_GT.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826709988248518696/CD_McLaren_GT_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826709998507524126/CD_McLaren_GT_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826710011609612298/CD_McLaren_GT_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826710034724683836/CD_McLaren_GT_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826710021466619904/CD_McLaren_GT_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826710017075707904/CD_McLaren_GT_699.png",
-
     "333TopSpeed": 206,
     "3330to60": 2.7,
     "333Handling": 93,
-
     "666TopSpeed": 208,
     "6660to60": 2.5,
     "666Handling": 96,
-
     "996TopSpeed": 211,
     "9960to60": 2.4,
     "996Handling": 96,
-
     "969TopSpeed": 211,
     "9690to60": 2.5,
     "969Handling": 100,
-
     "699TopSpeed": 208,
     "6990to60": 2.4,
-    "699Handling": 100
+    "699Handling": 100,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

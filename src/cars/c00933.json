@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1533,
     "gc": "Low",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 63.54,
     "ola": 75.41,
     "description": "Back when Nissan actually used to make good cars. card by Nuggets.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/844684084936835082/ser.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/844683849618292777/ser_stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/844683880258600980/ser_1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/844683929528696862/ser_2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/844684009530195989/ser_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/844683983891202118/ser_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/844683956698742814/ser_233.png",
-
     "333TopSpeed": 145,
     "3330to60": 5.8,
     "333Handling": 80,
-
     "666TopSpeed": 148,
     "6660to60": 5.5,
     "666Handling": 82,
-
     "996TopSpeed": 152,
     "9960to60": 5.2,
     "996Handling": 82,
-
     "969TopSpeed": 152,
     "9690to60": 5.5,
     "969Handling": 85,
-
     "699TopSpeed": 148,
     "6990to60": 5.2,
-    "699Handling": 85
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -4,6 +4,7 @@ const { SuccessMessage } = require("../util/classes/classes.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const selectUpgrade = require("../util/functions/selectUpgrade.js");
 const searchGarage = require("../util/functions/searchGarage.js");
+const generateHud = require("../util/functions/generateHud.js");
 const profileModel = require("../models/profileSchema.js");
 
 module.exports = {
@@ -59,20 +60,22 @@ module.exports = {
 
         async function setHand(currentCar, upgrade, currentMessage) {
             const car = require(`../cars/${currentCar.carID}`);
-            await profileModel.updateOne({ userID: message.author.id }, {
-                hand: {
-                    carID: currentCar.carID,
-                    upgrade
-                }
-            });
+            const [, attachment] = await Promise.all([
+                profileModel.updateOne({ userID: message.author.id }, {
+                    hand: {
+                        carID: currentCar.carID,
+                        upgrade
+                    }
+                }),
+                generateHud(car, upgrade)
+            ]);
 
             const successMessage = new SuccessMessage({
                 channel: message.channel,
                 title: `Successfully set your ${carNameGen({ currentCar: car, upgrade, rarity: true })} as your quick race, random race and event hand!`,
                 author: message.author,
-                image: car[`racehud${upgrade}`]
             });
-            return successMessage.sendMessage({ currentMessage });
+            return successMessage.sendMessage({ attachment, currentMessage });
         }
     }
 };

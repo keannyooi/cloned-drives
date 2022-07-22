@@ -11,10 +11,9 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 680,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": false,
@@ -23,32 +22,22 @@
     "mra": 8.45,
     "ola": 59.76,
     "description": "At least it isn’t an automatic. Card by Connor",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/865597796916265000/F.HondaCivicCVCC4spd.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820685054396989460/F.HondaCivicCVVC4.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820685064614051850/F.HondaCivicCVVC4-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820685070331281478/F.HondaCivicCVVC4-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820686032738713600/F.HondaCivicCVVC4-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820685097887727636/F.HondaCivicCVVC4-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820685080917442650/F.HondaCivicCVVC4-699.png",
-
     "333TopSpeed": 94,
     "3330to60": 15.6,
     "333Handling": 67,
-
     "666TopSpeed": 100,
-    "6660to60": 14.8, 
+    "6660to60": 14.8,
     "666Handling": 69,
-
     "996TopSpeed": 106,
     "9960to60": 13.9,
     "996Handling": 69,
-
     "969TopSpeed": 106,
     "9690to60": 14.8,
     "969Handling": 72,
-
     "699TopSpeed": 100,
     "6990to60": 13.9,
-    "699Handling": 72
+    "699Handling": 72,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

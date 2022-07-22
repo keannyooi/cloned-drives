@@ -9,9 +9,10 @@
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Track Day"],
+    "tags": [
+        "Track Day"
+    ],
     "isPrize": false,
-
     "weight": 575,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +24,22 @@
     "mra": 65.45,
     "ola": 72.22,
     "description": "The most pimped up Caterham for its time. Card by DodgeDemon",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/826217562143850496/catecsr260.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826217700963254282/catecsr.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826217706474569748/catecsr333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826217715659702332/catecsr666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826217742088667236/catecsr996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826217733045747712/catecsr969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826217724308226078/catecsr699.png",
-
     "333TopSpeed": 158,
     "3330to60": 3.4,
     "333Handling": 94,
-
     "666TopSpeed": 162,
     "6660to60": 3.2,
     "666Handling": 97,
-
     "996TopSpeed": 165,
     "9960to60": 3.1,
     "996Handling": 97,
-
     "969TopSpeed": 165,
     "9690to60": 3.2,
     "969Handling": 101,
-
-	"699TopSpeed": 162,
+    "699TopSpeed": 162,
     "6990to60": 3.1,
-    "699Handling": 101
+    "699Handling": 101,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

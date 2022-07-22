@@ -9,9 +9,11 @@
     "handling": 78,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Street Racer","The Japanese Odyssey"],
+    "tags": [
+        "Street Racer",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1293,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +25,22 @@
     "mra": 51.36,
     "ola": 65.87,
     "description": "The first dose of the RX-7's rotary turbo outside of its domestic market, ironically named the Turbo II. Card by DodgeDemon",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/971796519206412388/Mazda_RX-7_TII_1986.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/971800772759134268/Mazda_RX-7_TII_1986_H000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/971800796591173632/Mazda_RX-7_TII_1986_H111.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/971800817256521738/Mazda_RX-7_TII_1986_H222.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/971800894372986890/Mazda_RX-7_TII_1986_H332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/971800874097717308/Mazda_RX-7_TII_1986_H323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/971800832779628544/Mazda_RX-7_TII_1986_H233.png",
-
     "333TopSpeed": 147,
     "3330to60": 6.6,
     "333Handling": 81,
-
     "666TopSpeed": 150,
     "6660to60": 6.2,
     "666Handling": 83,
-
     "996TopSpeed": 154,
     "9960to60": 5.9,
     "996Handling": 83,
-
     "969TopSpeed": 154,
     "9690to60": 6.2,
     "969Handling": 87,
-
     "699TopSpeed": 150,
     "6990to60": 5.9,
-    "699Handling": 87
+    "699Handling": 87,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

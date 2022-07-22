@@ -9,9 +9,12 @@
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Eargasm", "Unique", "Ultra Expensive"],
+    "tags": [
+        "Eargasm",
+        "Unique",
+        "Ultra Expensive"
+    ],
     "isPrize": false,
-
     "weight": 1510,
     "gc": "Low",
     "seatCount": 2,
@@ -21,34 +24,24 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 96.28,
-    "ola": 89.50,
+    "ola": 89.5,
     "description": "A very limited version of the LFA. Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/852266015093555230/lfaspodermen.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819934368411287632/lfaspyder.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819934373595316304/lfaspyder333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819934383871623240/lfaspyder666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819934416885383218/lfaspyder996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819934406201442374/lfaspyder969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819934394549665792/lfaspyder699.png",
-
     "333TopSpeed": 205,
     "3330to60": 3.6,
     "333Handling": 94,
-
     "666TopSpeed": 207,
     "6660to60": 3.4,
     "666Handling": 97,
-
     "996TopSpeed": 210,
     "9960to60": 3.2,
     "996Handling": 97,
-
     "969TopSpeed": 210,
     "9690to60": 3.4,
     "969Handling": 101,
-
     "699TopSpeed": 207,
     "6990to60": 3.2,
-    "699Handling": 101
+    "699Handling": 101,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

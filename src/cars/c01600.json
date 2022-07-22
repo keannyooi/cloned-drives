@@ -9,9 +9,14 @@
     "handling": 99,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": ["Motorsport", "Unique", "Ultra Expensive", "Eargasm","The Japanese Odyssey"],
+    "tags": [
+        "Motorsport",
+        "Unique",
+        "Ultra Expensive",
+        "Eargasm",
+        "The Japanese Odyssey"
+    ],
     "isPrize": true,
-
     "weight": 830,
     "gc": "Low",
     "seatCount": 1,
@@ -23,32 +28,22 @@
     "mra": 111.54,
     "ola": 89.66,
     "description": "The legendary machine that brought Mazda the first victory ever in the Le Mans for a Japanese manufacturer. Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/867874793591406592/787B.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/867875135536758794/787B.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/867875143182450698/787B333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/867875151227387964/787B666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/867875202955870239/787B996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/867875181992607744/787B969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/867875157414903808/787B699.png",
-
     "333TopSpeed": 219,
     "3330to60": 2.8,
     "333Handling": 102,
-
     "666TopSpeed": 222,
     "6660to60": 2.6,
     "666Handling": 106,
-
     "996TopSpeed": 224,
     "9960to60": 2.5,
     "996Handling": 106,
-
     "969TopSpeed": 224,
     "9690to60": 2.6,
     "969Handling": 110,
-
     "699TopSpeed": 222,
     "6990to60": 2.5,
-    "699Handling": 110
+    "699Handling": 110,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

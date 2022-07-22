@@ -9,9 +9,10 @@
     "handling": 86,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Super Sedan"],
+    "tags": [
+        "Super Sedan"
+    ],
     "isPrize": false,
-
     "weight": 1780,
     "gc": "Low",
     "seatCount": 5,
@@ -21,34 +22,24 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 69.12,
-    "ola": 76.60,
+    "ola": 76.6,
     "description": "Audi's supercharged solution to 335i. Card by Connor",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/836939284652883978/A.AudiS4B8.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/836939328834895882/A.AudiS4B8.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/836939342140145664/A.AudiS4B8-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/836939348741062706/A.AudiS4B8-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/836939393159528458/A.AudiS4B8-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/836939375626682439/A.AudiS4B8-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/836939365736251473/A.AudiS4B8-699.png",
-
     "333TopSpeed": 158,
     "3330to60": 4.5,
     "333Handling": 89,
-
     "666TopSpeed": 162,
     "6660to60": 4.2,
     "666Handling": 92,
-
     "996TopSpeed": 165,
-    "9960to60": 4.0,
+    "9960to60": 4,
     "996Handling": 92,
-
     "969TopSpeed": 165,
     "9690to60": 4.2,
     "969Handling": 95,
-
     "699TopSpeed": 162,
-    "6990to60": 4.0,
-    "699Handling": 95
+    "6990to60": 4,
+    "699Handling": 95,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

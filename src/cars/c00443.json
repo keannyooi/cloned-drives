@@ -9,9 +9,13 @@
     "handling": 86,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Hot Hatch", "Street Racer", "Oddity", "Unique"],
+    "tags": [
+        "Hot Hatch",
+        "Street Racer",
+        "Oddity",
+        "Unique"
+    ],
     "isPrize": true,
-
     "weight": 993,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +27,22 @@
     "mra": 65.55,
     "ola": 73.47,
     "description": "Turning an absolute shitbox into a crazy and wild monster. Card by Andu",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/822168363052040292/Shogun.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/822168459282481242/Shogun.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/822168468542849085/Shogun1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/822168476047114250/Shogun2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/822168498545492008/Shogun996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/822168491598938112/Shogun969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/822168483142959144/Shogun699.png",
-
     "333TopSpeed": 149,
     "3330to60": 4.7,
     "333Handling": 89,
-
     "666TopSpeed": 152,
-    "6660to60": 4.4, 
+    "6660to60": 4.4,
     "666Handling": 92,
-
     "996TopSpeed": 156,
     "9960to60": 4.2,
     "996Handling": 92,
-
     "969TopSpeed": 156,
     "9690to60": 4.4,
     "969Handling": 95,
-
     "699TopSpeed": 152,
     "6990to60": 4.2,
-    "699Handling": 95
+    "699Handling": 95,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

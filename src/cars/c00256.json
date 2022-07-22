@@ -9,9 +9,11 @@
     "handling": 92,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Muscle Car", "OG"],
+    "tags": [
+        "Muscle Car",
+        "OG"
+    ],
     "isPrize": false,
-
     "weight": 1732,
     "gc": "Low",
     "seatCount": 4,
@@ -20,35 +22,25 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 82.00,
+    "mra": 82,
     "ola": 82.93,
     "description": "Card by DodgeDemon",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/826462195713703946/camarooooooo78.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826462520646303754/camaroZ28.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826462528141000774/camaroZ28333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826462537226518600/camaroZ28666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826462571379818516/camaroZ28996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826462559443353650/camaroZ28969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826462549577957396/camaroZ28699.png",
-
     "333TopSpeed": 175,
     "3330to60": 3.9,
     "333Handling": 95,
-
     "666TopSpeed": 178,
     "6660to60": 3.7,
     "666Handling": 98,
-
-	"996TopSpeed": 181,
+    "996TopSpeed": 181,
     "9960to60": 3.5,
     "996Handling": 98,
-
-	"969TopSpeed": 181,
+    "969TopSpeed": 181,
     "9690to60": 3.7,
     "969Handling": 102,
-
     "699TopSpeed": 178,
     "6990to60": 3.5,
-    "699Handling": 102
+    "699Handling": 102,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -5,13 +5,15 @@
     "modelYear": 1989,
     "country": "JP",
     "topSpeed": 143,
-    "0to60": 7.0,
+    "0to60": 7,
     "handling": 77,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Street Racer", "Silver Screen"],
+    "tags": [
+        "Street Racer",
+        "Silver Screen"
+    ],
     "isPrize": false,
-
     "weight": 1492,
     "gc": "Medium",
     "seatCount": 2,
@@ -21,34 +23,24 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 59.66,
-    "ola": 77.70,
+    "ola": 77.7,
     "description": "Card by Havvy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820755582058627082/Nissan300ZXT-Top.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820755629479690280/000_300zx.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820755633116414013/111_300zx.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820755639046897726/222_300zx.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820755652091445328/332_300zx.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820755647880232970/323_300zx.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820755643421163561/233_300zx.png",
-
     "333TopSpeed": 147,
     "3330to60": 6.7,
     "333Handling": 80,
-
     "666TopSpeed": 150,
     "6660to60": 6.3,
     "666Handling": 82,
-
     "996TopSpeed": 154,
-    "9960to60": 6.0,
+    "9960to60": 6,
     "996Handling": 82,
-
     "969TopSpeed": 154,
     "9690to60": 6.3,
     "969Handling": 85,
-
     "699TopSpeed": 150,
-    "6990to60": 6.0,
-    "699Handling": 85
+    "6990to60": 6,
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

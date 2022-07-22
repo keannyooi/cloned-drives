@@ -1,6 +1,9 @@
 {
     "rq": 42,
-    "make": ["Alpina", "BMW"],
+    "make": [
+        "Alpina",
+        "BMW"
+    ],
     "model": "B12 5.0 Coupe",
     "modelYear": 1990,
     "country": "DE",
@@ -9,9 +12,12 @@
     "handling": 73,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Unique", "Tuner", "Grand Tourer"],
+    "tags": [
+        "Unique",
+        "Tuner",
+        "Grand Tourer"
+    ],
     "isPrize": false,
-
     "weight": 1790,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +29,22 @@
     "mra": 69.47,
     "ola": 75.75,
     "description": "Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/857393716331544576/alpinab125.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/857394186465312808/alpinab125.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/857394194355585064/alpinab125333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/857394202626621460/alpinab125666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/857394230623862804/alpinab125996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/857394222352302090/alpinab125969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/857394210306129990/alpinab125699.png",
-
     "333TopSpeed": 178,
     "3330to60": 6.3,
     "333Handling": 75,
-
     "666TopSpeed": 181,
     "6660to60": 5.9,
     "666Handling": 78,
-
     "996TopSpeed": 184,
     "9960to60": 5.6,
     "996Handling": 78,
-
     "969TopSpeed": 184,
     "9690to60": 5.9,
     "969Handling": 81,
-
     "699TopSpeed": 181,
     "6990to60": 5.6,
-    "699Handling": 81
+    "699Handling": 81,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

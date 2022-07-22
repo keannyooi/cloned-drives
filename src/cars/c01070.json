@@ -1,17 +1,16 @@
-﻿{
+{
     "rq": 59,
     "make": "Porsche",
     "model": "911 Carrera Targa",
     "modelYear": 2001,
     "country": "DE",
     "topSpeed": 178,
-    "0to60": 5.0,
+    "0to60": 5,
     "handling": 83,
     "driveType": "RWD",
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1345,
     "gc": "Low",
     "seatCount": 4,
@@ -23,32 +22,22 @@
     "mra": 72.26,
     "ola": 80.81,
     "description": "Some people could actually recognize it as a hot hatch. Card by Havvy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/826809494632661002/Porsche911CarreraTarga.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826809542544195604/000_targ.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826809546244751370/111_targ.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826809551575711754/222_targ.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826809571585818624/332_targ.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826809567579996240/323_targ.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826809555719421982/233_targ.png",
-
     "333TopSpeed": 181,
     "3330to60": 4.8,
     "333Handling": 86,
-
     "666TopSpeed": 184,
-    "6660to60": 4.5, 
+    "6660to60": 4.5,
     "666Handling": 88,
-
     "996TopSpeed": 187,
     "9960to60": 4.3,
     "996Handling": 88,
-
     "969TopSpeed": 187,
     "9690to60": 4.5,
     "969Handling": 92,
-
     "699TopSpeed": 184,
     "6990to60": 4.3,
-    "699Handling": 92
+    "699Handling": 92,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

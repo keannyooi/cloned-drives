@@ -9,9 +9,12 @@
     "handling": 80,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Concept", "Unique", "Super Sedan"],
+    "tags": [
+        "Concept",
+        "Unique",
+        "Super Sedan"
+    ],
     "isPrize": true,
-
     "weight": 2177,
     "gc": "Low",
     "seatCount": 4,
@@ -23,32 +26,22 @@
     "mra": 73.77,
     "ola": 93.33,
     "description": "4-door saloon with a W18 engine? Why not? Card by Spence.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/854170698121084948/image0.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/854133243909242951/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/854133262058389514/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/854133275849523200/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/854133290050781204/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/854133314147713034/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/854133367750000640/image0.jpg",
-
     "333TopSpeed": 158,
     "3330to60": 4.3,
     "333Handling": 83,
-
     "666TopSpeed": 162,
     "6660to60": 4.1,
     "666Handling": 85,
-
     "699TopSpeed": 162,
     "6990to60": 3.8,
     "699Handling": 89,
-
     "969TopSpeed": 165,
     "9690to60": 4.1,
     "969Handling": 89,
-
     "996TopSpeed": 165,
     "9960to60": 3.8,
-    "996Handling": 85
+    "996Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

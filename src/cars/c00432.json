@@ -9,9 +9,12 @@
     "handling": 82,
     "driveType": "RWD",
     "tyreType": "Off-Road",
-    "tags": ["Motorsport", "Style Icon", "Unique"],
+    "tags": [
+        "Motorsport",
+        "Style Icon",
+        "Unique"
+    ],
     "isPrize": false,
-
     "weight": 980,
     "gc": "Medium",
     "seatCount": 2,
@@ -20,36 +23,25 @@
     "abs": false,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 55.70,
-    "ola": 60.00,
+    "mra": 55.7,
+    "ola": 60,
     "description": "The 1979 WRC Champion. By Havvy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820339783405535252/FIXED_FordEscortRS1800RallySpec.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820339878427492412/000_esc.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820339901677305856/111_esc.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820339907809116250/222_esc.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820339928075862046/332_esc.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820339922694832208/323_esc.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820339916025233438/233_esc.png",
-
     "333TopSpeed": 127,
     "3330to60": 4.2,
     "333Handling": 85,
-
     "666TopSpeed": 131,
-    "6660to60": 4.0,
+    "6660to60": 4,
     "666Handling": 87,
-
     "996TopSpeed": 136,
     "9960to60": 3.7,
     "996Handling": 87,
-
     "969TopSpeed": 136,
-    "9690to60": 4.0,
+    "9690to60": 4,
     "969Handling": 91,
-
     "699TopSpeed": 131,
     "6990to60": 3.7,
-    "699Handling": 91
-
+    "699Handling": 91,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

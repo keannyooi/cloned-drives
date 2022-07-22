@@ -9,9 +9,13 @@
     "handling": 89,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Concept", "The Royal Collection", "Unique", "Ultra Expensive"],
+    "tags": [
+        "Concept",
+        "The Royal Collection",
+        "Unique",
+        "Ultra Expensive"
+    ],
     "isPrize": false,
-
     "weight": 970,
     "gc": "Low",
     "seatCount": 1,
@@ -23,32 +27,22 @@
     "mra": 110.71,
     "ola": 89.56,
     "description": "Card by Exist.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/830979001635438632/CD_McLaren_Ultima_Mk3_22Edward22_F1_Prototype.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/830979172435230790/CD_McLaren_Ultima_Mk3_22Edward22_F1_Prototype_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/830979178878205962/CD_McLaren_Ultima_Mk3_22Edward22_F1_Prototype_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/830979190769319956/CD_McLaren_Ultima_Mk3_22Edward22_F1_Prototype_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/830979205751504908/CD_McLaren_Ultima_Mk3_22Edward22_F1_Prototype_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/830979201859321906/CD_McLaren_Ultima_Mk3_22Edward22_F1_Prototype_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/830979195424210994/CD_McLaren_Ultima_Mk3_22Edward22_F1_Prototype_699.png",
-
     "333TopSpeed": 211,
     "3330to60": 2.9,
     "333Handling": 92,
-
     "666TopSpeed": 213,
     "6660to60": 2.8,
     "666Handling": 95,
-
     "996TopSpeed": 216,
     "9960to60": 2.6,
     "996Handling": 95,
-
     "969TopSpeed": 216,
     "9690to60": 2.8,
     "969Handling": 99,
-
     "699TopSpeed": 213,
     "6990to60": 2.6,
-    "699Handling": 99
+    "699Handling": 99,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

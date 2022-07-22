@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1468,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 78.57,
     "ola": 85.71,
     "description": "Your best bet for dodging an oncoming moose while driving at high speeds on Swedish roads. Card by havvy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/824739046239895572/Xantia.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824739658940153909/XaXa.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824739668196720680/XaXa1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824739671341924352/XaXa2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824739693038927882/XaXa996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824739686010060850/XaXa969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824739678368170044/XaXa699.png",
-
     "333TopSpeed": 147,
     "3330to60": 7.3,
     "333Handling": 88,
-
     "666TopSpeed": 150,
     "6660to60": 6.9,
     "666Handling": 91,
-
-	"996TopSpeed": 154,
+    "996TopSpeed": 154,
     "9960to60": 6.5,
     "996Handling": 91,
-
     "969TopSpeed": 154,
     "9690to60": 6.9,
     "969Handling": 94,
-
-	"699TopSpeed": 150,
+    "699TopSpeed": 150,
     "6990to60": 6.5,
-    "699Handling": 94
+    "699Handling": 94,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1050,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +22,22 @@
     "mra": 58.97,
     "ola": 72.46,
     "description": "Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/948545778849312778/fiat124spoder.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/948545959133073408/Fait124.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/948545969727868958/Fait124333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/948545976648495174/Fait124666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/948545996160372757/Fait124996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/948545990703607818/Fait124969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/948545983158046742/Fait124699.png",
-
     "333TopSpeed": 138,
     "3330to60": 6.6,
     "333Handling": 80,
-
     "666TopSpeed": 142,
     "6660to60": 6.2,
     "666Handling": 82,
-
     "996TopSpeed": 146,
     "9960to60": 5.9,
     "996Handling": 82,
-
     "969TopSpeed": 146,
     "9690to60": 6.2,
     "969Handling": 85,
-
     "699TopSpeed": 142,
     "6990to60": 5.9,
-    "699Handling": 85
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -9,9 +9,12 @@
     "handling": 87,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Supercar", "Style Icon", "Silver Screen"],
+    "tags": [
+        "Supercar",
+        "Style Icon",
+        "Silver Screen"
+    ],
     "isPrize": false,
-
     "weight": 1560,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +26,22 @@
     "mra": 69.08,
     "ola": 71.76,
     "description": "Audi absorbed the essence of the Lamborghini Gallardo and made this. Card by Havvy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/824604487154139176/AudiR84.2FSI.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824604816059007017/r8.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824604819947782164/r8333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824604825378488391/r8666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824604845499351090/r8996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824604838712049664/r8969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824604832064077824/r8699.png",
-
     "333TopSpeed": 190,
     "3330to60": 4.2,
     "333Handling": 90,
-
     "666TopSpeed": 193,
-    "6660to60": 4.0,
+    "6660to60": 4,
     "666Handling": 93,
-
     "996TopSpeed": 195,
     "9960to60": 3.7,
     "996Handling": 93,
-
     "969TopSpeed": 195,
-    "9690to60": 4.0,
+    "9690to60": 4,
     "969Handling": 97,
-
     "699TopSpeed": 193,
     "6990to60": 3.7,
-    "699Handling": 97
+    "699Handling": 97,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

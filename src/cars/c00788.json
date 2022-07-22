@@ -9,9 +9,11 @@
     "handling": 93,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["The Royal Collection", "Supercar"],
+    "tags": [
+        "The Royal Collection",
+        "Supercar"
+    ],
     "isPrize": false,
-
     "weight": 1404,
     "gc": "Low",
     "seatCount": 2,
@@ -20,35 +22,25 @@
     "abs": true,
     "enginePos": "Middle",
     "fuelType": "Petrol",
-    "mra": 95.00,
+    "mra": 95,
     "ola": 84.71,
     "description": "Card by Exist.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/854634154686939146/CD_McLaren_600LT_Spider.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/850737716979171338/CD_McLaren_600LT_Spider_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/850737722863779880/CD_McLaren_600LT_Spider_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/850737728085032980/CD_McLaren_600LT_Spider_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/850737786658095124/CD_McLaren_600LT_Spider_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/850737749572452372/CD_McLaren_600LT_Spider_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/850737737580806204/CD_McLaren_600LT_Spider_699.png",
-
     "333TopSpeed": 204,
     "3330to60": 2.8,
     "333Handling": 96,
-
     "666TopSpeed": 206,
     "6660to60": 2.6,
     "666Handling": 99,
-
     "996TopSpeed": 209,
     "9960to60": 2.5,
     "996Handling": 99,
-
     "969TopSpeed": 209,
     "9690to60": 2.6,
     "969Handling": 103,
-
     "699TopSpeed": 206,
     "6990to60": 2.5,
-    "699Handling": 103
+    "699Handling": 103,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

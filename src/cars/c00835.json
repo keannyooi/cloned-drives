@@ -1,6 +1,9 @@
 {
     "rq": 84,
-    "make": ["Mercedes-AMG", "Mercedes-Benz"],
+    "make": [
+        "Mercedes-AMG",
+        "Mercedes-Benz"
+    ],
     "model": "GT R",
     "modelYear": 2017,
     "country": "DE",
@@ -9,9 +12,12 @@
     "handling": 93,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Supercar", "Grand Tourer", "Silver Screen"],
+    "tags": [
+        "Supercar",
+        "Grand Tourer",
+        "Silver Screen"
+    ],
     "isPrize": false,
-
     "weight": 1630,
     "gc": "Low",
     "seatCount": 2,
@@ -20,35 +26,25 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 91.30,
+    "mra": 91.3,
     "ola": 93.23,
     "description": "Card by Havvy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/821368863568166982/AMGGTR.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821368926772527104/000_gtr.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821368931058188328/111_gtr.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821368935055491142/222_gtr.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821368950519758918/332_gtr.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821368945051303936/323_gtr.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821368942761214062/233_gtr.png",
-
     "333TopSpeed": 201,
     "3330to60": 3.1,
     "333Handling": 96,
-
     "666TopSpeed": 203,
-    "6660to60": 3.0,
+    "6660to60": 3,
     "666Handling": 99,
-
     "996TopSpeed": 206,
     "9960to60": 2.8,
     "996Handling": 99,
-
     "969TopSpeed": 206,
-    "9690to60": 3.0,
+    "9690to60": 3,
     "969Handling": 103,
-
     "699TopSpeed": 203,
     "6990to60": 2.8,
-    "699Handling": 103
+    "699Handling": 103,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

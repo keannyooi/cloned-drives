@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1285,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 50.81,
     "ola": 67.02,
     "description": "Out with TDDi, in with TDCi. Card by keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819390650713243658/ford_focus_1.8_tdci_zetec_100.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819808375688134656/british_focus_2_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819808390838485002/british_focus_2_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819808398463336507/british_focus_2_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819808443627208724/british_focus_2_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819808423134232576/british_focus_2_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819808413155852298/british_focus_2_699.jpg",
-
     "333TopSpeed": 121,
     "3330to60": 9.9,
     "333Handling": 71,
-
     "666TopSpeed": 126,
-    "6660to60": 9.4, 
+    "6660to60": 9.4,
     "666Handling": 74,
-
-	"996TopSpeed": 130,
+    "996TopSpeed": 130,
     "9960to60": 8.8,
     "996Handling": 74,
-
     "969TopSpeed": 130,
     "9690to60": 9.4,
     "969Handling": 77,
-
-	"699TopSpeed": 126,
+    "699TopSpeed": 126,
     "6990to60": 8.8,
-    "699Handling": 77
+    "699Handling": 77,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

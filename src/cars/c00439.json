@@ -9,9 +9,11 @@
     "handling": 63,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": ["OG", "Servers Choice"],
+    "tags": [
+        "OG",
+        "Servers Choice"
+    ],
     "isPrize": false,
-
     "weight": 2659,
     "gc": "High",
     "seatCount": 5,
@@ -20,35 +22,25 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 56.10,
+    "mra": 56.1,
     "ola": 78.26,
     "description": "The real deal. Card by DodgeDemon",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820816709786009650/2010_Ford_F150_SVT_Raptor.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826074179035201586/rap6.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826074184592785428/rap6333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826074192607838288/rap6666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826074215383826432/rap6996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826074208009584700/rap6969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826074200963416114/rap6699.png",
-
     "333TopSpeed": 105,
     "3330to60": 6.6,
     "333Handling": 65,
-
     "666TopSpeed": 110,
     "6660to60": 6.2,
     "666Handling": 67,
-
     "996TopSpeed": 116,
     "9960to60": 5.9,
     "996Handling": 67,
-
     "969TopSpeed": 116,
     "9690to60": 6.2,
     "969Handling": 70,
-
-	"699TopSpeed": 110,
+    "699TopSpeed": 110,
     "6990to60": 5.9,
-    "699Handling": 70
+    "699Handling": 70,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

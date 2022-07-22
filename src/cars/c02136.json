@@ -9,9 +9,10 @@
     "handling": 94,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Hypercar"],
+    "tags": [
+        "Hypercar"
+    ],
     "isPrize": false,
-
     "weight": 1350,
     "gc": "Low",
     "seatCount": 2,
@@ -21,34 +22,24 @@
     "enginePos": "Rear",
     "fuelType": "Petrol",
     "mra": 111.11,
-    "ola": 88.00,
+    "ola": 88,
     "description": "Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/938016826925912074/Lafa.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/938018564525416468/LaFer.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/938018571265671229/LaFer333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/938018579004141588/LaFer666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/938018607458295808/LaFer996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/938018596477620254/LaFer969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/938018586734252032/LaFer699.png",
-
     "333TopSpeed": 220,
     "3330to60": 2.4,
     "333Handling": 97,
-
     "666TopSpeed": 223,
     "6660to60": 2.3,
     "666Handling": 100,
-
     "996TopSpeed": 225,
     "9960to60": 2.1,
     "996Handling": 100,
-
     "969TopSpeed": 225,
     "9690to60": 2.3,
     "969Handling": 104,
-
     "699TopSpeed": 223,
     "6990to60": 2.1,
-    "699Handling": 104
+    "699Handling": 104,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

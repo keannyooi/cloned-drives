@@ -9,9 +9,10 @@
     "handling": 62,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Kei Car"],
+    "tags": [
+        "Kei Car"
+    ],
     "isPrize": false,
-
     "weight": 710,
     "gc": "Low",
     "seatCount": 2,
@@ -23,33 +24,22 @@
     "mra": 12.61,
     "ola": 60.87,
     "description": "The pinnacle of the Honda S, with larger displacement and better performance. Card by Spence",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/865620161217691708/image0_2.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/847258352983080980/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/847258369047396412/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/847258404916690964/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/847258443961729084/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/847258431953436682/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/847258419751813130/image0.jpg",
-
     "333TopSpeed": 104,
     "3330to60": 13.1,
     "333Handling": 64,
-
     "666TopSpeed": 110,
     "6660to60": 12.4,
     "666Handling": 66,
-
     "969TopSpeed": 115,
     "9690to60": 12.4,
     "969Handling": 69,
-	
-	"996TopSpeed": 115,
-	"9960to60": 11.7,
-	"996Handling": 66,
-	
-	"699TopSpeed": 110,
-	"6990to60": 11.7,
-	"699Handling": 69
-	
+    "996TopSpeed": 115,
+    "9960to60": 11.7,
+    "996Handling": 66,
+    "699TopSpeed": 110,
+    "6990to60": 11.7,
+    "699Handling": 69,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

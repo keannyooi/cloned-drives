@@ -9,9 +9,12 @@
     "handling": 68,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Concept", "Unique","The Japanese Odyssey"],
+    "tags": [
+        "Concept",
+        "Unique",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1890,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +26,22 @@
     "mra": 39.07,
     "ola": 67.42,
     "description": "Card by Keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/861147348246462464/toyota_mirai_delorean_impostor.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/861145008248848384/fake_delorean_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/861145037324419072/fake_delorean_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/861145042323374090/fake_delorean_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/861145054655283200/fake_delorean_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/861145049567985664/fake_delorean_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/861145046287253514/fake_delorean_699.jpg",
-
     "333TopSpeed": 115,
     "3330to60": 8.7,
     "333Handling": 70,
-
     "666TopSpeed": 119,
     "6660to60": 8.3,
     "666Handling": 72,
-
     "996TopSpeed": 124,
     "9960to60": 7.8,
     "996Handling": 72,
-
     "969TopSpeed": 124,
     "9690to60": 8.3,
     "969Handling": 75,
-
     "699TopSpeed": 119,
     "6990to60": 7.8,
-    "699Handling": 75
+    "699Handling": 75,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

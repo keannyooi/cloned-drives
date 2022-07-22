@@ -11,44 +11,33 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1030,
     "gc": "Medium",
-    "seatCount":4,
+    "seatCount": 4,
     "bodyStyle": "Coupe",
     "tcs": false,
     "abs": false,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 10.00,
+    "mra": 10,
     "ola": 72.61,
     "description": "One of the worst GM cars. Card by Connor",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/865597705493282846/F.ChevyVegaGT.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820676858244759642/F.ChevyVegaGT.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820677024301449236/F.ChevyVegaGT-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820677037781811241/F.ChevyVegaGT-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820677086171496519/F.ChevyVegaGT-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820677068660408320/F.ChevyVegaGT-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820677049953812500/F.ChevyVegaGT-699.png",
-
     "333TopSpeed": 96,
     "3330to60": 14.9,
     "333Handling": 69,
-
     "666TopSpeed": 102,
     "6660to60": 14.1,
     "666Handling": 71,
-
     "996TopSpeed": 107,
     "9960to60": 13.3,
     "996Handling": 71,
-
     "969TopSpeed": 107,
     "9690to60": 14.1,
     "969Handling": 74,
-
     "699TopSpeed": 102,
     "6990to60": 13.3,
-    "699Handling": 74
+    "699Handling": 74,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

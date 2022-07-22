@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1520,
     "gc": "Low",
     "seatCount": 2,
@@ -23,33 +22,22 @@
     "mra": 63.22,
     "ola": 76.36,
     "description": "A little sports car from italy. Card by Spence.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820479071782961152/image0.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820479151152562216/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820479166897324062/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820479184605282374/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820479247679619082/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820479206840074240/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820479227916189696/image0.jpg",
-
     "333TopSpeed": 163,
     "3330to60": 5.2,
     "333Handling": 74,
-
     "666TopSpeed": 167,
-    "6660to60": 5.0, 
+    "6660to60": 5,
     "666Handling": 77,
-
     "996TopSpeed": 170,
     "9960to60": 4.7,
     "996Handling": 77,
-
     "969TopSpeed": 170,
-    "9690to60": 5.0,
+    "9690to60": 5,
     "969Handling": 80,
-
     "699TopSpeed": 167,
     "6990to60": 4.7,
-    "699Handling": 80
-
+    "699Handling": 80,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

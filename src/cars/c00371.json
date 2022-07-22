@@ -9,9 +9,10 @@
     "handling": 87,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Style Icon"],
+    "tags": [
+        "Style Icon"
+    ],
     "isPrize": false,
-
     "weight": 1603,
     "gc": "Low",
     "seatCount": 2,
@@ -23,33 +24,22 @@
     "mra": 72.87,
     "ola": 88.89,
     "description": "The modern iteration of the Shelby Cobra from the 90s. Card by Spence",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/840800974264336384/image0.jpg",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/840801040038756373/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/840801070133542972/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/840801088294092810/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/840801133547094016/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/840801103158968370/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/840801115532820550/image0.jpg",
-
     "333TopSpeed": 171,
     "3330to60": 4.3,
     "333Handling": 90,
-
     "666TopSpeed": 174,
     "6660to60": 4.1,
     "666Handling": 93,
-
     "969TopSpeed": 177,
     "9690to60": 4.1,
     "969Handling": 97,
-	
-	"996TopSpeed": 177,
-	"9960to60": 3.8,
-	"996Handling": 93,
-	
-	"699TopSpeed": 174,
-	"6990to60": 3.8,
-	"699Handling": 97
-	
+    "996TopSpeed": 177,
+    "9960to60": 3.8,
+    "996Handling": 93,
+    "699TopSpeed": 174,
+    "6990to60": 3.8,
+    "699Handling": 97,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

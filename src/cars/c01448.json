@@ -9,9 +9,10 @@
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Unique"],
+    "tags": [
+        "Unique"
+    ],
     "isPrize": false,
-
     "weight": 1200,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +24,22 @@
     "mra": 97.14,
     "ola": 82.35,
     "description": "Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/938017906824990790/CTRAnniv.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/938019852566810634/CTRAnii.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/938019857809694730/CTRAnii333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/938019865221029918/CTRAnii666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/938019893259944046/CTRAnii996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/938019885399810089/CTRAnii969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/938019873114689596/CTRAnii699.png",
-
     "333TopSpeed": 225,
     "3330to60": 3.2,
     "333Handling": 94,
-
     "666TopSpeed": 228,
     "6660to60": 3.1,
     "666Handling": 97,
-
     "996TopSpeed": 230,
     "9960to60": 2.9,
     "996Handling": 97,
-
     "969TopSpeed": 230,
     "9690to60": 3.1,
     "969Handling": 101,
-
     "699TopSpeed": 228,
     "6990to60": 2.9,
-    "699Handling": 101
+    "699Handling": 101,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

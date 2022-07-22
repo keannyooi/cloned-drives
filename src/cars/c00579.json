@@ -9,9 +9,14 @@
     "handling": 64,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Motorsport", "Sleeper", "Ultra Expensive", "Unique", "Innovative"],
+    "tags": [
+        "Motorsport",
+        "Sleeper",
+        "Ultra Expensive",
+        "Unique",
+        "Innovative"
+    ],
     "isPrize": false,
-
     "weight": 965,
     "gc": "Medium",
     "seatCount": 2,
@@ -23,32 +28,22 @@
     "mra": 89.01,
     "ola": 79.01,
     "description": "Few cars can boast such a rich motorsport heritage, the Jaguar C-Type is one of them. Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820699004659695676/ctype.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/820699270499270686/ctype.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820699275364401172/ctype333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820699282692112415/ctype666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820699308700467210/ctype996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820699300728012890/ctype969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820699290875461643/ctype699.png",
-
     "333TopSpeed": 148,
     "3330to60": 7.7,
     "333Handling": 66,
-
     "666TopSpeed": 151,
     "6660to60": 7.3,
     "666Handling": 68,
-
     "996TopSpeed": 155,
     "9960to60": 6.9,
     "996Handling": 68,
-
     "969TopSpeed": 155,
     "9690to60": 7.3,
     "969Handling": 71,
-
     "699TopSpeed": 151,
     "6990to60": 6.9,
-    "699Handling": 71
+    "699Handling": 71,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

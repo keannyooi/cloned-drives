@@ -5,13 +5,12 @@
     "modelYear": 2005,
     "country": "JP",
     "topSpeed": 149,
-    "0to60": 6.0,
+    "0to60": 6,
     "handling": 78,
     "driveType": "4WD",
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1628,
     "gc": "Medium",
     "seatCount": 5,
@@ -21,34 +20,24 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 69.77,
-    "ola": 60.00,
+    "ola": 60,
     "description": "Mazda's 6 sedan goes sporty. Card by havvy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/821871013826396200/unknown.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821870473826009098/000_6mps.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821870483699400734/111_6mps.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821870487268229151/222_6mps.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821870501810929714/332_6mps.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821870496877379604/323_6mps.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821870492516483142/233_6mps.png",
-
     "333TopSpeed": 152,
     "3330to60": 5.7,
     "333Handling": 81,
-
     "666TopSpeed": 156,
     "6660to60": 5.4,
     "666Handling": 83,
-
-  	"996TopSpeed": 159,
+    "996TopSpeed": 159,
     "9960to60": 5.1,
     "996Handling": 83,
-
     "969TopSpeed": 159,
     "9690to60": 5.4,
     "969Handling": 87,
-
-	  "699TopSpeed": 156,
+    "699TopSpeed": 156,
     "6990to60": 5.1,
-    "699Handling": 87
+    "699Handling": 87,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

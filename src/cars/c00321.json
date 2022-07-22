@@ -9,9 +9,11 @@
     "handling": 64,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Oddity", "Silver Screen"],
+    "tags": [
+        "Oddity",
+        "Silver Screen"
+    ],
     "isPrize": false,
-
     "weight": 1450,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +25,22 @@
     "mra": 56.13,
     "ola": 75.86,
     "description": "A Citroen sportscar that is one of the best 'ears' in the world. Card by andu",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819904205141704724/SMV6.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819903911569522688/SM.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819903922453479424/SM1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819903930741948426/SM2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819903955424641054/SM996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819903947078238238/SM969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819903937711964160/SM699.png",
-
     "333TopSpeed": 139,
     "3330to60": 8.3,
     "333Handling": 66,
-
     "666TopSpeed": 143,
     "6660to60": 7.8,
     "666Handling": 68,
-
     "996TopSpeed": 147,
     "9960to60": 7.4,
     "996Handling": 68,
-
     "969TopSpeed": 147,
     "9690to60": 7.8,
     "969Handling": 71,
-
-	"699TopSpeed": 143,
+    "699TopSpeed": 143,
     "6990to60": 7.4,
-    "699Handling": 71
+    "699Handling": 71,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -9,9 +9,12 @@
     "handling": 93,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Super Sedan", "Unique","The Japanese Odyssey"],
+    "tags": [
+        "Super Sedan",
+        "Unique",
+        "The Japanese Odyssey"
+    ],
     "isPrize": true,
-
     "weight": 1550,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +26,22 @@
     "mra": 73.47,
     "ola": 83.33,
     "description": "The fastest production Evo, and had the best power-per-litre till the Koenigsegg Gemera. Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/912477519394013184/evo440.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/912477619067437066/evo10fq440.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/912477627351187486/evo10fq440333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/912477636779999232/evo10fq440666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/912477668367294505/evo10fq440996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/912477659995447336/evo10fq440969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/912477650289831956/evo10fq440699.png",
-
     "333TopSpeed": 189,
     "3330to60": 3.1,
     "333Handling": 96,
-
     "666TopSpeed": 192,
-    "6660to60": 3.0,
+    "6660to60": 3,
     "666Handling": 99,
-
     "996TopSpeed": 194,
     "9960to60": 2.8,
     "996Handling": 99,
-
     "969TopSpeed": 194,
-    "9690to60": 3.0,
+    "9690to60": 3,
     "969Handling": 103,
-
     "699TopSpeed": 192,
     "6990to60": 2.8,
-    "699Handling": 103
+    "699Handling": 103,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

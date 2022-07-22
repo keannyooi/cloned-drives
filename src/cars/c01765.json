@@ -9,9 +9,12 @@
     "handling": 70,
     "driveType": "FWD",
     "tyreType": "Off-Road",
-    "tags": ["Concept", "Oddity","The Japanese Odyssey"],
+    "tags": [
+        "Concept",
+        "Oddity",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1605,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +26,22 @@
     "mra": 33.33,
     "ola": 74.31,
     "description": "Card by Keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/865585109884338216/nissan_re-leaf.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/867302459692810250/re-lef_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/867302464574849034/re-lef_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/867302468500324392/re-lef_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/867302478402813982/re-lef_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/867302476223086602/re-lef_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/867302472380710942/re-lef_699.jpg",
-
     "333TopSpeed": 98,
     "3330to60": 7.3,
     "333Handling": 72,
-
     "666TopSpeed": 103,
     "6660to60": 6.9,
     "666Handling": 75,
-
     "996TopSpeed": 109,
     "9960to60": 6.5,
     "996Handling": 75,
-
     "969TopSpeed": 109,
     "9690to60": 6.9,
     "969Handling": 78,
-
     "699TopSpeed": 103,
     "6990to60": 6.5,
-    "699Handling": 78
+    "699Handling": 78,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

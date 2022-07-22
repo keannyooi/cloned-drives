@@ -11,7 +11,6 @@
     "tyreType": "All-Surface",
     "tags": [],
     "isPrize": false,
-
     "weight": 1864,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 50.69,
     "ola": 73.97,
     "description": "Card by Macan.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/855185049230245888/Discovery_Sport_P250_SE_R-Dynamic_20.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/855185986206826496/Land_Rover_Discovery_Sport_P250_SE_R-Dynamic_2020_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/855185992751513640/Land_Rover_Discovery_Sport_P250_SE_R-Dynamic_2020_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/855185997708001280/Land_Rover_Discovery_Sport_P250_SE_R-Dynamic_2020_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/855186012102590534/Land_Rover_Discovery_Sport_P250_SE_R-Dynamic_2020_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/855186006826418207/Land_Rover_Discovery_Sport_P250_SE_R-Dynamic_2020_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/855186002992693258/Land_Rover_Discovery_Sport_P250_SE_R-Dynamic_2020_699.png",
-
     "333TopSpeed": 140,
     "3330to60": 6.9,
     "333Handling": 77,
-
     "666TopSpeed": 144,
     "6660to60": 6.6,
     "666Handling": 80,
-
     "996TopSpeed": 147,
     "9960to60": 6.2,
     "996Handling": 80,
-
     "969TopSpeed": 147,
     "9690to60": 6.6,
     "969Handling": 83,
-
     "699TopSpeed": 144,
     "6990to60": 6.2,
-    "699Handling": 83
+    "699Handling": 83,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

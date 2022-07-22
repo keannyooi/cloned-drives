@@ -1,6 +1,10 @@
 {
     "rq": 52,
-    "make": ["Romeo Ferraris", "Abarth", "Fiat"],
+    "make": [
+        "Romeo Ferraris",
+        "Abarth",
+        "Fiat"
+    ],
     "model": "Cinquone Stradale",
     "modelYear": 2011,
     "country": "IT",
@@ -9,9 +13,12 @@
     "handling": 80,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Street Racer", "Hot Hatch", "Tuner"],
+    "tags": [
+        "Street Racer",
+        "Hot Hatch",
+        "Tuner"
+    ],
     "isPrize": false,
-
     "weight": 985,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +30,22 @@
     "mra": 64.29,
     "ola": 79.63,
     "description": "The Romeo Ferraris Cinquone S is to a Fiat 500 Abarth as an Alpina or RUF is to a BMW or Porsche – externally similar, but legally a fully homologated road car separate from the vehicle that spawned it. Card by havvy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/840562639787655188/RomeoFerrarisCinquoneStradale.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/840562779626274846/f_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/840562782414831626/f_111.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/840562786513190952/f_222.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/840562799767978004/f_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/840562795292655626/f_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/840562790569869322/f_233.png",
-
     "333TopSpeed": 148,
     "3330to60": 5.1,
     "333Handling": 83,
-
     "666TopSpeed": 151,
     "6660to60": 4.9,
     "666Handling": 85,
-
     "996TopSpeed": 155,
     "9960to60": 4.6,
     "996Handling": 85,
-
     "969TopSpeed": 155,
     "9690to60": 4.9,
     "969Handling": 89,
-
     "699TopSpeed": 151,
     "6990to60": 4.6,
-    "699Handling": 89
+    "699Handling": 89,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

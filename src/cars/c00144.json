@@ -9,9 +9,12 @@
     "handling": 75,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": ["Unique", "Concept", "The Royal Collection"],
+    "tags": [
+        "Unique",
+        "Concept",
+        "The Royal Collection"
+    ],
     "isPrize": false,
-
     "weight": 2500,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +26,22 @@
     "mra": 67.86,
     "ola": 89.47,
     "description": "The Real Bentley Offroader. Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/849746928371761222/EXP9FThingy.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/849748383911903292/exp9.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/849748389587714048/exp9333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/849748395945492490/exp9666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/849748434151276574/exp9996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/849748418184216616/exp9969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/849748402874613790/exp9699.png",
-
     "333TopSpeed": 183,
     "3330to60": 3.6,
     "333Handling": 77,
-
     "666TopSpeed": 186,
     "6660to60": 3.4,
     "666Handling": 80,
-
     "996TopSpeed": 189,
     "9960to60": 3.2,
     "996Handling": 80,
-
     "969TopSpeed": 189,
     "9690to60": 3.4,
     "969Handling": 83,
-
     "699TopSpeed": 186,
     "6990to60": 3.2,
-    "699Handling": 83
+    "699Handling": 83,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

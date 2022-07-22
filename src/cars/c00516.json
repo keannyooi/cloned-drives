@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1470,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 58.65,
     "ola": 87.18,
     "description": "*Basically* a front-drive NSX. Card by ChickenMcNuggets",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/821117265872420905/acorde_coupe.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821116736454656020/acored_stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821116764397895700/acored_1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821116786908594176/acored_2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821116846584627291/acored_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821116827215986708/acored_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821116807342850129/acored_233.png",
-
     "333TopSpeed": 136,
     "3330to60": 7.4,
     "333Handling": 73,
-
     "666TopSpeed": 140,
-    "6660to60": 7.0,
+    "6660to60": 7,
     "666Handling": 76,
-
-	"996TopSpeed": 144,
+    "996TopSpeed": 144,
     "9960to60": 6.6,
     "996Handling": 76,
-
     "969TopSpeed": 144,
-    "9690to60": 7.0,
+    "9690to60": 7,
     "969Handling": 79,
-
-	"699TopSpeed": 140,
+    "699TopSpeed": 140,
     "6990to60": 6.6,
-    "699Handling": 79
+    "699Handling": 79,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

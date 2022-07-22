@@ -5,13 +5,14 @@
     "modelYear": 2017,
     "country": "JP",
     "topSpeed": 155,
-    "0to60": 5.0,
+    "0to60": 5,
     "handling": 80,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1754,
     "gc": "Low",
     "seatCount": 4,
@@ -23,32 +24,22 @@
     "mra": 66.67,
     "ola": 74.07,
     "description": "The new resurgence of the Infiniti Coupe now running a new twin-turbo V8. Card by Spence.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/969686713054162954/7E3EF267-6FB4-4A33-9F72-CE52EDC0354E.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/969686991631421520/F7BF9099-3B8B-4495-B6A0-5FA6C9AA8D66.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/969687013118861422/299E84D2-2132-438E-BC06-4FB95D55708C.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/969687037005426728/2820E68D-F334-4F85-B03A-E4E058615237.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/969687116944670750/FDD7F749-3FF5-49EF-8B2D-22CDF6FC36ED.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/969687086238171206/C410BF32-CBB9-439B-B4D5-7159955A01C9.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/969687064306126948/1D592650-F8B6-4151-AAA9-DC430E2452E3.jpg",
-
     "333TopSpeed": 158,
     "3330to60": 4.8,
     "333Handling": 83,
-
     "666TopSpeed": 162,
     "6660to60": 4.5,
     "666Handling": 85,
-
     "996TopSpeed": 165,
     "9960to60": 4.3,
     "996Handling": 85,
-
     "969TopSpeed": 165,
     "9690to60": 4.5,
     "969Handling": 89,
-
     "699TopSpeed": 162,
     "6990to60": 4.3,
-    "699Handling": 89
+    "699Handling": 89,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

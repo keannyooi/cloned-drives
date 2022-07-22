@@ -11,10 +11,9 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1660,
     "gc": "Low",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Sedan",
     "tcs": true,
     "abs": true,
@@ -23,32 +22,22 @@
     "mra": 66.25,
     "ola": 71.43,
     "description": "The 4.2-litre V8 raised the performance bar yet again with 344bhp. Card by Havvy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/824044215201824810/AudiS4B6.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824044290979659786/000_s4.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824044296608022618/111_s4.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824044304283598919/222_s4.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824044320176472064/332_s4.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824044314178748456/323_s4.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824044308549074994/233_s4.png",
-
     "333TopSpeed": 159,
-    "3330to60": 5.0,
+    "3330to60": 5,
     "333Handling": 79,
-
     "666TopSpeed": 163,
     "6660to60": 4.8,
     "666Handling": 81,
-
     "996TopSpeed": 166,
     "9960to60": 4.5,
     "996Handling": 81,
-
     "969TopSpeed": 166,
     "9690to60": 4.8,
     "969Handling": 84,
-
     "699TopSpeed": 163,
     "6990to60": 4.5,
-    "699Handling": 84
+    "699Handling": 84,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

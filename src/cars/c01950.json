@@ -9,10 +9,11 @@
     "handling": 68,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Hot Hatch","The Japanese Odyssey"],
+    "tags": [
+        "Hot Hatch",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
-
     "weight": 925,
     "gc": "Medium",
     "seatCount": 5,
@@ -24,33 +25,22 @@
     "mra": 41.63,
     "ola": 67.39,
     "description": "it sports subtly enhanced body modifications and stronger performance. Card by Andu",
-
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/866935396927930368/YarisTS01.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/866937393123033098/YarisTS01.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/866937399820419109/YarisTS01-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/866937403712077864/YarisTS01-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/866937422000553985/YarisTS01-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/866937437867474944/YarisTS01-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/866937460038828082/YarisTS01-699.png",
-
     "333TopSpeed": 121,
     "3330to60": 8.7,
     "333Handling": 70,
-
     "666TopSpeed": 126,
-    "6660to60": 8.3, 
+    "6660to60": 8.3,
     "666Handling": 72,
-
     "996TopSpeed": 130,
     "9960to60": 7.8,
     "996Handling": 72,
-
     "969TopSpeed": 130,
     "9690to60": 8.3,
     "969Handling": 75,
-
     "699TopSpeed": 126,
     "6990to60": 7.8,
-    "699Handling": 75
+    "699Handling": 75,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

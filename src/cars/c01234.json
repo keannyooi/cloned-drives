@@ -9,9 +9,10 @@
     "handling": 91,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Street Racer"],
+    "tags": [
+        "Street Racer"
+    ],
     "isPrize": false,
-
     "weight": 1574,
     "gc": "Low",
     "seatCount": 5,
@@ -21,34 +22,24 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 64.71,
-    "ola": 80.00,
+    "ola": 80,
     "description": "Upgrade 969 ngl. Card by Spence.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/824604660341014568/s209.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824605148981755924/s209.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824605153041580062/s209333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824605157915623434/s209666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824605184076415046/s209996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824605176346181632/s209969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824605165993852970/s209699.png",
-
     "333TopSpeed": 165,
     "3330to60": 4.5,
     "333Handling": 94,
-
     "666TopSpeed": 168,
     "6660to60": 4.2,
     "666Handling": 97,
-
     "996TopSpeed": 172,
-    "9960to60": 4.0,
+    "9960to60": 4,
     "996Handling": 97,
-
     "969TopSpeed": 172,
     "9690to60": 4.2,
     "969Handling": 101,
-
     "699TopSpeed": 168,
-    "6990to60": 4.0,
-    "699Handling": 101
+    "6990to60": 4,
+    "699Handling": 101,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

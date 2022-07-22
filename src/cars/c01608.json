@@ -9,13 +9,13 @@
     "handling": 66,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
-
     "weight": 1083,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Sedan",
     "tcs": false,
     "abs": false,
@@ -24,33 +24,22 @@
     "mra": 33.33,
     "ola": 78.65,
     "description": "A very promising car that got eclipsed by its japanese cousins. Card by Churrito.",
-
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/965202556148137994/unknown.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/965202780988006440/Mazda_Protege_1990_Stocc.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/965202800638308352/Mazda_Protege_1990_1_Star.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/965202816379547688/Mazda_Protege_1990_2_Star.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/965202868518924298/Mazda_Protege_1990_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/965202850621820938/Mazda_Protege_1990_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/965202832569552906/Mazda_Protege_1990_699.png",
-
     "333TopSpeed": 116,
     "3330to60": 8.5,
     "333Handling": 68,
-
     "666TopSpeed": 120,
-    "6660to60": 8.0, 
+    "6660to60": 8,
     "666Handling": 70,
-
     "996TopSpeed": 125,
     "9960to60": 7.6,
     "996Handling": 70,
-
     "969TopSpeed": 125,
-    "9690to60": 8.0,
+    "9690to60": 8,
     "969Handling": 73,
-
     "699TopSpeed": 120,
     "6990to60": 7.6,
-    "699Handling": 73
+    "699Handling": 73,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

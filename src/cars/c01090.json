@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1295,
     "gc": "Low",
     "seatCount": 4,
@@ -23,32 +22,22 @@
     "mra": 56.11,
     "ola": 67.74,
     "description": "The SC is the “xennial” of the classic air-cooled 911 range. Card by Havvy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/821138924147179550/Porsche911SC3.0Cabriolet.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821137942642294835/000_sc3c.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821137948787343400/111_sc3c.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821137951936872488/222_sc3c.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821137963768872960/332_sc3c.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821137959742078986/323_sc3c.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821137955653025802/233_sc3c.png",
-
     "333TopSpeed": 150,
     "3330to60": 5.9,
     "333Handling": 71,
-
     "666TopSpeed": 153,
-    "6660to60": 5.6, 
+    "6660to60": 5.6,
     "666Handling": 74,
-
     "996TopSpeed": 157,
     "9960to60": 5.3,
     "996Handling": 74,
-
     "969TopSpeed": 157,
     "9690to60": 5.6,
     "969Handling": 77,
-
     "699TopSpeed": 153,
     "6990to60": 5.3,
-    "699Handling": 77
+    "699Handling": 77,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

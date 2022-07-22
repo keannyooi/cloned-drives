@@ -9,9 +9,10 @@
     "handling": 65,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1860,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 56.03,
     "ola": 63.29,
     "description": "Gets a bump to a 3.3-liter V-6 but still is about as exciting as watching paint dry. Card by McNuggets.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/957389839152611348/highlander_2004.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/957388491321376819/highlander_v6_stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/957388547965480980/highlander_v6_1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/957388600180363334/highlander_v6_2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/957388679691796480/highlander_v6_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/957388648783941723/highlander_v6_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/957388626331856977/highlander_v6_233.png",
-
     "333TopSpeed": 114,
     "3330to60": 7.5,
     "333Handling": 67,
-
     "666TopSpeed": 119,
     "6660to60": 7.1,
     "666Handling": 69,
-
     "996TopSpeed": 123,
     "9960to60": 6.7,
     "996Handling": 69,
-
     "969TopSpeed": 123,
     "9690to60": 7.1,
     "969Handling": 72,
-
     "699TopSpeed": 119,
     "6990to60": 6.7,
-    "699Handling": 72
+    "699Handling": 72,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

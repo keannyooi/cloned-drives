@@ -11,44 +11,33 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1600,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Sedan",
     "tcs": false,
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 60.90,
+    "mra": 60.9,
     "ola": 73.68,
     "description": "Smooth classic luxury. Card by Andu",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/821696850569592843/735i.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/831148966355664926/735i.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/831148981786509329/735i1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/831149006393966602/735i2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/831149043324682240/735i996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/831149075927007232/735i969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/831149096257191966/735i699.png",
-
     "333TopSpeed": 144,
-    "3330to60": 9.0,
+    "3330to60": 9,
     "333Handling": 70,
-
     "666TopSpeed": 147,
-    "6660to60": 8.6, 
+    "6660to60": 8.6,
     "666Handling": 72,
-
     "996TopSpeed": 151,
     "9960to60": 8.1,
     "996Handling": 72,
-
     "969TopSpeed": 151,
     "9690to60": 8.6,
     "969Handling": 75,
-
     "699TopSpeed": 147,
     "6990to60": 8.1,
-    "699Handling": 75
+    "699Handling": 75,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

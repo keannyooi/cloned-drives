@@ -9,9 +9,10 @@
     "handling": 79,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Silver Screen"],
+    "tags": [
+        "Silver Screen"
+    ],
     "isPrize": false,
-
     "weight": 1835,
     "gc": "Low",
     "seatCount": 2,
@@ -21,34 +22,24 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 79.34,
-    "ola": 87.50,
+    "ola": 87.5,
     "description": "You do not want this car to suddenly appear behind you with 4 missles loaded on the grille. Card by havvy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/821140375367450635/AstonMartinV12Vanquish.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821140429189415033/000_vanq.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821140434252333076/111_vanq.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821140437536210944/222_vanq.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821140450798469189/332_vanq.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821140445962829904/323_vanq.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821140441935249408/233_vanq.png",
-
     "333TopSpeed": 193,
     "3330to60": 4.6,
     "333Handling": 82,
-
     "666TopSpeed": 195,
     "6660to60": 4.3,
     "666Handling": 84,
-
     "996TopSpeed": 198,
     "9960to60": 4.1,
     "996Handling": 84,
-
     "969TopSpeed": 198,
     "9690to60": 4.3,
     "969Handling": 88,
-
-	"699TopSpeed": 195,
+    "699TopSpeed": 195,
     "6990to60": 4.1,
-    "699Handling": 88
+    "699Handling": 88,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

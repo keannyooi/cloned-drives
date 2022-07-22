@@ -1,4 +1,4 @@
-﻿{
+{
     "rq": 52,
     "make": "Volkswagen",
     "model": "Tiguan 2.0 TSI 4Motion",
@@ -11,11 +11,9 @@
     "tyreType": "All-Surface",
     "tags": [],
     "isPrize": false,
-
-
     "weight": 1684,
     "gc": "High",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "SUV",
     "tcs": true,
     "abs": true,
@@ -24,33 +22,22 @@
     "mra": 56.93,
     "ola": 58.97,
     "description": "Good ol facelift to bring the GTI based Tiguan into 2011. Card by Andu",
-
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/848316046909374464/20TSI4Motion11.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/848316205738623026/TiguanTSI411.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/848316211321897001/TiguanTSI411-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/848316217323159612/TiguanTSI411-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/848316236068683806/TiguanTSI411-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/848316254901370901/TiguanTSI411-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/848316263523811389/TiguanTSI411-699.png",
-
     "333TopSpeed": 135,
     "3330to60": 7.4,
     "333Handling": 76,
-
     "666TopSpeed": 139,
-    "6660to60": 7.0, 
+    "6660to60": 7,
     "666Handling": 79,
-
     "996TopSpeed": 143,
     "9960to60": 6.6,
     "996Handling": 79,
-
     "969TopSpeed": 143,
-    "9690to60": 7.0,
+    "9690to60": 7,
     "969Handling": 82,
-
     "699TopSpeed": 139,
     "6990to60": 6.6,
-    "699Handling": 82
+    "699Handling": 82,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

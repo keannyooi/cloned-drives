@@ -9,13 +9,13 @@
     "handling": 66,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
-
     "weight": 3338,
     "gc": "High",
-    "seatCount":6,
+    "seatCount": 6,
     "bodyStyle": "Pick-Up",
     "tcs": true,
     "abs": true,
@@ -24,33 +24,22 @@
     "mra": 48.42,
     "ola": 73.91,
     "description": "The Longest name available in the Titan range. Card by Spence.",
-
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/970057210296156211/IMG_4924.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/970059172378996776/TitXDPlatinumReserve4x4CCD.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/970059189567246336/TitXDPlatinumReserve4x4CCD-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/970059199209959434/TitXDPlatinumReserve4x4CCD-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/970059210614259712/TitXDPlatinumReserve4x4CCD-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/970059220886122506/TitXDPlatinumReserve4x4CCD-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/970059235419361332/TitXDPlatinumReserve4x4CCD-699.png",
-
     "333TopSpeed": 111,
     "3330to60": 8.7,
     "333Handling": 68,
-
     "666TopSpeed": 116,
-    "6660to60": 8.3, 
+    "6660to60": 8.3,
     "666Handling": 70,
-
     "996TopSpeed": 121,
     "9960to60": 7.8,
     "996Handling": 70,
-
     "969TopSpeed": 121,
     "9690to60": 8.3,
     "969Handling": 73,
-
     "699TopSpeed": 116,
     "6990to60": 7.8,
-    "699Handling": 73
+    "699Handling": 73,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

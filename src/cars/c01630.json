@@ -9,13 +9,13 @@
     "handling": 71,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
-
     "weight": 1256,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Sedan",
     "tcs": false,
     "abs": true,
@@ -24,33 +24,22 @@
     "mra": 48.28,
     "ola": 63.27,
     "description": "The legendary world renowned, car of all years of all time and all days in petrol form. Card by Andu",
-
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/866751211624857640/Carisma18iGLX.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/866751643743158272/Carisma18i.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/866751652170170408/Carisma18i-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/866751658901110784/Carisma18i-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/866751680011567154/Carisma18i-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/866751703550394378/Carisma18i-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/866751722168647700/Carisma18i-699.png",
-
     "333TopSpeed": 127,
     "3330to60": 9.3,
     "333Handling": 73,
-
     "666TopSpeed": 131,
-    "6660to60": 8.8, 
+    "6660to60": 8.8,
     "666Handling": 76,
-
     "996TopSpeed": 136,
     "9960to60": 8.3,
     "996Handling": 76,
-
     "969TopSpeed": 136,
     "9690to60": 8.8,
     "969Handling": 79,
-
     "699TopSpeed": 131,
     "6990to60": 8.3,
-    "699Handling": 79
+    "699Handling": 79,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

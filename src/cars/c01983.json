@@ -5,13 +5,12 @@
     "modelYear": 2021,
     "country": "DE",
     "topSpeed": 186,
-    "0to60": 3.0,
+    "0to60": 3,
     "handling": 92,
     "driveType": "4WD",
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 2195,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 69.76,
     "ola": 80,
     "description": "Has the Urus Met Its Match? Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/958001741490712606/CayenneTurboGT.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/958001904460386334/CayenneTGT.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/958001911703937105/CayenneTGT1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/958001922110009424/CayenneTGT2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/958001944021057576/CayenneTGT996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/958001937993859112/CayenneTGT969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/958001933019398144/CayenneTGT699.png",
-
     "333TopSpeed": 189,
     "3330to60": 2.9,
     "333Handling": 95,
-
     "666TopSpeed": 192,
     "6660to60": 2.7,
     "666Handling": 98,
-
     "996TopSpeed": 194,
     "9960to60": 2.6,
     "996Handling": 98,
-
     "969TopSpeed": 194,
     "9690to60": 2.7,
     "969Handling": 102,
-
     "699TopSpeed": 192,
     "6990to60": 2.6,
-    "699Handling": 102
+    "699Handling": 102,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

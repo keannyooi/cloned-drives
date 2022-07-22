@@ -9,9 +9,10 @@
     "handling": 74,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Street Racer"],
+    "tags": [
+        "Street Racer"
+    ],
     "isPrize": false,
-
     "weight": 1533,
     "gc": "Low",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 60.65,
     "ola": 78.37,
     "description": "Non-Japanese markets can enjoy the wonders of the 2JZ with this. Card by Connor",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/940288077442719814/D.LexusIS300.pn.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/940288123760422912/LexusIS300.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/940288144056664134/LexusIS300-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/940288182405185596/LexusIS300-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/940288272792449104/LexusIS300-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/940288224843153449/LexusIS300-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/940288205486436362/LexusIS300-699.png",
-
     "333TopSpeed": 147,
-    "3330to60": 7.0,
+    "3330to60": 7,
     "333Handling": 76,
-
     "666TopSpeed": 150,
     "6660to60": 6.7,
     "666Handling": 79,
-
     "996TopSpeed": 154,
     "9960to60": 6.3,
     "996Handling": 79,
-
     "969TopSpeed": 154,
     "9690to60": 6.7,
     "969Handling": 82,
-
     "699TopSpeed": 150,
     "6990to60": 6.3,
-    "699Handling": 82
+    "699Handling": 82,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -9,9 +9,10 @@
     "handling": 93,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Grand Tourer"],
+    "tags": [
+        "Grand Tourer"
+    ],
     "isPrize": false,
-
     "weight": 1920,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +24,22 @@
     "mra": 82.92,
     "ola": 87.5,
     "description": "Card by Exist.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/860112707842998322/CD_Ferrari_GTC4Lusso.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/860112768622133268/CD_Ferrari_GTC4Lusso_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/860112778802495508/CD_Ferrari_GTC4Lusso_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/860112780601065482/CD_Ferrari_GTC4Lusso_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/860112799040405514/CD_Ferrari_GTC4Lusso_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/860112797005905930/CD_Ferrari_GTC4Lusso_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/860112788746928158/CD_Ferrari_GTC4Lusso_699.png",
-
     "333TopSpeed": 211,
-    "3330to60": 3.0,
+    "3330to60": 3,
     "333Handling": 96,
-
     "666TopSpeed": 213,
     "6660to60": 2.9,
     "666Handling": 99,
-
     "996TopSpeed": 216,
     "9960to60": 2.7,
     "996Handling": 99,
-
     "969TopSpeed": 216,
     "9690to60": 2.9,
     "969Handling": 103,
-
     "699TopSpeed": 213,
     "6990to60": 2.7,
-    "699Handling": 103
+    "699Handling": 103,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

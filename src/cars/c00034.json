@@ -9,9 +9,11 @@
     "handling": 89,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Silver Screen", "Super Sedan"],
+    "tags": [
+        "Silver Screen",
+        "Super Sedan"
+    ],
     "isPrize": false,
-
     "weight": 1430,
     "gc": "Low",
     "seatCount": 5,
@@ -23,32 +25,22 @@
     "mra": 81.26,
     "ola": 88.81,
     "description": "A truly great Italian super saloon. Card by Havvy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820768210029641768/AlfaRomeoGiuliaQuadrifoglio.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820768286382751774/000_quad.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820768294763102218/111_quad.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820768300840779796/222_quad.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820768317157277707/332_quad.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820768312458739732/323_quad.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820768307266977852/233_quad.png",
-
     "333TopSpeed": 194,
     "3330to60": 3.6,
     "333Handling": 92,
-
     "666TopSpeed": 196,
     "6660to60": 3.4,
     "666Handling": 95,
-
-	"996TopSpeed": 199,
+    "996TopSpeed": 199,
     "9960to60": 3.2,
     "996Handling": 95,
-
-	"969TopSpeed": 199,
+    "969TopSpeed": 199,
     "9690to60": 3.4,
     "969Handling": 99,
-
     "699TopSpeed": 196,
     "6990to60": 3.2,
-    "699Handling": 99
+    "699Handling": 99,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

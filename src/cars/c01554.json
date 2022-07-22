@@ -9,9 +9,10 @@
     "handling": 78,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1380,
     "gc": "Medium",
     "seatCount": 2,
@@ -23,32 +24,22 @@
     "mra": 77.53,
     "ola": 89.86,
     "description": "Senna drove this exact car. He drove an automatic NSX. Card by Connor",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/868939934222909450/C.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/868939753804943390/HondaNSXAT.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/868939763854491708/HondaNSXAT-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/868939773706903582/HondaNSXAT-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/868939803742314526/HondaNSXAT-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/868939794359677038/HondaNSXAT-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/868939784775692288/HondaNSXAT-699.png",
-
     "333TopSpeed": 159,
     "3330to60": 6.6,
     "333Handling": 81,
-
     "666TopSpeed": 163,
     "6660to60": 6.2,
     "666Handling": 83,
-
     "996TopSpeed": 166,
     "9960to60": 5.9,
     "996Handling": 83,
-
     "969TopSpeed": 166,
     "9690to60": 6.2,
     "969Handling": 87,
-
     "699TopSpeed": 163,
     "6990to60": 5.9,
-    "699Handling": 87
+    "699Handling": 87,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

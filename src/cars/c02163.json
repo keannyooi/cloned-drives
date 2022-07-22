@@ -11,7 +11,6 @@
     "tyreType": "All-Surface",
     "tags": [],
     "isPrize": false,
-
     "weight": 1882,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 61.68,
     "ola": 81.82,
     "description": "Card by Macan.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/855185083039219752/Discovery_Sport_P290_Black_Edition_20.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/855186058815995924/Land_Rover_Discovery_Sport_P290_Black_Edition_2020_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/855186063642853426/Land_Rover_Discovery_Sport_P290_Black_Edition_2020_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/855186066112643112/Land_Rover_Discovery_Sport_P290_Black_Edition_2020_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/855186086959251466/Land_Rover_Discovery_Sport_P290_Black_Edition_2020_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/855186079064784936/Land_Rover_Discovery_Sport_P290_Black_Edition_2020_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/855186071430889542/Land_Rover_Discovery_Sport_P290_Black_Edition_2020_699.png",
-
     "333TopSpeed": 149,
     "3330to60": 6.3,
     "333Handling": 80,
-
     "666TopSpeed": 152,
     "6660to60": 5.9,
     "666Handling": 82,
-
     "996TopSpeed": 156,
     "9960to60": 5.6,
     "996Handling": 82,
-
     "969TopSpeed": 156,
     "9690to60": 5.9,
     "969Handling": 85,
-
     "699TopSpeed": 152,
     "6990to60": 5.6,
-    "699Handling": 85
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

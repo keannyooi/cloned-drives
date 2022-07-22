@@ -143,8 +143,10 @@ module.exports = {
                         message.channel.send(`**You have beaten Round ${round}! Claim your reward using \`cd-rewards\`.**`);
                         const set = {};
                         set[`playerProgress.${message.author.id}`] = round + 1;
-                        await eventModel.updateOne({ eventID: event.eventID }, { "$set": set });
-                        await profileModel.updateOne({ userID: message.author.id }, { unclaimedRewards });
+                        await Promise.all([
+                            eventModel.updateOne({ eventID: event.eventID }, { "$set": set }),
+                            profileModel.updateOne({ userID: message.author.id }, { unclaimedRewards })
+                        ]);
                     }
                     return bot.deleteID(message.author.id);
                 }

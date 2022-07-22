@@ -9,9 +9,11 @@
     "handling": 80,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Hot Hatch","The Japanese Odyssey"],
+    "tags": [
+        "Hot Hatch",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1050,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +25,22 @@
     "mra": 58.97,
     "ola": 86.96,
     "description": "Daburu kurashu ikoze. Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/869168710445854801/CivicSirIIEG6.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/869169206032228352/eg6.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/869169214747996170/eg6333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/869169223862214726/eg6666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/869169257450205254/eg6996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/869169248193368104/eg6969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/869169237174919168/eg6699.png",
-
     "333TopSpeed": 145,
     "3330to60": 6.6,
     "333Handling": 83,
-
     "666TopSpeed": 148,
     "6660to60": 6.2,
     "666Handling": 85,
-
     "996TopSpeed": 152,
     "9960to60": 5.9,
     "996Handling": 85,
-
     "969TopSpeed": 152,
     "9690to60": 6.2,
     "969Handling": 89,
-
     "699TopSpeed": 148,
     "6990to60": 5.9,
-    "699Handling": 89
+    "699Handling": 89,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

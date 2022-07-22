@@ -9,9 +9,10 @@
     "handling": 77,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Street Racer"],
+    "tags": [
+        "Street Racer"
+    ],
     "isPrize": false,
-
     "weight": 1240,
     "gc": "Medium",
     "seatCount": 4,
@@ -21,34 +22,24 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 57.89,
-    "ola": 69.70,
+    "ola": 69.7,
     "description": "Star in this car with the word \"Star\" in it and an engine named after a star, made by the company whose main competitor's logo is a bunch of stars. Card by Keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/856532565753593866/mitsubishi_starion_2000_turbo_gsr-v.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/856531635376881674/starion_gsr-v_000.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/856531640262852618/starion_gsr-v_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/856531645141876736/starion_gsr-v_666.jpg",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/856531659292672010/starion_gsr-v_996.jpg",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/856531654641451078/starion_gsr-v_969.jpg",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/856531650732884038/starion_gsr-v_699.jpg",
-
     "333TopSpeed": 117,
     "3330to60": 6.3,
     "333Handling": 80,
-
     "666TopSpeed": 121,
     "6660to60": 5.9,
     "666Handling": 82,
-
     "996TopSpeed": 126,
     "9960to60": 5.6,
     "996Handling": 82,
-
     "969TopSpeed": 126,
     "9690to60": 5.9,
     "969Handling": 85,
-
     "699TopSpeed": 121,
     "6990to60": 5.6,
-    "699Handling": 85
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

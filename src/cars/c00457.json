@@ -9,9 +9,10 @@
     "handling": 78,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Hot Hatch"],
+    "tags": [
+        "Hot Hatch"
+    ],
     "isPrize": false,
-
     "weight": 1283,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 59.85,
     "ola": 68.35,
     "description": "A European SVT. Card by keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819390743654170634/ford_focus_st170.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819759798181691422/st170_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819759804809084938/st170_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819759812513366036/st170_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819759859296763914/st170_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819759848001765396/st170_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819759825167974400/st170_699.jpg",
-
     "333TopSpeed": 136,
     "3330to60": 7.5,
     "333Handling": 81,
-
     "666TopSpeed": 140,
     "6660to60": 7.1,
     "666Handling": 83,
-
-	"996TopSpeed": 143,
+    "996TopSpeed": 143,
     "9960to60": 6.7,
     "996Handling": 83,
-
     "969TopSpeed": 144,
     "9690to60": 7.1,
     "969Handling": 87,
-
-	"699TopSpeed": 140,
+    "699TopSpeed": 140,
     "6990to60": 6.7,
-    "699Handling": 87
+    "699Handling": 87,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

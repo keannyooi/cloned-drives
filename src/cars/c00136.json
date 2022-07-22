@@ -1,6 +1,9 @@
 {
     "rq": 64,
-    "make": ["Autodelta", "Alfa Romeo"],
+    "make": [
+        "Autodelta",
+        "Alfa Romeo"
+    ],
     "model": "147 GTA AM 3.7 Super",
     "modelYear": 2007,
     "country": "GB",
@@ -9,9 +12,12 @@
     "handling": 85,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Hot Hatch", "Tuner", "Sleeper"],
+    "tags": [
+        "Hot Hatch",
+        "Tuner",
+        "Sleeper"
+    ],
     "isPrize": false,
-
     "weight": 1360,
     "gc": "Low",
     "seatCount": 5,
@@ -23,32 +29,22 @@
     "mra": 78.33,
     "ola": 93.62,
     "description": "'How much horsepower do you really want from a 147 GTA?' 'Yes.' Card by keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/837302646674685972/autodelta_147_gta_am_3.7_super_but_more_power.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/837303333365743686/autodelta_147_super3.7_000.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/837303342199210034/autodelta_147_super3.7_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/837303346830376980/autodelta_147_super3.7_666.jpg",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/837303366073057361/autodelta_147_super3.7_996.jpg",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/837303361052868628/autodelta_147_super3.7_969.jpg",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/837303353389350922/autodelta_147_super3.7_699.jpg",
-
     "333TopSpeed": 186,
     "3330to60": 4.5,
     "333Handling": 88,
-
     "666TopSpeed": 189,
     "6660to60": 4.2,
     "666Handling": 91,
-
     "996TopSpeed": 192,
-    "9960to60": 4.0,
+    "9960to60": 4,
     "996Handling": 91,
-
     "969TopSpeed": 192,
     "9690to60": 4.2,
     "969Handling": 94,
-
     "699TopSpeed": 189,
-    "6990to60": 4.0,
-    "699Handling": 94
+    "6990to60": 4,
+    "699Handling": 94,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

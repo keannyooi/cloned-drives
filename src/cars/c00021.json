@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1800,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 73.86,
     "ola": 70.77,
     "description": "'TLX is good now lads.' Card and quote by Macan.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/847706807589797908/TLX_SH-AWD_A-Spec_21.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/847706894008975391/Acura_TLX_SH-AWD_A-Spec_2021_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/847706902427205632/Acura_TLX_SH-AWD_A-Spec_2021_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/847706910719213588/Acura_TLX_SH-AWD_A-Spec_2021_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/847706938623524884/Acura_TLX_SH-AWD_A-Spec_2021_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/847706932621082694/Acura_TLX_SH-AWD_A-Spec_2021_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/847706925037518859/Acura_TLX_SH-AWD_A-Spec_2021_699.png",
-
     "333TopSpeed": 135,
     "3330to60": 6.2,
     "333Handling": 80,
-
     "666TopSpeed": 139,
     "6660to60": 5.9,
     "666Handling": 82,
-
     "996TopSpeed": 143,
     "9960to60": 5.5,
     "996Handling": 82,
-
     "969TopSpeed": 143,
     "9690to60": 5.9,
     "969Handling": 85,
-
     "699TopSpeed": 139,
     "6990to60": 5.5,
-    "699Handling": 85
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

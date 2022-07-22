@@ -1,6 +1,9 @@
 {
     "rq": 85,
-    "make": ["HKS", "Nissan"],
+    "make": [
+        "HKS",
+        "Nissan"
+    ],
     "model": "Patrol Turbo T51R 1000 H.P FoRRtune",
     "modelYear": 2010,
     "country": "JP",
@@ -9,9 +12,11 @@
     "handling": 78,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Tuner", "The Japanese Odyssey"],
+    "tags": [
+        "Tuner",
+        "The Japanese Odyssey"
+    ],
     "isPrize": true,
-
     "weight": 2230,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +28,22 @@
     "mra": 120,
     "ola": 88.88,
     "description": "Card by Aqo.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/948603231892811816/hks.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/948603294639595530/stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/948603313891475486/333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/948603331289432114/666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/948603439242416178/996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/948603412788940890/969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/948603369537298592/699.png",
-
     "333TopSpeed": 182,
     "3330to60": 3.4,
     "333Handling": 81,
-
     "666TopSpeed": 185,
     "6660to60": 3.2,
     "666Handling": 83,
-
     "996TopSpeed": 188,
     "9960to60": 3.1,
     "996Handling": 83,
-
     "969TopSpeed": 188,
     "9690to60": 3.2,
     "969Handling": 87,
-
     "699TopSpeed": 185,
     "6990to60": 3.1,
-    "699Handling": 87
+    "699Handling": 87,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

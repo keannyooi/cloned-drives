@@ -9,9 +9,10 @@
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Supercar"],
+    "tags": [
+        "Supercar"
+    ],
     "isPrize": true,
-
     "weight": 1247,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +24,22 @@
     "mra": 115.29,
     "ola": 91.46,
     "description": "Card by Havvy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/825411245603684392/S7TT.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/825411581335830528/s7tt.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/825411586159017984/s7tt333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/825411592698331186/s7tt666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/825411622797443092/s7tt996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/825411610566852608/s7tt969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/825411601272012870/s7tt699.png",
-
     "333TopSpeed": 251,
     "3330to60": 3.1,
     "333Handling": 94,
-
     "666TopSpeed": 253,
-    "6660to60": 3.0, 
+    "6660to60": 3,
     "666Handling": 97,
-
     "996TopSpeed": 255,
     "9960to60": 2.8,
     "996Handling": 97,
-
     "969TopSpeed": 255,
-    "9690to60": 3.0,
+    "9690to60": 3,
     "969Handling": 101,
-
     "699TopSpeed": 253,
     "6990to60": 2.8,
-    "699Handling": 101
+    "699Handling": 101,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

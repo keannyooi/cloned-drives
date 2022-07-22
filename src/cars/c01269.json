@@ -5,13 +5,15 @@
     "modelYear": 2012,
     "country": "US",
     "topSpeed": 130,
-    "0to60": 4.0,
+    "0to60": 4,
     "handling": 82,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Eco-Friendly", "Innovative"],
+    "tags": [
+        "Eco-Friendly",
+        "Innovative"
+    ],
     "isPrize": false,
-
     "weight": 2146,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +25,22 @@
     "mra": 63.85,
     "ola": 81.82,
     "description": "With the Plus package, a Model S can transform into a sporty sedan with substantially improved handling. Card by keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/848059479023157250/tesla_model_s_p85.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/848058527603621928/black_tesla_000.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/848058537908764682/black_tesla_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/848058547191021598/black_tesla_666.jpg",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/848058557861199892/black_tesla_996.jpg",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/848058552807325706/black_tesla_969.jpg",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/848058549195112448/black_tesla_699.jpg",
-
     "333TopSpeed": 134,
     "3330to60": 3.8,
     "333Handling": 85,
-
     "666TopSpeed": 138,
     "6660to60": 3.6,
     "666Handling": 87,
-
     "996TopSpeed": 142,
     "9960to60": 3.4,
     "996Handling": 87,
-
     "969TopSpeed": 142,
     "9690to60": 3.6,
     "969Handling": 91,
-
     "699TopSpeed": 138,
     "6990to60": 3.4,
-    "699Handling": 91
+    "699Handling": 91,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

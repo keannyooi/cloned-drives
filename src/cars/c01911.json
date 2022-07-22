@@ -9,9 +9,12 @@
     "handling": 73,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Concept", "Eco-Friendly","The Japanese Odyssey"],
+    "tags": [
+        "Concept",
+        "Eco-Friendly",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1120,
     "gc": "Medium",
     "seatCount": 2,
@@ -23,32 +26,22 @@
     "mra": 48.84,
     "ola": 69.05,
     "description": "Yes, a racey Prius that was unveiled at goodwood. Wh ythis exists i don't know, but is this awe-inducing? heck yes. Card by Keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/861147392996933682/toyota_prius_gt_concept.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/861145941930016788/prius_gt_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/861145949175152640/prius_gt_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/861145953125400586/prius_gt_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/861145963711954954/prius_gt_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/861145960709357568/prius_gt_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/861145957806899241/prius_gt_699.jpg",
-
     "333TopSpeed": 120,
-    "3330to60": 8.0,
+    "3330to60": 8,
     "333Handling": 75,
-
     "666TopSpeed": 124,
     "6660to60": 7.6,
     "666Handling": 78,
-
     "996TopSpeed": 129,
     "9960to60": 7.1,
     "996Handling": 78,
-
     "969TopSpeed": 129,
     "9690to60": 7.6,
     "969Handling": 81,
-
     "699TopSpeed": 124,
     "6990to60": 7.1,
-    "699Handling": 81
+    "699Handling": 81,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

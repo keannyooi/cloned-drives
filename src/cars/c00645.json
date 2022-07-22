@@ -9,9 +9,12 @@
     "handling": 92,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Servers Choice", "Supercar", "Track Day"],
+    "tags": [
+        "Servers Choice",
+        "Supercar",
+        "Track Day"
+    ],
     "isPrize": false,
-
     "weight": 1525,
     "gc": "Low",
     "seatCount": 2,
@@ -23,33 +26,22 @@
     "mra": 89.66,
     "ola": 84.62,
     "description": "Card by DodgeDemon.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820817208463589416/2015_Lamborghini_Avantador_SV.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824288531916521563/sv.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824288537259278378/sv333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824288542632181810/sv666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824288566984572988/sv996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824288559157870622/sv969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824288550970458162/sv699.png",
-
     "333TopSpeed": 219,
     "3330to60": 2.5,
     "333Handling": 95,
-
     "666TopSpeed": 222,
     "6660to60": 2.3,
     "666Handling": 98,
-
     "996TopSpeed": 224,
     "9960to60": 2.2,
     "996Handling": 98,
-
     "969TopSpeed": 224,
     "9690to60": 2.3,
     "969Handling": 102,
-
     "699TopSpeed": 222,
     "6990to60": 2.2,
-    "699Handling": 102
-
+    "699Handling": 102,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

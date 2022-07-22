@@ -9,9 +9,10 @@
     "handling": 77,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Hot Hatch"],
+    "tags": [
+        "Hot Hatch"
+    ],
     "isPrize": false,
-
     "weight": 1371,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 56.3,
     "ola": 76.32,
     "description": "The slightly hot Toyota hatchback. Card by Connor.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/865680888738218014/C.ToyotaCorollaHatchXSEMT.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/865680975747612702/ToyotaCorollaXSE.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/865680990773313536/ToyotaCorollaXSE-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/865681006186725396/ToyotaCorollaXSE-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/865681043561250826/ToyotaCorollaXSE-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/865681033818538014/ToyotaCorollaXSE-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/865681019805630464/ToyotaCorollaXSE-699.png",
-
     "333TopSpeed": 123,
     "3330to60": 7.2,
     "333Handling": 80,
-
     "666TopSpeed": 128,
     "6660to60": 6.8,
     "666Handling": 82,
-
     "996TopSpeed": 132,
     "9960to60": 6.5,
     "996Handling": 82,
-
     "969TopSpeed": 132,
     "9690to60": 6.8,
     "969Handling": 85,
-
     "699TopSpeed": 128,
     "6990to60": 6.5,
-    "699Handling": 85
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

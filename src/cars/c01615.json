@@ -9,9 +9,11 @@
     "handling": 78,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Street Racer","The Japanese Odyssey"],
+    "tags": [
+        "Street Racer",
+        "The Japanese Odyssey"
+    ],
     "isPrize": true,
-
     "weight": 1270,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +25,22 @@
     "mra": 58.23,
     "ola": 72.12,
     "description": "A very special RX-7 to commemorate the RX-7's IMSA domination, less than 100 's' models were made. Card by DodgeDemon",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/971796348129132554/Mazda_RX-7_GTUs_1989.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/971800560732872744/Mazda_RX-7_GTUs_1989_H000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/971800591217082389/Mazda_RX-7_GTUs_1989_H111.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/971800619113394196/Mazda_RX-7_GTUs_1989_H222.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/971800703037223042/Mazda_RX-7_GTUs_1989_H332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/971800663203905596/Mazda_RX-7_GTUs_1989_H323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/971800644031750145/Mazda_RX-7_GTUs_1989_H233.png",
-
     "333TopSpeed": 134,
     "3330to60": 7.4,
     "333Handling": 81,
-
     "666TopSpeed": 138,
-    "6660to60": 7.0,
+    "6660to60": 7,
     "666Handling": 83,
-
     "996TopSpeed": 142,
     "9960to60": 6.6,
     "996Handling": 83,
-
     "969TopSpeed": 142,
-    "9690to60": 7.0,
+    "9690to60": 7,
     "969Handling": 87,
-
     "699TopSpeed": 138,
     "6990to60": 6.6,
-    "699Handling": 87
+    "699Handling": 87,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

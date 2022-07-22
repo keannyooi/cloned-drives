@@ -9,9 +9,10 @@
     "handling": 75,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": ["Servers Choice"],
+    "tags": [
+        "Servers Choice"
+    ],
     "isPrize": false,
-
     "weight": 2568,
     "gc": "High",
     "seatCount": 6,
@@ -23,32 +24,22 @@
     "mra": 65.08,
     "ola": 63.41,
     "description": "Speedy for one behemoth of an SUV. Card by Connor",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820372706628993044/S.BMWX7M50i.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820372814246445096/S.BMWX7M50i.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820372823851270145/S.BMWX7M50i-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820372845950402570/S.BMWX7M50i-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820372894198267947/S.BMWX7M50i-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820372875008540723/S.BMWX7M50i-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820372860043788358/S.BMWX7M50i-699.png",
-
     "333TopSpeed": 158,
     "3330to60": 3.9,
     "333Handling": 77,
-
     "666TopSpeed": 162,
     "6660to60": 3.7,
     "666Handling": 80,
-
     "996TopSpeed": 165,
     "9960to60": 3.5,
     "996Handling": 80,
-
     "969TopSpeed": 165,
     "9690to60": 3.7,
     "969Handling": 83,
-
-	"699TopSpeed": 162,
+    "699TopSpeed": 162,
     "6990to60": 3.5,
-    "699Handling": 83
+    "699Handling": 83,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

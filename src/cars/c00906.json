@@ -9,9 +9,11 @@
     "handling": 96,
     "driveType": "4WD",
     "tyreType": "Slick",
-    "tags": ["Motorsport", "Eco-Friendly"],
+    "tags": [
+        "Motorsport",
+        "Eco-Friendly"
+    ],
     "isPrize": true,
-
     "weight": 1340,
     "gc": "Low",
     "seatCount": 1,
@@ -23,32 +25,22 @@
     "mra": 46.91,
     "ola": 68.42,
     "description": "The cooler MiEV. Card by keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819383503661563934/miev_evo.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819530912759939102/miev_evo_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819530920087781406/miev_evo_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819530925234192404/miev_evo_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819530957341589564/miev_evo_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819530945886421002/miev_evo_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819530935619289129/miev_evo_699.jpg",
-
     "333TopSpeed": 120,
     "3330to60": 3.6,
     "333Handling": 99,
-
     "666TopSpeed": 124,
     "6660to60": 3.4,
     "666Handling": 102,
-
     "699TopSpeed": 124,
     "6990to60": 3.2,
     "699Handling": 107,
-
     "996TopSpeed": 129,
     "9960to60": 3.2,
     "996Handling": 102,
-
     "969TopSpeed": 129,
     "9690to60": 3.4,
-    "969Handling": 107
+    "969Handling": 107,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

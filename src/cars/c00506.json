@@ -1,6 +1,9 @@
 {
     "rq": 79,
-    "make": ["Gunther Werks", "Porsche"],
+    "make": [
+        "Gunther Werks",
+        "Porsche"
+    ],
     "model": "400R",
     "modelYear": 2019,
     "country": "US",
@@ -9,9 +12,12 @@
     "handling": 93,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Tuner", "Unique", "Track Day"],
+    "tags": [
+        "Tuner",
+        "Unique",
+        "Track Day"
+    ],
     "isPrize": true,
-
     "weight": 1211,
     "gc": "Low",
     "seatCount": 2,
@@ -21,34 +27,24 @@
     "enginePos": "Rear",
     "fuelType": "Petrol",
     "mra": 82.22,
-    "ola": 80.00,
+    "ola": 80,
     "description": "This is not a Singer. Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820726041903497226/guntherwerks.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820726582401826867/werks.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820726586978467850/werks333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820726593650819122/werks666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820726618908655697/werks996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820726610181226517/werks969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820726602378772520/werks699.png",
-
     "333TopSpeed": 173,
     "3330to60": 3.5,
     "333Handling": 96,
-
     "666TopSpeed": 176,
     "6660to60": 3.3,
     "666Handling": 99,
-
     "996TopSpeed": 179,
     "9960to60": 3.1,
     "996Handling": 99,
-
     "969TopSpeed": 179,
     "9690to60": 3.3,
     "969Handling": 103,
-
     "699TopSpeed": 176,
     "6990to60": 3.1,
-    "699Handling": 103
+    "699Handling": 103,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

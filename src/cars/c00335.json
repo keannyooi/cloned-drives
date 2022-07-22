@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1300,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +22,22 @@
     "mra": 45.96,
     "ola": 78.38,
     "description": "A rare import in the USA. Card by DodgeDemon",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/826420138986176563/detomato.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826420250547060736/tomatomanguse.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826420258155003931/tomatomanguse333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826420265796894761/tomatomanguse666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826420291608772619/tomatomanguse996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826420283258437643/tomatomanguse969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826420275050315796/tomatomanguse699.png",
-
     "333TopSpeed": 158,
-    "3330to60": 7.0,
+    "3330to60": 7,
     "333Handling": 72,
-
     "666TopSpeed": 162,
     "6660to60": 6.7,
     "666Handling": 75,
-
-	"996TopSpeed": 165,
+    "996TopSpeed": 165,
     "9960to60": 6.3,
     "996Handling": 75,
-
     "969TopSpeed": 165,
     "9690to60": 6.7,
     "969Handling": 78,
-
-	"699TopSpeed": 162,
+    "699TopSpeed": 162,
     "6990to60": 6.3,
-    "699Handling": 78
+    "699Handling": 78,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

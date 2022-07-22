@@ -9,9 +9,12 @@
     "handling": 95,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Hypercar", "Ultra Expensive", "Unique"],
+    "tags": [
+        "Hypercar",
+        "Ultra Expensive",
+        "Unique"
+    ],
     "isPrize": false,
-
     "weight": 1570,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +26,22 @@
     "mra": 93.33,
     "ola": 92.86,
     "description": "Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/842473293449527337/centanarioRoadster.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/842473548177735700/centiroadster.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/842473554897141780/centiroadster333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/842473561523486760/centiroadster666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/842473587515457546/centiroadster996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/842473577693577326/centiroadster969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/842473569325416448/centiroadster699.png",
-
     "333TopSpeed": 219,
     "3330to60": 2.7,
     "333Handling": 98,
-
     "666TopSpeed": 222,
     "6660to60": 2.5,
     "666Handling": 101,
-
     "996TopSpeed": 224,
     "9960to60": 2.4,
     "996Handling": 101,
-
     "969TopSpeed": 224,
     "9690to60": 2.5,
     "969Handling": 105,
-
     "699TopSpeed": 222,
     "6990to60": 2.4,
-    "699Handling": 105
+    "699Handling": 105,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

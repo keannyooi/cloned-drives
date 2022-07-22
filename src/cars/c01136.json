@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1388,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 52.34,
     "ola": 74.63,
     "description": "Essentially a Ford Sierra without the V6, the Merkur was sold only in the US and remains a quirky alternative to the likes of the M3. Card by McNuggies.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/828458664981430273/merkur.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/828454167600168977/merkur_stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/828454241453604864/merkur_1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/828454284441288765/merkur_2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/850328752624762930/unknown.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/828454369754087434/merkur_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/828454329622986782/merkur_233.png",
-
     "333TopSpeed": 136,
     "3330to60": 6.4,
     "333Handling": 74,
-
     "666TopSpeed": 140,
-    "6660to60": 6.0,
+    "6660to60": 6,
     "666Handling": 77,
-
     "996TopSpeed": 144,
     "9960to60": 5.7,
     "996Handling": 77,
-
     "969TopSpeed": 144,
-    "9690to60": 6.0,
+    "9690to60": 6,
     "969Handling": 80,
-
     "699TopSpeed": 140,
     "6990to60": 5.7,
-    "699Handling": 80
+    "699Handling": 80,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

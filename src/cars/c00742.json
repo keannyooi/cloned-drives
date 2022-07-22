@@ -9,9 +9,11 @@
     "handling": 88,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["The Royal Collection", "Unique"],
+    "tags": [
+        "The Royal Collection",
+        "Unique"
+    ],
     "isPrize": true,
-
     "weight": 763,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +25,22 @@
     "mra": 72.31,
     "ola": 85.11,
     "description": "Perhaps the sexiest Lotus to ever exist, just look at that rollcage. Card by Tom.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/854310917647237130/Lotus_Elise_Sport_190_1998.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/854311014752190464/Lotus_Elise_Sport_190_1998_111.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/854311023100035092/Lotus_Elise_Sport_190_1998_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/854311026533859358/Lotus_Elise_Sport_190_1998_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/854311044464640010/Lotus_Elise_Sport_190_1998_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/854311040140967936/Lotus_Elise_Sport_190_1998_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/854311031076421662/Lotus_Elise_Sport_190_1998_699.jpg",
-
     "333TopSpeed": 140,
     "3330to60": 4.5,
     "333Handling": 91,
-
     "666TopSpeed": 144,
     "6660to60": 4.2,
     "666Handling": 94,
-
     "996TopSpeed": 147,
-    "9960to60": 4.0,
+    "9960to60": 4,
     "996Handling": 94,
-
     "969TopSpeed": 147,
     "9690to60": 4.2,
     "969Handling": 98,
-
     "699TopSpeed": 144,
-    "6990to60": 4.0,
-    "699Handling": 98
+    "6990to60": 4,
+    "699Handling": 98,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

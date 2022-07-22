@@ -1,6 +1,9 @@
 {
     "rq": 79,
-    "make": ["Sharkwerks", "Porsche"],
+    "make": [
+        "Sharkwerks",
+        "Porsche"
+    ],
     "model": "GT3 3.9",
     "modelYear": 2001,
     "country": "US",
@@ -9,9 +12,10 @@
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Tuner"],
+    "tags": [
+        "Tuner"
+    ],
     "isPrize": false,
-
     "weight": 1311,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +27,22 @@
     "mra": 73.77,
     "ola": 80.56,
     "description": "Tunerfloosh. Card by Havvy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/828644063154143252/unknown.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/828644151506632714/996Shark_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/828644156083404870/996Shark_111.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/828644160046891028/996Shark_222.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/828644177033691156/996Shark_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/828644173896220722/996Shark_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/828644165868453908/996Shark_233.png",
-
     "333TopSpeed": 189,
     "3330to60": 3.4,
     "333Handling": 94,
-
     "666TopSpeed": 192,
     "6660to60": 3.2,
     "666Handling": 97,
-
     "996TopSpeed": 194,
     "9960to60": 3.1,
     "996Handling": 97,
-
     "969TopSpeed": 194,
     "9690to60": 3.2,
     "969Handling": 101,
-
     "699TopSpeed": 192,
     "6990to60": 3.1,
-    "699Handling": 101
+    "699Handling": 101,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

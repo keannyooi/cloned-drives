@@ -9,9 +9,12 @@
     "handling": 78,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Hot Hatch", "Street Racer","The Japanese Odyssey"],
+    "tags": [
+        "Hot Hatch",
+        "Street Racer",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1427,
     "gc": "Low",
     "seatCount": 5,
@@ -23,32 +26,22 @@
     "mra": 68.6,
     "ola": 77.96,
     "description": "It's a lot of machine for the money and it offers the same balance of speed, practicality and value previously found only in the Mitsubishi Lancer Evolution or Subaru WRX STI",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/897216372776530040/C.Mazda3MPS.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/897217265735438336/Mazda3MPS03.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/897217276460281896/Mazda3MPS03-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/897217289458434109/Mazda3MPS03-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/897217324535410698/Mazda3MPS03-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/897217313420509204/Mazda3MPS03-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/897217301248634960/Mazda3MPS03-699.png",
-
     "333TopSpeed": 158,
     "3330to60": 5.6,
     "333Handling": 81,
-
     "666TopSpeed": 162,
     "6660to60": 5.3,
     "666Handling": 83,
-
     "996TopSpeed": 165,
-    "9960to60": 5.0,
+    "9960to60": 5,
     "996Handling": 83,
-
     "969TopSpeed": 165,
     "9690to60": 5.3,
     "969Handling": 87,
-
     "699TopSpeed": 162,
-    "6990to60": 5.0,
-    "699Handling": 87
+    "6990to60": 5,
+    "699Handling": 87,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

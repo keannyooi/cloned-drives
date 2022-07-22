@@ -9,9 +9,11 @@
     "handling": 93,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Servers Choice", "Supercar"],
+    "tags": [
+        "Servers Choice",
+        "Supercar"
+    ],
     "isPrize": false,
-
     "weight": 1516,
     "gc": "Low",
     "seatCount": 2,
@@ -21,34 +23,24 @@
     "enginePos": "Middle",
     "fuelType": "Petrol",
     "mra": 103.85,
-    "ola": 96.30,
+    "ola": 96.3,
     "description": "Card by Exist.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819900679086538782/CD_McLaren_720S_Spider.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819899724420218950/CD_McLaren_720S_Spider_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819899731509379123/CD_McLaren_720S_Spider_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819899746608087040/CD_McLaren_720S_Spider_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819899778552299540/CD_McLaren_720S_Spider_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819899763079249980/CD_McLaren_720S_Spider_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819899756729073714/CD_McLaren_720S_Spider_699.png",
-
     "333TopSpeed": 214,
     "3330to60": 2.7,
     "333Handling": 96,
-
     "666TopSpeed": 217,
     "6660to60": 2.5,
     "666Handling": 99,
-
     "996TopSpeed": 219,
     "9960to60": 2.4,
     "996Handling": 99,
-
     "969TopSpeed": 219,
     "9690to60": 2.5,
     "969Handling": 103,
-
     "699TopSpeed": 217,
     "6990to60": 2.4,
-    "699Handling": 103
+    "699Handling": 103,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

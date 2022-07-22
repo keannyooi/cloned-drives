@@ -66,7 +66,7 @@ module.exports = {
                             return intermission.sendMessage({ currentMessage: reactionMessage });
                         }
 
-                        const result = await race(message, playerCar, opponentCar, track, settings.enablegraphics);
+                        const result = await race(message, playerCar, opponentCar, track, settings.disablegraphics);
                         if (result > 0) {
                             streak++;
                             let reward = 0, rqBonus = 0, rqBonusBase = 0;
@@ -110,27 +110,31 @@ module.exports = {
                             highestStreak = streak;
                         }
 
-                        await randomize();
-                        await profileModel.updateOne({ userID: message.author.id }, {
-                            "$set": {
-                                "rrStats.streak": streak,
-                                "rrStats.highestStreak": highestStreak
-                            },
-                            unclaimedRewards
-                        });
+                        await Promise.all([
+                            randomize(),
+                            profileModel.updateOne({ userID: message.author.id }, {
+                                "$set": {
+                                    "rrStats.streak": streak,
+                                    "rrStats.highestStreak": highestStreak
+                                },
+                                unclaimedRewards
+                            })
+                        ]);
                         return bot.deleteID(message.author.id);
                     case "nop":
                         intermission.editEmbed({ title: "Action cancelled." });
                         return intermission.sendMessage({ currentMessage: reactionMessage });
                     case "skip":
                         streak = 0;
-                        await randomize();
-                        await profileModel.updateOne({ userID: message.author.id }, {
-                            "$set": {
-                                "rrStats.streak": 0,
-                            },
-                            unclaimedRewards: unclaimedRewards
-                        });
+                        await Promise.all([
+                            randomize(),
+                            profileModel.updateOne({ userID: message.author.id }, {
+                                "$set": {
+                                    "rrStats.streak": 0,
+                                },
+                                unclaimedRewards: unclaimedRewards
+                            })
+                        ]);
                         const skipMessage = new InfoMessage({
                             channel: message.channel,
                             title: "Successfully skipped race.",

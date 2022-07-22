@@ -1,4 +1,4 @@
-﻿{
+{
     "rq": 81,
     "make": "Audi",
     "model": "TT RS Coupe",
@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1483,
     "gc": "Low",
     "seatCount": 4,
@@ -23,32 +22,22 @@
     "mra": 68.63,
     "ola": 80,
     "description": "Watch out Audi R8, the most powerful Audi TT RS ever made is hot on your tail. Card by Lemon",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/840230303838502942/audi_tt_rs_coupe_2.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/840139489892368384/tt_racehud_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/840139579750350848/tt_racehud_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/840139676014739486/tt_racehud_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/840139962640891914/tt_racehud_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/840139865777897522/tt_racehud_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/840139768053891094/tt_racehud_699.png",
-
     "333TopSpeed": 158,
     "3330to60": 3.3,
     "333Handling": 93,
-
     "666TopSpeed": 162,
-    "6660to60": 3.2, 
+    "6660to60": 3.2,
     "666Handling": 96,
-
     "996TopSpeed": 165,
-    "9960to60": 3.0,
+    "9960to60": 3,
     "996Handling": 96,
-
     "969TopSpeed": 165,
     "9690to60": 3.2,
     "969Handling": 100,
-
     "699TopSpeed": 162,
-    "6990to60": 3.0,
-    "699Handling": 100
+    "6990to60": 3,
+    "699Handling": 100,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

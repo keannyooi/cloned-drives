@@ -9,9 +9,14 @@
     "handling": 96,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": ["Concept", "Servers Choice", "Track Day", "Unique", "Innovative"],
+    "tags": [
+        "Concept",
+        "Servers Choice",
+        "Track Day",
+        "Unique",
+        "Innovative"
+    ],
     "isPrize": true,
-
     "weight": 675,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +28,22 @@
     "mra": 118.28,
     "ola": 70.61,
     "description": "A very LIT car aka Sound of the Wind. Card by DodgeDemon",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/823954983849558056/2008_Mazda_Furai.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824287953304027146/furai.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824287960936874004/furai333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824287966850580570/furai666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824287992255348786/furai996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824287982433337364/furai969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824287974605848596/furai699.png",
-
     "333TopSpeed": 184,
     "3330to60": 3.1,
     "333Handling": 99,
-
     "666TopSpeed": 187,
-    "6660to60": 3.0,
+    "6660to60": 3,
     "666Handling": 102,
-
     "996TopSpeed": 190,
     "9960to60": 2.8,
     "996Handling": 102,
-
     "969TopSpeed": 190,
-    "9690to60": 3.0,
+    "9690to60": 3,
     "969Handling": 107,
-
     "699TopSpeed": 187,
     "6990to60": 2.8,
-    "699Handling": 107
+    "699Handling": 107,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

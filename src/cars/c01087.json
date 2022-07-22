@@ -9,9 +9,10 @@
     "handling": 86,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Supercar"],
+    "tags": [
+        "Supercar"
+    ],
     "isPrize": false,
-
     "weight": 1500,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +24,22 @@
     "mra": 77.58,
     "ola": 69.68,
     "description": "Faster version of the already fast Turbo. Card by Spence.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/824410415249096734/spence911turboSthingy.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824410569515728896/ts97.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824410573386809374/ts97333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824410580139114516/ts97666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824410608451059762/ts97996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824410598166495252/ts97969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824410590343725076/ts97699.png",
-
     "333TopSpeed": 189,
     "3330to60": 3.7,
     "333Handling": 89,
-
     "666TopSpeed": 192,
-    "6660to60": 3.5, 
+    "6660to60": 3.5,
     "666Handling": 92,
-
     "996TopSpeed": 194,
     "9960to60": 3.3,
     "996Handling": 92,
-
     "969TopSpeed": 194,
     "9690to60": 3.5,
     "969Handling": 95,
-
     "699TopSpeed": 192,
     "6990to60": 3.3,
-    "699Handling": 95
+    "699Handling": 95,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

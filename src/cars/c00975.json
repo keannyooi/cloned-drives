@@ -9,9 +9,10 @@
     "handling": 79,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Hot Hatch"],
+    "tags": [
+        "Hot Hatch"
+    ],
     "isPrize": false,
-
     "weight": 1340,
     "gc": "Low",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 74.71,
     "ola": 89.23,
     "description": "Bloody fast, innit?’. Card by Connor.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/842020668684894208/C.OpelAstraOPC.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/842104966981615656/C.OpelAstraOPC.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/842104972819955752/C.OpelAstraOPC-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/842104991682789386/C.OpelAstraOPC-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/842105048116887572/C.OpelAstraOPC-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/842105025676443698/C.OpelAstraOPC-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/842105008085925888/C.OpelAstraOPC-699.png",
-
     "333TopSpeed": 152,
     "3330to60": 6.2,
     "333Handling": 82,
-
     "666TopSpeed": 156,
     "6660to60": 5.9,
     "666Handling": 84,
-
     "996TopSpeed": 159,
     "9960to60": 5.5,
     "996Handling": 84,
-
     "969TopSpeed": 159,
     "9690to60": 5.9,
     "969Handling": 88,
-
     "699TopSpeed": 156,
     "6990to60": 5.5,
-    "699Handling": 88
+    "699Handling": 88,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -9,9 +9,11 @@
     "handling": 71,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Street Racer","The Japanese Odyssey"],
+    "tags": [
+        "Street Racer",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1478,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +25,22 @@
     "mra": 57.55,
     "ola": 70.92,
     "description": "Card by Keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/869498758424051712/nissan_300zx_turbo_targa_kouki.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/869218824120057876/kouki_turbo_targa_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/869218829581049896/kouki_turbo_targa_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/869218835268526110/kouki_turbo_targa_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/869218846035288094/kouki_turbo_targa_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/869218843757776976/kouki_turbo_targa_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/869218835553722368/kouki_turbo_targa_699.jpg",
-
     "333TopSpeed": 146,
     "3330to60": 6.7,
     "333Handling": 73,
-
     "666TopSpeed": 149,
     "6660to60": 6.4,
     "666Handling": 76,
-
     "996TopSpeed": 153,
-    "9960to60": 6.0,
+    "9960to60": 6,
     "996Handling": 76,
-
     "969TopSpeed": 153,
     "9690to60": 6.4,
     "969Handling": 79,
-
     "699TopSpeed": 149,
-    "6990to60": 6.0,
-    "699Handling": 79
+    "6990to60": 6,
+    "699Handling": 79,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

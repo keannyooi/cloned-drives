@@ -9,9 +9,10 @@
     "handling": 93,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Supercar"],
+    "tags": [
+        "Supercar"
+    ],
     "isPrize": false,
-
     "weight": 1640,
     "gc": "Low",
     "seatCount": 4,
@@ -20,35 +21,25 @@
     "abs": true,
     "enginePos": "Rear",
     "fuelType": "Petrol",
-    "mra": 80.00,
+    "mra": 80,
     "ola": 73.33,
     "description": "This was almost medium. Card by Connor",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/821089633898856468/S.Porsche911TurboS992.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821089822616715344/S.Porsche911TurboS.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821089842112233522/S.Porsche911TurboS-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821089861666078770/S.Porsche911TurboS-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821089913268994088/S.Porsche911TurboS-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821089900723830834/S.Porsche911TurboS-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821089880653168640/S.Porsche911TurboS-699.png",
-
     "333TopSpeed": 208,
     "3330to60": 2.3,
     "333Handling": 96,
-
     "666TopSpeed": 210,
-    "6660to60": 2.2, 
+    "6660to60": 2.2,
     "666Handling": 99,
-
     "996TopSpeed": 213,
-    "9960to60": 2.0,
+    "9960to60": 2,
     "996Handling": 99,
-
     "969TopSpeed": 213,
     "9690to60": 2.2,
     "969Handling": 103,
-
     "699TopSpeed": 210,
-    "6990to60": 2.0,
-    "699Handling": 103
+    "6990to60": 2,
+    "699Handling": 103,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

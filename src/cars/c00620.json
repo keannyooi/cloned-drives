@@ -9,9 +9,10 @@
     "handling": 75,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": ["Rest of The World"],
+    "tags": [
+        "Rest of The World"
+    ],
     "isPrize": false,
-
     "weight": 1505,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 54.76,
     "ola": 76.06,
     "description": "Top-of-the-line Seltos with AWD and nothing worth noting besides that. Card by Connor",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/850325850560659486/seltos.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820691638803759154/C.KiaSeltos.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820691646206574622/C.KiaSeltos-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820691662271414312/C.KiaSeltos-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820691706801291284/C.KiaSeltos-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820691683108454420/C.KiaSeltos-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820691674715127828/C.KiaSeltos-699.png",
-
     "333TopSpeed": 129,
     "3330to60": 6.6,
     "333Handling": 77,
-
     "666TopSpeed": 133,
     "6660to60": 6.2,
     "666Handling": 80,
-
-	"996TopSpeed": 137,
+    "996TopSpeed": 137,
     "9960to60": 5.9,
     "996Handling": 80,
-
     "969TopSpeed": 137,
     "9690to60": 6.2,
     "969Handling": 83,
-
-	"699TopSpeed": 133,
+    "699TopSpeed": 133,
     "6990to60": 5.9,
-    "699Handling": 83
+    "699Handling": 83,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -9,9 +9,12 @@
     "handling": 91,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Street Racer", "Track Day", "Supercar"],
+    "tags": [
+        "Street Racer",
+        "Track Day",
+        "Supercar"
+    ],
     "isPrize": false,
-
     "weight": 1761,
     "gc": "Low",
     "seatCount": 4,
@@ -21,34 +24,24 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 75.86,
-    "ola": 72.50,
+    "ola": 72.5,
     "description": "Card by Keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819392083370049577/nissan_gt-r_nismo.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819398454648373258/gt-r_nismo.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819398486097264705/gt-r_nismo_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819398494497407016/gt-r_nismo_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819398537434628146/gt-r_nismo_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819398523082506260/gt-r_nismo_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819398507336040488/gt-r_nismo_699.jpg",
-
     "333TopSpeed": 194,
     "3330to60": 2.8,
     "333Handling": 94,
-
     "666TopSpeed": 196,
     "6660to60": 2.6,
     "666Handling": 97,
-
     "996TopSpeed": 199,
     "9960to60": 2.5,
     "996Handling": 97,
-
     "969TopSpeed": 199,
     "9690to60": 2.6,
     "969Handling": 101,
-
     "699TopSpeed": 196,
     "6990to60": 2.5,
-    "699Handling": 101
+    "699Handling": 101,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

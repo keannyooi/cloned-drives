@@ -9,9 +9,10 @@
     "handling": 59,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Unique"],
+    "tags": [
+        "Unique"
+    ],
     "isPrize": true,
-
     "weight": 621,
     "gc": "Medium",
     "seatCount": 2,
@@ -20,35 +21,25 @@
     "abs": false,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 0.00,
+    "mra": 0,
     "ola": 52.55,
     "description": "Thought to be only two ever made, body made by the company behind the blackcab. Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/823589601598898186/TAAirline.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823590211912335420/air.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823590216325267547/air333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823590221303251014/air666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823590253259391047/air996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823590241293697084/air969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823590232049975316/air699.png",
-
     "333TopSpeed": 86,
     "3330to60": 21.9,
     "333Handling": 61,
-
     "666TopSpeed": 92,
     "6660to60": 20.8,
     "666Handling": 63,
-
     "996TopSpeed": 99,
     "9960to60": 19.6,
     "996Handling": 63,
-
     "969TopSpeed": 99,
     "9690to60": 20.8,
     "969Handling": 65,
-
     "699TopSpeed": 92,
     "6990to60": 19.6,
-    "699Handling": 65
+    "699Handling": 65,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

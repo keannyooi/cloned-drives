@@ -1,17 +1,23 @@
 {
     "rq": 64,
-    "make": ["JIC Magic", "Nissan"],
+    "make": [
+        "JIC Magic",
+        "Nissan"
+    ],
     "model": "350Z Nismo D1GP",
     "modelYear": 2004,
     "country": "JP",
     "topSpeed": 180,
-    "0to60": 5.0,
+    "0to60": 5,
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Motorsport", "Tuner","The Japanese Odyssey"],
+    "tags": [
+        "Motorsport",
+        "Tuner",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1347,
     "gc": "Low",
     "seatCount": 2,
@@ -21,34 +27,24 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 83.33,
-    "ola": 84.00,
+    "ola": 84,
     "description": "Yes, this is a D1GP car in the US. Card by Keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/869498303933468692/jic_magic_350z_nismo_d1gp.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/869218319331369010/jic_350z_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/869218323181731840/jic_350z_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/869218329926193222/jic_350z_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/869218342739779594/jic_350z_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/869218338138648617/jic_350z_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/869218335366201435/jic_350z_699.jpg",
-
     "333TopSpeed": 183,
     "3330to60": 4.8,
     "333Handling": 94,
-
     "666TopSpeed": 186,
     "6660to60": 4.5,
     "666Handling": 97,
-
     "996TopSpeed": 189,
     "9960to60": 4.3,
     "996Handling": 97,
-
     "969TopSpeed": 189,
     "9690to60": 4.5,
     "969Handling": 101,
-
     "699TopSpeed": 186,
     "6990to60": 4.3,
-    "699Handling": 101
+    "699Handling": 101,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

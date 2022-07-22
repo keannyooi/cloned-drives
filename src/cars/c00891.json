@@ -9,9 +9,11 @@
     "handling": 66,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Eco-Friendly", "Kei Car"],
+    "tags": [
+        "Eco-Friendly",
+        "Kei Car"
+    ],
     "isPrize": false,
-
     "weight": 1080,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +25,22 @@
     "mra": 7.77,
     "ola": 66.67,
     "description": "The electric kei car that has 2 french twins. Card by DodgeDemon",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/867384512958169088/i-miev.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/825422968469192755/imiev.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/825422974827757578/imiev1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/825422981085003836/imiev2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/825423006234705980/imiev996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/825422996772487218/imiev969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/825422992632709180/imiev699.png",
-
     "333TopSpeed": 87,
     "3330to60": 12.8,
     "333Handling": 68,
-
     "666TopSpeed": 93,
     "6660to60": 12.2,
     "666Handling": 70,
-
-	"996TopSpeed": 100,
+    "996TopSpeed": 100,
     "9960to60": 11.5,
     "996Handling": 70,
-
     "969TopSpeed": 100,
     "9690to60": 12.2,
     "969Handling": 73,
-
     "699TopSpeed": 93,
     "6990to60": 11.5,
-    "699Handling": 73
+    "699Handling": 73,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

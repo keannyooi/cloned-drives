@@ -9,9 +9,10 @@
     "handling": 87,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Super Sedan"],
+    "tags": [
+        "Super Sedan"
+    ],
     "isPrize": false,
-
     "weight": 1995,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +24,22 @@
     "mra": 83.72,
     "ola": 77.78,
     "description": "Hey Cadillac, About That World's Fastest Sedan Commercial... Card by Andu and Exist",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/857647082419781652/PanameraTurboSWarz.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/857647159750819851/PanameraTS.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/857647168428703774/PanameraTS-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/857647174133612574/PanameraTS-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/857647190465314887/PanameraTS-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/857647205958549504/PanameraTS-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/857647218123210782/PanameraTS-699.png",
-
     "333TopSpeed": 194,
     "3330to60": 3.4,
     "333Handling": 90,
-
     "666TopSpeed": 196,
-    "6660to60": 3.2, 
+    "6660to60": 3.2,
     "666Handling": 93,
-
     "996TopSpeed": 199,
     "9960to60": 3.1,
     "996Handling": 93,
-
     "969TopSpeed": 199,
     "9690to60": 3.2,
     "969Handling": 97,
-
     "699TopSpeed": 196,
     "6990to60": 3.1,
-    "699Handling": 97
+    "699Handling": 97,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

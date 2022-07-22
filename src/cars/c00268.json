@@ -9,9 +9,10 @@
     "handling": 80,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Muscle Car"],
+    "tags": [
+        "Muscle Car"
+    ],
     "isPrize": false,
-
     "weight": 1520,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +24,22 @@
     "mra": 69.86,
     "ola": 84.31,
     "description": "This special edition corvette marks the end of the C4 generation. 1000 GSs were made. Card by Spence.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/846975326411292712/image0.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/846975391720800256/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/846975410490441738/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/846975427380510740/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/846975481542213632/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/846975468003655700/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/846975446965026836/image0.jpg",
-
     "333TopSpeed": 171,
     "3330to60": 4.8,
     "333Handling": 83,
-
     "666TopSpeed": 174,
     "6660to60": 4.6,
     "666Handling": 85,
-
     "996TopSpeed": 177,
     "9960to60": 4.3,
     "996Handling": 85,
-
     "969TopSpeed": 177,
     "9690to60": 4.6,
     "969Handling": 89,
-
     "699TopSpeed": 174,
     "6990to60": 4.3,
-    "699Handling": 89
+    "699Handling": 89,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

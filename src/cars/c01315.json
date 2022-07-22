@@ -9,9 +9,11 @@
     "handling": 86,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Concept", "Unique"],
+    "tags": [
+        "Concept",
+        "Unique"
+    ],
     "isPrize": false,
-
     "weight": 1350,
     "gc": "Low",
     "seatCount": 4,
@@ -23,32 +25,22 @@
     "mra": 65.38,
     "ola": 76.47,
     "description": "A very unique GT86. Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820707795383877662/GT86Shooting.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820708223538823209/gt86s.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820708228685627404/gt86s333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820708235379212338/gt86s666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820708259609706516/gt86s996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820708250919895070/gt86s969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820708242925027378/gt86s699.png",
-
     "333TopSpeed": 140,
     "3330to60": 6.5,
     "333Handling": 89,
-
     "666TopSpeed": 144,
-    "6660to60": 6.1, 
+    "6660to60": 6.1,
     "666Handling": 92,
-
     "996TopSpeed": 147,
     "9960to60": 5.8,
     "996Handling": 92,
-
     "969TopSpeed": 147,
     "9690to60": 6.1,
     "969Handling": 95,
-
     "699TopSpeed": 144,
     "6990to60": 5.8,
-    "699Handling": 95
+    "699Handling": 95,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

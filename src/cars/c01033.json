@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1361,
     "gc": "Medium",
     "seatCount": 5,
@@ -20,35 +19,25 @@
     "abs": false,
     "enginePos": "Front",
     "fuelType": "Diesel",
-    "mra": 0.00,
+    "mra": 0,
     "ola": 61.54,
     "description": "One of the few Peugeots that crossed the pond. Card by Corentin",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/865598986874388500/baguette.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824811981746733087/504d_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824811988156547072/504d_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824811998743232602/504d_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824812024251940884/504d_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824812014953037854/504d_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824812005553864764/504d_699.jpg",
-
     "333TopSpeed": 90,
     "3330to60": 18.5,
     "333Handling": 62,
-
     "666TopSpeed": 96,
     "6660to60": 17.6,
     "666Handling": 64,
-
-	"996TopSpeed": 103,
+    "996TopSpeed": 103,
     "9960to60": 16.6,
     "996Handling": 64,
-
     "969TopSpeed": 103,
     "9690to60": 17.6,
     "969Handling": 67,
-
     "699TopSpeed": 96,
     "6990to60": 16.6,
-    "699Handling": 67
+    "699Handling": 67,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -1,4 +1,4 @@
-﻿{
+{
     "rq": 23,
     "make": "Mitsubishi",
     "model": "Mirage G4",
@@ -11,10 +11,9 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 960,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Sedan",
     "tcs": true,
     "abs": true,
@@ -23,32 +22,22 @@
     "mra": 27.94,
     "ola": 67.19,
     "description": "Cheapest car in the USA standing proud. Card by AGE ",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/823499778754609182/MirageG4.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823499874968010762/MirG4.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823499882114973756/MirG4-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823499887135031347/MirG4-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823499909692784640/MirG4-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823499902918328350/MirG4-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823499895011934239/MirG4-699.png",
-
     "333TopSpeed": 105,
     "3330to60": 11.9,
     "333Handling": 72,
-
     "666TopSpeed": 110,
-    "6660to60": 11.3, 
+    "6660to60": 11.3,
     "666Handling": 75,
-
     "996TopSpeed": 116,
     "9960to60": 10.6,
     "996Handling": 75,
-
     "969TopSpeed": 116,
     "9690to60": 11.3,
     "969Handling": 78,
-
     "699TopSpeed": 110,
     "6990to60": 10.6,
-    "699Handling": 78
+    "699Handling": 78,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

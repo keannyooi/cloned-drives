@@ -9,9 +9,10 @@
     "handling": 68,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1689,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 59.57,
     "ola": 69.05,
     "description": "Card by Macan.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/869483839238582282/RAV4_TRD_Off-Road_20.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/869484824287662080/Toyota_RAV4_TRD_Off-Road_2020_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/869484829945765899/Toyota_RAV4_TRD_Off-Road_2020_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/869484834655993886/Toyota_RAV4_TRD_Off-Road_2020_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/869484849952616458/Toyota_RAV4_TRD_Off-Road_2020_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/869484846400036974/Toyota_RAV4_TRD_Off-Road_2020_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/869484838774788136/Toyota_RAV4_TRD_Off-Road_2020_699.png",
-
     "333TopSpeed": 123,
-    "3330to60": 8.0,
+    "3330to60": 8,
     "333Handling": 70,
-
     "666TopSpeed": 128,
     "6660to60": 7.6,
     "666Handling": 72,
-
     "996TopSpeed": 132,
     "9960to60": 7.1,
     "996Handling": 72,
-
     "969TopSpeed": 132,
     "9690to60": 7.6,
     "969Handling": 75,
-
     "699TopSpeed": 128,
     "6990to60": 7.1,
-    "699Handling": 75
+    "699Handling": 75,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

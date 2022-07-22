@@ -9,13 +9,14 @@
     "handling": 74,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Hot Hatch","The Japanese Odyssey"],
+    "tags": [
+        "Hot Hatch",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
-
     "weight": 1010,
     "gc": "Medium",
-    "seatCount":2,
+    "seatCount": 2,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": false,
@@ -24,33 +25,22 @@
     "mra": 52.28,
     "ola": 75.44,
     "description": "Suck it america, you never got this VTec power. Card by Andu.",
-
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/947540205810876496/CRX16iVT.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/947540934671868025/CRX16VT.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/947540948500504626/CRX16VT-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/947540959925780490/CRX16VT-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/947540972785512469/CRX16VT-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/947540988304449607/CRX16VT-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/947541003844321400/CRX16VT-669.png",
-
     "333TopSpeed": 140,
     "3330to60": 7.1,
     "333Handling": 76,
-
     "666TopSpeed": 144,
-    "6660to60": 6.8, 
+    "6660to60": 6.8,
     "666Handling": 79,
-
     "996TopSpeed": 147,
     "9960to60": 6.4,
     "996Handling": 79,
-
     "969TopSpeed": 147,
     "9690to60": 6.8,
     "969Handling": 82,
-
     "699TopSpeed": 144,
     "6990to60": 6.4,
-    "699Handling": 82
+    "699Handling": 82,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

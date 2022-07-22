@@ -1,17 +1,19 @@
 {
     "rq": 54,
-    "make": ["Range Rover", "Land Rover"],
+    "make": [
+        "Range Rover",
+        "Land Rover"
+    ],
     "model": "Velar D240 SE",
     "modelYear": 2017,
     "country": "GB",
     "topSpeed": 135,
-    "0to60": 7.0,
+    "0to60": 7,
     "handling": 73,
     "driveType": "4WD",
     "tyreType": "All-Surface",
     "tags": [],
     "isPrize": false,
-
     "weight": 1911,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +25,22 @@
     "mra": 44.03,
     "ola": 74.29,
     "description": "Card by Macan.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/949494494917697606/Range_Rover_Velar_D240_SE_17.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/949495643242635284/Range_Rover_Velar_D240_SE_17_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/949495665149501440/Range_Rover_Velar_D240_SE_17_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/949495718459105290/Range_Rover_Velar_D240_SE_17_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/949495825350922290/Range_Rover_Velar_D240_SE_17_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/949495779985342504/Range_Rover_Velar_D240_SE_17_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/949495752764309504/Range_Rover_Velar_D240_SE_17_699.png",
-
     "333TopSpeed": 139,
     "3330to60": 6.7,
     "333Handling": 75,
-
     "666TopSpeed": 143,
     "6660to60": 6.3,
     "666Handling": 78,
-
     "996TopSpeed": 147,
-    "9960to60": 6.0,
+    "9960to60": 6,
     "996Handling": 78,
-
     "969TopSpeed": 147,
     "9690to60": 6.3,
     "969Handling": 81,
-
     "699TopSpeed": 143,
-    "6990to60": 6.0,
-    "699Handling": 81
+    "6990to60": 6,
+    "699Handling": 81,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

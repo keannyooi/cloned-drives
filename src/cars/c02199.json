@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1115,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +22,22 @@
     "mra": 68.52,
     "ola": 70.27,
     "description": "Card by Tom.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/950084089598320760/Lotus_Exige_Sport_350_Roadster_2016.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/950085045534720050/350r_111.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/950085052958654544/350r_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/950085059304628324/350r_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/950085079269515304/350r_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/950085072650907739/350r_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/950085062794289272/350r_699.jpg",
-
     "333TopSpeed": 149,
     "3330to60": 3.5,
     "333Handling": 93,
-
     "666TopSpeed": 152,
     "6660to60": 3.3,
     "666Handling": 96,
-
     "996TopSpeed": 156,
     "9960to60": 3.1,
     "996Handling": 96,
-
     "969TopSpeed": 156,
     "9690to60": 3.3,
     "969Handling": 100,
-
     "699TopSpeed": 152,
     "6990to60": 3.1,
-    "699Handling": 100
+    "699Handling": 100,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

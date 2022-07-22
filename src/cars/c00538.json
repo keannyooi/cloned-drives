@@ -9,9 +9,10 @@
     "handling": 70,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Eco-Friendly"],
+    "tags": [
+        "Eco-Friendly"
+    ],
     "isPrize": false,
-
     "weight": 1469,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 40.02,
     "ola": 72.09,
     "description": "Only in the USA and Japan can you lease this fun and responsive EV hatchback. Card by keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/865584959337922570/honda_fit_ev.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/840048254086807552/fit_ev_000.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/840048260516151357/fit_ev_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/840048266305339402/fit_ev_666.jpg",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/840048281182797854/fit_ev_996.jpg",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/840048275779747900/fit_ev_969.jpg",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/840048271559884810/fit_ev_699.jpg",
-
     "333TopSpeed": 97,
     "3330to60": 8.2,
     "333Handling": 72,
-
     "666TopSpeed": 102,
     "6660to60": 7.7,
     "666Handling": 75,
-
     "996TopSpeed": 108,
     "9960to60": 7.3,
     "996Handling": 75,
-
     "969TopSpeed": 108,
     "9690to60": 7.7,
     "969Handling": 78,
-
     "699TopSpeed": 102,
     "6990to60": 7.3,
-    "699Handling": 78
+    "699Handling": 78,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

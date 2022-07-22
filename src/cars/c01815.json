@@ -1,6 +1,9 @@
 {
     "rq": 64,
-    "make": ["Prince", "Nissan"],
+    "make": [
+        "Prince",
+        "Nissan"
+    ],
     "model": "R380A-I",
     "modelYear": 1966,
     "country": "JP",
@@ -9,9 +12,12 @@
     "handling": 78,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Unique", "Motorsport","The Japanese Odyssey"],
+    "tags": [
+        "Unique",
+        "Motorsport",
+        "The Japanese Odyssey"
+    ],
     "isPrize": true,
-
     "weight": 620,
     "gc": "Low",
     "seatCount": 1,
@@ -23,32 +29,22 @@
     "mra": 69.49,
     "ola": 102.43,
     "description": "Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/969546651733741578/R380AI.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/969547121684516964/R380AI.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/969547127049044018/R380AI1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/969547133852221460/R380AI2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/969547155339636826/R380AI996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/969547147303354368/R380AI969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/969547140533719060/R380AI699.png",
-
     "333TopSpeed": 166,
     "3330to60": 3.9,
     "333Handling": 81,
-
     "666TopSpeed": 169,
     "6660to60": 3.7,
     "666Handling": 83,
-
     "996TopSpeed": 173,
     "9960to60": 3.5,
     "996Handling": 83,
-
     "969TopSpeed": 173,
     "9690to60": 3.7,
     "969Handling": 87,
-
     "699TopSpeed": 169,
     "6990to60": 3.5,
-    "699Handling": 87
+    "699Handling": 87,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

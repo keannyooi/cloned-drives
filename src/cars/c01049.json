@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1665,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +22,22 @@
     "mra": 59.46,
     "ola": 79.45,
     "description": "Card by Mcnuggets.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/848322522277216256/gtp.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/848320669393354832/gtp_stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/848320703040323634/gtp_1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/848320729417646150/gtp_2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/848320812480987186/gtp_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/848320768881721414/gtp_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/848320755339231243/gtp_233.png",
-
     "333TopSpeed": 142,
     "3330to60": 6.3,
     "333Handling": 76,
-
     "666TopSpeed": 146,
     "6660to60": 5.9,
     "666Handling": 79,
-
     "996TopSpeed": 149,
     "9960to60": 5.6,
     "996Handling": 79,
-
     "969TopSpeed": 149,
     "9690to60": 5.9,
     "969Handling": 82,
-
     "699TopSpeed": 146,
     "6990to60": 5.6,
-    "699Handling": 82
+    "699Handling": 82,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

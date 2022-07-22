@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1580,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,33 +22,22 @@
     "mra": 73.56,
     "ola": 75,
     "description": "The Camry is the anti-sport sedan, so despite the SE badge, this refined family car can't be persuaded to play. Card by Connor",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819652401656496169/B.ToyotaCamrySEV6.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819652492588482570/B.ToyotaCamrySEV6.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819652503813357599/B.ToyotaCamrySEV6-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819652514310914128/B.ToyotaCamrySEV6-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819652537392037888/B.ToyotaCamrySEV6-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819652528592781322/B.ToyotaCamrySEV6-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819652523735384084/B.ToyotaCamrySEV6-699.png",
-
     "333TopSpeed": 147,
     "3330to60": 6.1,
     "333Handling": 74,
-
     "666TopSpeed": 150,
-    "6660to60": 5.8, 
+    "6660to60": 5.8,
     "666Handling": 77,
-
     "996TopSpeed": 154,
     "9960to60": 5.4,
     "996Handling": 77,
-
     "969TopSpeed": 146,
     "9690to60": 5.8,
     "969Handling": 80,
-
     "699TopSpeed": 150,
     "6990to60": 5.4,
-    "699Handling": 80
-
+    "699Handling": 80,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

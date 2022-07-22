@@ -9,9 +9,10 @@
     "handling": 76,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Eco-Friendly"],
+    "tags": [
+        "Eco-Friendly"
+    ],
     "isPrize": true,
-
     "weight": 1672,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 76.47,
     "ola": 86.54,
     "description": "An easter egg lets you doodle on the Model 3's screen, and send your masterpiece to Tesla for review. I wonder what Jeremy Clarkson would do with this... Card by keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/858544350014865419/tesla_model_3_mid_range.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/858541305441026058/model_3_mid_000.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/858541312797442078/model_3_mid_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/858541319433224212/model_3_mid_666.jpg",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/858541338521108510/model_3_mid_996.jpg",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/858541332170670080/model_3_mid_969.jpg",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/858541324056002570/model_3_mid_699.jpg",
-
     "333TopSpeed": 144,
     "3330to60": 4.9,
     "333Handling": 79,
-
     "666TopSpeed": 147,
     "6660to60": 4.7,
     "666Handling": 81,
-
     "996TopSpeed": 151,
     "9960to60": 4.4,
     "996Handling": 81,
-
     "969TopSpeed": 151,
     "9690to60": 4.7,
     "969Handling": 84,
-
     "699TopSpeed": 147,
     "6990to60": 4.4,
-    "699Handling": 84
+    "699Handling": 84,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

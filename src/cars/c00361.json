@@ -9,9 +9,10 @@
     "handling": 72,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Muscle Car"],
+    "tags": [
+        "Muscle Car"
+    ],
     "isPrize": false,
-
     "weight": 1202,
     "gc": "Medium",
     "seatCount": 4,
@@ -20,35 +21,25 @@
     "abs": false,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 49.70,
+    "mra": 49.7,
     "ola": 70.73,
     "description": "Adding a turbo to Dodge's Daytona sports coupe results in America's first legitimate front-wheel-drive muscle car. Card by Johnny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/849647361369047040/Dodge-Daytona-Turbo-Z.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/849647235426811904/Dodge-Daytona-Turbo-Z.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/849647239580090438/Dodge-Daytona-Turbo-Z-1-star.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/849647242365501516/Dodge-Daytona-Turbo-Z-2-star.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/849647265517273108/Dodge-Daytona-Turbo-Z-332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/849647255072800828/Dodge-Daytona-Turbo-Z-323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/849647249062625350/Dodge-Daytona-Turbo-Z-233.png",
-
     "333TopSpeed": 132,
     "3330to60": 7.8,
     "333Handling": 74,
-
     "666TopSpeed": 136,
     "6660to60": 7.4,
     "666Handling": 77,
-
     "996TopSpeed": 140,
-    "9960to60": 7.0,
+    "9960to60": 7,
     "996Handling": 77,
-
     "969TopSpeed": 140,
     "9690to60": 7.4,
     "969Handling": 80,
-
     "699TopSpeed": 136,
-    "6990to60": 7.0,
-    "699Handling": 80
+    "6990to60": 7,
+    "699Handling": 80,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

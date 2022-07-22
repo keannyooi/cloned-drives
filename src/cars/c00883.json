@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1195,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +22,22 @@
     "mra": 52.46,
     "ola": 84.38,
     "description": "The newer version of the newer version of the OG hot hatchback. By Bnuuy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819940437196275752/minicoopers.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819940501083521065/mini.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819940505696862218/mini333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819940511908495390/mini666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819940541273735208/mini996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819940530112167956/mini969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819940521639542794/mini699.png",
-
     "333TopSpeed": 144,
     "3330to60": 6.1,
     "333Handling": 80,
-
     "666TopSpeed": 147,
     "6660to60": 5.8,
     "666Handling": 82,
-
     "996TopSpeed": 151,
     "9960to60": 5.4,
     "996Handling": 82,
-
     "969TopSpeed": 151,
     "9690to60": 5.8,
     "969Handling": 85,
-
     "699TopSpeed": 147,
     "6990to60": 5.4,
-    "699Handling": 85
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

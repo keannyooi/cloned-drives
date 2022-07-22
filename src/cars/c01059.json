@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1370,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +22,22 @@
     "mra": 69.22,
     "ola": 74.66,
     "description": "An air-cooled Porsche 911 will always be desirable. Card by Havvy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820713746678415360/Porsche911Carrera993.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820713798318293002/000_993.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820713808799465512/111_993.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820713810372853810/222_993.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820713825179140146/332_993.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820713820347039794/323_993.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820713816358125578/233_993.png",
-
     "333TopSpeed": 171,
     "3330to60": 4.8,
     "333Handling": 83,
-
     "666TopSpeed": 174,
-    "6660to60": 4.6, 
+    "6660to60": 4.6,
     "666Handling": 85,
-
     "996TopSpeed": 177,
     "9960to60": 4.3,
     "996Handling": 85,
-
     "969TopSpeed": 177,
     "9690to60": 4.6,
     "969Handling": 89,
-
     "699TopSpeed": 174,
     "6990to60": 4.3,
-    "699Handling": 89
+    "699Handling": 89,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

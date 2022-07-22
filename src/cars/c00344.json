@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1280,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 46.53,
     "ola": 73.68,
     "description": "Card by Based",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/824899442360451082/AvengerEs.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824899707758968902/AvengerEs.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824899713823277076/AvengerEs1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824899720929476629/AvengerEs2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824899742865424404/AvengerEs996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824899735537844224/AvengerEs969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824899729493983232/AvengerEs699.png",
-
     "333TopSpeed": 127,
     "3330to60": 9.2,
     "333Handling": 76,
-
     "666TopSpeed": 131,
     "6660to60": 8.6,
     "666Handling": 79,
-
     "996TopSpeed": 136,
     "9960to60": 8.1,
     "996Handling": 79,
-
-	"969TopSpeed": 136,
+    "969TopSpeed": 136,
     "9690to60": 8.6,
     "969Handling": 82,
-
-	"699TopSpeed": 131,
+    "699TopSpeed": 131,
     "6990to60": 8.1,
-    "699Handling": 82
+    "699Handling": 82,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

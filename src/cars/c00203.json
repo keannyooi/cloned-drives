@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 2363,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 66.07,
     "ola": 75.68,
     "description": "BMW's M division placed an M5 engine into an X6 because yes. Card by bnuuy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819596516808720394/X6Mcomp.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819596635570438144/x6m.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819596653261488138/x6m333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819596663332798484/x6m666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819596709478268958/x6m996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819596699290828810/x6m969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819596679337476166/x6m699.png",
-
     "333TopSpeed": 158,
     "3330to60": 3.1,
     "333Handling": 90,
-
     "666TopSpeed": 162,
-    "6660to60": 3.0,
+    "6660to60": 3,
     "666Handling": 93,
-
     "996TopSpeed": 165,
     "9960to60": 2.8,
     "996Handling": 93,
-
-	"969TopSpeed": 165,
-    "9690to60": 3.0,
+    "969TopSpeed": 165,
+    "9690to60": 3,
     "969Handling": 97,
-
     "699TopSpeed": 162,
     "6990to60": 2.8,
-    "699Handling": 97
+    "699Handling": 97,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1660,
     "gc": "Low",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 64.32,
     "ola": 70.86,
     "description": "Tap dancing in Gucci flip-flops. Card by Keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819389830500450304/alfa_romeo_giulia_2.0t_q4.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819507571957170196/giulia_q4_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819507575702945822/giulia_q4_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819507583013486602/giulia_q4_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819507625237807134/giulia_q4_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819507614496194570/giulia_q4_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819507601560961054/giulia_q4_699.jpg",
-
     "333TopSpeed": 153,
     "3330to60": 5.1,
     "333Handling": 73,
-
     "666TopSpeed": 157,
     "6660to60": 4.9,
     "666Handling": 76,
-
     "996TopSpeed": 160,
     "9960to60": 4.6,
     "996Handling": 76,
-
-	"969TopSpeed": 160,
+    "969TopSpeed": 160,
     "9690to60": 4.9,
     "969Handling": 79,
-
-	"699TopSpeed": 157,
+    "699TopSpeed": 157,
     "6990to60": 4.6,
-    "699Handling": 79
+    "699Handling": 79,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

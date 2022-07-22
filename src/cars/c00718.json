@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 2064,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 69.74,
     "ola": 67.92,
     "description": "Silky American luxury. With a British name. Card by Macan.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/828047584932659200/Continental_3.0T_Reserve_AWD_17.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/828047703824007228/Lincoln_Continental_3.0T_Reserve_AWD_2017_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/828047708333146192/Lincoln_Continental_3.0T_Reserve_AWD_2017_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/828047712120995880/Lincoln_Continental_3.0T_Reserve_AWD_2017_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/828047741250830396/Lincoln_Continental_3.0T_Reserve_AWD_2017_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/828047732434010142/Lincoln_Continental_3.0T_Reserve_AWD_2017_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/828047726167457792/Lincoln_Continental_3.0T_Reserve_AWD_2017_699.png",
-
     "333TopSpeed": 149,
-    "3330to60": 5.0,
+    "3330to60": 5,
     "333Handling": 79,
-
     "666TopSpeed": 152,
     "6660to60": 4.8,
     "666Handling": 81,
-
     "996TopSpeed": 156,
     "9960to60": 4.5,
     "996Handling": 81,
-
     "969TopSpeed": 156,
     "9690to60": 4.8,
     "969Handling": 84,
-
     "699TopSpeed": 152,
     "6990to60": 4.5,
-    "699Handling": 84
+    "699Handling": 84,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

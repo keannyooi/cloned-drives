@@ -9,9 +9,10 @@
     "handling": 84,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": ["Eco-Friendly"],
+    "tags": [
+        "Eco-Friendly"
+    ],
     "isPrize": false,
-
     "weight": 2215,
     "gc": "Low",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 71.15,
     "ola": 89.19,
     "description": "No crazy acceleration, but well prepared for really far travels. Card by keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/858544850588270622/tesla_model_s_long_range_plus.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/858542521596510239/model_s_longrange_000.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/858542529075216434/model_s_longrange_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/858542533398626304/model_s_longrange_666.jpg",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/858542554000916510/model_s_longrange_996.jpg",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/858542549215871006/model_s_longrange_969.jpg",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/858542537010708490/model_s_longrange_699.jpg",
-
     "333TopSpeed": 158,
     "3330to60": 3.5,
     "333Handling": 87,
-
     "666TopSpeed": 162,
     "6660to60": 3.3,
     "666Handling": 90,
-
     "996TopSpeed": 165,
     "9960to60": 3.1,
     "996Handling": 90,
-
     "969TopSpeed": 165,
     "9690to60": 3.3,
     "969Handling": 93,
-
     "699TopSpeed": 162,
     "6990to60": 3.1,
-    "699Handling": 93
+    "699Handling": 93,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

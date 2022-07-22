@@ -1,6 +1,8 @@
 {
     "rq": 49,
-    "make": ["Mercedes-Benz"],
+    "make": [
+        "Mercedes-Benz"
+    ],
     "model": "W125 Rekordwagen",
     "modelYear": 1937,
     "country": "DE",
@@ -9,9 +11,12 @@
     "handling": 33,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Unique", "Ultra Expensive", "Innovative"],
+    "tags": [
+        "Unique",
+        "Ultra Expensive",
+        "Innovative"
+    ],
     "isPrize": true,
-
     "weight": 1185,
     "gc": "Low",
     "seatCount": 1,
@@ -23,32 +28,22 @@
     "mra": 121.21,
     "ola": 105,
     "description": "In 1937, Piloted by Otto Wilhelm Rudolf Caracciola, this thing hit 269mph on a german autobahn, a record which was only broken in 2017 by a Koenigsegg Agera RS. Card by havvy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/861965959216365599/unknown.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/861966026929471518/rekord_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/861966033094049832/rekord_111.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/861966038983114792/rekord_222.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/861966060546949190/rekord_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/861966055605796864/rekord_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/861966050329493514/rekord_233.png",
-
     "333TopSpeed": 271,
     "3330to60": 4.3,
     "333Handling": 34,
-
     "666TopSpeed": 273,
     "6660to60": 4.1,
     "666Handling": 35,
-
     "996TopSpeed": 275,
     "9960to60": 3.8,
     "996Handling": 35,
-
     "969TopSpeed": 275,
     "9690to60": 4.1,
     "969Handling": 37,
-
     "699TopSpeed": 273,
     "6990to60": 3.8,
-    "699Handling": 37
+    "699Handling": 37,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

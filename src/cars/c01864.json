@@ -9,9 +9,10 @@
     "handling": 69,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1567,
     "gc": "Medium",
     "seatCount": 5,
@@ -20,35 +21,25 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 68.00,
+    "mra": 68,
     "ola": 71.53,
     "description": "Not fast, not furious, and bringing forwards immense mediocrity that Sharknado failed to provide. Card by Mcnuggets.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/882731996017721474/avalon_00.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/882729248522113044/avalon_xls_new_stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/882729379195670578/avalon_xls_new_1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/882729411072393256/avalon_xls_new_2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/882729494861996052/avalon_xls_new_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/882729458337976400/avalon_xls_new_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/882729431280529478/avalon_xls_new_233.png",
-
     "333TopSpeed": 134,
     "3330to60": 8.1,
     "333Handling": 71,
-
     "666TopSpeed": 138,
     "6660to60": 7.7,
     "666Handling": 74,
-
     "996TopSpeed": 142,
     "9960to60": 7.2,
     "996Handling": 74,
-
     "969TopSpeed": 142,
     "9690to60": 7.7,
     "969Handling": 77,
-
     "699TopSpeed": 138,
     "6990to60": 7.2,
-    "699Handling": 77
+    "699Handling": 77,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

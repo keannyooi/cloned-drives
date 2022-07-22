@@ -9,9 +9,11 @@
     "handling": 77,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Street Racer","The Japanese Odyssey"],
+    "tags": [
+        "Street Racer",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1360,
     "gc": "Medium",
     "seatCount": 2,
@@ -23,32 +25,22 @@
     "mra": 55.28,
     "ola": 73.53,
     "description": "Card by DodgeDemon",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/971796886832955523/Mazda_Savanna_RX-7_Cabrio_1987.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/971801879057141770/Mazda_Savanna_RX-7_Cabrio_1987_H000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/971801900460691526/Mazda_Savanna_RX-7_Cabrio_1987_H111.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/971801917183369236/Mazda_Savanna_RX-7_Cabrio_1987_H222.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/971801990579499088/Mazda_Savanna_RX-7_Cabrio_1987_H332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/971801969213722654/Mazda_Savanna_RX-7_Cabrio_1987_H323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/971801934711377970/Mazda_Savanna_RX-7_Cabrio_1987_H233.png",
-
     "333TopSpeed": 150,
     "3330to60": 6.5,
     "333Handling": 80,
-
     "666TopSpeed": 153,
     "6660to60": 6.1,
     "666Handling": 82,
-
     "996TopSpeed": 157,
     "9960to60": 5.8,
     "996Handling": 82,
-
     "969TopSpeed": 157,
     "9690to60": 6.1,
     "969Handling": 85,
-
     "699TopSpeed": 153,
     "6990to60": 5.8,
-    "699Handling": 85
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

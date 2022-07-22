@@ -1,6 +1,9 @@
 {
     "rq": 61,
-    "make": ["Maybach", "Mercedes-Benz"],
+    "make": [
+        "Maybach",
+        "Mercedes-Benz"
+    ],
     "model": "57",
     "modelYear": 2002,
     "country": "DE",
@@ -9,9 +12,10 @@
     "handling": 68,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Sleeper"],
+    "tags": [
+        "Sleeper"
+    ],
     "isPrize": false,
-
     "weight": 2735,
     "gc": "Medium",
     "seatCount": 4,
@@ -21,34 +25,24 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 81.63,
-    "ola": 70.00,
+    "ola": 70,
     "description": "The base luxury model offered on Maybach's reawakening. Card by DodgeDemon.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/828157954401894420/2002_Maybach_57.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/828158179291430952/Maybach_57_2002_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/828158187161124864/Maybach_57_2002_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/828158299664810054/Maybach_57_2002_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/828158467910533140/Maybach_57_2002_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/828158459894562817/Maybach_57_2002_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/828158304936001566/Maybach_57_2002_699.png",
-
     "333TopSpeed": 158,
     "3330to60": 4.7,
     "333Handling": 70,
-
     "666TopSpeed": 162,
     "6660to60": 4.4,
     "666Handling": 72,
-
-	  "996TopSpeed": 165,
+    "996TopSpeed": 165,
     "9960to60": 4.2,
     "996Handling": 72,
-
     "969TopSpeed": 165,
     "9690to60": 4.4,
     "969Handling": 75,
-
     "699TopSpeed": 162,
     "6990to60": 4.2,
-    "699Handling": 75
+    "699Handling": 75,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -9,9 +9,10 @@
     "handling": 75,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Hot Hatch"],
+    "tags": [
+        "Hot Hatch"
+    ],
     "isPrize": true,
-
     "weight": 1340,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +24,22 @@
     "mra": 49.36,
     "ola": 73.04,
     "description": "The rally champion but in street form. Card by Havvy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/821875895853776926/LanciaDeltaHFIntegraleEvoII.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821875964577185792/000_delta.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821875969371537419/111_delta.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821875973028446258/222_delta.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821875989868838922/332_delta.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821875983446442054/323_delta.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821875979034427402/233_delta.png",
-
     "333TopSpeed": 141,
     "3330to60": 5.5,
     "333Handling": 77,
-
     "666TopSpeed": 145,
     "6660to60": 5.2,
     "666Handling": 80,
-
-	"996TopSpeed": 148,
+    "996TopSpeed": 148,
     "9960to60": 4.9,
     "996Handling": 80,
-
     "969TopSpeed": 148,
     "9690to60": 5.2,
     "969Handling": 83,
-
-	"699TopSpeed": 145,
+    "699TopSpeed": 145,
     "6990to60": 4.9,
-    "699Handling": 83
+    "699Handling": 83,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

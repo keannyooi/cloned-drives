@@ -5,13 +5,14 @@
     "modelYear": 2019,
     "country": "JP",
     "topSpeed": 130,
-    "0to60": 7.0,
+    "0to60": 7,
     "handling": 72,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 2075,
     "gc": "High",
     "seatCount": 7,
@@ -20,35 +21,25 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 61.40,
+    "mra": 61.4,
     "ola": 77.14,
     "description": "Card by Macan.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/870246247208980490/Ascent_Limited_19.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/870246944063258644/Subaru_Ascent_Limited_2019_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/870246947246702642/Subaru_Ascent_Limited_2019_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/870246949096415292/Subaru_Ascent_Limited_2019_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/870246966330789898/Subaru_Ascent_Limited_2019_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/870246964414009354/Subaru_Ascent_Limited_2019_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/870246955845042196/Subaru_Ascent_Limited_2019_699.png",
-
     "333TopSpeed": 134,
     "3330to60": 6.7,
     "333Handling": 74,
-
     "666TopSpeed": 138,
     "6660to60": 6.3,
     "666Handling": 77,
-
     "996TopSpeed": 142,
-    "9960to60": 6.0,
+    "9960to60": 6,
     "996Handling": 77,
-
     "969TopSpeed": 142,
     "9690to60": 6.3,
     "969Handling": 80,
-
     "699TopSpeed": 138,
-    "6990to60": 6.0,
-    "699Handling": 80
+    "6990to60": 6,
+    "699Handling": 80,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

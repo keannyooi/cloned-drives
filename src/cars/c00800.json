@@ -9,9 +9,15 @@
     "handling": 84,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Ultra Expensive", "Style Icon", "Unique", "Innovative", "Supercar", "Servers Choice"],
+    "tags": [
+        "Ultra Expensive",
+        "Style Icon",
+        "Unique",
+        "Innovative",
+        "Supercar",
+        "Servers Choice"
+    ],
     "isPrize": false,
-
     "weight": 1140,
     "gc": "Low",
     "seatCount": 3,
@@ -23,32 +29,22 @@
     "mra": 124.42,
     "ola": 106.25,
     "description": "Widely regarded as the best supercar ever. Card by exist",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/826751092037124106/CD_McLaren_F1.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826751199935725608/CD_McLaren_F1_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826751208676917319/CD_McLaren_F1_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826751221351186432/CD_McLaren_F1_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826751249013145640/CD_McLaren_F1_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826751241543090216/CD_McLaren_F1_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826751230780112916/CD_McLaren_F1_699.png",
-
     "333TopSpeed": 242,
-    "3330to60": 3.0,
+    "3330to60": 3,
     "333Handling": 87,
-
     "666TopSpeed": 244,
     "6660to60": 2.9,
     "666Handling": 90,
-
     "996TopSpeed": 247,
     "9960to60": 2.7,
     "996Handling": 90,
-
     "969TopSpeed": 247,
     "9690to60": 2.9,
     "969Handling": 93,
-
     "699TopSpeed": 244,
     "6990to60": 2.7,
-    "699Handling": 93
+    "699Handling": 93,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

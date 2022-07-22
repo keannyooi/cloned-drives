@@ -11,7 +11,6 @@
     "tyreType": "All-Surface",
     "tags": [],
     "isPrize": false,
-
     "weight": 2885,
     "gc": "High",
     "seatCount": 8,
@@ -23,32 +22,22 @@
     "mra": 65.48,
     "ola": 72.72,
     "description": "Lincoln game changing SUV that can now out-navigate the Cadillac and even German rivals. Card by Spence.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/847660362118594580/image0.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/847660684233277470/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/847660712180056104/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/847660724021100574/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/847660774553288714/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/847660758208217128/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/847660744744632330/image0.jpg",
-
     "333TopSpeed": 120,
     "3330to60": 5.2,
     "333Handling": 72,
-
     "666TopSpeed": 124,
-    "6660to60": 5.0,
+    "6660to60": 5,
     "666Handling": 75,
-
     "996TopSpeed": 129,
     "9960to60": 4.7,
     "996Handling": 75,
-
     "969TopSpeed": 129,
-    "9690to60": 5.0,
+    "9690to60": 5,
     "969Handling": 78,
-
     "699TopSpeed": 124,
     "6990to60": 4.7,
-    "699Handling": 78
+    "699Handling": 78,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

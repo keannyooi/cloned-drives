@@ -1,6 +1,9 @@
 {
     "rq": 57,
-    "make": ["Alpina", "BMW"],
+    "make": [
+        "Alpina",
+        "BMW"
+    ],
     "model": "B10 Bi-Turbo",
     "modelYear": 1989,
     "country": "DE",
@@ -9,9 +12,11 @@
     "handling": 76,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Super Sedan", "Tuner"],
+    "tags": [
+        "Super Sedan",
+        "Tuner"
+    ],
     "isPrize": false,
-
     "weight": 1764,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +28,22 @@
     "mra": 75.71,
     "ola": 83.02,
     "description": "Even back in the 80's alpina was chasing top speed. Card by Havvy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/828971397094834216/unknown.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/828971489143291924/alpina3_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/828971493077286982/alpina3_111.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/828971500320718898/alpina3_222.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/828971515142733834/alpina3_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/828971510341173299/alpina3_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/828971504544120862/alpina3_233.png",
-
     "333TopSpeed": 182,
-    "3330to60": 5.0,
+    "3330to60": 5,
     "333Handling": 79,
-
     "666TopSpeed": 185,
     "6660to60": 4.8,
     "666Handling": 81,
-
     "996TopSpeed": 188,
     "9960to60": 4.5,
     "996Handling": 81,
-
     "969TopSpeed": 188,
     "9690to60": 4.8,
     "969Handling": 84,
-
     "699TopSpeed": 185,
     "6990to60": 4.5,
-    "699Handling": 84
+    "699Handling": 84,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

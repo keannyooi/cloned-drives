@@ -9,9 +9,12 @@
     "handling": 94,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["OG", "Track Day", "Supercar"],
+    "tags": [
+        "OG",
+        "Track Day",
+        "Supercar"
+    ],
     "isPrize": false,
-
     "weight": 1530,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +26,22 @@
     "mra": 84.65,
     "ola": 98.89,
     "description": "A venomous snake that is constantly trying to bite you back. Card by keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/834401664362348554/dodge_viper_acr.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/834401737476800532/acr_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/834401744825090048/acr_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/834401751482105866/acr_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/834401799200964668/acr_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/834401790178754570/acr_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/834401769726672906/acr_699.jpg",
-
     "333TopSpeed": 180,
     "3330to60": 3.2,
     "333Handling": 97,
-
     "666TopSpeed": 183,
     "6660to60": 3.1,
     "666Handling": 100,
-
-	"996TopSpeed": 186,
+    "996TopSpeed": 186,
     "9960to60": 2.9,
     "996Handling": 100,
-
-	"969TopSpeed": 186,
+    "969TopSpeed": 186,
     "9690to60": 3.1,
     "969Handling": 104,
-
     "699TopSpeed": 183,
     "6990to60": 2.9,
-    "699Handling": 104
+    "699Handling": 104,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

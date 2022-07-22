@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1145,
     "gc": "Low",
     "seatCount": 4,
@@ -20,35 +19,25 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 47.80,
+    "mra": 47.8,
     "ola": 75.51,
     "description": "With over 61,000 combination possibilities for the exterior and over 82,000 possibilities for the interior this is the Rolls-Royce of city cars. Card by Connor",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819548444879880232/E.OpelAdamSlam10T.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819548517584338975/E.OpelAdamSlam10T.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819548535476584488/E.OpelAdamSlam10T-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819548550886850590/E.OpelAdamSlam10T-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819548598056386560/E.OpelAdamSlam10T-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819548584038367242/E.OpelAdamSlam10T-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819548568549326898/E.OpelAdamSlam10T-699.png",
-
     "333TopSpeed": 126,
     "3330to60": 9.3,
     "333Handling": 77,
-
     "666TopSpeed": 131,
-    "6660to60": 8.8, 
+    "6660to60": 8.8,
     "666Handling": 80,
-
     "996TopSpeed": 135,
     "9960to60": 8.3,
     "996Handling": 80,
-
     "969TopSpeed": 135,
     "9690to60": 8.8,
     "969Handling": 83,
-
     "699TopSpeed": 131,
     "6990to60": 8.3,
-    "699Handling": 83
+    "699Handling": 83,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

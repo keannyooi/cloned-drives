@@ -9,9 +9,10 @@
     "handling": 70,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1339,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 44.64,
     "ola": 65.38,
     "description": "One of the most boring cars ever. Card by Connor",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/866800487961460786/E.ToyotaCorolla20D4DSol.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/866801046285451284/ToyotaCorolla20D4D.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/866801081492176916/ToyotaCorolla20D4D-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/866801099750506496/ToyotaCorolla20D4D-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/866801141378449458/ToyotaCorolla20D4D-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/866801129328607252/ToyotaCorolla20D4D-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/866801117547200532/ToyotaCorolla20D4D-699.png",
-
     "333TopSpeed": 120,
     "3330to60": 9.8,
     "333Handling": 72,
-
     "666TopSpeed": 125,
     "6660to60": 9.3,
     "666Handling": 75,
-
     "996TopSpeed": 129,
     "9960to60": 8.8,
     "996Handling": 75,
-
     "969TopSpeed": 129,
     "9690to60": 9.3,
     "969Handling": 78,
-
     "699TopSpeed": 125,
     "6990to60": 8.8,
-    "699Handling": 78
+    "699Handling": 78,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

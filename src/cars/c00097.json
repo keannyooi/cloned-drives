@@ -9,9 +9,10 @@
     "handling": 72,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Grand Tourer"],
+    "tags": [
+        "Grand Tourer"
+    ],
     "isPrize": false,
-
     "weight": 1790,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +24,22 @@
     "mra": 67.89,
     "ola": 90.32,
     "description": "Technologically outdated, yet still attracts rich people for its statement. Card by keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819384006780256296/virage.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819466687803031582/virage_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819466697681272862/virage_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819466702336294912/virage_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819466741347385374/virage_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819466731764187156/virage_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819466719688654898/virage_699.jpg",
-
     "333TopSpeed": 149,
-    "3330to60": 7.0,
+    "3330to60": 7,
     "333Handling": 74,
-
     "666TopSpeed": 152,
     "6660to60": 6.7,
     "666Handling": 77,
-
-	  "996TopSpeed": 156,
+    "996TopSpeed": 156,
     "9960to60": 6.3,
     "996Handling": 77,
-
     "969TopSpeed": 156,
     "9690to60": 6.7,
     "969Handling": 80,
-
-	  "699TopSpeed": 152,
+    "699TopSpeed": 152,
     "6990to60": 6.3,
-    "699Handling": 80
+    "699Handling": 80,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

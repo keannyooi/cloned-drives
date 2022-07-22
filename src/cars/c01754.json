@@ -9,9 +9,13 @@
     "handling": 70,
     "driveType": "FWD",
     "tyreType": "Off-Road",
-    "tags": ["Unique", "Oddity", "Eco-Friendly","The Japanese Odyssey"],
+    "tags": [
+        "Unique",
+        "Oddity",
+        "Eco-Friendly",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1468,
     "gc": "Medium",
     "seatCount": 2,
@@ -23,32 +27,22 @@
     "mra": 22.22,
     "ola": 64.94,
     "description": "Card by Keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/867314377458581514/nissan_leaf_at-ev.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/861145293529546762/leaf_at-ev_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/861145301489287178/leaf_at-ev_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/861145306028965898/leaf_at-ev_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/861145317394612244/leaf_at-ev_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/861145314094481438/leaf_at-ev_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/861145310458150943/leaf_at-ev_699.jpg",
-
     "333TopSpeed": 99,
     "3330to60": 9.6,
     "333Handling": 72,
-
     "666TopSpeed": 104,
     "6660to60": 9.1,
     "666Handling": 75,
-
     "996TopSpeed": 110,
     "9960to60": 8.6,
     "996Handling": 75,
-
     "969TopSpeed": 110,
     "9690to60": 9.1,
     "969Handling": 78,
-
     "699TopSpeed": 104,
     "6990to60": 8.6,
-    "699Handling": 78
+    "699Handling": 78,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

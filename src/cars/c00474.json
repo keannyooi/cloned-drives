@@ -9,9 +9,12 @@
     "handling": 83,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Silver Screen", "Style Icon", "Muscle Car"],
+    "tags": [
+        "Silver Screen",
+        "Style Icon",
+        "Muscle Car"
+    ],
     "isPrize": false,
-
     "weight": 1728,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +26,22 @@
     "mra": 76.27,
     "ola": 93.33,
     "description": "Pony car cure for a broken heart. Card by Keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/834769819685093376/ford_mustang_gt.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/834771055964061716/mustang_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/834771063371464754/mustang_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/834771067976548402/mustang_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/834771105176485888/mustang_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/834771092345978900/mustang_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/834771081780658196/mustang_699.jpg",
-
     "333TopSpeed": 163,
     "3330to60": 4.4,
     "333Handling": 86,
-
     "666TopSpeed": 167,
     "6660to60": 4.1,
     "666Handling": 88,
-
-  	"996TopSpeed": 170,
+    "996TopSpeed": 170,
     "9960to60": 3.9,
     "996Handling": 88,
-
     "969TopSpeed": 170,
     "9690to60": 4.1,
     "969Handling": 92,
-
-  	"699TopSpeed": 167,
+    "699TopSpeed": 167,
     "6990to60": 3.9,
-    "699Handling": 92
+    "699Handling": 92,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

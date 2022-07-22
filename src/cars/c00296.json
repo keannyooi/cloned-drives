@@ -5,13 +5,12 @@
     "modelYear": 2013,
     "country": "US",
     "topSpeed": 103,
-    "0to60": 11.0,
+    "0to60": 11,
     "handling": 73,
     "driveType": "FWD",
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1080,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +22,22 @@
     "mra": 29.66,
     "ola": 66.88,
     "description": "A quirky city car with mini-MPV styling let down by the CVT. Card by Connor",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819527502740979742/E.ChevySpark2LTCVT.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819541292962414663/E.ChevySpark2LTCVT.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819541314776989696/E.ChevySpark2LTCVT-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819541353993994260/E.ChevySpark2LTCVT-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819541379457351680/E.ChevySpark2LTCVT-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819541367906369556/E.ChevySpark2LTCVT-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819541357965082644/E.ChevySpark2LTCVT-699.png",
-
     "333TopSpeed": 108,
     "3330to60": 10.5,
     "333Handling": 75,
-
     "666TopSpeed": 113,
     "6660to60": 9.9,
     "666Handling": 78,
-
     "996TopSpeed": 118,
     "9960to60": 9.4,
     "996Handling": 78,
-
     "969TopSpeed": 118,
     "9690to60": 9.9,
     "969Handling": 81,
-
     "699TopSpeed": 113,
     "6990to60": 9.4,
-    "699Handling": 81
+    "699Handling": 81,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

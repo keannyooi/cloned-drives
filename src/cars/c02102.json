@@ -9,9 +9,12 @@
     "handling": 97,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": ["The Royal Collection","Motorsport","Unique"],
+    "tags": [
+        "The Royal Collection",
+        "Motorsport",
+        "Unique"
+    ],
     "isPrize": true,
-
     "weight": 918,
     "gc": "Low",
     "seatCount": 1,
@@ -23,32 +26,22 @@
     "mra": 84.85,
     "ola": 71.43,
     "description": "British green racing machine. Card by Exist",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/859617360683991091/CD_Bentley_Speed_8.jpg.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/859617412886167593/CD_Bentley_Speed_8_7_Team_Bentley_000.png?width=1410&height=878",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/859617424461266975/CD_Bentley_Speed_8_7_Team_Bentley_333.png?width=1410&height=878",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/859617433563037727/CD_Bentley_Speed_8_7_Team_Bentley_666.png?width=1410&height=878",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/859617469906812928/CD_Bentley_Speed_8_7_Team_Bentley_996.png?width=1410&height=878",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/859617448651390986/CD_Bentley_Speed_8_7_Team_Bentley_969.png?width=1410&height=878",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/859617442023473173/CD_Bentley_Speed_8_7_Team_Bentley_699.png?width=1410&height=878",
-
     "333TopSpeed": 216,
     "3330to60": 2.7,
     "333Handling": 100,
-
     "666TopSpeed": 219,
     "6660to60": 2.5,
     "666Handling": 103,
-
     "996TopSpeed": 221,
     "9960to60": 2.4,
     "996Handling": 103,
-
     "969TopSpeed": 221,
     "9690to60": 2.5,
     "969Handling": 108,
-
     "699TopSpeed": 219,
     "6990to60": 2.4,
-    "699Handling": 108
+    "699Handling": 108,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

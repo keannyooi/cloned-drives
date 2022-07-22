@@ -9,9 +9,10 @@
     "handling": 69,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1480,
     "gc": "Medium",
     "seatCount": 5,
@@ -20,35 +21,25 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 44.00,
+    "mra": 44,
     "ola": 74.75,
     "description": "Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/968272525027082280/Stagea20RS.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/968273295218704434/Stagea20RS.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/968273300230918164/Stagea20RS1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/968273305683509308/Stagea20RS2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/968273328450203708/Stagea20RS996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/968273321043046420/Stagea20RS969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/968273312352440400/Stagea20RS699.png",
-
     "333TopSpeed": 117,
     "3330to60": 9.4,
     "333Handling": 71,
-
     "666TopSpeed": 121,
     "6660to60": 8.9,
     "666Handling": 74,
-
     "996TopSpeed": 126,
     "9960to60": 8.4,
     "996Handling": 74,
-
     "969TopSpeed": 126,
     "9690to60": 8.9,
     "969Handling": 77,
-
     "699TopSpeed": 121,
     "6990to60": 8.4,
-    "699Handling": 77
+    "699Handling": 77,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

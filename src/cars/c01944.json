@@ -9,13 +9,13 @@
     "handling": 70,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
-
     "weight": 1103,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
@@ -24,33 +24,22 @@
     "mra": 39.81,
     "ola": 63.16,
     "description": "Two more doors make this pint-size hatch more usable, but they’d still rather use something else. Card by Andu",
-
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/867322712666275860/YarisHatch.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/867323055894167622/YarisH.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/867323064983224340/YarisH-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/867323069555015710/YarisH-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/867323119043084318/YarisH-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/867323134197760000/YarisH-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/867323146766778378/YarisH-699.png",
-
     "333TopSpeed": 118,
-    "3330to60": 10.0,
+    "3330to60": 10,
     "333Handling": 72,
-
     "666TopSpeed": 122,
-    "6660to60": 9.5, 
+    "6660to60": 9.5,
     "666Handling": 75,
-
     "996TopSpeed": 127,
     "9960to60": 8.9,
     "996Handling": 75,
-
     "969TopSpeed": 127,
     "9690to60": 9.5,
     "969Handling": 78,
-
     "699TopSpeed": 122,
     "6990to60": 8.9,
-    "699Handling": 78
+    "699Handling": 78,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

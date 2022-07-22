@@ -9,9 +9,11 @@
     "handling": 82,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Oddity", "Unique"],
+    "tags": [
+        "Oddity",
+        "Unique"
+    ],
     "isPrize": false,
-
     "weight": 1957,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +25,22 @@
     "mra": 87.23,
     "ola": 97.56,
     "description": "A weird and Unique Ferrari. Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/848253601087881267/GG50.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/848254012280537108/gg50.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/848254017435992096/gg50333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/848254024725692476/gg50666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/848254042823065640/gg50996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/848254036926005308/gg50969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/848254030769946654/gg50699.png",
-
     "333TopSpeed": 206,
     "3330to60": 3.9,
     "333Handling": 85,
-
     "666TopSpeed": 208,
     "6660to60": 3.7,
     "666Handling": 87,
-
     "996TopSpeed": 211,
     "9960to60": 3.5,
     "996Handling": 87,
-
     "969TopSpeed": 211,
     "9690to60": 3.7,
     "969Handling": 91,
-
     "699TopSpeed": 208,
     "6990to60": 3.5,
-    "699Handling": 91
+    "699Handling": 91,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

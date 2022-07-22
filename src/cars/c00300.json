@@ -9,13 +9,17 @@
     "handling": 74,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Muscle Car"],
+    "tags": [
+        "Muscle Car"
+    ],
     "isPrize": false,
-
     "weight": 2153,
     "gc": "Medium",
     "seatCount": 2,
-    "bodyStyle": ["Pickup", "Convertible"],
+    "bodyStyle": [
+        "Pickup",
+        "Convertible"
+    ],
     "tcs": true,
     "abs": true,
     "enginePos": "Front",
@@ -23,32 +27,22 @@
     "mra": 63.95,
     "ola": 94.55,
     "description": "This proves that any car can instantly be better with more speed and power. Card by keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819383891496402974/ssr.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819913793311342652/ssr_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819913799460454440/ssr_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819913806444232714/ssr_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819913840489660486/ssr_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819913825796227122/ssr_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819913817742901268/ssr_699.jpg",
-
     "333TopSpeed": 129,
     "3330to60": 5.2,
     "333Handling": 76,
-
     "666TopSpeed": 133,
-    "6660to60": 5.0,
+    "6660to60": 5,
     "666Handling": 79,
-
-	"996TopSpeed": 137,
+    "996TopSpeed": 137,
     "9960to60": 4.7,
     "996Handling": 79,
-
     "969TopSpeed": 137,
-    "9690to60": 5.0,
+    "9690to60": 5,
     "969Handling": 82,
-
-	"699TopSpeed": 133,
+    "699TopSpeed": 133,
     "6990to60": 4.7,
-    "699Handling": 82
+    "699Handling": 82,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

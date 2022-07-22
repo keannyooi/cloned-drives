@@ -9,9 +9,10 @@
     "handling": 83,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Eco-Friendly"],
+    "tags": [
+        "Eco-Friendly"
+    ],
     "isPrize": false,
-
     "weight": 1222,
     "gc": "Medium",
     "seatCount": 2,
@@ -21,34 +22,24 @@
     "enginePos": "Middle",
     "fuelType": "Electric",
     "mra": 53.74,
-    "ola": 76.80,
+    "ola": 76.8,
     "description": "After Tesla had sorted out the transmission issue, the previously claimed 0-60 figure became a reality thanks to BorgWarner's 1-speed transmission. Card by keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/848059595309449266/tesla_roadster_1.5_standard.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/848058087256358952/roadster_1speed_000.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/848058090820993044/roadster_1speed_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/848058095937650728/roadster_1speed_666.jpg",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/848058109955538944/roadster_1speed_996.jpg",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/848058103601299506/roadster_1speed_969.jpg",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/848058100086603836/roadster_1speed_699.jpg",
-
     "333TopSpeed": 127,
-    "3330to60": 4.0,
+    "3330to60": 4,
     "333Handling": 86,
-
     "666TopSpeed": 131,
     "6660to60": 3.8,
     "666Handling": 88,
-
     "996TopSpeed": 136,
     "9960to60": 3.6,
     "996Handling": 88,
-
     "969TopSpeed": 136,
     "9690to60": 3.8,
     "969Handling": 92,
-
     "699TopSpeed": 131,
     "6990to60": 3.6,
-    "699Handling": 92
+    "699Handling": 92,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

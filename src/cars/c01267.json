@@ -5,13 +5,15 @@
     "modelYear": 2018,
     "country": "US",
     "topSpeed": 155,
-    "0to60": 2.0,
+    "0to60": 2,
     "handling": 94,
     "driveType": "4WD",
     "tyreType": "Slick",
-    "tags": ["Eco-Friendly", "Motorsport"],
+    "tags": [
+        "Eco-Friendly",
+        "Motorsport"
+    ],
     "isPrize": true,
-
     "weight": 1716,
     "gc": "Low",
     "seatCount": 1,
@@ -21,34 +23,24 @@
     "enginePos": "Mixed",
     "fuelType": "Electric",
     "mra": 64.52,
-    "ola": 81.00,
+    "ola": 81,
     "description": "Tesla finally gets as FIA-apporved one-make racing series, hoping to steal some of the Formula E hype. Card by keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/858545222160744458/tesla_model_s_racecar.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/858542932881833984/model_s_racecar_000.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/858542940291858482/model_s_racecar_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/858542948987699220/model_s_racecar_666.jpg",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/858542960869376005/model_s_racecar_996.jpg",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/858542955705794580/model_s_racecar_969.jpg",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/858542952356118548/model_s_racecar_699.jpg",
-
     "333TopSpeed": 158,
     "3330to60": 1.9,
     "333Handling": 97,
-
     "666TopSpeed": 162,
     "6660to60": 1.8,
     "666Handling": 100,
-
     "996TopSpeed": 165,
     "9960to60": 1.7,
     "996Handling": 100,
-
     "969TopSpeed": 165,
     "9690to60": 1.8,
     "969Handling": 104,
-
     "699TopSpeed": 162,
     "6990to60": 1.7,
-    "699Handling": 104
+    "699Handling": 104,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -9,9 +9,11 @@
     "handling": 96,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": ["Motorsport", "Unique"],
+    "tags": [
+        "Motorsport",
+        "Unique"
+    ],
     "isPrize": true,
-
     "weight": 1150,
     "gc": "Low",
     "seatCount": 1,
@@ -23,32 +25,22 @@
     "mra": 92.68,
     "ola": 83.33,
     "description": "Card by Aqo.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/948608325552078868/trofeo.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/948608403922640916/stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/948608450038992946/333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/948608601205927946/666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/948608658399436830/996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/948608638073831485/969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/948608618897473557/699.png",
-
     "333TopSpeed": 173,
     "3330to60": 3.6,
     "333Handling": 99,
-
     "666TopSpeed": 176,
     "6660to60": 3.4,
     "666Handling": 102,
-
     "996TopSpeed": 179,
     "9960to60": 3.2,
     "996Handling": 102,
-
     "969TopSpeed": 179,
     "9690to60": 3.4,
     "969Handling": 107,
-
     "699TopSpeed": 176,
     "6990to60": 3.2,
-    "699Handling": 107
+    "699Handling": 107,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

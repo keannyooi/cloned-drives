@@ -5,13 +5,17 @@
     "modelYear": 1998,
     "country": "JP",
     "topSpeed": 159,
-    "0to60": 3.0,
+    "0to60": 3,
     "handling": 90,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Tuner", "Super Sedan", "Unique","The Japanese Odyssey"],
+    "tags": [
+        "Tuner",
+        "Super Sedan",
+        "Unique",
+        "The Japanese Odyssey"
+    ],
     "isPrize": true,
-
     "weight": 1260,
     "gc": "Medium",
     "seatCount": 5,
@@ -21,34 +25,24 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 71.43,
-    "ola": 80.00,
+    "ola": 80,
     "description": "Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/930858294308921344/evo5rs450.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/930859176853393508/evo5rs450.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/930859187674701924/evo5rs450333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/930859194238787654/evo5rs450666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/930859218653831238/evo5rs450996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/930859211146031175/evo5rs450969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/930859203046813786/evo5rs450699.png",
-
     "333TopSpeed": 162,
     "3330to60": 2.9,
     "333Handling": 93,
-
     "666TopSpeed": 166,
     "6660to60": 2.7,
     "666Handling": 96,
-
     "996TopSpeed": 169,
     "9960to60": 2.6,
     "996Handling": 96,
-
     "969TopSpeed": 169,
     "9690to60": 2.7,
     "969Handling": 100,
-
     "699TopSpeed": 166,
     "6990to60": 2.6,
-    "699Handling": 100
+    "699Handling": 100,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -11,10 +11,9 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 780,
     "gc": "Medium",
-    "seatCount":4,
+    "seatCount": 4,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": false,
@@ -23,32 +22,22 @@
     "mra": 19.38,
     "ola": 64.01,
     "description": "What car? I just see a trash can in front of a petco. Card by Andu",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/865588952701206579/FestivaTagged.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821486409504260126/Festiva.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821486413080952882/Festiva1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821486418404048926/Festiva2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821486501217042472/Festiva996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821486469755568148/Festiva969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821486437144461322/Festiva699.png",
-
     "333TopSpeed": 99,
     "3330to60": 10.7,
     "333Handling": 64,
-
     "666TopSpeed": 104,
     "6660to60": 10.2,
     "666Handling": 66,
-
     "996TopSpeed": 110,
     "9960to60": 9.6,
     "996Handling": 66,
-
     "969TopSpeed": 110,
     "9690to60": 10.2,
     "969Handling": 69,
-
     "699TopSpeed": 104,
     "6990to60": 9.6,
-    "699Handling": 69
+    "699Handling": 69,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

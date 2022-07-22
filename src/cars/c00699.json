@@ -9,9 +9,12 @@
     "handling": 87,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Concept", "Eargasm", "Unique"],
+    "tags": [
+        "Concept",
+        "Eargasm",
+        "Unique"
+    ],
     "isPrize": false,
-
     "weight": 1570,
     "gc": "Low",
     "seatCount": 2,
@@ -20,35 +23,25 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 100.00,
-    "ola": 80.00,
+    "mra": 100,
+    "ola": 80,
     "description": "A stylish convertible of the LF-A Sports Car Concept. Card by Bnuuy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/821061121707343942/LF-ARoaster.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821061745425907743/lf-aroad.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821061750698803220/lf-aroad333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821061758751473714/lf-aroad666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821061780972765204/lf-aroad996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821061773595508747/lf-aroad969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821061766439895100/lf-aroad699.png",
-
     "333TopSpeed": 203,
     "3330to60": 4.4,
     "333Handling": 90,
-
     "666TopSpeed": 205,
     "6660to60": 4.1,
     "666Handling": 93,
-
     "996TopSpeed": 208,
     "9960to60": 3.9,
     "996Handling": 93,
-
     "969TopSpeed": 208,
     "9690to60": 4.1,
     "969Handling": 97,
-
     "699TopSpeed": 205,
     "6990to60": 3.9,
-    "699Handling": 97
+    "699Handling": 97,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

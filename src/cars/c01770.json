@@ -5,13 +5,15 @@
     "modelYear": 1993,
     "country": "JP",
     "topSpeed": 112,
-    "0to60": 6.0,
+    "0to60": 6,
     "handling": 75,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Street Racer","The Japanese Odyssey"],
+    "tags": [
+        "Street Racer",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1220,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +25,22 @@
     "mra": 59.06,
     "ola": 73.33,
     "description": "The R33 of the silvias xdddddd. Card by Havvy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/867397032405499934/NissanSilviaKsTypeSS14.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/867397163709366302/s14_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/867397168326115348/s14_111.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/867397172848623656/s14_222.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/867397194487431168/s14_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/867397188701913088/s14_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/867397180997107742/s14_233.png",
-
     "333TopSpeed": 117,
     "3330to60": 5.7,
     "333Handling": 77,
-
     "666TopSpeed": 121,
     "6660to60": 5.4,
     "666Handling": 80,
-
     "996TopSpeed": 126,
     "9960to60": 5.1,
     "996Handling": 80,
-
     "969TopSpeed": 126,
     "9690to60": 5.4,
     "969Handling": 83,
-
     "699TopSpeed": 121,
     "6990to60": 5.1,
-    "699Handling": 83
+    "699Handling": 83,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

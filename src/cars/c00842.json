@@ -1,6 +1,9 @@
 {
     "rq": 76,
-    "make": ["Mercedes-AMG", "Mercedes-Benz"],
+    "make": [
+        "Mercedes-AMG",
+        "Mercedes-Benz"
+    ],
     "model": "SLS Roadster",
     "modelYear": 2011,
     "country": "DE",
@@ -9,9 +12,11 @@
     "handling": 87,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Grand Tourer","Supercar"],
+    "tags": [
+        "Grand Tourer",
+        "Supercar"
+    ],
     "isPrize": false,
-
     "weight": 1660,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +28,22 @@
     "mra": 85.16,
     "ola": 101.83,
     "description": "Dropping the distinctive gullwing doors for an exchange of sky above your head. Card by havvy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/860516063748816926/unknown.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/860516127629246525/road_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/860516131236610058/road_111.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/860516134959710228/road_222.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/860516148633272320/road_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/860516143919136799/road_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/860516139155456090/road_233.png",
-
     "333TopSpeed": 200,
     "3330to60": 3.4,
     "333Handling": 90,
-
     "666TopSpeed": 202,
     "6660to60": 3.2,
     "666Handling": 93,
-
     "996TopSpeed": 205,
     "9960to60": 3.1,
     "996Handling": 93,
-
     "969TopSpeed": 205,
     "9690to60": 3.2,
     "969Handling": 97,
-
     "699TopSpeed": 202,
     "6990to60": 3.1,
-    "699Handling": 97
+    "699Handling": 97,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

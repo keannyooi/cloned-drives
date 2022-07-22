@@ -1,6 +1,9 @@
 {
     "rq": 70,
-    "make": ["Hennessey", "Dodge"],
+    "make": [
+        "Hennessey",
+        "Dodge"
+    ],
     "model": "Viper Venom RT/10 550",
     "modelYear": 1995,
     "country": "US",
@@ -9,9 +12,12 @@
     "handling": 88,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Tuner", "Supercar", "Unique"],
+    "tags": [
+        "Tuner",
+        "Supercar",
+        "Unique"
+    ],
     "isPrize": false,
-
     "weight": 1605,
     "gc": "Low",
     "seatCount": 2,
@@ -21,34 +27,24 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 82.83,
-    "ola": 87.80,
+    "ola": 87.8,
     "description": "If you thought the 92 Dodge Viper couldn't be more dangerous than it is, Hennessey will keep that up a notch. Card by Spence.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/841519695441690664/image0.jpg",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/841519754069803030/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/841519778631778314/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/841519789129465866/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/841519825432215583/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/841519804929671168/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/841519814353616946/image0.jpg",
-
     "333TopSpeed": 177,
     "3330to60": 3.9,
     "333Handling": 91,
-
     "666TopSpeed": 180,
     "6660to60": 3.7,
     "666Handling": 94,
-
     "996TopSpeed": 183,
     "9960to60": 3.5,
     "996Handling": 94,
-
     "969TopSpeed": 183,
     "9690to60": 3.7,
     "969Handling": 98,
-
     "699TopSpeed": 180,
     "6990to60": 3.5,
-    "699Handling": 98
+    "699Handling": 98,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

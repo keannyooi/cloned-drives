@@ -9,9 +9,10 @@
     "handling": 90,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Street Racer"],
+    "tags": [
+        "Street Racer"
+    ],
     "isPrize": false,
-
     "weight": 1475,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +24,22 @@
     "mra": 63.64,
     "ola": 81.63,
     "description": "Mid-range trim Supra with a uprated 2 litre BMW engine. Card by Connor",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/972549136291332208/B.ToyotaGRSupraSZR.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/972549920777195631/GRSupraSZR.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/972549956567203911/GRSupraSZR-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/972549984778092604/GRSupraSZR-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/972550035273318501/GRSupraSZR-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/972550019209121844/GRSupraSZR-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/972550000666099782/GRSupraSZR-699.png",
-
     "333TopSpeed": 158,
     "3330to60": 4.7,
     "333Handling": 93,
-
     "666TopSpeed": 162,
     "6660to60": 4.4,
     "666Handling": 96,
-
     "996TopSpeed": 165,
     "9960to60": 4.2,
     "996Handling": 96,
-
     "969TopSpeed": 165,
     "9690to60": 4.4,
     "969Handling": 100,
-
     "699TopSpeed": 162,
     "6990to60": 4.2,
-    "699Handling": 100
+    "699Handling": 100,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

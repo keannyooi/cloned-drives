@@ -9,9 +9,13 @@
     "handling": 71,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Motorsport", "Ultra Expensive", "Unique", "Style Icon"],
+    "tags": [
+        "Motorsport",
+        "Ultra Expensive",
+        "Unique",
+        "Style Icon"
+    ],
     "isPrize": true,
-
     "weight": 874,
     "gc": "Low",
     "seatCount": 2,
@@ -20,35 +24,25 @@
     "abs": false,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 63.60,
+    "mra": 63.6,
     "ola": 89.66,
     "description": "This remains one of the 1950s most beautiful poster cars and it was also rather handy in competition. Card by Johnny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/822201154817359916/cate-test.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/822201072432054342/Jaguar-D-Type.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/822201075922632765/Jaguar-D-Type-1-star.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/822201079340728320/Jaguar-D-Type-2-star.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/822201101692567572/Jaguar-D-Type-332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/822201095853310017/Jaguar-D-Type-323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/822201089604321350/Jaguar-D-Type-233.png",
-
     "333TopSpeed": 165,
     "3330to60": 4.5,
     "333Handling": 73,
-
     "666TopSpeed": 168,
-    "6660to60": 4.2, 
+    "6660to60": 4.2,
     "666Handling": 76,
-
     "996TopSpeed": 172,
-    "9960to60": 4.0,
+    "9960to60": 4,
     "996Handling": 76,
-
     "969TopSpeed": 172,
     "9690to60": 4.2,
     "969Handling": 79,
-
     "699TopSpeed": 168,
-    "6990to60": 4.0,
-    "699Handling": 79
+    "6990to60": 4,
+    "699Handling": 79,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -9,13 +9,13 @@
     "handling": 76,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
-
     "weight": 970,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
@@ -24,33 +24,22 @@
     "mra": 27.85,
     "ola": 66.09,
     "description": "The essence of beauty. Card by Andu",
-
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/897114732346081350/2Essence.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/897115166213279744/Essence.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/897115172253097994/Essence-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/897115176707436604/Essence-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/897115193941839902/Essence-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/897115206226952232/Essence-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/897115220001030175/Essence-699.png",
-
     "333TopSpeed": 112,
     "3330to60": 10.9,
     "333Handling": 79,
-
     "666TopSpeed": 117,
-    "6660to60": 10.4, 
+    "6660to60": 10.4,
     "666Handling": 81,
-
     "996TopSpeed": 122,
     "9960to60": 9.8,
     "996Handling": 81,
-
     "969TopSpeed": 122,
     "9690to60": 10.4,
     "969Handling": 84,
-
     "699TopSpeed": 117,
     "6990to60": 9.8,
-    "699Handling": 84
+    "699Handling": 84,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

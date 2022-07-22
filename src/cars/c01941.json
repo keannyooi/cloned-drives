@@ -9,13 +9,16 @@
     "handling": 75,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Unique", "Oddity", "Concept","The Japanese Odyssey"],
+    "tags": [
+        "Unique",
+        "Oddity",
+        "Concept",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
-
     "weight": 1150,
     "gc": "High",
-    "seatCount":2,
+    "seatCount": 2,
     "bodyStyle": "Pickup",
     "tcs": true,
     "abs": true,
@@ -24,33 +27,22 @@
     "mra": 46.34,
     "ola": 74.74,
     "description": "Wow this is such a cool and unique ute! jk april fools lol. Card by Andu.",
-
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/963493737001013358/YarisAdventure.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/963494275285389412/YarisAdv.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/963494287658582106/YarisAdv-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/963494298182103080/YarisAdv-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/963494310127468564/YarisAdv-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/963494321775054919/YarisAdv-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/963494333288439950/YarisAdv-699.png",
-
     "333TopSpeed": 120,
-    "3330to60": 9.0,
+    "3330to60": 9,
     "333Handling": 77,
-
     "666TopSpeed": 124,
-    "6660to60": 8.6, 
+    "6660to60": 8.6,
     "666Handling": 80,
-
     "996TopSpeed": 129,
     "9960to60": 8.1,
     "996Handling": 80,
-
     "969TopSpeed": 129,
     "9690to60": 8.6,
     "969Handling": 83,
-
     "699TopSpeed": 124,
     "6990to60": 8.1,
-    "699Handling": 83
+    "699Handling": 83,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

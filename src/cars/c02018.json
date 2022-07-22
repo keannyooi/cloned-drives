@@ -9,9 +9,10 @@
     "handling": 66,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Rest of the World"],
+    "tags": [
+        "Rest of the World"
+    ],
     "isPrize": false,
-
     "weight": 1045,
     "gc": "Medium",
     "seatCount": 4,
@@ -20,35 +21,25 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Electric",
-    "mra": 0.00,
+    "mra": 0,
     "ola": 53.12,
     "description": "Dacia's first attempt on making an electric car in a very affordable price. Card by Spence.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/984493270254116904/DaciaSpringElectric.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/984493322955554887/DaciaSpringElectricStock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/984493352907079700/DaciaSpringElectric1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/984493371487825940/DaciaSpringElectric2.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/984493398192955462/DaciaSpringElectric699.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/984493411354693712/DaciaSpringElectric969.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/984493425233637447/DaciaSpringElectric996.png",
-
     "333TopSpeed": 85,
     "3330to60": 19.5,
     "333Handling": 68,
-
     "666TopSpeed": 91,
     "6660to60": 18.5,
     "666Handling": 70,
-
     "699TopSpeed": 91,
     "6990to60": 17.4,
     "699Handling": 73,
-
     "969TopSpeed": 98,
     "9690to60": 18.5,
     "969Handling": 73,
-
     "996TopSpeed": 98,
     "9960to60": 17.4,
-    "996Handling": 70
+    "996Handling": 70,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

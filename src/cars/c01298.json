@@ -9,9 +9,10 @@
     "handling": 85,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Super Sedan"],
+    "tags": [
+        "Super Sedan"
+    ],
     "isPrize": false,
-
     "weight": 1620,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 67.47,
     "ola": 78.57,
     "description": "Not your grandfather's 1998 Camry. Card by ChickenMcNuggets.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820437464513642566/camry_trd.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820127329715224607/camry_stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820127358291148810/camry_1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820127385617039380/camry_2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820127466307059732/camry_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820127435533844490/camry_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820127413614149682/camry_233.png",
-
     "333TopSpeed": 138,
     "3330to60": 5.3,
     "333Handling": 88,
-
     "666TopSpeed": 142,
-    "6660to60": 5.0, 
+    "6660to60": 5,
     "666Handling": 91,
-
     "996TopSpeed": 146,
     "9960to60": 4.8,
     "996Handling": 91,
-
     "969TopSpeed": 146,
-    "9690to60": 5.0,
+    "9690to60": 5,
     "969Handling": 94,
-
     "699TopSpeed": 142,
     "6990to60": 4.8,
-    "699Handling": 94
+    "699Handling": 94,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

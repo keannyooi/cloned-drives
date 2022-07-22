@@ -9,9 +9,10 @@
     "handling": 62,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 2400,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 42.5,
     "ola": 62.5,
     "description": "Card by Lemonade.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/931470554463076372/Nissan_Patrol_Super_Safari_CD.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/931469858632269874/Nissan_Patrol_Super_Safari_stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/931470082536771624/Nissan_Patrol_Super_Safari_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/931470271603437568/Nissan_Patrol_Super_Safari_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/931470715398545448/Nissan_Patrol_Super_Safari_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/931470699552464957/Nissan_Patrol_Super_Safari_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/931470353681768458/Nissan_Patrol_Super_Safari_699.png",
-
     "333TopSpeed": 122,
     "3330to60": 10.1,
     "333Handling": 64,
-
     "666TopSpeed": 127,
     "6660to60": 9.5,
     "666Handling": 66,
-
     "996TopSpeed": 131,
-    "9960to60": 9.0,
+    "9960to60": 9,
     "996Handling": 66,
-
     "969TopSpeed": 131,
     "9690to60": 9.5,
     "969Handling": 69,
-
     "699TopSpeed": 127,
-    "6990to60": 9.0,
-    "699Handling": 69
+    "6990to60": 9,
+    "699Handling": 69,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

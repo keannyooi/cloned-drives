@@ -9,9 +9,11 @@
     "handling": 71,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Oddity","The Japanese Odyssey"],
+    "tags": [
+        "Oddity",
+        "The Japanese Odyssey"
+    ],
     "isPrize": true,
-
     "weight": 1744,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +25,22 @@
     "mra": 69.21,
     "ola": 75.91,
     "description": "The worst car in the history of the world, as decided by a British orangutan and by the slowest man in the world. Card by Spence.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/862151111876411412/image0.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/862156324170760232/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/862156347540897843/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/862156362908565504/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/862156377061064764/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/862156397096337428/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/862156407696392223/image0.jpg",
-
     "333TopSpeed": 159,
     "3330to60": 6.4,
     "333Handling": 73,
-
     "666TopSpeed": 163,
-    "6660to60": 6.0,
+    "6660to60": 6,
     "666Handling": 76,
-
     "699TopSpeed": 163,
     "6990to60": 5.7,
     "699Handling": 79,
-
     "969TopSpeed": 166,
-    "9690to60": 6.0,
+    "9690to60": 6,
     "969Handling": 79,
-
     "996TopSpeed": 166,
     "9960to60": 5.7,
-    "996Handling": 76
+    "996Handling": 76,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -5,13 +5,16 @@
     "modelYear": 2019,
     "country": "GB",
     "topSpeed": 183,
-    "0to60": 3.0,
+    "0to60": 3,
     "handling": 96,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": ["The Royal Collection", "Motorsport", "Unique"],
+    "tags": [
+        "The Royal Collection",
+        "Motorsport",
+        "Unique"
+    ],
     "isPrize": false,
-
     "weight": 1270,
     "gc": "Low",
     "seatCount": 1,
@@ -21,34 +24,24 @@
     "enginePos": "Middle",
     "fuelType": "Petrol",
     "mra": 81.08,
-    "ola": 80.00,
+    "ola": 80,
     "description": "Card by Smega.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/849651399226556416/CD_McLaren_720S_GT3.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/849651269433950218/CD_McLaren_720S_GT3_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/849651278375288842/CD_McLaren_720S_GT3_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/849651292943024218/CD_McLaren_720S_GT3_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/849651317831630909/CD_McLaren_720S_GT3_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/849651305496051784/CD_McLaren_720S_GT3_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/849651302912229416/CD_McLaren_720S_GT3_699.png",
-
     "333TopSpeed": 186,
     "3330to60": 2.9,
     "333Handling": 99,
-
     "666TopSpeed": 189,
     "6660to60": 2.7,
     "666Handling": 102,
-
     "996TopSpeed": 192,
     "9960to60": 2.6,
     "996Handling": 102,
-
     "969TopSpeed": 192,
     "9690to60": 2.7,
     "969Handling": 107,
-
     "699TopSpeed": 189,
     "6990to60": 2.6,
-    "699Handling": 107
+    "699Handling": 107,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

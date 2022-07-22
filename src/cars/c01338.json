@@ -5,13 +5,12 @@
     "modelYear": 1982,
     "country": "US",
     "topSpeed": 97,
-    "0to60": 10.0,
+    "0to60": 10,
     "handling": 77,
     "driveType": "FWD",
     "tyreType": "Performance",
     "tags": [],
     "isPrize": true,
-
     "weight": 575,
     "gc": "Low",
     "seatCount": 2,
@@ -20,35 +19,25 @@
     "abs": false,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 20.00,
-    "ola": 62.00,
+    "mra": 20,
+    "ola": 62,
     "description": "The closest thing to a bike in Cloned Drives. Card by keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/868424312368029706/trihawk.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/868424387634819133/trihawk_000.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/868424393771057212/trihawk_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/868424398204444752/trihawk_666.jpg",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/868424407440318504/trihawk_996.jpg",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/868424404361674762/trihawk_969.jpg",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/868424401731866654/trihawk_699.jpg",
-
     "333TopSpeed": 102,
     "3330to60": 9.5,
     "333Handling": 80,
-
     "666TopSpeed": 108,
-    "6660to60": 9.0, 
+    "6660to60": 9,
     "666Handling": 82,
-
     "996TopSpeed": 113,
     "9960to60": 8.5,
     "996Handling": 82,
-
     "969TopSpeed": 113,
-    "9690to60": 9.0,
+    "9690to60": 9,
     "969Handling": 85,
-
     "699TopSpeed": 108,
     "6990to60": 8.5,
-    "699Handling": 85
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

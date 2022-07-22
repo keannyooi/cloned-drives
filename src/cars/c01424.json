@@ -9,9 +9,12 @@
     "handling": 93,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Ultra Expensive", "Hypercar", "Rest of the World"],
+    "tags": [
+        "Ultra Expensive",
+        "Hypercar",
+        "Rest of the World"
+    ],
     "isPrize": true,
-
     "weight": 1350,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +26,22 @@
     "mra": 122.73,
     "ola": 83.33,
     "description": "Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/843212235504484372/FenyrSuper.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/843212612476338276/fenyr.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/843212619401134100/fenyr333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/843212627059933204/fenyr666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/843212655199256576/fenyr996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/843212642481995786/fenyr969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/843212635159134278/fenyr699.png",
-
     "333TopSpeed": 250,
     "3330to60": 2.6,
     "333Handling": 96,
-
     "666TopSpeed": 252,
     "6660to60": 2.4,
     "666Handling": 99,
-
     "996TopSpeed": 254,
     "9960to60": 2.3,
     "996Handling": 99,
-
     "969TopSpeed": 254,
     "9690to60": 2.4,
     "969Handling": 103,
-
     "699TopSpeed": 252,
     "6990to60": 2.3,
-    "699Handling": 103
+    "699Handling": 103,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

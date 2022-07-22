@@ -9,9 +9,13 @@
     "handling": 72,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Concept", "Kei Car", "Eco-Friendly", "Unique"],
+    "tags": [
+        "Concept",
+        "Kei Car",
+        "Eco-Friendly",
+        "Unique"
+    ],
     "isPrize": false,
-
     "weight": 870,
     "gc": "Low",
     "seatCount": 2,
@@ -21,34 +25,24 @@
     "enginePos": "Middle",
     "fuelType": "Electric",
     "mra": 39.44,
-    "ola": 80.70,
+    "ola": 80.7,
     "description": "A futuristic take on the old Honda Beat microcar. Card by Keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/868775758812831794/honda_ev-ster.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/837174732028903474/ev-ster_000.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/837174740421574705/ev-ster_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/837174747535900672/ev-ster_666.jpg",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/837174813020782652/ev-ster_996.jpg",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/837174791625900042/ev-ster_969.jpg",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/837174772202078208/ev-ster_699.jpg",
-
     "333TopSpeed": 104,
     "3330to60": 10.8,
     "333Handling": 74,
-
     "666TopSpeed": 110,
     "6660to60": 10.3,
     "666Handling": 77,
-
     "996TopSpeed": 115,
     "9960to60": 9.7,
     "996Handling": 77,
-
     "969TopSpeed": 115,
     "9690to60": 10.3,
     "969Handling": 80,
-
     "699TopSpeed": 110,
     "6990to60": 9.7,
-    "699Handling": 80
+    "699Handling": 80,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

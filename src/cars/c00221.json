@@ -9,9 +9,13 @@
     "handling": 87,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Concept", "Supercar", "Innovative", "Unique"],
+    "tags": [
+        "Concept",
+        "Supercar",
+        "Innovative",
+        "Unique"
+    ],
     "isPrize": false,
-
     "weight": 1470,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +27,22 @@
     "mra": 84.21,
     "ola": 93.75,
     "description": "The prototype version that features Gandini's design that the Italians did not like. Card by Spence.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/855090493066575872/image0.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/855090565820710982/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/855090593482145852/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/855090608443097088/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/855090623313215488/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/855090636500107314/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/855090647227564063/image0.jpg",
-
     "333TopSpeed": 220,
     "3330to60": 3.3,
     "333Handling": 90,
-
     "666TopSpeed": 223,
     "6660to60": 3.2,
     "666Handling": 93,
-
     "699TopSpeed": 223,
-    "6990to60": 3.0,
+    "6990to60": 3,
     "699Handling": 97,
-
     "969TopSpeed": 225,
     "9690to60": 3.2,
     "969Handling": 97,
-
     "996TopSpeed": 225,
-    "9960to60": 3.0,
-    "996Handling": 93
+    "9960to60": 3,
+    "996Handling": 93,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

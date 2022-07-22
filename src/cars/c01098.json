@@ -9,9 +9,11 @@
     "handling": 75,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Street Racer", "Grand Tourer"],
+    "tags": [
+        "Street Racer",
+        "Grand Tourer"
+    ],
     "isPrize": false,
-
     "weight": 1294,
     "gc": "Low",
     "seatCount": 4,
@@ -20,35 +22,25 @@
     "abs": false,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 51.50,
+    "mra": 51.5,
     "ola": 67.44,
     "description": "Entry level front-engined porsche with a Turbo? Sounds like fun. Card by Spence.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/846904539189477386/image0.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/846904626728665108/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/846904642260041729/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/846904654880440360/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/846904698333167677/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/846904685729808414/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/846904673797799996/image0.jpg",
-
     "333TopSpeed": 135,
     "3330to60": 8.2,
     "333Handling": 77,
-
     "666TopSpeed": 139,
     "6660to60": 7.7,
     "666Handling": 80,
-
     "996TopSpeed": 143,
     "9960to60": 7.3,
     "996Handling": 80,
-
     "969TopSpeed": 143,
     "9690to60": 7.7,
     "969Handling": 83,
-
     "699TopSpeed": 139,
     "6990to60": 7.3,
-    "699Handling": 83
+    "699Handling": 83,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

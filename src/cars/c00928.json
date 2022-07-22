@@ -9,9 +9,11 @@
     "handling": 79,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Silver Screen", "Street Racer"],
+    "tags": [
+        "Silver Screen",
+        "Street Racer"
+    ],
     "isPrize": false,
-
     "weight": 1446,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +25,22 @@
     "mra": 65.03,
     "ola": 77.95,
     "description": "Nissan's affordable sport's car. Card by Havvy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/826467577164333056/350Zzzz.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826528503213326336/C.Nissan350Z.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826528527137636443/C.Nissan350Z-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826528544921878578/C.Nissan350Z-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826528734508875789/C.Nissan350Z-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826528712581185546/C.Nissan350Z-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826528672780910612/C.Nissan350Z-699.png",
-
     "333TopSpeed": 159,
     "3330to60": 5.2,
     "333Handling": 82,
-
     "666TopSpeed": 163,
-    "6660to60": 5.0,
+    "6660to60": 5,
     "666Handling": 84,
-    
     "996TopSpeed": 166,
     "9960to60": 4.7,
     "996Handling": 84,
-
     "969TopSpeed": 166,
-    "9690to60": 5.0,
+    "9690to60": 5,
     "969Handling": 88,
-    
     "699TopSpeed": 163,
     "6990to60": 4.7,
-    "699Handling": 88
+    "699Handling": 88,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

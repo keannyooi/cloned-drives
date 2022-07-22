@@ -9,9 +9,10 @@
     "handling": 84,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Supercar"],
+    "tags": [
+        "Supercar"
+    ],
     "isPrize": false,
-
     "weight": 1819,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +24,22 @@
     "mra": 70.1,
     "ola": 78.02,
     "description": "An Italian open-top supercar: perfect to drive in Florida... until rainstorm says hai. Card by Spence.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/954407055882588180/807E36AC-8BD3-473C-91FD-625776BACCE1.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/954407374066692157/CCC81331-C930-47E3-9072-E78C7026728C.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/954407397252825098/7767E300-E412-47BA-BBC3-CDFDD67E4FAF.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/954407410313879653/4E43E585-85D2-44B7-AA79-86CD6E7B00BB.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/954407454731563078/7DBB75C9-5244-42A7-AE8F-5D54B6184FE7.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/954407440047288340/DAA2FCAF-BCDE-421F-992A-6CD3798B8567.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/954407423421071360/FEA21B24-F9D7-4F50-BFA2-871D22A14651.jpg",
-
     "333TopSpeed": 202,
     "3330to60": 3.5,
     "333Handling": 87,
-
     "666TopSpeed": 204,
     "6660to60": 3.3,
     "666Handling": 90,
-
     "996TopSpeed": 207,
     "9960to60": 3.1,
     "996Handling": 90,
-
     "969TopSpeed": 207,
     "9690to60": 3.3,
     "969Handling": 93,
-
     "699TopSpeed": 204,
     "6990to60": 3.1,
-    "699Handling": 93
+    "699Handling": 93,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

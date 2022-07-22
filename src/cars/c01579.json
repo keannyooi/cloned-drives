@@ -1,6 +1,9 @@
 {
     "rq": 35,
-    "make": ["Isuzu", "Irmscher"],
+    "make": [
+        "Isuzu",
+        "Irmscher"
+    ],
     "model": "Piazza Irmscher",
     "modelYear": 1984,
     "country": "JP",
@@ -9,13 +12,15 @@
     "handling": 74,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Tuner", "Hot Hatch","The Japanese Odyssey"],
+    "tags": [
+        "Tuner",
+        "Hot Hatch",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
-
     "weight": 1240,
     "gc": "Medium",
-    "seatCount":4,
+    "seatCount": 4,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": false,
@@ -24,33 +29,22 @@
     "mra": 55.81,
     "ola": 70.83,
     "description": "JP market only and look at those stunning rims! Cars by Andu.",
-
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/948299387732389918/PiazzaIrmscher.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/948299933268717628/ImpulseIrm.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/948299943163101204/ImpulseIrm-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/948299952495423568/ImpulseIrm-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/948299973177536572/ImpulseIrm-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/948299991288541234/ImpulseIrm-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/948300004961943562/ImpulseIrm-699.png",
-
     "333TopSpeed": 117,
     "3330to60": 6.8,
     "333Handling": 76,
-
     "666TopSpeed": 121,
-    "6660to60": 6.5, 
+    "6660to60": 6.5,
     "666Handling": 79,
-
     "996TopSpeed": 126,
     "9960to60": 6.1,
     "996Handling": 79,
-
     "969TopSpeed": 126,
     "9690to60": 6.5,
     "969Handling": 82,
-
     "699TopSpeed": 121,
     "6990to60": 6.1,
-    "699Handling": 82
+    "699Handling": 82,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

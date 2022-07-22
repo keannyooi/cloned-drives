@@ -9,9 +9,10 @@
     "handling": 68,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1657,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 74.42,
     "ola": 65.63,
     "description": "Utilizing Toyota’s 2GR-FE 3.5 liter V-6 of Evora fame, a 5-speed automatic, and a 4WD system with an actual low range, the RAV4 was deemed the quickest Toyota of 2006 by Car and Driver. Card by ChickenMcNuggets.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/882732016947331083/rav4.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/882727745904336916/rav4_stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/882727810844741652/rav4_1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/882727838099312650/rav4_2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/882727898245652490/rav4_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/882727873847369838/rav4_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/882727860035538994/rav4_233.png",
-
     "333TopSpeed": 139,
     "3330to60": 6.1,
     "333Handling": 72,
-
     "666TopSpeed": 143,
     "6660to60": 5.8,
     "666Handling": 75,
-
     "996TopSpeed": 147,
     "9960to60": 5.4,
     "996Handling": 75,
-
     "969TopSpeed": 147,
     "9690to60": 5.8,
     "969Handling": 78,
-
     "699TopSpeed": 143,
     "6990to60": 5.4,
-    "699Handling": 78
+    "699Handling": 78,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

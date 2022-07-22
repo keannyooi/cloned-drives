@@ -9,9 +9,10 @@
     "handling": 87,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Supercar"],
+    "tags": [
+        "Supercar"
+    ],
     "isPrize": false,
-
     "weight": 1739,
     "gc": "Low",
     "seatCount": 2,
@@ -20,35 +21,25 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 76.60,
+    "mra": 76.6,
     "ola": 94.44,
     "description": "This is a car that moons you with its beauty. Card by DodgeDemon",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/850309307278426132/vanquish14.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826462608013918208/2015vanquishthingy.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826462613863923712/2015vanquishthingy333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826462621695213568/2015vanquishthingy666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826462646265839616/2015vanquishthingy996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826462638548451398/2015vanquishthingy969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826462630864224266/2015vanquishthingy699.png",
-
     "333TopSpeed": 204,
     "3330to60": 3.4,
     "333Handling": 90,
-
     "666TopSpeed": 206,
     "6660to60": 3.2,
     "666Handling": 93,
-
     "996TopSpeed": 209,
     "9960to60": 3.1,
     "996Handling": 93,
-
-	"969TopSpeed": 209,
+    "969TopSpeed": 209,
     "9690to60": 3.2,
     "969Handling": 97,
-
     "699TopSpeed": 206,
     "6990to60": 3.1,
-    "699Handling": 97
+    "699Handling": 97,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

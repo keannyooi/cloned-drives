@@ -9,9 +9,10 @@
     "handling": 72,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["The Royal Collection"],
+    "tags": [
+        "The Royal Collection"
+    ],
     "isPrize": false,
-
     "weight": 1300,
     "gc": "Medium",
     "seatCount": 2,
@@ -21,34 +22,24 @@
     "enginePos": "Middle",
     "fuelType": "Petrol",
     "mra": 61.84,
-    "ola": 76.60,
+    "ola": 76.6,
     "description": "This might be the strangest Lotus to ever exist, based on stats alone. Card by Based",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/837785297026285578/Lotus_esprit_turbo_se.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/837785079744561192/Lotus_Esprit_Turbo_SE_Stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/837785149953277952/Lotus_Esprit_Turbo_SE_1_Star.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/837785155384115220/Lotus_Esprit_Turbo_SE_2_Star.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/837785195422810122/Lotus_Esprit_Turbo_SE_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/837785178168098826/Lotus_Esprit_Turbo_SE_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/837785165655834644/Lotus_Esprit_Turbo_SE_699.png",
-
     "333TopSpeed": 166,
     "3330to60": 4.5,
     "333Handling": 74,
-
     "666TopSpeed": 169,
     "6660to60": 4.2,
     "666Handling": 77,
-
     "996TopSpeed": 173,
-    "9960to60": 4.0,
+    "9960to60": 4,
     "996Handling": 77,
-
     "969TopSpeed": 173,
     "9690to60": 4.2,
     "969Handling": 80,
-
     "699TopSpeed": 169,
-    "6990to60": 4.0,
-    "699Handling": 80
+    "6990to60": 4,
+    "699Handling": 80,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

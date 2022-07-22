@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 860,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +22,22 @@
     "mra": 33.12,
     "ola": 81.55,
     "description": "The smarter Smart alternative. Card by Andu",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/821107095620288573/iqScion.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821107263463751710/iq.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821107272792408083/iq1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821107276664406068/iq2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821107296167919626/iq996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821107289669894204/iq969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821107283186286662/iq699.png",
-
     "333TopSpeed": 105,
     "3330to60": 9.8,
     "333Handling": 73,
-
     "666TopSpeed": 110,
-    "6660to60": 9.3, 
+    "6660to60": 9.3,
     "666Handling": 76,
-
     "996TopSpeed": 116,
     "9960to60": 8.8,
     "996Handling": 76,
-
     "969TopSpeed": 116,
     "9690to60": 9.3,
     "969Handling": 79,
-
     "699TopSpeed": 110,
     "6990to60": 8.8,
-    "699Handling": 79
+    "699Handling": 79,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

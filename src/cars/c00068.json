@@ -9,9 +9,11 @@
     "handling": 79,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["The Royal Collection", "Grand Tourer"],
+    "tags": [
+        "The Royal Collection",
+        "Grand Tourer"
+    ],
     "isPrize": false,
-
     "weight": 1800,
     "gc": "Low",
     "seatCount": 4,
@@ -23,32 +25,22 @@
     "mra": 88.89,
     "ola": 83.33,
     "description": "Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/855243144466530334/db7GT.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/855244127289737216/db7gt.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/855244131823386634/db7gt333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/855244153993560064/db7gt666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/855244177993760828/db7gt996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/855244170388963358/db7gt969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/855244161376714752/db7gt699.png",
-
     "333TopSpeed": 187,
     "3330to60": 4.6,
     "333Handling": 82,
-
     "666TopSpeed": 190,
     "6660to60": 4.3,
     "666Handling": 84,
-
     "996TopSpeed": 192,
     "9960to60": 4.1,
     "996Handling": 84,
-
     "969TopSpeed": 192,
     "9690to60": 4.3,
     "969Handling": 88,
-
     "699TopSpeed": 190,
     "6990to60": 4.1,
-    "699Handling": 88
+    "699Handling": 88,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

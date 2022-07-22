@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1700,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 61.39,
     "ola": 74.19,
     "description": "Card by Mcnuggets.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/848322650384367661/galant_perf.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/848318831151808512/galant_stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/848318860042174474/galant_1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/848318884841783346/galant_2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/848318968405688350/galant_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/848318935769808936/galant_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/848318909126934538/galant_233.png",
-
     "333TopSpeed": 134,
-    "3330to60": 6.0,
+    "3330to60": 6,
     "333Handling": 72,
-
     "666TopSpeed": 138,
     "6660to60": 5.7,
     "666Handling": 75,
-
     "996TopSpeed": 142,
     "9960to60": 5.4,
     "996Handling": 75,
-
     "969TopSpeed": 142,
     "9690to60": 5.7,
     "969Handling": 78,
-
     "699TopSpeed": 138,
     "6990to60": 5.4,
-    "699Handling": 78
+    "699Handling": 78,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

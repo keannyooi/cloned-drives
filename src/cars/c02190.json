@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1176,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +22,22 @@
     "mra": 76.47,
     "ola": 66.67,
     "description": "Card by Saabsut.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/951575095338496091/exige_s_12_cd2.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/951575159079317524/Exige_S_racehud_stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/951575185314693130/exige_s_racehud_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/951575206294605874/exige_s_racehud_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/951575304609079296/exige_s9_racehud_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/951575281171308544/exige_s9_racehud_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/951575256823386204/exige_s9_racehud_699.png",
-
     "333TopSpeed": 173,
     "3330to60": 3.7,
     "333Handling": 93,
-
     "666TopSpeed": 176,
     "6660to60": 3.5,
     "666Handling": 96,
-
     "996TopSpeed": 179,
     "9960to60": 3.3,
     "996Handling": 96,
-
     "969TopSpeed": 179,
     "9690to60": 3.5,
     "969Handling": 100,
-
     "699TopSpeed": 176,
     "6990to60": 3.3,
-    "699Handling": 100
+    "699Handling": 100,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

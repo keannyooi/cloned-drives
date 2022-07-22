@@ -9,9 +9,11 @@
     "handling": 70,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Kei Car","The Japanese Odyssey"],
+    "tags": [
+        "Kei Car",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 725,
     "gc": "Medium",
     "seatCount": 2,
@@ -23,32 +25,22 @@
     "mra": 13.11,
     "ola": 57.89,
     "description": "Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/930221518590443560/cappuccino.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/930222792333475860/EA11R.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/930222799203758100/EA11R333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/930222806258552872/EA11R666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/930222835631276082/EA11R996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/930222825359413248/EA11R969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/930222815863525407/EA11R699.png",
-
     "333TopSpeed": 89,
     "3330to60": 10.8,
     "333Handling": 72,
-
     "666TopSpeed": 96,
     "6660to60": 10.3,
     "666Handling": 75,
-
     "996TopSpeed": 102,
     "9960to60": 9.7,
     "996Handling": 75,
-
     "969TopSpeed": 102,
     "9690to60": 10.3,
     "969Handling": 78,
-
     "699TopSpeed": 96,
     "6990to60": 9.7,
-    "699Handling": 78
+    "699Handling": 78,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

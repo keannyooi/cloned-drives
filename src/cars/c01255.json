@@ -9,9 +9,10 @@
     "handling": 76,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Eco-Friendly"],
+    "tags": [
+        "Eco-Friendly"
+    ],
     "isPrize": false,
-
     "weight": 1611,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 63.03,
     "ola": 87.52,
     "description": "Even at the absolute lowest price, the Model 3 is still considered out of reach for some poor EV buyers. Card by keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/858544500426145822/tesla_model_3_standard_range.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/858541511112261652/model_3_standard_000.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/858541516196282378/model_3_standard_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/858541521557389342/model_3_standard_666.jpg",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/858541537615937546/model_3_standard_996.jpg",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/858541532448686120/model_3_standard_969.jpg",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/858541528140742656/model_3_standard_699.jpg",
-
     "333TopSpeed": 139,
     "3330to60": 5.1,
     "333Handling": 79,
-
     "666TopSpeed": 143,
     "6660to60": 4.9,
     "666Handling": 81,
-
     "996TopSpeed": 147,
     "9960to60": 4.6,
     "996Handling": 81,
-
     "969TopSpeed": 147,
     "9690to60": 4.9,
     "969Handling": 84,
-
     "699TopSpeed": 143,
     "6990to60": 4.6,
-    "699Handling": 84
+    "699Handling": 84,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

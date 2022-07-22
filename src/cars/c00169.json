@@ -9,9 +9,10 @@
     "handling": 77,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Eco-Friendly"],
+    "tags": [
+        "Eco-Friendly"
+    ],
     "isPrize": false,
-
     "weight": 2200,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 58.54,
     "ola": 69,
     "description": "The most eco-friendly way to arrive at the Siemens executive meeting. By Bnuuy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819237083985084506/745exdrive.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819550518682714152/745e.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819550529046839357/745e333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819550543311142932/745e666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819550614480093214/745e996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819550586185580564/745e969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819550566325551104/745e699.png",
-
     "333TopSpeed": 158,
     "3330to60": 4.6,
     "333Handling": 80,
-
     "666TopSpeed": 162,
     "6660to60": 4.3,
     "666Handling": 82,
-
-	"996TopSpeed": 165,
+    "996TopSpeed": 165,
     "9960to60": 4.1,
     "996Handling": 82,
-
     "969TopSpeed": 165,
     "9690to60": 4.3,
     "969Handling": 85,
-
     "699TopSpeed": 162,
     "6990to60": 4.1,
-    "699Handling": 85
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -9,9 +9,12 @@
     "handling": 90,
     "driveType": "4WD",
     "tyreType": "Slick",
-    "tags": ["Unique", "Concept", "Motorsport"],
+    "tags": [
+        "Unique",
+        "Concept",
+        "Motorsport"
+    ],
     "isPrize": true,
-
     "weight": 930,
     "gc": "Medium",
     "seatCount": 2,
@@ -23,32 +26,22 @@
     "mra": 84.61,
     "ola": 90.9,
     "description": "A unicorn car rebuilt in 2010. Card by Lemon.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/947969421706686504/Lancia_ECV.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/947969224926695424/Lancia_ECV_stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/947969230672916570/Lancia_ECV_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/947969254932770856/Lancia_ECV_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/947969333403992124/Lancia_ECV_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/947969299832799273/Lancia_ECV_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/947969273186381834/Lancia_ECV_699.png",
-
     "333TopSpeed": 147,
     "3330to60": 2.1,
     "333Handling": 93,
-
     "666TopSpeed": 150,
-    "6660to60": 2.0,
+    "6660to60": 2,
     "666Handling": 96,
-
     "996TopSpeed": 154,
     "9960to60": 1.9,
     "996Handling": 96,
-
     "969TopSpeed": 154,
-    "9690to60": 2.0,
+    "9690to60": 2,
     "969Handling": 100,
-
     "699TopSpeed": 150,
     "6990to60": 1.9,
-    "699Handling": 100
+    "699Handling": 100,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

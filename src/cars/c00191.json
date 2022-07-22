@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1990,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 70.32,
     "ola": 68.42,
     "description": "Card by Macan.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/828007519825166406/M550i_xDrive_18.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/828007607620075560/BMW_M550i_xDrive_2018_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/828007615371673650/BMW_M550i_xDrive_2018_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/828007621188911114/BMW_M550i_xDrive_2018_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/828007642906492968/BMW_M550i_xDrive_2018_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/828007638997401640/BMW_M550i_xDrive_2018_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/828007630999781437/BMW_M550i_xDrive_2018_699.png",
-
     "333TopSpeed": 158,
     "3330to60": 3.6,
     "333Handling": 88,
-
     "666TopSpeed": 162,
     "6660to60": 3.4,
     "666Handling": 91,
-
-	"996TopSpeed": 165,
+    "996TopSpeed": 165,
     "9960to60": 3.2,
     "996Handling": 91,
-
     "969TopSpeed": 165,
     "9690to60": 3.4,
     "969Handling": 94,
-
     "699TopSpeed": 162,
     "6990to60": 3.2,
-    "699Handling": 94
+    "699Handling": 94,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

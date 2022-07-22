@@ -1,6 +1,9 @@
 {
     "rq": 72,
-    "make": ["Alpina", "BMW"],
+    "make": [
+        "Alpina",
+        "BMW"
+    ],
     "model": "B4 Bi-Turbo Cabrio",
     "modelYear": 2014,
     "country": "DE",
@@ -9,9 +12,12 @@
     "handling": 83,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Street Racer", "Tuner", "Sleeper"],
+    "tags": [
+        "Street Racer",
+        "Tuner",
+        "Sleeper"
+    ],
     "isPrize": false,
-
     "weight": 1840,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +29,22 @@
     "mra": 81.13,
     "ola": 88.37,
     "description": "Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/851226641723031563/alpinab4bitubro.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/851226765631291422/AlpinaB4cabrio.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/851226770010013726/AlpinaB4cabrio333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/851226775299293184/AlpinaB4cabrio666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/851226799677767751/AlpinaB4cabrio996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/851226790855966780/AlpinaB4cabrio969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/851226782823743538/AlpinaB4cabrio699.png",
-
     "333TopSpeed": 190,
     "3330to60": 4.1,
     "333Handling": 86,
-
     "666TopSpeed": 193,
     "6660to60": 3.9,
     "666Handling": 88,
-
     "996TopSpeed": 195,
     "9960to60": 3.7,
     "996Handling": 88,
-
     "969TopSpeed": 195,
     "9690to60": 3.9,
     "969Handling": 92,
-
     "699TopSpeed": 193,
     "6990to60": 3.7,
-    "699Handling": 92
+    "699Handling": 92,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

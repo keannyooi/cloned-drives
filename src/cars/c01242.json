@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1319,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 44.02,
     "ola": 67.39,
     "description": "A little Suzuki crossover that can go anywhere. Card by Spence.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/849824015672541214/image0.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/849824083113148466/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/849824100318969876/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/849824116001472552/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/849824166533922827/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/849824153707216996/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/849824139120082954/image0.jpg",
-
     "333TopSpeed": 119,
     "3330to60": 8.7,
     "333Handling": 73,
-
     "666TopSpeed": 123,
     "6660to60": 8.3,
     "666Handling": 76,
-
     "996TopSpeed": 128,
     "9960to60": 7.8,
     "996Handling": 76,
-
     "969TopSpeed": 128,
     "9690to60": 8.3,
     "969Handling": 79,
-
     "699TopSpeed": 123,
     "6990to60": 7.8,
-    "699Handling": 79
+    "699Handling": 79,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

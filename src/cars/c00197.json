@@ -11,7 +11,6 @@
     "tyreType": "All-Surface",
     "tags": [],
     "isPrize": false,
-
     "weight": 1694,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 59.19,
     "ola": 71.21,
     "description": "Card by Andu",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/822058902187147294/X1xdrive28i.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/822059841601142784/X1New28.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/822059847763755028/X1New28-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/822059854235303936/X1New28-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/822059874623815690/X1New28-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/822059866796982272/X1New28-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/822059860001685504/X1New28-699.png",
-
     "333TopSpeed": 133,
     "3330to60": 6.3,
     "333Handling": 80,
-
     "666TopSpeed": 137,
     "6660to60": 5.9,
     "666Handling": 82,
-
-	"996TopSpeed": 141,
+    "996TopSpeed": 141,
     "9960to60": 5.6,
     "996Handling": 82,
-
     "969TopSpeed": 141,
     "9690to60": 5.9,
     "969Handling": 85,
-
-	"699TopSpeed": 137,
+    "699TopSpeed": 137,
     "6990to60": 5.6,
-    "699Handling": 85
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

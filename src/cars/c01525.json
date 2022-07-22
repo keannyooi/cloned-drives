@@ -9,9 +9,10 @@
     "handling": 73,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 887,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +24,22 @@
     "mra": 34.2,
     "ola": 69.47,
     "description": "660cc Turbo says bai, 1.3L Toyota engine says hai. Card by Spence.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/898364618852925461/image0.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/898365109620052008/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/898365133137543278/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/898365153005932554/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/898365192273023036/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/898365179606233108/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/898365166570315877/image0.jpg",
-
     "333TopSpeed": 117,
     "3330to60": 8.8,
     "333Handling": 75,
-
     "666TopSpeed": 121,
     "6660to60": 8.4,
     "666Handling": 78,
-
     "996TopSpeed": 126,
     "9960to60": 7.9,
     "996Handling": 78,
-
     "969TopSpeed": 126,
     "9690to60": 8.4,
     "969Handling": 81,
-
     "699TopSpeed": 121,
     "6990to60": 7.9,
-    "699Handling": 81
+    "699Handling": 81,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

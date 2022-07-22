@@ -9,9 +9,12 @@
     "handling": 76,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Concept", "Unique", "Oddity"],
+    "tags": [
+        "Concept",
+        "Unique",
+        "Oddity"
+    ],
     "isPrize": false,
-
     "weight": 1600,
     "gc": "Low",
     "seatCount": 4,
@@ -23,32 +26,22 @@
     "mra": 86.76,
     "ola": 91.3,
     "description": "Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/966803925934153808/Phaeton.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/966804654774186015/Phaetoncon.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/966804660058992740/Phaetoncon1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/966804666669232209/Phaetoncon2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/966804685916885023/Phaetoncon996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/966804679449264218/Phaetoncon969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/966804672935522324/Phaetoncon699.png",
-
     "333TopSpeed": 170,
     "3330to60": 4.4,
     "333Handling": 79,
-
     "666TopSpeed": 173,
     "6660to60": 4.1,
     "666Handling": 81,
-
     "996TopSpeed": 176,
     "9960to60": 3.9,
     "996Handling": 81,
-
     "969TopSpeed": 176,
     "9690to60": 4.1,
     "969Handling": 84,
-
     "699TopSpeed": 173,
     "6990to60": 3.9,
-    "699Handling": 84
+    "699Handling": 84,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

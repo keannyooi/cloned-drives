@@ -9,9 +9,10 @@
     "handling": 81,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Eco-Friendly"],
+    "tags": [
+        "Eco-Friendly"
+    ],
     "isPrize": false,
-
     "weight": 2060,
     "gc": "Medium",
     "seatCount": 2,
@@ -23,32 +24,22 @@
     "mra": 66.67,
     "ola": 84.62,
     "description": "Haram. Card by Connor.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/821470525003399208/B.LexusLC500h.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821470640359735357/B.LexusLC500.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821470648789499996/B.LexusLC500-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821470655719276614/B.LexusLC500-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821470699826839592/B.LexusLC500-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821470682750910484/B.LexusLC500-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821470669447233546/B.LexusLC500-699.png",
-
     "333TopSpeed": 158,
     "3330to60": 4.9,
     "333Handling": 84,
-
     "666TopSpeed": 162,
     "6660to60": 4.7,
     "666Handling": 86,
-
     "996TopSpeed": 165,
     "9960to60": 4.4,
     "996Handling": 86,
-
     "969TopSpeed": 165,
     "9690to60": 4.7,
     "969Handling": 90,
-
     "699TopSpeed": 162,
     "6990to60": 4.4,
-    "699Handling": 90
+    "699Handling": 90,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

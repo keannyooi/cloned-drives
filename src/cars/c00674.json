@@ -5,13 +5,16 @@
     "modelYear": 1985,
     "country": "IT",
     "topSpeed": 140,
-    "0to60": 6.0,
+    "0to60": 6,
     "handling": 74,
     "driveType": "4WD",
     "tyreType": "Performance",
-	"tags": ["Hot Hatch", "Style Icon", "Sleeper"],
+    "tags": [
+        "Hot Hatch",
+        "Style Icon",
+        "Sleeper"
+    ],
     "isPrize": true,
-
     "weight": 1200,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +26,22 @@
     "mra": 75.95,
     "ola": 83.02,
     "description": "Better known as the 'Stradale', this Delta was five times more expensive than any Delta at the time. Card by havvy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/821878065113858078/unknown.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821878119169654794/000_delta2.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821878124672712724/111_delta2.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821878129232052225/222_delta2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821878156608536626/332_delta2.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821878153052028968/323_delta2.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821878143161466891/233_delta2.png",
-
     "333TopSpeed": 144,
     "3330to60": 5.7,
     "333Handling": 76,
-
     "666TopSpeed": 147,
     "6660to60": 5.4,
     "666Handling": 79,
-
     "996TopSpeed": 151,
     "9960to60": 5.1,
     "996Handling": 79,
-
     "969TopSpeed": 151,
     "9690to60": 5.4,
     "969Handling": 82,
-
-	"699TopSpeed": 147,
+    "699TopSpeed": 147,
     "6990to60": 5.1,
-    "699Handling": 82
+    "699Handling": 82,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

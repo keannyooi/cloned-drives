@@ -9,9 +9,12 @@
     "handling": 92,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Concept", "Eco-Friendly", "Hypercar"],
+    "tags": [
+        "Concept",
+        "Eco-Friendly",
+        "Hypercar"
+    ],
     "isPrize": true,
-
     "weight": 2077,
     "gc": "Low",
     "seatCount": 4,
@@ -23,32 +26,22 @@
     "mra": 82.61,
     "ola": 94.74,
     "description": "The creator of Cloned Drives' all time favorite car, fight me dammit. Card by keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/858545729438089216/tesla_roadster_prototype.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/858543527847657513/roadster_2.0_000.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/858543533886799913/roadster_2.0_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/858543537620516885/roadster_2.0_666.jpg",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/858543548357541928/roadster_2.0_996.jpg",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/858543546150551552/roadster_2.0_969.jpg",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/858543541465645076/roadster_2.0_699.jpg",
-
     "333TopSpeed": 252,
     "3330to60": 1.8,
     "333Handling": 95,
-
     "666TopSpeed": 254,
     "6660to60": 1.7,
     "666Handling": 98,
-
     "996TopSpeed": 256,
     "9960to60": 1.6,
     "996Handling": 98,
-
     "969TopSpeed": 256,
     "9690to60": 1.7,
     "969Handling": 102,
-
     "699TopSpeed": 254,
     "6990to60": 1.6,
-    "699Handling": 102
+    "699Handling": 102,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

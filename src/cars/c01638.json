@@ -9,9 +9,12 @@
     "handling": 77,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Street Racer", "Innovative","The Japanese Odyssey"],
+    "tags": [
+        "Street Racer",
+        "Innovative",
+        "The Japanese Odyssey"
+    ],
     "isPrize": true,
-
     "weight": 1240,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +26,22 @@
     "mra": 56.67,
     "ola": 70.59,
     "description": "The first Evo. Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/869168848874647572/evo1gsr.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/869169377340178442/evo1gsr.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/869169394461315113/evo1gsr333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/869169403575554088/evo1gsr666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/869169433384480768/evo1gsr996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/869169420700893204/evo1gsr969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/869169412073205870/evo1gsr699.png",
-
     "333TopSpeed": 117,
     "3330to60": 4.8,
     "333Handling": 80,
-
     "666TopSpeed": 121,
     "6660to60": 4.6,
     "666Handling": 82,
-
     "996TopSpeed": 126,
     "9960to60": 4.3,
     "996Handling": 82,
-
     "969TopSpeed": 126,
     "9690to60": 4.6,
     "969Handling": 85,
-
     "699TopSpeed": 121,
     "6990to60": 4.3,
-    "699Handling": 85
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

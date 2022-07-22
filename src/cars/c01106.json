@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1300,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +22,22 @@
     "mra": 81.67,
     "ola": 77.55,
     "description": "Only 14 were produced in total and only for sale in Europe. Card by Johnny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/827598053829115954/cate-test.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/827599666970755082/Porsche-968-Turbo-S.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/827599671685021737/Porsche-968-Turbo-S-1-star.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/827599676794470440/Porsche-968-Turbo-S-2-star.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/827599709790273566/Porsche-968-Turbo-S-332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/827599697488511006/Porsche-968-Turbo-S-323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/827599687833747526/Porsche-968-Turbo-S-233.png",
-
     "333TopSpeed": 180,
     "3330to60": 4.7,
     "333Handling": 90,
-
     "666TopSpeed": 183,
     "6660to60": 4.4,
     "666Handling": 93,
-
     "996TopSpeed": 186,
     "9960to60": 4.2,
     "996Handling": 93,
-
     "969TopSpeed": 186,
     "9690to60": 4.4,
     "969Handling": 97,
-
     "699TopSpeed": 183,
     "6990to60": 4.2,
-    "699Handling": 97
+    "699Handling": 97,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

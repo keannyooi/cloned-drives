@@ -9,9 +9,10 @@
     "handling": 92,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Track Day"],
+    "tags": [
+        "Track Day"
+    ],
     "isPrize": false,
-
     "weight": 1530,
     "gc": "Low",
     "seatCount": 2,
@@ -20,35 +21,25 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 88.00,
+    "mra": 88,
     "ola": 81.82,
     "description": "Finally, a real M car again. Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/842473424550887454/M3GTS.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/842473786820395069/M3GTS.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/842473794936373323/M3GTS333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/842473802750885918/M3GTS666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/842473834124279808/M3GTS996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/842473827279699998/M3GTS969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/842473819142226030/M3GTS699.png",
-
     "333TopSpeed": 193,
     "3330to60": 4.2,
     "333Handling": 95,
-
     "666TopSpeed": 195,
-    "6660to60": 4.0,
+    "6660to60": 4,
     "666Handling": 98,
-
     "996TopSpeed": 198,
     "9960to60": 3.7,
     "996Handling": 98,
-
     "969TopSpeed": 198,
-    "9690to60": 4.0,
+    "9690to60": 4,
     "969Handling": 102,
-
     "699TopSpeed": 195,
     "6990to60": 3.7,
-    "699Handling": 102
+    "699Handling": 102,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -5,13 +5,15 @@
     "modelYear": 2021,
     "country": "US",
     "topSpeed": 60,
-    "0to60": 5.0,
+    "0to60": 5,
     "handling": 43,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Eco-Friendly", "Innovative"],
+    "tags": [
+        "Eco-Friendly",
+        "Innovative"
+    ],
     "isPrize": true,
-
     "weight": 11340,
     "gc": "Low",
     "seatCount": 1,
@@ -20,35 +22,25 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Electric",
-    "mra": 0.00,
-    "ola": 100.00,
+    "mra": 0,
+    "ola": 100,
     "description": "An improbable idea executed as well as it can be. Card by DodgeDemon",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/867383795337134100/semi_thing.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/829691261476536340/semi_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/829691275586306118/semi_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/829691283295305748/semi_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/829691314924027934/semi_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/829691304627142660/semi_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/829691293147856916/semi_699.jpg",
-
     "333TopSpeed": 69,
     "3330to60": 4.8,
     "333Handling": 44,
-
     "666TopSpeed": 77,
     "6660to60": 4.5,
     "666Handling": 46,
-
     "996TopSpeed": 86,
     "9960to60": 4.3,
     "996Handling": 46,
-
     "969TopSpeed": 86,
     "9690to60": 4.5,
     "969Handling": 48,
-
     "699TopSpeed": 77,
     "6990to60": 4.3,
-    "699Handling": 48
+    "699Handling": 48,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

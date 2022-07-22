@@ -9,9 +9,12 @@
     "handling": 74,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Concept", "Unique", "Ultra Expensive"],
+    "tags": [
+        "Concept",
+        "Unique",
+        "Ultra Expensive"
+    ],
     "isPrize": true,
-
     "weight": 1085,
     "gc": "Low",
     "seatCount": 4,
@@ -21,34 +24,24 @@
     "enginePos": "Middle",
     "fuelType": "Petrol",
     "mra": 78.69,
-    "ola": 100.00,
+    "ola": 100,
     "description": "Card by Age.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/851492172926812170/image0.jpg",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/851492260481728542/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/851492276114554941/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/851492301061881856/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/851492335615475792/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/851492349980704808/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/851492319366086696/image0.jpg",
-
     "333TopSpeed": 172,
     "3330to60": 4.6,
     "333Handling": 76,
-
     "666TopSpeed": 175,
     "6660to60": 4.3,
     "666Handling": 79,
-
     "996TopSpeed": 178,
     "9960to60": 4.1,
     "996Handling": 79,
-
     "969TopSpeed": 178,
     "9690to60": 4.3,
     "969Handling": 82,
-
     "699TopSpeed": 175,
     "6990to60": 4.1,
-    "699Handling": 82
+    "699Handling": 82,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

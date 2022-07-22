@@ -9,9 +9,10 @@
     "handling": 96,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": ["Motorsport"],
+    "tags": [
+        "Motorsport"
+    ],
     "isPrize": true,
-
     "weight": 1284,
     "gc": "Low",
     "seatCount": 1,
@@ -21,34 +22,24 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 88.57,
-    "ola": 66.50,
+    "ola": 66.5,
     "description": "WOAH ok slow down there. Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/821039006044782602/M3GT2.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821039229831479356/M3R.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821039234504720414/M3R333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821039241680781322/M3R666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821039269694013460/M3R996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821039260231794778/M3R969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821039250489344010/M3R699.png",
-
     "333TopSpeed": 165,
     "3330to60": 2.9,
     "333Handling": 99,
-
     "666TopSpeed": 168,
     "6660to60": 2.8,
     "666Handling": 102,
-
     "996TopSpeed": 172,
     "9960to60": 2.6,
     "996Handling": 102,
-
     "969TopSpeed": 172,
     "9690to60": 2.8,
     "969Handling": 107,
-
     "699TopSpeed": 168,
     "6990to60": 2.6,
-    "699Handling": 107
+    "699Handling": 107,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

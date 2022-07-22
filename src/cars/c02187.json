@@ -9,9 +9,11 @@
     "handling": 93,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Track Day", "Eargasm"],
+    "tags": [
+        "Track Day",
+        "Eargasm"
+    ],
     "isPrize": false,
-
     "weight": 1056,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +25,22 @@
     "mra": 83.33,
     "ola": 68.57,
     "description": "Card by Tom.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/950083726690353183/Lotus_Exige_Cup_430_Type_79_2018.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/950345538040102942/430_79_111.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/950345549746438214/430_79_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/950345560081195048/430_79_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/950345576984248370/430_79_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/950345572211122216/430_79_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/950345566393614356/430_79_699.jpg",
-
     "333TopSpeed": 183,
     "3330to60": 3.3,
     "333Handling": 96,
-
     "666TopSpeed": 186,
     "6660to60": 3.2,
     "666Handling": 99,
-
     "996TopSpeed": 189,
-    "9960to60": 3.0,
+    "9960to60": 3,
     "996Handling": 99,
-
     "969TopSpeed": 189,
     "9690to60": 3.2,
     "969Handling": 103,
-
     "699TopSpeed": 186,
-    "6990to60": 3.0,
-    "699Handling": 103
+    "6990to60": 3,
+    "699Handling": 103,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -9,9 +9,11 @@
     "handling": 95,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Unique", "Ultra Expensive"],
+    "tags": [
+        "Unique",
+        "Ultra Expensive"
+    ],
     "isPrize": true,
-
     "weight": 1218,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +25,22 @@
     "mra": 131.25,
     "ola": 85.71,
     "description": "As if the stock Huayra is not enough, this is a factory tuned beast. Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/948582346406375434/HuayraPearl.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/948582717635838012/Pearl.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/948582725030412328/Pearl333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/948582732496252938/Pearl666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/948582771054481418/Pearl996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/948582759545327616/Pearl969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/948582751030870016/Pearl699.png",
-
     "333TopSpeed": 238,
-    "3330to60": 2.0,
+    "3330to60": 2,
     "333Handling": 98,
-
     "666TopSpeed": 240,
     "6660to60": 1.9,
     "666Handling": 101,
-
     "996TopSpeed": 243,
     "9960to60": 1.8,
     "996Handling": 101,
-
     "969TopSpeed": 243,
     "9690to60": 1.9,
     "969Handling": 105,
-
     "699TopSpeed": 240,
     "6990to60": 1.8,
-    "699Handling": 105
+    "699Handling": 105,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

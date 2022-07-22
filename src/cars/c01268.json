@@ -9,9 +9,11 @@
     "handling": 79,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Eco-Friendly", "Innovative"],
+    "tags": [
+        "Eco-Friendly",
+        "Innovative"
+    ],
     "isPrize": false,
-
     "weight": 2129,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +25,22 @@
     "mra": 67.55,
     "ola": 93.58,
     "description": "The original Tesla performance sedan, which is nothing compared to the performance models offered a few years later. Card by keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/845922465939062794/tesla_model_s_p85.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/845922302839095316/white_tesla_000.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/845922311605321740/white_tesla_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/845922315644043294/white_tesla_666.jpg",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/845922329740443699/white_tesla_996.jpg",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/845922326573744149/white_tesla_969.jpg",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/845922319884353546/white_tesla_699.jpg",
-
     "333TopSpeed": 136,
     "3330to60": 4.2,
     "333Handling": 82,
-
     "666TopSpeed": 140,
-    "6660to60": 4.0,
+    "6660to60": 4,
     "666Handling": 84,
-
     "996TopSpeed": 144,
     "9960to60": 3.7,
     "996Handling": 84,
-
     "969TopSpeed": 144,
-    "9690to60": 4.0,
+    "9690to60": 4,
     "969Handling": 88,
-
     "699TopSpeed": 140,
     "6990to60": 3.7,
-    "699Handling": 88
+    "699Handling": 88,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

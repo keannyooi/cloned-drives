@@ -9,9 +9,10 @@
     "handling": 72,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Eco-Friendly"],
+    "tags": [
+        "Eco-Friendly"
+    ],
     "isPrize": false,
-
     "weight": 1616,
     "gc": "Medium",
     "seatCount": 5,
@@ -20,35 +21,25 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Electric",
-    "mra": 20.00,
+    "mra": 20,
     "ola": 89.55,
     "description": "Promising stats and tech to compete with Tesla but unfortunately it didn't electrify buyer’s hearts. Card by Spence",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/865620116636565544/Bolt.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/824673218743894046/Bolt.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824673224284569710/Bolt1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824673230018838548/Bolt2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824673252898373702/Bolt996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824673246578343966/Bolt969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824673237090304050/Bolt699.png",
-
     "333TopSpeed": 99,
     "3330to60": 6.2,
     "333Handling": 74,
-
     "666TopSpeed": 104,
-    "6660to60": 5.9, 
+    "6660to60": 5.9,
     "666Handling": 77,
-
     "996TopSpeed": 110,
     "9960to60": 5.5,
     "996Handling": 77,
-
     "969TopSpeed": 110,
     "9690to60": 5.9,
     "969Handling": 80,
-
     "699TopSpeed": 104,
     "6990to60": 5.5,
-    "699Handling": 80
+    "699Handling": 80,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -52,7 +52,7 @@ module.exports = {
                             ]
                         });
                         return successMessage.sendMessage();
-                    }, 4000);
+                    }, 5000);
                 }
                 else {
                     const errorMessage = new ErrorMessage({

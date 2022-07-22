@@ -1,4 +1,4 @@
-﻿{
+{
     "rq": 33,
     "make": "Lotus",
     "model": "Elan Sprint Emission",
@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 680,
     "gc": "Medium",
     "seatCount": 2,
@@ -23,32 +22,22 @@
     "mra": 46.41,
     "ola": 69.05,
     "description": "Sprinting with lower hp cause USA regulations. Card by Andu",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/822058715154219028/ElanEmissions.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/822059507110772836/ElanE.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/822059513967542302/ElanE1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/822059517960912907/ElanE2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/822059539691077683/ElanE996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/822059533714849842/ElanE969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/822059527196377098/ElanE699.png",
-
     "333TopSpeed": 117,
-    "3330to60": 8.0,
+    "3330to60": 8,
     "333Handling": 67,
-
     "666TopSpeed": 121,
-    "6660to60": 7.6, 
+    "6660to60": 7.6,
     "666Handling": 69,
-
     "996TopSpeed": 126,
     "9960to60": 7.1,
     "996Handling": 69,
-
     "969TopSpeed": 126,
     "9690to60": 7.6,
     "969Handling": 72,
-
     "699TopSpeed": 121,
     "6990to60": 7.1,
-    "699Handling": 72
+    "699Handling": 72,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

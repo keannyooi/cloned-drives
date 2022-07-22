@@ -9,9 +9,13 @@
     "handling": 66,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Unique", "Ultra Expensive", "Oddity", "Servers Choice"],
+    "tags": [
+        "Unique",
+        "Ultra Expensive",
+        "Oddity",
+        "Servers Choice"
+    ],
     "isPrize": true,
-
     "weight": 2049,
     "gc": "Low",
     "seatCount": 1,
@@ -23,32 +27,22 @@
     "mra": 93.75,
     "ola": 102.73,
     "description": "When fast meant fast. Card by Johnny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820061528132681758/cate-test.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820061724693757972/Napier-Railton.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820061733044879360/Napier-Railton-1-star.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820061755078213633/Napier-Railton-2-star.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820061788946300959/Napier-Railton-332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820061795430957096/Napier-Railton-323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820061779936804874/Napier-Railton-233.png",
-
     "333TopSpeed": 182,
     "3330to60": 7.1,
     "333Handling": 68,
-
     "666TopSpeed": 185,
-    "6660to60": 6.8, 
+    "6660to60": 6.8,
     "666Handling": 70,
-
     "996TopSpeed": 188,
     "9960to60": 6.4,
     "996Handling": 70,
-
     "969TopSpeed": 188,
     "9690to60": 6.8,
     "969Handling": 73,
-
     "699TopSpeed": 185,
     "6990to60": 6.4,
-    "699Handling": 73
+    "699Handling": 73,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

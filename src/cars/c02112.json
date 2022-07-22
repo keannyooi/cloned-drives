@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 2072,
     "gc": "Low",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 74.13,
     "ola": 88.37,
     "description": "Card by Olimato.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/948493620921630740/bmw_650i_xdrive_gc.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/948493700395327548/650i_xdrive_stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/948493732188155904/650i_xdrive_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/948493742254481408/650i_xdrive_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/948493775943127066/650i_xdrive_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/948493766006824980/650i_xdrive_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/948493755445547018/650i_xdrive_699.png",
-
     "333TopSpeed": 158,
     "3330to60": 4.1,
     "333Handling": 86,
-
     "666TopSpeed": 162,
     "6660to60": 3.9,
     "666Handling": 88,
-
     "996TopSpeed": 165,
     "9960to60": 3.7,
     "996Handling": 88,
-
     "969TopSpeed": 165,
     "9690to60": 3.9,
     "969Handling": 92,
-
     "699TopSpeed": 162,
     "6990to60": 3.7,
-    "699Handling": 92
+    "699Handling": 92,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

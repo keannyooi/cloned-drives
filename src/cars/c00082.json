@@ -9,9 +9,11 @@
     "handling": 85,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": ["OG", "Servers Choice"],
+    "tags": [
+        "OG",
+        "Servers Choice"
+    ],
     "isPrize": false,
-
     "weight": 2245,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +25,22 @@
     "mra": 71.76,
     "ola": 82.2,
     "description": "One of the only cars in Cloned Drives to have gone through 4 Creators (Keanny, DodgeDemon, Macan and Exist). Card by Exist.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/948241085434589255/CD_Aston_Martin_DBX.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/948241138672881745/stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/948241159908626512/333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/948241212828155914/666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/948241304339484692/996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/948241284169101352/969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/948241240959352892/699.png",
-
     "333TopSpeed": 186,
     "3330to60": 3.9,
     "333Handling": 88,
-
     "666TopSpeed": 189,
     "6660to60": 3.7,
     "666Handling": 91,
-
     "996TopSpeed": 192,
     "9960to60": 3.5,
     "996Handling": 91,
-
     "969TopSpeed": 192,
     "9690to60": 3.7,
     "969Handling": 94,
-
     "699TopSpeed": 189,
     "6990to60": 3.5,
-    "699Handling": 94
+    "699Handling": 94,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

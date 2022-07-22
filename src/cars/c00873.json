@@ -5,13 +5,14 @@
     "modelYear": 1962,
     "country": "GB",
     "topSpeed": 102,
-    "0to60": 10.0,
+    "0to60": 10,
     "handling": 72,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["The Royal Collection"],
+    "tags": [
+        "The Royal Collection"
+    ],
     "isPrize": false,
-
     "weight": 910,
     "gc": "Low",
     "seatCount": 2,
@@ -21,34 +22,24 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 15.06,
-    "ola": 70.00,
+    "ola": 70,
     "description": "Cute. Card by Exist",
-
     "card": "https://media.discordapp.net/attachments/819199720249360384/847439944141766706/CD_MG_B_Roadster.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/847440027281784922/CD_MG_B_Roadster_000.png",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/847440031647399956/CD_MG_B_Roadster_333.png",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/847440035027484692/CD_MG_B_Roadster_666.png",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/847440053852438578/CD_MG_B_Roadster_996.png",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/847440048668672019/CD_MG_B_Roadster_969.png",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/847440042649321482/CD_MG_B_Roadster_699.png",
-
     "333TopSpeed": 107,
     "3330to60": 9.5,
     "333Handling": 74,
-
     "666TopSpeed": 112,
-    "6660to60": 9.0,
+    "6660to60": 9,
     "666Handling": 77,
-
     "996TopSpeed": 117,
     "9960to60": 8.5,
     "996Handling": 77,
-
     "969TopSpeed": 117,
-    "9690to60": 9.0,
+    "9690to60": 9,
     "969Handling": 80,
-
     "699TopSpeed": 112,
     "6990to60": 8.5,
-    "699Handling": 80
+    "699Handling": 80,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

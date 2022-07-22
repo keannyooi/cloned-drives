@@ -1,6 +1,9 @@
-﻿{
+{
     "rq": 27,
-    "make": ["Renault Sport", "Renault"],
+    "make": [
+        "Renault Sport",
+        "Renault"
+    ],
     "model": "Twingo 133 Cup",
     "modelYear": 2008,
     "country": "FR",
@@ -9,9 +12,10 @@
     "handling": 77,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Hot Hatch"],
+    "tags": [
+        "Hot Hatch"
+    ],
     "isPrize": false,
-
     "weight": 1039,
     "gc": "Low",
     "seatCount": 4,
@@ -23,33 +27,22 @@
     "mra": 51.22,
     "ola": 73.81,
     "description": "Sporty Twingo here to save the world. Card by Fried",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/825043244063785030/Renault_Sport_Twingo_133_Cup.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/825097731202088980/Renault_Sport_Twingo_133_Hud_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/825097742136901672/Renault_Sport_Twingo_133_Hud_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/825097755470200882/Renault_Sport_Twingo_133_Hud_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/825097793295089714/Renault_Sport_Twingo_133_Hud_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/825097780146077706/Renault_Sport_Twingo_133_Hud_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/825097766522454107/Renault_Sport_Twingo_133_Hud_699.png",
-
-
     "333TopSpeed": 129,
-    "3330to60": 8.0,
+    "3330to60": 8,
     "333Handling": 80,
-
     "666TopSpeed": 133,
-    "6660to60": 7.6, 
+    "6660to60": 7.6,
     "666Handling": 82,
-
     "996TopSpeed": 137,
     "9960to60": 7.1,
     "996Handling": 82,
-
     "969TopSpeed": 137,
     "9690to60": 7.6,
     "969Handling": 85,
-
     "699TopSpeed": 133,
     "6990to60": 7.1,
-    "699Handling": 85
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -1,6 +1,9 @@
 {
     "rq": 100,
-    "make": ["TechArt", "Porsche"],
+    "make": [
+        "TechArt",
+        "Porsche"
+    ],
     "model": "GTStreet R Cabriolet",
     "modelYear": 2021,
     "country": "DE",
@@ -9,9 +12,11 @@
     "handling": 94,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Tuner", "Supercar"],
+    "tags": [
+        "Tuner",
+        "Supercar"
+    ],
     "isPrize": false,
-
     "weight": 1705,
     "gc": "Low",
     "seatCount": 4,
@@ -23,32 +28,22 @@
     "mra": 91.63,
     "ola": 73.04,
     "description": "Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/951463398095355924/techartgtstreetrcabrio.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/938018491154464858/GTStreetRCab.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/938018498804875284/GTStreetRCab333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/938018506237173790/GTStreetRCab666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/938018528374698004/GTStreetRCab996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/938018520623628288/GTStreetRCab969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/938018512394399754/GTStreetRCab699.png",
-
     "333TopSpeed": 219,
     "3330to60": 2.2,
     "333Handling": 97,
-
     "666TopSpeed": 222,
     "6660to60": 2.1,
     "666Handling": 100,
-
     "996TopSpeed": 224,
-    "9960to60": 2.0,
+    "9960to60": 2,
     "996Handling": 100,
-
     "969TopSpeed": 224,
     "9690to60": 2.1,
     "969Handling": 104,
-
     "699TopSpeed": 222,
-    "6990to60": 2.0,
-    "699Handling": 104
+    "6990to60": 2,
+    "699Handling": 104,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

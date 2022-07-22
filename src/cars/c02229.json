@@ -1,6 +1,9 @@
 {
     "rq": 74,
-    "make": ["Range Rover", "Land Rover"],
+    "make": [
+        "Range Rover",
+        "Land Rover"
+    ],
     "model": "Velar P400e R-Dynamic",
     "modelYear": 2020,
     "country": "GB",
@@ -9,9 +12,10 @@
     "handling": 76,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": ["Eco-Friendly"],
+    "tags": [
+        "Eco-Friendly"
+    ],
     "isPrize": false,
-
     "weight": 2158,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +27,22 @@
     "mra": 60.71,
     "ola": 74.51,
     "description": "Card by Macan.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/949495061341696040/Range_Rover_Velar_P400e_R-Dynamic_20.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/949498167005704252/Range_Rover_Velar_P400e_R-Dynamic_20_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/949498246936547378/Range_Rover_Velar_P400e_R-Dynamic_20_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/949498310929039400/Range_Rover_Velar_P400e_R-Dynamic_20_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/949498558489444363/Range_Rover_Velar_P400e_R-Dynamic_20_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/949498506928861264/Range_Rover_Velar_P400e_R-Dynamic_20_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/949498463828205629/Range_Rover_Velar_P400e_R-Dynamic_20_699.png",
-
     "333TopSpeed": 134,
     "3330to60": 4.8,
     "333Handling": 79,
-
     "666TopSpeed": 138,
     "6660to60": 4.6,
     "666Handling": 81,
-
     "996TopSpeed": 142,
     "9960to60": 4.3,
     "996Handling": 81,
-
     "969TopSpeed": 142,
     "9690to60": 4.6,
     "969Handling": 84,
-
     "699TopSpeed": 138,
     "6990to60": 4.3,
-    "699Handling": 84
+    "699Handling": 84,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

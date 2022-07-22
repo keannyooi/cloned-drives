@@ -9,9 +9,10 @@
     "handling": 78,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Eco-Friendly"],
+    "tags": [
+        "Eco-Friendly"
+    ],
     "isPrize": false,
-
     "weight": 2440,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 69.53,
     "ola": 80.82,
     "description": "Fun fact: after beating a supercar on a drag race, there is a feature called 'Celebration Mode', which makes the car's gullwing doors go up and down like some kind of victory dance. Card by keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/858545370287439882/tesla_model_x_p90d.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/858543173184520223/model_x_p90d_000.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/858543187282100224/model_x_p90d_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/858543193938853908/model_x_p90d_666.jpg",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/858543208229502996/model_x_p90d_996.jpg",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/858543204507844638/model_x_p90d_969.jpg",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/858543199429853184/model_x_p90d_699.jpg",
-
     "333TopSpeed": 158,
     "3330to60": 3.2,
     "333Handling": 81,
-
     "666TopSpeed": 162,
     "6660to60": 3.1,
     "666Handling": 83,
-
     "996TopSpeed": 165,
     "9960to60": 2.9,
     "996Handling": 83,
-
     "969TopSpeed": 165,
     "9690to60": 3.1,
     "969Handling": 87,
-
     "699TopSpeed": 162,
     "6990to60": 2.9,
-    "699Handling": 87
+    "699Handling": 87,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

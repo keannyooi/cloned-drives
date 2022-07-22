@@ -1,6 +1,9 @@
-﻿{
+{
     "rq": 27,
-    "make": ["Sbarro", "Citroen"],
+    "make": [
+        "Sbarro",
+        "Citroen"
+    ],
     "model": "GT-C1",
     "modelYear": 2006,
     "country": "CH",
@@ -9,9 +12,11 @@
     "handling": 77,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Tuner", "Rest of the World"],
+    "tags": [
+        "Tuner",
+        "Rest of the World"
+    ],
     "isPrize": false,
-
     "weight": 900,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +28,22 @@
     "mra": 51.18,
     "ola": 71.26,
     "description": "Yes, a mini C2 VTS with racing looks and wideness made by students. It's pretty slow, however. Card by keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/845922810990821426/sbarro_gt-c1.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/845921936047210506/gt-c1_000.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/845921941340553256/gt-c1_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/845921946872840192/gt-c1_666.jpg",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/845921960550596608/gt-c1_996.jpg",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/845921956418289674/gt-c1_969.jpg",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/845921951075794954/gt-c1_699.jpg",
-
     "333TopSpeed": 131,
     "3330to60": 8.3,
     "333Handling": 80,
-
     "666TopSpeed": 135,
     "6660to60": 7.8,
     "666Handling": 82,
-
     "996TopSpeed": 139,
     "9960to60": 7.4,
     "996Handling": 82,
-
     "969TopSpeed": 139,
     "9690to60": 7.8,
     "969Handling": 85,
-
     "699TopSpeed": 135,
     "6990to60": 7.4,
-    "699Handling": 85
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

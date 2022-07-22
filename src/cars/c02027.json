@@ -9,9 +9,12 @@
     "handling": 96,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": ["Motorsport", "Unique", "Ultra Expensive"],
+    "tags": [
+        "Motorsport",
+        "Unique",
+        "Ultra Expensive"
+    ],
     "isPrize": true,
-
     "weight": 1100,
     "gc": "Low",
     "seatCount": 1,
@@ -23,32 +26,22 @@
     "mra": 105.08,
     "ola": 82.35,
     "description": "Card by Aqo.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/865492352756219964/ccgt.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/865492603720826900/Koenigsegg_CCGT_2008_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/865492610574581780/Koenigsegg_CCGT_2008_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/865492617017032704/Koenigsegg_CCGT_2008_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/865492633040322590/Koenigsegg_CCGT_2008_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/865492628031406160/Koenigsegg_CCGT_2008_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/865492625977245726/Koenigsegg_CCGT_2008_699.png",
-
     "333TopSpeed": 209,
     "3330to60": 3.2,
     "333Handling": 99,
-
     "666TopSpeed": 211,
     "6660to60": 3.1,
     "666Handling": 102,
-
     "996TopSpeed": 214,
     "9960to60": 2.9,
     "996Handling": 102,
-
     "969TopSpeed": 214,
     "9690to60": 3.1,
     "969Handling": 107,
-
     "699TopSpeed": 211,
     "6990to60": 2.9,
-    "699Handling": 107
+    "699Handling": 107,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 2433,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 68.44,
     "ola": 66.59,
     "description": "Simply put, ridiculous. Card by keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/821008187314536488/trackhawk_but_nippon.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821008964148789298/trackhawk_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821008973331038238/trackhawk_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821008978758598696/trackhawk_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821009021841571851/trackhawk_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821009009145282590/trackhawk_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821008997808865290/trackhawk_699.jpg",
-
     "333TopSpeed": 183,
     "3330to60": 3.3,
     "333Handling": 83,
-
     "666TopSpeed": 186,
     "6660to60": 3.2,
     "666Handling": 85,
-
-	"996TopSpeed": 189,
-    "9960to60": 3.0,
+    "996TopSpeed": 189,
+    "9960to60": 3,
     "996Handling": 85,
-
     "969TopSpeed": 189,
     "9690to60": 3.2,
     "969Handling": 89,
-
-	"699TopSpeed": 186,
-    "6990to60": 3.0,
-    "699Handling": 89
+    "699TopSpeed": 186,
+    "6990to60": 3,
+    "699Handling": 89,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

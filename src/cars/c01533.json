@@ -1,6 +1,9 @@
 {
     "rq": 11,
-    "make": ["FlatWell", "Honda"],
+    "make": [
+        "FlatWell",
+        "Honda"
+    ],
     "model": "S660",
     "modelYear": 2019,
     "country": "JP",
@@ -9,9 +12,12 @@
     "handling": 73,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Kei Car", "Tuner", "The Japanese Odyssey"],
+    "tags": [
+        "Kei Car",
+        "Tuner",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 845,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +29,22 @@
     "mra": 33.33,
     "ola": 70.54,
     "description": "yes. Card by Keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/868778681189945364/flatwell_s660.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/868777846049484860/flatwell_s660_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/868777850969395200/flatwell_s660_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/868777854912053268/flatwell_s660_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/868777865150357504/flatwell_s660_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/868777861794906162/flatwell_s660_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/868777858892464128/flatwell_s660_699.jpg",
-
     "333TopSpeed": 100,
     "3330to60": 10.6,
     "333Handling": 75,
-
     "666TopSpeed": 105,
     "6660to60": 10.1,
     "666Handling": 78,
-
     "996TopSpeed": 111,
     "9960to60": 9.5,
     "996Handling": 78,
-
     "969TopSpeed": 111,
     "9690to60": 10.1,
     "969Handling": 81,
-
     "699TopSpeed": 105,
     "6990to60": 9.5,
-    "699Handling": 81
+    "699Handling": 81,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

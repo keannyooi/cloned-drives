@@ -9,9 +9,10 @@
     "handling": 85,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Supercar"],
+    "tags": [
+        "Supercar"
+    ],
     "isPrize": false,
-
     "weight": 1660,
     "gc": "Low",
     "seatCount": 4,
@@ -23,32 +24,22 @@
     "mra": 75.93,
     "ola": 82.93,
     "description": "Card by Havvy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/828411462258524211/unknown.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/828411515370733618/Porsche911TurboCab2001_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/828411521326514176/Porsche911TurboCab2001_111.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/828411524955635743/Porsche911TurboCab2001_222.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/828411537940545546/Porsche911TurboCab2001_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/828411534538702848/Porsche911TurboCab2001_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/828411529996533800/Porsche911TurboCab2001_233.png",
-
     "333TopSpeed": 193,
     "3330to60": 3.9,
     "333Handling": 88,
-
     "666TopSpeed": 195,
     "6660to60": 3.7,
     "666Handling": 91,
-
     "996TopSpeed": 198,
     "9960to60": 3.5,
     "996Handling": 91,
-
     "969TopSpeed": 198,
     "9690to60": 3.7,
     "969Handling": 94,
-
     "699TopSpeed": 195,
     "6990to60": 3.5,
-    "699Handling": 94
+    "699Handling": 94,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

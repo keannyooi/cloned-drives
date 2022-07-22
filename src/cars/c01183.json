@@ -9,9 +9,11 @@
     "handling": 92,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Hypercar", "Unique"],
+    "tags": [
+        "Hypercar",
+        "Unique"
+    ],
     "isPrize": false,
-
     "weight": 1247,
     "gc": "Low",
     "seatCount": 2,
@@ -21,34 +23,24 @@
     "enginePos": "Middle",
     "fuelType": "Petrol",
     "mra": 96.55,
-    "ola": 90.00,
+    "ola": 90,
     "description": "Screaming \"AMERICA FUCK YEAH\" while nabbing a production land speed record. Card by Preston.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/858821674828169236/92.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/858821783061921862/aero_000.png",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/858821805698449428/aero_333.png",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/858821825860206622/aero_666.png",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/858821894106775582/aero_996.png",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/858821871579037706/aero_969.png",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/858821850934935582/aero_699.png",
-
     "333TopSpeed": 259,
     "3330to60": 2.7,
     "333Handling": 95,
-
     "666TopSpeed": 261,
     "6660to60": 2.5,
     "666Handling": 98,
-
     "996TopSpeed": 263,
     "9960to60": 2.4,
     "996Handling": 98,
-
     "969TopSpeed": 263,
     "9690to60": 2.5,
     "969Handling": 102,
-
     "699TopSpeed": 261,
     "6990to60": 2.4,
-    "699Handling": 102
+    "699Handling": 102,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

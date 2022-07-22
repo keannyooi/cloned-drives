@@ -11,10 +11,9 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1069,
     "gc": "Medium",
-    "seatCount":4,
+    "seatCount": 4,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
@@ -23,32 +22,22 @@
     "mra": 31.83,
     "ola": 65.88,
     "description": "Let’s be honest, manual is the only choice. Card by Connor",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819539763618381844/E.ChevySpark2LTMT.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819539850926489650/E.ChevySpark2LTMT.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819539867221360670/E.ChevySpark2LTMT-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819539873898954792/E.ChevySpark2LTMT-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819539895898341406/E.ChevySpark2LTMT-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819539888058662922/E.ChevySpark2LTMT-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819539882019258448/E.ChevySpark2LTMT-699.png",
-
     "333TopSpeed": 110,
     "3330to60": 10.6,
     "333Handling": 73,
-
     "666TopSpeed": 115,
-    "6660to60": 10.1, 
+    "6660to60": 10.1,
     "666Handling": 76,
-
     "996TopSpeed": 120,
     "9960to60": 9.5,
     "996Handling": 76,
-
     "969TopSpeed": 120,
     "9690to60": 10.1,
     "969Handling": 79,
-
     "699TopSpeed": 115,
     "6990to60": 9.5,
-    "699Handling": 79
+    "699Handling": 79,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

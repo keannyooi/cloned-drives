@@ -9,9 +9,10 @@
     "handling": 68,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Eco-Friendly"],
+    "tags": [
+        "Eco-Friendly"
+    ],
     "isPrize": false,
-
     "weight": 1660,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 17.22,
     "ola": 84.54,
     "description": "China attempted selling one of their electric cars in the USA, but the people there didn't buy them because they know that it's made in China, even though it was rebadged. Card by keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819390423529029702/coda.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819817182052745226/coda_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819817191876198420/coda_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819817198578958356/coda_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819817233387356180/coda_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819817221076418560/coda_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819817209924157450/coda_699.jpg",
-
     "333TopSpeed": 91,
     "3330to60": 8.7,
     "333Handling": 70,
-
     "666TopSpeed": 97,
     "6660to60": 8.3,
     "666Handling": 72,
-
-	"996TopSpeed": 103,
+    "996TopSpeed": 103,
     "9960to60": 7.8,
     "996Handling": 72,
-
     "969TopSpeed": 103,
     "9690to60": 8.3,
     "969Handling": 75,
-
-	"699TopSpeed": 97,
+    "699TopSpeed": 97,
     "6990to60": 7.8,
-    "699Handling": 75
+    "699Handling": 75,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

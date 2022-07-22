@@ -9,9 +9,11 @@
     "handling": 84,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Rest of The World", "Super Sedan"],
+    "tags": [
+        "Rest of The World",
+        "Super Sedan"
+    ],
     "isPrize": false,
-
     "weight": 1780,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +25,22 @@
     "mra": 73.55,
     "ola": 74.79,
     "description": "For Kia's first real performance car, this thing sure does deliver. Card by Exist",
-
     "card": "https://media.discordapp.net/attachments/819199720249360384/845644155992670208/CD_Kia_Stinger_GT.png?width=1410&height=878",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/845644289458831360/CD_Kia_Stinger_GT_000.png?width=1410&height=878",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/845644298187440148/CD_Kia_Stinger_GT_333.png?width=1410&height=878",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/845644306294767666/CD_Kia_Stinger_GT_666.png?width=1410&height=878",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/845644324268146748/CD_Kia_Stinger_GT_996.png?width=1410&height=878",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/845644317329457182/CD_Kia_Stinger_GT_969.png?width=1410&height=878",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/845644313337397268/CD_Kia_Stinger_GT_699.png?width=1410&height=878",
-
     "333TopSpeed": 170,
     "3330to60": 4.5,
     "333Handling": 87,
-
     "666TopSpeed": 173,
     "6660to60": 4.2,
     "666Handling": 90,
-
     "996TopSpeed": 176,
-    "9960to60": 4.0,
+    "9960to60": 4,
     "996Handling": 90,
-
     "969TopSpeed": 176,
     "9690to60": 4.2,
     "969Handling": 93,
-
     "699TopSpeed": 173,
-    "6990to60": 4.0,
-    "699Handling": 93
+    "6990to60": 4,
+    "699Handling": 93,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

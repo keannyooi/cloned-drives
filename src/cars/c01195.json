@@ -9,9 +9,11 @@
     "handling": 80,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Street Racer", "Track Day"],
+    "tags": [
+        "Street Racer",
+        "Track Day"
+    ],
     "isPrize": false,
-
     "weight": 1270,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +25,22 @@
     "mra": 64.26,
     "ola": 66.67,
     "description": "Tuned by Prodrive, it was the only 2-door Impreza that was ever offered in Europe. Card by Spence",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/839637307270103080/image0.jpg",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/839637396218970132/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/839637410282864680/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/839637426384928798/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/839637478746751006/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/839637442118287360/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/839637500364062750/image0.jpg",
-
     "333TopSpeed": 158,
     "3330to60": 4.6,
     "333Handling": 83,
-
     "666TopSpeed": 162,
     "6660to60": 4.3,
     "666Handling": 85,
-
     "699TopSpeed": 162,
     "6990to60": 4.1,
     "699Handling": 89,
-
     "969TopSpeed": 165,
     "9690to60": 4.3,
     "969Handling": 89,
-
     "996TopSpeed": 165,
     "9960to60": 4.1,
-    "996Handling": 85
+    "996Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

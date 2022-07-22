@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1450,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +22,22 @@
     "mra": 68.89,
     "ola": 88.89,
     "description": "Card by Based.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/965199677173669958/unknown.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/965199930920669235/Ferrari_360_Spider_F1_Stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/965199953104367646/Ferrari_360_Spider_F1_1_Star.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/965199970254860349/Ferrari_360_Spider_F1_2_Star.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/965200020653613077/Ferrari_360_Spider_F1_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/965200003066920970/Ferrari_360_Spider_F1_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/965199986872692746/Ferrari_360_Spider_F1_699.png",
-
     "333TopSpeed": 182,
     "3330to60": 4.3,
     "333Handling": 85,
-
     "666TopSpeed": 185,
     "6660to60": 4.1,
     "666Handling": 87,
-
     "996TopSpeed": 188,
     "9960to60": 3.8,
     "996Handling": 87,
-
     "969TopSpeed": 188,
     "9690to60": 4.1,
     "969Handling": 91,
-
     "699TopSpeed": 185,
     "6990to60": 3.8,
-    "699Handling": 91
+    "699Handling": 91,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

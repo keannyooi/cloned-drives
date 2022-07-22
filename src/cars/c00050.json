@@ -1,6 +1,9 @@
 {
     "rq": 95,
-    "make": ["Apollo", "Gumpert"],
+    "make": [
+        "Apollo",
+        "Gumpert"
+    ],
     "model": "Intensa Emozione",
     "modelYear": 2019,
     "country": "DE",
@@ -9,9 +12,12 @@
     "handling": 98,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Track Day", "Hypercar", "Ultra Expensive"],
+    "tags": [
+        "Track Day",
+        "Hypercar",
+        "Ultra Expensive"
+    ],
     "isPrize": true,
-
     "weight": 1250,
     "gc": "Low",
     "seatCount": 2,
@@ -21,34 +27,24 @@
     "enginePos": "Middle",
     "fuelType": "Petrol",
     "mra": 108,
-    "ola": 96.30,
+    "ola": 96.3,
     "description": "The car purist's modern-day hypercar. Card by DodgeDemon",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/824683417290801172/apolloie.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/825388814180155412/app.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/825388822698524682/app333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/825388832492093460/app666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/825388864674856980/app996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/825388853257830400/app969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/825388843108663316/app699.png",
-
     "333TopSpeed": 211,
     "3330to60": 2.6,
     "333Handling": 101,
-
     "666TopSpeed": 213,
     "6660to60": 2.4,
     "666Handling": 104,
-
-	"996TopSpeed": 216,
+    "996TopSpeed": 216,
     "9960to60": 2.3,
     "996Handling": 104,
-
-	"969TopSpeed": 216,
+    "969TopSpeed": 216,
     "9690to60": 2.4,
     "969Handling": 109,
-
     "699TopSpeed": 213,
     "6990to60": 2.3,
-    "699Handling": 109
+    "699Handling": 109,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

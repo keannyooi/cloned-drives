@@ -9,9 +9,10 @@
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Grand Tourer"],
+    "tags": [
+        "Grand Tourer"
+    ],
     "isPrize": false,
-
     "weight": 1412,
     "gc": "Low",
     "seatCount": 4,
@@ -23,32 +24,22 @@
     "mra": 62.64,
     "ola": 81.1,
     "description": "Possibly one of the  most visceral cars available on the market. Card by McNuggets.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/848322819741188096/gt.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/848320450383446026/gt_stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/848320474324926464/gt_1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/848320493215154186/gt_2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/848320545929035806/gt_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/848320527164506172/gt_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/848320507144962068/gt_233.png",
-
     "333TopSpeed": 191,
     "3330to60": 3.7,
     "333Handling": 94,
-
     "666TopSpeed": 194,
     "6660to60": 3.5,
     "666Handling": 97,
-
     "996TopSpeed": 196,
     "9960to60": 3.3,
     "996Handling": 97,
-
     "969TopSpeed": 196,
     "9690to60": 3.5,
     "969Handling": 101,
-
     "699TopSpeed": 194,
     "6990to60": 3.3,
-    "699Handling": 101
+    "699Handling": 101,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

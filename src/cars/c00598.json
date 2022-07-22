@@ -9,9 +9,11 @@
     "handling": 91,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Track Day", "Super Sedan"],
+    "tags": [
+        "Track Day",
+        "Super Sedan"
+    ],
     "isPrize": true,
-
     "weight": 1745,
     "gc": "Low",
     "seatCount": 4,
@@ -23,32 +25,22 @@
     "mra": 76.09,
     "ola": 85.71,
     "description": "A Jaguar sedan that chewed 5 gum. ~~Stimulate your senses~~Card by havvy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820929130596925450/JaguarXESVProject8.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820929194099605515/000_proj8.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820929199173926912/111_proj8.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820929203909558302/222_proj8.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820929218727903233/332_proj8.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820929214877270026/323_proj8.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820929209929039892/233_proj8.png",
-
     "333TopSpeed": 203,
     "3330to60": 3.3,
     "333Handling": 94,
-
     "666TopSpeed": 205,
     "6660to60": 3.2,
     "666Handling": 97,
-
-	"996TopSpeed": 208,
-    "9960to60": 3.0,
+    "996TopSpeed": 208,
+    "9960to60": 3,
     "996Handling": 97,
-
-	"969TopSpeed": 208,
+    "969TopSpeed": 208,
     "9690to60": 3.2,
     "969Handling": 101,
-
     "699TopSpeed": 205,
-    "6990to60": 3.0,
-    "699Handling": 101
+    "6990to60": 3,
+    "699Handling": 101,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

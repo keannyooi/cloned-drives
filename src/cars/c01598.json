@@ -9,9 +9,11 @@
     "handling": 79,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Concept", "The Japanese Odyssey"],
+    "tags": [
+        "Concept",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1233,
     "gc": "Low",
     "seatCount": 5,
@@ -23,32 +25,22 @@
     "mra": 70.37,
     "ola": 59.65,
     "description": "It's a concept that looks better and is faster than the production model, how surprising. Card by havvy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/863868990924783626/unknown.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/863869048021581874/6mps_000.png",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/863869054167023676/6mps_111.png",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/863869055815254026/6mps_222.png",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/863869082347765810/6mps_332.png",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/863869073774870548/6mps_323.png",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/863869067559174154/6mps_233.png",
-
     "333TopSpeed": 158,
     "3330to60": 5.4,
     "333Handling": 82,
-
     "666TopSpeed": 162,
     "6660to60": 5.1,
     "666Handling": 84,
-
     "996TopSpeed": 162,
     "9960to60": 4.8,
     "996Handling": 84,
-
     "969TopSpeed": 165,
     "9690to60": 5.1,
     "969Handling": 88,
-
     "699TopSpeed": 165,
     "6990to60": 4.8,
-    "699Handling": 88
+    "699Handling": 88,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

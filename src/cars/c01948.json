@@ -9,13 +9,16 @@
     "handling": 92,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": ["Hot Hatch", "Unique", "Motorsport","The Japanese Odyssey"],
+    "tags": [
+        "Hot Hatch",
+        "Unique",
+        "Motorsport",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
-
     "weight": 1230,
     "gc": "Medium",
-    "seatCount":2,
+    "seatCount": 2,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": false,
@@ -24,33 +27,22 @@
     "mra": 58.67,
     "ola": 72.73,
     "description": "Before the WRC there was this cutie. Card by Andu.",
-
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/963831625735610388/YarisS2000.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/963831745453641839/YarisS2000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/963831755658383360/YarisS2000-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/963831765745676348/YarisS2000-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/963831779452661780/YarisS2000-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/963831791502884904/YarisS2000-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/963831803179835463/YarisS2000-699.png",
-
     "333TopSpeed": 124,
     "3330to60": 4.2,
     "333Handling": 95,
-
     "666TopSpeed": 129,
-    "6660to60": 4.0, 
+    "6660to60": 4,
     "666Handling": 98,
-
     "996TopSpeed": 133,
     "9960to60": 3.7,
     "996Handling": 98,
-
     "969TopSpeed": 133,
-    "9690to60": 4.0,
+    "9690to60": 4,
     "969Handling": 102,
-
     "699TopSpeed": 129,
     "6990to60": 3.7,
-    "699Handling": 102
+    "699Handling": 102,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

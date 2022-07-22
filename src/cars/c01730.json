@@ -9,9 +9,11 @@
     "handling": 88,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Supercar","The Japanese Odyssey"],
+    "tags": [
+        "Supercar",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1762,
     "gc": "Low",
     "seatCount": 4,
@@ -21,34 +23,24 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 75.55,
-    "ola": 74.70,
+    "ola": 74.7,
     "description": "Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/930796548256841758/GTR2010.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/930797104186679376/GTR2010.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/930797112579461120/GTR2010333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/930797120468951060/GTR2010666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/930797147509653534/GTR2010996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/930797139783720990/GTR2010969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/930797132099747840/GTR2010699.png",
-
     "333TopSpeed": 198,
     "3330to60": 3.2,
     "333Handling": 91,
-
     "666TopSpeed": 200,
     "6660to60": 3.1,
     "666Handling": 94,
-
     "996TopSpeed": 203,
     "9960to60": 2.9,
     "996Handling": 94,
-
     "969TopSpeed": 203,
     "9690to60": 3.1,
     "969Handling": 98,
-
     "699TopSpeed": 200,
     "6990to60": 2.9,
-    "699Handling": 98
+    "699Handling": 98,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

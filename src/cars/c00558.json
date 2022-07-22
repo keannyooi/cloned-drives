@@ -9,9 +9,10 @@
     "handling": 73,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Rest of The World"],
+    "tags": [
+        "Rest of The World"
+    ],
     "isPrize": false,
-
     "weight": 1144,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 52.08,
     "ola": 93.33,
     "description": "Card by andu",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820035836522266694/Accent2018M.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820036790185492490/Accent.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820036800156139560/Accent1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820036808355348530/Accent2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820036837858738246/Accent996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820036827918237767/Accent969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/835364728997412894/unknown.png",
-
     "333TopSpeed": 124,
     "3330to60": 7.1,
     "333Handling": 75,
-
     "666TopSpeed": 129,
     "6660to60": 6.8,
     "666Handling": 78,
-
-	"996TopSpeed": 133,
+    "996TopSpeed": 133,
     "9960to60": 6.4,
     "996Handling": 78,
-
     "969TopSpeed": 133,
     "9690to60": 6.8,
     "969Handling": 81,
-
-	"699TopSpeed": 129,
+    "699TopSpeed": 129,
     "6990to60": 6.4,
-    "699Handling": 81
+    "699Handling": 81,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

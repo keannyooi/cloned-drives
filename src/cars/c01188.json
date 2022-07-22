@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1590,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +22,22 @@
     "mra": 66.97,
     "ola": 76.71,
     "description": "Named after the star that symbolizes the brand. Card by keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819392285158146058/subaru_alcyone_svx.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819910587592998952/alcyone_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819910596329078853/alcyone_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819910602213818388/alcyone_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819910646320726026/alcyone_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819910634664624168/alcyone_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819910623956697158/alcyone_699.jpg",
-
     "333TopSpeed": 157,
     "3330to60": 6.9,
     "333Handling": 80,
-
     "666TopSpeed": 161,
-    "6660to60": 6.6, 
+    "6660to60": 6.6,
     "666Handling": 82,
-
     "996TopSpeed": 164,
     "9960to60": 6.2,
     "996Handling": 82,
-
     "969TopSpeed": 164,
     "9690to60": 6.6,
     "969Handling": 85,
-
     "699TopSpeed": 161,
     "6990to60": 6.2,
-    "699Handling": 85
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

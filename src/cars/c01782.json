@@ -9,9 +9,14 @@
     "handling": 90,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Supercar", "Unique", "Innovative", "Track Day","The Japanese Odyssey"],
+    "tags": [
+        "Supercar",
+        "Unique",
+        "Innovative",
+        "Track Day",
+        "The Japanese Odyssey"
+    ],
     "isPrize": true,
-
     "weight": 1451,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +28,22 @@
     "mra": 100,
     "ola": 72.34,
     "description": "A car so strong it can beat a 2015 Nissan GT-R Nismo on the 1/4. Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/985650519097872445/Ztune.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/886973609430630462/R34Nismo.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/886973614694490182/R34Nismo333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/886973621107580979/R34Nismo666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/886973656465551370/R34Nismo996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/886973646114021426/R34Nismo969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/886973627453550643/R34Nismo699.png",
-
     "333TopSpeed": 206,
     "3330to60": 3.5,
     "333Handling": 93,
-
     "666TopSpeed": 208,
     "6660to60": 3.3,
     "666Handling": 96,
-
     "996TopSpeed": 211,
     "9960to60": 3.1,
     "996Handling": 96,
-
     "969TopSpeed": 211,
     "9690to60": 3.3,
     "969Handling": 100,
-
     "699TopSpeed": 208,
     "6990to60": 3.1,
-    "699Handling": 100
+    "699Handling": 100,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

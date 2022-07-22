@@ -9,13 +9,13 @@
     "handling": 72,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Eco-Friendly"],
+    "tags": [
+        "Eco-Friendly"
+    ],
     "isPrize": false,
-
-
     "weight": 1383,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
@@ -24,33 +24,22 @@
     "mra": 49.76,
     "ola": 75.02,
     "description": "First iteration of the Look I’m Edgy styling. Card by Connor",
-
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820006319184412723/E.ToyotaPriusTouring.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820006779051311134/E.ToyotaPriusTouring.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820006838111830056/E.ToyotaPriusTouring-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820006848039485450/E.ToyotaPriusTouring-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820006901231911002/E.ToyotaPriusTouring-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820006881711489054/E.ToyotaPriusTouring-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820006856658386964/E.ToyotaPriusTouring-699.png",
-
     "333TopSpeed": 120,
     "3330to60": 9.9,
     "333Handling": 74,
-
     "666TopSpeed": 124,
-    "6660to60": 9.4, 
+    "6660to60": 9.4,
     "666Handling": 77,
-
     "996TopSpeed": 129,
     "9960to60": 8.8,
     "996Handling": 77,
-
     "969TopSpeed": 129,
     "9690to60": 9.4,
     "969Handling": 80,
-
     "699TopSpeed": 124,
     "6990to60": 8.8,
-    "699Handling": 80
+    "699Handling": 80,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

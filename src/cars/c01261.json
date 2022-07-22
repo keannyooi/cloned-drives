@@ -9,9 +9,10 @@
     "handling": 78,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": ["Eco-Friendly"],
+    "tags": [
+        "Eco-Friendly"
+    ],
     "isPrize": false,
-
     "weight": 2090,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 61.45,
     "ola": 82.35,
     "description": "The novelty goes mainstream. Card by keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/944201538463727696/tesla_model_s_70d.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/944203809188634654/70DUpdated.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/944203826242674739/70DUpdated-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/944203836548083763/70DUpdated-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/944203855736995911/70DUpdated-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/944203870450626590/70DUpdated-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/944203883889184818/70DUpdated-699.png",
-
     "333TopSpeed": 144,
     "3330to60": 4.8,
     "333Handling": 81,
-
     "666TopSpeed": 147,
     "6660to60": 4.6,
     "666Handling": 83,
-
     "996TopSpeed": 151,
     "9960to60": 4.3,
     "996Handling": 83,
-
     "969TopSpeed": 151,
     "9690to60": 4.6,
     "969Handling": 87,
-
     "699TopSpeed": 147,
     "6990to60": 4.3,
-    "699Handling": 87
+    "699Handling": 87,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

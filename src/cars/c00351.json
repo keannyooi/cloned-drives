@@ -9,9 +9,13 @@
     "handling": 83,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Muscle Car", "OG", "Silver Screen", "Style Icon"],
+    "tags": [
+        "Muscle Car",
+        "OG",
+        "Silver Screen",
+        "Style Icon"
+    ],
     "isPrize": false,
-
     "weight": 1887,
     "gc": "Low",
     "seatCount": 5,
@@ -21,34 +25,24 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 90.24,
-    "ola": 97.30,
+    "ola": 97.3,
     "description": "The most true American muscle car of the modern times, if we don't count the Accord. Card by keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/833278513972903936/dodge_challenger_srt_hellcat.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/833278590622892093/challenger_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/833278604388859924/challenger_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/833278611578028062/challenger_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/833278644347469854/challenger_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/833278633690267688/challenger_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/833278620389998654/challenger_699.jpg",
-
     "333TopSpeed": 202,
     "3330to60": 3.5,
     "333Handling": 86,
-
     "666TopSpeed": 204,
     "6660to60": 3.3,
     "666Handling": 88,
-
     "996TopSpeed": 207,
     "9960to60": 3.1,
     "996Handling": 88,
-
-	"969TopSpeed": 207,
+    "969TopSpeed": 207,
     "9690to60": 3.3,
     "969Handling": 92,
-
     "699TopSpeed": 204,
     "6990to60": 3.1,
-    "699Handling": 92
+    "699Handling": 92,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -9,9 +9,11 @@
     "handling": 71,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": ["OG", "Silver Screen"],
+    "tags": [
+        "OG",
+        "Silver Screen"
+    ],
     "isPrize": false,
-
     "weight": 1280,
     "gc": "Medium",
     "seatCount": 5,
@@ -20,35 +22,25 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 53.00,
+    "mra": 53,
     "ola": 66.67,
     "description": "Card by havvy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/821145913636552712/BMW325iX.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821145968577609778/000_325ix.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821145971232735252/111_325ix.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821145975007608842/222_325ix.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821145989150408704/332_325ix.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821145987027828776/323_325ix.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821145979536670771/233_325ix.png",
-
     "333TopSpeed": 136,
-    "3330to60": 8.0,
+    "3330to60": 8,
     "333Handling": 73,
-
     "666TopSpeed": 140,
     "6660to60": 7.6,
     "666Handling": 76,
-
-	"996TopSpeed": 144,
+    "996TopSpeed": 144,
     "9960to60": 7.1,
     "996Handling": 76,
-
     "969TopSpeed": 144,
     "9690to60": 7.6,
     "969Handling": 79,
-
-	"699TopSpeed": 140,
+    "699TopSpeed": 140,
     "6990to60": 7.1,
-    "699Handling": 79
+    "699Handling": 79,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

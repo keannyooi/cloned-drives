@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1457,
     "gc": "Medium",
     "seatCount": 4,
@@ -20,35 +19,25 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 53.50,
-    "ola": 61.90,
+    "mra": 53.5,
+    "ola": 61.9,
     "description": "Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/821061527657644072/vigor.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821062075849113610/vigor.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821062081293451277/victor333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821062088519843910/vigor666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821062129989320714/victor996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821062120514388008/vigor969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821062104936218724/vigor699.png",
-
     "333TopSpeed": 135,
-    "3330to60": 8.0,
+    "3330to60": 8,
     "333Handling": 70,
-
     "666TopSpeed": 139,
     "6660to60": 7.6,
     "666Handling": 72,
-
     "996TopSpeed": 143,
     "9960to60": 7.1,
     "996Handling": 72,
-
     "969TopSpeed": 143,
     "9690to60": 7.6,
     "969Handling": 75,
-
     "699TopSpeed": 139,
     "6990to60": 7.1,
-    "699Handling": 75
+    "699Handling": 75,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

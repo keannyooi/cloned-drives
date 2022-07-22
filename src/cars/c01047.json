@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1286,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 48.08,
     "ola": 77.33,
     "description": "",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/824425474847014942/pontacG5.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824430356316946472/G5.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824430361253380147/G5333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824430366475419648/G5666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824430397110091786/G5996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824430389761146951/G5969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824430379045879848/G5699.png",
-
     "333TopSpeed": 143,
     "3330to60": 7.1,
     "333Handling": 82,
-
     "666TopSpeed": 146,
-    "6660to60": 6.8, 
+    "6660to60": 6.8,
     "666Handling": 84,
-
     "996TopSpeed": 150,
     "9960to60": 6.4,
     "996Handling": 84,
-
     "969TopSpeed": 150,
     "9690to60": 6.8,
     "969Handling": 88,
-
     "699TopSpeed": 146,
     "6990to60": 6.4,
-    "699Handling": 88
+    "699Handling": 88,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

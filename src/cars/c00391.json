@@ -9,9 +9,12 @@
     "handling": 98,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": ["Track Day", "Ultra Expensive", "Unique"],
+    "tags": [
+        "Track Day",
+        "Ultra Expensive",
+        "Unique"
+    ],
     "isPrize": true,
-
     "weight": 1365,
     "gc": "Low",
     "seatCount": 2,
@@ -20,35 +23,25 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 103.70,
-    "ola": 80.00,
+    "mra": 103.7,
+    "ola": 80,
     "description": "The ultimate Ferrari Track-Day 599, want to own one? thats 2.3million euros please. Card by bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/834774686105600010/599xxevo.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/834774993614929971/599XXE.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/834775000304975892/599XXE333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/834775009356546048/599XXE666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/834775034542424104/599XXE996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/834775025450090589/599XXE969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/834775019623546940/599XXE699.png",
-
     "333TopSpeed": 233,
     "3330to60": 2.7,
     "333Handling": 101,
-
     "666TopSpeed": 236,
     "6660to60": 2.5,
     "666Handling": 104,
-
     "996TopSpeed": 238,
     "9960to60": 2.4,
     "996Handling": 104,
-
     "969TopSpeed": 238,
     "9690to60": 2.5,
     "969Handling": 109,
-
     "699TopSpeed": 236,
     "6990to60": 2.4,
-    "699Handling": 109
+    "699Handling": 109,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

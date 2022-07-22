@@ -9,9 +9,13 @@
     "handling": 57,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Eco-Friendly", "Oddity", "Concept", "Unique"],
+    "tags": [
+        "Eco-Friendly",
+        "Oddity",
+        "Concept",
+        "Unique"
+    ],
     "isPrize": false,
-
     "weight": 1330,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +27,22 @@
     "mra": 0,
     "ola": 70.48,
     "description": "Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/930193849937182760/1602butright.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/930194703188652083/1602eleck.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/930194712189599744/1602eleck333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/930194718804037632/1602eleck666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/930194745907642388/1602eleck996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/930194738118815804/1602eleck969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/930194727595290674/1602eleck699.png",
-
     "333TopSpeed": 70,
     "3330to60": 21.6,
     "333Handling": 59,
-
     "666TopSpeed": 79,
     "6660to60": 20.4,
     "666Handling": 61,
-
     "996TopSpeed": 87,
     "9960to60": 19.3,
     "996Handling": 61,
-
     "969TopSpeed": 87,
     "9690to60": 20.4,
     "969Handling": 63,
-
     "699TopSpeed": 79,
     "6990to60": 19.3,
-    "699Handling": 63
+    "699Handling": 63,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

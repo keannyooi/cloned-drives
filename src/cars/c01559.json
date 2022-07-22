@@ -9,9 +9,11 @@
     "handling": 60,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Kei Car","The Japanese Odyssey"],
+    "tags": [
+        "Kei Car",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 723,
     "gc": "Medium",
     "seatCount": 2,
@@ -23,32 +25,22 @@
     "mra": 20.12,
     "ola": 58.43,
     "description": "Cute car with a cute dog beside it. Card by Spence.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/865723516052963358/image0.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/862153474490105856/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/862153546190815234/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/862153582006894642/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/862153690999685191/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/862153779905953853/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/862153814189670430/image0.jpg",
-
     "333TopSpeed": 100,
     "3330to60": 16.9,
     "333Handling": 62,
-
     "666TopSpeed": 105,
-    "6660to60": 16.0,
+    "6660to60": 16,
     "666Handling": 64,
-
     "699TopSpeed": 105,
     "6990to60": 15.1,
     "699Handling": 67,
-
     "969TopSpeed": 111,
-    "9690to60": 16.0,
+    "9690to60": 16,
     "969Handling": 67,
-
     "996TopSpeed": 111,
     "9960to60": 15.1,
-    "996Handling": 64
+    "996Handling": 64,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

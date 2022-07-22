@@ -9,9 +9,11 @@
     "handling": 95,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": ["Rest of The World", "Motorsport"],
+    "tags": [
+        "Rest of The World",
+        "Motorsport"
+    ],
     "isPrize": false,
-
     "weight": 1410,
     "gc": "Low",
     "seatCount": 1,
@@ -23,32 +25,22 @@
     "mra": 103.76,
     "ola": 99.7,
     "description": "Card by Exist.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/848000694992502784/CD_Holden_Commodore_V8_Supercar_14_Brad_Jones_Racing.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/848000802110308382/Holden_Commodore_V8_Supercar_14_Brad_Jones_Racing_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/848000812676284416/Holden_Commodore_V8_Supercar_14_Brad_Jones_Racing_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/848000817361584158/Holden_Commodore_V8_Supercar_14_Brad_Jones_Racing_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/848000840869609513/Holden_Commodore_V8_Supercar_14_Brad_Jones_Racing_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/848000835522789386/Holden_Commodore_V8_Supercar_14_Brad_Jones_Racing_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/848000828609921034/Holden_Commodore_V8_Supercar_14_Brad_Jones_Racing_699.png",
-
     "333TopSpeed": 177,
     "3330to60": 3.1,
     "333Handling": 98,
-
     "666TopSpeed": 180,
-    "6660to60": 3.0,
+    "6660to60": 3,
     "666Handling": 101,
-
     "996TopSpeed": 183,
     "9960to60": 2.8,
     "996Handling": 105,
-
     "969TopSpeed": 183,
-    "9690to60": 3.0,
+    "9690to60": 3,
     "969Handling": 105,
-
     "699TopSpeed": 180,
     "6990to60": 2.8,
-    "699Handling": 105
+    "699Handling": 105,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

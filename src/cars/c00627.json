@@ -1,6 +1,9 @@
 {
     "rq": 42,
-    "make": ["Kid's Heart", "Nissan"],
+    "make": [
+        "Kid's Heart",
+        "Nissan"
+    ],
     "model": "SilEighty",
     "modelYear": 1998,
     "country": "JP",
@@ -9,9 +12,13 @@
     "handling": 75,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Street Racer", "Tuner", "Unique", "Silver Screen"],
+    "tags": [
+        "Street Racer",
+        "Tuner",
+        "Unique",
+        "Silver Screen"
+    ],
     "isPrize": true,
-
     "weight": 1150,
     "gc": "Low",
     "seatCount": 2,
@@ -21,34 +28,24 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 59.57,
-    "ola": 75.00,
+    "ola": 75,
     "description": "Wings of fire. Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819576559911567380/Sil.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819576683992449024/Sil80.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819576698219659284/Sil80333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819576709787418705/Sil80666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819576753751719936/Sil80996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819576741563465778/Sil80969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819576729793331300/Sil80699.png",
-
     "333TopSpeed": 116,
     "3330to60": 5.3,
     "333Handling": 77,
-
     "666TopSpeed": 120,
-    "6660to60": 5.0,
+    "6660to60": 5,
     "666Handling": 80,
-
-	"996TopSpeed": 125,
+    "996TopSpeed": 125,
     "9960to60": 4.8,
     "996Handling": 80,
-
     "969TopSpeed": 125,
-    "9690to60": 5.0,
+    "9690to60": 5,
     "969Handling": 83,
-
-	"699TopSpeed": 120,
+    "699TopSpeed": 120,
     "6990to60": 4.8,
-    "699Handling": 83
+    "699Handling": 83,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

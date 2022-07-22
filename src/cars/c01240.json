@@ -1,21 +1,19 @@
-﻿{
+{
     "rq": 26,
     "make": "Suzuki",
     "model": "Forenza EX Wagon",
     "modelYear": 2005,
     "country": "JP",
     "topSpeed": 121,
-    "0to60": 11.0,
+    "0to60": 11,
     "handling": 70,
     "driveType": "FWD",
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
-
     "weight": 1312,
     "gc": "Medium",
-    "seatCount":5,
+    "seatCount": 5,
     "bodyStyle": "Wagon",
     "tcs": false,
     "abs": true,
@@ -24,34 +22,22 @@
     "mra": 49.66,
     "ola": 65.75,
     "description": "Must’ve been a reason for this feeling ‘cause it rings a bell. Card by Andu",
-
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/821332396288639006/ACarForenza.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821333023370641408/Forenza.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821333028298424350/Forenza1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821333035441455125/Forenza2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821333055544623164/Forenza996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821333050016661514/Forenza969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821333042353405952/Forenza699.png",
-
-
     "333TopSpeed": 125,
     "3330to60": 10.5,
     "333Handling": 72,
-
     "666TopSpeed": 130,
-    "6660to60": 9.9, 
+    "6660to60": 9.9,
     "666Handling": 75,
-
     "996TopSpeed": 134,
     "9960to60": 9.4,
     "996Handling": 75,
-
     "969TopSpeed": 134,
     "9690to60": 9.9,
     "969Handling": 78,
-
     "699TopSpeed": 130,
     "6990to60": 9.4,
-    "699Handling": 78
+    "699Handling": 78,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

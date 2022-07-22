@@ -9,9 +9,10 @@
     "handling": 87,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Muscle Car"],
+    "tags": [
+        "Muscle Car"
+    ],
     "isPrize": false,
-
     "weight": 1671,
     "gc": "Low",
     "seatCount": 4,
@@ -21,34 +22,24 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 80.39,
-    "ola": 87.80,
+    "ola": 87.8,
     "description": "It’s hardly subtle on the eyeballs, but the 2016 Camaro is as ready to go Mustang hunting as any of its progenitors. Card by Demon",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/825648976543744020/2016_Chevrolet_Camaro_SS.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/825655612514762772/camaro_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/825655618803073044/camaro_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/825655624720187442/camaro_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/825655657192751134/camaro_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/825655647193268244/camaro_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/825655637236514826/camaro_699.jpg",
-
     "333TopSpeed": 168,
     "3330to60": 3.9,
     "333Handling": 90,
-
     "666TopSpeed": 171,
     "6660to60": 3.7,
     "666Handling": 93,
-
-	"996TopSpeed": 174,
+    "996TopSpeed": 174,
     "9960to60": 3.5,
     "996Handling": 93,
-
-	"969TopSpeed": 174,
+    "969TopSpeed": 174,
     "9690to60": 3.7,
     "969Handling": 97,
-
     "699TopSpeed": 171,
     "6990to60": 3.5,
-    "699Handling": 97
+    "699Handling": 97,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

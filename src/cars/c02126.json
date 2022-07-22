@@ -11,7 +11,6 @@
     "tyreType": "All-Surface",
     "tags": [],
     "isPrize": false,
-
     "weight": 1822,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 49.03,
     "ola": 84.21,
     "description": "Card by Macan.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/859623322333216768/XT5_Premium_Luxury_350T_20.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/859623574292922368/Cadillac_XT5_Premium_Luxury_350T_2020_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/859623578252607498/Cadillac_XT5_Premium_Luxury_350T_2020_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/859623578764443698/Cadillac_XT5_Premium_Luxury_350T_2020_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/859623619613032458/Cadillac_XT5_Premium_Luxury_350T_2020_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/859623614156505098/Cadillac_XT5_Premium_Luxury_350T_2020_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/859623596754206720/Cadillac_XT5_Premium_Luxury_350T_2020_699.png",
-
     "333TopSpeed": 134,
     "3330to60": 7.2,
     "333Handling": 76,
-
     "666TopSpeed": 138,
     "6660to60": 6.8,
     "666Handling": 79,
-
     "996TopSpeed": 142,
     "9960to60": 6.5,
     "996Handling": 79,
-
     "969TopSpeed": 142,
     "9690to60": 6.8,
     "969Handling": 82,
-
     "699TopSpeed": 138,
     "6990to60": 6.5,
-    "699Handling": 82
+    "699Handling": 82,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

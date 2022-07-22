@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1270,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +22,22 @@
     "mra": 40.46,
     "ola": 67.61,
     "description": "A 90's production intepretation of a hotrod by Chrysler. Card by Spence",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/826420202555047936/plymouthprowler.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826420324211752970/prowler.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826420330650140672/prowler333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826420336735027206/prowler666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826420359955611678/prowler996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826420351826264085/prowler969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826420344357126144/prowler699.png",
-
     "333TopSpeed": 121,
     "3330to60": 6.7,
     "333Handling": 81,
-
     "666TopSpeed": 126,
     "6660to60": 6.4,
     "666Handling": 83,
-
     "996TopSpeed": 130,
-    "9960to60": 6.0,
+    "9960to60": 6,
     "996Handling": 83,
-
     "969TopSpeed": 130,
     "9690to60": 6.4,
     "969Handling": 87,
-
     "699TopSpeed": 126,
-    "6990to60": 6.0,
-    "699Handling": 87
+    "6990to60": 6,
+    "699Handling": 87,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

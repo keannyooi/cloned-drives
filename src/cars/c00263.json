@@ -9,9 +9,10 @@
     "handling": 80,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Street Racer"],
+    "tags": [
+        "Street Racer"
+    ],
     "isPrize": false,
-
     "weight": 1320,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 67.42,
     "ola": 73.33,
     "description": "Americans tried to compete with the Japanese performance scene, and Chevrolet came late to the party but it still worth of an attempt to do so. Card by spence",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/824421779002753054/colbaltsssuperchargered.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/824422027007623218/cbts.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/824422053276155975/cbts333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/824422079491342346/cbts666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/824422106527301663/cbts996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/824422098477907988/cbts969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/824422091281137664/cbts699.png",
-
     "333TopSpeed": 161,
     "3330to60": 5.8,
     "333Handling": 83,
-
     "666TopSpeed": 165,
     "6660to60": 5.5,
     "666Handling": 85,
-
-	"996TopSpeed": 168,
+    "996TopSpeed": 168,
     "9960to60": 5.2,
     "996Handling": 85,
-
     "969TopSpeed": 168,
     "9690to60": 5.5,
     "969Handling": 89,
-
-	"699TopSpeed": 165,
+    "699TopSpeed": 165,
     "6990to60": 5.2,
-    "699Handling": 89
+    "699Handling": 89,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

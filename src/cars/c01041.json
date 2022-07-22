@@ -9,9 +9,12 @@
     "handling": 76,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Track Day", "Servers Choice", "Oddity"],
+    "tags": [
+        "Track Day",
+        "Servers Choice",
+        "Oddity"
+    ],
     "isPrize": false,
-
     "weight": 791,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +26,22 @@
     "mra": 50.93,
     "ola": 90.91,
     "description": "Imagine misreading 200km/h as 200mph (looking at you Doug). Card by keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819383808306446336/slingshot.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819912617484746812/polaris_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819912624761733190/polaris_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819912635721449492/polaris_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819912673738489876/polaris_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819912662778380338/polaris_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819912651420336158/polaris_699.jpg",
-
     "333TopSpeed": 134,
     "3330to60": 5.2,
     "333Handling": 79,
-
     "666TopSpeed": 138,
-    "6660to60": 5.0, 
+    "6660to60": 5,
     "666Handling": 81,
-
     "996TopSpeed": 142,
     "9960to60": 4.7,
     "996Handling": 81,
-
     "969TopSpeed": 142,
-    "9690to60": 5.0,
+    "9690to60": 5,
     "969Handling": 84,
-
     "699TopSpeed": 138,
     "6990to60": 4.7,
-    "699Handling": 84
+    "699Handling": 84,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

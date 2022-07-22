@@ -1,17 +1,22 @@
 {
     "rq": 61,
-    "make": ["Strosek", "Nissan"],
+    "make": [
+        "Strosek",
+        "Nissan"
+    ],
     "model": "350Z-R Kompressor",
     "modelYear": 2005,
     "country": "DE",
     "topSpeed": 181,
-    "0to60": 5.0,
+    "0to60": 5,
     "handling": 86,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Tuner","The Japanese Odyssey"],
+    "tags": [
+        "Tuner",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1560,
     "gc": "Low",
     "seatCount": 4,
@@ -23,32 +28,22 @@
     "mra": 79.96,
     "ola": 84.05,
     "description": "German Tuner Strosek enters Japan with the Z, ends up gaining popularity outside Japan as well. Card by Keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/869500018653036584/strosek_350z-r_kompressor.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/869219772598980638/strosek_350z_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/869219776889774100/strosek_350z_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/869219780731756564/strosek_350z_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/869219791670505513/strosek_350z_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/869219787090305024/strosek_350z_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/869219784619860018/strosek_350z_699.jpg",
-
     "333TopSpeed": 184,
     "3330to60": 4.8,
     "333Handling": 89,
-
     "666TopSpeed": 187,
     "6660to60": 4.5,
     "666Handling": 92,
-
     "996TopSpeed": 190,
     "9960to60": 4.3,
     "996Handling": 92,
-
     "969TopSpeed": 190,
     "9690to60": 4.5,
     "969Handling": 95,
-
     "699TopSpeed": 187,
     "6990to60": 4.3,
-    "699Handling": 95
+    "699Handling": 95,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

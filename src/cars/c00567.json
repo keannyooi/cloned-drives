@@ -11,7 +11,6 @@
     "tyreType": "All-Surface",
     "tags": [],
     "isPrize": false,
-
     "weight": 1947,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 63.54,
     "ola": 68.85,
     "description": "We were on the Verge of greatness, we were this close. Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819590205933355008/NewFX35.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819590245041045564/FX35.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819590251952734238/FX35333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819590261662548008/FX35666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819590299428061224/FX35996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819590287164309544/FX35969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819590275634561034/FX35699.png",
-
     "333TopSpeed": 144,
     "3330to60": 5.8,
     "333Handling": 76,
-
     "666TopSpeed": 147,
     "6660to60": 5.5,
     "666Handling": 79,
-
     "996TopSpeed": 151,
     "9960to60": 5.2,
     "996Handling": 79,
-
     "969TopSpeed": 151,
     "9690to60": 5.5,
     "969Handling": 82,
-
     "699TopSpeed": 147,
     "6990to60": 5.2,
-    "699Handling": 82
+    "699Handling": 82,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

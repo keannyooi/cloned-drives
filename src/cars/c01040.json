@@ -11,7 +11,6 @@
     "tyreType": "Off-Road",
     "tags": [],
     "isPrize": true,
-
     "weight": 695,
     "gc": "High",
     "seatCount": 2,
@@ -23,32 +22,22 @@
     "mra": 12.56,
     "ola": 76.05,
     "description": "The ultimate fun Machine. By Spence",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/938792241529507920/RZR.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/836363558081658890/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/836363578252328990/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/836363595629330522/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/836363679120228362/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/836363621734547487/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/836363651191537684/image0.jpg",
-
     "333TopSpeed": 104,
     "3330to60": 7.2,
     "333Handling": 75,
-
     "666TopSpeed": 110,
     "6660to60": 6.8,
     "666Handling": 78,
-
     "996TopSpeed": 115,
     "9960to60": 6.5,
     "996Handling": 78,
-
     "969TopSpeed": 115,
     "9690to60": 6.8,
     "969Handling": 81,
-
     "699TopSpeed": 110,
     "6990to60": 6.5,
-    "699Handling": 81
+    "699Handling": 81,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

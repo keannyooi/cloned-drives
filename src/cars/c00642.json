@@ -1,6 +1,9 @@
 {
     "rq": 70,
-    "make": ["Lagonda", "Aston Martin"],
+    "make": [
+        "Lagonda",
+        "Aston Martin"
+    ],
     "model": "Taraf",
     "modelYear": 2015,
     "country": "GB",
@@ -9,9 +12,12 @@
     "handling": 87,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["The Royal Collection", "Super Sedan", "Unique"],
+    "tags": [
+        "The Royal Collection",
+        "Super Sedan",
+        "Unique"
+    ],
     "isPrize": false,
-
     "weight": 1990,
     "gc": "Low",
     "seatCount": 4,
@@ -23,32 +29,22 @@
     "mra": 79.25,
     "ola": 76.19,
     "description": "The most Luxurious Rapide. Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/852108768010829824/lagondataraf.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/852109254793625620/lagondathingy.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/852109260245827594/lagondathingy333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/852109266306596924/lagondathingy666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/852109304189812807/lagondathingy996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/852109294265827378/lagondathingy969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/852109283272949760/lagondathingy699.png",
-
     "333TopSpeed": 198,
-    "3330to60": 4.0,
+    "3330to60": 4,
     "333Handling": 90,
-
     "666TopSpeed": 200,
     "6660to60": 3.8,
     "666Handling": 93,
-
     "996TopSpeed": 203,
     "9960to60": 3.6,
     "996Handling": 93,
-
     "969TopSpeed": 203,
     "9690to60": 3.8,
     "969Handling": 97,
-
     "699TopSpeed": 200,
     "6990to60": 3.6,
-    "699Handling": 97
+    "699Handling": 97,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

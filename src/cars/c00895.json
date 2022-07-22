@@ -9,9 +9,11 @@
     "handling": 85,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Street Racer", "Servers Choice"],
+    "tags": [
+        "Street Racer",
+        "Servers Choice"
+    ],
     "isPrize": false,
-
     "weight": 1400,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +25,22 @@
     "mra": 73.97,
     "ola": 74.07,
     "description": "Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/948544133323194388/evo8mr.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/948544665118986310/evo8MR.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/948544673608261642/evo8MR333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/948544681116065832/evo8MR666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/948544703194861578/evo8MR996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/948544696412692500/evo8MR969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/948544689882161152/evo8MR699.png",
-
     "333TopSpeed": 158,
     "3330to60": 5.1,
     "333Handling": 88,
-
     "666TopSpeed": 162,
     "6660to60": 4.9,
     "666Handling": 91,
-
     "996TopSpeed": 165,
     "9960to60": 4.6,
     "996Handling": 91,
-
     "969TopSpeed": 165,
     "9690to60": 4.9,
     "969Handling": 94,
-
     "699TopSpeed": 162,
     "6990to60": 4.6,
-    "699Handling": 94
+    "699Handling": 94,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -9,9 +9,11 @@
     "handling": 78,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": ["Eco-Friendly", "The Royal Collection"],
+    "tags": [
+        "Eco-Friendly",
+        "The Royal Collection"
+    ],
     "isPrize": false,
-
     "weight": 2440,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +25,22 @@
     "mra": 76.45,
     "ola": 88.88,
     "description": "The Eco Friendly bentley. Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/849746753133346836/BentaygaHybrid.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/849748145373970442/bentygahybrid.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/849748151874748526/bentygahybrid333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/849748159147016242/bentygahybrid666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/849748187207827486/bentygahybrid996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/849748178307514408/bentygahybrid969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/849748167406387260/bentygahybrid699.png",
-
     "333TopSpeed": 161,
-    "3330to60": 5.0,
+    "3330to60": 5,
     "333Handling": 81,
-
     "666TopSpeed": 165,
     "6660to60": 4.8,
     "666Handling": 83,
-
     "996TopSpeed": 168,
     "9960to60": 4.5,
     "996Handling": 83,
-
     "969TopSpeed": 168,
     "9690to60": 4.8,
     "969Handling": 87,
-
     "699TopSpeed": 165,
     "6990to60": 4.5,
-    "699Handling": 87
+    "699Handling": 87,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

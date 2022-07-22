@@ -5,13 +5,12 @@
     "modelYear": 2021,
     "country": "US",
     "topSpeed": 120,
-    "0to60": 6.0,
+    "0to60": 6,
     "handling": 64,
     "driveType": "4WD",
     "tyreType": "All-Surface",
     "tags": [],
     "isPrize": false,
-
     "weight": 2844,
     "gc": "High",
     "seatCount": 7,
@@ -23,32 +22,22 @@
     "mra": 62.11,
     "ola": 76.67,
     "description": "Not as gangster anymore, is it. Card by DodgeDemon",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/828140031968542730/2021_Cadillac_Escalade_ESV_Big_PP.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/828140007020953610/Cadillac_Escalade_ESV_Platinum_Sport_2021_000.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/828140009268707388/Cadillac_Escalade_ESV_Platinum_Sport_2021_333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/828140015221342208/Cadillac_Escalade_ESV_Platinum_Sport_2021_666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/828140106841718794/Cadillac_Escalade_ESV_Platinum_Sport_2021_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/828140104878522378/Cadillac_Escalade_ESV_Platinum_Sport_2021_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/828140102260752425/Cadillac_Escalade_ESV_Platinum_Sport_2021_699.png",
-
     "333TopSpeed": 124,
     "3330to60": 5.7,
     "333Handling": 66,
-
     "666TopSpeed": 129,
     "6660to60": 5.4,
     "666Handling": 68,
-
     "996TopSpeed": 133,
     "9960to60": 5.1,
     "996Handling": 68,
-
     "969TopSpeed": 133,
     "9690to60": 5.4,
     "969Handling": 71,
-
-	"699TopSpeed": 129,
+    "699TopSpeed": 129,
     "6990to60": 5.1,
-    "699Handling": 71
+    "699Handling": 71,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -9,9 +9,10 @@
     "handling": 90,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Supercar"],
+    "tags": [
+        "Supercar"
+    ],
     "isPrize": false,
-
     "weight": 1394,
     "gc": "Low",
     "seatCount": 2,
@@ -20,35 +21,25 @@
     "abs": true,
     "enginePos": "Rear",
     "fuelType": "Petrol",
-    "mra": 79.30,
-    "ola": 87.80,
+    "mra": 79.3,
+    "ola": 87.8,
     "description": "",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/826538369768095784/Porsche911GT3997.1.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826538427032928256/000_gt3.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826538431302729789/111_gt3.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826538434629730304/222_gt3.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826538448751296552/332_gt3.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826538444557647872/323_gt3.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826538439611777044/233_gt3.png",
-
     "333TopSpeed": 195,
     "3330to60": 3.9,
     "333Handling": 93,
-
     "666TopSpeed": 197,
-    "6660to60": 3.7, 
+    "6660to60": 3.7,
     "666Handling": 96,
-
     "996TopSpeed": 200,
     "9960to60": 3.5,
     "996Handling": 96,
-
     "969TopSpeed": 200,
     "9690to60": 3.7,
     "969Handling": 100,
-
     "699TopSpeed": 197,
     "6990to60": 3.5,
-    "699Handling": 100
+    "699Handling": 100,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

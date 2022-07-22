@@ -9,9 +9,11 @@
     "handling": 88,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["The Royal Collection", "Unique"],
+    "tags": [
+        "The Royal Collection",
+        "Unique"
+    ],
     "isPrize": false,
-
     "weight": 755,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +25,22 @@
     "mra": 57.95,
     "ola": 90.2,
     "description": "An Extremely rare model, around 50 were made, and the new cosmetic changes really strike hard on this masterpiece. Card by Based",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/855206683214217266/Lotus_Elise_Sport_160.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/854829748127268914/Lotus_Elise_Sport_160_Stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/854829799116374026/Lotus_Elise_Sport_160_1_Star.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/854829809385603083/Lotus_Elise_Sport_160_2_Star.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/854829836707430440/Lotus_Elise_Sport_160_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/854829826564685844/Lotus_Elise_Sport_160_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/854829818663272448/Lotus_Elise_Sport_160_699.png",
-
     "333TopSpeed": 139,
     "3330to60": 4.8,
     "333Handling": 91,
-
     "666TopSpeed": 143,
     "6660to60": 4.6,
     "666Handling": 94,
-
     "996TopSpeed": 147,
     "9960to60": 4.3,
     "996Handling": 94,
-
     "969TopSpeed": 147,
     "9690to60": 4.6,
     "969Handling": 98,
-
     "699TopSpeed": 143,
     "6990to60": 4.3,
-    "699Handling": 98
+    "699Handling": 98,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 917,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +22,22 @@
     "mra": 44.65,
     "ola": 71.91,
     "description": "The Up-exclamation-mark, Top Gear says. Card by Andu",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820401537498480660/up10MPI.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821099807158042654/Up.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821099816783446036/Up1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821099820185550859/Up2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821099840179666954/Up996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821099834948976670/Up969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821099826765889546/Up699.png",
-
     "333TopSpeed": 110,
     "3330to60": 12.3,
     "333Handling": 75,
-
     "666TopSpeed": 115,
     "6660to60": 11.6,
-    "666Handling": 78,   
-
+    "666Handling": 78,
     "996TopSpeed": 120,
-    "9960to60": 11.0,
+    "9960to60": 11,
     "996Handling": 78,
-
     "969TopSpeed": 120,
     "9690to60": 11.6,
     "969Handling": 81,
-
     "699TopSpeed": 115,
-    "6990to60": 11.0,
-    "699Handling": 81
+    "6990to60": 11,
+    "699Handling": 81,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

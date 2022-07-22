@@ -9,9 +9,10 @@
     "handling": 76,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Hot Hatch"],
+    "tags": [
+        "Hot Hatch"
+    ],
     "isPrize": false,
-
     "weight": 1408,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 61.15,
     "ola": 70.59,
     "description": "Autonomy on the cheap. Card by Connor.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/865679911331430431/D.ToyotaCorollaHatchSECVT.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/865680017262772224/ToyotaCorollaSE.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/865680030834753596/ToyotaCorollaSE-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/865680042309451792/ToyotaCorollaSE-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/865680078117535804/ToyotaCorollaSE-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/865680065869381642/ToyotaCorollaSE-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/865680053827403776/ToyotaCorollaSE-699.png",
-
     "333TopSpeed": 119,
     "3330to60": 8.1,
     "333Handling": 79,
-
     "666TopSpeed": 123,
     "6660to60": 7.7,
     "666Handling": 81,
-
     "996TopSpeed": 128,
     "9960to60": 7.2,
     "996Handling": 81,
-
     "969TopSpeed": 128,
     "9690to60": 7.7,
     "969Handling": 84,
-
     "699TopSpeed": 123,
     "6990to60": 7.2,
-    "699Handling": 84
+    "699Handling": 84,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

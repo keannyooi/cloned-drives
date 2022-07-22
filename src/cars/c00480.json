@@ -9,9 +9,11 @@
     "handling": 90,
     "driveType": "FWD",
     "tyreType": "Off-Road",
-    "tags": ["The Royal Collection", "Motorsport"],
+    "tags": [
+        "The Royal Collection",
+        "Motorsport"
+    ],
     "isPrize": true,
-
     "weight": 900,
     "gc": "Medium",
     "seatCount": 2,
@@ -23,32 +25,22 @@
     "mra": 59.74,
     "ola": 74.46,
     "description": "A competent super 1600 car with varied success. Card by Exist",
-
     "card": "https://media.discordapp.net/attachments/819199720249360384/839055984986030080/CD_Ford_Puma_Super_1600.png?width=1410&height=878",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/839056073507733534/CD_Ford_Puma_Super_1600_000.png?width=1410&height=878",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/839056080721936414/CD_Ford_Puma_Super_1600_333.png?width=1410&height=878",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/839056091949170698/CD_Ford_Puma_Super_1600_666.png?width=1410&height=878",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/839056105224011827/CD_Ford_Puma_Super_1600_996.png?width=1410&height=878",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/839056100518526976/CD_Ford_Puma_Super_1600_969.png?width=1410&height=878",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/839056093493592064/CD_Ford_Puma_Super_1600_699.png?width=1410&height=878",
-
     "333TopSpeed": 147,
     "3330to60": 4.4,
     "333Handling": 93,
-
     "666TopSpeed": 150,
     "6660to60": 4.1,
     "666Handling": 96,
-
     "996TopSpeed": 154,
     "9960to60": 3.9,
     "996Handling": 96,
-
     "969TopSpeed": 154,
     "9690to60": 4.1,
     "969Handling": 100,
-
     "699TopSpeed": 150,
     "6990to60": 3.9,
-    "699Handling": 100
+    "699Handling": 100,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

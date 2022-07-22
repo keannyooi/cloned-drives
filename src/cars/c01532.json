@@ -1,6 +1,9 @@
 {
     "rq": 32,
-    "make": ["Datsun", "Nissan"],
+    "make": [
+        "Datsun",
+        "Nissan"
+    ],
     "model": "280ZX Turbo",
     "modelYear": 1981,
     "country": "JP",
@@ -9,9 +12,11 @@
     "handling": 71,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Street Racer", "The Japanese Odyssey"],
+    "tags": [
+        "Street Racer",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1333,
     "gc": "Medium",
     "seatCount": 2,
@@ -23,32 +28,22 @@
     "mra": 56.52,
     "ola": 74.92,
     "description": "Integrating forced induction for power compensation. Card by Keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/869497976417034321/datsun_280zx_turbo.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/869212026747105321/280zx_turbo_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/869212029649571890/280zx_turbo_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/869212035773255741/280zx_turbo_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/869212045998952479/280zx_turbo_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/869212041699799100/280zx_turbo_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/869212039397117982/280zx_turbo_699.jpg",
-
     "333TopSpeed": 134,
     "3330to60": 7.1,
     "333Handling": 73,
-
     "666TopSpeed": 138,
     "6660to60": 6.8,
     "666Handling": 76,
-
     "996TopSpeed": 142,
     "9960to60": 6.4,
     "996Handling": 76,
-
     "969TopSpeed": 142,
     "9690to60": 6.8,
     "969Handling": 79,
-
     "699TopSpeed": 138,
     "6990to60": 6.4,
-    "699Handling": 79
+    "699Handling": 79,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

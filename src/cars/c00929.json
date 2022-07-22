@@ -5,13 +5,14 @@
     "modelYear": 2009,
     "country": "JP",
     "topSpeed": 155,
-    "0to60": 5.0,
+    "0to60": 5,
     "handling": 88,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Street Racer"],
+    "tags": [
+        "Street Racer"
+    ],
     "isPrize": false,
-
     "weight": 1466,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +24,22 @@
     "mra": 69.66,
     "ola": 79.21,
     "description": "A new evolution of the Nissan Z car. Card by keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819382630759006228/370z.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819478970294468658/370z_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819478978507178034/370z_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819478989273694218/370z_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819479019430084638/370z_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819479008289751090/370z_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819478998773006336/370z_699.jpg",
-
     "333TopSpeed": 158,
     "3330to60": 4.8,
     "333Handling": 91,
-
     "666TopSpeed": 162,
     "6660to60": 4.5,
     "666Handling": 94,
-
     "996TopSpeed": 165,
     "9960to60": 4.3,
     "996Handling": 94,
-
     "969TopSpeed": 165,
     "9690to60": 4.5,
     "969Handling": 98,
-
     "699TopSpeed": 162,
     "6990to60": 4.3,
-    "699Handling": 98
+    "699Handling": 98,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

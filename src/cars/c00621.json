@@ -9,9 +9,11 @@
     "handling": 69,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": ["Eco-Friendly", "Rest of The World"],
+    "tags": [
+        "Eco-Friendly",
+        "Rest of The World"
+    ],
     "isPrize": false,
-
     "weight": 1525,
     "gc": "Medium",
     "seatCount": 5,
@@ -21,34 +23,24 @@
     "enginePos": "Front",
     "fuelType": "Electric",
     "mra": 13.72,
-    "ola": 62.70,
+    "ola": 62.7,
     "description": "Vibing with electricity. Card by andu",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/865589065758670899/SoulEV.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/821333359216951316/SoulEV.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/821333364203716608/SoulEV1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/821333368267603968/SoulEV2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/821333390267383808/SoulEV996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/821333383069302784/SoulEV969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/821333376036110356/SoulEV699.png",
-
     "333TopSpeed": 98,
     "3330to60": 8.9,
     "333Handling": 71,
-
     "666TopSpeed": 103,
     "6660to60": 8.5,
     "666Handling": 74,
-
-	"996TopSpeed": 109,
-    "9960to60": 8.0,
+    "996TopSpeed": 109,
+    "9960to60": 8,
     "996Handling": 74,
-
     "969TopSpeed": 109,
     "9690to60": 8.5,
     "969Handling": 77,
-
-	"699TopSpeed": 103,
-    "6990to60": 8.0,
-    "699Handling": 77
+    "699TopSpeed": 103,
+    "6990to60": 8,
+    "699Handling": 77,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

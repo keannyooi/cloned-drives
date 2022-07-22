@@ -1,6 +1,9 @@
 {
     "rq": 32,
-    "make": ["Range Rover", "Land Rover"],
+    "make": [
+        "Range Rover",
+        "Land Rover"
+    ],
     "model": "Classic 5-Door",
     "modelYear": 1984,
     "country": "GB",
@@ -9,9 +12,10 @@
     "handling": 59,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": ["Servers Choice"],
+    "tags": [
+        "Servers Choice"
+    ],
     "isPrize": false,
-
     "weight": 1758,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +27,22 @@
     "mra": 42.08,
     "ola": 63.64,
     "description": "Nothing blends in better in nature. Card by Keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/865583336563146772/range_rover_classic.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819756514532130846/range_rover_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819756522946035712/range_rover_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819756530328535110/range_rover_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819756567187685427/range_rover_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819756554617225236/range_rover_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819756538537050162/range_rover_699.jpg",
-
     "333TopSpeed": 100,
     "3330to60": 12.5,
     "333Handling": 61,
-
     "666TopSpeed": 106,
-    "6660to60": 11.9, 
+    "6660to60": 11.9,
     "666Handling": 63,
-
     "996TopSpeed": 111,
     "9960to60": 11.2,
     "996Handling": 63,
-
     "969TopSpeed": 111,
     "9690to60": 11.9,
     "969Handling": 65,
-
     "699TopSpeed": 106,
     "6990to60": 11.2,
-    "699Handling": 65
+    "699Handling": 65,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

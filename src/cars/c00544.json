@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 2074,
     "gc": "Low",
     "seatCount": 7,
@@ -20,35 +19,25 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 64.40,
+    "mra": 64.4,
     "ola": 76.93,
     "description": "Why buy a used Aston for 50k when you can get an Odyssey? Card by ChickenMcNuggets",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820438854368624650/ody.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820127112945074176/big_cheese_stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820127140774412298/big_cheese_1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820127172194729994/big_cheese_2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820127248040198144/big_cheese_332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820127226770358294/big_cheese_323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820127197959815178/big_cheese_233.png",
-
     "333TopSpeed": 116,
     "3330to60": 6.2,
     "333Handling": 70,
-
     "666TopSpeed": 120,
     "6660to60": 5.9,
     "666Handling": 72,
-
-	"996TopSpeed": 125,
+    "996TopSpeed": 125,
     "9960to60": 5.5,
     "996Handling": 72,
-
     "969TopSpeed": 125,
     "9690to60": 5.9,
     "969Handling": 75,
-
-	"699TopSpeed": 120,
+    "699TopSpeed": 120,
     "6990to60": 5.5,
-    "699Handling": 75
+    "699Handling": 75,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -9,12 +9,13 @@
     "handling": 68,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 2599,
     "gc": "High",
-    "seatCount":3,
+    "seatCount": 3,
     "bodyStyle": "Pick-Up",
     "tcs": true,
     "abs": true,
@@ -23,32 +24,22 @@
     "mra": 53.34,
     "ola": 69.39,
     "description": "The most basic Titan you can get. Card by Spence.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/970057959533068349/IMG_4767.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/970059545697210368/TitXDS4x4SC.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/970059568333856808/TitXDS4x4SC-2.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/970059584838434946/TitXDS4x4SC-996.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/970059584838434946/TitXDS4x4SC-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/970059595957567528/TitXDS4x4SC-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/970059612025933855/TitXDS4x4SC-699.png",
-
     "333TopSpeed": 115,
     "3330to60": 7.7,
     "333Handling": 70,
-
     "666TopSpeed": 119,
-    "6660to60": 7.3, 
+    "6660to60": 7.3,
     "666Handling": 72,
-
     "996TopSpeed": 124,
     "9960to60": 6.9,
     "996Handling": 72,
-
     "969TopSpeed": 124,
     "9690to60": 7.3,
     "969Handling": 75,
-
     "699TopSpeed": 119,
     "6990to60": 6.9,
-    "699Handling": 75
+    "699Handling": 75,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

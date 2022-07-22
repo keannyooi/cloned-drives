@@ -9,9 +9,10 @@
     "handling": 68,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": ["The Japanese Odyssey"],
+    "tags": [
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1974,
     "gc": "High",
     "seatCount": 5,
@@ -23,32 +24,22 @@
     "mra": 54.17,
     "ola": 65.93,
     "description": "Card by Cenard.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/847561927789379594/IMG_20210405_185238.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/847561999697182720/IMG_20210418_225328.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/847562084517806140/IMG_20210418_225623.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/847562129569611796/IMG_20210418_225917.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/847562191259303956/IMG_20210418_231348.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/847562168732090388/IMG_20210418_231036.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/847562153401384981/IMG_20210418_230655.png",
-
     "333TopSpeed": 115,
     "3330to60": 8.6,
     "333Handling": 70,
-
     "666TopSpeed": 119,
     "6660to60": 8.2,
     "666Handling": 72,
-
     "996TopSpeed": 124,
     "9960to60": 7.7,
     "996Handling": 72,
-
     "969TopSpeed": 124,
     "9690to60": 8.2,
     "969Handling": 75,
-
     "699TopSpeed": 119,
     "6990to60": 7.7,
-    "699Handling": 75
+    "699Handling": 75,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

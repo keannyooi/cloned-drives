@@ -5,13 +5,15 @@
     "modelYear": 1992,
     "country": "JP",
     "topSpeed": 112,
-    "0to60": 5.0,
+    "0to60": 5,
     "handling": 84,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Street Racer","The Japanese Odyssey"],
+    "tags": [
+        "Street Racer",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
     "weight": 1230,
     "gc": "Low",
     "seatCount": 2,
@@ -21,34 +23,24 @@
     "enginePos": "Middle",
     "fuelType": "Petrol",
     "mra": 69.44,
-    "ola": 72.00,
+    "ola": 72,
     "description": "A rare model that is the origin of the Honda Type R series, with just under 500 cars produced. Card by Connor.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/868939526452707349/B.HondaNSXR-1.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/868939605586632744/HondaNSXR.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/868939614994452550/HondaNSXR-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/868939627283759134/HondaNSXR-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/868939661878366208/HondaNSXR-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/868939652894195782/HondaNSXR-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/868939637975035974/HondaNSXR-699.png",
-
     "333TopSpeed": 117,
     "3330to60": 4.8,
     "333Handling": 87,
-
     "666TopSpeed": 121,
     "6660to60": 4.5,
     "666Handling": 90,
-
     "996TopSpeed": 126,
     "9960to60": 4.3,
     "996Handling": 90,
-
     "969TopSpeed": 126,
     "9690to60": 4.5,
     "969Handling": 93,
-
     "699TopSpeed": 121,
     "6990to60": 4.3,
-    "699Handling": 93
+    "699Handling": 93,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

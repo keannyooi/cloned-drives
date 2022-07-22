@@ -5,13 +5,15 @@
     "modelYear": 2014,
     "country": "GB",
     "topSpeed": 190,
-    "0to60": 5.0,
+    "0to60": 5,
     "handling": 74,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["The Royal Collection", "Super Sedan"],
+    "tags": [
+        "The Royal Collection",
+        "Super Sedan"
+    ],
     "isPrize": false,
-
     "weight": 2723,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +25,22 @@
     "mra": 68.49,
     "ola": 76.42,
     "description": "Take this 811 ib-ft limo pop. Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/958781039835226183/mulsannespeed.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/958781437933400104/MulsanSpeed.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/958781446544326676/MulsanSpeed1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/958781452533776474/MulsanSpeed2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/958781478186135603/MulsanSpeed996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/958781471294898196/MulsanSpeed969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/958781463778697226/MulsanSpeed699.png",
-
     "333TopSpeed": 193,
     "3330to60": 4.8,
     "333Handling": 76,
-
     "666TopSpeed": 195,
     "6660to60": 4.5,
     "666Handling": 79,
-
     "996TopSpeed": 198,
     "9960to60": 4.3,
     "996Handling": 79,
-
     "969TopSpeed": 198,
     "9690to60": 4.5,
     "969Handling": 82,
-
     "699TopSpeed": 195,
     "6990to60": 4.3,
-    "699Handling": 82
+    "699Handling": 82,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

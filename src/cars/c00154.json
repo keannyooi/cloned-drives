@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1552,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 54.03,
     "ola": 77.03,
     "description": "The blend of a driver’s car and practicality. Card by Based",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/826051293897687040/BMW_323i_Touring.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826051532306907156/BMW_323i_Touring_Stock.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826051568633380934/BMW_323i_Touring_1_Star.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826051577189629962/BMW_323i_Touring_2_Star.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826051612480897034/BMW_323i_Touring_996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826051600552165396/BMW_323i_Touring_969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826051585716912188/BMW_323i_Touring_699.png",
-
     "333TopSpeed": 136,
-    "3330to60": 7.0,
+    "3330to60": 7,
     "333Handling": 80,
-
     "666TopSpeed": 140,
     "6660to60": 6.7,
     "666Handling": 82,
-
     "996TopSpeed": 144,
     "9960to60": 6.3,
     "996Handling": 82,
-
     "969TopSpeed": 144,
     "9690to60": 6.7,
     "969Handling": 85,
-
     "699TopSpeed": 140,
     "6990to60": 6.3,
-    "699Handling": 85
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -9,9 +9,11 @@
     "handling": 90,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Concept", "Unique"],
+    "tags": [
+        "Concept",
+        "Unique"
+    ],
     "isPrize": false,
-
     "weight": 1125,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +25,22 @@
     "mra": 64.59,
     "ola": 86.03,
     "description": "2 MC MX-5s first apperared at SEMA in 2010. This particular one has a Cosworth supercharger and Enkei wheels. Card by keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/851318077932568606/mazda_mx-5_super20_concept.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/851318293184380958/mx-5_super20_000.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/851318296913117184/mx-5_super20_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/851318301837492244/mx-5_super20_666.jpg",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/851318315585634314/mx-5_super20_996.jpg",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/851318312134901760/mx-5_super20_969.jpg",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/851318306120269844/mx-5_super20_699.jpg",
-
     "333TopSpeed": 155,
-    "3330to60": 5.0,
+    "3330to60": 5,
     "333Handling": 93,
-
     "666TopSpeed": 159,
     "6660to60": 4.8,
     "666Handling": 96,
-
     "996TopSpeed": 162,
     "9960to60": 4.5,
     "996Handling": 96,
-
     "969TopSpeed": 162,
     "9690to60": 4.8,
     "969Handling": 100,
-
     "699TopSpeed": 159,
     "6990to60": 4.5,
-    "699Handling": 100
+    "699Handling": 100,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

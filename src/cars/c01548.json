@@ -9,13 +9,14 @@
     "handling": 70,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Hot Hatch","The Japanese Odyssey"],
+    "tags": [
+        "Hot Hatch",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
-
     "weight": 823,
     "gc": "Medium",
-    "seatCount":2,
+    "seatCount": 2,
     "bodyStyle": "Hatchback",
     "tcs": false,
     "abs": false,
@@ -24,33 +25,22 @@
     "mra": 33.22,
     "ola": 65.35,
     "description": "Putting its foot down in the sports car category. Card by Andu.",
-
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/947535160268709918/CRX1585.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/947535364623597628/CRX15.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/947535385574137886/CRX15-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/947535397129449532/CRX15-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/947535419849973830/CRX15-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/947535436937580544/CRX15-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/947535449705046046/CRX15-699.png",
-
     "333TopSpeed": 113,
     "3330to60": 9.6,
     "333Handling": 72,
-
     "666TopSpeed": 118,
-    "6660to60": 9.1, 
+    "6660to60": 9.1,
     "666Handling": 75,
-
     "996TopSpeed": 122,
     "9960to60": 8.6,
     "996Handling": 75,
-
     "969TopSpeed": 122,
     "9690to60": 9.1,
     "969Handling": 78,
-
     "699TopSpeed": 118,
     "6990to60": 8.6,
-    "699Handling": 78
+    "699Handling": 78,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

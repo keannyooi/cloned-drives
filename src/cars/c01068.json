@@ -1,4 +1,4 @@
-﻿{
+{
     "rq": 60,
     "make": "Porsche",
     "model": "911 Carrera Cabriolet",
@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1394,
     "gc": "Low",
     "seatCount": 4,
@@ -23,32 +22,22 @@
     "mra": 74.56,
     "ola": 81.08,
     "description": "Red with a chance of sun. Card by Havvy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/826812691074646026/Po.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/826812738248245248/000_cab.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/826812752202563644/111_cab.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/826812760062033960/222_cab.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/826812771891019786/332_cab.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/826812768425869312/323_cab.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/826812764332752936/233_cab.png",
-
     "333TopSpeed": 180,
     "3330to60": 4.7,
     "333Handling": 86,
-
     "666TopSpeed": 183,
-    "6660to60": 4.4, 
+    "6660to60": 4.4,
     "666Handling": 88,
-
     "996TopSpeed": 186,
     "9960to60": 4.2,
     "996Handling": 88,
-
     "969TopSpeed": 186,
     "9690to60": 4.4,
     "969Handling": 92,
-
     "699TopSpeed": 183,
     "6990to60": 4.2,
-    "699Handling": 92
+    "699Handling": 92,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -9,9 +9,12 @@
     "handling": 90,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Ultra Expensive", "Supercar", "Unique"],
+    "tags": [
+        "Ultra Expensive",
+        "Supercar",
+        "Unique"
+    ],
     "isPrize": false,
-
     "weight": 1690,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +26,22 @@
     "mra": 89.74,
     "ola": 108.57,
     "description": "Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/844537542362660874/ReventonRoadster.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/844537788392931358/reventonroadster.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/844537794965929994/reventonroadster333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/844537803269996554/reventonroadster666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/844537830596018216/reventonroadster996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/844537823046270986/reventonroadster969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/844537813369356329/reventonroadster699.png",
-
     "333TopSpeed": 208,
     "3330to60": 3.1,
     "333Handling": 93,
-
     "666TopSpeed": 210,
-    "6660to60": 3.0,
+    "6660to60": 3,
     "666Handling": 96,
-
     "996TopSpeed": 213,
     "9960to60": 2.8,
     "996Handling": 96,
-
     "969TopSpeed": 213,
-    "9690to60": 3.0,
+    "9690to60": 3,
     "969Handling": 100,
-
     "699TopSpeed": 210,
     "6990to60": 2.8,
-    "699Handling": 100
+    "699Handling": 100,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -9,13 +9,15 @@
     "handling": 68,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Eco-Friendly", "Concept","The Japanese Odyssey"],
+    "tags": [
+        "Eco-Friendly",
+        "Concept",
+        "The Japanese Odyssey"
+    ],
     "isPrize": false,
-
-
     "weight": 1225,
     "gc": "Low",
-    "seatCount":2,
+    "seatCount": 2,
     "bodyStyle": "Convertible",
     "tcs": false,
     "abs": false,
@@ -24,33 +26,22 @@
     "mra": 43.57,
     "ola": 61.53,
     "description": "A Miata that ran on the miraculous science-fuel known as hydrogen and it did so with a rotary engine. Card by Keanny",
-
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/963513014991089734/mx-5_hydrogen_concpet.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/963513604991246366/MX5Hydro.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/963513616630431744/MX5Hydro-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/963513627028103278/MX5Hydro-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/963513640957378611/MX5Hydro-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/963513654282682368/MX5Hydro-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/963513665724743760/MX5Hydro-699.png",
-
     "333TopSpeed": 104,
     "3330to60": 11.8,
     "333Handling": 70,
-
     "666TopSpeed": 110,
-    "6660to60": 11.2, 
+    "6660to60": 11.2,
     "666Handling": 72,
-
     "996TopSpeed": 115,
     "9960to60": 10.5,
     "996Handling": 72,
-
     "969TopSpeed": 115,
     "9690to60": 11.2,
     "969Handling": 75,
-
     "699TopSpeed": 110,
     "6990to60": 10.5,
-    "699Handling": 75
+    "699Handling": 75,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

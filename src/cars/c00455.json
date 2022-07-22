@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1298,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 39.99,
     "ola": 61.99,
     "description": "A Focus but wagon. Card by Keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819390678801842176/ford_focus_se_wagon.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819774309765480448/se_wagon_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819774316043567144/se_wagon_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819774323413876736/se_wagon_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819774354866700318/se_wagon_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819774345647358012/se_wagon_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819774336407175198/se_wagon_699.jpg",
-
     "333TopSpeed": 107,
     "3330to60": 9.9,
     "333Handling": 73,
-
     "666TopSpeed": 112,
     "6660to60": 9.4,
     "666Handling": 76,
-
     "996TopSpeed": 117,
     "9960to60": 8.8,
     "996Handling": 76,
-
     "969TopSpeed": 117,
     "9690to60": 9.4,
     "969Handling": 79,
-
     "699TopSpeed": 112,
     "6990to60": 8.8,
-    "699Handling": 79
+    "699Handling": 79,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

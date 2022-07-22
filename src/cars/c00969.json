@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1342,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 56.07,
     "ola": 72.16,
     "description": "Card by Connor",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/845753960613806155/D.OpelAstra12TUltimate.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/845754990051196958/D.OpelAstra12T.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/845755012353228837/D.OpelAstra12T-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/845755026986106910/D.OpelAstra12T-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/845755087984525402/D.OpelAstra12T-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/845755070192812102/D.OpelAstra12T-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/845755050282582127/D.OpelAstra12T-699.png",
-
     "333TopSpeed": 131,
     "3330to60": 9.2,
     "333Handling": 80,
-
     "666TopSpeed": 135,
     "6660to60": 8.7,
     "666Handling": 82,
-
     "996TopSpeed": 139,
     "9960to60": 8.2,
     "996Handling": 82,
-
     "969TopSpeed": 139,
     "9690to60": 8.7,
     "969Handling": 85,
-
     "699TopSpeed": 135,
     "6990to60": 8.2,
-    "699Handling": 85
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

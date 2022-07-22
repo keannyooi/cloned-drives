@@ -9,9 +9,10 @@
     "handling": 79,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Track Day"],
+    "tags": [
+        "Track Day"
+    ],
     "isPrize": true,
-
     "weight": 1180,
     "gc": "Low",
     "seatCount": 2,
@@ -23,32 +24,22 @@
     "mra": 62.66,
     "ola": 75.76,
     "description": "A forgotten high performance 924 that was made for Group 4 racing. Card by Spence.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/847605772384337940/image0.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/847605817451610202/image0.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/847605834171154432/image0.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/847605851878588446/image0.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/847605900667912232/image0.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/847605885497114634/image0.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/847605868577030174/image0.jpg",
-
     "333TopSpeed": 152,
     "3330to60": 6.3,
     "333Handling": 82,
-
     "666TopSpeed": 156,
     "6660to60": 5.9,
     "666Handling": 84,
-
     "996TopSpeed": 159,
     "9960to60": 5.6,
     "996Handling": 84,
-
     "969TopSpeed": 159,
     "9690to60": 5.9,
     "969Handling": 88,
-
     "699TopSpeed": 156,
     "6990to60": 5.6,
-    "699Handling": 88
+    "699Handling": 88,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

@@ -1,6 +1,9 @@
 {
     "rq": 35,
-    "make": ["Jackson Racing", "Ford"],
+    "make": [
+        "Jackson Racing",
+        "Ford"
+    ],
     "model": "Focus ZX3 Supercharged",
     "modelYear": 2002,
     "country": "US",
@@ -9,9 +12,10 @@
     "handling": 80,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": ["Tuner"],
+    "tags": [
+        "Tuner"
+    ],
     "isPrize": false,
-
     "weight": 1234,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +27,22 @@
     "mra": 47.46,
     "ola": 64.29,
     "description": "The craft of an old mechanic, with boost kicking in as late as Honda's VTEC system. Card by keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/851435644084682802/jackson_racing_focus.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/851435746531082270/jackson_000.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/851435753459154984/jackson_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/851435756421382195/jackson_666.jpg",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/851435772003090482/jackson_996.jpg",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/851435766374727690/jackson_969.jpg",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/851435760733257748/jackson_699.jpg",
-
     "333TopSpeed": 122,
-    "3330to60": 8.0,
+    "3330to60": 8,
     "333Handling": 83,
-
     "666TopSpeed": 127,
     "6660to60": 7.6,
     "666Handling": 85,
-
-	"996TopSpeed": 131,
+    "996TopSpeed": 131,
     "9960to60": 7.1,
     "996Handling": 85,
-
     "969TopSpeed": 131,
     "9690to60": 7.6,
     "969Handling": 89,
-
-	"699TopSpeed": 127,
+    "699TopSpeed": 127,
     "6990to60": 7.1,
-    "699Handling": 89
+    "699Handling": 89,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

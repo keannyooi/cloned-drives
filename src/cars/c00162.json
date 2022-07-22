@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1630,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +22,22 @@
     "mra": 78.33,
     "ola": 102.13,
     "description": "The F32 4-series' range topper. Card by andu",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/821696814709211136/440i.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/831148699610644530/440i.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/831148729151127562/440i1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/831148763509817375/440i2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/831148772766777414/440i996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/831148780094881822/440i969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/831148786663030834/440i699.png",
-
     "333TopSpeed": 158,
     "3330to60": 4.5,
     "333Handling": 80,
-
     "666TopSpeed": 162,
     "6660to60": 4.2,
     "666Handling": 82,
-
-	"996TopSpeed": 165,
-    "9960to60": 4.0,
+    "996TopSpeed": 165,
+    "9960to60": 4,
     "996Handling": 82,
-
     "969TopSpeed": 165,
     "9690to60": 4.2,
     "969Handling": 85,
-
-	"699TopSpeed": 162,
-    "6990to60": 4.0,
-    "699Handling": 85
+    "699TopSpeed": 162,
+    "6990to60": 4,
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

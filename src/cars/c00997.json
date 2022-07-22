@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1562,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 61.59,
     "ola": 75.29,
     "description": "The last Opel developed and produced under GM rule. Card by Connor.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/858980450851618836/C.OpelInsigniaGS20D.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/858980768302497802/OpelInsigniaGS.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/858980785151148032/OpelInsigniaGS-1.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/858980799193153546/OpelInsigniaGS-2.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/858980843417501746/OpelInsigniaGS-996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/858980832756236308/OpelInsigniaGS-969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/858980817728831488/OpelInsigniaGS-699.png",
-
     "333TopSpeed": 145,
     "3330to60": 8.1,
     "333Handling": 80,
-
     "666TopSpeed": 148,
     "6660to60": 7.7,
     "666Handling": 82,
-
     "996TopSpeed": 152,
     "9960to60": 7.2,
     "996Handling": 82,
-
     "969TopSpeed": 152,
     "9690to60": 7.7,
     "969Handling": 85,
-
     "699TopSpeed": 148,
     "6990to60": 7.2,
-    "699Handling": 85
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

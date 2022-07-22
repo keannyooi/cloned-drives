@@ -9,9 +9,11 @@
     "handling": 82,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": ["Rest of the World", "Super Sedan"],
+    "tags": [
+        "Rest of the World",
+        "Super Sedan"
+    ],
     "isPrize": false,
-
     "weight": 1760,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +25,22 @@
     "mra": 67.16,
     "ola": 97.78,
     "description": "Sensible with a wicked twist. Card by Keanny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820931819695505408/image1151.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820932698720829520/s60_000.jpg",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820932706245279784/s60_333.jpg",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820932711526694922/s60_666.jpg",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820932759471128616/s60_996.jpg",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/820932736218693682/s60_969.jpg",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820932725166309396/s60_699.jpg",
-
     "333TopSpeed": 162,
     "3330to60": 4.3,
     "333Handling": 85,
-
     "666TopSpeed": 166,
     "6660to60": 4.1,
-    "666Handling": 87,   
-
+    "666Handling": 87,
     "996TopSpeed": 169,
     "9960to60": 3.8,
     "996Handling": 87,
-
     "969TopSpeed": 169,
     "9690to60": 4.1,
     "969Handling": 91,
-
     "699TopSpeed": 166,
     "6990to60": 3.8,
-    "699Handling": 91
+    "699Handling": 91,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

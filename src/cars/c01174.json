@@ -11,7 +11,6 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
-
     "weight": 1266,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,32 +22,22 @@
     "mra": 52.11,
     "ola": 78.38,
     "description": "The CSX is built expressly to go, turn and stop. Card by Johnny",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/828594205210181652/Shelby-CSX-V2.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/828594310076432384/Shelby-CSX.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/828594451365888011/Shelby-CSX-1-star.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/828594455476174890/Shelby-CSX-2-star.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/828594477907312681/Shelby-CSX-332.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/828594472454455316/Shelby-CSX-323.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/828594463638421504/Shelby-CSX-233.png",
-
     "333TopSpeed": 128,
-    "3330to60": 7.0,
+    "3330to60": 7,
     "333Handling": 80,
-
     "666TopSpeed": 132,
     "6660to60": 6.7,
     "666Handling": 82,
-
     "996TopSpeed": 137,
     "9960to60": 6.3,
     "996Handling": 82,
-
     "969TopSpeed": 137,
     "9690to60": 6.7,
     "969Handling": 85,
-
     "699TopSpeed": 132,
     "6990to60": 6.3,
-    "699Handling": 85
+    "699Handling": 85,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

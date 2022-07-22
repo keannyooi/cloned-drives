@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 747,
     "gc": "Medium",
     "seatCount": 4,
@@ -20,35 +19,25 @@
     "abs": false,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 7.00,
+    "mra": 7,
     "ola": 54.75,
     "description": "A constantly improving economy car that gave birth from the Suez Crisis. No, not that one where a boat got stuck. Card by bnuuy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/866643733922316288/imp.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823588870339428372/imp.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823588875682578432/imp333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823588881986879549/imp666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823588911539421194/imp996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823588900027105320/imp969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823588889884098610/imp699.png",
-
     "333TopSpeed": 92,
-    "3330to60": 17.0,
+    "3330to60": 17,
     "333Handling": 63,
-
     "666TopSpeed": 98,
     "6660to60": 16.1,
     "666Handling": 65,
-
-	"996TopSpeed": 104,
+    "996TopSpeed": 104,
     "9960to60": 15.2,
     "996Handling": 65,
-
     "969TopSpeed": 104,
     "9690to60": 16.1,
     "969Handling": 68,
-
-	"699TopSpeed": 98,
+    "699TopSpeed": 98,
     "6990to60": 15.2,
-    "699Handling": 68
+    "699Handling": 68,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

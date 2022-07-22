@@ -1,6 +1,9 @@
 {
     "rq": 2,
-    "make": ["Abarth", "Fiat"],
+    "make": [
+        "Abarth",
+        "Fiat"
+    ],
     "model": "595 Esseesse",
     "modelYear": 1963,
     "country": "IT",
@@ -9,9 +12,10 @@
     "handling": 62,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Style Icon"],
+    "tags": [
+        "Style Icon"
+    ],
     "isPrize": false,
-
     "weight": 570,
     "gc": "Low",
     "seatCount": 2,
@@ -20,35 +24,25 @@
     "abs": false,
     "enginePos": "Rear",
     "fuelType": "Petrol",
-    "mra": 0.00,
+    "mra": 0,
     "ola": 51.16,
     "description": "The original essesse, or esese, or I don't even know how to spell. Card by bnuuy",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/823589250737635348/595SS.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/823589922496970792/500ss.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/823589927803420742/500ss333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/823589933490110545/500ss666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/823589960296169533/500ss996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/823589952167346206/500ss969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/823589942529490984/500ss699.png",
-
     "333TopSpeed": 81,
     "3330to60": 26.9,
     "333Handling": 64,
-
     "666TopSpeed": 88,
     "6660to60": 25.5,
     "666Handling": 66,
-
     "996TopSpeed": 95,
     "9960to60": 24.1,
     "996Handling": 66,
-
     "969TopSpeed": 95,
     "9690to60": 25.5,
     "969Handling": 69,
-
     "699TopSpeed": 88,
     "6990to60": 24.1,
-    "699Handling": 69
+    "699Handling": 69,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

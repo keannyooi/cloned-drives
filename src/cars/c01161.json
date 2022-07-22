@@ -1,6 +1,9 @@
 {
     "rq": 60,
-    "make": ["Saleen", "Tesla"],
+    "make": [
+        "Saleen",
+        "Tesla"
+    ],
     "model": "Model S Foursixteen",
     "modelYear": 2014,
     "country": "US",
@@ -9,9 +12,11 @@
     "handling": 80,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Eco-Friendly", "Tuner"],
+    "tags": [
+        "Eco-Friendly",
+        "Tuner"
+    ],
     "isPrize": true,
-
     "weight": 2116,
     "gc": "Low",
     "seatCount": 5,
@@ -23,32 +28,22 @@
     "mra": 68.91,
     "ola": 90.24,
     "description": "Saleen decided that it would be a good idea to tune the Tesla Model S to save itself from bankruptcy, and the end result is pretty nice. Also known as the GTX later on. Card by keanny.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/848059449906167878/saleen_foursixteen.png",
-    "racehud000": "https://media.discordapp.net/attachments/819200156623962122/848058321395253298/saleen_tesla_000.jpg",
-    "racehud333": "https://media.discordapp.net/attachments/819200156623962122/848058325056880670/saleen_tesla_333.jpg",
-    "racehud666": "https://media.discordapp.net/attachments/819200156623962122/848058329468370985/saleen_tesla_666.jpg",
-    "racehud996": "https://media.discordapp.net/attachments/819200156623962122/848058342394822696/saleen_tesla_996.jpg",
-    "racehud969": "https://media.discordapp.net/attachments/819200156623962122/848058338248097792/saleen_tesla_969.jpg",
-    "racehud699": "https://media.discordapp.net/attachments/819200156623962122/848058334154063882/saleen_tesla_699.jpg",
-
     "333TopSpeed": 129,
     "3330to60": 3.9,
     "333Handling": 83,
-
     "666TopSpeed": 133,
     "6660to60": 3.7,
     "666Handling": 85,
-
     "996TopSpeed": 137,
     "9960to60": 3.5,
     "996Handling": 85,
-
     "969TopSpeed": 137,
     "9690to60": 3.7,
     "969Handling": 89,
-
     "699TopSpeed": 133,
     "6990to60": 3.5,
-    "699Handling": 89
+    "699Handling": 89,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

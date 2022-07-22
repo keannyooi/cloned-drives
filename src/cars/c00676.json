@@ -9,9 +9,12 @@
     "handling": 81,
     "driveType": "RWD",
     "tyreType": "Off-Road",
-    "tags": ["Motorsport", "Unique", "Style Icon"],
+    "tags": [
+        "Motorsport",
+        "Unique",
+        "Style Icon"
+    ],
     "isPrize": false,
-
     "weight": 880,
     "gc": "Medium",
     "seatCount": 2,
@@ -20,35 +23,25 @@
     "abs": false,
     "enginePos": "Middle",
     "fuelType": "Petrol",
-    "mra": 56.00,
-    "ola": 73.40,
+    "mra": 56,
+    "ola": 73.4,
     "description": "The infamous Stratos rally car. Card by Bnuuy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819944564768637018/Stratos.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/819944904833892392/stratos.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/819944910706704384/stratos333.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/819944916514897980/Stratos666.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/819944947453132800/stratos996.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/819944936501411871/stratos969.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/819944927173017610/stratos699.png",
-
     "333TopSpeed": 152,
-    "3330to60": 4.0,
+    "3330to60": 4,
     "333Handling": 84,
-
     "666TopSpeed": 156,
     "6660to60": 3.8,
     "666Handling": 86,
-
-	"996TopSpeed": 159,
+    "996TopSpeed": 159,
     "9960to60": 3.6,
     "996Handling": 86,
-
     "969TopSpeed": 159,
     "9690to60": 3.8,
     "969Handling": 90,
-
-	"699TopSpeed": 156,
+    "699TopSpeed": 156,
     "6990to60": 3.6,
-    "699Handling": 90
+    "699Handling": 90,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }

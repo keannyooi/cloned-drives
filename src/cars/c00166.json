@@ -11,7 +11,6 @@
     "tyreType": "Standard",
     "tags": [],
     "isPrize": false,
-
     "weight": 1700,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,32 +22,22 @@
     "mra": 68.17,
     "ola": 74.01,
     "description": "The 535i is a technological powerhouse with a potent straight six engine. Card by Havvy.",
-
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820435718455033926/BMW535i.png",
-    "racehud000": "https://cdn.discordapp.com/attachments/819200156623962122/820435776218202153/000_535i.png",
-    "racehud333": "https://cdn.discordapp.com/attachments/819200156623962122/820435782997114891/111_535i.png",
-    "racehud666": "https://cdn.discordapp.com/attachments/819200156623962122/820435787865784340/222_535i.png",
-    "racehud996": "https://cdn.discordapp.com/attachments/819200156623962122/820435804157378663/332_535i.png",
-    "racehud969": "https://cdn.discordapp.com/attachments/819200156623962122/831131575449812992/unknown.png",
-    "racehud699": "https://cdn.discordapp.com/attachments/819200156623962122/820435793339744277/233_535i.png",
-
     "333TopSpeed": 158,
     "3330to60": 5.4,
     "333Handling": 82,
-
     "666TopSpeed": 162,
     "6660to60": 5.1,
     "666Handling": 84,
-
-	"996TopSpeed": 165,
+    "996TopSpeed": 165,
     "9960to60": 4.8,
     "996Handling": 84,
-
     "969TopSpeed": 165,
     "9690to60": 5.1,
     "969Handling": 88,
-
-	"699TopSpeed": 162,
+    "699TopSpeed": 162,
     "6990to60": 4.8,
-    "699Handling": 88
+    "699Handling": 88,
+    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": ""
 }
