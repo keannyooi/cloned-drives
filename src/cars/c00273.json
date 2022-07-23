@@ -9,9 +9,7 @@
     "handling": 93,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Supercar"
-    ],
+    "tags": ["Supercar"],
     "isPrize": false,
     "weight": 1630,
     "gc": "Low",
@@ -23,10 +21,10 @@
     "fuelType": "Petrol",
     "mra": 80,
     "ola": 93.75,
-    "description": "Fastest Z06 yet, featuring a supercharged LT4. Card by Connor.",
+    "description": "Fastest Z06 yet, featuring a supercharged LT4.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/934139277598654545/A.ChevyCorvetteZ06C7.png",
     "333TopSpeed": 199,
-    "3330to60": 3,
+    "3330to60": 3.0,
     "333Handling": 96,
     "666TopSpeed": 201,
     "6660to60": 2.9,
@@ -40,6 +38,6 @@
     "699TopSpeed": 201,
     "6990to60": 2.7,
     "699Handling": 103,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995759639692058795/corvettec7.png",
+    "creator": "Connor"
 }

@@ -9,10 +9,7 @@
     "handling": 94,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Supercar",
-        "Track Day"
-    ],
+    "tags": ["Supercar","Track Day"],
     "isPrize": true,
     "weight": 1669,
     "gc": "Low",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 93.93,
     "ola": 90,
-    "description": "The most extreme, powerful, the most everything Corvette ever. Card by Connor.",
+    "description": "The most extreme, powerful, the most everything Corvette ever.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/934143865953353738/S.ChevyCorvetteZR1C7.png",
     "333TopSpeed": 214,
     "3330to60": 2.9,
@@ -41,6 +38,6 @@
     "699TopSpeed": 217,
     "6990to60": 2.6,
     "699Handling": 104,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995761010763899061/corvettec7.png",
+    "creator": "Connor"
 }
