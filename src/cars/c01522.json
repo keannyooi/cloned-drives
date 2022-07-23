@@ -9,12 +9,7 @@
     "handling": 92,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Unique",
-        "Hypercar",
-        "Ultra Expensive",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Unique","Hypercar","Ultra Expensive","The Japanese Odyssey","Eco-Friendly"],
     "isPrize": true,
     "weight": 1900,
     "gc": "Low",
@@ -26,7 +21,7 @@
     "fuelType": "Electric",
     "mra": 121.41,
     "ola": 105.88,
-    "description": "Card by Bnuuy.",
+    "description": "The first hypercar from a Japanese maker will reach 50 customers worldwide at prices in excess of $3 million.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/966803673424482304/AsparkOWL.png",
     "333TopSpeed": 251,
     "3330to60": 1.6,
@@ -43,6 +38,6 @@
     "699TopSpeed": 253,
     "6990to60": 1.4,
     "699Handling": 102,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995715910054719518/owl.png",
+    "creator": "Bnuuy"
 }

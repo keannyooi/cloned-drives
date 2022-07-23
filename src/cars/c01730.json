@@ -9,10 +9,7 @@
     "handling": 88,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Supercar",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Supercar","The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1762,
     "gc": "Low",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 75.55,
     "ola": 74.7,
-    "description": "Card by Bnuuy.",
+    "description": "The GT-R is clearly and comprehensively improved, but is it worth the price hike?",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/930796548256841758/GTR2010.png",
     "333TopSpeed": 198,
     "3330to60": 3.2,
@@ -41,6 +38,6 @@
     "699TopSpeed": 200,
     "6990to60": 2.9,
     "699Handling": 98,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995691912688308334/2010GTR.png",
+    "creator": "Bnuuy"
 }
