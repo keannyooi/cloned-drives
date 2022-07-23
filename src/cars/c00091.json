@@ -9,11 +9,7 @@
     "handling": 80,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Track Day",
-        "The Royal Collection",
-        "Unique"
-    ],
+    "tags": ["Track Day","The Royal Collection","Unique"],
     "isPrize": false,
     "weight": 2002,
     "gc": "Medium",
@@ -25,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 75,
     "ola": 97.44,
-    "description": "Card by Bnuuy.",
+    "description": "Widebody,a 600bhp twin supercharged V8 and less than 40 produced.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/852120878531346462/V600LM.png",
     "333TopSpeed": 208,
     "3330to60": 3.7,
@@ -42,6 +38,6 @@
     "699TopSpeed": 210,
     "6990to60": 3.3,
     "699Handling": 89,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995691199451111584/V8VantLMV600.png",
+    "creator": "Bnuuy"
 }

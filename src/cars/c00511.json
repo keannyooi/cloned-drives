@@ -1,9 +1,6 @@
 {
     "rq": 96,
-    "make": [
-        "HKS",
-        "Mitsubishi"
-    ],
+    "make": ["HKS","Mitsubishi"],
     "model": "Lancer Evolution IX CT230R",
     "modelYear": 2006,
     "country": "JP",
@@ -12,11 +9,7 @@
     "handling": 94,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Motorsport",
-        "Tuner",
-        "Unique"
-    ],
+    "tags": ["Motorsport","Tuner","Unique"],
     "isPrize": true,
     "weight": 1068,
     "gc": "Low",
@@ -28,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 87.28,
     "ola": 75.23,
-    "description": "A superb combination of HKS technology in a car that has beaten numerous best circuit lap times. Card by Bnuuy.",
+    "description": "A superb combination of HKS technology in a car that has beaten numerous best circuit lap times.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/930193692411699250/hksevoreal.png",
     "333TopSpeed": 176,
     "3330to60": 2.5,
@@ -45,6 +38,6 @@
     "699TopSpeed": 179,
     "6990to60": 2.2,
     "699Handling": 104,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995691596144181338/HKSCT230Rred.png",
+    "creator": "Bnuuy"
 }

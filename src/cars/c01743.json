@@ -9,11 +9,7 @@
     "handling": 91,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Track Day",
-        "Supercar",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Track Day","Supercar","The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1776,
     "gc": "Low",
@@ -25,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 72.5,
     "ola": 68.96,
-    "description": "Card by Bnuuy.",
+    "description": "Nissan's track star is a bit more refined for daily use, but it's only worth the big sticker price at extra-legal speeds.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/938017369069060126/GTR2018TRacc.png",
     "333TopSpeed": 198,
     "3330to60": 2.8,
@@ -42,6 +38,6 @@
     "699TopSpeed": 200,
     "6990to60": 2.5,
     "699Handling": 101,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995691422038630480/2018GTRtrack.png",
+    "creator": "Bnuuy"
 }
