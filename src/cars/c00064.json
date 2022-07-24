@@ -9,12 +9,7 @@
     "handling": 68,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Motorsport",
-        "Ultra Expensive",
-        "Unique",
-        "The Royal Collection"
-    ],
+    "tags": ["Motorsport","Ultra Expensive","Unique","The Royal Collection"],
     "isPrize": true,
     "weight": 890,
     "gc": "Low",
@@ -26,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 52.56,
     "ola": 78.05,
-    "description": "A Classic Le Mans racer. Card by Bnuuy.",
+    "description": "A Classic Le Mans racer.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/849757302155509780/DB3S.png",
     "333TopSpeed": 144,
     "3330to60": 6.3,
@@ -43,6 +38,6 @@
     "699TopSpeed": 147,
     "6990to60": 5.6,
     "699Handling": 75,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995819556037738556/db3s.png",
+    "creator": "Bnuuy"
 }

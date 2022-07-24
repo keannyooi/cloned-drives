@@ -21,10 +21,10 @@
     "fuelType": "Petrol",
     "mra": 67.95,
     "ola": 83.02,
-    "description": "The front-engined Porsche with a dream. Card by Bnuuy",
+    "description": "The front-engined Porsche with a dream.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819393620670414848/928GTS.png",
     "333TopSpeed": 169,
-    "3330to60": 5,
+    "3330to60": 5.0,
     "333Handling": 81,
     "666TopSpeed": 172,
     "6660to60": 4.8,
@@ -38,6 +38,6 @@
     "699TopSpeed": 172,
     "6990to60": 4.5,
     "699Handling": 87,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995807131867553806/928GTS.png",
+    "creator": "Bnuuy"
 }

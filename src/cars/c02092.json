@@ -1,20 +1,15 @@
 {
     "rq": 59,
-    "make": [
-        "Alpina",
-        "BMW"
-    ],
+    "make": ["Alpina","BMW"],
     "model": "Roadster S",
     "modelYear": 2004,
     "country": "DE",
     "topSpeed": 165,
-    "0to60": 5,
+    "0to60": 5.0,
     "handling": 84,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner"
-    ],
+    "tags": ["Tuner"],
     "isPrize": false,
     "weight": 1320,
     "gc": "Low",
@@ -26,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 71.42,
     "ola": 73.2,
-    "description": "Card by Bnuuy.",
+    "description": "Alpina's take on the first generation of Z4.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/930193928135778304/AlpinaRoadsterS.png",
     "333TopSpeed": 168,
     "3330to60": 4.8,
@@ -43,6 +38,6 @@
     "699TopSpeed": 171,
     "6990to60": 4.3,
     "699Handling": 93,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995820023622946896/alpinaroadsters.png",
+    "creator": "Bnuuy"
 }

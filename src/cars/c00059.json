@@ -9,10 +9,7 @@
     "handling": 79,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "The Royal Collection",
-        "Sleeper"
-    ],
+    "tags": ["The Royal Collection","Sleeper", "Unique"],
     "isPrize": false,
     "weight": 1858,
     "gc": "Low",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 98,
     "ola": 77.55,
-    "description": "Card by Bnuuy.",
+    "description": "The Americans were not allowed the DB7 Zagato, so they got the DBAR1 instead (DB American Roadster 1).",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/855243303137050684/DBAR1.png",
     "333TopSpeed": 188,
     "3330to60": 4.7,
@@ -41,6 +38,6 @@
     "699TopSpeed": 191,
     "6990to60": 4.2,
     "699Handling": 88,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995819254349844551/dbar1.png",
+    "creator": "Bnuuy"
 }

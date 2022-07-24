@@ -1,9 +1,6 @@
 {
     "rq": 93,
-    "make": [
-        "Alpina",
-        "BMW"
-    ],
+    "make": ["Alpina","BMW"],
     "model": "XB7",
     "modelYear": 2020,
     "country": "DE",
@@ -12,9 +9,7 @@
     "handling": 83,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": [
-        "Tuner"
-    ],
+    "tags": ["Tuner", "Extreme Juggernaut"],
     "isPrize": false,
     "weight": 2580,
     "gc": "High",
@@ -26,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 71.93,
     "ola": 68.29,
-    "description": "Alpina stopped tuning some M5's to try to tackle the Beast that is the X7. Card by Bnuuy.",
+    "description": "Alpina stopped tuning some M5's to try to tackle the Beast that is the X7.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/853755215995863041/xb7redo.png",
     "333TopSpeed": 183,
     "3330to60": 3.7,
@@ -43,6 +38,6 @@
     "699TopSpeed": 186,
     "6990to60": 3.3,
     "699Handling": 92,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995803815037124658/XB7.png",
+    "creator": "Bnuuy"
 }

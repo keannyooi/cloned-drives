@@ -1,9 +1,6 @@
 {
     "rq": 60,
-    "make": [
-        "AC Schnitzer",
-        "BMW"
-    ],
+    "make": ["AC Schnitzer","BMW"],
     "model": "S3 Sport CLS II",
     "modelYear": 1995,
     "country": "DE",
@@ -12,12 +9,7 @@
     "handling": 83,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Concept",
-        "Track Day",
-        "Tuner",
-        "Unique"
-    ],
+    "tags": ["Concept","Track Day","Tuner","Unique"],
     "isPrize": true,
     "weight": 1330,
     "gc": "Low",
@@ -29,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 80.33,
     "ola": 85.71,
-    "description": "A Cute Tuned M3. Card by Bnuuy.",
+    "description": "A Cute Tuned M3.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/850408901899845742/acshitsnerS3SportCLSII.png",
     "333TopSpeed": 183,
     "3330to60": 4.7,
@@ -46,6 +38,6 @@
     "699TopSpeed": 186,
     "6990to60": 4.2,
     "699Handling": 92,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995804376369209414/ACS3CLSII.png",
+    "creator": "Bnuuy"
 }

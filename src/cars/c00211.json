@@ -9,13 +9,7 @@
     "handling": 101,
     "driveType": "4WD",
     "tyreType": "Slick",
-    "tags": [
-        "Unique",
-        "Track Day",
-        "Concept",
-        "Ultra Expensive",
-        "Eargasm"
-    ],
+    "tags": ["Unique","Track Day","Concept","Ultra Expensive","Eargasm"],
     "isPrize": true,
     "weight": 1240,
     "gc": "Low",
@@ -27,10 +21,10 @@
     "fuelType": "Petrol",
     "mra": 150,
     "ola": 85.71,
-    "description": "The ultimate Track weapon powered by a W16. Card by Bnuuy.",
+    "description": "The ultimate Track weapon powered by a W16..",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/958780802139824149/bolideconcept.png",
     "333TopSpeed": 319,
-    "3330to60": 2,
+    "3330to60": 2.0,
     "333Handling": 104,
     "666TopSpeed": 320,
     "6660to60": 1.9,
@@ -44,6 +38,6 @@
     "699TopSpeed": 320,
     "6990to60": 1.8,
     "699Handling": 112,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995804006578393108/bolideconcept.png",
+    "creator": "Bnuuy"
 }

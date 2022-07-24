@@ -9,10 +9,7 @@
     "handling": 84,
     "driveType": "RWD",
     "tyreType": "Off-Road",
-    "tags": [
-        "Motorsport",
-        "Unique"
-    ],
+    "tags": ["Motorsport","Unique"],
     "isPrize": false,
     "weight": 990,
     "gc": "Medium",
@@ -24,10 +21,10 @@
     "fuelType": "Petrol",
     "mra": 57.5,
     "ola": 60,
-    "description": "A faster take on the 1979 WRC champion. Card by Bnuuy.",
+    "description": "A faster take on the 1979 WRC champion.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819950262893543424/RS1700T.png",
     "333TopSpeed": 144,
-    "3330to60": 4,
+    "3330to60": 4.0,
     "333Handling": 87,
     "666TopSpeed": 147,
     "6660to60": 3.8,
@@ -41,6 +38,6 @@
     "699TopSpeed": 147,
     "6990to60": 3.6,
     "699Handling": 93,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995803644400250920/ford1200Tthing.png",
+    "creator": "Bnuuy"
 }

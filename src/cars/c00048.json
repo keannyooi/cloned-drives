@@ -1,9 +1,6 @@
 {
     "rq": 83,
-    "make": [
-        "AMS Performance",
-        "Nissan"
-    ],
+    "make": ["AMS Performance","Nissan"],
     "model": "Alpha Omega GT-R",
     "modelYear": 2015,
     "country": "US",
@@ -12,12 +9,7 @@
     "handling": 35,
     "driveType": "4WD",
     "tyreType": "Slick",
-    "tags": [
-        "Oddity",
-        "Tuner",
-        "Street Racer",
-        "Track Day"
-    ],
+    "tags": ["Oddity","Tuner","Street Racer","Track Day"],
     "isPrize": true,
     "weight": 1652,
     "gc": "Low",
@@ -29,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 133.33,
     "ola": 82.22,
-    "description": "The AWD Beast thats better than Chirons, wait hol up theres a 3200hp Version?? Card by Bnuuy.",
+    "description": "The AWD Beast thats better than Chirons, wait hol up theres a 3200hp Version??",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/849717884943073340/amsalphaomegathingy.png",
     "333TopSpeed": 289,
     "3330to60": 1.5,
@@ -46,6 +38,6 @@
     "699TopSpeed": 291,
     "6990to60": 1.4,
     "699Handling": 39,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995804917656719410/AMSAlphaOmegaGTR.png",
+    "creator": "Bnuuy"
 }

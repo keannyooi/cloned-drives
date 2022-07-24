@@ -9,13 +9,7 @@
     "handling": 86,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Concept",
-        "Super Sedan",
-        "Unique",
-        "Innovative",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Concept","Super Sedan","Unique","Innovative","The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1400,
     "gc": "Medium",
@@ -27,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 79.59,
     "ola": 76.92,
-    "description": "The Hybrid 4WD sports concept announced at the opening of the 21st century. Card by Bnuuy.",
+    "description": "The Hybrid 4WD sports concept announced at the opening of the 21st century.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/867874918595035176/dualnote.png",
     "333TopSpeed": 182,
     "3330to60": 3.7,
@@ -44,6 +38,6 @@
     "699TopSpeed": 185,
     "6990to60": 3.3,
     "699Handling": 95,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995806206172082216/DualNote.png",
+    "creator": "Bnuuy"
 }

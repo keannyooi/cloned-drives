@@ -5,14 +5,11 @@
     "modelYear": 2017,
     "country": "GB",
     "topSpeed": 188,
-    "0to60": 4,
+    "0to60": 4.0,
     "handling": 86,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "The Royal Collection",
-        "Grand Tourer"
-    ],
+    "tags": ["The Royal Collection","Grand Tourer"],
     "isPrize": false,
     "weight": 1705,
     "gc": "Low",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 90.91,
     "ola": 90,
-    "description": "Card by Bnuuy.",
+    "description": "If the V12 was too expensive and loud, this is the perfect car for you. Even if it does lose to a lot in its class.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/852108706446835733/DB11V8New.png",
     "333TopSpeed": 191,
     "3330to60": 3.8,
@@ -41,6 +38,6 @@
     "699TopSpeed": 194,
     "6990to60": 3.4,
     "699Handling": 95,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995820891596390401/DB11V8.png",
+    "creator": "Bnuuy"
 }

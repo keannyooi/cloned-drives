@@ -5,13 +5,11 @@
     "modelYear": 2008,
     "country": "JP",
     "topSpeed": 150,
-    "0to60": 5,
+    "0to60": 5.0,
     "handling": 86,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Street Racer"
-    ],
+    "tags": ["Street Racer"],
     "isPrize": false,
     "weight": 1640,
     "gc": "Medium",
@@ -23,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 58.82,
     "ola": 76,
-    "description": "MR more like NO. Card by Bnuuy",
+    "description": "MR more like NO.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/823566527487148092/XMR.png",
     "333TopSpeed": 153,
     "3330to60": 4.8,
@@ -40,6 +38,6 @@
     "699TopSpeed": 157,
     "6990to60": 4.3,
     "699Handling": 95,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995808144167026758/evoxmr.png",
+    "creator": "Bnuuy"
 }

@@ -5,19 +5,11 @@
     "modelYear": 1939,
     "country": "GB",
     "topSpeed": 90,
-    "0to60": 19,
+    "0to60": 19.0,
     "handling": 53,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": [
-        "The Royal Collection",
-        "Super Sedan",
-        "Grand Tourer",
-        "Unique",
-        "Ultra Expensive",
-        "Innovative",
-        "Concept"
-    ],
+    "tags": ["The Royal Collection","Super Sedan","Grand Tourer","Unique","Ultra Expensive","Innovative","Concept"],
     "isPrize": false,
     "weight": 1219,
     "gc": "Medium",
@@ -29,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 13,
     "ola": 60,
-    "description": "The first ever Concept car. Card by Bnuuy.",
+    "description": "Widely regarded as the first ever Concept car.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/866643528183316490/atom.png",
     "333TopSpeed": 96,
     "3330to60": 18.1,
@@ -46,6 +38,6 @@
     "699TopSpeed": 102,
     "6990to60": 16.2,
     "699Handling": 59,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995819758526152794/atom.png",
+    "creator": "Bnuuy"
 }

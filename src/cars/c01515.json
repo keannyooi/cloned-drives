@@ -1,9 +1,6 @@
 {
     "rq": 84,
-    "make": [
-        "PhD Racing",
-        "Toyota"
-    ],
+    "make": ["PhD Racing","Toyota"],
     "model": "TA90 V2",
     "modelYear": 2020,
     "country": "US",
@@ -12,10 +9,7 @@
     "handling": 93,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner",
-        "Track Day"
-    ],
+    "tags": ["Tuner","Track Day","Unique"],
     "isPrize": false,
     "weight": 1486,
     "gc": "Low",
@@ -27,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 103.03,
     "ola": 82.35,
-    "description": "Card by Bnuuy.",
+    "description": "An one-off time attack GR Supra made in the states.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/959441404873048074/TA90V2.png",
     "333TopSpeed": 204,
     "3330to60": 3.2,
@@ -44,6 +38,6 @@
     "699TopSpeed": 206,
     "6990to60": 2.9,
     "699Handling": 103,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995804857179046009/phdta90v2.png",
+    "creator": "Bnuuy"
 }

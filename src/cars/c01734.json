@@ -9,11 +9,7 @@
     "handling": 92,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Track Day",
-        "Supercar",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Track Day","Supercar","The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1703,
     "gc": "Low",
@@ -25,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 78.12,
     "ola": 72,
-    "description": "Card by Bnuuy.",
+    "description": "Possibly the last update to the GT-R Nismo Package for the R35 Generation.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/945446962361163857/GTRNismo19.png",
     "333TopSpeed": 208,
     "3330to60": 2.4,
@@ -42,6 +38,6 @@
     "699TopSpeed": 210,
     "6990to60": 2.1,
     "699Handling": 102,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995806412519251998/2019GTRNismo.png",
+    "creator": "Bnuuy"
 }

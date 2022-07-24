@@ -9,10 +9,7 @@
     "handling": 79,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "The Royal Collection",
-        "Grand Tourer"
-    ],
+    "tags": ["The Royal Collection","Grand Tourer"],
     "isPrize": false,
     "weight": 1800,
     "gc": "Low",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 88.89,
     "ola": 83.33,
-    "description": "Card by Bnuuy.",
+    "description": "the last common version of the DB7.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/855243144466530334/db7GT.png",
     "333TopSpeed": 187,
     "3330to60": 4.6,
@@ -41,6 +38,6 @@
     "699TopSpeed": 190,
     "6990to60": 4.1,
     "699Handling": 88,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995819180555243551/db7GT.png",
+    "creator": "Bnuuy."
 }

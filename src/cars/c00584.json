@@ -9,12 +9,7 @@
     "handling": 73,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Motorsport",
-        "Supercar",
-        "Ultra Expensive",
-        "Unique"
-    ],
+    "tags": ["Motorsport","Ultra Expensive","Unique"],
     "isPrize": true,
     "weight": 1040,
     "gc": "Low",
@@ -26,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 70.69,
     "ola": 102.44,
-    "description": "The competition spec E-Type. Card by Bnuuy.",
+    "description": "The competition spec E-Type.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819950054394691644/ETypeComp.png",
     "333TopSpeed": 173,
     "3330to60": 3.9,
@@ -43,6 +38,6 @@
     "699TopSpeed": 176,
     "6990to60": 3.5,
     "699Handling": 81,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995820168422899712/etypelightweight.png",
+    "creator": "Bnuuy"
 }

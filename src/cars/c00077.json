@@ -9,11 +9,7 @@
     "handling": 80,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "The Royal Collection",
-        "Sleeper",
-        "Servers Choice"
-    ],
+    "tags": ["The Royal Collection","Sleeper","Servers Choice"],
     "isPrize": false,
     "weight": 1740,
     "gc": "Low",
@@ -25,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 98,
     "ola": 77.55,
-    "description": "Card by Bnuuy.",
+    "description": "One of the cheapest Aston Martin x Zagato cars avalible.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/855243249941479444/db7zagato.png",
     "333TopSpeed": 193,
     "3330to60": 4.7,
@@ -42,6 +38,6 @@
     "699TopSpeed": 195,
     "6990to60": 4.2,
     "699Handling": 89,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995819006676172910/DB7Zagato.png",
+    "creator": "Bnuuy"
 }

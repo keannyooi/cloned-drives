@@ -1,9 +1,6 @@
 {
     "rq": 42,
-    "make": [
-        "Kid's Heart",
-        "Nissan"
-    ],
+    "make": ["Kid's Heart","Nissan"],
     "model": "SilEighty",
     "modelYear": 1998,
     "country": "JP",
@@ -12,12 +9,7 @@
     "handling": 75,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Street Racer",
-        "Tuner",
-        "Unique",
-        "Silver Screen"
-    ],
+    "tags": ["Street Racer","Tuner","Unique","Silver Screen"],
     "isPrize": true,
     "weight": 1150,
     "gc": "Low",
@@ -29,23 +21,23 @@
     "fuelType": "Petrol",
     "mra": 59.57,
     "ola": 75,
-    "description": "Wings of fire. Card by Bnuuy.",
+    "description": "Wings of fire.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819576559911567380/Sil.png",
     "333TopSpeed": 116,
     "3330to60": 5.3,
     "333Handling": 77,
     "666TopSpeed": 120,
-    "6660to60": 5,
+    "6660to60": 5.0,
     "666Handling": 80,
     "996TopSpeed": 125,
     "9960to60": 4.8,
     "996Handling": 80,
     "969TopSpeed": 125,
-    "9690to60": 5,
+    "9690to60": 5.0,
     "969Handling": 83,
     "699TopSpeed": 120,
     "6990to60": 4.8,
     "699Handling": 83,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995806954821787708/sil80.png",
+    "creator": "Bnuuy"
 }

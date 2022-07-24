@@ -9,10 +9,7 @@
     "handling": 81,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Street Racer",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Street Racer","The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1150,
     "gc": "Medium",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 66.23,
     "ola": 70.59,
-    "description": "Card by Bnuuy.",
+    "description": "The 2nd generation of evo includes: better handling, a more refined engine and more options.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/917900535414276157/evo2rs.png",
     "333TopSpeed": 117,
     "3330to60": 4.8,
@@ -41,6 +38,6 @@
     "699TopSpeed": 121,
     "6990to60": 4.3,
     "699Handling": 90,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995807966903140392/evoiirs.png",
+    "creator": "Bnuuy"
 }

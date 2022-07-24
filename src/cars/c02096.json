@@ -1,9 +1,6 @@
 {
     "rq": 1,
-    "make": [
-        "Aston-Martin",
-        "Aston Martin"
-    ],
+    "make": ["Aston-Martin","Aston Martin"],
     "model": "Prototype A2 'Bunny'",
     "modelYear": 1920,
     "country": "GB",
@@ -12,12 +9,7 @@
     "handling": 47,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": [
-        "Concept",
-        "Unqiue",
-        "Ultra Expensive",
-        "Motorsport"
-    ],
+    "tags": ["Concept","Unqiue","Ultra Expensive","Motorsport"],
     "isPrize": true,
     "weight": 721,
     "gc": "Medium",
@@ -29,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 0,
     "ola": 54.47,
-    "description": "Bnuuy car!, Bnuuy car!, Bnuuy car! Card by Bnuuy.",
+    "description": "Bnuuy car!, Bnuuy car!, Bnuuy car!",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/957983096219795546/A2Bunny.png",
     "333TopSpeed": 85,
     "3330to60": 25.5,
@@ -46,6 +38,6 @@
     "699TopSpeed": 91,
     "6990to60": 22.8,
     "699Handling": 52,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995807747792703608/astonbnuuy.png",
+    "creator": "Bnuuy"
 }

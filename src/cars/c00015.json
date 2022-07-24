@@ -5,7 +5,7 @@
     "modelYear": 2001,
     "country": "US",
     "topSpeed": 119,
-    "0to60": 8,
+    "0to60": 8.0,
     "handling": 67,
     "driveType": "4WD",
     "tyreType": "All-Surface",
@@ -21,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 47.34,
     "ola": 82.5,
-    "description": "The american MDX. Card by Bnuuy",
+    "description": "The american MDX.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819658974068211742/acuramdx.png",
     "333TopSpeed": 123,
     "3330to60": 7.6,
@@ -38,6 +38,6 @@
     "699TopSpeed": 128,
     "6990to60": 6.8,
     "699Handling": 74,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995819971542274079/acuramdx.png",
+    "creator": "Bnuuy"
 }
