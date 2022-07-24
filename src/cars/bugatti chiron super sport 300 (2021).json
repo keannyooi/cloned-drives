@@ -1,0 +1,49 @@
+{
+    "rq": 105,
+    "make": "Bugatti",
+    "model": "Chiron Super Sport 300",
+    "modelYear": 2021,
+    "country": "FR",
+    "topSpeed": 300,
+    "0to60": 2.3,
+    "handling": 93,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Hypercar", "Unique", "Ultra Expensive"],
+    "isPrize": true,
+
+    "weight": 1973,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 124.32,
+    "ola": 90.43,
+    "description": "One of the most powerful rr cars to ever exist.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/957983151295184987/ChironSuperSport300.png",
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995823177471111259/chironss300.png",
+    "creator": "Bnuuy",
+
+    "333TopSpeed": 302,
+    "3330to60": 2.2,
+    "333Handling": 96,
+
+    "666TopSpeed": 303,
+    "6660to60": 2.1,
+    "666Handling": 99,
+
+    "996TopSpeed": 305,
+    "9960to60": 2.0,
+    "996Handling": 99,
+
+    "969TopSpeed": 305,
+    "9690to60": 2.1,
+    "969Handling": 103,
+
+    "699TopSpeed": 303,
+    "6990to60": 2.0,
+    "699Handling": 103
+}
