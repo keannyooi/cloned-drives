@@ -9,9 +9,7 @@
     "handling": 62,
     "driveType": "RWD",
     "tyreType": "All-Surface",
-    "tags": [
-        "The Japanese Odyssey"
-    ],
+    "tags": ["The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1409,
     "gc": "Medium",
@@ -23,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 16.11,
     "ola": 61.67,
-    "description": "Card by Demon.",
+    "description": "4x2 can be considered the weakest offroading layout, but this can still do the job.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/964378032905277520/Nissan_Frontier_4x2_1998.png",
     "333TopSpeed": 97,
     "3330to60": 10.8,
@@ -40,6 +38,6 @@
     "699TopSpeed": 102,
     "6990to60": 9.7,
     "699Handling": 69,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995798362576146523/Nissan_Frontier_4x2_1998_Hud.png",
+    "creator": "DodgeDemon"
 }

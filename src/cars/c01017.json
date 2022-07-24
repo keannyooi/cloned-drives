@@ -9,11 +9,7 @@
     "handling": 93,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Hypercar",
-        "Ultra Expensive",
-        "Silver Screen"
-    ],
+    "tags": ["Hypercar","Ultra Expensive","Silver Screen"],
     "isPrize": false,
     "weight": 1350,
     "gc": "Low",
@@ -25,10 +21,10 @@
     "fuelType": "Petrol",
     "mra": 100,
     "ola": 95.22,
-    "description": "The glitzy, gorgeous Pagani Huayra is simply the king of the niche hypercar market. Card by Bnuuy.",
+    "description": "The glitzy, gorgeous Pagani Huayra is simply the king of the niche hypercar market.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/838136367925035068/Huvuyuyray.png",
     "333TopSpeed": 226,
-    "3330to60": 3,
+    "3330to60": 3.0,
     "333Handling": 96,
     "666TopSpeed": 229,
     "6660to60": 2.9,
@@ -42,6 +38,6 @@
     "699TopSpeed": 229,
     "6990to60": 2.7,
     "699Handling": 103,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995802942986780762/huarya.png",
+    "creator": "Bnuuy"
 }

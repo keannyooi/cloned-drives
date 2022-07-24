@@ -9,9 +9,7 @@
     "handling": 63,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": [
-        "The Japanese Odyssey"
-    ],
+    "tags": ["The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1864,
     "gc": "High",
@@ -23,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 35.39,
     "ola": 58.72,
-    "description": "Card by Demon.",
+    "description": "Whats better than 4x2? 4x4 ofc.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/964176947292831814/Nissan_Frontier_SE-V6_4x4_1999.png",
     "333TopSpeed": 107,
     "3330to60": 10.4,
@@ -40,6 +38,6 @@
     "699TopSpeed": 112,
     "6990to60": 9.3,
     "699Handling": 70,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995798190089588898/Nissan_Frontier_SE-V6_4x4_1999_Hud.png",
+    "creator": "DodgeDemon"
 }

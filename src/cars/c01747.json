@@ -9,9 +9,7 @@
     "handling": 58,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": [
-        "The Japanese Odyssey"
-    ],
+    "tags": ["The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1823,
     "gc": "High",
@@ -23,10 +21,10 @@
     "fuelType": "Petrol",
     "mra": 15.71,
     "ola": 60.34,
-    "description": "Card by DodgeDemon",
+    "description": "Hard but Nissan.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/968179717545017344/Nissan_Hardbody_Pickup_SE-V6_4x4_1993.png",
     "333TopSpeed": 100,
-    "3330to60": 11,
+    "3330to60": 11.0,
     "333Handling": 60,
     "666TopSpeed": 106,
     "6660to60": 10.4,
@@ -40,6 +38,6 @@
     "699TopSpeed": 106,
     "6990to60": 9.9,
     "699Handling": 64,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995798550510321734/Nissan_Hardbody_Pickup_SE-V6_4x4_1993_Hud.png",
+    "creator": "DodgeDemon"
 }

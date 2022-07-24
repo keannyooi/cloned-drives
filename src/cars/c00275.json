@@ -5,13 +5,11 @@
     "modelYear": 2020,
     "country": "US",
     "topSpeed": 184,
-    "0to60": 3,
+    "0to60": 3.0,
     "handling": 92,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Supercar"
-    ],
+    "tags": ["Supercar"],
     "isPrize": false,
     "weight": 1643,
     "gc": "Medium",
@@ -23,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 68.18,
     "ola": 73.33,
-    "description": "The first ever mid-engine Corvette built to compete vs the other mid engine supercars. Card by Connor.",
+    "description": "The first ever mid-engine Corvette built to compete vs the other mid engine supercars.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820223074649112616/S.ChevyCorvetteStingrayZ51C8.png",
     "333TopSpeed": 187,
     "3330to60": 2.9,
@@ -40,6 +38,6 @@
     "699TopSpeed": 190,
     "6990to60": 2.6,
     "699Handling": 102,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995766645387710554/corvettec8.png",
+    "creator": "Connor"
 }

@@ -9,9 +9,7 @@
     "handling": 67,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": [
-        "The Japanese Odyssey"
-    ],
+    "tags": ["The Japanese Odyssey"],
     "isPrize": false,
     "weight": 2074,
     "gc": "High",
@@ -23,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 53.15,
     "ola": 71.05,
-    "description": "Card by DodgeDemon",
+    "description": "Generic Pickup for Americans.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/968179498128384000/Nissan_Frontier_LE_2005.png",
     "333TopSpeed": 118,
     "3330to60": 7.2,
@@ -40,6 +38,6 @@
     "699TopSpeed": 122,
     "6990to60": 6.5,
     "699Handling": 74,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995797829593350234/Nissan_Frontier_LE_2005_Hud.png",
+    "creator": "DodgeDemon"
 }

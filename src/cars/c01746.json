@@ -5,13 +5,11 @@
     "modelYear": 1993,
     "country": "JP",
     "topSpeed": 89,
-    "0to60": 12,
+    "0to60": 12.0,
     "handling": 61,
     "driveType": "RWD",
     "tyreType": "All-Surface",
-    "tags": [
-        "The Japanese Odyssey"
-    ],
+    "tags": ["The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1364,
     "gc": "High",
@@ -23,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 15.31,
     "ola": 63.33,
-    "description": "Card by DodgeDemon",
+    "description": "Hard but weak.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/968179680958111764/Nissan_Hardbody_Pickup_4x2_1993.png",
     "333TopSpeed": 95,
     "3330to60": 11.4,
@@ -40,6 +38,6 @@
     "699TopSpeed": 101,
     "6990to60": 10.2,
     "699Handling": 68,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995798564041138206/Nissan_Hardbody_Pickup_4x2_1993_Hud.png",
+    "creator": "DodgeDemon"
 }

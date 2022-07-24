@@ -5,14 +5,11 @@
     "modelYear": 2017,
     "country": "JP",
     "topSpeed": 196,
-    "0to60": 3,
+    "0to60": 3.0,
     "handling": 90,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Supercar",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Supercar","The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1784,
     "gc": "Low",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 73.17,
     "ola": 80,
-    "description": "Card by Bnuuy.",
+    "description": "2017 revisions to the Nissan GT-R supercar are the most significant yet, but it has more 'everyday' supercar rivals than ever before.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/938016970148810772/GTR2017.png",
     "333TopSpeed": 199,
     "3330to60": 2.9,
@@ -41,6 +38,6 @@
     "699TopSpeed": 201,
     "6990to60": 2.6,
     "699Handling": 100,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995802753387483226/2017GTR.png",
+    "creator": "Bnuuy"
 }

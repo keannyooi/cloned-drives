@@ -9,9 +9,7 @@
     "handling": 64,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": [
-        "The Japanese Odyssey"
-    ],
+    "tags": ["The Japanese Odyssey"],
     "isPrize": false,
     "weight": 2042,
     "gc": "High",
@@ -23,10 +21,10 @@
     "fuelType": "Petrol",
     "mra": 54,
     "ola": 69.96,
-    "description": "Card by Demon.",
+    "description": "pro.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/964176538541101066/Nissan_Frontier_Pro-4X_2012.png",
     "333TopSpeed": 118,
-    "3330to60": 7,
+    "3330to60": 7.0,
     "333Handling": 66,
     "666TopSpeed": 122,
     "6660to60": 6.7,
@@ -40,6 +38,6 @@
     "699TopSpeed": 122,
     "6990to60": 6.3,
     "699Handling": 71,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995798327494983751/Nissan_Frontier_Pro-4X_2012_Hud.png",
+    "creator": "DodgeDemon"
 }

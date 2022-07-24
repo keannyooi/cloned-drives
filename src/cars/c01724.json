@@ -9,9 +9,7 @@
     "handling": 65,
     "driveType": "RWD",
     "tyreType": "Off-Road",
-    "tags": [
-        "The Japanese Odyssey"
-    ],
+    "tags": ["The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1967,
     "gc": "High",
@@ -23,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 53.1,
     "ola": 72.73,
-    "description": "Card by DodgeDemon",
+    "description": "Not quite Defender levels of off-roady, but close.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/968179295421857802/Nissan_Frontier_DR_2013.png",
     "333TopSpeed": 118,
     "3330to60": 7.3,
@@ -40,6 +38,6 @@
     "699TopSpeed": 122,
     "6990to60": 6.5,
     "699Handling": 72,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995797901370474526/Nissan_Frontier_DR_2013_Hud.png",
+    "creator": "DodgeDemon"
 }

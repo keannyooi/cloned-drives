@@ -9,10 +9,7 @@
     "handling": 86,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Concept",
-        "Unique"
-    ],
+    "tags": ["Concept","Unique"],
     "isPrize": false,
     "weight": 1400,
     "gc": "Medium",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 76.47,
     "ola": 71.79,
-    "description": "Card by Bnuuy.",
+    "description": "A hybrid 4WD sports concept announced at the dawn of the 21st century.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/966803735609237524/dnxconcept.png",
     "333TopSpeed": 195,
     "3330to60": 3.7,
@@ -41,6 +38,6 @@
     "699TopSpeed": 197,
     "6990to60": 3.3,
     "699Handling": 95,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995803125707460808/DNX.png",
+    "creator": "Bnuuy"
 }

@@ -9,9 +9,7 @@
     "handling": 90,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Supercar"
-    ],
+    "tags": ["Supercar"],
     "isPrize": false,
     "weight": 1585,
     "gc": "Low",
@@ -23,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 75,
     "ola": 92.3,
-    "description": "Track oriented C7, with an uprated engine. Card by Connor.",
+    "description": "Track oriented C7, with an uprated engine.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/934142935438614558/A.ChevyCorvetteGSC7.png",
     "333TopSpeed": 185,
     "3330to60": 3.7,
@@ -40,6 +38,6 @@
     "699TopSpeed": 188,
     "6990to60": 3.3,
     "699Handling": 100,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995768021584986142/corvettec7.png",
+    "creator": "Connor"
 }
