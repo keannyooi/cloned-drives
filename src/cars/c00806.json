@@ -9,10 +9,7 @@
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "OG",
-        "Supercar"
-    ],
+    "tags": ["OG","Supercar"],
     "isPrize": false,
     "weight": 1433,
     "gc": "Low",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 100,
     "ola": 90.32,
-    "description": "McLaren Automotive's debut supercar. Card by Connor.",
+    "description": "McLaren Automotive's debut supercar.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820741428220526612/S.McLarenMP412C.png",
     "333TopSpeed": 209,
     "3330to60": 2.9,
@@ -41,6 +38,6 @@
     "699TopSpeed": 210,
     "6990to60": 2.6,
     "699Handling": 101,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995762116961247392/mclaren12c.png",
+    "creator": "Connor"
 }

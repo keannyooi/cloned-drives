@@ -5,14 +5,11 @@
     "modelYear": 2019,
     "country": "IT",
     "topSpeed": 212,
-    "0to60": 3,
+    "0to60": 3.0,
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Supercar",
-        "Grand Tourer"
-    ],
+    "tags": ["Supercar","Grand Tourer"],
     "isPrize": false,
     "weight": 1705,
     "gc": "Low",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 100,
     "ola": 100,
-    "description": "Not as fast as a Bugatti or a Koenigsegg but it still lives up to its name. Card by Connor.",
+    "description": "Not as fast as a Bugatti or a Koenigsegg but it still lives up to its name.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/852895448016224356/S.Ferrari812Superfast.png",
     "333TopSpeed": 214,
     "3330to60": 2.9,
@@ -41,6 +38,6 @@
     "699TopSpeed": 217,
     "6990to60": 2.6,
     "699Handling": 101,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995763124407898192/ferrari812.png",
+    "creator": "Connor"
 }

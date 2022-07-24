@@ -9,9 +9,7 @@
     "handling": 75,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": [
-        "Servers Choice"
-    ],
+    "tags": ["Servers Choice","Extreme Juggernaut"],
     "isPrize": false,
     "weight": 2568,
     "gc": "High",
@@ -23,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 65.08,
     "ola": 63.41,
-    "description": "Speedy for one behemoth of an SUV. Card by Connor",
+    "description": "Speedy for one behemoth of an SUV.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820372706628993044/S.BMWX7M50i.png",
     "333TopSpeed": 158,
     "3330to60": 3.9,
@@ -40,6 +38,6 @@
     "699TopSpeed": 162,
     "6990to60": 3.5,
     "699Handling": 83,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995761582367842385/BMWX7M50i.png",
+    "creator": "Connor"
 }
