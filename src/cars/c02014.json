@@ -9,9 +9,7 @@
     "handling": 65,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Muscle Car"
-    ],
+    "tags": ["Muscle Car"],
     "isPrize": true,
     "weight": 1656,
     "gc": "Medium",
@@ -23,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 79.01,
     "ola": 68.75,
-    "description": "JohnnyModern. Card by Johnny.",
+    "description": "JohnnyModern.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/917845317624410112/AMC-Rebel-The-Machine-CD.png",
     "333TopSpeed": 129,
     "3330to60": 6.1,
@@ -40,6 +38,6 @@
     "699TopSpeed": 133,
     "6990to60": 5.4,
     "699Handling": 72,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995857948087693393/AMC-Rebel-The-Machine.png",
+    "creator": "Johnny"
 }

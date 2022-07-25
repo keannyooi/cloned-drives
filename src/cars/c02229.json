@@ -1,9 +1,6 @@
 {
     "rq": 74,
-    "make": [
-        "Range Rover",
-        "Land Rover"
-    ],
+    "make": ["Range Rover","Land Rover"],
     "model": "Velar P400e R-Dynamic",
     "modelYear": 2020,
     "country": "GB",
@@ -12,9 +9,7 @@
     "handling": 76,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": [
-        "Eco-Friendly"
-    ],
+    "tags": ["Eco-Friendly"],
     "isPrize": false,
     "weight": 2158,
     "gc": "High",
@@ -26,7 +21,7 @@
     "fuelType": "Hybrid",
     "mra": 60.71,
     "ola": 74.51,
-    "description": "Card by Macan.",
+    "description": "None.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/949495061341696040/Range_Rover_Velar_P400e_R-Dynamic_20.png",
     "333TopSpeed": 134,
     "3330to60": 4.8,
@@ -43,6 +38,6 @@
     "699TopSpeed": 138,
     "6990to60": 4.3,
     "699Handling": 84,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995931580319137822/Range_Rover_Velar_P400e_R-Dynamic_20.png",
+    "creator": "Macan"
 }

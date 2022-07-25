@@ -9,9 +9,7 @@
     "handling": 61,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Muscle Car"
-    ],
+    "tags": ["Muscle Car"],
     "isPrize": false,
     "weight": 1286,
     "gc": "Medium",
@@ -23,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 64.49,
     "ola": 78.26,
-    "description": "Johnny’s dad says hi. Card by Johnny",
+    "description": "Johnny’s dad says hi.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819535315957186581/AMC-Javelin-SST.png",
     "333TopSpeed": 121,
     "3330to60": 6.6,
@@ -40,6 +38,6 @@
     "699TopSpeed": 126,
     "6990to60": 5.9,
     "699Handling": 68,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995858687753203823/AMC-Javelin-SST.png",
+    "creator": "Johnny"
 }

@@ -1,9 +1,6 @@
 {
     "rq": 89,
-    "make": [
-        "TCP Magic",
-        "Mazda"
-    ],
+    "make": ["TCP Magic","Mazda"],
     "model": "RX-7 Time Attack",
     "modelYear": 2014,
     "country": "JP",
@@ -12,11 +9,7 @@
     "handling": 95,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner",
-        "Track Day",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Tuner","Track Day","The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1050,
     "gc": "Low",
@@ -28,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 93.93,
     "ola": 83.37,
-    "description": "Card by Bnuuy.",
+    "description": "Whats more cool than a pure Japanese time attack machine?",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/959441485625970698/tcpmagik.png",
     "333TopSpeed": 201,
     "3330to60": 2.9,
@@ -45,6 +38,6 @@
     "699TopSpeed": 203,
     "6990to60": 2.6,
     "699Handling": 105,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995822882296955011/tcpmagik.png",
+    "creator": "Bnuuy"
 }

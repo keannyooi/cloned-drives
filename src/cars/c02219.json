@@ -1,9 +1,6 @@
 {
     "rq": 41,
-    "make": [
-        "Range Rover",
-        "Land Rover"
-    ],
+    "make": ["Range Rover","Land Rover"],
     "model": "Velar D180 R-Dynamic Black",
     "modelYear": 2020,
     "country": "GB",
@@ -24,7 +21,7 @@
     "fuelType": "Diesel",
     "mra": 61.54,
     "ola": 58.33,
-    "description": "Card by Macan.",
+    "description": "None.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/949494288717328424/Range_Rover_Velar_D180_R-Dynamic_Black_20.png",
     "333TopSpeed": 124,
     "3330to60": 9.1,
@@ -41,6 +38,6 @@
     "699TopSpeed": 129,
     "6990to60": 8.2,
     "699Handling": 77,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995930975496310804/Range_Rover_Velar_D180_R-Dynamic_Black_20.png",
+    "creator": "Macan"
 }

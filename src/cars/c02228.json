@@ -1,9 +1,6 @@
 {
     "rq": 75,
-    "make": [
-        "Range Rover",
-        "Land Rover"
-    ],
+    "make": ["Range Rover","Land Rover"],
     "model": "Velar P400 HSE",
     "modelYear": 2020,
     "country": "GB",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 56.52,
     "ola": 73.08,
-    "description": "Card by Macan.",
+    "description": "None.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/949495000864014436/Range_Rover_Velar_P400_HSE_20.png",
     "333TopSpeed": 158,
     "3330to60": 4.9,
@@ -41,6 +38,6 @@
     "699TopSpeed": 162,
     "6990to60": 4.4,
     "699Handling": 85,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "hhttps://cdn.discordapp.com/attachments/995376525119586356/995931485334941726/Range_Rover_Velar_P400_HSE_20.png",
+    "creator": "Macan"
 }

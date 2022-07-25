@@ -1,9 +1,6 @@
 {
     "rq": 68,
-    "make": [
-        "Range Rover",
-        "Land Rover"
-    ],
+    "make": ["Range Rover","Land Rover"],
     "model": "Velar P340 SE",
     "modelYear": 2019,
     "country": "GB",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 60.42,
     "ola": 72.41,
-    "description": "Card by Macan.",
+    "description": "None.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/949494885189287956/Range_Rover_Velar_P340_SE_19.png",
     "333TopSpeed": 145,
     "3330to60": 5.5,
@@ -41,6 +38,6 @@
     "699TopSpeed": 148,
     "6990to60": 4.9,
     "699Handling": 84,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995931368959787088/Range_Rover_Velar_P340_SE_19.png",
+    "creator": "Macan"
 }

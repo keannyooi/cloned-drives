@@ -1,9 +1,6 @@
 {
     "rq": 50,
-    "make": [
-        "Range Rover",
-        "Land Rover"
-    ],
+    "make": ["Range Rover","Land Rover"],
     "model": "Velar D200 R-Dynamic",
     "modelYear": 2021,
     "country": "GB",
@@ -24,7 +21,7 @@
     "fuelType": "Diesel",
     "mra": 47.24,
     "ola": 70.13,
-    "description": "Card by Macan.",
+    "description": "None.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/949494372137857104/Range_Rover_Velar_D200_R-Dynamic_21.png",
     "333TopSpeed": 134,
     "3330to60": 7.3,
@@ -41,6 +38,6 @@
     "699TopSpeed": 138,
     "6990to60": 6.5,
     "699Handling": 80,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995931045969023028/Range_Rover_Velar_D200_R-Dynamic_21.png",
+    "creator": "Macan"
 }

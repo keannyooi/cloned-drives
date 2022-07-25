@@ -1,9 +1,6 @@
 {
     "rq": 42,
-    "make": [
-        "Alpina",
-        "BMW"
-    ],
+    "make": ["Alpina","BMW"],
     "model": "B12 5.0 Coupe",
     "modelYear": 1990,
     "country": "DE",
@@ -12,11 +9,7 @@
     "handling": 73,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Unique",
-        "Tuner",
-        "Grand Tourer"
-    ],
+    "tags": ["Unique","Tuner","Grand Tourer"],
     "isPrize": false,
     "weight": 1790,
     "gc": "Medium",
@@ -28,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 69.47,
     "ola": 75.75,
-    "description": "Card by Bnuuy.",
+    "description": "None.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/857393716331544576/alpinab125.png",
     "333TopSpeed": 178,
     "3330to60": 6.3,
@@ -45,6 +38,6 @@
     "699TopSpeed": 181,
     "6990to60": 5.6,
     "699Handling": 81,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995822183240712293/B125L.png",
+    "creator": "Bnuuy"
 }

@@ -9,12 +9,7 @@
     "handling": 66,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": [
-        "Unique",
-        "Ultra Expensive",
-        "Oddity",
-        "Servers Choice"
-    ],
+    "tags": ["Unique","Ultra Expensive","Oddity","Servers Choice"],
     "isPrize": true,
     "weight": 2049,
     "gc": "Low",
@@ -26,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 93.75,
     "ola": 102.73,
-    "description": "When fast meant fast. Card by Johnny",
+    "description": "When fast meant fast.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820061528132681758/cate-test.png",
     "333TopSpeed": 182,
     "3330to60": 7.1,
@@ -43,6 +38,6 @@
     "699TopSpeed": 185,
     "6990to60": 6.4,
     "699Handling": 73,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995859171243212880/Napier-Railton.png",
+    "creator": "Johnny"
 }

@@ -9,11 +9,7 @@
     "handling": 91,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Hypercar",
-        "Servers Choice",
-        "Ultra Expensive"
-    ],
+    "tags": ["Hypercar","Servers Choice","Ultra Expensive"],
     "isPrize": false,
     "weight": 1996,
     "gc": "Low",
@@ -25,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 109.09,
     "ola": 91.66,
-    "description": "A worthy successor to the Veyron. Card by Bnuuy",
+    "description": "A worthy successor to the Veyron.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/951471065853493298/Chiron.png",
     "333TopSpeed": 263,
     "3330to60": 2.3,
@@ -34,14 +30,14 @@
     "6660to60": 2.2,
     "666Handling": 97,
     "996TopSpeed": 267,
-    "9960to60": 2,
+    "9960to60": 2.0,
     "996Handling": 97,
     "969TopSpeed": 267,
     "9690to60": 2.2,
     "969Handling": 101,
     "699TopSpeed": 265,
-    "6990to60": 2,
+    "6990to60": 2.0,
     "699Handling": 101,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995977386392825916/chiron.png",
+    "creator": "Bnuuy"
 }

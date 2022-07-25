@@ -9,9 +9,7 @@
     "handling": 71,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Style Icon"
-    ],
+    "tags": ["Style Icon", "Unique"],
     "isPrize": true,
     "weight": 1255,
     "gc": "Low",
@@ -23,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 62.96,
     "ola": 91.23,
-    "description": "One of the rarest coach-built Ferraris. Card by Johnny",
+    "description": "One of the rarest coach-built Ferraris.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820625466074726420/cate-test.png",
     "333TopSpeed": 153,
     "3330to60": 7.8,
@@ -40,6 +38,6 @@
     "699TopSpeed": 157,
     "6990to60": 7,
     "699Handling": 79,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995859787571015720/Thomassima-III.png",
+    "creator": "Johnny"
 }

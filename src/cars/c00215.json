@@ -9,11 +9,7 @@
     "handling": 93,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Hypercar",
-        "Ultra Expensive",
-        "Unique"
-    ],
+    "tags": ["Hypercar","Ultra Expensive","Unique"],
     "isPrize": false,
     "weight": 1973,
     "gc": "Low",
@@ -25,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 124.32,
     "ola": 90.43,
-    "description": "The best made better. Card by Bnuuy.",
+    "description": "The best made better.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/951467691921768448/ChironSuperSport.png",
     "333TopSpeed": 275,
     "3330to60": 2.2,
@@ -34,14 +30,14 @@
     "6660to60": 2.1,
     "666Handling": 99,
     "996TopSpeed": 279,
-    "9960to60": 2,
+    "9960to60": 2.0,
     "996Handling": 99,
     "969TopSpeed": 279,
     "9690to60": 2.1,
     "969Handling": 103,
     "699TopSpeed": 277,
-    "6990to60": 2,
+    "6990to60": 2.0,
     "699Handling": 103,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995977363580006430/chironsupersport.png",
+    "creator": "Bnuuy"
 }
