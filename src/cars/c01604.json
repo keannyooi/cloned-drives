@@ -1,7 +1,7 @@
 {
     "rq": 41,
     "make": "Mazda",
-    "model": "CX-7 2.2 MZR-DC High-Line",
+    "model": "CX-7 2.2 MZR-CD High-Line",
     "modelYear": 2009,
     "country": "JP",
     "topSpeed": 122,
@@ -9,9 +9,7 @@
     "handling": 70,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": [
-        "The Japanese Odyssey"
-    ],
+    "tags": ["The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1875,
     "gc": "High",
@@ -23,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 47.78,
     "ola": 65.97,
-    "description": "Card by Connor.",
+    "description": "None.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/863860696797675550/C.MazdaCX722CD.png",
     "333TopSpeed": 126,
     "3330to60": 9.2,
@@ -40,6 +38,6 @@
     "699TopSpeed": 131,
     "6990to60": 8.2,
     "699Handling": 78,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1000830085714169936/CX723.png",
+    "creator": "Connor"
 }

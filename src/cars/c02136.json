@@ -9,9 +9,7 @@
     "handling": 94,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Hypercar"
-    ],
+    "tags": ["Hypercar", "Eco-Friendly"],
     "isPrize": false,
     "weight": 1350,
     "gc": "Low",
@@ -20,10 +18,10 @@
     "tcs": true,
     "abs": true,
     "enginePos": "Rear",
-    "fuelType": "Petrol",
+    "fuelType": "Hybrid",
     "mra": 111.11,
     "ola": 88,
-    "description": "Card by Bnuuy.",
+    "description": "Often regarded as the slowest of the holly trinity but still fast none the less.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/938016826925912074/Lafa.png",
     "333TopSpeed": 220,
     "3330to60": 2.4,
@@ -40,6 +38,6 @@
     "699TopSpeed": 223,
     "6990to60": 2.1,
     "699Handling": 104,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997532473959399444/laferrari.png",
+    "creator": "Bnuuy"
 }
