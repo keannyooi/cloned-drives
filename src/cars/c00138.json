@@ -9,10 +9,7 @@
     "handling": 58,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": [
-        "Ultra Expensive",
-        "Grand Tourer"
-    ],
+    "tags": ["Ultra Expensive","Grand Tourer"],
     "isPrize": false,
     "weight": 2540,
     "gc": "Medium",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 47.06,
     "ola": 90,
-    "description": "A huge car with a huge engine. Card by Bnuuy.",
+    "description": "A huge car with a huge engine.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/823515721254305842/Boatley8Litre.png",
     "333TopSpeed": 129,
     "3330to60": 15.2,
@@ -41,6 +38,6 @@
     "699TopSpeed": 133,
     "6990to60": 13.6,
     "699Handling": 64,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995978616800296990/bentley8litre.png",
+    "creator": "Bnuuy"
 }

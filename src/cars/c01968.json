@@ -5,13 +5,11 @@
     "modelYear": 2018,
     "country": "DE",
     "topSpeed": 190,
-    "0to60": 3,
+    "0to60": 3.0,
     "handling": 90,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Super Sedan"
-    ],
+    "tags": ["Super Sedan"],
     "isPrize": false,
     "weight": 1940,
     "gc": "Medium",
@@ -23,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 78.95,
     "ola": 73.33,
-    "description": "Card by Bnuuy.",
+    "description": "None.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/952194620991881336/M5CompM.png",
     "333TopSpeed": 193,
     "3330to60": 2.9,
@@ -40,6 +38,6 @@
     "699TopSpeed": 195,
     "6990to60": 2.6,
     "699Handling": 100,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995978105413972049/M5compmdrivers18.png",
+    "creator": "Bnuuy"
 }
