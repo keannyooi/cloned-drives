@@ -9,9 +9,7 @@
     "handling": 75,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": [
-        "Eco-Friendly"
-    ],
+    "tags": ["Eco-Friendly"],
     "isPrize": false,
     "weight": 1838,
     "gc": "Low",
@@ -23,7 +21,7 @@
     "fuelType": "Electric",
     "mra": 43.85,
     "ola": 80.49,
-    "description": "The slightly more stylish Volt. By Bnuuy",
+    "description": "The slightly more stylish Volt.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820699208951791656/ELR.png",
     "333TopSpeed": 112,
     "3330to60": 7.8,
@@ -32,14 +30,14 @@
     "6660to60": 7.4,
     "666Handling": 80,
     "996TopSpeed": 122,
-    "9960to60": 7,
+    "9960to60": 7.0,
     "996Handling": 80,
     "969TopSpeed": 122,
     "9690to60": 7.4,
     "969Handling": 83,
     "699TopSpeed": 117,
-    "6990to60": 7,
+    "6990to60": 7.0,
     "699Handling": 83,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995981597734088736/caddyELR.png",
+    "creator": "Bnuuy"
 }

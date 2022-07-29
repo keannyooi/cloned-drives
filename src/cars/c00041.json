@@ -1,9 +1,6 @@
 {
     "rq": 81,
-    "make": [
-        "Alpina",
-        "BMW"
-    ],
+    "make": ["Alpina","BMW"],
     "model": "B6 Bi-Turbo Gran Coupe Allrad",
     "modelYear": 2016,
     "country": "DE",
@@ -12,10 +9,7 @@
     "handling": 86,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Super Sedan",
-        "Grand Tourer"
-    ],
+    "tags": ["Super Sedan","Grand Tourer"],
     "isPrize": false,
     "weight": 2155,
     "gc": "Low",
@@ -27,23 +21,23 @@
     "fuelType": "Petrol",
     "mra": 64.71,
     "ola": 78.79,
-    "description": "Alpina went all out 2 years after releasing the B6 giving it the fastest top speed of an Alpina ever. Card by Bnuuy.",
+    "description": "Alpina went all out 2 years after releasing the B6 giving it the fastest top speed of an Alpina ever.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/846703223052959744/B6biturbo2016.png",
     "333TopSpeed": 204,
     "3330to60": 3.1,
     "333Handling": 89,
     "666TopSpeed": 206,
-    "6660to60": 3,
+    "6660to60": 3.0,
     "666Handling": 92,
     "996TopSpeed": 209,
     "9960to60": 2.8,
     "996Handling": 92,
     "969TopSpeed": 209,
-    "9690to60": 3,
+    "9690to60": 3.0,
     "969Handling": 95,
     "699TopSpeed": 206,
     "6990to60": 2.8,
     "699Handling": 95,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995980289350307930/B6Allrad16.png",
+    "creator": "Bnuuy"
 }

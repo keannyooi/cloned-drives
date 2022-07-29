@@ -1,7 +1,7 @@
 {
     "rq": 87,
     "make": "BMW",
-    "model": "M8 GT3",
+    "model": "M8 GTE",
     "modelYear": 2017,
     "country": "DE",
     "topSpeed": 195,
@@ -9,9 +9,7 @@
     "handling": 96,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": [
-        "Motorsport"
-    ],
+    "tags": ["Motorsport"],
     "isPrize": false,
     "weight": 1250,
     "gc": "Low",
@@ -23,8 +21,8 @@
     "fuelType": "Petrol",
     "mra": 104.03,
     "ola": 90.32,
-    "description": "Card by Aqo.",
-    "card": "https://cdn.discordapp.com/attachments/819199720249360384/948619082750623784/m8gt3.png",
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/987707730036924438/m8gte.png",
     "333TopSpeed": 198,
     "3330to60": 2.9,
     "333Handling": 99,
@@ -40,6 +38,6 @@
     "699TopSpeed": 200,
     "6990to60": 2.6,
     "699Handling": 107,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995980578719547452/M8GTE.png",
+    "creator": "Aqo"
 }

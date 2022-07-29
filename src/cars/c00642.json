@@ -1,9 +1,6 @@
 {
     "rq": 70,
-    "make": [
-        "Lagonda",
-        "Aston Martin"
-    ],
+    "make": ["Lagonda","Aston Martin"],
     "model": "Taraf",
     "modelYear": 2015,
     "country": "GB",
@@ -12,11 +9,7 @@
     "handling": 87,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "The Royal Collection",
-        "Super Sedan",
-        "Unique"
-    ],
+    "tags": ["The Royal Collection","Super Sedan","Unique"],
     "isPrize": false,
     "weight": 1990,
     "gc": "Low",
@@ -28,10 +21,10 @@
     "fuelType": "Petrol",
     "mra": 79.25,
     "ola": 76.19,
-    "description": "The most Luxurious Rapide. Card by Bnuuy.",
+    "description": "The most Luxurious Rapide.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/852108768010829824/lagondataraf.png",
     "333TopSpeed": 198,
-    "3330to60": 4,
+    "3330to60": 4.0,
     "333Handling": 90,
     "666TopSpeed": 200,
     "6660to60": 3.8,
@@ -45,6 +38,6 @@
     "699TopSpeed": 200,
     "6990to60": 3.6,
     "699Handling": 97,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995981380704010310/taraf.png",
+    "creator": "Bnuuy"
 }

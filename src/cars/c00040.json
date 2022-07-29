@@ -1,9 +1,6 @@
 {
     "rq": 75,
-    "make": [
-        "Alpina",
-        "BMW"
-    ],
+    "make": ["Alpina","BMW"],
     "model": "B6 Bi-Turbo Gran Coupe Allrad",
     "modelYear": 2014,
     "country": "DE",
@@ -12,10 +9,7 @@
     "handling": 83,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Super Sedan",
-        "Grand Tourer"
-    ],
+    "tags": ["Super Sedan","Grand Tourer"],
     "isPrize": false,
     "weight": 2149,
     "gc": "Low",
@@ -27,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 72.55,
     "ola": 86.49,
-    "description": "Sedan go brrrr. card by bnuuy.",
+    "description": "Sedan go brrrr.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/846703159739940874/B6allrad2014.png",
     "333TopSpeed": 201,
     "3330to60": 3.5,
@@ -44,6 +38,6 @@
     "699TopSpeed": 203,
     "6990to60": 3.1,
     "699Handling": 92,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995981302589308928/B6Allrad14.png",
+    "creator": "Bnuuy"
 }
