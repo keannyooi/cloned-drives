@@ -9,12 +9,7 @@
     "handling": 87,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "The Royal Collection",
-        "Super Sedan",
-        "Track Day",
-        "Unique"
-    ],
+    "tags": ["The Royal Collection","Super Sedan","Track Day","Unique"],
     "isPrize": false,
     "weight": 1990,
     "gc": "Low",
@@ -26,10 +21,10 @@
     "fuelType": "Petrol",
     "mra": 91.3,
     "ola": 85.71,
-    "description": "The fastest Rapide from Aston. Card by Bnuuy.",
+    "description": "The fastest Rapide from Aston.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/849757498344865822/RapideAMR.png",
     "333TopSpeed": 208,
-    "3330to60": 4,
+    "3330to60": 4.0,
     "333Handling": 90,
     "666TopSpeed": 210,
     "6660to60": 3.8,
@@ -43,6 +38,6 @@
     "699TopSpeed": 210,
     "6990to60": 3.6,
     "699Handling": 97,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995979648716505199/rapideamr.png",
+    "creator": "Bnuuy"
 }

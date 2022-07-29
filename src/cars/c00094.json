@@ -9,9 +9,7 @@
     "handling": 87,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Supercar"
-    ],
+    "tags": ["Supercar"],
     "isPrize": false,
     "weight": 1739,
     "gc": "Low",
@@ -23,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 76.6,
     "ola": 94.44,
-    "description": "This is a car that moons you with its beauty. Card by DodgeDemon",
+    "description": "This is a car that moons you with its beauty.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/850309307278426132/vanquish14.png",
     "333TopSpeed": 204,
     "3330to60": 3.4,
@@ -41,5 +39,5 @@
     "6990to60": 3.1,
     "699Handling": 97,
     "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "creator": "DodgeDemon"
 }

@@ -9,9 +9,7 @@
     "handling": 74,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "The Royal Collection"
-    ],
+    "tags": ["The Royal Collection"],
     "isPrize": false,
     "weight": 1900,
     "gc": "Low",
@@ -23,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 55.65,
     "ola": 75,
-    "description": "The Convertible DB7 that didnt go as planned. Card by Bnuuy.",
+    "description": "The Convertible DB7 that didnt go as planned.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/855242395939635210/db7volante.png",
     "333TopSpeed": 155,
     "3330to60": 6.1,
@@ -40,6 +38,6 @@
     "699TopSpeed": 159,
     "6990to60": 5.4,
     "699Handling": 82,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995978874980663296/db7volante.png",
+    "creator": "Bnuuy"
 }
