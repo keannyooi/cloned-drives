@@ -9,11 +9,7 @@
     "handling": 93,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Ultra Expensive",
-        "Hypercar",
-        "Rest of the World"
-    ],
+    "tags": ["Ultra Expensive","Hypercar","Rest of the World","Unique"],
     "isPrize": true,
     "weight": 1350,
     "gc": "Low",
@@ -25,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 122.73,
     "ola": 83.33,
-    "description": "Card by Bnuuy.",
+    "description": "None.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/843212235504484372/FenyrSuper.png",
     "333TopSpeed": 250,
     "3330to60": 2.6,
@@ -42,6 +38,6 @@
     "699TopSpeed": 252,
     "6990to60": 2.3,
     "699Handling": 103,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995992683539603506/fenyr.png",
+    "creator": "Bnuuy"
 }

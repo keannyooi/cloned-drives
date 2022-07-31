@@ -9,10 +9,7 @@
     "handling": 86,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": [
-        "Motorsport",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Motorsport","The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1230,
     "gc": "Medium",
@@ -24,10 +21,10 @@
     "fuelType": "Petrol",
     "mra": 68.85,
     "ola": 90.48,
-    "description": "zooooooom. Card by bnuuy.",
+    "description": "zooooooom.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/912491053318287390/evo2gra.png",
     "333TopSpeed": 144,
-    "3330to60": 4,
+    "3330to60": 4.0,
     "333Handling": 89,
     "666TopSpeed": 147,
     "6660to60": 3.8,
@@ -41,6 +38,6 @@
     "699TopSpeed": 147,
     "6990to60": 3.6,
     "699Handling": 95,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995992737943928892/evo2rally.png",
+    "creator": "Bnuuy"
 }

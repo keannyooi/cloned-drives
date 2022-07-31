@@ -9,13 +9,7 @@
     "handling": 90,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Supercar",
-        "Unique",
-        "Innovative",
-        "Track Day",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Supercar","Unique","Innovative","Track Day","The Japanese Odyssey"],
     "isPrize": true,
     "weight": 1451,
     "gc": "Medium",
@@ -27,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 100,
     "ola": 72.34,
-    "description": "A car so strong it can beat a 2015 Nissan GT-R Nismo on the 1/4. Card by Bnuuy.",
+    "description": "A car so strong it can beat a 2015 Nissan GT-R Nismo on the 1/4.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/985650519097872445/Ztune.png",
     "333TopSpeed": 206,
     "3330to60": 3.5,
@@ -44,6 +38,6 @@
     "699TopSpeed": 208,
     "6990to60": 3.1,
     "699Handling": 100,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995993078412357662/nismoZtune.png",
+    "creator": "Bnuuy"
 }

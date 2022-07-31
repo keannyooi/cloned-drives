@@ -9,12 +9,7 @@
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Unique",
-        "Ultra Expensive",
-        "Track Day",
-        "Concept"
-    ],
+    "tags": ["Unique","Ultra Expensive","Track Day","Concept"],
     "isPrize": true,
     "weight": 1200,
     "gc": "Low",
@@ -26,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 93.94,
     "ola": 83.87,
-    "description": "As its name suggests, OnlyOne exists. Card by Bnuuy.",
+    "description": "As its name suggests, OnlyOne exists.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/851226698733453312/EneaCasoniRacecarfortheroad.png",
     "333TopSpeed": 213,
     "3330to60": 2.9,
@@ -43,6 +38,6 @@
     "699TopSpeed": 216,
     "6990to60": 2.6,
     "699Handling": 101,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995993203889143818/eneacasoni.png",
+    "creator": "Bnuuy"
 }

@@ -1,22 +1,15 @@
 {
     "rq": 87,
-    "make": [
-        "LaSupra Racing",
-        "Lancia"
-    ],
+    "make": ["LaSupra Racing","Lancia"],
     "model": "Delta La Supra",
     "modelYear": 2013,
     "country": "SE",
     "topSpeed": 181,
-    "0to60": 3,
+    "0to60": 3.0,
     "handling": 95,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": [
-        "Tuner",
-        "Track Day",
-        "Unique"
-    ],
+    "tags": ["Tuner","Track Day","Unique"],
     "isPrize": true,
     "weight": 980,
     "gc": "Low",
@@ -28,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 115.38,
     "ola": 80,
-    "description": "La Supra meaning 'Epic Lancia', carrying a 2JZ and a mix of GT-R, S13 and others. Card by Bnuuy.",
+    "description": "La Supra meaning 'Epic Lancia', carrying a 2JZ and a mix of GT-R, S13 and others.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/951551880394317914/lasupra.png",
     "333TopSpeed": 184,
     "3330to60": 2.9,
@@ -45,6 +38,6 @@
     "699TopSpeed": 187,
     "6990to60": 2.6,
     "699Handling": 105,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995982071593963640/laSoopra.png",
+    "creator": "Bnuuy"
 }

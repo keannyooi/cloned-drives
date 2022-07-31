@@ -9,11 +9,7 @@
     "handling": 89,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Hypercar",
-        "Ultra Expensive",
-        "Unique"
-    ],
+    "tags": ["Hypercar","Ultra Expensive","Unique"],
     "isPrize": true,
     "weight": 1970,
     "gc": "Low",
@@ -25,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 102.45,
     "ola": 92,
-    "description": "Officially recognised by Guiness World Records as the fastest production vehicle. Card by Bnuuy.",
+    "description": "Officially recognised by Guiness World Records as the fastest production vehicle.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/952192454218633236/VeyronSuperSportWRE.png",
     "333TopSpeed": 270,
     "3330to60": 2.4,
@@ -42,6 +38,6 @@
     "699TopSpeed": 272,
     "6990to60": 2.1,
     "699Handling": 99,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995992610827149352/veyronwre.png",
+    "creator": "Bnuuy"
 }
