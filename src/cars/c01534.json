@@ -1,9 +1,6 @@
 {
     "rq": 86,
-    "make": [
-        "Garage G Force",
-        "Mitsubishi"
-    ],
+    "make": ["Garage G Force","Mitsubishi"],
     "model": "Lancer Evolution IX Wagon MR",
     "modelYear": 2015,
     "country": "JP",
@@ -12,11 +9,7 @@
     "handling": 90,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner",
-        "Street Racer",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Tuner","Street Racer","The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1290,
     "gc": "Medium",
@@ -28,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 83.67,
     "ola": 63.41,
-    "description": "The Wangan Wagon. Card by Bnuuy.",
+    "description": "The Wangan Wagon.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/912470892964089916/thewanganwagon.png",
     "333TopSpeed": 196,
     "3330to60": 3.9,
@@ -45,6 +38,6 @@
     "699TopSpeed": 198,
     "6990to60": 3.5,
     "699Handling": 100,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995993309585604638/wanganevowagon.png",
+    "creator": "Bnuuy"
 }

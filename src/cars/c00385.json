@@ -9,11 +9,7 @@
     "handling": 90,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Supercar",
-        "Style Icon",
-        "Silver Screen"
-    ],
+    "tags": ["Supercar","Style Icon","Silver Screen"],
     "isPrize": false,
     "weight": 1485,
     "gc": "Low",
@@ -25,10 +21,10 @@
     "fuelType": "Petrol",
     "mra": 88.89,
     "ola": 93.75,
-    "description": "Pretty looks and daily practicality. Card by Bnuuy.",
+    "description": "Pretty looks and daily practicality.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/838136154733412413/458Italia.png",
     "333TopSpeed": 208,
-    "3330to60": 3,
+    "3330to60": 3.0,
     "333Handling": 93,
     "666TopSpeed": 210,
     "6660to60": 2.9,
@@ -42,6 +38,6 @@
     "699TopSpeed": 210,
     "6990to60": 2.7,
     "699Handling": 100,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995993485280825364/458italia.png",
+    "creator": "Bnuuy"
 }

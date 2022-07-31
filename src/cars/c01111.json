@@ -1,9 +1,6 @@
 {
     "rq": 78,
-    "make": [
-        "Porsche",
-        "Zagato"
-    ],
+    "make": ["Porsche","Zagato"],
     "model": "Carrera GT Zagato",
     "modelYear": 2013,
     "country": "DE",
@@ -12,9 +9,7 @@
     "handling": 87,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Supercar"
-    ],
+    "tags": ["Supercar"],
     "isPrize": true,
     "weight": 1350,
     "gc": "Low",
@@ -26,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 109.09,
     "ola": 100,
-    "description": "A unicorn made by Zagato. Card by Bnuuy.",
+    "description": "A unicorn made by Zagato.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820725971937263666/GTZ.png",
     "333TopSpeed": 208,
     "3330to60": 3.4,
@@ -43,6 +38,6 @@
     "699TopSpeed": 210,
     "6990to60": 3.1,
     "699Handling": 97,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995994415325782107/carreragtz.png",
+    "creator": "Bnuuy"
 }
