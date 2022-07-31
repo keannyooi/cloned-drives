@@ -1,0 +1,49 @@
+{
+    "rq": 35,
+    "make": "Pontiac",
+    "model": "Solstice",
+    "modelYear": 2006,
+    "country": "US",
+    "topSpeed": 123,
+    "0to60": 7.1,
+    "handling": 81,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+    
+    "weight": 1308,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 47.02,
+    "ola": 64.79,
+    "description": "None",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/997806438397251604/Pontiac_Solstice.png",
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997807070315286579/Pontiac_Solstice.png",
+    "creator": "Biszkoptowiec",
+
+    "333TopSpeed": 127,
+    "3330to60": 6.7,
+    "333Handling": 84,
+
+    "666TopSpeed": 131,
+    "6660to60": 6.4,
+    "666Handling": 86,
+
+    "996TopSpeed": 136,
+    "9960to60": 6.0,
+    "996Handling": 86,
+
+    "969TopSpeed": 136,
+    "9690to60": 6.4,
+    "969Handling": 90,
+
+    "699TopSpeed": 131,
+    "6990to60": 6.0,
+    "699Handling": 90
+}

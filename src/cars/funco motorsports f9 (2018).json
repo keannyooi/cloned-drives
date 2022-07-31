@@ -1,0 +1,49 @@
+{
+    "rq": 100,
+    "make": "Funco Motorsports",
+    "model": "F9",
+    "modelYear": 2018,
+    "country": "US",
+    "topSpeed": 138,
+    "0to60": 3.7,
+    "handling": 79,
+    "driveType": "RWD",
+    "tyreType": "Off-Road",
+    "tags": ["Oddity", "Unique", "Motorsport"],
+    "isPrize": true,
+	
+    "weight": 1270,
+    "gc": "High",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 158.09,
+    "ola": 70.27,
+    "description": "This is a vehicle that can bust standing wheelies in the sand, from 60-100 mph. Insanity.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/983538799281848340/Funco_F9_cloned_drives.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1000905175076184104/F9_huds.png",
+    "creator": "Preston",
+
+    "333TopSpeed": 142,
+    "3330to60": 3.7,
+    "333Handling": 82,
+
+    "666TopSpeed": 146,
+    "6660to60": 3.3,
+    "666Handling": 84,
+
+    "996TopSpeed": 149,
+    "9960to60": 3.1,
+    "996Handling": 84,
+
+    "969TopSpeed": 149,
+    "9690to60": 3.3,
+    "969Handling": 88,
+
+    "699TopSpeed": 146,
+    "6990to60": 3.1,
+    "699Handling": 88
+}

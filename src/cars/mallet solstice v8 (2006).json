@@ -1,0 +1,49 @@
+{
+    "rq": 68,
+    "make": ["Mallet", "Pontiac"],
+    "model": "Solstice V8",
+    "modelYear": 2006,
+    "country": "US",
+    "topSpeed": 145,
+    "0to60": 4.4,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner", "Street Racer"],
+    "isPrize": false,
+    
+    "weight": 1403,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 75.86,
+    "ola": 77.27,
+    "description": "He shows speed.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/997806479082004490/Mallet_V8_Solstice_2.png",
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997813409301135400/Mallet_V8_Solstice.png",
+    "creator": "Biszkoptowiec",
+
+    "333TopSpeed": 149,
+    "3330to60": 4.2,
+    "333Handling": 94,
+
+    "666TopSpeed": 152,
+    "6660to60": 4.0,
+    "666Handling": 97,
+
+    "996TopSpeed": 156,
+    "9960to60": 3.7,
+    "996Handling": 97,
+
+    "969TopSpeed": 156,
+    "9690to60": 4.0,
+    "969Handling": 101,
+
+    "699TopSpeed": 152,
+    "6990to60": 3.7,
+    "699Handling": 101
+}
