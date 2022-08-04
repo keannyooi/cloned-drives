@@ -9,10 +9,7 @@
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Supercar",
-        "Ultra Expensive"
-    ],
+    "tags": ["Supercar","Ultra Expensive"],
     "isPrize": false,
     "weight": 1520,
     "gc": "Low",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 96.67,
     "ola": 103.45,
-    "description": "Card by Bnuuy.",
+    "description": "The 2 seater version of the SP1.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/856545283440902164/MonzaSP2thingy.png",
     "333TopSpeed": 189,
     "3330to60": 2.8,
@@ -41,6 +38,6 @@
     "699TopSpeed": 192,
     "6990to60": 2.5,
     "699Handling": 101,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996023783926284348/monzasp2.png",
+    "creator": "Bnuuy"
 }

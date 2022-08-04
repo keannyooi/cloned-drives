@@ -9,11 +9,7 @@
     "handling": 90,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": [
-        "Motorsport",
-        "Unique",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Motorsport","Unique","The Japanese Odyssey"],
     "isPrize": true,
     "weight": 1230,
     "gc": "Medium",
@@ -25,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 67.27,
     "ola": 81.08,
-    "description": "Card by Bnuuy.",
+    "description": "None.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/948543741902331954/evo7wrc.png",
     "333TopSpeed": 153,
     "3330to60": 3.5,
@@ -42,6 +38,6 @@
     "699TopSpeed": 157,
     "6990to60": 3.1,
     "699Handling": 100,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996021500874330152/Evo7rally.png",
+    "creator": "Bnuuy"
 }

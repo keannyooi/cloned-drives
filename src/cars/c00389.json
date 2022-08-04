@@ -9,9 +9,7 @@
     "handling": 92,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Supercar"
-    ],
+    "tags": ["Supercar"],
     "isPrize": false,
     "weight": 1605,
     "gc": "Low",
@@ -23,10 +21,10 @@
     "fuelType": "Petrol",
     "mra": 94.12,
     "ola": 78.88,
-    "description": "The Italians went crazy and tuned up the already superfast 599. Card by Bnuuy.",
+    "description": "The Italians went crazy and tuned up the already superfast 599.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/834774560632733757/599GTO.png",
     "333TopSpeed": 211,
-    "3330to60": 3,
+    "3330to60": 3.0,
     "333Handling": 95,
     "666TopSpeed": 213,
     "6660to60": 2.9,
@@ -40,6 +38,6 @@
     "699TopSpeed": 213,
     "6990to60": 2.7,
     "699Handling": 102,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996023894047723611/rari599GTO.png",
+    "creator": "Bnuuy"
 }

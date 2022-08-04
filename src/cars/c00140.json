@@ -9,10 +9,7 @@
     "handling": 78,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": [
-        "Eco-Friendly",
-        "The Royal Collection"
-    ],
+    "tags": ["Eco-Friendly","The Royal Collection"],
     "isPrize": false,
     "weight": 2440,
     "gc": "High",
@@ -24,10 +21,10 @@
     "fuelType": "Hybrid",
     "mra": 76.45,
     "ola": 88.88,
-    "description": "The Eco Friendly bentley. Card by Bnuuy.",
+    "description": "The Eco Friendly bentley.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/849746753133346836/BentaygaHybrid.png",
     "333TopSpeed": 161,
-    "3330to60": 5,
+    "3330to60": 5.0,
     "333Handling": 81,
     "666TopSpeed": 165,
     "6660to60": 4.8,
@@ -41,6 +38,6 @@
     "699TopSpeed": 165,
     "6990to60": 4.5,
     "699Handling": 87,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996022044514857000/bentaygahybrind.png",
+    "creator": "Bnuuy"
 }

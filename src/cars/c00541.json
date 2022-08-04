@@ -9,11 +9,7 @@
     "handling": 92,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Street Racer",
-        "Supercar",
-        "Eco-Friendly"
-    ],
+    "tags": ["Supercar","Eco-Friendly"],
     "isPrize": false,
     "weight": 1725,
     "gc": "Low",
@@ -25,10 +21,10 @@
     "fuelType": "Hybrid",
     "mra": 82.05,
     "ola": 81.25,
-    "description": "The REAL modern NSX. Card by Bnuuy.",
+    "description": "The REAL modern NSX.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/824389433088278548/NSXNEW.png",
     "333TopSpeed": 194,
-    "3330to60": 3,
+    "3330to60": 3.0,
     "333Handling": 95,
     "666TopSpeed": 196,
     "6660to60": 2.9,
@@ -42,6 +38,6 @@
     "699TopSpeed": 196,
     "6990to60": 2.7,
     "699Handling": 102,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996024306075181169/ondansx.png",
+    "creator": "Bnuuy"
 }

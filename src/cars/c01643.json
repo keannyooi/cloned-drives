@@ -5,14 +5,11 @@
     "modelYear": 1995,
     "country": "JP",
     "topSpeed": 140,
-    "0to60": 4,
+    "0to60": 4.0,
     "handling": 87,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": [
-        "Motorsport",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Motorsport","The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1230,
     "gc": "Medium",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 70.18,
     "ola": 95,
-    "description": "Card by Bnuuy.",
+    "description": "None.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/930221765177778206/evo3wrc.png",
     "333TopSpeed": 144,
     "3330to60": 3.8,
@@ -41,6 +38,6 @@
     "699TopSpeed": 147,
     "6990to60": 3.4,
     "699Handling": 97,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996021883503919154/evo3rally.png",
+    "creator": "Bnuuy"
 }

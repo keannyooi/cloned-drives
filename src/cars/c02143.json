@@ -1,9 +1,6 @@
 {
     "rq": 98,
-    "make": [
-        "G-Power",
-        "BMW"
-    ],
+    "make": ["G-Power","BMW"],
     "model": "G5M Hurricane RR",
     "modelYear": 2020,
     "country": "DE",
@@ -12,9 +9,7 @@
     "handling": 92,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner"
-    ],
+    "tags": ["Tuner", "Super Sedan"],
     "isPrize": false,
     "weight": 1920,
     "gc": "Low",
@@ -26,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 114.28,
     "ola": 91.66,
-    "description": "Card by Bnuuy.",
+    "description": "None.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/948582244757418014/G5MRR.png",
     "333TopSpeed": 229,
     "3330to60": 2.3,
@@ -35,14 +30,14 @@
     "6660to60": 2.2,
     "666Handling": 98,
     "996TopSpeed": 234,
-    "9960to60": 2,
+    "9960to60": 2.0,
     "996Handling": 98,
     "969TopSpeed": 234,
     "9690to60": 2.2,
     "969Handling": 102,
     "699TopSpeed": 232,
-    "6990to60": 2,
+    "6990to60": 2.0,
     "699Handling": 102,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996023379444379768/GpowerG5M.png",
+    "creator": "Bnuuy"
 }
