@@ -9,16 +9,9 @@
     "handling": 97,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Rest of the World",
-        "Hypercar",
-        "Track Day",
-        "Unique",
-        "Ultra Expensive",
-        "Innovative"
-    ],
+    "tags": ["Rest of the World","Hypercar","Track Day","Unique","Ultra Expensive","Innovative"],
     "isPrize": true,
-    "weight": 1500,
+    "weight": 1495,
     "gc": "Low",
     "seatCount": 2,
     "bodyStyle": "Coupe",
@@ -26,10 +19,10 @@
     "abs": true,
     "enginePos": "Middle",
     "fuelType": "Petrol",
-    "mra": 127.6,
-    "ola": 83.33,
-    "description": "The car was black flagged in 2019 at Spa because the officials thought the wing was malfunctioning! Card by DodgeDemon.",
-    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824680238881308732/tsrs.png",
+    "mra": 128.57,
+    "ola": 81.43,
+    "description": "The car was black flagged in 2019 at Spa because the officials thought the wing was malfunctioning!",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1000228571320680558/Zenvo_TSRS_2018.png",
     "333TopSpeed": 205,
     "3330to60": 2.6,
     "333Handling": 100,
@@ -45,6 +38,6 @@
     "699TopSpeed": 207,
     "6990to60": 2.3,
     "699Handling": 108,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1000229177720578119/Zenvo_TSRS_2018_Hud.png",
+    "creator": "DodgeDemon"
 }
