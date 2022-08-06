@@ -9,12 +9,7 @@
     "handling": 57,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": [
-        "Eco-Friendly",
-        "Oddity",
-        "Concept",
-        "Unique"
-    ],
+    "tags": ["Eco-Friendly","Oddity","Concept","Unique"],
     "isPrize": false,
     "weight": 1330,
     "gc": "Medium",
@@ -26,7 +21,7 @@
     "fuelType": "Electric",
     "mra": 0,
     "ola": 70.48,
-    "description": "Card by Bnuuy.",
+    "description": "One of BMW's first attempts at elektro cars.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/930193849937182760/1602butright.png",
     "333TopSpeed": 70,
     "3330to60": 21.6,
@@ -43,6 +38,6 @@
     "699TopSpeed": 79,
     "6990to60": 19.3,
     "699Handling": 63,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996027895854157904/bmw102eclc.png",
+    "creator": "Bnuuy"
 }

@@ -1,20 +1,15 @@
 {
     "rq": 3,
-    "make": [
-        "Prince",
-        "Nissan"
-    ],
+    "make": ["Prince","Nissan"],
     "model": "Skyline 1500 ALSI-2",
     "modelYear": 1959,
     "country": "JP",
     "topSpeed": 81,
-    "0to60": 24,
+    "0to60": 24.0,
     "handling": 50,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": [
-        "The Japanese Odyssey"
-    ],
+    "tags": ["The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1320,
     "gc": "High",
@@ -26,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 1.99,
     "ola": 48.33,
-    "description": "Card by Bnuuy.",
+    "description": "None.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/968471094535290890/Skyline1500alsi2.png",
     "333TopSpeed": 87,
     "3330to60": 22.8,
@@ -43,6 +38,6 @@
     "699TopSpeed": 94,
     "6990to60": 20.4,
     "699Handling": 56,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996027214942457856/skyline1500ALSI2.png",
+    "creator": "Bnuuy"
 }

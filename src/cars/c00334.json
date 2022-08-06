@@ -9,12 +9,7 @@
     "handling": 81,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Unique",
-        "The Royal Collection",
-        "Track Day",
-        "Grand Tourer"
-    ],
+    "tags": ["Unique","The Royal Collection","Track Day","Grand Tourer"],
     "isPrize": true,
     "weight": 1920,
     "gc": "Low",
@@ -26,10 +21,10 @@
     "fuelType": "Petrol",
     "mra": 75,
     "ola": 90,
-    "description": "Card by Bnuuy.",
+    "description": "None.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/855206037559443506/SpeedbackSilverstone.png",
     "333TopSpeed": 158,
-    "3330to60": 4,
+    "3330to60": 4.0,
     "333Handling": 84,
     "666TopSpeed": 162,
     "6660to60": 3.8,
@@ -43,6 +38,6 @@
     "699TopSpeed": 162,
     "6990to60": 3.6,
     "699Handling": 90,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996024840240758854/speedbackgtsilverstone.png",
+    "creator": "Bnuuy"
 }

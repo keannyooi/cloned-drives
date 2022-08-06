@@ -1,9 +1,6 @@
 {
     "rq": 66,
-    "make": [
-        "PFS",
-        "Mazda"
-    ],
+    "make": ["PFS","Mazda"],
     "model": "RX-7 Limited Edition",
     "modelYear": 1993,
     "country": "US",
@@ -12,10 +9,7 @@
     "handling": 90,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner",
-        "Street Racer"
-    ],
+    "tags": ["Tuner","Street Racer"],
     "isPrize": false,
     "weight": 1325,
     "gc": "Low",
@@ -27,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 58.22,
     "ola": 78.26,
-    "description": "Card by Bnuuy.",
+    "description": "None.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/959441355099222016/PFSRx7.png",
     "333TopSpeed": 161,
     "3330to60": 4.4,
@@ -44,6 +38,6 @@
     "699TopSpeed": 165,
     "6990to60": 3.9,
     "699Handling": 100,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996026520646717580/rx7special.png",
+    "creator": "Bnuuy"
 }

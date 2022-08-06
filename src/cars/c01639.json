@@ -5,14 +5,11 @@
     "modelYear": 1992,
     "country": "JP",
     "topSpeed": 112,
-    "0to60": 5,
+    "0to60": 5.0,
     "handling": 79,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Street Racer",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Street Racer","The Japanese Odyssey"],
     "isPrize": true,
     "weight": 1170,
     "gc": "Medium",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 59.52,
     "ola": 68,
-    "description": "Card by Bnuuy.",
+    "description": "None.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/869168966935932969/evo1RS.png",
     "333TopSpeed": 117,
     "3330to60": 4.8,
@@ -41,6 +38,6 @@
     "699TopSpeed": 121,
     "6990to60": 4.3,
     "699Handling": 88,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996024690378285066/evo1rs.png",
+    "creator": "Bnuuy"
 }

@@ -1,9 +1,6 @@
 {
     "rq": 68,
-    "make": [
-        "G-Power",
-        "BMW"
-    ],
+    "make": ["G-Power","BMW"],
     "model": "M6 Hurricane CS",
     "modelYear": 2009,
     "country": "DE",
@@ -12,10 +9,7 @@
     "handling": 80,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner",
-        "Unique"
-    ],
+    "tags": ["Tuner","Unique"],
     "isPrize": true,
     "weight": 1687,
     "gc": "Low",
@@ -27,10 +21,10 @@
     "fuelType": "Petrol",
     "mra": 105,
     "ola": 95.23,
-    "description": "Card by Bnuuy.",
+    "description": "None.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/948582217704177756/GpowerM6HurricaneCS.png",
     "333TopSpeed": 230,
-    "3330to60": 4,
+    "3330to60": 4.0,
     "333Handling": 83,
     "666TopSpeed": 233,
     "6660to60": 3.8,
@@ -44,6 +38,6 @@
     "699TopSpeed": 233,
     "6990to60": 3.6,
     "699Handling": 89,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996026126927396874/gpowerm6hurics.png",
+    "creator": "Bnuuy"
 }

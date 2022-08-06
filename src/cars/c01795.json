@@ -9,9 +9,7 @@
     "handling": 71,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": [
-        "The Japanese Odyssey"
-    ],
+    "tags": ["The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1500,
     "gc": "Medium",
@@ -23,10 +21,10 @@
     "fuelType": "Petrol",
     "mra": 57.53,
     "ola": 80.95,
-    "description": "Card by Bnuuy.",
+    "description": "None.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/968273026141528064/Stagea25XAero.png",
     "333TopSpeed": 117,
-    "3330to60": 8,
+    "3330to60": 8.0,
     "333Handling": 73,
     "666TopSpeed": 121,
     "6660to60": 7.6,
@@ -40,6 +38,6 @@
     "699TopSpeed": 121,
     "6990to60": 7.1,
     "699Handling": 79,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996027740581019658/stagea25xaeroselec.png",
+    "creator": "Bnuuy"
 }

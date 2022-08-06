@@ -9,11 +9,7 @@
     "handling": 89,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Hypercar",
-        "Silver Screen",
-        "Ultra Expensive"
-    ],
+    "tags": ["Hypercar","Silver Screen","Ultra Expensive"],
     "isPrize": false,
     "weight": 1970,
     "gc": "Low",
@@ -25,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 100.4,
     "ola": 92,
-    "description": "When 1000 horsepower isn't enough. Card by Bnuuy.",
+    "description": "When 1000 horsepower isn't enough.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/952192377324462120/VeyronSuperSport.png",
     "333TopSpeed": 265,
     "3330to60": 2.4,
@@ -42,6 +38,6 @@
     "699TopSpeed": 267,
     "6990to60": 2.1,
     "699Handling": 99,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996026432037855242/veyronss.png",
+    "creator": "Bnuuy"
 }
