@@ -1,0 +1,49 @@
+{
+    "rq": 92,
+    "make": "Zenvo",
+    "model": "TS1 GT",
+    "modelYear": 2016,
+    "country": "DK",
+    "topSpeed": 233,
+    "0to60": 2.9,
+    "handling": 93,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Unique", "Rest of The World", "Hypercar", "Ultra Expensive"],
+    "isPrize": false,
+	
+    "weight": 1580,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 123.4,
+    "ola": 86.21,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1000228383860461690/Zenvo_TS1_GT_2016.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1000229192727789578/Zenvo_TS1_GT_2016_Hud.png",
+    "creator": "DodgeDemon",
+
+    "333TopSpeed": 235,
+    "3330to60": 2.8,
+    "333Handling": 96,
+
+    "666TopSpeed": 237,
+    "6660to60": 2.6,
+    "666Handling": 99,
+
+    "996TopSpeed": 240,
+    "9960to60": 2.5,
+    "996Handling": 99,
+
+    "969TopSpeed": 240,
+    "9690to60": 2.6,
+    "969Handling": 103,
+
+    "699TopSpeed": 237,
+    "6990to60": 2.5,
+    "699Handling": 103
+}

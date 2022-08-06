@@ -1,0 +1,49 @@
+{
+    "rq": 95,
+    "make": "Zenvo",
+    "model": "TS1 GT 10th Anniversary 'Sleipnir'",
+    "modelYear": 2017,
+    "country": "DK",
+    "topSpeed": 250,
+    "0to60": 2.7,
+    "handling": 93,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Unique", "Rest of The World", "Hypercar", "Ultra Expensive"],
+    "isPrize": true,
+	
+    "weight": 1710,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 127.96,
+    "ola": 82.22,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1000228201773150208/Zenvo_TS1_GT_10A_2017.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1000229007033380964/Zenvo_TS1_GT_10A_2017_Hud.png",
+    "creator": "DodgeDemon",
+
+    "333TopSpeed": 252,
+    "3330to60": 2.6,
+    "333Handling": 96,
+
+    "666TopSpeed": 254,
+    "6660to60": 2.4,
+    "666Handling": 99,
+
+    "996TopSpeed": 256,
+    "9960to60": 2.3,
+    "996Handling": 99,
+
+    "969TopSpeed": 256,
+    "9690to60": 2.4,
+    "969Handling": 103,
+
+    "699TopSpeed": 254,
+    "6990to60": 2.3,
+    "699Handling": 103
+}
