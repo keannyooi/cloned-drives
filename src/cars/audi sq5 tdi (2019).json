@@ -1,0 +1,49 @@
+{
+    "rq": 79,
+    "make": "Audi",
+    "model": "SQ5 TDI",
+    "modelYear": 2019,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 5.2,
+    "handling": 82,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 2055,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 65.82,
+    "ola": 76.92,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/931476410810376253/audi_sq5_tdi_for_cd.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1004805962135240806/IMG_20220113_180128.png",
+    "creator": "Lemon",
+
+    "333TopSpeed": 158,
+    "3330to60": 4.9,
+    "333Handling": 85,
+
+    "666TopSpeed": 162,
+    "6660to60": 4.7,
+    "666Handling": 87,
+
+    "996TopSpeed": 165,
+    "9960to60": 4.4,
+    "996Handling": 87,
+
+    "969TopSpeed": 165,
+    "9690to60": 4.7,
+    "969Handling": 91,
+
+    "699TopSpeed": 162,
+    "6990to60": 4.4,
+    "699Handling": 91
+}

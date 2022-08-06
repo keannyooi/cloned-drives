@@ -1,0 +1,49 @@
+{
+    "rq": 73,
+    "make": "Audi",
+    "model": "RS 5 Coupe (Dynamic Plus Package)",
+    "modelYear": 2012,
+    "country": "DE",
+    "topSpeed": 176,
+    "0to60": 4.2,
+    "handling": 87,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1790,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 73.68,
+    "ola": 76.19,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/931229474563952660/audi_rs_5_coupe_dynamic_plus.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1004805688410787840/IMG_20220113_172313.png",
+    "creator": "Lemon",
+
+    "333TopSpeed": 179,
+    "3330to60": 4.0,
+    "333Handling": 90,
+
+    "666TopSpeed": 182,
+    "6660to60": 3.8,
+    "666Handling": 93,
+
+    "996TopSpeed": 185,
+    "9960to60": 3.6,
+    "996Handling": 93,
+
+    "969TopSpeed": 185,
+    "9690to60": 3.8,
+    "969Handling": 97,
+
+    "699TopSpeed": 182,
+    "6990to60": 3.6,
+    "699Handling": 97
+}

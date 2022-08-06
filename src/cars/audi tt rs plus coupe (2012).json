@@ -1,0 +1,49 @@
+{
+    "rq": 74,
+    "make": "Audi",
+    "model": "TT RS Plus Coupe",
+    "modelYear": 2012,
+    "country": "DE",
+    "topSpeed": 173,
+    "0to60": 4.0,
+    "handling": 86,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Grand Tourer"],
+    "isPrize": false,
+
+    "weight": 1450,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.67,
+    "ola": 85,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/871114454325133442/audi_tt_rs_plus_for_cd.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1004806087431700541/IMG_20210731_205102.png",
+    "creator": "Lemon",
+
+    "333TopSpeed": 176,
+    "3330to60": 3.8,
+    "333Handling": 89,
+
+    "666TopSpeed": 179,
+    "6660to60": 3.6,
+    "666Handling": 92,
+
+    "996TopSpeed": 182,
+    "9960to60": 3.4,
+    "996Handling": 92,
+
+    "969TopSpeed": 182,
+    "9690to60": 3.6,
+    "969Handling": 95,
+
+    "699TopSpeed": 179,
+    "6990to60": 3.4,
+    "699Handling": 95
+}
