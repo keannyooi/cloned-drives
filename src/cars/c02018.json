@@ -9,9 +9,7 @@
     "handling": 66,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": [
-        "Rest of the World"
-    ],
+    "tags": ["Rest of the World"],
     "isPrize": false,
     "weight": 1045,
     "gc": "Medium",
@@ -23,7 +21,7 @@
     "fuelType": "Electric",
     "mra": 0,
     "ola": 53.12,
-    "description": "Dacia's first attempt on making an electric car in a very affordable price. Card by Spence.",
+    "description": "Dacia's first attempt on making an electric car in a very affordable price.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/984493270254116904/DaciaSpringElectric.png",
     "333TopSpeed": 85,
     "3330to60": 19.5,
@@ -40,6 +38,6 @@
     "996TopSpeed": 98,
     "9960to60": 17.4,
     "996Handling": 70,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996089605982011463/DaciaSpringElectric.png",
+    "creator": "Spence"
 }

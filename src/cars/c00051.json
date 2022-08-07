@@ -9,10 +9,7 @@
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Track Day",
-        "The Royal Collection"
-    ],
+    "tags": ["Track Day","The Royal Collection"],
     "isPrize": true,
     "weight": 456,
     "gc": "Low",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 47.27,
     "ola": 73.08,
-    "description": "If you think that a 120 hp Rover engine will not do this car's justice, you will be dead wrong.. Card by Spence.",
+    "description": "If you think that a 120 hp Rover engine will not do this car's justice, you will be dead wrong.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/848792251488665610/image0.png",
     "333TopSpeed": 120,
     "3330to60": 4.9,
@@ -41,6 +38,6 @@
     "699TopSpeed": 124,
     "6990to60": 4.4,
     "699Handling": 101,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996109893411016856/ArielAtom.png",
+    "creator": "Spence"
 }

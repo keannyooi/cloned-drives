@@ -5,14 +5,11 @@
     "modelYear": 2019,
     "country": "JP",
     "topSpeed": 162,
-    "0to60": 4,
+    "0to60": 4.0,
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Street Racer",
-        "Silver Screen"
-    ],
+    "tags": ["Street Racer","Silver Screen"],
     "isPrize": false,
     "weight": 1570,
     "gc": "Low",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 70.18,
     "ola": 85,
-    "description": "Return of the legend with BMW mechanicals, not very well recieved amongst 13 year olds. Card by Connor",
+    "description": "Return of the legend with BMW mechanicals, not very well recieved amongst 13 year olds.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/837996099901325352/A.ToyotaGRSupraRZCD.png",
     "333TopSpeed": 165,
     "3330to60": 3.8,
@@ -41,6 +38,6 @@
     "699TopSpeed": 168,
     "6990to60": 3.4,
     "699Handling": 101,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996114247639642162/grsuprarz.png",
+    "creator": "Connor"
 }

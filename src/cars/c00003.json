@@ -1,9 +1,6 @@
 {
     "rq": 46,
-    "make": [
-        "Abarth",
-        "Fiat"
-    ],
+    "make": ["Abarth","Fiat"],
     "model": "500 Assetto Corse",
     "modelYear": 2008,
     "country": "IT",
@@ -12,10 +9,7 @@
     "handling": 80,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": [
-        "Track Day",
-        "Hot Hatch"
-    ],
+    "tags": ["Track Day","Hot Hatch"],
     "isPrize": true,
     "weight": 930,
     "gc": "Low",
@@ -27,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 87.14,
     "ola": 88.52,
-    "description": "the ultimate trackday 500. Card by Bnuuy.",
+    "description": "the ultimate trackday 500.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/844629785857753098/500AssCorse.png",
     "333TopSpeed": 141,
     "3330to60": 5.8,
@@ -44,6 +38,6 @@
     "699TopSpeed": 145,
     "6990to60": 5.2,
     "699Handling": 89,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996030170286805082/abarth500AC.png",
+    "creator": "Bnuuy"
 }
