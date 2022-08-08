@@ -1,0 +1,49 @@
+{
+    "rq": 94,
+    "make": "Porsche",
+    "model": "99X Electric",
+    "modelYear": 2019,
+    "country": "DE",
+    "topSpeed": 174,
+    "0to60": 2.7,
+    "handling": 98,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Motorsport", "Unique", "Eco-Friendly"],
+    "isPrize": true,
+	
+    "weight": 900,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Electric",
+    "mra": 100,
+    "ola": 88.88,
+    "description": "Porsches top end Formula E",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1005880124731830352/borsche99xelectric.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1005880217778262036/99XFormulaE.png",
+    "creator": "Bnuuy",
+
+    "333TopSpeed": 177, 
+    "3330to60": 2.6, 
+    "333Handling": 101,
+
+	"666TopSpeed": 180, 
+	"6660to60": 2.4, 
+	"666Handling": 104,
+
+	"699TopSpeed": 180, 
+	"6990to60": 2.3, 
+	"699Handling": 109,
+
+	"969TopSpeed": 183, 
+	"9690to60": 2.4, 
+	"969Handling": 109,
+
+	"996TopSpeed": 183, 
+	"9960to60": 2.3, 
+	"996Handling": 104
+}
