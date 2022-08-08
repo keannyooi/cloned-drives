@@ -9,9 +9,7 @@
     "handling": 90,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Hot Hatch"
-    ],
+    "tags": ["Hot Hatch"],
     "isPrize": false,
     "weight": 1550,
     "gc": "Low",
@@ -23,8 +21,8 @@
     "fuelType": "Petrol",
     "mra": 57.5,
     "ola": 65.44,
-    "description": "The only hot hatch with drift mode. oh wait. Card by Spence",
-    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824604555680415764/focusRS16.png",
+    "description": "The only hot hatch with drift mode. oh wait.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/996296675993853982/FordFocusRS2016.png",
     "333TopSpeed": 168,
     "3330to60": 4.4,
     "333Handling": 93,
@@ -40,6 +38,6 @@
     "699TopSpeed": 171,
     "6990to60": 3.9,
     "699Handling": 100,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996296738052767784/FordFocusRS2016.png",
+    "creator": "Spence"
 }

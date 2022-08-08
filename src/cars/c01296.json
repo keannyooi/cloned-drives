@@ -9,9 +9,7 @@
     "handling": 71,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": [
-        "Eco-Friendly"
-    ],
+    "tags": ["Eco-Friendly"],
     "isPrize": false,
     "weight": 1617,
     "gc": "Medium",
@@ -23,7 +21,7 @@
     "fuelType": "Hybrid",
     "mra": 65.18,
     "ola": 80.98,
-    "description": "America’s bread and butter now hybrid. Card by Connor",
+    "description": "America’s bread and butter now hybrid.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819656871702429706/C.ToyotaCamryHybridXS.png",
     "333TopSpeed": 120,
     "3330to60": 6.9,
@@ -40,6 +38,6 @@
     "699TopSpeed": 125,
     "6990to60": 6.2,
     "699Handling": 79,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996119609205858526/camryhybridxs.png",
+    "creator": "Connor"
 }

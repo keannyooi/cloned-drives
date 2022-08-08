@@ -9,9 +9,7 @@
     "handling": 70,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": [
-        "Eco-Friendly"
-    ],
+    "tags": ["Eco-Friendly"],
     "isPrize": false,
     "weight": 1370,
     "gc": "Medium",
@@ -23,7 +21,7 @@
     "fuelType": "Hybrid",
     "mra": 49.76,
     "ola": 67.31,
-    "description": "Second gen ready for taxis. Card by Connor",
+    "description": "Second gen ready for taxis.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820004981075345408/E.ToyotaPriusPremium.png",
     "333TopSpeed": 119,
     "3330to60": 9.9,
@@ -40,6 +38,6 @@
     "699TopSpeed": 123,
     "6990to60": 8.8,
     "699Handling": 78,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996122937226698902/priuspremium.png",
+    "creator": "Connor"
 }

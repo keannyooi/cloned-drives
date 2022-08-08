@@ -9,9 +9,7 @@
     "handling": 72,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": [
-        "Eco-Friendly"
-    ],
+    "tags": ["Eco-Friendly"],
     "isPrize": false,
     "weight": 1460,
     "gc": "Medium",
@@ -23,7 +21,7 @@
     "fuelType": "Hybrid",
     "mra": 46.64,
     "ola": 69.81,
-    "description": "AWD only to indicate that a rear motor is present. Card by Connor",
+    "description": "AWD only to indicate that a rear motor is present.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820012078844215367/D.ToyotaPriusAWDe.png",
     "333TopSpeed": 109,
     "3330to60": 9.9,
@@ -40,6 +38,6 @@
     "699TopSpeed": 114,
     "6990to60": 8.8,
     "699Handling": 80,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996124420047392819/priusawd.png",
+    "creator": "Connor"
 }

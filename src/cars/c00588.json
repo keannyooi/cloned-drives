@@ -9,10 +9,7 @@
     "handling": 90,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Supercar",
-        "Grand Tourer"
-    ],
+    "tags": ["Supercar","Grand Tourer"],
     "isPrize": false,
     "weight": 1776,
     "gc": "Low",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 80,
     "ola": 100,
-    "description": "A faster E-Type's Spiritual successor with a roary supercharged V8. Card by Spancecrab.",
+    "description": "A faster E-Type's Spiritual successor with a roary supercharged V8.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/837558519204544532/image0.png",
     "333TopSpeed": 191,
     "3330to60": 3.4,
@@ -41,6 +38,6 @@
     "699TopSpeed": 194,
     "6990to60": 3.1,
     "699Handling": 100,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996289097754746920/JaguarFTypeR.png",
+    "creator": "Spence"
 }

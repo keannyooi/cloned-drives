@@ -1,0 +1,49 @@
+{
+    "rq": 84,
+    "make": "Aston Martin",
+    "model": "One-77",
+    "modelYear": 2011,
+    "country": "GB",
+    "topSpeed": 220,
+    "0to60": 3.5,
+    "handling": 92,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Unique", "Supercar", "Ultra Expensive", "Innovative"],
+    "isPrize": false,
+	
+    "weight": 1630,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 102.94,
+    "ola": 80,
+    "description": "Phenomenal engine wrapped in sheer beauty. It’s a proper driver’s car, and a piece of pure supercar sculpture.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1006286815562571858/177.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1006287027047759992/1-77.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 222, 
+"3330to60": 3.3, 
+"333Handling": 95,
+
+"666TopSpeed": 225, 
+"6660to60": 3.1, 
+"666Handling": 98,
+
+"699TopSpeed": 225, 
+"6990to60": 3.0, 
+"699Handling": 102,
+
+"969TopSpeed": 227, 
+"9690to60": 3.1, 
+"969Handling": 102,
+
+"996TopSpeed": 227, 
+"9960to60": 3.0, 
+"996Handling": 98
+}

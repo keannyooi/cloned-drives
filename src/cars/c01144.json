@@ -1,9 +1,6 @@
 {
     "rq": 63,
-    "make": [
-        "Renault Sport",
-        "Renault"
-    ],
+    "make": ["Renault Sport","Renault"],
     "model": "Megane 275 Trophy-R",
     "modelYear": 2014,
     "country": "FR",
@@ -12,10 +9,7 @@
     "handling": 88,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": [
-        "Hot Hatch",
-        "Track Day"
-    ],
+    "tags": ["Hot Hatch","Track Day"],
     "isPrize": false,
     "weight": 1280,
     "gc": "Medium",
@@ -27,23 +21,23 @@
     "fuelType": "Petrol",
     "mra": 78.87,
     "ola": 82.14,
-    "description": "The most hardcore hot hatch that 3rd Gen has ever been. Card by Spence.",
+    "description": "The most hardcore hot hatch that 3rd Gen has ever been.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/847473970487230524/image0.png",
     "333TopSpeed": 161,
     "3330to60": 5.3,
     "333Handling": 91,
     "666TopSpeed": 165,
-    "6660to60": 5,
+    "6660to60": 5.0,
     "666Handling": 94,
     "996TopSpeed": 168,
     "9960to60": 4.8,
     "996Handling": 94,
     "969TopSpeed": 168,
-    "9690to60": 5,
+    "9690to60": 5.0,
     "969Handling": 98,
     "699TopSpeed": 165,
     "6990to60": 4.8,
     "699Handling": 98,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996170403963736154/RenaultSportMegane275TrophyR.png",
+    "creator": "Spence"
 }

@@ -9,9 +9,7 @@
     "handling": 69,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": [
-        "Eco-Friendly"
-    ],
+    "tags": ["Eco-Friendly"],
     "isPrize": false,
     "weight": 948,
     "gc": "Medium",
@@ -23,7 +21,7 @@
     "fuelType": "Hybrid",
     "mra": 36.12,
     "ola": 62.96,
-    "description": "Honda entered the hybrid market to compete with Toyota, with a quirky-looking compact car. Card by Spence",
+    "description": "Honda entered the hybrid market to compete with Toyota, with a quirky-looking compact car.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/823512767444549662/insight.png",
     "333TopSpeed": 112,
     "3330to60": 10.3,
@@ -40,6 +38,6 @@
     "699TopSpeed": 117,
     "6990to60": 9.2,
     "699Handling": 77,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996288061887496272/HondaInsight.png",
+    "creator": "Spence"
 }
