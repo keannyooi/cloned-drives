@@ -9,9 +9,7 @@
     "handling": 77,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": [
-        "Hot Hatch"
-    ],
+    "tags": ["Hot Hatch"],
     "isPrize": false,
     "weight": 1371,
     "gc": "Medium",
@@ -23,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 56.3,
     "ola": 76.32,
-    "description": "The slightly hot Toyota hatchback. Card by Connor.",
+    "description": "The slightly hot Toyota hatchback.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/865680888738218014/C.ToyotaCorollaHatchXSEMT.png",
     "333TopSpeed": 123,
     "3330to60": 7.2,
@@ -40,6 +38,6 @@
     "699TopSpeed": 128,
     "6990to60": 6.5,
     "699Handling": 85,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996480646706888775/COROLLASE.png",
+    "creator": "Connor"
 }

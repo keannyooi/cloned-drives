@@ -9,10 +9,7 @@
     "handling": 75,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": [
-        "Eco-Friendly",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Eco-Friendly","The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1523,
     "gc": "Medium",
@@ -24,7 +21,7 @@
     "fuelType": "Hybrid",
     "mra": 62.85,
     "ola": 75,
-    "description": "Card by Connor",
+    "description": "None.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/867795846703743046/D.ToyotaCorollaTS20SHybrid.png",
     "333TopSpeed": 120,
     "3330to60": 8.4,
@@ -41,6 +38,6 @@
     "699TopSpeed": 124,
     "6990to60": 7.5,
     "699Handling": 83,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996485429111038092/corollahybridts.png",
+    "creator": "Connor"
 }

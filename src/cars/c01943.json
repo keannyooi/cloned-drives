@@ -9,10 +9,7 @@
     "handling": 80,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": [
-        "Hot Hatch",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Hot Hatch","The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1135,
     "gc": "Low",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 75.29,
     "ola": 81.25,
-    "description": "Second GRMN prepared Yaris with a Series 3 Elise sourced supercharged engine. Card by Connor",
+    "description": "Second GRMN prepared Yaris with a Series 3 Elise sourced supercharged engine.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/963171237520105512/C.ToyotaYarisGRMN.png",
     "333TopSpeed": 146,
     "3330to60": 6.1,
@@ -41,6 +38,6 @@
     "699TopSpeed": 149,
     "6990to60": 5.4,
     "699Handling": 89,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996487774859436062/yarisgrmn.png",
+    "creator": "Connor"
 }

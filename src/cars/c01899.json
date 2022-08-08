@@ -5,14 +5,11 @@
     "modelYear": 2020,
     "country": "JP",
     "topSpeed": 143,
-    "0to60": 5,
+    "0to60": 5.0,
     "handling": 87,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Hot Hatch",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Hot Hatch","The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1283,
     "gc": "Low",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 75.76,
     "ola": 64,
-    "description": "Possibly the last homologation special, powered by a three cylinder engine, manual transmission and 4WD. Card by Connor.",
+    "description": "Possibly the last homologation special, powered by a three cylinder engine, manual transmission and 4WD.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/897204778868834356/A.ToyotaGRYarisRZHiperf.png",
     "333TopSpeed": 147,
     "3330to60": 4.8,
@@ -41,6 +38,6 @@
     "699TopSpeed": 150,
     "6990to60": 4.3,
     "699Handling": 97,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996487410668011661/gryaris.png",
+    "creator": "Connor"
 }

@@ -9,10 +9,7 @@
     "handling": 77,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": [
-        "Hot Hatch",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Hot Hatch","The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1295,
     "gc": "Medium",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 70.59,
     "ola": 86.11,
-    "description": "Incredibly boring-looking Hot Hatch powered by the engine found in the Lotus Elise. Card by Connor",
+    "description": "Incredibly boring-looking Hot Hatch powered by the engine found in the Lotus Elise.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/866800561105534997/C.ToyotaCorollaTSport.png",
     "333TopSpeed": 144,
     "3330to60": 6.8,
@@ -41,6 +38,6 @@
     "699TopSpeed": 147,
     "6990to60": 6.1,
     "699Handling": 85,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996481556610814082/COROLLATS.png",
+    "creator": "Connor"
 }

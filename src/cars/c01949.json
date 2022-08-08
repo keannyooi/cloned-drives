@@ -9,9 +9,7 @@
     "handling": 77,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": [
-        "The Japanese Odyssey"
-    ],
+    "tags": ["The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1083,
     "gc": "Medium",
@@ -23,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 48.17,
     "ola": 69.57,
-    "description": "Cute Mazda you got there, oh wait. Card by Connor",
+    "description": "Cute Mazda you got there, oh wait.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/868932163335241768/D.ToyotaYarisSedan.png",
     "333TopSpeed": 123,
     "3330to60": 8.7,
@@ -40,6 +38,6 @@
     "699TopSpeed": 128,
     "6990to60": 7.8,
     "699Handling": 85,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996486945481969784/yarissedan.png",
+    "creator": "Connor"
 }

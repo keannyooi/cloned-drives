@@ -9,9 +9,7 @@
     "handling": 70,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": [
-        "The Japanese Odyssey"
-    ],
+    "tags": ["The Japanese Odyssey"],
     "isPrize": false,
     "weight": 930,
     "gc": "Medium",
@@ -23,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 33.3,
     "ola": 66.04,
-    "description": "Slightly faster Zanussi. Card by Connor.",
+    "description": "Slightly faster Zanussi.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/864254711996743691/E.png",
     "333TopSpeed": 110,
     "3330to60": 10.1,
@@ -32,14 +30,14 @@
     "6660to60": 9.5,
     "666Handling": 75,
     "996TopSpeed": 120,
-    "9960to60": 9,
+    "9960to60": 9.0,
     "996Handling": 75,
     "969TopSpeed": 120,
     "9690to60": 9.5,
     "969Handling": 78,
     "699TopSpeed": 115,
-    "6990to60": 9,
+    "6990to60": 9.0,
     "699Handling": 78,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996479172203515914/iq14.png",
+    "creator": "Connor"
 }
