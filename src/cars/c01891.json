@@ -9,10 +9,7 @@
     "handling": 77,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": [
-        "Hot Hatch",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Hot Hatch","The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1315,
     "gc": "Medium",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 66.67,
     "ola": 79.41,
-    "description": "Limited Edition version of the T-Sport added a supercharger found in the Lotus Exige 240R. Card by Connor",
+    "description": "Limited Edition version of the T-Sport added a supercharger found in the Lotus Exige 240R.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/866800629048934430/C.ToyotaCorollaTSportKompressor.png",
     "333TopSpeed": 150,
     "3330to60": 6.5,
@@ -42,5 +39,5 @@
     "6990to60": 5.8,
     "699Handling": 85,
     "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "creator": "Connor"
 }

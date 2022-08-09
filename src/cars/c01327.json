@@ -9,9 +9,7 @@
     "handling": 72,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": [
-        "Eco-Friendly"
-    ],
+    "tags": ["Eco-Friendly"],
     "isPrize": false,
     "weight": 1383,
     "gc": "Medium",
@@ -23,7 +21,7 @@
     "fuelType": "Hybrid",
     "mra": 49.76,
     "ola": 75.02,
-    "description": "First iteration of the Look I’m Edgy styling. Card by Connor",
+    "description": "First iteration of the Look I’m Edgy styling.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820006319184412723/E.ToyotaPriusTouring.png",
     "333TopSpeed": 120,
     "3330to60": 9.9,
@@ -40,6 +38,6 @@
     "699TopSpeed": 124,
     "6990to60": 8.8,
     "699Handling": 80,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996123283781062746/pruusnew.png",
+    "creator": "Connor"
 }

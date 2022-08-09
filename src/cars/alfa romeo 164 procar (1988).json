@@ -1,0 +1,49 @@
+{
+    "rq": 97,
+    "make": "Alfa Romeo",
+    "model": "164 Procar",
+    "modelYear": 1988,
+    "country": "IT",
+    "topSpeed": 215,
+    "0to60": 2.1,
+    "handling": 94,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport","Innovative", "Oddity", "Super Sedan"],
+    "isPrize": true,
+	
+    "weight": 750,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 91.3,
+    "ola": 95.23,
+    "description": "The ancient Roman writer Virgil warned us against trusting appearances too much, and that’s especially true for two special Alfa Romeo 164, as under their skin hides the heart and bones of a Formula One racer.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1006286925029724281/164procar.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1006287148854550649/164procar.png",
+    "creator": "Bnuuy",
+	
+"333TopSpeed": 217, 
+"3330to60": 2.0, 
+"333Handling": 97,
+
+"666TopSpeed": 220, 
+"6660to60": 1.9, 
+"666Handling": 100,
+
+"699TopSpeed": 220, 
+"6990to60": 1.8, 
+"699Handling": 104,
+
+"969TopSpeed": 222, 
+"9690to60": 1.9, 
+"969Handling": 104,
+
+"996TopSpeed": 222, 
+"9960to60": 1.8, 
+"996Handling": 100
+}

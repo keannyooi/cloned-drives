@@ -1,0 +1,50 @@
+{
+    "rq": 63,
+    "make": "Venturi",
+    "model": "260 Atlantique",
+    "modelYear": 1992,
+    "country": "MC",
+    "topSpeed": 166,
+    "0to60": 5.0,
+    "handling": 80,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1143,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 64.41,
+    "ola": 73.16,
+    "description": "Another special lightened version of the Venturi 260.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/978098780673048606/48F9062F-8B6D-489D-AC22-353393717028.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1006050057050660874/Venturi260Atlantique.png",
+    "creator": "Spence",
+	
+    "333TopSpeed": 169,
+    "3330to60": 4.8,
+    "333Handling": 83,
+
+    "666TopSpeed": 172,
+    "6660to60": 4.5,
+    "666Handling": 85,
+
+    "699TopSpeed": 172,
+    "6990to60": 4.3,
+    "699Handling": 89,
+
+    "969TopSpeed": 175,
+    "9690to60": 4.5,
+    "969Handling": 89,
+
+    "996TopSpeed": 175,
+    "9960to60": 4.3,
+    "996Handling": 85
+}

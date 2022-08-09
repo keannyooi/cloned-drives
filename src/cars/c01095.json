@@ -9,9 +9,7 @@
     "handling": 79,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Track Day"
-    ],
+    "tags": ["Track Day"],
     "isPrize": true,
     "weight": 1180,
     "gc": "Low",
@@ -23,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 62.66,
     "ola": 75.76,
-    "description": "A forgotten high performance 924 that was made for Group 4 racing. Card by Spence.",
+    "description": "A forgotten high performance 924 that was made for Group 4 racing.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/847605772384337940/image0.png",
     "333TopSpeed": 152,
     "3330to60": 6.3,
@@ -40,6 +38,6 @@
     "699TopSpeed": 156,
     "6990to60": 5.6,
     "699Handling": 88,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996180754147069972/Porsche924CarreraGT.png",
+    "creator": "Spence"
 }

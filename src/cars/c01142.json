@@ -1,10 +1,7 @@
 {
     "rq": 53,
-    "make": [
-        "Renault Sport",
-        "Renault"
-    ],
-    "model": "Megane",
+    "make": ["Renault Sport","Renault"],
+    "model": "Megane 280 Sport",
     "modelYear": 2018,
     "country": "FR",
     "topSpeed": 157,
@@ -12,9 +9,7 @@
     "handling": 88,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": [
-        "Hot Hatch"
-    ],
+    "tags": ["Hot Hatch"],
     "isPrize": false,
     "weight": 1407,
     "gc": "Low",
@@ -26,8 +21,8 @@
     "fuelType": "Petrol",
     "mra": 71.17,
     "ola": 84.48,
-    "description": "The Baguette hot hatch that still doesn't undergo the AWD treatment. Card by Spence",
-    "card": "https://cdn.discordapp.com/attachments/819199720249360384/849480082589745172/image0.png",
+    "description": "The Baguette hot hatch that still doesn't undergo the AWD treatment.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/996245450673897502/RenaultSportMegane280Sport.png",
     "333TopSpeed": 160,
     "3330to60": 5.5,
     "333Handling": 91,
@@ -43,6 +38,6 @@
     "699TopSpeed": 164,
     "6990to60": 4.9,
     "699Handling": 98,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996245491543187536/RenaultSportMegane280Sport.png",
+    "creator": "Spence"
 }

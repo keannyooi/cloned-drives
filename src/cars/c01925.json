@@ -9,21 +9,19 @@
     "handling": 53,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": [
-        "The Japanese Odyssey"
-    ],
+    "tags": ["The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1557,
     "gc": "Medium",
     "seatCount": 7,
-    "bodyStyle": "MPV",
+    "bodyStyle": "Van",
     "tcs": false,
     "abs": false,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 0,
+    "mra": 10,
     "ola": 53.25,
-    "description": "One van, million names. Card by Connor",
+    "description": "One van, million names.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/868931487465086976/F.ToyotaVanLE.png",
     "333TopSpeed": 99,
     "3330to60": 16.1,
@@ -40,6 +38,6 @@
     "699TopSpeed": 104,
     "6990to60": 14.4,
     "699Handling": 59,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996486247516225708/VAN.png",
+    "creator": "Connor"
 }

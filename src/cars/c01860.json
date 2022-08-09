@@ -9,9 +9,7 @@
     "handling": 74,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": [
-        "The Japanese Odyssey"
-    ],
+    "tags": ["The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1435,
     "gc": "Medium",
@@ -23,7 +21,7 @@
     "fuelType": "Diesel",
     "mra": 55,
     "ola": 70.45,
-    "description": "Replacement for the hatchback Corolla named after Latin word for gold 'aurum'. Card by Connor",
+    "description": "Replacement for the hatchback Corolla named after Latin word for gold 'aurum'.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/867157277253042176/D.ToyotaAuris22DCAT.png",
     "333TopSpeed": 134,
     "3330to60": 8.4,
@@ -40,6 +38,6 @@
     "699TopSpeed": 138,
     "6990to60": 7.5,
     "699Handling": 82,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996482993503871007/auris22hdi.png",
+    "creator": "Connor"
 }

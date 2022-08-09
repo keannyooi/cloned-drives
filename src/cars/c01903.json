@@ -9,9 +9,7 @@
     "handling": 67,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": [
-        "The Japanese Odyssey"
-    ],
+    "tags": ["The Japanese Odyssey"],
     "isPrize": false,
     "weight": 897,
     "gc": "Medium",
@@ -21,9 +19,9 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 0,
+    "mra": 17.33,
     "ola": 70.19,
-    "description": "Zanussi with a Zanussi engine. Card by Connor.",
+    "description": "Zanussi with a Zanussi engine.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/864254421198045254/F.png",
     "333TopSpeed": 99,
     "3330to60": 14.3,
@@ -40,6 +38,6 @@
     "699TopSpeed": 104,
     "6990to60": 12.8,
     "699Handling": 74,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996478765502840912/IQ10.png",
+    "creator": "Connor"
 }

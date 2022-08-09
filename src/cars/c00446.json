@@ -9,10 +9,7 @@
     "handling": 70,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": [
-        "Hot Hatch",
-        "The Royal Collection"
-    ],
+    "tags": ["Hot Hatch","The Royal Collection"],
     "isPrize": false,
     "weight": 875,
     "gc": "Medium",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 31.68,
     "ola": 70.83,
-    "description": "Highly-tuned but not highly strung... at least thats what the brochure said. Card by Spence.",
+    "description": "Highly-tuned but not highly strung... at least thats what the brochure said.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/847549745261314108/image0.png",
     "333TopSpeed": 111,
     "3330to60": 9.1,
@@ -41,6 +38,6 @@
     "699TopSpeed": 116,
     "6990to60": 8.2,
     "699Handling": 78,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996170341476999198/FordFiestaXR2.png",
+    "creator": "Spence"
 }

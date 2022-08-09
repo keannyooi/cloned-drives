@@ -9,9 +9,7 @@
     "handling": 68,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": [
-        "Eco-Friendly"
-    ],
+    "tags": ["Eco-Friendly"],
     "isPrize": false,
     "weight": 1485,
     "gc": "Medium",
@@ -23,7 +21,7 @@
     "fuelType": "Hybrid",
     "mra": 44.92,
     "ola": 71.7,
-    "description": "Card by Connor",
+    "description": "None.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820009887726698567/E.ToyotaPriusv.png",
     "333TopSpeed": 111,
     "3330to60": 10.1,
@@ -32,14 +30,14 @@
     "6660to60": 9.5,
     "666Handling": 72,
     "996TopSpeed": 121,
-    "9960to60": 9,
+    "9960to60": 9.0,
     "996Handling": 72,
     "969TopSpeed": 121,
     "9690to60": 9.5,
     "969Handling": 75,
     "699TopSpeed": 116,
-    "6990to60": 9,
+    "6990to60": 9.0,
     "699Handling": 75,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996124053104513064/priusv.png",
+    "creator": "Connor"
 }

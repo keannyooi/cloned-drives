@@ -1,10 +1,7 @@
 {
     "rq": 46,
-    "make": [
-        "Renault Sport",
-        "Renault"
-    ],
-    "model": "Clio",
+    "make": ["Renault Sport","Renault"],
+    "model": "Clio 172",
     "modelYear": 2002,
     "country": "FR",
     "topSpeed": 138,
@@ -12,9 +9,7 @@
     "handling": 81,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": [
-        "Hot Hatch"
-    ],
+    "tags": ["Hot Hatch"],
     "isPrize": false,
     "weight": 1035,
     "gc": "Medium",
@@ -26,8 +21,8 @@
     "fuelType": "Petrol",
     "mra": 58.56,
     "ola": 83.08,
-    "description": "This is Renault's noughties hot hatch and it's one of the best in the business. Card by Spence",
-    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824351080099610674/RSClio.png",
+    "description": "This is Renault's noughties hot hatch and it's one of the best in the business.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/996464531565969509/RenaultSportClio172.png",
     "333TopSpeed": 142,
     "3330to60": 6.5,
     "333Handling": 84,
@@ -43,6 +38,6 @@
     "699TopSpeed": 146,
     "6990to60": 5.8,
     "699Handling": 90,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996464584468725811/RenaultSportClio172.png",
+    "creator": "Spence"
 }

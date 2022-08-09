@@ -1,9 +1,6 @@
 {
     "rq": 53,
-    "make": [
-        "Renault Sport",
-        "Renault"
-    ],
+    "make": ["Renault Sport","Renault"],
     "model": "Megane R26.R",
     "modelYear": 2008,
     "country": "FR",
@@ -12,10 +9,7 @@
     "handling": 87,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": [
-        "Hot Hatch",
-        "Track Day"
-    ],
+    "tags": ["Hot Hatch","Track Day"],
     "isPrize": false,
     "weight": 1230,
     "gc": "Low",
@@ -27,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 67.44,
     "ola": 79.31,
-    "description": "What a 123kg diet does for this little French hatchback? A FWD nurburgring record it is. Card by Spence.",
+    "description": "What a 123kg diet does for this little French hatchback? A FWD nurburgring record it is.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/847342934093463562/image0.png",
     "333TopSpeed": 151,
     "3330to60": 5.5,
@@ -44,6 +38,6 @@
     "699TopSpeed": 154,
     "6990to60": 4.9,
     "699Handling": 97,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996170240100663346/RenaultSportMeganeR26R.png",
+    "creator": "Spence"
 }

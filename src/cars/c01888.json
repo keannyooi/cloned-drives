@@ -9,10 +9,7 @@
     "handling": 76,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": [
-        "Eco-Friendly",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Eco-Friendly","The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1460,
     "gc": "Medium",
@@ -24,10 +21,10 @@
     "fuelType": "Hybrid",
     "mra": 63.15,
     "ola": 80.95,
-    "description": "Possibly the best looking Corolla ever. Card by Connor",
+    "description": "Possibly the best looking Corolla ever.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/867795791257796608/D.ToyotaCorolla20SHybrid.png",
     "333TopSpeed": 120,
-    "3330to60": 8,
+    "3330to60": 8.0,
     "333Handling": 79,
     "666TopSpeed": 124,
     "6660to60": 7.6,
@@ -41,6 +38,6 @@
     "699TopSpeed": 124,
     "6990to60": 7.1,
     "699Handling": 84,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996485083252932728/COROLLAHYBRID.png",
+    "creator": "Connor"
 }

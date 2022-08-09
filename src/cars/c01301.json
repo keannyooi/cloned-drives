@@ -21,10 +21,10 @@
     "fuelType": "Petrol",
     "mra": 52.17,
     "ola": 71.43,
-    "description": "In 1986, Toyota switched its iconic Celica from rear to front-wheel drive, but it didn't ruin the car. Card by Connor",
+    "description": "In 1986, Toyota switched its iconic Celica from rear to front-wheel drive, but it didn't ruin the car.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820013697803616266/D.ToyotaCelicaGTSLiftback.png",
     "333TopSpeed": 128,
-    "3330to60": 8,
+    "3330to60": 8.0,
     "333Handling": 75,
     "666TopSpeed": 132,
     "6660to60": 7.6,
@@ -38,6 +38,6 @@
     "699TopSpeed": 132,
     "6990to60": 7.1,
     "699Handling": 81,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996476977492013106/celicagts.png",
+    "creator": "Connor"
 }

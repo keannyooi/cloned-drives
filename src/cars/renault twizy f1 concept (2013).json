@@ -1,0 +1,49 @@
+{
+    "rq": 31,
+    "make": "Renault",
+    "model": "Twizy F1 Concept",
+    "modelYear": 2013,
+    "country": "FR",
+    "topSpeed": 68,
+    "0to60": 6.8,
+    "handling": 83,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Oddity", "Unique", "Track Day", "Eco-Friendly"],
+    "isPrize": true,
+	
+    "weight": 564,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Electric",
+    "mra": 11.11,
+    "ola": 79.41,
+    "description": "Throw big fat slicks and a HP upgrade and you got yourself a track weapon with a single seat and open wheels :D. ",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/983394260630007899/TwizyF1.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997646155490009208/twizyF1.png",
+    "creator": "Bnuuy",
+
+	"333TopSpeed": 76, 
+	"3330to60": 6.5, 
+	"333Handling": 86,
+
+	"666TopSpeed": 83, 
+	"6660to60": 6.1, 
+	"666Handling": 88,
+
+	"699TopSpeed": 83, 
+	"6990to60": 5.8, 
+	"699Handling": 92,
+
+	"969TopSpeed": 91, 
+	"9690to60": 6.1, 
+	"969Handling": 92,
+
+	"996TopSpeed": 91, 
+	"9960to60": 5.8, 
+	"996Handling": 88
+}

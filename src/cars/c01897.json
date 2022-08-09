@@ -9,10 +9,7 @@
     "handling": 66,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": [
-        "Eco-Friendly",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Eco-Friendly","The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1145,
     "gc": "Medium",
@@ -24,7 +21,7 @@
     "fuelType": "Electric",
     "mra": 0,
     "ola": 58.82,
-    "description": "A super smol electric car focused on fleet customers and car sharing programs with a tiny 12 kWh battery and a 85 km range. Card by Connor.",
+    "description": "A super smol electric car focused on fleet customers and car sharing programs with a tiny 12 kWh battery and a 85 km range.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/864254084496490506/F.png",
     "333TopSpeed": 85,
     "3330to60": 12.9,
@@ -41,6 +38,6 @@
     "699TopSpeed": 91,
     "6990to60": 11.6,
     "699Handling": 73,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996478390162960454/eq.png",
+    "creator": "Connor"
 }

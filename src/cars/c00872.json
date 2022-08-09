@@ -9,10 +9,7 @@
     "handling": 78,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Sleeper",
-        "Muscle Car"
-    ],
+    "tags": ["Sleeper","Muscle Car"],
     "isPrize": false,
     "weight": 1963,
     "gc": "Medium",
@@ -24,8 +21,8 @@
     "fuelType": "Petrol",
     "mra": 81.91,
     "ola": 81.82,
-    "description": "Started life as a rebadged Crown Vic, then turned up to 11 and transforms into a stealthy sleeper. Card by Spence",
-    "card": "https://cdn.discordapp.com/attachments/819199720249360384/823376660178665472/image0.png",
+    "description": "Started life as a rebadged Crown Vic, then turned up to 11 and transforms into a stealthy sleeper.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/996237484323262585/MercuryMarauder.png",
     "333TopSpeed": 121,
     "3330to60": 7.3,
     "333Handling": 81,
@@ -41,6 +38,6 @@
     "699TopSpeed": 126,
     "6990to60": 6.5,
     "699Handling": 87,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996237535611195452/MercuryMarauder.png",
+    "creator": "Spence"
 }

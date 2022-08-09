@@ -1,0 +1,50 @@
+{
+    "rq": 36,
+    "make": "Venturi",
+    "model": "111 Cup",
+    "modelYear": 1990,
+    "country": "MC",
+    "topSpeed": 145,
+    "0to60": 7.4,
+    "handling": 73,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1270,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 56.91,
+    "ola": 67.57,
+    "description": "A 2.0L turbocharged 4-cylinder for the Italian market.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/978097421307494440/6CB81C7B-070F-4DF3-9AB3-F2D90D1EEECD.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1006049623560962118/Venturi111Cup.png",
+    "creator": "Spence",
+
+    "333TopSpeed": 149,
+    "3330to60": 7.0,
+    "333Handling": 75,
+
+    "666TopSpeed": 152,
+    "6660to60": 6.7,
+    "666Handling": 78,
+
+    "699TopSpeed": 152,
+    "6990to60": 6.3,
+    "699Handling": 81,
+
+    "969TopSpeed": 156,
+    "9690to60": 6.7,
+    "969Handling": 81,
+
+    "996TopSpeed": 156,
+    "9960to60": 6.3,
+    "996Handling": 78
+}

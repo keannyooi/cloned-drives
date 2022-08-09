@@ -9,10 +9,7 @@
     "handling": 73,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": [
-        "Eco-Friendly",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Eco-Friendly","The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1410,
     "gc": "Medium",
@@ -24,7 +21,7 @@
     "fuelType": "Hybrid",
     "mra": 50,
     "ola": 69.16,
-    "description": "Card by Connor",
+    "description": "None.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/867523733911633930/E.ToyotaAuris18Hybrid.png",
     "333TopSpeed": 118,
     "3330to60": 10.2,
@@ -41,6 +38,6 @@
     "699TopSpeed": 122,
     "6990to60": 9.1,
     "699Handling": 81,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996483896919203920/aurishybrid.png",
+    "creator": "Connor"
 }

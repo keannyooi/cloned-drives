@@ -1,0 +1,50 @@
+{
+    "rq": 94,
+    "make": "Porsche",
+    "model": "911 Turbo",
+    "modelYear": 2020,
+    "country": "DE",
+    "topSpeed": 199,
+    "0to60": 2.6,
+    "handling": 92,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Supercar"],
+    "isPrize": false,
+
+    "weight": 1650,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 78.78,
+    "ola": 74.61,
+    "description": "None.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/976511725329338398/911Turbo2020.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1006259244695298089/911Turbo992.png",
+    "creator": "Bnuuy",
+
+    "333TopSpeed": 202,
+    "3330to60": 2.5,
+    "333Handling": 95,
+
+    "666TopSpeed": 204,
+    "6660to60": 2.3,
+    "666Handling": 98,
+
+    "996TopSpeed": 207,
+    "9960to60": 2.2,
+    "996Handling": 98,
+
+    "969TopSpeed": 207,
+    "9690to60": 2.3,
+    "969Handling": 102,
+
+    "699TopSpeed": 204,
+    "6990to60": 2.2,
+    "699Handling": 102
+}
