@@ -7,6 +7,12 @@ function sortCars(list, sort, order, garage) {
     return list.sort(function (a, b) {
         let carA = require(`../../cars/${typeof a === "string" ? a : a.carID}`);
         let carB = require(`../../cars/${typeof b === "string" ? b : b.carID}`);
+        if (carA["reference"]) {
+            carA = require(`../../cars/${carA["reference"]}`);
+        }
+        if (carB["reference"]) {
+            carB = require(`../../cars/${carB["reference"]}`);
+        }
 
         let critA = carA[sort], critB = carB[sort];
         if (sort === "topSpeed" || sort === "0to60" || sort === "handling") {

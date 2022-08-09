@@ -17,8 +17,8 @@ module.exports = {
         let query = args.map(i => i.toLowerCase());
         if (args[0].toLowerCase() === "random") {
             let currentPack = require(`../packs/${packFiles[Math.floor(Math.random() * packFiles.length)]}`);
-            openPack({ message, currentPack });
-            return message.channel.send("**Note: Since you opened this pack using `cd-testpack`, these cars won't be added into your garage and you won't be charged with money.**");
+            await openPack({ message, currentPack, test: true });
+            return bot.deleteID(message.author.id);
         }
 
         await new Promise(resolve => resolve(search(message, query, packFiles, "pack")))
@@ -27,7 +27,7 @@ module.exports = {
                 let [result, currentMessage] = response;
                 let currentPack = require(`../packs/${result}`);
                 await openPack({ message, currentPack, currentMessage, test: true });
-                return bot.deleteID(this.authorID);
+                return bot.deleteID(message.author.id);
             })
             .catch(error => {
                 throw error;

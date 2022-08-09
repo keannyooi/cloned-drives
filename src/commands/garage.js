@@ -76,7 +76,12 @@ module.exports = {
         async function loop(user, page, sort, currentMessage) {
             const { garage } = await profileModel.findOne({ userID: user.id });
             const { settings, filter } = await profileModel.findOne({ userID: message.author.id });
-            let filteredGarage = settings.disablegaragefilter ? garage : garage.filter(car => filterCheck({ car, filter, applyOrLogic: settings.filterlogic === "or" ? true : false }));
+            let filteredGarage = settings.disablegaragefilter ? garage : garage.filter(car => filterCheck({
+                car,
+                filter,
+                applyOrLogic: settings.filterlogic === "or" ? true : false,
+                hideBMCars: settings.hidebmcars || false
+            }));
 
             sort = sortCheck(message, sort, currentMessage);
             if (typeof sort !== "string") return;

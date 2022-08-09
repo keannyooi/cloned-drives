@@ -77,7 +77,7 @@ module.exports = {
             else if (streak % 5 === 0) {
                 let carID = carFiles[Math.floor(Math.random() * carFiles.length)];
                 let currentCar = require(`../cars/${carID}`);
-                while (currentCar["rq"] > 64 || currentCar["isPrize"] === true) {
+                while (currentCar["reference"] || currentCar["rq"] > 64 || currentCar["isPrize"] === true) {
                     carID = carFiles[Math.floor(Math.random() * carFiles.length)];
                     currentCar = require(`../cars/${carID}`);
                 }

@@ -4,8 +4,8 @@ const bot = require("../../config/config.js");
 const { blackMarketEmojiID, legendaryEmojiID, epicEmojiID, ultraRareEmojiID, superRareEmojiID,
     rareEmojiID, uncommonEmojiID, commonEmojiID } = require("../consts/consts.js");
 
-function rarityCheck(car) {
-    if (car["collection"]) {
+function rarityCheck(car, type) {
+    if (type === "bm") {
         return bot.emojis.cache.get(blackMarketEmojiID);
     }
     else if (car["rq"] > 79) { //leggie

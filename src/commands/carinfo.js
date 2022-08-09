@@ -17,7 +17,7 @@ module.exports = {
     category: "Info",
     description: "Shows info about a specified car.",
     async execute(message, args) {
-        let query = args.map(i => i.toLowerCase()), searchBy = "car";
+        let query = args.map(i => i.toLowerCase()), searchBy = "carWithBM";
         if (args[0].toLowerCase() === "random") {
             return displayInfo(carFiles[Math.floor(Math.random() * carFiles.length)]);
         }
@@ -37,33 +37,37 @@ module.exports = {
 
         async function displayInfo(carFile, currentMessage) {
             const { garage, settings } = await profileModel.findOne({ userID: message.author.id });
-            let currentCar = require(`../cars/${carFile}`);
-            let description = "None", mra = "N/A", ola = "N/A";
-            let topSpeed = `${currentCar.topSpeed}MPH`, accel = "N/A", weight = `${currentCar.weight.toLocaleString("en")}kg`;
-            let bodyStyle = Array.isArray(currentCar["bodyStyle"]) ? currentCar["bodyStyle"].join(", ") : currentCar["bodyStyle"];
+            let description = "None", mra = "N/A", ola = "N/A", collection = "N/A";
+            let currentCar = require(`../cars/${carFile}`), bmReference = currentCar;
+            if (currentCar["reference"]) {
+                bmReference = require(`../cars/${currentCar["reference"]}`);
+                collection = currentCar["collection"].join(", ")
+            }
+            let topSpeed = `${bmReference.topSpeed}MPH`, accel = "N/A", weight = `${bmReference.weight.toLocaleString("en")}kg`;
+            let bodyStyle = Array.isArray(bmReference["bodyStyle"]) ? bmReference["bodyStyle"].join(", ") : bmReference["bodyStyle"];
 
             if (currentCar["description"].length > 0) {
                 description = currentCar["description"];
             }
-            if (currentCar.topSpeed >= 100) {
-                mra = currentCar.mra.toString();
+            if (bmReference.topSpeed >= 100) {
+                mra = bmReference.mra.toString();
             }
-            if (currentCar.topSpeed >= 60) {
+            if (bmReference.topSpeed >= 60) {
                 if (settings.unitpreference === "metric") {
-                    accel = `${currentCar["0to60"]} (${unbritish(currentCar["0to60"], "0to60")})`;
+                    accel = `${bmReference["0to60"]} (${unbritish(bmReference["0to60"], "0to60")})`;
                 }
                 else {
-                    accel = currentCar["0to60"].toString();
+                    accel = bmReference["0to60"].toString();
                 }
             }
-            if (currentCar.topSpeed >= 30) {
-                ola = currentCar.ola.toString();
+            if (bmReference.topSpeed >= 30) {
+                ola = bmReference.ola.toString();
             }
             if (settings.unitpreference === "metric") {
-                topSpeed += ` (${unbritish(currentCar.topSpeed, "topSpeed")}KM/H)`;
+                topSpeed += ` (${unbritish(bmReference.topSpeed, "topSpeed")}KM/H)`;
             }
             else if (settings.unitpreference === "imperial") {
-                weight += ` (${unbritish(currentCar.weight, "weight")}lbs)`;
+                weight += ` (${unbritish(bmReference.weight, "weight")}lbs)`;
             }
 
             const infoMessage = new InfoMessage({
@@ -76,21 +80,22 @@ module.exports = {
                 fields: [
                     { name: "Top Speed", value: topSpeed, inline: true },
                     { name: "0-60MPH (0-100KM/H)", value: accel, inline: true },
-                    { name: "Handling", value: currentCar.handling.toString(), inline: true },
-                    { name: "Drive Type", value: currentCar.driveType, inline: true },
-                    { name: "Tyre Type", value: currentCar.tyreType, inline: true },
+                    { name: "Handling", value: bmReference.handling.toString(), inline: true },
+                    { name: "Drive Type", value: bmReference.driveType, inline: true },
+                    { name: "Tyre Type", value: bmReference.tyreType, inline: true },
                     { name: "Weight", value: weight, inline: true },
-                    { name: "Ground Clearance", value: currentCar.gc, inline: true },
-                    { name: "Seat Count", value: currentCar.seatCount.toString(), inline: true },
+                    { name: "Ground Clearance", value: bmReference.gc, inline: true },
+                    { name: "Seat Count", value: bmReference.seatCount.toString(), inline: true },
                     { name: "Body Style", value: bodyStyle, inline: true },
-                    { name: "Engine Position", value: currentCar.enginePos, inline: true },
-                    { name: "Fuel Type", value: currentCar.fuelType, inline: true },
-                    { name: "TCS Enabled?", value: currentCar.tcs.toString(), inline: true },
-                    { name: "ABS Enabled?", value: currentCar.abs.toString(), inline: true },
-                    { name: "Tags", value: currentCar.tags.join(", ") || "None", inline: true },
-                    { name: "Collection", value: currentCar.collection || "None", inline: true },
+                    { name: "Engine Position", value: bmReference.enginePos, inline: true },
+                    { name: "Fuel Type", value: bmReference.fuelType, inline: true },
+                    { name: "TCS Enabled?", value: bmReference.tcs.toString(), inline: true },
+                    { name: "ABS Enabled?", value: bmReference.abs.toString(), inline: true },
+                    { name: "Tags", value: bmReference.tags.join(", ") || "None", inline: true },
+                    { name: "Collection", value: collection || "None", inline: true },
                     { name: "Mid-Range Acceleration (MRA)", value: mra, inline: true },
                     { name: "Off-the-Line Acceleration (OLA)", value: ola, inline: true },
+                    // { name: "Creator", value: currentCar.creator ?? "None", inline: true },
                     { name: "Description", value: description }
                 ]
             });

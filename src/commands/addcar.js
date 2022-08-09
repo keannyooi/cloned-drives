@@ -57,7 +57,7 @@ module.exports = {
                 return errorMessage.sendMessage({ currentMessage });
             }
 
-            await new Promise(resolve => resolve(search(message, carName, carFiles, "car", currentMessage)))
+            await new Promise(resolve => resolve(search(message, carName, carFiles, "carWithBM", currentMessage)))
                 .then(async (response) => {
                     if (!Array.isArray(response)) return;
                     let [result, currentMessage] = response;

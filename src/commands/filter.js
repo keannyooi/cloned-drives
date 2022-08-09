@@ -7,11 +7,11 @@ const profileModel = require("../models/profileSchema.js");
 module.exports = {
     name: "filter",
     usage: [
-        "<make / country / drivetype / tyretype / gc / bodystyle / enginepos / fueltype / tags / search> <corresponding value>",
+        "<make / country / drivetype / tyretype / gc / bodystyle / enginepos / fueltype / tags / collection / search> <corresponding value>",
         "<rq / modelyear / seatcount> <starting value> [ending value]",
         "<isprize / isstock / isupgraded / ismaxed / isowned> <true / false>",
-        "<remove / disable> <make / country / tags / tyretype> <corresponding value>",
-        "<remove / disable> <make / country / tags / tyretype> all",
+        "<remove / disable> <make / country / tags / collection / tyretype> <corresponding value>",
+        "<remove / disable> <make / country / tags / collection / tyretype> all",
         "<remove / disable> <rq / modelyear / seatcount / drivetype / tyretype / gc / bodystyle / enginepos / fueltype / abs / tcs / isprize / isstock / isupgraded / ismaxed / isowned / search>",
         "<remove / disable> all"
     ],

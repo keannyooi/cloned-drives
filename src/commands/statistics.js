@@ -58,11 +58,15 @@ module.exports = {
 
             const playerData = await profileModel.findOne({ userID: user.id });
             console.log(playerData);
-            let totalCars = 0, maxedCars = 0;
-            playerData.garage.forEach(car => {
+            let totalCars = 0, maxedCars = 0, totalBMCars = 0;
+            for (let car in playerData.garage) {
                 maxedCars += (car.upgrades["996"] + car.upgrades["969"] + car.upgrades["699"]);
                 totalCars += calcTotal(car);
-            });
+                let currentCar = require(`../cars/${car.carID}`);
+                if (currentCar["reference"]) {
+                    totalBMCars += calcTotal(car);
+                }
+            }
 
             const MCpercentage = maxedCars / totalCars * 100;
             const infoMessage = new InfoMessage({
@@ -76,6 +80,7 @@ module.exports = {
                     { name: "Fuse Tokens", value: `${fuseEmoji}${playerData.fuseTokens.toLocaleString("en")}`, inline: true },
                     { name: "Trophies", value: `${trophyEmoji}${playerData.trophies.toLocaleString("en")}`, inline: true },
                     { name: "Total Cars in Garage", value: totalCars.toLocaleString("en"), inline: true },
+                    { name: "Total Black Market Cars in Garage", value: totalBMCars.toLocaleString("en"), inline: true },
                     { name: "Total Maxed Cars in Garage", value: maxedCars.toLocaleString("en"), inline: true },
                     { name: "Maxed Car Percentage", value: `${MCpercentage.toFixed(2)}%`, inline: true },
                     { name: "Highest Random Race Streak", value: playerData.rrStats.highestStreak.toLocaleString("en"), inline: true },

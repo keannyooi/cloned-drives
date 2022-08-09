@@ -9,10 +9,12 @@ const { connect } = require("mongoose");
 const { DateTime, Interval } = require("luxon");
 const { schedule } = require("node-cron");
 const { ErrorMessage, InfoMessage, BotError } = require("./src/util/classes/classes.js");
-const { adminRoleID, eventMakerRoleID, testerRoleID, lbWhitelist } = require("./src/util/consts/consts.js");
+const { adminRoleID, eventMakerRoleID, testerRoleID } = require("./src/util/consts/consts.js");
 const endEvent = require("./src/util/functions/endEvent.js");
 const endOffer = require("./src/util/functions/endOffer.js");
+const regenBM = require("./src/util/functions/regenBM.js");
 const regenDealership = require("./src/util/functions/regenDealership.js");
+const serverStatModel = require("./src/models/serverStatSchema.js");
 const profileModel = require("./src/models/profileSchema.js");
 const eventModel = require("./src/models/eventSchema.js");
 const offerModel = require("./src/models/offerSchema.js");
@@ -120,8 +122,12 @@ setInterval(async () => {
 }, 180000);
 
 schedule("59 23 * * *", async () => {
+    let { lastBMRefresh } = await serverStatModel.findOne({});
     try {
         await regenDealership();
+        if (Interval.fromDateTimes(DateTime.fromISO(lastBMRefresh), DateTime.now()).length("days") >= 3) {
+            await regenBM();
+        }
     }
     catch (error) {
         console.log(error.stack);

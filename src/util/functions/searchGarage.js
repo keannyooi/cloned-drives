@@ -13,7 +13,7 @@ async function searchGarage(args) {
     const searchResults = garage.filter(car => {
         let matchFound, isSufficient;
         let currentCar = require(`../../cars/${car.carID}.json`);
-        if (restrictedMode && currentCar["isPrize"] === true) {
+        if (restrictedMode && (currentCar["isPrize"] === true || currentCar["reference"])) {
             return false;
         }
 

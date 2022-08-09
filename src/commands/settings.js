@@ -122,7 +122,7 @@ module.exports = {
                                             },
                                             {
                                                 name: "Hide Black Market Cars (ID: \`hidebmcars\`)",
-                                                value: `(This is WIP, doesn't do anything currently)
+                                                value: `Having this set to \`true\` hides black market cars from list views.
                                                 **Value:** \`${settings.hidebmcars ?? false}\``,
                                                 inline: true
                                             },

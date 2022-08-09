@@ -16,6 +16,7 @@ async function regenDealership() {
         let price, stock = 1000, rqStart, rqEnd;
         let currentFile = carFiles[Math.floor(Math.random() * carFiles.length)];
         let currentCar = require(`../../cars/${currentFile}`);
+
         if (randNum < 33) {
             rqStart = i < 4 ? 1 : 40;
             rqEnd = i < 4 ? 19 : 49;
@@ -60,7 +61,7 @@ async function regenDealership() {
             }
         }
 
-        while (catalog.find(car => currentFile.includes(car.carID)) || currentCar["isPrize"] || currentCar["rq"] > rqEnd || currentCar["rq"] < rqStart) {
+        while (currentCar["reference"] || catalog.find(car => currentFile.includes(car.carID)) || currentCar["isPrize"] || currentCar["rq"] > rqEnd || currentCar["rq"] < rqStart) {
             currentFile = carFiles[Math.floor(Math.random() * carFiles.length)];
             currentCar = require(`../../cars/${currentFile}`);
         }
@@ -77,6 +78,7 @@ async function regenDealership() {
             return a.price - b.price;
         }
     });
+
     await serverStatModel.updateOne({}, { dealershipCatalog: catalog });
 
     const canvas = createCanvas(694, 249);

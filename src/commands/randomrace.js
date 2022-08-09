@@ -69,7 +69,7 @@ module.exports = {
                         const result = await race(message, playerCar, opponentCar, track, settings.disablegraphics);
                         if (result > 0) {
                             streak++;
-                            let reward = 0, rqBonus = 0, rqBonusBase = 0;
+                            let reward = 0, rqBonus = 0, rqBonusBase = 0, bmBonus = 0;
                             if (streak <= 58) {
                                 reward = streak * 500 + 1000;
                                 rqBonusBase = 100;
@@ -90,18 +90,23 @@ module.exports = {
                                 rqBonus = (opponentCar.rq - playerCar.rq + 4) * rqBonusBase;
                             }
 
+                            let subtotal = reward + rqBonus
+                            if (playerCar.isBM) {
+                                bmBonus = Math.round(subtotal / 4);
+                            }
+
                             const moneyEmoji = bot.emojis.cache.get(moneyEmojiID);
                             let hasEntry = unclaimedRewards.findIndex(entry => entry.origin === "Random Races");
                             if (hasEntry > -1) {
-                                unclaimedRewards[hasEntry].money += reward + rqBonus;
+                                unclaimedRewards[hasEntry].money += subtotal + bmBonus;
                             }
                             else {
                                 unclaimedRewards.push({
-                                    money: reward + rqBonus,
+                                    money: subtotal + bmBonus,
                                     origin: "Random Races"
                                 });
                             }
-                            message.channel.send(`**You have earned ${moneyEmoji}${reward} (+${moneyEmoji}${rqBonus} low RQ bonus)! Claim your reward using \`cd-rewards\`.**`);
+                            message.channel.send(`**You have earned ${moneyEmoji}${reward} (+${moneyEmoji}${rqBonus} low RQ bonus${bmBonus !== 0 ? ` and ${moneyEmoji}${bmBonus} black market car bonus` : ""})! Claim your reward using \`cd-rewards\`.**`);
                         }
                         else if (result < 0) {
                             streak = 0;
@@ -167,7 +172,7 @@ module.exports = {
             let opponentCarID = carFiles[Math.floor(Math.random() * carFiles.length)];
             let opponentCar = require(`../cars/${opponentCarID}`);
             let criteria = {};
-            while (smartGen(opponentCar) === true) {
+            while (opponentCar["reference"] || smartGen(opponentCar) === true) {
                 opponentCarID = carFiles[Math.floor(Math.random() * carFiles.length)];
                 opponentCar = require(`../cars/${opponentCarID}`);
             }

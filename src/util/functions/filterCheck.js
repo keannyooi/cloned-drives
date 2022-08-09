@@ -4,7 +4,7 @@ const carNameGen = require("./carNameGen.js");
 const calcTotal = require("./calcTotal.js");
 
 function filterCheck(args) {
-    let { car, filter, garage, applyOrLogic } = args;
+    let { car, filter, garage, applyOrLogic, hideBMCars } = args;
     let passed = true, carObject = garage ? {
         carID: car,
         upgrades: garage.find(c => car.includes(c.carID))?.upgrades ?? {
@@ -16,13 +16,39 @@ function filterCheck(args) {
             "699": 0,
         }
     } : car;
-    let currentCar = require(`../../cars/${carObject.carID}`);
+    let currentCar = require(`../../cars/${carObject.carID}`), bmReference = currentCar;
+    if (currentCar["reference"]) {
+        if (hideBMCars) {
+            passed = false;
+        }
+        else {
+            bmReference = require(`../../cars/${currentCar["reference"]}`);
+        }
+    }
 
     for (const [key, value] of Object.entries(filter)) {
         switch (typeof value) {
             case "object":
-                if (Array.isArray(value)) {
-                    let checkArray = currentCar[key];
+                if (key === "collection") {
+                    if (!currentCar["reference"]) {
+                        passed = false;
+                    }
+                    else {
+                        let checkArray = currentCar[key].map(tag => tag.toLowerCase());
+                        if (applyOrLogic) {
+                            if (value.some(tag => checkArray.findIndex(tag2 => tag === tag2) > -1) === false) {
+                                passed = false;
+                            }
+                        }
+                        else {
+                            if (value.every(tag => checkArray.findIndex(tag2 => tag === tag2) > -1) === false) {
+                                passed = false;
+                            }
+                        }
+                    }
+                }
+                else if (Array.isArray(value)) {
+                    let checkArray = bmReference[key];
                     if (!Array.isArray(checkArray)) {
                         checkArray = [checkArray];
                     }
@@ -40,24 +66,24 @@ function filterCheck(args) {
                     }
                 }
                 else {
-                    if (currentCar[key] < value.start || currentCar[key] > value.end) {
+                    if (bmReference[key] < value.start || bmReference[key] > value.end) {
                         passed = false;
                     }
                 }
                 break;
             case "string":
                 if (key === "search") {
-                    if (!carNameGen({ currentCar }).toLowerCase().includes(value)) {
+                    if (!carNameGen({ currentCar: bmReference }).toLowerCase().includes(value)) {
                         passed = false;
                     }
                 }
-                else if (Array.isArray(currentCar[key])) {
-                    if (currentCar[key].findIndex(element => element.toLowerCase() === value) === -1) {
+                else if (Array.isArray(bmReference[key])) {
+                    if (bmReference[key].findIndex(element => element.toLowerCase() === value) === -1) {
                         passed = false;
                     }
-                } 
+                }
                 else {
-                    if (currentCar[key].toLowerCase() !== value) {
+                    if (bmReference[key].toLowerCase() !== value) {
                         passed = false;
                     }
                 }
@@ -67,7 +93,7 @@ function filterCheck(args) {
                     case "isPrize":
                     case "abs":
                     case "tcs":
-                        if (currentCar[key] !== value) {
+                        if (bmReference[key] !== value) {
                             passed = false;
                         }
                         break;

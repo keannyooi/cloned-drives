@@ -13,11 +13,15 @@ function editFilter(message, filter, args) {
     switch (criteria) {
         case "make":
         case "tags":
+        case "collection":
         case "bodyStyle":
             let argument = args.slice(1, args.length).join(" ").toLowerCase();
             isValid = carFiles.findIndex(function (carFile) {
                 let currentCar = require(`../../cars/${carFile}`);
-                if (Array.isArray(currentCar[criteria])) {
+                if (criteria === "collection" && !currentCar["reference"]) {
+                    return false;
+                }
+                else if (Array.isArray(currentCar[criteria])) {
                     return currentCar[criteria].some(tag => tag.toLowerCase() === argument);
                 }
                 else {
@@ -322,6 +326,7 @@ function editFilter(message, filter, args) {
                         \`ismaxed\` - Filter maxed cars. Provide a boolean (\`true\` or \`false\`) after that.
                         \`isowned\` - Filter cars that you own. Provide a boolean (\`true\` or \`false\`) after that.
                         \`tags\` - Filter by tag. Provide a valid tag after that.
+                        \`collection\` - Filter by tag. Provide a valid collection after that.
                         \`search\` - Filter by a certain keyword inside a car's name. Provide a keyword that is found in a in-game car's name after that.
                         \`remove / disable\` - Remove a filter criteria. Provide a filter category and a value (if necessary) after that.`,
                 author: message.author

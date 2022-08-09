@@ -64,10 +64,13 @@ module.exports = {
                     try {
                         const moneyEmoji = bot.emojis.cache.get(moneyEmojiID);
                         const fuseEmoji = bot.emojis.cache.get(fuseEmojiID);
-                        const car = require(`../cars/${currentCar.carID}`);
-                        const carName = carNameGen({ currentCar: car });
-                        let [moneyLimit, fuseTokenLimit] = definePrice(car["rq"], upgrade, origUpgrade);
+                        let car = require(`../cars/${currentCar.carID}`), bmReference = car;
+                        if (car["reference"]) {
+                            bmReference = require(`../cars/${car["reference"]}`);
+                        }
 
+                        const carName = carNameGen({ currentCar: car });
+                        let [moneyLimit, fuseTokenLimit] = definePrice(bmReference["rq"], upgrade, origUpgrade);
                         if (playerData.money >= moneyLimit && playerData.fuseTokens >= fuseTokenLimit) {
                             const confirmationMessage = new InfoMessage({
                                 channel: message.channel,

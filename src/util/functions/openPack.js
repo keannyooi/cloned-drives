@@ -104,7 +104,7 @@ async function openPack(args) {
     return addedCars;
 
     function filterCard(currentCard, filter) {
-        if (currentCard["isPrize"] === true) return false;
+        if (currentCard["reference"] || currentCard["isPrize"] === true) return false;
         let passed = true;
         for (let criteria in filter) {
             if (filter[criteria] !== "None") {

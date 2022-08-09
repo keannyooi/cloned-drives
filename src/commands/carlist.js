@@ -42,7 +42,13 @@ module.exports = {
 
         const { filter, garage, settings } = await profileModel.findOne({ userID: message.author.id });
         if (!settings.disablecarlistfilter) {
-            list = list.filter(car => filterCheck({ car: car.slice(0, 6), filter, garage, applyOrLogic: settings.filterlogic === "or" ? true : false }));
+            list = list.filter(car => filterCheck({
+                car: car.slice(0, 6),
+                filter,
+                garage,
+                applyOrLogic: settings.filterlogic === "or" ? true : false,
+                hideBMCars: settings.hidebmcars || false
+            }));
         }
         const ownedCars = list.filter(function (carID) {
             return garage.some(part => carID.includes(part.carID));

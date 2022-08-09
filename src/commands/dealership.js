@@ -4,6 +4,7 @@ const bot = require("../config/config.js");
 const { InfoMessage } = require("../util/classes/classes.js");
 const { moneyEmojiID } = require("../util/consts/consts.js");
 const carNameGen = require("../util/functions/carNameGen.js");
+const profileModel = require("../models/profileSchema.js");
 const serverStatModel = require("../models/serverStatSchema.js");
 
 module.exports = {
@@ -14,6 +15,7 @@ module.exports = {
     category: "Gameplay",
     description: "Check what's on sale in the car dealership here!",
     async execute(message) {
+        const { money } = await profileModel.findOne({ userID: message.author.id });
         const { dealershipCatalog } = await serverStatModel.findOne({});
         const moneyEmoji = bot.emojis.cache.get(moneyEmojiID);
         const fields = [];
@@ -29,7 +31,8 @@ module.exports = {
         const dealerMessage = new InfoMessage({
             channel: message.channel,
             title: "Welcome to Cards&Bids, the go-to place for auto enthusiast cards!",
-            desc: "The catalog refreshes every day at 11:59p.m. UTC. Buy a car from here using `cd-buycar`!",
+            desc: `The catalog refreshes every day at 11:59p.m. UTC. Buy a car from here using \`cd-buycar\`!
+            **Current Money Balance:** ${moneyEmoji}${money.toLocaleString("en")}`,
             author: message.author,
             fields
         });

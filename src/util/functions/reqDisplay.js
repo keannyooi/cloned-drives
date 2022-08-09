@@ -2,7 +2,7 @@
 
 const { readdirSync } = require("fs");
 const carFiles = readdirSync("./src/cars").filter(file => file.endsWith(".json"));
-const order = ["rq", "modelYear", "country", "enginePos", "driveType", "gc", "tyreType", "seatCount", "fuelType", "bodyStyle", "abs", "tcs", "tags", "isOwned", "isStock", "isMaxed", "isPrize", "make", "search"];
+const order = ["rq", "modelYear", "country", "enginePos", "driveType", "gc", "tyreType", "seatCount", "fuelType", "bodyStyle", "abs", "tcs", "tags", "collection", "isOwned", "isStock", "isMaxed", "isPrize", "make", "search"];
 
 function reqDisplay(reqs, filterLogic) {
     const action = {
@@ -32,6 +32,7 @@ function reqDisplay(reqs, filterLogic) {
         abs: abs => abs ? "ABS-inclusive " : "ABS-less ",
         tcs: tcs => tcs ? "TCS-inclusive " : "TCS-less ",
         tags: tags => `${tags.join(filterLogic ? " or " : " and ").split(" ").map(i => i[0].toUpperCase() + i.slice(1, i.length)).join(" ")} `,
+        collection: collection => `${collection.join(filterLogic ? " or " : " and ").split(" ").map(i => i[0].toUpperCase() + i.slice(1, i.length)).join(" ")} `,
         isPrize: isPrize => `${isPrize === false ? "Non-Prize" : "Prize"} `,
         isStock: isStock => `${isStock === false ? "Non-Stock" : "Stock"} `,
         isMaxed: isMaxed => `${isMaxed === false ? "Non-Maxed" : "Maxed"} `,

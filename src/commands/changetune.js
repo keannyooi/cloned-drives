@@ -7,6 +7,7 @@ const selectUpgrade = require("../util/functions/selectUpgrade.js");
 const updateHands = require("../util/functions/updateHands.js");
 const searchGarage = require("../util/functions/searchGarage.js");
 const searchUser = require("../util/functions/searchUser.js");
+const generateHud = require("../util/functions/generateHud.js");
 const botUserError = require("../util/commonerrors/botUserError.js");
 const profileModel = require("../models/profileSchema.js");
 
@@ -87,12 +88,15 @@ module.exports = {
                     currentCar.upgrades[origUpgrade]--;
                     updateHands(playerData, currentCar.carID, origUpgrade, upgrade);
                     
-                    const car = require(`../cars/${currentCar.carID}`);
-                    await profileModel.updateOne({ userID: user.id }, {
-                        garage: playerData.garage,
-                        hand: playerData.hand,
-                        decks: playerData.decks
-                    });
+                    let car = require(`../cars/${currentCar.carID}`);
+                    const [, attachment] = await Promise.all([
+                        profileModel.updateOne({ userID: user.id }, {
+                            garage: playerData.garage,
+                            hand: playerData.hand,
+                            decks: playerData.decks
+                        }),
+                        generateHud(car, upgrade)
+                    ]);
 
                     const successMessage = new SuccessMessage({
                         channel: message.channel,
@@ -103,10 +107,9 @@ module.exports = {
                             { name: "Gearing Upgrade", value: `\`${origUpgrade[0]} => ${upgrade[0]}\``, inline: true },
                             { name: "Engine Upgrade", value: `\`${origUpgrade[1]} => ${upgrade[1]}\``, inline: true },
                             { name: "Chassis Upgrade", value: `\`${origUpgrade[2]} => ${upgrade[2]}\``, inline: true }
-                        ],
-                        image: car[`racehud${upgrade}`]
+                        ]
                     });
-                    return successMessage.sendMessage({ currentMessage });
+                    return successMessage.sendMessage({ attachment, currentMessage });
                 });
         }
     }

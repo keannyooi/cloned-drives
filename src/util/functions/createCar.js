@@ -4,27 +4,31 @@ const carNameGen = require("./carNameGen.js");
 const unbritish = require("./unbritish.js");
 
 function createCar(currentCar, unitPreference, hideStats) {
-    const car = require(`../../cars/${currentCar.carID}.json`);
+    let car = require(`../../cars/${currentCar.carID}.json`), bmReference = car;
+    if (car["reference"]) {
+        bmReference = require(`../../cars/${car["reference"]}.json`)
+    }
     const carModule = {
-        rq: car["rq"],
-        topSpeed: car["topSpeed"],
-        accel: car["0to60"],
-        handling: car["handling"],
-        driveType: car["driveType"],
-        tyreType: car["tyreType"],
-        weight: car["weight"],
-        enginePos: car["enginePos"],
-        gc: car["gc"],
-        tcs: car["tcs"],
-        abs: car["abs"],
-        mra: car["mra"],
-        ola: car["ola"],
-        racehud: car["racehud"]
+        rq: bmReference["rq"],
+        topSpeed: bmReference["topSpeed"],
+        accel: bmReference["0to60"],
+        handling: bmReference["handling"],
+        driveType: bmReference["driveType"],
+        tyreType: bmReference["tyreType"],
+        weight: bmReference["weight"],
+        enginePos: bmReference["enginePos"],
+        gc: bmReference["gc"],
+        tcs: bmReference["tcs"],
+        abs: bmReference["abs"],
+        mra: bmReference["mra"],
+        ola: bmReference["ola"],
+        racehud: car["racehud"],
+        isBM: (car["reference"] !== undefined)
     };
     if (currentCar.upgrade !== "000") {
-        carModule.topSpeed = car[`${currentCar.upgrade}TopSpeed`];
-        carModule.accel = car[`${currentCar.upgrade}0to60`];
-        carModule.handling = car[`${currentCar.upgrade}Handling`];
+        carModule.topSpeed = bmReference[`${currentCar.upgrade}TopSpeed`];
+        carModule.accel = bmReference[`${currentCar.upgrade}0to60`];
+        carModule.handling = bmReference[`${currentCar.upgrade}Handling`];
     }
 
     let carSpecs = carNameGen({ currentCar: car, rarity: true, upgrade: currentCar.upgrade });
@@ -52,10 +56,10 @@ function createCar(currentCar, unitPreference, hideStats) {
         ${carModule.enginePos} Engine, ${carModule.driveType}
         ${carModule.tyreType} Tyres\n`;
         if (unitPreference === "imperial") {
-            carSpecs += `Weight: ${carModule.weight}kg (${unbritish(carModule.weight, "weight")}lbs)\n`;
+            carSpecs += `Weight: ${carModule.weight.toLocaleString("en")}kg (${unbritish(carModule.weight, "weight").toLocaleString("en")}lbs)\n`;
         }
         else {
-            carSpecs += `Weight: ${carModule.weight}kg\n`;
+            carSpecs += `Weight: ${carModule.weight.toLocaleString("en")}kg\n`;
         }
 
         carSpecs += `Ground Clearance: ${carModule.gc}
