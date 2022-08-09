@@ -59,7 +59,7 @@ module.exports = {
             const playerData = await profileModel.findOne({ userID: user.id });
             console.log(playerData);
             let totalCars = 0, maxedCars = 0, totalBMCars = 0;
-            for (let car in playerData.garage) {
+            for (let car of playerData.garage) {
                 maxedCars += (car.upgrades["996"] + car.upgrades["969"] + car.upgrades["699"]);
                 totalCars += calcTotal(car);
                 let currentCar = require(`../cars/${car.carID}`);

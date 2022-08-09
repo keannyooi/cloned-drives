@@ -1,6 +1,6 @@
 {
     "rq": 76,
-    "make": "Ford Racing",
+    "make": ["Ford Racing", "Ford"],
     "model": "Focus RS8",
     "modelYear": 2003,
     "country": "US",
@@ -25,7 +25,7 @@
     "fuelType": "Petrol",
     "mra": 74.58,
     "ola": 81.82,
-    "description": "A wise man once said that there is no replacement for displacement. So of course Ford crammed in a big V8 into a Focus. Card by Keanny",
+    "description": "A wise man once said that there is no replacement for displacement. So of course Ford crammed in a big V8 into a Focus.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819390547092701184/fast_focus.png",
     "333TopSpeed": 183,
     "3330to60": 4.2,
@@ -42,6 +42,6 @@
     "699TopSpeed": 186,
     "6990to60": 3.7,
     "699Handling": 99,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003308782916468836/focus_rs8.jpg",
+    "creator": "Keanny"
 }
