@@ -9,10 +9,7 @@
     "handling": 73,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": [
-        "Street Racer",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Street Racer","The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1065,
     "gc": "Medium",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 45.29,
     "ola": 68.67,
-    "description": "Card by DodgeDemon",
+    "description": "None.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/970457610182615060/Mazda_RX-7_1978.png",
     "333TopSpeed": 124,
     "3330to60": 8.8,
@@ -41,6 +38,6 @@
     "699TopSpeed": 129,
     "6990to60": 7.9,
     "699Handling": 81,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996622016956354681/Mazda_RX-7_1978_Hud.png",
+    "creator": "DodgeDemon"
 }

@@ -9,10 +9,7 @@
     "handling": 73,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": [
-        "Street Racer",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Street Racer","The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1005,
     "gc": "Medium",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 47.22,
     "ola": 65.88,
-    "description": "Mazda's RX-3 replacement. Card by DodgeDemon",
+    "description": "Mazda's RX-3 replacement.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/970458143127654430/Mazda_Savanna_RX-7_1978.png",
     "333TopSpeed": 128,
     "3330to60": 8.1,
@@ -41,6 +38,6 @@
     "699TopSpeed": 132,
     "6990to60": 7.2,
     "699Handling": 81,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996621930952151100/Mazda_Savanna_RX-7_1978_Hud.png",
+    "creator": "DodgeDemon"
 }

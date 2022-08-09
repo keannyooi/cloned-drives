@@ -9,10 +9,7 @@
     "handling": 80,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Street Racer",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Street Racer","The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1250,
     "gc": "Medium",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 57.58,
     "ola": 73.68,
-    "description": "Card by DodgeDemon",
+    "description": "None.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/971796865785929778/Mazda_Savanna_RX-7_1989.png",
     "333TopSpeed": 117,
     "3330to60": 5.4,
@@ -41,6 +38,6 @@
     "699TopSpeed": 121,
     "6990to60": 4.8,
     "699Handling": 89,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996620798569746482/Mazda_Savanna_RX-7_1989_Hud.png",
+    "creator": "DodgeDemon"
 }

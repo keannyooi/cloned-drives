@@ -9,10 +9,7 @@
     "handling": 79,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Street Racer",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Street Racer","The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1355,
     "gc": "Medium",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 54.37,
     "ola": 69.02,
-    "description": "A little refresh for the Turbo II, putting it more on par with the Savanna. Card by DodgeDemon",
+    "description": "A little refresh for the Turbo II, putting it more on par with the Savanna.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/971796631689232394/Mazda_RX-7_TII_1989.png",
     "333TopSpeed": 152,
     "3330to60": 6.1,
@@ -41,6 +38,6 @@
     "699TopSpeed": 156,
     "6990to60": 5.4,
     "699Handling": 88,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996621424032755753/Mazda_RX-7_TII_1989_Hud.png",
+    "creator": "DodgeDemon"
 }

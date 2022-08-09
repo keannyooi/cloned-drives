@@ -9,10 +9,7 @@
     "handling": 77,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Street Racer",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Street Racer","The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1225,
     "gc": "Medium",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 51.51,
     "ola": 68.48,
-    "description": "The watered-down RX-7 for the international market. Card by DodgeDemon",
+    "description": "The watered-down RX-7 for the international market.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/971796269922127872/Mazda_RX-7_1986.png",
     "333TopSpeed": 134,
     "3330to60": 7.9,
@@ -41,6 +38,6 @@
     "699TopSpeed": 138,
     "6990to60": 7.1,
     "699Handling": 85,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996621767797915708/Mazda_RX-7_1986_Hud.png",
+    "creator": "DodgeDemon"
 }

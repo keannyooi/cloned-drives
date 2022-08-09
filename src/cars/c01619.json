@@ -9,10 +9,7 @@
     "handling": 77,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Street Racer",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Street Racer","The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1381,
     "gc": "Medium",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 63.72,
     "ola": 67.15,
-    "description": "Card by DodgeDemon",
+    "description": "None.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/971796695715291136/Mazda_RX-7_TII_Conv_1989.png",
     "333TopSpeed": 147,
     "3330to60": 6.6,
@@ -41,6 +38,6 @@
     "699TopSpeed": 150,
     "6990to60": 5.9,
     "699Handling": 85,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996620945349410836/Mazda_RX-7_TII_Conv_1989_Hud.png",
+    "creator": "DodgeDemon"
 }

@@ -1,0 +1,49 @@
+{
+    "rq": 98,
+    "make": "Vision",
+    "model": "1789 Prototype",
+    "modelYear": 2022,
+    "country": "FR",
+    "topSpeed": 236,
+    "0to60": 2.6,
+    "handling": 98,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Hypercar", "Concept", "Unique", "Ultra Expensive"],
+    "isPrize": true,
+	
+    "weight": 1250,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Biomethane",
+    "mra": 104,
+    "ola": 100.00,
+    "description": "Something French to take on Apollo or De Tomaso.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/990002632707960933/Vision_1789_Proto_2022.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996622056567345222/Vision_1789_Proto_2022_Hud.png",
+    "creator": "DodgeDemon",
+
+"333TopSpeed": 238, 
+"3330to60": 2.5, 
+"333Handling": 101,
+
+"666TopSpeed": 240, 
+"6660to60": 2.3, 
+"666Handling": 104,
+
+"699TopSpeed": 240, 
+"6990to60": 2.2, 
+"699Handling": 109,
+
+"969TopSpeed": 243, 
+"9690to60": 2.3, 
+"969Handling": 109,
+
+"996TopSpeed": 243, 
+"9960to60": 2.2, 
+"996Handling": 104
+}

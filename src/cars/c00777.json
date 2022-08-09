@@ -9,9 +9,7 @@
     "handling": 76,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Street Racer"
-    ],
+    "tags": ["Street Racer"],
     "isPrize": false,
     "weight": 1175,
     "gc": "Medium",
@@ -23,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 47.79,
     "ola": 62.55,
-    "description": "The cutest RX-7. Card by Demon.",
+    "description": "The cutest RX-7.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/970457981026189312/Mazda_RX-7_GSL-SE_1984.png",
     "333TopSpeed": 130,
     "3330to60": 7.7,
@@ -40,6 +38,6 @@
     "699TopSpeed": 134,
     "6990to60": 6.9,
     "699Handling": 84,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996621818691584010/Mazda_RX-7_GSL-SE_1984_Hud.png",
+    "creator": "DodgeDemon"
 }

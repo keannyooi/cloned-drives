@@ -9,10 +9,7 @@
     "handling": 77,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Street Racer",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Street Racer","The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1020,
     "gc": "Medium",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 54.24,
     "ola": 75,
-    "description": "The RX-7's first go with the mighty turbo wankel, for Japan only. Card by DodgeDemon",
+    "description": "The RX-7's first go with the mighty turbo wankel, for Japan only.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/970458292801392692/Mazda_Savanna_RX-7_Turbo_1983.png",
     "333TopSpeed": 139,
     "3330to60": 6.1,
@@ -41,6 +38,6 @@
     "699TopSpeed": 143,
     "6990to60": 5.4,
     "699Handling": 84,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996621849326784562/Mazda_Savanna_RX-7_Turbo_1983_Hud.png",
+    "creator": "DodgeDemon"
 }

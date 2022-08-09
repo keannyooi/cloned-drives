@@ -1,0 +1,50 @@
+{
+    "rq": 86,
+    "make": "Venturi",
+    "model": "America",
+    "modelYear": 2015,
+    "country": "MC",
+    "topSpeed": 137,
+    "0to60": 4.3,
+    "handling": 85,
+    "driveType": "RWD",
+    "tyreType": "All-Surface",
+    "tags": ["Unique", "Oddity"],
+    "isPrize": false,
+
+    "weight": 1425,
+    "gc": "High",
+    "seatCount": 2,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Electric",
+    "mra": 67.31,
+    "ola": 82.85,
+    "description": "A Monegasque electric buggy-styled roadster sports car designed for all-terrain driving, named after a Childish Gambino song. A confusing piece of identity.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/978281775698681886/VenturiAmerica.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1006050662708154409/VenturiAmerica.png",
+    "creator": "Spence",
+
+    "333TopSpeed": 141,
+    "3330to60": 4.1,
+    "333Handling": 88,
+
+    "666TopSpeed": 145,
+    "6660to60": 3.9,
+    "666Handling": 91,
+
+    "699TopSpeed": 145,
+    "6990to60": 3.7,
+    "699Handling": 94,
+
+    "969TopSpeed": 148,
+    "9690to60": 3.9,
+    "969Handling": 94,
+
+    "996TopSpeed": 148,
+    "9960to60": 3.7,
+    "996Handling": 91
+}
