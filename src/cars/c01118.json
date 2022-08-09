@@ -2,10 +2,10 @@
     "rq": 75,
     "make": "Porsche",
     "model": "Macan S",
-    "modelYear": 2015,
+    "modelYear": 2014,
     "country": "DE",
     "topSpeed": 157,
-    "0to60": 5,
+    "0to60": 5.0,
     "handling": 73,
     "driveType": "4WD",
     "tyreType": "All-Surface",
@@ -21,8 +21,8 @@
     "fuelType": "Petrol",
     "mra": 64.1,
     "ola": 84,
-    "description": "An impressive SUV, appealing to those who need something practical but who don’t want to give up the Porsche badge and the driving enjoyment that goes with it. Card by Spence.",
-    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824372843487821874/PorscheMacanS.png",
+    "description": "An impressive SUV, appealing to those who need something practical but who don’t want to give up the Porsche badge and the driving enjoyment that goes with it.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/997221195034411149/PorscheMacanS.png",
     "333TopSpeed": 160,
     "3330to60": 4.8,
     "333Handling": 75,
@@ -38,6 +38,6 @@
     "699TopSpeed": 164,
     "6990to60": 4.3,
     "699Handling": 81,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997221268766068847/PorscheMacanS.png",
+    "creator": "Spence"
 }

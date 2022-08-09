@@ -9,10 +9,7 @@
     "handling": 86,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Super Sedan",
-        "Muscle Car"
-    ],
+    "tags": ["Super Sedan","Muscle Car"],
     "isPrize": false,
     "weight": 1785,
     "gc": "Medium",
@@ -24,8 +21,8 @@
     "fuelType": "Petrol",
     "mra": 74.19,
     "ola": 78.26,
-    "description": "The most underrated sports sedan in America. Card by Spence.",
-    "card": "https://cdn.discordapp.com/attachments/819199720249360384/825744226259042364/image0.jpg",
+    "description": "The most underrated sports sedan in America.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/996872287548604486/ChevroletSSManual.png",
     "333TopSpeed": 163,
     "3330to60": 4.4,
     "333Handling": 89,
@@ -41,6 +38,6 @@
     "699TopSpeed": 167,
     "6990to60": 3.9,
     "699Handling": 95,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996872530667262052/ChevroletSSManual.png",
+    "creator": "Spence"
 }

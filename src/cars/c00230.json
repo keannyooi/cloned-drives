@@ -1,10 +1,6 @@
 {
     "rq": 10,
-    "make": [
-        "Buick",
-        "Opel",
-        "Isuzu"
-    ],
+    "make": ["Buick","Opel","Isuzu"],
     "model": "Opel by Isuzu",
     "modelYear": 1976,
     "country": "US",
@@ -13,9 +9,7 @@
     "handling": 63,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": [
-        "Oddity"
-    ],
+    "tags": ["Oddity"],
     "isPrize": false,
     "weight": 975,
     "gc": "Low",
@@ -27,8 +21,8 @@
     "fuelType": "Petrol",
     "mra": 12,
     "ola": 62.12,
-    "description": "Identity crisis intensifies. Card by Spence.",
-    "card": "https://cdn.discordapp.com/attachments/819199720249360384/865620264683307048/BuickOpel.png",
+    "description": "Identity crisis intensifies.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/996809959595593778/BuickOpelbyIsuzu.png",
     "333TopSpeed": 103,
     "3330to60": 12.5,
     "333Handling": 65,
@@ -44,6 +38,6 @@
     "699TopSpeed": 109,
     "6990to60": 11.2,
     "699Handling": 70,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996810566502993920/BuickOpelbyIsuzu.png",
+    "creator": "Spence"
 }
