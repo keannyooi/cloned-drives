@@ -1,6 +1,6 @@
 {
     "rq": 90,
-    "make": "Nissan",
+    "make": ["Nissan", "Nismo"],
     "model": "GT-R Nismo",
     "modelYear": 2015,
     "country": "JP",
@@ -25,7 +25,7 @@
     "fuelType": "Petrol",
     "mra": 75.86,
     "ola": 72.5,
-    "description": "Card by Keanny.",
+    "description": "",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819392083370049577/nissan_gt-r_nismo.png",
     "333TopSpeed": 194,
     "3330to60": 2.8,
@@ -42,6 +42,6 @@
     "699TopSpeed": 196,
     "6990to60": 2.5,
     "699Handling": 101,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003644864392593488/gt-r_nismo.jpg",
+    "creator": "Keanny"
 }

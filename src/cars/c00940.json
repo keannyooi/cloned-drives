@@ -1,6 +1,6 @@
 {
     "rq": 96,
-    "make": "Nissan",
+    "make": ["Nissan", "Nismo"],
     "model": "GT-R LM Nismo",
     "modelYear": 2015,
     "country": "JP",
@@ -26,7 +26,7 @@
     "fuelType": "Petrol",
     "mra": 117.39,
     "ola": 103.51,
-    "description": "the best FWD car ever. Card by Bnuuy.",
+    "description": "Whoever thought this was a good idea probably didn't really know what they were doing, but at least they've helped fill in a niche in this game.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/844556579574382622/LemonNismothingy.png",
     "333TopSpeed": 229,
     "3330to60": 2.6,
@@ -43,6 +43,6 @@
     "699TopSpeed": 232,
     "6990to60": 2.3,
     "699Handling": 109,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997532642201305098/gtrlmnismothing.png",
+    "creator": "Keanny"
 }

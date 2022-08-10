@@ -57,7 +57,7 @@ async function openPack(args) {
 
         let carFile = carFiles[Math.floor(Math.random() * carFiles.length)], timeoutCounter = 0;
         currentCard = require(`../../cars/${carFile}`);
-        while ((currentCard["rq"] < rqStart || currentCard["rq"] > rqEnd || filterCard(currentCard, cardFilter) === false) && timeoutCounter < 10000) {
+        while ((currentCard["rq"] < rqStart || currentCard["rq"] > rqEnd || filterCard(currentCard, cardFilter) === false) && timeoutCounter < 50000) {
             carFile = carFiles[Math.floor(Math.random() * carFiles.length)];
             currentCard = require(`../../cars/${carFile}`);
             timeoutCounter++;

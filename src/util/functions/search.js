@@ -27,7 +27,8 @@ const listGen = {
         return details["trackName"];
     },
     "id": item => typeof item === "string" ? item.replace(".json", "") : item.id,
-    "event": item => item.name
+    "event": item => item.name,
+    "offer": item => item.name
 };
 
 async function search(message, query, searchList, type, currentMessage) {

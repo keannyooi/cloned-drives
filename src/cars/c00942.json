@@ -1,6 +1,6 @@
 {
     "rq": 43,
-    "make": "Nissan",
+    "make": ["Nissan", "Nismo"],
     "model": "IDx Nismo",
     "modelYear": 2013,
     "country": "JP",
@@ -24,7 +24,7 @@
     "fuelType": "Petrol",
     "mra": 60,
     "ola": 70.45,
-    "description": "The car that once made us hopeful about Nissan. Sadly it never went into production and everyone thought Nissan was done for... until the new Z appeared. Card by Keanny",
+    "description": "The car that once made us hopeful about Nissan. Sadly it never went into production and everyone thought Nissan was done for... until the new Z appeared.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819391214368981042/idx.png",
     "333TopSpeed": 150,
     "3330to60": 5.7,
@@ -41,6 +41,6 @@
     "699TopSpeed": 153,
     "6990to60": 5.1,
     "699Handling": 87,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003643771117908019/idx.jpg",
+    "creator": "Keanny"
 }

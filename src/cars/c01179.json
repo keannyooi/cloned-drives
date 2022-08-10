@@ -1,9 +1,6 @@
 {
     "rq": 57,
-    "make": [
-        "SMS Supercars",
-        "Saleen"
-    ],
+    "make": ["SMS Supercars", "Saleen", "Dodge"],
     "model": "570 Challenger",
     "modelYear": 2010,
     "country": "US",
@@ -27,7 +24,7 @@
     "fuelType": "Petrol",
     "mra": 72.33,
     "ola": 75,
-    "description": "Is this a Saleen? Card by Keanny.",
+    "description": "Is this a Saleen?",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820913873614929941/sms_supercars_570_challenger.png",
     "333TopSpeed": 158,
     "3330to60": 4.4,
@@ -44,6 +41,6 @@
     "699TopSpeed": 162,
     "6990to60": 3.9,
     "699Handling": 85,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003293997374128259/sms_challenger.jpg",
+    "creator": "Keanny"
 }

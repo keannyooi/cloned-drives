@@ -1,6 +1,6 @@
 {
     "rq": 76,
-    "make": "Nissan",
+    "make": ["Nissan", "Nismo"],
     "model": "Skyline GT-R Nismo 400R (R33)",
     "modelYear": 1997,
     "country": "JP",
@@ -26,7 +26,7 @@
     "fuelType": "Petrol",
     "mra": 65.57,
     "ola": 90,
-    "description": "Even as a street-legal production car, it is far above merely being a novelty with a catchy paint job, bold racing stripes and a fancy aero package. Card by Bnuuy.",
+    "description": "Even as a street-legal production car, it is far above merely being a novelty with a catchy paint job, bold racing stripes and a fancy aero package.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/838137089714552902/4000R.png",
     "333TopSpeed": 189,
     "3330to60": 3.8,
