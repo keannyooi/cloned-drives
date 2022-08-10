@@ -1,0 +1,49 @@
+{
+    "rq": 86,
+    "make": "Maserati",
+    "model": "MC20",
+    "modelYear": 2022,
+    "country": "IT",
+    "topSpeed": 203,
+    "0to60": 3.1,
+    "handling": 92,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Supercar"],
+    "isPrize": false,
+    
+    "weight": 1677,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 95.17,
+    "ola": 83.97,
+    "description": "The modern Maserati flagship supercar that provides every Italian supercar ingridients available",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1006632789065596968/MaseratiMC20.png",
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1006632884695736471/MaseratiMC20png.png",
+    "creator": "Spence",
+
+    "333TopSpeed": 206,
+    "3330to60": 2.9,
+    "333Handling": 95,
+
+    "666TopSpeed": 208,
+    "6660to60": 2.8,
+    "666Handling": 98,
+
+    "996TopSpeed": 211,
+    "9960to60": 2.6,
+    "996Handling": 98,
+
+    "969TopSpeed": 211,
+    "9690to60": 2.8,
+    "969Handling": 102,
+
+    "699TopSpeed": 208,
+    "6990to60": 2.6,
+    "699Handling": 102
+}
