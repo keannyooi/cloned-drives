@@ -1,0 +1,51 @@
+{
+    "rq": 49,
+    "make": "Lamborghini",
+    "model": "Countach LP500 S",
+    "modelYear": 1982,
+    "country": "IT",
+    "topSpeed": 186,
+    "0to60": 5.5,
+    "handling": 78,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Style Icon", "Supercar"],
+    "isPrize": false,
+
+    "weight": 1490,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 79.56,
+    "ola": 95.41,
+    "description": "The third evolution of the production Countach, this time wrapped in all of the best bits of the earlier models. Card by DodgeDemon",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/981777453104119808/Lamborghini_Countach_LP500_S_1982.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996624039063859200/Lamborghini_Countach_LP500_S_1982_Hud.png",
+    "creator": "DodgeDemon",
+
+
+    "333TopSpeed": 189,
+    "3330to60": 5.2,
+    "333Handling": 81,
+
+    "666TopSpeed": 192,
+    "6660to60": 5.0,
+    "666Handling": 83,
+
+    "996TopSpeed": 194,
+    "9960to60": 4.7,
+    "996Handling": 83,
+
+    "969TopSpeed": 194,
+    "9690to60": 5.0,
+    "969Handling": 87,
+
+    "699TopSpeed": 192,
+    "6990to60": 4.7,
+    "699Handling": 87
+}

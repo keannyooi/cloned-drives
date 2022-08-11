@@ -1,0 +1,49 @@
+{
+    "rq": 30,
+    "make": ["Datsun-Nissan", "Nissan", "Datsun"],
+    "model": "2400 GT",
+    "modelYear": 1971,
+    "country": "JP",
+    "topSpeed": 118,
+    "0to60": 9.3,
+    "handling": 67,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+	
+    "weight": 1090,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 46.73,
+    "ola": 60.21,
+    "description": "One of the more unique Gen 3 Skylines.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/978709623479599174/datsunnissan2400gt.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997648849877344326/datsun2400gt.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 122, 
+"3330to60": 8.8, 
+"333Handling": 69,
+
+"666TopSpeed": 127, 
+"6660to60": 8.4, 
+"666Handling": 71,
+
+"699TopSpeed": 127, 
+"6990to60": 7.9, 
+"699Handling": 74,
+
+"969TopSpeed": 131, 
+"9690to60": 8.4, 
+"969Handling": 74,
+
+"996TopSpeed": 131, 
+"9960to60": 7.9, 
+"996Handling": 71
+}

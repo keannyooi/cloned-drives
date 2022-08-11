@@ -1,0 +1,49 @@
+{
+    "rq": 73,
+    "make": "Ferrari",
+    "model": "550 Maranello",
+    "modelYear": 1996,
+    "country": "IT",
+    "topSpeed": 198,
+    "0to60": 4.4,
+    "handling": 84,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+	
+    "weight": 1690,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 83.01,
+    "ola": 84.09,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1007255931723190393/550Maranello.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1007256840792457296/rari550m.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 201, 
+"3330to60": 4.2, 
+"333Handling": 87,
+
+"666TopSpeed": 203, 
+"6660to60": 4.0, 
+"666Handling": 90,
+
+"699TopSpeed": 203, 
+"6990to60": 3.7, 
+"699Handling": 93,
+
+"969TopSpeed": 206, 
+"9690to60": 4.0, 
+"969Handling": 93,
+
+"996TopSpeed": 206, 
+"9960to60": 3.7, 
+"996Handling": 90
+}

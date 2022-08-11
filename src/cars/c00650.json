@@ -1,21 +1,18 @@
 {
-    "rq": 57,
+    "rq": 61,
     "make": "Lamborghini",
     "model": "Countach 25th Anniversario",
     "modelYear": 1988,
     "country": "IT",
     "topSpeed": 183,
-    "0to60": 4.7,
-    "handling": 76,
+    "0to60": 4.5,
+    "handling": 80,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Style Icon",
-        "Supercar",
-        "Silver Screen"
-    ],
+    "tags": ["Style Icon", "Supercar", "Silver Screen"],
     "isPrize": false,
-    "weight": 1488,
+
+    "weight": 1490,
     "gc": "Low",
     "seatCount": 2,
     "bodyStyle": "Coupe",
@@ -23,25 +20,31 @@
     "abs": false,
     "enginePos": "Middle",
     "fuelType": "Petrol",
-    "mra": 79.66,
-    "ola": 97.87,
-    "description": "The Countach to commemorate 25 years of the raging bull. Card by DodgeDemon",
-    "card": "https://cdn.discordapp.com/attachments/819199720249360384/835934519483826242/Countach.png",
+    "mra": 77.39,
+    "ola": 85.39,
+    "description": "The Countach to commemorate 25 years of the raging bull.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/981776310865121280/Lamborghini_Countach_25A_1988.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996624097800888330/Lamborghini_Countach_25A_1988_Hud.png",
+    "creator": "DodgeDemon",
+
     "333TopSpeed": 186,
-    "3330to60": 4.5,
-    "333Handling": 79,
+    "3330to60": 4.3,
+    "333Handling": 83,
+
     "666TopSpeed": 189,
-    "6660to60": 4.2,
-    "666Handling": 81,
+    "6660to60": 4.1,
+    "666Handling": 85,
+
     "996TopSpeed": 192,
-    "9960to60": 4,
-    "996Handling": 81,
+    "9960to60": 3.8,
+    "996Handling": 85,
+
     "969TopSpeed": 192,
-    "9690to60": 4.2,
-    "969Handling": 84,
+    "9690to60": 4.1,
+    "969Handling": 89,
+
     "699TopSpeed": 189,
-    "6990to60": 4,
-    "699Handling": 84,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "6990to60": 3.8,
+    "699Handling": 89
 }

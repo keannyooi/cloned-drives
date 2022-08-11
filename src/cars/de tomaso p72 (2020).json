@@ -1,0 +1,49 @@
+{
+    "rq": 93,
+    "make": "De Tomaso",
+    "model": "P72",
+    "modelYear": 2020,
+    "country": "IT",
+    "topSpeed": 213,
+    "0to60": 3.0,
+    "handling": 97,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Unique"],
+    "isPrize": true,
+	
+    "weight": 1100,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 111.11,
+    "ola": 93.33,
+    "description": "A German chassis, Italian brand, American engine and owned by Chinese company",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/978709445297205288/P72.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997649128525934684/P72.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 215, 
+"3330to60": 2.8, 
+"333Handling": 100,
+
+"666TopSpeed": 218, 
+"6660to60": 2.7, 
+"666Handling": 103,
+
+"699TopSpeed": 218, 
+"6990to60": 2.6, 
+"699Handling": 108,
+
+"969TopSpeed": 220, 
+"9690to60": 2.7, 
+"969Handling": 108,
+
+"996TopSpeed": 220, 
+"9960to60": 2.6, 
+"996Handling": 103 
+}

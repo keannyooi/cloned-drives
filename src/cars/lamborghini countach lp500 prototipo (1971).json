@@ -1,0 +1,50 @@
+{
+    "rq": 57,
+    "make": "Lamborghini",
+    "model": "Countach LP500 Prototipo",
+    "modelYear": 1971,
+    "country": "IT",
+    "topSpeed": 186,
+    "0to60": 4.7,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Style Icon", "Supercar"],
+    "isPrize": true,
+
+    "weight": 1130,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 85.42,
+    "ola": 93.62,
+    "description": "The birth of a legendary supercar. This one was recreated in 2021 alogside the launch of the new Countach LPI to celebrate the supercar's sweet 50th.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/981777275341131806/Lamborghini_Countach_LP500_Proto_1971.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996623754337730621/Lamborghini_Countach_LP500_Proto_1971_Hud.png",
+    "creator": "DodgeDemon",
+
+    "333TopSpeed": 189,
+    "3330to60": 4.5,
+    "333Handling": 77,
+
+    "666TopSpeed": 192,
+    "6660to60": 4.2,
+    "666Handling": 80,
+
+    "996TopSpeed": 194,
+    "9960to60": 4.0,
+    "996Handling": 80,
+
+    "969TopSpeed": 194,
+    "9690to60": 4.2,
+    "969Handling": 83,
+
+    "699TopSpeed": 192,
+    "6990to60": 4.0,
+    "699Handling": 83
+}

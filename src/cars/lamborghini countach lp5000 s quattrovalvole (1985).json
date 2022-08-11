@@ -1,0 +1,50 @@
+{
+    "rq": 60,
+    "make": "Lamborghini",
+    "model": "LP5000 S Quattrovalvole",
+    "modelYear": 1985,
+    "country": "IT",
+    "topSpeed": 195,
+    "0to60": 4.6,
+    "handling": 79,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Style Icon", "Supercar"],
+    "isPrize": false,
+
+    "weight": 1490,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 77.62,
+    "ola": 87.59,
+    "description": "The fourth evolution of the Countach, now fitted with four valves per cylinder, hence the name.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/981777766594793543/Lamborghini_Countach_LP5000_S_QV_1985.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996623236810936470/Lamborghini_Countach_LP5000_S_QV_1985_Hud.png",
+    "creator": "DodgeDemon",
+
+    "333TopSpeed": 198,
+    "3330to60": 4.4,
+    "333Handling": 82,
+
+    "666TopSpeed": 200,
+    "6660to60": 4.1,
+    "666Handling": 84,
+
+    "996TopSpeed": 203,
+    "9960to60": 3.9,
+    "996Handling": 84,
+
+    "969TopSpeed": 203,
+    "9690to60": 4.1,
+    "969Handling": 88,
+
+    "699TopSpeed": 200,
+    "6990to60": 3.9,
+    "699Handling": 88
+}

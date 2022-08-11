@@ -1,0 +1,49 @@
+{
+    "rq": 89,
+    "make": "BMW",
+    "model": "M5",
+    "modelYear": 2018,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 3.2,
+    "handling": 89,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Super Sedan"],
+    "isPrize": false,
+	
+    "weight": 1936,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 78.04,
+    "ola": 81.25,
+    "description": "The base model spec M5 commonly seen in Need For Speed.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/978709408525729862/M5.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997649158993363124/M518.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 158, 
+"3330to60": 3.0, 
+"333Handling": 92,
+
+"666TopSpeed": 162, 
+"6660to60": 2.9, 
+"666Handling": 95,
+
+"699TopSpeed": 162, 
+"6990to60": 2.7, 
+"699Handling": 99,
+
+"969TopSpeed": 165, 
+"9690to60": 2.9, 
+"969Handling": 99,
+
+"996TopSpeed": 165, 
+"9960to60": 2.7, 
+"996Handling": 95
+}

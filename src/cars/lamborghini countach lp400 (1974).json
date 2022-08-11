@@ -1,0 +1,50 @@
+{
+    "rq": 47,
+    "make": "Lamborghini",
+    "model": "Countach LP400",
+    "modelYear": 1974,
+    "country": "IT",
+    "topSpeed": 186,
+    "0to60": 5.6,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Style Icon", "Supercar", "Ultra Expensive"],
+    "isPrize": false,
+
+    "weight": 1300,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 74.67,
+    "ola": 100.00,
+    "description": "The Countach's production debut.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/981776717058301982/Lamborghini_Countach_LP400.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996624087965249646/Lamborghini_Countach_LP400_Hud.png",
+    "creator": "DodgeDemon",
+
+    "333TopSpeed": 189,
+    "3330to60": 5.3,
+    "333Handling": 77,
+
+    "666TopSpeed": 192,
+    "6660to60": 5.0,
+    "666Handling": 80,
+
+    "996TopSpeed": 194,
+    "9960to60": 4.8,
+    "996Handling": 80,
+
+    "969TopSpeed": 194,
+    "9690to60": 5.0,
+    "969Handling": 83,
+
+    "699TopSpeed": 192,
+    "6990to60": 4.8,
+    "699Handling": 83
+}

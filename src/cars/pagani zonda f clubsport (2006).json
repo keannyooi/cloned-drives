@@ -1,0 +1,49 @@
+{
+    "rq": 84,
+    "make": "Pagani",
+    "model": "Zonda F Clubsport",
+    "modelYear": 2006,
+    "country": "IT",
+    "topSpeed": 214,
+    "0to60": 3.4,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Supercar", "Unique", "Ultra Expensive"],
+    "isPrize": false,
+	
+    "weight": 1210,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 101.49,
+    "ola": 96.47,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1007254631379898378/ZondaFClubsport.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1007254818735276083/zondafclubsport.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 216, 
+"3330to60": 3.2, 
+"333Handling": 94,
+
+"666TopSpeed": 219, 
+"6660to60": 3.1, 
+"666Handling": 97,
+
+"699TopSpeed": 219, 
+"6990to60": 2.9, 
+"699Handling": 101,
+
+"969TopSpeed": 221, 
+"9690to60": 3.1, 
+"969Handling": 101,
+
+"996TopSpeed": 221, 
+"9960to60": 2.9, 
+"996Handling": 97
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 69,
+    "make": "Ferrari",
+    "model": "550 Barchetta Pininfarina",
+    "modelYear": 2000,
+    "country": "IT",
+    "topSpeed": 186,
+    "0to60": 4.7,
+    "handling": 84,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+	
+    "weight": 1690,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 81.03,
+    "ola": 85.1,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1007256002715987978/550barchetta.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1007256863135510619/550BarcPini.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 189, 
+"3330to60": 4.5, 
+"333Handling": 87,
+
+"666TopSpeed": 192, 
+"6660to60": 4.2, 
+"666Handling": 90,
+
+"699TopSpeed": 192, 
+"6990to60": 4.0, 
+"699Handling": 93,
+
+"969TopSpeed": 194, 
+"9690to60": 4.2, 
+"969Handling": 93,
+
+"996TopSpeed": 194, 
+"9960to60": 4.0, 
+"996Handling": 90
+}

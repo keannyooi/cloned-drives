@@ -1,0 +1,49 @@
+{
+    "rq": 74,
+    "make": ["Hennessey", "Mitsubishi"],
+    "model": "VR-200",
+    "modelYear": 1992,
+    "country": "US",
+    "topSpeed": 183,
+    "0to60": 4.6,
+    "handling": 84,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Tuner", "Unique"],
+    "isPrize": false,
+	
+    "weight": 1724,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 80.7,
+    "ola": 82.6,
+    "description": "Based upon the great 3000GT VR4.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/983393993524133888/HenVR200.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997648635271594154/VR200.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 186, 
+"3330to60": 4.4, 
+"333Handling": 87,
+
+"666TopSpeed": 189, 
+"6660to60": 4.1, 
+"666Handling": 90,
+
+"699TopSpeed": 189, 
+"6990to60": 3.9, 
+"699Handling": 93,
+
+"969TopSpeed": 192, 
+"9690to60": 4.1, 
+"969Handling": 93,
+
+"996TopSpeed": 192, 
+"9960to60": 3.9, 
+"996Handling": 90
+}

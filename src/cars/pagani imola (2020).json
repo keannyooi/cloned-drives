@@ -1,0 +1,49 @@
+{
+    "rq": 98,
+    "make": "Pagani",
+    "model": "Imola",
+    "modelYear": 2020,
+    "country": "IT",
+    "topSpeed": 240,
+    "0to60": 2.6,
+    "handling": 96,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Track Day", "Ultra Expensive", "Eargasm", "Hypercar"],
+    "isPrize": true,
+	
+    "weight": 1246,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 113.04,
+    "ola": 84.61,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/978713454812741692/HImola.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997648961517142197/imola.png",
+    "creator": "Bnuuy",
+	
+"333TopSpeed": 242, 
+"3330to60": 2.5, 
+"333Handling": 99,
+
+"666TopSpeed": 244, 
+"6660to60": 2.3, 
+"666Handling": 102,
+
+"699TopSpeed": 244, 
+"6990to60": 2.2, 
+"699Handling": 107,
+
+"969TopSpeed": 246, 
+"9690to60": 2.3, 
+"969Handling": 107,
+
+"996TopSpeed": 246, 
+"9960to60": 2.2, 
+"996Handling": 102
+}

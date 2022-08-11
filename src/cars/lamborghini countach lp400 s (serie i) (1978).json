@@ -1,0 +1,51 @@
+{
+    "rq": 46,
+    "make": "Lamborghini",
+    "model": "Countach LP400 S (Serie I)",
+    "modelYear": 1978,
+    "country": "IT",
+    "topSpeed": 182,
+    "0to60": 5.7,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Style Icon", "Supercar"],
+    "isPrize": false,
+
+    "weight": 1375,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 68.41,
+    "ola": 100.59,
+    "description": "An updated, but toned down Countach.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/981776918707847178/Lamborghini_Countach_LP400_S_SI_1978.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996624180202184724/Lamborghini_Countach_LP400_S_SI_1978_Hud.png",
+    "creator":  " DodgeDemon",
+
+
+    "333TopSpeed": 185,
+    "3330to60": 5.4,
+    "333Handling": 80,
+
+    "666TopSpeed": 188,
+    "6660to60": 5.1,
+    "666Handling": 82,
+
+    "996TopSpeed": 191,
+    "9960to60": 4.8,
+    "996Handling": 82,
+
+    "969TopSpeed": 191,
+    "9690to60": 5.1,
+    "969Handling": 85,
+
+    "699TopSpeed": 188,
+    "6990to60": 4.8,
+    "699Handling": 85
+}
