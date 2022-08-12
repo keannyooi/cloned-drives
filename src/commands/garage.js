@@ -131,6 +131,9 @@ module.exports = {
                     }
                     else if (sort !== "rq") {
                         let values = "";
+                        if (currentCar["reference"]) {
+                            currentCar = require(`../cars/${currentCar["reference"]}`);
+                        }
                         if (sort === "topSpeed" || sort === "0to60" || sort === "handling") {
                             for (let [upgrade, value] of Object.entries(car.upgrades)) {
                                 let listValue = currentCar[sort];

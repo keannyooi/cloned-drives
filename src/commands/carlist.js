@@ -89,6 +89,9 @@ module.exports = {
                 let findCar = garage.find(c => c.carID === section[i].slice(0, 6));
                 carList += carNameGen({ currentCar, rarity: true });
                 carList += findCar ? " ✅\n" : "\n";
+                if (currentCar["reference"]) {
+                    currentCar = require(`../cars/${currentCar["reference"]}`);
+                }
 
                 if (sort === "duplicates") {
                     valueList += `\`${calcTotal(findCar)}\`\n`;

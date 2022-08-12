@@ -100,7 +100,7 @@ function editFilter(message, filter, args) {
         case "gc":
             isValid = carFiles.findIndex(function (carFile) {
                 let currentCar = require(`../../cars/${carFile}`);
-                return currentCar[criteria].toLowerCase() === arg1;
+                return !currentCar["reference"] && currentCar[criteria].toLowerCase() === arg1;
             });
 
             if (isValid > -1) {
