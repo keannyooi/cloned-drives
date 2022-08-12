@@ -1,9 +1,6 @@
 {
     "rq": 96,
-    "make": [
-        "Keyvanny",
-        "Lamborghini"
-    ],
+    "make": ["Keyvanny","Lamborghini"],
     "model": "Keyrus",
     "modelYear": 2020,
     "country": "DE",
@@ -12,10 +9,7 @@
     "handling": 91,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner",
-        "Unique"
-    ],
+    "tags": ["Tuner","Unique"],
     "isPrize": false,
     "weight": 2186,
     "gc": "Medium",
@@ -27,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 76.31,
     "ola": 75.86,
-    "description": "Keanny Brand :floosh: Card by Bnuuy.",
+    "description": "Keanny Brand :floosh:",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/976510041035268106/keyvanurus.png",
     "333TopSpeed": 205,
     "3330to60": 2.8,
@@ -44,6 +38,6 @@
     "699TopSpeed": 207,
     "6990to60": 2.5,
     "699Handling": 101,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997532528711843840/keyrus.png",
+    "creator": "Bnuuy"
 }

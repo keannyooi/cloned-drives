@@ -1,0 +1,49 @@
+{
+    "rq": 68,
+    "make": "TVR",
+    "model": "Griffith 500",
+    "modelYear": 1993,
+    "country": "GB",
+    "topSpeed": 158,
+    "0to60": 4.6,
+    "handling": 83,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+	
+    "weight": 1068,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 71.27,
+    "ola": 83.21,
+    "description": "A small TVR sports car with a bigger 5.0 V8.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1007447634908286976/TVRGriffith500.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1007447723638784010/TVRGriffith500.png",
+    "creator": "Spence",
+
+"333TopSpeed": 161, 
+"3330to60": 4.4, 
+"333Handling": 86,
+
+"666TopSpeed": 165, 
+"6660to60": 4.1, 
+"666Handling": 88,
+
+"699TopSpeed": 165, 
+"6990to60": 3.9, 
+"699Handling": 92,
+
+"969TopSpeed": 168, 
+"9690to60": 4.1, 
+"969Handling": 92,
+
+"996TopSpeed": 168, 
+"9960to60": 3.9, 
+"996Handling": 88
+}

@@ -9,10 +9,7 @@
     "handling": 59,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": [
-        "Silver Screen",
-        "Kei Car"
-    ],
+    "tags": ["Silver Screen","Kei Car"],
     "isPrize": false,
     "weight": 410,
     "gc": "Low",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 0,
     "ola": 42.03,
-    "description": "A smol Subie boy back in the day. Card by Spence",
+    "description": "A smol Subie boy back in the day.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/865620331229872168/image0.png",
     "333TopSpeed": 68,
     "3330to60": 35.6,
@@ -41,6 +38,6 @@
     "996TopSpeed": 85,
     "9960to60": 31.9,
     "996Handling": 63,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997211652837621810/Subaru360.png",
+    "creator": "Spence"
 }

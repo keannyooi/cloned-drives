@@ -9,13 +9,7 @@
     "handling": 84,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Supercar",
-        "Style Icon",
-        "Track Day",
-        "Ultra Expensive",
-        "Unique"
-    ],
+    "tags": ["Supercar","Style Icon","Track Day","Ultra Expensive","Unique"],
     "isPrize": true,
     "weight": 900,
     "gc": "Low",
@@ -27,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 87.18,
     "ola": 76.47,
-    "description": "Bob Wallace's one-off track toy Miura. Card by DodgeDemon",
+    "description": "Bob Wallace's one-off track toy Miura.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/976699366670749756/Lamborghini_Miura_Jota_1970.png",
     "333TopSpeed": 202,
     "3330to60": 3.2,
@@ -44,6 +38,6 @@
     "699TopSpeed": 204,
     "6990to60": 2.9,
     "699Handling": 93,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996624675385917450/Lamborghini_Miura_Jota_1970_Hud.png",
+    "creator": "DodgeDemon"
 }

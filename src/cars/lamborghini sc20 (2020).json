@@ -1,0 +1,49 @@
+{
+    "rq": 99,
+    "make": "Lamborghini",
+    "model": "SC20",
+    "modelYear": 2020,
+    "country": "IT",
+    "topSpeed": 217,
+    "0to60": 2.5,
+    "handling": 94,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Oddity", "Hypercar", "Unique", "Ultra Expensive"],
+    "isPrize": true,
+	
+    "weight": 1600,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 93.1,
+    "ola": 76,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/981778370775875595/Lamborghini_SC20_2020.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996625204245700698/Lamborghini_SC20_2020_Hud.png",
+    "creator": "DodgeDemon",
+
+"333TopSpeed": 219, 
+"3330to60": 2.4, 
+"333Handling": 97,
+
+"666TopSpeed": 222, 
+"6660to60": 2.2, 
+"666Handling": 100,
+
+"699TopSpeed": 222, 
+"6990to60": 2.1, 
+"699Handling": 104,
+
+"969TopSpeed": 224, 
+"9690to60": 2.2, 
+"969Handling": 104,
+
+"996TopSpeed": 224, 
+"9960to60": 2.1, 
+"996Handling": 100
+}

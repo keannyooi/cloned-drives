@@ -1,0 +1,49 @@
+{
+    "rq": 97,
+    "make": "Lamborghini",
+    "model": "Sian Roadster",
+    "modelYear": 2020,
+    "country": "IT",
+    "topSpeed": 217,
+    "0to60": 2.7,
+    "handling": 95,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Unique", "Ultra Expensive", "Hypercar", "Eco-Friendly"],
+    "isPrize": false,
+	
+    "weight": 1645,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Hybrid",
+    "mra": 99.55,
+    "ola": 75.93,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1007719320941498378/sianroad.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1007719622457446510/sianroadster.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 219, 
+"3330to60": 2.6, 
+"333Handling": 98,
+
+"666TopSpeed": 222, 
+"6660to60": 2.4, 
+"666Handling": 101,
+
+"699TopSpeed": 222, 
+"6990to60": 2.3, 
+"699Handling": 105,
+
+"969TopSpeed": 224, 
+"9690to60": 2.4, 
+"969Handling": 105,
+
+"996TopSpeed": 224, 
+"9960to60": 2.3, 
+"996Handling": 101
+}

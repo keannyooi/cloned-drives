@@ -1,0 +1,50 @@
+{
+    "rq": 42,
+    "make": ["MVS", "Venturi"],
+    "model": "Venturi 200",
+    "modelYear": 1987,
+    "country": "MC",
+    "topSpeed": 152,
+    "0to60": 6.7,
+    "handling": 74,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Rest of The World"],
+    "isPrize": false,
+
+    "weight": 1218,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 61.56,
+    "ola": 61.14,
+    "description": "Before it became Venturi and became a Monegasque company, it was a French company called MVS and this is their first automobile ever made.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/978097275773534228/877CF7F9-B165-4E36-B7EE-E38F5EB7B0F0.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1006048875871739904/MVSVenturi200.png",
+    "creator": "Spence",
+
+    "333TopSpeed": 155,
+    "3330to60": 6.4,
+    "333Handling": 76,
+
+    "666TopSpeed": 159,
+    "6660to60": 6.0,
+    "666Handling": 79,
+
+    "699TopSpeed": 159,
+    "6990to60": 5.7,
+    "699Handling": 82,
+
+    "969TopSpeed": 162,
+    "9690to60": 6.0,
+    "969Handling": 82,
+
+    "996TopSpeed": 162,
+    "9960to60": 5.7,
+    "996Handling": 79
+}

@@ -9,11 +9,7 @@
     "handling": 78,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Supercar",
-        "Style Icon",
-        "Ultra Expensive"
-    ],
+    "tags": ["Supercar","Style Icon","Ultra Expensive"],
     "isPrize": false,
     "weight": 1180,
     "gc": "Low",
@@ -25,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 79.17,
     "ola": 82.05,
-    "description": "An updated P400, retaining what made the Miura special with added horses. Card by DodgeDemon",
+    "description": "An updated P400, retaining what made the Miura special with added horses.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/976699682833190962/Lamborghini_Miura_S_1968.png",
     "333TopSpeed": 180,
     "3330to60": 5.6,
@@ -34,14 +30,14 @@
     "6660to60": 5.3,
     "666Handling": 83,
     "996TopSpeed": 185,
-    "9960to60": 5,
+    "9960to60": 5.0,
     "996Handling": 83,
     "969TopSpeed": 186,
     "9690to60": 5.3,
     "969Handling": 87,
     "699TopSpeed": 183,
-    "6990to60": 5,
+    "6990to60": 5.0,
     "699Handling": 87,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996624718104903750/Lamborghini_Miura_S_1968_Hud.png",
+    "creator": "DodgeDemon"
 }

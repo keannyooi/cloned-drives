@@ -1,0 +1,49 @@
+{
+    "rq": 97,
+    "make": "Lamborghini",
+    "model": " Aventador LP780-4 Ultimae",
+    "modelYear": 2021,
+    "country": "IT",
+    "topSpeed": 221,
+    "0to60": 2.7,
+    "handling": 94,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Supercar"],
+    "isPrize": false,
+	
+    "weight": 1550,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 96.43,
+    "ola": 77.78,
+    "description": "Last non-body mod Aventador.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1007719210853597205/ultimae.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1007719550940352602/AventadorUltimae.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 223, 
+"3330to60": 2.6, 
+"333Handling": 97,
+
+"666TopSpeed": 226, 
+"6660to60": 2.4, 
+"666Handling": 100,
+
+"699TopSpeed": 226, 
+"6990to60": 2.3, 
+"699Handling": 104,
+
+"969TopSpeed": 228, 
+"9690to60": 2.4, 
+"969Handling": 104,
+
+"996TopSpeed": 228, 
+"9960to60": 2.3, 
+"996Handling": 100
+}

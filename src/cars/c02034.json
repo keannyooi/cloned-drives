@@ -9,13 +9,7 @@
     "handling": 85,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Supercar",
-        "Style Icon",
-        "Track Day",
-        "Ultra Expensive",
-        "Unique"
-    ],
+    "tags": ["Supercar","Style Icon","Track Day","Ultra Expensive","Unique"],
     "isPrize": true,
     "weight": 800,
     "gc": "Low",
@@ -27,10 +21,10 @@
     "fuelType": "Petrol",
     "mra": 84.21,
     "ola": 75,
-    "description": "When the Jota wasn't wild enough. Card by DodgeDemon",
+    "description": "When the Jota wasn't wild enough.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/976699831638720512/Lamborghini_Miura_SVR_1976.png",
     "333TopSpeed": 202,
-    "3330to60": 3,
+    "3330to60": 3.0,
     "333Handling": 88,
     "666TopSpeed": 204,
     "6660to60": 2.9,
@@ -44,6 +38,6 @@
     "699TopSpeed": 204,
     "6990to60": 2.7,
     "699Handling": 94,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996624431373881446/Lamborghini_Miura_SVR_1976_Hud.png",
+    "creator": "DodgeDemon"
 }

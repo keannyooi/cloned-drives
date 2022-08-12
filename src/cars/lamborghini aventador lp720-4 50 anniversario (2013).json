@@ -1,0 +1,49 @@
+{
+    "rq": ,
+    "make": "Lamborghini",
+    "model": "Aventador LP720-4 50° Anniversario",
+    "modelYear": 2013,
+    "country": "IT",
+    "topSpeed": 217,
+    "0to60": 2.8,
+    "handling": 92,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Supercar"],
+    "isPrize": false,
+	
+    "weight": 1575,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 88.19,
+    "ola": 83.93,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/990001684220624966/Lamborghini_Aventador_LP720_2013.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996623123271131256/Lamborghini_Aventador_LP720_2013_Hud.png",
+    "creator": "DodgeDemon",
+
+"333TopSpeed": 219, 
+"3330to60": 2.7, 
+"333Handling": 95,
+
+"666TopSpeed": 222, 
+"6660to60": 2.5, 
+"666Handling": 98,
+
+"699TopSpeed": 222, 
+"6990to60": 2.4, 
+"699Handling": 102,
+
+"969TopSpeed": 224, 
+"9690to60": 2.5, 
+"969Handling": 102,
+
+"996TopSpeed": 224, 
+"9960to60": 2.4, 
+"996Handling": 98
+}

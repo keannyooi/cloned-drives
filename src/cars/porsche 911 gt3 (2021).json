@@ -1,0 +1,49 @@
+{
+    "rq": 89,
+    "make": "Porsche",
+    "model": "911 GT3",
+    "modelYear": 2021,
+    "country": "DE",
+    "topSpeed": 196,
+    "0to60": 2.9,
+    "handling": 94,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Track Day"],
+    "isPrize": false,
+	
+    "weight": 1435,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 76.31,
+    "ola": 71.03,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/983394133202833448/911GT3.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997648665906794496/911GT3992.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 199, 
+"3330to60": 2.8, 
+"333Handling": 97,
+
+"666TopSpeed": 201, 
+"6660to60": 2.6, 
+"666Handling": 100,
+
+"699TopSpeed": 201, 
+"6990to60": 2.5, 
+"699Handling": 104,
+
+"969TopSpeed": 204, 
+"9690to60": 2.6, 
+"969Handling": 104,
+
+"996TopSpeed": 204, 
+"9960to60": 2.5, 
+"996Handling": 100
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 98,
+    "make": "Lamborghini",
+    "model": "Veneno LP750-4",
+    "modelYear": 2013,
+    "country": "IT",
+    "topSpeed": 221,
+    "0to60": 2.7,
+    "handling": 96,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Track Day", "Unique", "Ultra Expensive", "Eargasm", "Hypercar"],
+    "isPrize": true,
+	
+    "weight": 1450,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 96,
+    "ola": 81.48,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/981778483485229076/Lamborghini_Veneno_LP750_2013.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996625033361379408/Lamborghini_Veneno_LP750_2013_Hud.png",
+    "creator": "DodgeDemon",
+
+"333TopSpeed": 223, 
+"3330to60": 2.6, 
+"333Handling": 99,
+
+"666TopSpeed": 226, 
+"6660to60": 2.4, 
+"666Handling": 102,
+
+"699TopSpeed": 226, 
+"6990to60": 2.3, 
+"699Handling": 107,
+
+"969TopSpeed": 228, 
+"9690to60": 2.4, 
+"969Handling": 107,
+
+"996TopSpeed": 228, 
+"9960to60": 2.3, 
+"996Handling": 102
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 61,
+    "make": "TVR",
+    "model": "Griffith 4.3",
+    "modelYear": 1992,
+    "country": "GB",
+    "topSpeed": 158,
+    "0to60": 5.2,
+    "handling": 81,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+	
+    "weight": 1048,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 69.2,
+    "ola": 81.29,
+    "description": "The 2nd return of the lightweight fibreglass V8 TVR.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1007445083483807825/TVRGriffith4.3.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1007445187905204325/TVRGriffith4.3.png",
+    "creator": "Spence",
+
+"333TopSpeed": 161, 
+"3330to60": 4.9, 
+"333Handling": 84,
+
+"666TopSpeed": 165, 
+"6660to60": 4.7, 
+"666Handling": 86,
+
+"699TopSpeed": 165, 
+"6990to60": 4.4, 
+"699Handling": 90,
+
+"969TopSpeed": 168, 
+"9690to60": 4.7, 
+"969Handling": 90,
+
+"996TopSpeed": 168, 
+"9960to60": 4.4, 
+"996Handling": 86
+}

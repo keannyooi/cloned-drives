@@ -9,13 +9,7 @@
     "handling": 93,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Silver Screen",
-        "Ultra Expensive",
-        "Hypercar",
-        "Rest of the World",
-        "Unique"
-    ],
+    "tags": ["Silver Screen","Ultra Expensive","Hypercar","Rest of the World","Unique"],
     "isPrize": false,
     "weight": 1380,
     "gc": "Low",
@@ -27,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 121.74,
     "ola": 80,
-    "description": "Cars dont fly. Card by Bnuuy.",
+    "description": "Cars dont fly.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/843212313813450752/LykanHyper.png",
     "333TopSpeed": 247,
     "3330to60": 2.7,
@@ -44,6 +38,6 @@
     "699TopSpeed": 249,
     "6990to60": 2.4,
     "699Handling": 103,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997532830101938226/lykan.png",
+    "creator": "Bnuuy"
 }

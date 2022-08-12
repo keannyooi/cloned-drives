@@ -9,12 +9,7 @@
     "handling": 98,
     "driveType": "4WD",
     "tyreType": "Slick",
-    "tags": [
-        "Concept",
-        "Unqiue",
-        "Eco-Friendly",
-        "Rest of The World"
-    ],
+    "tags": ["Concept","Unqiue","Eco-Friendly","Rest of The World"],
     "isPrize": true,
     "weight": 1735,
     "gc": "Low",
@@ -26,7 +21,7 @@
     "fuelType": "Electric",
     "mra": 106.76,
     "ola": 92.06,
-    "description": "The 1 megawatt Chinese electric supercar that sets the world electric record lap tiem on the Norschleife. Card by Spence.",
+    "description": "The 1 megawatt Chinese electric supercar that sets the world electric record lap tiem on the Norschleife.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/946575237435236433/5BD17B02-6E15-4611-B507-AADDE66D82E4.png",
     "333TopSpeed": 197,
     "3330to60": 2.5,
@@ -43,6 +38,6 @@
     "699TopSpeed": 199,
     "6990to60": 2.2,
     "699Handling": 109,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997195372684390540/NioEP9.png",
+    "creator": "Spence"
 }

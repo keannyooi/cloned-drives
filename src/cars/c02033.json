@@ -9,12 +9,7 @@
     "handling": 77,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Supercar",
-        "Innovative",
-        "Style Icon",
-        "Unique"
-    ],
+    "tags": ["Supercar","Innovative","Style Icon","Unique"],
     "isPrize": false,
     "weight": 1000,
     "gc": "Low",
@@ -26,10 +21,10 @@
     "fuelType": "Petrol",
     "mra": 74.24,
     "ola": 82.54,
-    "description": "The one and only factory Miura Roadster. Card by DodgeDemon",
+    "description": "The one and only factory Miura Roadster.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/976699531389440000/Lamborghini_Miura_Roadster_1968.png",
     "333TopSpeed": 177,
-    "3330to60": 6,
+    "3330to60": 6.0,
     "333Handling": 80,
     "666TopSpeed": 180,
     "6660to60": 5.7,
@@ -43,6 +38,6 @@
     "699TopSpeed": 180,
     "6990to60": 5.4,
     "699Handling": 85,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996624761536905216/Lamborghini_Miura_Roadster_1968_Hud.png",
+    "creator": "DodgeDemon"
 }

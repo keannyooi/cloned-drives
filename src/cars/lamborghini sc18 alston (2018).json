@@ -1,0 +1,49 @@
+{
+    "rq": 98,
+    "make": "Lamborghini",
+    "model": "SC18 Alston",
+    "modelYear": 2018,
+    "country": "IT",
+    "topSpeed": 210,
+    "0to60": 2.7,
+    "handling": 96,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Hypercar", "Unique", "Ultra Expensive"],
+    "isPrize": true,
+	
+    "weight": 1525,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 93.1,
+    "ola": 77.78,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/981778229369114624/Lamborghini_SC18_Alston_2018.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/996625172062806108/Lamborghini_SC18_Alston_2018_Hud.png",
+    "creator": "DodgeDemon",
+
+"333TopSpeed": 212, 
+"3330to60": 2.6, 
+"333Handling": 99,
+
+"666TopSpeed": 215, 
+"6660to60": 2.4, 
+"666Handling": 102,
+
+"699TopSpeed": 215, 
+"6990to60": 2.3, 
+"699Handling": 107,
+
+"969TopSpeed": 217, 
+"9690to60": 2.4, 
+"969Handling": 107,
+
+"996TopSpeed": 217, 
+"9960to60": 2.3, 
+"996Handling": 102
+}

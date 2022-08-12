@@ -9,10 +9,7 @@
     "handling": 89,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": [
-        "Hot Hatch",
-        "Street Racer"
-    ],
+    "tags": ["Hot Hatch","Street Racer"],
     "isPrize": true,
     "weight": 1255,
     "gc": "Medium",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 87.5,
     "ola": 85.71,
-    "description": "The fastest version of the newer version of the newer version of the newer version of the OG hot hatchback. Card by spence",
+    "description": "The fastest version of the newer version of the newer version of the newer version of the OG hot hatchback.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/851238659780247582/minigp.png",
     "333TopSpeed": 168,
     "3330to60": 4.7,
@@ -41,6 +38,6 @@
     "699TopSpeed": 171,
     "6990to60": 4.2,
     "699Handling": 99,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997204382078742649/MiniJohnCooperWorksGP.png",
+    "creator": "Spence"
 }

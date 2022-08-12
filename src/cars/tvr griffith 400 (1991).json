@@ -1,0 +1,49 @@
+{
+    "rq": 58,
+    "make": "TVR",
+    "model": "Griffith 400",
+    "modelYear": 1991,
+    "country": "GB",
+    "topSpeed": 155,
+    "0to60": 5.4,
+    "handling": 80,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+	
+    "weight": 1060,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 63.51,
+    "ola": 81.48,
+    "description": "The slowest Griffith that you can live with.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1007463356426366987/TVRGriffith400.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1007463862938894436/TVRGriffith400.png",
+    "creator": "Spence",
+
+"333TopSpeed": 158, 
+"3330to60": 5.1, 
+"333Handling": 83,
+
+"666TopSpeed": 162, 
+"6660to60": 4.9, 
+"666Handling": 85,
+
+"699TopSpeed": 162, 
+"6990to60": 4.6, 
+"699Handling": 89,
+
+"969TopSpeed": 165, 
+"9690to60": 4.9, 
+"969Handling": 89,
+
+"996TopSpeed": 165, 
+"9960to60": 4.6, 
+"996Handling": 85
+}

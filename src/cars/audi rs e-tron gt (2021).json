@@ -1,0 +1,50 @@
+{
+    "rq": 80,
+    "make": "Audi",
+    "model": "RS e-tron GT",
+    "modelYear": 2021,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 3.0,
+    "handling": 85,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+
+    "weight": 2387,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 76.92,
+    "ola": 93.33,
+    "description": "None.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/930857516160655410/audie.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1007738493247705108/etrongtrs.png",
+    "creator": "Bnuuy",
+
+    "333TopSpeed": 158,
+    "3330to60": 2.9,
+    "333Handling": 88,
+
+    "666TopSpeed": 162,
+    "6660to60": 2.7,
+    "666Handling": 91,
+
+    "996TopSpeed": 165,
+    "9960to60": 2.6,
+    "996Handling": 91,
+
+    "969TopSpeed": 165,
+    "9690to60": 2.7,
+    "969Handling": 94,
+
+    "699TopSpeed": 162,
+    "6990to60": 2.6,
+    "699Handling": 94
+}

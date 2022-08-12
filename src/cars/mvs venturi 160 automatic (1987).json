@@ -1,0 +1,50 @@
+{
+    "rq": 29,
+    "make": ["MVS", "Venturi"],
+    "model": "Venturi 160 Automatic",
+    "modelYear": 1987,
+    "country": "MC",
+    "topSpeed": 129,
+    "0to60": 8.3,
+    "handling": 71,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Rest of The World"],
+    "isPrize": false,
+
+    "weight": 1295,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 50.3,
+    "ola": 69.88,
+    "description": "A catalyzed naturally-aspirated version of the normal 200 meant to be made for the Japanese market.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/978097348276260876/667F1BA5-5687-4427-8D78-F0E719CFE6B0.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1006048948621942824/MVSVenturi160Automatic.png",
+    "creator": "Spence",
+
+    "333TopSpeed": 133,
+    "3330to60": 7.9,
+    "333Handling": 73,
+
+    "666TopSpeed": 137,
+    "6660to60": 7.5,
+    "666Handling": 76,
+
+    "699TopSpeed": 137,
+    "6990to60": 7.1,
+    "699Handling": 79,
+
+    "969TopSpeed": 141,
+    "9690to60": 7.5,
+    "969Handling": 79,
+
+    "996TopSpeed": 141,
+    "9960to60": 7.1,
+    "996Handling": 76
+}

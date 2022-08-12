@@ -1,0 +1,50 @@
+{
+    "rq": 53,
+    "make": ["MVS", "Venturi"],
+    "model": "Venturi 260",
+    "modelYear": 1989,
+    "country": "MC",
+    "topSpeed": 165,
+    "0to60": 5.8,
+    "handling": 76,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Rest of The World"],
+    "isPrize": false,
+
+    "weight": 1253,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 71.25,
+    "ola": 67.28,
+    "description": "As the company dropped the MVS marque in favour of the Venturi name, they also added a turbocharged 2.8L V6 for more performance.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/978098459808763944/502BF872-4D06-44ED-9156-7CC19CFE6F4D.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1006049866683797544/MVSVenturi260.png",
+    "creator": "Spence",
+
+    "333TopSpeed": 168,
+    "3330to60": 5.5,
+    "333Handling": 79,
+
+    "666TopSpeed": 171,
+    "6660to60": 5.2,
+    "666Handling": 81,
+
+    "699TopSpeed": 171,
+    "6990to60": 4.9,
+    "699Handling": 84,
+
+    "969TopSpeed": 174,
+    "9690to60": 5.2,
+    "969Handling": 84,
+
+    "996TopSpeed": 174,
+    "9960to60": 4.9,
+    "996Handling": 81
+}

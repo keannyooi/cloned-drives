@@ -1,0 +1,49 @@
+{
+    "rq": 73,
+    "make": "TVR",
+    "model": "Sagaris",
+    "modelYear": 2004,
+    "country": "GB",
+    "topSpeed": 185,
+    "0to60": 3.9,
+    "handling": 88,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+	
+    "weight": 1078,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 84.78,
+    "ola": 97.44,
+    "description": "The last hurrah for the Russian that owned the company with the help of the engineers from Noble.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1007435015556182149/TVRSagaris.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1007435128894664814/TVRSagaris.png",
+    "creator": "Spence",
+
+"333TopSpeed": 188, 
+"3330to60": 3.7, 
+"333Handling": 91,
+
+"666TopSpeed": 191, 
+"6660to60": 3.5, 
+"666Handling": 94,
+
+"699TopSpeed": 191, 
+"6990to60": 3.3, 
+"699Handling": 98,
+
+"969TopSpeed": 193, 
+"9690to60": 3.5, 
+"969Handling": 98,
+
+"996TopSpeed": 193, 
+"9960to60": 3.3, 
+"996Handling": 94
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 60,
+    "make": ["Iding Power", "BMW"],
+    "model": "M3 S3",
+    "modelYear": 1993,
+    "country": "DE",
+    "topSpeed": 174,
+    "0to60": 4.8,
+    "handling": 83,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner", "Unique"],
+    "isPrize": false,
+	
+    "weight": 1400,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 71.64,
+    "ola": 83.33,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1007719448540614767/idingM3S3.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1007719663922319380/idingm3.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 177, 
+"3330to60": 4.6, 
+"333Handling": 86,
+
+"666TopSpeed": 180, 
+"6660to60": 4.3, 
+"666Handling": 88,
+
+"699TopSpeed": 180, 
+"6990to60": 4.1, 
+"699Handling": 92,
+
+"969TopSpeed": 183, 
+"9690to60": 4.3, 
+"969Handling": 92,
+
+"996TopSpeed": 183, 
+"9960to60": 4.1, 
+"996Handling": 88
+}
