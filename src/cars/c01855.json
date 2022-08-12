@@ -1,9 +1,6 @@
 {
     "rq": 86,
-    "make": [
-        "Top Secret",
-        "Toyota"
-    ],
+    "make": ["Top Secret","Toyota"],
     "model": "0-300 Supra",
     "modelYear": 2001,
     "country": "JP",
@@ -12,13 +9,7 @@
     "handling": 89,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Track Day",
-        "Tuner",
-        "Unique",
-        "Street Racer",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Track Day","Tuner","Unique","Street Racer","The Japanese Odyssey"],
     "isPrize": true,
     "weight": 1490,
     "gc": "Low",
@@ -30,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 124,
     "ola": 103.23,
-    "description": "Card by Bnuuy.",
+    "description": "None.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/867875049344466965/topsecretsupra.png",
     "333TopSpeed": 218,
     "3330to60": 2.9,
@@ -47,6 +38,6 @@
     "699TopSpeed": 221,
     "6990to60": 2.6,
     "699Handling": 99,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997533343765762098/topsecret300supporaa.png",
+    "creator": "Bnuuy"
 }

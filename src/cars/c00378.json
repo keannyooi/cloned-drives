@@ -9,11 +9,7 @@
     "handling": 67,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Motorsport",
-        "Unique",
-        "Ultra Expensive"
-    ],
+    "tags": ["Motorsport","Unique","Ultra Expensive"],
     "isPrize": false,
     "weight": 650,
     "gc": "Low",
@@ -25,10 +21,10 @@
     "fuelType": "Petrol",
     "mra": 68.85,
     "ola": 83.33,
-    "description": "The car that established Ferrari as an international racing icon. Card by Bnuuy.",
+    "description": "The car that established Ferrari as an international racing icon.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/855065409056407552/rari166mmbarcshiter.png",
     "333TopSpeed": 141,
-    "3330to60": 8,
+    "3330to60": 8.0,
     "333Handling": 69,
     "666TopSpeed": 145,
     "6660to60": 7.6,
@@ -42,6 +38,6 @@
     "699TopSpeed": 145,
     "6990to60": 7.1,
     "699Handling": 74,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997535304607092796/166mmrari.png",
+    "creator": "Bnuuy"
 }

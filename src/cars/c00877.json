@@ -9,9 +9,7 @@
     "handling": 59,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": [
-        "Unique"
-    ],
+    "tags": ["Unique"],
     "isPrize": true,
     "weight": 621,
     "gc": "Medium",
@@ -23,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 0,
     "ola": 52.55,
-    "description": "Thought to be only two ever made, body made by the company behind the blackcab. Card by Bnuuy.",
+    "description": "Thought to be only two ever made, body made by the company behind the blackcab.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/823589601598898186/TAAirline.png",
     "333TopSpeed": 86,
     "3330to60": 21.9,
@@ -40,6 +38,6 @@
     "699TopSpeed": 92,
     "6990to60": 19.6,
     "699Handling": 65,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997545539707080714/mgtaairline.png",
+    "creator": "Bnuuy"
 }

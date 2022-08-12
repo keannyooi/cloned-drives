@@ -9,11 +9,7 @@
     "handling": 91,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Supercar",
-        "Unique",
-        "Ultra Expensive"
-    ],
+    "tags": ["Supercar","Unique","Ultra Expensive"],
     "isPrize": false,
     "weight": 1665,
     "gc": "Low",
@@ -25,10 +21,10 @@
     "fuelType": "Petrol",
     "mra": 92.11,
     "ola": 108.57,
-    "description": "Named after a killer bull or something. Card by Bnuuy.",
+    "description": "Named after a killer bull or something.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820699126601351213/reventon.png",
     "333TopSpeed": 213,
-    "3330to60": 3,
+    "3330to60": 3.0,
     "333Handling": 94,
     "666TopSpeed": 216,
     "6660to60": 2.9,
@@ -42,6 +38,6 @@
     "699TopSpeed": 216,
     "6990to60": 2.7,
     "699Handling": 101,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997533285880189139/reventon.png",
+    "creator": "Bnuuy"
 }

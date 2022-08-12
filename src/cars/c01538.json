@@ -1,9 +1,6 @@
 {
     "rq": 96,
-    "make": [
-        "HKS",
-        "Mitsubishi"
-    ],
+    "make": ["HKS","Mitsubishi"],
     "model": "Lancer Evolution IX CT230R-NGV",
     "modelYear": 2013,
     "country": "JP",
@@ -12,14 +9,7 @@
     "handling": 94,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Oddity",
-        "Motorsport",
-        "Unique",
-        "Eco-Friendly",
-        "Tuner",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Oddity","Motorsport","Unique","Eco-Friendly", "Tuner","The Japanese Odyssey"],
     "isPrize": true,
     "weight": 1088,
     "gc": "Low",
@@ -31,7 +21,7 @@
     "fuelType": "Hybrid",
     "mra": 87.28,
     "ola": 75.23,
-    "description": "After the car was retired from competitive racing HKS added a CNG tank and made it so the car could opperate using both CNG and Petrol. Card by Bnuuy.",
+    "description": "After the car was retired from competitive racing HKS added a CNG tank and made it so the car could opperate using both CNG and Petrol.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/869168797808984104/ECOEVO.png",
     "333TopSpeed": 176,
     "3330to60": 2.5,
@@ -48,6 +38,6 @@
     "699TopSpeed": 179,
     "6990to60": 2.2,
     "699Handling": 104,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997534134450802759/ct230reco.png",
+    "creator": "Bnuuy"
 }

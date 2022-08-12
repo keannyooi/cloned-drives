@@ -9,11 +9,7 @@
     "handling": 92,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Eargasm",
-        "Supercar",
-        "Track Day"
-    ],
+    "tags": ["Eargasm","Supercar","Track Day"],
     "isPrize": true,
     "weight": 1480,
     "gc": "Low",
@@ -25,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 99,
     "ola": 88.25,
-    "description": "The track-focused LFA. Card by Bnuuy.",
+    "description": "The track-focused LFA.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819241772957696020/LFAnurberg.png",
     "333TopSpeed": 205,
     "3330to60": 3.5,
@@ -42,6 +38,6 @@
     "699TopSpeed": 207,
     "6990to60": 3.1,
     "699Handling": 102,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997533800533868584/lfanur.png",
+    "creator": "Bnuuy"
 }

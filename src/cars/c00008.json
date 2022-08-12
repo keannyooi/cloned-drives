@@ -1,9 +1,6 @@
 {
     "rq": 2,
-    "make": [
-        "Abarth",
-        "Fiat"
-    ],
+    "make": ["Abarth","Fiat"],
     "model": "595 Esseesse",
     "modelYear": 1963,
     "country": "IT",
@@ -12,9 +9,7 @@
     "handling": 62,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": [
-        "Style Icon"
-    ],
+    "tags": ["Style Icon"],
     "isPrize": false,
     "weight": 570,
     "gc": "Low",
@@ -26,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 0,
     "ola": 51.16,
-    "description": "The original essesse, or esese, or I don't even know how to spell. Card by bnuuy",
+    "description": "The original essesse, or esese, or I don't even know how to spell.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/823589250737635348/595SS.png",
     "333TopSpeed": 81,
     "3330to60": 26.9,
@@ -43,6 +38,6 @@
     "699TopSpeed": 88,
     "6990to60": 24.1,
     "699Handling": 69,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997534783250903040/abarth595old.png",
+    "creator": "Bnuuy"
 }

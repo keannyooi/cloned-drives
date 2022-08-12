@@ -9,11 +9,7 @@
     "handling": 81,
     "driveType": "RWD",
     "tyreType": "Off-Road",
-    "tags": [
-        "Motorsport",
-        "Unique",
-        "Style Icon"
-    ],
+    "tags": ["Motorsport","Unique","Style Icon"],
     "isPrize": false,
     "weight": 880,
     "gc": "Medium",
@@ -25,10 +21,10 @@
     "fuelType": "Petrol",
     "mra": 56,
     "ola": 73.4,
-    "description": "The infamous Stratos rally car. Card by Bnuuy.",
+    "description": "The infamous Stratos rally car.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819944564768637018/Stratos.png",
     "333TopSpeed": 152,
-    "3330to60": 4,
+    "3330to60": 4.0,
     "333Handling": 84,
     "666TopSpeed": 156,
     "6660to60": 3.8,
@@ -42,6 +38,6 @@
     "699TopSpeed": 156,
     "6990to60": 3.6,
     "699Handling": 90,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997534318681399417/stratos.png",
+    "creator": "Bnuuy"
 }

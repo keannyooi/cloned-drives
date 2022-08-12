@@ -5,7 +5,7 @@
     "modelYear": 1974,
     "country": "JP",
     "topSpeed": 96,
-    "0to60": 16,
+    "0to60": 16.0,
     "handling": 62,
     "driveType": "RWD",
     "tyreType": "Standard",
@@ -21,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 37.42,
     "ola": 66.25,
-    "description": "funny name. Card by Bnuuy",
+    "description": "funny name.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/866643586983395338/coooorona.png",
     "333TopSpeed": 101,
     "3330to60": 15.2,
@@ -38,6 +38,6 @@
     "699TopSpeed": 107,
     "6990to60": 13.6,
     "699Handling": 69,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997545891160395896/coronacoupeSR.png",
+    "creator": "Bnuuy"
 }

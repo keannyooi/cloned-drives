@@ -9,9 +9,7 @@
     "handling": 58,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": [
-        "Unique"
-    ],
+    "tags": ["Unique"],
     "isPrize": false,
     "weight": 793,
     "gc": "Medium",
@@ -23,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 0,
     "ola": 51.95,
-    "description": "A more luxurious TA with individual bucket seats and wind-up windows. Card by Bnuuy.",
+    "description": "A more luxurious TA with individual bucket seats and wind-up windows.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/823589710378172476/TATickford.png",
     "333TopSpeed": 86,
     "3330to60": 21.9,
@@ -40,6 +38,6 @@
     "699TopSpeed": 92,
     "6990to60": 19.6,
     "699Handling": 64,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997545466667470938/mgtatickford.png",
+    "creator": "Bnuuy"
 }

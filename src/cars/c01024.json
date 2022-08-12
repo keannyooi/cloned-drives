@@ -9,10 +9,7 @@
     "handling": 45,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": [
-        "Style Icon",
-        "Oddity"
-    ],
+    "tags": ["Style Icon","Oddity"],
     "isPrize": true,
     "weight": 150,
     "gc": "Low",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 0,
     "ola": 0,
-    "description": "The slightly more stylish but slightly slower version of the P50. Card by bnuuy",
+    "description": "The slightly more stylish but slightly slower version of the P50.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/823502086506545202/trident.png",
     "333TopSpeed": 38,
     "3330to60": 99.9,
@@ -41,6 +38,6 @@
     "699TopSpeed": 45,
     "6990to60": 99.9,
     "699Handling": 50,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997545298115166410/peeltrident.png",
+    "creator": "Bnuuy"
 }

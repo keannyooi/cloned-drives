@@ -1,9 +1,6 @@
 {
     "rq": 93,
-    "make": [
-        "Manhart",
-        "BMW"
-    ],
+    "make": ["Manhart","BMW"],
     "model": "MH5 GTR",
     "modelYear": 2021,
     "country": "DE",
@@ -12,10 +9,7 @@
     "handling": 92,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner",
-        "Super Sedan"
-    ],
+    "tags": ["Tuner","Super Sedan"],
     "isPrize": false,
     "weight": 1830,
     "gc": "Low",
@@ -27,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 93.1,
     "ola": 84.44,
-    "description": "Card by Bnuuy.",
+    "description": "None.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/976510086061117520/ManhartMH5GTR.png",
     "333TopSpeed": 208,
     "3330to60": 2.6,
@@ -44,6 +38,6 @@
     "699TopSpeed": 210,
     "6990to60": 2.3,
     "699Handling": 102,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997532932489097337/MH5GTR.png",
+    "creator": "Bnuuy"
 }
