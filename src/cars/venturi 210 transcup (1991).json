@@ -1,0 +1,50 @@
+{
+    "rq": 40,
+    "make": "Venturi",
+    "model": "210 Transcup",
+    "modelYear": 1991,
+    "country": "MC",
+    "topSpeed": 154,
+    "0to60": 6.9,
+    "handling": 73,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Rest of The World"],
+    "isPrize": false,
+
+    "weight": 1365,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 58.47,
+    "ola": 62.32,
+    "description": "10 more hp for good measure as well in the removable top.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/978098238836068372/990DCCBF-C0D2-4F0A-9AC9-08547EC1B190.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1006049794319470674/Venturi210Transcup.png",
+    "creator": "Spence",
+
+    "333TopSpeed": 157,
+    "3330to60": 6.6,
+    "333Handling": 75,
+
+    "666TopSpeed": 161,
+    "6660to60": 6.2,
+    "666Handling": 78,
+
+    "699TopSpeed": 161,
+    "6990to60": 5.9,
+    "699Handling": 81,
+
+    "969TopSpeed": 164,
+    "9690to60": 6.2,
+    "969Handling": 81,
+
+    "996TopSpeed": 164,
+    "9960to60": 5.9,
+    "996Handling": 78
+}

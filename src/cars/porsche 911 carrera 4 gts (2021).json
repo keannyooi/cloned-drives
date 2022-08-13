@@ -1,0 +1,50 @@
+{
+    "rq": 90,
+    "make": "Porsche",
+    "model": "911 Carrera 4 GTS",
+    "modelYear": 2021,
+    "country": "DE",
+    "topSpeed": 192,
+    "0to60": 2.9,
+    "handling": 92,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Supercar"],
+    "isPrize": false,
+
+    "weight": 1560,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 69.04,
+    "ola": 75.17,
+    "description": "None.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/938016708667527188/911C4GTS.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1007988095985143818/992Carrera4GTS.png",
+    "creator": "Bnuuy",
+
+    "333TopSpeed": 195,
+    "3330to60": 2.8,
+    "333Handling": 95,
+
+    "666TopSpeed": 197,
+    "6660to60": 2.6,
+    "666Handling": 98,
+
+    "996TopSpeed": 200,
+    "9960to60": 2.5,
+    "996Handling": 98,
+
+    "969TopSpeed": 200,
+    "9690to60": 2.6,
+    "969Handling": 102,
+
+    "699TopSpeed": 197,
+    "6990to60": 2.5,
+    "699Handling": 102
+}

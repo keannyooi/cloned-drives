@@ -9,11 +9,7 @@
     "handling": 90,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Track Day",
-        "Wild Ride",
-        "Supercar"
-    ],
+    "tags": ["Track Day","Supercar"],
     "isPrize": true,
     "weight": 975,
     "gc": "Low",
@@ -25,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 127.27,
     "ola": 96.55,
-    "description": "TVR's wildest beast. By Bnuuy",
+    "description": "TVR's wildest beast.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819944487634599956/TVRSPOD12.png",
     "333TopSpeed": 242,
     "3330to60": 2.8,
@@ -42,6 +38,6 @@
     "699TopSpeed": 244,
     "6990to60": 2.5,
     "699Handling": 100,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997561129213644870/TVRSpeed12.png",
+    "creator": "Bnuuy"
 }

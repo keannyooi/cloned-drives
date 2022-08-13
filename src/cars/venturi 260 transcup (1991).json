@@ -1,0 +1,50 @@
+{
+    "rq": 46,
+    "make": "Venturi",
+    "model": "260 Transcup",
+    "modelYear": 1991,
+    "country": "MC",
+    "topSpeed": 160,
+    "0to60": 6.2,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Rest of The World"],
+    "isPrize": false,
+
+    "weight": 1375,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 70.19,
+    "ola": 69.39,
+    "description": "The ideal Venturi open-top experience that you can enjoy around the French riviera.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/978098395988250694/6134E028-9DD2-4496-9852-05B5FA0867E3.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1006049816566059018/Venturi260Transcup.png",
+    "creator": "Spence",
+
+    "333TopSpeed": 163,
+    "3330to60": 5.9,
+    "333Handling": 77,
+
+    "666TopSpeed": 167,
+    "6660to60": 5.6,
+    "666Handling": 80,
+
+    "699TopSpeed": 167,
+    "6990to60": 5.3,
+    "699Handling": 83,
+
+    "969TopSpeed": 170,
+    "9690to60": 5.6,
+    "969Handling": 83,
+
+    "996TopSpeed": 170,
+    "9960to60": 5.3,
+    "996Handling": 80
+}

@@ -1,0 +1,50 @@
+{
+    "rq": 43,
+    "make": "Venturi",
+    "model": "210",
+    "modelYear": 1991,
+    "country": "MC",
+    "topSpeed": 152,
+    "0to60": 6.6,
+    "handling": 74,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Rest of The World"],
+    "isPrize": false,
+
+    "weight": 1295,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 61.62,
+    "ola": 62.12,
+    "description": "10 more hp for good measure.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/978098168220778566/44921A26-C271-45F5-B69F-D133F84AC298.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1006049762954448966/Venturi210.png",
+    "creator": "Spence",
+
+    "333TopSpeed": 155,
+    "3330to60": 6.3,
+    "333Handling": 76,
+
+    "666TopSpeed": 159,
+    "6660to60": 5.9,
+    "666Handling": 79,
+
+    "699TopSpeed": 159,
+    "6990to60": 5.6,
+    "699Handling": 82,
+
+    "969TopSpeed": 162,
+    "9690to60": 5.9,
+    "969Handling": 82,
+
+    "996TopSpeed": 152,
+    "9960to60": 5.6,
+    "996Handling": 79
+}

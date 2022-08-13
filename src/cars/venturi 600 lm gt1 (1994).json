@@ -1,0 +1,50 @@
+{
+    "rq": 84,
+    "make": "Venturi",
+    "model": "600 LM GT1",
+    "modelYear": 1994,
+    "country": "MC",
+    "topSpeed": 205,
+    "0to60": 3.4,
+    "handling": 95,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport","Rest of The World"],
+    "isPrize": false,
+
+    "weight": 1130,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 109.68,
+    "ola": 79.41,
+    "description": "A much better Venturi race car made for 1994 FIA GT1 season and performed decently successful.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/978099463988068382/F369936A-3822-48E6-B5B1-B1C3B90D1871.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1006050417429463121/Venturi600LMGT1.png",
+    "creator": "Spence",
+
+    "333TopSpeed": 208,
+    "3330to60": 3.2,
+    "333Handling": 98,
+
+    "666TopSpeed": 210,
+    "6660to60": 3.1,
+    "666Handling": 101,
+
+    "699TopSpeed": 210,
+    "6990to60": 2.9,
+    "699Handling": 105,
+
+    "969TopSpeed": 213,
+    "9690to60": 3.1,
+    "969Handling": 105,
+
+    "996TopSpeed": 213,
+    "9960to60": 2.9,
+    "996Handling": 101
+}

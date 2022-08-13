@@ -1,0 +1,50 @@
+{
+    "rq": 70,
+    "make": "Venturi",
+    "model": "Fetish",
+    "modelYear": 2011,
+    "country": "MC",
+    "topSpeed": 124,
+    "0to60": 3.9,
+    "handling": 87,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Unique","Rest of The World"],
+    "isPrize": false,
+
+    "weight": 1125,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Electric",
+    "mra": 78.33,
+    "ola": 77.68,
+    "description": "With the electric boost of horsepowers, you can have more fun in your activity with it.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/978164668780654622/VenturiFetish2011.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1006050576846557294/VenturiFetish2011.png",
+    "creator": "Spence",
+
+    "333TopSpeed": 128,
+    "3330to60": 3.7,
+    "333Handling": 90,
+
+    "666TopSpeed": 132,
+    "6660to60": 3.5,
+    "666Handling": 93,
+
+    "699TopSpeed": 132,
+    "6990to60": 3.3,
+    "699Handling": 97,
+
+    "969TopSpeed": 137,
+    "9690to60": 3.5,
+    "969Handling": 97,
+
+    "996TopSpeed": 137,
+    "9960to60": 3.3,
+    "996Handling": 93
+}

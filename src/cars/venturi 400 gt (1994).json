@@ -1,0 +1,50 @@
+{
+    "rq": 71,
+    "make": "Venturi",
+    "model": "400 GT",
+    "modelYear": 1994,
+    "country": "MC",
+    "topSpeed": 180,
+    "0to60": 4.2,
+    "handling": 88,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Supercar","Rest of The World"],
+    "isPrize": false,
+
+    "weight": 1300,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 86.67,
+    "ola": 82.75,
+    "description": "A Ferrari F40 knockoff from France.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/978099118759092245/F53FE316-1486-44FC-AEEE-A9CA2AB1BBD3.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1006050194028240936/Venturi400GT.png",
+    "creator": "Spence",
+
+    "333TopSpeed": 183,
+    "3330to60": 4.0,
+    "333Handling": 91,
+
+    "666TopSpeed": 186,
+    "6660to60": 3.8,
+    "666Handling": 94,
+
+    "699TopSpeed": 186,
+    "6990to60": 3.6,
+    "699Handling": 98,
+
+    "969TopSpeed": 189,
+    "9690to60": 3.8,
+    "969Handling": 98,
+
+    "996TopSpeed": 189,
+    "9960to60": 3.6,
+    "996Handling": 94
+}

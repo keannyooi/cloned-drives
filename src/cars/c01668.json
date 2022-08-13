@@ -5,16 +5,11 @@
     "modelYear": 1998,
     "country": "JP",
     "topSpeed": 159,
-    "0to60": 3,
+    "0to60": 3.0,
     "handling": 90,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner",
-        "Super Sedan",
-        "Unique",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Tuner","Super Sedan","Unique","The Japanese Odyssey"],
     "isPrize": true,
     "weight": 1260,
     "gc": "Medium",
@@ -26,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 71.43,
     "ola": 80,
-    "description": "Card by Bnuuy.",
+    "description": "None.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/930858294308921344/evo5rs450.png",
     "333TopSpeed": 162,
     "3330to60": 2.9,
@@ -43,6 +38,6 @@
     "699TopSpeed": 166,
     "6990to60": 2.6,
     "699Handling": 100,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997560454337527848/evo5rs450.png",
+    "creator": "Bnuuy"
 }

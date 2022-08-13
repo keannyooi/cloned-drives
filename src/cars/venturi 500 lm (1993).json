@@ -1,0 +1,50 @@
+{
+    "rq": 81,
+    "make": "Venturi",
+    "model": "500 LM",
+    "modelYear": 1993,
+    "country": "MC",
+    "topSpeed": 193,
+    "0to60": 3.5,
+    "handling": 94,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport","Rest of The World"],
+    "isPrize": false,
+
+    "weight": 1130,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 92.11,
+    "ola": 80,
+    "description": "A French GT race car that raced in championship with somewhat competitive pace in 93-94.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/978099410321960990/34BA7150-E96A-4C55-9881-16985823681E.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1006050321337962556/Venturi500LM.png",
+    "creator": "Spence",
+
+    "333TopSpeed": 196,
+    "3330to60": 3.3,
+    "333Handling": 97,
+
+    "666TopSpeed": 198,
+    "6660to60": 3.2,
+    "666Handling": 100,
+
+    "699TopSpeed": 198,
+    "6990to60": 3.0,
+    "699Handling": 104,
+
+    "969TopSpeed": 201,
+    "9690to60": 3.2,
+    "969Handling": 104,
+
+    "996TopSpeed": 201,
+    "9960to60": 3.0,
+    "996Handling": 100
+}

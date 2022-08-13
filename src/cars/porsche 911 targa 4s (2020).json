@@ -1,0 +1,50 @@
+{
+    "rq": 82,
+    "make": "Porsche",
+    "model": "911 Targa 4S",
+    "modelYear": 2020,
+    "country": "DE",
+    "topSpeed": 189,
+    "0to60": 3.7,
+    "handling": 91,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1640,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 88.1,
+    "ola": 75.68,
+    "description": "None.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/976511994859491328/911Targa4S.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1007987994080313414/992Targa4S.png",
+    "creator": "Bnuuy",
+
+    "333TopSpeed": 192,
+    "3330to60": 3.5,
+    "333Handling": 94,
+
+    "666TopSpeed": 195,
+    "6660to60": 3.3,
+    "666Handling": 97,
+
+    "996TopSpeed": 197,
+    "9960to60": 3.1,
+    "996Handling": 97,
+
+    "969TopSpeed": 197,
+    "9690to60": 3.3,
+    "969Handling": 101,
+
+    "699TopSpeed": 195,
+    "6990to60": 3.1,
+    "699Handling": 101
+}

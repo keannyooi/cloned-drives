@@ -1,0 +1,50 @@
+{
+    "rq": 77,
+    "make": "Venturi",
+    "model": "260 Paris-Dakar Prototype",
+    "modelYear": 1991,
+    "country": "MC",
+    "topSpeed": 125,
+    "0to60": 5.2,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Off-Road",
+    "tags": ["Motorsport", "Unique","Rest of The World"],
+    "isPrize": false,
+
+    "weight": 1200,
+    "gc": "High",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 69.33,
+    "ola": 76.92,
+    "description": "Four people are planning to enter the Venturi 260 to Dakar Rally by jacking it up, but it was folded due to lack of budget.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/978099348435005520/B4A9EB49-58C1-4257-A232-D3B5BEE3E5EA.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1006050290539167855/Venturi260ParisDakarPrototype.png",
+    "creator": "Spence",
+
+    "333TopSpeed": 129,
+    "3330to60": 4.9,
+    "333Handling": 77,
+
+    "666TopSpeed": 133,
+    "6660to60": 4.7,
+    "666Handling": 80,
+
+    "699TopSpeed": 133,
+    "6990to60": 4.4,
+    "699Handling": 83,
+
+    "969TopSpeed": 137,
+    "9690to60": 4.7,
+    "969Handling": 83,
+
+    "996TopSpeed": 137,
+    "9960to60": 4.4,
+    "996Handling": 80
+}

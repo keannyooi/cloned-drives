@@ -1,0 +1,50 @@
+{
+    "rq": 65,
+    "make": "Venturi",
+    "model": "Volage",
+    "modelYear": 2008,
+    "country": "MC",
+    "topSpeed": 93,
+    "0to60": 4.8,
+    "handling": 84,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Unique","Rest of The World"],
+    "isPrize": true,
+
+    "weight": 1075,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 21.00,
+    "ola": 70.42,
+    "description": "With the help of Michelin, innovation is the main focus for this contraption.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/978285219419394058/VenturiVolage.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1006050701190897664/VenturiVolage.png",
+    "creator": "Spence",
+
+    "333TopSpeed": 99,
+    "3330to60": 4.6,
+    "333Handling": 87,
+
+    "666TopSpeed": 104,
+    "6660to60": 4.3,
+    "666Handling": 90,
+
+    "699TopSpeed": 104,
+    "6990to60": 4.1,
+    "699Handling": 93,
+
+    "969TopSpeed": 110,
+    "9690to60": 4.3,
+    "969Handling": 93,
+
+    "996TopSpeed": 110,
+    "9960to60": 4.1,
+    "996Handling": 90
+}

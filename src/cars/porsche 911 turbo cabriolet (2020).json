@@ -1,0 +1,50 @@
+{
+    "rq": 91,
+    "make": "Porsche",
+    "model": "911 Turbo Cabriolet",
+    "modelYear": 2020,
+    "country": "DE",
+    "topSpeed": 199,
+    "0to60": 2.8,
+    "handling": 91,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1710,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 80,
+    "ola": 82.42,
+    "description": "None.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/976511779402297354/911Turbocabrio.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1007987697895346288/992TurboCab.png",
+    "creator": "Bnuuy",
+
+    "333TopSpeed": 202,
+    "3330to60": 2.7,
+    "333Handling": 94,
+
+    "666TopSpeed": 204,
+    "6660to60": 2.5,
+    "666Handling": 97,
+
+    "996TopSpeed": 207,
+    "9960to60": 2.4,
+    "996Handling": 97,
+
+    "969TopSpeed": 207,
+    "9690to60": 2.5,
+    "969Handling": 101,
+
+    "699TopSpeed": 204,
+    "6990to60": 2.4,
+    "699Handling": 101
+}

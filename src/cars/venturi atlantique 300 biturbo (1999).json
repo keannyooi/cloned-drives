@@ -1,0 +1,50 @@
+{
+    "rq": 68,
+    "make": "Venturi",
+    "model": "Atlantique 300 Biturbo",
+    "modelYear": 1999,
+    "country": "MC",
+    "topSpeed": 169,
+    "0to60": 4.6,
+    "handling": 81,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Rest of The World"],
+    "isPrize": false,
+
+    "weight": 1300,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 71.36,
+    "ola": 76.75,
+    "description": "Add another turbo and you get 30 more hp and smoother power delivery.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/978099047246213140/28593257-D1B2-4AF5-A92D-544B5882E419.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1006050142878707792/VenturiAtlantique300Biturbo.png",
+    "creator": "Spence",
+
+    "333TopSpeed": 172,
+    "3330to60": 4.4,
+    "333Handling": 84,
+
+    "666TopSpeed": 175,
+    "6660to60": 4.1,
+    "666Handling": 86,
+
+    "699TopSpeed": 175,
+    "6990to60": 3.9,
+    "699Handling": 90,
+
+    "969TopSpeed": 178,
+    "9690to60": 4.1,
+    "969Handling": 90,
+
+    "996TopSpeed": 178,
+    "9960to60": 3.9,
+    "996Handling": 86
+}

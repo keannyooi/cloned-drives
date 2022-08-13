@@ -1,0 +1,50 @@
+{
+    "rq": 61,
+    "make": "Venturi",
+    "model": "Atlantique 300",
+    "modelYear": 1996,
+    "country": "MC",
+    "topSpeed": 169,
+    "0to60": 5.3,
+    "handling": 80,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Rest of The World"],
+    "isPrize": false,
+
+    "weight": 1250,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 74.74,
+    "ola": 77.31,
+    "description": "A fully reworked Venturi, taking inspiration of its styling from various Ferrari vehicles.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/978098963234324490/CDD10476-8041-4D28-8E44-0C8F21E31E90.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1006050099224395847/VenturiAtlantique300.png",
+    "creator": "Spence",
+
+    "333TopSpeed": 172,
+    "3330to60": 5.0,
+    "333Handling": 83,
+
+    "666TopSpeed": 175,
+    "6660to60": 4.8,
+    "666Handling": 85,
+
+    "699TopSpeed": 175,
+    "6990to60": 4.5,
+    "699Handling": 89,
+
+    "969TopSpeed": 178,
+    "9690to60": 4.8,
+    "969Handling": 89,
+
+    "996TopSpeed": 178,
+    "9960to60": 4.5,
+    "996Handling": 85
+}

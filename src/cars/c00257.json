@@ -9,10 +9,7 @@
     "handling": 94,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Track Day",
-        "Muscle Car"
-    ],
+    "tags": ["Track Day","Muscle Car"],
     "isPrize": true,
     "weight": 1733,
     "gc": "Low",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 80,
     "ola": 91.67,
-    "description": "The ultimate hardcore track muscle car from Chevrolet. Card by spence",
+    "description": "The ultimate hardcore track muscle car from Chevrolet.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/826263001966444544/image0.jpg",
     "333TopSpeed": 193,
     "3330to60": 3.4,
@@ -41,6 +38,6 @@
     "699TopSpeed": 195,
     "6990to60": 3.1,
     "699Handling": 104,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1008025388443783258/camaroZL1Rthing.png",
+    "creator": "Spence"
 }

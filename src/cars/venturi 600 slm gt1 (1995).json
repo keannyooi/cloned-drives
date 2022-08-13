@@ -1,0 +1,50 @@
+{
+    "rq": 86,
+    "make": "Venturi",
+    "model": "600 SLM GT1",
+    "modelYear": 1995,
+    "country": "MC",
+    "topSpeed": 210,
+    "0to60": 3.3,
+    "handling": 95,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport","Rest of The World"],
+    "isPrize": true,
+
+    "weight": 1130,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 117.86,
+    "ola": 81.82,
+    "description": "A further evolution of the 600 LM that featured subtle changed and 50 more hp.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/978099526441255012/42E22BC4-4881-4981-9CFA-A09B13683358.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1006050477298941952/Venturi600SLMGT1.png",
+    "creator": "Spence",
+
+    "333TopSpeed": 212,
+    "3330to60": 3.1,
+    "333Handling": 98,
+
+    "666TopSpeed": 215,
+    "6660to60": 3.0,
+    "666Handling": 101,
+
+    "699TopSpeed": 215,
+    "6990to60": 2.8,
+    "699Handling": 105,
+
+    "969TopSpeed": 217,
+    "9690to60": 3.0,
+    "969Handling": 105,
+
+    "996TopSpeed": 217,
+    "9960to60": 2.8,
+    "996Handling": 101
+}

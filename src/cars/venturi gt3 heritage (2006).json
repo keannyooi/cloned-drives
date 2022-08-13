@@ -1,0 +1,50 @@
+{
+    "rq": 77,
+    "make": "Venturi",
+    "model": "GT3 Heritage",
+    "modelYear": 2006,
+    "country": "MC",
+    "topSpeed": 186,
+    "0to60": 4.1,
+    "handling": 96,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport","Rest of The World"],
+    "isPrize": true,
+
+    "weight": 1100,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 92.11,
+    "ola": 87.8,
+    "description": "Despite the Venturi brand focusing on electric technology, they even planned to compete on the inaugural FIA GT3 season. Unfortunately, it didn't happened.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/978160859752837120/IMG_1455.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1006050512661123113/VenturiGT3Heritage.png",
+    "creator": "Spence",
+
+    "333TopSpeed": 189,
+    "3330to60": 3.9,
+    "333Handling": 99,
+
+    "666TopSpeed": 192,
+    "6660to60": 3.7,
+    "666Handling": 102,
+
+    "699TopSpeed": 192,
+    "6990to60": 3.5,
+    "699Handling": 107,
+
+    "969TopSpeed": 194,
+    "9690to60": 3.7,
+    "969Handling": 107,
+
+    "996TopSpeed": 194,
+    "9960to60": 3.5,
+    "996Handling": 102
+}

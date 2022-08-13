@@ -5,16 +5,11 @@
     "modelYear": 2012,
     "country": "DE",
     "topSpeed": 236,
-    "0to60": 3,
+    "0to60": 3.0,
     "handling": 93,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Hypercar",
-        "Track Day",
-        "Unique",
-        "Ultra Expensive"
-    ],
+    "tags": ["Hypercar","Track Day","Unique","Ultra Expensive"],
     "isPrize": true,
     "weight": 1360,
     "gc": "Low",
@@ -26,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 107.14,
     "ola": 86.67,
-    "description": "Unlike most other Rufs, it’s not based on a Porsche, but a bespoke platform developed by RUF and Multimatic. Card by Bnuuy.",
+    "description": "Unlike most other Rufs, it’s not based on a Porsche, but a bespoke platform developed by RUF and Multimatic.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/850409084247081001/ctr3clubsport.png",
     "333TopSpeed": 238,
     "3330to60": 2.9,
@@ -43,6 +38,6 @@
     "699TopSpeed": 240,
     "6990to60": 2.6,
     "699Handling": 103,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997561169227296850/CTR3clubsport.png",
+    "creator": "Bnuuy"
 }
