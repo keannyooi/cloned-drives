@@ -9,13 +9,7 @@
     "handling": 64,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": [
-        "Unique",
-        "Oddity",
-        "Concept",
-        "Eco-Friendly",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Unique","Oddity","Concept","Eco-Friendly","The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1280,
     "gc": "Medium",
@@ -27,7 +21,7 @@
     "fuelType": "Electric",
     "mra": 3.33,
     "ola": 66.67,
-    "description": "Card by Bnuuy.",
+    "description": "None.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/930221404778008586/argoconc.png",
     "333TopSpeed": 87,
     "3330to60": 12.8,
@@ -44,6 +38,6 @@
     "699TopSpeed": 93,
     "6990to60": 11.5,
     "699Handling": 71,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997545966267813916/icargo.png",
+    "creator": "Bnuuy"
 }

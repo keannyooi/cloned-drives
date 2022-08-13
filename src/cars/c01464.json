@@ -1,9 +1,6 @@
 {
     "rq": 109,
-    "make": [
-        "Rod Millen",
-        "Toyota"
-    ],
+    "make": ["Rod Millen","Toyota"],
     "model": "Pikes Peak Tacoma",
     "modelYear": 1997,
     "country": "US",
@@ -12,10 +9,7 @@
     "handling": 94,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": [
-        "Motorsport",
-        "Unique"
-    ],
+    "tags": ["Motorsport","Unique"],
     "isPrize": true,
     "weight": 860,
     "gc": "Low",
@@ -27,10 +21,10 @@
     "fuelType": "Petrol",
     "mra": 84.33,
     "ola": 88,
-    "description": "Card by Bnuuy.",
+    "description": "None.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/947543427225100308/TacomaPP3.png",
     "333TopSpeed": 146,
-    "3330to60": 2,
+    "3330to60": 2.0,
     "333Handling": 97,
     "666TopSpeed": 149,
     "6660to60": 1.9,
@@ -44,6 +38,6 @@
     "699TopSpeed": 149,
     "6990to60": 1.8,
     "699Handling": 104,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997559818141311086/TacomaPP.png",
+    "creator": "Bnuuy"
 }

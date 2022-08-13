@@ -9,10 +9,7 @@
     "handling": 93,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Supercar",
-        "Track Day"
-    ],
+    "tags": ["Supercar","Track Day"],
     "isPrize": true,
     "weight": 1370,
     "gc": "Low",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 92.11,
     "ola": 80,
-    "description": "A GT3 shell with RS internals. Card by Bnuuy",
+    "description": "A GT3 shell with RS internals.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/848201576460058715/911Rwithgradent.png",
     "333TopSpeed": 203,
     "3330to60": 3.3,
@@ -33,14 +30,14 @@
     "6660to60": 3.2,
     "666Handling": 99,
     "996TopSpeed": 208,
-    "9960to60": 3,
+    "9960to60": 3.0,
     "996Handling": 99,
     "969TopSpeed": 208,
     "9690to60": 3.2,
     "969Handling": 103,
     "699TopSpeed": 205,
-    "6990to60": 3,
+    "6990to60": 3.0,
     "699Handling": 103,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997547359120654426/911R.png",
+    "creator": "Bnuuy"
 }

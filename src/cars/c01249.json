@@ -1,9 +1,6 @@
 {
     "rq": 101,
-    "make": [
-        "TechArt",
-        "Porsche"
-    ],
+    "make": ["TechArt","Porsche"],
     "model": "GTstreet R",
     "modelYear": 2021,
     "country": "DE",
@@ -12,11 +9,7 @@
     "handling": 94,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Unique",
-        "Track Day",
-        "Tuner"
-    ],
+    "tags": ["Unique","Track Day","Tuner"],
     "isPrize": true,
     "weight": 1675,
     "gc": "Low",
@@ -28,23 +21,23 @@
     "fuelType": "Petrol",
     "mra": 91.67,
     "ola": 72.73,
-    "description": "Card by Bnuuy.",
+    "description": "None.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/857393939987824720/techartgtstreetr21.png",
     "333TopSpeed": 219,
     "3330to60": 2.1,
     "333Handling": 97,
     "666TopSpeed": 222,
-    "6660to60": 2,
+    "6660to60": 2.0,
     "666Handling": 100,
     "996TopSpeed": 224,
     "9960to60": 1.9,
     "996Handling": 100,
     "969TopSpeed": 224,
-    "9690to60": 2,
+    "9690to60": 2.0,
     "969Handling": 104,
     "699TopSpeed": 222,
     "6990to60": 1.9,
     "699Handling": 104,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997559975536771112/GTStreetR.png",
+    "creator": "Bnuuy"
 }

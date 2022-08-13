@@ -1,9 +1,6 @@
 {
     "rq": 99,
-    "make": [
-        "TechArt",
-        "Porsche"
-    ],
+    "make": ["TechArt","Porsche"],
     "model": "911 Turbo S",
     "modelYear": 2020,
     "country": "DE",
@@ -12,10 +9,7 @@
     "handling": 93,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner",
-        "Supercar"
-    ],
+    "tags": ["Tuner","Supercar"],
     "isPrize": false,
     "weight": 1625,
     "gc": "Low",
@@ -27,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 86.21,
     "ola": 73.33,
-    "description": "Tuners go brr. Card by Bnuuy.",
+    "description": "Tuners go brr.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/951463318219026452/techartTubroS.png",
     "333TopSpeed": 208,
     "3330to60": 2.2,
@@ -36,14 +30,14 @@
     "6660to60": 2.1,
     "666Handling": 99,
     "996TopSpeed": 213,
-    "9960to60": 2,
+    "9960to60": 2.0,
     "996Handling": 99,
     "969TopSpeed": 213,
     "9690to60": 2.1,
     "969Handling": 103,
     "699TopSpeed": 210,
-    "6990to60": 2,
+    "6990to60": 2.0,
     "699Handling": 103,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997560118340231208/TechArt992TUbroS2.png",
+    "creator": "Bnuuy"
 }

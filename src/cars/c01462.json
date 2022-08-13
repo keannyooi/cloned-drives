@@ -9,12 +9,7 @@
     "handling": 97,
     "driveType": "4WD",
     "tyreType": "Slick",
-    "tags": [
-        "Concept",
-        "Unique",
-        "Motorsport",
-        "Eco-Friendly"
-    ],
+    "tags": ["Concept","Unique","Motorsport","Eco-Friendly"],
     "isPrize": true,
     "weight": 1500,
     "gc": "Low",
@@ -26,7 +21,7 @@
     "fuelType": "Electric",
     "mra": 104.34,
     "ola": 83.33,
-    "description": "Card by Bnuuy.",
+    "description": "None.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/945444828437692456/NewMissionR.png",
     "333TopSpeed": 189,
     "3330to60": 2.3,
@@ -35,14 +30,14 @@
     "6660to60": 2.2,
     "666Handling": 103,
     "996TopSpeed": 194,
-    "9960to60": 2,
+    "9960to60": 2.0,
     "996Handling": 103,
     "969TopSpeed": 194,
     "9690to60": 2.2,
     "969Handling": 108,
     "699TopSpeed": 192,
-    "6990to60": 2,
+    "6990to60": 2.0,
     "699Handling": 108,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997560160455249970/MissionR.png",
+    "creator": "Bnuuy"
 }

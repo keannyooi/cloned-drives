@@ -1,9 +1,6 @@
 {
     "rq": 100,
-    "make": [
-        "TechArt",
-        "Porsche"
-    ],
+    "make": ["TechArt","Porsche"],
     "model": "GTStreet R Cabriolet",
     "modelYear": 2021,
     "country": "DE",
@@ -12,10 +9,7 @@
     "handling": 94,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner",
-        "Supercar"
-    ],
+    "tags": ["Tuner", "Supercar"],
     "isPrize": false,
     "weight": 1705,
     "gc": "Low",
@@ -27,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 91.63,
     "ola": 73.04,
-    "description": "Card by Bnuuy.",
+    "description": "None.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/951463398095355924/techartgtstreetrcabrio.png",
     "333TopSpeed": 219,
     "3330to60": 2.2,
@@ -36,14 +30,14 @@
     "6660to60": 2.1,
     "666Handling": 100,
     "996TopSpeed": 224,
-    "9960to60": 2,
+    "9960to60": 2.0,
     "996Handling": 100,
     "969TopSpeed": 224,
     "9690to60": 2.1,
     "969Handling": 104,
     "699TopSpeed": 222,
-    "6990to60": 2,
+    "6990to60": 2.0,
     "699Handling": 104,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997560040783368242/GTStreetRCAb.png",
+    "creator": "Bnuuy"
 }

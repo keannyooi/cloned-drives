@@ -1,22 +1,15 @@
 {
     "rq": 108,
-    "make": [
-        "TechArt",
-        "Porsche"
-    ],
+    "make": ["TechArt","Porsche"],
     "model": "Cayenne Turbo Coupe T2",
     "modelYear": 2019,
     "country": "DE",
     "topSpeed": 186,
-    "0to60": 3,
+    "0to60": 3.0,
     "handling": 90,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": [
-        "Unique",
-        "Supercar",
-        "Tuner"
-    ],
+    "tags": ["Unique","Supercar","Tuner"],
     "isPrize": true,
     "weight": 2170,
     "gc": "High",
@@ -28,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 76.19,
     "ola": 73.33,
-    "description": "The Fastest SUV? Card by Bnuuy.",
+    "description": "The Fastest SUV?",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/857961226532814868/cuttingcocc.png",
     "333TopSpeed": 189,
     "3330to60": 2.9,
@@ -45,6 +38,6 @@
     "699TopSpeed": 192,
     "6990to60": 2.6,
     "699Handling": 100,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997559876240805948/TechArtCayenneT2.png",
+    "creator": "Bnuuy"
 }

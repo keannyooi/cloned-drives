@@ -9,12 +9,7 @@
     "handling": 89,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Unique",
-        "Innovative",
-        "Rest of The World",
-        "Supercar"
-    ],
+    "tags": ["Unique","Innovative","Rest of The World","Supercar"],
     "isPrize": true,
     "weight": 1175,
     "gc": "Low",
@@ -26,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 90.44,
     "ola": 97.44,
-    "description": "Card by Aqo.",
+    "description": "None.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/850294628045422642/cc8s.png",
     "333TopSpeed": 243,
     "3330to60": 3.7,
@@ -43,6 +38,6 @@
     "699TopSpeed": 245,
     "6990to60": 3.3,
     "699Handling": 99,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997546640489599088/CC8S.png",
+    "creator": "Aqo"
 }

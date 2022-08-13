@@ -5,15 +5,11 @@
     "modelYear": 1999,
     "country": "IT",
     "topSpeed": 185,
-    "0to60": 4,
+    "0to60": 4.0,
     "handling": 87,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Eargasm",
-        "Supercar",
-        "Unique"
-    ],
+    "tags": ["Eargasm","Supercar","Unique"],
     "isPrize": false,
     "weight": 1250,
     "gc": "Low",
@@ -25,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 97.56,
     "ola": 100,
-    "description": "The original politically incorrect Italian. By Bnuuy.",
+    "description": "The original politically incorrect Italian.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/952198886187995186/ZondaC12.png",
     "333TopSpeed": 188,
     "3330to60": 3.8,
@@ -42,6 +38,6 @@
     "699TopSpeed": 191,
     "6990to60": 3.4,
     "699Handling": 97,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997548010202472448/zondac1299.png",
+    "creator": "Bnuuy"
 }
