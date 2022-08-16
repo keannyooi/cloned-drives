@@ -9,11 +9,7 @@
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Motorsport",
-        "Ultra Expensive",
-        "Unique"
-    ],
+    "tags": ["Motorsport","Ultra Expensive","Unique"],
     "isPrize": true,
     "weight": 900,
     "gc": "Low",
@@ -25,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 135.71,
     "ola": 102.56,
-    "description": "Realizzata in soli tre mesi dall équipe guidata da Mauro Forghieri, montava il motore V12 da quasi 5 litri completamente in lega leggera con quattro valvole per cilindro. Card by Bnuuy",
+    "description": "Realizzata in soli tre mesi dall équipe guidata da Mauro Forghieri, montava il motore V12 da quasi 5 litri completamente in lega leggera con quattro valvole per cilindro.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819934160029351946/512S.png",
     "333TopSpeed": 213,
     "3330to60": 3.6,
@@ -42,6 +38,6 @@
     "699TopSpeed": 216,
     "6990to60": 3.2,
     "699Handling": 101,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997569360887566427/512S.png",
+    "creator": "Bnuuy"
 }

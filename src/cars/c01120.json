@@ -9,11 +9,7 @@
     "handling": 88,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Concept",
-        "Eco-Friendly",
-        "Silver Screen"
-    ],
+    "tags": ["Concept","Eco-Friendly","Silver Screen"],
     "isPrize": false,
     "weight": 2000,
     "gc": "Low",
@@ -25,7 +21,7 @@
     "fuelType": "Electric",
     "mra": 83.33,
     "ola": 57.15,
-    "description": "E. Card by Bnuuy.",
+    "description": "E.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820726179274948618/EConcept.png",
     "333TopSpeed": 158,
     "3330to60": 3.3,
@@ -34,14 +30,14 @@
     "6660to60": 3.2,
     "666Handling": 94,
     "996TopSpeed": 165,
-    "9960to60": 3,
+    "9960to60": 3.0,
     "996Handling": 94,
     "969TopSpeed": 165,
     "9690to60": 3.2,
     "969Handling": 98,
     "699TopSpeed": 162,
-    "6990to60": 3,
+    "6990to60": 3.0,
     "699Handling": 98,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997564311054581841/MissionE.png",
+    "creator": "Bnuuy"
 }

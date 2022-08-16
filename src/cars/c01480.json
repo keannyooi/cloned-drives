@@ -9,9 +9,7 @@
     "handling": 46,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": [
-        "Oddity"
-    ],
+    "tags": ["Oddity"],
     "isPrize": false,
     "weight": 330,
     "gc": "Low",
@@ -22,8 +20,8 @@
     "enginePos": "Middle",
     "fuelType": "Petrol",
     "mra": 0,
-    "ola": 100,
-    "description": "Cute. Card by Bnuuy.",
+    "ola": 33.33,
+    "description": "Cute.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/912480457428443167/ZoeZipperConvertibl.png",
     "333TopSpeed": 54,
     "3330to60": 99.9,
@@ -40,6 +38,6 @@
     "699TopSpeed": 62,
     "6990to60": 51,
     "699Handling": 51,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997564562436010044/ZoeZipper.png",
+    "creator": "Bnuuy"
 }

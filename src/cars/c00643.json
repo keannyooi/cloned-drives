@@ -9,12 +9,7 @@
     "handling": 90,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Unique",
-        "Concept",
-        "Eco-Friendly",
-        "Innovative"
-    ],
+    "tags": ["Unique","Concept","Eco-Friendly","Innovative"],
     "isPrize": false,
     "weight": 1800,
     "gc": "Low",
@@ -26,7 +21,7 @@
     "fuelType": "Hybrid",
     "mra": 74.32,
     "ola": 79.99,
-    "description": "One of Lamborghini's first attempts at Phev, turned out well. Card by Bnuuy.",
+    "description": "One of Lamborghini's first attempts at Phev, turned out well.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/848253562471579716/AsterionB.png",
     "333TopSpeed": 202,
     "3330to60": 2.8,
@@ -43,6 +38,6 @@
     "699TopSpeed": 204,
     "6990to60": 2.5,
     "699Handling": 100,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997561926336917505/asterion.png",
+    "creator": "Bnuuy"
 }

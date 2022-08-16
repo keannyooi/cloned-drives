@@ -9,10 +9,7 @@
     "handling": 96,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": [
-        "Motorsport",
-        "Unique"
-    ],
+    "tags": ["Motorsport","Unique"],
     "isPrize": true,
     "weight": 1020,
     "gc": "Low",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 134.48,
     "ola": 89,
-    "description": "The RWD Godzilla. Card by Babanuuy.",
+    "description": "The RWD Godzilla.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/821038963942228038/SuperGT.png",
     "333TopSpeed": 189,
     "3330to60": 3.7,
@@ -41,6 +38,6 @@
     "969TopSpeed": 194,
     "9690to60": 3.5,
     "969Handling": 107,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997569522267586570/GT-RSuperGT.png",
+    "creator": "Bnuuy"
 }

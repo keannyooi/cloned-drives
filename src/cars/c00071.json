@@ -9,13 +9,7 @@
     "handling": 95,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": [
-        "The Royal Collection",
-        "Ultra Expensive",
-        "Unique",
-        "Track Day",
-        "Concept"
-    ],
+    "tags": ["The Royal Collection","Ultra Expensive","Unique","Track Day","Concept"],
     "isPrize": true,
     "weight": 1300,
     "gc": "Low",
@@ -27,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 116.13,
     "ola": 72.22,
-    "description": "The ultimate DB7. Card by Bnuuy.",
+    "description": "The ultimate DB7.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/855243373207224320/db7protoracecar.png",
     "333TopSpeed": 197,
     "3330to60": 3.4,
@@ -44,6 +38,6 @@
     "699TopSpeed": 199,
     "6990to60": 3.1,
     "699Handling": 105,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997563601625808916/DB7V12Racecar.png",
+    "creator": "Bnuuy"
 }
