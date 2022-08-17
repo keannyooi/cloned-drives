@@ -210,6 +210,7 @@ function editFilter(message, filter, args) {
                     break;
                 case "make":
                 case "tags":
+                case "collection":
                 case "bodyStyle":
                     if (!arg2) {
                         const errorMessage = new ErrorMessage({
@@ -297,6 +298,7 @@ function editFilter(message, filter, args) {
                                 \`ismaxed\` - Filter maxed cars.
                                 \`isowned\` - Filter cars that you own.
                                 \`tags\` - Filter by tag. Provide the tag that you want to remove, or type \`all\` to remove all criterias in this category.
+                                \`collection\` - Filter by collection. Provide a valid collection after that.
                                 \`search\` - Filter by keyword in car name.
                                 \`all\` - Remove all filters.`,
                         author: message.author
@@ -326,7 +328,7 @@ function editFilter(message, filter, args) {
                         \`ismaxed\` - Filter maxed cars. Provide a boolean (\`true\` or \`false\`) after that.
                         \`isowned\` - Filter cars that you own. Provide a boolean (\`true\` or \`false\`) after that.
                         \`tags\` - Filter by tag. Provide a valid tag after that.
-                        \`collection\` - Filter by tag. Provide a valid collection after that.
+                        \`collection\` - Filter by collection. Provide a valid collection after that.
                         \`search\` - Filter by a certain keyword inside a car's name. Provide a keyword that is found in a in-game car's name after that.
                         \`remove / disable\` - Remove a filter criteria. Provide a filter category and a value (if necessary) after that.`,
                 author: message.author
