@@ -1,0 +1,49 @@
+{
+    "rq": 90,
+    "make": "Lamborghini",
+    "model": "Huracan STO",
+    "modelYear": 2021,
+    "country": "IT",
+    "topSpeed": 193,
+    "0to60": 2.8,
+    "handling": 94,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Track Day"],
+    "isPrize": false,
+	
+    "weight": 1339,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 94.91,
+    "ola": 92.85,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1007753383479877763/STO.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1007754142321746010/huraSTO.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 196, 
+"3330to60": 2.7, 
+"333Handling": 97,
+
+"666TopSpeed": 198, 
+"6660to60": 2.5, 
+"666Handling": 100,
+
+"699TopSpeed": 198, 
+"6990to60": 2.4, 
+"699Handling": 104,
+
+"969TopSpeed": 201, 
+"9690to60": 2.5, 
+"969Handling": 104,
+
+"996TopSpeed": 201, 
+"9960to60": 2.4, 
+"996Handling": 100
+}

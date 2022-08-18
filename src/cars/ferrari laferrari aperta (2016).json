@@ -1,0 +1,49 @@
+{
+    "rq": 93,
+    "make": "Ferrari",
+    "model": "LaFerrari Aperta",
+    "modelYear": 2016,
+    "country": "IT",
+    "topSpeed": 218,
+    "0to60": 2.7,
+    "handling": 94,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+	
+    "weight": 1400,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 108.43,
+    "ola": 88.88,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1007753484407410859/LaFAperta.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1007754178321453207/laferrariaperta.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 220, 
+"3330to60": 2.6, 
+"333Handling": 97,
+
+"666TopSpeed": 223, 
+"6660to60": 2.4, 
+"666Handling": 100,
+
+"699TopSpeed": 223, 
+"6990to60": 2.3, 
+"699Handling": 104,
+
+"969TopSpeed": 225, 
+"9690to60": 2.4, 
+"969Handling": 104,
+
+"996TopSpeed": 225, 
+"9960to60": 2.3, 
+"996Handling": 100
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 31,
+    "make": "Lada",
+    "model": "Niva Legend Bronto",
+    "modelYear": 2021,
+    "country": "RU",
+    "topSpeed": 88,
+    "0to60": 16.4,
+    "handling": 65,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["Extreme Juggernaut"],
+    "isPrize": false,
+	
+    "weight": 1285,
+    "gc": "High",
+    "seatCount": 4,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 12.25,
+    "ola": 67.07,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1007753634475425872/LadaNivaLegendBronto.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1007754203730550906/nivalegendbronco.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 94, 
+"3330to60": 15.6, 
+"333Handling": 67,
+
+"666TopSpeed": 100, 
+"6660to60": 14.8, 
+"666Handling": 69,
+
+"699TopSpeed": 100, 
+"6990to60": 13.9, 
+"699Handling": 72,
+
+"969TopSpeed": 106, 
+"9690to60": 14.8, 
+"969Handling": 72,
+
+"996TopSpeed": 106, 
+"9960to60": 13.9, 
+"996Handling": 69
+}

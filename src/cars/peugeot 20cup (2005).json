@@ -1,0 +1,51 @@
+{
+    "rq": 63,
+    "make": "Peugeot",
+    "model": "20Cup",
+    "modelYear": 2005,
+    "country": "FR",
+    "topSpeed": 137,
+    "0to60": 5.0,
+    "handling": 89,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Concept", "Unique", "Oddity"],
+    "isPrize": true,
+
+    "weight": 500,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 60.24,
+    "ola": 84,
+    "description": "Who needs one more wheel anyway? Looking at you Polaris and Morgan.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/940656175874183198/8F6B9C24-757B-46B6-B003-B03199B92A2B.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1009414566884679710/20Cup.png",
+    "creator": "Spence",
+
+    "333TopSpeed": 141,
+    "3330to60": 4.8,
+    "333Handling": 92,
+
+    "666TopSpeed": 145,
+    "6660to60": 4.5,
+    "666Handling": 95,
+
+    "969TopSpeed": 148,
+    "9690to60": 4.5,
+    "969Handling": 99,
+	
+	"996TopSpeed": 148,
+	"9960to60": 4.3,
+	"996Handling": 95,
+	
+	"699TopSpeed": 145,
+	"6990to60": 4.3,
+	"699Handling": 99
+	
+}

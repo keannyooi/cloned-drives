@@ -1,0 +1,50 @@
+{
+    "rq": 39,
+    "make": ["MVS", "Venturi"],
+    "model": "Venturi 200 Transcup",
+    "modelYear": 1988,
+    "country": "MC",
+    "topSpeed": 145,
+    "0to60": 7.0,
+    "handling": 73,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1295,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 58.82,
+    "ola": 62.12,
+    "description": "If you heard a word 'Transcup' in the naming of a car, a removable top version would most likely not to be your first thought in mind.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/978098096145838161/954BE039-F077-46CE-A0A9-D9DE2BA7EA8A.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1008036042550550568/MVSVenturi200Transcup.png",
+    "creator": "Spence",
+
+    "333TopSpeed": 149,
+    "3330to60": 6.7,
+    "333Handling": 75,
+
+    "666TopSpeed": 152,
+    "6660to60": 6.3,
+    "666Handling": 78,
+
+    "699TopSpeed": 152,
+    "6990to60": 6.0,
+    "699Handling": 81,
+
+    "969TopSpeed": 156,
+    "9690to60": 6.3,
+    "969Handling": 81,
+
+    "996TopSpeed": 156,
+    "9960to60": 6.0,
+    "996Handling": 78
+}

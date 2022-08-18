@@ -1,0 +1,50 @@
+{
+    "rq": 90,
+    "make": "Bugatti",
+    "model": "Veyron Barchetta Concept",
+    "modelYear": 2008,
+    "country": "FR",
+    "topSpeed": 230,
+    "0to60": 2.7,
+    "handling": 86,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Unique", "Concept", "Hypercar"],
+    "isPrize": false,
+
+    "weight": 2040,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 90,
+    "ola": 94.07,
+    "description": "None.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/959440848007872563/VeyronBarchetta.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1008813810322247790/veyronbarchetta.png",
+    "creator": "Bnuuy",
+
+    "333TopSpeed": 232,
+    "3330to60": 2.6,
+    "333Handling": 89,
+
+    "666TopSpeed": 235,
+    "6660to60": 2.4,
+    "666Handling": 92,
+
+    "996TopSpeed": 237,
+    "9960to60": 2.3,
+    "996Handling": 92,
+
+    "969TopSpeed": 237,
+    "9690to60": 2.4,
+    "969Handling": 95,
+
+    "699TopSpeed": 235,
+    "6990to60": 2.3,
+    "699Handling": 95
+}

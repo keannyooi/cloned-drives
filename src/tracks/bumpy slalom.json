@@ -1,0 +1,18 @@
+{
+	"trackName": "Bumpy Slalom",
+	"weather": "Sunny",
+	"surface": "Asphalt",
+	"speedbumps": 5,
+	"humps": 0,
+	"background": "https://cdn.discordapp.com/attachments/800047734035841037/1009812652991725578/opera_fF6GSAcyYc.png",
+	"map": "https://cdn.discordapp.com/attachments/716917404868935691/809357739229839370/unknown.png",
+	
+	"specsDistr": {
+		"topSpeed": 0,
+		"0to60": 20,
+		"handling": 100,
+		"weight": 80,
+		"mra": 0,
+		"ola": 10
+	}
+}

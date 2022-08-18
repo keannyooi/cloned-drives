@@ -1,0 +1,49 @@
+{
+    "rq": 6,
+    "make": "Austin",
+    "model": "Marina GT",
+    "modelYear": 1975,
+    "country": "GB",
+    "topSpeed": 97,
+    "0to60": 14.5,
+    "handling": 60,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+	
+    "weight": 993,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 29.43,
+    "ola": 62.16,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/980565305195638874/Austin-Marina-GT.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1004760546266062900/Austin-Marina-GT.png",
+    "creator": "Johnny",
+
+"333TopSpeed": 102, 
+"3330to60": 13.8, 
+"333Handling": 62,
+
+"666TopSpeed": 108, 
+"6660to60": 13.1, 
+"666Handling": 64,
+
+"699TopSpeed": 108, 
+"6990to60": 12.3, 
+"699Handling": 67,
+
+"969TopSpeed": 113, 
+"9690to60": 13.1, 
+"969Handling": 67,
+
+"996TopSpeed": 113, 
+"9960to60": 12.3, 
+"996Handling": 64
+}

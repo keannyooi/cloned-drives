@@ -1,0 +1,50 @@
+{
+    "rq": 68,
+    "make": ["Alpine", "Renault"],
+    "model": "A110S",
+    "modelYear": 2019,
+    "country": "FR",
+    "topSpeed": 163,
+    "0to60": 4.4,
+    "handling": 87,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1114,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 80,
+    "ola": 81.81,
+    "description": "None.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/846113742827946025/Alpine_A110S_White.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1008812661825359972/A110S.png",
+    "creator": "Fried",
+
+    "333TopSpeed": 166,
+    "3330to60": 4.2,
+    "333Handling": 90,
+
+    "666TopSpeed": 169,
+    "6660to60": 4.0,
+    "666Handling": 93,
+
+    "996TopSpeed": 173,
+    "9960to60": 3.7,
+    "996Handling": 93,
+
+    "969TopSpeed": 173,
+    "9690to60": 4.0,
+    "969Handling": 97,
+
+    "699TopSpeed": 169,
+    "6990to60": 3.7,
+    "699Handling": 97
+}

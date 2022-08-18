@@ -1,0 +1,49 @@
+{
+    "rq": 11,
+    "make": ["Prince", "Nissan"],
+    "model": "Skyline Sports Convertible BLR-3",
+    "modelYear": 1962,
+    "country": "JP",
+    "topSpeed": 93,
+    "0to60": 16.3,
+    "handling": 55,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+	
+    "weight": 1340,
+    "gc": "High",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 21.22,
+    "ola": 63.8,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/978713619808256120/skylinesportsconvertible.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997647732502179840/skylinescblr3.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 99, 
+"3330to60": 15.5, 
+"333Handling": 57,
+
+"666TopSpeed": 104, 
+"6660to60": 14.7, 
+"666Handling": 59,
+
+"699TopSpeed": 104, 
+"6990to60": 13.9, 
+"699Handling": 61,
+
+"969TopSpeed": 110, 
+"9690to60": 14.7, 
+"969Handling": 61,
+
+"996TopSpeed": 110, 
+"9960to60": 13.9, 
+"996Handling": 59
+}

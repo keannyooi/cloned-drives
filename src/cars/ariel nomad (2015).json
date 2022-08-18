@@ -1,0 +1,49 @@
+{
+    "rq": 82,
+    "make": "Ariel",
+    "model": "Nomad",
+    "modelYear": 2015,
+    "country": "GB",
+    "topSpeed": 124,
+    "0to60": 4.4,
+    "handling": 71,
+    "driveType": "RWD",
+    "tyreType": "Off-Road",
+    "tags": ["Extreme Juggernaut"],
+    "isPrize": false,
+	
+    "weight": 670,
+    "gc": "High",
+    "seatCount": 1,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 53.66,
+    "ola": 83.64,
+    "description": "A track day car maker has now decided to make an off-road couterpart of the atom.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1007469991085473874/image2.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1007470030356746240/ArielNomad.png",
+    "creator": "Spence.",
+
+"333TopSpeed": 128, 
+"3330to60": 4.2, 
+"333Handling": 73,
+
+"666TopSpeed": 132, 
+"6660to60": 4.0, 
+"666Handling": 76,
+
+"699TopSpeed": 132, 
+"6990to60": 3.7, 
+"699Handling": 79,
+
+"969TopSpeed": 137, 
+"9690to60": 4.0, 
+"969Handling": 79,
+
+"996TopSpeed": 137, 
+"9960to60": 3.7, 
+"996Handling": 76
+}

@@ -1,0 +1,50 @@
+{
+    "rq": 103,
+    "make": "Peugeot",
+    "model": "208 T16 Pikes Peak",
+    "modelYear": 2013,
+    "country": "FR",
+    "topSpeed": 149,
+    "0to60": 1.7,
+    "handling": 98,
+    "driveType": "4WD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport", "Unique"],
+    "isPrize": true,
+
+    "weight": 875,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 101.52,
+    "ola": 92.06,
+    "description": "A PP record holder from 2013 with 1:1 power-to-weight ratio, a mighty big spoiler and a humongous wing.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/940486567867330590/9ED01296-E283-4E69-ADFE-4CD326BD0708.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1009414393534091314/208T16PP.png",
+    "creator": "Spence",
+
+    "333TopSpeed": 152,
+    "3330to60": 1.6,
+    "333Handling": 101,
+
+    "666TopSpeed": 156,
+    "6660to60": 1.5,
+    "666Handling": 104,
+
+    "996TopSpeed": 159,
+    "9960to60": 1.4,
+    "996Handling": 104,
+
+    "969TopSpeed": 159,
+    "9690to60": 1.5,
+    "969Handling": 109,
+
+    "699TopSpeed": 156,
+    "6990to60": 1.4,
+    "699Handling": 109
+}

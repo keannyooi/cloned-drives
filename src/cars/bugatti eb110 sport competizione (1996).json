@@ -1,0 +1,49 @@
+{
+    "rq": 92,
+    "make": "Bugatti",
+    "model": "EB110 Sport Competizione",
+    "modelYear": 1996,
+    "country": "FR",
+    "topSpeed": 202,
+    "0to60": 3.0,
+    "handling": 96,
+    "driveType": "4WD",
+    "tyreType": "Slick",
+    "tags": ["Unique", "Track Day", "Ultra Expensive"],
+    "isPrize": true,
+	
+    "weight": 1218,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 111.11,
+    "ola": 86.67,
+    "description": "The EB110 returned to racing with some upgrades compared to LM, however it was not enough to qualify at Le Mans.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/992110396402045000/BugattiEB110SportCompetizione.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1006050891167707227/BugattiEB110SportCompetizione.png",
+    "creator": "Spence",
+
+"333TopSpeed": 205, 
+"3330to60": 2.8, 
+"333Handling": 99,
+
+"666TopSpeed": 207, 
+"6660to60": 2.7, 
+"666Handling": 102,
+
+"699TopSpeed": 207, 
+"6990to60": 2.6, 
+"699Handling": 107,
+
+"969TopSpeed": 210, 
+"9690to60": 2.7, 
+"969Handling": 107,
+
+"996TopSpeed": 210, 
+"9960to60": 2.6, 
+"996Handling": 102
+}

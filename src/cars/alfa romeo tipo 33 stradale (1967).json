@@ -1,0 +1,49 @@
+{
+    "rq": 49,
+    "make": "Alfa Romeo",
+    "model": "Tipo 33 Stradale",
+    "modelYear": 1967,
+    "country": "IT",
+    "topSpeed": 162,
+    "0to60": 5.7,
+    "handling": 78,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Motorsport", "Unique"],
+    "isPrize": false,
+	
+    "weight": 700,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 78.08,
+    "ola": 77.19,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1007753320313659403/tipo33stradale.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1007754098134749194/33stradale.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 165, 
+"3330to60": 5.4, 
+"333Handling": 81,
+
+"666TopSpeed": 168, 
+"6660to60": 5.1, 
+"666Handling": 83,
+
+"699TopSpeed": 168, 
+"6990to60": 4.8, 
+"699Handling": 87,
+
+"969TopSpeed": 172, 
+"9690to60": 5.1, 
+"969Handling": 87,
+
+"996TopSpeed": 172, 
+"9960to60": 4.8, 
+"996Handling": 83
+}

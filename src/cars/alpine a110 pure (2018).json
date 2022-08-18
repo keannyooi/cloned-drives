@@ -1,0 +1,50 @@
+{
+    "rq": 65,
+    "make": ["Alpine", "Renault"],
+    "model": "A110 Pure",
+    "modelYear": 2018,
+    "country": "FR",
+    "topSpeed": 157,
+    "0to60": 4.5,
+    "handling": 86,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1098,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 73.77,
+    "ola": 84.44,
+    "description": "None.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/846099039111348264/Alpine_A110_Pure_Card.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1008812613473407016/A110Pure.png",
+    "creator": "Fried",
+
+    "333TopSpeed": 160,
+    "3330to60": 4.3,
+    "333Handling": 89,
+
+    "666TopSpeed": 164,
+    "6660to60": 4.1,
+    "666Handling": 92,
+
+    "996TopSpeed": 167,
+    "9960to60": 3.8,
+    "996Handling": 92,
+
+    "969TopSpeed": 167,
+    "9690to60": 4.1,
+    "969Handling": 95,
+
+    "699TopSpeed": 164,
+    "6990to60": 3.8,
+    "699Handling": 95
+}

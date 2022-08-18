@@ -1,0 +1,50 @@
+{
+    "rq": 99,
+    "make": "Bugatti",
+    "model": "Centodieci",
+    "modelYear": 2019,
+    "country": "FR",
+    "topSpeed": 240,
+    "0to60": 2.3,
+    "handling": 92,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Hypercar", "Unique", "Ultra Expensive"],
+    "isPrize": true,
+
+    "weight": 1976,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 100,
+    "ola": 93.04,
+    "description": "None.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/958001774403420210/Centodieci.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1008813536270635018/centodice.png",
+    "creator": "Bnuuy",
+
+    "333TopSpeed": 242,
+    "3330to60": 2.2,
+    "333Handling": 95,
+
+    "666TopSpeed": 244,
+    "6660to60": 2.1,
+    "666Handling": 98,
+
+    "996TopSpeed": 247,
+    "9960to60": 2.0,
+    "996Handling": 98,
+
+    "969TopSpeed": 247,
+    "9690to60": 2.1,
+    "969Handling": 102,
+
+    "699TopSpeed": 244,
+    "6990to60": 2.0,
+    "699Handling": 102
+}

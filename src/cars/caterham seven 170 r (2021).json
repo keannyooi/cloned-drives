@@ -1,0 +1,49 @@
+{
+    "rq": 39,
+    "make": "Caterham",
+    "model": "Seven 170 R",
+    "modelYear": 2021,
+    "country": "GB",
+    "topSpeed": 106,
+    "0to60": 6.7,
+    "handling": 84,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Track Day", "Kei Car"],
+    "isPrize": false,
+	
+    "weight": 440,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 30.45,
+    "ola": 71.64,
+    "description": "The first caterham to get given Kei status.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1009823067784106054/seven170R.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1009823232863518740/Cate7170R.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 111, 
+"3330to60": 6.4, 
+"333Handling": 87,
+
+"666TopSpeed": 116, 
+"6660to60": 6.0, 
+"666Handling": 90,
+
+"699TopSpeed": 116, 
+"6990to60": 5.7, 
+"699Handling": 93,
+
+"969TopSpeed": 121, 
+"9690to60": 6.0, 
+"969Handling": 93,
+
+"996TopSpeed": 121, 
+"9960to60": 5.7, 
+"996Handling": 90
+}

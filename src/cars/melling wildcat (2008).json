@@ -1,0 +1,49 @@
+{
+    "rq": 84,
+    "make": ["Melling", "TVR"],
+    "model": "Wildcat",
+    "modelYear": 2008,
+    "country": "GB",
+    "topSpeed": 180,
+    "0to60": 3.5,
+    "handling": 87,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner", "Unique"],
+    "isPrize": false,
+	
+    "weight": 998,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 89.74,
+    "ola": 91.43,
+    "description": "Al Melling's take on the TVR Griffith that should've been.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1007465095061852230/MellingWildcat.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1007465169254887527/MellingWildcat.png",
+    "creator": "Spence",
+
+"333TopSpeed": 183, 
+"3330to60": 3.3, 
+"333Handling": 90,
+
+"666TopSpeed": 186, 
+"6660to60": 3.1, 
+"666Handling": 93,
+
+"699TopSpeed": 186, 
+"6990to60": 3.0, 
+"699Handling": 97,
+
+"969TopSpeed": 189, 
+"9690to60": 3.1, 
+"969Handling": 97,
+
+"996TopSpeed": 189, 
+"9960to60": 3.0, 
+"996Handling": 93
+}

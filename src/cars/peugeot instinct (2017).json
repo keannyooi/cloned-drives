@@ -1,0 +1,50 @@
+{
+    "rq": 56,
+    "make": "Peugeot",
+    "model": "Instinct",
+    "modelYear": 2017,
+    "country": "FR",
+    "topSpeed": 124,
+    "0to60": 5.0,
+    "handling": 80,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Concept", "Unique"],
+    "isPrize": false,
+
+    "weight": 1800,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 59.62,
+    "ola": 76,
+    "description": "A Peugeot shooting brake with autonomous technology that was designed for 2025.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/940607861527031808/F87164DB-4DB7-4AE6-98D5-F5E925CA3725.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1009414537511981106/instinct2017.png",
+    "creator": "Spence",
+
+    "333TopSpeed": 128,
+    "3330to60": 4.8,
+    "333Handling": 83,
+
+    "666TopSpeed": 132,
+    "6660to60": 4.5,
+    "666Handling": 85,
+
+    "996TopSpeed": 137,
+    "9960to60": 4.3,
+    "996Handling": 85,
+
+    "969TopSpeed": 137,
+    "9690to60": 4.5,
+    "969Handling": 89,
+
+    "699TopSpeed": 132,
+    "6990to60": 4.3,
+    "699Handling": 89
+}

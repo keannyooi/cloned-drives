@@ -1,0 +1,50 @@
+{
+    "rq": 112,
+    "make": "Bugatti",
+    "model": "Bolide",
+    "modelYear": 2023,
+    "country": "FR",
+    "topSpeed": 307,
+    "0to60": 2.2,
+    "handling": 100,
+    "driveType": "4WD",
+    "tyreType": "Slick",
+    "tags": ["Unique", "Track Day", "Ultra Expensive", "Eargasm"],
+    "isPrize": true,
+
+    "weight": 1450,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 137.5,
+    "ola": 87.27,
+    "description": "None.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/958780736117301248/bolide.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1008813336420429955/bolide2023.png",
+    "creator": "Bnuuy",
+
+    "333TopSpeed": 309,
+    "3330to60": 2.1,
+    "333Handling": 103,
+
+    "666TopSpeed": 310,
+    "6660to60": 2.0,
+    "666Handling": 107,
+
+    "996TopSpeed": 312,
+    "9960to60": 1.9,
+    "996Handling": 107,
+
+    "969TopSpeed": 312,
+    "9690to60": 2.0,
+    "969Handling": 111,
+
+    "699TopSpeed": 310,
+    "6990to60": 1.9,
+    "699Handling": 111
+}

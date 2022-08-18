@@ -1,0 +1,50 @@
+{
+    "rq": 95,
+    "make": "Bugatti",
+    "model": "Veyron 16.4 Grand Sport",
+    "modelYear": 2009,
+    "country": "FR",
+    "topSpeed": 253,
+    "0to60": 2.5,
+    "handling": 88,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Hypercar", "Unique", "Ultra Expensive"],
+    "isPrize": false,
+
+    "weight": 1950,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 93.63,
+    "ola": 92,
+    "description": "None.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/959440902760333332/VeyronGrandSport.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1008814833715642538/veyrongrandsport.png",
+    "creator": "Bnuuy",
+
+    "333TopSpeed": 255,
+    "3330to60": 2.4,
+    "333Handling": 91,
+
+    "666TopSpeed": 257,
+    "6660to60": 2.3,
+    "666Handling": 94,
+
+    "996TopSpeed": 259,
+    "9960to60": 2.1,
+    "996Handling": 94,
+
+    "969TopSpeed": 259,
+    "9690to60": 2.3,
+    "969Handling": 98,
+
+    "699TopSpeed": 257,
+    "6990to60": 2.1,
+    "699Handling": 98
+}
