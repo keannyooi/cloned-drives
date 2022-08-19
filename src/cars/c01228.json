@@ -5,13 +5,11 @@
     "modelYear": 2015,
     "country": "JP",
     "topSpeed": 155,
-    "0to60": 5,
+    "0to60": 5.0,
     "handling": 89,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Concept"
-    ],
+    "tags": ["Concept"],
     "isPrize": true,
     "weight": 1221,
     "gc": "Low",
@@ -23,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 55.49,
     "ola": 75.19,
-    "description": "This is what dreams are made of. Card by Bnuuy",
+    "description": "This is what dreams are made of.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820726247838842900/STiConcept.png",
     "333TopSpeed": 158,
     "3330to60": 4.8,
@@ -40,6 +38,6 @@
     "699TopSpeed": 162,
     "6990to60": 4.3,
     "699Handling": 99,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997811551723597905/stisportconcepththing.png",
+    "creator": "Bnuuy"
 }
