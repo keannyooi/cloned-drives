@@ -1,0 +1,18 @@
+{
+	"trackName": "Stunt Jump (Dirt)",
+	"weather": "Sunny",
+	"surface": "Dirt",
+	"speedbumps": 4,
+	"humps": 0,
+	"background": "https://media.discordapp.net/attachments/1003260397786243142/1003262910132387950/unknown.png",
+	"map": "https://cdn.discordapp.com/attachments/1003260397786243142/1003262825608790067/jump_layout.png",
+
+	"specsDistr": {
+		"topSpeed": 0,
+		"0to60": 100,
+		"handling": 0,
+		"weight": 15,
+		"mra": 55,
+		"ola": 5
+	}
+}

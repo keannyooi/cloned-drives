@@ -1,0 +1,70 @@
+{
+	"packName": "Standard Cosmo Pack",
+	"description": "A pack of 5 cars, High chance of legendary",
+        "repetition": 2,
+	"pack": "https://cdn.discordapp.com/attachments/956106029635088384/1010121392446001152/COSMOStandard.png",
+
+	"filter": {
+		"make": "None",
+		"modelYear": {
+			"start": 1000,
+			"end": 3000
+		},
+		"country": "None",
+		"tags": "None",
+        "driveType": "None",
+        "tyreType": "None",
+		"enginePos": "None",
+        "fuelType": "None",
+        "bodyStyle": "None",
+		"seatCount": "None"
+	},
+
+	"packSequence": [
+        {
+            "common": 0,
+            "uncommon": 0,
+            "rare": 0,
+            "superRare": 100,
+            "ultraRare": 0,
+            "epic": 0,
+            "legendary": 0
+        },
+        {
+            "common": 0,
+            "uncommon": 0,
+            "rare": 0,
+            "superRare": 100,
+            "ultraRare": 0,
+            "epic": 0,
+            "legendary": 0
+        },
+        {
+            "common": 0,
+            "uncommon": 0,
+            "rare": 0,
+            "superRare": 74,
+            "ultraRare": 20.1,
+            "epic": 5,
+            "legendary": 0.9
+        },
+        {
+            "common": 0,
+            "uncommon": 0,
+            "rare": 0,
+            "superRare": 65,
+            "ultraRare": 20,
+            "epic": 10,
+            "legendary": 5
+        },
+        {
+            "common": 0,
+            "uncommon": 0,
+            "rare": 0,
+            "superRare": 65,
+            "ultraRare": 20,
+            "epic": 10,
+            "legendary": 5
+        }
+    ]
+}

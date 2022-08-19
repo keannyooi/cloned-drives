@@ -1,0 +1,49 @@
+{
+    "rq": 70,
+    "make": "Land Rover",
+    "model": "Defender 90 V8 Works",
+    "modelYear": 2018,
+    "country": "GB",
+    "topSpeed": 106,
+    "0to60": 5.6,
+    "handling": 66,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["Extreme Juggernauts"],
+    "isPrize": false,
+	
+    "weight": 2000,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 75.67,
+    "ola": 75,
+    "description": "The ultimate Works performance Defender 90.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1009823477995409539/Defender90V8.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1009823703065964635/defender90worksV8.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 111, 
+"3330to60": 5.3, 
+"333Handling": 68,
+
+"666TopSpeed": 116, 
+"6660to60": 5.0, 
+"666Handling": 70,
+
+"699TopSpeed": 116, 
+"6990to60": 4.8, 
+"699Handling": 73,
+
+"969TopSpeed": 121, 
+"9690to60": 5.0, 
+"969Handling": 73,
+
+"996TopSpeed": 121, 
+"9960to60": 4.8, 
+"996Handling": 70
+}
