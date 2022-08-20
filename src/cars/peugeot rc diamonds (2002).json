@@ -1,0 +1,50 @@
+{
+    "rq": 48,
+    "make": "Peugeot",
+    "model": "RC Diamonds",
+    "modelYear": 2002,
+    "country": "FR",
+    "topSpeed": 143,
+    "0to60": 6.0,
+    "handling": 84,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Concept", "Unique"],
+    "isPrize": true,
+
+    "weight": 950,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 58.33,
+    "ola": 73.95,
+    "description": "None.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/940268126392705034/image0.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1010425625439375360/PeugeotRCDiamonds.png",
+    "creator": "Spence",
+
+    "333TopSpeed": 147,
+    "3330to60": 5.7,
+    "333Handling": 87,
+
+    "666TopSpeed": 150,
+    "6660to60": 5.4,
+    "666Handling": 90,
+
+    "996TopSpeed": 154,
+    "9960to60": 5.1,
+    "996Handling": 90,
+
+    "969TopSpeed": 154,
+    "9690to60": 5.4,
+    "969Handling": 93,
+
+    "699TopSpeed": 150,
+    "6990to60": 5.1,
+    "699Handling": 93
+}

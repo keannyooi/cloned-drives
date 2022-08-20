@@ -1,0 +1,50 @@
+{
+    "rq": 51,
+    "make": "Peugeot",
+    "model": "RCZ R",
+    "modelYear": 2013,
+    "country": "FR",
+    "topSpeed": 155,
+    "0to60": 5.8,
+    "handling": 84,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Oddity"],
+    "isPrize": false,
+
+    "weight": 1355,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 76.32,
+    "ola": 86.21,
+    "description": "This Peugeot coupe with very sporty performance is the fastest production Peugeot ever made at the time.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1010684731081375824/PeugeotRCZR.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1010684803735097424/PeugeotRCZR.png",
+    "creator": "Spence",
+
+    "333TopSpeed": 158,
+    "3330to60": 5.5,
+    "333Handling": 87,
+
+    "666TopSpeed": 162,
+    "6660to60": 5.2,
+    "666Handling": 90,
+
+    "996TopSpeed": 165,
+    "9960to60": 4.9,
+    "996Handling": 90,
+
+    "969TopSpeed": 165,
+    "9690to60": 5.2,
+    "969Handling": 93,
+
+    "699TopSpeed": 162,
+    "6990to60": 4.9,
+    "699Handling": 93
+}

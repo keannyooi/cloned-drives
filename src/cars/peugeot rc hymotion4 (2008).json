@@ -1,0 +1,50 @@
+{
+    "rq": 71,
+    "make": "Peugeot",
+    "model": "RC HYmotion4",
+    "modelYear": 2008,
+    "country": "FR",
+    "topSpeed": 183,
+    "0to60": 4.2,
+    "handling": 83,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Concept", "Unique", "Eco-Friendly"],
+    "isPrize": false,
+
+    "weight": 1425,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Hybrid",
+    "mra": 53.16,
+    "ola": 71.43,
+    "description": "The 4-Door Hybrid coupe version of the RC Spades.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/940268153273991188/E1C577E9-E74D-405B-9A47-97347BF6703B.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1010425711376478208/PeugeotRCHYmotion4.png",
+    "creator": "Spence",
+	
+    "333TopSpeed": 186,
+    "3330to60": 4.0,
+    "333Handling": 86,
+
+    "666TopSpeed": 189,
+    "6660to60": 3.8,
+    "666Handling": 88,
+
+    "996TopSpeed": 192,
+    "9960to60": 3.6,
+    "996Handling": 88,
+
+    "969TopSpeed": 192,
+    "9690to60": 3.8,
+    "969Handling": 92,
+
+    "699TopSpeed": 189,
+    "6990to60": 3.6,
+    "699Handling": 92
+}

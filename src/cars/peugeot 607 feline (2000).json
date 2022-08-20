@@ -1,0 +1,51 @@
+{
+    "rq": 50,
+    "make": "Peugeot",
+    "model": "607 Feline",
+    "modelYear": 2000,
+    "country": "FR",
+    "topSpeed": 155,
+    "0to60": 5.9,
+    "handling": 83,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Concept", "Unique"],
+    "isPrize": false,
+
+    "weight": 875,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 69.88,
+    "ola": 93.1,
+    "description": "A Peugeot concept that uses carbon fibre body technology with a V6 in front.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/940152510381973504/9F0BAA21-6C17-4DB7-B5F0-7CECE265C6AE.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1010674093378510858/Feline.png",
+    "creator": "Spence",
+
+    "333TopSpeed": 158,
+    "3330to60": 5.6,
+    "333Handling": 86,
+
+    "666TopSpeed": 162,
+    "6660to60": 5.3,
+    "666Handling": 88,
+
+    "969TopSpeed": 165,
+    "9690to60": 5.3,
+    "969Handling": 92,
+	
+	"996TopSpeed": 165,
+	"9960to60": 5.0,
+	"996Handling": 88,
+	
+	"699TopSpeed": 162,
+	"6990to60": 5.0,
+	"699Handling": 92
+	
+}

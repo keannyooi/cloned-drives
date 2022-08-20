@@ -1,0 +1,50 @@
+{
+    "rq": 88,
+    "make": ["Renault Sport", "Renault"],
+    "model": "R.S. 01",
+    "modelYear": 2014,
+    "country": "FR",
+    "topSpeed": 186,
+    "0to60": 3.0,
+    "handling": 98,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport", "Unique"],
+    "isPrize": true,
+
+    "weight": 1100,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 75.00,
+    "ola": 93.33,
+    "description": "None.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/930222149300523018/RenaultSportRS01.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1010668426240479253/rs01.png",
+    "creator": "Bnuuy",
+
+    "333TopSpeed": 189,
+    "3330to60": 2.9,
+    "333Handling": 101,
+
+    "666TopSpeed": 192,
+    "6660to60": 2.7,
+    "666Handling": 104,
+
+    "996TopSpeed": 194,
+    "9960to60": 2.6,
+    "996Handling": 104,
+
+    "969TopSpeed": 194,
+    "9690to60": 2.7,
+    "969Handling": 109,
+
+    "699TopSpeed": 192,
+    "6990to60": 2.6,
+    "699Handling": 109
+}

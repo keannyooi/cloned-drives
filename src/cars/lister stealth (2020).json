@@ -1,0 +1,49 @@
+{
+    "rq": 88,
+    "make": ["Lister", "Jaguar"],
+    "model": "Stealth",
+    "modelYear": 2020,
+    "country": "GB",
+    "topSpeed": 195,
+    "0to60": 3.6,
+    "handling": 83,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Tuner"],
+    "isPrize": false,
+	
+    "weight": 1950,
+    "gc": "High",
+    "seatCount": 4,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 80,
+    "ola": 77.77,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1009823861514190959/ListerStealth.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1009823902878417037/ListerStealth.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 198, 
+"3330to60": 3.4, 
+"333Handling": 86,
+
+"666TopSpeed": 200, 
+"6660to60": 3.2, 
+"666Handling": 88,
+
+"699TopSpeed": 200, 
+"6990to60": 3.1, 
+"699Handling": 92,
+
+"969TopSpeed": 203, 
+"9690to60": 3.2, 
+"969Handling": 92,
+
+"996TopSpeed": 203, 
+"9960to60": 3.1, 
+"996Handling": 88
+}

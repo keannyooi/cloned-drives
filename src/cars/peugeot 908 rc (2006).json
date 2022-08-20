@@ -1,0 +1,50 @@
+{
+    "rq": 75,
+    "make": "Peugeot",
+    "model": "908 RC",
+    "modelYear": 2006,
+    "country": "FR",
+    "topSpeed": 186,
+    "0to60": 3.9,
+    "handling": 80,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Concept", "Unique"],
+    "isPrize": false,
+
+    "weight": 1800,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Diesel",
+    "mra": 95.12,
+    "ola": 97.44,
+    "description": "The engine from an LMP car + engine at the back + peak extravagance and luxury all in one car = most ludicrous Peugeot ever.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/940120741079302144/9CA07BF8-4402-45CD-8BAC-112112D49D55.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1010684588537958420/Peugeot908RC.png",
+    "creator": "Spence",
+
+    "333TopSpeed": 189,
+    "3330to60": 3.7,
+    "333Handling": 83,
+
+    "666TopSpeed": 192,
+    "6660to60": 3.5,
+    "666Handling": 85,
+
+    "996TopSpeed": 194,
+    "9960to60": 3.3,
+    "996Handling": 85,
+
+    "969TopSpeed": 194,
+    "9690to60": 3.5,
+    "969Handling": 89,
+
+    "699TopSpeed": 192,
+    "6990to60": 3.3,
+    "699Handling": 89
+}

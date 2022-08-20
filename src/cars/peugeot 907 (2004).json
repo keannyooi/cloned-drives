@@ -1,0 +1,51 @@
+{
+    "rq": 67,
+    "make": "Peugeot",
+    "model": "907",
+    "modelYear": 2004,
+    "country": "FR",
+    "topSpeed": 186,
+    "0to60": 4.0,
+    "handling": 89,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Concept", "Unique"],
+    "isPrize": false,
+
+    "weight": 1400,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 95.24,
+    "ola": 85,
+    "description": "The French SLR McLaren with a heart of an LMP1 car.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/939598521831686154/D43E2506-A684-4D96-A174-23A50FE71F41.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1010684517427720242/Peugeot907.png",
+    "creator": "Spence",
+
+    "333TopSpeed": 189,
+    "3330to60": 3.8,
+    "333Handling": 92,
+
+    "666TopSpeed": 192,
+    "6660to60": 3.6,
+    "666Handling": 95,
+
+    "969TopSpeed": 194,
+    "9690to60": 3.6,
+    "969Handling": 99,
+	
+	"996TopSpeed": 194,
+	"9960to60": 3.4,
+	"996Handling": 95,
+	
+	"699TopSpeed": 192,
+	"6990to60": 3.4,
+	"699Handling": 99
+	
+}

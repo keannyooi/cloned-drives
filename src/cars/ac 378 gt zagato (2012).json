@@ -1,0 +1,49 @@
+{
+    "rq": 74,
+    "make": ["AC", "Zagato"],
+    "model": "378 GT Zagato",
+    "modelYear": 2012,
+    "country": "GB",
+    "topSpeed": 186,
+    "0to60": 3.8,
+    "handling": 89,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Unique"],
+    "isPrize": false,
+	
+    "weight": 1465,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 74.51,
+    "ola": 100,
+    "description": "A modern representation of the Cobra made by Zagato ontop a 2006 Z06.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1009823587701641216/ACCoupeZagato.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1009823768941703208/ACCoupeZag.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 189, 
+"3330to60": 3.6, 
+"333Handling": 92,
+
+"666TopSpeed": 192, 
+"6660to60": 3.4, 
+"666Handling": 95,
+
+"699TopSpeed": 192, 
+"6990to60": 3.2, 
+"699Handling": 99,
+
+"969TopSpeed": 194, 
+"9690to60": 3.4, 
+"969Handling": 99,
+
+"996TopSpeed": 194, 
+"9960to60": 3.2, 
+"996Handling": 95
+}

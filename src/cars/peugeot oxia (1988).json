@@ -1,0 +1,51 @@
+{
+    "rq": 93,
+    "make": "Peugeot",
+    "model": "Oxia",
+    "modelYear": 1988,
+    "country": "FR",
+    "topSpeed": 216,
+    "0to60": 2.6,
+    "handling": 89,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Concept", "Supercar", "Unique"],
+    "isPrize": false,
+
+    "weight": 1374,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 92.86,
+    "ola": 100,
+    "description": "The concept Bugatti Veyron of the 1980s that was made by the last manufacturer that you would expect to make one.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/939399238134165584/878E9B4F-3A97-4DAF-8110-6A077FE70C58.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1010404685200490637/PeugeotOxia.png",
+    "creator": "Spence",
+
+    "333TopSpeed": 218,
+    "3330to60": 2.5,
+    "333Handling": 92,
+
+    "666TopSpeed": 221,
+    "6660to60": 2.3,
+    "666Handling": 95,
+
+    "969TopSpeed": 223,
+    "9690to60": 2.3,
+    "969Handling": 99,
+	
+	"996TopSpeed": 223,
+	"9960to60": 2.2,
+	"996Handling": 95,
+	
+	"699TopSpeed": 221,
+	"6990to60": 2.2,
+	"699Handling": 99
+	
+}

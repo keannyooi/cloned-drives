@@ -1,0 +1,50 @@
+{
+    "rq": 63,
+    "make": "Peugeot",
+    "model": "RC Cup",
+    "modelYear": 2004,
+    "country": "FR",
+    "topSpeed": 124,
+    "0to60": 4.8,
+    "handling": 94,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport", "Unique"],
+    "isPrize": true,
+
+    "weight": 800,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Diesel",
+    "mra": 55.81,
+    "ola": 70.83,
+    "description": "Shine bright like a Diamond on the track.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/940268189252726814/image0.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1010425769987670026/PeugeotRCCup.png",
+    "creator": "Spence",
+
+    "333TopSpeed": 128,
+    "3330to60": 4.6,
+    "333Handling": 97,
+
+    "666TopSpeed": 132,
+    "6660to60": 4.3,
+    "666Handling": 100,
+
+    "996TopSpeed": 137,
+    "9960to60": 4.1,
+    "996Handling": 100,
+
+    "969TopSpeed": 137,
+    "9690to60": 4.3,
+    "969Handling": 104,
+
+    "699TopSpeed": 132,
+    "6990to60": 4.1,
+    "699Handling": 104
+}

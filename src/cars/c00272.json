@@ -1,7 +1,7 @@
 {
     "rq": 48,
     "make": "Chevrolet",
-    "model": "Corvette Stingray 427",
+    "model": "Corvette 427 Stingray",
     "modelYear": 1967,
     "country": "US",
     "topSpeed": 142,
@@ -9,11 +9,7 @@
     "handling": 67,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Style Icon",
-        "Supercar",
-        "Silver Screen"
-    ],
+    "tags": ["Style Icon","Supercar","Silver Screen"],
     "isPrize": false,
     "weight": 1423,
     "gc": "Low",
@@ -25,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 61.8,
     "ola": 85.11,
-    "description": "Fifty years ago this car was the king of General Motors. Card by Johnny",
+    "description": "Fifty years ago this car was the king of General Motors.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820621658079232000/cate-test.png",
     "333TopSpeed": 146,
     "3330to60": 4.5,
@@ -34,14 +30,14 @@
     "6660to60": 4.2,
     "666Handling": 71,
     "996TopSpeed": 153,
-    "9960to60": 4,
+    "9960to60": 4.0,
     "996Handling": 71,
     "969TopSpeed": 153,
     "9690to60": 4.2,
     "969Handling": 74,
     "699TopSpeed": 149,
-    "6990to60": 4,
+    "6990to60": 4.0,
     "699Handling": 74,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1004762181998481439/Chevrolet-Corvette-427-Stingray.png",
+    "creator": "Johnny"
 }

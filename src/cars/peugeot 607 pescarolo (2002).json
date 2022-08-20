@@ -1,0 +1,51 @@
+{
+    "rq": 59,
+    "make": "Peugeot",
+    "model": "607 Pescarolo",
+    "modelYear": 2002,
+    "country": "FR",
+    "topSpeed": 180,
+    "0to60": 4.7,
+    "handling": 77,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Concept", "Unique", "Sleeper"],
+    "isPrize": false,
+
+    "weight": 1580,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 85.45,
+    "ola": 93.62,
+    "description": "The Peugeot sports sedan concept that can potentially challenge the BMW M3 at the time. Card by Spence",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/939383519799554099/F7C5E617-156E-4A1C-9A83-22DFC0F18DC0.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1010673134422200370/Pesca.png",
+    "creator": "Spence",
+
+    "333TopSpeed": 183,
+    "3330to60": 4.5,
+    "333Handling": 80,
+
+    "666TopSpeed": 186,
+    "6660to60": 4.2,
+    "666Handling": 82,
+
+    "969TopSpeed": 189,
+    "9690to60": 4.2,
+    "969Handling": 85,
+	
+	"996TopSpeed": 189,
+	"9960to60": 4.0,
+	"996Handling": 82,
+	
+	"699TopSpeed": 186,
+	"6990to60": 4.0,
+	"699Handling": 85
+	
+}

@@ -1,0 +1,50 @@
+{
+    "rq": 84,
+    "make": "Peugeot",
+    "model": "EX1",
+    "modelYear": 2010,
+    "country": "FR",
+    "topSpeed": 161,
+    "0to60": 3.4,
+    "handling": 92,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Concept", "Eco-Friendly", "Unique"],
+    "isPrize": false,
+
+    "weight": 1000,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 52.66,
+    "ola": 77.15,
+    "description": "It sets the fastest EV lap time record at the Nurburgring at the time, and the claimed 2.24 0-100km/h is a lie!",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/940595927327064104/64753566-608A-4737-A64D-8A6BE9ADFE70.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1010685920112021564/PeugeotEX1.png",
+    "creator": "Spence",
+
+    "333TopSpeed": 164,
+    "3330to60": 3.2,
+    "333Handling": 95,
+
+    "666TopSpeed": 167,
+    "6660to60": 3.1,
+    "666Handling": 98,
+
+    "996TopSpeed": 171,
+    "9960to60": 2.9,
+    "996Handling": 98,
+
+    "969TopSpeed": 171,
+    "9690to60": 3.1,
+    "969Handling": 102,
+
+    "699TopSpeed": 167,
+    "6990to60": 2.9,
+    "699Handling": 102
+}

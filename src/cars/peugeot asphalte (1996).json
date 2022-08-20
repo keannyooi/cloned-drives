@@ -1,0 +1,51 @@
+{
+    "rq": 28,
+    "make": "Peugeot",
+    "model": "Asphalte",
+    "modelYear": 1996,
+    "country": "FR",
+    "topSpeed": 124,
+    "0to60": 9.2,
+    "handling": 81,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Concept", "Oddity", "Unique"],
+    "isPrize": true,
+
+    "weight": 580,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 47.67,
+    "ola": 69.57,
+    "description": "You would think this futuristic Peugeot can be very quick but then you find out it has 88 horespower.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/939672097884622908/B6C3DE7A-13F0-40BD-92CA-28877272981C.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1010404024148824104/PeugeotAsphalte.png",
+    "creator": "Spence",
+
+    "333TopSpeed": 128,
+    "3330to60": 8.7,
+    "333Handling": 84,
+
+    "666TopSpeed": 132,
+    "6660to60": 8.3,
+    "666Handling": 86,
+
+    "969TopSpeed": 137,
+    "9690to60": 8.3,
+    "969Handling": 90,
+	
+	"996TopSpeed": 137,
+	"9960to60": 7.8,
+	"996Handling": 86,
+	
+	"699TopSpeed": 132,
+	"6990to60": 7.8,
+	"699Handling": 90
+	
+}

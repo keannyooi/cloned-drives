@@ -1,0 +1,50 @@
+{
+    "rq": 60,
+    "make": ["Renault Sport", "Renault"],
+    "model": "Megane Trophy-R",
+    "modelYear": 2019,
+    "country": "FR",
+    "topSpeed": 163,
+    "0to60": 5.3,
+    "handling": 90,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch"],
+    "isPrize": false,
+
+    "weight": 1306,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 74.65,
+    "ola": 90.57,
+    "description": "The ultimate FWD French hot hatch that costs at an eye-watering $88.5k, more expensive than most college tuitions in 4 years.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/940390411678134272/E9B069FF-4DB5-4FF2-9CAC-1712E90B9A62.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1010670893762089051/RS19REN.png",
+    "creator": "Spence",
+
+    "333TopSpeed": 166,
+    "3330to60": 5.0,
+    "333Handling": 93,
+
+    "666TopSpeed": 169,
+    "6660to60": 4.8,
+    "666Handling": 96,
+
+    "699TopSpeed": 169,
+    "6990to60": 4.5,
+    "699Handling": 100,
+
+    "969TopSpeed": 173,
+    "9690to60": 4.8,
+    "969Handling": 100,
+
+    "996TopSpeed": 173,
+    "9960to60": 4.5,
+    "996Handling": 96
+}
