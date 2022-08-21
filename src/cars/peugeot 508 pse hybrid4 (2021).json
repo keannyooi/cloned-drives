@@ -1,0 +1,50 @@
+{
+    "rq": 66,
+    "make": ["Peugeot Sport", "Peugeot"],
+    "model": "508 HYbrid4",
+    "modelYear": 2021,
+    "country": "FR",
+    "topSpeed": 155,
+    "0to60": 5.2,
+    "handling": 84,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+
+    "weight": 1850,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Hybrid",
+    "mra": 73.67,
+    "ola": 86.96,
+    "description": "This is the most powerful Peugeot production car that has ever been made.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1010762276174835722/PeugeotSport508HYbrid4.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1010762422757367838/PeugeotSport508HYbrid4.png",
+    "creator": "Spence",
+	
+    "333TopSpeed": 158,
+    "3330to60": 4.9,
+    "333Handling": 87,
+
+    "666TopSpeed": 162,
+    "6660to60": 4.7,
+    "666Handling": 90,
+
+    "996TopSpeed": 165,
+    "9960to60": 4.4,
+    "996Handling": 90,
+
+    "969TopSpeed": 165,
+    "9690to60": 4.7,
+    "969Handling": 93,
+
+    "699TopSpeed": 162,
+    "6990to60": 4.4,
+    "699Handling": 93
+}

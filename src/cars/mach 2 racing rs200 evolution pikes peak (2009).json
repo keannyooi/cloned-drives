@@ -1,0 +1,49 @@
+{
+    "rq": 107,
+    "make": ["Mach 2 Racing", "Ford"],
+    "model": "RS200 Evolution Pikes Peak",
+    "modelYear": 2009,
+    "country": "US",
+    "topSpeed": 140,
+    "0to60": 2.2,
+    "handling": 92,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Motorsport", "Unique"],
+    "isPrize": true,
+	
+    "weight": 900,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 100,
+    "ola": 90.9,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1010909124810260552/RS200EvoPP.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1010909323314085918/RS200EvoPP.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 144, 
+"3330to60": 2.1, 
+"333Handling": 95,
+
+"666TopSpeed": 147, 
+"6660to60": 2.0, 
+"666Handling": 98,
+
+"699TopSpeed": 147, 
+"6990to60": 1.9, 
+"699Handling": 102,
+
+"969TopSpeed": 151, 
+"9690to60": 2.0, 
+"969Handling": 102,
+
+"996TopSpeed": 151, 
+"9960to60": 1.9, 
+"996Handling": 98
+}

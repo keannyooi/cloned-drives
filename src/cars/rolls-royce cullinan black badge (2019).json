@@ -1,0 +1,49 @@
+{
+    "rq": 81,
+    "make": "Rolls-Royce",
+    "model": "Cullinan Black Badge",
+    "modelYear": 2019,
+    "country": "GB",
+    "topSpeed": 155,
+    "0to60": 4.6,
+    "handling": 76,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Extreme Juggernaut"],
+    "isPrize": false,
+	
+    "weight": 2660,
+    "gc": "High",
+    "seatCount": 4,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 83.63,
+    "ola": 76.08,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1010852752953458688/CullinanBB.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1010853532196405311/RoyRoyCullBB.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 158, 
+"3330to60": 4.4, 
+"333Handling": 79,
+
+"666TopSpeed": 162, 
+"6660to60": 4.1, 
+"666Handling": 81,
+
+"699TopSpeed": 162, 
+"6990to60": 3.9, 
+"699Handling": 84,
+
+"969TopSpeed": 165, 
+"9690to60": 4.1, 
+"969Handling": 84,
+
+"996TopSpeed": 165, 
+"9960to60": 3.9, 
+"996Handling": 81
+}

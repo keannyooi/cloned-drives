@@ -1,0 +1,49 @@
+{
+    "rq": 33,
+    "make": "Mercedes-Benz",
+    "model": "GLK 200 CDI BlueEfficiency",
+    "modelYear": 2009,
+    "country": "DE",
+    "topSpeed": 123,
+    "0to60": 10.7,
+    "handling": 70,
+    "driveType": "RWD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+	
+    "weight": 1875,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 44.03,
+    "ola": 63.55,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/995754712802537572/D.MercedesGLK200CDI.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995756714529919046/GLK200cdi.png",
+    "creator": "Connor",
+
+"333TopSpeed": 127, 
+"3330to60": 10.2, 
+"333Handling": 72,
+
+"666TopSpeed": 131, 
+"6660to60": 9.6, 
+"666Handling": 75,
+
+"699TopSpeed": 131, 
+"6990to60": 9.1, 
+"699Handling": 78,
+
+"969TopSpeed": 136, 
+"9690to60": 9.6, 
+"969Handling": 78,
+
+"996TopSpeed": 136, 
+"9960to60": 9.1, 
+"996Handling": 75
+}

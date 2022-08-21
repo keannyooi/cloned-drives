@@ -1,0 +1,49 @@
+{
+    "rq": 59,
+    "make": ["Aston Martin", "ItalDesign"],
+    "model": "Twenty Twenty Concept by ItalDesign",
+    "modelYear": 2001,
+    "country": "GB",
+    "topSpeed": 180,
+    "0to60": 4.6,
+    "handling": 79,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Concept", "Unique", "Oddity"],
+    "isPrize": false,
+	
+    "weight": 1820,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 92,
+    "ola": 91.3,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1010857473776828426/2020italdesidng.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1010857748411453470/2020Italdeisgn.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 183, 
+"3330to60": 4.4, 
+"333Handling": 82,
+
+"666TopSpeed": 186, 
+"6660to60": 4.1, 
+"666Handling": 84,
+
+"699TopSpeed": 186, 
+"6990to60": 3.9, 
+"699Handling": 88,
+
+"969TopSpeed": 189, 
+"9690to60": 4.1, 
+"969Handling": 88,
+
+"996TopSpeed": 189, 
+"9960to60": 3.9, 
+"996Handling": 84 
+}

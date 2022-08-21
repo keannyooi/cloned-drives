@@ -1,0 +1,49 @@
+{
+    "rq": 82,
+    "make": "Aston Martin",
+    "model": "V12 Speedster 'DBR1 Spec'",
+    "modelYear": 2021,
+    "country": "GB",
+    "topSpeed": 198,
+    "0to60": 3.3,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Unique"],
+    "isPrize": false,
+	
+    "weight": 1765,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 94.28,
+    "ola": 100,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1010857669386575924/v12speedsterdbr1spec.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1010857841923473428/V12SpeedsterDBR1.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 201, 
+"3330to60": 3.1, 
+"333Handling": 94,
+
+"666TopSpeed": 203, 
+"6660to60": 3.0, 
+"666Handling": 97,
+
+"699TopSpeed": 203, 
+"6990to60": 2.8, 
+"699Handling": 101,
+
+"969TopSpeed": 206, 
+"9690to60": 3.0, 
+"969Handling": 101,
+
+"996TopSpeed": 206, 
+"9960to60": 2.8, 
+"996Handling": 97
+}

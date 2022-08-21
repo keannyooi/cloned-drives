@@ -1,0 +1,49 @@
+{
+    "rq": 55,
+    "make": ["AC Schnitzer", "BMW"],
+    "model": "ACS3 3.0d",
+    "modelYear": 2004,
+    "country": "DE",
+    "topSpeed": 135,
+    "0to60": 7.0,
+    "handling": 77,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Tuner"],
+    "isPrize": false,
+	
+    "weight": 1820,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 69.3,
+    "ola": 68.57,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1010852917412114493/ACS32004.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1010853563007762532/ACS3.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 139, 
+"3330to60": 6.6, 
+"333Handling": 80,
+
+"666TopSpeed": 143, 
+"6660to60": 6.3, 
+"666Handling": 82,
+
+"699TopSpeed": 143, 
+"6990to60": 6.0, 
+"699Handling": 85,
+
+"969TopSpeed": 147, 
+"9690to60": 6.3, 
+"969Handling": 85,
+
+"996TopSpeed": 147, 
+"9960to60": 6.0, 
+"996Handling": 82 
+}

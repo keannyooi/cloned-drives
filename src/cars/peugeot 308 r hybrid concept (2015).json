@@ -1,0 +1,50 @@
+{
+    "rq": 78,
+    "make": "Peugeot",
+    "model": "308 R HYbrid Concept",
+    "modelYear": 2015,
+    "country": "FR",
+    "topSpeed": 155,
+    "0to60": 3.9,
+    "handling": 90,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Concept", "Unique", "Hot Hatch"],
+    "isPrize": false,
+
+    "weight": 1550,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 84.78,
+    "ola": 71.79,
+    "description": "Peugeot's 500 hp hot hatch destroyer that was supposed to be produced but didn't.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/852816293262131251/image0.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1010688792677580851/Peugeot308RHYbridConcept.png",
+    "creator": "Spence",
+
+    "333TopSpeed": 158,
+    "3330to60": 3.7,
+    "333Handling": 93,
+
+    "666TopSpeed": 162,
+    "6660to60": 3.5,
+    "666Handling": 96,
+
+    "996TopSpeed": 165,
+    "9960to60": 3.3,
+    "996Handling": 96,
+
+    "969TopSpeed": 165,
+    "9690to60": 3.5,
+    "969Handling": 100,
+
+    "699TopSpeed": 162,
+    "6990to60": 3.3,
+    "699Handling": 100
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 66,
+    "make": "Mercedes-Benz",
+    "model": "GLK 350 4MATIC BlueEfficiency",
+    "modelYear": 2012,
+    "country": "DE",
+    "topSpeed": 148,
+    "0to60": 6.1,
+    "handling": 75,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+	
+    "weight": 1910,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 64.21,
+    "ola": 62.29,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/995754600915283988/A.MercGLK350BE4M.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995756634183827586/GLK350be4m.png",
+    "creator": "Connor",
+
+"333TopSpeed": 152, 
+"3330to60": 5.8, 
+"333Handling": 77,
+
+"666TopSpeed": 155, 
+"6660to60": 5.5, 
+"666Handling": 80,
+
+"699TopSpeed": 155, 
+"6990to60": 5.2, 
+"699Handling": 83,
+
+"969TopSpeed": 159, 
+"9690to60": 5.5, 
+"969Handling": 83,
+
+"996TopSpeed": 159, 
+"9960to60": 5.2, 
+"996Handling": 80
+}

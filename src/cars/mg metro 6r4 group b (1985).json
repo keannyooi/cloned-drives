@@ -1,0 +1,49 @@
+{
+    "rq": 108,
+    "make": "MG",
+    "model": "Metro 6R4 Group B",
+    "modelYear": 1985,
+    "country": "GB",
+    "topSpeed": 117,
+    "0to60": 2.9,
+    "handling": 88,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["Motorsport", "Unique"],
+    "isPrize": true,
+	
+    "weight": 1040,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 69.04,
+    "ola": 82.75,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1010853059938762782/MGMetroGRB.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1010853620331331644/6R4GRb.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 121, 
+"3330to60": 2.8, 
+"333Handling": 91,
+
+"666TopSpeed": 126, 
+"6660to60": 2.6, 
+"666Handling": 94,
+
+"699TopSpeed": 126, 
+"6990to60": 2.5, 
+"699Handling": 98,
+
+"969TopSpeed": 130, 
+"9690to60": 2.6, 
+"969Handling": 98,
+
+"996TopSpeed": 130, 
+"9960to60": 2.5, 
+"996Handling": 94
+}

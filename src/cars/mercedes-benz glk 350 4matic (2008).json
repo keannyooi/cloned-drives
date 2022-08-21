@@ -1,0 +1,49 @@
+{
+    "rq": 59,
+    "make": "Mercedes-Benz",
+    "model": "GLK 350 4MATIC",
+    "modelYear": 2008,
+    "country": "DE",
+    "topSpeed": 145,
+    "0to60": 6.8,
+    "handling": 74,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+	
+    "weight": 1913,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 64.76,
+    "ola": 64.7,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/995754401459355658/B.MercGLK3504MATIC.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995756487479668896/GLK350.png",
+    "creator": "Connor",
+
+"333TopSpeed": 149, 
+"3330to60": 6.5, 
+"333Handling": 76,
+
+"666TopSpeed": 152, 
+"6660to60": 6.1, 
+"666Handling": 79,
+
+"699TopSpeed": 152, 
+"6990to60": 5.8, 
+"699Handling": 82,
+
+"969TopSpeed": 156, 
+"9690to60": 6.1, 
+"969Handling": 82,
+
+"996TopSpeed": 156, 
+"9960to60": 5.8, 
+"996Handling": 79 
+}

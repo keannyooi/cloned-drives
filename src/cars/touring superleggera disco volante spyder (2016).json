@@ -1,0 +1,49 @@
+{
+    "rq": 68,
+    "make": ["Touring Superleggera", "Alfa Romeo"],
+    "model": "Disco Volante Spyder",
+    "modelYear": 2016,
+    "country": "2016",
+    "topSpeed": 181,
+    "0to60": 4.4,
+    "handling": 88,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner", "Unique"],
+    "isPrize": false,
+	
+    "weight": 1600,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 72.13,
+    "ola": 86.36,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1010853413849940091/discospoder.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1010853673020182568/discovolantespyder.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 184, 
+"3330to60": 4.2, 
+"333Handling": 91,
+
+"666TopSpeed": 187, 
+"6660to60": 4.0, 
+"666Handling": 94,
+
+"699TopSpeed": 187, 
+"6990to60": 3.7, 
+"699Handling": 98,
+
+"969TopSpeed": 190, 
+"9690to60": 4.0, 
+"969Handling": 98,
+
+"996TopSpeed": 190, 
+"9960to60": 3.7, 
+"996Handling": 94
+}

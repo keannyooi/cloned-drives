@@ -1,0 +1,50 @@
+{
+    "rq": 63,
+    "make": ["Peugeot Sport", "Peugeot"],
+    "model": "508 SW HYbrid4",
+    "modelYear": 2021,
+    "country": "FR",
+    "topSpeed": 155,
+    "0to60": 5.3,
+    "handling": 83,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+
+    "weight": 1875,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Hybrid",
+    "mra": 69.74,
+    "ola": 90.57,
+    "description": "The most powerful Peugeot but Wagon.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1010762346567839904/PeugeotSport508SWHYbrid4.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1010762462997528627/PeugeotSport508SWHYbrid4.png",
+    "creator": "Spence",
+
+    "333TopSpeed": 158,
+    "3330to60": 5.0,
+    "333Handling": 86,
+
+    "666TopSpeed": 162,
+    "6660to60": 4.8,
+    "666Handling": 88,
+
+    "996TopSpeed": 165,
+    "9960to60": 4.5,
+    "996Handling": 88,
+
+    "969TopSpeed": 165,
+    "9690to60": 4.8,
+    "969Handling": 92,
+
+    "699TopSpeed": 162,
+    "6990to60": 4.5,
+    "699Handling": 92
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 53,
+    "make": "Mercedes-Benz",
+    "model": "GLK 320 CDI 4MATIC",
+    "modelYear": 2008,
+    "country": "DE",
+    "topSpeed": 136,
+    "0to60": 7.4,
+    "handling": 73,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+	
+    "weight": 1955,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 57.36,
+    "ola": 67.56,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/995755165330194564/B.MercedesGLK320CDI4MATIC.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995757018084278374/GLK320cdi.png",
+    "creator": "Connor",
+
+"333TopSpeed": 140, 
+"3330to60": 7.0, 
+"333Handling": 75,
+
+"666TopSpeed": 144, 
+"6660to60": 6.7, 
+"666Handling": 78,
+
+"699TopSpeed": 144, 
+"6990to60": 6.3, 
+"699Handling": 81,
+
+"969TopSpeed": 147, 
+"9690to60": 6.7, 
+"969Handling": 81,
+
+"996TopSpeed": 147, 
+"9960to60": 6.3, 
+"996Handling": 78
+}
