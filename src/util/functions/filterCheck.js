@@ -19,7 +19,7 @@ function filterCheck(args) {
     let currentCar = require(`../../cars/${carObject.carID}`), bmReference = currentCar;
     if (currentCar["reference"]) {
         if (hideBMCars) {
-            passed = false;
+            return false;
         }
         else {
             bmReference = require(`../../cars/${currentCar["reference"]}`);

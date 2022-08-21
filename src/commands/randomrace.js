@@ -191,7 +191,7 @@ module.exports = {
                 let reqs = ["tyreType", "driveType", "enginePos"];
                 let req = reqs[Math.floor(Math.random() * reqs.length)];
                 let reqCar = require(`../cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
-                if (reqCar[req].toLowerCase() === "Mixed") {
+                if (reqCar["reference"]) {
                     reqCar = require(`../cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
                 }
                 criteria[req] = reqCar[req].toLowerCase();
@@ -204,6 +204,9 @@ module.exports = {
                 let reqs = ["modelYear", "seatCount", "bodyStyle"];
                 let req = reqs[Math.floor(Math.random() * reqs.length)];
                 let reqCar = require(`../cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
+                if (reqCar["reference"]) {
+                    reqCar = require(`../cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
+                }
                 switch (req) {
                     case "bodyStyle":
                         criteria[req] = Array.isArray(reqCar[req]) ? [reqCar[req][0].toLowerCase()] : [reqCar[req].toLowerCase()];
@@ -227,6 +230,9 @@ module.exports = {
                 let reqs = ["make", "modelYear", "gc", "tags"];
                 let req = reqs[Math.floor(Math.random() * reqs.length)];
                 let reqCar = require(`../cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
+                if (reqCar["reference"]) {
+                    reqCar = require(`../cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
+                }
                 switch (req) {
                     case "make":
                     case "tags":

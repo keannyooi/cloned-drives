@@ -17,15 +17,19 @@ function editFilter(message, filter, args) {
         case "bodyStyle":
             let argument = args.slice(1, args.length).join(" ").toLowerCase();
             isValid = carFiles.findIndex(function (carFile) {
-                let currentCar = require(`../../cars/${carFile}`);
-                if (criteria === "collection" && !currentCar["reference"]) {
-                    return false;
+                let currentCar = require(`../../cars/${carFile}`), bmReference = currentCar;
+                if (currentCar["reference"]) {
+                    bmReference = require(`../../cars/${currentCar["reference"]}`);
                 }
-                else if (Array.isArray(currentCar[criteria])) {
-                    return currentCar[criteria].some(tag => tag.toLowerCase() === argument);
+                if (criteria === "collection" && !currentCar[criteria]) {
+                    return false
+                }
+                else if (Array.isArray(bmReference[criteria])) {
+                    return bmReference[criteria].some(tag => tag.toLowerCase() === argument);
                 }
                 else {
-                    return currentCar[criteria].toLowerCase() === argument;
+                    console.log(bmReference);
+                    return bmReference[criteria].toLowerCase() === argument;
                 }
             });
 
