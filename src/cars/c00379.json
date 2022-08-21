@@ -5,19 +5,11 @@
     "modelYear": 1962,
     "country": "IT",
     "topSpeed": 174,
-    "0to60": 6,
+    "0to60": 6.0,
     "handling": 74,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Motorsport",
-        "Ultra Expensive",
-        "Unique",
-        "Style Icon",
-        "Sleeper",
-        "Supercar",
-        "Silver Screen"
-    ],
+    "tags": ["Motorsport","Ultra Expensive","Unique","Style Icon","Sleeper","Supercar","Silver Screen"],
     "isPrize": true,
     "weight": 1047,
     "gc": "Low",
@@ -29,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 90.91,
     "ola": 86.67,
-    "description": "It was born in a tumultuous chapter in Ferrari history and never even won Le Mans. So how did the 250 GTO become a $70 million collectible? Card by Lemon.",
+    "description": "It was born in a tumultuous chapter in Ferrari history and never even won Le Mans. So how did the 250 GTO become a $70 million collectible?",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/959824901341073438/ferrari_250_gto_62_for_cd.png",
     "333TopSpeed": 177,
     "3330to60": 5.7,
@@ -46,6 +38,6 @@
     "699TopSpeed": 180,
     "6990to60": 5.1,
     "699Handling": 82,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1001032982351581184/IMG_20220402_083227.png",
+    "creator": "Lemon"
 }

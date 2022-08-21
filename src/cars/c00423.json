@@ -9,10 +9,7 @@
     "handling": 70,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": [
-        "Concept",
-        "Unique"
-    ],
+    "tags": ["Concept","Unique"],
     "isPrize": true,
     "weight": 2344,
     "gc": "High",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 40.31,
     "ola": 66.67,
-    "description": "Peter Schweitzer's experimental Ford Bronco with the F-150 Lightning flow. Card by Preston",
+    "description": "Peter Schweitzer's experimental Ford Bronco with the F-150 Lightning flow.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/823460195119267880/white_boi.png",
     "333TopSpeed": 115,
     "3330to60": 7.3,
@@ -41,6 +38,6 @@
     "699TopSpeed": 119,
     "6990to60": 6.5,
     "699Handling": 78,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1000949030576201739/white_lightning_thumb.png",
+    "creator": "Preston"
 }

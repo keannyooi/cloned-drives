@@ -9,12 +9,7 @@
     "handling": 77,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Motorsport",
-        "Ultra Expensive",
-        "Unique",
-        "Sleeper"
-    ],
+    "tags": ["Motorsport","Ultra Expensive","Unique","Sleeper"],
     "isPrize": true,
     "weight": 1111,
     "gc": "Low",
@@ -26,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 85.29,
     "ola": 86.21,
-    "description": "Card by Lemon.",
+    "description": "None.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/959841456045047888/ferrari_250_gto_64_for_cd.png",
     "333TopSpeed": 158,
     "3330to60": 5.5,
@@ -43,6 +38,6 @@
     "699TopSpeed": 162,
     "6990to60": 4.9,
     "699Handling": 85,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1001033473290670090/IMG_20220402_174435.png",
+    "creator": "Lemon"
 }

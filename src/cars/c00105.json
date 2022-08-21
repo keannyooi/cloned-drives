@@ -21,10 +21,10 @@
     "fuelType": "Petrol",
     "mra": 60.92,
     "ola": 67.92,
-    "description": "The perfect car in search of its own soul. Card by Lemon",
+    "description": "The perfect car in search of its own soul.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/875660008396820490/audi_a4_2.0_tfsi_quattro_for_cd.png",
     "333TopSpeed": 158,
-    "3330to60": 5,
+    "3330to60": 5.0,
     "333Handling": 84,
     "666TopSpeed": 162,
     "6660to60": 4.8,
@@ -38,6 +38,6 @@
     "699TopSpeed": 162,
     "6990to60": 4.5,
     "699Handling": 90,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1001032132963082340/IMG_20210812_192934.png",
+    "creator": "Lemon"
 }

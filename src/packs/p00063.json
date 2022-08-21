@@ -25,18 +25,18 @@
             "common": 0,
             "uncommon": 0,
             "rare": 0,
-            "superRare": 100,
-            "ultraRare": 0,
-            "epic": 0,
+            "superRare": 90,
+            "ultraRare": 9,
+            "epic": 1,
             "legendary": 0
         },
         {
             "common": 0,
             "uncommon": 0,
             "rare": 0,
-            "superRare": 100,
-            "ultraRare": 0,
-            "epic": 0,
+            "superRare": 50,
+            "ultraRare": 40,
+            "epic": 10,
             "legendary": 0
         },
         {
@@ -52,8 +52,8 @@
             "common": 0,
             "uncommon": 0,
             "rare": 0,
-            "superRare": 65,
-            "ultraRare": 20,
+            "superRare": 55,
+            "ultraRare": 30,
             "epic": 10,
             "legendary": 5
         },
@@ -61,8 +61,8 @@
             "common": 0,
             "uncommon": 0,
             "rare": 0,
-            "superRare": 65,
-            "ultraRare": 20,
+            "superRare": 55,
+            "ultraRare": 30,
             "epic": 10,
             "legendary": 5
         }
