@@ -1,0 +1,49 @@
+{
+    "rq": 40,
+    "make": "Mercedes-Benz",
+    "model": "#1 Tankpool24 Racing Truck",
+    "modelYear": 2015,
+    "country": "DE",
+    "topSpeed": 100,
+    "0to60": 5.5,
+    "handling": 83,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport"],
+    "isPrize": false,
+    
+    "weight": 5500,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Truck",
+    "tcs": true,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Diesel",
+    "mra": 64.86,
+    "ola": 70.62,
+    "description": "What amazon secretly uses for same-day delivery.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1010701891547705434/mercedes-benz_1_tankpool24_racing_truck.png",
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1010702614624735362/mercedes-benz_1_tankpool24_racing_truck.png",
+    "creator": "c6",
+
+    "333TopSpeed": 147,
+    "3330to60": 5.2,
+    "333Handling": 86,
+
+    "666TopSpeed": 150,
+    "6660to60": 5.0,
+    "666Handling": 88,
+
+    "996TopSpeed": 154,
+    "9960to60": 4.7,
+    "996Handling": 88,
+
+    "969TopSpeed": 154,
+    "9690to60": 5.0,
+    "969Handling": 92,
+
+    "699TopSpeed": 150,
+    "6990to60": 4.7,
+    "699Handling": 92
+}

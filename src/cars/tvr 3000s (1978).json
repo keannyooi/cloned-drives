@@ -1,0 +1,49 @@
+{
+    "rq": 23,
+    "make": "TVR",
+    "model": "3000S",
+    "modelYear": 1978,
+    "country": "GB",
+    "topSpeed": 119,
+    "0to60": 7.6,
+    "handling": 69,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+	
+    "weight": 1063,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 44.44,
+    "ola": 68.42,
+    "description": "No roof but at least you can hear the Ford Essex V6 more.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011121442424893460/TVR3000S.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011121808835092490/TVR3000S.png",
+    "creator": "Spence",
+
+"333TopSpeed": 123, 
+"3330to60": 7.2, 
+"333Handling": 71,
+
+"666TopSpeed": 128, 
+"6660to60": 6.8, 
+"666Handling": 74,
+
+"699TopSpeed": 128, 
+"6990to60": 6.5, 
+"699Handling": 77,
+
+"969TopSpeed": 132, 
+"9690to60": 6.8, 
+"969Handling": 77,
+
+"996TopSpeed": 132, 
+"9960to60": 6.5, 
+"996Handling": 74
+}

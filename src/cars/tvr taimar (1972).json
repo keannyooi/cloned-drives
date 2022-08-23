@@ -1,0 +1,49 @@
+{
+    "rq": 25,
+    "make": "TVR",
+    "model": "Taimar",
+    "modelYear": 1972,
+    "country": "GB",
+    "topSpeed": 121,
+    "0to60": 7.7,
+    "handling": 72,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+	
+    "weight": 1063,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 44.77,
+    "ola": 67.53,
+    "description": "An M-Series with a 3.0L Ford Essex V6.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011121299495587921/TVRTaimar.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011121678329335809/TVRTaimar.png",
+    "creator": "Spence",
+
+"333TopSpeed": 125, 
+"3330to60": 7.3, 
+"333Handling": 74,
+
+"666TopSpeed": 130, 
+"6660to60": 6.9, 
+"666Handling": 77,
+
+"699TopSpeed": 130, 
+"6990to60": 6.5, 
+"699Handling": 80,
+
+"969TopSpeed": 134, 
+"9690to60": 6.9, 
+"969Handling": 80,
+
+"996TopSpeed": 134, 
+"9960to60": 6.5, 
+"996Handling": 77
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 91,
+    "make": "SCG",
+    "model": "003C",
+    "modelYear": 2015,
+    "country": "US",
+    "topSpeed": 183,
+    "0to60": 2.9,
+    "handling": 100,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport"],
+    "isPrize": true,
+    
+    "weight": 1350,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 93.55,
+    "ola": 82.76,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1010611117405503608/SCG_003C_2015.png",
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1010611478459580496/SCG_003C_2015_Hud.png",
+    "creator": "DodgeDemon",
+
+    "333TopSpeed": 186,
+    "3330to60": 2.8,
+    "333Handling": 103,
+
+    "666TopSpeed": 189,
+    "6660to60": 2.6,
+    "666Handling": 107,
+
+    "996TopSpeed": 192,
+    "9960to60": 2.5,
+    "996Handling": 107,
+
+    "969TopSpeed": 192,
+    "9690to60": 2.6,
+    "969Handling": 111,
+
+    "699TopSpeed": 189,
+    "6990to60": 2.5,
+    "699Handling": 111
+}

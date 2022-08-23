@@ -1,0 +1,49 @@
+{
+    "rq": 17,
+    "make": "TVR",
+    "model": "2500M",
+    "modelYear": 1972,
+    "country": "GB",
+    "topSpeed": 109,
+    "0to60": 9.3,
+    "handling": 70,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+	
+    "weight": 1024,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 58.12,
+    "ola": 64.52,
+    "description": "The first M-Series to start in production.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011121353639858176/TVR2500M.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011121719437709352/TVR2500M.png",
+    "creator": "Spence",
+
+"333TopSpeed": 114, 
+"3330to60": 8.8, 
+"333Handling": 72,
+
+"666TopSpeed": 119, 
+"6660to60": 8.4, 
+"666Handling": 75,
+
+"699TopSpeed": 119, 
+"6990to60": 7.9, 
+"699Handling": 78,
+
+"969TopSpeed": 123, 
+"9690to60": 8.4, 
+"969Handling": 78,
+
+"996TopSpeed": 123, 
+"9960to60": 7.9, 
+"996Handling": 75
+}

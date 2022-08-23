@@ -1,0 +1,49 @@
+{
+    "rq": 96,
+    "make": "SCG",
+    "model": "003CS",
+    "modelYear": 2016,
+    "country": "US",
+    "topSpeed": 211,
+    "0to60": 2.8,
+    "handling": 99,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Hypercar", "Track Day", "Ultra Expensive"],
+    "isPrize": true,
+    
+    "weight": 1180,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 103.70,
+    "ola": 78.57,
+    "description": "The ultimate (barely) road-legal race car, no homologation, just insanity",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1010611298532331561/SCG_003CS_2016.png",
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1010611578451804170/SCG_003CS_2016_Hud.png",
+    "creator": "DodgeDemon",
+
+    "333TopSpeed": 213,
+    "3330to60": 2.7,
+    "333Handling": 102,
+
+    "666TopSpeed": 216,
+    "6660to60": 2.5,
+    "666Handling": 106,
+
+    "996TopSpeed": 218,
+    "9960to60": 2.4,
+    "996Handling": 106,
+
+    "969TopSpeed": 218,
+    "9690to60": 2.5,
+    "969Handling": 110,
+
+    "699TopSpeed": 216,
+    "6990to60": 2.4,
+    "699Handling": 110
+}

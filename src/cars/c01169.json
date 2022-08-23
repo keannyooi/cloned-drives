@@ -1,20 +1,18 @@
 {
-    "rq": 96,
-    "make": "Scuderia Cameron Glickenhaus",
-    "model": "SCG003S",
+    "rq": 95,
+    "make": "SCG",
+    "model": "003S",
     "modelYear": 2015,
     "country": "US",
-    "topSpeed": 231,
+    "topSpeed": 230,
     "0to60": 2.9,
-    "handling": 100,
+    "handling": 98,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Hypercar",
-        "Ultra Expensive"
-    ],
-    "isPrize": true,
-    "weight": 1225,
+    "tags": ["Hypercar", "Track Day", "Ultra Expensive"],
+    "isPrize": false,
+    
+    "weight": 1300,
     "gc": "Low",
     "seatCount": 2,
     "bodyStyle": "Coupe",
@@ -24,23 +22,28 @@
     "fuelType": "Petrol",
     "mra": 96.67,
     "ola": 82.76,
-    "description": "A mouthful of a hypercar. Card by DodgeDemon.",
-    "card": "https://cdn.discordapp.com/attachments/819199720249360384/824680360440627320/scg003s.png",
-    "333TopSpeed": 233,
+    "description": "The ultimate road-legal luxury GT race car.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1010611436151656480/SCG_003S_2015.png",
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1010611657233404015/SCG_003S_2015_Hud.png",
+    "creator": "DodgeDemon",
+
+    "333TopSpeed": 232,
     "3330to60": 2.8,
-    "333Handling": 103,
-    "666TopSpeed": 236,
+    "333Handling": 101,
+
+    "666TopSpeed": 235,
     "6660to60": 2.6,
-    "666Handling": 107,
-    "996TopSpeed": 238,
+    "666Handling": 104,
+
+    "996TopSpeed": 237,
     "9960to60": 2.5,
-    "996Handling": 107,
-    "969TopSpeed": 238,
+    "996Handling": 104,
+
+    "969TopSpeed": 237,
     "9690to60": 2.6,
-    "969Handling": 111,
-    "699TopSpeed": 236,
+    "969Handling": 109,
+
+    "699TopSpeed": 235,
     "6990to60": 2.5,
-    "699Handling": 111,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "699Handling": 109
 }

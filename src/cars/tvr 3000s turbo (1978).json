@@ -1,0 +1,49 @@
+{
+    "rq": 34,
+    "make": "TVR",
+    "model": "3000S Turbo",
+    "modelYear": 1978,
+    "country": "GB",
+    "topSpeed": 130,
+    "0to60": 6.3,
+    "handling": 71,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+	
+    "weight": 1047,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 71.59,
+    "ola": 95.23,
+    "description": "A turbocharged TVR without a roof.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011121486167277588/TVR3000STurbo.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011121854762717265/TVR3000STurbo.png",
+    "creator": "Spence",
+
+"333TopSpeed": 134, 
+"3330to60": 6.0, 
+"333Handling": 73,
+
+"666TopSpeed": 138, 
+"6660to60": 5.7, 
+"666Handling": 76,
+
+"699TopSpeed": 138, 
+"6990to60": 5.4, 
+"699Handling": 79,
+
+"969TopSpeed": 142, 
+"9690to60": 5.7, 
+"969Handling": 79,
+
+"996TopSpeed": 142, 
+"9960to60": 5.4, 
+"996Handling": 76
+}
