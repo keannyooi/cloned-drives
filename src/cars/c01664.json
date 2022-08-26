@@ -9,13 +9,7 @@
     "handling": 79,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": [
-        "Oddity",
-        "Concept",
-        "Unique",
-        "Eco-Friendly",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Oddity","Concept","Unique","Eco-Friendly","The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1490,
     "gc": "Medium",
@@ -27,7 +21,7 @@
     "fuelType": "Electric",
     "mra": 62.6,
     "ola": 77.92,
-    "description": "An Electric Evo. Card by Bnuuy.",
+    "description": "An Electric Evo.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/869165996877951016/evomiev.png",
     "333TopSpeed": 117,
     "3330to60": 7.3,
@@ -44,6 +38,6 @@
     "699TopSpeed": 121,
     "6990to60": 6.5,
     "699Handling": 88,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997643765470744636/electricevo.png",
+    "creator": "Bnuuy"
 }

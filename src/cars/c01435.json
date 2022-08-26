@@ -5,7 +5,7 @@
     "modelYear": 1964,
     "country": "RO",
     "topSpeed": 62,
-    "0to60": 28,
+    "0to60": 28.0,
     "handling": 44,
     "driveType": "4WD",
     "tyreType": "Off-Road",
@@ -14,17 +14,14 @@
     "weight": 1550,
     "gc": "High",
     "seatCount": 2,
-    "bodyStyle": [
-        "Convertible",
-        "SUV"
-    ],
+    "bodyStyle": ["Convertible","SUV"],
     "tcs": false,
     "abs": false,
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 0,
     "ola": 40,
-    "description": "Card by Bnuuy.",
+    "description": "None.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/930857462083510352/AROM461.png",
     "333TopSpeed": 70,
     "3330to60": 26.6,
@@ -41,6 +38,6 @@
     "699TopSpeed": 79,
     "6990to60": 23.8,
     "699Handling": 49,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997647072381653103/ARO.png",
+    "creator": "Bnuuy"
 }

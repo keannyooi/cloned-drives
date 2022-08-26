@@ -9,11 +9,7 @@
     "handling": 72,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": [
-        "Eco-Friendly",
-        "Unique",
-        "Concept"
-    ],
+    "tags": ["Eco-Friendly","Unique","Concept"],
     "isPrize": false,
     "weight": 1100,
     "gc": "Medium",
@@ -25,7 +21,7 @@
     "fuelType": "Hybrid",
     "mra": 40.69,
     "ola": 61.68,
-    "description": "The pre-curser to the Prius C. Card by Bnuuy.",
+    "description": "The pre-curser to the Prius C.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/850000767561760768/PriusCConcept.png",
     "333TopSpeed": 107,
     "3330to60": 10.2,
@@ -42,6 +38,6 @@
     "699TopSpeed": 112,
     "6990to60": 9.1,
     "699Handling": 80,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997646346351808623/priusCconcept.png",
+    "creator": "Bnuuy"
 }

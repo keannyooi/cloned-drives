@@ -5,13 +5,11 @@
     "modelYear": 2009,
     "country": "JP",
     "topSpeed": 79,
-    "0to60": 14,
+    "0to60": 14.0,
     "handling": 64,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": [
-        "Kei Car"
-    ],
+    "tags": ["Kei Car"],
     "isPrize": true,
     "weight": 971,
     "gc": "Medium",
@@ -23,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 0,
     "ola": 52.86,
-    "description": "Kei cars don't sell well in the land of big things, and so did this. Card by bnuuy",
+    "description": "Kei cars don't sell well in the land of big things, and so did this.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/865599191127556106/IAWD.png",
     "333TopSpeed": 86,
     "3330to60": 13.3,
@@ -40,6 +38,6 @@
     "699TopSpeed": 92,
     "6990to60": 11.9,
     "699Handling": 71,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997646883017211944/iawd.png",
+    "creator": "Bnuuy"
 }

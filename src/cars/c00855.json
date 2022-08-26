@@ -5,14 +5,11 @@
     "modelYear": 1929,
     "country": "DE",
     "topSpeed": 114,
-    "0to60": 14,
+    "0to60": 14.0,
     "handling": 59,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": [
-        "Ultra Expensive",
-        "Unique"
-    ],
+    "tags": ["Ultra Expensive","Unique"],
     "isPrize": false,
     "weight": 1690,
     "gc": "Medium",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 35.9,
     "ola": 58.57,
-    "description": "A timeless classic which is highly sought after for its rarity and engineering, even for thieves in a certain manga series. Card by bnuuy",
+    "description": "A timeless classic which is highly sought after for its rarity and engineering, even for thieves in a certain manga series.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/823515654358827009/710SSK.png",
     "333TopSpeed": 119,
     "3330to60": 13.3,
@@ -41,6 +38,6 @@
     "699TopSpeed": 123,
     "6990to60": 11.9,
     "699Handling": 65,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997647131030601748/710SSK.png",
+    "creator": "Bnuuy"
 }

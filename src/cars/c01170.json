@@ -1,17 +1,15 @@
 {
     "rq": 45,
-    "make": "Seat",
+    "make": "SEAT",
     "model": "Leon Cupra R",
-    "modelYear": 2002,
+    "modelYear": 2001,
     "country": "ES",
     "topSpeed": 151,
     "0to60": 6.8,
     "handling": 77,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": [
-        "Hot Hatch"
-    ],
+    "tags": ["Hot Hatch"],
     "isPrize": false,
     "weight": 1375,
     "gc": "Medium",
@@ -23,8 +21,8 @@
     "fuelType": "Petrol",
     "mra": 75.56,
     "ola": 73.53,
-    "description": "S e a t. card by SpenceLuck.",
-    "card": "https://cdn.discordapp.com/attachments/819199720249360384/820463820547817502/image0.png",
+    "description": "S e a t.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/997863100088844329/SeatLeonCupraR2001.png",
     "333TopSpeed": 154,
     "3330to60": 6.5,
     "333Handling": 80,
@@ -40,6 +38,6 @@
     "699TopSpeed": 158,
     "6990to60": 5.8,
     "699Handling": 85,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997729961790144562/SeatLeonCupraR2001.png",
+    "creator": "Spence"
 }
