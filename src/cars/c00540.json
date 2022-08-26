@@ -5,7 +5,7 @@
     "modelYear": 2001,
     "country": "JP",
     "topSpeed": 119,
-    "0to60": 8,
+    "0to60": 8.0,
     "handling": 67,
     "driveType": "4WD",
     "tyreType": "All-Surface",
@@ -21,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 47.34,
     "ola": 82.5,
-    "description": "The Japanese MDX. Card by Bnuuy",
+    "description": "The Japanese MDX.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819659034793607194/OndaMDX.png",
     "333TopSpeed": 123,
     "3330to60": 7.6,
@@ -38,6 +38,6 @@
     "699TopSpeed": 128,
     "6990to60": 6.8,
     "699Handling": 74,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997644225044807802/ondaMDX.png",
+    "creator": "Bnuuy"
 }

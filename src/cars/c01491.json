@@ -1,9 +1,6 @@
 {
     "rq": 33,
-    "make": [
-        "Talbot",
-        "Lotus"
-    ],
+    "make": ["Talbot","Lotus", "Sunbeam"],
     "model": "Lotus Sunbeam",
     "modelYear": 1979,
     "country": "GB",
@@ -12,10 +9,7 @@
     "handling": 68,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Hot Hatch",
-        "The Royal Collection"
-    ],
+    "tags": ["Hot Hatch","The Royal Collection"],
     "isPrize": false,
     "weight": 960,
     "gc": "Medium",
@@ -27,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 54.83,
     "ola": 83.1,
-    "description": "Card by Bnuuy.",
+    "description": "None.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/912490827547287592/talbotlotussunbeam.png",
     "333TopSpeed": 125,
     "3330to60": 6.7,
@@ -36,14 +30,14 @@
     "6660to60": 6.4,
     "666Handling": 72,
     "996TopSpeed": 134,
-    "9960to60": 6,
+    "9960to60": 6.0,
     "996Handling": 72,
     "969TopSpeed": 134,
     "9690to60": 6.4,
     "969Handling": 75,
     "699TopSpeed": 130,
-    "6990to60": 6,
+    "6990to60": 6.0,
     "699Handling": 75,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997645634519711764/lotussunbeam.png",
+    "creator": "Bnuuy"
 }

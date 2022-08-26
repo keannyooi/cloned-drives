@@ -5,7 +5,7 @@
     "modelYear": 2018,
     "country": "JP",
     "topSpeed": 121,
-    "0to60": 9,
+    "0to60": 9.0,
     "handling": 69,
     "driveType": "4WD",
     "tyreType": "Standard",
@@ -21,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 42.45,
     "ola": 62.44,
-    "description": "The new Eclipse. Different from the old Eclipse. By Bnuuy",
+    "description": "The new Eclipse. Different from the old Eclipse.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820726122274750506/eclipsesel.png",
     "333TopSpeed": 125,
     "3330to60": 8.6,
@@ -38,6 +38,6 @@
     "699TopSpeed": 130,
     "6990to60": 7.7,
     "699Handling": 77,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997645395939311626/eclipsecrossSEL.png",
+    "creator": "Bnuuy"
 }

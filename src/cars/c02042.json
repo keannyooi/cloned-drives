@@ -9,11 +9,7 @@
     "handling": 68,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": [
-        "Concept",
-        "Unique",
-        "Eco-Friendly"
-    ],
+    "tags": ["Concept","Unique","Eco-Friendly"],
     "isPrize": false,
     "weight": 1400,
     "gc": "Medium",
@@ -25,7 +21,7 @@
     "fuelType": "Hybrid",
     "mra": 41.2,
     "ola": 85.25,
-    "description": "Card by Bnuuy.",
+    "description": "None.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/976512123184238622/Ethos.png",
     "333TopSpeed": 115,
     "3330to60": 8.3,
@@ -42,6 +38,6 @@
     "699TopSpeed": 119,
     "6990to60": 7.4,
     "699Handling": 75,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997645734222508052/ethos.png",
+    "creator": "Bnuuy"
 }

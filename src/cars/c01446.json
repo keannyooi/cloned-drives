@@ -9,11 +9,7 @@
     "handling": 70,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Motorsport",
-        "Unique",
-        "Ultra Expensive"
-    ],
+    "tags": ["Motorsport","Unique","Ultra Expensive"],
     "isPrize": false,
     "weight": 550,
     "gc": "Medium",
@@ -25,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 47.37,
     "ola": 64.19,
-    "description": "Top contender in the 1500cc class. Card by Bnuuy.",
+    "description": "Top contender in the 1500cc class.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/930193751257780224/550NEW.png",
     "333TopSpeed": 144,
     "3330to60": 7.7,
@@ -42,6 +38,6 @@
     "699TopSpeed": 147,
     "6990to60": 6.9,
     "699Handling": 78,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997645801046167563/550Spyder.png",
+    "creator": "Bnuuy"
 }

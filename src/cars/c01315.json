@@ -9,10 +9,7 @@
     "handling": 86,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Concept",
-        "Unique"
-    ],
+    "tags": ["Concept","Unique"],
     "isPrize": false,
     "weight": 1350,
     "gc": "Low",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 65.38,
     "ola": 76.47,
-    "description": "A very unique GT86. Card by Bnuuy.",
+    "description": "A very unique GT86.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820707795383877662/GT86Shooting.png",
     "333TopSpeed": 140,
     "3330to60": 6.5,
@@ -41,6 +38,6 @@
     "699TopSpeed": 144,
     "6990to60": 5.8,
     "699Handling": 95,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997644606093140038/GT86SB.png",
+    "creator": "Bnuuy"
 }
