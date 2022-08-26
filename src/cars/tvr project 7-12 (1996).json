@@ -1,0 +1,49 @@
+{
+    "rq": 84,
+    "make": "TVR",
+    "model": "Project 7/12",
+    "modelYear": 1996,
+    "country": "GB",
+    "topSpeed": 223,
+    "0to60": 3.2,
+    "handling": 87,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Concept"],
+    "isPrize": false,
+	
+    "weight": 1100,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 109.68,
+    "ola": 94.12,
+    "description": "The Speed 12 before the Speed 12.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011334889783709797/tvrproject712.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011338086254379048/TVRProject712.png",
+    "creator": "Spence",
+
+"333TopSpeed": 225, 
+"3330to60": 3.0, 
+"333Handling": 90,
+
+"666TopSpeed": 228, 
+"6660to60": 2.9, 
+"666Handling": 93,
+
+"699TopSpeed": 228, 
+"6990to60": 2.7, 
+"699Handling": 97,
+
+"969TopSpeed": 230, 
+"9690to60": 2.9, 
+"969Handling": 97,
+
+"996TopSpeed": 230, 
+"9960to60": 2.7, 
+"996Handling": 93
+}

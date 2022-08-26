@@ -1,0 +1,49 @@
+{
+    "rq": 67,
+    "make": "TVR",
+    "model": "T350C",
+    "modelYear": 2002,
+    "country": "GB",
+    "topSpeed": 175,
+    "0to60": 4.2,
+    "handling": 84,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+	
+    "weight": 1187,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 79.25,
+    "ola": 93.62,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011335268923605032/tvrt350c.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011338317457002586/TVRT350C.png",
+    "creator": "Spence",
+
+"333TopSpeed": 178, 
+"3330to60": 4.0, 
+"333Handling": 87,
+
+"666TopSpeed": 181, 
+"6660to60": 3.8, 
+"666Handling": 90,
+
+"699TopSpeed": 181, 
+"6990to60": 3.6, 
+"699Handling": 93,
+
+"969TopSpeed": 184, 
+"9690to60": 3.8, 
+"969Handling": 93,
+
+"996TopSpeed": 184, 
+"9960to60": 3.6, 
+"996Handling": 90
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 32,
+    "make": "TVR",
+    "model": "Griffith 200",
+    "modelYear": 1964,
+    "country": "GB",
+    "topSpeed": 132,
+    "0to60": 7.1,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+	
+    "weight": 910,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 54.63,
+    "ola": 64.79,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011333772597268551/tvrgriffith200.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011337287793115196/TVRGriffith200.png",
+    "creator": "Spence",
+
+"333TopSpeed": 136, 
+"3330to60": 6.7, 
+"333Handling": 77,
+
+"666TopSpeed": 140, 
+"6660to60": 6.4, 
+"666Handling": 80,
+
+"699TopSpeed": 140, 
+"6990to60": 6.0, 
+"699Handling": 83,
+
+"969TopSpeed": 144, 
+"9690to60": 6.4, 
+"969Handling": 83,
+
+"996TopSpeed": 144, 
+"9960to60": 6.0, 
+"996Handling": 80
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 89,
+    "make": ["TR", "TVR"],
+    "model": "Speed 12 Turbo by Helical Technology",
+    "modelYear": 2019,
+    "country": "GB",
+    "topSpeed": 218,
+    "0to60": 2.9,
+    "handling": 90,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner", "Unique", "RestoMod"],
+    "isPrize": true,
+	
+    "weight": 1282,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 126.09,
+    "ola": 96.55,
+    "description": "i cba to type out, spence pls report in le car-corrections and type the sentance thank.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011338960951328849/trspeed12turbobyhelicaltechnology.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011339045919522847/TRSpeed12TurbobyHelicalTechnology.png",
+    "creator": "Spence",
+
+"333TopSpeed": 220, 
+"3330to60": 2.8, 
+"333Handling": 93,
+
+"666TopSpeed": 223, 
+"6660to60": 2.6, 
+"666Handling": 96,
+
+"699TopSpeed": 223, 
+"6990to60": 2.5, 
+"699Handling": 100,
+
+"969TopSpeed": 225, 
+"9690to60": 2.6, 
+"969Handling": 100,
+
+"996TopSpeed": 225, 
+"9960to60": 2.5, 
+"996Handling": 96
+}

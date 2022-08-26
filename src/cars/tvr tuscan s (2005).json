@@ -1,0 +1,49 @@
+{
+    "rq": 72,
+    "make": "TVR",
+    "model": "Tuscan S",
+    "modelYear": 2005,
+    "country": "GB",
+    "topSpeed": 185,
+    "0to60": 3.9,
+    "handling": 85,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+	
+    "weight": 1116,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 90.59,
+    "ola": 89.35,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011335682247110787/tvrtuscans2005.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011338577268985896/TVRTuscanS2005.png",
+    "creator": "Spence",
+
+"333TopSpeed": 188, 
+"3330to60": 3.7, 
+"333Handling": 88,
+
+"666TopSpeed": 191, 
+"6660to60": 3.5, 
+"666Handling": 91,
+
+"699TopSpeed": 191, 
+"6990to60": 3.3, 
+"699Handling": 94,
+
+"969TopSpeed": 193, 
+"9690to60": 3.5, 
+"969Handling": 94,
+
+"996TopSpeed": 193, 
+"9960to60": 3.3, 
+"996Handling": 91
+}

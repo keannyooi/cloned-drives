@@ -1,0 +1,49 @@
+{
+    "rq": 79,
+    "make": "TVR",
+    "model": "Tuscan Challenge AJPV8",
+    "modelYear": 1990,
+    "country": "GB",
+    "topSpeed": 190,
+    "0to60": 3.5,
+    "handling": 90,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Motorsport", "Unique"],
+    "isPrize": true,
+	
+    "weight": 845,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 104.95,
+    "ola": 84.91,
+    "description": "this is the TVR race car that served to become the premier one-make series at the time in the UK.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011334344637419610/tvrtuscanchallengeajpv8.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011337797552046171/TVRTuscanChallengeAJPV8.png",
+    "creator": "Spence",
+
+"333TopSpeed": 193, 
+"3330to60": 3.3, 
+"333Handling": 93,
+
+"666TopSpeed": 195, 
+"6660to60": 3.1, 
+"666Handling": 96,
+
+"699TopSpeed": 195, 
+"6990to60": 3.0, 
+"699Handling": 100,
+
+"969TopSpeed": 198, 
+"9690to60": 3.1, 
+"969Handling": 100,
+
+"996TopSpeed": 198, 
+"9960to60": 3.0, 
+"996Handling": 96
+}

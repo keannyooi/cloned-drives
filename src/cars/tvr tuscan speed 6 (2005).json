@@ -1,0 +1,49 @@
+{
+    "rq": 61,
+    "make": "TVR",
+    "model": "Tuscan Speed 6",
+    "modelYear": 2005,
+    "country": "GB",
+    "topSpeed": 174,
+    "0to60": 4.6,
+    "handling": 82,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+	
+    "weight": 1135,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 75,
+    "ola": 93.33,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011335737129566258/tvrtuscanspeed62005.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011338612991852676/TVRTuscanSpeed62005.png",
+    "creator": "Spence",
+
+"333TopSpeed": 177, 
+"3330to60": 4.4, 
+"333Handling": 85,
+
+"666TopSpeed": 180, 
+"6660to60": 4.1, 
+"666Handling": 87,
+
+"699TopSpeed": 180, 
+"6990to60": 3.9, 
+"699Handling": 91,
+
+"969TopSpeed": 183, 
+"9690to60": 4.1, 
+"969Handling": 91,
+
+"996TopSpeed": 183, 
+"9960to60": 3.9, 
+"996Handling": 87
+}

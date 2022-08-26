@@ -1,0 +1,49 @@
+{
+    "rq": 15,
+    "make": "TVR",
+    "model": "Grantura 1800S",
+    "modelYear": 1966,
+    "country": "GB",
+    "topSpeed": 114,
+    "0to60": 9.9,
+    "handling": 70,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+	
+    "weight": 864,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 45.21,
+    "ola": 78.79,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011333727936323604/tvrgrantura1800s.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011337256100962364/TVRGrantura1800S.png",
+    "creator": "Spence",
+
+"333TopSpeed": 119, 
+"3330to60": 9.4, 
+"333Handling": 72,
+
+"666TopSpeed": 123, 
+"6660to60": 8.9, 
+"666Handling": 75,
+
+"699TopSpeed": 123, 
+"6990to60": 8.4, 
+"699Handling": 78,
+
+"969TopSpeed": 128, 
+"9690to60": 8.9, 
+"969Handling": 78,
+
+"996TopSpeed": 128, 
+"9960to60": 8.4, 
+"996Handling": 75
+}

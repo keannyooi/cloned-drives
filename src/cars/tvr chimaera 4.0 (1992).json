@@ -1,0 +1,49 @@
+{
+    "rq": 55,
+    "make": "TVR",
+    "model": "Chimaera 4.0",
+    "modelYear": 1992,
+    "country": "GB",
+    "topSpeed": 151,
+    "0to60": 5.7,
+    "handling": 80,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+	
+    "weight": 1065,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 69.97,
+    "ola": 77.64,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011334502645239939/tvrchimaera4.0.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011337953613729873/TVRChimaera4.0.png",
+    "creator": "Spence",
+
+"333TopSpeed": 154, 
+"3330to60": 5.4, 
+"333Handling": 83,
+
+"666TopSpeed": 158, 
+"6660to60": 5.1, 
+"666Handling": 85,
+
+"699TopSpeed": 158, 
+"6990to60": 4.8, 
+"699Handling": 89,
+
+"969TopSpeed": 161, 
+"9690to60": 5.1, 
+"969Handling": 89,
+
+"996TopSpeed": 161, 
+"9960to60": 4.8, 
+"996Handling": 85
+}

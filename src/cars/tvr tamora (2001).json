@@ -1,0 +1,49 @@
+{
+    "rq": 68,
+    "make": "TVR",
+    "model": "Tamora",
+    "modelYear": 2001,
+    "country": "GB",
+    "topSpeed": 175,
+    "0to60": 4.2,
+    "handling": 85,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+	
+    "weight": 1060,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 86.6,
+    "ola": 88.37,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011335309826465852/tvrtamora.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011338349522456606/TVRTamora.png",
+    "creator": "Spence",
+
+"333TopSpeed": 178, 
+"3330to60": 4.0, 
+"333Handling": 88,
+
+"666TopSpeed": 181, 
+"6660to60": 3.8, 
+"666Handling": 91,
+
+"699TopSpeed": 181, 
+"6990to60": 3.6, 
+"699Handling": 94,
+
+"969TopSpeed": 184, 
+"9690to60": 3.8, 
+"969Handling": 94,
+
+"996TopSpeed": 184, 
+"9960to60": 3.6, 
+"996Handling": 91
+}

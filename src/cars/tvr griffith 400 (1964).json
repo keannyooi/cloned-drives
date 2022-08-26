@@ -1,0 +1,49 @@
+{
+    "rq": 56,
+    "make": "TVR",
+    "model": "Griffith 400",
+    "modelYear": 1964,
+    "country": "GB",
+    "topSpeed": 159,
+    "0to60": 5.0,
+    "handling": 81,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Track Day"],
+    "isPrize": false,
+	
+    "weight": 915,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 61.84,
+    "ola": 89.36,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011333835646062694/tvrgriffith400.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011337681688613004/TVRGriffith400.png",
+    "creator": "Spence",
+
+"333TopSpeed": 162, 
+"3330to60": 4.8, 
+"333Handling": 84,
+
+"666TopSpeed": 166, 
+"6660to60": 4.5, 
+"666Handling": 86,
+
+"699TopSpeed": 166, 
+"6990to60": 4.3, 
+"699Handling": 90,
+
+"969TopSpeed": 169, 
+"9690to60": 4.5, 
+"969Handling": 90,
+
+"996TopSpeed": 169, 
+"9960to60": 4.3, 
+"996Handling": 86
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 70,
+    "make": "TVR",
+    "model": "Cerbera Speed 8 4.2",
+    "modelYear": 1996,
+    "country": "GB",
+    "topSpeed": 178,
+    "0to60": 4.4,
+    "handling": 82,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+	
+    "weight": 1139,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 73.33,
+    "ola": 90.91,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011335049645408337/tvrcerberaspeed84.2.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011338185214804008/TVRCerberaSpeed84.2.png",
+    "creator": "Spence",
+
+"333TopSpeed": 181, 
+"3330to60": 4.2, 
+"333Handling": 85,
+
+"666TopSpeed": 184, 
+"6660to60": 4.0, 
+"666Handling": 87,
+
+"699TopSpeed": 184, 
+"6990to60": 3.7, 
+"699Handling": 91,
+
+"969TopSpeed": 187, 
+"9690to60": 4.0, 
+"969Handling": 91,
+
+"996TopSpeed": 187, 
+"9960to60": 3.7, 
+"996Handling": 87
+}

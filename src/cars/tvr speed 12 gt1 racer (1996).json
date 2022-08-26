@@ -1,0 +1,49 @@
+{
+    "rq": 92,
+    "make": "TVR",
+    "model": "Speed 12 GT1 Racer",
+    "modelYear": 1996,
+    "country": "GB",
+    "topSpeed": 245,
+    "0to60": 3.0,
+    "handling": 95,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport", "Unique"],
+    "isPrize": true,
+	
+    "weight": 975,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 125,
+    "ola": 86.67,
+    "description": "Brrrrrrrrrrrrrrr.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011334965818044436/tvrspeed12gt1racer.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011338142349021254/TVRSpeed12GT1Racer.png",
+    "creator": "Spence",
+
+"333TopSpeed": 247, 
+"3330to60": 2.8, 
+"333Handling": 98,
+
+"666TopSpeed": 249, 
+"6660to60": 2.7, 
+"666Handling": 101,
+
+"699TopSpeed": 249, 
+"6990to60": 2.6, 
+"699Handling": 105,
+
+"969TopSpeed": 251, 
+"9690to60": 2.7, 
+"969Handling": 105,
+
+"996TopSpeed": 251, 
+"9960to60": 2.6, 
+"996Handling": 101 
+}

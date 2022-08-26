@@ -1,0 +1,49 @@
+{
+    "rq": 79,
+    "make": "TVR",
+    "model": "Cerbera Speed 8 4.5 Red Rose Lightweight",
+    "modelYear": 2000,
+    "country": "GB",
+    "topSpeed": 193,
+    "0to60": 3.9,
+    "handling": 84,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+	
+    "weight": 1060,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 95.12,
+    "ola": 92.31,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011335209305784360/tvrcerberaspeed84.5redroselightweight.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011338256983539922/TVRCerberaSpeed84.5RedRoseLightweight.png",
+    "creator": "Spence",
+
+"333TopSpeed": 196, 
+"3330to60": 3.7, 
+"333Handling": 87,
+
+"666TopSpeed": 198, 
+"6660to60": 3.5, 
+"666Handling": 90,
+
+"699TopSpeed": 198, 
+"6990to60": 3.3, 
+"699Handling": 93,
+
+"969TopSpeed": 201, 
+"9690to60": 3.5, 
+"969Handling": 93,
+
+"996TopSpeed": 201, 
+"9960to60": 3.3, 
+"996Handling": 90
+}

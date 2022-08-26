@@ -1,0 +1,49 @@
+{
+    "rq": 6,
+    "make": "TVR",
+    "model": "Grantura 1.6",
+    "modelYear": 1961,
+    "country": "GB",
+    "topSpeed": 98,
+    "0to60": 12.0,
+    "handling": 68,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+	
+    "weight": 800,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 17.5,
+    "ola": 75,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011333646801719367/tvrgrantura1.6.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011337213176451162/TVRGrantura1961.png",
+    "creator": "Spence",
+
+"333TopSpeed": 103, 
+"3330to60": 11.4, 
+"333Handling": 70,
+
+"666TopSpeed": 109, 
+"6660to60": 10.8, 
+"666Handling": 72,
+
+"699TopSpeed": 109, 
+"6990to60": 10.2, 
+"699Handling": 75,
+
+"969TopSpeed": 114, 
+"9690to60": 10.8, 
+"969Handling": 75,
+
+"996TopSpeed": 114, 
+"9960to60": 10.2, 
+"996Handling": 72
+}
