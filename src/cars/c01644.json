@@ -9,10 +9,7 @@
     "handling": 81,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Street Racer",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Street Racer","The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1260,
     "gc": "Medium",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 60.49,
     "ola": 73.47,
-    "description": "Card by Bnuuy.",
+    "description": "None.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/926980651801006170/evo3gsr.png",
     "333TopSpeed": 117,
     "3330to60": 4.7,
@@ -41,6 +38,6 @@
     "699TopSpeed": 121,
     "6990to60": 4.2,
     "699Handling": 90,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997640988417867886/evo3gsr.png",
+    "creator": "Bnuuy"
 }

@@ -5,17 +5,11 @@
     "modelYear": 1989,
     "country": "IT",
     "topSpeed": 180,
-    "0to60": 6,
+    "0to60": 6.0,
     "handling": 82,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Unique",
-        "Ultra Expensive",
-        "Sleeper",
-        "Eargasm",
-        "Concept"
-    ],
+    "tags": ["Unique","Ultra Expensive","Sleeper","Eargasm","Concept"],
     "isPrize": true,
     "weight": 1250,
     "gc": "Low",
@@ -27,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 83.33,
     "ola": 76.67,
-    "description": "Card by Bnuuy.",
+    "description": "None.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/856545432649859082/RariMythos.png",
     "333TopSpeed": 183,
     "3330to60": 5.7,
@@ -44,6 +38,6 @@
     "699TopSpeed": 186,
     "6990to60": 5.1,
     "699Handling": 91,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997643447563472986/Mythos.png",
+    "creator": "Bnuuy"
 }

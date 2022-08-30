@@ -9,9 +9,7 @@
     "handling": 87,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Street Racer"
-    ],
+    "tags": ["Street Racer"],
     "isPrize": false,
     "weight": 1675,
     "gc": "Low",
@@ -23,10 +21,10 @@
     "fuelType": "Petrol",
     "mra": 80.77,
     "ola": 80.95,
-    "description": "Starz wont get ;). Card by Babanuuy.",
+    "description": "Starz wont get ;).",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/850572313748307998/BMWM3coupebutbetter.png",
     "333TopSpeed": 158,
-    "3330to60": 4,
+    "3330to60": 4.0,
     "333Handling": 90,
     "666TopSpeed": 162,
     "6660to60": 3.8,
@@ -40,6 +38,6 @@
     "699TopSpeed": 162,
     "6990to60": 3.6,
     "699Handling": 97,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997640256251760731/m3coupe.png",
+    "creator": "Bnuuy"
 }

@@ -9,10 +9,7 @@
     "handling": 85,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Street Racer",
-        "Servers Choice"
-    ],
+    "tags": ["Street Racer","Servers Choice"],
     "isPrize": false,
     "weight": 1400,
     "gc": "Medium",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 73.97,
     "ola": 74.07,
-    "description": "Card by Bnuuy.",
+    "description": "None.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/948544133323194388/evo8mr.png",
     "333TopSpeed": 158,
     "3330to60": 5.1,
@@ -41,6 +38,6 @@
     "699TopSpeed": 162,
     "6990to60": 4.6,
     "699Handling": 94,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997640839012548658/evo8mr.png",
+    "creator": "Bnuuy"
 }

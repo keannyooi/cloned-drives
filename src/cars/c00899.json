@@ -9,10 +9,7 @@
     "handling": 88,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Silver Screen",
-        "Street Racer"
-    ],
+    "tags": ["Silver Screen","Street Racer"],
     "isPrize": false,
     "weight": 1560,
     "gc": "Medium",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 57.78,
     "ola": 61.54,
-    "description": "Arguably the best American Varient of the Evo X. Card by Bnuuy.",
+    "description": "Arguably the best American Varient of the Evo X.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820707978130096158/XGSR.png",
     "333TopSpeed": 158,
     "3330to60": 4.9,
@@ -41,6 +38,6 @@
     "699TopSpeed": 162,
     "6990to60": 4.4,
     "699Handling": 98,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997640168544677958/evo10gsr.png",
+    "creator": "Bnuuy"
 }

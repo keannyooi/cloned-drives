@@ -9,13 +9,7 @@
     "handling": 79,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Supercar",
-        "Style Icon",
-        "Ultra Expensive",
-        "Unique",
-        "Servers Choice"
-    ],
+    "tags": ["Supercar","Style Icon","Ultra Expensive","Unique","Servers Choice"],
     "isPrize": false,
     "weight": 1298,
     "gc": "Low",
@@ -27,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 77.78,
     "ola": 78.57,
-    "description": "The worlds fastest car for a short period of time. Card by Bnuuy.",
+    "description": "The worlds fastest car for a short period of time.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/821039058566381599/Miura.png",
     "333TopSpeed": 183,
     "3330to60": 5.5,
@@ -44,6 +38,6 @@
     "699TopSpeed": 186,
     "6990to60": 4.9,
     "699Handling": 88,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997643582762655824/miurap400SV.png",
+    "creator": "Bnuuy"
 }
