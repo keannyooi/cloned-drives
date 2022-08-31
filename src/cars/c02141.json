@@ -9,9 +9,7 @@
     "handling": 93,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Track Day"
-    ],
+    "tags": ["Track Day"],
     "isPrize": true,
     "weight": 1892,
     "gc": "Low",
@@ -23,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 104.05,
     "ola": 93.06,
-    "description": "The Carbon Fiber Track Package (CFTP) adds better tires, more aggressive aero, and a few other goodies, making an already insane car even faster. Card by Preston.",
+    "description": "The Carbon Fiber Track Package (CFTP) adds better tires, more aggressive aero, and a few other goodies, making an already insane car even faster.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/977987441325670480/2020_Ford_Mustang_Shelby_GT500_CFTP.png",
     "333TopSpeed": 183,
     "3330to60": 3.4,
@@ -40,6 +38,6 @@
     "699TopSpeed": 186,
     "6990to60": 3.1,
     "699Handling": 103,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1000895999545454712/cftp_blank.png",
+    "creator": "Preston"
 }

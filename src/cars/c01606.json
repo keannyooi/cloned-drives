@@ -9,10 +9,7 @@
     "handling": 73,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": [
-        "Eco-Friendly",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Eco-Friendly","The Japanese Odyssey"],
     "isPrize": false,
     "weight": 1668,
     "gc": "Medium",
@@ -24,7 +21,7 @@
     "fuelType": "Electric",
     "mra": 11.04,
     "ola": 80,
-    "description": "Mazda's very first electric car, with RX-8 styled doors and a questionable 200 km range. Card by Connor",
+    "description": "Mazda's very first electric car, with RX-8 styled doors and a questionable 200 km range.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/931601236212469840/E.MazdaMX30eSkyactiv.png",
     "333TopSpeed": 95,
     "3330to60": 8.9,
@@ -33,14 +30,14 @@
     "6660to60": 8.5,
     "666Handling": 78,
     "996TopSpeed": 107,
-    "9960to60": 8,
+    "9960to60": 8.0,
     "996Handling": 78,
     "969TopSpeed": 107,
     "9690to60": 8.5,
     "969Handling": 81,
     "699TopSpeed": 101,
-    "6990to60": 8,
+    "6990to60": 8.0,
     "699Handling": 81,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1000830910800875580/MX30.png",
+    "creator": "Connor"
 }

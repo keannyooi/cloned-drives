@@ -9,11 +9,7 @@
     "handling": 72,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Unique",
-        "Ultra Expensive",
-        "Motorsport"
-    ],
+    "tags": ["Unique","Ultra Expensive","Motorsport"],
     "isPrize": true,
     "weight": 900,
     "gc": "Low",
@@ -25,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 75,
     "ola": 67.33,
-    "description": "A very expensive and exotic racecar from the 50's. Card by Bnuuy.",
+    "description": "A very expensive and exotic racecar from the 50's.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/821061340130050058/SLRMille.png",
     "333TopSpeed": 189,
     "3330to60": 4.3,
@@ -42,6 +38,6 @@
     "699TopSpeed": 192,
     "6990to60": 3.8,
     "699Handling": 80,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997811445142143096/slr300mille.png",
+    "creator": "Bnuuy"
 }

@@ -9,10 +9,7 @@
     "handling": 78,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Motorsport",
-        "Unique"
-    ],
+    "tags": ["Unique","Ultra Expensive","Motorsport"],
     "isPrize": true,
     "weight": 792,
     "gc": "Low",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 90.3,
     "ola": 110.76,
-    "description": "Ford GT40's infamous nemesis in Le Mans. Card by Spence.",
+    "description": "Ford GT40's infamous nemesis in Le Mans.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/976543361508966460/1FCC3183-5D89-4D4A-A9A1-F32C3FB69E9A.png",
     "333TopSpeed": 202,
     "3330to60": 3.6,
@@ -41,6 +38,6 @@
     "699TopSpeed": 204,
     "6990to60": 3.2,
     "699Handling": 87,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997864994651775016/Ferrari330P4.png",
+    "creator": "Spence"
 }

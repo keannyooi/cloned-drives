@@ -9,9 +9,7 @@
     "handling": 60,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": [
-        "Innovative"
-    ],
+    "tags": ["Innovative"],
     "isPrize": false,
     "weight": 1679,
     "gc": "High",
@@ -23,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 14.14,
     "ola": 57.14,
-    "description": "It didn't just change the way people looked at utility wagons: The Wagoneer revolutionized the 4WD industry by effectively creating today's SUV market. It introduced new concepts and features years ahead of the competition. In its time, the Wagoneer was known as the best luxury SUV, period. Card by Preston.",
+    "description": "It didn't just change the way people looked at utility wagons: The Wagoneer revolutionized the 4WD industry by effectively creating today's SUV market. It introduced new concepts and features years ahead of the competition. In its time, the Wagoneer was known as the best luxury SUV, period.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/986030348825673848/1963_Jeep_Wagoneer.png",
     "333TopSpeed": 96,
     "3330to60": 15.3,
@@ -40,6 +38,6 @@
     "699TopSpeed": 102,
     "6990to60": 13.7,
     "699Handling": 67,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1000904467593576548/jeep_hud.png",
+    "creator": "Preston"
 }

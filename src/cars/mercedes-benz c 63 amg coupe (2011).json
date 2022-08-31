@@ -1,0 +1,49 @@
+{
+    "rq": 65,
+    "make": ["Mercedes-Benz", "Mercedes-AMG"],
+    "model": "C 63 AMG Coupe",
+    "modelYear": 2011,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 4.2,
+    "handling": 83,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+	
+    "weight": 1710,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 82.35,
+    "ola": 85.71,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/983394717251272765/C63AMGCoupe.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997648198183174294/C63AMG.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 158, 
+"3330to60": 4.0, 
+"333Handling": 86,
+
+"666TopSpeed": 162, 
+"6660to60": 3.8, 
+"666Handling": 88,
+
+"699TopSpeed": 162, 
+"6990to60": 3.6, 
+"699Handling": 92,
+
+"969TopSpeed": 165, 
+"9690to60": 3.8, 
+"969Handling": 92,
+
+"996TopSpeed": 165, 
+"9960to60": 3.6, 
+"996Handling": 88
+}
