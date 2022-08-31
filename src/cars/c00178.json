@@ -9,9 +9,7 @@
     "handling": 90,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Street Racer"
-    ],
+    "tags": ["Street Racer"],
     "isPrize": false,
     "weight": 1592,
     "gc": "Low",
@@ -23,10 +21,10 @@
     "fuelType": "Petrol",
     "mra": 67.69,
     "ola": 82.26,
-    "description": "The small BMW sports car worth its price tag. Card by Havvy.",
+    "description": "The small BMW sports car worth its price tag.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/826450541625868358/M22016.png",
     "333TopSpeed": 170,
-    "3330to60": 4,
+    "3330to60": 4.0,
     "333Handling": 93,
     "666TopSpeed": 173,
     "6660to60": 3.8,
@@ -40,6 +38,6 @@
     "699TopSpeed": 173,
     "6990to60": 3.6,
     "699Handling": 100,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997776978759385158/M2.png",
+    "creator": "Havvy"
 }

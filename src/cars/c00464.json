@@ -9,10 +9,7 @@
     "handling": 88,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Style Icon",
-        "Supercar"
-    ],
+    "tags": ["Style Icon","Supercar"],
     "isPrize": false,
     "weight": 1581,
     "gc": "Low",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 80.63,
     "ola": 96.37,
-    "description": "The legendary GT40's road-going descendant. Card by havvy",
+    "description": "The legendary GT40's road-going descendant.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/826206964291600444/GT05.png",
     "333TopSpeed": 205,
     "3330to60": 3.4,
@@ -41,6 +38,6 @@
     "699TopSpeed": 207,
     "6990to60": 3.1,
     "699Handling": 98,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997785200446672976/fordGT05.png",
+    "creator": "Havvy"
 }

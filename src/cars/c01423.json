@@ -9,10 +9,7 @@
     "handling": 74,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": [
-        "Eco-Friendly",
-        "Rest of the World"
-    ],
+    "tags": ["Eco-Friendly","Rest of the World"],
     "isPrize": false,
     "weight": 2299,
     "gc": "High",
@@ -24,7 +21,7 @@
     "fuelType": "Hybrid",
     "mra": 56.99,
     "ola": 83.02,
-    "description": "The legendary SUV is hard to fault across the board, this new XC90 is almost perfect. Now useful. Card by Demon.",
+    "description": "The legendary SUV is hard to fault across the board, this new XC90 is almost perfect. Now useful.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819423660094914600/2015_Volvo_XC90_T8_TE_RD.png",
     "333TopSpeed": 147,
     "3330to60": 5.1,
@@ -41,6 +38,6 @@
     "699TopSpeed": 150,
     "6990to60": 4.6,
     "699Handling": 82,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997785529359802368/XC90T8twinR.png",
+    "creator": "DodgeDemon"
 }

@@ -9,9 +9,7 @@
     "handling": 92,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Supercar"
-    ],
+    "tags": ["Supercar"],
     "isPrize": false,
     "weight": 1200,
     "gc": "Medium",
@@ -23,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 115.15,
     "ola": 84.21,
-    "description": "After 20 years, TVR return with a bombshell of a sports car. Card by DodgeDemon.",
+    "description": "After 20 years, TVR return with a bombshell of a sports car.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/823396499341574144/2021_TVR_Griffith.png",
     "333TopSpeed": 203,
     "3330to60": 3.6,
@@ -40,6 +38,6 @@
     "699TopSpeed": 205,
     "6990to60": 3.2,
     "699Handling": 102,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997784670991302706/grigfhthe2020.png",
+    "creator": "DodgeDemon"
 }

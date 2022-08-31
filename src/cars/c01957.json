@@ -9,9 +9,7 @@
     "handling": 63,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": [
-        "The Japanese Odyssey"
-    ],
+    "tags": ["The Japanese Odyssey"],
     "isPrize": false,
     "weight": 830,
     "gc": "Medium",
@@ -23,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 14.44,
     "ola": 68,
-    "description": "Card by Aqo.",
+    "description": "None.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/973318053314035782/charadecsx.png",
     "333TopSpeed": 96,
     "3330to60": 14.3,
@@ -40,6 +38,6 @@
     "699TopSpeed": 102,
     "6990to60": 12.8,
     "699Handling": 70,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997785979920322585/charadeCSX.png",
+    "creator": "Aqo"
 }

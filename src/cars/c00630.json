@@ -5,16 +5,11 @@
     "modelYear": 2011,
     "country": "SE",
     "topSpeed": 249,
-    "0to60": 3,
+    "0to60": 3.0,
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Hypercar",
-        "Ultra Expensive",
-        "Rest of The World",
-        "Unique"
-    ],
+    "tags": ["Hypercar","Ultra Expensive","Rest of The World","Unique"],
     "isPrize": false,
     "weight": 1435,
     "gc": "Low",
@@ -26,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 125,
     "ola": 106.67,
-    "description": "Card by Aqo.",
+    "description": "None.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/844537448406843392/agera.png",
     "333TopSpeed": 251,
     "3330to60": 2.9,
@@ -43,6 +38,6 @@
     "699TopSpeed": 253,
     "6990to60": 2.6,
     "699Handling": 101,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997784383945711636/agera11.png",
+    "creator": "Aqo"
 }

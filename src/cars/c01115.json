@@ -9,9 +9,7 @@
     "handling": 90,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": [
-        "Eco-Friendly"
-    ],
+    "tags": ["Eco-Friendly"],
     "isPrize": false,
     "weight": 2490,
     "gc": "High",
@@ -23,7 +21,7 @@
     "fuelType": "Hybrid",
     "mra": 77.27,
     "ola": 75.53,
-    "description": "Twin-Turbo 4.0 V8 and a 14,1kwh battery pack powering a 138hp electric motor working together make this 2.5 tonne SUV accelerate faster than a Murcielago Roadster. Card by havvy.",
+    "description": "Twin-Turbo 4.0 V8 and a 14,1kwh battery pack powering a 138hp electric motor working together make this 2.5 tonne SUV accelerate faster than a Murcielago Roadster.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/861932337810243614/unknown.png",
     "333TopSpeed": 186,
     "3330to60": 3.2,
@@ -40,6 +38,6 @@
     "699TopSpeed": 189,
     "6990to60": 2.9,
     "699Handling": 100,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997770869994692669/cayenneturbosehybrid.png",
+    "creator": "Havvy"
 }

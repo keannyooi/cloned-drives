@@ -9,9 +9,7 @@
     "handling": 79,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Supercar"
-    ],
+    "tags": ["Supercar"],
     "isPrize": false,
     "weight": 1450,
     "gc": "Low",
@@ -23,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 77.55,
     "ola": 84.21,
-    "description": "Elegant, timeless style. Card by Bnuuy.",
+    "description": "Elegant, timeless style.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/844561267209666590/porsche959komfort2.png",
     "333TopSpeed": 198,
     "3330to60": 3.6,
@@ -40,6 +38,6 @@
     "699TopSpeed": 200,
     "6990to60": 3.2,
     "699Handling": 88,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997573387582980116/959Komfort.png",
+    "creator": "Bnuuy"
 }

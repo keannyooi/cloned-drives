@@ -9,10 +9,7 @@
     "handling": 87,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Supercar",
-        "Silver Screen"
-    ],
+    "tags": ["Supercar","Silver Screen"],
     "isPrize": false,
     "weight": 1360,
     "gc": "Low",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 76.06,
     "ola": 77.78,
-    "description": "Supercate. Card by Havvy.",
+    "description": "Supercate.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/863864145875435570/LamboGallardoSuperleggera.png",
     "333TopSpeed": 199,
     "3330to60": 3.4,
@@ -41,6 +38,6 @@
     "699TopSpeed": 201,
     "6990to60": 3.1,
     "699Handling": 97,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997776059657359370/gallardosuperlaggegra.png",
+    "creator": "Havvy"
 }

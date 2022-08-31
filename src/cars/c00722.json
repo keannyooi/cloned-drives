@@ -1,9 +1,6 @@
 {
     "rq": 78,
-    "make": [
-        "Lingenfelter",
-        "GMC"
-    ],
+    "make": ["Lingenfelter","GMC"],
     "model": "GMC Suburban",
     "modelYear": 1994,
     "country": "US",
@@ -12,10 +9,7 @@
     "handling": 61,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": [
-        "Tuner",
-        "Servers Choice"
-    ],
+    "tags": ["Tuner","Servers Choice"],
     "isPrize": false,
     "weight": 2335,
     "gc": "High",
@@ -27,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 58.23,
     "ola": 75,
-    "description": "Jaw-dropping speed that was set back by its tyres. Card by Exist.",
+    "description": "Jaw-dropping speed that was set back by its tyres.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/824654093392937021/lingen.png",
     "333TopSpeed": 134,
     "3330to60": 4.4,
@@ -44,6 +38,6 @@
     "699TopSpeed": 138,
     "6990to60": 3.9,
     "699Handling": 68,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997776692007415880/lingenfeldter.png",
+    "creator": "Exist"
 }

@@ -9,12 +9,7 @@
     "handling": 94,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Supercar",
-        "Ultra Expensive",
-        "Unique",
-        "Silver Screen"
-    ],
+    "tags": ["Supercar","Ultra Expensive","Unique","Silver Screen"],
     "isPrize": true,
     "weight": 999,
     "gc": "Low",
@@ -26,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 81.08,
     "ola": 73.13,
-    "description": "Named after the fact that the entire body is made from carbon fiber. One of the lightests Lambos ever. Card by exist",
+    "description": "Named after the fact that the entire body is made from carbon fiber. One of the lightests Lambos ever.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/854634035032358912/CD_Lamborghini_Sesto_Elemento.png",
     "333TopSpeed": 220,
     "3330to60": 2.3,
@@ -35,14 +30,14 @@
     "6660to60": 2.2,
     "666Handling": 100,
     "996TopSpeed": 225,
-    "9960to60": 2,
+    "9960to60": 2.0,
     "996Handling": 100,
     "969TopSpeed": 225,
     "9690to60": 2.2,
     "969Handling": 104,
     "699TopSpeed": 223,
-    "6990to60": 2,
+    "6990to60": 2.0,
     "699Handling": 104,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997771011464372274/sesto.png",
+    "creator": "Exist"
 }

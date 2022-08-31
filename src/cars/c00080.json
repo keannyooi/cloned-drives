@@ -9,10 +9,7 @@
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Silver Screen",
-        "Supercar"
-    ],
+    "tags": ["Silver Screen","Supercar"],
     "isPrize": false,
     "weight": 1899,
     "gc": "Low",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 92.11,
     "ola": 102.86,
-    "description": "The ultimate Aston Martin. At least until the Valkyrie rocks up. Card by Macan",
+    "description": "The ultimate Aston Martin. At least until the Valkyrie rocks up.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/827999531634393088/DBS_Superleggera_18.png",
     "333TopSpeed": 213,
     "3330to60": 3.3,
@@ -33,14 +30,14 @@
     "6660to60": 3.2,
     "666Handling": 97,
     "996TopSpeed": 218,
-    "9960to60": 3,
+    "9960to60": 3.0,
     "996Handling": 97,
     "969TopSpeed": 218,
     "9690to60": 3.2,
     "969Handling": 101,
     "699TopSpeed": 216,
-    "6990to60": 3,
+    "6990to60": 3.0,
     "699Handling": 101,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997775990975639653/dbssuperleggera.png",
+    "creator": "Macan"
 }

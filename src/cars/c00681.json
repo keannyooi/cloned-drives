@@ -9,10 +9,7 @@
     "handling": 63,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": [
-        "Servers Choice",
-        "Silver Screen"
-    ],
+    "tags": ["Servers Choice","Silver Screen"],
     "isPrize": false,
     "weight": 2619,
     "gc": "High",
@@ -24,10 +21,10 @@
     "fuelType": "Petrol",
     "mra": 57.27,
     "ola": 69.84,
-    "description": "Land Rover gets tough again with the resusication of the Defender. Card by havvy",
+    "description": "Land Rover gets tough again with the resusication of the Defender.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/824653922266120212/defender.png",
     "333TopSpeed": 124,
-    "3330to60": 6,
+    "3330to60": 6.0,
     "333Handling": 65,
     "666TopSpeed": 129,
     "6660to60": 5.7,
@@ -41,6 +38,6 @@
     "699TopSpeed": 129,
     "6990to60": 5.4,
     "699Handling": 70,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997785790149054595/defender110SE.png",
+    "creator": "Havvy"
 }

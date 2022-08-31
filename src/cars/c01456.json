@@ -9,12 +9,7 @@
     "handling": 92,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Rest of The World",
-        "Grand Tourer",
-        "Hypercar",
-        "Ultra Expensive"
-    ],
+    "tags": ["Rest of The World", "Grand Tourer", "Hypercar","Ultra Expensive"],
     "isPrize": true,
     "weight": 1988,
     "gc": "Low",
@@ -26,7 +21,7 @@
     "fuelType": "Hybrid",
     "mra": 128.57,
     "ola": 111.11,
-    "description": "Card by Aqo.",
+    "description": "None.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/944967870583013416/gemera.png",
     "333TopSpeed": 251,
     "3330to60": 1.7,
@@ -43,6 +38,6 @@
     "699TopSpeed": 253,
     "6990to60": 1.5,
     "699Handling": 102,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997783888657137684/gemerea.png",
+    "creator": "Aqo"
 }

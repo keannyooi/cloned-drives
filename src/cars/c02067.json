@@ -1,9 +1,6 @@
 {
     "rq": 80,
-    "make": [
-        "Mercedes-AMG",
-        "Mercedes-Benz"
-    ],
+    "make": ["Mercedes-AMG","Mercedes-Benz"],
     "model": "G 63",
     "modelYear": 2018,
     "country": "DE",
@@ -12,7 +9,7 @@
     "handling": 68,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": [],
+    "tags": ["Extreme Juggernaut"],
     "isPrize": false,
     "weight": 2485,
     "gc": "High",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 68.33,
     "ola": 73.17,
-    "description": "Card by Havvy.",
+    "description": "None.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/952619388899586108/AMGG63_18.png",
     "333TopSpeed": 152,
     "3330to60": 3.9,
@@ -41,6 +38,6 @@
     "699TopSpeed": 156,
     "6990to60": 3.5,
     "699Handling": 75,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997776806025371698/G63newgen.png",
+    "creator": "Havvy"
 }
