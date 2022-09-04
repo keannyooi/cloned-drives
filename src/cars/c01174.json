@@ -21,10 +21,10 @@
     "fuelType": "Petrol",
     "mra": 52.11,
     "ola": 78.38,
-    "description": "The CSX is built expressly to go, turn and stop. Card by Johnny",
+    "description": "The CSX is built expressly to go, turn and stop.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/828594205210181652/Shelby-CSX-V2.png",
     "333TopSpeed": 128,
-    "3330to60": 7,
+    "3330to60": 7.0,
     "333Handling": 80,
     "666TopSpeed": 132,
     "6660to60": 6.7,
@@ -38,6 +38,6 @@
     "699TopSpeed": 132,
     "6990to60": 6.3,
     "699Handling": 85,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1004785041051746394/Shelby-CSX.png",
+    "creator": "Johnny"
 }

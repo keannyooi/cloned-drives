@@ -5,7 +5,7 @@
     "modelYear": 2014,
     "country": "DE",
     "topSpeed": 125,
-    "0to60": 8,
+    "0to60": 8.0,
     "handling": 74,
     "driveType": "4WD",
     "tyreType": "Standard",
@@ -24,7 +24,7 @@
     "fuelType": "Petrol",
     "mra": 66.66,
     "ola": 65,
-    "description": "Card by Bnuuy.",
+    "description": "None.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/948545837481492560/Gcode.png",
     "333TopSpeed": 129,
     "3330to60": 7.6,
@@ -41,6 +41,6 @@
     "699TopSpeed": 133,
     "6990to60": 6.8,
     "699Handling": 82,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1010857951281561670/Gcode.png",
+    "creator": "Bnuuy"
 }

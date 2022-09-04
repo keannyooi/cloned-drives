@@ -5,7 +5,7 @@
     "modelYear": 1974,
     "country": "GB",
     "topSpeed": 101,
-    "0to60": 16,
+    "0to60": 16.0,
     "handling": 78,
     "driveType": "RWD",
     "tyreType": "Standard",
@@ -21,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 28.56,
     "ola": 57.5,
-    "description": "Triumph ahead of the handling game. Card by Johnny",
+    "description": "Triumph ahead of the handling game.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/822219151988883556/cate-test.png",
     "333TopSpeed": 106,
     "3330to60": 15.2,
@@ -38,6 +38,6 @@
     "699TopSpeed": 111,
     "6990to60": 13.6,
     "699Handling": 87,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1004785517470163175/Triumph-Spitfire-1500.png",
+    "creator": "Johnny"
 }

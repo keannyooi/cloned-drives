@@ -1,6 +1,6 @@
 {
     "rq": 52,
-    "make": "IPD",
+    "make": ["IPD", "Volvo"],
     "model": "S40 T5",
     "modelYear": 2006,
     "country": "US",
@@ -23,7 +23,7 @@
     "fuelType": "Petrol",
     "mra": 63.54,
     "ola": 75.41,
-    "description": "The closest you'll get to an S40 R. Card by Johnny",
+    "description": "The closest you'll get to an S40 R.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/856996391960576000/IPD-S40-T5.png",
     "333TopSpeed": 176,
     "3330to60": 5.8,
@@ -40,6 +40,6 @@
     "699TopSpeed": 179,
     "6990to60": 5.2,
     "699Handling": 87,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1004766907087470652/IPD-S40-T5.png",
+    "creator": "Johnny"
 }
