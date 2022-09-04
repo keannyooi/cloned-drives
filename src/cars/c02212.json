@@ -5,7 +5,7 @@
     "modelYear": 2011,
     "country": "DE",
     "topSpeed": 199,
-    "0to60": 3,
+    "0to60": 3.0,
     "handling": 96,
     "driveType": "4WD",
     "tyreType": "Slick",
@@ -24,7 +24,7 @@
     "fuelType": "Hybrid",
     "mra": 107.14,
     "ola": 93.33,
-    "description": "A wing bigger than your mom. Oh and sidepipes, the two ingredients for a pure-blooded race car. Card by c6",
+    "description": "A wing bigger than your mom. Oh and sidepipes, the two ingredients for a pure-blooded race car.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/987362303580196874/porsche_918_rsr_concept.png",
     "333TopSpeed": 202,
     "3330to60": 2.9,
@@ -41,6 +41,6 @@
     "699TopSpeed": 204,
     "6990to60": 2.6,
     "699Handling": 107,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1015189615537303637/porsche_918_rsr_concept.png?width=1122&height=702",
+    "creator": "c6"
 }
