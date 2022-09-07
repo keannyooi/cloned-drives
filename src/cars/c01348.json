@@ -21,10 +21,10 @@
     "fuelType": "Petrol",
     "mra": 102.44,
     "ola": 90.48,
-    "description": "The W8 combined the design characteristics of the Carabo with technologies and geometry from fighter jets of the era. What more can you ask for? Card by Based",
+    "description": "The W8 combined the design characteristics of the Carabo with technologies and geometry from fighter jets of the era. What more can you ask for?",
     "card": "https://cdn.discordapp.com/attachments/733973415366623274/826747687557922896/Vector_W8_TwinTurbo.png",
     "333TopSpeed": 220,
-    "3330to60": 4,
+    "3330to60": 4.0,
     "333Handling": 90,
     "666TopSpeed": 223,
     "6660to60": 3.8,
@@ -38,6 +38,6 @@
     "699TopSpeed": 223,
     "6990to60": 3.6,
     "699Handling": 97,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1016344800846413924/Vector_W8.png",
+    "creator": "Based"
 }
