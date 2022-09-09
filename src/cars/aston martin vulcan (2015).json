@@ -1,0 +1,49 @@
+{
+    "rq": 91,
+    "make": "Aston Martin",
+    "model": "Vulcan",
+    "modelYear": 2015,
+    "country": "GB",
+    "topSpeed": 224,
+    "0to60": 3.0,
+    "handling": 97,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Track Day", "Unique", "Ultra Expensive","The Royal Collection"],
+    "isPrize": false,
+	
+    "weight": 1350,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 110.45,
+    "ola": 86.66,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1017074663739904113/Vulcan.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1017075280491319306/Vulcan.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 226, 
+"3330to60": 2.8, 
+"333Handling": 100,
+
+"666TopSpeed": 229, 
+"6660to60": 2.7, 
+"666Handling": 103,
+
+"699TopSpeed": 229, 
+"6990to60": 2.6, 
+"699Handling": 108,
+
+"969TopSpeed": 231, 
+"9690to60": 2.7, 
+"969Handling": 108,
+
+"996TopSpeed": 231, 
+"9960to60": 2.6, 
+"996Handling": 103
+}

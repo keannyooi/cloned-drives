@@ -1,0 +1,49 @@
+{
+    "rq": 75,
+    "make": "Ford",
+    "model": "GTX1 Concept",
+    "modelYear": 2005,
+    "country": "US",
+    "topSpeed": 199,
+    "0to60": 3.6,
+    "handling": 87,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Concept", "Unique"],
+    "isPrize": false,
+	
+    "weight": 1630,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 80.63,
+    "ola": 96.37,
+    "description": "The Speedster that was never to be.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1017124846934691880/GTX1Concept.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1017125438037966869/GTX1Concept.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 202, 
+"3330to60": 3.4, 
+"333Handling": 90,
+
+"666TopSpeed": 204, 
+"6660to60": 3.2, 
+"666Handling": 93,
+
+"699TopSpeed": 204, 
+"6990to60": 3.1, 
+"699Handling": 97,
+
+"969TopSpeed": 207, 
+"9690to60": 3.2, 
+"969Handling": 97,
+
+"996TopSpeed": 207, 
+"9960to60": 3.1, 
+"996Handling": 93
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 46,
+    "make": "Chevrolet",
+    "model": "Nomad Concept",
+    "modelYear": 2004,
+    "country": "US",
+    "topSpeed": 138,
+    "0to60": 5.6,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Concept", "Unique"],
+    "isPrize": false,
+	
+    "weight": 1444,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 53.85,
+    "ola": 71.43,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011578234774761532/cehvrolet_nomad_concpet.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011591876459122798/nomad.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 142, 
+"3330to60": 5.3, 
+"333Handling": 80,
+
+"666TopSpeed": 146, 
+"6660to60": 5.0, 
+"666Handling": 82,
+
+"699TopSpeed": 146, 
+"6990to60": 4.8, 
+"699Handling": 85,
+
+"969TopSpeed": 149, 
+"9690to60": 5.0, 
+"969Handling": 85,
+
+"996TopSpeed": 149, 
+"9960to60": 4.8, 
+"996Handling": 82
+}

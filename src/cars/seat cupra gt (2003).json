@@ -1,0 +1,49 @@
+{
+    "rq": 72,
+    "make": "Seat",
+    "model": "Cupra GT",
+    "modelYear": 2003,
+    "country": "ES",
+    "topSpeed": 183,
+    "0to60": 4.1,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Rest of The World", "Motorsport"],
+    "isPrize": false,
+	
+    "weight": 1100,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 79.61,
+    "ola": 90.24,
+    "description": "They told me to rage my dream so i did. They lied.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011581599709659187/seat_cupra_gt.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011588843843092591/cupra_gt.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 186, 
+"3330to60": 3.9, 
+"333Handling": 94,
+
+"666TopSpeed": 189, 
+"6660to60": 3.7, 
+"666Handling": 97,
+
+"699TopSpeed": 189, 
+"6990to60": 3.5, 
+"699Handling": 101,
+
+"969TopSpeed": 192, 
+"9690to60": 3.7, 
+"969Handling": 101,
+
+"996TopSpeed": 192, 
+"9960to60": 3.5, 
+"996Handling": 97
+}

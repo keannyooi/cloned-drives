@@ -1,0 +1,49 @@
+{
+    "rq": 57,
+    "make": ["RE Amemiya", "Mazda"],
+    "model": "Cervo RE-Turbo",
+    "modelYear": 1983,
+    "country": "JP",
+    "topSpeed": 149,
+    "0to60": 4.8,
+    "handling": 78,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner"],
+    "isPrize": false,
+	
+    "weight": 680,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 77.42,
+    "ola": 79.17,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011586471003693066/re_amemiya_cervo.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011587959113404446/amemiya_cervo.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 152, 
+"3330to60": 4.6, 
+"333Handling": 81,
+
+"666TopSpeed": 156, 
+"6660to60": 4.3, 
+"666Handling": 83,
+
+"699TopSpeed": 156, 
+"6990to60": 4.1, 
+"699Handling": 87,
+
+"969TopSpeed": 159, 
+"9690to60": 4.3, 
+"969Handling": 87,
+
+"996TopSpeed": 159, 
+"9960to60": 4.1, 
+"996Handling": 83
+}

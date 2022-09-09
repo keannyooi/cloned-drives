@@ -1,0 +1,49 @@
+{
+    "rq": 49,
+    "make": "Hongqi",
+    "model": "H9 3.0T",
+    "modelYear": 2020,
+    "country": "CN",
+    "topSpeed": 152,
+    "0to60": 6.9,
+    "handling": 80,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Rest of The World"],
+    "isPrize": false,
+	
+    "weight": 1995,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 55.32,
+    "ola": 75.85,
+    "description": "Surprisingly well made and luxurious for a Chinese car.",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1011587449782284370/hongqi_h9_v6.png?width=1139&height=701",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1010884830852038686/hongqi_h9_2.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 155, 
+"3330to60": 6.6, 
+"333Handling": 83,
+
+"666TopSpeed": 159, 
+"6660to60": 6.2, 
+"666Handling": 85,
+
+"699TopSpeed": 159, 
+"6990to60": 5.9, 
+"699Handling": 89,
+
+"969TopSpeed": 162, 
+"9690to60": 6.2, 
+"969Handling": 89,
+
+"996TopSpeed": 162, 
+"9960to60": 5.9, 
+"996Handling": 85
+}

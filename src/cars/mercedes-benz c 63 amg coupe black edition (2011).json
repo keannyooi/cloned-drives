@@ -1,0 +1,49 @@
+{
+    "rq": 70,
+    "make": ["Mercedes-Benz", "Mercedes-AMG"],
+    "model": "C 63 AMG Coupe Black Edition",
+    "modelYear": 2011,
+    "country": "DE",
+    "topSpeed": 186,
+    "0to60": 4.0,
+    "handling": 85,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Track Day"],
+    "isPrize": false,
+	
+    "weight": 1710,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 85.1,
+    "ola": 82.5,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1017074801514393680/c63amgblack.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1017075319498358864/C63AMGBlack.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 189, 
+"3330to60": 3.8, 
+"333Handling": 88,
+
+"666TopSpeed": 192, 
+"6660to60": 3.6, 
+"666Handling": 91,
+
+"699TopSpeed": 192, 
+"6990to60": 3.4, 
+"699Handling": 94,
+
+"969TopSpeed": 194, 
+"9690to60": 3.6, 
+"969Handling": 94,
+
+"996TopSpeed": 194, 
+"9960to60": 3.4, 
+"996Handling": 91
+}

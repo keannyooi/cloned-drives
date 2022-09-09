@@ -1,0 +1,49 @@
+{
+    "rq": 46,
+    "make": "Hongqi",
+    "model": "H9 2.0T",
+    "modelYear": 2020,
+    "country": "CN",
+    "topSpeed": 143,
+    "0to60": 7.3,
+    "handling": 80,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Rest of The World"],
+    "isPrize": false,
+	
+    "weight": 1875,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 53.12,
+    "ola": 74.12,
+    "description": "None.",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1011587497035313212/hongqi_h9_i4.png?width=1139&height=701",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1010884877580763186/hongqi_h9_3.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 147, 
+"3330to60": 6.9, 
+"333Handling": 83,
+
+"666TopSpeed": 150, 
+"6660to60": 6.6, 
+"666Handling": 85,
+
+"699TopSpeed": 150, 
+"6990to60": 6.2, 
+"699Handling": 89,
+
+"969TopSpeed": 154, 
+"9690to60": 6.6, 
+"969Handling": 89,
+
+"996TopSpeed": 154, 
+"9960to60": 6.2, 
+"996Handling": 85
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 31,
+    "make": "Emme",
+    "model": "420",
+    "modelYear": 1997,
+    "country": "BR",
+    "topSpeed": 123,
+    "0to60": 9.4,
+    "handling": 71,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Rest of The World"],
+    "isPrize": false,
+	
+    "weight": 1550,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 47.7,
+    "ola": 70.47,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011579964929359983/emme_420.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011589598671032420/emme_420.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 127, 
+"3330to60": 8.9, 
+"333Handling": 73,
+
+"666TopSpeed": 131, 
+"6660to60": 8.5, 
+"666Handling": 76,
+
+"699TopSpeed": 131, 
+"6990to60": 8.0, 
+"699Handling": 79,
+
+"969TopSpeed": 136, 
+"9690to60": 8.5, 
+"969Handling": 79,
+
+"996TopSpeed": 136, 
+"9960to60": 8.0, 
+"996Handling": 76
+}

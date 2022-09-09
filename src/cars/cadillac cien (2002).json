@@ -1,0 +1,49 @@
+{
+    "rq": 80,
+    "make": "Cadillac",
+    "model": "Cien",
+    "modelYear": 2002,
+    "country": "US",
+    "topSpeed": 217,
+    "0to60": 3.6,
+    "handling": 86,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Concept", "Unique"],
+    "isPrize": true,
+	
+    "weight": 1500,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 133.33,
+    "ola": 94.44,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1017127013116551179/Cien.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1017127521382313994/Cien.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 219, 
+"3330to60": 3.4, 
+"333Handling": 89,
+
+"666TopSpeed": 222, 
+"6660to60": 3.2, 
+"666Handling": 92,
+
+"699TopSpeed": 222, 
+"6990to60": 3.1, 
+"699Handling": 95,
+
+"969TopSpeed": 224, 
+"9690to60": 3.2, 
+"969Handling": 95,
+
+"996TopSpeed": 224, 
+"9960to60": 3.1, 
+"996Handling": 92
+}

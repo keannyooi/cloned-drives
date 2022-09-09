@@ -1,0 +1,49 @@
+{
+    "rq": 30,
+    "make": "Citroen",
+    "model": "Hypnos",
+    "modelYear": 2008,
+    "country": "FR",
+    "topSpeed": 132,
+    "0to60": 9.1,
+    "handling": 72,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Concept", "Unique", "Eco-Friendly"],
+    "isPrize": false,
+	
+    "weight": 1800,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 52.1,
+    "ola": 68.3,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011579437906673694/citroen_hypnos.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011591479711518750/hypnos.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 136, 
+"3330to60": 8.6, 
+"333Handling": 74,
+
+"666TopSpeed": 140, 
+"6660to60": 8.2, 
+"666Handling": 77,
+
+"699TopSpeed": 140, 
+"6990to60": 7.7, 
+"699Handling": 80,
+
+"969TopSpeed": 144, 
+"9690to60": 8.2, 
+"969Handling": 80,
+
+"996TopSpeed": 144, 
+"9960to60": 7.7, 
+"996Handling": 77
+}

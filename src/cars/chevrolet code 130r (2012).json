@@ -1,0 +1,49 @@
+{
+    "rq": 33,
+    "make": "Chevrolet",
+    "model": "Code 130R",
+    "modelYear": 2012,
+    "country": "US",
+    "topSpeed": 130,
+    "0to60": 8.1,
+    "handling": 85,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Concept", "Unique"],
+    "isPrize": false,
+	
+    "weight": 1280,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 58.27,
+    "ola": 74.07,
+    "description": "One of the cars that could've made GM a trillion dollars richer.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011578273773387796/chevrolet_code_130r.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011588744945614889/code_130r.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 134, 
+"3330to60": 7.7, 
+"333Handling": 88,
+
+"666TopSpeed": 138, 
+"6660to60": 7.3, 
+"666Handling": 91,
+
+"699TopSpeed": 138, 
+"6990to60": 6.9, 
+"699Handling": 94,
+
+"969TopSpeed": 142, 
+"9690to60": 7.3, 
+"969Handling": 94,
+
+"996TopSpeed": 142, 
+"9960to60": 6.9, 
+"996Handling": 91
+}

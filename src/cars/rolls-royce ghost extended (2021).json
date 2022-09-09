@@ -1,0 +1,49 @@
+{
+    "rq": 76,
+    "make": "Rolls-Royce",
+    "model": "Ghost Extended",
+    "modelYear": 2021,
+    "country": "GB",
+    "topSpeed": 155,
+    "0to60": 4.5,
+    "handling": 80,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+	
+    "weight": 2599,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 76.27,
+    "ola": 80,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1017127350216962128/RoyRoyGhostExtended2020.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1017127663892176896/RRGhost2EWB.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 158, 
+"3330to60": 4.3, 
+"333Handling": 83,
+
+"666TopSpeed": 162, 
+"6660to60": 4.0, 
+"666Handling": 85,
+
+"699TopSpeed": 162, 
+"6990to60": 3.8, 
+"699Handling": 89,
+
+"969TopSpeed": 165, 
+"9690to60": 4.0, 
+"969Handling": 89,
+
+"996TopSpeed": 165, 
+"9960to60": 3.8, 
+"996Handling": 85
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 44,
+    "make": ["Brabus", "Mercedes-Benz"],
+    "model": "R 6.1 S",
+    "modelYear": 2006,
+    "country": "DE",
+    "topSpeed": 164,
+    "0to60": 5.7,
+    "handling": 70,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Tuner"],
+    "isPrize": false,
+	
+    "weight": 2285,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 64.04,
+    "ola": 77.19,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011578080034308226/brabus_r_6.1_s.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011600446101659649/r6.11s.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 167, 
+"3330to60": 5.4, 
+"333Handling": 72,
+
+"666TopSpeed": 170, 
+"6660to60": 5.1, 
+"666Handling": 75,
+
+"699TopSpeed": 170, 
+"6990to60": 4.8, 
+"699Handling": 78,
+
+"969TopSpeed": 174, 
+"9690to60": 5.1, 
+"969Handling": 78,
+
+"996TopSpeed": 174, 
+"9960to60": 4.8, 
+"996Handling": 75 
+}

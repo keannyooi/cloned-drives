@@ -1,0 +1,49 @@
+{
+    "rq": 43,
+    "make": "Chevrolet",
+    "model": "E-10 Performance Concept",
+    "modelYear": 2019,
+    "country": "US",
+    "topSpeed": 130,
+    "0to60": 5.0,
+    "handling": 69,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["RestoMod"],
+    "isPrize": false,
+	
+    "weight": 2722,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Pickup",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Electric",
+    "mra": 63.29,
+    "ola": 82,
+    "description": "If you're wondering whether or not the cargo bed is functional... the only cargo you're going to haul with this is a bunch of batteries.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011578374667390986/chevrolet_e-10_performance_concept.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011589501031829564/e-10_performance.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 134, 
+"3330to60": 4.8, 
+"333Handling": 71,
+
+"666TopSpeed": 138, 
+"6660to60": 4.5, 
+"666Handling": 74,
+
+"699TopSpeed": 138, 
+"6990to60": 4.3, 
+"699Handling": 77,
+
+"969TopSpeed": 142, 
+"9690to60": 4.5, 
+"969Handling": 77,
+
+"996TopSpeed": 142, 
+"9960to60": 4.3, 
+"996Handling": 74
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 83,
+    "make": ["RE Amemiya", "Mazda"],
+    "model": "Furin Kazan LW-7",
+    "modelYear": 2020,
+    "country": "JP",
+    "topSpeed": 170,
+    "0to60": 3.3,
+    "handling": 94,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner", "Track Day"],
+    "isPrize": false,
+	
+    "weight": 978,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 78.57,
+    "ola": 85.45,
+    "description": "Dont ask me how they were able to acheive such weight savings.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011586579426459708/re_amemiya_furin_kazan_lw7.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011588013014384720/amemiya_lw-7.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 173, 
+"3330to60": 3.1, 
+"333Handling": 97,
+
+"666TopSpeed": 176, 
+"6660to60": 3.0, 
+"666Handling": 100,
+
+"699TopSpeed": 176, 
+"6990to60": 2.8, 
+"699Handling": 104,
+
+"969TopSpeed": 179, 
+"9690to60": 3.0, 
+"969Handling": 104,
+
+"996TopSpeed": 179, 
+"9960to60": 2.8, 
+"996Handling": 100
+}

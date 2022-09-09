@@ -1,0 +1,49 @@
+{
+    "rq": 70,
+    "make": ["AGP Turbo", "Dodge"],
+    "model": "Neon SRT-4 Project Car",
+    "modelYear": 2004,
+    "country": "US",
+    "topSpeed": 186,
+    "0to60": 3.9,
+    "handling": 82,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner", "Unique"],
+    "isPrize": false,
+	
+    "weight": 1315,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 72.22,
+    "ola": 94.87,
+    "description": "None.",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1011579681373429790/cursed_srt-4.png?width=1139&height=701",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1011585855120482336/agp_turbo.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 189, 
+"3330to60": 3.7, 
+"333Handling": 85,
+
+"666TopSpeed": 192, 
+"6660to60": 3.5, 
+"666Handling": 87,
+
+"699TopSpeed": 192, 
+"6990to60": 3.3, 
+"699Handling": 91,
+
+"969TopSpeed": 194, 
+"9690to60": 3.5, 
+"969Handling": 91,
+
+"996TopSpeed": 194, 
+"9960to60": 3.3, 
+"996Handling": 87
+}

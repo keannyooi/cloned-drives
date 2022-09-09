@@ -1,0 +1,49 @@
+{
+    "rq": 92,
+    "make": ["Mercedes-AMG", "Mercedes-Benz"],
+    "model": "GT Track Series",
+    "modelYear": 2022,
+    "country": "DE",
+    "topSpeed": 200,
+    "0to60": 2.8,
+    "handling": 98,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport"],
+    "isPrize": true,
+	
+    "weight": 1400,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 107.69,
+    "ola": 78.57,
+    "description": "The ultimate track day AMG",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1017126941985353768/AMGGTTrackseries.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1017127472724185208/AMGGTTrackSeries.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 203, 
+"3330to60": 2.7, 
+"333Handling": 101,
+
+"666TopSpeed": 205, 
+"6660to60": 2.5, 
+"666Handling": 104,
+
+"699TopSpeed": 205, 
+"6990to60": 2.4, 
+"699Handling": 109,
+
+"969TopSpeed": 208, 
+"9690to60": 2.5, 
+"969Handling": 109,
+
+"996TopSpeed": 208, 
+"9960to60": 2.4, 
+"996Handling": 104
+}

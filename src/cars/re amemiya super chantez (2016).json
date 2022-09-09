@@ -1,0 +1,49 @@
+{
+    "rq": 65,
+    "make": ["RE Amemiya", "Mazda"],
+    "model": "Super Chantez",
+    "modelYear": 2016,
+    "country": "JP",
+    "topSpeed": 166,
+    "0to60": 4.4,
+    "handling": 83,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner", "Unique"],
+    "isPrize": false,
+	
+    "weight": 600,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 59.86,
+    "ola": 81.82,
+    "description": "An old Mazda kei car with the looks and performance of a rally car.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011586761442480168/re_amemiya_super_chantez_the_flamethrower.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011588135534198784/amemiya_super_chantez.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 169, 
+"3330to60": 4.2, 
+"333Handling": 86,
+
+"666TopSpeed": 172, 
+"6660to60": 4.0, 
+"666Handling": 88,
+
+"699TopSpeed": 172, 
+"6990to60": 3.7, 
+"699Handling": 92,
+
+"969TopSpeed": 175, 
+"9690to60": 4.0, 
+"969Handling": 92,
+
+"996TopSpeed": 175, 
+"9960to60": 3.7, 
+"996Handling": 88 
+}

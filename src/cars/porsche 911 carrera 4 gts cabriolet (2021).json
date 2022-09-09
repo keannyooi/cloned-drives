@@ -1,0 +1,49 @@
+{
+    "rq": 85,
+    "make": "Porsche",
+    "model": "911 Carrera 4 GTS Cabriolet",
+    "modelYear": 2021,
+    "country": "DE",
+    "topSpeed": 191,
+    "0to60": 3.4,
+    "handling": 91,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+	
+    "weight": 1630,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 82.92,
+    "ola": 73.53,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/983395218911035392/911Carrera4GTSCab.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1017087141051904122/992Carrera4GTScab.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 194, 
+"3330to60": 3.2, 
+"333Handling": 94,
+
+"666TopSpeed": 196, 
+"6660to60": 3.1, 
+"666Handling": 97,
+
+"699TopSpeed": 196, 
+"6990to60": 2.9, 
+"699Handling": 101,
+
+"969TopSpeed": 199, 
+"9690to60": 3.1, 
+"969Handling": 101,
+
+"996TopSpeed": 199, 
+"9960to60": 2.9, 
+"996Handling": 97
+}

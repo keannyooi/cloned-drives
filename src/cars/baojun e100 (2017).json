@@ -1,0 +1,49 @@
+{
+    "rq": 14,
+    "make": "Baojun",
+    "model": "E100",
+    "modelYear": 2017,
+    "country": "CN",
+    "topSpeed": 62,
+    "0to60": 15.2,
+    "handling": 64,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Rest of The World","Eco-Friendly"],
+    "isPrize": false,
+	
+    "weight": 840,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 0,
+    "ola": 69.74,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011586923669762048/baojun_e100.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011588401511804968/baojun_e100.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 70, 
+"3330to60": 14.4, 
+"333Handling": 66,
+
+"666TopSpeed": 79, 
+"6660to60": 13.7, 
+"666Handling": 68,
+
+"699TopSpeed": 79, 
+"6990to60": 12.9, 
+"699Handling": 71,
+
+"969TopSpeed": 87, 
+"9690to60": 13.7, 
+"969Handling": 71,
+
+"996TopSpeed": 87, 
+"9960to60": 12.9, 
+"996Handling": 68
+}

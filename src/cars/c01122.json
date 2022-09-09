@@ -5,7 +5,7 @@
     "modelYear": 2017,
     "country": "DE",
     "topSpeed": 161,
-    "0to60": 5,
+    "0to60": 5.0,
     "handling": 88,
     "driveType": "4WD",
     "tyreType": "Standard",
@@ -21,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 65.56,
     "ola": 72.73,
-    "description": "Brings excellence without the relevance. Card by Exist.",
+    "description": "Brings excellence without the relevance.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/860136179453919232/CD_Porsche_Panamera_4_Sport_Turismo.png",
     "333TopSpeed": 164,
     "3330to60": 4.8,
@@ -38,6 +38,6 @@
     "699TopSpeed": 167,
     "6990to60": 4.3,
     "699Handling": 98,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1016825980347748362/Porsche_Panamera_4_Sport_Turismo.png",
+    "creator": "Exist"
 }

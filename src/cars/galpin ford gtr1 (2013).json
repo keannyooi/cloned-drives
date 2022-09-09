@@ -1,0 +1,49 @@
+{
+    "rq": 87,
+    "make": ["Galpin Ford", "Ford"],
+    "model": "GTR1",
+    "modelYear": 2013,
+    "country": "US",
+    "topSpeed": 225,
+    "0to60": 3.1,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Unique", "Concept"],
+    "isPrize": false,
+	
+    "weight": 1360,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 83.78,
+    "ola": 90.32,
+    "description": "The final \"Evolution\" of the 2005 GT.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1017124968233971722/galpingtr1.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1017125557990866994/GalpinGT.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 227, 
+"3330to60": 2.9, 
+"333Handling": 94,
+
+"666TopSpeed": 230, 
+"6660to60": 2.8, 
+"666Handling": 97,
+
+"699TopSpeed": 230, 
+"6990to60": 2.6, 
+"699Handling": 101,
+
+"969TopSpeed": 232, 
+"9690to60": 2.8, 
+"969Handling": 101,
+
+"996TopSpeed": 232, 
+"9960to60": 2.6, 
+"996Handling": 97
+}

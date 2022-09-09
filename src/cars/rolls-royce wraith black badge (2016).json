@@ -1,0 +1,49 @@
+{
+    "rq": 71,
+    "make": "Rolls-Royce",
+    "model": "Wraith Black Badge",
+    "modelYear": 2016,
+    "country": "GB",
+    "topSpeed": 155,
+    "0to60": 4.3,
+    "handling": 76,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+	
+    "weight": 2440,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 81.13,
+    "ola": 93.02,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1017124595385516133/WraithBB.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1017125290167771216/RRWraithBB.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 158, 
+"3330to60": 4.1, 
+"333Handling": 79,
+
+"666TopSpeed": 162, 
+"6660to60": 3.9, 
+"666Handling": 81,
+
+"699TopSpeed": 162, 
+"6990to60": 3.7, 
+"699Handling": 84,
+
+"969TopSpeed": 165, 
+"9690to60": 3.9, 
+"969Handling": 84,
+
+"996TopSpeed": 165, 
+"9960to60": 3.7, 
+"996Handling": 81
+}

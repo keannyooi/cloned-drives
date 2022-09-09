@@ -1,0 +1,49 @@
+{
+    "rq": 74,
+    "make": "Ford",
+    "model": "GT40 Concept",
+    "modelYear": 2002,
+    "country": "US",
+    "topSpeed": 205,
+    "0to60": 3.8,
+    "handling": 87,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Concept", "Unique"],
+    "isPrize": false,
+	
+    "weight": 1500,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 82.61,
+    "ola": 100,
+    "description": "The first concept of the then new GT production car.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1017124814047150190/GT40Concept2002.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1017125402080186388/gt40concept2002.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 208, 
+"3330to60": 3.6, 
+"333Handling": 90,
+
+"666TopSpeed": 210, 
+"6660to60": 3.4, 
+"666Handling": 93,
+
+"699TopSpeed": 210, 
+"6990to60": 3.2, 
+"699Handling": 97,
+
+"969TopSpeed": 213, 
+"9690to60": 3.4, 
+"969Handling": 97,
+
+"996TopSpeed": 213, 
+"9960to60": 3.2, 
+"996Handling": 93
+}

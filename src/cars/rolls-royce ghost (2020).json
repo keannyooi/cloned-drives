@@ -1,0 +1,49 @@
+{
+    "rq": 78,
+    "make": "Rolls-Royce",
+    "model": "Ghost",
+    "modelYear": 2020,
+    "country": "GB",
+    "topSpeed": 155,
+    "0to60": 4.4,
+    "handling": 81,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+	
+    "weight": 2490,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 78.57,
+    "ola": 77.27,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1017127303102337065/RoyRoyGhost2020.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1017127632527167600/RRGhost2.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 158, 
+"3330to60": 4.2, 
+"333Handling": 84,
+
+"666TopSpeed": 162, 
+"6660to60": 4.0, 
+"666Handling": 86,
+
+"699TopSpeed": 162, 
+"6990to60": 3.7, 
+"699Handling": 90,
+
+"969TopSpeed": 165, 
+"9690to60": 4.0, 
+"969Handling": 90,
+
+"996TopSpeed": 165, 
+"9960to60": 3.7, 
+"996Handling": 86
+}

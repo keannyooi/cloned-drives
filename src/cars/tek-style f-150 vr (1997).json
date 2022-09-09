@@ -1,0 +1,49 @@
+{
+    "rq": 36,
+    "make": ["Tek-Style", "Ford"],
+    "model": "F-150 VR",
+    "modelYear": 1997,
+    "country": "US",
+    "topSpeed": 115,
+    "0to60": 7.0,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner"],
+    "isPrize": false,
+	
+    "weight": 2400,
+    "gc": "Medium",
+    "seatCount": 3,
+    "bodyStyle": "Pickup",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 46.67,
+    "ola": 74.29,
+    "description": "The older F-150 equivalent of the RAM SRT-10 in terms of unpracticalness and having a rear wing.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1012902768228433951/tek-style_f-150_vr.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1012904207193485392/tekstyle_f-150.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 120, 
+"3330to60": 6.6, 
+"333Handling": 80,
+
+"666TopSpeed": 124, 
+"6660to60": 6.3, 
+"666Handling": 82,
+
+"699TopSpeed": 124, 
+"6990to60": 6.0, 
+"699Handling": 85,
+
+"969TopSpeed": 129, 
+"9690to60": 6.3, 
+"969Handling": 85,
+
+"996TopSpeed": 129, 
+"9960to60": 6.0, 
+"996Handling": 82
+}

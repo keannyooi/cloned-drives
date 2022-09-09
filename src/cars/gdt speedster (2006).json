@@ -1,0 +1,49 @@
+{
+    "rq": 48,
+    "make": "GDT",
+    "model": "Speedster",
+    "modelYear": 2006,
+    "country": "US",
+    "topSpeed": 170,
+    "0to60": 5.7,
+    "handling": 79,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner"],
+    "isPrize": false,
+	
+    "weight": 1471,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 73.08,
+    "ola": 87.82,
+    "description": "One-off roadster based on the Corvette that took 6 years to build yet it is still missing a cupholder.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011580108445843476/gdt_speedster.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011589799037116447/gdt_speedster.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 173, 
+"3330to60": 5.4, 
+"333Handling": 82,
+
+"666TopSpeed": 176, 
+"6660to60": 5.1, 
+"666Handling": 84,
+
+"699TopSpeed": 176, 
+"6990to60": 4.8, 
+"699Handling": 88,
+
+"969TopSpeed": 179, 
+"9690to60": 5.1, 
+"969Handling": 88,
+
+"996TopSpeed": 179, 
+"9960to60": 4.8, 
+"996Handling": 84
+}

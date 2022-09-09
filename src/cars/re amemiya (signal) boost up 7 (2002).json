@@ -1,0 +1,49 @@
+{
+    "rq": 76,
+    "make": ["RE Amemiya", "Mazda"],
+    "model": "µ Boost Up 7",
+    "modelYear": 2002,
+    "country": "JP",
+    "topSpeed": 172,
+    "0to60": 3.9,
+    "handling": 92,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer", "Tuner"],
+    "isPrize": false,
+	
+    "weight": 1240,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 75.81,
+    "ola": 80.14,
+    "description": "Possibly RE Amemiya's most well known car because it was featured in Gran Turismo.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011586319916470363/re_amemiya_boost_up_7_the_original.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1011587855904165939/amemiya_boostup_7.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 175, 
+"3330to60": 3.7, 
+"333Handling": 95,
+
+"666TopSpeed": 178, 
+"6660to60": 3.5, 
+"666Handling": 98,
+
+"699TopSpeed": 178, 
+"6990to60": 3.3, 
+"699Handling": 102,
+
+"969TopSpeed": 181, 
+"9690to60": 3.5, 
+"969Handling": 102,
+
+"996TopSpeed": 181, 
+"9960to60": 3.3, 
+"996Handling": 98
+}

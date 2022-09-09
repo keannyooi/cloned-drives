@@ -1,0 +1,49 @@
+{
+    "rq": 62,
+    "make": "Emme",
+    "model": "Lotus 422T",
+    "modelYear": 1997,
+    "country": "BR",
+    "topSpeed": 170,
+    "0to60": 4.8,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Oddity", "Rest of The World"],
+    "isPrize": false,
+	
+    "weight": 1588,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 68.27,
+    "ola": 82.85,
+    "description": "The Lotus Carltons long lost Brazilian brother.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011578127807426590/brazillian_carlton_the_sacrilegious.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011589663129075772/emme_lotus.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 173, 
+"3330to60": 4.6, 
+"333Handling": 80,
+
+"666TopSpeed": 176, 
+"6660to60": 4.3, 
+"666Handling": 82,
+
+"699TopSpeed": 176, 
+"6990to60": 4.1, 
+"699Handling": 85,
+
+"969TopSpeed": 179, 
+"9690to60": 4.3, 
+"969Handling": 85,
+
+"996TopSpeed": 179, 
+"9960to60": 4.1, 
+"996Handling": 82
+}

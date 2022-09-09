@@ -1,0 +1,49 @@
+{
+    "rq": 86,
+    "make": ["RE Amemiya", "Mazda"],
+    "model": "ORC SGC-7 Replica by Obayashi Factory",
+    "modelYear": 2009,
+    "country": "JP",
+    "topSpeed": 178,
+    "0to60": 3.0,
+    "handling": 95,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner", "Unique"],
+    "isPrize": true,
+	
+    "weight": 1265,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 73.17,
+    "ola": 80,
+    "description": "When you have a race until 7pm but a party at 8pm.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011586704597069844/re_amemiya_orc_sgc-7_replica.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011588046652710912/amemiya_obayashi.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 181, 
+"3330to60": 2.8, 
+"333Handling": 98,
+
+"666TopSpeed": 184, 
+"6660to60": 2.7, 
+"666Handling": 101,
+
+"699TopSpeed": 184, 
+"6990to60": 2.6, 
+"699Handling": 105,
+
+"969TopSpeed": 187, 
+"9690to60": 2.7, 
+"969Handling": 105,
+
+"996TopSpeed": 187, 
+"9960to60": 2.6, 
+"996Handling": 101
+}

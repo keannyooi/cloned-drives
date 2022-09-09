@@ -1,0 +1,49 @@
+{
+    "rq": 46,
+    "make": ["RE Amemiya", "Mazda"],
+    "model": "Chantez Turbo 12A",
+    "modelYear": 1980,
+    "country": "JP",
+    "topSpeed": 149,
+    "0to60": 5.4,
+    "handling": 73,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner"],
+    "isPrize": false,
+	
+    "weight": 800,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 53.47,
+    "ola": 74.07,
+    "description": "Someone made Mazda's rotary kei car dreams come true.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011586518579683468/re_amemiya_chantez_the_wangan_terrorist.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1011587983075446816/amemiya_chantez.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 152, 
+"3330to60": 5.1, 
+"333Handling": 75,
+
+"666TopSpeed": 156, 
+"6660to60": 4.9, 
+"666Handling": 78,
+
+"699TopSpeed": 156, 
+"6990to60": 4.6, 
+"699Handling": 81,
+
+"969TopSpeed": 159, 
+"9690to60": 4.9, 
+"969Handling": 81,
+
+"996TopSpeed": 159, 
+"9960to60": 4.6, 
+"996Handling": 78
+}

@@ -8,7 +8,7 @@
     "modelYear": 2020,
     "country": "SE",
     "topSpeed": 155,
-    "0to60": 4,
+    "0to60": 4.0,
     "handling": 87,
     "driveType": "4WD",
     "tyreType": "Performance",
@@ -26,7 +26,7 @@
     "fuelType": "Hybrid",
     "mra": 78.43,
     "ola": 95.01,
-    "description": "An interesting and rather beguiling take on a luxury GT. Card by DodgeDemon",
+    "description": "An interesting and rather beguiling take on a luxury GT.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819420670617452594/2020_Polestar_1.png",
     "333TopSpeed": 158,
     "3330to60": 3.8,
@@ -43,6 +43,6 @@
     "699TopSpeed": 162,
     "6990to60": 3.4,
     "699Handling": 97,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1016825862072574022/Polestar_1.png",
+    "creator": "DodgeDemon"
 }

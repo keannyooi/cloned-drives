@@ -1,0 +1,49 @@
+{
+    "rq": 47,
+    "make": "Citroen",
+    "model": "C-Metisse",
+    "modelYear": 2006,
+    "country": "FR",
+    "topSpeed": 155,
+    "0to60": 6.0,
+    "handling": 78,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Concept", "Eco-Friendly", "Unique"],
+    "isPrize": false,
+	
+    "weight": 1400,
+    "gc": "Low",
+    "seatCount": 3,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 58.62,
+    "ola": 78.5,
+    "description": "...Whats a diesel-hybrid?",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011578820106666135/citroen_c-metisse.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011588640658427964/c-metisse.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 158, 
+"3330to60": 5.7, 
+"333Handling": 81,
+
+"666TopSpeed": 162, 
+"6660to60": 5.4, 
+"666Handling": 83,
+
+"699TopSpeed": 162, 
+"6990to60": 5.1, 
+"699Handling": 87,
+
+"969TopSpeed": 165, 
+"9690to60": 5.4, 
+"969Handling": 87,
+
+"996TopSpeed": 165, 
+"9960to60": 5.1, 
+"996Handling": 83
+}

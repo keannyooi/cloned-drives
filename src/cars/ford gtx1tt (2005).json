@@ -1,0 +1,49 @@
+{
+    "rq": 87,
+    "make": "Ford",
+    "model": "GTX1TT",
+    "modelYear": 2005,
+    "country": "US",
+    "topSpeed": 219,
+    "0to60": 2.8,
+    "handling": 90,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Supercar", "Unique", "Ultra Expensive" ],
+    "isPrize": false,
+	
+    "weight": 1620,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 90.32,
+    "ola": 92.86,
+    "description": "Only a few people got to get one of these Twin-Turbo'd GT Speedsters.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1017124886755426354/GTX1TT.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1017125460808843314/GTX1TT.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 221, 
+"3330to60": 2.7, 
+"333Handling": 93,
+
+"666TopSpeed": 224, 
+"6660to60": 2.5, 
+"666Handling": 96,
+
+"699TopSpeed": 224, 
+"6990to60": 2.4, 
+"699Handling": 100,
+
+"969TopSpeed": 226, 
+"9690to60": 2.5, 
+"969Handling": 100,
+
+"996TopSpeed": 226, 
+"9960to60": 2.4, 
+"996Handling": 96
+}

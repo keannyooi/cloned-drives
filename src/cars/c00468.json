@@ -27,10 +27,10 @@
     "fuelType": "Petrol",
     "mra": 94.62,
     "ola": 107.69,
-    "description": "Ford's Ferrari win streak breaker. Card by havvy",
+    "description": "Ford's Ferrari win streak breaker.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/826571127719591956/FordGT40MkII.png",
     "333TopSpeed": 202,
-    "3330to60": 4,
+    "3330to60": 4.0,
     "333Handling": 81,
     "666TopSpeed": 204,
     "6660to60": 3.8,
@@ -44,6 +44,6 @@
     "699TopSpeed": 204,
     "6990to60": 3.6,
     "699Handling": 87,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1016824981830766592/gt40.png",
+    "creator": "Havvy"
 }

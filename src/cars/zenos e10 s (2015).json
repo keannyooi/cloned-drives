@@ -1,0 +1,49 @@
+{
+    "rq": 71,
+    "make": "Zenos",
+    "model": "E10 S",
+    "modelYear": 2015,
+    "country": "GB",
+    "topSpeed": 145,
+    "0to60": 4.2,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Track Day"],
+    "isPrize": false,
+	
+    "weight": 725,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.66,
+    "ola": 80.95,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1017018369851015199/ZenosE10S.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1017018695446441984/ZenosE10S.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 149, 
+"3330to60": 4.0, 
+"333Handling": 94,
+
+"666TopSpeed": 152, 
+"6660to60": 3.8, 
+"666Handling": 97,
+
+"699TopSpeed": 152, 
+"6990to60": 3.6, 
+"699Handling": 101,
+
+"969TopSpeed": 156, 
+"9690to60": 3.8, 
+"969Handling": 101,
+
+"996TopSpeed": 156, 
+"9960to60": 3.6, 
+"996Handling": 97
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 83,
+    "make": ["RE Amemiya", "Toyota"],
+    "model": "AsparaDrink RX-7 Super GT",
+    "modelYear": 2002,
+    "country": "JP",
+    "topSpeed": 166,
+    "0to60": 3.2,
+    "handling": 96,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport"],
+    "isPrize": false,
+	
+    "weight": 1100,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 60.38,
+    "ola": 62.5,
+    "description": "A Japanese Super GT Legend.",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1011586827183992862/re_amemiya_super_gt_rx-7.png?width=1139&height=701",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1011587823830310932/amemiya_asparadrink.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 169, 
+"3330to60": 3.0, 
+"333Handling": 99,
+
+"666TopSpeed": 172, 
+"6660to60": 2.9, 
+"666Handling": 102,
+
+"699TopSpeed": 172, 
+"6990to60": 2.7, 
+"699Handling": 107,
+
+"969TopSpeed": 175, 
+"9690to60": 2.9, 
+"969Handling": 107,
+
+"996TopSpeed": 175, 
+"9960to60": 2.7, 
+"996Handling": 102
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 77,
+    "make": ["Mercedes-AMG", "Mercedes-Benz"],
+    "model": "GT",
+    "modelYear": 2014,
+    "country": "DE",
+    "topSpeed": 189,
+    "0to60": 3.8,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+	
+    "weight": 1615,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 95,
+    "ola": 89.47,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1017075203555205130/AMGGT2014.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1017075484892348426/AMGGT2014.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 192, 
+"3330to60": 3.6, 
+"333Handling": 94,
+
+"666TopSpeed": 195, 
+"6660to60": 3.4, 
+"666Handling": 97,
+
+"699TopSpeed": 195, 
+"6990to60": 3.2, 
+"699Handling": 101,
+
+"969TopSpeed": 197, 
+"9690to60": 3.4, 
+"969Handling": 101,
+
+"996TopSpeed": 197, 
+"9960to60": 3.2, 
+"996Handling": 97
+}

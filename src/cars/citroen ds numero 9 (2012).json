@@ -1,0 +1,49 @@
+{
+    "rq": 71,
+    "make": ["Citroen", "DS"],
+    "model": "DS Numero 9",
+    "modelYear": 2012,
+    "country": "FR",
+    "topSpeed": 152,
+    "0to60": 5.2,
+    "handling": 81,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Concept", "Unique", "Eco-Friendly"],
+    "isPrize": false,
+	
+    "weight": 1500,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 62.18,
+    "ola": 76.72,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011578926272872448/citroen_ds_numero_9.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011592046752051240/numero_9.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 155, 
+"3330to60": 4.9, 
+"333Handling": 84,
+
+"666TopSpeed": 159, 
+"6660to60": 4.7, 
+"666Handling": 86,
+
+"699TopSpeed": 159, 
+"6990to60": 4.4, 
+"699Handling": 90,
+
+"969TopSpeed": 162, 
+"9690to60": 4.7, 
+"969Handling": 90,
+
+"996TopSpeed": 162, 
+"9960to60": 4.4, 
+"996Handling": 86
+}

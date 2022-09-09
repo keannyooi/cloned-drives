@@ -1,0 +1,49 @@
+{
+    "rq": 31,
+    "make": "Lincoln",
+    "model": "Blackwood",
+    "modelYear": 2002,
+    "country": "US",
+    "topSpeed": 112,
+    "0to60": 8.6,
+    "handling": 62,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+	
+    "weight": 2531,
+    "gc": "High",
+    "seatCount": 4,
+    "bodyStyle": "Pickup",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 44.48,
+    "ola": 74.25,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011580666367971348/lincoln_blackwood.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011588303297978448/blackwood.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 117, 
+"3330to60": 8.2, 
+"333Handling": 64,
+
+"666TopSpeed": 121, 
+"6660to60": 7.7, 
+"666Handling": 66,
+
+"699TopSpeed": 121, 
+"6990to60": 7.3, 
+"699Handling": 69,
+
+"969TopSpeed": 126, 
+"9690to60": 7.7, 
+"969Handling": 69,
+
+"996TopSpeed": 126, 
+"9960to60": 7.3, 
+"996Handling": 66
+}

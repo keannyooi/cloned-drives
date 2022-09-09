@@ -1,0 +1,49 @@
+{
+    "rq": 98,
+    "make": "Audi",
+    "model": "R18 e-tron quattro",
+    "modelYear": 2014,
+    "country": "DE",
+    "topSpeed": 209,
+    "0to60": 2.7,
+    "handling": 99,
+    "driveType": "4WD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport"],
+    "isPrize": true,
+	
+    "weight": 915,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Hybrid",
+    "mra": 117.4,
+    "ola": 106.3,
+    "description": "None.",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1014235998479204442/r18etronquattrocd.png?width=1127&height=702",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1014236121795936266/r18racehud.png?width=1128&height=702",
+    "creator": "Sutzi",
+
+"333TopSpeed": 211, 
+"3330to60": 2.6, 
+"333Handling": 102,
+
+"666TopSpeed": 214, 
+"6660to60": 2.4, 
+"666Handling": 106,
+
+"699TopSpeed": 214, 
+"6990to60": 2.3, 
+"699Handling": 110,
+
+"969TopSpeed": 216, 
+"9690to60": 2.4, 
+"969Handling": 110,
+
+"996TopSpeed": 216, 
+"9960to60": 2.3, 
+"996Handling": 106
+}

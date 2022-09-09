@@ -1,0 +1,49 @@
+{
+    "rq": 68,
+    "make": "Rolls-Royce",
+    "model": "Wraith",
+    "modelYear": 2013,
+    "country": "GB",
+    "topSpeed": 155,
+    "0to60": 4.4,
+    "handling": 74,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+	
+    "weight": 2360,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 75.86,
+    "ola": 100,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1017124533666332825/Wraith.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1017125275005370468/RRWraith.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 158, 
+"3330to60": 4.2, 
+"333Handling": 76,
+
+"666TopSpeed": 162, 
+"6660to60": 4.0, 
+"666Handling": 79,
+
+"699TopSpeed": 162, 
+"6990to60": 3.7, 
+"699Handling": 82,
+
+"969TopSpeed": 165, 
+"9690to60": 4.0, 
+"969Handling": 82,
+
+"996TopSpeed": 165, 
+"9960to60": 3.7, 
+"996Handling": 79
+}
