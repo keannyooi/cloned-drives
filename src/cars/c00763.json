@@ -5,7 +5,7 @@
     "modelYear": 2005,
     "country": "JP",
     "topSpeed": 149,
-    "0to60": 6,
+    "0to60": 6.0,
     "handling": 78,
     "driveType": "4WD",
     "tyreType": "Performance",
@@ -21,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 69.77,
     "ola": 60,
-    "description": "Mazda's 6 sedan goes sporty. Card by havvy.",
+    "description": "Mazda's 6 sedan goes sporty.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/821871013826396200/unknown.png",
     "333TopSpeed": 152,
     "3330to60": 5.7,
@@ -38,6 +38,6 @@
     "699TopSpeed": 156,
     "6990to60": 5.1,
     "699Handling": 87,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1017009636672540692/mazda_6_mps.jpg",
+    "creator": "Havvy"
 }

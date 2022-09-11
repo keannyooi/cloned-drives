@@ -23,10 +23,10 @@
     "fuelType": "Electric",
     "mra": 67.74,
     "ola": 90.48,
-    "description": "Jaguar's Tesla rival that outclassed the Model X in off-roading. Card by DodgeDemon",
+    "description": "Jaguar's Tesla rival that outclassed the Model X in off-roading.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/826157268903002132/IPACE.png",
     "333TopSpeed": 128,
-    "3330to60": 4,
+    "3330to60": 4.0,
     "333Handling": 83,
     "666TopSpeed": 132,
     "6660to60": 3.8,
@@ -40,6 +40,6 @@
     "699TopSpeed": 132,
     "6990to60": 3.6,
     "699Handling": 89,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1017009009577967646/ipaceEV_hud.png",
+    "creator": "DodgeDemon"
 }

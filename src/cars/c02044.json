@@ -5,7 +5,7 @@
     "modelYear": 2013,
     "country": "GB",
     "topSpeed": 207,
-    "0to60": 3,
+    "0to60": 3.0,
     "handling": 96,
     "driveType": "RWD",
     "tyreType": "Slick",
@@ -23,7 +23,7 @@
     "fuelType": "Petrol",
     "mra": 96.25,
     "ola": 89.86,
-    "description": "A perfect middle ground between the road 12C and the Race GT3. Card by Exist.",
+    "description": "A perfect middle ground between the road 12C and the Race GT3.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/860127226866958336/CD_McLaren_12C_GT_Sprint.png",
     "333TopSpeed": 210,
     "3330to60": 2.9,
@@ -40,6 +40,6 @@
     "699TopSpeed": 212,
     "6990to60": 2.6,
     "699Handling": 107,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1017002479927431188/12cgtsprint.png",
+    "creator": "Exist"
 }

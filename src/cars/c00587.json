@@ -5,7 +5,7 @@
     "modelYear": 2018,
     "country": "GB",
     "topSpeed": 176,
-    "0to60": 4,
+    "0to60": 4.0,
     "handling": 79,
     "driveType": "4WD",
     "tyreType": "All-Surface",
@@ -21,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 76.98,
     "ola": 75.38,
-    "description": "In the words of Jeremy Clarkson, its just stupid. Card by Andu",
+    "description": "In the words of Jeremy Clarkson, its just stupid.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819486385219960832/FPACESVR.png",
     "333TopSpeed": 179,
     "3330to60": 3.8,
@@ -38,6 +38,6 @@
     "699TopSpeed": 182,
     "6990to60": 3.4,
     "699Handling": 88,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1016991306284810270/fpacesvr.png",
+    "creator": "Andu"
 }

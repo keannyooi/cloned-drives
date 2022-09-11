@@ -5,7 +5,7 @@
     "modelYear": 1964,
     "country": "US",
     "topSpeed": 212,
-    "0to60": 3,
+    "0to60": 3.0,
     "handling": 91,
     "driveType": "4WD",
     "tyreType": "Performance",
@@ -25,7 +25,7 @@
     "fuelType": "Petrol",
     "mra": 85.71,
     "ola": 96,
-    "description": "Card by Aqo.",
+    "description": "None.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/944969802378797096/cerv2.png",
     "333TopSpeed": 214,
     "3330to60": 2.9,
@@ -42,6 +42,6 @@
     "699TopSpeed": 217,
     "6990to60": 2.6,
     "699Handling": 101,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1016980690014830592/cervii.png",
+    "creator": "Aqo"
 }

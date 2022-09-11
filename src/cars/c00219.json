@@ -5,7 +5,7 @@
     "modelYear": 1999,
     "country": "FR",
     "topSpeed": 211,
-    "0to60": 4,
+    "0to60": 4.0,
     "handling": 86,
     "driveType": "4WD",
     "tyreType": "Performance",
@@ -25,7 +25,7 @@
     "fuelType": "Petrol",
     "mra": 86.96,
     "ola": 92.5,
-    "description": "This is the development study version of the Veyron that we've known today. Card by Spence.",
+    "description": "This is the development study version of the Veyron that we've known today.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/854720181778251786/image0.png",
     "333TopSpeed": 213,
     "3330to60": 3.8,
@@ -42,6 +42,6 @@
     "996TopSpeed": 218,
     "9960to60": 3.4,
     "996Handling": 92,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1017062139371995157/Bugatti_EB184_Veyron.png",
+    "creator": "Spence"
 }

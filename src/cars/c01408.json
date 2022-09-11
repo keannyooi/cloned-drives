@@ -5,7 +5,7 @@
     "modelYear": 2020,
     "country": "DE",
     "topSpeed": 155,
-    "0to60": 5,
+    "0to60": 5.0,
     "handling": 78,
     "driveType": "4WD",
     "tyreType": "All-Surface",
@@ -24,7 +24,7 @@
     "fuelType": "Hybrid",
     "mra": 79.37,
     "ola": 76,
-    "description": "A curious mix of speed and efficiency with a big dollop of comfort. Card by Andu",
+    "description": "A curious mix of speed and efficiency with a big dollop of comfort.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/848497528034164806/Touareg1030.png",
     "333TopSpeed": 158,
     "3330to60": 4.8,
@@ -41,6 +41,6 @@
     "699TopSpeed": 162,
     "6990to60": 4.3,
     "699Handling": 87,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1017008917626241105/touareg_hud.png",
+    "creator": "Andu"
 }
