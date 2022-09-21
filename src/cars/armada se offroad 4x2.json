@@ -1,0 +1,50 @@
+﻿{
+    "rq": 46,
+    "make": "Nissan",
+    "model": "Armada SE Off-Road 4x2",
+    "modelYear": 2004,
+    "country": "JP",
+    "topSpeed": 119,
+    "0to60": 6.9,
+    "handling": 66,
+    "driveType": "RWD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 2234,
+    "gc": "High",
+    "seatCount":8,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 43.13,
+    "ola": 69.57,
+    "description": "So big you'll feel like you're in a tank.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/985996944923054120/ArmadaSEOffRoad4x2.png",
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1020407957562871868/ArmadaSEOffRoad4x2.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 123,
+    "3330to60": 6.6,
+    "333Handling": 68,
+
+    "666TopSpeed": 128,
+    "6660to60": 6.2, 
+    "666Handling": 70,
+
+    "996TopSpeed": 132,
+    "9960to60": 5.9,
+    "996Handling": 70,
+
+    "969TopSpeed": 132,
+    "9690to60": 6.2,
+    "969Handling": 70,
+
+    "699TopSpeed": 128,
+    "6990to60": 5.9,
+    "699Handling": 73
+}
