@@ -5,11 +5,11 @@
     "modelYear": 2021,
     "country": "DE",
     "topSpeed": 191,
-    "0to60": 3.4,
-    "handling": 91,
+    "0to60": 3.3,
+    "handling": 90,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [],
+    "tags": ["Supercar"],
     "isPrize": false,
 	
     "weight": 1630,
@@ -20,30 +20,30 @@
     "abs": true,
     "enginePos": "Rear",
     "fuelType": "Petrol",
-    "mra": 82.92,
-    "ola": 73.53,
+    "mra": 80.99,
+    "ola": 79.99,
     "description": "None.",
-    "card": "https://cdn.discordapp.com/attachments/819199720249360384/983395218911035392/911Carrera4GTSCab.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1022200796303081492/992carrera4GTScab.png",
 	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1017087141051904122/992Carrera4GTScab.png",
     "creator": "Bnuuy",
 
 "333TopSpeed": 194, 
-"3330to60": 3.2, 
-"333Handling": 94,
+"3330to60": 3.1, 
+"333Handling": 93,
 
 "666TopSpeed": 196, 
-"6660to60": 3.1, 
-"666Handling": 97,
+"6660to60": 3.0, 
+"666Handling": 96,
 
 "699TopSpeed": 196, 
-"6990to60": 2.9, 
-"699Handling": 101,
+"6990to60": 2.8, 
+"699Handling": 100,
 
 "969TopSpeed": 199, 
-"9690to60": 3.1, 
-"969Handling": 101,
+"9690to60": 3.0, 
+"969Handling": 100,
 
 "996TopSpeed": 199, 
-"9960to60": 2.9, 
-"996Handling": 97
+"9960to60": 2.8, 
+"996Handling": 96
 }

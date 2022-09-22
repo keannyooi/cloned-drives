@@ -1,0 +1,49 @@
+{
+    "rq": 81,
+    "make": "Porsche",
+    "model": "911 Sport Classic",
+    "modelYear": 2022,
+    "country": "DE",
+    "topSpeed": 196,
+    "0to60": 3.5,
+    "handling": 92,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Supercar", "Track Day"],
+    "isPrize": false,
+	
+    "weight": 1570,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 87.66,
+    "ola": 78.6,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1022477511646523442/992SportClassic.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1022481990701830185/992SportClassic.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 199, 
+"3330to60": 3.3, 
+"333Handling": 95,
+
+"666TopSpeed": 201, 
+"6660to60": 3.1, 
+"666Handling": 98,
+
+"699TopSpeed": 201, 
+"6990to60": 3.0, 
+"699Handling": 102,
+
+"969TopSpeed": 204, 
+"9690to60": 3.1, 
+"969Handling": 102,
+
+"996TopSpeed": 204, 
+"9960to60": 3.0, 
+"996Handling": 98
+}

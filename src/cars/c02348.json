@@ -1,15 +1,15 @@
 {
-    "rq": 76,
+    "rq": 75,
     "make": "Porsche",
     "model": "911 Carrera 4 Cabriolet",
     "modelYear": 2019,
     "country": "DE",
     "topSpeed": 180,
-    "0to60": 4.2,
-    "handling": 91,
+    "0to60": 4.1,
+    "handling": 88,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [],
+    "tags": ["Supercar"],
     "isPrize": false,
 	
     "weight": 1625,
@@ -20,30 +20,30 @@
     "abs": true,
     "enginePos": "Rear",
     "fuelType": "Petrol",
-    "mra": 82.35,
-    "ola": 80.95,
+    "mra": 79.32,
+    "ola": 83.41,
     "description": "None.",
-    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1007255846255870053/911Carrera4Cab.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1022200543671746590/992carrera4Cab.png",
 	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1007256792969003018/992Carrera4Cab.png",
     "creator": "Bnuuy",
 
 "333TopSpeed": 183, 
-"3330to60": 4.0, 
-"333Handling": 94,
+"3330to60": 3.9, 
+"333Handling": 91,
 
 "666TopSpeed": 186, 
-"6660to60": 3.8, 
-"666Handling": 97,
+"6660to60": 3.7, 
+"666Handling": 94,
 
 "699TopSpeed": 186, 
-"6990to60": 3.6, 
-"699Handling": 101,
+"6990to60": 3.5, 
+"699Handling": 98,
 
 "969TopSpeed": 189, 
-"9690to60": 3.8, 
-"969Handling": 101,
+"9690to60": 3.7, 
+"969Handling": 98,
 
 "996TopSpeed": 189, 
-"9960to60": 3.6, 
-"996Handling": 97
+"9960to60": 3.5, 
+"996Handling": 94
 }
