@@ -1,0 +1,50 @@
+﻿{
+    "rq": 53,
+    "make": "Infiniti",
+    "model": "QX80 2WD",
+    "modelYear": 2014,
+    "country": "JP",
+    "topSpeed": 135,
+    "0to60": 6.2,
+    "handling": 67,
+    "driveType": "RWD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 2555,
+    "gc": "High",
+    "seatCount":8,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 56.36,
+    "ola": 80.65,
+    "description": "So big, it's Huge.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/986180962910085190/QX562WD.png",
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1020402199777525874/QX802WDnew.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 139,
+    "3330to60": 5.9,
+    "333Handling": 69,
+
+    "666TopSpeed": 143,
+    "6660to60": 5.6, 
+    "666Handling": 71,
+
+    "996TopSpeed": 147,
+    "9960to60": 5.3,
+    "996Handling": 71,
+
+    "969TopSpeed": 147,
+    "9690to60": 5.6,
+    "969Handling": 74,
+
+    "699TopSpeed": 143,
+    "6990to60": 5.3,
+    "699Handling": 74
+}

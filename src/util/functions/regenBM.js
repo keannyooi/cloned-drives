@@ -79,7 +79,7 @@ async function regenBM() {
             stock = 2;
         }
 
-        while (!currentCar["reference"] || catalog.find(car => currentFile.includes(car.carID)) || bmReference["isPrize"] || bmReference["rq"] > rqEnd || bmReference["rq"] < rqStart) {
+        while (!currentCar["reference"] || catalog.find(car => currentFile.includes(car.carID)) || bmReference["isPrize"] || bmReference["rq"] > rqEnd || bmReference["rq"] < rqStart || !currentCar["active"]) {
             currentFile = bmCars[Math.floor(Math.random() * bmCars.length)];
             currentCar = require(`../../cars/${currentFile}`);
             bmReference = require(`../../cars/${currentCar["reference"]}`);

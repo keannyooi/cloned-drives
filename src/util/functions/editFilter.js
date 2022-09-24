@@ -21,14 +21,16 @@ function editFilter(message, filter, args) {
                 if (currentCar["reference"]) {
                     bmReference = require(`../../cars/${currentCar["reference"]}`);
                 }
-                if (criteria === "collection" && !currentCar[criteria]) {
-                    return false
+                if (criteria === "collection") {
+                    if (!currentCar[criteria]) {
+                        return false;
+                    }
+                    return currentCar[criteria].some(collection => collection.toLowerCase() === argument);
                 }
                 else if (Array.isArray(bmReference[criteria])) {
                     return bmReference[criteria].some(tag => tag.toLowerCase() === argument);
                 }
                 else {
-                    console.log(bmReference);
                     return bmReference[criteria].toLowerCase() === argument;
                 }
             });

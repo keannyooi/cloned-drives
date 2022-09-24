@@ -1,0 +1,50 @@
+﻿{
+    "rq": 47,
+    "make": "Nissan",
+    "model": "Patrol Base",
+    "modelYear": 2010,
+    "country": "JP",
+    "topSpeed": 128,
+    "0to60": 7.4,
+    "handling": 65,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 2600,
+    "gc": "High",
+    "seatCount":8,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 54.01,
+    "ola": 67.57,
+    "description": "A true off-roader for the family.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/987289666472538153/PatrolBase.png",
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1020405583897170031/PatrolBase.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 132,
+    "3330to60": 7.0,
+    "333Handling": 67,
+
+    "666TopSpeed": 136,
+    "6660to60": 6.7, 
+    "666Handling": 69,
+
+    "996TopSpeed": 140,
+    "9960to60": 6.3,
+    "996Handling": 69,
+
+    "969TopSpeed": 140,
+    "9690to60": 6.7,
+    "969Handling": 72,
+
+    "699TopSpeed": 136,
+    "6990to60": 6.3,
+    "699Handling": 72
+}

@@ -1,0 +1,50 @@
+﻿{
+    "rq": 49,
+    "make": "Infiniti",
+    "model": "QX56 4x4",
+    "modelYear": 2004,
+    "country": "JP",
+    "topSpeed": 110,
+    "0to60": 7.0,
+    "handling": 65,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+
+    "weight": 2580,
+    "gc": "High",
+    "seatCount":8,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 48.61,
+    "ola": 60.43,
+    "description": "I forgot the description for this one.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/986180717828538398/QX564x4.png",
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1020399819262525500/QX564x4new.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 115,
+    "3330to60": 6.7,
+    "333Handling": 67,
+
+    "666TopSpeed": 119,
+    "6660to60": 6.3, 
+    "666Handling": 69,
+
+    "996TopSpeed": 124,
+    "9960to60": 6.0,
+    "996Handling": 69,
+
+    "969TopSpeed": 124,
+    "9690to60": 6.3,
+    "969Handling": 72,
+
+    "699TopSpeed": 119,
+    "6990to60": 6.0,
+    "699Handling": 72
+}

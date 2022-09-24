@@ -67,6 +67,8 @@ module.exports = {
             const { money, trophies, garage } = await profileModel.findOne({ userID: message.author.id });
             const car = require(`../cars/${currentCar.carID}`);
             const price = currentCar.price * amount;
+            let balance = mode === "bm" ? trophies : money;
+
             if (mode === "bm" && !garage.find(c => c.carID === car["reference"])) {
                 let bmReference = require(`../cars/${car["reference"]}`);
                 const errorMessage = new ErrorMessage({
@@ -80,12 +82,12 @@ module.exports = {
                 });
                 return errorMessage.sendMessage({ currentMessage });
             }
-            else if (money >= price && currentCar.stock >= amount) {
+            else if (balance >= price && currentCar.stock >= amount) {
                 let addedCars = [];
                 for (let i = 0; i < amount; i++) {
                     addedCars.push({ carID: currentCar.carID, upgrade: "000" });
                 }
-                let balance = mode === "bm" ? trophies - price : money - price;
+                balance -= price;
                 currentCar.stock -= amount;
 
                 const obj = mode === "bm" ? { trophies: balance } : { money: balance };
@@ -114,7 +116,7 @@ module.exports = {
                     author: message.author,
                     fields: [
                         { name: `Required Amount of ${mode === "bm" ? "trophies" : "money"}`, value: `${emoji}${(currentCar.price * amount).toLocaleString("en")}`, inline: true },
-                        { name: "Your Balance", value: `${emoji}${money.toLocaleString("en")}`, inline: true },
+                        { name: "Your Balance", value: `${emoji}${balance.toLocaleString("en")}`, inline: true },
                         { name: "Stock Remaining", value: currentCar.stock.toLocaleString("en"), inline: true }
                     ]
                 });
