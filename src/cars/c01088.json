@@ -1,5 +1,5 @@
 {
-    "rq": 97,
+    "rq": 98,
     "make": "Porsche",
     "model": "911 Turbo S",
     "modelYear": 2020,
@@ -9,9 +9,7 @@
     "handling": 93,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Supercar"
-    ],
+    "tags": ["Supercar"],
     "isPrize": false,
     "weight": 1640,
     "gc": "Low",
@@ -21,10 +19,10 @@
     "abs": true,
     "enginePos": "Rear",
     "fuelType": "Petrol",
-    "mra": 80,
-    "ola": 73.33,
+    "mra": 89.66,
+    "ola": 74.81,
     "description": "This was almost medium.",
-    "card": "https://cdn.discordapp.com/attachments/819199720249360384/821089633898856468/S.Porsche911TurboS992.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1022477636791971840/turbnoS.png",
     "333TopSpeed": 208,
     "3330to60": 2.3,
     "333Handling": 96,

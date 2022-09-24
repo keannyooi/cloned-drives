@@ -1,0 +1,49 @@
+{
+    "rq": 85,
+    "make": "Porsche",
+    "model": "911 Carrera 4S",
+    "modelYear": 2019,
+    "country": "DE",
+    "topSpeed": 190,
+    "0to60": 3.4,
+    "handling": 90,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Supercar"],
+    "isPrize": false,
+	
+    "weight": 1565,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 81.36,
+    "ola": 76.67,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1022196256296157226/992carrera4s.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1017127434811883580/992Carrera4S.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 193, 
+"3330to60": 3.2, 
+"333Handling": 93,
+
+"666TopSpeed": 195, 
+"6660to60": 3.1, 
+"666Handling": 96,
+
+"699TopSpeed": 195, 
+"6990to60": 2.9, 
+"699Handling": 100,
+
+"969TopSpeed": 198, 
+"9690to60": 3.1, 
+"969Handling": 100,
+
+"996TopSpeed": 198, 
+"9960to60": 2.9, 
+"996Handling": 96
+}

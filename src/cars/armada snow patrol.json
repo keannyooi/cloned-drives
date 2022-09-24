@@ -1,0 +1,50 @@
+﻿{
+    "rq": 58,
+    "make": "Nissan",
+    "model": "Armada Snow Patrol",
+    "modelYear": 2018,
+    "country": "JP",
+    "topSpeed": 130,
+    "0to60": 6.8,
+    "handling": 65,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["Concept","Unique"],
+    "isPrize": false,
+
+
+    "weight": 2800,
+    "gc": "High",
+    "seatCount":8,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 53.54,
+    "ola": 70.59,
+    "description": "If the Armada wasn't already prepared for the white stuff, it sure as heck is now.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/985997305784205382/ArmadaSnowPatrol.png",
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1020408330776227970/ArmadaSnowPatrol.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 134,
+    "3330to60": 6.5,
+    "333Handling": 67,
+
+    "666TopSpeed": 138,
+    "6660to60": 6.1, 
+    "666Handling": 69,
+
+    "996TopSpeed": 142,
+    "9960to60": 5.8,
+    "996Handling": 69,
+
+    "969TopSpeed": 142,
+    "9690to60": 6.1,
+    "969Handling": 72,
+
+    "699TopSpeed": 138,
+    "6990to60": 5.8,
+    "699Handling": 72
+}

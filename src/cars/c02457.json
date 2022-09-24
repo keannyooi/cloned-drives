@@ -1,11 +1,11 @@
 {
-    "rq": 87,
+    "rq": 84,
     "make": "Porsche",
     "model": "911 GT3 Touring",
     "modelYear": 2021,
     "country": "DE",
     "topSpeed": 199,
-    "0to60": 3.0,
+    "0to60": 3.4,
     "handling": 93,
     "driveType": "RWD",
     "tyreType": "Performance",
@@ -20,30 +20,30 @@
     "abs": true,
     "enginePos": "Rear",
     "fuelType": "Petrol",
-    "mra": 75.18,
-    "ola": 76.66,
+    "mra": 90.24,
+    "ola": 82.4,
     "description": "The cutest GT3.",
-    "card": "https://cdn.discordapp.com/attachments/819199720249360384/983394177465327717/911gt3touring.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1022478183414648913/992GT3Touring.png",
 	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/997648693446578226/911GT3touring992.png",
     "creator": "Bnuuy",
 
 "333TopSpeed": 202, 
-"3330to60": 2.8, 
+"3330to60": 3.2, 
 "333Handling": 96,
 
 "666TopSpeed": 204, 
-"6660to60": 2.7, 
+"6660to60": 3.1, 
 "666Handling": 99,
 
 "699TopSpeed": 204, 
-"6990to60": 2.6, 
+"6990to60": 2.9, 
 "699Handling": 103,
 
 "969TopSpeed": 207, 
-"9690to60": 2.7, 
+"9690to60": 3.1, 
 "969Handling": 103,
 
 "996TopSpeed": 207, 
-"9960to60": 2.6, 
+"9960to60": 2.9, 
 "996Handling": 99
 }

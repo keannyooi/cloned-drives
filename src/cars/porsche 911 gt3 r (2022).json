@@ -1,0 +1,49 @@
+{
+    "rq": 92,
+    "make": "Porsche",
+    "model": "911 GT3 R",
+    "modelYear": 2022,
+    "country": "DE",
+    "topSpeed": 199,
+    "0to60": 2.7,
+    "handling": 97,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motosport"],
+    "isPrize": false,
+	
+    "weight": 1250,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 96,
+    "ola": 80,
+    "description": "Porsche's Latest GT3 Racecar.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1022478311055691877/992GT3R.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1022482136982355988/992GT3R.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 202, 
+"3330to60": 2.6, 
+"333Handling": 100,
+
+"666TopSpeed": 204, 
+"6660to60": 2.4, 
+"666Handling": 103,
+
+"699TopSpeed": 204, 
+"6990to60": 2.3, 
+"699Handling": 108,
+
+"969TopSpeed": 207, 
+"9690to60": 2.4, 
+"969Handling": 108,
+
+"996TopSpeed": 207, 
+"9960to60": 2.3, 
+"996Handling": 103
+}

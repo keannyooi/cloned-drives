@@ -6,10 +6,10 @@
     "country": "DE",
     "topSpeed": 181,
     "0to60": 3.9,
-    "handling": 92,
+    "handling": 89,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [],
+    "tags": ["Supercar"],
     "isPrize": false,
 	
     "weight": 1555,
@@ -20,30 +20,30 @@
     "abs": true,
     "enginePos": "Rear",
     "fuelType": "Petrol",
-    "mra": 82.97,
-    "ola": 71.79,
+    "mra": 80.88,
+    "ola": 77.77,
     "description": "None.",
-    "card": "https://cdn.discordapp.com/attachments/819199720249360384/983394584711282788/911Carrera4.png",
-	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1017087284253831319/992Carrera4.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1022196027165520033/992carrera4.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1022482046234398791/992CArrera4.png",
     "creator": "Bnuuy",
 
 "333TopSpeed": 184, 
 "3330to60": 3.7, 
-"333Handling": 95,
+"333Handling": 92,
 
 "666TopSpeed": 187, 
 "6660to60": 3.5, 
-"666Handling": 98,
+"666Handling": 95,
 
 "699TopSpeed": 187, 
 "6990to60": 3.3, 
-"699Handling": 102,
+"699Handling": 99,
 
 "969TopSpeed": 190, 
 "9690to60": 3.5, 
-"969Handling": 102,
+"969Handling": 99,
 
 "996TopSpeed": 190, 
 "9960to60": 3.3, 
-"996Handling": 98
+"996Handling": 95
 }

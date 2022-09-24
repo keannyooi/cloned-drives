@@ -1,0 +1,49 @@
+{
+    "rq": 81,
+    "make": "Porsche",
+    "model": "911 Carrera 4S Cabriolet",
+    "modelYear": 2019,
+    "country": "DE",
+    "topSpeed": 189,
+    "0to60": 3.6,
+    "handling": 89,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Supercar"],
+    "isPrize": false,
+	
+    "weight": 1630,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 80,
+    "ola": 82.61,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1022200708914749451/992carrera4Scab.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1022480109279641670/992Carrera4SCab.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 192, 
+"3330to60": 3.4, 
+"333Handling": 92,
+
+"666TopSpeed": 195, 
+"6660to60": 3.2, 
+"666Handling": 95,
+
+"699TopSpeed": 195, 
+"6990to60": 3.1, 
+"699Handling": 99,
+
+"969TopSpeed": 197, 
+"9690to60": 3.2, 
+"969Handling": 99,
+
+"996TopSpeed": 197, 
+"9960to60": 3.1, 
+"996Handling": 95
+}
