@@ -5,7 +5,7 @@
     "modelYear": 2021,
     "country": "US",
     "topSpeed": 114,
-    "0to60": 5,
+    "0to60": 5.0,
     "handling": 77,
     "driveType": "4WD",
     "tyreType": "Standard",
@@ -24,7 +24,7 @@
     "fuelType": "Electric",
     "mra": 58.82,
     "ola": 76,
-    "description": "No, this is not a Mustang but behind that name it lived up to the expectations from the crowd. Card by Spence",
+    "description": "No, this is not a Mustang but behind that name it lived up to the expectations from the crowd.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819566629242404894/SpenceMachE.png",
     "333TopSpeed": 119,
     "3330to60": 4.8,
@@ -41,6 +41,6 @@
     "699TopSpeed": 123,
     "6990to60": 4.3,
     "699Handling": 85,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1017733371943718933/Ford_Mustang_Mach-E_4X.png",
+    "creator": "Spence"
 }

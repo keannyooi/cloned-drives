@@ -16,14 +16,14 @@
     "weight": 2610,
     "gc": "High",
     "seatCount": 6,
-    "bodyStyle": "Pick-Up",
+    "bodyStyle": "Pickup",
     "tcs": true,
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 57.14,
     "ola": 80,
-    "description": "A petrol Titan with a physical impediment of not having any power sent to the front wheels. Card by Spence.",
+    "description": "A petrol Titan with a physical impediment of not having any power sent to the front wheels.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/970056552486674562/IMG_4927.png",
     "333TopSpeed": 120,
     "3330to60": 6.1,
@@ -40,6 +40,6 @@
     "699TopSpeed": 124,
     "6990to60": 5.4,
     "699Handling": 72,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1017504641325465671/Nissan_Titan_SL_Crew_Cab_4x2.png",
+    "creator": "Spence"
 }

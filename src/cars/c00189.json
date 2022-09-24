@@ -5,7 +5,7 @@
     "modelYear": 2018,
     "country": "DE",
     "topSpeed": 155,
-    "0to60": 3,
+    "0to60": 3.0,
     "handling": 90,
     "driveType": "4WD",
     "tyreType": "Performance",
@@ -24,7 +24,7 @@
     "fuelType": "Petrol",
     "mra": 78.95,
     "ola": 73.33,
-    "description": "Was one of the most unstopable city streets cars, until it was stopped. Card by DodgeDemon",
+    "description": "Was one of the most unstopable city streets cars, until it was stopped.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819419372363186236/2018_BMW_M5_Compe.png",
     "333TopSpeed": 158,
     "3330to60": 2.9,
@@ -41,6 +41,6 @@
     "699TopSpeed": 162,
     "6990to60": 2.6,
     "699Handling": 100,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1017877389847568424/BMW_M5_Competition_2018.png",
+    "creator": "DodgeDemon"
 }

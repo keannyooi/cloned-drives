@@ -5,7 +5,7 @@
     "modelYear": 2015,
     "country": "DE",
     "topSpeed": 193,
-    "0to60": 3,
+    "0to60": 3.0,
     "handling": 92,
     "driveType": "RWD",
     "tyreType": "Performance",
@@ -24,7 +24,7 @@
     "fuelType": "Petrol",
     "mra": 78.95,
     "ola": 80,
-    "description": "The ultimate track version of the 911 2015 throwback. Card by Macan",
+    "description": "The ultimate track version of the 911 2015 throwback.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/826132952487428196/porskigt3rs15.png",
     "333TopSpeed": 197,
     "3330to60": 2.8,
@@ -41,6 +41,6 @@
     "699TopSpeed": 198,
     "6990to60": 2.6,
     "699Handling": 102,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1017435971446390784/Porsche_911_GT3_RS_2015.png",
+    "creator": "Macan"
 }
