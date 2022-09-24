@@ -1,0 +1,49 @@
+{
+    "rq": 48,
+    "make": ["Racing Solutions", "Chevrolet"],
+    "model": "SSR Z500",
+    "modelYear": 2004,
+    "country": "US",
+    "topSpeed": 120,
+    "0to60": 5.9,
+    "handling": 79,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner"],
+    "isPrize": false,
+	
+    "weight": 2165,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": ["Convertible", "Pickup"],
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 70.24,
+    "ola": 91.53,
+    "description": "A Corvette-powered weird pickup truck-hot rod thingy. Now this is peak America.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1012901186938089482/racing_soltions_ssr_z500.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1012903859208863844/rsi_ssr.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 124, 
+"3330to60": 5.6, 
+"333Handling": 82,
+
+"666TopSpeed": 129, 
+"6660to60": 5.3, 
+"666Handling": 84,
+
+"699TopSpeed": 129, 
+"6990to60": 5.0, 
+"699Handling": 88,
+
+"969TopSpeed": 133, 
+"9690to60": 5.3, 
+"969Handling": 88,
+
+"996TopSpeed": 133, 
+"9960to60": 5.0, 
+"996Handling": 84
+}

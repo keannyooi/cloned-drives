@@ -1,0 +1,50 @@
+{
+    "rq": 15,
+    "make": "Citroen",
+    "model": "DS-21",
+    "modelYear": 1966,
+    "country": "FR",
+    "topSpeed": 107,
+    "0to60": 14.8,
+    "handling": 61,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1329,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 37.85,
+    "ola": 68.92,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/914906741060296705/ds21.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1023196308149915668/DS211966.png",
+    "creator": "Aqo",
+
+    "333TopSpeed": 112,
+    "3330to60": 14.1,
+    "333Handling": 63,
+
+    "666TopSpeed": 117,
+    "6660to60": 13.3,
+    "666Handling": 65,
+
+    "996TopSpeed": 122,
+    "9960to60": 12.6,
+    "996Handling": 65,
+
+    "969TopSpeed": 122,
+    "9690to60": 13.3,
+    "969Handling": 68,
+
+    "699TopSpeed": 117,
+    "6990to60": 12.6,
+    "699Handling": 68
+}

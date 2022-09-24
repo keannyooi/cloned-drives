@@ -1,0 +1,49 @@
+{
+    "rq": 7,
+    "make": ["Zagato", "Hillman"],
+    "model": "Zimp",
+    "modelYear": 1964,
+    "country": "IT",
+    "topSpeed": 87,
+    "0to60": 16.3,
+    "handling": 65,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Unique"],
+    "isPrize": false,
+	
+    "weight": 630,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 14.22,
+    "ola": 52.76,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1023238967241490472/ZIMP.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1023239716025405490/ZagZimp.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 93, 
+"3330to60": 15.5, 
+"333Handling": 67,
+
+"666TopSpeed": 99, 
+"6660to60": 14.7, 
+"666Handling": 69,
+
+"699TopSpeed": 99, 
+"6990to60": 13.9, 
+"699Handling": 72,
+
+"969TopSpeed": 105, 
+"9690to60": 14.7, 
+"969Handling": 72,
+
+"996TopSpeed": 105, 
+"9960to60": 13.9, 
+"996Handling": 69
+}

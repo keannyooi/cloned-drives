@@ -1,0 +1,49 @@
+{
+    "rq": 49,
+    "make": ["Pettit Racing", "Mazda"],
+    "model": "RX-8",
+    "modelYear": 2004,
+    "country": "US",
+    "topSpeed": 158,
+    "0to60": 5.7,
+    "handling": 80,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner"],
+    "isPrize": false,
+	
+    "weight": 1360,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 60.64,
+    "ola": 70.18,
+    "description": "Worst quality image in cd.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1012901137172676668/pettit_racing_rx-8.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1012903879119212625/pettit_terrible.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 161, 
+"3330to60": 5.4, 
+"333Handling": 83,
+
+"666TopSpeed": 165, 
+"6660to60": 5.1, 
+"666Handling": 85,
+
+"699TopSpeed": 165, 
+"6990to60": 4.8, 
+"699Handling": 89,
+
+"969TopSpeed": 168, 
+"9690to60": 5.1, 
+"969Handling": 89,
+
+"996TopSpeed": 168, 
+"9960to60": 4.8, 
+"996Handling": 85
+}

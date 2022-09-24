@@ -1,0 +1,49 @@
+{
+    "rq": 1,
+    "make": "Peugeot",
+    "model": "Type 54",
+    "modelYear": 1903,
+    "country": "FR",
+    "topSpeed": 25,
+    "0to60": 99.9,
+    "handling": 39,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Innovative"],
+    "isPrize": false,
+	
+    "weight": 410,
+    "gc": "High",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 0,
+    "ola": 65,
+    "description": "First Peugeot with a driveshaft.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1023238755974402130/peugeottype54.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1023239630096707675/pugType54.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 34, 
+"3330to60": 99.9, 
+"333Handling": 40,
+
+"666TopSpeed": 42, 
+"6660to60": 99.9, 
+"666Handling": 42,
+
+"699TopSpeed": 42, 
+"6990to60": 99.9, 
+"699Handling": 43,
+
+"969TopSpeed": 51, 
+"9690to60": 99.9, 
+"969Handling": 43,
+
+"996TopSpeed": 51, 
+"9960to60": 99.9, 
+"996Handling": 42
+}

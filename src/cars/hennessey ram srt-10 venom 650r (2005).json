@@ -1,0 +1,49 @@
+{
+    "rq": 60,
+    "make": ["Hennessey", "Dodge"],
+    "model": "Ram SRT-10 Venom 650R",
+    "modelYear": 2005,
+    "country": "US",
+    "topSpeed": 166,
+    "0to60": 4.5,
+    "handling": 72,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner", "Sleeper"],
+    "isPrize": false,
+	
+    "weight": 2518,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Pickup",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 86.87,
+    "ola": 86.67,
+    "description": "Less crazy than the 800TT but still bloody quick like the Viper that shares the same name.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1012900936773021787/hennessey_ram_srt-10_venom_650r.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1012903631487516803/hennessey_ram_slower.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 169, 
+"3330to60": 4.3, 
+"333Handling": 74,
+
+"666TopSpeed": 172, 
+"6660to60": 4.0, 
+"666Handling": 77,
+
+"699TopSpeed": 172, 
+"6990to60": 3.8, 
+"699Handling": 80,
+
+"969TopSpeed": 175, 
+"9690to60": 4.0, 
+"969Handling": 80,
+
+"996TopSpeed": 175, 
+"9960to60": 3.8, 
+"996Handling": 77
+}

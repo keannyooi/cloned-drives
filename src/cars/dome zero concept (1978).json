@@ -1,0 +1,49 @@
+{
+    "rq": 35,
+    "make": "Dome",
+    "model": "Zero Concept",
+    "modelYear": 1978,
+    "country": "JP",
+    "topSpeed": 137,
+    "0to60": 6.8,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Concept", "Unique"],
+    "isPrize": false,
+	
+    "weight": 920,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 70.83,
+    "ola": 64.7,
+    "description": "The looks of a Supercar, but performance of a first gen beetle smh.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1023238829156601968/domezeroconcept.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1023239661772091543/DomeZeroConcept.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 141, 
+"3330to60": 6.5, 
+"333Handling": 77,
+
+"666TopSpeed": 145, 
+"6660to60": 6.1, 
+"666Handling": 80,
+
+"699TopSpeed": 145, 
+"6990to60": 5.8, 
+"699Handling": 83,
+
+"969TopSpeed": 148, 
+"9690to60": 6.1, 
+"969Handling": 83,
+
+"996TopSpeed": 148, 
+"9960to60": 5.8, 
+"996Handling": 80
+}

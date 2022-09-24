@@ -1,0 +1,49 @@
+{
+    "rq": 50,
+    "make": ["Paxton", "Plymouth"],
+    "model": "Prowler Supercharged",
+    "modelYear": 2000,
+    "country": "US",
+    "topSpeed": 145,
+    "0to60": 5.1,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner"],
+    "isPrize": false,
+	
+    "weight": 1200,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 58.62,
+    "ola": 81.96,
+    "description": "Weird headlamps aside, this Prowler's punch match its promise of a factory-made hot rod.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1012902704516960266/paxton_prowler.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1012903796449484810/paxton_prowler.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 149, 
+"3330to60": 4.8, 
+"333Handling": 80,
+
+"666TopSpeed": 152, 
+"6660to60": 4.6, 
+"666Handling": 82,
+
+"699TopSpeed": 152, 
+"6990to60": 4.3, 
+"699Handling": 85,
+
+"969TopSpeed": 156, 
+"9690to60": 4.6, 
+"969Handling": 85,
+
+"996TopSpeed": 156, 
+"9960to60": 4.3, 
+"996Handling": 82
+}
