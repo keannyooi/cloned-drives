@@ -5,7 +5,7 @@
     "modelYear": 1995,
     "country": "JP",
     "topSpeed": 155,
-    "0to60": 5,
+    "0to60": 5.0,
     "handling": 85,
     "driveType": "4WD",
     "tyreType": "Performance",
@@ -41,6 +41,6 @@
     "699TopSpeed": 162,
     "6990to60": 4.3,
     "699Handling": 94,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1006845738027864064/skyline_gt-r_r33.jpg",
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1023222365175435344/R33.png",
     "creator": "Havvy"
 }

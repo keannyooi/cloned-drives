@@ -5,7 +5,7 @@
     "modelYear": 1994,
     "country": "GB",
     "topSpeed": 204,
-    "0to60": 3,
+    "0to60": 3.0,
     "handling": 92,
     "driveType": "RWD",
     "tyreType": "Slick",
@@ -26,7 +26,7 @@
     "fuelType": "Petrol",
     "mra": 115.38,
     "ola": 80,
-    "description": "They took the V8 from Senna's McLaren MP4/8 and shoved it into the back of a van. The blue and white devil was then born, with one superb soundtrack riding along. Card by Based.",
+    "description": "They took the V8 from Senna's McLaren MP4/8 and shoved it into the back of a van. The blue and white devil was then born, with one superb soundtrack riding along.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/942140010986102794/Ford_Transit_SuperVan_3_Fast.png",
     "333TopSpeed": 207,
     "3330to60": 2.9,
@@ -43,6 +43,6 @@
     "699TopSpeed": 209,
     "6990to60": 2.6,
     "699Handling": 102,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1017340011449954304/Ford_Transit_Supervan_3_1994.png",
+    "creator": "Based"
 }

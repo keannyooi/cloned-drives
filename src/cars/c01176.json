@@ -10,7 +10,7 @@
     "driveType": "RWD",
     "tyreType": "Performance",
     "tags": [
-        "Tuner"
+        "Tuner", "RestoMod"
     ],
     "isPrize": false,
     "weight": 1245,
@@ -23,23 +23,23 @@
     "fuelType": "Petrol",
     "mra": 67.35,
     "ola": 66.67,
-    "description": "How do you improve perfection? Give it to Singer. Card by DodgeDemon.",
+    "description": "How do you improve perfection? Give it to Singer.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819418245240193024/2010_Singer_911.png",
     "333TopSpeed": 179,
     "3330to60": 3.1,
     "333Handling": 87,
     "666TopSpeed": 182,
-    "6660to60": 3,
+    "6660to60": 3.0,
     "666Handling": 90,
     "996TopSpeed": 185,
     "9960to60": 2.8,
     "996Handling": 90,
     "969TopSpeed": 185,
-    "9690to60": 3,
+    "9690to60": 3.0,
     "969Handling": 93,
     "699TopSpeed": 185,
     "6990to60": 2.8,
     "699Handling": 93,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1017111800556310709/Singer_911.png",
+    "creator": "DodgeDemon"
 }

@@ -5,7 +5,7 @@
     "modelYear": 2000,
     "country": "IT",
     "topSpeed": 208,
-    "0to60": 4,
+    "0to60": 4.0,
     "handling": 88,
     "driveType": "4WD",
     "tyreType": "Performance",
@@ -23,7 +23,7 @@
     "fuelType": "Petrol",
     "mra": 93.02,
     "ola": 90,
-    "description": "The Devil's final year goes off in a blast of 543hp. Card by DodgeDemon.",
+    "description": "The Devil's final year goes off in a blast of 543hp.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819420318703419392/2000_Lamborghni_Diablo_VT_60.png",
     "333TopSpeed": 211,
     "3330to60": 3.8,
@@ -40,6 +40,6 @@
     "699TopSpeed": 213,
     "6990to60": 3.4,
     "699Handling": 98,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1017433336848855101/Lambo_Diablo_VT_6.0.png",
+    "creator": "DodgeDemon"
 }

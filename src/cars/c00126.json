@@ -5,7 +5,7 @@
     "modelYear": 2008,
     "country": "DE",
     "topSpeed": 155,
-    "0to60": 5,
+    "0to60": 5.0,
     "handling": 85,
     "driveType": "4WD",
     "tyreType": "Performance",
@@ -21,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 68.03,
     "ola": 72.29,
-    "description": "Tangerine orange fast. Card by Havvy",
+    "description": "Tangerine orange fast.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/824046697482289202/unknown.png",
     "333TopSpeed": 158,
     "3330to60": 4.8,
@@ -38,6 +38,6 @@
     "699TopSpeed": 162,
     "6990to60": 4.3,
     "699Handling": 94,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1017149470338719894/Audi_TTS_Coupe_2008.png",
+    "creator": "Havvy"
 }

@@ -5,7 +5,7 @@
     "modelYear": 2001,
     "country": "GB",
     "topSpeed": 124,
-    "0to60": 6,
+    "0to60": 6.0,
     "handling": 89,
     "driveType": "RWD",
     "tyreType": "Performance",
@@ -24,7 +24,7 @@
     "fuelType": "Petrol",
     "mra": 51.28,
     "ola": 83.33,
-    "description": "A new beginning for the old icon. Hot rq yes i do agree! Card by Tom.",
+    "description": "A new beginning for the old icon. Hot rq yes i do agree!",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/851548385299398736/Lotus_Elise_2001.png",
     "333TopSpeed": 128,
     "3330to60": 5.7,
@@ -41,6 +41,6 @@
     "699TopSpeed": 132,
     "6990to60": 5.1,
     "699Handling": 99,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1017385048934199317/Lotus_Elise_2001.png",
+    "creator": "Tom"
 }

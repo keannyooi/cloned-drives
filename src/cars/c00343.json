@@ -25,10 +25,10 @@
     "fuelType": "Petrol",
     "mra": 35.59,
     "ola": 68.57,
-    "description": "1.21 gigawatts and 88mph required to time travel. Card by Olimato",
+    "description": "1.21 gigawatts and 88mph required to time travel.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/826018070953852938/Delorean.png",
     "333TopSpeed": 114,
-    "3330to60": 10,
+    "3330to60": 10.0,
     "333Handling": 71,
     "666TopSpeed": 119,
     "6660to60": 9.5,
@@ -42,6 +42,6 @@
     "699TopSpeed": 119,
     "6990to60": 8.9,
     "699Handling": 77,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1017173411073622066/DMC_DeLorean.png",
+    "creator": "Olimato"
 }

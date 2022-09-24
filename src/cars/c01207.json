@@ -5,7 +5,7 @@
     "modelYear": 2009,
     "country": "JP",
     "topSpeed": 140,
-    "0to60": 5,
+    "0to60": 5.0,
     "handling": 79,
     "driveType": "4WD",
     "tyreType": "Performance",
@@ -23,7 +23,7 @@
     "fuelType": "Petrol",
     "mra": 63.29,
     "ola": 76,
-    "description": "2008's WRX was so slow that Subaru buffed the WRX for the next year, so much so that even at one point faster than the STI. Card by spence",
+    "description": "2008's WRX was so slow that Subaru buffed the WRX for the next year, so much so that even at one point faster than the STI.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/829140784002629632/image0.png",
     "333TopSpeed": 144,
     "3330to60": 4.8,
@@ -40,6 +40,6 @@
     "699TopSpeed": 147,
     "6990to60": 4.3,
     "699Handling": 88,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1017146809254154350/Subaru_Impreza_WRX_Sedan.png",
+    "creator": "Spence"
 }

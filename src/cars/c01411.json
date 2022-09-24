@@ -5,7 +5,7 @@
     "modelYear": 1950,
     "country": "DE",
     "topSpeed": 60,
-    "0to60": 75,
+    "0to60": 75.0,
     "handling": 57,
     "driveType": "RWD",
     "tyreType": "Standard",
@@ -23,7 +23,7 @@
     "fuelType": "Petrol",
     "mra": 0,
     "ola": 45.7,
-    "description": "Hippie van. Card by Andu",
+    "description": "Hippie van.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/822058899565576222/T157.png",
     "333TopSpeed": 69,
     "3330to60": 71.3,
@@ -40,6 +40,6 @@
     "699TopSpeed": 77,
     "6990to60": 63.8,
     "699Handling": 63,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1017329695517323325/Vw_Type_2_T1.png",
+    "creator": "Andu"
 }
