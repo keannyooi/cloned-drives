@@ -9,7 +9,7 @@
     "handling": 79,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Tuner"],
+    "tags": ["Tuner", "Unique"],
     "isPrize": false,
 	
     "weight": 1471,
@@ -27,23 +27,23 @@
 	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011589799037116447/gdt_speedster.jpg",
     "creator": "Keanny",
 
-"333TopSpeed": 173, 
-"3330to60": 5.4, 
-"333Handling": 82,
+    "333TopSpeed": 173, 
+    "3330to60": 5.4, 
+    "333Handling": 82,
 
-"666TopSpeed": 176, 
-"6660to60": 5.1, 
-"666Handling": 84,
+    "666TopSpeed": 176, 
+    "6660to60": 5.1, 
+    "666Handling": 84,
 
-"699TopSpeed": 176, 
-"6990to60": 4.8, 
-"699Handling": 88,
+    "699TopSpeed": 176, 
+    "6990to60": 4.8, 
+    "699Handling": 88,
 
-"969TopSpeed": 179, 
-"9690to60": 5.1, 
-"969Handling": 88,
+    "969TopSpeed": 179, 
+    "9690to60": 5.1, 
+    "969Handling": 88,
 
-"996TopSpeed": 179, 
-"9960to60": 4.8, 
-"996Handling": 84
+    "996TopSpeed": 179, 
+    "9960to60": 4.8, 
+    "996Handling": 84
 }

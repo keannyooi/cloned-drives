@@ -36,7 +36,7 @@ async function regenBM() {
                 stock = 50;
             }
         }
-        else if (randNum < 66) {
+        else if (randNum < 60) {
             rqStart = i < 4 ? 20 : 50;
             rqEnd = i < 4 ? 29 : 64;
             if (i >= 4) {
@@ -48,7 +48,7 @@ async function regenBM() {
                 stock = 40;
             }
         }
-        else if (randNum < 91) {
+        else if (randNum < 85) {
             rqStart = i < 4 ? 30 : 50;
             rqEnd = i < 4 ? 39 : 64;
             if (i >= 4) {
@@ -60,7 +60,7 @@ async function regenBM() {
                 stock = 30;
             }
         }
-        else if (randNum < 98) {
+        else if (randNum < 95) {
             rqStart = i < 4 ? 40 : 65;
             rqEnd = i < 4 ? 49 : 79;
             if (i >= 4) {
