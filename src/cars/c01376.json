@@ -1,5 +1,5 @@
 {
-    "rq": 42,
+    "rq": 38,
     "make": "Volkswagen",
     "model": "ID.4 1st",
     "modelYear": 2021,
@@ -14,7 +14,7 @@
     ],
     "isPrize": false,
     "weight": 2097,
-    "gc": "High",
+    "gc": "Medium",
     "seatCount": 5,
     "bodyStyle": "SUV",
     "tcs": true,
@@ -24,7 +24,7 @@
     "mra": 41.09,
     "ola": 68.27,
     "description": "The electric car for the people. Apparently. Card by Andu",
-    "card": "https://cdn.discordapp.com/attachments/819199720249360384/846803629209419776/ID4.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1025344899316457493/ID4Updated.png",
     "333TopSpeed": 105,
     "3330to60": 7.2,
     "333Handling": 79,
@@ -40,6 +40,6 @@
     "699TopSpeed": 110,
     "6990to60": 6.5,
     "699Handling": 84,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1025345519293300756/ID4.png",
     "creator": ""
 }
