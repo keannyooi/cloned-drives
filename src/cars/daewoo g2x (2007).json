@@ -1,0 +1,49 @@
+{
+    "rq": 49,
+    "make": "Daewoo",
+    "model": "G2X",
+    "modelYear": 2007,
+    "country": "KR",
+    "topSpeed": 142,
+    "0to60": 5.4,
+    "handling": 78,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Rest of The World"],
+    "isPrize": false,
+    
+    "weight": 1343,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 58.06,
+    "ola": 73.33,
+    "description": "Saturn Sky rebadged for the asian market. Just as simple as it sounds",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1024355967858638918/G2X3.png",
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1024356054055788624/Daewoo_G2X.png",
+    "creator": "Biszkoptowiec",
+
+    "333TopSpeed": 146,
+    "3330to60": 5.1,
+    "333Handling": 81,
+
+    "666TopSpeed": 149,
+    "6660to60": 4.9,
+    "666Handling": 83,
+
+    "996TopSpeed": 153,
+    "9960to60": 4.6,
+    "996Handling": 83,
+
+    "969TopSpeed": 153,
+    "9690to60": 4.9,
+    "969Handling": 87,
+
+    "699TopSpeed": 149,
+    "6990to60": 4.6,
+    "699Handling": 87
+}

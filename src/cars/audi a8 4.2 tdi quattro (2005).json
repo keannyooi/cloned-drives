@@ -1,0 +1,50 @@
+{
+    "rq": 56,
+    "make": "Audi",
+    "model": "A8 4.2 TDI quattro",
+    "modelYear": 2005,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 6.2,
+    "handling": 73,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1945,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 76.54,
+    "ola": 70.96,
+    "description": "In 2005 4.0 TDI was replaced by this 320 ps twin-turbo 4.2 TDI.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/863060307298353152/B.AudiA842TDIquattro.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1023195679960604682/audi-card1.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 158,
+    "3330to60": 5.9,
+    "333Handling": 75,
+
+    "666TopSpeed": 162,
+    "6660to60": 5.6,
+    "666Handling": 78,
+
+    "996TopSpeed": 165,
+    "9960to60": 5.3,
+    "996Handling": 78,
+
+    "969TopSpeed": 165,
+    "9690to60": 5.6,
+    "969Handling": 81,
+
+    "699TopSpeed": 162,
+    "6990to60": 5.3,
+    "699Handling": 81
+}

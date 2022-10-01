@@ -1,0 +1,50 @@
+{
+    "rq": 65,
+    "make": "Audi",
+    "model": "A8L 6.0 W12 quattro",
+    "modelYear": 2001,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 5.2,
+    "handling": 72,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Innovative", "Sleeper"],
+    "isPrize": false,
+
+    "weight": 1980,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 77.61,
+    "ola": 76.92,
+    "description": "The very first production W12 engined car made out of two narrow-angle 15 degree VR6 engines at an inclined angle of 72 degrees.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/861958090197696572/A.AudiA8L60W12quattro.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1023194094836658296/audi-card1.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 158,
+    "3330to60": 4.9,
+    "333Handling": 75,
+
+    "666TopSpeed": 162,
+    "6660to60": 4.7,
+    "666Handling": 78,
+
+    "996TopSpeed": 165,
+    "9960to60": 4.4,
+    "996Handling": 78,
+
+    "969TopSpeed": 165,
+    "9690to60": 4.7,
+    "969Handling": 81,
+
+    "699TopSpeed": 162,
+    "6990to60": 4.4,
+    "699Handling": 81
+}

@@ -1,0 +1,50 @@
+{
+    "rq": 65,
+    "make": "Audi",
+    "model": "A8L W12 quattro",
+    "modelYear": 2005,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 5.3,
+    "handling": 74,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Sleeper"],
+    "isPrize": false,
+
+    "weight": 2068,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 79.1,
+    "ola": 75.47,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/863859082980098088/A.AudiA8LW12quattro.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1023196068978106409/audi-card1.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 158,
+    "3330to60": 5.0,
+    "333Handling": 76,
+
+    "666TopSpeed": 162,
+    "6660to60": 4.8,
+    "666Handling": 79,
+
+    "996TopSpeed": 165,
+    "9960to60": 4.5,
+    "996Handling": 79,
+
+    "969TopSpeed": 165,
+    "9690to60": 4.8,
+    "969Handling": 82,
+
+    "699TopSpeed": 162,
+    "6990to60": 4.5,
+    "699Handling": 82
+}

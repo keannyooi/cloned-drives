@@ -1,0 +1,49 @@
+{
+    "rq": 72,
+    "make": "Dodge",
+    "model": "Sidewinder Concept",
+    "modelYear": 1997,
+    "country": "US",
+    "topSpeed": 170,
+    "0to60": 3.9,
+    "handling": 86,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Unique", "Concept", "Oddity"],
+    "isPrize": false,
+	
+    "weight": 1225,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": ["Convertible", "Pickup"],
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 90.67,
+    "ola": 92.3,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1023335649723551764/sidewinder.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1023336003081089134/Sidewinder.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 173, 
+"3330to60": 3.7, 
+"333Handling": 89,
+
+"666TopSpeed": 176, 
+"6660to60": 3.5, 
+"666Handling": 92,
+
+"699TopSpeed": 176, 
+"6990to60": 3.3, 
+"699Handling": 95,
+
+"969TopSpeed": 179, 
+"9690to60": 3.5, 
+"969Handling": 95,
+
+"996TopSpeed": 179, 
+"9960to60": 3.3, 
+"996Handling": 92
+}

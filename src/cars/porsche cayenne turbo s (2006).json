@@ -1,0 +1,49 @@
+{
+    "rq": 79,
+    "make": "Porsche",
+    "model": "Cayenne Turbo S",
+    "modelYear": 2006,
+    "country": "DE",
+    "topSpeed": 168,
+    "0to60": 5.0,
+    "handling": 78,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Extreme Juggernauts"],
+    "isPrize": false,
+	
+    "weight": 2369,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 73.53,
+    "ola": 68,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1023335404499378289/cayenneTurboS06.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1023335515526803476/CAyenneGen1TurboS06.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 171, 
+"3330to60": 4.8, 
+"333Handling": 81,
+
+"666TopSpeed": 174, 
+"6660to60": 4.5, 
+"666Handling": 83,
+
+"699TopSpeed": 174, 
+"6990to60": 4.3, 
+"699Handling": 87,
+
+"969TopSpeed": 177, 
+"9690to60": 4.5, 
+"969Handling": 87,
+
+"996TopSpeed": 177, 
+"9960to60": 4.3, 
+"996Handling": 83
+}

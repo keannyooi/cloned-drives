@@ -1,0 +1,49 @@
+{
+    "rq": 49,
+    "make": "Porsche",
+    "model": "Cayenne",
+    "modelYear": 2004,
+    "country": "DE",
+    "topSpeed": 133,
+    "0to60": 8.8,
+    "handling": 74,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Innovative"],
+    "isPrize": false,
+	
+    "weight": 2255,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 50.57,
+    "ola": 77.27,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1023335303756390510/cayenne.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1023335466549915668/CayenneGen1.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 137, 
+"3330to60": 8.4, 
+"333Handling": 76,
+
+"666TopSpeed": 141, 
+"6660to60": 7.9, 
+"666Handling": 79,
+
+"699TopSpeed": 141, 
+"6990to60": 7.5, 
+"699Handling": 82,
+
+"969TopSpeed": 145, 
+"9690to60": 7.9, 
+"969Handling": 82,
+
+"996TopSpeed": 145, 
+"9960to60": 7.5, 
+"996Handling": 79
+}

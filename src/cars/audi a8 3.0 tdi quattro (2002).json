@@ -1,0 +1,50 @@
+{
+    "rq": 44,
+    "make": "Audi",
+    "model": "A8 3.0 TDI quattro",
+    "modelYear": 2002,
+    "country": "DE",
+    "topSpeed": 151,
+    "0to60": 7.7,
+    "handling": 71,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1830,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 65.81,
+    "ola": 72.73,
+    "description": "The most popular of them all.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/863060208187605002/C.AudiA830TDIquattro.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1023194981441208330/audi-card1.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 154,
+    "3330to60": 7.3,
+    "333Handling": 73,
+
+    "666TopSpeed": 158,
+    "6660to60": 6.9,
+    "666Handling": 76,
+
+    "996TopSpeed": 161,
+    "9960to60": 6.5,
+    "996Handling": 76,
+
+    "969TopSpeed": 161,
+    "9690to60": 6.9,
+    "969Handling": 79,
+
+    "699TopSpeed": 158,
+    "6990to60": 6.5,
+    "699Handling": 79
+}

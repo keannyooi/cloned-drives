@@ -1,0 +1,50 @@
+{
+    "rq": 41,
+    "make": "Audi",
+    "model": "A8 2.8 FSI",
+    "modelYear": 2007,
+    "country": "DE",
+    "topSpeed": 148,
+    "0to60": 7.6,
+    "handling": 72,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1690,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 60.31,
+    "ola": 76.31,
+    "description": "Seemingly useless engine-powertrain combination is quite appealing to fleet managers of big firms.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/863060181792063508/C.AudiA828FSI.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1023194588300709979/audi-card1.png",
+    "creator": "Connor",
+	
+    "333TopSpeed": 152,
+    "3330to60": 7.2,
+    "333Handling": 74,
+
+    "666TopSpeed": 155,
+    "6660to60": 6.8,
+    "666Handling": 77,
+
+    "996TopSpeed": 159,
+    "9960to60": 6.5,
+    "996Handling": 77,
+
+    "969TopSpeed": 159,
+    "9690to60": 6.8,
+    "969Handling": 80,
+
+    "699TopSpeed": 155,
+    "6990to60": 6.5,
+    "699Handling": 80
+}

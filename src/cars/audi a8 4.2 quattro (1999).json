@@ -1,0 +1,50 @@
+{
+    "rq": 49,
+    "make": "Audi",
+    "model": "A8 4.2 quattro",
+    "modelYear": 1999,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 6.9,
+    "handling": 72,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1825,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Body Type",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 63.89,
+    "ola": 75.36,
+    "description": "Audi's flagship made on the so called Audi Space Frame made of aluminum which made the A8 much lighter than its competitors.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/861956906821746688/C.AudiA842quattro.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1023193679659286548/audi-card1.png",
+    "creator": "Connor",
+	
+    "333TopSpeed": 158,
+    "3330to60": 6.6,
+    "333Handling": 74,
+
+    "666TopSpeed": 162,
+    "6660to60": 6.2,
+    "666Handling": 77,
+
+    "996TopSpeed": 165,
+    "9960to60": 5.9,
+    "996Handling": 77,
+
+    "969TopSpeed": 165,
+    "9690to60": 6.2,
+    "969Handling": 80,
+
+    "699TopSpeed": 162,
+    "6990to60": 5.9,
+    "699Handling": 80
+}

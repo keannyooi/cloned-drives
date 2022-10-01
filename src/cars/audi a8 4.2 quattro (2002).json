@@ -1,0 +1,50 @@
+{
+    "rq": 53,
+    "make": "Audi",
+    "model": "A8 4.2 quattro",
+    "modelYear": 2002,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 6.5,
+    "handling": 73,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1855,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 68.42,
+    "ola": 70.76,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/863060277256126504/B.AudiA842quattro.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1023195338942713897/audi-card1.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 158,
+    "3330to60": 6.2,
+    "333Handling": 75,
+
+    "666TopSpeed": 162,
+    "6660to60": 5.9,
+    "666Handling": 78,
+
+    "996TopSpeed": 165,
+    "9960to60": 5.5,
+    "996Handling": 78,
+
+    "969TopSpeed": 159,
+    "9690to60": 5.9,
+    "969Handling": 81,
+
+    "699TopSpeed": 162,
+    "6990to60": 5.5,
+    "699Handling": 81
+}
