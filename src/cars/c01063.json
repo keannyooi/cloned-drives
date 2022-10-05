@@ -5,7 +5,7 @@
     "modelYear": 1998,
     "country": "DE",
     "topSpeed": 177,
-    "0to60": 5,
+    "0to60": 5.0,
     "handling": 87,
     "driveType": "4WD",
     "tyreType": "Performance",
@@ -21,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 69.07,
     "ola": 79.6,
-    "description": "He zoomin. Card by Havvy",
+    "description": "He zoomin.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/836355886754562058/Porsche911Carrera4996.png",
     "333TopSpeed": 180,
     "3330to60": 4.8,
@@ -38,6 +38,6 @@
     "699TopSpeed": 183,
     "6990to60": 4.3,
     "699Handling": 97,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1018088703664607283/Porsche_911_Carrera_4_1998.png",
+    "creator": "Havvy"
 }
