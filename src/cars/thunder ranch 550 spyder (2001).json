@@ -1,0 +1,49 @@
+{
+    "rq": 46,
+    "make": ["Thunder Ranch", "Porsche"],
+    "model": "550 Spyder",
+    "modelYear": 2001,
+    "country": "US",
+    "topSpeed": 120,
+    "0to60": 5.5,
+    "handling": 76,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["RestoMod", "Tuner"],
+    "isPrize": false,
+	
+    "weight": 590,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 50.45,
+    "ola": 65.45,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1023335906024882276/Thunder550.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1023336117623332984/Thunder550.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 124, 
+"3330to60": 5.2, 
+"333Handling": 79,
+
+"666TopSpeed": 129, 
+"6660to60": 5.0, 
+"666Handling": 81,
+
+"699TopSpeed": 129, 
+"6990to60": 4.7, 
+"699Handling": 84,
+
+"969TopSpeed": 133, 
+"9690to60": 5.0, 
+"969Handling": 84,
+
+"996TopSpeed": 133, 
+"9960to60": 4.7, 
+"996Handling": 81
+}

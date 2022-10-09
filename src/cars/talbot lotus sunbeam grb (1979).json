@@ -1,0 +1,49 @@
+{
+    "rq": 76,
+    "make": ["Talbot", "Lotus", "Sunbeam"],
+    "model": "Lotus Sunbeam Gr.B",
+    "modelYear": 1979,
+    "country": "GB",
+    "topSpeed": 117,
+    "0to60": 4.7,
+    "handling": 72,
+    "driveType": "RWD",
+    "tyreType": "Off-Road",
+    "tags": ["Motorsport", "Unqiue"],
+    "isPrize": false,
+	
+    "weight": 1000,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 70.14,
+    "ola": 80.85,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1028644400168968232/rallietalbot.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1028644948477747260/RallyTalbot.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 121, 
+"3330to60": 4.5, 
+"333Handling": 74,
+
+"666TopSpeed": 126, 
+"6660to60": 4.2, 
+"666Handling": 77,
+
+"699TopSpeed": 126, 
+"6990to60": 4.0, 
+"699Handling": 80,
+
+"969TopSpeed": 130, 
+"9690to60": 4.2, 
+"969Handling": 80,
+
+"996TopSpeed": 130, 
+"9960to60": 4.0, 
+"996Handling": 77
+}

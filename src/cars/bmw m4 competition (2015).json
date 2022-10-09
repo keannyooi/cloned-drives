@@ -1,0 +1,49 @@
+{
+    "rq": 72,
+    "make": "BMW",
+    "model": "M4 Competition",
+    "modelYear": 2015,
+    "country": "DE",
+    "topSpeed": 163,
+    "0to60": 4.0,
+    "handling": 89,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+	
+    "weight": 1540,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 88.89,
+    "ola": 90,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1028644663852269638/m4comp.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1028645089616072834/M4Competition.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 166, 
+"3330to60": 3.8, 
+"333Handling": 92,
+
+"666TopSpeed": 169, 
+"6660to60": 3.6, 
+"666Handling": 95,
+
+"699TopSpeed": 169, 
+"6990to60": 3.4, 
+"699Handling": 99,
+
+"969TopSpeed": 173, 
+"9690to60": 3.6, 
+"969Handling": 99,
+
+"996TopSpeed": 173, 
+"9960to60": 3.4, 
+"996Handling": 95
+}

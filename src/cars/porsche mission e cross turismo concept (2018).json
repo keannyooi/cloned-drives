@@ -1,0 +1,49 @@
+{
+    "rq": 103,
+    "make": "Porsche",
+    "model": "Mission E Cross Turismo Concept",
+    "modelYear": 2018,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 3.3,
+    "handling": 85,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["Concept", "Eco-Freindly", "Unique"],
+    "isPrize": true,
+	
+    "weight": 2100,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 57.89,
+    "ola": 66.66,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1026466888785600563/PorkieMissionECTConcept.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1026467058935943240/MissionECT.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 158, 
+"3330to60": 3.1, 
+"333Handling": 88,
+
+"666TopSpeed": 162, 
+"6660to60": 3.0, 
+"666Handling": 91,
+
+"699TopSpeed": 162, 
+"6990to60": 2.8, 
+"699Handling": 94,
+
+"969TopSpeed": 165, 
+"9690to60": 3.0, 
+"969Handling": 94,
+
+"996TopSpeed": 165, 
+"9960to60": 2.8, 
+"996Handling": 91
+}

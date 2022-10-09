@@ -1,0 +1,49 @@
+{
+    "rq": 70,
+    "make": ["Lumma", "BMW"],
+    "model": "CLR 730 RS",
+    "modelYear": 2009,
+    "country": "DE",
+    "topSpeed": 228,
+    "0to60": 4.0,
+    "handling": 81,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner"],
+    "isPrize": true,
+	
+    "weight": 1870,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 93.02,
+    "ola": 85,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1026516866367242390/LummaCLR.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1026517007476207696/LummaCLR730.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 230, 
+"3330to60": 3.8, 
+"333Handling": 84,
+
+"666TopSpeed": 233, 
+"6660to60": 3.6, 
+"666Handling": 86,
+
+"699TopSpeed": 233, 
+"6990to60": 3.4, 
+"699Handling": 90,
+
+"969TopSpeed": 235, 
+"9690to60": 3.6, 
+"969Handling": 90,
+
+"996TopSpeed": 235, 
+"9960to60": 3.4, 
+"996Handling": 86
+}

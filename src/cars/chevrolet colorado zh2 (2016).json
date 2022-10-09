@@ -1,0 +1,49 @@
+{
+    "rq": 29,
+    "make": "Chevrolet",
+    "model": "Colorado ZH2",
+    "modelYear": 2016,
+    "country": "US",
+    "topSpeed": 65,
+    "0to60": 11.9,
+    "handling": 56,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["Concept", "Unique", "Eco-Friendly"],
+    "isPrize": false,
+	
+    "weight": 2739,
+    "gc": "High",
+    "seatCount": 4,
+    "bodyStyle": "Pickup",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hydrogen",
+    "mra": 0,
+    "ola": 65.55,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011581997275152444/visible_confusion.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011588796384550952/colorado_zh2.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 73, 
+"3330to60": 11.3, 
+"333Handling": 58,
+
+"666TopSpeed": 81, 
+"6660to60": 10.7, 
+"666Handling": 60,
+
+"699TopSpeed": 81, 
+"6990to60": 10.1, 
+"699Handling": 62,
+
+"969TopSpeed": 89, 
+"9690to60": 10.7, 
+"969Handling": 62,
+
+"996TopSpeed": 89, 
+"9960to60": 10.1, 
+"996Handling": 60
+}

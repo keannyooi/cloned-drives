@@ -1,0 +1,49 @@
+{
+    "rq": 45,
+    "make": "Mini",
+    "model": "Cooper S 1300 Group 2",
+    "modelYear": 1964,
+    "country": "GB",
+    "topSpeed": 111,
+    "0to60": 8.6,
+    "handling": 67,
+    "driveType": "FWD",
+    "tyreType": "Off-Road",
+    "tags": ["Motorsport", "Style Icon", "Unique"],
+    "isPrize": false,
+	
+    "weight": 635,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 56.58,
+    "ola": 81.4,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1026465187500400701/MiniCooperS1300GrB.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1026465275136188416/minicoopers1300group2.png",
+    "creator": "Havvy",
+
+"333TopSpeed": 116, 
+"3330to60": 8.2, 
+"333Handling": 69,
+
+"666TopSpeed": 120, 
+"6660to60": 7.7, 
+"666Handling": 71,
+
+"699TopSpeed": 120, 
+"6990to60": 7.3, 
+"699Handling": 74,
+
+"969TopSpeed": 125, 
+"9690to60": 7.7, 
+"969Handling": 74,
+
+"996TopSpeed": 125, 
+"9960to60": 7.3, 
+"996Handling": 71
+}

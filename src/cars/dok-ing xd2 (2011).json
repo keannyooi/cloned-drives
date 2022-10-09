@@ -1,0 +1,49 @@
+{
+    "rq": 24,
+    "make": "DOK-ING",
+    "model": "XD2",
+    "modelYear": 2011,
+    "country": "HR",
+    "topSpeed": 81,
+    "0to60": 7.4,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Oddity", "Eco-Friendly"],
+    "isPrize": false,
+	
+    "weight": 1100,
+    "gc": "Low",
+    "seatCount": 3,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 10.11,
+    "ola": 75.68,
+    "description": "Aaaaaaaaaaaaah, the hell is this?",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011579884025413652/dok-ing_xd_the_modest.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011589071350546462/dok-ing_xd2.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 87, 
+"3330to60": 7.0, 
+"333Handling": 75,
+
+"666TopSpeed": 94, 
+"6660to60": 6.7, 
+"666Handling": 78,
+
+"699TopSpeed": 94, 
+"6990to60": 6.3, 
+"699Handling": 81,
+
+"969TopSpeed": 100, 
+"9690to60": 6.7, 
+"969Handling": 81,
+
+"996TopSpeed": 100, 
+"9960to60": 6.3, 
+"996Handling": 78
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 98,
+    "make": "Porsche",
+    "model": "Taycan Turbo Cross Turismo",
+    "modelYear": 2021,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 3.2,
+    "handling": 87,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+	
+    "weight": 2320,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 84.2,
+    "ola": 87.5,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1026466747747942461/TaycanCTTurbo.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1026467004711960626/TaycanCTTurbo.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 158, 
+"3330to60": 3.0, 
+"333Handling": 90,
+
+"666TopSpeed": 162, 
+"6660to60": 2.9, 
+"666Handling": 93,
+
+"699TopSpeed": 162, 
+"6990to60": 2.7, 
+"699Handling": 97,
+
+"969TopSpeed": 165, 
+"9690to60": 2.9, 
+"969Handling": 97,
+
+"996TopSpeed": 165, 
+"9960to60": 2.7, 
+"996Handling": 93
+}

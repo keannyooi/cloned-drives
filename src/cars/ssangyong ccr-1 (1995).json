@@ -1,0 +1,49 @@
+{
+    "rq": 10,
+    "make": "Ssangyong",
+    "model": "CCR-1",
+    "modelYear": 1995,
+    "country": "KR",
+    "topSpeed": 75,
+    "0to60": 15.4,
+    "handling": 63,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Concept", "Eco-Friendly", "Unique"],
+    "isPrize": false,
+	
+    "weight": 1472,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Electric",
+    "mra": 13.33,
+    "ola": 62.34,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011581748846534667/ssangyong_ccr-1.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011588548207583252/ccr-1.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 82, 
+"3330to60": 14.6, 
+"333Handling": 65,
+
+"666TopSpeed": 89, 
+"6660to60": 13.9, 
+"666Handling": 67,
+
+"699TopSpeed": 89, 
+"6990to60": 13.1, 
+"699Handling": 70,
+
+"969TopSpeed": 96, 
+"9690to60": 13.9, 
+"969Handling": 70,
+
+"996TopSpeed": 96, 
+"9960to60": 13.1, 
+"996Handling": 67
+}

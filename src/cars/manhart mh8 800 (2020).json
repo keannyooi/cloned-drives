@@ -1,0 +1,49 @@
+{
+    "rq": 95,
+    "make": ["Manhart", "BMW"],
+    "model": "MH8 800",
+    "modelYear": 2020,
+    "country": "DE",
+    "topSpeed": 196,
+    "0to60": 2.5,
+    "handling": 92,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Tuner"],
+    "isPrize": false,
+	
+    "weight": 1924,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 104.16,
+    "ola": 88,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1026516755193012316/mh8800.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1026516980490059816/MH8800.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 199, 
+"3330to60": 2.4, 
+"333Handling": 95,
+
+"666TopSpeed": 201, 
+"6660to60": 2.2, 
+"666Handling": 98,
+
+"699TopSpeed": 201, 
+"6990to60": 2.1, 
+"699Handling": 102,
+
+"969TopSpeed": 204, 
+"9690to60": 2.2, 
+"969Handling": 102,
+
+"996TopSpeed": 204, 
+"9960to60": 2.1, 
+"996Handling": 98
+}
