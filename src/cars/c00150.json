@@ -21,10 +21,10 @@
     "fuelType": "Diesel",
     "mra": 54.55,
     "ola": 69.05,
-    "description": "BMW's smallest car is now FWD, to a dismay of many BMW fans. Card by Connor",
+    "description": "BMW's smallest car is now FWD, to a dismay of many BMW fans.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/851468535179509803/D.BMW118dSportLine.png",
     "333TopSpeed": 138,
-    "3330to60": 8,
+    "3330to60": 8.0,
     "333Handling": 75,
     "666TopSpeed": 146,
     "6660to60": 7.6,
@@ -38,6 +38,6 @@
     "699TopSpeed": 142,
     "6990to60": 7.1,
     "699Handling": 81,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1020350132513947769/BMW_118d_2019.png",
+    "creator": "Connor"
 }
