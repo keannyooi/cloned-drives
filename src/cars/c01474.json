@@ -5,7 +5,7 @@
     "modelYear": 2021,
     "country": "KR",
     "topSpeed": 155,
-    "0to60": 5,
+    "0to60": 5.0,
     "handling": 88,
     "driveType": "FWD",
     "tyreType": "Performance",
@@ -24,7 +24,7 @@
     "fuelType": "Petrol",
     "mra": 70.21,
     "ola": 84.85,
-    "description": "Card by Spence.",
+    "description": "",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/915072262758092840/94950BF1-754A-4588-A03E-223779C8E609.png",
     "333TopSpeed": 158,
     "3330to60": 4.8,
@@ -41,6 +41,6 @@
     "699TopSpeed": 162,
     "6990to60": 4.3,
     "699Handling": 98,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1018180153488183376/Hyundai_Veloster_N_DCT.png",
+    "creator": "Spence"
 }

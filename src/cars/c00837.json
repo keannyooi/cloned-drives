@@ -8,7 +8,7 @@
     "modelYear": 2004,
     "country": "DE",
     "topSpeed": 155,
-    "0to60": 4,
+    "0to60": 4.0,
     "handling": 83,
     "driveType": "RWD",
     "tyreType": "Performance",
@@ -24,7 +24,7 @@
     "fuelType": "Petrol",
     "mra": 89.89,
     "ola": 105,
-    "description": "A 604-horsepower slap in the face. Card by Havvy.",
+    "description": "A 604-horsepower slap in the face.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/829021168446603284/AMGSL65.png",
     "333TopSpeed": 158,
     "3330to60": 3.8,
@@ -41,6 +41,6 @@
     "699TopSpeed": 162,
     "6990to60": 3.4,
     "699Handling": 92,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1018176923232382976/Mercedes_SL_65_2004.png",
+    "creator": "Havvy"
 }

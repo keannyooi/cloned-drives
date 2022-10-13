@@ -21,10 +21,10 @@
     "fuelType": "Diesel",
     "mra": 67.09,
     "ola": 67.92,
-    "description": "Diesel V12 in a passenger car? Never heard of, but they've done it. Card by Spence.",
+    "description": "Diesel V12 in a passenger car? Never heard of, but they've done it.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819578888161329162/image0.jpg",
     "333TopSpeed": 158,
-    "3330to60": 5,
+    "3330to60": 5.0,
     "333Handling": 79,
     "666TopSpeed": 162,
     "6660to60": 4.8,
@@ -38,6 +38,6 @@
     "699TopSpeed": 162,
     "6990to60": 4.5,
     "699Handling": 84,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1018174153905406052/Audi_Q7_V12_TDI.png",
+    "creator": "Spence"
 }

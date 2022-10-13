@@ -5,7 +5,7 @@
     "modelYear": 1970,
     "country": "US",
     "topSpeed": 143,
-    "0to60": 5,
+    "0to60": 5.0,
     "handling": 86,
     "driveType": "RWD",
     "tyreType": "Performance",
@@ -23,7 +23,7 @@
     "fuelType": "Petrol",
     "mra": 67.29,
     "ola": 83.88,
-    "description": "Ford and Kar Kraft helped both Shelby and Bud Moore prepare race versions of their M-Code Mustang to take on the Penke Camaros. Card by  DodgeDemon",
+    "description": "Ford and Kar Kraft helped both Shelby and Bud Moore prepare race versions of their M-Code Mustang to take on the Penske Camaros.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/823166939865022504/1970_Ford_Mustang_Boss_302_TA.png",
     "333TopSpeed": 147,
     "3330to60": 4.8,
@@ -41,5 +41,5 @@
     "6990to60": 4.3,
     "699Handling": 95,
     "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "creator": "DodgeDemon"
 }

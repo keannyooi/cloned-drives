@@ -24,10 +24,10 @@
     "fuelType": "Hybrid",
     "mra": 75,
     "ola": 76.19,
-    "description": "Card by Tom.",
+    "description": "",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/950083340223004712/Lotus_Exige_270E_Tri-Fuel_Concept_2008.png",
     "333TopSpeed": 161,
-    "3330to60": 4,
+    "3330to60": 4.0,
     "333Handling": 93,
     "666TopSpeed": 165,
     "6660to60": 3.8,
@@ -41,6 +41,6 @@
     "699TopSpeed": 165,
     "6990to60": 3.6,
     "699Handling": 100,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1018175947524026468/Lotus_Exige_270E_Tri-Fuel.png",
+    "creator": "Tom"
 }

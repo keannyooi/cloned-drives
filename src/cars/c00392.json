@@ -23,10 +23,10 @@
     "fuelType": "Petrol",
     "mra": 73.68,
     "ola": 90.48,
-    "description": "The 4-seater Ferrari that is unattractive but still feels and drives like a Ferrari. Card by Spence",
+    "description": "The 4-seater Ferrari that is unattractive but still feels and drives like a Ferrari.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/846822008901468170/image0.png",
     "333TopSpeed": 202,
-    "3330to60": 4,
+    "3330to60": 4.0,
     "333Handling": 85,
     "666TopSpeed": 204,
     "6660to60": 3.8,
@@ -40,6 +40,6 @@
     "699TopSpeed": 204,
     "6990to60": 3.6,
     "699Handling": 91,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1018114200247214091/Ferrari_612_Scaglietti.png",
+    "creator": "Spence"
 }

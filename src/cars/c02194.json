@@ -5,7 +5,7 @@
     "modelYear": 2013,
     "country": "GB",
     "topSpeed": 145,
-    "0to60": 4,
+    "0to60": 4.0,
     "handling": 90,
     "driveType": "RWD",
     "tyreType": "Performance",
@@ -23,7 +23,7 @@
     "fuelType": "Petrol",
     "mra": 75.47,
     "ola": 75,
-    "description": "Card by Tom.",
+    "description": "",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/950083918789496852/Lotus_Exige_S_Roadster_2013.png",
     "333TopSpeed": 149,
     "3330to60": 3.8,
@@ -40,6 +40,6 @@
     "699TopSpeed": 152,
     "6990to60": 3.4,
     "699Handling": 100,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1018176428040257577/Lotus_Exige_S_Roadster.png",
+    "creator": "Tom"
 }

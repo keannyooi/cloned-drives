@@ -26,10 +26,10 @@
     "fuelType": "Electric",
     "mra": 52.7,
     "ola": 65.96,
-    "description": "Infinitis very own halo car - oh wait it's an Evora in the internals. Card by Keanny.",
+    "description": "Infinitis very own halo car - oh wait it's an Evora in the internals.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/868852264582909982/infiniti_emerg-e.png",
     "333TopSpeed": 138,
-    "3330to60": 4,
+    "3330to60": 4.0,
     "333Handling": 90,
     "666TopSpeed": 142,
     "6660to60": 3.8,
@@ -43,6 +43,6 @@
     "699TopSpeed": 142,
     "6990to60": 3.6,
     "699Handling": 97,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1018181953196929144/Infiniti_EMERG-E.png",
+    "creator": "Keanny"
 }

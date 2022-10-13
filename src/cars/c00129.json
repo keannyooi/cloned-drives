@@ -5,7 +5,7 @@
     "modelYear": 2002,
     "country": "JP",
     "topSpeed": 137,
-    "0to60": 5,
+    "0to60": 5.0,
     "handling": 87,
     "driveType": "RWD",
     "tyreType": "Performance",
@@ -24,7 +24,7 @@
     "fuelType": "Petrol",
     "mra": 84.75,
     "ola": 78.18,
-    "description": "Autobacs, Japan's most popular automobile parts store chain decided to make its own car with the help of Tommykaira. Powered by Nissan's SR20VE sending 201hp and 151ft-lb of torque to the rear wheels. Card by Ahmed",
+    "description": "Autobacs, Japan's most popular automobile parts store chain decided to make its own car with the help of Tommykaira. Powered by Nissan's SR20VE sending 201hp and 151ft-lb of torque to the rear wheels.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/819576686604976218/Autobacs-Garaiya-Remake.png",
     "333TopSpeed": 141,
     "3330to60": 4.8,
@@ -41,6 +41,6 @@
     "699TopSpeed": 145,
     "6990to60": 4.3,
     "699Handling": 97,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1018166923701276702/Autobacs_Garaiya.png",
+    "creator": "Ahmed"
 }
