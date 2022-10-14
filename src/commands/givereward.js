@@ -127,7 +127,7 @@ module.exports = {
             }
 
             if (!operationFailed) {
-                await profileModel.updateOne({ userID: message.author.id }, { unclaimedRewards });
+                await profileModel.updateOne({ userID: user.id }, { unclaimedRewards });
                 return successMessage.sendMessage({ currentMessage });
             }
         }
