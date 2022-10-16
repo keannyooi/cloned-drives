@@ -1,0 +1,49 @@
+{
+    "rq": 84,
+    "make": "Ferrari",
+    "model": "458 GT3",
+    "modelYear": 2011,
+    "country": "IT",
+    "topSpeed": 180,
+    "0to60": 3.3,
+    "handling": 96,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport"],
+    "isPrize": false,
+	
+    "weight": 1215,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 100,
+    "ola": 96.67,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1031197507516108840/458GT3.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1031197859497914388/458GT3.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 183, 
+"3330to60": 3.1, 
+"333Handling": 99,
+
+"666TopSpeed": 186, 
+"6660to60": 3.0, 
+"666Handling": 102,
+
+"699TopSpeed": 186, 
+"6990to60": 2.8, 
+"699Handling": 107,
+
+"969TopSpeed": 189, 
+"9690to60": 3.0, 
+"969Handling": 107,
+
+"996TopSpeed": 189, 
+"9960to60": 2.8, 
+"996Handling": 102
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 80,
+    "make": "Ferrari",
+    "model": "458 Spider",
+    "modelYear": 2011,
+    "country": "IT",
+    "topSpeed": 199,
+    "0to60": 3.3,
+    "handling": 89,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Supercar"],
+    "isPrize": false,
+	
+    "weight": 1535,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 86.84,
+    "ola": 96.97,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1031197681860739103/458Spider.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1031197958965825586/458Spider.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 202, 
+"3330to60": 3.1, 
+"333Handling": 92,
+
+"666TopSpeed": 204, 
+"6660to60": 3.0, 
+"666Handling": 95,
+
+"699TopSpeed": 204, 
+"6990to60": 2.8, 
+"699Handling": 99,
+
+"969TopSpeed": 207, 
+"9690to60": 3.0, 
+"969Handling": 99,
+
+"996TopSpeed": 207, 
+"9960to60": 2.8, 
+"996Handling": 95
+}

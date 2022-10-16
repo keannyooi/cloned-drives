@@ -1,0 +1,49 @@
+{
+    "rq": 23,
+    "make": "Citroen",
+    "model": "DS3 1.2 e-VTi 82",
+    "modelYear": 2013,
+    "country": "FR",
+    "topSpeed": 109,
+    "0to60": 13.6,
+    "handling": 70,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+	
+    "weight": 980,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 29.31,
+    "ola": 61.76,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011579224127184937/citroen_ds3_slowboi.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011589197708140694/ds3_82.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 114, 
+"3330to60": 12.9, 
+"333Handling": 72,
+
+"666TopSpeed": 119, 
+"6660to60": 12.2, 
+"666Handling": 75,
+
+"699TopSpeed": 119, 
+"6990to60": 11.6, 
+"699Handling": 78,
+
+"969TopSpeed": 123, 
+"9690to60": 12.2, 
+"969Handling": 78,
+
+"996TopSpeed": 123, 
+"9960to60": 11.6, 
+"996Handling": 75
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 92,
+    "make": ["HBB Motorsport", "Lancia"],
+    "model": "Delta HF Evo",
+    "modelYear": 2021,
+    "country": "SI",
+    "topSpeed": 188,
+    "0to60": 2.8,
+    "handling": 94,
+    "driveType": "4WD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport", "Rest of The World"],
+    "isPrize": true,
+	
+    "weight": 920,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 93.33,
+    "ola": 78.57,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1031198580247117874/HBB2021.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1031199371565473842/HBB2021.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 191, 
+"3330to60": 2.7, 
+"333Handling": 97,
+
+"666TopSpeed": 194, 
+"6660to60": 2.5, 
+"666Handling": 100,
+
+"699TopSpeed": 194, 
+"6990to60": 2.4, 
+"699Handling": 104,
+
+"969TopSpeed": 196, 
+"9690to60": 2.5, 
+"969Handling": 104,
+
+"996TopSpeed": 196, 
+"9960to60": 2.4, 
+"996Handling": 100
+}

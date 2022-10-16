@@ -1,0 +1,49 @@
+{
+    "rq": 85,
+    "make": "Ferrari",
+    "model": "458 MM Speciale",
+    "modelYear": 2016,
+    "country": "IT",
+    "topSpeed": 199,
+    "0to60": 3.1,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Unique", "Supercar"],
+    "isPrize": true,
+	
+    "weight": 1395,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 96.88,
+    "ola": 90.32,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1031197618312859658/458MMSpecial.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1031197906969055242/458MMSpeciale.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 202, 
+"3330to60": 2.9, 
+"333Handling": 94,
+
+"666TopSpeed": 204, 
+"6660to60": 2.8, 
+"666Handling": 97,
+
+"699TopSpeed": 204, 
+"6990to60": 2.6, 
+"699Handling": 101,
+
+"969TopSpeed": 207, 
+"9690to60": 2.8, 
+"969Handling": 101,
+
+"996TopSpeed": 207, 
+"9960to60": 2.6, 
+"996Handling": 97
+}

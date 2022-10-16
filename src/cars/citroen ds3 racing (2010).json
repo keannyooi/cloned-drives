@@ -1,0 +1,49 @@
+{
+    "rq": 40,
+    "make": "Citroen",
+    "model": "DS3 Racing",
+    "modelYear": 2010,
+    "country": "FR",
+    "topSpeed": 144,
+    "0to60": 6.4,
+    "handling": 78,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch"],
+    "isPrize": false,
+	
+    "weight": 1165,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 60.25,
+    "ola": 83.99,
+    "description": "The car that screams dopeness.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011579374140657674/citroen_ds3_racing.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011589375383044207/ds3_racing.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 148, 
+"3330to60": 6.1, 
+"333Handling": 81,
+
+"666TopSpeed": 151, 
+"6660to60": 5.8, 
+"666Handling": 83,
+
+"699TopSpeed": 151, 
+"6990to60": 5.4, 
+"699Handling": 87,
+
+"969TopSpeed": 155, 
+"9690to60": 5.8, 
+"969Handling": 87,
+
+"996TopSpeed": 155, 
+"9960to60": 5.4, 
+"996Handling": 83
+}

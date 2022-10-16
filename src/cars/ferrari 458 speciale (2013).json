@@ -1,0 +1,49 @@
+{
+    "rq": 86,
+    "make": "Ferrari",
+    "model": "458 Speciale",
+    "modelYear": 2013,
+    "country": "IT",
+    "topSpeed": 202,
+    "0to60": 3.1,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Supercar"],
+    "isPrize": false,
+	
+    "weight": 1395,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 96.88,
+    "ola": 90.32,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1031197651997306960/458Special.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1031197936568254464/458Speciale.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 205, 
+"3330to60": 2.9, 
+"333Handling": 94,
+
+"666TopSpeed": 207, 
+"6660to60": 2.8, 
+"666Handling": 97,
+
+"699TopSpeed": 207, 
+"6990to60": 2.6, 
+"699Handling": 101,
+
+"969TopSpeed": 210, 
+"9690to60": 2.8, 
+"969Handling": 101,
+
+"996TopSpeed": 210, 
+"9960to60": 2.6, 
+"996Handling": 97
+}

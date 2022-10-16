@@ -1,0 +1,49 @@
+{
+    "rq": 35,
+    "make": "Citroen",
+    "model": "DS3 1.6 VTi 120",
+    "modelYear": 2010,
+    "country": "FR",
+    "topSpeed": 118,
+    "0to60": 9.1,
+    "handling": 72,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+	
+    "weight": 1075,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 52.09,
+    "ola": 72.72,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011579116413263993/citroen_ds3_1.6_vti_120.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011589310430064710/ds3_120.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 122, 
+"3330to60": 8.6, 
+"333Handling": 74,
+
+"666TopSpeed": 127, 
+"6660to60": 8.2, 
+"666Handling": 77,
+
+"699TopSpeed": 127, 
+"6990to60": 7.7, 
+"699Handling": 80,
+
+"969TopSpeed": 131, 
+"9690to60": 8.2, 
+"969Handling": 80,
+
+"996TopSpeed": 131, 
+"9960to60": 7.7, 
+"996Handling": 77
+}

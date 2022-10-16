@@ -1,0 +1,49 @@
+{
+    "rq": 46,
+    "make": "Citroen",
+    "model": "DS3 1.6 THP 155",
+    "modelYear": 2010,
+    "country": "FR",
+    "topSpeed": 131,
+    "0to60": 7.3,
+    "handling": 75,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+	
+    "weight": 1090,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 58.9,
+    "ola": 76.3,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011579064873648168/citroen_ds3_1.6_thp_155.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011589346954068068/ds3_155.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 135, 
+"3330to60": 6.9, 
+"333Handling": 77,
+
+"666TopSpeed": 139, 
+"6660to60": 6.6, 
+"666Handling": 80,
+
+"699TopSpeed": 139, 
+"6990to60": 6.2, 
+"699Handling": 83,
+
+"969TopSpeed": 143, 
+"9690to60": 6.6, 
+"969Handling": 83,
+
+"996TopSpeed": 143, 
+"9960to60": 6.2, 
+"996Handling": 80
+}

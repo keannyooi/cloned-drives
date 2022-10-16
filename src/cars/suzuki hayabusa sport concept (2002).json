@@ -1,0 +1,49 @@
+{
+    "rq": 75,
+    "make": "Suzuki",
+    "model": "Hayabusa Sport Concept",
+    "modelYear": 2002,
+    "country": "JP",
+    "topSpeed": 168,
+    "0to60": 4.0,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Concept", "Unique"],
+    "isPrize": false,
+	
+    "weight": 550,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 63.49,
+    "ola": 85,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1029356752438837310/HayabusaSportConcept.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1029357787710504971/SUSHayabusa.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 171, 
+"3330to60": 3.8, 
+"333Handling": 94,
+
+"666TopSpeed": 174, 
+"6660to60": 3.6, 
+"666Handling": 97,
+
+"699TopSpeed": 174, 
+"6990to60": 3.4, 
+"699Handling": 101,
+
+"969TopSpeed": 177, 
+"9690to60": 3.6, 
+"969Handling": 101,
+
+"996TopSpeed": 177, 
+"9960to60": 3.4, 
+"996Handling": 97
+}

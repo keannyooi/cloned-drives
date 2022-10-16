@@ -1,0 +1,49 @@
+{
+    "rq": 73,
+    "make": "Alfa Romeo",
+    "model": "8C Spider",
+    "modelYear": 2008,
+    "country": "IT",
+    "topSpeed": 180,
+    "0to60": 4.4,
+    "handling": 87,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+	
+    "weight": 1675,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 68.75,
+    "ola": 86.36,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1031198316052103188/8cspider.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1031198654008148038/8CSpider.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 183, 
+"3330to60": 4.2, 
+"333Handling": 90,
+
+"666TopSpeed": 186, 
+"6660to60": 4.0, 
+"666Handling": 93,
+
+"699TopSpeed": 186, 
+"6990to60": 3.7, 
+"699Handling": 97,
+
+"969TopSpeed": 189, 
+"9690to60": 4.0, 
+"969Handling": 97,
+
+"996TopSpeed": 189, 
+"9960to60": 3.7, 
+"996Handling": 93
+}

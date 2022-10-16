@@ -1,0 +1,49 @@
+{
+    "rq": 88,
+    "make": "Ferrari",
+    "model": "458 Challenge",
+    "modelYear": 2010,
+    "country": "IT",
+    "topSpeed": 210,
+    "0to60": 2.9,
+    "handling": 93,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport"],
+    "isPrize": false,
+	
+    "weight": 1240,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 96.67,
+    "ola": 89.66,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1031197400880140378/458challenge.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1031197812362321990/458Challenge.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 212, 
+"3330to60": 2.8, 
+"333Handling": 96,
+
+"666TopSpeed": 215, 
+"6660to60": 2.6, 
+"666Handling": 99,
+
+"699TopSpeed": 215, 
+"6990to60": 2.5, 
+"699Handling": 103,
+
+"969TopSpeed": 217, 
+"9690to60": 2.6, 
+"969Handling": 103,
+
+"996TopSpeed": 217, 
+"9960to60": 2.5, 
+"996Handling": 99
+}

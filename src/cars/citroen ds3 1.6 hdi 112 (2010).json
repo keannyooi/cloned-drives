@@ -1,0 +1,49 @@
+{
+    "rq": 33,
+    "make": "Citroen",
+    "model": "DS3 1.6 HDi 112",
+    "modelYear": 2010,
+    "country": "FR",
+    "topSpeed": 115,
+    "0to60": 9.5,
+    "handling": 72,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+	
+    "weight": 1090,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 41.29,
+    "ola": 60.88,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011579028475494400/citroen_ds3_1.6_hdi_112.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011589279782273044/ds3_112.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 120, 
+"3330to60": 9.0, 
+"333Handling": 74,
+
+"666TopSpeed": 124, 
+"6660to60": 8.6, 
+"666Handling": 77,
+
+"699TopSpeed": 124, 
+"6990to60": 8.1, 
+"699Handling": 80,
+
+"969TopSpeed": 129, 
+"9690to60": 8.6, 
+"969Handling": 80,
+
+"996TopSpeed": 129, 
+"9960to60": 8.1, 
+"996Handling": 77
+}

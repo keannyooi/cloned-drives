@@ -1,0 +1,49 @@
+{
+    "rq": 89,
+    "make": "Ferrari",
+    "model": "458 Challenge Evoluzione",
+    "modelYear": 2014,
+    "country": "IT",
+    "topSpeed": 210,
+    "0to60": 2.9,
+    "handling": 95,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport"],
+    "isPrize": false,
+	
+    "weight": 1220,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 100,
+    "ola": 89.66,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1031197463358488666/458challengeEvo.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1031197835892375593/458ChallengeEVO.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 212, 
+"3330to60": 2.8, 
+"333Handling": 98,
+
+"666TopSpeed": 215, 
+"6660to60": 2.6, 
+"666Handling": 101,
+
+"699TopSpeed": 215, 
+"6990to60": 2.5, 
+"699Handling": 105,
+
+"969TopSpeed": 217, 
+"9690to60": 2.6, 
+"969Handling": 105,
+
+"996TopSpeed": 217, 
+"9960to60": 2.5, 
+"996Handling": 101
+}

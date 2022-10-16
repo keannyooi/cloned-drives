@@ -1,0 +1,49 @@
+{
+    "rq": 3,
+    "make": "Aixam",
+    "model": "Scouty R",
+    "modelYear": 2008,
+    "country": "FR",
+    "topSpeed": 28,
+    "0to60": 99.9,
+    "handling": 61,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Concept", "Unique"],
+    "isPrize": false,
+	
+    "weight": 350,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 0,
+    "ola": 66.66,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1029357296553299978/AixamScoutyR.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1029357976521293855/AIXAMScouty.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 37, 
+"3330to60": 99.9, 
+"333Handling": 63,
+
+"666TopSpeed": 45, 
+"6660to60": 99.9, 
+"666Handling": 65,
+
+"699TopSpeed": 45, 
+"6990to60": 99.9, 
+"699Handling": 68,
+
+"969TopSpeed": 54, 
+"9690to60": 99.9, 
+"969Handling": 68,
+
+"996TopSpeed": 54, 
+"9960to60": 99.9, 
+"996Handling": 65
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 26,
+    "make": "Citroen",
+    "model": "DS3 1.6 HDi 92",
+    "modelYear": 2010,
+    "country": "FR",
+    "topSpeed": 112,
+    "0to60": 11.2,
+    "handling": 70,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+	
+    "weight": 1080,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 42.8,
+    "ola": 65.84,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011578997387313172/citroen_ds3_1.6_hdi_92.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011589240297099324/ds3_92.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 117, 
+"3330to60": 10.6, 
+"333Handling": 72,
+
+"666TopSpeed": 121, 
+"6660to60": 10.1, 
+"666Handling": 75,
+
+"699TopSpeed": 121, 
+"6990to60": 9.5, 
+"699Handling": 78,
+
+"969TopSpeed": 126, 
+"9690to60": 10.1, 
+"969Handling": 78,
+
+"996TopSpeed": 126, 
+"9960to60": 9.5, 
+"996Handling": 75
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 15,
+    "make": "Volvo",
+    "model": "ECC",
+    "modelYear": 1992,
+    "country": "SE",
+    "topSpeed": 109,
+    "0to60": 12.5,
+    "handling": 69,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Concept","Eco-Friendly", "Rest of The World"],
+    "isPrize": false,
+	
+    "weight": 1580,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 42.37,
+    "ola": 67.2,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011582051331354744/volvo_ecc.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011589554819584040/ecc.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 114, 
+"3330to60": 11.9, 
+"333Handling": 71,
+
+"666TopSpeed": 119, 
+"6660to60": 11.2, 
+"666Handling": 74,
+
+"699TopSpeed": 119, 
+"6990to60": 10.6, 
+"699Handling": 77,
+
+"969TopSpeed": 123, 
+"9690to60": 11.2, 
+"969Handling": 77,
+
+"996TopSpeed": 123, 
+"9960to60": 10.6, 
+"996Handling": 74
+}

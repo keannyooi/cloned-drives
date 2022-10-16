@@ -1,0 +1,49 @@
+{
+    "rq": 72,
+    "make": "Alfa Romeo",
+    "model": "8C Spider Concept",
+    "modelYear": 2005,
+    "country": "IT",
+    "topSpeed": 180,
+    "0to60": 4.5,
+    "handling": 87,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Concept", "Unique"],
+    "isPrize": false,
+	
+    "weight": 1625,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 61.64,
+    "ola": 93.33,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1031198366450856056/8cspoderconcept.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1031198685033402498/8cspiderconcept.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 183, 
+"3330to60": 4.3, 
+"333Handling": 90,
+
+"666TopSpeed": 186, 
+"6660to60": 4.0, 
+"666Handling": 93,
+
+"699TopSpeed": 186, 
+"6990to60": 3.8, 
+"699Handling": 97,
+
+"969TopSpeed": 189, 
+"9690to60": 4.0, 
+"969Handling": 97,
+
+"996TopSpeed": 189, 
+"9960to60": 3.8, 
+"996Handling": 93
+}

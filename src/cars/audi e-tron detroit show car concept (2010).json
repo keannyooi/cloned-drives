@@ -1,0 +1,49 @@
+{
+    "rq": 50,
+    "make": "Audi",
+    "model": "e-tron Detroit Show Car Concept",
+    "modelYear": 2010,
+    "country": "DE",
+    "topSpeed": 124,
+    "0to60": 5.7,
+    "handling": 86,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Concept","Eco-Friendly"],
+    "isPrize": false,
+	
+    "weight": 1350,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Electric",
+    "mra": 60.59,
+    "ola": 71.97,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011590048870834196/audi_e-tron_detroit_boi.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011590484709355600/e-tron_detroit.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 128, 
+"3330to60": 5.4, 
+"333Handling": 89,
+
+"666TopSpeed": 132, 
+"6660to60": 5.1, 
+"666Handling": 92,
+
+"699TopSpeed": 132, 
+"6990to60": 4.8, 
+"699Handling": 95,
+
+"969TopSpeed": 137, 
+"9690to60": 5.1, 
+"969Handling": 95,
+
+"996TopSpeed": 137, 
+"9960to60": 4.8, 
+"996Handling": 92
+}

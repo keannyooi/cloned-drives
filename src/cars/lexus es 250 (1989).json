@@ -1,0 +1,49 @@
+{
+    "rq": 29,
+    "make": "Lexus",
+    "model": "ES 250",
+    "modelYear": 1989,
+    "country": "JP",
+    "topSpeed": 127,
+    "0to60": 10.6,
+    "handling": 70,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+	
+    "weight": 1435,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.25,
+    "ola": 66.03,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1029356564705980436/ES250V50.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1029357741141151774/ES250V50.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 131, 
+"3330to60": 10.1, 
+"333Handling": 72,
+
+"666TopSpeed": 135, 
+"6660to60": 9.5, 
+"666Handling": 75,
+
+"699TopSpeed": 135, 
+"6990to60": 9.0, 
+"699Handling": 78,
+
+"969TopSpeed": 139, 
+"9690to60": 9.5, 
+"969Handling": 78,
+
+"996TopSpeed": 139, 
+"9960to60": 9.0, 
+"996Handling": 75
+}
