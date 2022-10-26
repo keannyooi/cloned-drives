@@ -1,0 +1,49 @@
+{
+    "rq": 29,
+    "make": "Peugeot",
+    "model": "e-208 GT",
+    "modelYear": 2020,
+    "country": "FR",
+    "topSpeed": 94,
+    "0to60": 8.2,
+    "handling": 76,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+	
+    "weight": 1478,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 22.22,
+    "ola": 67.41,
+    "description": "The little pug that electrifies.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1034801605545054208/Peugeote208GT.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1034801651732721664/e208GT.png",
+    "creator": "Spence",
+
+"333TopSpeed": 100, 
+"3330to60": 7.8, 
+"333Handling": 79,
+
+"666TopSpeed": 105, 
+"6660to60": 7.4, 
+"666Handling": 81,
+
+"699TopSpeed": 105, 
+"6990to60": 7.0, 
+"699Handling": 84,
+
+"969TopSpeed": 111, 
+"9690to60": 7.4, 
+"969Handling": 84,
+
+"996TopSpeed": 111, 
+"9960to60": 7.0, 
+"996Handling": 81
+}

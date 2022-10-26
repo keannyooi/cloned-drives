@@ -1,0 +1,49 @@
+{
+    "rq": 82,
+    "make": "Pininfarina",
+    "model": "H2 Speed",
+    "modelYear": 2016,
+    "country": "IT",
+    "topSpeed": 186,
+    "0to60": 3.3,
+    "handling": 95,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport", "Eco-Friendly"],
+    "isPrize": false,
+	
+    "weight": 1420,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Electric",
+    "mra": 63.46,
+    "ola": 84.85,
+    "description": "Sorry",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011581359678038086/pininfarina_h2_speed.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011590875253592104/h2speed.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 189, 
+"3330to60": 3.1, 
+"333Handling": 98,
+
+"666TopSpeed": 192, 
+"6660to60": 3.0, 
+"666Handling": 101,
+
+"699TopSpeed": 192, 
+"6990to60": 2.8, 
+"699Handling": 105,
+
+"969TopSpeed": 194, 
+"9690to60": 3.0, 
+"969Handling": 105,
+
+"996TopSpeed": 194, 
+"9960to60": 2.8, 
+"996Handling": 101
+}

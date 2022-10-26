@@ -1,0 +1,49 @@
+{
+    "rq": 89,
+    "make": ["Mercedes-AMG", "Mercedes-Benz"],
+    "model": "GT3 Evo",
+    "modelYear": 2019,
+    "country": "DE",
+    "topSpeed": 180,
+    "0to60": 2.9,
+    "handling": 97,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport"],
+    "isPrize": false,
+	
+    "weight": 1285,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 94,
+    "ola": 85.69,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1034800463285076038/MercedesAMGGT3Evo.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1034800874104557668/amggt3evo.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 183, 
+"3330to60": 2.8, 
+"333Handling": 100,
+
+"666TopSpeed": 186, 
+"6660to60": 2.6, 
+"666Handling": 103,
+
+"699TopSpeed": 186, 
+"6990to60": 2.5, 
+"699Handling": 108,
+
+"969TopSpeed": 189, 
+"9690to60": 2.6, 
+"969Handling": 108,
+
+"996TopSpeed": 189, 
+"9960to60": 2.5, 
+"996Handling": 103
+}
