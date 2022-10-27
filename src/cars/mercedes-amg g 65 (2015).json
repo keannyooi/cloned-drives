@@ -1,0 +1,50 @@
+{
+    "rq": 70,
+    "make": ["Mercedes-AMG", "Mercedes-Benz"],
+    "model": "G 65",
+    "modelYear": 2015,
+    "country": "DE",
+    "topSpeed": 143,
+    "0to60": 5.1,
+    "handling": 68,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 2505,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 72.55,
+    "ola": 71.05,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/952619237959164034/AMGG65.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1034904620239167538/G652015.png",
+    "creator": "Havvy",
+
+    "333TopSpeed": 147,
+    "3330to60": 4.8,
+    "333Handling": 70,
+
+    "666TopSpeed": 150,
+    "6660to60": 4.6,
+    "666Handling": 72,
+
+    "996TopSpeed": 154,
+    "9960to60": 4.3,
+    "996Handling": 72,
+
+    "969TopSpeed": 154,
+    "9690to60": 4.6,
+    "969Handling": 75,
+
+    "699TopSpeed": 150,
+    "6990to60": 4.3,
+    "699Handling": 75
+}

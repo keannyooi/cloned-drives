@@ -1,0 +1,50 @@
+{
+    "rq": 66,
+    "make": ["Mercedes-AMG", "Mercedes-Benz"],
+    "model": "G 55 Kompressor",
+    "modelYear": 2004,
+    "country": "DE",
+    "topSpeed": 131,
+    "0to60": 5.3,
+    "handling": 67,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 2475,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 60.23,
+    "ola": 71.7,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/952618545890623498/AMGG55Kompressor.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1034903422316593182/G55Komp2004.png",
+    "creator": "Havvy",
+
+    "333TopSpeed": 135,
+    "3330to60": 5.0,
+    "333Handling": 69,
+
+    "666TopSpeed": 139,
+    "6660to60": 4.8,
+    "666Handling": 71,
+
+    "996TopSpeed": 143,
+    "9960to60": 4.5,
+    "996Handling": 71,
+
+    "969TopSpeed": 143,
+    "9690to60": 4.8,
+    "969Handling": 74,
+
+    "699TopSpeed": 139,
+    "6990to60": 4.5,
+    "699Handling": 74
+}

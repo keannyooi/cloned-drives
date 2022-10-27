@@ -1,0 +1,50 @@
+{
+    "rq": 45,
+    "make": ["Mercedes-AMG", "Mercedes-Benz"],
+    "model": "C 43 Wagon",
+    "modelYear": 1997,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 6.4,
+    "handling": 76,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1535,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 65.98,
+    "ola": 82.81,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/828368752760061952/unknown.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1034903968058450060/C43Wagon1997.png",
+    "creator": "Havvy",
+
+    "333TopSpeed": 158,
+    "3330to60": 6.1,
+    "333Handling": 79,
+
+    "666TopSpeed": 162,
+    "6660to60": 5.8,
+    "666Handling": 81,
+
+    "996TopSpeed": 165,
+    "9960to60": 5.4,
+    "996Handling": 81,
+
+    "969TopSpeed": 165,
+    "9690to60": 5.8,
+    "969Handling": 84,
+
+    "699TopSpeed": 162,
+    "6990to60": 5.4,
+    "699Handling": 84
+}

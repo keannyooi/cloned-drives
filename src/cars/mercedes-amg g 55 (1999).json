@@ -1,0 +1,50 @@
+{
+    "rq": 50,
+    "make": ["Mercedes-AMG", "Mercedes-Benz"],
+    "model": "G 55",
+    "modelYear": 1999,
+    "country": "DE",
+    "topSpeed": 130,
+    "0to60": 7.0,
+    "handling": 64,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 2405,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 53.44,
+    "ola": 57.14,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/952618316504113152/AMGG55.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1034904467759448144/G551999.png",
+    "creator": "Havvy",
+
+    "333TopSpeed": 134,
+    "3330to60": 6.7,
+    "333Handling": 66,
+
+    "666TopSpeed": 138,
+    "6660to60": 6.3,
+    "666Handling": 68,
+
+    "996TopSpeed": 142,
+    "9960to60": 6.0,
+    "996Handling": 68,
+
+    "969TopSpeed": 142,
+    "9690to60": 6.3,
+    "969Handling": 71,
+
+    "699TopSpeed": 138,
+    "6990to60": 6.0,
+    "699Handling": 71
+}

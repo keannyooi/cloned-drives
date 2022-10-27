@@ -1,0 +1,50 @@
+{
+    "rq": 62,
+    "make": "Audi",
+    "model": "RS 4 Avant",
+    "modelYear": 2006,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 4.8,
+    "handling": 82,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1710,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 69.82,
+    "ola": 70.68,
+    "description": "A step up in the performance-wagon segment.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/948243837124481024/CD_Audi_RS_4_Avant_B7.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1034905920142061669/RS4Avant06.png",
+    "creator": "Exist",
+
+    "333TopSpeed": 158,
+    "3330to60": 4.6,
+    "333Handling": 85,
+
+    "666TopSpeed": 162,
+    "6660to60": 4.3,
+    "666Handling": 87,
+
+    "996TopSpeed": 165,
+    "9960to60": 4.1,
+    "996Handling": 87,
+
+    "969TopSpeed": 165,
+    "9690to60": 4.3,
+    "969Handling": 91,
+
+    "699TopSpeed": 162,
+    "6990to60": 4.1,
+    "699Handling": 91
+}
