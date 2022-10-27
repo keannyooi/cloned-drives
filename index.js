@@ -125,7 +125,7 @@ schedule("59 23 * * *", async () => {
     let { lastBMRefresh } = await serverStatModel.findOne({});
     try {
         await regenDealership();
-        if (Interval.fromDateTimes(DateTime.fromISO(lastBMRefresh), DateTime.now()).length("days") >= 3) {
+        if (Interval.fromDateTimes(DateTime.fromISO(lastBMRefresh), DateTime.now()).length("days") >= 2) {
             await regenBM();
         }
     }
