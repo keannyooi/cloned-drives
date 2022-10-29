@@ -5,7 +5,7 @@
     "modelYear": 2017,
     "country": "GB",
     "topSpeed": 186,
-    "0to60": 4,
+    "0to60": 4.0,
     "handling": 81,
     "driveType": "RWD",
     "tyreType": "Performance",
@@ -23,7 +23,7 @@
     "fuelType": "Petrol",
     "mra": 81.63,
     "ola": 90,
-    "description": "The Jaguar XJR575 features a unique version of Jaguar's legendary 5.0-litre supercharged V8 engine, delivering 575BHP and 700Nm of torque. Card by Havvy",
+    "description": "The Jaguar XJR575 features a unique version of Jaguar's legendary 5.0-litre supercharged V8 engine, delivering 575BHP and 700Nm of torque.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/821025256528805918/JaguarXJR575.png",
     "333TopSpeed": 189,
     "3330to60": 3.8,
@@ -40,6 +40,6 @@
     "699TopSpeed": 192,
     "6990to60": 3.4,
     "699Handling": 90,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1018231675349647460/Jaguar_XJR575.png",
+    "creator": "Havvy"
 }

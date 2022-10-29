@@ -5,7 +5,7 @@
     "modelYear": 2003,
     "country": "DE",
     "topSpeed": 151,
-    "0to60": 5,
+    "0to60": 5.0,
     "handling": 90,
     "driveType": "RWD",
     "tyreType": "Performance",
@@ -21,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 62.5,
     "ola": 76,
-    "description": "Turbo roadster, more powerful than any Elise of the day. Card by Connor. ",
+    "description": "Turbo roadster, more powerful than any Elise of the day.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/854625983118180372/A.OpelSpeedsterTurbo.png",
     "333TopSpeed": 154,
     "3330to60": 4.8,
@@ -38,6 +38,6 @@
     "699TopSpeed": 158,
     "6990to60": 4.3,
     "699Handling": 100,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1018183930844823622/Opel_Speedster_Turbo.png",
+    "creator": "Connor"
 }

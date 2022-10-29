@@ -5,7 +5,7 @@
     "modelYear": 2011,
     "country": "DE",
     "topSpeed": 143,
-    "0to60": 6,
+    "0to60": 6.0,
     "handling": 76,
     "driveType": "4WD",
     "tyreType": "All-Surface",
@@ -21,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 57.6,
     "ola": 74.5,
-    "description": "tfw old X1 is faster than new one. Card by Cenard",
+    "description": "tfw old X1 is faster than new one.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/820401724669820938/IMG_20210308_105254.png",
     "333TopSpeed": 147,
     "3330to60": 5.7,
@@ -38,6 +38,6 @@
     "699TopSpeed": 150,
     "6990to60": 5.1,
     "699Handling": 84,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1018233254173749299/BMW_X1_xDrive28i_2011.png",
+    "creator": "Cenard"
 }

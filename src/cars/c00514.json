@@ -24,10 +24,10 @@
     "fuelType": "Petrol",
     "mra": 74.65,
     "ola": 94.34,
-    "description": "The first true Holden in Cloned Drives, not some crummy rebadged Chevy hatchback. Card by Macan",
+    "description": "The first true Holden in Cloned Drives, not some crummy rebadged Chevy hatchback.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/829479787336433735/Monaro_CV8-Z_05.png",
     "333TopSpeed": 173,
-    "3330to60": 5,
+    "3330to60": 5.0,
     "333Handling": 81,
     "666TopSpeed": 176,
     "6660to60": 4.8,
@@ -41,6 +41,6 @@
     "699TopSpeed": 176,
     "6990to60": 4.5,
     "699Handling": 87,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1018454149559500800/Holden_Monaro_CV8-Z.png",
+    "creator": "Macan"
 }

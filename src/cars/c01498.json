@@ -5,7 +5,7 @@
     "modelYear": 2014,
     "country": "AU",
     "topSpeed": 176,
-    "0to60": 5,
+    "0to60": 5.0,
     "handling": 77,
     "driveType": "RWD",
     "tyreType": "Performance",
@@ -24,7 +24,7 @@
     "fuelType": "Petrol",
     "mra": 83.33,
     "ola": 84,
-    "description": "Card by Exist.",
+    "description": "",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/849636812816252948/CD_FPV_Pursuit_Ute.png",
     "333TopSpeed": 179,
     "3330to60": 4.8,
@@ -41,6 +41,6 @@
     "699TopSpeed": 182,
     "6990to60": 4.3,
     "699Handling": 85,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1018593091529232425/FPV_Pursuit_Ute.png",
+    "creator": "Exist"
 }
