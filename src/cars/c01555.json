@@ -5,7 +5,7 @@
     "modelYear": 1992,
     "country": "JP",
     "topSpeed": 112,
-    "0to60": 5,
+    "0to60": 5.0,
     "handling": 84,
     "driveType": "RWD",
     "tyreType": "Performance",
@@ -24,7 +24,7 @@
     "fuelType": "Petrol",
     "mra": 69.44,
     "ola": 72,
-    "description": "A rare model that is the origin of the Honda Type R series, with just under 500 cars produced. Card by Connor.",
+    "description": "A rare model that is the origin of the Honda Type R series, with just under 500 cars produced.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/868939526452707349/B.HondaNSXR-1.png",
     "333TopSpeed": 117,
     "3330to60": 4.8,
@@ -41,6 +41,6 @@
     "699TopSpeed": 121,
     "6990to60": 4.3,
     "699Handling": 93,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1020049291248681050/Honda_NSX-R_1993.png",
+    "creator": "Connor"
 }

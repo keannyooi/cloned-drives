@@ -5,7 +5,7 @@
     "modelYear": 1985,
     "country": "IT",
     "topSpeed": 140,
-    "0to60": 6,
+    "0to60": 6.0,
     "handling": 74,
     "driveType": "4WD",
     "tyreType": "Performance",
@@ -25,7 +25,7 @@
     "fuelType": "Petrol",
     "mra": 75.95,
     "ola": 83.02,
-    "description": "Better known as the 'Stradale', this Delta was five times more expensive than any Delta at the time. Card by havvy",
+    "description": "Better known as the 'Stradale', this Delta was five times more expensive than any Delta at the time.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/821878065113858078/unknown.png",
     "333TopSpeed": 144,
     "3330to60": 5.7,
@@ -42,6 +42,6 @@
     "699TopSpeed": 147,
     "6990to60": 5.1,
     "699Handling": 82,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1020007007882842264/Lancia_Delta_S4.png",
+    "creator": "Havvy"
 }

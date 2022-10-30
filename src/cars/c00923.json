@@ -8,7 +8,7 @@
     "modelYear": 2003,
     "country": "JP",
     "topSpeed": 150,
-    "0to60": 6,
+    "0to60": 6.0,
     "handling": 83,
     "driveType": "FWD",
     "tyreType": "Performance",
@@ -27,7 +27,7 @@
     "fuelType": "Petrol",
     "mra": 70.41,
     "ola": 82.35,
-    "description": "moogen van. Card by Havvy.",
+    "description": "moogen van.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/863877326071922718/MugenCivicType-REP3.png",
     "333TopSpeed": 153,
     "3330to60": 5.7,
@@ -44,6 +44,6 @@
     "699TopSpeed": 157,
     "6990to60": 5.1,
     "699Handling": 92,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1020048291234328616/Mugen_Civic_EP3.png",
+    "creator": "Havvy"
 }

@@ -5,7 +5,7 @@
     "modelYear": 2008,
     "country": "US",
     "topSpeed": 155,
-    "0to60": 6,
+    "0to60": 6.0,
     "handling": 76,
     "driveType": "FWD",
     "tyreType": "Performance",
@@ -24,7 +24,7 @@
     "fuelType": "Petrol",
     "mra": 75.08,
     "ola": 81.33,
-    "description": "A hot hatch, or a hot SUV?. Card by havvy",
+    "description": "A hot hatch, or a hot SUV?.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/822006476636946452/DodgeCaliberSRT4.png",
     "333TopSpeed": 158,
     "3330to60": 5.7,
@@ -41,6 +41,6 @@
     "699TopSpeed": 162,
     "6990to60": 5.1,
     "699Handling": 84,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1020010459153313864/Dodge_Caliber_SRT4.png",
+    "creator": "Havvy"
 }

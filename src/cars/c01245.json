@@ -8,7 +8,7 @@
     "modelYear": 2017,
     "country": "IN",
     "topSpeed": 137,
-    "0to60": 6,
+    "0to60": 6.0,
     "handling": 78,
     "driveType": "RWD",
     "tyreType": "Performance",
@@ -26,7 +26,7 @@
     "fuelType": "Petrol",
     "mra": 55.97,
     "ola": 60,
-    "description": "India's take on a sports car that was so good it got into Forza. Card by AGE.",
+    "description": "India's take on a sports car that was so good it got into Forza.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/851493793978646568/image0.jpg",
     "333TopSpeed": 141,
     "3330to60": 5.7,
@@ -43,6 +43,6 @@
     "699TopSpeed": 145,
     "6990to60": 5.1,
     "699Handling": 87,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1020010924259688458/TAMO_Racemo.png",
+    "creator": "AGE"
 }
