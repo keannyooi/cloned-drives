@@ -314,7 +314,7 @@ module.exports = {
                                 return errorMessage.sendMessage({ currentMessage });
                             }
 
-                            await new Promise(resolve => resolve(search(message, carName, carFiles, "car")))
+                            await new Promise(resolve => resolve(search(message, carName, carFiles, "carWithBM")))
                                 .then(async (response) => {
                                     if (!Array.isArray(response)) {
                                         operationFailed = true;
