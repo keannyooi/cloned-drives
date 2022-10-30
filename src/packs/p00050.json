@@ -1,11 +1,12 @@
 {
-	"packName": "Honda Pack",
-	"description": "A pack of 5 Hondas.",
+	"packName": "Convertible Pack",
+	"description": "A pack of 5 Convertibles.",
+	"price": 75000,
     "repetition": 1,
 	"pack": "https://cdn.discordapp.com/attachments/956106029635088384/956106164582617088/Honda_Standard_Pack.png",
 	
 	"filter": {
-		"make": "Honda",
+		"make": "None",
 		"modelYear": {
 			"start": 1000,
 			"end": 3000
@@ -16,7 +17,7 @@
         "tyreType": "None",
 		"enginePos": "None",
         "fuelType": "None",
-        "bodyStyle": "None",
+        "bodyStyle": "Convertible",
 		"seatCount": "None"
 	},
 
