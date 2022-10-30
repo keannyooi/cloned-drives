@@ -9,9 +9,7 @@
     "handling": 83,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Concept"
-    ],
+    "tags": ["Concept"],
     "isPrize": false,
     "weight": 1760,
     "gc": "Low",
@@ -23,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 68.24,
     "ola": 75.86,
-    "description": "Hot coupe which previewed the Insignia. Card by Connor.",
+    "description": "Hot coupe which previewed the Insignia.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/859692829831725086/B.png",
     "333TopSpeed": 158,
     "3330to60": 5.5,
@@ -40,6 +38,6 @@
     "699TopSpeed": 162,
     "6990to60": 4.9,
     "699Handling": 92,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1036182729198407740/gtc.jpg",
+    "creator": "Connor"
 }

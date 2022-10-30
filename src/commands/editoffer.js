@@ -188,7 +188,7 @@ module.exports = {
                             break;
                         case "cars":
                             let carName = args.slice(3, args.length).map(i => i.toLowerCase());
-                            await new Promise(resolve => resolve(search(message, carName, carFiles, "car")))
+                            await new Promise(resolve => resolve(search(message, carName, carFiles, "carWithBM")))
                                 .then(async (response) => {
                                     if (!Array.isArray(response)) {
                                         operationFailed = true;
