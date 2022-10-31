@@ -23,49 +23,49 @@
 
 	"packSequence": [
         {
-            "common": 0,
+            "common": 100,
             "uncommon": 0,
             "rare": 0,
-            "superRare": 74,
-            "ultraRare": 20.1,
-            "epic": 5,
-            "legendary": 0.9
+            "superRare": 0,
+            "ultraRare": 0,
+            "epic": 0,
+            "legendary": 0
         },
         {
-            "common": 0,
+            "common": 100,
             "uncommon": 0,
             "rare": 0,
-            "superRare": 74,
-            "ultraRare": 20.1,
-            "epic": 5,
-            "legendary": 0.9
+            "superRare": 0,
+            "ultraRare": 0,
+            "epic": 0,
+            "legendary": 0
         },
         {
-            "common": 0,
+            "common": 100,
             "uncommon": 0,
             "rare": 0,
-            "superRare": 74,
-            "ultraRare": 20.1,
-            "epic": 5,
-            "legendary": 0.9
+            "superRare": 0,
+            "ultraRare": 0,
+            "epic": 0,
+            "legendary": 0
         },
         {
-            "common": 0,
+            "common": 100,
             "uncommon": 0,
             "rare": 0,
-            "superRare": 74,
-            "ultraRare": 20.1,
-            "epic": 5,
-            "legendary": 0.9
+            "superRare": 0,
+            "ultraRare": 0,
+            "epic": 0,
+            "legendary": 0
         },
         {
-            "common": 0,
+            "common": 50,
             "uncommon": 0,
             "rare": 0,
-            "superRare": 74,
-            "ultraRare": 20.1,
-            "epic": 5,
-            "legendary": 0.9
+            "superRare": 0,
+            "ultraRare": 30,
+            "epic": 20,
+            "legendary": 10
         }
     ]
 }
