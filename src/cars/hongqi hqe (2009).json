@@ -1,0 +1,49 @@
+{
+    "rq": 33,
+    "make": "Hongqi",
+    "model": "HQE",
+    "modelYear": 2009,
+    "country": "CN",
+    "topSpeed": 112,
+    "0to60": 7.4,
+    "handling": 65,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Rest of The World"],
+    "isPrize": false,
+	
+    "weight": 3200,
+    "gc": "Medium",
+    "seatCount": 3,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 47.44,
+    "ola": 62.16,
+    "description": "Man, I'm going to piss off so many people with this.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011587080079548426/hongqi_hqe.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011591426980712509/hongqi_hqe.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 117, 
+"3330to60": 7.0, 
+"333Handling": 67,
+
+"666TopSpeed": 121, 
+"6660to60": 6.7, 
+"666Handling": 69,
+
+"699TopSpeed": 121, 
+"6990to60": 6.3, 
+"699Handling": 72,
+
+"969TopSpeed": 126, 
+"9690to60": 6.7, 
+"969Handling": 72,
+
+"996TopSpeed": 126, 
+"9960to60": 6.3, 
+"996Handling": 69
+}

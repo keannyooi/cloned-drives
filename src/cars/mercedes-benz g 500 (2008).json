@@ -1,0 +1,50 @@
+{
+    "rq": 61,
+    "make": "Mercedes-Benz",
+    "model": "G 500",
+    "modelYear": 2008,
+    "country": "DE",
+    "topSpeed": 131,
+    "0to60": 5.8,
+    "handling": 66,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 2445,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 56.31,
+    "ola": 65.52,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/952618892046520410/Mercedes-BenzG500_08.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1036607225180999740/G50008.png",
+    "creator": "Havvy",
+
+    "333TopSpeed": 135,
+    "3330to60": 5.5,
+    "333Handling": 68,
+
+    "666TopSpeed": 139,
+    "6660to60": 5.2,
+    "666Handling": 70,
+
+    "996TopSpeed": 143,
+    "9960to60": 4.9,
+    "996Handling": 70,
+
+    "969TopSpeed": 143,
+    "9690to60": 5.2,
+    "969Handling": 73,
+
+    "699TopSpeed": 139,
+    "6990to60": 4.9,
+    "699Handling": 73
+}

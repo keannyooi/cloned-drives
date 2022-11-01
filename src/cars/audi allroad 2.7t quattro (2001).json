@@ -1,0 +1,50 @@
+{
+    "rq": 47,
+    "make": "Audi",
+    "model": "allroad 2.7t quattro",
+    "modelYear": 2001,
+    "country": "DE",
+    "topSpeed": 143,
+    "0to60": 7.7,
+    "handling": 71,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1901,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 63.02,
+    "ola": 71.75,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/868436626580316160/Audi_allroad_2.7t_quattro.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1036627623721312306/Allroad2-7T.png",
+    "creator": "Fried",
+
+    "333TopSpeed": 147,
+    "3330to60": 7.3,
+    "333Handling": 73,
+
+    "666TopSpeed": 150,
+    "6660to60": 6.9,
+    "666Handling": 76,
+
+    "996TopSpeed": 154,
+    "9960to60": 6.5,
+    "996Handling": 76,
+
+    "969TopSpeed": 154,
+    "9690to60": 6.9,
+    "969Handling": 79,
+
+    "699TopSpeed": 150,
+    "6990to60": 6.5,
+    "699Handling": 79
+}

@@ -1,0 +1,50 @@
+{
+    "rq": 81,
+    "make": "Porsche",
+    "model": "Taycan 4S Performance Battery Plus",
+    "modelYear": 2020,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 3.7,
+    "handling": 85,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+
+    "weight": 2310,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 82.22,
+    "ola": 86.49,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/916456566704713728/S.PorscheTaycan4SPP.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1036274395829772359/Porsche_Taycan_4S_Plus.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 158,
+    "3330to60": 3.5,
+    "333Handling": 88,
+
+    "666TopSpeed": 162,
+    "6660to60": 3.3,
+    "666Handling": 91,
+
+    "996TopSpeed": 165,
+    "9960to60": 3.1,
+    "996Handling": 91,
+
+    "969TopSpeed": 165,
+    "9690to60": 3.3,
+    "969Handling": 94,
+
+    "699TopSpeed": 162,
+    "6990to60": 3.1,
+    "699Handling": 94
+}

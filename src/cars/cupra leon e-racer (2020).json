@@ -1,0 +1,49 @@
+{
+    "rq": 82,
+    "make": ["Cupra", "Seat"],
+    "model": "Leon E-Racer",
+    "modelYear": 2020,
+    "country": "ES",
+    "topSpeed": 169,
+    "0to60": 3.1,
+    "handling": 94,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport", "Eco-Friendly"],
+    "isPrize": false,
+	
+    "weight": 1750,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Electric",
+    "mra": 88.57,
+    "ola": 77.41,
+    "description": "One of the first e-TCR cars.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1035910979176890450/LeonERacer.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1035911010852278292/LeonERacer.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 172, 
+"3330to60": 2.9, 
+"333Handling": 97,
+
+"666TopSpeed": 175, 
+"6660to60": 2.8, 
+"666Handling": 100,
+
+"699TopSpeed": 175, 
+"6990to60": 2.6, 
+"699Handling": 104,
+
+"969TopSpeed": 178, 
+"9690to60": 2.8, 
+"969Handling": 104,
+
+"996TopSpeed": 178, 
+"9960to60": 2.6, 
+"996Handling": 100
+}

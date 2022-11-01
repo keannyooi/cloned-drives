@@ -1,0 +1,50 @@
+{
+    "rq": 63,
+    "make": "Mercedes-Benz",
+    "model": "G 500",
+    "modelYear": 2015,
+    "country": "DE",
+    "topSpeed": 131,
+    "0to60": 5.6,
+    "handling": 66,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 2520,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 55.45,
+    "ola": 67.86,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/952619266379771984/Mercedes-BenzG500_15.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1036607314800676975/G50015.png",
+    "creator": "Havvy",
+
+    "333TopSpeed": 135,
+    "3330to60": 5.3,
+    "333Handling": 68,
+
+    "666TopSpeed": 139,
+    "6660to60": 5.0,
+    "666Handling": 70,
+
+    "996TopSpeed": 143,
+    "9960to60": 4.8,
+    "996Handling": 70,
+
+    "969TopSpeed": 143,
+    "9690to60": 5.0,
+    "969Handling": 73,
+
+    "699TopSpeed": 139,
+    "6990to60": 4.8,
+    "699Handling": 73
+}

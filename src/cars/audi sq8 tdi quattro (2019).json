@@ -1,0 +1,50 @@
+{
+    "rq": 82,
+    "make": "Audi",
+    "model": "SQ8 TDI quattro",
+    "modelYear": 2019,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 4.7,
+    "handling": 80,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 2365,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 61.84,
+    "ola": 72.34,
+    "description": "Card by Macan.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/944893257010253884/SQ8_TDI_quattro_19.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1036612354894479411/Sq8TDI.png",
+    "creator": "Macan",
+
+    "333TopSpeed": 158,
+    "3330to60": 4.5,
+    "333Handling": 83,
+
+    "666TopSpeed": 162,
+    "6660to60": 4.2,
+    "666Handling": 85,
+
+    "996TopSpeed": 165,
+    "9960to60": 4.0,
+    "996Handling": 85,
+
+    "969TopSpeed": 165,
+    "9690to60": 4.2,
+    "969Handling": 89,
+
+    "699TopSpeed": 162,
+    "6990to60": 4.0,
+    "699Handling": 89
+}

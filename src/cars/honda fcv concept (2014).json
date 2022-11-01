@@ -1,0 +1,49 @@
+{
+    "rq": 27,
+    "make": "Honda",
+    "model": "FCV Concept",
+    "modelYear": 2014,
+    "country": "JP",
+    "topSpeed": 124,
+    "0to60": 10.5,
+    "handling": 72,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+	
+    "weight": 1900,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hydrogen",
+    "mra": 46.6,
+    "ola": 76.92,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011580559518093362/honda_fcv_concept.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011591128769892452/honda_fcv.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 128, 
+"3330to60": 10.0, 
+"333Handling": 74,
+
+"666TopSpeed": 132, 
+"6660to60": 9.5, 
+"666Handling": 77,
+
+"699TopSpeed": 132, 
+"6990to60": 8.9, 
+"699Handling": 80,
+
+"969TopSpeed": 137, 
+"9690to60": 9.5, 
+"969Handling": 80,
+
+"996TopSpeed": 137, 
+"9960to60": 8.9, 
+"996Handling": 77
+}

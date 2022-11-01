@@ -1,0 +1,50 @@
+{
+    "rq": 26,
+    "make": "Mercedes-Benz",
+    "model": "G 270 CDI SWB",
+    "modelYear": 2002,
+    "country": "DE",
+    "topSpeed": 99,
+    "0to60": 12.5,
+    "handling": 59,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 2200,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 12.33,
+    "ola": 64.00,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/952618513510572062/Mercedes-BenzG270CDISWB.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1036604146549264404/G270CDISWB2002.png",
+    "creator": "Havvy",
+
+    "333TopSpeed": 104,
+    "3330to60": 11.9,
+    "333Handling": 61,
+
+    "666TopSpeed": 110,
+    "6660to60": 11.3,
+    "666Handling": 63,
+
+    "996TopSpeed": 115,
+    "9960to60": 10.6,
+    "996Handling": 63,
+
+    "969TopSpeed": 115,
+    "9690to60": 11.3,
+    "969Handling": 65,
+
+    "699TopSpeed": 110,
+    "6990to60": 10.6,
+    "699Handling": 65
+}

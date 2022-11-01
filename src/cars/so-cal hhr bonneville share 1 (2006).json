@@ -1,0 +1,49 @@
+{
+    "rq": 55,
+    "make": ["SO-CAL", "Chevrolet"],
+    "model": "HHR Bonneville Share 1",
+    "modelYear": 2006,
+    "country": "US",
+    "topSpeed": 247,
+    "0to60": 3.7,
+    "handling": 39,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner"],
+    "isPrize": true,
+	
+    "weight": 1451,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Wagon",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 68.52,
+    "ola": 102.7,
+    "description": "One does not simply reach McLaren F1 speeds in a wagon and not crash.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011581673760116736/so-cal_hhr.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011592866931429397/socal_hhr.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 249, 
+"3330to60": 3.5, 
+"333Handling": 40,
+
+"666TopSpeed": 251, 
+"6660to60": 3.3, 
+"666Handling": 42,
+
+"699TopSpeed": 251, 
+"6990to60": 3.1, 
+"699Handling": 43,
+
+"969TopSpeed": 253, 
+"9690to60": 3.3, 
+"969Handling": 43,
+
+"996TopSpeed": 253, 
+"9960to60": 3.1, 
+"996Handling": 42
+}

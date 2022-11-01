@@ -1,0 +1,49 @@
+{
+    "rq": 38,
+    "make": "Lexus",
+    "model": "GX 400",
+    "modelYear": 2013,
+    "country": "JP",
+    "topSpeed": 112,
+    "0to60": 9.5,
+    "handling": 65,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+	
+    "weight": 2350,
+    "gc": "High",
+    "seatCount": 7,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 49.48,
+    "ola": 63.16,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011601598197284924/lexus_gx_400.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011601619856670730/gx_400.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 117, 
+"3330to60": 9.0, 
+"333Handling": 67,
+
+"666TopSpeed": 121, 
+"6660to60": 8.6, 
+"666Handling": 69,
+
+"699TopSpeed": 121, 
+"6990to60": 8.1, 
+"699Handling": 72,
+
+"969TopSpeed": 126, 
+"9690to60": 8.6, 
+"969Handling": 72,
+
+"996TopSpeed": 126, 
+"9960to60": 8.1, 
+"996Handling": 69
+}

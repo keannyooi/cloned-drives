@@ -1,0 +1,49 @@
+{
+    "rq": 74,
+    "make": ["Hennessey", "Chevrolet"],
+    "model": "Camaro SS HPE700 LS9",
+    "modelYear": 2010,
+    "country": "US",
+    "topSpeed": 201,
+    "0to60": 3.8,
+    "handling": 87,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner"],
+    "isPrize": false,
+	
+    "weight": 1783,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 90.48,
+    "ola": 89.47,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1012900723790463006/hennessey_camaro_ss_hpe700_ls9.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1012903522460762193/hennessey_camaro_ls9.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 204, 
+"3330to60": 3.6, 
+"333Handling": 90,
+
+"666TopSpeed": 206, 
+"6660to60": 3.4, 
+"666Handling": 93,
+
+"699TopSpeed": 206, 
+"6990to60": 3.2, 
+"699Handling": 97,
+
+"969TopSpeed": 209, 
+"9690to60": 3.4, 
+"969Handling": 97,
+
+"996TopSpeed": 209, 
+"9960to60": 3.2, 
+"996Handling": 93
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 99,
+    "make": ["Hennessey", "Jeep"],
+    "model": "Trackhawk HPE1000 Supercharged",
+    "modelYear": 2018,
+    "country": "US",
+    "topSpeed": 204,
+    "0to60": 2.6,
+    "handling": 85,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Tuner"],
+    "isPrize": false,
+	
+    "weight": 2450,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 72.22,
+    "ola": 76.92,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1036440370973786213/HenTrackHawkHPE1000.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1036440767146774538/HenTrakcHawkHPE1000.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 207, 
+"3330to60": 2.5, 
+"333Handling": 88,
+
+"666TopSpeed": 209, 
+"6660to60": 2.3, 
+"666Handling": 91,
+
+"699TopSpeed": 209, 
+"6990to60": 2.2, 
+"699Handling": 94,
+
+"969TopSpeed": 212, 
+"9690to60": 2.3, 
+"969Handling": 94,
+
+"996TopSpeed": 212, 
+"9960to60": 2.2, 
+"996Handling": 91
+}

@@ -1,0 +1,50 @@
+{
+    "rq": 92,
+    "make": "Audi",
+    "model": "SQ8 TFSI quattro",
+    "modelYear": 2020,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 3.9,
+    "handling": 83,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 2270,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 69.64,
+    "ola": 76.92,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/944891437890281472/SQ8_TFSI_quattro_20.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1036612323885985842/Sq8TFSI.png",
+    "creator": "Macan",
+
+    "333TopSpeed": 158,
+    "3330to60": 3.7,
+    "333Handling": 86,
+
+    "666TopSpeed": 162,
+    "6660to60": 3.5,
+    "666Handling": 88,
+
+    "996TopSpeed": 165,
+    "9960to60": 3.3,
+    "996Handling": 88,
+
+    "969TopSpeed": 165,
+    "9690to60": 3.5,
+    "969Handling": 92,
+
+    "699TopSpeed": 162,
+    "6990to60": 3.3,
+    "699Handling": 92
+}

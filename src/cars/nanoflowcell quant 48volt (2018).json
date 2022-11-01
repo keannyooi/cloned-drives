@@ -1,0 +1,49 @@
+{
+    "rq": 96,
+    "make": "nanoFlowcell",
+    "model": "Quant 48Volt",
+    "modelYear": 2018,
+    "country": "CH",
+    "topSpeed": 186,
+    "0to60": 2.3,
+    "handling": 92,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Rest of The World", "Innovative", "Unique", "Eco-Friendly"],
+    "isPrize": false,
+	
+    "weight": 1820,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Electric",
+    "mra": 86.36,
+    "ola": 77.69,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011581168891744286/nanoflowcell_quant_48volt.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011592409282527292/quant_48volt.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 189, 
+"3330to60": 2.2, 
+"333Handling": 95,
+
+"666TopSpeed": 192, 
+"6660to60": 2.1, 
+"666Handling": 98,
+
+"699TopSpeed": 192, 
+"6990to60": 2.0, 
+"699Handling": 102,
+
+"969TopSpeed": 194, 
+"9690to60": 2.1, 
+"969Handling": 102,
+
+"996TopSpeed": 194, 
+"9960to60": 2.0, 
+"996Handling": 98
+}

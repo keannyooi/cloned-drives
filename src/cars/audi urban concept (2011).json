@@ -1,0 +1,49 @@
+{
+    "rq": 7,
+    "make": "Audi",
+    "model": "Urban Concept",
+    "modelYear": 2011,
+    "country": "DE",
+    "topSpeed": 62,
+    "0to60": 16.3,
+    "handling": 68,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Concept", "Unique", "Eco-Friendly"],
+    "isPrize": false,
+	
+    "weight": 480,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Electric",
+    "mra": 0,
+    "ola": 61.27,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011590106542518362/audi_urban_concept.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011593369136398438/urban.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 70, 
+"3330to60": 15.5, 
+"333Handling": 70,
+
+"666TopSpeed": 79, 
+"6660to60": 14.7, 
+"666Handling": 72,
+
+"699TopSpeed": 79, 
+"6990to60": 13.9, 
+"699Handling": 75,
+
+"969TopSpeed": 87, 
+"9690to60": 14.7, 
+"969Handling": 75,
+
+"996TopSpeed": 87, 
+"9960to60": 13.9, 
+"996Handling": 72
+}

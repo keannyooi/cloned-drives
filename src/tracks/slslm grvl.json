@@ -1,0 +1,18 @@
+{
+	"trackName": "Slalom Test (Gravel)",
+	"weather": "Sunny",
+	"surface": "Gravel",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://media.discordapp.net/attachments/1003260397786243142/1036295097156902942/Rally-Mexico-2018.jpg",
+	"map": "https://media.discordapp.net/attachments/716917404868935691/809357739229839370/unknown.png",
+
+	"specsDistr": {
+		"topSpeed": 0,
+		"0to60": 20,
+		"handling": 100,
+		"weight": 80,
+		"mra": 0,
+		"ola": 15
+	}
+}

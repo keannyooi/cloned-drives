@@ -1,0 +1,49 @@
+{
+    "rq": 29,
+    "make": "Chevrolet",
+    "model": "Tru 140S",
+    "modelYear": 2012,
+    "country": "US",
+    "topSpeed": 130,
+    "0to60": 8.4,
+    "handling": 80,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Concept", "Unique"],
+    "isPrize": false,
+	
+    "weight": 1400,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 53.85,
+    "ola": 73.81,
+    "description": "One of the cars that could of make GM a trillion dolla",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011578546403164191/chevrolet_tru_140s.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011593282993791047/tru_140s.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 134, 
+"3330to60": 8.0, 
+"333Handling": 83,
+
+"666TopSpeed": 138, 
+"6660to60": 7.6, 
+"666Handling": 85,
+
+"699TopSpeed": 138, 
+"6990to60": 7.1, 
+"699Handling": 89,
+
+"969TopSpeed": 142, 
+"9690to60": 7.6, 
+"969Handling": 89,
+
+"996TopSpeed": 142, 
+"9960to60": 7.1, 
+"996Handling": 85
+}

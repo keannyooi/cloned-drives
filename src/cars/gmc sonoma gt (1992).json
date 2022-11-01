@@ -1,0 +1,49 @@
+{
+    "rq": 36,
+    "make": "GMC",
+    "model": "Sonoma GT",
+    "modelYear": 1992,
+    "country": "US",
+    "topSpeed": 112,
+    "0to60": 8.0,
+    "handling": 72,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+	
+    "weight": 1503,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Pickup",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 44.15,
+    "ola": 64.8,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011580252146892841/gmc_sonoma_gt.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011592981695954954/sonoma_gt.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 117, 
+"3330to60": 7.6, 
+"333Handling": 74,
+
+"666TopSpeed": 121, 
+"6660to60": 7.2, 
+"666Handling": 77,
+
+"699TopSpeed": 121, 
+"6990to60": 6.8, 
+"699Handling": 80,
+
+"969TopSpeed": 126, 
+"9690to60": 7.2, 
+"969Handling": 80,
+
+"996TopSpeed": 126, 
+"9960to60": 6.8, 
+"996Handling": 77
+}

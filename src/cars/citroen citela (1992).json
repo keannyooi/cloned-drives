@@ -1,0 +1,49 @@
+{
+    "rq": 1,
+    "make": "Citreon",
+    "model": "Citela",
+    "modelYear": 1992,
+    "country": "FR",
+    "topSpeed": 69,
+    "0to60": 22.2,
+    "handling": 56,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly", "Concept"],
+    "isPrize": false,
+	
+    "weight": 790,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 0,
+    "ola": 72.07,
+    "description": "everything....just everything...",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011578786883571762/citroen_citela.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011599339304538152/citela.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 77, 
+"3330to60": 21.1, 
+"333Handling": 58,
+
+"666TopSpeed": 84, 
+"6660to60": 20.0, 
+"666Handling": 60,
+
+"699TopSpeed": 84, 
+"6990to60": 18.9, 
+"699Handling": 62,
+
+"969TopSpeed": 92, 
+"9690to60": 20.0, 
+"969Handling": 62,
+
+"996TopSpeed": 92, 
+"9960to60": 18.9, 
+"996Handling": 60
+}

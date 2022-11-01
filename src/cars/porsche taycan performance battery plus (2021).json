@@ -1,0 +1,50 @@
+{
+    "rq": 61,
+    "make": "Porsche",
+    "model": "Taycan Performance Battery Plus",
+    "modelYear": 2021,
+    "country": "DE",
+    "topSpeed": 145,
+    "0to60": 4.9,
+    "handling": 80,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eco-Friendyl"],
+    "isPrize": false,
+
+    "weight": 2186,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Electric",
+    "mra": 84.48,
+    "ola": 77.55,
+    "description": "Performance.",
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/916453329138241566/B.PorscheTaycanPBP.png
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1036274320424566814/Porsche_Taycan_Plus.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 149,
+    "3330to60": 4.7,
+    "333Handling": 83,
+
+    "666TopSpeed": 152,
+    "6660to60": 4.4,
+    "666Handling": 85,
+
+    "996TopSpeed": 156,
+    "9960to60": 4.2,
+    "996Handling": 85,
+
+    "969TopSpeed": 156,
+    "9690to60": 4.4,
+    "969Handling": 89,
+
+    "699TopSpeed": 152,
+    "6990to60": 4.2,
+    "699Handling": 89
+}

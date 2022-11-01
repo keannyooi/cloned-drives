@@ -1,0 +1,49 @@
+{
+    "rq": 36,
+    "make": "Ruf",
+    "model": "eRuf Model A",
+    "modelYear": 2008,
+    "country": "DE",
+    "topSpeed": 140,
+    "0to60": 6.8,
+    "handling": 81,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Concept", "Unique", "Eco-Friendly"],
+    "isPrize": false,
+	
+    "weight": 1910,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Electric",
+    "mra": 58.57,
+    "ola": 82.85,
+    "description": "Insane? tell me the last time you have seen a sensible Ruf.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011590292081741864/eruf_model_a.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011601218969288765/eruf.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 144, 
+"3330to60": 6.5, 
+"333Handling": 84,
+
+"666TopSpeed": 147, 
+"6660to60": 6.1, 
+"666Handling": 86,
+
+"699TopSpeed": 147, 
+"6990to60": 5.8, 
+"699Handling": 90,
+
+"969TopSpeed": 151, 
+"9690to60": 6.1, 
+"969Handling": 90,
+
+"996TopSpeed": 151, 
+"9960to60": 5.8, 
+"996Handling": 86
+}

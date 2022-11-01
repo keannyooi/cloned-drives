@@ -1,0 +1,49 @@
+{
+    "rq": 68,
+    "make": ["Hennessey", "Chevrolet"],
+    "model": "Camaro SS HPE550",
+    "modelYear": 2009,
+    "country": "US",
+    "topSpeed": 169,
+    "0to60": 4.0,
+    "handling": 81,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner"],
+    "isPrize": false,
+	
+    "weight": 1783,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 95.18,
+    "ola": 69.04,
+    "description": "The Z/28 before the Z/28.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1012900641758253158/hennessey_camaro_ss_hpe550.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1012903525396775022/hennessey_camaro.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 172, 
+"3330to60": 3.8, 
+"333Handling": 84,
+
+"666TopSpeed": 175, 
+"6660to60": 3.6, 
+"666Handling": 86,
+
+"699TopSpeed": 175, 
+"6990to60": 3.4, 
+"699Handling": 90,
+
+"969TopSpeed": 178, 
+"9690to60": 3.6, 
+"969Handling": 90,
+
+"996TopSpeed": 178, 
+"9960to60": 3.4, 
+"996Handling": 86
+}

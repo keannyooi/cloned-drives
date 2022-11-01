@@ -1,0 +1,49 @@
+{
+    "rq": 35,
+    "make": "Ruf",
+    "model": "eRuf Stromster",
+    "modelYear": 2009,
+    "country": "DE",
+    "topSpeed": 93,
+    "0to60": 9.7,
+    "handling": 68,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Concept", "Unique", "Eco-Friendly"],
+    "isPrize": true,
+	
+    "weight": 2670,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 45,
+    "ola": 60.07,
+    "description": "Performance? tis but a small price to pay got eco-friendliness",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011590373983920128/eruf_stormster.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011601158831362140/stormster.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 99, 
+"3330to60": 9.2, 
+"333Handling": 70,
+
+"666TopSpeed": 104, 
+"6660to60": 8.7, 
+"666Handling": 72,
+
+"699TopSpeed": 104, 
+"6990to60": 8.2, 
+"699Handling": 75,
+
+"969TopSpeed": 110, 
+"9690to60": 8.7, 
+"969Handling": 75,
+
+"996TopSpeed": 110, 
+"9960to60": 8.2, 
+"996Handling": 72
+}

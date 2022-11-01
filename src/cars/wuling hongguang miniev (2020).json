@@ -1,0 +1,49 @@
+{
+    "rq": 6,
+    "make": "Wuling",
+    "model": "Hongguang MiniEV",
+    "modelYear": 2020,
+    "country": "CN",
+    "topSpeed": 62,
+    "0to60": 15.7,
+    "handling": 66,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly","Rest of The World"],
+    "isPrize": false,
+	
+    "weight": 665,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Electric",
+    "mra": 0,
+    "ola": 68.79,
+    "description": "Taking notes from japan really paid off, now they've managed to copy the success of kei cars.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011587374347726848/wuling_hongguang_miniev.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011591214589554748/hongguang_miniev.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 70, 
+"3330to60": 14.9, 
+"333Handling": 68,
+
+"666TopSpeed": 79, 
+"6660to60": 14.1, 
+"666Handling": 70,
+
+"699TopSpeed": 79, 
+"6990to60": 13.3, 
+"699Handling": 73,
+
+"969TopSpeed": 87, 
+"9690to60": 14.1, 
+"969Handling": 73,
+
+"996TopSpeed": 87, 
+"9960to60": 13.3, 
+"996Handling": 70
+}

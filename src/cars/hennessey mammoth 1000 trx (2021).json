@@ -1,0 +1,49 @@
+{
+    "rq": 95,
+    "make": ["Hennessey", "RAM", "Dodge"],
+    "model": "Mammoth 1000 TRX",
+    "modelYear": 2021,
+    "country": "US",
+    "topSpeed": 143,
+    "0to60": 3.2,
+    "handling": 66,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["Tuner"],
+    "isPrize": true,
+	
+    "weight": 2900,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "Pickup",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 76.19,
+    "ola": 68.75,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1036440671717961869/HenMam1000TRX.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1036440821064544336/HenMam1000TRX.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 147, 
+"3330to60": 3.0, 
+"333Handling": 68,
+
+"666TopSpeed": 150, 
+"6660to60": 2.9, 
+"666Handling": 70,
+
+"699TopSpeed": 150, 
+"6990to60": 2.7, 
+"699Handling": 73,
+
+"969TopSpeed": 154, 
+"9690to60": 2.9, 
+"969Handling": 73,
+
+"996TopSpeed": 154, 
+"9960to60": 2.7, 
+"996Handling": 70
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 63,
+    "make": ["Mercedes-AMG", "Mercedes-Benz"],
+    "model": "R 63 4MATIC",
+    "modelYear": 2007,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 4.7,
+    "handling": 73,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Sleeper"],
+    "isPrize": false,
+	
+    "weight": 2375,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 75.81,
+    "ola": 80.85,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011598147514024048/mercedes-amg_r_63.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011600694698049616/r63.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 158, 
+"3330to60": 4.5, 
+"333Handling": 75,
+
+"666TopSpeed": 162, 
+"6660to60": 4.2, 
+"666Handling": 78,
+
+"699TopSpeed": 162, 
+"6990to60": 4.0, 
+"699Handling": 81,
+
+"969TopSpeed": 165, 
+"9690to60": 4.2, 
+"969Handling": 81,
+
+"996TopSpeed": 165, 
+"9960to60": 4.0, 
+"996Handling": 78
+}

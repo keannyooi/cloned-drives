@@ -1,0 +1,49 @@
+{
+    "rq": 91,
+    "make": ["TechArt", "Porsche"],
+    "model": "911 Carrera 4S",
+    "modelYear": 2019,
+    "country": "DE",
+    "topSpeed": 195,
+    "0to60": 2.9,
+    "handling": 91,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Tuner"],
+    "isPrize": false,
+	
+    "weight": 1575,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 83.22,
+    "ola": 75,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1036397011118850169/TechArt911Carrera4S.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1036397250059964516/TechArtCarrera4S.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 198, 
+"3330to60": 2.8, 
+"333Handling": 94,
+
+"666TopSpeed": 200, 
+"6660to60": 2.6, 
+"666Handling": 97,
+
+"699TopSpeed": 200, 
+"6990to60": 2.5, 
+"699Handling": 101,
+
+"969TopSpeed": 203, 
+"9690to60": 2.6, 
+"969Handling": 101,
+
+"996TopSpeed": 203, 
+"9960to60": 2.5, 
+"996Handling": 97
+}

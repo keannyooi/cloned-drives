@@ -1,0 +1,49 @@
+{
+    "rq": 34,
+    "make": "Chevrolet",
+    "model": "Spark EV",
+    "modelYear": 2013,
+    "country": "US",
+    "topSpeed": 90,
+    "0to60": 7.7,
+    "handling": 71,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+	
+    "weight": 1359,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 41.89,
+    "ola": 83.12,
+    "description": "Small car with big Torque.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011578518930464768/chevrolet_spark_ev.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011593040751767562/spark_ev.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 96, 
+"3330to60": 7.3, 
+"333Handling": 73,
+
+"666TopSpeed": 102, 
+"6660to60": 6.9, 
+"666Handling": 76,
+
+"699TopSpeed": 102, 
+"6990to60": 6.5, 
+"699Handling": 79,
+
+"969TopSpeed": 107, 
+"9690to60": 6.9, 
+"969Handling": 79,
+
+"996TopSpeed": 107, 
+"9960to60": 6.5, 
+"996Handling": 76
+}

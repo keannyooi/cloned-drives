@@ -1,0 +1,50 @@
+{
+    "rq": 80,
+    "make": "Porsche",
+    "model": "Taycan 4S",
+    "modelYear": 2020,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 3.8,
+    "handling": 85,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+
+    "weight": 2300,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 77.55,
+    "ola": 84.21,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/916454931467227137/S.PorscheTaycan4S.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1036274365546901534/Porsche_Taycan_4S.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 158,
+    "3330to60": 3.6,
+    "333Handling": 88,
+
+    "666TopSpeed": 162,
+    "6660to60": 3.4,
+    "666Handling": 91,
+
+    "996TopSpeed": 165,
+    "9960to60": 3.2,
+    "996Handling": 91,
+
+    "969TopSpeed": 165,
+    "9690to60": 3.4,
+    "969Handling": 94,
+
+    "699TopSpeed": 162,
+    "6990to60": 3.2,
+    "699Handling": 94
+}

@@ -1,0 +1,18 @@
+{
+	"trackName": "Bristol Motor Speedway (Dirt)",
+	"weather": "Sunny",
+	"surface": "Dirt",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://media.discordapp.net/attachments/1003260397786243142/1034512630347464815/unknown.png?width=2110&height=1187",
+	"map": "https://media.discordapp.net/attachments/1003260397786243142/1034512658348650506/bristol.png",
+
+	"specsDistr": {
+		"topSpeed": 10,
+		"0to60": 85,
+		"handling": 20,
+		"weight": 0,
+		"mra": 90,
+		"ola": 10
+	}
+}

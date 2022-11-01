@@ -1,0 +1,49 @@
+{
+    "rq": 51,
+    "make": ["Ford Racing", "Ford"],
+    "model": "F-150 FX2 Sport Extreme",
+    "modelYear": 2007,
+    "country": "US",
+    "topSpeed": 139,
+    "0to60": 5.7,
+    "handling": 73,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner"],
+    "isPrize": false,
+	
+    "weight": 2507,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "Pickup",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 48.72,
+    "ola": 70.18,
+    "description": "For those who missed the Lightning.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1012900572996829326/ford_racing_f-150_fx2_sport_extreme.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1012903976318009464/f-150_sbort_xtreme.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 143, 
+"3330to60": 5.4, 
+"333Handling": 75,
+
+"666TopSpeed": 146, 
+"6660to60": 5.1, 
+"666Handling": 78,
+
+"699TopSpeed": 146, 
+"6990to60": 4.8, 
+"699Handling": 81,
+
+"969TopSpeed": 150, 
+"9690to60": 5.1, 
+"969Handling": 81,
+
+"996TopSpeed": 150, 
+"9960to60": 4.8, 
+"996Handling": 78
+}

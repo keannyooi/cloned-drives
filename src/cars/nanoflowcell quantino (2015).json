@@ -1,0 +1,49 @@
+{
+    "rq": 62,
+    "make": "nanoFlowcell",
+    "model": "Quantino",
+    "modelYear": 2015,
+    "country": "CH",
+    "topSpeed": 124,
+    "0to60": 4.8,
+    "handling": 81,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Rest of The World", "Innovative", "Unique", "Eco-Friendly"],
+    "isPrize": false,
+	
+    "weight": 1420,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 60.94,
+    "ola": 82.85,
+    "description": "Someone get Quentin Tarantino.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011580975622410251/nanoflowcell_quantino.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011592486248005712/quantino.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 128, 
+"3330to60": 4.6, 
+"333Handling": 84,
+
+"666TopSpeed": 132, 
+"6660to60": 4.3, 
+"666Handling": 86,
+
+"699TopSpeed": 132, 
+"6990to60": 4.1, 
+"699Handling": 90,
+
+"969TopSpeed": 137, 
+"9690to60": 4.3, 
+"969Handling": 90,
+
+"996TopSpeed": 137, 
+"9960to60": 4.1, 
+"996Handling": 86
+}

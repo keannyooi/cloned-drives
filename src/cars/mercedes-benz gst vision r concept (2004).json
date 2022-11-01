@@ -1,0 +1,49 @@
+{
+    "rq": 36,
+    "make": "Mercedes-Benz",
+    "model": "GST Vision R Concept",
+    "modelYear": 2004,
+    "country": "DE",
+    "topSpeed": 138,
+    "0to60": 8.5,
+    "handling": 66,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Concept", "Unique"],
+    "isPrize": false,
+	
+    "weight": 2300,
+    "gc": "Medium",
+    "seatCount": 7,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 51.2,
+    "ola": 68.24,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011598215142981652/mercedes-benz_gst_vision_r.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011601420102942720/gst_vision_r.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 142, 
+"3330to60": 8.1, 
+"333Handling": 68,
+
+"666TopSpeed": 146, 
+"6660to60": 7.7, 
+"666Handling": 70,
+
+"699TopSpeed": 146, 
+"6990to60": 7.2, 
+"699Handling": 73,
+
+"969TopSpeed": 149, 
+"9690to60": 7.7, 
+"969Handling": 73,
+
+"996TopSpeed": 149, 
+"9960to60": 7.2, 
+"996Handling": 70
+}

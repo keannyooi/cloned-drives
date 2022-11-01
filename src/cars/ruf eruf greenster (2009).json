@@ -1,0 +1,49 @@
+{
+    "rq": 61,
+    "make": "Ruf",
+    "model": "eRuf Greenster",
+    "modelYear": 2009,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 4.8,
+    "handling": 87,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Concept", "Unique","Eco-Friendly"],
+    "isPrize": false,
+	
+    "weight": 1695,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Electric",
+    "mra": 66.39,
+    "ola": 84.92,
+    "description": "There is no shame in trying to save the planet.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011590335358586930/eruf_greenster.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011601251957477456/greenster.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 158, 
+"3330to60": 4.6, 
+"333Handling": 90,
+
+"666TopSpeed": 162, 
+"6660to60": 4.3, 
+"666Handling": 93,
+
+"699TopSpeed": 162, 
+"6990to60": 4.1, 
+"699Handling": 97,
+
+"969TopSpeed": 165, 
+"9690to60": 4.3, 
+"969Handling": 97,
+
+"996TopSpeed": 165, 
+"9960to60": 4.1, 
+"996Handling": 93
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 70,
+    "make": ["Citroen", "DS"],
+    "model": "Survolt",
+    "modelYear": 2010,
+    "country": "FR",
+    "topSpeed": 162,
+    "0to60": 4.7,
+    "handling": 90,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Track Day", "Unique", "Eco-Friendly"],
+    "isPrize": false,
+	
+    "weight": 1150,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Electric",
+    "mra": 83.93,
+    "ola": 97.87,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011579560640389150/citroen_survolt.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011593174059327548/survolt.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 165, 
+"3330to60": 4.5, 
+"333Handling": 93,
+
+"666TopSpeed": 168, 
+"6660to60": 4.2, 
+"666Handling": 96,
+
+"699TopSpeed": 168, 
+"6990to60": 4.0, 
+"699Handling": 100,
+
+"969TopSpeed": 172, 
+"9690to60": 4.2, 
+"969Handling": 100,
+
+"996TopSpeed": 172, 
+"9960to60": 4.0, 
+"996Handling": 96
+}

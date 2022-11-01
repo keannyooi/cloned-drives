@@ -1,0 +1,49 @@
+{
+    "rq": 40,
+    "make": ["Paxton", "Lincoln"],
+    "model": "Blackwood",
+    "modelYear": 2002,
+    "country": "US",
+    "topSpeed": 124,
+    "0to60": 6.3,
+    "handling": 66,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner"],
+    "isPrize": false,
+	
+    "weight": 2535,
+    "gc": "High",
+    "seatCount": 4,
+    "bodyStyle": "Pickup",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 54.37,
+    "ola": 82.02,
+    "description": "....why?",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011581311409991760/paxton_blackwood.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011592369264668713/paxton_blackwood.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 128, 
+"3330to60": 6.0, 
+"333Handling": 68,
+
+"666TopSpeed": 132, 
+"6660to60": 5.7, 
+"666Handling": 70,
+
+"699TopSpeed": 132, 
+"6990to60": 5.4, 
+"699Handling": 73,
+
+"969TopSpeed": 137, 
+"9690to60": 5.7, 
+"969Handling": 73,
+
+"996TopSpeed": 137, 
+"9960to60": 5.4, 
+"996Handling": 70
+}

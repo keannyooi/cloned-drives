@@ -1,0 +1,50 @@
+{
+    "rq": 38,
+    "make": "Honda",
+    "model": "Lagreat",
+    "modelYear": 2002,
+    "country": "JP",
+    "topSpeed": 120,
+    "0to60": 7.7,
+    "handling": 71,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 1970,
+    "gc": "Medium",
+    "seatCount": 7,
+    "bodyStyle": "Minivan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 61.23,
+    "ola": 69.31,
+    "description": "it's a rebadged Odyssey, there's nothing different other than a 3 kg weight difference hence the identical stats. sorta like the honda/acura mdx in game.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/859655474806521878/lagreat.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1036622870027182111/LaGreat.png",
+    "creator": "McNuggets",
+
+    "333TopSpeed": 124,
+    "3330to60": 7.3,
+    "333Handling": 73,
+
+    "666TopSpeed": 129,
+    "6660to60": 6.9,
+    "666Handling": 76,
+
+    "996TopSpeed": 133,
+    "9960to60": 6.5,
+    "996Handling": 76,
+
+    "969TopSpeed": 133,
+    "9690to60": 6.9,
+    "969Handling": 79,
+
+    "699TopSpeed": 129,
+    "6990to60": 6.5,
+    "699Handling": 79
+}

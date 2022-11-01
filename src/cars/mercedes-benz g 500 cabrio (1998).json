@@ -1,0 +1,50 @@
+{
+    "rq": 47,
+    "make": "Mercedes-Benz",
+    "model": "G 500 Cabrio",
+    "modelYear": 1998,
+    "country": "DE",
+    "topSpeed": 121,
+    "0to60": 7.3,
+    "handling": 64,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 2275,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": ["SUV", "Convertible"]
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 44.51,
+    "ola": 60.27,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/952618373328564315/Mercedes-BenzG500Cabrio.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1036607171741368410/G500cabrio.png",
+    "creator": "Havvy",
+
+    "333TopSpeed": 125,
+    "3330to60": 6.9,
+    "333Handling": 66,
+
+    "666TopSpeed": 130,
+    "6660to60": 6.6,
+    "666Handling": 68,
+
+    "996TopSpeed": 134,
+    "9960to60": 6.2,
+    "996Handling": 68,
+
+    "969TopSpeed": 134,
+    "9690to60": 6.6,
+    "969Handling": 71,
+
+    "699TopSpeed": 130,
+    "6990to60": 6.2,
+    "699Handling": 71
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 59,
+    "make": "Daihatsu",
+    "model": "TA-X80",
+    "modelYear": 1987,
+    "country": "JP",
+    "topSpeed": 155,
+    "0to60": 5.2,
+    "handling": 81,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Concept", "Unique","Year of the Rabbit"],
+    "isPrize": false,
+	
+    "weight": 880,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 64.2,
+    "ola": 73.08,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011579805210251284/daihatsu_ta-x80.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011593224072220792/ta-x90.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 158, 
+"3330to60": 4.9, 
+"333Handling": 84,
+
+"666TopSpeed": 162, 
+"6660to60": 4.7, 
+"666Handling": 86,
+
+"699TopSpeed": 162, 
+"6990to60": 4.4, 
+"699Handling": 90,
+
+"969TopSpeed": 165, 
+"9690to60": 4.7, 
+"969Handling": 90,
+
+"996TopSpeed": 165, 
+"9960to60": 4.4, 
+"996Handling": 86
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 49,
+    "make": "Citroen",
+    "model": "Revolte",
+    "modelYear": 2009,
+    "country": "FR",
+    "topSpeed": 140,
+    "0to60": 5.6,
+    "handling": 79,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Concept", "Hot Hatch", "Eco-Friendly"],
+    "isPrize": false,
+	
+    "weight": 1300,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 72.73,
+    "ola": 85.71,
+    "description": "The modern day 2CV which also gave birth to the Survolt.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011579536917409843/citroen_revolte.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011592553054867486/revolte.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 144, 
+"3330to60": 5.3, 
+"333Handling": 82,
+
+"666TopSpeed": 147, 
+"6660to60": 5.0, 
+"666Handling": 84,
+
+"699TopSpeed": 147, 
+"6990to60": 4.8, 
+"699Handling": 88,
+
+"969TopSpeed": 151, 
+"9690to60": 5.0, 
+"969Handling": 88,
+
+"996TopSpeed": 151, 
+"9960to60": 4.8, 
+"996Handling": 84
+}

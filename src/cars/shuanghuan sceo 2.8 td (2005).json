@@ -1,0 +1,49 @@
+{
+    "rq": 11,
+    "make": "Shuanghuan",
+    "model": "SCEO 2.8 TD",
+    "modelYear": 2005,
+    "country": "CN",
+    "topSpeed": 78,
+    "0to60": 22.1,
+    "handling": 61,
+    "driveType": "RWD",
+    "tyreType": "All-Surface",
+    "tags": ["Rest of The World"],
+    "isPrize": false,
+	
+    "weight": 1790,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 0,
+    "ola": 60.63,
+    "description": "The infamous Chinese copycat of the X5.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011587305141710889/shuanghuan_sceo_2.8_td.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011592697498325092/s-ceo_2.8.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 85, 
+"3330to60": 21.0, 
+"333Handling": 63,
+
+"666TopSpeed": 91, 
+"6660to60": 19.9, 
+"666Handling": 65,
+
+"699TopSpeed": 91, 
+"6990to60": 18.8, 
+"699Handling": 68,
+
+"969TopSpeed": 98, 
+"9690to60": 19.9, 
+"969Handling": 68,
+
+"996TopSpeed": 98, 
+"9960to60": 18.8, 
+"996Handling": 65
+}

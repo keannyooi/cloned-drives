@@ -1,0 +1,50 @@
+{
+    "rq": 58,
+    "make": ["Mercedes-Maybach", "Maybach", "Mercedes-Benz"],
+    "model": "G 650 Landulet",
+    "modelYear": 2017,
+    "country": "DE",
+    "topSpeed": 112,
+    "0to60": 5.8,
+    "handling": 63,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Unique"],
+    "isPrize": true,
+
+    "weight": 3330,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": ["SUV", "Convertible"],
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 72.5,
+    "ola": 62.07,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/952619290996113418/MaybachGLandau.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1036607339148615701/G650laund.png",
+    "creator": "Havvy",
+
+    "333TopSpeed": 117,
+    "3330to60": 5.5,
+    "333Handling": 65,
+
+    "666TopSpeed": 121,
+    "6660to60": 5.2,
+    "666Handling": 67,
+
+    "996TopSpeed": 126,
+    "9960to60": 4.9,
+    "996Handling": 67,
+
+    "969TopSpeed": 126,
+    "9690to60": 5.2,
+    "969Handling": 70,
+
+    "699TopSpeed": 121,
+    "6990to60": 4.9,
+    "699Handling": 70
+}

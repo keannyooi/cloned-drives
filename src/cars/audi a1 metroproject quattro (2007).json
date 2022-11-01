@@ -1,0 +1,50 @@
+{
+    "rq": 40,
+    "make": "Audi",
+    "model": "A1 metroproject quattro",
+    "modelYear": 2007,
+    "country": "DE",
+    "topSpeed": 125,
+    "0to60": 7.5,
+    "handling": 76,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Concept", "Unique"],
+    "isPrize": false,
+
+    "weight": 1280,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 53.96,
+    "ola": 66.67,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/978362327747416084/unknown.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1036682919919493190/a1_metroproject_hp.png",
+    "creator": "Lemon",
+
+    "333TopSpeed": 129,
+    "3330to60": 7.1,
+    "333Handling": 79,
+
+    "666TopSpeed": 133,
+    "6660to60": 6.8,
+    "666Handling": 81,
+
+    "996TopSpeed": 137,
+    "9960to60": 6.4,
+    "996Handling": 81,
+
+    "969TopSpeed": 137,
+    "9690to60": 6.8,
+    "969Handling": 84,
+
+    "699TopSpeed": 133,
+    "6990to60": 6.4,
+    "699Handling": 84
+}

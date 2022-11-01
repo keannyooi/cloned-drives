@@ -1,0 +1,49 @@
+{
+    "rq": 31,
+    "make": "Sono Motors",
+    "model": "Sion",
+    "modelYear": 2017,
+    "country": "DE",
+    "topSpeed": 87,
+    "0to60": 8.7,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Unique", "Eco-Friendly"],
+    "isPrize": false,
+	
+    "weight": 1730,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 25,
+    "ola": 71.35,
+    "description": "Ah yes, the reverse vampire of vehicles.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011581714583261234/sono_motors_sion.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011592756247920741/sion.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 93, 
+"3330to60": 8.3, 
+"333Handling": 75,
+
+"666TopSpeed": 99, 
+"6660to60": 7.8, 
+"666Handling": 78,
+
+"699TopSpeed": 99, 
+"6990to60": 7.4, 
+"699Handling": 81,
+
+"969TopSpeed": 105, 
+"9690to60": 7.8, 
+"969Handling": 81,
+
+"996TopSpeed": 105, 
+"9960to60": 7.4, 
+"996Handling": 78
+}

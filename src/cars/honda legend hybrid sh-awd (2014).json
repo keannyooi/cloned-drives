@@ -1,0 +1,50 @@
+{
+    "rq": 66,
+    "make": "Honda",
+    "model": "Legend Hybrid SH-AWD",
+    "modelYear": 2014,
+    "country": "JP",
+    "topSpeed": 155,
+    "0to60": 5.2,
+    "handling": 76,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+
+    "weight": 1956,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 61.9,
+    "ola": 88.64,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/859655418632208424/14_legend.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1036621967412969542/LEGENDSHAWD14.png",
+    "creator": "McNuggets",
+
+    "333TopSpeed": 158,
+    "3330to60": 4.9,
+    "333Handling": 78,
+
+    "666TopSpeed": 162,
+    "6660to60": 4.7,
+    "666Handling": 81,
+
+    "996TopSpeed": 165,
+    "9960to60": 4.4,
+    "996Handling": 81,
+
+    "969TopSpeed": 165,
+    "9690to60": 4.7,
+    "969Handling": 84,
+
+    "699TopSpeed": 162,
+    "6990to60": 4.4,
+    "699Handling": 84
+}

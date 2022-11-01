@@ -1,0 +1,50 @@
+{
+    "rq": 64,
+    "make": "Audi",
+    "model": "Q8 50 TDI quattro S line",
+    "modelYear": 2018,
+    "country": "DE",
+    "topSpeed": 151,
+    "0to60": 6.3,
+    "handling": 77,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 2145,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 58.33,
+    "ola": 69.84,
+    "description": "Card by Macan.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/941980302924984371/Q8_50_TDI_quattro_S_line_18.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1036612549023649913/Q850TDI.png",
+    "creator": "Macan",
+
+    "333TopSpeed": 154,
+    "3330to60": 6.0,
+    "333Handling": 80,
+
+    "666TopSpeed": 158,
+    "6660to60": 5.7,
+    "666Handling": 82,
+
+    "996TopSpeed": 161,
+    "9960to60": 5.4,
+    "996Handling": 82,
+
+    "969TopSpeed": 161,
+    "9690to60": 5.7,
+    "969Handling": 85,
+
+    "699TopSpeed": 158,
+    "6990to60": 5.4,
+    "699Handling": 84
+}

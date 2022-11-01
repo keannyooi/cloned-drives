@@ -1,0 +1,49 @@
+{
+    "rq": 91,
+    "make": "Ares Design",
+    "model": "Project1",
+    "modelYear": 2019,
+    "country": "IT",
+    "topSpeed": 205,
+    "0to60": 3.0,
+    "handling": 92,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Supercar","Unique"],
+    "isPrize": false,
+	
+    "weight": 1423,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 85.71,
+    "ola": 86.66,
+    "description": "Rebirthed Pantera built on a Huracan.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1036389287995904040/aresDesignP1.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1036389795984850976/aresDesignP1.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 208, 
+"3330to60": 2.8, 
+"333Handling": 95,
+
+"666TopSpeed": 210, 
+"6660to60": 2.7, 
+"666Handling": 98,
+
+"699TopSpeed": 210, 
+"6990to60": 2.6, 
+"699Handling": 102,
+
+"969TopSpeed": 213, 
+"9690to60": 2.7, 
+"969Handling": 102,
+
+"996TopSpeed": 213, 
+"9960to60": 2.6, 
+"996Handling": 98
+}

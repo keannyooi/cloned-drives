@@ -1,0 +1,49 @@
+{
+    "rq": 45,
+    "make": ["Kleemann", "Mercedes-Benz"],
+    "model": "R50K",
+    "modelYear": 2006,
+    "country": "DK",
+    "topSpeed": 155,
+    "0to60": 5.6,
+    "handling": 71,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Tuner"],
+    "isPrize": false,
+	
+    "weight": 2275,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 67.47,
+    "ola": 78.57,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1036624198975631400/kleemann_r50k.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1036625126810210386/KleeMannR50K.png",
+    "creator": "Keanny",
+
+"333TopSpeed": 158, 
+"3330to60": 5.3, 
+"333Handling": 73,
+
+"666TopSpeed": 162, 
+"6660to60": 5.0, 
+"666Handling": 76,
+
+"699TopSpeed": 162, 
+"6990to60": 4.8, 
+"699Handling": 79,
+
+"969TopSpeed": 165, 
+"9690to60": 5.0, 
+"969Handling": 79,
+
+"996TopSpeed": 165, 
+"9960to60": 4.8, 
+"996Handling": 76
+}

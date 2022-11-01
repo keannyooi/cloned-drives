@@ -1,0 +1,50 @@
+{
+    "rq": 55,
+    "make": "Mercedes-Benz",
+    "model": "G 500 4x4²",
+    "modelYear": 2015,
+    "country": "DE",
+    "topSpeed": 131,
+    "0to60": 7.0,
+    "handling": 62,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["Unique", "Extreme Juggernaut"],
+    "isPrize": false,
+
+    "weight": 2946,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 47.62,
+    "ola": 74.29,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/952619208435453962/Mercedes-BenzG5004x4.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1036607274338222110/G5004x4squared.png",
+    "creator": "Havvy",
+
+    "333TopSpeed": 135,
+    "3330to60": 6.7,
+    "333Handling": 64,
+
+    "666TopSpeed": 139,
+    "6660to60": 6.3,
+    "666Handling": 66,
+
+    "996TopSpeed": 143,
+    "9960to60": 6.0,
+    "996Handling": 66,
+
+    "969TopSpeed": 143,
+    "9690to60": 6.3,
+    "969Handling": 69,
+
+    "699TopSpeed": 139,
+    "6990to60": 6.0,
+    "699Handling": 69
+}

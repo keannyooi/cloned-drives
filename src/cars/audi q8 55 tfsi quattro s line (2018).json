@@ -1,0 +1,50 @@
+{
+    "rq": 74,
+    "make": "Audi",
+    "model": "Q8 55 TFSI quattro S line",
+    "modelYear": 2018,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 5.5,
+    "handling": 79,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 2095,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 62.5,
+    "ola": 69.09,
+    "description": "Card by Macan.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/941981798219522058/Q8_55_TFSI_quattro_S_line_18.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1036612523484532746/Q855TFSI.png",
+    "creator": "Macan",
+
+    "333TopSpeed": 158,
+    "3330to60": 5.2,
+    "333Handling": 82,
+
+    "666TopSpeed": 162,
+    "6660to60": 5.0,
+    "666Handling": 84,
+
+    "996TopSpeed": 165,
+    "9960to60": 4.7,
+    "996Handling": 84,
+
+    "969TopSpeed": 165,
+    "9690to60": 5.0,
+    "969Handling": 88,
+
+    "699TopSpeed": 162,
+    "6990to60": 4.7,
+    "699Handling": 88
+}

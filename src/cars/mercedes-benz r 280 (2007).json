@@ -1,0 +1,49 @@
+{
+    "rq": 29,
+    "make": "Mercedes-Benz",
+    "model": "R 280",
+    "modelYear": 2007,
+    "country": "DE",
+    "topSpeed": 138,
+    "0to60": 9.5,
+    "handling": 66,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+	
+    "weight": 2175,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 58.28,
+    "ola": 67.37,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011598449600372876/mercedes-benz_r_280.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011600750612320306/r280.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 142, 
+"3330to60": 9.0, 
+"333Handling": 68,
+
+"666TopSpeed": 146, 
+"6660to60": 8.6, 
+"666Handling": 70,
+
+"699TopSpeed": 146, 
+"6990to60": 8.1, 
+"699Handling": 73,
+
+"969TopSpeed": 149, 
+"9690to60": 8.6, 
+"969Handling": 73,
+
+"996TopSpeed": 149, 
+"9960to60": 8.1, 
+"996Handling": 70
+}

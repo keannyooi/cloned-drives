@@ -1,0 +1,49 @@
+{
+    "rq": 44,
+    "make": "Hongqi",
+    "model": "Shengshi HQ430",
+    "modelYear": 2008,
+    "country": "CN",
+    "topSpeed": 155,
+    "0to60": 7.0,
+    "handling": 72,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Rest of The World"],
+    "isPrize": false,
+	
+    "weight": 1775,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 61.56,
+    "ola": 73.77,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011587187713789992/hongqi_shengshi_v8.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011591399017304114/hongqi_hq430.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 158, 
+"3330to60": 6.6, 
+"333Handling": 74,
+
+"666TopSpeed": 162, 
+"6660to60": 6.3, 
+"666Handling": 77,
+
+"699TopSpeed": 162, 
+"6990to60": 6.0, 
+"699Handling": 80,
+
+"969TopSpeed": 165, 
+"9690to60": 6.3, 
+"969Handling": 80,
+
+"996TopSpeed": 165, 
+"9960to60": 6.0, 
+"996Handling": 77
+}

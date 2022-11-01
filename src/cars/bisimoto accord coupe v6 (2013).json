@@ -1,0 +1,50 @@
+{
+    "rq": 65,
+    "make": ["Bisimoto", "Honda"],
+    "model": "Accord Coupe V6",
+    "modelYear": 2013,
+    "country": "US",
+    "topSpeed": 149,
+    "0to60": 4.8,
+    "handling": 80,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner", "Unique"],
+    "isPrize": false,
+
+    "weight": 1500,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 90.57,
+    "ola": 83.33,
+    "description": "Although not as obscenely overpowered as Bisimoto's Odyssey, the Accord still packs a mean punch.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/859655430737100830/bisimoto_accord.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1036623841608339466/AccordV6bisimoto.png",
+    "creator": "McNuggets",
+
+    "333TopSpeed": 152,
+    "3330to60": 4.6,
+    "333Handling": 83,
+
+    "666TopSpeed": 156,
+    "6660to60": 4.3,
+    "666Handling": 85,
+
+    "996TopSpeed": 159,
+    "9960to60": 4.1,
+    "996Handling": 85,
+
+    "969TopSpeed": 159,
+    "9690to60": 4.3,
+    "969Handling": 89,
+
+    "699TopSpeed": 156,
+    "6990to60": 4.1,
+    "699Handling": 89
+}

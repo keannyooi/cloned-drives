@@ -1,0 +1,49 @@
+{
+    "rq": 85,
+    "make": "Icona",
+    "model": "Nucleus",
+    "modelYear": 2018,
+    "country": "IT",
+    "topSpeed": 124,
+    "0to60": 3.4,
+    "handling": 80,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Concept", "Unique", "Eco-Friendly"],
+    "isPrize": true,
+	
+    "weight": 2050,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 53.13,
+    "ola": 67.65,
+    "description": "When its 3pm and you have a business meeting at 2:45pm.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011580607991644220/icona_nucleus.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011591939386245251/nucleus.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 128, 
+"3330to60": 3.2, 
+"333Handling": 83,
+
+"666TopSpeed": 132, 
+"6660to60": 3.1, 
+"666Handling": 85,
+
+"699TopSpeed": 132, 
+"6990to60": 2.9, 
+"699Handling": 89,
+
+"969TopSpeed": 137, 
+"9690to60": 3.1, 
+"969Handling": 89,
+
+"996TopSpeed": 137, 
+"9960to60": 2.9, 
+"996Handling": 85
+}

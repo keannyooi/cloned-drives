@@ -1,0 +1,50 @@
+{
+    "rq": 88,
+    "make": "Porsche",
+    "model": "Taycan Turbo",
+    "modelYear": 2019,
+    "country": "DE",
+    "topSpeed": 162,
+    "0to60": 3.1,
+    "handling": 87,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+
+    "weight": 2346,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 83.78,
+    "ola": 90.32,
+    "description": "Turbo but without.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/916730128506179644/S.PorscheTaycanTurbo.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1036274483918557256/Porsche_Taycan_Turbo.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 165,
+    "3330to60": 2.9,
+    "333Handling": 90,
+
+    "666TopSpeed": 168,
+    "6660to60": 2.8,
+    "666Handling": 93,
+
+    "996TopSpeed": 172,
+    "9960to60": 2.6,
+    "996Handling": 93,
+
+    "969TopSpeed": 172,
+    "9690to60": 2.8,
+    "969Handling": 97,
+
+    "699TopSpeed": 168,
+    "6990to60": 2.6,
+    "699Handling": 97
+}

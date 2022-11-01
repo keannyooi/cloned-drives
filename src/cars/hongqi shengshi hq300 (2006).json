@@ -1,0 +1,49 @@
+{
+    "rq": 36,
+    "make": "Hongqi",
+    "model": "Shengshi HQ300",
+    "modelYear": 2006,
+    "country": "CN",
+    "topSpeed": 146,
+    "0to60": 8.4,
+    "handling": 70,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Rest of The World"],
+    "isPrize": false,
+	
+    "weight": 1730,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 57.53,
+    "ola": 71.43,
+    "description": "Yup, just a rebadged Toyota Crown Majesta. Nothing to see here.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011587145217101844/hongqi_shengshi_v6.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011591370902868018/hongqi_hq300.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 150, 
+"3330to60": 8.0, 
+"333Handling": 72,
+
+"666TopSpeed": 153, 
+"6660to60": 7.6, 
+"666Handling": 75,
+
+"699TopSpeed": 153, 
+"6990to60": 7.1, 
+"699Handling": 78,
+
+"969TopSpeed": 157, 
+"9690to60": 7.6, 
+"969Handling": 78,
+
+"996TopSpeed": 157, 
+"9960to60": 7.1, 
+"996Handling": 75
+}

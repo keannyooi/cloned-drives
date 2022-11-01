@@ -1,0 +1,49 @@
+{
+    "rq": 91,
+    "make": "nanoFlowcell",
+    "model": "Quant e-Sportlimousine",
+    "modelYear": 2014,
+    "country": "CH",
+    "topSpeed": 236,
+    "0to60": 2.7,
+    "handling": 87,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Rest of The World", "Innovative", "Unique", "Eco-Friendly"],
+    "isPrize": false,
+	
+    "weight": 2300,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Electric",
+    "mra": 84.61,
+    "ola": 73.96,
+    "description": "Casually dropping 8000+ ib-ft torque.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011581073114812517/nanoflowcell_quant_e-sportlimo.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011592438806220840/quant_e.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 238, 
+"3330to60": 2.6, 
+"333Handling": 90,
+
+"666TopSpeed": 240, 
+"6660to60": 2.4, 
+"666Handling": 93,
+
+"699TopSpeed": 240, 
+"6990to60": 2.3, 
+"699Handling": 97,
+
+"969TopSpeed": 243, 
+"9690to60": 2.4, 
+"969Handling": 97,
+
+"996TopSpeed": 243, 
+"9960to60": 2.3, 
+"996Handling": 93
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 90,
+    "make": "nanoFlowcell",
+    "model": "Quant F",
+    "modelYear": 2015,
+    "country": "CH",
+    "topSpeed": 186,
+    "0to60": 2.7,
+    "handling": 88,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Rest of The World", "Innovative", "Unique", "Eco-Friendly"],
+    "isPrize": false,
+	
+    "weight": 2300,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Electric",
+    "mra": 108.33,
+    "ola": 73.96,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011581112260243568/nanoflowcell_quant_f.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011592473723809802/quant_f.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 189, 
+"3330to60": 2.6, 
+"333Handling": 91,
+
+"666TopSpeed": 192, 
+"6660to60": 2.4, 
+"666Handling": 94,
+
+"699TopSpeed": 192, 
+"6990to60": 2.3, 
+"699Handling": 98,
+
+"969TopSpeed": 194, 
+"9690to60": 2.4, 
+"969Handling": 98,
+
+"996TopSpeed": 194, 
+"9960to60": 2.3, 
+"996Handling": 94
+}

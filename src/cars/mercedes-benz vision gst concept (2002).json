@@ -1,0 +1,49 @@
+{
+    "rq": 52,
+    "make": "Mercedes-Benz",
+    "model": "Vision GST Concept",
+    "modelYear": 2002,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 6.2,
+    "handling": 68,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Concept", "Unique"],
+    "isPrize": false,
+	
+    "weight": 2270,
+    "gc": "Medium",
+    "seatCount": 7,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 65.26,
+    "ola": 74.19,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011598313964970065/mercedes-benz_vision_gst.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011601397835378798/gst.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 158, 
+"3330to60": 5.9, 
+"333Handling": 70,
+
+"666TopSpeed": 162, 
+"6660to60": 5.6, 
+"666Handling": 72,
+
+"699TopSpeed": 162, 
+"6990to60": 5.3, 
+"699Handling": 75,
+
+"969TopSpeed": 165, 
+"9690to60": 5.6, 
+"969Handling": 75,
+
+"996TopSpeed": 165, 
+"9960to60": 5.3, 
+"996Handling": 72
+}

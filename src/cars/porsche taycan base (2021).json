@@ -1,0 +1,50 @@
+{
+    "rq": 59,
+    "make": "Porsche",
+    "model": "Taycan Base",
+    "modelYear": 2021,
+    "country": "DE",
+    "topSpeed": 149,
+    "0to60": 5.1,
+    "handling": 80,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eco-Friendly"],
+    "isPrize": false,
+
+    "weight": 2125,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Electric",
+    "mra": 79.69,
+    "ola": 78.43,
+    "description": "Entry-level Taycan with RWD only.",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/916451241519890432/B.PorscheTaycanBase.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1036274287604150352/Porsche_Taycan_Base.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 147,
+    "3330to60": 4.8,
+    "333Handling": 83,
+
+    "666TopSpeed": 150,
+    "6660to60": 4.6,
+    "666Handling": 85,
+
+    "996TopSpeed": 154,
+    "9960to60": 4.3,
+    "996Handling": 85,
+
+    "969TopSpeed": 154,
+    "9690to60": 4.6,
+    "969Handling": 89,
+
+    "699TopSpeed": 150,
+    "6990to60": 4.3,
+    "699Handling": 89
+}

@@ -1,0 +1,18 @@
+{
+	"trackName": "City Streets Construction (Gravel)",
+	"weather": "Sunny",
+	"surface": "Gravel",
+	"speedbumps": 6,
+	"humps": 0,
+	"background": "https://media.discordapp.net/attachments/1003260397786243142/1034516118800445460/unknown.png",
+	"map": "https://media.discordapp.net/attachments/716917404868935691/809391184350937108/unknown.png",
+
+	"specsDistr": {
+		"topSpeed": 5,
+		"0to60": 70,
+		"handling": 85,
+		"weight": 0,
+		"mra": 15,
+		"ola": 10
+	}
+}

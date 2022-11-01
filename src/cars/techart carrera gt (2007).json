@@ -1,0 +1,49 @@
+{
+    "rq": 79,
+    "make": ["TechArt", "Porsche"],
+    "model": "Carrera GT",
+    "modelYear": 2007,
+    "country": "DE",
+    "topSpeed": 206,
+    "0to60": 3.6,
+    "handling": 88,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner"],
+    "isPrize": true,
+	
+    "weight": 1300,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 109.25,
+    "ola": 97.22,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1036397105482322081/techartCarreraGT.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1036397276379230268/TekArtCarreraGT.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 209, 
+"3330to60": 3.4, 
+"333Handling": 91,
+
+"666TopSpeed": 211, 
+"6660to60": 3.2, 
+"666Handling": 94,
+
+"699TopSpeed": 211, 
+"6990to60": 3.1, 
+"699Handling": 98,
+
+"969TopSpeed": 214, 
+"9690to60": 3.2, 
+"969Handling": 98,
+
+"996TopSpeed": 214, 
+"9960to60": 3.1, 
+"996Handling": 94
+}

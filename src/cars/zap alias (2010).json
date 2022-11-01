@@ -1,0 +1,49 @@
+{
+    "rq": 24,
+    "make": "ZAP",
+    "model": "Alias",
+    "modelYear": 2010,
+    "country": "US",
+    "topSpeed": 75,
+    "0to60": 7.8,
+    "handling": 77,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Unique", "Oddity", "Eco-Friendly"],
+    "isPrize": false,
+	
+    "weight": 1219,
+    "gc": "Low",
+    "seatCount": 3,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 0,
+    "ola": 74.36,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011582098148184064/zap_alias.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011593608002019359/zap.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 82, 
+"3330to60": 7.4, 
+"333Handling": 80,
+
+"666TopSpeed": 89, 
+"6660to60": 7.0, 
+"666Handling": 82,
+
+"699TopSpeed": 89, 
+"6990to60": 6.6, 
+"699Handling": 85,
+
+"969TopSpeed": 96, 
+"9690to60": 7.0, 
+"969Handling": 85,
+
+"996TopSpeed": 96, 
+"9960to60": 6.6, 
+"996Handling": 82
+}

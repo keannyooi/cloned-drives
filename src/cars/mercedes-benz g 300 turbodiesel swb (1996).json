@@ -1,0 +1,50 @@
+{
+    "rq": 32,
+    "make": "Mercedes-Benz",
+    "model": "G 300 Turbodiesel SWB",
+    "modelYear": 1996,
+    "country": "DE",
+    "topSpeed": 102,
+    "0to60": 13.4,
+    "handling": 58,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 2170,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 18.85,
+    "ola": 52.24,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/952618238880124988/Mercedes-BenzG300SWB.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1036605054087606302/G300TDSWB1996.png",
+    "creator": "Havvy",
+
+    "333TopSpeed": 107,
+    "3330to60": 12.7,
+    "333Handling": 60,
+
+    "666TopSpeed": 112,
+    "6660to60": 12.1,
+    "666Handling": 62,
+
+    "996TopSpeed": 117,
+    "9960to60": 11.4,
+    "996Handling": 62,
+
+    "969TopSpeed": 117,
+    "9690to60": 12.1,
+    "969Handling": 64,
+
+    "699TopSpeed": 112,
+    "6990to60": 11.4,
+    "699Handling": 64
+}

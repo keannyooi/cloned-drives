@@ -1,0 +1,49 @@
+{
+    "rq": 41,
+    "make": "Citroen",
+    "model": "Osee",
+    "modelYear": 2001,
+    "country": "FR",
+    "topSpeed": 149,
+    "0to60": 6.4,
+    "handling": 80,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Concept", "Oddity"],
+    "isPrize": false,
+	
+    "weight": 1200,
+    "gc": "Low",
+    "seatCount": 3,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 59.81,
+    "ola": 78.13,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011579517636198420/citroen_osee.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011592295545585714/osee.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 152, 
+"3330to60": 6.1, 
+"333Handling": 83,
+
+"666TopSpeed": 156, 
+"6660to60": 5.8, 
+"666Handling": 85,
+
+"699TopSpeed": 156, 
+"6990to60": 5.4, 
+"699Handling": 89,
+
+"969TopSpeed": 159, 
+"9690to60": 5.8, 
+"969Handling": 89,
+
+"996TopSpeed": 159, 
+"9960to60": 5.4, 
+"996Handling": 85
+}

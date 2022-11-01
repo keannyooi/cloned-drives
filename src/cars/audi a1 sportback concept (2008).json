@@ -1,0 +1,50 @@
+{
+    "rq": 37,
+    "make": "Audi",
+    "model": "A1 Sportback concept",
+    "modelYear": 2008,
+    "country": "DE",
+    "topSpeed": 124,
+    "0to60": 7.6,
+    "handling": 76,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Concept", "Unique"],
+    "isPrize": false,
+
+    "weight": 1270,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 53.9,
+    "ola": 68.42,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/978362528193188000/audi_a1_sportback_concept_for_cd.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1036682773999669379/a1_sportback_concept.png",
+    "creator": "Lemon",
+
+    "333TopSpeed": 128,
+    "3330to60": 7.2,
+    "333Handling": 79,
+
+    "666TopSpeed": 132,
+    "6660to60": 6.8,
+    "666Handling": 81,
+
+    "996TopSpeed": 137,
+    "9960to60": 6.5,
+    "996Handling": 81,
+
+    "969TopSpeed": 137,
+    "9690to60": 6.8,
+    "969Handling": 84,
+
+    "699TopSpeed": 132,
+    "6990to60": 6.5,
+    "699Handling": 84
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 65,
+    "make": "MG",
+    "model": "EX-E",
+    "modelYear": 1985,
+    "country": "GB",
+    "topSpeed": 171,
+    "0to60": 4.7,
+    "handling": 83,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Concept", "Unique"],
+    "isPrize": false,
+	
+    "weight": 1100,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 61.84,
+    "ola": 76.6,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011580885214179442/mg_ex-e.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011591671059857418/mg_ex-e.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 174, 
+"3330to60": 4.5, 
+"333Handling": 86,
+
+"666TopSpeed": 177, 
+"6660to60": 4.2, 
+"666Handling": 88,
+
+"699TopSpeed": 177, 
+"6990to60": 4.0, 
+"699Handling": 92,
+
+"969TopSpeed": 180, 
+"9690to60": 4.2, 
+"969Handling": 92,
+
+"996TopSpeed": 180, 
+"9960to60": 4.0, 
+"996Handling": 88
+}

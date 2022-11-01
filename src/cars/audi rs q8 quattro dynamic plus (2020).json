@@ -1,0 +1,50 @@
+{
+    "rq": 91,
+    "make": "Audi",
+    "model": "RS Q8 quattro Dynamic Plus",
+    "modelYear": 2020,
+    "country": "DE",
+    "topSpeed": 190,
+    "0to60": 3.5,
+    "handling": 88,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": [],
+    "isPrize": false,
+
+    "weight": 2315,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 71.43,
+    "ola": 80,
+    "description": "",
+
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/944932068993925120/RS_Q8_quattro_Dynamic_Plus_20.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1036612401551913041/RSQ8Dynamic.png",
+    "creator": "Macan",
+
+    "333TopSpeed": 193,
+    "3330to60": 3.3,
+    "333Handling": 91,
+
+    "666TopSpeed": 195,
+    "6660to60": 3.2,
+    "666Handling": 94,
+
+    "996TopSpeed": 198,
+    "9960to60": 3.0,
+    "996Handling": 94,
+
+    "969TopSpeed": 198,
+    "9690to60": 3.2,
+    "969Handling": 98,
+
+    "699TopSpeed": 195,
+    "6990to60": 3.0,
+    "699Handling": 98
+}

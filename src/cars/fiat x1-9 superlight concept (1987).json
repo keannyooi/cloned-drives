@@ -1,0 +1,49 @@
+{
+    "rq": 25,
+    "make": "Fiat",
+    "model": "X1/9 Superlight Concept",
+    "modelYear": 1987,
+    "country": "IT",
+    "topSpeed": 115,
+    "0to60": 10.4,
+    "handling": 76,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Concept", "Unique","Year of the Rabbit"],
+    "isPrize": false,
+	
+    "weight": 760,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 40.62,
+    "ola": 59.61,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1035913803197599754/x1-9superlight.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1035913835405643846/x1-9Superlight.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 120, 
+"3330to60": 9.9, 
+"333Handling": 79,
+
+"666TopSpeed": 124, 
+"6660to60": 9.4, 
+"666Handling": 81,
+
+"699TopSpeed": 124, 
+"6990to60": 8.8, 
+"699Handling": 84,
+
+"969TopSpeed": 129, 
+"9690to60": 9.4, 
+"969Handling": 84,
+
+"996TopSpeed": 129, 
+"9960to60": 8.8, 
+"996Handling": 81
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 4,
+    "make": "Tata",
+    "model": "Nano LX",
+    "modelYear": 2008,
+    "country": "IN",
+    "topSpeed": 65,
+    "0to60": 25.8,
+    "handling": 59,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Rest of The World"],
+    "isPrize": false,
+	
+    "weight": 635,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 0,
+    "ola": 53.49,
+    "description": "The ultimate shitbox, Also doubles as fire hazard.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011581902693601321/tata_nano_lx.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011591763053523075/nano.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 73, 
+"3330to60": 24.5, 
+"333Handling": 61,
+
+"666TopSpeed": 81, 
+"6660to60": 23.2, 
+"666Handling": 63,
+
+"699TopSpeed": 81, 
+"6990to60": 21.9, 
+"699Handling": 65,
+
+"969TopSpeed": 89, 
+"9690to60": 23.2, 
+"969Handling": 65,
+
+"996TopSpeed": 89, 
+"9960to60": 21.9, 
+"996Handling": 63
+}

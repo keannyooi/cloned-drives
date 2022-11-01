@@ -1,0 +1,49 @@
+{
+    "rq": 28,
+    "make": "Hongqi",
+    "model": "E-HS3 FWD",
+    "modelYear": 2019,
+    "country": "CN",
+    "topSpeed": 99,
+    "0to60": 9.7,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Rest of The World"],
+    "isPrize": false,
+	
+    "weight": 1742,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 41.77,
+    "ola": 76.29,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1011587554627293224/hongqi_e-hs3_fwd.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1011591245484793886/hongqi_e-hs3_fwd.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 104, 
+"3330to60": 9.2, 
+"333Handling": 75,
+
+"666TopSpeed": 110, 
+"6660to60": 8.7, 
+"666Handling": 78,
+
+"699TopSpeed": 110, 
+"6990to60": 8.2, 
+"699Handling": 81,
+
+"969TopSpeed": 115, 
+"9690to60": 8.7, 
+"969Handling": 81,
+
+"996TopSpeed": 115, 
+"9960to60": 8.2, 
+"996Handling": 78
+}
