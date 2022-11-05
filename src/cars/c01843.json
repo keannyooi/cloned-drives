@@ -5,7 +5,7 @@
     "modelYear": 2020,
     "country": "JP",
     "topSpeed": 115,
-    "0to60": 6,
+    "0to60": 6.0,
     "handling": 71,
     "driveType": "4WD",
     "tyreType": "All-Surface",
@@ -23,7 +23,7 @@
     "fuelType": "Hybrid",
     "mra": 66.67,
     "ola": 80,
-    "description": "The most expensive, most powerful and biggest Suzuki that isn't even a Suzuki. Card by Connor.",
+    "description": "The most expensive, most powerful and biggest Suzuki that isn't even a Suzuki.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/864781742308196372/B.SuzukiAcrossPHEV.png",
     "333TopSpeed": 120,
     "3330to60": 5.7,
@@ -40,6 +40,6 @@
     "699TopSpeed": 124,
     "6990to60": 5.1,
     "699Handling": 79,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1020060698484674721/Suzuki_Across_PHEV.png",
+    "creator": "Connor"
 }
