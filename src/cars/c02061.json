@@ -25,10 +25,10 @@
     "fuelType": "Petrol",
     "mra": 72.41,
     "ola": 90.48,
-    "description": "The original 650HP McLaren V8 was swapped out for a more practical Ford-Cosworth Pro Sports 3000 V6 in 2000, which made a comparatively measly 260 horsepower. Card by Based.",
-    "card": "https://cdn.discordapp.com/attachments/813162860884262972/944616208962035722/Ford_Transit_SuperVan_3_Slow.png",
+    "description": "The original 650HP McLaren V8 was swapped out for a more practical Ford-Cosworth Pro Sports 3000 V6 in 2000, which made a comparatively measly 260 horsepower.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/942139924847689798/Ford_Transit_SuperVan_3_Slow.png",
     "333TopSpeed": 153,
-    "3330to60": 4,
+    "3330to60": 4.0,
     "333Handling": 94,
     "666TopSpeed": 157,
     "6660to60": 3.8,
@@ -43,5 +43,5 @@
     "6990to60": 3.6,
     "699Handling": 101,
     "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "creator": "Based"
 }
