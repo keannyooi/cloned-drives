@@ -1,9 +1,6 @@
 {
     "rq": 53,
-    "make": [
-        "Hotchkis",
-        "Dodge"
-    ],
+    "make": ["Hotchkis","Dodge"],
     "model": "Challenger E-Max",
     "modelYear": 2008,
     "country": "US",
@@ -12,10 +9,7 @@
     "handling": 85,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner",
-        "Restomod"
-    ],
+    "tags": ["Tuner", "RestoMod"],
     "isPrize": false,
     "weight": 1598,
     "gc": "Low",

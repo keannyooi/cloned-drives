@@ -1,9 +1,6 @@
 {
     "rq": 54,
-    "make": [
-        "XV Motorsports",
-        "Dodge"
-    ],
+    "make": ["XV Motorsports","Dodge"],
     "model": "Challenger XV001",
     "modelYear": 2006,
     "country": "US",
@@ -12,10 +9,7 @@
     "handling": 81,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Restomod",
-        "Tuner"
-    ],
+    "tags": ["RestoMod", "Tuner"],
     "isPrize": false,
     "weight": 1686,
     "gc": "Low",
