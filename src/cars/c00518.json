@@ -5,7 +5,7 @@
     "modelYear": 1979,
     "country": "JP",
     "topSpeed": 106,
-    "0to60": 12,
+    "0to60": 12.0,
     "handling": 68,
     "driveType": "FWD",
     "tyreType": "Standard",
@@ -21,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 23.59,
     "ola": 56.67,
-    "description": "The Accord that started it all. Card by Connor",
+    "description": "The Accord that started it all.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/835447502819819520/E.HondaAccordCVCCEXL.png",
     "333TopSpeed": 111,
     "3330to60": 11.4,
@@ -38,6 +38,6 @@
     "699TopSpeed": 116,
     "6990to60": 10.2,
     "699Handling": 75,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1023198685187813376/honda.png",
+    "creator": "Connor"
 }

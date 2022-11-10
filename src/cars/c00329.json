@@ -5,7 +5,7 @@
     "modelYear": 2008,
     "country": "RO",
     "topSpeed": 108,
-    "0to60": 11,
+    "0to60": 11.0,
     "handling": 73,
     "driveType": "FWD",
     "tyreType": "Standard",
@@ -23,7 +23,7 @@
     "fuelType": "Petrol",
     "mra": 13.12,
     "ola": 70.9,
-    "description": "GOOD NEWS! Card by Spence.",
+    "description": "GOOD NEWS!",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/837480006389202955/image0.jpg",
     "333TopSpeed": 113,
     "3330to60": 10.5,
@@ -40,6 +40,6 @@
     "699TopSpeed": 118,
     "6990to60": 9.4,
     "699Handling": 81,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1023530923221856276/Dacia_Sandero_MPI.png",
+    "creator": "Spence"
 }

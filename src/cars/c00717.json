@@ -23,10 +23,10 @@
     "fuelType": "Hybrid",
     "mra": 48,
     "ola": 76.19,
-    "description": "City-sized, packed with compromise. Card by Macan.",
+    "description": "City-sized, packed with compromise.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/826520631540449380/UX250hAWD.png",
     "333TopSpeed": 117,
-    "3330to60": 8,
+    "3330to60": 8.0,
     "333Handling": 77,
     "666TopSpeed": 121,
     "6660to60": 7.6,
@@ -40,6 +40,6 @@
     "699TopSpeed": 121,
     "6990to60": 7.1,
     "699Handling": 83,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1020348386290958366/Lexus_UX_250h_AWD.png",
+    "creator": "Macan"
 }
