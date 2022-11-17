@@ -5,7 +5,7 @@
     "modelYear": 1976,
     "country": "DE",
     "topSpeed": 115,
-    "0to60": 12,
+    "0to60": 12.0,
     "handling": 70,
     "driveType": "RWD",
     "tyreType": "Standard",
@@ -25,7 +25,7 @@
     "fuelType": "Petrol",
     "mra": 38.71,
     "ola": 63.33,
-    "description": "This is the first Porsche with the FR layout ever made. Card by Spence.",
+    "description": "This is the first Porsche with the FR layout ever made.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/846831286492463104/image0.png",
     "333TopSpeed": 120,
     "3330to60": 11.4,
@@ -42,6 +42,6 @@
     "699TopSpeed": 124,
     "6990to60": 10.2,
     "699Handling": 78,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1025854964427395102/Porsche_924_2.0.png",
+    "creator": "Spence"
 }

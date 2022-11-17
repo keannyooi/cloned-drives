@@ -5,7 +5,7 @@
     "modelYear": 1951,
     "country": "AU",
     "topSpeed": 83,
-    "0to60": 19,
+    "0to60": 19.0,
     "handling": 60,
     "driveType": "RWD",
     "tyreType": "Standard",
@@ -23,7 +23,7 @@
     "fuelType": "Petrol",
     "mra": 11.11,
     "ola": 63.16,
-    "description": "Card by Exist.",
+    "description": "",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/865586956616335380/CD_Holden_50-2106_Ute.png",
     "333TopSpeed": 89,
     "3330to60": 18.1,
@@ -40,6 +40,6 @@
     "699TopSpeed": 96,
     "6990to60": 16.2,
     "699Handling": 67,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1025705596114182234/Holden_50_Ute.png",
+    "creator": "Exist"
 }

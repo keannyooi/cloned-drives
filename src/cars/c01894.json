@@ -24,10 +24,10 @@
     "fuelType": "Hybrid",
     "mra": 34.77,
     "ola": 72.38,
-    "description": "Card by Macan.",
+    "description": "",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/870245353524449330/Corolla_ZR_Hybrid_18.png",
     "333TopSpeed": 116,
-    "3330to60": 10,
+    "3330to60": 10.0,
     "333Handling": 76,
     "666TopSpeed": 120,
     "6660to60": 9.5,
@@ -41,6 +41,6 @@
     "699TopSpeed": 120,
     "6990to60": 8.9,
     "699Handling": 82,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1023567610144624720/Toyota_Corolla_ZR_Hybrid.png",
+    "creator": "Macan"
 }
