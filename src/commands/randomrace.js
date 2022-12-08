@@ -72,15 +72,15 @@ module.exports = {
                             let reward = 0, rqBonus = 0, rqBonusBase = 0, bmBonus = 0;
                             if (streak <= 58) {
                                 reward = streak * 500 + 1000;
-                                rqBonusBase = 100;
+                                rqBonusBase = 300;
                             }
                             else if (streak > 58 && streak <= 98) {
-                                reward = streak * 250 + 30000;
-                                rqBonusBase = 500;
+                                reward = streak * 250 + 15500;
+                                rqBonusBase = 1000;
                             }
                             else if (streak > 98 && streak <= 198) {
-                                reward = streak * 200 + 50000;
-                                rqBonusBase = 1000;
+                                reward = streak * 200 + 21000;
+                                rqBonusBase = 3000;
                             }
                             else {
                                 reward = streak * 100 + 100000;
