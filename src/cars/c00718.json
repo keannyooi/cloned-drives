@@ -21,10 +21,10 @@
     "fuelType": "Petrol",
     "mra": 69.74,
     "ola": 67.92,
-    "description": "Silky American luxury. With a British name. Card by Macan.",
+    "description": "Silky American luxury. With a British name.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/828047584932659200/Continental_3.0T_Reserve_AWD_17.png",
     "333TopSpeed": 149,
-    "3330to60": 5,
+    "3330to60": 5.0,
     "333Handling": 79,
     "666TopSpeed": 152,
     "6660to60": 4.8,
@@ -38,6 +38,6 @@
     "699TopSpeed": 152,
     "6990to60": 4.5,
     "699Handling": 84,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1050774939533316267/continental3tawdthing.png",
+    "creator": "Macan"
 }
