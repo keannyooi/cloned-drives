@@ -1,0 +1,49 @@
+{
+    "rq": 38,
+    "make": "Mercedes-Benz",
+    "model": "300 SL Leqierung",
+    "modelYear": 1955,
+    "country": "DE",
+    "topSpeed": 162,
+    "0to60": 8.3,
+    "handling": 69,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Ultra Expensive","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1203,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 80.34,
+    "ola": 74.69,
+    "description": "Not many of the 300 SL Alloy's were made and they fetch a huge price tag at auctions.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1040630261945204756/300SLAlloy.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1040630909726113802/300SLAlloy.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 165, 
+"3330to60": 7.9, 
+"333Handling": 71,
+
+"666TopSpeed": 168, 
+"6660to60": 7.5, 
+"666Handling": 74,
+
+"699TopSpeed": 168, 
+"6990to60": 7.1, 
+"699Handling": 77,
+
+"969TopSpeed": 172, 
+"9690to60": 7.5, 
+"969Handling": 77,
+
+"996TopSpeed": 172, 
+"9960to60": 7.1, 
+"996Handling": 74
+}

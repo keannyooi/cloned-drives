@@ -1,0 +1,49 @@
+{
+    "rq": 89,
+    "make": ["Pailix", "Lancia"],
+    "model": "Delta Evo Turbo",
+    "modelYear": 2011,
+    "country": "AT",
+    "topSpeed": 182,
+    "0to60": 2.8,
+    "handling": 92,
+    "driveType": "4WD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport","Tuner","Year of the Rabbit","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1030,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 82.35,
+    "ola": 87.85,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1050048141325508618/PailixDelta.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1050049486329753673/pailix.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 185, 
+"3330to60": 2.7, 
+"333Handling": 95,
+
+"666TopSpeed": 188, 
+"6660to60": 2.5, 
+"666Handling": 98,
+
+"699TopSpeed": 188, 
+"6990to60": 2.4, 
+"699Handling": 102,
+
+"969TopSpeed": 191, 
+"9690to60": 2.5, 
+"969Handling": 102,
+
+"996TopSpeed": 191, 
+"9960to60": 2.4, 
+"996Handling": 98
+}

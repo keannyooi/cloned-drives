@@ -1,0 +1,49 @@
+{
+    "rq": 37,
+    "make": "Lancia",
+    "model": "Rally 037 Stradale",
+    "modelYear": 1982,
+    "country": "IT",
+    "topSpeed": 137,
+    "0to60": 7.2,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Style Icon","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1186,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 52.57,
+    "ola": 67.06,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1042456687090610248/IMG_2842.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1042457294698467378/Rally037Stradale.png",
+    "creator": "Spence",
+
+"333TopSpeed": 141, 
+"3330to60": 6.8, 
+"333Handling": 77,
+
+"666TopSpeed": 145, 
+"6660to60": 6.5, 
+"666Handling": 80,
+
+"699TopSpeed": 145, 
+"6990to60": 6.1, 
+"699Handling": 83,
+
+"969TopSpeed": 148, 
+"9690to60": 6.5, 
+"969Handling": 83,
+
+"996TopSpeed": 148, 
+"9960to60": 6.1, 
+"996Handling": 80
+}

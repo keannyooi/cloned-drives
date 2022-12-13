@@ -1,0 +1,49 @@
+{
+    "rq": 89,
+    "make": "9ff",
+    "model": "GT2 Turbo \"Salvatore\"",
+    "modelYear": 2019,
+    "country": "DE",
+    "topSpeed": 223,
+    "0to60": 3.0,
+    "handling": 89,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Unique, Tuner","The Tyrol Tour"],
+    "isPrize": true,
+    
+    "weight": 1500,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 170.54,
+    "ola": 105.76,
+    "description": "Meet worlds fastest 997 GT2 iteration, except its not made by Porsche.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1040336883630231682/9ff_gt2_turbo_salvatore.png",
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1040336943881392218/9ff_gt2_turbo_salvatore_hud.png",
+    "creator": "c6",
+
+    "333TopSpeed": 225,
+    "3330to60": 2.9,
+    "333Handling": 92,
+
+    "666TopSpeed": 228,
+    "6660to60": 2.7,
+    "666Handling": 95,
+
+    "996TopSpeed": 230,
+    "9960to60": 2.6,
+    "996Handling": 95,
+
+    "969TopSpeed": 230,
+    "9690to60": 2.7,
+    "969Handling": 99,
+
+    "699TopSpeed": 228,
+    "6990to60": 2.6,
+    "699Handling": 99
+}

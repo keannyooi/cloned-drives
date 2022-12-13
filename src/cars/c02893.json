@@ -1,0 +1,49 @@
+{
+    "rq": 54,
+    "make": "BMW",
+    "model": "X3 3.0d",
+    "modelYear": 2004,
+    "country": "DE",
+    "topSpeed": 131,
+    "0to60": 7.6,
+    "handling": 76,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1810,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 63.86,
+    "ola": 68.42,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1044624186901004328/X330d2004.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1044624978693333082/x33.0d04.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 135, 
+"3330to60": 7.2, 
+"333Handling": 79,
+
+"666TopSpeed": 139, 
+"6660to60": 6.8, 
+"666Handling": 81,
+
+"699TopSpeed": 139, 
+"6990to60": 6.5, 
+"699Handling": 84,
+
+"969TopSpeed": 143, 
+"9690to60": 6.8, 
+"969Handling": 84,
+
+"996TopSpeed": 143, 
+"9960to60": 6.5, 
+"996Handling": 81
+}

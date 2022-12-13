@@ -1,0 +1,49 @@
+{
+    "rq": 26,
+    "make": "Porsche",
+    "model": "928",
+    "modelYear": 1977,
+    "country": "DE",
+    "topSpeed": 139,
+    "0to60": 7.7,
+    "handling": 73,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour"],
+    "isPrize": false,
+    
+    "weight": 1450,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 60.03,
+    "ola": 71.97,
+    "description": "When Porsche decided to throw a V8 in one of their cars.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1049098819230502982/porsche_928.png",
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1049099024722042960/porsche_928_hud.png",
+    "creator": "c6",
+
+    "333TopSpeed": 143,
+    "3330to60": 7.3,
+    "333Handling": 75,
+
+    "666TopSpeed": 146,
+    "6660to60": 6.9,
+    "666Handling": 78,
+
+    "996TopSpeed": 150,
+    "9960to60": 6.5,
+    "996Handling": 78,
+
+    "969TopSpeed": 150,
+    "9690to60": 6.9,
+    "969Handling": 81,
+
+    "699TopSpeed": 146,
+    "6990to60": 6.5,
+    "699Handling": 81
+}

@@ -1,0 +1,50 @@
+{
+    "rq": 44,
+    "make": "Skoda",
+    "model": "Octavia RS Combi TDI 4x4",
+    "modelYear": 2014,
+    "country": "CZ",
+    "topSpeed": 140,
+    "0to60": 7.4,
+    "handling": 80,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch","Rest of The World","The Tyrol Tour"],
+    "isPrize": false,
+
+
+    "weight": 1495,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 51.03,
+    "ola": 64.86,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1046425466506072064/C.SkodaOctavia3RSCombiTDI4x4.png",
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1046425956249780304/octavia3rscombitdi4.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 144,
+    "3330to60": 7.0,
+    "333Handling": 83,
+
+    "666TopSpeed": 147,
+    "6660to60": 6.7, 
+    "666Handling": 85,
+
+    "996TopSpeed": 151,
+    "9960to60": 6.3,
+    "996Handling": 85,
+
+    "969TopSpeed": 151,
+    "9690to60": 6.7,
+    "969Handling": 89,
+
+    "699TopSpeed": 147,
+    "6990to60": 6.3,
+    "699Handling": 89
+}

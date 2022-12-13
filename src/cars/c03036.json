@@ -1,0 +1,49 @@
+{
+    "rq": 100,
+    "make": "Pagani",
+    "model": "Huayra R",
+    "modelYear": 2021,
+    "country": "IT",
+    "topSpeed": 240,
+    "0to60": 2.4,
+    "handling": 98,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Track Day","Ultra Expensive","Unique","The Tyrol Tour"],
+    "isPrize": true,
+	
+    "weight": 1050,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 120,
+    "ola": 83.33,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1040600449390219324/HuayraR.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1040601628287451207/HuayraR.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 242, 
+"3330to60": 2.3, 
+"333Handling": 101,
+
+"666TopSpeed": 244, 
+"6660to60": 2.2, 
+"666Handling": 104,
+
+"699TopSpeed": 244, 
+"6990to60": 2.0, 
+"699Handling": 109,
+
+"969TopSpeed": 246, 
+"9690to60": 2.2, 
+"969Handling": 109,
+
+"996TopSpeed": 246, 
+"9960to60": 2.0, 
+"996Handling": 104
+}

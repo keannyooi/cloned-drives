@@ -1,0 +1,49 @@
+{
+    "rq": 46,
+    "make": "BMW",
+    "model": "X3 xDrive20d",
+    "modelYear": 2007,
+    "country": "DE",
+    "topSpeed": 127,
+    "0to60": 8.9,
+    "handling": 74,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1815,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 50.85,
+    "ola": 71.91,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1044624070697816137/X3xDrive20d.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1044624907293704263/x3xdrive20d.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 131, 
+"3330to60": 8.5, 
+"333Handling": 76,
+
+"666TopSpeed": 135, 
+"6660to60": 8.0, 
+"666Handling": 79,
+
+"699TopSpeed": 135, 
+"6990to60": 7.6, 
+"699Handling": 82,
+
+"969TopSpeed": 139, 
+"9690to60": 8.0, 
+"969Handling": 82,
+
+"996TopSpeed": 139, 
+"9960to60": 7.6, 
+"996Handling": 79
+}

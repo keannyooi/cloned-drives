@@ -1,0 +1,50 @@
+{
+    "rq": 25,
+    "make": "Alfa Romeo",
+    "model": "164 2.5 TD Super",
+    "modelYear": 1994,
+    "country": "IT",
+    "topSpeed": 124,
+    "0to60": 10.9,
+    "handling": 68,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour"],
+    "isPrize": false,
+
+
+    "weight": 1476,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 46.69,
+    "ola": 71.34,
+    "description": "TD... Top Drives... Turbo Diesel... Touch Down... Tower Defense...",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1043930443126411365/16425TD.png",
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1043929360693993532/16425TDS.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 128,
+    "3330to60": 10.4,
+    "333Handling": 70,
+
+    "666TopSpeed": 132,
+    "6660to60": 9.8, 
+    "666Handling": 72,
+
+    "996TopSpeed": 137,
+    "9960to60": 9.3,
+    "996Handling": 72,
+
+    "969TopSpeed": 137,
+    "9690to60": 9.8,
+    "969Handling": 75,
+
+    "699TopSpeed": 132,
+    "6990to60": 9.3,
+    "699Handling": 75
+}

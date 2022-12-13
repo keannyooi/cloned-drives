@@ -1,0 +1,49 @@
+{
+    "rq": 83,
+    "make": ["Posaidon", "Mercedes-AMG", "Mercedes-Benz"],
+    "model": "G 63",
+    "modelYear": 2015,
+    "country": "DE",
+    "topSpeed": 165,
+    "0to60": 4.0,
+    "handling": 69,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Tuner","Unique","Extreme Juggernaut","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 2650,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 79.21,
+    "ola": 82.25,
+    "description": "The fast box.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1042538790910165062/PosaidonG63.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1042539282281267301/posaidonG632015.png",
+    "creator": "Havvy",
+
+"333TopSpeed": 168, 
+"3330to60": 3.8, 
+"333Handling": 71,
+
+"666TopSpeed": 171, 
+"6660to60": 3.6, 
+"666Handling": 74,
+
+"699TopSpeed": 171, 
+"6990to60": 3.4, 
+"699Handling": 77,
+
+"969TopSpeed": 174, 
+"9690to60": 3.6, 
+"969Handling": 77,
+
+"996TopSpeed": 174, 
+"9960to60": 3.4, 
+"996Handling": 74
+}

@@ -1,0 +1,50 @@
+{
+    "rq": 49,
+    "make": "Skoda",
+    "model": "Octavia RS",
+    "modelYear": 2013,
+    "country": "CZ",
+    "topSpeed": 153,
+    "0to60": 6.6,
+    "handling": 82,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch","Rest of The World","The Tyrol Tour"],
+    "isPrize": false,
+
+
+    "weight": 1436,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 75.86,
+    "ola": 78.79,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1046425089853366290/C.SkodaOctavia3RS.png",
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1046425581362872371/octavia3rs.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 156,
+    "3330to60": 6.3,
+    "333Handling": 85,
+
+    "666TopSpeed": 160,
+    "6660to60": 5.9, 
+    "666Handling": 87,
+
+    "996TopSpeed": 163,
+    "9960to60": 5.6,
+    "996Handling": 87,
+
+    "969TopSpeed": 163,
+    "9690to60": 5.9,
+    "969Handling": 91,
+
+    "699TopSpeed": 160,
+    "6990to60": 5.6,
+    "699Handling": 91
+}

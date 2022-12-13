@@ -1,0 +1,49 @@
+{
+    "rq": 74,
+    "make": "Audi",
+    "model": "e-tron Spyder",
+    "modelYear": 2010,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 4.2,
+    "handling": 90,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Concept","Unique","Eco-Friendly","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1449,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Electric",
+    "mra": 62.5,
+    "ola": 75.31,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1043219757123522620/unknown.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1043219780682920016/Audi_e-tron_spyder.png",
+    "creator": "Spence",
+
+"333TopSpeed": 158, 
+"3330to60": 4.0, 
+"333Handling": 93,
+
+"666TopSpeed": 162, 
+"6660to60": 3.8, 
+"666Handling": 96,
+
+"699TopSpeed": 162, 
+"6990to60": 3.6, 
+"699Handling": 100,
+
+"969TopSpeed": 165, 
+"9690to60": 3.8, 
+"969Handling": 100,
+
+"996TopSpeed": 165, 
+"9960to60": 3.6, 
+"996Handling": 96
+}

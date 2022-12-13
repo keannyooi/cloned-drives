@@ -1,0 +1,49 @@
+{
+    "rq": 81,
+    "make": "BMW",
+    "model": "X7 M60i xDrive",
+    "modelYear": 2022,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 4.6,
+    "handling": 77,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Extreme Juggernaut","The Tyrol Tour"],
+    "isPrize": false,
+    
+    "weight": 2675,
+    "gc": "High",
+    "seatCount": 7,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 73.7,
+    "ola": 74.2,
+    "description": "This time they really took advice from Clarkson himself and went POWAAHHHHH",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1047269886981840916/bmw_x7_m60i_xdrive.png",
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1049066705609031820/bmw_x7_m60i_xdrive_hud.png",
+    "creator": "c6",
+
+    "333TopSpeed": 158,
+    "3330to60": 4.4,
+    "333Handling": 80,
+
+    "666TopSpeed": 162,
+    "6660to60": 4.1,
+    "666Handling": 82,
+
+    "996TopSpeed": 165,
+    "9960to60": 3.9,
+    "996Handling": 82,
+
+    "969TopSpeed": 165,
+    "9690to60": 4.1,
+    "969Handling": 85,
+
+    "699TopSpeed": 162,
+    "6990to60": 3.9,
+    "699Handling": 85
+}

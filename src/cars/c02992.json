@@ -1,0 +1,49 @@
+{
+    "rq": 103,
+    "make": ["Mansory MTM", "Mansory", "MTM", "Lamborghini"],
+    "model": "Urus 1001",
+    "modelYear": 2021,
+    "country": "DE",
+    "topSpeed": 220,
+    "0to60": 2.5,
+    "handling": 93,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Tuner","Unique","The Tyrol Tour"],
+    "isPrize": true,
+	
+    "weight": 2150,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 89.29,
+    "ola": 84,
+    "description": "Veyron power in a big Lambo SUV? Mansory and MTM made a one-off Urus with that power output.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1039002155891298344/MansoryMTMUrus1001.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1039002441636647012/MansoryMTMUrus1001.png",
+    "creator": "Spence",
+
+"333TopSpeed": 222, 
+"3330to60": 2.4, 
+"333Handling": 96,
+
+"666TopSpeed": 225, 
+"6660to60": 2.2, 
+"666Handling": 99,
+
+"699TopSpeed": 225, 
+"6990to60": 2.1, 
+"699Handling": 103,
+
+"969TopSpeed": 227, 
+"9690to60": 2.2, 
+"969Handling": 103,
+
+"996TopSpeed": 227, 
+"9960to60": 2.1, 
+"996Handling": 99
+}

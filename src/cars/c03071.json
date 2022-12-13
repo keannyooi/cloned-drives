@@ -1,0 +1,49 @@
+{
+    "rq": 61,
+    "make": ["Rinspeed", "Nissan"],
+    "model": "Speed-Art",
+    "modelYear": 1992,
+    "country": "CH",
+    "topSpeed": 186,
+    "0to60": 4.7,
+    "handling": 84,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Rest of The World","Tuner","Unique","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1575,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 64.2,
+    "ola": 86.66,
+    "description": "This car has 420 horses, both figuratively and literally. No, seriously go count them for yourself.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1046407345988706334/rinspeed_speed-art.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1046396594557288548/speedart.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 189,
+"3330to60": 4.5,
+"333Handling": 87,
+
+"666TopSpeed": 192,
+"6660to60": 4.2,
+"666Handling": 90,
+
+"699TopSpeed": 192,
+"6990to60": 4.0,
+"699Handling": 93,
+
+"969TopSpeed": 194,
+"9690to60": 4.2,
+"969Handling": 93,
+
+"996TopSpeed": 194,
+"9960to60": 4.0,
+"996Handling": 90
+}

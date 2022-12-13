@@ -1,0 +1,49 @@
+{
+    "rq": 70,
+    "make": "BMW",
+    "model": "M440i xDrive Cabrio",
+    "modelYear": 2021,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 4.5,
+    "handling": 80,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1890,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 73.77,
+    "ola": 71.11,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1043209587412705280/unknown.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1043209614939934791/BMW_M440i_xDrive_Cabrio.png",
+    "creator": "Macan",
+
+"333TopSpeed": 158, 
+"3330to60": 4.3, 
+"333Handling": 83,
+
+"666TopSpeed": 162, 
+"6660to60": 4.0, 
+"666Handling": 85,
+
+"699TopSpeed": 162, 
+"6990to60": 3.8, 
+"699Handling": 89,
+
+"969TopSpeed": 165, 
+"9690to60": 4.0, 
+"969Handling": 89,
+
+"996TopSpeed": 165, 
+"9960to60": 3.8, 
+"996Handling": 85
+}

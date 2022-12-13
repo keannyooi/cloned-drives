@@ -1,0 +1,49 @@
+{
+    "rq": 82,
+    "make": "Pagani",
+    "model": "Zonda Roadster F",
+    "modelYear": 2006,
+    "country": "IT",
+    "topSpeed": 217,
+    "0to60": 3.5,
+    "handling": 90,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Unique","Supercar","Ultra Expensive","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1230,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 102.94,
+    "ola": 95.42,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1040601278478286939/ZondaRoadsterF.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1040601962170826822/ZondaRoadsterF.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 219, 
+"3330to60": 3.3, 
+"333Handling": 93,
+
+"666TopSpeed": 222, 
+"6660to60": 3.1, 
+"666Handling": 96,
+
+"699TopSpeed": 222, 
+"6990to60": 3.0, 
+"699Handling": 100,
+
+"969TopSpeed": 224, 
+"9690to60": 3.1, 
+"969Handling": 100,
+
+"996TopSpeed": 224, 
+"9960to60": 3.0, 
+"996Handling": 96
+}

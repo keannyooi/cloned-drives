@@ -1,0 +1,49 @@
+{
+    "rq": 88,
+    "make": "Pagani",
+    "model": "Zonda Uno",
+    "modelYear": 2010,
+    "country": "IT",
+    "topSpeed": 217,
+    "0to60": 3.2,
+    "handling": 93,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Unique","Supercar","Ultra Expensive","The Tyrol Tour"],
+    "isPrize": true,
+	
+    "weight": 1210,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 103.22,
+    "ola": 90,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1040601376427876392/ZondaUno.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1040602008576610375/ZondaUno.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 219, 
+"3330to60": 3.0, 
+"333Handling": 96,
+
+"666TopSpeed": 222, 
+"6660to60": 2.9, 
+"666Handling": 99,
+
+"699TopSpeed": 222, 
+"6990to60": 2.7, 
+"699Handling": 103,
+
+"969TopSpeed": 224, 
+"9690to60": 2.9, 
+"969Handling": 103,
+
+"996TopSpeed": 224, 
+"9960to60": 2.7, 
+"996Handling": 99
+}

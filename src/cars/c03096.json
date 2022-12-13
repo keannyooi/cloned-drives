@@ -1,0 +1,50 @@
+{
+    "rq": 4,
+    "make": "Skoda",
+    "model": "Octavia Combi",
+    "modelYear": 1960,
+    "country": "CZ",
+    "topSpeed": 76,
+    "0to60": 32.8,
+    "handling": 51,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour","Rest of The World"],
+    "isPrize": false,
+
+
+    "weight": 940,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "Combi",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 00.00,
+    "ola": 45.12,
+    "description": "It was also avaliable as a practical wagon, available long after the sedan was phased out.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1051553888576229518/F.SkodaOctaviaCombi60.png",
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1051554217942327336/Octavia60Combi.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 83,
+    "3330to60": 31.2,
+    "333Handling": 53,
+
+    "666TopSpeed": 90,
+    "6660to60": 29.5, 
+    "666Handling": 54,
+
+    "996TopSpeed": 98,
+    "9960to60": 27.9,
+    "996Handling": 54,
+
+    "969TopSpeed": 97,
+    "9690to60": 29.5,
+    "969Handling": 57,
+
+    "699TopSpeed": 90,
+    "6990to60": 27.9,
+    "699Handling": 57
+}

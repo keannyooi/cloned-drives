@@ -1,0 +1,49 @@
+{
+    "rq": 79,
+    "make": "Lamborghini",
+    "model": "Gallardo LP560-4 Spyder",
+    "modelYear": 2008,
+    "country": "IT",
+    "topSpeed": 201,
+    "0to60": 3.9,
+    "handling": 88,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Supercar","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1640,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 89.79,
+    "ola": 88.93,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1031207993234161765/IMG_9210.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1031210054457757867/LamborghiniGallardoLP560-4Spyder.png",
+    "creator": "Spence",
+
+"333TopSpeed": 204, 
+"3330to60": 3.7, 
+"333Handling": 91,
+
+"666TopSpeed": 206, 
+"6660to60": 3.5, 
+"666Handling": 94,
+
+"699TopSpeed": 206, 
+"6990to60": 3.3, 
+"699Handling": 98,
+
+"969TopSpeed": 209, 
+"9690to60": 3.5, 
+"969Handling": 98,
+
+"996TopSpeed": 209, 
+"9960to60": 3.3, 
+"996Handling": 94
+}

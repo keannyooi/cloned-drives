@@ -1,0 +1,49 @@
+{
+    "rq": 91,
+    "make": ["Mansory", "Ferrari"],
+    "model": "Stallone GTS",
+    "modelYear": 2021,
+    "country": "DE",
+    "topSpeed": 214,
+    "0to60": 2.7,
+    "handling": 93,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner","The Tyrol Tour"],
+    "isPrize": false,
+    
+    "weight": 1680,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 100.76,
+    "ola": 101.5,
+    "description": "One of the ugliest things to ever exist part 2, they cut off the roof.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1050929678040440852/mansory_stallone_gts.png",
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1050929776094879784/mansory_stallone_gts_hud.png",
+    "creator": "c6",
+
+    "333TopSpeed": 216,
+    "3330to60": 2.6,
+    "333Handling": 96,
+
+    "666TopSpeed": 219,
+    "6660to60": 2.4,
+    "666Handling": 99,
+
+    "996TopSpeed": 221,
+    "9960to60": 2.3,
+    "996Handling": 99,
+
+    "969TopSpeed": 221,
+    "9690to60": 2.4,
+    "969Handling": 103,
+
+    "699TopSpeed": 219,
+    "6990to60": 2.4,
+    "699Handling": 103
+}

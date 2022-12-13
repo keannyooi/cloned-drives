@@ -1,0 +1,70 @@
+{
+	"packName": "The Tyrol Tour Elite Pack",
+	"description": "A pack of 5 super rare or better Tyrol Tour cars.",
+        "repetition": 1,
+	"pack": "https://cdn.discordapp.com/attachments/956106029635088384/956106124183097354/Elite_Pack.png",
+	
+	"filter": {
+		"make": "None",
+		"modelYear": {
+			"start": 1000,
+			"end": 3000
+		},
+		"country": "None",
+		"tags": "The Tyrol Tour",
+        "driveType": "None",
+        "tyreType": "None",
+		"enginePos": "None",
+        "fuelType": "None",
+        "bodyStyle": "None",
+		"seatCount": "None"
+	},
+
+	"packSequence": [
+        {
+            "common": 0,
+            "uncommon": 0,
+            "rare": 0,
+            "superRare": 74,
+            "ultraRare": 20.1,
+            "epic": 5,
+            "legendary": 0.9
+        },
+        {
+            "common": 0,
+            "uncommon": 0,
+            "rare": 0,
+            "superRare": 74,
+            "ultraRare": 20.1,
+            "epic": 5,
+            "legendary": 0.9
+        },
+        {
+            "common": 0,
+            "uncommon": 0,
+            "rare": 0,
+            "superRare": 74,
+            "ultraRare": 20.1,
+            "epic": 5,
+            "legendary": 0.9
+        },
+        {
+            "common": 0,
+            "uncommon": 0,
+            "rare": 0,
+            "superRare": 74,
+            "ultraRare": 20.1,
+            "epic": 5,
+            "legendary": 0.9
+        },
+        {
+            "common": 0,
+            "uncommon": 0,
+            "rare": 0,
+            "superRare": 74,
+            "ultraRare": 20.1,
+            "epic": 5,
+            "legendary": 0.9
+        }
+    ]
+}

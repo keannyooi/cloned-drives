@@ -1,0 +1,50 @@
+{
+    "rq": 51,
+    "make": "Skoda",
+    "model": "Octavia RS 245",
+    "modelYear": 2017,
+    "country": "CZ",
+    "topSpeed": 155,
+    "0to60": 6.4,
+    "handling": 82,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch","Rest of The World","The Tyrol Tour"],
+    "isPrize": false,
+
+
+    "weight": 1448,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 73.56,
+    "ola": 78.13,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1046425182291628082/B.SkodaOctavia3RS245.png",
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1046425628141949048/octavia3rs245.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 158,
+    "3330to60": 6.1,
+    "333Handling": 85,
+
+    "666TopSpeed": 162,
+    "6660to60": 5.8, 
+    "666Handling": 87,
+
+    "996TopSpeed": 165,
+    "9960to60": 5.4,
+    "996Handling": 87,
+
+    "969TopSpeed": 165,
+    "9690to60": 5.8,
+    "969Handling": 91,
+
+    "699TopSpeed": 162,
+    "6990to60": 5.4,
+    "699Handling": 91
+}

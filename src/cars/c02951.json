@@ -1,0 +1,49 @@
+{
+    "rq": 77,
+    "make": "Lamborghini",
+    "model": "Concept S",
+    "modelYear": 2005,
+    "country": "IT",
+    "topSpeed": 202,
+    "0to60": 4.1,
+    "handling": 87,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Unique","Concept","Ultra Expensive","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1450,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 93.18,
+    "ola": 90.24,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1031208049035198574/IMG_9312.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1031210164470161418/LamborghiniConceptS.png",
+    "creator": "Spence",
+
+"333TopSpeed": 205, 
+"3330to60": 3.9, 
+"333Handling": 90,
+
+"666TopSpeed": 207, 
+"6660to60": 3.7, 
+"666Handling": 93,
+
+"699TopSpeed": 207, 
+"6990to60": 3.5, 
+"699Handling": 97,
+
+"969TopSpeed": 210, 
+"9690to60": 3.7, 
+"969Handling": 97,
+
+"996TopSpeed": 210, 
+"9960to60": 3.5, 
+"996Handling": 93
+}

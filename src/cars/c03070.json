@@ -1,0 +1,49 @@
+{
+    "rq": 1,
+    "make": "Renault",
+    "model": "Twizy ZE Concept",
+    "modelYear": 2009,
+    "country": "FR",
+    "topSpeed": 48,
+    "0to60": 99.9,
+    "handling": 55,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly","Concept","Unique","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 420,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Electric",
+    "mra": 0,
+    "ola": 12.12,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1050053902726352936/ZEconcepttwiay.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1050054149015879751/twizyZEconcept.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 57, 
+"3330to60": 99.9, 
+"333Handling": 57,
+
+"666TopSpeed": 65, 
+"6660to60": 69.9, 
+"666Handling": 59,
+
+"699TopSpeed": 65, 
+"6990to60": 64.9, 
+"699Handling": 61,
+
+"969TopSpeed": 74, 
+"9690to60": 69.9, 
+"969Handling": 61,
+
+"996TopSpeed": 74, 
+"9960to60": 64.9, 
+"996Handling": 59
+}

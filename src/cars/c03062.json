@@ -1,0 +1,49 @@
+{
+    "rq": 49,
+    "make": "Porsche",
+    "model": "928 S4 GTE",
+    "modelYear": 1988,
+    "country": "DE",
+    "topSpeed": 182,
+    "0to60": 5.4,
+    "handling": 76,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Unique","The Tyrol Tour"],
+    "isPrize": false,
+    
+    "weight": 1515,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 70.02,
+    "ola": 85.3,
+    "description": "Fun fact, this one-off was bought of a private collector after being shown the 928 production facility.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1050879707576545331/porsche_928_s4_gte.png",
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1050879808483102811/porsche_928_s4_gte_hud.png",
+    "creator": "c6",
+
+    "333TopSpeed": 185,
+    "3330to60": 5.1,
+    "333Handling": 79,
+
+    "666TopSpeed": 188,
+    "6660to60": 4.9,
+    "666Handling": 81,
+
+    "996TopSpeed": 191,
+    "9960to60": 4.6,
+    "996Handling": 81,
+
+    "969TopSpeed": 191,
+    "9690to60": 4.9,
+    "969Handling": 84,
+
+    "699TopSpeed": 188,
+    "6990to60": 4.6,
+    "699Handling": 84
+}

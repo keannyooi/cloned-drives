@@ -1,0 +1,49 @@
+{
+    "rq": 35,
+    "make": "Porsche",
+    "model": "928 S2",
+    "modelYear": 1984,
+    "country": "DE",
+    "topSpeed": 156,
+    "0to60": 6.5,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour"],
+    "isPrize": false,
+    
+    "weight": 1549,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 64.73,
+    "ola": 82.98,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1050458331828998144/porsche_928_s2.png",
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1050458328414834748/porsche_928_s2_hud.png",
+    "creator": "c6",
+
+    "333TopSpeed": 159,
+    "3330to60": 6.2,
+    "333Handling": 77,
+
+    "666TopSpeed": 163,
+    "6660to60": 5.9,
+    "666Handling": 80,
+
+    "996TopSpeed": 166,
+    "9960to60": 5.5,
+    "996Handling": 80,
+
+    "969TopSpeed": 166,
+    "9690to60": 5.9,
+    "969Handling": 83,
+
+    "699TopSpeed": 163,
+    "6990to60": 5.5,
+    "699Handling": 83
+}

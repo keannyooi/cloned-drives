@@ -1,0 +1,49 @@
+{
+    "rq": 15,
+    "make": "Porsche",
+    "model": "597 Jagdwagen Prototype",
+    "modelYear": 1954,
+    "country": "DE",
+    "topSpeed": 59,
+    "0to60": 99.9,
+    "handling": 49,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["Extreme Juggernaut","Unique","Concept","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1090,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 0,
+    "ola": 39.99,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1044620320050511962/597Proto.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1044620553761325056/597jagdwagenproot.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 68, 
+"3330to60": 37.0, 
+"333Handling": 51,
+
+"666TopSpeed": 76, 
+"6660to60": 35.1, 
+"666Handling": 52,
+
+"699TopSpeed": 76, 
+"6990to60": 33.2, 
+"699Handling": 54,
+
+"969TopSpeed": 85, 
+"9690to60": 35.1, 
+"969Handling": 54,
+
+"996TopSpeed": 85, 
+"9960to60": 33.2, 
+"996Handling": 52
+}

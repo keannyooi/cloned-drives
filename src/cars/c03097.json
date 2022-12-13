@@ -1,0 +1,50 @@
+{
+    "rq": 4,
+    "make": "Skoda",
+    "model": "Octavia",
+    "modelYear": 1960,
+    "country": "CZ",
+    "topSpeed": 76,
+    "0to60": 33.1,
+    "handling": 51,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour","Rest of The World"],
+    "isPrize": false,
+
+
+    "weight": 930,
+    "gc": "High",
+    "seatCount":5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 00.00,
+    "ola": 45.92,
+    "description": "It was introduced in January 1959 and was named Octavia as it was the eighth car produced by the nationalised Skoda company.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1051553835220475964/F.SkodaOctavia60.png",
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1051554173465919579/Octavia60.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 83,
+    "3330to60": 31.4,
+    "333Handling": 53,
+
+    "666TopSpeed": 90,
+    "6660to60": 29.8, 
+    "666Handling": 54,
+
+    "996TopSpeed": 98,
+    "9960to60": 28.1,
+    "996Handling": 54,
+
+    "969TopSpeed": 97,
+    "9690to60": 29.8,
+    "969Handling": 57,
+
+    "699TopSpeed": 90,
+    "6990to60": 28.1,
+    "699Handling": 57
+}

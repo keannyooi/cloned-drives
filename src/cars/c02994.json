@@ -1,0 +1,49 @@
+{
+    "rq": 90,
+    "make": ["Mansory", "Ferrari"],
+    "model": "Stallone Black",
+    "modelYear": 2019,
+    "country": "DE",
+    "topSpeed": 216,
+    "0to60": 2.7,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner","The Tyrol Tour"],
+    "isPrize": false,
+    
+    "weight": 1630,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 100.76,
+    "ola": 101.5,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1050927376361586838/mansory_stallone_black.png",
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1050927474533474405/mansory_stallone_black_hud.png",
+    "creator": "c6",
+
+    "333TopSpeed": 218,
+    "3330to60": 2.6,
+    "333Handling": 94,
+
+    "666TopSpeed": 221,
+    "6660to60": 2.4,
+    "666Handling": 97,
+
+    "996TopSpeed": 223,
+    "9960to60": 2.3,
+    "996Handling": 97,
+
+    "969TopSpeed": 223,
+    "9690to60": 2.4,
+    "969Handling": 101,
+
+    "699TopSpeed": 221,
+    "6990to60": 2.4,
+    "699Handling": 101
+}

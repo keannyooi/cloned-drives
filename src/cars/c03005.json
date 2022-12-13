@@ -1,0 +1,49 @@
+{
+    "rq": 86,
+    "make": ["Mercedes-AMG", "Mercedes-Benz"],
+    "model": "GT3",
+    "modelYear": 2016,
+    "country": "DE",
+    "topSpeed": 185,
+    "0to60": 3.1,
+    "handling": 96,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1300,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 88.88,
+    "ola": 90,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1042429605002346528/MercedesAMGGT3.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1042431031464173648/AMGGt3.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 188, 
+"3330to60": 2.9, 
+"333Handling": 99,
+
+"666TopSpeed": 191, 
+"6660to60": 2.8, 
+"666Handling": 102,
+
+"699TopSpeed": 191, 
+"6990to60": 2.6, 
+"699Handling": 107,
+
+"969TopSpeed": 193, 
+"9690to60": 2.8, 
+"969Handling": 107,
+
+"996TopSpeed": 193, 
+"9960to60": 2.6, 
+"996Handling": 102
+}

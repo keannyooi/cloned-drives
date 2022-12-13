@@ -1,0 +1,49 @@
+{
+    "rq": 84,
+    "make": "Pagani",
+    "model": "Zonda Roadster F Clubsport",
+    "modelYear": 2006,
+    "country": "IT",
+    "topSpeed": 217,
+    "0to60": 3.4,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Unique","Ultra Expensive","Supercar","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1210,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 101.49,
+    "ola": 96.47,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1040601012743970826/ZondaFRoadsterClubsport.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1040601808537657494/ZondaFRoadsterClubsport.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 219, 
+"3330to60": 3.2, 
+"333Handling": 94,
+
+"666TopSpeed": 222, 
+"6660to60": 3.1, 
+"666Handling": 97,
+
+"699TopSpeed": 222, 
+"6990to60": 2.9, 
+"699Handling": 101,
+
+"969TopSpeed": 224, 
+"9690to60": 3.1, 
+"969Handling": 101,
+
+"996TopSpeed": 224, 
+"9960to60": 2.9, 
+"996Handling": 97
+}

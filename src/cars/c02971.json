@@ -1,0 +1,49 @@
+{
+    "rq": 92,
+    "make": "Lamborghini",
+    "model": "Huracan LP610-4 Aero Kit",
+    "modelYear": 2016,
+    "country": "IT",
+    "topSpeed": 199,
+    "0to60": 2.8,
+    "handling": 92,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Supercar","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1557,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 85.59,
+    "ola": 87.57,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1031409234681794580/LamborghiniHuracanLP6104AeroKit.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1031410210557931580/LamborghiniHuracanLP610-4AeroKit.png",
+    "creator": "Spence",
+
+"333TopSpeed": 202, 
+"3330to60": 2.7, 
+"333Handling": 95,
+
+"666TopSpeed": 204, 
+"6660to60": 2.5, 
+"666Handling": 98,
+
+"699TopSpeed": 204, 
+"6990to60": 2.4, 
+"699Handling": 102,
+
+"969TopSpeed": 207, 
+"9690to60": 2.5, 
+"969Handling": 102,
+
+"996TopSpeed": 207, 
+"9960to60": 2.4, 
+"996Handling": 98
+}

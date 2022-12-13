@@ -1,0 +1,49 @@
+{
+    "rq": 73,
+    "make": "Lamborghini",
+    "model": "Gallardo Spyder",
+    "modelYear": 2006,
+    "country": "IT",
+    "topSpeed": 195,
+    "0to60": 4.2,
+    "handling": 85,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Supercar","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1597,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 77.72,
+    "ola": 89.48,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1031208186486718554/IMG_9307.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1031210275535323156/LamborghiniGallardoSpyder.png",
+    "creator": "Spence",
+
+"333TopSpeed": 198, 
+"3330to60": 4.0, 
+"333Handling": 88,
+
+"666TopSpeed": 200, 
+"6660to60": 3.8, 
+"666Handling": 91,
+
+"699TopSpeed": 200, 
+"6990to60": 3.6, 
+"699Handling": 94,
+
+"969TopSpeed": 203, 
+"9690to60": 3.8, 
+"969Handling": 94,
+
+"996TopSpeed": 203, 
+"9960to60": 3.6, 
+"996Handling": 91
+}

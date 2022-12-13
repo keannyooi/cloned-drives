@@ -1,0 +1,49 @@
+{
+    "rq": 49,
+    "make": "Porsche",
+    "model": "928 GT",
+    "modelYear": 1989,
+    "country": "DE",
+    "topSpeed": 170,
+    "0to60": 5.4,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour"],
+    "isPrize": false,
+    
+    "weight": 1595,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 64.43,
+    "ola": 80.81,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1050884423098314783/porsche_928_gt.png",
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1050884504245514321/porsche_928_gt_hud.png",
+    "creator": "c6",
+
+    "333TopSpeed": 173,
+    "3330to60": 5.1,
+    "333Handling": 80,
+
+    "666TopSpeed": 176,
+    "6660to60": 4.9,
+    "666Handling": 82,
+
+    "996TopSpeed": 179,
+    "9960to60": 4.6,
+    "996Handling": 82,
+
+    "969TopSpeed": 179,
+    "9690to60": 4.9,
+    "969Handling": 85,
+
+    "699TopSpeed": 176,
+    "6990to60": 4.6,
+    "699Handling": 85
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 86,
+    "make": "Lamborghini",
+    "model": "Huracan GT3 EVO",
+    "modelYear": 2018,
+    "country": "IT",
+    "topSpeed": 186,
+    "0to60": 3.2,
+    "handling": 97,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1230,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 95.52,
+    "ola": 85.94,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1031409847058571375/LamborghiniHuracanGT3EVO.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1031410911694573628/LamborghiniHuracanGT3EVO.png",
+    "creator": "Spence",
+
+"333TopSpeed": 189, 
+"3330to60": 3.0, 
+"333Handling": 100,
+
+"666TopSpeed": 192, 
+"6660to60": 2.9, 
+"666Handling": 103,
+
+"699TopSpeed": 192, 
+"6990to60": 2.7, 
+"699Handling": 108,
+
+"969TopSpeed": 194, 
+"9690to60": 2.9, 
+"969Handling": 108,
+
+"996TopSpeed": 194, 
+"9960to60": 2.7, 
+"996Handling": 103
+}

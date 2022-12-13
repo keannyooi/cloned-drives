@@ -1,0 +1,49 @@
+{
+    "rq": 86,
+    "make": "Pagani",
+    "model": "Zonda GR",
+    "modelYear": 2002,
+    "country": "IT",
+    "topSpeed": 217,
+    "0to60": 3.3,
+    "handling": 96,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport","Unique","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1100,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 103.12,
+    "ola": 84.84,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1040601067139895366/ZondaGR.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1040601822886383636/ZondaGR.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 219, 
+"3330to60": 3.1, 
+"333Handling": 99,
+
+"666TopSpeed": 222, 
+"6660to60": 3.0, 
+"666Handling": 102,
+
+"699TopSpeed": 222, 
+"6990to60": 2.8, 
+"699Handling": 107,
+
+"969TopSpeed": 224, 
+"9690to60": 3.0, 
+"969Handling": 107,
+
+"996TopSpeed": 224, 
+"9960to60": 2.8, 
+"996Handling": 102
+}

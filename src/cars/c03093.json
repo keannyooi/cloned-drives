@@ -1,0 +1,50 @@
+{
+    "rq": 12,
+    "make": "Skoda",
+    "model": "Trekka",
+    "modelYear": 1966,
+    "country": "CZ",
+    "topSpeed": 68,
+    "0to60": 40.4,
+    "handling": 45,
+    "driveType": "RWD",
+    "tyreType": "Off-Road",
+    "tags": ["Innovative","The Tyrol Tour","Rest of The World"],
+    "isPrize": false,
+
+
+    "weight": 980,
+    "gc": "High",
+    "seatCount": 8,
+    "bodyStyle": "SUV",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 00.00,
+    "ola": 44.55,
+    "description": "First ever Skoda SUV was actually made over 50 years ago. On New Zealand of all places.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1051554115748110366/F.SkodaTrekka.png",
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1051554392119185520/Trekka.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 76,
+    "3330to60": 38.4,
+    "333Handling": 46,
+
+    "666TopSpeed": 83,
+    "6660to60": 36.4, 
+    "666Handling": 48,
+
+    "996TopSpeed": 91,
+    "9960to60": 34.3,
+    "996Handling": 48,
+
+    "969TopSpeed": 91,
+    "9690to60": 36.4,
+    "969Handling": 50,
+
+    "699TopSpeed": 83,
+    "6990to60": 34.3,
+    "699Handling": 50
+}

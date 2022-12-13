@@ -1,0 +1,49 @@
+{
+    "rq": 46,
+    "make": "Porsche",
+    "model": "928 S Rennversion Trigema",
+    "modelYear": 1981,
+    "country": "DE",
+    "topSpeed": 168,
+    "0to60": 5.8,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Unique","The Tyrol Tour"],
+    "isPrize": false,
+    
+    "weight": 1350,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 78.38,
+    "ola": 70.69,
+    "description": "One of the rare race versions of the 928.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1050885895454195722/porsche_928_s_rennversion_trigema.png",
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1050885777363570748/porsche_928_s_rennversion_trigema_hud.png",
+    "creator": "c6",
+
+    "333TopSpeed": 171,
+    "3330to60": 5.5,
+    "333Handling": 80,
+
+    "666TopSpeed": 174,
+    "6660to60": 5.2,
+    "666Handling": 82,
+
+    "996TopSpeed": 177,
+    "9960to60": 4.9,
+    "996Handling": 82,
+
+    "969TopSpeed": 177,
+    "9690to60": 5.2,
+    "969Handling": 85,
+
+    "699TopSpeed": 174,
+    "6990to60": 4.9,
+    "699Handling": 85
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 82,
+    "make": ["Mercedes-AMG","Mercedes-Benz"],
+    "model": "GT R Roadster",
+    "modelYear": 2019,
+    "country": "DE",
+    "topSpeed": 196,
+    "0to60": 3.4,
+    "handling": 92,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1645,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 94.44,
+    "ola": 100,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1043198411681300510/AMGGTRroadster2019.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1043198970907861063/GTRRoadser19.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 199, 
+"3330to60": 3.2, 
+"333Handling": 95,
+
+"666TopSpeed": 201, 
+"6660to60": 3.1, 
+"666Handling": 98,
+
+"699TopSpeed": 201, 
+"6990to60": 2.9, 
+"699Handling": 102,
+
+"969TopSpeed": 204, 
+"9690to60": 3.1, 
+"969Handling": 102,
+
+"996TopSpeed": 204, 
+"9960to60": 2.9, 
+"996Handling": 98
+}

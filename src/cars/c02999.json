@@ -1,0 +1,49 @@
+{
+    "rq": 89,
+    "make": ["Mercedes-AMG","Mercedes-Benz"],
+    "model": "GT Black Series",
+    "modelYear": 2020,
+    "country": "DE",
+    "topSpeed": 202,
+    "0to60": 3.0,
+    "handling": 95,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Track Day","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1615,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 103.44,
+    "ola": 86.66,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1043198240109121586/AMGGTBlackSeries.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1043198884006080618/AMGGTBS.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 205, 
+"3330to60": 2.8, 
+"333Handling": 98,
+
+"666TopSpeed": 207, 
+"6660to60": 2.7, 
+"666Handling": 101,
+
+"699TopSpeed": 207, 
+"6990to60": 2.6, 
+"699Handling": 105,
+
+"969TopSpeed": 210, 
+"9690to60": 2.7, 
+"969Handling": 105,
+
+"996TopSpeed": 210, 
+"9960to60": 2.6, 
+"996Handling": 101
+}

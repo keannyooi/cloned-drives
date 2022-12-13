@@ -1,0 +1,49 @@
+{
+    "rq": 98,
+    "make": "Ferrari",
+    "model": "FXX-K Evo",
+    "modelYear": 2018,
+    "country": "IT",
+    "topSpeed": 217,
+    "0to60": 2.4,
+    "handling": 98,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport","The Tyrol Tour"],
+    "isPrize": true,
+	
+    "weight": 1075,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 113.85,
+    "ola": 90.18,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1043200823838113854/unknown.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1043200850002186251/Ferrari_FXX-K_Evo.png",
+    "creator": "Spence",
+
+"333TopSpeed": 219, 
+"3330to60": 2.3, 
+"333Handling": 101,
+
+"666TopSpeed": 222, 
+"6660to60": 2.2, 
+"666Handling": 104,
+
+"699TopSpeed": 222, 
+"6990to60": 2.0, 
+"699Handling": 109,
+
+"969TopSpeed": 224, 
+"9690to60": 2.2, 
+"969Handling": 109,
+
+"996TopSpeed": 224, 
+"9960to60": 2.0, 
+"996Handling": 104
+}

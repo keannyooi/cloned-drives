@@ -1,0 +1,49 @@
+{
+    "rq": 79,
+    "make": "Lamborghini",
+    "model": "Huracan LP580-2 Spyder",
+    "modelYear": 2016,
+    "country": "IT",
+    "topSpeed": 198,
+    "0to60": 3.5,
+    "handling": 89,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Supercar","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1509,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 96.55,
+    "ola": 97.14,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1031409178851418122/LamborghiniHuracanLP5802Spyder.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1031410135274369024/LamborghiniHuracanLP580-2Spyder.png",
+    "creator": "Spence",
+
+"333TopSpeed": 201, 
+"3330to60": 3.3, 
+"333Handling": 92,
+
+"666TopSpeed": 203, 
+"6660to60": 3.1, 
+"666Handling": 95,
+
+"699TopSpeed": 203, 
+"6990to60": 3.0, 
+"699Handling": 99,
+
+"969TopSpeed": 206, 
+"9690to60": 3.1, 
+"969Handling": 99,
+
+"996TopSpeed": 206, 
+"9960to60": 3.0, 
+"996Handling": 95
+}

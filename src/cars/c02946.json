@@ -1,0 +1,49 @@
+{
+    "rq": 67,
+    "make": ["Hartge", "BMW"],
+    "model": "X3 3.0i Kompressor",
+    "modelYear": 2006,
+    "country": "DE",
+    "topSpeed": 143,
+    "0to60": 6.3,
+    "handling": 79,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Tuner","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1760,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 81.81,
+    "ola": 69.84,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1050051007930957904/Hartgex3Komp.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1050053470700453908/hartgex3komp.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 147, 
+"3330to60": 6.0, 
+"333Handling": 82,
+
+"666TopSpeed": 150, 
+"6660to60": 5.7, 
+"666Handling": 84,
+
+"699TopSpeed": 150, 
+"6990to60": 5.4, 
+"699Handling": 88,
+
+"969TopSpeed": 154, 
+"9690to60": 5.7, 
+"969Handling": 88,
+
+"996TopSpeed": 154, 
+"9960to60": 5.4, 
+"996Handling": 84
+}

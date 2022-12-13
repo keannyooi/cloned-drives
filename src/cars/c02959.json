@@ -1,0 +1,49 @@
+{
+    "rq": 82,
+    "make": "Lamborghini",
+    "model": "Gallardo LP570-4 Spyder Performante",
+    "modelYear": 2011,
+    "country": "IT",
+    "topSpeed": 201,
+    "0to60": 3.7,
+    "handling": 89,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Supercar","Track Day","The Tyrol Tour","Year of the Rabbit"],
+    "isPrize": false,
+	
+    "weight": 1575,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 90.24,
+    "ola": 85.72,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1031207899264979014/IMG_9219.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1031209197993476136/LamborghiniGallardoLP570-4SpyderPerformante.png",
+    "creator": "Spence",
+
+"333TopSpeed": 204, 
+"3330to60": 3.5, 
+"333Handling": 92,
+
+"666TopSpeed": 206, 
+"6660to60": 3.3, 
+"666Handling": 95,
+
+"699TopSpeed": 206, 
+"6990to60": 3.1, 
+"699Handling": 99,
+
+"969TopSpeed": 209, 
+"9690to60": 3.3, 
+"969Handling": 99,
+
+"996TopSpeed": 209, 
+"9960to60": 3.1, 
+"996Handling": 95
+}

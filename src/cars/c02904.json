@@ -1,0 +1,49 @@
+{
+    "rq": 67,
+    "make": "BMW",
+    "model": "X7 Pick-Up",
+    "modelYear": 2019,
+    "country": "DE",
+    "topSpeed": 151,
+    "0to60": 5.8,
+    "handling": 73,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Concept","The Tyrol Tour"],
+    "isPrize": false,
+    
+    "weight": 2181,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "Pickup",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.67,
+    "ola": 73.45,
+    "description": "A very luxurious workhorse that didn't go into production.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1047269713081811075/bmw_x7_pick-up.png",
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1049066719479603281/bmw_x7_pick-up_hud.png",
+    "creator": "c6",
+
+    "333TopSpeed": 154,
+    "3330to60": 5.5,
+    "333Handling": 75,
+
+    "666TopSpeed": 158,
+    "6660to60": 5.2,
+    "666Handling": 78,
+
+    "996TopSpeed": 161,
+    "9960to60": 4.9,
+    "996Handling": 78,
+
+    "969TopSpeed": 161,
+    "9690to60": 5.2,
+    "969Handling": 81,
+
+    "699TopSpeed": 158,
+    "6990to60": 4.9,
+    "699Handling": 81
+}

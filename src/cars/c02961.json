@@ -1,0 +1,49 @@
+{
+    "rq": 87,
+    "make": "Lamborghini",
+    "model": "Gallardo LP570-4 Super Trofeo Stradale",
+    "modelYear": 2011,
+    "country": "IT",
+    "topSpeed": 202,
+    "0to60": 3.3,
+    "handling": 91,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Track Day","Supercar","The Tyrol Tour","Year of the Rabbit"],
+    "isPrize": false,
+	
+    "weight": 1454,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 84.62,
+    "ola": 77.27,
+    "description": "This is the road-going version of the Blancpain Super Trofeo race car.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1031207607358210078/IMG_9330.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1031208935169990667/LamborghiniGallardoLP570-4SuperTrofeoStradale.png",
+    "creator": "Spence",
+
+"333TopSpeed": 205, 
+"3330to60": 3.1, 
+"333Handling": 94,
+
+"666TopSpeed": 207, 
+"6660to60": 3.0, 
+"666Handling": 97,
+
+"699TopSpeed": 207, 
+"6990to60": 2.8, 
+"699Handling": 101,
+
+"969TopSpeed": 210, 
+"9690to60": 3.0, 
+"969Handling": 101,
+
+"996TopSpeed": 210, 
+"9960to60": 2.8, 
+"996Handling": 97
+}

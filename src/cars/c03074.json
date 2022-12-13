@@ -1,0 +1,50 @@
+{
+    "rq": 39,
+    "make": "Skoda",
+    "model": "Octavia RS",
+    "modelYear": 2001,
+    "country": "CZ",
+    "topSpeed": 145,
+    "0to60": 7.5,
+    "handling": 77,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch","Rest of The World","The Tyrol Tour"],
+    "isPrize": false,
+
+
+    "weight": 1375,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 70.09,
+    "ola": 74.67,
+    "description": "First product of the RS department, featuring a 180 hp 1.8 Turbo engine.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1046420858505281557/D.SkodaOctavia1RS.png",
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1046420982396616705/octavia1rs.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 149,
+    "3330to60": 7.1,
+    "333Handling": 80,
+
+    "666TopSpeed": 152,
+    "6660to60": 6.8, 
+    "666Handling": 82,
+
+    "996TopSpeed": 156,
+    "9960to60": 6.4,
+    "996Handling": 82,
+
+    "969TopSpeed": 156,
+    "9690to60": 6.8,
+    "969Handling": 85,
+
+    "699TopSpeed": 152,
+    "6990to60": 6.4,
+    "699Handling": 85
+}

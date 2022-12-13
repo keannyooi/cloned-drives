@@ -1,0 +1,49 @@
+{
+    "rq": 93,
+    "make": "ItalDesign",
+    "model": "Zerouno",
+    "modelYear": 2017,
+    "country": "IT",
+    "topSpeed": 205,
+    "0to60": 3.1,
+    "handling": 95,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Supercar","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1360,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 98.28,
+    "ola": 90.32,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1043205068444413982/unknown.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1043205141584683048/Italdesign_Zerouno.png",
+    "creator": "Aqo",
+
+"333TopSpeed": 208, 
+"3330to60": 2.9, 
+"333Handling": 98,
+
+"666TopSpeed": 210, 
+"6660to60": 2.8, 
+"666Handling": 101,
+
+"699TopSpeed": 210, 
+"6990to60": 2.6, 
+"699Handling": 105,
+
+"969TopSpeed": 213, 
+"9690to60": 2.8, 
+"969Handling": 105,
+
+"996TopSpeed": 213, 
+"9960to60": 2.6, 
+"996Handling": 101
+}

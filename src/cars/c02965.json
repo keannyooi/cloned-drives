@@ -1,0 +1,49 @@
+{
+    "rq": 86,
+    "make": "Lamborghini",
+    "model": "Huracan EVO RWD",
+    "modelYear": 2020,
+    "country": "IT",
+    "topSpeed": 202,
+    "0to60": 3.1,
+    "handling": 92,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Supercar","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1389,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 98.04,
+    "ola": 92.25,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1031409468967227412/LamborghiniHuracanEVORWD.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1031410359187279883/LamborghiniHuracanEVORWD.png",
+    "creator": "Spence",
+
+"333TopSpeed": 205, 
+"3330to60": 2.9, 
+"333Handling": 95,
+
+"666TopSpeed": 207, 
+"6660to60": 2.8, 
+"666Handling": 98,
+
+"699TopSpeed": 207, 
+"6990to60": 2.6, 
+"699Handling": 102,
+
+"969TopSpeed": 210, 
+"9690to60": 2.8, 
+"969Handling": 102,
+
+"996TopSpeed": 210, 
+"9960to60": 2.6, 
+"996Handling": 98
+}

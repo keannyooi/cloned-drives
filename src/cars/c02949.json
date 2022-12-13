@@ -1,0 +1,49 @@
+{
+    "rq": 92,
+    "make": "ItalDesign",
+    "model": "Zerouno Duerta",
+    "modelYear": 2019,
+    "country": "IT",
+    "topSpeed": 199,
+    "0to60": 3.1,
+    "handling": 94,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Supercar","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1410,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 96.12,
+    "ola": 90.32,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1043205726136442934/unknown.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1043205748047495298/Italdesign_Zerouno_Duerta.png",
+    "creator": "Aqo",
+
+"333TopSpeed": 202, 
+"3330to60": 2.9, 
+"333Handling": 97,
+
+"666TopSpeed": 204, 
+"6660to60": 2.8, 
+"666Handling": 100,
+
+"699TopSpeed": 204, 
+"6990to60": 2.6, 
+"699Handling": 104,
+
+"969TopSpeed": 207, 
+"9690to60": 2.8, 
+"969Handling": 104,
+
+"996TopSpeed": 207, 
+"9960to60": 2.6, 
+"996Handling": 100
+}

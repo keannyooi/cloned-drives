@@ -1,0 +1,49 @@
+{
+    "rq": 86,
+    "make": "Lamborghini",
+    "model": "Murcielago LP650-4 Roadster",
+    "modelYear": 2009,
+    "country": "IT",
+    "topSpeed": 208,
+    "0to60": 3.2,
+    "handling": 89,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Supercar","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1812,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 78.05,
+    "ola": 82.81,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1031389289512173619/IMG_9586.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1031389779167813682/LamborghiniMurcielagoLP650-4Roadster.png",
+    "creator": "Spence",
+
+"333TopSpeed": 210, 
+"3330to60": 3.0, 
+"333Handling": 92,
+
+"666TopSpeed": 213, 
+"6660to60": 2.9, 
+"666Handling": 95,
+
+"699TopSpeed": 213, 
+"6990to60": 2.7, 
+"699Handling": 99,
+
+"969TopSpeed": 216, 
+"9690to60": 2.9, 
+"969Handling": 99,
+
+"996TopSpeed": 216, 
+"9960to60": 2.7, 
+"996Handling": 95
+}

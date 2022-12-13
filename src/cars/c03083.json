@@ -1,0 +1,50 @@
+{
+    "rq": 40,
+    "make": "Skoda",
+    "model": "Octavia RS Combi TDI",
+    "modelYear": 2013,
+    "country": "CZ",
+    "topSpeed": 142,
+    "0to60": 7.5,
+    "handling": 80,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch","Rest of The World","The Tyrol Tour"],
+    "isPrize": false,
+
+
+    "weight": 1487,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 62.50,
+    "ola": 77.33,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1046425390714998865/C.SkodaOctavia3RSCombiTDI.png",
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1046425886091649094/octavia3rscombitdi.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 146,
+    "3330to60": 7.1,
+    "333Handling": 83,
+
+    "666TopSpeed": 149,
+    "6660to60": 6.8, 
+    "666Handling": 85,
+
+    "996TopSpeed": 153,
+    "9960to60": 6.4,
+    "996Handling": 85,
+
+    "969TopSpeed": 153,
+    "9690to60": 6.8,
+    "969Handling": 89,
+
+    "699TopSpeed": 149,
+    "6990to60": 6.4,
+    "699Handling": 89
+}

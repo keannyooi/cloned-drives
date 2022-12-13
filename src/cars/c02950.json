@@ -1,0 +1,49 @@
+{
+    "rq": 61,
+    "make": ["JB Racing", "Porsche"],
+    "model": "928 S Group 4",
+    "modelYear": 1981,
+    "country": "DE",
+    "topSpeed": 164,
+    "0to60": 4.6,
+    "handling": 82,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Motorsport", "Tuner","The Tyrol Tour"],
+    "isPrize": false,
+    
+    "weight": 1150,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 58.97,
+    "ola": 73.91,
+    "description": "The group 4 car Porsche never made.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1047280096559509554/jb_racing_928_s_group_4.png",
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1047279822180728964/jb_racing_928_s_group_4_hud.png",
+    "creator": "c6",
+
+    "333TopSpeed": 167,
+    "3330to60": 4.4,
+    "333Handling": 85,
+
+    "666TopSpeed": 170,
+    "6660to60": 4.1,
+    "666Handling": 87,
+
+    "996TopSpeed": 174,
+    "9960to60": 3.9,
+    "996Handling": 87,
+
+    "969TopSpeed": 174,
+    "9690to60": 4.1,
+    "969Handling": 91,
+
+    "699TopSpeed": 170,
+    "6990to60": 3.9,
+    "699Handling": 91
+}

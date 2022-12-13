@@ -1,0 +1,49 @@
+{
+    "rq": 97,
+    "make": "Ferrari",
+    "model": "FXX-K",
+    "modelYear": 2015,
+    "country": "IT",
+    "topSpeed": 217,
+    "0to60": 2.4,
+    "handling": 97,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1165,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 113.58,
+    "ola": 95.83,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1043201639265357834/unknown.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1043201694739210250/Ferrari_FXX-K.png",
+    "creator": "Spence",
+
+"333TopSpeed": 219, 
+"3330to60": 2.3, 
+"333Handling": 100,
+
+"666TopSpeed": 222, 
+"6660to60": 2.2, 
+"666Handling": 103,
+
+"699TopSpeed": 222, 
+"6990to60": 2.0, 
+"699Handling": 108,
+
+"969TopSpeed": 224, 
+"9690to60": 2.2, 
+"969Handling": 108,
+
+"996TopSpeed": 224, 
+"9960to60": 2.0, 
+"996Handling": 103
+}

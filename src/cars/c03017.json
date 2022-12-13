@@ -1,0 +1,49 @@
+{
+    "rq": 25,
+    "make": "Mercedes-Benz",
+    "model": "300 SL Touring",
+    "modelYear": 1954,
+    "country": "DE",
+    "topSpeed": 162,
+    "0to60": 8.1,
+    "handling": 69,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Motorsport","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1310,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 78.64,
+    "ola": 74.07,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1040630636014219274/300SLTouring.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1040631055755001947/300SLTouring.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 165, 
+"3330to60": 7.7, 
+"333Handling": 71,
+
+"666TopSpeed": 168, 
+"6660to60": 7.3, 
+"666Handling": 74,
+
+"699TopSpeed": 168, 
+"6990to60": 6.9, 
+"699Handling": 77,
+
+"969TopSpeed": 172, 
+"9690to60": 7.3, 
+"969Handling": 77,
+
+"996TopSpeed": 172, 
+"9960to60": 6.9, 
+"996Handling": 74
+}

@@ -1,0 +1,18 @@
+{
+	"trackName": "Mugello Circuit",
+	"weather": "Sunny",
+	"surface": "Asphalt",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://media.discordapp.net/attachments/1003260397786243142/1047999429115924511/unknown.png",
+	"map": "https://media.discordapp.net/attachments/1003260397786243142/1047999349281534052/mugello.png",
+
+	"specsDistr": {
+		"topSpeed": 60,
+		"0to60": 30,
+		"handling": 70,
+		"weight": 5,
+		"mra": 80,
+		"ola": 0
+	}
+}

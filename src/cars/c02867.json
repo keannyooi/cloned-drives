@@ -1,0 +1,49 @@
+{
+    "rq": 88,
+    "make": "ATS",
+    "model": "GT",
+    "modelYear": 2018,
+    "country": "IT",
+    "topSpeed": 206,
+    "0to60": 3.0,
+    "handling": 92,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Supercar","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1300,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 103.45,
+    "ola": 93.33,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1042457148812165191/IMG_2903.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1042457474906718288/ATSGT.png",
+    "creator": "Spence",
+
+"333TopSpeed": 209, 
+"3330to60": 2.8, 
+"333Handling": 95,
+
+"666TopSpeed": 211, 
+"6660to60": 2.7, 
+"666Handling": 98,
+
+"699TopSpeed": 211, 
+"6990to60": 2.6, 
+"699Handling": 102,
+
+"969TopSpeed": 214, 
+"9690to60": 2.7, 
+"969Handling": 102,
+
+"996TopSpeed": 214, 
+"9960to60": 2.6, 
+"996Handling": 98
+}

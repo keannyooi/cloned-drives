@@ -1,0 +1,49 @@
+{
+    "rq": 91,
+    "make": ["Mansory", "Ferrari"],
+    "model": "Stallone 812",
+    "modelYear": 2018,
+    "country": "DE",
+    "topSpeed": 216,
+    "0to60": 2.7,
+    "handling": 93,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner","The Tyrol Tour"],
+    "isPrize": false,
+    
+    "weight": 1630,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 100.76,
+    "ola": 101.5,
+    "description": "One of the ugliest things to ever exist.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1050926381820821504/mansory_stallone_812.png",
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1050926464217923614/mansory_stallone_812_hud.png",
+    "creator": "c6",
+
+    "333TopSpeed": 218,
+    "3330to60": 2.6,
+    "333Handling": 96,
+
+    "666TopSpeed": 221,
+    "6660to60": 2.4,
+    "666Handling": 99,
+
+    "996TopSpeed": 223,
+    "9960to60": 2.3,
+    "996Handling": 99,
+
+    "969TopSpeed": 223,
+    "9690to60": 2.4,
+    "969Handling": 103,
+
+    "699TopSpeed": 221,
+    "6990to60": 2.4,
+    "699Handling": 103
+}

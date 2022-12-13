@@ -1,0 +1,49 @@
+{
+    "rq": 79,
+    "make": ["Mercedes-AMG","Mercedes-Benz"],
+    "model": "GT S Roadster",
+    "modelYear": 2018,
+    "country": "DE",
+    "topSpeed": 191,
+    "0to60": 3.6,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1690,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 90,
+    "ola": 91.66,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1043198455528554657/AMGGTSRoadster2018.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1043198990818234428/GTSRoadser18.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 194, 
+"3330to60": 3.4, 
+"333Handling": 94,
+
+"666TopSpeed": 196, 
+"6660to60": 3.2, 
+"666Handling": 97,
+
+"699TopSpeed": 196, 
+"6990to60": 3.1, 
+"699Handling": 101,
+
+"969TopSpeed": 199, 
+"9690to60": 3.2, 
+"969Handling": 101,
+
+"996TopSpeed": 199, 
+"9960to60": 3.1, 
+"996Handling": 97
+}

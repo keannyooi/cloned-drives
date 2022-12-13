@@ -1,0 +1,49 @@
+{
+    "rq": 18,
+    "make": "Porsche",
+    "model": "597/2 Jagdwagen",
+    "modelYear": 1955,
+    "country": "DE",
+    "topSpeed": 62,
+    "0to60": 32.6,
+    "handling": 51,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["Extreme Juggernaut","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 990,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 0,
+    "ola": 45,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1044620374039597116/597-2.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1044620568667885640/5972jagdwagen.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 70, 
+"3330to60": 31.0, 
+"333Handling": 53,
+
+"666TopSpeed": 79, 
+"6660to60": 29.3, 
+"666Handling": 54,
+
+"699TopSpeed": 79, 
+"6990to60": 27.7, 
+"699Handling": 57,
+
+"969TopSpeed": 87, 
+"9690to60": 29.3, 
+"969Handling": 57,
+
+"996TopSpeed": 87, 
+"9960to60": 27.7, 
+"996Handling": 54
+}

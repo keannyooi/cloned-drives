@@ -1,0 +1,49 @@
+{
+    "rq": 87,
+    "make": "Lamborghini",
+    "model": "Huracan Super Trofeo EVO",
+    "modelYear": 2018,
+    "country": "IT",
+    "topSpeed": 174,
+    "0to60": 2.9,
+    "handling": 96,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Track Day","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1270,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 101.54,
+    "ola": 93.2,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1031409772450299914/LamborghiniHuracanSuperTrofeoEVO.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1031410823177982002/LamborghiniHuracanSuperTrofeoEVO.png",
+    "creator": "Spence",
+
+"333TopSpeed": 177, 
+"3330to60": 2.8, 
+"333Handling": 99,
+
+"666TopSpeed": 180, 
+"6660to60": 2.6, 
+"666Handling": 102,
+
+"699TopSpeed": 180, 
+"6990to60": 2.5, 
+"699Handling": 107,
+
+"969TopSpeed": 183, 
+"9690to60": 2.6, 
+"969Handling": 107,
+
+"996TopSpeed": 183, 
+"9960to60": 2.5, 
+"996Handling": 102
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 48,
+    "make": "Fiat",
+    "model": "Coupe 2.0 20V Turbo",
+    "modelYear": 1996,
+    "country": "IT",
+    "topSpeed": 155,
+    "0to60": 6.3,
+    "handling": 76,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1310,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 67.02,
+    "ola": 79.37,
+    "description": "Fjat Kupe Tu Pojnt Zyro Tventi Valv TURBO (One Ovner) (No Aksidents)",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1042538656583397546/FiatCoupe2.020VTurbo.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1042539237213487215/FiatCoupe20VTurbo.png",
+    "creator": "Havvy",
+
+"333TopSpeed": 158, 
+"3330to60": 6.0, 
+"333Handling": 79,
+
+"666TopSpeed": 162, 
+"6660to60": 5.7, 
+"666Handling": 81,
+
+"699TopSpeed": 162, 
+"6990to60": 5.4, 
+"699Handling": 84,
+
+"969TopSpeed": 165, 
+"9690to60": 5.7, 
+"969Handling": 84,
+
+"996TopSpeed": 165, 
+"9960to60": 5.4, 
+"996Handling": 81
+}

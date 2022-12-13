@@ -1,0 +1,49 @@
+{
+    "rq": 74,
+    "make": ["G-Power", "BMW"],
+    "model": "G1 V8 Hurricane RS",
+    "modelYear": 2012,
+    "country": "DE",
+    "topSpeed": 205,
+    "0to60": 4.2,
+    "handling": 90,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1490,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 100,
+    "ola": 95.23,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1043197944532312205/G1V8HRS.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1043198807892045945/G1V8HRS.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 208, 
+"3330to60": 4.0, 
+"333Handling": 93,
+
+"666TopSpeed": 210, 
+"6660to60": 3.8, 
+"666Handling": 96,
+
+"699TopSpeed": 210, 
+"6990to60": 3.6, 
+"699Handling": 100,
+
+"969TopSpeed": 213, 
+"9690to60": 3.8, 
+"969Handling": 100,
+
+"996TopSpeed": 213, 
+"9960to60": 3.6, 
+"996Handling": 96
+}

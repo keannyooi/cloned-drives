@@ -1,0 +1,50 @@
+{
+    "rq": 1,
+    "make": "Skoda",
+    "model": "Octavia Super TS 1200",
+    "modelYear": 1962,
+    "country": "CZ",
+    "topSpeed": 87,
+    "0to60": 26.9,
+    "handling": 54,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour","Rest of The World"],
+    "isPrize": false,
+
+
+    "weight": 920,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 10.24,
+    "ola": 50.55,
+    "description": "Octavia TS continued Skodas engagement in rally, securing numerous victories at international rallies in the 60s.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1051553970155429908/F.SkodaOctaviaSTS.png",
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1051554351841296505/OctaviaTS.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 93,
+    "3330to60": 25.6,
+    "333Handling": 56,
+
+    "666TopSpeed": 99,
+    "6660to60": 24.2, 
+    "666Handling": 58,
+
+    "996TopSpeed": 105,
+    "9960to60": 22.9,
+    "996Handling": 58,
+
+    "969TopSpeed": 105,
+    "9690to60": 24.2,
+    "969Handling": 60,
+
+    "699TopSpeed": 99,
+    "6990to60": 22.9,
+    "699Handling": 60
+}

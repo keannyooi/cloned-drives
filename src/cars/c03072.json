@@ -1,0 +1,49 @@
+{
+    "rq": 71,
+    "make": "Ruf",
+    "model": "CTR \"Yellowbird\"",
+    "modelYear": 1987,
+    "country": "DE",
+    "topSpeed": 213,
+    "0to60": 4.0,
+    "handling": 81,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner","Ultra Expensive","Unique","Style Icon","The Tyrol Tour","Year of the Rabbit"],
+    "isPrize": true,
+	
+    "weight": 1222,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 117.81,
+    "ola": 84.55,
+    "description": "The Ruf Yellow Bird is one of the most prolific tuned vehicles and gained notoriety from a Road & Track cover article which called it the ‘Fastest car in the world!’. It achieved this title during to two-day event in 1987, where Road & Track was testing various cars in Northern Germany and stunned everyone by achieving 211 mph at Volkswagen’s Ehra-Lessien track.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1042539099304771614/RufCTR.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1042539351566991521/CTRYellowbirb.png",
+    "creator": "Havvy",
+
+"333TopSpeed": 215, 
+"3330to60": 3.8, 
+"333Handling": 84,
+
+"666TopSpeed": 218, 
+"6660to60": 3.6, 
+"666Handling": 86,
+
+"699TopSpeed": 218, 
+"6990to60": 3.4, 
+"699Handling": 90,
+
+"969TopSpeed": 220, 
+"9690to60": 3.6, 
+"969Handling": 90,
+
+"996TopSpeed": 220, 
+"9960to60": 3.4, 
+"996Handling": 86
+}

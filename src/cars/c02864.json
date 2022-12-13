@@ -1,0 +1,49 @@
+{
+    "rq": 74,
+    "make": ["Alpina", "BMW"],
+    "model": "B4 S Bi-Turbo Allrad",
+    "modelYear": 2017,
+    "country": "DE",
+    "topSpeed": 188,
+    "0to60": 3.9,
+    "handling": 83,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Tuner","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1755,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 81.25,
+    "ola": 74.36,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1042430878917328999/b4sbtallrad.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1042431276956782622/B4sBTallrad.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 191, 
+"3330to60": 3.7, 
+"333Handling": 86,
+
+"666TopSpeed": 194, 
+"6660to60": 3.5, 
+"666Handling": 88,
+
+"699TopSpeed": 194, 
+"6990to60": 3.3, 
+"699Handling": 92,
+
+"969TopSpeed": 196, 
+"9690to60": 3.5, 
+"969Handling": 92,
+
+"996TopSpeed": 196, 
+"9960to60": 3.3, 
+"996Handling": 88
+}

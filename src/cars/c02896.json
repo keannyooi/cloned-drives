@@ -1,0 +1,49 @@
+{
+    "rq": 39,
+    "make": "BMW",
+    "model": "X3 xDrive18d",
+    "modelYear": 2009,
+    "country": "DE",
+    "topSpeed": 119,
+    "0to60": 10.5,
+    "handling": 73,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1740,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 36.84,
+    "ola": 76.19,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1044623996366364743/X3xDrive18d.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1044624843724820571/x3xdrive18d.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 123, 
+"3330to60": 10.0, 
+"333Handling": 75,
+
+"666TopSpeed": 128, 
+"6660to60": 9.5, 
+"666Handling": 78,
+
+"699TopSpeed": 128, 
+"6990to60": 8.9, 
+"699Handling": 81,
+
+"969TopSpeed": 132, 
+"9690to60": 9.5, 
+"969Handling": 81,
+
+"996TopSpeed": 132, 
+"9960to60": 8.9, 
+"996Handling": 78
+}

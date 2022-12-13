@@ -1,0 +1,49 @@
+{
+    "rq": 41,
+    "make": "Porsche",
+    "model": "928 S3",
+    "modelYear": 1985,
+    "country": "DE",
+    "topSpeed": 153,
+    "0to60": 5.9,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour"],
+    "isPrize": false,
+    
+    "weight": 1515,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 62.59,
+    "ola": 74.52,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1050462301095985244/porsche_928_s3.png",
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1050462796044832778/porsche_928_s3_hud.png",
+    "creator": "c6",
+
+    "333TopSpeed": 156,
+    "3330to60": 5.6,
+    "333Handling": 77,
+
+    "666TopSpeed": 160,
+    "6660to60": 5.3,
+    "666Handling": 80,
+
+    "996TopSpeed": 163,
+    "9960to60": 5.0,
+    "996Handling": 80,
+
+    "969TopSpeed": 163,
+    "9690to60": 5.3,
+    "969Handling": 83,
+
+    "699TopSpeed": 160,
+    "6990to60": 5.0,
+    "699Handling": 83
+}

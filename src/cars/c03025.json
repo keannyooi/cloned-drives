@@ -1,0 +1,49 @@
+{
+    "rq": 96,
+    "make": ["Novitec", "McLaren"],
+    "model": "765LT",
+    "modelYear": 2021,
+    "country": "DE",
+    "topSpeed": 209,
+    "0to60": 2.4,
+    "handling": 94,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner","The Tyrol Tour"],
+    "isPrize": false,
+    
+    "weight": 1229,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 118.18,
+    "ola": 94.36,
+    "description": "A subtle upgrade to the already fast 765LT coming from Germany.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1050933293098483712/novitec_765lt.png",
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1050933387709382676/novitec_765lt_hud.png",
+    "creator": "c6",
+
+    "333TopSpeed": 211,
+    "3330to60": 2.3,
+    "333Handling": 97,
+
+    "666TopSpeed": 214,
+    "6660to60": 2.2,
+    "666Handling": 100,
+
+    "996TopSpeed": 216,
+    "9960to60": 2.0,
+    "996Handling": 100,
+
+    "969TopSpeed": 216,
+    "9690to60": 2.2,
+    "969Handling": 104,
+
+    "699TopSpeed": 214,
+    "6990to60": 2.0,
+    "699Handling": 104
+}

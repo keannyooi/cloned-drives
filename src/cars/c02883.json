@@ -1,0 +1,49 @@
+{
+    "rq": 58,
+    "make": "BMW",
+    "model": "ActiveHybrid 5",
+    "modelYear": 2011,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 5.6,
+    "handling": 74,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly","The Tyrol Tour","Year of the Rabbit"],
+    "isPrize": false,
+	
+    "weight": 1925,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 72.73,
+    "ola": 78.57,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1043208291209203872/unknown.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1043208326609109012/BMW_ActiveHybrid_5.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 158, 
+"3330to60": 5.3, 
+"333Handling": 76,
+
+"666TopSpeed": 162, 
+"6660to60": 5.0, 
+"666Handling": 79,
+
+"699TopSpeed": 162, 
+"6990to60": 4.8, 
+"699Handling": 82,
+
+"969TopSpeed": 165, 
+"9690to60": 5.0, 
+"969Handling": 82,
+
+"996TopSpeed": 165, 
+"9960to60": 4.8, 
+"996Handling": 79
+}

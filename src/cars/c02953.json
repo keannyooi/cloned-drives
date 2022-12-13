@@ -1,0 +1,49 @@
+{
+    "rq": 101,
+    "make": "Lamborghini",
+    "model": "Egoista",
+    "modelYear": 2013,
+    "country": "IT",
+    "topSpeed": 217,
+    "0to60": 2.3,
+    "handling": 92,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Concept","Unique","The Tyrol Tour"],
+    "isPrize": true,
+	
+    "weight": 950,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 84.78,
+    "ola": 77.69,
+    "description": "Represents hedonism taken to the extreme, as said by the designer of this fighter jet inspired concept.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1031207399991824474/IMG_9163.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1031208772082868294/LamborghiniEgoista.png",
+    "creator": "Spence",
+
+"333TopSpeed": 219, 
+"3330to60": 2.2, 
+"333Handling": 95,
+
+"666TopSpeed": 222, 
+"6660to60": 2.1, 
+"666Handling": 98,
+
+"699TopSpeed": 222, 
+"6990to60": 2.0, 
+"699Handling": 102,
+
+"969TopSpeed": 224, 
+"9690to60": 2.1, 
+"969Handling": 102,
+
+"996TopSpeed": 224, 
+"9960to60": 2.0, 
+"996Handling": 98
+}

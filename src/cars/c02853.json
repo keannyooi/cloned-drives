@@ -1,0 +1,49 @@
+{
+    "rq": 46,
+    "make": "Alfa Romeo",
+    "model": "159 3.2 JTS V6 Q4",
+    "modelYear": 2005,
+    "country": "IT",
+    "topSpeed": 149,
+    "0to60": 6.7,
+    "handling": 77,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1690,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 59.11,
+    "ola": 75.19,
+    "description": "Berlina",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1042457017564012624/unknown_1.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1042457429004263444/159JTSV6Q4.png",
+    "creator": "Havvy",
+
+"333TopSpeed": 152, 
+"3330to60": 6.4, 
+"333Handling": 80,
+
+"666TopSpeed": 156, 
+"6660to60": 6.0, 
+"666Handling": 82,
+
+"699TopSpeed": 156, 
+"6990to60": 5.7, 
+"699Handling": 85,
+
+"969TopSpeed": 159, 
+"9690to60": 6.0, 
+"969Handling": 85,
+
+"996TopSpeed": 159, 
+"9960to60": 5.7, 
+"996Handling": 82
+}

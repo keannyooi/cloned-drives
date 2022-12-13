@@ -1,0 +1,49 @@
+{
+    "rq": 79,
+    "make": "Pagani",
+    "model": "Zonda C12 S 7.3",
+    "modelYear": 2002,
+    "country": "IT",
+    "topSpeed": 214,
+    "0to60": 3.7,
+    "handling": 88,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Supercar","Unique","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1280,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 102.78,
+    "ola": 97.3,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1040600922159591505/ZondaC12S7.3.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1040601757845295104/ZondaC12S7.3.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 216, 
+"3330to60": 3.5, 
+"333Handling": 91,
+
+"666TopSpeed": 219, 
+"6660to60": 3.3, 
+"666Handling": 94,
+
+"699TopSpeed": 219, 
+"6990to60": 3.1, 
+"699Handling": 98,
+
+"969TopSpeed": 221, 
+"9690to60": 3.3, 
+"969Handling": 98,
+
+"996TopSpeed": 221, 
+"9960to60": 3.1, 
+"996Handling": 94
+}

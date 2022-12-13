@@ -1,0 +1,49 @@
+{
+    "rq": 21,
+    "make": "Fiat",
+    "model": "X1/9 1.5",
+    "modelYear": 1983,
+    "country": "IT",
+    "topSpeed": 112,
+    "0to60": 10.8,
+    "handling": 73,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 920,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 38.16,
+    "ola": 59.26,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1043220639663804447/unknown.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1043220673524408430/Fiat_X19_1.5.png",
+    "creator": "Based",
+
+"333TopSpeed": 117, 
+"3330to60": 10.3, 
+"333Handling": 75,
+
+"666TopSpeed": 121, 
+"6660to60": 9.7, 
+"666Handling": 78,
+
+"699TopSpeed": 121, 
+"6990to60": 9.2, 
+"699Handling": 81,
+
+"969TopSpeed": 126, 
+"9690to60": 9.7, 
+"969Handling": 81,
+
+"996TopSpeed": 126, 
+"9960to60": 9.2, 
+"996Handling": 78
+}

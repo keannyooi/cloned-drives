@@ -1,0 +1,49 @@
+{
+    "rq": 32,
+    "make": "Mercedes-Benz",
+    "model": "190 E 2.5-16 Evolution I",
+    "modelYear": 1989,
+    "country": "DE",
+    "topSpeed": 146,
+    "0to60": 7.0,
+    "handling": 73,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Style Icon","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1320,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 67.8,
+    "ola": 71.94,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1042539161434996766/MercEvo.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1042539401135271996/MercEvothing.png",
+    "creator": "Havvy",
+
+"333TopSpeed": 150, 
+"3330to60": 6.6, 
+"333Handling": 75,
+
+"666TopSpeed": 153, 
+"6660to60": 6.3, 
+"666Handling": 78,
+
+"699TopSpeed": 153, 
+"6990to60": 6.0, 
+"699Handling": 81,
+
+"969TopSpeed": 157, 
+"9690to60": 6.3, 
+"969Handling": 81,
+
+"996TopSpeed": 157, 
+"9960to60": 6.0, 
+"996Handling": 78
+}

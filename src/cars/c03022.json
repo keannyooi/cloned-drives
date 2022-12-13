@@ -1,0 +1,49 @@
+{
+    "rq": 72,
+    "make": "Mercedes-Benz",
+    "model": "Vision SLR Concept Roadster",
+    "modelYear": 1999,
+    "country": "DE",
+    "topSpeed": 199,
+    "0to60": 4.1,
+    "handling": 88,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Concept","Unique","The Tyrol Tour","Year of the Rabbit"],
+    "isPrize": false,
+	
+    "weight": 1460,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 77.35,
+    "ola": 97.56,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1042429815501897748/SLRVisionConceptRoadster.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1042431095859335229/SLRVisionRoadster.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 202, 
+"3330to60": 3.9, 
+"333Handling": 91,
+
+"666TopSpeed": 204, 
+"6660to60": 3.7, 
+"666Handling": 94,
+
+"699TopSpeed": 204, 
+"6990to60": 3.5, 
+"699Handling": 98,
+
+"969TopSpeed": 207, 
+"9690to60": 3.7, 
+"969Handling": 98,
+
+"996TopSpeed": 207, 
+"9960to60": 3.5, 
+"996Handling": 94
+}

@@ -1,0 +1,50 @@
+{
+    "rq": 85,
+    "make": "Skoda",
+    "model": "Octavia Kit Car",
+    "modelYear": 1997,
+    "country": "CZ",
+    "topSpeed": 131,
+    "0to60": 4.9,
+    "handling": 86,
+    "driveType": "FWD",
+    "tyreType": "Off-Road",
+    "tags": ["Motorsport","The Tyrol Tour","Rest of The World"],
+    "isPrize": false,
+
+
+    "weight": 960,
+    "gc": "Medium",
+    "seatCount":2,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 70.00,
+    "ola": 85.71,
+    "description": ".",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1050742557770006538/S.SkodaOctaviaKitCar.png",
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1050748417791508570/OctaviaKit.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 135,
+    "3330to60": 4.7,
+    "333Handling": 89,
+
+    "666TopSpeed": 139,
+    "6660to60": 4.4, 
+    "666Handling": 92,
+
+    "996TopSpeed": 143,
+    "9960to60": 4.2,
+    "996Handling": 92,
+
+    "969TopSpeed": 143,
+    "9690to60": 4.4,
+    "969Handling": 95,
+
+    "699TopSpeed": 139,
+    "6990to60": 4.2,
+    "699Handling": 95
+}

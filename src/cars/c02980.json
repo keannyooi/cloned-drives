@@ -1,0 +1,49 @@
+{
+    "rq": 83,
+    "make": "Lamborghini",
+    "model": "Urus Concept",
+    "modelYear": 2012,
+    "country": "IT",
+    "topSpeed": 187,
+    "0to60": 3.7,
+    "handling": 85,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Unique","Concept","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 2000,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 67.27,
+    "ola": 78.38,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1039001980607143936/LamborghiniUrusConcept.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1039002318764523550/LamborghiniUrusConcept.png",
+    "creator": "Spence",
+
+"333TopSpeed": 190, 
+"3330to60": 3.5, 
+"333Handling": 88,
+
+"666TopSpeed": 193, 
+"6660to60": 3.3, 
+"666Handling": 91,
+
+"699TopSpeed": 193, 
+"6990to60": 3.1, 
+"699Handling": 94,
+
+"969TopSpeed": 195, 
+"9690to60": 3.3, 
+"969Handling": 94,
+
+"996TopSpeed": 195, 
+"9960to60": 3.1, 
+"996Handling": 91
+}

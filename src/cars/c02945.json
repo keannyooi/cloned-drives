@@ -1,0 +1,49 @@
+{
+    "rq": 75,
+    "make": ["Hartge", "BMW"],
+    "model": "Hunter 3.0sd",
+    "modelYear": 2007,
+    "country": "DE",
+    "topSpeed": 130,
+    "0to60": 5.7,
+    "handling": 75,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["Extreme Juggernaut","Tuner","Unique","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1890,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 71.25,
+    "ola": 70.17,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1050050951622426695/HartgeHunter.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1050053450148352060/hartgehunter.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 134, 
+"3330to60": 5.4, 
+"333Handling": 77,
+
+"666TopSpeed": 138, 
+"6660to60": 5.1, 
+"666Handling": 80,
+
+"699TopSpeed": 138, 
+"6990to60": 4.8, 
+"699Handling": 83,
+
+"969TopSpeed": 142, 
+"9690to60": 5.1, 
+"969Handling": 83,
+
+"996TopSpeed": 142, 
+"9960to60": 4.8, 
+"996Handling": 80
+}

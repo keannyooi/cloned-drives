@@ -1,0 +1,49 @@
+{
+    "rq": 73,
+    "make": "BMW",
+    "model": "X3 Cross Country",
+    "modelYear": 2007,
+    "country": "DE",
+    "topSpeed": 116,
+    "0to60": 6.0,
+    "handling": 75,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["Motorsport","Unique","The Tyrol Tour"],
+    "isPrize": true,
+	
+    "weight": 1620,
+    "gc": "High",
+    "seatCount": 2,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 80,
+    "ola": 66.66,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1044624328219689000/x3CC.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1044625042312532038/x3cc.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 120, 
+"3330to60": 5.7, 
+"333Handling": 77,
+
+"666TopSpeed": 125, 
+"6660to60": 5.4, 
+"666Handling": 80,
+
+"699TopSpeed": 125, 
+"6990to60": 5.1, 
+"699Handling": 83,
+
+"969TopSpeed": 129, 
+"9690to60": 5.4, 
+"969Handling": 83,
+
+"996TopSpeed": 129, 
+"9960to60": 5.1, 
+"996Handling": 80
+}

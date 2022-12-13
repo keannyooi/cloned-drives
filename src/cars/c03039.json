@@ -1,0 +1,49 @@
+{
+    "rq": 95,
+    "make": "Pagani",
+    "model": "Zonda Absolute Evolution",
+    "modelYear": 2018,
+    "country": "IT",
+    "topSpeed": 218,
+    "0to60": 2.5,
+    "handling": 94,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Unique","Ultra Expensive","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1190,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 104.16,
+    "ola": 96,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1040600890010243122/ZondaAbsoluteEvo.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1040601729881886770/ZondaAbsoluteEvo.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 220, 
+"3330to60": 2.4, 
+"333Handling": 97,
+
+"666TopSpeed": 223, 
+"6660to60": 2.2, 
+"666Handling": 100,
+
+"699TopSpeed": 223, 
+"6990to60": 2.1, 
+"699Handling": 104,
+
+"969TopSpeed": 225, 
+"9690to60": 2.2, 
+"969Handling": 104,
+
+"996TopSpeed": 225, 
+"9960to60": 2.1, 
+"996Handling": 100
+}

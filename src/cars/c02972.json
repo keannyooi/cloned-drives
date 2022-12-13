@@ -1,0 +1,49 @@
+{
+    "rq": 88,
+    "make": "Lamborghini",
+    "model": "Huracan LP610-4 Spyder",
+    "modelYear": 2015,
+    "country": "IT",
+    "topSpeed": 201,
+    "0to60": 3.0,
+    "handling": 90,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Supercar","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1640,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 83.33,
+    "ola": 90,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1031409121724997653/LamborghiniHuracanLP6104Spyder.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1031410059114201108/LamborghiniHuracanLP610-4Spyder.png",
+    "creator": "Spence",
+
+"333TopSpeed": 204, 
+"3330to60": 2.8, 
+"333Handling": 93,
+
+"666TopSpeed": 206, 
+"6660to60": 2.7, 
+"666Handling": 96,
+
+"699TopSpeed": 206, 
+"6990to60": 2.6, 
+"699Handling": 100,
+
+"969TopSpeed": 209, 
+"9690to60": 2.7, 
+"969Handling": 100,
+
+"996TopSpeed": 209, 
+"9960to60": 2.6, 
+"996Handling": 96
+}

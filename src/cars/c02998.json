@@ -1,0 +1,49 @@
+{
+    "rq": 80,
+    "make": ["Mercedes-AMG","Mercedes-Benz"],
+    "model": "GT",
+    "modelYear": 2019,
+    "country": "DE",
+    "topSpeed": 189,
+    "0to60": 3.5,
+    "handling": 92,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1670,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 87.8,
+    "ola": 91.42,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1043198188766634064/AMGGT2019.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1043198831816351877/GT19.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 192, 
+"3330to60": 3.3, 
+"333Handling": 95,
+
+"666TopSpeed": 195, 
+"6660to60": 3.1, 
+"666Handling": 98,
+
+"699TopSpeed": 195, 
+"6990to60": 3.0, 
+"699Handling": 102,
+
+"969TopSpeed": 197, 
+"9690to60": 3.1, 
+"969Handling": 102,
+
+"996TopSpeed": 197, 
+"9960to60": 3.0, 
+"996Handling": 98
+}

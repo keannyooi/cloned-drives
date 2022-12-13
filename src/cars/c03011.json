@@ -1,0 +1,49 @@
+{
+    "rq": 28,
+    "make": "Mercedes-Benz",
+    "model": "300 SL (W194)",
+    "modelYear": 1952,
+    "country": "DE",
+    "topSpeed": 149,
+    "0to60": 7.0,
+    "handling": 69,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Unique","Ultra Expensive","Concept","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 870,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 46.97,
+    "ola": 105.71,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1040630731845681242/W194.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1040631078890786938/W194.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 152, 
+"3330to60": 6.6, 
+"333Handling": 71,
+
+"666TopSpeed": 156, 
+"6660to60": 6.3, 
+"666Handling": 74,
+
+"699TopSpeed": 156, 
+"6990to60": 6.0, 
+"699Handling": 77,
+
+"969TopSpeed": 159, 
+"9690to60": 6.3, 
+"969Handling": 77,
+
+"996TopSpeed": 159, 
+"9960to60": 6.0, 
+"996Handling": 74
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 98,
+    "make": ["Manhart", "Lamborghini"],
+    "model": "Urus 800",
+    "modelYear": 2019,
+    "country": "DE",
+    "topSpeed": 205,
+    "0to60": 2.8,
+    "handling": 92,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Tuner","Unique","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 2170,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 84.85,
+    "ola": 82.14,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1039002107791020124/ManhartUrus800.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1039002405993463818/ManhartUrus800.png",
+    "creator": "Spence",
+
+"333TopSpeed": 208, 
+"3330to60": 2.7, 
+"333Handling": 95,
+
+"666TopSpeed": 210, 
+"6660to60": 2.5, 
+"666Handling": 98,
+
+"699TopSpeed": 210, 
+"6990to60": 2.4, 
+"699Handling": 102,
+
+"969TopSpeed": 213, 
+"9690to60": 2.5, 
+"969Handling": 102,
+
+"996TopSpeed": 213, 
+"9960to60": 2.4, 
+"996Handling": 98
+}

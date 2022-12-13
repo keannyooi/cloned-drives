@@ -1,0 +1,49 @@
+{
+    "rq": 77,
+    "make": ["Mercedes-AMG","Mercedes-Benz"],
+    "model": "GT Roadster",
+    "modelYear": 2020,
+    "country": "DE",
+    "topSpeed": 193,
+    "0to60": 3.7,
+    "handling": 90,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1700,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 94.87,
+    "ola": 97.29,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1043198337073033307/AMGGTRoadsrer2020.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1043198928599916584/AMGGTRoadster2020.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 196, 
+"3330to60": 3.5, 
+"333Handling": 93,
+
+"666TopSpeed": 198, 
+"6660to60": 3.3, 
+"666Handling": 96,
+
+"699TopSpeed": 198, 
+"6990to60": 3.1, 
+"699Handling": 100,
+
+"969TopSpeed": 201, 
+"9690to60": 3.3, 
+"969Handling": 100,
+
+"996TopSpeed": 201, 
+"9960to60": 3.1, 
+"996Handling": 96
+}

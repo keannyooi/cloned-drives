@@ -1,0 +1,49 @@
+{
+    "rq": 94,
+    "make": "Pagani",
+    "model": "Huayra BC Roadster",
+    "modelYear": 2019,
+    "country": "IT",
+    "topSpeed": 219,
+    "0to60": 2.7,
+    "handling": 95,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Track Day","Unique","Ultra Expensive","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1217,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 103.84,
+    "ola": 85.92,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1040600505275121774/HuayraBCRoadster.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1040601653025443931/HuayraBCRoadster.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 221, 
+"3330to60": 2.6, 
+"333Handling": 98,
+
+"666TopSpeed": 224, 
+"6660to60": 2.4, 
+"666Handling": 101,
+
+"699TopSpeed": 224, 
+"6990to60": 2.3, 
+"699Handling": 105,
+
+"969TopSpeed": 226, 
+"9690to60": 2.4, 
+"969Handling": 105,
+
+"996TopSpeed": 226, 
+"9960to60": 2.3, 
+"996Handling": 101
+}

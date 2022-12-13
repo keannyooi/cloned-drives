@@ -1,0 +1,49 @@
+{
+    "rq": 44,
+    "make": "Alfa Romeo",
+    "model": "159 Sportwagon 3.2 JTS V6 Q4",
+    "modelYear": 2006,
+    "country": "IT",
+    "topSpeed": 149,
+    "0to60": 6.9,
+    "handling": 76,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1690,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 57.81,
+    "ola": 75.91,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1042457100414111815/unknown.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1042457452274257981/159Sportwagon.png",
+    "creator": "Havvy",
+
+"333TopSpeed": 152, 
+"3330to60": 6.6, 
+"333Handling": 79,
+
+"666TopSpeed": 156, 
+"6660to60": 6.2, 
+"666Handling": 81,
+
+"699TopSpeed": 156, 
+"6990to60": 5.9, 
+"699Handling": 84,
+
+"969TopSpeed": 159, 
+"9690to60": 6.2, 
+"969Handling": 84,
+
+"996TopSpeed": 159, 
+"9960to60": 5.9, 
+"996Handling": 81
+}

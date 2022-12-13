@@ -1,0 +1,49 @@
+{
+    "rq": 61,
+    "make": ["Alpina", "BMW"],
+    "model": "D4 Bi-Turbo",
+    "modelYear": 2014,
+    "country": "DE",
+    "topSpeed": 173,
+    "0to60": 4.6,
+    "handling": 82,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1720,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 85.19,
+    "ola": 86.96,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1042430524251181196/D4Bt.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1042431132144250910/D4bt.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 176, 
+"3330to60": 4.4, 
+"333Handling": 85,
+
+"666TopSpeed": 179, 
+"6660to60": 4.1, 
+"666Handling": 87,
+
+"699TopSpeed": 179, 
+"6990to60": 3.9, 
+"699Handling": 91,
+
+"969TopSpeed": 182, 
+"9690to60": 4.1, 
+"969Handling": 91,
+
+"996TopSpeed": 182, 
+"9960to60": 3.9, 
+"996Handling": 87
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 89,
+    "make": ["Mansory", "Ferrari"],
+    "model": "Stallone Softkit",
+    "modelYear": 2020,
+    "country": "DE",
+    "topSpeed": 214,
+    "0to60": 2.8,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner","The Tyrol Tour"],
+    "isPrize": false,
+    
+    "weight": 1670,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 96.84,
+    "ola": 98,
+    "description": "A less radical bodykit than Mansory usually tends to go with.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1050928686121111592/mansory_812_softkit.png",
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1050928853696118804/mansory_812_softkit_hud.png",
+    "creator": "c6",
+
+    "333TopSpeed": 216,
+    "3330to60": 2.7,
+    "333Handling": 94,
+
+    "666TopSpeed": 219,
+    "6660to60": 2.5,
+    "666Handling": 97,
+
+    "996TopSpeed": 221,
+    "9960to60": 2.4,
+    "996Handling": 97,
+
+    "969TopSpeed": 221,
+    "9690to60": 2.5,
+    "969Handling": 101,
+
+    "699TopSpeed": 219,
+    "6990to60": 2.4,
+    "699Handling": 101
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 8,
+    "make": "Mercedes-Benz",
+    "model": "220 SL Prototype",
+    "modelYear": 1957,
+    "country": "DE",
+    "topSpeed": 127,
+    "0to60": 11.5,
+    "handling": 67,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Ultra Expensive","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1290,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 33.33,
+    "ola": 74.78,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1040630160162041886/220SLPrototype.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1040630884119883836/220SLPrototype.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 131, 
+"3330to60": 10.9, 
+"333Handling": 69,
+
+"666TopSpeed": 135, 
+"6660to60": 10.3, 
+"666Handling": 71,
+
+"699TopSpeed": 135, 
+"6990to60": 9.8, 
+"699Handling": 74,
+
+"969TopSpeed": 139, 
+"9690to60": 10.3, 
+"969Handling": 74,
+
+"996TopSpeed": 139, 
+"9960to60": 9.8, 
+"996Handling": 71
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 84,
+    "make": ["Pogea Racing", "Alfa Romeo"],
+    "model": "Zeus",
+    "modelYear": 2019,
+    "country": "DE",
+    "topSpeed": 189,
+    "0to60": 3.3,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner","Unique","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 820,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 76.74,
+    "ola": 84.84,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1043206742856716298/unknown.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1043206772766281898/Pog_Zeus.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 192, 
+"3330to60": 3.1, 
+"333Handling": 94,
+
+"666TopSpeed": 195, 
+"6660to60": 3.0, 
+"666Handling": 97,
+
+"699TopSpeed": 195, 
+"6990to60": 2.8, 
+"699Handling": 101,
+
+"969TopSpeed": 197, 
+"9690to60": 3.0, 
+"969Handling": 101,
+
+"996TopSpeed": 197, 
+"9960to60": 2.8, 
+"996Handling": 97
+}

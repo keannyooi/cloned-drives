@@ -1,0 +1,49 @@
+{
+    "rq": 91,
+    "make": ["Posaidon", "Mercedes-AMG", "Mercedes-Benz"],
+    "model": "G 63",
+    "modelYear": 2019,
+    "country": "DE",
+    "topSpeed": 174,
+    "0to60": 3.4,
+    "handling": 71,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Tuner","Unique","Extreme Juggernaut","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 2500,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 86.51,
+    "ola": 76.47,
+    "description": "The even faster box.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1042539056061485166/PosaidonG633.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1042539330826149928/posaidonG63.png",
+    "creator": "Havvy",
+
+"333TopSpeed": 177, 
+"3330to60": 3.2, 
+"333Handling": 73,
+
+"666TopSpeed": 180, 
+"6660to60": 3.1, 
+"666Handling": 76,
+
+"699TopSpeed": 180, 
+"6990to60": 2.9, 
+"699Handling": 79,
+
+"969TopSpeed": 183, 
+"9690to60": 3.1, 
+"969Handling": 79,
+
+"996TopSpeed": 183, 
+"9960to60": 2.9, 
+"996Handling": 76
+}

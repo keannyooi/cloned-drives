@@ -1,0 +1,50 @@
+{
+    "rq": 7,
+    "make": "Skoda",
+    "model": "Felicia",
+    "modelYear": 1960,
+    "country": "CZ",
+    "topSpeed": 83,
+    "0to60": 24.5,
+    "handling": 55,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour","Rest of The World"],
+    "isPrize": false,
+
+
+    "weight": 911,
+    "gc": "High",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 11.44,
+    "ola": 50.61,
+    "description": "Felicia was essentially a Octavia without a roof, it's also the only Skoda ever to be sold in the USA.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1051554067157098676/F.SkodaFelicia.png",
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1051554275735638226/Felicia.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 89,
+    "3330to60": 23.3,
+    "333Handling": 57,
+
+    "666TopSpeed": 96,
+    "6660to60": 22.1, 
+    "666Handling": 59,
+
+    "996TopSpeed": 102,
+    "9960to60": 20.8,
+    "996Handling": 59,
+
+    "969TopSpeed": 102,
+    "9690to60": 22.1,
+    "969Handling": 61,
+
+    "699TopSpeed": 96,
+    "6990to60": 20.8,
+    "699Handling": 61
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 68,
+    "make": ["Alpina", "BMW"],
+    "model": "B4 Bi-Turbo",
+    "modelYear": 2013,
+    "country": "DE",
+    "topSpeed": 188,
+    "0to60": 4.2,
+    "handling": 84,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1700,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 84,
+    "ola": 85.71,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1042430744238243870/b4bt.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1042431212192534589/B4BT.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 191, 
+"3330to60": 4.0, 
+"333Handling": 87,
+
+"666TopSpeed": 194, 
+"6660to60": 3.8, 
+"666Handling": 90,
+
+"699TopSpeed": 194, 
+"6990to60": 3.6, 
+"699Handling": 93,
+
+"969TopSpeed": 196, 
+"9690to60": 3.8, 
+"969Handling": 93,
+
+"996TopSpeed": 196, 
+"9960to60": 3.6, 
+"996Handling": 90
+}

@@ -1,0 +1,18 @@
+{
+	"trackName": "Stelvio Pass",
+	"weather": "Sunny",
+	"surface": "Asphalt",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://media.discordapp.net/attachments/1003260397786243142/1048001876362276895/unknown.png",
+	"map": "https://media.discordapp.net/attachments/1003260397786243142/1048001773996093522/stelvio.png",
+
+	"specsDistr": {
+		"topSpeed": 0,
+		"0to60": 65,
+		"handling": 100,
+		"weight": 40,
+		"mra": 10,
+		"ola": 40
+	}
+}

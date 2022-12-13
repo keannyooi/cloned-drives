@@ -1,0 +1,49 @@
+{
+    "rq": 97,
+    "make": "Lamborghini",
+    "model": "Urus ST-X",
+    "modelYear": 2020,
+    "country": "IT",
+    "topSpeed": 190,
+    "0to60": 3.0,
+    "handling": 93,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Track Day","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1696,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 75,
+    "ola": 76.67,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1039002032515846244/LamborghiniUrusST-X.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1039002365874946168/LamborghiniUrusST-X.png",
+    "creator": "Spence",
+
+"333TopSpeed": 193, 
+"3330to60": 2.8, 
+"333Handling": 96,
+
+"666TopSpeed": 195, 
+"6660to60": 2.7, 
+"666Handling": 99,
+
+"699TopSpeed": 195, 
+"6990to60": 2.6, 
+"699Handling": 103,
+
+"969TopSpeed": 198, 
+"9690to60": 2.7, 
+"969Handling": 103,
+
+"996TopSpeed": 198, 
+"9960to60": 2.6, 
+"996Handling": 99
+}

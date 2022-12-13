@@ -1,0 +1,18 @@
+{
+	"trackName": "Bilster Berg (Rainy)",
+	"weather": "Rainy",
+	"surface": "Asphalt",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://media.discordapp.net/attachments/1003260397786243142/1047923409675362424/bilsterrain.png",
+	"map": "https://media.discordapp.net/attachments/1003260397786243142/1047920572086100078/bilsterberg.png",
+
+	"specsDistr": {
+		"topSpeed": 45,
+		"0to60": 40,
+		"handling": 75,
+		"weight": 0,
+		"mra": 50,
+		"ola": 10
+	}
+}

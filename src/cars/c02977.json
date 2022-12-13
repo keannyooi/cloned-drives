@@ -1,0 +1,49 @@
+{
+    "rq": 84,
+    "make": "Lamborghini",
+    "model": "Murcielago LP640",
+    "modelYear": 2006,
+    "country": "IT",
+    "topSpeed": 211,
+    "0to60": 3.4,
+    "handling": 89,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Supercar","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1798,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 80.1,
+    "ola": 80.48,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1031389170091954238/IMG_9495.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1031389694291890176/LamborghiniMurcielagoLP640.png",
+    "creator": "Spence",
+
+"333TopSpeed": 213, 
+"3330to60": 3.2, 
+"333Handling": 92,
+
+"666TopSpeed": 216, 
+"6660to60": 3.1, 
+"666Handling": 95,
+
+"699TopSpeed": 216, 
+"6990to60": 2.9, 
+"699Handling": 99,
+
+"969TopSpeed": 218, 
+"9690to60": 3.1, 
+"969Handling": 99,
+
+"996TopSpeed": 218, 
+"9960to60": 2.9, 
+"996Handling": 95
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 88,
+    "make": "Lamborghini",
+    "model": "Huracan LP620-2 Super Trofeo",
+    "modelYear": 2015,
+    "country": "IT",
+    "topSpeed": 202,
+    "0to60": 3.0,
+    "handling": 95,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Track Day","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1270,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 100,
+    "ola": 93.33,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1031409638689746985/LamborghiniHuracanLP6202SuperTrofeo.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1031410487713353778/LamborghiniHuracanLP620-2SuperTrofeo.png",
+    "creator": "Spence",
+
+"333TopSpeed": 205, 
+"3330to60": 2.8, 
+"333Handling": 98,
+
+"666TopSpeed": 207, 
+"6660to60": 2.7, 
+"666Handling": 101,
+
+"699TopSpeed": 207, 
+"6990to60": 2.6, 
+"699Handling": 105,
+
+"969TopSpeed": 210, 
+"9690to60": 2.7, 
+"969Handling": 105,
+
+"996TopSpeed": 210, 
+"9960to60": 2.6, 
+"996Handling": 101
+}

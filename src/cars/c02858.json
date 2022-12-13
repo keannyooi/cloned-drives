@@ -1,0 +1,49 @@
+{
+    "rq": 48,
+    "make": "Alfa Romeo",
+    "model": "Brera 3.2 JTS V6 Q4",
+    "modelYear": 2005,
+    "country": "IT",
+    "topSpeed": 149,
+    "0to60": 6.6,
+    "handling": 77,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1630,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 58.74,
+    "ola": 67.18,
+    "description": "brerer",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1042456950564192296/AlfaRomeoBrera3.2JTSV6Q4.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1042457407793660087/breraJTSV6Q4.png",
+    "creator": "Havvy",
+
+"333TopSpeed": 152, 
+"3330to60": 6.3, 
+"333Handling": 80,
+
+"666TopSpeed": 156, 
+"6660to60": 5.9, 
+"666Handling": 82,
+
+"699TopSpeed": 156, 
+"6990to60": 5.6, 
+"699Handling": 85,
+
+"969TopSpeed": 159, 
+"9690to60": 5.9, 
+"969Handling": 85,
+
+"996TopSpeed": 159, 
+"9960to60": 5.6, 
+"996Handling": 82
+}

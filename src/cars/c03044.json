@@ -1,0 +1,49 @@
+{
+    "rq": 79,
+    "make": "Pagani",
+    "model": "Zonda Roadster",
+    "modelYear": 2003,
+    "country": "IT",
+    "topSpeed": 205,
+    "0to60": 3.6,
+    "handling": 88,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Unique","Supercar","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1310,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 97.29,
+    "ola": 98.33,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1040601215274336337/ZondaRoadster.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1040601895556886538/ZondaRoadster.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 208, 
+"3330to60": 3.4, 
+"333Handling": 91,
+
+"666TopSpeed": 210, 
+"6660to60": 3.2, 
+"666Handling": 94,
+
+"699TopSpeed": 210, 
+"6990to60": 3.1, 
+"699Handling": 98,
+
+"969TopSpeed": 213, 
+"9690to60": 3.2, 
+"969Handling": 98,
+
+"996TopSpeed": 213, 
+"9960to60": 3.1, 
+"996Handling": 94
+}

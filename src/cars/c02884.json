@@ -1,0 +1,49 @@
+{
+    "rq": 60,
+    "make": "BMW",
+    "model": "Concept X3 EfficientDynamics",
+    "modelYear": 2005,
+    "country": "DE",
+    "topSpeed": 130,
+    "0to60": 6.5,
+    "handling": 76,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Concept", "Eco-Friendly","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1850,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 56.52,
+    "ola": 70.76,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1044624395714437120/X3ConceptED.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1044625066417209365/x3efficentcydynamioc.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 134, 
+"3330to60": 6.2, 
+"333Handling": 79,
+
+"666TopSpeed": 138, 
+"6660to60": 5.9, 
+"666Handling": 81,
+
+"699TopSpeed": 138, 
+"6990to60": 5.5, 
+"699Handling": 84,
+
+"969TopSpeed": 142, 
+"9690to60": 5.9, 
+"969Handling": 84,
+
+"996TopSpeed": 142, 
+"9960to60": 5.5, 
+"996Handling": 81
+}

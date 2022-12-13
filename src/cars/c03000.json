@@ -1,0 +1,49 @@
+{
+    "rq": 84,
+    "make": ["Mercedes-AMG","Mercedes-Benz"],
+    "model": "GT R Pro",
+    "modelYear": 2019,
+    "country": "DE",
+    "topSpeed": 198,
+    "0to60": 3.3,
+    "handling": 94,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Track Day","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1620,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 91.66,
+    "ola": 90.9,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1043198371214659584/AMGGTRPro.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1043198952561967214/GTRPro.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 201, 
+"3330to60": 3.1, 
+"333Handling": 97,
+
+"666TopSpeed": 203, 
+"6660to60": 3.0, 
+"666Handling": 100,
+
+"699TopSpeed": 203, 
+"6990to60": 2.8, 
+"699Handling": 104,
+
+"969TopSpeed": 206, 
+"9690to60": 3.0, 
+"969Handling": 104,
+
+"996TopSpeed": 206, 
+"9960to60": 2.8, 
+"996Handling": 100
+}

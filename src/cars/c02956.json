@@ -1,0 +1,49 @@
+{
+    "rq": 81,
+    "make": "Lamborghini",
+    "model": "Gallardo LP560-2 50th Anniversario",
+    "modelYear": 2013,
+    "country": "IT",
+    "topSpeed": 199,
+    "0to60": 3.4,
+    "handling": 89,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Supercar","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1440,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 89.47,
+    "ola": 79.41,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1031210844387823687/742B3E9E-42FE-4BD2-8B4C-B3302D687EFA.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1031211013166596147/LamborghiniGallardoLP560-250thAnniversario.png",
+    "creator": "Spence",
+
+"333TopSpeed": 202, 
+"3330to60": 3.2, 
+"333Handling": 92,
+
+"666TopSpeed": 204, 
+"6660to60": 3.1, 
+"666Handling": 95,
+
+"699TopSpeed": 204, 
+"6990to60": 2.9, 
+"699Handling": 99,
+
+"969TopSpeed": 207, 
+"9690to60": 3.1, 
+"969Handling": 99,
+
+"996TopSpeed": 207, 
+"9960to60": 2.9, 
+"996Handling": 95
+}

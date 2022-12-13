@@ -1,0 +1,49 @@
+{
+    "rq": 87,
+    "make": "Ferrari",
+    "model": "SP51",
+    "modelYear": 2022,
+    "country": "IT",
+    "topSpeed": 211,
+    "0to60": 2.9,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Unique","The Tyrol Tour"],
+    "isPrize": false,
+    
+    "weight": 1600,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 98.31,
+    "ola": 100,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1050917384543813722/ferrari_sp51.png",
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1050917456845222022/ferrari_sp51_hud.png",
+    "creator": "c6",
+
+    "333TopSpeed": 213,
+    "3330to60": 2.8,
+    "333Handling": 94,
+
+    "666TopSpeed": 216,
+    "6660to60": 2.6,
+    "666Handling": 97,
+
+    "996TopSpeed": 218,
+    "9960to60": 2.5,
+    "996Handling": 97,
+
+    "969TopSpeed": 218,
+    "9690to60": 2.6,
+    "969Handling": 101,
+
+    "699TopSpeed": 216,
+    "6990to60": 2.5,
+    "699Handling": 101
+}

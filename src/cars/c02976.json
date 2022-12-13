@@ -1,0 +1,49 @@
+{
+    "rq": 87,
+    "make": "Lamborghini",
+    "model": "Miura Concept",
+    "modelYear": 2006,
+    "country": "IT",
+    "topSpeed": 222,
+    "0to60": 3.3,
+    "handling": 89,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Supercar","Concept","Unique","Ultra Expensive","The Tyrol Tour"],
+    "isPrize": true,
+	
+    "weight": 1491,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 81.64,
+    "ola": 79.24,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1031389466323071006/IMG_9605.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1031403988505079888/LamborghiniMiuraConcept.png",
+    "creator": "Spence",
+
+"333TopSpeed": 224, 
+"3330to60": 3.1, 
+"333Handling": 92,
+
+"666TopSpeed": 227, 
+"6660to60": 3.0, 
+"666Handling": 95,
+
+"699TopSpeed": 227, 
+"6990to60": 2.8, 
+"699Handling": 99,
+
+"969TopSpeed": 229, 
+"9690to60": 3.0, 
+"969Handling": 99,
+
+"996TopSpeed": 229, 
+"9960to60": 2.8, 
+"996Handling": 95
+}

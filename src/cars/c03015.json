@@ -1,0 +1,49 @@
+{
+    "rq": 27,
+    "make": "Mercedes-Benz",
+    "model": "300 SL Racing Sports Car Prototype",
+    "modelYear": 1953,
+    "country": "DE",
+    "topSpeed": 162,
+    "0to60": 8.8,
+    "handling": 67,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Concept","Ultra Expensive","Track Day","Unique","The Tyrol Tour"],
+    "isPrize": true,
+	
+    "weight": 1035,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.16,
+    "ola": 90.9,
+    "description": "A one-off early 300 SL design prototype.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1040630429692207215/300SLRacingProto1953.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1040630977040502804/300SLRacingProto.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 165, 
+"3330to60": 8.4, 
+"333Handling": 69,
+
+"666TopSpeed": 168, 
+"6660to60": 7.9, 
+"666Handling": 71,
+
+"699TopSpeed": 168, 
+"6990to60": 7.5, 
+"699Handling": 74,
+
+"969TopSpeed": 172, 
+"9690to60": 7.9, 
+"969Handling": 74,
+
+"996TopSpeed": 172, 
+"9960to60": 7.5, 
+"996Handling": 71
+}

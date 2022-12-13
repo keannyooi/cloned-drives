@@ -1,0 +1,49 @@
+{
+    "rq": 88,
+    "make": "Lamborghini",
+    "model": "Gallardo LP570-4 Squadra Corse",
+    "modelYear": 2013,
+    "country": "IT",
+    "topSpeed": 202,
+    "0to60": 3.3,
+    "handling": 91,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Track Day","Unique","Supercar","The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1454,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 88.32,
+    "ola": 79.2,
+    "description": "If the Superleggera is the GT3, this is the GT3 RS baby lambo.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1031207505403056138/IMG_9109.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1031208853456556072/LamborghiniGallardoLP570-4SquadraCorse.png",
+    "creator": "Spence",
+
+"333TopSpeed": 205, 
+"3330to60": 3.1, 
+"333Handling": 94,
+
+"666TopSpeed": 207, 
+"6660to60": 3.0, 
+"666Handling": 97,
+
+"699TopSpeed": 207, 
+"6990to60": 2.8, 
+"699Handling": 101,
+
+"969TopSpeed": 210, 
+"9690to60": 3.0, 
+"969Handling": 101,
+
+"996TopSpeed": 210, 
+"9960to60": 2.8, 
+"996Handling": 97
+}

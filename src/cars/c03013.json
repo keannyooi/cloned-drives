@@ -1,0 +1,49 @@
+{
+    "rq": 37,
+    "make": "Mercedes-Benz",
+    "model": "300 SL Hardtop",
+    "modelYear": 1958,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 8.4,
+    "handling": 68,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1370,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 80.76,
+    "ola": 71.42,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1040630360100311070/300SLHardtop.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1040630953053261885/300SLHardtop.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 158, 
+"3330to60": 8.0, 
+"333Handling": 70,
+
+"666TopSpeed": 162, 
+"6660to60": 7.6, 
+"666Handling": 72,
+
+"699TopSpeed": 162, 
+"6990to60": 7.1, 
+"699Handling": 75,
+
+"969TopSpeed": 165, 
+"9690to60": 7.6, 
+"969Handling": 75,
+
+"996TopSpeed": 165, 
+"9960to60": 7.1, 
+"996Handling": 72
+}

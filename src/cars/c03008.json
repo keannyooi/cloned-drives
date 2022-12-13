@@ -1,0 +1,49 @@
+{
+    "rq": 17,
+    "make": "Mercedes-Benz",
+    "model": "190 SL Hardtop",
+    "modelYear": 1955,
+    "country": "DE",
+    "topSpeed": 108,
+    "0to60": 14.0,
+    "handling": 65,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1170,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 35.89,
+    "ola": 71.42,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1040630080445104159/190SLHardtop.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1040630846492778556/190SLHardtop.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 113, 
+"3330to60": 13.3, 
+"333Handling": 67,
+
+"666TopSpeed": 118, 
+"6660to60": 12.6, 
+"666Handling": 69,
+
+"699TopSpeed": 118, 
+"6990to60": 11.9, 
+"699Handling": 72,
+
+"969TopSpeed": 122, 
+"9690to60": 12.6, 
+"969Handling": 72,
+
+"996TopSpeed": 122, 
+"9960to60": 11.9, 
+"996Handling": 69
+}

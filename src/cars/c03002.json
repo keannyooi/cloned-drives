@@ -1,0 +1,49 @@
+{
+    "rq": 74,
+    "make": ["Mercedes-AMG","Mercedes-Benz"],
+    "model": "GT Roadster",
+    "modelYear": 2016,
+    "country": "DE",
+    "topSpeed": 188,
+    "0to60": 3.9,
+    "handling": 89,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour"],
+    "isPrize": false,
+	
+    "weight": 1635,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 88.63,
+    "ola": 92.3,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1043198281762742335/AMGGTRoadsrer2016.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1043198908098150420/GTRoadser16.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 191, 
+"3330to60": 3.7, 
+"333Handling": 92,
+
+"666TopSpeed": 194, 
+"6660to60": 3.5, 
+"666Handling": 95,
+
+"699TopSpeed": 194, 
+"6990to60": 3.3, 
+"699Handling": 99,
+
+"969TopSpeed": 196, 
+"9690to60": 3.5, 
+"969Handling": 99,
+
+"996TopSpeed": 196, 
+"9960to60": 3.3, 
+"996Handling": 95
+}

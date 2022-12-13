@@ -1,0 +1,49 @@
+{
+    "rq": 75,
+    "make": "BMW",
+    "model": "X7 M50d",
+    "modelYear": 2019,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 5.1,
+    "handling": 76,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Extreme Juggernaut","The Tyrol Tour"],
+    "isPrize": false,
+    
+    "weight": 2485,
+    "gc": "High",
+    "seatCount": 7,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 63.17,
+    "ola": 77.68,
+    "description": "760 NM of torque from an inline-six engine, pretty impressive if you ask me.",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1047269964505157702/bmw_x7_m50d.png",
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1049066644271530135/bmw_x7_m50d_hud.png",
+    "creator": "c6",
+
+    "333TopSpeed": 158,
+    "3330to60": 4.8,
+    "333Handling": 79,
+
+    "666TopSpeed": 162,
+    "6660to60": 4.6,
+    "666Handling": 81,
+
+    "996TopSpeed": 165,
+    "9960to60": 4.3,
+    "996Handling": 81,
+
+    "969TopSpeed": 165,
+    "9690to60": 4.6,
+    "969Handling": 84,
+
+    "699TopSpeed": 162,
+    "6990to60": 4.3,
+    "699Handling": 84
+}
