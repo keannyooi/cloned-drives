@@ -1,11 +1,11 @@
 {
-    "rq": ,
+    "rq": 28,
     "make": "Audi",
     "model": "A1 Sportback 1.6 TDI S tronic",
     "modelYear": 2011,
     "country": "DE",
     "topSpeed": 118,
-    "0to60": 9.8
+    "0to60": 9.8,
     "handling": 76,
     "driveType": "FWD",
     "tyreType": "Standard",
@@ -13,7 +13,7 @@
     "isPrize": false,
     "weight": 1170,
     "gc": "Low",
-    "seatCount":4,
+    "seatCount": 4,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
