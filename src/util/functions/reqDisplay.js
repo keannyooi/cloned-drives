@@ -2,7 +2,7 @@
 
 const { readdirSync } = require("fs");
 const carFiles = readdirSync("./src/cars").filter(file => file.endsWith(".json"));
-const order = ["rq", "modelYear", "country", "enginePos", "driveType", "gc", "tyreType", "seatCount", "fuelType", "bodyStyle", "abs", "tcs", "tags", "collection", "isOwned", "isStock", "isMaxed", "isPrize", "make", "search"];
+const order = ["rq", "modelYear", "country", "enginePos", "driveType", "gc", "tyreType", "seatCount", "fuelType", "bodyStyle", "abs", "tcs", "tags", "collection", "isOwned", "isStock", "isMaxed", "isBM", "isPrize", "make", "search"];
 
 function reqDisplay(reqs, filterLogic) {
     const action = {
@@ -37,6 +37,7 @@ function reqDisplay(reqs, filterLogic) {
         isStock: isStock => `${isStock === false ? "Non-Stock" : "Stock"} `,
         isMaxed: isMaxed => `${isMaxed === false ? "Non-Maxed" : "Maxed"} `,
         isOwned: isOwned => `${isOwned === false ? "Unowned" : "Owned"} `,
+        isBM: isBM => `${isBM === false ? "Non-BM" : "BM"} `,
         make: makes => {
             makes = makes.map(make => {
                 let getExample = carFiles.find(carFile => {

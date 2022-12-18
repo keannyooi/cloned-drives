@@ -1,7 +1,7 @@
 {
     "rq": 1,
     "make": ["Aston-Martin","Aston Martin"],
-    "model": "Prototype A2 'Bunny'",
+    "model": "Prototype A2 \"Bunny\"",
     "modelYear": 1920,
     "country": "GB",
     "topSpeed": 78,
@@ -21,23 +21,28 @@
     "fuelType": "Petrol",
     "mra": 0,
     "ola": 54.47,
-    "description": "Bnuuy car!, Bnuuy car!, Bnuuy car!",
+    "description": "Bnuuy car! Bnuuy car! Bnuuy car!",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/957983096219795546/A2Bunny.png",
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995807747792703608/astonbnuuy.png",
+    "creator": "Bnuuy",
+
     "333TopSpeed": 85,
     "3330to60": 25.5,
     "333Handling": 49,
+
     "666TopSpeed": 91,
     "6660to60": 24.1,
     "666Handling": 50,
+
     "996TopSpeed": 98,
     "9960to60": 22.8,
     "996Handling": 50,
+
     "969TopSpeed": 98,
     "9690to60": 24.1,
     "969Handling": 52,
+
     "699TopSpeed": 91,
     "6990to60": 22.8,
-    "699Handling": 52,
-    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995807747792703608/astonbnuuy.png",
-    "creator": "Bnuuy"
+    "699Handling": 52
 }

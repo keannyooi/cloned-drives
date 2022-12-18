@@ -1,7 +1,7 @@
 {
     "rq": 77,
     "make": "Lotus",
-    "model": "Exige Sport 390 'Final Edition'",
+    "model": "Exige Sport 390 \"Final Edition\"",
     "modelYear": 2021,
     "country": "GB",
     "topSpeed": 172,
@@ -25,21 +25,26 @@
     "ola": 68.42,
     "description": "None.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/950083205212545105/2021_Lotus_Exige_Sport_390__Final_Edition_.png",
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1016826665726386236/Picsart_22-09-05_22-26-02-012.jpg",
+    "creator": "Tom",
+
     "333TopSpeed": 175,
     "3330to60": 3.6,
     "333Handling": 94,
+
     "666TopSpeed": 178,
     "6660to60": 3.4,
     "666Handling": 97,
+
     "996TopSpeed": 181,
     "9960to60": 3.2,
     "996Handling": 97,
+
     "969TopSpeed": 181,
     "9690to60": 3.4,
     "969Handling": 101,
+    
     "699TopSpeed": 178,
     "6990to60": 3.2,
-    "699Handling": 101,
-    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1016826665726386236/Picsart_22-09-05_22-26-02-012.jpg",
-    "creator": "Tom"
+    "699Handling": 101
 }

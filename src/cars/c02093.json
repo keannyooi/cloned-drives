@@ -21,23 +21,28 @@
     "fuelType": "Petrol",
     "mra": 80,
     "ola": 73.07,
-    "description": "One of the weirdest Alpina's. De-tuned, Slower and made worse in almost everyway, built specifically for the americas.. like most slow cars.",
+    "description": "One of the weirdest Alpina's. De-tuned, slower and made worse in almost everyway, built specifically for the Americas.. like most slow cars.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/930193972150824990/alpinaRoadsterV8.png",
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995822008195620874/alpinav8.png",
+    "creator": "Bnuuy",
+
     "333TopSpeed": 165,
     "3330to60": 4.9,
     "333Handling": 83,
+
     "666TopSpeed": 168,
     "6660to60": 4.7,
     "666Handling": 85,
+
     "996TopSpeed": 172,
     "9960to60": 4.4,
     "996Handling": 85,
+
     "969TopSpeed": 172,
     "9690to60": 4.7,
     "969Handling": 89,
+
     "699TopSpeed": 168,
     "6990to60": 4.4,
-    "699Handling": 89,
-    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/995822008195620874/alpinav8.png",
-    "creator": "Bnuuy"
+    "699Handling": 89
 }

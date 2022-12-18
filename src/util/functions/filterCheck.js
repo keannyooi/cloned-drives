@@ -4,7 +4,7 @@ const carNameGen = require("./carNameGen.js");
 const calcTotal = require("./calcTotal.js");
 
 function filterCheck(args) {
-    let { car, filter, garage, applyOrLogic, hideBMCars } = args;
+    let { car, filter, garage, applyOrLogic } = args;
     let passed = true, carObject = garage ? {
         carID: car,
         upgrades: garage.find(c => car.includes(c.carID))?.upgrades ?? {
@@ -18,12 +18,7 @@ function filterCheck(args) {
     } : car;
     let currentCar = require(`../../cars/${carObject.carID}`), bmReference = currentCar;
     if (currentCar["reference"]) {
-        if (hideBMCars) {
-            return false;
-        }
-        else {
-            bmReference = require(`../../cars/${currentCar["reference"]}`);
-        }
+        bmReference = require(`../../cars/${currentCar["reference"]}`);
     }
 
     for (const [key, value] of Object.entries(filter)) {
@@ -66,6 +61,9 @@ function filterCheck(args) {
                     }
                 }
                 else {
+                    if (key === "modelYear") {
+                        bmReference[key] = currentCar[key];
+                    }
                     if (bmReference[key] < value.start || bmReference[key] > value.end) {
                         passed = false;
                     }
@@ -109,6 +107,11 @@ function filterCheck(args) {
                         break;
                     case "isOwned":
                         if ((calcTotal(carObject) > 0) !== value) {
+                            passed = false;
+                        }
+                        break;
+                    case "isBM":
+                        if ((currentCar["reference"] !== undefined) !== value) {
                             passed = false;
                         }
                         break;

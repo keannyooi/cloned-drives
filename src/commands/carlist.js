@@ -47,7 +47,6 @@ module.exports = {
                 filter,
                 garage,
                 applyOrLogic: settings.filterlogic === "or" ? true : false,
-                hideBMCars: settings.hidebmcars || false
             }));
         }
         const ownedCars = list.filter(function (carID) {

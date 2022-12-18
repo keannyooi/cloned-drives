@@ -80,7 +80,6 @@ module.exports = {
                 car,
                 filter,
                 applyOrLogic: settings.filterlogic === "or" ? true : false,
-                hideBMCars: settings.hidebmcars || false
             }));
 
             sort = sortCheck(message, sort, currentMessage);

@@ -135,6 +135,7 @@ function editFilter(message, filter, args) {
         case "isStock":
         case "isMaxed":
         case "isOwned":
+        case "isBM":
             try {
                 filter[criteria] = JSON.parse(arg1);
                 successMessage = new SuccessMessage({
@@ -272,6 +273,7 @@ function editFilter(message, filter, args) {
                 case "isStock":
                 case "isMaxed":
                 case "isOwned":
+                case "isBM":
                 case "gc":
                 case "rq":
                 case "search":
@@ -303,6 +305,7 @@ function editFilter(message, filter, args) {
                                 \`isupgraded\` - Filter upgraded cars.
                                 \`ismaxed\` - Filter maxed cars.
                                 \`isowned\` - Filter cars that you own.
+                                \`isbm\` - Filter black market cars.
                                 \`tags\` - Filter by tag. Provide the tag that you want to remove, or type \`all\` to remove all criterias in this category.
                                 \`collection\` - Filter by collection. Provide a valid collection after that.
                                 \`search\` - Filter by keyword in car name.
@@ -333,6 +336,7 @@ function editFilter(message, filter, args) {
                         \`isupgraded\` - Filter upgraded cars. Provide a boolean (\`true\` or \`false\`) after that.
                         \`ismaxed\` - Filter maxed cars. Provide a boolean (\`true\` or \`false\`) after that.
                         \`isowned\` - Filter cars that you own. Provide a boolean (\`true\` or \`false\`) after that.
+                        \`isbm\` - Filter black market cars. Provide a boolean (\`true\` or \`false\`) after that.
                         \`tags\` - Filter by tag. Provide a valid tag after that.
                         \`collection\` - Filter by collection. Provide a valid collection after that.
                         \`search\` - Filter by a certain keyword inside a car's name. Provide a keyword that is found in a in-game car's name after that.
@@ -345,7 +349,7 @@ function editFilter(message, filter, args) {
     return [filter, successMessage];
 
     function format(criteria) {
-        return criteria.toLowerCase().replace("type", "Type").replace("tcount", "tCount").replace("style", "Style").replace("year", "Year").replace("pos", "Pos").replace("prize", "Prize").replace("stock", "Stock").replace("upgrade", "Upgrade").replace("max", "Max").replace("owned", "Owned");
+        return criteria.toLowerCase().replace("type", "Type").replace("tcount", "tCount").replace("style", "Style").replace("year", "Year").replace("pos", "Pos").replace("prize", "Prize").replace("stock", "Stock").replace("upgrade", "Upgrade").replace("max", "Max").replace("owned", "Owned").replace("bm", "BM");
     }
 }
 

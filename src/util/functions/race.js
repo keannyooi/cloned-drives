@@ -97,18 +97,13 @@ async function race(message, player, opponent, currentTrack, disablegraphics) {
         };
         let response = "";
         //console.log(comparison);
-    
+
         for (let [key, value] of Object.entries(comparison)) {
             const compareValue = currentTrack["specsDistr"][key];
             if (!playerWon) {
-                if (value > 0) {
-                    value -= value * 2;
-                }
-                else {
-                    value = Math.abs(value);
-                }
+                value -= value * 2;
             }
-    
+
             if (compareValue !== undefined && compareValue > 0 && value > 0) {
                 switch (key) {
                     case "topSpeed":
@@ -167,7 +162,19 @@ async function race(message, player, opponent, currentTrack, disablegraphics) {
                         break;
                 }
             }
+
+            //special cases
+            if (currentTrack["trackName"].includes("MPH") && key === "topSpeed") {
+                let [, endMPH] = currentTrack["trackName"].split("-");
+                endMPH = parseInt(endMPH);
+
+                if (comparison["topSpeed"] - (playerWon ? 0 : comparison["topSpeed"] * 2) > 0 && opponent.topSpeed < endMPH && player.topSpeed < endMPH) {
+                    response = "Higher top speed, ";
+                    break;
+                }
+            }
         }
+
         if (response === "") {
             return "Sorry, we have no idea how you won/lost.";
         }
@@ -175,7 +182,7 @@ async function race(message, player, opponent, currentTrack, disablegraphics) {
             return response.slice(0, -2);
         }
     }
-    
+
     function evalScore(player, opponent) {
         let score = 0;
         score += (player.topSpeed - opponent.topSpeed) * (currentTrack["specsDistr"]["topSpeed"] / 100);
@@ -184,7 +191,7 @@ async function race(message, player, opponent, currentTrack, disablegraphics) {
         score += (opponent.weight - player.weight) / 50 * (currentTrack["specsDistr"]["weight"] / 100);
         score += (player.mra - opponent.mra) / 3 * (currentTrack["specsDistr"]["mra"] / 100);
         score += (opponent.ola - player.ola) * (currentTrack["specsDistr"]["ola"] / 100);
-    
+
         if (player.gc.toLowerCase() === "low") {
             score -= (currentTrack["speedbumps"] * 10);
         }
@@ -198,49 +205,24 @@ async function race(message, player, opponent, currentTrack, disablegraphics) {
             score += (player.abs - opponent.abs) * absPen;
         }
         score += (player.tcs - opponent.tcs) * tcsPen;
-    
+
         //special cases
         if (currentTrack["trackName"].includes("MPH")) {
             let [startMPH, endMPH] = currentTrack["trackName"].split("-");
             startMPH = parseInt(startMPH);
             endMPH = parseInt(endMPH);
-    
-            if (opponent.topSpeed < startMPH && player.topSpeed >= startMPH) {
+
+            if ((opponent.topSpeed < startMPH && player.topSpeed >= startMPH) || (opponent.topSpeed < endMPH && player.topSpeed >= endMPH)) {
                 score = 250;
             }
-            else if (opponent.topSpeed >= startMPH && player.topSpeed < startMPH) {
-                score = -250;
-            }
-            else if (opponent.topSpeed < startMPH && player.topSpeed < startMPH) {
-                if (opponent.topSpeed < player.topSpeed) {
-                    score = 50;
-                }
-                else if (opponent.topSpeed > player.topSpeed) {
-                    score = -50;
-                }
-                else {
-                    score = 0;
-                }
-            }
-            else if (opponent.topSpeed < endMPH && player.topSpeed >= endMPH) {
-                score = 250;
-            }
-            else if (opponent.topSpeed >= endMPH && player.topSpeed < endMPH) {
+            else if ((opponent.topSpeed >= startMPH && player.topSpeed < startMPH) || (opponent.topSpeed >= endMPH && player.topSpeed < endMPH)) {
                 score = -250;
             }
             else if (opponent.topSpeed < endMPH && player.topSpeed < endMPH) {
-                if (opponent.topSpeed < player.topSpeed) {
-                    score = 50;
-                }
-                else if (opponent.topSpeed > player.topSpeed) {
-                    score = -50;
-                }
-                else {
-                    score = 0;
-                }
+                score = player.topSpeed - opponent.topSpeed;
             }
         }
-    
+
         return Math.round((score + Number.EPSILON) * 100) / 100;
     }
 }

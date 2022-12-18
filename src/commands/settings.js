@@ -121,12 +121,6 @@ module.exports = {
                                                 inline: true
                                             },
                                             {
-                                                name: "Hide Black Market Cars (ID: \`hidebmcars\`)",
-                                                value: `Having this set to \`true\` hides black market cars from list views.
-                                                **Value:** \`${settings.hidebmcars ?? false}\``,
-                                                inline: true
-                                            },
-                                            {
                                                 name: "Sorting Order (ID: \`sortorder\`)",
                                                 value: `Lets you choose to sort either by ascending or descending.
                                                 **Value:** \`${settings.sortorder ?? "descending"}\``,
@@ -201,7 +195,6 @@ module.exports = {
                 case "senddealnotifs":
                 case "disablecarlistfilter":
                 case "disablegaragefilter":
-                case "hidebmcars":
                 case "hideownstats":
                     if (argument === "true") {
                         if (setting.startsWith("send")) {
@@ -413,7 +406,6 @@ module.exports = {
                         \`senddealnotifs\` - Enable automated dealership refresh notifications. Provide a boolean (\`true\` or \`false\`) after that. Remember to enable \`DMs from server members\` for this to work.
                         \`disablecarlistfilter\` - Disable cd-carlist filtering. Provide a boolean (\`true\` or \`false\`) after that.
                         \`disablegaragefilter\` - Disable garage filtering. Provide a boolean (\`true\` or \`false\`) after that.
-                        \`hidebmcars\` - Disable black market car visibility. Provide a boolean (\`true\` or \`false\`) after that.
                         \`unitpreference\` - Choose a unit system of your liking. Provide a the name of a unit system (\`british\`, \`imperial\` or \`metric\`) after that.
                         \`sortorder\` - Choose the order that items are sorted in. Provide either \`ascending\` or \`descending\` after that.
                         \`filterlogic\` - Choose the preferred filter logic. Provide \`and\` or \`or\` after that.

@@ -4,6 +4,7 @@ const { readdirSync } = require("fs");
 const carFiles = readdirSync("./src/cars").filter(file => file.endsWith(".json"));
 const { InfoMessage, ErrorMessage } = require("../classes/classes.js");
 const carNameGen = require("./carNameGen.js");
+const filterCheck = require("./filterCheck.js");
 const sortCars = require("./sortCars.js");
 
 async function openPack(args) {
@@ -57,7 +58,7 @@ async function openPack(args) {
 
         let carFile = carFiles[Math.floor(Math.random() * carFiles.length)], timeoutCounter = 0;
         currentCard = require(`../../cars/${carFile}`);
-        while ((currentCard["rq"] < rqStart || currentCard["rq"] > rqEnd || filterCard(currentCard, cardFilter) === false) && timeoutCounter < 50000) {
+        while ((currentCard["rq"] < rqStart || currentCard["rq"] > rqEnd || filterCard(carFile, cardFilter) === false) && timeoutCounter < 50000) {
             carFile = carFiles[Math.floor(Math.random() * carFiles.length)];
             currentCard = require(`../../cars/${carFile}`);
             timeoutCounter++;
@@ -103,8 +104,10 @@ async function openPack(args) {
     }
     return addedCars;
 
-    function filterCard(currentCard, filter) {
+    function filterCard(carFile, filter) {
+        let currentCard = require(`../../cars/${carFile}`);
         if (currentCard["reference"] || currentCard["isPrize"] === true) return false;
+        // return filterCheck({ car: carFile, filter });
         let passed = true;
         for (let criteria in filter) {
             if (filter[criteria] !== "None") {

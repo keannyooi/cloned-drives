@@ -48,7 +48,7 @@ module.exports = {
                 const currentOffersChannel = await bot.homeGuild.channels.fetch(currentOffersChannelID);
                 offer.isActive = true;
                 if (offer.deadline.length < 9) {
-                    offer.deadline = DateTime.now().plus({ days: parseInt(offer.deadline[0]) }).toISO();
+                    offer.deadline = DateTime.now().plus({ days: parseInt(offer.deadline) }).toISO();
                 }
 
                 const successMessage = new SuccessMessage({
