@@ -9,7 +9,7 @@
     "handling": 90,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [],
+    "tags": ["Track Day"],
     "isPrize": false,
     "weight": 1115,
     "gc": "Low",
@@ -21,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 68.52,
     "ola": 70.27,
-    "description": "Card by Tom.",
+    "description": "",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/950084089598320760/Lotus_Exige_Sport_350_Roadster_2016.png",
     "333TopSpeed": 149,
     "3330to60": 3.5,
@@ -38,6 +38,6 @@
     "699TopSpeed": 152,
     "6990to60": 3.1,
     "699Handling": 100,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1050788541929631744/exigesport350roadster.png",
+    "creator": "Tom"
 }

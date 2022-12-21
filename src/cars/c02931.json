@@ -1,7 +1,7 @@
 {
-    "rq": 90,
+    "rq": 85,
     "make": "Ferrari",
-    "model": "F12 TdF",
+    "model": "F60 America",
     "modelYear": 2016,
     "country": "IT",
     "topSpeed": 211,
@@ -9,7 +9,7 @@
     "handling": 89,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["The Tyrol Tour"],
+    "tags": ["The Tyrol Tour", "Unique"],
     "isPrize": false,
     
     "weight": 1620,
