@@ -1,11 +1,11 @@
 {
-    "rq": 16,
+    "rq": 17,
     "make": "Volkswagen",
     "model": "Rabbit GTI",
     "modelYear": 1983,
     "country": "DE",
     "topSpeed": 107,
-    "0to60": 10.1,
+    "0to60": 9.9,
     "handling": 72,
     "driveType": "FWD",
     "tyreType": "Performance",
@@ -14,7 +14,7 @@
         "Servers Choice"
     ],
     "isPrize": false,
-    "weight": 953,
+    "weight": 940,
     "gc": "Low",
     "seatCount": 4,
     "bodyStyle": "Hatchback",
@@ -22,25 +22,31 @@
     "abs": false,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 45.29,
-    "ola": 59.41,
+    "mra": 40.47,
+    "ola": 60.36,
     "description": "Golf GTI in an american flavor. Card by Andu",
-    "card": "https://cdn.discordapp.com/attachments/819199720249360384/821099260481241098/Rabbit.png",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/931544661330387044/RabbitGTI.png",
+
     "333TopSpeed": 112,
-    "3330to60": 9.6,
+    "3330to60": 9.4,
     "333Handling": 74,
+
     "666TopSpeed": 117,
-    "6660to60": 9.1,
+    "6660to60": 8.9,
     "666Handling": 77,
-    "996TopSpeed": 122,
-    "9960to60": 8.6,
-    "996Handling": 77,
-    "969TopSpeed": 122,
-    "9690to60": 9.1,
-    "969Handling": 80,
+
     "699TopSpeed": 117,
-    "6990to60": 8.6,
+    "6990to60": 8.4,
     "699Handling": 80,
-    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1050966850432938056/RabbitGTI.png",
+
+    "969TopSpeed": 122,
+    "9690to60": 8.9,
+    "969Handling": 80,
+
+    "996TopSpeed": 122,
+    "9960to60": 8.4,
+    "996Handling": 77,
+    
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1052688521179172864/RabbitGTI.png",
     "creator": "Andu"
 }
