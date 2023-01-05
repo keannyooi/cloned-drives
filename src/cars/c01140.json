@@ -5,12 +5,12 @@
     "modelYear": 2010,
     "country": "FR",
     "topSpeed": 112,
-    "0to60": 5,
+    "0to60": 5.0,
     "handling": 90,
     "driveType": "RWD",
     "tyreType": "Performance",
     "tags": [
-        "Concept"
+        "Concept", "Eco-Friendly"
     ],
     "isPrize": false,
     "weight": 830,
