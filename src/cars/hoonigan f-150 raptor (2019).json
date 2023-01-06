@@ -1,0 +1,49 @@
+{
+    "rq": 82,
+    "make": ["Hoonigan", "Ford"],
+    "model": "F-150 Raptor",
+    "modelYear": 2019,
+    "country": "US",
+    "topSpeed": 119,
+    "0to60": 4.4,
+    "handling": 68,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["Tuner", "Unique", "Extreme Juggernaut"],
+    "isPrize": false,
+	
+    "weight": 2490,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "Pickup",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 59.08,
+    "ola": 76.5,
+    "description": "Jomp https://www.youtube.com/watch?v=GIzCz6mhBIU",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1060585654221803561/HooniganF150Raptor.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1060586175359881296/HooniganF150Raptor.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 123, 
+"3330to60": 4.2, 
+"333Handling": 70,
+
+"666TopSpeed": 128, 
+"6660to60": 4.0, 
+"666Handling": 72,
+
+"699TopSpeed": 128, 
+"6990to60": 3.7, 
+"699Handling": 75,
+
+"969TopSpeed": 132, 
+"9690to60": 4.0, 
+"969Handling": 75,
+
+"996TopSpeed": 132, 
+"9960to60": 3.7, 
+"996Handling": 72
+}

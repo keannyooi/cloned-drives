@@ -1,0 +1,49 @@
+{
+    "rq": 107,
+    "make": ["Hoonigan", "Ford"],
+    "model": "Fiesta ST RX43",
+    "modelYear": 2013,
+    "country": "US",
+    "topSpeed": 149,
+    "0to60": 2.0,
+    "handling": 92,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Tuner", "Unique"],
+    "isPrize": true,
+	
+    "weight": 1290,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 68.75,
+    "ola": 97.5,
+    "description": "https://youtu.be/WUO-lPubXeI",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1060585347194572840/HooniganFiestaSTRX43.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1060585915036225606/HooniganSTRX4313.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 152, 
+"3330to60": 1.9, 
+"333Handling": 95,
+
+"666TopSpeed": 156, 
+"6660to60": 1.8, 
+"666Handling": 98,
+
+"699TopSpeed": 156, 
+"6990to60": 1.7, 
+"699Handling": 102,
+
+"969TopSpeed": 159, 
+"9690to60": 1.8, 
+"969Handling": 102,
+
+"996TopSpeed": 159, 
+"9960to60": 1.7, 
+"996Handling": 98
+}

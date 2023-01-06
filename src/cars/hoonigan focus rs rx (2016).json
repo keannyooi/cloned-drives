@@ -1,0 +1,49 @@
+{
+    "rq": 110,
+    "make": ["Hoonigan", "Ford"],
+    "model": "Focus RS RX",
+    "modelYear": 2016,
+    "country": "US",
+    "topSpeed": 149,
+    "0to60": 1.9,
+    "handling": 93,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Tuner", "Unique"],
+    "isPrize": true,
+	
+    "weight": 1130,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 73.07,
+    "ola": 95,
+    "description": "https://www.youtube.com/watch?v=_bkX5VkZg8U",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1060585453914427502/HooniganFocusRSRX16.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1060585991489982538/HooniganRSRX16.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 152, 
+"3330to60": 1.8, 
+"333Handling": 96,
+
+"666TopSpeed": 156, 
+"6660to60": 1.7, 
+"666Handling": 99,
+
+"699TopSpeed": 156, 
+"6990to60": 1.6, 
+"699Handling": 103,
+
+"969TopSpeed": 159, 
+"9690to60": 1.7, 
+"969Handling": 103,
+
+"996TopSpeed": 159, 
+"9960to60": 1.6, 
+"996Handling": 99
+}

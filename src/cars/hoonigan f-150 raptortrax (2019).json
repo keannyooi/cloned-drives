@@ -1,0 +1,49 @@
+{
+    "rq": 76,
+    "make": ["Hoonigan", "Ford"],
+    "model": "F-150 RAPTORTRAX",
+    "modelYear": 2019,
+    "country": "US",
+    "topSpeed": 100,
+    "0to60": 4.8,
+    "handling": 65,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["Tuner", "Unique", "Extreme Juggernaut"],
+    "isPrize": true,
+	
+    "weight": 2730,
+    "gc": "High",
+    "seatCount": 7,
+    "bodyStyle": "Pickup",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 55.55,
+    "ola": 57.5,
+    "description": "https://www.youtube.com/watch?v=5aeKdmw9W50",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1060585674157338714/HooniganRAPTORTRAX.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1060586192694939718/HooniganRAPTORTRAX.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 105, 
+"3330to60": 4.6, 
+"333Handling": 67,
+
+"666TopSpeed": 110, 
+"6660to60": 4.3, 
+"666Handling": 69,
+
+"699TopSpeed": 110, 
+"6990to60": 4.1, 
+"699Handling": 72,
+
+"969TopSpeed": 116, 
+"9690to60": 4.3, 
+"969Handling": 72,
+
+"996TopSpeed": 116, 
+"9960to60": 4.1, 
+"996Handling": 69
+}

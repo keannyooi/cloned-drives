@@ -1,0 +1,49 @@
+{
+    "rq": 110,
+    "make": ["Hoonigan", "Porsche"],
+    "model": "Hoonipigasus",
+    "modelYear": 2022,
+    "country": "US",
+    "topSpeed": 209,
+    "0to60": 1.7,
+    "handling": 99,
+    "driveType": "4WD",
+    "tyreType": "Slick",
+    "tags": ["Tuner", "Unique", "RestoMod", "Track Day"],
+    "isPrize": true,
+	
+    "weight": 1000,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 146.75,
+    "ola": 101.5,
+    "description": "The car Ken Block was going to run at the 100th Pikes Peak, but a blown motor pushed it back to 2023s 101st running however if it runs the pikes without Ken is anyones guess :sadge:",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1060585749281517648/HooniganHoonipigasus.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1060586274072842260/HooniganHoonipigasus.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 211, 
+"3330to60": 1.6, 
+"333Handling": 102,
+
+"666TopSpeed": 214, 
+"6660to60": 1.5, 
+"666Handling": 106,
+
+"699TopSpeed": 214, 
+"6990to60": 1.4, 
+"699Handling": 110,
+
+"969TopSpeed": 216, 
+"9690to60": 1.5, 
+"969Handling": 110,
+
+"996TopSpeed": 216, 
+"9960to60": 1.4, 
+"996Handling": 106
+}

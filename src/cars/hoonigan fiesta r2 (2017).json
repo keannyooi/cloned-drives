@@ -1,0 +1,49 @@
+{
+    "rq": 69,
+    "make": ["Hoonigan", "Ford"],
+    "model": "Fiesta R2",
+    "modelYear": 2017,
+    "country": "US",
+    "topSpeed": 118,
+    "0to60": 6.2,
+    "handling": 83,
+    "driveType": "FWD",
+    "tyreType": "Off-Road",
+    "tags": ["Tuner", "Unique", "Motorsport"],
+    "isPrize": false,
+	
+    "weight": 1390,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.66,
+    "ola": 72.03,
+    "description": "The Ford Fiesta R2 was M-Sport’s first global rally car and is one of the most reliable and competitive R2s on the market since it's debut in 2010. This one now belongs to Ken's wife, Lucy Block. She also enjoys racing stage rally so in 2017, Block picked this one up as one of her wedding anniversary gifts!",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1060585730230984724/HooniganFiestaR2.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1060586252224696400/HooniganFiestaR2.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 122, 
+"3330to60": 5.9, 
+"333Handling": 86,
+
+"666TopSpeed": 127, 
+"6660to60": 5.6, 
+"666Handling": 88,
+
+"699TopSpeed": 127, 
+"6990to60": 5.3, 
+"699Handling": 92,
+
+"969TopSpeed": 131, 
+"9690to60": 5.6, 
+"969Handling": 92,
+
+"996TopSpeed": 131, 
+"9960to60": 5.3, 
+"996Handling": 88
+}

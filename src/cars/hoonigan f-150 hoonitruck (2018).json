@@ -1,0 +1,49 @@
+{
+    "rq": 99,
+    "make": ["Hoonigan", "Ford"],
+    "model": "F-150 Hoonitruck",
+    "modelYear": 2018,
+    "country": "US",
+    "topSpeed": 155,
+    "0to60": 2.0,
+    "handling": 93,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Tuner", "Unique", "RestoMod"],
+    "isPrize": false,
+	
+    "weight": 1456,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Pickup",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 88.88,
+    "ola": 80,
+    "description": "Gymkhana 10 https://www.youtube.com/watch?v=m_KBvP0_8Tc and Climbkhana 2 https://www.youtube.com/watch?v=ZX2uXBMkO8U",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1060585495102500926/HooniganF150Hoonitruck.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1060586036700385322/HooniganHoonitruck.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 158, 
+"3330to60": 1.9, 
+"333Handling": 96,
+
+"666TopSpeed": 162, 
+"6660to60": 1.8, 
+"666Handling": 99,
+
+"699TopSpeed": 162, 
+"6990to60": 1.7, 
+"699Handling": 103,
+
+"969TopSpeed": 165, 
+"9690to60": 1.8, 
+"969Handling": 103,
+
+"996TopSpeed": 165, 
+"9960to60": 1.7, 
+"996Handling": 99
+}

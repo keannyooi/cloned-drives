@@ -1,0 +1,49 @@
+{
+    "rq": 82,
+    "make": ["Hoonigan", "Ford"],
+    "model": "Escort RS1800",
+    "modelYear": 2015,
+    "country": "US",
+    "topSpeed": 168,
+    "0to60": 3.8,
+    "handling": 89,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner", "Unique", "RestoMod"],
+    "isPrize": false,
+	
+    "weight": 837,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 80,
+    "ola": 88.88,
+    "description": "Ken Blocks first ever RWD Gymkhana machine. https://www.youtube.com/watch?v=9hAZQHkkRgI",
+    "card": "https://cdn.discordapp.com/attachments/819199720249360384/1060585616200441916/HooniganEscortRS1800.png",
+	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1060586137447571527/HooniganEscortRS1800.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 171, 
+"3330to60": 3.6, 
+"333Handling": 92,
+
+"666TopSpeed": 174, 
+"6660to60": 3.4, 
+"666Handling": 95,
+
+"699TopSpeed": 174, 
+"6990to60": 3.2, 
+"699Handling": 99,
+
+"969TopSpeed": 177, 
+"9690to60": 3.4, 
+"969Handling": 99,
+
+"996TopSpeed": 177, 
+"9960to60": 3.2, 
+"996Handling": 95
+}
