@@ -274,6 +274,8 @@ function editFilter(message, filter, args) {
                 case "isMaxed":
                 case "isOwned":
                 case "isBM":
+                case "abs":
+                case "tcs":
                 case "gc":
                 case "rq":
                 case "search":
@@ -300,6 +302,8 @@ function editFilter(message, filter, args) {
                                 \`seatcount\` - Filter by seat count.
                                 \`enginepos\` - Filter by engine position.
                                 \`fueltype\` - Filter by fuel type.
+                                \`abs\` - Filter by ABS availability.
+                                \`tcs\` - Filter by traction control availability.
                                 \`isprize\` - Filter prize cars.
                                 \`isstock\` - Filter stock cars.
                                 \`isupgraded\` - Filter upgraded cars.
@@ -331,12 +335,14 @@ function editFilter(message, filter, args) {
                         \`seatcount\` - Filter by seat count. Provide the start of the seat count range desired and the end after that.
                         \`enginepos\` - Filter by engine position. Provide an engine position (\`front\`, \`middle\`, etc.) after that.
                         \`fueltype\` - Filter by fuel type. Provide a fuel type (\`petrol\`, \`electric\`, etc.) after that.
-                        \`isprize\` - Filter prize cars. Provide a boolean (\`true\` or \`false\`) after that.
-                        \`isstock\` - Filter stock cars. Provide a boolean (\`true\` or \`false\`) after that.
-                        \`isupgraded\` - Filter upgraded cars. Provide a boolean (\`true\` or \`false\`) after that.
-                        \`ismaxed\` - Filter maxed cars. Provide a boolean (\`true\` or \`false\`) after that.
-                        \`isowned\` - Filter cars that you own. Provide a boolean (\`true\` or \`false\`) after that.
-                        \`isbm\` - Filter black market cars. Provide a boolean (\`true\` or \`false\`) after that.
+                        \`abs\` - Filter by ABS availability.  Provide a boolean value (\`true\` or \`false\`) after that.
+                        \`tcs\` - Filter by traction control availability.  Provide a boolean value (\`true\` or \`false\`) after that.
+                        \`isprize\` - Filter prize cars. Provide a boolean value (\`true\` or \`false\`) after that.
+                        \`isstock\` - Filter stock cars. Provide a boolean value (\`true\` or \`false\`) after that.
+                        \`isupgraded\` - Filter upgraded cars. Provide a boolean value (\`true\` or \`false\`) after that.
+                        \`ismaxed\` - Filter maxed cars. Provide a boolean value (\`true\` or \`false\`) after that.
+                        \`isowned\` - Filter cars that you own. Provide a boolean value (\`true\` or \`false\`) after that.
+                        \`isbm\` - Filter black market cars. Provide a boolean value (\`true\` or \`false\`) after that.
                         \`tags\` - Filter by tag. Provide a valid tag after that.
                         \`collection\` - Filter by collection. Provide a valid collection after that.
                         \`search\` - Filter by a certain keyword inside a car's name. Provide a keyword that is found in a in-game car's name after that.

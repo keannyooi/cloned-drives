@@ -184,6 +184,11 @@ async function race(message, player, opponent, currentTrack, disablegraphics) {
     }
 
     function evalScore(player, opponent) {
+        // let playerMRA = ((100 * player.accel) / player.mra) + player.accel;
+        // let playerOLA = (player.ola / 100) * (player.accel / 2);
+        // let opponentMRA = ((100 * opponent.accel) / opponent.mra) + opponent.accel;
+        // let opponentOLA = (opponent.ola / 100) * (opponent.accel / 2);
+
         let score = 0;
         score += (player.topSpeed - opponent.topSpeed) * (currentTrack["specsDistr"]["topSpeed"] / 100);
         score += (opponent.accel - player.accel) * 10 * (currentTrack["specsDistr"]["0to60"] / 100);
