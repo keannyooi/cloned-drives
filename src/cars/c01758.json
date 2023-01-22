@@ -11,16 +11,13 @@
     "tyreType": "All-Surface",
     "tags": [
         "Oddity",
-        "The Japanese Odyssey"
+        "The Japanese Odyssey", "Year of the Rabbit"
     ],
     "isPrize": false,
     "weight": 2002,
     "gc": "Medium",
     "seatCount": 4,
-    "bodyStyle": [
-        "SUV",
-        "Convertible"
-    ],
+    "bodyStyle": "Convertible",
     "tcs": true,
     "abs": true,
     "enginePos": "Front",

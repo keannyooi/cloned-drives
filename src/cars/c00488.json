@@ -5,12 +5,12 @@
     "modelYear": 1987,
     "country": "US",
     "topSpeed": 137,
-    "0to60": 8,
+    "0to60": 8.0,
     "handling": 72,
     "driveType": "RWD",
     "tyreType": "Performance",
     "tags": [
-        "Muscle Car"
+        "Muscle Car", "Year of the Rabbit"
     ],
     "isPrize": false,
     "weight": 1542,
