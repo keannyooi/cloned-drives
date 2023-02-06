@@ -21,10 +21,10 @@
     "fuelType": "Petrol",
     "mra": 57.36,
     "ola": 67.57,
-    "description": "Card by Olimato",
+    "description": "",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/970960140566151168/944_s.png",
     "333TopSpeed": 145,
-    "3330to60": 7,
+    "3330to60": 7.0,
     "333Handling": 79,
     "666TopSpeed": 148,
     "6660to60": 6.7,
@@ -38,6 +38,6 @@
     "699TopSpeed": 148,
     "6990to60": 6.3,
     "699Handling": 84,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1051134717572952115/Porsche_944_S.png",
+    "creator": "Olimato"
 }

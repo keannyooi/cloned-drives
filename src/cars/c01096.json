@@ -5,7 +5,7 @@
     "modelYear": 1981,
     "country": "DE",
     "topSpeed": 155,
-    "0to60": 6,
+    "0to60": 6.0,
     "handling": 81,
     "driveType": "RWD",
     "tyreType": "Performance",
@@ -24,7 +24,7 @@
     "fuelType": "Petrol",
     "mra": 64.38,
     "ola": 80.85,
-    "description": "A more high performance version of the 924 Carrera GT. Card by Spence.",
+    "description": "A more high performance version of the 924 Carrera GT.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/847614185193078794/image0.png",
     "333TopSpeed": 158,
     "3330to60": 5.7,
@@ -41,6 +41,6 @@
     "699TopSpeed": 162,
     "6990to60": 5.1,
     "699Handling": 90,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1051140133811916871/Porsche_924_Carrera_GTS.png",
+    "creator": "Spence"
 }
