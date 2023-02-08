@@ -21,10 +21,10 @@
     "fuelType": "Petrol",
     "mra": 63.86,
     "ola": 67.92,
-    "description": "Card by McNuggets.",
+    "description": "",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/851581422686044170/tl_sh_awd_4.png",
     "333TopSpeed": 138,
-    "3330to60": 5,
+    "3330to60": 5.0,
     "333Handling": 84,
     "666TopSpeed": 142,
     "6660to60": 4.8,
@@ -38,6 +38,6 @@
     "699TopSpeed": 142,
     "6990to60": 4.5,
     "699Handling": 90,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1050859334055247913/Acura_TL_AWD_manual.png",
+    "creator": "McNuggets"
 }

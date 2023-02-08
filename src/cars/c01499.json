@@ -8,7 +8,7 @@
     "modelYear": 2000,
     "country": "DE",
     "topSpeed": 207,
-    "0to60": 4,
+    "0to60": 4.0,
     "handling": 87,
     "driveType": "RWD",
     "tyreType": "Performance",
@@ -27,7 +27,7 @@
     "fuelType": "Petrol",
     "mra": 97.17,
     "ola": 86.08,
-    "description": "Card by Havvy.",
+    "description": "",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/828634240089718784/unknown.png",
     "333TopSpeed": 210,
     "3330to60": 3.8,
@@ -44,6 +44,6 @@
     "699TopSpeed": 212,
     "6990to60": 3.4,
     "699Handling": 97,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1050855664815194112/Gemballa_GTR_600.png",
+    "creator": "Havvy"
 }

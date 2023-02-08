@@ -5,7 +5,7 @@
     "modelYear": 1986,
     "country": "DE",
     "topSpeed": 131,
-    "0to60": 8,
+    "0to60": 8.0,
     "handling": 71,
     "driveType": "RWD",
     "tyreType": "Performance",
@@ -24,7 +24,7 @@
     "fuelType": "Petrol",
     "mra": 53.6,
     "ola": 65.83,
-    "description": "Entry level front-engined porsche still ongoing after 10 years but now fitted with a bigger 2.5L I4 called the 924S. Card by Spence.",
+    "description": "Entry level front-engined porsche still ongoing after 10 years but now fitted with a bigger 2.5L I4 called the 924S.",
     "card": "https://cdn.discordapp.com/attachments/819199720249360384/846888656140632104/image0.png",
     "333TopSpeed": 135,
     "3330to60": 7.6,
@@ -41,6 +41,6 @@
     "699TopSpeed": 139,
     "6990to60": 6.8,
     "699Handling": 79,
-    "racehud": "https://cdn.discordapp.com/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1051141630364754041/Porsche_924S.png",
+    "creator": "Spence"
 }
