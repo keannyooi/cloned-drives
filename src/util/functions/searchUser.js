@@ -1,6 +1,6 @@
 "use strict";
 
-const { MessageSelectMenu } = require("discord.js");
+const { StringSelectMenuBuilder } = require("discord.js");
 const bot = require("../../config/config.js");
 const processResults = require("./corefiles/processResults.js");
 
@@ -20,11 +20,10 @@ async function searchUser(message, username, currentMessage) {
             });
         }
 
-        let list = new MessageSelectMenu({
-            customId: "search",
-            placeholder: "Select a user...",
-            options
-        });
+        let list = new StringSelectMenuBuilder()
+            .setCustomId("search")
+            .setPlaceholder("Select a user...")
+            .addOptions(...options);
         return list;
     }, null, currentMessage)
         .catch(throwError => {

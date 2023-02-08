@@ -1,7 +1,7 @@
 "use strict";
 
 const bot = require("../config/config.js");
-const { MessageActionRow } = require("discord.js");
+const { ActionRowBuilder } = require("discord.js");
 const { readdirSync } = require("fs");
 const carFiles = readdirSync("./src/cars").filter(file => file.endsWith(".json"));
 const tracks = readdirSync("./src/tracks").filter(file => file.endsWith(".json"));
@@ -38,7 +38,7 @@ module.exports = {
         const [playerCar, playerList] = createCar(hand, settings.unitpreference, settings.hideownstats);
         const [opponentCar, opponentList] = createCar(opponent, settings.unitpreference);
         const { yse, nop, skip } = getButtons("rr", settings.buttonstyle);
-        const row = new MessageActionRow({ components: [yse, nop, skip] });
+        const row = new ActionRowBuilder().addComponents(yse, nop, skip);
         const intermission = new InfoMessage({
             channel: message.channel,
             title: "Ready to Play?",
@@ -192,7 +192,7 @@ module.exports = {
                 let req = reqs[Math.floor(Math.random() * reqs.length)];
                 let reqCar = require(`../cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
                 if (reqCar["reference"]) {
-                    reqCar = require(`../cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
+                    reqCar = require(`../cars/${reqCar["reference"]}`);
                 }
                 criteria[req] = reqCar[req].toLowerCase();
             }

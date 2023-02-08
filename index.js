@@ -74,15 +74,15 @@ bot.on("messageUpdate", (oldMessage, newMessage) => {
     }
 });
 
-// try me
-process.on("uncaughtException", async error => {
-    console.log(error.stack);
-    const errorReport = new BotError({
-        stack: error.stack,
-        unknownSource: true
-    });
-    await errorReport.sendReport();
-});
+// // try me
+// process.on("uncaughtException", async error => {
+//     console.log(error.stack);
+//     const errorReport = new BotError({
+//         stack: error.stack,
+//         unknownSource: true
+//     });
+//     await errorReport.sendReport();
+// });
 
 // loop thingy
 setInterval(async () => {
@@ -165,7 +165,7 @@ async function processCommand(message) {
             }
         });
     if (!message.content.toLowerCase().startsWith(prefix) || message.author.bot) return;
-    if (bot.devMode && !(member.roles.cache.has(adminRoleID) || member.roles.cache.has(testerRoleID))) return;
+    if (bot.devMode && (!member._roles.includes(adminRoleID) || !member._roles.includes(testerRoleID))) return;
 
     const args = message.content.slice(prefix.length).split(/ +/);
     const commandName = args.shift().toLowerCase();

@@ -1,13 +1,13 @@
 "use strict";
 
-const { MessageActionRow, MessageSelectMenu } = require("discord.js");
+const { ActionRowBuilder, StringSelectMenuBuilder } = require("discord.js");
 const { ErrorMessage, InfoMessage } = require("../classes/classes.js");
 const { defaultWaitTime } = require("../consts/consts.js");
 const carNameGen = require("./carNameGen.js");
 
 async function selectUpgrade(args) {
     let { message, currentCar, amount, currentMessage, targetUpgrade } = args;
-    const filter = (button) => button.user.id === message.author.id && button.customId === "upgrade_select";
+    const filter = (button) => button.user.id === message.author.id && button.customId === "upgradeSelect";
     const getCard = require(`../../cars/${currentCar.carID}.json`);
     let isOne = Object.keys(currentCar.upgrades).filter(upgrade => {
         if (targetUpgrade && (upgrade.includes("6") && upgrade.includes("9") || Number(targetUpgrade) <= Number(upgrade))) {
@@ -27,12 +27,11 @@ async function selectUpgrade(args) {
                 value: upg
             });
         }
-        const dropdownList = new MessageSelectMenu({
-            customId: "upgrade_select",
-            placeholder: "Select a tune...",
-            options,
-        });
-        const row = new MessageActionRow({ components: [dropdownList] });
+        const dropdownList = new StringSelectMenuBuilder()
+            .setCustomId("upgradeSelect")
+            .setPlaceholder("Select a tune...")
+            .addOptions(...options);
+        const row = new ActionRowBuilder().addComponents(dropdownList);
 
         const infoMessage = new InfoMessage({
             channel: message.channel,

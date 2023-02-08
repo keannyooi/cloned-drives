@@ -1,7 +1,7 @@
 "use strict";
 
 const { registerFont, loadImage, createCanvas } = require("canvas");
-const { MessageAttachment } = require("discord.js");
+const { AttachmentBuilder } = require("discord.js");
 const tyreAbbrevs = {
     "Standard": "STD",
     "Performance": "PER",
@@ -34,7 +34,7 @@ async function generateHud(currentCar, upgrade) {
     ctx.fillText(bmReference["driveType"], 492, 237);
     ctx.fillText(tyreAbbrevs[bmReference["tyreType"]], 492, 292);
 
-    let attachment = new MessageAttachment(canvas.toBuffer(), "hud.png");
+    let attachment = new AttachmentBuilder(canvas.toBuffer(), "hud.png");
     return attachment;
 }
 

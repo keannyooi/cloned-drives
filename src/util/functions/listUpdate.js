@@ -1,6 +1,6 @@
 "use strict";
 
-const { MessageActionRow } = require("discord.js");
+const { ActionRowBuilder } = require("discord.js");
 const { defaultPageLimit, defaultWaitTime } = require("../consts/consts.js");
 const getButtons = require("./getButtons.js");
 const paginate = require("./paginate.js")
@@ -37,23 +37,23 @@ async function listUpdate(list, page, totalPages, listDisplay, settings, current
         lastPage.setDisabled(false);
     }
 
-    let row = new MessageActionRow({ components: [firstPage, prevPage, nextPage, lastPage] });
+    let row = new ActionRowBuilder().addComponents(firstPage, prevPage, nextPage, lastPage);
     let listMessage = await embed.sendMessage({ buttons: [row], currentMessage });
 
     const collector = listMessage.message.createMessageComponentCollector({ filter, time: defaultWaitTime });
     collector.on("collect", async (button) => {
         try {
             switch (button.customId) {
-                case "first_page":
+                case "firstPage":
                     page = 1;
                     break;
-                case "prev_page":
+                case "prevPage":
                     page -= 1;
                     break;
-                case "next_page":
+                case "nextPage":
                     page += 1;
                     break;
-                case "last_page":
+                case "lastPage":
                     page = totalPages;
                     break;
                 default:
@@ -86,7 +86,7 @@ async function listUpdate(list, page, totalPages, listDisplay, settings, current
                 lastPage.setDisabled(false);
             }
     
-            row = new MessageActionRow({ components: [firstPage, prevPage, nextPage, lastPage] });
+            row = new ActionRowBuilder().addComponents(firstPage, prevPage, nextPage, lastPage);
             embed = listDisplay(section, page, totalPages, currentMessage);
             listMessage = await embed.sendMessage({ buttons: [row], currentMessage: listMessage });
             await button.deferUpdate();

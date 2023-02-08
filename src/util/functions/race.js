@@ -2,7 +2,7 @@
 
 const bot = require("../../config/config.js");
 const { createCanvas, loadImage } = require("canvas");
-const { MessageAttachment } = require("discord.js");
+const { AttachmentBuilder } = require("discord.js");
 const { SuccessMessage, InfoMessage, ErrorMessage, BotError } = require("../classes/classes.js");
 const { weatherVars, driveHierarchy, gcHierarchy, failedToLoadImageLink } = require("../consts/consts.js");
 
@@ -24,11 +24,11 @@ async function race(message, player, opponent, currentTrack, disablegraphics) {
             ctx.drawImage(bot.graphics.raceTemp, 0, 0, canvas.width, canvas.height);
             ctx.drawImage(playerHud, 35, 69, 186, 113);
             ctx.drawImage(opponentHud, 457, 198, 186, 112);
-            attachment = new MessageAttachment(canvas.toBuffer(), "thing.png");
+            attachment = new AttachmentBuilder(canvas.toBuffer(), "thing.png");
         }
         catch (error) {
             console.log(error);
-            attachment = new MessageAttachment(failedToLoadImageLink, "thing.png");
+            attachment = new AttachmentBuilder(failedToLoadImageLink, "thing.png");
         }
     }
 

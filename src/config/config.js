@@ -1,10 +1,14 @@
 "use strict";
 
-const { Client, Collection, Intents } = require("discord.js");
+const { readFileSync } = require("fs");
+const { Client, Collection, GatewayIntentBits, Partials } = require("discord.js");
 const { DateTime } = require("luxon");
 const { loadImage } = require("canvas");
 const { spawn } = require("child_process");
 const { schedule } = require("node-cron");
+
+const dealerTemplate = readFileSync("./src/assets/imgs/dealership.png");
+const eventTemplate = readFileSync("./src/assets/imgs/cell.png");
 
 class Bot extends Client {
     constructor(intents, devMode) {
@@ -27,27 +31,26 @@ class Bot extends Client {
 
     async loadGraphics() {
         await Promise.all([
-            loadImage("https://cdn.discordapp.com/attachments/716917404868935691/795177817116901386/race_template_thing.png"),
             loadImage("https://cdn.discordapp.com/attachments/715771423779455077/799579880819785778/unknown.png"),
-            loadImage("https://cdn.discordapp.com/attachments/716917404868935691/966636049809932288/unknown.png"),
-            loadImage("https://cdn.discordapp.com/attachments/716917404868935691/744882896828891136/deck_screen.png"),
-            loadImage("https://cdn.discordapp.com/attachments/715771423779455077/848829168234135552/deck_thing.png")
+            loadImage(dealerTemplate),
+            loadImage(eventTemplate)
         ])
             .then(loaded => {
-                let [raceTemp, dealerTemp, eventTemp, deckTemp, deckSelectTemp] = loaded;
-                this.graphics = { raceTemp, dealerTemp, eventTemp, deckTemp, deckSelectTemp }
+                let [raceTemp, dealerTemp, eventTemp] = loaded;
+                this.graphics = { raceTemp, dealerTemp, eventTemp }
             });
     }
 }
 
 const bot = new Bot({
     intents: [
-        Intents.FLAGS.GUILDS,
-        Intents.FLAGS.GUILD_MESSAGES,
-        Intents.FLAGS.GUILD_MEMBERS,
-        Intents.FLAGS.DIRECT_MESSAGES
+        GatewayIntentBits.Guilds,
+        GatewayIntentBits.GuildMessages,
+        GatewayIntentBits.GuildMembers,
+        GatewayIntentBits.DirectMessages,
+        GatewayIntentBits.MessageContent,
     ],
-    partials: ["CHANNEL"]
+    partials: [Partials.Channel]
 }, true); //<------------- devMode is here
 
 bot.loadGraphics();

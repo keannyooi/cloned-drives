@@ -1,95 +1,82 @@
 "use strict";
 
-const { MessageButton } = require("discord.js");
+const { ButtonBuilder, ButtonStyle } = require("discord.js");
+const { Primary, Secondary, Success, Danger } = ButtonStyle;
 
 function getButtons(type, buttonStyle) {
     switch (type) {
         case "menu":
             let firstPage, prevPage, nextPage, lastPage;
             if (buttonStyle === "classic") {
-                firstPage = new MessageButton({
-                    emoji: "⏪",
-                    style: "SECONDARY",
-                    customId: "first_page"
-                });
-                prevPage = new MessageButton({
-                    emoji: "⬅️",
-                    style: "SECONDARY",
-                    customId: "prev_page"
-                });
-                nextPage = new MessageButton({
-                    emoji: "➡️",
-                    style: "SECONDARY",
-                    customId: "next_page"
-                });
-                lastPage = new MessageButton({
-                    emoji: "⏩",
-                    style: "SECONDARY",
-                    customId: "last_page"
-                });
+                firstPage = new ButtonBuilder()
+                    .setCustomId("firstPage")
+                    .setEmoji("⏪")
+                    .setStyle(Secondary);
+                prevPage = new ButtonBuilder()
+                    .setCustomId("prevPage")
+                    .setEmoji("⬅️")
+                    .setStyle(Secondary);
+                nextPage = new ButtonBuilder()
+                    .setCustomId("nextPage")
+                    .setEmoji("➡️")
+                    .setStyle(Secondary);
+                lastPage = new ButtonBuilder()
+                    .setCustomId("lastPage")
+                    .setEmoji("⏩")
+                    .setStyle(Secondary);
             }
             else {
-                firstPage = new MessageButton({
-                    label: "<<",
-                    style: "DANGER",
-                    customId: "first_page"
-                });
-                prevPage = new MessageButton({
-                    label: "<",
-                    style: "PRIMARY",
-                    customId: "prev_page"
-                });
-                nextPage = new MessageButton({
-                    label: ">",
-                    style: "PRIMARY",
-                    customId: "next_page"
-                });
-                lastPage = new MessageButton({
-                    label: ">>",
-                    style: "DANGER",
-                    customId: "last_page"
-                });
+                firstPage = new ButtonBuilder()
+                    .setCustomId("firstPage")
+                    .setLabel("<<")
+                    .setStyle(Danger);
+                prevPage = new ButtonBuilder()
+                    .setCustomId("prevPage")
+                    .setLabel("<")
+                    .setStyle(Primary);
+                nextPage = new ButtonBuilder()
+                    .setCustomId("nextPage")
+                    .setLabel(">")
+                    .setStyle(Primary);
+                lastPage = new ButtonBuilder()
+                    .setCustomId("lastPage")
+                    .setLabel(">>")
+                    .setStyle(Danger);
             }
             return { firstPage, prevPage, nextPage, lastPage };
         case "choice":
         case "rr":
             let yse, nop, skip;
             if (buttonStyle === "classic") {
-                yse = new MessageButton({
-                    emoji: "✅",
-                    style: "SECONDARY",
-                    customId: "yse"
-                });
-                nop = new MessageButton({
-                    emoji: "❎",
-                    style: "SECONDARY",
-                    customId: "nop"
-                });
+                yse = new ButtonBuilder()
+                    .setCustomId("yse")
+                    .setEmoji("✅")
+                    .setStyle(Secondary);
+                nop = new ButtonBuilder()
+                    .setCustomId("nop")
+                    .setEmoji("❎")
+                    .setStyle(Secondary);
                 if (type === "rr") {
-                    skip = new MessageButton({
-                        emoji: "⏩",
-                        style: "SECONDARY",
-                        customId: "skip"
-                    });
+                    skip = new ButtonBuilder()
+                        .setCustomId("skip")
+                        .setEmoji("⏩")
+                        .setStyle(Secondary);
                 }
             }
             else {
-                yse = new MessageButton({
-                    label: "YES, DO IT!",
-                    style: "SUCCESS",
-                    customId: "yse"
-                });
-                nop = new MessageButton({
-                    label: "No, I'm not ready!",
-                    style: "DANGER",
-                    customId: "nop"
-                });
+                yse = new ButtonBuilder()
+                    .setCustomId("yse")
+                    .setLabel("YES, DO IT!")
+                    .setStyle(Success);
+                nop = new ButtonBuilder()
+                    .setCustomId("nop")
+                    .setLabel("No, I'm not ready!")
+                    .setStyle(Danger);
                 if (type === "rr") {
-                    skip = new MessageButton({
-                        label: "I give up. (Skips and resets streak)",
-                        style: "PRIMARY",
-                        customId: "skip"
-                    });
+                    skip = new ButtonBuilder()
+                        .setCustomId("skip")
+                        .setLabel("I give up. (Skips and resets streak)")
+                        .setStyle(Primary);
                 }
             }
             return { yse, nop, skip };
