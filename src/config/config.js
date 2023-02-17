@@ -1,19 +1,15 @@
 "use strict";
 
-const { readFileSync } = require("fs");
 const { Client, Collection, GatewayIntentBits, Partials } = require("discord.js");
 const { DateTime } = require("luxon");
 const { loadImage } = require("canvas");
 const { spawn } = require("child_process");
 const { schedule } = require("node-cron");
 
-const dealerTemplate = readFileSync("./src/assets/imgs/dealership.png");
-const eventTemplate = readFileSync("./src/assets/imgs/cell.png");
-
 class Bot extends Client {
-    constructor(intents, devMode) {
+    constructor(intents) {
         super(intents);
-        this.devMode = devMode;
+        this.devMode = intents.devMode;
         this.commands = new Collection();
         this.cooldowns = new Collection();
         this.execList = {};
@@ -31,9 +27,9 @@ class Bot extends Client {
 
     async loadGraphics() {
         await Promise.all([
-            loadImage("https://cdn.discordapp.com/attachments/715771423779455077/799579880819785778/unknown.png"),
-            loadImage(dealerTemplate),
-            loadImage(eventTemplate)
+            loadImage("https://media.discordapp.net/attachments/716917404868935691/795177817116901386/race_template_thing.png"),
+            loadImage("https://i.imgur.com/98Rxd9z.jpg"),
+            loadImage("https://i.imgur.com/voWCtQc.jpg")
         ])
             .then(loaded => {
                 let [raceTemp, dealerTemp, eventTemp] = loaded;
@@ -50,8 +46,9 @@ const bot = new Bot({
         GatewayIntentBits.DirectMessages,
         GatewayIntentBits.MessageContent,
     ],
-    partials: [Partials.Channel]
-}, true); //<------------- devMode is here
+    partials: [Partials.Channel],
+    devMode: process.argv[2]?.toLowerCase() === "dev" ? true : false
+});
 
 bot.loadGraphics();
 

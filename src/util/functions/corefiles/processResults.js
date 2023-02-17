@@ -1,6 +1,6 @@
 "use strict";
 
-const { MessageActionRow } = require("discord.js");
+const { ActionRowBuilder } = require("discord.js");
 const { InfoMessage, ErrorMessage } = require("../../classes/classes.js");
 const { defaultWaitTime } = require("../../consts/consts.js");
 
@@ -17,7 +17,7 @@ async function processResults(message, searchResults, listGen, type, currentMess
         return errorMessage.sendMessage({ currentMessage });
     }
     else if (searchResults.length > 1) {
-        const row = new MessageActionRow({ components: [listGen()] });
+        const row = new ActionRowBuilder().addComponents(listGen());
         const infoMessage = new InfoMessage({
             channel: message.channel,
             title: "Multiple results found, please choose one of the following.",

@@ -156,7 +156,7 @@ const rareEmojiID = "726025302656024586";
 const uncommonEmojiID = "726025273421725756";
 const commonEmojiID = "726020544264273928";
 
-const failedToLoadImageLink = "https://cdn.discordapp.com/attachments/716917404868935691/801370166826238002/unknown.png";
+const failedToLoadImageLink = "https://media.discordapp.net/attachments/716917404868935691/801370166826238002/unknown.png";
 
 module.exports = {
     carSave,

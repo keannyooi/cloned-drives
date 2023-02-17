@@ -34,7 +34,7 @@ class BotMessage {
         let contents = { embeds: [this.embed], components: args?.buttons ?? [], files: null };
         if (args?.attachment) {
             contents.files = [args?.attachment];
-            this.embed.image = `attachment://${args?.attachment["name"]}`;
+            this.embed.image.url = `attachment://${args?.attachment["name"]}`;
         }
     
         if (!args?.preserve) {
@@ -53,10 +53,10 @@ class BotMessage {
         for (let [key, value] of Object.entries(args)) {
             switch (key) {
                 case "title":
-                    this.title = value;
+                    this.embed.title = value;
                     break;
                 case "desc":
-                    this.description = value;
+                    this.embed.description = value;
                     break;
                 case "fields":
                     this.embed.fields.push(value);

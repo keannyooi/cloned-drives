@@ -1,6 +1,6 @@
 "use strict";
 
-const { ActionRowBuilder } = require("discord.js");
+const { ActionRowBuilder, ButtonBuilder, ComponentType: { Button } } = require("discord.js");
 const { defaultPageLimit, defaultWaitTime } = require("../consts/consts.js");
 const getButtons = require("./getButtons.js");
 const paginate = require("./paginate.js")
@@ -13,34 +13,34 @@ async function listUpdate(list, page, totalPages, listDisplay, settings, current
     let embed = listDisplay(section, page, totalPages);
 
     if (list.length <= pageLimit) {
-        firstPage.setDisabled(true);
-        prevPage.setDisabled(true);
-        nextPage.setDisabled(true);
-        lastPage.setDisabled(true);
+        firstPage = ButtonBuilder.from(firstPage).setDisabled(true);
+        prevPage = ButtonBuilder.from(prevPage).setDisabled(true);
+        nextPage = ButtonBuilder.from(nextPage).setDisabled(true);
+        lastPage = ButtonBuilder.from(lastPage).setDisabled(true);
     }
     else if (list.length <= page * pageLimit) {
-        firstPage.setDisabled(false);
-        prevPage.setDisabled(false);
-        nextPage.setDisabled(true);
-        lastPage.setDisabled(true);
+        firstPage = ButtonBuilder.from(firstPage).setDisabled(false);
+        prevPage = ButtonBuilder.from(prevPage).setDisabled(false);
+        nextPage = ButtonBuilder.from(nextPage).setDisabled(true);
+        lastPage = ButtonBuilder.from(lastPage).setDisabled(true);
     }
     else if (page === 1) {
-        firstPage.setDisabled(true);
-        prevPage.setDisabled(true);
-        nextPage.setDisabled(false);
-        lastPage.setDisabled(false);
+        firstPage = ButtonBuilder.from(firstPage).setDisabled(true);
+        prevPage = ButtonBuilder.from(prevPage).setDisabled(true);
+        nextPage = ButtonBuilder.from(nextPage).setDisabled(false);
+        lastPage = ButtonBuilder.from(lastPage).setDisabled(false);
     }
     else {
-        firstPage.setDisabled(false);
-        prevPage.setDisabled(false);
-        nextPage.setDisabled(false);
-        lastPage.setDisabled(false);
+        firstPage = ButtonBuilder.from(firstPage).setDisabled(false);
+        prevPage = ButtonBuilder.from(prevPage).setDisabled(false);
+        nextPage = ButtonBuilder.from(nextPage).setDisabled(false);
+        lastPage = ButtonBuilder.from(lastPage).setDisabled(false);
     }
 
     let row = new ActionRowBuilder().addComponents(firstPage, prevPage, nextPage, lastPage);
     let listMessage = await embed.sendMessage({ buttons: [row], currentMessage });
 
-    const collector = listMessage.message.createMessageComponentCollector({ filter, time: defaultWaitTime });
+    const collector = listMessage.message.createMessageComponentCollector({ filter, time: defaultWaitTime, componentType: Button });
     collector.on("collect", async (button) => {
         try {
             switch (button.customId) {
@@ -62,28 +62,28 @@ async function listUpdate(list, page, totalPages, listDisplay, settings, current
     
             section = paginate(list, page, settings.listamount);
             if (list.length <= pageLimit) {
-                firstPage.setDisabled(true);
-                prevPage.setDisabled(true);
-                nextPage.setDisabled(true);
-                lastPage.setDisabled(true);
+                firstPage = ButtonBuilder.from(firstPage).setDisabled(true);
+                prevPage = ButtonBuilder.from(prevPage).setDisabled(true);
+                nextPage = ButtonBuilder.from(nextPage).setDisabled(true);
+                lastPage = ButtonBuilder.from(lastPage).setDisabled(true);
             }
             else if (list.length <= page * pageLimit) {
-                firstPage.setDisabled(false);
-                prevPage.setDisabled(false);
-                nextPage.setDisabled(true);
-                lastPage.setDisabled(true);
+                firstPage = ButtonBuilder.from(firstPage).setDisabled(false);
+                prevPage = ButtonBuilder.from(prevPage).setDisabled(false);
+                nextPage = ButtonBuilder.from(nextPage).setDisabled(true);
+                lastPage = ButtonBuilder.from(lastPage).setDisabled(true);
             }
             else if (page === 1) {
-                firstPage.setDisabled(true);
-                prevPage.setDisabled(true);
-                nextPage.setDisabled(false);
-                lastPage.setDisabled(false);
+                firstPage = ButtonBuilder.from(firstPage).setDisabled(true);
+                prevPage = ButtonBuilder.from(prevPage).setDisabled(true);
+                nextPage = ButtonBuilder.from(nextPage).setDisabled(false);
+                lastPage = ButtonBuilder.from(lastPage).setDisabled(false);
             }
             else {
-                firstPage.setDisabled(false);
-                prevPage.setDisabled(false);
-                nextPage.setDisabled(false);
-                lastPage.setDisabled(false);
+                firstPage = ButtonBuilder.from(firstPage).setDisabled(false);
+                prevPage = ButtonBuilder.from(prevPage).setDisabled(false);
+                nextPage = ButtonBuilder.from(nextPage).setDisabled(false);
+                lastPage = ButtonBuilder.from(lastPage).setDisabled(false);
             }
     
             row = new ActionRowBuilder().addComponents(firstPage, prevPage, nextPage, lastPage);

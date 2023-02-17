@@ -84,8 +84,7 @@ async function openPack(args) {
         pulledCards += carNameGen({ currentCar, rarity: true });
 
         if ((i + 1) % 5 !== 0) {
-            pulledCards += ` **[[Card]](${currentCar["card"]})**`;
-            pulledCards += "\n";
+            pulledCards += ` **[[Card]](${currentCar["card"]})**\n`;
         }
         else {
             const packScreen = new InfoMessage({

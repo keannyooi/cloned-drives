@@ -34,7 +34,7 @@ async function generateHud(currentCar, upgrade) {
     ctx.fillText(bmReference["driveType"], 492, 237);
     ctx.fillText(tyreAbbrevs[bmReference["tyreType"]], 492, 292);
 
-    let attachment = new AttachmentBuilder(canvas.toBuffer(), "hud.png");
+    let attachment = new AttachmentBuilder(canvas.toBuffer(), { name:"hud.png" });
     return attachment;
 }
 

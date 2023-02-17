@@ -1,7 +1,7 @@
 "use strict";
 
 const bot = require("../config/config.js");
-const { MessageAttachment } = require("discord.js");
+const { AttachmentBuilder } = require("discord.js");
 const { DateTime } = require("luxon");
 const { registerFont, loadImage, createCanvas } = require("canvas");
 const { SuccessMessage, InfoMessage } = require("../util/classes/classes.js");
@@ -180,11 +180,11 @@ module.exports = {
                 }
                 catch (error) {
                     console.log(error);
-                    attachment = new MessageAttachment(failedToLoadImageLink, "event.png");
+                    attachment = new AttachmentBuilder(failedToLoadImageLink, { name: "event.jpg" });
                     cucked = true;
                 }
                 if (!cucked) {
-                    attachment = new MessageAttachment(canvas.toBuffer(), "event.png");
+                    attachment = new AttachmentBuilder(canvas.toBuffer(), { name: "event.jpg" });
                 }
 
                 const successMessage = new SuccessMessage({

@@ -1,6 +1,6 @@
 "use strict";
 
-const { MessageButton, MessageActionRow, MessageSelectMenu } = require("discord.js");
+const { ButtonBuilder, ActionRowBuilder, StringSelectMenuBuilder, ComponentType: { Button } } = require("discord.js");
 const { SuccessMessage, InfoMessage, ErrorMessage } = require("../util/classes/classes.js");
 const { defaultWaitTime } = require("../util/consts/consts.js");
 const profileModel = require("../models/profileSchema.js");
@@ -16,42 +16,41 @@ module.exports = {
         let { settings } = await profileModel.findOne({ userID: message.author.id });
 
         if (!args[0]) {
-            const filter = (button) => button.user.id === message.author.id;
+            // const filter = (button) => button.user.id === message.author.id;
             let { infoMessage, row } = menu(), processing = false;
             let currentMessage = await infoMessage.sendMessage({ buttons: [row] });
 
-            const collector = currentMessage.message.createMessageComponentCollector({ filter, time: defaultWaitTime });
-            collector.on("collect", async (button) => {
+            const collector = currentMessage.message.createMessageComponentCollector({ filter, time: defaultWaitTime, componentType: Button });
+            collector.on("collect", async (interaction) => {
+                console.log("hi");
                 if (processing === false) {
                     processing = true;
-                    switch (button.customId) {
-                        case "category_select":
+                    switch (interaction.customId) {
+                        case "categorySelect":
                             let backButton;
                             if (settings.buttonstyle === "classic") {
-                                backButton = new MessageButton({
-                                    emoji: "⬅️",
-                                    style: "SECONDARY",
-                                    customId: "back"
-                                });
+                                backButton = new ButtonBuilder()
+                                    .setCustomId("back")
+                                    .setEmoji("⬅️")
+                                    .setStyle(Secondary);
                             }
                             else {
-                                backButton = new MessageButton({
-                                    label: "Back",
-                                    style: "PRIMARY",
-                                    customId: "back"
-                                });
+                                backButton = new ButtonBuilder()
+                                    .setCustomId("back")
+                                    .setLabel("Back")
+                                    .setStyle(Primary);
                             }
 
                             infoMessage = new InfoMessage({
                                 channel: message.channel,
                                 title: "Settings",
-                                desc: `Category Selected: \`${button.values[0]}\``,
+                                desc: `Category Selected: \`${interaction.values[0]}\``,
                                 author: message.author
                             });
-                            row = new MessageActionRow({ components: [backButton] });
+                            row = new ActionRowBuilder().addComponents(backButton);
 
-                            switch (button.values[0]) {
-                                case "Gameplay":
+                            switch (interaction.values[0]) {
+                                case "gameplay":
                                     infoMessage.editEmbed({
                                         fields: [
                                             {
@@ -105,7 +104,7 @@ module.exports = {
                                         ]
                                     });
                                     break;
-                                case "Garage + List":
+                                case "garage+list":
                                     infoMessage.editEmbed({
                                         fields: [
                                             {
@@ -141,7 +140,7 @@ module.exports = {
                                         ]
                                     });
                                     break;
-                                case "Profile":
+                                case "profile":
                                     infoMessage.editEmbed({
                                         fields: [
                                             {
@@ -165,7 +164,7 @@ module.exports = {
                         default:
                             break;
                     }
-                    await button.deferUpdate();
+                    await interaction.deferUpdate();
                     processing = false;
                 }
             });
@@ -422,28 +421,28 @@ module.exports = {
         }
 
         function menu() {
-            const dropdownList = new MessageSelectMenu({
-                customId: "category_select",
-                placeholder: "Select a category...",
-                options: [
+            const dropdownList = new StringSelectMenuBuilder()
+                .setCustomId("categorySelect")
+                .setPlaceholder("Select a category...")
+                .addOptions([
                     {
                         label: "Gameplay Settings",
                         description: "Affects general gameplay.",
-                        value: "Gameplay"
+                        value: "gameplay"
                     },
                     {
                         label: "Garage + List Settings",
                         description: "Affects the garage and list commands.",
-                        value: "Garage + List"
+                        value: "garage+list"
                     },
                     {
                         label: "Profile Settings",
                         description: "Affects your profile.",
-                        value: "Profile"
+                        value: "profile"
                     }
-                ]
-            });
-            let row = new MessageActionRow({ components: [dropdownList] });
+                ]);
+            
+            let row = new ActionRowBuilder({ components: [dropdownList] });
             let infoMessage = new InfoMessage({
                 channel: message.channel,
                 title: "Settings",

@@ -10,6 +10,7 @@ async function race(message, player, opponent, currentTrack, disablegraphics) {
     message.channel.sendTyping();
     const { tcsPen, absPen, drivePen, tyrePen } = weatherVars[`${currentTrack["weather"]} ${currentTrack["surface"]}`];
     let attachment;
+    
     if (!disablegraphics) {
         try {
             const canvas = createCanvas(674, 379);
@@ -24,11 +25,10 @@ async function race(message, player, opponent, currentTrack, disablegraphics) {
             ctx.drawImage(bot.graphics.raceTemp, 0, 0, canvas.width, canvas.height);
             ctx.drawImage(playerHud, 35, 69, 186, 113);
             ctx.drawImage(opponentHud, 457, 198, 186, 112);
-            attachment = new AttachmentBuilder(canvas.toBuffer(), "thing.png");
+            attachment = new AttachmentBuilder(canvas.toBuffer(), { name: "thing.jpg" });
         }
         catch (error) {
-            console.log(error);
-            attachment = new AttachmentBuilder(failedToLoadImageLink, "thing.png");
+            attachment = new AttachmentBuilder(failedToLoadImageLink, { name: "thing.jpg" });
         }
     }
 
@@ -184,11 +184,6 @@ async function race(message, player, opponent, currentTrack, disablegraphics) {
     }
 
     function evalScore(player, opponent) {
-        // let playerMRA = ((100 * player.accel) / player.mra) + player.accel;
-        // let playerOLA = (player.ola / 100) * (player.accel / 2);
-        // let opponentMRA = ((100 * opponent.accel) / opponent.mra) + opponent.accel;
-        // let opponentOLA = (opponent.ola / 100) * (opponent.accel / 2);
-
         let score = 0;
         score += (player.topSpeed - opponent.topSpeed) * (currentTrack["specsDistr"]["topSpeed"] / 100);
         score += (opponent.accel - player.accel) * 10 * (currentTrack["specsDistr"]["0to60"] / 100);

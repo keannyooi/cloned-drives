@@ -1,6 +1,6 @@
 "use strict";
 
-const { MessageSelectMenu } = require("discord.js");
+const { StringSelectMenuBuilder } = require("discord.js");
 const { ErrorMessage } = require("../classes/classes.js");
 const { trophyEmojiID } = require("../consts/consts.js");
 const carNameGen = require("./carNameGen.js");
@@ -43,16 +43,17 @@ async function searchGarage(args) {
             let currentCar = require(`../../cars/${searchResults[i].carID}.json`);
             options.push({
                 label: carNameGen({ currentCar, removePrizeTag: true }),
-                value: `${i + 1}`,
-                emoji: currentCar["isPrize"] ? { id: trophyEmojiID } : null
+                value: `${i + 1}`
             });
+            if (currentCar["isPrize"]) {
+                options.emoji = `<trophies:${trophyEmojiID}>`;
+            }
         }
 
-        let list = new MessageSelectMenu({
-            customId: "search",
-            placeholder: "Select a car...",
-            options
-        });
+        let list = new StringSelectMenuBuilder()
+            .setCustomId("search")
+            .setPlaceholder("Select a car...")
+            .addOptions(...options);
         return list;
     }, null, currentMessage)
         .catch(throwError => {

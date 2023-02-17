@@ -2,7 +2,7 @@
 
 const bot = require("../../config/config.js");
 const { createCanvas, loadImage } = require("canvas");
-const { MessageAttachment } = require("discord.js");
+const { AttachmentBuilder } = require("discord.js");
 const { DateTime } = require("luxon");
 const { readdirSync } = require("fs");
 const carFiles = readdirSync("./src/cars").filter(file => file.endsWith(".json"));
@@ -118,11 +118,11 @@ async function regenBM() {
     }
     catch (error) {
         console.log(error);
-        attachment = new MessageAttachment(failedToLoadImageLink, "dealership.png");
+        attachment = new AttachmentBuilder(failedToLoadImageLink, { name: "dealership.jpg" });
         cucked = true;
     }
     if (!cucked) {
-        attachment = new MessageAttachment(canvas.toBuffer(), "dealership.png");
+        attachment = new AttachmentBuilder(canvas.toBuffer(), { name: "dealership.jpg" });
     }
 
     const dealershipChannel = await bot.homeGuild.channels.fetch(dealershipChannelID);

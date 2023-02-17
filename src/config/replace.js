@@ -1,6 +1,6 @@
 "use strict";
 
-const { readdirSync, renameSync, writeFileSync } = require("fs");
+const { readdirSync, renameSync, readFileSync, writeFileSync } = require("fs");
 const carFiles = readdirSync("./src/cars").filter(file => file.endsWith('.json'));
 const packFiles = readdirSync("./src/packs").filter(file => file.endsWith('.json'));
 const trackFiles = readdirSync("./src/tracks").filter(file => file.endsWith('.json'));
@@ -11,7 +11,7 @@ const totalCarIDs = carFiles.filter(c => {
 }).length;
 let i = 1;
 for (let file of carFiles) {
-    let currentCar = require(`../cars/${file}`);
+    let currentCar = readFileSync(`./src/cars/${file}`)
     let checkSampling = file.slice(1, 6);
     if (isNaN(checkSampling) || !file.startsWith("c")) {
         let id = `0000${totalCarIDs + i}`.slice(-5);

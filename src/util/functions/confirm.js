@@ -1,17 +1,17 @@
 "use strict";
 
-const { MessageActionRow } = require("discord.js");
+const { ActionRowBuilder, ComponentType: { Button } } = require("discord.js");
 const { defaultChoiceTime } = require("../consts/consts.js");
 const getButtons = require("./getButtons.js");
 
 async function confirm(message, confirmationMessage, acceptedFunction, buttonStyle, currentMessage) {
     const filter = (button) => button.user.id === message.author.id;
     const { yse, nop } = getButtons("choice", buttonStyle);
-    const row = new MessageActionRow({ components: [yse, nop] });
+    const row = new ActionRowBuilder().addComponents(yse, nop);
     const reactionMessage = await confirmationMessage.sendMessage({ currentMessage, buttons: [row], preserve: true });
     let processed = false;
 
-    const collector = message.channel.createMessageComponentCollector({ filter, time: defaultChoiceTime });
+    const collector = message.channel.createMessageComponentCollector({ filter, time: defaultChoiceTime, componentType: Button });
     collector.on("collect", async (button) => {
         if (!processed) {
             processed = true;

@@ -1,29 +1,24 @@
 {
   "name": "cloned-drives",
   "version": "yes",
-  "description": "A car \"racing\" Discord bot. Notorious for being unplesant to look at, at least according to the experienced.",
+  "description": "A car \"racing\" Discord bot. One may notice that it borrows many elements from a mobile game called Top Drives.",
   "main": "index.js",
   "dependencies": {
     "canvas": "^2.11.0",
     "discord.js": "^14.7.1",
     "dotenv": "^10.0.0",
-    "express": "^4.17.1",
     "luxon": "^1.27.0",
     "mongodb": "^3.6.9",
     "mongoose": "^5.13.14",
     "node-cron": "^3.0.0",
     "npm": "^7.20.5",
-    "string-similarity": "^4.0.4",
-    "ts-node": "^10.2.1"
-  },
-  "devDependencies": {
-    "@types/string-similarity": "^4.0.0",
-    "typescript": "^4.4.2"
+    "string-similarity": "^4.0.4"
   },
   "scripts": {
+    "devstart": "node index.js dev",
     "start": "node index.js",
     "replace": "node src/config/replace.js"
   },
   "author": "keanny",
-  "license": "License? You see comrade, we don't need license, it's OUR bot! (USSR anthem plays)"
+  "license": "MIT (in other words, you can do whatever you want as long as it doesn't harm us)"
 }
