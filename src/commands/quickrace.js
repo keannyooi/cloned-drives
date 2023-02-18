@@ -69,7 +69,7 @@ module.exports = {
                 errors: ["time"]
             })
                 .then(async collected => {
-                    if (!message.channel.type.includes("DM")) {
+                    if (message.channel.type !== 1) {
                         collected.first().delete();
                     }
                     let query = collected.first().content.toLowerCase().split(" "), searchBy = "car";
