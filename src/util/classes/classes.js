@@ -59,7 +59,7 @@ class BotMessage {
                     this.embed.description = value;
                     break;
                 case "fields":
-                    this.embed.fields.push(value);
+                    this.embed.fields.push(...value);
                     break;
                 case "footer":
                     this.embed.footer.text = value;
