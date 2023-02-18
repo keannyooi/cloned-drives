@@ -83,11 +83,11 @@ module.exports = {
                     });
                     break;
                 case "stock":
-                    if (isNaN(criteria2) || parseInt(criteria2) < 1 || parseInt(criteria2) > 10) {
+                    if (isNaN(criteria2) || parseInt(criteria2) < 1 || parseInt(criteria2) > 50) {
                         const errorMessage = new ErrorMessage({
                             channel: message.channel,
                             title: "Error, stock provided is invalid.",
-                            desc: "A limited offer's stock is restricted to 1 ~ 10.",
+                            desc: "A limited offer's stock is restricted to 1 ~ 50.",
                             author: message.author
                         }).displayClosest(criteria2);
                         return errorMessage.sendMessage();
