@@ -1,5 +1,4 @@
 "use strict";
-//devMode switch is in config.js
 
 require("dotenv").config();
 const bot = require("./src/config/config.js");
@@ -74,15 +73,15 @@ bot.on("messageUpdate", (oldMessage, newMessage) => {
     }
 });
 
-// // try me
-// process.on("uncaughtException", async error => {
-//     console.log(error.stack);
-//     const errorReport = new BotError({
-//         stack: error.stack,
-//         unknownSource: true
-//     });
-//     await errorReport.sendReport();
-// });
+// try me
+process.on("uncaughtException", async error => {
+    console.log(error.stack);
+    const errorReport = new BotError({
+        stack: error.stack,
+        unknownSource: true
+    });
+    await errorReport.sendReport();
+});
 
 // loop thingy
 setInterval(async () => {
@@ -245,7 +244,8 @@ async function processCommand(message) {
             const errorMessage = new ErrorMessage({
                 channel: message.channel,
                 title: "Error, failed to execute command.",
-                desc: `Something must have gone wrong. Don't worry, I've already reported this issue to the devs.\n\`${error.stack}\``,
+                desc: `Something must have gone wrong. Don't worry, I've already reported this issue to the devs.
+                \`${error.stack}\``,
                 author: message.author
             });
             await errorMessage.sendMessage();

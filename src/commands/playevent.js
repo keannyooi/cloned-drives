@@ -24,7 +24,7 @@ module.exports = {
     cooldown: 10,
     description: "Participates in an event by doing a race.",
     async execute(message, args) {
-        if (message.channel.type !== "DM") {
+        if (message.channel.type !== 1) {
             const errorMessage = new ErrorMessage({
                 channel: message.channel,
                 title: "Sorry, this command can only be used in DMs.",
