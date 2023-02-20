@@ -1,0 +1,52 @@
+{
+	"rq": 90,
+    "make": ["Mercedes-Benz", "Sauber"],
+    "model": "C291",
+    "modelYear": 1991,
+    "country": "DE",
+    "topSpeed": 215,
+    "0to60": 3.0,
+    "handling": 97,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport", "Unique","The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+
+    "weight": 750,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 109.5,
+    "ola": 98.56,
+    "description": "The last Group C Mercedes which performed poorly leading to Mercedes leaving Sports car racing all together.",
+
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1060662325658533989/Mercedes_C291_Cloned.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1060670789428453446/Mercedes-Benz_C291_Hud.png",
+    "creator": "Sutzi",
+
+    "333TopSpeed": 217,
+    "3330to60": 2.9,
+    "333Handling": 100,
+
+    "666TopSpeed": 220,
+    "6660to60": 2.7,
+    "666Handling": 103,
+
+    "996TopSpeed": 222,
+    "9960to60": 2.6,
+    "996Handling": 103,
+
+    "969TopSpeed": 222,
+    "9690to60": 2.7,
+    "969Handling": 108,
+
+    "699TopSpeed": 220,
+    "6990to60": 2.6,
+    "699Handling": 108
+}

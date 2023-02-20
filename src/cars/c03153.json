@@ -1,0 +1,49 @@
+{
+    "rq": 108,
+    "make": ["SUZUKISPORT", "Suzuki"],
+    "model": "Twin Engine Escudo",
+    "modelYear": 1994,
+    "country": "JP",
+    "topSpeed": 122,
+    "0to60": 2.5,
+    "handling": 91,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["The Amplification of Asia","Unique","Tuner","Motorsport","Oddity"],
+    "isPrize": true,
+	
+    "weight": 922,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Mixed",
+    "fuelType": "Petrol",
+    "mra": 89.28,
+    "ola": 100,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1077272771857498162/TwinEngininkEscudo94.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1077272890833121340/SUSPPTwinEngine2.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 126,
+"3330to60": 2.4,
+"333Handling": 94,
+
+"666TopSpeed": 131,
+"6660to60": 2.3,
+"666Handling": 97,
+
+"699TopSpeed": 131,
+"6990to60": 2.1,
+"699Handling": 101,
+
+"969TopSpeed": 135,
+"9690to60": 2.3,
+"969Handling": 101,
+
+"996TopSpeed": 135,
+"9960to60": 2.1,
+"996Handling": 97
+}

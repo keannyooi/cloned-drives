@@ -1,0 +1,49 @@
+{
+    "rq": 42,
+    "make": "Aston Martin",
+    "model": "DB5 Vantage",
+    "modelYear": 1964,
+    "country": "GB",
+    "topSpeed": 162,
+    "0to60": 6.4,
+    "handling": 71,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Silver Screen", "Style Icon", "Unique", "Supercar", "The Midlands Cruise"],
+    "isPrize": false,
+	
+    "weight": 1465,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 85.33,
+    "ola": 84.38,
+    "description": "The high-performance DB5 Vantage was introduced in 1964. It featured three Weber carburettors and revised camshaft profiles, which delivered greater top-end performance at the possible expense of driveability, as Webers are typically optimized for 'full-throttle' response",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1038523244313071667/DB5Vantage.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1038523761336524821/db5vantage.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 165, 
+"3330to60": 6.1, 
+"333Handling": 73,
+
+"666TopSpeed": 168, 
+"6660to60": 5.8, 
+"666Handling": 76,
+
+"699TopSpeed": 168, 
+"6990to60": 5.4, 
+"699Handling": 79,
+
+"969TopSpeed": 172, 
+"9690to60": 5.8, 
+"969Handling": 79,
+
+"996TopSpeed": 172, 
+"9960to60": 5.4, 
+"996Handling": 76
+}

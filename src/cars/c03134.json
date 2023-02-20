@@ -1,0 +1,49 @@
+{
+    "rq": 96,
+    "make": "Aston Martin",
+    "model": "DBX 707",
+    "modelYear": 2022,
+    "country": "GB",
+    "topSpeed": 193,
+    "0to60": 3.1,
+    "handling": 89,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise"],
+    "isPrize": false,
+	
+    "weight": 2245,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 83.78,
+    "ola": 80,
+    "description": "The Urus competitor that was not needed.",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1034908164518314004/DBX707.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1034908447390572604/DBX707.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 196, 
+"3330to60": 2.9, 
+"333Handling": 92,
+
+"666TopSpeed": 198, 
+"6660to60": 2.8, 
+"666Handling": 95,
+
+"699TopSpeed": 198, 
+"6990to60": 2.6, 
+"699Handling": 99,
+
+"969TopSpeed": 201, 
+"9690to60": 2.8, 
+"969Handling": 99,
+
+"996TopSpeed": 201, 
+"9960to60": 2.6, 
+"996Handling": 95
+}

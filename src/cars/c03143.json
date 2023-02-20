@@ -1,0 +1,49 @@
+{
+    "rq": 29,
+    "make": "Kia",
+    "model": "Seltos CRDi Signature",
+    "modelYear": 2020,
+    "country": "KR",
+    "topSpeed": 116,
+    "0to60": 9.8,
+    "handling": 68,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Amplification of Asia"],
+    "isPrize": false,
+
+    "weight": 1358,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 36.98,
+    "ola": 71.43,
+    "description": "Diesels are dead?.",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1055846415202516992/E.KiaSeltosCRDiSignature.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1055846491056521266/KiaSeltosCRDi.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 120,
+    "3330to60": 9.3,
+    "333Handling": 70,
+
+    "666TopSpeed": 125,
+    "6660to60": 8.8, 
+    "666Handling": 72,
+
+    "996TopSpeed": 129,
+    "9960to60": 8.3,
+    "996Handling": 72,
+
+    "969TopSpeed": 129,
+    "9690to60": 8.8,
+    "969Handling": 75,
+
+    "699TopSpeed": 129,
+    "6990to60": 8.3,
+    "699Handling": 75
+}

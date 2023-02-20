@@ -1,0 +1,49 @@
+{
+    "rq": 35,
+    "make": "Dodge",
+    "model": "Dart GT 2.4",
+    "modelYear": 2014,
+    "country": "US",
+    "topSpeed": 127,
+    "0to60": 8.1,
+    "handling": 77,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Americas Assault"],
+    "isPrize": false,
+    
+    "weight": 1494,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 59.12,
+    "ola": 66.67,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1060669233555591259/Dodge_Dart_GT_2.4.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1060669720711401504/Dodge_Dart_GT_2.4_Hudder.png",
+    "creator": "Biszkoptowiec",
+
+    "333TopSpeed": 131,
+    "3330to60": 7.7,
+    "333Handling": 80,
+
+    "666TopSpeed": 135,
+    "6660to60": 7.3,
+    "666Handling": 82,
+
+    "996TopSpeed": 139,
+    "9960to60": 6.9,
+    "996Handling": 82,
+
+    "969TopSpeed": 139,
+    "9690to60": 7.3,
+    "969Handling": 85,
+
+    "699TopSpeed": 135,
+    "6990to60": 6.9,
+    "699Handling": 85
+}

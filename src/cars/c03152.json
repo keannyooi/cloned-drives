@@ -1,0 +1,49 @@
+{
+    "rq": 76,
+    "make": "Suzuki",
+    "model": "C2",
+    "modelYear": 1997,
+    "country": "JP",
+    "topSpeed": 150,
+    "0to60": 4.1,
+    "handling": 87,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Amplification of Asia","Concept","Unique"],
+    "isPrize": false,
+	
+    "weight": 848,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Converible",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 68.33,
+    "ola": 92.68,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1077272589875019806/SusukiC2.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1077272862018248764/SusukiC2.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 153,
+"3330to60": 3.9,
+"333Handling": 90,
+
+"666TopSpeed": 157,
+"6660to60": 3.7,
+"666Handling": 93,
+
+"699TopSpeed": 157,
+"6990to60": 3.5,
+"699Handling": 97,
+
+"969TopSpeed": 160,
+"9690to60": 3.7,
+"969Handling": 97,
+
+"996TopSpeed": 160,
+"9960to60": 3.5,
+"996Handling": 93
+}

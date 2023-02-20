@@ -1,0 +1,49 @@
+{
+    "rq": 69,
+    "make": "Infiniti",
+    "model": "FX50 AWD",
+    "modelYear": 2008,
+    "country": "JP",
+    "topSpeed": 155,
+    "0to60": 5.4,
+    "handling": 77,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["The Amplification of Asia"],
+    "isPrize": false,
+	
+    "weight": 2109,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.67,
+    "ola": 83.33,
+    "description": "Don't be fooled by its bulbous crossover looks. This car is a muscle car with a proper 5 litre V8 with around 400 horsepower rivaling the Mustang GT of its time.",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1064622095058878474/Infiniti_FX50_AWD.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1064622189200035840/Infiniti_FX50_.png",
+    "creator": "Crossfire",
+
+    "333TopSpeed": 158, 
+    "3330to60": 5.1, 
+    "333Handling": 80,
+
+    "666TopSpeed": 162, 
+    "6660to60": 4.9, 
+    "666Handling": 82,
+
+    "996TopSpeed": 165, 
+    "9960to60": 4.6, 
+    "996Handling": 82,
+
+    "969TopSpeed": 165, 
+    "9690to60": 4.9, 
+    "969Handling": 85,
+
+    "699TopSpeed": 162, 
+    "6990to60": 4.6, 
+    "699Handling": 82
+}

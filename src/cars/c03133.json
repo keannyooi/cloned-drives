@@ -1,0 +1,49 @@
+{
+    "rq": 79,
+    "make": "Aston Martin",
+    "model": "DBS Superleggera Volante",
+    "modelYear": 2019,
+    "country": "GB",
+    "topSpeed": 211,
+    "0to60": 3.5,
+    "handling": 90,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise", "Grand Tourer"],
+    "isPrize": false,
+	
+    "weight": 2069,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 92.1,
+    "ola": 102.85,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1035913436162424842/DBSSuperleggeraVolante.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1035913465950392410/DBSSuperleggeraVolante.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 213, 
+"3330to60": 3.3, 
+"333Handling": 93,
+
+"666TopSpeed": 216, 
+"6660to60": 3.1, 
+"666Handling": 96,
+
+"699TopSpeed": 216, 
+"6990to60": 3.0, 
+"699Handling": 100,
+
+"969TopSpeed": 218, 
+"9690to60": 3.1, 
+"969Handling": 100,
+
+"996TopSpeed": 218, 
+"9960to60": 3.0, 
+"996Handling": 96
+}

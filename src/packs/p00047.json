@@ -1,6 +1,6 @@
 {
-	"packName": "2010 Elite Pack",
-	"description": "A pack with 5 2010 Super Rares or higher.",
+	"packName": "2010s Elite Pack",
+	"description": "A pack with 5 2010s Super Rares or higher.",
 	"price": 325000,
     "repetition": 1,
 	"pack": "https://cdn.discordapp.com/attachments/956106029635088384/1077230593210863676/2010sElite.png", 
@@ -9,7 +9,7 @@
 		"make": "None",
 		"modelYear": {
 			"start": 2010,
-			"end": 2010
+			"end": 2019
 		},
 		"country": "None",
 		"tags": "None",
