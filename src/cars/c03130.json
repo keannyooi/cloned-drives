@@ -1,0 +1,49 @@
+{
+    "rq": 2,
+    "make": "AMC",
+    "model": "Pacer X",
+    "modelYear": 1975,
+    "country": "US",
+    "topSpeed": 91,
+    "0to60": 16.0,
+    "handling": 59,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": [],
+    "isPrize": false,
+	
+    "weight": 1554,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 14.22,
+    "ola": 56.25,
+    "description": "The world's biggest smallest car.",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1065298317887676497/AMC-Pacer-X.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1065298388825952416/AMC-Pacer-X.png",
+    "creator": "Johnny",
+
+    "333TopSpeed": 97, 
+    "3330to60": 15.2, 
+    "333Handling": 61,
+
+    "666TopSpeed": 102, 
+    "6660to60": 14.4, 
+    "666Handling": 63,
+
+    "996TopSpeed": 108, 
+    "9960to60": 13.6, 
+    "996Handling": 63,
+
+    "969TopSpeed": 108, 
+    "9690to60": 14.4, 
+    "969Handling": 65,
+
+    "699TopSpeed": 102, 
+    "6990to60": 13.6, 
+    "699Handling": 65 
+}
