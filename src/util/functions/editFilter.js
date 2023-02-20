@@ -243,7 +243,8 @@ function editFilter(message, filter, args) {
                         successMessage = new SuccessMessage({
                             channel: message.channel,
                             title: `Successfully modified the \`${criteria2}\` filter category!`,
-                            author: message.author
+                            author: message.author,
+                            fields: []
                         });
                         if (filter[criteria2].length === 0) {
                             delete filter[criteria2];

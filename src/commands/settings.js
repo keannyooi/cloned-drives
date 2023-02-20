@@ -1,6 +1,6 @@
 "use strict";
 
-const { ButtonBuilder, ActionRowBuilder, StringSelectMenuBuilder, ComponentType: { Button } } = require("discord.js");
+const { ButtonBuilder, ActionRowBuilder, StringSelectMenuBuilder, ComponentType: { Button, StringSelect }, ButtonStyle: { Primary, Secondary } } = require("discord.js");
 const { SuccessMessage, InfoMessage, ErrorMessage } = require("../util/classes/classes.js");
 const { defaultWaitTime } = require("../util/consts/consts.js");
 const profileModel = require("../models/profileSchema.js");
@@ -16,13 +16,12 @@ module.exports = {
         let { settings } = await profileModel.findOne({ userID: message.author.id });
 
         if (!args[0]) {
-            // const filter = (button) => button.user.id === message.author.id;
+            const filter = (button) => button.user.id === message.author.id;
             let { infoMessage, row } = menu(), processing = false;
             let currentMessage = await infoMessage.sendMessage({ buttons: [row] });
 
-            const collector = currentMessage.message.createMessageComponentCollector({ filter, time: defaultWaitTime, componentType: Button });
+            const collector = currentMessage.message.createMessageComponentCollector({ filter, time: defaultWaitTime });
             collector.on("collect", async (interaction) => {
-                console.log("hi");
                 if (processing === false) {
                     processing = true;
                     switch (interaction.customId) {
@@ -45,7 +44,8 @@ module.exports = {
                                 channel: message.channel,
                                 title: "Settings",
                                 desc: `Category Selected: \`${interaction.values[0]}\``,
-                                author: message.author
+                                author: message.author,
+                                fields: []
                             });
                             row = new ActionRowBuilder().addComponents(backButton);
 
@@ -447,7 +447,8 @@ module.exports = {
                 channel: message.channel,
                 title: "Settings",
                 desc: "Choose a settings category to view.",
-                author: message.author
+                author: message.author,
+                fields: []
             });
 
             return { row, infoMessage };

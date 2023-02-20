@@ -1,7 +1,6 @@
 "use strict";
 
-const { ButtonBuilder, ButtonStyle } = require("discord.js");
-const { Primary, Secondary, Success, Danger } = ButtonStyle;
+const { ButtonBuilder, ButtonStyle: { Primary, Secondary, Success, Danger } } = require("discord.js");
 
 function getButtons(type, buttonStyle) {
     switch (type) {
