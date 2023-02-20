@@ -16,10 +16,7 @@
     "weight": 1100,
     "gc": "Medium",
     "seatCount": 2,
-    "bodyStyle": [
-        "SUV",
-        "Convertible"
-    ],
+    "bodyStyle": "Convertible",
     "tcs": false,
     "abs": true,
     "enginePos": "Front",

@@ -17,10 +17,7 @@
     "weight": 520,
     "gc": "High",
     "seatCount": 4,
-    "bodyStyle": [
-        "Pickup",
-        "Convertible"
-    ],
+    "bodyStyle": "Convertible",
     "tcs": false,
     "abs": false,
     "enginePos": "Middle",

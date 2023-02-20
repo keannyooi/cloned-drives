@@ -15,7 +15,7 @@
     "weight": 1225,
     "gc": "Low",
     "seatCount": 2,
-    "bodyStyle": ["Convertible", "Pickup"],
+    "bodyStyle": "Pickup",
     "tcs": true,
     "abs": true,
     "enginePos": "Front",
