@@ -15,7 +15,7 @@ module.exports = {
         const offers = await offerModel.find();
         const { totalOffers } = await serverStatModel.findOne({});
         let offerName = args.splice(1, args.length).join(" ");
-        if (isNaN(args[0]) || parseInt(args[0]) < 1 || parseInt(args[0]) > 10) {
+        if (isNaN(args[0]) || parseInt(args[0]) < 1 || parseInt(args[0]) > 50) {
             const errorMessage = new ErrorMessage({
                 channel: message.channel,
                 title: "Error, stock provided is invalid.",
