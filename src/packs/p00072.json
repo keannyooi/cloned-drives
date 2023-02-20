@@ -1,9 +1,9 @@
 {
 	"packName": "TEST PACK DO NOT BUY THERE WILL BE NO REFUNDS",
 	"description": "DO NOT BUY",
-	"price": 1000000000,
+	"price": 2500000000,
         "repetition": 1,
-	"pack": "https://media.discordapp.net/attachments/956106029635088384/956106124183097354/Elite_Pack.png",
+	"pack": "https://cdn.discordapp.com/attachments/956106029635088384/1077212413935489044/DONOTBUYPLS.png",
 	
 	"filter": {
 		"make": "None",
@@ -23,49 +23,49 @@
 
 	"packSequence": [
         {
-            "common": 100,
+            "common": 0,
+            "uncommon": 0,
+            "rare": 0,
+            "superRare": 0,
+            "ultraRare": 0,
+            "epic": 50,
+            "legendary": 50
+        },
+        {
+            "common": 0,
+            "uncommon": 0,
+            "rare": 0,
+            "superRare": 0,
+            "ultraRare": 0,
+            "epic": 50,
+            "legendary": 50
+        },
+        {
+            "common": 0,
             "uncommon": 0,
             "rare": 0,
             "superRare": 0,
             "ultraRare": 0,
             "epic": 0,
-            "legendary": 0
+            "legendary": 100
         },
         {
-            "common": 100,
+            "common": 0,
             "uncommon": 0,
             "rare": 0,
             "superRare": 0,
             "ultraRare": 0,
             "epic": 0,
-            "legendary": 0
+            "legendary": 100
         },
         {
-            "common": 100,
+            "common": 0,
             "uncommon": 0,
             "rare": 0,
             "superRare": 0,
             "ultraRare": 0,
             "epic": 0,
-            "legendary": 0
-        },
-        {
-            "common": 100,
-            "uncommon": 0,
-            "rare": 0,
-            "superRare": 0,
-            "ultraRare": 0,
-            "epic": 0,
-            "legendary": 0
-        },
-        {
-            "common": 50,
-            "uncommon": 0,
-            "rare": 0,
-            "superRare": 0,
-            "ultraRare": 30,
-            "epic": 10,
-            "legendary": 20
+            "legendary": 100
         }
     ]
 }
