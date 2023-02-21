@@ -1,0 +1,49 @@
+{
+    "rq": 88,
+    "make": "Lamborghini",
+    "model": "Huracan Tecnica",
+    "modelYear": 2022,
+    "country": "IT",
+    "topSpeed": 202,
+    "0to60": 2.9,
+    "handling": 93,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Supercar", "The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 1574,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 93.55,
+    "ola": 93.1,
+    "description": "Huracan that combines EVO and STO in one car.",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1064590564915425420/Lamborghini_Huracan_Tecnica_2022.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1064590593877086370/Lamborghini_Huracan_Tecnica.png",
+    "creator": "Crossfire",
+
+    "333TopSpeed": 205, 
+    "3330to60": 2.8, 
+    "333Handling": 96,
+
+    "666TopSpeed": 207, 
+    "6660to60": 2.6, 
+    "666Handling": 99,
+
+    "996TopSpeed": 210, 
+    "9960to60": 2.5, 
+    "996Handling": 99,
+
+    "969TopSpeed": 210, 
+    "9690to60": 2.6, 
+    "969Handling": 103,
+
+    "699TopSpeed": 207, 
+    "6990to60": 2.5, 
+    "699Handling": 103
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 49,
+    "make": "Porsche",
+    "model": "911 2.0 Monte Carlo Rally",
+    "modelYear": 1965,
+    "country": "DE",
+    "topSpeed": 132,
+    "0to60": 7.8,
+    "handling": 70,
+    "driveType": "RWD",
+    "tyreType": "Off-Road",
+    "tags": ["The Tyrol Tour: Remix","Unique","Ultra Expensive","Street Racer"],
+    "isPrize": false,
+	
+    "weight": 1080,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 58.64,
+    "ola": 79.48,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1077342853233131690/901911Monte1965.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1077345731481964615/901911MonteCArlo.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 136,
+"3330to60": 7.4,
+"333Handling": 72,
+
+"666TopSpeed": 140,
+"6660to60": 7,
+"666Handling": 75,
+
+"699TopSpeed": 140,
+"6990to60": 6.6,
+"699Handling": 78,
+
+"969TopSpeed": 144,
+"9690to60": 7,
+"969Handling": 78,
+
+"996TopSpeed": 144,
+"9960to60": 6.6,
+"996Handling": 75
+}

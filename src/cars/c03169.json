@@ -1,0 +1,57 @@
+{
+	"rq": 96,
+    "make": ["Mercedes-Benz", "Sauber"],
+    "model": "C11",
+    "modelYear": 1990,
+    "country": "DE",
+    "topSpeed": 249,
+    "0to60": 2.7,
+    "handling": 97,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport", "Ultra Expensive", "Unique","The Tyrol Tour: Remix"],
+    "isPrize": true,
+
+
+    "weight": 905,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 125,
+    "ola": 110,
+    "description": "Dominantly won the sports prototype championship in 1990.",
+
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1060662213020487730/Mercedes_C11_Cloned.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1060670715755511958/Mercedes-Benz_C11_Hud.png",
+    "creator": "Sutzi",
+
+
+    "333TopSpeed": 251,
+    "3330to60": 2.6,
+    "333Handling": 100,
+
+
+    "666TopSpeed": 253,
+    "6660to60": 2.4,
+    "666Handling": 103,
+
+
+    "996TopSpeed": 255,
+    "9960to60": 2.3,
+    "996Handling": 103,
+
+
+    "969TopSpeed": 255,
+    "9690to60": 2.4,
+    "969Handling": 108,
+
+
+    "699TopSpeed": 253,
+    "6990to60": 2.3,
+    "699Handling": 108
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 67,
+    "make": "Fiat",
+    "model": "X1/9 Gr4 Filipinetti",
+    "modelYear": 1973,
+    "country": "IT",
+    "topSpeed": 131,
+    "0to60": 6.2,
+    "handling": 81,
+    "driveType": "RWD",
+    "tyreType": "Off-Road",
+    "tags": ["The Tyrol Tour: Remix","Unique","Concept","Track Day"],
+    "isPrize": false,
+	
+    "weight": 770,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 51.2,
+    "ola": 77.23,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1077342299949903932/Filipinetti.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1077345633825992714/X19Gr4Filip.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 135,
+"3330to60": 5.9,
+"333Handling": 84,
+
+"666TopSpeed": 139,
+"6660to60": 5.6,
+"666Handling": 86,
+
+"699TopSpeed": 139,
+"6990to60": 5.3,
+"699Handling": 90,
+
+"969TopSpeed": 143,
+"9690to60": 5.6,
+"969Handling": 90,
+
+"996TopSpeed": 143,
+"9960to60": 5.3,
+"996Handling": 86
+}

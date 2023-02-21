@@ -1,0 +1,49 @@
+{
+    "rq": 61,
+    "make": "Anadol",
+    "model": "STC-16 Rally Car",
+    "modelYear": 1974,
+    "country": "TR",
+    "topSpeed": 115,
+    "0to60": 6.2,
+    "handling": 73,
+    "driveType": "RWD",
+    "tyreType": "Off-Road",
+    "tags": ["The Tyrol Tour: Remix","Motorsport","Unique"],
+    "isPrize": false,
+	
+    "weight": 800,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 50.45,
+    "ola": 69.33,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1077341858692354098/AnadolSYC16Rally.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1077345539793887292/anadolSTC16Rally.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 120,
+"3330to60": 5.9,
+"333Handling": 75,
+
+"666TopSpeed": 124,
+"6660to60": 5.6,
+"666Handling": 78,
+
+"699TopSpeed": 124,
+"6990to60": 5.3,
+"699Handling": 81,
+
+"969TopSpeed": 129,
+"9690to60": 5.6,
+"969Handling": 81,
+
+"996TopSpeed": 129,
+"9960to60": 5.3,
+"996Handling": 78
+}

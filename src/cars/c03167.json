@@ -1,0 +1,49 @@
+{
+    "rq": 60,
+    "make": "Maserati",
+    "model": "GranTurismo Automatic",
+    "modelYear": 2009,
+    "country": "IT",
+    "topSpeed": 181,
+    "0to60": 5.0,
+    "handling": 86,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Grand Tourer", "The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 1910,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 69,
+    "ola": 73.33,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1061643802214936658/GranTurismoSauto.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1061644102795534346/GranturismoSAuto.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 184, 
+"3330to60": 4.8, 
+"333Handling": 89,
+
+"666TopSpeed": 187, 
+"6660to60": 4.5, 
+"666Handling": 92,
+
+"699TopSpeed": 187, 
+"6990to60": 4.3, 
+"699Handling": 95,
+
+"969TopSpeed": 190, 
+"9690to60": 4.5, 
+"969Handling": 95,
+
+"996TopSpeed": 190, 
+"9960to60": 4.3, 
+"996Handling": 92
+}

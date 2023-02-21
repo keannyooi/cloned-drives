@@ -1,0 +1,49 @@
+{
+    "rq": 87,
+    "make": "Maserati",
+    "model": "MCC",
+    "modelYear": 2003,
+    "country": "IT",
+    "topSpeed": 215,
+    "0to60": 3.1,
+    "handling": 96,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Concept","Unique","Motorsport","The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 1130,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 95.9,
+    "ola": 93.57,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1061644683333345380/MCC.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1061645435078455337/MCC.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 217,
+"3330to60": 2.9,
+"333Handling": 99,
+
+"666TopSpeed": 220,
+"6660to60": 2.8,
+"666Handling": 102,
+
+"699TopSpeed": 220,
+"6990to60": 2.6,
+"699Handling": 107,
+
+"969TopSpeed": 222,
+"9690to60": 2.8,
+"969Handling": 107,
+
+"996TopSpeed": 222,
+"9960to60": 2.6,
+"996Handling": 102
+}

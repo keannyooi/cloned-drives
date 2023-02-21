@@ -1,0 +1,49 @@
+{
+    "rq": 68,
+    "make": "BMW",
+    "model": "430i xDrive",
+    "modelYear": 2016,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 5.5,
+    "handling": 80,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 1598,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 67.9,
+    "ola": 76.36,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1077343012646027324/430ixdrive.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1077345752499622029/BMW430ixDrive2016.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 158,
+"3330to60": 5.2,
+"333Handling": 83,
+
+"666TopSpeed": 162,
+"6660to60": 5.0,
+"666Handling": 85,
+
+"699TopSpeed": 162,
+"6990to60": 4.7,
+"699Handling": 89,
+
+"969TopSpeed": 165,
+"9690to60": 5.0,
+"969Handling": 89,
+
+"996TopSpeed": 165,
+"9960to60": 4.7,
+"996Handling": 85
+}

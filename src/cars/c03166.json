@@ -1,0 +1,49 @@
+{
+    "rq": 64,
+    "make": "Maserati",
+    "model": "GranCabrio MC",
+    "modelYear": 2013,
+    "country": "IT",
+    "topSpeed": 180,
+    "0to60": 4.6,
+    "handling": 87,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Grand Tourer","The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 1912,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 79.41,
+    "ola": 82.36,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1061643906321756271/GrancabrioMC.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1061644193769984010/GranCabrioMC.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 183, 
+"3330to60": 4.4, 
+"333Handling": 90,
+
+"666TopSpeed": 186, 
+"6660to60": 4.1, 
+"666Handling": 93,
+
+"699TopSpeed": 186, 
+"6990to60": 3.9, 
+"699Handling": 97,
+
+"969TopSpeed": 189, 
+"9690to60": 4.1, 
+"969Handling": 97,
+
+"996TopSpeed": 189, 
+"9960to60": 3.9, 
+"996Handling": 93
+}

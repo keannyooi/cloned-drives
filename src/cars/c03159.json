@@ -1,0 +1,52 @@
+{
+    "rq": 27,
+    "make": ["Artz", "Volkswagen"],
+    "model": "Golf",
+    "modelYear": 1979,
+    "country": "DE",
+    "topSpeed": 143,
+    "0to60": 7.3,
+    "handling": 73,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch", "Tuner", "Oddity", "Unique", "The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+
+    "weight": 1590,
+    "gc": "Low",
+    "seatCount":2,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 64.60,
+    "ola": 83.29,
+    "description": "Artz created a puzzle on four wheels: Is it a Mk1 Volkswagen Golf or Porsche 928?",
+
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/931544875315363870/ArtzGolf928.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1052687625129037824/ArtzGolf928.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 147,
+    "3330to60": 6.9,
+    "333Handling": 75,
+
+    "666TopSpeed": 150,
+    "6660to60": 6.6, 
+    "666Handling": 78,
+
+    "996TopSpeed": 154,
+    "9960to60": 6.2,
+    "996Handling": 78,
+
+    "969TopSpeed": 154,
+    "9690to60": 6.6,
+    "969Handling": 81,
+
+    "699TopSpeed": 150,
+    "6990to60": 6.2,
+    "699Handling": 81
+}

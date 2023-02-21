@@ -1,0 +1,49 @@
+{
+    "rq": 51,
+    "make": "Porsche",
+    "model": "968 Club Sport",
+    "modelYear": 1993,
+    "country": "DE",
+    "topSpeed": 162,
+    "0to60": 5.6,
+    "handling": 81,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 1320,
+    "gc": "Loe",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 76.25,
+    "ola": 75,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1077342715961933874/968ClubSport.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1077345683293610014/968ClubSport.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 165,
+"3330to60": 5.3,
+"333Handling": 84,
+
+"666TopSpeed": 168,
+"6660to60": 5.0,
+"666Handling": 86,
+
+"699TopSpeed": 168,
+"6990to60": 4.8,
+"699Handling": 90,
+
+"969TopSpeed": 172,
+"9690to60": 5.0,
+"969Handling": 90,
+
+"996TopSpeed": 172,
+"9960to60": 4.8,
+"996Handling": 86
+}
