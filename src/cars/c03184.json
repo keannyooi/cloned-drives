@@ -1,0 +1,49 @@
+{
+    "rq": 33,
+    "make": "Dodge",
+    "model": "Dart SXT 2.4",
+    "modelYear": 2013,
+    "country": "US",
+    "topSpeed": 127,
+    "0to60": 8.2,
+    "handling": 75,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Americas Assault"],
+    "isPrize": false,
+    
+    "weight": 1471,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 57.34,
+    "ola": 68.78,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1060669001262440599/Dodge_Dart_SXT_2.4.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1060669489043218533/Dodge_Dart_SXT_2.4_Hudder.png",
+    "creator": "Biszkoptowiec",
+
+    "333TopSpeed": 131,
+    "3330to60": 7.8,
+    "333Handling": 77,
+
+    "666TopSpeed": 135,
+    "6660to60": 7.4,
+    "666Handling": 80,
+
+    "996TopSpeed": 139,
+    "9960to60": 7.0,
+    "996Handling": 80,
+
+    "969TopSpeed": 139,
+    "9690to60": 7.4,
+    "969Handling": 83,
+
+    "699TopSpeed": 135,
+    "6990to60": 7.0,
+    "699Handling": 83
+}

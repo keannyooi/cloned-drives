@@ -1,0 +1,49 @@
+{
+    "rq": 34,
+    "make": "Aston Martin",
+    "model": "DB4",
+    "modelYear": 1958,
+    "country": "GB",
+    "topSpeed": 140,
+    "0to60": 8.7,
+    "handling": 69,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Midlands Cruise", "Grand Tourer"],
+    "isPrize": false,
+	
+    "weight": 1321,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 75,
+    "ola": 91.95,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1077964565498843227/DB4.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1077965536035618846/DB4.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 144,
+"3330to60": 8.3,
+"333Handling": 71,
+
+"666TopSpeed": 147,
+"6660to60": 7.8,
+"666Handling": 74,
+
+"699TopSpeed": 147,
+"6990to60": 7.4,
+"699Handling": 77,
+
+"969TopSpeed": 151,
+"9690to60": 7.8,
+"969Handling": 77,
+
+"996TopSpeed": 151,
+"9960to60": 7.4,
+"996Handling": 74
+}

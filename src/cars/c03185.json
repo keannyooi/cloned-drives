@@ -1,0 +1,49 @@
+{
+    "rq": 88,
+    "make": "Drako",
+    "model": "GTE",
+    "modelYear": 2020,
+    "country": "US",
+    "topSpeed": 206,
+    "0to60": 2.9,
+    "handling": 89,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["The Americas Assault", "Eco-Friendly", "Super Sedan"],
+    "isPrize": false,
+	
+    "weight": 2404,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 90.65,
+    "ola": 82.75,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1077965161341657088/DrakoGTE.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1077965628440334377/DrakoGTE.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 209,
+"3330to60": 2.8,
+"333Handling": 92,
+
+"666TopSpeed": 211,
+"6660to60": 2.6,
+"666Handling": 95,
+
+"699TopSpeed": 211,
+"6990to60": 2.5,
+"699Handling": 99,
+
+"969TopSpeed": 214,
+"9690to60": 2.6,
+"969Handling": 99,
+
+"996TopSpeed": 214,
+"9960to60": 2.5,
+"996Handling": 95
+}

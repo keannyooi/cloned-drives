@@ -1,0 +1,49 @@
+{
+    "rq": 6,
+    "make": ["Prince", "Nissan"],
+    "model": "Skyline 1500 Estate W50",
+    "modelYear": 1965,
+    "country": "JP",
+    "topSpeed": 81,
+    "0to60": 18.1,
+    "handling": 57,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Amplification of Asia"],
+    "isPrize": false,
+	
+    "weight": 1050,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 9.23,
+    "ola": 57.45,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1077965362324328458/skyline1500wagonw50.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1077965670446272673/Skyline1500EstateW50.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 87,
+"3330to60": 17.2,
+"333Handling": 59,
+
+"666TopSpeed": 94,
+"6660to60": 16.3,
+"666Handling": 61,
+
+"699TopSpeed": 94,
+"6990to60": 15.4,
+"699Handling": 63,
+
+"969TopSpeed": 100,
+"9690to60": 16.3,
+"969Handling": 63,
+
+"996TopSpeed": 100,
+"9960to60": 15.4,
+"996Handling": 61
+}

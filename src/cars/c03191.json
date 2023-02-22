@@ -1,0 +1,50 @@
+{
+    "rq": 18,
+    "make": "Opel",
+    "model": "Agila 1.2 16V Essentia",
+    "modelYear": 2000,
+    "country": "DE",
+    "topSpeed": 99,
+    "0to60": 13.6,
+    "handling": 65,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+
+    "weight": 1010,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatch",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 17.42,
+    "ola": 60.29,
+    "description": "Generic box with one more cylinder",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1061259345104490586/F.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1061260287786889276/Agila12.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 103,
+    "3330to60": 12.9,
+    "333Handling": 67,
+
+    "666TopSpeed": 109,
+    "6660to60": 12.2, 
+    "666Handling": 69,
+
+    "996TopSpeed": 114,
+    "9960to60": 11.6,
+    "996Handling": 69,
+
+    "969TopSpeed": 114,
+    "9690to60": 12.2,
+    "969Handling": 72,
+
+    "699TopSpeed": 109,
+    "6990to60": 11.6,
+    "699Handling": 72
+}

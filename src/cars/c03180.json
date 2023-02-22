@@ -1,0 +1,49 @@
+{
+    "rq": 1,
+    "make": ["Aston-Martin", "Aston Martin"],
+    "model": "15/98 2 Door Tourer",
+    "modelYear": 1936,
+    "country": "GB",
+    "topSpeed": 80,
+    "0to60": 19.5,
+    "handling": 52,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Midlands Cruise", "Grand Tourer"],
+    "isPrize": false,
+	
+    "weight": 1117,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 11.23,
+    "ola": 69.32,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1077964886681849856/15-98_Tourer.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1077965577764745227/15-98_Tourer.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 87,
+"3330to60": 18.5,
+"333Handling": 54,
+
+"666TopSpeed": 93,
+"6660to60": 17.6,
+"666Handling": 55,
+
+"699TopSpeed": 93,
+"6990to60": 16.6,
+"699Handling": 58,
+
+"969TopSpeed": 100,
+"9690to60": 17.6,
+"969Handling": 58,
+
+"996TopSpeed": 100,
+"9960to60": 16.6,
+"996Handling": 55
+}

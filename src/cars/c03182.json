@@ -1,0 +1,49 @@
+{
+    "rq": 82,
+    "make": "BMW",
+    "model": "iX xDrive50",
+    "modelYear": 2021,
+    "country": "DE",
+    "topSpeed": 124,
+    "0to60": 4.2,
+    "handling": 77,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Eco-Friendly", "The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 2568,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 77.7,
+    "ola": 100.06,
+    "description": "Shockingly ugly that got its name among the ugliest cars every made.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1077631983422799902/BMW_iX_xDrive50.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1077631993816305714/BMW_iX_xDrive50.png",
+    "creator": "Crossfire",
+
+    "333TopSpeed": 128, 
+    "3330to60": 4.0, 
+    "333Handling": 80,
+
+    "666TopSpeed": 132, 
+    "6660to60": 3.8, 
+    "666Handling": 82,
+
+    "996TopSpeed": 137, 
+    "9960to60": 3.6, 
+    "996Handling": 82,
+
+    "969TopSpeed": 137, 
+    "9690to60": 3.8, 
+    "969Handling": 85,
+
+    "699TopSpeed": 132, 
+    "6990to60": 3.6, 
+    "699Handling": 85
+}
