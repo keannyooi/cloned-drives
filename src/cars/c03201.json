@@ -1,0 +1,49 @@
+{
+    "rq": 59,
+    "make": "Infiniti",
+    "model": "FX50 S AWD",
+    "modelYear": 2008,
+    "country": "JP",
+    "topSpeed": 155,
+    "0to60": 5.4,
+    "handling": 79,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["The Amplification of Asia"],
+    "isPrize": false,
+	
+    "weight": 2109,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.67,
+    "ola": 83.33,
+    "description": "None",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1064622133885550642/Infiniti_FX50_S_AWD.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1064622222548942908/Infiniti_FX50_S.png",
+    "creator": "Crossfire",
+
+    "333TopSpeed": 158, 
+    "3330to60": 5.1, 
+    "333Handling": 82,
+
+    "666TopSpeed": 162, 
+    "6660to60": 4.9, 
+    "666Handling": 84,
+
+    "996TopSpeed": 165, 
+    "9960to60": 4.6, 
+    "996Handling": 84,
+
+    "969TopSpeed": 165, 
+    "9690to60": 4.9, 
+    "969Handling": 88,
+
+    "699TopSpeed": 162, 
+    "6990to60": 4.6, 
+    "699Handling": 88
+}

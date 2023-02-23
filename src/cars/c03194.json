@@ -1,0 +1,49 @@
+{
+    "rq": 47,
+    "make": "Chrysler",
+    "model": "Crossfire Concept",
+    "modelYear": 2001,
+    "country": "US",
+    "topSpeed": 148,
+    "0to60": 5.8,
+    "handling": 82,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Americas Assault", "Concept", "Unique"],
+    "isPrize": false,
+	
+    "weight": 1315,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 56.86,
+    "ola": 89.65,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1077987009907404800/crossfireconcept.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1077987658048995428/crossfireconcept.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 152,
+"3330to60": 5.5,
+"333Handling": 85,
+
+"666TopSpeed": 155,
+"6660to60": 5.2,
+"666Handling": 87,
+
+"699TopSpeed": 155,
+"6990to60": 4.9,
+"699Handling": 91,
+
+"969TopSpeed": 159,
+"9690to60": 5.2,
+"969Handling": 91,
+
+"996TopSpeed": 159,
+"9960to60": 4.9,
+"996Handling": 87
+}

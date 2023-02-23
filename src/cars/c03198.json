@@ -1,0 +1,52 @@
+{
+    "rq": 14,
+    "make": "Fiat",
+    "model": " 500 1.0 Hybrid Cult",
+    "modelYear": 2020,
+    "country": "IT",
+    "topSpeed": 101,
+    "0to60": 14.6,
+    "handling": 70,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly","The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+
+    "weight": 980,
+    "gc": "Low",
+    "seatCount":4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 19.21,
+    "ola": 53.42,
+    "description": "Just nod and smile. Card by Andu.",
+
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1051617334042820648/50010HYCult.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1051615548972216340/500Hy.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 106,
+    "3330to60": 13.9,
+    "333Handling": 72,
+
+    "666TopSpeed": 111,
+    "6660to60": 13.1,
+    "666Handling": 75,
+
+    "699TopSpeed": 111,
+    "6990to60": 12.4,
+    "699Handling": 78,
+
+    "969TopSpeed": 116,
+    "9690to60": 13.1,
+    "969Handling": 78,
+
+    "996TopSpeed": 116,
+    "9960to60": 12.4,
+    "996Handling": 75
+}

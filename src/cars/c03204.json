@@ -1,0 +1,57 @@
+{
+    "rq": 89,
+    "make": ["Sauber", "Mercedes-Benz"],
+    "model": "C8",
+    "modelYear": 1985,
+    "country": "CH",
+    "topSpeed": 230,
+    "0to60": 3.1,
+    "handling": 96,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport", "Unique", "Ultra Expensive","The Tyrol Tour: Remix", "Rest of The World"],
+    "isPrize": false,
+
+
+    "weight": 870,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 112.88,
+    "ola": 109.5,
+    "description": "The first Group C car made together by Sauber and Mercedes.",
+
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1060662084435705856/Sauber_C8_Cloned.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1060670542249734234/Sauber_C8_Hud.png",
+    "creator": "Sutzi",
+
+
+    "333TopSpeed": 232,
+    "3330to60": 2.9,
+    "333Handling": 99,
+
+
+    "666TopSpeed": 235,
+    "6660to60": 2.8,
+    "666Handling": 102,
+
+
+    "996TopSpeed": 237,
+    "9960to60": 2.6,
+    "996Handling": 102,
+
+
+    "969TopSpeed": 237,
+    "9690to60": 2.8,
+    "969Handling": 107,
+
+
+    "699TopSpeed": 235,
+    "6990to60": 2.6,
+    "699Handling": 107
+}

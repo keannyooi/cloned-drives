@@ -1,0 +1,49 @@
+{
+    "rq": 68,
+    "make": "Maserati",
+    "model": "GranTurismo MC Stradale",
+    "modelYear": 2011,
+    "country": "IT",
+    "topSpeed": 187,
+    "0to60": 4.4,
+    "handling": 88,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Grand Tourer","The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 1770,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 80,
+    "ola": 80,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1061643833126948974/GranTurismoMCS.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1061644122190008420/GranturismoMCS.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 190, 
+"3330to60": 4.2, 
+"333Handling": 91,
+
+"666TopSpeed": 193, 
+"6660to60": 4.0, 
+"666Handling": 94,
+
+"699TopSpeed": 193, 
+"6990to60": 3.7, 
+"699Handling": 98,
+
+"969TopSpeed": 195, 
+"9690to60": 4.0, 
+"969Handling": 98,
+
+"996TopSpeed": 195, 
+"9960to60": 3.7, 
+"996Handling": 94
+}

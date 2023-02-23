@@ -1,0 +1,49 @@
+{
+    "rq": 36,
+    "make": "Dodge",
+    "model": "Dart Rallye 1.4T",
+    "modelYear": 2013,
+    "country": "US",
+    "topSpeed": 119,
+    "0to60": 8.0,
+    "handling": 78,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Americas Assault"],
+    "isPrize": false,
+    
+    "weight": 1486,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 57.97,
+    "ola": 67.25,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1060669168195739768/Dodge_Dart_Rallye_1.4T.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1060669612250902559/Dodge_Dart_Rallye_1.4T_Hudder.png",
+    "creator": "Biszkoptowiec",
+
+    "333TopSpeed": 123,
+    "3330to60": 7.6,
+    "333Handling": 81,
+
+    "666TopSpeed": 128,
+    "6660to60": 7.2,
+    "666Handling": 83,
+
+    "996TopSpeed": 132,
+    "9960to60": 6.8,
+    "996Handling": 83,
+
+    "969TopSpeed": 132,
+    "9690to60": 7.2,
+    "969Handling": 87,
+
+    "699TopSpeed": 128,
+    "6990to60": 6.8,
+    "699Handling": 87
+}

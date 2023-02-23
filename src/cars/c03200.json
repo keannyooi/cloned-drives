@@ -1,0 +1,52 @@
+{
+    "rq": 13,
+    "make": "Fiat",
+    "model": "500C 1.0 Hybrid Launch Edition",
+    "modelYear": 2020,
+    "country": "IT",
+    "topSpeed": 104,
+    "0to60": 14.7,
+    "handling": 70,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly","The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+
+    "weight": 1057,
+    "gc": "Low",
+    "seatCount":4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 10.34,
+    "ola": 53.06,
+    "description": "New decade, new engine. Card by Andu.",
+
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1051617236772728832/500C10HYBRID.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1051615467426562080/500CHy.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 109,
+    "3330to60": 14,
+    "333Handling": 72,
+
+    "666TopSpeed": 114,
+    "6660to60": 13.2,
+    "666Handling": 75,
+
+    "699TopSpeed": 114,
+    "6990to60": 12.5,
+    "699Handling": 78,
+
+    "969TopSpeed": 119,
+    "9690to60": 13.2,
+    "969Handling": 78,
+
+    "996TopSpeed": 119,
+    "9960to60": 12.5,
+    "996Handling": 75
+}

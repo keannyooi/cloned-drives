@@ -1,0 +1,49 @@
+{
+    "rq": 89,
+    "make": "Maserati",
+    "model": "Birdcage 75th Concept",
+    "modelYear": 2005,
+    "country": "IT",
+    "topSpeed": 233,
+    "0to60": 3.2,
+    "handling": 93,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Concept","Ultra Expensive","Unique","Track Day","The Tyrol Tour: Remix"],
+    "isPrize": true,
+	
+    "weight": 1500,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 100,
+    "ola": 90,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1061644612592226365/Birdcage.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1061645375892639774/birdcage.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 235,
+"3330to60": 3.0,
+"333Handling": 96,
+
+"666TopSpeed": 237,
+"6660to60": 2.9,
+"666Handling": 99,
+
+"699TopSpeed": 237,
+"6990to60": 2.7,
+"699Handling": 103,
+
+"969TopSpeed": 240,
+"9690to60": 2.9,
+"969Handling": 103,
+
+"996TopSpeed": 240,
+"9960to60": 2.7,
+"996Handling": 99
+}
