@@ -1,0 +1,49 @@
+{
+    "rq": 25,
+    "make": "Morgan",
+    "model": "EV3",
+    "modelYear": 2016,
+    "country": "GB",
+    "topSpeed": 90,
+    "0to60": 8.7,
+    "handling": 68,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Oddity", "Unique", "Eco-Friendly", "The Midlands Cruise"],
+    "isPrize": false,
+	
+    "weight": 450,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 13.33,
+    "ola": 75,
+    "description": "None.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1077987201087963207/MorganEV3.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1077987710972727346/morganev3.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 96, 
+"3330to60": 8.3, 
+"333Handling": 70,
+
+"666TopSpeed": 102, 
+"6660to60": 7.8, 
+"666Handling": 72,
+
+"699TopSpeed": 102, 
+"6990to60": 7.4, 
+"699Handling": 75,
+
+"969TopSpeed": 107, 
+"9690to60": 7.8, 
+"969Handling": 75,
+
+"996TopSpeed": 107, 
+"9960to60": 7.4, 
+"996Handling": 72
+}

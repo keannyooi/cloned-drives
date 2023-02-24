@@ -1,0 +1,52 @@
+{
+    "rq": 17,
+    "make": "Fiat",
+    "model": "500C 1.2 Pop",
+    "modelYear": 2009,
+    "country": "IT",
+    "topSpeed": 100,
+    "0to60": 12.7,
+    "handling": 72,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+
+    "weight": 1112,
+    "gc": "Low",
+    "seatCount":4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 16.43,
+    "ola": 61.42,
+    "description": "Pop Pop Pop Pop Pop. Card by Andu.",
+
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1051617203356708906/500C12Pop.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1051615431456202752/500C12Pop.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 105,
+    "3330to60": 12.1,
+    "333Handling": 74,
+
+    "666TopSpeed": 110,
+    "6660to60": 11.4, 
+    "666Handling": 77,
+
+    "996TopSpeed": 116,
+    "9960to60": 10.8,
+    "996Handling": 77,
+
+    "969TopSpeed": 116,
+    "9690to60": 11.4,
+    "969Handling": 80,
+
+    "699TopSpeed": 110,
+    "6990to60": 10.8,
+    "699Handling": 80
+}

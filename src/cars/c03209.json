@@ -1,0 +1,49 @@
+{
+    "rq": 98,
+    "make": ["Edo Competition", "Ferrari"],
+    "model": "ZXX Evolution",
+    "modelYear": 2012,
+    "country": "DE",
+    "topSpeed": 241,
+    "0to60": 2.5,
+    "handling": 95,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix","Ultra Expensive","Tuner","Unique","Supercar","Track Day"],
+    "isPrize": true,
+	
+    "weight": 1155,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 109.8,
+    "ola": 87,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1061645119536762951/EdoZXXEvolution.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1061645754806050816/EdoZXXEvo.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 243,
+"3330to60": 2.4,
+"333Handling": 98,
+
+"666TopSpeed": 245,
+"6660to60": 2.3,
+"666Handling": 101,
+
+"699TopSpeed": 245,
+"6990to60": 2.1,
+"699Handling": 105,
+
+"969TopSpeed": 247,
+"9690to60": 2.3,
+"969Handling": 105,
+
+"996TopSpeed": 247,
+"9960to60": 2.1,
+"996Handling": 101
+}

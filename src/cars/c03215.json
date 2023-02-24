@@ -1,0 +1,49 @@
+{
+    "rq": 89,
+    "make": "Maserati",
+    "model": "MC12 Versione Corsa",
+    "modelYear": 2006,
+    "country": "IT",
+    "topSpeed": 203,
+    "0to60": 3.0,
+    "handling": 96,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport","Unique","Ultra Expensive","The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 1150,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 98.1,
+    "ola": 87.29,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1061644719433728101/MC12VersioneCorsa.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1061645463847178303/MC12VC.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 206,
+"3330to60": 2.8,
+"333Handling": 99,
+
+"666TopSpeed": 208,
+"6660to60": 2.7,
+"666Handling": 102,
+
+"699TopSpeed": 208,
+"6990to60": 2.5,
+"699Handling": 107,
+
+"969TopSpeed": 211,
+"9690to60": 2.7,
+"969Handling": 107,
+
+"996TopSpeed": 211,
+"9960to60": 2.5,
+"996Handling": 102
+}
