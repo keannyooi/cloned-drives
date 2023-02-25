@@ -1,0 +1,52 @@
+{
+    "rq": 11,
+    "make": "Volkswagen",
+    "model": "Rabbit Diesel",
+    "modelYear": 1977,
+    "country": "DE",
+    "topSpeed": 85,
+    "0to60": 17.6,
+    "handling": 63,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+
+    "weight": 822,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 8.31,
+    "ola": 51.14,
+    "description": "Who knew Rabbits drank diesel back then.",
+
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/931544007404843049/RabbitDiesel.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1052688459694866592/RabbitDiesel.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 91,
+    "3330to60": 16.7,
+    "333Handling": 65,
+
+    "666TopSpeed": 97,
+    "6660to60": 15.8, 
+    "666Handling": 67,
+
+    "996TopSpeed": 103,
+    "9960to60": 15.0,
+    "996Handling": 67,
+
+    "969TopSpeed": 103,
+    "9690to60": 15.8,
+    "969Handling": 70,
+
+    "699TopSpeed": 97,
+    "6990to60": 15.0,
+    "699Handling": 70
+}

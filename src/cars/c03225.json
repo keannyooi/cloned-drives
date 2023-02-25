@@ -1,0 +1,52 @@
+{
+    "rq": 46,
+    "make": ["Nothelle","Volkswagen"],
+    "model": "Golf Group 2",
+    "modelYear": 1975,
+    "country": "DE",
+    "topSpeed": 131,
+    "0to60": 5.7,
+    "handling": 79,
+    "driveType": "FWD",
+    "tyreType": "Slick",
+    "tags": ["Hot Hatch", "Tuner", "Unique","The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+
+    "weight": 750,
+    "gc": "Low",
+    "seatCount":1,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 72.15,
+    "ola": 82.36,
+    "description": "The world first racing Golf with known racing history from new.",
+
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/931545049987170334/NothelleGroup2.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1052688311610789970/NothelleGolfGr2.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 135,
+    "3330to60": 5.4,
+    "333Handling": 82,
+
+    "666TopSpeed": 139,
+    "6660to60": 5.1, 
+    "666Handling": 84,
+
+    "996TopSpeed": 143,
+    "9960to60": 4.8,
+    "996Handling": 84,
+
+    "969TopSpeed": 143,
+    "9690to60": 5.1,
+    "969Handling": 88,
+
+    "699TopSpeed": 139,
+    "6990to60": 4.8,
+    "699Handling": 88
+}

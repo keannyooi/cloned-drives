@@ -1,0 +1,52 @@
+{
+    "rq": 14,
+    "make": "Volkswagen",
+    "model": "Golf 1100 GL",
+    "modelYear": 1982,
+    "country": "DE",
+    "topSpeed": 90,
+    "0to60": 15.7,
+    "handling": 64,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+
+    "weight": 820,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 10.01,
+    "ola": 58.15,
+    "description": "First facelift brings the mk1 in the 80s.",
+
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/931544214439870504/Golf1100GL.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1052687824211685487/Golf1100GL.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 96,
+    "3330to60": 14.9,
+    "333Handling": 66,
+
+    "666TopSpeed": 102,
+    "6660to60": 14.1, 
+    "666Handling": 68,
+
+    "996TopSpeed": 107,
+    "9960to60": 13.3,
+    "996Handling": 68,
+
+    "969TopSpeed": 107,
+    "9690to60": 14.1,
+    "969Handling": 71,
+
+    "699TopSpeed": 102,
+    "6990to60": 13.3,
+    "699Handling": 71
+}

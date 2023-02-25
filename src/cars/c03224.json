@@ -1,0 +1,50 @@
+{
+    "rq": 31,
+    "make": ["Nothelle", "Audi"],
+    "model": "50 Group 2",
+    "modelYear": 1975,
+    "country": "DE",
+    "topSpeed": 120,
+    "0to60": 7.2,
+    "handling": 77,
+    "driveType": "FWD",
+    "tyreType": "Slick",
+    "tags": ["Track Day", "Year of the Rabbit", "Tuner","The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+
+    "weight": 700,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Hatch",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 60.50,
+    "ola": 69.44,
+    "description": "A number of fifties were modified to race in Group 2 class by tuning house Nothelle.",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1055846722301087765/D.Nothelle50Gr2.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1055847784433070182/Nothelle50.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 124,
+    "3330to60": 6.8,
+    "333Handling": 80,
+
+    "666TopSpeed": 129,
+    "6660to60": 6.5, 
+    "666Handling": 82,
+
+    "996TopSpeed": 133,
+    "9960to60": 6.1,
+    "996Handling": 82,
+
+    "969TopSpeed": 133,
+    "9690to60": 6.5,
+    "969Handling": 85,
+
+    "699TopSpeed": 129,
+    "6990to60": 6.1,
+    "699Handling": 85
+}

@@ -1,0 +1,52 @@
+{
+    "rq": 44,
+    "make": ["Sbarro", "Volkswagen"],
+    "model": "Golf",
+    "modelYear": 1983,
+    "country": "CH",
+    "topSpeed": 162,
+    "0to60": 5.9,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch", "Tuner", "Oddity", "Unique", "Rest of The World","The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+
+    "weight": 1100,
+    "gc": "Low",
+    "seatCount":2,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 81.94,
+    "ola": 84.75,
+    "description": "You know the 80s were crazy when this exists.",
+
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/931544823406661662/SbarroTurbo.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1052688584995520602/SbarroGolfTurbo.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 165,
+    "3330to60": 5.6,
+    "333Handling": 77,
+
+    "666TopSpeed": 168,
+    "6660to60": 5.3, 
+    "666Handling": 80,
+
+    "996TopSpeed": 172,
+    "9960to60": 5.0,
+    "996Handling": 80,
+
+    "969TopSpeed": 172,
+    "9690to60": 5.3,
+    "969Handling": 83,
+
+    "699TopSpeed": 168,
+    "6990to60": 5.0,
+    "699Handling": 83
+}

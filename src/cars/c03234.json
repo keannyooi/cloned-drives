@@ -1,0 +1,52 @@
+{
+    "rq": 1,
+    "make": "Volkswagen",
+    "model": "Golf CitySTROMer",
+    "modelYear": 1980,
+    "country": "DE",
+    "topSpeed": 44,
+    "0to60": 99.9,
+    "handling": 49,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly","Unique","The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+
+    "weight": 1300,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 0.00,
+    "ola": 15.32,
+    "description": "Teslas can only wish to be this fast.",
+
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/931544488256602122/Citystromer1.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1052687723166699571/CitiStromermk1.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 53,
+    "3330to60": 99.9,
+    "333Handling": 51,
+
+    "666TopSpeed": 61,
+    "6660to60": 58.9, 
+    "666Handling": 52,
+
+    "996TopSpeed": 70,
+    "9960to60": 55.8,
+    "996Handling": 52,
+
+    "969TopSpeed": 70,
+    "9690to60": 58.9,
+    "969Handling": 54,
+
+    "699TopSpeed": 61,
+    "6990to60": 55.8,
+    "699Handling": 54
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 46,
+    "make": "Hyundai",
+    "model": "Sonata Limited",
+    "modelYear": 2006,
+    "country": "KR",
+    "topSpeed": 144,
+    "0to60": 6.7,
+    "handling": 70,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Rest of The World","The Amplification of Asia"],
+    "isPrize": false,
+	
+    "weight": 1607,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 62.04,
+    "ola": 68.66,
+    "description": "Infamous for the time a guy from Arizona rented one of these and hit 150 mph on the way to the airport.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1078758912947400825/sonata.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1078758955804798976/SonataLimited.png",
+    "creator": "McNuggets",
+
+"333TopSpeed": 148,
+"3330to60": 6.4,
+"333Handling": 72,
+
+"666TopSpeed": 151,
+"6660to60": 6,
+"666Handling": 75,
+
+"699TopSpeed": 151,
+"6990to60": 5.7,
+"699Handling": 78,
+
+"969TopSpeed": 155,
+"9690to60": 6,
+"969Handling": 78,
+
+"996TopSpeed": 155,
+"9960to60": 5.7,
+"996Handling": 75
+}

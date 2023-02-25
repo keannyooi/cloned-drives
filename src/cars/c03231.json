@@ -1,0 +1,49 @@
+{
+    "rq": 29,
+    "make": "Venucia",
+    "model": "D60EV",
+    "modelYear": 2019,
+    "country": "CN",
+    "topSpeed": 87,
+    "0to60": 11.1,
+    "handling": 77,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Amplification of Asia","Eco-Friendly","Rest of The World"],
+    "isPrize": false,
+	
+    "weight": 1520,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 9.45,
+    "ola": 66.13,
+    "description": "...",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1078750515908837396/venucia_d60ev.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1078750587404947496/Venucia_D60EV.png",
+    "creator": "Keanny",
+
+"333TopSpeed": 93,
+"3330to60": 10.5,
+"333Handling": 80,
+
+"666TopSpeed": 99,
+"6660to60": 10,
+"666Handling": 82,
+
+"699TopSpeed": 99,
+"6990to60": 9.4,
+"699Handling": 85,
+
+"969TopSpeed": 105,
+"9690to60": 10,
+"969Handling": 85,
+
+"996TopSpeed": 105,
+"9960to60": 9.4,
+"996Handling": 82
+}

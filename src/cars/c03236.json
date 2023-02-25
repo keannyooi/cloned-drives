@@ -1,0 +1,52 @@
+{
+    "rq": 22,
+    "make": "Volkswagen",
+    "model": "Golf GTI 1.8 Pirelli",
+    "modelYear": 1983,
+    "country": "DE",
+    "topSpeed": 115,
+    "0to60": 8.8,
+    "handling": 72,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch","The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+
+    "weight": 840,
+    "gc": "Low",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 47.06,
+    "ola": 65.97,
+    "description": "The iconic collab for an iconic car.",
+
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/931544723380928512/GTIPirelli.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1052688162251604068/GolfGTIPirelli.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 120,
+    "3330to60": 8.4,
+    "333Handling": 74,
+
+    "666TopSpeed": 124,
+    "6660to60": 7.9, 
+    "666Handling": 77,
+
+    "996TopSpeed": 129,
+    "9960to60": 7.5,
+    "996Handling": 77,
+
+    "969TopSpeed": 129,
+    "9690to60": 7.9,
+    "969Handling": 80,
+
+    "699TopSpeed": 124,
+    "6990to60": 7.5,
+    "699Handling": 80
+}

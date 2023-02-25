@@ -1,0 +1,52 @@
+{
+    "rq": 28,
+    "make": ["Oettinger", "Volkswagen", ],
+    "model": "Golf GTI 16S",
+    "modelYear": 1981,
+    "country": "DE",
+    "topSpeed": 128,
+    "0to60": 7.5,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch", "Tuner","The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+
+    "weight": 900,
+    "gc": "Low",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 53.57,
+    "ola": 74.67,
+    "description": "Add a little bit of spice. And a turbo.",
+
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/931544772743671849/OettingerGTI16s.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1052688217180221501/OettingerGTI16S.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 132,
+    "3330to60": 7.1,
+    "333Handling": 75,
+
+    "666TopSpeed": 136,
+    "6660to60": 6.8, 
+    "666Handling": 78,
+
+    "996TopSpeed": 140,
+    "9960to60": 6.4,
+    "996Handling": 78,
+
+    "969TopSpeed": 140,
+    "9690to60": 6.8,
+    "969Handling": 81,
+
+    "699TopSpeed": 136,
+    "6990to60": 6.4,
+    "699Handling": 81
+}

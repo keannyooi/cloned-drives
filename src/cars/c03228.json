@@ -1,0 +1,52 @@
+{
+    "rq": 30,
+    "make": ["Rinspeed", "Volkswagen"],
+    "model": "Aliporta",
+    "modelYear": 1981,
+    "country": "CH",
+    "topSpeed": 121,
+    "0to60": 7.1,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch", "Tuner", "Oddity", "Unique","Rest of The World","The Tyrol Tour: Remix"],
+    "isPrize": true,
+
+
+    "weight": 1057,
+    "gc": "Low",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 55.04,
+    "ola": 76.06,
+    "description": "Who said only Lambos can fly?",
+
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/931544926192275509/RinspeedAliporta.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1052688677639290921/RinspeedAliporta.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 125,
+    "3330to60": 6.7,
+    "333Handling": 75,
+
+    "666TopSpeed": 130,
+    "6660to60": 6.4, 
+    "666Handling": 78,
+
+    "996TopSpeed": 134,
+    "9960to60": 6.0,
+    "996Handling": 78,
+
+    "969TopSpeed": 134,
+    "9690to60": 6.4,
+    "969Handling": 81,
+
+    "699TopSpeed": 130,
+    "6990to60": 6.0,
+    "699Handling": 81
+}
