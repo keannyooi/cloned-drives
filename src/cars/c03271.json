@@ -1,0 +1,49 @@
+{
+    "rq": 82,
+    "make": "Spyker",
+    "model": "C8 Preliator Spyder",
+    "modelYear": 2017,
+    "country": "NL",
+    "topSpeed": 202,
+    "0to60": 3.8,
+    "handling": 87,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix","Rest of The World","Supercar"],
+    "isPrize": false,
+
+    "weight": 1390,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 82.45,
+    "ola": 88.88,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1078658128024977428/C8PreliatorSpyder.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1078660000160944179/SpykerPreliatorSpyder.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 205,
+"3330to60": 3.6,
+"333Handling": 90,
+
+"666TopSpeed": 207,
+"6660to60": 3.4,
+"666Handling": 93,
+
+"699TopSpeed": 207,
+"6990to60": 3.2,
+"699Handling": 97,
+
+"969TopSpeed": 210,
+"9690to60": 3.4,
+"969Handling": 97,
+
+"996TopSpeed": 210,
+"9960to60": 3.2,
+"996Handling": 93
+}

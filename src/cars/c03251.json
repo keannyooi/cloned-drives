@@ -1,0 +1,50 @@
+{
+    "rq": 12,
+    "make": "Opel",
+    "model": "Agila 1.0 12V Comfort",
+    "modelYear": 2000,
+    "country": "DE",
+    "topSpeed": 89,
+    "0to60": 17.3,
+    "handling": 64,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+
+    "weight": 990,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatch",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 13.22,
+    "ola": 53.17,
+    "description": "Generic box",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1061259140544082053/F.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1061259960492769352/Agila10.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 95,
+    "3330to60": 16.4,
+    "333Handling": 66,
+
+    "666TopSpeed": 101,
+    "6660to60": 15.6, 
+    "666Handling": 68,
+
+    "996TopSpeed": 107,
+    "9960to60": 14.7,
+    "996Handling": 68,
+
+    "969TopSpeed": 107,
+    "9690to60": 15.6,
+    "969Handling": 71,
+
+    "699TopSpeed": 101,
+    "6990to60": 14.7,
+    "699Handling": 71
+}

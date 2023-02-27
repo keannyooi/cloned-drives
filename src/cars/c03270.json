@@ -1,0 +1,49 @@
+{
+    "rq": 83,
+    "make": "Spyker",
+    "model": "C8 Preliator",
+    "modelYear": 2016,
+    "country": "NL",
+    "topSpeed": 205,
+    "0to60": 3.8,
+    "handling": 88,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix","Rest of The World","Supercar"],
+    "isPrize": false,
+
+    "weight": 1390,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 83.9,
+    "ola": 86.5,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1078658070906933248/C8Preliator.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1078659976010145853/SpykerPreliator.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 208,
+"3330to60": 3.6,
+"333Handling": 91,
+
+"666TopSpeed": 210,
+"6660to60": 3.4,
+"666Handling": 94,
+
+"699TopSpeed": 210,
+"6990to60": 3.2,
+"699Handling": 98,
+
+"969TopSpeed": 213,
+"9690to60": 3.4,
+"969Handling": 98,
+
+"996TopSpeed": 213,
+"9960to60": 3.2,
+"996Handling": 94
+}

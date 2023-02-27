@@ -1,0 +1,49 @@
+{
+    "rq": 80,
+    "make": "Spyker",
+    "model": "C8 Spyder T",
+    "modelYear": 2003,
+    "country": "NL",
+    "topSpeed": 199,
+    "0to60": 3.9,
+    "handling": 86,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix","Rest of The World","Supercar","Unique"],
+    "isPrize": false,
+
+    "weight": 1315,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 88.88,
+    "ola": 89.58,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1078657675761549373/C8SpyderT.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1078659761467314227/SpykerC8SpyderT.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 202,
+"3330to60": 3.7,
+"333Handling": 89,
+
+"666TopSpeed": 204,
+"6660to60": 3.5,
+"666Handling": 92,
+
+"699TopSpeed": 204,
+"6990to60": 3.3,
+"699Handling": 95,
+
+"969TopSpeed": 207,
+"9690to60": 3.5,
+"969Handling": 95,
+
+"996TopSpeed": 207,
+"9960to60": 3.3,
+"996Handling": 92
+}

@@ -1,0 +1,50 @@
+{
+    "rq": 70,
+    "make": "Audi",
+    "model": "Pikes Peak quattro Concept",
+    "modelYear": 2003,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 4.7,
+    "handling": 77,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Concept","The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+
+    "weight": 1901,
+    "gc": "High",
+    "seatCount": 6,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 78.33,
+    "ola": 76.59,
+    "description": "Third of the three 2003 Audi concepts which previewed the Q7.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1077314985497211060/A.AudiPikesPeak.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1077317816849539102/PikesPeak.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 158,
+    "3330to60": 4.5,
+    "333Handling": 80,
+
+    "666TopSpeed": 162,
+    "6660to60": 4.2, 
+    "666Handling": 82,
+
+    "996TopSpeed": 165,
+    "9960to60": 4.0,
+    "996Handling": 82,
+
+    "969TopSpeed": 165,
+    "9690to60": 4.2,
+    "969Handling": 85,
+
+    "699TopSpeed": 162,
+    "6990to60": 4.0,
+    "699Handling": 85
+}

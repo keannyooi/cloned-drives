@@ -1,0 +1,49 @@
+{
+    "rq": 82,
+    "make": "Spyker",
+    "model": "C12 Zagato",
+    "modelYear": 2007,
+    "country": "NL",
+    "topSpeed": 193,
+    "0to60": 3.8,
+    "handling": 88,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix","Rest of The World","Unique","Tuner","Ultra Expensive","Supercar"],
+    "isPrize": false,
+
+    "weight": 1480,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 89.88,
+    "ola": 88.88,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1078658452446007366/C12Zagato.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1078660130045952110/SpykerC12Zagato.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 196,
+"3330to60": 3.6,
+"333Handling": 91,
+
+"666TopSpeed": 198,
+"6660to60": 3.4,
+"666Handling": 94,
+
+"699TopSpeed": 198,
+"6990to60": 3.2,
+"699Handling": 98,
+
+"969TopSpeed": 201,
+"9690to60": 3.4,
+"969Handling": 98,
+
+"996TopSpeed": 201,
+"9960to60": 3.2,
+"996Handling": 94
+}

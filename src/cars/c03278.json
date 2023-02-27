@@ -1,0 +1,49 @@
+{
+    "rq": 72,
+    "make": "Spyker",
+    "model": "Venator Spyder",
+    "modelYear": 2013,
+    "country": "NL",
+    "topSpeed": 187,
+    "0to60": 4.6,
+    "handling": 85,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix","Rest of The World"],
+    "isPrize": false,
+
+    "weight": 1390,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 74.25,
+    "ola": 77.5,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1078656997483888711/B6VenatorSpyder.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1078659561361260606/SpykerB6VenatorSpyder.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 190,
+"3330to60": 4.4,
+"333Handling": 88,
+
+"666TopSpeed": 193,
+"6660to60": 4.1,
+"666Handling": 91,
+
+"699TopSpeed": 193,
+"6990to60": 3.9,
+"699Handling": 94,
+
+"969TopSpeed": 195,
+"9690to60": 4.1,
+"969Handling": 94,
+
+"996TopSpeed": 195,
+"9960to60": 3.9,
+"996Handling": 91
+}

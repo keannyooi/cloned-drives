@@ -1,0 +1,50 @@
+{
+    "rq": 70,
+    "make": "Audi",
+    "model": "Nuvolari quattro Concept",
+    "modelYear": 2003,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 4.1,
+    "handling": 84,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Concept","The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+
+    "weight": 1549,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Concept",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 89.13,
+    "ola": 78.04,
+    "description": "Second of the three 2003 Audi concepts was powered by a TFSI V10 engine and it previewed the A5 Coupe.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1077315127801553036/A.AudiNuvolari.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1077318393608294562/Nuvolari.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 158,
+    "3330to60": 3.9,
+    "333Handling": 87,
+
+    "666TopSpeed": 162,
+    "6660to60": 3.7, 
+    "666Handling": 90,
+
+    "996TopSpeed": 165,
+    "9960to60": 3.5,
+    "996Handling": 90,
+
+    "969TopSpeed": 165,
+    "9690to60": 3.7,
+    "969Handling": 93,
+
+    "699TopSpeed": 162,
+    "6990to60": 3.5,
+    "699Handling": 93
+}

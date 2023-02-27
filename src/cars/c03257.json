@@ -1,0 +1,49 @@
+{
+    "rq": 39,
+    "make": "Porsche",
+    "model": "968 Cabriolet",
+    "modelYear": 1991,
+    "country": "DE",
+    "topSpeed": 153,
+    "0to60": 6.4,
+    "handling": 78,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+    "weight": 1450,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 60,
+    "ola": 72.4,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1078656452232757318/968Cabriolet.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1078659315545669642/968Cabriolet.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 156,
+"3330to60": 6.1,
+"333Handling": 81,
+
+"666TopSpeed": 160,
+"6660to60": 5.8,
+"666Handling": 83,
+
+"699TopSpeed": 160,
+"6990to60": 5.4,
+"699Handling": 87,
+
+"969TopSpeed": 163,
+"9690to60": 5.8,
+"969Handling": 87,
+
+"996TopSpeed": 163,
+"9960to60": 5.4,
+"996Handling": 83
+}

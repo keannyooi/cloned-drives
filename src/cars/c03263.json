@@ -1,0 +1,49 @@
+{
+    "rq": 75,
+    "make": "Spyker",
+    "model": "C8 Double 12R",
+    "modelYear": 2001,
+    "country": "NL",
+    "topSpeed": 190,
+    "0to60": 4.0,
+    "handling": 93,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["The Tyrol Tour: Remix","Rest of The World","Motorsport"],
+    "isPrize": false,
+
+    "weight": 1100,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 79.55,
+    "ola": 82.64,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1078658208169734144/C8Double12R.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1078660026455044106/SpykerDouble12R.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 193,
+"3330to60": 3.8,
+"333Handling": 96,
+
+"666TopSpeed": 195,
+"6660to60": 3.6,
+"666Handling": 99,
+
+"699TopSpeed": 195,
+"6990to60": 3.4,
+"699Handling": 103,
+
+"969TopSpeed": 198,
+"9690to60": 3.6,
+"969Handling": 103,
+
+"996TopSpeed": 198,
+"9960to60": 3.4,
+"996Handling": 99
+}

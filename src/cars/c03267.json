@@ -1,0 +1,49 @@
+{
+    "rq": 82,
+    "make": "Spyker",
+    "model": "C8 Laviolette GT2-R",
+    "modelYear": 2008,
+    "country": "NL",
+    "topSpeed": 200,
+    "0to60": 3.5,
+    "handling": 96,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["The Tyrol Tour: Remix","Rest of The World","Motorsport"],
+    "isPrize": false,
+
+    "weight": 1250,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 81.25,
+    "ola": 88.88,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1078658357784752128/C8LavioletteGT2R.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1078660089218609202/SpykerLavioletteGT2R.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 203,
+"3330to60": 3.3,
+"333Handling": 99,
+
+"666TopSpeed": 205,
+"6660to60": 3.1,
+"666Handling": 102,
+
+"699TopSpeed": 205,
+"6990to60": 3,
+"699Handling": 107,
+
+"969TopSpeed": 208,
+"9690to60": 3.1,
+"969Handling": 107,
+
+"996TopSpeed": 208,
+"9960to60": 3,
+"996Handling": 102
+}

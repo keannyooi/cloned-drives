@@ -1,0 +1,49 @@
+{
+    "rq": 73,
+    "make": "Spyker",
+    "model": "C8 Laviolette LWB",
+    "modelYear": 2008,
+    "country": "NL",
+    "topSpeed": 186,
+    "0to60": 4.4,
+    "handling": 84,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix","Rest of The World"],
+    "isPrize": false,
+
+    "weight": 1350,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 76.5,
+    "ola": 83.64,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1078657757131055224/C8LavioletteLWB.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1078659794346459197/SpykerC8LavioLWB.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 189,
+"3330to60": 4.2,
+"333Handling": 87,
+
+"666TopSpeed": 192,
+"6660to60": 4,
+"666Handling": 90,
+
+"699TopSpeed": 192,
+"6990to60": 3.7,
+"699Handling": 93,
+
+"969TopSpeed": 194,
+"9690to60": 4,
+"969Handling": 93,
+
+"996TopSpeed": 194,
+"9960to60": 3.7,
+"996Handling": 90
+}

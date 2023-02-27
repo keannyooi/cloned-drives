@@ -1,0 +1,50 @@
+{
+    "rq": 17,
+    "make": "Opel",
+    "model": "Agila 1.3 CDTI Cosmo",
+    "modelYear": 2003,
+    "country": "DE",
+    "topSpeed": 95,
+    "0to60": 14.4,
+    "handling": 65,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+
+    "weight": 1035,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatch",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 15.84,
+    "ola": 61.11,
+    "description": "Generic box but diesel",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1061259431083511849/F.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1061260574756970527/AgilaCDTI.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 100,
+    "3330to60": 13.7,
+    "333Handling": 67,
+
+    "666TopSpeed": 106,
+    "6660to60": 13.0, 
+    "666Handling": 69,
+
+    "996TopSpeed": 111,
+    "9960to60": 12.2,
+    "996Handling": 69,
+
+    "969TopSpeed": 111,
+    "9690to60": 13.0,
+    "969Handling": 72,
+
+    "699TopSpeed": 106,
+    "6990to60": 12.2,
+    "699Handling": 72
+}

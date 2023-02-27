@@ -1,0 +1,49 @@
+{
+    "rq": 85,
+    "make": "Spyker",
+    "model": "D12 Peking-to-Paris",
+    "modelYear": 2007,
+    "country": "NL",
+    "topSpeed": 185,
+    "0to60": 4.8,
+    "handling": 80,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["The Tyrol Tour: Remix","Rest of The World","Extreme Juggernaut"],
+    "isPrize": false,
+
+    "weight": 1850,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 79.85,
+    "ola": 77.77,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1078656722907955221/D12Peking.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1078659518977818655/SpykerD12Peking.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 188,
+"3330to60": 4.6,
+"333Handling": 83,
+
+"666TopSpeed": 191,
+"6660to60": 4.3,
+"666Handling": 85,
+
+"699TopSpeed": 191,
+"6990to60": 4.1,
+"699Handling": 89,
+
+"969TopSpeed": 193,
+"9690to60": 4.3,
+"969Handling": 89,
+
+"996TopSpeed": 193,
+"9960to60": 4.1,
+"996Handling": 85
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 74,
+    "make": "Spyker",
+    "model": "C8 Laviolette LM85",
+    "modelYear": 2009,
+    "country": "NL",
+    "topSpeed": 186,
+    "0to60": 4.4,
+    "handling": 85,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix","Rest of The World","Unique"],
+    "isPrize": false,
+
+    "weight": 1275,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 77.5,
+    "ola": 80,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1078657816618876998/C8LavioletteLM85.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1078659825057148978/SpykerC8LavioLM85r.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 189,
+"3330to60": 4.2,
+"333Handling": 88,
+
+"666TopSpeed": 192,
+"6660to60": 4,
+"666Handling": 91,
+
+"699TopSpeed": 192,
+"6990to60": 3.7,
+"699Handling": 94,
+
+"969TopSpeed": 194,
+"9690to60": 4,
+"969Handling": 94,
+
+"996TopSpeed": 194,
+"9960to60": 3.7,
+"996Handling": 91
+}

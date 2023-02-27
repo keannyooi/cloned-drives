@@ -1,0 +1,49 @@
+{
+    "rq": 70,
+    "make": "Spyker",
+    "model": "C8 Laviolette",
+    "modelYear": 2001,
+    "country": "NL",
+    "topSpeed": 186,
+    "0to60": 4.6,
+    "handling": 83,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix","Rest of The World"],
+    "isPrize": false,
+
+    "weight": 1275,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 75,
+    "ola": 82.6,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1078657447591419934/C8Laviolette.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1078659663417049108/SpykerC8Lavio.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 189,
+"3330to60": 4.4,
+"333Handling": 86,
+
+"666TopSpeed": 192,
+"6660to60": 4.1,
+"666Handling": 88,
+
+"699TopSpeed": 192,
+"6990to60": 3.9,
+"699Handling": 92,
+
+"969TopSpeed": 194,
+"9690to60": 4.1,
+"969Handling": 92,
+
+"996TopSpeed": 194,
+"9960to60": 3.9,
+"996Handling": 88
+}

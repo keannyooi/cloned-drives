@@ -1,0 +1,49 @@
+{
+    "rq": 69,
+    "make": "Spyker",
+    "model": "C8 Double 12S Spyder Stage II",
+    "modelYear": 2002,
+    "country": "NL",
+    "topSpeed": 190,
+    "0to60": 4.2,
+    "handling": 85,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix","Rest of The World","Track Day"],
+    "isPrize": false,
+
+    "weight": 1350,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 87.5,
+    "ola": 90,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1078657540268753026/C8Double12SSpyderStageII.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1078659688461258773/SpykerC8Double12SSpyderS2.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 193,
+"3330to60": 4,
+"333Handling": 88,
+
+"666TopSpeed": 195,
+"6660to60": 3.8,
+"666Handling": 91,
+
+"699TopSpeed": 195,
+"6990to60": 3.6,
+"699Handling": 94,
+
+"969TopSpeed": 198,
+"9690to60": 3.8,
+"969Handling": 94,
+
+"996TopSpeed": 198,
+"9960to60": 3.6,
+"996Handling": 91
+}

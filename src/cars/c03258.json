@@ -1,0 +1,49 @@
+{
+    "rq": 50,
+    "make": "Porsche",
+    "model": "968 Sport",
+    "modelYear": 1994,
+    "country": "DE",
+    "topSpeed": 161,
+    "0to60": 5.7,
+    "handling": 81,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+    "weight": 1352,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 75,
+    "ola": 75.53,
+    "description": "A Porsche GB Merge of the Club Sport and top-end 968 with all the options.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1078656495459246100/968Sport.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1078659399922499625/968Sport.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 164,
+"3330to60": 5.4,
+"333Handling": 84,
+
+"666TopSpeed": 167,
+"6660to60": 5.1,
+"666Handling": 86,
+
+"699TopSpeed": 167,
+"6990to60": 4.8,
+"699Handling": 90,
+
+"969TopSpeed": 171,
+"9690to60": 5.1,
+"969Handling": 90,
+
+"996TopSpeed": 171,
+"9960to60": 4.8,
+"996Handling": 86
+}

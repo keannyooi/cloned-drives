@@ -1,0 +1,50 @@
+{
+    "rq": 92,
+    "make": "Audi",
+    "model": "Avus quattro Concept",
+    "modelYear": 1992,
+    "country": "DE",
+    "topSpeed": 210,
+    "0to60": 2.9,
+    "handling": 92,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Concept", "Innovative","The Tyrol Tour: Remix"],
+    "isPrize": true,
+
+
+    "weight": 1250,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 82.29,
+    "ola": 82.75,
+    "description": "Beautiful chrome aluminium body coupled with a wooden W12.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1077315480316035123/S.AudiAvusConcept.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1077320912149430364/Avus.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 212,
+    "3330to60": 2.8,
+    "333Handling": 95,
+
+    "666TopSpeed": 215,
+    "6660to60": 2.6, 
+    "666Handling": 98,
+
+    "996TopSpeed": 217,
+    "9960to60": 2.5,
+    "996Handling": 98,
+
+    "969TopSpeed": 217,
+    "9690to60": 2.6,
+    "969Handling": 102,
+
+    "699TopSpeed": 215,
+    "6990to60": 2.5,
+    "699Handling": 102
+}

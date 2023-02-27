@@ -1,0 +1,50 @@
+{
+    "rq": 21,
+    "make": "Opel",
+    "model": "Agila 1.3 CDTI ecoFLEX",
+    "modelYear": 2008,
+    "country": "DE",
+    "topSpeed": 103,
+    "0to60": 13.4,
+    "handling": 67,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+
+    "weight": 1159,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatch",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 31.16,
+    "ola": 58.20,
+    "description": "Second generation of the box, this time a bit less boxy but still Japanese and diesel",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1061259632095535144/E.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1061364209469898782/AgilaB13.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 108,
+    "3330to60": 12.7,
+    "333Handling": 69,
+
+    "666TopSpeed": 113,
+    "6660to60": 12.1, 
+    "666Handling": 71,
+
+    "996TopSpeed": 118,
+    "9960to60": 11.4,
+    "996Handling": 71,
+
+    "969TopSpeed": 118,
+    "9690to60": 12.1,
+    "969Handling": 74,
+
+    "699TopSpeed": 113,
+    "6990to60": 11.4,
+    "699Handling": 74
+}
