@@ -120,11 +120,11 @@ setInterval(async () => {
     }
 }, 180000);
 
-schedule("59 23 * * *", async () => {
+schedule("0 */12 * * *", async () => {
     let { lastBMRefresh } = await serverStatModel.findOne({});
     try {
         await regenDealership();
-        if (Interval.fromDateTimes(DateTime.fromISO(lastBMRefresh), DateTime.now()).length("days") >= 2) {
+        if (Interval.fromDateTimes(DateTime.fromISO(lastBMRefresh), DateTime.now()).length("hours") >= 24) {
             await regenBM();
         }
     }

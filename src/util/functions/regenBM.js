@@ -65,18 +65,18 @@ async function regenBM() {
             rqEnd = i < 4 ? 49 : 79;
             if (i >= 4) {
                 price = 800 + (Math.floor(Math.random() * 400));
-                stock = 5;
+                stock = 10;
             }
             else {
                 price = 200 + (Math.floor(Math.random() * 100));
-                stock = 20;
+                stock = 15;
             }
         }
         else {
             rqStart = 80;
             rqEnd = 999;
             price = 1600 + (Math.floor(Math.random() * 800));
-            stock = 2;
+            stock = 5;
         }
 
         while (!currentCar["reference"] || catalog.find(car => currentFile.includes(car.carID)) || bmReference["isPrize"] || bmReference["rq"] > rqEnd || bmReference["rq"] < rqStart || !currentCar["active"]) {
