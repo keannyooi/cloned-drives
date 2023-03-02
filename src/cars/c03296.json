@@ -1,0 +1,49 @@
+{
+    "rq": 102,
+    "make": "Porsche",
+    "model": "963",
+    "modelYear": 2023,
+    "country": "DE",
+    "topSpeed": 205,
+    "0to60": 2.4,
+    "handling": 100,
+    "driveType": "4WD",
+    "tyreType": "Slick",
+    "tags": ["The Tyrol Tour: Remix","Eco-Friendly","Motorsport"],
+    "isPrize": true,
+	
+    "weight": 1030,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Mixed",
+    "fuelType": "Hybrid",
+    "mra": 120,
+    "ola": 88.88,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1080824404763754547/963LMDh.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1080824568073162792/963.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 208,
+"3330to60": 2.3,
+"333Handling": 103,
+
+"666TopSpeed": 210,
+"6660to60": 2.2,
+"666Handling": 107,
+
+"699TopSpeed": 210,
+"6990to60": 2,
+"699Handling": 111,
+
+"969TopSpeed": 213,
+"9690to60": 2.2,
+"969Handling": 111,
+
+"996TopSpeed": 213,
+"9960to60": 2,
+"996Handling": 107
+}

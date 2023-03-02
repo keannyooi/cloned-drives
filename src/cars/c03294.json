@@ -1,0 +1,49 @@
+{
+    "rq": 115,
+    "make": "Porsche",
+    "model": "919 Hybrid Evo",
+    "modelYear": 2018,
+    "country": "DE",
+    "topSpeed": 230,
+    "0to60": 1.8,
+    "handling": 104,
+    "driveType": "4WD",
+    "tyreType": "Slick",
+    "tags": ["The Tyrol Tour: Remix","Unique","Ultra Expensive","Eco-Friendly","Track Day"],
+    "isPrize": true,
+	
+    "weight": 849,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": false,
+    "enginePos": "Mixed",
+    "fuelType": "Hybrid",
+    "mra": 158.33,
+    "ola": 90,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1080824367929376788/919Evo.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1080824535592472637/919Evo.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 232,
+"3330to60": 1.7,
+"333Handling": 107,
+
+"666TopSpeed": 235,
+"6660to60": 1.6,
+"666Handling": 111,
+
+"699TopSpeed": 235,
+"6990to60": 1.5,
+"699Handling": 115,
+
+"969TopSpeed": 237,
+"9690to60": 1.6,
+"969Handling": 115,
+
+"996TopSpeed": 237,
+"9960to60": 1.5,
+"996Handling": 111
+}

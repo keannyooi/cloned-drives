@@ -1,0 +1,49 @@
+{
+    "rq": 98,
+    "make": "Porsche",
+    "model": "917 Living Legend",
+    "modelYear": 2013,
+    "country": "DE",
+    "topSpeed": 234,
+    "0to60": 2.7,
+    "handling": 97,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix","Unique","Concept","Ultra Expensive","Track Day","RestoMod"],
+    "isPrize": false,
+	
+    "weight": 1220,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 118.18,
+    "ola": 75,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1080824422946045972/917LL.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1080824590026158161/917LL5.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 236,
+"3330to60": 2.6,
+"333Handling": 100,
+
+"666TopSpeed": 238,
+"6660to60": 2.4,
+"666Handling": 103,
+
+"699TopSpeed": 238,
+"6990to60": 2.3,
+"699Handling": 108,
+
+"969TopSpeed": 241,
+"9690to60": 2.4,
+"969Handling": 108,
+
+"996TopSpeed": 241,
+"9960to60": 2.3,
+"996Handling": 103
+}

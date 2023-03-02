@@ -1,0 +1,49 @@
+{
+    "rq": 108,
+    "make": "Porsche",
+    "model": "919 Street",
+    "modelYear": 2017,
+    "country": "DE",
+    "topSpeed": 235,
+    "0to60": 2.2,
+    "handling": 99,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix","Unique","Concept","Hypercar","Eco-Friendly"],
+    "isPrize": true,
+	
+    "weight": 1050,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Hybrid",
+    "mra": 125,
+    "ola": 93.33,
+    "description": "The could-of-been 918 successor that was dropped.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1080824388712136754/919Street.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1080824552986267729/919Street.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 237,
+"3330to60": 2.1,
+"333Handling": 102,
+
+"666TopSpeed": 239,
+"6660to60": 2,
+"666Handling": 106,
+
+"699TopSpeed": 239,
+"6990to60": 1.9,
+"699Handling": 110,
+
+"969TopSpeed": 242,
+"9690to60": 2,
+"969Handling": 110,
+
+"996TopSpeed": 242,
+"9960to60": 1.9,
+"996Handling": 106
+}

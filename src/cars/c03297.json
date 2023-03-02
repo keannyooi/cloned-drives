@@ -1,0 +1,49 @@
+{
+    "rq": 55,
+    "make": "Porsche",
+    "model": "Boxster S",
+    "modelYear": 2003,
+    "country": "DE",
+    "topSpeed": 164,
+    "0to60": 5.5,
+    "handling": 85,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 1330,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 71.74,
+    "ola": 77.78,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1080826731952349204/BoxsterS03.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1080826900106199130/BoxsterS03.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 167,
+"3330to60": 5.2,
+"333Handling": 88,
+
+"666TopSpeed": 170,
+"6660to60": 5,
+"666Handling": 91,
+
+"699TopSpeed": 170,
+"6990to60": 4.7,
+"699Handling": 94,
+
+"969TopSpeed": 174,
+"9690to60": 5,
+"969Handling": 94,
+
+"996TopSpeed": 174,
+"9960to60": 4.7,
+"996Handling": 91
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 87,
+    "make": "Porsche",
+    "model": "Macan Turbo",
+    "modelYear": 2014,
+    "country": "DE",
+    "topSpeed": 162,
+    "0to60": 4.4,
+    "handling": 81,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 1925,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.67,
+    "ola": 75,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1080825246636056738/MacanTurbo2014.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1080826024507490384/MacanTurbo14.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 165,
+"3330to60": 4.2,
+"333Handling": 84,
+
+"666TopSpeed": 168,
+"6660to60": 4,
+"666Handling": 86,
+
+"699TopSpeed": 168,
+"6990to60": 3.7,
+"699Handling": 90,
+
+"969TopSpeed": 172,
+"9690to60": 4,
+"969Handling": 90,
+
+"996TopSpeed": 172,
+"9960to60": 3.7,
+"996Handling": 86
+}

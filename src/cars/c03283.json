@@ -1,0 +1,49 @@
+{
+    "rq": 43,
+    "make": "Porsche",
+    "model": "550A Spyder",
+    "modelYear": 1956,
+    "country": "DE",
+    "topSpeed": 149,
+    "0to60": 6.5,
+    "handling": 72,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix","Unique","Ultra Expensive","Motorsport"],
+    "isPrize": false,
+	
+    "weight": 530,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 66.66,
+    "ola": 73.4,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1080826402829512754/550ASpyder.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1080826550347370567/550ASpyder.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 152,
+"3330to60": 6.2,
+"333Handling": 74,
+
+"666TopSpeed": 156,
+"6660to60": 5.9,
+"666Handling": 77,
+
+"699TopSpeed": 156,
+"6990to60": 5.5,
+"699Handling": 80,
+
+"969TopSpeed": 159,
+"9690to60": 5.9,
+"969Handling": 80,
+
+"996TopSpeed": 159,
+"9960to60": 5.5,
+"996Handling": 77
+}

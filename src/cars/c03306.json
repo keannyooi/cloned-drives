@@ -1,0 +1,49 @@
+{
+    "rq": 66,
+    "make": "Porsche",
+    "model": "Macan S Diesel",
+    "modelYear": 2015,
+    "country": "DE",
+    "topSpeed": 142,
+    "0to60": 6.1,
+    "handling": 77,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 1880,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 59.22,
+    "ola": 65.57,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1080824904787689482/MacanDiesel2015.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1080825958300393584/MacanDiesel2015.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 146,
+"3330to60": 5.8,
+"333Handling": 80,
+
+"666TopSpeed": 149,
+"6660to60": 5.5,
+"666Handling": 82,
+
+"699TopSpeed": 149,
+"6990to60": 5.2,
+"699Handling": 85,
+
+"969TopSpeed": 153,
+"9690to60": 5.5,
+"969Handling": 85,
+
+"996TopSpeed": 153,
+"9960to60": 5.2,
+"996Handling": 82
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 107,
+    "make": "Porsche",
+    "model": "919 Hybrid",
+    "modelYear": 2017,
+    "country": "DE",
+    "topSpeed": 219,
+    "0to60": 2.2,
+    "handling": 102,
+    "driveType": "4WD",
+    "tyreType": "Slick",
+    "tags": ["The Tyrol Tour: Remix","Motorsport","Unique","Eco-Friendly"],
+    "isPrize": true,
+	
+    "weight": 870,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Mixed",
+    "fuelType": "Hybrid",
+    "mra": 130,
+    "ola": 95.74,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1080824351575769200/919Hybrid2017.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1080824511068393584/919H17.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 221,
+"3330to60": 2.1,
+"333Handling": 105,
+
+"666TopSpeed": 224,
+"6660to60": 2,
+"666Handling": 109,
+
+"699TopSpeed": 224,
+"6990to60": 1.9,
+"699Handling": 113,
+
+"969TopSpeed": 226,
+"9690to60": 2,
+"969Handling": 113,
+
+"996TopSpeed": 226,
+"9960to60": 1.9,
+"996Handling": 109
+}

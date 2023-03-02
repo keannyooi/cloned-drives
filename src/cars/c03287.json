@@ -1,0 +1,49 @@
+{
+    "rq": 53,
+    "make": "Porsche",
+    "model": "718 GTR Coupe",
+    "modelYear": 1961,
+    "country": "DE",
+    "topSpeed": 174,
+    "0to60": 5.1,
+    "handling": 74,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix","Unique","Ultra Expensive","Motorsport"],
+    "isPrize": false,
+	
+    "weight": 670,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 72.5,
+    "ola": 78,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1080827200238014566/718GTRCoupe.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1080827449694236742/718GTSCoup.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 177,
+"3330to60": 4.8,
+"333Handling": 76,
+
+"666TopSpeed": 180,
+"6660to60": 4.6,
+"666Handling": 79,
+
+"699TopSpeed": 180,
+"6990to60": 4.3,
+"699Handling": 82,
+
+"969TopSpeed": 183,
+"9690to60": 4.6,
+"969Handling": 82,
+
+"996TopSpeed": 183,
+"9960to60": 4.3,
+"996Handling": 79
+}

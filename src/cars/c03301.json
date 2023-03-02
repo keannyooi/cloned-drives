@@ -1,0 +1,49 @@
+{
+    "rq": 84,
+    "make": "Porsche",
+    "model": "Macan GTS",
+    "modelYear": 2015,
+    "country": "DE",
+    "topSpeed": 160,
+    "0to60": 4.6,
+    "handling": 80,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 1895,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 65,
+    "ola": 77.77,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1080825219385667674/MacanGTS2015.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1080826007298265109/MacanGTS15.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 163,
+"3330to60": 4.4,
+"333Handling": 83,
+
+"666TopSpeed": 167,
+"6660to60": 4.1,
+"666Handling": 85,
+
+"699TopSpeed": 167,
+"6990to60": 3.9,
+"699Handling": 89,
+
+"969TopSpeed": 170,
+"9690to60": 4.1,
+"969Handling": 89,
+
+"996TopSpeed": 170,
+"9960to60": 3.9,
+"996Handling": 85
+}

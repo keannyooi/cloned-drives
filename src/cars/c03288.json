@@ -1,0 +1,49 @@
+{
+    "rq": 52,
+    "make": "Porsche",
+    "model": "718 RS 60 Spyder",
+    "modelYear": 1960,
+    "country": "DE",
+    "topSpeed": 162,
+    "0to60": 5.2,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix","Unique","Ultra Expensive","Motorsport"],
+    "isPrize": false,
+	
+    "weight": 548,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 65.9,
+    "ola": 77.56,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1080827150074122300/718RS60Spyder.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1080827395466067988/718RS60Spyder.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 165,
+"3330to60": 4.9,
+"333Handling": 77,
+
+"666TopSpeed": 168,
+"6660to60": 4.7,
+"666Handling": 80,
+
+"699TopSpeed": 168,
+"6990to60": 4.4,
+"699Handling": 83,
+
+"969TopSpeed": 172,
+"9690to60": 4.7,
+"969Handling": 83,
+
+"996TopSpeed": 172,
+"9960to60": 4.4,
+"996Handling": 80
+}
