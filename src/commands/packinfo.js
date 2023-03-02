@@ -55,10 +55,11 @@ module.exports = {
                     dropRate += `${rarity}: ${currentPack["packSequence"][i][rarity]}%\n`;
                 }
                 dropRate += "`";
-                fields.push({
-                    name: `Card(s) ${currentPack["repetition"] > 1 ? `${i * 5 + 1}~${(i + 1) * 5}` : (i + 1)} Drop Rate`,
-                    value: dropRate,
-                    inline: true
+				const cardRange = currentPack["repetition"] > 1 ? `${i * currentPack["repetition"] + 1}~${(i + 1) * currentPack["repetition"]}` : (i + 1);
+				fields.push({
+				name: `Card(s) ${cardRange} Drop Rate`,
+				value: dropRate,
+				inline: true
                 });
             }
             infoMessage.editEmbed({ fields });
