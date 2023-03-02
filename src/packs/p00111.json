@@ -1,0 +1,70 @@
+{
+	"packName": "MEGA++ Pack",
+	"description": "A pack of 25 cars, even more increased chances of epics and legends",
+        "repetition": 5,
+	"pack": "https://cdn.discordapp.com/attachments/956106029635088384/1080883612825698384/MEGA.png",
+
+	"filter": {
+		"make": "None",
+		"modelYear": {
+			"start": 1000,
+			"end": 3000
+		},
+		"country": "None",
+		"tags": "None",
+        "driveType": "None",
+        "tyreType": "None",
+		"enginePos": "None",
+        "fuelType": "None",
+        "bodyStyle": "None",
+		"seatCount": "None"
+	},
+
+	"packSequence": [
+        {
+            "common": 0,
+            "uncommon": 0,
+            "rare": 0,
+            "superRare": 55,
+            "ultraRare": 30,
+            "epic": 13.5,
+            "legendary": 1.5
+        },
+        {
+            "common": 0,
+            "uncommon": 0,
+            "rare": 0,
+            "superRare": 55,
+            "ultraRare": 30,
+            "epic": 13.5,
+            "legendary": 1.5
+        },
+        {
+            "common": 0,
+            "uncommon": 0,
+            "rare": 0,
+            "superRare": 55,
+            "ultraRare": 30,
+            "epic": 13.5,
+            "legendary": 1.5
+        },
+        {
+            "common": 0,
+            "uncommon": 0,
+            "rare": 0,
+            "superRare": 55,
+            "ultraRare": 30,
+            "epic": 13.5,
+            "legendary": 1.5
+        },
+        {
+            "common": 0,
+            "uncommon": 0,
+            "rare": 0,
+            "superRare": 55,
+            "ultraRare": 30,
+            "epic": 13.5,
+            "legendary": 1.5
+        }
+    ]
+}

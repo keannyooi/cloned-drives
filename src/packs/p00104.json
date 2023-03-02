@@ -1,8 +1,8 @@
 {
-	"packName": "Standard Cosmo Pack",
-	"description": "A pack of 10 cars, High chance of legendary",
+	"packName": "Cosmo+ Pack",
+	"description": "A pack of 10 cars, Higher chance of legendary",
         "repetition": 2,
-	"pack": "https://media.discordapp.net/attachments/956106029635088384/1010121392446001152/COSMOStandard.png",
+	"pack": "https://cdn.discordapp.com/attachments/956106029635088384/1080880422193475685/CosmoPlus.png",
 
 	"filter": {
 		"make": "None",
@@ -26,45 +26,45 @@
             "uncommon": 0,
             "rare": 0,
             "superRare": 74,
-            "ultraRare": 20.1,
+            "ultraRare": 20,
             "epic": 5,
-            "legendary": 0.9
+            "legendary": 1
         },
         {
             "common": 0,
             "uncommon": 0,
             "rare": 0,
             "superRare": 74,
-            "ultraRare": 20.1,
+            "ultraRare": 20,
             "epic": 5,
-            "legendary": 0.9
+            "legendary": 1
         },
         {
             "common": 0,
             "uncommon": 0,
             "rare": 0,
             "superRare": 50,
-            "ultraRare": 30.1,
+            "ultraRare": 30,
             "epic": 19,
-            "legendary": 0.9
+            "legendary": 1
         },
         {
             "common": 0,
             "uncommon": 0,
             "rare": 0,
-            "superRare": 50,
+            "superRare": 45,
             "ultraRare": 35,
-            "epic": 10,
-            "legendary": 5
+            "epic": 13,
+            "legendary": 7
         },
         {
             "common": 0,
             "uncommon": 0,
             "rare": 0,
-            "superRare": 50,
+            "superRare": 45,
             "ultraRare": 35,
-            "epic": 10,
-            "legendary": 5
+            "epic": 13,
+            "legendary": 7
         }
     ]
 }

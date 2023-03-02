@@ -1,17 +1,18 @@
 {
-	"packName": "Standard Cosmo Pack",
-	"description": "A pack of 10 cars, High chance of legendary",
-        "repetition": 2,
-	"pack": "https://media.discordapp.net/attachments/956106029635088384/1010121392446001152/COSMOStandard.png",
-
+	"packName": "The Cloned Drives 2023 Special Elite Pack",
+	"description": "A Special Themed Pack purchaseable for the year 2023, celebrating the Eco-Friendly",
+	"price": 275000,
+        "repetition": 1,
+	"pack": "https://cdn.discordapp.com/attachments/956106029635088384/1080869870935232642/2023Special.png",
+	
 	"filter": {
 		"make": "None",
 		"modelYear": {
-			"start": 1000,
-			"end": 3000
+			"start": 2000,
+			"end": 2023
 		},
 		"country": "None",
-		"tags": "None",
+		"tags": "Eco-Friendly",
         "driveType": "None",
         "tyreType": "None",
 		"enginePos": "None",
@@ -43,28 +44,28 @@
             "common": 0,
             "uncommon": 0,
             "rare": 0,
-            "superRare": 50,
-            "ultraRare": 30.1,
-            "epic": 19,
+            "superRare": 74,
+            "ultraRare": 20.1,
+            "epic": 5,
             "legendary": 0.9
         },
         {
             "common": 0,
             "uncommon": 0,
             "rare": 0,
-            "superRare": 50,
-            "ultraRare": 35,
-            "epic": 10,
-            "legendary": 5
+            "superRare": 74,
+            "ultraRare": 20.1,
+            "epic": 5,
+            "legendary": 0.9
         },
         {
             "common": 0,
             "uncommon": 0,
             "rare": 0,
-            "superRare": 50,
-            "ultraRare": 35,
-            "epic": 10,
-            "legendary": 5
+            "superRare": 74,
+            "ultraRare": 20.1,
+            "epic": 5,
+            "legendary": 0.9
         }
     ]
 }

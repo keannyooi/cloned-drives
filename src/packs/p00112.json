@@ -1,11 +1,11 @@
 {
-	"packName": "Aston Martin Booster Pack",
-	"description": "25 Aston Martin Cards",
+	"packName": "Porsche Booster Pack",
+	"description": "25 Porsche Cards",
         "repetition": 5,
-	"pack": "https://cdn.discordapp.com/attachments/956106029635088384/1080865881673965580/AstonMartinBoosterPack.png", 
+	"pack": "https://cdn.discordapp.com/attachments/956106029635088384/1080865921062670456/PorscheBoosterPack.png", 
 	
 	"filter": {
-		"make": "Aston Martin",
+		"make": "Porsche",
 		"modelYear": {
 			"start": 1000,
 			"end": 3000

@@ -1,11 +1,11 @@
 {
-	"packName": "Aston Martin Booster Pack",
-	"description": "25 Aston Martin Cards",
-        "repetition": 5,
-	"pack": "https://cdn.discordapp.com/attachments/956106029635088384/1080865881673965580/AstonMartinBoosterPack.png", 
+	"packName": "Guaranteed Legendary Pack",
+	"description": "4 Commons and 1 Legendary",
+        "repetition": 1,
+	"pack": "https://cdn.discordapp.com/attachments/956106029635088384/1080865795405520957/Legend.png",
 	
 	"filter": {
-		"make": "Aston Martin",
+		"make": "None",
 		"modelYear": {
 			"start": 1000,
 			"end": 3000
@@ -22,8 +22,35 @@
 
 	"packSequence": [
         {
-            "common": 50,
-            "uncommon": 50,
+            "common": 100,
+            "uncommon": 0,
+            "rare": 0,
+            "superRare": 0,
+            "ultraRare": 0,
+            "epic": 0,
+            "legendary": 0
+        },
+        {
+            "common": 100,
+            "uncommon": 0,
+            "rare": 0,
+            "superRare": 0,
+            "ultraRare": 0,
+            "epic": 0,
+            "legendary": 0
+        },
+        {
+            "common": 100,
+            "uncommon": 0,
+            "rare": 0,
+            "superRare": 0,
+            "ultraRare": 0,
+            "epic": 0,
+            "legendary": 0
+        },
+        {
+            "common": 100,
+            "uncommon": 0,
             "rare": 0,
             "superRare": 0,
             "ultraRare": 0,
@@ -32,39 +59,12 @@
         },
         {
             "common": 0,
-            "uncommon": 70,
-            "rare": 30,
+            "uncommon": 0,
+            "rare": 0,
             "superRare": 0,
             "ultraRare": 0,
             "epic": 0,
-            "legendary": 0
-        },
-        {
-            "common": 0,
-            "uncommon": 60,
-            "rare": 30,
-            "superRare": 10,
-            "ultraRare": 0,
-            "epic": 0,
-            "legendary": 0
-        },
-        {
-            "common": 0,
-            "uncommon": 0,
-            "rare": 0,
-            "superRare": 80,
-            "ultraRare": 15,
-            "epic": 5,
-            "legendary": 0
-        },
-        {
-            "common": 0,
-            "uncommon": 0,
-            "rare": 0,
-            "superRare": 70,
-            "ultraRare": 22,
-            "epic": 7,
-            "legendary": 1
+            "legendary": 100
         }
     ]
 }
