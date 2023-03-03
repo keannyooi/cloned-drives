@@ -1,8 +1,8 @@
 {
 	"packName": "TEST PACK DO NOT BUY THERE WILL BE NO REFUNDS",
 	"description": "DO NOT BUY",
-	"price": 2500000,
-        "repetition": 1,
+	"price": 25000000000,
+        "repetition": 5,
 	"pack": "https://cdn.discordapp.com/attachments/956106029635088384/1077212413935489044/DONOTBUYPLS.png",
 	
 	"filter": {
@@ -12,7 +12,7 @@
 			"end": 3000
 		},
 		"country": "None",
-		"tags": "None",
+		"tags": "The Tyrol Tour: Remix",
         "driveType": "None",
         "tyreType": "None",
 		"enginePos": "None",
@@ -26,46 +26,46 @@
             "common": 0,
             "uncommon": 0,
             "rare": 0,
-            "superRare": 100,
+            "superRare": 0,
             "ultraRare": 0,
-            "epic": 0,
-            "legendary": 0
+            "epic": 50,
+            "legendary": 50
         },
         {
             "common": 0,
             "uncommon": 0,
             "rare": 0,
-            "superRare": 100,
+            "superRare": 0,
             "ultraRare": 0,
-            "epic": 0,
-            "legendary": 0
+            "epic": 50,
+            "legendary": 50
         },
         {
             "common": 0,
             "uncommon": 0,
             "rare": 0,
-            "superRare": 100,
+            "superRare": 0,
             "ultraRare": 0,
-            "epic": 0,
-            "legendary": 0
+            "epic": 50,
+            "legendary": 50
         },
         {
             "common": 0,
             "uncommon": 0,
             "rare": 0,
-            "superRare": 100,
+            "superRare": 0,
             "ultraRare": 0,
-            "epic": 0,
-            "legendary": 0
+            "epic": 50,
+            "legendary": 50
         },
         {
             "common": 0,
             "uncommon": 0,
             "rare": 0,
-            "superRare": 100,
+            "superRare": 0,
             "ultraRare": 0,
             "epic": 0,
-            "legendary": 0
+            "legendary": 100
         }
     ]
 }
