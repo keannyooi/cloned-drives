@@ -1,0 +1,49 @@
+{
+    "rq": 31,
+    "make": "Volkswagen",
+    "model": "Passat 2.0 TDI Wagon",
+    "modelYear": 2005,
+    "country": "DE",
+    "topSpeed": 126,
+    "0to60": 9.8,
+    "handling": 71,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 1510,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 50.52,
+    "ola": 66.99,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1081215866076672110/CD_Volkswagen_Passat_2.0_TDI_Wagon.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1081216015423258674/PassatTDIWagon.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 130,
+"3330to60": 9.3,
+"333Handling": 73,
+
+"666TopSpeed": 134,
+"6660to60": 8.8,
+"666Handling": 76,
+
+"699TopSpeed": 134,
+"6990to60": 8.3,
+"699Handling": 79,
+
+"969TopSpeed": 138,
+"9690to60": 8.8,
+"969Handling": 79,
+
+"996TopSpeed": 138,
+"9960to60": 8.3,
+"996Handling": 76
+}

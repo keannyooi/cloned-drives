@@ -1,0 +1,49 @@
+{
+    "rq": 98,
+    "make": "Quantum",
+    "model": "GP 700",
+    "modelYear": 2015,
+    "country": "AU",
+    "topSpeed": 199,
+    "0to60": 2.5,
+    "handling": 97,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Rest of the Best: 2023","Track Day","Unique"],
+    "isPrize": true,
+	
+    "weight": 695,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": true,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 108.7,
+    "ola": 88,
+    "description": "A 1 of 1 shed built Caterham killer.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1081215765157519391/CD_Quantum_GP_700.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1081215965670416414/GP700AU.png",
+    "creator": "Exist",
+
+"333TopSpeed": 202,
+"3330to60": 2.4,
+"333Handling": 100,
+
+"666TopSpeed": 204,
+"6660to60": 2.3,
+"666Handling": 103,
+
+"699TopSpeed": 204,
+"6990to60": 2.1,
+"699Handling": 108,
+
+"969TopSpeed": 207,
+"9690to60": 2.3,
+"969Handling": 108,
+
+"996TopSpeed": 207,
+"9960to60": 2.1,
+"996Handling": 103
+}

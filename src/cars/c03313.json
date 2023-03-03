@@ -1,0 +1,49 @@
+{
+    "rq": 93,
+    "make": "BMW",
+    "model": "iX M60",
+    "modelYear": 2022,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 3.4,
+    "handling": 78,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Eco-Friendly","The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 2628,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 78.96,
+    "ola": 93.16,
+    "description": "The controversial iX gets some special M sauce to spice things up. Still ugly.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1080154746624692274/BMW_iX_M60_1.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1080154752412823622/BMW_iX_M60.png",
+    "creator": "Crossfire",
+
+    "333TopSpeed": 158, 
+    "3330to60": 3.2, 
+    "333Handling": 81,
+
+    "666TopSpeed": 162, 
+    "6660to60": 3.1, 
+    "666Handling": 83,
+
+    "996TopSpeed": 165, 
+    "9960to60": 2.9, 
+    "996Handling": 83,
+
+    "969TopSpeed": 165, 
+    "9690to60": 3.1, 
+    "969Handling": 87,
+
+    "699TopSpeed": 162, 
+    "6990to60": 2.9, 
+    "699Handling": 87
+}

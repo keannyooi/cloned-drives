@@ -1,0 +1,49 @@
+{
+    "rq": 93,
+    "make": "McLaren",
+    "model": "Elva",
+    "modelYear": 2021,
+    "country": "GB",
+    "topSpeed": 203,
+    "0to60": 2.7,
+    "handling": 93,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Supercar","The Midlands Cruise"],
+    "isPrize": false,
+	
+    "weight": 1148,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 117.39,
+    "ola": 81.48,
+    "description": "Translated from french Evla means 'She goes'.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1081215659020669048/CD_McLaren_Elva.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1081215909617737759/Elva.png",
+    "creator": "Exist",
+
+"333TopSpeed": 206,
+"3330to60": 2.6,
+"333Handling": 96,
+
+"666TopSpeed": 208,
+"6660to60": 2.4,
+"666Handling": 99,
+
+"699TopSpeed": 208,
+"6990to60": 2.3,
+"699Handling": 103,
+
+"969TopSpeed": 211,
+"9690to60": 2.4,
+"969Handling": 103,
+
+"996TopSpeed": 211,
+"9960to60": 2.3,
+"996Handling": 99
+}

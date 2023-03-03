@@ -1,0 +1,49 @@
+{
+    "rq": 93,
+    "make": "Brabham",
+    "model": "BT62",
+    "modelYear": 2018,
+    "country": "AU",
+    "topSpeed": 201,
+    "0to60": 2.8,
+    "handling": 98,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["The Rest of the Best: 2023","Ultra Expensive","Track Day","Unique","Rest of The World"],
+    "isPrize": false,
+	
+    "weight": 972,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 103.36,
+    "ola": 91.35,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1080969231534931968/CD_Brabham_BT62.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1080969272085459015/BT62.png",
+    "creator": "Exist",
+
+"333TopSpeed": 204,
+"3330to60": 2.7,
+"333Handling": 101,
+
+"666TopSpeed": 206,
+"6660to60": 2.5,
+"666Handling": 104,
+
+"699TopSpeed": 206,
+"6990to60": 2.4,
+"699Handling": 109,
+
+"969TopSpeed": 209,
+"9690to60": 2.5,
+"969Handling": 109,
+
+"996TopSpeed": 209,
+"9960to60": 2.4,
+"996Handling": 104
+}

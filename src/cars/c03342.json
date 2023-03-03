@@ -1,0 +1,49 @@
+{
+    "rq": 97,
+    "make": "Spartan Motor Company",
+    "model": "Spartan",
+    "modelYear": 2022,
+    "country": "AU",
+    "topSpeed": 155,
+    "0to60": 2.3,
+    "handling": 97,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Rest of the Best: 2023","Track Day","Unique"],
+    "isPrize": true,
+	
+    "weight": 550,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 83.82,
+    "ola": 70.18,
+    "description": "An Aussie built track toy with a Supercharged Honda Odyssey engine.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1081215813203263508/CD_Spartan.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1081215992803373147/Spartan.png",
+    "creator": "Exist",
+
+"333TopSpeed": 158,
+"3330to60": 2.2,
+"333Handling": 100,
+
+"666TopSpeed": 162,
+"6660to60": 2.1,
+"666Handling": 103,
+
+"699TopSpeed": 162,
+"6990to60": 2,
+"699Handling": 108,
+
+"969TopSpeed": 165,
+"9690to60": 2.1,
+"969Handling": 108,
+
+"996TopSpeed": 165,
+"9960to60": 2,
+"996Handling": 103
+}

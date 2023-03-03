@@ -1,0 +1,49 @@
+{
+    "rq": 92,
+    "make": "McLaren",
+    "model": "765LT Spider",
+    "modelYear": 2021,
+    "country": "GB",
+    "topSpeed": 205,
+    "0to60": 2.8,
+    "handling": 94,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Supercar"],
+    "isPrize": false,
+	
+    "weight": 1278,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 114.29,
+    "ola": 96.43,
+    "description": "The top of the range 765LT loses its roof but keeps all the thrills.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1081215709587198035/CD_McLaren_765LT_Spider.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1081215938109640804/765LT.png",
+    "creator": "Exist",
+
+"333TopSpeed": 208,
+"3330to60": 2.7,
+"333Handling": 97,
+
+"666TopSpeed": 210,
+"6660to60": 2.5,
+"666Handling": 100,
+
+"699TopSpeed": 210,
+"6990to60": 2.4,
+"699Handling": 104,
+
+"969TopSpeed": 213,
+"9690to60": 2.5,
+"969Handling": 104,
+
+"996TopSpeed": 213,
+"9960to60": 2.4,
+"996Handling": 100
+}
