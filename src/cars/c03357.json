@@ -1,0 +1,49 @@
+{
+    "rq": 67,
+    "make": "Local Motors",
+    "model": "Rally Fighter",
+    "modelYear": 2010,
+    "country": "US",
+    "topSpeed": 131,
+    "0to60": 6.0,
+    "handling": 74,
+    "driveType": "RWD",
+    "tyreType": "Off-Road",
+    "tags": ["Oddity", "The Americas Assault", "Unique","Extreme Juggernaut"],
+    "isPrize": false,
+    
+    "weight": 1724,
+    "gc": "High",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 67.42,
+    "ola": 80.00,
+    "description": "A rally car, a sports car, and a go anywhere off-roader all in one package. This beast is also the first production vehicle designed through crowd-sourcing, with the winning design submitted by Sangho Kim of Pasadena, California, being inspired by a P-51 Mustang fighter plane.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1080964278070300703/Local_Motors_Rally_Fighter_2010.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1080965272254558288/Local_Motors_Rally_Fighter_2010_Hud.png",
+    "creator": "DodgeDemon",
+
+    "333TopSpeed": 135,
+    "3330to60": 5.7,
+    "333Handling": 76,
+
+    "666TopSpeed": 139,
+    "6660to60": 5.4,
+    "666Handling": 79,
+
+    "699TopSpeed": 139,
+    "6990to60": 5.1,
+    "699Handling": 82,
+
+    "969TopSpeed": 143,
+    "9690to60": 5.4,
+    "969Handling": 82,
+
+    "996TopSpeed": 143,
+    "9960to60": 5.1,
+    "996Handling": 79
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 45,
+    "make": "Morgan",
+    "model": "3 Wheeler Euro 3",
+    "modelYear": 2013,
+    "country": "GB",
+    "topSpeed": 115,
+    "0to60": 5.7,
+    "handling": 70,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Midlands Cruise","Oddity","RestoMod"],
+    "isPrize": false,
+
+    "weight": 525,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 38.79,
+    "ola": 98.25,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1081552088691118150/3wheelE3.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1081554107015368805/3wheele3.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 120,
+"3330to60": 5.4,
+"333Handling": 72,
+
+"666TopSpeed": 124,
+"6660to60": 5.1,
+"666Handling": 75,
+
+"699TopSpeed": 124,
+"6990to60": 4.8,
+"699Handling": 78,
+
+"969TopSpeed": 129,
+"9690to60": 5.1,
+"969Handling": 78,
+
+"996TopSpeed": 129,
+"9960to60": 4.8,
+"996Handling": 75
+}

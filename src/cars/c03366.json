@@ -1,0 +1,49 @@
+{
+    "rq": 61,
+    "make": "Polaris",
+    "model": "Slingshot R",
+    "modelYear": 2020,
+    "country": "US",
+    "topSpeed": 125,
+    "0to60": 4.9,
+    "handling": 79,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Oddity", "The Americas Assault", "Track Day"],
+    "isPrize": false,
+    
+    "weight": 749,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 53.85,
+    "ola": 85.71,
+    "description": "More power. More fun.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1080964528004673708/Polaris_Slingshot_R_2020.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1080965451414249482/Polaris_Slingshot_R_2020_Hud.png",
+    "creator": "DodgeDemon",
+
+    "333TopSpeed": 129,
+    "3330to60": 4.7,
+    "333Handling": 82,
+
+    "666TopSpeed": 133,
+    "6660to60": 4.4,
+    "666Handling": 84,
+
+    "699TopSpeed": 133,
+    "6990to60": 4.2,
+    "699Handling": 88,
+
+    "969TopSpeed": 137,
+    "9690to60": 4.4,
+    "969Handling": 88,
+
+    "996TopSpeed": 137,
+    "9960to60": 4.2,
+    "996Handling": 84
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 62,
+    "make": ["Polaris", "Roush"],
+    "model": "Slingshot Roush Edition",
+    "modelYear": 2023,
+    "country": "US",
+    "topSpeed": 125,
+    "0to60": 4.9,
+    "handling": 80,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Oddity", "The Americas Assault", "Track Day"],
+    "isPrize": true,
+    
+    "weight": 762,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 53.85,
+    "ola": 85.71,
+    "description": "Roush's factory Slingshot treatment. Featuring a Slingshot R fitted with a list of sporty options and some trim-exclusive Brembo Brakes, but unfortunately no powertrain upgrades.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1080964660532105287/Polaris_Slingshot_Roush_Edition_2023.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1080965488231854171/Polaris_Slingshot_Roush_Edition_2023_Hud.png",
+    "creator": "DodgeDemon",
+
+    "333TopSpeed": 129,
+    "3330to60": 4.7,
+    "333Handling": 83,
+
+    "666TopSpeed": 133,
+    "6660to60": 4.4,
+    "666Handling": 85,
+
+    "699TopSpeed": 133,
+    "6990to60": 4.2,
+    "699Handling": 89,
+
+    "969TopSpeed": 137,
+    "9690to60": 4.4,
+    "969Handling": 89,
+
+    "996TopSpeed": 137,
+    "9960to60": 4.2,
+    "996Handling": 85
+}

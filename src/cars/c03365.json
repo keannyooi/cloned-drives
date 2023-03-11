@@ -1,0 +1,49 @@
+{
+    "rq": 55,
+    "make": "Polaris",
+    "model": "Slingshot Grand Touring LE",
+    "modelYear": 2020,
+    "country": "US",
+    "topSpeed": 125,
+    "0to60": 5.4,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Oddity", "The Americas Assault", "Track Day"],
+    "isPrize": false,
+    
+    "weight": 771,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 50.94,
+    "ola": 88.89,
+    "description": "Now with added roof!",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1080964431565037578/Polaris_Slingshot_Grand_Touring_LE_2020.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1080965213588832366/Polaris_Slingshot_Grand_Touring_LE_2020_Hud.png",
+    "creator": "DodgeDemon",
+
+    "333TopSpeed": 129,
+    "3330to60": 5.1,
+    "333Handling": 80,
+
+    "666TopSpeed": 133,
+    "6660to60": 4.9,
+    "666Handling": 82,
+
+    "699TopSpeed": 133,
+    "6990to60": 4.6,
+    "699Handling": 85,
+
+    "969TopSpeed": 137,
+    "9690to60": 4.9,
+    "969Handling": 85,
+
+    "996TopSpeed": 137,
+    "9960to60": 4.6,
+    "996Handling": 82
+}

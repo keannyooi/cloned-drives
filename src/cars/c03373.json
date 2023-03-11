@@ -1,0 +1,49 @@
+{
+    "rq": 32,
+    "make": "Porsche",
+    "model": "911 2.0 Targa",
+    "modelYear": 1966,
+    "country": "DE",
+    "topSpeed": 127,
+    "0to60": 8.8,
+    "handling": 68,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 1090,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 52.3,
+    "ola": 73.4,
+    "description": "The name 'Targa' came from the Targa Florio sports car road race in Sicily, in which Porsche had scored seven victories since 1956. Porsche had feared the U.S. National Highway Traffic Safety Administration (NHTSA) would outlaw fully open convertibles, so they made an alternative.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1081245922131972146/9019112.0Targa1966.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1081247276258820167/9019112.0Targa1966.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 131,
+"3330to60": 8.4,
+"333Handling": 70,
+
+"666TopSpeed": 135,
+"6660to60": 7.9,
+"666Handling": 72,
+
+"699TopSpeed": 135,
+"6990to60": 7.5,
+"699Handling": 75,
+
+"969TopSpeed": 139,
+"9690to60": 7.9,
+"969Handling": 75,
+
+"996TopSpeed": 139,
+"9960to60": 7.5,
+"996Handling": 72
+}

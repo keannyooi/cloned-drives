@@ -1,0 +1,49 @@
+{
+    "rq": 29,
+    "make": "Porsche",
+    "model": "911 2.0 Sportomatic",
+    "modelYear": 1968,
+    "country": "DE",
+    "topSpeed": 119,
+    "0to60": 9.8,
+    "handling": 69,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix","Unique"],
+    "isPrize": false,
+	
+    "weight": 1090,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 52.3,
+    "ola": 73.4,
+    "description": "Very few of the basic Sportomatic's were made as it was almost instantly replaced by the 911 E Sportomatic.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1081245955426357418/9019112.0sportomatic1968.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1081247292725678201/9019112.0sportomatic1968.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 123,
+"3330to60": 9.3,
+"333Handling": 71,
+
+"666TopSpeed": 128,
+"6660to60": 8.8,
+"666Handling": 74,
+
+"699TopSpeed": 128,
+"6990to60": 8.3,
+"699Handling": 77,
+
+"969TopSpeed": 132,
+"9690to60": 8.8,
+"969Handling": 77,
+
+"996TopSpeed": 132,
+"9960to60": 8.3,
+"996Handling": 74
+}

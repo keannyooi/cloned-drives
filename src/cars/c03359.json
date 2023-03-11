@@ -1,0 +1,50 @@
+{
+    "rq": 36,
+    "make": "Mercedes-Benz",
+    "model": "G 400 CDI Cabrio",
+    "modelYear": 2002,
+    "country": "DE",
+    "topSpeed": 114,
+    "0to60": 9.4,
+    "handling": 60,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+    "weight": 2400,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 43.72,
+    "ola": 59.57,
+    "description": "",
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/952618453997596732/Mercedes-BenzG400CDICabrio.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1061658632908984482/G400CDIcabrio2002.png",
+    "creator": "Havvy",
+
+    "333TopSpeed": 119,
+    "3330to60": 8.9,
+    "333Handling": 62,
+
+    "666TopSpeed": 123,
+    "6660to60": 8.5,
+    "666Handling": 64,
+
+    "996TopSpeed": 128,
+    "9960to60": 8.0,
+    "996Handling": 64,
+
+    "969TopSpeed": 128,
+    "9690to60": 8.5,
+    "969Handling": 67,
+
+    "699TopSpeed": 123,
+    "6990to60": 8.0,
+    "699Handling": 67
+}

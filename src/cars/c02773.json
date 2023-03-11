@@ -1,6 +1,6 @@
 {
     "rq": 95,
-    "make": ["Hennessey", "RAM", "Dodge"],
+    "make": ["Hennessey", "Ram", "Dodge"],
     "model": "Mammoth 1000 TRX",
     "modelYear": 2021,
     "country": "US",
@@ -9,7 +9,7 @@
     "handling": 66,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": ["Tuner"],
+    "tags": ["Tuner","Extreme Juggernaut"],
     "isPrize": true,
 	
     "weight": 2900,

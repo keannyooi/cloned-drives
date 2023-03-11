@@ -1,0 +1,49 @@
+{
+    "rq": 92,
+    "make": "Aston Martin",
+    "model": "Vulcan by RML Group",
+    "modelYear": 2017,
+    "country": "GB",
+    "topSpeed": 224,
+    "0to60": 3.0,
+    "handling": 96,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Unique","The Midlands Cruise","Ultra Expensive","Tuner","Track Day"],
+    "isPrize": false,
+	
+    "weight": 1362,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 110.45,
+    "ola": 86.66,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1035913596653285397/VulcanRoad.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1035913658821263392/VulcanRoad.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 226, 
+"3330to60": 2.8, 
+"333Handling": 99,
+
+"666TopSpeed": 229, 
+"6660to60": 2.7, 
+"666Handling": 102,
+
+"699TopSpeed": 229, 
+"6990to60": 2.6, 
+"699Handling": 107,
+
+"969TopSpeed": 231, 
+"9690to60": 2.7, 
+"969Handling": 107,
+
+"996TopSpeed": 231, 
+"9960to60": 2.6, 
+"996Handling": 102
+}

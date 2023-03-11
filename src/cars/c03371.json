@@ -1,0 +1,49 @@
+{
+    "rq": 34,
+    "make": "Porsche",
+    "model": "911 2.0",
+    "modelYear": 1964,
+    "country": "DE",
+    "topSpeed": 131,
+    "0to60": 8.6,
+    "handling": 69,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix", "Style Icon"],
+    "isPrize": false,
+	
+    "weight": 1078,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 58.18,
+    "ola": 77.17,
+    "description": "The middle of the pack 901 generation with the iconic 130ps Flat-6 2.0L Boxster engine. People often refer to the 901 gen as the O,A & B series.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1081245900011225231/9019112.01964.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1081247258688889002/9019112.01964.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 135,
+"3330to60": 8.2,
+"333Handling": 71,
+
+"666TopSpeed": 139,
+"6660to60": 7.7,
+"666Handling": 74,
+
+"699TopSpeed": 139,
+"6990to60": 7.3,
+"699Handling": 77,
+
+"969TopSpeed": 143,
+"9690to60": 7.7,
+"969Handling": 77,
+
+"996TopSpeed": 143,
+"9960to60": 7.3,
+"996Handling": 74
+}

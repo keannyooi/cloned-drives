@@ -1,0 +1,50 @@
+{
+    "rq": 40,
+    "make": "Mercedes-Benz",
+    "model": "G 320 Cabrio",
+    "modelYear": 1997,
+    "country": "DE",
+    "topSpeed": 108,
+    "0to60": 10.3,
+    "handling": 60,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["Unique","The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+    "weight": 2100,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 31.4,
+    "ola": 62.14,
+    "description": "",
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/948611209207365663/havvyg320cab.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1061658352909811717/G320cabrio1997.png",
+    "creator": "Havvy",
+
+    "333TopSpeed": 113,
+    "3330to60": 9.8,
+    "333Handling": 62,
+
+    "666TopSpeed": 118,
+    "6660to60": 9.3,
+    "666Handling": 64,
+
+    "996TopSpeed": 122,
+    "9960to60": 8.8,
+    "996Handling": 64,
+
+    "969TopSpeed": 122,
+    "9690to60": 9.3,
+    "969Handling": 67,
+
+    "699TopSpeed": 118,
+    "6990to60": 8.8,
+    "699Handling": 67
+}
