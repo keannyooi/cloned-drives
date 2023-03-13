@@ -31,7 +31,7 @@ module.exports = {
         const dealerMessage = new InfoMessage({
             channel: message.channel,
             title: "Welcome to the black market, where special editions of cars are ~~smuggled~~ sold!",
-            desc: `The catalog refreshes every 3 days at 11:59p.m. UTC. Buy a car from here using \`cd-buycar\`!
+            desc: `The catalog refreshes every day! Buy a car from here using \`cd-buycar bm\`!
             **Current Trophy Balance**: ${trophyEmoji}${trophies.toLocaleString("en")}`,
             author: message.author,
             fields

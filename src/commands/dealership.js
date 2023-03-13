@@ -31,7 +31,7 @@ module.exports = {
         const dealerMessage = new InfoMessage({
             channel: message.channel,
             title: "Welcome to Cards&Bids, the go-to place for auto enthusiast cards!",
-            desc: `The catalog refreshes every day at 11:59p.m. UTC. Buy a car from here using \`cd-buycar\`!
+            desc: `The catalog refreshes twice a day! Buy a car from here using \`cd-buycar\`!
             **Current Money Balance:** ${moneyEmoji}${money.toLocaleString("en")}`,
             author: message.author,
             fields
