@@ -1,0 +1,51 @@
+{  
+    "rq": 23,
+    "make": "Fiat",
+    "model": "Panda 1.4 MyLife Natural Power",
+    "modelYear": 2011,
+    "country": "IT",
+    "topSpeed": 101,
+    "0to60": 12.3,
+    "handling": 68,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix", "Eco-Friendly"],
+    "isPrize": false,
+
+
+    "weight": 885,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Alternative",
+    "mra": 23.34,
+    "ola": 60.16,
+    "description": "My life, my rules, my style, my attitude. You love me or hate me, i don't care but don't play with me, ok.",
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1065606672581660752/Panda_14MyLifeNP.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1065607804532035694/Panda14MyLife.png",
+    "creator": "Andu",
+  
+    "333TopSpeed": 106,
+    "3330to60": 11.7,
+    "333Handling": 70,
+    
+    "666TopSpeed": 111,
+    "6660to60": 11.1,
+    "666Handling": 72,
+    
+    "699TopSpeed": 111,
+    "6990to60": 10.5,
+    "699Handling": 75,
+    
+    "969TopSpeed": 116,
+    "9690to60": 11.1,
+    "969Handling": 75,
+    
+    "996TopSpeed": 116,
+    "9960to60": 10.5,
+    "996Handling": 72
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 82,
+    "make": "Ferrari",
+    "model": "Enzo Targa MM",
+    "modelYear": 2004,
+    "country": "IT",
+    "topSpeed": 211,
+    "0to60": 3.3,
+    "handling": 89,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix", "Unique","Ultra Expensive","Supercar"],
+    "isPrize": false,
+	
+    "weight": 1520,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 90,
+    "ola": 93.56,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1061644980793397358/EnzoTargaMM.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1061645616033317007/EnzoTargaMM.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 213,
+"3330to60": 3.1,
+"333Handling": 92,
+
+"666TopSpeed": 216,
+"6660to60": 3,
+"666Handling": 95,
+
+"699TopSpeed": 216,
+"6990to60": 2.8,
+"699Handling": 99,
+
+"969TopSpeed": 218,
+"9690to60": 3,
+"969Handling": 99,
+
+"996TopSpeed": 218,
+"9960to60": 2.8,
+"996Handling": 95
+}

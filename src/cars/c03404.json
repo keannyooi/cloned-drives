@@ -1,0 +1,51 @@
+{  
+    "rq": 19,
+    "make": "Fiat",
+    "model": "Panda 4x4 Sisley",
+    "modelYear": 1988,
+    "country": "IT",
+    "topSpeed": 82,
+    "0to60": 16.9,
+    "handling": 62,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["The Tyrol Tour: Remix","Oddity"],
+    "isPrize": true,
+
+
+    "weight": 740,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 1.55,
+    "ola": 48.52,
+    "description": "Why climb one mountain when you can climb 2 or 3 or 4 or 5 or...",
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1065606260902342716/PandaSisley.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1065607443356336188/PandaSisley.png",
+    "creator": "Andu",
+    
+    "333TopSpeed": 88,
+    "3330to60": 16.1,
+    "333Handling": 64,
+    
+    "666TopSpeed": 95,
+    "6660to60": 15.2,
+    "666Handling": 66,
+    
+    "699TopSpeed": 95,
+    "6990to60": 14.4,
+    "699Handling": 69,
+    
+    "969TopSpeed": 101,
+    "9690to60": 15.2,
+    "969Handling": 69,
+    
+    "996TopSpeed": 101,
+    "9960to60": 14.4,
+    "996Handling": 66
+}

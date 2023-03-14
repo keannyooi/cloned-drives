@@ -1,0 +1,51 @@
+{  
+    "rq": 1,
+    "make": "Fiat",
+    "model": "Panda Elettra",
+    "modelYear": 1992,
+    "country": "IT",
+    "topSpeed": 43,
+    "0to60": 99.9,
+    "handling": 50,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix", "Eco-Friendly"],
+    "isPrize": false,
+
+
+    "weight": 1150,
+    "gc": "Medium",
+    "seatCount":2,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 0.00,
+    "ola": 14.50,
+    "description": "Come Judge for me.",
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1065606317257019522/PandaElettra.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1065607493616672778/PandaElettra.png",
+    "creator": "Andu",
+  
+    "333TopSpeed": 52,
+    "3330to60": 99.9,
+    "333Handling": 52,
+    
+    "666TopSpeed": 60,
+    "6660to60": 58.9,
+    "666Handling": 53,
+    
+    "699TopSpeed": 60,
+    "6990to60": 55.8,
+    "699Handling": 56,
+    
+    "969TopSpeed": 69,
+    "9690to60": 58.9,
+    "969Handling": 56,
+    
+    "996TopSpeed": 69,
+    "9960to60": 55.8,
+    "996Handling": 53
+}

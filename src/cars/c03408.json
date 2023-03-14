@@ -1,0 +1,51 @@
+{  
+    "rq": 15,
+    "make": "Fiat",
+    "model": "Panda 1100 Business Van",
+    "modelYear": 2000,
+    "country": "IT",
+    "topSpeed": 87,
+    "0to60": 15.5,
+    "handling": 63,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+
+    "weight": 650,
+    "gc": "Medium",
+    "seatCount":2,
+    "bodyStyle": "Commercial",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 10.55,
+    "ola": 54.16,
+    "description": "For the working girls, the working boys and the working thems!",
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1065606191176237106/PandaVan.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1065607409436995635/PandaVan.png",
+    "creator": "Andu",
+   
+    "333TopSpeed": 93,
+    "3330to60": 14.7,
+    "333Handling": 65,
+    
+    "666TopSpeed": 99,
+    "6660to60": 14,
+    "666Handling": 67,
+    
+    "699TopSpeed": 99,
+    "6990to60": 13.2,
+    "699Handling": 70,
+    
+    "969TopSpeed": 105,
+    "9690to60": 14,
+    "969Handling": 70,
+    
+    "996TopSpeed": 105,
+    "9960to60": 13.2,
+    "996Handling": 67
+}

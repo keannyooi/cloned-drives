@@ -1,0 +1,49 @@
+{
+    "rq": 99,
+    "make": "Ferrari",
+    "model": "FXX Evoluzione",
+    "modelYear": 2007,
+    "country": "IT",
+    "topSpeed": 242,
+    "0to60": 2.4,
+    "handling": 97,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["The Tyrol Tour: Remix","Track Day","Ultra Expensive","Unique","Supercar"],
+    "isPrize": true,
+	
+    "weight": 1150,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 110.9,
+    "ola": 83.33,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1061645031708041256/FXXEvoluzion.png,
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1061645651223515166/FXXEvo.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 244,
+"3330to60": 2.3,
+"333Handling": 100,
+
+"666TopSpeed": 246,
+"6660to60": 2.2,
+"666Handling": 103,
+
+"699TopSpeed": 246,
+"6990to60": 2,
+"699Handling": 108,
+
+"969TopSpeed": 248,
+"9690to60": 2.2,
+"969Handling": 108,
+
+"996TopSpeed": 248,
+"9960to60": 2,
+"996Handling": 103
+}

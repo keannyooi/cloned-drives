@@ -1,0 +1,49 @@
+{
+    "rq": 83,
+    "make": "Ferrari",
+    "model": "FX",
+    "modelYear": 2001,
+    "country": "IT",
+    "topSpeed": 210,
+    "0to60": 3.3,
+    "handling": 90,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix", "Unique", "Track Day"],
+    "isPrize": false,
+	
+    "weight": 1390,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 92.87,
+    "ola": 90,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1061644945406050364/FX.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1061645598857637988/FX.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 212,
+"3330to60": 3.1,
+"333Handling": 93,
+
+"666TopSpeed": 215,
+"6660to60": 3,
+"666Handling": 96,
+
+"699TopSpeed": 215,
+"6990to60": 2.8,
+"699Handling": 100,
+
+"969TopSpeed": 217,
+"9690to60": 3,
+"969Handling": 100,
+
+"996TopSpeed": 217,
+"9960to60": 2.8,
+"996Handling": 96
+}

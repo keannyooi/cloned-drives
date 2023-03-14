@@ -1,0 +1,51 @@
+{  
+    "rq": 6,
+    "make": ["Mes-Dea","Fiat"],
+    "model": "Panda Elettrica",
+    "modelYear": 2007,
+    "country": "IT",
+    "topSpeed": 63,
+    "0to60": 27.0,
+    "handling": 63,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix", "Eco-Friendly"],
+    "isPrize": false,
+
+
+    "weight": 999,
+    "gc": "Medium",
+    "seatCount":4,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 0.00,
+    "ola": 51.11,
+    "description": "This paved the way for Teslas.",
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1065606696283672596/MesDeaPandaElettrica.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1065607833632129075/PandaMesDea.png",
+    "creator": "Andu",
+  
+    "333TopSpeed": 71,
+    "3330to60": 25.6,
+    "333Handling": 65,
+    
+    "666TopSpeed": 80,
+    "6660to60": 24.3,
+    "666Handling": 67,
+    
+    "699TopSpeed": 80,
+    "6990to60": 22.9,
+    "699Handling": 70,
+    
+    "969TopSpeed": 88,
+    "9690to60": 24.3,
+    "969Handling": 70,
+    
+    "996TopSpeed": 88,
+    "9960to60": 22.9,
+    "996Handling": 67
+}

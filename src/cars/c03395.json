@@ -1,0 +1,51 @@
+{  
+    "rq": 18,
+    "make": "Fiat",
+    "model": "Panda 1.2 Dynamic",
+    "modelYear": 2003,
+    "country": "IT",
+    "topSpeed": 95,
+    "0to60": 14.4,
+    "handling": 67,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+
+    "weight": 860,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 17.17,
+    "ola": 56.94,
+    "description": "Dynamically Sound.",
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1065606473712934952/Panda12Dynamic.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1065607649439264818/Panda12Dynamic.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 100,
+    "3330to60": 13.7,
+    "333Handling": 69,
+    
+    "666TopSpeed": 106,
+    "6660to60": 13,
+    "666Handling": 71,
+    
+    "699TopSpeed": 106,
+    "6990to60": 12.2,
+    "699Handling": 74,
+    
+    "969TopSpeed": 111,
+    "9690to60": 13,
+    "969Handling": 74,
+    
+    "996TopSpeed": 111,
+    "9960to60": 12.2,
+    "996Handling": 71
+}

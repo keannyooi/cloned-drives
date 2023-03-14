@@ -1,0 +1,51 @@
+{  
+    "rq": 21,
+    "make": "Fiat",
+    "model": "Panda 1.2 Pandazzurri",
+    "modelYear": 2016,
+    "country": "IT",
+    "topSpeed": 102,
+    "0to60": 13.7,
+    "handling": 70,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+
+    "weight": 970,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 19.23,
+    "ola": 61.27,
+    "description": "FORZA ITALIA!",
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1066141094741545020/Pandazzurri.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1066142173478785054/Pandazzurri.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 107,
+    "3330to60": 13,
+    "333Handling": 72,
+    
+    "666TopSpeed": 112,
+    "6660to60": 12.3,
+    "666Handling": 75,
+    
+    "699TopSpeed": 112,
+    "6990to60": 11.6,
+    "699Handling": 78,
+    
+    "969TopSpeed": 117,
+    "9690to60": 12.3,
+    "969Handling": 78,
+    
+    "996TopSpeed": 117,
+    "9960to60": 11.6,
+    "996Handling": 75
+}

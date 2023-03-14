@@ -1,0 +1,51 @@
+{  
+    "rq": 30,
+    "make": "Fiat",
+    "model": "Panda 0.9 Twinair Turbo 4x4 Cross",
+    "modelYear": 2014,
+    "country": "IT",
+    "topSpeed": 102,
+    "0to60": 12.2,
+    "handling": 69,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+
+    "weight": 1065,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 21.04,
+    "ola": 57.53,
+    "description": "Oh look! The Rock! lemme just trample him real quick.",
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1066141208205873242/Panda09TwinAT4x4Cross.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1066142241464274954/PandaCross09TA.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 107,
+    "3330to60": 11.6,
+    "333Handling": 71,
+    
+    "666TopSpeed": 112,
+    "6660to60": 11,
+    "666Handling": 74,
+    
+    "699TopSpeed": 112,
+    "6990to60": 10.4,
+    "699Handling": 77,
+    
+    "969TopSpeed": 117,
+    "9690to60": 11,
+    "969Handling": 77,
+    
+    "996TopSpeed": 117,
+    "9960to60": 10.4,
+    "996Handling": 74
+}

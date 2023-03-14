@@ -1,0 +1,51 @@
+{  
+    "rq": 32,
+    "make": "Fiat",
+    "model": "Panda 1.2 Rally",
+    "modelYear": 2006,
+    "country": "IT",
+    "topSpeed": 122,
+    "0to60": 7.2,
+    "handling": 78,
+    "driveType": "FWD",
+    "tyreType": "Slick",
+    "tags": ["The Tyrol Tour: Remix", "Motorsport"],
+    "isPrize": false,
+
+
+    "weight": 780,
+    "gc": "Low",
+    "seatCount":2,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 45.57,
+    "ola": 69.44,
+    "description": "Bites like a scorpion.",
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1065606859546951750/Panda12Rally.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1065607898039865354/Panda12Rally.png",
+    "creator": "Andu",
+   
+    "333TopSpeed": 126,
+    "3330to60": 6.8,
+    "333Handling": 81,
+    
+    "666TopSpeed": 131,
+    "6660to60": 6.5,
+    "666Handling": 83,
+    
+    "699TopSpeed": 131,
+    "6990to60": 6.1,
+    "699Handling": 87,
+    
+    "969TopSpeed": 135,
+    "9690to60": 6.5,
+    "969Handling": 87,
+    
+    "996TopSpeed": 135,
+    "9960to60": 6.1,
+    "996Handling": 83
+}

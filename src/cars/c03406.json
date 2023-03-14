@@ -1,0 +1,51 @@
+{  
+    "rq": 14,
+    "make": "Fiat",
+    "model": "Panda 45",
+    "modelYear": 1980,
+    "country": "IT",
+    "topSpeed": 87,
+    "0to60": 16.5,
+    "handling": 63,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix", "Style Icon"],
+    "isPrize": false,
+
+
+    "weight": 680,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 5.55,
+    "ola": 49.60,
+    "description": "45 for the number of how many BK Whoppers you can fit in the boot.",
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1065606029515173968/Panda45.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1065607249046814780/Panda45.png",
+    "creator": "Andu",
+  
+    "333TopSpeed": 93,
+    "3330to60": 15.7,
+    "333Handling": 65,
+    
+    "666TopSpeed": 99,
+    "6660to60": 14.8,
+    "666Handling": 67,
+    
+    "699TopSpeed": 99,
+    "6990to60": 14,
+    "699Handling": 70,
+    
+    "969TopSpeed": 105,
+    "9690to60": 14.8,
+    "969Handling": 70,
+    
+    "996TopSpeed": 105,
+    "9960to60": 14,
+    "996Handling": 67
+}

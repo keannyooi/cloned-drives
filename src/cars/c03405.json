@@ -1,0 +1,51 @@
+{  
+    "rq": 6,
+    "make": "Fiat",
+    "model": "Panda 30",
+    "modelYear": 1980,
+    "country": "IT",
+    "topSpeed": 73,
+    "0to60": 31.0,
+    "handling": 60,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix", "Style Icon"],
+    "isPrize": false,
+
+
+    "weight": 650,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 0.00,
+    "ola": 40.71,
+    "description": "The re-birth of the italian car for the masses.",
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1065605910254329866/Panda30.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1065607180612554792/Panda30.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 80,
+    "3330to60": 29.4,
+    "333Handling": 62,
+    
+    "666TopSpeed": 87,
+    "6660to60": 27.9,
+    "666Handling": 64,
+    
+    "699TopSpeed": 87,
+    "6990to60": 26.3,
+    "699Handling": 67,
+    
+    "969TopSpeed": 94,
+    "9690to60": 27.9,
+    "969Handling": 67,
+    
+    "996TopSpeed": 94,
+    "9960to60": 26.3,
+    "996Handling": 64
+}

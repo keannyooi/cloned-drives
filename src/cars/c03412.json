@@ -1,0 +1,51 @@
+{  
+    "rq": 57,
+    "make": "Fiat",
+    "model": "PanDAKAR",
+    "modelYear": 2017,
+    "country": "IT",
+    "topSpeed": 120,
+    "0to60": 7.5,
+    "handling": 70,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["The Tyrol Tour: Remix", "Motorsport"],
+    "isPrize": false,
+
+
+    "weight": 1400,
+    "gc": "High",
+    "seatCount":2,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 58.14,
+    "ola": 58.67,
+    "description": "More powerful, more better, more Panda.",
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1066141572015595590/Pandakar.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1066142537380802652/Pandakar2017.png",
+    "creator": "Andu",
+  
+    "333TopSpeed": 124,
+    "3330to60": 7.1,
+    "333Handling": 72,
+    
+    "666TopSpeed": 129,
+    "6660to60": 6.8,
+    "666Handling": 75,
+    
+    "699TopSpeed": 129,
+    "6990to60": 6.4,
+    "699Handling": 78,
+    
+    "969TopSpeed": 133,
+    "9690to60": 6.8,
+    "969Handling": 78,
+    
+    "996TopSpeed": 133,
+    "9960to60": 6.4,
+    "996Handling": 75
+}

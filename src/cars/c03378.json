@@ -1,0 +1,49 @@
+{
+    "rq": 87,
+    "make": "Ferrari",
+    "model": "Enzo GT prototype",
+    "modelYear": 2002,
+    "country": "IT",
+    "topSpeed": 211,
+    "0to60": 3.1,
+    "handling": 95,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Track Day","Unique","Concept","The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 1290,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 95.7,
+    "ola": 92.34,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1061644643428732949/EnzoGTProto.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1061645416736768000/EnzoGTProto.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 213,
+"3330to60": 2.9,
+"333Handling": 98,
+
+"666TopSpeed": 216,
+"6660to60": 2.8,
+"666Handling": 101,
+
+"699TopSpeed": 216,
+"6990to60": 2.6,
+"699Handling": 105,
+
+"969TopSpeed": 218,
+"9690to60": 2.8,
+"969Handling": 105,
+
+"996TopSpeed": 218,
+"9960to60": 2.6,
+"996Handling": 101
+}

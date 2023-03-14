@@ -1,0 +1,52 @@
+{
+    "rq": 25,
+    "make": "Fiat",
+    "model": "500L 1.6 Multijet Lounge",
+    "modelYear": 2018,
+    "country": "IT",
+    "topSpeed": 114,
+    "0to60": 11.4,
+    "handling": 68,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+
+    "weight": 1380,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 46.54,
+    "ola": 64.72,
+    "description": "Practical and well made, but you need to push it hard.",
+
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1051617410207199332/500L16MJLounge.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1051615713544122378/500L16MJTLounge.png",
+    "creator": "Andu",
+    
+    "333TopSpeed": 119,
+    "3330to60": 10.8,
+    "333Handling": 70,
+    
+    "666TopSpeed": 123,
+    "6660to60": 10.3,
+    "666Handling": 72,
+    
+    "699TopSpeed": 123,
+    "6990to60": 9.7,
+    "699Handling": 75,
+    
+    "969TopSpeed": 128,
+    "9690to60": 10.3,
+    "969Handling": 75,
+    
+    "996TopSpeed": 128,
+    "9960to60": 9.7,
+    "996Handling": 72
+}
