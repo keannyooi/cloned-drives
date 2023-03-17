@@ -1,0 +1,49 @@
+{
+    "rq": 112,
+    "make": "Porsche",
+    "model": "911 Turbo Safari Prototype",
+    "modelYear": 2021,
+    "country": "DE",
+    "topSpeed": 190,
+    "0to60": 2.5,
+    "handling": 92,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["The Tyrol Tour: Remix","Unique","Concept","Supercar"],
+    "isPrize": true,
+	
+    "weight": 1750,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 88.88,
+    "ola": 100,
+    "description": "Before unveiling the 911 Dakar, Porsche had experimented with different Safari prototypes, including this 911 Turbo S with a lifted suspension, all season tyres and a coupe of hidden changes.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1081246453600620555/992TurboSafariprototype.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1081247837460893776/992TruboSafari.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 193,
+"3330to60": 2.4,
+"333Handling": 95,
+
+"666TopSpeed": 195,
+"6660to60": 2.3,
+"666Handling": 98,
+
+"699TopSpeed": 195,
+"6990to60": 2.1,
+"699Handling": 102,
+
+"969TopSpeed": 198,
+"9690to60": 2.3,
+"969Handling": 102,
+
+"996TopSpeed": 198,
+"9960to60": 2.1,
+"996Handling": 98
+}

@@ -1,0 +1,50 @@
+{
+    "rq": 5,
+    "make": "NSU",
+    "model": "Sport Prinz",
+    "modelYear": 1958,
+    "country": "DE",
+    "topSpeed": 81,
+    "0to60": 23.8,
+    "handling": 56,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+
+    "weight": 530,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 9.44,
+    "ola": 45.37,
+    "description": "Sport Prinz is nothing more than a Prinz I with a slight power boost and a beautiful body.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1077316002649489438/F.NSUPrinzSport.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1077323745582137354/PrinzSport.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 87,
+    "3330to60": 22.6,
+    "333Handling": 58,
+
+    "666TopSpeed": 94,
+    "6660to60": 21.4, 
+    "666Handling": 60,
+
+    "996TopSpeed": 100,
+    "9960to60": 20.2,
+    "996Handling": 60,
+
+    "969TopSpeed": 100,
+    "9690to60": 21.4,
+    "969Handling": 62,
+
+    "699TopSpeed": 94,
+    "6990to60": 20.2,
+    "699Handling": 62
+}

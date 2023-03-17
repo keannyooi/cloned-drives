@@ -1,0 +1,50 @@
+{
+    "rq": 35,
+    "make": "Mercedes-Benz",
+    "model": "G 400 CDI",
+    "modelYear": 2000,
+    "country": "DE",
+    "topSpeed": 112,
+    "0to60": 9.7,
+    "handling": 59,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+    "weight": 2510,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 42.73,
+    "ola": 59.79,
+    "description": "",
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/952618399790403624/Mercedes-BenzG400CDI.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1061658564088840222/G400CDI2000.png",
+    "creator": "Havvy",
+
+    "333TopSpeed": 117,
+    "3330to60": 9.2,
+    "333Handling": 61,
+
+    "666TopSpeed": 121,
+    "6660to60": 8.7,
+    "666Handling": 63,
+
+    "996TopSpeed": 126,
+    "9960to60": 8.2,
+    "996Handling": 63,
+
+    "969TopSpeed": 126,
+    "9690to60": 8.7,
+    "969Handling": 65,
+
+    "699TopSpeed": 121,
+    "6990to60": 8.2,
+    "699Handling": 65
+}

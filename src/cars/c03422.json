@@ -1,0 +1,49 @@
+{
+    "rq": 94,
+    "make": ["Edo Competition", "Maserati"],
+    "model": "MC12 Versione Corsa",
+    "modelYear": 2007,
+    "country": "DE",
+    "topSpeed": 242,
+    "0to60": 2.8,
+    "handling": 97,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Unique","Ultra Expensive","Track Day","Tuner","The Tyrol Tour: Remix"],
+    "isPrize": true,
+	
+    "weight": 1150,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 105.7,
+    "ola": 90,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1061644859099840612/EdoMC12VersioneCorsa.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1061645541827682395/edoMC12VC.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 244,
+"3330to60": 2.7,
+"333Handling": 100,
+
+"666TopSpeed": 246,
+"6660to60": 2.5,
+"666Handling": 103,
+
+"699TopSpeed": 246,
+"6990to60": 2.4,
+"699Handling": 108,
+
+"969TopSpeed": 248,
+"9690to60": 2.5,
+"969Handling": 108,
+
+"996TopSpeed": 248,
+"9960to60": 2.4,
+"996Handling": 103
+}

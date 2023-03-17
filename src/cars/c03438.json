@@ -1,0 +1,50 @@
+{
+    "rq": 13,
+    "make": "NSU",
+    "model": "Spider Wankel",
+    "modelYear": 1963,
+    "country": "DE",
+    "topSpeed": 95,
+    "0to60": 15.1,
+    "handling": 59,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Innovative", "The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+
+    "weight": 700,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 10.44,
+    "ola": 66.22,
+    "description": "First Rotary powered production car.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1077316047755026443/F.NSUSpiderWankel.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1077324289415577750/Wanker.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 100,
+    "3330to60": 14.3,
+    "333Handling": 61,
+
+    "666TopSpeed": 106,
+    "6660to60": 13.6, 
+    "666Handling": 63,
+
+    "996TopSpeed": 111,
+    "9960to60": 12.8,
+    "996Handling": 63,
+
+    "969TopSpeed": 111,
+    "9690to60": 13.6,
+    "969Handling": 65,
+
+    "699TopSpeed": 106,
+    "6990to60": 12.8,
+    "699Handling": 65
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 96,
+    "make": ["Edo Competition", "Ferrari"],
+    "model": "XX Evolution",
+    "modelYear": 2009,
+    "country": "DE",
+    "topSpeed": 245,
+    "0to60": 2.6,
+    "handling": 94,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix","Unique","Tuner","Ultra Expensive","Supercar","Track Day"],
+    "isPrize": false,
+	
+    "weight": 1210,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 105,
+    "ola": 90,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1061645106089840691/EdoXXEvolution.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1061645740914524221/EdoXXEvo.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 247,
+"3330to60": 2.5,
+"333Handling": 97,
+
+"666TopSpeed": 249,
+"6660to60": 2.3,
+"666Handling": 100,
+
+"699TopSpeed": 249,
+"6990to60": 2.2,
+"699Handling": 104,
+
+"969TopSpeed": 251,
+"9690to60": 2.3,
+"969Handling": 104,
+
+"996TopSpeed": 251,
+"9960to60": 2.2,
+"996Handling": 100
+}

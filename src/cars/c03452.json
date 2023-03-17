@@ -1,0 +1,49 @@
+{
+    "rq": 84,
+    "make": ["TechArt", "Porsche"],
+    "model": "911 Carrera 4S Cabriolet",
+    "modelYear": 2020,
+    "country": "DE",
+    "topSpeed": 192,
+    "0to60": 3.4,
+    "handling": 89,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix","Tuner","Supercar"],
+    "isPrize": false,
+	
+    "weight": 1600,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 82.4,
+    "ola": 80,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1081246513201684590/TechArtCarrera4SCab20.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1081247872323948625/TechArtCarrera4SCab20.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 195,
+"3330to60": 3.2,
+"333Handling": 92,
+
+"666TopSpeed": 197,
+"6660to60": 3.1,
+"666Handling": 95,
+
+"699TopSpeed": 197,
+"6990to60": 2.9,
+"699Handling": 99,
+
+"969TopSpeed": 200,
+"9690to60": 3.1,
+"969Handling": 99,
+
+"996TopSpeed": 200,
+"9960to60": 2.9,
+"996Handling": 95
+}

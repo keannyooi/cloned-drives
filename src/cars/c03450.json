@@ -1,0 +1,49 @@
+{
+    "rq": 50,
+    "make": "Porsche",
+    "model": "911 T/R",
+    "modelYear": 1968,
+    "country": "DE",
+    "topSpeed": 159,
+    "0to60": 5.9,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix","Track Day"],
+    "isPrize": false,
+	
+    "weight": 950,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 66.66,
+    "ola": 80,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1081246277733457930/901911T-R1968.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1081247722968993822/901911TR2.0.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 162,
+"3330to60": 5.6,
+"333Handling": 77,
+
+"666TopSpeed": 166,
+"6660to60": 5.3,
+"666Handling": 80,
+
+"699TopSpeed": 166,
+"6990to60": 5,
+"699Handling": 83,
+
+"969TopSpeed": 169,
+"9690to60": 5.3,
+"969Handling": 83,
+
+"996TopSpeed": 169,
+"9960to60": 5,
+"996Handling": 80
+}

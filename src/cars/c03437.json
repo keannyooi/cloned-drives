@@ -1,0 +1,50 @@
+{
+    "rq": 19,
+    "make": "NSU",
+    "model": "Ro80",
+    "modelYear": 1967,
+    "country": "DE",
+    "topSpeed": 110,
+    "0to60": 13.1,
+    "handling": 63,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Innovative", "The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+
+    "weight": 1289,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 40.68,
+    "ola": 73.28,
+    "description": "Innovative and advanced Ro80 ultimately spelled the end for the NSU brand.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1077315697996201994/F.NSURo80.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1077322220398981230/Ro80.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 115,
+    "3330to60": 12.4,
+    "333Handling": 65,
+
+    "666TopSpeed": 119,
+    "6660to60": 11.8, 
+    "666Handling": 67,
+
+    "996TopSpeed": 124,
+    "9960to60": 11.1,
+    "996Handling": 67,
+
+    "969TopSpeed": 124,
+    "9690to60": 11.8,
+    "969Handling": 70,
+
+    "699TopSpeed": 119,
+    "6990to60": 11.1,
+    "699Handling": 70
+}

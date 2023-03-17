@@ -1,0 +1,49 @@
+{
+    "rq": 33,
+    "make": "Porsche",
+    "model": "911 Roadster Bertone",
+    "modelYear": 1966,
+    "country": "DE",
+    "topSpeed": 131,
+    "0to60": 8.7,
+    "handling": 68,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix","Concept","Unique"],
+    "isPrize": false,
+	
+    "weight": 1050,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 52.3,
+    "ola": 77.17,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1081246212637872168/901911Bertone.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1081247655730102272/901911Bertone.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 135,
+"3330to60": 8.3,
+"333Handling": 70,
+
+"666TopSpeed": 139,
+"6660to60": 7.8,
+"666Handling": 72,
+
+"699TopSpeed": 139,
+"6990to60": 7.4,
+"699Handling": 75,
+
+"969TopSpeed": 143,
+"9690to60": 7.8,
+"969Handling": 75,
+
+"996TopSpeed": 143,
+"9960to60": 7.4,
+"996Handling": 72
+}

@@ -1,0 +1,50 @@
+{
+    "rq": 38,
+    "make": "Mercedes-Benz",
+    "model": "G 350 BlueTec",
+    "modelYear": 2010,
+    "country": "DE",
+    "topSpeed": 109,
+    "0to60": 8.6,
+    "handling": 61,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+    "weight": 2425,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 26.71,
+    "ola": 72.09,
+    "description": "",
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/952619178697850950/Mercedes-BenzG350BlueCate.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1061658484925534258/G350bluetec2010.png",
+    "creator": "Havvy",
+
+    "333TopSpeed": 114,
+    "3330to60": 8.2,
+    "333Handling": 63,
+
+    "666TopSpeed": 119,
+    "6660to60": 7.7,
+    "666Handling": 65,
+
+    "996TopSpeed": 123,
+    "9960to60": 7.3,
+    "996Handling": 65,
+
+    "969TopSpeed": 123,
+    "9690to60": 7.7,
+    "969Handling": 68,
+
+    "699TopSpeed": 119,
+    "6990to60": 7.3,
+    "699Handling": 68
+}

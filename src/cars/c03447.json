@@ -1,0 +1,49 @@
+{
+    "rq": 32,
+    "make": "Porsche",
+    "model": "911 S 4-Door by Troutman",
+    "modelYear": 1967,
+    "country": "DE",
+    "topSpeed": 125,
+    "0to60": 7.5,
+    "handling": 59,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix","Unique","Tuner","Concept","Oddity"],
+    "isPrize": false,
+	
+    "weight": 1550,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 45.92,
+    "ola": 82.5,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1081246305558478908/901911Troutman.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1081247743420399667/901911Troutman.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 129,
+"3330to60": 7.1,
+"333Handling": 61,
+
+"666TopSpeed": 133,
+"6660to60": 6.8,
+"666Handling": 63,
+
+"699TopSpeed": 133,
+"6990to60": 6.4,
+"699Handling": 65,
+
+"969TopSpeed": 137,
+"9690to60": 6.8,
+"969Handling": 65,
+
+"996TopSpeed": 137,
+"9960to60": 6.4,
+"996Handling": 63
+}

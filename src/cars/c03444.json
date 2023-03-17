@@ -1,0 +1,49 @@
+{
+    "rq": 38,
+    "make": "Porsche",
+    "model": "911 S 2.0",
+    "modelYear": 1966,
+    "country": "DE",
+    "topSpeed": 139,
+    "0to60": 6.9,
+    "handling": 72,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 1040,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 59.53,
+    "ola": 80.73,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1081246092643029002/901911S2.01966.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1081247459604439172/901911S2.0.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 143,
+"3330to60": 6.6,
+"333Handling": 74,
+
+"666TopSpeed": 146,
+"6660to60": 6.2,
+"666Handling": 77,
+
+"699TopSpeed": 146,
+"6990to60": 5.9,
+"699Handling": 80,
+
+"969TopSpeed": 150,
+"9690to60": 6.2,
+"969Handling": 80,
+
+"996TopSpeed": 150,
+"9960to60": 5.9,
+"996Handling": 77
+}

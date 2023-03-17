@@ -1,0 +1,50 @@
+{
+    "rq": 1,
+    "make": "NSU",
+    "model": "Prinz I",
+    "modelYear": 1957,
+    "country": "DE",
+    "topSpeed": 65,
+    "0to60": 49.6,
+    "handling": 45,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+
+    "weight": 476,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 0,
+    "ola": 66.22,
+    "description": "Fahre Prinz und Du bist Konig",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1077315941332955176/F.NSUPrinzI.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1077323508683636796/PrinzI.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 73,
+    "3330to60": 47.1,
+    "333Handling": 46,
+
+    "666TopSpeed": 81,
+    "6660to60": 44.6, 
+    "666Handling": 48,
+
+    "996TopSpeed": 89,
+    "9960to60": 42.2,
+    "996Handling": 48,
+
+    "969TopSpeed": 89,
+    "9690to60": 44.6,
+    "969Handling": 50,
+
+    "699TopSpeed": 81,
+    "6990to60": 42.2,
+    "699Handling": 50
+}

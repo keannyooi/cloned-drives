@@ -1,0 +1,49 @@
+{
+    "rq": 40,
+    "make": "Porsche",
+    "model": "911 T 2.0 Rallye",
+    "modelYear": 1968,
+    "country": "DE",
+    "topSpeed": 125,
+    "0to60": 9.5,
+    "handling": 68,
+    "driveType": "RWD",
+    "tyreType": "Off-Road",
+    "tags": ["The Tyrol Tour: Remix","Motorsport"],
+    "isPrize": false,
+	
+    "weight": 1140,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 42.54,
+    "ola": 70,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1081246248448823357/901911Trallye1968.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1081247687686500493/901911TRallye2.0.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 129,
+"3330to60": 9,
+"333Handling": 70,
+
+"666TopSpeed": 133,
+"6660to60": 8.6,
+"666Handling": 72,
+
+"699TopSpeed": 133,
+"6990to60": 8.1,
+"699Handling": 75,
+
+"969TopSpeed": 137,
+"9690to60": 8.6,
+"969Handling": 75,
+
+"996TopSpeed": 137,
+"9960to60": 8.1,
+"996Handling": 72
+}

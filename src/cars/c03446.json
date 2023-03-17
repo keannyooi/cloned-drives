@@ -1,0 +1,49 @@
+{
+    "rq": 30,
+    "make": "Porsche",
+    "model": "911 S 2.0 Targa Sportomatic",
+    "modelYear": 1968,
+    "country": "DE",
+    "topSpeed": 137,
+    "0to60": 8.0,
+    "handling": 70,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 1075,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 44.25,
+    "ola": 70.3,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1081246123987062885/901911S2.0TargaSportomatic.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1081247499186081905/901911S2.0Targa.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 141,
+"3330to60": 7.6,
+"333Handling": 72,
+
+"666TopSpeed": 145,
+"6660to60": 7.2,
+"666Handling": 75,
+
+"699TopSpeed": 145,
+"6990to60": 6.8,
+"699Handling": 78,
+
+"969TopSpeed": 148,
+"9690to60": 7.2,
+"969Handling": 78,
+
+"996TopSpeed": 148,
+"9960to60": 6.8,
+"996Handling": 75
+}

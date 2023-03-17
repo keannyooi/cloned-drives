@@ -1,0 +1,50 @@
+{
+    "rq": 3,
+    "make": "NSU",
+    "model": "Prinz 4",
+    "modelYear": 1961,
+    "country": "DE",
+    "topSpeed": 77,
+    "0to60": 27.7,
+    "handling": 55,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+
+    "weight": 559,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 00.00,
+    "ola": 46.20,
+    "description": "Replacement for the Prinz I, featuring styling inspired by the Chevy Corvair",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1077315895950594138/F.NSUPrinz4.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1077323272301072484/Prinz4.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 84,
+    "3330to60": 26.3,
+    "333Handling": 57,
+
+    "666TopSpeed": 91,
+    "6660to60": 24.9, 
+    "666Handling": 59,
+
+    "996TopSpeed": 97,
+    "9960to60": 23.5,
+    "996Handling": 59,
+
+    "969TopSpeed": 97,
+    "9690to60": 24.9,
+    "969Handling": 61,
+
+    "699TopSpeed": 91,
+    "6990to60": 23.5,
+    "699Handling": 61
+}

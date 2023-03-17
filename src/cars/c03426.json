@@ -1,0 +1,50 @@
+{
+    "rq": 36,
+    "make": "Mercedes-Benz",
+    "model": "G 320",
+    "modelYear": 1994,
+    "country": "DE",
+    "topSpeed": 109,
+    "0to60": 11.4,
+    "handling": 59,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+    "weight": 2280,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 26.76,
+    "ola": 66.67,
+    "description": "",
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/951542510675718214/Mercedes-BenzG320.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1061658664680828938/G3201994.png",
+    "creator": "Havvy",
+
+    "333TopSpeed": 114,
+    "3330to60": 10.8,
+    "333Handling": 61,
+
+    "666TopSpeed": 119,
+    "6660to60": 10.3,
+    "666Handling": 63,
+
+    "996TopSpeed": 123,
+    "9960to60": 9.7,
+    "996Handling": 63,
+
+    "969TopSpeed": 123,
+    "9690to60": 10.3,
+    "969Handling": 65,
+
+    "699TopSpeed": 119,
+    "6990to60": 9.7,
+    "699Handling": 65
+}

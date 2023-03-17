@@ -1,0 +1,50 @@
+{
+    "rq": 41,
+    "make": "Mercedes-Benz",
+    "model": "G 320 CDI Cabrio",
+    "modelYear": 2006,
+    "country": "DE",
+    "topSpeed": 110,
+    "0to60": 8.3,
+    "handling": 63,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+    "weight": 2185,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 34.58,
+    "ola": 62.65,
+    "description": "",
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/952618855883235358/Mercedes-BenzG320CDICabrio.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1061658432849072290/G320CDIcabrio2006.png",
+    "creator": "Havvy",
+
+    "333TopSpeed": 115,
+    "3330to60": 7.9,
+    "333Handling": 65,
+
+    "666TopSpeed": 119,
+    "6660to60": 7.5,
+    "666Handling": 67,
+
+    "996TopSpeed": 124,
+    "9960to60": 7.1,
+    "996Handling": 67,
+
+    "969TopSpeed": 124,
+    "9690to60": 7.5,
+    "969Handling": 70,
+
+    "699TopSpeed": 119,
+    "6990to60": 7.1,
+    "699Handling": 70
+}
