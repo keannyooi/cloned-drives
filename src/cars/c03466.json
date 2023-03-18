@@ -1,0 +1,49 @@
+{
+    "rq": 47,
+    "make": ["Dodge", "Ram"],
+    "model": "Ram VTS Concept",
+    "modelYear": 1996,
+    "country": "US",
+    "topSpeed": 137,
+    "0to60": 5.9,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Unique", "Concept", "Muscle Car", "The Americas Assault"],
+    "isPrize": true,
+	
+    "weight": 2000,
+    "gc": "Medium",
+    "seatCount": 3,
+    "bodyStyle": "Pickup",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 70.24,
+    "ola": 77.97,
+    "description": "The SRT-10’s lesser known older sibling.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1085600960799322174/Ram_VTS_Concept_1996.png",
+	"racehud": "https://media.discordapp.net/attachments/1077293403668234340/1085608084963082340/Ram_VTS_Concept_1996_Hud.png",
+    "creator": "DodgeDemon",
+
+"333TopSpeed": 141,
+"3330to60": 5.6,
+"333Handling": 77,
+
+"666TopSpeed": 145,
+"6660to60": 5.3,
+"666Handling": 80,
+
+"699TopSpeed": 145,
+"6990to60": 5.0,
+"699Handling": 83,
+
+"969TopSpeed": 148,
+"9690to60": 5.3,
+"969Handling": 83,
+
+"996TopSpeed": 148,
+"9960to60": 5.0,
+"996Handling": 80
+}

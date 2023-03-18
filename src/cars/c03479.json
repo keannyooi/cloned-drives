@@ -1,0 +1,49 @@
+{
+    "rq": 80,
+    "make": "Vector",
+    "model": "Avtech WX-3",
+    "modelYear": 1993,
+    "country": "US",
+    "topSpeed": 221,
+    "0to60": 3.7,
+    "handling": 83,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Supercar", "Oddity", "Unique","The Americas Assault"],
+    "isPrize": false,
+    
+    "weight": 1620,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 100,
+    "ola": 102.7,
+    "description": "None",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1039981551204704358/Vector_WX-3.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1039982103481286667/WX-3_Hud.png",
+    "creator": "Biszkoptowiec",
+
+    "333TopSpeed": 223,
+    "3330to60": 3.5,
+    "333Handling": 86,
+
+    "666TopSpeed": 226,
+    "6660to60": 3.3,
+    "666Handling": 88,
+
+    "996TopSpeed": 228,
+    "9960to60": 3.1,
+    "996Handling": 88,
+
+    "969TopSpeed": 228,
+    "9690to60": 3.3,
+    "969Handling": 92,
+
+    "699TopSpeed": 226,
+    "6990to60": 3.1,
+    "699Handling": 92
+}

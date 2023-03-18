@@ -1,0 +1,49 @@
+{
+    "rq": 68,
+    "make": ["RSL Racing", "Ferrari"],
+    "model": "Enzo MM",
+    "modelYear": 2010,
+    "country": "US",
+    "topSpeed": 239,
+    "0to60": 2.7,
+    "handling": 40,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Americas Assault","Ultra Expensive","Tuner","Unique","Oddity","Motorsport"],
+    "isPrize": true,
+	
+    "weight": 1255,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 125,
+    "ola": 104.55,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1061645176453464214/RSLEnzoMM.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1061645807327137802/RSLEnzoMM.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 241,
+"3330to60": 2.6,
+"333Handling": 41,
+
+"666TopSpeed": 243,
+"6660to60": 2.4,
+"666Handling": 43,
+
+"699TopSpeed": 243,
+"6990to60": 2.3,
+"699Handling": 44,
+
+"969TopSpeed": 246,
+"9690to60": 2.4,
+"969Handling": 44,
+
+"996TopSpeed": 246,
+"9960to60": 2.3,
+"996Handling": 43
+}

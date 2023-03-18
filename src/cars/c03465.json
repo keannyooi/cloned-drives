@@ -1,0 +1,49 @@
+{
+    "rq": 87,
+    "make": "Chevrolet",
+    "model": "Corvette Stingray Convertible",
+    "modelYear": 2020,
+    "country": "US",
+    "topSpeed": 194,
+    "0to60": 3.3,
+    "handling": 89,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Supercar","The Americas Assault"],
+    "isPrize": false,
+    
+    "weight": 1650,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 63.46,
+    "ola": 78.79,
+    "description": "The Florida boomermobile enters its next open top evolution, but don't worry you won't be sacrificing any room for those golf clubs.",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1060578986519973898/Chevrolet_Corvette_Stingray_Convertible_2020.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1060580569630658580/Chevrolet_Corvette_Stingray_Convertible_2020_Hud.png",
+    "creator": "DodgeDemon",
+
+    "333TopSpeed": 197,
+    "3330to60": 3.1,
+    "333Handling": 92,
+
+    "666TopSpeed": 199,
+    "6660to60": 3.0,
+    "666Handling": 95,
+
+    "699TopSpeed": 199,
+    "6990to60": 2.8,
+    "699Handling": 99,
+
+    "969TopSpeed": 202,
+    "9690to60": 3,
+    "969Handling": 99,
+
+    "996TopSpeed": 202,
+    "9960to60": 2.8,
+    "996Handling": 95
+}

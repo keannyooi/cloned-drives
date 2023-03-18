@@ -1,0 +1,49 @@
+{
+    "rq": 60,
+    "make": "Acura",
+    "model": "RDX",
+    "modelYear": 2014,
+    "country": "US",
+    "topSpeed": 135,
+    "0to60": 6.2,
+    "handling": 71,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["The Americas Assault"],
+    "isPrize": false,
+	
+    "weight": 1747,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 61.39,
+    "ola": 80.65,
+    "description": "For the second generation they decided to replace the SH-AWD drivetrain for a basic 4WD system. Not a smart decision, the design team also drank a little too much.",
+    "card": "https://media.discordapp.net/attachments/864423523916972052/923526931213869066/Acura_RDX_4WD_2014.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1037024303750848512/Acura_RDX_SH-AWD_2014.png",
+    "creator": "Based",
+
+"333TopSpeed": 139, 
+"3330to60": 5.9, 
+"333Handling": 73,
+
+"666TopSpeed": 143, 
+"6660to60": 5.6, 
+"666Handling": 76,
+
+"699TopSpeed": 143, 
+"6990to60": 5.3, 
+"699Handling": 79,
+
+"969TopSpeed": 147, 
+"9690to60": 5.6, 
+"969Handling": 79,
+
+"996TopSpeed": 147, 
+"9960to60": 5.3, 
+"996Handling": 76
+}

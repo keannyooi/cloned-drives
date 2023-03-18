@@ -1,0 +1,49 @@
+{
+    "rq": 19,
+    "make": "Baojun",
+    "model": "E300",
+    "modelYear": 2020,
+    "country": "CN",
+    "topSpeed": 62,
+    "0to60": 11.3,
+    "handling": 66,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Rest of The World","Eco-Friendly","The Amplification of Asia"],
+    "isPrize": false,
+	
+    "weight": 920,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Electric",
+    "mra": 0,
+    "ola": 72.57,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1011599061704523837/baojun_e300.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1011599184501145610/baojun_e300.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 70, 
+"3330to60": 10.7, 
+"333Handling": 68,
+
+"666TopSpeed": 79, 
+"6660to60": 10.2, 
+"666Handling": 70,
+
+"699TopSpeed": 79, 
+"6990to60": 9.6, 
+"699Handling": 73,
+
+"969TopSpeed": 87, 
+"9690to60": 10.2, 
+"969Handling": 73,
+
+"996TopSpeed": 87, 
+"9960to60": 9.6, 
+"996Handling": 70
+}

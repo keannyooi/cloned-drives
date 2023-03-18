@@ -1,0 +1,49 @@
+{
+    "rq": 52,
+    "make": "Acura",
+    "model": "RDX",
+    "modelYear": 2010,
+    "country": "US",
+    "topSpeed": 136,
+    "0to60": 6.4,
+    "handling": 72,
+    "driveType": "FWD",
+    "tyreType": "All-Surface",
+    "tags": ["The Americas Assault"],
+    "isPrize": false,
+	
+    "weight": 1698,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 58.18,
+    "ola": 84.38,
+    "description": "This was a facelift made in 2010, lasting up to 2012. You could buy a FWD version during these years! How crazy is that?",
+    "card": "https://media.discordapp.net/attachments/864423523916972052/923526794076901386/Acura_RDX_fwd_2010.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1037024243424174141/Acura_RDX_fwd.png",
+    "creator": "Based",
+
+"333TopSpeed": 140, 
+"3330to60": 6.1, 
+"333Handling": 74,
+
+"666TopSpeed": 144, 
+"6660to60": 5.8, 
+"666Handling": 77,
+
+"699TopSpeed": 144, 
+"6990to60": 5.4, 
+"699Handling": 80,
+
+"969TopSpeed": 147, 
+"9690to60": 5.8, 
+"969Handling": 80,
+
+"996TopSpeed": 147, 
+"9960to60": 5.4, 
+"996Handling": 77
+}

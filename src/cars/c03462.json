@@ -1,0 +1,49 @@
+{
+    "rq": 16,
+    "make": "Baojun",
+    "model": "KiWi EV",
+    "modelYear": 2021,
+    "country": "CN",
+    "topSpeed": 65,
+    "0to60": 12.6,
+    "handling": 64,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly","Rest of The World","The Amplification of Asia"],
+    "isPrize": false,
+	
+    "weight": 1040,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Electric",
+    "mra": 0,
+    "ola": 69.84,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1011599096953446471/baojun_kiwi_ev.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1011599212699467805/baojun_kiwi.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 73, 
+"3330to60": 12.0, 
+"333Handling": 66,
+
+"666TopSpeed": 81, 
+"6660to60": 11.3, 
+"666Handling": 68,
+
+"699TopSpeed": 81, 
+"6990to60": 10.7, 
+"699Handling": 71,
+
+"969TopSpeed": 89, 
+"9690to60": 11.3, 
+"969Handling": 71,
+
+"996TopSpeed": 89, 
+"9960to60": 10.7, 
+"996Handling": 68
+}
