@@ -1,0 +1,49 @@
+{
+    "rq": 52,
+    "make": "Caterham",
+    "model": "21 1.8 VVC",
+    "modelYear": 1998,
+    "country": "GB",
+    "topSpeed": 130,
+    "0to60": 5.3,
+    "handling": 82,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Unique","Track Day"],
+    "isPrize": false,
+	
+    "weight": 648,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 60,
+    "ola": 90.1,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1088067871877386270/Cate21_1.8VVC.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1088070655188144200/cate211.8VVC.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 134,
+"3330to60": 5,
+"333Handling": 85,
+
+"666TopSpeed": 138,
+"6660to60": 4.8,
+"666Handling": 87,
+
+"699TopSpeed": 138,
+"6990to60": 4.5,
+"699Handling": 91,
+
+"969TopSpeed": 142,
+"9690to60": 4.8,
+"969Handling": 91,
+
+"996TopSpeed": 142,
+"9960to60": 4.5,
+"996Handling": 87
+}

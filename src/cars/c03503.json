@@ -1,0 +1,49 @@
+{
+    "rq": 59,
+    "make": "Eadon Green",
+    "model": "Black Cuillin",
+    "modelYear": 2017,
+    "country": "GB",
+    "topSpeed": 155,
+    "0to60": 5.4,
+    "handling": 74,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Midlands Cruise"],
+    "isPrize": false,
+	
+    "weight": 2470,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 72.97,
+    "ola": 81.48,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1088067326294888479/BlackCuillin.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1088070431598198886/BlackCuillin.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 158,
+"3330to60": 5.1,
+"333Handling": 76,
+
+"666TopSpeed": 162,
+"6660to60": 4.9,
+"666Handling": 79,
+
+"699TopSpeed": 162,
+"6990to60": 4.6,
+"699Handling": 82,
+
+"969TopSpeed": 165,
+"9690to60": 4.9,
+"969Handling": 82,
+
+"996TopSpeed": 165,
+"9960to60": 4.6,
+"996Handling": 79
+}

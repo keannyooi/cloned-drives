@@ -1,0 +1,49 @@
+{
+    "rq": 79,
+    "make": ["X-Works", "Mitsubishi"],
+    "model": "xTreme X1 Concept",
+    "modelYear": 2007,
+    "country": "GB",
+    "topSpeed": 169,
+    "0to60": 3.9,
+    "handling": 90,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Unique","Concept","Street Racer"],
+    "isPrize": false,
+	
+    "weight": 1180,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 76.92,
+    "ola": 80,
+    "description": "Based on an Evo, Made by the people who started the RS Evo series and eXtremes",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1088068272622157914/xWorksX1Concept.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1088070786411143270/XworksEvo.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 172,
+"3330to60": 3.7,
+"333Handling": 93,
+
+"666TopSpeed": 175,
+"6660to60": 3.5,
+"666Handling": 96,
+
+"699TopSpeed": 175,
+"6990to60": 3.3,
+"699Handling": 100,
+
+"969TopSpeed": 178,
+"9690to60": 3.5,
+"969Handling": 100,
+
+"996TopSpeed": 178,
+"9960to60": 3.3,
+"996Handling": 96
+}

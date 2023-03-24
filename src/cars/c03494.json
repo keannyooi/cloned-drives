@@ -1,0 +1,49 @@
+{
+    "rq": 73,
+    "make": "Aston Martin",
+    "model": "Vantage Roadster",
+    "modelYear": 2017,
+    "country": "GB",
+    "topSpeed": 190,
+    "0to60": 3.8,
+    "handling": 88,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise"],
+    "isPrize": false,
+	
+    "weight": 1730,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 76,
+    "ola": 98.62,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1087454434486931506/VantageRoadster2017.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1087454819620507708/VantageRoadster2017.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 193,
+"3330to60": 3.6,
+"333Handling": 91,
+
+"666TopSpeed": 195,
+"6660to60": 3.4,
+"666Handling": 94,
+
+"699TopSpeed": 195,
+"6990to60": 3.2,
+"699Handling": 98,
+
+"969TopSpeed": 198,
+"9690to60": 3.4,
+"969Handling": 98,
+
+"996TopSpeed": 198,
+"9960to60": 3.2,
+"996Handling": 94
+}

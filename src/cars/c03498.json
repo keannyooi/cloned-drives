@@ -1,0 +1,49 @@
+{
+    "rq": 40,
+    "make": "Caterham",
+    "model": "21 1.8",
+    "modelYear": 1997,
+    "country": "GB",
+    "topSpeed": 124,
+    "0to60": 6.3,
+    "handling": 80,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Unique","Track Day"],
+    "isPrize": false,
+	
+    "weight": 650,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 46.7,
+    "ola": 93.33,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1088067783113330728/Cate21_1.8.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1088070597570994216/cate211.8.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 128,
+"3330to60": 6,
+"333Handling": 83,
+
+"666TopSpeed": 132,
+"6660to60": 5.7,
+"666Handling": 85,
+
+"699TopSpeed": 132,
+"6990to60": 5.4,
+"699Handling": 89,
+
+"969TopSpeed": 137,
+"9690to60": 5.7,
+"969Handling": 89,
+
+"996TopSpeed": 137,
+"9960to60": 5.4,
+"996Handling": 85
+}

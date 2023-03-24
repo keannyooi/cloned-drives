@@ -1,0 +1,49 @@
+{
+    "rq": 75,
+    "make": "Aston Martin",
+    "model": "Vanquish Zagato Shooting Brake",
+    "modelYear": 2018,
+    "country": "GB",
+    "topSpeed": 197,
+    "0to60": 3.6,
+    "handling": 87,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Unique","Grand Tourer"],
+    "isPrize": false,
+	
+    "weight": 1879,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 80,
+    "ola": 96.5,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1088069684630388866/AMVanquishZagShootingBrake.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1088071429871902751/VanquishZagShooting.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 200,
+"3330to60": 3.4,
+"333Handling": 90,
+
+"666TopSpeed": 202,
+"6660to60": 3.2,
+"666Handling": 93,
+
+"699TopSpeed": 202,
+"6990to60": 3.1,
+"699Handling": 97,
+
+"969TopSpeed": 205,
+"9690to60": 3.2,
+"969Handling": 97,
+
+"996TopSpeed": 205,
+"9960to60": 3.1,
+"996Handling": 93
+}

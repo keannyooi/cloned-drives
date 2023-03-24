@@ -1,18 +1,18 @@
 {
-    "rq": 78,
+    "rq": 79,
     "make": "Aston Martin",
-    "model": "Vanquish Zagato Concept",
-    "modelYear": 2016,
+    "model": "Vanquish S",
+    "modelYear": 2017,
     "country": "GB",
     "topSpeed": 201,
-    "0to60": 3.5,
+    "0to60": 3.4,
     "handling": 88,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Unique","Grand Tourer","Concept","Ultra Expensive"],
+    "tags": ["The Midlands Cruise","Grand Tourer"],
     "isPrize": false,
 	
-    "weight": 1765,
+    "weight": 1739,
     "gc": "Low",
     "seatCount": 4,
     "bodyStyle": "Coupe",
@@ -20,15 +20,15 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 83.33,
-    "ola": 94.85,
+    "mra": 88.63,
+    "ola": 92.3,
     "description": "",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1088069500756299876/AMVanquishZagConcept.png",
-	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1088071057921032232/AMVanquishZagconcept.png",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1088069317519736832/AMVanquishS2017.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1088071007421599819/AMVanquishS2017.png",
     "creator": "Bnuuy",
 
 "333TopSpeed": 204,
-"3330to60": 3.3,
+"3330to60": 3.2,
 "333Handling": 91,
 
 "666TopSpeed": 206,
@@ -36,7 +36,7 @@
 "666Handling": 94,
 
 "699TopSpeed": 206,
-"6990to60": 3,
+"6990to60": 2.9,
 "699Handling": 98,
 
 "969TopSpeed": 209,
@@ -44,6 +44,6 @@
 "969Handling": 98,
 
 "996TopSpeed": 209,
-"9960to60": 3,
+"9960to60": 2.9,
 "996Handling": 94
 }

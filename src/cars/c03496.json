@@ -1,0 +1,49 @@
+{
+    "rq": 37,
+    "make": "Caterham",
+    "model": "21 1.6",
+    "modelYear": 1995,
+    "country": "GB",
+    "topSpeed": 118,
+    "0to60": 6.4,
+    "handling": 79,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Unique","Track Day"],
+    "isPrize": false,
+	
+    "weight": 650,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 45,
+    "ola": 93.75,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1088067665253384243/Cate21_1.6.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1088070538301280278/cate211.6.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 122,
+"3330to60": 6.1,
+"333Handling": 82,
+
+"666TopSpeed": 127,
+"6660to60": 5.8,
+"666Handling": 84,
+
+"699TopSpeed": 127,
+"6990to60": 5.4,
+"699Handling": 88,
+
+"969TopSpeed": 131,
+"9690to60": 5.8,
+"969Handling": 88,
+
+"996TopSpeed": 131,
+"9960to60": 5.4,
+"996Handling": 84
+}

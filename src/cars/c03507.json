@@ -1,0 +1,49 @@
+{
+    "rq": 83,
+    "make": ["RS Performance", "Caterham"],
+    "model": "21 GTO V8",
+    "modelYear": 2010,
+    "country": "GB",
+    "topSpeed": 150,
+    "0to60": 2.9,
+    "handling": 90,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["The Midlands Cruise","Unique","Track Day","Tuner"],
+    "isPrize": false,
+	
+    "weight": 663,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": true,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 96.87,
+    "ola": 90,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1088068030073929749/Cate21_GTOButwithaV8.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1088070735932702750/cate21GTOV8.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 153,
+"3330to60": 2.8,
+"333Handling": 93,
+
+"666TopSpeed": 157,
+"6660to60": 2.6,
+"666Handling": 96,
+
+"699TopSpeed": 157,
+"6990to60": 2.5,
+"699Handling": 100,
+
+"969TopSpeed": 160,
+"9690to60": 2.6,
+"969Handling": 100,
+
+"996TopSpeed": 160,
+"9960to60": 2.5,
+"996Handling": 96
+}

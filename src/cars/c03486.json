@@ -1,0 +1,49 @@
+{
+    "rq": 68,
+    "make": "Aston Martin",
+    "model": "Vanquish Volante",
+    "modelYear": 2013,
+    "country": "GB",
+    "topSpeed": 183,
+    "0to60": 4.2,
+    "handling": 85,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Grand Tourer"],
+    "isPrize": false,
+	
+    "weight": 1729,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 80.76,
+    "ola": 85.71,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1088069182547038328/AMvanquishVolante2013.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1088070961187794985/AMVanquishVolante2013.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 186,
+"3330to60": 4,
+"333Handling": 88,
+
+"666TopSpeed": 189,
+"6660to60": 3.8,
+"666Handling": 91,
+
+"699TopSpeed": 189,
+"6990to60": 3.6,
+"699Handling": 94,
+
+"969TopSpeed": 192,
+"9690to60": 3.8,
+"969Handling": 94,
+
+"996TopSpeed": 192,
+"9960to60": 3.6,
+"996Handling": 91
+}

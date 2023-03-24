@@ -1,0 +1,49 @@
+{
+    "rq": 70,
+    "make": "Eadon Green",
+    "model": "Zeclat",
+    "modelYear": 2018,
+    "country": "GB",
+    "topSpeed": 155,
+    "0to60": 3.6,
+    "handling": 83,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise"],
+    "isPrize": false,
+	
+    "weight": 1824,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 83.72,
+    "ola": 88.88,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1088067445354401902/Zeclat.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1088070506743345273/Zeclat.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 158,
+"3330to60": 3.4,
+"333Handling": 86,
+
+"666TopSpeed": 162,
+"6660to60": 3.2,
+"666Handling": 88,
+
+"699TopSpeed": 162,
+"6990to60": 3.1,
+"699Handling": 92,
+
+"969TopSpeed": 165,
+"9690to60": 3.2,
+"969Handling": 92,
+
+"996TopSpeed": 165,
+"9960to60": 3.1,
+"996Handling": 88
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 70,
+    "make": "Aston Martin",
+    "model": "Vanquish",
+    "modelYear": 2012,
+    "country": "GB",
+    "topSpeed": 183,
+    "0to60": 4.1,
+    "handling": 86,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Grand Tourer"],
+    "isPrize": false,
+	
+    "weight": 1729,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 83.67,
+    "ola": 82.92,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1088069126242705418/AMVanquish2012.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1088070944284758106/AMVanquish2012.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 186,
+"3330to60": 3.9,
+"333Handling": 89,
+
+"666TopSpeed": 189,
+"6660to60": 3.7,
+"666Handling": 92,
+
+"699TopSpeed": 189,
+"6990to60": 3.5,
+"699Handling": 95,
+
+"969TopSpeed": 192,
+"9690to60": 3.7,
+"969Handling": 95,
+
+"996TopSpeed": 192,
+"9960to60": 3.5,
+"996Handling": 92
+}

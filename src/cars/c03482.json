@@ -1,0 +1,49 @@
+{
+    "rq": 69,
+    "make": "Aston Martin",
+    "model": "DBS Zagato Coupe Centennial",
+    "modelYear": 2013,
+    "country": "GB",
+    "topSpeed": 183,
+    "0to60": 4.3,
+    "handling": 87,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Unique","Grand Tourer"],
+    "isPrize": false,
+	
+    "weight": 1589,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 87.76,
+    "ola": 84,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1088070282507472976/dbszagatocoupe.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1088071497563770951/DBSZagatoCoupe.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 186,
+"3330to60": 4.1,
+"333Handling": 90,
+
+"666TopSpeed": 189,
+"6660to60": 3.9,
+"666Handling": 93,
+
+"699TopSpeed": 189,
+"6990to60": 3.7,
+"699Handling": 97,
+
+"969TopSpeed": 192,
+"9690to60": 3.9,
+"969Handling": 97,
+
+"996TopSpeed": 192,
+"9960to60": 3.7,
+"996Handling": 93
+}

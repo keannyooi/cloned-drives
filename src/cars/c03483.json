@@ -1,0 +1,49 @@
+{
+    "rq": 69,
+    "make": "Aston Martin",
+    "model": "Project AM310",
+    "modelYear": 2012,
+    "country": "GB",
+    "topSpeed": 183,
+    "0to60": 4.2,
+    "handling": 86,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Unique","Concept","Grand Tourer"],
+    "isPrize": false,
+	
+    "weight": 1633,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 77.77,
+    "ola": 85.71,
+    "description": "A pre-production Vanquish, showing off a 90% complete body and 95% complete chassis.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1088069243431571466/AMProjectAM310.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1088070983929315339/AMProjectAM310.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 186,
+"3330to60": 4,
+"333Handling": 89,
+
+"666TopSpeed": 189,
+"6660to60": 3.8,
+"666Handling": 92,
+
+"699TopSpeed": 189,
+"6990to60": 3.6,
+"699Handling": 95,
+
+"969TopSpeed": 192,
+"9690to60": 3.8,
+"969Handling": 95,
+
+"996TopSpeed": 192,
+"9960to60": 3.6,
+"996Handling": 92
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 76,
+    "make": "Aston Martin",
+    "model": "Vantage AMR",
+    "modelYear": 2019,
+    "country": "GB",
+    "topSpeed": 200,
+    "0to60": 3.8,
+    "handling": 90,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise"],
+    "isPrize": false,
+	
+    "weight": 1630,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 80,
+    "ola": 102.2,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1087454162557608036/VantageAMR2019.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1087454611843072020/VantageAMR2019.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 203,
+"3330to60": 3.6,
+"333Handling": 93,
+
+"666TopSpeed": 205,
+"6660to60": 3.4,
+"666Handling": 96,
+
+"699TopSpeed": 205,
+"6990to60": 3.2,
+"699Handling": 100,
+
+"969TopSpeed": 208,
+"9690to60": 3.4,
+"969Handling": 100,
+
+"996TopSpeed": 208,
+"9960to60": 3.2,
+"996Handling": 96
+}

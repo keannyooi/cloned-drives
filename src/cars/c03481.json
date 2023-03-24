@@ -1,0 +1,49 @@
+{
+    "rq": 84,
+    "make": "Aston Martin",
+    "model": "DBS GT Zagato",
+    "modelYear": 2020,
+    "country": "GB",
+    "topSpeed": 215,
+    "0to60": 3.3,
+    "handling": 92,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Unique","Ultra Expensive","Supercar","Grand Tourer"],
+    "isPrize": false,
+	
+    "weight": 1780,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 97.05,
+    "ola": 96.96,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1088070136340160553/DBSGTZag.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1088071478655856711/DBSZag.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 217,
+"3330to60": 3.1,
+"333Handling": 95,
+
+"666TopSpeed": 220,
+"6660to60": 3,
+"666Handling": 98,
+
+"699TopSpeed": 220,
+"6990to60": 2.8,
+"699Handling": 102,
+
+"969TopSpeed": 222,
+"9690to60": 3,
+"969Handling": 102,
+
+"996TopSpeed": 222,
+"9960to60": 2.8,
+"996Handling": 98
+}

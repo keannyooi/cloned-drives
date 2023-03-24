@@ -1,0 +1,49 @@
+{
+    "rq": 79,
+    "make": "Aston Martin",
+    "model": "Vanquish Zagato Speedster",
+    "modelYear": 2018,
+    "country": "GB",
+    "topSpeed": 201,
+    "0to60": 3.4,
+    "handling": 88,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Unique","Ultra Expensive"],
+    "isPrize": true,
+	
+    "weight": 1735,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 88.63,
+    "ola": 92.3,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1088069560722259988/AMVanquishZagSpeedster.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1088071080868057148/AMVanquishZagSpeedster.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 204,
+"3330to60": 3.2,
+"333Handling": 91,
+
+"666TopSpeed": 206,
+"6660to60": 3.1,
+"666Handling": 94,
+
+"699TopSpeed": 206,
+"6990to60": 2.9,
+"699Handling": 98,
+
+"969TopSpeed": 209,
+"9690to60": 3.1,
+"969Handling": 98,
+
+"996TopSpeed": 209,
+"9960to60": 2.9,
+"996Handling": 94
+}

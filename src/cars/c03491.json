@@ -1,0 +1,49 @@
+{
+    "rq": 77,
+    "make": "Aston Martin",
+    "model": "Vantage",
+    "modelYear": 2017,
+    "country": "GB",
+    "topSpeed": 195,
+    "0to60": 3.6,
+    "handling": 89,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise"],
+    "isPrize": false,
+	
+    "weight": 1640,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 79.42,
+    "ola": 94.44,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1087454125777748071/Vantage2017.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1087454592368902205/Vantage2017.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 198,
+"3330to60": 3.4,
+"333Handling": 92,
+
+"666TopSpeed": 200,
+"6660to60": 3.2,
+"666Handling": 95,
+
+"699TopSpeed": 200,
+"6990to60": 3.1,
+"699Handling": 99,
+
+"969TopSpeed": 203,
+"9690to60": 3.2,
+"969Handling": 99,
+
+"996TopSpeed": 203,
+"9960to60": 3.1,
+"996Handling": 95
+}
