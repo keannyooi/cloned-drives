@@ -1,6 +1,6 @@
 {
     "rq": 7,
-    "make": "Dacon",
+    "make": ["Dacon", "PAG"],
     "model": "828 Alcool",
     "modelYear": 1983,
     "country": "BR",
@@ -9,7 +9,7 @@
     "handling": 65,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Rest of The World"],
+    "tags": ["Rest of The World", "Unique"],
     "isPrize": false,
 	
     "weight": 680,
@@ -22,28 +22,28 @@
     "fuelType": "Alternative",
     "mra": 1,
     "ola": 56.32,
-    "description": "Gets more drunk than your uncle at a wedding smh.",
+    "description": "Anisio Campos, a local car designer, was a friend of Paulo de Aguiar Goulart, the owner of Dacon. Campos was called upon to help the enthusiastic Goulart develop the 828. The finished car had a 1.6L Volkswagen air-cooled engine that made 88hp and seated 3 people despite its size. The Brazillians didn't seem to get the point of this car, however, as only 47 were produced before Dacon decided to pull the plugs on it in 1994.",
     "card": "https://media.discordapp.net/attachments/819199720249360384/1011579736234930196/dacon_828_ethanol_thing.png",
 	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1011588976089497740/dacon_828_alcool.jpg",
     "creator": "Keanny",
 
-"333TopSpeed": 91, 
-"3330to60": 15.0, 
-"333Handling": 67,
+    "333TopSpeed": 91, 
+    "3330to60": 15.0, 
+    "333Handling": 67,
 
-"666TopSpeed": 97, 
-"6660to60": 14.2, 
-"666Handling": 69,
+    "666TopSpeed": 97, 
+    "6660to60": 14.2, 
+    "666Handling": 69,
 
-"699TopSpeed": 97, 
-"6990to60": 13.4, 
-"699Handling": 72,
+    "699TopSpeed": 97, 
+    "6990to60": 13.4, 
+    "699Handling": 72,
 
-"969TopSpeed": 103, 
-"9690to60": 14.2, 
-"969Handling": 72,
+    "969TopSpeed": 103, 
+    "9690to60": 14.2, 
+    "969Handling": 72,
 
-"996TopSpeed": 103, 
-"9960to60": 13.4, 
-"996Handling": 69
+    "996TopSpeed": 103, 
+    "9960to60": 13.4, 
+    "996Handling": 69
 }

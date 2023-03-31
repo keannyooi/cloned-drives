@@ -1,5 +1,5 @@
 {
-    "rq": 62,
+    "rq": 61,
     "make": "Emme",
     "model": "Lotus 422T",
     "modelYear": 1997,
@@ -9,7 +9,7 @@
     "handling": 77,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": ["Oddity", "Rest of The World"],
+    "tags": ["Oddity", "Rest of The World", "Unique"],
     "isPrize": false,
 	
     "weight": 1588,
@@ -17,33 +17,33 @@
     "seatCount": 5,
     "bodyStyle": "Sedan",
     "tcs": false,
-    "abs": true,
+    "abs": false,
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 68.27,
     "ola": 82.85,
-    "description": "The Lotus Carltons long lost Brazilian brother.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/1011578127807426590/brazillian_carlton_the_sacrilegious.png",
+    "description": "The Lotus Carlton's (or Opel Omega if you're German) long lost and sacrilegious Brazilian brother. In 1998, possibly as a promotional stunt, the flagship Emme visited Europe and got bullied by the local motoring press for its looks. What didn't help much was the Lotus Esprit engine, which came to Brazil as scrap metal and only had a 20% chance of being in working condition. Currency devaluation was the final nail in the coffin and the Emme was scrapped in 1999 after sinking in over 200 million USD.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1090285382593159278/brazillian_carlton_the_sacrilegious.png",
 	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1011589663129075772/emme_lotus.jpg",
     "creator": "Keanny",
 
-"333TopSpeed": 173, 
-"3330to60": 4.6, 
-"333Handling": 80,
+    "333TopSpeed": 173, 
+    "3330to60": 4.6, 
+    "333Handling": 80,
 
-"666TopSpeed": 176, 
-"6660to60": 4.3, 
-"666Handling": 82,
+    "666TopSpeed": 176, 
+    "6660to60": 4.3, 
+    "666Handling": 82,
 
-"699TopSpeed": 176, 
-"6990to60": 4.1, 
-"699Handling": 85,
+    "699TopSpeed": 176, 
+    "6990to60": 4.1, 
+    "699Handling": 85,
 
-"969TopSpeed": 179, 
-"9690to60": 4.3, 
-"969Handling": 85,
+    "969TopSpeed": 179, 
+    "9690to60": 4.3, 
+    "969Handling": 85,
 
-"996TopSpeed": 179, 
-"9960to60": 4.1, 
-"996Handling": 82
+    "996TopSpeed": 179, 
+    "9960to60": 4.1, 
+    "996Handling": 82
 }
