@@ -103,7 +103,7 @@ module.exports = {
                         channel: message.channel,
                         title: `${event.name} \`(ID: ${event.eventID})\``,
                         desc: `**This event is ${event.isActive ? "active!" : "not active."}**
-                        Time Remaining: \`${event.deadline.length > 9 ? timeDisplay(Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(event.deadline))) : event.deadline}\``,
+                        Time Remaining: \`${event.deadline && event.deadline.length > 9 ? timeDisplay(Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(event.deadline))) : event.deadline}\`,
                         author: message.author,
                         fields,
                         footer: `Page ${page} of ${totalPages} - Interact with the buttons below to navigate through pages.`
