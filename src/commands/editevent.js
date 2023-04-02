@@ -119,26 +119,17 @@ module.exports = {
                     });
                     break;
                 case "extend":
-                    if (!currentEvent.isActive) {
+                    if (!currentEvent.isActive || currentEvent.deadline === "unlimited") {
                         const errorMessage = new ErrorMessage({
                             channel: message.channel,
-                            title: "Error, this attribute can only be edited while an event is live.",
-                            desc: "This command is only intended for the unlikely scenario of bot-related delays.",
+                            title: "Error, this attribute can only be edited while a timed event is live.",
+                            desc: "This command is only intended for the unlikely scenario of bot-related delays. Unlimited time events don't need this command.",
                             author: message.author
                         });
                         return errorMessage.sendMessage({ currentMessage });
                     }
 
                     let time = args[2];
-					  if (time === "unlimited") {
-						const errorMessage = new ErrorMessage({
-						channel: message.channel,
-						title: "Error, you cannot extend unlimited duration events.",
-						desc: "The duration of this event is set to unlimited and cannot be extended.",
-						author: message.author
-					});
-						return errorMessage.sendMessage({ currentMessage });
-						}
                     if (isNaN(time) || parseInt(time) < 1) {
                         const errorMessage = new ErrorMessage({
                             channel: message.channel,

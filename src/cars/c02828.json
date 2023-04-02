@@ -9,7 +9,7 @@
     "handling": 55,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": ["Eco-Friendly","Rest of The World"],
+    "tags": ["Eco-Friendly", "Rest of The World"],
     "isPrize": false,
 	
     "weight": 665,
@@ -22,28 +22,28 @@
     "fuelType": "Electric",
     "mra": 0,
     "ola": 66.3,
-    "description": "This is slow. Not in the hands of the Stig- wait no Clarkson.",
+    "description": "The G-Wiz, also known simply as the REVA outside the UK, was one of the first EVs to enjoy moderate commercial success. Due to its appearance and inability to protect its passengers, it became laughing stock among car enthusiasts. The iconic Top Gear trio was especially hostile towards it, murdering (both figuratively and literally) it with every chance they got as if it's the girl in [MARENOL](https://www.youtube.com/watch?v=BKl4gZDWP34).",
     "card": "https://media.discordapp.net/attachments/819199720249360384/1011581441269846076/reva_i_g-wiz.png",
 	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1011590838771527751/g-wiz.jpg",
     "creator": "Keanny",
 
-"333TopSpeed": 59, 
-"3330to60": 99.9, 
-"333Handling": 57,
+    "333TopSpeed": 59, 
+    "3330to60": 99.9, 
+    "333Handling": 57,
 
-"666TopSpeed": 67, 
-"6660to60": 89.9, 
-"666Handling": 59,
+    "666TopSpeed": 67, 
+    "6660to60": 89.9, 
+    "666Handling": 59,
 
-"699TopSpeed": 67, 
-"6990to60": 84.9, 
-"699Handling": 61,
+    "699TopSpeed": 67, 
+    "6990to60": 84.9, 
+    "699Handling": 61,
 
-"969TopSpeed": 76, 
-"9690to60": 89.9, 
-"969Handling": 61,
+    "969TopSpeed": 76, 
+    "9690to60": 89.9, 
+    "969Handling": 61,
 
-"996TopSpeed": 76, 
-"9960to60": 84.9, 
-"996Handling": 59
+    "996TopSpeed": 76, 
+    "9960to60": 84.9, 
+    "996Handling": 59
 }
