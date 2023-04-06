@@ -1,0 +1,49 @@
+{
+    "rq": 39,
+    "make": "Acura",
+    "model": "RSX Type-S Factory Performance",
+    "modelYear": 2003,
+    "country": "US",
+    "topSpeed": 142,
+    "0to60": 6.5,
+    "handling": 79,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["The Americas Assault", "Street Racer"],
+    "isPrize": false,
+	
+    "weight": 1241,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 60.75,
+    "ola": 80,
+    "description": "Now THIS looks cool. And it's faster too, with upgraded handling and aero mods. The perfect street racer car.",
+    "card": "https://media.discordapp.net/attachments/864423523916972052/923531084136845322/Acura_RSX-Type_S_Factory_Performance.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1037025661832937492/Acura_RSX_Type-S_Performance_Package.png",
+    "creator": "Based",
+
+"333TopSpeed": 146, 
+"3330to60": 6.2, 
+"333Handling": 82,
+
+"666TopSpeed": 149, 
+"6660to60": 5.9, 
+"666Handling": 84,
+
+"699TopSpeed": 149, 
+"6990to60": 5.5, 
+"699Handling": 88,
+
+"969TopSpeed": 153, 
+"9690to60": 5.9, 
+"969Handling": 88,
+
+"996TopSpeed": 153, 
+"9960to60": 5.5, 
+"996Handling": 84
+}

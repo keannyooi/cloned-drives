@@ -1,0 +1,49 @@
+{
+    "rq": 42,
+    "make": ["Dodge", "Ram"],
+    "model": "Ram 1500 5.7 TRX4 Off-Road Quad Cab",
+    "modelYear": 2006,
+    "country": "US",
+    "topSpeed": 105,
+    "0to60": 9.7,
+    "handling": 61,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["The Americas Assault"],
+    "isPrize": false,
+	
+    "weight": 2400,
+    "gc": "High",
+    "seatCount": 6,
+    "bodyStyle": "Pickup",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 48.00,
+    "ola": 74.00,
+    "description": "The original TRX, with a much less wild powertrain.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1085597054899859516/Ram_1500_5.7_TRX4_Off-Road_Quad_Cab_2006.png",
+	"racehud": "https://media.discordapp.net/attachments/1077293403668234340/1085604762902343780/Ram_1500_5.7_TRX4_Off-Road_Quad_Cab_2006_Hud.png",
+    "creator": "DodgeDemon",
+
+"333TopSpeed": 110,
+"3330to60": 9.2,
+"333Handling": 63,
+
+"666TopSpeed": 115,
+"6660to60": 8.7,
+"666Handling": 65,
+
+"699TopSpeed": 115,
+"6990to60": 8.2,
+"699Handling": 68,
+
+"969TopSpeed": 120,
+"9690to60": 8.7,
+"969Handling": 68,
+
+"996TopSpeed": 120,
+"9960to60": 8.2,
+"996Handling": 65
+}

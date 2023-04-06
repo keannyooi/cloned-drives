@@ -1,0 +1,49 @@
+{
+    "rq": 43,
+    "make": "Acura",
+    "model": "RSX Type-S",
+    "modelYear": 2002,
+    "country": "US",
+    "topSpeed": 136,
+    "0to60": 6.5,
+    "handling": 75,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["The Americas Assault", "Street Racer"],
+    "isPrize": false,
+	
+    "weight": 1254,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 60.75,
+    "ola": 83.08,
+    "description": "The 4th Generation of the Integra, under the Acura badge. Type-S offers an upgraded VTEC engine. Paired up with a six speed manual and a healthy aftermarket, this is a dream first car for many!",
+    "card": "https://media.discordapp.net/attachments/864423523916972052/923530829244805250/Acura_RSX-Type_S_2002.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1037025569528889354/Acura_RSX_Type-S_but_older.png",
+    "creator": "Based",
+
+"333TopSpeed": 140, 
+"3330to60": 6.2, 
+"333Handling": 77,
+
+"666TopSpeed": 144, 
+"6660to60": 5.9, 
+"666Handling": 80,
+
+"699TopSpeed": 144, 
+"6990to60": 5.5, 
+"699Handling": 83,
+
+"969TopSpeed": 147, 
+"9690to60": 5.9, 
+"969Handling": 83,
+
+"996TopSpeed": 147, 
+"9960to60": 5.5, 
+"996Handling": 80
+}

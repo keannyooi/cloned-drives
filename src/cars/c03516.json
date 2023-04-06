@@ -1,0 +1,49 @@
+{
+    "rq": 91,
+    "make": "Chevrolet",
+    "model": "Corvette Z06 Z07 Convertible",
+    "modelYear": 2023,
+    "country": "US",
+    "topSpeed": 189,
+    "0to60": 2.6,
+    "handling": 94,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Supercar", "Track Day","The Americas Assault"],
+    "isPrize": false,
+    
+    "weight": 1679,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 78.55,
+    "ola": 77.69,
+    "description": "Kick it up to 11... and then back down to 10 cause you but can't be bothered to manually remove your roof.",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1060579620891676812/Chevrolet_Corvette_Z06_Z07_Convertible_2023.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1060581094677811240/Chevrolet_Corvette_Z06_Z07_Convertible_2023_Hud.png",
+    "creator": "DodgeDemon",
+
+    "333TopSpeed": 192,
+    "3330to60": 2.5,
+    "333Handling": 97,
+
+    "666TopSpeed": 195,
+    "6660to60": 2.3,
+    "666Handling": 100,
+
+    "699TopSpeed": 195,
+    "6990to60": 2.2,
+    "699Handling": 104,
+
+    "969TopSpeed": 197,
+    "9690to60": 2.3,
+    "969Handling": 104,
+
+    "996TopSpeed": 197,
+    "9960to60": 2.2,
+    "996Handling": 100
+}

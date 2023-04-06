@@ -1,0 +1,49 @@
+{
+    "rq": 48,
+    "make": ["Dodge", "Ram"],
+    "model": "Ram 1500 5.7 4x4 Crew Cab",
+    "modelYear": 2009,
+    "country": "US",
+    "topSpeed": 108,
+    "0to60": 7.2,
+    "handling": 66,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["The Americas Assault"],
+    "isPrize": false,
+	
+    "weight": 2550,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "Pickup",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 55.84,
+    "ola": 65.48,
+    "description": "None.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1085596530720915476/Ram_1500_5.7_4x4_Crew_Cab_2009.png",
+	"racehud": "https://media.discordapp.net/attachments/1077293403668234340/1085604403211423834/Ram_1500_5.7_4x4_Crew_Cab_2009_Hud.png",
+    "creator": "DodgeDemon",
+
+"333TopSpeed": 113,
+"3330to60": 6.8,
+"333Handling": 68,
+
+"666TopSpeed": 118,
+"6660to60": 6.5,
+"666Handling": 70,
+
+"699TopSpeed": 118,
+"6990to60": 6.1,
+"699Handling": 73,
+
+"969TopSpeed": 122,
+"9690to60": 6.5,
+"969Handling": 73,
+
+"996TopSpeed": 122,
+"9960to60": 6.1,
+"996Handling": 70
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 57,
+    "make": ["Dodge", "Ram"],
+    "model": "Ram 1500 Sport R/T",
+    "modelYear": 2009,
+    "country": "US",
+    "topSpeed": 108,
+    "0to60": 5.7,
+    "handling": 68,
+    "driveType": "RWD",
+    "tyreType": "All-Surface",
+    "tags": ["The Americas Assault"],
+    "isPrize": false,
+	
+    "weight": 2160,
+    "gc": "High",
+    "seatCount": 2,
+    "bodyStyle": "Pickup",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 51.35,
+    "ola": 66.67,
+    "description": "Ram’s spicy secret menu item, but doesn't quite hit like the SRT-10.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1085598822627029102/Ram_1500_Sport_RT_2009.png",
+	"racehud": "https://media.discordapp.net/attachments/1077293403668234340/1085606441441833090/Ram_1500_Sport_RT_2009_Hud.png",
+    "creator": "DodgeDemon",
+
+"333TopSpeed": 113,
+"3330to60": 5.4,
+"333Handling": 70,
+
+"666TopSpeed": 118,
+"6660to60": 5.1,
+"666Handling": 72,
+
+"699TopSpeed": 118,
+"6990to60": 4.8,
+"699Handling": 75,
+
+"969TopSpeed": 122,
+"9690to60": 5.1,
+"969Handling": 75,
+
+"996TopSpeed": 122,
+"9960to60": 4.8,
+"996Handling": 72
+}

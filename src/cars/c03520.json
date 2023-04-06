@@ -1,0 +1,49 @@
+{
+    "rq": 31,
+    "make": ["Dodge", "Ram"],
+    "model": "Ram 1500 5.2 4x2 Regular Cab",
+    "modelYear": 1994,
+    "country": "US",
+    "topSpeed": 113,
+    "0to60": 9.3,
+    "handling": 66,
+    "driveType": "RWD",
+    "tyreType": "All-Surface",
+    "tags": ["The Americas Assault"],
+    "isPrize": false,
+	
+    "weight": 1990,
+    "gc": "Medium",
+    "seatCount": 3,
+    "bodyStyle": "Pickup",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 42.73,
+    "ola": 64.86,
+    "description": "None.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1085596191493996665/Ram_1500_5.2_4x2_Regular_Cab_1994.png",
+	"racehud": "https://media.discordapp.net/attachments/1077293403668234340/1085603790406811718/Ram_1500_5.2_4x2_Regular_Cab_1994_Hud.png",
+    "creator": "DodgeDemon",
+
+"333TopSpeed": 118,
+"3330to60": 8.8,
+"333Handling": 68,
+
+"666TopSpeed": 122,
+"6660to60": 8.4,
+"666Handling": 70,
+
+"699TopSpeed": 122,
+"6990to60": 7.9,
+"699Handling": 73,
+
+"969TopSpeed": 127,
+"9690to60": 8.4,
+"969Handling": 73,
+
+"996TopSpeed": 127,
+"9960to60": 7.9,
+"996Handling": 70
+}

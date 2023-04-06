@@ -1,0 +1,49 @@
+{
+    "rq": 26,
+    "make": ["Dodge", "Ram"],
+    "model": "Ram 1500 SS/T",
+    "modelYear": 1997,
+    "country": "US",
+    "topSpeed": 110,
+    "0to60": 8.4,
+    "handling": 73,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Americas Assault"],
+    "isPrize": true,
+	
+    "weight": 1920,
+    "gc": "Medium",
+    "seatCount": 3,
+    "bodyStyle": "Pickup",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 40.78,
+    "ola": 69.05,
+    "description": "Not your ordinary sport truck, this is a super sport truck.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1085599062713176125/Ram_1500_SST_1997.png",
+	"racehud": "https://media.discordapp.net/attachments/1077293403668234340/1085606588758368348/Ram_1500_SST_1997_Hud.png",
+    "creator": "DodgeDemon",
+
+"333TopSpeed": 115,
+"3330to60": 8.0,
+"333Handling": 75,
+
+"666TopSpeed": 119,
+"6660to60": 7.6,
+"666Handling": 78,
+
+"699TopSpeed": 119,
+"6990to60": 7.1,
+"699Handling": 81,
+
+"969TopSpeed": 124,
+"9690to60": 7.6,
+"969Handling": 81,
+
+"996TopSpeed": 124,
+"9960to60": 7.1,
+"996Handling": 78
+}

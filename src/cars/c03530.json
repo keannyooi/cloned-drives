@@ -1,0 +1,49 @@
+{
+    "rq": 60,
+    "make": ["Militem", "Ram"],
+    "model": "Magnum",
+    "modelYear": 2020,
+    "country": "IT",
+    "topSpeed": 109,
+    "0to60": 6.3,
+    "handling": 64,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["Tuner", "Extreme Juggernaut", "The Americas Assualt"],
+    "isPrize": true,
+	
+    "weight": 2700,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "Pickup",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 58.88,
+    "ola": 69.84,
+    "description": "American power with a touch of Italian craftsmanship.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1085599958171926609/Ram_Militem_Magnum_2019.png",
+	"racehud": "https://media.discordapp.net/attachments/1077293403668234340/1085607042049384581/Ram_Militem_Magnum_2019_Hud.png",
+    "creator": "DodgeDemon",
+
+"333TopSpeed": 114,
+"3330to60": 6.0,
+"333Handling": 66,
+
+"666TopSpeed": 119,
+"6660to60": 5.7,
+"666Handling": 68,
+
+"699TopSpeed": 119,
+"6990to60": 5.4,
+"699Handling": 71,
+
+"969TopSpeed": 123,
+"9690to60": 5.7,
+"969Handling": 71,
+
+"996TopSpeed": 123,
+"9960to60": 5.4,
+"996Handling": 68
+}

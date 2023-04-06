@@ -1,0 +1,49 @@
+{
+    "rq": 91,
+    "make": "Chevrolet",
+    "model": "Corvette Z06 Z07",
+    "modelYear": 2023,
+    "country": "US",
+    "topSpeed": 189,
+    "0to60": 2.6,
+    "handling": 95,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Supercar", "Track Day","The Americas Assault"],
+    "isPrize": false,
+    
+    "weight": 1634,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 78.79,
+    "ola": 76.92,
+    "description": "The most extreme Z06 yet.",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1060579568068612096/Chevrolet_Corvette_Z06_Z07_2023.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1060581058871042129/Chevrolet_Corvette_Z06_Z07_2023_Hud.png",
+    "creator": "DodgeDemon",
+
+    "333TopSpeed": 192,
+    "3330to60": 2.5,
+    "333Handling": 98,
+
+    "666TopSpeed": 195,
+    "6660to60": 2.3,
+    "666Handling": 101,
+
+    "699TopSpeed": 195,
+    "6990to60": 2.2,
+    "699Handling": 105,
+
+    "969TopSpeed": 197,
+    "9690to60": 2.3,
+    "969Handling": 105,
+
+    "996TopSpeed": 197,
+    "9960to60": 2.2,
+    "996Handling": 101
+}

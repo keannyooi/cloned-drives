@@ -1,0 +1,49 @@
+{
+    "rq": 42,
+    "make": ["Dodge", "Ram"],
+    "model": "Ram 1500 5.7 4x4 Quad Cab",
+    "modelYear": 2006,
+    "country": "US",
+    "topSpeed": 105,
+    "0to60": 8.3,
+    "handling": 65,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["The Americas Assault"],
+    "isPrize": false,
+	
+    "weight": 2400,
+    "gc": "High",
+    "seatCount": 6,
+    "bodyStyle": "Pickup",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 52.25,
+    "ola": 72.24,
+    "description": "None.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1085596869608095744/Ram_1500_5.7_4x4_Quad_Cab_2006.png",
+	"racehud": "https://media.discordapp.net/attachments/1077293403668234340/1085604485830803576/Ram_1500_5.7_4x4_Quad_Cab_2006_Hud.png",
+    "creator": "DodgeDemon",
+
+"333TopSpeed": 110,
+"3330to60": 7.9,
+"333Handling": 67,
+
+"666TopSpeed": 115,
+"6660to60": 7.5,
+"666Handling": 69,
+
+"699TopSpeed": 115,
+"6990to60": 7.1,
+"699Handling": 72,
+
+"969TopSpeed": 120,
+"9690to60": 7.5,
+"969Handling": 72,
+
+"996TopSpeed": 120,
+"9960to60": 7.1,
+"996Handling": 69
+}

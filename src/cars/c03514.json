@@ -1,0 +1,49 @@
+{
+    "rq": 96,
+    "make": "Chevrolet",
+    "model": "Corvette Z06 Convertible",
+    "modelYear": 2023,
+    "country": "US",
+    "topSpeed": 195,
+    "0to60": 2.7,
+    "handling": 93,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Supercar","The Americas Assault"],
+    "isPrize": false,
+    
+    "weight": 1709,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 79.10,
+    "ola": 79.25,
+    "description": "When you want an even higher performance Vette but can't be bothered to manually remove your roof.",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1060579445284544573/Chevrolet_Corvette_Z06_Convertible_2023.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1060581013643857980/Chevrolet_Corvette_Z06_Convertible_2023_Hud.png",
+    "creator": "DodgeDemon",
+
+    "333TopSpeed": 198,
+    "3330to60": 2.6,
+    "333Handling": 96,
+
+    "666TopSpeed": 200,
+    "6660to60": 2.4,
+    "666Handling": 99,
+
+    "699TopSpeed": 200,
+    "6990to60": 2.3,
+    "699Handling": 103,
+
+    "969TopSpeed": 203,
+    "9690to60": 2.4,
+    "969Handling": 103,
+
+    "996TopSpeed": 203,
+    "9960to60": 2.3,
+    "996Handling": 99
+}

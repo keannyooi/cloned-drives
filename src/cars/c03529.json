@@ -1,0 +1,49 @@
+{
+    "rq": 101,
+    "make": "Hennessey",
+    "model": "Venom F5 Concept",
+    "modelYear": 2017,
+    "country": "US",
+    "topSpeed": 301,
+    "0to60": 2.6,
+    "handling": 94,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Concept", "Hypercar", "Unique", "Ultra Expensive","The Americas Assault"],
+    "isPrize": true,
+    
+    "weight": 1338,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 144.44,
+    "ola": 96.15,
+    "description": "Hennessey's first concept for the Venom GT's wild 300mph successor.",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1045904628056862771/Hennessey_Venom_F5_2017.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1045905031574065192/Hennessey_Venom_F5_2017_Hud.png",
+    "creator": "DodgeDemon",
+
+    "333TopSpeed": 303,
+    "3330to60": 2.5,
+    "333Handling": 97,
+
+    "666TopSpeed": 304,
+    "6660to60": 2.3,
+    "666Handling": 100,
+
+    "996TopSpeed": 306,
+    "9960to60": 2.2,
+    "996Handling": 100,
+
+    "969TopSpeed": 306,
+    "9690to60": 2.3,
+    "969Handling": 104,
+
+    "699TopSpeed": 304,
+    "6990to60": 2.2,
+    "699Handling": 104
+}
