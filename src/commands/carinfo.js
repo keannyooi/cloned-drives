@@ -69,7 +69,7 @@ module.exports = {
             else if (settings.unitpreference === "imperial") {
                 weight += ` (${unbritish(bmReference.weight, "weight")}lbs)`;
             }
-			console.log(currentCar);
+
             const infoMessage = new InfoMessage({
                 channel: message.channel,
                 title: carNameGen({ currentCar, rarity: true }),
