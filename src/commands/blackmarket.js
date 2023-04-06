@@ -22,7 +22,7 @@ module.exports = {
         for (let i = 0; i < bmCatalog.length; i++) {
             let currentCar = require(`../cars/${bmCatalog[i].carID}`);
             fields.push({
-                name: `${i + 1} - ${carNameGen({ currentCar, rarity: true })} (ID: \`${bmCatalog[i].carID}\`)`,
+                name: `${i + 1} - ${carNameGen({ currentCar, rarity: true, removeBMTag: true })} (ID: \`${bmCatalog[i].carID}\`)`,
                 value: `Price: ${trophyEmoji}${bmCatalog[i].price.toLocaleString("en")}\nStock Remaining: ${bmCatalog[i].stock.toLocaleString("en")}`,
                 inline: true
             });

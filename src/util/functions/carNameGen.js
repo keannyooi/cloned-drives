@@ -25,8 +25,13 @@ function carNameGen(args) {
     if (!removePrizeTag && currentCar["isPrize"]) {
         currentName += ` ${trophyEmoji}`;
     }
-    if (!removeBMTag && currentCar["active"]) {
-        currentName += ` 🟢`;
+    if (!removeBMTag) {
+        if (currentCar["active"]) {
+            currentName += ` 🟢`;
+        }
+        else {
+            currentName += ` 🔴`;
+        }
     }
     return currentName;
 }

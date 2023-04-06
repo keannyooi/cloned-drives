@@ -99,7 +99,7 @@ module.exports = {
 
                 const successMessage = new SuccessMessage({
                     channel: message.channel,
-                    title: `Successfully bought ${amount} ${carNameGen({ currentCar: car })} for ${emoji}${price}!`,
+                    title: `Successfully bought ${amount} ${carNameGen({ currentCar: car, removeBMTag: true })} for ${emoji}${price}!`,
                     author: message.author,
                     image: car["card"],
                     fields: [

@@ -72,7 +72,7 @@ module.exports = {
 
             const successMessage = new SuccessMessage({
                 channel: message.channel,
-                title: `Successfully set your ${carNameGen({ currentCar: car, upgrade, rarity: true })} as your quick race, random race and event hand!`,
+                title: `Successfully set your ${carNameGen({ currentCar: car, upgrade, rarity: true, removeBMTag: true })} as your quick race, random race and event hand!`,
                 author: message.author,
             });
             return successMessage.sendMessage({ attachment, currentMessage });

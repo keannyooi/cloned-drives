@@ -21,7 +21,7 @@ async function searchGarage(args) {
             matchFound = car.carID === query[0];
         }
         else {
-            let name = carNameGen({ currentCar, removePrizeTag: true }).replace(/[()"]/g, "").toLocaleLowerCase("en").split(" ");
+            let name = carNameGen({ currentCar, removePrizeTag: true, removeBMTag: true }).replace(/[()"]/g, "").toLocaleLowerCase("en").split(" ");
             matchFound = query.every(part => name.includes(part.replace(/[()"]/g, "")));
             if (matchFound) {
                 matchList.push(car);
