@@ -6,7 +6,7 @@ const rarityCheck = require("./rarityCheck.js");
 function carNameGen(args) {
     let { currentCar, rarity, upgrade, removePrizeTag, removeBMTag } = args;
     const trophyEmoji = bot.emojis.cache.get("775636479145148418");
-    let make = currentCar["make"];
+    let make = currentCar["make"], bmReference = currentCar;
     if (typeof make === "object") {
         make = currentCar["make"][0];
     }
@@ -14,10 +14,10 @@ function carNameGen(args) {
     if (rarity === true) {
         let type = null;
         if (currentCar["reference"]) {
-            currentCar = require(`../../cars/${currentCar["reference"]}.json`)
+            bmReference = require(`../../cars/${currentCar["reference"]}.json`);
             type = "bm";
         }
-        currentName = `(${rarityCheck(currentCar, type)} ${currentCar["rq"]}) ${currentName}`;
+        currentName = `(${rarityCheck(bmReference, type)} ${bmReference["rq"]}) ${currentName}`;
     }
     if (upgrade) {
         currentName += ` [${upgrade}]`;
@@ -26,7 +26,7 @@ function carNameGen(args) {
         currentName += ` ${trophyEmoji}`;
     }
     if (!removeBMTag && currentCar["active"]) {
-        currentName += `🟢`;
+        currentName += ` 🟢`;
     }
     return currentName;
 }
