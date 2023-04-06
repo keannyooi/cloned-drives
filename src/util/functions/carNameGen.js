@@ -4,7 +4,7 @@ const bot = require("../../config/config.js");
 const rarityCheck = require("./rarityCheck.js");
 
 function carNameGen(args) {
-    let { currentCar, rarity, upgrade, removePrizeTag } = args;
+    let { currentCar, rarity, upgrade, removePrizeTag, removeBMTag } = args;
     const trophyEmoji = bot.emojis.cache.get("775636479145148418");
     let make = currentCar["make"];
     if (typeof make === "object") {
@@ -24,6 +24,9 @@ function carNameGen(args) {
     }
     if (!removePrizeTag && currentCar["isPrize"]) {
         currentName += ` ${trophyEmoji}`;
+    }
+    if (!removeBMTag && currentCar["active"]) {
+        currentName += 🟢;
     }
     return currentName;
 }
