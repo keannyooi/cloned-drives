@@ -25,23 +25,29 @@
     "fuelType": "Hybrid",
     "mra": 48.84,
     "ola": 69.05,
-    "description": "Yes, a racey Prius that was unveiled at Goodwood. Why this exists I don't know, but is this awe-inducing? Heck yes.",
+    "description": "The Toyota Prius is the last thing that car enthusiasists would consider \"sporty and fun\", but this racing-modified Prius begs to differ anyway. First seen running on the 2004 Goodwood Festival of Speed and later displayed in the Paris Auto Show, it managed to squeeze out 37 more horsepower while retaining its environmental friendliness.",
     "card": "https://media.discordapp.net/attachments/819199720249360384/861147392996933682/toyota_prius_gt_concept.png",
+
     "333TopSpeed": 120,
     "3330to60": 8,
     "333Handling": 75,
+
     "666TopSpeed": 124,
     "6660to60": 7.6,
     "666Handling": 78,
+
     "996TopSpeed": 129,
     "9960to60": 7.1,
     "996Handling": 78,
+
     "969TopSpeed": 129,
     "9690to60": 7.6,
     "969Handling": 81,
+
     "699TopSpeed": 124,
     "6990to60": 7.1,
     "699Handling": 81,
+
     "racehud": "https://media.discordapp.net/attachments/995376525119586356/1001859819357098066/prius_gt.jpg",
     "creator": "Keanny"
 }

@@ -25,7 +25,7 @@ function carNameGen(args) {
     if (!removePrizeTag && currentCar["isPrize"]) {
         currentName += ` ${trophyEmoji}`;
     }
-    if (!removeBMTag) {
+    if (!removeBMTag && currentCar["reference"]) {
         if (currentCar["active"]) {
             currentName += ` 🟢`;
         }
