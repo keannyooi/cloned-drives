@@ -1,0 +1,49 @@
+{
+    "rq": 81,
+    "make": "Nissan",
+    "model": "R381 Prototype",
+    "modelYear": 1968,
+    "country": "JP",
+    "topSpeed": 200,
+    "0to60": 3.4,
+    "handling": 89,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Amplification of Asia", "Motorsport", "Concept", "Unique", "Ultra Expensive"],
+    "isPrize": false,
+	
+    "weight": 853,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 91.89,
+    "ola": 100,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1077987123044565052/R381Proto.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1077987684175323186/R381Proto.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 203,
+"3330to60": 3.2,
+"333Handling": 92,
+
+"666TopSpeed": 205,
+"6660to60": 3.1,
+"666Handling": 95,
+
+"699TopSpeed": 205,
+"6990to60": 2.9,
+"699Handling": 99,
+
+"969TopSpeed": 208,
+"9690to60": 3.1,
+"969Handling": 99,
+
+"996TopSpeed": 208,
+"9960to60": 2.9,
+"996Handling": 95
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 80,
+    "make": "Mitsubishi",
+    "model": "Lancer Evolution VI MMC Zero Fighter",
+    "modelYear": 1999,
+    "country": "JP",
+    "topSpeed": 159,
+    "0to60": 4.2,
+    "handling": 88,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["The Amplification of Asia","Track Day","Unique"],
+    "isPrize": false,
+	
+    "weight": 1235,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 68.88,
+    "ola": 74.5,
+    "description": "Named after the Mitsubishi A6M Zero Fighter plane of the Pacific War, the Lancer Evolution Zero Fighter is a highly sought-after and rare iteration of the rally-derived Lancer Evolution VI. Very few were made and most were lost to time.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1088895648193052802/Evo6ZeroFighter.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1088898780356685824/Evo6Zero.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 162,
+"3330to60": 4,
+"333Handling": 91,
+
+"666TopSpeed": 166,
+"6660to60": 3.8,
+"666Handling": 94,
+
+"699TopSpeed": 166,
+"6990to60": 3.6,
+"699Handling": 98,
+
+"969TopSpeed": 169,
+"9690to60": 3.8,
+"969Handling": 98,
+
+"996TopSpeed": 169,
+"9960to60": 3.6,
+"996Handling": 94
+}

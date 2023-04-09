@@ -1,0 +1,49 @@
+{
+    "rq": 4,
+    "make": "REVA",
+    "model": "NXR Intercity",
+    "modelYear": 2009,
+    "country": "IN",
+    "topSpeed": 65,
+    "0to60": 20.8,
+    "handling": 59,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly","Rest of The World","The Amplification of Asia"],
+    "isPrize": false,
+	
+    "weight": 850,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Electric",
+    "mra": 0,
+    "ola": 69.62,
+    "description": "Into the REVAVerse.",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1011581515848753152/reva_nxr_li-on.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1011592129115594903/nxr.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 73, 
+"3330to60": 19.8, 
+"333Handling": 61,
+
+"666TopSpeed": 81, 
+"6660to60": 18.7, 
+"666Handling": 63,
+
+"699TopSpeed": 81, 
+"6990to60": 17.7, 
+"699Handling": 65,
+
+"969TopSpeed": 89, 
+"9690to60": 18.7, 
+"969Handling": 65,
+
+"996TopSpeed": 89, 
+"9960to60": 17.7, 
+"996Handling": 63
+}

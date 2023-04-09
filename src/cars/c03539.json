@@ -1,0 +1,49 @@
+{
+    "rq": 11,
+    "make": "REVA",
+    "model": "NXG",
+    "modelYear": 2010,
+    "country": "IN",
+    "topSpeed": 80,
+    "0to60": 15.8,
+    "handling": 62,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Rest of The World","Eco-Friendly","The Amplification of Asia"],
+    "isPrize": false,
+	
+    "weight": 825,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Electric",
+    "mra": 0,
+    "ola": 69.62,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1011581486807384114/reva_nxg.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1011592095187873884/nxg.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 86, 
+"3330to60": 15.0, 
+"333Handling": 64,
+
+"666TopSpeed": 93, 
+"6660to60": 14.2, 
+"666Handling": 66,
+
+"699TopSpeed": 93, 
+"6990to60": 13.4, 
+"699Handling": 69,
+
+"969TopSpeed": 100, 
+"9690to60": 14.2, 
+"969Handling": 69,
+
+"996TopSpeed": 100, 
+"9960to60": 13.4, 
+"996Handling": 66
+}
