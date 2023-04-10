@@ -1,0 +1,49 @@
+{
+    "rq": 1,
+    "make": "ZiS",
+    "model": "110",
+    "modelYear": 1945,
+    "country": "SU",
+    "topSpeed": 87,
+    "0to60": 27.0,
+    "handling": 40,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Rest of The World","The Rest of the Best: 2023"],
+    "isPrize": false,
+	
+    "weight": 2575,
+    "gc": "High",
+    "seatCount": 7,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 1.05,
+    "ola": 47.34,
+    "description": "Zis is peak Soviet engineering",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1046405196873470002/zis_110.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1046399761130983484/zis_110.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 93,
+"3330to60": 25.6,
+"333Handling": 41,
+
+"666TopSpeed": 99,
+"6660to60": 24.3,
+"666Handling": 43,
+
+"699TopSpeed": 99,
+"6990to60": 22.9,
+"699Handling": 44,
+
+"969TopSpeed": 105,
+"9690to60": 24.3,
+"969Handling": 44,
+
+"996TopSpeed": 105,
+"9960to60": 22.9,
+"996Handling": 43
+}

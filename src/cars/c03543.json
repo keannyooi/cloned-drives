@@ -1,0 +1,49 @@
+{
+    "rq": 34,
+    "make": "GAC",
+    "model": "4-Door Coupe Concept",
+    "modelYear": 2007,
+    "country": "CN",
+    "topSpeed": 127,
+    "0to60": 9.3,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Rest of The World","The Amplification of Asia"],
+    "isPrize": false,
+	
+    "weight": 1425,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 56.42,
+    "ola": 71.2,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1046406153661317242/gac_4-door_coupe_concept.png",
+	"racehud": "https://media.discordapp.net/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": "Keanny",
+
+"333TopSpeed": 131,
+"3330to60": 8.8,
+"333Handling": 75,
+
+"666TopSpeed": 135,
+"6660to60": 8.4,
+"666Handling": 78,
+
+"699TopSpeed": 135,
+"6990to60": 7.9,
+"699Handling": 81,
+
+"969TopSpeed": 139,
+"9690to60": 8.4,
+"969Handling": 81,
+
+"996TopSpeed": 139,
+"9960to60": 7.9,
+"996Handling": 78
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 40,
+    "make": "Lotus",
+    "model": "Elise",
+    "modelYear": 2010,
+    "country": "GB",
+    "topSpeed": 126,
+    "0to60": 7.1,
+    "handling": 88,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Track Day","The Midlands Cruise"],
+    "isPrize": false,
+	
+    "weight": 912,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 52.01,
+    "ola": 73.24,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/988449397660581888/2010_Lotus_Elise.png",
+	"racehud": "https://media.discordapp.net/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": "Tom",
+
+"333TopSpeed": 130,
+"3330to60": 6.7,
+"333Handling": 91,
+
+"666TopSpeed": 134,
+"6660to60": 6.4,
+"666Handling": 94,
+
+"699TopSpeed": 134,
+"6990to60": 6,
+"699Handling": 98,
+
+"969TopSpeed": 138,
+"9690to60": 6.4,
+"969Handling": 98,
+
+"996TopSpeed": 138,
+"9960to60": 6,
+"996Handling": 94
+}

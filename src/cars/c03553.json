@@ -1,0 +1,49 @@
+{
+    "rq": 79,
+    "make": "Superformance",
+    "model": "Brock Coupe",
+    "modelYear": 2004,
+    "country": "US",
+    "topSpeed": 197,
+    "0to60": 3.7,
+    "handling": 92,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner","Unique","Track Day","The Americas Assault","RestoMod"],
+    "isPrize": false,
+	
+    "weight": 1320,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 78.72,
+    "ola": 75.68,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1065057973497495612/2004_Brock_Coupe.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1065058055114461224/coupe_hud.png",
+    "creator": "Preston",
+
+"333TopSpeed": 200,
+"3330to60": 3.5,
+"333Handling": 95,
+
+"666TopSpeed": 202,
+"6660to60": 3.3,
+"666Handling": 98,
+
+"699TopSpeed": 202,
+"6990to60": 3.1,
+"699Handling": 102,
+
+"969TopSpeed": 205,
+"9690to60": 3.3,
+"969Handling": 102,
+
+"996TopSpeed": 205,
+"9960to60": 3.1,
+"996Handling": 98
+}

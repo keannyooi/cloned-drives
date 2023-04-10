@@ -1,0 +1,49 @@
+{
+    "rq": 20,
+    "make": "Maserati",
+    "model": "Merak",
+    "modelYear": 1972,
+    "country": "IT",
+    "topSpeed": 145,
+    "0to60": 8.8,
+    "handling": 71,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 1350,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 64.23,
+    "ola": 84.09,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1065570477898215485/Maserati_Merak_WA.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1065572507962327091/Maserati_Merak_w.png",
+    "creator": "Biszkoptowiec",
+
+"333TopSpeed": 149,
+"3330to60": 8.4,
+"333Handling": 73,
+
+"666TopSpeed": 152,
+"6660to60": 7.9,
+"666Handling": 76,
+
+"699TopSpeed": 152,
+"6990to60": 7.5,
+"699Handling": 79,
+
+"969TopSpeed": 156,
+"9690to60": 7.9,
+"969Handling": 79,
+
+"996TopSpeed": 156,
+"9960to60": 7.5,
+"996Handling": 76
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 60,
+    "make": "CH Auto",
+    "model": "Aculeus",
+    "modelYear": 2010,
+    "country": "CN",
+    "topSpeed": 168,
+    "0to60": 5.0,
+    "handling": 86,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Amplification of Asia","Rest of The World","Concept","Unique"],
+    "isPrize": false,
+	
+    "weight": 1600,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 76.32,
+    "ola": 79.67,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1046406005208141864/ch_auto_aculeus.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1046396472993796186/aculeus.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 171,
+"3330to60": 4.8,
+"333Handling": 89,
+
+"666TopSpeed": 174,
+"6660to60": 4.5,
+"666Handling": 92,
+
+"699TopSpeed": 174,
+"6990to60": 4.3,
+"699Handling": 95,
+
+"969TopSpeed": 177,
+"9690to60": 4.5,
+"969Handling": 95,
+
+"996TopSpeed": 177,
+"9960to60": 4.3,
+"996Handling": 92
+}

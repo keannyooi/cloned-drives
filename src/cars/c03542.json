@@ -1,0 +1,49 @@
+{
+    "rq": 25,
+    "make": "Ford",
+    "model": "Pinto Pangra Kit 4",
+    "modelYear": 1972,
+    "country": "US",
+    "topSpeed": 125,
+    "0to60": 7.5,
+    "handling": 70,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Americas Assault"],
+    "isPrize": false,
+	
+    "weight": 1043,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 67.57,
+    "ola": 73.33,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1046405836064440371/pangra.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1046396655290830939/pangra.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 129,
+"3330to60": 7.1,
+"333Handling": 72,
+
+"666TopSpeed": 133,
+"6660to60": 6.8,
+"666Handling": 75,
+
+"699TopSpeed": 133,
+"6990to60": 6.4,
+"699Handling": 78,
+
+"969TopSpeed": 137,
+"9690to60": 6.8,
+"969Handling": 78,
+
+"996TopSpeed": 137,
+"9960to60": 6.4,
+"996Handling": 75
+}

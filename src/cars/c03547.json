@@ -1,0 +1,49 @@
+{
+    "rq": 65,
+    "make": "Lotus",
+    "model": "Elise S",
+    "modelYear": 2012,
+    "country": "GB",
+    "topSpeed": 145,
+    "0to60": 4.7,
+    "handling": 89,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Track Day","The Midlands Cruise"],
+    "isPrize": false,
+	
+    "weight": 969,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 61.04,
+    "ola": 68.09,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/988449462034763816/2012_Lotus_Elise_S.png",
+	"racehud": "https://media.discordapp.net/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "creator": "Tom",
+
+"333TopSpeed": 149,
+"3330to60": 4.5,
+"333Handling": 92,
+
+"666TopSpeed": 152,
+"6660to60": 4.2,
+"666Handling": 95,
+
+"699TopSpeed": 152,
+"6990to60": 4,
+"699Handling": 99,
+
+"969TopSpeed": 156,
+"9690to60": 4.2,
+"969Handling": 99,
+
+"996TopSpeed": 156,
+"9960to60": 4,
+"996Handling": 95
+}
