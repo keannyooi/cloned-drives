@@ -9,7 +9,7 @@
     "handling": 63,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": [],
+    "tags": ["OG"],
     "isPrize": false,
     "weight": 1657,
     "gc": "High",
@@ -21,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 36.69,
     "ola": 62.86,
-    "description": "Card by Connor",
+    "description": "",
     "card": "https://media.discordapp.net/attachments/819199720249360384/821020839871905843/C.JeepCherokeeLaredo.png",
     "333TopSpeed": 113,
     "3330to60": 9.7,
@@ -39,5 +39,5 @@
     "6990to60": 8.7,
     "699Handling": 70,
     "racehud": "https://media.discordapp.net/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "creator": "Connor"
 }

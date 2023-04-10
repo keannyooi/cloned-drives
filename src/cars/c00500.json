@@ -9,7 +9,7 @@
     "handling": 59,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": [],
+    "tags": ["OG"],
     "isPrize": false,
     "weight": 1786,
     "gc": "High",
@@ -21,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 37.28,
     "ola": 61.9,
-    "description": "Card by Connor",
+    "description": "",
     "card": "https://media.discordapp.net/attachments/819199720249360384/821023087024930816/D.GMCS15JimmyGLX.png",
     "333TopSpeed": 107,
     "3330to60": 12,
@@ -39,5 +39,5 @@
     "6990to60": 10.7,
     "699Handling": 65,
     "racehud": "https://media.discordapp.net/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "creator": "Connor"
 }

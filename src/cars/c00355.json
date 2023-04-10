@@ -13,7 +13,7 @@
         "Muscle Car",
         "Silver Screen",
         "Style Icon",
-        "Servers Choice"
+        "Servers Choice","OG"
     ],
     "isPrize": false,
     "weight": 1639,
@@ -26,7 +26,7 @@
     "fuelType": "Petrol",
     "mra": 64.77,
     "ola": 73.68,
-    "description": "The ultra-popular model of the 1st generation Charger, powered by a 440 ci Magnum V8. Card by DodgeDemon",
+    "description": "The ultra-popular model of the 1st generation Charger, powered by a 440 ci Magnum V8.",
     "card": "https://media.discordapp.net/attachments/819199720249360384/825824887532683334/Charger.png",
     "333TopSpeed": 135,
     "3330to60": 5.4,
@@ -44,5 +44,5 @@
     "6990to60": 4.8,
     "699Handling": 74,
     "racehud": "https://media.discordapp.net/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "creator": "DodgeDemon"
 }

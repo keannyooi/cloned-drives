@@ -9,7 +9,7 @@
     "handling": 72,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": [],
+    "tags": ["OG"],
     "isPrize": false,
     "weight": 1280,
     "gc": "Medium",
@@ -21,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 40.92,
     "ola": 71.39,
-    "description": "Nissan's aptly named boxy boi. Card by keanny",
+    "description": "Nissan's aptly named boxy boi.",
     "card": "https://media.discordapp.net/attachments/819199720249360384/819383005340106762/cube.png",
     "333TopSpeed": 118,
     "3330to60": 9,
@@ -39,5 +39,5 @@
     "6990to60": 8.1,
     "699Handling": 80,
     "racehud": "https://media.discordapp.net/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "creator": "keanny""
 }

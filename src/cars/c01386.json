@@ -9,10 +9,7 @@
     "handling": 72,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": [
-        "Hot Hatch",
-        "Servers Choice"
-    ],
+    "tags": ["Hot Hatch", "Servers Choice", "OG"],
     "isPrize": false,
     "weight": 940,
     "gc": "Low",
@@ -24,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 40.47,
     "ola": 60.36,
-    "description": "Golf GTI in an american flavor. Card by Andu",
+    "description": "Golf GTI in an american flavor.",
     "card": "https://media.discordapp.net/attachments/819199720249360384/931544661330387044/RabbitGTI.png",
 
     "333TopSpeed": 112,

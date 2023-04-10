@@ -9,9 +9,7 @@
     "handling": 76,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": [
-        "Hot Hatch", "Year of the Rabbit"
-    ],
+    "tags": ["Hot Hatch", "Year of the Rabbit", "OG"],
     "isPrize": false,
     "weight": 1433,
     "gc": "Medium",
@@ -23,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 64.2,
     "ola": 87.73,
-    "description": "A puffed-up GTI. Card by Andu",
+    "description": "A puffed-up GTI.",
     "card": "https://media.discordapp.net/attachments/819199720249360384/820196484544069632/BeetleTMy.png",
     "333TopSpeed": 142,
     "3330to60": 6.4,
@@ -41,5 +39,5 @@
     "6990to60": 5.7,
     "699Handling": 84,
     "racehud": "https://media.discordapp.net/attachments/995376525119586356/1025334540169916506/BeetleTurbo.png",
-    "creator": ""
+    "creator": "Andu"
 }

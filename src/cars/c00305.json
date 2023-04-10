@@ -9,7 +9,7 @@
     "handling": 75,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": [],
+    "tags": ["OG"],
     "isPrize": false,
     "weight": 1507,
     "gc": "High",
@@ -21,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 41.78,
     "ola": 78.72,
-    "description": "There once was an ugly SUV, he was so ugly that the game's database died. The end. Card by Macan",
+    "description": "There once was an ugly SUV, he was so ugly that the game's database died. The end.",
     "card": "https://media.discordapp.net/attachments/819199720249360384/826520581981601812/Trailb.png",
     "333TopSpeed": 134,
     "3330to60": 8.9,
@@ -39,5 +39,5 @@
     "6990to60": 8,
     "699Handling": 83,
     "racehud": "https://media.discordapp.net/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "creator": "Macan"
 }

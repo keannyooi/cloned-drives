@@ -9,7 +9,7 @@
     "handling": 80,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [],
+    "tags": ["OG"],
     "isPrize": false,
     "weight": 1740,
     "gc": "Medium",
@@ -21,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 66.25,
     "ola": 79.25,
-    "description": "By Havvy.",
+    "description": "",
     "card": "https://media.discordapp.net/attachments/819199720249360384/820444547485925396/unknown.png",
     "333TopSpeed": 158,
     "3330to60": 5,
@@ -39,5 +39,5 @@
     "6990to60": 4.5,
     "699Handling": 89,
     "racehud": "https://media.discordapp.net/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "creator": "Havvy"
 }

@@ -9,7 +9,7 @@
     "handling": 86,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [],
+    "tags": ["OG"],
     "isPrize": false,
     "weight": 1880,
     "gc": "Low",
@@ -21,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 69.48,
     "ola": 72.97,
-    "description": "The designers of this car hold the world record speedrun for designing a car for mass production, at just nine months. Card by havvy",
+    "description": "The designers of this car hold the world record speedrun for designing a car for mass production, at just nine months.",
     "card": "https://media.discordapp.net/attachments/819199720249360384/826197143374004274/Maserati_GranTurismo_Card.png",
     "333TopSpeed": 179,
     "3330to60": 4.7,
@@ -39,5 +39,5 @@
     "6990to60": 4.2,
     "699Handling": 95,
     "racehud": "https://media.discordapp.net/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "creator": "Havvy"
 }

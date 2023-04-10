@@ -9,7 +9,7 @@
     "handling": 77,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": [],
+    "tags": ["OG"],
     "isPrize": false,
     "weight": 1085,
     "gc": "Medium",
@@ -21,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 55.86,
     "ola": 74.07,
-    "description": "A Peugeot in the USA just before they withdrew their cars away. Card by DodgeDemon",
+    "description": "A Peugeot in the USA just before they withdrew their cars away.",
     "card": "https://media.discordapp.net/attachments/819199720249360384/824644824572493904/405mi16thingy.png",
     "333TopSpeed": 139,
     "3330to60": 7.7,
@@ -39,5 +39,5 @@
     "6990to60": 6.9,
     "699Handling": 85,
     "racehud": "https://media.discordapp.net/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "creator": "DodgeDemon"
 }

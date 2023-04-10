@@ -9,7 +9,7 @@
     "handling": 75,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [],
+    "tags": ["OG"],
     "isPrize": false,
     "weight": 1990,
     "gc": "Low",
@@ -21,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 74.38,
     "ola": 81.46,
-    "description": "Card by Havvy.",
+    "description": "",
     "card": "https://media.discordapp.net/attachments/819199720249360384/820921941426176000/MaseratiQuattroporteS.png",
     "333TopSpeed": 177,
     "3330to60": 4.8,
@@ -39,5 +39,5 @@
     "6990to60": 4.3,
     "699Handling": 83,
     "racehud": "https://media.discordapp.net/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "creator": "Havvy"
 }

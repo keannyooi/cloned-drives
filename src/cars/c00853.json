@@ -9,7 +9,7 @@
     "handling": 71,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": [],
+    "tags": ["OG"],
     "isPrize": false,
     "weight": 1680,
     "gc": "Medium",
@@ -21,7 +21,7 @@
     "fuelType": "Petrol",
     "mra": 57.14,
     "ola": 72.22,
-    "description": "Card by Havvy.",
+    "description": "",
     "card": "https://media.discordapp.net/attachments/819199720249360384/820438569234726912/Mercedes-Benz560SL.png",
     "333TopSpeed": 143,
     "3330to60": 6.8,
@@ -39,5 +39,5 @@
     "6990to60": 6.1,
     "699Handling": 79,
     "racehud": "https://media.discordapp.net/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "creator": "Havvy"
 }

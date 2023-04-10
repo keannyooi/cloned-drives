@@ -13,7 +13,7 @@
         "Supercar",
         "Style Icon",
         "Silver Screen",
-        "Street Racer"
+        "Street Racer","OG"
     ],
     "isPrize": false,
     "weight": 1708,
@@ -26,7 +26,7 @@
     "fuelType": "Petrol",
     "mra": 71.43,
     "ola": 88,
-    "description": "Ferrari wasn't happy about Miami Vice using a Ferrari Daytona replica, so they gave them this. Card by Connor",
+    "description": "Ferrari wasn't happy about Miami Vice using a Ferrari Daytona replica, so they gave them this.",
     "card": "https://media.discordapp.net/attachments/819199720249360384/820739412103135262/B.FerrariTestarossa.png",
     "333TopSpeed": 181,
     "3330to60": 5.1,
@@ -44,5 +44,5 @@
     "6990to60": 4.6,
     "699Handling": 87,
     "racehud": "https://media.discordapp.net/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+    "creator": "Connor"
 }
