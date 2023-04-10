@@ -32,7 +32,7 @@ async function regenDealership() {
             rqEnd = i < 4 ? 29 : 64;
             if (i >= 4) {
                 price = 96000 + (Math.floor(Math.random() * 96000));
-                stock = 25;
+                stock = 50;
             }
             else {
                 price = 2000 + (Math.floor(Math.random() * 2000));
@@ -43,7 +43,7 @@ async function regenDealership() {
             rqEnd = i < 4 ? 39 : 64;
             if (i >= 4) {
                 price = 96000 + (Math.floor(Math.random() * 96000));
-                stock = 25;
+                stock = 50;
             }
             else {
                 price = 8000 + (Math.floor(Math.random() * 4000));
@@ -54,7 +54,7 @@ async function regenDealership() {
             rqEnd = i < 4 ? 49 : 79;
             if (i >= 4) {
                 price = 384000 + (Math.floor(Math.random() * 100000));
-                stock = 5;
+                stock = 50;
             }
             else {
                 price = 24000 + (Math.floor(Math.random() * 12000));

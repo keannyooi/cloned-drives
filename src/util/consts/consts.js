@@ -32,9 +32,33 @@ const defaultQTETime = 5000;
 
 const defaultPageLimit = 10;
 
-const driveHierarchy = ["4WD", "FWD", "RWD"];
+const driveHierarchy = ["AWD", "4WD", "FWD", "RWD"];
 const gcHierarchy = ["High", "Medium", "Low"];
 const weatherVars = {
+    "Sunny Track": {
+        drivePen: 0,
+        absPen: 0,
+        tcsPen: 0,
+        tyrePen: {
+            "Standard": 0,
+            "Performance": 0,
+            "All-Surface": 0,
+            "Off-Road": 0,
+            "Slick": -20
+        }
+    },
+    "Rainy Track": {
+        drivePen: 4,
+        absPen: 1,
+        tcsPen: 1,
+        tyrePen: {
+            "Standard": 0,
+            "Performance": 11,
+            "All-Surface": 5,
+            "Off-Road": 50,
+            "Slick": 40
+        }
+    },
     "Sunny Asphalt": {
         drivePen: 0,
         absPen: 0,
@@ -55,7 +79,7 @@ const weatherVars = {
             "Standard": 0,
             "Performance": 11,
             "All-Surface": 5,
-            "Off-Road": 25,
+            "Off-Road": 40,
             "Slick": 50
         }
     },
@@ -81,6 +105,18 @@ const weatherVars = {
             "All-Surface": -5.5,
             "Off-Road": -4.5,
             "Slick": 42.5
+        }
+    },
+    "Sunny Sand": {
+        drivePen: 5.5,
+        absPen: -1.25,
+        tcsPen: -1.25,
+        tyrePen: {
+            "Standard": 0,
+            "Performance": 50.5,
+            "All-Surface": -15.5,
+            "Off-Road": -20.5,
+            "Slick": 80.5
         }
     },
     "Sunny Dirt": {
