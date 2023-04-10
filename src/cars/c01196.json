@@ -9,11 +9,9 @@
     "handling": 81,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Street Racer",
-        "Track Day"
-    ],
+    "tags": ["Street Racer", "Track Day"],
     "isPrize": false,
+    
     "weight": 1495,
     "gc": "Low",
     "seatCount": 5,
@@ -24,23 +22,29 @@
     "fuelType": "Petrol",
     "mra": 64.86,
     "ola": 83.33,
-    "description": "This Hawkeye STI was made in honor of the late Richard Burns' legacy. Card by Spence",
+    "description": "This Hawkeye STI was made in honor of the late Richard Burns' legacy.",
     "card": "https://media.discordapp.net/attachments/819199720249360384/845804552971747338/image0.jpg",
+
     "333TopSpeed": 161,
     "3330to60": 4.6,
     "333Handling": 84,
+
     "666TopSpeed": 165,
     "6660to60": 4.3,
     "666Handling": 86,
+
     "699TopSpeed": 165,
     "6990to60": 4.1,
     "699Handling": 90,
+
     "969TopSpeed": 168,
     "9690to60": 4.3,
     "969Handling": 90,
+
     "996TopSpeed": 168,
     "9960to60": 4.1,
     "996Handling": 86,
-    "racehud": "https://media.discordapp.net/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1094567025831071794/rb320.jpg",
+    "creator": "Spence"
 }

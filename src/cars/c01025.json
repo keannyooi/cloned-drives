@@ -9,10 +9,9 @@
     "handling": 73,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": [
-        "Hot Hatch"
-    ],
+    "tags": ["Hot Hatch"],
     "isPrize": false,
+
     "weight": 902,
     "gc": "Medium",
     "seatCount": 5,
@@ -25,25 +24,27 @@
     "ola": 72.17,
     "description": "This little pug was regarded as one of the best hot hatches ever made by driving enthusiasts.",
     "card": "https://media.discordapp.net/attachments/819199720249360384/984468423344021564/unknown.png",
-"333TopSpeed": 129,
-"3330to60": 7.7,
-"333Handling": 75,
 
-"666TopSpeed": 133,
-"6660to60": 7.3,
-"666Handling": 78,
+    "333TopSpeed": 129,
+    "3330to60": 7.7,
+    "333Handling": 75,
 
-"699TopSpeed": 133,
-"6990to60": 6.9,
-"699Handling": 81,
+    "666TopSpeed": 133,
+    "6660to60": 7.3,
+    "666Handling": 78,
 
-"969TopSpeed": 137,
-"9690to60": 7.3,
-"969Handling": 81,
+    "699TopSpeed": 133,
+    "6990to60": 6.9,
+    "699Handling": 81,
 
-"996TopSpeed": 137,
-"9960to60": 6.9,
-"996Handling": 78,
+    "969TopSpeed": 137,
+    "9690to60": 7.3,
+    "969Handling": 81,
+
+    "996TopSpeed": 137,
+    "9960to60": 6.9,
+    "996Handling": 78,
+    
     "racehud": "https://media.discordapp.net/attachments/995376525119586356/1024366732854448188/Peugeot_205_GTI.png",
     "creator": "Spence"
 }

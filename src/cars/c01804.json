@@ -9,10 +9,9 @@
     "handling": 68,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": [
-        "The Japanese Odyssey"
-    ],
+    "tags": ["The Japanese Odyssey"],
     "isPrize": false,
+
     "weight": 2539,
     "gc": "High",
     "seatCount": 3,
@@ -23,23 +22,29 @@
     "fuelType": "Petrol",
     "mra": 56,
     "ola": 69.49,
-    "description": "When the Titan does not need 3 more seats so it can haul more stuff in the bed. Card by Spence.",
+    "description": "When the Titan does not need 3 more seats so it can haul more stuff in the bed.",
     "card": "https://media.discordapp.net/attachments/819199720249360384/970056480587927602/IMG_4922.png",
+
     "333TopSpeed": 118,
     "3330to60": 5.8,
     "333Handling": 70,
+
     "666TopSpeed": 122,
     "6660to60": 5.5,
     "666Handling": 72,
+
     "996TopSpeed": 127,
     "9960to60": 5.2,
     "996Handling": 72,
+
     "969TopSpeed": 127,
     "9690to60": 5.5,
     "969Handling": 75,
+
     "699TopSpeed": 122,
     "6990to60": 5.2,
     "699Handling": 75,
+
     "racehud": "https://media.discordapp.net/attachments/995376525119586356/1022158574706761758/TitSV4x4SC.png",
-    "creator": ""
+    "creator": "Spence"
 }

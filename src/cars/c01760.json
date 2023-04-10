@@ -9,10 +9,9 @@
     "handling": 62,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": [
-        "The Japanese Odyssey"
-    ],
+    "tags": ["The Japanese Odyssey"],
     "isPrize": false,
+
     "weight": 2400,
     "gc": "High",
     "seatCount": 5,
@@ -23,23 +22,29 @@
     "fuelType": "Petrol",
     "mra": 42.5,
     "ola": 62.5,
-    "description": "Card by Lemonade.",
+    "description": "",
     "card": "https://media.discordapp.net/attachments/819199720249360384/931470554463076372/Nissan_Patrol_Super_Safari_CD.png",
+
     "333TopSpeed": 122,
     "3330to60": 10.1,
     "333Handling": 64,
+
     "666TopSpeed": 127,
     "6660to60": 9.5,
     "666Handling": 66,
+
     "996TopSpeed": 131,
     "9960to60": 9,
     "996Handling": 66,
+
     "969TopSpeed": 131,
     "9690to60": 9.5,
     "969Handling": 69,
+
     "699TopSpeed": 127,
     "6990to60": 9,
     "699Handling": 69,
-    "racehud": "https://media.discordapp.net/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1094912368850509904/super_safari.jpg",
+    "creator": "AK1"
 }

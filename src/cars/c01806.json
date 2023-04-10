@@ -9,10 +9,9 @@
     "handling": 68,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": [
-        "The Japanese Odyssey"
-    ],
+    "tags": ["The Japanese Odyssey"],
     "isPrize": false,
+
     "weight": 3112,
     "gc": "High",
     "seatCount": 5,
@@ -23,23 +22,29 @@
     "fuelType": "Petrol",
     "mra": 54.37,
     "ola": 68.75,
-    "description": "This is the top-of-the-line trim for the funny Titan. Card by Spence.",
+    "description": "This is the top-of-the-line trim for the funny Titan.",
     "card": "https://media.discordapp.net/attachments/819199720249360384/970058104748245042/IMG_4737.png",
+
     "333TopSpeed": 115,
     "3330to60": 7.1,
     "333Handling": 70,
+
     "666TopSpeed": 119,
     "6660to60": 6.8,
     "666Handling": 72,
+
     "996TopSpeed": 124,
     "9960to60": 6.4,
     "996Handling": 72,
+
     "969TopSpeed": 124,
     "9690to60": 6.8,
     "969Handling": 75,
+
     "699TopSpeed": 119,
     "6990to60": 6.4,
     "699Handling": 75,
-    "racehud": "https://media.discordapp.net/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1094574221818089542/titan_platinum.jpg",
+    "creator": "Spence"
 }

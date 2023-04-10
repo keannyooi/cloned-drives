@@ -13,6 +13,7 @@
         "Hot Hatch"
     ],
     "isPrize": false,
+
     "weight": 1145,
     "gc": "Medium",
     "seatCount": 2,
@@ -23,23 +24,29 @@
     "fuelType": "Petrol",
     "mra": 49.86,
     "ola": 73,
-    "description": "The homologated special edition 205 with AWD and engine at the middle was built with Group B rally car DNA. Card by Spence.",
+    "description": "The homologated special edition 205 with AWD and engine at the middle was built with Group B rally car DNA.",
     "card": "https://media.discordapp.net/attachments/819199720249360384/946594716772868127/C351B7CF-AD8B-43D7-B4DF-176F74196F0D.png",
+
     "333TopSpeed": 136,
     "3330to60": 6.7,
     "333Handling": 80,
+
     "666TopSpeed": 140,
     "6660to60": 6.3,
     "666Handling": 82,
+
     "996TopSpeed": 144,
     "9960to60": 6,
     "996Handling": 82,
+
     "969TopSpeed": 144,
     "9690to60": 6.3,
     "969Handling": 85,
+
     "699TopSpeed": 140,
     "6990to60": 6,
     "699Handling": 85,
-    "racehud": "https://media.discordapp.net/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1094562614958366751/205_t16.jpg",
+    "creator": "Spence"
 }

@@ -11,6 +11,7 @@
     "tyreType": "All-Surface",
     "tags": [],
     "isPrize": false,
+    
     "weight": 1185,
     "gc": "High",
     "seatCount": 5,
@@ -21,23 +22,29 @@
     "fuelType": "Petrol",
     "mra": 17,
     "ola": 60.29,
-    "description": "Card by.",
+    "description": "",
     "card": "https://media.discordapp.net/attachments/819199720249360384/865591501332152360/Subaru-GL-Turbo-Wagon-1_1.png",
+
     "333TopSpeed": 100,
     "3330to60": 12.9,
     "333Handling": 61,
+
     "666TopSpeed": 105,
     "6660to60": 12.2,
     "666Handling": 63,
+
     "996TopSpeed": 111,
     "9960to60": 11.6,
     "996Handling": 63,
+
     "969TopSpeed": 111,
     "9690to60": 12.2,
     "969Handling": 65,
+
     "699TopSpeed": 105,
     "6990to60": 11.6,
     "699Handling": 65,
-    "racehud": "https://media.discordapp.net/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1094602724781334548/gl_turbo.jpg",
+    "creator": "Ahmed"
 }

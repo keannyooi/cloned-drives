@@ -11,6 +11,7 @@
     "tyreType": "All-Surface",
     "tags": ["Extreme Juggernaut"],
     "isPrize": false,
+    
     "weight": 2200,
     "gc": "High",
     "seatCount": 5,
@@ -23,25 +24,27 @@
     "ola": 80.00,
     "description": "A Fire-Breathing SUV with Fashion Sense.",
     "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1079091638468616232/ExistCayenneTurboCoupe.png",
-"333TopSpeed": 180,
-"3330to60": 3.3,
-"333Handling": 90,
 
-"666TopSpeed": 183,
-"6660to60": 3.1,
-"666Handling": 93,
+    "333TopSpeed": 180,
+    "3330to60": 3.3,
+    "333Handling": 90,
 
-"699TopSpeed": 183,
-"6990to60": 3,
-"699Handling": 97,
+    "666TopSpeed": 183,
+    "6660to60": 3.1,
+    "666Handling": 93,
 
-"969TopSpeed": 186,
-"9690to60": 3.1,
-"969Handling": 97,
+    "699TopSpeed": 183,
+    "6990to60": 3,
+    "699Handling": 97,
 
-"996TopSpeed": 186,
-"9960to60": 3,
-"996Handling": 93,
+    "969TopSpeed": 186,
+    "9690to60": 3.1,
+    "969Handling": 97,
+
+    "996TopSpeed": 186,
+    "9960to60": 3,
+    "996Handling": 93,
+
     "racehud": "https://media.discordapp.net/attachments/995376525119586356/997770931638378496/cayenneturbocoupe.png",
     "creator": "Exist"
 }

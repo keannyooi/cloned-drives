@@ -11,6 +11,7 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
+    
     "weight": 1290,
     "gc": "Medium",
     "seatCount": 5,
@@ -21,23 +22,29 @@
     "fuelType": "Petrol",
     "mra": 58.93,
     "ola": 63.64,
-    "description": "No one expected back in 1994 for a Subaru Wagon to have 230 hp but here it is. Card by spence",
+    "description": "No one expected back in 1994 for a Subaru Wagon to have 230 hp but here it is.",
     "card": "https://media.discordapp.net/attachments/819199720249360384/828712317231038464/image0.jpg",
+
     "333TopSpeed": 139,
     "3330to60": 6.3,
     "333Handling": 79,
+
     "666TopSpeed": 143,
     "6660to60": 5.9,
     "666Handling": 81,
+
     "996TopSpeed": 147,
     "9960to60": 5.6,
     "996Handling": 81,
+
     "969TopSpeed": 147,
     "9690to60": 5.9,
     "969Handling": 84,
+
     "699TopSpeed": 143,
     "6990to60": 5.6,
     "699Handling": 84,
-    "racehud": "https://media.discordapp.net/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1094612686991536148/wrx_wagon.jpg",
+    "creator": "Spence"
 }

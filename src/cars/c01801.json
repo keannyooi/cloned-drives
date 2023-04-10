@@ -9,10 +9,9 @@
     "handling": 62,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": [
-        "The Japanese Odyssey"
-    ],
+    "tags": ["The Japanese Odyssey"],
     "isPrize": false,
+
     "weight": 3316,
     "gc": "High",
     "seatCount": 6,
@@ -23,23 +22,29 @@
     "fuelType": "Diesel",
     "mra": 47.99,
     "ola": 70.08,
-    "description": "issa diesel brotha. Card by Spence.",
+    "description": "issa diesel brotha.",
     "card": "https://media.discordapp.net/attachments/819199720249360384/970056995833008168/IMG_4655.png",
+
     "333TopSpeed": 109,
     "3330to60": 8.8,
     "333Handling": 64,
+
     "666TopSpeed": 114,
     "6660to60": 8.4,
     "666Handling": 66,
+
     "996TopSpeed": 119,
     "9960to60": 7.9,
     "996Handling": 66,
+
     "969TopSpeed": 119,
     "9690to60": 8.4,
     "969Handling": 69,
+
     "699TopSpeed": 114,
     "6990to60": 7.9,
     "699Handling": 69,
-    "racehud": "https://media.discordapp.net/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1094579840604196934/titan_pro4x_diesel.jpg",
+    "creator": "Spence"
 }

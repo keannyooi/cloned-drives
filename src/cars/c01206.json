@@ -9,10 +9,9 @@
     "handling": 73,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Street Racer"
-    ],
+    "tags": ["Street Racer"],
     "isPrize": false,
+
     "weight": 1510,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,23 +22,29 @@
     "fuelType": "Petrol",
     "mra": 56.73,
     "ola": 54.25,
-    "description": "Starting off a new generation with a WRX that is slower than the previous generation. Card by Spence.",
+    "description": "Starting off a new generation with a WRX that is slower than the previous generation.",
     "card": "https://media.discordapp.net/attachments/819199720249360384/827407385438060564/image0.jpg",
+
     "333TopSpeed": 144,
     "3330to60": 5.6,
     "333Handling": 75,
+
     "666TopSpeed": 147,
     "6660to60": 5.3,
     "666Handling": 78,
+
     "996TopSpeed": 151,
     "9960to60": 5,
     "996Handling": 78,
+
     "969TopSpeed": 151,
     "9690to60": 5.3,
     "969Handling": 81,
+
     "699TopSpeed": 147,
     "6990to60": 5,
     "699Handling": 81,
-    "racehud": "https://media.discordapp.net/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1094616496073871360/wrx_hatch.jpg",
+    "creator": "Spence"
 }

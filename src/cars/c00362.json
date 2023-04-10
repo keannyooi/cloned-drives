@@ -11,6 +11,7 @@
     "tyreType": "All-Surface",
     "tags": [],
     "isPrize": false,
+
     "weight": 2435,
     "gc": "High",
     "seatCount": 7,
@@ -21,23 +22,29 @@
     "fuelType": "Petrol",
     "mra": 61.39,
     "ola": 80,
-    "description": "Card by Macan.",
+    "description": "",
     "card": "https://media.discordapp.net/attachments/819199720249360384/826073080446713866/Dodge_Durango_RT_AWD_2016.png",
+
     "333TopSpeed": 124,
     "3330to60": 5.9,
     "333Handling": 72,
+
     "666TopSpeed": 129,
     "6660to60": 5.6,
     "666Handling": 75,
+
     "996TopSpeed": 133,
     "9960to60": 5.3,
     "996Handling": 75,
+
     "969TopSpeed": 133,
     "9690to60": 5.6,
     "969Handling": 78,
+
     "699TopSpeed": 129,
     "6990to60": 5.3,
     "699Handling": 78,
-    "racehud": "https://media.discordapp.net/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1094566908302463006/durango.jpg",
+    "creator": "Macan"
 }

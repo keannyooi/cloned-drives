@@ -9,10 +9,9 @@
     "handling": 78,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Muscle Car"
-    ],
+    "tags": ["Muscle Car"],
     "isPrize": false,
+
     "weight": 1986,
     "gc": "Medium",
     "seatCount": 4,
@@ -23,23 +22,29 @@
     "fuelType": "Petrol",
     "mra": 72.69,
     "ola": 78.67,
-    "description": "Card by Lemonade.",
+    "description": "",
     "card": "https://media.discordapp.net/attachments/819199720249360384/852129307249737770/Cadillac_STS-V.png",
+    
     "333TopSpeed": 158,
     "3330to60": 4.6,
     "333Handling": 81,
+
     "666TopSpeed": 162,
     "6660to60": 4.3,
     "666Handling": 83,
+
     "996TopSpeed": 165,
     "9960to60": 4.1,
     "996Handling": 83,
+
     "969TopSpeed": 165,
     "9690to60": 4.3,
     "969Handling": 87,
+
     "699TopSpeed": 162,
     "6990to60": 4.1,
     "699Handling": 87,
-    "racehud": "https://media.discordapp.net/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1094909114368413758/sts-v.jpg",
+    "creator": "AK1"
 }

@@ -11,6 +11,7 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
+
     "weight": 1270,
     "gc": "Low",
     "seatCount": 2,
@@ -21,23 +22,29 @@
     "fuelType": "Petrol",
     "mra": 40.46,
     "ola": 67.61,
-    "description": "A 90's production intepretation of a hotrod by Chrysler. Card by Spence",
+    "description": "A 90's production intepretation of a hotrod by Chrysler.",
     "card": "https://media.discordapp.net/attachments/819199720249360384/826420202555047936/plymouthprowler.png",
+
     "333TopSpeed": 121,
     "3330to60": 6.7,
     "333Handling": 81,
+
     "666TopSpeed": 126,
     "6660to60": 6.4,
     "666Handling": 83,
+
     "996TopSpeed": 130,
     "9960to60": 6,
     "996Handling": 83,
+
     "969TopSpeed": 130,
     "9690to60": 6.4,
     "969Handling": 87,
+
     "699TopSpeed": 126,
     "6990to60": 6,
     "699Handling": 87,
-    "racehud": "https://media.discordapp.net/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1094600786908037240/prowler.jpg",
+    "creator": "Spence"
 }

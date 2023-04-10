@@ -9,10 +9,9 @@
     "handling": 72,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Street Racer"
-    ],
+    "tags": ["Street Racer"],
     "isPrize": false,
+    
     "weight": 1414,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,23 +22,29 @@
     "fuelType": "Petrol",
     "mra": 50.43,
     "ola": 58.62,
-    "description": "The mid-level performance variant of the Bugeye Impreza for the people that can't afford an STI. Card by Spence",
+    "description": "The mid-level performance variant of the Bugeye Impreza for the people that can't afford an STI.",
     "card": "https://media.discordapp.net/attachments/819199720249360384/844761185608794122/image0.jpg",
+
     "333TopSpeed": 150,
     "3330to60": 5.5,
     "333Handling": 74,
+
     "666TopSpeed": 153,
     "6660to60": 5.2,
     "666Handling": 77,
+
     "699TopSpeed": 153,
     "6990to60": 4.9,
     "699Handling": 80,
+
     "969TopSpeed": 157,
     "9690to60": 5.2,
     "969Handling": 80,
+
     "996TopSpeed": 157,
     "9960to60": 4.9,
     "996Handling": 77,
-    "racehud": "https://media.discordapp.net/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1094609104833609758/wrx_2004.jpg",
+    "creator": "Spence"
 }

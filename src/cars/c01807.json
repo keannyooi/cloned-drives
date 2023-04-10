@@ -9,10 +9,9 @@
     "handling": 66,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": [
-        "The Japanese Odyssey"
-    ],
+    "tags": ["The Japanese Odyssey"],
     "isPrize": false,
+
     "weight": 3338,
     "gc": "High",
     "seatCount": 6,
@@ -23,23 +22,29 @@
     "fuelType": "Diesel",
     "mra": 48.42,
     "ola": 73.91,
-    "description": "The Longest name available in the Titan range. Card by Spence.",
+    "description": "The Longest name available in the Titan range.",
     "card": "https://media.discordapp.net/attachments/819199720249360384/970057210296156211/IMG_4924.png",
+
     "333TopSpeed": 111,
     "3330to60": 8.7,
     "333Handling": 68,
+
     "666TopSpeed": 116,
     "6660to60": 8.3,
     "666Handling": 70,
+
     "996TopSpeed": 121,
     "9960to60": 7.8,
     "996Handling": 70,
+
     "969TopSpeed": 121,
     "9690to60": 8.3,
     "969Handling": 73,
+
     "699TopSpeed": 116,
     "6990to60": 7.8,
     "699Handling": 73,
-    "racehud": "https://media.discordapp.net/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1094575625538371664/titan_platinum_diesel.jpg",
+    "creator": "Spence"
 }

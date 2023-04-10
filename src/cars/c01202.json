@@ -9,10 +9,9 @@
     "handling": 79,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Street Racer"
-    ],
+    "tags": ["Street Racer"],
     "isPrize": false,
+
     "weight": 1200,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,23 +22,29 @@
     "fuelType": "Petrol",
     "mra": 66.27,
     "ola": 61.81,
-    "description": "The First WRX ever made. Card by Spence.",
+    "description": "The First WRX ever made.",
     "card": "https://media.discordapp.net/attachments/819199720249360384/838319066078117898/image0.jpg",
+
     "333TopSpeed": 153,
     "3330to60": 5.2,
     "333Handling": 82,
+
     "666TopSpeed": 157,
     "6660to60": 5,
     "666Handling": 84,
+
     "996TopSpeed": 160,
     "9960to60": 4.7,
     "996Handling": 84,
+
     "969TopSpeed": 160,
     "9690to60": 5,
     "969Handling": 88,
+
     "699TopSpeed": 157,
     "6990to60": 4.7,
     "699Handling": 88,
-    "racehud": "https://media.discordapp.net/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1094610754885406831/wrx_1992.jpg",
+    "creator": "Spence"
 }

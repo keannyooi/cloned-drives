@@ -11,6 +11,7 @@
     "tyreType": "All-Surface",
     "tags": [],
     "isPrize": false,
+    
     "weight": 2085,
     "gc": "High",
     "seatCount": 5,
@@ -21,27 +22,29 @@
     "fuelType": "Petrol",
     "mra": 70,
     "ola": 72,
-    "description": "None.",
+    "description": "",
     "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1079094859895422976/CayenneGTS2010.png",
-"333TopSpeed": 162,
-"3330to60": 5.3,
-"333Handling": 85,
 
-"666TopSpeed": 166,
-"6660to60": 5,
-"666Handling": 87,
+    "333TopSpeed": 162,
+    "3330to60": 5.3,
+    "333Handling": 85,
 
-"699TopSpeed": 166,
-"6990to60": 4.8,
-"699Handling": 91,
+    "666TopSpeed": 166,
+    "6660to60": 5,
+    "666Handling": 87,
 
-"969TopSpeed": 169,
-"9690to60": 5,
-"969Handling": 91,
+    "699TopSpeed": 166,
+    "6990to60": 4.8,
+    "699Handling": 91,
 
-"996TopSpeed": 169,
-"9960to60": 4.8,
-"996Handling": 87,
+    "969TopSpeed": 169,
+    "9690to60": 5,
+    "969Handling": 91,
+
+    "996TopSpeed": 169,
+    "9960to60": 4.8,
+    "996Handling": 87,
+
     "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1079095247159709716/CayenneGTS2010.png",
     "creator": "Bnuuy"
 }

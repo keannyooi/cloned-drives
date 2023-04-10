@@ -13,6 +13,7 @@
         "Servers Choice"
     ],
     "isPrize": false,
+
     "weight": 1378,
     "gc": "Medium",
     "seatCount": 5,
@@ -25,21 +26,27 @@
     "ola": 72.72,
     "description": "The Sentra finally gets a sporty trim, but compared to its competitors it can seem inferior.",
     "card": "https://media.discordapp.net/attachments/819199720249360384/819383759807840256/sentra_nismo.png",
+
     "333TopSpeed": 135,
     "3330to60": 6.8,
     "333Handling": 82,
+
     "666TopSpeed": 139,
     "6660to60": 6.5,
     "666Handling": 84,
+
     "996TopSpeed": 143,
     "9960to60": 6.1,
     "996Handling": 84,
+    
     "969TopSpeed": 143,
     "9690to60": 6.5,
     "969Handling": 88,
+
     "699TopSpeed": 139,
     "6990to60": 6.1,
     "699Handling": 88,
+
     "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003653331564105758/sentra_nismo.jpg",
     "creator": "Keanny"
 }

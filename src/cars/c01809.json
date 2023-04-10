@@ -9,10 +9,9 @@
     "handling": 68,
     "driveType": "4WD",
     "tyreType": "All-Surface",
-    "tags": [
-        "The Japanese Odyssey"
-    ],
+    "tags": ["The Japanese Odyssey"],
     "isPrize": false,
+
     "weight": 2599,
     "gc": "High",
     "seatCount": 3,
@@ -23,23 +22,29 @@
     "fuelType": "Petrol",
     "mra": 53.34,
     "ola": 69.39,
-    "description": "The most basic Titan you can get. Card by Spence.",
+    "description": "The most basic Titan you can get.",
     "card": "https://media.discordapp.net/attachments/819199720249360384/970057959533068349/IMG_4767.png",
+
     "333TopSpeed": 115,
     "3330to60": 7.7,
     "333Handling": 70,
+
     "666TopSpeed": 119,
     "6660to60": 7.3,
     "666Handling": 72,
+
     "996TopSpeed": 124,
     "9960to60": 6.9,
     "996Handling": 72,
+
     "969TopSpeed": 124,
     "9690to60": 7.3,
     "969Handling": 75,
+
     "699TopSpeed": 119,
     "6990to60": 6.9,
     "699Handling": 75,
-    "racehud": "https://media.discordapp.net/attachments/716917404868935691/997766459843428362/placeholder3.png",
-    "creator": ""
+
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1094576803521245204/titan_cheap.jpg",
+    "creator": "Spence"
 }

@@ -9,10 +9,9 @@
     "handling": 68,
     "driveType": "4WD",
     "tyreType": "Off-Road",
-    "tags": [
-        "The Japanese Odyssey"
-    ],
+    "tags": ["The Japanese Odyssey"],
     "isPrize": false,
+
     "weight": 2712,
     "gc": "High",
     "seatCount": 5,
@@ -23,23 +22,29 @@
     "fuelType": "Petrol",
     "mra": 59.35,
     "ola": 70,
-    "description": "The Titan got refreshed in 2020 with improvements in technology, styling and powertrain. Card by Spence.",
+    "description": "The Titan got refreshed in 2020 with improvements in technology, styling and powertrain.",
     "card": "https://media.discordapp.net/attachments/819199720249360384/970058265494945823/IMG_4932.png",
+
     "333TopSpeed": 120,
     "3330to60": 6.7,
     "333Handling": 70,
+
     "666TopSpeed": 124,
     "6660to60": 6.3,
     "666Handling": 72,
+
     "996TopSpeed": 129,
     "9960to60": 6,
     "996Handling": 72,
+
     "969TopSpeed": 129,
     "9690to60": 6.3,
     "969Handling": 75,
+
     "699TopSpeed": 124,
     "6990to60": 6,
     "699Handling": 75,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1022157840141533324/TitPro4X4x4C.png",
-    "creator": ""
+
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1094569728296628305/titan_pro4x_new.jpg",
+    "creator": "Spence"
 }
