@@ -1,0 +1,49 @@
+{
+    "rq": 102,
+    "make": "Aston Martin",
+    "model": "Valkyrie",
+    "modelYear": 2021,
+    "country": "GB",
+    "topSpeed": 242,
+    "0to60": 2.4,
+    "handling": 99,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Hypercar","The Midlands Cruise","Ultra Expensive","Unique","Eco-Friendly","Track Day"],
+    "isPrize": false,
+	
+    "weight": 1200,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Hybrid",
+    "mra": 122.22,
+    "ola": 90,
+    "description": "The ultimate Aston Martin is suited more for Fernando Alonso than James Bond, but the Valkyrie's base price would be eyebrow raising even for the F1 champ.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1095319656551694336/Valkyrie.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095319737182994613/Valkyrie.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 244,
+"3330to60": 2.3,
+"333Handling": 102,
+
+"666TopSpeed": 246,
+"6660to60": 2.2,
+"666Handling": 106,
+
+"699TopSpeed": 246,
+"6990to60": 2,
+"699Handling": 110,
+
+"969TopSpeed": 248,
+"9690to60": 2.2,
+"969Handling": 110,
+
+"996TopSpeed": 248,
+"9960to60": 2,
+"996Handling": 106
+}

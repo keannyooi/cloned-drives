@@ -1,0 +1,49 @@
+{
+    "rq": 7,
+    "make": ["Aston-Martin", "Aston Martin"],
+    "model": "2 Litre LM Team Car",
+    "modelYear": 1936,
+    "country": "GB",
+    "topSpeed": 109,
+    "0to60": 11.2,
+    "handling": 65,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Motorsport","Unique","The Midlands Cruise","Innovative"],
+    "isPrize": false,
+	
+    "weight": 900,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 19.22,
+    "ola": 71.68,
+    "description": "Designing a totally new engine would have been far too expensive especially if new tooling was needed, so that the 1½ litre Renwick and Bertelli engine was modified and enlarged to 1949cc. The new engine (in dry sump form) first saw daylight in the Team Cars destined for the 1936 Le Mans 24 hour race. To be able to compete in the French Classic, it was necessary for a manufacturer to have ‘sold, built or stocked’ 30 cars",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1094951913042219028/2LitreLMTeamCAr.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1094952183885201448/2litreLMTeamCar.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 114,
+"3330to60": 10.6,
+"333Handling": 67,
+
+"666TopSpeed": 119,
+"6660to60": 10.1,
+"666Handling": 69,
+
+"699TopSpeed": 119,
+"6990to60": 9.5,
+"699Handling": 72,
+
+"969TopSpeed": 123,
+"9690to60": 10.1,
+"969Handling": 72,
+
+"996TopSpeed": 123,
+"9960to60": 9.5,
+"996Handling": 69
+}

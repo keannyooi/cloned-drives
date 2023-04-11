@@ -1,0 +1,49 @@
+{
+    "rq": 1,
+    "make": ["Aston-Martin", "Aston Martin"],
+    "model": "Single Seat Team Car 'Razor Blade'",
+    "modelYear": 1923,
+    "country": "GB",
+    "topSpeed": 98,
+    "0to60": 22.2,
+    "handling": 55,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Motorsport","Unique","The Midlands Cruise","Innovative"],
+    "isPrize": false,
+	
+    "weight": 750,
+    "gc": "Medium",
+    "seatCount": 1,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 1.95,
+    "ola": 60,
+    "description": "Many Aston-Martins have names, This particular example of a Bamford and Martin car, chassis number 1915 was called Razor Blade and it's easy to see why with its slim single seater body, only 47 cm across at it's widest point. It has been claimed that the Razor Blade is indeed the narrowest racing car in the world. ",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1094952066096570389/AMRazorBlade.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1094952204160466995/AMRazorBlade.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 103,
+"3330to60": 21.1,
+"333Handling": 57,
+
+"666TopSpeed": 109,
+"6660to60": 20,
+"666Handling": 59,
+
+"699TopSpeed": 109,
+"6990to60": 18.9,
+"699Handling": 61,
+
+"969TopSpeed": 114,
+"9690to60": 20,
+"969Handling": 61,
+
+"996TopSpeed": 114,
+"9960to60": 18.9,
+"996Handling": 59
+}

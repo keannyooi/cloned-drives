@@ -1,0 +1,49 @@
+{
+    "rq": 23,
+    "make": "Hongqi",
+    "model": "CA7221L",
+    "modelYear": 1994,
+    "country": "CN",
+    "topSpeed": 126,
+    "0to60": 12.0,
+    "handling": 64,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Rest of The World","The Amplification of Asia"],
+    "isPrize": false,
+	
+    "weight": 1413,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 48.39,
+    "ola": 61.67,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1046406093548552233/hongqi_ca7221l.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1046403652790784090/hongqi_ca7221l.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 130,
+"3330to60": 11.4,
+"333Handling": 66,
+
+"666TopSpeed": 134,
+"6660to60": 10.8,
+"666Handling": 68,
+
+"699TopSpeed": 134,
+"6990to60": 10.2,
+"699Handling": 71,
+
+"969TopSpeed": 138,
+"9690to60": 10.8,
+"969Handling": 71,
+
+"996TopSpeed": 138,
+"9960to60": 10.2,
+"996Handling": 68
+}

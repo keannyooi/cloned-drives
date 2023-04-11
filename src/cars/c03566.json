@@ -1,0 +1,49 @@
+{
+    "rq": 56,
+    "make": "Ram",
+    "model": "392 Quick Silver Concept",
+    "modelYear": 2011,
+    "country": "US",
+    "topSpeed": 143,
+    "0to60": 5.2,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Unique", "Concept", "Muscle Car", "The Americas Assault"],
+    "isPrize": false,
+	
+    "weight": 2250,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Pickup",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 61.90,
+    "ola": 65.38,
+    "description": "The closest thing to an SRT-10 successor. This time rolling with a 470HP 392 it not only didn't hit the mark in terms of performance but didn’t hit production either.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1085595693395234826/Ram_392_Quick_Silver_Concept_2011.png",
+	"racehud": "https://media.discordapp.net/attachments/1077293403668234340/1085603156379062423/Ram_392_Quick_Silver_Concept_2011_Hud.png",
+    "creator": "DodgeDemon",
+
+"333TopSpeed": 147,
+"3330to60": 4.9,
+"333Handling": 80,
+
+"666TopSpeed": 150,
+"6660to60": 4.7,
+"666Handling": 82,
+
+"699TopSpeed": 150,
+"6990to60": 4.4,
+"699Handling": 85,
+
+"969TopSpeed": 154,
+"9690to60": 4.7,
+"969Handling": 85,
+
+"996TopSpeed": 154,
+"9960to60": 4.4,
+"996Handling": 82
+}

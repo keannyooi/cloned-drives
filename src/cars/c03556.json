@@ -1,0 +1,49 @@
+{
+    "rq": 62,
+    "make": "Aston Martin",
+    "model": "DB9",
+    "modelYear": 2009,
+    "country": "GB",
+    "topSpeed": 190,
+    "0to60": 4.6,
+    "handling": 81,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Grand Tourer"],
+    "isPrize": false,
+	
+    "weight": 1780,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 80.7,
+    "ola": 78.26,
+    "description": "In February 2008 at the Geneva Salon, AM announced the first major revision of the DB9 since it was first seen late in 2003.Externally there are only three identifying features of the 2009MY car, More importantly the DB9 2009MY was fitted with a revised version of the 5.9 litre V12 engine tuned to deliver improved power and torque.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1095326232377307198/db92009.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095326522312769566/DB92009.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 193,
+"3330to60": 4.4,
+"333Handling": 84,
+
+"666TopSpeed": 195,
+"6660to60": 4.1,
+"666Handling": 86,
+
+"699TopSpeed": 195,
+"6990to60": 3.9,
+"699Handling": 90,
+
+"969TopSpeed": 198,
+"9690to60": 4.1,
+"969Handling": 90,
+
+"996TopSpeed": 198,
+"9960to60": 3.9,
+"996Handling": 86
+}

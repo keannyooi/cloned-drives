@@ -1,0 +1,49 @@
+{
+    "rq": 46,
+    "make": "Aston Martin",
+    "model": "DB4 GT Zagato",
+    "modelYear": 1960,
+    "country": "GB",
+    "topSpeed": 154,
+    "0to60": 6.1,
+    "handling": 73,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Unique","Ultra Expensive","Motorsport"],
+    "isPrize": false,
+
+    "weight": 1250,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 76.25,
+    "ola": 91.8,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1081553407187370046/DB4GTZ.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1081554508250873927/DB4GTZ.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 157,
+"3330to60": 5.8,
+"333Handling": 75,
+
+"666TopSpeed": 161,
+"6660to60": 5.5,
+"666Handling": 78,
+
+"699TopSpeed": 161,
+"6990to60": 5.2,
+"699Handling": 81,
+
+"969TopSpeed": 164,
+"9690to60": 5.5,
+"969Handling": 81,
+
+"996TopSpeed": 164,
+"9960to60": 5.2,
+"996Handling": 78
+}
