@@ -44,7 +44,7 @@ const weatherVars = {
             "Performance": 0,
             "All-Surface": 0,
             "Off-Road": 0,
-            "Slick": -20
+            "Slick": -15
         }
     },
     "Rainy Track": {
