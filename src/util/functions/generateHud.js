@@ -7,7 +7,8 @@ const tyreAbbrevs = {
     "Performance": "PER",
     "Off-Road": "OFF",
     "All-Surface": "ALL",
-    "Slick": "SLK"
+    "Slick": "SLK",
+    "Drag": "DRG"
 }
 
 async function generateHud(currentCar, upgrade) {

@@ -35,6 +35,19 @@ const defaultPageLimit = 10;
 const driveHierarchy = ["AWD", "4WD", "FWD", "RWD"];
 const gcHierarchy = ["High", "Medium", "Low"];
 const weatherVars = {
+    "Sunny Drag": {
+        drivePen: 0,
+        absPen: 0,
+        tcsPen: 0,
+        tyrePen: {
+            "Standard": 0,
+            "Performance": 0,
+            "All-Surface": 0,
+            "Off-Road": 0,
+            "Slick": 0,
+            "Drag": -30
+        }
+    },
     "Sunny Track": {
         drivePen: 0,
         absPen: 0,
@@ -44,7 +57,9 @@ const weatherVars = {
             "Performance": 0,
             "All-Surface": 0,
             "Off-Road": 0,
-            "Slick": -15
+            "Slick": -15,
+            "Drag": 20
+
         }
     },
     "Rainy Track": {
@@ -56,7 +71,8 @@ const weatherVars = {
             "Performance": 11,
             "All-Surface": 5,
             "Off-Road": 50,
-            "Slick": 40
+            "Slick": 40,
+            "Drag": 250
         }
     },
     "Sunny Asphalt": {
@@ -68,7 +84,8 @@ const weatherVars = {
             "Performance": 0,
             "All-Surface": 0,
             "Off-Road": 0,
-            "Slick": 0
+            "Slick": 0,
+            "Drag": 50
         }
     },
     "Rainy Asphalt": {
@@ -80,7 +97,8 @@ const weatherVars = {
             "Performance": 11,
             "All-Surface": 5,
             "Off-Road": 40,
-            "Slick": 50
+            "Slick": 50,
+            "Drag": 250
         }
     },
     "Sunny Gravel": {
@@ -92,7 +110,8 @@ const weatherVars = {
             "Performance": 17.5,
             "All-Surface": -4,
             "Off-Road": -2.5,
-            "Slick": 40
+            "Slick": 40,
+            "Drag": 500
         }
     },
     "Rainy Gravel": {
@@ -104,7 +123,8 @@ const weatherVars = {
             "Performance": 17.5,
             "All-Surface": -5.5,
             "Off-Road": -4.5,
-            "Slick": 42.5
+            "Slick": 42.5,
+            "Drag": 500
         }
     },
     "Sunny Sand": {
@@ -116,7 +136,8 @@ const weatherVars = {
             "Performance": 50.5,
             "All-Surface": -15.5,
             "Off-Road": -20.5,
-            "Slick": 80.5
+            "Slick": 80.5,
+            "Drag": 500
         }
     },
     "Sunny Dirt": {
@@ -128,7 +149,8 @@ const weatherVars = {
             "Performance": 20,
             "All-Surface": -25,
             "Off-Road": -33,
-            "Slick": 65
+            "Slick": 65,
+            "Drag": 500
         }
     },
     "Rainy Dirt": {
@@ -140,7 +162,8 @@ const weatherVars = {
             "Performance": 25,
             "All-Surface": -40,
             "Off-Road": -60,
-            "Slick": 130
+            "Slick": 130,
+            "Drag": 500
         }
     },
     "Sunny Snow": {
@@ -152,7 +175,8 @@ const weatherVars = {
             "Performance": 75,
             "All-Surface": -20,
             "Off-Road": -45,
-            "Slick": 425
+            "Slick": 425,
+            "Drag": 700
         }
     },
     "Sunny Ice": {
@@ -164,7 +188,8 @@ const weatherVars = {
             "Performance": 125,
             "All-Surface": -65,
             "Off-Road": -100,
-            "Slick": 875
+            "Slick": 875,
+            "Drag": 900
         }
     }
 };
