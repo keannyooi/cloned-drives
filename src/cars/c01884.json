@@ -9,10 +9,9 @@
     "handling": 61,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": [
-        "The Japanese Odyssey"
-    ],
+    "tags": ["The Japanese Odyssey"],
     "isPrize": false,
+
     "weight": 1805,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,23 +22,29 @@
     "fuelType": "Petrol",
     "mra": 50.21,
     "ola": 61.54,
-    "description": "None.",
+    "description": "To comply with that year's emission regulations, the VG35 update on November 1978 saw the addition of fuel injection. 4 years ago, original manual-transmission Centuries were phased out in favour of automatic transmissions.",
     "card": "https://media.discordapp.net/attachments/819199720249360384/867728915753730058/toyota_century_type_d.png",
+
     "333TopSpeed": 117,
     "3330to60": 11.1,
     "333Handling": 63,
+
     "666TopSpeed": 121,
     "6660to60": 10.5,
     "666Handling": 65,
+
     "996TopSpeed": 126,
     "9960to60": 9.9,
     "996Handling": 65,
+
     "969TopSpeed": 126,
     "9690to60": 10.5,
     "969Handling": 68,
+
     "699TopSpeed": 121,
     "6990to60": 9.9,
     "699Handling": 68,
+
     "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003164380839555183/century_type_d.jpg",
     "creator": "Keanny"
 }

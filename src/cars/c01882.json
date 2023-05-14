@@ -9,13 +9,12 @@
     "handling": 64,
     "driveType": "RWD",
     "tyreType": "Standard",
-    "tags": [
-        "The Japanese Odyssey"
-    ],
+    "tags": ["The Japanese Odyssey"],
     "isPrize": false,
+
     "weight": 2920,
     "gc": "Medium",
-    "seatCount": 5,
+    "seatCount": 8,
     "bodyStyle": "Sedan",
     "tcs": true,
     "abs": true,
@@ -23,23 +22,29 @@
     "fuelType": "Petrol",
     "mra": 56.89,
     "ola": 63.16,
-    "description": "Royalty pleasure at its finest.",
+    "description": "This is the latest $500k official state car of the Emperor of Japan, designated as Emperor 1 (皇1). 3 limousines and 1 hearse were custom made at the request of the Japanese Imperial Household Agency, featuring granite entry steps and passenger seat headlining made from washi paper alongside security features that we can't list here. The other 2 limousines (Emperor 3 & 5) contain more security features that added an additional $300k to their price.",
     "card": "https://media.discordapp.net/attachments/819199720249360384/867728817929715712/toyota_century_royal.png",
+
     "333TopSpeed": 117,
     "3330to60": 9,
     "333Handling": 66,
+
     "666TopSpeed": 121,
     "6660to60": 8.6,
     "666Handling": 68,
+
     "996TopSpeed": 126,
     "9960to60": 8.1,
     "996Handling": 68,
+
     "969TopSpeed": 126,
     "9690to60": 8.6,
     "969Handling": 71,
+
     "699TopSpeed": 121,
     "6990to60": 8.1,
     "699Handling": 71,
+
     "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003164426637152296/century_royal.jpg",
     "creator": "Keanny"
 }

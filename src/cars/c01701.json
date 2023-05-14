@@ -1,10 +1,6 @@
 {
     "rq": 59,
-    "make": [
-        "MZR Roadsports",
-        "Datsun",
-        "Nissan"
-    ],
+    "make": ["MZR Roadsports", "Datsun", "Nissan"],
     "model": "240Z Sport Design",
     "modelYear": 2019,
     "country": "GB",
@@ -13,11 +9,9 @@
     "handling": 78,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner",
-        "The Japanese Odyssey","RestoMod"
-    ],
+    "tags": ["Tuner", "The Japanese Odyssey", "RestoMod"],
     "isPrize": false,
+
     "weight": 1030,
     "gc": "Medium",
     "seatCount": 2,
@@ -28,23 +22,29 @@
     "fuelType": "Petrol",
     "mra": 66.67,
     "ola": 73.08,
-    "description": "The old Z that grew up eating crumpets.",
+    "description": "MZR Roadsports is a Bratford-based restomod startup named after its 2 founders (Martin Ryland the engineering guy and Rahail Tariq the designer guy) and the fact that they specialize in the oldest Nissan Z cars. The Sport Design encompasses all of what you can expect from them - an old-school sports car with a beautifully-finished engine bay and interior. The company instantly became popular online, with Evo and Top Gear being the biggest platforms to report on them and their products.",
     "card": "https://media.discordapp.net/attachments/819199720249360384/869498675209056276/mzr_roadsports_240z_sport_design.png",
+    
     "333TopSpeed": 153,
     "3330to60": 4.9,
     "333Handling": 81,
+
     "666TopSpeed": 157,
     "6660to60": 4.7,
     "666Handling": 83,
+
     "996TopSpeed": 160,
     "9960to60": 4.4,
     "996Handling": 83,
+
     "969TopSpeed": 160,
     "9690to60": 4.7,
     "969Handling": 87,
+
     "699TopSpeed": 157,
     "6990to60": 4.4,
     "699Handling": 87,
+
     "racehud": "https://media.discordapp.net/attachments/995376525119586356/1001854645624385597/mzr_sport_design.jpg",
     "creator": "Keanny"
 }

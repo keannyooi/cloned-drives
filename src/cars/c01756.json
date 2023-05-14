@@ -9,13 +9,9 @@
     "handling": 85,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Motorsport",
-        "Unique",
-        "The Japanese Odyssey",
-        "Eco-Friendly"
-    ],
+    "tags": ["Motorsport", "Unique", "The Japanese Odyssey", "Eco-Friendly"],
     "isPrize": false,
+
     "weight": 1220,
     "gc": "Low",
     "seatCount": 2,
@@ -26,23 +22,29 @@
     "fuelType": "Electric",
     "mra": 57.43,
     "ola": 79.2,
-    "description": "That's more like it, a fully fledged EV racecar with electrifying looks. Still slow compared to the Tesla Model S, however.",
+    "description": "The sequel to Nissan's daring attempt to turn a mundane EV into a track weapon. This time, a second motor found its way into the car to power all 4 wheels with a healthy 322hp and 472lbft of torque. This allows the new Nismo RC to halve its acceleration time and become the world's first competent EV racecar.",
     "card": "https://media.discordapp.net/attachments/819199720249360384/861146600473624586/nissan_leaf_nismo_rc_02.png",
+
     "333TopSpeed": 141,
     "3330to60": 3.1,
     "333Handling": 88,
+
     "666TopSpeed": 145,
     "6660to60": 3,
     "666Handling": 91,
+
     "996TopSpeed": 148,
     "9960to60": 2.8,
     "996Handling": 91,
+
     "969TopSpeed": 148,
     "9690to60": 3,
     "969Handling": 94,
+
     "699TopSpeed": 145,
     "6990to60": 2.8,
     "699Handling": 94,
+
     "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003165196493262918/leaf_nismo_rc02.jpg",
     "creator": "Keanny"
 }

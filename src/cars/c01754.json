@@ -9,13 +9,9 @@
     "handling": 70,
     "driveType": "FWD",
     "tyreType": "Off-Road",
-    "tags": [
-        "Unique",
-        "Oddity",
-        "Eco-Friendly",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Unique", "Oddity", "Eco-Friendly", "Motorsport", "The Japanese Odyssey"],
     "isPrize": false,
+
     "weight": 1468,
     "gc": "Medium",
     "seatCount": 2,
@@ -26,23 +22,29 @@
     "fuelType": "Electric",
     "mra": 22.22,
     "ola": 64.94,
-    "description": "This car is on its way to Mongolia, please wish it a safe travel.",
+    "description": "Plug In Adventures, a group of EV advocates hailing from the UK, had a crazy plan to spread the EV gospel in the works for years. With backing from Nissan themselves, they entered this modified Nissan Leaf into the 2017 Mongol Rally, a 10,000-mile charity trip to Mongolia which never had EV participants. To the delight of the group, it successfully made the trip and made a statement about how EVs are capable of long-distance travel too.",
     "card": "https://media.discordapp.net/attachments/819199720249360384/867314377458581514/nissan_leaf_at-ev.png",
+
     "333TopSpeed": 99,
     "3330to60": 9.6,
     "333Handling": 72,
+
     "666TopSpeed": 104,
     "6660to60": 9.1,
     "666Handling": 75,
+
     "996TopSpeed": 110,
     "9960to60": 8.6,
     "996Handling": 75,
+
     "969TopSpeed": 110,
     "9690to60": 9.1,
     "969Handling": 78,
+
     "699TopSpeed": 104,
     "6990to60": 8.6,
     "699Handling": 78,
+
     "racehud": "https://media.discordapp.net/attachments/995376525119586356/1001859299024310302/leaf_atev.jpg",
     "creator": "Keanny"
 }
