@@ -28,8 +28,8 @@ class Bot extends Client {
     async loadGraphics() {
         await Promise.all([
             loadImage("https://media.discordapp.net/attachments/716917404868935691/795177817116901386/race_template_thing.png"),
-            loadImage("https://i.imgur.com/98Rxd9z.jpg"),
-            loadImage("https://i.imgur.com/voWCtQc.jpg")
+            loadImage("https://media.discordapp.net/attachments/715771423779455077/1107238347283370014/98Rxd9z.png"),
+            loadImage("https://media.discordapp.net/attachments/715771423779455077/1107238347539238932/voWCtQc.png")
         ])
             .then(loaded => {
                 let [raceTemp, dealerTemp, eventTemp] = loaded;
