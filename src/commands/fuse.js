@@ -16,7 +16,7 @@ module.exports = {
     aliases: ["f"],
     usage: ["[amount / 'all'] | <car name goes here>", "[amount / 'all'] | -<car ID>"],
     args: 1,
-    category: "Admin",
+    category: "Gameplay",
     description: "Converts one or more cars inside your garage into fuse tokens.",
     async execute(message, args) {
         const playerData = await profileModel.findOne({ userID: message.author.id });

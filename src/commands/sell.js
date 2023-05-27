@@ -17,7 +17,7 @@ module.exports = {
     usage: ["[amount / 'all'] | <car name goes here>", "[amount / 'all'] | -<car ID>"],
     description: "Sells one or more cars from your garage.",
     args: 1,
-    category: "Admin",
+    category: "Gameplay",
     async execute(message, args) {
         const playerData = await profileModel.findOne({ userID: message.author.id });
         if (playerData.garage.length <= 5) {
