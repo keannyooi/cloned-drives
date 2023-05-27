@@ -1,0 +1,49 @@
+{
+    "rq": 102,
+    "make": "Ferrari",
+    "model": "499P",
+    "modelYear": 2022,
+    "country": "IT",
+    "topSpeed": 205,
+    "0to60": 2.4,
+    "handling": 100,
+    "driveType": "4WD",
+    "tyreType": "Slick",
+    "tags": ["Endless Summer","Motorsport","Eco-Friendly","The Tyrol Tour: Remix"],
+    "isPrize": true,
+	
+    "weight": 1030,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Hybrid",
+    "mra": 120.02,
+    "ola": 87.96,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1111994755631562813/IMG_20230111_075731.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077292374608326656/1111994755631562813/IMG_20230111_075731.png",
+    "creator": "Lemon",
+
+"333TopSpeed": 208,
+"3330to60": 2.3,
+"333Handling": 103,
+
+"666TopSpeed": 210,
+"6660to60": 2.2,
+"666Handling": 107,
+
+"699TopSpeed": 210,
+"6990to60": 2,
+"699Handling": 111,
+
+"969TopSpeed": 213,
+"9690to60": 2.2,
+"969Handling": 111,
+
+"996TopSpeed": 213,
+"9960to60": 2,
+"996Handling": 107
+}
