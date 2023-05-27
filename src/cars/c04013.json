@@ -1,0 +1,49 @@
+{
+    "rq": 104,
+    "make": "SSC",
+    "model": "Tuatara Aggressor",
+    "modelYear": 2023,
+    "country": "US",
+    "topSpeed": 285,
+    "0to60": 2.4,
+    "handling": 98,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["The Americas Assault", "Endless Summer", "Track Day", "Hypercar", "Unique", "Ultra Expensive"],
+    "isPrize": true,
+	
+    "weight": 1247,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 150,
+    "ola": 87.5,
+    "description": "It isn't street legal, a full carbon fiber roll-cage is standard, and it can be optioned with slick tires. It has the same high-downforce body as the Striker, and it comes with a whopping 2,200hp. You can't get much more crazy than this.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1111088944604512296/Aggressor.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1111088778048708698/aggressor_racehud.png",
+    "creator": "Preston",
+
+"333TopSpeed": 287, 
+"3330to60": 2.3, 
+"333Handling": 101,
+
+"666TopSpeed": 289, 
+"6660to60": 2.2, 
+"666Handling": 104,
+
+"699TopSpeed": 290, 
+"6990to60": 2.0, 
+"699Handling": 109,
+
+"969TopSpeed": 290, 
+"9690to60": 2.2, 
+"969Handling": 109,
+
+"996TopSpeed": 290, 
+"9960to60": 2.0, 
+"996Handling": 104
+}

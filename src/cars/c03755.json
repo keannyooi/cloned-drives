@@ -1,0 +1,49 @@
+{
+    "rq": 92,
+    "make": ["Alpina", "BMW"],
+    "model": "XB7",
+    "modelYear": 2023,
+    "country": "DE",
+    "topSpeed": 180,
+    "0to60": 3.9,
+    "handling": 80,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Endless Summer","Tuner","The Tyrol Tour: Remix","Extreme Juggernaut"],
+    "isPrize": false,
+	
+    "weight": 2670,
+    "gc": "High",
+    "seatCount": 7,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 78,
+    "ola": 77.94,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1101833450631213067/XB72023.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1101834038685216808/XB72023Alpina.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 183,
+"3330to60": 3.7,
+"333Handling": 83,
+
+"666TopSpeed": 186,
+"6660to60": 3.5,
+"666Handling": 85,
+
+"699TopSpeed": 186,
+"6990to60": 3.3,
+"699Handling": 89,
+
+"969TopSpeed": 189,
+"9690to60": 3.5,
+"969Handling": 89,
+
+"996TopSpeed": 189,
+"9960to60": 3.3,
+"996Handling": 85
+}

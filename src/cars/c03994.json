@@ -1,0 +1,49 @@
+{
+    "rq": 85,
+    "make": "Honda",
+    "model": "NSX GT3",
+    "modelYear": 2017,
+    "country": "JP",
+    "topSpeed": 181,
+    "0to60": 3.2,
+    "handling": 96,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Endless Summer", "Motorsport", "The Amplification of Asia"],
+    "isPrize": false,
+	
+    "weight": 1240,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 87.50,
+    "ola": 88.88,
+    "description": "None.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1106240052482297886/Honda_NSX_GT3_2017.png",
+	"racehud": "https://media.discordapp.net/attachments/1077293403668234340/1106248523650977822/Honda_NSX_GT3_2017_Hud.png",
+    "creator": "DodgeDemon",
+
+"333TopSpeed": 184,
+"3330to60": 3.0,
+"333Handling": 99,
+
+"666TopSpeed": 187,
+"6660to60": 2.9,
+"666Handling": 102,
+
+"699TopSpeed": 187,
+"6990to60": 2.7,
+"699Handling": 107,
+
+"969TopSpeed": 190,
+"9690to60": 2.9,
+"969Handling": 107,
+
+"996TopSpeed": 190,
+"9960to60": 2.7,
+"996Handling": 102
+}

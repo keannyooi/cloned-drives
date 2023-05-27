@@ -1,0 +1,49 @@
+{
+    "rq": 102,
+    "make": "SSC",
+    "model": "Tuatara",
+    "modelYear": 2020,
+    "country": "US",
+    "topSpeed": 295,
+    "0to60": 2.5,
+    "handling": 93,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Americas Assault", "Endless Summer", "Hypercar", "Unique", "Ultra Expensive"],
+    "isPrize": true,
+	
+    "weight": 1247,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 147.06,
+    "ola": 88,
+    "description": "After the concept was unveiled in 2011, it took the Tuatara almost a decade to actually reach production. In that time the beautiful exterior barely changed, but the 6.9 liter engine was swapped out for a smaller 5.9 liter one in order to allow for a higher redline of 8,800 rpm.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1111086873562062898/SSC_Tuatara_2020.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1111086815584194661/tuatara_hud.png",
+    "creator": "Preston",
+
+"333TopSpeed": 297, 
+"3330to60": 2.4, 
+"333Handling": 96,
+
+"666TopSpeed": 299, 
+"6660to60": 2.3, 
+"666Handling": 99,
+
+"699TopSpeed": 299, 
+"6990to60": 2.1, 
+"699Handling": 103,
+
+"969TopSpeed": 300, 
+"9690to60": 2.3, 
+"969Handling": 103,
+
+"996TopSpeed": 300, 
+"9960to60": 2.1, 
+"996Handling": 99
+}

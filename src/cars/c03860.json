@@ -1,0 +1,49 @@
+{
+    "rq": 74,
+    "make": "Bentley",
+    "model": "Continental GT Supersports Convertible",
+    "modelYear": 2010,
+    "country": "GB",
+    "topSpeed": 202,
+    "0to60": 3.9,
+    "handling": 83,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","The Midlands Cruise","Grand Tourer"],
+    "isPrize": false,
+	
+    "weight": 2395,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 72.22,
+    "ola": 73.6,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1104774149131485325/contiGTSupersportsConvi2010.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1104777829998153768/ContiGTSuperSports2009.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 205,
+"3330to60": 3.7,
+"333Handling": 86,
+
+"666TopSpeed": 207,
+"6660to60": 3.5,
+"666Handling": 88,
+
+"699TopSpeed": 207,
+"6990to60": 3.3,
+"699Handling": 92,
+
+"969TopSpeed": 210,
+"9690to60": 3.5,
+"969Handling": 92,
+
+"996TopSpeed": 210,
+"9960to60": 3.3,
+"996Handling": 88
+}

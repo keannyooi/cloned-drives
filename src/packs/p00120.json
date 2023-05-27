@@ -1,0 +1,70 @@
+{
+	"packName": "2005 Elite Pack",
+	"description": "5 Super Rare or better cars.",
+        "repetition": 1,
+	"pack": "https://cdn.discordapp.com/attachments/956106029635088384/1108678230984110080/2005Elite.png", 
+	
+	"filter": {
+		"make": "None",
+		"modelYear": {
+			"start": 2005,
+			"end": 2005
+		},
+		"country": "None",
+		"tags": "None",
+        "driveType": "None",
+        "tyreType": "None",
+		"enginePos": "None",
+        "fuelType": "None",
+        "bodyStyle": "None",
+		"seatCount": "None"
+	},
+
+	"packSequence": [
+        {
+            "common": 0,
+            "uncommon": 0,
+            "rare": 0,
+            "superRare": 74,
+            "ultraRare": 20.1,
+            "epic": 5,
+            "legendary": 0.9
+        },
+        {
+            "common": 0,
+            "uncommon": 0,
+            "rare": 0,
+            "superRare": 74,
+            "ultraRare": 20.1,
+            "epic": 5,
+            "legendary": 0.9
+        },
+        {
+            "common": 0,
+            "uncommon": 0,
+            "rare": 0,
+            "superRare": 74,
+            "ultraRare": 20.1,
+            "epic": 5,
+            "legendary": 0.9
+        },
+        {
+            "common": 0,
+            "uncommon": 0,
+            "rare": 0,
+            "superRare": 74,
+            "ultraRare": 20.1,
+            "epic": 5,
+            "legendary": 0.9
+        },
+        {
+            "common": 0,
+            "uncommon": 0,
+            "rare": 0,
+            "superRare": 74,
+            "ultraRare": 20.1,
+            "epic": 5,
+            "legendary": 0.9
+        }
+    ]
+}

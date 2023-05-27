@@ -1,0 +1,49 @@
+{
+    "rq": 99,
+    "make": "Acura",
+    "model": "NSX EV Concept",
+    "modelYear": 2016,
+    "country": "US",
+    "topSpeed": 202,
+    "0to60": 2.5,
+    "handling": 97,
+    "driveType": "4WD",
+    "tyreType": "Slick",
+    "tags": ["Endless Summer", "Eco-Friendly", "Concept", "Motorsport", "The Americas Assault"],
+    "isPrize": true,
+	
+    "weight": 1190,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 105.25,
+    "ola": 90.00,
+    "description": "The NSX-inspired EV concept built to charge up Pikes Peak.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1106238436978991154/Acura_NSX_EV_Concept_2016.png",
+	"racehud": "https://media.discordapp.net/attachments/1077293403668234340/1106246746713104514/Acura_NSX_EV_Concept_2016_Hud.png",
+    "creator": "DodgeDemon",
+
+"333TopSpeed": 205,
+"3330to60": 2.4,
+"333Handling": 100,
+
+"666TopSpeed": 207,
+"6660to60": 2.3,
+"666Handling": 103,
+
+"699TopSpeed": 207,
+"6990to60": 2.1,
+"699Handling": 108,
+
+"969TopSpeed": 210,
+"9690to60": 2.3,
+"969Handling": 108,
+
+"996TopSpeed": 210,
+"9960to60": 2.1,
+"996Handling": 103
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 64,
+    "make": "Aston Martin",
+    "model": "V8 RHAM/1",
+    "modelYear": 1976,
+    "country": "GB",
+    "topSpeed": 180,
+    "0to60": 4.0,
+    "handling": 78,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Unique","Motorsport","The Midlands Cruise","Endless Summer"],
+    "isPrize": true,
+	
+    "weight": 1516,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 93.02,
+    "ola": 105.88,
+    "description": "Whilst this could never be seen as a works car, support was provided by the factory, and indeed lessons learned from the wind tunnel were applied to the V8 Vantage in the form of front air dam and rear spoiler. But not quite on the same extreme scale as this car though.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1096530428187398164/1976V8RHAM.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1096530893557997649/1976V8RHAM.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 183,
+"3330to60": 3.8,
+"333Handling": 81,
+
+"666TopSpeed": 186,
+"6660to60": 3.6,
+"666Handling": 83,
+
+"699TopSpeed": 186,
+"6990to60": 3.4,
+"699Handling": 87,
+
+"969TopSpeed": 189,
+"9690to60": 3.6,
+"969Handling": 87,
+
+"996TopSpeed": 189,
+"9960to60": 3.4,
+"996Handling": 83
+}

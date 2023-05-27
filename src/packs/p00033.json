@@ -2,7 +2,7 @@
 	"packName": "Silver Screen Standard Pack",
 	"description": "A pack full of cars that appeared on the big screen.",
 	"repetition": 1,
-	"pack": "https://media.discordapp.net/attachments/956106029635088384/956106386369024000/Standard_Pack.png",
+	"pack": "https://cdn.discordapp.com/attachments/956106029635088384/1101589170511696023/silverscreen.png",
 	
 	"filter": {
 		"make": "None",
@@ -58,13 +58,13 @@
 			"legendary": 0
 		},
 		{
-			"common": 0,
-			"uncommon": 0,
-			"rare": 0,
-			"superRare": 70,
-			"ultraRare": 20,
-			"epic": 9,
-			"legendary": 1
+            "common": 0,
+            "uncommon": 0,
+            "rare": 0,
+            "superRare": 74,
+            "ultraRare": 20.1,
+            "epic": 5,
+            "legendary": 0.9
 		}
 	]
 }

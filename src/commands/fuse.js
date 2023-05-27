@@ -34,7 +34,7 @@ module.exports = {
         if (args[0].toLowerCase() === "all" && args[1]) {
             startFrom = 1;
         }
-        else if (isNaN(args[0]) || !args[1] || parseInt(args[0]) > 30) {
+        else if (isNaN(args[0]) || !args[1] || parseInt(args[0]) > 50 || parseInt(args[0]) < 1) {
             startFrom = 0;
         }
         else {

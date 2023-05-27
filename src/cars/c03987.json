@@ -1,0 +1,49 @@
+{
+    "rq": 84,
+    "make": ["Hennessey", "Lotus"],
+    "model": "Venom GT X1 Proto",
+    "modelYear": 2010,
+    "country": "GB",
+    "topSpeed": 227,
+    "0to60": 3.4,
+    "handling": 90,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","Unique","Ultra Expensive","The Americas Assault","Hypercar","Concept","Visionary Road"],
+    "isPrize": false,
+	
+    "weight": 1290,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 103.03,
+    "ola": 88.23,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1108734516459221133/Henx1proto.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1108734709640462399/HenVenomx1proto.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 229,
+"3330to60": 3.2,
+"333Handling": 93,
+
+"666TopSpeed": 232,
+"6660to60": 3.1,
+"666Handling": 96,
+
+"699TopSpeed": 232,
+"6990to60": 2.9,
+"699Handling": 100,
+
+"969TopSpeed": 234,
+"9690to60": 3.1,
+"969Handling": 100,
+
+"996TopSpeed": 234,
+"9960to60": 2.9,
+"996Handling": 96
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 83,
+    "make": "Vencer",
+    "model": "Sarthe",
+    "modelYear": 2015,
+    "country": "NL",
+    "topSpeed": 210,
+    "0to60": 3.4,
+    "handling": 89,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","Unique","Rest of The World","The Tyrol Tour: Remix","Supercar","Ultra Expensive","Oceanic View"],
+    "isPrize": false,
+	
+    "weight": 1390,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 116.12,
+    "ola": 88.23,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1101833377209921596/vencersarthe.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1101834015180333066/SartheVencer.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 212,
+"3330to60": 3.2,
+"333Handling": 92,
+
+"666TopSpeed": 215,
+"6660to60": 3.1,
+"666Handling": 95,
+
+"699TopSpeed": 215,
+"6990to60": 2.9,
+"699Handling": 99,
+
+"969TopSpeed": 217,
+"9690to60": 3.1,
+"969Handling": 99,
+
+"996TopSpeed": 217,
+"9960to60": 2.9,
+"996Handling": 95
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 92,
+    "make": "SSC",
+    "model": "Ultimate Aero TT",
+    "modelYear": 2007,
+    "country": "US",
+    "topSpeed": 254,
+    "0to60": 2.8,
+    "handling": 92,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Americas Assault", "Endless Summer", "Hypercar", "Unique","Oceanic View"],
+    "isPrize": false,
+	
+    "weight": 1250,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 96.55,
+    "ola": 90,
+    "description": "When the Ultimate Aero TT launched in 2007, it made 1167hp. That's a lot, but also a full 120 less than new examples would make only 2 years later in 2009.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1111741947854471278/Aero_TT_2007.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1111742006427930754/aero_tt_07_racehud.png",
+    "creator": "Preston",
+
+"333TopSpeed": 256, 
+"3330to60": 2.7, 
+"333Handling": 95,
+
+"666TopSpeed": 258, 
+"6660to60": 2.5,
+"666Handling": 98,
+
+"699TopSpeed": 258, 
+"6990to60": 2.4, 
+"699Handling": 102,
+
+"969TopSpeed": 260, 
+"9690to60": 2.5, 
+"969Handling": 102,
+
+"996TopSpeed": 260, 
+"9960to60": 2.4, 
+"996Handling": 98
+}

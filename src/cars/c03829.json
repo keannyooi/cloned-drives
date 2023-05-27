@@ -1,0 +1,49 @@
+{
+    "rq": 63,
+    "make": "Mercedes-Benz",
+    "model": "W196",
+    "modelYear": 1954,
+    "country": "DE",
+    "topSpeed": 186,
+    "0to60": 4.2,
+    "handling": 76,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","Motorsport","Unique","Innovative","The Midlands Cruise"],
+    "isPrize": true,
+	
+    "weight": 835,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 88.88,
+    "ola": 100,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1103348794445279262/W196.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1103348976423534702/W196.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 189,
+"3330to60": 4,
+"333Handling": 79,
+
+"666TopSpeed": 192,
+"6660to60": 3.8,
+"666Handling": 81,
+
+"699TopSpeed": 192,
+"6990to60": 3.6,
+"699Handling": 84,
+
+"969TopSpeed": 194,
+"9690to60": 3.8,
+"969Handling": 84,
+
+"996TopSpeed": 194,
+"9960to60": 3.6,
+"996Handling": 81
+}

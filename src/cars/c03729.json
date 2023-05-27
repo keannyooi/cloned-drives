@@ -1,0 +1,53 @@
+{
+    "rq": 14,
+    "make": "Volkswagen",
+    "model": "Citi Golf 1.4 Life",
+    "modelYear": 2003,
+    "country": "ZA",
+    "topSpeed": 97,
+    "0to60": 11.8,
+    "handling": 66,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Endless Summer", "The Rest of the Best: 2023","Rest of The World"],
+    "isPrize": false,
+
+
+    "weight": 869,
+    "gc": "Low",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 13.91,
+    "ola": 66.10,
+    "description": "First facelift brings a much better interior copied and pasted from the then new Fabia.",
+
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/938754842569080932/CitiLife.png",
+   "racehud": "https://media.discordapp.net/attachments/995376525119586356/1057825847794479254/Life.png",
+    "creator": "Andu",
+
+
+    "333TopSpeed": 102,
+    "3330to60": 11.2,
+    "333Handling": 68,
+
+    "666TopSpeed": 108,
+    "6660to60": 10.6, 
+    "666Handling": 70,
+
+    "996TopSpeed": 113,
+    "9960to60": 10.0,
+    "996Handling": 73,
+
+    "969TopSpeed": 113,
+    "9690to60": 10.6,
+    "969Handling": 73,
+
+    "699TopSpeed": 108,
+    "6990to60": 10.0,
+    "699Handling": 73
+}

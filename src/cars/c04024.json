@@ -1,0 +1,51 @@
+{  
+    "rq": 35,
+    "make": "Volkswagen",
+    "model": "ID.3 Life Pure Performance",
+    "modelYear": 2020,
+    "country": "DE",
+    "topSpeed": 100,
+    "0to60": 8.8,
+    "handling": 76,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix", "Eco-Friendly","Endless Summer"],
+    "isPrize": false,
+
+
+    "weight": 1772,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Electric",
+    "mra": 48.89,
+    "ola": 65.91,
+    "description": "The cheapest version for the replacement of the almighty Golf. We'll see how this turns out...",
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1106138063148699698/ID3Life.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1106138576653131786/ID3PP.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 105,
+    "3330to60": 8.4,
+    "333Handling": 79,
+    
+    "666TopSpeed": 110,
+    "6660to60": 7.9,
+    "666Handling": 81,
+    
+    "699TopSpeed": 110,
+    "6990to60": 7.5,
+    "699Handling": 84,
+    
+    "969TopSpeed": 116,
+    "9690to60": 7.9,
+    "969Handling": 84,
+    
+    "996TopSpeed": 116,
+    "9960to60": 7.5,
+    "996Handling": 81
+}

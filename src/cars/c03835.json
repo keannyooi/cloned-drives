@@ -1,0 +1,49 @@
+{
+    "rq": 36,
+    "make": "Oldsmobile",
+    "model": "O4 Concept",
+    "modelYear": 2001,
+    "country": "US",
+    "topSpeed": 120,
+    "0to60": 8.4,
+    "handling": 70,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Endless Summer","Unique","Concept","The Americas Assault","Visionary Road"],
+    "isPrize": false,
+	
+    "weight": 1320,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Open Air",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 56,
+    "ola": 76.19,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1103280355047374869/SumCopncpet04Oldymobil.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1103281642564497468/SumCopncept04Olds.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 124,
+"3330to60": 8,
+"333Handling": 72,
+
+"666TopSpeed": 129,
+"6660to60": 7.6,
+"666Handling": 75,
+
+"699TopSpeed": 129,
+"6990to60": 7.1,
+"699Handling": 78,
+
+"969TopSpeed": 133,
+"9690to60": 7.6,
+"969Handling": 78,
+
+"996TopSpeed": 133,
+"9960to60": 7.1,
+"996Handling": 75
+}

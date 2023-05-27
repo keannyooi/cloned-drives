@@ -1,0 +1,49 @@
+{
+    "rq": 88,
+    "make": "Ford",
+    "model": "Mustang Cobra Jet Twin Turbo Concept",
+    "modelYear": 2012,
+    "country": "US",
+    "topSpeed": 210,
+    "0to60": 2.0,
+    "handling": 10,
+    "driveType": "RWD",
+    "tyreType": "Drag",
+    "tags": ["Endless Summer","Motorsport","Unique","The Americas Assault","Muscle Car","Concept"],
+    "isPrize": true,
+	
+    "weight": 1734,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 91.52,
+    "ola": 97.1,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1110681372739248229/2012_Cobra_Jet_Twin-Turbo_Concept.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1110681871181951007/2012_Cobra_Jet_Twin-Turbo_Concept_thumb.png",
+    "creator": "Preston",
+
+"333TopSpeed": 212,
+"3330to60": 1.9,
+"333Handling": 10,
+
+"666TopSpeed": 215,
+"6660to60": 1.8,
+"666Handling": 11,
+
+"699TopSpeed": 215,
+"6990to60": 1.7,
+"699Handling": 11,
+
+"969TopSpeed": 217,
+"9690to60": 1.8,
+"969Handling": 11,
+
+"996TopSpeed": 217,
+"9960to60": 1.7,
+"996Handling": 11
+}

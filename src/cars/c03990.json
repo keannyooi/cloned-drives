@@ -1,0 +1,49 @@
+{
+    "rq": 29,
+    "make": "Honda",
+    "model": "e Advance",
+    "modelYear": 2020,
+    "country": "JP",
+    "topSpeed": 91,
+    "0to60": 7.7,
+    "handling": 74,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Endless Summer","The Amplification of Asia","Eco-Friendly","Style Icon"],
+    "isPrize": false,
+	
+    "weight": 1608,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 22.25,
+    "ola": 67.31,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1110671487960100864/eAdvanceOnda.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1110672714093568162/eAdvanceOnda.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 97,
+"3330to60": 7.3,
+"333Handling": 76,
+
+"666TopSpeed": 102,
+"6660to60": 6.9,
+"666Handling": 79,
+
+"699TopSpeed": 102,
+"6990to60": 6.5,
+"699Handling": 82,
+
+"969TopSpeed": 108,
+"9690to60": 6.9,
+"969Handling": 82,
+
+"996TopSpeed": 108,
+"9960to60": 6.5,
+"996Handling": 79
+}

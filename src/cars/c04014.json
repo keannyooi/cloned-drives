@@ -1,0 +1,49 @@
+{
+    "rq": 102,
+    "make": "SSC",
+    "model": "Tuatara Striker",
+    "modelYear": 2023,
+    "country": "US",
+    "topSpeed": 268,
+    "0to60": 2.5,
+    "handling": 95,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Americas Assault", "Endless Summer", "Hypercar", "Unique", "Ultra Expensive","Oceanic View"],
+    "isPrize": false,
+	
+    "weight": 1247,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 144.51,
+    "ola": 88,
+    "description": "The Striker is a high-downforce variant of the Tuatara said to have three times the downforce at 160mph than the normal Tuatara. Originally announced in 2021 alongside the Aggressor, the first Striker was finally delivered in 2023 to famous american football player and television personality Michael Strahan.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1111090294386085899/2023_SSC_Tuatara_Striker.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1111090367476023376/striker_racehud.png",
+    "creator": "Preston",
+
+"333TopSpeed": 270, 
+"3330to60": 2.4, 
+"333Handling": 98,
+
+"666TopSpeed": 272, 
+"6660to60": 2.3, 
+"666Handling": 101,
+
+"699TopSpeed": 272, 
+"6990to60": 2.1, 
+"699Handling": 105,
+
+"969TopSpeed": 274, 
+"9690to60": 2.3, 
+"969Handling": 105,
+
+"996TopSpeed": 274, 
+"9960to60": 2.1, 
+"996Handling": 101
+}

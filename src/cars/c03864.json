@@ -1,0 +1,49 @@
+{
+    "rq": 71,
+    "make": "Bentley",
+    "model": "Flying Spur Hybrid",
+    "modelYear": 2022,
+    "country": "GB",
+    "topSpeed": 177,
+    "0to60": 4.1,
+    "handling": 85,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","Eco-Friendly","The Midlands Cruise"],
+    "isPrize": false,
+	
+    "weight": 2560,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 70,
+    "ola": 79.4,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1104773756548812961/FlyinSpurHybri2022Bentley.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1104777536761761792/FlyinkHybrid2022Bentley.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 180,
+"3330to60": 3.9,
+"333Handling": 88,
+
+"666TopSpeed": 183,
+"6660to60": 3.7,
+"666Handling": 91,
+
+"699TopSpeed": 183,
+"6990to60": 3.5,
+"699Handling": 94,
+
+"969TopSpeed": 186,
+"9690to60": 3.7,
+"969Handling": 94,
+
+"996TopSpeed": 186,
+"9960to60": 3.5,
+"996Handling": 91
+}

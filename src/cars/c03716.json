@@ -1,0 +1,49 @@
+{
+    "rq": 20,
+    "make": "Nissan",
+    "model": "Skyline 1500 DX (C10)",
+    "modelYear": 1971,
+    "country": "JP",
+    "topSpeed": 99,
+    "0to60": 11.3,
+    "handling": 65,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Endless Summer","The Amplification of Asia"],
+    "isPrize": false,
+	
+    "weight": 960,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 14.86,
+    "ola": 65.48,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1097515207452008458/skyline1500dx.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1097515786433736795/Skyline1500DXC10.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 104,
+"3330to60": 10.7,
+"333Handling": 67,
+
+"666TopSpeed": 110,
+"6660to60": 10.2,
+"666Handling": 69,
+
+"699TopSpeed": 110,
+"6990to60": 9.6,
+"699Handling": 72,
+
+"969TopSpeed": 115,
+"9690to60": 10.2,
+"969Handling": 72,
+
+"996TopSpeed": 115,
+"9960to60": 9.6,
+"996Handling": 69
+}

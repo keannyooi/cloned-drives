@@ -1,0 +1,49 @@
+{
+    "rq": 41,
+    "make": ["Dartz","Mercedes-AMG", "Mercedes-Benz"],
+    "model": "Die Hard 6x6",
+    "modelYear": 2014,
+    "country": "LV",
+    "topSpeed": 90,
+    "0to60": 8.8,
+    "handling": 60,
+    "driveType": "AWD",
+    "tyreType": "Off-Road",
+    "tags": ["Endless Summer","Unique","Ultra Expensive","Tuner","Extreme Juggernaut","Rest of The World","The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 5100,
+    "gc": "High",
+    "seatCount": 7,
+    "bodyStyle": "Pickup",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 58.14,
+    "ola": 54.78,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1103299899342204968/DartzG6x6.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1103300854674640926/DartZDie.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 96,
+"3330to60": 8.4,
+"333Handling": 62,
+
+"666TopSpeed": 102,
+"6660to60": 7.9,
+"666Handling": 64,
+
+"699TopSpeed": 102,
+"6990to60": 7.5,
+"699Handling": 67,
+
+"969TopSpeed": 107,
+"9690to60": 7.9,
+"969Handling": 67,
+
+"996TopSpeed": 107,
+"9960to60": 7.5,
+"996Handling": 64
+}

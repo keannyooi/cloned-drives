@@ -1,0 +1,49 @@
+{
+    "rq": 70,
+    "make": ["O.CT Tuning", "Ram"],
+    "model": "1500 5.7 4x4 Crew Cab Supercharged",
+    "modelYear": 2019,
+    "country": "DE",
+    "topSpeed": 121,
+    "0to60": 5.1,
+    "handling": 71,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Tuner", "The Americas Assault","Endless Summer"],
+    "isPrize": false,
+	
+    "weight": 2650,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "Pickup",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 68.00,
+    "ola": 68.63,
+    "description": "The Autobahn hauler.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1085600177970225202/Ram_O.CT_Tuning_1500_5.7_4x4_Crew_Cab_Supercharged_2019.png",
+	"racehud": "https://media.discordapp.net/attachments/1077293403668234340/1085607420698570802/Ram_O.CT_Tuning_1500_5.7_4x4_Crew_Cab_Supercharged_2019_Hud.png",
+    "creator": "DodgeDemon",
+
+"333TopSpeed": 125,
+"3330to60": 4.8,
+"333Handling": 73,
+
+"666TopSpeed": 130,
+"6660to60": 4.6,
+"666Handling": 76,
+
+"699TopSpeed": 130,
+"6990to60": 4.3,
+"699Handling": 79,
+
+"969TopSpeed": 134,
+"9690to60": 4.6,
+"969Handling": 79,
+
+"996TopSpeed": 134,
+"9960to60": 4.3,
+"996Handling": 76
+}

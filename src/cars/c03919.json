@@ -1,0 +1,49 @@
+{
+    "rq": 92,
+    "make": "Porsche",
+    "model": "917LH/20",
+    "modelYear": 1971,
+    "country": "DE",
+    "topSpeed": 250,
+    "0to60": 2.8,
+    "handling": 93,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Endless Summer","Motorsport","Unique","Ultra Expensive","The Tyrol Tour: Remix"],
+    "isPrize": true,
+	
+    "weight": 952,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 122.54,
+    "ola": 101.15,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1104776275018653767/917LH20.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1104779157461807194/917LH20.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 252,
+"3330to60": 2.7,
+"333Handling": 96,
+
+"666TopSpeed": 254,
+"6660to60": 2.5,
+"666Handling": 99,
+
+"699TopSpeed": 254,
+"6990to60": 2.4,
+"699Handling": 103,
+
+"969TopSpeed": 256,
+"9690to60": 2.5,
+"969Handling": 103,
+
+"996TopSpeed": 256,
+"9960to60": 2.4,
+"996Handling": 99
+}

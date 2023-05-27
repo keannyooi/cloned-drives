@@ -1,0 +1,49 @@
+{
+    "rq": 20,
+    "make": "Nissan",
+    "model": "Skyline 2000 GT (GC10)",
+    "modelYear": 1968,
+    "country": "JP",
+    "topSpeed": 106,
+    "0to60": 11.3,
+    "handling": 64,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Endless Summer","The Amplification of Asia"],
+    "isPrize": false,
+	
+    "weight": 1090,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 24.56,
+    "ola": 67.25,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1097515302914363582/skyline2000gt.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1097515866247147560/Skyline2000GTGC10.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 111,
+"3330to60": 10.7,
+"333Handling": 66,
+
+"666TopSpeed": 116,
+"6660to60": 10.2,
+"666Handling": 68,
+
+"699TopSpeed": 116,
+"6990to60": 9.6,
+"699Handling": 71,
+
+"969TopSpeed": 121,
+"9690to60": 10.2,
+"969Handling": 71,
+
+"996TopSpeed": 121,
+"9960to60": 9.6,
+"996Handling": 68
+}

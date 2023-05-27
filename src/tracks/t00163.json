@@ -1,0 +1,18 @@
+{
+	"trackName": "2019 Mexico City E-Prix (Sunny)",
+	"weather": "Sunny",
+	"surface": "Asphalt",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://cdn.discordapp.com/attachments/800047734035841037/1108694247948955659/1088392.png",
+	"map": "https://cdn.discordapp.com/attachments/800047734035841037/1108694190784794675/Mexico_City_Layout_2019.png",
+	
+	"specsDistr": {
+		"topSpeed": 0,
+		"0to60": 65,
+		"handling": 80,
+		"weight": 12,
+		"mra": 35,
+		"ola": 10
+	}
+}

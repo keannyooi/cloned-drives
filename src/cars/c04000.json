@@ -1,0 +1,49 @@
+{
+    "rq": 84,
+    "make": "Nissan",
+    "model": "R390 GT1 Road Car",
+    "modelYear": 1997,
+    "country": "JP",
+    "topSpeed": 215,
+    "0to60": 3.5,
+    "handling": 92,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","Track Day","Ultra Expensive","Unique","The Amplification of Asia"],
+    "isPrize": false,
+	
+    "weight": 1075,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 104.88,
+    "ola": 80,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1109064019798667264/R390GT11997.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1109065251699294248/R390ST.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 217,
+"3330to60": 3.3,
+"333Handling": 95,
+
+"666TopSpeed": 220,
+"6660to60": 3.1,
+"666Handling": 98,
+
+"699TopSpeed": 220,
+"6990to60": 3,
+"699Handling": 102,
+
+"969TopSpeed": 222,
+"9690to60": 3.1,
+"969Handling": 102,
+
+"996TopSpeed": 222,
+"9960to60": 3,
+"996Handling": 98
+}

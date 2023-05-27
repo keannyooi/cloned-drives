@@ -1,0 +1,49 @@
+{
+    "rq": 28,
+    "make": ["Lagonda","Aston Martin"],
+    "model": "Rapide",
+    "modelYear": 1961,
+    "country": "GB",
+    "topSpeed": 130,
+    "0to60": 9.4,
+    "handling": 66,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Endless Summer","The Midlands Cruise","Unique"],
+    "isPrize": false,
+	
+    "weight": 1712,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 60.25,
+    "ola": 78.72,
+    "description": "The four door sporting saloon known as the Rapide was launched in the Autumn of 1961, was very much the baby of David Brown who was extremely fond of the Lagonda marque. He wanted AML to produce a luxury sporting saloon that would be as good to drive as it would to be driven in, with great comfort and a good luggage capacity. And with a list price of almost £5,000, it was also a direct competitor to the contemporary Rolls-Royce and Bentley motor cars.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1096819686248825033/LagondaRapide.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1096820854500905090/LagondaRapide.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 134,
+"3330to60": 8.9,
+"333Handling": 68,
+
+"666TopSpeed": 138,
+"6660to60": 8.5,
+"666Handling": 70,
+
+"699TopSpeed": 138,
+"6990to60": 8,
+"699Handling": 73,
+
+"969TopSpeed": 142,
+"9690to60": 8.5,
+"969Handling": 73,
+
+"996TopSpeed": 142,
+"9960to60": 8,
+"996Handling": 70
+}

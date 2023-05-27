@@ -1,0 +1,49 @@
+{
+    "rq": 13,
+    "make": "Aston Martin",
+    "model": "DB Mark II Le Mans Fixed Head Coupe Prototype (I6)",
+    "modelYear": 1949,
+    "country": "GB",
+    "topSpeed": 103,
+    "0to60": 14.0,
+    "handling": 56,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Midlands Cruise","Unique","Motorsport","Concept","Endless Summer","Visionary Road"],
+    "isPrize": false,
+
+    "weight": 1170,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 25,
+    "ola": 71.42,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1081553663622922260/DBMarkIILMCI6.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1081554579889606827/dbmarkiilmci6.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 108,
+"3330to60": 13.3,
+"333Handling": 58,
+
+"666TopSpeed": 113,
+"6660to60": 12.6,
+"666Handling": 60,
+
+"699TopSpeed": 113,
+"6990to60": 11.9,
+"699Handling": 62,
+
+"969TopSpeed": 118,
+"9690to60": 12.6,
+"969Handling": 62,
+
+"996TopSpeed": 118,
+"9960to60": 11.9,
+"996Handling": 60
+}

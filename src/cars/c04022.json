@@ -1,0 +1,50 @@
+{
+    "rq": 84,
+    "make": "Volkswagen",
+    "model": "Golf Kit Car",
+    "modelYear": 1996,
+    "country": "DE",
+    "topSpeed": 125,
+    "0to60": 4.8,
+    "handling": 84,
+    "driveType": "FWD",
+    "tyreType": "Off-Road",
+    "tags": ["The Tyrol Tour: Remix", "Hot Hatch", "Motorsport","Endless Summer"],
+    "isPrize": false,
+
+    "weight": 998,
+    "gc": "Medium",
+    "seatCount":2,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 65.75,
+    "ola": 83.33,
+    "description": "One of the mildly succesful Golf rally cars.",
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1110140867974529136/Golfmk3KitCar.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1110143934333734912/GolfKitKat.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 129,
+    "3330to60": 4.6,
+    "333Handling": 87,
+    
+    "666TopSpeed": 133,
+    "6660to60": 4.3,
+    "666Handling": 90,
+    
+    "699TopSpeed": 133,
+    "6990to60": 4.1,
+    "699Handling": 93,
+    
+    "969TopSpeed": 137,
+    "9690to60": 4.3,
+    "969Handling": 93,
+    
+    "996TopSpeed": 137,
+    "9960to60": 4.1,
+    "996Handling": 90
+}

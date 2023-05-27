@@ -1,0 +1,49 @@
+{
+    "rq": 173,
+    "make": "Jaguar",
+    "model": "XJ220 (BOSS)",
+    "modelYear": 2023,
+    "country": "GB",
+    "topSpeed": 270,
+    "0to60": 4.1,
+    "handling": 88,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","BOSS"],
+    "isPrize": true,
+	
+    "weight": 1470,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 113.08,
+    "ola": 98.29,
+    "description": "Part of the Endless Summer Boss Collection 1!",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1103318353289945118/JaguarXJ220BOSS.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1103318626599174185/BossXJ220.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 272,
+"3330to60": 3.9,
+"333Handling": 91,
+
+"666TopSpeed": 274,
+"6660to60": 3.7,
+"666Handling": 94,
+
+"699TopSpeed": 274,
+"6990to60": 3.5,
+"699Handling": 98,
+
+"969TopSpeed": 276,
+"9690to60": 3.7,
+"969Handling": 98,
+
+"996TopSpeed": 276,
+"9960to60": 3.5,
+"996Handling": 94
+}

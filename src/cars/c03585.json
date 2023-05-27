@@ -1,0 +1,49 @@
+{
+    "rq": 103,
+    "make": "Hennessey",
+    "model": "Venom F5 Roadster",
+    "modelYear": 2022,
+    "country": "US",
+    "topSpeed": 311,
+    "0to60": 2.5,
+    "handling": 94,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Hypercar", "Unique", "Ultra Expensive","Endless Summer","The Americas Assault"],
+    "isPrize": true,
+    
+    "weight": 1405,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 145.35,
+    "ola": 95.20,
+    "description": "America's Hyper Roadster.",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1045904423093796915/Hennessey_Venom_F5_Rster_2022.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1045905090197848155/Hennessey_Venom_F5_Rster_2022_Hud.png",
+    "creator": "DodgeDemon",
+
+    "333TopSpeed": 313,
+    "3330to60": 2.4,
+    "333Handling": 97,
+
+    "666TopSpeed": 314,
+    "6660to60": 2.3,
+    "666Handling": 100,
+
+    "996TopSpeed": 316,
+    "9960to60": 2.1,
+    "996Handling": 100,
+
+    "969TopSpeed": 316,
+    "9690to60": 2.3,
+    "969Handling": 104,
+
+    "699TopSpeed": 314,
+    "6990to60": 2.1,
+    "699Handling": 104
+}

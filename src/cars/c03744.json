@@ -1,0 +1,49 @@
+{
+    "rq": 94,
+    "make": "Ferrari",
+    "model": "Purosangue",
+    "modelYear": 2023,
+    "country": "IT",
+    "topSpeed": 194,
+    "0to60": 3.1,
+    "handling": 90,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 2033,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 86.11,
+    "ola": 77.41,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1101515532341104750/PurosangueRari.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1101515737014730893/Purasuange.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 197,
+"3330to60": 2.9,
+"333Handling": 93,
+
+"666TopSpeed": 199,
+"6660to60": 2.8,
+"666Handling": 96,
+
+"699TopSpeed": 199,
+"6990to60": 2.6,
+"699Handling": 100,
+
+"969TopSpeed": 202,
+"9690to60": 2.8,
+"969Handling": 100,
+
+"996TopSpeed": 202,
+"9960to60": 2.6,
+"996Handling": 96
+}

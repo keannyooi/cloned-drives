@@ -1,0 +1,49 @@
+{
+    "rq": 85,
+    "make": "Honda",
+    "model": "NSX Concept-GT",
+    "modelYear": 2013,
+    "country": "JP",
+    "topSpeed": 190,
+    "0to60": 3.3,
+    "handling": 96,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Endless Summer", "Motorsport", "The Amplification of Asia","Visionary Road"],
+    "isPrize": false,
+	
+    "weight": 1150,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 94.56,
+    "ola": 90.00,
+    "description": "None.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1106239726538739814/Honda_NSX_Concept_GT_2013.png",
+	"racehud": "https://media.discordapp.net/attachments/1077293403668234340/1106248315546390538/Honda_NSX_Concept_GT_2013_Hud.png",
+    "creator": "DodgeDemon",
+
+"333TopSpeed": 193,
+"3330to60": 3.1,
+"333Handling": 99,
+
+"666TopSpeed": 195,
+"6660to60": 3.0,
+"666Handling": 102,
+
+"699TopSpeed": 195,
+"6990to60": 2.8,
+"699Handling": 107,
+
+"969TopSpeed": 198,
+"9690to60": 3.0,
+"969Handling": 107,
+
+"996TopSpeed": 198,
+"9960to60": 2.8,
+"996Handling": 102
+}

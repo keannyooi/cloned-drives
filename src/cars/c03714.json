@@ -1,0 +1,49 @@
+{
+    "rq": 88,
+    "make": ["Cheetah-Aston Martin", "Aston Martin"],
+    "model": "G604",
+    "modelYear": 1984,
+    "country": "GB",
+    "topSpeed": 216,
+    "0to60": 3.1,
+    "handling": 95,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Endless Summer","Motorsport","Ultra Expensive","Unique","The Midlands Cruise"],
+    "isPrize": false,
+	
+    "weight": 870,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 106.9,
+    "ola": 103.03,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1100779870558097538/CheetahAstonG604.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100780533803397190/cheetahastong604.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 218,
+"3330to60": 2.9,
+"333Handling": 98,
+
+"666TopSpeed": 221,
+"6660to60": 2.8,
+"666Handling": 101,
+
+"699TopSpeed": 221,
+"6990to60": 2.6,
+"699Handling": 105,
+
+"969TopSpeed": 223,
+"9690to60": 2.8,
+"969Handling": 105,
+
+"996TopSpeed": 223,
+"9960to60": 2.6,
+"996Handling": 101
+}

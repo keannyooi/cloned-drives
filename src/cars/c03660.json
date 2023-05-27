@@ -1,0 +1,49 @@
+{
+    "rq": 46,
+    "make": "BMW",
+    "model": "420d",
+    "modelYear": 2013,
+    "country": "DE",
+    "topSpeed": 146,
+    "0to60": 7.1,
+    "handling": 76,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Endless Summer","The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 1475,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 55.91,
+    "ola": 81.69,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1097516566331015228/420d.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1097516740793094285/420d.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 150,
+"3330to60": 6.7,
+"333Handling": 79,
+
+"666TopSpeed": 153,
+"6660to60": 6.4,
+"666Handling": 81,
+
+"699TopSpeed": 153,
+"6990to60": 6,
+"699Handling": 84,
+
+"969TopSpeed": 157,
+"9690to60": 6.4,
+"969Handling": 84,
+
+"996TopSpeed": 157,
+"9960to60": 6,
+"996Handling": 81
+}

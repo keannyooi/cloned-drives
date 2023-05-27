@@ -1,0 +1,49 @@
+{
+    "rq": 81,
+    "make": "Porsche",
+    "model": "965",
+    "modelYear": 1988,
+    "country": "DE",
+    "topSpeed": 199,
+    "0to60": 3.5,
+    "handling": 85,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","Unique","Concept","Ultra Expensive","The Tyrol Tour: Remix","Supercar","Visionary Road"],
+    "isPrize": false,
+	
+    "weight": 1560,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 80,
+    "ola": 73.5,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1103280569380503733/Porsche965.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1103281725615902750/965.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 202,
+"3330to60": 3.3,
+"333Handling": 88,
+
+"666TopSpeed": 204,
+"6660to60": 3.1,
+"666Handling": 91,
+
+"699TopSpeed": 204,
+"6990to60": 3,
+"699Handling": 94,
+
+"969TopSpeed": 207,
+"9690to60": 3.1,
+"969Handling": 94,
+
+"996TopSpeed": 207,
+"9960to60": 3,
+"996Handling": 91
+}

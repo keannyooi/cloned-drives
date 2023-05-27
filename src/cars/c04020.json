@@ -1,0 +1,51 @@
+{  
+    "rq": 3,
+    "make": "Suzuki",
+    "model": "Super Carry 1.2 Cargo Truck",
+    "modelYear": 2016,
+    "country": "JP",
+    "topSpeed": 80,
+    "0to60": 20.0,
+    "handling": 52,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Amplification of Asia","Endless Summer"],
+    "isPrize": false,
+
+
+    "weight": 740,
+    "gc": "Medium",
+    "seatCount":2,
+    "bodyStyle": "Commercial",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 0.00,
+    "ola": 56.00,
+    "description": "When it works, it works; so why change it?",
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1106273163911889018/SuperCarry12CT.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1106273425032495134/SuperCarry12.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 87,
+    "3330to60": 19,
+    "333Handling": 54,
+    
+    "666TopSpeed": 93,
+    "6660to60": 18,
+    "666Handling": 55,
+    
+    "699TopSpeed": 93,
+    "6990to60": 17,
+    "699Handling": 58,
+    
+    "969TopSpeed": 100,
+    "9690to60": 18,
+    "969Handling": 58,
+    
+    "996TopSpeed": 100,
+    "9960to60": 17,
+    "996Handling": 55
+}

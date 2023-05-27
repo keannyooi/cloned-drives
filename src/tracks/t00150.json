@@ -1,0 +1,18 @@
+{
+	"trackName": "Circuit de la Sarthe Classic (Rainy)",
+	"weather": "Rainy",
+	"surface": "Track",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://cdn.discordapp.com/attachments/800047734035841037/1101613225667203192/open-uri20121013-16770-tapg7y.png",
+	"map": "https://cdn.discordapp.com/attachments/800047734035841037/1101613040308322354/Le_Mans_Circuit_de_la_Sarthe_1932-1967.png",
+	
+	"specsDistr": {
+		"topSpeed": 80,
+		"0to60": 25,
+		"handling": 30,
+		"weight": 0,
+		"mra": 100,
+		"ola": 0
+	}
+}

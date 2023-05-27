@@ -1,0 +1,52 @@
+{
+    "rq": 93,
+    "make": ["Boba Motoring", "Volkswagen"],
+    "model": "Golf DSG",
+    "modelYear": 2018,
+    "country": "DE",
+    "topSpeed": 212,
+    "0to60": 1.6,
+    "handling": 30,
+    "driveType": "4WD",
+    "tyreType": "Drag",
+    "tags": ["Hot Hatch","Unique","Endless Summer","The Tyrol Tour: Remix"],
+    "isPrize": true,
+
+
+    "weight": 1180,
+    "gc": "Low",
+    "seatCount":1,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 106.67,
+    "ola": 98.75,
+    "description": "Very slow.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1102631722845212723/GolfBoba.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1102631822388625529/boba.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 214,
+    "3330to60": 1.5,
+    "333Handling": 31,
+    
+    "666TopSpeed": 217,
+    "6660to60": 1.4,
+    "666Handling": 32,
+    
+    "699TopSpeed": 217,
+    "6990to60": 1.4,
+    "699Handling": 33,
+    
+    "969TopSpeed": 219,
+    "9690to60": 1.4,
+    "969Handling": 33,
+    
+    "996TopSpeed": 219,
+    "9960to60": 1.4,
+    "996Handling": 32
+}

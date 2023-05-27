@@ -1,0 +1,51 @@
+{  
+    "rq": 39,
+    "make": "Volkswagen",
+    "model": "ID.3 Tour Pro S",
+    "modelYear": 2020,
+    "country": "DE",
+    "topSpeed": 100,
+    "0to60": 7.6,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix", "Eco-Friendly","Endless Summer"],
+    "isPrize": false,
+
+
+    "weight": 1928,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Electric",
+    "mra": 51.01,
+    "ola": 73.68,
+    "description": "Do you remember the days where a Hatchback weighed almost nothing? Good times.",
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1106138156916559952/ID3Tour.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1106138689811255306/ID3TPS.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 105,
+    "3330to60": 7.2,
+    "333Handling": 80,
+    
+    "666TopSpeed": 110,
+    "6660to60": 6.8,
+    "666Handling": 82,
+    
+    "699TopSpeed": 110,
+    "6990to60": 6.5,
+    "699Handling": 85,
+    
+    "969TopSpeed": 116,
+    "9690to60": 6.8,
+    "969Handling": 85,
+    
+    "996TopSpeed": 116,
+    "9960to60": 6.5,
+    "996Handling": 82
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 42,
+    "make": "Hongqi",
+    "model": "L5 CA7600",
+    "modelYear": 2014,
+    "country": "CN",
+    "topSpeed": 137,
+    "0to60": 7.0,
+    "handling": 66,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Endless Summer","Rest of The World","The Amplification of Asia"],
+    "isPrize": false,
+	
+    "weight": 3150,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 48.95,
+    "ola": 58.57,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1046406628968255558/hongqi_l5.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1046402975272284221/hongqi_l5_ca7600.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 141,
+"3330to60": 6.6,
+"333Handling": 68,
+
+"666TopSpeed": 145,
+"6660to60": 6.3,
+"666Handling": 70,
+
+"699TopSpeed": 145,
+"6990to60": 6,
+"699Handling": 73,
+
+"969TopSpeed": 148,
+"9690to60": 6.3,
+"969Handling": 73,
+
+"996TopSpeed": 148,
+"9960to60": 6,
+"996Handling": 70
+}

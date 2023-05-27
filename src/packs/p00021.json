@@ -1,8 +1,8 @@
 {
-	"packName": "Electric Elite Plus",
-	"description": "Guarenteed an Ultra Or better",
+	"packName": "Petrol Elite Pack",
+	"description": "5 Super Rare or better Petrol cars.",
     "repetition": 1,
-	"pack": "https://media.discordapp.net/attachments/956106029635088384/956106124183097354/Elite_Pack.png",
+	"pack": "https://cdn.discordapp.com/attachments/956106029635088384/1098952160781279362/PetrolElite.png",
 	
 	"filter": {
 		"make": "None",
@@ -15,7 +15,7 @@
         "driveType": "None",
         "tyreType": "None",
 		"enginePos": "None",
-        "fuelType": "Electric",
+        "fuelType": "Petrol",
         "bodyStyle": "None",
 		"seatCount": "None"
 	},
@@ -25,46 +25,46 @@
             "common": 0,
             "uncommon": 0,
             "rare": 0,
-            "superRare": 70,
-            "ultraRare": 20,
-            "epic": 8,
-            "legendary": 2
+            "superRare": 74,
+            "ultraRare": 20.1,
+            "epic": 5,
+            "legendary": 0.9
         },
         {
             "common": 0,
             "uncommon": 0,
             "rare": 0,
-            "superRare": 70,
-            "ultraRare": 20,
-            "epic": 8,
-            "legendary": 2
+            "superRare": 74,
+            "ultraRare": 20.1,
+            "epic": 5,
+            "legendary": 0.9
         },
         {
             "common": 0,
             "uncommon": 0,
             "rare": 0,
-            "superRare": 70,
-            "ultraRare": 20,
-            "epic": 8,
-            "legendary": 2
+            "superRare": 74,
+            "ultraRare": 20.1,
+            "epic": 5,
+            "legendary": 0.9
         },
         {
             "common": 0,
             "uncommon": 0,
             "rare": 0,
-            "superRare": 70,
-            "ultraRare": 20,
-            "epic": 8,
-            "legendary": 2
+            "superRare": 74,
+            "ultraRare": 20.1,
+            "epic": 5,
+            "legendary": 0.9
         },
         {
             "common": 0,
             "uncommon": 0,
             "rare": 0,
-            "superRare": 0,
-            "ultraRare": 75,
-            "epic": 22,
-            "legendary": 3
+            "superRare": 74,
+            "ultraRare": 20.1,
+            "epic": 5,
+            "legendary": 0.9
         }
     ]
 }

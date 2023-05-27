@@ -1,0 +1,49 @@
+{
+    "rq": 1,
+    "make": ["Aston-Martin", "Aston Martin"],
+    "model": "15/98 Drop Head Coupe",
+    "modelYear": 1937,
+    "country": "GB",
+    "topSpeed": 88,
+    "0to60": 20.5,
+    "handling": 52,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Unique","The Midlands Cruise","Endless Summer"],
+    "isPrize": false,
+	
+    "weight": 1157,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 5.8,
+    "ola": 66.3,
+    "description": "In addition to the short chassis 2/4 seaters bodied by Abbey Coachworks, another model using the new 8' 6\" short chassis with the wet sump engine was announced in June 1937. The elegant drop head coupe was bodied by the coach builders, Abbotts of Farnham and when unveiled at the 1937 Motor Show, was priced at £625 complete.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1096530284012388352/15-98_Drop_Head_Coupe.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1096530859462508554/1598DropHeadCoupe.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 94,
+"3330to60": 19.5,
+"333Handling": 54,
+
+"666TopSpeed": 100,
+"6660to60": 18.4,
+"666Handling": 55,
+
+"699TopSpeed": 100,
+"6990to60": 17.4,
+"699Handling": 58,
+
+"969TopSpeed": 106,
+"9690to60": 18.4,
+"969Handling": 58,
+
+"996TopSpeed": 106,
+"9960to60": 17.4,
+"996Handling": 55
+}

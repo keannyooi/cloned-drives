@@ -1,0 +1,49 @@
+{
+    "rq": 49,
+    "make": "Chevrolet",
+    "model": "Borrego Concept",
+    "modelYear": 2001,
+    "country": "US",
+    "topSpeed": 115,
+    "0to60": 9.9,
+    "handling": 72,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["Endless Summer","Unique","Concept","Extreme Juggernaut","The Americas Assault","Visionary Road"],
+    "isPrize": false,
+	
+    "weight": 1560,
+    "gc": "High",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 45.83,
+    "ola": 62.62,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1103322720705458287/BOrregOconceptChevy.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1103324002669301831/BorregoConcept.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 120,
+"3330to60": 9.4,
+"333Handling": 74,
+
+"666TopSpeed": 124,
+"6660to60": 8.9,
+"666Handling": 77,
+
+"699TopSpeed": 124,
+"6990to60": 8.4,
+"699Handling": 80,
+
+"969TopSpeed": 129,
+"9690to60": 8.9,
+"969Handling": 80,
+
+"996TopSpeed": 129,
+"9960to60": 8.4,
+"996Handling": 77
+}

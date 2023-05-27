@@ -1,0 +1,49 @@
+{
+    "rq": 46,
+    "make": "Lamborghini",
+    "model": "350 GTV",
+    "modelYear": 1963,
+    "country": "IT",
+    "topSpeed": 170,
+    "0to60": 6.0,
+    "handling": 69,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","Concept","Unique","Ultra Expensive","Innovative","The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 1292,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 72.1,
+    "ola": 73.7,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1101866848221417483/Lambo350GTV.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1101867321712197632/Lambo350GTV.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 173,
+"3330to60": 5.7,
+"333Handling": 71,
+
+"666TopSpeed": 176,
+"6660to60": 5.4,
+"666Handling": 74,
+
+"699TopSpeed": 176,
+"6990to60": 5.1,
+"699Handling": 77,
+
+"969TopSpeed": 179,
+"9690to60": 5.4,
+"969Handling": 77,
+
+"996TopSpeed": 179,
+"9960to60": 5.1,
+"996Handling": 74
+}

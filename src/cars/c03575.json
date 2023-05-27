@@ -1,0 +1,49 @@
+{
+    "rq": 57,
+    "make": ["Boniolo","Aston Martin"],
+    "model": "V12 Vanquish EG Shooting Brake",
+    "modelYear": 2007,
+    "country": "IT",
+    "topSpeed": 185,
+    "0to60": 4.8,
+    "handling": 79,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix","Tuner","Unique","Endless Summer"],
+    "isPrize": false,
+	
+    "weight": 1875,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 73.84,
+    "ola": 87.5,
+    "description": "Something rather special and ambitious is the Vanquish EG Shooting Brake coachbuilt by Quality Cars of Vigonza, Italy. This creation was commissioned by an anonymous customer, who lent his initials to the car and who wanted a unique take on his Vanquish. The car has a lengthened chassis which has enabled rear 'suicide' rear doors to give much better access to the more generous rear seats and a hatchback.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1096532845947801671/bonioloshootingbrake.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1096533011660550164/Bonioloshooting.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 188,
+"3330to60": 4.6,
+"333Handling": 82,
+
+"666TopSpeed": 191,
+"6660to60": 4.3,
+"666Handling": 84,
+
+"699TopSpeed": 191,
+"6990to60": 4.1,
+"699Handling": 88,
+
+"969TopSpeed": 193,
+"9690to60": 4.3,
+"969Handling": 88,
+
+"996TopSpeed": 193,
+"9960to60": 4.1,
+"996Handling": 84
+}

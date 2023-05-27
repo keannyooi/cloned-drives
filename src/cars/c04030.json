@@ -1,0 +1,51 @@
+{  
+    "rq": 23,
+    "make": "Volkswagen",
+    "model": "ID.Buzz 1st Pro",
+    "modelYear": 2022,
+    "country": "DE",
+    "topSpeed": 91,
+    "0to60": 9.7,
+    "handling": 70,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix", "Eco-Friendly", "Style Icon","Endless Summer"],
+    "isPrize": false,
+
+
+    "weight": 2560,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Commercial",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 13.33,
+    "ola": 74.23,
+    "description": "In the words of the Great Doug: This is the coolest van i've seen in years!",
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1106749788491366503/IDBuzz.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1106752086399520838/IDBuzz.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 97,
+    "3330to60": 9.2,
+    "333Handling": 72,
+    
+    "666TopSpeed": 102,
+    "6660to60": 8.7,
+    "666Handling": 75,
+    
+    "699TopSpeed": 102,
+    "6990to60": 8.2,
+    "699Handling": 78,
+    
+    "969TopSpeed": 108,
+    "9690to60": 8.7,
+    "969Handling": 78,
+    
+    "996TopSpeed": 108,
+    "9960to60": 8.2,
+    "996Handling": 75
+}

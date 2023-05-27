@@ -1,0 +1,49 @@
+{
+    "rq": 60,
+    "make": "Audi",
+    "model": "RS 4 Avant",
+    "modelYear": 2000,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 4.8,
+    "handling": 78,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 1620,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 72.73,
+    "ola": 66.67,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1101474891355668510/CD_Audi_RS_4_Avant_B5.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1101475624360607764/RS4Avant2000.png",
+    "creator": "Exist",
+
+"333TopSpeed": 158,
+"3330to60": 4.6,
+"333Handling": 81,
+
+"666TopSpeed": 162,
+"6660to60": 4.3,
+"666Handling": 83,
+
+"699TopSpeed": 162,
+"6990to60": 4.1,
+"699Handling": 87,
+
+"969TopSpeed": 165,
+"9690to60": 4.3,
+"969Handling": 87,
+
+"996TopSpeed": 165,
+"9960to60": 4.1,
+"996Handling": 83
+}

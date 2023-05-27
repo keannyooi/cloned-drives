@@ -1,0 +1,49 @@
+{
+    "rq": 80,
+    "make": "Aston Martin",
+    "model": "DB12",
+    "modelYear": 2023,
+    "country": "GB",
+    "topSpeed": 202,
+    "0to60": 3.5,
+    "handling": 90,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","Grand Tourer","The Midlands Cruise"],
+    "isPrize": false,
+	
+    "weight": 1760,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 97.01,
+    "ola": 97.55,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1111385987097047071/DB122023.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1111386921818652722/DB12.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 205,
+"3330to60": 3.3,
+"333Handling": 93,
+
+"666TopSpeed": 207,
+"6660to60": 3.1,
+"666Handling": 96,
+
+"699TopSpeed": 207,
+"6990to60": 3,
+"699Handling": 100,
+
+"969TopSpeed": 210,
+"9690to60": 3.1,
+"969Handling": 100,
+
+"996TopSpeed": 210,
+"9960to60": 3,
+"996Handling": 96
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 87,
+    "make": "Acura",
+    "model": "NSX",
+    "modelYear": 2019,
+    "country": "US",
+    "topSpeed": 192,
+    "0to60": 3.2,
+    "handling": 92,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer", "Street Racer", "Eco-Friendly", "Supercar", "The Americas Assault","Oceanic View"],
+    "isPrize": false,
+	
+    "weight": 1770,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Hybrid",
+    "mra": 84.30,
+    "ola": 82.00,
+    "description": "Subtle improvements for the hybrid supercar.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1106237909096484914/Acura_NSX_2019.png",
+	"racehud": "https://media.discordapp.net/attachments/1077293403668234340/1106246507121881198/Acura_NSX_2019_Hud.png",
+    "creator": "DodgeDemon",
+
+"333TopSpeed": 195,
+"3330to60": 3.0,
+"333Handling": 95,
+
+"666TopSpeed": 197,
+"6660to60": 2.9,
+"666Handling": 98,
+
+"699TopSpeed": 197,
+"6990to60": 2.7,
+"699Handling": 102,
+
+"969TopSpeed": 200,
+"9690to60": 2.9,
+"969Handling": 102,
+
+"996TopSpeed": 200,
+"9960to60": 2.7,
+"996Handling": 98
+}

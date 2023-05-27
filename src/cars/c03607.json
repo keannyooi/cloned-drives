@@ -1,0 +1,49 @@
+{
+    "rq": 30,
+    "make": "Aston Martin",
+    "model": "DB4 Vantage",
+    "modelYear": 1961,
+    "country": "GB",
+    "topSpeed": 148,
+    "0to60": 8.1,
+    "handling": 70,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","The Midlands Cruise","Unique","Grand Tourer"],
+    "isPrize": false,
+	
+    "weight": 1320,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 77.88,
+    "ola": 88.88,
+    "description": "The DB4 Vantage was announced as a separate model from the start of what is now known as series 4 cars in 1961. You could argue that the DB4 Vantage was actually the first 'real' Vantage where it was a visually distinct model rather than just a standard looking car with more powerful engine. Key to the Vantage was the fitting of the 'Special Series' engine which featured not two but three SU HD8 carburettors and revised cylinder heads with bigger valves and a higher compression ratio.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1096818990870974515/DB4Vantage.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1096820604923019355/DB4Vantage.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 152,
+"3330to60": 7.7,
+"333Handling": 72,
+
+"666TopSpeed": 155,
+"6660to60": 7.3,
+"666Handling": 75,
+
+"699TopSpeed": 155,
+"6990to60": 6.9,
+"699Handling": 78,
+
+"969TopSpeed": 159,
+"9690to60": 7.3,
+"969Handling": 78,
+
+"996TopSpeed": 159,
+"9960to60": 6.9,
+"996Handling": 75
+}

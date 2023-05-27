@@ -1,0 +1,49 @@
+{
+    "rq": 80,
+    "make": "Land Rover",
+    "model": "Defender 110 V8 P525",
+    "modelYear": 2021,
+    "country": "GB",
+    "topSpeed": 149,
+    "0to60": 4.9,
+    "handling": 70,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["Endless Summer","The Midlands Cruise","Extreme Juggernaut"],
+    "isPrize": false,
+	
+    "weight": 2603,
+    "gc": "High",
+    "seatCount": 7,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 76.56,
+    "ola": 74.15,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1104774737692987575/110V8P525Defender20.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1104778382891294810/V8110.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 152,
+"3330to60": 4.7,
+"333Handling": 72,
+
+"666TopSpeed": 156,
+"6660to60": 4.4,
+"666Handling": 75,
+
+"699TopSpeed": 156,
+"6990to60": 4.2,
+"699Handling": 78,
+
+"969TopSpeed": 159,
+"9690to60": 4.4,
+"969Handling": 78,
+
+"996TopSpeed": 159,
+"9960to60": 4.2,
+"996Handling": 75
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 81,
+    "make": "Aston Martin",
+    "model": "DBS 770 Ultimate Volante",
+    "modelYear": 2023,
+    "country": "GB",
+    "topSpeed": 211,
+    "0to60": 3.4,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","Grand Tourer","The Midlands Cruise"],
+    "isPrize": false,
+	
+    "weight": 1910,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 94.89,
+    "ola": 97.44,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1103281202854645820/DBS770VolantAsston.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1103282038238351430/DBS770Volante.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 213,
+"3330to60": 3.2,
+"333Handling": 94,
+
+"666TopSpeed": 216,
+"6660to60": 3.1,
+"666Handling": 97,
+
+"699TopSpeed": 216,
+"6990to60": 2.9,
+"699Handling": 101,
+
+"969TopSpeed": 218,
+"9690to60": 3.1,
+"969Handling": 101,
+
+"996TopSpeed": 218,
+"9960to60": 2.9,
+"996Handling": 97
+}

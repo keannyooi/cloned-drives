@@ -1,0 +1,49 @@
+{
+    "rq": 97,
+    "make": "Vanwall",
+    "model": "Vandervell 680",
+    "modelYear": 2023,
+    "country": "DE",
+    "topSpeed": 205,
+    "0to60": 2.5,
+    "handling": 100,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Endless Summer","The Tyrol Tour: Remix","Motorsport","Unique","Eco-Friendly"],
+    "isPrize": true,
+	
+    "weight": 1030,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Hybrid",
+    "mra": 119.85,
+    "ola": 88.85,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1111713616513732698/OneManDreameLMH.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1103300992369430528/VanwellLMH.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 208,
+"3330to60": 2.4,
+"333Handling": 103,
+
+"666TopSpeed": 210,
+"6660to60": 2.3,
+"666Handling": 107,
+
+"699TopSpeed": 210,
+"6990to60": 2.1,
+"699Handling": 111,
+
+"969TopSpeed": 213,
+"9690to60": 2.3,
+"969Handling": 111,
+
+"996TopSpeed": 213,
+"9960to60": 2.1,
+"996Handling": 107
+}

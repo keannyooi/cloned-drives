@@ -1,0 +1,49 @@
+{
+    "rq": 62,
+    "make": "Pontiac",
+    "model": "GTO Concept",
+    "modelYear": 1999,
+    "country": "US",
+    "topSpeed": 182,
+    "0to60": 4.5,
+    "handling": 80,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","Unique","Concept","The Americas Assault","Muscle Car","Visionary Road"],
+    "isPrize": false,
+	
+    "weight": 1680,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 90,
+    "ola": 93.33,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1101833068110684251/GTOConcept1999.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1101833894426325002/GTOConcept.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 185,
+"3330to60": 4.3,
+"333Handling": 83,
+
+"666TopSpeed": 188,
+"6660to60": 4,
+"666Handling": 85,
+
+"699TopSpeed": 188,
+"6990to60": 3.8,
+"699Handling": 89,
+
+"969TopSpeed": 191,
+"9690to60": 4,
+"969Handling": 89,
+
+"996TopSpeed": 191,
+"9960to60": 3.8,
+"996Handling": 85
+}

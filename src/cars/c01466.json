@@ -1,5 +1,5 @@
 {
-    "rq": 69,
+    "rq": 88,
     "make": [
         "Stapleton Auto Works",
         "Cadillac"
@@ -9,9 +9,9 @@
     "country": "US",
     "topSpeed": 164,
     "0to60": 2.2,
-    "handling": 32,
+    "handling": 30,
     "driveType": "4WD",
-    "tyreType": "Slick",
+    "tyreType": "Drag",
     "tags": [
         "Tuner",
         "Unique"
@@ -28,22 +28,26 @@
     "mra": 78.57,
     "ola": 90.91,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/947255037216833546/LSXcalade.png",
-    "333TopSpeed": 167,
-    "3330to60": 2.1,
-    "333Handling": 33,
-    "666TopSpeed": 170,
-    "6660to60": 2.0,
-    "666Handling": 34,
-    "996TopSpeed": 174,
-    "9960to60": 1.9,
-    "996Handling": 34,
-    "969TopSpeed": 174,
-    "9690to60": 2.0,
-    "969Handling": 36,
-    "699TopSpeed": 170,
-    "6990to60": 1.9,
-    "699Handling": 36,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1018184544068849794/Stapleton_Auto_Works_LSXcalade.png",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1101943443271467059/StapletonAutosLSXcalade.png",
+"333TopSpeed": 167,
+"3330to60": 2.1,
+"333Handling": 31,
+
+"666TopSpeed": 170,
+"6660to60": 2,
+"666Handling": 32,
+
+"699TopSpeed": 170,
+"6990to60": 1.9,
+"699Handling": 33,
+
+"969TopSpeed": 174,
+"9690to60": 2,
+"969Handling": 33,
+
+"996TopSpeed": 174,
+"9960to60": 1.9,
+"996Handling": 32,
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1101965944747728957/Stapleton.png",
     "creator": "Aqo"
 }

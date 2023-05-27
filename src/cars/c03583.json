@@ -1,0 +1,49 @@
+{
+    "rq": 81,
+    "make": "Exotic Rides",
+    "model": "W70",
+    "modelYear": 2016,
+    "country": "US",
+    "topSpeed": 200,
+    "0to60": 3.5,
+    "handling": 90,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Supercar", "The Americas Assault","Unique","Endless Summer"],
+    "isPrize": false,
+	
+    "weight": 1300,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 100,
+    "ola": 91.42,
+    "description": "GM engine, paired with a Porsche PDK and looking like a ferrari?",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1095755889761341560/ERW70.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095756814685061201/ERW70.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 203,
+"3330to60": 3.3,
+"333Handling": 93,
+
+"666TopSpeed": 205,
+"6660to60": 3.1,
+"666Handling": 96,
+
+"699TopSpeed": 205,
+"6990to60": 3,
+"699Handling": 100,
+
+"969TopSpeed": 208,
+"9690to60": 3.1,
+"969Handling": 100,
+
+"996TopSpeed": 208,
+"9960to60": 3,
+"996Handling": 96
+}

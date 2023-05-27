@@ -1,0 +1,49 @@
+{
+    "rq": 65,
+    "make": ["Dallara", "Fiat", "Abarth"],
+    "model": "Bertone Icsunonove",
+    "modelYear": 1975,
+    "country": "IT",
+    "topSpeed": 143,
+    "0to60": 4.3,
+    "handling": 87,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Endless Summer","Motorsport","Tuner","Unique","The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 700,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 70.49,
+    "ola": 83.55,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1095755275237073048/Icsunonove.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095756690412015738/Icsunonove.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 147,
+"3330to60": 4.1,
+"333Handling": 90,
+
+"666TopSpeed": 150,
+"6660to60": 3.9,
+"666Handling": 93,
+
+"699TopSpeed": 150,
+"6990to60": 3.7,
+"699Handling": 97,
+
+"969TopSpeed": 154,
+"9690to60": 3.9,
+"969Handling": 97,
+
+"996TopSpeed": 154,
+"9960to60": 3.7,
+"996Handling": 93
+}

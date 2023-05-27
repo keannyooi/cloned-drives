@@ -1,0 +1,49 @@
+{
+    "rq": 68,
+    "make": "Land Rover",
+    "model": "Defender 90 P400 MHEV",
+    "modelYear": 2020,
+    "country": "GB",
+    "topSpeed": 119,
+    "0to60": 5.7,
+    "handling": 66,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["Endless Summer","The Midlands Cruise","Eco-Friendly"],
+    "isPrize": false,
+	
+    "weight": 2170,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 53.99,
+    "ola": 72.14,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1104774898800398376/90P400MHEVDefender20.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1104778692892295178/P40090.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 123,
+"3330to60": 5.4,
+"333Handling": 68,
+
+"666TopSpeed": 128,
+"6660to60": 5.1,
+"666Handling": 70,
+
+"699TopSpeed": 128,
+"6990to60": 4.8,
+"699Handling": 73,
+
+"969TopSpeed": 132,
+"9690to60": 5.1,
+"969Handling": 73,
+
+"996TopSpeed": 132,
+"9960to60": 4.8,
+"996Handling": 70
+}

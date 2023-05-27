@@ -1,0 +1,52 @@
+{
+    "rq": 88,
+    "make": "Volkswagen",
+    "model": "Golf Rallye G60 Gr.2",
+    "modelYear": 1990,
+    "country": "DE",
+    "topSpeed": 130,
+    "0to60": 4.4,
+    "handling": 81,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["Motorsport", "Hot Hatch", "Unique","The Tyrol Tour: Remix","Endless Summer"],
+    "isPrize": false,
+
+
+    "weight": 1103,
+    "gc": "Medium",
+    "seatCount":1,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 61.11,
+    "ola": 88.64,
+    "description": "The ultimate rally mk2.",
+
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/959128211801915422/GolfRallyeG60GrA.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1054084458384470107/G60grA.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 134,
+    "3330to60": 4.2,
+    "333Handling": 84,
+
+    "666TopSpeed": 138,
+    "6660to60": 4.0, 
+    "666Handling": 86,
+
+    "996TopSpeed": 142,
+    "9960to60": 3.7,
+    "996Handling": 86,
+
+    "969TopSpeed": 142,
+    "9690to60": 4.0,
+    "969Handling": 90,
+
+    "699TopSpeed": 138,
+    "6990to60": 3.7,
+    "699Handling": 90
+}

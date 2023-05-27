@@ -1,0 +1,49 @@
+{
+    "rq": 90,
+    "make": "BMW",
+    "model": "XM Red Label",
+    "modelYear": 2023,
+    "country": "DE",
+    "topSpeed": 180,
+    "0to60": 3.6,
+    "handling": 89,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","The Tyrol Tour: Remix","Eco-Friendly"],
+    "isPrize": false,
+	
+    "weight": 2749,
+    "gc": "High",
+    "seatCount": 7,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Hybrid",
+    "mra": 81.55,
+    "ola": 77.89,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1110671737445691422/XMRedBMV.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1110672745806692352/XMRedBMV.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 183,
+"3330to60": 3.4,
+"333Handling": 92,
+
+"666TopSpeed": 186,
+"6660to60": 3.2,
+"666Handling": 95,
+
+"699TopSpeed": 186,
+"6990to60": 3.1,
+"699Handling": 99,
+
+"969TopSpeed": 189,
+"9690to60": 3.2,
+"969Handling": 99,
+
+"996TopSpeed": 189,
+"9960to60": 3.1,
+"996Handling": 95
+}

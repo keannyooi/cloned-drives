@@ -135,7 +135,7 @@ class BotError {
             },
             timestamp: new Date().toISOString()
         }
-        return bugReportsChannel.send({ content: this.unknownSource ? "<@!494120116422967325>" : null, embeds: [reportMessage] });
+        return bugReportsChannel.send({ content: this.unknownSource ? "<@!209038568138604546>" : null, embeds: [reportMessage] });
     }
 }
 

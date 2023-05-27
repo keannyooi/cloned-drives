@@ -1,0 +1,49 @@
+{
+    "rq": 81,
+    "make": ["Fiat-Abarth", "Fiat", "Abarth"],
+    "model": "X1/9 Prototipo",
+    "modelYear": 1973,
+    "country": "IT",
+    "topSpeed": 127,
+    "0to60": 5.0,
+    "handling": 83,
+    "driveType": "RWD",
+    "tyreType": "Off-Road",
+    "tags": ["Endless Summer","Unique","Motorsport","The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 750,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 59.89,
+    "ola": 75.3,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1095755584550207619/Abarthx1-9Prototupo.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095756750008877256/Abarth1-9protoralli.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 131,
+"3330to60": 4.8,
+"333Handling": 86,
+
+"666TopSpeed": 135,
+"6660to60": 4.5,
+"666Handling": 88,
+
+"699TopSpeed": 135,
+"6990to60": 4.3,
+"699Handling": 92,
+
+"969TopSpeed": 139,
+"9690to60": 4.5,
+"969Handling": 92,
+
+"996TopSpeed": 139,
+"9960to60": 4.3,
+"996Handling": 88
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 87,
+    "make": "Jaguar",
+    "model": "XJ220S TWR",
+    "modelYear": 1994,
+    "country": "GB",
+    "topSpeed": 229,
+    "0to60": 3.3,
+    "handling": 92,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","Ultra Expensive","Unique","Track Day","The Midlands Cruise","Supercar"],
+    "isPrize": false,
+	
+    "weight": 1052,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 110,
+    "ola": 96.96,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1095755717463507047/XJ220TWR.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095756763573272576/XJ220TWR.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 231,
+"3330to60": 3.1,
+"333Handling": 95,
+
+"666TopSpeed": 234,
+"6660to60": 3,
+"666Handling": 98,
+
+"699TopSpeed": 234,
+"6990to60": 2.8,
+"699Handling": 102,
+
+"969TopSpeed": 236,
+"9690to60": 3,
+"969Handling": 102,
+
+"996TopSpeed": 236,
+"9960to60": 2.8,
+"996Handling": 98
+}

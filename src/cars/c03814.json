@@ -1,0 +1,49 @@
+{
+    "rq": 73,
+    "make": ["Hangout Customs", "Fiat"],
+    "model": "X1/9 SW20",
+    "modelYear": 2009,
+    "country": "JP",
+    "topSpeed": 169,
+    "0to60": 4.0,
+    "handling": 88,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","Tuner","Unique","Street Racer","The Amplification of Asia","RestoMod"],
+    "isPrize": false,
+	
+    "weight": 720,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 78.35,
+    "ola": 80,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1095755366089904179/Hangoutx1-9.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095756705436020806/Hangout1-9.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 172,
+"3330to60": 3.8,
+"333Handling": 91,
+
+"666TopSpeed": 175,
+"6660to60": 3.6,
+"666Handling": 94,
+
+"699TopSpeed": 175,
+"6990to60": 3.4,
+"699Handling": 98,
+
+"969TopSpeed": 178,
+"9690to60": 3.6,
+"969Handling": 98,
+
+"996TopSpeed": 178,
+"9960to60": 3.4,
+"996Handling": 94
+}

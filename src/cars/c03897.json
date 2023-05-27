@@ -1,0 +1,49 @@
+{
+    "rq": 67,
+    "make": "Maserati",
+    "model": "250F T2 V12",
+    "modelYear": 1957,
+    "country": "IT",
+    "topSpeed": 190,
+    "0to60": 3.9,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","Motorsport","Unique","Ultra Expensive","The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 650,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 87.05,
+    "ola": 106.58,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1104776754859606107/Maserati250FT2V12.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1104779685663096954/FT2V12250.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 193,
+"3330to60": 3.7,
+"333Handling": 80,
+
+"666TopSpeed": 195,
+"6660to60": 3.5,
+"666Handling": 82,
+
+"699TopSpeed": 195,
+"6990to60": 3.3,
+"699Handling": 85,
+
+"969TopSpeed": 198,
+"9690to60": 3.5,
+"969Handling": 85,
+
+"996TopSpeed": 198,
+"9960to60": 3.3,
+"996Handling": 82
+}

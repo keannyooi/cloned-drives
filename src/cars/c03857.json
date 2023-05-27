@@ -1,0 +1,49 @@
+{
+    "rq": 60,
+    "make": "Bentley",
+    "model": "Continental GT",
+    "modelYear": 2003,
+    "country": "GB",
+    "topSpeed": 196,
+    "0to60": 4.8,
+    "handling": 77,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","The Midlands Cruise","Grand Tourer"],
+    "isPrize": false,
+	
+    "weight": 2385,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 71.64,
+    "ola": 75,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1104773914464366682/contiGT2003.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1104777571830337616/ContiGT2003.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 199,
+"3330to60": 4.6,
+"333Handling": 80,
+
+"666TopSpeed": 201,
+"6660to60": 4.3,
+"666Handling": 82,
+
+"699TopSpeed": 201,
+"6990to60": 4.1,
+"699Handling": 85,
+
+"969TopSpeed": 204,
+"9690to60": 4.3,
+"969Handling": 85,
+
+"996TopSpeed": 204,
+"9960to60": 4.1,
+"996Handling": 82
+}

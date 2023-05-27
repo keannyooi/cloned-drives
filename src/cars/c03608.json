@@ -1,0 +1,49 @@
+{
+    "rq": 38,
+    "make": "Aston Martin",
+    "model": "DB4 \"Vantage GT\"",
+    "modelYear": 1962,
+    "country": "GB",
+    "topSpeed": 155,
+    "0to60": 6.7,
+    "handling": 71,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","The Midlands Cruise","Unique","Street Racer"],
+    "isPrize": false,
+	
+    "weight": 1354,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 72.04,
+    "ola": 95.52,
+    "description": "The DB4 Vantage was already a rather special car as standard, but if you were happy to pay, it was possible so specify the fitting of  a GT spec engine, more normally seen in the 'gentleman's racer' the DB4 GT.  The 3.7 litre six cylinder complete with triple Weber 45 DCOE carburettors and twin plugs cylinder head could be fitted for the trifling additional sum of £350.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1096819086710821044/DB4VantageGT.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1096820666998738974/DB4vantageGT.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 158,
+"3330to60": 6.4,
+"333Handling": 73,
+
+"666TopSpeed": 162,
+"6660to60": 6,
+"666Handling": 76,
+
+"699TopSpeed": 162,
+"6990to60": 5.7,
+"699Handling": 79,
+
+"969TopSpeed": 165,
+"9690to60": 6,
+"969Handling": 79,
+
+"996TopSpeed": 165,
+"9960to60": 5.7,
+"996Handling": 76
+}

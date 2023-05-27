@@ -1,0 +1,49 @@
+{
+    "rq": 33,
+    "make": "Aston Martin",
+    "model": "DB5 Goldfinger Continuation",
+    "modelYear": 2020,
+    "country": "GB",
+    "topSpeed": 148,
+    "0to60": 7.1,
+    "handling": 69,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","RestoMod","Ultra Expensive","Unique","The Midlands Cruise","Grand Tourer"],
+    "isPrize": false,
+	
+    "weight": 1630,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 61.2,
+    "ola": 84.5,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1103323048314159112/DB5GoldfingerConti.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1103324055932764260/DB5goldfinger.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 152,
+"3330to60": 6.7,
+"333Handling": 71,
+
+"666TopSpeed": 155,
+"6660to60": 6.4,
+"666Handling": 74,
+
+"699TopSpeed": 155,
+"6990to60": 6,
+"699Handling": 77,
+
+"969TopSpeed": 159,
+"9690to60": 6.4,
+"969Handling": 77,
+
+"996TopSpeed": 159,
+"9960to60": 6,
+"996Handling": 74
+}

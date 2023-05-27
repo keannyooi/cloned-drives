@@ -1,0 +1,49 @@
+{
+    "rq": 49,
+    "make": "Maserati",
+    "model": "250F Streamliner",
+    "modelYear": 1955,
+    "country": "IT",
+    "topSpeed": 220,
+    "0to60": 5.5,
+    "handling": 73,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","Motorsport","Unique","Ultra Expensive","The Tyrol Tour: Remix"],
+    "isPrize": true,
+	
+    "weight": 860,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 68.51,
+    "ola": 100,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1104776716074885211/Maserati250Fstreamliner.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1104779662783168552/Streamliner250.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 222,
+"3330to60": 5.2,
+"333Handling": 75,
+
+"666TopSpeed": 225,
+"6660to60": 5,
+"666Handling": 78,
+
+"699TopSpeed": 225,
+"6990to60": 4.7,
+"699Handling": 81,
+
+"969TopSpeed": 227,
+"9690to60": 5,
+"969Handling": 81,
+
+"996TopSpeed": 227,
+"9960to60": 4.7,
+"996Handling": 78
+}

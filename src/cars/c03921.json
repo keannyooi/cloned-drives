@@ -1,0 +1,49 @@
+{
+    "rq": 84,
+    "make": "Acura",
+    "model": "NSX Concept",
+    "modelYear": 2012,
+    "country": "US",
+    "topSpeed": 190,
+    "0to60": 3.4,
+    "handling": 91,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer", "Eco-Friendly", "Concept", "Supercar", "The Americas Assault","Visionary Road"],
+    "isPrize": false,
+	
+    "weight": 1650,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Hybrid",
+    "mra": 80.00,
+    "ola": 85.00,
+    "description": "None.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1106238262336557076/Acura_NSX_Concept_2012.png",
+	"racehud": "https://media.discordapp.net/attachments/1077293403668234340/1106246689926418464/Acura_NSX_Concept_2012_Hud.png",
+    "creator": "DodgeDemon",
+
+"333TopSpeed": 193,
+"3330to60": 3.2,
+"333Handling": 94,
+
+"666TopSpeed": 195,
+"6660to60": 3.1,
+"666Handling": 97,
+
+"699TopSpeed": 195,
+"6990to60": 2.9,
+"699Handling": 101,
+
+"969TopSpeed": 198,
+"9690to60": 3.1,
+"969Handling": 101,
+
+"996TopSpeed": 198,
+"9960to60": 2.9,
+"996Handling": 97
+}

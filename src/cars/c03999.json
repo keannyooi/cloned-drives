@@ -1,0 +1,50 @@
+{
+    "rq": 70,
+    "make": ["Lingenfelter", "Chevrolet"],
+    "model": "Chevrolet SS",
+    "modelYear": 2015,
+    "country": "US",
+    "topSpeed": 160,
+    "0to60": 3.7,
+    "handling": 86,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Americas Assault", "Tuner","Endless Summer"],
+    "isPrize": false,
+
+
+    "weight": 1806,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 80.43,
+    "ola": 86.48,
+    "description": "Lingenfelter stuck a Magnuson supercharger and called it a day.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1108122492805062696/A.ChevySSLing.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1108122984721424435/ssfinger.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 163,
+    "3330to60": 3.5,
+    "333Handling": 89,
+
+    "666TopSpeed": 167,
+    "6660to60": 3.3, 
+    "666Handling": 92,
+
+    "996TopSpeed": 170,
+    "9960to60": 3.1,
+    "996Handling": 92,
+
+    "969TopSpeed": 170,
+    "9690to60": 3.3,
+    "969Handling": 95,
+
+    "699TopSpeed": 167,
+    "6990to60": 3.1,
+    "699Handling": 95
+}

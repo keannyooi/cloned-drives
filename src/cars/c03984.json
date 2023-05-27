@@ -1,0 +1,49 @@
+{
+    "rq": 94,
+    "make": "Hennessey",
+    "model": "Venom GT",
+    "modelYear": 2011,
+    "country": "US",
+    "topSpeed": 272,
+    "0to60": 2.9,
+    "handling": 92,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","Unique","Ultra Expensive","The Americas Assault","Hypercar"],
+    "isPrize": false,
+	
+    "weight": 1244,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 105.95,
+    "ola": 89.65,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1108734388449067108/HenVenomGT11.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1108734654661525624/HenVenomGT11.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 274,
+"3330to60": 2.8,
+"333Handling": 95,
+
+"666TopSpeed": 276,
+"6660to60": 2.6,
+"666Handling": 98,
+
+"699TopSpeed": 276,
+"6990to60": 2.5,
+"699Handling": 102,
+
+"969TopSpeed": 278,
+"9690to60": 2.6,
+"969Handling": 102,
+
+"996TopSpeed": 278,
+"9960to60": 2.5,
+"996Handling": 98
+}

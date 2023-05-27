@@ -1,0 +1,49 @@
+{
+    "rq": 37,
+    "make": "Lamborghini",
+    "model": "350 GT",
+    "modelYear": 1964,
+    "country": "IT",
+    "topSpeed": 156,
+    "0to60": 6.8,
+    "handling": 68,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Grand Tourer","The Tyrol Tour: Remix","Endless Summer"],
+    "isPrize": false,
+	
+    "weight": 1450,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 69.39,
+    "ola": 73.53,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1101866876038033448/Lambo350GT.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1101867339613491231/Lambo350GT.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 161,
+"3330to60": 6.5,
+"333Handling": 70,
+
+"666TopSpeed": 165,
+"6660to60": 6.1,
+"666Handling": 72,
+
+"699TopSpeed": 165,
+"6990to60": 5.8,
+"699Handling": 75,
+
+"969TopSpeed": 168,
+"9690to60": 6.1,
+"969Handling": 75,
+
+"996TopSpeed": 168,
+"9960to60": 5.8,
+"996Handling": 72
+}

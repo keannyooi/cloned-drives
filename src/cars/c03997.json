@@ -1,0 +1,49 @@
+{
+    "rq": 56,
+    "make": "Hurst",
+    "model": "Baja Boot",
+    "modelYear": 1967,
+    "country": "US",
+    "topSpeed": 140,
+    "0to60": 6.9,
+    "handling": 59,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["Endless Summer", "Unique", "Innovative", "Motorsport", "The Americas Assault"],
+    "isPrize": true,
+	
+    "weight": 1565,
+    "gc": "High",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 51.49,
+    "ola": 81.16,
+    "description": "Steve McQueen’s Baja 1000 beast that was years ahead of it’s time.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1110064603527917678/Hurst_Baja_Boot_1967.png",
+	"racehud": "https://media.discordapp.net/attachments/1077293403668234340/1110066027909353512/Hurst_Baja_Boot_1967_Hud.png",
+    "creator": "DodgeDemon",
+
+"333TopSpeed": 144,
+"3330to60": 6.6,
+"333Handling": 61,
+
+"666TopSpeed": 147,
+"6660to60": 6.2,
+"666Handling": 63,
+
+"699TopSpeed": 147,
+"6990to60": 5.9,
+"699Handling": 65,
+
+"969TopSpeed": 151,
+"9690to60": 6.2,
+"969Handling": 65,
+
+"996TopSpeed": 151,
+"9960to60": 5.9,
+"996Handling": 63
+}

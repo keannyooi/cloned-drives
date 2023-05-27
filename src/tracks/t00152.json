@@ -1,0 +1,18 @@
+{
+	"trackName": "Beach 1 Mile Drag (Sand)",
+	"weather": "Sunny",
+	"surface": "Sand",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://cdn.discordapp.com/attachments/800047734035841037/1101622473457414225/RNPDNBJLNNCS7AZR3PAD4LSOSQ.png",
+	"map": "https://media.discordapp.net/attachments/716917404868935691/806793122754330654/unknown.png",
+	
+	"specsDistr": {
+		"topSpeed": 50,
+		"0to60": 100,
+		"handling": 0,
+		"weight": 0,
+		"mra": 100,
+		"ola": 0
+	}
+}

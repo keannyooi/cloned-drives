@@ -1,0 +1,49 @@
+{
+    "rq": 65,
+    "make": "Nissan",
+    "model": "MID4",
+    "modelYear": 1985,
+    "country": "JP",
+    "topSpeed": 155,
+    "0to60": 5.1,
+    "handling": 80,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","Unique","Concept","Street Racer","The Amplification of Asia"],
+    "isPrize": false,
+	
+    "weight": 1230,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 62.96,
+    "ola": 78.43,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1103315755170287707/NissanMID4.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1103315789882343485/MID4.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 158,
+"3330to60": 4.8,
+"333Handling": 83,
+
+"666TopSpeed": 162,
+"6660to60": 4.6,
+"666Handling": 85,
+
+"699TopSpeed": 162,
+"6990to60": 4.3,
+"699Handling": 89,
+
+"969TopSpeed": 165,
+"9690to60": 4.6,
+"969Handling": 89,
+
+"996TopSpeed": 165,
+"9960to60": 4.3,
+"996Handling": 85
+}

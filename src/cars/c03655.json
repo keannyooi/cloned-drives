@@ -1,0 +1,52 @@
+{
+    "rq": 103,
+    "make": "Volkswagen",
+    "model": "Golf Pikes Peak",
+    "modelYear": 1987,
+    "country": "DE",
+    "topSpeed": 115,
+    "0to60": 3.3,
+    "handling": 87,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["Motorsport","Hot Hatch", "Unique","Endless Summer","The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+
+    "weight": 1020,
+    "gc": "Medium",
+    "seatCount":1,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 74.16,
+    "ola": 93.94,
+    "description": "2 engines, double the speed.",
+
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/959128175798018088/GolfPikesPeak.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1054084493159436299/PikesPeak.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 120,
+    "3330to60": 3.1,
+    "333Handling": 90,
+
+    "666TopSpeed": 124,
+    "6660to60": 3.0, 
+    "666Handling": 93,
+
+    "996TopSpeed": 129,
+    "9960to60": 2.8,
+    "996Handling": 93,
+
+    "969TopSpeed": 129,
+    "9690to60": 3.0,
+    "969Handling": 97,
+
+    "699TopSpeed": 124,
+    "6990to60": 2.8,
+    "699Handling": 97
+}

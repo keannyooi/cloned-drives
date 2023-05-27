@@ -1,0 +1,49 @@
+{
+    "rq": 39,
+    "make": "Lamborghini",
+    "model": "400 GT Monza",
+    "modelYear": 1966,
+    "country": "IT",
+    "topSpeed": 168,
+    "0to60": 6.0,
+    "handling": 70,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","Unique","Ultra Expensive","The Tyrol Tour: Remix","Grand Tourer"],
+    "isPrize": true,
+	
+    "weight": 1425,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 74.52,
+    "ola": 73.25,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1101867006145335398/Lambo400GTMonza.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1101867473386622986/Lambo400Monza.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 171,
+"3330to60": 5.7,
+"333Handling": 72,
+
+"666TopSpeed": 174,
+"6660to60": 5.4,
+"666Handling": 75,
+
+"699TopSpeed": 174,
+"6990to60": 5.1,
+"699Handling": 78,
+
+"969TopSpeed": 177,
+"9690to60": 5.4,
+"969Handling": 78,
+
+"996TopSpeed": 177,
+"9960to60": 5.1,
+"996Handling": 75
+}

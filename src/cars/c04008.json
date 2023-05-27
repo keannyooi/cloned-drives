@@ -1,0 +1,49 @@
+{
+    "rq": 54,
+    "make": ["RTR", "Ford"],
+    "model": "Bronco Fun-Runner",
+    "modelYear": 2021,
+    "country": "US",
+    "topSpeed": 106,
+    "0to60": 7.3,
+    "handling": 65,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["Endless Summer", "Tuner", "Extreme Juggernaut", "The Americas Assault"],
+    "isPrize": false,
+	
+    "weight": 2150,
+    "gc": "High",
+    "seatCount": 4,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 52.14,
+    "ola": 60.27,
+    "description": "RTR's base-engined beast.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1106246155920216135/RTR_Bronco_Fun_Runner_2021.png",
+	"racehud": "https://media.discordapp.net/attachments/1077293403668234340/1106252725295005726/RTR_Bronco_Fun_Runner_2021_Hud.png",
+    "creator": "DodgeDemon",
+
+"333TopSpeed": 111,
+"3330to60": 6.9,
+"333Handling": 67,
+
+"666TopSpeed": 116,
+"6660to60": 6.6,
+"666Handling": 69,
+
+"699TopSpeed": 116,
+"6990to60": 6.2,
+"699Handling": 72,
+
+"969TopSpeed": 121,
+"9690to60": 6.6,
+"969Handling": 72,
+
+"996TopSpeed": 121,
+"9960to60": 6.2,
+"996Handling": 69
+}

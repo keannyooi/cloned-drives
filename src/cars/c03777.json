@@ -1,0 +1,49 @@
+{
+    "rq": 80,
+    "make": "Mitsubishi",
+    "model": "Lancer Evolution X John Easton Edition",
+    "modelYear": 2015,
+    "country": "JP",
+    "topSpeed": 150,
+    "0to60": 4.2,
+    "handling": 90,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","The Amplification of Asia","Street Racer"],
+    "isPrize": false,
+	
+    "weight": 1590,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 73.47,
+    "ola": 83.45,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1101845517517987840/evo10johneastern.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1101846112119300166/Evo10EasternMitsusbishi.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 153,
+"3330to60": 4,
+"333Handling": 93,
+
+"666TopSpeed": 157,
+"6660to60": 3.8,
+"666Handling": 96,
+
+"699TopSpeed": 157,
+"6990to60": 3.6,
+"699Handling": 100,
+
+"969TopSpeed": 160,
+"9690to60": 3.8,
+"969Handling": 100,
+
+"996TopSpeed": 160,
+"9960to60": 3.6,
+"996Handling": 96
+}

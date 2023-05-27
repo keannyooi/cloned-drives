@@ -1,0 +1,49 @@
+{
+    "rq": 71,
+    "make": "Audi",
+    "model": "RS 4 Avant",
+    "modelYear": 2012,
+    "country": "DE",
+    "topSpeed": 174,
+    "0to60": 4.4,
+    "handling": 87,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 1795,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 77.89,
+    "ola": 76.88,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1101475268033519656/CD_Audi_RS4_Avant.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1101475698104860733/RS4Avant2012.png",
+    "creator": "Exist",
+
+"333TopSpeed": 177,
+"3330to60": 4.2,
+"333Handling": 90,
+
+"666TopSpeed": 180,
+"6660to60": 4,
+"666Handling": 93,
+
+"699TopSpeed": 180,
+"6990to60": 3.7,
+"699Handling": 97,
+
+"969TopSpeed": 183,
+"9690to60": 4,
+"969Handling": 97,
+
+"996TopSpeed": 183,
+"9960to60": 3.7,
+"996Handling": 93
+}

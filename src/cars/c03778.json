@@ -1,0 +1,49 @@
+{
+    "rq": 71,
+    "make": "Mitsubishi",
+    "model": "Lancer Evolution X MR-T",
+    "modelYear": 2010,
+    "country": "JP",
+    "topSpeed": 157,
+    "0to60": 5.0,
+    "handling": 87,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","The Amplification of Asia","Street Racer"],
+    "isPrize": false,
+	
+    "weight": 1620,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 69.99,
+    "ola": 75.67,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1101845251586535465/evo10MRTouring.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1101845991247859792/Evo10MRTouringMitsusbishi.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 160,
+"3330to60": 4.8,
+"333Handling": 90,
+
+"666TopSpeed": 164,
+"6660to60": 4.5,
+"666Handling": 93,
+
+"699TopSpeed": 164,
+"6990to60": 4.3,
+"699Handling": 97,
+
+"969TopSpeed": 167,
+"9690to60": 4.5,
+"969Handling": 97,
+
+"996TopSpeed": 167,
+"9960to60": 4.3,
+"996Handling": 93
+}

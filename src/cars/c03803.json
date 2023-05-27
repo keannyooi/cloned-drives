@@ -1,0 +1,49 @@
+{
+    "rq": 53,
+    "make": ["Carlsson","Mercedes-AMG", "Mercedes-Benz"],
+    "model": "CG63 AMG 6x6",
+    "modelYear": 2014,
+    "country": "DE",
+    "topSpeed": 100,
+    "0to60": 7.5,
+    "handling": 64,
+    "driveType": "AWD",
+    "tyreType": "Off-Road",
+    "tags": ["Endless Summer","Unique","Ultra Expensive","Extreme Juggernaut","The Tyrol Tour: Remix","Tuner"],
+    "isPrize": false,
+	
+    "weight": 4160,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "Pickup",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 82.5,
+    "ola": 65,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1103299878685261894/CarlssonG6x6.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1103300778279571537/carlsson6x6.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 105,
+"3330to60": 7.1,
+"333Handling": 66,
+
+"666TopSpeed": 110,
+"6660to60": 6.8,
+"666Handling": 68,
+
+"699TopSpeed": 110,
+"6990to60": 6.4,
+"699Handling": 71,
+
+"969TopSpeed": 116,
+"9690to60": 6.8,
+"969Handling": 71,
+
+"996TopSpeed": 116,
+"9960to60": 6.4,
+"996Handling": 68
+}

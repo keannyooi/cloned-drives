@@ -1,11 +1,11 @@
 {
-    "rq": 84,
+    "rq": 85,
     "make": "Nissan",
-    "model": "R390 GT1 Road Car",
+    "model": "R390 GT1 Longtail Road Car",
     "modelYear": 1998,
     "country": "JP",
     "topSpeed": 220,
-    "0to60": 3.5,
+    "0to60": 3.4,
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Performance",
@@ -27,26 +27,26 @@
     "mra": 109.66,
     "ola": 82.55,
     "description": "A unicorn Le Mans racecar built for the road.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/1068515164695035975/R390GT1Roadcar.png",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1109063885073428551/R390GT1LTRoadcar.png",
 
     "333TopSpeed": 222,
-    "3330to60": 3.3,
+    "3330to60": 3.2,
     "333Handling": 94,
 
     "666TopSpeed": 225,
-    "6660to60": 3.1,
+    "6660to60": 3.0,
     "666Handling": 97,
 
     "699TopSpeed": 225,
-    "6990to60": 3.0,
+    "6990to60": 2.9,
     "699Handling": 101,
 
     "969TopSpeed": 227,
-    "9690to60": 3.1,
+    "9690to60": 3.0,
     "969Handling": 101,
 
     "996TopSpeed": 227,
-    "9960to60": 3.0,
+    "9960to60": 2.9,
     "996Handling": 97,
     
     "racehud": "https://media.discordapp.net/attachments/995376525119586356/1068515801713356800/R390Roaf.png",

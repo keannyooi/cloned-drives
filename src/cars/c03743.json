@@ -1,0 +1,49 @@
+{
+    "rq": 95,
+    "make": "Bentley",
+    "model": "Bentayga S",
+    "modelYear": 2021,
+    "country": "GB",
+    "topSpeed": 180,
+    "0to60": 3.7,
+    "handling": 82,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Endless Summer","The Midlands Cruise"],
+    "isPrize": false,
+	
+    "weight": 2415,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 74.47,
+    "ola": 78.5,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1101515434223743037/BentaygaS2021.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1101515676415447160/BentaygaS.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 183,
+"3330to60": 3.5,
+"333Handling": 85,
+
+"666TopSpeed": 186,
+"6660to60": 3.3,
+"666Handling": 87,
+
+"699TopSpeed": 186,
+"6990to60": 3.1,
+"699Handling": 91,
+
+"969TopSpeed": 189,
+"9690to60": 3.3,
+"969Handling": 91,
+
+"996TopSpeed": 189,
+"9960to60": 3.1,
+"996Handling": 87
+}

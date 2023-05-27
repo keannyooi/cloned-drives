@@ -1,0 +1,49 @@
+{
+    "rq": 94,
+    "make": ["Hennessey", "Ram"],
+    "model": "Mammoth 900 TRX",
+    "modelYear": 2021,
+    "country": "US",
+    "topSpeed": 128,
+    "0to60": 3.4,
+    "handling": 71,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["Tuner", "Extreme Juggernaut", "The Americas Assault","Endless Summer"],
+    "isPrize": true,
+	
+    "weight": 2930,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "Pickup",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 75.55,
+    "ola": 70.58,
+    "description": "None.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1085595602181689424/Hennessey_Mammoth_900_TRX_2021.png",
+	"racehud": "https://media.discordapp.net/attachments/1077293403668234340/1085603060539199578/Hennessey_Mammoth_900_TRX_2021_Hud.png",
+    "creator": "DodgeDemon",
+
+"333TopSpeed": 132,
+"3330to60": 3.2,
+"333Handling": 73,
+
+"666TopSpeed": 136,
+"6660to60": 3.1,
+"666Handling": 76,
+
+"699TopSpeed": 136,
+"6990to60": 2.9,
+"699Handling": 79,
+
+"969TopSpeed": 140,
+"9690to60": 3.1,
+"969Handling": 79,
+
+"996TopSpeed": 140,
+"9960to60": 2.9,
+"996Handling": 76
+}

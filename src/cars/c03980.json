@@ -1,0 +1,49 @@
+{
+    "rq": 98,
+    "make": "Glickenhaus",
+    "model": "SCG 007 LMH",
+    "modelYear": 2021,
+    "country": "US",
+    "topSpeed": 205,
+    "0to60": 2.4,
+    "handling": 100,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Endless Summer", "Motorsport", "The Americas Assault"],
+    "isPrize": true,
+	
+    "weight": 1050,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Mixed",
+    "fuelType": "Hybrid",
+    "mra": 118.55,
+    "ola": 88.92,
+    "description": "After sitting the bench for decades Glickenhaus aims to return the United States to the Le Mans podium, and their proven 007 hypercar platform is just getting started...",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1111720405263196261/demonds.png",
+	"racehud": "https://media.discordapp.net/attachments/1077293403668234340/1110066539614453802/Glickenhaus_SCG_007_LMH_2021_Hud.png",
+    "creator": "DodgeDemon",
+
+"333TopSpeed": 208,
+"3330to60": 2.3,
+"333Handling": 103,
+
+"666TopSpeed": 210,
+"6660to60": 2.2,
+"666Handling": 107,
+
+"699TopSpeed": 210,
+"6990to60": 2.0,
+"699Handling": 111,
+
+"969TopSpeed": 213,
+"9690to60": 2.2,
+"969Handling": 111,
+
+"996TopSpeed": 213,
+"9960to60": 2.0,
+"996Handling": 107
+}

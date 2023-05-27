@@ -1,0 +1,49 @@
+{
+    "rq": 93,
+    "make": "Acura",
+    "model": "NSX Type S Pikes Peak",
+    "modelYear": 2022,
+    "country": "US",
+    "topSpeed": 200,
+    "0to60": 2.8,
+    "handling": 95,
+    "driveType": "4WD",
+    "tyreType": "Slick",
+    "tags": ["Endless Summer", "Motorsport", "Supercar", "The Americas Assault"],
+    "isPrize": false,
+	
+    "weight": 1550,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 98.00,
+    "ola": 89.65,
+    "description": "None.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1106239320412672070/Acura_NSX_Type_S_Pikes_Peak_2022.png",
+	"racehud": "https://media.discordapp.net/attachments/1077293403668234340/1106247801895133307/Acura_NSX_Type_S_Pikes_Peak_2022_Hud.png",
+    "creator": "DodgeDemon",
+
+"333TopSpeed": 203,
+"3330to60": 2.7,
+"333Handling": 98,
+
+"666TopSpeed": 205,
+"6660to60": 2.5,
+"666Handling": 101,
+
+"699TopSpeed": 205,
+"6990to60": 2.4,
+"699Handling": 105,
+
+"969TopSpeed": 208,
+"9690to60": 2.5,
+"969Handling": 105,
+
+"996TopSpeed": 208,
+"9960to60": 2.4,
+"996Handling": 101
+}

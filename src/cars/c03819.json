@@ -1,0 +1,49 @@
+{
+    "rq": 35,
+    "make": "Lamborghini",
+    "model": "350 GTS",
+    "modelYear": 1965,
+    "country": "IT",
+    "topSpeed": 150,
+    "0to60": 6.9,
+    "handling": 67,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","The Tyrol Tour: Remix","Grand Tourer"],
+    "isPrize": false,
+	
+    "weight": 1510,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 67.73,
+    "ola": 75.62,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1101866916244635840/Lambo350GTS.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1101867372840747008/Lambo350GTS.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 153,
+"3330to60": 6.6,
+"333Handling": 69,
+
+"666TopSpeed": 157,
+"6660to60": 6.2,
+"666Handling": 71,
+
+"699TopSpeed": 157,
+"6990to60": 5.9,
+"699Handling": 74,
+
+"969TopSpeed": 160,
+"9690to60": 6.2,
+"969Handling": 74,
+
+"996TopSpeed": 160,
+"9960to60": 5.9,
+"996Handling": 71
+}

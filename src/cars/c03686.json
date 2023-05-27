@@ -1,0 +1,49 @@
+{
+    "rq": 80,
+    "make": "Honda",
+    "model": "Mean Mower V2",
+    "modelYear": 2016,
+    "country": "GB",
+    "topSpeed": 152,
+    "0to60": 2.9,
+    "handling": 83,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Oddity", "Unique","Endless Summer","The Midlands Cruise"],
+    "isPrize": true,
+    
+    "weight": 218,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 85.55,
+    "ola": 68.97,
+    "description": "You've reached peak stupidity when you're gunning down the freeway at 150 mph in a FUCKING LAWNMOWER. ",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1051100103873675325/honda_mean_mower_v2.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1051100230684262501/honda_mean_mower_v2_hud.png",
+    "creator": "c6",
+
+    "333TopSpeed": 155,
+    "3330to60": 2.8,
+    "333Handling": 86,
+
+    "666TopSpeed": 159,
+    "6660to60": 2.6,
+    "666Handling": 88,
+
+    "996TopSpeed": 162,
+    "9960to60": 2.5,
+    "996Handling": 88,
+
+    "969TopSpeed": 162,
+    "9690to60": 2.6,
+    "969Handling": 92,
+
+    "699TopSpeed": 159,
+    "6990to60": 2.5,
+    "699Handling": 92
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 65,
+    "make": "Maserati",
+    "model": "250F T3 Piccolo",
+    "modelYear": 1958,
+    "country": "IT",
+    "topSpeed": 172,
+    "0to60": 4.1,
+    "handling": 78,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","Motorsport","Unique","Ultra Expensive","The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 545,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 74.55,
+    "ola": 98.44,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1104776785775829073/Maserati250FT3.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1104779722149339168/FT3250.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 175,
+"3330to60": 3.9,
+"333Handling": 81,
+
+"666TopSpeed": 178,
+"6660to60": 3.7,
+"666Handling": 83,
+
+"699TopSpeed": 178,
+"6990to60": 3.5,
+"699Handling": 87,
+
+"969TopSpeed": 181,
+"9690to60": 3.7,
+"969Handling": 87,
+
+"996TopSpeed": 181,
+"9960to60": 3.5,
+"996Handling": 83
+}

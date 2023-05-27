@@ -1,0 +1,53 @@
+{
+    "rq": 70,
+    "make": "Volkswagen",
+    "model": "Golf GTI 16v Rally",
+    "modelYear": 1987,
+    "country": "DE",
+    "topSpeed": 122,
+    "0to60": 5.8,
+    "handling": 78,
+    "driveType": "FWD",
+    "tyreType": "Off-Road",
+    "tags": ["Motorsport", "Hot Hatch", "Unique","Endless Summer","The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+
+    "weight": 940,
+    "gc": "Medium",
+    "seatCount":2,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 69.70,
+    "ola": 80.00,
+    "description": "Pre supercharger rally days.",
+
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/959128135650148433/GolfGTI1816vRally.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1054084514709778452/GTI16vRally.png",
+    "creator": "Andu",
+
+
+    "333TopSpeed": 126,
+    "3330to60": 5.5,
+    "333Handling": 81,
+
+    "666TopSpeed": 131,
+    "6660to60": 5.2, 
+    "666Handling": 83,
+
+    "996TopSpeed": 135,
+    "9960to60": 4.9,
+    "996Handling": 83,
+
+    "969TopSpeed": 135,
+    "9690to60": 5.2,
+    "969Handling": 87,
+
+    "699TopSpeed": 131,
+    "6990to60": 4.9,
+    "699Handling": 87
+}

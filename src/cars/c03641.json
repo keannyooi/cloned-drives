@@ -1,0 +1,52 @@
+{
+    "rq": 35,
+    "make": "Fiat",
+    "model": "Egea 1.4 RC3",
+    "modelYear": 2019,
+    "country": "TR",
+    "topSpeed": 130,
+    "0to60": 6.9,
+    "handling": 80,
+    "driveType": "FWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport","Endless Summer","The Rest of the Best: 2023"],
+    "isPrize": false,
+
+
+    "weight": 1000,
+    "gc": "Low",
+    "seatCount":2,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 59.48,
+    "ola": 70.43,
+    "description": "A little fan made rally league in Turkey added the right kind of spice to a very mondane Fiat.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1089619510031552704/EGEARC3.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1089619817499217990/EgeaRC3.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 134,
+    "3330to60": 6.6,
+    "333Handling": 83,
+    
+    "666TopSpeed": 138,
+    "6660to60": 6.2,
+    "666Handling": 85,
+    
+    "699TopSpeed": 138,
+    "6990to60": 5.9,
+    "699Handling": 89,
+    
+    "969TopSpeed": 142,
+    "9690to60": 6.2,
+    "969Handling": 89,
+    
+    "996TopSpeed": 142,
+    "9960to60": 5.9,
+    "996Handling": 85
+}

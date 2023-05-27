@@ -1,0 +1,49 @@
+{
+    "rq": 59,
+    "make": ["Mansory","Mercedes-AMG", "Mercedes-Benz"],
+    "model": "Xtreme 6x6",
+    "modelYear": 2014,
+    "country": "DE",
+    "topSpeed": 115,
+    "0to60": 6.8,
+    "handling": 65,
+    "driveType": "AWD",
+    "tyreType": "Off-Road",
+    "tags": ["Endless Summer","Unique","Ultra Expensive","Extreme Juggernaut","The Tyrol Tour: Remix","Tuner"],
+    "isPrize": true,
+	
+    "weight": 4290,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "Pickup",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 85.17,
+    "ola": 65,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1103299866723106847/MansoryG6x6.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1103300753923260557/Mansory6x6.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 120,
+"3330to60": 6.5,
+"333Handling": 67,
+
+"666TopSpeed": 124,
+"6660to60": 6.1,
+"666Handling": 69,
+
+"699TopSpeed": 124,
+"6990to60": 5.8,
+"699Handling": 72,
+
+"969TopSpeed": 129,
+"9690to60": 6.1,
+"969Handling": 72,
+
+"996TopSpeed": 129,
+"9960to60": 5.8,
+"996Handling": 69
+}

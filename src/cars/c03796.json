@@ -1,0 +1,49 @@
+{
+    "rq": 55,
+    "make": "Bentley",
+    "model": "Mulsanne",
+    "modelYear": 2010,
+    "country": "GB",
+    "topSpeed": 184,
+    "0to60": 5.2,
+    "handling": 73,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","The Midlands Cruise"],
+    "isPrize": false,
+	
+    "weight": 2742,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 68.49,
+    "ola": 77,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1103332530922463252/MulsanneBentley.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1103332943990116452/Mulsanne.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 187,
+"3330to60": 4.9,
+"333Handling": 75,
+
+"666TopSpeed": 190,
+"6660to60": 4.7,
+"666Handling": 78,
+
+"699TopSpeed": 190,
+"6990to60": 4.4,
+"699Handling": 81,
+
+"969TopSpeed": 192,
+"9690to60": 4.7,
+"969Handling": 81,
+
+"996TopSpeed": 192,
+"9960to60": 4.4,
+"996Handling": 78
+}

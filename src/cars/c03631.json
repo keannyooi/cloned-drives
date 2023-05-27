@@ -1,0 +1,49 @@
+{
+    "rq": 55,
+    "make": "Ram",
+    "model": "1500 5.7 eTorque 4x4 Crew Cab",
+    "modelYear": 2019,
+    "country": "US",
+    "topSpeed": 108,
+    "0to60": 6.3,
+    "handling": 68,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["The Americas Assault","Endless Summer"],
+    "isPrize": false,
+	
+    "weight": 2650,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "Pickup",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 60.27,
+    "ola": 68.47,
+    "description": "Hemi power with a touch of mild hybrid performance.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1085596908296355951/Ram_1500_5.7_eTorque_4x4_Crew_Cab_2019.png",
+	"racehud": "https://media.discordapp.net/attachments/1077293403668234340/1085604697223745546/Ram_1500_5.7_eTorque_4x4_Crew_Cab_2019_Hud.png",
+    "creator": "DodgeDemon",
+
+"333TopSpeed": 113,
+"3330to60": 6.0,
+"333Handling": 70,
+
+"666TopSpeed": 118,
+"6660to60": 5.7,
+"666Handling": 72,
+
+"699TopSpeed": 118,
+"6990to60": 5.4,
+"699Handling": 75,
+
+"969TopSpeed": 122,
+"9690to60": 5.7,
+"969Handling": 75,
+
+"996TopSpeed": 122,
+"9960to60": 5.4,
+"996Handling": 72
+}

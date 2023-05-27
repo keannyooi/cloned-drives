@@ -1,0 +1,49 @@
+{
+    "rq": 60,
+    "make": ["Auto Union", "Audi"],
+    "model": "Type C",
+    "modelYear": 1936,
+    "country": "DE",
+    "topSpeed": 195,
+    "0to60": 4.0,
+    "handling": 68,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","Motorsport","Unique","Ultra Expensive","The Tyrol Tour: Remix"],
+    "isPrize": true,
+	
+    "weight": 824,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 79.66,
+    "ola": 107.41,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1104776556112523365/AUTypeC.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1104779468372975696/TypeCAU.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 198,
+"3330to60": 3.8,
+"333Handling": 70,
+
+"666TopSpeed": 200,
+"6660to60": 3.6,
+"666Handling": 72,
+
+"699TopSpeed": 200,
+"6990to60": 3.4,
+"699Handling": 75,
+
+"969TopSpeed": 203,
+"9690to60": 3.6,
+"969Handling": 75,
+
+"996TopSpeed": 203,
+"9960to60": 3.4,
+"996Handling": 72
+}

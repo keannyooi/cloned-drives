@@ -1,6 +1,7 @@
 "use strict";
 
 const bot = require("../config/config.js");
+const { sandboxRoleID } = require("../util/consts/consts.js");
 const { SuccessMessage, ErrorMessage } = require("../util/classes/classes.js");
 const { moneyEmojiID, trophyEmojiID } = require("../util/consts/consts.js");
 const addCars = require("../util/functions/addCars.js");
@@ -15,7 +16,9 @@ module.exports = {
     args: 2,
     category: "Gameplay",
     description: "Buy a car from either the dealership or the black market using this command!",
+	
     async execute(message, args) {
+		const guildMember = await bot.homeGuild.members.fetch(message.author.id);
         const { dealershipCatalog, bmCatalog } = await serverStatModel.findOne({});
         let query, list, mode = args[0].toLowerCase();
         let amount = 1;
@@ -46,7 +49,7 @@ module.exports = {
                 const errorMessage = new ErrorMessage({
                     channel: message.channel,
                     title: "Error, shop selection provided is invalid.",
-                    desc: "ou may only chose between `deal` (dealership) and `bm` (black market).",
+                    desc: "You may only chose between `deal` (dealership) and `bm` (black market).",
                     author: message.author
                 }).displayClosest(mode);
                 return errorMessage.sendMessage();
@@ -81,6 +84,15 @@ module.exports = {
                     ]
                 });
                 return errorMessage.sendMessage({ currentMessage });
+            }
+			else if (guildMember.roles.cache.has(sandboxRoleID)) {
+                const errorMessage = new ErrorMessage({
+                    channel: message.channel,
+                    title: "Error, you may not buy cars on a sandbox alt.",
+                    desc: `The commnad you are trying to use is not a available for accounts with the <@&${sandboxRoleID}> role.`,
+                    author: message.author,
+                });
+                return errorMessage.sendMessage();
             }
             else if (balance >= price && currentCar.stock >= amount) {
                 let addedCars = [];

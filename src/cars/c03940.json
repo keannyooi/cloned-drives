@@ -1,0 +1,50 @@
+{
+    "rq": 38,
+    "make": "Chevrolet",
+    "model": "Bolt EUV Launch Edition",
+    "modelYear": 2016,
+    "country": "US",
+    "topSpeed": 92,
+    "0to60": 6.9,
+    "handling": 71,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Americas Assault","Eco-Friendly","Endless Summer"],
+    "isPrize": false,
+
+
+    "weight": 1709,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 20.12,
+    "ola": 81.51,
+    "description": "Slightly raised Bolt EV.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1108122171223588974/D.ChevyBoltEUV.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1108122733436489809/bolte.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 98,
+    "3330to60": 6.6,
+    "333Handling": 73,
+
+    "666TopSpeed": 103,
+    "6660to60": 6.2, 
+    "666Handling": 76,
+
+    "996TopSpeed": 109,
+    "9960to60": 5.9,
+    "996Handling": 76,
+
+    "969TopSpeed": 109,
+    "9690to60": 6.2,
+    "969Handling": 79,
+
+    "699TopSpeed": 103,
+    "6990to60": 5.9,
+    "699Handling": 79
+}

@@ -1,0 +1,53 @@
+{
+    "rq": 21,
+    "make": "Volkswagen",
+    "model": "Golf GTD",
+    "modelYear": 1984,
+    "country": "DE",
+    "topSpeed": 105,
+    "0to60": 13.0,
+    "handling": 67,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Endless Summer","The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+
+    "weight": 920,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 27.84,
+    "ola": 60.0,
+    "description": "The diesel GTI has started to pick up speed.",
+
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/959127733424758874/GolfGTD.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1054085919566733422/GolfGTDmk2.png",
+    "creator": "Andu",
+
+
+    "333TopSpeed": 110,
+    "3330to60": 12.4,
+    "333Handling": 69,
+
+    "666TopSpeed": 115,
+    "6660to60": 11.7, 
+    "666Handling": 71,
+
+    "996TopSpeed": 120,
+    "9960to60": 11.1,
+    "996Handling": 71,
+
+    "969TopSpeed": 120,
+    "9690to60": 11.7,
+    "969Handling": 74,
+
+    "699TopSpeed": 115,
+    "6990to60": 11.1,
+    "699Handling": 74
+}

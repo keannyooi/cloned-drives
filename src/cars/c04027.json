@@ -1,0 +1,51 @@
+{  
+    "rq": 79,
+    "make": "Volkswagen",
+    "model": "ID.4 Xtreme",
+    "modelYear": 2022,
+    "country": "DE",
+    "topSpeed": 122,
+    "0to60": 5.1,
+    "handling": 75,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["The Tyrol Tour: Remix", "Eco-Friendly", "Concept","Endless Summer","Extreme Juggernaut"],
+    "isPrize": true,
+
+
+    "weight": 2400,
+    "gc": "High",
+    "seatCount":5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 64.56,
+    "ola": 81.57,
+    "description": "Extremely emotive, extremely adventurous, extremely different.",
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1106138013538463834/ID4Extreme.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1106138521611284491/IDXtreme.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 126,
+    "3330to60": 4.8,
+    "333Handling": 77,
+    
+    "666TopSpeed": 131,
+    "6660to60": 4.6,
+    "666Handling": 80,
+    
+    "699TopSpeed": 131,
+    "6990to60": 4.3,
+    "699Handling": 83,
+    
+    "969TopSpeed": 135,
+    "9690to60": 4.6,
+    "969Handling": 83,
+    
+    "996TopSpeed": 135,
+    "9960to60": 4.3,
+    "996Handling": 80
+}

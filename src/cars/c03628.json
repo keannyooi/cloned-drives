@@ -1,0 +1,49 @@
+{
+    "rq": 48,
+    "make": "Ram",
+    "model": "1500 3.6 4x4 Off-Road Crew Cab",
+    "modelYear": 2019,
+    "country": "US",
+    "topSpeed": 107,
+    "0to60": 8.5,
+    "handling": 64,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["The Americas Assault","Endless Summer"],
+    "isPrize": false,
+	
+    "weight": 2370,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "Pickup",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 51.52,
+    "ola": 68.24,
+    "description": "Off-roading on a budget.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1085596001181630485/Ram_1500_3.6_4x4_Off-Road_Crew_Cab_2019.png",
+	"racehud": "https://media.discordapp.net/attachments/1077293403668234340/1085603505785536522/Ram_1500_3.6_4x4_Off-Road_Crew_Cab_2019_Hud.png",
+    "creator": "DodgeDemon",
+
+"333TopSpeed": 112,
+"3330to60": 8.1,
+"333Handling": 66,
+
+"666TopSpeed": 117,
+"6660to60": 7.7,
+"666Handling": 68,
+
+"699TopSpeed": 117,
+"6990to60": 7.2,
+"699Handling": 71,
+
+"969TopSpeed": 122,
+"9690to60": 7.7,
+"969Handling": 71,
+
+"996TopSpeed": 122,
+"9960to60": 7.2,
+"996Handling": 68
+}

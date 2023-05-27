@@ -1,0 +1,49 @@
+{
+    "rq": 8,
+    "make": "Aston Martin",
+    "model": "DB Mark II Le Mans Fixed Head Coupe Prototype (I4)",
+    "modelYear": 1949,
+    "country": "GB",
+    "topSpeed": 99,
+    "0to60": 16.9,
+    "handling": 55,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Midlands Cruise","Unique","Motorsport","Concept","Endless Summer","Visionary Road"],
+    "isPrize": false,
+
+    "weight": 1100,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 11.25,
+    "ola": 63.9,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1081553594957955112/DBMarkIILMCI4.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1081554557412323368/dbmarkiilmci4.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 104,
+"3330to60": 16.1,
+"333Handling": 57,
+
+"666TopSpeed": 110,
+"6660to60": 15.2,
+"666Handling": 59,
+
+"699TopSpeed": 110,
+"6990to60": 14.4,
+"699Handling": 61,
+
+"969TopSpeed": 115,
+"9690to60": 15.2,
+"969Handling": 61,
+
+"996TopSpeed": 115,
+"9960to60": 14.4,
+"996Handling": 59
+}

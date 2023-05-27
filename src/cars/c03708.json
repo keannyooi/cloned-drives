@@ -1,0 +1,49 @@
+{
+    "rq": 76,
+    "make": "Audi",
+    "model": "RS 4 Avant",
+    "modelYear": 2019,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 3.8,
+    "handling": 88,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 1710,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 73.08,
+    "ola": 68.42,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1101475217156608102/CD_Audi_RS_4_Avant_B9.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1101475678588784660/RS4Avant2017.png",
+    "creator": "Exist",
+
+"333TopSpeed": 158,
+"3330to60": 3.6,
+"333Handling": 91,
+
+"666TopSpeed": 162,
+"6660to60": 3.4,
+"666Handling": 94,
+
+"699TopSpeed": 162,
+"6990to60": 3.2,
+"699Handling": 98,
+
+"969TopSpeed": 165,
+"9690to60": 3.4,
+"969Handling": 98,
+
+"996TopSpeed": 165,
+"9960to60": 3.2,
+"996Handling": 94
+}

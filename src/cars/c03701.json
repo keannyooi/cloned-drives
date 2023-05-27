@@ -1,0 +1,49 @@
+{
+    "rq": 1,
+    "make": ["Aston-Martin", "Aston Martin"],
+    "model": "Side Valve (2 Seat)",
+    "modelYear": 1923,
+    "country": "GB",
+    "topSpeed": 80,
+    "0to60": 27.5,
+    "handling": 46,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Unique","The Midlands Cruise","Endless Summer"],
+    "isPrize": false,
+	
+    "weight": 770,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 1.99,
+    "ola": 62,
+    "description": "Most B&M era cars were built as 2 seaters. many of these cars have more recently received much racier coachwork reminiscent of the GP race cars than they were originally built with.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1096531564659228682/AMsideValve2seat.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1096532177623195668/AMsideValve2Seat.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 87,
+"3330to60": 26.1,
+"333Handling": 48,
+
+"666TopSpeed": 93,
+"6660to60": 24.8,
+"666Handling": 49,
+
+"699TopSpeed": 93,
+"6990to60": 23.4,
+"699Handling": 51,
+
+"969TopSpeed": 100,
+"9690to60": 24.8,
+"969Handling": 51,
+
+"996TopSpeed": 100,
+"9960to60": 23.4,
+"996Handling": 49
+}

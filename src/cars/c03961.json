@@ -1,0 +1,49 @@
+{
+    "rq": 52,
+    "make": "Ford",
+    "model": "Bronco Everglades",
+    "modelYear": 2022,
+    "country": "US",
+    "topSpeed": 99,
+    "0to60": 7.0,
+    "handling": 63,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["Endless Summer", "Extreme Juggernaut", "The Americas Assault"],
+    "isPrize": false,
+	
+    "weight": 2210,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 33.97,
+    "ola": 64.79,
+    "description": "Florida man's factory Bronco special.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1106245345576505354/Ford_Bronco_Everglades_2022.png",
+	"racehud": "https://media.discordapp.net/attachments/1077293403668234340/1106251164661600346/Ford_Bronco_Everglades_2022_Hud.png",
+    "creator": "DodgeDemon",
+
+"333TopSpeed": 104,
+"3330to60": 6.6,
+"333Handling": 65,
+
+"666TopSpeed": 110,
+"6660to60": 6.3,
+"666Handling": 67,
+
+"699TopSpeed": 110,
+"6990to60": 6.0,
+"699Handling": 70,
+
+"969TopSpeed": 115,
+"9690to60": 6.3,
+"969Handling": 70,
+
+"996TopSpeed": 115,
+"9960to60": 6.0,
+"996Handling": 67
+}

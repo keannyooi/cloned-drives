@@ -1,0 +1,49 @@
+{
+    "rq": 12,
+    "make": "Hongqi",
+    "model": "L6",
+    "modelYear": 2016,
+    "country": "CN",
+    "topSpeed": 62,
+    "0to60": 13.7,
+    "handling": 57,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Endless Summer","Unique","Rest of The World","The Amplification of Asia"],
+    "isPrize": false,
+	
+    "weight": 3600,
+    "gc": "High",
+    "seatCount": 17,
+    "bodyStyle": "Commercial",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 0,
+    "ola": 56.89,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1046406659473416265/hongqi_l6.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1046402894838116422/hongqi_l6.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 70,
+"3330to60": 13,
+"333Handling": 59,
+
+"666TopSpeed": 79,
+"6660to60": 12.3,
+"666Handling": 61,
+
+"699TopSpeed": 79,
+"6990to60": 11.6,
+"699Handling": 63,
+
+"969TopSpeed": 87,
+"9690to60": 12.3,
+"969Handling": 63,
+
+"996TopSpeed": 87,
+"9960to60": 11.6,
+"996Handling": 61
+}

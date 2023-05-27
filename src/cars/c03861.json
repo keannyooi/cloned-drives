@@ -1,0 +1,49 @@
+{
+    "rq": 75,
+    "make": "Bentley",
+    "model": "Continental GT Supersports \"Ice Speed Record\" Convertible",
+    "modelYear": 2011,
+    "country": "GB",
+    "topSpeed": 205,
+    "0to60": 3.8,
+    "handling": 83,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","The Midlands Cruise","Grand Tourer"],
+    "isPrize": false,
+	
+    "weight": 2395,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 76.55,
+    "ola": 73.65,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1104774170778275900/contiGTSupersportsISRConvi2011.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1104777870317994044/ContiGTIceSpeed2011.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 208,
+"3330to60": 3.6,
+"333Handling": 86,
+
+"666TopSpeed": 210,
+"6660to60": 3.4,
+"666Handling": 88,
+
+"699TopSpeed": 210,
+"6990to60": 3.2,
+"699Handling": 92,
+
+"969TopSpeed": 213,
+"9690to60": 3.4,
+"969Handling": 92,
+
+"996TopSpeed": 213,
+"9960to60": 3.2,
+"996Handling": 88
+}

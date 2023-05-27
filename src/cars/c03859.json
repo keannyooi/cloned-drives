@@ -1,0 +1,49 @@
+{
+    "rq": 76,
+    "make": "Bentley",
+    "model": "Continental GT Supersports",
+    "modelYear": 2009,
+    "country": "GB",
+    "topSpeed": 204,
+    "0to60": 3.8,
+    "handling": 84,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","The Midlands Cruise","Grand Tourer"],
+    "isPrize": false,
+	
+    "weight": 2240,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 77.55,
+    "ola": 73.68,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1104774119419035648/contiGTSupersports2009.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1104777721223057429/ContiGTCSuperSports2009.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 207,
+"3330to60": 3.6,
+"333Handling": 87,
+
+"666TopSpeed": 209,
+"6660to60": 3.4,
+"666Handling": 90,
+
+"699TopSpeed": 209,
+"6990to60": 3.2,
+"699Handling": 93,
+
+"969TopSpeed": 212,
+"9690to60": 3.4,
+"969Handling": 93,
+
+"996TopSpeed": 212,
+"9960to60": 3.2,
+"996Handling": 90
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 37,
+    "make": "Aston Martin",
+    "model": "DB4 GT DP199",
+    "modelYear": 1959,
+    "country": "GB",
+    "topSpeed": 160,
+    "0to60": 6.9,
+    "handling": 71,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","The Midlands Cruise","Unique","Concept","Street Racer"],
+    "isPrize": false,
+	
+    "weight": 1260,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 68.31,
+    "ola": 104.34,
+    "description": "This particularly interesting car was first seen at the 1959 Le Mans test day, quickly followed by a competitive appearance in the 12 lap International Grand Touring BRDC race at Silverstone in 1959. In the hands of legendary British racing driver, Stirling Moss, DP199/1 actually won at it's very first outing with a race spec 3.7 litre engine.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1096818807076573184/DB4GTDP199.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1096820536111280290/DB4GTDP199.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 163,
+"3330to60": 6.6,
+"333Handling": 73,
+
+"666TopSpeed": 167,
+"6660to60": 6.2,
+"666Handling": 76,
+
+"699TopSpeed": 167,
+"6990to60": 5.9,
+"699Handling": 79,
+
+"969TopSpeed": 170,
+"9690to60": 6.2,
+"969Handling": 79,
+
+"996TopSpeed": 170,
+"9960to60": 5.9,
+"996Handling": 76
+}

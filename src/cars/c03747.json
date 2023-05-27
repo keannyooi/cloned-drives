@@ -1,0 +1,49 @@
+{
+    "rq": 95,
+    "make": "Lotus",
+    "model": "Eletre R",
+    "modelYear": 2023,
+    "country": "GB",
+    "topSpeed": 165,
+    "0to60": 2.8,
+    "handling": 85,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","Eco-Friendly","The Midlands Cruise"],
+    "isPrize": false,
+	
+    "weight": 2560,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 68.29,
+    "ola": 64.28,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1101515493669617696/EletreRLoti.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1101515716429094932/EletreR.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 168,
+"3330to60": 2.7,
+"333Handling": 88,
+
+"666TopSpeed": 171,
+"6660to60": 2.5,
+"666Handling": 91,
+
+"699TopSpeed": 171,
+"6990to60": 2.4,
+"699Handling": 94,
+
+"969TopSpeed": 174,
+"9690to60": 2.5,
+"969Handling": 94,
+
+"996TopSpeed": 174,
+"9960to60": 2.4,
+"996Handling": 91
+}

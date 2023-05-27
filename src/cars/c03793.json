@@ -1,0 +1,49 @@
+{
+    "rq": 94,
+    "make": "Bentley",
+    "model": "Continental GT3 Pikes Peak",
+    "modelYear": 2021,
+    "country": "GB",
+    "topSpeed": 207,
+    "0to60": 2.7,
+    "handling": 98,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Endless Summer","Unique","Motorsport","The Midlands Cruise"],
+    "isPrize": false,
+	
+    "weight": 1230,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 105.64,
+    "ola": 88.88,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1103332308733403207/2021contiGT3PP.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1103332897542389790/ContiGT3PP.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 210,
+"3330to60": 2.6,
+"333Handling": 101,
+
+"666TopSpeed": 212,
+"6660to60": 2.4,
+"666Handling": 104,
+
+"699TopSpeed": 212,
+"6990to60": 2.3,
+"699Handling": 109,
+
+"969TopSpeed": 215,
+"9690to60": 2.4,
+"969Handling": 109,
+
+"996TopSpeed": 215,
+"9960to60": 2.3,
+"996Handling": 104
+}

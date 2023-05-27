@@ -1,0 +1,51 @@
+{  
+    "rq": 62,
+    "make": "Vinfast",
+    "model": "VF8 Plus City Edition",
+    "modelYear": 2023,
+    "country": "VN",
+    "topSpeed": 124,
+    "0to60": 5.3,
+    "handling": 76,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly", "The Rest of the Best: 2023","Rest of The World","Endless Summer"],
+    "isPrize": false,
+
+
+    "weight": 2671,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Electric",
+    "mra": 55.69,
+    "ola": 79.24,
+    "description": "Ready or not, the Vietnamese upstart carmaker plunges into the U.S. market with an electric SUV.",
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1109871952522391652/b62_vinfast_vf8_plus_city_edition.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1109872018045808640/VinfastVF8.png",
+    "creator": "Hastur",
+
+    "333TopSpeed": 128,
+    "3330to60": 5,
+    "333Handling": 79,
+    
+    "666TopSpeed": 132,
+    "6660to60": 4.8,
+    "666Handling": 81,
+    
+    "699TopSpeed": 132,
+    "6990to60": 4.5,
+    "699Handling": 84,
+    
+    "969TopSpeed": 137,
+    "9690to60": 4.8,
+    "969Handling": 84,
+    
+    "996TopSpeed": 137,
+    "9960to60": 4.5,
+    "996Handling": 81
+}

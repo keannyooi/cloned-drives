@@ -1,0 +1,49 @@
+{
+    "rq": 82,
+    "make": "Mitsubishi",
+    "model": "Lancer Evolution VIII Ralliart Xtreme",
+    "modelYear": 2003,
+    "country": "JP",
+    "topSpeed": 160,
+    "0to60": 4.2,
+    "handling": 90,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","Unique","Street Racer","The Amplification of Asia","Super Sedan"],
+    "isPrize": false,
+	
+    "weight": 1380,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 76.5,
+    "ola": 77.56,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1088895863193083904/evo8ralliartxtreme.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1088898901702086696/Evo8xtreme.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 163,
+"3330to60": 4,
+"333Handling": 93,
+
+"666TopSpeed": 167,
+"6660to60": 3.8,
+"666Handling": 96,
+
+"699TopSpeed": 167,
+"6990to60": 3.6,
+"699Handling": 100,
+
+"969TopSpeed": 170,
+"9690to60": 3.8,
+"969Handling": 100,
+
+"996TopSpeed": 170,
+"9960to60": 3.6,
+"996Handling": 96
+}

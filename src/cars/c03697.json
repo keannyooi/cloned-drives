@@ -1,0 +1,49 @@
+{
+    "rq": 19,
+    "make": ["Aston-Martin", "Aston Martin"],
+    "model": "2 Litre Speed Monoposto",
+    "modelYear": 1939,
+    "country": "GB",
+    "topSpeed": 125,
+    "0to60": 8.5,
+    "handling": 67,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Unique","Track Day","Endless Summer"],
+    "isPrize": true,
+	
+    "weight": 790,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 40,
+    "ola": 80,
+    "description": "Constructed to attempt the 2 Litre record at Brooklands. It was to be a test bed for the rotary valve cylinder head, but it was complicated and didn't deliver any more power than the overhead cam head. Sadly, it was 1939 and before it could be fully exploited, war broke out and the car was put into extended storage.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1095756121886687253/2LitreSpeedMonoposto.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095756856007336067/2LitreSpeedMonoposto.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 129,
+"3330to60": 8.1,
+"333Handling": 69,
+
+"666TopSpeed": 133,
+"6660to60": 7.7,
+"666Handling": 71,
+
+"699TopSpeed": 133,
+"6990to60": 7.2,
+"699Handling": 74,
+
+"969TopSpeed": 137,
+"9690to60": 7.7,
+"969Handling": 74,
+
+"996TopSpeed": 137,
+"9960to60": 7.2,
+"996Handling": 71
+}

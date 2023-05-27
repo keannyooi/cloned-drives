@@ -1,0 +1,49 @@
+{
+    "rq": 67,
+    "make": "Aston Martin",
+    "model": "DP215",
+    "modelYear": 1963,
+    "country": "GB",
+    "topSpeed": 212,
+    "0to60": 4.0,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","The Midlands Cruise","Unique","Ultra Expensive","Motorsport"],
+    "isPrize": true,
+	
+    "weight": 1007,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 83.33,
+    "ola": 90,
+    "description": "The swept Kamm tail of the DP cars was found to be essential after wind tunnel tests showed massive lift at 175mph. The 4 litre, six cylinder engine of DP215 developed a huge 326 bhp at 5800 rpm – sufficient to achieve 198.5 mph down the Mulsanne straight during practice.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1096819290386219048/DP215.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1096820773970264184/DP215.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 214,
+"3330to60": 3.8,
+"333Handling": 80,
+
+"666TopSpeed": 217,
+"6660to60": 3.6,
+"666Handling": 82,
+
+"699TopSpeed": 217,
+"6990to60": 3.4,
+"699Handling": 85,
+
+"969TopSpeed": 219,
+"9690to60": 3.6,
+"969Handling": 85,
+
+"996TopSpeed": 219,
+"9960to60": 3.4,
+"996Handling": 82
+}

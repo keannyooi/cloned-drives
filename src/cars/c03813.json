@@ -1,0 +1,49 @@
+{
+    "rq": 62,
+    "make": "Ford",
+    "model": "Fairlane Thunderbolt",
+    "modelYear": 1964,
+    "country": "US",
+    "topSpeed": 129,
+    "0to60": 4.5,
+    "handling": 30,
+    "driveType": "RWD",
+    "tyreType": "Drag",
+    "tags": ["Endless Summer","Motorsport","Muscle Car"],
+    "isPrize": false,
+	
+    "weight": 1463,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 70.31,
+    "ola": 84.44,
+    "description": "The Fairlane Thunderbolt was a drag car straight from the factory. Much lighter than a standard Fairlane and sporting the famous Ford 427 side-oiler engine found only in Ford's most serious race cars, the Thunderbolt was a force to be reckoned with on the strip and the street.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1102508551781498980/Thunderbolt_Cloned_Drives.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1102508605531508807/Thunderbolt_Cloned_Drives_Hud.png",
+    "creator": "Preston",
+
+"333TopSpeed": 133,
+"3330to60": 4.3,
+"333Handling": 31,
+
+"666TopSpeed": 137,
+"6660to60": 4,
+"666Handling": 32,
+
+"699TopSpeed": 137,
+"6990to60": 3.8,
+"699Handling": 33,
+
+"969TopSpeed": 141,
+"9690to60": 4,
+"969Handling": 33,
+
+"996TopSpeed": 141,
+"9960to60": 3.8,
+"996Handling": 32
+}

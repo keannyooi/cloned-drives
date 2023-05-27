@@ -1,0 +1,49 @@
+{
+    "rq": 58,
+    "make": "Aston Martin",
+    "model": "Lagonda Vignale DP2138",
+    "modelYear": 1995,
+    "country": "GB",
+    "topSpeed": 161,
+    "0to60": 5.7,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Endless Summer","Unique","The Midlands Cruise"],
+    "isPrize": false,
+	
+    "weight": 2070,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 74.02,
+    "ola": 84.21,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1103323194951213056/DP2138.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1103324086224044182/DP2138.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 164,
+"3330to60": 5.4,
+"333Handling": 80,
+
+"666TopSpeed": 167,
+"6660to60": 5.1,
+"666Handling": 82,
+
+"699TopSpeed": 167,
+"6990to60": 4.8,
+"699Handling": 85,
+
+"969TopSpeed": 171,
+"9690to60": 5.1,
+"969Handling": 85,
+
+"996TopSpeed": 171,
+"9960to60": 4.8,
+"996Handling": 82
+}

@@ -1,0 +1,52 @@
+{
+    "rq": 51,
+    "make": "Fiat",
+    "model": "Bravo Xtreme Concept",
+    "modelYear": 2012,
+    "country": "BR",
+    "topSpeed": 155,
+    "0to60": 5.8,
+    "handling": 84,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Concept", "Hot Hatch", "Unique","Endless Summer","The Americas Assault","Rest of The World"],
+    "isPrize": false,
+
+
+    "weight": 1300,
+    "gc": "Low",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 75.32,
+    "ola": 90.69,
+    "description": "A true throwback to all the cool past Fiat hot hatches.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1089619424891379843/BravoXtreme.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1089619736846938133/Xtreme.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 158,
+    "3330to60": 5.5,
+    "333Handling": 87,
+    
+    "666TopSpeed": 162,
+    "6660to60": 5.2,
+    "666Handling": 90,
+    
+    "699TopSpeed": 162,
+    "6990to60": 4.9,
+    "699Handling": 93,
+    
+    "969TopSpeed": 165,
+    "9690to60": 5.2,
+    "969Handling": 93,
+    
+    "996TopSpeed": 165,
+    "9960to60": 4.9,
+    "996Handling": 90
+}

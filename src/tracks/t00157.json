@@ -1,0 +1,18 @@
+{
+	"trackName": "Ouninpohja Track Stage (Gravel)",
+	"weather": "Sunny",
+	"surface": "Gravel",
+	"speedbumps": 8,
+	"humps": 0,
+	"background": "https://cdn.discordapp.com/attachments/800047734035841037/1111732018552787006/vw-kamaz-battle1.png",
+	"map": "https://cdn.discordapp.com/attachments/800047734035841037/1111731993156272128/screen-shot-2017-11-16-at-20-42-21.png",
+	
+	"specsDistr": {
+		"topSpeed": 10,
+		"0to60": 30,
+		"handling": 95,
+		"weight": 0,
+		"mra": 60,
+		"ola": 2.5
+	}
+}

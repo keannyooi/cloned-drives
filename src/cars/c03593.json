@@ -1,0 +1,49 @@
+{
+    "rq": 49,
+    "make": "Ram",
+    "model": "1500 Rebel EcoDiesel 4x4 Crew Cab",
+    "modelYear": 2020,
+    "country": "US",
+    "topSpeed": 108,
+    "0to60": 8.1,
+    "handling": 62,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["Extreme Juggernaut", "The Americas Assault","Endless Summer"],
+    "isPrize": false,
+	
+    "weight": 2620,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "Pickup",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 44.51,
+    "ola": 56.79,
+    "description": "Ram's class-leading diesel gets the wild Rebel treatment.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1085598338197487626/Ram_1500_Rebel_EcoDiesel_4x4_Crew_Cab_2020.png",
+	"racehud": "https://media.discordapp.net/attachments/1077293403668234340/1085605767182295060/Ram_1500_Rebel_EcoDiesel_4x4_Crew_Cab_2020_Hud.png",
+    "creator": "DodgeDemon",
+
+"333TopSpeed": 113,
+"3330to60": 7.7,
+"333Handling": 64,
+
+"666TopSpeed": 118,
+"6660to60": 7.3,
+"666Handling": 66,
+
+"699TopSpeed": 118,
+"6990to60": 6.9,
+"699Handling": 69,
+
+"969TopSpeed": 122,
+"9690to60": 7.3,
+"969Handling": 69,
+
+"996TopSpeed": 122,
+"9960to60": 6.9,
+"996Handling": 66
+}

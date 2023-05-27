@@ -1,0 +1,51 @@
+{  
+    "rq": 24,
+    "make": "Chrysler",
+    "model": "PT Cruiser 2.2 CRD Limited",
+    "modelYear": 2002,
+    "country": "US",
+    "topSpeed": 113,
+    "0to60": 11.4,
+    "handling": 68,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Americas Assault", "Style Icon", "Endless Summer"],
+    "isPrize": false,
+
+
+    "weight": 1385,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 41.35,
+    "ola": 65.20,
+    "description": "What to do when the EU demands a diesel? Simple; just steal one from Mercedes and you are all set!",
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1102543644352847932/PTCruiser22CRDLimited.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1102543969239449651/PTCruiserDiesel.png",
+    "creator": "Andu",
+    
+    "333TopSpeed": 118,
+    "3330to60": 10.8,
+    "333Handling": 70,
+    
+    "666TopSpeed": 122,
+    "6660to60": 10.3,
+    "666Handling": 72,
+    
+    "699TopSpeed": 122,
+    "6990to60": 9.7,
+    "699Handling": 75,
+    
+    "969TopSpeed": 127,
+    "9690to60": 10.3,
+    "969Handling": 75,
+    
+    "996TopSpeed": 127,
+    "9960to60": 9.7,
+    "996Handling": 72
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 21,
+    "make": ["Prince", "Nissan"],
+    "model": "Skyline 2000GT-B S54B",
+    "modelYear": 1965,
+    "country": "JP",
+    "topSpeed": 112,
+    "0to60": 11.7,
+    "handling": 62,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Endless Summer","The Amplification of Asia"],
+    "isPrize": false,
+	
+    "weight": 1070,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 48.34,
+    "ola": 56.41,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1097515034772520990/skyline2000gtbs54b.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1097515751105105931/Skyline2000GTBS54B.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 117,
+"3330to60": 11.1,
+"333Handling": 64,
+
+"666TopSpeed": 121,
+"6660to60": 10.5,
+"666Handling": 66,
+
+"699TopSpeed": 121,
+"6990to60": 9.9,
+"699Handling": 69,
+
+"969TopSpeed": 126,
+"9690to60": 10.5,
+"969Handling": 69,
+
+"996TopSpeed": 126,
+"9960to60": 9.9,
+"996Handling": 66
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 45,
+    "make": "Volvo",
+    "model": "850 R",
+    "modelYear": 1996,
+    "country": "SE",
+    "topSpeed": 155,
+    "0to60": 6.7,
+    "handling": 78,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer", "The Rest of the Best: 2023", "Rest of The World"],
+    "isPrize": false,
+	
+    "weight": 1468,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 69.38,
+    "ola": 82.38,
+    "description": "After the success of 850 T-5R, Volvo decided to bring back the high-performance model for the 1996 and 1997 year (as T-5R was a limited edition), with over 20hp boost over the T-5R and ditching the boring yet iconic Cream Yellow color.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1108038356987809923/Volvo_850_R_1996_2.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1108039093641826365/Volvo_850_R.png",
+    "creator": "Crossfire",
+
+    "333TopSpeed": 158, 
+    "3330to60": 6.4, 
+    "333Handling": 81,
+
+    "666TopSpeed": 162, 
+    "6660to60": 6.0, 
+    "666Handling": 83,
+
+    "996TopSpeed": 165, 
+    "9960to60": 5.7, 
+    "996Handling": 83,
+
+    "969TopSpeed": 165, 
+    "9690to60": 6.0, 
+    "969Handling": 87,
+
+    "699TopSpeed": 162, 
+    "6990to60": 5.7, 
+    "699Handling": 87
+}

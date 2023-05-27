@@ -1,0 +1,51 @@
+{  
+    "rq": 65,
+    "make": "Volkswagen",
+    "model": "ID.X Concept",
+    "modelYear": 2021,
+    "country": "DE",
+    "topSpeed": 115,
+    "0to60": 5.1,
+    "handling": 85,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix", "Eco-Friendly", "Concept","Endless Summer","Visionary Road"],
+    "isPrize": false,
+
+
+    "weight": 1550,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 73.91,
+    "ola": 80.39,
+    "description": "Ladies, gentlemen and everyone in between, you are all looking at the next Golf R.",
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1106138198272393247/IDX.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1106138762578235442/ID3x.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 120,
+    "3330to60": 4.8,
+    "333Handling": 88,
+    
+    "666TopSpeed": 124,
+    "6660to60": 4.6,
+    "666Handling": 91,
+    
+    "699TopSpeed": 124,
+    "6990to60": 4.3,
+    "699Handling": 94,
+    
+    "969TopSpeed": 129,
+    "9690to60": 4.6,
+    "969Handling": 94,
+    
+    "996TopSpeed": 129,
+    "9960to60": 4.3,
+    "996Handling": 91
+}

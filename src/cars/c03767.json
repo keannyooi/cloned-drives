@@ -1,0 +1,49 @@
+{
+    "rq": 85,
+    "make": "Mitsubishi",
+    "model": "Lancer Evolution VII Ralliart Xtreme S",
+    "modelYear": 2002,
+    "country": "JP",
+    "topSpeed": 166,
+    "0to60": 3.8,
+    "handling": 89,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","Unique","Street Racer","The Amplification of Asia","Super Sedan"],
+    "isPrize": false,
+	
+    "weight": 1380,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 75,
+    "ola": 79.55,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1088895774303203390/Evo7XtremeS.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1088898854214193202/Evo7xtremeS.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 169,
+"3330to60": 3.6,
+"333Handling": 92,
+
+"666TopSpeed": 172,
+"6660to60": 3.4,
+"666Handling": 95,
+
+"699TopSpeed": 172,
+"6990to60": 3.2,
+"699Handling": 99,
+
+"969TopSpeed": 175,
+"9690to60": 3.4,
+"969Handling": 99,
+
+"996TopSpeed": 175,
+"9960to60": 3.2,
+"996Handling": 95
+}

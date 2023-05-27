@@ -1,0 +1,49 @@
+{
+    "rq": 84,
+    "make": "Porsche",
+    "model": "917 16-Zylinder Spyder",
+    "modelYear": 1969,
+    "country": "DE",
+    "topSpeed": 199,
+    "0to60": 3.1,
+    "handling": 92,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Endless Summer","Motorsport","Unique","Ultra Expensive","The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 800,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 95.66,
+    "ola": 105.66,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1104775880833773639/91716Zylinderproto.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1104778985369509928/91716Zylinderproto.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 202,
+"3330to60": 2.9,
+"333Handling": 95,
+
+"666TopSpeed": 204,
+"6660to60": 2.8,
+"666Handling": 98,
+
+"699TopSpeed": 204,
+"6990to60": 2.6,
+"699Handling": 102,
+
+"969TopSpeed": 207,
+"9690to60": 2.8,
+"969Handling": 102,
+
+"996TopSpeed": 207,
+"9960to60": 2.6,
+"996Handling": 98
+}

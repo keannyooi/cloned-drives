@@ -1,0 +1,49 @@
+{
+    "rq": 18,
+    "make": "Aston Martin",
+    "model": "DB3 Spyder",
+    "modelYear": 1951,
+    "country": "GB",
+    "topSpeed": 130,
+    "0to60": 8.8,
+    "handling": 66,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Motorsport","Unique","Ultra Expensive","Endless Summer"],
+    "isPrize": true,
+
+    "weight": 1005,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 62.85,
+    "ola": 86.36,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1081553159014596618/DB3Spyder.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1081554423408500837/DB3Spyder.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 134,
+"3330to60": 8.4,
+"333Handling": 68,
+
+"666TopSpeed": 138,
+"6660to60": 7.9,
+"666Handling": 70,
+
+"699TopSpeed": 138,
+"6990to60": 7.5,
+"699Handling": 73,
+
+"969TopSpeed": 142,
+"9690to60": 7.9,
+"969Handling": 73,
+
+"996TopSpeed": 142,
+"9960to60": 7.5,
+"996Handling": 70
+}

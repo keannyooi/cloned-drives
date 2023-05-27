@@ -1,0 +1,50 @@
+{
+    "rq": 59,
+    "make": "Chevrolet",
+    "model": "Cobalt Sedan SS Turbo",
+    "modelYear": 2008,
+    "country": "US",
+    "topSpeed": 146,
+    "0to60": 5.6,
+    "handling": 81,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["The Americas Assault", "Tuner","Endless Summer"],
+    "isPrize": false,
+
+
+    "weight": 1350,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 70.51,
+    "ola": 83.63,
+    "description": "Sedan too.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1106241964988440698/B.ChevyCobaltSSST.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1106244534939168838/cobaltsst.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 161,
+    "3330to60": 5.2,
+    "333Handling": 84,
+
+    "666TopSpeed": 165,
+    "6660to60": 5.0, 
+    "666Handling": 86,
+
+    "996TopSpeed": 168,
+    "9960to60": 4.7,
+    "996Handling": 86,
+
+    "969TopSpeed": 168,
+    "9690to60": 5.0,
+    "969Handling": 90,
+
+    "699TopSpeed": 165,
+    "6990to60": 4.7,
+    "699Handling": 90
+}

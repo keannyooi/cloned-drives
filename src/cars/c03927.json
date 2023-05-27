@@ -1,0 +1,49 @@
+{
+    "rq": 90,
+    "make": "Acura",
+    "model": "NSX Type S",
+    "modelYear": 2022,
+    "country": "US",
+    "topSpeed": 192,
+    "0to60": 3.0,
+    "handling": 93,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer", "Street Racer", "Eco-Friendly", "Supercar", "The Americas Assault"],
+    "isPrize": false,
+	
+    "weight": 1793,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Hybrid",
+    "mra": 85.71,
+    "ola": 86.66,
+    "description": "The 2nd-generation NSX goes out of production as it should have been from the start. It features a revised battery pack, re-tuned 9-speed DCT transmission, and turbochargers from the NSX GT3 to produce 600 horsepower and 667 newton-meters of torque; the power figures that it should have packed when the NSX was introduced back in 2016.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1106239173649768508/Acura_NSX_Type_S_2022.png",
+	"racehud": "https://media.discordapp.net/attachments/1077293403668234340/1106247642578694184/Acura_NSX_Type_S_2022_Hud.png",
+    "creator": "DodgeDemon",
+
+"333TopSpeed": 195,
+"3330to60": 2.8,
+"333Handling": 96,
+
+"666TopSpeed": 197,
+"6660to60": 2.7,
+"666Handling": 99,
+
+"699TopSpeed": 197,
+"6990to60": 2.5,
+"699Handling": 103,
+
+"969TopSpeed": 200,
+"9690to60": 2.7,
+"969Handling": 103,
+
+"996TopSpeed": 200,
+"9960to60": 2.5,
+"996Handling": 99
+}

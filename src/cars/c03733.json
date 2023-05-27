@@ -1,0 +1,52 @@
+{
+    "rq": 19,
+    "make": "Volkswagen",
+    "model": "Citi Golf Sport",
+    "modelYear": 1985,
+    "country": "ZA",
+    "topSpeed": 104,
+    "0to60": 10.4,
+    "handling": 67,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Style Icon","Endless Summer", "The Rest of the Best: 2023","Rest of The World"],
+    "isPrize": false,
+
+
+    "weight": 836,
+    "gc": "Low",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 20.71,
+    "ola": 67.31,
+    "description": "The start of a South African icon.",
+
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/938754763972018196/CitiSport.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1057825730156830800/CGSport.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 109,
+    "3330to60": 9.9,
+    "333Handling": 69,
+
+    "666TopSpeed": 114,
+    "6660to60": 9.4, 
+    "666Handling": 71,
+
+    "996TopSpeed": 119,
+    "9960to60": 8.8,
+    "996Handling": 71,
+
+    "969TopSpeed": 119,
+    "9690to60": 9.4,
+    "969Handling": 74,
+
+    "699TopSpeed": 114,
+    "6990to60": 8.8,
+    "699Handling": 74
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 39,
+    "make": "BMW",
+    "model": "418d",
+    "modelYear": 2015,
+    "country": "DE",
+    "topSpeed": 133,
+    "0to60": 8.1,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Endless Summer","The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 1470,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 50.94,
+    "ola": 79.01,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1104775083525947472/418d.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1104778885050146876/418dBMV.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 137,
+"3330to60": 7.7,
+"333Handling": 77,
+
+"666TopSpeed": 141,
+"6660to60": 7.3,
+"666Handling": 80,
+
+"699TopSpeed": 141,
+"6990to60": 6.9,
+"699Handling": 83,
+
+"969TopSpeed": 145,
+"9690to60": 7.3,
+"969Handling": 83,
+
+"996TopSpeed": 145,
+"9960to60": 6.9,
+"996Handling": 80
+}

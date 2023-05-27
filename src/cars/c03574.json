@@ -1,0 +1,49 @@
+{
+    "rq": 1,
+    "make": ["Aston-Martin", "Aston Martin"],
+    "model": "Prototype A3",
+    "modelYear": 1921,
+    "country": "GB",
+    "topSpeed": 85,
+    "0to60": 24.0,
+    "handling": 45,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Unique","The Midlands Cruise","Concept","Ultra Expensive","Street Racer","Innovative","Endless Summer"],
+    "isPrize": true,
+	
+    "weight": 740,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 6.66,
+    "ola": 59.16,
+    "description": "Following Coal Scuttle, three further prototype cars were built including Bunny (no longer in existence) and this car the importance of which was hidden for many years. Only when it put up for sale at auction in 2001, was it discovered that this car carried chassis number A3 which made it the third Aston Martin ever built and the oldest in existence. Despite having been modified again and again it somehow, against all the odds survived.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1096530724473020536/A3.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1096530966467575878/A3.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 91,
+"3330to60": 22.8,
+"333Handling": 46,
+
+"666TopSpeed": 97,
+"6660to60": 21.6,
+"666Handling": 48,
+
+"699TopSpeed": 97,
+"6990to60": 20.4,
+"699Handling": 50,
+
+"969TopSpeed": 103,
+"9690to60": 21.6,
+"969Handling": 50,
+
+"996TopSpeed": 103,
+"9960to60": 20.4,
+"996Handling": 48
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 104,
+    "make": "Porsche",
+    "model": "917/30 Can-Am Spyder \"Turbopanzer\"",
+    "modelYear": 1973,
+    "country": "DE",
+    "topSpeed": 257,
+    "0to60": 1.9,
+    "handling": 96,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Endless Summer","Motorsport","Unique","Ultra Expensive","The Tyrol Tour: Remix"],
+    "isPrize": true,
+	
+    "weight": 852,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 126.66,
+    "ola": 100,
+    "description": "1500ps, 852kg thats like almost 2xpower-to-weight ratio...so fast that it effectively killed Can-Am due to safety.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1104776372695617646/917TurboPanzer.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1104779238005018644/917TurboPanzer.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 259,
+"3330to60": 1.8,
+"333Handling": 99,
+
+"666TopSpeed": 261,
+"6660to60": 1.7,
+"666Handling": 102,
+
+"699TopSpeed": 261,
+"6990to60": 1.6,
+"699Handling": 107,
+
+"969TopSpeed": 263,
+"9690to60": 1.7,
+"969Handling": 107,
+
+"996TopSpeed": 263,
+"9960to60": 1.6,
+"996Handling": 102
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 91,
+    "make": "Glickenhaus",
+    "model": "SCG Boot",
+    "modelYear": 2020,
+    "country": "US",
+    "topSpeed": 120,
+    "0to60": 4.0,
+    "handling": 78,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["Endless Summer", "Unique", "Motorsport", "The Americas Assault"],
+    "isPrize": true,
+	
+    "weight": 2495,
+    "gc": "High",
+    "seatCount": 2,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 66.67,
+    "ola": 95.00,
+    "description": "After acquiring the original in 1996 Glickenhaus has rebooted the Baja beast.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1110065266769006642/Glickenhaus_SCG_Boot_2020.png",
+	"racehud": "https://media.discordapp.net/attachments/1077293403668234340/1110066694539452506/Glickenhaus_SCG_Boot_2020_Hud.png",
+    "creator": "DodgeDemon",
+
+"333TopSpeed": 124,
+"3330to60": 3.8,
+"333Handling": 81,
+
+"666TopSpeed": 129,
+"6660to60": 3.6,
+"666Handling": 83,
+
+"699TopSpeed": 129,
+"6990to60": 3.4,
+"699Handling": 87,
+
+"969TopSpeed": 133,
+"9690to60": 3.6,
+"969Handling": 87,
+
+"996TopSpeed": 133,
+"9960to60": 3.4,
+"996Handling": 83
+}

@@ -1,0 +1,52 @@
+{
+    "rq": 15,
+    "make": "Volkswagen",
+    "model": "Golf 1.3 GL",
+    "modelYear": 1987,
+    "country": "DE",
+    "topSpeed": 95,
+    "0to60": 16.3,
+    "handling": 66,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Endless Summer", "The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+
+    "weight": 865,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 13.13,
+    "ola": 58.90,
+    "description": "Fun fact, i have a mk2 Golf 1.3 in my garage :) - andu",
+
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/959127595021111376/Golf13GL.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1054085993503932526/Golf13GL.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 100,
+    "3330to60": 15.5,
+    "333Handling": 68,
+
+    "666TopSpeed": 106,
+    "6660to60": 14.7, 
+    "666Handling": 70,
+
+    "996TopSpeed": 111,
+    "9960to60": 13.9,
+    "996Handling": 70,
+
+    "969TopSpeed": 111,
+    "9690to60": 14.7,
+    "969Handling": 73,
+
+    "699TopSpeed": 106,
+    "6990to60": 13.9,
+    "699Handling": 73
+}

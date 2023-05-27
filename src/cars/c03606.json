@@ -1,0 +1,49 @@
+{
+    "rq": 53,
+    "make": "Aston Martin",
+    "model": "DB4 GT Zagato Sanction II",
+    "modelYear": 1988,
+    "country": "GB",
+    "topSpeed": 153,
+    "0to60": 5.5,
+    "handling": 74,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","The Midlands Cruise","Unique","Ultra Expensive","Track Day","RestoMod"],
+    "isPrize": false,
+	
+    "weight": 1257,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 82.08,
+    "ola": 90.9,
+    "description": "During the late 1980's the classic car market was extremely buoyant and the original DB4GT Zagatos had become the most desirable of the Aston Martin road cars. Indeed at auction in 1990, one changed hands for a staggering £1.7 million. In 1987, the owners of Aston Martin, decided to build four more cars using up the chassis numbers left unused from the original series of cars",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1096819897436229662/DB4GTZS2.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1096820888713842688/DB4GTS2.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 156,
+"3330to60": 5.2,
+"333Handling": 76,
+
+"666TopSpeed": 160,
+"6660to60": 5,
+"666Handling": 79,
+
+"699TopSpeed": 160,
+"6990to60": 4.7,
+"699Handling": 82,
+
+"969TopSpeed": 163,
+"9690to60": 5,
+"969Handling": 82,
+
+"996TopSpeed": 163,
+"9960to60": 4.7,
+"996Handling": 79
+}

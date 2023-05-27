@@ -1,0 +1,49 @@
+{
+    "rq": 46,
+    "make": "Land Rover",
+    "model": "Defender 110 D240",
+    "modelYear": 2020,
+    "country": "GB",
+    "topSpeed": 117,
+    "0to60": 8.7,
+    "handling": 62,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["Endless Summer","The Midlands Cruise"],
+    "isPrize": false,
+	
+    "weight": 2305,
+    "gc": "High",
+    "seatCount": 7,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 39.83,
+    "ola": 66.66,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1104774654297645156/110D240Defender20.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1104778227471360161/D240110.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 121,
+"3330to60": 8.3,
+"333Handling": 64,
+
+"666TopSpeed": 126,
+"6660to60": 7.8,
+"666Handling": 66,
+
+"699TopSpeed": 126,
+"6990to60": 7.4,
+"699Handling": 69,
+
+"969TopSpeed": 130,
+"9690to60": 7.8,
+"969Handling": 69,
+
+"996TopSpeed": 130,
+"9960to60": 7.4,
+"996Handling": 66
+}

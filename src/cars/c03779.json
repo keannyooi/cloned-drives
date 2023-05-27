@@ -1,0 +1,49 @@
+{
+    "rq": 72,
+    "make": "Mitsubishi",
+    "model": "Lancer Evolution X RS",
+    "modelYear": 2007,
+    "country": "JP",
+    "topSpeed": 112,
+    "0to60": 4.7,
+    "handling": 89,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","The Amplification of Asia","Street Racer"],
+    "isPrize": false,
+	
+    "weight": 1420,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 65,
+    "ola": 73.47,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1101845063321002054/evo10rs.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/997638193195270194/evo10rs.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 117,
+"3330to60": 4.5,
+"333Handling": 92,
+
+"666TopSpeed": 121,
+"6660to60": 4.2,
+"666Handling": 95,
+
+"699TopSpeed": 121,
+"6990to60": 4,
+"699Handling": 99,
+
+"969TopSpeed": 126,
+"9690to60": 4.2,
+"969Handling": 99,
+
+"996TopSpeed": 126,
+"9960to60": 4,
+"996Handling": 95
+}

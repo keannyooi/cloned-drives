@@ -1,0 +1,53 @@
+{
+    "rq": 27,
+    "make": "Volkswagen",
+    "model": "Golf GTI G60",
+    "modelYear": 1988,
+    "country": "DE",
+    "topSpeed": 135,
+    "0to60": 8.0,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch","Endless Summer","The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+
+    "weight": 1015,
+    "gc": "Low",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 60.92,
+    "ola": 70.44,
+    "description": "Strap on a supercharger and fly!.",
+
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/959127879231348746/GolfGTIG60.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1054084867144552458/GolfGTIG60.png",
+    "creator": "Andu",
+
+
+    "333TopSpeed": 139,
+    "3330to60": 7.6,
+    "333Handling": 75,
+
+    "666TopSpeed": 143,
+    "6660to60": 7.2, 
+    "666Handling": 78,
+
+    "996TopSpeed": 147,
+    "9960to60": 6.8,
+    "996Handling": 78,
+
+    "969TopSpeed": 147,
+    "9690to60": 7.2,
+    "969Handling": 81,
+
+    "699TopSpeed": 143,
+    "6990to60": 6.8,
+    "699Handling": 81
+}

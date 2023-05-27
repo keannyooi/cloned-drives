@@ -1,0 +1,50 @@
+{
+    "rq": 41,
+    "make": "Chevrolet",
+    "model": "Bolt EV 2LT",
+    "modelYear": 2022,
+    "country": "US",
+    "topSpeed": 93,
+    "0to60": 6.5,
+    "handling": 71,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Americas Assault","Eco-Friendly","Endless Summer"],
+    "isPrize": false,
+
+
+    "weight": 1622,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 20.12,
+    "ola": 80.00,
+    "description": "Electric Car 2.5",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1109926058280632320/C.ChevyBoltEV2LT.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1109927810576953535/Sevroletev.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 99,
+    "3330to60": 6.2,
+    "333Handling": 73,
+
+    "666TopSpeed": 104,
+    "6660to60": 5.9, 
+    "666Handling": 76,
+
+    "996TopSpeed": 110,
+    "9960to60": 5.5,
+    "996Handling": 76,
+
+    "969TopSpeed": 110,
+    "9690to60": 5.9,
+    "969Handling": 79,
+
+    "699TopSpeed": 104,
+    "6990to60": 5.5,
+    "699Handling": 79
+}

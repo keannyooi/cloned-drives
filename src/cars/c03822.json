@@ -1,0 +1,49 @@
+{
+    "rq": 39,
+    "make": "Lamborghini",
+    "model": "400 GT 2+2",
+    "modelYear": 1966,
+    "country": "IT",
+    "topSpeed": 160,
+    "0to60": 6.5,
+    "handling": 68,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","The Tyrol Tour: Remix","Grand Tourer"],
+    "isPrize": false,
+	
+    "weight": 1490,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 69.75,
+    "ola": 75.23,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1101866993449193554/Lambo400GT22.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1101867455086866432/Lambo400GT22.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 163,
+"3330to60": 6.2,
+"333Handling": 70,
+
+"666TopSpeed": 167,
+"6660to60": 5.9,
+"666Handling": 72,
+
+"699TopSpeed": 167,
+"6990to60": 5.5,
+"699Handling": 75,
+
+"969TopSpeed": 170,
+"9690to60": 5.9,
+"969Handling": 75,
+
+"996TopSpeed": 170,
+"9960to60": 5.5,
+"996Handling": 72
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 109,
+    "make": ["Xtrac", "Ford"],
+    "model": "G4 Escort",
+    "modelYear": 1984,
+    "country": "GB",
+    "topSpeed": 118,
+    "0to60": 2.7,
+    "handling": 86,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["Endless Summer","Motorsport","Unique","The Midlands Cruise"],
+    "isPrize": true,
+	
+    "weight": 930,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 69.23,
+    "ola": 81.48,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1095401358296887426/Xtrac_G4_Escort.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095401226507657306/Xtrac_G4.png",
+    "creator": "Based",
+
+"333TopSpeed": 122,
+"3330to60": 2.6,
+"333Handling": 89,
+
+"666TopSpeed": 127,
+"6660to60": 2.4,
+"666Handling": 92,
+
+"699TopSpeed": 127,
+"6990to60": 2.3,
+"699Handling": 95,
+
+"969TopSpeed": 131,
+"9690to60": 2.4,
+"969Handling": 95,
+
+"996TopSpeed": 131,
+"9960to60": 2.3,
+"996Handling": 92
+}

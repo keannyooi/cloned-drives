@@ -1,0 +1,49 @@
+{
+    "rq": 66,
+    "make": "Bentley",
+    "model": "Continental Flying Spur",
+    "modelYear": 2005,
+    "country": "GB",
+    "topSpeed": 195,
+    "0to60": 4.8,
+    "handling": 76,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","The Midlands Cruise"],
+    "isPrize": false,
+	
+    "weight": 2480,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 69.56,
+    "ola": 77.8,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1104774357328347206/ContiFlyinSpurBentley.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1104777951259668480/FlyinkfirstBentley.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 198,
+"3330to60": 4.6,
+"333Handling": 79,
+
+"666TopSpeed": 200,
+"6660to60": 4.3,
+"666Handling": 81,
+
+"699TopSpeed": 200,
+"6990to60": 4.1,
+"699Handling": 84,
+
+"969TopSpeed": 203,
+"9690to60": 4.3,
+"969Handling": 84,
+
+"996TopSpeed": 203,
+"9960to60": 4.1,
+"996Handling": 81
+}

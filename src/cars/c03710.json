@@ -1,0 +1,49 @@
+{
+    "rq": 65,
+    "make": "Audi",
+    "model": "RS 6 Avant",
+    "modelYear": 2008,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 4.3,
+    "handling": 80,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 2025,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 81.8,
+    "ola": 74.86,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1101475009886695475/CD_Audi_RS_6_Avant_C6.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1101475663078240346/RS6PlusAvant2008.png",
+    "creator": "Exist",
+
+"333TopSpeed": 158,
+"3330to60": 4.1,
+"333Handling": 83,
+
+"666TopSpeed": 162,
+"6660to60": 3.9,
+"666Handling": 85,
+
+"699TopSpeed": 162,
+"6990to60": 3.7,
+"699Handling": 89,
+
+"969TopSpeed": 165,
+"9690to60": 3.9,
+"969Handling": 89,
+
+"996TopSpeed": 165,
+"9960to60": 3.7,
+"996Handling": 85
+}

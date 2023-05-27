@@ -1,0 +1,49 @@
+{
+    "rq": 48,
+    "make": "Chevrolet",
+    "model": "Blazer 2.5L LT",
+    "modelYear": 2019,
+    "country": "US",
+    "topSpeed": 124,
+    "0to60": 8.1,
+    "handling": 76,
+    "driveType": "FWD",
+    "tyreType": "All-Surface",
+    "tags": ["Endless Summer", "The Americas Assault"],
+    "isPrize": false,
+	
+    "weight": 1750,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 50.31,
+    "ola": 69.14,
+    "description": "Base diesel engine for the Blazer. Losing more than 100 hp, but keeping the same mean look.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1109877842688344195/Chevrolet_Blazer_2.5L_LT_2019.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1109877906496303176/Chevrolet_Blazer_2.5L_LT.png",
+    "creator": "Crossfire",
+
+    "333TopSpeed": 128, 
+    "3330to60": 7.7, 
+    "333Handling": 79,
+
+    "666TopSpeed": 132, 
+    "6660to60": 7.3, 
+    "666Handling": 81,
+
+    "996TopSpeed": 137, 
+    "9960to60": 6.9, 
+    "996Handling": 81,
+
+    "969TopSpeed": 137, 
+    "9690to60": 7.3, 
+    "969Handling": 84,
+
+    "699TopSpeed": 132, 
+    "6990to60": 6.9, 
+    "699Handling": 84
+}

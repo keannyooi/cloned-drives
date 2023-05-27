@@ -1,0 +1,49 @@
+{
+    "rq": 63,
+    "make": "Aston Martin",
+    "model": "DP212",
+    "modelYear": 1962,
+    "country": "GB",
+    "topSpeed": 167,
+    "0to60": 4.0,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","The Midlands Cruise","Unique","Ultra Expensive","Motorsport"],
+    "isPrize": false,
+	
+    "weight": 980,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 81.63,
+    "ola": 100,
+    "description": "After the victory at Le Mans in 1959 and the World Sportscar Championship in the same year, Aston Martin pulled out of racing. Privateers in DB4GT's and Zagatos were left to fly the flag. But after encouragement from dealers who wanted to sell cars with racing connections, the factory created a special 4 litre prototype GT based on the DB4GT and called DP212, for the 1962 Le Mans 24 hour race. Although exceedingly quick, problems took the car out in the 6th hour.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1096819213060022352/DP212.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1096820736372527174/dp212.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 170,
+"3330to60": 3.8,
+"333Handling": 77,
+
+"666TopSpeed": 173,
+"6660to60": 3.6,
+"666Handling": 80,
+
+"699TopSpeed": 173,
+"6990to60": 3.4,
+"699Handling": 83,
+
+"969TopSpeed": 176,
+"9690to60": 3.6,
+"969Handling": 83,
+
+"996TopSpeed": 176,
+"9960to60": 3.4,
+"996Handling": 80
+}

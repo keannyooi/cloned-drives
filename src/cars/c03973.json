@@ -1,0 +1,49 @@
+{
+    "rq": 91,
+    "make": "Ford",
+    "model": "Mustang Super Cobra Jet",
+    "modelYear": 2014,
+    "country": "US",
+    "topSpeed": 201,
+    "0to60": 1.6,
+    "handling": 10,
+    "driveType": "RWD",
+    "tyreType": "Drag",
+    "tags": ["Endless Summer","Motorsport","Unique","The Americas Assault","Muscle Car"],
+    "isPrize": false,
+	
+    "weight": 1624,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 85,
+    "ola": 85,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1105772295231901746/snakeplane.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1105772492456472638/2014SupaCobraCBJ.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 204,
+"3330to60": 1.5,
+"333Handling": 10,
+
+"666TopSpeed": 206,
+"6660to60": 1.4,
+"666Handling": 11,
+
+"699TopSpeed": 206,
+"6990to60": 1.4,
+"699Handling": 11,
+
+"969TopSpeed": 209,
+"9690to60": 1.4,
+"969Handling": 11,
+
+"996TopSpeed": 209,
+"9960to60": 1.4,
+"996Handling": 11
+}

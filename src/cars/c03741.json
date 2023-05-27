@@ -1,0 +1,49 @@
+{
+    "rq": 71,
+    "make": "Audi",
+    "model": "A8L 4.2 FSI quattro",
+    "modelYear": 2010,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 5.2,
+    "handling": 82,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Endless Summer","The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 1970,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 70.27,
+    "ola": 80.76,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1101513072193061036/A.AudiA8L42FSIquattro.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1101513182809428058/A8L4.2FSIquattro2010.png",
+    "creator": "Connor",
+
+"333TopSpeed": 158,
+"3330to60": 4.9,
+"333Handling": 85,
+
+"666TopSpeed": 162,
+"6660to60": 4.7,
+"666Handling": 87,
+
+"699TopSpeed": 162,
+"6990to60": 4.4,
+"699Handling": 91,
+
+"969TopSpeed": 165,
+"9690to60": 4.7,
+"969Handling": 91,
+
+"996TopSpeed": 165,
+"9960to60": 4.4,
+"996Handling": 87
+}

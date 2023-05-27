@@ -1,0 +1,49 @@
+{
+    "rq": 32,
+    "make": "Volvo",
+    "model": "850 GLT 2.0 20v",
+    "modelYear": 1992,
+    "country": "SE",
+    "topSpeed": 123,
+    "0to60": 9.8,
+    "handling": 72,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Endless Summer", "The Rest of the Best: 2023", "Rest of The World"],
+    "isPrize": false,
+	
+    "weight": 1326,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 52.00,
+    "ola": 73.85,
+    "description": "Last era of Volvo designing cars with rulers. Its so boxy, bland and edgy. There is a reason why these are called bricks.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1108038108781478028/Volvo_850_GLT_2.0_20v_1992.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1108038908186464306/Volvo_850_GLT_2.0.png",
+    "creator": "Crossfire",
+
+    "333TopSpeed": 127, 
+    "3330to60": 9.3, 
+    "333Handling": 74,
+
+    "666TopSpeed": 131, 
+    "6660to60": 8.8, 
+    "666Handling": 77,
+
+    "996TopSpeed": 136, 
+    "9960to60": 8.3, 
+    "996Handling": 77,
+
+    "969TopSpeed": 136, 
+    "9690to60": 8.8, 
+    "969Handling": 80,
+
+    "699TopSpeed": 131, 
+    "6990to60": 8.3, 
+    "699Handling": 80
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 84,
+    "make": "Ford",
+    "model": "Mustang Cobra Jet FR500",
+    "modelYear": 2012,
+    "country": "US",
+    "topSpeed": 150,
+    "0to60": 1.8,
+    "handling": 10,
+    "driveType": "RWD",
+    "tyreType": "Drag",
+    "tags": ["Endless Summer","Motorsport","Unique","The Americas Assault","Muscle Car"],
+    "isPrize": true,
+	
+    "weight": 1480,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 80,
+    "ola": 80,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1105772224037797958/CobraJetFR5002012.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1105772441084645456/2012CobraCBJ.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 153,
+"3330to60": 1.7,
+"333Handling": 10,
+
+"666TopSpeed": 157,
+"6660to60": 1.6,
+"666Handling": 11,
+
+"699TopSpeed": 157,
+"6990to60": 1.5,
+"699Handling": 11,
+
+"969TopSpeed": 160,
+"9690to60": 1.6,
+"969Handling": 11,
+
+"996TopSpeed": 160,
+"9960to60": 1.5,
+"996Handling": 11
+}

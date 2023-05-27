@@ -1,0 +1,49 @@
+{
+    "rq": 63,
+    "make": "Obvio!",
+    "model": "828E",
+    "modelYear": 2005,
+    "country": "BR",
+    "topSpeed": 120,
+    "0to60": 4.5,
+    "handling": 84,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Oddity","Eco-Friendly","Rest of The World","Endless Summer","The Americas Assault"],
+    "isPrize": false,
+	
+    "weight": 600,
+    "gc": "Low",
+    "seatCount": 3,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Hybrid",
+    "mra": 69.23,
+    "ola": 80,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1011581233056206889/obvio_828_on_steroids.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1011592235650920500/obvio_828e.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 124, 
+"3330to60": 4.3, 
+"333Handling": 87,
+
+"666TopSpeed": 129, 
+"6660to60": 4.0, 
+"666Handling": 90,
+
+"699TopSpeed": 129, 
+"6990to60": 3.8, 
+"699Handling": 93,
+
+"969TopSpeed": 133, 
+"9690to60": 4.0, 
+"969Handling": 93,
+
+"996TopSpeed": 133, 
+"9960to60": 3.8, 
+"996Handling": 90
+}

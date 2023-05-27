@@ -1,0 +1,49 @@
+{
+    "rq": 89,
+    "make": "Glickenhaus",
+    "model": "SCG 004C",
+    "modelYear": 2020,
+    "country": "US",
+    "topSpeed": 185,
+    "0to60": 2.9,
+    "handling": 97,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Endless Summer", "Motorsport", "The Americas Assault"],
+    "isPrize": false,
+	
+    "weight": 1250,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 90.63,
+    "ola": 82.76,
+    "description": "None.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1110064820667039795/Glickenhaus_SCG_004C_2020.png",
+	"racehud": "https://media.discordapp.net/attachments/1077293403668234340/1110066266342969404/Glickenhaus_SCG_004C_2020_Hud.png",
+    "creator": "DodgeDemon",
+
+"333TopSpeed": 188,
+"3330to60": 2.8,
+"333Handling": 100,
+
+"666TopSpeed": 191,
+"6660to60": 2.6,
+"666Handling": 103,
+
+"699TopSpeed": 191,
+"6990to60": 2.5,
+"699Handling": 108,
+
+"969TopSpeed": 193,
+"9690to60": 2.6,
+"969Handling": 108,
+
+"996TopSpeed": 193,
+"9960to60": 2.5,
+"996Handling": 103
+}

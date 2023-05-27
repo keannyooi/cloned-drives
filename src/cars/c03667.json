@@ -1,0 +1,49 @@
+{
+    "rq": 95,
+    "make": "Aston Martin",
+    "model": "AMR1 / 05",
+    "modelYear": 1989,
+    "country": "GB",
+    "topSpeed": 226,
+    "0to60": 2.5,
+    "handling": 96,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["The Midlands Cruise","Motorsport","Ultra Expensive","Unique","Endless Summer"],
+    "isPrize": true,
+	
+    "weight": 906,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 113.64,
+    "ola": 96,
+    "description": "AMR1/5 with the 6.3 litre version 2 engine. This car has subsequently returned to the race track and can be seen in the historic Group C races together with Porsche 962’s and Jaguar XJR’s. And although it’s very quick, it’s easier to photograph as you can hear the V8 rumble long before to car comes into view.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1096531338510749867/AMR1-05.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1096532125299253298/AMR1-05.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 228,
+"3330to60": 2.4,
+"333Handling": 99,
+
+"666TopSpeed": 231,
+"6660to60": 2.3,
+"666Handling": 102,
+
+"699TopSpeed": 231,
+"6990to60": 2.1,
+"699Handling": 107,
+
+"969TopSpeed": 233,
+"9690to60": 2.3,
+"969Handling": 107,
+
+"996TopSpeed": 233,
+"9960to60": 2.1,
+"996Handling": 102
+}

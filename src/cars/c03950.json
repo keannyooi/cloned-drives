@@ -1,0 +1,50 @@
+{
+    "rq": 29,
+    "make": "Chevrolet",
+    "model": "Epica 2.0D LS",
+    "modelYear": 2007,
+    "country": "US",
+    "topSpeed": 126,
+    "0to60": 10.3,
+    "handling": 69,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Americas Assault","Endless Summer"],
+    "isPrize": false,
+
+
+    "weight": 1588,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 48.58,
+    "ola": 62.13,
+    "description": "Tommorow Should Come Always, says Daewoo.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1106241546963140688/E.ChevyEpic20D.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1106244137369481356/epico4.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 130,
+    "3330to60": 9.8,
+    "333Handling": 71,
+
+    "666TopSpeed": 134,
+    "6660to60": 9.3, 
+    "666Handling": 74,
+
+    "996TopSpeed": 138,
+    "9960to60": 8.8,
+    "996Handling": 74,
+
+    "969TopSpeed": 138,
+    "9690to60": 9.3,
+    "969Handling": 77,
+
+    "699TopSpeed": 134,
+    "6990to60": 8.8,
+    "699Handling": 77
+}

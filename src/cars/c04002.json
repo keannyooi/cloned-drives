@@ -1,0 +1,50 @@
+{
+    "rq": 56,
+    "make": "Pontiac",
+    "model": "G8 GT",
+    "modelYear": 2008,
+    "country": "US",
+    "topSpeed": 136,
+    "0to60": 5.3,
+    "handling": 78,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Americas Assault","Endless Summer"],
+    "isPrize": false,
+
+
+    "weight": 1855,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 71.62,
+    "ola": 75.47,
+    "description": "GT featured Corvette derived 6 litre V8 good for some 350 kangaroos.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1108122266748850368/B.PontiacG8GT.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1108122809978335334/g8gt.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 140,
+    "3330to60": 5.0,
+    "333Handling": 81,
+
+    "666TopSpeed": 144,
+    "6660to60": 4.8, 
+    "666Handling": 83,
+
+    "996TopSpeed": 147,
+    "9960to60": 4.5,
+    "996Handling": 83,
+
+    "969TopSpeed": 147,
+    "9690to60": 4.8,
+    "969Handling": 87,
+
+    "699TopSpeed": 144,
+    "6990to60": 4.5,
+    "699Handling": 87
+}

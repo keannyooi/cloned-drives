@@ -1,0 +1,49 @@
+{
+    "rq": 89,
+    "make": "Bentley",
+    "model": "Bentayga EWB Azure",
+    "modelYear": 2022,
+    "country": "GB",
+    "topSpeed": 180,
+    "0to60": 4.1,
+    "handling": 79,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Endless Summer","The Midlands Cruise"],
+    "isPrize": false,
+	
+    "weight": 2535,
+    "gc": "High",
+    "seatCount": 4,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 70.66,
+    "ola": 80,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1101515399201308783/BentaygaEWB2022.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1101515658115678248/BentaygaEWB.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 183,
+"3330to60": 3.9,
+"333Handling": 82,
+
+"666TopSpeed": 186,
+"6660to60": 3.7,
+"666Handling": 84,
+
+"699TopSpeed": 186,
+"6990to60": 3.5,
+"699Handling": 88,
+
+"969TopSpeed": 189,
+"9690to60": 3.7,
+"969Handling": 88,
+
+"996TopSpeed": 189,
+"9960to60": 3.5,
+"996Handling": 84
+}

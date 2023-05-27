@@ -1,0 +1,49 @@
+{
+    "rq": 64,
+    "make": "Mitsubishi",
+    "model": "Lancer Evolution X GSR-Premium",
+    "modelYear": 2007,
+    "country": "JP",
+    "topSpeed": 112,
+    "0to60": 5.3,
+    "handling": 87,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","The Amplification of Asia","Street Racer"],
+    "isPrize": false,
+	
+    "weight": 1530,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 58.82,
+    "ola": 79.35,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1101845140311654420/evo10GSRpremjp.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1101845936386351175/Evo10GSRPremMitsusbishi.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 117,
+"3330to60": 5,
+"333Handling": 90,
+
+"666TopSpeed": 121,
+"6660to60": 4.8,
+"666Handling": 93,
+
+"699TopSpeed": 121,
+"6990to60": 4.5,
+"699Handling": 97,
+
+"969TopSpeed": 126,
+"9690to60": 4.8,
+"969Handling": 97,
+
+"996TopSpeed": 126,
+"9960to60": 4.5,
+"996Handling": 93
+}

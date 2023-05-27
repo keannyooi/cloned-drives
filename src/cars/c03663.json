@@ -1,0 +1,49 @@
+{
+    "rq": 76,
+    "make": "Mitsubishi",
+    "model": "Lancer Evolution VII RS Sprint",
+    "modelYear": 2002,
+    "country": "JP",
+    "topSpeed": 151,
+    "0to60": 4.4,
+    "handling": 87,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","Unique","Street Racer","The Amplification of Asia"],
+    "isPrize": false,
+	
+    "weight": 1350,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 72,
+    "ola": 75,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1088895754912927785/Evo7RSSprint.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1088898832143761549/Evo7RSSprint.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 154,
+"3330to60": 4.2,
+"333Handling": 90,
+
+"666TopSpeed": 158,
+"6660to60": 4,
+"666Handling": 93,
+
+"699TopSpeed": 158,
+"6990to60": 3.7,
+"699Handling": 97,
+
+"969TopSpeed": 161,
+"9690to60": 4,
+"969Handling": 97,
+
+"996TopSpeed": 161,
+"9960to60": 3.7,
+"996Handling": 93
+}

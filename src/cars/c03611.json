@@ -1,0 +1,49 @@
+{
+    "rq": 63,
+    "make": "Aston Martin",
+    "model": "DP214 GT",
+    "modelYear": 1963,
+    "country": "GB",
+    "topSpeed": 186,
+    "0to60": 4.1,
+    "handling": 76,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","The Midlands Cruise","Unique","Ultra Expensive","Motorsport"],
+    "isPrize": false,
+	
+    "weight": 962,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 78.84,
+    "ola": 97.56,
+    "description": "The factory were sufficiently impressed by DP212 that they further developed the concept for 1963 and produced two the DP214 GT cars, again based on the DB4GT. The body was now lower, wider and lengthened to finish with a Kamm tail to give greater stability at high speed. Again, early promise in the GT class at Le Mans in 1963 evaporated after both cars retired with problems due to broken pistons after achieving good positions.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1096819252016713898/DP214GT.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1096820757616660490/dp214gt.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 189,
+"3330to60": 3.9,
+"333Handling": 79,
+
+"666TopSpeed": 192,
+"6660to60": 3.7,
+"666Handling": 81,
+
+"699TopSpeed": 192,
+"6990to60": 3.5,
+"699Handling": 84,
+
+"969TopSpeed": 194,
+"9690to60": 3.7,
+"969Handling": 84,
+
+"996TopSpeed": 194,
+"9960to60": 3.5,
+"996Handling": 81
+}

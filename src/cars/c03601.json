@@ -1,0 +1,49 @@
+{
+    "rq": 40,
+    "make": "Aston Martin",
+    "model": "DB4 GT Bertone Jet",
+    "modelYear": 1961,
+    "country": "GB",
+    "topSpeed": 153,
+    "0to60": 6.4,
+    "handling": 70,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","The Midlands Cruise","Unique","Ultra Expensive","Street Racer"],
+    "isPrize": false,
+	
+    "weight": 1300,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 78.04,
+    "ola": 100,
+    "description": "The highest number DB4GT chassis (DB4GT/0201/L) was dispatched to the famous Italian coachbuilder, Bertone shortly before Christmas, 1960. And within a few short weeks, a fabulous notchback coupe body, reminiscent of Bertone bodied Ferraris of the time was added.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1096819158022361098/DB4GTBertoneJet.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1096820697415823500/DB4GTBertoneJet.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 156,
+"3330to60": 6.1,
+"333Handling": 72,
+
+"666TopSpeed": 160,
+"6660to60": 5.8,
+"666Handling": 75,
+
+"699TopSpeed": 160,
+"6990to60": 5.4,
+"699Handling": 78,
+
+"969TopSpeed": 163,
+"9690to60": 5.8,
+"969Handling": 78,
+
+"996TopSpeed": 163,
+"9960to60": 5.4,
+"996Handling": 75
+}

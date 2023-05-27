@@ -1,0 +1,53 @@
+{
+    "rq": 1,
+    "make": "Volkswagen",
+    "model": "Golf CitySTROMer RWE Energie Racing",
+    "modelYear": 1986,
+    "country": "DE",
+    "topSpeed": 87,
+    "0to60": 15.4,
+    "handling": 63,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Eco-Friendly","Unique","Motorsport","Endless Summer","The Tyrol Tour: Remix"],
+    "isPrize": true,
+
+
+    "weight": 1375,
+    "gc": "Low",
+    "seatCount":1,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 4.388,
+    "ola": 40.26,
+    "description": "Top racer in the Grand Prix Formula E.",
+
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/959128067228446730/Golfmk2CitystromerRacing.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1054084596066693140/RWERace.png",
+    "creator": "Andu",
+
+    
+    "333TopSpeed": 93,
+    "3330to60": 14.6,
+    "333Handling": 65,
+
+    "666TopSpeed": 99,
+    "6660to60": 13.9, 
+    "666Handling": 67,
+
+    "996TopSpeed": 105,
+    "9960to60": 13.1,
+    "996Handling": 67,
+
+    "969TopSpeed": 105,
+    "9690to60": 13.9,
+    "969Handling": 70,
+
+    "699TopSpeed": 99,
+    "6990to60": 13.1,
+    "699Handling": 70
+}

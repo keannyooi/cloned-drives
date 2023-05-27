@@ -8,7 +8,7 @@ const { connect } = require("mongoose");
 const { DateTime, Interval } = require("luxon");
 const { schedule } = require("node-cron");
 const { ErrorMessage, InfoMessage, BotError } = require("./src/util/classes/classes.js");
-const { adminRoleID, eventMakerRoleID, testerRoleID } = require("./src/util/consts/consts.js");
+const { adminRoleID, eventMakerRoleID, testerRoleID, sandboxRoleID } = require("./src/util/consts/consts.js");
 const endEvent = require("./src/util/functions/endEvent.js");
 const endOffer = require("./src/util/functions/endOffer.js");
 const regenBM = require("./src/util/functions/regenBM.js");
@@ -193,6 +193,11 @@ async function processCommand(message) {
         case "Testing":
             if (!member.roles.cache.has(testerRoleID)) {
                 return accessDenied(message, testerRoleID);
+            }
+	       break;
+        case "Sandbox":
+            if (!member.roles.cache.has(sandboxRoleID)) {
+                return accessDenied(message, sandboxRoleID);
             }
             break;
         default:

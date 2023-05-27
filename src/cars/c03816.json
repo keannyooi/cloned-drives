@@ -1,0 +1,49 @@
+{
+    "rq": 77,
+    "make": ["Lagonda", "Aston Martin"],
+    "model": "Vision Concept",
+    "modelYear": 2018,
+    "country": "GB",
+    "topSpeed": 155,
+    "0to60": 4.0,
+    "handling": 84,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Endless Summer","Unique","Concept","Ultra Expensive","The Midlands Cruise","Visionary Road"],
+    "isPrize": false,
+	
+    "weight": 2350,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 80,
+    "ola": 90,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1103323445883846667/LagondaVisionConcept.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1103324145124642876/LagondaVisionConcpet.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 158,
+"3330to60": 3.8,
+"333Handling": 87,
+
+"666TopSpeed": 162,
+"6660to60": 3.6,
+"666Handling": 90,
+
+"699TopSpeed": 162,
+"6990to60": 3.4,
+"699Handling": 93,
+
+"969TopSpeed": 165,
+"9690to60": 3.6,
+"969Handling": 93,
+
+"996TopSpeed": 165,
+"9960to60": 3.4,
+"996Handling": 90
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 56,
+    "make": "Bentley",
+    "model": "Grand Convertible",
+    "modelYear": 2014,
+    "country": "GB",
+    "topSpeed": 170,
+    "0to60": 5.0,
+    "handling": 73,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","The Midlands Cruise"],
+    "isPrize": false,
+	
+    "weight": 2850,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 70,
+    "ola": 77.5,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1103332574002151596/GradnConvBentley.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1103332988969824397/GrandConvereitbl.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 173,
+"3330to60": 4.8,
+"333Handling": 75,
+
+"666TopSpeed": 176,
+"6660to60": 4.5,
+"666Handling": 78,
+
+"699TopSpeed": 176,
+"6990to60": 4.3,
+"699Handling": 81,
+
+"969TopSpeed": 179,
+"9690to60": 4.5,
+"969Handling": 81,
+
+"996TopSpeed": 179,
+"9960to60": 4.3,
+"996Handling": 78
+}

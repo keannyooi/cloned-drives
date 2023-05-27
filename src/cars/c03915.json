@@ -1,0 +1,49 @@
+{
+    "rq": 91,
+    "make": "Porsche",
+    "model": "917K/20 \"Pink Pig\"",
+    "modelYear": 1971,
+    "country": "DE",
+    "topSpeed": 225,
+    "0to60": 2.7,
+    "handling": 93,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Endless Summer","Motorsport","Unique","Ultra Expensive","The Tyrol Tour: Remix"],
+    "isPrize": true,
+	
+    "weight": 909,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 105,
+    "ola": 95.68,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1104776257696190646/917K20PinkPig.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1104779145776476321/917K20PinkPig.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 227,
+"3330to60": 2.6,
+"333Handling": 96,
+
+"666TopSpeed": 230,
+"6660to60": 2.4,
+"666Handling": 99,
+
+"699TopSpeed": 230,
+"6990to60": 2.3,
+"699Handling": 103,
+
+"969TopSpeed": 232,
+"9690to60": 2.4,
+"969Handling": 103,
+
+"996TopSpeed": 232,
+"9960to60": 2.3,
+"996Handling": 99
+}

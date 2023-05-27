@@ -1,0 +1,52 @@
+{
+    "rq": 1,
+    "make": "Volkswagen",
+    "model": "Golf CitySTROMer",
+    "modelYear": 1984,
+    "country": "DE",
+    "topSpeed": 59,
+    "0to60": 99.9,
+    "handling": 52,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly","Unique","Endless Summer", "The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+
+    "weight": 1510,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 0.00,
+    "ola": 17.64,
+    "description": "Second gen showing its electric muscles",
+
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/959128026342379541/Golfmk2Citystromer.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1054084629931507782/Citystromer2.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 68,
+    "3330to60": 58.5,
+    "333Handling": 54,
+
+    "666TopSpeed": 76,
+    "6660to60": 55.6, 
+    "666Handling": 55,
+
+    "996TopSpeed": 85,
+    "9960to60": 52.7,
+    "996Handling": 55,
+
+    "969TopSpeed": 85,
+    "9690to60": 55.6,
+    "969Handling": 58,
+
+    "699TopSpeed": 76,
+    "6990to60": 52.7,
+    "699Handling": 58
+}

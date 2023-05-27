@@ -1,0 +1,49 @@
+{
+    "rq": 54,
+    "make": "Land Rover",
+    "model": "Defender 130 D300 MHEV",
+    "modelYear": 2022,
+    "country": "GB",
+    "topSpeed": 119,
+    "0to60": 7.1,
+    "handling": 62,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["Endless Summer","The Midlands Cruise","Eco-Friendly"],
+    "isPrize": false,
+	
+    "weight": 2589,
+    "gc": "High",
+    "seatCount": 8,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 44.12,
+    "ola": 65.14,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1104774824238256241/130D300MHEVDefender20.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1104778480438231203/Defender130D300MHEV.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 123,
+"3330to60": 6.7,
+"333Handling": 64,
+
+"666TopSpeed": 128,
+"6660to60": 6.4,
+"666Handling": 66,
+
+"699TopSpeed": 128,
+"6990to60": 6,
+"699Handling": 69,
+
+"969TopSpeed": 132,
+"9690to60": 6.4,
+"969Handling": 69,
+
+"996TopSpeed": 132,
+"9960to60": 6,
+"996Handling": 66
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 40,
+    "make": ["DC Design", "Mitsubishi"],
+    "model": "Gaia",
+    "modelYear": 2003,
+    "country": "IN",
+    "topSpeed": 149,
+    "0to60": 8.6,
+    "handling": 74,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Endless Summer","Unique","Rest of The World","The Rest of the Best: 2023","Tuner"],
+    "isPrize": false,
+	
+    "weight": 2250,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 49.14,
+    "ola": 76.74,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1101833149329178707/DCGaia.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1101833954484572200/GaiaDC.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 152,
+"3330to60": 8.2,
+"333Handling": 76,
+
+"666TopSpeed": 156,
+"6660to60": 7.7,
+"666Handling": 79,
+
+"699TopSpeed": 156,
+"6990to60": 7.3,
+"699Handling": 82,
+
+"969TopSpeed": 159,
+"9690to60": 7.7,
+"969Handling": 82,
+
+"996TopSpeed": 159,
+"9960to60": 7.3,
+"996Handling": 79
+}

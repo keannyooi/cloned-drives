@@ -1,0 +1,49 @@
+{
+    "rq": 90,
+    "make": ["ScienceofSpeed", "Acura"],
+    "model": "NSX \"Dream Project\"",
+    "modelYear": 2017,
+    "country": "US",
+    "topSpeed": 196,
+    "0to60": 3.0,
+    "handling": 93,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer", "Street Racer", "Unique", "Eco-Friendly", "Tuner", "Supercar", "The Americas Assault"],
+    "isPrize": false,
+	
+    "weight": 1770,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Hybrid",
+    "mra": 88.24,
+    "ola": 86.67,
+    "description": "None.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1106240288818728960/SOS_NSX_Dream_Project_2017.png",
+	"racehud": "https://media.discordapp.net/attachments/1077293403668234340/1106248854837395476/SOS_NSX_Dream_Project_2017_Hud.png",
+    "creator": "DodgeDemon",
+
+"333TopSpeed": 199,
+"3330to60": 2.8,
+"333Handling": 96,
+
+"666TopSpeed": 201,
+"6660to60": 2.7,
+"666Handling": 99,
+
+"699TopSpeed": 201,
+"6990to60": 2.5,
+"699Handling": 103,
+
+"969TopSpeed": 204,
+"9690to60": 2.7,
+"969Handling": 103,
+
+"996TopSpeed": 204,
+"9960to60": 2.5,
+"996Handling": 99
+}

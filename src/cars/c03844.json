@@ -1,0 +1,49 @@
+{
+    "rq": 180,
+    "make": "Tesla",
+    "model": "Model S Long Range Plus (BOSS)",
+    "modelYear": 2023,
+    "country": "US",
+    "topSpeed": 155,
+    "0to60": 2.5,
+    "handling": 84,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Endless Summer","BOSS"],
+    "isPrize": true,
+	
+    "weight": 2215,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 71.15,
+    "ola": 79.19,
+    "description": "Part of the Endless Summer Boss Collection 1!",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1103318411917938688/TeslaModelSLongRangePlusBoss.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1103318647075778560/BossTesla.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 158,
+"3330to60": 2.4,
+"333Handling": 87,
+
+"666TopSpeed": 162,
+"6660to60": 2.3,
+"666Handling": 90,
+
+"699TopSpeed": 162,
+"6990to60": 2.1,
+"699Handling": 93,
+
+"969TopSpeed": 165,
+"9690to60": 2.3,
+"969Handling": 93,
+
+"996TopSpeed": 165,
+"9960to60": 2.1,
+"996Handling": 90
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 60,
+    "make": "Mercedes-Benz",
+    "model": "W196 Streamliner",
+    "modelYear": 1954,
+    "country": "DE",
+    "topSpeed": 205,
+    "0to60": 4.5,
+    "handling": 74,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","Motorsport","The Tyrol Tour: Remix","Unique"],
+    "isPrize": true,
+	
+    "weight": 829,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 80,
+    "ola": 97.85,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1103348842465857546/W196Streamliner.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1103348999454470144/W196Stremliner.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 208,
+"3330to60": 4.3,
+"333Handling": 76,
+
+"666TopSpeed": 210,
+"6660to60": 4,
+"666Handling": 79,
+
+"699TopSpeed": 210,
+"6990to60": 3.8,
+"699Handling": 82,
+
+"969TopSpeed": 213,
+"9690to60": 4,
+"969Handling": 82,
+
+"996TopSpeed": 213,
+"9960to60": 3.8,
+"996Handling": 79
+}

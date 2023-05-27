@@ -1,0 +1,49 @@
+{
+    "rq": 19,
+    "make": "Porsche",
+    "model": "912 Targa",
+    "modelYear": 1966,
+    "country": "DE",
+    "topSpeed": 109,
+    "0to60": 13.2,
+    "handling": 65,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Endless Summer","The Tyrol Tour: Remix","Oceanic View"],
+    "isPrize": false,
+	
+    "weight": 970,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 39.99,
+    "ola": 70,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1103370256724004945/Porsche912Targa.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1103370483321286806/912Targa.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 114,
+"3330to60": 12.5,
+"333Handling": 67,
+
+"666TopSpeed": 119,
+"6660to60": 11.9,
+"666Handling": 69,
+
+"699TopSpeed": 119,
+"6990to60": 11.2,
+"699Handling": 72,
+
+"969TopSpeed": 123,
+"9690to60": 11.9,
+"969Handling": 72,
+
+"996TopSpeed": 123,
+"9960to60": 11.2,
+"996Handling": 69
+}

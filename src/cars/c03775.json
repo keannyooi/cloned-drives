@@ -1,0 +1,49 @@
+{
+    "rq": 71,
+    "make": "Mitsubishi",
+    "model": "Lancer Evolution X GSR TC-SST",
+    "modelYear": 2008,
+    "country": "JP",
+    "topSpeed": 155,
+    "0to60": 5.0,
+    "handling": 88,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","The Amplification of Asia","Street Racer"],
+    "isPrize": false,
+	
+    "weight": 1560,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 67.4,
+    "ola": 76.93,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1101845339952140308/evo10gsrtcsst.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1101846013666406530/Evo10GSRTCSSTMitsusbishi.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 158,
+"3330to60": 4.8,
+"333Handling": 91,
+
+"666TopSpeed": 162,
+"6660to60": 4.5,
+"666Handling": 94,
+
+"699TopSpeed": 162,
+"6990to60": 4.3,
+"699Handling": 98,
+
+"969TopSpeed": 165,
+"9690to60": 4.5,
+"969Handling": 98,
+
+"996TopSpeed": 165,
+"9960to60": 4.3,
+"996Handling": 94
+}

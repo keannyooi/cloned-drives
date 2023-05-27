@@ -1,0 +1,49 @@
+{
+    "rq": 83,
+    "make": "Mitsubishi",
+    "model": "Lancer Evolution X GSR Tuned by Ralliart",
+    "modelYear": 2007,
+    "country": "JP",
+    "topSpeed": 167,
+    "0to60": 4.2,
+    "handling": 91,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","The Amplification of Asia","Street Racer","Tuner","Track Day"],
+    "isPrize": false,
+	
+    "weight": 1490,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 83.5,
+    "ola": 81.23,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1101845187765997668/evo10GSRralliart.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1101845964010033282/Evo10RalliartMitsusbishi.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 170,
+"3330to60": 4,
+"333Handling": 94,
+
+"666TopSpeed": 173,
+"6660to60": 3.8,
+"666Handling": 97,
+
+"699TopSpeed": 173,
+"6990to60": 3.6,
+"699Handling": 101,
+
+"969TopSpeed": 176,
+"9690to60": 3.8,
+"969Handling": 101,
+
+"996TopSpeed": 176,
+"9960to60": 3.6,
+"996Handling": 97
+}

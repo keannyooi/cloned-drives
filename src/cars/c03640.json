@@ -1,0 +1,52 @@
+{
+    "rq": 51,
+    "make": "Fiat",
+    "model": "Croma 8ttoV Concept",
+    "modelYear": 2005,
+    "country": "IT",
+    "topSpeed": 167,
+    "0to60": 6.5,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Concept", "Unique", "The Tyrol Tour: Remix","Endless Summer","Visionary Road"],
+    "isPrize": false,
+
+
+    "weight": 1650,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 81.25,
+    "ola": 81.54,
+    "description": "Body by Americans, Engine by Italians and Heart by Germans.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1089619328665665736/Croma8ttoV.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1089619651820003479/8ttoV.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 170,
+    "3330to60": 6.2,
+    "333Handling": 75,
+    
+    "666TopSpeed": 173,
+    "6660to60": 5.9,
+    "666Handling": 78,
+    
+    "699TopSpeed": 173,
+    "6990to60": 5.5,
+    "699Handling": 81,
+    
+    "969TopSpeed": 176,
+    "9690to60": 5.9,
+    "969Handling": 81,
+    
+    "996TopSpeed": 176,
+    "9960to60": 5.5,
+    "996Handling": 78
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 61,
+    "make": "Maserati",
+    "model": "250F",
+    "modelYear": 1954,
+    "country": "IT",
+    "topSpeed": 174,
+    "0to60": 4.3,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","Motorsport","Unique","Ultra Expensive","The Tyrol Tour: Remix"],
+    "isPrize": true,
+	
+    "weight": 670,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 81.13,
+    "ola": 105.55,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1104776680314245281/Maserati250F.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1104779640331055247/F250.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 177,
+"3330to60": 4.1,
+"333Handling": 77,
+
+"666TopSpeed": 180,
+"6660to60": 3.9,
+"666Handling": 80,
+
+"699TopSpeed": 180,
+"6990to60": 3.7,
+"699Handling": 83,
+
+"969TopSpeed": 183,
+"9690to60": 3.9,
+"969Handling": 83,
+
+"996TopSpeed": 183,
+"9960to60": 3.7,
+"996Handling": 80
+}

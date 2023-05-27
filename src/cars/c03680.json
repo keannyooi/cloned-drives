@@ -1,0 +1,49 @@
+{
+    "rq": 97,
+    "make": ["Lola-Aston Martin", "Aston Martin", "Lola"],
+    "model": "B10/60",
+    "modelYear": 2010,
+    "country": "GB",
+    "topSpeed": 215,
+    "0to60": 2.5,
+    "handling": 99,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["The Midlands Cruise","Motorsport","Ultra Expensive","Unique","Endless Summer"],
+    "isPrize": true,
+	
+    "weight": 900,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 105,
+    "ola": 90,
+    "description": "In 2010, AMR competed at the 2010 12 Hours of Sebring the first appearance of the LMP1 car in the US finishing the race in 3rd position, 3 laps behind the 2 winning Peugeots. Three cars were again entered in the 2010 24 Hours of Le Mans, 007 and 009 by AMR and 008 by the French team Signature-Plus. Both the 008 and 009 cars suffered from problems retired, leaving only the 007 to finish 6th overall after 365 laps, less than it did in 2009. It was the third highest petrol finisher.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1096532600450973838/B10-60.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1096532936788021298/B10-60.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 217,
+"3330to60": 2.4,
+"333Handling": 102,
+
+"666TopSpeed": 220,
+"6660to60": 2.3,
+"666Handling": 106,
+
+"699TopSpeed": 220,
+"6990to60": 2.1,
+"699Handling": 110,
+
+"969TopSpeed": 222,
+"9690to60": 2.3,
+"969Handling": 110,
+
+"996TopSpeed": 222,
+"9960to60": 2.1,
+"996Handling": 106
+}

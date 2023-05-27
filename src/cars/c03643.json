@@ -1,0 +1,49 @@
+{
+    "rq": 40,
+    "make": "Aston Martin",
+    "model": "DB5 Vantage Convertible",
+    "modelYear": 1964,
+    "country": "GB",
+    "topSpeed": 150,
+    "0to60": 6.5,
+    "handling": 71,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","The Midlands Cruise","Grand Tourer"],
+    "isPrize": false,
+
+    "weight": 1490,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 83.33,
+    "ola": 86.15,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1096837278002860112/DB5VantageConvertible.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1096838508796199072/DB5VantageConvertible.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 153,
+"3330to60": 6.2,
+"333Handling": 73,
+
+"666TopSpeed": 157,
+"6660to60": 5.9,
+"666Handling": 76,
+
+"699TopSpeed": 157,
+"6990to60": 5.5,
+"699Handling": 79,
+
+"969TopSpeed": 160,
+"9690to60": 5.9,
+"969Handling": 79,
+
+"996TopSpeed": 160,
+"9960to60": 5.5,
+"996Handling": 76
+}

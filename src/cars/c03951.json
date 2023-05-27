@@ -1,0 +1,50 @@
+{
+    "rq": 29,
+    "make": "Chevrolet",
+    "model": "Epica 2.5 24V LT",
+    "modelYear": 2007,
+    "country": "US",
+    "topSpeed": 129,
+    "0to60": 10.2,
+    "handling": 69,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Americas Assault","Endless Summer"],
+    "isPrize": false,
+
+
+    "weight": 1575,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 49.51,
+    "ola": 70.58,
+    "description": "This thing has a Porsche developed inline 6. Exciting right.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1106241616508883034/E.ChevyEpic25.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1106244197780033567/epico6.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 133,
+    "3330to60": 9.7,
+    "333Handling": 71,
+
+    "666TopSpeed": 137,
+    "6660to60": 9.2, 
+    "666Handling": 74,
+
+    "996TopSpeed": 141,
+    "9960to60": 8.7,
+    "996Handling": 74,
+
+    "969TopSpeed": 141,
+    "9690to60": 9.2,
+    "969Handling": 77,
+
+    "699TopSpeed": 137,
+    "6990to60": 8.7,
+    "699Handling": 77
+}

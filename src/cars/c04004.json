@@ -1,0 +1,49 @@
+{
+    "rq": 60,
+    "make": "Porsche",
+    "model": "911 Carrera RS 2.7 Sport Lightweight",
+    "modelYear": 1972,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 5.2,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","Track Day","The Tyrol Tour: Remix","Innovative"],
+    "isPrize": false,
+	
+    "weight": 900,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 77.75,
+    "ola": 70,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1110672397113241750/Porsche911RS2.7SportLightweight1973.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1110672778199322769/Porsche911RS2.7SportLightweight1973.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 158,
+"3330to60": 4.9,
+"333Handling": 80,
+
+"666TopSpeed": 162,
+"6660to60": 4.7,
+"666Handling": 82,
+
+"699TopSpeed": 162,
+"6990to60": 4.4,
+"699Handling": 85,
+
+"969TopSpeed": 165,
+"9690to60": 4.7,
+"969Handling": 85,
+
+"996TopSpeed": 165,
+"9960to60": 4.4,
+"996Handling": 82
+}

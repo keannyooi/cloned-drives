@@ -1,0 +1,52 @@
+{
+    "rq": 23,
+    "make": "Volkswagen",
+    "model": "Golf 1.6 Moda",
+    "modelYear": 1990,
+    "country": "DE",
+    "topSpeed": 103,
+    "0to60": 12.0,
+    "handling": 68,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Endless Summer", "The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+
+    "weight": 890,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 27.71,
+    "ola": 63.33,
+    "description": "fashion fashion fashion fashion.",
+
+
+    "card": "https://media.discordapp.net/attachments/819199720249360384/959127745395327106/Golf16Moda.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1054085833495416934/Golf16Moda.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 108,
+    "3330to60": 11.4,
+    "333Handling": 70,
+
+    "666TopSpeed": 113,
+    "6660to60": 10.8, 
+    "666Handling": 72,
+
+    "996TopSpeed": 118,
+    "9960to60": 10.2,
+    "996Handling": 72,
+
+    "969TopSpeed": 118,
+    "9690to60": 10.8,
+    "969Handling": 75,
+
+    "699TopSpeed": 113,
+    "6990to60": 10.2,
+    "699Handling": 75
+}

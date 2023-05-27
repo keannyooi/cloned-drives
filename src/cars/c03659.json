@@ -1,0 +1,49 @@
+{
+    "rq": 26,
+    "make": "Bentley",
+    "model": "State Limousine",
+    "modelYear": 2002,
+    "country": "GB",
+    "topSpeed": 130,
+    "0to60": 9.2,
+    "handling": 63,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Endless Summer","The Midlands Cruise","Unique","Ultra Expensive"],
+    "isPrize": false,
+	
+    "weight": 4000,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 65.24,
+    "ola": 54.34,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1100103372851392602/StateLimoBentlye.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100103503025819772/StateLimousine.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 134,
+"3330to60": 8.7,
+"333Handling": 65,
+
+"666TopSpeed": 138,
+"6660to60": 8.3,
+"666Handling": 67,
+
+"699TopSpeed": 138,
+"6990to60": 7.8,
+"699Handling": 70,
+
+"969TopSpeed": 142,
+"9690to60": 8.3,
+"969Handling": 70,
+
+"996TopSpeed": 142,
+"9960to60": 7.8,
+"996Handling": 67
+}

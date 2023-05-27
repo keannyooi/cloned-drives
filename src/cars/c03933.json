@@ -1,0 +1,52 @@
+{  
+    "rq": 1,
+    "make": "Bedford",
+    "model": "Rascal 1.0 Panel Van",
+    "modelYear": 1986,
+    "country": "GB",
+    "topSpeed": 70,
+    "0to60": 35.0,
+    "handling": 50,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Midlands Cruise","Endless Summer"],
+    "isPrize": false,
+
+
+    "weight": 820,
+    "gc": "Medium",
+    "seatCount":2,
+    "bodyStyle": "Commercial",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 0.00,
+    "ola": 53.71,
+    "description": "Back in the 2000s this was an incredible deal and an unlikely racer; if you were crazy enough to spend lots of money on it!",
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1106272948391788544/Rascal10PV.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1106273216483299419/BedfordRascal.png",
+    "creator": "Andu",
+
+
+    "333TopSpeed": 77,
+    "3330to60": 33.3,
+    "333Handling": 52,
+    
+    "666TopSpeed": 85,
+    "6660to60": 31.5,
+    "666Handling": 53,
+    
+    "699TopSpeed": 85,
+    "6990to60": 29.8,
+    "699Handling": 56,
+    
+    "969TopSpeed": 92,
+    "9690to60": 31.5,
+    "969Handling": 56,
+    
+    "996TopSpeed": 92,
+    "9960to60": 29.8,
+    "996Handling": 53
+}

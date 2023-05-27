@@ -1,0 +1,49 @@
+{
+    "rq": 74,
+    "make": ["Car Craft", "Ford"],
+    "model": "Cobra 200",
+    "modelYear": 1993,
+    "country": "US",
+    "topSpeed": 202,
+    "0to60": 3.5,
+    "handling": 81,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner","The Americas Assault","Muscle Car","Endless Summer"],
+    "isPrize": false,
+	
+    "weight": 1476,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 102.94,
+    "ola": 97.14,
+    "description": "Car Craft Magazine had a goal: Reach 200 MPH in a domestic street-legal car. This supercharged 5.0 liter monster putting out 740 HP and revving to 7,200 RPM is the result.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1081841056594800740/cloned_drives_cobra_200.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1081841149112766555/cobra_200.png",
+    "creator": "Preston",
+
+"333TopSpeed": 205,
+"3330to60": 3.3,
+"333Handling": 84,
+
+"666TopSpeed": 207,
+"6660to60": 3.1,
+"666Handling": 86,
+
+"699TopSpeed": 207,
+"6990to60": 3,
+"699Handling": 90,
+
+"969TopSpeed": 210,
+"9690to60": 3.1,
+"969Handling": 90,
+
+"996TopSpeed": 210,
+"9960to60": 3,
+"996Handling": 86
+}

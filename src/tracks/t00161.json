@@ -1,0 +1,18 @@
+{
+	"trackName": "Col De Turini (Snowy)",
+	"weather": "Sunny",
+	"surface": "Snowy",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://cdn.discordapp.com/attachments/800047734035841037/1111733477038100631/maxresdefault.png",
+	"map": "https://cdn.discordapp.com/attachments/800047734035841037/1111733015186526268/col-de-la-bonette-saint-etienne-de-tinee-map-200x150.png",
+	
+	"specsDistr": {
+		"topSpeed": 0,
+		"0to60": 100,
+		"handling": 100,
+		"weight": 25,
+		"mra": 40,
+		"ola": 20
+	}
+}

@@ -3,7 +3,7 @@
 const bot = require("../config/config.js");
 const { DateTime, Interval } = require("luxon");
 const { ErrorMessage, InfoMessage } = require("../util/classes/classes.js");
-const { eventMakerRoleID } = require("../util/consts/consts.js");
+const { eventMakerRoleID, sandboxRoleID } = require("../util/consts/consts.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const createCar = require("../util/functions/createCar.js");
 const confirm = require("../util/functions/confirm.js");
@@ -62,6 +62,15 @@ module.exports = {
                     author: message.author
                 });
                 return errorMessage.sendMessage({ currentMessage });
+            }
+			else if (guildMember.roles.cache.has(sandboxRoleID)) {
+                const errorMessage = new ErrorMessage({
+                    channel: message.channel,
+                    title: "Error, this is not available for Sandbox Alts.",
+                    desc: `Unfortunately the commnad you are trying to use is not a available for accounts with the <@&${sandboxRoleID}> role.`,
+                    author: message.author,
+                });
+                return errorMessage.sendMessage();
             }
 
             if (!filterCheck({ car: hand, filter: event.roster[round - 1].reqs, applyOrLogic: true })) {

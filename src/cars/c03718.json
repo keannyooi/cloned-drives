@@ -1,0 +1,49 @@
+{
+    "rq": 22,
+    "make": "Nissan",
+    "model": "Skyline 1800 (PC10)",
+    "modelYear": 1969,
+    "country": "JP",
+    "topSpeed": 103,
+    "0to60": 10.9,
+    "handling": 65,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Endless Summer","The Amplification of Asia"],
+    "isPrize": false,
+	
+    "weight": 975,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 21.41,
+    "ola": 64.22,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1097515246698119239/skyline1800PC10.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1097515826564833372/Skyline1800PC10.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 108,
+"3330to60": 10.4,
+"333Handling": 67,
+
+"666TopSpeed": 113,
+"6660to60": 9.8,
+"666Handling": 69,
+
+"699TopSpeed": 113,
+"6990to60": 9.3,
+"699Handling": 72,
+
+"969TopSpeed": 118,
+"9690to60": 9.8,
+"969Handling": 72,
+
+"996TopSpeed": 118,
+"9960to60": 9.3,
+"996Handling": 69
+}

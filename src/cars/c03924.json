@@ -1,0 +1,49 @@
+{
+    "rq": 88,
+    "make": "Acura",
+    "model": "NSX GT3 Evo",
+    "modelYear": 2019,
+    "country": "US",
+    "topSpeed": 180,
+    "0to60": 3.0,
+    "handling": 97,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Endless Summer", "Motorsport", "The Americas Assault"],
+    "isPrize": false,
+	
+    "weight": 1250,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 92.50,
+    "ola": 87.55,
+    "description": "None.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1106238525411688468/Acura_NSX_GT3_Evo_2019.png",
+	"racehud": "https://media.discordapp.net/attachments/1077293403668234340/1106247163132002305/Acura_NSX_GT3_Evo_2019_Hud.png",
+    "creator": "DodgeDemon",
+
+"333TopSpeed": 186,
+"3330to60": 2.8,
+"333Handling": 100,
+
+"666TopSpeed": 189,
+"6660to60": 2.7,
+"666Handling": 103,
+
+"699TopSpeed": 189,
+"6990to60": 2.5,
+"699Handling": 108,
+
+"969TopSpeed": 192,
+"9690to60": 2.7,
+"969Handling": 108,
+
+"996TopSpeed": 192,
+"9960to60": 2.5,
+"996Handling": 103
+}

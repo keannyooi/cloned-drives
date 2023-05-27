@@ -99,6 +99,7 @@ function editFilter(message, filter, args) {
             });
             break;
         case "country":
+		case "creator":
         case "tyreType":
         case "driveType":
         case "enginePos":
@@ -279,6 +280,7 @@ function editFilter(message, filter, args) {
                 case "tcs":
                 case "gc":
                 case "rq":
+				case "creator":
                 case "search":
                     delete filter[criteria2];
                     successMessage = new SuccessMessage({
@@ -313,6 +315,7 @@ function editFilter(message, filter, args) {
                                 \`isbm\` - Filter black market cars.
                                 \`tags\` - Filter by tag. Provide the tag that you want to remove, or type \`all\` to remove all criterias in this category.
                                 \`collection\` - Filter by collection. Provide a valid collection after that.
+								\`creator\` - Filter by creator. Provide a valid creator after that.
                                 \`search\` - Filter by keyword in car name.
                                 \`all\` - Remove all filters.`,
                         author: message.author
@@ -346,6 +349,7 @@ function editFilter(message, filter, args) {
                         \`isbm\` - Filter black market cars. Provide a boolean value (\`true\` or \`false\`) after that.
                         \`tags\` - Filter by tag. Provide a valid tag after that.
                         \`collection\` - Filter by collection. Provide a valid collection after that.
+						\`creator\` - Filter by creator. Provide a valid creator after that.
                         \`search\` - Filter by a certain keyword inside a car's name. Provide a keyword that is found in a in-game car's name after that.
                         \`remove / disable\` - Remove a filter criteria. Provide a filter category and a value (if necessary) after that.`,
                 author: message.author

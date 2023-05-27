@@ -1,5 +1,5 @@
 {
-    "rq": 79,
+    "rq": 84,
     "make": [
         "JUN AUTO",
         "Toyota"
@@ -9,15 +9,15 @@
     "country": "JP",
     "topSpeed": 249,
     "0to60": 2.8,
-    "handling": 75,
+    "handling": 25,
     "driveType": "RWD",
-    "tyreType": "Performance",
+    "tyreType": "Drag",
     "tags": [
         "Tuner",
         "Unique",
         "The Japanese Odyssey"
     ],
-    "isPrize": true,
+    "isPrize": false,
     "weight": 1520,
     "gc": "Low",
     "seatCount": 1,
@@ -29,22 +29,26 @@
     "mra": 116.67,
     "ola": 114.29,
     "description": "The heart of the beast is this fully reworked 2JZ engine.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/969597233353859122/junakira.png",
-    "333TopSpeed": 251,
-    "3330to60": 2.7,
-    "333Handling": 77,
-    "666TopSpeed": 253,
-    "6660to60": 2.5,
-    "666Handling": 80,
-    "996TopSpeed": 255,
-    "9960to60": 2.4,
-    "996Handling": 80,
-    "969TopSpeed": 255,
-    "9690to60": 2.5,
-    "969Handling": 83,
-    "699TopSpeed": 253,
-    "6990to60": 2.4,
-    "699Handling": 83,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1016073817770164265/JunSupathing.png",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1101942129502208020/JunAutoAkiraSupra2001.png",
+"333TopSpeed": 251,
+"3330to60": 2.7,
+"333Handling": 26,
+
+"666TopSpeed": 253,
+"6660to60": 2.5,
+"666Handling": 27,
+
+"699TopSpeed": 253,
+"6990to60": 2.4,
+"699Handling": 28,
+
+"969TopSpeed": 255,
+"9690to60": 2.5,
+"969Handling": 28,
+
+"996TopSpeed": 255,
+"9960to60": 2.4,
+"996Handling": 27,
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1101965917056933938/JunSupra.png",
     "creator": "Havvy"
 }

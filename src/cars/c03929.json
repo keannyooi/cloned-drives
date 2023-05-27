@@ -1,0 +1,49 @@
+{
+    "rq": 57,
+    "make": "Acura",
+    "model": "Precision Concept",
+    "modelYear": 2016,
+    "country": "US",
+    "topSpeed": 179,
+    "0to60": 5.3,
+    "handling": 82,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer", "Eco-Friendly", "Concept", "The Americas Assault","Visionary Road"],
+    "isPrize": false,
+	
+    "weight": 1890,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 68.83,
+    "ola": 86.79,
+    "description": "The 4-Door NSX that wouldn't come to be.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1106239362267623565/Acura_Precision_Concept_2016.png",
+	"racehud": "https://media.discordapp.net/attachments/1077293403668234340/1106247962323066890/Acura_Precision_Concept_2016_Hud.png",
+    "creator": "DodgeDemon",
+
+"333TopSpeed": 182,
+"3330to60": 5.0,
+"333Handling": 85,
+
+"666TopSpeed": 185,
+"6660to60": 4.8,
+"666Handling": 87,
+
+"699TopSpeed": 185,
+"6990to60": 4.5,
+"699Handling": 91,
+
+"969TopSpeed": 188,
+"9690to60": 4.8,
+"969Handling": 91,
+
+"996TopSpeed": 188,
+"9960to60": 4.5,
+"996Handling": 87
+}

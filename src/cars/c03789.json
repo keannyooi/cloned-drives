@@ -1,0 +1,49 @@
+{
+    "rq": 57,
+    "make": "Bentley",
+    "model": "Brooklands",
+    "modelYear": 2008,
+    "country": "GB",
+    "topSpeed": 184,
+    "0to60": 5.2,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","The Midlands Cruise"],
+    "isPrize": false,
+	
+    "weight": 2650,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 84.17,
+    "ola": 81.11,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1103322640304844881/Broklan08Bentley.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1103323986949058561/Brookeland.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 187,
+"3330to60": 4.9,
+"333Handling": 77,
+
+"666TopSpeed": 190,
+"6660to60": 4.7,
+"666Handling": 80,
+
+"699TopSpeed": 190,
+"6990to60": 4.4,
+"699Handling": 83,
+
+"969TopSpeed": 192,
+"9690to60": 4.7,
+"969Handling": 83,
+
+"996TopSpeed": 192,
+"9960to60": 4.4,
+"996Handling": 80
+}

@@ -1,45 +1,50 @@
 {
-    "rq": 53,
+    "rq": 52,
     "make": "Chevrolet",
-    "model": "Cobalt SS SuperCharged",
+    "model": "Cobalt Coupe SS Supercharged",
     "modelYear": 2006,
     "country": "US",
-    "topSpeed": 158,
+    "topSpeed": 144,
     "0to60": 6.1,
     "handling": 80,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": [
-        "Street Racer"
-    ],
+    "tags": ["Tuner","Street Racer"],
     "isPrize": false,
-    "weight": 1320,
+
+
+    "weight": 1362,
     "gc": "Medium",
-    "seatCount": 5,
+    "seatCount": 4,
     "bodyStyle": "Coupe",
     "tcs": true,
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 67.42,
-    "ola": 73.33,
-    "description": "Americans tried to compete with the Japanese performance scene, and Chevrolet came late to the party but it still worth of an attempt to do so.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/824421779002753054/colbaltsssuperchargered.png",
-    "333TopSpeed": 161,
+    "mra": 67.03,
+    "ola": 72.13,
+    "description": "The meh coupe also had a unique supercharged setup.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1106241830443552838/B.ChevyCobaltCSSSC.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1106244419570643066/cobaltsc.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 148,
     "3330to60": 5.8,
     "333Handling": 83,
-    "666TopSpeed": 165,
-    "6660to60": 5.5,
+
+    "666TopSpeed": 151,
+    "6660to60": 5.5, 
     "666Handling": 85,
-    "996TopSpeed": 168,
+
+    "996TopSpeed": 155,
     "9960to60": 5.2,
     "996Handling": 85,
-    "969TopSpeed": 168,
+
+    "969TopSpeed": 155,
     "9690to60": 5.5,
     "969Handling": 89,
-    "699TopSpeed": 165,
+
+    "699TopSpeed": 151,
     "6990to60": 5.2,
-    "699Handling": 89,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095037690967244900/Chevrolet_Cobalt_SS_Supercharged.png",
-    "creator": "Spence"
+    "699Handling": 89
 }

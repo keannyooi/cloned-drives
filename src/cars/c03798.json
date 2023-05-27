@@ -1,0 +1,49 @@
+{
+    "rq": 48,
+    "make": "Bentley",
+    "model": "Mulsanne Grand Limousine by Mulliner",
+    "modelYear": 2016,
+    "country": "GB",
+    "topSpeed": 184,
+    "0to60": 5.6,
+    "handling": 70,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","The Midlands Cruise"],
+    "isPrize": false,
+	
+    "weight": 2910,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 65,
+    "ola": 84.14,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1103332616473694281/MulsanneLimoBentley.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1103333030631833712/MulsanneLimo.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 187,
+"3330to60": 5.3,
+"333Handling": 72,
+
+"666TopSpeed": 190,
+"6660to60": 5,
+"666Handling": 75,
+
+"699TopSpeed": 190,
+"6990to60": 4.8,
+"699Handling": 78,
+
+"969TopSpeed": 192,
+"9690to60": 5,
+"969Handling": 78,
+
+"996TopSpeed": 192,
+"9960to60": 4.8,
+"996Handling": 75
+}

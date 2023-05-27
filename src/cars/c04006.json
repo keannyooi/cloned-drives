@@ -1,0 +1,49 @@
+{
+    "rq": 65,
+    "make": "Porsche",
+    "model": "911 Carrera RSR",
+    "modelYear": 1972,
+    "country": "DE",
+    "topSpeed": 168,
+    "0to60": 4.5,
+    "handling": 87,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Endless Summer","Motorsport","Unique","The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 940,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 87.91,
+    "ola": 85.94,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1110672502218293289/Porsche911RSR1972.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1110672812512915539/Porsche911CarreraRSR1972.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 171,
+"3330to60": 4.3,
+"333Handling": 90,
+
+"666TopSpeed": 174,
+"6660to60": 4,
+"666Handling": 93,
+
+"699TopSpeed": 174,
+"6990to60": 3.8,
+"699Handling": 97,
+
+"969TopSpeed": 177,
+"9690to60": 4,
+"969Handling": 97,
+
+"996TopSpeed": 177,
+"9960to60": 3.8,
+"996Handling": 93
+}

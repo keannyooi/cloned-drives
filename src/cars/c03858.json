@@ -1,0 +1,49 @@
+{
+    "rq": 68,
+    "make": "Bentley",
+    "model": "Continental GT Speed",
+    "modelYear": 2007,
+    "country": "GB",
+    "topSpeed": 202,
+    "0to60": 4.4,
+    "handling": 81,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","The Midlands Cruise","Grand Tourer"],
+    "isPrize": false,
+	
+    "weight": 2350,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 80,
+    "ola": 72.73,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1104774005338165298/contiGTspeed2007.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1104777654818836530/ContiGTSpeed2007.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 205,
+"3330to60": 4.2,
+"333Handling": 84,
+
+"666TopSpeed": 207,
+"6660to60": 4,
+"666Handling": 86,
+
+"699TopSpeed": 207,
+"6990to60": 3.7,
+"699Handling": 90,
+
+"969TopSpeed": 210,
+"9690to60": 4,
+"969Handling": 90,
+
+"996TopSpeed": 210,
+"9960to60": 3.7,
+"996Handling": 86
+}

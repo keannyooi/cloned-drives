@@ -1,0 +1,49 @@
+{
+    "rq": 3,
+    "make": ["Aston-Martin", "Aston Martin"],
+    "model": "15/98 2/4 Seater",
+    "modelYear": 1937,
+    "country": "GB",
+    "topSpeed": 90,
+    "0to60": 19.2,
+    "handling": 53,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Unique","The Midlands Cruise","Endless Summer"],
+    "isPrize": false,
+	
+    "weight": 1045,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 10.4,
+    "ola": 66.5,
+    "description": "After the decision to reduce the number of 2 litre saloons to be built from 100 to just 50 was made, Gordon Sutherland had to introduce a revised model to take up the production capacity. So a short chassis (8' 6'') was introduced with the standard wet sump engine with the intention that the cars were to be more sporty than the 2 litre saloon and tourers built on the long chassis but not out-and-out sportscars as such.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1096530226563006645/15-98_2-4seater.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1096530836549009570/159824Seater.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 96,
+"3330to60": 18.2,
+"333Handling": 55,
+
+"666TopSpeed": 102,
+"6660to60": 17.3,
+"666Handling": 56,
+
+"699TopSpeed": 102,
+"6990to60": 16.3,
+"699Handling": 59,
+
+"969TopSpeed": 107,
+"9690to60": 17.3,
+"969Handling": 59,
+
+"996TopSpeed": 107,
+"9960to60": 16.3,
+"996Handling": 56
+}

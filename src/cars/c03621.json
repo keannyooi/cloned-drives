@@ -1,0 +1,49 @@
+{
+    "rq": 32,
+    "make": "Bufori",
+    "model": "MkI",
+    "modelYear": 1988,
+    "country": "AU",
+    "topSpeed": 99,
+    "0to60": 8.2,
+    "handling": 69,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Oddity","Rest of The World","The Rest of the Best: 2023","Endless Summer"],
+    "isPrize": false,
+	
+    "weight": 890,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 15.64,
+    "ola": 68.23,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1046405304046329996/bufori_mk1.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1046395758083063818/bufori_mk1.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 104,
+"3330to60": 7.8,
+"333Handling": 71,
+
+"666TopSpeed": 110,
+"6660to60": 7.4,
+"666Handling": 74,
+
+"699TopSpeed": 110,
+"6990to60": 7,
+"699Handling": 77,
+
+"969TopSpeed": 115,
+"9690to60": 7.4,
+"969Handling": 77,
+
+"996TopSpeed": 115,
+"9960to60": 7,
+"996Handling": 74
+}

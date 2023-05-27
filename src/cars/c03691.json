@@ -1,0 +1,49 @@
+{
+    "rq": 85,
+    "make": "Aston Martin",
+    "model": "Nimrod Evolution",
+    "modelYear": 1982,
+    "country": "GB",
+    "topSpeed": 213,
+    "0to60": 3.3,
+    "handling": 95,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Endless Summer","Motorsport","Ultra Expensive","Unique","The Midlands Cruise"],
+    "isPrize": false,
+	
+    "weight": 987,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 103.12,
+    "ola": 103.23,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1100779547454099608/NimrodEvo.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100780425221242942/NimrodEvo.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 215,
+"3330to60": 3.1,
+"333Handling": 98,
+
+"666TopSpeed": 218,
+"6660to60": 3,
+"666Handling": 101,
+
+"699TopSpeed": 218,
+"6990to60": 2.8,
+"699Handling": 105,
+
+"969TopSpeed": 220,
+"9690to60": 3,
+"969Handling": 105,
+
+"996TopSpeed": 220,
+"9960to60": 2.8,
+"996Handling": 101
+}

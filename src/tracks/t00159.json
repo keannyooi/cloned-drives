@@ -1,0 +1,18 @@
+{
+	"trackName": "Col De Turini (Sunny)",
+	"weather": "Sunny",
+	"surface": "Asphalt",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://cdn.discordapp.com/attachments/800047734035841037/1111732774274076833/col-turini.png",
+	"map": "https://cdn.discordapp.com/attachments/800047734035841037/1111733015186526268/col-de-la-bonette-saint-etienne-de-tinee-map-200x150.png",
+	
+	"specsDistr": {
+		"topSpeed": 0,
+		"0to60": 80,
+		"handling": 100,
+		"weight": 10,
+		"mra": 60,
+		"ola": 5
+	}
+}

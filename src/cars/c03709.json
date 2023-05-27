@@ -1,0 +1,49 @@
+{
+    "rq": 60,
+    "make": "Audi",
+    "model": "RS 6 Avant",
+    "modelYear": 2002,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 4.7,
+    "handling": 78,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 1880,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 74.89,
+    "ola": 74.3,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1101474832761237524/CD_Audi_RS_6_Avant_C5.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1101475604869685278/RS6Avant2002.png",
+    "creator": "Exist",
+
+"333TopSpeed": 158,
+"3330to60": 4.5,
+"333Handling": 81,
+
+"666TopSpeed": 162,
+"6660to60": 4.2,
+"666Handling": 83,
+
+"699TopSpeed": 162,
+"6990to60": 4,
+"699Handling": 87,
+
+"969TopSpeed": 165,
+"9690to60": 4.2,
+"969Handling": 87,
+
+"996TopSpeed": 165,
+"9960to60": 4,
+"996Handling": 83
+}

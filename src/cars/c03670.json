@@ -1,0 +1,49 @@
+{
+    "rq": 72,
+    "make": "Aston Martin",
+    "model": "DBR4",
+    "modelYear": 1959,
+    "country": "GB",
+    "topSpeed": 172,
+    "0to60": 3.5,
+    "handling": 80,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","Ultra Expensive","Unique","Motorsport","The Midlands Cruise"],
+    "isPrize": false,
+	
+    "weight": 625,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 79.54,
+    "ola": 108.57,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1100765171665874954/DBR4.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100765366948462673/dbr4.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 175,
+"3330to60": 3.3,
+"333Handling": 83,
+
+"666TopSpeed": 178,
+"6660to60": 3.1,
+"666Handling": 85,
+
+"699TopSpeed": 178,
+"6990to60": 3,
+"699Handling": 89,
+
+"969TopSpeed": 181,
+"9690to60": 3.1,
+"969Handling": 89,
+
+"996TopSpeed": 181,
+"9960to60": 3,
+"996Handling": 85
+}

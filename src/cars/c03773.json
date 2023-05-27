@@ -1,0 +1,49 @@
+{
+    "rq": 76,
+    "make": "Mitsubishi",
+    "model": "Lancer Evolution X GSR FQ-300 TC-SST",
+    "modelYear": 2008,
+    "country": "JP",
+    "topSpeed": 155,
+    "0to60": 4.6,
+    "handling": 89,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","The Amplification of Asia","Street Racer","Oceanic View"],
+    "isPrize": false,
+	
+    "weight": 1560,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 68.45,
+    "ola": 78.45,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1101845411855093830/evo10gsrfq300tcsst.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1101846062890745866/Evo10FQ300SSTMitsusbishi.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 158,
+"3330to60": 4.4,
+"333Handling": 92,
+
+"666TopSpeed": 162,
+"6660to60": 4.1,
+"666Handling": 95,
+
+"699TopSpeed": 162,
+"6990to60": 3.9,
+"699Handling": 99,
+
+"969TopSpeed": 165,
+"9690to60": 4.1,
+"969Handling": 99,
+
+"996TopSpeed": 165,
+"9960to60": 3.9,
+"996Handling": 95
+}

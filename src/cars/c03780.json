@@ -1,0 +1,49 @@
+{
+    "rq": 83,
+    "make": "Mitsubishi",
+    "model": "Lancer Evolution X TMR Bathurst Edition",
+    "modelYear": 2012,
+    "country": "JP",
+    "topSpeed": 159,
+    "0to60": 4.1,
+    "handling": 91,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","The Amplification of Asia","Street Racer","Track Day","Unique"],
+    "isPrize": false,
+	
+    "weight": 1540,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 75,
+    "ola": 82.25,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1101845536027463730/evo10bathurst.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1101846130481954876/Evo10BathurstMitsusbishi.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 162,
+"3330to60": 3.9,
+"333Handling": 94,
+
+"666TopSpeed": 166,
+"6660to60": 3.7,
+"666Handling": 97,
+
+"699TopSpeed": 166,
+"6990to60": 3.5,
+"699Handling": 101,
+
+"969TopSpeed": 169,
+"9690to60": 3.7,
+"969Handling": 101,
+
+"996TopSpeed": 169,
+"9960to60": 3.5,
+"996Handling": 97
+}

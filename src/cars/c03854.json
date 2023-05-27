@@ -1,0 +1,49 @@
+{
+    "rq": 61,
+    "make": ["Auto Union", "Audi"],
+    "model": "Type D",
+    "modelYear": 1938,
+    "country": "DE",
+    "topSpeed": 193,
+    "0to60": 3.8,
+    "handling": 67,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","Motorsport","Unique","Ultra Expensive","The Tyrol Tour: Remix"],
+    "isPrize": true,
+	
+    "weight": 850,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 82.61,
+    "ola": 115,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1104776624190259250/AUTypeD.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1104779499159179426/TypeDAU.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 196,
+"3330to60": 3.6,
+"333Handling": 69,
+
+"666TopSpeed": 198,
+"6660to60": 3.4,
+"666Handling": 71,
+
+"699TopSpeed": 198,
+"6990to60": 3.2,
+"699Handling": 74,
+
+"969TopSpeed": 201,
+"9690to60": 3.4,
+"969Handling": 74,
+
+"996TopSpeed": 201,
+"9960to60": 3.2,
+"996Handling": 71
+}

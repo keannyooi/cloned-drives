@@ -1,0 +1,49 @@
+{
+    "rq": 92,
+    "make": "Porsche",
+    "model": "917/10 Interserie Spyder",
+    "modelYear": 1970,
+    "country": "DE",
+    "topSpeed": 210,
+    "0to60": 2.5,
+    "handling": 93,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Endless Summer","Motorsport","Unique","Ultra Expensive","The Tyrol Tour: Remix"],
+    "isPrize": true,
+	
+    "weight": 725,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 100,
+    "ola": 94.56,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1104776330882601091/91710InterserieSpyder1970.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1104779194761756694/91710interserieSpyder1970.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 212,
+"3330to60": 2.4,
+"333Handling": 96,
+
+"666TopSpeed": 215,
+"6660to60": 2.3,
+"666Handling": 99,
+
+"699TopSpeed": 215,
+"6990to60": 2.1,
+"699Handling": 103,
+
+"969TopSpeed": 217,
+"9690to60": 2.3,
+"969Handling": 103,
+
+"996TopSpeed": 217,
+"9960to60": 2.1,
+"996Handling": 99
+}

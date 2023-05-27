@@ -1,0 +1,49 @@
+{
+    "rq": 2,
+    "make": ["Aston-Martin", "Aston Martin"],
+    "model": "Second Series LM Team Car",
+    "modelYear": 1932,
+    "country": "GB",
+    "topSpeed": 100,
+    "0to60": 13.2,
+    "handling": 62,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Motorsport","Unique","The Midlands Cruise","Innovative","Endless Summer"],
+    "isPrize": false,
+	
+    "weight": 870,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 12.5,
+    "ola": 69.4,
+    "description": "At Le Mans in 1932 this car came in a creditable 5th, and 1st in class. After this event the car was sold, but strangely repurchased by the works to compete in the 1933 Le Mans 24 hours where it came 7th overall, 2nd in class. The car has been in almost continuous usage on the track ever since.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1096530175417647166/2ndseriesLMcar.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1096530805913821254/2ndseriesLMcar.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 105,
+"3330to60": 12.5,
+"333Handling": 64,
+
+"666TopSpeed": 110,
+"6660to60": 11.9,
+"666Handling": 66,
+
+"699TopSpeed": 110,
+"6990to60": 11.2,
+"699Handling": 69,
+
+"969TopSpeed": 116,
+"9690to60": 11.9,
+"969Handling": 69,
+
+"996TopSpeed": 116,
+"9960to60": 11.2,
+"996Handling": 66
+}

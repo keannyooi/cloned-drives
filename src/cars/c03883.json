@@ -1,0 +1,49 @@
+{
+    "rq": 43,
+    "make": "Land Rover",
+    "model": "Defender 110 D200 MHEV",
+    "modelYear": 2020,
+    "country": "GB",
+    "topSpeed": 109,
+    "0to60": 9.5,
+    "handling": 61,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["Endless Summer","The Midlands Cruise","Eco-Friendly"],
+    "isPrize": false,
+	
+    "weight": 2340,
+    "gc": "High",
+    "seatCount": 7,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 37.55,
+    "ola": 64.18,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1104774668679917588/110D200MHEVDefender20.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1104778248828764231/D200MHEV110.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 114,
+"3330to60": 9,
+"333Handling": 63,
+
+"666TopSpeed": 119,
+"6660to60": 8.6,
+"666Handling": 65,
+
+"699TopSpeed": 119,
+"6990to60": 8.1,
+"699Handling": 68,
+
+"969TopSpeed": 123,
+"9690to60": 8.6,
+"969Handling": 68,
+
+"996TopSpeed": 123,
+"9960to60": 8.1,
+"996Handling": 65
+}

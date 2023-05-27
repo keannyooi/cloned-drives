@@ -1,0 +1,49 @@
+{
+    "rq": 88,
+    "make": "Porsche",
+    "model": "917K81",
+    "modelYear": 1981,
+    "country": "DE",
+    "topSpeed": 202,
+    "0to60": 2.9,
+    "handling": 94,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Endless Summer","Motorsport","Unique","Ultra Expensive","The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 900,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 100,
+    "ola": 94.25,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1104776419072028752/917K81.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1104779312474894347/917K81.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 205,
+"3330to60": 2.8,
+"333Handling": 97,
+
+"666TopSpeed": 207,
+"6660to60": 2.6,
+"666Handling": 100,
+
+"699TopSpeed": 207,
+"6990to60": 2.5,
+"699Handling": 104,
+
+"969TopSpeed": 210,
+"9690to60": 2.6,
+"969Handling": 104,
+
+"996TopSpeed": 210,
+"9960to60": 2.5,
+"996Handling": 100
+}

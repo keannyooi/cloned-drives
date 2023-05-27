@@ -1,0 +1,49 @@
+{
+    "rq": 63,
+    "make": "Ford",
+    "model": "Bronco Ultra4 4600",
+    "modelYear": 2021,
+    "country": "US",
+    "topSpeed": 106,
+    "0to60": 6.1,
+    "handling": 66,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["Endless Summer", "Motorsport", "The Americas Assault"],
+    "isPrize": false,
+	
+    "weight": 2000,
+    "gc": "High",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 53.51,
+    "ola": 68.85,
+    "description": "Race prepped factory-spec Bronco ready to dominate the Ultra4 stock-racing class.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1106245608165093496/Ford_Bronco_Ultra4_4600_2021.png",
+	"racehud": "https://media.discordapp.net/attachments/1077293403668234340/1106251944273641584/Ford_Bronco_Ultra4_4600_2021_Hud.png",
+    "creator": "DodgeDemon",
+
+"333TopSpeed": 111,
+"3330to60": 5.8,
+"333Handling": 68,
+
+"666TopSpeed": 116,
+"6660to60": 5.5,
+"666Handling": 70,
+
+"699TopSpeed": 116,
+"6990to60": 5.2,
+"699Handling": 73,
+
+"969TopSpeed": 121,
+"9690to60": 5.5,
+"969Handling": 73,
+
+"996TopSpeed": 121,
+"9960to60": 5.2,
+"996Handling": 70
+}

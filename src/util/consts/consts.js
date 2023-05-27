@@ -45,7 +45,7 @@ const weatherVars = {
             "All-Surface": 0,
             "Off-Road": 0,
             "Slick": 0,
-            "Drag": -30
+            "Drag": -11.5
         }
     },
     "Sunny Track": {
@@ -57,9 +57,8 @@ const weatherVars = {
             "Performance": 0,
             "All-Surface": 0,
             "Off-Road": 0,
-            "Slick": -15,
-            "Drag": 20
-
+            "Slick": -16,
+            "Drag": 10
         }
     },
     "Rainy Track": {
@@ -85,7 +84,7 @@ const weatherVars = {
             "All-Surface": 0,
             "Off-Road": 0,
             "Slick": 0,
-            "Drag": 50
+            "Drag": 10
         }
     },
     "Rainy Asphalt": {
@@ -109,7 +108,7 @@ const weatherVars = {
             "Standard": 0,
             "Performance": 17.5,
             "All-Surface": -4,
-            "Off-Road": -2.5,
+            "Off-Road": -4.5,
             "Slick": 40,
             "Drag": 500
         }
@@ -122,7 +121,7 @@ const weatherVars = {
             "Standard": 0,
             "Performance": 17.5,
             "All-Surface": -5.5,
-            "Off-Road": -4.5,
+            "Off-Road": -7.5,
             "Slick": 42.5,
             "Drag": 500
         }
@@ -159,7 +158,7 @@ const weatherVars = {
         tcsPen: 2.5,
         tyrePen: {
             "Standard": 0,
-            "Performance": 25,
+            "Performance": 30,
             "All-Surface": -40,
             "Off-Road": -60,
             "Slick": 130,
@@ -197,6 +196,7 @@ const weatherVars = {
 const adminRoleID = "711790752853655563";
 const eventMakerRoleID = "917685033995751435";
 const testerRoleID = "915846116656959538";
+const sandboxRoleID = "1102267061796880384";
 
 const bugReportsChannelID = "750304569422250064";
 const currentEventsChannelID = "955467202138620014";
@@ -233,6 +233,7 @@ module.exports = {
     adminRoleID,
     eventMakerRoleID,
     testerRoleID,
+	sandboxRoleID,
     moneyEmojiID,
     bugReportsChannelID,
     currentEventsChannelID,

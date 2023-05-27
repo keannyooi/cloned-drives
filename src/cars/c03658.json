@@ -1,0 +1,49 @@
+{
+    "rq": 45,
+    "make": "Bentley",
+    "model": "Dominator",
+    "modelYear": 1995,
+    "country": "GB",
+    "topSpeed": 130,
+    "0to60": 8.5,
+    "handling": 71,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Endless Summer","Unique","The Midlands Cruise","Oddity"],
+    "isPrize": false,
+	
+    "weight": 2250,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 62.04,
+    "ola": 72.94,
+    "description": "The pre-cursor to the Bentayga, only ever sold to the sultan.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1100103286410985612/BentleyDominator1995.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100103462928257044/Dominator.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 134,
+"3330to60": 8.1,
+"333Handling": 73,
+
+"666TopSpeed": 138,
+"6660to60": 7.7,
+"666Handling": 76,
+
+"699TopSpeed": 138,
+"6990to60": 7.2,
+"699Handling": 79,
+
+"969TopSpeed": 142,
+"9690to60": 7.7,
+"969Handling": 79,
+
+"996TopSpeed": 142,
+"9960to60": 7.2,
+"996Handling": 76
+}

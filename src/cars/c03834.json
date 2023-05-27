@@ -1,0 +1,49 @@
+{
+    "rq": 66,
+    "make": "Nissan",
+    "model": "Skyline 370GT FOUR Crossover",
+    "modelYear": 2009,
+    "country": "JP",
+    "topSpeed": 112,
+    "0to60": 5.4,
+    "handling": 76,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Endless Summer","The Amplification of Asia"],
+    "isPrize": false,
+	
+    "weight": 1820,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 52.54,
+    "ola": 65.66,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1103316171601752134/Skyline370GTFOURCrossover2.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1103316776877568020/SkylineCrossAWD.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 117,
+"3330to60": 5.1,
+"333Handling": 79,
+
+"666TopSpeed": 121,
+"6660to60": 4.9,
+"666Handling": 81,
+
+"699TopSpeed": 121,
+"6990to60": 4.6,
+"699Handling": 84,
+
+"969TopSpeed": 126,
+"9690to60": 4.9,
+"969Handling": 84,
+
+"996TopSpeed": 126,
+"9960to60": 4.6,
+"996Handling": 81
+}

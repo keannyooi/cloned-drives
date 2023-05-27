@@ -1,0 +1,49 @@
+{
+    "rq": 88,
+    "make": ["Santarelli Autosport", "Porsche"],
+    "model": "959 RSR Turbo",
+    "modelYear": 2008,
+    "country": "FR",
+    "topSpeed": 220,
+    "0to60": 3.3,
+    "handling": 93,
+    "driveType": "4WD",
+    "tyreType": "Slick",
+    "tags": ["Endless Summer","Tuner","Unique","Motorsport","The Tyrol Tour: Remix","RestoMod"],
+    "isPrize": false,
+	
+    "weight": 990,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 95.5,
+    "ola": 80,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1103280810859167764/Santarelli959RSRTurbo.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1103281812794507334/Santarelli959RSR.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 222,
+"3330to60": 3.1,
+"333Handling": 96,
+
+"666TopSpeed": 225,
+"6660to60": 3,
+"666Handling": 99,
+
+"699TopSpeed": 225,
+"6990to60": 2.8,
+"699Handling": 103,
+
+"969TopSpeed": 227,
+"9690to60": 3,
+"969Handling": 103,
+
+"996TopSpeed": 227,
+"9960to60": 2.8,
+"996Handling": 99
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 47,
+    "make": "Aston Martin",
+    "model": "Vantage",
+    "modelYear": 1972,
+    "country": "GB",
+    "topSpeed": 143,
+    "0to60": 6.3,
+    "handling": 70,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Midlands Cruise","Endless Summer"],
+    "isPrize": false,
+	
+    "weight": 1588,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 75,
+    "ola": 88.88,
+    "description": "The Aston Martin Vantage was introduced in May 1972 alongside the visually similar AM V8. The AM Vantage was in effect, a restyle of the DBS, powered by the same Tadek Marek designed six cylinder 4 litre engine as first used in the DB5 back in 1963.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1096532493349425213/AMVantage.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1096532895293767810/AMVantage.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 147,
+"3330to60": 6,
+"333Handling": 72,
+
+"666TopSpeed": 150,
+"6660to60": 5.7,
+"666Handling": 75,
+
+"699TopSpeed": 150,
+"6990to60": 5.4,
+"699Handling": 78,
+
+"969TopSpeed": 154,
+"9690to60": 5.7,
+"969Handling": 78,
+
+"996TopSpeed": 154,
+"9960to60": 5.4,
+"996Handling": 75
+}

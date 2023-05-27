@@ -1,0 +1,49 @@
+{
+    "rq": 40,
+    "make": "Obvio!",
+    "model": "828/2",
+    "modelYear": 2003,
+    "country": "BR",
+    "topSpeed": 100,
+    "0to60": 6.9,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Oddity","Rest of The World","Endless Summer","The Americas Assault"],
+    "isPrize": false,
+	
+    "weight": 670,
+    "gc": "Low",
+    "seatCount": 3,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 36.13,
+    "ola": 73.91,
+    "description": "You Are Going To Brazil.",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1011581273191501834/obvio_828.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1011592216877207634/obvio_828.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 105, 
+"3330to60": 6.6, 
+"333Handling": 80,
+
+"666TopSpeed": 110, 
+"6660to60": 6.2, 
+"666Handling": 82,
+
+"699TopSpeed": 110, 
+"6990to60": 5.9, 
+"699Handling": 85,
+
+"969TopSpeed": 116, 
+"9690to60": 6.2, 
+"969Handling": 85,
+
+"996TopSpeed": 116, 
+"9960to60": 5.9, 
+"996Handling": 82
+}

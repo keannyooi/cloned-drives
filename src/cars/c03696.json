@@ -1,0 +1,49 @@
+{
+    "rq": 6,
+    "make": ["Aston-Martin", "Aston Martin"],
+    "model": "2 Litre Speed Bertelli (A Type)",
+    "modelYear": 1936,
+    "country": "GB",
+    "topSpeed": 99,
+    "0to60": 17.0,
+    "handling": 53,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Midlands Cruise","Unique","Track Day","Endless Summer"],
+    "isPrize": false,
+	
+    "weight": 1016,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 17.46,
+    "ola": 54.3,
+    "description": "Following on from the disappointment over the aborted 1936 Le Mans race, 23 of the 25 chassis laid down in 1936 eventually became Speed Models, Those with 2/4 seater bodies by E.Bertelli are described as 'Type A'.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1095756306155061338/2LSpeedBertelliAType.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095756933581000814/2LitreSpeedBertelliAType.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 104,
+"3330to60": 16.1,
+"333Handling": 55,
+
+"666TopSpeed": 110,
+"6660to60": 15.3,
+"666Handling": 56,
+
+"699TopSpeed": 110,
+"6990to60": 14.4,
+"699Handling": 59,
+
+"969TopSpeed": 115,
+"9690to60": 15.3,
+"969Handling": 59,
+
+"996TopSpeed": 115,
+"9960to60": 14.4,
+"996Handling": 56
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 51,
+    "make": ["Auto Union", "Audi"],
+    "model": "Type B Streamliner",
+    "modelYear": 1935,
+    "country": "DE",
+    "topSpeed": 199,
+    "0to60": 4.8,
+    "handling": 64,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","Motorsport","Unique","Ultra Expensive","The Tyrol Tour: Remix"],
+    "isPrize": true,
+	
+    "weight": 940,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 80,
+    "ola": 105.07,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1104776540329349220/AUTypeBStrim.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1104779452027768922/TypeBStrimAU.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 202,
+"3330to60": 4.6,
+"333Handling": 66,
+
+"666TopSpeed": 204,
+"6660to60": 4.3,
+"666Handling": 68,
+
+"699TopSpeed": 204,
+"6990to60": 4.1,
+"699Handling": 71,
+
+"969TopSpeed": 207,
+"9690to60": 4.3,
+"969Handling": 71,
+
+"996TopSpeed": 207,
+"9960to60": 4.1,
+"996Handling": 68
+}

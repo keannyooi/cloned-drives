@@ -1,0 +1,49 @@
+{
+    "rq": 68,
+    "make": "Mitsubishi",
+    "model": "Lancer Evolution Concept-X",
+    "modelYear": 2006,
+    "country": "JP",
+    "topSpeed": 155,
+    "0to60": 5.2,
+    "handling": 87,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","The Amplification of Asia","Street Racer","Unique","Concept"],
+    "isPrize": false,
+	
+    "weight": 1500,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 60,
+    "ola": 80,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1101844847578579044/Evo10Concept.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1101845759143456768/Evo10ConceptMitsusbishi.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 158,
+"3330to60": 4.9,
+"333Handling": 90,
+
+"666TopSpeed": 162,
+"6660to60": 4.7,
+"666Handling": 93,
+
+"699TopSpeed": 162,
+"6990to60": 4.4,
+"699Handling": 97,
+
+"969TopSpeed": 165,
+"9690to60": 4.7,
+"969Handling": 97,
+
+"996TopSpeed": 165,
+"9960to60": 4.4,
+"996Handling": 93
+}

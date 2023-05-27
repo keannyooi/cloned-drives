@@ -1,0 +1,49 @@
+{
+    "rq": 22,
+    "make": "Porsche",
+    "model": "912",
+    "modelYear": 1965,
+    "country": "DE",
+    "topSpeed": 115,
+    "0to60": 12.3,
+    "handling": 66,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Endless Summer","The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 968,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 53.25,
+    "ola": 68.29,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1103370307403788319/Porsche912.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1103370502996754552/912first.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 120,
+"3330to60": 11.7,
+"333Handling": 68,
+
+"666TopSpeed": 124,
+"6660to60": 11.1,
+"666Handling": 70,
+
+"699TopSpeed": 124,
+"6990to60": 10.5,
+"699Handling": 73,
+
+"969TopSpeed": 129,
+"9690to60": 11.1,
+"969Handling": 73,
+
+"996TopSpeed": 129,
+"9960to60": 10.5,
+"996Handling": 70
+}

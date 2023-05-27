@@ -1,0 +1,49 @@
+{
+    "rq": 53,
+    "make": "Bentley",
+    "model": "Azure T",
+    "modelYear": 2009,
+    "country": "GB",
+    "topSpeed": 179,
+    "0to60": 5.4,
+    "handling": 74,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","The Midlands Cruise"],
+    "isPrize": false,
+	
+    "weight": 2695,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 75.36,
+    "ola": 80,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1103322605030748181/AzureTBentley.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1103323964958310421/AzureT.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 182,
+"3330to60": 5.1,
+"333Handling": 76,
+
+"666TopSpeed": 185,
+"6660to60": 4.9,
+"666Handling": 79,
+
+"699TopSpeed": 185,
+"6990to60": 4.6,
+"699Handling": 82,
+
+"969TopSpeed": 188,
+"9690to60": 4.9,
+"969Handling": 82,
+
+"996TopSpeed": 188,
+"9960to60": 4.6,
+"996Handling": 79
+}

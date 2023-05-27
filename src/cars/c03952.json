@@ -1,0 +1,50 @@
+{
+    "rq": 29,
+    "make": "Chevrolet",
+    "model": "Orlando 1.4T LT",
+    "modelYear": 2012,
+    "country": "US",
+    "topSpeed": 124,
+    "0to60": 10.4,
+    "handling": 71,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Americas Assault","Endless Summer"],
+    "isPrize": false,
+
+
+    "weight": 1539,
+    "gc": "Medium",
+    "seatCount": 7,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 47.70,
+    "ola": 65.38,
+    "description": "Korean built Chevy MPV for Europe.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1105556158426656878/E.ChevyOrlando14T.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1105560652149432330/Sevrolet.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 128,
+    "3330to60": 9.9,
+    "333Handling": 73,
+
+    "666TopSpeed": 132,
+    "6660to60": 9.4, 
+    "666Handling": 76,
+
+    "996TopSpeed": 137,
+    "9960to60": 8.8,
+    "996Handling": 76,
+
+    "969TopSpeed": 137,
+    "9690to60": 9.4,
+    "969Handling": 79,
+
+    "699TopSpeed": 132,
+    "6990to60": 8.8,
+    "699Handling": 79
+}

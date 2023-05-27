@@ -1,0 +1,49 @@
+{
+    "rq": 85,
+    "make": "Bentley",
+    "model": "Continental GT3",
+    "modelYear": 2013,
+    "country": "GB",
+    "topSpeed": 197,
+    "0to60": 3.3,
+    "handling": 96,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Endless Summer","Motorsport","The Midlands Cruise"],
+    "isPrize": false,
+	
+    "weight": 1300,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 96.2,
+    "ola": 95.66,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1103332241171566622/2012ContiGT3.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1103332820585300059/ContiGT32013.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 200,
+"3330to60": 3.1,
+"333Handling": 99,
+
+"666TopSpeed": 202,
+"6660to60": 3,
+"666Handling": 102,
+
+"699TopSpeed": 202,
+"6990to60": 2.8,
+"699Handling": 107,
+
+"969TopSpeed": 205,
+"9690to60": 3,
+"969Handling": 107,
+
+"996TopSpeed": 205,
+"9960to60": 2.8,
+"996Handling": 102
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 46,
+    "make": "Hongqi",
+    "model": "LS5",
+    "modelYear": 2015,
+    "country": "CN",
+    "topSpeed": 137,
+    "0to60": 7.8,
+    "handling": 66,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Endless Summer","Rest of The World","The Amplification of Asia"],
+    "isPrize": false,
+	
+    "weight": 2850,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 52.35,
+    "ola": 64.1,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1046406676963663972/hongqi_ls5.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1046403688262029362/hongqi_ls5.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 141,
+"3330to60": 7.4,
+"333Handling": 68,
+
+"666TopSpeed": 145,
+"6660to60": 7,
+"666Handling": 70,
+
+"699TopSpeed": 145,
+"6990to60": 6.6,
+"699Handling": 73,
+
+"969TopSpeed": 148,
+"9690to60": 7,
+"969Handling": 73,
+
+"996TopSpeed": 148,
+"9960to60": 6.6,
+"996Handling": 70
+}

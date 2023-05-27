@@ -1,0 +1,49 @@
+{
+    "rq": 49,
+    "make": "Aston Martin",
+    "model": "Special Sporting Two-Seater",
+    "modelYear": 1953,
+    "country": "GB",
+    "topSpeed": 151,
+    "0to60": 5.2,
+    "handling": 74,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","Unique","Motorsport","The Midlands Cruise"],
+    "isPrize": false,
+	
+    "weight": 650,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 51.48,
+    "ola": 80.76,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1100765118427582524/SpecialSporting2Seat.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100765331514990622/SpecialSporting2Seat.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 154,
+"3330to60": 4.9,
+"333Handling": 76,
+
+"666TopSpeed": 158,
+"6660to60": 4.7,
+"666Handling": 79,
+
+"699TopSpeed": 158,
+"6990to60": 4.4,
+"699Handling": 82,
+
+"969TopSpeed": 161,
+"9690to60": 4.7,
+"969Handling": 82,
+
+"996TopSpeed": 161,
+"9960to60": 4.4,
+"996Handling": 79
+}

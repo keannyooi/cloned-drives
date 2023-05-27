@@ -1,0 +1,49 @@
+{
+    "rq": 61,
+    "make": "Aston Martin",
+    "model": "DBR2",
+    "modelYear": 1957,
+    "country": "GB",
+    "topSpeed": 197,
+    "0to60": 4.1,
+    "handling": 71,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Ultra Expensive","Unique","Motorsport","Endless Summer"],
+    "isPrize": true,
+
+    "weight": 801,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 59.42,
+    "ola": 81.46,
+    "description": "The DBR2 was a development of the unused 1955 chassis from the aborted V12 Lagonda matched with the Tadek Marek 3670cc, 6 cylinder engine that was destined to appear in the roadgoing DB4 a year later. Bigger, more powerful and faster than the similarly styled DBR1, DBR2/1 was debuted at the 1957 Le Mans 24 hour but retired after the gearbox failed after 81 laps. ",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1081553739917307914/DBR2.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1081554594800353420/dbr2.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 200,
+"3330to60": 3.9,
+"333Handling": 73,
+
+"666TopSpeed": 202,
+"6660to60": 3.7,
+"666Handling": 76,
+
+"699TopSpeed": 202,
+"6990to60": 3.5,
+"699Handling": 79,
+
+"969TopSpeed": 205,
+"9690to60": 3.7,
+"969Handling": 79,
+
+"996TopSpeed": 205,
+"9960to60": 3.5,
+"996Handling": 76
+}

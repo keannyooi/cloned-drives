@@ -1,0 +1,49 @@
+{
+    "rq": 33,
+    "make": "Aston Martin",
+    "model": "Lagonda Vignale",
+    "modelYear": 1993,
+    "country": "GB",
+    "topSpeed": 115,
+    "0to60": 8.5,
+    "handling": 72,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Endless Summer","Unique","Concept","The Midlands Cruise"],
+    "isPrize": false,
+	
+    "weight": 2035,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 60.71,
+    "ola": 70.58,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1103323356469665792/LagondaVignale.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1103324116167184426/LagondaVignale.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 120,
+"3330to60": 8.1,
+"333Handling": 74,
+
+"666TopSpeed": 124,
+"6660to60": 7.7,
+"666Handling": 77,
+
+"699TopSpeed": 124,
+"6990to60": 7.2,
+"699Handling": 80,
+
+"969TopSpeed": 129,
+"9690to60": 7.7,
+"969Handling": 80,
+
+"996TopSpeed": 129,
+"9960to60": 7.2,
+"996Handling": 77
+}

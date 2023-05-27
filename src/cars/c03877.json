@@ -1,0 +1,49 @@
+{
+    "rq": 51,
+    "make": "Land Rover",
+    "model": "Defender 90 D250 MHEV",
+    "modelYear": 2020,
+    "country": "GB",
+    "topSpeed": 117,
+    "0to60": 7.6,
+    "handling": 63,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["Endless Summer","The Midlands Cruise","Eco-Friendly"],
+    "isPrize": false,
+	
+    "weight": 2228,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 43.88,
+    "ola": 69.16,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1104774984632635433/90D250MHEVDefender20.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1104778824887054517/DefenderD250MHEV.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 121,
+"3330to60": 7.2,
+"333Handling": 65,
+
+"666TopSpeed": 126,
+"6660to60": 6.8,
+"666Handling": 67,
+
+"699TopSpeed": 126,
+"6990to60": 6.5,
+"699Handling": 70,
+
+"969TopSpeed": 130,
+"9690to60": 6.8,
+"969Handling": 70,
+
+"996TopSpeed": 130,
+"9960to60": 6.5,
+"996Handling": 67
+}

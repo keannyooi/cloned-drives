@@ -1,0 +1,49 @@
+{
+    "rq": 55,
+    "make": "Bufori",
+    "model": "V6i",
+    "modelYear": 1992,
+    "country": "AU",
+    "topSpeed": 149,
+    "0to60": 6.0,
+    "handling": 74,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Rest of The World","The Rest of the Best: 2023","Endless Summer"],
+    "isPrize": false,
+	
+    "weight": 1050,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 59.2,
+    "ola": 73.49,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1046405482530746440/bufori_v6i.png",
+	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1046395890090381312/bufori_v6i.jpg",
+    "creator": "Keanny",
+
+"333TopSpeed": 152,
+"3330to60": 5.7,
+"333Handling": 76,
+
+"666TopSpeed": 156,
+"6660to60": 5.4,
+"666Handling": 79,
+
+"699TopSpeed": 156,
+"6990to60": 5.1,
+"699Handling": 82,
+
+"969TopSpeed": 159,
+"9690to60": 5.4,
+"969Handling": 82,
+
+"996TopSpeed": 159,
+"9960to60": 5.1,
+"996Handling": 79
+}

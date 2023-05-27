@@ -1,0 +1,49 @@
+{
+    "rq": 100,
+    "make": "Hennessey",
+    "model": "Venom GT Spyder",
+    "modelYear": 2016,
+    "country": "US",
+    "topSpeed": 266,
+    "0to60": 2.4,
+    "handling": 93,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","Unique","Ultra Expensive","The Americas Assault","Hypercar"],
+    "isPrize": false,
+	
+    "weight": 1258,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 120,
+    "ola": 87.5,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1108734469197795388/HenVenomGTspyder16.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1108734689981775982/HenVenomGTspyder16.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 268,
+"3330to60": 2.3,
+"333Handling": 96,
+
+"666TopSpeed": 270,
+"6660to60": 2.2,
+"666Handling": 99,
+
+"699TopSpeed": 270,
+"6990to60": 2,
+"699Handling": 103,
+
+"969TopSpeed": 272,
+"9690to60": 2.2,
+"969Handling": 103,
+
+"996TopSpeed": 272,
+"9960to60": 2,
+"996Handling": 99
+}

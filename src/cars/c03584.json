@@ -1,0 +1,49 @@
+{
+    "rq": 103,
+    "make": "Hennessey",
+    "model": "Venom F5",
+    "modelYear": 2021,
+    "country": "US",
+    "topSpeed": 311,
+    "0to60": 2.5,
+    "handling": 94,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Hypercar", "Unique", "Ultra Expensive","Endless Summer","The Americas Assault"],
+    "isPrize": true,
+    
+    "weight": 1385,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 146.63,
+    "ola": 94.40,
+    "description": "Hennessey's all-American 311mph hypercar to demolish the competition, but only time will tell how it stacks up against the blistering speeds of the competition. The Texan-based hypercar is packed with easter eggs too, from the key fob containing metal from a space shuttle launch to the F5 name itself being a reference to the F5 tornado, the highest rating on the Fujita scale.",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1045904278994296852/Hennessey_Venom_F5_2021.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1045904892113465414/Hennessey_Venom_F5_2021_Hud.png",
+    "creator": "DodgeDemon",
+
+    "333TopSpeed": 313,
+    "3330to60": 2.4,
+    "333Handling": 97,
+
+    "666TopSpeed": 314,
+    "6660to60": 2.3,
+    "666Handling": 100,
+
+    "996TopSpeed": 316,
+    "9960to60": 2.1,
+    "996Handling": 100,
+
+    "969TopSpeed": 316,
+    "9690to60": 2.3,
+    "969Handling": 104,
+
+    "699TopSpeed": 314,
+    "6990to60": 2.1,
+    "699Handling": 104
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 196,
+    "make": "Nissan",
+    "model": "GT-R Nismo (BOSS)",
+    "modelYear": 2023,
+    "country": "JP",
+    "topSpeed": 205,
+    "0to60": 2.5,
+    "handling": 102,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","BOSS"],
+    "isPrize": true,
+	
+    "weight": 1553,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 78.12,
+    "ola": 72,
+    "description": "Part of the Endless Summer Boss Collection 1!",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1103318442095939664/NissanGTRNismoBOSS.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1103318663282569376/BossGTR.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 208,
+"3330to60": 2.4,
+"333Handling": 105,
+
+"666TopSpeed": 210,
+"6660to60": 2.3,
+"666Handling": 109,
+
+"699TopSpeed": 210,
+"6990to60": 2.1,
+"699Handling": 113,
+
+"969TopSpeed": 213,
+"9690to60": 2.3,
+"969Handling": 113,
+
+"996TopSpeed": 213,
+"9960to60": 2.1,
+"996Handling": 109
+}

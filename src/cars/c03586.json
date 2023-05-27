@@ -1,0 +1,49 @@
+{
+    "rq": 90,
+    "make": ["HKS", "Nissan"],
+    "model": "RB28 GT-R Driving Performer",
+    "modelYear": 2003,
+    "country": "JP",
+    "topSpeed": 212,
+    "0to60": 3.1,
+    "handling": 91,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Unique","Tuner","The Amplification of Asia","Street Racer","Endless Summer"],
+    "isPrize": false,
+	
+    "weight": 1430,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 91.17,
+    "ola": 83.87,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1095755172531163268/hksrb28DP.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095756667762778333/HKSrb28DP.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 214,
+"3330to60": 2.9,
+"333Handling": 94,
+
+"666TopSpeed": 217,
+"6660to60": 2.8,
+"666Handling": 97,
+
+"699TopSpeed": 217,
+"6990to60": 2.6,
+"699Handling": 101,
+
+"969TopSpeed": 219,
+"9690to60": 2.8,
+"969Handling": 101,
+
+"996TopSpeed": 219,
+"9960to60": 2.6,
+"996Handling": 97
+}

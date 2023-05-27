@@ -1,0 +1,49 @@
+{
+    "rq": 76,
+    "make": "Aston Martin",
+    "model": "V8 RHAM/1 Twin Garret AR Turbo",
+    "modelYear": 1978,
+    "country": "GB",
+    "topSpeed": 205,
+    "0to60": 3.4,
+    "handling": 85,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["The Midlands Cruise","Tuner","Unique","Motorsport","Endless Summer"],
+    "isPrize": true,
+	
+    "weight": 1486,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 115,
+    "ola": 100,
+    "description": "For 1978, RHAM/1 was even more modified with and output of 800bhp assisted by twin Garret AiResearch turbos. Unfortunately, fuel consumption dropped to as little as 2.5mpg (for the 1977 race, the average speed was 5.75 mpg) so the entry to Le Mans was withdrawn with only two weeks before the race.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1096530521359659178/1976V8RHAMTwinTurbo.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1096530915699728498/1976V8RHAMTT.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 208,
+"3330to60": 3.2,
+"333Handling": 88,
+
+"666TopSpeed": 210,
+"6660to60": 3.1,
+"666Handling": 91,
+
+"699TopSpeed": 210,
+"6990to60": 2.9,
+"699Handling": 94,
+
+"969TopSpeed": 213,
+"9690to60": 3.1,
+"969Handling": 94,
+
+"996TopSpeed": 213,
+"9960to60": 2.9,
+"996Handling": 91
+}

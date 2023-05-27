@@ -1,0 +1,52 @@
+{
+    "rq": 75,
+    "make": "Fiat",
+    "model": "Tipo TCR",
+    "modelYear": 2020,
+    "country": "IT",
+    "topSpeed": 161,
+    "0to60": 4.0,
+    "handling": 94,
+    "driveType": "FWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport", "The Tyrol Tour: Remix","Endless Summer"],
+    "isPrize": true,
+
+
+    "weight": 1255,
+    "gc": "Low",
+    "seatCount":1,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 88.89,
+    "ola": 85.01,
+    "description": "A big old splash in a great motorsport comeback for Fiat.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1089619293936816158/TipoTCR.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1089619606030782464/TipoTCR.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 164,
+    "3330to60": 3.8,
+    "333Handling": 97,
+    
+    "666TopSpeed": 167,
+    "6660to60": 3.6,
+    "666Handling": 100,
+    
+    "699TopSpeed": 167,
+    "6990to60": 3.4,
+    "699Handling": 104,
+    
+    "969TopSpeed": 171,
+    "9690to60": 3.6,
+    "969Handling": 104,
+    
+    "996TopSpeed": 171,
+    "9960to60": 3.4,
+    "996Handling": 100
+}

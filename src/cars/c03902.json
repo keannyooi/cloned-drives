@@ -1,0 +1,51 @@
+{  
+    "rq": 19,
+    "make": "Volkswagen",
+    "model": "XL1",
+    "modelYear": 2014,
+    "country": "DE",
+    "topSpeed": 100,
+    "0to60": 11.9,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix", "Innovative", "Eco-Friendly", "Endless Summer"],
+    "isPrize": false,
+
+
+    "weight": 795,
+    "gc": "Low",
+    "seatCount":2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Hybrid",
+    "mra": 15.24,
+    "ola": 67.33,
+    "description": "Feather Weight: With its ostrich-winged doors, Volkswagen's new mileage champ is the Veyron of hybrids.",
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1103412006247211108/XL1.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1103412179346145380/XL1.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 105,
+    "3330to60": 11.3,
+    "333Handling": 77,
+    
+    "666TopSpeed": 110,
+    "6660to60": 10.7,
+    "666Handling": 80,
+    
+    "699TopSpeed": 110,
+    "6990to60": 10.1,
+    "699Handling": 83,
+    
+    "969TopSpeed": 116,
+    "9690to60": 10.7,
+    "969Handling": 83,
+    
+    "996TopSpeed": 116,
+    "9960to60": 10.1,
+    "996Handling": 80
+}

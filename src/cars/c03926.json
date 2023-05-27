@@ -1,0 +1,49 @@
+{
+    "rq": 88,
+    "make": "Acura",
+    "model": "NSX \"Time Attack\" Pikes Peak",
+    "modelYear": 2019,
+    "country": "US",
+    "topSpeed": 195,
+    "0to60": 3.1,
+    "handling": 94,
+    "driveType": "4WD",
+    "tyreType": "Slick",
+    "tags": ["Endless Summer", "Motorsport", "Supercar", "The Americas Assault"],
+    "isPrize": false,
+	
+    "weight": 1680,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 92.50,
+    "ola": 85.00,
+    "description": "None.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1106238873333416017/Acura_NSX_Time_Attack_Pikes_Peak_2019.png",
+	"racehud": "https://media.discordapp.net/attachments/1077293403668234340/1106247432834121738/Acura_NSX_Time_Attack_Pikes_Peak_2019_Hud.png",
+    "creator": "DodgeDemon",
+
+"333TopSpeed": 198,
+"3330to60": 2.9,
+"333Handling": 97,
+
+"666TopSpeed": 200,
+"6660to60": 2.8,
+"666Handling": 100,
+
+"699TopSpeed": 200,
+"6990to60": 2.6,
+"699Handling": 104,
+
+"969TopSpeed": 203,
+"9690to60": 2.8,
+"969Handling": 104,
+
+"996TopSpeed": 203,
+"9960to60": 2.6,
+"996Handling": 100
+}

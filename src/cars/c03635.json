@@ -1,0 +1,49 @@
+{
+    "rq": 45,
+    "make": "Ram",
+    "model": "1500 Outdoorsman EcoDiesel 4x4 Crew Cab",
+    "modelYear": 2014,
+    "country": "US",
+    "topSpeed": 106,
+    "0to60": 8.8,
+    "handling": 61,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["The Americas Assault","Endless Summer"],
+    "isPrize": false,
+	
+    "weight": 2720,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "Pickup",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 43.56,
+    "ola": 59.09,
+    "description": "A diesel workhorse to tackle any job or terrain.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1085597922139312228/Ram_1500_Outdoorsman_EcoDiesel_4x4_Crew_Cab_2014.png",
+	"racehud": "https://media.discordapp.net/attachments/1077293403668234340/1085605438743138354/Ram_1500_Outdoorsman_EcoDiesel_4x4_Crew_Cab_2014_Hud.png",
+    "creator": "DodgeDemon",
+
+"333TopSpeed": 111,
+"3330to60": 8.4,
+"333Handling": 63,
+
+"666TopSpeed": 116,
+"6660to60": 7.9,
+"666Handling": 65,
+
+"699TopSpeed": 116,
+"6990to60": 7.5,
+"699Handling": 68,
+
+"969TopSpeed": 121,
+"9690to60": 7.9,
+"969Handling": 68,
+
+"996TopSpeed": 121,
+"9960to60": 7.5,
+"996Handling": 65
+}

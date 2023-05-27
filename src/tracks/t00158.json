@@ -1,0 +1,18 @@
+{
+	"trackName": "Ouninpohja Track Stage (Rainy Gravel)",
+	"weather": "Rainy",
+	"surface": "Gravel",
+	"speedbumps": 8,
+	"humps": 0,
+	"background": "https://cdn.discordapp.com/attachments/800047734035841037/1111732488159633478/1808599-38169271-2560-1440.png",
+	"map": "https://cdn.discordapp.com/attachments/800047734035841037/1111731993156272128/screen-shot-2017-11-16-at-20-42-21.png",
+	
+	"specsDistr": {
+		"topSpeed": 1.5,
+		"0to60": 35,
+		"handling": 100,
+		"weight": 0,
+		"mra": 50,
+		"ola": 5
+	}
+}

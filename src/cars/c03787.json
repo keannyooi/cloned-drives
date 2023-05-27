@@ -1,0 +1,49 @@
+{
+    "rq": 45,
+    "make": "Bentley",
+    "model": "Azure",
+    "modelYear": 2006,
+    "country": "GB",
+    "topSpeed": 168,
+    "0to60": 6.1,
+    "handling": 73,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","The Midlands Cruise"],
+    "isPrize": false,
+	
+    "weight": 2695,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 73.37,
+    "ola": 77.45,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1103322589285326989/AzureBentley.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1103323942162276372/Azure.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 171,
+"3330to60": 5.8,
+"333Handling": 75,
+
+"666TopSpeed": 174,
+"6660to60": 5.5,
+"666Handling": 78,
+
+"699TopSpeed": 174,
+"6990to60": 5.2,
+"699Handling": 81,
+
+"969TopSpeed": 177,
+"9690to60": 5.5,
+"969Handling": 81,
+
+"996TopSpeed": 177,
+"9960to60": 5.2,
+"996Handling": 78
+}

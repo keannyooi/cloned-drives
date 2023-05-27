@@ -1,0 +1,49 @@
+{
+    "rq": 106,
+    "make": "Aston Martin",
+    "model": "Valkyrie AMR Pro AM-RB 002",
+    "modelYear": 2018,
+    "country": "GB",
+    "topSpeed": 250,
+    "0to60": 2.2,
+    "handling": 102,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["The Midlands Cruise","Motorsport","Unique","Concept","Ultra Expensive","Eco-Friendly","Endless Summer"],
+    "isPrize": true,
+	
+    "weight": 980,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Hybrid",
+    "mra": 129.41,
+    "ola": 88.88,
+    "description": "This is about as extreme as a car can get unhindered by race or road restrictions. AML were suggesting the combined output of the 6.5 litre Cosworth V12 combined with a KERS style energy recovery system will result in a combined power output of more than 1100bhp and with a target weight of under 1000 kg,  a figure than comfortably exceeds the magic 1:1 power-to-weight ratio. It will also be capable of generating more than its own weight in downforce to give eventual equivalent performance of a F1 or LMP1 sports car.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1096531471310803026/AMRProAMRB002.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1096532159579299900/AMRProAMRB002.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 252,
+"3330to60": 2.1,
+"333Handling": 105,
+
+"666TopSpeed": 254,
+"6660to60": 2,
+"666Handling": 109,
+
+"699TopSpeed": 254,
+"6990to60": 1.9,
+"699Handling": 113,
+
+"969TopSpeed": 256,
+"9690to60": 2,
+"969Handling": 113,
+
+"996TopSpeed": 256,
+"9960to60": 1.9,
+"996Handling": 109
+}

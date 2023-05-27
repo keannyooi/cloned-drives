@@ -1,0 +1,49 @@
+{
+    "rq": 53,
+    "make": ["Auto Union", "Audi"],
+    "model": "Type B",
+    "modelYear": 1935,
+    "country": "DE",
+    "topSpeed": 180,
+    "0to60": 4.6,
+    "handling": 67,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","Motorsport","Unique","Ultra Expensive","The Tyrol Tour: Remix"],
+    "isPrize": true,
+	
+    "weight": 750,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 71.5,
+    "ola": 100,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1104776528350433461/AUTypeB.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1104779437523882034/TypeBAU.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 183,
+"3330to60": 4.4,
+"333Handling": 69,
+
+"666TopSpeed": 186,
+"6660to60": 4.1,
+"666Handling": 71,
+
+"699TopSpeed": 186,
+"6990to60": 3.9,
+"699Handling": 74,
+
+"969TopSpeed": 189,
+"9690to60": 4.1,
+"969Handling": 74,
+
+"996TopSpeed": 189,
+"9960to60": 3.9,
+"996Handling": 71
+}

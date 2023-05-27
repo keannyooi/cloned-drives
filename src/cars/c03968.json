@@ -1,0 +1,49 @@
+{
+    "rq": 97,
+    "make": "Ford",
+    "model": "Mustang Cobra Jet 1400",
+    "modelYear": 2020,
+    "country": "US",
+    "topSpeed": 215,
+    "0to60": 1.1,
+    "handling": 10,
+    "driveType": "RWD",
+    "tyreType": "Drag",
+    "tags": ["Endless Summer","Motorsport","Unique","The Americas Assault","Muscle Car","Eco-Friendly"],
+    "isPrize": true,
+	
+    "weight": 1800,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 81.11,
+    "ola": 100,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1105772331546202172/CobraJet14002020.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1105772523292999680/CJ1400CBJ.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 217,
+"3330to60": 1,
+"333Handling": 10,
+
+"666TopSpeed": 220,
+"6660to60": 1,
+"666Handling": 11,
+
+"699TopSpeed": 220,
+"6990to60": 0.9,
+"699Handling": 11,
+
+"969TopSpeed": 222,
+"9690to60": 1,
+"969Handling": 11,
+
+"996TopSpeed": 222,
+"9960to60": 0.9,
+"996Handling": 11
+}

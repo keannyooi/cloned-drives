@@ -1,0 +1,49 @@
+{
+    "rq": 102,
+    "make": "Toyota",
+    "model": "GR010 Hybrid",
+    "modelYear": 2021,
+    "country": "JP",
+    "topSpeed": 207,
+    "0to60": 2.4,
+    "handling": 100,
+    "driveType": "4WD",
+    "tyreType": "Slick",
+    "tags": ["Endless Summer","The Amplification of Asia","Motorsport","Unique","Eco-Friendly"],
+    "isPrize": true,
+	
+    "weight": 1040,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Hybrid",
+    "mra": 120.15,
+    "ola": 90,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1103300018028412998/YotaLMH.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1103300936505499660/YotaLMH.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 210,
+"3330to60": 2.3,
+"333Handling": 103,
+
+"666TopSpeed": 212,
+"6660to60": 2.2,
+"666Handling": 107,
+
+"699TopSpeed": 212,
+"6990to60": 2,
+"699Handling": 111,
+
+"969TopSpeed": 215,
+"9690to60": 2.2,
+"969Handling": 111,
+
+"996TopSpeed": 215,
+"9960to60": 2,
+"996Handling": 107
+}

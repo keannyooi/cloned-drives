@@ -1,0 +1,49 @@
+{
+    "rq": 18,
+    "make": "Nissan",
+    "model": "Skyline 1500 (C10)",
+    "modelYear": 1968,
+    "country": "JP",
+    "topSpeed": 99,
+    "0to60": 12.3,
+    "handling": 63,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Endless Summer","The Amplification of Asia"],
+    "isPrize": false,
+	
+    "weight": 970,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 11.89,
+    "ola": 63.4,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1097515194646802472/skyline1500C10.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1097515767274143944/Skyline1500C10.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 104,
+"3330to60": 11.7,
+"333Handling": 65,
+
+"666TopSpeed": 110,
+"6660to60": 11.1,
+"666Handling": 67,
+
+"699TopSpeed": 110,
+"6990to60": 10.5,
+"699Handling": 70,
+
+"969TopSpeed": 115,
+"9690to60": 11.1,
+"969Handling": 70,
+
+"996TopSpeed": 115,
+"9960to60": 10.5,
+"996Handling": 67
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 19,
+    "make": ["Prince", "Nissan"],
+    "model": "Skyline 2000GT-A S54A",
+    "modelYear": 1965,
+    "country": "JP",
+    "topSpeed": 106,
+    "0to60": 12.1,
+    "handling": 62,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Endless Summer","The Amplification of Asia"],
+    "isPrize": false,
+	
+    "weight": 1050,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 26.36,
+    "ola": 61.15,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1097515011355705424/skyline2000gtas54a.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1097515734717968554/Skyline2000GTAS54A.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 111,
+"3330to60": 11.5,
+"333Handling": 64,
+
+"666TopSpeed": 116,
+"6660to60": 10.9,
+"666Handling": 66,
+
+"699TopSpeed": 116,
+"6990to60": 10.3,
+"699Handling": 69,
+
+"969TopSpeed": 121,
+"9690to60": 10.9,
+"969Handling": 69,
+
+"996TopSpeed": 121,
+"9960to60": 10.3,
+"996Handling": 66
+}

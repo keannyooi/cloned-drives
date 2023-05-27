@@ -1,0 +1,49 @@
+{
+    "rq": 100,
+    "make": "Porsche",
+    "model": "917/30 Can-Am Spyder",
+    "modelYear": 1973,
+    "country": "DE",
+    "topSpeed": 240,
+    "0to60": 2.1,
+    "handling": 95,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Endless Summer","Motorsport","Unique","Ultra Expensive","The Tyrol Tour: Remix"],
+    "isPrize": true,
+	
+    "weight": 849,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 116.66,
+    "ola": 100,
+    "description": "Only around 1100ps, slow in comparison to the Turbopanzer.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1104776355826114610/91730CanAmSpyder.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1104779214449807501/91730CanAmSpyder.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 242,
+"3330to60": 2,
+"333Handling": 98,
+
+"666TopSpeed": 244,
+"6660to60": 1.9,
+"666Handling": 101,
+
+"699TopSpeed": 244,
+"6990to60": 1.8,
+"699Handling": 105,
+
+"969TopSpeed": 247,
+"9690to60": 1.9,
+"969Handling": 105,
+
+"996TopSpeed": 247,
+"9960to60": 1.8,
+"996Handling": 101
+}

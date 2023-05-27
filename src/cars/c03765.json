@@ -1,0 +1,49 @@
+{
+    "rq": 71,
+    "make": "Mitsubishi",
+    "model": "Lancer Evolution Prototype-X",
+    "modelYear": 2007,
+    "country": "JP",
+    "topSpeed": 150,
+    "0to60": 5.0,
+    "handling": 88,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","The Amplification of Asia","Street Racer","Unique","Concept"],
+    "isPrize": false,
+	
+    "weight": 1520,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 62.45,
+    "ola": 77.94,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1101844913815036024/Evo10prototype.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1101845776965042286/Evo10ProtoMitsusbishi.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 153,
+"3330to60": 4.8,
+"333Handling": 91,
+
+"666TopSpeed": 157,
+"6660to60": 4.5,
+"666Handling": 94,
+
+"699TopSpeed": 157,
+"6990to60": 4.3,
+"699Handling": 98,
+
+"969TopSpeed": 160,
+"9690to60": 4.5,
+"969Handling": 98,
+
+"996TopSpeed": 160,
+"9960to60": 4.3,
+"996Handling": 94
+}

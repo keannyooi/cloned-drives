@@ -1,0 +1,49 @@
+{
+    "rq": 19,
+    "make": "Ford",
+    "model": "Mustang Cobra 2.3T",
+    "modelYear": 1979,
+    "country": "US",
+    "topSpeed": 121,
+    "0to60": 10.2,
+    "handling": 67,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Muscle Car","Endless Summer","The Americas Assault"],
+    "isPrize": false,
+	
+    "weight": 1247,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 32.03,
+    "ola": 68.63,
+    "description": "The third generation Mustang debuted with a few different engine options, all of which where absolutely pathetic power-wise when compared to the cars of ten years prior. At this point in time the Cobra trim level was a mere appearance package and provided no performance increase over a regular Mustang.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1086071764062314496/1979_Mustang_Cobra.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1086071825714389052/1979_Mustang_Cobra_hud.png",
+    "creator": "Preston",
+
+"333TopSpeed": 125,
+"3330to60": 9.7,
+"333Handling": 69,
+
+"666TopSpeed": 130,
+"6660to60": 9.2,
+"666Handling": 71,
+
+"699TopSpeed": 130,
+"6990to60": 8.7,
+"699Handling": 74,
+
+"969TopSpeed": 134,
+"9690to60": 9.2,
+"969Handling": 74,
+
+"996TopSpeed": 134,
+"9960to60": 8.7,
+"996Handling": 71
+}

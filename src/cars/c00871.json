@@ -1,5 +1,5 @@
 {
-    "rq": 49,
+    "rq": 68,
     "make": [
         "Mercedes-Benz"
     ],
@@ -8,9 +8,9 @@
     "country": "DE",
     "topSpeed": 269,
     "0to60": 4.5,
-    "handling": 33,
+    "handling": 25,
     "driveType": "RWD",
-    "tyreType": "Performance",
+    "tyreType": "Drag",
     "tags": [
         "Unique",
         "Ultra Expensive",
@@ -28,22 +28,26 @@
     "mra": 121.21,
     "ola": 105,
     "description": "In 1937, Piloted by Otto Wilhelm Rudolf Caracciola, this thing hit 269mph on a german autobahn, a record which was only broken in 2017 by a Koenigsegg Agera RS.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/861965959216365599/unknown.png",
-    "333TopSpeed": 271,
-    "3330to60": 4.3,
-    "333Handling": 34,
-    "666TopSpeed": 273,
-    "6660to60": 4.1,
-    "666Handling": 35,
-    "996TopSpeed": 275,
-    "9960to60": 3.8,
-    "996Handling": 35,
-    "969TopSpeed": 275,
-    "9690to60": 4.1,
-    "969Handling": 37,
-    "699TopSpeed": 273,
-    "6990to60": 3.8,
-    "699Handling": 37,
-    "racehud": "https://media.discordapp.net/attachments/716917404868935691/997766459843428362/placeholder3.png",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1101952931894394921/W125RekordLol.png",
+"333TopSpeed": 271,
+"3330to60": 4.3,
+"333Handling": 26,
+
+"666TopSpeed": 273,
+"6660to60": 4,
+"666Handling": 27,
+
+"699TopSpeed": 273,
+"6990to60": 3.8,
+"699Handling": 28,
+
+"969TopSpeed": 275,
+"9690to60": 4,
+"969Handling": 28,
+
+"996TopSpeed": 275,
+"9960to60": 3.8,
+"996Handling": 27,
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1101966102428389488/rekordwagen.png",
     "creator": "Havvy"
 }

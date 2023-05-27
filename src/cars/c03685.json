@@ -1,0 +1,49 @@
+{
+    "rq": 65,
+    "make": "Honda",
+    "model": "Mean Mower V1",
+    "modelYear": 2014,
+    "country": "GB",
+    "topSpeed": 116,
+    "0to60": 3.9,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Oddity", "Unique","Endless Summer","The Midlands Cruise"],
+    "isPrize": true,
+    
+    "weight": 140,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 81.25,
+    "ola": 69.23,
+    "description": "A very stupid idea perfectly executed by Honda UK.",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/1050936636067811358/honda_mean_mower_v1.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1050936714446778438/honda_mean_mower_v1_hud.png",
+    "creator": "c6",
+
+    "333TopSpeed": 120,
+    "3330to60": 3.7,
+    "333Handling": 80,
+
+    "666TopSpeed": 125,
+    "6660to60": 3.5,
+    "666Handling": 82,
+
+    "996TopSpeed": 129,
+    "9960to60": 3.3,
+    "996Handling": 82,
+
+    "969TopSpeed": 129,
+    "9690to60": 3.5,
+    "969Handling": 85,
+
+    "699TopSpeed": 125,
+    "6990to60": 3.3,
+    "699Handling": 85
+}

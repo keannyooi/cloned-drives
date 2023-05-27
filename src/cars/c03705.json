@@ -1,0 +1,49 @@
+{
+    "rq": 1,
+    "make": ["Aston-Martin", "Aston Martin"],
+    "model": "Side Valve Tourer",
+    "modelYear": 1923,
+    "country": "GB",
+    "topSpeed": 77,
+    "0to60": 25.9,
+    "handling": 48,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Unique","The Midlands Cruise","Endless Summer"],
+    "isPrize": false,
+	
+    "weight": 810,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 1.59,
+    "ola": 63,
+    "description": "These early cars all had the same four cylinder 1486 cc side valve engine with what at the time would have been a heady power output of 38 bhp allowing for a top speed in the region of 77 mph. The price in 1923 with this 4 seater touring coachwork was £725, quite a considerable sum for such a car at the time.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1096531815084335125/AMsideValveTourer.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1096532245164081182/AMsidevalvetourer.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 84,
+"3330to60": 24.6,
+"333Handling": 50,
+
+"666TopSpeed": 91,
+"6660to60": 23.3,
+"666Handling": 51,
+
+"699TopSpeed": 91,
+"6990to60": 22,
+"699Handling": 53,
+
+"969TopSpeed": 97,
+"9690to60": 23.3,
+"969Handling": 53,
+
+"996TopSpeed": 97,
+"9960to60": 22,
+"996Handling": 51
+}

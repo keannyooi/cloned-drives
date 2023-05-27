@@ -1,0 +1,49 @@
+{
+    "rq": 72,
+    "make": ["Auto Union", "Audi"],
+    "model": "Rekordwagen Type D",
+    "modelYear": 1938,
+    "country": "DE",
+    "topSpeed": 270,
+    "0to60": 4.2,
+    "handling": 25,
+    "driveType": "RWD",
+    "tyreType": "Drag",
+    "tags": ["Endless Summer","Unique","Track Day","The Tyrol Tour: Remix","Oddity"],
+    "isPrize": true,
+	
+    "weight": 1000,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 133.33,
+    "ola": 120.25,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1101948167680962590/AURekordTypeD.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1101966022275244094/AutoUnionRekordWag.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 272,
+"3330to60": 4,
+"333Handling": 26,
+
+"666TopSpeed": 274,
+"6660to60": 3.8,
+"666Handling": 27,
+
+"699TopSpeed": 274,
+"6990to60": 3.6,
+"699Handling": 28,
+
+"969TopSpeed": 276,
+"9690to60": 3.8,
+"969Handling": 28,
+
+"996TopSpeed": 276,
+"9960to60": 3.6,
+"996Handling": 27
+}

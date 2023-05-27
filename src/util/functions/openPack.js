@@ -113,6 +113,7 @@ async function openPack(args) {
                 switch (criteria) {
                     case "make":
                     case "tags":
+					case "creator":
                     case "bodyStyle":
                         if (Array.isArray(currentCard[criteria])) {
                             if (currentCard[criteria].some(m => m.toLowerCase() === filter[criteria].toLowerCase()) === false) passed = false;
@@ -125,9 +126,15 @@ async function openPack(args) {
                     case "seatCount":
                         if (currentCard[criteria] < filter[criteria]["start"] || currentCard[criteria] > filter[criteria]["end"]) passed = false;
                         break;
-                    default:
-                        if (currentCard[criteria].toLowerCase() !== filter[criteria].toLowerCase()) passed = false;
-                        break;
+default:
+  if (
+    typeof currentCard[criteria] === 'string' &&
+    typeof filter[criteria] === 'string' &&
+    currentCard[criteria].toLowerCase() !== filter[criteria].toLowerCase()
+  ) {
+    passed = false;
+  }
+  break;
                 }
             }
         }

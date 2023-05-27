@@ -1,0 +1,49 @@
+{
+    "rq": 22,
+    "make": "Aston Martin",
+    "model": "DB2 Works Team Race Car",
+    "modelYear": 1951,
+    "country": "GB",
+    "topSpeed": 116,
+    "0to60": 10.6,
+    "handling": 65,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Unique","Ultra Expensive","Motorsport","Endless Summer"],
+    "isPrize": false,
+
+    "weight": 911,
+    "gc": "High",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 68.83,
+    "ola": 79.24,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1081553309040640000/DB2WorksRC.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1081554469562613780/DB2WorksRC.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 120,
+"3330to60": 10.1,
+"333Handling": 67,
+
+"666TopSpeed": 125,
+"6660to60": 9.5,
+"666Handling": 69,
+
+"699TopSpeed": 125,
+"6990to60": 9,
+"699Handling": 72,
+
+"969TopSpeed": 129,
+"9690to60": 9.5,
+"969Handling": 72,
+
+"996TopSpeed": 129,
+"9960to60": 9,
+"996Handling": 69
+}

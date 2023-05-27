@@ -1,0 +1,49 @@
+{
+    "rq": 98,
+    "make": "Porsche",
+    "model": "917/10 Can-Am Spyder",
+    "modelYear": 1972,
+    "country": "DE",
+    "topSpeed": 237,
+    "0to60": 2.2,
+    "handling": 94,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Endless Summer","Motorsport","Unique","Ultra Expensive","The Tyrol Tour: Remix"],
+    "isPrize": true,
+	
+    "weight": 767,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 114.29,
+    "ola": 102.69,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1104776314193453206/91710CanAmSpyder1972.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1104779175224688650/91710CanAmSpyder1972.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 239,
+"3330to60": 2.1,
+"333Handling": 97,
+
+"666TopSpeed": 241,
+"6660to60": 2,
+"666Handling": 100,
+
+"699TopSpeed": 241,
+"6990to60": 1.9,
+"699Handling": 104,
+
+"969TopSpeed": 244,
+"9690to60": 2,
+"969Handling": 104,
+
+"996TopSpeed": 244,
+"9960to60": 1.9,
+"996Handling": 100
+}

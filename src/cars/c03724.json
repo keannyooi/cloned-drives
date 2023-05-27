@@ -1,0 +1,49 @@
+{
+    "rq": 10,
+    "make": ["Prince", "Nissan"],
+    "model": "Skyline 1500 S50",
+    "modelYear": 1963,
+    "country": "JP",
+    "topSpeed": 84,
+    "0to60": 16.2,
+    "handling": 59,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Endless Summer","The Amplification of Asia"],
+    "isPrize": false,
+	
+    "weight": 960,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 11.45,
+    "ola": 59.25,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1097514957316296764/skyline1500s50.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1097515712895008808/Skyline1500S50Prince.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 90,
+"3330to60": 15.4,
+"333Handling": 61,
+
+"666TopSpeed": 96,
+"6660to60": 14.6,
+"666Handling": 63,
+
+"699TopSpeed": 96,
+"6990to60": 13.8,
+"699Handling": 65,
+
+"969TopSpeed": 103,
+"9690to60": 14.6,
+"969Handling": 65,
+
+"996TopSpeed": 103,
+"9960to60": 13.8,
+"996Handling": 63
+}

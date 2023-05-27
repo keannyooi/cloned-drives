@@ -1,0 +1,49 @@
+{
+    "rq": 56,
+    "make": "Bentley",
+    "model": "Continental GTC",
+    "modelYear": 2006,
+    "country": "GB",
+    "topSpeed": 195,
+    "0to60": 5.1,
+    "handling": 76,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","The Midlands Cruise","Grand Tourer","Oceanic View"],
+    "isPrize": false,
+	
+    "weight": 2485,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 70,
+    "ola": 74.51,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1104773961918709892/contiGTC2006.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1104777610464088116/ContiGTC2006.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 198,
+"3330to60": 4.8,
+"333Handling": 79,
+
+"666TopSpeed": 200,
+"6660to60": 4.6,
+"666Handling": 81,
+
+"699TopSpeed": 200,
+"6990to60": 4.3,
+"699Handling": 84,
+
+"969TopSpeed": 203,
+"9690to60": 4.6,
+"969Handling": 84,
+
+"996TopSpeed": 203,
+"9960to60": 4.3,
+"996Handling": 81
+}

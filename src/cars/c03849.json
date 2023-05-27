@@ -1,0 +1,50 @@
+{
+    "rq": 47,
+    "make": ["Auto Union", "Audi"],
+    "model": "Type A",
+    "modelYear": 1934,
+    "country": "DE",
+    "topSpeed": 171,
+    "0to60": 5.1,
+    "handling": 66,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","Motorsport","Unique","Ultra Expensive","The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 750,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 67.88,
+    "ola": 95,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1104776516505714850/AUTypeA.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1104779418955677726/TypeAAU.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 174,
+"3330to60": 4.8,
+"333Handling": 68,
+
+"666TopSpeed": 177,
+"6660to60": 4.6,
+"666Handling": 70,
+
+"699TopSpeed": 177,
+"6990to60": 4.3,
+"699Handling": 73,
+
+"969TopSpeed": 180,
+"9690to60": 4.6,
+"969Handling": 73,
+
+"996TopSpeed": 180,
+"9960to60": 4.3,
+"996Handling": 70
+}
+

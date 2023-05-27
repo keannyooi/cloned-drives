@@ -1,0 +1,50 @@
+{
+    "rq": 39,
+    "make": "Chevrolet",
+    "model": "Captiva 2.2D LTZ AWD",
+    "modelYear": 2011,
+    "country": "US",
+    "topSpeed": 121,
+    "0to60": 9.8,
+    "handling": 68,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["The Americas Assault","Endless Summer"],
+    "isPrize": false,
+
+
+    "weight": 1906,
+    "gc": "High",
+    "seatCount": 7,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 50.51,
+    "ola": 67.34,
+    "description": "Captiva was facelifted in 2011 to bring it upto date with current Chevies.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1106275569613684918/D.ChevyCaptiva22DLTZ.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1106275791836291153/captiva3.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 125,
+    "3330to60": 9.3,
+    "333Handling": 70,
+
+    "666TopSpeed": 130,
+    "6660to60": 8.8, 
+    "666Handling": 72,
+
+    "996TopSpeed": 134,
+    "9960to60": 8.3,
+    "996Handling": 72,
+
+    "969TopSpeed": 134,
+    "9690to60": 8.8,
+    "969Handling": 75,
+
+    "699TopSpeed": 130,
+    "6990to60": 8.3,
+    "699Handling": 75
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 82,
+    "make": "Aston Martin",
+    "model": "Nimrod",
+    "modelYear": 1981,
+    "country": "GB",
+    "topSpeed": 205,
+    "0to60": 3.4,
+    "handling": 94,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Endless Summer","Motorsport","Ultra Expensive","Unique","The Midlands Cruise"],
+    "isPrize": false,
+	
+    "weight": 1074,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 100,
+    "ola": 105.88,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1100779510250619020/Nimrod.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100780345760170104/Nimrod.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 208,
+"3330to60": 3.2,
+"333Handling": 97,
+
+"666TopSpeed": 210,
+"6660to60": 3.1,
+"666Handling": 100,
+
+"699TopSpeed": 210,
+"6990to60": 2.9,
+"699Handling": 104,
+
+"969TopSpeed": 213,
+"9690to60": 3.1,
+"969Handling": 104,
+
+"996TopSpeed": 213,
+"9960to60": 2.9,
+"996Handling": 100
+}

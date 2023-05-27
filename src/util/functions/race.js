@@ -139,7 +139,7 @@ async function race(message, player, opponent, currentTrack, disablegraphics) {
                         }
                         break;
                     case "driveType":
-                        if (currentTrack["surface"] !== "Asphalt" || currentTrack["weather"] === "Rainy") {
+                        if (currentTrack["surface"] !== ["Asphalt", "Drag", "Track"] || currentTrack["weather"] === "Rainy") {
                             response += "Better drive system for the surface conditions, ";
                         }
                         break;
@@ -185,12 +185,12 @@ async function race(message, player, opponent, currentTrack, disablegraphics) {
 
     function evalScore(player, opponent) {
         let score = 0;
-        score += (player.topSpeed - opponent.topSpeed) * (currentTrack["specsDistr"]["topSpeed"] / 100);
-        score += (opponent.accel - player.accel) * 10 * (currentTrack["specsDistr"]["0to60"] / 100);
+        score += (player.topSpeed - opponent.topSpeed) / 4.2 * (currentTrack["specsDistr"]["topSpeed"] / 100);
+        score += (opponent.accel - player.accel) * 15 * (currentTrack["specsDistr"]["0to60"] / 100);
         score += (player.handling - opponent.handling) * (currentTrack["specsDistr"]["handling"] / 100);
         score += (opponent.weight - player.weight) / 50 * (currentTrack["specsDistr"]["weight"] / 100);
-        score += (player.mra - opponent.mra) / 3 * (currentTrack["specsDistr"]["mra"] / 100);
-        score += (opponent.ola - player.ola) * (currentTrack["specsDistr"]["ola"] / 100);
+        score += (player.mra - opponent.mra) / 10 * (currentTrack["specsDistr"]["mra"] / 100);
+        score += (opponent.ola - player.ola) / 10 * (currentTrack["specsDistr"]["ola"] / 100);
 
         if (player.gc.toLowerCase() === "low") {
             score -= (currentTrack["speedbumps"] * 10);

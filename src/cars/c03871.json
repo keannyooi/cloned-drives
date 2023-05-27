@@ -1,0 +1,51 @@
+{  
+    "rq": 41,
+    "make": "Chrysler",
+    "model": "PT Cruiser GT",
+    "modelYear": 2006,
+    "country": "US",
+    "topSpeed": 125,
+    "0to60": 6.8,
+    "handling": 76,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["The Americas Assault", "Style Icon", "Hot Hatch", "Endless Summer","Oceanic View"],
+    "isPrize": false,
+
+
+    "weight": 1527,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 60.71,
+    "ola": 79.41,
+    "description": "New Stout 230hp Turbo engine gives a kick to the new facelift, bringing it closer to an actual hot hatch.",
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1102543797637890168/PTCruiserGT.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1102544087837593600/PTCruiserGT.png",
+    "creator": "Andu",
+    
+    "333TopSpeed": 129,
+    "3330to60": 6.5,
+    "333Handling": 79,
+    
+    "666TopSpeed": 133,
+    "6660to60": 6.1,
+    "666Handling": 81,
+    
+    "699TopSpeed": 133,
+    "6990to60": 5.8,
+    "699Handling": 84,
+    
+    "969TopSpeed": 137,
+    "9690to60": 6.1,
+    "969Handling": 84,
+    
+    "996TopSpeed": 137,
+    "9960to60": 5.8,
+    "996Handling": 81
+}

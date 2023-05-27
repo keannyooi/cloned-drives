@@ -1,0 +1,49 @@
+{
+    "rq": 41,
+    "make": "Lamborghini",
+    "model": "400 GT",
+    "modelYear": 1965,
+    "country": "IT",
+    "topSpeed": 162,
+    "0to60": 6.4,
+    "handling": 69,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","Grand Tourer","The Tyrol Tour: Remix","Oceanic View"],
+    "isPrize": false,
+	
+    "weight": 1472,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 70.29,
+    "ola": 75,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1101866957013262446/Lambo400GT.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1101867420643233822/Lambo400GT.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 165,
+"3330to60": 6.1,
+"333Handling": 71,
+
+"666TopSpeed": 168,
+"6660to60": 5.8,
+"666Handling": 74,
+
+"699TopSpeed": 168,
+"6990to60": 5.4,
+"699Handling": 77,
+
+"969TopSpeed": 172,
+"9690to60": 5.8,
+"969Handling": 77,
+
+"996TopSpeed": 172,
+"9960to60": 5.4,
+"996Handling": 74
+}

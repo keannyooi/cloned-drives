@@ -1,0 +1,51 @@
+{  
+    "rq": 3,
+    "make": "Suzuki",
+    "model": "Carry 660 4WD Cargo Truck",
+    "modelYear": 1990,
+    "country": "JP",
+    "topSpeed": 70,
+    "0to60": 34.0,
+    "handling": 50,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["The Amplification of Asia","Endless Summer"],
+    "isPrize": false,
+
+
+    "weight": 850,
+    "gc": "Medium",
+    "seatCount":2,
+    "bodyStyle": "Commercial",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 0.00,
+    "ola": 54.65,
+    "description": "Added 4WD for that little bit more of versatility.",
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1106273095385354401/Carry6604WDCT.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1106273289581637684/Carry4wd.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 77,
+    "3330to60": 32.3,
+    "333Handling": 52,
+    
+    "666TopSpeed": 85,
+    "6660to60": 30.6,
+    "666Handling": 53,
+    
+    "699TopSpeed": 85,
+    "6990to60": 28.9,
+    "699Handling": 56,
+    
+    "969TopSpeed": 92,
+    "9690to60": 30.6,
+    "969Handling": 56,
+    
+    "996TopSpeed": 92,
+    "9960to60": 28.9,
+    "996Handling": 53
+}

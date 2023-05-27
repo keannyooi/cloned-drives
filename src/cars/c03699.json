@@ -1,0 +1,49 @@
+{
+    "rq": 3,
+    "make": ["Aston-Martin", "Aston Martin"],
+    "model": "15/98 4 Door Saloon",
+    "modelYear": 1936,
+    "country": "GB",
+    "topSpeed": 90,
+    "0to60": 19.9,
+    "handling": 52,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Unique","The Midlands Cruise","Endless Summer"],
+    "isPrize": false,
+	
+    "weight": 1219,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 6.9,
+    "ola": 65,
+    "description": "Very many pre-war cars, such as the 2 litre saloon were bodied by the company of E. Bertelli Ltd, run by Enrico ‘Harry’ Bertelli, brother of A.C. ‘Bert’ Bertelli, in a factory next door to Aston Martin in Feltham. It was initially intended that 100 of the 4 door saloon would be built on the longer 9’8”chassis together with a lesser number of 2 door tourers.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1096530332779544778/15-98_Saloon.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1096530875270836315/15-98saloon.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 96,
+"3330to60": 18.9,
+"333Handling": 54,
+
+"666TopSpeed": 102,
+"6660to60": 17.9,
+"666Handling": 55,
+
+"699TopSpeed": 102,
+"6990to60": 16.9,
+"699Handling": 58,
+
+"969TopSpeed": 107,
+"9690to60": 17.9,
+"969Handling": 58,
+
+"996TopSpeed": 107,
+"9960to60": 16.9,
+"996Handling": 55
+}

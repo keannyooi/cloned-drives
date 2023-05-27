@@ -1,0 +1,49 @@
+{
+    "rq": 1,
+    "make": ["Aston-Martin", "Aston Martin"],
+    "model": "Side Valve Boat Tail",
+    "modelYear": 1923,
+    "country": "GB",
+    "topSpeed": 75,
+    "0to60": 31.0,
+    "handling": 46,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Unique","The Midlands Cruise","Endless Summer"],
+    "isPrize": false,
+	
+    "weight": 800,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 2.25,
+    "ola": 70,
+    "description": "Is this the most attractive car of the B&M era? Well I'd like to think that this pretty Boat Tail car with 11 hp side valve engine is a real contender. According to the AM Regsiter, this car started life as a Works track racer which following a crash, donated parts to make this car. It is now owned by Aston Martin themselves and is often displayed at the factory in Gaydon.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1096531667679723662/AMsideValveBoattail.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1096532211928416346/AMsideValveBoattail.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 82,
+"3330to60": 29.4,
+"333Handling": 48,
+
+"666TopSpeed": 89,
+"6660to60": 27.9,
+"666Handling": 49,
+
+"699TopSpeed": 89,
+"6990to60": 26.3,
+"699Handling": 51,
+
+"969TopSpeed": 96,
+"9690to60": 27.9,
+"969Handling": 51,
+
+"996TopSpeed": 96,
+"9960to60": 26.3,
+"996Handling": 49
+}

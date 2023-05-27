@@ -1,0 +1,49 @@
+{
+    "rq": 82,
+    "make": "Audi",
+    "model": "A8L 4.0 TFSI quattro",
+    "modelYear": 2012,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 4.1,
+    "handling": 83,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Endless Summer","The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 1995,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 70.68,
+    "ola": 82.92,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1101513119240556726/S.AudiA8L40TFSIquattro.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1101513199800569958/A8LTFSIQuattro2012.png",
+    "creator": "Connor",
+
+"333TopSpeed": 158,
+"3330to60": 3.9,
+"333Handling": 86,
+
+"666TopSpeed": 162,
+"6660to60": 3.7,
+"666Handling": 88,
+
+"699TopSpeed": 162,
+"6990to60": 3.5,
+"699Handling": 92,
+
+"969TopSpeed": 165,
+"9690to60": 3.7,
+"969Handling": 92,
+
+"996TopSpeed": 165,
+"9960to60": 3.5,
+"996Handling": 88
+}

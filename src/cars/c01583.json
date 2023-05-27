@@ -1,5 +1,5 @@
 {
-    "rq": 85,
+    "rq": 87,
     "make": [
         "JUN AUTO",
         "Nissan"
@@ -9,15 +9,15 @@
     "country": "JP",
     "topSpeed": 261,
     "0to60": 2.6,
-    "handling": 77,
+    "handling": 25,
     "driveType": "RWD",
-    "tyreType": "Performance",
+    "tyreType": "Drag",
     "tags": [
         "Tuner",
         "Unique",
         "The Japanese Odyssey"
     ],
-    "isPrize": true,
+    "isPrize": false,
     "weight": 1300,
     "gc": "Low",
     "seatCount": 2,
@@ -29,22 +29,26 @@
     "mra": 123.81,
     "ola": 111.54,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/869498361483493396/jun_auto_300zx_lsr.png",
-    "333TopSpeed": 263,
-    "3330to60": 2.5,
-    "333Handling": 80,
-    "666TopSpeed": 265,
-    "6660to60": 2.3,
-    "666Handling": 82,
-    "996TopSpeed": 267,
-    "9960to60": 2.2,
-    "996Handling": 82,
-    "969TopSpeed": 267,
-    "9690to60": 2.3,
-    "969Handling": 85,
-    "699TopSpeed": 265,
-    "6990to60": 2.2,
-    "699Handling": 85,
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1101947324458086520/BlitzJun.png",
+"333TopSpeed": 263,
+"3330to60": 2.5,
+"333Handling": 26,
+
+"666TopSpeed": 265,
+"6660to60": 2.3,
+"666Handling": 27,
+
+"699TopSpeed": 265,
+"6990to60": 2.2,
+"699Handling": 28,
+
+"969TopSpeed": 267,
+"9690to60": 2.3,
+"969Handling": 28,
+
+"996TopSpeed": 267,
+"9960to60": 2.2,
+"996Handling": 27,
     "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003164245170589696/jun_300zx.jpg",
     "creator": "Keanny"
 }

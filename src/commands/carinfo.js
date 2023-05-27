@@ -95,7 +95,7 @@ module.exports = {
                     { name: "Collection", value: collection || "None", inline: true },
                     { name: "Mid-Range Acceleration (MRA)", value: mra, inline: true },
                     { name: "Off-the-Line Acceleration (OLA)", value: ola, inline: true },
-                    // { name: "Creator", value: currentCar.creator ?? "None", inline: true },
+                    { name: "Creator", value: currentCar.creator ?? "None", inline: true },
                     { name: "Description", value: description }
                 ]
             });

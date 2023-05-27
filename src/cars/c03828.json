@@ -1,0 +1,49 @@
+{
+    "rq": 51,
+    "make": ["Mercedes-AMG", "Mercedes-Benz"],
+    "model": "G 63 6x6",
+    "modelYear": 2013,
+    "country": "DE",
+    "topSpeed": 100,
+    "0to60": 7.8,
+    "handling": 63,
+    "driveType": "AWD",
+    "tyreType": "Off-Road",
+    "tags": ["Endless Summer","Ultra Expensive","Unique","Extreme Juggernaut","The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 4105,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "Pickup",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 81.95,
+    "ola": 61.25,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1103299807998656593/AMGG6x6.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1103300705357418506/AMG6x6.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 105,
+"3330to60": 7.4,
+"333Handling": 65,
+
+"666TopSpeed": 110,
+"6660to60": 7,
+"666Handling": 67,
+
+"699TopSpeed": 110,
+"6990to60": 6.6,
+"699Handling": 70,
+
+"969TopSpeed": 116,
+"9690to60": 7,
+"969Handling": 70,
+
+"996TopSpeed": 116,
+"9960to60": 6.6,
+"996Handling": 67
+}

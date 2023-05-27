@@ -1,0 +1,49 @@
+{
+    "rq": 102,
+    "make": "Cadillac",
+    "model": "V-Series.R",
+    "modelYear": 2023,
+    "country": "US",
+    "topSpeed": 205,
+    "0to60": 2.4,
+    "handling": 100,
+    "driveType": "4WD",
+    "tyreType": "Slick",
+    "tags": ["Endless Summer","Motorsport","Unique","Eco-Friendly","The Americas Assault"],
+    "isPrize": true,
+	
+    "weight": 1030,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Hybrid",
+    "mra": 119.99,
+    "ola": 88.86,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1103300236077711461/CaddyLMH.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1103301014381150239/CaddyLMH.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 208,
+"3330to60": 2.3,
+"333Handling": 103,
+
+"666TopSpeed": 210,
+"6660to60": 2.2,
+"666Handling": 107,
+
+"699TopSpeed": 210,
+"6990to60": 2,
+"699Handling": 111,
+
+"969TopSpeed": 213,
+"9690to60": 2.2,
+"969Handling": 111,
+
+"996TopSpeed": 213,
+"9960to60": 2,
+"996Handling": 107
+}

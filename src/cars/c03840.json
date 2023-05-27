@@ -1,0 +1,49 @@
+{
+    "rq": 91,
+    "make": "Porsche",
+    "model": "961",
+    "modelYear": 1986,
+    "country": "DE",
+    "topSpeed": 215,
+    "0to60": 3.0,
+    "handling": 94,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Endless Summer","Motorsport","Unique","Ultra Expensive","The Tyrol Tour: Remix"],
+    "isPrize": true,
+	
+    "weight": 1100,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 96.57,
+    "ola": 91.66,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1103280749769146478/Porsche961.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1103281783841247262/961.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 217,
+"3330to60": 2.8,
+"333Handling": 97,
+
+"666TopSpeed": 220,
+"6660to60": 2.7,
+"666Handling": 100,
+
+"699TopSpeed": 220,
+"6990to60": 2.5,
+"699Handling": 104,
+
+"969TopSpeed": 222,
+"9690to60": 2.7,
+"969Handling": 104,
+
+"996TopSpeed": 222,
+"9960to60": 2.5,
+"996Handling": 100
+}

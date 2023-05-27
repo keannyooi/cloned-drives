@@ -1,0 +1,49 @@
+{
+    "rq": 96,
+    "make": "Mitsubishi",
+    "model": "Lancer Evolution VII Ralliart Xtreme SC500",
+    "modelYear": 2002,
+    "country": "JP",
+    "topSpeed": 180,
+    "0to60": 3.0,
+    "handling": 91,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Endless Summer","Unique","Street Racer","The Amplification of Asia","Super Sedan"],
+    "isPrize": true,
+	
+    "weight": 1400,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 81.21,
+    "ola": 80,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1088895803260678184/Evo7XtremeSC500.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1088898884941660220/Evo7xtremeSC500.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 183,
+"3330to60": 2.8,
+"333Handling": 94,
+
+"666TopSpeed": 186,
+"6660to60": 2.7,
+"666Handling": 97,
+
+"699TopSpeed": 186,
+"6990to60": 2.5,
+"699Handling": 101,
+
+"969TopSpeed": 189,
+"9690to60": 2.7,
+"969Handling": 101,
+
+"996TopSpeed": 189,
+"9960to60": 2.5,
+"996Handling": 97
+}
