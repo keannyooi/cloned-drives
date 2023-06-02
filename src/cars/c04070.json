@@ -1,0 +1,53 @@
+{
+    "rq": 72,
+    "make": "Volkswagen",
+    "model": "Golf A59",
+    "modelYear": 1994,
+    "country": "DE",
+    "topSpeed": 168,
+    "0to60": 4.0,
+    "handling": 84,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix", "Hot Hatch", "Unique","Endless Summer"],
+    "isPrize": false,
+
+
+    "weight": 1373,
+    "gc": "Low",
+    "seatCount":2,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.67,
+    "ola": 70.00,
+    "description": "This is what an amazing incredible dream is for us VW lovers. If only. If. Only. ",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1110141862917976125/GolfA59.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1110143994123534336/GolfA59.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 171,
+    "3330to60": 3.8,
+    "333Handling": 87,
+    
+    "666TopSpeed": 174,
+    "6660to60": 3.6,
+    "666Handling": 90,
+    
+    "699TopSpeed": 174,
+    "6990to60": 3.4,
+    "699Handling": 93,
+    
+    "969TopSpeed": 177,
+    "9690to60": 3.6,
+    "969Handling": 93,
+    
+    "996TopSpeed": 177,
+    "9960to60": 3.4,
+    "996Handling": 90
+    
+}

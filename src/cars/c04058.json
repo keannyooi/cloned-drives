@@ -1,0 +1,53 @@
+{
+    "rq": 45,
+    "make": ["ABT","Volkswagen",],
+    "model": "Golf Cup 3.0",
+    "modelYear": 1994,
+    "country": "DE",
+    "topSpeed": 149,
+    "0to60": 6.0,
+    "handling": 79,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix", "Hot Hatch", "Unique", "Tuner","Endless Summer"],
+    "isPrize": false,
+
+
+    "weight": 1207,
+    "gc": "Low",
+    "seatCount":2,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 70.59,
+    "ola": 83.33,
+    "description": "Special performance version for the special loving racers.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1110140642392281149/ABTGolfCup30.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1110143858286792765/ABTGolfCup30.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 152,
+    "3330to60": 5.7,
+    "333Handling": 82,
+    
+    "666TopSpeed": 156,
+    "6660to60": 5.4,
+    "666Handling": 84,
+    
+    "699TopSpeed": 156,
+    "6990to60": 5.1,
+    "699Handling": 88,
+    
+    "969TopSpeed": 159,
+    "9690to60": 5.4,
+    "969Handling": 88,
+    
+    "996TopSpeed": 159,
+    "9960to60": 5.1,
+    "996Handling": 84
+    
+}

@@ -1,0 +1,52 @@
+{
+    "rq": 1,
+    "make": "Volkswagen",
+    "model": "Golf CitySTROMer",
+    "modelYear": 1993,
+    "country": "DE",
+    "topSpeed": 59,
+    "0to60": 0.00,
+    "handling": 55,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix", "Eco-Friendly", "Unique","Endless Summer"],
+    "isPrize": false,
+
+
+    "weight": 1496,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 0.00,
+    "ola": 17.21,
+    "description": "Back again for a third generation.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1110140438683324426/GolfCitystromer.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1110143668658110534/GolfCitystromermk3.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 68,
+    "3330to60": 58.5,
+    "333Handling": 54,
+
+    "666TopSpeed": 76,
+    "6660to60": 55.6, 
+    "666Handling": 55,
+
+    "996TopSpeed": 85,
+    "9960to60": 52.7,
+    "996Handling": 55,
+
+    "969TopSpeed": 85,
+    "9690to60": 55.6,
+    "969Handling": 58,
+
+    "699TopSpeed": 76,
+    "6990to60": 52.7,
+    "699Handling": 58
+}

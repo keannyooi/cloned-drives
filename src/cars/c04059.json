@@ -1,0 +1,53 @@
+{
+    "rq": 42,
+    "make": ["Nothelle","Volkswagen"],
+    "model": "Golf VR6",
+    "modelYear": 1992,
+    "country": "DE",
+    "topSpeed": 145,
+    "0to60": 6.9,
+    "handling": 76,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix", "Hot Hatch", "Unique", "Tuner","Endless Summer"],
+    "isPrize": false,
+
+
+    "weight": 1220,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 65.09,
+    "ola": 81.16,
+    "description": "Adding that classic Nothelle touch",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1110140717889765397/NothelleGolfVR6.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1110143899600703508/NothelleGolfVR6.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 149,
+    "3330to60": 6.6,
+    "333Handling": 79,
+    
+    "666TopSpeed": 152,
+    "6660to60": 6.2,
+    "666Handling": 81,
+    
+    "699TopSpeed": 152,
+    "6990to60": 5.9,
+    "699Handling": 84,
+    
+    "969TopSpeed": 156,
+    "9690to60": 6.2,
+    "969Handling": 84,
+    
+    "996TopSpeed": 156,
+    "9960to60": 5.9,
+    "996Handling": 81
+    
+}

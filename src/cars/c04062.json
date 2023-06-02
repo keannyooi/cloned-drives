@@ -1,0 +1,52 @@
+{
+    "rq": 27,
+    "make": "Volkswagen",
+    "model": "Golf 1.6 Movie",
+    "modelYear": 1996,
+    "country": "DE",
+    "topSpeed": 117,
+    "0to60": 10.8,
+    "handling": 70,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix","Endless Summer"],
+    "isPrize": true,
+
+
+    "weight": 1015,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 41.22,
+    "ola": 61.11,
+    "description": "This car is extremely important to me. I was born in it, i grew up in it, i had fights in it, i had great moments in it and it was the one that made me become a VW fan. GJ you'll always be incredible.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1110140007143968858/Golf16Movie.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1110143367834255430/Moviebb.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 121,
+    "3330to60": 10.3,
+    "333Handling": 72,
+    
+    "666TopSpeed": 126,
+    "6660to60": 9.7,
+    "666Handling": 75,
+    
+    "699TopSpeed": 126,
+    "6990to60": 9.2,
+    "699Handling": 78,
+    
+    "969TopSpeed": 130,
+    "9690to60": 9.7,
+    "969Handling": 78,
+    
+    "996TopSpeed": 130,
+    "9960to60": 9.2,
+    "996Handling": 75
+}

@@ -1,0 +1,52 @@
+{
+    "rq": 23,
+    "make": "Volkswagen",
+    "model": "Golf 1.9 TDI GL",
+    "modelYear": 1993,
+    "country": "DE",
+    "topSpeed": 111,
+    "0to60": 12.2,
+    "handling": 69,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix","Endless Summer"],
+    "isPrize": false,
+
+
+    "weight": 1085,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 37.91,
+    "ola": 62.55,
+    "description": "The humble beginnings of a legendary engine.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1110140129995145237/Golf19TDI_GL.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1110143443906351164/Golf19TDIGL.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 116,
+    "3330to60": 11.6,
+    "333Handling": 71,
+    
+    "666TopSpeed": 120,
+    "6660to60": 11,
+    "666Handling": 74,
+    
+    "699TopSpeed": 120,
+    "6990to60": 10.4,
+    "699Handling": 77,
+    
+    "969TopSpeed": 125,
+    "9690to60": 11,
+    "969Handling": 77,
+    
+    "996TopSpeed": 125,
+    "9960to60": 10.4,
+    "996Handling": 74
+}

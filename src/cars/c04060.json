@@ -1,0 +1,52 @@
+{
+    "rq": 35,
+    "make": "Volkswagen",
+    "model": "Golf GTI 2.0 16V 20 Jahre",
+    "modelYear": 1996,
+    "country": "DE",
+    "topSpeed": 134,
+    "0to60": 8.1,
+    "handling": 76,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix", "Hot Hatch","Endless Summer"],
+    "isPrize": false,
+
+
+    "weight": 1090,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 56.89,
+    "ola": 77.02,
+    "description": "Celebrating 20 Years with how the original mk3 GTI should've been.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1110140476838924298/Golf20GTI16V20Jahre.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1110143716322185236/GolfGTI2016V20J.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 138,
+    "3330to60": 7.7,
+    "333Handling": 79,
+    
+    "666TopSpeed": 142,
+    "6660to60": 7.3,
+    "666Handling": 81,
+    
+    "699TopSpeed": 142,
+    "6990to60": 6.9,
+    "699Handling": 84,
+    
+    "969TopSpeed": 146,
+    "9690to60": 7.3,
+    "969Handling": 84,
+    
+    "996TopSpeed": 146,
+    "9960to60": 6.9,
+    "996Handling": 81
+}

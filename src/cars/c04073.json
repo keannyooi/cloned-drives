@@ -1,0 +1,52 @@
+{
+    "rq": 18,
+    "make": "Volkswagen",
+    "model": "Golf GTD Special",
+    "modelYear": 1995,
+    "country": "DE",
+    "topSpeed": 103,
+    "0to60": 14.3,
+    "handling": 67,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix", "Hot Hatch","Endless Summer"],
+    "isPrize": false,
+
+
+    "weight": 1040,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 24.49,
+    "ola": 62.94,
+    "description": "Brought back for a special occasion, the GTD is still not fast!",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1110140353165676554/GolfGTD_Special.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1110143636156465162/GolfGTDSpecial.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 108,
+    "3330to60": 14,
+    "333Handling": 69,
+    
+    "666TopSpeed": 113,
+    "6660to60": 13.2,
+    "666Handling": 71,
+    
+    "699TopSpeed": 113,
+    "6990to60": 12.5,
+    "699Handling": 74,
+    
+    "969TopSpeed": 118,
+    "9690to60": 13.2,
+    "969Handling": 74,
+    
+    "996TopSpeed": 118,
+    "9960to60": 12.5,
+    "996Handling": 71
+}

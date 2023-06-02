@@ -1,0 +1,52 @@
+{
+    "rq": 16,
+    "make": "Volkswagen",
+    "model": "Golf 1.4 L",
+    "modelYear": 1994,
+    "country": "DE",
+    "topSpeed": 100,
+    "0to60": 15.7,
+    "handling": 67,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix","Endless Summer"],
+    "isPrize": false,
+
+
+    "weight": 1005,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 20.99,
+    "ola": 59.87,
+    "description": "This Golf is literally a blank slate, you get a body, engine and a gearbox.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1110140069865586739/Golf14L.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1110143397555093606/Golf14L.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 105,
+    "3330to60": 14.9,
+    "333Handling": 69,
+    
+    "666TopSpeed": 110,
+    "6660to60": 14.1,
+    "666Handling": 71,
+    
+    "699TopSpeed": 110,
+    "6990to60": 13.3,
+    "699Handling": 74,
+    
+    "969TopSpeed": 116,
+    "9690to60": 14.1,
+    "969Handling": 74,
+    
+    "996TopSpeed": 116,
+    "9960to60": 13.3,
+    "996Handling": 71
+}

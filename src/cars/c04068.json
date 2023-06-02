@@ -1,0 +1,52 @@
+{
+    "rq": 28,
+    "make": "Volkswagen",
+    "model": "Golf 2.0 Harlequin",
+    "modelYear": 1994,
+    "country": "DE",
+    "topSpeed": 118,
+    "0to60": 10.4,
+    "handling": 70,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Unique", "The Tyrol Tour: Remix","Endless Summer"],
+    "isPrize": true,
+
+
+    "weight": 1080,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 41.43,
+    "ola": 61.54,
+    "description": "One of the raddest VW Golfs started as a sales failure.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1110139807042125904/Golf20Harlequin.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1110143230768594995/Harlequin.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 122,
+    "3330to60": 9.9,
+    "333Handling": 72,
+    
+    "666TopSpeed": 127,
+    "6660to60": 9.4,
+    "666Handling": 75,
+    
+    "699TopSpeed": 127,
+    "6990to60": 8.8,
+    "699Handling": 78,
+    
+    "969TopSpeed": 131,
+    "9690to60": 9.4,
+    "969Handling": 78,
+    
+    "996TopSpeed": 131,
+    "9960to60": 8.8,
+    "996Handling": 75
+}
