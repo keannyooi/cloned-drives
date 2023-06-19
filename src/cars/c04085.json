@@ -1,0 +1,49 @@
+{
+    "rq": 33,
+    "make": "Porsche",
+    "model": "944 S2 Cabriolet",
+    "modelYear": 1989,
+    "country": "DE",
+    "topSpeed": 144,
+    "0to60": 6.8,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 1390,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 62.1,
+    "ola": 77.79,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1119564768844455976/944S2Cab.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1119564964106076232/944S2cabrio.png",
+
+"333TopSpeed": 148,
+"3330to60": 6.5,
+"333Handling": 77,
+
+"666TopSpeed": 151,
+"6660to60": 6.1,
+"666Handling": 80,
+
+"699TopSpeed": 151,
+"6990to60": 5.8,
+"699Handling": 83,
+
+"969TopSpeed": 155,
+"9690to60": 6.1,
+"969Handling": 83,
+
+"996TopSpeed": 155,
+"9960to60": 5.8,
+"996Handling": 80,
+    "creator": "Bnuuy"
+}

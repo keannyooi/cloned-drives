@@ -1,0 +1,49 @@
+{
+    "rq": 49,
+    "make": "Porsche",
+    "model": "944 Turbo Cup",
+    "modelYear": 1987,
+    "country": "DE",
+    "topSpeed": 160,
+    "0to60": 5.8,
+    "handling": 84,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport","The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 1009,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.66,
+    "ola": 75,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1119564843100422244/944TurboCup.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1119565031558885406/944TurboCup.png",
+
+"333TopSpeed": 163,
+"3330to60": 5.5,
+"333Handling": 87,
+
+"666TopSpeed": 167,
+"6660to60": 5.2,
+"666Handling": 90,
+
+"699TopSpeed": 167,
+"6990to60": 4.9,
+"699Handling": 93,
+
+"969TopSpeed": 170,
+"9690to60": 5.2,
+"969Handling": 93,
+
+"996TopSpeed": 170,
+"9960to60": 4.9,
+"996Handling": 90,
+    "creator": "Bnuuy"
+}

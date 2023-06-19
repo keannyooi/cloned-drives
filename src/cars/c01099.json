@@ -1,14 +1,14 @@
 {
-    "rq": 23,
+    "rq": 32,
     "make": "Porsche",
-    "model": "924S 2.5",
+    "model": "924 S",
     "modelYear": 1986,
     "country": "DE",
     "topSpeed": 131,
     "0to60": 8.0,
-    "handling": 71,
+    "handling": 73,
     "driveType": "RWD",
-    "tyreType": "Performance",
+    "tyreType": "Standard",
     "tags": [
         "Street Racer",
         "Grand Tourer"
@@ -25,22 +25,26 @@
     "mra": 53.6,
     "ola": 65.83,
     "description": "Entry level front-engined porsche still ongoing after 10 years but now fitted with a bigger 2.5L I4 called the 924S.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/846888656140632104/image0.png",
-    "333TopSpeed": 135,
-    "3330to60": 7.6,
-    "333Handling": 73,
-    "666TopSpeed": 139,
-    "6660to60": 7.2,
-    "666Handling": 76,
-    "996TopSpeed": 143,
-    "9960to60": 6.8,
-    "996Handling": 76,
-    "969TopSpeed": 143,
-    "9690to60": 7.2,
-    "969Handling": 79,
-    "699TopSpeed": 139,
-    "6990to60": 6.8,
-    "699Handling": 79,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1051141630364754041/Porsche_924S.png",
-    "creator": "Spence"
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1114188789078827098/S924.png",
+"333TopSpeed": 135,
+"3330to60": 7.6,
+"333Handling": 75,
+
+"666TopSpeed": 139,
+"6660to60": 7.2,
+"666Handling": 78,
+
+"699TopSpeed": 139,
+"6990to60": 6.8,
+"699Handling": 81,
+
+"969TopSpeed": 143,
+"9690to60": 7.2,
+"969Handling": 81,
+
+"996TopSpeed": 143,
+"9960to60": 6.8,
+"996Handling": 78,
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1114189091416838244/S924.png",
+    "creator": "Bnuuy"
 }

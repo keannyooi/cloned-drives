@@ -1,0 +1,49 @@
+{
+    "rq": 30,
+    "make": "Porsche",
+    "model": "924 Turbo",
+    "modelYear": 1980,
+    "country": "DE",
+    "topSpeed": 131,
+    "0to60": 8.2,
+    "handling": 72,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 1340,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 51.4,
+    "ola": 66.66,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1115054971361185924/TurboUS924.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1115055259396624444/924TurboUS.png",
+
+"333TopSpeed": 135,
+"3330to60": 7.8,
+"333Handling": 74,
+
+"666TopSpeed": 139,
+"6660to60": 7.4,
+"666Handling": 77,
+
+"699TopSpeed": 139,
+"6990to60": 7,
+"699Handling": 80,
+
+"969TopSpeed": 143,
+"9690to60": 7.4,
+"969Handling": 80,
+
+"996TopSpeed": 143,
+"9960to60": 7,
+"996Handling": 77,
+    "creator": "Bnuuy"
+}

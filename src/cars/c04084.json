@@ -1,0 +1,49 @@
+{
+    "rq": 81,
+    "make": "Porsche",
+    "model": "944 GTR IMSA GTO by Fabcar",
+    "modelYear": 1986,
+    "country": "DE",
+    "topSpeed": 212,
+    "0to60": 3.5,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Unique","Motorsport","The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 944,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 94.5,
+    "ola": 86.91,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1119564826050572288/944GTRIMSAGTO.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1119565015528243280/944GTRIMSA.png",
+
+"333TopSpeed": 214,
+"3330to60": 3.3,
+"333Handling": 94,
+
+"666TopSpeed": 217,
+"6660to60": 3.1,
+"666Handling": 97,
+
+"699TopSpeed": 217,
+"6990to60": 3,
+"699Handling": 101,
+
+"969TopSpeed": 219,
+"9690to60": 3.1,
+"969Handling": 101,
+
+"996TopSpeed": 219,
+"9960to60": 3,
+"996Handling": 97,
+    "creator": "Bnuuy"
+}

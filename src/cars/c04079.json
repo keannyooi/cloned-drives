@@ -1,0 +1,49 @@
+{
+    "rq": 58,
+    "make": "Porsche",
+    "model": "924 Turbo Rallye Gr4",
+    "modelYear": 1979,
+    "country": "DE",
+    "topSpeed": 121,
+    "0to60": 6.6,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Off-Road",
+    "tags": ["The Tyrol Tour: Remix","Motorsport"],
+    "isPrize": false,
+	
+    "weight": 1210,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 47.89,
+    "ola": 71.5,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1115055086721318973/TurboRallyeGR4924.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1115055406633463899/924TurboRallye.png",
+
+"333TopSpeed": 125,
+"3330to60": 6.3,
+"333Handling": 77,
+
+"666TopSpeed": 130,
+"6660to60": 5.9,
+"666Handling": 80,
+
+"699TopSpeed": 130,
+"6990to60": 5.6,
+"699Handling": 83,
+
+"969TopSpeed": 134,
+"9690to60": 5.9,
+"969Handling": 83,
+
+"996TopSpeed": 134,
+"9960to60": 5.6,
+"996Handling": 80,
+    "creator": "Bnuuy"
+}

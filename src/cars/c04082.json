@@ -1,0 +1,49 @@
+{
+    "rq": 23,
+    "make": "Porsche",
+    "model": "928-4 Prototype",
+    "modelYear": 1984,
+    "country": "DE",
+    "topSpeed": 130,
+    "0to60": 8.0,
+    "handling": 73,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix","Unique","Concept"],
+    "isPrize": false,
+	
+    "weight": 1590,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 58.48,
+    "ola": 77.77,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1115029018647998605/928-4Proto.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1115030617520877668/928-4Proto.png",
+
+"333TopSpeed": 134,
+"3330to60": 7.6,
+"333Handling": 75,
+
+"666TopSpeed": 138,
+"6660to60": 7.2,
+"666Handling": 78,
+
+"699TopSpeed": 138,
+"6990to60": 6.8,
+"699Handling": 81,
+
+"969TopSpeed": 142,
+"9690to60": 7.2,
+"969Handling": 81,
+
+"996TopSpeed": 142,
+"9960to60": 6.8,
+"996Handling": 78,
+    "creator": "Bnuuy"
+}

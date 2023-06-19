@@ -1,0 +1,49 @@
+{
+    "rq": 39,
+    "make": "Porsche",
+    "model": "928 Cabriolet Prototype",
+    "modelYear": 1987,
+    "country": "DE",
+    "topSpeed": 166,
+    "0to60": 6.2,
+    "handling": 74,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix","Unique","Concept"],
+    "isPrize": false,
+	
+    "weight": 1610,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 63.49,
+    "ola": 80,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1115029051749449738/928CabProto.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1115030642703470602/928CabProto.png",
+
+"333TopSpeed": 169,
+"3330to60": 5.9,
+"333Handling": 76,
+
+"666TopSpeed": 172,
+"6660to60": 5.6,
+"666Handling": 79,
+
+"699TopSpeed": 172,
+"6990to60": 5.3,
+"699Handling": 82,
+
+"969TopSpeed": 175,
+"9690to60": 5.6,
+"969Handling": 82,
+
+"996TopSpeed": 175,
+"9960to60": 5.3,
+"996Handling": 79,
+    "creator": "Bnuuy"
+}

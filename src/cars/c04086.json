@@ -1,0 +1,49 @@
+{
+    "rq": 35,
+    "make": "Porsche",
+    "model": "944 Turbo Cabriolet",
+    "modelYear": 1991,
+    "country": "DE",
+    "topSpeed": 150,
+    "0to60": 6.6,
+    "handling": 76,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 1380,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 61.44,
+    "ola": 77.16,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1119564787332960299/944TurboCab.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1119564985023090699/944Turbocabrio.png",
+
+"333TopSpeed": 153,
+"3330to60": 6.3,
+"333Handling": 79,
+
+"666TopSpeed": 157,
+"6660to60": 5.9,
+"666Handling": 81,
+
+"699TopSpeed": 157,
+"6990to60": 5.6,
+"699Handling": 84,
+
+"969TopSpeed": 160,
+"9690to60": 5.9,
+"969Handling": 84,
+
+"996TopSpeed": 160,
+"9960to60": 5.6,
+"996Handling": 81,
+    "creator": "Bnuuy"
+}

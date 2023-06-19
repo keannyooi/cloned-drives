@@ -1,0 +1,49 @@
+{
+    "rq": 53,
+    "make": "Porsche",
+    "model": "924 Carrera GTS Clubsport",
+    "modelYear": 1981,
+    "country": "DE",
+    "topSpeed": 158,
+    "0to60": 5.2,
+    "handling": 79,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix","Track Day","Unique"],
+    "isPrize": false,
+	
+    "weight": 1060,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 67.51,
+    "ola": 77.5,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1115055000922628146/GTSClubsport924.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1115055305487810580/Porsche924CarreraGTSClubsport.png",
+
+"333TopSpeed": 161,
+"3330to60": 4.9,
+"333Handling": 82,
+
+"666TopSpeed": 165,
+"6660to60": 4.7,
+"666Handling": 84,
+
+"699TopSpeed": 165,
+"6990to60": 4.4,
+"699Handling": 88,
+
+"969TopSpeed": 168,
+"9690to60": 4.7,
+"969Handling": 88,
+
+"996TopSpeed": 168,
+"9960to60": 4.4,
+"996Handling": 84,
+    "creator": "Bnuuy"
+}

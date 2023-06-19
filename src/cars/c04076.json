@@ -1,0 +1,49 @@
+{
+    "rq": 84,
+    "make": "Porsche",
+    "model": "924 Carrera GTS Group B",
+    "modelYear": 1982,
+    "country": "DE",
+    "topSpeed": 151,
+    "0to60": 4.8,
+    "handling": 83,
+    "driveType": "RWD",
+    "tyreType": "Off-Road",
+    "tags": ["The Tyrol Tour: Remix","Motorsport","Unique"],
+    "isPrize": false,
+	
+    "weight": 1040,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 68.44,
+    "ola": 77.5,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1115055120418357328/GTSGroupB924.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1115055442054348860/Porsche924CarreraGTSGroupB.png",
+
+"333TopSpeed": 154,
+"3330to60": 4.6,
+"333Handling": 86,
+
+"666TopSpeed": 158,
+"6660to60": 4.3,
+"666Handling": 88,
+
+"699TopSpeed": 158,
+"6990to60": 4.1,
+"699Handling": 92,
+
+"969TopSpeed": 161,
+"9690to60": 4.3,
+"969Handling": 92,
+
+"996TopSpeed": 161,
+"9960to60": 4.1,
+"996Handling": 88,
+    "creator": "Bnuuy"
+}
