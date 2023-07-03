@@ -1,0 +1,52 @@
+{
+    "rq": 25,
+    "make": "Volkswagen",
+    "model": "cross up! 1.0 MPI",
+    "modelYear": 2013,
+    "country": "DE",
+    "topSpeed": 104,
+    "0to60": 13.5,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+
+    "weight": 957,
+    "gc": "Medium",
+    "seatCount":4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 42.86,
+    "ola": 69.63,
+    "description": "Characterful high-riding supermini is neither fast nor roomy, but it is fun to drive and satisfyingly frugal.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1118293932233719899/crossup.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1118295419517145178/upcross.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 109,
+    "3330to60": 12.8,
+    "333Handling": 75,
+    
+    "666TopSpeed": 114,
+    "6660to60": 12.2,
+    "666Handling": 78,
+    
+    "699TopSpeed": 114,
+    "6990to60": 11.5,
+    "699Handling": 81,
+    
+    "969TopSpeed": 119,
+    "9690to60": 12.2,
+    "969Handling": 81,
+    
+    "996TopSpeed": 119,
+    "9960to60": 11.5,
+    "996Handling": 78
+}

@@ -1,0 +1,52 @@
+{
+    "rq": 84,
+    "make": ["Oettinger", "Volkswagen"],
+    "model": "500R",
+    "modelYear": 2015,
+    "country": "DE",
+    "topSpeed": 187,
+    "0to60": 3.5,
+    "handling": 91,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix", "Hot Hatch", "Unique", "Tuner"],
+    "isPrize": false,
+
+
+    "weight": 1465,
+    "gc": "Low",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 77.78,
+    "ola": 74.29,
+    "description": "This is what would happen if a Golf R and a Audi RS3 got together for a steamy 5 minutes.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1118315185573203988/Oettinger500R.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1118316336616054784/R500.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 190,
+    "3330to60": 3.3,
+    "333Handling": 94,
+    
+    "666TopSpeed": 193,
+    "6660to60": 3.1,
+    "666Handling": 97,
+    
+    "699TopSpeed": 193,
+    "6990to60": 3,
+    "699Handling": 101,
+    
+    "969TopSpeed": 195,
+    "9690to60": 3.1,
+    "969Handling": 101,
+    
+    "996TopSpeed": 195,
+    "9960to60": 3,
+    "996Handling": 97
+}

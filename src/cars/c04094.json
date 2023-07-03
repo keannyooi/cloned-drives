@@ -1,0 +1,52 @@
+{
+    "rq": 19,
+    "make": "Volkswagen",
+    "model": "eco move up!",
+    "modelYear": 2018,
+    "country": "DE",
+    "topSpeed": 102,
+    "0to60": 15.7,
+    "handling": 70,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+
+    "weight": 1030,
+    "gc": "Medium",
+    "seatCount":4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Alternative",
+    "mra": 30.48,
+    "ola": 59.87,
+    "description": "Eco like no others, offering the in house VAG classic 1.0 TGI without the T.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1118294088177954977/ecomoveup.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1118295588014927943/ecoup.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 107,
+    "3330to60": 14.9,
+    "333Handling": 72,
+    
+    "666TopSpeed": 112,
+    "6660to60": 14.1,
+    "666Handling": 75,
+    
+    "699TopSpeed": 112,
+    "6990to60": 13.3,
+    "699Handling": 78,
+    
+    "969TopSpeed": 117,
+    "9690to60": 14.1,
+    "969Handling": 78,
+    
+    "996TopSpeed": 117,
+    "9960to60": 13.3,
+    "996Handling": 75
+}

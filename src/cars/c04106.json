@@ -1,0 +1,52 @@
+{
+    "rq": 36,
+    "make": "Volkswagen",
+    "model": "Golf GTI 1.8 T",
+    "modelYear": 1998,
+    "country": "DE",
+    "topSpeed": 133,
+    "0to60": 8.1,
+    "handling": 77,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix", "Hot Hatch"],
+    "isPrize": false,
+
+
+    "weight": 1270,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 58.70,
+    "ola": 74.07,
+    "description": "Blink and it's your aunt's regular Golf 1.4. We could say it's a sleeper in the bad way.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1116085053907288164/GolfGTI18T98.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1116085955338707025/GolfGTI98.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 137,
+    "3330to60": 7.7,
+    "333Handling": 80,
+    
+    "666TopSpeed": 141,
+    "6660to60": 7.3,
+    "666Handling": 82,
+    
+    "699TopSpeed": 141,
+    "6990to60": 6.9,
+    "699Handling": 85,
+    
+    "969TopSpeed": 145,
+    "9690to60": 7.3,
+    "969Handling": 85,
+    
+    "996TopSpeed": 145,
+    "9960to60": 6.9,
+    "996Handling": 82
+}

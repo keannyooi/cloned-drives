@@ -1,0 +1,52 @@
+{
+    "rq": 64,
+    "make": "Volkswagen",
+    "model": "Golf R",
+    "modelYear": 2013,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 4.9,
+    "handling": 86,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix", "Hot Hatch"],
+    "isPrize": false,
+
+
+    "weight": 1522,
+    "gc": "Low",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 69.18,
+    "ola": 68.03,
+    "description": "VW's champion square dancer gets faster.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1118314997248958529/GolfR2013.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1118316127706157056/R2013.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 158,
+    "3330to60": 4.7,
+    "333Handling": 89,
+    
+    "666TopSpeed": 162,
+    "6660to60": 4.4,
+    "666Handling": 92,
+    
+    "699TopSpeed": 162,
+    "6990to60": 4.2,
+    "699Handling": 95,
+    
+    "969TopSpeed": 165,
+    "9690to60": 4.4,
+    "969Handling": 95,
+    
+    "996TopSpeed": 165,
+    "9960to60": 4.2,
+    "996Handling": 92
+}

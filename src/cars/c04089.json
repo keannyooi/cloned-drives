@@ -1,0 +1,52 @@
+{
+    "rq": 88,
+    "make": ["HPA Motorsports", "Volkswagen"],
+    "model": "Stage II R32",
+    "modelYear": 2004,
+    "country": "DE",
+    "topSpeed": 201,
+    "0to60": 3.2,
+    "handling": 90,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix", "Eargasm", "Hot Hatch", "Tuner", "Unique"],
+    "isPrize": false,
+
+
+    "weight": 1485,
+    "gc": "Low",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 74.42,
+    "ola": 68.75,
+    "description": "The GT Award-winning car that takes the aggressive R32 to the next level with a twin-turbo. GRAN TURISMO 4 FANS STAND UP!!!",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1116085352902447247/HPAStageII.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1116086130312499230/GolfHPA.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 204,
+    "3330to60": 3,
+    "333Handling": 93,
+    
+    "666TopSpeed": 206,
+    "6660to60": 2.9,
+    "666Handling": 96,
+    
+    "699TopSpeed": 206,
+    "6990to60": 2.7,
+    "699Handling": 100,
+    
+    "969TopSpeed": 209,
+    "9690to60": 2.9,
+    "969Handling": 100,
+    
+    "996TopSpeed": 209,
+    "9960to60": 2.7,
+    "996Handling": 96
+}

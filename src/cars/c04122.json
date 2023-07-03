@@ -1,0 +1,52 @@
+{
+    "rq": 48,
+    "make": "Volkswagen",
+    "model": "Passat R36 Variant",
+    "modelYear": 2007,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 5.8,
+    "handling": 76,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix", "Eargasm"],
+    "isPrize": false,
+
+
+    "weight": 1747,
+    "gc": "Low",
+    "seatCount":5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 69.88,
+    "ola": 75.86,
+    "description": "A gem of its time.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1118314670412021800/PassatR36Variant.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1118315815285047336/R36Variant.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 158,
+    "3330to60": 5.5,
+    "333Handling": 79,
+    
+    "666TopSpeed": 162,
+    "6660to60": 5.2,
+    "666Handling": 81,
+    
+    "699TopSpeed": 162,
+    "6990to60": 4.9,
+    "699Handling": 84,
+    
+    "969TopSpeed": 165,
+    "9690to60": 5.2,
+    "969Handling": 84,
+    
+    "996TopSpeed": 165,
+    "9960to60": 4.9,
+    "996Handling": 81
+}

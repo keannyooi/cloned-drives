@@ -1,0 +1,52 @@
+{
+    "rq": 45,
+    "make": ["Oettinger", "Volkswagen"],
+    "model": "Golf GTI 1.8 T",
+    "modelYear": 2001,
+    "country": "DE",
+    "topSpeed": 146,
+    "0to60": 6.1,
+    "handling": 81,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix", "Hot Hatch", "Tuner", "Unique"],
+    "isPrize": false,
+
+
+    "weight": 1305,
+    "gc": "Low",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 68.54,
+    "ola": 81.97,
+    "description": "Adding a slightly more aggressive bodykit proves that this is how the mk4 GTI should've looked like.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1116085382434529321/OettingerGTI18T.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1116086154110963742/OettingerGTI.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 150,
+    "3330to60": 5.8,
+    "333Handling": 84,
+    
+    "666TopSpeed": 153,
+    "6660to60": 5.5,
+    "666Handling": 86,
+    
+    "699TopSpeed": 153,
+    "6990to60": 5.2,
+    "699Handling": 90,
+    
+    "969TopSpeed": 157,
+    "9690to60": 5.5,
+    "969Handling": 90,
+    
+    "996TopSpeed": 157,
+    "9960to60": 5.2,
+    "996Handling": 86
+}

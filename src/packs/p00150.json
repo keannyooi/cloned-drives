@@ -1,8 +1,9 @@
 {
-	"packName": "Bnuuy Creator Pack",
-	"description": "5 Bnuuy Cards. 1 common/uncommon, 1 rare/superrare and 3 ultra or above",
+	"packName": "Andu Creator Pack",
+	"description": "5 Andu Cards. 1 common/uncommon, 1 rare/superrare and 3 ultra or above",
+	"price": 425000,
         "repetition": 1,
-	"pack": "https://cdn.discordapp.com/attachments/956106029635088384/1111956043845603378/BnuuyPAck.png", 
+	"pack": "https://cdn.discordapp.com/attachments/956106029635088384/1125395508534448258/AnduPack.png", 
 	
 	"filter": {
 		"make": "None",
@@ -18,7 +19,7 @@
         "fuelType": "None",
         "bodyStyle": "None",
 		"seatCount": "None",
-		"creator": "bnuuy"
+		"creator": "andu"
 	},
 
 	"packSequence": [

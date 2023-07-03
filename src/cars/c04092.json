@@ -1,0 +1,52 @@
+{
+    "rq": 36,
+    "make": "Volkswagen",
+    "model": "Golf 1.9 TDI Highline",
+    "modelYear": 2001,
+    "country": "DE",
+    "topSpeed": 128,
+    "0to60": 9.0,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+
+    "weight": 1237,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 57.93,
+    "ola": 71.52,
+    "description": "Fun Fact: my family had one of these for a good 5 years. Let me tell you that when people say the 1.9 PD is invincible, they ain't lying. Incredible engine.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1116085011653861376/Golf19TDIHighline.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1116085926066655402/Golf19TDI130.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 132,
+    "3330to60": 8.5,
+    "333Handling": 75,
+    
+    "666TopSpeed": 136,
+    "6660to60": 8.1,
+    "666Handling": 78,
+    
+    "699TopSpeed": 136,
+    "6990to60": 7.6,
+    "699Handling": 81,
+    
+    "969TopSpeed": 140,
+    "9690to60": 8.1,
+    "969Handling": 81,
+    
+    "996TopSpeed": 140,
+    "9960to60": 7.6,
+    "996Handling": 78
+}

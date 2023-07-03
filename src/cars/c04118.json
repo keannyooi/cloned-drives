@@ -1,0 +1,52 @@
+{
+    "rq": 34,
+    "make": "Volkswagen",
+    "model": "high up! 1.0 TSI",
+    "modelYear": 2016,
+    "country": "DE",
+    "topSpeed": 113,
+    "0to60": 9.9,
+    "handling": 75,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+
+    "weight": 1002,
+    "gc": "Medium",
+    "seatCount":4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 37.79,
+    "ola": 66.67,
+    "description": "The better value up! GTI.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1118294040153165884/highuptsi.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1118295528875229214/highup.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 118,
+    "3330to60": 9.4,
+    "333Handling": 77,
+    
+    "666TopSpeed": 122,
+    "6660to60": 8.9,
+    "666Handling": 80,
+    
+    "699TopSpeed": 122,
+    "6990to60": 8.4,
+    "699Handling": 83,
+    
+    "969TopSpeed": 127,
+    "9690to60": 8.9,
+    "969Handling": 83,
+    
+    "996TopSpeed": 127,
+    "9960to60": 8.4,
+    "996Handling": 80
+}

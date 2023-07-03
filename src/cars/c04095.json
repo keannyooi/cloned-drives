@@ -1,0 +1,52 @@
+{
+    "rq": 24,
+    "make": "Volkswagen",
+    "model": "e-up!",
+    "modelYear": 2018,
+    "country": "DE",
+    "topSpeed": 81,
+    "0to60": 11.3,
+    "handling": 72,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix", "Eco-Friendly"],
+    "isPrize": false,
+
+
+    "weight": 1203,
+    "gc": "Medium",
+    "seatCount":4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 5.00,
+    "ola": 60.18,
+    "description": "Forget about your big EV SUVs, get your money back and buy this; what modern EVs should be.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1118294165072134204/e-up.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1118295681908625468/eup.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 87,
+    "3330to60": 10.7,
+    "333Handling": 74,
+    
+    "666TopSpeed": 94,
+    "6660to60": 10.2,
+    "666Handling": 77,
+    
+    "699TopSpeed": 94,
+    "6990to60": 9.6,
+    "699Handling": 80,
+    
+    "969TopSpeed": 100,
+    "9690to60": 10.2,
+    "969Handling": 80,
+    
+    "996TopSpeed": 100,
+    "9960to60": 9.6,
+    "996Handling": 77
+}

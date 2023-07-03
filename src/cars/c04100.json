@@ -1,0 +1,52 @@
+{
+    "rq": 33,
+    "make": "Volkswagen",
+    "model": "Golf 1.9 TDI 4Motion Highline",
+    "modelYear": 2000,
+    "country": "DE",
+    "topSpeed": 121,
+    "0to60": 10.4,
+    "handling": 71,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+
+    "weight": 1313,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 45.10,
+    "ola": 59.90,
+    "description": "The 4Motion of the Locomotion!",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1116084958944039064/Golf19TDI4MotionHighline.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1116085895922204692/Golf19TDI4Motion.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 125,
+    "3330to60": 9.9,
+    "333Handling": 73,
+    
+    "666TopSpeed": 130,
+    "6660to60": 9.4,
+    "666Handling": 76,
+    
+    "699TopSpeed": 130,
+    "6990to60": 8.8,
+    "699Handling": 79,
+    
+    "969TopSpeed": 134,
+    "9690to60": 9.4,
+    "969Handling": 79,
+    
+    "996TopSpeed": 134,
+    "9960to60": 8.8,
+    "996Handling": 76
+}

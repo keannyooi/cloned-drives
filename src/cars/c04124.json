@@ -1,0 +1,52 @@
+{
+    "rq": 73,
+    "make": "Volkswagen",
+    "model": "T-Roc R",
+    "modelYear": 2019,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 4.6,
+    "handling": 85,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+
+    "weight": 1570,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.67,
+    "ola": 73.91,
+    "description": "Golf R - Hatchback shell + crossover shell + corny name = T-Roc R. Das Auto.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1118315252417843230/TRocR.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1118316380056457256/TrocR.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 158,
+    "3330to60": 4.4,
+    "333Handling": 88,
+    
+    "666TopSpeed": 162,
+    "6660to60": 4.1,
+    "666Handling": 91,
+    
+    "699TopSpeed": 162,
+    "6990to60": 3.9,
+    "699Handling": 94,
+    
+    "969TopSpeed": 165,
+    "9690to60": 4.1,
+    "969Handling": 94,
+    
+    "996TopSpeed": 165,
+    "9960to60": 3.9,
+    "996Handling": 91
+}

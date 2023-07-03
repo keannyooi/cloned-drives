@@ -1,0 +1,52 @@
+{
+    "rq": 39,
+    "make": "Volkswagen",
+    "model": "Golf R Cabriolet",
+    "modelYear": 2013,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 6.6,
+    "handling": 79,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+
+    "weight": 1565,
+    "gc": "Low",
+    "seatCount":4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 78.57,
+    "ola": 87.88,
+    "description": "The first and last time a convertible R existed.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1118314811655204995/GolfRCabrio.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1118316056658853888/RCabriolet.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 158,
+    "3330to60": 6.3,
+    "333Handling": 82,
+    
+    "666TopSpeed": 162,
+    "6660to60": 5.9,
+    "666Handling": 84,
+    
+    "699TopSpeed": 162,
+    "6990to60": 5.6,
+    "699Handling": 88,
+    
+    "969TopSpeed": 165,
+    "9690to60": 5.9,
+    "969Handling": 88,
+    
+    "996TopSpeed": 165,
+    "9960to60": 5.6,
+    "996Handling": 84
+}

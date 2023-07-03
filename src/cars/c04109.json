@@ -1,0 +1,52 @@
+{
+    "rq": 53,
+    "make": "Volkswagen",
+    "model": "Golf R",
+    "modelYear": 2009,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 5.8,
+    "handling": 82,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix", "Hot Hatch"],
+    "isPrize": false,
+
+
+    "weight": 1529,
+    "gc": "Low",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 68.14,
+    "ola": 65.8,
+    "description": "The discerning man's boy racer.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1118314744764448909/GolfR2009.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1118315861757935616/R2009.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 158,
+    "3330to60": 5.5,
+    "333Handling": 85,
+    
+    "666TopSpeed": 162,
+    "6660to60": 5.2,
+    "666Handling": 87,
+    
+    "699TopSpeed": 162,
+    "6990to60": 4.9,
+    "699Handling": 91,
+    
+    "969TopSpeed": 165,
+    "9690to60": 5.2,
+    "969Handling": 91,
+    
+    "996TopSpeed": 165,
+    "9960to60": 4.9,
+    "996Handling": 87
+}

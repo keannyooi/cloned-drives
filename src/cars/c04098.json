@@ -1,0 +1,53 @@
+{
+    "rq": 34,
+    "make": "Volkswagen",
+    "model": "Golf 1.8 Highline",
+    "modelYear": 1997,
+    "country": "DE",
+    "topSpeed": 125,
+    "0to60": 9.6,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+
+    "weight": 1190,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 48.98,
+    "ola": 68.75,
+    "description": "If you live in Europe, you could look out the window and find a Golf mk4 in this exact color and with these rims.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1116084802014171186/Golf18Highline.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1116085777370198086/Golf18.png",
+    "creator": "Andu",
+    
+
+    "333TopSpeed": 129,
+    "3330to60": 9.1,
+    "333Handling": 75,
+    
+    "666TopSpeed": 133,
+    "6660to60": 8.6,
+    "666Handling": 78,
+    
+    "699TopSpeed": 133,
+    "6990to60": 8.2,
+    "699Handling": 81,
+    
+    "969TopSpeed": 137,
+    "9690to60": 8.6,
+    "969Handling": 81,
+    
+    "996TopSpeed": 137,
+    "9960to60": 8.2,
+    "996Handling": 78
+}

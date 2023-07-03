@@ -1,0 +1,52 @@
+{
+    "rq": 63,
+    "make": "Volkswagen",
+    "model": "Golf R Variant",
+    "modelYear": 2015,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 4.9,
+    "handling": 85,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+
+    "weight": 1612,
+    "gc": "Low",
+    "seatCount":5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 68.06,
+    "ola": 73.47,
+    "description": "The extremely sensible family machine.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1118315051577778176/GolfRVariant.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1118316228235235328/RVariant2015.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 158,
+    "3330to60": 4.7,
+    "333Handling": 88,
+    
+    "666TopSpeed": 162,
+    "6660to60": 4.4,
+    "666Handling": 91,
+    
+    "699TopSpeed": 162,
+    "6990to60": 4.2,
+    "699Handling": 94,
+    
+    "969TopSpeed": 165,
+    "9690to60": 4.4,
+    "969Handling": 94,
+    
+    "996TopSpeed": 165,
+    "9960to60": 4.2,
+    "996Handling": 91
+}

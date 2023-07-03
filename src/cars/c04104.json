@@ -1,0 +1,52 @@
+{
+    "rq": 52,
+    "make": "Volkswagen",
+    "model": "Golf 2.8 V6 4Motion Highline",
+    "modelYear": 1999,
+    "country": "DE",
+    "topSpeed": 146,
+    "0to60": 6.9,
+    "handling": 74,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix", "Hot Hatch", "Eargasm"],
+    "isPrize": false,
+
+
+    "weight": 1401,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 62.16,
+    "ola": 55.07,
+    "description": "Top of the line Golf mk4, the best you could buy back in the early naughties; it came with the orgasmic sounding VR6 and plush leather seats with the extremely classy wood trim inside.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1116085306161115146/Golf28V64MotionHighline.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1116086102734930030/GolfV6.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 150,
+    "3330to60": 6.6,
+    "333Handling": 76,
+    
+    "666TopSpeed": 153,
+    "6660to60": 6.2,
+    "666Handling": 79,
+    
+    "699TopSpeed": 153,
+    "6990to60": 5.9,
+    "699Handling": 82,
+    
+    "969TopSpeed": 157,
+    "9690to60": 6.2,
+    "969Handling": 82,
+    
+    "996TopSpeed": 157,
+    "9960to60": 5.9,
+    "996Handling": 79
+}

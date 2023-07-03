@@ -1,0 +1,52 @@
+{
+    "rq": 58,
+    "make": "Volkswagen",
+    "model": "Golf GTI",
+    "modelYear": 2020,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 5.9,
+    "handling": 86,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix", "Hot Hatch"],
+    "isPrize": false,
+
+
+    "weight": 1397,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 76.25,
+    "ola": 81.96,
+    "description": "The GTI remains a tremendous all-rounder with its typically sophisticated take on the hot hatch formula.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1123210067106353203/GolfGTI8.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1123210143685947412/GolfGTI8.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 158,
+    "3330to60": 5.6,
+    "333Handling": 89,
+    
+    "666TopSpeed": 162,
+    "6660to60": 5.3,
+    "666Handling": 92,
+    
+    "699TopSpeed": 162,
+    "6990to60": 5,
+    "699Handling": 95,
+    
+    "969TopSpeed": 165,
+    "9690to60": 5.3,
+    "969Handling": 95,
+    
+    "996TopSpeed": 165,
+    "9960to60": 5,
+    "996Handling": 92
+}

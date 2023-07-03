@@ -1,0 +1,52 @@
+{
+    "rq": 30,
+    "make": "Volkswagen",
+    "model": "Golf 2.0 GLS",
+    "modelYear": 1999,
+    "country": "DE",
+    "topSpeed": 118,
+    "0to60": 10.5,
+    "handling": 72,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+
+    "weight": 1197,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 49.07,
+    "ola": 66.67,
+    "description": "Good ol' naturally aspirated 2.0 proved to be one of VW's most reliable engines.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1116084651027599450/Golf20GLS.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1116085664291754041/Golf20GLS.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 122,
+    "3330to60": 10,
+    "333Handling": 74,
+    
+    "666TopSpeed": 127,
+    "6660to60": 9.5,
+    "666Handling": 77,
+    
+    "699TopSpeed": 127,
+    "6990to60": 8.9,
+    "699Handling": 80,
+    
+    "969TopSpeed": 131,
+    "9690to60": 9.5,
+    "969Handling": 80,
+    
+    "996TopSpeed": 131,
+    "9960to60": 8.9,
+    "996Handling": 77
+}

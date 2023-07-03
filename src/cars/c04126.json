@@ -1,0 +1,52 @@
+{
+    "rq": 27,
+    "make": "Volkswagen",
+    "model": "up! Lite Concept",
+    "modelYear": 2009,
+    "country": "DE",
+    "topSpeed": 100,
+    "0to60": 12.0,
+    "handling": 75,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix", "Concept", "Eco-Friendly"],
+    "isPrize": false,
+
+
+    "weight": 695,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 17.65,
+    "ola": 68.33,
+    "description": "Sleek design combined with the engine found in the XL1 promised a good looking production vehicle.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1118294270474985533/upliteConcept.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1118295790381715496/uplite.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 105,
+    "3330to60": 11.4,
+    "333Handling": 77,
+    
+    "666TopSpeed": 110,
+    "6660to60": 10.8,
+    "666Handling": 80,
+    
+    "699TopSpeed": 110,
+    "6990to60": 10.2,
+    "699Handling": 83,
+    
+    "969TopSpeed": 116,
+    "9690to60": 10.8,
+    "969Handling": 83,
+    
+    "996TopSpeed": 116,
+    "9960to60": 10.2,
+    "996Handling": 80
+}

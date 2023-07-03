@@ -1,0 +1,52 @@
+{
+    "rq": 86,
+    "make": "Volkswagen",
+    "model": "Golf Kit Car",
+    "modelYear": 1998,
+    "country": "DE",
+    "topSpeed": 125,
+    "0to60": 4.7,
+    "handling": 86,
+    "driveType": "FWD",
+    "tyreType": "Off-Road",
+    "tags": ["The Tyrol Tour: Remix", "Hot Hatch", "Motorsport"],
+    "isPrize": false,
+
+
+    "weight": 980,
+    "gc": "Low",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.20,
+    "ola": 82.98,
+    "description": "A worthy entry to the Volkswagen rally hall of fame.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1116085439925862550/GolfKitCar4.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1116086196548927638/Golfmk4KitCar.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 129,
+    "3330to60": 4.5,
+    "333Handling": 89,
+    
+    "666TopSpeed": 133,
+    "6660to60": 4.2,
+    "666Handling": 92,
+    
+    "699TopSpeed": 133,
+    "6990to60": 4,
+    "699Handling": 95,
+    
+    "969TopSpeed": 137,
+    "9690to60": 4.2,
+    "969Handling": 95,
+    
+    "996TopSpeed": 137,
+    "9960to60": 4.0,
+    "996Handling": 92
+}

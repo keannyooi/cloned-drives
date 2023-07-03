@@ -1,0 +1,52 @@
+{
+    "rq": 68,
+    "make": "Volkswagen",
+    "model": "Golf R Variant",
+    "modelYear": 2022,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 4.5,
+    "handling": 86,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+
+    "weight": 1630,
+    "gc": "Low",
+    "seatCount":5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 69.23,
+    "ola": 71.11,
+    "description": "Everything convincing about the regular hatchback is here, just with a bigger booty.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1118316856940433498/Golfr8Variant.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1118316463883825232/RVariant2022.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 158,
+    "3330to60": 4.3,
+    "333Handling": 89,
+    
+    "666TopSpeed": 162,
+    "6660to60": 4,
+    "666Handling": 92,
+    
+    "699TopSpeed": 162,
+    "6990to60": 3.8,
+    "699Handling": 95,
+    
+    "969TopSpeed": 165,
+    "9690to60": 4,
+    "969Handling": 95,
+    
+    "996TopSpeed": 165,
+    "9960to60": 3.8,
+    "996Handling": 92
+}

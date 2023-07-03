@@ -1,0 +1,52 @@
+{
+    "rq": 19,
+    "make": "Volkswagen",
+    "model": "space up! Blue Concept",
+    "modelYear": 2007,
+    "country": "DE",
+    "topSpeed": 75,
+    "0to60": 13.2,
+    "handling": 71,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix", "Eco-Friendly", "Concept"],
+    "isPrize": false,
+
+
+    "weight": 1088,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Commercial",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Hybrid",
+    "mra": 0.00,
+    "ola": 65.15,
+    "description": "The iconic Samba Bus reimagined as a small citycar.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1118294217626759360/spaceupev.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1118295738070347776/spaceup.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 82,
+    "3330to60": 12.5,
+    "333Handling": 73,
+    
+    "666TopSpeed": 89,
+    "6660to60": 11.9,
+    "666Handling": 76,
+    
+    "699TopSpeed": 89,
+    "6990to60": 11.2,
+    "699Handling": 79,
+    
+    "969TopSpeed": 96,
+    "9690to60": 11.9,
+    "969Handling": 79,
+    
+    "996TopSpeed": 96,
+    "9960to60": 11.2,
+    "996Handling": 76
+}

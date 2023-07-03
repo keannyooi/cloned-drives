@@ -1,0 +1,52 @@
+{
+    "rq": 35,
+    "make": "Volkswagen",
+    "model": "Golf GTI 1.9 TDI",
+    "modelYear": 2001,
+    "country": "DE",
+    "topSpeed": 133,
+    "0to60": 8.2,
+    "handling": 77,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix", "Hot Hatch"],
+    "isPrize": false,
+
+
+    "weight": 1263,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 61.65,
+    "ola": 78.05,
+    "description": "The first and last time a Diesel GTI existed.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1116085183205097653/GolfGTI19TDI.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1116086034510381136/GolfGTITDI.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 137,
+    "3330to60": 7.8,
+    "333Handling": 80,
+    
+    "666TopSpeed": 141,
+    "6660to60": 7.4,
+    "666Handling": 82,
+    
+    "699TopSpeed": 141,
+    "6990to60": 7,
+    "699Handling": 85,
+    
+    "969TopSpeed": 145,
+    "9690to60": 7.4,
+    "969Handling": 85,
+    
+    "996TopSpeed": 145,
+    "9960to60": 7,
+    "996Handling": 82
+}

@@ -1,0 +1,52 @@
+{
+    "rq": 31,
+    "make": "Volkswagen",
+    "model": "Golf 1.9 TDI 25 Years",
+    "modelYear": 1999,
+    "country": "DE",
+    "topSpeed": 120,
+    "0to60": 10.2,
+    "handling": 72,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+
+
+    "weight": 1212,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 44.16,
+    "ola": 60.78,
+    "description": "Exclusive trim model to celebrate the now young adult Golf! can you believe it? Already 25 years, can't wait to see how long the Golf stays around.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1116084907240869918/Golf19TDI25Years.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1116085857703694426/GolfTDI25Years.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 124,
+    "3330to60": 9.7,
+    "333Handling": 74,
+    
+    "666TopSpeed": 129,
+    "6660to60": 9.2,
+    "666Handling": 77,
+    
+    "699TopSpeed": 129,
+    "6990to60": 8.7,
+    "699Handling": 80,
+    
+    "969TopSpeed": 133,
+    "9690to60": 9.2,
+    "969Handling": 80,
+    
+    "996TopSpeed": 133,
+    "9960to60": 8.7,
+    "996Handling": 77
+}

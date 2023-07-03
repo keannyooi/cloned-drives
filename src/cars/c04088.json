@@ -1,0 +1,52 @@
+{
+    "rq": 76,
+    "make": ["Dahlback Racing","Volkswagen"],
+    "model": "Golf RSI",
+    "modelYear": 1998,
+    "country": "DE",
+    "topSpeed": 217,
+    "0to60": 4.2,
+    "handling": 86,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix", "Hot Hatch", "Tuner", "Unique", "Eargasm"],
+    "isPrize": true,
+
+
+    "weight": 1260,
+    "gc": "Low",
+    "seatCount":2,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 95.45,
+    "ola": 92.66,
+    "description": "Bugatti Veyron eat your heart out!",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1116085547111305318/DahlBackRSI.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1116086406989758476/DahlbackRSI.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 219,
+    "3330to60": 4,
+    "333Handling": 89,
+    
+    "666TopSpeed": 222,
+    "6660to60": 3.8,
+    "666Handling": 92,
+    
+    "699TopSpeed": 222,
+    "6990to60": 3.6,
+    "699Handling": 95,
+    
+    "969TopSpeed": 224,
+    "9690to60": 3.8,
+    "969Handling": 95,
+    
+    "996TopSpeed": 224,
+    "9960to60": 3.6,
+    "996Handling": 92
+}

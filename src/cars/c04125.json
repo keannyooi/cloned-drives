@@ -1,0 +1,52 @@
+{
+    "rq": 34,
+    "make": "Volkswagen",
+    "model": "up! GTI",
+    "modelYear": 2018,
+    "country": "DE",
+    "topSpeed": 122,
+    "0to60": 8.5,
+    "handling": 78,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix", "Hot Hatch"],
+    "isPrize": false,
+
+
+    "weight": 995,
+    "gc": "Medium",
+    "seatCount":4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 49.42,
+    "ola": 80.00,
+    "description": "A true GTI, just in a pint-size package.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1118294131492532235/upGTI.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1118295636656275616/upgti.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 126,
+    "3330to60": 8.1,
+    "333Handling": 81,
+    
+    "666TopSpeed": 131,
+    "6660to60": 7.7,
+    "666Handling": 83,
+    
+    "699TopSpeed": 131,
+    "6990to60": 7.2,
+    "699Handling": 87,
+    
+    "969TopSpeed": 135,
+    "9690to60": 7.7,
+    "969Handling": 87,
+    
+    "996TopSpeed": 135,
+    "9960to60": 7.2,
+    "996Handling": 83
+}

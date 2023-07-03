@@ -1,0 +1,52 @@
+{
+    "rq": 54,
+    "make": "Volkswagen",
+    "model": "Passat R36",
+    "modelYear": 2007,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 5.2,
+    "handling": 77,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix", "Eargasm"],
+    "isPrize": false,
+
+
+    "weight": 1689,
+    "gc": "Low",
+    "seatCount":5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 67.53,
+    "ola": 76.92,
+    "description": "Take what makes the Golf R32 great and inject it in a Passat.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1118314598362259526/PassatR36.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1118315751732949042/R36Sedan.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 158,
+    "3330to60": 4.9,
+    "333Handling": 80,
+    
+    "666TopSpeed": 162,
+    "6660to60": 4.7,
+    "666Handling": 82,
+    
+    "699TopSpeed": 162,
+    "6990to60": 4.4,
+    "699Handling": 85,
+    
+    "969TopSpeed": 165,
+    "9690to60": 4.7,
+    "969Handling": 85,
+    
+    "996TopSpeed": 165,
+    "9960to60": 4.4,
+    "996Handling": 82
+}
