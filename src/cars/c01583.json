@@ -1,9 +1,6 @@
 {
     "rq": 87,
-    "make": [
-        "JUN AUTO",
-        "Nissan"
-    ],
+    "make": ["JUN AUTO", "Blitz", "Nissan"],
     "model": "Blitz 300ZX Twin Turbo Land Speed Record",
     "modelYear": 1991,
     "country": "JP",
@@ -12,12 +9,9 @@
     "handling": 25,
     "driveType": "RWD",
     "tyreType": "Drag",
-    "tags": [
-        "Tuner",
-        "Unique",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Tuner", "Unique", "The Japanese Odyssey"],
     "isPrize": false,
+
     "weight": 1300,
     "gc": "Low",
     "seatCount": 2,
@@ -28,27 +22,29 @@
     "fuelType": "Petrol",
     "mra": 123.81,
     "ola": 111.54,
-    "description": "None.",
+    "description": "One year after the Japanese first step foot on the Bonneville salt flats, Junichi Tanaka challenged the flats again with another 300ZX, this time with an aerodynamic nose and an even more extensively modified engine that totaled up to 1200hp. The result was a legendary top speed record that not only caught the eyes of the West, but only Bugatti could match 25 years later - 420km/h.",
     "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1101947324458086520/BlitzJun.png",
-"333TopSpeed": 263,
-"3330to60": 2.5,
-"333Handling": 26,
 
-"666TopSpeed": 265,
-"6660to60": 2.3,
-"666Handling": 27,
+    "333TopSpeed": 263,
+    "3330to60": 2.5,
+    "333Handling": 26,
 
-"699TopSpeed": 265,
-"6990to60": 2.2,
-"699Handling": 28,
+    "666TopSpeed": 265,
+    "6660to60": 2.3,
+    "666Handling": 27,
 
-"969TopSpeed": 267,
-"9690to60": 2.3,
-"969Handling": 28,
+    "699TopSpeed": 265,
+    "6990to60": 2.2,
+    "699Handling": 28,
 
-"996TopSpeed": 267,
-"9960to60": 2.2,
-"996Handling": 27,
+    "969TopSpeed": 267,
+    "9690to60": 2.3,
+    "969Handling": 28,
+
+    "996TopSpeed": 267,
+    "9960to60": 2.2,
+    "996Handling": 27,
+
     "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003164245170589696/jun_300zx.jpg",
     "creator": "Keanny"
 }

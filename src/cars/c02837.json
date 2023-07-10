@@ -22,28 +22,28 @@
     "fuelType": "Electric",
     "mra": 25,
     "ola": 71.35,
-    "description": "Ah yes, the reverse vampire of vehicles.",
+    "description": "I once had this shower thought: What if people attached solar panels onto cars? Turns out people have already tried doing that, and it's this car right here. The weird squares that you can see on the body of the Sion are monocrystalline silicon solar cells (called \"viSono\" by Sono Motors), which add at most 34km of range on a sunny day. Sounds like a great addition to EV technology, but in February 2023, the car's development was cancelled because Sono Motors couldn't secure enough funding.",
     "card": "https://media.discordapp.net/attachments/819199720249360384/1011581714583261234/sono_motors_sion.png",
 	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1011592756247920741/sion.jpg",
     "creator": "Keanny",
 
-"333TopSpeed": 93, 
-"3330to60": 8.3, 
-"333Handling": 75,
+    "333TopSpeed": 93, 
+    "3330to60": 8.3, 
+    "333Handling": 75,
 
-"666TopSpeed": 99, 
-"6660to60": 7.8, 
-"666Handling": 78,
+    "666TopSpeed": 99, 
+    "6660to60": 7.8, 
+    "666Handling": 78,
 
-"699TopSpeed": 99, 
-"6990to60": 7.4, 
-"699Handling": 81,
+    "699TopSpeed": 99, 
+    "6990to60": 7.4, 
+    "699Handling": 81,
 
-"969TopSpeed": 105, 
-"9690to60": 7.8, 
-"969Handling": 81,
+    "969TopSpeed": 105, 
+    "9690to60": 7.8, 
+    "969Handling": 81,
 
-"996TopSpeed": 105, 
-"9960to60": 7.4, 
-"996Handling": 78
+    "996TopSpeed": 105, 
+    "9960to60": 7.4, 
+    "996Handling": 78
 }
