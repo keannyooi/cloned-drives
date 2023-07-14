@@ -9,10 +9,9 @@
     "handling": 67,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": [
-        "Eco-Friendly"
-    ],
+    "tags": ["Eco-Friendly"],
     "isPrize": false,
+
     "weight": 985,
     "gc": "Medium",
     "seatCount": 4,
@@ -25,21 +24,27 @@
     "ola": 73.68,
     "description": "Toyota/Scion was ready for an EV city vehicle, but their customers were not.",
     "card": "https://media.discordapp.net/attachments/819199720249360384/978709115830419466/scion-iq-not-my-card.png",
+
     "333TopSpeed": 85,
     "3330to60": 12.6,
     "333Handling": 69,
+
     "666TopSpeed": 91,
     "6660to60": 12,
     "666Handling": 71,
+
     "996TopSpeed": 98,
     "9960to60": 11.3,
     "996Handling": 71,
+
     "969TopSpeed": 98,
     "9690to60": 12,
     "969Handling": 74,
+
     "699TopSpeed": 91,
     "6990to60": 11.3,
     "699Handling": 74,
+    
     "racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1035870098658963456/iq_ev.jpg",
     "creator": "Keanny"
 }

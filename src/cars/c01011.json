@@ -11,6 +11,7 @@
     "tyreType": "Performance",
     "tags": [],
     "isPrize": false,
+    
     "weight": 970,
     "gc": "Low",
     "seatCount": 4,
@@ -21,23 +22,29 @@
     "fuelType": "Petrol",
     "mra": 39.03,
     "ola": 62.81,
-    "description": "SR was the mid-range model with luxurios features from the S and Berlinetta and sporty features from the GT/E.",
+    "description": "SR was the mid-range model with luxurious features from the S and Berlinetta and sporty features from the GT/E.",
     "card": "https://media.discordapp.net/attachments/819199720249360384/857523900233416734/F.png",
+
     "333TopSpeed": 112,
     "3330to60": 11.5,
     "333Handling": 67,
+
     "666TopSpeed": 117,
     "6660to60": 10.9,
     "666Handling": 69,
+
     "996TopSpeed": 122,
     "9960to60": 10.3,
     "996Handling": 69,
+
     "969TopSpeed": 122,
     "9690to60": 10.9,
     "969Handling": 72,
+
     "699TopSpeed": 117,
     "6990to60": 10.3,
     "699Handling": 72,
+
     "racehud": "https://media.discordapp.net/attachments/995376525119586356/1035898761853014056/manta_sr.jpg",
     "creator": "Connor"
 }
