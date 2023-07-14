@@ -1,0 +1,50 @@
+{
+    "rq": 73,
+    "make": ["Mercedes-AMG", "Mercedes-Benz"],
+    "model": "GT 53 4MATIC+ 4-Door Coupe",
+    "modelYear": 2018,
+    "country": "DE",
+    "topSpeed": 176,
+    "0to60": 4.3,
+    "handling": 90,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix", "Grand Tourer"],
+    "isPrize": false,
+	
+    "weight": 2044,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 72.46,
+    "ola": 73.94,
+    "description": "Despite being a 2 ton sedan, it still has some great handling capabilities",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1117826238925520966/Mercedes-AMG_GT_53_4MATIC_4-Door_Coupe.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1117826751201022134/Merc_GT_53_4MATIC.png",
+    "creator": "Crossfire",
+
+
+    "333TopSpeed": 179, 
+    "3330to60": 4.1, 
+    "333Handling": 93,
+
+    "666TopSpeed": 182, 
+    "6660to60": 3.9, 
+    "666Handling": 96,
+
+    "996TopSpeed": 185, 
+    "9960to60": 3.7, 
+    "996Handling": 96,
+
+    "969TopSpeed": 185, 
+    "9690to60": 3.9, 
+    "969Handling": 100,
+
+    "699TopSpeed": 182, 
+    "6990to60": 3.7, 
+    "699Handling": 100
+}

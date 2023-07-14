@@ -1,0 +1,50 @@
+{
+    "rq": 90,
+    "make": ["Mercedes-AMG", "Mercedes-Benz"],
+    "model": "GT 63 S E Performance 4-Door Coupe",
+    "modelYear": 2022,
+    "country": "DE",
+    "topSpeed": 196,
+    "0to60": 2.8,
+    "handling": 91,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix", "Eco-Friendly", "Grand Tourer", "Super Sedan"],
+    "isPrize": false,
+	
+    "weight": 2305,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Hybrid",
+    "mra": 80.21,
+    "ola": 84.25,
+    "description": "With a boost from an electric motor, this thing becomes the 2nd most powerful Mercedes with 831 hp right after the AMG ONE, and also heavier than a fully loaded GLE.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1117826343032332308/Mercedes-AMG_GT_63_S_E_Performance_4-Door_Coupe.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1117826821619200050/Merc_GT_63_S_E_Perf_4MATIC.png",
+    "creator": "Crossfire",
+
+
+    "333TopSpeed": 199, 
+    "3330to60": 2.7, 
+    "333Handling": 94,
+
+    "666TopSpeed": 201, 
+    "6660to60": 2.5, 
+    "666Handling": 97,
+
+    "996TopSpeed": 204, 
+    "9960to60": 2.4, 
+    "996Handling": 97,
+
+    "969TopSpeed": 204, 
+    "9690to60": 2.5, 
+    "969Handling": 101,
+
+    "699TopSpeed": 201, 
+    "6990to60": 2.4, 
+    "699Handling": 101
+}

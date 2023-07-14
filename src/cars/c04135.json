@@ -1,0 +1,50 @@
+{
+    "rq": 85,
+    "make": ["Mercedes-AMG", "Mercedes-Benz"],
+    "model": "GT 63 4MATIC+ 4-Door Coupe",
+    "modelYear": 2018,
+    "country": "DE",
+    "topSpeed": 193,
+    "0to60": 3.3,
+    "handling": 91,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix", "Grand Tourer", "Super Sedan"],
+    "isPrize": false,
+	
+    "weight": 2072,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 76.26,
+    "ola": 78.04,
+    "description": "V8 in true AMG fashion.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1117826267459371028/Mercedes-AMG_GT_63_4MATIC_4-Door_Coupe.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1117826790732341389/Merc_GT_63_4MATIC.png",
+    "creator": "Crossfire",
+
+
+    "333TopSpeed": 196, 
+    "3330to60": 3.1, 
+    "333Handling": 94,
+
+    "666TopSpeed": 198, 
+    "6660to60": 3.0, 
+    "666Handling": 97,
+
+    "996TopSpeed": 201, 
+    "9960to60": 2.8, 
+    "996Handling": 97,
+
+    "969TopSpeed": 201, 
+    "9690to60": 3.0, 
+    "969Handling": 101,
+
+    "699TopSpeed": 198, 
+    "6990to60": 2.8, 
+    "699Handling": 101
+}

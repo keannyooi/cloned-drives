@@ -1,0 +1,50 @@
+{
+    "rq": 69,
+    "make": ["Mercedes-AMG", "Mercedes-Benz"],
+    "model": "GT 43 4MATIC+ 4-Door Coupe",
+    "modelYear": 2018,
+    "country": "DE",
+    "topSpeed": 167,
+    "0to60": 4.6,
+    "handling": 89,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix", "Grand Tourer"],
+    "isPrize": false,
+	
+    "weight": 2017,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 70.44,
+    "ola": 71.94,
+    "description": "Entry-level with 4.6 seconds to 60 is not your typical entry-level.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1117826188333821982/Mercedes-AMG_GT_43_4MATIC_4-Door_Coupe.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1117826712546312222/Merc_GT_43_4MATIC.png",
+    "creator": "Crossfire",
+
+
+    "333TopSpeed": 170, 
+    "3330to60": 4.4, 
+    "333Handling": 92,
+
+    "666TopSpeed": 173, 
+    "6660to60": 4.1, 
+    "666Handling": 95,
+
+    "996TopSpeed": 176, 
+    "9960to60": 3.9, 
+    "996Handling": 95,
+
+    "969TopSpeed": 176, 
+    "9690to60": 4.1, 
+    "969Handling": 99,
+
+    "699TopSpeed": 173, 
+    "6990to60": 3.9, 
+    "699Handling": 99
+}

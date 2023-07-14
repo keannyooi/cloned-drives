@@ -1,0 +1,49 @@
+{
+    "rq": 97,
+    "make": "Lamborghini",
+    "model": "Invencible",
+    "modelYear": 2023,
+    "country": "IT",
+    "topSpeed": 221,
+    "0to60": 2.7,
+    "handling": 94,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix","Ultra Expensive","Unique","Track Day"],
+    "isPrize": true,
+	
+    "weight": 1490,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 98.88,
+    "ola": 80,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1115054524734906378/InvincinbleLambor.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1115054712996253806/InvincinbleLambor.png",
+
+"333TopSpeed": 223,
+"3330to60": 2.6,
+"333Handling": 97,
+
+"666TopSpeed": 226,
+"6660to60": 2.4,
+"666Handling": 100,
+
+"699TopSpeed": 226,
+"6990to60": 2.3,
+"699Handling": 104,
+
+"969TopSpeed": 228,
+"9690to60": 2.4,
+"969Handling": 104,
+
+"996TopSpeed": 228,
+"9960to60": 2.3,
+"996Handling": 100,
+    "creator": "Bnuuy"
+}
