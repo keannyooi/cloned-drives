@@ -1,0 +1,49 @@
+{
+    "rq": 81,
+    "make": "Aston Martin",
+    "model": "Valour",
+    "modelYear": 2023,
+    "country": "GB",
+    "topSpeed": 210,
+    "0to60": 3.5,
+    "handling": 92,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["RestoMod","Ultra Expensive","Style Icon","Supercar"],
+    "isPrize": false,
+	
+    "weight": 1690,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 92.5,
+    "ola": 100,
+    "description": "Valour is here. An extremely limited edition celebratory car commemorating 110 years of Aston Martin. With the intention to connect driver and machine again and bring back feelings the road forgot. It’s a tribute to the golden era of driving when cars were seductive, wild, beautiful.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1129703251470721084/Valour.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1129703758121664522/valour.png",
+
+"333TopSpeed": 212,
+"3330to60": 3.3,
+"333Handling": 95,
+
+"666TopSpeed": 215,
+"6660to60": 3.1,
+"666Handling": 98,
+
+"699TopSpeed": 215,
+"6990to60": 3,
+"699Handling": 102,
+
+"969TopSpeed": 217,
+"9690to60": 3.1,
+"969Handling": 102,
+
+"996TopSpeed": 217,
+"9960to60": 3,
+"996Handling": 98,
+    "creator": "Bnuuy"
+}

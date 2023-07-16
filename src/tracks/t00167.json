@@ -1,0 +1,18 @@
+{
+	"trackName": "Goodwood HillClimb (Rainy)",
+	"weather": "Rainy",
+	"surface": "Asphalt",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://cdn.discordapp.com/attachments/800047734035841037/1129707408369913866/gettyimages-1543156681-64b1a2a697edc.png",
+	"map": "https://media.discordapp.net/attachments/800047734035841037/862382670133723167/goodwoodhillclimb.png",
+	
+	"specsDistr": {
+		"topSpeed": 7.5,
+		"0to60": 25,
+		"handling": 70,
+		"weight": 0,
+		"mra": 70,
+		"ola": 0
+	}
+}

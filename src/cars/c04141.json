@@ -1,0 +1,49 @@
+{
+    "rq": 111,
+    "make": "Porsche",
+    "model": "Mission X",
+    "modelYear": 2023,
+    "country": "DE",
+    "topSpeed": 245,
+    "0to60": 1.8,
+    "handling": 98,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eco-Friendly","Concept","Unique","Track Day","Ultra Expensive","Hypercar","The Tyrol Tour: Remix","Innovative"],
+    "isPrize": true,
+	
+    "weight": 1500,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 125.22,
+    "ola": 89.91,
+    "description": "Many Porsche vehicles have created history. The Mission X is about to create the future – the spectacular reinterpretation of a lightweight hypercar with Le-Mans-style doors and high-performance electric drive is an innovative vision of the future. Like the iconic sports cars of the past – the 959, Carrera GT and 918 Spyder – the Mission X will set new standards for the development of futuristic vehicle concepts and reinterpret distinctive Porsche elements.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1129703587937783850/MissionX.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1129703783593685002/missionx.png",
+
+"333TopSpeed": 247,
+"3330to60": 1.7,
+"333Handling": 101,
+
+"666TopSpeed": 249,
+"6660to60": 1.6,
+"666Handling": 104,
+
+"699TopSpeed": 249,
+"6990to60": 1.5,
+"699Handling": 109,
+
+"969TopSpeed": 251,
+"9690to60": 1.6,
+"969Handling": 109,
+
+"996TopSpeed": 251,
+"9960to60": 1.5,
+"996Handling": 104,
+    "creator": "Bnuuy"
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 98,
+    "make": "Ferrari",
+    "model": "KC23",
+    "modelYear": 2023,
+    "country": "IT",
+    "topSpeed": 220,
+    "0to60": 2.5,
+    "handling": 97,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Unique","Ultra Expensive","Track Day","Hypercar"],
+    "isPrize": true,
+	
+    "weight": 1290,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 120,
+    "ola": 91.25,
+    "description": "The Ferrari that you’re looking at isn’t a concept. Nor is it a production car. It is a completely one-off commission. A track-focused yet elegant state-of-the-art supercar born from the penmanship of Ferrari’s Centro Stile, led by Flavio Manzoni, and one very imaginative, passionate and exacting customer.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1129703077344202792/rarikc23.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1129703705336369162/rarikc23.png",
+	
+"333TopSpeed": 222,
+"3330to60": 2.4,
+"333Handling": 100,
+
+"666TopSpeed": 225,
+"6660to60": 2.3,
+"666Handling": 103,
+
+"699TopSpeed": 225,
+"6990to60": 2.1,
+"699Handling": 108,
+
+"969TopSpeed": 227,
+"9690to60": 2.3,
+"969Handling": 108,
+
+"996TopSpeed": 227,
+"9960to60": 2.1,
+"996Handling": 103,
+    "creator": "Bnuuy"
+}

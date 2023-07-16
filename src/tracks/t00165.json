@@ -1,0 +1,18 @@
+{
+	"trackName": "Goodwood Circuit (Rainy)",
+	"weather": "Rainy",
+	"surface": "Track",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://cdn.discordapp.com/attachments/800047734035841037/1129708606321864734/JMI-0817.png",
+	"map": "https://cdn.discordapp.com/attachments/800047734035841037/1129708075100688494/Goodwood_circuit_plan.png",
+	
+	"specsDistr": {
+		"topSpeed": 15,
+		"0to60": 30,
+		"handling": 70,
+		"weight": 0,
+		"mra": 30,
+		"ola": 1
+	}
+}

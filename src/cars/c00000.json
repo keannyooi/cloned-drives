@@ -1,0 +1,49 @@
+{
+    "rq": 1,
+    "make": "Test",
+    "model": "Car c00000",
+    "modelYear": 1990,
+    "country": "DE",
+    "topSpeed": 75,
+    "0to60": 1.4,
+    "handling": 91,
+    "driveType": "4WD",
+    "tyreType": "Slick",
+    "tags": [],
+    "isPrize": true,
+
+    "weight": 168,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 0,
+    "ola": 87.14,
+    "description": "This car is a test car used to make sure hiearchy between certain cars will remain correct on certain tracks.",
+    "card": "https://media.discordapp.net/attachments/819199720249360384/820726402282291260/didthedo.png",
+    "racehud": "https://cdn.discordapp.com/attachments/813085299713507378/1102256366111948912/Boss4cSpider.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 82,
+"3330to60": 1.3,
+"333Handling": 94,
+
+"666TopSpeed": 89,
+"6660to60": 1.3,
+"666Handling": 97,
+
+"699TopSpeed": 89,
+"6990to60": 1.2,
+"699Handling": 101,
+
+"969TopSpeed": 96,
+"9690to60": 1.3,
+"969Handling": 101,
+
+"996TopSpeed": 96,
+"9960to60": 1.2,
+"996Handling": 97
+}

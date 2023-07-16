@@ -1,0 +1,49 @@
+{
+    "rq": 67,
+    "make": "Caterham",
+    "model": "Project V",
+    "modelYear": 2023,
+    "country": "GB",
+    "topSpeed": 143,
+    "0to60": 4.3,
+    "handling": 89,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Unique","Concept","Eco-Friendly","Oddity"],
+    "isPrize": false,
+	
+    "weight": 1190,
+    "gc": "Low",
+    "seatCount": 3,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Electric",
+    "mra": 75,
+    "ola": 77.94,
+    "description": "This is a bold new design. This is driver-focused, lightweight and fun to drive. This is the essence of a sports car with an electric powertrain. This is a statement of intent. This is Project V",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1129703026366631996/cateV.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1129703673736482826/catev.png",
+
+"333TopSpeed": 147,
+"3330to60": 4.1,
+"333Handling": 92,
+
+"666TopSpeed": 150,
+"6660to60": 3.9,
+"666Handling": 95,
+
+"699TopSpeed": 150,
+"6990to60": 3.7,
+"699Handling": 99,
+
+"969TopSpeed": 154,
+"9690to60": 3.9,
+"969Handling": 99,
+
+"996TopSpeed": 154,
+"9960to60": 3.7,
+"996Handling": 95,
+    "creator": "Bnuuy"
+}
