@@ -1,5 +1,5 @@
 {
-    "rq": 52,
+    "rq": 60,
     "make": [
         "TAMO",
         "Tata"
@@ -7,13 +7,13 @@
     "model": "Racemo",
     "modelYear": 2017,
     "country": "IN",
-    "topSpeed": 137,
-    "0to60": 6.0,
-    "handling": 78,
+    "topSpeed": 130,
+    "0to60": 5.7,
+    "handling": 77,
     "driveType": "RWD",
-    "tyreType": "Performance",
+    "tyreType": "Standard",
     "tags": [
-        "Rest of The World"
+        "Rest of The World","Unique"
     ],
     "isPrize": false,
     "weight": 800,
@@ -24,25 +24,29 @@
     "abs": true,
     "enginePos": "Middle",
     "fuelType": "Petrol",
-    "mra": 55.97,
-    "ola": 60,
+    "mra": 51.49,
+    "ola": 67.55,
     "description": "India's take on a sports car that was so good it got into Forza.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/851493793978646568/image0.jpg",
-    "333TopSpeed": 141,
-    "3330to60": 5.7,
-    "333Handling": 81,
-    "666TopSpeed": 145,
-    "6660to60": 5.4,
-    "666Handling": 83,
-    "996TopSpeed": 148,
-    "9960to60": 5.1,
-    "996Handling": 83,
-    "969TopSpeed": 148,
-    "9690to60": 5.4,
-    "969Handling": 87,
-    "699TopSpeed": 145,
-    "6990to60": 5.1,
-    "699Handling": 87,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1020010924259688458/TAMO_Racemo.png",
-    "creator": "AGE"
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1131228756737015818/RacemoTAMO.png",
+"333TopSpeed": 134,
+"3330to60": 5.4,
+"333Handling": 80,
+
+"666TopSpeed": 138,
+"6660to60": 5.1,
+"666Handling": 82,
+
+"699TopSpeed": 138,
+"6990to60": 4.8,
+"699Handling": 85,
+
+"969TopSpeed": 142,
+"9690to60": 5.1,
+"969Handling": 85,
+
+"996TopSpeed": 142,
+"9960to60": 4.8,
+"996Handling": 82,
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1131228801460879410/Racemo.png",
+    "creator": "Bnuuy"
 }

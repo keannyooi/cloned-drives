@@ -1,6 +1,6 @@
 {
     "rq": 76,
-    "make": "Ram",
+    "make": ["Ram", "Dodge"],
     "model": "Rebel TRX Concept",
     "modelYear": 2016,
     "country": "US",

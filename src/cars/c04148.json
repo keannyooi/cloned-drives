@@ -1,0 +1,49 @@
+{
+    "rq": 82,
+    "make": "Porsche",
+    "model": "Cayenne Turbo",
+    "modelYear": 2007,
+    "country": "DE",
+    "topSpeed": 172,
+    "0to60": 4.9,
+    "handling": 80,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 2355,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 74.24,
+    "ola": 73.47,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1115052046450700419/CayenneTurbo2007.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1115052448663478292/CayenneTurbo2007.png",
+
+"333TopSpeed": 175,
+"3330to60": 4.7,
+"333Handling": 83,
+
+"666TopSpeed": 178,
+"6660to60": 4.4,
+"666Handling": 85,
+
+"699TopSpeed": 178,
+"6990to60": 4.2,
+"699Handling": 89,
+
+"969TopSpeed": 181,
+"9690to60": 4.4,
+"969Handling": 89,
+
+"996TopSpeed": 181,
+"9960to60": 4.2,
+"996Handling": 85,
+    "creator": "Bnuuy"
+}

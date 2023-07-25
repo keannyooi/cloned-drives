@@ -1,0 +1,49 @@
+{
+    "rq": 98,
+    "make": ["Apollo", "Gumpert"],
+    "model": "N",
+    "modelYear": 2016,
+    "country": "DE",
+    "topSpeed": 237,
+    "0to60": 2.6,
+    "handling": 95,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix","Unique","Ultra Expensive","Supercar"],
+    "isPrize": true,
+	
+    "weight": 1145,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 137.54,
+    "ola": 95.95,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1130947056719106069/ApolloNApollo.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1130947328363216977/ApolloNGumpert.png",
+
+"333TopSpeed": 239,
+"3330to60": 2.5,
+"333Handling": 98,
+
+"666TopSpeed": 241,
+"6660to60": 2.3,
+"666Handling": 101,
+
+"699TopSpeed": 241,
+"6990to60": 2.2,
+"699Handling": 105,
+
+"969TopSpeed": 244,
+"9690to60": 2.3,
+"969Handling": 105,
+
+"996TopSpeed": 244,
+"9960to60": 2.2,
+"996Handling": 101,
+    "creator": "Bnuuy"
+}

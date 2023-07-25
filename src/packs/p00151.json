@@ -3,16 +3,16 @@
 	"description": "25 Super Rare or better 1900-1970 Racing cars.",
         "repetition": 5,
 		"price": 37500,
-	"pack": "https://cdn.discordapp.com/attachments/956106029635088384/1129711429684043866/HISTORIC.png", 
+	"pack": "https://cdn.discordapp.com/attachments/956106029635088384/1129711454942142475/5xbooster.png", 
 	
 	"filter": {
 		"make": "None",
 		"modelYear": {
-			"start": 1900,
-			"end": 1970
+			"start": 1500,
+			"end": 3000
 		},
 		"country": "None",
-		"tags": "Motorsport",
+		"tags": "None",
         "driveType": "None",
         "tyreType": "None",
 		"enginePos": "None",

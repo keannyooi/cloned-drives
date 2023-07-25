@@ -1,11 +1,11 @@
 {
     "make": "Honda",
     "model": "S660 Neo Classic",
-    "modelYear": 2018,
+    "modelYear": 2015,
     "country": "JP",
     "reference": "c00554",
     "collection": ["Stylized Bodies"],
-    "active" : true,
+    "active" : false,
     "description": "placeholder desc",
     "card": "https://media.discordapp.net/attachments/819199720249360384/1006925930524053611/s660_neo_classic.png",
     "racehud": "https://media.discordapp.net/attachments/995376525119586356/1006925822160031904/s660_neo_classic.jpg",

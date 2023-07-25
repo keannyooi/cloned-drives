@@ -1,0 +1,50 @@
+{
+    "rq": 25,
+    "make": "Skoda",
+    "model": "Citijet",
+    "modelYear": 2014,
+    "country": "CZ",
+    "topSpeed": 106,
+    "0to60": 13.5,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Concept","The Tyrol Tour: Remix","Unique"],
+    "isPrize": false,
+
+
+    "weight": 970,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Open Air",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 44.55,
+    "ola": 65.18,
+    "description": "Skoda's small army of vocational school apprentices have clearly graduated from making tea to cooking up something called the CitiJet",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1126949242938855445/E.SkodaCitijet.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1126951483712208917/citijet.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 111,
+    "3330to60": 12.8,
+    "333Handling": 75,
+
+    "666TopSpeed": 116,
+    "6660to60": 12.2, 
+    "666Handling": 78,
+
+    "996TopSpeed": 121,
+    "9960to60": 11.5,
+    "996Handling": 78,
+
+    "969TopSpeed": 121,
+    "9690to60": 12.2,
+    "969Handling": 81,
+
+    "699TopSpeed": 116,
+    "6990to60": 11.5,
+    "699Handling": 81
+}

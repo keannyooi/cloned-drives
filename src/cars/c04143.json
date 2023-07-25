@@ -1,0 +1,49 @@
+{
+    "rq": 90,
+    "make": ["9ff", "Porsche"],
+    "model": "GT-T900",
+    "modelYear": 2009,
+    "country": "DE",
+    "topSpeed": 237,
+    "0to60": 2.9,
+    "handling": 90,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Tuner","Ultra Expensive","Unique","Supercar","The Tyrol Tour: Remix"],
+    "isPrize": false,
+	
+    "weight": 1290,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 115.94,
+    "ola": 97.4,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1115049536356888576/9ffCGT.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077292374608326656/1115049536356888576/9ffCGT.png",
+
+"333TopSpeed": 239,
+"3330to60": 2.8,
+"333Handling": 93,
+
+"666TopSpeed": 241,
+"6660to60": 2.6,
+"666Handling": 96,
+
+"699TopSpeed": 241,
+"6990to60": 2.5,
+"699Handling": 100,
+
+"969TopSpeed": 244,
+"9690to60": 2.6,
+"969Handling": 100,
+
+"996TopSpeed": 244,
+"9960to60": 2.5,
+"996Handling": 96,
+    "creator": "Bnuuy"
+}
