@@ -1,0 +1,49 @@
+{
+    "rq": 100,
+    "make": "Hennessey",
+    "model": "Venom F5 Revolution",
+    "modelYear": 2023,
+    "country": "US",
+    "topSpeed": 250,
+    "0to60": 2.5,
+    "handling": 95,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Track Day", "Hypercar", "Unique", "Ultra Expensive", "The Americas Assault"],
+    "isPrize": false,
+    
+    "weight": 1360,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 143.68,
+    "ola": 93.60,
+    "description": "An all-new revolution of the Venom.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1134221228949897277/Hennessey_Venom_F5_Revolution_2023.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1134221399603564695/Hennessey_Venom_F5_Revolution_2023_Hud.png",
+    "creator": "DodgeDemon",
+
+"333TopSpeed": 252,
+"3330to60": 2.4,
+"333Handling": 98,
+
+"666TopSpeed": 254,
+"6660to60": 2.3,
+"666Handling": 101,
+
+"699TopSpeed": 254,
+"6990to60": 2.1,
+"699Handling": 105,
+
+"969TopSpeed": 256,
+"9690to60": 2.3,
+"969Handling": 105,
+
+"996TopSpeed": 256,
+"9960to60": 2.1,
+"996Handling": 101
+}

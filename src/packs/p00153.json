@@ -1,6 +1,7 @@
 {
-	"packName": "Andu Creator Pack",
-	"description": "5 Andu Cards. 1 common/uncommon, 1 rare/superrare and 3 ultra or above",
+	"packName": "DodgeDemon Creator Pack",
+	"description": "5 DodgeDemon Cards. 1 common/uncommon, 1 rare/superrare and 3 ultra or above",
+	"price": 425000,
         "repetition": 1,
 	"pack": "https://cdn.discordapp.com/attachments/956106029635088384/1125395508534448258/AnduPack.png", 
 	
@@ -18,7 +19,7 @@
         "fuelType": "None",
         "bodyStyle": "None",
 		"seatCount": "None",
-		"creator": "andu"
+		"creator": "dodgedemon"
 	},
 
 	"packSequence": [

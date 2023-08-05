@@ -1,0 +1,49 @@
+{
+    "rq": 44,
+    "make": "Dodge",
+    "model": "Stealth R/T",
+    "modelYear": 1991,
+    "country": "US",
+    "topSpeed": 152,
+    "0to60": 6.8,
+    "handling": 78,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["The Americas Assault"],
+    "isPrize": false,
+	
+    "weight": 1490,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 55.55,
+    "ola": 65.15,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1132882709698588753/Dodge_Stealth_RT_1991.png",
+	"racehud": "https://media.discordapp.net/attachments/1077293403668234340/1132884173246443620/Dodge_Stealth_RT_1991_Hud.png",
+    "creator": "DodgeDemon",
+	
+"333TopSpeed": 155,
+"3330to60": 6.5,
+"333Handling": 81,
+
+"666TopSpeed": 159,
+"6660to60": 6.1,
+"666Handling": 83,
+
+"699TopSpeed": 159,
+"6990to60": 5.8,
+"699Handling": 87,
+
+"969TopSpeed": 162,
+"9690to60": 6.1,
+"969Handling": 87,
+
+"996TopSpeed": 162,
+"9960to60": 5.8,
+"996Handling": 83
+}

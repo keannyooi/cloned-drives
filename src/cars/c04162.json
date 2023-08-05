@@ -1,0 +1,49 @@
+{
+    "rq": 48,
+    "make": "Dodge",
+    "model": "Stealth ES",
+    "modelYear": 1991,
+    "country": "US",
+    "topSpeed": 152,
+    "0to60": 7.1,
+    "handling": 75,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Americas Assault"],
+    "isPrize": false,
+	
+    "weight": 1440,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 53.18,
+    "ola": 61.40,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1132882598666969150/Dodge_Stealth_ES_1991.png",
+	"racehud": "https://media.discordapp.net/attachments/1077293403668234340/1132884063351492628/Dodge_Stealth_ES_1991_Hud.png",
+    "creator": "DodgeDemon",
+	
+"333TopSpeed": 155,
+"3330to60": 6.7,
+"333Handling": 77,
+
+"666TopSpeed": 159,
+"6660to60": 6.4,
+"666Handling": 80,
+
+"699TopSpeed": 159,
+"6990to60": 6.0,
+"699Handling": 83,
+
+"969TopSpeed": 162,
+"9690to60": 6.4,
+"969Handling": 83,
+
+"996TopSpeed": 162,
+"9960to60": 6.0,
+"996Handling": 80
+}
