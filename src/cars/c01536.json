@@ -1,9 +1,6 @@
 {
     "rq": 51,
-    "make": [
-        "GReddy",
-        "Nissan"
-    ],
+    "make": ["GReddy", "Nissan"],
     "model": "Fugu Z",
     "modelYear": 2015,
     "country": "JP",
@@ -12,11 +9,9 @@
     "handling": 79,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Tuner", "The Japanese Odyssey"],
     "isPrize": false,
+
     "weight": 1100,
     "gc": "Low",
     "seatCount": 2,
@@ -27,23 +22,29 @@
     "fuelType": "Petrol",
     "mra": 84.5,
     "ola": 93.58,
-    "description": "The guy who played Han brought Fast & Furious to real life with his IRL car named after a poisonous pufferfish in Japan that people seem to like to eat just because it's expensive, according to a certain Iron Chef.",
+    "description": "This beautiful specimen of a 240Z is owned by Sung Kang, the actor who played Han in the Fast & Furious franchise. Originally a restoration project suggested by a friend, the car slowly grew traction online until Sung Kang took interest in adding a Rocket Bunny bodykit to the car. This is when GReddy USA, the distributor for Rocket Bunny, reached out to him on social media to help him turn the car into something truly magical. The rest, they say, is history - the car appeared in SEMA, made waves over the Internet and won many accolades including the SEMA Gran Turismo Awards, which got the car into Gran Turismo Sport as a result.",
     "card": "https://media.discordapp.net/attachments/819199720249360384/869498252767137812/greddy_fugu_z.png",
+
     "333TopSpeed": 181,
     "3330to60": 5.2,
     "333Handling": 82,
+
     "666TopSpeed": 184,
     "6660to60": 5,
     "666Handling": 84,
+
     "996TopSpeed": 187,
     "9960to60": 4.7,
     "996Handling": 84,
+
     "969TopSpeed": 187,
     "9690to60": 5,
     "969Handling": 88,
+
     "699TopSpeed": 184,
     "6990to60": 4.7,
     "699Handling": 88,
+
     "racehud": "https://media.discordapp.net/attachments/995376525119586356/1001854757150933142/fugu_z.jpg",
     "creator": "Keanny"
 }

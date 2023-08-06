@@ -1,9 +1,6 @@
 {
     "rq": 40,
-    "make": [
-        "AC Propulsion",
-        "Scion"
-    ],
+    "make": ["AC Propulsion", "Scion"],
     "model": "eBox",
     "modelYear": 2007,
     "country": "US",
@@ -12,10 +9,9 @@
     "handling": 72,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": [
-        "Eco-Friendly"
-    ],
+    "tags": ["Eco-Friendly"],
     "isPrize": false,
+
     "weight": 1383,
     "gc": "Medium",
     "seatCount": 5,
@@ -26,23 +22,29 @@
     "fuelType": "Electric",
     "mra": 39.97,
     "ola": 62.86,
-    "description": "A Scion xB converted into an electric car that Tom Hanks owns.",
+    "description": "After realizing that the tzero wasn't selling, AC Propulsion shifted their focus to developing the eBox, which is just an electrified Scion xB. They chose the car due to its boxy shape allowing for easier battery installation. While they did manage to sell the first production car to Tom Hanks, they weren't able to get Elon Musk (who had just sold PayPal and had money to throw) onto the project because he was more interested in investing on what would later become a pioneering force among EVs - the Tesla Roadster.",
     "card": "https://media.discordapp.net/attachments/819199720249360384/865584491687182356/ac_propulsion_ebox.png",
+
     "333TopSpeed": 100,
     "3330to60": 6.7,
     "333Handling": 74,
+
     "666TopSpeed": 106,
     "6660to60": 6.3,
     "666Handling": 77,
+
     "996TopSpeed": 111,
     "9960to60": 6,
     "996Handling": 77,
+
     "969TopSpeed": 111,
     "9690to60": 6.3,
     "969Handling": 80,
+
     "699TopSpeed": 106,
     "6990to60": 6,
     "699Handling": 80,
+
     "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003177400198250578/ebox.jpg",
     "creator": "Keanny"
 }

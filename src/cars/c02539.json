@@ -9,7 +9,7 @@
     "handling": 81,
     "driveType": "4WD",
     "tyreType": "Standard",
-    "tags": ["Rest of The World", "Eco-Friendly","Concept","Unique"],
+    "tags": ["Rest of The World", "Eco-Friendly", "Concept", "Unique"],
     "isPrize": false,
 	
     "weight": 1450,
@@ -22,28 +22,28 @@
     "fuelType": "Electric",
     "mra": 55,
     "ola": 76.19,
-    "description": "A Chinese EV and American SUV walk into a bar....",
+    "description": "GAC had plans to enter the US market by 2019, so they showcased many of their models in all sorts of auto shows there. Among them is this concept SUV with many interesting futuristic features, such as virtual reality side windows (which explains why in some pictures there seems to be an absence of them) and the ability to detach the fog lights and use them as a flashlight.",
     "card": "https://media.discordapp.net/attachments/819199720249360384/1011580055245303898/gac_enverge.png",
 	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1011589702333247608/enverge.jpg",
     "creator": "Keanny",
 
-"333TopSpeed": 104, 
-"3330to60": 4.0, 
-"333Handling": 84,
+    "333TopSpeed": 104, 
+    "3330to60": 4.0, 
+    "333Handling": 84,
 
-"666TopSpeed": 110, 
-"6660to60": 3.8, 
-"666Handling": 86,
+    "666TopSpeed": 110, 
+    "6660to60": 3.8, 
+    "666Handling": 86,
 
-"699TopSpeed": 110, 
-"6990to60": 3.6, 
-"699Handling": 90,
+    "699TopSpeed": 110, 
+    "6990to60": 3.6, 
+    "699Handling": 90,
 
-"969TopSpeed": 115, 
-"9690to60": 3.8, 
-"969Handling": 90,
+    "969TopSpeed": 115, 
+    "9690to60": 3.8, 
+    "969Handling": 90,
 
-"996TopSpeed": 115, 
-"9960to60": 3.6, 
-"996Handling": 86
+    "996TopSpeed": 115, 
+    "9960to60": 3.6, 
+    "996Handling": 86
 }
