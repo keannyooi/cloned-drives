@@ -9,10 +9,9 @@
     "handling": 72,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Kei Car"
-    ],
+    "tags": ["Kei Car"],
     "isPrize": false,
+
     "weight": 840,
     "gc": "Low",
     "seatCount": 2,
@@ -25,21 +24,27 @@
     "ola": 70.33,
     "description": "The epitome of driving a slow car fast.",
     "card": "https://media.discordapp.net/attachments/819199720249360384/868778731236360202/honda_s660.png",
+
     "333TopSpeed": 93,
     "3330to60": 12.1,
     "333Handling": 74,
+    
     "666TopSpeed": 99,
     "6660to60": 11.4,
     "666Handling": 77,
+
     "996TopSpeed": 105,
     "9960to60": 10.8,
     "996Handling": 77,
+
     "969TopSpeed": 105,
     "9690to60": 11.4,
     "969Handling": 80,
+
     "699TopSpeed": 99,
     "6990to60": 10.8,
     "699Handling": 80,
+
     "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003175871185698846/honda_s660.jpg",
     "creator": "Keanny"
 }

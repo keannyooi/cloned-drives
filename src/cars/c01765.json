@@ -9,15 +9,12 @@
     "handling": 70,
     "driveType": "FWD",
     "tyreType": "Off-Road",
-    "tags": [
-        "Concept",
-        "Oddity",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Concept", "Oddity", "The Japanese Odyssey"],
     "isPrize": false,
+
     "weight": 1605,
     "gc": "High",
-    "seatCount": 5,
+    "seatCount": 2,
     "bodyStyle": "Hatchback",
     "tcs": true,
     "abs": true,
@@ -25,23 +22,29 @@
     "fuelType": "Electric",
     "mra": 33.33,
     "ola": 74.31,
-    "description": "An emergeny vehicle like this is great, but why the Leaf?",
+    "description": "Nissan felt that EVs could potentially make for a pretty useful natural disaster response vehicle, so they created the RE-LEAF as a proof of concept. The Leaf may seem like an odd choice for such an application, but it makes sense because the car's battery can act as an emergency electricity supply powerful enough to power the average European household for 6 days. Of course, the car has been modified in numerous aspects to better suit the job, among those modifications are a raised suspension, a custom pull-out desk in place of the rear seats and BF Goodrich Baja All Terrain tyres.",
     "card": "https://media.discordapp.net/attachments/819199720249360384/865585109884338216/nissan_re-leaf.png",
+
     "333TopSpeed": 98,
     "3330to60": 7.3,
     "333Handling": 72,
+
     "666TopSpeed": 103,
     "6660to60": 6.9,
     "666Handling": 75,
+
     "996TopSpeed": 109,
     "9960to60": 6.5,
     "996Handling": 75,
+
     "969TopSpeed": 109,
     "9690to60": 6.9,
     "969Handling": 78,
+
     "699TopSpeed": 103,
     "6990to60": 6.5,
     "699Handling": 78,
+
     "racehud": "https://media.discordapp.net/attachments/995376525119586356/1001859345711104011/re-leaf.jpg",
     "creator": "Keanny"
 }

@@ -9,13 +9,9 @@
     "handling": 94,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Track Day",
-        "Supercar",
-        "Unique",
-        "The Royal Collection"
-    ],
+    "tags": ["Track Day", "Supercar", "Unique", "The Royal Collection"],
     "isPrize": false,
+
     "weight": 1313,
     "gc": "Low",
     "seatCount": 2,
@@ -26,23 +22,29 @@
     "fuelType": "Petrol",
     "mra": 92.06,
     "ola": 93.1,
-    "description": "None.",
+    "description": "Commisioned by McLaren Newport Beach, a Californian dealership, the MSO X is a 10-car run of 570S's dressed in the same goodies as the GT4 race car. The race-spec rear wing is functional and adds 100kg of downforce, but otherwise the car is mechanically the same as the base 570S. Pictured here is car #04, finished in McLaren Orange.",
     "card": "https://media.discordapp.net/attachments/819199720249360384/854726377198321684/CD_McLaren_MSO_X.png",
+
     "333TopSpeed": 207,
     "3330to60": 2.8,
     "333Handling": 97,
+
     "666TopSpeed": 209,
     "6660to60": 2.6,
     "666Handling": 100,
+
     "996TopSpeed": 212,
     "9960to60": 2.5,
     "996Handling": 100,
+
     "969TopSpeed": 212,
     "9690to60": 2.6,
     "969Handling": 104,
+
     "699TopSpeed": 209,
     "6990to60": 2.5,
     "699Handling": 104,
+
     "racehud": "https://media.discordapp.net/attachments/995376525119586356/1016345167709622392/McLaren_MSO_X.png",
     "creator": "Exist"
 }

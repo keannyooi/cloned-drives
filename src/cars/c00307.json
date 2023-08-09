@@ -9,11 +9,9 @@
     "handling": 71,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": [
-        "Eco-Friendly",
-        "Silver Screen", "Year of the Rabbit"
-    ],
+    "tags": ["Eco-Friendly", "Silver Screen", "Year of the Rabbit"],
     "isPrize": false,
+
     "weight": 1721,
     "gc": "Low",
     "seatCount": 4,
@@ -24,23 +22,29 @@
     "fuelType": "Hybrid",
     "mra": 44.13,
     "ola": 73.83,
-    "description": "An award-winning range-extended electric car.",
+    "description": "Designed by a Nigerian and supervised by GM's \"Employee #1\", the production Volt sits ontop the same platform as the Chevrolet Malibu. Despite GM refusing to use the word \"hybrid\" to describe the car's Voltec powertrain, it's technically one because after the battery is depleted up to a certain point, a range-extending engine kicks in to power an electric generator. Presumably in an attempt to lower the car's aerodynamic coefficient, the Volt's front bumper has a strip that extends down so much that the car is effectively as low off the ground as some supercars, *and it's only because of that strip.*",
     "card": "https://media.discordapp.net/attachments/819199720249360384/819384031455739914/volt.png",
+
     "333TopSpeed": 106,
     "3330to60": 8.5,
     "333Handling": 73,
+
     "666TopSpeed": 111,
     "6660to60": 8,
     "666Handling": 76,
+
     "996TopSpeed": 116,
     "9960to60": 7.6,
     "996Handling": 76,
+
     "969TopSpeed": 116,
     "9690to60": 8,
     "969Handling": 79,
+
     "699TopSpeed": 111,
     "6990to60": 7.6,
     "699Handling": 79,
+
     "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003659002124697640/volt.jpg",
     "creator": "Keanny"
 }
