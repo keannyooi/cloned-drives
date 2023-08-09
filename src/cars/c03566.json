@@ -1,6 +1,6 @@
 {
     "rq": 56,
-    "make": "Ram",
+    "make": ["Ram", "Dodge"],
     "model": "392 Quick Silver Concept",
     "modelYear": 2011,
     "country": "US",

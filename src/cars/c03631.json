@@ -1,6 +1,6 @@
 {
     "rq": 55,
-    "make": "Ram",
+    "make": ["Ram", "Dodge"],
     "model": "1500 5.7 eTorque 4x4 Crew Cab",
     "modelYear": 2019,
     "country": "US",

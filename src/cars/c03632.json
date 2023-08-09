@@ -1,6 +1,6 @@
 {
     "rq": 51,
-    "make": "Ram",
+    "make": ["Ram", "Dodge"],
     "model": "1500 Classic Warlock 5.7 4x4 Crew Cab",
     "modelYear": 2019,
     "country": "US",

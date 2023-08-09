@@ -1,6 +1,6 @@
 {
     "rq": 43,
-    "make": "Ram",
+    "make": ["Ram", "Dodge"],
     "model": "1500 3.6 4x2 Quad Cab",
     "modelYear": 2013,
     "country": "US",

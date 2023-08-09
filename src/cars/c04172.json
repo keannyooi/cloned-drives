@@ -1,0 +1,49 @@
+{
+    "rq": 46,
+    "make": "Ford",
+    "model": "Puma ST",
+    "modelYear": 2020,
+    "country": "GB",
+    "topSpeed": 137,
+    "0to60": 6.8,
+    "handling": 81,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Hot Hatch"],
+    "isPrize": false,
+	
+    "weight": 1283,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 65.38,
+    "ola": 85.29,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1137402306548207646/C.FordPumaST.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1137402335610556467/PumaST2020.png",
+
+"333TopSpeed": 141,
+"3330to60": 6.5,
+"333Handling": 84,
+
+"666TopSpeed": 145,
+"6660to60": 6.1,
+"666Handling": 86,
+
+"699TopSpeed": 145,
+"6990to60": 5.8,
+"699Handling": 90,
+
+"969TopSpeed": 148,
+"9690to60": 6.1,
+"969Handling": 90,
+
+"996TopSpeed": 148,
+"9960to60": 5.8,
+"996Handling": 86,
+    "creator": "Connor"
+}

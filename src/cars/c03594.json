@@ -1,6 +1,6 @@
 {
     "rq": 51,
-    "make": "Ram",
+    "make": ["Ram", "Dodge"],
     "model": "1500 Special Service",
     "modelYear": 2013,
     "country": "US",

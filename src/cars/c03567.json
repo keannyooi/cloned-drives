@@ -1,6 +1,6 @@
 {
     "rq": 62,
-    "make": "Ram",
+    "make": ["Ram", "Dodge"],
     "model": "1500 Sport R/T",
     "modelYear": 2013,
     "country": "US",

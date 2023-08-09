@@ -1,6 +1,6 @@
 {
     "rq": 50,
-    "make": "Ram",
+    "make": ["Ram", "Dodge"],
     "model": "1500 5.7 4x4 Crew Cab",
     "modelYear": 2013,
     "country": "US",

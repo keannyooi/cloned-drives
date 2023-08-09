@@ -1,6 +1,6 @@
 {
     "rq": 45,
-    "make": "Ram",
+    "make": ["Ram", "Dodge"],
     "model": "1500 Outdoorsman EcoDiesel 4x4 Crew Cab",
     "modelYear": 2014,
     "country": "US",

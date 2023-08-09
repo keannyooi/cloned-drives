@@ -1,0 +1,49 @@
+{
+    "rq": 91,
+    "make": "SSC",
+    "model": "Ultimate Aero",
+    "modelYear": 2006,
+    "country": "US",
+    "topSpeed": 248,
+    "0to60": 2.8,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Americas Assault", "Ultra Expensive", "Hypercar", "Unique"],
+    "isPrize": false,
+	
+    "weight": 1200,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 90.32,
+    "ola": 90,
+    "description": "Debuting alongside the Aero was the Ultimate Aero, a faster and more powerful variant that would go on to greatly overshadow the standard Aero.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1131362896207679548/ultimate_aero_2006.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1131351756970938388/ultimate_aero_2006_hud.png",
+    "creator": "Preston",
+
+"333TopSpeed": 250, 
+"3330to60": 2.7, 
+"333Handling": 94,
+
+"666TopSpeed": 252, 
+"6660to60": 2.5, 
+"666Handling": 97,
+
+"699TopSpeed": 252, 
+"6990to60": 2.4, 
+"699Handling": 101,
+
+"969TopSpeed": 254, 
+"9690to60": 2.5, 
+"969Handling": 101,
+
+"996TopSpeed": 254, 
+"9960to60": 2.4, 
+"996Handling": 97
+}
