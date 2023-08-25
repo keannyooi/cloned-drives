@@ -9,11 +9,9 @@
     "handling": 83,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Unique",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Unique", "The Japanese Odyssey"],
     "isPrize": false,
+
     "weight": 1050,
     "gc": "Low",
     "seatCount": 2,
@@ -24,23 +22,29 @@
     "fuelType": "Petrol",
     "mra": 63.33,
     "ola": 77.19,
-    "description": "Toyota is known most for their reliable/mundane vehicles, but whatever the heck this is speaks a lot about what the Japanese manufacturer can do when unhinged.",
+    "description": "People who've seen this car in action would be in disbelief to know that this is, in fact, an official project by Toyota's UK branch. It is by all means Crazy - a mid-engined, RWD city car powered by an MR2 engine made in an era before Akio Toyoda's presidency is surely hard to imagine! Whatever this is clearly shows the amount of radicalness the Japanese automotive giant has been hiding from us all along.",
     "card": "https://media.discordapp.net/attachments/819199720249360384/861147257016942602/toyota_aygo_crazy.png",
+
     "333TopSpeed": 131,
     "3330to60": 5.4,
     "333Handling": 86,
+
     "666TopSpeed": 135,
     "6660to60": 5.1,
     "666Handling": 88,
+
     "996TopSpeed": 139,
     "9960to60": 4.8,
     "996Handling": 88,
+
     "969TopSpeed": 139,
     "9690to60": 5.1,
     "969Handling": 92,
+
     "699TopSpeed": 135,
     "6990to60": 4.8,
     "699Handling": 92,
+
     "racehud": "https://media.discordapp.net/attachments/995376525119586356/1001859880686190713/aygo_crazy.jpg",
     "creator": "Keanny"
 }

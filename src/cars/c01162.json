@@ -1,9 +1,6 @@
 {
     "rq": 48,
-    "make": [
-        "Saleen",
-        "Ford"
-    ],
+    "make": ["Saleen", "Ford"],
     "model": "S121 N2O",
     "modelYear": 2005,
     "country": "US",
@@ -12,11 +9,9 @@
     "handling": 85,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": [
-        "Hot Hatch",
-        "Tuner"
-    ],
+    "tags": ["Hot Hatch", "Tuner"],
     "isPrize": false,
+
     "weight": 1188,
     "gc": "Low",
     "seatCount": 5,
@@ -27,23 +22,29 @@
     "fuelType": "Petrol",
     "mra": 71.6,
     "ola": 85.95,
-    "description": "Saleen placed a nitrous bottle at the back of a Focus for more booscht.",
+    "description": "The N2O Focus' biggest selling point is the fact that it comes with a 10-pound nitrous bottle built-in, so any buyer can Need For Speed their way straight out of the dealership. Its racing credentials can't be overlooked even when the car needs to have some downtime in terms of its performance - it's built just like any other Saleen, even if it's a hatchback. And it's got that WRC drip.",
+
     "card": "https://media.discordapp.net/attachments/819199720249360384/819392231528988713/saleen_s121_n2o.png",
     "333TopSpeed": 152,
     "3330to60": 5.8,
     "333Handling": 88,
+
     "666TopSpeed": 156,
     "6660to60": 5.5,
     "666Handling": 91,
+
     "996TopSpeed": 159,
     "9960to60": 5.2,
     "996Handling": 91,
+
     "969TopSpeed": 159,
     "9690to60": 5.5,
     "969Handling": 94,
+
     "699TopSpeed": 156,
     "6990to60": 5.2,
     "699Handling": 94,
+
     "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003294951297269780/saleen_s121.jpg",
     "creator": "Keanny"
 }

@@ -9,10 +9,9 @@
     "handling": 68,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": [
-        "Eco-Friendly"
-    ],
+    "tags": ["Eco-Friendly"],
     "isPrize": false,
+
     "weight": 1660,
     "gc": "Medium",
     "seatCount": 5,
@@ -23,23 +22,29 @@
     "fuelType": "Electric",
     "mra": 17.22,
     "ola": 84.54,
-    "description": "China attempted selling one of their electric cars in the USA, but the people there didn't buy them because that rebadge ain't fooling them.",
+    "description": "Coda Automitve was a joint venture between Miles Automotive, Hafei and Qingyuan Electric Vehicle, and it was named that way to signalize the end of the ICE era. This electric sedan, based on the Hafei Saibao, was their only offering and it was only sold in California. The car was proven to be dated and unreliable (I mean what do you expect, it was made in China), so no one wanted to buy them. In the end, only 117 Codas were built before the company had to file for bankrupcy.",
     "card": "https://media.discordapp.net/attachments/819199720249360384/819390423529029702/coda.png",
+
     "333TopSpeed": 91,
     "3330to60": 8.7,
     "333Handling": 70,
+
     "666TopSpeed": 97,
     "6660to60": 8.3,
     "666Handling": 72,
+
     "996TopSpeed": 103,
     "9960to60": 7.8,
     "996Handling": 72,
+
     "969TopSpeed": 103,
     "9690to60": 8.3,
     "969Handling": 75,
+
     "699TopSpeed": 97,
     "6990to60": 7.8,
     "699Handling": 75,
+
     "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003643653027287101/coda.jpg",
     "creator": "Keanny"
 }

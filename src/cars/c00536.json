@@ -9,37 +9,42 @@
     "handling": 63,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": [
-        "Eco-Friendly"
-    ],
+    "tags": ["Eco-Friendly"],
     "isPrize": false,
+
     "weight": 1628,
     "gc": "Medium",
     "seatCount": 4,
     "bodyStyle": "Hatchback",
-    "tcs": true,
+    "tcs": false,
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Electric",
     "mra": 0,
     "ola": 57.65,
-    "description": "Legend has it that Honda's project leader once flipped shit on the car's early prototype.",
+    "description": "Honda started R&D on an EV in April 1988, which was later than their rivals but that meant they were free to experiment with the latest tech at the time for the EV. The initial prototype was basically an electric Civic with lighter body panels, but it was called out by the project's leader for being obviously compromised. That turned out to be a good call, and by 1997 Honda had what was the most practical EV for production.",
     "card": "https://media.discordapp.net/attachments/819199720249360384/865583268102537216/ev_plos.png",
+
     "333TopSpeed": 87,
     "3330to60": 16.2,
     "333Handling": 65,
+
     "666TopSpeed": 93,
     "6660to60": 15.3,
     "666Handling": 67,
+
     "996TopSpeed": 100,
     "9960to60": 14.5,
     "996Handling": 67,
+
     "969TopSpeed": 100,
     "9690to60": 15.3,
     "969Handling": 70,
+
     "699TopSpeed": 93,
     "6990to60": 14.5,
     "699Handling": 70,
+
     "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003309742363512884/ev_plus.jpg",
     "creator": "Keanny"
 }

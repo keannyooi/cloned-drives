@@ -9,38 +9,42 @@
     "handling": 81,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": [
-        "Unique",
-        "Concept"
-    ],
+    "tags": ["Eco-Friendly", "Unique", "Concept"],
     "isPrize": false,
+
     "weight": 1200,
     "gc": "Low",
     "seatCount": 3,
     "bodyStyle": "Coupe",
     "tcs": true,
     "abs": true,
-    "enginePos": "Mixed",
-    "fuelType": "Petrol",
+    "enginePos": "Front",
+    "fuelType": "Electric",
     "mra": 55.88,
     "ola": 80.7,
-    "description": "It was supposed to beat Porsches.",
+    "description": "Originally started as a collaboration with Lotus, the Alias shared many mechanical components with the ZAP-X SUV (based on the Lotus APX) that was being developed at the same time. Claims from ZAP at the time suggested a range of around 150 miles and a 0-60mph time of 5.7s, making it capable of beating Porsches. It was supposed to launch in 2009 with a price of USD$30,000, but a lack of funding to build a production plant in Kentucky stopped that from happening.",
     "card": "https://media.discordapp.net/attachments/819199720249360384/976470485242118264/zap_alias_concept.png",
+
     "333TopSpeed": 159,
     "3330to60": 5.4,
     "333Handling": 84,
+
     "666TopSpeed": 163,
     "6660to60": 5.1,
     "666Handling": 86,
+
     "996TopSpeed": 166,
     "9960to60": 4.8,
     "996Handling": 86,
+
     "969TopSpeed": 166,
     "9690to60": 5.1,
     "969Handling": 90,
+
     "699TopSpeed": 163,
     "6990to60": 4.8,
     "699Handling": 90,
+
     "racehud": "https://media.discordapp.net/attachments/995376525119586356/1001844302130982922/zap_concept.jpg",
     "creator": "Keanny"
 }

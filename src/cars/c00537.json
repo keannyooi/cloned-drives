@@ -9,13 +9,9 @@
     "handling": 72,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Concept",
-        "Kei Car",
-        "Eco-Friendly",
-        "Unique", "Year of the Rabbit"
-    ],
+    "tags": ["Concept", "Kei Car", "Eco-Friendly", "Unique", "Year of the Rabbit"],
     "isPrize": false,
+
     "weight": 870,
     "gc": "Low",
     "seatCount": 2,
@@ -26,23 +22,29 @@
     "fuelType": "Electric",
     "mra": 39.44,
     "ola": 80.7,
-    "description": "A futuristic take on the old Honda Beat microcar.",
+    "description": "An interesting little electric sports car that has dual joysticks in place of a conventional steering wheel. One would also be able to notice that its design also carried over to the S660 kei sports car.",
     "card": "https://media.discordapp.net/attachments/819199720249360384/868775758812831794/honda_ev-ster.png",
+
     "333TopSpeed": 104,
     "3330to60": 10.8,
     "333Handling": 74,
+
     "666TopSpeed": 110,
     "6660to60": 10.3,
     "666Handling": 77,
+
     "996TopSpeed": 115,
     "9960to60": 9.7,
     "996Handling": 77,
+
     "969TopSpeed": 115,
     "9690to60": 10.3,
     "969Handling": 80,
+
     "699TopSpeed": 110,
     "6990to60": 9.7,
     "699Handling": 80,
+
     "racehud": "https://media.discordapp.net/attachments/995376525119586356/1006563478376562738/ev-ster.jpg",
     "creator": "Keanny"
 }
