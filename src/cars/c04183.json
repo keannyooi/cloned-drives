@@ -1,0 +1,49 @@
+{
+    "rq": 33,
+    "make": "Alfa Romeo",
+    "model": "Tonale 1.5 MHEV Ti",
+    "modelYear": 2022,
+    "country": "IT",
+    "topSpeed": 121,
+    "0to60": 9.8,
+    "handling": 75,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Eco-Friendly"],
+    "isPrize": false,
+	
+    "weight": 1525,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 50.95,
+    "ola": 77.91,
+    "description": "Kudos to Alfa Romeo for making a beautiful crossover.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1132991239785037864/Alfa_Romeo_Tonale_1.5_MHEV_Ti.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1132991196717916210/Alfa_Romeo_Tonale_1.5_MHEV_Ti.png",
+    "creator": "Crossfire",
+
+    "333TopSpeed": 125, 
+    "3330to60": 9.3, 
+    "333Handling": 77,
+
+    "666TopSpeed": 130, 
+    "6660to60": 8.8, 
+    "666Handling": 80,
+
+    "996TopSpeed": 134, 
+    "9960to60": 8.3, 
+    "996Handling": 80,
+
+    "969TopSpeed": 134, 
+    "9690to60": 8.8, 
+    "969Handling": 83,
+
+    "699TopSpeed": 130, 
+    "6990to60": 8.3, 
+    "699Handling": 83
+}

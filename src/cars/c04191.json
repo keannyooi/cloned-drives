@@ -1,0 +1,49 @@
+{
+    "rq": 27,
+    "make": "Lamborghini",
+    "model": "Espada 400 GTE",
+    "modelYear": 1970,
+    "country": "IT",
+    "topSpeed": 155,
+    "0to60": 7.1,
+    "handling": 70,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Grand Tourer"],
+    "isPrize": false,
+	
+    "weight": 1640,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.98,
+    "ola": 90,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1144236978401988618/Espada400GTE70.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1144237201526374440/LamboEspada400GTE70.png",
+
+"333TopSpeed": 158,
+"3330to60": 6.7,
+"333Handling": 72,
+
+"666TopSpeed": 162,
+"6660to60": 6.4,
+"666Handling": 75,
+
+"699TopSpeed": 162,
+"6990to60": 6,
+"699Handling": 78,
+
+"969TopSpeed": 165,
+"9690to60": 6.4,
+"969Handling": 78,
+
+"996TopSpeed": 165,
+"9960to60": 6,
+"996Handling": 75,
+    "creator": "Bnuuy"
+}

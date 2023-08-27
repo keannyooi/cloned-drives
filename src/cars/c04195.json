@@ -1,0 +1,49 @@
+{
+    "rq": 38,
+    "make": "Lamborghini",
+    "model": "Islero 400 GTS",
+    "modelYear": 1969,
+    "country": "IT",
+    "topSpeed": 161,
+    "0to60": 6.2,
+    "handling": 73,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Grand Tourer"],
+    "isPrize": false,
+	
+    "weight": 1320,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 82.05,
+    "ola": 97.5,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1144237049453482035/Islero400GTS.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1144237277468446802/LamboIslero400GTS.png",
+
+"333TopSpeed": 164,
+"3330to60": 5.9,
+"333Handling": 75,
+
+"666TopSpeed": 167,
+"6660to60": 5.6,
+"666Handling": 78,
+
+"699TopSpeed": 167,
+"6990to60": 5.3,
+"699Handling": 81,
+
+"969TopSpeed": 171,
+"9690to60": 5.6,
+"969Handling": 81,
+
+"996TopSpeed": 171,
+"9960to60": 5.3,
+"996Handling": 78,
+    "creator": "Bnuuy"
+}

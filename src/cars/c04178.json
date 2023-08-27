@@ -1,0 +1,49 @@
+{
+    "rq": 45,
+    "make": "Alfa Romeo",
+    "model": "Stelvio 2.2 TD Business",
+    "modelYear": 2017,
+    "country": "IT",
+    "topSpeed": 123,
+    "0to60": 8.5,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "All-Surface",
+    "tags": ["Eurotech Elite"],
+    "isPrize": false,
+	
+    "weight": 1604,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 45.92,
+    "ola": 63.55,
+    "description": "The most basic Stelvio with only 150 horsepower.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1132988672027926598/Alfa_Romeo_Stelvio_2.2_TD_Business_2017.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1132988757461704765/Alfa_Romeo_Stelvio_2.2_TD_Business_2017.png",
+    "creator": "Crossfire",
+
+    "333TopSpeed": 127, 
+    "3330to60": 8.1, 
+    "333Handling": 77,
+
+    "666TopSpeed": 131, 
+    "6660to60": 7.7, 
+    "666Handling": 80,
+
+    "996TopSpeed": 136, 
+    "9960to60": 7.2, 
+    "996Handling": 80,
+
+    "969TopSpeed": 136, 
+    "9690to60": 7.7, 
+    "969Handling": 83,
+
+    "699TopSpeed": 131, 
+    "6990to60": 7.2, 
+    "699Handling": 83
+}

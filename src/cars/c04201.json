@@ -1,0 +1,49 @@
+{
+    "rq": 23,
+    "make": "Lamborghini",
+    "model": "Urraco P250",
+    "modelYear": 1972,
+    "country": "IT",
+    "topSpeed": 143,
+    "0to60": 8.5,
+    "handling": 72,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite"],
+    "isPrize": false,
+	
+    "weight": 1300,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 64.15,
+    "ola": 78.1,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1142916249572085871/UrracoP250.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1142916661255614474/UrracoP250.png",
+
+"333TopSpeed": 147,
+"3330to60": 8.1,
+"333Handling": 74,
+
+"666TopSpeed": 150,
+"6660to60": 7.7,
+"666Handling": 77,
+
+"699TopSpeed": 150,
+"6990to60": 7.2,
+"699Handling": 80,
+
+"969TopSpeed": 154,
+"9690to60": 7.7,
+"969Handling": 80,
+
+"996TopSpeed": 154,
+"9960to60": 7.2,
+"996Handling": 77,
+    "creator": "Bnuuy"
+}

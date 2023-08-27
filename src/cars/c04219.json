@@ -1,0 +1,50 @@
+{
+    "rq": 27,
+    "make": "Volvo",
+    "model": "C30 1.6 R-Design",
+    "modelYear": 2006,
+    "country": "SE",
+    "topSpeed": 115,
+    "0to60": 11.6,
+    "handling": 72,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Rest of the World", "Eurotech Elite"],
+    "isPrize": false,
+
+
+    "weight": 1280,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 43.77,
+    "ola": 63.79,
+    "description": "C30 is a hatchback reminiscent of the P1800 shooting brake of the 60s",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1112797949320233110/E.VolvoC3016RD.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1112800275149881415/c3016.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 120,
+    "3330to60": 11.0,
+    "333Handling": 74,
+
+    "666TopSpeed": 124,
+    "6660to60": 10.4, 
+    "666Handling": 77,
+
+    "996TopSpeed": 129,
+    "9960to60": 9.9,
+    "996Handling": 77,
+
+    "969TopSpeed": 129,
+    "9690to60": 10.4,
+    "969Handling": 80,
+
+    "699TopSpeed": 124,
+    "6990to60": 9.9,
+    "699Handling": 80
+}

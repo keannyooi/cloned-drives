@@ -1,0 +1,49 @@
+{
+    "rq": 31,
+    "make": "Lamborghini",
+    "model": "Urraco P300",
+    "modelYear": 1974,
+    "country": "IT",
+    "topSpeed": 155,
+    "0to60": 7.0,
+    "handling": 73,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite"],
+    "isPrize": false,
+	
+    "weight": 1375,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 70,
+    "ola": 77.14,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1142916291108274197/UrracoP300.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1142916684202655775/UrracoP300.png",
+
+"333TopSpeed": 158,
+"3330to60": 6.6,
+"333Handling": 75,
+
+"666TopSpeed": 162,
+"6660to60": 6.3,
+"666Handling": 78,
+
+"699TopSpeed": 162,
+"6990to60": 6,
+"699Handling": 81,
+
+"969TopSpeed": 165,
+"9690to60": 6.3,
+"969Handling": 81,
+
+"996TopSpeed": 165,
+"9960to60": 6,
+"996Handling": 78,
+    "creator": "Bnuuy"
+}

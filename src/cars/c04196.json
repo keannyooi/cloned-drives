@@ -1,0 +1,49 @@
+{
+    "rq": 46,
+    "make": "Lamborghini",
+    "model": "Islero 400 GTX",
+    "modelYear": 1975,
+    "country": "IT",
+    "topSpeed": 169,
+    "0to60": 5.7,
+    "handling": 76,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Motorsport","Unique"],
+    "isPrize": false,
+	
+    "weight": 1240,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 87.67,
+    "ola": 91.25,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1144237062925586503/Islero400GTX.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1144237292815405086/LamboIslero400GTX.png",
+
+"333TopSpeed": 172,
+"3330to60": 5.4,
+"333Handling": 79,
+
+"666TopSpeed": 175,
+"6660to60": 5.1,
+"666Handling": 81,
+
+"699TopSpeed": 175,
+"6990to60": 4.8,
+"699Handling": 84,
+
+"969TopSpeed": 178,
+"9690to60": 5.1,
+"969Handling": 84,
+
+"996TopSpeed": 178,
+"9960to60": 4.8,
+"996Handling": 81,
+    "creator": "Bnuuy"
+}

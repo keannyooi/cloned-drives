@@ -1,0 +1,49 @@
+{
+    "rq": 35,
+    "make": "Lamborghini",
+    "model": "Islero 400 GT",
+    "modelYear": 1968,
+    "country": "IT",
+    "topSpeed": 154,
+    "0to60": 6.4,
+    "handling": 72,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Grand Tourer"],
+    "isPrize": false,
+	
+    "weight": 1315,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 81.25,
+    "ola": 100,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1144237035691974738/Islero400GT.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1144237265204289598/LamboIslero400GT.png",
+
+"333TopSpeed": 157,
+"3330to60": 6.1,
+"333Handling": 74,
+
+"666TopSpeed": 161,
+"6660to60": 5.8,
+"666Handling": 77,
+
+"699TopSpeed": 161,
+"6990to60": 5.4,
+"699Handling": 80,
+
+"969TopSpeed": 164,
+"9690to60": 5.8,
+"969Handling": 80,
+
+"996TopSpeed": 164,
+"9960to60": 5.4,
+"996Handling": 77,
+    "creator": "Bnuuy"
+}

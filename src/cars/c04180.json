@@ -1,0 +1,49 @@
+{
+    "rq": 49,
+    "make": "Alfa Romeo",
+    "model": "Stelvio 2.2 TD Super",
+    "modelYear": 2017,
+    "country": "IT",
+    "topSpeed": 127,
+    "0to60": 7.8,
+    "handling": 76,
+    "driveType": "RWD",
+    "tyreType": "All-Surface",
+    "tags": ["Eurotech Elite"],
+    "isPrize": false,
+	
+    "weight": 1604,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 50.21,
+    "ola": 63.93,
+    "description": "Let me guess: You probably weren't searching for this Stelvio but you ended up with this because you couldn't figure out the one you were searching.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1132989242478428230/Alfa_Romeo_Stelvio_2.2_TD_Super_2017.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1132989272450924574/ALfa_Romeo_Stelvio_2.2_TD_Super_2017.png",
+    "creator": "Crossfire",
+
+    "333TopSpeed": 131, 
+    "3330to60": 7.4, 
+    "333Handling": 79,
+
+    "666TopSpeed": 135, 
+    "6660to60": 7.0, 
+    "666Handling": 81,
+
+    "996TopSpeed": 139, 
+    "9960to60": 6.6, 
+    "996Handling": 81,
+
+    "969TopSpeed": 139, 
+    "9690to60": 7.0, 
+    "969Handling": 84,
+
+    "699TopSpeed": 135, 
+    "6990to60": 6.6, 
+    "699Handling": 84
+}

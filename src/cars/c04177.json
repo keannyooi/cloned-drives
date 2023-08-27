@@ -1,0 +1,49 @@
+{
+    "rq": 59,
+    "make": "Alfa Romeo",
+    "model": "Stelvio 2.0T Ti Q4",
+    "modelYear": 2019,
+    "country": "IT",
+    "topSpeed": 133,
+    "0to60": 7.1,
+    "handling": 78,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Eurotech Elite"],
+    "isPrize": false,
+	
+    "weight": 1660,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 55.52,
+    "ola": 67.63,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1132990117989072946/Alfa_Romeo_Stelvio_2.0T_Ti_Q4_2019.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1132990174259843182/Alfa_Romeo_Stelvio_2.0T_Ti_Q4.png",
+    "creator": "Crossfire",
+
+    "333TopSpeed": 137, 
+    "3330to60": 6.7, 
+    "333Handling": 81,
+
+    "666TopSpeed": 141, 
+    "6660to60": 6.4, 
+    "666Handling": 83,
+
+    "996TopSpeed": 145, 
+    "9960to60": 6.0, 
+    "996Handling": 83,
+
+    "969TopSpeed": 145, 
+    "9690to60": 6.4, 
+    "969Handling": 87,
+
+    "699TopSpeed": 141, 
+    "6990to60": 6.0, 
+    "699Handling": 87
+}

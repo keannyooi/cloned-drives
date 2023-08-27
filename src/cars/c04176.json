@@ -1,0 +1,50 @@
+{
+    "rq": 91,
+    "make": "Alfa Romeo",
+    "model": "SE 048SP",
+    "modelYear": 1990,
+    "country": "IT",
+    "topSpeed": 227,
+    "0to60": 3.0,
+    "handling": 96,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Eurotech Elite", "Motorsport"],
+    "isPrize": true,
+
+
+    "weight": 900,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 115.38,
+    "ola": 86.67,
+    "description": "Designed to replace the Lancia LC2 after the Gr.C regulations had undergone a major revamp, the SE 048SP had an Abarth chassis and a V10 engine from Alfa 164 Procar.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1115020186320371743/S.ARSE048SP.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1115020891659698276/ARSP048.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 229,
+    "3330to60": 2.9,
+    "333Handling": 99,
+
+    "666TopSpeed": 232,
+    "6660to60": 2.7, 
+    "666Handling": 102,
+
+    "996TopSpeed": 234,
+    "9960to60": 2.6,
+    "996Handling": 102,
+
+    "969TopSpeed": 234,
+    "9690to60": 2.7,
+    "969Handling": 107,
+
+    "699TopSpeed": 232,
+    "6990to60": 2.6,
+    "699Handling": 107
+}
