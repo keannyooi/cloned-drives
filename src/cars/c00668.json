@@ -1,5 +1,5 @@
 {
-    "rq": 85,
+    "rq": 86,
     "make": "Lamborghini",
     "model": "Reventon Roadster",
     "modelYear": 2009,
@@ -19,10 +19,10 @@
     "abs": true,
     "enginePos": "Middle",
     "fuelType": "Petrol",
-    "mra": 89.74,
-    "ola": 108.57,
+    "mra": 87.15,
+    "ola": 86.21,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/844537542362660874/ReventonRoadster.png",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1144258861914673263/MurciReventonRoadster.png",
     "333TopSpeed": 208,
     "3330to60": 3.1,
     "333Handling": 93,
@@ -38,6 +38,6 @@
     "699TopSpeed": 210,
     "6990to60": 2.8,
     "699Handling": 100,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997533397943595018/reventonroadster.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1144258949634334761/MurciReventonRoadster.png",
     "creator": "Bnuuy"
 }

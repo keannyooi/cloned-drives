@@ -38,7 +38,7 @@ const weatherVars = {
     "Sunny Drag": {
         drivePen: 0,
         absPen: 0,
-        tcsPen: 0,
+        tcsPen: 1,
         tyrePen: {
             "Standard": 0,
             "Performance": 0,
@@ -46,6 +46,19 @@ const weatherVars = {
             "Off-Road": 0,
             "Slick": 0,
             "Drag": -11.5
+        }
+    },
+	    "Rainy Drag": {
+        drivePen: 2,
+        absPen: 0,
+        tcsPen: 1,
+        tyrePen: {
+            "Standard": 0,
+            "Performance": 0,
+            "All-Surface": 0,
+            "Off-Road": 0,
+            "Slick": 0,
+            "Drag": 250
         }
     },
     "Sunny Track": {

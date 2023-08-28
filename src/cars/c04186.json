@@ -1,0 +1,49 @@
+{
+    "rq": 61,
+    "make": "Alfa Romeo",
+    "model": "Tonale Plug-in Hybrid Q4",
+    "modelYear": 2023,
+    "country": "IT",
+    "topSpeed": 128,
+    "0to60": 5.9,
+    "handling": 80,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite", "Eco-Friendly"],
+    "isPrize": false,
+	
+    "weight": 1835,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Hybrid",
+    "mra": 64.12,
+    "ola": 84.20,
+    "description": "Plug in Hybrid model providing some EV range and more than 100 hp on top.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1132991413336944751/Alfa_Romeo_Tonale_Plug-in_Hybrid_Q4.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1132991401869721710/Alfa_Romeo_Tonale_PHEV.png",
+    "creator": "Crossfire",
+
+    "333TopSpeed": 132, 
+    "3330to60": 5.6, 
+    "333Handling": 83,
+
+    "666TopSpeed": 136, 
+    "6660to60": 5.3, 
+    "666Handling": 85,
+
+    "996TopSpeed": 140, 
+    "9960to60": 5.0, 
+    "996Handling": 85,
+
+    "969TopSpeed": 140, 
+    "9690to60": 5.3, 
+    "969Handling": 89,
+
+    "699TopSpeed": 136, 
+    "6990to60": 5.0, 
+    "699Handling": 89
+}

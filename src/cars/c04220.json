@@ -1,0 +1,50 @@
+{
+    "rq": 28,
+    "make": "Volvo",
+    "model": "C30 1.6D DRIVe",
+    "modelYear": 2009,
+    "country": "SE",
+    "topSpeed": 118,
+    "0to60": 10.9,
+    "handling": 72,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Rest of the World", "Eurotech Elite"],
+    "isPrize": false,
+
+
+    "weight": 1298,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 45.6,
+    "ola": 71.55,
+    "description": "Entry level C30 with PSA-Ford diesel engine.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1112798081138823208/E.VolvoC3016DRIVe.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1112800482587590780/c30d2.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 122,
+    "3330to60": 10.4,
+    "333Handling": 74,
+
+    "666TopSpeed": 127,
+    "6660to60": 9.8, 
+    "666Handling": 77,
+
+    "996TopSpeed": 131,
+    "9960to60": 9.3,
+    "996Handling": 77,
+
+    "969TopSpeed": 131,
+    "9690to60": 9.8,
+    "969Handling": 80,
+
+    "699TopSpeed": 127,
+    "6990to60": 9.3,
+    "699Handling": 80
+}

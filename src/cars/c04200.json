@@ -1,0 +1,49 @@
+{
+    "rq": 17,
+    "make": "Lamborghini",
+    "model": "Urraco P200",
+    "modelYear": 1975,
+    "country": "IT",
+    "topSpeed": 134,
+    "0to60": 9.5,
+    "handling": 71,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite"],
+    "isPrize": false,
+	
+    "weight": 1400,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 63.4,
+    "ola": 77.89,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1142916199143968950/UrracoP200.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1142916642129584239/UrracoP200.png",
+
+"333TopSpeed": 138,
+"3330to60": 9,
+"333Handling": 73,
+
+"666TopSpeed": 142,
+"6660to60": 8.6,
+"666Handling": 76,
+
+"699TopSpeed": 142,
+"6990to60": 8.1,
+"699Handling": 79,
+
+"969TopSpeed": 146,
+"9690to60": 8.6,
+"969Handling": 79,
+
+"996TopSpeed": 146,
+"9960to60": 8.1,
+"996Handling": 76,
+    "creator": "Bnuuy"
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 71,
+    "make": "Maserati",
+    "model": "Levante Q4",
+    "modelYear": 2016,
+    "country": "IT",
+    "topSpeed": 156,
+    "0to60": 5.8,
+    "handling": 79,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Eurotech Elite"],
+    "isPrize": false,
+	
+    "weight": 2186,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 65.11,
+    "ola": 70.73,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1134549262324215969/Maserati_Levante_Q4.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1134549304816701461/Maserati_Levante_Q4.png",
+    "creator": "Crossfire",
+
+    "333TopSpeed": 159, 
+    "3330to60": 5.5, 
+    "333Handling": 82,
+
+    "666TopSpeed": 163, 
+    "6660to60": 5.2, 
+    "666Handling": 84,
+
+    "996TopSpeed": 166, 
+    "9960to60": 4.9, 
+    "996Handling": 84,
+
+    "969TopSpeed": 166, 
+    "9690to60": 5.2, 
+    "969Handling": 88,
+
+    "699TopSpeed": 163, 
+    "6990to60": 4.9, 
+    "699Handling": 88
+}

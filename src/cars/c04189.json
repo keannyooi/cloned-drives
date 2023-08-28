@@ -1,0 +1,49 @@
+{
+    "rq": 58,
+    "make": "Koenigsegg",
+    "model": "NLV Quant",
+    "modelYear": 2009,
+    "country": "SE",
+    "topSpeed": 171,
+    "0to60": 5.0,
+    "handling": 85,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Concept", "Eco-Friendly", "Rest of the World","Eurotech Elite"],
+    "isPrize": true,
+
+    "weight": 1780,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Electric",
+    "mra": 74.07,
+    "ola": 85.64,
+    "description": "Koenigsegg teamed up with a Swiss solar panel company NLV Solar AG to develop a solar-powered electric sports car called the Quant in 2009 for the Geneva Motor Show. One many be familiar with the name Quant as nanoFlowcell's CEO used to develop solar power technology under [[NLV]](https://youtu.be/XtXRvEsWzQo) before abandoning it and moving onto flow cells. Despite looking deformed, the Quant inherits pure Koenigsegg DNA down to the chassis. The lack of visible solar panels was because apparently the car was coated with solar energy-absorbing paint.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1131934694443847823/koenigsegg_nlv_quant.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1131934787507077201/nhelv_quant.jpg",
+    "creator": "Keanny",
+
+    "333TopSpeed": 174,
+    "3330to60": 4.8,
+    "333Handling": 88,
+    
+    "666TopSpeed": 177,
+    "6660to60": 4.5,
+    "666Handling": 91,
+    
+    "699TopSpeed": 177,
+    "6990to60": 4.3,
+    "699Handling": 94,
+    
+    "969TopSpeed": 180,
+    "9690to60": 4.5,
+    "969Handling": 94,
+    
+    "996TopSpeed": 180,
+    "9960to60": 4.3,
+    "996Handling": 91
+}

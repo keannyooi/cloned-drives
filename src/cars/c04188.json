@@ -1,0 +1,49 @@
+{
+    "rq": 60,
+    "make": "Fioravanti",
+    "model": "Sensiva",
+    "modelYear": 1994,
+    "country": "IT",
+    "topSpeed": 155,
+    "0to60": 5.2,
+    "handling": 84,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Concept","Eco-Friendly","Eurotech Elite"],
+    "isPrize": true,
+
+    "weight": 1000,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Hybrid",
+    "mra": 66.12,
+    "ola": 78.63,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1088816771273851000/fioravanti_sensiva.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1088815180026237040/sensiva.jpg",
+    "creator": "Keanny",
+
+    "333TopSpeed": 158,
+    "3330to60": 4.9,
+    "333Handling": 87,
+    
+    "666TopSpeed": 162,
+    "6660to60": 4.7,
+    "666Handling": 90,
+    
+    "699TopSpeed": 162,
+    "6990to60": 4.4,
+    "699Handling": 93,
+    
+    "969TopSpeed": 165,
+    "9690to60": 4.7,
+    "969Handling": 93,
+    
+    "996TopSpeed": 165,
+    "9960to60": 4.4,
+    "996Handling": 90
+}

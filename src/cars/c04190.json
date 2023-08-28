@@ -1,0 +1,49 @@
+{
+    "rq": 22,
+    "make": "Lamborghini",
+    "model": "Espada 400 GT",
+    "modelYear": 1968,
+    "country": "IT",
+    "topSpeed": 149,
+    "0to60": 7.8,
+    "handling": 69,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Grand Tourer"],
+    "isPrize": false,
+	
+    "weight": 1630,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 58.7,
+    "ola": 84.59,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1144236961779945603/Espada400GT.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1144237186301042738/LamboEspada400GT.png",
+
+"333TopSpeed": 152,
+"3330to60": 7.4,
+"333Handling": 71,
+
+"666TopSpeed": 156,
+"6660to60": 7,
+"666Handling": 74,
+
+"699TopSpeed": 156,
+"6990to60": 6.6,
+"699Handling": 77,
+
+"969TopSpeed": 159,
+"9690to60": 7,
+"969Handling": 77,
+
+"996TopSpeed": 159,
+"9960to60": 6.6,
+"996Handling": 74,
+    "creator": "Bnuuy"
+}

@@ -1,0 +1,50 @@
+{
+    "rq": 36,
+    "make": "Volvo",
+    "model": "C30 D5 R-Design",
+    "modelYear": 2006,
+    "country": "SE",
+    "topSpeed": 137,
+    "0to60": 7.7,
+    "handling": 76,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Rest of the World", "Eurotech Elite","Hot Hatch"],
+    "isPrize": false,
+
+
+    "weight": 1480,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 52.38,
+    "ola": 72.72,
+    "description": "Hottest diesel C30 also featured an inline 5 engine.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1112798257102467082/D.VolvoC30D5RD.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1112800638842183750/c30d5.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 141,
+    "3330to60": 7.3,
+    "333Handling": 79,
+
+    "666TopSpeed": 145,
+    "6660to60": 6.9, 
+    "666Handling": 81,
+
+    "996TopSpeed": 148,
+    "9960to60": 6.5,
+    "996Handling": 81,
+
+    "969TopSpeed": 148,
+    "9690to60": 6.9,
+    "969Handling": 84,
+
+    "699TopSpeed": 145,
+    "6990to60": 6.5,
+    "699Handling": 84
+}

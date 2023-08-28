@@ -1,0 +1,49 @@
+{
+    "rq": 16,
+    "make": "Lamborghini",
+    "model": "Marzal",
+    "modelYear": 1967,
+    "country": "IT",
+    "topSpeed": 118,
+    "0to60": 9.2,
+    "handling": 70,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Concept","Unique","Oddity"],
+    "isPrize": false,
+	
+    "weight": 1220,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 42.19,
+    "ola": 82.15,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1144236939231371285/Lambo-Marzal.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1144237168152293386/LamboMarzal.png",
+
+"333TopSpeed": 122,
+"3330to60": 8.7,
+"333Handling": 72,
+
+"666TopSpeed": 127,
+"6660to60": 8.3,
+"666Handling": 75,
+
+"699TopSpeed": 127,
+"6990to60": 7.8,
+"699Handling": 78,
+
+"969TopSpeed": 131,
+"9690to60": 8.3,
+"969Handling": 78,
+
+"996TopSpeed": 131,
+"9960to60": 7.8,
+"996Handling": 75,
+    "creator": "Bnuuy"
+}

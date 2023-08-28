@@ -1,0 +1,49 @@
+{
+    "rq": 89,
+    "make": "Spada Vetture Sport",
+    "model": "Codatronca Monza",
+    "modelYear": 2011,
+    "country": "IT",
+    "topSpeed": 208,
+    "0to60": 2.9,
+    "handling": 92,
+    "driveType": "RWD",
+    "tyreType": "RWD",
+    "tags": ["Eurotech Elite", "Supercar", "Unique"],
+    "isPrize": true,
+	
+    "weight": 1180,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 107.18,
+    "ola": 103.56,
+    "description": "Open air version of the crazy Codatronca with 80 more horsepower dropping its weight by around 200 kg's and 0-60 under 3 seconds. Got its name from the city of its homeland Italy.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1126471665430302730/Spada_Vetture_Sport_Codatronca_Monza.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1126471592357150750/Spada_Vetture_Sport_Codatronca_Monza.png",
+    "creator": "Crossfire",
+
+    "333TopSpeed": 211, 
+    "3330to60": 2.8, 
+    "333Handling": 95,
+
+    "666TopSpeed": 213, 
+    "6660to60": 2.6, 
+    "666Handling": 98,
+
+    "996TopSpeed": 216, 
+    "9960to60": 2.5, 
+    "996Handling": 98,
+
+    "969TopSpeed": 216, 
+    "9690to60": 2.6, 
+    "969Handling": 102,
+
+    "699TopSpeed": 213, 
+    "6990to60": 2.5, 
+    "699Handling": 102
+}

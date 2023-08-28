@@ -1,0 +1,49 @@
+{
+    "rq": 54,
+    "make": "Alfa Romeo",
+    "model": "Stelvio 2.2 TD Super Q4",
+    "modelYear": 2017,
+    "country": "IT",
+    "topSpeed": 129,
+    "0to60": 7.5,
+    "handling": 76,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Eurotech Elite"],
+    "isPrize": false,
+	
+    "weight": 1659,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 50.66,
+    "ola": 63.73,
+    "description": "None",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1132989439040307320/Alfa_Romeo_Stelvio_2.2_TD_Super_Q4.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1132989464352919573/Alfa_Romeo_Stelvio_2.2_TD_Super_Q4.png",
+    "creator": "Crossfire",
+
+    "333TopSpeed": 133, 
+    "3330to60": 7.1, 
+    "333Handling": 79,
+
+    "666TopSpeed": 137, 
+    "6660to60": 6.8, 
+    "666Handling": 81,
+
+    "996TopSpeed": 141, 
+    "9960to60": 6.4, 
+    "996Handling": 81,
+
+    "969TopSpeed": 141, 
+    "9690to60": 6.8, 
+    "969Handling": 84,
+
+    "699TopSpeed": 137, 
+    "6990to60": 6.4, 
+    "699Handling": 84
+}
