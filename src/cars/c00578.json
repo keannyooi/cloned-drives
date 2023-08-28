@@ -1,9 +1,6 @@
 {
     "rq": 35,
-    "make": [
-        "Jackson Racing",
-        "Ford"
-    ],
+    "make": ["Jackson Racing", "Ford"],
     "model": "Focus ZX3 Supercharged",
     "modelYear": 2002,
     "country": "US",
@@ -12,10 +9,9 @@
     "handling": 80,
     "driveType": "FWD",
     "tyreType": "Performance",
-    "tags": [
-        "Tuner"
-    ],
+    "tags": ["Tuner"],
     "isPrize": false,
+
     "weight": 1234,
     "gc": "Medium",
     "seatCount": 5,
@@ -26,23 +22,28 @@
     "fuelType": "Petrol",
     "mra": 47.46,
     "ola": 64.29,
-    "description": "The craft of an old mechanic, with boost kicking in as late as Honda's VTEC system.",
+    "description": "To quote David Brandt, \"It ain't much, but it's honest work.\" This perfectly encapsulates the quality of this supercharged Focus by Oscar Jackson. The car may not make as much power compared to the wild setups that modifiers half his age are claiming, but it works like a charm, and that's all that matters.",
     "card": "https://media.discordapp.net/attachments/819199720249360384/851435644084682802/jackson_racing_focus.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003252097845821540/jackson_focus.jpg",
+    "creator": "Keanny",
+
     "333TopSpeed": 122,
     "3330to60": 8,
     "333Handling": 83,
+
     "666TopSpeed": 127,
     "6660to60": 7.6,
     "666Handling": 85,
+
     "996TopSpeed": 131,
     "9960to60": 7.1,
     "996Handling": 85,
+
     "969TopSpeed": 131,
     "9690to60": 7.6,
     "969Handling": 89,
+
     "699TopSpeed": 127,
     "6990to60": 7.1,
-    "699Handling": 89,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003252097845821540/jackson_focus.jpg",
-    "creator": "Keanny"
+    "699Handling": 89
 }

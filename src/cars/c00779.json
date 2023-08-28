@@ -9,12 +9,9 @@
     "handling": 73,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Eco-Friendly",
-        "Concept",
-        "Unique","Visionary Road"
-    ],
+    "tags": ["Eco-Friendly", "Concept", "Unique", "Visionary Road"],
     "isPrize": false,
+
     "weight": 1460,
     "gc": "Low",
     "seatCount": 4,
@@ -25,23 +22,28 @@
     "fuelType": "Alternative",
     "mra": 41.85,
     "ola": 69.47,
-    "description": "Pure blasphemy - wait no, hydrogen fun for the average wankel fan.",
+    "description": "The RX-8 became the 5th vehicle to feature Mazda's experimental rotary hydrogen technology. The prototype could run on either petrol (producing 206hp) or hydrogen (producing 107hp and lasting for 100km). Cloned Drives' version runs on hydrogen whereas Top Drives' version runs on petrol, which explains the huge discrepancy between the 2 versions.",
     "card": "https://media.discordapp.net/attachments/819199720249360384/837193349273747466/ruined_rx-8.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003261204061487134/rx-8_hydrogen.jpg",
+    "creator": "Keanny",
+
     "333TopSpeed": 108,
     "3330to60": 9,
     "333Handling": 75,
+    
     "666TopSpeed": 113,
     "6660to60": 8.6,
     "666Handling": 78,
+
     "996TopSpeed": 118,
     "9960to60": 8.1,
     "996Handling": 78,
+
     "969TopSpeed": 118,
     "9690to60": 8.6,
     "969Handling": 81,
+
     "699TopSpeed": 113,
     "6990to60": 8.1,
-    "699Handling": 81,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003261204061487134/rx-8_hydrogen.jpg",
-    "creator": "Keanny"
+    "699Handling": 81
 }

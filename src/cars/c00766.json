@@ -9,11 +9,9 @@
     "handling": 80,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Concept",
-        "Unique","Oceanic View"
-    ],
+    "tags": ["Concept", "Unique", "Oceanic View"],
     "isPrize": false,
+
     "weight": 1200,
     "gc": "Low",
     "seatCount": 2,
@@ -24,23 +22,28 @@
     "fuelType": "Hybrid",
     "mra": 57.14,
     "ola": 69.41,
-    "description": "Not to be confused with the Danganronpa character of the same name.",
+    "description": "Not to be confused with the Danganronpa character and a certain Japanese goblin of the same name, this concept indirectly previewed what was to come for the NC MX-5. It has a heavy emphasis on reducing weight, which is why you can see plastic body panels, aluminium brake discs and inner body panels, an engine frame made of carbon fiber as well as magnesium alloy wheels. These weight savings make for a relatively light vehicle despite being a hybrid car.",
     "card": "https://media.discordapp.net/attachments/819199720249360384/851318036678049813/mazda_ibuki.png",
+    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1006879016097161286/ibuki.jpg",
+    "creator": "Keanny",
+
     "333TopSpeed": 139,
     "3330to60": 6.5,
     "333Handling": 83,
+
     "666TopSpeed": 143,
     "6660to60": 6.1,
     "666Handling": 85,
+
     "996TopSpeed": 147,
     "9960to60": 5.8,
     "996Handling": 85,
+
     "969TopSpeed": 147,
     "9690to60": 6.1,
     "969Handling": 89,
+
     "699TopSpeed": 143,
     "6990to60": 5.8,
-    "699Handling": 89,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1006879016097161286/ibuki.jpg",
-    "creator": "Keanny"
+    "699Handling": 89
 }
