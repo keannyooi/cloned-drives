@@ -1,0 +1,50 @@
+{
+    "rq": 29,
+    "make": "Audi",
+    "model": "A3 Sportback 1.4 TFSI",
+    "modelYear": 2008,
+    "country": "DE",
+    "topSpeed": 125,
+    "0to60": 9.3,
+    "handling": 75,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite"],
+    "isPrize": false,
+
+
+    "weight": 1298,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 59.61,
+    "ola": 73.11,
+    "description": "Very good engine yes yes.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1134099787369689129/E.AudiA314TFSI.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1134102348239732866/A314T.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 129,
+    "3330to60": 8.8,
+    "333Handling": 77,
+
+    "666TopSpeed": 133,
+    "6660to60": 8.4, 
+    "666Handling": 80,
+
+    "996TopSpeed": 137,
+    "9960to60": 7.9,
+    "996Handling": 80,
+
+    "969TopSpeed": 137,
+    "9690to60": 8.4,
+    "969Handling": 83,
+
+    "699TopSpeed": 133,
+    "6990to60": 7.9,
+    "699Handling": 83
+}

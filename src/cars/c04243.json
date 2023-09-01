@@ -1,0 +1,50 @@
+{
+    "rq": 26,
+    "make": "Audi",
+    "model": "A2 1.4 MPI",
+    "modelYear": 2000,
+    "country": "DE",
+    "topSpeed": 108,
+    "0to60": 11.8,
+    "handling": 70,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Innovative", "Eurotech Elite"],
+    "isPrize": false,
+
+
+    "weight": 899,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 37.46,
+    "ola": 61.01,
+    "description": "With its quirky looks and space france aluminium bodyshell, A2 was the first premium supermini.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1115019464711340122/E.AudiA214MPI.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1115022155378339870/Aluminum.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 113,
+    "3330to60": 11.2,
+    "333Handling": 72,
+
+    "666TopSpeed": 118,
+    "6660to60": 10.6, 
+    "666Handling": 75,
+
+    "996TopSpeed": 122,
+    "9960to60": 10.0,
+    "996Handling": 75,
+
+    "969TopSpeed": 122,
+    "9690to60": 10.6,
+    "969Handling": 78,
+
+    "699TopSpeed": 118,
+    "6990to60": 10.0,
+    "699Handling": 78
+}

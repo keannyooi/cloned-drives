@@ -1,0 +1,50 @@
+{
+    "rq": 37,
+    "make": "Audi",
+    "model": "A3 Sportback 1.9 TDI PD quattro",
+    "modelYear": 2000,
+    "country": "DE",
+    "topSpeed": 126,
+    "0to60": 8.8,
+    "handling": 73,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite"],
+    "isPrize": false,
+
+
+    "weight": 1320,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatch",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 53.98,
+    "ola": 70.45,
+    "description": "TDI Pumpe Duse quattro",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1117562345728770158/C.AudiA319TDIqAmb8L.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1117567093005623316/a3SBQ.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 130,
+    "3330to60": 8.4,
+    "333Handling": 75,
+
+    "666TopSpeed": 134,
+    "6660to60": 7.9, 
+    "666Handling": 78,
+
+    "996TopSpeed": 138,
+    "9960to60": 7.5,
+    "996Handling": 78,
+
+    "969TopSpeed": 138,
+    "9690to60": 7.9,
+    "969Handling": 81,
+
+    "699TopSpeed": 134,
+    "6990to60": 7.5,
+    "699Handling": 81
+}

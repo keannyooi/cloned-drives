@@ -1,0 +1,50 @@
+{
+    "rq": 26,
+    "make": "Skoda",
+    "model": "Citigo 1.0 MPI \"Monte Carlo\"",
+    "modelYear": 2017,
+    "country": "CZ",
+    "topSpeed": 107,
+    "0to60": 13.3,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite"],
+    "isPrize": false,
+
+
+    "weight": 935,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 44.33,
+    "ola": 66.16,
+    "description": "Not exactly sure what it's got to do with Monte Carlo.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1126949083123294380/E.SkodaCitigo10MPImc.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1126951342292865104/citigomc.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 112,
+    "3330to60": 12.6,
+    "333Handling": 75,
+
+    "666TopSpeed": 117,
+    "6660to60": 12.0, 
+    "666Handling": 78,
+
+    "996TopSpeed": 122,
+    "9960to60": 11.3,
+    "996Handling": 78,
+
+    "969TopSpeed": 122,
+    "9690to60": 12.0,
+    "969Handling": 81,
+
+    "699TopSpeed": 117,
+    "6990to60": 11.3,
+    "699Handling": 81
+}

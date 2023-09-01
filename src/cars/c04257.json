@@ -1,0 +1,50 @@
+{
+    "rq": 48,
+    "make": "Audi",
+    "model": "Q4 45 e-tron quattro S line",
+    "modelYear": 2021,
+    "country": "DE",
+    "topSpeed": 112,
+    "0to60": 6.7,
+    "handling": 74,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly", "Eurotech Elite"],
+    "isPrize": false,
+
+
+    "weight": 2263,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 65.68,
+    "ola": 74.62,
+    "description": "45 is slightly more powerful version with added electric motor on the front axle.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1117561600111542293/C.AudiQ445etronSl.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1117563949320245338/q445.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 117,
+    "3330to60": 6.4,
+    "333Handling": 76,
+
+    "666TopSpeed": 121,
+    "6660to60": 6.0, 
+    "666Handling": 79,
+
+    "996TopSpeed": 126,
+    "9960to60": 5.7,
+    "996Handling": 79,
+
+    "969TopSpeed": 126,
+    "9690to60": 6.0,
+    "969Handling": 82,
+
+    "699TopSpeed": 121,
+    "6990to60": 5.7,
+    "699Handling": 82
+}

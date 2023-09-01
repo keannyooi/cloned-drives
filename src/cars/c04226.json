@@ -1,0 +1,49 @@
+{
+    "rq": 82,
+    "make": "BMW",
+    "model": "M760Li xDrive",
+    "modelYear": 2016,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 3.6,
+    "handling": 85,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Super Sedan"],
+    "isPrize": false,
+	
+    "weight": 2278,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 81.82,
+    "ola": 88.89,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1137397053694164992/unknown.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1137397036384264285/M760Li.png",
+
+"333TopSpeed": 158,
+"3330to60": 3.4,
+"333Handling": 88,
+
+"666TopSpeed": 162,
+"6660to60": 3.2,
+"666Handling": 91,
+
+"699TopSpeed": 162,
+"6990to60": 3.1,
+"699Handling": 94,
+
+"969TopSpeed": 165,
+"9690to60": 3.2,
+"969Handling": 94,
+
+"996TopSpeed": 165,
+"9960to60": 3.1,
+"996Handling": 91,
+    "creator": "Connor"
+}

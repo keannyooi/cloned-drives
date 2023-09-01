@@ -1,0 +1,50 @@
+{
+    "rq": 32,
+    "make": "Audi",
+    "model": "A2 1.6 FSI",
+    "modelYear": 2002,
+    "country": "DE",
+    "topSpeed": 125,
+    "0to60": 9.9,
+    "handling": 71,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Innovative", "Eurotech Elite"],
+    "isPrize": false,
+
+
+    "weight": 995,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 51.03,
+    "ola": 66.66,
+    "description": "Fuel-stratisfied Injection.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1115019526959013958/D.AudiA216FSI.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1115022191755538462/Aluminum16.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 129,
+    "3330to60": 9.4,
+    "333Handling": 73,
+
+    "666TopSpeed": 133,
+    "6660to60": 8.9, 
+    "666Handling": 76,
+
+    "996TopSpeed": 137,
+    "9960to60": 8.4,
+    "996Handling": 76,
+
+    "969TopSpeed": 137,
+    "9690to60": 8.9,
+    "969Handling": 79,
+
+    "699TopSpeed": 133,
+    "6990to60": 8.4,
+    "699Handling": 79
+}

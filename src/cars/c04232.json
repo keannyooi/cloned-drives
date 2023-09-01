@@ -1,0 +1,50 @@
+{
+    "rq": 45,
+    "make": ["Treser", "Audi"],
+    "model": "Audi quattro Roadster Treser spezialmotor",
+    "modelYear": 1985,
+    "country": "DE",
+    "topSpeed": 144,
+    "0to60": 6.4,
+    "handling": 71,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Innovative", "Unique","Eurotech Elite","Tuner"],
+    "isPrize": true,
+
+
+    "weight": 1570,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 60.38,
+    "ola": 62.50,
+    "description": "For a few thousand more deustch marks, Treser would happilly upgrade your 10v engine to some 250 ponies.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1112800142559551611/C.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1112801529385197629/quattrotresers.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 148,
+    "3330to60": 6.1,
+    "333Handling": 73,
+
+    "666TopSpeed": 151,
+    "6660to60": 5.8, 
+    "666Handling": 76,
+
+    "996TopSpeed": 155,
+    "9960to60": 5.4,
+    "996Handling": 76,
+
+    "969TopSpeed": 148,
+    "9690to60": 5.8,
+    "969Handling": 79,
+
+    "699TopSpeed": 151,
+    "6990to60": 5.4,
+    "699Handling": 79
+}

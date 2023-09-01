@@ -1,0 +1,50 @@
+{
+    "rq": 35,
+    "make": "Audi",
+    "model": "A3 Cabrio 2.0 TFSI S line",
+    "modelYear": 2009,
+    "country": "DE",
+    "topSpeed": 146,
+    "0to60": 7.1,
+    "handling": 79,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite"],
+    "isPrize": false,
+
+
+    "weight": 1560,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 62.83,
+    "ola": 78.87,
+    "description": "Audi's answer to the 2000s sporty compact cabrio craze that was raging in Europe.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1134101064480735293/D.AudiA3Cab20TSl8P.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1134103289328324628/A320Cab.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 150,
+    "3330to60": 6.7,
+    "333Handling": 82,
+
+    "666TopSpeed": 153,
+    "6660to60": 6.4, 
+    "666Handling": 84,
+
+    "996TopSpeed": 157,
+    "9960to60": 6.0,
+    "996Handling": 84,
+
+    "969TopSpeed": 157,
+    "9690to60": 6.4,
+    "969Handling": 88,
+
+    "699TopSpeed": 153,
+    "6990to60": 6.0,
+    "699Handling": 88
+}

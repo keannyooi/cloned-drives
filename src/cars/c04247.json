@@ -1,0 +1,50 @@
+{
+    "rq": 33,
+    "make": "Audi",
+    "model": "A2 Concept",
+    "modelYear": 2011,
+    "country": "DE",
+    "topSpeed": 93,
+    "0to60": 9.0,
+    "handling": 74,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly", "Concept", "Eurotech Elite"],
+    "isPrize": true,
+
+
+    "weight": 1150,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 20.11,
+    "ola": 62.22,
+    "description": "Resembling the original A2, this one is fully electric for a change.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1115019817989193790/D.AudiA2Concept.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1115022684397522995/Aluminumconc.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 99,
+    "3330to60": 8.6,
+    "333Handling": 76,
+
+    "666TopSpeed": 104,
+    "6660to60": 8.1, 
+    "666Handling": 79,
+
+    "996TopSpeed": 110,
+    "9960to60": 7.7,
+    "996Handling": 79,
+
+    "969TopSpeed": 110,
+    "9690to60": 8.1,
+    "969Handling": 82,
+
+    "699TopSpeed": 104,
+    "6990to60": 7.7,
+    "699Handling": 82
+}

@@ -1,0 +1,50 @@
+{
+    "rq": 46,
+    "make": "Audi",
+    "model": "quattro 20v",
+    "modelYear": 1989,
+    "country": "DE",
+    "topSpeed": 145,
+    "0to60": 6.5,
+    "handling": 73,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Innovative", "Track Day", "Eurotech Elite"],
+    "isPrize": false,
+
+
+    "weight": 1380,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 62.50,
+    "ola": 61.53,
+    "description": "By the end of the decade Ur-quattro got a facelift and a 20 valve motor.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1112799715977859263/C.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1112800927783583784/quattro20v.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 149,
+    "3330to60": 6.2,
+    "333Handling": 75,
+
+    "666TopSpeed": 152,
+    "6660to60": 5.9, 
+    "666Handling": 78,
+
+    "996TopSpeed": 156,
+    "9960to60": 5.5,
+    "996Handling": 78,
+
+    "969TopSpeed": 156,
+    "9690to60": 5.9,
+    "969Handling": 81,
+
+    "699TopSpeed": 152,
+    "6990to60": 5.5,
+    "699Handling": 81
+}

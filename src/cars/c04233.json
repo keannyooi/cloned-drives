@@ -1,0 +1,50 @@
+{
+    "rq": 64,
+    "make": "Audi",
+    "model": "Sport quattro",
+    "modelYear": 1983,
+    "country": "DE",
+    "topSpeed": 156,
+    "0to60": 5.0,
+    "handling": 77,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Innovative", "Track Day", "Eurotech Elite","Style Icon"],
+    "isPrize": false,
+
+
+    "weight": 1448,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 72.00,
+    "ola": 64.93,
+    "description": "Sport quattro was the ultmate Ur-quattro made to satisfy Group B homologation rules. Compared to regular Ur-quattro it had a 320 mm shorter wheelbase and a 300 hp inline 5 with a KKK turbo producing 3 bar of boost.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1112799721296236594/B.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1112800996977025044/quattrosport.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 159,
+    "3330to60": 4.8,
+    "333Handling": 80,
+
+    "666TopSpeed": 163,
+    "6660to60": 4.5, 
+    "666Handling": 82,
+
+    "996TopSpeed": 166,
+    "9960to60": 4.3,
+    "996Handling": 82,
+
+    "969TopSpeed": 166,
+    "9690to60": 4.5,
+    "969Handling": 85,
+
+    "699TopSpeed": 163,
+    "6990to60": 4.3,
+    "699Handling": 85
+}

@@ -1,0 +1,50 @@
+{
+    "rq": 75,
+    "make": "Audi",
+    "model": "Coupe quattro Group A",
+    "modelYear": 1985,
+    "country": "DE",
+    "topSpeed": 129,
+    "0to60": 5.6,
+    "handling": 77,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["Innovative", "Motorsport", "Eurotech Elite"],
+    "isPrize": true,
+
+
+    "weight": 1060,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 55.45,
+    "ola": 60.71,
+    "description": ".",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1112799849897799806/A.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1112801051012251718/quattrogra.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 133,
+    "3330to60": 5.3,
+    "333Handling": 80,
+
+    "666TopSpeed": 137,
+    "6660to60": 5.0, 
+    "666Handling": 82,
+
+    "996TopSpeed": 141,
+    "9960to60": 4.8,
+    "996Handling": 82,
+
+    "969TopSpeed": 141,
+    "9690to60": 5.0,
+    "969Handling": 85,
+
+    "699TopSpeed": 137,
+    "6990to60": 4.8,
+    "699Handling": 85
+}

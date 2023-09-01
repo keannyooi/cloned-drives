@@ -1,0 +1,50 @@
+{
+    "rq": 23,
+    "make": "Audi",
+    "model": "A3 1.9 TDI Ambition",
+    "modelYear": 2003,
+    "country": "DE",
+    "topSpeed": 119,
+    "0to60": 10.8,
+    "handling": 74,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite"],
+    "isPrize": false,
+
+
+    "weight": 1313,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 54.27,
+    "ola": 66.66,
+    "description": "TDIIIIII",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1134100355727237130/E.AudiA319TDI8P.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1134102980841459742/A319T.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 123,
+    "3330to60": 10.3,
+    "333Handling": 76,
+
+    "666TopSpeed": 128,
+    "6660to60": 9.7, 
+    "666Handling": 79,
+
+    "996TopSpeed": 132,
+    "9960to60": 9.2,
+    "996Handling": 79,
+
+    "969TopSpeed": 132,
+    "9690to60": 9.7,
+    "969Handling": 82,
+
+    "699TopSpeed": 128,
+    "6990to60": 9.2,
+    "699Handling": 82
+}

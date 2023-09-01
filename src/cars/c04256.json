@@ -1,0 +1,50 @@
+{
+    "rq": 36,
+    "make": "Audi",
+    "model": "Q4 Sportback 40 e-tron advanced",
+    "modelYear": 2021,
+    "country": "DE",
+    "topSpeed": 100,
+    "0to60": 8.2,
+    "handling": 76,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Eco-Friendly", "Eurotech Elite"],
+    "isPrize": false,
+
+
+    "weight": 2138,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Electric",
+    "mra": 49.10,
+    "ola": 78.04,
+    "description": "Audi version of the ID.5 crossover.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1117561711050887239/D.AudiQ4SB40etronadv.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1117564070351089767/q440sb.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 105,
+    "3330to60": 7.8,
+    "333Handling": 79,
+
+    "666TopSpeed": 110,
+    "6660to60": 7.4, 
+    "666Handling": 81,
+
+    "996TopSpeed": 116,
+    "9960to60": 7.0,
+    "996Handling": 81,
+
+    "969TopSpeed": 116,
+    "9690to60": 7.4,
+    "969Handling": 84,
+
+    "699TopSpeed": 110,
+    "6990to60": 7.0,
+    "699Handling": 84
+}

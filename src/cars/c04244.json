@@ -1,0 +1,50 @@
+{
+    "rq": 24,
+    "make": "Audi",
+    "model": "A2 1.4 TDI",
+    "modelYear": 2000,
+    "country": "DE",
+    "topSpeed": 107,
+    "0to60": 12.3,
+    "handling": 70,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Innovative", "Eurotech Elite"],
+    "isPrize": false,
+
+
+    "weight": 1095,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 34.94,
+    "ola": 65.04,
+    "description": "If you weren't that interested in hypermiling, sligtly bigger and more powerful TDI was there.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1115019644194005003/E.AudiA214TDI.png",
+    "racehud": "https://media.discordapp.net/attachments/1077292374608326656/1115019644194005003/E.AudiA214TDI.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 112,
+    "3330to60": 11.7,
+    "333Handling": 72,
+
+    "666TopSpeed": 117,
+    "6660to60": 11.1, 
+    "666Handling": 75,
+
+    "996TopSpeed": 122,
+    "9960to60": 10.5,
+    "996Handling": 75,
+
+    "969TopSpeed": 122,
+    "9690to60": 11.1,
+    "969Handling": 78,
+
+    "699TopSpeed": 117,
+    "6990to60": 10.5,
+    "699Handling": 78
+}

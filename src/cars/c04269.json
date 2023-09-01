@@ -1,0 +1,50 @@
+{
+    "rq": 43,
+    "make": "Audi",
+    "model": "quattro",
+    "modelYear": 1980,
+    "country": "DE",
+    "topSpeed": 137,
+    "0to60": 6.7,
+    "handling": 72,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Innovative", "Eurotech Elite"],
+    "isPrize": false,
+
+
+    "weight": 1378,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 53.17,
+    "ola": 59.70,
+    "description": "Ur-quattro was the start of something special, something that lasts even today.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1112798857479331930/C.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1112800877695209662/quattro.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 141,
+    "3330to60": 6.4,
+    "333Handling": 72,
+
+    "666TopSpeed": 145,
+    "6660to60": 6.0, 
+    "666Handling": 77,
+
+    "996TopSpeed": 148,
+    "9960to60": 5.7,
+    "996Handling": 77,
+
+    "969TopSpeed": 148,
+    "9690to60": 6.0,
+    "969Handling": 80,
+
+    "699TopSpeed": 145,
+    "6990to60": 5.7,
+    "699Handling": 80
+}

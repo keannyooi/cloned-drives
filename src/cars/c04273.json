@@ -1,0 +1,50 @@
+{
+    "rq": 43,
+    "make": "Audi",
+    "model": "A3 1.8T 5V Attraction",
+    "modelYear": 1996,
+    "country": "DE",
+    "topSpeed": 134,
+    "0to60": 7.8,
+    "handling": 76,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite"],
+    "isPrize": false,
+
+
+    "weight": 1242,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 57.77,
+    "ola": 79.48,
+    "description": "1.8 Turbo masterrace.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1117561925404999720/C.AudiA318TAttL.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1117566390191280258/a318t.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 138,
+    "3330to60": 7.4,
+    "333Handling": 79,
+
+    "666TopSpeed": 142,
+    "6660to60": 7.0, 
+    "666Handling": 81,
+
+    "996TopSpeed": 146,
+    "9960to60": 6.6,
+    "996Handling": 81,
+
+    "969TopSpeed": 146,
+    "9690to60": 7.0,
+    "969Handling": 84,
+
+    "699TopSpeed": 142,
+    "6990to60": 6.6,
+    "699Handling": 84
+}
