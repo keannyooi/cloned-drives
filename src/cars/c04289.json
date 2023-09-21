@@ -1,0 +1,49 @@
+{
+    "rq": 55,
+    "make": "Renault",
+    "model": "Twingo GT F4RT",
+    "modelYear": 2018,
+    "country": "FR",
+    "topSpeed": 164,
+    "0to60": 5.3,
+    "handling": 78,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Hot Hatch","Eurotech Elite"],
+    "isPrize": true,
+	
+    "weight": 1000,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 117.78,
+    "ola": 101.89,
+    "description": "haha fart.", 
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1129712719289925652/Renault_Twingo_GT_F4RT_Corners_Fixed.png",
+	"racehud": "https://media.discordapp.net/attachments/1077293403668234340/1129712817549877341/Renault_Twingo_GT_F4RT_Hud.png",
+    "creator": "Fried",
+
+"333TopSpeed": 167, 
+"3330to60": 5.0, 
+"333Handling": 81,
+
+"666TopSpeed": 170, 
+"6660to60": 4.8, 
+"666Handling": 83,
+
+"699TopSpeed": 170, 
+"6990to60": 4.5, 
+"699Handling": 87,
+
+"969TopSpeed": 174, 
+"9690to60": 4.8, 
+"969Handling": 87,
+
+"996TopSpeed": 174, 
+"9960to60": 4.5, 
+"996Handling": 83
+}

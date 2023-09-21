@@ -4,7 +4,7 @@
     "model": "NSX",
     "modelYear": 2019,
     "country": "JP",
-    "topSpeed": 192,
+    "topSpeed": 191,
     "0to60": 3.2,
     "handling": 92,
     "driveType": "4WD",
@@ -27,23 +27,23 @@
 	"racehud": "https://media.discordapp.net/attachments/1077293403668234340/1106248029733916672/Honda_NSX_2019_Hud.png",
     "creator": "DodgeDemon",
 
-"333TopSpeed": 195,
-"3330to60": 3.0,
+"333TopSpeed": 194,
+"3330to60": 3,
 "333Handling": 95,
 
-"666TopSpeed": 197,
+"666TopSpeed": 196,
 "6660to60": 2.9,
 "666Handling": 98,
 
-"699TopSpeed": 197,
+"699TopSpeed": 196,
 "6990to60": 2.7,
 "699Handling": 102,
 
-"969TopSpeed": 200,
+"969TopSpeed": 199,
 "9690to60": 2.9,
 "969Handling": 102,
 
-"996TopSpeed": 200,
+"996TopSpeed": 199,
 "9960to60": 2.7,
 "996Handling": 98
 }

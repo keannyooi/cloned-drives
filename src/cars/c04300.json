@@ -1,0 +1,52 @@
+{
+    "rq": 38,
+    "make": "Volkswagen",
+    "model": "Golf 2.0 TDI Lifestyle",
+    "modelYear": 2004,
+    "country": "DE",
+    "topSpeed": 127,
+    "0to60": 8.7,
+    "handling": 75,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite"],
+    "isPrize": false,
+
+
+    "weight": 1310,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 52.29,
+    "ola": 71.47,
+    "description": "Volkswagen accepts all lifestyles! Especially the Golf one.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1128073088907608094/Golf20TDILifestyle.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1128074908988084397/Golf20TDILifestyle.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 131,
+    "3330to60": 8.3,
+    "333Handling": 77,
+    
+    "666TopSpeed": 135,
+    "6660to60": 7.8,
+    "666Handling": 80,
+    
+    "699TopSpeed": 135,
+    "6990to60": 7.4,
+    "699Handling": 83,
+    
+    "969TopSpeed": 139,
+    "9690to60": 7.8,
+    "969Handling": 83,
+    
+    "996TopSpeed": 139,
+    "9960to60": 7.4,
+    "996Handling": 80
+}

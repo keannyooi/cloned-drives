@@ -24,15 +24,15 @@ module.exports = {
     cooldown: 10,
     description: "Participates in an event by doing a race.",
     async execute(message, args) {
-        if (message.channel.type !== 1) {
-            const errorMessage = new ErrorMessage({
-                channel: message.channel,
-                title: "Sorry, this command can only be used in DMs.",
-                desc: "This is to avoid people from leaking event solutions and, as a result, making events trivial.",
-                author: message.author
-            });
-            return errorMessage.sendMessage();
-        }
+        //if (message.channel.type !== 1) {
+            //const errorMessage = new ErrorMessage({
+                //channel: message.channel,
+                //title: "Sorry, this command can only be used in DMs.",
+               // desc: "This is to avoid people from leaking event solutions and, as a result, making events trivial.",
+                //author: message.author
+            //});
+           // return errorMessage.sendMessage();
+       // } - Play DM Only
 
         const events = await eventModel.find();
         const { hand, unclaimedRewards, settings } = await profileModel.findOne({ userID: message.author.id });

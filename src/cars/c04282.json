@@ -1,0 +1,49 @@
+{
+    "rq": 100,
+    "make": "Lamborghini",
+    "model": "Huracan Performante (CD 3rd Anniversary Special)",
+    "modelYear": 2017,
+    "country": "IT",
+    "topSpeed": 202,
+    "0to60": 2.7,
+    "handling": 100,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["OG", "Supercar"],
+    "isPrize": true,
+	
+    "weight": 1350,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 95.68,
+    "ola": 103.25,
+    "description": "A throwback to the very first card designed for Cloned Drives to celebrate its 3rd Anniversary!",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1153277542439063673/HuracnRQchange.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1153276876844974140/3rdHuracan.png",
+
+"333TopSpeed": 205,
+"3330to60": 2.6,
+"333Handling": 103,
+
+"666TopSpeed": 207,
+"6660to60": 2.4,
+"666Handling": 107,
+
+"699TopSpeed": 207,
+"6990to60": 2.3,
+"699Handling": 111,
+
+"969TopSpeed": 210,
+"9690to60": 2.4,
+"969Handling": 111,
+
+"996TopSpeed": 210,
+"9960to60": 2.3,
+"996Handling": 107,
+    "creator": "Keanny"
+}

@@ -5,6 +5,8 @@ const { carSave } = require("../consts/consts.js");
 function addCars(garage, cars) {
     for (let { carID, upgrade } of cars) {
         let isInGarage = garage.findIndex(garageCar => garageCar.carID === carID);
+		//console.log("Adding car with ID:", carID, "and upgrade:", upgrade);
+        //console.log("Current garage:", garage);
         if (isInGarage !== -1) {
             garage[isInGarage].upgrades[upgrade] += 1;
         }
@@ -17,6 +19,7 @@ function addCars(garage, cars) {
                 upgrades
             });
         }
+		//console.log("Updated Garage:", garage);
     }
     return garage;
 }

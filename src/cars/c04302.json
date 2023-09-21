@@ -1,0 +1,52 @@
+{
+    "rq": 47,
+    "make": "Volkswagen",
+    "model": "Thunder Bunny",
+    "modelYear": 2007,
+    "country": "DE",
+    "topSpeed": 139,
+    "0to60": 6.6,
+    "handling": 80,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite", "Hot Hatch", "Unique", "Concept"],
+    "isPrize": false,
+
+
+    "weight": 1400,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 69.47,
+    "ola": 79.39,
+    "description": "How the americans would've built the mk5 GTI, equipped with the Inline 5 2.5L Engine.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1128073621856849980/ThunderBunny.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1128075245941686363/ThunderBunny.png",
+    "creator": "Andu",
+ 
+    "333TopSpeed": 143,
+    "3330to60": 6.3,
+    "333Handling": 83,
+    
+    "666TopSpeed": 146,
+    "6660to60": 5.9,
+    "666Handling": 85,
+    
+    "699TopSpeed": 146,
+    "6990to60": 5.6,
+    "699Handling": 89,
+    
+    "969TopSpeed": 150,
+    "9690to60": 5.9,
+    "969Handling": 89,
+    
+    "996TopSpeed": 150,
+    "9960to60": 5.6,
+    "996Handling": 85
+}

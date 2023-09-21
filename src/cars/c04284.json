@@ -1,0 +1,49 @@
+{
+    "rq": 33,
+    "make": "Lamborghini",
+    "model": "Jalpa Spyder",
+    "modelYear": 1981,
+    "country": "IT",
+    "topSpeed": 144,
+    "0to60": 6.6,
+    "handling": 74,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Unique","Concept"],
+    "isPrize": false,
+	
+    "weight": 1590,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 57.09,
+    "ola": 82.6,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1151191563645501570/JalpaSpyder.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1151191620767727747/JalpaSpyder.png",
+
+"333TopSpeed": 148,
+"3330to60": 6.3,
+"333Handling": 76,
+
+"666TopSpeed": 151,
+"6660to60": 5.9,
+"666Handling": 79,
+
+"699TopSpeed": 151,
+"6990to60": 5.6,
+"699Handling": 82,
+
+"969TopSpeed": 155,
+"9690to60": 5.9,
+"969Handling": 82,
+
+"996TopSpeed": 155,
+"9960to60": 5.6,
+"996Handling": 79,
+    "creator": "Bnuuy"
+}

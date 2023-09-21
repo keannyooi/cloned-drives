@@ -1,0 +1,52 @@
+{
+    "rq": 40,
+    "make": "Volkswagen",
+    "model": "Golf 1.4 TSI GT",
+    "modelYear": 2006,
+    "country": "DE",
+    "topSpeed": 135,
+    "0to60": 7.5,
+    "handling": 79,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite", "Hot Hatch"],
+    "isPrize": false,
+
+
+    "weight": 1298,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 63.85,
+    "ola": 77.85,
+    "description": "Just a step down from the mighty GTI, the GT offers real fun. You Just need to remember to maintain the twincharged engine.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1128073367820439654/Golf14TSIGT.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1128075083387248660/Golf14TSIGT.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 139,
+    "3330to60": 7.1,
+    "333Handling": 82,
+    
+    "666TopSpeed": 143,
+    "6660to60": 6.8,
+    "666Handling": 84,
+    
+    "699TopSpeed": 143,
+    "6990to60": 6.4,
+    "699Handling": 88,
+    
+    "969TopSpeed": 147,
+    "9690to60": 6.8,
+    "969Handling": 88,
+    
+    "996TopSpeed": 147,
+    "9960to60": 6.4,
+    "996Handling": 84
+	}

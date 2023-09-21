@@ -1,0 +1,70 @@
+{
+	"packName": "Tesla Bonus Pack",
+	"description": "A pack of 5 Tesla cars.",
+        "repetition": 1,
+	"pack": "https://cdn.discordapp.com/attachments/956106029635088384/956106124183097354/Elite_Pack.png",
+
+	"filter": {
+		"make": "Tesla",
+		"modelYear": {
+			"start": 1000,
+			"end": 3000
+		},
+		"country": "None",
+		"tags": "None",
+        "driveType": "None",
+        "tyreType": "None",
+		"enginePos": "None",
+        "fuelType": "None",
+        "bodyStyle": "None",
+		"seatCount": "None"
+	},
+
+	"packSequence": [
+        {
+            "common": 0,
+            "uncommon": 0,
+            "rare": 0,
+            "superRare": 0,
+            "ultraRare": 90,
+            "epic": 8,
+            "legendary": 2
+        },
+        {
+            "common": 0,
+            "uncommon": 0,
+            "rare": 0,
+            "superRare": 0,
+            "ultraRare": 90,
+            "epic": 8,
+            "legendary": 2
+        },
+        {
+            "common": 0,
+            "uncommon": 0,
+            "rare": 0,
+            "superRare": 0,
+            "ultraRare": 90,
+            "epic": 8,
+            "legendary": 2
+        },
+        {
+            "common": 0,
+            "uncommon": 0,
+            "rare": 0,
+            "superRare": 0,
+            "ultraRare": 90,
+            "epic": 8,
+            "legendary": 2
+        },
+        {
+            "common": 0,
+            "uncommon": 0,
+            "rare": 0,
+            "superRare": 0,
+            "ultraRare": 90,
+            "epic": 8,
+            "legendary": 2
+        }
+    ]
+}

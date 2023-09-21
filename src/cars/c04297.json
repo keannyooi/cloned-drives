@@ -1,0 +1,52 @@
+{
+    "rq": 18,
+    "make": "Volkswagen",
+    "model": "Golf 2.0 SDI S",
+    "modelYear": 2004,
+    "country": "DE",
+    "topSpeed": 101,
+    "0to60": 16.1,
+    "handling": 70,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite"],
+    "isPrize": false,
+
+
+    "weight": 1217,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 25.20,
+    "ola": 59.63,
+    "description": "If you had no money and wanted a Golf that would take 5 years to get to 100mph and would outlive you; then this was the Golf for you!",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1128073284769026188/Golf20SDIS.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1128075024696348694/Golf20SDIS.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 106,
+    "3330to60": 15.3,
+    "333Handling": 72,
+    
+    "666TopSpeed": 111,
+    "6660to60": 14.5,
+    "666Handling": 75,
+    
+    "699TopSpeed": 111,
+    "6990to60": 13.7,
+    "699Handling": 78,
+    
+    "969TopSpeed": 116,
+    "9690to60": 14.5,
+    "969Handling": 78,
+    
+    "996TopSpeed": 116,
+    "9960to60": 13.7,
+    "996Handling": 75
+}

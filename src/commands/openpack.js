@@ -8,6 +8,7 @@ const { moneyEmojiID } = require("../util/consts/consts.js");
 const addCars = require("../util/functions/addCars.js");
 const search = require("../util/functions/search.js");
 const openPack = require("../util/functions/openPack.js");
+const mongoose = require("mongoose");
 const profileModel = require("../models/profileSchema.js");
 
 module.exports = {
@@ -18,57 +19,84 @@ module.exports = {
     category: "Gameplay",
     cooldown: 5,
     description: "Opens a pack.",
-    async execute(message, args) {
-        let query = args.map(i => i.toLowerCase());
-        let packs = packFiles.filter(pack => {
-            let contents = require(`../packs/${pack}`);
-            return contents["price"];
-        });
+	async execute(message, args) {
+try {
+    const query = args.map(i => i.toLowerCase());
+    const packs = packFiles.filter(pack => {
+        const contents = require(`../packs/${pack}`);
+        return contents["price"];
+    });
 
-        await new Promise(resolve => resolve(search(message, query, packs, "pack")))
-            .then(async (response) => {
-                if (!Array.isArray(response)) return;
-                let [result, currentMessage] = response;
-                let { money, garage } = await profileModel.findOne({ userID: message.author.id });
+    const response = await search(message, query, packs, "pack");
+    if (!Array.isArray(response)) return;
+    const [result, currentMessage] = response;
 
-                const moneyEmoji = bot.emojis.cache.get(moneyEmojiID);
-                let currentPack = require(`../packs/${result}`);
-                if (money >= currentPack["price"]) {
-                    let balance = money - currentPack["price"]; 
-                    let addedCars = await openPack({ message, currentPack, currentMessage });
-                    if (!Array.isArray(addedCars)) return;
-                    await profileModel.updateOne({ userID: message.author.id }, {
-                        money: balance,
-                        garage: addCars(garage, addedCars)
-                    });
+    const { money, garage } = await profileModel.findOne({ userID: message.author.id });
+    const moneyEmoji = bot.emojis.cache.get(moneyEmojiID);
+    const currentPack = require(`../packs/${result}`);
 
-                    setTimeout(() => {
-                        const successMessage = new SuccessMessage({
-                            channel: message.channel,
-                            title: `Successfully bought a ${currentPack["packName"]}!`,
-                            author: message.author,
-                            fields: [
-                                { name: "Your Money Balance", value: `${moneyEmoji}${balance.toLocaleString("en")}`, inline: true }
-                            ]
-                        });
-                        return successMessage.sendMessage();
-                    }, 5000);
+    if (money >= currentPack["price"]) {
+        const session = await mongoose.startSession();
+        session.startTransaction();
+
+        // Initialize balance to a default value
+        let balance = money;
+
+        try {
+            balance -= currentPack["price"];
+            const addedCars = await openPack({ message, currentPack, currentMessage });
+            if (!Array.isArray(addedCars)) return;
+
+            // Perform the first database operation: Subtract the purchase price from the user's balance
+            await profileModel.updateOne(
+                { userID: message.author.id },
+                { $inc: { money: -currentPack["price"] } }
+            );
+
+            // Perform the second database operation: Add cars to the user's garage
+            await profileModel.updateOne(
+                { userID: message.author.id },
+                {
+                    money: balance,
+                    garage: addCars(garage, addedCars)
                 }
-                else {
-                    const errorMessage = new ErrorMessage({
-                        channel: message.channel,
-                        title: "Error, it looks like you don't have enough money for this purchase.",
-                        author: message.author,
-                        fields: [
-                            { name: "Required Amount of Money", value: `${moneyEmoji}${currentPack["price"].toLocaleString("en")}`, inline: true },
-                            { name: "Your Money Balance", value: `${moneyEmoji}${money.toLocaleString("en")}`, inline: true }
-                        ]
-                    });
-                    return errorMessage.sendMessage({ currentMessage });
-                }
-            })
-            .catch(error => {
-                throw error;
+            );
+
+            // Commit the transaction if both operations succeed
+            await session.commitTransaction();
+        } catch (error) {
+            // Handle errors and roll back the transaction if necessary
+            await session.abortTransaction();
+            throw error; // Rethrow the error to handle it at a higher level if needed
+        } finally {
+            // End the session
+            session.endSession();
+        }
+
+        setTimeout(() => {
+            const successMessage = new SuccessMessage({
+                channel: message.channel,
+                title: `Successfully bought a ${currentPack["packName"]}!`,
+                author: message.author,
+                fields: [
+                    { name: "Your Money Balance", value: `${moneyEmoji}${balance.toLocaleString("en")}`, inline: true }
+                ]
             });
+            successMessage.sendMessage();
+        }, 5000);
+    } else {
+        const errorMessage = new ErrorMessage({
+            channel: message.channel,
+            title: "Error, it looks like you don't have enough money for this purchase.",
+            author: message.author,
+            fields: [
+                { name: "Required Amount of Money", value: `${moneyEmoji}${currentPack["price"].toLocaleString("en")}`, inline: true },
+                { name: "Your Money Balance", value: `${moneyEmoji}${money.toLocaleString("en")}`, inline: true }
+            ]
+        });
+        errorMessage.sendMessage({ currentMessage });
     }
-};
+} catch (error) {
+    console.error("An error occurred while processing the 'openpack' command:", error);
+    // You can optionally send an error message to the user here.
+}}};

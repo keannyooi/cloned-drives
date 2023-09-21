@@ -1,0 +1,49 @@
+{
+    "rq": 39,
+    "make": "Lamborghini",
+    "model": "Jalpa",
+    "modelYear": 1981,
+    "country": "IT",
+    "topSpeed": 151,
+    "0to60": 6.2,
+    "handling": 76,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite"],
+    "isPrize": false,
+	
+    "weight": 1500,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 63.59,
+    "ola": 77.41,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1151191543152128080/Jalpa.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1151191605131366543/JalpaP350.png",
+
+"333TopSpeed": 154,
+"3330to60": 5.9,
+"333Handling": 79,
+
+"666TopSpeed": 158,
+"6660to60": 5.6,
+"666Handling": 81,
+
+"699TopSpeed": 158,
+"6990to60": 5.3,
+"699Handling": 84,
+
+"969TopSpeed": 161,
+"9690to60": 5.6,
+"969Handling": 84,
+
+"996TopSpeed": 161,
+"9960to60": 5.3,
+"996Handling": 81,
+    "creator": "Bnuuy"
+}

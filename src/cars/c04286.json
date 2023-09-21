@@ -1,0 +1,49 @@
+{
+    "rq": 76,
+    "make": "Lamborghini",
+    "model": "Jarama 400 GTS Rallye",
+    "modelYear": 1974,
+    "country": "IT",
+    "topSpeed": 165,
+    "0to60": 5.2,
+    "handling": 76,
+    "driveType": "RWD",
+    "tyreType": "Off-Road",
+    "tags": ["Eurotech Elite","Unique","Concept","Motorsport"],
+    "isPrize": false,
+	
+    "weight": 1170,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 79.14,
+    "ola": 81.25,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1151195934915563620/Jarama400GTSRallye.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1151196065022877726/JaramaRallye.png",
+
+"333TopSpeed": 168,
+"3330to60": 4.9,
+"333Handling": 79,
+
+"666TopSpeed": 171,
+"6660to60": 4.7,
+"666Handling": 81,
+
+"699TopSpeed": 171,
+"6990to60": 4.4,
+"699Handling": 84,
+
+"969TopSpeed": 174,
+"9690to60": 4.7,
+"969Handling": 84,
+
+"996TopSpeed": 174,
+"9960to60": 4.4,
+"996Handling": 81,
+    "creator": "Bnuuy"
+}

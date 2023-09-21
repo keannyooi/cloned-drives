@@ -1,0 +1,52 @@
+{
+    "rq": 39,
+    "make": "Volkswagen",
+    "model": "Golf 2.0 FSI Speed",
+    "modelYear": 2005,
+    "country": "DE",
+    "topSpeed": 128,
+    "0to60": 8.6,
+    "handling": 75,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite"],
+    "isPrize": false,
+
+
+    "weight": 1279,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 55.13,
+    "ola": 72.09,
+    "description": "Just imagine the most obnoxiously bright and colorful sneaker in Golf form.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1128072904299511918/Golf20FSISpeed.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1128074721645309952/Golf20FSISpeed.png",
+    "creator": "Andu",
+  
+    "333TopSpeed": 132,
+    "3330to60": 8.2,
+    "333Handling": 77,
+    
+    "666TopSpeed": 136,
+    "6660to60": 7.7,
+    "666Handling": 80,
+    
+    "699TopSpeed": 136,
+    "6990to60": 7.3,
+    "699Handling": 83,
+    
+    "969TopSpeed": 140,
+    "9690to60": 7.7,
+    "969Handling": 83,
+    
+    "996TopSpeed": 140,
+    "9960to60": 7.3,
+    "996Handling": 80
+}

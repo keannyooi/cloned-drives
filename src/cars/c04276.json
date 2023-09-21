@@ -1,0 +1,49 @@
+{
+    "rq": 66,
+    "make": "Dodge",
+    "model": "Magnum SRT-8 Concept",
+    "modelYear": 2003,
+    "country": "US",
+    "topSpeed": 170,
+    "0to60": 4.6,
+    "handling": 80,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Concept", "Muscle Car", "The Americas Assault"],
+    "isPrize": false,
+	
+    "weight": 1810,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 74.19,
+    "ola": 78.26,
+    "description": "A new hope for the modern musclecar, and it was headed for production.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1143013736987230209/Dodge_Magnum_SRT8_Concept_2003.png",
+	"racehud": "https://media.discordapp.net/attachments/1077293403668234340/1143014958456639528/Dodge_Magnum_SRT8_Concept_2003_Hud.png",
+    "creator": "DodgeDemon",
+
+"333TopSpeed": 173,
+"3330to60": 4.4,
+"333Handling": 83,
+
+"666TopSpeed": 176,
+"6660to60": 4.1,
+"666Handling": 85,
+
+"699TopSpeed": 176,
+"6990to60": 3.9,
+"699Handling": 89,
+
+"969TopSpeed": 179,
+"9690to60": 4.1,
+"969Handling": 89,
+
+"996TopSpeed": 179,
+"9960to60": 3.9,
+"996Handling": 85
+}

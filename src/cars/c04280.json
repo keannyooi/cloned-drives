@@ -1,0 +1,49 @@
+{
+    "rq": 90,
+    "make": "Gumpert",
+    "model": "Apollo Basic",
+    "modelYear": 2007,
+    "country": "DE",
+    "topSpeed": 224,
+    "0to60": 3.0,
+    "handling": 92,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Unique","Ultra Expensive","Supercar"],
+    "isPrize": false,
+	
+    "weight": 1200,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 122.59,
+    "ola": 98.88,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1130946904478462092/ApolloBasicGumpert.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1130947206858407957/ApolloBasicGumpert.png",
+
+"333TopSpeed": 226,
+"3330to60": 2.8,
+"333Handling": 95,
+
+"666TopSpeed": 229,
+"6660to60": 2.7,
+"666Handling": 98,
+
+"699TopSpeed": 229,
+"6990to60": 2.5,
+"699Handling": 102,
+
+"969TopSpeed": 231,
+"9690to60": 2.7,
+"969Handling": 102,
+
+"996TopSpeed": 231,
+"9960to60": 2.5,
+"996Handling": 98,
+    "creator": "Bnuuy"
+}

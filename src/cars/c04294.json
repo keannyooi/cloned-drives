@@ -1,0 +1,52 @@
+{
+    "rq": 31,
+    "make": "Volkswagen",
+    "model": "Golf 1.6 FSI Comfortline",
+    "modelYear": 2003,
+    "country": "DE",
+    "topSpeed": 120,
+    "0to60": 10.6,
+    "handling": 74,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite"],
+    "isPrize": false,
+
+
+    "weight": 1220,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 52.62,
+    "ola": 62.56,
+    "description": "Volkswagen really loved that Fuel Stratified Injection huh.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1128072848154579064/Golf16FSIComfortline.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1128074667396186174/Golf16Comfortline.png",
+    "creator": "Andu",
+    
+    "333TopSpeed": 124,
+    "3330to60": 10.1,
+    "333Handling": 76,
+    
+    "666TopSpeed": 129,
+    "6660to60": 9.5,
+    "666Handling": 79,
+    
+    "699TopSpeed": 129,
+    "6990to60": 9,
+    "699Handling": 82,
+    
+    "969TopSpeed": 133,
+    "9690to60": 9.5,
+    "969Handling": 82,
+    
+    "996TopSpeed": 133,
+    "9960to60": 9,
+    "996Handling": 79
+}

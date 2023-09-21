@@ -1,0 +1,49 @@
+{
+    "rq": 60,
+    "make": "Dodge",
+    "model": "Magnum SRT8",
+    "modelYear": 2006,
+    "country": "US",
+    "topSpeed": 169,
+    "0to60": 5.1,
+    "handling": 79,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Muscle Car", "The Americas Assault"],
+    "isPrize": false,
+	
+    "weight": 1930,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 72.86,
+    "ola": 82.35,
+    "description": "Not just a muscle wagon. THE muscle wagon.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1143013423488188486/Dodge_Magnum_SRT8_2006.png",
+	"racehud": "https://media.discordapp.net/attachments/1077293403668234340/1143014962936164432/Dodge_Magnum_SRT8_2006_Hud.png",
+    "creator": "DodgeDemon",
+
+"333TopSpeed": 172,
+"3330to60": 4.8,
+"333Handling": 82,
+
+"666TopSpeed": 175,
+"6660to60": 4.6,
+"666Handling": 84,
+
+"699TopSpeed": 175,
+"6990to60": 4.3,
+"699Handling": 88,
+
+"969TopSpeed": 178,
+"9690to60": 4.6,
+"969Handling": 88,
+
+"996TopSpeed": 178,
+"9960to60": 4.3,
+"996Handling": 84
+}
