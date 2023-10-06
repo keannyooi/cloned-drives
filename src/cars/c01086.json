@@ -1,5 +1,5 @@
 {
-    "rq": 75,
+    "rq": 76,
     "make": "Porsche",
     "model": "911 Turbo",
     "modelYear": 2000,
@@ -9,11 +9,10 @@
     "handling": 86,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Supercar"
-    ],
+    "tags": ["Supercar"],
     "isPrize": false,
-    "weight": 1585,
+	
+    "weight": 1540,
     "gc": "Low",
     "seatCount": 4,
     "bodyStyle": "Coupe",
@@ -22,24 +21,29 @@
     "enginePos": "Rear",
     "fuelType": "Petrol",
     "mra": 79.73,
-    "ola": 85.47,
-    "description": "A savagely powerful, hugely capable but ultimately rather refined sports/GT weapon.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/824611536135389244/911turbo2000.png",
-    "333TopSpeed": 193,
-    "3330to60": 3.8,
-    "333Handling": 89,
-    "666TopSpeed": 195,
-    "6660to60": 3.6,
-    "666Handling": 92,
-    "996TopSpeed": 198,
-    "9960to60": 3.4,
-    "996Handling": 92,
-    "969TopSpeed": 198,
-    "9690to60": 3.6,
-    "969Handling": 95,
-    "699TopSpeed": 195,
-    "6990to60": 3.4,
-    "699Handling": 95,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017523621041803284/Porsche_911_Turbo_S_2000.png",
-    "creator": "Havvy"
+    "ola": 76.8,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1152634037639315498/996911Turbo.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1152634263200595998/996911Turbo.png",
+
+"333TopSpeed": 193,
+"3330to60": 3.8,
+"333Handling": 89,
+
+"666TopSpeed": 195,
+"6660to60": 3.6,
+"666Handling": 92,
+
+"699TopSpeed": 195,
+"6990to60": 3.4,
+"699Handling": 95,
+
+"969TopSpeed": 198,
+"9690to60": 3.6,
+"969Handling": 95,
+
+"996TopSpeed": 198,
+"9960to60": 3.4,
+"996Handling": 92,
+    "creator": "Bnuuy"
 }

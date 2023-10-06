@@ -1,0 +1,50 @@
+{
+    "rq": 35,
+    "make": "Toyota",
+    "model": "GR Yaris RS",
+    "modelYear": 2020,
+    "country": "JP",
+    "topSpeed": 112,
+    "0to60": 9.1,
+    "handling": 82,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["The Amplification of Asia"],
+    "isPrize": false,
+
+
+    "weight": 1130,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 61.33,
+    "ola": 67.39,
+    "description": "Yeah.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1118531018555654144/D.ToyotaGRYarisRS.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1118531421619884132/gryaris.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 117,
+    "3330to60": 8.6,
+    "333Handling": 85,
+
+    "666TopSpeed": 121,
+    "6660to60": 8.2, 
+    "666Handling": 87,
+
+    "996TopSpeed": 126,
+    "9960to60": 7.7,
+    "996Handling": 87,
+
+    "969TopSpeed": 126,
+    "9690to60": 8.2,
+    "969Handling": 91,
+
+    "699TopSpeed": 121,
+    "6990to60": 7.7,
+    "699Handling": 91
+}

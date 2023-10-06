@@ -1,5 +1,5 @@
 {
-    "rq": 73,
+    "rq": 74,
     "make": "Porsche",
     "model": "911 Turbo Cabriolet",
     "modelYear": 2003,
@@ -9,10 +9,9 @@
     "handling": 85,
     "driveType": "4WD",
     "tyreType": "Performance",
-    "tags": [
-        "Supercar"
-    ],
+    "tags": ["Supercar"],
     "isPrize": false,
+	
     "weight": 1660,
     "gc": "Low",
     "seatCount": 4,
@@ -22,24 +21,29 @@
     "enginePos": "Rear",
     "fuelType": "Petrol",
     "mra": 75.93,
-    "ola": 82.93,
+    "ola": 79.07,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/828411462258524211/unknown.png",
-    "333TopSpeed": 193,
-    "3330to60": 3.9,
-    "333Handling": 88,
-    "666TopSpeed": 195,
-    "6660to60": 3.7,
-    "666Handling": 91,
-    "996TopSpeed": 198,
-    "9960to60": 3.5,
-    "996Handling": 91,
-    "969TopSpeed": 198,
-    "9690to60": 3.7,
-    "969Handling": 94,
-    "699TopSpeed": 195,
-    "6990to60": 3.5,
-    "699Handling": 94,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1050806775986798642/Porsche_911_Turbo_Cabriolet_2003.png",
-    "creator": "Havvy"
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1152634057654542336/996911TurboCab.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1152634278413348975/996911TurboCab.png",
+
+"333TopSpeed": 193,
+"3330to60": 3.9,
+"333Handling": 88,
+
+"666TopSpeed": 195,
+"6660to60": 3.7,
+"666Handling": 91,
+
+"699TopSpeed": 195,
+"6990to60": 3.5,
+"699Handling": 94,
+
+"969TopSpeed": 198,
+"9690to60": 3.7,
+"969Handling": 94,
+
+"996TopSpeed": 198,
+"9960to60": 3.5,
+"996Handling": 91,
+    "creator": "Bnuuy"
 }

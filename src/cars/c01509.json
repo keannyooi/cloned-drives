@@ -9,37 +9,41 @@
     "handling": 94,
     "driveType": "RWD",
     "tyreType": "Slick",
-    "tags": [
-        "Motorsport", "Year of the Rabbit"
-    ],
+    "tags": ["Motorsport"],
     "isPrize": false,
+	
     "weight": 1207,
     "gc": "Low",
     "seatCount": 1,
     "bodyStyle": "Coupe",
-    "tcs": false,
+    "tcs": true,
     "abs": true,
     "enginePos": "Rear",
     "fuelType": "Petrol",
     "mra": 87.47,
     "ola": 79.07,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/828405706616864768/unknown.png",
-    "333TopSpeed": 179,
-    "3330to60": 4.1,
-    "333Handling": 97,
-    "666TopSpeed": 182,
-    "6660to60": 3.9,
-    "666Handling": 100,
-    "996TopSpeed": 185,
-    "9960to60": 3.7,
-    "996Handling": 100,
-    "969TopSpeed": 185,
-    "9690to60": 3.9,
-    "969Handling": 104,
-    "699TopSpeed": 182,
-    "6990to60": 3.7,
-    "699Handling": 104,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1018239742103531640/Porsche_911_GT3_Cup_1999.png",
-    "creator": "Havvy"
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1152626148963012698/996911GT3Cup.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1152626260619575357/996911GT3Cup.png",
+
+"333TopSpeed": 179,
+"3330to60": 4.1,
+"333Handling": 97,
+
+"666TopSpeed": 182,
+"6660to60": 3.9,
+"666Handling": 100,
+
+"699TopSpeed": 182,
+"6990to60": 3.7,
+"699Handling": 104,
+
+"969TopSpeed": 185,
+"9690to60": 3.9,
+"969Handling": 104,
+
+"996TopSpeed": 185,
+"9960to60": 3.7,
+"996Handling": 100,
+    "creator": "Bnuuy"
 }

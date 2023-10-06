@@ -1,0 +1,49 @@
+{
+    "rq": 89,
+    "make": "SSC",
+    "model": "Aero SC/8T #1",
+    "modelYear": 2004,
+    "country": "US",
+    "topSpeed": 249,
+    "0to60": 2.9,
+    "handling": 90,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Americas Assault", "Ultra Expensive", "Concept", "Hypercar", "Unique"],
+    "isPrize": false,
+	
+    "weight": 1230,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 90.63,
+    "ola": 91.38,
+    "description": "This was SSC's first publically shown car. A prototype for the Aero and Ultimate Aero, it featured a 911HP LS1 V8 and had very impressive performance for the time.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1131378801016840202/SSC_Aero_SC8t_card.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1131350381021102260/SSC_Aero_SC8t_hud.png",
+    "creator": "Preston",
+
+"333TopSpeed": 251, 
+"3330to60": 2.8, 
+"333Handling": 93,
+
+"666TopSpeed": 253, 
+"6660to60": 2.6, 
+"666Handling": 96,
+
+"699TopSpeed": 253, 
+"6990to60": 2.5, 
+"699Handling": 100,
+
+"969TopSpeed": 255, 
+"9690to60": 2.6, 
+"969Handling": 100,
+
+"996TopSpeed": 255, 
+"9960to60": 2.5, 
+"996Handling": 96
+}

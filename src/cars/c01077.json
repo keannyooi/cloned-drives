@@ -9,11 +9,10 @@
     "handling": 90,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Track Day","OG"
-    ],
+    "tags": ["Track Day", "OG"],
     "isPrize": false,
-    "weight": 1394,
+	
+    "weight": 1395,
     "gc": "Low",
     "seatCount": 2,
     "bodyStyle": "Coupe",
@@ -22,24 +21,29 @@
     "enginePos": "Rear",
     "fuelType": "Petrol",
     "mra": 79.3,
-    "ola": 87.8,
+    "ola": 92.68,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/826538369768095784/Porsche911GT3997.1.png",
-    "333TopSpeed": 195,
-    "3330to60": 3.9,
-    "333Handling": 93,
-    "666TopSpeed": 197,
-    "6660to60": 3.7,
-    "666Handling": 96,
-    "996TopSpeed": 200,
-    "9960to60": 3.5,
-    "996Handling": 96,
-    "969TopSpeed": 200,
-    "9690to60": 3.7,
-    "969Handling": 100,
-    "699TopSpeed": 197,
-    "6990to60": 3.5,
-    "699Handling": 100,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1050805458329407508/Porsche_911_GT3_2006.png",
-    "creator": "Havvy"
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1152660425477988454/997911GT32006.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1152660652310155394/997GT32006.png",
+
+"333TopSpeed": 195,
+"3330to60": 3.9,
+"333Handling": 93,
+
+"666TopSpeed": 197,
+"6660to60": 3.7,
+"666Handling": 96,
+
+"699TopSpeed": 197,
+"6990to60": 3.5,
+"699Handling": 100,
+
+"969TopSpeed": 200,
+"9690to60": 3.7,
+"969Handling": 100,
+
+"996TopSpeed": 200,
+"9960to60": 3.5,
+"996Handling": 96,
+    "creator": "Bnuuy"
 }

@@ -1,0 +1,49 @@
+{
+    "rq": 89,
+    "make": "SSC",
+    "model": "Aero",
+    "modelYear": 2006,
+    "country": "US",
+    "topSpeed": 236,
+    "0to60": 2.9,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Americas Assault", "Hypercar", "Unique","Ultra Expensive"],
+    "isPrize": false,
+	
+    "weight": 1300,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 87.61,
+    "ola": 91.38,
+    "description": "There's very little info about it online, but early in SSC's life they actually made Aeros that weren't Ultimate.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1131358926198280242/2006_SSC_Aero.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1131350239954092133/2006_SSC_Aero_hud_corners.png",
+    "creator": "Preston",
+
+"333TopSpeed": 238, 
+"3330to60": 2.8, 
+"333Handling": 94,
+
+"666TopSpeed": 240, 
+"6660to60": 2.6, 
+"666Handling": 97,
+
+"699TopSpeed": 240, 
+"6990to60": 2.5, 
+"699Handling": 101,
+
+"969TopSpeed": 243, 
+"9690to60": 2.6, 
+"969Handling": 101,
+
+"996TopSpeed": 243, 
+"9960to60": 2.5, 
+"996Handling": 97
+}

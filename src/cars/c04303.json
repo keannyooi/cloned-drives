@@ -1,0 +1,49 @@
+{
+    "rq": 8,
+    "make": "Citroen",
+    "model": "E-Mehari",
+    "modelYear": 2016,
+    "country": "FR",
+    "topSpeed": 68,
+    "0to60": 18.1,
+    "handling": 63,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite", "Eco-Friendly", "Oddity"],
+    "isPrize": false,
+	
+    "weight": 1405,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 0.00,
+    "ola": 70.87,
+    "description": "Bare bones open top car just to drive near the beach on a summer day. Throwback to the original Mehari from the 60s",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1113114114517114880/Citroen_E-Mehari_2016.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1113114157731029032/Citroen_E-Mehari.png",
+    "creator": "Crossfire",
+
+    "333TopSpeed": 76, 
+    "3330to60": 17.2, 
+    "333Handling": 65,
+
+    "666TopSpeed": 83, 
+    "6660to60": 16.3, 
+    "666Handling": 67,
+
+    "996TopSpeed": 91, 
+    "9960to60": 15.4, 
+    "996Handling": 67,
+
+    "969TopSpeed": 91, 
+    "9690to60": 16.3, 
+    "969Handling": 70,
+
+    "699TopSpeed": 83, 
+    "6990to60": 15.4, 
+    "699Handling": 70
+}

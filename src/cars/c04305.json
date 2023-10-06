@@ -1,0 +1,49 @@
+{
+    "rq": 86,
+    "make": "McLaren",
+    "model": "F1 HDK",
+    "modelYear": 1993,
+    "country": "GB",
+    "topSpeed": 225,
+    "0to60": 3.2,
+    "handling": 89,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Ultra Expensive","Track Day","Unique","Style Icon","The Midlands Cruise","Supercar"],
+    "isPrize": false,
+	
+    "weight": 1140,
+    "gc": "Low",
+    "seatCount": 3,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 124.42,
+    "ola": 86.86,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1137395055938773032/CD_Mclaren_F1_HDK.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1137395090608894023/F1HDK.png",
+
+"333TopSpeed": 227,
+"3330to60": 3,
+"333Handling": 92,
+
+"666TopSpeed": 230,
+"6660to60": 2.9,
+"666Handling": 95,
+
+"699TopSpeed": 230,
+"6990to60": 2.7,
+"699Handling": 99,
+
+"969TopSpeed": 232,
+"9690to60": 2.9,
+"969Handling": 99,
+
+"996TopSpeed": 232,
+"9960to60": 2.7,
+"996Handling": 95,
+    "creator": "Exist"
+}
