@@ -47,7 +47,7 @@ function filterCheck(args) {
                     if (!Array.isArray(checkArray)) {
                         checkArray = [checkArray];
                     }
-                    checkArray = checkArray.map(tag => tag.toLowerCase());
+                    checkArray = checkArray.map(tag => tag ? tag.toLowerCase() : ""); // Check if tag is defined
 
                     if (applyOrLogic) {
                         if (value.some(tag => checkArray.findIndex(tag2 => tag === tag2) > -1) === false) {
@@ -64,24 +64,28 @@ function filterCheck(args) {
                     if (key === "modelYear") {
                         bmReference[key] = currentCar[key];
                     }
-                    if (bmReference[key] < value.start || bmReference[key] > value.end) {
+                    if (typeof bmReference[key] === 'string' && typeof value === 'string' &&
+                        bmReference[key].toLowerCase() !== value.toLowerCase()) {
+                        passed = false;
+                    } else if (typeof bmReference[key] !== 'string' || typeof value !== 'string') {
                         passed = false;
                     }
                 }
                 break;
             case "string":
                 if (key === "search") {
-                    if (!carNameGen({ currentCar: bmReference }).toLowerCase().includes(value)) {
+                    if (carNameGen({ currentCar: bmReference }).toLowerCase().includes(value.toLowerCase())) {
                         passed = false;
                     }
                 }
                 else if (Array.isArray(bmReference[key])) {
-                    if (bmReference[key].findIndex(element => element.toLowerCase() === value) === -1) {
+                    if (bmReference[key].findIndex(element => typeof element === 'string' && element.toLowerCase() === value.toLowerCase()) === -1) {
                         passed = false;
                     }
                 }
                 else {
-                    if (bmReference[key].toLowerCase() !== value) {
+                    if (typeof bmReference[key] === 'string' && typeof value === 'string' &&
+                        bmReference[key].toLowerCase() !== value.toLowerCase()) {
                         passed = false;
                     }
                 }
