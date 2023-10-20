@@ -1,0 +1,50 @@
+{
+    "rq": 34,
+    "make": "Skoda",
+    "model": "Octavia Combi 1.4 TSI",
+    "modelYear": 2010,
+    "country": "CZ",
+    "topSpeed": 126,
+    "0to60": 9.6,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 1375,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 56.80,
+    "ola": 72.91,
+    "description": "Wagon 1.4 TSI",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1142890559548174476/D.SkodaOctaviaCombi14T.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1142894946005831861/octavia14tsi.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 130,
+    "3330to60": 9.1,
+    "333Handling": 75,
+
+    "666TopSpeed": 134,
+    "6660to60": 8.6, 
+    "666Handling": 78,
+
+    "996TopSpeed": 138,
+    "9960to60": 8.2,
+    "996Handling": 78,
+
+    "969TopSpeed": 138,
+    "9690to60": 8.6,
+    "969Handling": 81,
+
+    "699TopSpeed": 134,
+    "6990to60": 8.2,
+    "699Handling": 81
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 71,
+    "make": "Porsche",
+    "model": "Panamera 4 Executive",
+    "modelYear": 2016,
+    "country": "DE",
+    "topSpeed": 163,
+    "0to60": 5.4,
+    "handling": 85,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1935,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 55.9,
+    "ola": 70,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1152576989572636773/971EPanamera4.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1152577162583486474/971EPanamera4.png",
+
+"333TopSpeed": 166,
+"3330to60": 5.1,
+"333Handling": 88,
+
+"666TopSpeed": 169,
+"6660to60": 4.9,
+"666Handling": 91,
+
+"699TopSpeed": 169,
+"6990to60": 4.6,
+"699Handling": 94,
+
+"969TopSpeed": 173,
+"9690to60": 4.9,
+"969Handling": 94,
+
+"996TopSpeed": 173,
+"9960to60": 4.6,
+"996Handling": 91,
+    "creator": "Bnuuy"
+}

@@ -1,0 +1,50 @@
+{
+    "rq": 80,
+    "make": ["Open Flash Performance", "Toyota"],
+    "model": "Toyota GR Supra 3.0",
+    "modelYear": 2021,
+    "country": "US",
+    "topSpeed": 165,
+    "0to60": 3.3,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer", "Tuner","The Americas Assault","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 1530,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 70.21,
+    "ola": 84.84,
+    "description": "OpenFlash Performance brings more power and sharper reflexes to the latest six-cylinder Supra without degrading its civility.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1145822290999787650/S.OFPSupra.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1145822472181129396/SUPRA1.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 168,
+    "3330to60": 3.1,
+    "333Handling": 94,
+
+    "666TopSpeed": 171,
+    "6660to60": 3.0, 
+    "666Handling": 97,
+
+    "996TopSpeed": 174,
+    "9960to60": 2.8,
+    "996Handling": 97,
+
+    "969TopSpeed": 174,
+    "9690to60": 3.0,
+    "969Handling": 101,
+
+    "699TopSpeed": 171,
+    "6990to60": 2.8,
+    "699Handling": 101
+}

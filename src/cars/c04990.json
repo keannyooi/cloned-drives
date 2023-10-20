@@ -1,0 +1,49 @@
+{
+    "rq": 86,
+    "make": "Porsche",
+    "model": "911 RSR",
+    "modelYear": 2013,
+    "country": "DE",
+    "topSpeed": 180,
+    "0to60": 3.1,
+    "handling": 96,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Eurotech Elite","Motorsport","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1245,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 94.51,
+    "ola": 89.55,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158069188775116860/991911RSR.png?ex=651ae77a&is=651995fa&hm=3307673bfce9e6dbe92eb110ab20e07be6c8c12ac6ddeb04807afd6f3a67e8e0&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158069416290963617/991911GT3RSR13.png?ex=651ae7b0&is=65199630&hm=53f0390dcc0489f616d4c13a622fedbb5e759f4f2ee5386527e3b8e654204379&",
+
+"333TopSpeed": 183,
+"3330to60": 2.9,
+"333Handling": 99,
+
+"666TopSpeed": 186,
+"6660to60": 2.8,
+"666Handling": 102,
+
+"699TopSpeed": 186,
+"6990to60": 2.6,
+"699Handling": 107,
+
+"969TopSpeed": 189,
+"9690to60": 2.8,
+"969Handling": 107,
+
+"996TopSpeed": 189,
+"9960to60": 2.6,
+"996Handling": 102,
+    "creator": "Bnuuy"
+}

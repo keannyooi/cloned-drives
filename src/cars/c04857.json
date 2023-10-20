@@ -1,0 +1,49 @@
+{
+    "rq": 55,
+    "make": "Porsche",
+    "model": "Vision Renndienst",
+    "modelYear": 2018,
+    "country": "DE",
+    "topSpeed": 95,
+    "0to60": 5.5,
+    "handling": 74,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Concept","Unique","Oddity","Eco-Friendly","Cloned Drives Beta: Last of"],
+    "isPrize": true,
+	
+    "weight": 2150,
+    "gc": "Medium",
+    "seatCount": 6,
+    "bodyStyle": "Commercial",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 51.25,
+    "ola": 77.77,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158097746880905327/miscvisionrenn.png?ex=651b0213&is=6519b093&hm=97c88343a32174c5d1776df04c525c0afb0c9d0ac14dcdcf13bbed11a960841d&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158097818578338004/MiscVisionRenndienst.png?ex=651b0224&is=6519b0a4&hm=c51dd87e268f2e221d5980a3934f2876e6dad280186e07edce63b38e2b1e8019&",
+
+"333TopSpeed": 100,
+"3330to60": 5.2,
+"333Handling": 76,
+
+"666TopSpeed": 106,
+"6660to60": 5,
+"666Handling": 79,
+
+"699TopSpeed": 106,
+"6990to60": 4.7,
+"699Handling": 82,
+
+"969TopSpeed": 111,
+"9690to60": 5,
+"969Handling": 82,
+
+"996TopSpeed": 111,
+"9960to60": 4.7,
+"996Handling": 79,
+    "creator": "Bnuuy"
+}

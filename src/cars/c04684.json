@@ -1,0 +1,49 @@
+{
+    "rq": 47,
+    "make": "Porsche",
+    "model": "911 Carrera 4 Targa",
+    "modelYear": 1989,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 5.8,
+    "handling": 75,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Innovative","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1450,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 63.95,
+    "ola": 71.64,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1146440759948619897/964911Carrera4Targa.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1146440923585191976/964911Carrera4Targa.png",
+
+"333TopSpeed": 158,
+"3330to60": 5.5,
+"333Handling": 77,
+
+"666TopSpeed": 162,
+"6660to60": 5.2,
+"666Handling": 80,
+
+"699TopSpeed": 162,
+"6990to60": 4.9,
+"699Handling": 83,
+
+"969TopSpeed": 165,
+"9690to60": 5.2,
+"969Handling": 83,
+
+"996TopSpeed": 165,
+"9960to60": 4.9,
+"996Handling": 80,
+    "creator": "Bnuuy"
+}

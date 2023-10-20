@@ -1,0 +1,49 @@
+{
+    "rq": 49,
+    "make": "Porsche",
+    "model": "911 Carrera Speedster Turbolook Von Porsche Exclusive",
+    "modelYear": 1989,
+    "country": "DE",
+    "topSpeed": 154,
+    "0to60": 6.0,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Unique","Style Icon","Cloned Drives Beta: Last of"],
+    "isPrize": true,
+	
+    "weight": 1210,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 72.5,
+    "ola": 74.65,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1145456207688118413/Porsche911CarreraSpeedsterTurbolookVonPorExclus.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1145456340551078010/Porsche911CSTVPE.png",
+
+"333TopSpeed": 157,
+"3330to60": 5.7,
+"333Handling": 77,
+
+"666TopSpeed": 161,
+"6660to60": 5.4,
+"666Handling": 80,
+
+"699TopSpeed": 161,
+"6990to60": 5.1,
+"699Handling": 83,
+
+"969TopSpeed": 164,
+"9690to60": 5.4,
+"969Handling": 83,
+
+"996TopSpeed": 164,
+"9960to60": 5.1,
+"996Handling": 80,
+    "creator": "Bnuuy"
+}

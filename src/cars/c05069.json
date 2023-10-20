@@ -1,0 +1,49 @@
+{
+    "rq": 50,
+    "make": "Porsche",
+    "model": "989",
+    "modelYear": 1988,
+    "country": "DE",
+    "topSpeed": 173,
+    "0to60": 5.1,
+    "handling": 74,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Concept","Unique","Super Sedan","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1572,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 76.11,
+    "ola": 83.5,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158083200434831390/misc989.png?ex=651af487&is=6519a307&hm=e84ec2d0431643530b6f414516f8ad46a17f86f43d5a06795c41662f337ae81c&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158083400519917732/Misc989.png?ex=651af4b6&is=6519a336&hm=ca9eaa21069c6f5933bc5ebd0f93c6610a920e5634298f8bc90dd52c51636583&",
+
+"333TopSpeed": 176,
+"3330to60": 4.8,
+"333Handling": 76,
+
+"666TopSpeed": 179,
+"6660to60": 4.6,
+"666Handling": 79,
+
+"699TopSpeed": 179,
+"6990to60": 4.3,
+"699Handling": 82,
+
+"969TopSpeed": 182,
+"9690to60": 4.6,
+"969Handling": 82,
+
+"996TopSpeed": 182,
+"9960to60": 4.3,
+"996Handling": 79,
+    "creator": "Bnuuy"
+}

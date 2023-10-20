@@ -1,0 +1,49 @@
+{
+    "rq": 78,
+    "make": "Porsche",
+    "model": "911 GT2 R",
+    "modelYear": 1995,
+    "country": "DE",
+    "topSpeed": 183,
+    "0to60": 3.7,
+    "handling": 94,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Eurotech Elite","Motorsport","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1150,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 100,
+    "ola": 90,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1149335904394162246/993911GT2R.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1149336020169543720/993911GT2R.png",
+
+"333TopSpeed": 186,
+"3330to60": 3.5,
+"333Handling": 97,
+
+"666TopSpeed": 189,
+"6660to60": 3.3,
+"666Handling": 100,
+
+"699TopSpeed": 189,
+"6990to60": 3.1,
+"699Handling": 104,
+
+"969TopSpeed": 192,
+"9690to60": 3.3,
+"969Handling": 104,
+
+"996TopSpeed": 192,
+"9960to60": 3.1,
+"996Handling": 100,
+    "creator": "Bnuuy"
+}

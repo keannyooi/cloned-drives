@@ -1,0 +1,49 @@
+{
+    "rq": 43,
+    "make": "Renault",
+    "model": "Kadjar 1.3 TCe 160",
+    "modelYear": 2018,
+    "country": "FR",
+    "topSpeed": 130,
+    "0to60": 9.2,
+    "handling": 73,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1471,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 63.76,
+    "ola": 78.69,
+    "description": "That's almost 10 months! Some would've said that it's Joever after that long, but I can say, with at least a little confidence, that we are so Barack.", 
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1129808617290354738/Renault_Kadjar_1.3_TCe_160.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1129810031915831356/Renault_Kadjar_1.3_TCe_160_hud.png",
+    "creator": "Fried",
+
+"333TopSpeed": 134, 
+"3330to60": 8.7, 
+"333Handling": 75,
+
+"666TopSpeed": 138, 
+"6660to60": 8.3, 
+"666Handling": 78,
+
+"699TopSpeed": 138, 
+"6990to60": 7.8, 
+"699Handling": 81,
+
+"969TopSpeed": 142, 
+"9690to60": 8.3, 
+"969Handling": 81,
+
+"996TopSpeed": 142, 
+"9960to60": 7.8, 
+"996Handling": 78
+}

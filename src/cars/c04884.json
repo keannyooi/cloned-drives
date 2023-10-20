@@ -1,0 +1,49 @@
+{
+    "rq": 6,
+    "make": "Porsche",
+    "model": "356A 1300",
+    "modelYear": 1956,
+    "country": "DE",
+    "topSpeed": 90,
+    "0to60": 20.7,
+    "handling": 58,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Style Icon","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 850,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 12.3,
+    "ola": 65.29,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1151925128062566540/356A1300.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1151925512994824212/356A1300.png",
+
+"333TopSpeed": 96,
+"3330to60": 19.7,
+"333Handling": 60,
+
+"666TopSpeed": 102,
+"6660to60": 18.6,
+"666Handling": 62,
+
+"699TopSpeed": 102,
+"6990to60": 17.6,
+"699Handling": 64,
+
+"969TopSpeed": 107,
+"9690to60": 18.6,
+"969Handling": 64,
+
+"996TopSpeed": 107,
+"9960to60": 17.6,
+"996Handling": 62,
+    "creator": "Bnuuy"
+}

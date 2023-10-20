@@ -1,0 +1,52 @@
+{
+    "rq": 31,
+    "make": "Volkswagen",
+    "model": "Corrado 2.0 16V",
+    "modelYear": 1991,
+    "country": "DE",
+    "topSpeed": 131,
+    "0to60": 8.7,
+    "handling": 74,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 1090,
+    "gc": "Medium",
+    "seatCount":4,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 55.63,
+    "ola": 64.74,
+    "description": "Bump up the Valves, Pump up the jam!",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1140974214090854490/Corrado2016V.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1140974833438572665/2016V.png",
+    "creator": "Andu",
+    
+    "333TopSpeed": 135,
+    "3330to60": 8.3,
+    "333Handling": 76,
+    
+    "666TopSpeed": 139,
+    "6660to60": 7.8,
+    "666Handling": 79,
+    
+    "699TopSpeed": 139,
+    "6990to60": 7.4,
+    "699Handling": 82,
+    
+    "969TopSpeed": 143,
+    "9690to60": 7.8,
+    "969Handling": 82,
+    
+    "996TopSpeed": 143,
+    "9960to60": 7.4,
+    "996Handling": 79
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 9,
+    "make": "Porsche",
+    "model": "Type 128",
+    "modelYear": 1940,
+    "country": "DE",
+    "topSpeed": 50,
+    "0to60": 99.9,
+    "handling": 44,
+    "driveType": "RWD",
+    "tyreType": "Off-Road",
+    "tags": ["Eurotech Elite","Extreme Juggernaut","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 910,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 0,
+    "ola": 51.42,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1146778234197901312/Type128.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1146778527157469194/pre356type128.png",
+
+"333TopSpeed": 59,
+"3330to60": 99.9,
+"333Handling": 45,
+
+"666TopSpeed": 67,
+"6660to60": 72.9,
+"666Handling": 47,
+
+"699TopSpeed": 67,
+"6990to60": 68.8,
+"699Handling": 49,
+
+"969TopSpeed": 76,
+"9690to60": 72.9,
+"969Handling": 49,
+
+"996TopSpeed": 76,
+"9960to60": 68.8,
+"996Handling": 47,
+    "creator": "Bnuuy"
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 63,
+    "make": "Porsche",
+    "model": "Panamera Sport Turismo Concept",
+    "modelYear": 2012,
+    "country": "DE",
+    "topSpeed": 175,
+    "0to60": 5.6,
+    "handling": 84,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Unique","Concept","Eco-Friendly","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 2059,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 75.15,
+    "ola": 80,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1146833280553992224/PanameraSTConcept970B.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1146833316293656678/970BSTConcept.png",
+
+"333TopSpeed": 178,
+"3330to60": 5.3,
+"333Handling": 87,
+
+"666TopSpeed": 181,
+"6660to60": 5,
+"666Handling": 90,
+
+"699TopSpeed": 181,
+"6990to60": 4.8,
+"699Handling": 93,
+
+"969TopSpeed": 184,
+"9690to60": 5,
+"969Handling": 93,
+
+"996TopSpeed": 184,
+"9960to60": 4.8,
+"996Handling": 90,
+    "creator": "Bnuuy"
+}

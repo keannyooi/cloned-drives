@@ -1,0 +1,49 @@
+{
+    "rq": 55,
+    "make": "Aston Martin",
+    "model": "DB9 Volante",
+    "modelYear": 2009,
+    "country": "GB",
+    "topSpeed": 187,
+    "0to60": 5.1,
+    "handling": 79,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Grand Tourer","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1860,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 78.46,
+    "ola": 78.43,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1115260179127222333/db9volante2009.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1115260810164453427/DB9Volante09.png",
+
+"333TopSpeed": 190,
+"3330to60": 4.8,
+"333Handling": 82,
+
+"666TopSpeed": 193,
+"6660to60": 4.6,
+"666Handling": 84,
+
+"699TopSpeed": 193,
+"6990to60": 4.3,
+"699Handling": 88,
+
+"969TopSpeed": 195,
+"9690to60": 4.6,
+"969Handling": 88,
+
+"996TopSpeed": 195,
+"9960to60": 4.3,
+"996Handling": 84,
+    "creator": "Bnuuy"
+}

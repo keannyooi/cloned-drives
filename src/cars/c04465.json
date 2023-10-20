@@ -1,0 +1,49 @@
+{
+    "rq": 101,
+    "make": "Aston Martin",
+    "model": "Valhalla",
+    "modelYear": 2023,
+    "country": "GB",
+    "topSpeed": 217,
+    "0to60": 2.4,
+    "handling": 96,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Track Day","Ultra Expensive","Eco-Friendly","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1550,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Hybrid",
+    "mra": 105.4,
+    "ola": 93.45,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1120006904601645157/Valhalla.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1120007203504525354/Valhalla.png",
+
+"333TopSpeed": 219,
+"3330to60": 2.3,
+"333Handling": 99,
+
+"666TopSpeed": 222,
+"6660to60": 2.2,
+"666Handling": 102,
+
+"699TopSpeed": 222,
+"6990to60": 2,
+"699Handling": 107,
+
+"969TopSpeed": 224,
+"9690to60": 2.2,
+"969Handling": 107,
+
+"996TopSpeed": 224,
+"9960to60": 2,
+"996Handling": 102,
+    "creator": "Bnuuy"
+}

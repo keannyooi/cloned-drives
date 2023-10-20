@@ -1,0 +1,49 @@
+{
+    "rq": 81,
+    "make": "Audi",
+    "model": "R8 5.2 FSI plus quattro",
+    "modelYear": 2012,
+    "country": "DE",
+    "topSpeed": 198,
+    "0to60": 3.6,
+    "handling": 87,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite", "Eargasm", "Supercar", "Style Icon","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1670,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 84.08,
+    "ola": 83.67,
+    "description": "R8 gets refined with its midlife facelift. One thing facelift brought to the R8 was the plus trim that added around 30 horsepower to the normal V10 model.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1142912200424558603/Audi_R8_5.2_FSI_plus_quattro.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1142912233626669226/Audi_R8_plus.png",
+    "creator": "Crossfire",
+
+    "333TopSpeed": 201, 
+    "3330to60": 3.4, 
+    "333Handling": 90,
+
+    "666TopSpeed": 203, 
+    "6660to60": 3.2, 
+    "666Handling": 93,
+
+    "996TopSpeed": 206, 
+    "9960to60": 3.1, 
+    "996Handling": 93,
+
+    "969TopSpeed": 206, 
+    "9690to60": 3.2, 
+    "969Handling": 97,
+
+    "699TopSpeed": 203, 
+    "6990to60": 3.1, 
+    "699Handling": 97
+}

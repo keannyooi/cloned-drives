@@ -1,0 +1,49 @@
+{
+    "rq": 69,
+    "make": "Porsche",
+    "model": "911 Turbo S 3.6",
+    "modelYear": 1993,
+    "country": "DE",
+    "topSpeed": 188,
+    "0to60": 4.2,
+    "handling": 84,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Style Icon","Supercar","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1280,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 82.5,
+    "ola": 79.33,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1146447445610475530/964911TurboS3.6.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1146447597356187689/964911TurboS3.6.png",
+
+"333TopSpeed": 191,
+"3330to60": 4,
+"333Handling": 87,
+
+"666TopSpeed": 194,
+"6660to60": 3.8,
+"666Handling": 90,
+
+"699TopSpeed": 194,
+"6990to60": 3.6,
+"699Handling": 93,
+
+"969TopSpeed": 196,
+"9690to60": 3.8,
+"969Handling": 93,
+
+"996TopSpeed": 196,
+"9960to60": 3.6,
+"996Handling": 90,
+    "creator": "Bnuuy"
+}

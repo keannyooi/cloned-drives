@@ -1,0 +1,49 @@
+{
+    "rq": 3,
+    "make": "Porsche",
+    "model": "Type 64",
+    "modelYear": 1938,
+    "country": "DE",
+    "topSpeed": 95,
+    "0to60": 19.4,
+    "handling": 54,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Unique","Ultra Expensive","Street Racer","Style Icon","Innovative","Cloned Drives Beta: Last of"],
+    "isPrize": true,
+	
+    "weight": 610,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 11.25,
+    "ola": 88.65,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1146778198340808815/PorskieType64.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1146778492827082913/pre356Type64.png",
+
+"333TopSpeed": 100,
+"3330to60": 18.4,
+"333Handling": 56,
+
+"666TopSpeed": 106,
+"6660to60": 17.5,
+"666Handling": 58,
+
+"699TopSpeed": 106,
+"6990to60": 16.5,
+"699Handling": 60,
+
+"969TopSpeed": 111,
+"9690to60": 17.5,
+"969Handling": 60,
+
+"996TopSpeed": 111,
+"9960to60": 16.5,
+"996Handling": 58,
+    "creator": "Bnuuy"
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 61,
+    "make": "Porsche",
+    "model": "911 Carrera RS 3.0",
+    "modelYear": 1974,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 5.1,
+    "handling": 78,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Unique","Track Day","Cloned Drives Beta: Last of"],
+    "isPrize": true,
+	
+    "weight": 900,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 75.55,
+    "ola": 72.99,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1146188520826876085/Porsche911CarreraRS3.01974.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1146188779523149874/Porsche911RS3.0.png",
+
+"333TopSpeed": 158,
+"3330to60": 4.8,
+"333Handling": 81,
+
+"666TopSpeed": 162,
+"6660to60": 4.6,
+"666Handling": 83,
+
+"699TopSpeed": 162,
+"6990to60": 4.3,
+"699Handling": 87,
+
+"969TopSpeed": 165,
+"9690to60": 4.6,
+"969Handling": 87,
+
+"996TopSpeed": 165,
+"9960to60": 4.3,
+"996Handling": 83,
+    "creator": "Bnuuy"
+}

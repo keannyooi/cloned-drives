@@ -1,0 +1,49 @@
+{
+    "rq": 83,
+    "make": "Porsche",
+    "model": "911 GT2 Evo",
+    "modelYear": 1995,
+    "country": "DE",
+    "topSpeed": 187,
+    "0to60": 3.3,
+    "handling": 95,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Eurotech Elite","Motorsport","Unique","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1100,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 103.33,
+    "ola": 90.91,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1149335886564175892/993911GT2Evo.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1149335996417200158/993911GT2Evo.png",
+
+"333TopSpeed": 190,
+"3330to60": 3.1,
+"333Handling": 98,
+
+"666TopSpeed": 193,
+"6660to60": 3,
+"666Handling": 101,
+
+"699TopSpeed": 193,
+"6990to60": 2.8,
+"699Handling": 105,
+
+"969TopSpeed": 195,
+"9690to60": 3,
+"969Handling": 105,
+
+"996TopSpeed": 195,
+"9960to60": 2.8,
+"996Handling": 101,
+    "creator": "Bnuuy"
+}

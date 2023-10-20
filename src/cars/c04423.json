@@ -1,0 +1,49 @@
+{
+    "rq": 46,
+    "make": "Aston Martin",
+    "model": "DBS C Touring",
+    "modelYear": 1966,
+    "country": "GB",
+    "topSpeed": 170,
+    "0to60": 6.1,
+    "handling": 72,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Grand Tourer","Unique","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1432,
+    "gc": "Mediuk",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 87.14,
+    "ola": 85.24,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1115273007355674724/DBSCTouring.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1115273854823174266/dbsctouring.png",
+
+"333TopSpeed": 173,
+"3330to60": 5.8,
+"333Handling": 74,
+
+"666TopSpeed": 176,
+"6660to60": 5.5,
+"666Handling": 77,
+
+"699TopSpeed": 176,
+"6990to60": 5.2,
+"699Handling": 80,
+
+"969TopSpeed": 179,
+"9690to60": 5.5,
+"969Handling": 80,
+
+"996TopSpeed": 179,
+"9960to60": 5.2,
+"996Handling": 77,
+    "creator": "Bnuuy"
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 24,
+    "make": "Porsche",
+    "model": "356A 1500 GS Carrera GT",
+    "modelYear": 1955,
+    "country": "DE",
+    "topSpeed": 124,
+    "0to60": 8.9,
+    "handling": 65,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Street Racer","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 835,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 34.5,
+    "ola": 68.77,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1151925384846245950/356A1500GSCarreraGT.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1151925823864049747/356A1500GSCarreraGT.png",
+
+"333TopSpeed": 128,
+"3330to60": 8.5,
+"333Handling": 67,
+
+"666TopSpeed": 132,
+"6660to60": 8,
+"666Handling": 69,
+
+"699TopSpeed": 132,
+"6990to60": 7.6,
+"699Handling": 72,
+
+"969TopSpeed": 137,
+"9690to60": 8,
+"969Handling": 72,
+
+"996TopSpeed": 137,
+"9960to60": 7.6,
+"996Handling": 69,
+    "creator": "Bnuuy"
+}

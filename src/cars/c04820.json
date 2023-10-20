@@ -1,0 +1,49 @@
+{
+    "rq": 52,
+    "make": "Porsche",
+    "model": "Panamera Diesel",
+    "modelYear": 2011,
+    "country": "DE",
+    "topSpeed": 152,
+    "0to60": 6.5,
+    "handling": 79,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1955,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 65.65,
+    "ola": 73.84,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1146192462797357096/PanameraDiesel970.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1146192701897850951/970Diesel.png",
+
+"333TopSpeed": 155,
+"3330to60": 6.2,
+"333Handling": 82,
+
+"666TopSpeed": 159,
+"6660to60": 5.9,
+"666Handling": 84,
+
+"699TopSpeed": 159,
+"6990to60": 5.5,
+"699Handling": 88,
+
+"969TopSpeed": 162,
+"9690to60": 5.9,
+"969Handling": 88,
+
+"996TopSpeed": 162,
+"9960to60": 5.5,
+"996Handling": 84,
+    "creator": "Bnuuy"
+}

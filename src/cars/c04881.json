@@ -1,0 +1,49 @@
+{
+    "rq": 4,
+    "make": "Porsche",
+    "model": "356/1",
+    "modelYear": 1948,
+    "country": "DE",
+    "topSpeed": 82,
+    "0to60": 22.9,
+    "handling": 58,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Unique","Ultra Expensive","Innovative","Cloned Drives Beta: Last of"],
+    "isPrize": true,
+	
+    "weight": 585,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 9.55,
+    "ola": 70,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1154042801865101352/9561.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1154042950519631872/3561.png",
+
+"333TopSpeed": 88,
+"3330to60": 21.8,
+"333Handling": 60,
+
+"666TopSpeed": 95,
+"6660to60": 20.6,
+"666Handling": 62,
+
+"699TopSpeed": 95,
+"6990to60": 19.5,
+"699Handling": 64,
+
+"969TopSpeed": 101,
+"9690to60": 20.6,
+"969Handling": 64,
+
+"996TopSpeed": 101,
+"9960to60": 19.5,
+"996Handling": 62,
+    "creator": "Bnuuy"
+}

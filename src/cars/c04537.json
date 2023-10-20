@@ -1,0 +1,49 @@
+{
+    "rq": 45,
+    "make": "Peugeot",
+    "model": "5008 2.0 BlueHDi 180",
+    "modelYear": 2017,
+    "country": "FR",
+    "topSpeed": 129,
+    "0to60": 8.8,
+    "handling": 74,
+    "driveType": "FWD",
+    "tyreType": "All-Surface",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1535,
+    "gc": "High",
+    "seatCount": 7,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 54.21,
+    "ola": 77.69,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1148903954298699814/Peugeot_5008_2.0_BlueHDi_180_2017.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1148905386385080320/Peugeot_5008_2.0_BlueHDi_180.png",
+    "creator": "Crossfire",
+
+    "333TopSpeed": 133,
+    "3330to60": 8.4,
+    "333Handling": 76,
+
+    "666TopSpeed": 137,
+    "6660to60": 7.9,
+    "666Handling": 79,
+
+    "699TopSpeed": 137,
+    "6990to60": 7.5,
+    "699Handling": 82,
+
+    "969TopSpeed": 141,
+    "9690to60": 7.9,
+    "969Handling": 82,
+
+    "996TopSpeed": 141,
+    "9960to60": 7.5,
+    "996Handling": 79
+}

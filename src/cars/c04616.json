@@ -1,0 +1,49 @@
+{
+    "rq": 47,
+    "make": "TVR",
+    "model": "V8S 2.0",
+    "modelYear": 1991,
+    "country": "GB",
+    "topSpeed": 144,
+    "0to60": 6.4,
+    "handling": 79,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite", "Unique","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1035,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 67.05,
+    "ola": 78.84,
+    "description": "Made for the Italian market due to emission laws, fitted with a bore down and supercharged Rover V8. Only one car is known to exist, about 10 were made total.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1144373956934123612/TVR_V8S_2.0_Supercharged.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1144373190810939412/TVR_V8S_2.0.png",
+    "creator": "Based",
+
+"333TopSpeed": 148, 
+"3330to60": 6.1, 
+"333Handling": 82,
+
+"666TopSpeed": 151, 
+"6660to60": 5.8, 
+"666Handling": 84,
+
+"699TopSpeed": 151, 
+"6990to60": 5.4, 
+"699Handling": 88,
+
+"969TopSpeed": 155, 
+"9690to60": 5.8, 
+"969Handling": 88,
+
+"996TopSpeed": 155, 
+"9960to60": 5.4, 
+"996Handling": 84
+}

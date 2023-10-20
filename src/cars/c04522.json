@@ -1,0 +1,49 @@
+{
+    "rq": 48,
+    "make": "Peugeot",
+    "model": "3008 HYBRID 225",
+    "modelYear": 2020,
+    "country": "FR",
+    "topSpeed": 140,
+    "0to60": 8.4,
+    "handling": 75,
+    "driveType": "FWD",
+    "tyreType": "All-Surface",
+    "tags": ["Eurotech Elite", "Eco-Friendly","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1761,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 80.02,
+    "ola": 80.94,
+    "description": "Lower Hybrid trim with still good amount of power. (And yes, 80 mra in a Peugeot crossover)",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1148903485732036679/Peugeot_3008_HYBRID_225_2020.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1148905019203125279/Peugeot_3008_HYBRID_225.png",
+    "creator": "Crossfire",
+
+    "333TopSpeed": 144,
+    "3330to60": 8,
+    "333Handling": 77,
+
+    "666TopSpeed": 147,
+    "6660to60": 7.6,
+    "666Handling": 80,
+
+    "699TopSpeed": 147,
+    "6990to60": 7.1,
+    "699Handling": 83,
+
+    "969TopSpeed": 151,
+    "9690to60": 7.6,
+    "969Handling": 83,
+
+    "996TopSpeed": 151,
+    "9960to60": 7.1,
+    "996Handling": 80
+}

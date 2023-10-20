@@ -1,0 +1,49 @@
+{
+    "rq": 86,
+    "make": "Porsche",
+    "model": "Cayenne E-Hybrid",
+    "modelYear": 2018,
+    "country": "DE",
+    "topSpeed": 157,
+    "0to60": 4.5,
+    "handling": 83,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Eurotech Elite","Eco-Friendly","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 2370,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 69.23,
+    "ola": 84.44,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1149291163929563226/cayenneehybrid2018.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1149291404909092905/CayenneEHYbrid2018.png",
+
+"333TopSpeed": 160,
+"3330to60": 4.3,
+"333Handling": 86,
+
+"666TopSpeed": 164,
+"6660to60": 4,
+"666Handling": 88,
+
+"699TopSpeed": 164,
+"6990to60": 3.8,
+"699Handling": 92,
+
+"969TopSpeed": 167,
+"9690to60": 4,
+"969Handling": 92,
+
+"996TopSpeed": 167,
+"9960to60": 3.8,
+"996Handling": 88,
+    "creator": "Bnuuy"
+}

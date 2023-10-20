@@ -1,0 +1,49 @@
+{
+    "rq": 23,
+    "make": "Porsche",
+    "model": "356A 1600 GS Carrera GT",
+    "modelYear": 1957,
+    "country": "DE",
+    "topSpeed": 124,
+    "0to60": 9.2,
+    "handling": 65,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Street Racer","Cloned Drives Beta: Last of"],
+    "isPrize": true,
+	
+    "weight": 880,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 38.99,
+    "ola": 68.77,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1151925437639971007/356A1600GSCarreraGT.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1151925882571722782/356A1600GSCarreraGT.png",
+
+"333TopSpeed": 128,
+"3330to60": 8.7,
+"333Handling": 67,
+
+"666TopSpeed": 132,
+"6660to60": 8.3,
+"666Handling": 69,
+
+"699TopSpeed": 132,
+"6990to60": 7.8,
+"699Handling": 72,
+
+"969TopSpeed": 137,
+"9690to60": 8.3,
+"969Handling": 72,
+
+"996TopSpeed": 137,
+"9960to60": 7.8,
+"996Handling": 69,
+    "creator": "Bnuuy"
+}

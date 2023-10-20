@@ -1,0 +1,49 @@
+{
+    "rq": 78,
+    "make": "Porsche",
+    "model": "Cayenne",
+    "modelYear": 2017,
+    "country": "DE",
+    "topSpeed": 152,
+    "0to60": 5.4,
+    "handling": 83,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1985,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 65.06,
+    "ola": 77.78,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1149291105637117993/cayenne2017.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1149291349225508864/Cayenne2017.png",
+
+"333TopSpeed": 155,
+"3330to60": 5.1,
+"333Handling": 86,
+
+"666TopSpeed": 159,
+"6660to60": 4.9,
+"666Handling": 88,
+
+"699TopSpeed": 159,
+"6990to60": 4.6,
+"699Handling": 92,
+
+"969TopSpeed": 162,
+"9690to60": 4.9,
+"969Handling": 92,
+
+"996TopSpeed": 162,
+"9960to60": 4.6,
+"996Handling": 88,
+    "creator": "Bnuuy"
+}

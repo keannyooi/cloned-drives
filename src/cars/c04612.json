@@ -1,0 +1,49 @@
+{
+    "rq": 39,
+    "make": "TVR",
+    "model": "S2",
+    "modelYear": 1988,
+    "country": "GB",
+    "topSpeed": 136,
+    "0to60": 7.1,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 970,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 60.16,
+    "ola": 69.01,
+    "description": "The goofy Ford V6 was upgraded a notch. Only purpose is to be op in Cloned Drives, i guess",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1144373767955550208/TVR_S2.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1144373022984253471/TVR_S2.png",
+    "creator": "Based",
+
+"333TopSpeed": 140, 
+"3330to60": 6.7, 
+"333Handling": 77,
+
+"666TopSpeed": 144, 
+"6660to60": 6.4, 
+"666Handling": 80,
+
+"699TopSpeed": 144, 
+"6990to60": 6.0, 
+"699Handling": 83,
+
+"969TopSpeed": 147, 
+"9690to60": 6.4, 
+"969Handling": 83,
+
+"996TopSpeed": 147, 
+"9960to60": 6.0, 
+"996Handling": 80
+}

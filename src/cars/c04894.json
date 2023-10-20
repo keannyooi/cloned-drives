@@ -1,0 +1,49 @@
+{
+    "rq": 17,
+    "make": "Porsche",
+    "model": "356A 1600 Super Convertible D",
+    "modelYear": 1959,
+    "country": "DE",
+    "topSpeed": 109,
+    "0to60": 12.2,
+    "handling": 57,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 855,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 14.57,
+    "ola": 66.54,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1151925319142473808/356A1600SuperConvertibleD.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1151925769480716328/356A1600SuperConvertibleD.png",
+
+"333TopSpeed": 114,
+"3330to60": 11.6,
+"333Handling": 59,
+
+"666TopSpeed": 119,
+"6660to60": 11,
+"666Handling": 61,
+
+"699TopSpeed": 119,
+"6990to60": 10.4,
+"699Handling": 63,
+
+"969TopSpeed": 123,
+"9690to60": 11,
+"969Handling": 63,
+
+"996TopSpeed": 123,
+"9960to60": 10.4,
+"996Handling": 61,
+    "creator": "Bnuuy"
+}

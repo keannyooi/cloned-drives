@@ -1,0 +1,49 @@
+{
+    "rq": 90,
+    "make": ["BISIMOTO", "Porsche"],
+    "model": "911 Twin Turbo",
+    "modelYear": 2012,
+    "country": "US",
+    "topSpeed": 237,
+    "0to60": 2.9,
+    "handling": 89,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Americas Assault","Unique","Tuner","Ultra Expensive","Street Racer","RestoMod","Cloned Drives Beta: Last of"],
+    "isPrize": true,
+	
+    "weight": 1090,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 131.82,
+    "ola": 103.45,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1146161500701081610/Bisimoto911TwinTurbo.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1146161595039350834/Bisi911TwinTurbo.png",
+
+"333TopSpeed": 239,
+"3330to60": 2.8,
+"333Handling": 92,
+
+"666TopSpeed": 241,
+"6660to60": 2.6,
+"666Handling": 95,
+
+"699TopSpeed": 241,
+"6990to60": 2.5,
+"699Handling": 99,
+
+"969TopSpeed": 244,
+"9690to60": 2.6,
+"969Handling": 99,
+
+"996TopSpeed": 244,
+"9960to60": 2.5,
+"996Handling": 95,
+    "creator": "Bnuuy"
+}

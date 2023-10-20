@@ -1,0 +1,49 @@
+{
+    "rq": 97,
+    "make": "Porsche",
+    "model": "911 GT3 R Hybrid 2.0",
+    "modelYear": 2011,
+    "country": "DE",
+    "topSpeed": 202,
+    "0to60": 2.7,
+    "handling": 98,
+    "driveType": "4WD",
+    "tyreType": "Slick",
+    "tags": ["Eurotech Elite","Track Day","Concept","Unique","Eco-Friendly","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1300,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 100,
+    "ola": 87.5,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1154365084873801738/997911GT3RHybridtwo2010.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1154365314616791102/997GT3RHybrid2.png",
+
+"333TopSpeed": 205,
+"3330to60": 2.6,
+"333Handling": 101,
+
+"666TopSpeed": 207,
+"6660to60": 2.4,
+"666Handling": 104,
+
+"699TopSpeed": 207,
+"6990to60": 2.3,
+"699Handling": 109,
+
+"969TopSpeed": 210,
+"9690to60": 2.4,
+"969Handling": 109,
+
+"996TopSpeed": 210,
+"9960to60": 2.3,
+"996Handling": 104,
+    "creator": "Bnuuy"
+}

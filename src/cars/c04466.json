@@ -1,0 +1,49 @@
+{
+    "rq": 97,
+    "make": "Aston Martin",
+    "model": "Valhalla Concept",
+    "modelYear": 2021,
+    "country": "GB",
+    "topSpeed": 200,
+    "0to60": 2.6,
+    "handling": 95,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Concept","Unique","Track Day","Eco-Friendly","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1450,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Hybrid",
+    "mra": 99.43,
+    "ola": 100,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1120006878043320493/ValhallaConcept.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1120007187788464239/ValhallaConcept.png",
+
+"333TopSpeed": 203,
+"3330to60": 2.5,
+"333Handling": 98,
+
+"666TopSpeed": 205,
+"6660to60": 2.3,
+"666Handling": 101,
+
+"699TopSpeed": 205,
+"6990to60": 2.2,
+"699Handling": 105,
+
+"969TopSpeed": 208,
+"9690to60": 2.3,
+"969Handling": 105,
+
+"996TopSpeed": 208,
+"9960to60": 2.2,
+"996Handling": 101,
+    "creator": "Bnuuy"
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 70,
+    "make": ["Aston Engineering", "Aston Martin"],
+    "model": "DB6 Lightweight Racer A.M.O.C",
+    "modelYear": 1999,
+    "country": "GB",
+    "topSpeed": 199,
+    "0to60": 3.9,
+    "handling": 82,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["The Midlands Cruise","Grand Tourer","Motorsport","Tuner","RestoMod","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1100,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 95.12,
+    "ola": 82.05,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1115259437544914995/db6lightamoc.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1115259722946330654/DB6LightweightAMOC.png",
+
+"333TopSpeed": 202,
+"3330to60": 3.7,
+"333Handling": 85,
+
+"666TopSpeed": 204,
+"6660to60": 3.5,
+"666Handling": 87,
+
+"699TopSpeed": 204,
+"6990to60": 3.3,
+"699Handling": 91,
+
+"969TopSpeed": 207,
+"9690to60": 3.5,
+"969Handling": 91,
+
+"996TopSpeed": 207,
+"9960to60": 3.3,
+"996Handling": 87,
+    "creator": "Bnuuy"
+}

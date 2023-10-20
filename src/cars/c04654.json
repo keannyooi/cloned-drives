@@ -1,0 +1,49 @@
+{
+    "rq": 73,
+    "make": "Porsche",
+    "model": "908LH",
+    "modelYear": 1968,
+    "country": "DE",
+    "topSpeed": 199,
+    "0to60": 3.9,
+    "handling": 84,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Motorsport","Ultra Expensive","Unique","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 650,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 83.33,
+    "ola": 94.21,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1148960467520339978/908LH.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1148960621958803527/90X908LH.png",
+    "creator": "Bnuuy",
+
+"333TopSpeed": 202,
+"3330to60": 3.7,
+"333Handling": 87,
+
+"666TopSpeed": 204,
+"6660to60": 3.5,
+"666Handling": 90,
+
+"699TopSpeed": 204,
+"6990to60": 3.3,
+"699Handling": 93,
+
+"969TopSpeed": 207,
+"9690to60": 3.5,
+"969Handling": 93,
+
+"996TopSpeed": 207,
+"9960to60": 3.3,
+"996Handling": 90
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 85,
+    "make": "Audi",
+    "model": "R8 LMX",
+    "modelYear": 2014,
+    "country": "DE",
+    "topSpeed": 199,
+    "0to60": 3.3,
+    "handling": 88,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite", "Eargasm", "Innovative", "Supercar", "Style Icon", "Unique","Cloned Drives Beta: Last of"],
+    "isPrize": true,
+	
+    "weight": 1595,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 91.45,
+    "ola": 90.05,
+    "description": "The last hurrah for the 1st gen Audi R8. It was limited to only 99 units and even more powerful than R8 GT. It was also the first production car with laser headlights.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1142912290652430336/Audi_R8_LMX.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1142912314488659988/Audi_R8_LMX.png",
+    "creator": "Crossfire",
+
+    "333TopSpeed": 202, 
+    "3330to60": 3.1, 
+    "333Handling": 91,
+
+    "666TopSpeed": 204, 
+    "6660to60": 3.0, 
+    "666Handling": 94,
+
+    "996TopSpeed": 207, 
+    "9960to60": 2.8, 
+    "996Handling": 94,
+
+    "969TopSpeed": 207, 
+    "9690to60": 3.0, 
+    "969Handling": 98,
+
+    "699TopSpeed": 204, 
+    "6990to60": 2.8, 
+    "699Handling": 98
+}

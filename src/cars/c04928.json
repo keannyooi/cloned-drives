@@ -1,0 +1,49 @@
+{
+    "rq": 86,
+    "make": "Porsche",
+    "model": "TWR WSC-95",
+    "modelYear": 1995,
+    "country": "DE",
+    "topSpeed": 199,
+    "0to60": 3.3,
+    "handling": 96,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Eurotech Elite","Motorsport","Unique","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 875,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 101.6,
+    "ola": 81.45,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158074948116545616/RSSpyderTWRWSC95.png?ex=651aecd7&is=65199b57&hm=91549736f4ef3e5095520ee044726cbc74a94662739c0792a1ce5200a2194f34&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158075172411166810/RSSpyderTWRWSC95.png?ex=651aed0d&is=65199b8d&hm=1206e53cbbdd0c354740aea7a593e9dc19e99bfa5196526fdcdf260880b22386&",
+
+"333TopSpeed": 202,
+"3330to60": 3.1,
+"333Handling": 99,
+
+"666TopSpeed": 204,
+"6660to60": 3,
+"666Handling": 102,
+
+"699TopSpeed": 204,
+"6990to60": 2.8,
+"699Handling": 107,
+
+"969TopSpeed": 207,
+"9690to60": 3,
+"969Handling": 107,
+
+"996TopSpeed": 207,
+"9960to60": 2.8,
+"996Handling": 102,
+    "creator": "Bnuuy"
+}

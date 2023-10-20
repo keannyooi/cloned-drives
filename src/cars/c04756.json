@@ -1,0 +1,49 @@
+{
+    "rq": 81,
+    "make": "Porsche",
+    "model": "911 Turbo \"Classic Series\"",
+    "modelYear": 2018,
+    "country": "DE",
+    "topSpeed": 195,
+    "0to60": 3.5,
+    "handling": 86,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Unique","Ultra Expensive","RestoMod","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1470,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 76.56,
+    "ola": 80,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1149307372192399390/993911TurboClassicSeries.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1149307472994127913/993911TurboClassicSeries.png",
+
+"333TopSpeed": 198,
+"3330to60": 3.3,
+"333Handling": 89,
+
+"666TopSpeed": 200,
+"6660to60": 3.1,
+"666Handling": 92,
+
+"699TopSpeed": 200,
+"6990to60": 3,
+"699Handling": 95,
+
+"969TopSpeed": 203,
+"9690to60": 3.1,
+"969Handling": 95,
+
+"996TopSpeed": 203,
+"9960to60": 3,
+"996Handling": 92,
+    "creator": "Bnuuy"
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 79,
+    "make": "Porsche",
+    "model": "718 Cayman GT4 Clubsport",
+    "modelYear": 2019,
+    "country": "DE",
+    "topSpeed": 185,
+    "0to60": 3.7,
+    "handling": 95,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Eurotech Elite", "Motorsport","Cloned Drives Beta: Last of"],
+    "isPrize": true,
+	
+    "weight": 1320,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 87.77,
+    "ola": 80,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1146148841779904643/982CaymanGT4Clubsport.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1146149359348621452/982CaymanGT4Clubsport.png",
+
+"333TopSpeed": 188,
+"3330to60": 3.5,
+"333Handling": 98,
+
+"666TopSpeed": 191,
+"6660to60": 3.3,
+"666Handling": 101,
+
+"699TopSpeed": 191,
+"6990to60": 3.1,
+"699Handling": 105,
+
+"969TopSpeed": 193,
+"9690to60": 3.3,
+"969Handling": 105,
+
+"996TopSpeed": 193,
+"9960to60": 3.1,
+"996Handling": 101,
+    "creator": "Bnuuy"
+}

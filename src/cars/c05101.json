@@ -1,0 +1,49 @@
+{
+    "rq": 82,
+    "make": "Porsche",
+    "model": "Panamera 4S Sport Turismo",
+    "modelYear": 2020,
+    "country": "DE",
+    "topSpeed": 180,
+    "0to60": 4.1,
+    "handling": 90,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 2015,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 70,
+    "ola": 78.78,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1152604108134547576/971STBPanamera4S.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1152604265488056481/971STBPanamera4S.png",
+
+"333TopSpeed": 183,
+"3330to60": 3.9,
+"333Handling": 93,
+
+"666TopSpeed": 186,
+"6660to60": 3.7,
+"666Handling": 96,
+
+"699TopSpeed": 186,
+"6990to60": 3.5,
+"699Handling": 100,
+
+"969TopSpeed": 189,
+"9690to60": 3.7,
+"969Handling": 100,
+
+"996TopSpeed": 189,
+"9960to60": 3.5,
+"996Handling": 96,
+    "creator": "Bnuuy"
+}

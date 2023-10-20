@@ -1,0 +1,49 @@
+{
+    "rq": 38,
+    "make": "Peugeot",
+    "model": "607 2.7 V6 HDi FAP 205 SV",
+    "modelYear": 2004,
+    "country": "FR",
+    "topSpeed": 143,
+    "0to60": 8.4,
+    "handling": 72,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1725,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 61.20,
+    "ola": 76.62,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1144165117844533349/Peugeot_6072.7_V6_HDi_FAP_205_SV_2004.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1144165570858725386/Peugeot_607_2.7_V6_HDi.png",
+    "creator": "Crossfire",
+
+    "333TopSpeed": 147, 
+    "3330to60": 8.0, 
+    "333Handling": 74,
+
+    "666TopSpeed": 150, 
+    "6660to60": 7.6, 
+    "666Handling": 77,
+
+    "996TopSpeed": 154, 
+    "9960to60": 7.1, 
+    "996Handling": 77,
+
+    "969TopSpeed": 154, 
+    "9690to60": 7.6, 
+    "969Handling": 80,
+
+    "699TopSpeed": 150, 
+    "6990to60": 7.1, 
+    "699Handling": 80
+}

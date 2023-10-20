@@ -1,0 +1,50 @@
+{
+    "rq": 39,
+    "make": "Skoda",
+    "model": "Octavia Scout 2.0 TDI 4x4",
+    "modelYear": 2007,
+    "country": "CZ",
+    "topSpeed": 122,
+    "0to60": 9.6,
+    "handling": 72,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 1495,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 48.00,
+    "ola": 64.58,
+    "description": "Scouting..",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1142891010079338726/D.SkodaOctaviaScout20TDI.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1142895211282956470/octaviascouttdi.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 126,
+    "3330to60": 9.1,
+    "333Handling": 74,
+
+    "666TopSpeed": 131,
+    "6660to60": 8.6, 
+    "666Handling": 77,
+
+    "996TopSpeed": 135,
+    "9960to60": 8.2,
+    "996Handling": 77,
+
+    "969TopSpeed": 135,
+    "9690to60": 8.6,
+    "969Handling": 80,
+
+    "699TopSpeed": 131,
+    "6990to60": 8.2,
+    "699Handling": 80
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 31,
+    "make": "Porsche",
+    "model": "356B Carrera 2 GT",
+    "modelYear": 1962,
+    "country": "DE",
+    "topSpeed": 135,
+    "0to60": 7.7,
+    "handling": 70,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Unique","Motorsport","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 970,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 49.7,
+    "ola": 75,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1154024428468969492/356BCarrera2GT.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1154024498132156436/356BCarrera2GT.png",
+
+"333TopSpeed": 139,
+"3330to60": 7.3,
+"333Handling": 72,
+
+"666TopSpeed": 143,
+"6660to60": 6.9,
+"666Handling": 75,
+
+"699TopSpeed": 143,
+"6990to60": 6.5,
+"699Handling": 78,
+
+"969TopSpeed": 147,
+"9690to60": 6.9,
+"969Handling": 78,
+
+"996TopSpeed": 147,
+"9960to60": 6.5,
+"996Handling": 75,
+    "creator": "Bnuuy"
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 80,
+    "make": "Porsche",
+    "model": "911 GT3 RSR",
+    "modelYear": 2004,
+    "country": "DE",
+    "topSpeed": 190,
+    "0to60": 3.7,
+    "handling": 95,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport","Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1125,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 88.09,
+    "ola": 77.77,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1152626187315712111/996911GT3RSR.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1152626294220136488/996911GT3RSR.png",
+
+"333TopSpeed": 193,
+"3330to60": 3.5,
+"333Handling": 98,
+
+"666TopSpeed": 195,
+"6660to60": 3.3,
+"666Handling": 101,
+
+"699TopSpeed": 195,
+"6990to60": 3.1,
+"699Handling": 105,
+
+"969TopSpeed": 198,
+"9690to60": 3.3,
+"969Handling": 105,
+
+"996TopSpeed": 198,
+"9960to60": 3.1,
+"996Handling": 101,
+    "creator": "Bnuuy"
+}

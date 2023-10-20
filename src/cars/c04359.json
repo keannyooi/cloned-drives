@@ -1,0 +1,49 @@
+{
+    "rq": 72,
+    "make": "Audi",
+    "model": "R8 4.2 FSI quattro",
+    "modelYear": 2010,
+    "country": "DE",
+    "topSpeed": 187,
+    "0to60": 4.2,
+    "handling": 85,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite", "Supercar", "Style Icon","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1620,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 74.02,
+    "ola": 80.27,
+    "description": "2010 brought the V8 R8 10 horsepower boost because why not.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1142911511875039304/Audi_R8_4.2_FSI_quattro_2010.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1142911547992199168/Audi_R8_4.2_2010.png",
+    "creator": "Crossfire",
+
+    "333TopSpeed": 190, 
+    "3330to60": 4.0, 
+    "333Handling": 88,
+
+    "666TopSpeed": 193, 
+    "6660to60": 3.8, 
+    "666Handling": 91,
+
+    "996TopSpeed": 195, 
+    "9960to60": 3.6, 
+    "996Handling": 91,
+
+    "969TopSpeed": 195, 
+    "9690to60": 3.8, 
+    "969Handling": 94,
+
+    "699TopSpeed": 193, 
+    "6990to60": 3.6, 
+    "699Handling": 94
+}

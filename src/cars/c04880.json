@@ -1,0 +1,49 @@
+{
+    "rq": 13,
+    "make": "Porsche",
+    "model": "356 Spyder Ghia",
+    "modelYear": 1953,
+    "country": "DE",
+    "topSpeed": 101,
+    "0to60": 14.2,
+    "handling": 57,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Unique","Concept","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 860,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 15,
+    "ola": 63.99,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1154051256478863420/956SpyderGhia.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1154051436968169502/356spyderghia.png",
+
+"333TopSpeed": 106,
+"3330to60": 13.5,
+"333Handling": 59,
+
+"666TopSpeed": 111,
+"6660to60": 12.8,
+"666Handling": 61,
+
+"699TopSpeed": 111,
+"6990to60": 12.1,
+"699Handling": 63,
+
+"969TopSpeed": 116,
+"9690to60": 12.8,
+"969Handling": 63,
+
+"996TopSpeed": 116,
+"9960to60": 12.1,
+"996Handling": 61,
+    "creator": "Bnuuy"
+}

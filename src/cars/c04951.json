@@ -1,0 +1,49 @@
+{
+    "rq": 71,
+    "make": "Porsche",
+    "model": "911 Carrera GTS",
+    "modelYear": 2010,
+    "country": "DE",
+    "topSpeed": 190,
+    "0to60": 4.2,
+    "handling": 88,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1420,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 81.25,
+    "ola": 81.66,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1152640366340747514/997.2911CarreraGTS.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1152640601137885214/997.2gts.png",
+
+"333TopSpeed": 193,
+"3330to60": 4,
+"333Handling": 91,
+
+"666TopSpeed": 195,
+"6660to60": 3.8,
+"666Handling": 94,
+
+"699TopSpeed": 195,
+"6990to60": 3.6,
+"699Handling": 98,
+
+"969TopSpeed": 198,
+"9690to60": 3.8,
+"969Handling": 98,
+
+"996TopSpeed": 198,
+"9960to60": 3.6,
+"996Handling": 94,
+    "creator": "Bnuuy"
+}

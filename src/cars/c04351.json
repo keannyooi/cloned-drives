@@ -1,0 +1,50 @@
+{
+    "rq": 59,
+    "make": "Audi",
+    "model": "Q7 3.0 TFSI quattro",
+    "modelYear": 2009,
+    "country": "DE",
+    "topSpeed": 152,
+    "0to60": 6.6,
+    "handling": 73,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 2427,
+    "gc": "High",
+    "seatCount": 7,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 64.91,
+    "ola": 62.84,
+    "description": "Supercharged V6 replaced both VR6 and V8.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1120466558775468125/B.AudiQ730TFSIq.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1120693375318892645/q730t.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 155,
+    "3330to60": 6.3,
+    "333Handling": 75,
+
+    "666TopSpeed": 159,
+    "6660to60": 5.9, 
+    "666Handling": 78,
+
+    "996TopSpeed": 162,
+    "9960to60": 5.6,
+    "996Handling": 78,
+
+    "969TopSpeed": 162,
+    "9690to60": 5.9,
+    "969Handling": 81,
+
+    "699TopSpeed": 159,
+    "6990to60": 5.6,
+    "699Handling": 81
+}

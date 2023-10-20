@@ -1,0 +1,49 @@
+{
+    "rq": 98,
+    "make": "Porsche",
+    "model": "962C",
+    "modelYear": 1989,
+    "country": "DE",
+    "topSpeed": 242,
+    "0to60": 2.5,
+    "handling": 96,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Eurotech Elite","Motorsport","Unique","Ultra Expensive","Cloned Drives Beta: Last of"],
+    "isPrize": true,
+	
+    "weight": 820,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 136.95,
+    "ola": 86.55,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158111155844304977/962C1989.png?ex=651b0e90&is=6519bd10&hm=3efa4bf9ad49ce3361683320c819387240257e0f232960b63eb261312240dcec&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158111251239551026/962962C1989.png?ex=651b0ea6&is=6519bd26&hm=f9a6fbb826c858bbfff5bac0f6b484138769b5e67935237eb83821c1a3dc1ab9&",
+
+"333TopSpeed": 244,
+"3330to60": 2.4,
+"333Handling": 99,
+
+"666TopSpeed": 246,
+"6660to60": 2.3,
+"666Handling": 102,
+
+"699TopSpeed": 246,
+"6990to60": 2.1,
+"699Handling": 107,
+
+"969TopSpeed": 248,
+"9690to60": 2.3,
+"969Handling": 107,
+
+"996TopSpeed": 248,
+"9960to60": 2.1,
+"996Handling": 102,
+    "creator": "Bnuuy"
+}

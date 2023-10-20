@@ -1,0 +1,49 @@
+{
+    "rq": 82,
+    "make": "Porsche",
+    "model": "911 GT3 Cup S",
+    "modelYear": 2008,
+    "country": "DE",
+    "topSpeed": 183,
+    "0to60": 3.5,
+    "handling": 96,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Eurotech Elite","Motorsport","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1220,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 87.5,
+    "ola": 84.55,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1154364995900018718/997911GT3CupS2008.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1154365212389032027/997GT3CupS.png",
+
+"333TopSpeed": 186,
+"3330to60": 3.3,
+"333Handling": 99,
+
+"666TopSpeed": 189,
+"6660to60": 3.1,
+"666Handling": 102,
+
+"699TopSpeed": 189,
+"6990to60": 3,
+"699Handling": 107,
+
+"969TopSpeed": 192,
+"9690to60": 3.1,
+"969Handling": 107,
+
+"996TopSpeed": 192,
+"9960to60": 3,
+"996Handling": 102,
+    "creator": "Bnuuy"
+}

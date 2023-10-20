@@ -1,0 +1,49 @@
+{
+    "rq": 31,
+    "make": "Aston Martin",
+    "model": "DBS Estate FLM",
+    "modelYear": 1971,
+    "country": "GB",
+    "topSpeed": 137,
+    "0to60": 8.8,
+    "handling": 68,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Midlands Cruise","Grand Tourer","Unique","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1690,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.66,
+    "ola": 86.36,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1115273174964240474/DBSEstateFLM.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1115273962314797177/DBSEstateFLM.png",
+
+"333TopSpeed": 141,
+"3330to60": 8.4,
+"333Handling": 70,
+
+"666TopSpeed": 145,
+"6660to60": 7.9,
+"666Handling": 72,
+
+"699TopSpeed": 145,
+"6990to60": 7.5,
+"699Handling": 75,
+
+"969TopSpeed": 148,
+"9690to60": 7.9,
+"969Handling": 75,
+
+"996TopSpeed": 148,
+"9960to60": 7.5,
+"996Handling": 72,
+    "creator": "Bnuuy"
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 81,
+    "make": "Porsche",
+    "model": "Macan Vision Safari",
+    "modelYear": 2013,
+    "country": "DE",
+    "topSpeed": 110,
+    "0to60": 5.2,
+    "handling": 80,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["Eurotech Elite","Concept","Unique","Extreme Juggernaut","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 2130,
+    "gc": "High",
+    "seatCount": 2,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 61.53,
+    "ola": 80,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158097788668751934/miscMacanSafari.png?ex=651b021d&is=6519b09d&hm=8e695421f0889184d8f0d9bd0d5624004cec31903b2b2e982c7f8f5a378bd3fa&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158097863541264464/MiscMacanVisionSafari.png?ex=651b022f&is=6519b0af&hm=924b17dd70c37cfe3631ea51690a2711fae9e067d18c278185b71b153306f378&",
+
+"333TopSpeed": 115,
+"3330to60": 4.9,
+"333Handling": 83,
+
+"666TopSpeed": 119,
+"6660to60": 4.7,
+"666Handling": 85,
+
+"699TopSpeed": 119,
+"6990to60": 4.4,
+"699Handling": 89,
+
+"969TopSpeed": 124,
+"9690to60": 4.7,
+"969Handling": 89,
+
+"996TopSpeed": 124,
+"9960to60": 4.4,
+"996Handling": 85,
+    "creator": "Bnuuy"
+}

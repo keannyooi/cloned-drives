@@ -1,0 +1,49 @@
+{
+    "rq": 101,
+    "make": "Porsche",
+    "model": "718 Cayman GT4 ePerformance",
+    "modelYear": 2023,
+    "country": "DE",
+    "topSpeed": 186,
+    "0to60": 2.2,
+    "handling": 98,
+    "driveType": "4WD",
+    "tyreType": "Slick",
+    "tags": ["Eurotech Elite","Motorsport","Eco-Friendly","Unique","Innovative","Cloned Drives Beta: Last of"],
+    "isPrize": true,
+	
+    "weight": 1500,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 112.49,
+    "ola": 80,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1146148898159726652/982CaymanGT4ePerformance.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1146149416651210822/982CaymanGT4ePerformance.png",
+
+"333TopSpeed": 189,
+"3330to60": 2.1,
+"333Handling": 101,
+
+"666TopSpeed": 192,
+"6660to60": 2,
+"666Handling": 104,
+
+"699TopSpeed": 192,
+"6990to60": 1.9,
+"699Handling": 109,
+
+"969TopSpeed": 194,
+"9690to60": 2,
+"969Handling": 109,
+
+"996TopSpeed": 194,
+"9960to60": 1.9,
+"996Handling": 104,
+    "creator": "Bnuuy"
+}

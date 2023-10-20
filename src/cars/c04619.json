@@ -1,0 +1,52 @@
+{
+    "rq": 42,
+    "make": "Volkswagen",
+    "model": "Corrado 2.9 VR6 Storm",
+    "modelYear": 1994,
+    "country": "DE",
+    "topSpeed": 146,
+    "0to60": 6.9,
+    "handling": 76,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite", "Hot Hatch","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 1220,
+    "gc": "Medium",
+    "seatCount":4,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 65.09,
+    "ola": 76.81,
+    "description": "Storm, is what the british said to celebrate the end of the Corrado.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1140974387911196682/CorradoVR6Storm.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1140974945573277747/Storm.png",
+    "creator": "Andu",
+    
+    "333TopSpeed": 150,
+    "3330to60": 6.6,
+    "333Handling": 79,
+    
+    "666TopSpeed": 153,
+    "6660to60": 6.2,
+    "666Handling": 81,
+    
+    "699TopSpeed": 153,
+    "6990to60": 5.9,
+    "699Handling": 84,
+    
+    "969TopSpeed": 157,
+    "9690to60": 6.2,
+    "969Handling": 84,
+    
+    "996TopSpeed": 157,
+    "9960to60": 5.9,
+    "996Handling": 81
+}

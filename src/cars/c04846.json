@@ -1,0 +1,49 @@
+{
+    "rq": 48,
+    "make": "Porsche",
+    "model": "Type 360 Cisitalia",
+    "modelYear": 1948,
+    "country": "DE",
+    "topSpeed": 186,
+    "0to60": 5.9,
+    "handling": 71,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Unique","Innovative","Ultra Expensive","Motorsport","Cloned Drives Beta: Last of"],
+    "isPrize": true,
+	
+    "weight": 720,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 75,
+    "ola": 70,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1146778285628469258/Type360Cisitalia.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1146778588079738911/pre356Cisitalia.png",
+
+"333TopSpeed": 189,
+"3330to60": 5.6,
+"333Handling": 73,
+
+"666TopSpeed": 192,
+"6660to60": 5.3,
+"666Handling": 76,
+
+"699TopSpeed": 192,
+"6990to60": 5,
+"699Handling": 79,
+
+"969TopSpeed": 194,
+"9690to60": 5.3,
+"969Handling": 79,
+
+"996TopSpeed": 194,
+"9960to60": 5,
+"996Handling": 76,
+    "creator": "Bnuuy"
+}

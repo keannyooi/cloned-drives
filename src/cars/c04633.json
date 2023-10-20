@@ -1,0 +1,52 @@
+{
+    "rq": 16,
+    "make": "Volkswagen",
+    "model": "Scirocco 1100 L",
+    "modelYear": 1974,
+    "country": "DE",
+    "topSpeed": 90,
+    "0to60": 15.2,
+    "handling": 65,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 780,
+    "gc": "Medium",
+    "seatCount":4,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 13.13,
+    "ola": 52.63,
+    "description": "All the style without all the power.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1140036296761425991/Scirocco1100L.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1140039586362445966/1100L.png",
+    "creator": "Andu",
+ 
+    "333TopSpeed": 96,
+    "3330to60": 14.4,
+    "333Handling": 67,
+    
+    "666TopSpeed": 102,
+    "6660to60": 13.7,
+    "666Handling": 69,
+    
+    "699TopSpeed": 102,
+    "6990to60": 12.9,
+    "699Handling": 72,
+    
+    "969TopSpeed": 107,
+    "9690to60": 13.7,
+    "969Handling": 72,
+    
+    "996TopSpeed": 107,
+    "9960to60": 12.9,
+    "996Handling": 69
+}

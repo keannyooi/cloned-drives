@@ -1,0 +1,49 @@
+{
+    "rq": 72,
+    "make": "Porsche",
+    "model": "Panamera 4S",
+    "modelYear": 2009,
+    "country": "DE",
+    "topSpeed": 175,
+    "0to60": 4.7,
+    "handling": 84,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1935,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 63.63,
+    "ola": 75,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1146192558469414962/Panamera4S970.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1146192754616062042/9704S.png",
+
+"333TopSpeed": 178,
+"3330to60": 4.5,
+"333Handling": 87,
+
+"666TopSpeed": 181,
+"6660to60": 4.2,
+"666Handling": 90,
+
+"699TopSpeed": 181,
+"6990to60": 4,
+"699Handling": 93,
+
+"969TopSpeed": 184,
+"9690to60": 4.2,
+"969Handling": 93,
+
+"996TopSpeed": 184,
+"9960to60": 4,
+"996Handling": 90,
+    "creator": "Bnuuy"
+}

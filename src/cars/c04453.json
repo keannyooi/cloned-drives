@@ -1,0 +1,49 @@
+{
+    "rq": 62,
+    "make": "Aston Martin",
+    "model": "V12 Vanquish S",
+    "modelYear": 2004,
+    "country": "GB",
+    "topSpeed": 200,
+    "0to60": 4.6,
+    "handling": 81,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Grand Tourer","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1875,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 82.14,
+    "ola": 86.95,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1120014466956922961/V12VanquishS.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1120014793181503549/V12VanquishS.png",
+
+"333TopSpeed": 203,
+"3330to60": 4.4,
+"333Handling": 84,
+
+"666TopSpeed": 205,
+"6660to60": 4.1,
+"666Handling": 86,
+
+"699TopSpeed": 205,
+"6990to60": 3.9,
+"699Handling": 90,
+
+"969TopSpeed": 208,
+"9690to60": 4.1,
+"969Handling": 90,
+
+"996TopSpeed": 208,
+"9960to60": 3.9,
+"996Handling": 86,
+    "creator": "Bnuuy"
+}

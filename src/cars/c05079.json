@@ -1,0 +1,49 @@
+{
+    "rq": 68,
+    "make": "Porsche",
+    "model": "Panamera",
+    "modelYear": 2017,
+    "country": "DE",
+    "topSpeed": 163,
+    "0to60": 5.4,
+    "handling": 85,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1815,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 61.11,
+    "ola": 74.28,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1152572568134492211/971Panamera.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1152572737043320913/971Panamera.png",
+
+"333TopSpeed": 166,
+"3330to60": 5.1,
+"333Handling": 88,
+
+"666TopSpeed": 169,
+"6660to60": 4.9,
+"666Handling": 91,
+
+"699TopSpeed": 169,
+"6990to60": 4.6,
+"699Handling": 94,
+
+"969TopSpeed": 173,
+"9690to60": 4.9,
+"969Handling": 94,
+
+"996TopSpeed": 173,
+"9960to60": 4.6,
+"996Handling": 91,
+    "creator": "Bnuuy"
+}

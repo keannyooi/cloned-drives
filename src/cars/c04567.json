@@ -1,0 +1,49 @@
+{
+    "rq": 85,
+    "make": ["DP Motorsport","Porsche"],
+    "model": "DP962",
+    "modelYear": 1992,
+    "country": "DE",
+    "topSpeed": 217,
+    "0to60": 3.4,
+    "handling": 92,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Track Day","Unique","Ultra Expensive","Tuner","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1040,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 106.24,
+    "ola": 93.5,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158108827762315325/962DPMotor.png?ex=651b0c65&is=6519bae5&hm=a56f444b50a5790c0f96dc27034169acf36e3301f48e78062c9430bb4b770cd5&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158108939045568643/962DPMotorsport.png?ex=651b0c7f&is=6519baff&hm=5e56854a4d690a80d62c0ce8afdc7774600bff4467da21818eb62b0cdfea5d06&",
+
+"333TopSpeed": 219,
+"3330to60": 3.2,
+"333Handling": 95,
+
+"666TopSpeed": 222,
+"6660to60": 3.1,
+"666Handling": 98,
+
+"699TopSpeed": 222,
+"6990to60": 2.9,
+"699Handling": 102,
+
+"969TopSpeed": 224,
+"9690to60": 3.1,
+"969Handling": 102,
+
+"996TopSpeed": 224,
+"9960to60": 2.9,
+"996Handling": 98,
+    "creator": "Bnuuy"
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 56,
+    "make": "Porsche",
+    "model": "718 Boxster Import",
+    "modelYear": 2016,
+    "country": "DE",
+    "topSpeed": 162,
+    "0to60": 5.4,
+    "handling": 86,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1355,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 70,
+    "ola": 79.11,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1145465258387984414/982BoxsterImport.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1145465812396810302/982BoxsterImport.png",
+
+"333TopSpeed": 165,
+"3330to60": 5.1,
+"333Handling": 89,
+
+"666TopSpeed": 168,
+"6660to60": 4.9,
+"666Handling": 92,
+
+"699TopSpeed": 168,
+"6990to60": 4.6,
+"699Handling": 95,
+
+"969TopSpeed": 172,
+"9690to60": 4.9,
+"969Handling": 95,
+
+"996TopSpeed": 172,
+"9960to60": 4.6,
+"996Handling": 92,
+    "creator": "Bnuuy"
+}

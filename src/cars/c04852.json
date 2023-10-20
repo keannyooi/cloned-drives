@@ -1,0 +1,49 @@
+{
+    "rq": 103,
+    "make": "Porsche",
+    "model": "Vision 916",
+    "modelYear": 2016,
+    "country": "DE",
+    "topSpeed": 180,
+    "0to60": 2.0,
+    "handling": 97,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Concept","Eco-Friendly","Unique","Track Day","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1300,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 104.98,
+    "ola": 100,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158103239191969882/miscVision916.png?ex=651b0730&is=6519b5b0&hm=e63e320fdfe104d50032384e78c1ca23ed8ffe532f13aecfb4a53926db30b8f4&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158103413435932792/MiscVision916.png?ex=651b075a&is=6519b5da&hm=aa4dc8c9a6795b28349b1f0a54d3111484cd25e07c3e7795381fb6b88bc36214&",
+
+"333TopSpeed": 183,
+"3330to60": 1.9,
+"333Handling": 100,
+
+"666TopSpeed": 186,
+"6660to60": 1.8,
+"666Handling": 103,
+
+"699TopSpeed": 186,
+"6990to60": 1.7,
+"699Handling": 108,
+
+"969TopSpeed": 189,
+"9690to60": 1.8,
+"969Handling": 108,
+
+"996TopSpeed": 189,
+"9960to60": 1.7,
+"996Handling": 103,
+    "creator": "Bnuuy"
+}

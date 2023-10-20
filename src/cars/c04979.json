@@ -1,0 +1,49 @@
+{
+    "rq": 85,
+    "make": "Porsche",
+    "model": "911 GT3 R",
+    "modelYear": 2016,
+    "country": "DE",
+    "topSpeed": 185,
+    "0to60": 3.2,
+    "handling": 96,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Eurotech Elite","Motorsport","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1220,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 91.17,
+    "ola": 83.64,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158069091563737158/991911GT3R2016.png?ex=651ae763&is=651995e3&hm=d6db11c9118f9df600e2ba467cf0e7e0696636a126916c592ceba53ae1d6ab62&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158069325652050051/991911GT3R2016.png?ex=651ae79b&is=6519961b&hm=20d529e200c0bf1174323001d17268dcec050d2d6a9e4052f7aa93e92c920a91&",
+
+"333TopSpeed": 188,
+"3330to60": 3,
+"333Handling": 99,
+
+"666TopSpeed": 191,
+"6660to60": 2.9,
+"666Handling": 102,
+
+"699TopSpeed": 191,
+"6990to60": 2.7,
+"699Handling": 107,
+
+"969TopSpeed": 193,
+"9690to60": 2.9,
+"969Handling": 107,
+
+"996TopSpeed": 193,
+"9960to60": 2.7,
+"996Handling": 102,
+    "creator": "Bnuuy"
+}

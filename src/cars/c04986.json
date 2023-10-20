@@ -1,0 +1,49 @@
+{
+    "rq": 81,
+    "make": "Porsche",
+    "model": "911 GT3 Touring Package",
+    "modelYear": 2017,
+    "country": "DE",
+    "topSpeed": 196,
+    "0to60": 3.6,
+    "handling": 93,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite", "Supercar","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1413,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 87,
+    "ola": 80,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1154063484196229131/991.2911GT3Touring.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1154063629101043762/991.2911GT3Touring.png",
+
+"333TopSpeed": 199,
+"3330to60": 3.4,
+"333Handling": 96,
+
+"666TopSpeed": 201,
+"6660to60": 3.2,
+"666Handling": 99,
+
+"699TopSpeed": 201,
+"6990to60": 3.1,
+"699Handling": 103,
+
+"969TopSpeed": 204,
+"9690to60": 3.2,
+"969Handling": 103,
+
+"996TopSpeed": 204,
+"9960to60": 3.1,
+"996Handling": 99,
+    "creator": "Bnuuy"
+}

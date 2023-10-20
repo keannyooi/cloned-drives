@@ -1,0 +1,49 @@
+{
+    "rq": 83,
+    "make": "Porsche",
+    "model": "Cayenne S Coupe",
+    "modelYear": 2019,
+    "country": "DE",
+    "topSpeed": 163,
+    "0to60": 5.0,
+    "handling": 84,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 2095,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 68.49,
+    "ola": 72,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1149293514883072019/cayennescoupe19.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1149293661897633852/CayenneScoupe19.png",
+
+"333TopSpeed": 166,
+"3330to60": 4.8,
+"333Handling": 87,
+
+"666TopSpeed": 169,
+"6660to60": 4.5,
+"666Handling": 90,
+
+"699TopSpeed": 169,
+"6990to60": 4.3,
+"699Handling": 93,
+
+"969TopSpeed": 173,
+"9690to60": 4.5,
+"969Handling": 93,
+
+"996TopSpeed": 173,
+"9960to60": 4.3,
+"996Handling": 90,
+    "creator": "Bnuuy"
+}

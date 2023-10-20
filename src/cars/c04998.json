@@ -1,0 +1,49 @@
+{
+    "rq": 68,
+    "make": "Porsche",
+    "model": "911 S/T 2.2",
+    "modelYear": 1970,
+    "country": "DE",
+    "topSpeed": 150,
+    "0to60": 5.9,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Off-Road",
+    "tags": ["Eurotech Elite","Motorsport","Unique","Extreme Juggernaut","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 990,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 68.79,
+    "ola": 83.4,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158130826257649754/Porsche911ST2.21970.png?ex=651b20e2&is=6519cf62&hm=5e071569542a21dd8dacfef0cf99fb8c03256160c9c063b8782379ffd91cdc4c&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158130969992237199/Porsche911ST2.21970.png?ex=651b2104&is=6519cf84&hm=faf8f523e88b1447635cf5db69f3d1e5b37c1a144ab3e1bdb5bd3227f9af66ab&",
+
+"333TopSpeed": 153,
+"3330to60": 5.6,
+"333Handling": 77,
+
+"666TopSpeed": 157,
+"6660to60": 5.3,
+"666Handling": 80,
+
+"699TopSpeed": 157,
+"6990to60": 5,
+"699Handling": 83,
+
+"969TopSpeed": 160,
+"9690to60": 5.3,
+"969Handling": 83,
+
+"996TopSpeed": 160,
+"9960to60": 5,
+"996Handling": 80,
+    "creator": "Bnuuy"
+}

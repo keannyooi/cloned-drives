@@ -1,0 +1,49 @@
+{
+    "rq": 1,
+    "make": ["Lohner-Porsche","Porsche"],
+    "model": "Mixte Voiturette",
+    "modelYear": 1900,
+    "country": "DE",
+    "topSpeed": 36,
+    "0to60": 99.9,
+    "handling": 31,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Unique","Eco-Friendly","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 980,
+    "gc": "High",
+    "seatCount": 3,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 0,
+    "ola": 0,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1146778072440381470/MixteVoiturette.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1146778380361019492/pre356MixteVoiturette.png",
+
+"333TopSpeed": 45,
+"3330to60": 99.9,
+"333Handling": 32,
+
+"666TopSpeed": 53,
+"6660to60": 99.9,
+"666Handling": 33,
+
+"699TopSpeed": 53,
+"6990to60": 99.9,
+"699Handling": 34,
+
+"969TopSpeed": 62,
+"9690to60": 93.6,
+"969Handling": 34,
+
+"996TopSpeed": 62,
+"9960to60": 88.4,
+"996Handling": 33,
+    "creator": "Bnuuy"
+}

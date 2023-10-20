@@ -1,0 +1,50 @@
+{
+    "rq": 72,
+    "make": "Audi",
+    "model": "Q7 6.0 TDI V12 quattro",
+    "modelYear": 2010,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 5.4,
+    "handling": 75,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 2668,
+    "gc": "High",
+    "seatCount": 7,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 72.97,
+    "ola": 70.37,
+    "description": "Most powerful production diesel engine ever fitted to a car, released during the wake of the biggest recession since 1930s.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1120466785230147684/A.AudiQ760TDIq.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1120693509146558525/q7v12.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 158,
+    "3330to60": 5.1,
+    "333Handling": 77,
+
+    "666TopSpeed": 162,
+    "6660to60": 4.9, 
+    "666Handling": 80,
+
+    "996TopSpeed": 165,
+    "9960to60": 4.6,
+    "996Handling": 80,
+
+    "969TopSpeed": 165,
+    "9690to60": 4.9,
+    "969Handling": 83,
+
+    "699TopSpeed": 162,
+    "6990to60": 4.6,
+    "699Handling": 83
+}

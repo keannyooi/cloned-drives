@@ -1,0 +1,49 @@
+{
+    "rq": 97,
+    "make": "Aston Martin",
+    "model": "Project AM-RB 003",
+    "modelYear": 2019,
+    "country": "GB",
+    "topSpeed": 212,
+    "0to60": 2.5,
+    "handling": 97,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Unique","Concept","Eco-Friendly","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1390,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Hybrid",
+    "mra": 109.25,
+    "ola": 96.7,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1120006839329898496/ProjectAMRB003.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1120007149410598912/ProjectAMRB003.png",
+
+"333TopSpeed": 214,
+"3330to60": 2.4,
+"333Handling": 100,
+
+"666TopSpeed": 217,
+"6660to60": 2.3,
+"666Handling": 103,
+
+"699TopSpeed": 217,
+"6990to60": 2.1,
+"699Handling": 108,
+
+"969TopSpeed": 219,
+"9690to60": 2.3,
+"969Handling": 108,
+
+"996TopSpeed": 219,
+"9960to60": 2.1,
+"996Handling": 103,
+    "creator": "Bnuuy"
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 88,
+    "make": "Porsche",
+    "model": "718 Cayman GT4 RS Clubsport",
+    "modelYear": 2022,
+    "country": "DE",
+    "topSpeed": 200,
+    "0to60": 3.0,
+    "handling": 96,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Eurotech Elite","Motorsport","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1330,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 89.14,
+    "ola": 78.29,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1146148856174751824/982CaymanGT4RSClubsport.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1146149373646999562/982CaymanGT4RSClubsport.png",
+
+"333TopSpeed": 203,
+"3330to60": 2.8,
+"333Handling": 99,
+
+"666TopSpeed": 205,
+"6660to60": 2.7,
+"666Handling": 102,
+
+"699TopSpeed": 205,
+"6990to60": 2.5,
+"699Handling": 107,
+
+"969TopSpeed": 208,
+"9690to60": 2.7,
+"969Handling": 107,
+
+"996TopSpeed": 208,
+"9960to60": 2.5,
+"996Handling": 102,
+    "creator": "Bnuuy"
+}

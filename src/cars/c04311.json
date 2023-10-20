@@ -1,0 +1,51 @@
+{  
+    "rq": 36,
+    "make": "Chevrolet",
+    "model": "Cruze EV Prototype",
+    "modelYear": 2010,
+    "country": "US",
+    "topSpeed": 103,
+    "0to60": 7.9,
+    "handling": 72,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Americas Assault", "Eco-Friendly","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 1750,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 46.20,
+    "ola": 75.95,
+    "description": "Tiny little steps in the electric world.",
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1114571325630066728/d38_chevrolet_cruze_ev_prototype.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1114571666043977858/CruzeEV.png",
+    "creator": "Hastur",
+
+    "333TopSpeed": 108,
+    "3330to60": 7.5,
+    "333Handling": 74,
+    
+    "666TopSpeed": 113,
+    "6660to60": 7.1,
+    "666Handling": 77,
+    
+    "699TopSpeed": 113,
+    "6990to60": 6.7,
+    "699Handling": 80,
+    
+    "969TopSpeed": 118,
+    "9690to60": 7.1,
+    "969Handling": 80,
+    
+    "996TopSpeed": 118,
+    "9960to60": 6.7,
+    "996Handling": 77
+}

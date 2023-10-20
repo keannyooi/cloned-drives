@@ -1,0 +1,49 @@
+{
+    "rq": 52,
+    "make": "Porsche",
+    "model": "911 Targa",
+    "modelYear": 1995,
+    "country": "DE",
+    "topSpeed": 168,
+    "0to60": 5.3,
+    "handling": 79,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1425,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 67.84,
+    "ola": 76.68,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1149304242289524787/993911Targa.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1149304371612483674/993911Targa.png",
+
+"333TopSpeed": 171,
+"3330to60": 5,
+"333Handling": 82,
+
+"666TopSpeed": 174,
+"6660to60": 4.8,
+"666Handling": 84,
+
+"699TopSpeed": 174,
+"6990to60": 4.5,
+"699Handling": 88,
+
+"969TopSpeed": 177,
+"9690to60": 4.8,
+"969Handling": 88,
+
+"996TopSpeed": 177,
+"9960to60": 4.5,
+"996Handling": 84,
+    "creator": "Bnuuy"
+}

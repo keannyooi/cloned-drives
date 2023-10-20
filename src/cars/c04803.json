@@ -1,0 +1,49 @@
+{
+    "rq": 92,
+    "make": "Porsche",
+    "model": "Cayenne Turbo S E-Hybrid Coupe",
+    "modelYear": 2019,
+    "country": "DE",
+    "topSpeed": 183,
+    "0to60": 3.4,
+    "handling": 89,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Eco-Friendly","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 2535,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 77.27,
+    "ola": 76.47,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1149293582088425594/cayenneturbosehybricoupe19.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1149293696387395605/CayenneTurboSehybridcoupe2019.png",
+
+"333TopSpeed": 186,
+"3330to60": 3.2,
+"333Handling": 92,
+
+"666TopSpeed": 189,
+"6660to60": 3.1,
+"666Handling": 95,
+
+"699TopSpeed": 189,
+"6990to60": 2.9,
+"699Handling": 99,
+
+"969TopSpeed": 192,
+"9690to60": 3.1,
+"969Handling": 99,
+
+"996TopSpeed": 192,
+"9960to60": 2.9,
+"996Handling": 95,
+    "creator": "Bnuuy"
+}

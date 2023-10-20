@@ -1,0 +1,49 @@
+{
+    "rq": 77,
+    "make": "Porsche",
+    "model": "911 GT3 R",
+    "modelYear": 1999,
+    "country": "DE",
+    "topSpeed": 188,
+    "0to60": 4.0,
+    "handling": 95,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Motorsport","Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1180,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 88,
+    "ola": 80,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1152626169217306674/996911GT3R.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1152626277572952084/996911GT3R.png",
+
+"333TopSpeed": 191,
+"3330to60": 3.8,
+"333Handling": 98,
+
+"666TopSpeed": 194,
+"6660to60": 3.6,
+"666Handling": 101,
+
+"699TopSpeed": 194,
+"6990to60": 3.4,
+"699Handling": 105,
+
+"969TopSpeed": 196,
+"9690to60": 3.6,
+"969Handling": 105,
+
+"996TopSpeed": 196,
+"9960to60": 3.4,
+"996Handling": 101,
+    "creator": "Bnuuy"
+}

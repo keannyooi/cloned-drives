@@ -1,0 +1,49 @@
+{
+    "rq": 74,
+    "make": ["DP Motorsport", "Porsche"],
+    "model": "RS 3.5 Red Evolution",
+    "modelYear": 2017,
+    "country": "DE",
+    "topSpeed": 180,
+    "0to60": 3.7,
+    "handling": 85,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Tuner","RestoMod","Track Day","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 940,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 82.22,
+    "ola": 81.08,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1146161545613692988/DPMotorsportRS3.5RedEvo.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1146161632536441003/DPRS3.5RedEvo.png",
+
+"333TopSpeed": 183,
+"3330to60": 3.5,
+"333Handling": 88,
+
+"666TopSpeed": 186,
+"6660to60": 3.3,
+"666Handling": 91,
+
+"699TopSpeed": 186,
+"6990to60": 3.1,
+"699Handling": 94,
+
+"969TopSpeed": 189,
+"9690to60": 3.3,
+"969Handling": 94,
+
+"996TopSpeed": 189,
+"9960to60": 3.1,
+"996Handling": 91,
+    "creator": "Bnuuy"
+}

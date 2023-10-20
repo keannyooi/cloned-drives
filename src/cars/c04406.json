@@ -1,0 +1,49 @@
+{
+    "rq": 90,
+    "make": ["David Ellis Motorsport", "Aston Martin"],
+    "model": "V8 GT700R",
+    "modelYear": 2000,
+    "country": "GB",
+    "topSpeed": 210,
+    "0to60": 2.9,
+    "handling": 95,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["The Midlands Cruise","Motorsport","Ultra Expensive","Tuner","Unique","Cloned Drives Beta: Last of"],
+    "isPrize": true,
+	
+    "weight": 850,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 107.4,
+    "ola": 89.65,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1131244359996670013/GT700R.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1131244409292337172/GT700R.png",
+
+"333TopSpeed": 212,
+"3330to60": 2.8,
+"333Handling": 98,
+
+"666TopSpeed": 215,
+"6660to60": 2.6,
+"666Handling": 101,
+
+"699TopSpeed": 215,
+"6990to60": 2.5,
+"699Handling": 105,
+
+"969TopSpeed": 217,
+"9690to60": 2.6,
+"969Handling": 105,
+
+"996TopSpeed": 217,
+"9960to60": 2.5,
+"996Handling": 101,
+    "creator": "Bnuuy"
+}

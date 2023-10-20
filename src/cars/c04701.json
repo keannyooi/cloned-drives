@@ -1,0 +1,49 @@
+{
+    "rq": 65,
+    "make": "Porsche",
+    "model": "911 Carrera RSR IROC",
+    "modelYear": 1973,
+    "country": "DE",
+    "topSpeed": 173,
+    "0to60": 4.5,
+    "handling": 87,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Eurotech Elite","Track Day","Unique","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 900,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 80,
+    "ola": 80,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1146165734804832358/Porsche911CarreraRSRIROC1973.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1146165966154244136/Porsche911RSRIROC1973.png",
+
+"333TopSpeed": 176,
+"3330to60": 4.3,
+"333Handling": 90,
+
+"666TopSpeed": 179,
+"6660to60": 4,
+"666Handling": 93,
+
+"699TopSpeed": 179,
+"6990to60": 3.8,
+"699Handling": 97,
+
+"969TopSpeed": 182,
+"9690to60": 4,
+"969Handling": 97,
+
+"996TopSpeed": 182,
+"9960to60": 3.8,
+"996Handling": 93,
+    "creator": "Bnuuy"
+}

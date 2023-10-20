@@ -1,0 +1,49 @@
+{
+    "rq": 64,
+    "make": "Aston Martin",
+    "model": "DB9",
+    "modelYear": 2013,
+    "country": "GB",
+    "topSpeed": 183,
+    "0to60": 4.5,
+    "handling": 83,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Grand Tourer","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1785,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 84.91,
+    "ola": 80,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1115260220172664932/db92013.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1115260853248331806/DB92013.png",
+
+"333TopSpeed": 186,
+"3330to60": 4.3,
+"333Handling": 86,
+
+"666TopSpeed": 189,
+"6660to60": 4,
+"666Handling": 88,
+
+"699TopSpeed": 189,
+"6990to60": 3.8,
+"699Handling": 92,
+
+"969TopSpeed": 192,
+"9690to60": 4,
+"969Handling": 92,
+
+"996TopSpeed": 192,
+"9960to60": 3.8,
+"996Handling": 88,
+    "creator": "Bnuuy"
+}

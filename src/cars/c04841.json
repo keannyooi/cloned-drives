@@ -1,0 +1,49 @@
+{
+    "rq": 1,
+    "make": "Porsche",
+    "model": "Type 32",
+    "modelYear": 1933,
+    "country": "DE",
+    "topSpeed": 39,
+    "0to60": 99.9,
+    "handling": 44,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Style Icon","Unique","Concept","Innovative","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1030,
+    "gc": "High",
+    "seatCount": 4,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 0,
+    "ola": 0,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1146778152350269560/PorskieType32.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1146778458362478663/pre356Type32.png",
+
+"333TopSpeed": 48,
+"3330to60": 99.9,
+"333Handling": 45,
+
+"666TopSpeed": 56,
+"6660to60": 99.9,
+"666Handling": 47,
+
+"699TopSpeed": 56,
+"6990to60": 99.9,
+"699Handling": 49,
+
+"969TopSpeed": 65,
+"9690to60": 83.3,
+"969Handling": 49,
+
+"996TopSpeed": 65,
+"9960to60": 78.6,
+"996Handling": 47,
+    "creator": "Bnuuy"
+}

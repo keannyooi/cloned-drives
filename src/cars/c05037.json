@@ -1,0 +1,49 @@
+{
+    "rq": 69,
+    "make": "Porsche",
+    "model": "914/6R Eurostyle",
+    "modelYear": 1970,
+    "country": "DE",
+    "topSpeed": 140,
+    "0to60": 6.4,
+    "handling": 73,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Concept","Unique","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 912,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 55.24,
+    "ola": 71.26,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1157617459172491345/914-6REuro.png?ex=651942c5&is=6517f145&hm=599ca1d39dd1c20684a20256fb018745e8c105f9ee3599b7a1efbdf0d2b70d4a&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1157617753042190407/914Eurostyle.png?ex=6519430b&is=6517f18b&hm=50f65fbd26c39d2dc5f4df87111b0d59dbd7e58d44003be98989e210af9668e6&",
+
+"333TopSpeed": 144,
+"3330to60": 6.1,
+"333Handling": 75,
+
+"666TopSpeed": 147,
+"6660to60": 5.8,
+"666Handling": 78,
+
+"699TopSpeed": 147,
+"6990to60": 5.4,
+"699Handling": 81,
+
+"969TopSpeed": 151,
+"9690to60": 5.8,
+"969Handling": 81,
+
+"996TopSpeed": 151,
+"9960to60": 5.4,
+"996Handling": 78,
+    "creator": "Bnuuy"
+}

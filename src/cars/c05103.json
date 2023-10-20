@@ -1,0 +1,49 @@
+{
+    "rq": 83,
+    "make": "Porsche",
+    "model": "Panamera GTS Sport Turismo",
+    "modelYear": 2018,
+    "country": "DE",
+    "topSpeed": 180,
+    "0to60": 3.9,
+    "handling": 89,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 2025,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 72.56,
+    "ola": 79.1,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1152581075667795988/971STPanameraGTS.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1152581232773840986/971STPanameraGTS.png",
+
+"333TopSpeed": 183,
+"3330to60": 3.7,
+"333Handling": 92,
+
+"666TopSpeed": 186,
+"6660to60": 3.5,
+"666Handling": 95,
+
+"699TopSpeed": 186,
+"6990to60": 3.3,
+"699Handling": 99,
+
+"969TopSpeed": 189,
+"9690to60": 3.5,
+"969Handling": 99,
+
+"996TopSpeed": 189,
+"9960to60": 3.3,
+"996Handling": 95,
+    "creator": "Bnuuy"
+}

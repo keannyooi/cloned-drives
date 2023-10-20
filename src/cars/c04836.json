@@ -1,0 +1,49 @@
+{
+    "rq": 59,
+    "make": "Porsche",
+    "model": "Taycan Sport Turismo",
+    "modelYear": 2022,
+    "country": "DE",
+    "topSpeed": 143,
+    "0to60": 5.1,
+    "handling": 80,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eco-Friendly","Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 2145,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Electric",
+    "mra": 75,
+    "ola": 79.43,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1145435178911662090/STTaycan.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1145435491957756074/STTaycan.png",
+
+"333TopSpeed": 147,
+"3330to60": 4.8,
+"333Handling": 83,
+
+"666TopSpeed": 150,
+"6660to60": 4.6,
+"666Handling": 85,
+
+"699TopSpeed": 150,
+"6990to60": 4.3,
+"699Handling": 89,
+
+"969TopSpeed": 154,
+"9690to60": 4.6,
+"969Handling": 89,
+
+"996TopSpeed": 154,
+"9960to60": 4.3,
+"996Handling": 85,
+    "creator": "Bnuuy"
+}

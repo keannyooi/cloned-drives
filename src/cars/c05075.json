@@ -1,0 +1,49 @@
+{
+    "rq": 30,
+    "make": "Porsche",
+    "model": "HLS",
+    "modelYear": 1966,
+    "country": "DE",
+    "topSpeed": 129,
+    "0to60": 9.9,
+    "handling": 70,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Concept","Unique","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 950,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 41.25,
+    "ola": 70,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158083061074903141/miscHLS.png?ex=651af465&is=6519a2e5&hm=ed4cc393c058738c44f4a710ecdc126af98052ef183849d69ab7f1f5cd641141&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158083282987143188/MiscHLS.png?ex=651af49a&is=6519a31a&hm=d855c025ff3842c760cb0d387ec1f260a4bb624400a4a42825989e046ec2b219&",
+
+"333TopSpeed": 133,
+"3330to60": 9.4,
+"333Handling": 72,
+
+"666TopSpeed": 137,
+"6660to60": 8.9,
+"666Handling": 75,
+
+"699TopSpeed": 137,
+"6990to60": 8.4,
+"699Handling": 78,
+
+"969TopSpeed": 141,
+"9690to60": 8.9,
+"969Handling": 78,
+
+"996TopSpeed": 141,
+"9960to60": 8.4,
+"996Handling": 75,
+    "creator": "Bnuuy"
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 1,
+    "make": "Porsche",
+    "model": "Type 12",
+    "modelYear": 1931,
+    "country": "DE",
+    "topSpeed": 50,
+    "0to60": 99.9,
+    "handling": 47,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Unique","Concept","Innovative","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 900,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 0,
+    "ola": 32.45,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1146778132079190148/PorscheType12.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1146778442495438888/pre356Type12.png",
+
+"333TopSpeed": 59,
+"3330to60": 99.9,
+"333Handling": 49,
+
+"666TopSpeed": 67,
+"6660to60": 71.5,
+"666Handling": 50,
+
+"699TopSpeed": 67,
+"6990to60": 67.5,
+"699Handling": 52,
+
+"969TopSpeed": 76,
+"9690to60": 71.5,
+"969Handling": 52,
+
+"996TopSpeed": 76,
+"9960to60": 67.5,
+"996Handling": 50,
+    "creator": "Bnuuy"
+}

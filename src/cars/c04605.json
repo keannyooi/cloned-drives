@@ -1,0 +1,50 @@
+{
+    "rq": 29,
+    "make": "Skoda",
+    "model": "Yeti 1.6 TDI Greenline",
+    "modelYear": 2009,
+    "country": "CZ",
+    "topSpeed": 109,
+    "0to60": 11.4,
+    "handling": 71,
+    "driveType": "FWD",
+    "tyreType": "All-Surface",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 1430,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 33.04,
+    "ola": 61.40,
+    "description": "Greenest of greens.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1144009907478204567/E.SkodaYeti16TDI.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1144011838703534221/yeti16.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 114,
+    "3330to60": 10.8,
+    "333Handling": 73,
+
+    "666TopSpeed": 119,
+    "6660to60": 10.3, 
+    "666Handling": 76,
+
+    "996TopSpeed": 123,
+    "9960to60": 9.7,
+    "996Handling": 76,
+
+    "969TopSpeed": 123,
+    "9690to60": 10.3,
+    "969Handling": 79,
+
+    "699TopSpeed": 119,
+    "6990to60": 9.7,
+    "699Handling": 79
+}

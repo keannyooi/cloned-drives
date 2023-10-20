@@ -1,0 +1,50 @@
+{
+    "rq": 52,
+    "make": "Audi",
+    "model": "TT Coupe quattro Sport",
+    "modelYear": 2005,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 5.8,
+    "handling": 81,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite", "Style Icon","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 1415,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 64.44,
+    "ola": 68.96,
+    "description": "Most powerful TT with 250 ps.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1134099105589776485/B.AudiTTSport.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1134101617818488902/TTQS.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 158,
+    "3330to60": 5.5,
+    "333Handling": 84,
+
+    "666TopSpeed": 162,
+    "6660to60": 5.2, 
+    "666Handling": 86,
+
+    "996TopSpeed": 165,
+    "9960to60": 4.9,
+    "996Handling": 86,
+
+    "969TopSpeed": 165,
+    "9690to60": 5.2,
+    "969Handling": 90,
+
+    "699TopSpeed": 162,
+    "6990to60": 4.9,
+    "699Handling": 90
+}

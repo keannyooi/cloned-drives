@@ -1,0 +1,50 @@
+{
+    "rq": 38,
+    "make": "Skoda",
+    "model": "Octavia 1.8T 20V Laurin Klement Long",
+    "modelYear": 1999,
+    "country": "CZ",
+    "topSpeed": 134,
+    "0to60": 8.7,
+    "handling": 74,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite", "Unique","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 1385,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 51.47,
+    "ola": 78.18,
+    "description": "Special model built for Czech goverment.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1137461530888249576/D.SkodaOctaviaLK.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1137471592696381470/octavialong.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 138,
+    "3330to60": 8.3,
+    "333Handling": 76,
+
+    "666TopSpeed": 142,
+    "6660to60": 7.8, 
+    "666Handling": 79,
+
+    "996TopSpeed": 146,
+    "9960to60": 7.4,
+    "996Handling": 79,
+
+    "969TopSpeed": 146,
+    "9690to60": 7.8,
+    "969Handling": 82,
+
+    "699TopSpeed": 142,
+    "6990to60": 7.4,
+    "699Handling": 82
+}

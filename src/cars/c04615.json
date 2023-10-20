@@ -1,0 +1,49 @@
+{
+    "rq": 58,
+    "make": "TVR",
+    "model": "V8S",
+    "modelYear": 1991,
+    "country": "GB",
+    "topSpeed": 145,
+    "0to60": 5.3,
+    "handling": 79,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1042,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 69.74,
+    "ola": 81.22,
+    "description": "This was the real deal, capable of competing with Testarossa, Esprit Turbo SE and Virage. This Rover V8 engine would be used in almost every TVR model in the early 90s, receiving various upgrades in the process.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1144373892765454406/TVR_V8S.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1144373138168225822/TVR_V8S.png",
+    "creator": "Based",
+
+"333TopSpeed": 145, 
+"3330to60": 5.0, 
+"333Handling": 82,
+
+"666TopSpeed": 149, 
+"6660to60": 4.8, 
+"666Handling": 84,
+
+"699TopSpeed": 152, 
+"6990to60": 4.5, 
+"699Handling": 88,
+
+"969TopSpeed": 156, 
+"9690to60": 4.8, 
+"969Handling": 88,
+
+"996TopSpeed": 156, 
+"9960to60": 4.5, 
+"996Handling": 84
+}

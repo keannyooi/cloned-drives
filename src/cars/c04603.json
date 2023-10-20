@@ -1,0 +1,50 @@
+{
+    "rq": 30,
+    "make": "Skoda",
+    "model": "Yeti 1.2 TSI L/K",
+    "modelYear": 2013,
+    "country": "CZ",
+    "topSpeed": 109,
+    "0to60": 11.1,
+    "handling": 71,
+    "driveType": "FWD",
+    "tyreType": "All-Surface",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 1345,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 34.79,
+    "ola": 68.46,
+    "description": "Officially Skoda's first crossover, unofficially the second.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1144009448344539226/D.SkodaYeti12TSI.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1144011631542681600/yeti12.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 114,
+    "3330to60": 10.5,
+    "333Handling": 73,
+
+    "666TopSpeed": 119,
+    "6660to60": 10.0, 
+    "666Handling": 76,
+
+    "996TopSpeed": 123,
+    "9960to60": 9.4,
+    "996Handling": 76,
+
+    "969TopSpeed": 123,
+    "9690to60": 10.0,
+    "969Handling": 79,
+
+    "699TopSpeed": 119,
+    "6990to60": 9.4,
+    "699Handling": 79
+}

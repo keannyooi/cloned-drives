@@ -1,0 +1,49 @@
+{
+    "rq": 26,
+    "make": ["Glockler-Porsche", "Porsche"],
+    "model": "356 Coupe",
+    "modelYear": 1954,
+    "country": "DE",
+    "topSpeed": 120,
+    "0to60": 9.5,
+    "handling": 59,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Track Day","Unique","Concept","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 640,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 32.17,
+    "ola": 71.24,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1154051361395187774/354GlocklerCoupe.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1154051511299608637/356GlocklerCoupe.png",
+
+"333TopSpeed": 124,
+"3330to60": 9,
+"333Handling": 61,
+
+"666TopSpeed": 129,
+"6660to60": 8.6,
+"666Handling": 63,
+
+"699TopSpeed": 129,
+"6990to60": 8.1,
+"699Handling": 65,
+
+"969TopSpeed": 133,
+"9690to60": 8.6,
+"969Handling": 65,
+
+"996TopSpeed": 133,
+"9960to60": 8.1,
+"996Handling": 63,
+    "creator": "Bnuuy"
+}

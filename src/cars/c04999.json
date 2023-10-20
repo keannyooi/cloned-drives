@@ -1,0 +1,49 @@
+{
+    "rq": 62,
+    "make": "Porsche",
+    "model": "911 S/T 2.5",
+    "modelYear": 1971,
+    "country": "DE",
+    "topSpeed": 170,
+    "0to60": 5.0,
+    "handling": 78,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Motorsport","Unique","Ultra Expensive","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 930,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 72.37,
+    "ola": 80,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158130892892545115/Porsche911ST2.51971.png?ex=651b20f1&is=6519cf71&hm=108d01014cce41717dd96bbf9cd7e0b2fe17dcb35b08f57e94f3d7f1d7cac45f&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158131010169491598/Porsche911ST2.51971.png?ex=651b210d&is=6519cf8d&hm=c334c493d588fc4472dad384c13497c9128a8a4b45648351cf1a8ef19e2dacc1&",
+
+"333TopSpeed": 173,
+"3330to60": 4.8,
+"333Handling": 81,
+
+"666TopSpeed": 176,
+"6660to60": 4.5,
+"666Handling": 83,
+
+"699TopSpeed": 176,
+"6990to60": 4.3,
+"699Handling": 87,
+
+"969TopSpeed": 179,
+"9690to60": 4.5,
+"969Handling": 87,
+
+"996TopSpeed": 179,
+"9960to60": 4.3,
+"996Handling": 83,
+    "creator": "Bnuuy"
+}

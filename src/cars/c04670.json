@@ -1,0 +1,49 @@
+{
+    "rq": 76,
+    "make": "Porsche",
+    "model": "911 Carrera 3.0 Group 3",
+    "modelYear": 1978,
+    "country": "DE",
+    "topSpeed": 129,
+    "0to60": 5.2,
+    "handling": 80,
+    "driveType": "RWD",
+    "tyreType": "Off-Road",
+    "tags": ["Eurotech Elite","Motorsport","Unique","Style Icon","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1070,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 69.99,
+    "ola": 83.54,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1146165802630926437/Porsche911Carrera3.0Group31978.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1146166010462879894/Porsche911Carrera3.0Group3.png",
+
+"333TopSpeed": 133,
+"3330to60": 4.9,
+"333Handling": 83,
+
+"666TopSpeed": 137,
+"6660to60": 4.7,
+"666Handling": 85,
+
+"699TopSpeed": 137,
+"6990to60": 4.4,
+"699Handling": 89,
+
+"969TopSpeed": 141,
+"9690to60": 4.7,
+"969Handling": 89,
+
+"996TopSpeed": 141,
+"9960to60": 4.4,
+"996Handling": 85,
+    "creator": "Bnuuy"
+}

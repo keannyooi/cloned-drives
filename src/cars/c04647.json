@@ -1,0 +1,49 @@
+{
+    "rq": 68,
+    "make": "Porsche",
+    "model": "907K",
+    "modelYear": 1967,
+    "country": "DE",
+    "topSpeed": 177,
+    "0to60": 4.0,
+    "handling": 81,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Motorsport","Unique","Ultra Expensive","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 600,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 80,
+    "ola": 95.48,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1148994826805710849/907K.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1148994871995142154/90X907K.png",
+
+"333TopSpeed": 180,
+"3330to60": 3.8,
+"333Handling": 84,
+
+"666TopSpeed": 183,
+"6660to60": 3.6,
+"666Handling": 86,
+
+"699TopSpeed": 183,
+"6990to60": 3.4,
+"699Handling": 90,
+
+"969TopSpeed": 186,
+"9690to60": 3.6,
+"969Handling": 90,
+
+"996TopSpeed": 186,
+"9960to60": 3.4,
+"996Handling": 86,
+    "creator": "Bnuuy"
+}

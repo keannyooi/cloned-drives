@@ -1,0 +1,50 @@
+{
+    "rq": 74,
+    "make": "Toyota",
+    "model": "GR Supra RZ",
+    "modelYear": 2020,
+    "country": "JP",
+    "topSpeed": 161,
+    "0to60": 3.9,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Street Racer","The Amplification of Asia","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 1534,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 73.58,
+    "ola": 82.05,
+    "description": "Only a year into the production cycle, GR Supra recieved a 40 PS boost thanks to updated B58 engine.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1145822229121216582/A.GRSupra.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1145822426383519824/SUPRA.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 164,
+    "3330to60": 3.7,
+    "333Handling": 94,
+
+    "666TopSpeed": 167,
+    "6660to60": 3.5, 
+    "666Handling": 97,
+
+    "996TopSpeed": 171,
+    "9960to60": 3.3,
+    "996Handling": 97,
+
+    "969TopSpeed": 171,
+    "9690to60": 3.5,
+    "969Handling": 101,
+
+    "699TopSpeed": 167,
+    "6990to60": 3.3,
+    "699Handling": 101
+}

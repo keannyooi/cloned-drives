@@ -1,0 +1,49 @@
+{
+    "rq": 49,
+    "make": "Porsche",
+    "model": "PEP",
+    "modelYear": 1985,
+    "country": "DE",
+    "topSpeed": 120,
+    "0to60": 5.8,
+    "handling": 79,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Concept","Unique","Innovative","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 790,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 51.89,
+    "ola": 77.77,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158087143219023963/MiscPEP.png?ex=651af833&is=6519a6b3&hm=4c05526be2d7c227f44ef89f5700d85ac6b3ca10d82293e5a14e76845ecbabcf&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158087206045483068/MiscPEP.png?ex=651af842&is=6519a6c2&hm=c7eadd09d02abd6d055b2ab27ad70cef5fdf0aa64eb1b64d5d1cd29dc25d1831&",
+
+"333TopSpeed": 124,
+"3330to60": 5.5,
+"333Handling": 82,
+
+"666TopSpeed": 129,
+"6660to60": 5.2,
+"666Handling": 84,
+
+"699TopSpeed": 129,
+"6990to60": 4.9,
+"699Handling": 88,
+
+"969TopSpeed": 133,
+"9690to60": 5.2,
+"969Handling": 88,
+
+"996TopSpeed": 133,
+"9960to60": 4.9,
+"996Handling": 84,
+    "creator": "Bnuuy"
+}

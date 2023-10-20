@@ -1,0 +1,49 @@
+{
+    "rq": 83,
+    "make": "Gumpert",
+    "model": "Apollo Hybrid Racecar",
+    "modelYear": 2008,
+    "country": "DE",
+    "topSpeed": 180,
+    "0to60": 3.4,
+    "handling": 95,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Eurotech Elite","Unique","Ultra Expensive","Supercar","Eco-Friendly","Motorsport","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1150,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Hybrid",
+    "mra": 117.24,
+    "ola": 91.18,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1130947040713650366/ApolloHybridGumpert.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1130947310659043429/ApolloHybridGumpert.png",
+
+"333TopSpeed": 183,
+"3330to60": 3.2,
+"333Handling": 98,
+
+"666TopSpeed": 186,
+"6660to60": 3.1,
+"666Handling": 101,
+
+"699TopSpeed": 186,
+"6990to60": 2.9,
+"699Handling": 105,
+
+"969TopSpeed": 189,
+"9690to60": 3.1,
+"969Handling": 105,
+
+"996TopSpeed": 189,
+"9960to60": 2.9,
+"996Handling": 101,
+    "creator": "Bnuuy"
+}

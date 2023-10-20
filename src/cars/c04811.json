@@ -1,0 +1,49 @@
+{
+    "rq": 60,
+    "make": "Porsche",
+    "model": "Cayman S",
+    "modelYear": 2006,
+    "country": "DE",
+    "topSpeed": 171,
+    "0to60": 5.1,
+    "handling": 87,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1340,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 72.18,
+    "ola": 82.9,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1145439637368737902/987CaymanS.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1145439938691739658/987CaymanS.png",
+
+"333TopSpeed": 174,
+"3330to60": 4.8,
+"333Handling": 90,
+
+"666TopSpeed": 177,
+"6660to60": 4.6,
+"666Handling": 93,
+
+"699TopSpeed": 177,
+"6990to60": 4.3,
+"699Handling": 97,
+
+"969TopSpeed": 180,
+"9690to60": 4.6,
+"969Handling": 97,
+
+"996TopSpeed": 180,
+"9960to60": 4.3,
+"996Handling": 93,
+    "creator": "Bnuuy"
+}

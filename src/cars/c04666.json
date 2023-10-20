@@ -1,0 +1,49 @@
+{
+    "rq": 47,
+    "make": "Porsche",
+    "model": "911 Carrera 2 Targa",
+    "modelYear": 1989,
+    "country": "DE",
+    "topSpeed": 160,
+    "0to60": 5.6,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1350,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 67.81,
+    "ola": 73.63,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1146440720153071719/964911Carrera2Targa.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1146440900696866816/964911Carrera2Targa.png",
+
+"333TopSpeed": 163,
+"3330to60": 5.3,
+"333Handling": 80,
+
+"666TopSpeed": 167,
+"6660to60": 5,
+"666Handling": 82,
+
+"699TopSpeed": 167,
+"6990to60": 4.8,
+"699Handling": 85,
+
+"969TopSpeed": 170,
+"9690to60": 5,
+"969Handling": 85,
+
+"996TopSpeed": 170,
+"9960to60": 4.8,
+"996Handling": 82,
+    "creator": "Bnuuy"
+}

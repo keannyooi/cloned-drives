@@ -1,0 +1,49 @@
+{
+    "rq": 77,
+    "make": "Porsche",
+    "model": "911 Speedster",
+    "modelYear": 2019,
+    "country": "DE",
+    "topSpeed": 193,
+    "0to60": 3.8,
+    "handling": 90,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1465,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 85.99,
+    "ola": 80,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1152665614868029481/991.2911Speedster.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1152665741112381612/991.2911Speedster.png",
+
+"333TopSpeed": 196,
+"3330to60": 3.6,
+"333Handling": 93,
+
+"666TopSpeed": 198,
+"6660to60": 3.4,
+"666Handling": 96,
+
+"699TopSpeed": 198,
+"6990to60": 3.2,
+"699Handling": 100,
+
+"969TopSpeed": 201,
+"9690to60": 3.4,
+"969Handling": 100,
+
+"996TopSpeed": 201,
+"9960to60": 3.2,
+"996Handling": 96,
+    "creator": "Bnuuy"
+}

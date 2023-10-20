@@ -1,0 +1,50 @@
+{
+    "rq": 58,
+    "make": ["MTM", "Audi"],
+    "model": "Audi S3 Sportback",
+    "modelYear": 2009,
+    "country": "DE",
+    "topSpeed": 158,
+    "0to60": 5.4,
+    "handling": 83,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite", "Tuner", "Hot Hatch","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 1530,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 76.05,
+    "ola": 70.37,
+    "description": "US only pack 'converting' your regular 2.0 TFSI A3 into S3.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1134101157283889172/B.MTMAudiS3SB.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1134102786548715641/MTMS3.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 161,
+    "3330to60": 5.1,
+    "333Handling": 86,
+
+    "666TopSpeed": 165,
+    "6660to60": 4.9, 
+    "666Handling": 88,
+
+    "996TopSpeed": 168,
+    "9960to60": 4.6,
+    "996Handling": 88,
+
+    "969TopSpeed": 168,
+    "9690to60": 4.9,
+    "969Handling": 92,
+
+    "699TopSpeed": 165,
+    "6990to60": 4.6,
+    "699Handling": 92
+}

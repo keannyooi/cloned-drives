@@ -1,0 +1,49 @@
+{
+    "rq": 86,
+    "make": "Porsche",
+    "model": "Panamera 4 E-Hybrid Sport Turismo",
+    "modelYear": 2020,
+    "country": "DE",
+    "topSpeed": 174,
+    "0to60": 4.2,
+    "handling": 88,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Eco-Friendly","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 2300,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 66.9,
+    "ola": 76.11,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1152604091403477002/971STBPanamera4EHybrid.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1152604241156907128/971STBPanamera4EHybrid.png",
+
+"333TopSpeed": 177,
+"3330to60": 4,
+"333Handling": 91,
+
+"666TopSpeed": 180,
+"6660to60": 3.8,
+"666Handling": 94,
+
+"699TopSpeed": 180,
+"6990to60": 3.6,
+"699Handling": 98,
+
+"969TopSpeed": 183,
+"9690to60": 3.8,
+"969Handling": 98,
+
+"996TopSpeed": 183,
+"9960to60": 3.6,
+"996Handling": 94,
+    "creator": "Bnuuy"
+}

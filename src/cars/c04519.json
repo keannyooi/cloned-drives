@@ -1,0 +1,49 @@
+{
+    "rq": 43,
+    "make": "Peugeot",
+    "model": "3008 2.0 BlueHDi 150",
+    "modelYear": 2016,
+    "country": "FR",
+    "topSpeed": 126,
+    "0to60": 9.4,
+    "handling": 74,
+    "driveType": "FWD",
+    "tyreType": "All-Surface",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1425,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 52.94,
+    "ola": 74.35,
+    "description": "This two-tone paint work is actually from factory.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1148903282186666035/Peugeot_3008_2.0_BlueHDi_150.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1148904934985695264/Peugeot_3008_2.0_BlueHDi_150.png",
+    "creator": "Crossfire",
+
+    "333TopSpeed": 130,
+    "3330to60": 8.9,
+    "333Handling": 76,
+
+    "666TopSpeed": 134,
+    "6660to60": 8.5,
+    "666Handling": 79,
+
+    "699TopSpeed": 134,
+    "6990to60": 8.0,
+    "699Handling": 82,
+
+    "969TopSpeed": 138,
+    "9690to60": 8.5,
+    "969Handling": 82,
+
+    "996TopSpeed": 138,
+    "9960to60": 8.0,
+    "996Handling": 79
+}

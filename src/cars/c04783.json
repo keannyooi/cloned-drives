@@ -1,0 +1,49 @@
+{
+    "rq": 72,
+    "make": "Porsche",
+    "model": "Cayenne GTS",
+    "modelYear": 2008,
+    "country": "DE",
+    "topSpeed": 157,
+    "0to60": 5.8,
+    "handling": 80,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 2225,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 68.24,
+    "ola": 75.86,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1115052126268293232/cayenneGTS2008.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1115052501843066930/CayenneGTS2008.png",
+
+"333TopSpeed": 160,
+"3330to60": 5.5,
+"333Handling": 83,
+
+"666TopSpeed": 164,
+"6660to60": 5.2,
+"666Handling": 85,
+
+"699TopSpeed": 164,
+"6990to60": 4.9,
+"699Handling": 89,
+
+"969TopSpeed": 167,
+"9690to60": 5.2,
+"969Handling": 89,
+
+"996TopSpeed": 167,
+"9960to60": 4.9,
+"996Handling": 85,
+    "creator": "Bnuuy"
+}

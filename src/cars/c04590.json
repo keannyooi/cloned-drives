@@ -1,0 +1,50 @@
+{
+    "rq": 37,
+    "make": "Skoda",
+    "model": "Octavia 2.0 TDI Style",
+    "modelYear": 2008,
+    "country": "CZ",
+    "topSpeed": 131,
+    "0to60": 9.1,
+    "handling": 75,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 1410,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 61.07,
+    "ola": 68.31,
+    "description": "Machine 2.0 TDI",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1142890478765875322/D.SkodaOctavia20TDIStyle.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1142894883774939176/octavia20tdi.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 133,
+    "3330to60": 8.6,
+    "333Handling": 77,
+
+    "666TopSpeed": 137,
+    "6660to60": 8.2, 
+    "666Handling": 80,
+
+    "996TopSpeed": 141,
+    "9960to60": 7.7,
+    "996Handling": 80,
+
+    "969TopSpeed": 141,
+    "9690to60": 8.2,
+    "969Handling": 83,
+
+    "699TopSpeed": 137,
+    "6990to60": 7.7,
+    "699Handling": 83
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 75,
+    "make": "Porsche",
+    "model": "911 Carrera 4 GTS Cabriolet",
+    "modelYear": 2014,
+    "country": "DE",
+    "topSpeed": 188,
+    "0to60": 4.2,
+    "handling": 88,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1540,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 77.99,
+    "ola": 82.22,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158059909993209924/991.1911Carrera4GTSCab.png?ex=651aded6&is=65198d56&hm=32777a9fcfe7061a988a4e3b6985d038e9741c867333ef5646fe9dedd2aa5a28&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158060104822825041/991.1911Carrera4gtscab.png?ex=651adf04&is=65198d84&hm=e1049b3e1dc839591d51d472bc5e0977631a7b8fee77d322dbfbc38a0ebd19df&",
+
+"333TopSpeed": 191,
+"3330to60": 4,
+"333Handling": 91,
+
+"666TopSpeed": 194,
+"6660to60": 3.8,
+"666Handling": 94,
+
+"699TopSpeed": 194,
+"6990to60": 3.6,
+"699Handling": 98,
+
+"969TopSpeed": 196,
+"9690to60": 3.8,
+"969Handling": 98,
+
+"996TopSpeed": 196,
+"9960to60": 3.6,
+"996Handling": 94,
+    "creator": "Bnuuy"
+}

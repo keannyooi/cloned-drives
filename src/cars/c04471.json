@@ -1,0 +1,49 @@
+{
+    "rq": 84,
+    "make": ["Lagonda","Aston Martin"],
+    "model": "All-Terrain Concept",
+    "modelYear": 2019,
+    "country": "GB",
+    "topSpeed": 155,
+    "0to60": 4.2,
+    "handling": 82,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["The Midlands Cruise","Unique","Concept","Eco-Friendly","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 2520,
+    "gc": "High",
+    "seatCount": 4,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 79.24,
+    "ola": 90.47,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1115272751427625050/LagondaAllTerrainConcept.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1115273797059231824/LAgondaAllTerrainConcept.png",
+
+"333TopSpeed": 158,
+"3330to60": 4,
+"333Handling": 85,
+
+"666TopSpeed": 162,
+"6660to60": 3.8,
+"666Handling": 87,
+
+"699TopSpeed": 162,
+"6990to60": 3.6,
+"699Handling": 91,
+
+"969TopSpeed": 165,
+"9690to60": 3.8,
+"969Handling": 91,
+
+"996TopSpeed": 165,
+"9960to60": 3.6,
+"996Handling": 87,
+    "creator": "Bnuuy"
+}

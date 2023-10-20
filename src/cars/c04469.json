@@ -1,0 +1,49 @@
+{
+    "rq": 64,
+    "make": "Aston Martin",
+    "model": "Virage Shooting Brake Zagato Centennial",
+    "modelYear": 2014,
+    "country": "GB",
+    "topSpeed": 186,
+    "0to60": 4.5,
+    "handling": 84,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Grand Tourer","Ultra Expensive","Unique","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1790,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 78.95,
+    "ola": 80,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1115260633525526679/Virageshhotingzag.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1115261071662530680/VirageShootingZag.png",
+
+"333TopSpeed": 189,
+"3330to60": 4.3,
+"333Handling": 87,
+
+"666TopSpeed": 192,
+"6660to60": 4,
+"666Handling": 90,
+
+"699TopSpeed": 192,
+"6990to60": 3.8,
+"699Handling": 93,
+
+"969TopSpeed": 194,
+"9690to60": 4,
+"969Handling": 93,
+
+"996TopSpeed": 194,
+"9960to60": 3.8,
+"996Handling": 90,
+    "creator": "Bnuuy"
+}

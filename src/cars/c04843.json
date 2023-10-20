@@ -1,0 +1,49 @@
+{
+    "rq": 1,
+    "make": "Porsche",
+    "model": "Type 114",
+    "modelYear": 1938,
+    "country": "DE",
+    "topSpeed": 85,
+    "0to60": 21.5,
+    "handling": 50,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Street Racer","Concept","Unique","Innovative","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 710,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 3.69,
+    "ola": 83.72,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1146778177763557416/PorscheType114.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1146778477656277112/pre356Type114.png",
+
+"333TopSpeed": 91,
+"3330to60": 20.4,
+"333Handling": 52,
+
+"666TopSpeed": 97,
+"6660to60": 19.4,
+"666Handling": 53,
+
+"699TopSpeed": 97,
+"6990to60": 18.3,
+"699Handling": 56,
+
+"969TopSpeed": 103,
+"9690to60": 19.4,
+"969Handling": 56,
+
+"996TopSpeed": 103,
+"9960to60": 18.3,
+"996Handling": 53,
+    "creator": "Bnuuy"
+}

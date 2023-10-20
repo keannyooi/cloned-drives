@@ -1,0 +1,49 @@
+{
+    "rq": 84,
+    "make": "Spada Vetture Sport",
+    "model": "Codatronca TS",
+    "modelYear": 2008,
+    "country": "IT",
+    "topSpeed": 211,
+    "0to60": 3.3,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Tyrol Tour: Remix", "Oddity", "Supercar", "Unique","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1360,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 102.33,
+    "ola": 95.87,
+    "description": "Latest creation of the Ercole Spada, designer of the legendary Aston Martin DB4 Zagato, Alfa Romeo Giulia TZ's and many other cars. It is based on the C6 Corvette Z06 and shares the same 7-liter LS7 V8 that is tuned to make 630 hp. The word Codatronca is the Italian for Kammback which is a specific term to describe a specific type of design feature for the rear end of the car. This cars rear end is inspired by the Alfa Romeo Giulia TZ which also featured the Kammback, or Codatronca integration.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1129096417525375027/spada.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1129096473452216442/SVS_Codatronca_TS.png",
+    "creator": "Aqo",
+
+    "333TopSpeed": 213, 
+    "3330to60": 3.1, 
+    "333Handling": 94,
+
+    "666TopSpeed": 216, 
+    "6660to60": 3.0, 
+    "666Handling": 97,
+
+    "996TopSpeed": 218, 
+    "9960to60": 2.8, 
+    "996Handling": 97,
+
+    "969TopSpeed": 218, 
+    "9690to60": 3.0, 
+    "969Handling": 101,
+
+    "699TopSpeed": 216, 
+    "6990to60": 2.8, 
+    "699Handling": 101
+}

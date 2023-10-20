@@ -1,0 +1,49 @@
+{
+    "rq": 12,
+    "make": "Porsche",
+    "model": "356A 1300 Super",
+    "modelYear": 1956,
+    "country": "DE",
+    "topSpeed": 99,
+    "0to60": 15.5,
+    "handling": 59,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 850,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 14.63,
+    "ola": 63.99,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1151925146534289439/356A1300Super.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1151925531638505512/356A1300Super.png",
+
+"333TopSpeed": 104,
+"3330to60": 14.7,
+"333Handling": 61,
+
+"666TopSpeed": 110,
+"6660to60": 14,
+"666Handling": 63,
+
+"699TopSpeed": 110,
+"6990to60": 13.2,
+"699Handling": 65,
+
+"969TopSpeed": 115,
+"9690to60": 14,
+"969Handling": 65,
+
+"996TopSpeed": 115,
+"9960to60": 13.2,
+"996Handling": 63,
+    "creator": "Bnuuy"
+}

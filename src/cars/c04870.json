@@ -1,0 +1,49 @@
+{
+    "rq": 15,
+    "make": "Porsche",
+    "model": "356 1500",
+    "modelYear": 1952,
+    "country": "DE",
+    "topSpeed": 104,
+    "0to60": 13.6,
+    "handling": 56,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 780,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 21.36,
+    "ola": 66.54,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1154056100048547890/9561500.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1154056269473259672/3561500.png",
+
+"333TopSpeed": 109,
+"3330to60": 12.9,
+"333Handling": 58,
+
+"666TopSpeed": 114,
+"6660to60": 12.2,
+"666Handling": 60,
+
+"699TopSpeed": 114,
+"6990to60": 11.6,
+"699Handling": 62,
+
+"969TopSpeed": 119,
+"9690to60": 12.2,
+"969Handling": 62,
+
+"996TopSpeed": 119,
+"9960to60": 11.6,
+"996Handling": 60,
+    "creator": "Bnuuy"
+}

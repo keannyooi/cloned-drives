@@ -1,0 +1,49 @@
+{
+    "rq": 78,
+    "make": "Aston Martin",
+    "model": "Vantage V600 Roadster",
+    "modelYear": 2018,
+    "country": "GB",
+    "topSpeed": 200,
+    "0to60": 3.5,
+    "handling": 88,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Unique","Ultra Expensive","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1670,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 88.6,
+    "ola": 94.55,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1131233248874352641/VantageV600Roadster.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1131234035432169583/VantageV600Roadster.png",
+
+"333TopSpeed": 203,
+"3330to60": 3.3,
+"333Handling": 91,
+
+"666TopSpeed": 205,
+"6660to60": 3.1,
+"666Handling": 94,
+
+"699TopSpeed": 205,
+"6990to60": 3,
+"699Handling": 98,
+
+"969TopSpeed": 208,
+"9690to60": 3.1,
+"969Handling": 98,
+
+"996TopSpeed": 208,
+"9960to60": 3,
+"996Handling": 94,
+    "creator": "Bnuuy"
+}

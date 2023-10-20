@@ -1,0 +1,49 @@
+{
+    "rq": 83,
+    "make": "Porsche",
+    "model": "960 Vision Turismo",
+    "modelYear": 2016,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 3.3,
+    "handling": 89,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Eco-Friendly","Concept","Unique","Super Sedan","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1890,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 85.61,
+    "ola": 62.57,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158105717505527878/misc960VT.png?ex=651b097f&is=6519b7ff&hm=15cf2a211d088dc86ff870636dc40534d093a2fdc7369af154b8f7b82fcd7efa&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158105889576849408/Misc960Turismo.png?ex=651b09a8&is=6519b828&hm=9f21fb0bdb61dbfab28ee121300cc829e615e84a871d13342b72e5bf19db20cd&",
+
+"333TopSpeed": 158,
+"3330to60": 3.1,
+"333Handling": 92,
+
+"666TopSpeed": 162,
+"6660to60": 3,
+"666Handling": 95,
+
+"699TopSpeed": 162,
+"6990to60": 2.8,
+"699Handling": 99,
+
+"969TopSpeed": 165,
+"9690to60": 3,
+"969Handling": 99,
+
+"996TopSpeed": 165,
+"9960to60": 2.8,
+"996Handling": 95,
+    "creator": "Bnuuy"
+}

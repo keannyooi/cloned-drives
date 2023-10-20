@@ -1,0 +1,50 @@
+{
+    "rq": 31,
+    "make": "Skoda",
+    "model": "Octavia 1.2 TSI",
+    "modelYear": 2009,
+    "country": "CZ",
+    "topSpeed": 119,
+    "0to60": 10.4,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 1290,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 54.45,
+    "ola": 73.07,
+    "description": "TSSI",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1142890016100589578/D.SkodaOctavia12TSI.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1142894570766614599/octavia12.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 123,
+    "3330to60": 9.9,
+    "333Handling": 75,
+
+    "666TopSpeed": 128,
+    "6660to60": 9.4, 
+    "666Handling": 78,
+
+    "996TopSpeed": 132,
+    "9960to60": 8.8,
+    "996Handling": 78,
+
+    "969TopSpeed": 132,
+    "9690to60": 9.4,
+    "969Handling": 81,
+
+    "699TopSpeed": 128,
+    "6990to60": 8.8,
+    "699Handling": 81
+}

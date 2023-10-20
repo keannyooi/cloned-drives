@@ -1,0 +1,49 @@
+{
+    "rq": 94,
+    "make": "Audi",
+    "model": "SQ7 TFSI quattro",
+    "modelYear": 2020,
+    "topSpeed": 155,
+    "0to60": 3.7,
+    "handling": 83,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 2377,
+    "gc": "High",
+    "seatCount": 7,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 67.27,
+    "ola": 81.08,
+    "description": "Diesel purge forced Audi to install the 4.0 TFSI used elsewhere in VW Group in Q7 and make it even more ultimate.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1120467270594998372/S.AudiSQ7TFSI.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1120699904159907860/sq7tfsi.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 158,
+    "3330to60": 3.5,
+    "333Handling": 86,
+
+    "666TopSpeed": 162,
+    "6660to60": 3.3, 
+    "666Handling": 88,
+
+    "996TopSpeed": 165,
+    "9960to60": 3.1,
+    "996Handling": 88,
+
+    "969TopSpeed": 155,
+    "9690to60": 3.3,
+    "969Handling": 92,
+
+    "699TopSpeed": 162,
+    "6990to60": 3.1,
+    "699Handling": 92
+}

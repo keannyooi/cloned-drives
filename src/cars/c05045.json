@@ -1,0 +1,49 @@
+{
+    "rq": 95,
+    "make": "Porsche",
+    "model": "935",
+    "modelYear": 2019,
+    "country": "DE",
+    "topSpeed": 211,
+    "0to60": 2.6,
+    "handling": 97,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Eurotech Elite","Track Day","Unique","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1290,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 109.55,
+    "ola": 77.77,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158069171914014861/991935.png?ex=651ae776&is=651995f6&hm=7b2764149bc98e0088bfa830f367f60dd568744bc57e19f1f608dab8bf454feb&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158069393033543830/991935.png?ex=651ae7ab&is=6519962b&hm=cd2e6a0915b0b303fc0eecde41bc4a9d7f6f9d6c87598479439ffe0e5e2a8c8a&",
+
+"333TopSpeed": 213,
+"3330to60": 2.5,
+"333Handling": 100,
+
+"666TopSpeed": 216,
+"6660to60": 2.3,
+"666Handling": 103,
+
+"699TopSpeed": 216,
+"6990to60": 2.2,
+"699Handling": 108,
+
+"969TopSpeed": 218,
+"9690to60": 2.3,
+"969Handling": 108,
+
+"996TopSpeed": 218,
+"9960to60": 2.2,
+"996Handling": 103,
+    "creator": "Bnuuy"
+}

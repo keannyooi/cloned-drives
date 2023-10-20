@@ -1,0 +1,49 @@
+{
+    "rq": 7,
+    "make": "Porsche",
+    "model": "Type 155",
+    "modelYear": 1942,
+    "country": "DE",
+    "topSpeed": 41,
+    "0to60": 99.9,
+    "handling": 40,
+    "driveType": "RWD",
+    "tyreType": "Off-Road",
+    "tags": ["Eurotech Elite","Extreme Juggernaut","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1140,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 0,
+    "ola": 71.42,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1146778269136470056/Type155.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1146778567968047246/pre356type155.png",
+
+"333TopSpeed": 50,
+"3330to60": 99.9,
+"333Handling": 41,
+
+"666TopSpeed": 58,
+"6660to60": 99.9,
+"666Handling": 43,
+
+"699TopSpeed": 58,
+"6990to60": 99.9,
+"699Handling": 44,
+
+"969TopSpeed": 67,
+"9690to60": 81,
+"969Handling": 44,
+
+"996TopSpeed": 67,
+"9960to60": 76.5,
+"996Handling": 43,
+    "creator": "Bnuuy"
+}

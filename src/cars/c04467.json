@@ -1,0 +1,49 @@
+{
+    "rq": 89,
+    "make": "Aston Martin",
+    "model": "Vanquish Vision Concept",
+    "modelYear": 2019,
+    "country": "GB",
+    "topSpeed": 200,
+    "0to60": 2.9,
+    "handling": 94,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Unique","Concept","Eco-Friendly","Track Day","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1500,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Hybrid",
+    "mra": 100,
+    "ola": 100,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1120006931751387297/VanquishVisionConcept.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1120007221015752774/VanquishVisionConcept.png",
+
+"333TopSpeed": 203,
+"3330to60": 2.8,
+"333Handling": 97,
+
+"666TopSpeed": 205,
+"6660to60": 2.6,
+"666Handling": 100,
+
+"699TopSpeed": 205,
+"6990to60": 2.5,
+"699Handling": 104,
+
+"969TopSpeed": 208,
+"9690to60": 2.6,
+"969Handling": 104,
+
+"996TopSpeed": 208,
+"9960to60": 2.5,
+"996Handling": 100,
+    "creator": "Bnuuy"
+}

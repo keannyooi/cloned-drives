@@ -1,0 +1,49 @@
+{
+    "rq": 94,
+    "make": "Porsche",
+    "model": "Cayenne GTS",
+    "modelYear": 2020,
+    "country": "DE",
+    "topSpeed": 168,
+    "0to60": 4.1,
+    "handling": 86,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 2145,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 73.21,
+    "ola": 73.17,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1149291289527988244/cayennegts20.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1149291455685328936/CayenneGTS20.png",
+
+"333TopSpeed": 171,
+"3330to60": 3.9,
+"333Handling": 89,
+
+"666TopSpeed": 174,
+"6660to60": 3.7,
+"666Handling": 92,
+
+"699TopSpeed": 174,
+"6990to60": 3.5,
+"699Handling": 95,
+
+"969TopSpeed": 177,
+"9690to60": 3.7,
+"969Handling": 95,
+
+"996TopSpeed": 177,
+"9960to60": 3.5,
+"996Handling": 92,
+    "creator": "Bnuuy"
+}

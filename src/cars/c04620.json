@@ -1,0 +1,52 @@
+{
+    "rq": 35,
+    "make": "Volkswagen",
+    "model": "Corrado G60 16V",
+    "modelYear": 1988,
+    "country": "DE",
+    "topSpeed": 140,
+    "0to60": 8.0,
+    "handling": 75,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite", "Hot Hatch","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 1115,
+    "gc": "Medium",
+    "seatCount":4,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 61.54,
+    "ola": 70.00,
+    "description": "GTI minus TI plus 60.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1140974298811600998/CorradoG60.png",
+    "racehud": "https://cdn.discordapp.com/attachments/812062652917481533/1132661299944378460/CorradoG60.png",
+    "creator": "Andu",
+    
+    "333TopSpeed": 144,
+    "3330to60": 7.6,
+    "333Handling": 77,
+    
+    "666TopSpeed": 147,
+    "6660to60": 7.2,
+    "666Handling": 80,
+    
+    "699TopSpeed": 147,
+    "6990to60": 6.8,
+    "699Handling": 83,
+    
+    "969TopSpeed": 151,
+    "9690to60": 7.2,
+    "969Handling": 83,
+    
+    "996TopSpeed": 151,
+    "9960to60": 6.8,
+    "996Handling": 80
+}

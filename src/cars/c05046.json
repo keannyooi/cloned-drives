@@ -1,0 +1,49 @@
+{
+    "rq": 88,
+    "make": "Porsche",
+    "model": "935 IMSA GTP",
+    "modelYear": 1982,
+    "country": "DE",
+    "topSpeed": 220,
+    "0to60": 3.0,
+    "handling": 94,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Eurotech Elite","Motorsport","Unique","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 950,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 111.05,
+    "ola": 92.59,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158122010275225610/935IMSA.png?ex=651b18ac&is=6519c72c&hm=a6f9db3bb3674b8f2c4fd0cb786fd4b1977c81cdc6336208f30e2b1579901951&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158122119687835708/935IMSAGTP.png?ex=651b18c6&is=6519c746&hm=5afca4be12f5260174b7dd6463aeec0bcb3cc0dfce12cdc7cdc4f0024e3c45ca&",
+
+"333TopSpeed": 222,
+"3330to60": 2.8,
+"333Handling": 97,
+
+"666TopSpeed": 225,
+"6660to60": 2.7,
+"666Handling": 100,
+
+"699TopSpeed": 225,
+"6990to60": 2.5,
+"699Handling": 104,
+
+"969TopSpeed": 227,
+"9690to60": 2.7,
+"969Handling": 104,
+
+"996TopSpeed": 227,
+"9960to60": 2.5,
+"996Handling": 100,
+    "creator": "Bnuuy"
+}

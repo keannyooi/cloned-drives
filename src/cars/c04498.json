@@ -1,0 +1,52 @@
+{
+    "rq": 32,
+    "make": ["Oettinger", "Volkswagen"],
+    "model": "Scirocco 2000 E",
+    "modelYear": 1980,
+    "country": "DE",
+    "topSpeed": 125,
+    "0to60": 7.1,
+    "handling": 74,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite", "Hot Hatch", "Tuner","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 860,
+    "gc": "Low",
+    "seatCount":4,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 60.68,
+    "ola": 76.06,
+    "description": "I went downtown to breeze through freaks, i got my Scirocco tuned by some germans peeps.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1140036895687065671/OettingerScirocco2000E.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1140039829506228284/2000E.png",
+    "creator": "Andu",
+ 
+    "333TopSpeed": 129,
+    "3330to60": 6.7,
+    "333Handling": 76,
+    
+    "666TopSpeed": 133,
+    "6660to60": 6.4,
+    "666Handling": 79,
+    
+    "699TopSpeed": 133,
+    "6990to60": 6,
+    "699Handling": 82,
+    
+    "969TopSpeed": 137,
+    "9690to60": 6.4,
+    "969Handling": 82,
+    
+    "996TopSpeed": 137,
+    "9960to60": 6,
+    "996Handling": 79
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 92,
+    "make": "Porsche",
+    "model": "Cayenne Turbo",
+    "modelYear": 2014,
+    "country": "DE",
+    "topSpeed": 173,
+    "0to60": 4.2,
+    "handling": 84,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 2185,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 77.78,
+    "ola": 71.43,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1149282709831696446/cayenneturbo2014.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1149282793109598249/CayenneTurbo2014.png",
+
+"333TopSpeed": 176,
+"3330to60": 4,
+"333Handling": 87,
+
+"666TopSpeed": 179,
+"6660to60": 3.8,
+"666Handling": 90,
+
+"699TopSpeed": 179,
+"6990to60": 3.6,
+"699Handling": 93,
+
+"969TopSpeed": 182,
+"9690to60": 3.8,
+"969Handling": 93,
+
+"996TopSpeed": 182,
+"9960to60": 3.6,
+"996Handling": 90,
+    "creator": "Bnuuy"
+}

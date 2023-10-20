@@ -1,0 +1,49 @@
+{
+    "rq": 92,
+    "make": "Porsche",
+    "model": "911 Turbo S Cabriolet Exclusive Series",
+    "modelYear": 2017,
+    "country": "DE",
+    "topSpeed": 205,
+    "0to60": 2.8,
+    "handling": 91,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite", "Supercar","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1670,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 87.74,
+    "ola": 79.13,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1154372919284207665/991.2911TurboSCabExclusvie.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1154373173228347402/991.2911TurboScabXclusive.png",
+
+"333TopSpeed": 208,
+"3330to60": 2.7,
+"333Handling": 94,
+
+"666TopSpeed": 210,
+"6660to60": 2.5,
+"666Handling": 97,
+
+"699TopSpeed": 210,
+"6990to60": 2.4,
+"699Handling": 101,
+
+"969TopSpeed": 213,
+"9690to60": 2.5,
+"969Handling": 101,
+
+"996TopSpeed": 213,
+"9960to60": 2.4,
+"996Handling": 97,
+    "creator": "Bnuuy"
+}

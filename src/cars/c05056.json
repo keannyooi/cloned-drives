@@ -1,0 +1,49 @@
+{
+    "rq": 95,
+    "make": "Porsche",
+    "model": "935/78 \"Moby Dick\"",
+    "modelYear": 1978,
+    "country": "DE",
+    "topSpeed": 227,
+    "0to60": 2.6,
+    "handling": 96,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Eurotech Elite","Motorsport","Unique","Style Icon","Cloned Drives Beta: Last of"],
+    "isPrize": true,
+	
+    "weight": 1030,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 119.48,
+    "ola": 93.5,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158122050045608036/93578Moby.png?ex=651b18b5&is=6519c735&hm=5532bb515c5e71f53533b5d4e9bbb0b6df6d79b4b412b8e6288dae425e453153&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158122153791717466/93578MobyDick.png?ex=651b18ce&is=6519c74e&hm=b7929f03de2749c912452ad4f85f763f1645d26a59a1c23090b9ffa7d721e3d0&",
+
+"333TopSpeed": 229,
+"3330to60": 2.5,
+"333Handling": 99,
+
+"666TopSpeed": 232,
+"6660to60": 2.3,
+"666Handling": 102,
+
+"699TopSpeed": 232,
+"6990to60": 2.2,
+"699Handling": 107,
+
+"969TopSpeed": 234,
+"9690to60": 2.3,
+"969Handling": 107,
+
+"996TopSpeed": 234,
+"9960to60": 2.2,
+"996Handling": 102,
+    "creator": "Bnuuy"
+}

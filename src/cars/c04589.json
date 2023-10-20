@@ -1,0 +1,50 @@
+{
+    "rq": 38,
+    "make": "Skoda",
+    "model": "Octavia 2.0 FSI Elegance",
+    "modelYear": 2004,
+    "country": "CZ",
+    "topSpeed": 131,
+    "0to60": 9.0,
+    "handling": 75,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 1310,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 58.44,
+    "ola": 73.33,
+    "description": "Machine 2.0 FSI",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1142890335127752735/D.SkodaOctavia20FSI.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1142894790187430048/octavia20fsi.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 135,
+    "3330to60": 8.6,
+    "333Handling": 77,
+
+    "666TopSpeed": 139,
+    "6660to60": 8.1, 
+    "666Handling": 80,
+
+    "996TopSpeed": 143,
+    "9960to60": 7.7,
+    "996Handling": 80,
+
+    "969TopSpeed": 143,
+    "9690to60": 8.1,
+    "969Handling": 83,
+
+    "699TopSpeed": 139,
+    "6990to60": 7.7,
+    "699Handling": 83
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 74,
+    "make": "Porsche",
+    "model": "911 Carrera 4",
+    "modelYear": 2016,
+    "country": "DE",
+    "topSpeed": 181,
+    "0to60": 4.3,
+    "handling": 88,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1480,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 77.81,
+    "ola": 78.15,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158056010695573584/991.2911Carrera4.png?ex=651adb34&is=651989b4&hm=34dd2f410fceba81ecbb411f39eae2d9236964e8f74b013a470df34163c95afc&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158056360953516102/991.2911Carrera4.png?ex=651adb88&is=65198a08&hm=970cfaa3dac6c1f9efa4eee2977b8b412ff05609cbdab3b69ffb60fd119cd615&",
+
+"333TopSpeed": 184,
+"3330to60": 4.1,
+"333Handling": 91,
+
+"666TopSpeed": 187,
+"6660to60": 3.9,
+"666Handling": 94,
+
+"699TopSpeed": 187,
+"6990to60": 3.7,
+"699Handling": 98,
+
+"969TopSpeed": 190,
+"9690to60": 3.9,
+"969Handling": 98,
+
+"996TopSpeed": 190,
+"9960to60": 3.7,
+"996Handling": 94,
+    "creator": "Bnuuy"
+}

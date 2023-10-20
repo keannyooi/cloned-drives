@@ -1,0 +1,49 @@
+{
+    "rq": 75,
+    "make": "Porsche",
+    "model": "Panamera 4S",
+    "modelYear": 2013,
+    "country": "DE",
+    "topSpeed": 178,
+    "0to60": 4.5,
+    "handling": 86,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1945,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 68,
+    "ola": 76.49,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1148997865247612968/Panamera4S970B.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1148997922906710016/970B4S.png",
+
+"333TopSpeed": 181,
+"3330to60": 4.3,
+"333Handling": 89,
+
+"666TopSpeed": 184,
+"6660to60": 4,
+"666Handling": 92,
+
+"699TopSpeed": 184,
+"6990to60": 3.8,
+"699Handling": 95,
+
+"969TopSpeed": 187,
+"9690to60": 4,
+"969Handling": 95,
+
+"996TopSpeed": 187,
+"9960to60": 3.8,
+"996Handling": 92,
+    "creator": "Bnuuy"
+}

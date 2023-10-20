@@ -1,0 +1,49 @@
+{
+    "rq": 60,
+    "make": "Porsche",
+    "model": "911 Turbo 3.3",
+    "modelYear": 1990,
+    "country": "DE",
+    "topSpeed": 168,
+    "0to60": 4.7,
+    "handling": 82,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Style Icon","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1485,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 77.68,
+    "ola": 82.6,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1146445232397893662/964911Turbo3.3.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1146445905977954406/964911Turbo3.3.png",
+
+"333TopSpeed": 171,
+"3330to60": 4.5,
+"333Handling": 85,
+
+"666TopSpeed": 174,
+"6660to60": 4.2,
+"666Handling": 87,
+
+"699TopSpeed": 174,
+"6990to60": 4,
+"699Handling": 91,
+
+"969TopSpeed": 177,
+"9690to60": 4.2,
+"969Handling": 91,
+
+"996TopSpeed": 177,
+"9960to60": 4,
+"996Handling": 87,
+    "creator": "Bnuuy"
+}

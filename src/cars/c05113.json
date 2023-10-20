@@ -1,0 +1,49 @@
+{
+    "rq": 95,
+    "make": "Porsche",
+    "model": "Panamera Turbo S Executive",
+    "modelYear": 2020,
+    "country": "DE",
+    "topSpeed": 196,
+    "0to60": 3.0,
+    "handling": 91,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Super Sedan","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 2185,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 77.81,
+    "ola": 81.25,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1152600664464179403/971EBPanameraTurboS.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1152600806118404117/971EBPanameraTurboS.png",
+
+"333TopSpeed": 199,
+"3330to60": 2.8,
+"333Handling": 94,
+
+"666TopSpeed": 201,
+"6660to60": 2.7,
+"666Handling": 97,
+
+"699TopSpeed": 201,
+"6990to60": 2.5,
+"699Handling": 101,
+
+"969TopSpeed": 204,
+"9690to60": 2.7,
+"969Handling": 101,
+
+"996TopSpeed": 204,
+"9960to60": 2.5,
+"996Handling": 97,
+    "creator": "Bnuuy"
+}

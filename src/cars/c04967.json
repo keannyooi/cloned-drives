@@ -1,0 +1,49 @@
+{
+    "rq": 97,
+    "make": "Porsche",
+    "model": "911 GT2 RS Clubsport 25",
+    "modelYear": 2022,
+    "country": "DE",
+    "topSpeed": 220,
+    "0to60": 2.5,
+    "handling": 98,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Eurotech Elite","Track Day","Unique","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1350,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 110.54,
+    "ola": 80,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158069156088926228/991911GT2RSClubsport25.png?ex=651ae772&is=651995f2&hm=4f02781bea3b97bfb48506bef2c06e03e6c04330d87c96803370cfafea1b2277&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158069378714177656/991911GT2RSClubsport25.png?ex=651ae7a7&is=65199627&hm=c8b5ed70b8fd874b8d6a685ec390d47baa698f4e17707b59aa38e42bca37d3de&",
+
+"333TopSpeed": 222,
+"3330to60": 2.4,
+"333Handling": 101,
+
+"666TopSpeed": 225,
+"6660to60": 2.3,
+"666Handling": 104,
+
+"699TopSpeed": 225,
+"6990to60": 2.1,
+"699Handling": 109,
+
+"969TopSpeed": 227,
+"9690to60": 2.3,
+"969Handling": 109,
+
+"996TopSpeed": 227,
+"9960to60": 2.1,
+"996Handling": 104,
+    "creator": "Bnuuy"
+}

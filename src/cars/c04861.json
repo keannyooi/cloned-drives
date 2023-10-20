@@ -1,0 +1,49 @@
+{
+    "rq": 64,
+    "make": ["PS Autoart","Porsche"],
+    "model": "Le Mans Classic Clubsport",
+    "modelYear": 2018,
+    "country": "GB",
+    "topSpeed": 170,
+    "0to60": 4.4,
+    "handling": 81,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","RestoMod","Track Day","Tuner","Unique","Cloned Drives Beta: Last of"],
+    "isPrize": true,
+	
+    "weight": 970,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 70.79,
+    "ola": 72.73,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1145452799421857812/PSAutoartLeMansClassicClubsport.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1145452712339710072/PSAutoartLeMansClassicClubsport.png",
+
+"333TopSpeed": 173,
+"3330to60": 4.2,
+"333Handling": 84,
+
+"666TopSpeed": 176,
+"6660to60": 4,
+"666Handling": 86,
+
+"699TopSpeed": 176,
+"6990to60": 3.7,
+"699Handling": 90,
+
+"969TopSpeed": 179,
+"9690to60": 4,
+"969Handling": 90,
+
+"996TopSpeed": 179,
+"9960to60": 3.7,
+"996Handling": 86,
+    "creator": "Bnuuy"
+}

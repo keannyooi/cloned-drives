@@ -1,0 +1,49 @@
+{
+    "rq": 33,
+    "make": "Aston Martin",
+    "model": "DBS Series 1",
+    "modelYear": 1967,
+    "country": "GB",
+    "topSpeed": 140,
+    "0to60": 8.5,
+    "handling": 67,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Midlands Cruise","Grand Tourer","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1590,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 80.95,
+    "ola": 84.7,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1115273051135807558/DBSS1.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1115273876381892831/DBSS1.png",
+
+"333TopSpeed": 144,
+"3330to60": 8.1,
+"333Handling": 69,
+
+"666TopSpeed": 147,
+"6660to60": 7.7,
+"666Handling": 71,
+
+"699TopSpeed": 147,
+"6990to60": 7.2,
+"699Handling": 74,
+
+"969TopSpeed": 151,
+"9690to60": 7.7,
+"969Handling": 74,
+
+"996TopSpeed": 151,
+"9960to60": 7.2,
+"996Handling": 71,
+    "creator": "Bnuuy"
+}

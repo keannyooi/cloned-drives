@@ -1,0 +1,49 @@
+{
+    "rq": 58,
+    "make": ["Lunaz Design","Aston Martin"],
+    "model": "DB6",
+    "modelYear": 2021,
+    "country": "GB",
+    "topSpeed": 155,
+    "0to60": 5.5,
+    "handling": 73,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Midlands Cruise","Grand Tourer","Tuner","Eco-Friendly","RestoMod","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1820,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 66.27,
+    "ola": 76.36,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1115259306707791882/LunazDB6.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1115259691321278484/LunazDB6.png",
+
+"333TopSpeed": 158,
+"3330to60": 5.2,
+"333Handling": 75,
+
+"666TopSpeed": 162,
+"6660to60": 5,
+"666Handling": 78,
+
+"699TopSpeed": 162,
+"6990to60": 4.7,
+"699Handling": 81,
+
+"969TopSpeed": 165,
+"9690to60": 5,
+"969Handling": 81,
+
+"996TopSpeed": 165,
+"9960to60": 4.7,
+"996Handling": 78,
+    "creator": "Bnuuy"
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 73,
+    "make": "Porsche",
+    "model": "911 Carrera GTS Cabriolet",
+    "modelYear": 2017,
+    "country": "DE",
+    "topSpeed": 193,
+    "0to60": 4.1,
+    "handling": 89,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1520,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 82.8,
+    "ola": 83.44,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158062767077605397/991.2911CarreraGTSCab.png?ex=651ae17f&is=65198fff&hm=a6285b7ec8d976ea4972fb5b66a07a684e839c8f767c9afbeb1780b6fb4a13f5&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158062950431608853/991.2911CarreraGTScab.png?ex=651ae1ab&is=6519902b&hm=33bff7241f7530f7269cd762c75bfbd89b22ac1607f1b02357f81b6a16d4689c&",
+
+"333TopSpeed": 196,
+"3330to60": 3.9,
+"333Handling": 92,
+
+"666TopSpeed": 198,
+"6660to60": 3.7,
+"666Handling": 95,
+
+"699TopSpeed": 198,
+"6990to60": 3.5,
+"699Handling": 99,
+
+"969TopSpeed": 201,
+"9690to60": 3.7,
+"969Handling": 99,
+
+"996TopSpeed": 201,
+"9960to60": 3.5,
+"996Handling": 95,
+    "creator": "Bnuuy"
+}

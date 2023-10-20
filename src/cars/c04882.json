@@ -1,0 +1,49 @@
+{
+    "rq": 3,
+    "make": "Porsche",
+    "model": "356/2 Gmund Cabriolet",
+    "modelYear": 1949,
+    "country": "DE",
+    "topSpeed": 80,
+    "0to60": 23.8,
+    "handling": 57,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Unique","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 660,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 9.55,
+    "ola": 71.46,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1154042835046256750/9562GmundCabriolet.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1154042981125464106/3562GMundCab.png",
+
+"333TopSpeed": 87,
+"3330to60": 22.6,
+"333Handling": 59,
+
+"666TopSpeed": 93,
+"6660to60": 21.4,
+"666Handling": 61,
+
+"699TopSpeed": 93,
+"6990to60": 20.2,
+"699Handling": 63,
+
+"969TopSpeed": 100,
+"9690to60": 21.4,
+"969Handling": 63,
+
+"996TopSpeed": 100,
+"9960to60": 20.2,
+"996Handling": 61,
+    "creator": "Bnuuy"
+}

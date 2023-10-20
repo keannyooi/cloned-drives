@@ -1,0 +1,49 @@
+{
+    "rq": 71,
+    "make": "Aston Martin",
+    "model": "T.ax GT Concept",
+    "modelYear": 1995,
+    "country": "GB",
+    "topSpeed": 188,
+    "0to60": 3.9,
+    "handling": 85,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Grand Tourer","Unique","Concept","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1550,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 100,
+    "ola": 97.43,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1118544065277992960/taxaston.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1118544927895343105/TAXaston.png",
+
+"333TopSpeed": 191,
+"3330to60": 3.7,
+"333Handling": 88,
+
+"666TopSpeed": 194,
+"6660to60": 3.5,
+"666Handling": 91,
+
+"699TopSpeed": 194,
+"6990to60": 3.3,
+"699Handling": 94,
+
+"969TopSpeed": 196,
+"9690to60": 3.5,
+"969Handling": 94,
+
+"996TopSpeed": 196,
+"9960to60": 3.3,
+"996Handling": 91,
+    "creator": "Bnuuy"
+}

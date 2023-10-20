@@ -1,0 +1,49 @@
+{
+    "rq": 66,
+    "make": ["Kremer-Porsche","Porsche"],
+    "model": "935 K2 Straßenversion",
+    "modelYear": 1986,
+    "country": "DE",
+    "topSpeed": 190,
+    "0to60": 4.3,
+    "handling": 83,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Track Day","Unique","Ultra Expensive","Tuner","Cloned Drives Beta: Last of"],
+    "isPrize": true,
+	
+    "weight": 1390,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 88.88,
+    "ola": 81.22,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158114140657815712/935K2Stabenversion.png?ex=651b1157&is=6519bfd7&hm=dc8e393c1cbbabbd9b1e51a39e9b1e38e97c8e77c783721573443725e99aedda&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158114203962449950/935KremerK2Road.png?ex=651b1166&is=6519bfe6&hm=e5522eac90c7f97fe64a136ebf8f9865f8437c0da9939ca431cd1c08cd9fdd74&",
+
+"333TopSpeed": 193,
+"3330to60": 4.1,
+"333Handling": 86,
+
+"666TopSpeed": 195,
+"6660to60": 3.9,
+"666Handling": 88,
+
+"699TopSpeed": 195,
+"6990to60": 3.7,
+"699Handling": 92,
+
+"969TopSpeed": 198,
+"9690to60": 3.9,
+"969Handling": 92,
+
+"996TopSpeed": 198,
+"9960to60": 3.7,
+"996Handling": 88,
+    "creator": "Bnuuy"
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 34,
+    "make": "Peugeot",
+    "model": "3008 2.0 HDi FAP 150",
+    "modelYear": 2009,
+    "country": "FR",
+    "topSpeed": 124,
+    "0to60": 9.4,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1529,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 51.68,
+    "ola": 72.60,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1148902370227531876/Peugeot_3008_2.0_HDi_FAP_150.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1148904347879620678/Peugeot_3008_2.0_HDi_FAP.png",
+    "creator": "Crossfire",
+
+    "333TopSpeed": 128,
+    "3330to60": 8.9,
+    "333Handling": 75,
+
+    "666TopSpeed": 132,
+    "6660to60": 8.5,
+    "666Handling": 78,
+
+    "699TopSpeed": 132,
+    "6990to60": 8.0,
+    "699Handling": 81,
+
+    "969TopSpeed": 137,
+    "9690to60": 8.5,
+    "969Handling": 81,
+
+    "996TopSpeed": 137,
+    "9960to60": 8.0,
+    "996Handling": 78
+}

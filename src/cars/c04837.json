@@ -1,0 +1,49 @@
+{
+    "rq": 61,
+    "make": "Porsche",
+    "model": "Taycan Sport Turismo Performance Battery Plus",
+    "modelYear": 2022,
+    "country": "DE",
+    "topSpeed": 145,
+    "0to60": 4.9,
+    "handling": 80,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Eco-Friendly","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 2200,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Electric",
+    "mra": 80,
+    "ola": 78.55,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1145435216417128548/STPBPTaycan.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1145435515626213518/STPBPTaycan.png",
+
+"333TopSpeed": 149,
+"3330to60": 4.7,
+"333Handling": 83,
+
+"666TopSpeed": 152,
+"6660to60": 4.4,
+"666Handling": 85,
+
+"699TopSpeed": 152,
+"6990to60": 4.2,
+"699Handling": 89,
+
+"969TopSpeed": 156,
+"9690to60": 4.4,
+"969Handling": 89,
+
+"996TopSpeed": 156,
+"9960to60": 4.2,
+"996Handling": 85,
+    "creator": "Bnuuy"
+}

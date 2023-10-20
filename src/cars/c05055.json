@@ -1,0 +1,49 @@
+{
+    "rq": 86,
+    "make": "Porsche",
+    "model": "935/77",
+    "modelYear": 1977,
+    "country": "DE",
+    "topSpeed": 211,
+    "0to60": 3.2,
+    "handling": 94,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Eurotech Elite","Motorsport","Unique","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 985,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 114.29,
+    "ola": 93.57,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158121151374045325/93577.png?ex=651b17df&is=6519c65f&hm=ad9790ff1805921cba7631d99cc5102f41d2dc86487e543b23b2fb3690c26cf9&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158121376884981891/93577.png?ex=651b1815&is=6519c695&hm=c5bf9181f65359365aea6aaf9e2c72535de9f6fa6e12973a5c8163350324a0bf&",
+
+"333TopSpeed": 213,
+"3330to60": 3,
+"333Handling": 97,
+
+"666TopSpeed": 216,
+"6660to60": 2.9,
+"666Handling": 100,
+
+"699TopSpeed": 216,
+"6990to60": 2.7,
+"699Handling": 104,
+
+"969TopSpeed": 218,
+"9690to60": 2.9,
+"969Handling": 104,
+
+"996TopSpeed": 218,
+"9960to60": 2.7,
+"996Handling": 100,
+    "creator": "Bnuuy"
+}

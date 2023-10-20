@@ -1,0 +1,49 @@
+{
+    "rq": 89,
+    "make": "Porsche",
+    "model": "909 Bergspyder",
+    "modelYear": 1968,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 2.2,
+    "handling": 87,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Unique","Motorsport","Ultra Expensive","Innovative","Cloned Drives Beta: Last of"],
+    "isPrize": true,
+	
+    "weight": 385,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 71.54,
+    "ola": 100,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1148993656448090112/909Bergspyder.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1148993670415122513/90X909Berg.png",
+
+"333TopSpeed": 158,
+"3330to60": 2.1,
+"333Handling": 90,
+
+"666TopSpeed": 162,
+"6660to60": 2,
+"666Handling": 93,
+
+"699TopSpeed": 162,
+"6990to60": 1.9,
+"699Handling": 97,
+
+"969TopSpeed": 165,
+"9690to60": 2,
+"969Handling": 97,
+
+"996TopSpeed": 165,
+"9960to60": 1.9,
+"996Handling": 93,
+    "creator": "Bnuuy"
+}

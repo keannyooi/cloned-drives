@@ -1,0 +1,52 @@
+{
+    "rq": 41,
+    "make": "Volkswagen",
+    "model": "Scirocco 2.0 TDI Million",
+    "modelYear": 2013,
+    "country": "DE",
+    "topSpeed": 127,
+    "0to60": 8.5,
+    "handling": 77,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 1344,
+    "gc": "Medium",
+    "seatCount":4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 51.52,
+    "ola": 68.24,
+    "description": "Hooray! The scirocco sold a million units! Let's throw some stripes at it!",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1148017113106239600/Scirocco20TDIMillion.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1148018443560435872/20TDIMillion.png",
+    "creator": "Andu",
+    
+    "333TopSpeed": 131,
+    "3330to60": 8.1,
+    "333Handling": 80,
+    
+    "666TopSpeed": 135,
+    "6660to60": 7.7,
+    "666Handling": 82,
+    
+    "699TopSpeed": 135,
+    "6990to60": 7.2,
+    "699Handling": 85,
+    
+    "969TopSpeed": 139,
+    "9690to60": 7.7,
+    "969Handling": 85,
+    
+    "996TopSpeed": 139,
+    "9960to60": 7.2,
+    "996Handling": 82
+}

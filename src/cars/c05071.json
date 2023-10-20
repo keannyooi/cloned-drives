@@ -1,0 +1,49 @@
+{
+    "rq": 16,
+    "make": "Porsche",
+    "model": "Beutler Coupe",
+    "modelYear": 1957,
+    "country": "DE",
+    "topSpeed": 93,
+    "0to60": 13.2,
+    "handling": 63,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Unique","Cloned Drives Beta: Last of"],
+    "isPrize": true,
+	
+    "weight": 1230,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 15.5,
+    "ola": 61.25,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158078673879044156/miscBeutlerCoupe.png?ex=651af04f&is=65199ecf&hm=f26f28b2df85a520a91d20a108f1a194c63f1ab5d1b02a1e35b407d2eb5fa965&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158078985280954458/MiscBeutler.png?ex=651af09a&is=65199f1a&hm=f3de8fabbf92263f5a0ec47bf68db14d6ae5347faed52d44ac01da71627bf509&",
+
+"333TopSpeed": 99,
+"3330to60": 12.5,
+"333Handling": 65,
+
+"666TopSpeed": 104,
+"6660to60": 11.9,
+"666Handling": 67,
+
+"699TopSpeed": 104,
+"6990to60": 11.2,
+"699Handling": 70,
+
+"969TopSpeed": 110,
+"9690to60": 11.9,
+"969Handling": 70,
+
+"996TopSpeed": 110,
+"9960to60": 11.2,
+"996Handling": 67,
+    "creator": "Bnuuy"
+}

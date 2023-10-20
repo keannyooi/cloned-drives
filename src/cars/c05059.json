@@ -1,0 +1,49 @@
+{
+    "rq": 90,
+    "make": "Porsche",
+    "model": "936/77 Spyder",
+    "modelYear": 1977,
+    "country": "DE",
+    "topSpeed": 218,
+    "0to60": 3.1,
+    "handling": 96,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Eurotech Elite","Motorsport","Unique","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 700,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 113.05,
+    "ola": 95.59,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158115374513000579/93677.png?ex=651b127e&is=6519c0fe&hm=3cb9e38721d05d3e63ed6567010a332fd306e7253e999aaf20ebdf91fe25ae9d&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158115449045778635/93677.png?ex=651b128f&is=6519c10f&hm=04012addf88d1265221ba98038db5a424dabc0b56d40c20b5d62e05eb2aeb331&",
+
+"333TopSpeed": 220,
+"3330to60": 2.9,
+"333Handling": 99,
+
+"666TopSpeed": 223,
+"6660to60": 2.8,
+"666Handling": 102,
+
+"699TopSpeed": 223,
+"6990to60": 2.6,
+"699Handling": 107,
+
+"969TopSpeed": 225,
+"9690to60": 2.8,
+"969Handling": 107,
+
+"996TopSpeed": 225,
+"9960to60": 2.6,
+"996Handling": 102,
+    "creator": "Bnuuy"
+}

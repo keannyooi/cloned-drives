@@ -1,0 +1,51 @@
+{  
+    "rq": 34,
+    "make": "Chevrolet",
+    "model": "Cruze 1.8 LT RS",
+    "modelYear": 2012,
+    "country": "US",
+    "topSpeed": 112,
+    "0to60": 9.4,
+    "handling": 75,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Americas Assualt","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 1425,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 43.32,
+    "ola": 65.96,
+    "description": "RS brings in an interesting cosmetic touch to the somewhat boring Opel Ast oh oops i meant Cruze.",
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1112158602640232498/Cruze18LTRS.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1112158784190693376/Cruze18RS.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 122,
+    "3330to60": 8.9,
+    "333Handling": 77,
+    
+    "666TopSpeed": 127,
+    "6660to60": 8.5,
+    "666Handling": 80,
+    
+    "699TopSpeed": 127,
+    "6990to60": 8,
+    "699Handling": 83,
+    
+    "969TopSpeed": 131,
+    "9690to60": 8.5,
+    "969Handling": 83,
+    
+    "996TopSpeed": 131,
+    "9960to60": 8,
+    "996Handling": 80
+}

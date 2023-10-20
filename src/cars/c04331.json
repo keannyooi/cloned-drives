@@ -1,0 +1,49 @@
+{
+    "rq": 1,
+    "make": ["Egger-Lohner","Porsche"],
+    "model": "Electric Vehicle C.2 Phaeton (P1)",
+    "modelYear": 1898,
+    "country": "DE",
+    "topSpeed": 16,
+    "0to60": 99.9,
+    "handling": 30,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Innovative","Eco-Friendly","Ultra Expensive","Unique","Concept","Cloned Drives Beta: Last of"],
+    "isPrize": true,
+	
+    "weight": 550,
+    "gc": "High",
+    "seatCount": 4,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Electric",
+    "mra": 0,
+    "ola": 0,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1146778037145309347/ElectricC2PhaetonP1.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1146778366012313610/pre356C2Phaeton.png",
+
+"333TopSpeed": 25,
+"3330to60": 99.9,
+"333Handling": 31,
+
+"666TopSpeed": 33,
+"6660to60": 99.9,
+"666Handling": 32,
+
+"699TopSpeed": 33,
+"6990to60": 99.9,
+"699Handling": 33,
+
+"969TopSpeed": 42,
+"9690to60": 99.9,
+"969Handling": 33,
+
+"996TopSpeed": 42,
+"9960to60": 99.9,
+"996Handling": 32,
+    "creator": "Bnuuy"
+}

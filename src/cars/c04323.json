@@ -1,0 +1,51 @@
+{  
+    "rq": 28,
+    "make": "Toyota",
+    "model": "Yaris 1.4 D-4D Trend",
+    "modelYear": 2014,
+    "country": "JP",
+    "topSpeed": 109,
+    "0to60": 10.7,
+    "handling": 71,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Amplification of Asia","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 1035,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 40.26,
+    "ola": 65.73,
+    "description": "Knock Knock! Who's there? 2014 Toyota Yaris!. Good.",
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1130852341327876146/yaris14d4d14.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1130852779720724621/YarisD4D.png",
+    "creator": "Pfugs",
+
+    "333TopSpeed": 114,
+    "3330to60": 10.2,
+    "333Handling": 73,
+    
+    "666TopSpeed": 119,
+    "6660to60": 9.6,
+    "666Handling": 76,
+    
+    "699TopSpeed": 119,
+    "6990to60": 9.1,
+    "699Handling": 79,
+    
+    "969TopSpeed": 123,
+    "9690to60": 9.6,
+    "969Handling": 79,
+    
+    "996TopSpeed": 123,
+    "9960to60": 9.1, 
+    "996Handling": 76
+}

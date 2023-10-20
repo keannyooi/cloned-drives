@@ -1,0 +1,49 @@
+{
+    "rq": 90,
+    "make": "Porsche",
+    "model": "908/03 Turbo Spyder",
+    "modelYear": 1975,
+    "country": "DE",
+    "topSpeed": 211,
+    "0to60": 2.8,
+    "handling": 94,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Eurotech Elite","Unique","Concept","Motorsport","Ultra Expensive","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 640,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 105.59,
+    "ola": 99.45,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1148960565398605865/908-03TurboSpyder.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1148960711700119633/90X908-03TurboSpyder.png",
+
+"333TopSpeed": 213,
+"3330to60": 2.7,
+"333Handling": 97,
+
+"666TopSpeed": 216,
+"6660to60": 2.5,
+"666Handling": 100,
+
+"699TopSpeed": 216,
+"6990to60": 2.4,
+"699Handling": 104,
+
+"969TopSpeed": 218,
+"9690to60": 2.5,
+"969Handling": 104,
+
+"996TopSpeed": 218,
+"9960to60": 2.4,
+"996Handling": 100,
+    "creator": "Bnuuy"
+}

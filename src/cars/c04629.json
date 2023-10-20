@@ -1,0 +1,52 @@
+{
+    "rq": 28,
+    "make": "Volkswagen",
+    "model": "Scirocco 1.6 GL",
+    "modelYear": 1982,
+    "country": "DE",
+    "topSpeed": 110,
+    "0to60": 10.2,
+    "handling": 69,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 855,
+    "gc": "Medium",
+    "seatCount":4,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 32.59,
+    "ola": 66.67,
+    "description": "You too can have that gorgeous mustache if you drive this Scirocco!",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1140037558299017236/Scirocco16GL.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1140040250136203425/16GL.png",
+    "creator": "Andu",
+ 
+    "333TopSpeed": 115,
+    "3330to60": 9.7,
+    "333Handling": 71,
+    
+    "666TopSpeed": 119,
+    "6660to60": 9.2,
+    "666Handling": 74,
+    
+    "699TopSpeed": 119,
+    "6990to60": 8.7,
+    "699Handling": 77,
+    
+    "969TopSpeed": 124,
+    "9690to60": 9.2,
+    "969Handling": 77,
+    
+    "996TopSpeed": 124,
+    "9960to60": 8.7,
+    "996Handling": 74
+}

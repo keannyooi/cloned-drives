@@ -1,0 +1,49 @@
+{
+    "rq": 36,
+    "make": "Aston Martin",
+    "model": "DB5 Vantage Shooting Brake",
+    "modelYear": 1965,
+    "country": "GB",
+    "topSpeed": 150,
+    "0to60": 6.7,
+    "handling": 69,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Grand Tourer","Unique","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1590,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 65.04,
+    "ola": 89.55,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1115259859751940176/DB5Shooting.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1115259914626019338/DB5Shooting.png",
+
+"333TopSpeed": 153,
+"3330to60": 6.4,
+"333Handling": 71,
+
+"666TopSpeed": 157,
+"6660to60": 6,
+"666Handling": 74,
+
+"699TopSpeed": 157,
+"6990to60": 5.7,
+"699Handling": 77,
+
+"969TopSpeed": 160,
+"9690to60": 6,
+"969Handling": 77,
+
+"996TopSpeed": 160,
+"9960to60": 5.7,
+"996Handling": 74,
+    "creator": "Bnuuy"
+}

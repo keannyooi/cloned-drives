@@ -1,0 +1,49 @@
+{
+    "rq": 73,
+    "make": ["DS", "Citroen"],
+    "model": "X E-Tense Concept",
+    "modelYear": 2018,
+    "country": "FR",
+    "topSpeed": 140,
+    "0to60": 3.6,
+    "handling": 86,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Unique","Concept","Eco-Friendly","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 2000,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 92.3,
+    "ola": 77.77,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1152916932769611786/DS_X_E-Tense_Concept.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1152916998938972210/dsextense.png",
+
+"333TopSpeed": 144,
+"3330to60": 3.4,
+"333Handling": 89,
+
+"666TopSpeed": 147,
+"6660to60": 3.2,
+"666Handling": 92,
+
+"699TopSpeed": 147,
+"6990to60": 3.1,
+"699Handling": 95,
+
+"969TopSpeed": 151,
+"9690to60": 3.2,
+"969Handling": 95,
+
+"996TopSpeed": 151,
+"9960to60": 3.1,
+"996Handling": 92,
+    "creator": "xxRaginNationxx"
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 27,
+    "make": "Porsche",
+    "model": "356B 2000 GS Carrera 2",
+    "modelYear": 1962,
+    "country": "DE",
+    "topSpeed": 124,
+    "0to60": 8.0,
+    "handling": 66,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1010,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 41.23,
+    "ola": 72.25,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1154037485094064179/356B2000GSCarrera2.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1154037568548126820/356B2000GSCarrera2.png",
+
+"333TopSpeed": 128,
+"3330to60": 7.6,
+"333Handling": 68,
+
+"666TopSpeed": 132,
+"6660to60": 7.2,
+"666Handling": 70,
+
+"699TopSpeed": 132,
+"6990to60": 6.8,
+"699Handling": 73,
+
+"969TopSpeed": 137,
+"9690to60": 7.2,
+"969Handling": 73,
+
+"996TopSpeed": 137,
+"9960to60": 6.8,
+"996Handling": 70,
+    "creator": "Bnuuy"
+}

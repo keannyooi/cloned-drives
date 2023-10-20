@@ -1,0 +1,49 @@
+{
+    "rq": 77,
+    "make": "Porsche",
+    "model": "934 Turbo RSR",
+    "modelYear": 1977,
+    "country": "DE",
+    "topSpeed": 190,
+    "0to60": 3.7,
+    "handling": 92,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Eurotech Elite","Motorsport","Cloned Drives Beta: Last of"],
+    "isPrize": true,
+	
+    "weight": 1120,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 99.07,
+    "ola": 90,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1157627974783348797/934TurboRSR1977.png?ex=65194c90&is=6517fb10&hm=3b5ea58bcbe0093ff92083b8c5bc9f8adca3e0674468f0fe261ef534b9a89928&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1157628103359733850/9341977.png?ex=65194caf&is=6517fb2f&hm=02416ccdd8d63d848aed676a14fb7a77a9ae55295fff069a89886edf1e122015&",
+
+"333TopSpeed": 193,
+"3330to60": 3.5,
+"333Handling": 95,
+
+"666TopSpeed": 195,
+"6660to60": 3.3,
+"666Handling": 98,
+
+"699TopSpeed": 195,
+"6990to60": 3.1,
+"699Handling": 102,
+
+"969TopSpeed": 198,
+"9690to60": 3.3,
+"969Handling": 102,
+
+"996TopSpeed": 198,
+"9960to60": 3.1,
+"996Handling": 98,
+    "creator": "Bnuuy"
+}

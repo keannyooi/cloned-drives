@@ -1,0 +1,49 @@
+{
+    "rq": 63,
+    "make": "Porsche",
+    "model": "911 Carrera RS Club Sport",
+    "modelYear": 1995,
+    "country": "DE",
+    "topSpeed": 175,
+    "0to60": 4.7,
+    "handling": 84,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Track Day","Unique","Cloned Drives Beta: Last of"],
+    "isPrize": true,
+	
+    "weight": 1256,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 75,
+    "ola": 79.23,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1149296463189381150/993911CarreraRSClubSport.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1149296668215345234/993911CarreraRSClubsport.png",
+
+"333TopSpeed": 178,
+"3330to60": 4.5,
+"333Handling": 87,
+
+"666TopSpeed": 181,
+"6660to60": 4.2,
+"666Handling": 90,
+
+"699TopSpeed": 181,
+"6990to60": 4,
+"699Handling": 93,
+
+"969TopSpeed": 184,
+"9690to60": 4.2,
+"969Handling": 93,
+
+"996TopSpeed": 184,
+"9960to60": 4,
+"996Handling": 90,
+    "creator": "Bnuuy"
+}

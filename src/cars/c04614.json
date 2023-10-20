@@ -1,0 +1,49 @@
+{
+    "rq": 43,
+    "make": "TVR",
+    "model": "S4",
+    "modelYear": 1993,
+    "country": "GB",
+    "topSpeed": 136,
+    "0to60": 6.9,
+    "handling": 79,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 925,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 63.22,
+    "ola": 65,
+    "description": "The new strengthened V8S chassis found its way into the last of the V6 cars.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1144374030443491409/TVR_S4.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1144373307815239730/TVR_S4.png",
+    "creator": "Based",
+
+"333TopSpeed": 140, 
+"3330to60": 6.6, 
+"333Handling": 82,
+
+"666TopSpeed": 144, 
+"6660to60": 6.2, 
+"666Handling": 84,
+
+"699TopSpeed": 144, 
+"6990to60": 5.9, 
+"699Handling": 88,
+
+"969TopSpeed": 147, 
+"9690to60": 6.2, 
+"969Handling": 88,
+
+"996TopSpeed": 147, 
+"9960to60": 5.9, 
+"996Handling": 84
+}

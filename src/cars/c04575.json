@@ -1,0 +1,49 @@
+{
+    "rq": 89,
+    "make": ["Kremer-Porsche","Porsche"],
+    "model": "935 K4",
+    "modelYear": 1981,
+    "country": "DE",
+    "topSpeed": 221,
+    "0to60": 3.0,
+    "handling": 94,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Eurotech Elite","Motorsport","Unique","Tuner","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 985,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 115.69,
+    "ola": 90,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158117798573261012/935K4.png?ex=651b14bf&is=6519c33f&hm=1696beaf6fed07d3cbc03b5243e3fa9470311e37dae23e7b98fda408a3e124fb&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158117900117360700/935KremerK4.png?ex=651b14d8&is=6519c358&hm=79cf6ea60be40d35ebca1400bc945acded39aa2071075ca8b66048582f41b81f&",
+
+"333TopSpeed": 223,
+"3330to60": 2.8,
+"333Handling": 97,
+
+"666TopSpeed": 226,
+"6660to60": 2.7,
+"666Handling": 100,
+
+"699TopSpeed": 226,
+"6990to60": 2.5,
+"699Handling": 104,
+
+"969TopSpeed": 228,
+"9690to60": 2.7,
+"969Handling": 104,
+
+"996TopSpeed": 228,
+"9960to60": 2.5,
+"996Handling": 100,
+    "creator": "Bnuuy"
+}

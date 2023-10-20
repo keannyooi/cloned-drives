@@ -1,0 +1,49 @@
+{
+    "rq": 86,
+    "make": "Porsche",
+    "model": "911 GT3",
+    "modelYear": 2017,
+    "country": "DE",
+    "topSpeed": 199,
+    "0to60": 3.2,
+    "handling": 94,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Track Day","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1430,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 84.55,
+    "ola": 81.56,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1154063465284112524/991.2911GT3.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1154063608603480105/991.2911GT3.png",
+
+"333TopSpeed": 202,
+"3330to60": 3,
+"333Handling": 97,
+
+"666TopSpeed": 204,
+"6660to60": 2.9,
+"666Handling": 100,
+
+"699TopSpeed": 204,
+"6990to60": 2.7,
+"699Handling": 104,
+
+"969TopSpeed": 207,
+"9690to60": 2.9,
+"969Handling": 104,
+
+"996TopSpeed": 207,
+"9960to60": 2.7,
+"996Handling": 100,
+    "creator": "Bnuuy"
+}

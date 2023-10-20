@@ -1,0 +1,50 @@
+{
+    "rq": 44,
+    "make": "Audi",
+    "model": "TT Coupe 1.8T 5V quattro S-Line",
+    "modelYear": 2003,
+    "country": "DE",
+    "topSpeed": 150,
+    "0to60": 6.6,
+    "handling": 80,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite", "Style Icon","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 1395,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 68.75,
+    "ola": 63.63,
+    "description": "Facelift also introduced a spotry S Line trim.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1134098928887922759/C.AudiTT18TSLine.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1134101555046518914/TTQ225.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 153,
+    "3330to60": 6.3,
+    "333Handling": 83,
+
+    "666TopSpeed": 157,
+    "6660to60": 5.9, 
+    "666Handling": 85,
+
+    "996TopSpeed": 160,
+    "9960to60": 5.6,
+    "996Handling": 85,
+
+    "969TopSpeed": 160,
+    "9690to60": 5.9,
+    "969Handling": 89,
+
+    "699TopSpeed": 157,
+    "6990to60": 5.6,
+    "699Handling": 89
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 58,
+    "make": "Aston Martin",
+    "model": "DB9 Volante",
+    "modelYear": 2013,
+    "country": "GB",
+    "topSpeed": 183,
+    "0to60": 4.9,
+    "handling": 81,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Grand Tourer","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1845,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 84.48,
+    "ola": 77.55,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1115260271884255353/db9volante2013.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1115260880993652756/db9volante2013.png",
+
+"333TopSpeed": 186,
+"3330to60": 4.7,
+"333Handling": 84,
+
+"666TopSpeed": 189,
+"6660to60": 4.4,
+"666Handling": 86,
+
+"699TopSpeed": 189,
+"6990to60": 4.2,
+"699Handling": 90,
+
+"969TopSpeed": 192,
+"9690to60": 4.4,
+"969Handling": 90,
+
+"996TopSpeed": 192,
+"9960to60": 4.2,
+"996Handling": 86,
+    "creator": "Bnuuy"
+}

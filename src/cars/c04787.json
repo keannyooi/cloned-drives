@@ -1,0 +1,49 @@
+{
+    "rq": 59,
+    "make": "Porsche",
+    "model": "Cayenne Hybrid Concept",
+    "modelYear": 2007,
+    "country": "DE",
+    "topSpeed": 140,
+    "0to60": 6.8,
+    "handling": 77,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Eurotech Elite","Unique","Concept","Eco-Friendly","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 2425,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 60.71,
+    "ola": 79.41,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1115052241544560692/CayenneHybridConcept.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1115052590028292217/Cayennehybridconcept.png",
+
+"333TopSpeed": 144,
+"3330to60": 6.5,
+"333Handling": 80,
+
+"666TopSpeed": 147,
+"6660to60": 6.1,
+"666Handling": 82,
+
+"699TopSpeed": 147,
+"6990to60": 5.8,
+"699Handling": 85,
+
+"969TopSpeed": 151,
+"9690to60": 6.1,
+"969Handling": 85,
+
+"996TopSpeed": 151,
+"9960to60": 5.8,
+"996Handling": 82,
+    "creator": "Bnuuy"
+}

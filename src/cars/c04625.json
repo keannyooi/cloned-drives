@@ -1,0 +1,52 @@
+{
+    "rq": 62,
+    "make": "Volkswagen",
+    "model": "R GTI",
+    "modelYear": 2007,
+    "country": "DE",
+    "topSpeed": 180,
+    "0to60": 4.8,
+    "handling": 83,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite", "Hot Hatch", "Unique", "Concept","Cloned Drives Beta: Last of"],
+    "isPrize": true,
+
+
+    "weight": 1350,
+    "gc": "Low",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 85.41,
+    "ola": 87.92,
+    "description": "Badass Golf mk5, but what the hell is that name?",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1128073681252405288/RGTI.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1128075475407872000/RGTI.png",
+    "creator": "Andu",
+ 
+    "333TopSpeed": 183,
+    "3330to60": 4.6,
+    "333Handling": 86,
+    
+    "666TopSpeed": 186,
+    "6660to60": 4.3,
+    "666Handling": 88,
+    
+    "699TopSpeed": 186,
+    "6990to60": 4.1,
+    "699Handling": 92,
+    
+    "969TopSpeed": 189,
+    "9690to60": 4.3,
+    "969Handling": 92,
+    
+    "996TopSpeed": 189,
+    "9960to60": 4.1,
+    "996Handling": 88
+}

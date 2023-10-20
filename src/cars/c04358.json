@@ -1,0 +1,49 @@
+{
+    "rq": 74,
+    "make": "Audi",
+    "model": "Q7 60 TFSIe quattro S line",
+    "modelYear": 2020,
+    "topSpeed": 149,
+    "0to60": 5.3,
+    "handling": 77,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Eurotech Elite","Eco-Friendly","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 2450,
+    "gc": "High",
+    "seatCount": 7,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 67.94,
+    "ola": 71.69,
+    "description": "No this one doesn't have a 6 litre engine.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1120466987101999238/A.AudiQ760TFSIe.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1120699567214702714/q760.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 152,
+    "3330to60": 5.0,
+    "333Handling": 80,
+
+    "666TopSpeed": 156,
+    "6660to60": 4.8, 
+    "666Handling": 82,
+
+    "996TopSpeed": 159,
+    "9960to60": 4.5,
+    "996Handling": 82,
+
+    "969TopSpeed": 159,
+    "9690to60": 4.8,
+    "969Handling": 85,
+
+    "699TopSpeed": 156,
+    "6990to60": 4.5,
+    "699Handling": 85
+}

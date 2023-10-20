@@ -1,0 +1,49 @@
+{
+    "rq": 79,
+    "make": "Audi",
+    "model": "R8 5.2 FSI quattro",
+    "modelYear": 2009,
+    "country": "DE",
+    "topSpeed": 196,
+    "0to60": 3.7,
+    "handling": 87,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite", "Eargasm", "Innovative", "Supercar", "Style Icon","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1669,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 82.75,
+    "ola": 81.55,
+    "description": "Famous V10 engine entered the R8's lineup leaving the V8 in dust with almost 100 horsepower boost over the V8 and obviously its glorious sound. This is also the first car with full-LED lights.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1142911712543113329/Audi_R8_5.2_FSI_quattro.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1142911756788826112/Audi_R8_5.2.png",
+    "creator": "Crossfire",
+
+    "333TopSpeed": 199, 
+    "3330to60": 3.5, 
+    "333Handling": 90,
+
+    "666TopSpeed": 201, 
+    "6660to60": 3.3, 
+    "666Handling": 93,
+
+    "996TopSpeed": 204, 
+    "9960to60": 3.1, 
+    "996Handling": 93,
+
+    "969TopSpeed": 204, 
+    "9690to60": 3.3, 
+    "969Handling": 97,
+
+    "699TopSpeed": 201, 
+    "6990to60": 3.1, 
+    "699Handling": 97
+}

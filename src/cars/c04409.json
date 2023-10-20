@@ -1,0 +1,49 @@
+{
+    "rq": 53,
+    "make": "Dodge",
+    "model": "Magnum R/T AWD",
+    "modelYear": 2005,
+    "country": "US",
+    "topSpeed": 126,
+    "0to60": 5.9,
+    "handling": 67,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Muscle Car", "The Americas Assault","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1970,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 63.44,
+    "ola": 74.58,
+    "description": "Name a better combo.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1143013155946102884/Dodge_Magnum_RT_AWD_2005.png",
+	"racehud": "https://media.discordapp.net/attachments/1077293403668234340/1143014662246514748/Dodge_Magnum_RT_AWD_2005_Hud.png",
+    "creator": "DodgeDemon",
+
+"333TopSpeed": 130,
+"3330to60": 5.6,
+"333Handling": 69,
+
+"666TopSpeed": 134,
+"6660to60": 5.3,
+"666Handling": 71,
+
+"699TopSpeed": 134,
+"6990to60": 5.0,
+"699Handling": 74,
+
+"969TopSpeed": 138,
+"9690to60": 5.3,
+"969Handling": 74,
+
+"996TopSpeed": 138,
+"9960to60": 5.0,
+"996Handling": 71
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 74,
+    "make": ["DP Motorsport","Porsche"],
+    "model": "DP11 RS",
+    "modelYear": 2011,
+    "country": "DE",
+    "topSpeed": 184,
+    "0to60": 3.8,
+    "handling": 85,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","RestoMod","Tuner","Unique","Track Day","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 870,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 80.44,
+    "ola": 75,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1145452823216140349/DPMotorsportDP11RS.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1145452748280709210/DP11RS.png",
+
+"333TopSpeed": 187,
+"3330to60": 3.6,
+"333Handling": 88,
+
+"666TopSpeed": 190,
+"6660to60": 3.4,
+"666Handling": 91,
+
+"699TopSpeed": 190,
+"6990to60": 3.2,
+"699Handling": 94,
+
+"969TopSpeed": 192,
+"9690to60": 3.4,
+"969Handling": 94,
+
+"996TopSpeed": 192,
+"9960to60": 3.2,
+"996Handling": 91,
+    "creator": "Bnuuy"
+}

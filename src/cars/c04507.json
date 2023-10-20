@@ -1,0 +1,49 @@
+{
+    "rq": 30,
+    "make": "Peugeot",
+    "model": "607 Paladine Concept",
+    "modelYear": 2000,
+    "country": "FR",
+    "topSpeed": 133,
+    "0to60": 9.6,
+    "handling": 68,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite", "Concept","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1950,
+    "gc": "Medium",
+    "seatCount": 6,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Convertible",
+    "mra": 59.63,
+    "ola": 69.79,
+    "description": "Landaulet concept of the 607.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1144165254222315560/Peugeot_607_Paladine_Concept_2000.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1144165638244421703/Peugeot_607_Paladine.png",
+    "creator": "Crossfire",
+
+    "333TopSpeed": 137, 
+    "3330to60": 9.1, 
+    "333Handling": 70,
+
+    "666TopSpeed": 141, 
+    "6660to60": 8.6, 
+    "666Handling": 72,
+
+    "996TopSpeed": 145, 
+    "9960to60": 8.2, 
+    "996Handling": 72,
+
+    "969TopSpeed": 145, 
+    "9690to60": 8.6, 
+    "969Handling": 75,
+
+    "699TopSpeed": 141, 
+    "6990to60": 8.2, 
+    "699Handling": 75
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 34,
+    "make": "Peugeot",
+    "model": "607 2.2 HDi FAP 170 SE",
+    "modelYear": 2006,
+    "country": "FR",
+    "topSpeed": 139,
+    "0to60": 9.1,
+    "handling": 71,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1650,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 58.97,
+    "ola": 72.33,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1144165063423442964/Peugeot_607_2.2_HDi_FAP_170_SE_2006.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1144165545940353054/Peugeot_607_2.2_HDi_170.png",
+    "creator": "Crossfire",
+
+    "333TopSpeed": 143, 
+    "3330to60": 8.6, 
+    "333Handling": 73,
+
+    "666TopSpeed": 146, 
+    "6660to60": 8.2, 
+    "666Handling": 76,
+
+    "996TopSpeed": 150, 
+    "9960to60": 7.7, 
+    "996Handling": 76,
+
+    "969TopSpeed": 150, 
+    "9690to60": 8.2, 
+    "969Handling": 79,
+
+    "699TopSpeed": 146, 
+    "6990to60": 7.7, 
+    "699Handling": 79
+}

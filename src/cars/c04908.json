@@ -1,0 +1,49 @@
+{
+    "rq": 37,
+    "make": "Porsche",
+    "model": "356B/2000GS Carrera 2 GT \"Dreikantschaber\"",
+    "modelYear": 1963,
+    "country": "DE",
+    "topSpeed": 146,
+    "0to60": 7.1,
+    "handling": 71,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Unique","Ultra Expensive","Motorsport","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 820,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 52.34,
+    "ola": 72.69,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1154024391382929529/356B2000GSCarrera2GTDreikantschaber.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1154024481304608849/356B2000GSCarrera2GTDreik.png",
+
+"333TopSpeed": 150,
+"3330to60": 6.7,
+"333Handling": 73,
+
+"666TopSpeed": 153,
+"6660to60": 6.4,
+"666Handling": 76,
+
+"699TopSpeed": 153,
+"6990to60": 6,
+"699Handling": 79,
+
+"969TopSpeed": 157,
+"9690to60": 6.4,
+"969Handling": 79,
+
+"996TopSpeed": 157,
+"9960to60": 6,
+"996Handling": 76,
+    "creator": "Bnuuy"
+}

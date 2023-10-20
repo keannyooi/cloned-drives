@@ -1,0 +1,49 @@
+{
+    "rq": 84,
+    "make": "Porsche",
+    "model": "Panamera GTS",
+    "modelYear": 2019,
+    "country": "DE",
+    "topSpeed": 185,
+    "0to60": 3.9,
+    "handling": 89,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Super Sedan","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1995,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 75,
+    "ola": 79.1,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1152575717536698398/971PanameraGTS.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1152575797933117510/971PanameraGTS.png",
+
+"333TopSpeed": 188,
+"3330to60": 3.7,
+"333Handling": 92,
+
+"666TopSpeed": 191,
+"6660to60": 3.5,
+"666Handling": 95,
+
+"699TopSpeed": 191,
+"6990to60": 3.3,
+"699Handling": 99,
+
+"969TopSpeed": 193,
+"9690to60": 3.5,
+"969Handling": 99,
+
+"996TopSpeed": 193,
+"9960to60": 3.3,
+"996Handling": 95,
+    "creator": "Bnuuy"
+}

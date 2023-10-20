@@ -1,0 +1,49 @@
+{
+    "rq": 105,
+    "make": "Porsche",
+    "model": "Vision 920",
+    "modelYear": 2019,
+    "country": "DE",
+    "topSpeed": 210,
+    "0to60": 2.0,
+    "handling": 98,
+    "driveType": "4WD",
+    "tyreType": "Slick",
+    "tags": ["Eurotech Elite","Track Day","Concept","Unique","Ultra Expensive","Eco-Friendly","Cloned Drives Beta: Last of"],
+    "isPrize": true,
+	
+    "weight": 1150,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Hybrid",
+    "mra": 111.09,
+    "ola": 93.25,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158105691794448464/MiscVision902.png?ex=651b0979&is=6519b7f9&hm=28fe1e3f02f900b9b323c5d84f04a9ef50ace156423d79daf51a94839ba68adf&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158105865488965703/MiscVision920.png?ex=651b09a2&is=6519b822&hm=5a9fe08ed8a06928fc1f9ee9ce6f250e161421d2cfc41691a7e5287a4c4a629d&",
+
+"333TopSpeed": 212,
+"3330to60": 1.9,
+"333Handling": 101,
+
+"666TopSpeed": 215,
+"6660to60": 1.8,
+"666Handling": 104,
+
+"699TopSpeed": 215,
+"6990to60": 1.7,
+"699Handling": 109,
+
+"969TopSpeed": 217,
+"9690to60": 1.8,
+"969Handling": 109,
+
+"996TopSpeed": 217,
+"9960to60": 1.7,
+"996Handling": 104,
+    "creator": "Bnuuy"
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 77,
+    "make": ["R-Reforged", "Aston Martin"],
+    "model": "V12 Zagato Heritage Speedster",
+    "modelYear": 2019,
+    "country": "GB",
+    "topSpeed": 180,
+    "0to60": 3.5,
+    "handling": 88,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","RestoMod","Ultra Expensive","Unique","Tuner","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1710,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 88.76,
+    "ola": 94.55,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1131233636054749234/RreforgedV12ZagHcpeedster.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1131234183604351076/RreforgedV12ZagatoHcpeedster.png",
+
+"333TopSpeed": 183,
+"3330to60": 3.3,
+"333Handling": 91,
+
+"666TopSpeed": 186,
+"6660to60": 3.1,
+"666Handling": 94,
+
+"699TopSpeed": 186,
+"6990to60": 3,
+"699Handling": 98,
+
+"969TopSpeed": 189,
+"9690to60": 3.1,
+"969Handling": 98,
+
+"996TopSpeed": 189,
+"9960to60": 3,
+"996Handling": 94,
+    "creator": "Bnuuy"
+}

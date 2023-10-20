@@ -1,0 +1,49 @@
+{
+    "rq": 67,
+    "make": "Porsche",
+    "model": "911 Carrera 4",
+    "modelYear": 2006,
+    "country": "DE",
+    "topSpeed": 174,
+    "0to60": 4.7,
+    "handling": 85,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1450,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 72.15,
+    "ola": 80,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1149353865922228296/997.1911Carrera4.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1149354065361375283/997.14.png",
+
+"333TopSpeed": 177,
+"3330to60": 4.5,
+"333Handling": 88,
+
+"666TopSpeed": 180,
+"6660to60": 4.2,
+"666Handling": 91,
+
+"699TopSpeed": 180,
+"6990to60": 4,
+"699Handling": 94,
+
+"969TopSpeed": 183,
+"9690to60": 4.2,
+"969Handling": 94,
+
+"996TopSpeed": 183,
+"9960to60": 4,
+"996Handling": 91,
+    "creator": "Bnuuy"
+}

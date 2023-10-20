@@ -1,0 +1,49 @@
+{
+    "rq": 77,
+    "make": "Porsche",
+    "model": "Vision Spyder Roadster",
+    "modelYear": 2019,
+    "country": "DE",
+    "topSpeed": 188,
+    "0to60": 3.9,
+    "handling": 92,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Concept","Unique","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1090,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 77.5,
+    "ola": 85.12,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158097765499420793/miscVisionSpyderRoadster.png?ex=651b0217&is=6519b097&hm=60d986be752a2da10b9aa6a542883275e52c6a6c1db00e59ec1d4b6881070791&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158097831853314048/MiscVisionRodsterSpdyer.png?ex=651b0227&is=6519b0a7&hm=958faf3b2f39b42d3720ad273aaca1103e53cccddbedad1c942f636521762639&",
+
+"333TopSpeed": 191,
+"3330to60": 3.7,
+"333Handling": 95,
+
+"666TopSpeed": 194,
+"6660to60": 3.5,
+"666Handling": 98,
+
+"699TopSpeed": 194,
+"6990to60": 3.3,
+"699Handling": 102,
+
+"969TopSpeed": 196,
+"9690to60": 3.5,
+"969Handling": 102,
+
+"996TopSpeed": 196,
+"9960to60": 3.3,
+"996Handling": 98,
+    "creator": "Bnuuy"
+}

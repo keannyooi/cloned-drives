@@ -1,0 +1,50 @@
+{
+    "rq": 46,
+    "make": "Audi",
+    "model": "TT Coupe 3.2 quattro",
+    "modelYear": 2003,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 6.3,
+    "handling": 80,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite", "Style Icon","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 1520,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.31,
+    "ola": 66.66,
+    "description": "VR6 powered TT and also the second production car with DSG transmission",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1134099200880156723/C.AudiTT32.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1134101679646707822/TT32.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 158,
+    "3330to60": 6.0,
+    "333Handling": 83,
+
+    "666TopSpeed": 162,
+    "6660to60": 5.7, 
+    "666Handling": 85,
+
+    "996TopSpeed": 165,
+    "9960to60": 5.4,
+    "996Handling": 85,
+
+    "969TopSpeed": 165,
+    "9690to60": 5.7,
+    "969Handling": 89,
+
+    "699TopSpeed": 162,
+    "6990to60": 5.4,
+    "699Handling": 89
+}

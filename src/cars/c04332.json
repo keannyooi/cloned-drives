@@ -1,0 +1,49 @@
+{
+    "rq": 80,
+    "make": ["Koenigseder", "Porsche"],
+    "model": "Carrera GT",
+    "modelYear": 2009,
+    "country": "AT",
+    "topSpeed": 205,
+    "0to60": 3.5,
+    "handling": 88,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Tuner","Unique","Ultra Expensive","Supercar","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1360,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 98.88,
+    "ola": 90.71,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1115049577352007810/CarreraGTKoenig.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077292374608326656/1115049577352007810/CarreraGTKoenig.png",
+
+"333TopSpeed": 208,
+"3330to60": 3.3,
+"333Handling": 91,
+
+"666TopSpeed": 210,
+"6660to60": 3.1,
+"666Handling": 94,
+
+"699TopSpeed": 210,
+"6990to60": 3,
+"699Handling": 98,
+
+"969TopSpeed": 213,
+"9690to60": 3.1,
+"969Handling": 98,
+
+"996TopSpeed": 213,
+"9960to60": 3,
+"996Handling": 94,
+    "creator": "Bnuuy"
+}

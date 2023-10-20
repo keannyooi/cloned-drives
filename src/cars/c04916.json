@@ -1,0 +1,49 @@
+{
+    "rq": 65,
+    "make": "Porsche",
+    "model": "911 Carrera",
+    "modelYear": 2008,
+    "country": "DE",
+    "topSpeed": 180,
+    "0to60": 4.6,
+    "handling": 86,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1415,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 74.55,
+    "ola": 84.96,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1152640193032106072/997.2911Carrera.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1152640453942976532/997.2.png",
+
+"333TopSpeed": 183,
+"3330to60": 4.4,
+"333Handling": 89,
+
+"666TopSpeed": 186,
+"6660to60": 4.1,
+"666Handling": 92,
+
+"699TopSpeed": 186,
+"6990to60": 3.9,
+"699Handling": 95,
+
+"969TopSpeed": 189,
+"9690to60": 4.1,
+"969Handling": 95,
+
+"996TopSpeed": 189,
+"9960to60": 3.9,
+"996Handling": 92,
+    "creator": "Bnuuy"
+}

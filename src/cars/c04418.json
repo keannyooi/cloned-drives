@@ -1,0 +1,49 @@
+{
+    "rq": 67,
+    "make": "Aston Martin",
+    "model": "V8 Cygnet",
+    "modelYear": 2018,
+    "country": "GB",
+    "topSpeed": 170,
+    "0to60": 4.2,
+    "handling": 84,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Grand Tourer","Oddity","Unique","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1375,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 91.3,
+    "ola": 95.23,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1118543775673892904/V8Cygnet.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1118544865236615308/V8Cygnet.png",
+
+"333TopSpeed": 173,
+"3330to60": 4,
+"333Handling": 87,
+
+"666TopSpeed": 176,
+"6660to60": 3.8,
+"666Handling": 90,
+
+"699TopSpeed": 176,
+"6990to60": 3.6,
+"699Handling": 93,
+
+"969TopSpeed": 179,
+"9690to60": 3.8,
+"969Handling": 93,
+
+"996TopSpeed": 179,
+"9960to60": 3.6,
+"996Handling": 90,
+    "creator": "Bnuuy"
+}

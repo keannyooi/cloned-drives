@@ -1,0 +1,49 @@
+{
+    "rq": 67,
+    "make": "Porsche",
+    "model": "Cayman GTS",
+    "modelYear": 2014,
+    "country": "DE",
+    "topSpeed": 177,
+    "0to60": 4.5,
+    "handling": 88,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1375,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 75,
+    "ola": 80.45,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1145460729542103150/981CaymanGTS.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1145460854368784445/981CaymanGTS.png",
+
+"333TopSpeed": 180,
+"3330to60": 4.3,
+"333Handling": 91,
+
+"666TopSpeed": 183,
+"6660to60": 4,
+"666Handling": 94,
+
+"699TopSpeed": 183,
+"6990to60": 3.8,
+"699Handling": 98,
+
+"969TopSpeed": 186,
+"9690to60": 4,
+"969Handling": 98,
+
+"996TopSpeed": 186,
+"9960to60": 3.8,
+"996Handling": 94,
+    "creator": "Bnuuy"
+}

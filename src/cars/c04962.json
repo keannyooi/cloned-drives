@@ -1,0 +1,49 @@
+{
+    "rq": 70,
+    "make": "Porsche",
+    "model": "911 Carrera S Cabriolet",
+    "modelYear": 2015,
+    "country": "DE",
+    "topSpeed": 190,
+    "0to60": 4.3,
+    "handling": 88,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1510,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 81.25,
+    "ola": 84.58,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158062664094851124/991.2911CarreraSCab.png?ex=651ae166&is=65198fe6&hm=59c0105c9c494b6e2c735a7a38b0ba325743ec1a5a964f55938a305dfa6177bc&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158062874258841701/991.2911CarreraScab.png?ex=651ae198&is=65199018&hm=6895da69169a4fc45a2ecfd9791669e88afdde6e714be94d812583f17431a616&",
+
+"333TopSpeed": 193,
+"3330to60": 4.1,
+"333Handling": 91,
+
+"666TopSpeed": 195,
+"6660to60": 3.9,
+"666Handling": 94,
+
+"699TopSpeed": 195,
+"6990to60": 3.7,
+"699Handling": 98,
+
+"969TopSpeed": 198,
+"9690to60": 3.9,
+"969Handling": 98,
+
+"996TopSpeed": 198,
+"9960to60": 3.7,
+"996Handling": 94,
+    "creator": "Bnuuy"
+}

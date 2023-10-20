@@ -1,0 +1,49 @@
+{
+    "rq": 13,
+    "make": "Porsche",
+    "model": "356 1500 Cabriolet",
+    "modelYear": 1952,
+    "country": "DE",
+    "topSpeed": 104,
+    "0to60": 14.1,
+    "handling": 55,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 800,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 18.66,
+    "ola": 65.29,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1154056434661732473/9561500Cab.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1154056362326753301/3561500cab.png",
+
+"333TopSpeed": 109,
+"3330to60": 13.4,
+"333Handling": 57,
+
+"666TopSpeed": 114,
+"6660to60": 12.7,
+"666Handling": 59,
+
+"699TopSpeed": 114,
+"6990to60": 12,
+"699Handling": 61,
+
+"969TopSpeed": 119,
+"9690to60": 12.7,
+"969Handling": 61,
+
+"996TopSpeed": 119,
+"9960to60": 12,
+"996Handling": 59,
+    "creator": "Bnuuy"
+}

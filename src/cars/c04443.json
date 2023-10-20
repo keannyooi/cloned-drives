@@ -1,0 +1,49 @@
+{
+    "rq": 67,
+    "make": "Aston Martin",
+    "model": "DB9 GT",
+    "modelYear": 2015,
+    "country": "GB",
+    "topSpeed": 183,
+    "0to60": 4.3,
+    "handling": 84,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Grand Tourer","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1775,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 87.76,
+    "ola": 79.07,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1115260407729373315/db9gt2015.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1115260954679197806/db9GT2015.png",
+
+"333TopSpeed": 186,
+"3330to60": 4.1,
+"333Handling": 87,
+
+"666TopSpeed": 189,
+"6660to60": 3.9,
+"666Handling": 90,
+
+"699TopSpeed": 189,
+"6990to60": 3.7,
+"699Handling": 93,
+
+"969TopSpeed": 192,
+"9690to60": 3.9,
+"969Handling": 93,
+
+"996TopSpeed": 192,
+"9960to60": 3.7,
+"996Handling": 90,
+    "creator": "Bnuuy"
+}

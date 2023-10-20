@@ -1,0 +1,49 @@
+{
+    "rq": 78,
+    "make": "Porsche",
+    "model": "Panamera GTS",
+    "modelYear": 2011,
+    "country": "DE",
+    "topSpeed": 179,
+    "0to60": 4.2,
+    "handling": 85,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Super Sedan","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1995,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 72.85,
+    "ola": 78.45,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1146192594569797752/PanameraGTS970.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1146192771338735736/970GTS.png",
+
+"333TopSpeed": 182,
+"3330to60": 4,
+"333Handling": 88,
+
+"666TopSpeed": 185,
+"6660to60": 3.8,
+"666Handling": 91,
+
+"699TopSpeed": 185,
+"6990to60": 3.6,
+"699Handling": 94,
+
+"969TopSpeed": 188,
+"9690to60": 3.8,
+"969Handling": 94,
+
+"996TopSpeed": 188,
+"9960to60": 3.6,
+"996Handling": 91,
+    "creator": "Bnuuy"
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 71,
+    "make": "Porsche",
+    "model": "911 Speedster",
+    "modelYear": 2010,
+    "country": "DE",
+    "topSpeed": 190,
+    "0to60": 4.2,
+    "handling": 88,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1540,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 77.77,
+    "ola": 86.49,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1152643060317028392/997.2911Speedster.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1152643163807301632/997.2speedstert.png",
+
+"333TopSpeed": 193,
+"3330to60": 4,
+"333Handling": 91,
+
+"666TopSpeed": 195,
+"6660to60": 3.8,
+"666Handling": 94,
+
+"699TopSpeed": 195,
+"6990to60": 3.6,
+"699Handling": 98,
+
+"969TopSpeed": 198,
+"9690to60": 3.8,
+"969Handling": 98,
+
+"996TopSpeed": 198,
+"9960to60": 3.6,
+"996Handling": 94,
+    "creator": "Bnuuy"
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 1,
+    "make": "AC",
+    "model": "Racing Special",
+    "modelYear": 1924,
+    "country": "GB",
+    "topSpeed": 105,
+    "0to60": 17.8,
+    "handling": 48,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Unique","Track Day","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 650,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 34.76,
+    "ola": 67.41,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1152916849290387456/F1_1924_AC_Racing_Special.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1152916974716854323/ACRAcinkSpecial.png",
+
+"333TopSpeed": 110,
+"3330to60": 16.9,
+"333Handling": 50,
+
+"666TopSpeed": 115,
+"6660to60": 16,
+"666Handling": 51,
+
+"699TopSpeed": 115,
+"6990to60": 15.1,
+"699Handling": 53,
+
+"969TopSpeed": 120,
+"9690to60": 16,
+"969Handling": 53,
+
+"996TopSpeed": 120,
+"9960to60": 15.1,
+"996Handling": 51,
+    "creator": "Eedweed"
+}

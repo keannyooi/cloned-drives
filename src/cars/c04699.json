@@ -1,0 +1,49 @@
+{
+    "rq": 72,
+    "make": "Porsche",
+    "model": "911 Carrera RSR",
+    "modelYear": 1993,
+    "country": "DE",
+    "topSpeed": 175,
+    "0to60": 4.2,
+    "handling": 90,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Eurotech Elite","Track Day","Ultra Expensive","Unique","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 970,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 91.25,
+    "ola": 88.88,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1149025772636475483/964911CarreraRSR.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1149025977226252328/964911CarreraRSR.png",
+
+"333TopSpeed": 178,
+"3330to60": 4,
+"333Handling": 93,
+
+"666TopSpeed": 181,
+"6660to60": 3.8,
+"666Handling": 96,
+
+"699TopSpeed": 181,
+"6990to60": 3.6,
+"699Handling": 100,
+
+"969TopSpeed": 184,
+"9690to60": 3.8,
+"969Handling": 100,
+
+"996TopSpeed": 184,
+"9960to60": 3.6,
+"996Handling": 96,
+    "creator": "Bnuuy"
+}

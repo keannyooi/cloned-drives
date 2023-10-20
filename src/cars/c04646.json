@@ -1,0 +1,49 @@
+{
+    "rq": 58,
+    "make": "Porsche",
+    "model": "906K Carrera 6",
+    "modelYear": 1966,
+    "country": "DE",
+    "topSpeed": 174,
+    "0to60": 4.8,
+    "handling": 78,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Motorsport","Unique","Ultra Expensive","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 617,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 75,
+    "ola": 92.5,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1149349709689933844/906KCarrera6.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1149349752014651412/90X906KCarrera6.png",
+
+"333TopSpeed": 177,
+"3330to60": 4.6,
+"333Handling": 81,
+
+"666TopSpeed": 180,
+"6660to60": 4.3,
+"666Handling": 83,
+
+"699TopSpeed": 180,
+"6990to60": 4.1,
+"699Handling": 87,
+
+"969TopSpeed": 183,
+"9690to60": 4.3,
+"969Handling": 87,
+
+"996TopSpeed": 183,
+"9960to60": 4.1,
+"996Handling": 83,
+    "creator": "Bnuuy"
+}

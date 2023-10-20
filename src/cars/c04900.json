@@ -1,0 +1,49 @@
+{
+    "rq": 21,
+    "make": "Porsche",
+    "model": "356B 1600 Super 90",
+    "modelYear": 1960,
+    "country": "DE",
+    "topSpeed": 112,
+    "0to60": 11.3,
+    "handling": 62,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 900,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 31.25,
+    "ola": 69,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1154035466765598751/356B1600Super90.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1154035547036205056/356B1600Super90.png",
+
+"333TopSpeed": 117,
+"3330to60": 10.7,
+"333Handling": 64,
+
+"666TopSpeed": 121,
+"6660to60": 10.2,
+"666Handling": 66,
+
+"699TopSpeed": 121,
+"6990to60": 9.6,
+"699Handling": 69,
+
+"969TopSpeed": 126,
+"9690to60": 10.2,
+"969Handling": 69,
+
+"996TopSpeed": 126,
+"9960to60": 9.6,
+"996Handling": 66,
+    "creator": "Bnuuy"
+}

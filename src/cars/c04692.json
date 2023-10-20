@@ -1,0 +1,49 @@
+{
+    "rq": 74,
+    "make": "Porsche",
+    "model": "911 Carrera RS 2.7 'Safari'",
+    "modelYear": 1973,
+    "country": "DE",
+    "topSpeed": 149,
+    "0to60": 5.8,
+    "handling": 76,
+    "driveType": "RWD",
+    "tyreType": "Off-Road",
+    "tags": ["Eurotech Elite","Motorsport","Style Icon","Unique","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 960,
+    "gc": "High",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 65.06,
+    "ola": 72.49,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1146163848349487154/Porsche911RS2.7Safari1974.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1146163863100850216/Porsche911RS2.7Safari.png",
+
+"333TopSpeed": 152,
+"3330to60": 5.5,
+"333Handling": 79,
+
+"666TopSpeed": 156,
+"6660to60": 5.2,
+"666Handling": 81,
+
+"699TopSpeed": 156,
+"6990to60": 4.9,
+"699Handling": 84,
+
+"969TopSpeed": 159,
+"9690to60": 5.2,
+"969Handling": 84,
+
+"996TopSpeed": 159,
+"9960to60": 4.9,
+"996Handling": 81,
+    "creator": "Bnuuy"
+}

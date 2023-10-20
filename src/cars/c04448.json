@@ -1,0 +1,49 @@
+{
+    "rq": 17,
+    "make": "Aston Martin",
+    "model": "DB2 Drophead Coupe",
+    "modelYear": 1951,
+    "country": "GB",
+    "topSpeed": 101,
+    "0to60": 12.8,
+    "handling": 55,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Midlands Cruise","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1208,
+    "gc": "High",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 13.45,
+    "ola": 73.43,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1120000603016417330/DB2DHC.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1120001168156926002/DB2DHC.png",
+
+"333TopSpeed": 106,
+"3330to60": 12.2,
+"333Handling": 57,
+
+"666TopSpeed": 111,
+"6660to60": 11.5,
+"666Handling": 59,
+
+"699TopSpeed": 111,
+"6990to60": 10.9,
+"699Handling": 61,
+
+"969TopSpeed": 116,
+"9690to60": 11.5,
+"969Handling": 61,
+
+"996TopSpeed": 116,
+"9960to60": 10.9,
+"996Handling": 59,
+    "creator": "Bnuuy"
+}

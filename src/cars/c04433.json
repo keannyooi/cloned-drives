@@ -1,0 +1,49 @@
+{
+    "rq": 74,
+    "make": "Aston Martin",
+    "model": "Rapide S Hybrid Hydrogen Racecar",
+    "modelYear": 2013,
+    "country": "GB",
+    "topSpeed": 197,
+    "0to60": 4.0,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["The Midlands Cruise","Motorsport","Eco-Friendly","Unique","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1600,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 97.56,
+    "ola": 85,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1118544372565286933/rapideshybridhydrogenracecar.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1118545001627000933/RapideHybridHydrogenRacecar.png",
+
+"333TopSpeed": 200,
+"3330to60": 3.8,
+"333Handling": 94,
+
+"666TopSpeed": 202,
+"6660to60": 3.6,
+"666Handling": 97,
+
+"699TopSpeed": 202,
+"6990to60": 3.4,
+"699Handling": 101,
+
+"969TopSpeed": 205,
+"9690to60": 3.6,
+"969Handling": 101,
+
+"996TopSpeed": 205,
+"9960to60": 3.4,
+"996Handling": 97,
+    "creator": "Bnuuy"
+}

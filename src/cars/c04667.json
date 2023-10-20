@@ -1,0 +1,49 @@
+{
+    "rq": 48,
+    "make": "Porsche",
+    "model": "911 Carrera 2.7",
+    "modelYear": 1973,
+    "country": "DE",
+    "topSpeed": 149,
+    "0to60": 6.0,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1075,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 65,
+    "ola": 74.76,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1146188463708848158/Porsche911Carrera2.71973.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1146188724540030976/Porsche911Carrera2.7.png",
+
+"333TopSpeed": 152,
+"3330to60": 5.7,
+"333Handling": 77,
+
+"666TopSpeed": 156,
+"6660to60": 5.4,
+"666Handling": 80,
+
+"699TopSpeed": 156,
+"6990to60": 5.1,
+"699Handling": 83,
+
+"969TopSpeed": 159,
+"9690to60": 5.4,
+"969Handling": 83,
+
+"996TopSpeed": 159,
+"9960to60": 5.1,
+"996Handling": 80,
+    "creator": "Bnuuy"
+}

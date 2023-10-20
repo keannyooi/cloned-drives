@@ -1,0 +1,49 @@
+{
+    "rq": 87,
+    "make": "Porsche",
+    "model": "Panamera Turbo",
+    "modelYear": 2016,
+    "country": "DE",
+    "topSpeed": 190,
+    "0to60": 3.6,
+    "handling": 89,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Super Sedan","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1995,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 79.62,
+    "ola": 83.33,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1152575731231109221/971PanameraTurbo.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1152575814571917312/971PanameraTurbo.png",
+
+"333TopSpeed": 193,
+"3330to60": 3.4,
+"333Handling": 92,
+
+"666TopSpeed": 195,
+"6660to60": 3.2,
+"666Handling": 95,
+
+"699TopSpeed": 195,
+"6990to60": 3.1,
+"699Handling": 99,
+
+"969TopSpeed": 198,
+"9690to60": 3.2,
+"969Handling": 99,
+
+"996TopSpeed": 198,
+"9960to60": 3.1,
+"996Handling": 95,
+    "creator": "Bnuuy"
+}

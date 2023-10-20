@@ -1,0 +1,49 @@
+{
+    "rq": 43,
+    "make": "Porsche",
+    "model": "911 GT-S 2.0",
+    "modelYear": 1968,
+    "country": "DE",
+    "topSpeed": 143,
+    "0to60": 6.5,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Motorsport","Unique","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1015,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 62.45,
+    "ola": 76.56,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158130798239686676/Porsche911GTS2.0.png?ex=651b20db&is=6519cf5b&hm=5efe5b13194aac700b93f4db040b5263b376cc1ee3f62d38f959525ef652c9b3&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158130937897431151/Porsche911GTS2.0.png?ex=651b20fc&is=6519cf7c&hm=00d60e44c7f70ed6d17b31885e2549bea27c3ee744d472fd11038ef8b3b94806&",
+
+"333TopSpeed": 147,
+"3330to60": 6.2,
+"333Handling": 77,
+
+"666TopSpeed": 150,
+"6660to60": 5.9,
+"666Handling": 80,
+
+"699TopSpeed": 150,
+"6990to60": 5.5,
+"699Handling": 83,
+
+"969TopSpeed": 154,
+"9690to60": 5.9,
+"969Handling": 83,
+
+"996TopSpeed": 154,
+"9960to60": 5.5,
+"996Handling": 80,
+    "creator": "Bnuuy"
+}

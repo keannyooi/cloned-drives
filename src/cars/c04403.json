@@ -1,0 +1,51 @@
+{  
+    "rq": 36,
+    "make": "Chevrolet",
+    "model": "Cruze 2.0 VCDi LTZ Station Wagon",
+    "modelYear": 2014,
+    "country": "US",
+    "topSpeed": 125,
+    "0to60": 9.1,
+    "handling": 74,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Americas Assualt","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 1615,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 57.23,
+    "ola": 63.74,
+    "description": "Top of the line, why buy an Opel when you can buy a car that is so american it's telling immigrants to go back to their country?",
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1112159310655537192/Cruze20VCDiLTZSW.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1112159634648727642/CruzeSW2.png",
+    "creator": "Andu",
+   
+    "333TopSpeed": 129,
+    "3330to60": 8.6,
+    "333Handling": 76,
+    
+    "666TopSpeed": 133,
+    "6660to60": 8.2,
+    "666Handling": 79,
+    
+    "699TopSpeed": 133,
+    "6990to60": 7.7,
+    "699Handling": 82,
+    
+    "969TopSpeed": 137,
+    "9690to60": 8.2,
+    "969Handling": 82,
+    
+    "996TopSpeed": 137,
+    "9960to60": 7.7,
+    "996Handling": 79
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 80,
+    "make": "Porsche",
+    "model": "Panamera GTS",
+    "modelYear": 2013,
+    "country": "DE",
+    "topSpeed": 179,
+    "0to60": 4.1,
+    "handling": 87,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Super Sedan","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 2000,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 69.87,
+    "ola": 80,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1149019862295912600/PanameraGTS970B.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1149019910710767707/970BGTS.png",
+
+"333TopSpeed": 182,
+"3330to60": 3.9,
+"333Handling": 90,
+
+"666TopSpeed": 185,
+"6660to60": 3.7,
+"666Handling": 93,
+
+"699TopSpeed": 185,
+"6990to60": 3.5,
+"699Handling": 97,
+
+"969TopSpeed": 188,
+"9690to60": 3.7,
+"969Handling": 97,
+
+"996TopSpeed": 188,
+"9960to60": 3.5,
+"996Handling": 93,
+    "creator": "Bnuuy"
+}

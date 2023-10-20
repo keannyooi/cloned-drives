@@ -1,0 +1,49 @@
+{
+    "rq": 28,
+    "make": "Porsche",
+    "model": "356C Carrera 2 Cabriolet",
+    "modelYear": 1963,
+    "country": "DE",
+    "topSpeed": 124,
+    "0to60": 8.1,
+    "handling": 68,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1010,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 46.1,
+    "ola": 71.25,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1154020346077396992/356CCarrera2Cabrio.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1154020556383989790/356Ccarrera2cab.png",
+
+"333TopSpeed": 128,
+"3330to60": 7.7,
+"333Handling": 70,
+
+"666TopSpeed": 132,
+"6660to60": 7.3,
+"666Handling": 72,
+
+"699TopSpeed": 132,
+"6990to60": 6.9,
+"699Handling": 75,
+
+"969TopSpeed": 137,
+"9690to60": 7.3,
+"969Handling": 75,
+
+"996TopSpeed": 137,
+"9960to60": 6.9,
+"996Handling": 72,
+    "creator": "Bnuuy"
+}

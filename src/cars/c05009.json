@@ -1,0 +1,49 @@
+{
+    "rq": 70,
+    "make": "Porsche",
+    "model": "911 Targa 4S",
+    "modelYear": 2014,
+    "country": "DE",
+    "topSpeed": 184,
+    "0to60": 4.6,
+    "handling": 87,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1555,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 73.56,
+    "ola": 81.45,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158066489983778836/991.1911Targa4S.png?ex=651ae4f7&is=65199377&hm=b9ab9ce646db70d2365b536814a991f95ef1bf6ae382db94636227e64feba55b&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158066653939114044/991.1911Targa4S.png?ex=651ae51e&is=6519939e&hm=49a122d69d086191e15b02706e768da1fccf9df3897eb8c16531401e5aed6d0a&",
+
+"333TopSpeed": 187,
+"3330to60": 4.4,
+"333Handling": 90,
+
+"666TopSpeed": 190,
+"6660to60": 4.1,
+"666Handling": 93,
+
+"699TopSpeed": 190,
+"6990to60": 3.9,
+"699Handling": 97,
+
+"969TopSpeed": 192,
+"9690to60": 4.1,
+"969Handling": 97,
+
+"996TopSpeed": 192,
+"9960to60": 3.9,
+"996Handling": 93,
+    "creator": "Bnuuy"
+}

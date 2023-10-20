@@ -1,0 +1,49 @@
+{
+    "rq": 46,
+    "make": "Aston Martin",
+    "model": "DBS V8",
+    "modelYear": 1969,
+    "country": "GB",
+    "topSpeed": 162,
+    "0to60": 5.9,
+    "handling": 71,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Grand Tourer","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1727,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 77.63,
+    "ola": 88.13,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1115273449263333438/DBSV81969V2.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1115273981524705310/DBSV81969V2.png",
+
+"333TopSpeed": 165,
+"3330to60": 5.6,
+"333Handling": 73,
+
+"666TopSpeed": 168,
+"6660to60": 5.3,
+"666Handling": 76,
+
+"699TopSpeed": 168,
+"6990to60": 5,
+"699Handling": 79,
+
+"969TopSpeed": 172,
+"9690to60": 5.3,
+"969Handling": 79,
+
+"996TopSpeed": 172,
+"9960to60": 5,
+"996Handling": 76,
+    "creator": "Bnuuy"
+}

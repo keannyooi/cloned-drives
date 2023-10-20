@@ -1,0 +1,49 @@
+{
+    "rq": 12,
+    "make": "Porsche",
+    "model": "356 1300 Super Speedster",
+    "modelYear": 1954,
+    "country": "DE",
+    "topSpeed": 99,
+    "0to60": 14.8,
+    "handling": 56,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 760,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 14.3,
+    "ola": 65.29,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1154048132561248286/9561300SuperSpeedster.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1154048257379540992/3561300Superspeedster.png",
+
+"333TopSpeed": 104,
+"3330to60": 14.1,
+"333Handling": 58,
+
+"666TopSpeed": 110,
+"6660to60": 13.3,
+"666Handling": 60,
+
+"699TopSpeed": 110,
+"6990to60": 12.6,
+"699Handling": 62,
+
+"969TopSpeed": 115,
+"9690to60": 13.3,
+"969Handling": 62,
+
+"996TopSpeed": 115,
+"9960to60": 12.6,
+"996Handling": 60,
+    "creator": "Bnuuy"
+}

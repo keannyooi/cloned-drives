@@ -1,0 +1,49 @@
+{
+    "rq": 85,
+    "make": "Porsche",
+    "model": "LMP1/98",
+    "modelYear": 1998,
+    "country": "DE",
+    "topSpeed": 195,
+    "0to60": 3.3,
+    "handling": 96,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Eurotech Elite","Motorsport","Unique","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 890,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 100,
+    "ola": 82.56,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158074968823844945/RSSpyderLMP198.png?ex=651aecdc&is=65199b5c&hm=46ef0444467a52aef161301b7e667855e235feb12bec777fe3378faa5ea22d20&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158075186537570335/RSSpyderLMP198.png?ex=651aed10&is=65199b90&hm=90873a2f86b11f5adb3dedcd614fa7bbe4678dee08c1f6b9b6b55ffa1972cc91&",
+
+"333TopSpeed": 198,
+"3330to60": 3.1,
+"333Handling": 99,
+
+"666TopSpeed": 200,
+"6660to60": 3,
+"666Handling": 102,
+
+"699TopSpeed": 200,
+"6990to60": 2.8,
+"699Handling": 107,
+
+"969TopSpeed": 203,
+"9690to60": 3,
+"969Handling": 107,
+
+"996TopSpeed": 203,
+"9960to60": 2.8,
+"996Handling": 102,
+    "creator": "Bnuuy"
+}

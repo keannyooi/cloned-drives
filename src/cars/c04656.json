@@ -1,0 +1,49 @@
+{
+    "rq": 62,
+    "make": "Porsche",
+    "model": "910/6K",
+    "modelYear": 1966,
+    "country": "DE",
+    "topSpeed": 165,
+    "0to60": 4.5,
+    "handling": 80,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Motorsport","Unique","Ultra Expensive","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 650,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 73.66,
+    "ola": 94.44,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1149350597758288073/910-6K.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1149350673624870953/90X910-6K.png",
+
+"333TopSpeed": 168,
+"3330to60": 4.3,
+"333Handling": 83,
+
+"666TopSpeed": 171,
+"6660to60": 4,
+"666Handling": 85,
+
+"699TopSpeed": 171,
+"6990to60": 3.8,
+"699Handling": 89,
+
+"969TopSpeed": 174,
+"9690to60": 4,
+"969Handling": 89,
+
+"996TopSpeed": 174,
+"9960to60": 3.8,
+"996Handling": 85,
+    "creator": "Bnuuy"
+}

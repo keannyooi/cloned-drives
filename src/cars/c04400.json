@@ -1,0 +1,51 @@
+{  
+    "rq": 34,
+    "make": "Chevrolet",
+    "model": "Cruze 1.8 CNG L Hatchback",
+    "modelYear": 2013,
+    "country": "US",
+    "topSpeed": 124,
+    "0to60": 9.7,
+    "handling": 75,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Americas Assualt","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 1435,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Alternative",
+    "mra": 41.63,
+    "ola": 61.86,
+    "description": "Gday m8 what if we stick yet another Opel engine in that good ol cruze?.",
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1112158402781651115/Cruze18CNGLH.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1112158516275326986/Cruze18CNG.png",
+    "creator": "Andu",
+    
+    "333TopSpeed": 128,
+    "3330to60": 9.2,
+    "333Handling": 77,
+    
+    "666TopSpeed": 132,
+    "6660to60": 8.7,
+    "666Handling": 80,
+    
+    "699TopSpeed": 132,
+    "6990to60": 8.2,
+    "699Handling": 83,
+    
+    "969TopSpeed": 137,
+    "9690to60": 8.7,
+    "969Handling": 83,
+    
+    "996TopSpeed": 137,
+    "9960to60": 8.2,
+    "996Handling": 80
+}

@@ -1,0 +1,52 @@
+{
+    "rq": 76,
+    "make": "Volkswagen",
+    "model": "Golf GTI W12-650",
+    "modelYear": 2007,
+    "country": "DE",
+    "topSpeed": 202,
+    "0to60": 3.6,
+    "handling": 84,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite", "Hot Hatch", "Unique", "Concept","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 1465,
+    "gc": "Low",
+    "seatCount":2,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 116.13,
+    "ola": 98.89,
+    "description": "Talk about legendary: with a 641bhp twin-turbo W12 mounted midships and driving the rear wheels, This VAG leftover bin Golf is one very hot and scary hatch",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1128073778249867395/GolfGTIW12650.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1128075686964375682/GTIW12650.png",
+    "creator": "Andu",
+ 
+    "333TopSpeed": 205,
+    "3330to60": 3.4,
+    "333Handling": 87,
+    
+    "666TopSpeed": 207,
+    "6660to60": 3.2,
+    "666Handling": 90,
+    
+    "699TopSpeed": 207,
+    "6990to60": 3.1,
+    "699Handling": 93,
+    
+    "969TopSpeed": 210,
+    "9690to60": 3.2,
+    "969Handling": 93,
+    
+    "996TopSpeed": 210,
+    "9960to60": 3.1,
+    "996Handling": 90
+}

@@ -1,0 +1,50 @@
+{
+    "rq": 14,
+    "make": "Skoda",
+    "model": "Octavia 1.9 SDI Classic",
+    "modelYear": 2000,
+    "country": "CZ",
+    "topSpeed": 101,
+    "0to60": 18.1,
+    "handling": 67,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 1255,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 29.86,
+    "ola": 58.56,
+    "description": "All you need really.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1137461722056229005/F.SkodaOctavia19SDI.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1137471769054289940/octaviasdi.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 106,
+    "3330to60": 17.2,
+    "333Handling": 69,
+
+    "666TopSpeed": 111,
+    "6660to60": 16.3, 
+    "666Handling": 71,
+
+    "996TopSpeed": 116,
+    "9960to60": 15.4,
+    "996Handling": 71,
+
+    "969TopSpeed": 116,
+    "9690to60": 16.3,
+    "969Handling": 74,
+
+    "699TopSpeed": 111,
+    "6990to60": 15.4,
+    "699Handling": 74
+}

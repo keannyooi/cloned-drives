@@ -1,0 +1,49 @@
+{
+    "rq": 1,
+    "make": ["Lohner-Porsche","Porsche"],
+    "model": "Mixte",
+    "modelYear": 1901,
+    "country": "DE",
+    "topSpeed": 50,
+    "0to60": 99.9,
+    "handling": 31,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Innovative","Eco-Friendly","Unique","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1540,
+    "gc": "High",
+    "seatCount": 4,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Mixed",
+    "fuelType": "Hybrid",
+    "mra": 0,
+    "ola": 12.55,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1146778112953172139/LohnerPorkieMixte.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1146778426800361523/pre356PorkieMixte.png",
+
+"333TopSpeed": 59,
+"3330to60": 99.9,
+"333Handling": 32,
+
+"666TopSpeed": 67,
+"6660to60": 81,
+"666Handling": 33,
+
+"699TopSpeed": 67,
+"6990to60": 76.5,
+"699Handling": 34,
+
+"969TopSpeed": 76,
+"9690to60": 81,
+"969Handling": 34,
+
+"996TopSpeed": 76,
+"9960to60": 76.5,
+"996Handling": 33,
+    "creator": "Bnuuy"
+}

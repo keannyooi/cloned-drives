@@ -1,0 +1,49 @@
+{
+    "rq": 87,
+    "make": ["Switec-Porsche","Porsche"],
+    "model": "962C",
+    "modelYear": 2005,
+    "country": "DE",
+    "topSpeed": 210,
+    "0to60": 3.2,
+    "handling": 93,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Track Day","Unique","Ultra Expensive","RestoMod","Tuner","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 830,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 100,
+    "ola": 86.94,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158108850071805973/962Switec.png?ex=651b0c6a&is=6519baea&hm=da421634676d68b6d2b6dab6061e648a648a661c491457d08817f82d3b0ee6e5&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158108953427857520/962Switec.png?ex=651b0c83&is=6519bb03&hm=335113a84f46b5927809c050b6b1083dec7857f59d58c46c091a56c287ce3d57&",
+
+"333TopSpeed": 212,
+"3330to60": 3,
+"333Handling": 96,
+
+"666TopSpeed": 215,
+"6660to60": 2.9,
+"666Handling": 99,
+
+"699TopSpeed": 215,
+"6990to60": 2.7,
+"699Handling": 103,
+
+"969TopSpeed": 217,
+"9690to60": 2.9,
+"969Handling": 103,
+
+"996TopSpeed": 217,
+"9960to60": 2.7,
+"996Handling": 99,
+    "creator": "Bnuuy"
+}

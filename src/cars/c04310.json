@@ -1,0 +1,49 @@
+{
+    "rq": 88,
+    "make": ["Bussink", "Mercedes-AMG", "Mercedes-Benz"],
+    "model": "GT R Speedlegend",
+    "modelYear": 2021,
+    "country": "DE",
+    "topSpeed": 190,
+    "0to60": 2.9,
+    "handling": 93,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Unique","Tuner","Track Day","Eurotech Elite","Ultra Expensive","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1530,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 111.53,
+    "ola": 96.55,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1141352194428383374/Busskin2001.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1141352272341762088/bussink.png",
+
+"333TopSpeed": 193,
+"3330to60": 2.8,
+"333Handling": 96,
+
+"666TopSpeed": 195,
+"6660to60": 2.6,
+"666Handling": 99,
+
+"699TopSpeed": 195,
+"6990to60": 2.5,
+"699Handling": 103,
+
+"969TopSpeed": 198,
+"9690to60": 2.6,
+"969Handling": 103,
+
+"996TopSpeed": 198,
+"9960to60": 2.5,
+"996Handling": 99,
+    "creator": "fiero"
+}

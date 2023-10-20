@@ -1,0 +1,49 @@
+{
+    "rq": 44,
+    "make": "Porsche",
+    "model": "924 Record",
+    "modelYear": 1976,
+    "country": "DE",
+    "topSpeed": 174,
+    "0to60": 5.9,
+    "handling": 74,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Track Day","Unique","Concept","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 980,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 77.88,
+    "ola": 80,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158088682679574578/misc924Recork.png?ex=651af9a2&is=6519a822&hm=55bf0d3534a61a245d33d3814b03e5912b3846aff86f3a506e87d07a8c80c451&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158088846433587250/Misc924Record.png?ex=651af9c9&is=6519a849&hm=97dc6019d610431134d745539f3a511565c064c6221244b18acab2745d315e50&",
+
+"333TopSpeed": 177,
+"3330to60": 5.6,
+"333Handling": 76,
+
+"666TopSpeed": 180,
+"6660to60": 5.3,
+"666Handling": 79,
+
+"699TopSpeed": 180,
+"6990to60": 5,
+"699Handling": 82,
+
+"969TopSpeed": 183,
+"9690to60": 5.3,
+"969Handling": 82,
+
+"996TopSpeed": 183,
+"9960to60": 5,
+"996Handling": 79,
+    "creator": "Bnuuy"
+}

@@ -1,0 +1,50 @@
+{
+    "rq": 36,
+    "make": "Audi",
+    "model": "TT Coupe 1.8T 5V Sportline",
+    "modelYear": 1998,
+    "country": "DE",
+    "topSpeed": 141,
+    "0to60": 7.2,
+    "handling": 80,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite", "Style Icon","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 1264,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 59.50,
+    "ola": 75.00,
+    "description": "Medium level TT.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1134098776806670437/D.AudiTT18T180.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1134101427782942730/TT180.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 145,
+    "3330to60": 6.8,
+    "333Handling": 83,
+
+    "666TopSpeed": 148,
+    "6660to60": 6.5, 
+    "666Handling": 85,
+
+    "996TopSpeed": 152,
+    "9960to60": 6.1,
+    "996Handling": 85,
+
+    "969TopSpeed": 152,
+    "9690to60": 6.5,
+    "969Handling": 89,
+
+    "699TopSpeed": 148,
+    "6990to60": 6.1,
+    "699Handling": 89
+}

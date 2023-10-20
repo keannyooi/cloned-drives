@@ -1,0 +1,52 @@
+{
+    "rq": 70,
+    "make": ["ASPEC", "Volkswagen"],
+    "model": "PPV430R",
+    "modelYear": 2016,
+    "country": "HK",
+    "topSpeed": 180,
+    "0to60": 4.4,
+    "handling": 88,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite", "Hot Hatch", "Tuner", "Unique","Cloned Drives Beta: Last of"],
+    "isPrize": true,
+
+
+    "weight": 1405,
+    "gc": "Low",
+    "seatCount":4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 88.00,
+    "ola": 88.64,
+    "description": "pp",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1148017953380503663/AspecPPV430R.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1148019136543330454/PPV430R.png",
+    "creator": "Andu",
+    
+    "333TopSpeed": 183,
+    "3330to60": 4.2,
+    "333Handling": 91,
+    
+    "666TopSpeed": 186,
+    "6660to60": 4,
+    "666Handling": 94,
+    
+    "699TopSpeed": 186,
+    "6990to60": 3.7,
+    "699Handling": 98,
+    
+    "969TopSpeed": 189,
+    "9690to60": 4,
+    "969Handling": 98,
+    
+    "996TopSpeed": 189,
+    "9960to60": 3.7,
+    "996Handling": 94
+}

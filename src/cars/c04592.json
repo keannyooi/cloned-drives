@@ -1,0 +1,50 @@
+{
+    "rq": 28,
+    "make": "Skoda",
+    "model": "Octavia Combi 1.6 FSI",
+    "modelYear": 2005,
+    "country": "CZ",
+    "topSpeed": 123,
+    "0to60": 11.2,
+    "handling": 72,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 1355,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 49.77,
+    "ola": 73.21,
+    "description": "FSIIII",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1142890634248732833/E.SkodaOctavia16FSI.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1142894997327315044/octavia16fsi.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 127,
+    "3330to60": 10.6,
+    "333Handling": 74,
+
+    "666TopSpeed": 131,
+    "6660to60": 10.1, 
+    "666Handling": 77,
+
+    "996TopSpeed": 136,
+    "9960to60": 9.5,
+    "996Handling": 77,
+
+    "969TopSpeed": 136,
+    "9690to60": 10.1,
+    "969Handling": 80,
+
+    "699TopSpeed": 131,
+    "6990to60": 9.5,
+    "699Handling": 80
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 45,
+    "make": "Aston Martin",
+    "model": "DBS Vantage",
+    "modelYear": 1967,
+    "country": "GB",
+    "topSpeed": 143,
+    "0to60": 6.5,
+    "handling": 69,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Midlands Cruise","Grand Tourer","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1588,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Front",
+    "mra": 74.71,
+    "ola": 89.23,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1115273094043549716/DBSV81967.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1115273897647018065/DBSV81967.png",
+
+"333TopSpeed": 147,
+"3330to60": 6.2,
+"333Handling": 71,
+
+"666TopSpeed": 150,
+"6660to60": 5.9,
+"666Handling": 74,
+
+"699TopSpeed": 150,
+"6990to60": 5.5,
+"699Handling": 77,
+
+"969TopSpeed": 154,
+"9690to60": 5.9,
+"969Handling": 77,
+
+"996TopSpeed": 154,
+"9960to60": 5.5,
+"996Handling": 74,
+    "creator": "Bnuuy"
+}

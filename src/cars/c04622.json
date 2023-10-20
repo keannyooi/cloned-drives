@@ -1,0 +1,52 @@
+{
+    "rq": 70,
+    "make": "Volkswagen",
+    "model": "Golf BTCC",
+    "modelYear": 2007,
+    "country": "DE",
+    "topSpeed": 155,
+    "0to60": 4.5,
+    "handling": 94,
+    "driveType": "FWD",
+    "tyreType": "Slick",
+    "tags": ["Eurotech Elite", "Motorsport","Cloned Drives Beta: Last of"],
+    "isPrize": true,
+
+
+    "weight": 1145,
+    "gc": "Low",
+    "seatCount":1,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 84.91,
+    "ola": 84.89,
+    "description": "British racing series, british racing Golf.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1128073713984749690/GolfBTCC.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1128075626302152845/GolfBTCC.png",
+    "creator": "Andu",
+ 
+    "333TopSpeed": 158,
+    "3330to60": 4.3,
+    "333Handling": 97,
+    
+    "666TopSpeed": 162,
+    "6660to60": 4,
+    "666Handling": 100,
+    
+    "699TopSpeed": 162,
+    "6990to60": 3.8,
+    "699Handling": 104,
+    
+    "969TopSpeed": 165,
+    "9690to60": 4,
+    "969Handling": 104,
+    
+    "996TopSpeed": 165,
+    "9960to60": 3.8,
+    "996Handling": 100
+}

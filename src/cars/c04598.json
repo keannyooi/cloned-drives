@@ -1,0 +1,50 @@
+{
+    "rq": 36,
+    "make": "Skoda",
+    "model": "Octavia Combi 2.0 TDI",
+    "modelYear": 2005,
+    "country": "CZ",
+    "topSpeed": 129,
+    "0to60": 9.3,
+    "handling": 74,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 1425,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 57.76,
+    "ola": 68.81,
+    "description": "TDI but TDI.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1142890841078255707/D.SkodaOctaviaCombi20TDI.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1142895159063879700/octaviagreen.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 133,
+    "3330to60": 8.8,
+    "333Handling": 76,
+
+    "666TopSpeed": 137,
+    "6660to60": 8.4, 
+    "666Handling": 79,
+
+    "996TopSpeed": 141,
+    "9960to60": 7.9,
+    "996Handling": 79,
+
+    "969TopSpeed": 141,
+    "9690to60": 8.4,
+    "969Handling": 82,
+
+    "699TopSpeed": 137,
+    "6990to60": 7.9,
+    "699Handling": 82
+}

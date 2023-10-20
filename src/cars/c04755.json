@@ -1,0 +1,49 @@
+{
+    "rq": 52,
+    "make": "Porsche",
+    "model": "911 Turbo Carrera 3.0",
+    "modelYear": 1976,
+    "country": "DE",
+    "topSpeed": 152,
+    "0to60": 5.7,
+    "handling": 76,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Style Icon","Street Racer","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1195,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 76.56,
+    "ola": 80,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1145447555765915828/Porsche911TurboCarrera3.01974.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1145447940454883328/Porsche911TurboCarrera3.01974.png",
+
+"333TopSpeed": 155,
+"3330to60": 5.4,
+"333Handling": 79,
+
+"666TopSpeed": 159,
+"6660to60": 5.1,
+"666Handling": 81,
+
+"699TopSpeed": 159,
+"6990to60": 4.8,
+"699Handling": 84,
+
+"969TopSpeed": 162,
+"9690to60": 5.1,
+"969Handling": 84,
+
+"996TopSpeed": 162,
+"9960to60": 4.8,
+"996Handling": 81,
+    "creator": "Bnuuy"
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 40,
+    "make": "Aston Martin",
+    "model": "DB6 Vantage Volante",
+    "modelYear": 1966,
+    "country": "GB",
+    "topSpeed": 157,
+    "0to60": 6.5,
+    "handling": 71,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Grand Tourer","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1622,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 84.42,
+    "ola": 83.08,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1115259058958647336/DB6VantageVolante.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1115259592801271899/DB6VantageVolante.png",
+
+"333TopSpeed": 160,
+"3330to60": 6.2,
+"333Handling": 73,
+
+"666TopSpeed": 164,
+"6660to60": 5.9,
+"666Handling": 76,
+
+"699TopSpeed": 164,
+"6990to60": 5.5,
+"699Handling": 79,
+
+"969TopSpeed": 167,
+"9690to60": 5.9,
+"969Handling": 79,
+
+"996TopSpeed": 167,
+"9960to60": 5.5,
+"996Handling": 76,
+    "creator": "Bnuuy"
+}

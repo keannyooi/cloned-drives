@@ -1,0 +1,49 @@
+{
+    "rq": 35,
+    "make": "TVR",
+    "model": "S1",
+    "modelYear": 1986,
+    "country": "GB",
+    "topSpeed": 130,
+    "0to60": 7.7,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 970,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 51.33,
+    "ola": 70.73,
+    "description": "The car that saved TVR from bankruptcy and gave them a second life under the management of Peter Wheeler.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1144373717439369286/TVR_S1.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1144372915618467850/TVR_S1.png",
+    "creator": "Based",
+
+"333TopSpeed": 134, 
+"3330to60": 7.3, 
+"333Handling": 77,
+
+"666TopSpeed": 138, 
+"6660to60": 6.9, 
+"666Handling": 80,
+
+"699TopSpeed": 138, 
+"6990to60": 6.5, 
+"699Handling": 83,
+
+"969TopSpeed": 142, 
+"9690to60": 6.9, 
+"969Handling": 83,
+
+"996TopSpeed": 142, 
+"9960to60": 6.5, 
+"996Handling": 80
+}

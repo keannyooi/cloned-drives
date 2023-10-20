@@ -1,0 +1,49 @@
+{
+    "rq": 26,
+    "make": "Porsche",
+    "model": "356A 1500 GS Carrera GT Speedster",
+    "modelYear": 1955,
+    "country": "DE",
+    "topSpeed": 124,
+    "0to60": 8.5,
+    "handling": 66,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Street Racer","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 810,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 40,
+    "ola": 67.75,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1151925397039108106/356A1500GSCarreraGTSpeedster.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1151925841245241465/356A1500GSCarreraGTSpeedster.png",
+
+"333TopSpeed": 128,
+"3330to60": 8.1,
+"333Handling": 68,
+
+"666TopSpeed": 132,
+"6660to60": 7.7,
+"666Handling": 70,
+
+"699TopSpeed": 132,
+"6990to60": 7.2,
+"699Handling": 73,
+
+"969TopSpeed": 137,
+"9690to60": 7.7,
+"969Handling": 73,
+
+"996TopSpeed": 137,
+"9960to60": 7.2,
+"996Handling": 70,
+    "creator": "Bnuuy"
+}

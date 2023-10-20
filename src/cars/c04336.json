@@ -1,0 +1,49 @@
+{
+    "rq": 1,
+    "make": ["Lohner-Porsche","Porsche"],
+    "model": "\"Semper Vivus\"",
+    "modelYear": 1900,
+    "country": "DE",
+    "topSpeed": 22,
+    "0to60": 99.9,
+    "handling": 30,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Unique","Concept","Ultra Expensive","Eco-Friendly","Innovative","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1700,
+    "gc": "High",
+    "seatCount": 4,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Mixed",
+    "fuelType": "Hybrid",
+    "mra": 0,
+    "ola": 0,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1146778094468862052/SemperVivus.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1146778402880241714/pre356sempervitus.png",
+
+"333TopSpeed": 31,
+"3330to60": 99.9,
+"333Handling": 31,
+
+"666TopSpeed": 39,
+"6660to60": 99.9,
+"666Handling": 32,
+
+"699TopSpeed": 39,
+"6990to60": 99.9,
+"699Handling": 33,
+
+"969TopSpeed": 48,
+"9690to60": 99.9,
+"969Handling": 33,
+
+"996TopSpeed": 48,
+"9960to60": 99.9,
+"996Handling": 32,
+    "creator": "Bnuuy"
+}

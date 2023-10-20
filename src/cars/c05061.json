@@ -1,0 +1,49 @@
+{
+    "rq": 92,
+    "make": "Porsche",
+    "model": "936/81 Spyder",
+    "modelYear": 1981,
+    "country": "DE",
+    "topSpeed": 224,
+    "0to60": 2.9,
+    "handling": 96,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Eurotech Elite","Motorsport","Unique","Cloned Drives Beta: Last of"],
+    "isPrize": true,
+	
+    "weight": 740,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 123.69,
+    "ola": 100,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158115403009114243/93681.png?ex=651b1284&is=6519c104&hm=9fab0418f6f34b8fedfcd927088b2bea7bf3ea70cd85cd36b024cc2fcf601864&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158115498169471157/93681.png?ex=651b129b&is=6519c11b&hm=f825fbd95ea983eb23fdf6a399e94fc6d6882e3db3c14f6602efc997e39a0204&",
+
+"333TopSpeed": 226,
+"3330to60": 2.8,
+"333Handling": 99,
+
+"666TopSpeed": 229,
+"6660to60": 2.6,
+"666Handling": 102,
+
+"699TopSpeed": 229,
+"6990to60": 2.5,
+"699Handling": 107,
+
+"969TopSpeed": 231,
+"9690to60": 2.6,
+"969Handling": 107,
+
+"996TopSpeed": 231,
+"9960to60": 2.5,
+"996Handling": 102,
+    "creator": "Bnuuy"
+}

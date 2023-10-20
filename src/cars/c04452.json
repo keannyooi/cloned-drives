@@ -1,0 +1,49 @@
+{
+    "rq": 55,
+    "make": ["Aston Martin", "Zagato"],
+    "model": "V12 Vanquish Roadster Zagato",
+    "modelYear": 2004,
+    "country": "GB",
+    "topSpeed": 186,
+    "0to60": 4.9,
+    "handling": 78,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Unique","Ultra Expensive","Concept","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1920,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 76.55,
+    "ola": 90,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1120014344466469045/V12VanquishRoadsterZagato.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1120014770049917039/V12VanquishRoadsterZagato.png",
+
+"333TopSpeed": 189,
+"3330to60": 4.7,
+"333Handling": 81,
+
+"666TopSpeed": 192,
+"6660to60": 4.4,
+"666Handling": 83,
+
+"699TopSpeed": 192,
+"6990to60": 4.2,
+"699Handling": 87,
+
+"969TopSpeed": 194,
+"9690to60": 4.4,
+"969Handling": 87,
+
+"996TopSpeed": 194,
+"9960to60": 4.2,
+"996Handling": 83,
+    "creator": "Bnuuy"
+}

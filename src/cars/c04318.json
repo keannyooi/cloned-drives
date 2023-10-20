@@ -1,0 +1,51 @@
+{  
+    "rq": 30,
+    "make": ["Milltek", "Volkswagen"],
+    "model": "up! GTI",
+    "modelYear": 2019,
+    "country": "DE",
+    "topSpeed": 125,
+    "0to60": 7.7,
+    "handling": 78,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite", "Tuner", "Hot Hatch","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 1070,
+    "gc": "Low",
+    "seatCount":4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 52.03,
+    "ola": 83.12,
+    "description": "A genuine laugh out loud tiny tuned terror.",
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1130852276064489532/Milltek_up_GTI_RQ30_CD.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1130852715690471444/MilltekUpGTI.png",
+    "creator": "void",
+
+    "333TopSpeed": 129,
+    "3330to60": 7.3,
+    "333Handling": 81,
+    
+    "666TopSpeed": 133,
+    "6660to60": 6.9,
+    "666Handling": 83,
+    
+    "699TopSpeed": 133,
+    "6990to60": 6.5,
+    "699Handling": 87,
+    
+    "969TopSpeed": 137,
+    "9690to60": 6.9,
+    "969Handling": 87,
+    
+    "996TopSpeed": 137,
+    "9960to60": 6.5,
+    "996Handling": 83
+}

@@ -1,0 +1,52 @@
+{
+    "rq": 27,
+    "make": "Volkswagen",
+    "model": "Scirocco GTX",
+    "modelYear": 1985,
+    "country": "DE",
+    "topSpeed": 128,
+    "0to60": 8.0,
+    "handling": 74,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite", "Hot Hatch","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 920,
+    "gc": "Low",
+    "seatCount":4,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 52.81,
+    "ola": 71.25,
+    "description": "Introducing the new Nvidia GTXScirocco, starting at a lofty 4999 dollars.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1140038259410485378/SciroccoGTX.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1140040453106974740/GTX.png",
+    "creator": "Andu",
+ 
+    "333TopSpeed": 132,
+    "3330to60": 7.6,
+    "333Handling": 76,
+    
+    "666TopSpeed": 136,
+    "6660to60": 7.2,
+    "666Handling": 79,
+    
+    "699TopSpeed": 136,
+    "6990to60": 6.8,
+    "699Handling": 82,
+    
+    "969TopSpeed": 140,
+    "9690to60": 7.2,
+    "969Handling": 82,
+    
+    "996TopSpeed": 140,
+    "9960to60": 6.8,
+    "996Handling": 79
+}

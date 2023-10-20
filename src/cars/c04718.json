@@ -1,0 +1,49 @@
+{
+    "rq": 85,
+    "make": "Porsche",
+    "model": "911 GT1 Umstellung auf Straßenversion",
+    "modelYear": 1996,
+    "country": "DE",
+    "topSpeed": 200,
+    "0to60": 3.3,
+    "handling": 93,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Unique","Tuner","Track Day","Ultra Expensive","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1060,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 105.13,
+    "ola": 99.85,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1149338300075753745/Porsche911GT1RacetoRoad.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1149338477780029480/993GT1RacetoRoad.png",
+
+"333TopSpeed": 203,
+"3330to60": 3.1,
+"333Handling": 96,
+
+"666TopSpeed": 205,
+"6660to60": 3,
+"666Handling": 99,
+
+"699TopSpeed": 205,
+"6990to60": 2.8,
+"699Handling": 103,
+
+"969TopSpeed": 208,
+"9690to60": 3,
+"969Handling": 103,
+
+"996TopSpeed": 208,
+"9960to60": 2.8,
+"996Handling": 99,
+    "creator": "Bnuuy"
+}

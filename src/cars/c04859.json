@@ -1,0 +1,49 @@
+{
+    "rq": 94,
+    "make": ["Porsche-March", "Porsche"],
+    "model": "90P",
+    "modelYear": 1990,
+    "country": "DE",
+    "topSpeed": 220,
+    "0to60": 3.0,
+    "handling": 100,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Eurotech Elite","Motorsport","Ultra Expensive","Unique","Cloned Drives Beta: Last of"],
+    "isPrize": true,
+	
+    "weight": 700,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 107.99,
+    "ola": 73.85,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158083141316120677/miscMarch90P.png?ex=651af479&is=6519a2f9&hm=e6e5f88711cbe46fe9b1d143232a5109e24e9c4c8e50c915f5655b5550514ca8&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158083363798777856/Misc90P.png?ex=651af4ae&is=6519a32e&hm=0fd017ffec68921f731f79c6dc6602893955d415b0d34123ea60b3b66aa5f0c3&",
+
+"333TopSpeed": 222,
+"3330to60": 2.8,
+"333Handling": 103,
+
+"666TopSpeed": 225,
+"6660to60": 2.7,
+"666Handling": 107,
+
+"699TopSpeed": 225,
+"6990to60": 2.5,
+"699Handling": 111,
+
+"969TopSpeed": 227,
+"9690to60": 2.7,
+"969Handling": 111,
+
+"996TopSpeed": 227,
+"9960to60": 2.5,
+"996Handling": 107,
+    "creator": "Bnuuy"
+}

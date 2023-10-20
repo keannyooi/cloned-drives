@@ -1,0 +1,49 @@
+{
+    "rq": 73,
+    "make": "Porsche",
+    "model": "911 Carrera S",
+    "modelYear": 2015,
+    "country": "DE",
+    "topSpeed": 191,
+    "0to60": 4.1,
+    "handling": 89,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1440,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 82.6,
+    "ola": 80,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158055982153347162/991.2911CarreraS.png?ex=651adb2d&is=651989ad&hm=2851fa581058c14a44560595d1b41d3a0825973cb97a6df7d938d89bb221c664&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158056343157084190/991.2911CarreraS.png?ex=651adb83&is=65198a03&hm=e9a229f8d50819e4614c42eb38bc845a4876ef57a076edb52766cc82837cc43c&",
+
+"333TopSpeed": 194,
+"3330to60": 3.9,
+"333Handling": 92,
+
+"666TopSpeed": 196,
+"6660to60": 3.7,
+"666Handling": 95,
+
+"699TopSpeed": 196,
+"6990to60": 3.5,
+"699Handling": 99,
+
+"969TopSpeed": 199,
+"9690to60": 3.7,
+"969Handling": 99,
+
+"996TopSpeed": 199,
+"9960to60": 3.5,
+"996Handling": 95,
+    "creator": "Bnuuy"
+}

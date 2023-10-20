@@ -1,0 +1,49 @@
+{
+    "rq": 87,
+    "make": ["Koenig","Porsche"],
+    "model": "C62",
+    "modelYear": 1991,
+    "country": "DE",
+    "topSpeed": 237,
+    "0to60": 3.3,
+    "handling": 92,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Track Day","Unique","Ultra Expensive","Tuner","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1100,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 105.69,
+    "ola": 91.25,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158108891297620028/962Koenig.png?ex=651b0c74&is=6519baf4&hm=a4205324e3bc1e3e03eaa3932b829678c6804203f942a64d13c095cfd1207b27&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158108982477594696/962Koenig.png?ex=651b0c8a&is=6519bb0a&hm=91d687b821b51df7a53634c151505b521cb1beec3e6f381fee7abaa0a2899049&",
+
+"333TopSpeed": 239,
+"3330to60": 3.1,
+"333Handling": 95,
+
+"666TopSpeed": 241,
+"6660to60": 3,
+"666Handling": 98,
+
+"699TopSpeed": 241,
+"6990to60": 2.8,
+"699Handling": 102,
+
+"969TopSpeed": 244,
+"9690to60": 3,
+"969Handling": 102,
+
+"996TopSpeed": 244,
+"9960to60": 2.8,
+"996Handling": 98,
+    "creator": "Bnuuy"
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 73,
+    "make": "Porsche",
+    "model": "Le Mans Living Legend",
+    "modelYear": 2016,
+    "country": "DE",
+    "topSpeed": 185,
+    "0to60": 4.1,
+    "handling": 90,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Concept","Unique","Ultra Expensive","Track Day","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1350,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 81.22,
+    "ola": 85,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158103217620652242/miscLeMansLivingLegend.png?ex=651b072b&is=6519b5ab&hm=564fc4dbd4dedf159ced91029d4845f2ebab302c65a73695f69033c58fe32e88&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158103394213445715/MiscLeMansLL.png?ex=651b0755&is=6519b5d5&hm=93d8f708fe376f764e62812738046df50ad4cd7da48989543bfee431f5ea536a&",
+
+"333TopSpeed": 188,
+"3330to60": 3.9,
+"333Handling": 93,
+
+"666TopSpeed": 191,
+"6660to60": 3.7,
+"666Handling": 96,
+
+"699TopSpeed": 191,
+"6990to60": 3.5,
+"699Handling": 100,
+
+"969TopSpeed": 193,
+"9690to60": 3.7,
+"969Handling": 100,
+
+"996TopSpeed": 193,
+"9960to60": 3.5,
+"996Handling": 96,
+    "creator": "Bnuuy"
+}

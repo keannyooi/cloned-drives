@@ -1,0 +1,49 @@
+{
+    "rq": 42,
+    "make": ["Artz", "Porsche"],
+    "model": "Carrera Beetle",
+    "modelYear": 1973,
+    "country": "DE",
+    "topSpeed": 149,
+    "0to60": 5.9,
+    "handling": 74,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Tuner","Unique","Concept","Oddity","Hot Hatch","Cloned Drives Beta: Last of"],
+    "isPrize": true,
+	
+    "weight": 890,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 69.54,
+    "ola": 76.49,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1157617529594851428/914ArtzCB.png?ex=651942d6&is=6517f156&hm=b0adb92085c3cea1419e5f56cbb42d6c685a2771e56e6f88d234461e29f312fe&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1157617807454904410/914Artz.png?ex=65194318&is=6517f198&hm=423e00bae885cb0f09086d8b92d5ca786d3155a5d5958336f3ad03f4c9c1364e&",
+
+"333TopSpeed": 152,
+"3330to60": 5.6,
+"333Handling": 76,
+
+"666TopSpeed": 156,
+"6660to60": 5.3,
+"666Handling": 79,
+
+"699TopSpeed": 156,
+"6990to60": 5,
+"699Handling": 82,
+
+"969TopSpeed": 159,
+"9690to60": 5.3,
+"969Handling": 82,
+
+"996TopSpeed": 159,
+"9960to60": 5,
+"996Handling": 79,
+    "creator": "Bnuuy"
+}

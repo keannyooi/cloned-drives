@@ -1,0 +1,50 @@
+{
+    "rq": 29,
+    "make": "Skoda",
+    "model": "Octavia Combi 2.0 4x4 LX",
+    "modelYear": 2000,
+    "country": "CZ",
+    "topSpeed": 120,
+    "0to60": 11.2,
+    "handling": 70,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 1375,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 50.67,
+    "ola": 66.07,
+    "description": "Classic 4x4 motoring.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1137462029897171064/E.SkodaOctavia19tdi4x4.png?ex=653d5c10&is=652ae710&hm=50993c2834b78f623b833b2a40653bd60bafc5465f3e3ac6e3cbde735fa406e6&",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1137471963376390314/octaviacombi20.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 124,
+    "3330to60": 10.6,
+    "333Handling": 72,
+
+    "666TopSpeed": 129,
+    "6660to60": 10.1, 
+    "666Handling": 75,
+
+    "996TopSpeed": 133,
+    "9960to60": 9.5,
+    "996Handling": 75,
+
+    "969TopSpeed": 133,
+    "9690to60": 10.1,
+    "969Handling": 78,
+
+    "699TopSpeed": 129,
+    "6990to60": 9.5,
+    "699Handling": 78
+}

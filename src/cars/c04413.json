@@ -1,0 +1,49 @@
+{
+    "rq": 38,
+    "make": "DS",
+    "model": "6 1.8 THP 200",
+    "modelYear": 2015,
+    "country": "FR",
+    "topSpeed": 130,
+    "0to60": 8.4,
+    "handling": 74,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1540,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 57.15,
+    "ola": 78.56,
+    "description": "This was DS' first model after the seperation from Citroen, and it was (mostly) exclusive to the Chinese market.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1154459929621581844/DS_6_1.8_THP_200.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1154460056864161892/ds_6_1.8_thp.png",
+    "creator": "Crossfire",
+
+    "333TopSpeed": 134,
+    "3330to60": 8.0,
+    "333Handling": 76,
+
+    "666TopSpeed": 138,
+    "6660to60": 7.6,
+    "666Handling": 79,
+
+    "699TopSpeed": 138,
+    "6990to60": 7.1,
+    "699Handling": 82,
+
+    "969TopSpeed": 142,
+    "9690to60": 7.6,
+    "969Handling": 82,
+
+    "996TopSpeed": 142,
+    "9960to60": 7.1,
+    "996Handling": 79
+}

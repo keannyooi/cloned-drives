@@ -1,0 +1,49 @@
+{
+    "rq": 84,
+    "make": "Porsche",
+    "model": "911 Turbo",
+    "modelYear": 2009,
+    "country": "DE",
+    "topSpeed": 194,
+    "0to60": 3.4,
+    "handling": 89,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite", "Supercar","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1570,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 87.2,
+    "ola": 87.2,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1151632884633968652/997911Turbo2009.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1151633025529036820/997Turbo2009.png",
+
+"333TopSpeed": 197,
+"3330to60": 3.2,
+"333Handling": 92,
+
+"666TopSpeed": 199,
+"6660to60": 3.1,
+"666Handling": 95,
+
+"699TopSpeed": 199,
+"6990to60": 2.9,
+"699Handling": 99,
+
+"969TopSpeed": 202,
+"9690to60": 3.1,
+"969Handling": 99,
+
+"996TopSpeed": 202,
+"9960to60": 2.9,
+"996Handling": 95,
+    "creator": "Bnuuy"
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 46,
+    "make": "Porsche",
+    "model": "911 Carrera 4 Cabriolet",
+    "modelYear": 1989,
+    "country": "DE",
+    "topSpeed": 158,
+    "0to60": 6.0,
+    "handling": 75,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Innovative","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1475,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 64.89,
+    "ola": 70,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1146442682227503174/964911Carrera4Cabriolet.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1146442798845939782/964911Carrera4Cabrio.png",
+
+"333TopSpeed": 161,
+"3330to60": 5.7,
+"333Handling": 77,
+
+"666TopSpeed": 165,
+"6660to60": 5.4,
+"666Handling": 80,
+
+"699TopSpeed": 165,
+"6990to60": 5.1,
+"699Handling": 83,
+
+"969TopSpeed": 168,
+"9690to60": 5.4,
+"969Handling": 83,
+
+"996TopSpeed": 168,
+"9960to60": 5.1,
+"996Handling": 80,
+    "creator": "Bnuuy"
+}

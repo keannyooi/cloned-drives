@@ -1,0 +1,49 @@
+{
+    "rq": 86,
+    "make": "Porsche",
+    "model": "RS Spyder",
+    "modelYear": 2009,
+    "country": "DE",
+    "topSpeed": 197,
+    "0to60": 3.3,
+    "handling": 96,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Eurotech Elite","Motorsport","Unique","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 750,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 99.85,
+    "ola": 77.89,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158075041167188099/RSSpyder2009.png?ex=651aeced&is=65199b6d&hm=50d51208636f0f537bad1d2a8a7a0902d8d6c90c5ad1565763fbb821d5de174c&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158075251553468557/RSSpyder2009.png?ex=651aed1f&is=65199b9f&hm=5a2a94cfe20bdc0eec9f5c5e726455110736cbc9b132b8e48c43d075296919da&",
+
+"333TopSpeed": 200,
+"3330to60": 3.1,
+"333Handling": 99,
+
+"666TopSpeed": 202,
+"6660to60": 3,
+"666Handling": 102,
+
+"699TopSpeed": 202,
+"6990to60": 2.8,
+"699Handling": 107,
+
+"969TopSpeed": 205,
+"9690to60": 3,
+"969Handling": 107,
+
+"996TopSpeed": 205,
+"9960to60": 2.8,
+"996Handling": 102,
+    "creator": "Bnuuy"
+}

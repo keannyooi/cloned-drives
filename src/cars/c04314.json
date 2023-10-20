@@ -1,0 +1,51 @@
+{  
+    "rq": 28,
+    "make": "Fiat",
+    "model": "500X 1.6 Multijet Cross",
+    "modelYear": 2015,
+    "country": "IT",
+    "topSpeed": 116,
+    "0to60": 10.3,
+    "handling": 68,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Tyrol Tour: Remix","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 1320,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 43.83,
+    "ola": 67.96,
+    "description": "Last to the party, the 1.3 diesel makes its debut on the obese 500.",
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1113975230218633327/e28_fiat_500x_1.6_multijet_cross.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1113975313685295214/500XCross16MJ.png",
+    "creator": "Hastur",
+
+    "333TopSpeed": 120,
+    "3330to60": 9.8,
+    "333Handling": 70,
+    
+    "666TopSpeed": 125,
+    "6660to60": 9.3,
+    "666Handling": 72,
+    
+    "699TopSpeed": 125,
+    "6990to60": 8.8,
+    "699Handling": 75,
+    
+    "969TopSpeed": 129,
+    "9690to60": 9.3,
+    "969Handling": 75,
+    
+    "996TopSpeed": 129,
+    "9960to60": 8.8,
+    "996Handling": 72
+}

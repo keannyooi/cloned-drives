@@ -1,0 +1,49 @@
+{
+    "rq": 70,
+    "make": "Porsche",
+    "model": "911 Turbo S 3.3 Flachbau Von Porsche Exclusive",
+    "modelYear": 1980,
+    "country": "DE",
+    "topSpeed": 186,
+    "0to60": 4.4,
+    "handling": 80,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Track Day","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1250,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 85.66,
+    "ola": 86.3,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1145447605913010186/Porsche911Turbo3.3SFlatVonPorscheExclusive.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1145447982855114832/Porsche911Turbo3.3FlatVonPorscheExclusive.png",
+	
+"333TopSpeed": 189,
+"3330to60": 4.2,
+"333Handling": 83,
+
+"666TopSpeed": 192,
+"6660to60": 4,
+"666Handling": 85,
+
+"699TopSpeed": 192,
+"6990to60": 3.7,
+"699Handling": 89,
+
+"969TopSpeed": 194,
+"9690to60": 4,
+"969Handling": 89,
+
+"996TopSpeed": 194,
+"9960to60": 3.7,
+"996Handling": 85,
+    "creator": "Bnuuy"
+}

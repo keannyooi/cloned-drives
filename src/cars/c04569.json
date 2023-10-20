@@ -1,0 +1,49 @@
+{
+    "rq": 35,
+    "make": "General Motors",
+    "model": "XP-897GT",
+    "modelYear": 1973,
+    "country": "US",
+    "topSpeed": 150,
+    "0to60": 6.6,
+    "handling": 73,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Americas Assault","Concept","Unique","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 840,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 54.61,
+    "ola": 71.25,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1157617549400342588/914XP897GT.png?ex=651942db&is=6517f15b&hm=8b03c8086b89432425780c263f1d889a1e3b02f8ec39770a5355200f7be90d92&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1157617827247829032/914GM.png?ex=6519431d&is=6517f19d&hm=3c74193953123a6a370be98b2996f50194d82bdbd592953379f2a8a7fb5d8472&",
+
+"333TopSpeed": 153,
+"3330to60": 6.3,
+"333Handling": 75,
+
+"666TopSpeed": 157,
+"6660to60": 5.9,
+"666Handling": 78,
+
+"699TopSpeed": 157,
+"6990to60": 5.6,
+"699Handling": 81,
+
+"969TopSpeed": 160,
+"9690to60": 5.9,
+"969Handling": 81,
+
+"996TopSpeed": 160,
+"9960to60": 5.6,
+"996Handling": 78,
+    "creator": "Bnuuy"
+}

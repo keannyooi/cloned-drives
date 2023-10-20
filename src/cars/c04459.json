@@ -1,0 +1,49 @@
+{
+    "rq": 66,
+    "make": "Aston Martin",
+    "model": "V12 Vantage Roadster",
+    "modelYear": 2012,
+    "country": "GB",
+    "topSpeed": 190,
+    "0to60": 4.3,
+    "handling": 85,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1740,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 75,
+    "ola": 102.44,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1131233161385361510/V12VantageRoadster.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1131233952766632047/V12VantageRoadster.png",
+
+"333TopSpeed": 193,
+"3330to60": 4.1,
+"333Handling": 88,
+
+"666TopSpeed": 195,
+"6660to60": 3.9,
+"666Handling": 91,
+
+"699TopSpeed": 195,
+"6990to60": 3.7,
+"699Handling": 94,
+
+"969TopSpeed": 198,
+"9690to60": 3.9,
+"969Handling": 94,
+
+"996TopSpeed": 198,
+"9960to60": 3.7,
+"996Handling": 91,
+    "creator": "Bnuuy"
+}

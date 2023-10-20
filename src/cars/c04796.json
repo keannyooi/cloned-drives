@@ -1,0 +1,49 @@
+{
+    "rq": 68,
+    "make": "Porsche",
+    "model": "Cayenne S Hybrid",
+    "modelYear": 2010,
+    "country": "DE",
+    "topSpeed": 150,
+    "0to60": 6.0,
+    "handling": 79,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Eurotech Elite","Eco-Friendly","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 2240,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 62.5,
+    "ola": 83.33,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1149280269329768478/CayenneSHybird2010.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1149280456752238672/CayenneSehybrid2010.png",
+
+"333TopSpeed": 153,
+"3330to60": 5.7,
+"333Handling": 82,
+
+"666TopSpeed": 157,
+"6660to60": 5.4,
+"666Handling": 84,
+
+"699TopSpeed": 157,
+"6990to60": 5.1,
+"699Handling": 88,
+
+"969TopSpeed": 160,
+"9690to60": 5.4,
+"969Handling": 88,
+
+"996TopSpeed": 160,
+"9960to60": 5.1,
+"996Handling": 84,
+    "creator": "Bnuuy"
+}

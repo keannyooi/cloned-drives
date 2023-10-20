@@ -1,0 +1,49 @@
+{
+    "rq": 72,
+    "make": "Porsche",
+    "model": "Panamera 4S Executive",
+    "modelYear": 2013,
+    "country": "DE",
+    "topSpeed": 174,
+    "0to60": 4.7,
+    "handling": 85,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 2075,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 65,
+    "ola": 81.48,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1149001455848661165/Panamera4SExecutive970B.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1149001480062390394/970B4SExec.png",
+
+"333TopSpeed": 177,
+"3330to60": 4.5,
+"333Handling": 88,
+
+"666TopSpeed": 180,
+"6660to60": 4.2,
+"666Handling": 91,
+
+"699TopSpeed": 180,
+"6990to60": 4,
+"699Handling": 94,
+
+"969TopSpeed": 183,
+"9690to60": 4.2,
+"969Handling": 94,
+
+"996TopSpeed": 183,
+"9960to60": 4,
+"996Handling": 91,
+    "creator": "Bnuuy"
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 61,
+    "make": "Porsche",
+    "model": "911 Carrera Cup",
+    "modelYear": 1990,
+    "country": "DE",
+    "topSpeed": 165,
+    "0to60": 4.7,
+    "handling": 85,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Eurotech Elite","Motorsport","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1120,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 83.5,
+    "ola": 80,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1149025752780656725/964911CarreraCup.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1149025957806620733/964911CarreraCup.png",
+
+"333TopSpeed": 168,
+"3330to60": 4.5,
+"333Handling": 88,
+
+"666TopSpeed": 171,
+"6660to60": 4.2,
+"666Handling": 91,
+
+"699TopSpeed": 171,
+"6990to60": 4,
+"699Handling": 94,
+
+"969TopSpeed": 174,
+"9690to60": 4.2,
+"969Handling": 94,
+
+"996TopSpeed": 174,
+"9960to60": 4,
+"996Handling": 91,
+    "creator": "Bnuuy"
+}

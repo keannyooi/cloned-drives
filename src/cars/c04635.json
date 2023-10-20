@@ -1,0 +1,52 @@
+{
+    "rq": 60,
+    "make": "Volkswagen",
+    "model": "Scirocco Bi-Motor 280/4",
+    "modelYear": 1984,
+    "country": "DE",
+    "topSpeed": 165,
+    "0to60": 5.0,
+    "handling": 79,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite", "Hot Hatch", "Unique","Cloned Drives Beta: Last of"],
+    "isPrize": true,
+
+
+    "weight": 1068,
+    "gc": "Low",
+    "seatCount":2,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 58.82,
+    "ola": 68.00,
+    "description": "2 Engines, a wide bodykit, and the unfortunate existence of the Audi quattro.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1140038803696926920/SciroccoBimotor2804.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1140040714902851696/BiMotor2804.png",
+    "creator": "Andu",
+ 
+    "333TopSpeed": 168,
+    "3330to60": 4.8,
+    "333Handling": 82,
+    
+    "666TopSpeed": 171,
+    "6660to60": 4.5,
+    "666Handling": 84,
+    
+    "699TopSpeed": 171,
+    "6990to60": 4.3,
+    "699Handling": 88,
+    
+    "969TopSpeed": 174,
+    "9690to60": 4.5,
+    "969Handling": 88,
+    
+    "996TopSpeed": 174,
+    "9960to60": 4.3,
+    "996Handling": 84
+}

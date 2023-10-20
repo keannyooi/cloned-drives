@@ -1,0 +1,49 @@
+{
+    "rq": 84,
+    "make": ["Kremer-Porsche","Porsche"],
+    "model": "935/76 K1",
+    "modelYear": 1976,
+    "country": "DE",
+    "topSpeed": 213,
+    "0to60": 3.3,
+    "handling": 93,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Eurotech Elite","Motorsport","Unique","Tuner","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 975,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 112.97,
+    "ola": 95,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158117735197323304/935K1.png?ex=651b14b0&is=6519c330&hm=dd00f4dadd2878009d000d414eaeca23bf6ef124b9152f56ebfc6a23e08648ba&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158117850289033336/935KremerK1.png?ex=651b14cc&is=6519c34c&hm=3d8a1fa88431344b112ca8c28272ab34bdf9c5e174e2acac6acd0aea649694d7&",
+
+"333TopSpeed": 215,
+"3330to60": 3.1,
+"333Handling": 96,
+
+"666TopSpeed": 218,
+"6660to60": 3,
+"666Handling": 99,
+
+"699TopSpeed": 218,
+"6990to60": 2.8,
+"699Handling": 103,
+
+"969TopSpeed": 220,
+"9690to60": 3,
+"969Handling": 103,
+
+"996TopSpeed": 220,
+"9960to60": 2.8,
+"996Handling": 99,
+    "creator": "Bnuuy"
+}

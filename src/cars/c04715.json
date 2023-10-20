@@ -1,0 +1,49 @@
+{
+    "rq": 84,
+    "make": "Porsche",
+    "model": "911 GT1",
+    "modelYear": 1996,
+    "country": "DE",
+    "topSpeed": 205,
+    "0to60": 3.3,
+    "handling": 95,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Eurotech Elite","Motorsport","Unique","Ultra Expensive","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1050,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 106.13,
+    "ola": 98.71,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1149338373203447828/Porsche911GT1.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1149338528216531076/993GT1.png",
+
+"333TopSpeed": 208,
+"3330to60": 3.1,
+"333Handling": 98,
+
+"666TopSpeed": 210,
+"6660to60": 3,
+"666Handling": 101,
+
+"699TopSpeed": 210,
+"6990to60": 2.8,
+"699Handling": 105,
+
+"969TopSpeed": 213,
+"9690to60": 3,
+"969Handling": 105,
+
+"996TopSpeed": 213,
+"9960to60": 2.8,
+"996Handling": 101,
+    "creator": "Bnuuy"
+}

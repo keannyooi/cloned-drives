@@ -1,0 +1,49 @@
+{
+    "rq": 43,
+    "make": "Porsche",
+    "model": "911 Carrera Speedster",
+    "modelYear": 1989,
+    "country": "DE",
+    "topSpeed": 146,
+    "0to60": 6.5,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Style Icon","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1300,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 66.03,
+    "ola": 75,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1145456186787897374/Porsche911CarreraSpeedster1989.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1145456492808503296/Porsche911SpEedster1989.png",
+
+"333TopSpeed": 150,
+"3330to60": 6.2,
+"333Handling": 77,
+
+"666TopSpeed": 153,
+"6660to60": 5.9,
+"666Handling": 80,
+
+"699TopSpeed": 153,
+"6990to60": 5.5,
+"699Handling": 83,
+
+"969TopSpeed": 157,
+"9690to60": 5.9,
+"969Handling": 83,
+
+"996TopSpeed": 157,
+"9960to60": 5.5,
+"996Handling": 80,
+    "creator": "Bnuuy"
+}

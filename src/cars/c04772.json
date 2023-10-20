@@ -1,0 +1,49 @@
+{
+    "rq": 18,
+    "make": "Porsche",
+    "model": "C88",
+    "modelYear": 1994,
+    "country": "DE",
+    "topSpeed": 100,
+    "0to60": 15.4,
+    "handling": 71,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Unique","Concept","Oddity","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1190,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 15.93,
+    "ola": 63.63,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1145435397581721630/PorscheC881998.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1145435620496384062/PorscheC881998.png",
+
+"333TopSpeed": 105,
+"3330to60": 14.6,
+"333Handling": 73,
+
+"666TopSpeed": 110,
+"6660to60": 13.9,
+"666Handling": 76,
+
+"699TopSpeed": 110,
+"6990to60": 13.1,
+"699Handling": 79,
+
+"969TopSpeed": 116,
+"9690to60": 13.9,
+"969Handling": 79,
+
+"996TopSpeed": 116,
+"9960to60": 13.1,
+"996Handling": 76,
+    "creator": "Bnuuy"
+}

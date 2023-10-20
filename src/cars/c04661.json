@@ -1,0 +1,49 @@
+{
+    "rq": 37,
+    "make": "Porsche",
+    "model": "911 2.7 Targa",
+    "modelYear": 1973,
+    "country": "DE",
+    "topSpeed": 127,
+    "0to60": 8.1,
+    "handling": 71,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1100,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 55,
+    "ola": 60,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1146182103789228052/Porsche9112.7Targa1973.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1146182515086852156/Porsche9112.7Targa1973.png",
+
+"333TopSpeed": 131,
+"3330to60": 7.7,
+"333Handling": 73,
+
+"666TopSpeed": 135,
+"6660to60": 7.3,
+"666Handling": 76,
+
+"699TopSpeed": 135,
+"6990to60": 6.9,
+"699Handling": 79,
+
+"969TopSpeed": 139,
+"9690to60": 7.3,
+"969Handling": 79,
+
+"996TopSpeed": 139,
+"9960to60": 6.9,
+"996Handling": 76,
+    "creator": "Bnuuy"
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 56,
+    "make": "Porsche",
+    "model": "911 Carrera Speedster",
+    "modelYear": 1995,
+    "country": "DE",
+    "topSpeed": 169,
+    "0to60": 5.1,
+    "handling": 81,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Unique","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1500,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 70,
+    "ola": 80,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1149304223058632754/993911CarreraSpeedster.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1149304351186227311/993911CarreraSpeedster.png",
+
+"333TopSpeed": 172,
+"3330to60": 4.8,
+"333Handling": 84,
+
+"666TopSpeed": 175,
+"6660to60": 4.6,
+"666Handling": 86,
+
+"699TopSpeed": 175,
+"6990to60": 4.3,
+"699Handling": 90,
+
+"969TopSpeed": 178,
+"9690to60": 4.6,
+"969Handling": 90,
+
+"996TopSpeed": 178,
+"9960to60": 4.3,
+"996Handling": 86,
+    "creator": "Bnuuy"
+}

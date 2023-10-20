@@ -1,0 +1,49 @@
+{
+    "rq": 13,
+    "make": "Porsche",
+    "model": "356B 1600 Roadster",
+    "modelYear": 1960,
+    "country": "DE",
+    "topSpeed": 99,
+    "0to60": 15.0,
+    "handling": 59,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 870,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 16.59,
+    "ola": 64.1,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1154039056255176744/356B1600Roadster.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1154039159988682793/356B1600Roadster.png",
+
+"333TopSpeed": 104,
+"3330to60": 14.3,
+"333Handling": 61,
+
+"666TopSpeed": 110,
+"6660to60": 13.5,
+"666Handling": 63,
+
+"699TopSpeed": 110,
+"6990to60": 12.8,
+"699Handling": 65,
+
+"969TopSpeed": 115,
+"9690to60": 13.5,
+"969Handling": 65,
+
+"996TopSpeed": 115,
+"9960to60": 12.8,
+"996Handling": 63,
+    "creator": "Bnuuy"
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 69,
+    "make": ["Elva-Porsche", "Porsche", "Elva"],
+    "model": "MK VII",
+    "modelYear": 1963,
+    "country": "DE",
+    "topSpeed": 156,
+    "0to60": 3.8,
+    "handling": 81,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Motorsport","Unique","Cloned Drives Beta: Last of"],
+    "isPrize": true,
+	
+    "weight": 442,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 71.69,
+    "ola": 89.54,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158078912744656916/miscelvamk7.png?ex=651af088&is=65199f08&hm=3ecbf65b90d6ff471fab85247836e5412d8c00bca1b4eabd8cba8144accfd5d7&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158079049831301231/MiscElva.png?ex=651af0a9&is=65199f29&hm=81c9303807230df3df351e86c24640ed34b03bb784b2de2fa751201d88bc5257&",
+
+"333TopSpeed": 159,
+"3330to60": 3.6,
+"333Handling": 84,
+
+"666TopSpeed": 163,
+"6660to60": 3.4,
+"666Handling": 86,
+
+"699TopSpeed": 163,
+"6990to60": 3.2,
+"699Handling": 90,
+
+"969TopSpeed": 166,
+"9690to60": 3.4,
+"969Handling": 90,
+
+"996TopSpeed": 166,
+"9960to60": 3.2,
+"996Handling": 86,
+    "creator": "Bnuuy"
+}

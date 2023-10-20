@@ -1,0 +1,49 @@
+{
+    "rq": 75,
+    "make": "Porsche",
+    "model": "718 Cayman GTS 4.0",
+    "modelYear": 2020,
+    "country": "DE",
+    "topSpeed": 182,
+    "0to60": 4.0,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1405,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 85.04,
+    "ola": 80,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1146148743171813518/982CaymanGTS4.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1146149309079879721/982CaymanGTS4.png",
+
+"333TopSpeed": 185,
+"3330to60": 3.8,
+"333Handling": 94,
+
+"666TopSpeed": 188,
+"6660to60": 3.6,
+"666Handling": 97,
+
+"699TopSpeed": 188,
+"6990to60": 3.4,
+"699Handling": 101,
+
+"969TopSpeed": 191,
+"9690to60": 3.6,
+"969Handling": 101,
+
+"996TopSpeed": 191,
+"9960to60": 3.4,
+"996Handling": 97,
+    "creator": "Bnuuy"
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 76,
+    "make": "Aston Martin",
+    "model": "V12 Vantage AMR",
+    "modelYear": 2017,
+    "country": "GB",
+    "topSpeed": 205,
+    "0to60": 3.7,
+    "handling": 88,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1650,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 87.05,
+    "ola": 95.24,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1131233031642947716/V12VantageAMR2017.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1131233824869732503/V12VantageAMR2017.png",
+
+"333TopSpeed": 208,
+"3330to60": 3.5,
+"333Handling": 91,
+
+"666TopSpeed": 210,
+"6660to60": 3.3,
+"666Handling": 94,
+
+"699TopSpeed": 210,
+"6990to60": 3.1,
+"699Handling": 98,
+
+"969TopSpeed": 213,
+"9690to60": 3.3,
+"969Handling": 98,
+
+"996TopSpeed": 213,
+"9960to60": 3.1,
+"996Handling": 94,
+    "creator": "Bnuuy"
+}

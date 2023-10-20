@@ -1,0 +1,49 @@
+{
+    "rq": 59,
+    "make": "Porsche",
+    "model": "911 Carrera Cup USA",
+    "modelYear": 1992,
+    "country": "DE",
+    "topSpeed": 162,
+    "0to60": 4.9,
+    "handling": 85,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Eurotech Elite","Motorsport","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1150,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 82.54,
+    "ola": 80,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1149025735890178069/964911CarreraCupUSA.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1149025941419466834/964911CarreraCupUSA.png",
+
+"333TopSpeed": 165,
+"3330to60": 4.7,
+"333Handling": 88,
+
+"666TopSpeed": 168,
+"6660to60": 4.4,
+"666Handling": 91,
+
+"699TopSpeed": 168,
+"6990to60": 4.2,
+"699Handling": 94,
+
+"969TopSpeed": 172,
+"9690to60": 4.4,
+"969Handling": 94,
+
+"996TopSpeed": 172,
+"9960to60": 4.2,
+"996Handling": 91,
+    "creator": "Bnuuy"
+}

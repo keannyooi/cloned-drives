@@ -1,0 +1,49 @@
+{
+    "rq": 64,
+    "make": "Audi",
+    "model": "Q7 3.0 TDI quattro S line",
+    "modelYear": 2015,
+    "topSpeed": 146,
+    "0to60": 6.3,
+    "handling": 77,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 2205,
+    "gc": "High",
+    "seatCount": 7,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 60.57,
+    "ola": 73.01,
+    "description": "This also probably the most popular variant, long live TDI.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1120467044123553852/B.AudiQ730TDIq.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1120699664975548457/q730tdi.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 150,
+    "3330to60": 6.0,
+    "333Handling": 80,
+
+    "666TopSpeed": 153,
+    "6660to60": 5.7, 
+    "666Handling": 82,
+
+    "996TopSpeed": 157,
+    "9960to60": 5.4,
+    "996Handling": 82,
+
+    "969TopSpeed": 157,
+    "9690to60": 5.7,
+    "969Handling": 85,
+
+    "699TopSpeed": 153,
+    "6990to60": 5.4,
+    "699Handling": 85
+}

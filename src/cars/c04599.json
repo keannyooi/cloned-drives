@@ -1,0 +1,50 @@
+{
+    "rq": 46,
+    "make": "Skoda",
+    "model": "Octavia Scout 1.8 TSI 4x4",
+    "modelYear": 2009,
+    "country": "CZ",
+    "topSpeed": 133,
+    "0to60": 8.4,
+    "handling": 73,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 1470,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 62.22,
+    "ola": 71.42,
+    "description": "Scouting for petrol",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1142890948888645832/C.SkodaOctaviaScout18TSI.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1142895269931925624/octaviascouttsi.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 137,
+    "3330to60": 8.0,
+    "333Handling": 75,
+
+    "666TopSpeed": 141,
+    "6660to60": 7.6, 
+    "666Handling": 78,
+
+    "996TopSpeed": 145,
+    "9960to60": 7.1,
+    "996Handling": 78,
+
+    "969TopSpeed": 145,
+    "9690to60": 7.6,
+    "969Handling": 81,
+
+    "699TopSpeed": 141,
+    "6990to60": 7.1,
+    "699Handling": 81
+}

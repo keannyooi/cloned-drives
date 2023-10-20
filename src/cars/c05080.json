@@ -1,0 +1,49 @@
+{
+    "rq": 76,
+    "make": "Porsche",
+    "model": "Panamera",
+    "modelYear": 2020,
+    "country": "DE",
+    "topSpeed": 167,
+    "0to60": 5.1,
+    "handling": 87,
+    "driveType": "RWD",
+    "tyreType": "standard",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1860,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 64.92,
+    "ola": 75.28,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1152586518578348042/971BPanamera.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1152586622110535761/971BPanamera.png",
+
+"333TopSpeed": 170,
+"3330to60": 4.8,
+"333Handling": 90,
+
+"666TopSpeed": 173,
+"6660to60": 4.6,
+"666Handling": 93,
+
+"699TopSpeed": 173,
+"6990to60": 4.3,
+"699Handling": 97,
+
+"969TopSpeed": 176,
+"9690to60": 4.6,
+"969Handling": 97,
+
+"996TopSpeed": 176,
+"9960to60": 4.3,
+"996Handling": 93,
+    "creator": "Bnuuy"
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 93,
+    "make": "Gumpert",
+    "model": "Apollo S",
+    "modelYear": 2010,
+    "country": "DE",
+    "topSpeed": 224,
+    "0to60": 2.8,
+    "handling": 93,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Unique","Ultra Expensive","Supercar","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1190,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 135.09,
+    "ola": 98.48,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1130946970064793791/ApolloSGumpert.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1130947255277457548/ApolloSGumpert.png",
+
+"333TopSpeed": 226,
+"3330to60": 2.7,
+"333Handling": 96,
+
+"666TopSpeed": 229,
+"6660to60": 2.5,
+"666Handling": 99,
+
+"699TopSpeed": 229,
+"6990to60": 2.4,
+"699Handling": 103,
+
+"969TopSpeed": 231,
+"9690to60": 2.5,
+"969Handling": 103,
+
+"996TopSpeed": 231,
+"9960to60": 2.4,
+"996Handling": 99,
+    "creator": "Bnuuy"
+}

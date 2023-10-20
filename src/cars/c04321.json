@@ -1,0 +1,51 @@
+{  
+    "rq": 21,
+    "make": "smart",
+    "model": "roadster passion",
+    "modelYear": 2003,
+    "country": "DE",
+    "topSpeed": 108,
+    "0to60": 11.0,
+    "handling": 82,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 820,
+    "gc": "Low",
+    "seatCount":2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 41.10,
+    "ola": 52.89,
+    "description": "A sprite amongst giants.",
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1130852182409883748/e21_smart_roadster_passion.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1130852610719612970/smartroadster.png",
+    "creator": "Hastur",
+
+    "333TopSpeed": 112,
+    "3330to60": 10.5,
+    "333Handling": 85,
+    
+    "666TopSpeed": 118,
+    "6660to60": 9.9,
+    "666Handling": 87,
+    
+    "699TopSpeed": 118,
+    "6990to60": 9.4,
+    "699Handling": 91,
+    
+    "969TopSpeed": 122,
+    "9690to60": 9.9,
+    "969Handling": 91,
+    
+    "996TopSpeed": 122,
+    "9960to60": 9.4,
+    "996Handling": 87
+}

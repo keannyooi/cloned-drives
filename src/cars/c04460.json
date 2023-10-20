@@ -1,0 +1,49 @@
+{
+    "rq": 72,
+    "make": "Aston Martin",
+    "model": "V12 Vantage S Roadster",
+    "modelYear": 2014,
+    "country": "GB",
+    "topSpeed": 201,
+    "0to60": 3.9,
+    "handling": 86,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1720,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 82.55,
+    "ola": 99.4,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1131233184269471884/V12VantageSRoadster.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1131233978851012609/V12VantageSRoadster.png",
+
+"333TopSpeed": 204,
+"3330to60": 3.7,
+"333Handling": 89,
+
+"666TopSpeed": 206,
+"6660to60": 3.5,
+"666Handling": 92,
+
+"699TopSpeed": 206,
+"6990to60": 3.3,
+"699Handling": 95,
+
+"969TopSpeed": 209,
+"9690to60": 3.5,
+"969Handling": 95,
+
+"996TopSpeed": 209,
+"9960to60": 3.3,
+"996Handling": 92,
+    "creator": "Bnuuy"
+}

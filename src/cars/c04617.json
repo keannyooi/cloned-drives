@@ -1,0 +1,52 @@
+{
+    "rq": 29,
+    "make": "Volkswagen",
+    "model": "Corrado 2.0 8V",
+    "modelYear": 1993,
+    "country": "DE",
+    "topSpeed": 123,
+    "0to60": 10.3,
+    "handling": 71,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 1150,
+    "gc": "Medium",
+    "seatCount":4,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 44.66,
+    "ola": 64.39,
+    "description": "Got no money? You a broke lil boy? Do not worry! Volkswagen has you covered.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1140974172525310033/Corrado208V.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1140974718271377518/208V.png",
+    "creator": "Andu",
+    
+    "333TopSpeed": 127,
+    "3330to60": 9.8,
+    "333Handling": 73,
+    
+    "666TopSpeed": 131,
+    "6660to60": 9.3,
+    "666Handling": 76,
+    
+    "699TopSpeed": 131,
+    "6990to60": 8.8,
+    "699Handling": 79,
+    
+    "969TopSpeed": 136,
+    "9690to60": 9.3,
+    "969Handling": 79,
+    
+    "996TopSpeed": 136,
+    "9960to60": 8.8,
+    "996Handling": 76
+}

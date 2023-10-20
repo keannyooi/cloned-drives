@@ -1,0 +1,49 @@
+{
+    "rq": 49,
+    "make": "Aston Martin",
+    "model": "Heritage EV Concept",
+    "modelYear": 2018,
+    "country": "GB",
+    "topSpeed": 150,
+    "0to60": 6.0,
+    "handling": 69,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Midlands Cruise","Grand Tourer","Eco-Friendly","Concept","RestoMod","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1900,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 66.67,
+    "ola": 90,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1115259235543027822/heritageEVconcept.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1115259655497723964/heritageEVconcept.png",
+
+"333TopSpeed": 153,
+"3330to60": 5.7,
+"333Handling": 71,
+
+"666TopSpeed": 157,
+"6660to60": 5.4,
+"666Handling": 74,
+
+"699TopSpeed": 157,
+"6990to60": 5.1,
+"699Handling": 77,
+
+"969TopSpeed": 160,
+"9690to60": 5.4,
+"969Handling": 77,
+
+"996TopSpeed": 160,
+"9960to60": 5.1,
+"996Handling": 74,
+    "creator": "Bnuuy"
+}

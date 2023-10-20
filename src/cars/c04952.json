@@ -1,0 +1,49 @@
+{
+    "rq": 74,
+    "make": "Porsche",
+    "model": "911 Carrera GTS",
+    "modelYear": 2014,
+    "country": "DE",
+    "topSpeed": 190,
+    "0to60": 4.0,
+    "handling": 89,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1425,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 81.99,
+    "ola": 81.45,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158052278247370762/991.1911CarreraGTS.png?ex=651ad7ba&is=6519863a&hm=d42c76da9b4a51e7bf5c6ead022beb755e79f069d111a886763d2f2b7238d302&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158052416441294878/991.1911CarreraGTS.png?ex=651ad7db&is=6519865b&hm=7976567f7a2a243d4d093ce85bf13f87dd663afe51e593d282f5b4b63e64065d&",
+
+"333TopSpeed": 193,
+"3330to60": 3.8,
+"333Handling": 92,
+
+"666TopSpeed": 195,
+"6660to60": 3.6,
+"666Handling": 95,
+
+"699TopSpeed": 195,
+"6990to60": 3.4,
+"699Handling": 99,
+
+"969TopSpeed": 198,
+"9690to60": 3.6,
+"969Handling": 99,
+
+"996TopSpeed": 198,
+"9960to60": 3.4,
+"996Handling": 95,
+    "creator": "Bnuuy"
+}

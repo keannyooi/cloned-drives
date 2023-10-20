@@ -1,0 +1,49 @@
+{
+    "rq": 82,
+    "make": "Aston Martin",
+    "model": "V12 Vantage",
+    "modelYear": 2022,
+    "country": "GB",
+    "topSpeed": 200,
+    "0to60": 3.3,
+    "handling": 91,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1795,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 97.22,
+    "ola": 88.88,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1131246921823027210/V12Vantage2022.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1131247787498021007/V12Vantage2022.png",
+
+"333TopSpeed": 203,
+"3330to60": 3.1,
+"333Handling": 94,
+
+"666TopSpeed": 205,
+"6660to60": 3,
+"666Handling": 97,
+
+"699TopSpeed": 205,
+"6990to60": 2.8,
+"699Handling": 101,
+
+"969TopSpeed": 208,
+"9690to60": 3,
+"969Handling": 101,
+
+"996TopSpeed": 208,
+"9960to60": 2.8,
+"996Handling": 97,
+    "creator": "Bnuuy"
+}

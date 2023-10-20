@@ -1,0 +1,50 @@
+{
+    "rq": 29,
+    "make": "Skoda",
+    "model": "Octavia Combi 1.9 TDI 4x4 Classic",
+    "modelYear": 1999,
+    "country": "CZ",
+    "topSpeed": 108,
+    "0to60": 14.4,
+    "handling": 69,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 1411,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 33.17,
+    "ola": 59.72,
+    "description": "TDI.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1137461856718569562/E.SkodaOctavia204x4.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1137471963376390314/octaviacombi20.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 113,
+    "3330to60": 13.7,
+    "333Handling": 71,
+
+    "666TopSpeed": 118,
+    "6660to60": 13.0, 
+    "666Handling": 74,
+
+    "996TopSpeed": 122,
+    "9960to60": 12.2,
+    "996Handling": 74,
+
+    "969TopSpeed": 122,
+    "9690to60": 13.0,
+    "969Handling": 77,
+
+    "699TopSpeed": 118,
+    "6990to60": 12.2,
+    "699Handling": 77
+}

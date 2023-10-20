@@ -1,0 +1,49 @@
+{
+    "rq": 36,
+    "make": "Porsche",
+    "model": "914/6 2.0 GT",
+    "modelYear": 1970,
+    "country": "DE",
+    "topSpeed": 149,
+    "0to60": 6.9,
+    "handling": 76,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Motorsport","Unique","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 898,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 67.4,
+    "ola": 79.25,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1157617429984321536/914-62.0GT.png?ex=651942be&is=6517f13e&hm=a846d3740b36303e199b430ef9586b3b90dc82773df1ab868861876ed0ab4563&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1157617736034299904/914-62.0GT.png?ex=65194307&is=6517f187&hm=f902498b835c5ad999d96529c55618e001dda021e6e79a13ba059e9d88edee6f&",
+
+"333TopSpeed": 152,
+"3330to60": 6.6,
+"333Handling": 79,
+
+"666TopSpeed": 156,
+"6660to60": 6.2,
+"666Handling": 81,
+
+"699TopSpeed": 156,
+"6990to60": 5.9,
+"699Handling": 84,
+
+"969TopSpeed": 159,
+"9690to60": 6.2,
+"969Handling": 84,
+
+"996TopSpeed": 159,
+"9960to60": 5.9,
+"996Handling": 81,
+    "creator": "Bnuuy"
+}

@@ -1,0 +1,50 @@
+{
+    "rq": 31,
+    "make": "Skoda",
+    "model": "Yeti 2.0 TDI 4x4 Outdoor",
+    "modelYear": 2013,
+    "country": "CZ",
+    "topSpeed": 108,
+    "0to60": 11.5,
+    "handling": 70,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 1450,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 27.77,
+    "ola": 57.39,
+    "description": "For the outdoorsy person in you.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1144009970686361660/D.SkodaYeti20TDI4x4Outdoor.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1144011896169701416/yeti111.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 113,
+    "3330to60": 10.9,
+    "333Handling": 72,
+
+    "666TopSpeed": 118,
+    "6660to60": 10.4, 
+    "666Handling": 75,
+
+    "996TopSpeed": 122,
+    "9960to60": 9.8,
+    "996Handling": 75,
+
+    "969TopSpeed": 122,
+    "9690to60": 10.4,
+    "969Handling": 78,
+
+    "699TopSpeed": 118,
+    "6990to60": 9.8,
+    "699Handling": 78
+}

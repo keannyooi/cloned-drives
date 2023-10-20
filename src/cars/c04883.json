@@ -1,0 +1,49 @@
+{
+    "rq": 4,
+    "make": "Porsche",
+    "model": "356/2 Gmund Coupe",
+    "modelYear": 1948,
+    "country": "DE",
+    "topSpeed": 88,
+    "0to60": 23.5,
+    "handling": 58,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Unique","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 613,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 12.34,
+    "ola": 72.45,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1154042820517167195/9562GmundCoupe.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1154042966567026879/3562GMund.png",
+
+"333TopSpeed": 94,
+"3330to60": 22.3,
+"333Handling": 60,
+
+"666TopSpeed": 100,
+"6660to60": 21.2,
+"666Handling": 62,
+
+"699TopSpeed": 100,
+"6990to60": 20,
+"699Handling": 64,
+
+"969TopSpeed": 106,
+"9690to60": 21.2,
+"969Handling": 64,
+
+"996TopSpeed": 106,
+"9960to60": 20,
+"996Handling": 62,
+    "creator": "Bnuuy"
+}

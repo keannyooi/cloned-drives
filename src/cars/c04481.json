@@ -1,0 +1,49 @@
+{
+    "rq": 96,
+    "make": "Gumpert",
+    "model": "Apollo R",
+    "modelYear": 2012,
+    "country": "DE",
+    "topSpeed": 205,
+    "0to60": 2.6,
+    "handling": 97,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Eurotech Elite","Unique","Ultra Expensive","Supercar","Motorsport","Cloned Drives Beta: Last of"],
+    "isPrize": true,
+	
+    "weight": 1100,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 138.55,
+    "ola": 91,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1130947014696370198/ApolloRGumpert.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1130947294112530572/ApolloRGumpert.png",
+
+"333TopSpeed": 208,
+"3330to60": 2.5,
+"333Handling": 100,
+
+"666TopSpeed": 210,
+"6660to60": 2.3,
+"666Handling": 103,
+
+"699TopSpeed": 210,
+"6990to60": 2.2,
+"699Handling": 108,
+
+"969TopSpeed": 213,
+"9690to60": 2.3,
+"969Handling": 108,
+
+"996TopSpeed": 213,
+"9960to60": 2.2,
+"996Handling": 103,
+    "creator": "Bnuuy"
+}

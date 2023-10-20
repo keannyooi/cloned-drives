@@ -1,0 +1,49 @@
+{
+    "rq": 65,
+    "make": "Audi",
+    "model": "Q7 3.0 TDI e-tron quattro",
+    "modelYear": 2016,
+    "topSpeed": 146,
+    "0to60": 6.1,
+    "handling": 76,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Eurotech Elite","Eco-Friendly","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 2563,
+    "gc": "High",
+    "seatCount": 7,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 63.54,
+    "ola": 66.66,
+    "description": "TDI and electricity is effciency king.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1120467169285779630/A.AudiQ7etron.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1120699778355965982/q7etron.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 148,
+    "3330to60": 5.8,
+    "333Handling": 79,
+
+    "666TopSpeed": 151,
+    "6660to60": 5.5, 
+    "666Handling": 81,
+
+    "996TopSpeed": 155,
+    "9960to60": 5.2,
+    "996Handling": 81,
+
+    "969TopSpeed": 155,
+    "9690to60": 5.5,
+    "969Handling": 84,
+
+    "699TopSpeed": 151,
+    "6990to60": 5.2,
+    "699Handling": 84
+}

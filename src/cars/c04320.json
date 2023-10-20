@@ -1,0 +1,49 @@
+{
+    "rq": 74,
+    "make": "Sbarro",
+    "model": "Autobau",
+    "modelYear": 2010,
+    "country": "CH",
+    "topSpeed": 190,
+    "0to60": 3.8,
+    "handling": 87,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Concept","Unique","Eurotech Elite","Rest of The World","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1500,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 95,
+    "ola": 94.73,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1141350939647811594/autobau10.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1141350970907955210/Autobau.png",
+
+"333TopSpeed": 193,
+"3330to60": 3.6,
+"333Handling": 90,
+
+"666TopSpeed": 195,
+"6660to60": 3.4,
+"666Handling": 93,
+
+"699TopSpeed": 195,
+"6990to60": 3.2,
+"699Handling": 97,
+
+"969TopSpeed": 198,
+"9690to60": 3.4,
+"969Handling": 97,
+
+"996TopSpeed": 198,
+"9960to60": 3.2,
+"996Handling": 93,
+    "creator": "Pfugs"
+}

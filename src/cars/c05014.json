@@ -1,0 +1,49 @@
+{
+    "rq": 91,
+    "make": "Porsche",
+    "model": "911 Turbo",
+    "modelYear": 2016,
+    "country": "DE",
+    "topSpeed": 199,
+    "0to60": 2.9,
+    "handling": 91,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite", "Supercar","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1595,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 87,
+    "ola": 82.4,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1154372722856566804/991.2911Turbo.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1154373077505945700/991.2911Turbo.png",
+
+"333TopSpeed": 202,
+"3330to60": 2.8,
+"333Handling": 94,
+
+"666TopSpeed": 204,
+"6660to60": 2.6,
+"666Handling": 97,
+
+"699TopSpeed": 204,
+"6990to60": 2.5,
+"699Handling": 101,
+
+"969TopSpeed": 207,
+"9690to60": 2.6,
+"969Handling": 101,
+
+"996TopSpeed": 207,
+"9960to60": 2.5,
+"996Handling": 97,
+    "creator": "Bnuuy"
+}

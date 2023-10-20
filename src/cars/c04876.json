@@ -1,0 +1,49 @@
+{
+    "rq": 20,
+    "make": "Porsche",
+    "model": "356 America Roadster Von Glaser",
+    "modelYear": 1952,
+    "country": "DE",
+    "topSpeed": 112,
+    "0to60": 11.4,
+    "handling": 57,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Tuner","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 650,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 37.63,
+    "ola": 66.66,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1154051312523161773/956AmericaRVG.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1154051474263908494/356americanroadstervonglass.png",
+
+"333TopSpeed": 117,
+"3330to60": 10.8,
+"333Handling": 59,
+
+"666TopSpeed": 121,
+"6660to60": 10.3,
+"666Handling": 61,
+
+"699TopSpeed": 121,
+"6990to60": 9.7,
+"699Handling": 63,
+
+"969TopSpeed": 126,
+"9690to60": 10.3,
+"969Handling": 63,
+
+"996TopSpeed": 126,
+"9960to60": 9.7,
+"996Handling": 61,
+    "creator": "Bnuuy"
+}

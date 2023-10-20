@@ -1,0 +1,49 @@
+{
+    "rq": 78,
+    "make": "Aston Martin",
+    "model": "CC100 Speedster Concept",
+    "modelYear": 2013,
+    "country": "GB",
+    "topSpeed": 180,
+    "0to60": 3.8,
+    "handling": 92,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Track Day","Concept","Unique","Ultra Expensive","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1265,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 85,
+    "ola": 78.8,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1131233077004357702/CC100Speedster.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1131233905056428052/CC100Speedster.png",
+
+"333TopSpeed": 183,
+"3330to60": 3.6,
+"333Handling": 95,
+
+"666TopSpeed": 186,
+"6660to60": 3.4,
+"666Handling": 98,
+
+"699TopSpeed": 186,
+"6990to60": 3.2,
+"699Handling": 102,
+
+"969TopSpeed": 189,
+"9690to60": 3.4,
+"969Handling": 102,
+
+"996TopSpeed": 189,
+"9960to60": 3.2,
+"996Handling": 98,
+    "creator": "Bnuuy"
+}

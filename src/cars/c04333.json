@@ -1,0 +1,49 @@
+{
+    "rq": 84,
+    "make": ["Kubatech", "Porsche"],
+    "model": "Carrera GT",
+    "modelYear": 2010,
+    "country": "DE",
+    "topSpeed": 213,
+    "0to60": 3.3,
+    "handling": 89,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Unique","Ultra Expensive","Tuner","Eurotech Elite","Supercar","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1320,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 103.19,
+    "ola": 90,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1115049695006441603/KubatechCGT.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077292374608326656/1115049695006441603/KubatechCGT.png",
+
+"333TopSpeed": 215,
+"3330to60": 3.1,
+"333Handling": 92,
+
+"666TopSpeed": 218,
+"6660to60": 3,
+"666Handling": 95,
+
+"699TopSpeed": 218,
+"6990to60": 2.8,
+"699Handling": 99,
+
+"969TopSpeed": 220,
+"9690to60": 3,
+"969Handling": 99,
+
+"996TopSpeed": 220,
+"9960to60": 2.8,
+"996Handling": 95,
+    "creator": "Bnuuy"
+}

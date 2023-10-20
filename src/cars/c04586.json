@@ -1,0 +1,50 @@
+{
+    "rq": 29,
+    "make": "Skoda",
+    "model": "Octavia 1.9 TDI Ambiance",
+    "modelYear": 2004,
+    "country": "CZ",
+    "topSpeed": 118,
+    "0to60": 10.8,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 1395,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 46.15,
+    "ola": 68.51,
+    "description": "TDI",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1142890409111068692/E.SkodaOctavia19TDIPD.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1142894844491079771/octavia19tdi.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 122,
+    "3330to60": 10.3,
+    "333Handling": 75,
+
+    "666TopSpeed": 127,
+    "6660to60": 9.7, 
+    "666Handling": 78,
+
+    "996TopSpeed": 131,
+    "9960to60": 9.2,
+    "996Handling": 78,
+
+    "969TopSpeed": 131,
+    "9690to60": 9.7,
+    "969Handling": 81,
+
+    "699TopSpeed": 127,
+    "6990to60": 9.2,
+    "699Handling": 81
+}

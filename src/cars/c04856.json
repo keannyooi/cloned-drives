@@ -1,0 +1,49 @@
+{
+    "rq": 102,
+    "make": "Porsche",
+    "model": "Vision Gran Turismo",
+    "modelYear": 2021,
+    "country": "DE",
+    "topSpeed": 217,
+    "0to60": 2.1,
+    "handling": 96,
+    "driveType": "4WD",
+    "tyreType": "Slick",
+    "tags": ["Eurotech Elite","Concept","Unique","Track Day","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1390,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 105,
+    "ola": 91.22,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158105749562589234/MiscVGT.png?ex=651b0987&is=6519b807&hm=9c1c28b305a09e79db0725a95bbb9d30a566c3ce381f513e93936d1234b47fde&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158105919725510698/MiscVisionGT.png?ex=651b09af&is=6519b82f&hm=ce864931d607f4657662621e36166e381666103a0348b7d88741bd82276ccd82&",
+
+"333TopSpeed": 219,
+"3330to60": 2,
+"333Handling": 99,
+
+"666TopSpeed": 222,
+"6660to60": 1.9,
+"666Handling": 102,
+
+"699TopSpeed": 222,
+"6990to60": 1.8,
+"699Handling": 107,
+
+"969TopSpeed": 224,
+"9690to60": 1.9,
+"969Handling": 107,
+
+"996TopSpeed": 224,
+"9960to60": 1.8,
+"996Handling": 102,
+    "creator": "Bnuuy"
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 60,
+    "make": "Porsche",
+    "model": "Panamericana",
+    "modelYear": 1989,
+    "country": "DE",
+    "topSpeed": 130,
+    "0to60": 5.3,
+    "handling": 78,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Unique","Oddity","Cloned Drives Beta: Last of"],
+    "isPrize": true,
+	
+    "weight": 1474,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 68.57,
+    "ola": 73.08,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158087162215014493/miscpanamericana.png?ex=651af837&is=6519a6b7&hm=565cbd8cfb3e224a18e025e25470c6552f4d98dd81a26df923be00afabae43f0&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158087222273245266/MiscPanamerica.png?ex=651af846&is=6519a6c6&hm=16e4550fc662e11ca3530b99be77dc82ca17c0f9cdb86322d17d372be1e3273f&",
+
+"333TopSpeed": 134,
+"3330to60": 5,
+"333Handling": 81,
+
+"666TopSpeed": 138,
+"6660to60": 4.8,
+"666Handling": 83,
+
+"699TopSpeed": 138,
+"6990to60": 4.5,
+"699Handling": 87,
+
+"969TopSpeed": 142,
+"9690to60": 4.8,
+"969Handling": 87,
+
+"996TopSpeed": 142,
+"9960to60": 4.5,
+"996Handling": 83,
+    "creator": "Bnuuy"
+}

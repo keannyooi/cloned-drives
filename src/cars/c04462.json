@@ -1,0 +1,49 @@
+{
+    "rq": 74,
+    "make": "Aston Martin",
+    "model": "V12 Vantage RS Concept",
+    "modelYear": 2007,
+    "country": "GB",
+    "topSpeed": 200,
+    "0to60": 3.9,
+    "handling": 88,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Concept","Unique","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1600,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 85,
+    "ola": 100,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1131232075467477073/v12rsconcept.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1131233743475048518/V12rsconcept.png",
+
+"333TopSpeed": 203,
+"3330to60": 3.7,
+"333Handling": 91,
+
+"666TopSpeed": 205,
+"6660to60": 3.5,
+"666Handling": 94,
+
+"699TopSpeed": 205,
+"6990to60": 3.3,
+"699Handling": 98,
+
+"969TopSpeed": 208,
+"9690to60": 3.5,
+"969Handling": 98,
+
+"996TopSpeed": 208,
+"9960to60": 3.3,
+"996Handling": 94,
+    "creator": "Bnuuy"
+}

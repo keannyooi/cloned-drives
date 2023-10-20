@@ -1,0 +1,49 @@
+{
+    "rq": 64,
+    "make": "Aston Martin",
+    "model": "Bulldog Concept",
+    "modelYear": 1980,
+    "country": "GB",
+    "topSpeed": 207,
+    "0to60": 4.2,
+    "handling": 76,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Unique","Concept","Oddity","Ultra Expensive","Cloned Drives Beta: Last of"],
+    "isPrize": true,
+	
+    "weight": 1454,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 105,
+    "ola": 90.47,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1131227922477367406/bulldoggy.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1131227992392208514/Bulldoggy.png",
+
+"333TopSpeed": 210,
+"3330to60": 4,
+"333Handling": 79,
+
+"666TopSpeed": 212,
+"6660to60": 3.8,
+"666Handling": 81,
+
+"699TopSpeed": 212,
+"6990to60": 3.6,
+"699Handling": 84,
+
+"969TopSpeed": 215,
+"9690to60": 3.8,
+"969Handling": 84,
+
+"996TopSpeed": 215,
+"9960to60": 3.6,
+"996Handling": 81,
+    "creator": "Bnuuy"
+}

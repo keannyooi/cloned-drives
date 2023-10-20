@@ -1,0 +1,49 @@
+{
+    "rq": 50,
+    "make": "Peugeot",
+    "model": "3008 1.6 PureTech 180",
+    "modelYear": 2020,
+    "country": "FR",
+    "topSpeed": 138,
+    "0to60": 8.0,
+    "handling": 76,
+    "driveType": "FWD",
+    "tyreType": "All-Surface",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1429,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 62.20,
+    "ola": 77.39,
+    "description": "Midlife facelift bringing an even bolder front fascia and cool LED running lights to match rest of the lineup.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1148903515079577700/Peugeot_3008_1.6_PureTech_180_2020.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1148905057618755614/Peugeot_3008_1.6_PureTech_180.png",
+    "creator": "Crossfire",
+
+    "333TopSpeed": 142,
+    "3330to60": 7.6,
+    "333Handling": 79,
+
+    "666TopSpeed": 146,
+    "6660to60": 7.2,
+    "666Handling": 81,
+
+    "699TopSpeed": 146,
+    "6990to60": 6.8,
+    "699Handling": 84,
+
+    "969TopSpeed": 149,
+    "9690to60": 7.2,
+    "969Handling": 84,
+
+    "996TopSpeed": 149,
+    "9960to60": 6.8,
+    "996Handling": 81
+}

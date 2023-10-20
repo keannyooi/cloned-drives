@@ -1,0 +1,49 @@
+{
+    "rq": 84,
+    "make": "Porsche",
+    "model": "Panamera Turbo S Executive",
+    "modelYear": 2014,
+    "country": "DE",
+    "topSpeed": 188,
+    "0to60": 3.7,
+    "handling": 87,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Super Sedan","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 2145,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 75.41,
+    "ola": 81.45,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1149020815514407042/PanameraTurboSExecutive970B.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1149020888491106335/970BTurboSExec.png",
+
+"333TopSpeed": 191,
+"3330to60": 3.5,
+"333Handling": 90,
+
+"666TopSpeed": 194,
+"6660to60": 3.3,
+"666Handling": 93,
+
+"699TopSpeed": 194,
+"6990to60": 3.1,
+"699Handling": 97,
+
+"969TopSpeed": 196,
+"9690to60": 3.3,
+"969Handling": 97,
+
+"996TopSpeed": 196,
+"9960to60": 3.1,
+"996Handling": 93,
+    "creator": "Bnuuy"
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 71,
+    "make": "Porsche",
+    "model": "911 Carrera 4S Cabriolet",
+    "modelYear": 2008,
+    "country": "DE",
+    "topSpeed": 185,
+    "0to60": 4.5,
+    "handling": 87,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1565,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 71.25,
+    "ola": 77.68,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1152653275674447902/997.2911Carrera4SCab.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1152653525759823872/997.24Scab.png",
+
+"333TopSpeed": 188,
+"3330to60": 4.3,
+"333Handling": 90,
+
+"666TopSpeed": 191,
+"6660to60": 4,
+"666Handling": 93,
+
+"699TopSpeed": 191,
+"6990to60": 3.8,
+"699Handling": 97,
+
+"969TopSpeed": 193,
+"9690to60": 4,
+"969Handling": 97,
+
+"996TopSpeed": 193,
+"9960to60": 3.8,
+"996Handling": 93,
+    "creator": "Bnuuy"
+}

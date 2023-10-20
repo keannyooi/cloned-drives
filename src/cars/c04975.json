@@ -1,0 +1,49 @@
+{
+    "rq": 84,
+    "make": "Porsche",
+    "model": "911 GT3 Cup Andial Edition",
+    "modelYear": 2013,
+    "country": "DE",
+    "topSpeed": 185,
+    "0to60": 3.3,
+    "handling": 96,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Eurotech Elite","Motorsport","Unique","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1180,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 91.67,
+    "ola": 80,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1154365029580283955/997911GT3CupAndial2013.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1154365248959172678/997GT3CupAndial.png",
+
+"333TopSpeed": 188,
+"3330to60": 3.1,
+"333Handling": 99,
+
+"666TopSpeed": 191,
+"6660to60": 3,
+"666Handling": 102,
+
+"699TopSpeed": 191,
+"6990to60": 2.8,
+"699Handling": 107,
+
+"969TopSpeed": 193,
+"9690to60": 3,
+"969Handling": 107,
+
+"996TopSpeed": 193,
+"9960to60": 2.8,
+"996Handling": 102,
+    "creator": "Bnuuy"
+}

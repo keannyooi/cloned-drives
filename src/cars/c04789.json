@@ -1,0 +1,49 @@
+{
+    "rq": 73,
+    "make": "Porsche",
+    "model": "Cayenne S",
+    "modelYear": 2010,
+    "country": "DE",
+    "topSpeed": 157,
+    "0to60": 5.7,
+    "handling": 80,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 2060,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 68.67,
+    "ola": 75.47,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1149280180888678430/CayenneS2010.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1149280366557925456/CayenneS2010.png",
+
+"333TopSpeed": 160,
+"3330to60": 5.4,
+"333Handling": 83,
+
+"666TopSpeed": 164,
+"6660to60": 5.1,
+"666Handling": 85,
+
+"699TopSpeed": 164,
+"6990to60": 4.8,
+"699Handling": 89,
+
+"969TopSpeed": 167,
+"9690to60": 5.1,
+"969Handling": 89,
+
+"996TopSpeed": 167,
+"9960to60": 4.8,
+"996Handling": 85,
+    "creator": "Bnuuy"
+}

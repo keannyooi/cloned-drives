@@ -1,0 +1,50 @@
+{
+    "rq": 71,
+    "make": ["MTM", "Audi"],
+    "model": "Audi S3",
+    "modelYear": 2002,
+    "country": "DE",
+    "topSpeed": 175,
+    "0to60": 4.3,
+    "handling": 84,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite", "Hot Hatch", "Tuner","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 1430,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Hatch",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 67.18,
+    "ola": 69.76,
+    "description": "Super mega fast",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1117562497357062234/A.MTMS38L.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1117567156096340018/a3mtm.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 178,
+    "3330to60": 4.1,
+    "333Handling": 87,
+
+    "666TopSpeed": 181,
+    "6660to60": 3.9, 
+    "666Handling": 90,
+
+    "996TopSpeed": 184,
+    "9960to60": 3.7,
+    "996Handling": 90,
+
+    "969TopSpeed": 184,
+    "9690to60": 3.9,
+    "969Handling": 93,
+
+    "699TopSpeed": 181,
+    "6990to60": 3.7,
+    "699Handling": 93
+}

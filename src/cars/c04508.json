@@ -1,0 +1,49 @@
+{
+    "rq": 30,
+    "make": "Peugeot",
+    "model": "3008 1.2 PureTech 130",
+    "modelYear": 2015,
+    "country": "FR",
+    "topSpeed": 121,
+    "0to60": 10.4,
+    "handling": 72,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1400,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 44.25,
+    "ola": 67.11,
+    "description": "Midlife facelift for the 3008, but that was 3 years before this car with this engine configuration. Less than a year before this generation came to an end Peugeot dropped a smaller petrol engine into the both 3008 and 5008 (for some reason) which got used in the next generation of both as well.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1148902272277958736/Peugeot_3008_1.2_PureTech_130_2015.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1148904326400573501/Peugeot_3008_1st_1.2_PureTech.png",
+    "creator": "Crossfire",
+
+    "333TopSpeed": 125,
+    "3330to60": 9.9,
+    "333Handling": 74,
+
+    "666TopSpeed": 130,
+    "6660to60": 9.4,
+    "666Handling": 77,
+
+    "699TopSpeed": 130,
+    "6990to60": 8.8,
+    "699Handling": 80,
+
+    "969TopSpeed": 134,
+    "9690to60": 9.4,
+    "969Handling": 80,
+
+    "996TopSpeed": 134,
+    "9960to60": 8.8,
+    "996Handling": 77
+}

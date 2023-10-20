@@ -1,0 +1,49 @@
+{
+    "rq": 22,
+    "make": "Aston Martin",
+    "model": "DB2 Vantage",
+    "modelYear": 1950,
+    "country": "GB",
+    "topSpeed": 114,
+    "0to60": 11.6,
+    "handling": 57,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Midlands Cruise","Unique","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1120,
+    "gc": "High",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 47.54,
+    "ola": 74.65,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1120000518060781679/DB2Vantage.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1120001110439104512/DB2Vantage.png",
+
+"333TopSpeed": 119,
+"3330to60": 11,
+"333Handling": 59,
+
+"666TopSpeed": 123,
+"6660to60": 10.4,
+"666Handling": 61,
+
+"699TopSpeed": 123,
+"6990to60": 9.9,
+"699Handling": 63,
+
+"969TopSpeed": 128,
+"9690to60": 10.4,
+"969Handling": 63,
+
+"996TopSpeed": 128,
+"9960to60": 9.9,
+"996Handling": 61,
+    "creator": "Bnuuy"
+}

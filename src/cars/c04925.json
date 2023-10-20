@@ -1,0 +1,49 @@
+{
+    "rq": 91,
+    "make": "Porsche",
+    "model": "RS Spyder Evo",
+    "modelYear": 2007,
+    "country": "DE",
+    "topSpeed": 210,
+    "0to60": 2.9,
+    "handling": 96,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Eurotech Elite","Motorsport","Unique","Cloned Drives Beta: Last of"],
+    "isPrize": true,
+	
+    "weight": 775,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 105.96,
+    "ola": 81.25,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158075026260643870/RSSpyderEvo.png?ex=651aecea&is=65199b6a&hm=a7feb089eb31fb33dae257ba1466d526cf15f822ff570d263eaca1f02b4b86dd&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158075234910482463/RSSpyderEvo.png?ex=651aed1c&is=65199b9c&hm=ad0056f9f63b369d503f2c563dea72579eb92e2e05b902e69f67be54fb85c31c&",
+
+"333TopSpeed": 212,
+"3330to60": 2.8,
+"333Handling": 99,
+
+"666TopSpeed": 215,
+"6660to60": 2.6,
+"666Handling": 102,
+
+"699TopSpeed": 215,
+"6990to60": 2.5,
+"699Handling": 107,
+
+"969TopSpeed": 217,
+"9690to60": 2.6,
+"969Handling": 107,
+
+"996TopSpeed": 217,
+"9960to60": 2.5,
+"996Handling": 102,
+    "creator": "Bnuuy"
+}

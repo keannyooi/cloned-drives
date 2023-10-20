@@ -1,0 +1,49 @@
+{
+    "rq": 1,
+    "make": "Porsche",
+    "model": "Type 823 Panzer Atrappe",
+    "modelYear": 1939,
+    "country": "DE",
+    "topSpeed": 29,
+    "0to60": 99.9,
+    "handling": 37,
+    "driveType": "RWD",
+    "tyreType": "Off-Road",
+    "tags": ["Eurotech Elite","Oddity","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1790,
+    "gc": "Medium",
+    "seatCount": 3,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 0,
+    "ola": 0,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1146778253638520922/Type823.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1146778548045107231/pre356panzer.png",
+
+"333TopSpeed": 38,
+"3330to60": 99.9,
+"333Handling": 38,
+
+"666TopSpeed": 46,
+"6660to60": 99.9,
+"666Handling": 39,
+
+"699TopSpeed": 46,
+"6990to60": 99.9,
+"699Handling": 41,
+
+"969TopSpeed": 55,
+"9690to60": 99.9,
+"969Handling": 41,
+
+"996TopSpeed": 55,
+"9960to60": 99.9,
+"996Handling": 39,
+    "creator": "Bnuuy"
+}

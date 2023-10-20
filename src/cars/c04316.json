@@ -1,0 +1,49 @@
+{
+    "rq": 57,
+    "make": "Maserati",
+    "model": "Buran",
+    "modelYear": 2000,
+    "country": "IT",
+    "topSpeed": 163,
+    "0to60": 6.0,
+    "handling": 71,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Concept","Unique","Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1900,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.67,
+    "ola": 70,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1141348973517480058/Maserati_Buran_CD_1.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1141349047454679061/Buran.png",
+
+"333TopSpeed": 166,
+"3330to60": 5.7,
+"333Handling": 73,
+
+"666TopSpeed": 169,
+"6660to60": 5.4,
+"666Handling": 76,
+
+"699TopSpeed": 169,
+"6990to60": 5.1,
+"699Handling": 79,
+
+"969TopSpeed": 173,
+"9690to60": 5.4,
+"969Handling": 79,
+
+"996TopSpeed": 173,
+"9960to60": 5.1,
+"996Handling": 76,
+    "creator": "Nutter"
+}

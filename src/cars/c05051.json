@@ -1,0 +1,49 @@
+{
+    "rq": 80,
+    "make": "Porsche",
+    "model": "935 Prototype",
+    "modelYear": 1975,
+    "country": "DE",
+    "topSpeed": 189,
+    "0to60": 3.5,
+    "handling": 92,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Eurotech Elite","Unique","Concept","Track Day","Cloned Drives Beta: Last of"],
+    "isPrize": true,
+	
+    "weight": 900,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 104.15,
+    "ola": 92.15,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158119343851315280/935Proto.png?ex=651b1630&is=6519c4b0&hm=155ca596effe2d286f12e5ec1a33bff835f8ef7bf0928234f08155be96ce3b73&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158119401598500945/935Proto.png?ex=651b163e&is=6519c4be&hm=17c8c3a8d9444955b1a22372ce2640df5ad792d66a922e5e68aac01b5724e207&",
+
+"333TopSpeed": 192,
+"3330to60": 3.3,
+"333Handling": 95,
+
+"666TopSpeed": 195,
+"6660to60": 3.1,
+"666Handling": 98,
+
+"699TopSpeed": 195,
+"6990to60": 3,
+"699Handling": 102,
+
+"969TopSpeed": 197,
+"9690to60": 3.1,
+"969Handling": 102,
+
+"996TopSpeed": 197,
+"9960to60": 3,
+"996Handling": 98,
+    "creator": "Bnuuy"
+}

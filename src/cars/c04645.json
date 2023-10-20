@@ -1,0 +1,49 @@
+{
+    "rq": 59,
+    "make": "Porsche",
+    "model": "906E Racing Coupe",
+    "modelYear": 1967,
+    "country": "DE",
+    "topSpeed": 174,
+    "0to60": 4.7,
+    "handling": 78,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Motorsport","Unique","Ultra Expensive","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 635,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 75.19,
+    "ola": 93.04,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1149349726374867165/906ERacinCoupe.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1149349774630334464/90X906ERacink.png",
+
+"333TopSpeed": 177,
+"3330to60": 4.5,
+"333Handling": 81,
+
+"666TopSpeed": 180,
+"6660to60": 4.2,
+"666Handling": 83,
+
+"699TopSpeed": 180,
+"6990to60": 4,
+"699Handling": 87,
+
+"969TopSpeed": 183,
+"9690to60": 4.2,
+"969Handling": 87,
+
+"996TopSpeed": 183,
+"9960to60": 4,
+"996Handling": 83,
+    "creator": "Bnuuy"
+}

@@ -1,10 +1,10 @@
 {
-    "rq": 59,
+    "rq": 60,
     "make": "Peugeot",
-    "model": "607 Pescarolo",
+    "model": "607 Pescarolo Concept",
     "modelYear": 2002,
     "country": "FR",
-    "topSpeed": 180,
+    "topSpeed": 183,
     "0to60": 4.7,
     "handling": 77,
     "driveType": "FWD",
@@ -12,7 +12,7 @@
     "tags": ["Concept", "Unique", "Sleeper","Visionary Road"],
     "isPrize": false,
 
-    "weight": 1580,
+    "weight": 1610,
     "gc": "Low",
     "seatCount": 5,
     "bodyStyle": "Sedan",
@@ -20,31 +20,31 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 85.45,
-    "ola": 93.62,
+    "mra": 87.50,
+    "ola": 91.30,
     "description": "The Peugeot sports sedan concept that can potentially challenge the BMW M3 at the time. Card by Spence",
 
-    "card": "https://media.discordapp.net/attachments/819199720249360384/939383519799554099/F7C5E617-156E-4A1C-9A83-22DFC0F18DC0.png",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1144165358375293009/Peugeot_607_Pescarolo_Concepy.png?ex=653a0f87&is=65279a87&hm=0eb551a59a81411b44b8909cd4d59266485dcf48295ab4434cfaccacb7a0435c&",
 	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1010673134422200370/Pesca.png",
     "creator": "Spence",
 
-    "333TopSpeed": 183,
+    "333TopSpeed": 186,
     "3330to60": 4.5,
     "333Handling": 80,
 
-    "666TopSpeed": 186,
+    "666TopSpeed": 189,
     "6660to60": 4.2,
     "666Handling": 82,
 
-    "969TopSpeed": 189,
+    "969TopSpeed": 192,
     "9690to60": 4.2,
     "969Handling": 85,
 	
-	"996TopSpeed": 189,
+	"996TopSpeed": 192,
 	"9960to60": 4.0,
 	"996Handling": 82,
 	
-	"699TopSpeed": 186,
+	"699TopSpeed": 189,
 	"6990to60": 4.0,
 	"699Handling": 85
 	

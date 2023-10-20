@@ -1,0 +1,50 @@
+{
+    "rq": 49,
+    "make": "Audi",
+    "model": "Q7 3.6 FSI quattro S line",
+    "modelYear": 2006,
+    "country": "DE",
+    "topSpeed": 140,
+    "0to60": 8.7,
+    "handling": 72,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 2370,
+    "gc": "High",
+    "seatCount": 7,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 64.80,
+    "ola": 66.66,
+    "description": "Audi's first SUV, and a big one at that.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1120466454614122698/C.AudiQ736FSIq.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1120693268880044125/q736.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 144,
+    "3330to60": 7.7,
+    "333Handling": 74,
+
+    "666TopSpeed": 147,
+    "6660to60": 7.3, 
+    "666Handling": 77,
+
+    "996TopSpeed": 151,
+    "9960to60": 6.9,
+    "996Handling": 77,
+
+    "969TopSpeed": 151,
+    "9690to60": 7.3,
+    "969Handling": 80,
+
+    "699TopSpeed": 147,
+    "6990to60": 6.9,
+    "699Handling": 80
+}

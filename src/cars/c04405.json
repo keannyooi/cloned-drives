@@ -1,0 +1,50 @@
+{
+    "rq": 16,
+    "make": "Chevrolet",
+    "model": "Spark 1.0 LS BiFuel",
+    "modelYear": 2010,
+    "country": "US",
+    "topSpeed": 92,
+    "0to60": 17.2,
+    "handling": 70,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": [ "The Americas Assault", "Eco-Friendly","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 929,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Alternative",
+    "mra": 18.52,
+    "ola": 58.13,
+    "description": "LPG, gas, fuel.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1115019880496906331/F.ChevySpark10LPG.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1115024114193813545/SparkLPG.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 98,
+    "3330to60": 16.3,
+    "333Handling": 72,
+
+    "666TopSpeed": 103,
+    "6660to60": 15.5, 
+    "666Handling": 75,
+
+    "996TopSpeed": 109,
+    "9960to60": 14.6,
+    "996Handling": 75,
+
+    "969TopSpeed": 109,
+    "9690to60": 15.5,
+    "969Handling": 78,
+
+    "699TopSpeed": 103,
+    "6990to60": 14.6,
+    "699Handling": 78
+}

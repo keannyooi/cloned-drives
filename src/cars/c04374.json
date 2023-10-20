@@ -1,0 +1,49 @@
+{
+    "rq": 83,
+    "make": "Audi",
+    "model": "R8 GT",
+    "modelYear": 2010,
+    "country": "DE",
+    "topSpeed": 199,
+    "0to60": 3.5,
+    "handling": 88,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite", "Eargasm", "Supercar", "Style Icon","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1570,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 88.40,
+    "ola": 83.39,
+    "description": "High performance variant of the R8 with aero bits and a more power over the plus model.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1142911938108592238/Audi_R8_GT.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1142912036397907998/Audi_R8_GT.png",
+    "creator": "Crossfire",
+
+    "333TopSpeed": 202, 
+    "3330to60": 3.3, 
+    "333Handling": 91,
+
+    "666TopSpeed": 204, 
+    "6660to60": 3.1, 
+    "666Handling": 94,
+
+    "996TopSpeed": 207, 
+    "9960to60": 3.0, 
+    "996Handling": 94,
+
+    "969TopSpeed": 207, 
+    "9690to60": 3.1, 
+    "969Handling": 98,
+
+    "699TopSpeed": 204, 
+    "6990to60": 3.0, 
+    "699Handling": 98
+}

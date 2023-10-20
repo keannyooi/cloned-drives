@@ -1,0 +1,52 @@
+{
+    "rq": 43,
+    "make": "Volkswagen",
+    "model": "Scirocco 2.0 TDI",
+    "modelYear": 2014,
+    "country": "DE",
+    "topSpeed": 143,
+    "0to60": 7.2,
+    "handling": 81,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite", "Hot Hatch","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 1320,
+    "gc": "Medium",
+    "seatCount":4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 55.81,
+    "ola": 75.00,
+    "description": "Here is a quick little family recipe. Take a Golf GTD, skin it and throw it in a bowl filled with flour. Then take the GTD naming out and mix thoroughly; next pop it in the oven for 30 mins at 250C. Delicious!",
+
+
+    "card": "https://cdn.discordapp.com/attachments/812062652917481533/1134114200902434867/Scirocco20TDI.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1148018818862563369/20TDI.png",
+    "creator": "Andu",
+    
+    "333TopSpeed": 147,
+    "3330to60": 6.8,
+    "333Handling": 84,
+    
+    "666TopSpeed": 150,
+    "6660to60": 6.5,
+    "666Handling": 86,
+    
+    "699TopSpeed": 150,
+    "6990to60": 6.1,
+    "699Handling": 90,
+    
+    "969TopSpeed": 154,
+    "9690to60": 6.5,
+    "969Handling": 90,
+    
+    "996TopSpeed": 154,
+    "9960to60": 6.1,
+    "996Handling": 86
+	}

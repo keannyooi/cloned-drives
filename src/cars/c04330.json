@@ -1,0 +1,49 @@
+{
+    "rq": 85,
+    "make": ["Edo Competition", "Porsche"],
+    "model": "Carrera GT",
+    "modelYear": 2007,
+    "country": "DE",
+    "topSpeed": 214,
+    "0to60": 3.2,
+    "handling": 89,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Unique","Ultra Expensive","Tuner","Eurotech Elite","Supercar","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1300,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 105.77,
+    "ola": 93.31,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1115049653801590844/EdoCGT.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077292374608326656/1115049653801590844/EdoCGT.png",
+
+"333TopSpeed": 216,
+"3330to60": 3,
+"333Handling": 92,
+
+"666TopSpeed": 219,
+"6660to60": 2.9,
+"666Handling": 95,
+
+"699TopSpeed": 219,
+"6990to60": 2.7,
+"699Handling": 99,
+
+"969TopSpeed": 221,
+"9690to60": 2.9,
+"969Handling": 99,
+
+"996TopSpeed": 221,
+"9960to60": 2.7,
+"996Handling": 95,
+    "creator": "Bnuuy"
+}

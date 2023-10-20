@@ -1,0 +1,49 @@
+{
+    "rq": 72,
+    "make": "Peugeot",
+    "model": "3008 HYBRID4 300",
+    "modelYear": 2020,
+    "country": "FR",
+    "topSpeed": 146,
+    "0to60": 5.6,
+    "handling": 79,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Eurotech Elite", "Eco-Friendly","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1833,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Hybrid",
+    "mra": 66.06,
+    "ola": 81.43,
+    "description": "With 300 horsepower this is the 2nd most powerful (production) Peugeot ever made.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1148903542497738763/Peugeot_3008_HYBRID4_300.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1148905077898223696/Peugeot_3008_HYBRID4_300.png",
+    "creator": "Crossfire",
+
+    "333TopSpeed": 150,
+    "3330to60": 5.3,
+    "333Handling": 82,
+
+    "666TopSpeed": 153,
+    "6660to60": 5.0,
+    "666Handling": 84,
+
+    "699TopSpeed": 153,
+    "6990to60": 4.8,
+    "699Handling": 88,
+
+    "969TopSpeed": 157,
+    "9690to60": 5.0,
+    "969Handling": 88,
+
+    "996TopSpeed": 157,
+    "9960to60": 4.8,
+    "996Handling": 84
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 78,
+    "make": "Aston Martin",
+    "model": "RapidE Concept",
+    "modelYear": 2015,
+    "country": "GB",
+    "topSpeed": 155,
+    "0to60": 3.6,
+    "handling": 89,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Grand Tourer","Unique","Concept","Eco-Friendly","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 2200,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 97.29,
+    "ola": 88.88,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1118544603340099717/RapidEconcept.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1118545075132178432/RapidEconcept.png",
+
+"333TopSpeed": 158,
+"3330to60": 3.4,
+"333Handling": 92,
+
+"666TopSpeed": 162,
+"6660to60": 3.2,
+"666Handling": 95,
+
+"699TopSpeed": 162,
+"6990to60": 3.1,
+"699Handling": 99,
+
+"969TopSpeed": 165,
+"9690to60": 3.2,
+"969Handling": 99,
+
+"996TopSpeed": 165,
+"9960to60": 3.1,
+"996Handling": 95,
+    "creator": "Bnuuy"
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 72,
+    "make": "Aston Martin",
+    "model": "V12 Zagato",
+    "modelYear": 2012,
+    "country": "GB",
+    "topSpeed": 190,
+    "0to60": 4.1,
+    "handling": 88,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Unique","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1670,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 83.22,
+    "ola": 100,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1131233576596291584/V12Zag.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1131234056776994966/V12Zag.png",
+
+"333TopSpeed": 193,
+"3330to60": 3.9,
+"333Handling": 91,
+
+"666TopSpeed": 195,
+"6660to60": 3.7,
+"666Handling": 94,
+
+"699TopSpeed": 195,
+"6990to60": 3.5,
+"699Handling": 98,
+
+"969TopSpeed": 198,
+"9690to60": 3.7,
+"969Handling": 98,
+
+"996TopSpeed": 198,
+"9960to60": 3.5,
+"996Handling": 94,
+    "creator": "Bnuuy"
+}

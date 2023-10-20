@@ -1,0 +1,49 @@
+{
+    "rq": 88,
+    "make": "Porsche",
+    "model": "Type 940 IR01",
+    "modelYear": 1980,
+    "country": "DE",
+    "topSpeed": 199,
+    "0to60": 3.2,
+    "handling": 97,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Eurotech Elite","Motorsport","Unique","Ultra Expensive","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 735,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Open Air",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 100,
+    "ola": 74.59,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158083098391617546/MiscType940IR01.png?ex=651af46e&is=6519a2ee&hm=bbbc5caa51f140c74177870ce39246de7a62010e89d46dd56d585097587a1630&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158083317615312959/MiscType940.png?ex=651af4a3&is=6519a323&hm=3a65953be6de230928598bbfb93437e6a84fd298f68c370833a3244f6fb3698a&",
+
+"333TopSpeed": 202,
+"3330to60": 3,
+"333Handling": 100,
+
+"666TopSpeed": 204,
+"6660to60": 2.9,
+"666Handling": 103,
+
+"699TopSpeed": 204,
+"6990to60": 2.7,
+"699Handling": 108,
+
+"969TopSpeed": 207,
+"9690to60": 2.9,
+"969Handling": 108,
+
+"996TopSpeed": 207,
+"9960to60": 2.7,
+"996Handling": 103,
+    "creator": "Bnuuy"
+}

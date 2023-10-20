@@ -1,0 +1,49 @@
+{
+    "rq": 81,
+    "make": "Porsche",
+    "model": "Panamera 4 E-Hybrid Executive",
+    "modelYear": 2016,
+    "country": "DE",
+    "topSpeed": 173,
+    "0to60": 4.5,
+    "handling": 85,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Eco-Friendly","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 2250,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 63.5,
+    "ola": 73.82,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1152577014319030272/971EPanamera4EHybrid.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1152577185421471806/971EPanamera4EHybrid.png",
+
+"333TopSpeed": 176,
+"3330to60": 4.3,
+"333Handling": 88,
+
+"666TopSpeed": 179,
+"6660to60": 4,
+"666Handling": 91,
+
+"699TopSpeed": 179,
+"6990to60": 3.8,
+"699Handling": 94,
+
+"969TopSpeed": 182,
+"9690to60": 4,
+"969Handling": 94,
+
+"996TopSpeed": 182,
+"9960to60": 3.8,
+"996Handling": 91,
+    "creator": "Bnuuy"
+}

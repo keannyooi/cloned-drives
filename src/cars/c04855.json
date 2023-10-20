@@ -1,0 +1,49 @@
+{
+    "rq": 89,
+    "make": "Porsche",
+    "model": "Vision E",
+    "modelYear": 2019,
+    "country": "DE",
+    "topSpeed": 162,
+    "0to60": 2.8,
+    "handling": 97,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Eurotech Elite","Track Day","Concept","Unique","Eco-Friendly","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1050,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 98.48,
+    "ola": 85.15,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158103255327457391/miscVisionE.png?ex=651b0734&is=6519b5b4&hm=9c430a3d716260781c7c577aa2a1b41bb143d800df1a03973566becd7d4da0fe&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158103461771088074/MiscVisionE.png?ex=651b0765&is=6519b5e5&hm=7aaebeffa75759b221e87dd68a01eb5a106d8d020e81b0ec5f3377c7dbbeef71&",
+
+"333TopSpeed": 165,
+"3330to60": 2.7,
+"333Handling": 100,
+
+"666TopSpeed": 168,
+"6660to60": 2.5,
+"666Handling": 103,
+
+"699TopSpeed": 168,
+"6990to60": 2.4,
+"699Handling": 108,
+
+"969TopSpeed": 172,
+"9690to60": 2.5,
+"969Handling": 108,
+
+"996TopSpeed": 172,
+"9960to60": 2.4,
+"996Handling": 103,
+    "creator": "Bnuuy"
+}

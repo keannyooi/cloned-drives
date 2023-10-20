@@ -1,0 +1,49 @@
+{
+    "rq": 46,
+    "make": "Peugeot",
+    "model": "3008 2.0 BlueHDi 180",
+    "modelYear": 2016,
+    "country": "FR",
+    "topSpeed": 129,
+    "0to60": 8.7,
+    "handling": 75,
+    "driveType": "FWD",
+    "tyreType": "All-Surface",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1473,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 55.67,
+    "ola": 78.25,
+    "description": "Biggest engine ever put in a 3008.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1148903431021531216/Peugeot_3008_2.0_BlueHDi_180.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1148904995199123486/Peugeot_3008_2.0_BlueHDi_180.png",
+    "creator": "Crossfire",
+
+    "333TopSpeed": 133,
+    "3330to60": 8.3,
+    "333Handling": 77,
+
+    "666TopSpeed": 137,
+    "6660to60": 7.8,
+    "666Handling": 80,
+
+    "699TopSpeed": 137,
+    "6990to60": 7.4,
+    "699Handling": 83,
+
+    "969TopSpeed": 141,
+    "9690to60": 7.8,
+    "969Handling": 83,
+
+    "996TopSpeed": 141,
+    "9960to60": 7.4,
+    "996Handling": 80
+}

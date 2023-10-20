@@ -1,0 +1,49 @@
+{
+    "rq": 21,
+    "make": "Porsche",
+    "model": "365A 1600 Super Speedster",
+    "modelYear": 1956,
+    "country": "DE",
+    "topSpeed": 109,
+    "0to60": 11.3,
+    "handling": 62,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 760,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 27.66,
+    "ola": 63.99,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1151925262611648645/356A1600SuperSpeedster.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1151925679856820364/356A1600SuperSpeedster.png",
+
+"333TopSpeed": 114,
+"3330to60": 10.7,
+"333Handling": 64,
+
+"666TopSpeed": 119,
+"6660to60": 10.2,
+"666Handling": 66,
+
+"699TopSpeed": 119,
+"6990to60": 9.6,
+"699Handling": 69,
+
+"969TopSpeed": 123,
+"9690to60": 10.2,
+"969Handling": 69,
+
+"996TopSpeed": 123,
+"9960to60": 9.6,
+"996Handling": 66,
+    "creator": "Bnuuy"
+}

@@ -1,0 +1,51 @@
+{  
+    "rq": 44,
+    "make": "Volkswagen",
+    "model": "ID.3 Pro Performance",
+    "modelYear": 2023,
+    "country": "DE",
+    "topSpeed": 101,
+    "0to60": 7.0,
+    "handling": 78,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite", "Eco-Friendly","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 1815,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Electric",
+    "mra": 53.85,
+    "ola": 71.43,
+    "description": "Happy new Year! it's 2023! you know what that means, middle life crisis facelift!",
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1130852101136851005/c44_volkswagen_id.3_pro_performance.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1130852564125106256/ID3Pro.png",
+    "creator": "Hastur",
+
+    "333TopSpeed": 106,
+    "3330to60": 6.6,
+    "333Handling": 81,
+    
+    "666TopSpeed": 111,
+    "6660to60": 6.3,
+    "666Handling": 83,
+    
+    "699TopSpeed": 111,
+    "6990to60": 5.9,
+    "699Handling": 87,
+    
+    "969TopSpeed": 117,
+    "9690to60": 6.3,
+    "969Handling": 87,
+    
+    "996TopSpeed": 117,
+    "9960to60": 5.9,
+    "996Handling": 83
+}

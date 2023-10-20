@@ -1,0 +1,51 @@
+{  
+    "rq": 40,
+    "make": "Chevrolet",
+    "model": "Cruze 2.0TD LT",
+    "modelYear": 2014,
+    "country": "US",
+    "topSpeed": 125,
+    "0to60": 8.3,
+    "handling": 76,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Americas Assualt","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 1590,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 54.61,
+    "ola": 63.13,
+    "description": "A taste of european diesel for the Americans.",
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1112158935365976154/Cruze20TDLT.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1112158998439936120/Cruze20USA.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 129,
+    "3330to60": 7.9,
+    "333Handling": 79,
+    
+    "666TopSpeed": 133,
+    "6660to60": 7.5,
+    "666Handling": 81,
+    
+    "699TopSpeed": 133,
+    "6990to60": 7.1,
+    "699Handling": 84,
+    
+    "969TopSpeed": 137,
+    "9690to60": 7.5,
+    "969Handling": 84,
+    
+    "996TopSpeed": 137,
+    "9960to60": 7.1,
+    "996Handling": 81
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 74,
+    "make": "Porsche",
+    "model": "Cayenne S Diesel",
+    "modelYear": 2012,
+    "country": "DE",
+    "topSpeed": 157,
+    "0to60": 5.5,
+    "handling": 79,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 2165,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 62.5,
+    "ola": 65.45,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1149284345052405830/cayenneSDiesel2012.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1149284475474292847/CayenneSdiesel2012.png",
+
+"333TopSpeed": 160,
+"3330to60": 5.2,
+"333Handling": 82,
+
+"666TopSpeed": 164,
+"6660to60": 5,
+"666Handling": 84,
+
+"699TopSpeed": 164,
+"6990to60": 4.7,
+"699Handling": 88,
+
+"969TopSpeed": 167,
+"9690to60": 5,
+"969Handling": 88,
+
+"996TopSpeed": 167,
+"9960to60": 4.7,
+"996Handling": 84,
+    "creator": "Bnuuy"
+}

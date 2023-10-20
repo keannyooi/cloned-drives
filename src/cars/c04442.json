@@ -1,0 +1,49 @@
+{
+    "rq": 20,
+    "make": "Aston Martin",
+    "model": "DB2 Vantage Drophead Coupe",
+    "modelYear": 1951,
+    "country": "GB",
+    "topSpeed": 106,
+    "0to60": 12.0,
+    "handling": 56,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["The Midlands Cruise","Unique","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1208,
+    "gc": "High",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 37.5,
+    "ola": 75,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1120000656426680320/DB2VantageDHC.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1120001190416089098/db2vantageDHC.png",
+
+"333TopSpeed": 111,
+"3330to60": 11.4,
+"333Handling": 58,
+
+"666TopSpeed": 116,
+"6660to60": 10.8,
+"666Handling": 60,
+
+"699TopSpeed": 116,
+"6990to60": 10.2,
+"699Handling": 62,
+
+"969TopSpeed": 121,
+"9690to60": 10.8,
+"969Handling": 62,
+
+"996TopSpeed": 121,
+"9960to60": 10.2,
+"996Handling": 60,
+    "creator": "Bnuuy"
+}

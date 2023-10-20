@@ -1,0 +1,49 @@
+{
+    "rq": 63,
+    "make": "Porsche",
+    "model": "Panamera S",
+    "modelYear": 2009,
+    "country": "DE",
+    "topSpeed": 177,
+    "0to60": 5.1,
+    "handling": 83,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1845,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 69.11,
+    "ola": 78.43,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1146192534050185316/PanameraS970.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1146192735699734568/970S.png",
+
+"333TopSpeed": 180,
+"3330to60": 4.8,
+"333Handling": 86,
+
+"666TopSpeed": 183,
+"6660to60": 4.6,
+"666Handling": 88,
+
+"699TopSpeed": 183,
+"6990to60": 4.3,
+"699Handling": 92,
+
+"969TopSpeed": 186,
+"9690to60": 4.6,
+"969Handling": 92,
+
+"996TopSpeed": 186,
+"9960to60": 4.3,
+"996Handling": 88,
+    "creator": "Bnuuy"
+}

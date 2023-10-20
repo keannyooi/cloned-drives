@@ -1,0 +1,49 @@
+{
+    "rq": 80,
+    "make": "Porsche",
+    "model": "Panamera 4S",
+    "modelYear": 2016,
+    "country": "DE",
+    "topSpeed": 180,
+    "0to60": 4.2,
+    "handling": 88,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Super Sedan","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1870,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 72.09,
+    "ola": 77.78,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1152572662816710747/971Panamera4S.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1152572783704948806/971Panamera4S.png",
+
+"333TopSpeed": 183,
+"3330to60": 4,
+"333Handling": 91,
+
+"666TopSpeed": 186,
+"6660to60": 3.8,
+"666Handling": 94,
+
+"699TopSpeed": 186,
+"6990to60": 3.6,
+"699Handling": 98,
+
+"969TopSpeed": 189,
+"9690to60": 3.8,
+"969Handling": 98,
+
+"996TopSpeed": 189,
+"9960to60": 3.6,
+"996Handling": 94,
+    "creator": "Bnuuy"
+}

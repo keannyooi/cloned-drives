@@ -1,0 +1,49 @@
+{
+    "rq": 29,
+    "make": "Porsche",
+    "model": "356C Carrera 2",
+    "modelYear": 1963,
+    "country": "DE",
+    "topSpeed": 124,
+    "0to60": 8.0,
+    "handling": 69,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1010,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 48.33,
+    "ola": 73.45,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1154020322887090227/356CCarrera2.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1154020540605026304/356Ccarrera2.png",
+
+"333TopSpeed": 128,
+"3330to60": 7.6,
+"333Handling": 71,
+
+"666TopSpeed": 132,
+"6660to60": 7.2,
+"666Handling": 74,
+
+"699TopSpeed": 132,
+"6990to60": 6.8,
+"699Handling": 77,
+
+"969TopSpeed": 137,
+"9690to60": 7.2,
+"969Handling": 77,
+
+"996TopSpeed": 137,
+"9960to60": 6.8,
+"996Handling": 74,
+    "creator": "Bnuuy"
+}

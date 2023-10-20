@@ -1,0 +1,49 @@
+{
+    "rq": 81,
+    "make": "Porsche",
+    "model": "911 Carrera 4 GTS",
+    "modelYear": 2017,
+    "country": "DE",
+    "topSpeed": 193,
+    "0to60": 3.8,
+    "handling": 90,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1495,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 81.48,
+    "ola": 76.59,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158056108435439626/991.2911Carrera4GTS.png?ex=651adb4b&is=651989cb&hm=8cd2ff965623292c5163b3b27e6f9a0876cc283c7684bbc795faf696ae05d6e9&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158056435863797951/991.2911Carrera4gts.png?ex=651adb99&is=65198a19&hm=38664e178877acd0fd34d5c879a8cca53778143c395be2aebd8c59d9d0df9351&",
+
+"333TopSpeed": 196,
+"3330to60": 3.6,
+"333Handling": 93,
+
+"666TopSpeed": 198,
+"6660to60": 3.4,
+"666Handling": 96,
+
+"699TopSpeed": 198,
+"6990to60": 3.2,
+"699Handling": 100,
+
+"969TopSpeed": 201,
+"9690to60": 3.4,
+"969Handling": 100,
+
+"996TopSpeed": 201,
+"9960to60": 3.2,
+"996Handling": 96,
+    "creator": "Bnuuy"
+}

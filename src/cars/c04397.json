@@ -1,0 +1,51 @@
+{  
+    "rq": 42,
+    "make": "Chevrolet",
+    "model": "Cruze 1.4T Eco",
+    "modelYear": 2010,
+    "country": "US",
+    "topSpeed": 132,
+    "0to60": 8.2,
+    "handling": 76,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Americas Assualt","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 1400,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 52.73,
+    "ola": 62.20,
+    "description": "Less weight and more value make the Eco the pick of the Cruze litter.",
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1112157683710173235/Cruze14TEco.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1112157763682967632/CruzeEco.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 136,
+    "3330to60": 7.8,
+    "333Handling": 79,
+    
+    "666TopSpeed": 140,
+    "6660to60": 7.4,
+    "666Handling": 81,
+    
+    "699TopSpeed": 140,
+    "6990to60": 7,
+    "699Handling": 84,
+    
+    "969TopSpeed": 144,
+    "9690to60": 7.4,
+    "969Handling": 84,
+    
+    "996TopSpeed": 144,
+    "9960to60": 7,
+    "996Handling": 81
+}

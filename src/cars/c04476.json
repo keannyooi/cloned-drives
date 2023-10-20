@@ -1,0 +1,49 @@
+{
+    "rq": 82,
+    "make": ["R-Reforged", "Aston Martin"],
+    "model": "V12 Zagato Heritage Coupe",
+    "modelYear": 2019,
+    "country": "GB",
+    "topSpeed": 200,
+    "0to60": 3.3,
+    "handling": 90,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","RestoMod","Unique","Ultra Expensive","Tuner","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1650,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 92,
+    "ola": 90,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1131233618333810779/RreforgedV12ZagHcoupe.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1131234164356685874/RreforgedV12ZagHCoupe.png",
+
+"333TopSpeed": 203,
+"3330to60": 3.1,
+"333Handling": 93,
+
+"666TopSpeed": 205,
+"6660to60": 3,
+"666Handling": 96,
+
+"699TopSpeed": 205,
+"6990to60": 2.8,
+"699Handling": 100,
+
+"969TopSpeed": 208,
+"9690to60": 3,
+"969Handling": 100,
+
+"996TopSpeed": 208,
+"9960to60": 2.8,
+"996Handling": 96,
+    "creator": "Bnuuy"
+}

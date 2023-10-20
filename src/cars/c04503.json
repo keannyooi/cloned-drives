@@ -1,0 +1,49 @@
+{
+    "rq": 28,
+    "make": "Peugeot",
+    "model": "607 2.2 HDi FAP 135 S",
+    "modelYear": 1999,
+    "country": "FR",
+    "topSpeed": 127,
+    "0to60": 10.5,
+    "handling": 70,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1535,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 48.66,
+    "ola": 64.92,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1144164952303751188/Peugeot_607_2.2_HDi_FAP_135_S_1999.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1144165494681767966/Peugeot_607_2.2_HDi_135.png",
+    "creator": "Crossfire",
+
+    "333TopSpeed": 131, 
+    "3330to60": 10.0, 
+    "333Handling": 72,
+
+    "666TopSpeed": 135, 
+    "6660to60": 9.5, 
+    "666Handling": 75,
+
+    "996TopSpeed": 139, 
+    "9960to60": 8.9, 
+    "996Handling": 75,
+
+    "969TopSpeed": 139, 
+    "9690to60": 9.5, 
+    "969Handling": 78,
+
+    "699TopSpeed": 135, 
+    "6990to60": 8.9, 
+    "699Handling": 78
+}

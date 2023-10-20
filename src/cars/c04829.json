@@ -1,0 +1,49 @@
+{
+    "rq": 82,
+    "make": "Porsche",
+    "model": "Panamera Turbo",
+    "modelYear": 2009,
+    "country": "DE",
+    "topSpeed": 188,
+    "0to60": 3.9,
+    "handling": 85,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Super Sedan","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 2045,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 79,
+    "ola": 76.92,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1146192630607253628/PanameraTurbo970.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1146192788501840063/970Turbo.png",
+
+"333TopSpeed": 191,
+"3330to60": 3.7,
+"333Handling": 88,
+
+"666TopSpeed": 194,
+"6660to60": 3.5,
+"666Handling": 91,
+
+"699TopSpeed": 194,
+"6990to60": 3.3,
+"699Handling": 94,
+
+"969TopSpeed": 196,
+"9690to60": 3.5,
+"969Handling": 94,
+
+"996TopSpeed": 196,
+"9960to60": 3.3,
+"996Handling": 91,
+    "creator": "Bnuuy"
+}

@@ -1,0 +1,52 @@
+{
+    "rq": 24,
+    "make": "Volkswagen",
+    "model": "Scirocco 1600 GT",
+    "modelYear": 1979,
+    "country": "DE",
+    "topSpeed": 105,
+    "0to60": 11.0,
+    "handling": 72,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 875,
+    "gc": "Medium",
+    "seatCount":4,
+    "bodyStyle": "Hatchback",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 34.38,
+    "ola": 60.91,
+    "description": "Solid like no other, Stylish like an italian model.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1140036388419547166/Scirocco1600GT.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1140039666041639062/1600GT.png",
+    "creator": "Andu",
+ 
+    "333TopSpeed": 110,
+    "3330to60": 10.4,
+    "333Handling": 69,
+    
+    "666TopSpeed": 115,
+    "6660to60": 9.9,
+    "666Handling": 71,
+    
+    "699TopSpeed": 115,
+    "6990to60": 9.3,
+    "699Handling": 74,
+    
+    "969TopSpeed": 120,
+    "9690to60": 9.9,
+    "969Handling": 74,
+    
+    "996TopSpeed": 120,
+    "9960to60": 9.3,
+    "996Handling": 71
+}

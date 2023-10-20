@@ -1,0 +1,49 @@
+{
+    "rq": 62,
+    "make": "Porsche",
+    "model": "911 Carrera 4 Leichtbau",
+    "modelYear": 1990,
+    "country": "DE",
+    "topSpeed": 165,
+    "0to60": 4.7,
+    "handling": 78,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Track Day","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1200,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 70,
+    "ola": 72.5,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1149025601294962708/964911Carrera4Light.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1149025835886596116/964911Carrera4Light.png",
+
+"333TopSpeed": 168,
+"3330to60": 4.5,
+"333Handling": 81,
+
+"666TopSpeed": 171,
+"6660to60": 4.2,
+"666Handling": 83,
+
+"699TopSpeed": 171,
+"6990to60": 4,
+"699Handling": 87,
+
+"969TopSpeed": 174,
+"9690to60": 4.2,
+"969Handling": 87,
+
+"996TopSpeed": 174,
+"9960to60": 4,
+"996Handling": 83,
+    "creator": "Bnuuy"
+}

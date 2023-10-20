@@ -1,0 +1,49 @@
+{
+    "rq": 64,
+    "make": "Porsche",
+    "model": "Panamera",
+    "modelYear": 2013,
+    "country": "DE",
+    "topSpeed": 161,
+    "0to60": 5.7,
+    "handling": 83,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1825,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 66.66,
+    "ola": 75,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1146833382915969154/Panamera970B.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1146833403564539934/970B.png",
+
+"333TopSpeed": 164,
+"3330to60": 5.4,
+"333Handling": 86,
+
+"666TopSpeed": 167,
+"6660to60": 5.1,
+"666Handling": 88,
+
+"699TopSpeed": 167,
+"6990to60": 4.8,
+"699Handling": 92,
+
+"969TopSpeed": 171,
+"9690to60": 5.1,
+"969Handling": 92,
+
+"996TopSpeed": 171,
+"9960to60": 4.8,
+"996Handling": 88,
+    "creator": "Bnuuy"
+}

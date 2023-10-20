@@ -1,0 +1,49 @@
+{
+    "rq": 53,
+    "make": "Porsche",
+    "model": "911 Carrera RS America",
+    "modelYear": 1993,
+    "country": "DE",
+    "topSpeed": 158,
+    "0to60": 5.2,
+    "handling": 79,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Street Racer","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1349,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 71,
+    "ola": 75.25,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1149025684157644900/964911CarreraRSAmerica.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1149025888080510976/964911CarreraRSAmerica.png",
+
+"333TopSpeed": 161,
+"3330to60": 4.9,
+"333Handling": 82,
+
+"666TopSpeed": 165,
+"6660to60": 4.7,
+"666Handling": 84,
+
+"699TopSpeed": 165,
+"6990to60": 4.4,
+"699Handling": 88,
+
+"969TopSpeed": 168,
+"9690to60": 4.7,
+"969Handling": 88,
+
+"996TopSpeed": 168,
+"9960to60": 4.4,
+"996Handling": 84,
+    "creator": "Bnuuy"
+}

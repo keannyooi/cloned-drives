@@ -1,0 +1,49 @@
+{
+    "rq": 70,
+    "make": "Porsche",
+    "model": "911 Carrera S Cup",
+    "modelYear": 2001,
+    "country": "DE",
+    "topSpeed": 174,
+    "0to60": 4.4,
+    "handling": 93,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Eurotech Elite","Motorsport","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1250,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 83.02,
+    "ola": 81.64,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1152626127689494669/996911CarreraSCup.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1152626245331337216/996911CarreraSCup.png",
+
+"333TopSpeed": 177,
+"3330to60": 4.2,
+"333Handling": 96,
+
+"666TopSpeed": 180,
+"6660to60": 4,
+"666Handling": 99,
+
+"699TopSpeed": 180,
+"6990to60": 3.7,
+"699Handling": 103,
+
+"969TopSpeed": 183,
+"9690to60": 4,
+"969Handling": 103,
+
+"996TopSpeed": 183,
+"9960to60": 3.7,
+"996Handling": 99,
+    "creator": "Bnuuy"
+}

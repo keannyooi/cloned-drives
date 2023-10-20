@@ -1,0 +1,49 @@
+{
+    "rq": 56,
+    "make": "Porsche",
+    "model": "911 Carrera RS 3.6 Touring",
+    "modelYear": 1991,
+    "country": "DE",
+    "topSpeed": 162,
+    "0to60": 5.0,
+    "handling": 80,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Street Racer","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1220,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 72.54,
+    "ola": 75.99,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1149025641522528338/964911CarreraRS3.6Touring.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1149025864563048478/964911CarreraRS3.6Touring.png",
+
+"333TopSpeed": 165,
+"3330to60": 4.8,
+"333Handling": 83,
+
+"666TopSpeed": 168,
+"6660to60": 4.5,
+"666Handling": 85,
+
+"699TopSpeed": 168,
+"6990to60": 4.3,
+"699Handling": 89,
+
+"969TopSpeed": 172,
+"9690to60": 4.5,
+"969Handling": 89,
+
+"996TopSpeed": 172,
+"9960to60": 4.3,
+"996Handling": 85,
+    "creator": "Bnuuy"
+}

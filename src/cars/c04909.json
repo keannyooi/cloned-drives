@@ -1,0 +1,49 @@
+{
+    "rq": 21,
+    "make": "Porsche",
+    "model": "356C 1600",
+    "modelYear": 1963,
+    "country": "DE",
+    "topSpeed": 109,
+    "0to60": 12.4,
+    "handling": 66,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 935,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 45,
+    "ola": 68.25,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1154020368789557318/356C1600.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1154020629335515207/356C1600.png",
+
+"333TopSpeed": 114,
+"3330to60": 11.8,
+"333Handling": 68,
+
+"666TopSpeed": 119,
+"6660to60": 11.2,
+"666Handling": 70,
+
+"699TopSpeed": 119,
+"6990to60": 10.5,
+"699Handling": 73,
+
+"969TopSpeed": 123,
+"9690to60": 11.2,
+"969Handling": 73,
+
+"996TopSpeed": 123,
+"9960to60": 10.5,
+"996Handling": 70,
+    "creator": "Bnuuy"
+}

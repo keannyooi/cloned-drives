@@ -1,0 +1,52 @@
+{
+    "rq": 50,
+    "make": "Volkswagen",
+    "model": "Golf GTI Edition 30",
+    "modelYear": 2006,
+    "country": "DE",
+    "topSpeed": 151,
+    "0to60": 6.4,
+    "handling": 81,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite", "Hot Hatch","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 1376,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 75.29,
+    "ola": 78.13,
+    "description": "Celebrating the big 30.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1128073566211014757/GolfGTI30.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1128075183966658580/GolfGTIEdition30.png",
+    "creator": "Andu",
+ 
+    "333TopSpeed": 154,
+    "3330to60": 6.1,
+    "333Handling": 84,
+    
+    "666TopSpeed": 158,
+    "6660to60": 5.8,
+    "666Handling": 86,
+    
+    "699TopSpeed": 158,
+    "6990to60": 5.4,
+    "699Handling": 90,
+    
+    "969TopSpeed": 161,
+    "9690to60": 5.8,
+    "969Handling": 90,
+    
+    "996TopSpeed": 161,
+    "9960to60": 5.4,
+    "996Handling": 86
+}

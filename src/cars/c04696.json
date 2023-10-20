@@ -1,0 +1,49 @@
+{
+    "rq": 62,
+    "make": "Porsche",
+    "model": "911 Carrera RS 3.8",
+    "modelYear": 1995,
+    "country": "DE",
+    "topSpeed": 172,
+    "0to60": 4.7,
+    "handling": 83,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Track Day","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1300,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 74.15,
+    "ola": 77.77,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1149296445481046066/993911CarreraRS3.8.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1149296654848098364/993911CarreraRS3.8.png",
+
+"333TopSpeed": 175,
+"3330to60": 4.5,
+"333Handling": 86,
+
+"666TopSpeed": 178,
+"6660to60": 4.2,
+"666Handling": 88,
+
+"699TopSpeed": 178,
+"6990to60": 4,
+"699Handling": 92,
+
+"969TopSpeed": 181,
+"9690to60": 4.2,
+"969Handling": 92,
+
+"996TopSpeed": 181,
+"9960to60": 4,
+"996Handling": 88,
+    "creator": "Bnuuy"
+}

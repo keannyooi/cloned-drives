@@ -1,0 +1,49 @@
+{
+    "rq": 59,
+    "make": "Porsche",
+    "model": "911 R 2.0",
+    "modelYear": 1969,
+    "country": "DE",
+    "topSpeed": 152,
+    "0to60": 5.1,
+    "handling": 76,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Track Day","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 875,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 70,
+    "ola": 81.2,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158127943676088442/Porsche911R2.01969.png?ex=651b1e32&is=6519ccb2&hm=44d71006aa1dcaa6a5edaa7f79eb6610b982bf55219af0af450b851ba4786292&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158128061988999189/Porsche911R2.0.png?ex=651b1e4e&is=6519ccce&hm=0b45eeb190f7dcb53f68b88183fce7e64cef0e0d46bfabda5f6ba990e956f942&",
+
+"333TopSpeed": 155,
+"3330to60": 4.8,
+"333Handling": 79,
+
+"666TopSpeed": 159,
+"6660to60": 4.6,
+"666Handling": 81,
+
+"699TopSpeed": 159,
+"6990to60": 4.3,
+"699Handling": 84,
+
+"969TopSpeed": 162,
+"9690to60": 4.6,
+"969Handling": 84,
+
+"996TopSpeed": 162,
+"9960to60": 4.3,
+"996Handling": 81,
+    "creator": "Bnuuy"
+}

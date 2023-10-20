@@ -1,0 +1,49 @@
+{
+    "rq": 53,
+    "make": "Porsche",
+    "model": "Boxster",
+    "modelYear": 2009,
+    "country": "DE",
+    "topSpeed": 163,
+    "0to60": 5.6,
+    "handling": 85,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1335,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 68.88,
+    "ola": 82.22,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1145439464081072308/987Boxster2.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1145439818659139604/987Boxster2.png",
+
+"333TopSpeed": 166,
+"3330to60": 5.3,
+"333Handling": 88,
+
+"666TopSpeed": 169,
+"6660to60": 5,
+"666Handling": 91,
+
+"699TopSpeed": 169,
+"6990to60": 4.8,
+"699Handling": 94,
+
+"969TopSpeed": 173,
+"9690to60": 5,
+"969Handling": 94,
+
+"996TopSpeed": 173,
+"9960to60": 4.8,
+"996Handling": 91,
+    "creator": "Bnuuy"
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 59,
+    "make": "Porsche",
+    "model": "Cayenne Diesel",
+    "modelYear": 2014,
+    "country": "DE",
+    "topSpeed": 137,
+    "0to60": 7.0,
+    "handling": 78,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 2110,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 60.34,
+    "ola": 68.49,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1149284320989679697/cayenneDiesel2014.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1149284461628883015/CayenneDiesel2014.png",
+
+"333TopSpeed": 141,
+"3330to60": 6.6,
+"333Handling": 81,
+
+"666TopSpeed": 145,
+"6660to60": 6.3,
+"666Handling": 83,
+
+"699TopSpeed": 145,
+"6990to60": 6,
+"699Handling": 87,
+
+"969TopSpeed": 148,
+"9690to60": 6.3,
+"969Handling": 87,
+
+"996TopSpeed": 148,
+"9960to60": 6,
+"996Handling": 83,
+    "creator": "Bnuuy"
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 48,
+    "make": "Porsche",
+    "model": "914/6 GT Rallye",
+    "modelYear": 1971,
+    "country": "DE",
+    "topSpeed": 120,
+    "0to60": 7.2,
+    "handling": 75,
+    "driveType": "RWD",
+    "tyreType": "Off-Road",
+    "tags": ["Eurotech Elite","Motorsport","Unique","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 956,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Middle",
+    "fuelType": "Petrol",
+    "mra": 61.94,
+    "ola": 70,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1157617486284472422/914-6GTRallye.png?ex=651942cc&is=6517f14c&hm=369ee9583db37599819b45eb645b41573140148643221801ceef13716792ebe5&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1157617775548842074/914GTRallye.png?ex=65194311&is=6517f191&hm=6e84076b117ce624d9542908eb64fd6618ec2af2d594da01cfb43782ae3921c3&",
+
+"333TopSpeed": 124,
+"3330to60": 6.8,
+"333Handling": 77,
+
+"666TopSpeed": 129,
+"6660to60": 6.5,
+"666Handling": 80,
+
+"699TopSpeed": 129,
+"6990to60": 6.1,
+"699Handling": 83,
+
+"969TopSpeed": 133,
+"9690to60": 6.5,
+"969Handling": 83,
+
+"996TopSpeed": 133,
+"9960to60": 6.1,
+"996Handling": 80,
+    "creator": "Bnuuy"
+}

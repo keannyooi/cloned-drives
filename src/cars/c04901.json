@@ -1,0 +1,49 @@
+{
+    "rq": 22,
+    "make": "Porsche",
+    "model": "356B 1600 Super 90 Ghia Coupe",
+    "modelYear": 1961,
+    "country": "DE",
+    "topSpeed": 115,
+    "0to60": 11.0,
+    "handling": 63,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Unique","Concept","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 840,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 39.64,
+    "ola": 71.25,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1154038255902261248/356B1600Super90GhiaCoupe.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1154038332507050054/356B1600Super90Ghia.png",
+
+"333TopSpeed": 120,
+"3330to60": 10.4,
+"333Handling": 65,
+
+"666TopSpeed": 124,
+"6660to60": 9.9,
+"666Handling": 67,
+
+"699TopSpeed": 124,
+"6990to60": 9.3,
+"699Handling": 70,
+
+"969TopSpeed": 129,
+"9690to60": 9.9,
+"969Handling": 70,
+
+"996TopSpeed": 129,
+"9960to60": 9.3,
+"996Handling": 67,
+    "creator": "Bnuuy"
+}

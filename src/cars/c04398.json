@@ -1,0 +1,51 @@
+{  
+    "rq": 28,
+    "make": "Chevrolet",
+    "model": "Cruze 1.6 LT Hatchback",
+    "modelYear": 2011,
+    "country": "US",
+    "topSpeed": 118,
+    "0to60": 11.5,
+    "handling": 73,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Americas Assualt","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 1380,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 49.78,
+    "ola": 60.87,
+    "description": "A nice value proposition, if you ignore the Skoda Octavia.",
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1112157990775177257/Cruze16LTH.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1112158267314016266/Cruze16H.png",
+    "creator": "Andu",
+
+    "333TopSpeed": 122,
+    "3330to60": 10.9,
+    "333Handling": 75,
+    
+    "666TopSpeed": 127,
+    "6660to60": 10.3,
+    "666Handling": 78,
+    
+    "699TopSpeed": 127,
+    "6990to60": 9.8,
+    "699Handling": 81,
+    
+    "969TopSpeed": 131,
+    "9690to60": 10.3,
+    "969Handling": 81,
+    
+    "996TopSpeed": 131,
+    "9960to60": 9.8,
+    "996Handling": 78
+}

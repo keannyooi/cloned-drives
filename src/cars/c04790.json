@@ -1,0 +1,49 @@
+{
+    "rq": 78,
+    "make": "Porsche",
+    "model": "Cayenne S",
+    "modelYear": 2014,
+    "country": "DE",
+    "topSpeed": 161,
+    "0to60": 5.3,
+    "handling": 81,
+    "driveType": "4WD",
+    "tyreType": "All-Surface",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 2085,
+    "gc": "High",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 68.83,
+    "ola": 73.68,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1149280234273783898/CayenneS2014.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1149280390004101160/CayenneS2014.png",
+
+"333TopSpeed": 164,
+"3330to60": 5,
+"333Handling": 84,
+
+"666TopSpeed": 167,
+"6660to60": 4.8,
+"666Handling": 86,
+
+"699TopSpeed": 167,
+"6990to60": 4.5,
+"699Handling": 90,
+
+"969TopSpeed": 171,
+"9690to60": 4.8,
+"969Handling": 90,
+
+"996TopSpeed": 171,
+"9960to60": 4.5,
+"996Handling": 86,
+    "creator": "Bnuuy"
+}

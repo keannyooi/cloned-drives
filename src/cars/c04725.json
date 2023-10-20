@@ -1,0 +1,49 @@
+{
+    "rq": 39,
+    "make": "Porsche",
+    "model": "911 S 2.0 Targa",
+    "modelYear": 1967,
+    "country": "DE",
+    "topSpeed": 140,
+    "0to60": 7.6,
+    "handling": 70,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Style Icon","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 995,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 56.58,
+    "ola": 79.25,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1149343068479311882/Porsche911S2.0Targa1967.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1149343345466937356/Porsche911S2.0Targa.png",
+
+"333TopSpeed": 144,
+"3330to60": 7.2,
+"333Handling": 72,
+
+"666TopSpeed": 147,
+"6660to60": 6.8,
+"666Handling": 75,
+
+"699TopSpeed": 147,
+"6990to60": 6.5,
+"699Handling": 78,
+
+"969TopSpeed": 151,
+"9690to60": 6.8,
+"969Handling": 78,
+
+"996TopSpeed": 151,
+"9960to60": 6.5,
+"996Handling": 75,
+    "creator": "Bnuuy"
+}

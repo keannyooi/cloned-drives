@@ -1,0 +1,49 @@
+{
+    "rq": 10,
+    "make": ["Porsche-Studebaker", "Porsche", "Studebaker"],
+    "model": "Type 542",
+    "modelYear": 1952,
+    "country": "DE",
+    "topSpeed": 82,
+    "0to60": 15.5,
+    "handling": 60,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Concept","Unique","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1450,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 0,
+    "ola": 59.15,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158078654920786020/miscStude542.png?ex=651af04b&is=65199ecb&hm=6b5c90a612e9c82439d6445006d1ae046a813b6858f66064ddae3e0069432609&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158078970898686076/MiscStudebaker.png?ex=651af096&is=65199f16&hm=a0aa0692dfbdbd9cd04d783c47358eafdda15b80f0a9f5d9daa4fd6cd5e3d65f&",
+
+"333TopSpeed": 88,
+"3330to60": 14.7,
+"333Handling": 62,
+
+"666TopSpeed": 95,
+"6660to60": 14,
+"666Handling": 64,
+
+"699TopSpeed": 95,
+"6990to60": 13.2,
+"699Handling": 67,
+
+"969TopSpeed": 101,
+"9690to60": 14,
+"969Handling": 67,
+
+"996TopSpeed": 101,
+"9960to60": 13.2,
+"996Handling": 64,
+    "creator": "Bnuuy"
+}

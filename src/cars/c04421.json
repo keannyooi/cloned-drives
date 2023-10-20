@@ -1,0 +1,49 @@
+{
+    "rq": 100,
+    "make": "Aston Martin",
+    "model": "Project AM-RB 001",
+    "modelYear": 2016,
+    "country": "GB",
+    "topSpeed": 225,
+    "0to60": 2.6,
+    "handling": 99,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Unique","Concept","Eco-Friendly","Track Day","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1000,
+    "gc": "Low",
+    "seatCount": 1,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Hybrid",
+    "mra": 119.92,
+    "ola": 93.45,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1120006701937070080/RB001.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1120007070951948389/RB001.png",
+
+"333TopSpeed": 227,
+"3330to60": 2.5,
+"333Handling": 102,
+
+"666TopSpeed": 230,
+"6660to60": 2.3,
+"666Handling": 106,
+
+"699TopSpeed": 230,
+"6990to60": 2.2,
+"699Handling": 110,
+
+"969TopSpeed": 232,
+"9690to60": 2.3,
+"969Handling": 110,
+
+"996TopSpeed": 232,
+"9960to60": 2.2,
+"996Handling": 106,
+    "creator": "Bnuuy"
+}

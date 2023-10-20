@@ -1,0 +1,49 @@
+{
+    "rq": 42,
+    "make": "TVR",
+    "model": "S3",
+    "modelYear": 1990,
+    "country": "GB",
+    "topSpeed": 136,
+    "0to60": 6.9,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 940,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 62.02,
+    "ola": 66.67,
+    "description": "A full redesign elevated the S series to the current projects we see nowadays, finally putting down the wedge series for good.",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1144373818060701758/TVR_S3.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1144373073290735698/TVR_S3.png",
+    "creator": "Based",
+
+"333TopSpeed": 140, 
+"3330to60": 6.6, 
+"333Handling": 80,
+
+"666TopSpeed": 144, 
+"6660to60": 6.2, 
+"666Handling": 82,
+
+"699TopSpeed": 144, 
+"6990to60": 5.9, 
+"699Handling": 85,
+
+"969TopSpeed": 147, 
+"9690to60": 6.2, 
+"969Handling": 85,
+
+"996TopSpeed": 147, 
+"9960to60": 5.9, 
+"996Handling": 82
+}

@@ -1,0 +1,51 @@
+{  
+    "rq": 33,
+    "make": "Hyundai",
+    "model": "Nexo 40kWh",
+    "modelYear": 2018,
+    "country": "KR",
+    "topSpeed": 111,
+    "0to60": 8.8,
+    "handling": 74,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["The Amplification of Asia", "Eco-Friendly","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 1889,
+    "gc": "Medium",
+    "seatCount":5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Alternative",
+    "mra": 27.37,
+    "ola": 72.72,
+    "description": "The Nexo is an excellent electric SUV, but that may not be enough to overcome the difficulties of driving on hydrogen.",
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1114571243232960582/d33_hyundai_nexo_40kwh.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1114571614437265429/Nexo40kwh.png",
+    "creator": "Hastur",
+
+    "333TopSpeed": 116,
+    "3330to60": 8.4,
+    "333Handling": 76,
+    
+    "666TopSpeed": 120,
+    "6660to60": 7.9,
+    "666Handling": 79,
+    
+    "699TopSpeed": 120,
+    "6990to60": 7.5,
+    "699Handling": 82,
+    
+    "969TopSpeed": 125,
+    "9690to60": 7.9,
+    "969Handling": 82,
+    
+    "996TopSpeed": 125,
+    "9960to60": 7.5,
+    "996Handling": 79
+}

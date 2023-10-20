@@ -1,0 +1,49 @@
+{
+    "rq": 26,
+    "make": "Porsche",
+    "model": "356 SL Le Mans",
+    "modelYear": 1953,
+    "country": "DE",
+    "topSpeed": 137,
+    "0to60": 8.8,
+    "handling": 65,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Unique","Ultra Expensive","Motorsport","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 567,
+    "gc": "Medium",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 42.1,
+    "ola": 75,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1154051337848377434/956SLLeMans.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1154051490256781312/356lemans.png",
+
+"333TopSpeed": 141,
+"3330to60": 8.4,
+"333Handling": 67,
+
+"666TopSpeed": 145,
+"6660to60": 7.9,
+"666Handling": 69,
+
+"699TopSpeed": 145,
+"6990to60": 7.5,
+"699Handling": 72,
+
+"969TopSpeed": 148,
+"9690to60": 7.9,
+"969Handling": 72,
+
+"996TopSpeed": 148,
+"9960to60": 7.5,
+"996Handling": 69,
+    "creator": "Bnuuy"
+}

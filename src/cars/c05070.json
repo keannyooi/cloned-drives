@@ -1,0 +1,49 @@
+{
+    "rq": 37,
+    "make": ["Porsche", "Volkswagen"],
+    "model": "B32",
+    "modelYear": 1985,
+    "country": "DE",
+    "topSpeed": 122,
+    "0to60": 8.2,
+    "handling": 69,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Unique","Concept","Oddity","Tuner","Cloned Drives Beta: Last of"],
+    "isPrize": true,
+	
+    "weight": 1860,
+    "gc": "Medium",
+    "seatCount": 6,
+    "bodyStyle": "Commercial",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 51.25,
+    "ola": 51.66,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158088704485765293/MiscB32.png?ex=651af9a7&is=6519a827&hm=2c9d235dd5075eece2edcb4a19a54f065eb53c254b47e158546ffd3079d2c4c0&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158088874241822781/MiscB32.png?ex=651af9cf&is=6519a84f&hm=2c772ec80952d5e942688b6d44d5abf6ac3dcf04561a97ad97503ec8696747fc&",
+
+"333TopSpeed": 126,
+"3330to60": 7.8,
+"333Handling": 71,
+
+"666TopSpeed": 131,
+"6660to60": 7.4,
+"666Handling": 74,
+
+"699TopSpeed": 131,
+"6990to60": 7,
+"699Handling": 77,
+
+"969TopSpeed": 135,
+"9690to60": 7.4,
+"969Handling": 77,
+
+"996TopSpeed": 135,
+"9960to60": 7,
+"996Handling": 74,
+    "creator": "Bnuuy"
+}

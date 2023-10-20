@@ -1,0 +1,49 @@
+{
+    "rq": 34,
+    "make": "Peugeot",
+    "model": "607 2.2 16v 160 S Executive",
+    "modelYear": 1999,
+    "country": "FR",
+    "topSpeed": 137,
+    "0to60": 9.2,
+    "handling": 71,
+    "driveType": "FWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1455,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 62.58,
+    "ola": 71.57,
+    "description": "",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1144165016610799696/Peugeot_607_2.2_16v_160_S_Executive.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1144165517783990382/Peugeot_607_2.2_16v_160.png",
+    "creator": "Crossfire",
+
+    "333TopSpeed": 141, 
+    "3330to60": 8.7, 
+    "333Handling": 73,
+
+    "666TopSpeed": 145, 
+    "6660to60": 8.3, 
+    "666Handling": 76,
+
+    "996TopSpeed": 148, 
+    "9960to60": 7.8, 
+    "996Handling": 76,
+
+    "969TopSpeed": 148, 
+    "9690to60": 8.3, 
+    "969Handling": 79,
+
+    "699TopSpeed": 145, 
+    "6990to60": 7.8, 
+    "699Handling": 79
+}

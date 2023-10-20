@@ -1,0 +1,49 @@
+{
+    "rq": 90,
+    "make": "Porsche",
+    "model": "Panamera Turbo S E-Hybrid Executive",
+    "modelYear": 2017,
+    "country": "DE",
+    "topSpeed": 193,
+    "0to60": 3.3,
+    "handling": 89,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Super Sedan","Eco-Friendly","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 2410,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Hybrid",
+    "mra": 72.69,
+    "ola": 78.59,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1152577084007387226/971EPanameraTurboSEHybrid.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1152577235291734066/971EPanameraTurboSEHybrid.png",
+
+"333TopSpeed": 196,
+"3330to60": 3.1,
+"333Handling": 92,
+
+"666TopSpeed": 198,
+"6660to60": 3,
+"666Handling": 95,
+
+"699TopSpeed": 198,
+"6990to60": 2.8,
+"699Handling": 99,
+
+"969TopSpeed": 201,
+"9690to60": 3,
+"969Handling": 99,
+
+"996TopSpeed": 201,
+"9960to60": 2.8,
+"996Handling": 95,
+    "creator": "Bnuuy"
+}

@@ -1,0 +1,52 @@
+{
+    "rq": 51,
+    "make": "Volkswagen",
+    "model": "Scirocco GTS",
+    "modelYear": 2012,
+    "country": "DE",
+    "topSpeed": 149,
+    "0to60": 6.4,
+    "handling": 82,
+    "driveType": "FWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite", "Hot Hatch","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 1298,
+    "gc": "Medium",
+    "seatCount":4,
+    "bodyStyle": "Hatchback",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 71.91,
+    "ola": 75.00,
+    "description": "GTI equivalent ready to vroom your hearts to the max!",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1148017511934210208/SciroccoGTS12.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1148018759139860500/GTS12.png",
+    "creator": "Andu",
+    
+    "333TopSpeed": 152,
+    "3330to60": 6.1,
+    "333Handling": 85,
+    
+    "666TopSpeed": 156,
+    "6660to60": 5.8,
+    "666Handling": 87,
+    
+    "699TopSpeed": 156,
+    "6990to60": 5.4,
+    "699Handling": 91,
+    
+    "969TopSpeed": 159,
+    "9690to60": 5.8,
+    "969Handling": 91,
+    
+    "996TopSpeed": 159,
+    "9960to60": 5.4,
+    "996Handling": 87
+}

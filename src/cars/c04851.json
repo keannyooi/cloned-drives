@@ -1,0 +1,49 @@
+{
+    "rq": 100,
+    "make": "Porsche",
+    "model": "Vision 357 Speedster",
+    "modelYear": 2023,
+    "country": "DE",
+    "topSpeed": 180,
+    "0to60": 2.3,
+    "handling": 95,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Concept","Unique","Ultra Expensive","Track Day","Eco-Friendly","RestoMod","Cloned Drives Beta: Last of"],
+    "isPrize": true,
+	
+    "weight": 1460,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Open Air",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Electric",
+    "mra": 110.26,
+    "ola": 83.56,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158105767350653009/MiscVision357peed.png?ex=651b098b&is=6519b80b&hm=3bcf445e7eaede3fce51bb095eac8c5bd388481a920f69174dbcef5510dbf3ae&",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158105964931727370/MiscVision357peedster.png?ex=651b09ba&is=6519b83a&hm=f456c55f8c6ae9204bf63161f242a955f1b99924d989a9ee55fd1a43ffd3c7ce&",
+
+"333TopSpeed": 183,
+"3330to60": 2.2,
+"333Handling": 98,
+
+"666TopSpeed": 186,
+"6660to60": 2.1,
+"666Handling": 101,
+
+"699TopSpeed": 186,
+"6990to60": 2,
+"699Handling": 105,
+
+"969TopSpeed": 189,
+"9690to60": 2.1,
+"969Handling": 105,
+
+"996TopSpeed": 189,
+"9960to60": 2,
+"996Handling": 101,
+    "creator": "Bnuuy"
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 61,
+    "make": "Porsche",
+    "model": "911 Carrera 4S",
+    "modelYear": 1996,
+    "country": "DE",
+    "topSpeed": 171,
+    "0to60": 5.0,
+    "handling": 82,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1450,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 70.88,
+    "ola": 73.45,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1149296419103051877/993911Carrera4S.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1149296636607078440/993911Carrera4S.png",
+
+"333TopSpeed": 174,
+"3330to60": 4.8,
+"333Handling": 85,
+
+"666TopSpeed": 177,
+"6660to60": 4.5,
+"666Handling": 87,
+
+"699TopSpeed": 177,
+"6990to60": 4.3,
+"699Handling": 91,
+
+"969TopSpeed": 180,
+"9690to60": 4.5,
+"969Handling": 91,
+
+"996TopSpeed": 180,
+"9960to60": 4.3,
+"996Handling": 87,
+    "creator": "Bnuuy"
+}

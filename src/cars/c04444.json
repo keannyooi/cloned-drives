@@ -1,0 +1,49 @@
+{
+    "rq": 61,
+    "make": "Aston Martin",
+    "model": "DB9 GT Volante",
+    "modelYear": 2015,
+    "country": "GB",
+    "topSpeed": 183,
+    "0to60": 4.7,
+    "handling": 82,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Grand Tourer","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1835,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 85.45,
+    "ola": 78.3,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1115260446501515314/db9gtvolante2015.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1115260975231287406/DB9GTVol.png",
+
+"333TopSpeed": 186,
+"3330to60": 4.5,
+"333Handling": 85,
+
+"666TopSpeed": 189,
+"6660to60": 4.2,
+"666Handling": 87,
+
+"699TopSpeed": 189,
+"6990to60": 4,
+"699Handling": 91,
+
+"969TopSpeed": 192,
+"9690to60": 4.2,
+"969Handling": 91,
+
+"996TopSpeed": 192,
+"9960to60": 4,
+"996Handling": 87,
+    "creator": "Bnuuy"
+}

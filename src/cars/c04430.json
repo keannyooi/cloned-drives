@@ -1,0 +1,49 @@
+{
+    "rq": 41,
+    "make": "Aston Martin",
+    "model": "DBS V8 Banham Convertible",
+    "modelYear": 1972,
+    "country": "GB",
+    "topSpeed": 151,
+    "0to60": 6.2,
+    "handling": 70,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Grand Tourer","Unique","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1790,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 70.45,
+    "ola": 90.32,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1115273563222577182/DBSV8BanhamConvertible.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1115274017826410596/dbsv8banhamconvertible.png",
+
+"333TopSpeed": 154,
+"3330to60": 5.9,
+"333Handling": 72,
+
+"666TopSpeed": 158,
+"6660to60": 5.6,
+"666Handling": 75,
+
+"699TopSpeed": 158,
+"6990to60": 5.3,
+"699Handling": 78,
+
+"969TopSpeed": 161,
+"9690to60": 5.6,
+"969Handling": 78,
+
+"996TopSpeed": 161,
+"9960to60": 5.3,
+"996Handling": 75,
+    "creator": "Bnuuy"
+}

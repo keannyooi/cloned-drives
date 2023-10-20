@@ -1,0 +1,49 @@
+{
+    "rq": 57,
+    "make": "Porsche",
+    "model": "911 Carrera Cabriolet",
+    "modelYear": 2005,
+    "country": "DE",
+    "topSpeed": 174,
+    "0to60": 5.2,
+    "handling": 84,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1520,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 69.35,
+    "ola": 80,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1151611942557990952/997.1911CarreraCab.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1151612784799383663/997.1cab.png",
+
+"333TopSpeed": 177,
+"3330to60": 4.9,
+"333Handling": 87,
+
+"666TopSpeed": 180,
+"6660to60": 4.7,
+"666Handling": 90,
+
+"699TopSpeed": 180,
+"6990to60": 4.4,
+"699Handling": 93,
+
+"969TopSpeed": 183,
+"9690to60": 4.7,
+"969Handling": 93,
+
+"996TopSpeed": 183,
+"9960to60": 4.4,
+"996Handling": 90,
+    "creator": "Bnuuy"
+}

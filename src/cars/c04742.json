@@ -1,0 +1,49 @@
+{
+    "rq": 65,
+    "make": "Porsche",
+    "model": "911 Targa 4S X51",
+    "modelYear": 2005,
+    "country": "DE",
+    "topSpeed": 179,
+    "0to60": 4.9,
+    "handling": 85,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1535,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 73.66,
+    "ola": 76.89,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1151612263304810547/997.1911Targa4Sx51.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1151612889690546337/997.1Targa4SX51.png",
+
+"333TopSpeed": 182,
+"3330to60": 4.7,
+"333Handling": 88,
+
+"666TopSpeed": 185,
+"6660to60": 4.4,
+"666Handling": 91,
+
+"699TopSpeed": 185,
+"6990to60": 4.2,
+"699Handling": 94,
+
+"969TopSpeed": 188,
+"9690to60": 4.4,
+"969Handling": 94,
+
+"996TopSpeed": 188,
+"9960to60": 4.2,
+"996Handling": 91,
+    "creator": "Bnuuy"
+}

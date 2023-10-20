@@ -1,0 +1,49 @@
+{
+    "rq": 102,
+    "make": "Aston Martin",
+    "model": "Valkyrie AMR Pro",
+    "modelYear": 2022,
+    "country": "GB",
+    "topSpeed": 225,
+    "0to60": 2.3,
+    "handling": 101,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["The Midlands Cruise","Track Day","Eco-Friendly","Unique","Ultra Expensive","Cloned Drives Beta: Last of"],
+    "isPrize": true,
+	
+    "weight": 997,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Mixed",
+    "fuelType": "Hybrid",
+    "mra": 125,
+    "ola": 90,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1120006799043600444/ValkyrieAMRPro.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1120007121262608555/ValkyrieAMRPro.png",
+
+"333TopSpeed": 227,
+"3330to60": 2.2,
+"333Handling": 104,
+
+"666TopSpeed": 230,
+"6660to60": 2.1,
+"666Handling": 108,
+
+"699TopSpeed": 230,
+"6990to60": 2,
+"699Handling": 112,
+
+"969TopSpeed": 232,
+"9690to60": 2.1,
+"969Handling": 112,
+
+"996TopSpeed": 232,
+"9960to60": 2,
+"996Handling": 108,
+    "creator": "Bnuuy"
+}

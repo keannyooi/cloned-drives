@@ -1,0 +1,49 @@
+{
+    "rq": 59,
+    "make": "Porsche",
+    "model": "Panamera",
+    "modelYear": 2010,
+    "country": "DE",
+    "topSpeed": 162,
+    "0to60": 6.0,
+    "handling": 80,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1805,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 65.21,
+    "ola": 70,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1146192409831686306/Panamera970.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1146192668980957205/970.png",
+
+"333TopSpeed": 165,
+"3330to60": 5.7,
+"333Handling": 83,
+
+"666TopSpeed": 168,
+"6660to60": 5.4,
+"666Handling": 85,
+
+"699TopSpeed": 168,
+"6990to60": 5.1,
+"699Handling": 89,
+
+"969TopSpeed": 172,
+"9690to60": 5.4,
+"969Handling": 89,
+
+"996TopSpeed": 172,
+"9960to60": 5.1,
+"996Handling": 85,
+    "creator": "Bnuuy"
+}

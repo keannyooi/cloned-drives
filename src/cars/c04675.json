@@ -1,0 +1,49 @@
+{
+    "rq": 46,
+    "make": "Porsche",
+    "model": "911 Carrera 3.2 Cabriolet",
+    "modelYear": 1983,
+    "country": "DE",
+    "topSpeed": 146,
+    "0to60": 6.1,
+    "handling": 74,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Style Icon","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1210,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 65.02,
+    "ola": 76.39,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1145456115191123968/Porsche911Carrera3.2Cab1983.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1145456280614490254/Porsche911Carrera3.2Cabrio.png",
+
+"333TopSpeed": 150,
+"3330to60": 5.8,
+"333Handling": 76,
+
+"666TopSpeed": 153,
+"6660to60": 5.5,
+"666Handling": 79,
+
+"699TopSpeed": 153,
+"6990to60": 5.2,
+"699Handling": 82,
+
+"969TopSpeed": 157,
+"9690to60": 5.5,
+"969Handling": 82,
+
+"996TopSpeed": 157,
+"9960to60": 5.2,
+"996Handling": 79,
+    "creator": "Bnuuy"
+}

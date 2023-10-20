@@ -1,0 +1,49 @@
+{
+    "rq": 69,
+    "make": "Porsche",
+    "model": "911 Targa 4S",
+    "modelYear": 2008,
+    "country": "DE",
+    "topSpeed": 185,
+    "0to60": 4.6,
+    "handling": 86,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1540,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 72.6,
+    "ola": 77.77,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1152643042801635388/997.2911Targa4S.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1152643146199597157/997.2targa4S.png",
+
+"333TopSpeed": 188,
+"3330to60": 4.4,
+"333Handling": 89,
+
+"666TopSpeed": 191,
+"6660to60": 4.1,
+"666Handling": 92,
+
+"699TopSpeed": 191,
+"6990to60": 3.9,
+"699Handling": 95,
+
+"969TopSpeed": 193,
+"9690to60": 4.1,
+"969Handling": 95,
+
+"996TopSpeed": 193,
+"9960to60": 3.9,
+"996Handling": 92,
+    "creator": "Bnuuy"
+}

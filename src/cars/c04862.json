@@ -1,0 +1,49 @@
+{
+    "rq": 4,
+    "make": "Porsche",
+    "model": "356 1100",
+    "modelYear": 1950,
+    "country": "DE",
+    "topSpeed": 87,
+    "0to60": 21.0,
+    "handling": 55,
+    "driveType": "RWD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 760,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 12.3,
+    "ola": 65.47,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1154046597592780851/9561100.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1154046645676290098/3561100.png",
+
+"333TopSpeed": 93,
+"3330to60": 19.9,
+"333Handling": 57,
+
+"666TopSpeed": 99,
+"6660to60": 18.9,
+"666Handling": 59,
+
+"699TopSpeed": 99,
+"6990to60": 17.8,
+"699Handling": 61,
+
+"969TopSpeed": 105,
+"9690to60": 18.9,
+"969Handling": 61,
+
+"996TopSpeed": 105,
+"9960to60": 17.8,
+"996Handling": 59,
+    "creator": "Bnuuy"
+}

@@ -1,0 +1,49 @@
+{
+    "rq": 85,
+    "make": "Porsche",
+    "model": "911 Turbo Cabriolet",
+    "modelYear": 2013,
+    "country": "DE",
+    "topSpeed": 196,
+    "0to60": 3.3,
+    "handling": 89,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite", "Supercar","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1665,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 84.21,
+    "ola": 88.88,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1154059732676509787/991.1911TurboCab.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1154060112432988270/991.1911Turbocab.png",
+
+"333TopSpeed": 199,
+"3330to60": 3.1,
+"333Handling": 92,
+
+"666TopSpeed": 201,
+"6660to60": 3,
+"666Handling": 95,
+
+"699TopSpeed": 201,
+"6990to60": 2.8,
+"699Handling": 99,
+
+"969TopSpeed": 204,
+"9690to60": 3,
+"969Handling": 99,
+
+"996TopSpeed": 204,
+"9960to60": 2.8,
+"996Handling": 95,
+    "creator": "Bnuuy"
+}

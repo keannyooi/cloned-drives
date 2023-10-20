@@ -1,0 +1,49 @@
+{
+    "rq": 71,
+    "make": "Porsche",
+    "model": "911 Turbo Cabriolet Von Porsche Exclusive",
+    "modelYear": 1996,
+    "country": "DE",
+    "topSpeed": 174,
+    "0to60": 4.2,
+    "handling": 83,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite", "Supercar","Unique","Cloned Drives Beta: Last of"],
+    "isPrize": true,
+	
+    "weight": 1395,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 72.13,
+    "ola": 77.68,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1149307342589018212/993911TurboCabriolet.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1149307443269079182/993911TurboCabriolet.png",
+
+"333TopSpeed": 177,
+"3330to60": 4,
+"333Handling": 86,
+
+"666TopSpeed": 180,
+"6660to60": 3.8,
+"666Handling": 88,
+
+"699TopSpeed": 180,
+"6990to60": 3.6,
+"699Handling": 92,
+
+"969TopSpeed": 183,
+"9690to60": 3.8,
+"969Handling": 92,
+
+"996TopSpeed": 183,
+"9960to60": 3.6,
+"996Handling": 88,
+    "creator": "Bnuuy"
+}

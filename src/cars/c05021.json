@@ -1,0 +1,49 @@
+{
+    "rq": 91,
+    "make": "Porsche",
+    "model": "911 Turbo S",
+    "modelYear": 2013,
+    "country": "DE",
+    "topSpeed": 198,
+    "0to60": 2.9,
+    "handling": 91,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite", "Supercar","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1605,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 88.88,
+    "ola": 84.2,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1154059753861955615/991.1911TurboS.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1154060129830977536/991.1911TurboS.png",
+
+"333TopSpeed": 201,
+"3330to60": 2.8,
+"333Handling": 94,
+
+"666TopSpeed": 203,
+"6660to60": 2.6,
+"666Handling": 97,
+
+"699TopSpeed": 203,
+"6990to60": 2.5,
+"699Handling": 101,
+
+"969TopSpeed": 206,
+"9690to60": 2.6,
+"969Handling": 101,
+
+"996TopSpeed": 206,
+"9960to60": 2.5,
+"996Handling": 97,
+    "creator": "Bnuuy"
+}

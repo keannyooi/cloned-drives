@@ -1,0 +1,49 @@
+{
+    "rq": 73,
+    "make": "Aston Martin",
+    "model": "V12 Vantage S",
+    "modelYear": 2013,
+    "country": "GB",
+    "topSpeed": 205,
+    "0to60": 3.9,
+    "handling": 87,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1665,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 84.99,
+    "ola": 95.24,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1131232974222930001/V12VantageS2013.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1131233785975943250/V12VantageS2013.png",
+
+"333TopSpeed": 208,
+"3330to60": 3.7,
+"333Handling": 90,
+
+"666TopSpeed": 210,
+"6660to60": 3.5,
+"666Handling": 93,
+
+"699TopSpeed": 210,
+"6990to60": 3.3,
+"699Handling": 97,
+
+"969TopSpeed": 213,
+"9690to60": 3.5,
+"969Handling": 97,
+
+"996TopSpeed": 213,
+"9960to60": 3.3,
+"996Handling": 93,
+    "creator": "Bnuuy"
+}

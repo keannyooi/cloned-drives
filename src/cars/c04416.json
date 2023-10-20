@@ -1,0 +1,49 @@
+{
+    "rq": 70,
+    "make": "Aston Martin",
+    "model": "Rapide E Pre-Production Prototype",
+    "modelYear": 2019,
+    "country": "GB",
+    "topSpeed": 155,
+    "0to60": 3.9,
+    "handling": 87,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Motorsport","Unique","Concept","Eco-Friendly","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 2140,
+    "gc": "Low",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Electric",
+    "mra": 92.85,
+    "ola": 87.17,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1118544576219709480/RapideEProto.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1118545030160846909/RapidEProto.png",
+
+"333TopSpeed": 158,
+"3330to60": 3.7,
+"333Handling": 90,
+
+"666TopSpeed": 162,
+"6660to60": 3.5,
+"666Handling": 93,
+
+"699TopSpeed": 162,
+"6990to60": 3.3,
+"699Handling": 97,
+
+"969TopSpeed": 165,
+"9690to60": 3.5,
+"969Handling": 97,
+
+"996TopSpeed": 165,
+"9960to60": 3.3,
+"996Handling": 93,
+    "creator": "Bnuuy"
+}

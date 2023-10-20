@@ -1,0 +1,49 @@
+{
+    "rq": 46,
+    "make": "Porsche",
+    "model": "911 America Roadster",
+    "modelYear": 1993,
+    "country": "DE",
+    "topSpeed": 162,
+    "0to60": 5.7,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1320,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 62.25,
+    "ola": 69.88,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1146442696160972820/964911AmericaRoadster.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1146442814863970374/964911AmericaRoadster.png",
+
+"333TopSpeed": 165,
+"3330to60": 5.4,
+"333Handling": 80,
+
+"666TopSpeed": 168,
+"6660to60": 5.1,
+"666Handling": 82,
+
+"699TopSpeed": 168,
+"6990to60": 4.8,
+"699Handling": 85,
+
+"969TopSpeed": 172,
+"9690to60": 5.1,
+"969Handling": 85,
+
+"996TopSpeed": 172,
+"9960to60": 4.8,
+"996Handling": 82,
+    "creator": "Bnuuy"
+}

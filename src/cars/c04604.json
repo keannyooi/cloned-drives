@@ -1,0 +1,50 @@
+{
+    "rq": 33,
+    "make": "Skoda",
+    "model": "Yeti 1.4 TSI Style",
+    "modelYear": 2013,
+    "country": "CZ",
+    "topSpeed": 113,
+    "0to60": 10.3,
+    "handling": 71,
+    "driveType": "FWD",
+    "tyreType": "All-Surface",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 1410,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "SUV",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 41.53,
+    "ola": 64.07,
+    "description": "Yeti's facelift gained some tech but lost the cute looks of original.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1144009552883367976/D.SkodaYeti14TSI.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1144011682025312406/yeti14.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 118,
+    "3330to60": 9.8,
+    "333Handling": 73,
+
+    "666TopSpeed": 122,
+    "6660to60": 9.3, 
+    "666Handling": 76,
+
+    "996TopSpeed": 127,
+    "9960to60": 8.8,
+    "996Handling": 76,
+
+    "969TopSpeed": 123,
+    "9690to60": 9.3,
+    "969Handling": 79,
+
+    "699TopSpeed": 122,
+    "6990to60": 8.8,
+    "699Handling": 79
+}

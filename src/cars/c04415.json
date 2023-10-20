@@ -1,0 +1,49 @@
+{
+    "rq": 61,
+    "make": "Aston Martin",
+    "model": "Rapide 24h ADAC",
+    "modelYear": 2010,
+    "country": "GB",
+    "topSpeed": 189,
+    "0to60": 4.9,
+    "handling": 88,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["The Midlands Cruise","Motorsport","Unique","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1870,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 81.32,
+    "ola": 79.05,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1118544233972899860/RapideRacecar.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1118544973529370634/RapideRacecar.png",
+
+"333TopSpeed": 192,
+"3330to60": 4.7,
+"333Handling": 91,
+
+"666TopSpeed": 195,
+"6660to60": 4.4,
+"666Handling": 94,
+
+"699TopSpeed": 195,
+"6990to60": 4.2,
+"699Handling": 98,
+
+"969TopSpeed": 197,
+"9690to60": 4.4,
+"969Handling": 98,
+
+"996TopSpeed": 197,
+"9960to60": 4.2,
+"996Handling": 94,
+    "creator": "Bnuuy"
+}

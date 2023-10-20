@@ -1,0 +1,49 @@
+{
+    "rq": 60,
+    "make": "Aston Martin",
+    "model": "V12 Vanquish Sports Dynamic Pack",
+    "modelYear": 2003,
+    "country": "GB",
+    "topSpeed": 192,
+    "0to60": 4.7,
+    "handling": 80,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["The Midlands Cruise","Grand Tourer","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1800,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 81.03,
+    "ola": 87.23,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1120014323100680222/V12VanquishSDP.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1120014750651269250/V12VanquishSDP.png",
+
+"333TopSpeed": 195,
+"3330to60": 4.5,
+"333Handling": 83,
+
+"666TopSpeed": 197,
+"6660to60": 4.2,
+"666Handling": 85,
+
+"699TopSpeed": 197,
+"6990to60": 4,
+"699Handling": 89,
+
+"969TopSpeed": 200,
+"9690to60": 4.2,
+"969Handling": 89,
+
+"996TopSpeed": 200,
+"9960to60": 4,
+"996Handling": 85,
+    "creator": "Bnuuy"
+}

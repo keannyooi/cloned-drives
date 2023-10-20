@@ -1,0 +1,49 @@
+{
+    "rq": 45,
+    "make": "Porsche",
+    "model": "911 Carrera 2 Cabriolet",
+    "modelYear": 1989,
+    "country": "DE",
+    "topSpeed": 160,
+    "0to60": 5.8,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1375,
+    "gc": "Low",
+    "seatCount": 4,
+    "bodyStyle": "Convertible",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 67.25,
+    "ola": 72.25,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1146442653043523695/964911Carrera2Cabriolet.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1146442777685659790/964911Carrera2Cabriolet.png",
+
+"333TopSpeed": 163,
+"3330to60": 5.5,
+"333Handling": 80,
+
+"666TopSpeed": 167,
+"6660to60": 5.2,
+"666Handling": 82,
+
+"699TopSpeed": 167,
+"6990to60": 4.9,
+"699Handling": 85,
+
+"969TopSpeed": 170,
+"9690to60": 5.2,
+"969Handling": 85,
+
+"996TopSpeed": 170,
+"9960to60": 4.9,
+"996Handling": 82,
+    "creator": "Bnuuy"
+}

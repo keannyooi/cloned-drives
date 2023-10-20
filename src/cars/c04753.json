@@ -1,0 +1,49 @@
+{
+    "rq": 66,
+    "make": "Porsche",
+    "model": "911 Turbo 3.6 IMSA Supercar",
+    "modelYear": 1993,
+    "country": "DE",
+    "topSpeed": 174,
+    "0to60": 4.4,
+    "handling": 88,
+    "driveType": "RWD",
+    "tyreType": "Slick",
+    "tags": ["Eurotech Elite","Motorsport","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1431,
+    "gc": "Low",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 88.88,
+    "ola": 81.5,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1146820312613269585/964911TurboIMSASupercar.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1146820363716665415/964911TurboIMSAsupercar.png",
+
+"333TopSpeed": 177,
+"3330to60": 4.2,
+"333Handling": 91,
+
+"666TopSpeed": 180,
+"6660to60": 4,
+"666Handling": 94,
+
+"699TopSpeed": 180,
+"6990to60": 3.7,
+"699Handling": 98,
+
+"969TopSpeed": 183,
+"9690to60": 4,
+"969Handling": 98,
+
+"996TopSpeed": 183,
+"9960to60": 3.7,
+"996Handling": 94,
+    "creator": "Bnuuy"
+}

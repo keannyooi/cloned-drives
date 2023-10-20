@@ -1,0 +1,49 @@
+{
+    "rq": 65,
+    "make": "Porsche",
+    "model": "911 Turbo 3.3 SE Flachbau",
+    "modelYear": 1984,
+    "country": "DE",
+    "topSpeed": 175,
+    "0to60": 4.7,
+    "handling": 79,
+    "driveType": "RWD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Track Day","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 1335,
+    "gc": "Medium",
+    "seatCount": 4,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 80,
+    "ola": 82.5,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1145447626305716255/Porsche911Turbo3.3SEFlat1984.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1145447998642475028/Porsche911Turbo3.3SEFlat1984.png",
+
+"333TopSpeed": 178,
+"3330to60": 4.5,
+"333Handling": 82,
+
+"666TopSpeed": 181,
+"6660to60": 4.2,
+"666Handling": 84,
+
+"699TopSpeed": 181,
+"6990to60": 4,
+"699Handling": 88,
+
+"969TopSpeed": 184,
+"9690to60": 4.2,
+"969Handling": 88,
+
+"996TopSpeed": 184,
+"9960to60": 4,
+"996Handling": 84,
+    "creator": "Bnuuy"
+}

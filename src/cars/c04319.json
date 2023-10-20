@@ -1,0 +1,53 @@
+{
+    "rq": 26,
+    "make": "Nissan",
+    "model": "Patrol ST Cab-Chassis",
+    "modelYear": 2007,
+    "country": "JP",
+    "topSpeed": 99,
+    "0to60": 16.4,
+    "handling": 60,
+    "driveType": "4WD",
+    "tyreType": "Off-Road",
+    "tags": ["The Amplification of Asia","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 2123,
+    "gc": "High",
+    "seatCount":2,
+    "bodyStyle": "Pickup",
+    "tcs": false,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Diesel",
+    "mra": 20.00,
+    "ola": 82.35,
+    "description": "Bare bones utility verion of the patrol. the series 4 GU ute launched in 2007 for the australian market and remained virtually unchanged until its discontinuation in 2016. The series 4 facelifted utes had 3 litre 4 banger in place of the old td42 inline 6, which made slightly more power at the cost of reliability.",
+
+
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1112768610851627049/PatrolCabChassis.png",
+    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1112768696348327946/Patrol_Cab_Chassis.png",
+    "creator": "NissanLover89",
+
+    "333TopSpeed": 104,
+    "3330to60": 15.6,
+    "333Handling": 62,
+    
+    "666TopSpeed": 110,
+    "6660to60": 14.8,
+    "666Handling": 64,
+    
+    "699TopSpeed": 110,
+    "6990to60": 13.9,
+    "699Handling": 67,
+    
+    "969TopSpeed": 115,
+    "9690to60": 14.8,
+    "969Handling": 67,
+    
+    "996TopSpeed": 115,
+    "9960to60": 13.9,
+    "996Handling": 64
+    
+}

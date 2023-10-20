@@ -1,0 +1,49 @@
+{
+    "rq": 80,
+    "make": "Porsche",
+    "model": "Panamera 4S Executive",
+    "modelYear": 2020,
+    "country": "DE",
+    "topSpeed": 183,
+    "0to60": 4.2,
+    "handling": 89,
+    "driveType": "4WD",
+    "tyreType": "Performance",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 2020,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Sedan",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 67.15,
+    "ola": 76.2,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1152600619547377714/971EBPanamera4S.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1152600771209212036/971EBPanamera4S.png",
+
+"333TopSpeed": 186,
+"3330to60": 4,
+"333Handling": 92,
+
+"666TopSpeed": 189,
+"6660to60": 3.8,
+"666Handling": 95,
+
+"699TopSpeed": 189,
+"6990to60": 3.6,
+"699Handling": 99,
+
+"969TopSpeed": 192,
+"9690to60": 3.8,
+"969Handling": 99,
+
+"996TopSpeed": 192,
+"9960to60": 3.6,
+"996Handling": 95,
+    "creator": "Bnuuy"
+}

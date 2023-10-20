@@ -1,0 +1,49 @@
+{
+    "rq": 81,
+    "make": "Porsche",
+    "model": "911 SC Safari Rally",
+    "modelYear": 1978,
+    "country": "DE",
+    "topSpeed": 140,
+    "0to60": 5.0,
+    "handling": 77,
+    "driveType": "RWD",
+    "tyreType": "Off-Road",
+    "tags": ["Eurotech Elite","Unique","Motorsport","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+	
+    "weight": 960,
+    "gc": "High",
+    "seatCount": 2,
+    "bodyStyle": "Coupe",
+    "tcs": false,
+    "abs": false,
+    "enginePos": "Rear",
+    "fuelType": "Petrol",
+    "mra": 60,
+    "ola": 72.49,
+    "description": "",
+    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1146165867932041226/Porsche911SCSafariRally1978.png",
+	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1146166111998582815/Porsche911SCSafariRally1978.png",
+
+"333TopSpeed": 144,
+"3330to60": 4.8,
+"333Handling": 80,
+
+"666TopSpeed": 147,
+"6660to60": 4.5,
+"666Handling": 82,
+
+"699TopSpeed": 147,
+"6990to60": 4.3,
+"699Handling": 85,
+
+"969TopSpeed": 151,
+"9690to60": 4.5,
+"969Handling": 85,
+
+"996TopSpeed": 151,
+"9960to60": 4.3,
+"996Handling": 82,
+    "creator": "Bnuuy"
+}

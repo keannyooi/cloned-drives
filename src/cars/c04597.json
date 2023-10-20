@@ -1,0 +1,50 @@
+{
+    "rq": 38,
+    "make": "Skoda",
+    "model": "Octavia Combi 2.0 FSI 4x4",
+    "modelYear": 2005,
+    "country": "CZ",
+    "topSpeed": 126,
+    "0to60": 9.2,
+    "handling": 73,
+    "driveType": "4WD",
+    "tyreType": "Standard",
+    "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
+    "isPrize": false,
+
+
+    "weight": 1430,
+    "gc": "Medium",
+    "seatCount": 5,
+    "bodyStyle": "Wagon",
+    "tcs": true,
+    "abs": true,
+    "enginePos": "Front",
+    "fuelType": "Petrol",
+    "mra": 50.94,
+    "ola": 67.39,
+    "description": "Four by four is eight.",
+    "card": "https://media.discordapp.net/attachments/1077292374608326656/1142890704658509885/D.SkodaOctaviaCombi20F.png",
+    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1142895055078686770/octavia4x4.png",
+    "creator": "Connor",
+
+    "333TopSpeed": 130,
+    "3330to60": 8.7,
+    "333Handling": 75,
+
+    "666TopSpeed": 134,
+    "6660to60": 8.3, 
+    "666Handling": 78,
+
+    "996TopSpeed": 138,
+    "9960to60": 7.8,
+    "996Handling": 78,
+
+    "969TopSpeed": 138,
+    "9690to60": 8.3,
+    "969Handling": 81,
+
+    "699TopSpeed": 134,
+    "6990to60": 7.8,
+    "699Handling": 81
+}
