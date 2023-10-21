@@ -60,17 +60,25 @@ function filterCheck(args) {
                         }
                     }
                 }
-                else if (key === "modelYear") {
-                    if (value.start && value.end) {
-                        // Implement "or" logic for modelYear range
-                        if (!(bmReference[key] >= value.start && bmReference[key] <= value.end)) {
-                            passed = false;
-                        }
-                    } else {
-                        // Handle invalid filter value here
-                    }
+               else if (key === "modelYear" || key === "cr") {
+        if (value.start && value.end) {
+            // Implement "or" logic for modelYear or rq range
+            if (key === "modelYear") {
+                if (!(bmReference[key] >= value.start && bmReference[key] <= value.end)) {
+                    passed = false;
                 }
-                break;
+            }
+            if (key === "cr") {
+                if (!(bmReference[key] >= value.start && bmReference[key] <= value.end)) {
+                    passed = false;
+                }
+            }
+        } else {
+            // Handle invalid filter value here
+            throw new Error("Invalid filter for " + key + ". Please provide valid start and end values.");
+        }
+    }
+    break;
             case "string":
                 if (key === "search") {
                     if (!carNameGen({ currentCar: bmReference }).toLowerCase().includes(value.toLowerCase())) {
