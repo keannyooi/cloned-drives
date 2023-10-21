@@ -60,7 +60,7 @@ function filterCheck(args) {
                         }
                     }
                 }
-               else if (key === "modelYear" || key === "cr") {
+               else if (key === "modelYear" || key === "rq") {
         if (value.start && value.end) {
             // Implement "or" logic for modelYear or rq range
             if (key === "modelYear") {
@@ -68,7 +68,7 @@ function filterCheck(args) {
                     passed = false;
                 }
             }
-            if (key === "cr") {
+            if (key === "rq") {
                 if (!(bmReference[key] >= value.start && bmReference[key] <= value.end)) {
                     passed = false;
                 }
