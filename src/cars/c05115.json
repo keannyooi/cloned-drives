@@ -1,7 +1,7 @@
 {
     "rq": 200,
     "make": ["MF Ghost","Toyota"],
-    "model": "GT86 Stage 1",
+    "model": "GT86 Stage 1 (BOSS)",
     "modelYear": 2023,
     "country": "JP",
     "topSpeed": 136,
@@ -10,7 +10,7 @@
     "driveType": "RWD",
     "tyreType": "Performance",
     "tags": ["Silver Screen"],
-    "isPrize": false,
+    "isPrize": true,
     "weight": 1050,
     "gc": "Low",
     "seatCount": 2,
