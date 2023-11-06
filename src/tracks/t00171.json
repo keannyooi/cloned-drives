@@ -1,0 +1,18 @@
+{
+	"trackName": "Odawara Pikes Peak Sector 4 (MF Ghost)",
+	"weather": "Sunny",
+	"surface": "Asphalt",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://www.autoindustriya.com/images/posts/post21434.jpg",
+	"map": "https://static.wikia.nocookie.net/mfghost/images/3/34/OdawaraPikesPeakMap.png/revision/latest?cb=20220225133358",
+	
+	"specsDistr": {
+		"topSpeed": 70,
+		"0to60": 25,
+		"handling": 20,
+		"weight": 0,
+		"mra": 70,
+		"ola": 0
+	}
+}

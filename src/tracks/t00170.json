@@ -1,0 +1,18 @@
+{
+	"trackName": "Odawara Pikes Peak Sector 1 (MF Ghost)",
+	"weather": "Sunny",
+	"surface": "Asphalt",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://cdn.discordapp.com/attachments/858073173303754822/1170478801499721728/3e56eb57390cfae2259f997c238eadc7e42dba30ba9ebf6625eccbe88354ccc9.png?ex=65593054&is=6546bb54&hm=bd7d7453f540173999ce34009d914519b403687c7b0ef5674098df507ac6b943&",
+	"map": "https://static.wikia.nocookie.net/mfghost/images/3/34/OdawaraPikesPeakMap.png/revision/latest?cb=20220225133358",
+	
+	"specsDistr": {
+		"topSpeed": 50,
+		"0to60": 10,
+		"handling": 50,
+		"weight": 0,
+		"mra": 30,
+		"ola": 5
+	}
+}

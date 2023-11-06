@@ -1,0 +1,18 @@
+{
+	"trackName": "Odawara Pikes Peak Sector 3 (MF Ghost)",
+	"weather": "Sunny",
+	"surface": "Asphalt",
+	"speedbumps": 0,
+	"humps": 0,
+	"background": "https://staticg.sportskeeda.com/editor/2023/10/47036-16970863236424-1920.jpg",
+	"map": "https://static.wikia.nocookie.net/mfghost/images/3/34/OdawaraPikesPeakMap.png/revision/latest?cb=20220225133358",
+	
+	"specsDistr": {
+		"topSpeed": 0,
+		"0to60": 0,
+		"handling": 100,
+		"weight": 25,
+		"mra": 0,
+		"ola": 30
+	}
+}
