@@ -1,5 +1,6 @@
 {
-    "rq": 51,
+    "carID": "c01587",
+    "cr": 510,
     "make": "Lexus",
     "model": "LX 570",
     "modelYear": 2015,
@@ -24,8 +25,7 @@
     "mra": 65.42,
     "ola": 65.71,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/869101198563770368/Lexus_Flexus.png",
-    "333TopSpeed": 139,
+     "333TopSpeed": 139,
     "3330to60": 6.7,
     "333Handling": 69,
     "666TopSpeed": 143,
@@ -40,6 +40,6 @@
     "699TopSpeed": 143,
     "6990to60": 6.0,
     "699Handling": 74,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1020007576718540880/Lexus_LX_570_2015.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "AK1"
 }

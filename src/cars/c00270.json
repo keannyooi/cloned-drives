@@ -1,5 +1,6 @@
 {
-    "rq": 74,
+    "carID": "c00270",
+    "cr": 740,
     "make": "Chevrolet",
     "model": "Corvette Grand Sport",
     "modelYear": 2017,
@@ -22,8 +23,7 @@
     "mra": 75,
     "ola": 92.3,
     "description": "Track oriented C7, with an uprated engine.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/934142935438614558/A.ChevyCorvetteGSC7.png",
-    "333TopSpeed": 185,
+     "333TopSpeed": 185,
     "3330to60": 3.7,
     "333Handling": 93,
     "666TopSpeed": 188,
@@ -38,6 +38,6 @@
     "699TopSpeed": 188,
     "6990to60": 3.3,
     "699Handling": 100,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995768021584986142/corvettec7.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

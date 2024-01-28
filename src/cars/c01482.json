@@ -1,5 +1,6 @@
 {
-    "rq": 83,
+    "carID": "c01482",
+    "cr": 830,
     "make": "Chevrolet",
     "model": "Corvette Z06 Convertible",
     "modelYear": 2015,
@@ -22,8 +23,7 @@
     "mra": 80,
     "ola": 100,
     "description": "Chopped off Z06 for them Cali roads.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/934140672603209760/A.ChevyCorvetteZ06ConvC7.png",
-    "333TopSpeed": 188,
+     "333TopSpeed": 188,
     "3330to60": 3.0,
     "333Handling": 96,
     "666TopSpeed": 191,
@@ -38,6 +38,6 @@
     "699TopSpeed": 191,
     "6990to60": 2.7,
     "699Handling": 103,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995760172775510026/corvettec7.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

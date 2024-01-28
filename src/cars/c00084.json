@@ -1,5 +1,6 @@
 {
-    "rq": 70,
+    "carID": "c00084",
+    "cr": 700,
     "make": "Aston Martin",
     "model": "Rapide AMR",
     "modelYear": 2018,
@@ -22,8 +23,7 @@
     "mra": 91.3,
     "ola": 85.71,
     "description": "The fastest Rapide from Aston.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/849757498344865822/RapideAMR.png",
-    "333TopSpeed": 208,
+     "333TopSpeed": 208,
     "3330to60": 4.0,
     "333Handling": 90,
     "666TopSpeed": 210,
@@ -38,6 +38,6 @@
     "699TopSpeed": 210,
     "6990to60": 3.6,
     "699Handling": 97,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995979648716505199/rapideamr.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

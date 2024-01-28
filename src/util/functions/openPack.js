@@ -10,7 +10,7 @@ const sortCars = require("./sortCars.js");
 async function openPack(args) {
     const { message, currentPack, currentMessage, test } = args;
     const cardFilter = currentPack["filter"];
-    let rand, check, rqStart, rqEnd, pulledCards = "";
+    let rand, check, crStart, crEnd, pulledCards = "";
     let currentCard = require(`../../cars/${carFiles[Math.floor(Math.random() * carFiles.length)]}`);
     let addedCars = [];
 
@@ -21,33 +21,37 @@ async function openPack(args) {
             check += currentPack["packSequence"][Math.floor(i / currentPack["repetition"])][rarity];
             if (check > rand) {
                 switch (rarity) {
+                    case "standard":
+                        crStart = 1;
+                        crEnd = 99;
+                        break;
                     case "common":
-                        rqStart = 1;
-                        rqEnd = 19;
+                        crStart = 100;
+                        crEnd = 249;
                         break;
                     case "uncommon":
-                        rqStart = 20;
-                        rqEnd = 29;
+                        crStart = 250;
+                        crEnd = 399;
                         break;
                     case "rare":
-                        rqStart = 30;
-                        rqEnd = 39;
-                        break;
-                    case "superRare":
-                        rqStart = 40;
-                        rqEnd = 49;
-                        break;
-                    case "ultraRare":
-                        rqStart = 50;
-                        rqEnd = 64;
+                        crStart = 400;
+                        crEnd = 549;
                         break;
                     case "epic":
-                        rqStart = 65;
-                        rqEnd = 79;
+                        crStart = 550;
+                        crEnd = 699;
+                        break;
+                    case "exotic":
+                        crStart = 700;
+                        crEnd = 849;
                         break;
                     case "legendary":
-                        rqStart = 80;
-                        rqEnd = 999;
+                        crStart = 850;
+                        crEnd = 999;
+                        break;
+                    case "mystic":
+                        crStart = 1000;
+                        crEnd = 9999;
                         break;
                     default:
                         break;
@@ -58,7 +62,7 @@ async function openPack(args) {
 
         let carFile = carFiles[Math.floor(Math.random() * carFiles.length)], timeoutCounter = 0;
         currentCard = require(`../../cars/${carFile}`);
-        while ((currentCard["rq"] < rqStart || currentCard["rq"] > rqEnd || filterCard(carFile, cardFilter) === false) && timeoutCounter < 50000) {
+        while ((currentCard["cr"] < crStart || currentCard["cr"] > crEnd || filterCard(carFile, cardFilter) === false) && timeoutCounter < 50000) {
             carFile = carFiles[Math.floor(Math.random() * carFiles.length)];
             currentCard = require(`../../cars/${carFile}`);
             timeoutCounter++;
@@ -77,14 +81,14 @@ async function openPack(args) {
         addedCars.push({ carID: carFile.slice(0, 6), upgrade: "000"});
     }
 
-    addedCars = sortCars(addedCars, "rq", "ascending");
+    addedCars = sortCars(addedCars, "cr", "ascending");
 
     for (let i = 0; i < addedCars.length; i++) {
         let currentCar = require(`../../cars/${addedCars[i].carID}.json`);
         pulledCards += carNameGen({ currentCar, rarity: true });
 
         if ((i + 1) % 5 !== 0) {
-            pulledCards += ` **[[Card]](${currentCar["card"]})**\n`;
+            pulledCards += ` **[[Card]](${currentCar["racehud"]})**\n`;
         }
         else {
             const packScreen = new InfoMessage({
@@ -92,7 +96,7 @@ async function openPack(args) {
                 title: `Opening ${currentPack["packName"]}...`,
                 desc: "Click on the image to see the cards better.",
                 author: message.author,
-                image: currentCar["card"],
+                image: currentCar["racehud"],
                 thumbnail: currentPack["pack"],
                 fields: [{ name: "Cards Pulled", value: pulledCards }],
                 footer: test ? "This is a test pack, meaning that these cars won't be added into your garage and you won't be charged with money." : null

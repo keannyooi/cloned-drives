@@ -1,5 +1,6 @@
 {
-    "rq": 66,
+    "carID": "c00098",
+    "cr": 660,
     "make": "Aston Martin",
     "model": "Virage",
     "modelYear": 2011,
@@ -22,8 +23,7 @@
     "mra": 78.57,
     "ola": 81.82,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/849757665793409074/Virage.png",
-    "333TopSpeed": 189,
+     "333TopSpeed": 189,
     "3330to60": 4.2,
     "333Handling": 88,
     "666TopSpeed": 192,
@@ -38,6 +38,6 @@
     "699TopSpeed": 192,
     "6990to60": 3.7,
     "699Handling": 94,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995979965927542844/virage11.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

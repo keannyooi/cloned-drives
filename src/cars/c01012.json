@@ -1,5 +1,6 @@
 {
-    "rq": 20,
+    "carID": "c01012",
+    "cr": 200,
     "make": "Opel",
     "model": "Manta TE 2800",
     "modelYear": 1974,
@@ -22,8 +23,7 @@
     "mra": 53.55,
     "ola": 79.52,
     "description": "TE 2800 was a totally different project that Opel refused to endorse, made by Belgian company called Transeurop Engineering. It was powered by a 2.8 litre engine from the Commodore GS/E that produced 142 PS. Only 79 cars were made at the end.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/857524584198176768/E.png",
-    "333TopSpeed": 129,
+     "333TopSpeed": 129,
     "3330to60": 7.9,
     "333Handling": 70,
     "666TopSpeed": 133,
@@ -38,6 +38,6 @@
     "699TopSpeed": 133,
     "6990to60": 7.1,
     "699Handling": 75,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1035900467231858698/manta_te2800.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

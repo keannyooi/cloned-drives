@@ -1,5 +1,6 @@
 {
-    "rq": 38,
+    "carID": "c01376",
+    "cr": 380,
     "make": "Volkswagen",
     "model": "ID.4 1st Pro Performance",
     "modelYear": 2021,
@@ -24,8 +25,7 @@
     "mra": 41.09,
     "ola": 68.27,
     "description": "The electric car for the people. Apparently. Card by Andu",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1106749553174126672/ID4Updated.png",
-    "333TopSpeed": 105,
+     "333TopSpeed": 105,
     "3330to60": 7.2,
     "333Handling": 79,
     "666TopSpeed": 110,
@@ -40,6 +40,6 @@
     "699TopSpeed": 110,
     "6990to60": 6.5,
     "699Handling": 84,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1025345519293300756/ID4.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": ""
 }

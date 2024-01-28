@@ -1,5 +1,6 @@
 {
-    "rq": 40,
+    "carID": "c00975",
+    "cr": 400,
     "make": "Opel",
     "model": "Astra OPC",
     "modelYear": 2006,
@@ -24,8 +25,7 @@
     "mra": 74.71,
     "ola": 89.23,
     "description": "Bloody fast, innit?",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/842020668684894208/C.OpelAstraOPC.png",
-    "333TopSpeed": 152,
+     "333TopSpeed": 152,
     "3330to60": 6.2,
     "333Handling": 82,
     "666TopSpeed": 156,
@@ -40,6 +40,6 @@
     "699TopSpeed": 156,
     "6990to60": 5.5,
     "699Handling": 88,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1036162934461710406/astra_opc_old.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

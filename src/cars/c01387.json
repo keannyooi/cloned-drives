@@ -1,5 +1,6 @@
 {
-    "rq": 23,
+    "carID": "c01387",
+    "cr": 230,
     "make": "Volkswagen",
     "model": "Scirocco 1500 TS",
     "modelYear": 1974,
@@ -22,8 +23,7 @@
     "mra": 20.53,
     "ola": 55.35,
     "description": "A Coupe for the people. Card by Andu",
-    "card": "https://cdn.discordapp.com/attachments/812062652917481533/1127749284863942666/Scirocco1500TS.png",
-   
+    
     "333TopSpeed": 105,
     "3330to60": 11.3,
     "333Handling": 69,
@@ -39,6 +39,6 @@
     "996TopSpeed": 116,
     "9960to60": 10.1,
     "996Handling": 71,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1140039530003583159/1500TS.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Andu"
 }

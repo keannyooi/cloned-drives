@@ -1,5 +1,6 @@
 {
-    "rq": 68,
+    "carID": "c01150",
+    "cr": 680,
     "make": "Rolls-Royce",
     "model": "Ghost",
     "modelYear": 2009,
@@ -22,8 +23,7 @@
     "mra": 75.86,
     "ola": 86.36,
     "description": "Drift limo :how:.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/844629934432452629/rollsbutGB.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 4.4,
     "333Handling": 79,
     "666TopSpeed": 162,
@@ -38,6 +38,6 @@
     "699TopSpeed": 162,
     "6990to60": 3.9,
     "699Handling": 84,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997572302264881192/Ghost10.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 41,
+    "carID": "c00229",
+    "cr": 410,
     "make": "Buick",
     "model": "Encore GX ST",
     "modelYear": 2021,
@@ -22,8 +23,7 @@
     "mra": 42.47,
     "ola": 60.22,
     "description": "Just a Buick Crossover. Nothing too encoring about it.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/837130457865912372/image0.jpg",
-    "333TopSpeed": 122,
+     "333TopSpeed": 122,
     "3330to60": 8.8,
     "333Handling": 76,
     "666TopSpeed": 127,
@@ -38,6 +38,6 @@
     "699TopSpeed": 127,
     "6990to60": 7.9,
     "699Handling": 82,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095103596686741564/c00229.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

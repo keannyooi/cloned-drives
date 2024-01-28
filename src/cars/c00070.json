@@ -1,5 +1,6 @@
 {
-    "rq": 48,
+    "carID": "c00070",
+    "cr": 480,
     "make": "Aston Martin",
     "model": "DB7 i6 GT Competition Prototype",
     "modelYear": 1995,
@@ -22,8 +23,7 @@
     "mra": 64.71,
     "ola": 80,
     "description": "A very confusing prototype considering the V600 was around.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/855242501572132874/db7comp.png",
-    "333TopSpeed": 163,
+     "333TopSpeed": 163,
     "3330to60": 5.2,
     "333Handling": 81,
     "666TopSpeed": 167,
@@ -38,6 +38,6 @@
     "699TopSpeed": 167,
     "6990to60": 4.7,
     "699Handling": 87,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995977700135149638/db7i6gt.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

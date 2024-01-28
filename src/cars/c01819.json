@@ -1,5 +1,6 @@
 {
-    "rq": 3,
+    "carID": "c01819",
+    "cr": 30,
     "make": ["Prince","Nissan"],
     "model": "Skyline 1500 ALSI-2",
     "modelYear": 1959,
@@ -22,8 +23,7 @@
     "mra": 1.99,
     "ola": 48.33,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/968471094535290890/Skyline1500alsi2.png",
-    "333TopSpeed": 87,
+     "333TopSpeed": 87,
     "3330to60": 22.8,
     "333Handling": 52,
     "666TopSpeed": 94,
@@ -38,6 +38,6 @@
     "699TopSpeed": 94,
     "6990to60": 20.4,
     "699Handling": 56,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996027214942457856/skyline1500ALSI2.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

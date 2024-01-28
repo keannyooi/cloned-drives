@@ -1,5 +1,6 @@
 {
-    "rq": 51,
+    "carID": "c00736",
+    "cr": 510,
     "make": "Lotus",
     "model": "Elise S",
     "modelYear": 2008,
@@ -24,8 +25,7 @@
     "mra": 48.76,
     "ola": 84.75,
     "description": "The updated version of the early Elise models, 'if it isn't broken don't fix it' was taken to the extreme.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/851899079995031592/Lotus_Elise_S.png",
-    "333TopSpeed": 132,
+     "333TopSpeed": 132,
     "3330to60": 5.6,
     "333Handling": 92,
     "666TopSpeed": 136,
@@ -40,6 +40,6 @@
     "699TopSpeed": 136,
     "6990to60": 5.0,
     "699Handling": 99,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1020008474861645904/Lotus_Elise_S_2008.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Based"
 }

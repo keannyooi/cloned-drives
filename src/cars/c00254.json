@@ -1,5 +1,6 @@
 {
-    "rq": 27,
+    "carID": "c00254",
+    "cr": 270,
     "make": "Chevrolet",
     "model": "Camaro SS 350",
     "modelYear": 1967,
@@ -22,8 +23,7 @@
     "mra": 51.32,
     "ola": 81.32,
     "description": "The birth of another muscle car icon.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/821756321556201513/cate-test.png",
-    "333TopSpeed": 120,
+     "333TopSpeed": 120,
     "3330to60": 7.4,
     "333Handling": 70,
     "666TopSpeed": 124,
@@ -38,6 +38,6 @@
     "699TopSpeed": 124,
     "6990to60": 6.6,
     "699Handling": 75,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1004761500939989022/Chevrolet-Camaro-SS-350.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Johnny"
 }

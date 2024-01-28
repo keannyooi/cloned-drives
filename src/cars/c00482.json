@@ -1,5 +1,6 @@
 {
-    "rq": 39,
+    "carID": "c00482",
+    "cr": 390,
     "make": "Ford",
     "model": "Racing Puma",
     "modelYear": 2000,
@@ -24,8 +25,7 @@
     "mra": 57.8,
     "ola": 74.46,
     "description": "A sporty little puma with a limited run of 500 copies.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/847437954417819668/CD_Ford_Racing_Puma.png",
-    "333TopSpeed": 129,
+     "333TopSpeed": 129,
     "3330to60": 7.3,
     "333Handling": 82,
     "666TopSpeed": 133,
@@ -40,6 +40,6 @@
     "699TopSpeed": 133,
     "6990to60": 6.5,
     "699Handling": 88,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1023307570938646578/Ford_Racing_Puma.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Exist"
 }

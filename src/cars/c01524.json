@@ -1,5 +1,6 @@
 {
-    "rq": 9,
+    "carID": "c01524",
+    "cr": 90,
     "make": "Daihatsu",
     "model": "Copen 0.6 Turbo",
     "modelYear": 2002,
@@ -25,8 +26,7 @@
     "mra": 21.5,
     "ola": 57.63,
     "description": "The small manufacturer's proud kei car gem not only perfect in tokyo, but also in the small british towns.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/898634325967392788/image0.png",
-    "333TopSpeed": 93,
+     "333TopSpeed": 93,
     "3330to60": 10.9,
     "333Handling": 72,
     "666TopSpeed": 99,
@@ -41,6 +41,6 @@
     "699TopSpeed": 99,
     "6990to60": 9.8,
     "699Handling": 78,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1051055561069834270/Daihatsu_Copen_0.6_2002.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

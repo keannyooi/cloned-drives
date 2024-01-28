@@ -1,5 +1,6 @@
 {
-    "rq": 20,
+    "carID": "c04214",
+    "cr": 200,
     "make": ["Novitec", "Fiat"],
     "model": "Panda",
     "modelYear": 2012,
@@ -23,8 +24,7 @@
     "mra": 37.40,
     "ola": 65.31,
     "description": "Just when you thought the Germans could do no wrong with Pandas, they pull an Italy and give this one 99hp! These damn Germans...", 
-    "card": "https://media.discordapp.net/attachments/1077292374608326656/1126928664622288916/Novitec_Panda_Fixed.png",
-	"racehud": "https://media.discordapp.net/attachments/1077293403668234340/1126917783012245504/Novitec_Panda_hud.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Fried",
 
 "333TopSpeed": 121, 

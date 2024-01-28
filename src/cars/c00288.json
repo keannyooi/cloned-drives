@@ -1,5 +1,6 @@
 {
-    "rq": 35,
+    "carID": "c00288",
+    "cr": 350,
     "make": "Chevrolet",
     "model": "Impala SS 427",
     "modelYear": 1967,
@@ -26,8 +27,7 @@
     "mra": 60.78,
     "ola": 90.32,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/825993035401003029/427Impala.png",
-    "333TopSpeed": 134,
+     "333TopSpeed": 134,
     "3330to60": 5.9,
     "333Handling": 62,
     "666TopSpeed": 138,
@@ -42,6 +42,6 @@
     "699TopSpeed": 138,
     "6990to60": 5.3,
     "699Handling": 67,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095366096644751573/c00288.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Keanny"
 }

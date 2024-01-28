@@ -1,5 +1,6 @@
 {
-    "rq": 84,
+    "carID": "c02217",
+    "cr": 840,
     "make": [
         "Range Rover",
         "Land Rover"
@@ -25,8 +26,7 @@
     "mra": 70.49,
     "ola": 76.19,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/862466607393800212/Sport_SVR_15.png",
-    "333TopSpeed": 165,
+     "333TopSpeed": 165,
     "3330to60": 4.2,
     "333Handling": 80,
     "666TopSpeed": 168,
@@ -41,6 +41,6 @@
     "699TopSpeed": 168,
     "6990to60": 3.7,
     "699Handling": 85,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017531231904211074/LR_RR_Sport_SVR.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Macan"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 49,
+    "carID": "c00729",
+    "cr": 490,
     "make": "Lotus",
     "model": "Elise",
     "modelYear": 1996,
@@ -25,8 +26,7 @@
     "mra": 48.36,
     "ola": 71.19,
     "description": "The birth of the cracked supercar: Cheap, Daily capable and fast enough to keep up with the big boys.",
-    "card": "https://media.discordapp.net/attachments/733973415366623274/853609593774669864/Lotus_Elise_1996.png",
-    "333TopSpeed": 130,
+     "333TopSpeed": 130,
     "3330to60": 5.6,
     "333Handling": 90,
     "666TopSpeed": 134,
@@ -41,6 +41,6 @@
     "699TopSpeed": 134,
     "6990to60": 5.0,
     "699Handling": 97,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017385022812065843/Lotus_Elise_1996.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Tom"
 }

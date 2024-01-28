@@ -1,5 +1,6 @@
 {
-    "rq": 66,
+    "carID": "c01231",
+    "cr": 660,
     "make": "Subaru",
     "model": "WRX STi",
     "modelYear": 2015,
@@ -26,8 +27,7 @@
     "mra": 64.38,
     "ola": 55.38,
     "description": "Subaru's WRX STI is still an all-weather monster, but a little too harsh as a daily driver.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/819392258578710559/suabru_wrx_sti.png",
-    "333TopSpeed": 160,
+     "333TopSpeed": 160,
     "3330to60": 4.5,
     "333Handling": 87,
     "666TopSpeed": 164,
@@ -42,6 +42,6 @@
     "699TopSpeed": 164,
     "6990to60": 4,
     "699Handling": 93,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003296580083925102/wrx_sti.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Keanny"
 }

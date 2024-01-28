@@ -1,5 +1,6 @@
 {
-    "rq": 92,
+    "carID": "c02015",
+    "cr": 920,
     "make": "BAC",
     "model": "Mono",
     "modelYear": 2011,
@@ -25,8 +26,7 @@
     "mra": 69.23,
     "ola": 88.89,
     "description": "A track monster, without the downside of other people in the car.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/859615418053689354/CD_BAC_Mono.png?width=1410&height=878",
-    "333TopSpeed": 173,
+     "333TopSpeed": 173,
     "3330to60": 2.6,
     "333Handling": 99,
     "666TopSpeed": 176,
@@ -41,6 +41,6 @@
     "699TopSpeed": 176,
     "6990to60": 2.3,
     "699Handling": 107,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017338349876432966/BAC_Mono.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Exist"
 }

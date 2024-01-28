@@ -1,5 +1,6 @@
 {
-    "rq": 85,
+    "carID": "c00901",
+    "cr": 850,
     "make": "Mitsubishi",
     "model": "Lancer Evolution X GSR FQ-360",
     "modelYear": 2008,
@@ -22,8 +23,7 @@
     "mra": 74.39,
     "ola": 82.93,
     "description": "The Middle of the pack, but the easiest to obtain out of the high-end UK Spec Evos.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1081587962082496532/evo10fq360.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 3.7,
     "333Handling": 95,
     "666TopSpeed": 162,
@@ -38,6 +38,6 @@
     "699TopSpeed": 162,
     "6990to60": 3.3,
     "699Handling": 102,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1081589639980273754/evo10FQ360.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

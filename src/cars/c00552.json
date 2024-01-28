@@ -1,5 +1,6 @@
 {
-    "rq": 46,
+    "carID": "c00552",
+    "cr": 463,
     "make": "Honda",
     "model": "S2000",
     "modelYear": 1999,
@@ -26,8 +27,7 @@
     "mra": 55.63,
     "ola": 77.97,
     "description": "How Honda celebrated their 50th anniversary, a successor to their 60's S-lineup.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/819391149877755924/honda_s2000_ap1.png",
-    "333TopSpeed": 152,
+     "333TopSpeed": 152,
     "3330to60": 5.6,
     "333Handling": 85,
     "666TopSpeed": 155,
@@ -42,6 +42,6 @@
     "699TopSpeed": 155,
     "6990to60": 5,
     "699Handling": 91,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003310152214134964/s2000.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/HondaS2000(1999).png",
     "creator": "Keanny"
 }

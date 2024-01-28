@@ -1,5 +1,6 @@
 {
-    "rq": 71,
+    "carID": "c02238",
+    "cr": 710,
     "make": [
         "RENNtech",
         "Mercedes-Benz"
@@ -27,8 +28,7 @@
     "mra": 78.43,
     "ola": 82.5,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/827286429692461126/RENNtechSLR7.4.png",
-    "333TopSpeed": 183,
+     "333TopSpeed": 183,
     "3330to60": 3.8,
     "333Handling": 80,
     "666TopSpeed": 186,
@@ -43,6 +43,6 @@
     "699TopSpeed": 186,
     "6990to60": 3.4,
     "699Handling": 85,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1050813384343421049/Renntech_SLR7.4.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

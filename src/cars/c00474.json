@@ -1,5 +1,6 @@
 {
-    "rq": 68,
+    "carID": "c00474",
+    "cr": 680,
     "make": "Ford",
     "model": "Mustang GT",
     "modelYear": 2015,
@@ -26,8 +27,7 @@
     "mra": 76.27,
     "ola": 93.33,
     "description": "Pony car cure for a broken heart.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/834769819685093376/ford_mustang_gt.png",
-    "333TopSpeed": 163,
+     "333TopSpeed": 163,
     "3330to60": 4.4,
     "333Handling": 86,
     "666TopSpeed": 167,
@@ -42,6 +42,6 @@
     "699TopSpeed": 167,
     "6990to60": 3.9,
     "699Handling": 92,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003274854809735258/mustang_gt.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Keanny"
 }

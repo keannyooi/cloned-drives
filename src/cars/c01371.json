@@ -1,5 +1,6 @@
 {
-    "rq": 40,
+    "carID": "c01371",
+    "cr": 400,
     "make": "Volkswagen",
     "model": "Golf GTI 1.8 T",
     "modelYear": 2001,
@@ -24,8 +25,7 @@
     "mra": 67.89,
     "ola": 75.68,
     "description": "When GTI was a trim level.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1116085145842225153/GolfGTI18T01.png",
-    "333TopSpeed": 139,
+     "333TopSpeed": 139,
     "3330to60": 6.7,
     "333Handling": 81,
     "666TopSpeed": 143,
@@ -40,6 +40,6 @@
     "699TopSpeed": 143,
     "6990to60": 6,
     "699Handling": 87,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1025337043280220191/GTI4.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": ""
 }

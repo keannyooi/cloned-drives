@@ -1,5 +1,6 @@
 {
-    "rq": 36,
+    "carID": "c00993",
+    "cr": 360,
     "make": "Opel",
     "model": "Insignia 2.0 CDTI ecoFLEX",
     "modelYear": 2008,
@@ -22,8 +23,7 @@
     "mra": 61.94,
     "ola": 77.08,
     "description": "Replacement for the dull and boring Vectra based on the brand new Epsilon II platform.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/857958540962562058/D.OpelInsignia20CDTIEF.png",
-    "333TopSpeed": 140,
+     "333TopSpeed": 140,
     "3330to60": 9.1,
     "333Handling": 79,
     "666TopSpeed": 144,
@@ -38,6 +38,6 @@
     "699TopSpeed": 144,
     "6990to60": 8.2,
     "699Handling": 84,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1036182852712271872/insignia.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 31,
+    "carID": "c01911",
+    "cr": 309,
     "make": "Toyota",
     "model": "Prius GT Concept",
     "modelYear": 2004,
@@ -26,8 +27,7 @@
     "mra": 48.84,
     "ola": 69.05,
     "description": "The Toyota Prius is the last thing that car enthusiasists would consider \"sporty and fun\", but this racing-modified Prius begs to differ anyway. First seen running on the 2004 Goodwood Festival of Speed and later displayed in the Paris Auto Show, it managed to squeeze out 37 more horsepower while retaining its environmental friendliness.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/861147392996933682/toyota_prius_gt_concept.png",
-
+ 
     "333TopSpeed": 120,
     "3330to60": 8,
     "333Handling": 75,
@@ -48,6 +48,6 @@
     "6990to60": 7.1,
     "699Handling": 81,
 
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1001859819357098066/prius_gt.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ToyotaPriusGTConcept(2004).png",
     "creator": "Keanny"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 85,
+    "carID": "c00828",
+    "cr": 850,
     "make": [
         "Mercedes-AMG",
         "Mercedes-Benz"
@@ -25,8 +26,7 @@
     "mra": 72.94,
     "ola": 77.42,
     "description": "The logic when a family car cant pass bumps.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/826712668144402432/AMGE63S4MATICWagon.png",
-    "333TopSpeed": 189,
+     "333TopSpeed": 189,
     "3330to60": 2.9,
     "333Handling": 92,
     "666TopSpeed": 192,
@@ -41,6 +41,6 @@
     "699TopSpeed": 192,
     "6990to60": 2.6,
     "699Handling": 99,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017434006188478555/Mercedes_E_63_S_Estate.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "DodgeDemon"
 }

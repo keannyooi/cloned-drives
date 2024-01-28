@@ -1,5 +1,6 @@
 {
-    "rq": 49,
+    "carID": "c01769",
+    "cr": 490,
     "make": "Nissan",
     "model": "Silvia K's Club Selection (S13)",
     "modelYear": 1991,
@@ -26,8 +27,7 @@
     "mra": 59.57,
     "ola": 75,
     "description": "Iketani.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/867917328032100362/NissanSilviaKsClubSelection.png",
-    "333TopSpeed": 117,
+     "333TopSpeed": 117,
     "3330to60": 5.3,
     "333Handling": 75,
     "666TopSpeed": 121,
@@ -42,6 +42,6 @@
     "699TopSpeed": 121,
     "6990to60": 4.8,
     "699Handling": 81,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1016073770030596208/Ks_Club_Selection.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

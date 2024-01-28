@@ -1,5 +1,6 @@
 {
-    "rq": 6,
+    "carID": "c01501",
+    "cr": 60,
     "make": "Holden",
     "model": "50-2106 Ute",
     "modelYear": 1951,
@@ -24,8 +25,7 @@
     "mra": 11.11,
     "ola": 63.16,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/865586956616335380/CD_Holden_50-2106_Ute.png",
-    "333TopSpeed": 89,
+     "333TopSpeed": 89,
     "3330to60": 18.1,
     "333Handling": 62,
     "666TopSpeed": 96,
@@ -40,6 +40,6 @@
     "699TopSpeed": 96,
     "6990to60": 16.2,
     "699Handling": 67,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1025705596114182234/Holden_50_Ute.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Exist"
 }

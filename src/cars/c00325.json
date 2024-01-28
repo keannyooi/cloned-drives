@@ -1,5 +1,6 @@
 {
-    "rq": 62,
+    "carID": "c00325",
+    "cr": 616,
     "make": ["Cobb Tuning", "Ford"],
     "model": "Focus ST",
     "modelYear": 2013,
@@ -25,8 +26,7 @@
     "mra": 66.27,
     "ola": 98.06,
     "description": "bb car bb car bb car bb car bb car.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/819390409901342790/cobb_tuning_focus.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 5.2,
     "333Handling": 90,
     "666TopSpeed": 162,
@@ -41,6 +41,6 @@
     "699TopSpeed": 162,
     "6990to60": 4.7,
     "699Handling": 97,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003309156079501382/cobb_focus.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/CobbTuningFocusST(2013).png",
     "creator": "Keanny"
 }

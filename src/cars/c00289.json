@@ -1,5 +1,6 @@
 {
-    "rq": 27,
+    "carID": "c00289",
+    "cr": 270,
     "make": "Chevrolet",
     "model": "Lumina Euro",
     "modelYear": 1990,
@@ -22,8 +23,7 @@
     "mra": 40.38,
     "ola": 57.14,
     "description": "The first four-door version of the GM10 chassis.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/820619797267480627/cate-test.png",
-    "333TopSpeed": 121,
+     "333TopSpeed": 121,
     "3330to60": 10.0,
     "333Handling": 73,
     "666TopSpeed": 126,
@@ -38,6 +38,6 @@
     "699TopSpeed": 126,
     "6990to60": 8.9,
     "699Handling": 79,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1004763016681754624/Chevrolet-Lumina-Euro.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Johnny"
 }

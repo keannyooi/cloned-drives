@@ -14,7 +14,7 @@ async function regenBM() {
     const catalog = [];
     for (let i = 0; i < 8; i++) {
         const randNum = Math.floor(Math.random() * 100);
-        let price, stock, rqStart, rqEnd;
+        let price, stock, crStart, crEnd;
         let bmCars = carFiles.filter(file => {
             let car = require(`../../cars/${file}`);
             return car["reference"] !== undefined;
@@ -25,8 +25,8 @@ async function regenBM() {
         let bmReference = require(`../../cars/${currentCar["reference"]}`);
 
         if (randNum < 33) {
-            rqStart = i < 4 ? 1 : 40;
-            rqEnd = i < 4 ? 19 : 49;
+            crStart = i < 4 ? 1 : 250;
+            crEnd = i < 4 ? 99 : 399;
             if (i >= 4) {
                 price = 200 + (Math.floor(Math.random() * 100));
                 stock = 20;
@@ -37,8 +37,8 @@ async function regenBM() {
             }
         }
         else if (randNum < 60) {
-            rqStart = i < 4 ? 20 : 50;
-            rqEnd = i < 4 ? 29 : 64;
+            crStart = i < 4 ? 250 : 550;
+            crEnd = i < 4 ? 399 : 699;
             if (i >= 4) {
                 price = 400 + (Math.floor(Math.random() * 200));
                 stock = 10;
@@ -49,8 +49,8 @@ async function regenBM() {
             }
         }
         else if (randNum < 85) {
-            rqStart = i < 4 ? 30 : 50;
-            rqEnd = i < 4 ? 39 : 64;
+            crStart = i < 4 ? 250 : 550;
+            crEnd = i < 4 ? 399 : 699;
             if (i >= 4) {
                 price = 400 + (Math.floor(Math.random() * 200));
                 stock = 10;
@@ -61,8 +61,8 @@ async function regenBM() {
             }
         }
         else if (randNum < 95) {
-            rqStart = i < 4 ? 40 : 65;
-            rqEnd = i < 4 ? 49 : 79;
+            crStart = i < 4 ? 400 : 700;
+            crEnd = i < 4 ? 549 : 849;
             if (i >= 4) {
                 price = 800 + (Math.floor(Math.random() * 400));
                 stock = 10;
@@ -73,17 +73,17 @@ async function regenBM() {
             }
         }
         else {
-            rqStart = 80;
-            rqEnd = 999;
+            crStart = 850;
+            crEnd = 999;
             price = 1600 + (Math.floor(Math.random() * 800));
             stock = 5;
         }
 
-        while (!currentCar["reference"] || catalog.find(car => currentFile.includes(car.carID)) || bmReference["isPrize"] || bmReference["rq"] > rqEnd || bmReference["rq"] < rqStart || !currentCar["active"]) {
+        while (!currentCar["reference"] || catalog.find(car => currentFile.includes(car.carID)) || bmReference["isPrize"] || bmReference["cr"] > crEnd || bmReference["cr"] < crStart || !currentCar["active"]) {
             currentFile = bmCars[Math.floor(Math.random() * bmCars.length)];
             currentCar = require(`../../cars/${currentFile}`);
             bmReference = require(`../../cars/${currentCar["reference"]}`);
-            console.log(rqStart, rqEnd, bmReference["rq"]);
+            console.log(crStart, crEnd, bmReference["cr"]);
         }
         catalog.push({ carID: currentFile.slice(0, 6), price, stock });
     }
@@ -108,7 +108,7 @@ async function regenBM() {
         ctx.drawImage(bot.graphics.dealerTemp, 0, 0, canvas.width, canvas.height);
         const cards = catalog.map(car => {
             let currentCar = require(`../../cars/${car.carID}`);
-            return loadImage(currentCar["card"]);
+            return loadImage(currentCar["racehud"]);
         });
         promises = await Promise.all(cards);
 

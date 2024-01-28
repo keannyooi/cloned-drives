@@ -1,5 +1,6 @@
 {
-    "rq": 59,
+    "carID": "c00740",
+    "cr": 590,
     "make": "Lotus",
     "model": "Elise Sport 135R",
     "modelYear": 2003,
@@ -25,8 +26,7 @@
     "mra": 56.04,
     "ola": 98.04,
     "description": "They gave the Elise to the Lotus Sport and Performance team, the result was a superb track focused car, tuned to perfection.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/851899155634716682/Lotus_Elise_Sport_135R.png",
-    "333TopSpeed": 133,
+     "333TopSpeed": 133,
     "3330to60": 4.8,
     "333Handling": 93,
     "666TopSpeed": 137,
@@ -41,6 +41,6 @@
     "699TopSpeed": 137,
     "6990to60": 4.3,
     "699Handling": 100,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1020057698173190195/Lotus_Elise_Sport_135R.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Based"
 }

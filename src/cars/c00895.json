@@ -1,5 +1,6 @@
 {
-    "rq": 74,
+    "carID": "c00895",
+    "cr": 740,
     "make": "Mitsubishi",
     "model": "Lancer Evolution VIII MR",
     "modelYear": 2003,
@@ -22,8 +23,7 @@
     "mra": 73.97,
     "ola": 74.07,
     "description": "None.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1081578309583900765/evo8mrredo.png",
-"333TopSpeed": 160,
+ "333TopSpeed": 160,
 "3330to60": 4.4,
 "333Handling": 88,
 
@@ -42,6 +42,6 @@
 "996TopSpeed": 167,
 "9960to60": 3.9,
 "996Handling": 91,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997640839012548658/evo8mr.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

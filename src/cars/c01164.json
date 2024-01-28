@@ -1,5 +1,6 @@
 {
-    "rq": 88,
+    "carID": "c01164",
+    "cr": 880,
     "make": "Saleen",
     "model": "S7 Twin Turbo",
     "modelYear": 2005,
@@ -24,8 +25,7 @@
     "mra": 115.29,
     "ola": 91.46,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/825411245603684392/S7TT.png",
-    "333TopSpeed": 251,
+     "333TopSpeed": 251,
     "3330to60": 3.1,
     "333Handling": 94,
     "666TopSpeed": 253,
@@ -40,6 +40,6 @@
     "699TopSpeed": 253,
     "6990to60": 2.8,
     "699Handling": 101,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017106578031251569/Saleen_S7_Twin_Turbo.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

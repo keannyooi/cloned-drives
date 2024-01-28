@@ -1,5 +1,6 @@
 {
-    "rq": 29,
+    "carID": "c00297",
+    "cr": 290,
     "make": "Chevrolet",
     "model": "Spark 2LT CVT",
     "modelYear": 2016,
@@ -22,8 +23,7 @@
     "mra": 34.85,
     "ola": 68.81,
     "description": "Uh... see 1LT for description.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/824597238142468096/Spark_2LT_CVT_16.png",
-    "333TopSpeed": 110,
+     "333TopSpeed": 110,
     "3330to60": 10.2,
     "333Handling": 75,
     "666TopSpeed": 115,
@@ -38,6 +38,6 @@
     "699TopSpeed": 115,
     "6990to60": 9.1,
     "699Handling": 81,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1035867816580100136/spark_green.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Macan"
 }

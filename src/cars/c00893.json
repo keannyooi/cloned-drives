@@ -1,5 +1,6 @@
 {
-    "rq": 75,
+    "carID": "c00893",
+    "cr": 750,
     "make": "Mitsubishi",
     "model": "Lancer Evolution VI GSR Tommi Makinen Edition",
     "modelYear": 2000,
@@ -22,8 +23,7 @@
     "mra": 70,
     "ola": 77.27,
     "description": "Best evo.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1077318656322707516/evo6tmegsrredo.png",
-"333TopSpeed": 153,
+ "333TopSpeed": 153,
 "3330to60": 4.3,
 "333Handling": 89,
 
@@ -42,6 +42,6 @@
 "996TopSpeed": 160,
 "9960to60": 3.8,
 "996Handling": 92,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995716696868388884/evo6tme.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

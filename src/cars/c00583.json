@@ -1,5 +1,6 @@
 {
-    "rq": 41,
+    "carID": "c00583",
+    "cr": 410,
     "make": "Jaguar",
     "model": "E-Type 3.8",
     "modelYear": 1961,
@@ -25,8 +26,7 @@
     "mra": 75.79,
     "ola": 83.33,
     "description": "Even Enzo Ferrari himself called it the most beautiful car ever made.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/825063273333522502/image0.jpg",
-    "333TopSpeed": 153,
+     "333TopSpeed": 153,
     "3330to60": 6.8,
     "333Handling": 70,
     "666TopSpeed": 157,
@@ -41,6 +41,6 @@
     "699TopSpeed": 157,
     "6990to60": 6.1,
     "699Handling": 75,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100130006535000105/etpV12.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 106,
+    "carID": "c01691",
+    "cr": 1060,
     "make": "Mitsubishi",
     "model": "Lancer Evolution WRC2",
     "modelYear": 2002,
@@ -22,8 +23,7 @@
     "mra": 67.92,
     "ola": 77.78,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/951601691709550592/evowrc2.png",
-    "333TopSpeed": 153,
+     "333TopSpeed": 153,
     "3330to60": 3.4,
     "333Handling": 94,
     "666TopSpeed": 157,
@@ -38,6 +38,6 @@
     "699TopSpeed": 157,
     "6990to60": 3.1,
     "699Handling": 101,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996021273668878356/evoWRC2.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 34,
+    "carID": "c00344",
+    "cr": 340,
     "make": "Dodge",
     "model": "Avenger ES",
     "modelYear": 1995,
@@ -22,8 +23,7 @@
     "mra": 46.53,
     "ola": 73.68,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/824899442360451082/AvengerEs.png",
-    "333TopSpeed": 127,
+     "333TopSpeed": 127,
     "3330to60": 9.2,
     "333Handling": 76,
     "666TopSpeed": 131,
@@ -38,6 +38,6 @@
     "699TopSpeed": 131,
     "6990to60": 8.1,
     "699Handling": 82,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095377427062075392/c00344.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Based"
 }

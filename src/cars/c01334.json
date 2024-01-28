@@ -1,5 +1,6 @@
 {
-    "rq": 57,
+    "carID": "c01334",
+    "cr": 570,
     "make": "Toyota",
     "model": "Supra RZ Automatic",
     "modelYear": 1994,
@@ -22,8 +23,7 @@
     "mra": 81.43,
     "ola": 85,
     "description": "4 Speed from hell.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/847493079803625542/edited_suprap.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 5.4,
     "333Handling": 86,
     "666TopSpeed": 162,
@@ -38,6 +38,6 @@
     "699TopSpeed": 162,
     "6990to60": 4.8,
     "699Handling": 92,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996115279664926770/suprarzat.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 54,
+    "carID": "c01777",
+    "cr": 540,
     "make": "Nissan",
     "model": "Skyline 350GT-8",
     "modelYear": 2002,
@@ -24,8 +25,7 @@
     "mra": 65.22,
     "ola": 76.67,
     "description": "First ever eight-speed CVT. Technology.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/962746172873801779/B.NissanSkyline350GT8.png",
-    "333TopSpeed": 117,
+     "333TopSpeed": 117,
     "3330to60": 5.7,
     "333Handling": 80,
     "666TopSpeed": 121,
@@ -40,6 +40,6 @@
     "699TopSpeed": 121,
     "6990to60": 5.1,
     "699Handling": 85,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1006845053425172520/skyline_350gt-8.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

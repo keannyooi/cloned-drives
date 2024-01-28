@@ -1,5 +1,6 @@
 {
-    "rq": 42,
+    "carID": "c00305",
+    "cr": 420,
     "make": "Chevrolet",
     "model": "Trailblazer RS AWD",
     "modelYear": 2021,
@@ -22,8 +23,7 @@
     "mra": 41.78,
     "ola": 78.72,
     "description": "There once was an ugly SUV, he was so ugly that the game's database died. The end.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/826520581981601812/Trailb.png",
-    "333TopSpeed": 134,
+     "333TopSpeed": 134,
     "3330to60": 8.9,
     "333Handling": 77,
     "666TopSpeed": 138,
@@ -38,6 +38,6 @@
     "699TopSpeed": 138,
     "6990to60": 8,
     "699Handling": 83,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095372714866393249/c00305.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Macan"
 }

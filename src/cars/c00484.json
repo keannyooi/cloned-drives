@@ -1,5 +1,6 @@
 {
-    "rq": 89,
+    "carID": "c00484",
+    "cr": 890,
     "make": "Ford",
     "model": "RS200 Evolution",
     "modelYear": 1986,
@@ -27,8 +28,7 @@
     "mra": 54.24,
     "ola": 92.31,
     "description": "Ever wanted a Group B car for the road? here is your answer.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/852039430160121906/RS200_Evo.png",
-    "333TopSpeed": 157,
+     "333TopSpeed": 157,
     "3330to60": 3.0,
     "333Handling": 92,
     "666TopSpeed": 161,
@@ -43,6 +43,6 @@
     "699TopSpeed": 161,
     "6990to60": 2.7,
     "699Handling": 99,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017880937511538728/Ford_RS200.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Thunk"
 }

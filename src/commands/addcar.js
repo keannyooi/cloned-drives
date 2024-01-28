@@ -78,7 +78,7 @@ module.exports = {
                         desc: `Use \`cd-garage\` to check if the car has arrived at ${user.username}'s garage. If it hasn't, try running this command again.`,
                         author: message.author,
                         thumbnail: user.displayAvatarURL({ format: "png", dynamic: true }),
-                        image: currentCar["card"]
+                        image: currentCar["racehud"]
                     });
                     return successMessage.sendMessage({ currentMessage });
                 })

@@ -1,5 +1,6 @@
 {
-    "rq": 74,
+    "carID": "c02303",
+    "cr": 740,
     "make": ["Hennessey", "Mitsubishi"],
     "model": "VR-200",
     "modelYear": 1992,
@@ -23,8 +24,7 @@
     "mra": 80.7,
     "ola": 82.6,
     "description": "Based upon the great 3000GT VR4.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/983393993524133888/HenVR200.png",
-	"racehud": "https://media.discordapp.net/attachments/995376525119586356/997648635271594154/VR200.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy",
 
 "333TopSpeed": 186, 

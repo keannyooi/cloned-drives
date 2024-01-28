@@ -1,5 +1,6 @@
 {
-    "rq": 30,
+    "carID": "c00515",
+    "cr": 300,
     "make": "Holden",
     "model": "Spark LS CVT",
     "modelYear": 2016,
@@ -24,8 +25,7 @@
     "mra": 33.55,
     "ola": 62.04,
     "description": "The first Holden in Cloned Drives.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/820451259277639700/Spark_LS_CVT_16.png",
-    "333TopSpeed": 110,
+     "333TopSpeed": 110,
     "3330to60": 9.9,
     "333Handling": 75,
     "666TopSpeed": 115,
@@ -40,6 +40,6 @@
     "699TopSpeed": 115,
     "6990to60": 8.8,
     "699Handling": 81,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1035869158358917181/holden_spark.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Macan"
 }

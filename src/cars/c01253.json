@@ -1,5 +1,6 @@
 {
-    "rq": 84,
+    "carID": "c01253",
+    "cr": 837,
     "make": "Tesla",
     "model": "Model 3 Performance",
     "modelYear": 2018,
@@ -24,8 +25,7 @@
     "mra": 59.83,
     "ola": 90.88,
     "description": "20-inch wheels, Track Mode and 450hp, the state-of-the-art variant of the world's best-selling EV is capable of kicking some ass on the track. Citation: see the Unplugged Performance Model 3's.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/858544411301249034/tesla_model_3_performance.png",
-    "333TopSpeed": 165,
+     "333TopSpeed": 165,
     "3330to60": 3.2,
     "333Handling": 88,
     "666TopSpeed": 168,
@@ -40,6 +40,6 @@
     "699TopSpeed": 168,
     "6990to60": 2.9,
     "699Handling": 94,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1002951216663367730/model_3_perf.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/TeslaModel3Performance(2018).png",
     "creator": "Keanny"
 }

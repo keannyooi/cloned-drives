@@ -1,5 +1,6 @@
 {
-    "rq": 40,
+    "carID": "c00710",
+    "cr": 400,
     "make": "Lexus",
     "model": "NX 300h Luxury AWD",
     "modelYear": 2020,
@@ -24,8 +25,7 @@
     "mra": 51.27,
     "ola": 70,
     "description": " If you’re shopping for a luxury compact crossover with a hybrid drivetrain and styling that may scare small children, look no further than the NX 300h.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/826520763355758622/NX300hAWD.png",
-    "333TopSpeed": 120,
+     "333TopSpeed": 120,
     "3330to60": 7.7,
     "333Handling": 75,
     "666TopSpeed": 125,
@@ -40,6 +40,6 @@
     "699TopSpeed": 125,
     "6990to60": 6.9,
     "699Handling": 81,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100135280234741861/NX300h.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Macan"
 }

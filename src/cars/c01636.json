@@ -1,5 +1,6 @@
 {
-    "rq": 53,
+    "carID": "c01636",
+    "cr": 530,
     "make": "Mitsubishi",
     "model": "GTO Twin Turbo",
     "modelYear": 1990,
@@ -25,8 +26,7 @@
     "mra": 62.11,
     "ola": 64.41,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/866711461316788254/MitsubishiGTOTT.png",
-    "333TopSpeed": 117,
+     "333TopSpeed": 117,
     "3330to60": 5.6,
     "333Handling": 83,
     "666TopSpeed": 121,
@@ -41,6 +41,6 @@
     "699TopSpeed": 121,
     "6990to60": 5,
     "699Handling": 89,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095031072745594890/Mitsubishi_GTO_Twin_Turbo.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

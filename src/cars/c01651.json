@@ -1,5 +1,6 @@
 {
-    "rq": 79,
+    "carID": "c01651",
+    "cr": 790,
     "make": "Mitsubishi",
     "model": "Lancer Evolution IX FQ-320",
     "modelYear": 2005,
@@ -22,8 +23,7 @@
     "mra": 71.1,
     "ola": 79.06,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/948547734636462111/evo9fq320.png",
-    "333TopSpeed": 160,
+     "333TopSpeed": 160,
     "3330to60": 4.1,
     "333Handling": 92,
     "666TopSpeed": 164,
@@ -38,6 +38,6 @@
     "699TopSpeed": 164,
     "6990to60": 3.7,
     "699Handling": 99,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997546236003491870/evo9fq320.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

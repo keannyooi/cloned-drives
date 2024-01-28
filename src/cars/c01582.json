@@ -1,5 +1,6 @@
 {
-    "rq": 84,
+    "carID": "c01582",
+    "cr": 840,
     "make": [
         "JUN AUTO",
         "Toyota"
@@ -29,8 +30,7 @@
     "mra": 116.67,
     "ola": 114.29,
     "description": "The heart of the beast is this fully reworked 2JZ engine.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1101942129502208020/JunAutoAkiraSupra2001.png",
-"333TopSpeed": 251,
+ "333TopSpeed": 251,
 "3330to60": 2.7,
 "333Handling": 26,
 
@@ -49,6 +49,6 @@
 "996TopSpeed": 255,
 "9960to60": 2.4,
 "996Handling": 27,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1101965917056933938/JunSupra.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

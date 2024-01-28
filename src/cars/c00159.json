@@ -1,5 +1,6 @@
 {
-    "rq": 61,
+    "carID": "c00159",
+    "cr": 610,
     "make": "BMW",
     "model": "330i",
     "modelYear": 2019,
@@ -22,8 +23,7 @@
     "mra": 63.37,
     "ola": 73.39,
     "description": "The cheaper alternative to the M3 in its latest form.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/820443391946915880/unknown.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 5.2,
     "333Handling": 89,
     "666TopSpeed": 162,
@@ -38,6 +38,6 @@
     "699TopSpeed": 162,
     "6990to60": 4.7,
     "699Handling": 95,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017335951011369020/BMW_330i_2019.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

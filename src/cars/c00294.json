@@ -1,5 +1,6 @@
 {
-    "rq": 96,
+    "carID": "c00294",
+    "cr": 960,
     "make": "Chevrolet",
     "model": "S-10 Lingenfelter Pro Stock",
     "modelYear": 1999,
@@ -25,8 +26,7 @@
     "mra": 80.88,
     "ola": 76.36,
     "description": "Ok, who allowed this?",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1101949196505981011/S10Lingenfelter1999.png",
-    "333TopSpeed": 215,
+     "333TopSpeed": 215,
     "3330to60": 1.0,
     "333Handling": 10,
     "666TopSpeed": 218,
@@ -41,6 +41,6 @@
     "699TopSpeed": 218,
     "6990to60": 0.9,
     "699Handling": 11,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1101966043464867981/S10Prostock.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "DodgeDemon"
 }

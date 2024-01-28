@@ -1,5 +1,6 @@
 {  
-    "rq": 71,
+    "carID": "c03364",
+    "cr": 710,
     "make": "Morgan",
     "model": "Plus Six",
     "modelYear": 2019,
@@ -22,8 +23,7 @@
     "mra": 68.97,
     "ola": 85,
     "description": "Quicker than ever, the Plus Six gives the 718s a run for its money.",
-    "card": "https://media.discordapp.net/attachments/1038167110125371402/1038185401585782864/morgan_plus_six.png",
-    "333TopSpeed": 169,
+     "333TopSpeed": 169,
     "3330to60": 3.8,
     "333Handling": 90,
     "666TopSpeed": 172,
@@ -38,6 +38,6 @@
     "699TopSpeed": 172,
     "6990to60": 3.4,
     "699Handling": 97,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1039224623750971492/plus_six.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Lemon"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 57,
+    "carID": "c01179",
+    "cr": 570,
     "make": ["SMS Supercars", "Saleen", "Dodge"],
     "model": "570 Challenger",
     "modelYear": 2010,
@@ -25,8 +26,7 @@
     "mra": 72.33,
     "ola": 75,
     "description": "Is this a Saleen?",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/820913873614929941/sms_supercars_570_challenger.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 4.4,
     "333Handling": 80,
     "666TopSpeed": 162,
@@ -41,6 +41,6 @@
     "699TopSpeed": 162,
     "6990to60": 3.9,
     "699Handling": 85,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003293997374128259/sms_challenger.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Keanny"
 }

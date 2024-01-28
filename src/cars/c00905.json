@@ -1,5 +1,6 @@
 {
-    "rq": 42,
+    "carID": "c00905",
+    "cr": 420,
     "make": "Mitsubishi",
     "model": "Lancer GTS",
     "modelYear": 2008,
@@ -22,8 +23,7 @@
     "mra": 54.3,
     "ola": 56.1,
     "description": "The least sporting GTS.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/824720222946328676/LancerGTS.png",
-    "333TopSpeed": 129,
+     "333TopSpeed": 129,
     "3330to60": 7.8,
     "333Handling": 79,
     "666TopSpeed": 133,
@@ -38,6 +38,6 @@
     "699TopSpeed": 133,
     "6990to60": 7,
     "699Handling": 84,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100152544921145404/Lancer.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

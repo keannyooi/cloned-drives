@@ -1,5 +1,6 @@
 {
-    "rq": 54,
+    "carID": "c00594",
+    "cr": 540,
     "make": "Jaguar",
     "model": "S-Type 4.2",
     "modelYear": 2003,
@@ -25,8 +26,7 @@
     "mra": 77.5,
     "ola": 69.84,
     "description": "Big Jag with that face lift.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/825087058123948052/Stype42.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 6,
     "333Handling": 80,
     "666TopSpeed": 162,
@@ -41,6 +41,6 @@
     "699TopSpeed": 162,
     "6990to60": 5.4,
     "699Handling": 85,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095024764332036237/Jaguar_S-Type_4.2.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

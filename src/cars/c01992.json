@@ -1,5 +1,6 @@
 {
-    "rq": 72,
+    "carID": "c01992",
+    "cr": 720,
     "make": "BMW",
     "model": "1 Series M Coupe",
     "modelYear": 2011,
@@ -22,8 +23,7 @@
     "mra": 71.89,
     "ola": 78.21,
     "description": "The real M1.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/979078744197177364/THEYAINTWANNASEEMEDOIT.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 4.3,
     "333Handling": 91,
     "666TopSpeed": 162,
@@ -38,6 +38,6 @@
     "699TopSpeed": 162,
     "6990to60": 3.8,
     "699Handling": 98,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997785345422786671/bmw1mcoupe.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

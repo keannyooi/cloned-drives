@@ -1,5 +1,6 @@
 {
-    "rq": 79,
+    "carID": "c01280",
+    "cr": 785,
     "make": "Tesla",
     "model": "Model X P90D",
     "modelYear": 2016,
@@ -24,8 +25,7 @@
     "mra": 69.53,
     "ola": 80.82,
     "description": "Fun fact: There is a feature dubbed by Jeremy Clarkson as \"Celebration Mode\", which makes the car's gullwing doors go up and down like some kind of victory dance. Make sure to use it to taunt your opponents after winning!",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/858545370287439882/tesla_model_x_p90d.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 3.2,
     "333Handling": 81,
     "666TopSpeed": 162,
@@ -40,6 +40,6 @@
     "699TopSpeed": 162,
     "6990to60": 2.9,
     "699Handling": 87,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1002950683001094306/model_x_p90d.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/TeslaModelXP90D(2016).png",
     "creator": "Keanny"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 86,
+    "carID": "c00667",
+    "cr": 864,
     "make": "Lamborghini",
     "model": "Reventon",
     "modelYear": 2007,
@@ -19,11 +20,10 @@
     "abs": true,
     "enginePos": "Middle",
     "fuelType": "Petrol",
-    "mra": 92.11,
-    "ola": 108.57,
+    "mra": 85.11,
+    "ola": 85,
     "description": "Named after a killer bull or something.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1144258821364142080/MurciReventon.png",
-    "333TopSpeed": 213,
+     "333TopSpeed": 213,
     "3330to60": 3.1,
     "333Handling": 93,
     "666TopSpeed": 216,
@@ -38,6 +38,6 @@
     "699TopSpeed": 216,
     "6990to60": 2.8,
     "699Handling": 100,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1144258925647122452/MurciReventon.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/LamborghiniReventon(2007).png",
     "creator": "Bnuuy"
 }

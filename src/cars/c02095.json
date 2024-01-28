@@ -1,5 +1,6 @@
 {
-    "rq": 36,
+    "carID": "c02095",
+    "cr": 360,
     "make": "Aston Martin",
     "model": "V8 Sportsman Shooting Brake",
     "modelYear": 1996,
@@ -22,8 +23,7 @@
     "mra": 69.69,
     "ola": 95.46,
     "description": "None.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1097496306517299230/sportsmanshooting.png",
-"333TopSpeed": 153,
+ "333TopSpeed": 153,
 "3330to60": 6.6,
 "333Handling": 75,
 
@@ -42,6 +42,6 @@
 "996TopSpeed": 160,
 "9960to60": 6,
 "996Handling": 78,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995977826727637002/v8sportsmanshoting.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

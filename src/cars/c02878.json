@@ -1,5 +1,6 @@
 {
-    "rq": 39,
+    "carID": "c02878",
+    "cr": 390,
     "make": "Audi",
     "model": "A1 Sportback 1.8 TFSI S tronic",
     "modelYear": 2014,
@@ -22,8 +23,7 @@
     "mra": 66.33,
     "ola": 80.00,
     "description": "Whole new engine, similar performance, sleeker looks: top A1 trim before the S1 didn't fail to amaze.",
-    "card": "https://media.discordapp.net/attachments/963851818763419700/970021326779744276/audi_a1_sportback_1.8_tfsi_S_tronic_for_cd.png",
-    "333TopSpeed": 149,
+     "333TopSpeed": 149,
     "3330to60": 6.2,
     "333Handling": 80,
     "666TopSpeed": 152,
@@ -38,6 +38,6 @@
     "699TopSpeed": 152,
     "6990to60": 5.5,
     "699Handling": 85,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1046474920722436217/a1_1.8_192_hp.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Lemon"
 }

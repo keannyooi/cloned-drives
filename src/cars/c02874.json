@@ -1,5 +1,6 @@
 {
-    "rq": 56,
+    "carID": "c02874",
+    "cr": 560,
     "make": "Audi",
     "model": "A1 quattro",
     "modelYear": 2012,
@@ -22,8 +23,7 @@
     "mra": 63.53,
     "ola": 66.67,
     "description": "The S1 before the S1, but with a wilder spirit and only for 333 lucky people.",
-    "card": "https://media.discordapp.net/attachments/974551848226811944/974932750492663828/unknown.png",
-    "333TopSpeed": 155,
+     "333TopSpeed": 155,
     "3330to60": 5.1,
     "333Handling": 84,
     "666TopSpeed": 159,
@@ -38,6 +38,6 @@
     "699TopSpeed": 159,
     "6990to60": 4.6,
     "699Handling": 90,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1036677618747047987/a1_quattro.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Lemon"
 }

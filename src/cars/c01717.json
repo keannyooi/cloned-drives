@@ -1,5 +1,6 @@
 {
-    "rq": 32,
+    "carID": "c01717",
+    "cr": 321,
     "make": "Nissan",
     "model": "Fairlady Z 432",
     "modelYear": 1969,
@@ -25,8 +26,7 @@
     "mra": 53.85,
     "ola": 77.92,
     "description": "4 valves per cylinder, 3 Mikuni carburetors and 2 camshafts.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/869499259710476298/nissan_fairlady_z_432.png",
-    "333TopSpeed": 135,
+     "333TopSpeed": 135,
     "3330to60": 7.3,
     "333Handling": 74,
     "666TopSpeed": 139,
@@ -41,6 +41,6 @@
     "699TopSpeed": 139,
     "6990to60": 6.5,
     "699Handling": 80,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1001855170566705232/fairlady_432.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/NissanFairladyZ432(1969).png",
     "creator": "Keanny"
 }

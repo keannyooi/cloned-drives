@@ -1,5 +1,6 @@
 {
-    "rq": 47,
+    "carID": "c01793",
+    "cr": 470,
     "make": "Nissan",
     "model": "Stagea 25t RS V",
     "modelYear": 1998,
@@ -22,8 +23,7 @@
     "mra": 62.11,
     "ola": 84.75,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/968272818552840282/stagea25trsv.png",
-    "333TopSpeed": 117,
+     "333TopSpeed": 117,
     "3330to60": 5.6,
     "333Handling": 79,
     "666TopSpeed": 121,
@@ -38,6 +38,6 @@
     "699TopSpeed": 121,
     "6990to60": 5.0,
     "699Handling": 84,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996027801750740992/stagea25trsv.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

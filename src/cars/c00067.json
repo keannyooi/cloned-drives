@@ -1,5 +1,6 @@
 {
-    "rq": 45,
+    "carID": "c00067",
+    "cr": 450,
     "make": "Aston Martin",
     "model": "DB7",
     "modelYear": 1994,
@@ -22,8 +23,7 @@
     "mra": 67.44,
     "ola": 75.86,
     "description": "The Original DB7.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/855242331406204948/db777777.png",
-    "333TopSpeed": 168,
+     "333TopSpeed": 168,
     "3330to60": 5.5,
     "333Handling": 80,
     "666TopSpeed": 171,
@@ -38,6 +38,6 @@
     "699TopSpeed": 171,
     "6990to60": 4.9,
     "699Handling": 85,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995979453249364059/db794.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 15,
+    "carID": "c01435",
+    "cr": 148,
     "make": "ARO",
     "model": "M-461",
     "modelYear": 1964,
@@ -22,8 +23,7 @@
     "mra": 0,
     "ola": 40,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/930857462083510352/AROM461.png",
-    "333TopSpeed": 70,
+     "333TopSpeed": 70,
     "3330to60": 26.6,
     "333Handling": 45,
     "666TopSpeed": 79,
@@ -38,6 +38,6 @@
     "699TopSpeed": 79,
     "6990to60": 23.8,
     "699Handling": 49,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997647072381653103/ARO.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AROM-461(1964).png",
     "creator": "Bnuuy"
 }

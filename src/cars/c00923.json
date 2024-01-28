@@ -1,5 +1,6 @@
 {
-    "rq": 55,
+    "carID": "c00923",
+    "cr": 550,
     "make": [
         "Mugen",
         "Honda"
@@ -28,8 +29,7 @@
     "mra": 70.41,
     "ola": 82.35,
     "description": "moogen van.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/863877326071922718/MugenCivicType-REP3.png",
-    "333TopSpeed": 153,
+     "333TopSpeed": 153,
     "3330to60": 5.7,
     "333Handling": 86,
     "666TopSpeed": 157,
@@ -44,6 +44,6 @@
     "699TopSpeed": 157,
     "6990to60": 5.1,
     "699Handling": 92,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1020048291234328616/Mugen_Civic_EP3.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

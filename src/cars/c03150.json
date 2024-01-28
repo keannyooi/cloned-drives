@@ -1,4 +1,5 @@
 {
+    "carID": "c03150",
     "make": "Skoda",
     "model": "Octavia RS WRC Edition",
     "modelYear": 2001,
@@ -7,7 +8,6 @@
     "collection": ["Sweet Victories"],
     "description": "Skoda applies this livery to their normal version of WRC winner Octavia RS.",
 	"active" : true,
-    "card": "https://media.discordapp.net/attachments/819199720249360384/1051563290049904750/Skoda_Octavia_RS_WRC_Edition.png",
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1051563311948386304/Skoda_Octavia_WRC_Edition.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Crossfire"
 }

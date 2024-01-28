@@ -78,27 +78,60 @@ module.exports = {
                     }
 
                     let money, upgMultiplier = parseInt(upgrade[0]) + parseInt(upgrade[1]) + parseInt(upgrade[2]);
-                    if (car["rq"] > 79) { //leggie
-                        money = 200000 + (upgMultiplier * 4500);
-                    }
-                    else if (car["rq"] > 64 && car["rq"] <= 79) { //epic
-                        money = 77500 + (upgMultiplier * 3750);
-                    }
-                    else if (car["rq"] > 49 && car["rq"] <= 64) { //ultra
-                        money = 27500 + (upgMultiplier * 3000);
-                    }
-                    else if (car["rq"] > 39 && car["rq"] <= 49) { //super
-                        money = 7500 + (upgMultiplier * 2250);
-                    }
-                    else if (car["rq"] > 29 && car["rq"] <= 39) { //rare
-                        money = 1000 + (upgMultiplier * 1500);
-                    }
-                    else if (car["rq"] > 19 && car["rq"] <= 29) { //uncommon
-                        money = 500 + (upgMultiplier * 750);
-                    }
-                    else { //common
-                        money = 200 + (upgMultiplier * 500);
-                    }
+            if (car["cr"] > 1500) { //BOSS 1500+
+                money = 0;
+            }
+			else if (car["cr"] > 1130 && car["cr"] <= 1499) { //1130-1499
+				money = 0;
+            }
+			else if (car["cr"] > 1100 && car["cr"] <= 1129) { //1100-1129
+				money = 0;
+            }
+            else if (car["cr"] > 1050 && car["cr"] <= 1099) { //1050-1099
+                money = 1400000;
+            }
+            else if (car["cr"] > 1000 && car["cr"] <= 1049) { //1000-1049
+                money = 1080000;
+            }
+            else if (car["cr"] > 950 && car["cr"] <= 999) { //950-999
+                money = 640000;
+            }
+            else if (car["cr"] > 900 && car["cr"] <= 949) { //900-949
+                money = 400000;
+            }
+			else if (car["cr"] > 850 && car["cr"] <= 899) { //850-899
+				money = 300000;
+            }
+            else if (car["cr"] > 800 && car["cr"] <= 849) { //800-849
+                money = 180000;
+            }
+            else if (car["cr"] > 750 && car["cr"] <= 799) { //750-799
+                money = 120000;
+            }
+            else if (car["cr"] > 700 && car["cr"] <= 749) { //700-749
+                money = 80000;
+            }
+            else if (car["cr"] > 600 && car["cr"] <= 699) { //600-699
+                money = 72000;
+            }
+            else if (car["cr"] > 500 && car["cr"] <= 599) { //500-599
+                money = 40000;
+            }
+            else if (car["cr"] > 400 && car["cr"] <= 499) { //400-499
+                money = 30000;
+            }
+            else if (car["cr"] > 300 && car["cr"] <= 399) { //300-399
+                money = 16000;
+            }
+            else if (car["cr"] > 200 && car["cr"] <= 299) { //200-299
+                money = 12000;
+            }
+            else if (car["cr"] > 100 && car["cr"] <= 199) { //100-199
+                money = 6000;
+            }
+            else { //001-099
+                money = 4000;
+            }
                     money *= amount;
 
                     const confirmationMessage = new InfoMessage({
@@ -106,7 +139,7 @@ module.exports = {
                         title: `Are you sure you want to sell ${amount} of your ${carNameGen({ currentCar: car, upgrade, rarity: true })} for ${moneyEmoji}${money.toLocaleString("en")}?`,
                         desc: `You have been given ${defaultChoiceTime / 1000} seconds to consider.`,
                         author: message.author,
-                        image: car["card"]
+                        image: car["racehud"]
                     });
                     
                     try {
@@ -135,7 +168,7 @@ module.exports = {
                             title: `Successfully sold your ${carNameGen({ currentCar: car, upgrade, rarity: true })}!`,
                             desc: `You earned ${moneyEmoji}${money.toLocaleString("en")}!`,
                             author: message.author,
-                            image: car["card"],
+                            image: car["racehud"],
                             fields: [
                                 { name: "Your Money Balance", value: `${moneyEmoji}${balance.toLocaleString("en")}` }
                             ]

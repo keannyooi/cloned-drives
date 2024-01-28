@@ -1,5 +1,6 @@
 {
-    "rq": 47,
+    "carID": "c00380",
+    "cr": 470,
     "make": "Ferrari",
     "model": "250 GTO/64",
     "modelYear": 1964,
@@ -22,8 +23,7 @@
     "mra": 85.29,
     "ola": 86.21,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/959841456045047888/ferrari_250_gto_64_for_cd.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 5.5,
     "333Handling": 80,
     "666TopSpeed": 162,
@@ -38,6 +38,6 @@
     "699TopSpeed": 162,
     "6990to60": 4.9,
     "699Handling": 85,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1001033473290670090/IMG_20220402_174435.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Lemon"
 }

@@ -1,7 +1,8 @@
 {
-    "rq": 54,
+    "carID": "c01830",
+    "cr": 540,
     "make": "Subaru",
-    "model": "Ascent Limited",
+    "model": "Ascent 2.4 Touring",
     "modelYear": 2019,
     "country": "JP",
     "topSpeed": 130,
@@ -13,7 +14,7 @@
         "The Japanese Odyssey"
     ],
     "isPrize": false,
-    "weight": 2075,
+    "weight": 2007,
     "gc": "High",
     "seatCount": 7,
     "bodyStyle": "SUV",
@@ -21,11 +22,10 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 61.4,
-    "ola": 77.14,
+    "mra": 58.87,
+    "ola": 71.09,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/870246247208980490/Ascent_Limited_19.png",
-    "333TopSpeed": 134,
+     "333TopSpeed": 134,
     "3330to60": 6.7,
     "333Handling": 74,
     "666TopSpeed": 138,
@@ -40,6 +40,6 @@
     "699TopSpeed": 138,
     "6990to60": 6,
     "699Handling": 80,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100176967866777671/Acent.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/SubaruAscent2.4Touring(2019).png",
     "creator": "Macan"
 }

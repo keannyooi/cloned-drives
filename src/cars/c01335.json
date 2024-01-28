@@ -1,5 +1,6 @@
 {
-    "rq": 46,
+    "carID": "c01335",
+    "cr": 460,
     "make": "Toyota",
     "model": "Venza Hybrid Limited",
     "modelYear": 2021,
@@ -24,8 +25,7 @@
     "mra": 57.14,
     "ola": 71.23,
     "description": "Yet another old nameplate resurrected as a boring crossover.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/826520675723378728/Venza.png",
-    "333TopSpeed": 122,
+     "333TopSpeed": 122,
     "3330to60": 7.2,
     "333Handling": 74,
     "666TopSpeed": 127,
@@ -40,6 +40,6 @@
     "699TopSpeed": 127,
     "6990to60": 6.5,
     "699Handling": 80,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100163827129122826/Venza.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "DodgeDemon"
 }

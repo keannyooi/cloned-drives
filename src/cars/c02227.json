@@ -1,5 +1,6 @@
 {
-    "rq": 71,
+    "carID": "c02227",
+    "cr": 710,
     "make": ["Range Rover","Land Rover"],
     "model": "Velar P380 HSE First Edition",
     "modelYear": 2017,
@@ -22,8 +23,7 @@
     "mra": 61.54,
     "ola": 71.43,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/949494941741117440/Range_Rover_Velar_P380_HSE_First_Edition_17.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 5.3,
     "333Handling": 79,
     "666TopSpeed": 162,
@@ -38,6 +38,6 @@
     "699TopSpeed": 162,
     "6990to60": 4.8,
     "699Handling": 84,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995931425834532935/Range_Rover_Velar_P380_HSE_First_Edition_17.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Macan"
 }

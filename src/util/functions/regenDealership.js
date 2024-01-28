@@ -13,13 +13,13 @@ async function regenDealership() {
     const catalog = [];
     for (let i = 0; i < 8; i++) {
         const randNum = Math.floor(Math.random() * 100);
-        let price, stock = 1000, rqStart, rqEnd;
+        let price, stock = 1000, crStart, crEnd;
         let currentFile = carFiles[Math.floor(Math.random() * carFiles.length)];
         let currentCar = require(`../../cars/${currentFile}`);
 
         if (randNum < 33) {
-            rqStart = i < 4 ? 1 : 40;
-            rqEnd = i < 4 ? 19 : 49;
+            crStart = i < 4 ? 1 : 400;
+            crEnd = i < 4 ? 99 : 549;
             if (i >= 4) {
                 price = 24000 + (Math.floor(Math.random() * 12000));
             }
@@ -28,8 +28,8 @@ async function regenDealership() {
             }
         }
         else if (randNum < 66) {
-            rqStart = i < 4 ? 20 : 50;
-            rqEnd = i < 4 ? 29 : 64;
+            crStart = i < 4 ? 99 : 549;
+            crEnd = i < 4 ? 249 : 699;
             if (i >= 4) {
                 price = 96000 + (Math.floor(Math.random() * 96000));
                 stock = 50;
@@ -39,8 +39,8 @@ async function regenDealership() {
             }
         }
         else if (randNum < 91) {
-            rqStart = i < 4 ? 30 : 50;
-            rqEnd = i < 4 ? 39 : 64;
+            crStart = i < 4 ? 399 : 649;
+            crEnd = i < 4 ? 549 : 799;
             if (i >= 4) {
                 price = 96000 + (Math.floor(Math.random() * 96000));
                 stock = 50;
@@ -50,8 +50,8 @@ async function regenDealership() {
             }
         }
         else {
-            rqStart = i < 4 ? 40 : 65;
-            rqEnd = i < 4 ? 49 : 79;
+            crStart = i < 4 ? 440 : 699;
+            crEnd = i < 4 ? 549 : 799;
             if (i >= 4) {
                 price = 384000 + (Math.floor(Math.random() * 100000));
                 stock = 50;
@@ -61,7 +61,7 @@ async function regenDealership() {
             }
         }
 
-        while (currentCar["reference"] || catalog.find(car => currentFile.includes(car.carID)) || currentCar["isPrize"] || currentCar["rq"] > rqEnd || currentCar["rq"] < rqStart) {
+        while (currentCar["reference"] || catalog.find(car => currentFile.includes(car.carID)) || currentCar["isPrize"] || currentCar["cr"] > crEnd || currentCar["cr"] < crStart) {
             currentFile = carFiles[Math.floor(Math.random() * carFiles.length)];
             currentCar = require(`../../cars/${currentFile}`);
         }
@@ -88,7 +88,7 @@ async function regenDealership() {
         ctx.drawImage(bot.graphics.dealerTemp, 0, 0, canvas.width, canvas.height);
         const cards = catalog.map(car => {
             let currentCar = require(`../../cars/${car.carID}`);
-            return loadImage(currentCar["card"]);
+            return loadImage(currentCar["racehud"]);
         });
         promises = await Promise.all(cards);
 

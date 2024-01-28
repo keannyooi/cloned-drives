@@ -1,5 +1,6 @@
 {
-    "rq": 57,
+    "carID": "c00573",
+    "cr": 570,
     "make": "Infiniti",
     "model": "Q60 Red Sport 400",
     "modelYear": 2017,
@@ -22,8 +23,7 @@
     "mra": 70.59,
     "ola": 79.17,
     "description": "Red cherry.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/835382015418826822/q60.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 4.6,
     "333Handling": 85,
     "666TopSpeed": 162,
@@ -38,6 +38,6 @@
     "699TopSpeed": 162,
     "6990to60": 4.1,
     "699Handling": 91,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1022937672303525980/Infiniti_Q60_Red_Sport_400.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "DodgeDemon"
 }

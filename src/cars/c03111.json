@@ -1,5 +1,6 @@
 {
-    "rq": 95,
+    "carID": "c03111",
+    "cr": 950,
     "make": ["Hoonigan", "Ford"],
     "model": "Fiesta GYM3",
     "modelYear": 2010,
@@ -23,8 +24,7 @@
     "mra": 59.99,
     "ola": 95,
     "description": "The first purpose built Gymkhana car made for Ken Block. https://www.youtube.com/watch?v=4TshFWSsrn8",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/1060585222946705448/HooniganFiestaGYM3.png",
-	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1060585833746399332/HooniganGYM3.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy",
 
     "333TopSpeed": 134, 

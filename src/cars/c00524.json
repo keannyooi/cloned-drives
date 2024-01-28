@@ -1,5 +1,6 @@
 {
-    "rq": 28,
+    "carID": "c00524",
+    "cr": 280,
     "make": "Honda",
     "model": "Civic 1.5 VTi",
     "modelYear": 1991,
@@ -22,8 +23,7 @@
     "mra": 51.53,
     "ola": 76.19,
     "description": "This EG3 Civic harnesses the power of VTEC to deliver driving fun.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/822230105836879872/HondaCivic1.5VTi.png",
-    "333TopSpeed": 133,
+     "333TopSpeed": 133,
     "3330to60": 8,
     "333Handling": 80,
     "666TopSpeed": 137,
@@ -38,6 +38,6 @@
     "699TopSpeed": 137,
     "6990to60": 7.1,
     "699Handling": 85,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100121597534273536/Civic1VTi.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

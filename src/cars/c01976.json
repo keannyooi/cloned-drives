@@ -1,5 +1,6 @@
 {
-    "rq": 55,
+    "carID": "c01976",
+    "cr": 550,
     "make": "Mini",
     "model": "Clubman S DKG",
     "modelYear": 2020,
@@ -22,8 +23,7 @@
     "mra": 62.86,
     "ola": 69.7,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/858836760317132880/Clubman_S_DKG_20.png",
-    "333TopSpeed": 146,
+     "333TopSpeed": 146,
     "3330to60": 6.3,
     "333Handling": 85,
     "666TopSpeed": 149,
@@ -38,6 +38,6 @@
     "699TopSpeed": 149,
     "6990to60": 5.6,
     "699Handling": 91,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1020047442298798161/Mini_Clubman_S_DKG.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Macan"
 }

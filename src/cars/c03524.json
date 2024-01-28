@@ -1,5 +1,6 @@
 {
-    "rq": 42,
+    "carID": "c03524",
+    "cr": 420,
     "make": ["Dodge", "Ram"],
     "model": "Ram 1500 5.7 TRX4 Off-Road Quad Cab",
     "modelYear": 2006,
@@ -23,8 +24,7 @@
     "mra": 48.00,
     "ola": 74.00,
     "description": "The original TRX, with a much less wild powertrain.",
-    "card": "https://media.discordapp.net/attachments/1077292374608326656/1085597054899859516/Ram_1500_5.7_TRX4_Off-Road_Quad_Cab_2006.png",
-	"racehud": "https://media.discordapp.net/attachments/1077293403668234340/1085604762902343780/Ram_1500_5.7_TRX4_Off-Road_Quad_Cab_2006_Hud.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "DodgeDemon",
 
 "333TopSpeed": 110,

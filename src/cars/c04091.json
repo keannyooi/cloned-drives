@@ -1,5 +1,6 @@
 {
-    "rq": 45,
+    "carID": "c04091",
+    "cr": 450,
     "make": ["Oettinger", "Volkswagen"],
     "model": "Golf GTI 1.8 T",
     "modelYear": 2001,
@@ -26,8 +27,7 @@
     "description": "Adding a slightly more aggressive bodykit proves that this is how the mk4 GTI should've looked like.",
 
 
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1116085382434529321/OettingerGTI18T.png",
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1116086154110963742/OettingerGTI.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Andu",
 
     "333TopSpeed": 150,

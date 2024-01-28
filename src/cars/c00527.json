@@ -1,5 +1,6 @@
 {
-    "rq": 50,
+    "carID": "c00527",
+    "cr": 500,
     "make": "Honda",
     "model": "Civic Hatchback Sport",
     "modelYear": 2017,
@@ -22,8 +23,7 @@
     "mra": 75.3,
     "ola": 71.23,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/828427062809329684/civic_hatch.png",
-    "333TopSpeed": 135,
+     "333TopSpeed": 135,
     "3330to60": 6.9,
     "333Handling": 84,
     "666TopSpeed": 139,
@@ -38,6 +38,6 @@
     "699TopSpeed": 139,
     "6990to60": 6.2,
     "699Handling": 90,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1020005046441758761/Honda_Civic_Hatchback_Sport.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "McNuggets"
 }

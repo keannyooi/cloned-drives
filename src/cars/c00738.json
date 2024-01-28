@@ -1,5 +1,6 @@
 {
-    "rq": 68,
+    "carID": "c00738",
+    "cr": 680,
     "make": "Lotus",
     "model": "Elise SC",
     "modelYear": 2008,
@@ -24,8 +25,7 @@
     "mra": 59.46,
     "ola": 77.23,
     "description": "A Supercharged Elise, you cannot tell me that isn't the most brilliant idea ever.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/851899114069164072/Lotus_Elise_SC.png",
-    "333TopSpeed": 152,
+     "333TopSpeed": 152,
     "3330to60": 4.2,
     "333Handling": 92,
     "666TopSpeed": 155,
@@ -40,6 +40,6 @@
     "699TopSpeed": 155,
     "6990to60": 3.7,
     "699Handling": 99,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1050779935490461736/eliseSC08.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Based"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 24,
+    "carID": "c00775",
+    "cr": 240,
     "make": "Mazda",
     "model": "RX-3 Coupe",
     "modelYear": 1971,
@@ -25,8 +26,7 @@
     "mra": 41.76,
     "ola": 66.06,
     "description": "The little Rotary that could.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/819391395780755506/mazda_rx-3_coupe.png",
-    "333TopSpeed": 117,
+     "333TopSpeed": 117,
     "3330to60": 10.4,
     "333Handling": 64,
     "666TopSpeed": 121,
@@ -41,6 +41,6 @@
     "699TopSpeed": 121,
     "6990to60": 9.3,
     "699Handling": 69,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003310579252998204/rx-3.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Keanny"
 }

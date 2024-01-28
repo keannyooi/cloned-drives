@@ -1,5 +1,6 @@
 {
-    "rq": 33,
+    "carID": "c00861",
+    "cr": 330,
     "make": "Mercedes-Benz",
     "model": "C 240",
     "modelYear": 2000,
@@ -22,8 +23,7 @@
     "mra": 58.67,
     "ola": 82.95,
     "description": "New gen C class how cute.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/825098924141707294/C240.png",
-    "333TopSpeed": 150,
+     "333TopSpeed": 150,
     "3330to60": 8.4,
     "333Handling": 70,
     "666TopSpeed": 153,
@@ -38,6 +38,6 @@
     "699TopSpeed": 153,
     "6990to60": 7.5,
     "699Handling": 75,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095784047470444755/Mercedes_C_240_2000.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

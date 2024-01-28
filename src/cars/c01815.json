@@ -1,5 +1,6 @@
 {
-    "rq": 64,
+    "carID": "c01815",
+    "cr": 640,
     "make": [
         "Prince",
         "Nissan"
@@ -29,8 +30,7 @@
     "mra": 69.49,
     "ola": 102.43,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/969546651733741578/R380AI.png",
-    "333TopSpeed": 166,
+     "333TopSpeed": 166,
     "3330to60": 3.9,
     "333Handling": 81,
     "666TopSpeed": 169,
@@ -45,6 +45,6 @@
     "699TopSpeed": 169,
     "6990to60": 3.5,
     "699Handling": 87,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997641388705447976/R380AI.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

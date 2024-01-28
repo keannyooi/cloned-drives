@@ -1,5 +1,6 @@
 {
-    "rq": 99,
+    "carID": "c02025",
+    "cr": 990,
     "make": "Koenigsegg",
     "model": "Agera RS (1MW Upgrade)",
     "modelYear": 2017,
@@ -27,8 +28,7 @@
     "mra": 152.24,
     "ola": 106.66,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/932601294642880553/1mw.png",
-    "333TopSpeed": 282,
+     "333TopSpeed": 282,
     "3330to60": 2.6,
     "333Handling": 97,
     "666TopSpeed": 284,
@@ -43,6 +43,6 @@
     "699TopSpeed": 284,
     "6990to60": 2.3,
     "699Handling": 104,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1000902809958494259/agera1mw.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Aqo"
 }

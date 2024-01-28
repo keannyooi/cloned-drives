@@ -1,5 +1,6 @@
 {  
-    "rq": 34,
+    "carID": "c02640",
+    "cr": 340,
     "make": "Renault",
     "model": "Kadjar 1.5 dCi Bose",
     "modelYear": 2015,
@@ -22,8 +23,7 @@
     "mra": 41.88,
     "ola": 67.24,
     "description": "\"Surprised it moves\"- Bnuuy, 2022.",
-    "card": "https://media.discordapp.net/attachments/1016353579596001344/1016355490797727754/kadjar_1.5_dci.png",
-    "333TopSpeed": 119,
+     "333TopSpeed": 119,
     "3330to60": 11.0,
     "333Handling": 74,
     "666TopSpeed": 123,
@@ -38,6 +38,6 @@
     "699TopSpeed": 123,
     "6990to60": 9.9,
     "699Handling": 80,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1019338572911890562/kadjar_1.5_dci.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Lemon"
 }

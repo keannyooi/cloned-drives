@@ -1,5 +1,6 @@
 {
-    "rq": 72,
+    "carID": "c00093",
+    "cr": 720,
     "make": "Aston Martin",
     "model": "V8 Vantage V600",
     "modelYear": 1998,
@@ -22,8 +23,7 @@
     "mra": 89.38,
     "ola": 88.88,
     "description": "",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1097495665707319346/V600.png",
-"333TopSpeed": 202,
+ "333TopSpeed": 202,
 "3330to60": 3.9,
 "333Handling": 82,
 
@@ -42,6 +42,6 @@
 "996TopSpeed": 207,
 "9960to60": 3.5,
 "996Handling": 84,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995981502204624986/V8V60098.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 67,
+    "carID": "c01398",
+    "cr": 670,
     "make": "Volkswagen",
     "model": "Tiguan BiTDI 4Motion",
     "modelYear": 2016,
@@ -22,8 +23,7 @@
     "mra": 55.86,
     "ola": 64.52,
     "description": "This BiTDI is the most powerful Volkswagen Tiguan on sale and packs quite a punch, marrying performance with the usual refinement and high-tech ambience.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/848299879335198761/BiTDI.png",
-    "333TopSpeed": 145,
+     "333TopSpeed": 145,
     "3330to60": 5.9,
     "333Handling": 82,
     "666TopSpeed": 148,
@@ -38,6 +38,6 @@
     "699TopSpeed": 148,
     "6990to60": 5.3,
     "699Handling": 88,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1018160163531800666/Vw_Tiguan_BiTDI.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Andu"
 }

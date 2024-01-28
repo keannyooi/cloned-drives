@@ -106,22 +106,22 @@ module.exports = {
                                     image = carImage
                                     value = value.carID;
                                     let car = require(`../cars/${value}`);
-                                    if (car["rq"] > 79) {
+                                    if (car["cr"] > 849) {
                                         ctx.fillStyle = "#ffb80d";
                                     }
-                                    else if (car["rq"] <= 79 && car["rq"] > 64) {
+                                    else if (car["cr"] <= 849 && car["cr"] > 699) {
                                         ctx.fillStyle = "#9e3fff";
                                     }
-                                    else if (car["rq"] <= 64 && car["rq"] > 49) {
+                                    else if (car["cr"] <= 699 && car["cr"] > 549) {
                                         ctx.fillStyle = "#ff3639";
                                     }
-                                    else if (car["rq"] <= 49 && car["rq"] > 39) {
+                                    else if (car["cr"] <= 549 && car["cr"] > 399) {
                                         ctx.fillStyle = "#ffd737";
                                     }
-                                    else if (car["rq"] <= 39 && car["rq"] > 29) {
+                                    else if (car["cr"] <= 399 && car["cr"] > 249) {
                                         ctx.fillStyle = "37cdff";
                                     }
-                                    else if (car["rq"] <= 29 && car["rq"] > 19) {
+                                    else if (car["cr"] <= 249 && car["cr"] > 99) {
                                         ctx.fillStyle = "#78ff53";
                                     }
                                     else {

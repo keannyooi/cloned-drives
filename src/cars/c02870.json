@@ -1,5 +1,6 @@
 {
-    "rq": 24,
+    "carID": "c02870",
+    "cr": 240,
     "make": "Audi",
     "model": "A1 1.4 TDI ultra",
     "modelYear": 2014,
@@ -22,8 +23,7 @@
     "mra": 44.08,
     "ola": 62.96,
     "description": "Smaller, more efficient, always cute and small, and especially TDI BROTHA.",
-    "card": "https://media.discordapp.net/attachments/963851818763419700/972878400123461682/audi_a1_1.4_tdi_ultra_for_cd.png",
-    "333TopSpeed": 116,
+     "333TopSpeed": 116,
     "3330to60": 10.3,
     "333Handling": 77,
     "666TopSpeed": 120,
@@ -38,6 +38,6 @@
     "699TopSpeed": 120,
     "6990to60": 9.2,
     "699Handling": 83,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1036678261993906176/a1_1.4_tdi_90_hp.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Lemon"
 }

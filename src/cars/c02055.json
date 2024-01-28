@@ -1,5 +1,6 @@
 {
-    "rq": 57,
+    "carID": "c02055",
+    "cr": 570,
     "make": "Chevrolet",
     "model": "Cobalt SS 272 Concept",
     "modelYear": 2004,
@@ -26,8 +27,7 @@
     "mra": 72.22,
     "ola": 80.77,
     "description": "Your average SEMA build in the 2000's.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/976470852465987604/chevrolet_cobalt_ss_272_concept.png",
-    "333TopSpeed": 177,
+     "333TopSpeed": 177,
     "3330to60": 4.9,
     "333Handling": 85,
     "666TopSpeed": 180,
@@ -42,6 +42,6 @@
     "699TopSpeed": 180,
     "6990to60": 4.4,
     "699Handling": 91,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1001859531183231066/cobalt_272.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Keanny"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 22,
+    "carID": "c01788",
+    "cr": 220,
     "make": "Nissan",
     "model": "Stagea 20G",
     "modelYear": 1996,
@@ -24,8 +25,7 @@
     "mra": 41.82,
     "ola": 71.3,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/967850053903454208/Stagea20G.png",
-    "333TopSpeed": 112,
+     "333TopSpeed": 112,
     "3330to60": 10.9,
     "333Handling": 70,
     "666TopSpeed": 117,
@@ -40,6 +40,6 @@
     "699TopSpeed": 117,
     "6990to60": 9.8,
     "699Handling": 75,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997646782584598619/stagea20G.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 16,
+    "carID": "c00857",
+    "cr": 162,
     "make": "Mercedes-Benz",
     "model": "A 170 CDI Classic",
     "modelYear": 1998,
@@ -21,9 +22,8 @@
     "fuelType": "Diesel",
     "mra": 34.56,
     "ola": 65.57,
-    "description": "Ecological, or so we thought, box on wheels. Card by Andu",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/861972193244086373/A170CDI.png",
-    "333TopSpeed": 114,
+    "description": "Ecological, or so we thought, box on wheels.",
+     "333TopSpeed": 114,
     "3330to60": 11.4,
     "333Handling": 70,
     "666TopSpeed": 119,
@@ -38,6 +38,6 @@
     "699TopSpeed": 119,
     "6990to60": 10.4,
     "699Handling": 75,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1050966483448123442/A170CDI.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Mercedes-BenzA170CDIClassic(1998).pngg",
     "creator": "Andu"
 }

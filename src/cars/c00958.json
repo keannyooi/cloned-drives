@@ -1,5 +1,6 @@
 {
-    "rq": 21,
+    "carID": "c00958",
+    "cr": 210,
     "make": "Nissan",
     "model": "Stanza GXE",
     "modelYear": 1987,
@@ -22,8 +23,7 @@
     "mra": 29.13,
     "ola": 58.93,
     "description": "A room.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/820696339129303121/E.NissanStanzaGXE.png",
-    "333TopSpeed": 107,
+     "333TopSpeed": 107,
     "3330to60": 10.6,
     "333Handling": 65,
     "666TopSpeed": 112,
@@ -38,6 +38,6 @@
     "699TopSpeed": 112,
     "6990to60": 9.5,
     "699Handling": 70,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996846264387895366/stanza.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

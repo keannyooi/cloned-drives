@@ -1,5 +1,6 @@
 {
-    "rq": 45,
+    "carID": "c01518",
+    "cr": 450,
     "make": "Ford",
     "model": "Thunderbird",
     "modelYear": 2002,
@@ -22,8 +23,7 @@
     "mra": 68.93,
     "ola": 70.42,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/945199670307733534/thunderbird.png",
-    "333TopSpeed": 142,
+     "333TopSpeed": 142,
     "3330to60": 6.7,
     "333Handling": 76,
     "666TopSpeed": 146,
@@ -38,6 +38,6 @@
     "699TopSpeed": 146,
     "6990to60": 6,
     "699Handling": 82,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100168899347087541/Thunderbidn.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Olimato"
 }

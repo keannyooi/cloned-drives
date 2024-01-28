@@ -1,5 +1,6 @@
 {
-    "rq": 1,
+    "carID": "c01495",
+    "cr": 10,
     "make": "Citroen",
     "model": "Ami",
     "modelYear": 2020,
@@ -25,8 +26,7 @@
     "mra": 0,
     "ola": 33.33,
     "description": "Hard city car (quadricycle).",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/951121023405801512/cd_ami_20.png",
-    "333TopSpeed": 37,
+     "333TopSpeed": 37,
     "3330to60": 99.9,
     "333Handling": 54,
     "666TopSpeed": 45,
@@ -41,6 +41,6 @@
     "699TopSpeed": 45,
     "6990to60": 99.9,
     "699Handling": 58,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017069503856787529/Citroen_Ami.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Sutzi"
 }

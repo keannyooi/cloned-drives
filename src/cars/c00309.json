@@ -1,5 +1,6 @@
 {
-    "rq": 53,
+    "carID": "c00309",
+    "cr": 530,
     "make": "Chrysler",
     "model": "200S AWD",
     "modelYear": 2015,
@@ -22,8 +23,7 @@
     "mra": 67.39,
     "ola": 78,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/826370682149011466/200S_AWD_15.png",
-    "333TopSpeed": 125,
+     "333TopSpeed": 125,
     "3330to60": 5.9,
     "333Handling": 75,
     "666TopSpeed": 130,
@@ -38,6 +38,6 @@
     "699TopSpeed": 130,
     "6990to60": 5.3,
     "699Handling": 81,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1020011875255197706/Chrysler_200S_AWD.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Macan"
 }

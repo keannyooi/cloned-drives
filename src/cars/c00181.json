@@ -1,5 +1,6 @@
 {
-    "rq": 49,
+    "carID": "c00181",
+    "cr": 490,
     "make": "BMW",
     "model": "M3",
     "modelYear": 1992,
@@ -25,8 +26,7 @@
     "mra": 65.88,
     "ola": 78.57,
     "description": "The legendary E36 generation M3.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/826469416627077161/oldslowM3thing.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 5.3,
     "333Handling": 83,
     "666TopSpeed": 162,
@@ -41,6 +41,6 @@
     "699TopSpeed": 165,
     "6990to60": 4.8,
     "699Handling": 89,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017025815801766018/BMW_M3_1992.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

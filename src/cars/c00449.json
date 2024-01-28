@@ -1,5 +1,6 @@
 {
-    "rq": 25,
+    "carID": "c00449",
+    "cr": 250,
     "make": "Ford",
     "model": "Focus Electric",
     "modelYear": 2011,
@@ -25,8 +26,7 @@
     "mra": 20.22,
     "ola": 80,
     "description": "A charged up version of a stylish hatch.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/819390463719112704/electric_focus.png",
-    "333TopSpeed": 91,
+     "333TopSpeed": 91,
     "3330to60": 9.5,
     "333Handling": 70,
     "666TopSpeed": 97,
@@ -41,6 +41,6 @@
     "699TopSpeed": 97,
     "6990to60": 8.5,
     "699Handling": 75,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003308808115859478/focus_ev.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Keanny"
 }

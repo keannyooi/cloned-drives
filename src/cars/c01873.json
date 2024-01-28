@@ -1,5 +1,6 @@
 {
-    "rq": 36,
+    "carID": "c01873",
+    "cr": 360,
     "make": "Toyota",
     "model": "Camry Wagon LE V6",
     "modelYear": 1996,
@@ -24,8 +25,7 @@
     "mra": 63.85,
     "ola": 77.11,
     "description": "The original cool Camry, sold over 20 years before the next 'cool' Camry came onto the market.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/882732006339903548/camry_wagon.png",
-    "333TopSpeed": 132,
+     "333TopSpeed": 132,
     "3330to60": 7.9,
     "333Handling": 71,
     "666TopSpeed": 136,
@@ -40,6 +40,6 @@
     "699TopSpeed": 136,
     "6990to60": 7.1,
     "699Handling": 77,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100177607246483477/Camry96Wg.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "McNuggets"
 }

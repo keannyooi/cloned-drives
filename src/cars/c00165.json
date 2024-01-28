@@ -1,7 +1,8 @@
 {
-    "rq": 18,
+    "carID": "c00165",
+    "cr": 184,
     "make": "BMW",
-    "model": "507 Series II 3.70:1",
+    "model": "507 Series II",
     "modelYear": 1957,
     "country": "DE",
     "topSpeed": 123,
@@ -22,8 +23,7 @@
     "mra": 74.82,
     "ola": 57.94,
     "description": "Card by Bnuuy.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/857393783757733918/bmw507Series2370.png",
-    "333TopSpeed": 127,
+     "333TopSpeed": 127,
     "3330to60": 10.2,
     "333Handling": 66,
     "666TopSpeed": 131,
@@ -38,6 +38,6 @@
     "699TopSpeed": 131,
     "6990to60": 9.1,
     "699Handling": 71,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995978510126551100/507S2.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BMW507SeriesII(1957).png",
     "creator": "Bnuuy"
 }

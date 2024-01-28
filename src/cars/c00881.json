@@ -1,5 +1,6 @@
 {
-    "rq": 36,
+    "carID": "c00881",
+    "cr": 360,
     "make": "Mini",
     "model": "Cooper",
     "modelYear": 2002,
@@ -24,8 +25,7 @@
     "mra": 41.01,
     "ola": 77.89,
     "description": "A legend reborn, just lil fatter.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/820693524349321246/D.BMWCooper.png",
-    "333TopSpeed": 128,
+     "333TopSpeed": 128,
     "3330to60": 8.1,
     "333Handling": 73,
     "666TopSpeed": 132,
@@ -40,6 +40,6 @@
     "699TopSpeed": 132,
     "6990to60": 7.2,
     "699Handling": 79,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100149688352657428/MiniCooper02.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

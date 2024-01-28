@@ -1,5 +1,6 @@
 {
-    "rq": 56,
+    "carID": "c01224",
+    "cr": 560,
     "make": "Subaru",
     "model": "Impreza WRX WRP10",
     "modelYear": 2005,
@@ -23,8 +24,7 @@
     "mra": 64.71,
     "ola": 61.82,
     "description": "A limited edition Impreza WRX only for the Australian market.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/848107681487388712/image0.jpg",
-
+ 
     "333TopSpeed": 150,
     "3330to60": 5.2,
     "333Handling": 75,
@@ -45,6 +45,6 @@
     "9960to60": 4.7,
     "996Handling": 78,
 
-    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1094613321442938930/wrp10.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

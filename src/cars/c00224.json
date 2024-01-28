@@ -1,5 +1,6 @@
 {
-    "rq": 66,
+    "carID": "c00224",
+    "cr": 660,
     "make": "Bugatti",
     "model": "EB118",
     "modelYear": 1998,
@@ -25,8 +26,7 @@
     "mra": 72.13,
     "ola": 90.91,
     "description": "If W16 wasn't good enough, add two more cylinders instead.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/854123369779560488/image0.png",
-    "333TopSpeed": 202,
+     "333TopSpeed": 202,
     "3330to60": 4.2,
     "333Handling": 83,
     "666TopSpeed": 204,
@@ -41,6 +41,6 @@
     "996TopSpeed": 207,
     "9960to60": 3.7,
     "996Handling": 85,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017526635265790052/Bugatti_EB118.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

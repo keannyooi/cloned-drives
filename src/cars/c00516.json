@@ -1,5 +1,6 @@
 {
-    "rq": 39,
+    "carID": "c00516",
+    "cr": 390,
     "make": "Honda",
     "model": "Accord Coupe EX V6",
     "modelYear": 1999,
@@ -22,8 +23,7 @@
     "mra": 58.65,
     "ola": 87.18,
     "description": "*Basically* a front-drive NSX.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/821117265872420905/acorde_coupe.png",
-    "333TopSpeed": 136,
+     "333TopSpeed": 136,
     "3330to60": 7.4,
     "333Handling": 73,
     "666TopSpeed": 140,
@@ -38,6 +38,6 @@
     "699TopSpeed": 140,
     "6990to60": 6.6,
     "699Handling": 79,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1051119343938846750/Honda_Accorc_Coupe_V6_1999.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "McNuggets"
 }

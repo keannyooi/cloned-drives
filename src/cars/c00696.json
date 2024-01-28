@@ -1,5 +1,6 @@
 {
-    "rq": 65,
+    "carID": "c00696",
+    "cr": 652,
     "make": "Lexus",
     "model": "LC 500 Convertible",
     "modelYear": 2020,
@@ -24,8 +25,7 @@
     "mra": 82.76,
     "ola": 91.67,
     "description": "The LC 500 but with more style.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/821475003143946250/A.LexusLC500Conv.png",
-    "333TopSpeed": 171,
+     "333TopSpeed": 171,
     "3330to60": 4.6,
     "333Handling": 86,
     "666TopSpeed": 174,
@@ -40,6 +40,6 @@
     "699TopSpeed": 174,
     "6990to60": 4.1,
     "699Handling": 92,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1018084229680222309/Lexus_LC_500_Convertible.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/LexusLC500Convertible(2020).png",
     "creator": "Connor"
 }

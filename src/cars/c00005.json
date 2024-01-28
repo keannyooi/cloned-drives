@@ -1,5 +1,6 @@
 {
-    "rq": 34,
+    "carID": "c00005",
+    "cr": 340,
     "make": [
         "Abarth",
         "Fiat"
@@ -28,8 +29,7 @@
     "mra": 53.96,
     "ola": 69.93,
     "description": "This car differs from the normal Abarth 500 by having 17-inch alloy wheels, 205/40-section tyres, cross-drilled disc brakes, stiffer springs, a new engine ECU and a performance air filter along with some Essesse badges. Also an overly complicated name.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/838354132166639626/Abarth500ss.png",
-    "333TopSpeed": 135,
+     "333TopSpeed": 135,
     "3330to60": 6.8,
     "333Handling": 80,
     "666TopSpeed": 139,
@@ -44,6 +44,6 @@
     "699TopSpeed": 139,
     "6990to60": 6.1,
     "699Handling": 85,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1094930028061524040/abarth500ssmodern.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

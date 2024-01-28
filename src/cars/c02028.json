@@ -1,5 +1,6 @@
 {
-    "rq": 94,
+    "carID": "c02028",
+    "cr": 940,
     "make": "Koenigsegg",
     "model": "CCXR Trevita",
     "modelYear": 2008,
@@ -28,8 +29,7 @@
     "mra": 127.27,
     "ola": 107.14,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/858811534145749022/trevita.png",
-    "333TopSpeed": 256,
+     "333TopSpeed": 256,
     "3330to60": 2.7,
     "333Handling": 95,
     "666TopSpeed": 258,
@@ -44,6 +44,6 @@
     "699TopSpeed": 258,
     "6990to60": 2.4,
     "699Handling": 102,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017005627572228106/ccxrtrevita.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Aqo"
 }

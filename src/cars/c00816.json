@@ -1,5 +1,6 @@
 {
-    "rq": 94,
+    "carID": "c00816",
+    "cr": 940,
     "make": "McLaren",
     "model": "Senna GTR",
     "modelYear": 2019,
@@ -28,8 +29,7 @@
     "mra": 112.5,
     "ola": 86.73,
     "description": "A Senna built for taking corners at ridiculously high speeds.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/828795000363679794/CD_McLaren_Senna_GTR.png?width=1410&height=878",
-    "333TopSpeed": 203,
+     "333TopSpeed": 203,
     "3330to60": 2.6,
     "333Handling": 102,
     "666TopSpeed": 205,
@@ -44,6 +44,6 @@
     "699TopSpeed": 205,
     "6990to60": 2.3,
     "699Handling": 110,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1016835655021629450/sennagtr.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Exist"
 }

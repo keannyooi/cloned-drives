@@ -1,5 +1,6 @@
 {
-    "rq": 24,
+    "carID": "c02868",
+    "cr": 240,
     "make": "Audi",
     "model": "A1 1.0 TFSI ultra Active",
     "modelYear": 2014,
@@ -22,8 +23,7 @@
     "mra": 41.96,
     "ola": 61.68,
     "description": "Refined A1 now brings an optional crossover-looking package and new engines, including this cute little 1.0.",
-    "card": "https://media.discordapp.net/attachments/963851818763419700/972865826925469836/audi_a1_1.0_tfsi_ultra_active_for_cd.png",
-    "333TopSpeed": 121,
+     "333TopSpeed": 121,
     "3330to60": 10.2,
     "333Handling": 77,
     "666TopSpeed": 126,
@@ -38,6 +38,6 @@
     "699TopSpeed": 126,
     "6990to60": 9.1,
     "699Handling": 83,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1036678075624198194/a1_1.0_tfsi_95_hp.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Lemon"
 }

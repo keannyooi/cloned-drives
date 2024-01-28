@@ -1,5 +1,6 @@
 {
-    "rq": 25,
+    "carID": "c00984",
+    "cr": 250,
     "make": "Opel",
     "model": "Cascada 1.6 Turbo",
     "modelYear": 2013,
@@ -22,8 +23,7 @@
     "mra": 63.57,
     "ola": 74.16,
     "description": "Opel's possibly last convertible.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/846017356785778698/E.OpelCascada16T.png",
-    "333TopSpeed": 150,
+     "333TopSpeed": 150,
     "3330to60": 8.5,
     "333Handling": 79,
     "666TopSpeed": 153,
@@ -38,6 +38,6 @@
     "699TopSpeed": 153,
     "6990to60": 7.6,
     "699Handling": 84,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1036170457340203128/cascada.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

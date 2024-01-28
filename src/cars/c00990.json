@@ -1,5 +1,6 @@
 {
-    "rq": 9,
+    "carID": "c00990",
+    "cr": 90,
     "make": "Opel",
     "model": "GT 1900",
     "modelYear": 1968,
@@ -24,8 +25,7 @@
     "mra": 39.49,
     "ola": 74.22,
     "description": "The pop-up headlights flip sideways in this Corvette-looking coupe.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/821176312852774962/low_rq_opel_gt_how.png",
-    "333TopSpeed": 113,
+     "333TopSpeed": 113,
     "3330to60": 10.9,
     "333Handling": 70,
     "666TopSpeed": 118,
@@ -40,6 +40,6 @@
     "699TopSpeed": 118,
     "6990to60": 9.8,
     "699Handling": 75,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003290146692661299/opel_gt.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Keanny"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 30,
+    "carID": "c01863",
+    "cr": 300,
     "make": "Toyota",
     "model": "Auris Touring Sports 2.0 D-4D",
     "modelYear": 2012,
@@ -22,8 +23,7 @@
     "mra": 45.41,
     "ola": 65.38,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/867795668227588116/D.ToyotaAurisTS20D4D.png",
-    "333TopSpeed": 125,
+     "333TopSpeed": 125,
     "3330to60": 9.9,
     "333Handling": 75,
     "666TopSpeed": 130,
@@ -38,6 +38,6 @@
     "699TopSpeed": 130,
     "6990to60": 8.8,
     "699Handling": 81,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996484696693297226/auristsd.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

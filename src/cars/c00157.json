@@ -1,5 +1,6 @@
 {
-    "rq": 56,
+    "carID": "c00157",
+    "cr": 560,
     "make": "BMW",
     "model": "328i",
     "modelYear": 2012,
@@ -22,8 +23,7 @@
     "mra": 62.43,
     "ola": 64.75,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/820447426417786880/unknown.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 5.3,
     "333Handling": 82,
     "666TopSpeed": 162,
@@ -38,6 +38,6 @@
     "699TopSpeed": 162,
     "6990to60": 4.8,
     "699Handling": 88,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095061972434833408/BMW_328i_2012.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

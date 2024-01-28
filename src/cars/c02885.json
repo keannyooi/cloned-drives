@@ -1,4 +1,5 @@
 {
+    "carID": "c02885",
     "make": "BMW",
     "model": "i3 \"Spaghetti Car\"",
     "modelYear": 2013,
@@ -7,7 +8,6 @@
     "collection": ["Everything Else"],
     "description": "An electric BMW car that shaped like an egg and wrapped as spaghetti, sold at auction for over €100,000.",
 	"active" : true,
-    "card": "https://media.discordapp.net/attachments/819199720249360384/1039233077974667324/BMW_i3_Spaghetti_Car.png",
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1039232910173155368/BMW_i3_Spaghetti.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Crossfire"
 }

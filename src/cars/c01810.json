@@ -1,5 +1,6 @@
 {
-    "rq": 64,
+    "carID": "c01810",
+    "cr": 642,
     "make": [
         "Opera Performance",
         "Nissan"
@@ -29,8 +30,7 @@
     "mra": 72.73,
     "ola": 83.33,
     "description": "Not to be confused with the one you can buy in the Polyphony Digital dealership in Gran Turismo.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/869499711105695784/opera_performance_350z.png",
-    "333TopSpeed": 181,
+     "333TopSpeed": 181,
     "3330to60": 4.6,
     "333Handling": 91,
     "666TopSpeed": 184,
@@ -45,6 +45,6 @@
     "699TopSpeed": 184,
     "6990to60": 4.1,
     "699Handling": 98,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1001854907940339833/opera_350z.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/OperaPerformance350Z(2004).png",
     "creator": "Keanny"
 }

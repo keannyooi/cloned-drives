@@ -1,5 +1,6 @@
 {
-    "rq": 69,
+    "carID": "c00091",
+    "cr": 690,
     "make": "Aston Martin",
     "model": "V8 Vantage V600 Le Mans",
     "modelYear": 1998,
@@ -22,8 +23,7 @@
     "mra": 90.05,
     "ola": 89.1,
     "description": "Widebody,a 600bhp twin supercharged V8 and less than 40 produced.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1097495836058980362/V600LeMans.png",
-    "333TopSpeed": 208,
+     "333TopSpeed": 208,
     "3330to60": 3.6,
     "333Handling": 83,
     "666TopSpeed": 210,
@@ -38,6 +38,6 @@
     "699TopSpeed": 210,
     "6990to60": 3.2,
     "699Handling": 89,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995691199451111584/V8VantLMV600.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

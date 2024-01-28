@@ -1,5 +1,6 @@
 {
-    "rq": 90,
+    "carID": "c00430",
+    "cr": 900,
     "make": "Ford",
     "model": "Escort RS1700T Group B",
     "modelYear": 1982,
@@ -22,8 +23,7 @@
     "mra": 57.5,
     "ola": 60,
     "description": "A faster take on the 1979 WRC champion.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/819950262893543424/RS1700T.png",
-    "333TopSpeed": 144,
+     "333TopSpeed": 144,
     "3330to60": 4.0,
     "333Handling": 87,
     "666TopSpeed": 147,
@@ -38,6 +38,6 @@
     "699TopSpeed": 147,
     "6990to60": 3.6,
     "699Handling": 93,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995803644400250920/ford1200Tthing.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

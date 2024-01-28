@@ -1,5 +1,6 @@
 {
-    "rq": 43,
+    "carID": "c02071",
+    "cr": 430,
     "make": "Mercedes-Benz",
     "model": "G 500",
     "modelYear": 1998,
@@ -22,8 +23,7 @@
     "mra": 46.77,
     "ola": 57.74,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/952618270379360396/Mercedes-BenzG500.png",
-    "333TopSpeed": 126,
+     "333TopSpeed": 126,
     "3330to60": 7.6,
     "333Handling": 64,
     "666TopSpeed": 131,
@@ -38,6 +38,6 @@
     "699TopSpeed": 131,
     "6990to60": 6.8,
     "699Handling": 69,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100139214827434004/Mercedes_G_500_1998.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

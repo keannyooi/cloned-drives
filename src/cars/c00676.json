@@ -1,5 +1,6 @@
 {
-    "rq": 88,
+    "carID": "c00676",
+    "cr": 880,
     "make": "Lancia",
     "model": "Stratos HF Group 4",
     "modelYear": 1972,
@@ -22,8 +23,7 @@
     "mra": 56,
     "ola": 73.4,
     "description": "The infamous Stratos rally car.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/819944564768637018/Stratos.png",
-    "333TopSpeed": 152,
+     "333TopSpeed": 152,
     "3330to60": 4.0,
     "333Handling": 84,
     "666TopSpeed": 156,
@@ -38,6 +38,6 @@
     "699TopSpeed": 156,
     "6990to60": 3.6,
     "699Handling": 90,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997534318681399417/stratos.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

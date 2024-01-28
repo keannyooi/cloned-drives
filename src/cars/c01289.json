@@ -1,5 +1,6 @@
 {
-    "rq": 29,
+    "carID": "c01289",
+    "cr": 285,
     "make": [
         "Top Fuel",
         "Honda"
@@ -28,8 +29,7 @@
     "mra": 61.82,
     "ola": 75.29,
     "description": "Track-serious S660 by Japanese tuners with an astronomical power output... for an S660.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/868778885595140106/top_fuel_s660_type_rr.png",
-    "333TopSpeed": 130,
+     "333TopSpeed": 130,
     "3330to60": 8.1,
     "333Handling": 82,
     "666TopSpeed": 134,
@@ -44,6 +44,6 @@
     "699TopSpeed": 134,
     "6990to60": 7.2,
     "699Handling": 88,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003175818790436874/s660_rr.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/TopFuelS660TypeRR(2017).png",
     "creator": "Keanny"
 }

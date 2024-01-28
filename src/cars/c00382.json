@@ -1,5 +1,6 @@
 {
-    "rq": 71,
+    "carID": "c00382",
+    "cr": 710,
     "make": "Ferrari",
     "model": "360 Challenge Stradale",
     "modelYear": 2003,
@@ -24,8 +25,7 @@
     "mra": 68.33,
     "ola": 80.49,
     "description": "The most track-focused 360 that can be driven on the open road.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/846679197870456852/image0.png",
-    "333TopSpeed": 189,
+     "333TopSpeed": 189,
     "3330to60": 3.9,
     "333Handling": 90,
     "666TopSpeed": 192,
@@ -40,6 +40,6 @@
     "699TopSpeed": 192,
     "6990to60": 3.5,
     "699Handling": 97,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017039129239887923/Ferrari_360_Challenge_Stradale.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

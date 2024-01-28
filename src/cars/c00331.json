@@ -1,7 +1,8 @@
 {
-    "rq": 27,
+    "carID": "c00331",
+    "cr": 270,
     "make": "Daewoo",
-    "model": "Nubira Sedan CDX",
+    "model": "Nubira Sedan 2.0 CDX Sedan",
     "modelYear": 1997,
     "country": "KR",
     "topSpeed": 112,
@@ -23,9 +24,8 @@
     "fuelType": "Petrol",
     "mra": 33.33,
     "ola": 73.27,
-    "description": "This car is running and going. Card by Andu",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/821332583522369556/DaewooNubiraCDX.png",
-    "333TopSpeed": 117,
+    "description": "The first attempt at a global Daewoo proved to be rather interesting but dull at the same time.",
+     "333TopSpeed": 117,
     "3330to60": 9.6,
     "333Handling": 69,
     "666TopSpeed": 121,
@@ -40,6 +40,6 @@
     "699TopSpeed": 121,
     "6990to60": 8.6,
     "699Handling": 74,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1050930133860618302/Nubira.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/DaewooNubira20CDXSedan(1997).png",
     "creator": "Andu"
 }

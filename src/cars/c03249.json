@@ -1,5 +1,6 @@
 {  
-    "rq": 101,
+    "carID": "c03249",
+    "cr": 1010,
     "make": "Ferrari",
     "model": "SF90 Stradale",
     "modelYear": 2019,
@@ -22,8 +23,7 @@
     "mra": 109.52,
     "ola": 86.96,
     "description": "As Flavio Manzoni, its designer, said during the press release, it was inspired by the combination of a spaceship with a Ferrari. We can definitely say that's true, as it now holds the record for the fastest production car, achieving Chiron-levels of speed on a quarter mile, honouring its homonymous F1 car's ground-breaking speed and road-holding abilities which pushes the limit even further, only just inferior to race cars. All of this for 'just' 500.000$.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/1055184422925770842/sf90_stradale.png",
-    "333TopSpeed": 213,
+     "333TopSpeed": 213,
     "3330to60": 2.2,
     "333Handling": 98,
     "666TopSpeed": 216,
@@ -38,6 +38,6 @@
     "699TopSpeed": 216,
     "6990to60": 2.0,
     "699Handling": 105,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1055184810932441200/sf90.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Lemon"
 }

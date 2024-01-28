@@ -1,5 +1,6 @@
 {
-    "rq": 20,
+    "carID": "c00962",
+    "cr": 200,
     "make": "Opel",
     "model": "Adam \"Jam\" 1.4",
     "modelYear": 2013,
@@ -22,8 +23,7 @@
     "mra": 29.86,
     "ola": 71.3,
     "description": "Posh city car named after Opel's founder, based on a cut in half Corsa platform.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/819546776109449256/E.OpelAdamJam14.png",
-    "333TopSpeed": 111,
+     "333TopSpeed": 111,
     "3330to60": 10.9,
     "333Handling": 75,
     "666TopSpeed": 116,
@@ -38,6 +38,6 @@
     "699TopSpeed": 116,
     "6990to60": 9.8,
     "699Handling": 81,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1035924995983028304/adam_jam.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

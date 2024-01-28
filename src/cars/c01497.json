@@ -1,5 +1,6 @@
 {
-    "rq": 72,
+    "carID": "c01497",
+    "cr": 720,
     "make": "FPV",
     "model": "GT F Police Interceptor by DJR",
     "modelYear": 2014,
@@ -25,8 +26,7 @@
     "mra": 110,
     "ola": 91.89,
     "description": "Holy fuck how so fast?.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/848003053759365150/CD_FPV_GT_F_Police_Interceptor_by_DJR.png",
-    "333TopSpeed": 189,
+     "333TopSpeed": 189,
     "3330to60": 3.5,
     "333Handling": 85,
     "666TopSpeed": 192,
@@ -41,6 +41,6 @@
     "699TopSpeed": 192,
     "6990to60": 3.1,
     "699Handling": 91,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1018592731288834058/FPV_GT_F_Police.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Exist"
 }

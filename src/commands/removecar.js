@@ -101,7 +101,7 @@ module.exports = {
                         desc: `You have been given ${defaultChoiceTime / 1000} seconds to consider.`,
                         author: message.author,
                         thumbnail: user.displayAvatarURL({ format: "png", dynamic: true }),
-                        image: car["card"]
+                        image: car["racehud"]
                     });
                     await confirm(message, confirmationMessage, acceptedFunction, playerData.settings.buttonstyle, currentMessage);
 
@@ -123,7 +123,7 @@ module.exports = {
                             desc: `Use \`cd-garage\` to check if the car has been removed from ${user.username}'s garage. If it hasn't, try running this command again.`,
                             author: message.author,
                             thumbnail: user.displayAvatarURL({ format: "png", dynamic: true }),
-                            image: car["card"]
+                            image: car["racehud"]
                         });
                         await successMessage.sendMessage({ currentMessage });
                         return successMessage.removeButtons();

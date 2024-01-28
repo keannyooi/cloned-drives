@@ -1,5 +1,6 @@
 {
-    "rq": 95,
+    "carID": "c01089",
+    "cr": 950,
     "make": "Porsche",
     "model": "911 Turbo S Cabriolet",
     "modelYear": 2020,
@@ -22,8 +23,7 @@
     "mra": 87.91,
     "ola": 78.88,
     "description": "Roof down.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/1022478039050883072/992TurboSCab.png",
-    "333TopSpeed": 205,
+     "333TopSpeed": 205,
     "3330to60": 2.4,
     "333Handling": 95,
     "666TopSpeed": 207,
@@ -38,6 +38,6 @@
     "699TopSpeed": 207,
     "6990to60": 2.1,
     "699Handling": 102,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997560349135994880/911turboscab992.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

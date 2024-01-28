@@ -1,7 +1,8 @@
 {
-    "rq": 35,
+    "carID": "c03641",
+    "cr": 350,
     "make": "Fiat",
-    "model": "Egea 1.4 RC3",
+    "model": "Egea 1.4 T-Jet RC3",
     "modelYear": 2019,
     "country": "TR",
     "topSpeed": 130,
@@ -26,8 +27,7 @@
     "description": "A little fan made rally league in Turkey added the right kind of spice to a very mondane Fiat.",
 
 
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1089619510031552704/EGEARC3.png",
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1089619817499217990/EgeaRC3.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/FiatEgea14T-Jet(2019).png",
     "creator": "Andu",
 
     "333TopSpeed": 134,

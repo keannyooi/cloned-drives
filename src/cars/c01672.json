@@ -1,5 +1,6 @@
 {
-    "rq": 69,
+    "carID": "c01672",
+    "cr": 690,
     "make": "Mitsubishi",
     "model": "Lancer Evolution VI RS",
     "modelYear": 1999,
@@ -22,8 +23,7 @@
     "mra": 64.94,
     "ola": 73.91,
     "description": "",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1077318542921314445/evo6rsredo.png",
-    "333TopSpeed": 117,
+     "333TopSpeed": 117,
     "3330to60": 4.5,
     "333Handling": 87,
     "666TopSpeed": 121,
@@ -38,6 +38,6 @@
     "699TopSpeed": 121,
     "6990to60": 4.0,
     "699Handling": 93,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996025529356529764/evo6rs.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

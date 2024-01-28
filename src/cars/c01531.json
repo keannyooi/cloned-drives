@@ -1,5 +1,6 @@
 {
-    "rq": 25,
+    "carID": "c01531",
+    "cr": 245,
     "make": [
         "Datsun",
         "Nissan"
@@ -28,8 +29,7 @@
     "mra": 51.75,
     "ola": 70.29,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/869497947530870824/datsun_280zx_facelift.png",
-    "333TopSpeed": 133,
+     "333TopSpeed": 133,
     "3330to60": 8.6,
     "333Handling": 71,
     "666TopSpeed": 137,
@@ -44,6 +44,6 @@
     "699TopSpeed": 137,
     "6990to60": 7.7,
     "699Handling": 77,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003164985976959026/280zx_new.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Datsun280ZX(1982).png",
     "creator": "Keanny"
 }

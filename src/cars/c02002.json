@@ -1,5 +1,6 @@
 {
-    "rq": 28,
+    "carID": "c02002",
+    "cr": 280,
     "make": "Lancia",
     "model": "Fulvia Coupe Rallye 1.6 HF",
     "modelYear": 1969,
@@ -22,8 +23,7 @@
     "mra": 69.23,
     "ola": 60,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/860119898680590336/CD_Lancia_Fulvia_Coupe_Rallye_1.6_HF.png",
-    "333TopSpeed": 117,
+     "333TopSpeed": 117,
     "3330to60": 8.6,
     "333Handling": 73,
     "666TopSpeed": 121,
@@ -38,6 +38,6 @@
     "699TopSpeed": 121,
     "6990to60": 7.7,
     "699Handling": 79,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1023532920717197312/Lancia_Fulvia_Coupe.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Exist"
 }

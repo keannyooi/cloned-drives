@@ -1,5 +1,6 @@
 {
-    "rq": 66,
+    "carID": "c01037",
+    "cr": 660,
     "make": [
         "Pogea Racing",
         "Abarth",
@@ -31,8 +32,7 @@
     "mra": 81.82,
     "ola": 84.44,
     "description": "The most insane Fiat 500 ever made features 404 hp and a pricetag of $76,300. Only 5 examples were ever made.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/840556696086380564/PogeaRacingAres.png",
-    "333TopSpeed": 182,
+     "333TopSpeed": 182,
     "3330to60": 4.3,
     "333Handling": 86,
     "666TopSpeed": 185,
@@ -47,6 +47,6 @@
     "699TopSpeed": 185,
     "6990to60": 3.8,
     "699Handling": 92,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017400595096805376/Pogea_Ares.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

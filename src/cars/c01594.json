@@ -1,7 +1,8 @@
 {
-    "rq": 37,
+    "carID": "c01594",
+    "cr": 374,
     "make": "Mazda",
-    "model": "2 Skyactiv-G 115 Genki",
+    "model": "2 Skyactiv-G Genki",
     "modelYear": 2014,
     "country": "JP",
     "topSpeed": 124,
@@ -23,9 +24,8 @@
     "fuelType": "Petrol",
     "mra": 50.54,
     "ola": 74.47,
-    "description": "The handling king of the sub compacts, aussie trim. Card by Andu",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/897114627006160936/2Genki.png",
-    "333TopSpeed": 128,
+    "description": "The handling king of the sub compacts, aussie trim.",
+     "333TopSpeed": 128,
     "3330to60": 8.9,
     "333Handling": 80,
     "666TopSpeed": 132,
@@ -40,6 +40,6 @@
     "699TopSpeed": 132,
     "6990to60": 8,
     "699Handling": 85,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1050979956601135154/Genki.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Mazda2Skyactiv-GGenki(2014).png",
     "creator": "Andu"
 }

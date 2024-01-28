@@ -1,5 +1,6 @@
 {  
-    "rq": 91,
+    "carID": "c03648",
+    "cr": 910,
     "make": "Ferrari",
     "model": "512 M",
     "modelYear": 1971,
@@ -22,8 +23,7 @@
     "mra": 107.69,
     "ola": 92.86,
     "description": "The updated 5-litre V12 made this a serious menace for Porsche, but paradoxically Ferrari didn't understand that and never really developed it.",
-    "card": "https://cdn.discordapp.com/attachments/1074666970546438184/1074672409782784120/512_m-1.png",
-    "333TopSpeed": 227,
+     "333TopSpeed": 227,
     "3330to60": 2.7,
     "333Handling": 97,
     "666TopSpeed": 230,
@@ -38,6 +38,6 @@
     "699TopSpeed": 230,
     "6990to60": 2.4,
     "699Handling": 104,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1099803956860956682/512_m.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Lemon"
 }

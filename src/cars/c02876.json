@@ -1,5 +1,6 @@
 {
-    "rq": 31,
+    "carID": "c02876",
+    "cr": 310,
     "make": "Audi",
     "model": "A1 Sportback 1.6 TDI",
     "modelYear": 2014,
@@ -22,8 +23,7 @@
     "mra": 50.27,
     "ola": 64.52,
     "description": "Bigger TDI gets updated as well, making the A1 now great even for long highway trips.",
-    "card": "https://media.discordapp.net/attachments/963851818763419700/972878452661313586/audi_a1_sportback_1.6_tdi_for_cd.png",
-    "333TopSpeed": 127,
+     "333TopSpeed": 127,
     "3330to60": 8.6,
     "333Handling": 79,
     "666TopSpeed": 131,
@@ -38,6 +38,6 @@
     "699TopSpeed": 131,
     "6990to60": 7.7,
     "699Handling": 84,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1036678343413727303/a1_1.6_116_hp.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Lemon"
 }

@@ -1,5 +1,6 @@
 {  
-    "rq": 90,
+    "carID": "c02927",
+    "cr": 900,
     "make": "Ferrari",
     "model": "488 Pista Spider",
     "modelYear": 2018,
@@ -22,8 +23,7 @@
     "mra": 103.7,
     "ola": 92.86,
     "description": "Even the Pista has its open-air version, just as quick and stunning.",
-    "card": "https://media.discordapp.net/attachments/1041766128541761546/1041768414588452964/488_pista_spider.png",
-    "333TopSpeed": 212,
+     "333TopSpeed": 212,
     "3330to60": 2.7,
     "333Handling": 95,
     "666TopSpeed": 215,
@@ -38,6 +38,6 @@
     "699TopSpeed": 215,
     "6990to60": 2.4,
     "699Handling": 102,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1043240687258304532/488_pista_spider.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Lemon"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 90,
+    "carID": "c01271",
+    "cr": 895,
     "make": ["Unplugged Performance", "Tesla"],
     "model": "Model 3 Performance \"Bionic Phoenix\"",
     "modelYear": 2023,
@@ -27,8 +28,7 @@
     "mra": 64.29,
     "ola": 77.78,
     "description": "This is the same Model 3 as the one that crashed in 2020's Pikes Peak hillclimb. After the event, Unplugged Performance spent time to further rebuild the car into this wild thing with all its body panels remade with lightweight materials and aero parts that deliver, in their own words, \"a metric fuckton of downforce\". That is essentially why this car is named the Bionic Phoenix - it came back to life stronger than before.",
-    "card": "https://media.discordapp.net/attachments/1077292374608326656/1093531107049353236/bionic_phoenix.png",
-
+ 
     "333TopSpeed": 165,
     "3330to60": 2.6,
     "333Handling": 98,
@@ -49,6 +49,6 @@
     "6990to60": 2.3,
     "699Handling": 105,
     
-    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1093531040531881984/bionic_mokou.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/UnpluggedPerformanceModel3PerformanceBionicPhoenix(2023).png",
     "creator": "Keanny"
 }

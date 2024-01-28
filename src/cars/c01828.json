@@ -1,5 +1,6 @@
 {
-    "rq": 52,
+    "carID": "c01828",
+    "cr": 522,
     "make": [
         "Stillen",
         "Nissan"
@@ -28,8 +29,7 @@
     "mra": 65.44,
     "ola": 93.63,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/869499977867616266/stillen_smz.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 5,
     "333Handling": 86,
     "666TopSpeed": 162,
@@ -44,6 +44,6 @@
     "699TopSpeed": 162,
     "6990to60": 4.5,
     "699Handling": 92,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1001847966082011167/stillen_smz.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Stillen300ZXTwinTurboSMZ(1995).png",
     "creator": "Keanny"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 78,
+    "carID": "c03509",
+    "cr": 777,
     "make": "Tesla",
     "model": "Model S P85+ Electric GT V1.3",
     "modelYear": 2016,
@@ -28,8 +29,7 @@
     "mra": 62.14,
     "ola": 81.25,
     "description": "The Electric GT Championship (not to be confused with the FIA series of the same name) was, alongside Formula E, one of the first serious attempts at EV motorsports, organized by Electric GT Holdings. Initially, the organiser planned on racing modified Tesla Model S P85+'s with Pirelli slicks and DTM-spec wings. Later in 2017, they updated the Tesla racecars to the P100D with Ludicrous Mode (hence the L in the designation).",
-    "card": "https://media.discordapp.net/attachments/1077292374608326656/1093531150145831022/tesla_racecar.png",
-
+ 
     "333TopSpeed": 134,
     "3330to60": 3.0,
     "333Handling": 94,
@@ -50,6 +50,6 @@
     "6990to60": 2.7,
     "699Handling": 104,
 
-    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1093530952921272370/tesla_racecar.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/TeslaModelSP85%2BElectricGTV1.3(2016).png",
     "creator": "Keanny"
 }

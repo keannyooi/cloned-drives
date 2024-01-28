@@ -1,8 +1,9 @@
 {
-    "rq": 58,
+    "carID": "c00176",
+    "cr": 583,
     "make": "BMW",
-    "model": "M1 Autogas LPG Record Car",
-    "modelYear": 1978,
+    "model": "M1 Autogas LPG Land Speed Record",
+    "modelYear": 1981,
     "country": "DE",
     "topSpeed": 187,
     "0to60": 4.5,
@@ -22,8 +23,7 @@
     "mra": 78.95,
     "ola": 88.89,
     "description": "After beating the LPG speed record, this M1 had been left to rot for a long time. Alas, poor M1!.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/840048870921601024/bmw_m1_autogas_lpg_record_car.png",
-    "333TopSpeed": 190,
+     "333TopSpeed": 190,
     "3330to60": 4.3,
     "333Handling": 77,
     "666TopSpeed": 193,
@@ -38,6 +38,6 @@
     "699TopSpeed": 193,
     "6990to60": 3.8,
     "699Handling": 83,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003165302491721819/m1_autogas.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BMWM1AutogasLPGLandSpeedRecord(1987).png",
     "creator": "Keanny"
 }

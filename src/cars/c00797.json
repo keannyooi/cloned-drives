@@ -1,5 +1,6 @@
 {
-    "rq": 86,
+    "carID": "c00797",
+    "cr": 860,
     "make": "McLaren",
     "model": "720S GT3",
     "modelYear": 2019,
@@ -26,8 +27,7 @@
     "mra": 81.08,
     "ola": 80,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/849651399226556416/CD_McLaren_720S_GT3.png",
-    "333TopSpeed": 186,
+     "333TopSpeed": 186,
     "3330to60": 2.9,
     "333Handling": 99,
     "666TopSpeed": 189,
@@ -42,6 +42,6 @@
     "699TopSpeed": 189,
     "6990to60": 2.6,
     "699Handling": 107,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017447246129803324/McLaren_720S_GT3.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Exist"
 }

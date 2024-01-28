@@ -1,5 +1,6 @@
 {
-    "rq": 62,
+    "carID": "c00756",
+    "cr": 620,
     "make": "Maserati",
     "model": "Quattroporte GTS",
     "modelYear": 2013,
@@ -24,8 +25,7 @@
     "mra": 73.33,
     "ola": 109.09,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/826904511082659870/B.Maserati4PorteGTS.png",
-    "333TopSpeed": 196,
+     "333TopSpeed": 196,
     "3330to60": 4.2,
     "333Handling": 85,
     "666TopSpeed": 198,
@@ -40,6 +40,6 @@
     "699TopSpeed": 198,
     "6990to60": 3.7,
     "699Handling": 91,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017506842408144957/Maserati_Quattroporte_GTS.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

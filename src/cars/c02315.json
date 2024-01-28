@@ -1,5 +1,6 @@
 {    
-    "rq": 63,
+    "carID": "c02315",
+    "cr": 630,
     "make": ["MTM", "Audi"],
     "model": "A1 Nardo Edition",
     "modelYear": 2011,
@@ -22,8 +23,7 @@
     "mra": 95.83,
     "ola": 100,
     "description": "You're in your 911 GT3 going full speed on the Nardò Ring, when suddenly somebody in a citycar blows past you as if you weren't there. Fever dream? Nope, the answer is MTM again.",
-    "card": "https://media.discordapp.net/attachments/974551848226811944/987443459524816916/mtm_a1_nardo_edition.png",
-    "333TopSpeed": 204,
+     "333TopSpeed": 204,
     "3330to60": 4.4,
     "333Handling": 82,
     "666TopSpeed": 206,
@@ -38,6 +38,6 @@
     "699TopSpeed": 206,
     "6990to60": 3.9,
     "699Handling": 88,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/999223380521791498/nardoempty.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Lemon"
 }

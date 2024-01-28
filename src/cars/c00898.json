@@ -1,5 +1,6 @@
 {
-    "rq": 77,
+    "carID": "c00898",
+    "cr": 770,
     "make": "Mitsubishi",
     "model": "Lancer Evolution X Final Edition",
     "modelYear": 2015,
@@ -22,8 +23,7 @@
     "mra": 70.47,
     "ola": 77.77,
     "description": "The Final Edition of the Last Evo.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1081588071486730270/Evo10FinalEdition.png",
-    "333TopSpeed": 150,
+     "333TopSpeed": 150,
     "3330to60": 4.2,
     "333Handling": 92,
     "666TopSpeed": 153,
@@ -38,6 +38,6 @@
     "699TopSpeed": 153,
     "6990to60": 3.7,
     "699Handling": 99,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997572925198708776/evoxfianl.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

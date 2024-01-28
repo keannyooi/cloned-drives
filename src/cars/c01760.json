@@ -1,5 +1,6 @@
 {
-    "rq": 40,
+    "carID": "c01760",
+    "cr": 400,
     "make": "Nissan",
     "model": "Patrol Super Safari",
     "modelYear": 2017,
@@ -23,8 +24,7 @@
     "mra": 42.5,
     "ola": 62.5,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/931470554463076372/Nissan_Patrol_Super_Safari_CD.png",
-
+ 
     "333TopSpeed": 122,
     "3330to60": 10.1,
     "333Handling": 64,
@@ -45,6 +45,6 @@
     "6990to60": 9,
     "699Handling": 69,
 
-    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1094912368850509904/super_safari.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "AK1"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 32,
+    "carID": "c04498",
+    "cr": 320,
     "make": ["Oettinger", "Volkswagen"],
     "model": "Scirocco 2000 E",
     "modelYear": 1980,
@@ -26,8 +27,7 @@
     "description": "I went downtown to breeze through freaks, i got my Scirocco tuned by some germans peeps.",
 
 
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1140036895687065671/OettingerScirocco2000E.png",
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1140039829506228284/2000E.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Andu",
  
     "333TopSpeed": 129,

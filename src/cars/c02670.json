@@ -1,5 +1,6 @@
 {
-    "rq": 74,
+    "carID": "c02670",
+    "cr": 674,
     "make": "Alfa Romeo",
     "model": "8C Competizione Concept",
     "modelYear": 2003,
@@ -13,7 +14,7 @@
     "isPrize": false,
 	
     "weight": 1500,
-    "gc": "Medium",
+    "gc": "Low",
     "seatCount": 2,
     "bodyStyle": "Coupe",
     "tcs": true,
@@ -23,8 +24,7 @@
     "mra": 61.97,
     "ola": 90.9,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/1031198273559609404/8ccompconcept.png",
-	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1031198635377049740/8cconcept.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AlfaRomeo8CCompetizioneConcept(2003).png",
     "creator": "Bnuuy",
 
 "333TopSpeed": 189, 

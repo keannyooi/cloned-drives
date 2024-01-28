@@ -1,5 +1,6 @@
 {
-    "rq": 28,
+    "carID": "c00858",
+    "cr": 280,
     "make": "Mercedes-Benz",
     "model": "A 190 Avantgarde",
     "modelYear": 1999,
@@ -21,9 +22,8 @@
     "fuelType": "Petrol",
     "mra": 55.9,
     "ola": 64.44,
-    "description": "Smallest Merc's top luxurious trim. Card by Andu",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/861972258007941160/A190.png",
-    "333TopSpeed": 126,
+    "description": "Smallest Merc's top luxurious trim.",
+     "333TopSpeed": 126,
     "3330to60": 8.6,
     "333Handling": 73,
     "666TopSpeed": 131,
@@ -38,6 +38,6 @@
     "699TopSpeed": 131,
     "6990to60": 7.7,
     "699Handling": 79,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1050933216170749982/A190.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Mercedes-BenzA190Avantgarde(1999).png",
     "creator": "Andu"
 }

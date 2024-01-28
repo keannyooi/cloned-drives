@@ -1,5 +1,6 @@
 {
-    "rq": 79,
+    "carID": "c00936",
+    "cr": 790,
     "make": "Nissan",
     "model": "Fairlady Z GT300",
     "modelYear": 2003,
@@ -24,8 +25,7 @@
     "mra": 90,
     "ola": 90,
     "description": "The first Z33 in JGTC.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/822221818043170856/cate-test.png",
-    "333TopSpeed": 174,
+     "333TopSpeed": 174,
     "3330to60": 3.4,
     "333Handling": 99,
     "666TopSpeed": 177,
@@ -40,6 +40,6 @@
     "699TopSpeed": 177,
     "6990to60": 3.1,
     "699Handling": 107,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1004784270121906266/Nissan-Fairlady-Z-GT300.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Johnny"
 }

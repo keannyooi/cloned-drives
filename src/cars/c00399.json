@@ -1,5 +1,6 @@
 {
-    "rq": 92,
+    "carID": "c00399",
+    "cr": 920,
     "make": "Ferrari",
     "model": "FXX",
     "modelYear": 2005,
@@ -22,8 +23,7 @@
     "mra": 100,
     "ola": 85.77,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/856545200934486046/FXX05.png",
-    "333TopSpeed": 216,
+     "333TopSpeed": 216,
     "3330to60": 2.7,
     "333Handling": 99,
     "666TopSpeed": 219,
@@ -38,6 +38,6 @@
     "699TopSpeed": 219,
     "6990to60": 2.4,
     "699Handling": 107,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995995030093316116/fxx.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

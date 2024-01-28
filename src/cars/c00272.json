@@ -1,5 +1,6 @@
 {
-    "rq": 48,
+    "carID": "c00272",
+    "cr": 480,
     "make": "Chevrolet",
     "model": "Corvette 427 Stingray",
     "modelYear": 1967,
@@ -22,8 +23,7 @@
     "mra": 61.8,
     "ola": 85.11,
     "description": "Fifty years ago this car was the king of General Motors.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/820621658079232000/cate-test.png",
-    "333TopSpeed": 146,
+     "333TopSpeed": 146,
     "3330to60": 4.5,
     "333Handling": 69,
     "666TopSpeed": 149,
@@ -38,6 +38,6 @@
     "699TopSpeed": 149,
     "6990to60": 4.0,
     "699Handling": 74,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1004762181998481439/Chevrolet-Corvette-427-Stingray.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Johnny"
 }

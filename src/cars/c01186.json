@@ -1,5 +1,6 @@
 {
-    "rq": 47,
+    "carID": "c01186",
+    "cr": 470,
     "make": [
         "Stillen",
         "Nissan"
@@ -28,8 +29,7 @@
     "mra": 62.75,
     "ola": 65.67,
     "description": "A performance bargain made more of a bargain by Steven Millen.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/819704935440449596/cate-test.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 6.4,
     "333Handling": 84,
     "666TopSpeed": 162,
@@ -44,6 +44,6 @@
     "699TopSpeed": 162,
     "6990to60": 5.7,
     "699Handling": 90,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1004785342756438047/Stillen-Maxima-SMX.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Johnny"
 }

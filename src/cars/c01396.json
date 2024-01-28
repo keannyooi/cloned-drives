@@ -1,5 +1,6 @@
 {
-    "rq": 52,
+    "carID": "c01396",
+    "cr": 520,
     "make": "Volkswagen",
     "model": "Tiguan 2.0 TSI 4Motion",
     "modelYear": 2011,
@@ -22,8 +23,7 @@
     "mra": 56.93,
     "ola": 58.97,
     "description": "Good ol facelift to bring the GTI based Tiguan into 2011. Card by Andu",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/848316046909374464/20TSI4Motion11.png",
-    "333TopSpeed": 135,
+     "333TopSpeed": 135,
     "3330to60": 7.4,
     "333Handling": 76,
     "666TopSpeed": 139,
@@ -38,6 +38,6 @@
     "699TopSpeed": 139,
     "6990to60": 6.6,
     "699Handling": 82,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1022165049143459870/TiguanTSI411.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Andu"
 }

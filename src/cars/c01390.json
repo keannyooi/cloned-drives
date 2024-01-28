@@ -1,5 +1,6 @@
 {
-    "rq": 78,
+    "carID": "c01390",
+    "cr": 780,
     "make": "Volkswagen",
     "model": "Super Beetle",
     "modelYear": 2013,
@@ -25,8 +26,7 @@
     "mra": 66.1,
     "ola": 87.18,
     "description": "A special SEMA project with 500hp mated to a Manual.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/819469352038170664/SuperBeetle.png",
-    "333TopSpeed": 190,
+     "333TopSpeed": 190,
     "3330to60": 3.7,
     "333Handling": 92,
     "666TopSpeed": 193,
@@ -41,6 +41,6 @@
     "699TopSpeed": 193,
     "6990to60": 3.3,
     "699Handling": 99,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017008885036494889/superbeetle_hud.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Andu"
 }

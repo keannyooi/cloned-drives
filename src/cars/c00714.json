@@ -1,5 +1,6 @@
 {
-    "rq": 45,
+    "carID": "c00714",
+    "cr": 450,
     "make": "Lexus",
     "model": "RX 450h L Premium AWD",
     "modelYear": 2018,
@@ -24,8 +25,7 @@
     "mra": 71.15,
     "ola": 87.52,
     "description": "A continent which manages to have 71 MRA.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/826520436485521408/RX450hNew.png",
-    "333TopSpeed": 120,
+     "333TopSpeed": 120,
     "3330to60": 7,
     "333Handling": 72,
     "666TopSpeed": 124,
@@ -40,6 +40,6 @@
     "699TopSpeed": 124,
     "6990to60": 6.3,
     "699Handling": 78,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100135381875294419/RX450Prem.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Macan"
 }

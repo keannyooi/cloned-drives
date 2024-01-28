@@ -1,5 +1,6 @@
 {
-    "rq": 61,
+    "carID": "c02163",
+    "cr": 610,
     "make": "Land Rover",
     "model": "Discovery Sport P290 Black Edition",
     "modelYear": 2020,
@@ -22,8 +23,7 @@
     "mra": 61.68,
     "ola": 81.82,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/855185083039219752/Discovery_Sport_P290_Black_Edition_20.png",
-    "333TopSpeed": 149,
+     "333TopSpeed": 149,
     "3330to60": 6.3,
     "333Handling": 80,
     "666TopSpeed": 152,
@@ -38,6 +38,6 @@
     "699TopSpeed": 152,
     "6990to60": 5.6,
     "699Handling": 85,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100129327858843658/Land_Rover_Discovery_Sport_P290_Black.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Macan"
 }

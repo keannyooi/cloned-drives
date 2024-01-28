@@ -1,8 +1,9 @@
 {
-    "rq": 74,
+    "carID": "c00035",
+    "cr": 736,
     "make": "Alfa Romeo",
-    "model": "Stelvio 2.0T Veloce Q4",
-    "modelYear": 2019,
+    "model": "Stelvio 2.0T Q4 (280)",
+    "modelYear": 2017,
     "country": "IT",
     "topSpeed": 143,
     "0to60": 5.6,
@@ -22,8 +23,7 @@
     "mra": 61.2,
     "ola": 71.67,
     "description": "Alfa dipping its toes in the SUV world.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1132990413276446780/Alfa_Romeo_Stelvio_2.0T_Veloce_Q4_2019.png",
-"333TopSpeed": 148,
+ "333TopSpeed": 148,
 "3330to60": 5.3,
 "333Handling": 83,
 
@@ -42,6 +42,6 @@
 "996TopSpeed": 155,
 "9960to60": 4.8,
 "996Handling": 85,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1132990390459433012/Alfa_Romeo_Stelvio_2.0T_Veloce_Q4_2019.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AlfaRomeoStelvio2.0TQ4(280)(2017).png",
     "creator": "Crossfire"
 }

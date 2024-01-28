@@ -1,5 +1,6 @@
 {
-    "rq": 50,
+    "carID": "c01031",
+    "cr": 500,
     "make": "Peugeot",
     "model": "308 GTI 270",
     "modelYear": 2015,
@@ -23,8 +24,7 @@
     "mra": 83.78,
     "ola": 81.55,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/978969823071596544/Peugeot308GTI270.png",
-	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1010686635328929812/Peugeot308GTI270.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence",
 
     "333TopSpeed": 158, 

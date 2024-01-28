@@ -1,5 +1,6 @@
 {
-    "rq": 63,
+    "carID": "c01662",
+    "cr": 630,
     "make": "Mitsubishi",
     "model": "Lancer Evolution IX Wagon GT-A",
     "modelYear": 2005,
@@ -22,8 +23,7 @@
     "mra": 65.48,
     "ola": 80,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/951601205359026286/evo9wagongta.png",
-    "333TopSpeed": 151,
+     "333TopSpeed": 151,
     "3330to60": 5.2,
     "333Handling": 87,
     "666TopSpeed": 154,
@@ -38,6 +38,6 @@
     "699TopSpeed": 154,
     "6990to60": 4.7,
     "699Handling": 93,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997641435606155377/evo9wagongta.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

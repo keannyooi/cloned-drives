@@ -1,5 +1,6 @@
 {
-    "rq": 88,
+    "carID": "c01964",
+    "cr": 880,
     "make": "Nissan",
     "model": "R390 GT1",
     "modelYear": 1997,
@@ -26,8 +27,7 @@
     "mra": 117.85,
     "ola": 84.84,
     "description": "The game changing Nissan.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1109064094801219615/NissanR390GT1.png",
-    "333TopSpeed": 222,
+     "333TopSpeed": 222,
     "3330to60": 3.1,
     "333Handling": 99,
     "666TopSpeed": 225,
@@ -42,6 +42,6 @@
     "699TopSpeed": 225,
     "6990to60": 2.8,
     "699Handling": 107,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1109065282816835644/R390GT1.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

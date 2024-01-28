@@ -1,5 +1,6 @@
 {
-    "rq": 32,
+    "carID": "c00459",
+    "cr": 320,
     "make": "Ford",
     "model": "Focus ZTS",
     "modelYear": 2000,
@@ -22,8 +23,7 @@
     "mra": 41.65,
     "ola": 59.26,
     "description": "The highest-trim Focus sedan of the early 2000's.y",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/819390775091658772/ford_focus_zts.png",
-    "333TopSpeed": 110,
+     "333TopSpeed": 110,
     "3330to60": 9,
     "333Handling": 75,
     "666TopSpeed": 115,
@@ -38,6 +38,6 @@
     "699TopSpeed": 115,
     "6990to60": 8.1,
     "699Handling": 81,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003308616167739493/focus_zts.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Keanny"
 }

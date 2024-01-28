@@ -1,5 +1,6 @@
 {
-    "rq": 93,
+    "carID": "c00907",
+    "cr": 931,
     "make": "Mitsubishi",
     "model": "MiEV Evolution III",
     "modelYear": 2014,
@@ -25,8 +26,7 @@
     "mra": 93.1,
     "ola": 96.3,
     "description": "For purple mountain, majesties… wEEEo—wEEEo … wEEE—wEEEo…wEEEo—wEEEo.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/819383487114903602/miev_evo_iii.png",
-    "333TopSpeed": 189,
+     "333TopSpeed": 189,
     "3330to60": 2.6,
     "333Handling": 99,
     "666TopSpeed": 192,
@@ -41,6 +41,6 @@
     "996TopSpeed": 194,
     "9960to60": 2.3,
     "996Handling": 102,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003653498497413230/miev_evo_iii.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/MitsubishiMiEVEvolutionIII(2014).png",
     "creator": "Keanny"
 }

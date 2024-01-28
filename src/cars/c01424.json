@@ -1,5 +1,6 @@
 {
-    "rq": 96,
+    "carID": "c01424",
+    "cr": 960,
     "make": "W Motors",
     "model": "Fenyr SuperSport",
     "modelYear": 2019,
@@ -22,8 +23,7 @@
     "mra": 122.73,
     "ola": 83.33,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/843212235504484372/FenyrSuper.png",
-    "333TopSpeed": 250,
+     "333TopSpeed": 250,
     "3330to60": 2.6,
     "333Handling": 96,
     "666TopSpeed": 252,
@@ -38,6 +38,6 @@
     "699TopSpeed": 252,
     "6990to60": 2.3,
     "699Handling": 103,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995992683539603506/fenyr.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

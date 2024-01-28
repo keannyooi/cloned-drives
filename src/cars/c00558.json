@@ -1,5 +1,6 @@
 {
-    "rq": 41,
+    "carID": "c00558",
+    "cr": 407,
     "make": "Hyundai",
     "model": "Accent",
     "modelYear": 2018,
@@ -9,9 +10,7 @@
     "handling": 73,
     "driveType": "FWD",
     "tyreType": "Standard",
-    "tags": [
-        "Rest of The World","OG"
-    ],
+    "tags": ["Rest of The World","OG"],
     "isPrize": false,
     "weight": 1144,
     "gc": "Medium",
@@ -24,8 +23,7 @@
     "mra": 52.08,
     "ola": 93.33,
     "description": "TikTok Challenge!",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/820035836522266694/Accent2018M.png",
-    "333TopSpeed": 124,
+     "333TopSpeed": 124,
     "3330to60": 7.1,
     "333Handling": 75,
     "666TopSpeed": 129,
@@ -40,6 +38,6 @@
     "699TopSpeed": 129,
     "6990to60": 6.4,
     "699Handling": 81,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1025349222872129597/Accent.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/HyundaiAccent(2018).png",
     "creator": "Andu"
 }

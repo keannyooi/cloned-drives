@@ -1,5 +1,6 @@
 {
-    "rq": 55,
+    "carID": "c01205",
+    "cr": 550,
     "make": "Subaru",
     "model": "Impreza WRX",
     "modelYear": 2006,
@@ -23,8 +24,7 @@
     "mra": 60.96,
     "ola": 66.66,
     "description": "A new WRX with a restyled headlights, hence it was called Hawkeye.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/836744455855538186/image0.jpg",
-
+ 
     "333TopSpeed": 147,
     "3330to60": 5.4,
     "333Handling": 77,
@@ -45,6 +45,6 @@
     "6990to60": 4.8,
     "699Handling": 83,
 
-    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1094615720240881724/wrx_2006.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

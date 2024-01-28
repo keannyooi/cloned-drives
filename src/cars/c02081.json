@@ -1,5 +1,6 @@
 {
-    "rq": 82,
+    "carID": "c02081",
+    "cr": 820,
     "make": [
         "ABT",
         "Audi"
@@ -27,8 +28,7 @@
     "mra": 60.27,
     "ola": 68.18,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/944937238029025291/SQ8_TDI_quattro_19.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 4.2,
     "333Handling": 84,
     "666TopSpeed": 162,
@@ -43,6 +43,6 @@
     "699TopSpeed": 162,
     "6990to60": 3.7,
     "699Handling": 90,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1016848706076684368/sq8tdi.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Macan"
 }

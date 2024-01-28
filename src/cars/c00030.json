@@ -1,5 +1,6 @@
 {
-    "rq": 34,
+    "carID": "c00030",
+    "cr": 339,
     "make": "Alfa Romeo",
     "model": "164 Quadrifoglio Verde",
     "modelYear": 1991,
@@ -23,9 +24,8 @@
     "fuelType": "Petrol",
     "mra": 64.36,
     "ola": 88.6,
-    "description": "The Giulia's Quadrifoglio cool uncle. Card by Andu",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/959131835957383238/164Quadrifoglio.png",
-    "333TopSpeed": 150,
+    "description": "The Giulia's Quadrifoglio cool uncle.",
+     "333TopSpeed": 150,
     "3330to60": 7.3,
     "333Handling": 74,
     "666TopSpeed": 153,
@@ -40,6 +40,6 @@
     "699TopSpeed": 153,
     "6990to60": 6.5,
     "699Handling": 80,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1043864915477286963/164QV-1.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AlfaRomeo164QuadrifoglioVerde(1990).png",
     "creator": "Andu"
 }

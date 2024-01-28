@@ -1,5 +1,6 @@
 {
-    "rq": 56,
+    "carID": "c00930",
+    "cr": 560,
     "make": "Nissan",
     "model": "370Z Roadster",
     "modelYear": 2010,
@@ -24,8 +25,7 @@
     "mra": 70.13,
     "ola": 66.67,
     "description": "A 370Z without the top, simple as that.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/826176371306659870/B.Nissan370ZRoadster.png",
-    "333TopSpeed": 159,
+     "333TopSpeed": 159,
     "3330to60": 5.1,
     "333Handling": 89,
     "666TopSpeed": 163,
@@ -40,6 +40,6 @@
     "699TopSpeed": 163,
     "6990to60": 4.6,
     "699Handling": 95,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996846662083424376/370ROADSTR.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

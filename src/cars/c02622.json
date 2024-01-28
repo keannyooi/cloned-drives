@@ -1,5 +1,6 @@
 {
-    "rq": 1,
+    "carID": "c02622",
+    "cr": 10,
     "make": "Citroen",
     "model": "My Ami Buggy Concept",
     "modelYear": 2021,
@@ -24,8 +25,7 @@
     "ola": 33.33,
     "description": "Hard beech buggy (quadricycle).",
 
-    "card": "https://media.discordapp.net/attachments/819199720249360384/951121197926613022/cd_ami_buggy_21.png",
-	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1023196396276432896/myamibuggyconcept.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Sutzi",
 
     "333TopSpeed": 37,

@@ -1,10 +1,11 @@
 {
-    "rq": 32,
+    "carID": "c01532",
+    "cr": 317,
     "make": [
         "Datsun",
         "Nissan"
     ],
-    "model": "280ZX Turbo",
+    "model": "280ZX Turbo T-Roof",
     "modelYear": 1981,
     "country": "JP",
     "topSpeed": 130,
@@ -28,8 +29,7 @@
     "mra": 56.52,
     "ola": 74.92,
     "description": "Integrating forced induction for power compensation.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/869497976417034321/datsun_280zx_turbo.png",
-    "333TopSpeed": 134,
+     "333TopSpeed": 134,
     "3330to60": 7.1,
     "333Handling": 73,
     "666TopSpeed": 138,
@@ -44,6 +44,6 @@
     "699TopSpeed": 138,
     "6990to60": 6.4,
     "699Handling": 79,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1001850935577940029/280zx_turbo.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Datsun280ZXTurboT-Roof(1981).png",
     "creator": "Keanny"
 }

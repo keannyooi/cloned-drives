@@ -1,5 +1,6 @@
 {
-    "rq": 96,
+    "carID": "c01494",
+    "cr": 960,
     "make": ["BISIMOTO","Porsche"],
     "model": "E935 K3V",
     "modelYear": 2019,
@@ -22,8 +23,7 @@
     "mra": 111.11,
     "ola": 80,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/952194586011369513/BisimotoE935K3V.png",
-    "333TopSpeed": 168,
+     "333TopSpeed": 168,
     "3330to60": 1.9,
     "333Handling": 94,
     "666TopSpeed": 171,
@@ -38,6 +38,6 @@
     "699TopSpeed": 171,
     "6990to60": 1.7,
     "699Handling": 101,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997534088758034483/bisiEV935.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

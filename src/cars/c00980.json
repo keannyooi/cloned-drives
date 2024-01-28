@@ -1,5 +1,6 @@
 {
-    "rq": 27,
+    "carID": "c00980",
+    "cr": 270,
     "make": "Opel",
     "model": "Calibra 2.0i",
     "modelYear": 1989,
@@ -22,8 +23,7 @@
     "mra": 46.89,
     "ola": 63.27,
     "description": "A car that held the title of the most aerodynamic car even for full 10 years, with a drag coefficient of 0.26 that's stunning even today.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/855882259877462036/E.OpelCalibra20i.png",
-    "333TopSpeed": 132,
+     "333TopSpeed": 132,
     "3330to60": 9.3,
     "333Handling": 76,
     "666TopSpeed": 136,
@@ -38,6 +38,6 @@
     "699TopSpeed": 136,
     "6990to60": 8.3,
     "699Handling": 82,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1036169713308405831/calibra_2.0i.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

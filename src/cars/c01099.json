@@ -1,5 +1,6 @@
 {
-    "rq": 32,
+    "carID": "c01099",
+    "cr": 320,
     "make": "Porsche",
     "model": "924 S",
     "modelYear": 1986,
@@ -25,8 +26,7 @@
     "mra": 53.6,
     "ola": 65.83,
     "description": "Entry level front-engined porsche still ongoing after 10 years but now fitted with a bigger 2.5L I4 called the 924S.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1114188789078827098/S924.png",
-"333TopSpeed": 135,
+ "333TopSpeed": 135,
 "3330to60": 7.6,
 "333Handling": 75,
 
@@ -45,6 +45,6 @@
 "996TopSpeed": 143,
 "9960to60": 6.8,
 "996Handling": 78,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1114189091416838244/S924.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 57,
+    "carID": "c00472",
+    "cr": 570,
     "make": "Ford",
     "model": "Mustang Boss 302 Trans-Am",
     "modelYear": 1970,
@@ -24,8 +25,7 @@
     "mra": 67.29,
     "ola": 83.88,
     "description": "Ford and Kar Kraft helped both Shelby and Bud Moore prepare race versions of their M-Code Mustang to take on the Penske Camaros.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/823166939865022504/1970_Ford_Mustang_Boss_302_TA.png",
-    "333TopSpeed": 147,
+     "333TopSpeed": 147,
     "3330to60": 4.8,
     "333Handling": 89,
     "666TopSpeed": 150,
@@ -40,6 +40,6 @@
     "699TopSpeed": 150,
     "6990to60": 4.3,
     "699Handling": 95,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100120204450730024/moostangbosstrans.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "DodgeDemon"
 }

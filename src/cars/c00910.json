@@ -1,5 +1,6 @@
 {
-    "rq": 18,
+    "carID": "c00910",
+    "cr": 178,
     "make": "Mitsubishi",
     "model": "Starion 2000 GX",
     "modelYear": 1982,
@@ -22,8 +23,7 @@
     "mra": 40.21,
     "ola": 67.26,
     "description": "The absolute most basic Starion.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/856532418974187550/mitsubishi_starion_2000_ex.png",
-    "333TopSpeed": 117,
+     "333TopSpeed": 117,
     "3330to60": 10.7,
     "333Handling": 73,
     "666TopSpeed": 121,
@@ -38,6 +38,6 @@
     "699TopSpeed": 121,
     "6990to60": 9.6,
     "699Handling": 79,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003166357078167552/starion_gx.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/MitsubishiStarion2000GX(1982).png",
     "creator": "Keanny"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 20,
+    "carID": "c01366",
+    "cr": 200,
     "make": "Volkswagen",
     "model": "Golf GTI 1.6",
     "modelYear": 1976,
@@ -25,8 +26,7 @@
     "mra": 40.86,
     "ola": 72.93,
     "description": "The car that gave birth to an era of hot hatchery. Card by Andu ",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/931544596784238622/GTI1.png",
-    "333TopSpeed": 118,
+     "333TopSpeed": 118,
     "3330to60": 8.6,
     "333Handling": 74,
     "666TopSpeed": 122,
@@ -41,6 +41,6 @@
     "699TopSpeed": 122,
     "6990to60": 7.7,
     "699Handling": 80,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1052687985398775868/GolfGTI.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Andu"
 }

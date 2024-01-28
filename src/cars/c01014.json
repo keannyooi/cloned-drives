@@ -1,5 +1,6 @@
 {
-    "rq": 27,
+    "carID": "c01014",
+    "cr": 270,
     "make": "Opel",
     "model": "Monza GSE",
     "modelYear": 1982,
@@ -22,8 +23,7 @@
     "mra": 57.43,
     "ola": 70.58,
     "description": "The last incarnation of the Monza based on the 3.0E model.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/857533140872200222/E.OpelMonzaGSE.png",
-    "333TopSpeed": 138,
+     "333TopSpeed": 138,
     "3330to60": 8.1,
     "333Handling": 71,
     "666TopSpeed": 142,
@@ -38,6 +38,6 @@
     "699TopSpeed": 142,
     "6990to60": 7.2,
     "699Handling": 77,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1035906279320854588/monza_gse.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

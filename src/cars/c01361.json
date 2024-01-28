@@ -1,5 +1,6 @@
 {
-    "rq": 41,
+    "carID": "c01361",
+    "cr": 410,
     "make": "Volkswagen",
     "model": "Corrado SLC",
     "modelYear": 1993,
@@ -22,8 +23,7 @@
     "mra": 63.96,
     "ola": 73.24,
     "description": "The American version of the Corrado VR6.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1140974040622829598/cate-test.png",
-"333TopSpeed": 148,
+ "333TopSpeed": 148,
 "3330to60": 6.7,
 "333Handling": 79,
 
@@ -42,6 +42,6 @@
 "996TopSpeed": 155,
 "9960to60": 6,
 "996Handling": 81,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1140974645521166427/SLC.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Johnny"
 }

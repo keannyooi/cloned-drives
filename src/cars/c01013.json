@@ -1,5 +1,6 @@
 {
-    "rq": 34,
+    "carID": "c01013",
+    "cr": 340,
     "make": "Opel",
     "model": "Mokka 1.7 CDTI ecoFLEX",
     "modelYear": 2012,
@@ -22,8 +23,7 @@
     "mra": 51.08,
     "ola": 73.58,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/851472200531574784/D.OpelMokka17CDTI.png",
-    "333TopSpeed": 122,
+     "333TopSpeed": 122,
     "3330to60": 9,
     "333Handling": 76,
     "666TopSpeed": 127,
@@ -38,6 +38,6 @@
     "699TopSpeed": 127,
     "6990to60": 8.1,
     "699Handling": 82,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1036172508296126464/mokka.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

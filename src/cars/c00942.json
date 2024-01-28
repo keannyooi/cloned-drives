@@ -1,5 +1,6 @@
 {
-    "rq": 43,
+    "carID": "c00942",
+    "cr": 438,
     "make": ["Nissan", "Nismo"],
     "model": "IDx Nismo",
     "modelYear": 2013,
@@ -25,8 +26,7 @@
     "mra": 60,
     "ola": 70.45,
     "description": "The car that once made us hopeful about Nissan. Sadly it never went into production and everyone thought Nissan was done for... until the new Z appeared.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/819391214368981042/idx.png",
-    "333TopSpeed": 150,
+     "333TopSpeed": 150,
     "3330to60": 5.7,
     "333Handling": 81,
     "666TopSpeed": 153,
@@ -41,6 +41,6 @@
     "699TopSpeed": 153,
     "6990to60": 5.1,
     "699Handling": 87,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003643771117908019/idx.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/NissanIDxNismo(2013).png",
     "creator": "Keanny"
 }

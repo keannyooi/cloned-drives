@@ -1,5 +1,6 @@
 {
-    "rq": 80,
+    "carID": "c01111",
+    "cr": 800,
     "make": ["Porsche","Zagato"],
     "model": "Carrera GTZ",
     "modelYear": 2013,
@@ -22,8 +23,7 @@
     "mra": 97.25,
     "ola": 91.22,
     "description": "A unicorn made by Zagato.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1114207687597641889/CarreraGTZ.png",
-"333TopSpeed": 208,
+ "333TopSpeed": 208,
 "3330to60": 3.3,
 "333Handling": 91,
 
@@ -42,6 +42,6 @@
 "996TopSpeed": 213,
 "9960to60": 3,
 "996Handling": 94,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1114207894645244055/CarreraGTZ.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

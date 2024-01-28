@@ -1,5 +1,6 @@
 {
-    "rq": 1,
+    "carID": "c01023",
+    "cr": 10,
     "make": "Peel",
     "model": "P50",
     "modelYear": 1962,
@@ -22,8 +23,7 @@
     "mra": 0,
     "ola": 0,
     "description": "Officially recognised as the smallest production car ever, it's also the lightest.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/823502138956578887/peelp50.png",
-    "333TopSpeed": 47,
+     "333TopSpeed": 47,
     "3330to60": 99.9,
     "333Handling": 51,
     "666TopSpeed": 55,
@@ -38,6 +38,6 @@
     "699TopSpeed": 55,
     "6990to60": 99.9,
     "699Handling": 54,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997545245183049738/peelp50.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

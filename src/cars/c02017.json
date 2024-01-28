@@ -1,5 +1,6 @@
 {
-    "rq": 87,
+    "carID": "c02017",
+    "cr": 870,
     "make": "Cadillac",
     "model": "Sixteen Concept",
     "modelYear": 2003,
@@ -22,8 +23,7 @@
     "mra": 116.92,
     "ola": 100,
     "description": "The best wet drag car.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/976510340709892186/Sixteeeeeeen.png",
-    "333TopSpeed": 234,
+     "333TopSpeed": 234,
     "3330to60": 3.6,
     "333Handling": 80,
     "666TopSpeed": 236,
@@ -38,6 +38,6 @@
     "699TopSpeed": 236,
     "6990to60": 3.2,
     "699Handling": 85,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995980658444865616/caddysixteen.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

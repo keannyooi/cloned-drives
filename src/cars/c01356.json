@@ -1,5 +1,6 @@
 {
-    "rq": 4,
+    "carID": "c01356",
+    "cr": 40,
     "make": "Volkswagen",
     "model": "Beetle 1100",
     "modelYear": 1953,
@@ -25,8 +26,7 @@
     "mra": 0,
     "ola": 37.53,
     "description": "Timeless.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/865588863983157268/Beetle1100.png",
-    "333TopSpeed": 74,
+     "333TopSpeed": 74,
     "3330to60": 40,
     "333Handling": 61,
     "666TopSpeed": 82,
@@ -41,6 +41,6 @@
     "699TopSpeed": 82,
     "6990to60": 35.8,
     "699Handling": 65,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017329839298068550/Vw_Beetle_1100_1953.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Andu"
 }

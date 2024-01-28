@@ -1,5 +1,6 @@
 {
-    "rq": 15,
+    "carID": "c01844",
+    "cr": 150,
     "make": "Suzuki",
     "model": "Cappuccino (EA11R)",
     "modelYear": 1991,
@@ -22,8 +23,7 @@
     "mra": 13.11,
     "ola": 57.89,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/930221518590443560/cappuccino.png",
-    "333TopSpeed": 89,
+     "333TopSpeed": 89,
     "3330to60": 10.8,
     "333Handling": 72,
     "666TopSpeed": 96,
@@ -38,6 +38,6 @@
     "699TopSpeed": 96,
     "6990to60": 9.7,
     "699Handling": 78,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997535129041903676/susukicappi.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

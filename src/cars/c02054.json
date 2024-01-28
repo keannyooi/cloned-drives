@@ -1,5 +1,6 @@
 {
-    "rq": 91,
+    "carID": "c02054",
+    "cr": 910,
     "make": "Chevrolet",
     "model": "CERV II",
     "modelYear": 1964,
@@ -26,8 +27,7 @@
     "mra": 85.71,
     "ola": 96,
     "description": "In 1963, Zora Arkus-Duntov thought that putting a 377 CI (6.2L) all aluminum V8 into a speedster was smart, in the end, they created the CERV II, a spiritual successor of the CERV. Producing 500+Bhp provides this unique prototype a 3 second 0-60 and a 200 mph+ top speed, combine that with AWD technology and a featherweight construction, it certainly lives up to its name.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/944969802378797096/cerv2.png",
-    "333TopSpeed": 214,
+     "333TopSpeed": 214,
     "3330to60": 2.9,
     "333Handling": 94,
     "666TopSpeed": 217,
@@ -42,6 +42,6 @@
     "699TopSpeed": 217,
     "6990to60": 2.6,
     "699Handling": 101,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1016980690014830592/cervii.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Aqo"
 }

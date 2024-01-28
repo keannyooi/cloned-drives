@@ -1,5 +1,6 @@
 {  
-    "rq": 78,
+    "carID": "c03645",
+    "cr": 780,
     "make": "Ferrari",
     "model": "512 BB LM",
     "modelYear": 1978,
@@ -22,8 +23,7 @@
     "mra": 95,
     "ola": 78.95,
     "description": "W  i  d  e  .",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1099813400894263296/512_BB_LM.png",
-    "333TopSpeed": 202,
+     "333TopSpeed": 202,
     "3330to60": 3.6,
     "333Handling": 96,
     "666TopSpeed": 204,
@@ -38,6 +38,6 @@
     "699TopSpeed": 204,
     "6990to60": 3.2,
     "699Handling": 103,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1099814967366127678/512_bb_lm.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Lemon"
 }

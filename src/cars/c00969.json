@@ -1,5 +1,6 @@
 {
-    "rq": 36,
+    "carID": "c00969",
+    "cr": 360,
     "make": "Opel",
     "model": "Astra 1.2 Turbo Ultimate",
     "modelYear": 2019,
@@ -22,8 +23,7 @@
     "mra": 56.07,
     "ola": 72.16,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/845753960613806155/D.OpelAstra12TUltimate.png",
-    "333TopSpeed": 131,
+     "333TopSpeed": 131,
     "3330to60": 9.2,
     "333Handling": 80,
     "666TopSpeed": 135,
@@ -38,6 +38,6 @@
     "699TopSpeed": 135,
     "6990to60": 8.2,
     "699Handling": 85,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1036163067404374016/astra_ultimate.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

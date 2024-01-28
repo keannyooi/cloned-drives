@@ -1,5 +1,6 @@
 {
-    "rq": 25,
+    "carID": "c01715",
+    "cr": 249,
     "make": "Nissan",
     "model": "Fairlady Z 300ZR T-Bar Roof",
     "modelYear": 1987,
@@ -25,8 +26,7 @@
     "mra": 61.65,
     "ola": 74.42,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/869499211811532820/nissan_fairlady_z_300zr.png",
-    "333TopSpeed": 117,
+     "333TopSpeed": 117,
     "3330to60": 8.2,
     "333Handling": 71,
     "666TopSpeed": 121,
@@ -41,6 +41,6 @@
     "699TopSpeed": 121,
     "6990to60": 7.3,
     "699Handling": 77,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003163748393042060/300zr.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/NissanFairladyZ300ZRT-BarRoof(1987).png",
     "creator": "Keanny"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 48,
+    "carID": "c00768",
+    "cr": 480,
     "make": "Mazda",
     "model": "MX-5 Club",
     "modelYear": 2016,
@@ -24,8 +25,7 @@
     "mra": 56.07,
     "ola": 60,
     "description": "The latest in a series of brilliant roadsters.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/826468794553335849/MX5Club.png",
-    "333TopSpeed": 132,
+     "333TopSpeed": 132,
     "3330to60": 5.7,
     "333Handling": 88,
     "666TopSpeed": 137,
@@ -40,6 +40,6 @@
     "699TopSpeed": 137,
     "6990to60": 5.1,
     "699Handling": 94,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1024739289986256936/Mazda_MX-5_Club.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

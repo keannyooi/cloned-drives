@@ -1,5 +1,6 @@
 {
-    "rq": 71,
+    "carID": "c02177",
+    "cr": 710,
     "make": "Lotus",
     "model": "Exige 265E",
     "modelYear": 2006,
@@ -24,8 +25,7 @@
     "mra": 76.79,
     "ola": 74.42,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/950083287227973632/Lotus_Exige_265E_2006.png",
-    "333TopSpeed": 161,
+     "333TopSpeed": 161,
     "3330to60": 4.1,
     "333Handling": 93,
     "666TopSpeed": 165,
@@ -40,6 +40,6 @@
     "699TopSpeed": 165,
     "6990to60": 3.7,
     "699Handling": 100,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1018259628095709204/Lotus_Exige_265E.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Tom"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 29,
+    "carID": "c01317",
+    "cr": 292,
     "make": "Toyota",
     "model": "Mirai",
     "modelYear": 2014,
@@ -23,8 +24,7 @@
     "mra": 39.07,
     "ola": 67.42,
     "description": "The Mirai, which got its namesake from the Japanese word for future, came out in a world that was about to be dominated by battery EVs, trying to prove that fuel cells are also a viable source of energy for cars. However, due to an apparent lack of hydrogen refueling infrastructure, the general public never really caught on. An interesting quirk about the Mirai is that it has a dedicated button for releasing the water built up from the chemical reactions that power the car through the tailpipe. Yes, the water is safe to drink, but we would advise against considering it as your main supply of water.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/819383537726914600/mirai.png",
-
+ 
     "333TopSpeed": 115,
     "3330to60": 8.7,
     "333Handling": 70,
@@ -45,6 +45,6 @@
     "6990to60": 7.8,
     "699Handling": 75,
 
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003653470689165372/mirai.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ToyotaMirai(2014).png",
     "creator": "Keanny"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 27,
+    "carID": "c00621",
+    "cr": 274,
     "make": "Kia",
     "model": "Soul EV",
     "modelYear": 2015,
@@ -25,8 +26,7 @@
     "mra": 13.72,
     "ola": 62.7,
     "description": "Vibing with electricity.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/865589065758670899/SoulEV.png",
-    "333TopSpeed": 98,
+     "333TopSpeed": 98,
     "3330to60": 8.9,
     "333Handling": 71,
     "666TopSpeed": 103,
@@ -41,6 +41,6 @@
     "699TopSpeed": 103,
     "6990to60": 8,
     "699Handling": 77,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1050928785836482560/SoulEV.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/KiaSoulEV(2015).png",
     "creator": "Andu"
 }

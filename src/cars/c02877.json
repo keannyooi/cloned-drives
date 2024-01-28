@@ -1,5 +1,6 @@
 {
-    "rq": 28,
+    "carID": "c02877",
+    "cr": 280,
     "make": "Audi",
     "model": "A1 Sportback 1.6 TDI S tronic",
     "modelYear": 2011,
@@ -22,8 +23,7 @@
     "mra": 44.55,
     "ola": 65.31,
     "description": "Bigger TDI offers extra power when needed while guaranteeing best-in-class gas consumption.",
-    "card": "https://media.discordapp.net/attachments/963851818763419700/969303642249244723/audi_a1_sportback_1.6_tdi_S_tronic_for_cd.png",
-    "333TopSpeed": 122,
+     "333TopSpeed": 122,
     "3330to60": 9.3,
     "333Handling": 79,
     "666TopSpeed": 127,
@@ -38,6 +38,6 @@
     "699TopSpeed": 127,
     "6990to60": 8.3,
     "699Handling": 84,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1036677889581654016/a1_1.6_tdi_105_hp.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Lemon"
 }

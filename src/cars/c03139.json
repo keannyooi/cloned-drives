@@ -1,5 +1,6 @@
 {
-    "rq": 100,
+    "carID": "c03139",
+    "cr": 1000,
     "make": ["Hennessey", "McLaren"],
     "model": "765LT HPE1000",
     "modelYear": 2021,
@@ -23,8 +24,7 @@
     "mra": 131.25,
     "ola": 98.1,
     "description": "Stupidly fast as we're used to from them, this 765LT from Hennessey rocketships you into tomorrow.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/1050932411078295694/hennessey_765lt.png",
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1050932509753487370/hennessey_765lt_hpe1000_hud.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "c6",
 
     "333TopSpeed": 227,

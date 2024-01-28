@@ -1,5 +1,6 @@
 {
-    "rq": 69,
+    "carID": "c00899",
+    "cr": 690,
     "make": "Mitsubishi",
     "model": "Lancer Evolution X GSR",
     "modelYear": 2008,
@@ -22,8 +23,7 @@
     "mra": 68.96,
     "ola": 79.75,
     "description": "Arguably the best American Varient of the Evo X.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1081587602957807706/evo10gsr.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 4.9,
     "333Handling": 91,
     "666TopSpeed": 162,
@@ -38,6 +38,6 @@
     "699TopSpeed": 162,
     "6990to60": 4.4,
     "699Handling": 98,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997640168544677958/evo10gsr.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

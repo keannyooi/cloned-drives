@@ -1,5 +1,6 @@
 {
-    "rq": 97,
+    "carID": "c01643",
+    "cr": 970,
     "make": "Mitsubishi",
     "model": "Lancer Evolution III Gr.A WRC",
     "modelYear": 1995,
@@ -22,8 +23,7 @@
     "mra": 70.18,
     "ola": 95,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/930221765177778206/evo3wrc.png",
-    "333TopSpeed": 144,
+     "333TopSpeed": 144,
     "3330to60": 3.8,
     "333Handling": 90,
     "666TopSpeed": 147,
@@ -38,6 +38,6 @@
     "699TopSpeed": 147,
     "6990to60": 3.4,
     "699Handling": 97,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996021883503919154/evo3rally.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

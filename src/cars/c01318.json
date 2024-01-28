@@ -1,5 +1,6 @@
 {  
-    "rq": 38,
+    "carID": "c01318",
+    "cr": 380,
     "make": "Toyota",
     "model": "Mirai High+",
     "modelYear": 2020,
@@ -22,8 +23,7 @@
     "mra": 46.61,
     "ola": 71.83,
     "description": "Front-motor and front-wheel-drive are out and rear-motor and rear-wheel drive is in as the Mirai takes a step up in quality over the hideous first generation.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1110795105968865351/Toyota_Mirai_High_20.png",
-    "333TopSpeed": 120,
+     "333TopSpeed": 120,
     "3330to60": 7.7,
     "333Handling": 80,
     "666TopSpeed": 125,
@@ -38,6 +38,6 @@
     "699TopSpeed": 125,
     "6990to60": 6.9,
     "699Handling": 85,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1110798911058223205/Toyota_Mirai_High_20.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Macan"
 }

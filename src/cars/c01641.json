@@ -1,5 +1,6 @@
 {
-    "rq": 61,
+    "carID": "c01641",
+    "cr": 610,
     "make": "Mitsubishi",
     "model": "Lancer Evolution II GSR",
     "modelYear": 1994,
@@ -22,8 +23,7 @@
     "mra": 66.23,
     "ola": 73.08,
     "description": "In December 1993, Mitsubishi unveiled the Lancer Evolution II, whose engine output was increased to 256 HP. A loyal following of the car soon developed, and they started referring to the hot Mitsubishi as the 'Lan Evo'.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/913406673161424896/evo2gsr.png",
-    "333TopSpeed": 117,
+     "333TopSpeed": 117,
     "3330to60": 4.9,
     "333Handling": 82,
     "666TopSpeed": 121,
@@ -38,6 +38,6 @@
     "699TopSpeed": 121,
     "6990to60": 4.4,
     "699Handling": 88,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996024980355686440/lanevoiigsr.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

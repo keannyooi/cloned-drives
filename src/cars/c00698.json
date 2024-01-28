@@ -1,5 +1,6 @@
 {
-    "rq": 66,
+    "carID": "c00698",
+    "cr": 660,
     "make": "Lexus",
     "model": "LF-A Concept",
     "modelYear": 2005,
@@ -22,8 +23,7 @@
     "mra": 104.44,
     "ola": 80,
     "description": "The first look at the LFA 5 years before the prodution car would release.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/821061048051826729/LF-A.png",
-    "333TopSpeed": 203,
+     "333TopSpeed": 203,
     "3330to60": 4.5,
     "333Handling": 89,
     "666TopSpeed": 205,
@@ -38,6 +38,6 @@
     "699TopSpeed": 205,
     "6990to60": 4.0,
     "699Handling": 95,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997640765532536852/LFAconcept.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

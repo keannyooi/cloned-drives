@@ -1,5 +1,6 @@
 {
-    "rq": 32,
+    "carID": "c00453",
+    "cr": 320,
     "make": "Ford",
     "model": "Focus SE",
     "modelYear": 2000,
@@ -22,8 +23,7 @@
     "mra": 45.99,
     "ola": 60.99,
     "description": "A Focus but sedan.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/819390705138008104/ford_focus_se.png",
-    "333TopSpeed": 111,
+     "333TopSpeed": 111,
     "3330to60": 8.8,
     "333Handling": 74,
     "666TopSpeed": 116,
@@ -38,6 +38,6 @@
     "699TopSpeed": 116,
     "6990to60": 7.9,
     "699Handling": 80,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003308661826932766/focus_se.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Keanny"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 58,
+    "carID": "c02087",
+    "cr": 580,
     "make": "Acura",
     "model": "TL SH-AWD",
     "modelYear": 2009,
@@ -22,8 +23,7 @@
     "mra": 68.09,
     "ola": 68.75,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/987711201742053406/TLSHAWDBased.png",
-    "333TopSpeed": 129,
+     "333TopSpeed": 129,
     "3330to60": 6.1,
     "333Handling": 85,
     "666TopSpeed": 133,
@@ -38,6 +38,6 @@
     "699TopSpeed": 133,
     "6990to60": 5.4,
     "699Handling": 91,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100178121099067494/TLAWD.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Based"
 }

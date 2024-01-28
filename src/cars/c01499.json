@@ -1,5 +1,6 @@
 {
-    "rq": 74,
+    "carID": "c01499",
+    "cr": 740,
     "make": [
         "Gemballa",
         "Porsche"
@@ -28,8 +29,7 @@
     "mra": 97.17,
     "ola": 86.08,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/828634240089718784/unknown.png",
-    "333TopSpeed": 210,
+     "333TopSpeed": 210,
     "3330to60": 3.8,
     "333Handling": 90,
     "666TopSpeed": 212,
@@ -44,6 +44,6 @@
     "699TopSpeed": 212,
     "6990to60": 3.4,
     "699Handling": 97,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1050855664815194112/Gemballa_GTR_600.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

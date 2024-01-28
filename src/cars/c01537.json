@@ -1,6 +1,7 @@
 {
-    "rq": 72,
-    "make": ["Green Lord Motors", "Tommykaira"],
+    "carID": "c01537",
+    "cr": 724,
+    "make": ["GLM", "Tommykaira"],
     "model": "Tommykaira ZZ",
     "modelYear": 2014,
     "country": "JP",
@@ -23,8 +24,7 @@
     "mra": 55.93,
     "ola": 69.04,
     "description": "Green Lord Motors, an EV platform development company founded by Kyoto University graduates, recollects the scattered remains of the Tommykaira ZZ and rebirths the ZZ in all its EV glory - no, seriously. You may be wondering what kind of black magic they've achieved to produce such a lightweight EV sports car - there's no magic, the battery is just pitifully small and only lasts for about 75 miles.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/861147215413641236/tommykaira_zz_glm.png",
-
+ 
     "333TopSpeed": 117,
     "3330to60": 3.6,
     "333Handling": 93,
@@ -45,6 +45,6 @@
     "6990to60": 3.2,
     "699Handling": 100,
 
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003177363665862656/glm_tommykaira.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/GLMTommykairaZZ(2014).png",
     "creator": "Keanny"
 }

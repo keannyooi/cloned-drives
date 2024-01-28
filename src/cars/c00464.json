@@ -1,5 +1,6 @@
 {
-    "rq": 76,
+    "carID": "c00464",
+    "cr": 760,
     "make": "Ford",
     "model": "GT",
     "modelYear": 2005,
@@ -22,8 +23,7 @@
     "mra": 80.63,
     "ola": 96.37,
     "description": "The legendary GT40's road-going descendant.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/826206964291600444/GT05.png",
-    "333TopSpeed": 205,
+     "333TopSpeed": 205,
     "3330to60": 3.4,
     "333Handling": 91,
     "666TopSpeed": 207,
@@ -38,6 +38,6 @@
     "699TopSpeed": 207,
     "6990to60": 3.1,
     "699Handling": 98,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997785200446672976/fordGT05.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

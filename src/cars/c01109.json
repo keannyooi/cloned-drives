@@ -1,5 +1,6 @@
 {
-    "rq": 52,
+    "carID": "c01109",
+    "cr": 520,
     "make": "Porsche",
     "model": "Boxster S",
     "modelYear": 2001,
@@ -22,8 +23,7 @@
     "mra": 70,
     "ola": 76.36,
     "description": "A sports car to get sappy over-no ifs, ands, and very few buts.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1077331401256480861/BoxsterS01.png",
-"333TopSpeed": 161,
+ "333TopSpeed": 161,
 "3330to60": 5.4,
 "333Handling": 87,
 
@@ -42,6 +42,6 @@
 "996TopSpeed": 168,
 "9960to60": 4.8,
 "996Handling": 90,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1080826913846743120/BoxsterSingame.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

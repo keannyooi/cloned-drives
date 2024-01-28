@@ -1,5 +1,6 @@
 {
-    "rq": 50,
+    "carID": "c00854",
+    "cr": 500,
     "make": "Mercedes-Benz",
     "model": "600 SEL",
     "modelYear": 1990,
@@ -24,8 +25,7 @@
     "mra": 76.25,
     "ola": 75.41,
     "description": "Fastest long boi W140 available.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/823584444966764554/M-B600SEL.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 5.8,
     "333Handling": 71,
     "666TopSpeed": 162,
@@ -40,6 +40,6 @@
     "699TopSpeed": 162,
     "6990to60": 5.2,
     "699Handling": 77,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1020006096590602240/Mercedes_600_SEL.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

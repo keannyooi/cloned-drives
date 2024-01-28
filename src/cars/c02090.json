@@ -1,5 +1,6 @@
 {
-    "rq": 45,
+    "carID": "c02090",
+    "cr": 450,
     "make": "Alfa Romeo",
     "model": "Spider 3.2 JTS V6 Q4",
     "modelYear": 2005,
@@ -22,8 +23,7 @@
     "mra": 57.78,
     "ola": 66.99,
     "description": "Berlina V6.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/958000957810167808/unknown.png",
-    "333TopSpeed": 151,
+     "333TopSpeed": 151,
     "3330to60": 6.5,
     "333Handling": 79,
     "666TopSpeed": 154,
@@ -38,6 +38,6 @@
     "699TopSpeed": 154,
     "6990to60": 5.8,
     "699Handling": 84,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100137290031976469/Alfa_Romeo_Spider_2005.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

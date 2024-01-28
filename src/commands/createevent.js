@@ -44,7 +44,7 @@ module.exports = {
             opponentIDs[i] = carFiles[Math.floor(Math.random() * carFiles.length)].slice(0, 6);
         }
 
-        opponentIDs = sortCars(opponentIDs, "rq", "ascending");
+        opponentIDs = sortCars(opponentIDs, "cr", "ascending");
         const roster = [], upgrades = ["000", "333", "666", "699", "969", "996"];
         for (let opponent of opponentIDs) {
             roster.push({

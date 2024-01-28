@@ -1,5 +1,6 @@
 {
-    "rq": 46,
+    "carID": "c00438",
+    "cr": 460,
     "make": "Ford",
     "model": "F-150 SVT Raptor 5.4",
     "modelYear": 2010,
@@ -22,8 +23,7 @@
     "mra": 39.4,
     "ola": 72.29,
     "description": "Ah yes, getting scammed in terms of performance.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/823492258971123732/raptor_but_slow.png",
-    "333TopSpeed": 105,
+     "333TopSpeed": 105,
     "3330to60": 7.9,
     "333Handling": 62,
     "666TopSpeed": 110,
@@ -38,6 +38,6 @@
     "699TopSpeed": 110,
     "6990to60": 7.1,
     "699Handling": 67,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1000921498535612516/2010_Raptor_blank.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Preston"
 }

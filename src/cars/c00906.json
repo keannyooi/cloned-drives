@@ -1,5 +1,6 @@
 {
-    "rq": 77,
+    "carID": "c00906",
+    "cr": 768,
     "make": "Mitsubishi",
     "model": "MiEV Evolution",
     "modelYear": 2012,
@@ -23,8 +24,7 @@
     "mra": 46.91,
     "ola": 68.42,
     "description": "To promote the i-MiEV and test the capabilities of EV technology, Mitsubishi decided to participate in the 2012 Pikes Peak International Hill Climb. For the event, they took 3 of the i-MiEV's motors, retuned them to max out at 11,000rpm and stuck 1 on the front and 2 on the back of a wide AF i-MiEV body. The resulting 322hp car, piloted by Hiroshi Masuoka, would go on and place 2nd in the EV class, with first place being a whole 15 seconds ahead.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/819383503661563934/miev_evo.png",
-
+ 
     "333TopSpeed": 120,
     "3330to60": 3.6,
     "333Handling": 99,
@@ -45,6 +45,6 @@
     "9690to60": 3.4,
     "969Handling": 107,
 
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003654403359768618/miev_evo.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/MitsubishiMiEVEvolution(2012).png",
     "creator": "Keanny"
 }

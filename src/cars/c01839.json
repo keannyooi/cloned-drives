@@ -1,5 +1,6 @@
 {
-    "rq": 50,
+    "carID": "c01839",
+    "cr": 500,
     "make": "Subaru",
     "model": "Outback 3.6R Premium",
     "modelYear": 2010,
@@ -24,8 +25,7 @@
     "mra": 58.87,
     "ola": 82.19,
     "description": "Far more capable off-road than its sedan underpinnings would suggest.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/828457843790184478/legacy_3.6r.png",
-    "333TopSpeed": 120,
+     "333TopSpeed": 120,
     "3330to60": 6.9,
     "333Handling": 71,
     "666TopSpeed": 125,
@@ -40,6 +40,6 @@
     "699TopSpeed": 125,
     "6990to60": 6.2,
     "699Handling": 77,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100177310050697377/OutbackpRem.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "McNuggets"
 }

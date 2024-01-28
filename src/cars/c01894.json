@@ -1,5 +1,6 @@
 {
-    "rq": 29,
+    "carID": "c01894",
+    "cr": 290,
     "make": "Toyota",
     "model": "Corolla ZR Hybrid",
     "modelYear": 2018,
@@ -25,8 +26,7 @@
     "mra": 34.77,
     "ola": 72.38,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/870245353524449330/Corolla_ZR_Hybrid_18.png",
-    "333TopSpeed": 116,
+     "333TopSpeed": 116,
     "3330to60": 10.0,
     "333Handling": 76,
     "666TopSpeed": 120,
@@ -41,6 +41,6 @@
     "699TopSpeed": 120,
     "6990to60": 8.9,
     "699Handling": 82,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1023567610144624720/Toyota_Corolla_ZR_Hybrid.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Macan"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 73,
+    "carID": "c02671",
+    "cr": 664,
     "make": "Alfa Romeo",
     "model": "8C Spider",
     "modelYear": 2008,
@@ -13,7 +14,7 @@
     "isPrize": false,
 	
     "weight": 1675,
-    "gc": "Medium",
+    "gc": "Low",
     "seatCount": 2,
     "bodyStyle": "Convertible",
     "tcs": true,
@@ -23,8 +24,7 @@
     "mra": 68.75,
     "ola": 86.36,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/1031198316052103188/8cspider.png",
-	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1031198654008148038/8CSpider.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AlfaRomeo8CSpider(2008).png",
     "creator": "Bnuuy",
 
 "333TopSpeed": 183, 

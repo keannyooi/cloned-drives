@@ -1,5 +1,6 @@
 {
-    "rq": 39,
+    "carID": "c01888",
+    "cr": 390,
     "make": "Toyota",
     "model": "Corolla 2.0 Sport Hybrid",
     "modelYear": 2019,
@@ -22,8 +23,7 @@
     "mra": 63.15,
     "ola": 80.95,
     "description": "Possibly the best looking Corolla ever.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/867795791257796608/D.ToyotaCorolla20SHybrid.png",
-    "333TopSpeed": 120,
+     "333TopSpeed": 120,
     "3330to60": 8.0,
     "333Handling": 79,
     "666TopSpeed": 124,
@@ -38,6 +38,6 @@
     "699TopSpeed": 124,
     "6990to60": 7.1,
     "699Handling": 84,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996485083252932728/COROLLAHYBRID.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

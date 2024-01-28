@@ -1,5 +1,6 @@
 {
-    "rq": 70,
+    "carID": "c00642",
+    "cr": 700,
     "make": ["Lagonda","Aston Martin"],
     "model": "Taraf",
     "modelYear": 2015,
@@ -22,8 +23,7 @@
     "mra": 79.25,
     "ola": 76.19,
     "description": "The most Luxurious Rapide.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/852108768010829824/lagondataraf.png",
-    "333TopSpeed": 198,
+     "333TopSpeed": 198,
     "3330to60": 4.0,
     "333Handling": 90,
     "666TopSpeed": 200,
@@ -38,6 +38,6 @@
     "699TopSpeed": 200,
     "6990to60": 3.6,
     "699Handling": 97,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995981380704010310/taraf.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

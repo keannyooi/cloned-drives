@@ -1,5 +1,6 @@
 {
-    "rq": 30,
+    "carID": "c05074",
+    "cr": 300,
     "make": "Porsche",
     "model": "FLA (Type 296)",
     "modelYear": 1973,
@@ -23,8 +24,7 @@
     "mra": 24.91,
     "ola": 55,
     "description": "",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158083077923418152/miscFLA.png?ex=651af469&is=6519a2e9&hm=3c392fe0afacee692dc6db40620b68f825f3552979cd60fdeef621785fa1d89d&",
-	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158083293892325437/MiscFLA.png?ex=651af49d&is=6519a31d&hm=ffd4dc0d5a07bdd5293b7dadbd88d7c1da150ee81ed71e0b43d660128ab5f4ad&",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
 
 "333TopSpeed": 121,
 "3330to60": 9,

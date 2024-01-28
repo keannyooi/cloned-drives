@@ -1,5 +1,6 @@
 {
-    "rq": 44,
+    "carID": "c01626",
+    "cr": 440,
     "make": "Mazda",
     "model": "Savanna RX-7 Turbo",
     "modelYear": 1983,
@@ -22,8 +23,7 @@
     "mra": 54.24,
     "ola": 75,
     "description": "The RX-7's first go with the mighty turbo wankel, for Japan only.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/970458292801392692/Mazda_Savanna_RX-7_Turbo_1983.png",
-    "333TopSpeed": 139,
+     "333TopSpeed": 139,
     "3330to60": 6.1,
     "333Handling": 79,
     "666TopSpeed": 143,
@@ -38,6 +38,6 @@
     "699TopSpeed": 143,
     "6990to60": 5.4,
     "699Handling": 84,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996621849326784562/Mazda_Savanna_RX-7_Turbo_1983_Hud.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "DodgeDemon"
 }

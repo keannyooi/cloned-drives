@@ -1,5 +1,6 @@
 {
-    "rq": 73,
+    "carID": "c01441",
+    "cr": 730,
     "make": "Jaguar",
     "model": "XJ220",
     "modelYear": 1992,
@@ -26,8 +27,7 @@
     "mra": 103.08,
     "ola": 98.29,
     "description": "The fastest production car for it's time, before the F1 Came in '93.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/859607969309261874/CD_Jaguar_XJ220.png?width=1410&height=878",
-    "333TopSpeed": 218,
+     "333TopSpeed": 218,
     "3330to60": 3.9,
     "333Handling": 91,
     "666TopSpeed": 221,
@@ -42,6 +42,6 @@
     "699TopSpeed": 221,
     "6990to60": 3.5,
     "699Handling": 98,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1018111912006918154/Jaguar_XJ220.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Exist"
 }

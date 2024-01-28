@@ -1,5 +1,6 @@
 {
-    "rq": 50,
+    "carID": "c01803",
+    "cr": 500,
     "make": "Nissan",
     "model": "Titan SV 4x2 King Cab",
     "modelYear": 2020,
@@ -23,8 +24,7 @@
     "mra": 60.58,
     "ola": 79.37,
     "description": "With the absence of the rear doors, less leg room and no power being sent to the front wheels; this is a 400hp V8 Titan that lacks practicality and capability.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/970057781774274560/IMG_4727.png",
-
+ 
     "333TopSpeed": 120,
     "3330to60": 6,
     "333Handling": 68,
@@ -45,6 +45,6 @@
     "6990to60": 5.4,
     "699Handling": 73,
 
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1022162121452163083/TitSV4x2KC.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

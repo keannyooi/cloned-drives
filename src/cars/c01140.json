@@ -1,5 +1,6 @@
 {
-    "rq": 60,
+    "carID": "c01140",
+    "cr": 604,
     "make": "Renault",
     "model": "DeZir",
     "modelYear": 2010,
@@ -24,8 +25,7 @@
     "mra": 51,
     "ola": 65.2,
     "description": "As the first project led by Laurens van de Acker after leaving Mazda for Renault, the DeZir is the first in a series of show cars under Renault's new styling movement, with each car signifying a stage in a \"life cycle\". It's symbolistic of love and passion inside and out with its bright red colour and super flowy body lines. Despite being powered by electricity, it has none of the chunkiness of conventional EVs thanks to its lightweight Kevlar body and underpinnings derived from the Megane Trophy.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/826091890997985290/renault_dezir.png",
-
+ 
     "333TopSpeed": 117,
     "3330to60": 4.8,
     "333Handling": 93,
@@ -46,6 +46,6 @@
     "6990to60": 4.3,
     "699Handling": 100,
 
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003276419167698984/dezir.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/RenaultDeZir(2010).png",
     "creator": "Keanny"
 }

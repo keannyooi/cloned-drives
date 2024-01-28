@@ -1,5 +1,6 @@
 {
-    "rq": 56,
+    "carID": "c00732",
+    "cr": 560,
     "make": "Lotus",
     "model": "Elise 111S",
     "modelYear": 1999,
@@ -24,8 +25,7 @@
     "mra": 58.06,
     "ola": 81.48,
     "description": "Always improving upon perfection.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/855206199246979123/Lotus_Elise_111S.png",
-    "333TopSpeed": 137,
+     "333TopSpeed": 137,
     "3330to60": 5.1,
     "333Handling": 91,
     "666TopSpeed": 141,
@@ -40,6 +40,6 @@
     "699TopSpeed": 141,
     "6990to60": 4.6,
     "699Handling": 98,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100137402615468172/Elise111S.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Based"
 }

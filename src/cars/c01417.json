@@ -1,5 +1,6 @@
 {
-    "rq": 68,
+    "carID": "c01417",
+    "cr": 680,
     "make": "Volvo",
     "model": "C30 Polestar Performance Concept",
     "modelYear": 2010,
@@ -28,8 +29,7 @@
     "mra": 86.27,
     "ola": 77.27,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/849600227224190986/Volvo-C30-Polestar-Performance-Concept-2.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 4.2,
     "333Handling": 86,
     "666TopSpeed": 162,
@@ -44,6 +44,6 @@
     "699TopSpeed": 162,
     "6990to60": 3.7,
     "699Handling": 92,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1018234856511127633/Volvo_C30_Polestar_Concept.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Ahmed"
 }

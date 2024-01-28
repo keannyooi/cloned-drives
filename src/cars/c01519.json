@@ -1,5 +1,6 @@
 {
-    "rq": 47,
+    "carID": "c01519",
+    "cr": 470,
     "make": "Volvo",
     "model": "S60 T5 Momentum FWD",
     "modelYear": 2019,
@@ -25,8 +26,7 @@
     "mra": 79.52,
     "ola": 81.82,
     "description": "A beautifully crafted compact luxury car and a surprisingly capable sports sedan.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/864613450608934932/Volvo-S60-T5-Momentum-FWD.png",
-    "333TopSpeed": 149,
+     "333TopSpeed": 149,
     "3330to60": 6.3,
     "333Handling": 84,
     "666TopSpeed": 152,
@@ -41,6 +41,6 @@
     "699TopSpeed": 152,
     "6990to60": 5.6,
     "699Handling": 90,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1004786123874254908/Volvo-S60-T5-Momentum-FWD.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Johnny"
 }

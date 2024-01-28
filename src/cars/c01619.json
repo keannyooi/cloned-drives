@@ -1,5 +1,6 @@
 {
-    "rq": 42,
+    "carID": "c01619",
+    "cr": 420,
     "make": "Mazda",
     "model": "RX-7 Turbo II Convertible",
     "modelYear": 1989,
@@ -22,8 +23,7 @@
     "mra": 63.72,
     "ola": 67.15,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/971796695715291136/Mazda_RX-7_TII_Conv_1989.png",
-    "333TopSpeed": 147,
+     "333TopSpeed": 147,
     "3330to60": 6.6,
     "333Handling": 80,
     "666TopSpeed": 150,
@@ -38,6 +38,6 @@
     "699TopSpeed": 150,
     "6990to60": 5.9,
     "699Handling": 85,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996620945349410836/Mazda_RX-7_TII_Conv_1989_Hud.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "DodgeDemon"
 }

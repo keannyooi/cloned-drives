@@ -1,5 +1,6 @@
 {
-    "rq": 30,
+    "carID": "c01572",
+    "cr": 300,
     "make": "Infiniti",
     "model": "M30",
     "modelYear": 1990,
@@ -24,8 +25,7 @@
     "mra": 53.67,
     "ola": 71.57,
     "description": "Samsung Galaxy M30.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/969595898348851240/IMG_20210406_191104.png",
-    "333TopSpeed": 130,
+     "333TopSpeed": 130,
     "3330to60": 9.0,
     "333Handling": 72,
     "666TopSpeed": 134,
@@ -40,6 +40,6 @@
     "699TopSpeed": 134,
     "6990to60": 8.1,
     "699Handling": 78,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1022939322120409088/Infiniti_M30.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Cenard"
 }

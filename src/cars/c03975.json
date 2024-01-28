@@ -1,5 +1,6 @@
 {  
-    "rq": 42,
+    "carID": "c03975",
+    "cr": 420,
     "make": "Ford",
     "model": "Taurus 2.0L Ecoboost",
     "modelYear": 2016,
@@ -22,8 +23,7 @@
     "mra": 59.2,
     "ola": 67.57,
     "description": "The Taurus gets another update and an Ecoboost for 2016. Still, it keeps struggling against its main opponents, too soft and dull for the new market standards.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1110662689019146241/ford_taurus_ecoboost.png",
-    "333TopSpeed": 116,
+     "333TopSpeed": 116,
     "3330to60": 7.0,
     "333Handling": 77,
     "666TopSpeed": 120,
@@ -38,6 +38,6 @@
     "699TopSpeed": 120,
     "6990to60": 6.3,
     "699Handling": 83,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1110662994855211028/taurus_ecoboost.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Lemon"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 24,
+    "carID": "c01490",
+    "cr": 240,
     "make": "Shelby",
     "model": "Dodge Charger",
     "modelYear": 1983,
@@ -25,8 +26,7 @@
     "mra": 38.76,
     "ola": 64,
     "description": "Carroll Shelby’s personal Dodge Charger.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/827594197321646120/Shelby-Dodge-Charger.png",
-    "333TopSpeed": 116,
+     "333TopSpeed": 116,
     "3330to60": 9.5,
     "333Handling": 76,
     "666TopSpeed": 120,
@@ -41,6 +41,6 @@
     "699TopSpeed": 120,
     "6990to60": 8.5,
     "699Handling": 82,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1004785182143946872/Shelby-Dodge-Charger.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Johnny"
 }

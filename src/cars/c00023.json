@@ -1,5 +1,6 @@
 {
-    "rq": 22,
+    "carID": "c00023",
+    "cr": 220,
     "make": "Alfa Romeo",
     "model": "147 1.6 TwinSpark",
     "modelYear": 2000,
@@ -22,8 +23,7 @@
     "mra": 42.16,
     "ola": 81.97,
     "description": "The first Alfa Romeo to feature electronic traction control.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/837229155073785926/alfa_romeo_147_1.6_ts.png",
-    "333TopSpeed": 120,
+     "333TopSpeed": 120,
     "3330to60": 10.2,
     "333Handling": 75,
     "666TopSpeed": 125,
@@ -38,6 +38,6 @@
     "699TopSpeed": 125,
     "6990to60": 9.1,
     "699Handling": 81,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003255221931216997/147_1.6.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Keanny"
 }

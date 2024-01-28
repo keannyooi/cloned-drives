@@ -1,5 +1,6 @@
 {
-    "rq": 51,
+    "carID": "c00337",
+    "cr": 505,
     "make": "De Tomaso",
     "model": "Pantera GT5",
     "modelYear": 1980,
@@ -24,8 +25,7 @@
     "mra": 73.29,
     "ola": 74.77,
     "description": "W I D E   P A N T E R A.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/827026378548969482/de_tomaso_pantera_gt5.png",
-    "333TopSpeed": 157,
+     "333TopSpeed": 157,
     "3330to60": 5.1,
     "333Handling": 83,
     "666TopSpeed": 161,
@@ -40,6 +40,6 @@
     "699TopSpeed": 161,
     "6990to60": 4.6,
     "699Handling": 89,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003275836515962920/pantera_gt5.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/DeTomasoPanteraGT5(1980).png",
     "creator": "Keanny"
 }

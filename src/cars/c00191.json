@@ -1,5 +1,6 @@
 {
-    "rq": 81,
+    "carID": "c00191",
+    "cr": 810,
     "make": "BMW",
     "model": "M550i xDrive",
     "modelYear": 2018,
@@ -22,8 +23,7 @@
     "mra": 70.32,
     "ola": 68.42,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/828007519825166406/M550i_xDrive_18.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 3.6,
     "333Handling": 88,
     "666TopSpeed": 162,
@@ -38,6 +38,6 @@
     "699TopSpeed": 162,
     "6990to60": 3.2,
     "699Handling": 94,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017456374755631215/BMW_M550i_xDrive.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Macan"
 }

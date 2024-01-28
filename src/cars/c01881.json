@@ -1,5 +1,6 @@
 {
-    "rq": 48,
+    "carID": "c01881",
+    "cr": 482,
     "make": "Toyota",
     "model": "Century GRMN",
     "modelYear": 2018,
@@ -23,8 +24,7 @@
     "mra": 68.61,
     "ola": 68.46,
     "description": "Pictured here is the company car of Akio Toyoda, then president of Toyota Motor Company and (still) surprisingly loves cars as much as we do. In fact, he's the kind of person that would love drift this thing. Unfortunately, he's not allowed to do that and not much is known about the car too, other than it features an air suspension different from the stock car as well as 19-inch BBS rims wrapped in Yokohama Advan Sport V105 tyres.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/867728761863536640/toyota_century_grmn.png",
-
+ 
     "333TopSpeed": 158,
     "3330to60": 5.4,
     "333Handling": 74,
@@ -45,6 +45,6 @@
     "6990to60": 4.8,
     "699Handling": 80,
 
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1001848199906086973/grmn_century.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ToyotaCenturyGRMN(2018).png",
     "creator": "Keanny"
 }

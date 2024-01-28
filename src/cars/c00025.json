@@ -1,5 +1,6 @@
 {
-    "rq": 46,
+    "carID": "c00025",
+    "cr": 460,
     "make": "Alfa Romeo",
     "model": "147 GTA",
     "modelYear": 2002,
@@ -24,8 +25,7 @@
     "mra": 71.63,
     "ola": 88.02,
     "description": "Alfa's hot hatch that feels like the Millennium Falcon's overdrive while accelerating.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/822823944821932032/alfa_romeo_147_gta.png",
-    "333TopSpeed": 155,
+     "333TopSpeed": 155,
     "3330to60": 5.8,
     "333Handling": 84,
     "666TopSpeed": 159,
@@ -40,6 +40,6 @@
     "699TopSpeed": 159,
     "6990to60": 5.2,
     "699Handling": 90,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003288612957339688/147_gta.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Keanny"
 }

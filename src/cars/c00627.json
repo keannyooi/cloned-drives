@@ -1,5 +1,6 @@
 {
-    "rq": 42,
+    "carID": "c00627",
+    "cr": 420,
     "make": ["Kid's Heart","Nissan"],
     "model": "SilEighty",
     "modelYear": 1998,
@@ -22,8 +23,7 @@
     "mra": 59.57,
     "ola": 75,
     "description": "Wings of fire.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/819576559911567380/Sil.png",
-    "333TopSpeed": 116,
+     "333TopSpeed": 116,
     "3330to60": 5.3,
     "333Handling": 77,
     "666TopSpeed": 120,
@@ -38,6 +38,6 @@
     "699TopSpeed": 120,
     "6990to60": 4.8,
     "699Handling": 83,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995806954821787708/sil80.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

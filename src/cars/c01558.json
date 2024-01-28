@@ -1,5 +1,6 @@
 {
-    "rq": 9,
+    "carID": "c01558",
+    "cr": 90,
     "make": "Honda",
     "model": "S600",
     "modelYear": 1964,
@@ -25,8 +26,7 @@
     "mra": 17.89,
     "ola": 59.55,
     "description": "A classic S kei sports car with a 606 cc engine.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/865690499318022205/image0.png",
-    "333TopSpeed": 97,
+     "333TopSpeed": 97,
     "3330to60": 16.9,
     "333Handling": 62,
     "666TopSpeed": 102,
@@ -41,6 +41,6 @@
     "996TopSpeed": 108,
     "9960to60": 15.1,
     "996Handling": 64,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1051054894989201479/Honda_S600.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

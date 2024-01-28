@@ -1,5 +1,6 @@
 {
-    "rq": 90,
+    "carID": "c00630",
+    "cr": 900,
     "make": "Koenigsegg",
     "model": "Agera",
     "modelYear": 2011,
@@ -22,8 +23,7 @@
     "mra": 125,
     "ola": 106.67,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/844537448406843392/agera.png",
-    "333TopSpeed": 251,
+     "333TopSpeed": 251,
     "3330to60": 2.9,
     "333Handling": 94,
     "666TopSpeed": 253,
@@ -38,6 +38,6 @@
     "699TopSpeed": 253,
     "6990to60": 2.6,
     "699Handling": 101,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997784383945711636/agera11.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Aqo"
 }

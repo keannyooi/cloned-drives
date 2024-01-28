@@ -1,5 +1,6 @@
 {
-    "rq": 1,
+    "carID": "c01024",
+    "cr": 10,
     "make": "Peel",
     "model": "Trident",
     "modelYear": 1965,
@@ -22,8 +23,7 @@
     "mra": 0,
     "ola": 0,
     "description": "The slightly more stylish but slightly slower version of the P50.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/823502086506545202/trident.png",
-    "333TopSpeed": 38,
+     "333TopSpeed": 38,
     "3330to60": 99.9,
     "333Handling": 46,
     "666TopSpeed": 45,
@@ -38,6 +38,6 @@
     "699TopSpeed": 45,
     "6990to60": 99.9,
     "699Handling": 50,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997545298115166410/peeltrident.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

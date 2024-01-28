@@ -1,7 +1,8 @@
 {
-    "rq": 71,
+    "carID": "c01209",
+    "cr": 711,
     "make": "Subaru",
-    "model": "Impreza WRX STI",
+    "model": "Impreza WRX STi Version III",
     "modelYear": 1997,
     "country": "JP",
     "topSpeed": 155,
@@ -21,11 +22,10 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 66.27,
-    "ola": 60,
+    "mra": 67.88,
+    "ola": 71.45,
     "description": "The first STI variant of the Impreza, made with the DNA from its rally counterpart",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/838928678515114044/image0.jpg",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 4.4,
     "333Handling": 84,
     "666TopSpeed": 162,
@@ -40,6 +40,6 @@
     "996TopSpeed": 165,
     "9960to60": 3.9,
     "996Handling": 86,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1050811066143223898/Subaru_Impreza_WRX_STi_1997.png",
-    "creator": "Spence"
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/SubaruImprezaWRXSTiVersionIII(1996).png",
+    "creator": "Bnuuy"
 }

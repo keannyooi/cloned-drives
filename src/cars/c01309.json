@@ -1,5 +1,6 @@
 {
-    "rq": 12,
+    "carID": "c01309",
+    "cr": 112,
     "make": "Toyota",
     "model": "Corona Coupe SR",
     "modelYear": 1974,
@@ -22,8 +23,7 @@
     "mra": 37.42,
     "ola": 66.25,
     "description": "funny name.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/866643586983395338/coooorona.png",
-    "333TopSpeed": 101,
+     "333TopSpeed": 101,
     "3330to60": 15.2,
     "333Handling": 64,
     "666TopSpeed": 107,
@@ -38,6 +38,6 @@
     "699TopSpeed": 107,
     "6990to60": 13.6,
     "699Handling": 69,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997545891160395896/coronacoupeSR.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ToyotaCoronaCoupeSR(1974).png",
     "creator": "Bnuuy"
 }

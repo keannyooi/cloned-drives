@@ -1,5 +1,6 @@
 {
-    "rq": 51,
+    "carID": "c00167",
+    "cr": 512,
     "make": "BMW",
     "model": "540i",
     "modelYear": 1996,
@@ -22,8 +23,7 @@
     "mra": 76.54,
     "ola": 81.48,
     "description": "A great sports car disguised as a luxury sedan.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/825087097605587013/540i.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 5.9,
     "333Handling": 74,
     "666TopSpeed": 162,
@@ -38,6 +38,6 @@
     "699TopSpeed": 162,
     "6990to60": 5.3,
     "699Handling": 80,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095002624534786199/BMW_540i_1996.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BMW540i(1996).png",
     "creator": "Macan"
 }

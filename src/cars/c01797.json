@@ -1,5 +1,6 @@
 {
-    "rq": 61,
+    "carID": "c01797",
+    "cr": 610,
     "make": "Nissan",
     "model": "Stagea 260RS Autech Version",
     "modelYear": 1997,
@@ -25,8 +26,7 @@
     "mra": 63.22,
     "ola": 80,
     "description": "The GT-R wagon.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/966804037951455232/Stagea260RSAutech.png",
-    "333TopSpeed": 153,
+     "333TopSpeed": 153,
     "3330to60": 5.2,
     "333Handling": 85,
     "666TopSpeed": 157,
@@ -41,6 +41,6 @@
     "699TopSpeed": 157,
     "6990to60": 4.7,
     "699Handling": 91,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997641876771446784/stagea260rs.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 10,
+    "carID": "c01053",
+    "cr": 100,
     "make": "Porsche",
     "model": "356 SL Coupe",
     "modelYear": 1951,
@@ -23,8 +24,7 @@
     "mra": 25.99,
     "ola": 70,
     "description": "",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1154044133665677382/956SLCoupe.png",
-	"racehud": "https://cdn.discordapp.com/attachments/995376525119586356/1017170481796882442/Porsche_356_Gmund_46.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
 
 "333TopSpeed": 110,
 "3330to60": 13.1,

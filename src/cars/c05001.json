@@ -1,5 +1,6 @@
 {
-    "rq": 32,
+    "carID": "c05001",
+    "cr": 320,
     "make": "Porsche",
     "model": "911 T 2.2",
     "modelYear": 1969,
@@ -23,8 +24,7 @@
     "mra": 56.21,
     "ola": 73.45,
     "description": "",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158129491252629646/Porsche911T2.21969.png?ex=651b1fa3&is=6519ce23&hm=cd4490b9bd5192fcc0a70b1784dc5312376291493a97698e690965a090c9d63b&",
-	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158129656382361740/Porsche911T2.21969.png?ex=651b1fcb&is=6519ce4b&hm=e8bbf2975ae3f3e657f544acf82695dce86c754b69521120ffebaa74f4828ea7&",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
 
 "333TopSpeed": 131,
 "3330to60": 8.7,

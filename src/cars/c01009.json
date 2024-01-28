@@ -1,5 +1,6 @@
 {
-    "rq": 11,
+    "carID": "c01009",
+    "cr": 110,
     "make": "Opel",
     "model": "Manta GT/E",
     "modelYear": 1974,
@@ -22,8 +23,7 @@
     "mra": 42.45,
     "ola": 75,
     "description": "The most powerful Manta to come out of the factory with a 1.9 litre engine with Bosch L-Jetronic fuel injection.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/857524242153340938/F.png",
-    "333TopSpeed": 123,
+     "333TopSpeed": 123,
     "3330to60": 9.9,
     "333Handling": 68,
     "666TopSpeed": 128,
@@ -38,6 +38,6 @@
     "699TopSpeed": 128,
     "6990to60": 8.8,
     "699Handling": 73,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1035898732924895242/manta_gte.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 73,
+    "carID": "c01658",
+    "cr": 730,
     "make": "Mitsubishi",
     "model": "Lancer Evolution IX MR Tuned by Ralliart",
     "modelYear": 2005,
@@ -22,8 +23,7 @@
     "mra": 77.77,
     "ola": 78.57,
     "description": "None.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1081584034737569822/evo9tunedredo.png",
-    "333TopSpeed": 163,
+     "333TopSpeed": 163,
     "3330to60": 4.6,
     "333Handling": 89,
     "666TopSpeed": 167,
@@ -38,6 +38,6 @@
     "699TopSpeed": 167,
     "6990to60": 4.1,
     "699Handling": 95,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996029866736627722/evoixmrtunedralli.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 19,
+    "carID": "c00258",
+    "cr": 190,
     "make": "Chevrolet",
     "model": "Cavalier CS",
     "modelYear": 1982,
@@ -22,8 +23,7 @@
     "mra": 21.55,
     "ola": 61.01,
     "description": "An Opel, but maybe not, but maybe yes.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/819544891746680853/F.ChevyCavalierCS.png",
-    "333TopSpeed": 105,
+     "333TopSpeed": 105,
     "3330to60": 12.4,
     "333Handling": 70,
     "666TopSpeed": 110,
@@ -38,6 +38,6 @@
     "699TopSpeed": 110,
     "6990to60": 11.1,
     "699Handling": 75,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017171588145234001/Chevrolet_Cavalier_CS.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 38,
+    "carID": "c01949",
+    "cr": 380,
     "make": "Toyota",
     "model": "Yaris Sedan",
     "modelYear": 2019,
@@ -22,8 +23,7 @@
     "mra": 48.17,
     "ola": 69.57,
     "description": "Cute Mazda you got there, oh wait.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/868932163335241768/D.ToyotaYarisSedan.png",
-    "333TopSpeed": 123,
+     "333TopSpeed": 123,
     "3330to60": 8.7,
     "333Handling": 80,
     "666TopSpeed": 128,
@@ -38,6 +38,6 @@
     "699TopSpeed": 128,
     "6990to60": 7.8,
     "699Handling": 85,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996486945481969784/yarissedan.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

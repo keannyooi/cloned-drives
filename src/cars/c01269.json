@@ -1,5 +1,6 @@
 {
-    "rq": 70,
+    "carID": "c01269",
+    "cr": 696,
     "make": "Tesla",
     "model": "Model S P85+",
     "modelYear": 2012,
@@ -25,8 +26,7 @@
     "mra": 63.85,
     "ola": 81.82,
     "description": "The Plus package substantially improves the Model S's handling. Nothing much else is upgraded from the P85, however it served its purpose as the flagship model back in the early days of Tesla, consistently making the jaws of automotive journalists drop.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/848059479023157250/tesla_model_s_p85.png",
-    "333TopSpeed": 134,
+     "333TopSpeed": 134,
     "3330to60": 3.8,
     "333Handling": 85,
     "666TopSpeed": 138,
@@ -41,6 +41,6 @@
     "699TopSpeed": 138,
     "6990to60": 3.4,
     "699Handling": 91,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1002951685439750266/model_s_p85.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/TeslaModelSP85%2B(2012).png",
     "creator": "Keanny"
 }

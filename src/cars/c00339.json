@@ -1,5 +1,6 @@
 {
-    "rq": 45,
+    "carID": "c00339",
+    "cr": 447,
     "make": "De Tomaso",
     "model": "Pantera GTS",
     "modelYear": 1972,
@@ -24,8 +25,7 @@
     "mra": 71.6,
     "ola": 89.06,
     "description": "Built for Group 3 racing, the GTS looks sportier than ever and packs a bigger punch.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/848059883605458964/de_tomaso_pantera_gts.png",
-    "333TopSpeed": 170,
+     "333TopSpeed": 170,
     "3330to60": 5.5,
     "333Handling": 80,
     "666TopSpeed": 173,
@@ -40,6 +40,6 @@
     "699TopSpeed": 173,
     "6990to60": 4.9,
     "699Handling": 85,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003165661507354634/pantera_gts.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/DeTomasoPanteraGTS(1972).png",
     "creator": "Keanny"
 }

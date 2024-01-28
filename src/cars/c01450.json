@@ -1,5 +1,6 @@
 {
-    "rq": 51,
+    "carID": "c01450",
+    "cr": 505,
     "make": [
         "Alpina",
         "BMW"
@@ -28,9 +29,8 @@
     "fuelType": "Petrol",
     "mra": 80.42,
     "ola": 86.96,
-    "description": "Alpina adding the spice. Card by Andu.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/945395623719493632/B7SBiTurbo.png",
-    "333TopSpeed": 170,
+    "description": "Alpina adding the spice.",
+     "333TopSpeed": 170,
     "3330to60": 5.5,
     "333Handling": 77,
     "666TopSpeed": 173,
@@ -45,6 +45,6 @@
     "699TopSpeed": 173,
     "6990to60": 4.9,
     "699Handling": 83,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1050977367100751882/B7S.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AlpinaB7STurboCoupe(1982).png",
     "creator": "Andu"
 }

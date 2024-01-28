@@ -1,5 +1,6 @@
 {
-    "rq": 33,
+    "carID": "c01614",
+    "cr": 330,
     "make": "Mazda",
     "model": "RX-7",
     "modelYear": 1986,
@@ -22,8 +23,7 @@
     "mra": 51.51,
     "ola": 68.48,
     "description": "The watered-down RX-7 for the international market.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/971796269922127872/Mazda_RX-7_1986.png",
-    "333TopSpeed": 134,
+     "333TopSpeed": 134,
     "3330to60": 7.9,
     "333Handling": 80,
     "666TopSpeed": 138,
@@ -38,6 +38,6 @@
     "699TopSpeed": 138,
     "6990to60": 7.1,
     "699Handling": 85,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996621767797915708/Mazda_RX-7_1986_Hud.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "DodgeDemon"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 15,
+    "carID": "c01560",
+    "cr": 150,
     "make": "Honda",
     "model": "S800 Coupe",
     "modelYear": 1966,
@@ -25,8 +26,7 @@
     "mra": 12.41,
     "ola": 85.29,
     "description": "A classic S kei sports car, with a roof.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/862149845408808980/image0.png",
-    "333TopSpeed": 106,
+     "333TopSpeed": 106,
     "3330to60": 12.9,
     "333Handling": 64,
     "666TopSpeed": 111,
@@ -41,6 +41,6 @@
     "996TopSpeed": 116,
     "9960to60": 11.6,
     "996Handling": 66,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100169085683240970/S800.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

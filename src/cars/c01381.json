@@ -1,5 +1,6 @@
 {
-    "rq": 28,
+    "carID": "c01381",
+    "cr": 280,
     "make": "Volkswagen",
     "model": "Jetta TDI Cup Edition",
     "modelYear": 2010,
@@ -22,8 +23,7 @@
     "mra": 63.27,
     "ola": 73.12,
     "description": "Let’s be honest, who wouldn’t want a sporty version of a cheating scandal diesel? Card by Andu",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/821099188640022549/JettaTDICupEdition.png",
-    "333TopSpeed": 134,
+     "333TopSpeed": 134,
     "3330to60": 8.8,
     "333Handling": 75,
     "666TopSpeed": 138,
@@ -38,6 +38,6 @@
     "699TopSpeed": 138,
     "6990to60": 7.9,
     "699Handling": 81,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1050931096495333376/TDICup.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Andu"
 }

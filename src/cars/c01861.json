@@ -1,5 +1,6 @@
 {
-    "rq": 27,
+    "carID": "c01861",
+    "cr": 270,
     "make": "Toyota",
     "model": "Auris HSD",
     "modelYear": 2010,
@@ -22,8 +23,7 @@
     "mra": 56.63,
     "ola": 68.47,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/867157156250517515/E.ToyotaAurisHSD.png",
-    "333TopSpeed": 118,
+     "333TopSpeed": 118,
     "3330to60": 10.5,
     "333Handling": 73,
     "666TopSpeed": 122,
@@ -38,6 +38,6 @@
     "699TopSpeed": 122,
     "6990to60": 9.4,
     "699Handling": 79,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996482314416697364/aurishd.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

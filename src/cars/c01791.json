@@ -1,5 +1,6 @@
 {
-    "rq": 38,
+    "carID": "c01791",
+    "cr": 380,
     "make": "Nissan",
     "model": "Stagea 25G Four",
     "modelYear": 1996,
@@ -24,8 +25,7 @@
     "mra": 51.95,
     "ola": 82.5,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/968272585727049779/Stagea25G4.png",
-    "333TopSpeed": 117,
+     "333TopSpeed": 117,
     "3330to60": 7.6,
     "333Handling": 73,
     "666TopSpeed": 121,
@@ -40,6 +40,6 @@
     "699TopSpeed": 121,
     "6990to60": 6.8,
     "699Handling": 79,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997645042644680825/stagea25gfour.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

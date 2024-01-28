@@ -1,5 +1,6 @@
 {
-    "rq": 106,
+    "carID": "c01522",
+    "cr": 1060,
     "make": "Aspark",
     "model": "Owl",
     "modelYear": 2021,
@@ -22,8 +23,7 @@
     "mra": 121.41,
     "ola": 105.88,
     "description": "The first hypercar from a Japanese maker will reach 50 customers worldwide at prices in excess of $3 million.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/966803673424482304/AsparkOWL.png",
-    "333TopSpeed": 251,
+     "333TopSpeed": 251,
     "3330to60": 1.6,
     "333Handling": 95,
     "666TopSpeed": 253,
@@ -38,6 +38,6 @@
     "699TopSpeed": 253,
     "6990to60": 1.4,
     "699Handling": 102,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995715910054719518/owl.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

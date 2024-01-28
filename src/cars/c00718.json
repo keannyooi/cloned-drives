@@ -1,5 +1,6 @@
 {
-    "rq": 66,
+    "carID": "c00718",
+    "cr": 660,
     "make": "Lincoln",
     "model": "Continental 3.0T Reserve AWD",
     "modelYear": 2017,
@@ -22,8 +23,7 @@
     "mra": 69.74,
     "ola": 67.92,
     "description": "Silky American luxury. With a British name.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/828047584932659200/Continental_3.0T_Reserve_AWD_17.png",
-    "333TopSpeed": 149,
+     "333TopSpeed": 149,
     "3330to60": 5.0,
     "333Handling": 79,
     "666TopSpeed": 152,
@@ -38,6 +38,6 @@
     "699TopSpeed": 152,
     "6990to60": 4.5,
     "699Handling": 84,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1050774939533316267/continental3tawdthing.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Macan"
 }

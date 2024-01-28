@@ -1,5 +1,6 @@
 {
-    "rq": 38,
+    "carID": "c01295",
+    "cr": 380,
     "make": "Toyota",
     "model": "Camry Hybrid Premium",
     "modelYear": 2019,
@@ -22,8 +23,7 @@
     "mra": 65.29,
     "ola": 86.08,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/819662310339641364/D.ToyotaCamryHybridPremium.png",
-    "333TopSpeed": 119,
+     "333TopSpeed": 119,
     "3330to60": 7.5,
     "333Handling": 74,
     "666TopSpeed": 123,
@@ -38,6 +38,6 @@
     "699TopSpeed": 123,
     "6990to60": 6.7,
     "699Handling": 80,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996121161375162409/camrypremiumhy.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

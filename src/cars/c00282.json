@@ -1,5 +1,6 @@
 {
-    "rq": 44,
+    "carID": "c00282",
+    "cr": 440,
     "make": "Chevrolet",
     "model": "Cruze LT RS Diesel Manual",
     "modelYear": 2018,
@@ -22,8 +23,7 @@
     "mra": 47.7,
     "ola": 60.24,
     "description": "Generic hatchback #2654356, except it's a diesel?",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/829983895302832148/Chevrolet_Cruze_LT_RS_Diesel_Manual_18.png",
-    "333TopSpeed": 127,
+     "333TopSpeed": 127,
     "3330to60": 7.8,
     "333Handling": 84,
     "666TopSpeed": 131,
@@ -38,6 +38,6 @@
     "699TopSpeed": 131,
     "6990to60": 7,
     "699Handling": 90,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095362136932352050/c00282.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Macan"
 }

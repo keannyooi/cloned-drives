@@ -1,5 +1,6 @@
 {
-    "rq": 26,
+    "carID": "c00535",
+    "cr": 259,
     "make": "Honda",
     "model": "CRX 1.5 Si",
     "modelYear": 1985,
@@ -23,9 +24,8 @@
     "fuelType": "Petrol",
     "mra": 38.98,
     "ola": 71.74,
-    "description": "No CRX, just food. Card by Andu",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/947535211338559599/CRX15SI85.png",
-    "333TopSpeed": 121,
+    "description": "No CRX, just food.",
+     "333TopSpeed": 121,
     "3330to60": 8.7,
     "333Handling": 73,
     "666TopSpeed": 126,
@@ -40,6 +40,6 @@
     "699TopSpeed": 126,
     "6990to60": 7.8,
     "699Handling": 79,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1050920325535244319/CRXSi85.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/HondaCRX15Si(1985).png",
     "creator": "Andu"
 }

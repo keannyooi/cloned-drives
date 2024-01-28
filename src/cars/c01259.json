@@ -1,5 +1,6 @@
 {
-    "rq": 61,
+    "carID": "c01259",
+    "cr": 607,
     "make": "Tesla",
     "model": "Model S 60",
     "modelYear": 2016,
@@ -24,8 +25,7 @@
     "mra": 72.41,
     "ola": 83.81,
     "description": "People love Teslas for their body styling, interior design and many other kinds of stuff that you'd never see elsewhere in the automotive landscape. Case in point: the fact that the cars receive updates ala software and the amount of easter eggs hidden within the infotainment system. (Try saying \"my balls are cold\"!)",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/858544533737832498/tesla_model_s_60_2016.png",
-    "333TopSpeed": 134,
+     "333TopSpeed": 134,
     "3330to60": 5,
     "333Handling": 80,
     "666TopSpeed": 138,
@@ -40,6 +40,6 @@
     "699TopSpeed": 138,
     "6990to60": 4.5,
     "699Handling": 85,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1002951142327734362/model_s_60_new.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/TeslaModelS60(2016).png",
     "creator": "Keanny"
 }

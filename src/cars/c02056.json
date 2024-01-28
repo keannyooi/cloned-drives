@@ -1,5 +1,6 @@
 {
-    "rq": 64,
+    "carID": "c02056",
+    "cr": 635,
     "make": "Chrysler",
     "model": "Phaeton Concept",
     "modelYear": 1997,
@@ -22,8 +23,7 @@
     "mra": 86.76,
     "ola": 91.3,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/966803925934153808/Phaeton.png",
-    "333TopSpeed": 170,
+     "333TopSpeed": 170,
     "3330to60": 4.4,
     "333Handling": 79,
     "666TopSpeed": 173,
@@ -38,6 +38,6 @@
     "699TopSpeed": 173,
     "6990to60": 3.9,
     "699Handling": 84,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996024372265484409/phaetoncon.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ChryslerPhatonConcept(1997).png",
     "creator": "Bnuuy"
 }

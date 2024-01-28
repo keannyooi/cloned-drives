@@ -1,5 +1,6 @@
 {
-    "rq": 49,
+    "carID": "c00880",
+    "cr": 490,
     "make": "Mini",
     "model": "Clubman JCW",
     "modelYear": 2009,
@@ -22,8 +23,7 @@
     "mra": 72.88,
     "ola": 86.82,
     "description": "A unique hot estate that offers space and pace.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/824350844329000960/miniclub.png",
-    "333TopSpeed": 152,
+     "333TopSpeed": 152,
     "3330to60": 6.2,
     "333Handling": 84,
     "666TopSpeed": 155,
@@ -38,6 +38,6 @@
     "699TopSpeed": 155,
     "6990to60": 5.5,
     "699Handling": 90,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017385110837940234/Mini_Clubman_JCW.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

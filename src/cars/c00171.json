@@ -1,5 +1,6 @@
 {
-    "rq": 38,
+    "carID": "c00171",
+    "cr": 376,
     "make": "BMW",
     "model": "i3",
     "modelYear": 2013,
@@ -23,8 +24,7 @@
     "mra": 41.23,
     "ola": 85.74,
     "description": "This tic-tac looking oddball is BMW's first commercial EV launched under their i subbrand, and was the culmination of BMW's experience with previous EV prototypes such as the Mini E and BMW ActiveE. Made from a variety of lightweight materials such as carbon-fiber reinforced plastic for the passenger compartment and hemp for the door panels, the i3's 22kWh battery lasts for 160km (doubled if paired with a 2-cyllinder range extender engine). Despite some people finding its looks unattractive, it enjoyed moderate success for an EV, selling out 220,000+ units over its almost decade-long production lifespan.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/865583229717184522/bmw_i3.png",
-
+ 
     "333TopSpeed": 98,
     "3330to60": 6.6,
     "333Handling": 72,
@@ -45,6 +45,6 @@
     "6990to60": 5.7,
     "699Handling": 78,
 
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003250940637356072/i3.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BMWi3(2013).png",
     "creator": "Keanny"
 }

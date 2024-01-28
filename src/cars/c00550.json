@@ -1,5 +1,6 @@
 {
-    "rq": 48,
+    "carID": "c00550",
+    "cr": 481,
     "make": "Honda",
     "model": "Prelude Type SH",
     "modelYear": 1996,
@@ -24,8 +25,7 @@
     "mra": 60.85,
     "ola": 65.57,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/835496444507979776/prelude.png",
-    "333TopSpeed": 145,
+     "333TopSpeed": 145,
     "3330to60": 6.9,
     "333Handling": 82,
     "666TopSpeed": 148,
@@ -40,6 +40,6 @@
     "699TopSpeed": 148,
     "6990to60": 6.2,
     "699Handling": 88,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003273601996300339/prelude.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/HondaPreludeTypeSH(1996).png",
     "creator": "Keanny"
 }

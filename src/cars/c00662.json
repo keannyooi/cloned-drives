@@ -1,5 +1,6 @@
 {
-    "rq": 52,
+    "carID": "c00662",
+    "cr": 520,
     "make": "Lamborghini",
     "model": "LM002",
     "modelYear": 1986,
@@ -22,8 +23,7 @@
     "mra": 65.79,
     "ola": 72,
     "description": "Rambo Lambo.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/1054067393284022402/LM002.png",
-    "333TopSpeed": 134,
+     "333TopSpeed": 134,
     "3330to60": 7.1,
     "333Handling": 65,
     "666TopSpeed": 138,
@@ -38,6 +38,6 @@
     "699TopSpeed": 138,
     "6990to60": 6.4,
     "699Handling": 70,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997536189944967288/lm002.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/LamborghiniLM002(1986).png",
     "creator": "Bnuuy"
 }

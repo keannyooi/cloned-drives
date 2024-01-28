@@ -1,5 +1,6 @@
 {
-    "rq": 69,
+    "carID": "c00601",
+    "cr": 690,
     "make": "Jaguar",
     "model": "XFR-S",
     "modelYear": 2013,
@@ -24,8 +25,7 @@
     "mra": 82.02,
     "ola": 78.05,
     "description": "It's a Jaaaag capable of challenging the M5 in nearly everything, what's not to like?.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/820437522358206514/jag_xfrs.png",
-    "333TopSpeed": 189,
+     "333TopSpeed": 189,
     "3330to60": 3.9,
     "333Handling": 88,
     "666TopSpeed": 192,
@@ -40,6 +40,6 @@
     "699TopSpeed": 192,
     "6990to60": 3.5,
     "699Handling": 94,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017167494835884072/Jaguar_XFR-S_2013.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "McNuggets"
 }

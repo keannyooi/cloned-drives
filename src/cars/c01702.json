@@ -1,5 +1,6 @@
 {
-    "rq": 52,
+    "carID": "c01702",
+    "cr": 520,
     "make": [
         "Nismo",
         "Nissan"
@@ -26,8 +27,7 @@
     "mra": 66.27,
     "ola": 72.73,
     "description": "Based on the S14 Silvia, the 270 in its name referred to the power output of its engine. Nismo increased the power of the engine, not by installing larger turbos, but incorporating custom cams, an intercooler and a revised ECU. All 270Rs were painted black, with a white stripe down the side of the body.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/867400687394619402/unknown.png",
-
+ 
     "333TopSpeed": 117,
     "3330to60": 5.2,
     "333Handling": 80,
@@ -48,6 +48,6 @@
     "6990to60": 4.7,
     "699Handling": 85,
 
-    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1094564859087163442/270r.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

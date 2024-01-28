@@ -1,5 +1,6 @@
 {
-    "rq": 53,
+    "carID": "c02109",
+    "cr": 530,
     "make": "BMW",
     "model": "640i Coupe",
     "modelYear": 2011,
@@ -22,8 +23,7 @@
     "mra": 68.83,
     "ola": 79.24,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/948457466658701422/640i.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 5,
     "333Handling": 86,
     "666TopSpeed": 162,
@@ -38,6 +38,6 @@
     "699TopSpeed": 162,
     "6990to60": 4.5,
     "699Handling": 92,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095403246752903311/BMW_640i_Coupe.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Olimato"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 55,
+    "carID": "c02161",
+    "cr": 550,
     "make": "Land Rover",
     "model": "Discovery Sport D240 S R-Dynamic",
     "modelYear": 2019,
@@ -22,8 +23,7 @@
     "mra": 51.8,
     "ola": 66.67,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/855184987926036491/Discovery_Sport_D240_S_R-Dynamic_19.png",
-    "333TopSpeed": 141,
+     "333TopSpeed": 141,
     "3330to60": 6.8,
     "333Handling": 77,
     "666TopSpeed": 145,
@@ -38,6 +38,6 @@
     "699TopSpeed": 145,
     "6990to60": 6.1,
     "699Handling": 83,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017009598261108756/discoverysport_d240.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Macan"
 }

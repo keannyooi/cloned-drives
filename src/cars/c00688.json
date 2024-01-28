@@ -1,5 +1,6 @@
 {
-    "rq": 53,
+    "carID": "c00688",
+    "cr": 530,
     "make": "Lexus",
     "model": "ES 350 Luxury",
     "modelYear": 2019,
@@ -22,8 +23,7 @@
     "mra": 69.32,
     "ola": 86.67,
     "description": "Another sedan from Lexus that only people who are 70 will appreciate.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/824914573332316170/ES_350_Luxury_19.png",
-    "333TopSpeed": 139,
+     "333TopSpeed": 139,
     "3330to60": 5.8,
     "333Handling": 77,
     "666TopSpeed": 143,
@@ -38,6 +38,6 @@
     "699TopSpeed": 143,
     "6990to60": 5.2,
     "699Handling": 83,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095027111737163898/Lexus_ES_350_2019.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Macan"
 }

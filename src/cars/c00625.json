@@ -1,5 +1,6 @@
 {
-    "rq": 68,
+    "carID": "c00625",
+    "cr": 680,
     "make": "Kia",
     "model": "Stinger GT AWD",
     "modelYear": 2018,
@@ -25,8 +26,7 @@
     "mra": 73.89,
     "ola": 79.37,
     "description": "Kia's Competent german rival watered down by a drowsy 4wd system.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/845648917202599996/CD_Kia_Stinger_GT_AWD.png?width=1410&height=878",
-    "333TopSpeed": 170,
+     "333TopSpeed": 170,
     "3330to60": 4.6,
     "333Handling": 83,
     "666TopSpeed": 173,
@@ -41,6 +41,6 @@
     "699TopSpeed": 173,
     "6990to60": 4.1,
     "699Handling": 89,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1018163504009719919/Kia_Stinger_GT_AWD.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Exist"
 }

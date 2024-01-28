@@ -1,5 +1,6 @@
 {
-    "rq": 53,
+    "carID": "c00920",
+    "cr": 530,
     "make": "Mosler",
     "model": "Consulier GTP",
     "modelYear": 1985,
@@ -25,8 +26,7 @@
     "mra": 59.77,
     "ola": 66.92,
     "description": "A mid-engine lightweight track car with a carbon-kevlar body and a turbocharged engine? Sounds thoroughly modern, but Mosler did it in the 1980s.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/848141499534540800/Mosler-Consulier-GTP-V2.png",
-    "333TopSpeed": 148,
+     "333TopSpeed": 148,
     "3330to60": 4.9,
     "333Handling": 83,
     "666TopSpeed": 151,
@@ -41,6 +41,6 @@
     "699TopSpeed": 151,
     "6990to60": 4.4,
     "699Handling": 89,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1004768754552541214/Mosler-Consulier-GTP.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Johnny"
 }

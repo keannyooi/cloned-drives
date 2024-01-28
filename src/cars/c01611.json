@@ -1,5 +1,6 @@
 {
-    "rq": 33,
+    "carID": "c01611",
+    "cr": 330,
     "make": "Mazda",
     "model": "Protegé MP3",
     "modelYear": 2001,
@@ -25,8 +26,7 @@
     "mra": 52.88,
     "ola": 72.29,
     "description": "How do you do, fellow kids?",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/965203437555974174/Mazda_Protege_MP3.png",
-    "333TopSpeed": 124,
+     "333TopSpeed": 124,
     "3330to60": 7.9,
     "333Handling": 80,
     "666TopSpeed": 129,
@@ -41,6 +41,6 @@
     "699TopSpeed": 129,
     "6990to60": 7.1,
     "699Handling": 85,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095762391070945361/Mazda_Protege_MP3.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Based"
 }

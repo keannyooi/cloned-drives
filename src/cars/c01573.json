@@ -1,5 +1,6 @@
 {
-    "rq": 41,
+    "carID": "c01573",
+    "cr": 410,
     "make": "Infiniti",
     "model": "QX4",
     "modelYear": 2000,
@@ -24,8 +25,7 @@
     "mra": 54.17,
     "ola": 65.93,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/847561927789379594/IMG_20210405_185238.png",
-    "333TopSpeed": 115,
+     "333TopSpeed": 115,
     "3330to60": 8.6,
     "333Handling": 70,
     "666TopSpeed": 119,
@@ -40,6 +40,6 @@
     "699TopSpeed": 119,
     "6990to60": 7.7,
     "699Handling": 75,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1022938116148973638/Infiniti_QX4_2000.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Cenard"
 }

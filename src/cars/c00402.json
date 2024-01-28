@@ -1,5 +1,6 @@
 {
-    "rq": 85,
+    "carID": "c00402",
+    "cr": 854,
     "make": "Ferrari",
     "model": "Monza SP2",
     "modelYear": 2019,
@@ -22,8 +23,7 @@
     "mra": 96.67,
     "ola": 103.45,
     "description": "The 2 seater version of the SP1.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/856545283440902164/MonzaSP2thingy.png",
-    "333TopSpeed": 189,
+     "333TopSpeed": 189,
     "3330to60": 2.8,
     "333Handling": 94,
     "666TopSpeed": 192,
@@ -38,6 +38,6 @@
     "699TopSpeed": 192,
     "6990to60": 2.5,
     "699Handling": 101,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996023783926284348/monzasp2.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/FerrariMonzaSP2(2019).png",
     "creator": "Bnuuy"
 }

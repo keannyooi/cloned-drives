@@ -1,5 +1,6 @@
 {
-    "rq": 27,
+    "carID": "c01585",
+    "cr": 270,
     "make": "Lexus",
     "model": "IS 200",
     "modelYear": 1999,
@@ -24,8 +25,7 @@
     "mra": 56.96,
     "ola": 65.95,
     "description": "Entry-level IS with a inline-6 2 litre engine.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/866803171941417020/E.LexusIS200.png",
-    "333TopSpeed": 138,
+     "333TopSpeed": 138,
     "3330to60": 8.9,
     "333Handling": 75,
     "666TopSpeed": 142,
@@ -40,6 +40,6 @@
     "699TopSpeed": 142,
     "6990to60": 8,
     "699Handling": 81,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100169130075754568/IS2001999.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 100,
+    "carID": "c00141",
+    "cr": 995,
     "make": "Bentley",
     "model": "Bentayga Speed",
     "modelYear": 2020,
@@ -22,8 +23,7 @@
     "mra": 78.31,
     "ola": 76.47,
     "description": "The Fastest Bentley SUV to date.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1101527447469572196/BentaygaSpeed2020.png",
-"333TopSpeed": 193,
+ "333TopSpeed": 193,
 "3330to60": 3.3,
 "333Handling": 87,
 
@@ -42,6 +42,6 @@
 "996TopSpeed": 198,
 "9960to60": 3,
 "996Handling": 90,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1101561926347145236/BentaygaSpeed.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BentleyBentaygaSpeed(2020).png",
     "creator": "Bnuuy"
 }

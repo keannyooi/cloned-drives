@@ -1,5 +1,6 @@
 {  
-    "rq": 35,
+    "carID": "c02738",
+    "cr": 350,
     "make": "Audi",
     "model": "A6 Avant 2.0 TDI ultra S tronic",
     "modelYear": 2014,
@@ -22,8 +23,7 @@
     "mra": 62.88,
     "ola": 81.93,
     "description": "Out with the wonky multitronic, in with the S tronic, extra hp and Euro 6: Audi's answer to the evolving market was no joke.",
-    "card": "https://media.discordapp.net/attachments/1029443378699579413/1029444847712620545/a6_avant_2.0_tdi_190_hp.png",
-    "333TopSpeed": 148,
+     "333TopSpeed": 148,
     "3330to60": 7.9,
     "333Handling": 81,
     "666TopSpeed": 151,
@@ -38,6 +38,6 @@
     "699TopSpeed": 151,
     "6990to60": 7.1,
     "699Handling": 87,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1034828605395566622/a6_2.0_190_hp.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Lemon"
 }

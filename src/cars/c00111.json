@@ -1,5 +1,6 @@
 {
-    "rq": 63,
+    "carID": "c00111",
+    "cr": 630,
     "make": "Audi",
     "model": "RS 6",
     "modelYear": 2002,
@@ -24,8 +25,7 @@
     "mra": 70.48,
     "ola": 73.01,
     "description": "An utterly beguiling and timeless car.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/824604593425350686/rs6.png",
-    "333TopSpeed": 162,
+     "333TopSpeed": 162,
     "3330to60": 4.3,
     "333Handling": 82,
     "666TopSpeed": 166,
@@ -40,6 +40,6 @@
     "699TopSpeed": 166,
     "6990to60": 3.8,
     "699Handling": 88,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017149435567939715/Audi_RS_6_Sedan.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

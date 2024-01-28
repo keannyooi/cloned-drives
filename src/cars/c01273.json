@@ -1,5 +1,6 @@
 {
-    "rq": 85,
+    "carID": "c01273",
+    "cr": 851,
     "make": "Tesla",
     "model": "Model S Performance",
     "modelYear": 2019,
@@ -24,8 +25,7 @@
     "mra": 62.34,
     "ola": 83.33,
     "description": "Those familiar with nature may believe that the Raven powertrain was named after the raven bird. Turns out it was an X-Men reference.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/858545093212110848/tesla_model_s_performance.png",
-    "333TopSpeed": 166,
+     "333TopSpeed": 166,
     "3330to60": 2.3,
     "333Handling": 86,
     "666TopSpeed": 169,
@@ -40,6 +40,6 @@
     "699TopSpeed": 169,
     "6990to60": 2,
     "699Handling": 92,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1002950865025511514/model_s_perf.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/TeslaModelSPerformance(2019).png",
     "creator": "Keanny"
 }

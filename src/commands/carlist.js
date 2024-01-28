@@ -22,7 +22,7 @@ module.exports = {
     description: "Shows all the cars that are available in Cloned Drives in list form.",
     async execute(message, args) {
         let list = carFiles;
-        let sort = "rq";
+        let sort = "cr";
         let page;
         if (!args.length || (args[0] === "-s" && args[1])) {
             page = 1;
@@ -95,7 +95,7 @@ module.exports = {
                 if (sort === "duplicates") {
                     valueList += `\`${calcTotal(findCar)}\`\n`;
                 }
-                else if (sort !== "rq") {
+                else if (sort !== "cr") {
                     valueList += `\`${currentCar[sort]}\`\n`;
                 }
             }
@@ -119,7 +119,7 @@ module.exports = {
                 fields: [{ name: "Car", value: carList, inline: true }],
                 footer: `Page ${page} of ${totalPages} - Interact with the buttons below to navigate through pages.`
             });
-            if (sort !== "rq") {
+            if (sort !== "cr") {
                 infoMessage.editEmbed({ fields: [{ name: "Value", value: valueList, inline: true }] });
             }
             return infoMessage;

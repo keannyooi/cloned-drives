@@ -1,5 +1,6 @@
 {
-    "rq": 66,
+    "carID": "c01563",
+    "cr": 657,
     "make": "Infiniti",
     "model": "EMERG-E",
     "modelYear": 2012,
@@ -27,8 +28,7 @@
     "mra": 52.7,
     "ola": 65.96,
     "description": "Infinitis very own halo car - oh wait it's an Evora in the internals.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/868852264582909982/infiniti_emerg-e.png",
-    "333TopSpeed": 138,
+     "333TopSpeed": 138,
     "3330to60": 4.0,
     "333Handling": 90,
     "666TopSpeed": 142,
@@ -43,6 +43,6 @@
     "699TopSpeed": 142,
     "6990to60": 3.6,
     "699Handling": 97,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1018181953196929144/Infiniti_EMERG-E.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/InfinitiEMERG-E(2012).png",
     "creator": "Keanny"
 }

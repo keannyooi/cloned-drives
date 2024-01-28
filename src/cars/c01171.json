@@ -1,5 +1,6 @@
 {
-    "rq": 61,
+    "carID": "c01171",
+    "cr": 610,
     "make": "Seat",
     "model": "Leon Cupra R 300 Manual",
     "modelYear": 2017,
@@ -25,8 +26,7 @@
     "mra": 75.68,
     "ola": 82.14,
     "description": "VW Glof's Spanish cousin with 300 hp.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/842272724385529887/image0.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 5.3,
     "333Handling": 88,
     "666TopSpeed": 162,
@@ -41,6 +41,6 @@
     "699TopSpeed": 162,
     "6990to60": 4.8,
     "699Handling": 94,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017736179313025054/SEAT_Leon_Cupra_300_Manual.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 66,
+    "carID": "c01108",
+    "cr": 660,
     "make": "Porsche",
     "model": "Boxster GTS",
     "modelYear": 2014,
@@ -22,8 +23,7 @@
     "mra": 74.11,
     "ola": 82.1,
     "description": "It is high on drama and exhibits a total homogeny of parts that's a rare joy to experience.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1114208292177186916/981BoxsterGTS.png",
-"333TopSpeed": 178,
+ "333TopSpeed": 178,
 "3330to60": 4.4,
 "333Handling": 90,
 
@@ -42,6 +42,6 @@
 "996TopSpeed": 184,
 "9960to60": 3.9,
 "996Handling": 93,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1114208734655295598/981BoxsterGTS.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

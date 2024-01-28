@@ -1,5 +1,6 @@
 {
-    "rq": 45,
+    "carID": "c01393",
+    "cr": 450,
     "make": "Volkswagen",
     "model": "Tiguan 2.0 TDI 4Motion",
     "modelYear": 2007,
@@ -22,8 +23,7 @@
     "mra": 46.11,
     "ola": 60.67,
     "description": "VW's first small 4x4 is off to a good start. Card by Andu",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/848308634659061800/20TDI4Motion.png",
-    "333TopSpeed": 124,
+     "333TopSpeed": 124,
     "3330to60": 8.5,
     "333Handling": 74,
     "666TopSpeed": 129,
@@ -38,6 +38,6 @@
     "699TopSpeed": 129,
     "6990to60": 7.6,
     "699Handling": 80,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1025336395130212382/TiguanTDI407.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": ""
 }

@@ -1,5 +1,6 @@
 {  
-    "rq": 33,
+    "carID": "c04315",
+    "cr": 330,
     "make": "Hyundai",
     "model": "Nexo 40kWh",
     "modelYear": 2018,
@@ -25,8 +26,7 @@
     "ola": 72.72,
     "description": "The Nexo is an excellent electric SUV, but that may not be enough to overcome the difficulties of driving on hydrogen.",
 
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1114571243232960582/d33_hyundai_nexo_40kwh.png",
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1114571614437265429/Nexo40kwh.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Hastur",
 
     "333TopSpeed": 116,

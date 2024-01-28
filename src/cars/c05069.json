@@ -1,5 +1,6 @@
 {
-    "rq": 50,
+    "carID": "c05069",
+    "cr": 500,
     "make": "Porsche",
     "model": "989",
     "modelYear": 1988,
@@ -23,8 +24,7 @@
     "mra": 76.11,
     "ola": 83.5,
     "description": "",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158083200434831390/misc989.png?ex=651af487&is=6519a307&hm=e84ec2d0431643530b6f414516f8ad46a17f86f43d5a06795c41662f337ae81c&",
-	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158083400519917732/Misc989.png?ex=651af4b6&is=6519a336&hm=ca9eaa21069c6f5933bc5ebd0f93c6610a920e5634298f8bc90dd52c51636583&",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
 
 "333TopSpeed": 176,
 "3330to60": 4.8,

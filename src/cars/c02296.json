@@ -1,5 +1,6 @@
 {    
-    "rq": 78,
+    "carID": "c02296",
+    "cr": 780,
     "make": "Audi",
     "model": "A1 clubsport quattro",
     "modelYear": 2011,
@@ -22,8 +23,7 @@
     "mra": 83.72,
     "ola": 72.22,
     "description": "GR Yaris? Never heard about it, hop on NFS we're gonna be ballin' all night long in a 500 hp 4WD citycar.",
-    "card": "https://media.discordapp.net/attachments/974551848226811944/981626062872117308/audi_a1_clubsport_quattro_for_cd.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 3.4,
     "333Handling": 88,
     "666TopSpeed": 162,
@@ -38,6 +38,6 @@
     "699TopSpeed": 162,
     "6990to60": 3.1,
     "699Handling": 94,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/999223636789563413/clubsportempty.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Lemon"
 }

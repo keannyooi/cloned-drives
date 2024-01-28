@@ -17,7 +17,7 @@ function carNameGen(args) {
             bmReference = require(`../../cars/${currentCar["reference"]}.json`);
             type = "bm";
         }
-        currentName = `(${rarityCheck(bmReference, type)} ${bmReference["rq"]}) ${currentName}`;
+        currentName = `(${rarityCheck(bmReference, type)} ${bmReference["cr"]}) ${currentName}`;
     }
     if (upgrade) {
         currentName += ` [${upgrade}]`;

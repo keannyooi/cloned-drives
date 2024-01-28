@@ -1,5 +1,6 @@
 {
-    "rq": 89,
+    "carID": "c00788",
+    "cr": 890,
     "make": "McLaren",
     "model": "600LT Spider",
     "modelYear": 2019,
@@ -25,8 +26,7 @@
     "mra": 95,
     "ola": 84.71,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/854634154686939146/CD_McLaren_600LT_Spider.png",
-    "333TopSpeed": 204,
+     "333TopSpeed": 204,
     "3330to60": 2.8,
     "333Handling": 96,
     "666TopSpeed": 206,
@@ -41,6 +41,6 @@
     "699TopSpeed": 206,
     "6990to60": 2.5,
     "699Handling": 103,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1016995265409986590/600ltspider.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Exist"
 }

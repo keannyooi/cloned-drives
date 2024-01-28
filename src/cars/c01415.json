@@ -1,5 +1,6 @@
 {
-    "rq": 30,
+    "carID": "c01415",
+    "cr": 300,
     "make": "Volvo",
     "model": "960",
     "modelYear": 1990,
@@ -22,8 +23,7 @@
     "mra": 57.1,
     "ola": 81.77,
     "description": "The only car in the world that has 204 hp, 24-Valve engine, a computerized 4-Speed transmission, abs brakes and the added luxury of being a Volvo.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/825422473868083219/960Old.png",
-    "333TopSpeed": 137,
+     "333TopSpeed": 137,
     "3330to60": 8.6,
     "333Handling": 68,
     "666TopSpeed": 141,
@@ -38,6 +38,6 @@
     "699TopSpeed": 141,
     "6990to60": 7.7,
     "699Handling": 73,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1023304669159759973/Volvo_960_1990.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

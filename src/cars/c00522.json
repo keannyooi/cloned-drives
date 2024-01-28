@@ -1,5 +1,6 @@
 {
-    "rq": 23,
+    "carID": "c00522",
+    "cr": 234,
     "make": "Honda",
     "model": "City Turbo",
     "modelYear": 1982,
@@ -24,8 +25,7 @@
     "mra": 38.95,
     "ola": 66.37,
     "description": "The father created an unassuming hatchback, and the son turned it into a pocket rocket.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/837229291975868436/hodna_city_turbo.png",
-    "333TopSpeed": 112,
+     "333TopSpeed": 112,
     "3330to60": 9.1,
     "333Handling": 71,
     "666TopSpeed": 117,
@@ -40,6 +40,6 @@
     "699TopSpeed": 117,
     "6990to60": 8.2,
     "699Handling": 77,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003166778274361374/city_turbo.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/HondaCityTurbo(1982).png",
     "creator": "Keanny"
 }

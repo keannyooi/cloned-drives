@@ -1,5 +1,6 @@
 {
-    "rq": 87,
+    "carID": "c00782",
+    "cr": 870,
     "make": "McLaren",
     "model": "570GT",
     "modelYear": 2016,
@@ -24,8 +25,7 @@
     "mra": 90.58,
     "ola": 82.84,
     "description": "Gran Turismo 570 A-Spec.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/826758099956006922/CD_McLaren_570GT.png",
-    "333TopSpeed": 207,
+     "333TopSpeed": 207,
     "3330to60": 2.8,
     "333Handling": 94,
     "666TopSpeed": 209,
@@ -40,6 +40,6 @@
     "699TopSpeed": 209,
     "6990to60": 2.5,
     "699Handling": 101,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017884176919318548/McLaren_570GT.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Exist"
 }

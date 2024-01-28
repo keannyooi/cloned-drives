@@ -1,5 +1,6 @@
 {
-    "rq": 81,
+    "carID": "c00833",
+    "cr": 810,
     "make": [
         "Mercedes-AMG",
         "Mercedes-Benz"
@@ -28,8 +29,7 @@
     "mra": 94.59,
     "ola": 85.71,
     "description": "A toned down AMG GT R.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/826185870566490162/GTC.png",
-    "333TopSpeed": 200,
+     "333TopSpeed": 200,
     "3330to60": 3.3,
     "333Handling": 95,
     "666TopSpeed": 202,
@@ -44,6 +44,6 @@
     "699TopSpeed": 202,
     "6990to60": 3.0,
     "699Handling": 102,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017888845376786472/Mercedes_GT_C.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

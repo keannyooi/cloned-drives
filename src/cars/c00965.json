@@ -1,5 +1,6 @@
 {
-    "rq": 21,
+    "carID": "c00965",
+    "cr": 210,
     "make": "Opel",
     "model": "Ampera",
     "modelYear": 2011,
@@ -24,8 +25,7 @@
     "mra": 50.26,
     "ola": 76.29,
     "description": "Opel's first mass market plug-in-hybrid, winner of 2012 European Car of the Year.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/827895928714428437/E.OpelAmpera.png",
-    "333TopSpeed": 106,
+     "333TopSpeed": 106,
     "3330to60": 9.2,
     "333Handling": 72,
     "666TopSpeed": 111,
@@ -40,6 +40,6 @@
     "699TopSpeed": 111,
     "6990to60": 8.2,
     "699Handling": 78,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100157921360359525/amera.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

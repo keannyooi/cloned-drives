@@ -1,5 +1,6 @@
 {  
-    "rq": 1,
+    "carID": "c04010",
+    "cr": 10,
     "make": "SNAP",
     "model": "C2",
     "modelYear": 2022,
@@ -22,8 +23,7 @@
     "mra": 0,
     "ola": 25.55,
     "description": "In case you needed some more cargo room to deliver Andu his new setup, there's always this.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1109538707700187247/snap_c2.png",
-    "333TopSpeed": 24,
+     "333TopSpeed": 24,
     "3330to60": 99.9,
     "333Handling": 53,
     "666TopSpeed": 32,
@@ -38,6 +38,6 @@
     "699TopSpeed": 32,
     "6990to60": 99.9,
     "699Handling": 57,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1109538807159722084/snap_cargo.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Lemon"
 }

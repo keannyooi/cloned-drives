@@ -1,5 +1,6 @@
 {
-    "rq": 74,
+    "carID": "c00720",
+    "cr": 740,
     "make": "Lincoln",
     "model": "MKZ 3.0T AWD",
     "modelYear": 2017,
@@ -22,8 +23,7 @@
     "mra": 73.91,
     "ola": 62.75,
     "description": "Slow, sleeper, buy a Merc instead, looks bad.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/855224230874841118/2017_Lincoln_MKZ_3.0T_AWD_F.png",
-    "333TopSpeed": 153,
+     "333TopSpeed": 153,
     "3330to60": 4.8,
     "333Handling": 87,
     "666TopSpeed": 157,
@@ -38,6 +38,6 @@
     "699TopSpeed": 157,
     "6990to60": 4.3,
     "699Handling": 93,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1018173655685009548/Lincoln_MKZ_3.0T_AWD.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Misopasko"
 }

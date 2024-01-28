@@ -1,5 +1,6 @@
 {
-    "rq": 36,
+    "carID": "c00122",
+    "cr": 360,
     "make": "Audi",
     "model": "TT 1.8t",
     "modelYear": 1998,
@@ -22,8 +23,7 @@
     "mra": 57.83,
     "ola": 70.7,
     "description": "The stylish coupe based on a Golf platform.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/830084306012471296/df.png",
-    "333TopSpeed": 140,
+     "333TopSpeed": 140,
     "3330to60": 6.7,
     "333Handling": 83,
     "666TopSpeed": 144,
@@ -38,6 +38,6 @@
     "699TopSpeed": 144,
     "6990to60": 6,
     "699Handling": 89,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003275361548779620/tt.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Keanny"
 }

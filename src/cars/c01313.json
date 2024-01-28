@@ -1,5 +1,6 @@
 {
-    "rq": 89,
+    "carID": "c01313",
+    "cr": 890,
     "make": "Toyota",
     "model": "GT-One (TS020)",
     "modelYear": 1998,
@@ -27,8 +28,7 @@
     "mra": 156.52,
     "ola": 67.5,
     "description": "time to run...",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/851885880859033600/TS020.png",
-    "333TopSpeed": 238,
+     "333TopSpeed": 238,
     "3330to60": 3.4,
     "333Handling": 100,
     "666TopSpeed": 240,
@@ -43,6 +43,6 @@
     "699TopSpeed": 240,
     "6990to60": 3.1,
     "699Handling": 108,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017154165752999977/Toyota_GT-One.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Thunk"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 27,
+    "carID": "c01842",
+    "cr": 270,
     "make": "Subaru",
     "model": "Vivio RX-R",
     "modelYear": 1992,
@@ -26,8 +27,7 @@
     "mra": 15.41,
     "ola": 70.93,
     "description": "Tiny tiny tiny 4WD hot hatch that was featured in a Initial D-like skit in some anime called Lucky Star.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/963512866261074011/subaru_vivio_rx-r.png",
-    "333TopSpeed": 93,
+     "333TopSpeed": 93,
     "3330to60": 8.1,
     "333Handling": 70,
     "666TopSpeed": 99,
@@ -42,6 +42,6 @@
     "699TopSpeed": 99,
     "6990to60": 7.2,
     "699Handling": 75,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003163448579997746/vivio.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Keanny"
 }

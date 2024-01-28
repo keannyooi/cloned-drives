@@ -1,5 +1,6 @@
 {
-    "rq": 44,
+    "carID": "c00015",
+    "cr": 444,
     "make": "Acura",
     "model": "MDX",
     "modelYear": 2001,
@@ -22,8 +23,7 @@
     "mra": 47.34,
     "ola": 82.5,
     "description": "The american MDX.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/819658974068211742/acuramdx.png",
-    "333TopSpeed": 123,
+     "333TopSpeed": 123,
     "3330to60": 7.6,
     "333Handling": 69,
     "666TopSpeed": 128,
@@ -38,6 +38,6 @@
     "699TopSpeed": 128,
     "6990to60": 6.8,
     "699Handling": 74,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995819971542274079/acuramdx.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AcuraMDX(2001).png",
     "creator": "Bnuuy"
 }

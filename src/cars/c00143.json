@@ -1,5 +1,6 @@
 {
-    "rq": 91,
+    "carID": "c00143",
+    "cr": 910,
     "make": "Bentley",
     "model": "Bentayga W12",
     "modelYear": 2017,
@@ -22,8 +23,7 @@
     "mra": 68.52,
     "ola": 86.48,
     "description": "Bentley's very first SUV that's capable as a Land Rover, luxurious as a yatch and fast as a bullet.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/849739592538128434/S.BentleyBentaygaW12.png",
-    "333TopSpeed": 190,
+     "333TopSpeed": 190,
     "3330to60": 3.5,
     "333Handling": 79,
     "666TopSpeed": 193,
@@ -38,6 +38,6 @@
     "699TopSpeed": 193,
     "6990to60": 3.1,
     "699Handling": 84,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995765758900572300/bentayga.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

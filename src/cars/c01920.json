@@ -1,5 +1,6 @@
 {
-    "rq": 47,
+    "carID": "c01920",
+    "cr": 470,
     "make": "Toyota",
     "model": "Supra SZ",
     "modelYear": 1993,
@@ -22,8 +23,7 @@
     "mra": 65.66,
     "ola": 76.92,
     "description": "A laid back version of the Supra with turbo-less 2JZ.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/897204502258651146/C.ToyotaSupraSZ.png",
-    "333TopSpeed": 144,
+     "333TopSpeed": 144,
     "3330to60": 6.2,
     "333Handling": 85,
     "666TopSpeed": 147,
@@ -38,6 +38,6 @@
     "699TopSpeed": 147,
     "6990to60": 5.5,
     "699Handling": 91,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996116450571988992/suprasz.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

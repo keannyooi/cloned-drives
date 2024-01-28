@@ -1,5 +1,6 @@
 {
-    "rq": 53,
+    "carID": "c01142",
+    "cr": 530,
     "make": ["Renault Sport","Renault"],
     "model": "Megane 280 Sport",
     "modelYear": 2018,
@@ -22,8 +23,7 @@
     "mra": 71.17,
     "ola": 84.48,
     "description": "The Baguette hot hatch that still doesn't undergo the AWD treatment.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/996245450673897502/RenaultSportMegane280Sport.png",
-    "333TopSpeed": 160,
+     "333TopSpeed": 160,
     "3330to60": 5.5,
     "333Handling": 91,
     "666TopSpeed": 164,
@@ -38,6 +38,6 @@
     "699TopSpeed": 164,
     "6990to60": 4.9,
     "699Handling": 98,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996245491543187536/RenaultSportMegane280Sport.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

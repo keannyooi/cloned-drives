@@ -1,5 +1,6 @@
 {
-    "rq": 89,
+    "carID": "c01115",
+    "cr": 890,
     "make": "Porsche",
     "model": "Cayenne Turbo S E-Hybrid",
     "modelYear": 2019,
@@ -22,8 +23,7 @@
     "mra": 78.57,
     "ola": 75.76,
     "description": "Twin-Turbo 4.0 V8 and a 14,1kwh battery pack powering a 138hp electric motor working together make this 2.5 tonne SUV accelerate faster than a Murcielago Roadster.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1079091689437806662/HAVVYCayenneTurboSEHybrid.png",
-    "333TopSpeed": 186, 
+     "333TopSpeed": 186, 
     "3330to60": 3.1, 
     "333Handling": 92,
 
@@ -42,6 +42,6 @@
     "996TopSpeed": 192, 
     "9960to60": 2.8, 
     "996Handling": 95,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997770869994692669/cayenneturbosehybrid.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

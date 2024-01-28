@@ -1,5 +1,6 @@
 {
-    "rq": 85,
+    "carID": "c01504",
+    "cr": 850,
     "make": "Lucid",
     "model": "Air Dream Edition Performance",
     "modelYear": 2022,
@@ -22,8 +23,7 @@
     "mra": 96.3,
     "ola": 85,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/958292622152175616/lucid.png",
-    "333TopSpeed": 176,
+     "333TopSpeed": 176,
     "3330to60": 2.5,
     "333Handling": 86,
     "666TopSpeed": 179,
@@ -38,6 +38,6 @@
     "699TopSpeed": 179,
     "6990to60": 2.2,
     "699Handling": 92,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997776427128733737/lucid.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Aqo"
 }

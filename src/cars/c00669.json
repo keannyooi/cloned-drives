@@ -1,5 +1,6 @@
 {
-    "rq": 101,
+    "carID": "c00669",
+    "cr": 1008,
     "make": "Lamborghini",
     "model": "Sesto Elemento",
     "modelYear": 2010,
@@ -22,8 +23,7 @@
     "mra": 81.08,
     "ola": 73.13,
     "description": "Named after the fact that the entire body is made from carbon fiber. One of the lightests Lambos ever.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/854634035032358912/CD_Lamborghini_Sesto_Elemento.png",
-    "333TopSpeed": 220,
+     "333TopSpeed": 220,
     "3330to60": 2.3,
     "333Handling": 97,
     "666TopSpeed": 223,
@@ -38,6 +38,6 @@
     "699TopSpeed": 223,
     "6990to60": 2.0,
     "699Handling": 104,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997771011464372274/sesto.png",
-    "creator": "Exist"
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/LamborghiniSestoElemento(2010).png",
+    "creator": "Bnuuy"
 }

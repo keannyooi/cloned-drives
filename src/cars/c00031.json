@@ -1,5 +1,6 @@
 {
-    "rq": 77,
+    "carID": "c00031",
+    "cr": 689,
     "make": "Alfa Romeo",
     "model": "8C Competizione",
     "modelYear": 2007,
@@ -15,7 +16,7 @@
     ],
     "isPrize": true,
     "weight": 1510,
-    "gc": "Medium",
+    "gc": "Low",
     "seatCount": 2,
     "bodyStyle": "Coupe",
     "tcs": true,
@@ -25,8 +26,7 @@
     "mra": 69.36,
     "ola": 82.78,
     "description": "It's an Alfa like no other, and not just because it's built by Maserati...",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/820717412458037268/AlfaRomeo8CCompetizione.png",
-    "333TopSpeed": 186,
+     "333TopSpeed": 186,
     "3330to60": 4.1,
     "333Handling": 91,
     "666TopSpeed": 189,
@@ -41,6 +41,6 @@
     "699TopSpeed": 189,
     "6990to60": 3.7,
     "699Handling": 98,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017008976937898024/8c_hud.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AlfaRomeo8CCompetizione(2007).png",
     "creator": "Havvy"
 }

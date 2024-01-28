@@ -1,5 +1,6 @@
 {
-    "rq": 56,
+    "carID": "c00596",
+    "cr": 560,
     "make": "Jaguar",
     "model": "XE R-Dynamic S P300",
     "modelYear": 2020,
@@ -25,8 +26,7 @@
     "mra": 62.22,
     "ola": 71.42,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/841654312845049866/Jaguar_XE_R-Dynamic_S_P300.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 5.3,
     "333Handling": 88,
     "666TopSpeed": 162,
@@ -41,6 +41,6 @@
     "699TopSpeed": 162,
     "6990to60": 4.8,
     "699Handling": 94,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095405658553208994/Jaguar_XE_S_P300_2019.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "F4ST"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 41,
+    "carID": "c00285",
+    "cr": 410,
     "make": "Chevrolet",
     "model": "El Camino SS 454",
     "modelYear": 1970,
@@ -22,8 +23,7 @@
     "mra": 82.43,
     "ola": 91.8,
     "description": "The gorgeous looks of a Chevelle with the ability and convenience of a truck.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/821711245492092938/cate-test.png",
-    "333TopSpeed": 166,
+     "333TopSpeed": 166,
     "3330to60": 5.8,
     "333Handling": 67,
     "666TopSpeed": 169,
@@ -38,6 +38,6 @@
     "699TopSpeed": 169,
     "6990to60": 5.2,
     "699Handling": 72,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1004762801635610634/Chevrolet-El-Camino-SS-454.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Johnny"
 }

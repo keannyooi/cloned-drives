@@ -1,5 +1,6 @@
 {
-    "rq": 100,
+    "carID": "c02244",
+    "cr": 1000,
     "make": "Funco Motorsports",
     "model": "F9",
     "modelYear": 2018,
@@ -23,8 +24,7 @@
     "mra": 158.09,
     "ola": 70.27,
     "description": "This is a vehicle that can bust standing wheelies in the sand, from 60-100 mph. Insanity.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/983538799281848340/Funco_F9_cloned_drives.png",
-	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1000905175076184104/F9_huds.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Preston",
 
     "333TopSpeed": 142,

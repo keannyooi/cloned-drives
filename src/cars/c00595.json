@@ -1,5 +1,6 @@
 {
-    "rq": 49,
+    "carID": "c00595",
+    "cr": 490,
     "make": "Jaguar",
     "model": "S-Type R",
     "modelYear": 2003,
@@ -24,8 +25,7 @@
     "mra": 66.67,
     "ola": 51.35,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/851494752431112202/Jaguar_S-Type_R.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 5.1,
     "333Handling": 79,
     "666TopSpeed": 162,
@@ -40,6 +40,6 @@
     "699TopSpeed": 162,
     "6990to60": 4.6,
     "699Handling": 84,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017384874094624778/Jaguar_S-Type_R.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Based"
 }

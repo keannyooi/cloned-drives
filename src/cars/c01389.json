@@ -1,5 +1,6 @@
 {
-    "rq": 63,
+    "carID": "c01389",
+    "cr": 630,
     "make": "Volkswagen",
     "model": "Scirocco R",
     "modelYear": 2009,
@@ -25,8 +26,7 @@
     "mra": 84.76,
     "ola": 82.81,
     "description": "The Coupe Golf that caught everyone's attention.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1148017780684243105/SciroccoR09.png",
-    "333TopSpeed": 160,
+     "333TopSpeed": 160,
     "3330to60": 5.4,
     "333Handling": 89,
     "666TopSpeed": 164,
@@ -41,6 +41,6 @@
     "699TopSpeed": 164,
     "6990to60": 4.9,
     "699Handling": 95,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1020000506195746917/Vw_Scirocco_R.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Andu"
 }

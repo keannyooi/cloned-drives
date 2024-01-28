@@ -1,5 +1,6 @@
 {
-    "rq": 31,
+    "carID": "c01385",
+    "cr": 310,
     "make": "Volkswagen",
     "model": "Quantum Syncro Wagon",
     "modelYear": 1984,
@@ -22,8 +23,7 @@
     "mra": 36.74,
     "ola": 55.58,
     "description": "The syncro passat that crossed the pond. Card by Andu",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/822163138279374918/QuantumSyncro.png",
-    "333TopSpeed": 118,
+     "333TopSpeed": 118,
     "3330to60": 9.6,
     "333Handling": 72,
     "666TopSpeed": 122,
@@ -38,6 +38,6 @@
     "699TopSpeed": 122,
     "6990to60": 8.6,
     "699Handling": 78,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1043868349853073488/Quantum.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Andu"
 }

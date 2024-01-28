@@ -1,5 +1,6 @@
 {
-    "rq": 58,
+    "carID": "c00741",
+    "cr": 580,
     "make": "Lotus",
     "model": "Elise Sport 160",
     "modelYear": 2000,
@@ -25,8 +26,7 @@
     "mra": 57.95,
     "ola": 90.2,
     "description": "An Extremely rare model, around 50 were made, and the new cosmetic changes really strike hard on this masterpiece.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/855206683214217266/Lotus_Elise_Sport_160.png",
-    "333TopSpeed": 139,
+     "333TopSpeed": 139,
     "3330to60": 4.8,
     "333Handling": 91,
     "666TopSpeed": 143,
@@ -41,6 +41,6 @@
     "699TopSpeed": 143,
     "6990to60": 4.3,
     "699Handling": 98,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100137504151183390/EliseSport160.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Based"
 }

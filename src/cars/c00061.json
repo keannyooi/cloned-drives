@@ -1,5 +1,6 @@
 {
-    "rq": 73,
+    "carID": "c00061",
+    "cr": 730,
     "make": "Aston Martin",
     "model": "DB11 V12",
     "modelYear": 2017,
@@ -25,8 +26,7 @@
     "mra": 89.29,
     "ola": 101.33,
     "description": "The Aston that marked a new chapter.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/821034187905433670/AstonMartinDB11.png",
-    "333TopSpeed": 203,
+     "333TopSpeed": 203,
     "3330to60": 3.6,
     "333Handling": 89,
     "666TopSpeed": 205,
@@ -41,6 +41,6 @@
     "699TopSpeed": 205,
     "6990to60": 3.2,
     "699Handling": 95,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1018116765319974982/Aston_Martin_DB11_V12.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

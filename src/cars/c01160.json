@@ -1,5 +1,6 @@
 {
-    "rq": 21,
+    "carID": "c01160",
+    "cr": 210,
     "make": "Saab",
     "model": "99 EMS",
     "modelYear": 1977,
@@ -24,8 +25,7 @@
     "mra": 37.66,
     "ola": 79,
     "description": "Called \"Gudmund\" after the name Swedes give to the day of the year on which it began April the 2nd. Card by Andu.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/822058719961284639/saabems.png",
-    "333TopSpeed": 113,
+     "333TopSpeed": 113,
     "3330to60": 11.4,
     "333Handling": 70,
     "666TopSpeed": 118,
@@ -40,6 +40,6 @@
     "699TopSpeed": 118,
     "6990to60": 10.2,
     "699Handling": 75,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1050516760417275985/99EMS.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Andu"
 }

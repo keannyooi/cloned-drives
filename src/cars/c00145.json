@@ -1,5 +1,6 @@
 {
-    "rq": 81,
+    "carID": "c00145",
+    "cr": 810,
     "make": "Bentley",
     "model": "Flying Spur W12",
     "modelYear": 2019,
@@ -24,8 +25,7 @@
     "mra": 78,
     "ola": 82.05,
     "description": "Ultimate luxury and smoothness with the W12.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1101526765945495683/FlyinSpurW12ConroBentley.png",
-    "333TopSpeed": 213,
+     "333TopSpeed": 213,
     "3330to60": 3.3,
     "333Handling": 91,
     "666TopSpeed": 216,
@@ -40,6 +40,6 @@
     "699TopSpeed": 216,
     "6990to60": 3.0,
     "699Handling": 98,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017457470131671160/Bentley_Flying_Spur_2019.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

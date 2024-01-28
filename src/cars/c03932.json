@@ -1,5 +1,6 @@
 {  
-    "rq": 107,
+    "carID": "c03932",
+    "cr": 1070,
     "make": "Automobili Estrema",
     "model": "Fulminea",
     "modelYear": 2023,
@@ -22,8 +23,7 @@
     "mra": 128.57,
     "ola": 100,
     "description": "Solid-state batteries for this futuristic-looking Italian hypercar, delivering 2000 hp and a breathtaking 10 seconds to go from 0 to 200 mph. No wonder its name means \"lightning-quick\".",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1110664496814497914/fulminea.png",
-    "333TopSpeed": 219,
+     "333TopSpeed": 219,
     "3330to60": 1.7,
     "333Handling": 98,
     "666TopSpeed": 222,
@@ -38,6 +38,6 @@
     "699TopSpeed": 222,
     "6990to60": 1.5,
     "699Handling": 105,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1110664582629953597/estrema_fulminea.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Lemon"
 }

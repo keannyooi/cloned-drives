@@ -1,5 +1,6 @@
 {
-    "rq": 4,
+    "carID": "c03540",
+    "cr": 42,
     "make": "REVA",
     "model": "NXR Intercity",
     "modelYear": 2009,
@@ -23,8 +24,7 @@
     "mra": 0,
     "ola": 69.62,
     "description": "The 2009 Frankfurt Motor Show saw REVA showcasing 2 prototypes that were set to release in the near future, namely the NXR and NXG. The NXR previewed the next evolution of the G-Whiz in an admittedly more attractive package. It incorporated many features that are accessible remotely, such as an energy reserve system dubbed \"REVive\", in which REVA's support center can directly analyze any car's battery level remotely and consider granting access to a reserve charge in the car.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/1011581515848753152/reva_nxr_li-on.png",
-	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1011592129115594903/nxr.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/REVANXRIntercity(2009).png",
     "creator": "Keanny",
 
     "333TopSpeed": 73, 

@@ -1,5 +1,6 @@
 {
-    "rq": 41,
+    "carID": "c02160",
+    "cr": 410,
     "make": "Land Rover",
     "model": "Discovery Sport D180 SE",
     "modelYear": 2019,
@@ -22,8 +23,7 @@
     "mra": 43.75,
     "ola": 65.93,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/855184927280857108/Discovery_Sport_D180_SE_19.png",
-    "333TopSpeed": 130,
+     "333TopSpeed": 130,
     "3330to60": 9.3,
     "333Handling": 74,
     "666TopSpeed": 134,
@@ -38,6 +38,6 @@
     "699TopSpeed": 134,
     "6990to60": 8.3,
     "699Handling": 80,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100131290403057846/Land_Rover_Discovery_Sport_d180.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Macan"
 }

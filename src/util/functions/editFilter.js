@@ -62,7 +62,7 @@ function editFilter(message, filter, args) {
             break;
         case "modelYear":
         case "seatCount":
-        case "rq":
+        case "cr":
             const start = parseInt(arg1);
             let end = start;
             if (arg2 && !isNaN(arg2)) {
@@ -279,7 +279,7 @@ function editFilter(message, filter, args) {
                 case "abs":
                 case "tcs":
                 case "gc":
-                case "rq":
+                case "cr":
 				case "creator":
                 case "search":
                     delete filter[criteria2];
@@ -294,7 +294,7 @@ function editFilter(message, filter, args) {
                         channel: message.channel,
                         title: "Error, filter category provided doesn't exist.",
                         desc: `Here is a list of available filter criterias. 
-                                \`rq\` - Filter by RQ.
+                                \`cr\` - Filter by cr.
                                 \`make\` - Filter by make/manufacturer. Provide the manufacturer name that you want to remove, or type \`all\` to remove all criterias in this category.
                                 \`modelyear\` - Filter by model year range.
                                 \`country\` - Filter by country origin. Provide the country code that you want to remove, or type \`all\` to remove all criterias in this category.
@@ -328,7 +328,7 @@ function editFilter(message, filter, args) {
                 channel: message.channel,
                 title: "Error, filter category provided doesn't exist.",
                 desc: `Here is a list of available filter criterias. 
-                        \`rq\` - Filter by RQ. Provide the start of the RQ range desired and the end after that.
+                        \`cr\` - Filter by cr. Provide the start of the cr range desired and the end after that.
                         \`make\` - Filter by make/manufacturer. Provide a valid manufacturer name after that.
                         \`modelyear\` - Filter by model year range. Provide the start of the model year range desired and the end after that.
                         \`country\` - Filter by country origin. Provide a country code after that.

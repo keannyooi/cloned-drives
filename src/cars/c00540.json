@@ -1,5 +1,6 @@
 {
-    "rq": 44,
+    "carID": "c00540",
+    "cr": 440,
     "make": "Honda",
     "model": "MDX",
     "modelYear": 2001,
@@ -22,8 +23,7 @@
     "mra": 47.34,
     "ola": 82.5,
     "description": "The Japanese MDX.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/819659034793607194/OndaMDX.png",
-    "333TopSpeed": 123,
+     "333TopSpeed": 123,
     "3330to60": 7.6,
     "333Handling": 69,
     "666TopSpeed": 128,
@@ -38,6 +38,6 @@
     "699TopSpeed": 128,
     "6990to60": 6.8,
     "699Handling": 74,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997644225044807802/ondaMDX.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

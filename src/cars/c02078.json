@@ -1,5 +1,6 @@
 {
-    "rq": 91,
+    "carID": "c02078",
+    "cr": 910,
     "make": [
         "ABT",
         "Audi"
@@ -27,8 +28,7 @@
     "mra": 66,
     "ola": 78.79,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/944943005960380496/RS_Q8-R_20.png",
-    "333TopSpeed": 198,
+     "333TopSpeed": 198,
     "3330to60": 3.1,
     "333Handling": 94,
     "666TopSpeed": 200,
@@ -43,6 +43,6 @@
     "699TopSpeed": 200,
     "6990to60": 2.8,
     "699Handling": 101,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1016847185779888199/q8r.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Macan"
 }

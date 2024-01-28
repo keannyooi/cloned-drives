@@ -1,5 +1,6 @@
 {
-    "rq": 30,
+    "carID": "c00545",
+    "cr": 300,
     "make": "Honda",
     "model": "Odyssey EX",
     "modelYear": 1999,
@@ -22,8 +23,7 @@
     "mra": 54.39,
     "ola": 65,
     "description": "MPV craze moment.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/820437929808756826/ody_ex.png",
-    "333TopSpeed": 129,
+     "333TopSpeed": 129,
     "3330to60": 9.3,
     "333Handling": 70,
     "666TopSpeed": 133,
@@ -38,6 +38,6 @@
     "699TopSpeed": 133,
     "6990to60": 8.3,
     "699Handling": 75,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100123191504019567/OdyEX99.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "McNuggets"
 }

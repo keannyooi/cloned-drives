@@ -1,5 +1,6 @@
 {
-    "rq": 86,
+    "carID": "c00819",
+    "cr": 860,
     "make": "McLaren",
     "model": "Ultima MK3 \"Edward\" F1 Prototype",
     "modelYear": 1991,
@@ -27,8 +28,7 @@
     "mra": 110.71,
     "ola": 89.56,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/830979001635438632/CD_McLaren_Ultima_Mk3_22Edward22_F1_Prototype.png",
-    "333TopSpeed": 211,
+     "333TopSpeed": 211,
     "3330to60": 2.9,
     "333Handling": 92,
     "666TopSpeed": 213,
@@ -43,6 +43,6 @@
     "699TopSpeed": 213,
     "6990to60": 2.6,
     "699Handling": 99,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095004424969134160/McLaren_F1_Edward.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Exist"
 }

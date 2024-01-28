@@ -1,5 +1,6 @@
 {
-    "rq": 34,
+    "carID": "c00911",
+    "cr": 340,
     "make": "Mitsubishi",
     "model": "Starion 2000 Turbo",
     "modelYear": 1982,
@@ -24,8 +25,7 @@
     "mra": 53.08,
     "ola": 80.67,
     "description": "The base EU-spec Starion, which has quite some power for a base model at the time.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/856532621295222804/mitsubishi_starion_2000_turbo.png",
-    "333TopSpeed": 136,
+     "333TopSpeed": 136,
     "3330to60": 7.3,
     "333Handling": 77,
     "666TopSpeed": 140,
@@ -40,6 +40,6 @@
     "699TopSpeed": 140,
     "6990to60": 6.5,
     "699Handling": 83,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003166186927833169/starion_turbo.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/MitsubishiStarion2000Turbo(1982).png",
     "creator": "Keanny"
 }

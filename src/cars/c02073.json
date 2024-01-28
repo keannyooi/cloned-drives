@@ -1,5 +1,6 @@
 {
-    "rq": 68,
+    "carID": "c02073",
+    "cr": 680,
     "make": [
         "ABT",
         "Audi"
@@ -27,8 +28,7 @@
     "mra": 83.08,
     "ola": 74.92,
     "description": "Audi didn't make a b6 rs 4, so ABT stepped in and made this.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/947802850078130226/CD_ABT_AS400.png",
-    "333TopSpeed": 183,
+     "333TopSpeed": 183,
     "3330to60": 4.3,
     "333Handling": 85,
     "666TopSpeed": 186,
@@ -43,6 +43,6 @@
     "699TopSpeed": 186,
     "6990to60": 3.8,
     "699Handling": 91,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1050780013877792848/ABTAS400.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Exist"
 }

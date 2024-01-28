@@ -1,5 +1,6 @@
 {
-    "rq": 65,
+    "carID": "c02378",
+    "cr": 650,
     "make": ["Alpine", "Renault"],
     "model": "A110 Pure",
     "modelYear": 2018,
@@ -24,8 +25,7 @@
     "ola": 84.44,
     "description": "",
 
-    "card": "https://media.discordapp.net/attachments/819199720249360384/846099039111348264/Alpine_A110_Pure_Card.png",
-	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1008812613473407016/A110Pure.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Fried",
 
     "333TopSpeed": 160,

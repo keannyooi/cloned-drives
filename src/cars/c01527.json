@@ -1,5 +1,6 @@
 {
-    "rq": 23,
+    "carID": "c01527",
+    "cr": 230,
     "make": "Daihatsu",
     "model": "Taft G Turbo",
     "modelYear": 2020,
@@ -25,8 +26,7 @@
     "mra": 8.91,
     "ola": 60.74,
     "description": "Tough and Almighty Fun Tool.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/969596731392147466/Taft_G_Turbo_20.png",
-    "333TopSpeed": 93,
+     "333TopSpeed": 93,
     "3330to60": 12.8,
     "333Handling": 69,
     "666TopSpeed": 99,
@@ -41,6 +41,6 @@
     "699TopSpeed": 99,
     "6990to60": 11.5,
     "699Handling": 74,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1023531608051044382/Daihatsu_Taft_G.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Macan"
 }

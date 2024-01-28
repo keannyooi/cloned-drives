@@ -9,7 +9,7 @@ function createCar(currentCar, unitPreference, hideStats) {
         bmReference = require(`../../cars/${car["reference"]}.json`)
     }
     const carModule = {
-        rq: bmReference["rq"],
+        cr: bmReference["cr"],
         topSpeed: bmReference["topSpeed"],
         accel: bmReference["0to60"],
         handling: bmReference["handling"],

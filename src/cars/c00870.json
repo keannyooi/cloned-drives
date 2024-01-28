@@ -1,5 +1,6 @@
 {
-    "rq": 82,
+    "carID": "c00870",
+    "cr": 820,
     "make": [
         "Mercedes-Benz",
         "McLaren"
@@ -30,8 +31,7 @@
     "mra": 95,
     "ola": 88,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/826765376431456256/CD_Mercedes-Benz_SLR_McLaren_Stirling_Moss_Edition.png",
-    "333TopSpeed": 219,
+     "333TopSpeed": 219,
     "3330to60": 3.1,
     "333Handling": 91,
     "666TopSpeed": 222,
@@ -46,6 +46,6 @@
     "699TopSpeed": 222,
     "6990to60": 2.8,
     "699Handling": 98,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017887784494710884/Mercedes_SLR_Stirling_Moss.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Exist"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 115,
+    "carID": "c00211",
+    "cr": 1150,
     "make": "Bugatti",
     "model": "Bolide Concept",
     "modelYear": 2020,
@@ -22,8 +23,7 @@
     "mra": 150,
     "ola": 85.71,
     "description": "The ultimate Track weapon powered by a W16..",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/958780802139824149/bolideconcept.png",
-    "333TopSpeed": 319,
+     "333TopSpeed": 319,
     "3330to60": 2.0,
     "333Handling": 104,
     "666TopSpeed": 320,
@@ -38,6 +38,6 @@
     "699TopSpeed": 320,
     "6990to60": 1.8,
     "699Handling": 112,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995804006578393108/bolideconcept.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

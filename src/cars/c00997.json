@@ -1,5 +1,6 @@
 {
-    "rq": 41,
+    "carID": "c00997",
+    "cr": 410,
     "make": "Opel",
     "model": "Insignia Grand Sport 2.0D",
     "modelYear": 2017,
@@ -22,8 +23,7 @@
     "mra": 61.59,
     "ola": 75.29,
     "description": "The last Opel developed and produced under GM rule.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/858980450851618836/C.OpelInsigniaGS20D.png",
-    "333TopSpeed": 145,
+     "333TopSpeed": 145,
     "3330to60": 8.1,
     "333Handling": 80,
     "666TopSpeed": 148,
@@ -38,6 +38,6 @@
     "699TopSpeed": 148,
     "6990to60": 7.2,
     "699Handling": 85,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1036182975324377128/insignia_grand_sport_d.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 4,
+    "carID": "c02099",
+    "cr": 40,
     "make": "Austin-Healey",
     "model": "Sprite Mk I",
     "modelYear": 1958,
@@ -25,8 +26,7 @@
     "mra": 23.48,
     "ola": 53.13,
     "description": "So Cute.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/865586917303517184/CD_Austin-Healey_Sprite_Mk_I.png",
-    "333TopSpeed": 89,
+     "333TopSpeed": 89,
     "3330to60": 19,
     "333Handling": 70,
     "666TopSpeed": 96,
@@ -41,6 +41,6 @@
     "699TopSpeed": 96,
     "6990to60": 17,
     "699Handling": 75,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100141875014410330/Austin_Healey_Sprite.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Exist"
 }

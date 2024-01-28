@@ -1,5 +1,6 @@
 {  
-    "rq": 59,
+    "carID": "c03148",
+    "cr": 590,
     "make": "Morgan",
     "model": "Plus Four",
     "modelYear": 2020,
@@ -22,8 +23,7 @@
     "mra": 72.86,
     "ola": 78.43,
     "description": "Does it look the same as before? Yes! Is it just as slow? Hell naw.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/1039223926590554232/morgan_plus_four.png",
-    "333TopSpeed": 152,
+     "333TopSpeed": 152,
     "3330to60": 4.8,
     "333Handling": 90,
     "666TopSpeed": 156,
@@ -38,6 +38,6 @@
     "699TopSpeed": 156,
     "6990to60": 4.3,
     "699Handling": 97,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1039224380712034324/plus_four.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Lemon"
 }

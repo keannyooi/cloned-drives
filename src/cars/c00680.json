@@ -1,5 +1,6 @@
 {
-    "rq": 28,
+    "carID": "c00680",
+    "cr": 275,
     "make": "Lancia",
     "model": "Thema Turbo ds",
     "modelYear": 1988,
@@ -23,9 +24,8 @@
     "fuelType": "Diesel",
     "mra": 45.37,
     "ola": 66.02,
-    "description": "it was stylish, although some would accused it of being a slight bit '80s Giugiaro-generic. Card by Andu",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/859139949570686976/ThemaTds.png",
-    "333TopSpeed": 125,
+    "description": "it was stylish, although some would accused it of being a slight bit '80s Giugiaro-generic.",
+     "333TopSpeed": 125,
     "3330to60": 9.8,
     "333Handling": 71,
     "666TopSpeed": 130,
@@ -40,6 +40,6 @@
     "699TopSpeed": 130,
     "6990to60": 8.8,
     "699Handling": 77,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1050933965457997824/Themads.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/LanciaThemaTurbods(1988).png",
     "creator": "Andu"
 }

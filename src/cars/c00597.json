@@ -1,5 +1,6 @@
 {
-    "rq": 64,
+    "carID": "c00597",
+    "cr": 640,
     "make": "Jaguar",
     "model": "XE S",
     "modelYear": 2017,
@@ -22,8 +23,7 @@
     "mra": 67.31,
     "ola": 66.67,
     "description": "The XE S is a sleeper; no one would expect such admirable results out of something that looks exactly like a generic upscale sedan.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/820437013206401044/xes.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 4.3,
     "333Handling": 89,
     "666TopSpeed": 162,
@@ -38,6 +38,6 @@
     "699TopSpeed": 162,
     "6990to60": 3.8,
     "699Handling": 95,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017072060633190420/Jaguar_XE_S.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "McNuggets"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 29,
+    "carID": "c00849",
+    "cr": 290,
     "make": "Mercedes-Benz",
     "model": "350 GD Turbodiesel SWB",
     "modelYear": 1992,
@@ -22,8 +23,7 @@
     "mra": 13.33,
     "ola": 66.17,
     "description": "A slightly faster bbbbbrrgggrgrrbegebr.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/866707538590302208/Mercedes-Benz350GDTDSWB.png",
-    "333TopSpeed": 96,
+     "333TopSpeed": 96,
     "3330to60": 12.6,
     "333Handling": 60,
     "666TopSpeed": 102,
@@ -38,6 +38,6 @@
     "699TopSpeed": 102,
     "6990to60": 11.3,
     "699Handling": 64,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1051411734906294322/Mercedes_350_GD_SWB.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 91,
+    "carID": "c01782",
+    "cr": 907,
     "make": "Nissan",
     "model": "Skyline GT-R Nismo Z-Tune (R34)",
     "modelYear": 2003,
@@ -20,10 +21,9 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 100,
-    "ola": 72.34,
+    "ola": 75,
     "description": "A car so strong it can beat a 2015 Nissan GT-R Nismo on the 1/4.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/985650519097872445/Ztune.png",
-    "333TopSpeed": 206,
+     "333TopSpeed": 206,
     "3330to60": 3.5,
     "333Handling": 93,
     "666TopSpeed": 208,
@@ -38,6 +38,6 @@
     "699TopSpeed": 208,
     "6990to60": 3.1,
     "699Handling": 100,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995993078412357662/nismoZtune.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/NissanSkylineGTRNismoZTune(R34)(2004).png",
     "creator": "Bnuuy"
 }

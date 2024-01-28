@@ -1,5 +1,6 @@
 {
-    "rq": 43,
+    "carID": "c01576",
+    "cr": 423,
     "make": "Isuzu",
     "model": "Impulse RS",
     "modelYear": 1991,
@@ -24,9 +25,8 @@
     "fuelType": "Petrol",
     "mra": 58.33,
     "ola": 71.43,
-    "description": "Fading into the Background with a Long-Lasting Impression. Cars by Andu.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/949228377431236638/ImpulseRS.png",
-    "333TopSpeed": 134,
+    "description": "Fading into the Background with a Long-Lasting Impression.",
+     "333TopSpeed": 134,
     "3330to60": 6.7,
     "333Handling": 77,
     "666TopSpeed": 138,
@@ -41,6 +41,6 @@
     "699TopSpeed": 138,
     "6990to60": 6,
     "699Handling": 83,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1050980873668927629/ImpulseRS.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/IsuzuImpulseRS(1991).png",
     "creator": "Andu"
 }

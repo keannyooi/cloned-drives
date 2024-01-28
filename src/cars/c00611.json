@@ -1,5 +1,6 @@
 {
-    "rq": 85,
+    "carID": "c00611",
+    "cr": 850,
     "make": "Jeep",
     "model": "Grand Cherokee Trackhawk",
     "modelYear": 2018,
@@ -22,8 +23,7 @@
     "mra": 68.44,
     "ola": 66.59,
     "description": "Simply put, ridiculous.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/821008187314536488/trackhawk_but_nippon.png",
-    "333TopSpeed": 183,
+     "333TopSpeed": 183,
     "3330to60": 3.3,
     "333Handling": 83,
     "666TopSpeed": 186,
@@ -38,6 +38,6 @@
     "699TopSpeed": 186,
     "6990to60": 3,
     "699Handling": 89,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003290743575683164/trackhawk.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Keanny"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 56,
+    "carID": "c00859",
+    "cr": 560,
     "make": "Mercedes-Benz",
     "model": "A 220 4MATIC Sedan",
     "modelYear": 2019,
@@ -24,8 +25,7 @@
     "mra": 57.94,
     "ola": 67.74,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/828050637953433600/A_220_4MATIC_Sedan_19.png",
-    "333TopSpeed": 136,
+     "333TopSpeed": 136,
     "3330to60": 5.9,
     "333Handling": 88,
     "666TopSpeed": 140,
@@ -40,6 +40,6 @@
     "699TopSpeed": 140,
     "6990to60": 5.3,
     "699Handling": 94,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017741389141905488/Mercedes_A_220_4MATIC_Sedan.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Macan"
 }

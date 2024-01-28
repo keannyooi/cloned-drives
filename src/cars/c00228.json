@@ -1,5 +1,6 @@
 {
-    "rq": 97,
+    "carID": "c00228",
+    "cr": 970,
     "make": "Bugatti",
     "model": "Veyron 16.4 Super Sport World Record Edition",
     "modelYear": 2010,
@@ -22,8 +23,7 @@
     "mra": 102.45,
     "ola": 92,
     "description": "Officially recognised by Guiness World Records as the fastest production vehicle.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/952192454218633236/VeyronSuperSportWRE.png",
-    "333TopSpeed": 270,
+     "333TopSpeed": 270,
     "3330to60": 2.4,
     "333Handling": 92,
     "666TopSpeed": 272,
@@ -38,6 +38,6 @@
     "699TopSpeed": 272,
     "6990to60": 2.1,
     "699Handling": 99,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995992610827149352/veyronwre.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

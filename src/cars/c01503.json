@@ -1,5 +1,6 @@
 {
-    "rq": 73,
+    "carID": "c01503",
+    "cr": 730,
     "make": "HSV",
     "model": "GTS Maloo",
     "modelYear": 2014,
@@ -25,8 +26,7 @@
     "mra": 88.05,
     "ola": 71.03,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/847822779399143444/CD_HSV_GTS_Maloo.png",
-    "333TopSpeed": 178,
+     "333TopSpeed": 178,
     "3330to60": 4.0,
     "333Handling": 85,
     "666TopSpeed": 181,
@@ -41,6 +41,6 @@
     "699TopSpeed": 181,
     "6990to60": 3.6,
     "699Handling": 91,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1050857644556042270/HSV_GTS_Maloo.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Exist"
 }

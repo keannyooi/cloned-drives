@@ -1,5 +1,6 @@
 {
-    "rq": 64,
+    "carID": "c01581",
+    "cr": 638,
     "make": [
         "JIC Magic",
         "Nissan"
@@ -29,8 +30,7 @@
     "mra": 83.33,
     "ola": 84,
     "description": "Yes, this is a D1GP car in the US.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/869498303933468692/jic_magic_350z_nismo_d1gp.png",
-    "333TopSpeed": 183,
+     "333TopSpeed": 183,
     "3330to60": 4.8,
     "333Handling": 94,
     "666TopSpeed": 186,
@@ -45,6 +45,6 @@
     "699TopSpeed": 186,
     "6990to60": 4.3,
     "699Handling": 101,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1006525285967073300/jic_magik.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/JICMagic350ZNismoD1GP(2004).png",
     "creator": "Keanny"
 }

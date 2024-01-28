@@ -1,5 +1,6 @@
 {
-    "rq": 57,
+    "carID": "c02222",
+    "cr": 570,
     "make": ["Range Rover","Land Rover"],
     "model": "Velar D275 SE",
     "modelYear": 2019,
@@ -22,8 +23,7 @@
     "mra": 61.47,
     "ola": 77.61,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/949494532108587068/Range_Rover_Velar_D275_SE_19.png",
-    "333TopSpeed": 139,
+     "333TopSpeed": 139,
     "3330to60": 6.4,
     "333Handling": 75,
     "666TopSpeed": 143,
@@ -38,6 +38,6 @@
     "699TopSpeed": 143,
     "6990to60": 5.7,
     "699Handling": 81,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995931144765841489/Range_Rover_Velar_D275_SE_19.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Macan"
 }

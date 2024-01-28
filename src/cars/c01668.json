@@ -1,5 +1,6 @@
 {
-    "rq": 93,
+    "carID": "c01668",
+    "cr": 930,
     "make": "Mitsubishi",
     "model": "Lancer Evolution V Ralliart RS450",
     "modelYear": 1998,
@@ -22,8 +23,7 @@
     "mra": 75,
     "ola": 80,
     "description": "Of the 5 RS450s made by Ralliart UK only one was based on an Evo V, the rest were based on Evo VIs. This is the most 'eXtreme' Evo V money could buy... except you could not buy it as it was a test and press car for the Evo VI upgrade. Why was it named the RS450? That was the torque figure they aimed for but never achieved.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/1054409381963374602/evo5rs450redo.png",
-    "333TopSpeed": 162,
+     "333TopSpeed": 162,
     "3330to60": 2.9,
     "333Handling": 91,
     "666TopSpeed": 166,
@@ -38,6 +38,6 @@
     "699TopSpeed": 166,
     "6990to60": 2.6,
     "699Handling": 98,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997560454337527848/evo5rs450.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 34,
+    "carID": "c00532",
+    "cr": 340,
     "make": "Honda",
     "model": "Clarity FCV",
     "modelYear": 2016,
@@ -26,8 +27,7 @@
     "mra": 43.55,
     "ola": 74.07,
     "description": "The MRA is a lie.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/835465009152524328/clarity.png",
-    "333TopSpeed": 109,
+     "333TopSpeed": 109,
     "3330to60": 8,
     "333Handling": 74,
     "666TopSpeed": 114,
@@ -42,6 +42,6 @@
     "699TopSpeed": 114,
     "6990to60": 7.1,
     "699Handling": 80,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003273073073590334/clarity_fcv.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Keanny"
 }

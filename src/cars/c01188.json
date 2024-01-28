@@ -1,5 +1,6 @@
 {
-    "rq": 43,
+    "carID": "c01188",
+    "cr": 430,
     "make": "Subaru",
     "model": "Alcyone SVX",
     "modelYear": 1991,
@@ -22,8 +23,7 @@
     "mra": 66.97,
     "ola": 76.71,
     "description": "Named after the star that symbolizes the brand.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/819392285158146058/subaru_alcyone_svx.png",
-    "333TopSpeed": 157,
+     "333TopSpeed": 157,
     "3330to60": 6.9,
     "333Handling": 80,
     "666TopSpeed": 161,
@@ -38,6 +38,6 @@
     "699TopSpeed": 161,
     "6990to60": 6.2,
     "699Handling": 85,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003294438883328060/alcyone.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Keanny"
 }

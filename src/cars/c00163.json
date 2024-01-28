@@ -1,5 +1,6 @@
 {
-    "rq": 19,
+    "carID": "c00163",
+    "cr": 188,
     "make": "BMW",
     "model": "503 Coupe",
     "modelYear": 1955,
@@ -22,8 +23,7 @@
     "mra": 60,
     "ola": 55.55,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/857393662827954186/503Coupe.png",
-    "333TopSpeed": 121,
+     "333TopSpeed": 121,
     "3330to60": 12.0,
     "333Handling": 62,
     "666TopSpeed": 126,
@@ -38,6 +38,6 @@
     "699TopSpeed": 126,
     "6990to60": 10.7,
     "699Handling": 67,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995978444242419752/bmw503coupe.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BMW503Coupe(1955).png",
     "creator": "Bnuuy"
 }

@@ -6,6 +6,7 @@ const { InfoMessage } = require("../util/classes/classes.js");
 const search = require("../util/functions/search.js");
 const carNameGen = require("../util/functions/carNameGen.js");
 const unbritish = require("../util/functions/unbritish.js");
+const generateHud = require("../util/functions/generateHud.js");
 const getFlag = require("../util/functions/getFlag.js");
 const profileModel = require("../models/profileSchema.js");
 
@@ -75,7 +76,7 @@ module.exports = {
                 title: carNameGen({ currentCar, rarity: true }),
                 desc: `Car ID: \`${carFile.slice(0, 6)}\``,
                 author: message.author,
-                image: currentCar["card"],
+                image: currentCar["racehud"],
                 thumbnail: getFlag(currentCar["country"]),
                 fields: [
                     { name: "Top Speed", value: topSpeed, inline: true },

@@ -1,5 +1,6 @@
 {
-    "rq": 65,
+    "carID": "c01251",
+    "cr": 647,
     "make": "Tesla",
     "model": "Model 3 Long Range",
     "modelYear": 2019,
@@ -24,8 +25,7 @@
     "mra": 63.4,
     "ola": 84.56,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/858544311648780298/tesla_model_3_long_range.png",
-    "333TopSpeed": 144,
+     "333TopSpeed": 144,
     "3330to60": 4.8,
     "333Handling": 80,
     "666TopSpeed": 147,
@@ -40,6 +40,6 @@
     "699TopSpeed": 147,
     "6990to60": 4.3,
     "699Handling": 85,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1002951303732932629/model_3_long.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/TeslaModel3LongRange(2019).png",
     "creator": "Keanny"
 }

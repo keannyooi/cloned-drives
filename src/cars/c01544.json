@@ -1,5 +1,6 @@
 {
-    "rq": 48,
+    "carID": "c01544",
+    "cr": 480,
     "make": "Honda",
     "model": "Civic Type-R (EP3)",
     "modelYear": 2001,
@@ -26,8 +27,7 @@
     "mra": 69.13,
     "ola": 85.37,
     "description": "Breadvan with a classic high-revving VTEC.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/863870790943506442/unknown.png",
-    "333TopSpeed": 150,
+     "333TopSpeed": 150,
     "3330to60": 6.3,
     "333Handling": 84,
     "666TopSpeed": 153,
@@ -42,6 +42,6 @@
     "699TopSpeed": 153,
     "6990to60": 5.6,
     "699Handling": 90,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100169000673091746/TypeREP3.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

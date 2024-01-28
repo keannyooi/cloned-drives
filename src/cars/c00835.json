@@ -1,5 +1,6 @@
 {
-    "rq": 84,
+    "carID": "c00835",
+    "cr": 840,
     "make": [
         "Mercedes-AMG",
         "Mercedes-Benz"
@@ -29,8 +30,7 @@
     "mra": 91.3,
     "ola": 93.23,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/821368863568166982/AMGGTR.png",
-    "333TopSpeed": 201,
+     "333TopSpeed": 201,
     "3330to60": 3.1,
     "333Handling": 96,
     "666TopSpeed": 203,
@@ -45,6 +45,6 @@
     "699TopSpeed": 203,
     "6990to60": 2.8,
     "699Handling": 103,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100149558186618880/GTRAMG.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

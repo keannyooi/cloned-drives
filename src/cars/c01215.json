@@ -1,5 +1,6 @@
 {
-    "rq": 73,
+    "carID": "c01215",
+    "cr": 730,
     "make": "Subaru",
     "model": "Impreza WRX STI 330S",
     "modelYear": 2008,
@@ -25,8 +26,7 @@
     "mra": 62.16,
     "ola": 60.87,
     "description": "An ECU tuning offered by Prodrive that bumps up the power to 325 hp.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/846266748511715348/image0.jpg",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 4.4,
     "333Handling": 87,
     "666TopSpeed": 162,
@@ -41,6 +41,6 @@
     "996TopSpeed": 165,
     "9960to60": 3.9,
     "996Handling": 90,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1018249020927397949/Subaru_Impreza_WRX_STI_330s.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

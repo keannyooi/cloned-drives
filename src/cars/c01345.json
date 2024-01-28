@@ -1,5 +1,6 @@
 {
-    "rq": 82,
+    "carID": "c01345",
+    "cr": 819,
     "make": [
         "Unplugged Performance",
         "Tesla"
@@ -29,8 +30,7 @@
     "mra": 61.86,
     "ola": 86.67,
     "description": "This car, raced by XPO, set a supercar-shredding time of 1:54.6 at the Buttonwillow racetrack on the day before Track Mode 2.0 was released.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/858545885964140574/unplugged_performance_model_3_perf_xpo_sales.png",
-    "333TopSpeed": 165,
+     "333TopSpeed": 165,
     "3330to60": 2.9,
     "333Handling": 92,
     "666TopSpeed": 168,
@@ -45,6 +45,6 @@
     "699TopSpeed": 168,
     "6990to60": 2.6,
     "699Handling": 99,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1002952286433181836/model_3_xpo.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/UnpluggedPerformanceModel3PerformanceXPOSales(2020).png",
     "creator": "Keanny"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 79,
+    "carID": "c01118",
+    "cr": 790,
     "make": "Porsche",
     "model": "Macan S",
     "modelYear": 2014,
@@ -22,8 +23,7 @@
     "mra": 64.1,
     "ola": 84,
     "description": "An impressive SUV, appealing to those who need something practical but who don’t want to give up the Porsche badge and the driving enjoyment that goes with it.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1077328635930873866/MAcanS2014.png",
-"333TopSpeed": 160,
+ "333TopSpeed": 160,
 "3330to60": 4.8,
 "333Handling": 82,
 
@@ -42,6 +42,6 @@
 "996TopSpeed": 167,
 "9960to60": 4.3,
 "996Handling": 84,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997221268766068847/PorscheMacanS.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 67,
+    "carID": "c01201",
+    "cr": 670,
     "make": "Subaru",
     "model": "Impreza S204",
     "modelYear": 2006,
@@ -24,8 +25,7 @@
     "mra": 57.89,
     "ola": 68.18,
     "description": "The 4th S-Series Impreza STI, this time for the Hawkeye.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/845537015532486666/image0.jpg",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 4.2,
     "333Handling": 86,
     "666TopSpeed": 162,
@@ -40,6 +40,6 @@
     "996TopSpeed": 165,
     "9960to60": 3.7,
     "996Handling": 88,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1018253773115764786/Subaru_Impreza_WRX_STI_S204.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

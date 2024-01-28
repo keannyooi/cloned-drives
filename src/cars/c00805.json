@@ -1,5 +1,6 @@
 {
-    "rq": 64,
+    "carID": "c00805",
+    "cr": 640,
     "make": "McLaren",
     "model": "M6 GT",
     "modelYear": 1969,
@@ -27,8 +28,7 @@
     "mra": 110.53,
     "ola": 90,
     "description": "A Can-Am car built for the road.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/830980574733926400/CD_McLaren_M6_GT.png?width=1410&height=878",
-    "333TopSpeed": 168,
+     "333TopSpeed": 168,
     "3330to60": 4.0,
     "333Handling": 80,
     "666TopSpeed": 171,
@@ -43,6 +43,6 @@
     "699TopSpeed": 171,
     "6990to60": 3.6,
     "699Handling": 85,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017141090807185478/McLaren_M6_GT.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Exist"
 }

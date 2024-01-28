@@ -1,5 +1,6 @@
 {
-    "rq": 54,
+    "carID": "c00437",
+    "cr": 540,
     "make": "Ford",
     "model": "F-150 SVT Lightning",
     "modelYear": 2000,
@@ -22,8 +23,7 @@
     "mra": 47.79,
     "ola": 77.78,
     "description": "The hot-rod pickup of the beginning of the 21st century.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/819568519736983592/SpenceF150Lightning.png",
-    "333TopSpeed": 152,
+     "333TopSpeed": 152,
     "3330to60": 5.2,
     "333Handling": 79,
     "666TopSpeed": 156,
@@ -38,6 +38,6 @@
     "699TopSpeed": 156,
     "6990to60": 4.7,
     "699Handling": 84,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997194067073044562/FordF150SVTLightning.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 18,
+    "carID": "c01931",
+    "cr": 180,
     "make": "Toyota",
     "model": "Yaris 1.0 16V Sol",
     "modelYear": 1999,
@@ -24,8 +25,7 @@
     "mra": 18.96,
     "ola": 63.16,
     "description": "Base model to get you into that new millenium fantasy. Car by Andu",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/866935292430123018/Yaris1016VSol.png",
-    "333TopSpeed": 102,
+     "333TopSpeed": 102,
     "3330to60": 13.2,
     "333Handling": 67,
     "666TopSpeed": 108,
@@ -40,6 +40,6 @@
     "699TopSpeed": 108,
     "6990to60": 11.8,
     "699Handling": 72,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1050965573149937694/Yaris10Sol.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Andu"
 }

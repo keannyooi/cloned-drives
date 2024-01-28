@@ -1,5 +1,6 @@
 {
-    "rq": 37,
+    "carID": "c00677",
+    "cr": 367,
     "make": "Lancia",
     "model": "Thema 8.32",
     "modelYear": 1987,
@@ -23,9 +24,8 @@
     "fuelType": "Petrol",
     "mra": 68.41,
     "ola": 81.48,
-    "description": "Lancia and Ferrari together under the same bonnet. Card by Andu",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/861588323692576788/Thema832.png",
-    "333TopSpeed": 150,
+    "description": "Lancia and Ferrari together under the same bonnet.",
+     "333TopSpeed": 150,
     "3330to60": 6.8,
     "333Handling": 74,
     "666TopSpeed": 153,
@@ -40,6 +40,6 @@
     "699TopSpeed": 153,
     "6990to60": 6.1,
     "699Handling": 80,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1043849642695196733/832.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/LanciaThema8.32(1987).png",
     "creator": "Andu"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 77,
+    "carID": "c00277",
+    "cr": 770,
     "make": "Chevrolet",
     "model": "Corvette Z06",
     "modelYear": 2006,
@@ -24,8 +25,7 @@
     "mra": 84.52,
     "ola": 91,
     "description": "With 505 Ponies under the hood, the golden age of the corvette.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/822048606013882378/ChevroletCorvetteZ06.png",
-    "333TopSpeed": 202,
+     "333TopSpeed": 202,
     "3330to60": 3.5,
     "333Handling": 92,
     "666TopSpeed": 204,
@@ -40,6 +40,6 @@
     "699TopSpeed": 204,
     "6990to60": 3.1,
     "699Handling": 99,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017055603383865344/Chevrolet_Corvette_Z06_2006.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 57,
+    "carID": "c00362",
+    "cr": 570,
     "make": "Dodge",
     "model": "Durango R/T AWD",
     "modelYear": 2016,
@@ -23,8 +24,7 @@
     "mra": 61.39,
     "ola": 80,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/826073080446713866/Dodge_Durango_RT_AWD_2016.png",
-
+ 
     "333TopSpeed": 124,
     "3330to60": 5.9,
     "333Handling": 72,
@@ -45,6 +45,6 @@
     "6990to60": 5.3,
     "699Handling": 78,
 
-    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1094566908302463006/durango.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Macan"
 }

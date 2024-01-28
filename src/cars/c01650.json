@@ -1,5 +1,6 @@
 {
-    "rq": 78,
+    "carID": "c01650",
+    "cr": 780,
     "make": "Mitsubishi",
     "model": "Lancer Evolution IX FQ-300",
     "modelYear": 2005,
@@ -22,8 +23,7 @@
     "mra": 70.78,
     "ola": 77.27,
     "description": "Card by Bnuuy.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/948546476185903155/evo9fq300.png",
-    "333TopSpeed": 160,
+     "333TopSpeed": 160,
     "3330to60": 4.2,
     "333Handling": 91,
     "666TopSpeed": 164,
@@ -38,6 +38,6 @@
     "699TopSpeed": 164,
     "6990to60": 3.7,
     "699Handling": 98,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996029755235258460/evoixfq300.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

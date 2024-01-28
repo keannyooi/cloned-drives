@@ -1,5 +1,6 @@
 {
-    "rq": 74,
+    "carID": "c01241",
+    "cr": 740,
     "make": "Suzuki",
     "model": "GSX-R/4",
     "modelYear": 2001,
@@ -25,8 +26,7 @@
     "mra": 63.24,
     "ola": 62.85,
     "description": "Basically, it’s a bike on four wheels, literally.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/823612495968993310/suzukithingy.png",
-    "333TopSpeed": 184,
+     "333TopSpeed": 184,
     "3330to60": 4.1,
     "333Handling": 95,
     "666TopSpeed": 187,
@@ -41,6 +41,6 @@
     "699TopSpeed": 187,
     "6990to60": 3.7,
     "699Handling": 102,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1018153095856922634/Suzuki_GSX-R4.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

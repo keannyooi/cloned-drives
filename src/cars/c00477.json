@@ -1,5 +1,6 @@
 {
-    "rq": 43,
+    "carID": "c00477",
+    "cr": 430,
     "make": "Ford",
     "model": "Mustang SVT Cobra",
     "modelYear": 1993,
@@ -22,8 +23,7 @@
     "mra": 60.43,
     "ola": 82.76,
     "description": "One of the best things about a standard Mustang 5.0 is its low-rpm squirt. This is where the Mustang Cobra frustrates. Sure, it's got the beans to rip your head off when you've strained the tach needle deep into the vast yellow zone, but drop below about 2500 rpm, and there's little forward thrust.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/826465964840189992/Ford_Mustang_SVT_Cobra_1993.png",
-    "333TopSpeed": 145,
+     "333TopSpeed": 145,
     "3330to60": 5.5,
     "333Handling": 80,
     "666TopSpeed": 148,
@@ -38,6 +38,6 @@
     "699TopSpeed": 148,
     "6990to60": 4.9,
     "699Handling": 85,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1000950580648366110/svt_cobra_temp.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Preston"
 }

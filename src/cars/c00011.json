@@ -1,5 +1,6 @@
 {
-    "rq": 40,
+    "carID": "c00011",
+    "cr": 404,
     "make": ["AC Propulsion", "Scion"],
     "model": "eBox",
     "modelYear": 2007,
@@ -23,8 +24,7 @@
     "mra": 39.97,
     "ola": 62.86,
     "description": "After realizing that the tzero wasn't selling, AC Propulsion shifted their focus to developing the eBox, which is just an electrified Scion xB. They chose the car due to its boxy shape allowing for easier battery installation. While they did manage to sell the first production car to Tom Hanks, they weren't able to get Elon Musk (who had just sold PayPal and had money to throw) onto the project because he was more interested in investing on what would later become a pioneering force among EVs - the Tesla Roadster.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/865584491687182356/ac_propulsion_ebox.png",
-
+ 
     "333TopSpeed": 100,
     "3330to60": 6.7,
     "333Handling": 74,
@@ -45,6 +45,6 @@
     "6990to60": 6,
     "699Handling": 80,
 
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003177400198250578/ebox.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ACPropulsioneBox(2007).png",
     "creator": "Keanny"
 }

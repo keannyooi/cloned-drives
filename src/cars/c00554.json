@@ -1,5 +1,6 @@
 {
-    "rq": 8,
+    "carID": "c00554",
+    "cr": 76,
     "make": "Honda",
     "model": "S660",
     "modelYear": 2015,
@@ -23,8 +24,7 @@
     "mra": 27.27,
     "ola": 70.33,
     "description": "The epitome of driving a slow car fast.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/868778731236360202/honda_s660.png",
-
+ 
     "333TopSpeed": 93,
     "3330to60": 12.1,
     "333Handling": 74,
@@ -45,6 +45,6 @@
     "6990to60": 10.8,
     "699Handling": 80,
 
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003175871185698846/honda_s660.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/HondaS660(2015)).png",
     "creator": "Keanny"
 }

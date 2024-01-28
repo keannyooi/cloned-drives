@@ -1,5 +1,6 @@
 {
-    "rq": 52,
+    "carID": "c00125",
+    "cr": 520,
     "make": "Audi",
     "model": "TT Shooting Brake Concept",
     "modelYear": 2005,
@@ -22,8 +23,7 @@
     "mra": 69.05,
     "ola": 72.41,
     "description": "The idea of a more versatile Audi TT is intriguing: combining the sportiness of the standard coupe with the extra practicality of a wagon.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/841576135144767498/audi_tt_shooting_brake_concept_for_cd.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 5.5,
     "333Handling": 84,
     "666TopSpeed": 162,
@@ -38,6 +38,6 @@
     "699TopSpeed": 162,
     "6990to60": 4.9,
     "699Handling": 90,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1001033078136905748/IMG_20210510_105802.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Lemon"
 }

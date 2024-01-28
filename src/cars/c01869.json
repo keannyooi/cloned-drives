@@ -1,11 +1,12 @@
 {
-    "rq": 48,
+    "carID": "c01869",
+    "cr": 503,
     "make": "Toyota",
     "model": "Aygo Crazy",
     "modelYear": 2008,
     "country": "JP",
     "topSpeed": 127,
-    "0to60": 5.7,
+    "0to60": 5.5,
     "handling": 83,
     "driveType": "RWD",
     "tyreType": "Performance",
@@ -20,31 +21,30 @@
     "abs": false,
     "enginePos": "Middle",
     "fuelType": "Petrol",
-    "mra": 63.33,
+    "mra": 65.9,
     "ola": 77.19,
     "description": "People who've seen this car in action would be in disbelief to know that this is, in fact, an official project by Toyota's UK branch. It is by all means Crazy - a mid-engined, RWD city car powered by an MR2 engine made in an era before Akio Toyoda's presidency is surely hard to imagine! Whatever this is clearly shows the amount of radicalness the Japanese automotive giant has been hiding from us all along.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/861147257016942602/toyota_aygo_crazy.png",
-
+ 
     "333TopSpeed": 131,
-    "3330to60": 5.4,
+    "3330to60": 5.2,
     "333Handling": 86,
 
     "666TopSpeed": 135,
-    "6660to60": 5.1,
+    "6660to60": 5,
     "666Handling": 88,
 
     "996TopSpeed": 139,
-    "9960to60": 4.8,
+    "9960to60": 4.7,
     "996Handling": 88,
 
     "969TopSpeed": 139,
-    "9690to60": 5.1,
+    "9690to60": 5,
     "969Handling": 92,
 
     "699TopSpeed": 135,
-    "6990to60": 4.8,
+    "6990to60": 4.7,
     "699Handling": 92,
 
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1001859880686190713/aygo_crazy.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ToyotaAygoCrazyConcept(2008).png",
     "creator": "Keanny"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 46,
+    "carID": "c00713",
+    "cr": 460,
     "make": "Lexus",
     "model": "RX 450h AWD",
     "modelYear": 2013,
@@ -24,8 +25,7 @@
     "mra": 68,
     "ola": 80,
     "description": "A motorized spa treatment wrapped in 50 shades of green.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/826520381866901574/RX450h.png",
-    "333TopSpeed": 120,
+     "333TopSpeed": 120,
     "3330to60": 6.5,
     "333Handling": 73,
     "666TopSpeed": 124,
@@ -40,6 +40,6 @@
     "699TopSpeed": 124,
     "6990to60": 5.8,
     "699Handling": 79,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100135344202059936/RX450.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Macan"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 72,
+    "carID": "c00039",
+    "cr": 720,
     "make": ["Alpina","BMW"],
     "model": "B4 Bi-Turbo Cabrio",
     "modelYear": 2014,
@@ -22,8 +23,7 @@
     "mra": 81.13,
     "ola": 88.37,
     "description": "Drop Top, Open Road.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/851226641723031563/alpinab4bitubro.png",
-    "333TopSpeed": 190,
+     "333TopSpeed": 190,
     "3330to60": 4.1,
     "333Handling": 86,
     "666TopSpeed": 193,
@@ -38,6 +38,6 @@
     "699TopSpeed": 193,
     "6990to60": 3.7,
     "699Handling": 92,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995820399155744930/B4Biturbocab.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

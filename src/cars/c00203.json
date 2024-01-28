@@ -1,5 +1,6 @@
 {
-    "rq": 90,
+    "carID": "c00203",
+    "cr": 897,
     "make": "BMW",
     "model": "X6 M Competition",
     "modelYear": 2020,
@@ -22,8 +23,7 @@
     "mra": 66.07,
     "ola": 75.68,
     "description": "BMW's M division placed an M5 engine into an X6 because yes.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/819596516808720394/X6Mcomp.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 3.1,
     "333Handling": 90,
     "666TopSpeed": 162,
@@ -38,6 +38,6 @@
     "699TopSpeed": 162,
     "6990to60": 2.8,
     "699Handling": 97,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995804546750230558/X6MCompetition.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BMWX6MCompetition(2020).png",
     "creator": "Bnuuy"
 }

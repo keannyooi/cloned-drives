@@ -1,5 +1,6 @@
 {
-    "rq": 61,
+    "carID": "c00207",
+    "cr": 606,
     "make": "BMW",
     "model": "Z4 M Coupe",
     "modelYear": 2006,
@@ -24,8 +25,7 @@
     "mra": 65.98,
     "ola": 76.39,
     "description": "A rare and highly sought after driving experience.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/926428316028772372/m_coupe_z4.png",
-    "333TopSpeed": 162,
+     "333TopSpeed": 162,
     "3330to60": 4.6,
     "333Handling": 88,
     "666TopSpeed": 166,
@@ -40,6 +40,6 @@
     "699TopSpeed": 166,
     "6990to60": 4.1,
     "699Handling": 94,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1001844577025663097/z4_m_coupe.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BMWZ4MCoupe(2006).png",
     "creator": "Keanny"
 }

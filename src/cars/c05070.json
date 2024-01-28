@@ -1,5 +1,6 @@
 {
-    "rq": 37,
+    "carID": "c05070",
+    "cr": 370,
     "make": ["Porsche", "Volkswagen"],
     "model": "B32",
     "modelYear": 1985,
@@ -23,8 +24,7 @@
     "mra": 51.25,
     "ola": 51.66,
     "description": "",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158088704485765293/MiscB32.png?ex=651af9a7&is=6519a827&hm=2c9d235dd5075eece2edcb4a19a54f065eb53c254b47e158546ffd3079d2c4c0&",
-	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158088874241822781/MiscB32.png?ex=651af9cf&is=6519a84f&hm=2c772ec80952d5e942688b6d44d5abf6ac3dcf04561a97ad97503ec8696747fc&",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
 
 "333TopSpeed": 126,
 "3330to60": 7.8,

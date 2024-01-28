@@ -1,5 +1,6 @@
 {
-    "rq": 75,
+    "carID": "c01285",
+    "cr": 745,
     "make": "Tesla",
     "model": "Roadster 2.5 Sport",
     "modelYear": 2010,
@@ -23,9 +24,8 @@
     "fuelType": "Electric",
     "mra": 50.66,
     "ola": 88.89,
-    "description": "The Sport model was first introduced in the 2009 Detroit Auto Show with upgrades such a more powerful hand-wound motor and adjustable dampers. MotorTrend were the first to subject it to instrumented testing and reported a faster 0-60mph time of 3.9 seconds as well as a 12.6-second quarter mile. For those wondering about the 0-60 on the card, it's an average of multiple other magazine tests.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/848059633808703518/tesla_roadster_2.5_sport.png",
-    "333TopSpeed": 128,
+    "description": "The Sport model was first introduced in the 2009 Detriot Auto Show with upgrades such a more powerful hand-wound motor and adjustable dampers. MotorTrend were the first to subject it to instrumented testing and reported a faster 0-60mph time of 3.9 seconds as well as a 12.6-second quarter mile. For those wondering about the 0-60 on the card, it's an average of multiple other magazine tests.",
+     "333TopSpeed": 128,
     "3330to60": 3.6,
     "333Handling": 88,
     "666TopSpeed": 132,
@@ -40,6 +40,6 @@
     "699TopSpeed": 132,
     "6990to60": 3.2,
     "699Handling": 94,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1002951469953208461/roadster_2.5.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/TeslaRoadster2.5Sport(2009).png",
     "creator": "Keanny"
 }

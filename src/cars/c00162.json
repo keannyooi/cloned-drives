@@ -1,7 +1,8 @@
 {
-    "rq": 66,
+    "carID": "c00162",
+    "cr": 661,
     "make": "BMW",
-    "model": "440i",
+    "model": "440i M Sport",
     "modelYear": 2016,
     "country": "DE",
     "topSpeed": 155,
@@ -22,8 +23,7 @@
     "mra": 78.69,
     "ola": 79.58,
     "description": "The F32 4-series' range topper.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1081598990128271370/440i.png",
-"333TopSpeed": 158,
+ "333TopSpeed": 158,
 "3330to60": 4.6,
 "333Handling": 86,
 
@@ -42,6 +42,6 @@
 "996TopSpeed": 165,
 "9960to60": 4.1,
 "996Handling": 88,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1081599035250581544/440iCoupe.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BMW440iMSport(2016).png",
     "creator": "Andu"
 }

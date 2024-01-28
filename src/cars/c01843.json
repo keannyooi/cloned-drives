@@ -1,5 +1,6 @@
 {
-    "rq": 61,
+    "carID": "c01843",
+    "cr": 610,
     "make": "Suzuki",
     "model": "Across PHEV",
     "modelYear": 2020,
@@ -24,8 +25,7 @@
     "mra": 66.67,
     "ola": 80,
     "description": "The most expensive, most powerful and biggest Suzuki that isn't even a Suzuki.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/864781742308196372/B.SuzukiAcrossPHEV.png",
-    "333TopSpeed": 120,
+     "333TopSpeed": 120,
     "3330to60": 5.7,
     "333Handling": 73,
     "666TopSpeed": 124,
@@ -40,6 +40,6 @@
     "699TopSpeed": 124,
     "6990to60": 5.1,
     "699Handling": 79,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1020060698484674721/Suzuki_Across_PHEV.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

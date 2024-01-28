@@ -1,5 +1,6 @@
 {
-    "rq": 75,
+    "carID": "c00140",
+    "cr": 753,
     "make": "Bentley",
     "model": "Bentayga Hybrid",
     "modelYear": 2020,
@@ -22,8 +23,7 @@
     "mra": 76.45,
     "ola": 88.88,
     "description": "The Eco Friendly bentley.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1101527359078801438/BentaygaHybrid2020.png",
-    "333TopSpeed": 161,
+     "333TopSpeed": 161,
     "3330to60": 5.0,
     "333Handling": 82,
     "666TopSpeed": 165,
@@ -38,6 +38,6 @@
     "699TopSpeed": 165,
     "6990to60": 4.5,
     "699Handling": 88,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1101561908005437510/BentaygaHybrid.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BentleyBentaygaHybrid(2020).png",
     "creator": "Bnuuy"
 }

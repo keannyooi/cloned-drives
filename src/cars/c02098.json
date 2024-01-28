@@ -1,5 +1,6 @@
 {
-    "rq": 22,
+    "carID": "c02098",
+    "cr": 220,
     "make": "Austin-Healey",
     "model": "3000 Mk III",
     "modelYear": 1963,
@@ -24,8 +25,7 @@
     "mra": 55.54,
     "ola": 73.34,
     "description": "One of the true greats spawned from the British Sports-Classic Era.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/859610395672969236/CD_Austin-Healey_3000_Mk_III.png?width=1410&height=878",
-    "333TopSpeed": 125,
+     "333TopSpeed": 125,
     "3330to60": 9.3,
     "333Handling": 70,
     "666TopSpeed": 130,
@@ -40,6 +40,6 @@
     "699TopSpeed": 130,
     "6990to60": 8.3,
     "699Handling": 75,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100136329322451024/Austin-Healey_3000_Mk_III.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Exist"
 }

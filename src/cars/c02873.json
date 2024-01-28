@@ -1,5 +1,6 @@
 {
-    "rq": 23,
+    "carID": "c02873",
+    "cr": 230,
     "make": "Audi",
     "model": "A1 1.6 TDI",
     "modelYear": 2010,
@@ -22,8 +23,7 @@
     "mra": 44.67,
     "ola": 62.39,
     "description": "The smallest of the :TDIBROTHA: Audis.",
-    "card": "https://media.discordapp.net/attachments/963851818763419700/969303567859077181/audi_a1_1.6_tdi_for_cd.png",
-    "333TopSpeed": 118,
+     "333TopSpeed": 118,
     "3330to60": 10.4,
     "333Handling": 77,
     "666TopSpeed": 122,
@@ -38,6 +38,6 @@
     "699TopSpeed": 122,
     "6990to60": 9.3,
     "699Handling": 83,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1036677777451143258/a1_1.6_tdi_90_hp.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Lemon"
 }

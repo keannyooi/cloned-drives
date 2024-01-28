@@ -1,5 +1,6 @@
 {  
-    "rq": 44,
+    "carID": "c03976",
+    "cr": 440,
     "make": "Ford",
     "model": "Taurus 3.5L Limited",
     "modelYear": 2010,
@@ -22,8 +23,7 @@
     "mra": 66.67,
     "ola": 64.86,
     "description": "Pleasant to behold, easy to respect, but hard to love.",
-    "card": "https://cdn.discordapp.com/attachments/731698267573977099/1086419934818607104/ford_taurus_limited_2010.png",
-    "333TopSpeed": 116,
+     "333TopSpeed": 116,
     "3330to60": 7.0,
     "333Handling": 75,
     "666TopSpeed": 120,
@@ -38,6 +38,6 @@
     "699TopSpeed": 120,
     "6990to60": 6.3,
     "699Handling": 81,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1110662840957812869/taurus_4wd_2010.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Lemon"
 }

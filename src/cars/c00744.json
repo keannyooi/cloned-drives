@@ -1,5 +1,6 @@
 {
-    "rq": 59,
+    "carID": "c00744",
+    "cr": 590,
     "make": "Lotus",
     "model": "Europa S",
     "modelYear": 2006,
@@ -22,8 +23,7 @@
     "mra": 69.51,
     "ola": 70.18,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/849757406362599424/LotusEuropaS.png",
-    "333TopSpeed": 150,
+     "333TopSpeed": 150,
     "3330to60": 5.4,
     "333Handling": 88,
     "666TopSpeed": 153,
@@ -38,6 +38,6 @@
     "699TopSpeed": 153,
     "6990to60": 4.8,
     "699Handling": 94,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997535928547540992/europaS.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

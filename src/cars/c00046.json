@@ -1,5 +1,6 @@
 {
-    "rq": 90,
+    "carID": "c00046",
+    "cr": 900,
     "make": ["Alpina","BMW"],
     "model": "XB7",
     "modelYear": 2020,
@@ -22,8 +23,7 @@
     "mra": 75.47,
     "ola": 80,
     "description": "Alpina stopped tuning some M5's to try to tackle the Beast that is the X7.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1097512309380882552/XB72020.png",
-"333TopSpeed": 183,
+ "333TopSpeed": 183,
 "3330to60": 3.8,
 "333Handling": 82,
 
@@ -42,6 +42,6 @@
 "996TopSpeed": 189,
 "9960to60": 3.4,
 "996Handling": 84,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1097512360643662024/XB72020.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AlpinaXB7(2020).png",
     "creator": "Bnuuy"
 }

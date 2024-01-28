@@ -1,5 +1,6 @@
 {
-    "rq": 34,
+    "carID": "c00561",
+    "cr": 335,
     "make": "Hyundai",
     "model": "Ioniq Electric",
     "modelYear": 2020,
@@ -24,9 +25,8 @@
     "fuelType": "Electric",
     "mra": 45.64,
     "ola": 83.4,
-    "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/819923452471410708/Ioniq.png",
-    "333TopSpeed": 113,
+    "description": "Don't call it a Prius or else it will explode on ya...",
+     "333TopSpeed": 113,
     "3330to60": 8.2,
     "333Handling": 74,
     "666TopSpeed": 118,
@@ -41,6 +41,6 @@
     "699TopSpeed": 118,
     "6990to60": 7.3,
     "699Handling": 80,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1043865183686246560/IONIQ.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/HyundaiIoniqElectric(2020).png",
     "creator": "Andu"
 }

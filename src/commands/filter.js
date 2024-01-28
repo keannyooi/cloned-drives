@@ -8,11 +8,11 @@ module.exports = {
     name: "filter",
     usage: [
         "<make / country / drivetype / tyretype / gc / bodystyle / enginepos / fueltype / tags / collection / search> <corresponding value>",
-        "<rq / modelyear / seatcount> <starting value> [ending value]",
+        "<cr / modelyear / seatcount> <starting value> [ending value]",
         "<isprize / isstock / isupgraded / ismaxed / isowned> <true / false>",
         "<remove / disable> <make / country / tags / collection / tyretype> <corresponding value>",
         "<remove / disable> <make / country / tags / collection / tyretype> all",
-        "<remove / disable> <rq / modelyear / seatcount / drivetype / tyretype / gc / bodystyle / enginepos / fueltype / abs / tcs / isprize / isstock / isupgraded / ismaxed / isowned / search>",
+        "<remove / disable> <cr / modelyear / seatcount / drivetype / tyretype / gc / bodystyle / enginepos / fueltype / abs / tcs / isprize / isstock / isupgraded / ismaxed / isowned / search>",
         "<remove / disable> all"
     ],
     args: 0,

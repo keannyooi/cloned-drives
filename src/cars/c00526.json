@@ -1,5 +1,6 @@
 {
-    "rq": 16,
+    "carID": "c00526",
+    "cr": 160,
     "make": "Honda",
     "model": "Civic CVCC 5-Speed",
     "modelYear": 1975,
@@ -22,8 +23,7 @@
     "mra": 12,
     "ola": 58.67,
     "description": "When 5-Speed gearboxes were revolutionary.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/865597831686389780/F.HondaCivicCVCC5spd.png",
-    "333TopSpeed": 97,
+     "333TopSpeed": 97,
     "3330to60": 14.3,
     "333Handling": 65,
     "666TopSpeed": 102,
@@ -38,6 +38,6 @@
     "699TopSpeed": 102,
     "6990to60": 12.8,
     "699Handling": 70,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1035871621514276904/civic_cvcc.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 93,
+    "carID": "c00809",
+    "cr": 930,
     "make": "McLaren",
     "model": "P1",
     "modelYear": 2013,
@@ -27,8 +28,7 @@
     "mra": 117.39,
     "ola": 88.89,
     "description": "The car that got Jeremy Clarkson's House demolished.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/828991664520691772/CD_McLaren_P1.png?width=1410&height=878",
-    "333TopSpeed": 219,
+     "333TopSpeed": 219,
     "3330to60": 2.6,
     "333Handling": 97,
     "666TopSpeed": 222,
@@ -43,6 +43,6 @@
     "699TopSpeed": 222,
     "6990to60": 2.3,
     "699Handling": 104,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1016841651181850754/p1.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Exist"
 }

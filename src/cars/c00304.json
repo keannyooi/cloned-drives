@@ -1,5 +1,6 @@
 {
-    "rq": 51,
+    "carID": "c00304",
+    "cr": 510,
     "make": "Chevrolet",
     "model": "Tahoe Z71",
     "modelYear": 2021,
@@ -22,8 +23,7 @@
     "mra": 57.69,
     "ola": 66.67,
     "description": "The latest version of Chevy's offroader, now with added offroad.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/827079939433955388/obese_tahoe.png",
-    "333TopSpeed": 120,
+     "333TopSpeed": 120,
     "3330to60": 7.1,
     "333Handling": 63,
     "666TopSpeed": 124,
@@ -38,6 +38,6 @@
     "699TopSpeed": 124,
     "6990to60": 6.4,
     "699Handling": 68,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017738713859637338/Chevrolet_Tahoe_Z71.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "DodgeDemon"
 }

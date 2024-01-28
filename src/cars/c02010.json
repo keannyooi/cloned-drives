@@ -1,5 +1,6 @@
 {
-    "rq": 84,
+    "carID": "c02010",
+    "cr": 840,
     "make": ["Ruf","Porsche"],
     "model": "SCR",
     "modelYear": 2018,
@@ -22,8 +23,7 @@
     "mra": 80.48,
     "ola": 78.78,
     "description": "Pure driving pleasure.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/978713498479624202/SCR.png",
-    "333TopSpeed": 202,
+     "333TopSpeed": 202,
     "3330to60": 3.1,
     "333Handling": 94,
     "666TopSpeed": 204,
@@ -38,6 +38,6 @@
     "699TopSpeed": 204,
     "6990to60": 2.8,
     "699Handling": 101,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995688284011368490/rufSCR.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

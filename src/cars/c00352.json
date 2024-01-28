@@ -1,5 +1,6 @@
 {
-    "rq": 73,
+    "carID": "c00352",
+    "cr": 730,
     "make": "Dodge",
     "model": "Challenger SRT Hellcat Widebody",
     "modelYear": 2018,
@@ -25,8 +26,7 @@
     "mra": 82.22,
     "ola": 97.3,
     "description": "The Challenger goes wide.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/821953125874925598/2018_Dodge_Challenger_SRT_Hellcat_Widebody.png",
-    "333TopSpeed": 198,
+     "333TopSpeed": 198,
     "3330to60": 3.5,
     "333Handling": 89,
     "666TopSpeed": 200,
@@ -41,6 +41,6 @@
     "699TopSpeed": 200,
     "6990to60": 3.1,
     "699Handling": 95,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1018115499680346122/Dodge_Challenger_SRT_Hellcat_Widebody.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "DodgeDemon"
 }

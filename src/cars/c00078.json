@@ -1,5 +1,6 @@
 {
-    "rq": 58,
+    "carID": "c00078",
+    "cr": 580,
     "make": "Aston Martin",
     "model": "DBR1",
     "modelYear": 1956,
@@ -22,8 +23,7 @@
     "mra": 60,
     "ola": 80.95,
     "description": "The only Aston Martin to win at Le Mans.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1081568550176690316/1DBR1.png",
-    "333TopSpeed": 182,
+     "333TopSpeed": 182,
     "3330to60": 4.0,
     "333Handling": 72,
     "666TopSpeed": 185,
@@ -38,6 +38,6 @@
     "699TopSpeed": 185,
     "6990to60": 3.6,
     "699Handling": 78,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1081568891060367450/DBR1.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

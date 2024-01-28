@@ -1,5 +1,6 @@
 {
-    "rq": 37,
+    "carID": "c01874",
+    "cr": 370,
     "make": "Toyota",
     "model": "Camry XLE V6",
     "modelYear": 1996,
@@ -24,8 +25,7 @@
     "mra": 65,
     "ola": 76.19,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/882732041144262737/camry_xle_v6.png",
-    "333TopSpeed": 132,
+     "333TopSpeed": 132,
     "3330to60": 8,
     "333Handling": 72,
     "666TopSpeed": 136,
@@ -40,6 +40,6 @@
     "699TopSpeed": 136,
     "6990to60": 7.1,
     "699Handling": 78,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100177628817801306/Camry96.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "McNuggets"
 }

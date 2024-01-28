@@ -1,5 +1,6 @@
 {
-    "rq": 10,
+    "carID": "c01526",
+    "cr": 100,
     "make": "Daihatsu",
     "model": "Copen Robe",
     "modelYear": 2014,
@@ -25,8 +26,7 @@
     "mra": 21,
     "ola": 62.81,
     "description": "Most if not all Peroduas are rebadged Daihatsu, why didn’t they bring this over to Malaysia?",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/898747458430062652/image0.png",
-    "333TopSpeed": 93,
+     "333TopSpeed": 93,
     "3330to60": 11.5,
     "333Handling": 74,
     "666TopSpeed": 99,
@@ -41,6 +41,6 @@
     "699TopSpeed": 99,
     "6990to60": 10.3,
     "699Handling": 80,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1025853374362550283/Daihatsu_Copen_Robe.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

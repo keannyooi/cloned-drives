@@ -1,5 +1,6 @@
 {
-    "rq": 22,
+    "carID": "c00728",
+    "cr": 220,
     "make": "Lotus",
     "model": "Eleven",
     "modelYear": 1957,
@@ -28,8 +29,7 @@
     "mra": 69.23,
     "ola": 64.44,
     "description": "The car form of aerodynamics.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/826132895373983764/loltus11.png",
-    "333TopSpeed": 138,
+     "333TopSpeed": 138,
     "3330to60": 8.6,
     "333Handling": 72,
     "666TopSpeed": 142,
@@ -44,6 +44,6 @@
     "699TopSpeed": 142,
     "6990to60": 7.7,
     "699Handling": 78,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1023537355233173605/Lotus_Eleven.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

@@ -4,7 +4,7 @@ const { ErrorMessage } = require("../classes/classes.js");
 
 function sortCheck(message, sort, currentMessage) {
     switch (sort) {
-        case "rq":
+        case "cr":
         case "handling":
         case "weight":
         case "mra":

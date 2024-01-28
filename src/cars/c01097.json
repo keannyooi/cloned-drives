@@ -1,5 +1,6 @@
 {
-    "rq": 73,
+    "carID": "c01097",
+    "cr": 730,
     "make": "Porsche",
     "model": "924 Carrera GTS Rallye",
     "modelYear": 1980,
@@ -26,8 +27,7 @@
     "mra": 66.66,
     "ola": 77.49,
     "description": "A rally version of the 924 Carrera GTS, driven by Walter Rohrl.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1114188993714733197/GTSRallye924.png",
-"333TopSpeed": 152,
+ "333TopSpeed": 152,
 "3330to60": 5.3,
 "333Handling": 82,
 
@@ -46,6 +46,6 @@
 "996TopSpeed": 159,
 "9960to60": 4.8,
 "996Handling": 84,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1114189200099651625/GTSRallye924.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

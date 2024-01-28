@@ -1,5 +1,6 @@
 {
-    "rq": 38,
+    "carID": "c02068",
+    "cr": 380,
     "make": "Mercedes-Benz",
     "model": "300 E",
     "modelYear": 1985,
@@ -22,8 +23,7 @@
     "mra": 56.6,
     "ola": 70.59,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/918218326646349865/merc300e.png",
-    "333TopSpeed": 146,
+     "333TopSpeed": 146,
     "3330to60": 7.5,
     "333Handling": 73,
     "666TopSpeed": 149,
@@ -38,6 +38,6 @@
     "699TopSpeed": 149,
     "6990to60": 6.7,
     "699Handling": 79,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095373537834975282/Mercedes_300_E_1985.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

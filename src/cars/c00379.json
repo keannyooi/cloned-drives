@@ -1,5 +1,6 @@
 {
-    "rq": 44,
+    "carID": "c00379",
+    "cr": 440,
     "make": "Ferrari",
     "model": "250 GTO",
     "modelYear": 1962,
@@ -22,8 +23,7 @@
     "mra": 90.91,
     "ola": 86.67,
     "description": "It was born in a tumultuous chapter in Ferrari history and never even won Le Mans. So how did the 250 GTO become a $70 million collectible?",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/959824901341073438/ferrari_250_gto_62_for_cd.png",
-    "333TopSpeed": 177,
+     "333TopSpeed": 177,
     "3330to60": 5.7,
     "333Handling": 76,
     "666TopSpeed": 180,
@@ -38,6 +38,6 @@
     "699TopSpeed": 180,
     "6990to60": 5.1,
     "699Handling": 82,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1001032982351581184/IMG_20220402_083227.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Lemon"
 }

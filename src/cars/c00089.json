@@ -1,5 +1,6 @@
 {
-    "rq": 68,
+    "carID": "c00089",
+    "cr": 680,
     "make": "Aston Martin",
     "model": "V12 Vantage",
     "modelYear": 2009,
@@ -22,8 +23,7 @@
     "mra": 76.36,
     "ola": 97.44,
     "description": "It's a compact, nuggety little missile, endowed with performance of casual violence and face-bending cornering ability.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1131232878831882352/ndoabdi.png",
-    "333TopSpeed": 193,
+     "333TopSpeed": 193,
     "3330to60": 4.0,
     "333Handling": 89,
     "666TopSpeed": 195,
@@ -38,6 +38,6 @@
     "699TopSpeed": 195,
     "6990to60": 3.6,
     "699Handling": 95,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997785491317477427/v12vantage.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 69,
+    "carID": "c01985",
+    "cr": 690,
     "make": [
         "9ff",
         "Porsche"
@@ -27,8 +28,7 @@
     "mra": 85.83,
     "ola": 74.42,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/828946469456183316/unknown.png",
-    "333TopSpeed": 194,
+     "333TopSpeed": 194,
     "3330to60": 4.1,
     "333Handling": 88,
     "666TopSpeed": 196,
@@ -43,6 +43,6 @@
     "699TopSpeed": 196,
     "6990to60": 3.7,
     "699Handling": 94,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1050814070820966430/9FF_Carrera_GTC.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

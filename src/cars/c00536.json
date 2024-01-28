@@ -1,5 +1,6 @@
 {
-    "rq": 10,
+    "carID": "c00536",
+    "cr": 98,
     "make": "Honda",
     "model": "EV Plus",
     "modelYear": 1997,
@@ -23,8 +24,7 @@
     "mra": 0,
     "ola": 57.65,
     "description": "Honda started R&D on an EV in April 1988, which was later than their rivals but that meant they were free to experiment with the latest tech at the time for the EV. The initial prototype was basically an electric Civic with lighter body panels, but it was called out by the project's leader for being obviously compromised. That turned out to be a good call, and by 1997 Honda had what was the most practical EV for production.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/865583268102537216/ev_plos.png",
-
+ 
     "333TopSpeed": 87,
     "3330to60": 16.2,
     "333Handling": 65,
@@ -45,6 +45,6 @@
     "6990to60": 14.5,
     "699Handling": 70,
 
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003309742363512884/ev_plus.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/HondaEVPlus(1997).png",
     "creator": "Keanny"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 35,
+    "carID": "c00076",
+    "cr": 350,
     "make": "Aston Martin",
     "model": "DB7 Volante",
     "modelYear": 1996,
@@ -22,8 +23,7 @@
     "mra": 55.65,
     "ola": 75,
     "description": "The Convertible DB7 that didnt go as planned.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/855242395939635210/db7volante.png",
-    "333TopSpeed": 155,
+     "333TopSpeed": 155,
     "3330to60": 6.1,
     "333Handling": 76,
     "666TopSpeed": 159,
@@ -38,6 +38,6 @@
     "699TopSpeed": 159,
     "6990to60": 5.4,
     "699Handling": 82,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995978874980663296/db7volante.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

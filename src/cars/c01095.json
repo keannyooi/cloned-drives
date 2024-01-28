@@ -1,5 +1,6 @@
 {
-    "rq": 37,
+    "carID": "c01095",
+    "cr": 370,
     "make": "Porsche",
     "model": "924 Carrera GT",
     "modelYear": 1980,
@@ -22,8 +23,7 @@
     "mra": 61.32,
     "ola": 75.76,
     "description": "A forgotten high performance 924 that was made for Group 4 racing.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1114188901653946408/CarreraGT924.png",
-"333TopSpeed": 152,
+ "333TopSpeed": 152,
 "3330to60": 6.2,
 "333Handling": 79,
 
@@ -42,6 +42,6 @@
 "996TopSpeed": 159,
 "9960to60": 5.5,
 "996Handling": 81,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1114189139563249714/CarreraGT924.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

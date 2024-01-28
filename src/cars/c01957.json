@@ -1,5 +1,6 @@
 {
-    "rq": 12,
+    "carID": "c01957",
+    "cr": 120,
     "make": "Daihatsu",
     "model": "Charade CSX",
     "modelYear": 1988,
@@ -22,8 +23,7 @@
     "mra": 14.44,
     "ola": 68,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/973318053314035782/charadecsx.png",
-    "333TopSpeed": 96,
+     "333TopSpeed": 96,
     "3330to60": 14.3,
     "333Handling": 65,
     "666TopSpeed": 102,
@@ -38,6 +38,6 @@
     "699TopSpeed": 102,
     "6990to60": 12.8,
     "699Handling": 70,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997785979920322585/charadeCSX.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Aqo"
 }

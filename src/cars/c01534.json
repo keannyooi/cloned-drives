@@ -1,5 +1,6 @@
 {
-    "rq": 86,
+    "carID": "c01534",
+    "cr": 860,
     "make": ["Garage G Force","Mitsubishi"],
     "model": "Lancer Evolution IX Wagon MR",
     "modelYear": 2015,
@@ -22,8 +23,7 @@
     "mra": 83.67,
     "ola": 63.41,
     "description": "The Wangan Wagon.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/912470892964089916/thewanganwagon.png",
-    "333TopSpeed": 196,
+     "333TopSpeed": 196,
     "3330to60": 3.9,
     "333Handling": 93,
     "666TopSpeed": 198,
@@ -38,6 +38,6 @@
     "699TopSpeed": 198,
     "6990to60": 3.5,
     "699Handling": 100,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995993309585604638/wanganevowagon.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

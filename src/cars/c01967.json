@@ -1,5 +1,6 @@
 {
-    "rq": 74,
+    "carID": "c01967",
+    "cr": 744,
     "make": "BMW",
     "model": "M2 CS",
     "modelYear": 2020,
@@ -22,8 +23,7 @@
     "mra": 82.97,
     "ola": 90.56,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/978709380692324442/M2CS.png",
-    "333TopSpeed": 177,
+     "333TopSpeed": 177,
     "3330to60": 3.7,
     "333Handling": 94,
     "666TopSpeed": 180,
@@ -38,6 +38,6 @@
     "699TopSpeed": 180,
     "6990to60": 3.3,
     "699Handling": 101,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995994953694068756/bmwm2cs.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BMWM2CS(2020).png",
     "creator": "Bnuuy"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 71,
+    "carID": "c00269",
+    "cr": 710,
     "make": "Chevrolet",
     "model": "Corvette Grand Sport",
     "modelYear": 2010,
@@ -24,8 +25,7 @@
     "mra": 79.25,
     "ola": 85.71,
     "description": "Red for sport. Are you red-y for her?.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/822617850296270889/ChevroletCorvetteGS.png",
-    "333TopSpeed": 191,
+     "333TopSpeed": 191,
     "3330to60": 4.0,
     "333Handling": 91,
     "666TopSpeed": 194,
@@ -40,6 +40,6 @@
     "699TopSpeed": 194,
     "6990to60": 3.6,
     "699Handling": 98,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017039092229345381/Chevrolet_Corvette_Grand_Sport_2010.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

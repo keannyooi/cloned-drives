@@ -1,5 +1,6 @@
 {  
-    "rq": 6,
+    "carID": "c03416",
+    "cr": 61,
     "make": ["Mes-Dea","Fiat"],
     "model": "Panda Elettrica",
     "modelYear": 2007,
@@ -25,8 +26,7 @@
     "ola": 51.11,
     "description": "This paved the way for Teslas.",
 
-    "card": "https://media.discordapp.net/attachments/819199720249360384/1065606696283672596/MesDeaPandaElettrica.png",
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1065607833632129075/PandaMesDea.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/MesDeaPandaElettrica(2007).png",
     "creator": "Andu",
   
     "333TopSpeed": 71,

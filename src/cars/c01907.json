@@ -1,5 +1,6 @@
 {
-    "rq": 52,
+    "carID": "c01907",
+    "cr": 520,
     "make": "Toyota",
     "model": "Land Cruiser 5.7 V8",
     "modelYear": 2016,
@@ -24,8 +25,7 @@
     "mra": 62.61,
     "ola": 68.15,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/859677400438276126/Toyota_Land_Cruiser.png",
-    "333TopSpeed": 127,
+     "333TopSpeed": 127,
     "3330to60": 6.5,
     "333Handling": 69,
     "666TopSpeed": 131,
@@ -40,6 +40,6 @@
     "699TopSpeed": 131,
     "6990to60": 5.8,
     "699Handling": 74,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095005072217358426/Toyota_Land_Cruiser_5.7_2016.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "AK1"
 }

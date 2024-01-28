@@ -1,5 +1,6 @@
 {
-    "rq": 50,
+    "carID": "c00622",
+    "cr": 500,
     "make": "Kia",
     "model": "Soul GT-Line",
     "modelYear": 2020,
@@ -24,8 +25,7 @@
     "mra": 62.68,
     "ola": 85.29,
     "description": "When a funk box is mated with speed.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/824738576221995018/CD_Kia_Soul_gt-Line.png",
-    "333TopSpeed": 132,
+     "333TopSpeed": 132,
     "3330to60": 6.3,
     "333Handling": 79,
     "666TopSpeed": 136,
@@ -40,6 +40,6 @@
     "699TopSpeed": 136,
     "6990to60": 5.6,
     "699Handling": 84,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1020005528451153920/Kia_Soul_GT-Line.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Exist"
 }

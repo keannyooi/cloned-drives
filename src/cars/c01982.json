@@ -1,5 +1,6 @@
 {
-    "rq": 47,
+    "carID": "c01982",
+    "cr": 470,
     "make": "Porsche",
     "model": "944 Turbo S",
     "modelYear": 1987,
@@ -22,8 +23,7 @@
     "mra": 64.37,
     "ola": 82.14,
     "description": "The holy grail of the 944.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1114186476196995102/944TurboS.png",
-    "333TopSpeed": 165,
+     "333TopSpeed": 165,
     "3330to60": 5.3,
     "333Handling": 81,
     "666TopSpeed": 168,
@@ -38,6 +38,6 @@
     "699TopSpeed": 168,
     "6990to60": 4.8,
     "699Handling": 87,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017504785114599454/Porsche_944_Turbo_S.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Olimato"
 }

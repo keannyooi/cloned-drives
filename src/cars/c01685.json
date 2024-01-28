@@ -1,5 +1,6 @@
 {
-    "rq": 75,
+    "carID": "c01685",
+    "cr": 750,
     "make": "Mitsubishi",
     "model": "Lancer Evolution VIII FQ-320",
     "modelYear": 2004,
@@ -22,8 +23,7 @@
     "mra": 75.41,
     "ola": 73.47,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/948544014167187466/evo8fq320.png",
-    "333TopSpeed": 160,
+     "333TopSpeed": 160,
     "3330to60": 4.5,
     "333Handling": 90,
     "666TopSpeed": 164,
@@ -38,6 +38,6 @@
     "699TopSpeed": 164,
     "6990to60": 4.0,
     "699Handling": 97,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997638023661498438/evo8fq320.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

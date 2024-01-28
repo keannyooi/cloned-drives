@@ -1,5 +1,6 @@
 {
-    "rq": 23,
+    "carID": "c00605",
+    "cr": 230,
     "make": "Jaguar",
     "model": "XK 120M Roadster",
     "modelYear": 1952,
@@ -24,8 +25,7 @@
     "mra": 50.6,
     "ola": 82.36,
     "description": "Vintage roadster Jag.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/822204428651593738/cate-test.png",
-    "333TopSpeed": 125,
+     "333TopSpeed": 125,
     "3330to60": 8.1,
     "333Handling": 66,
     "666TopSpeed": 130,
@@ -40,6 +40,6 @@
     "699TopSpeed": 130,
     "6990to60": 7.2,
     "699Handling": 71,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1004768479792091257/Jaguar-XK-120M-Roadster.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Johnny"
 }

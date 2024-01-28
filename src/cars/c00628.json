@@ -1,5 +1,6 @@
 {
-    "rq": 44,
+    "carID": "c00628",
+    "cr": 440,
     "make": [
         "Kleemann",
         "Mercedes-Benz"
@@ -28,8 +29,7 @@
     "mra": 63.83,
     "ola": 83.33,
     "description": "Speaking German with a Scandinavian accent.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/826942541991510026/KleemannC32K.png",
-    "333TopSpeed": 138,
+     "333TopSpeed": 138,
     "3330to60": 5.7,
     "333Handling": 74,
     "666TopSpeed": 142,
@@ -44,6 +44,6 @@
     "699TopSpeed": 142,
     "6990to60": 5.1,
     "699Handling": 80,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100132941708927057/c32k.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

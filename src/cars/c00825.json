@@ -1,5 +1,6 @@
 {
-    "rq": 53,
+    "carID": "c00825",
+    "cr": 530,
     "make": [
         "Mercedes-AMG",
         "Mercedes-Benz"
@@ -25,8 +26,7 @@
     "mra": 76.34,
     "ola": 80.51,
     "description": "The naturally aspirated AMG days.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/824038281599647764/AMGCLK55.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 4.9,
     "333Handling": 83,
     "666TopSpeed": 162,
@@ -41,6 +41,6 @@
     "699TopSpeed": 162,
     "6990to60": 4.4,
     "699Handling": 89,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095399569925345430/Mercedes_CLK_55.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

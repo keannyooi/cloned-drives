@@ -1,5 +1,6 @@
 {
-    "rq": 65,
+    "carID": "c01473",
+    "cr": 650,
     "make": "Genesis",
     "model": "G80 2.5T AWD",
     "modelYear": 2021,
@@ -24,8 +25,7 @@
     "mra": 69,
     "ola": 74,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/940638480323731476/G80_2.5T_AWD_cloned.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 5.4,
     "333Handling": 83,
     "666TopSpeed": 162,
@@ -40,6 +40,6 @@
     "699TopSpeed": 162,
     "6990to60": 4.8,
     "699Handling": 89,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1018085699066527774/Genesis_G80_2.5T_AWD.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Sutzi"
 }

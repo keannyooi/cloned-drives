@@ -1,5 +1,6 @@
 {
-    "rq": 60,
+    "carID": "c00133",
+    "cr": 600,
     "make": ["Autodelta", "Alfa Romeo"],
     "model": "147 GTA 3.7",
     "modelYear": 2003,
@@ -23,8 +24,7 @@
     "mra": 74.63,
     "ola": 92,
     "description": "The 147 GTA in stock form is already a peppy little boi, but the blokes at Autodelta thought that wasn't enough. So they bored the GTA's engine to 3.7L and ended up with a 328hp machine that probably produces more power than it should. The car became notable for its appearance on Top Gear, where it was described as \"the hottest hatch ever\".",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/837302476922945556/autodelta_147_gta_3.7.png",
-
+ 
     "333TopSpeed": 178,
     "3330to60": 4.8,
     "333Handling": 87,
@@ -45,6 +45,6 @@
     "6990to60": 4.3,
     "699Handling": 93,
 
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003253933323591772/autodelta_147_gta.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Autodelta147GTA3.7(2003).png",
     "creator": "Keanny"
 }

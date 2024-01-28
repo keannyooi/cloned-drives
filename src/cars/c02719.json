@@ -1,5 +1,6 @@
 {
-    "rq": 50,
+    "carID": "c02719",
+    "cr": 500,
     "make": ["Mercedes-AMG", "Mercedes-Benz"],
     "model": "G 55",
     "modelYear": 1999,
@@ -24,8 +25,7 @@
     "ola": 57.14,
     "description": "",
 
-    "card": "https://media.discordapp.net/attachments/819199720249360384/952618316504113152/AMGG55.png",
-	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1034904467759448144/G551999.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy",
 
     "333TopSpeed": 134,

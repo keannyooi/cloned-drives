@@ -1,5 +1,6 @@
 {
-    "rq": 66,
+    "carID": "c02084",
+    "cr": 664,
     "make": ["AC Schnitzer","BMW"],
     "model": "V8 Topster Concept",
     "modelYear": 2003,
@@ -22,8 +23,7 @@
     "mra": 75.43,
     "ola": 88.37,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/976510157762744320/TopsterConcept.png",
-    "333TopSpeed": 193,
+     "333TopSpeed": 193,
     "3330to60": 4.1,
     "333Handling": 87,
     "666TopSpeed": 195,
@@ -38,6 +38,6 @@
     "699TopSpeed": 195,
     "6990to60": 3.7,
     "699Handling": 93,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996029609755803658/acshitzerv8topster.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ACSchnitzerV8TopsterConcept(2003).png",
     "creator": "Bnuuy"
 }

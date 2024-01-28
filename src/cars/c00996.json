@@ -1,5 +1,6 @@
 {
-    "rq": 55,
+    "carID": "c00996",
+    "cr": 550,
     "make": "Opel",
     "model": "Insignia Country Tourer 2.0T 4x4",
     "modelYear": 2017,
@@ -22,8 +23,7 @@
     "mra": 74.19,
     "ola": 78.26,
     "description": "Dunno.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/859692487710998538/B.OpelInsigniaCT20T4X4.png",
-    "333TopSpeed": 153,
+     "333TopSpeed": 153,
     "3330to60": 6.6,
     "333Handling": 77,
     "666TopSpeed": 157,
@@ -38,6 +38,6 @@
     "699TopSpeed": 157,
     "6990to60": 5.9,
     "699Handling": 83,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1036183104173396048/insignia_country_tourer.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

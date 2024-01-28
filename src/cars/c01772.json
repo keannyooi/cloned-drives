@@ -1,5 +1,6 @@
 {
-    "rq": 56,
+    "carID": "c01772",
+    "cr": 560,
     "make": "Nissan",
     "model": "Silvia Spec-R Aero (S15)",
     "modelYear": 1999,
@@ -25,8 +26,7 @@
     "mra": 64.63,
     "ola": 83.02,
     "description": "Mona Lisa :weary: .",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/866723743791448064/NissanSilviaSpecRAeroS15.png",
-    "333TopSpeed": 117,
+     "333TopSpeed": 117,
     "3330to60": 5,
     "333Handling": 82,
     "666TopSpeed": 121,
@@ -41,6 +41,6 @@
     "699TopSpeed": 121,
     "6990to60": 4.5,
     "699Handling": 88,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100176867270598696/SilviaAeroS15.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

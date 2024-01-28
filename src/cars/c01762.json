@@ -1,5 +1,6 @@
 {
-    "rq": 67,
+    "carID": "c01762",
+    "cr": 670,
     "make": "Nissan",
     "model": "R380A-II",
     "modelYear": 1967,
@@ -26,8 +27,7 @@
     "mra": 73.58,
     "ola": 102.56,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/969546685783113768/R380A-II.png",
-    "333TopSpeed": 172,
+     "333TopSpeed": 172,
     "3330to60": 3.7,
     "333Handling": 82,
     "666TopSpeed": 175,
@@ -42,6 +42,6 @@
     "699TopSpeed": 175,
     "6990to60": 3.3,
     "699Handling": 88,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997640624339701760/R380AII.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

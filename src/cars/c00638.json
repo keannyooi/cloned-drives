@@ -1,5 +1,6 @@
 {
-    "rq": 104,
+    "carID": "c00638",
+    "cr": 1040,
     "make": "Koenigsegg",
     "model": "Jesko Absolut",
     "modelYear": 2021,
@@ -22,8 +23,7 @@
     "mra": 173.33,
     "ola": 108.7,
     "description": "This is the endgame now.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/849717813971255306/YeskoAbsolute.png",
-    "333TopSpeed": 332,
+     "333TopSpeed": 332,
     "3330to60": 2.5,
     "333Handling": 97,
     "666TopSpeed": 333,
@@ -38,6 +38,6 @@
     "699TopSpeed": 333,
     "6990to60": 2.2,
     "699Handling": 104,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996023315384770601/jeskoabso.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 85,
+    "carID": "c01653",
+    "cr": 850,
     "make": "Mitsubishi",
     "model": "Lancer Evolution IX FQ-360",
     "modelYear": 2005,
@@ -22,8 +23,7 @@
     "mra": 73.39,
     "ola": 76.92,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/948547863519055872/evo9fq360.png",
-    "333TopSpeed": 160,
+     "333TopSpeed": 160,
     "3330to60": 3.7,
     "333Handling": 94,
     "666TopSpeed": 164,
@@ -38,6 +38,6 @@
     "699TopSpeed": 164,
     "6990to60": 3.3,
     "699Handling": 101,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997547672737165342/evo9fq360.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

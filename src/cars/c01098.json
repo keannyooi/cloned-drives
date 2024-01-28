@@ -1,5 +1,6 @@
 {
-    "rq": 32,
+    "carID": "c01098",
+    "cr": 320,
     "make": "Porsche",
     "model": "924 Turbo",
     "modelYear": 1978,
@@ -25,8 +26,7 @@
     "mra": 49.88,
     "ola": 67.44,
     "description": "Entry level front-engined porsche with a Turbo? Sounds like fun.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1114188850324062259/Turbo924.png",
-"333TopSpeed": 146,
+ "333TopSpeed": 146,
 "3330to60": 6.6,
 "333Handling": 76,
 
@@ -45,6 +45,6 @@
 "996TopSpeed": 153,
 "9960to60": 5.9,
 "996Handling": 79,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1114189116410703872/Turbo924.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

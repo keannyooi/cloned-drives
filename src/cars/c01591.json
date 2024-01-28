@@ -1,5 +1,6 @@
 {
-    "rq": 28,
+    "carID": "c01591",
+    "cr": 277,
     "make": "Mazda",
     "model": "2 1.3 MZR Play",
     "modelYear": 2007,
@@ -23,9 +24,8 @@
     "fuelType": "Petrol",
     "mra": 35.77,
     "ola": 64,
-    "description": "Breaking grounds and stealing crowns. Card by Andu.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/866666250604380202/213MZRPlay.png",
-    "333TopSpeed": 111,
+    "description": "Breaking grounds and stealing crowns.",
+     "333TopSpeed": 111,
     "3330to60": 10.7,
     "333Handling": 75,
     "666TopSpeed": 116,
@@ -40,6 +40,6 @@
     "699TopSpeed": 116,
     "6990to60": 9.6,
     "699Handling": 81,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1050933656727855124/213MZR.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Mazda21.3MZRPlay(2007).png",
     "creator": "Andu"
 }

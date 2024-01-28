@@ -1,5 +1,6 @@
 {
-    "rq": 35,
+    "carID": "c00519",
+    "cr": 350,
     "make": "Honda",
     "model": "Accord HFP Coupe V6",
     "modelYear": 2011,
@@ -25,8 +26,7 @@
     "mra": 83,
     "ola": 81.82,
     "description": "Don't ask how the MRA is stonks.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/820437214911004702/acored_hfp.png",
-    "333TopSpeed": 136,
+     "333TopSpeed": 136,
     "3330to60": 6.3,
     "333Handling": 76,
     "666TopSpeed": 140,
@@ -41,6 +41,6 @@
     "699TopSpeed": 140,
     "6990to60": 5.6,
     "699Handling": 82,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100121559768781020/AccordCoupV6HPF13.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "McNuggets"
 }

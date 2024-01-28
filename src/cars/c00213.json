@@ -1,5 +1,6 @@
 {
-    "rq": 101,
+    "carID": "c00213",
+    "cr": 1010,
     "make": "Bugatti",
     "model": "Chiron Pur Sport",
     "modelYear": 2020,
@@ -22,8 +23,7 @@
     "mra": 104.76,
     "ola": 90.9,
     "description": "The ultimate track chiron part 2?",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/951473204034146334/ChironPurSport.png",
-    "333TopSpeed": 219,
+     "333TopSpeed": 219,
     "3330to60": 2.1,
     "333Handling": 98,
     "666TopSpeed": 222,
@@ -38,6 +38,6 @@
     "699TopSpeed": 222,
     "6990to60": 1.9,
     "699Handling": 105,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995992445277966346/chironpursport.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 25,
+    "carID": "c01975",
+    "cr": 250,
     "make": "Lada",
     "model": "Niva Legend Classic",
     "modelYear": 2021,
@@ -22,8 +23,7 @@
     "mra": 21.11,
     "ola": 64.63,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/952194661039087646/NivaLegendClassic.png",
-    "333TopSpeed": 94,
+     "333TopSpeed": 94,
     "3330to60": 15.6,
     "333Handling": 70,
     "666TopSpeed": 100,
@@ -38,6 +38,6 @@
     "699TopSpeed": 100,
     "6990to60": 13.9,
     "699Handling": 75,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997535454389862402/nivalegendclassic.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

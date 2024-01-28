@@ -1,5 +1,6 @@
 {  
-    "rq": 62,
+    "carID": "c02732",
+    "cr": 620,
     "make": "Audi",
     "model": "A6 3.0 TDI quattro tiptronic",
     "modelYear": 2014,
@@ -22,8 +23,7 @@
     "mra": 56.99,
     "ola": 71.70,
     "description": "Just your average presidential c- * heavy V6 TDI noises *",
-    "card": "https://media.discordapp.net/attachments/1029443378699579413/1029446982911148052/a6_3.0_tdi_272_hp.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 5.0,
     "333Handling": 83,
     "666TopSpeed": 162,
@@ -38,6 +38,6 @@
     "699TopSpeed": 162,
     "6990to60": 4.5,
     "699Handling": 89,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1034829199317409812/a6_3.0_272_hp.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Lemon"
 }

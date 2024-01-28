@@ -1,5 +1,6 @@
 {
-    "rq": 37,
+    "carID": "c00716",
+    "cr": 370,
     "make": "Lexus",
     "model": "UX 200 Luxury",
     "modelYear": 2019,
@@ -22,8 +23,7 @@
     "mra": 52.69,
     "ola": 72.73,
     "description": " Lexus's new entry-level crossover is convincingly premium, despite being little more than a dressed-up Toyota hatchback.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/824673025298268210/UX_200_Luxury_19.png",
-    "333TopSpeed": 122,
+     "333TopSpeed": 122,
     "3330to60": 8.4,
     "333Handling": 79,
     "666TopSpeed": 127,
@@ -38,6 +38,6 @@
     "699TopSpeed": 127,
     "6990to60": 7.5,
     "699Handling": 84,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095375509375959150/Lexus_UX_200.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Macan"
 }

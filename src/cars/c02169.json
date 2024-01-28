@@ -1,5 +1,6 @@
 {
-    "rq": 76,
+    "carID": "c02169",
+    "cr": 760,
     "make": "Lotus",
     "model": "Evora GT410 Sport",
     "modelYear": 2018,
@@ -24,8 +25,7 @@
     "mra": 78.43,
     "ola": 65,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/861700757387214908/Lotus_Evora_GT410_Sport_2018.png",
-    "333TopSpeed": 193,
+     "333TopSpeed": 193,
     "3330to60": 3.8,
     "333Handling": 94,
     "666TopSpeed": 195,
@@ -40,6 +40,6 @@
     "699TopSpeed": 195,
     "6990to60": 3.4,
     "699Handling": 101,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017105015288107109/Lotus_Evora_GT410_Sport.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Tom"
 }

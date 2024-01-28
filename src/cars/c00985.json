@@ -1,5 +1,6 @@
 {
-    "rq": 30,
+    "carID": "c00985",
+    "cr": 300,
     "make": "Opel",
     "model": "Corsa \"Color Edition\" 1.0 Turbo",
     "modelYear": 2014,
@@ -22,8 +23,7 @@
     "mra": 45.54,
     "ola": 74.51,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/849363368229994556/F.OpelCorsaColorEd10Turbo.png",
-    "333TopSpeed": 122,
+     "333TopSpeed": 122,
     "3330to60": 9.7,
     "333Handling": 73,
     "666TopSpeed": 127,
@@ -38,6 +38,6 @@
     "699TopSpeed": 127,
     "6990to60": 8.7,
     "699Handling": 79,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1036170567520354304/corsa_colour.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

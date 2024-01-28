@@ -1,5 +1,6 @@
 {
-    "rq": 92,
+    "carID": "c00194",
+    "cr": 923,
     "make": "BMW",
     "model": "M8 Competition",
     "modelYear": 2019,
@@ -22,8 +23,7 @@
     "mra": 83.33,
     "ola": 86.67,
     "description": "M5 who?",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/843212380506685450/M8Competition.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 2.9,
     "333Handling": 94,
     "666TopSpeed": 162,
@@ -38,6 +38,6 @@
     "699TopSpeed": 162,
     "6990to60": 2.6,
     "699Handling": 101,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995978218202996797/M8Comp.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BMWM8Competition(2019).png",
     "creator": "Bnuuy"
 }

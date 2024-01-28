@@ -215,7 +215,7 @@ module.exports = {
                                             title: `Successfully added 1 ${carNameGen({ currentCar })} to the ${offer.name} offer!`,
                                             author: message.author,
                                             fields: [{ name: "Current Cars", value: list }],
-                                            image: currentCar["card"]
+                                            image: currentCar["racehud"]
                                         });
                                     }
                                 })
@@ -293,7 +293,7 @@ module.exports = {
                                             title: `Successfully removed 1 ${carNameGen({ currentCar })} from the ${offer.name} offer!`,
                                             author: message.author,
                                             fields: [{ name: "Current Cars", value: list }],
-                                            image: currentCar["card"]
+                                            image: currentCar["racehud"]
                                         });
                                     }
                                 })

@@ -1,5 +1,6 @@
 {
-    "rq": 36,
+    "carID": "c01955",
+    "cr": 360,
     "make": "Toyota",
     "model": "Yaris Z 1.5 Hybrid E-Four",
     "modelYear": 2020,
@@ -25,8 +26,7 @@
     "mra": 53.44,
     "ola": 66.34,
     "description": "The Japanese market exclusive 4WD Hybrid. Card by Andu.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/963493843225956382/YarisZHyE4.png",
-    "333TopSpeed": 110,
+     "333TopSpeed": 110,
     "3330to60": 9.6,
     "333Handling": 79,
     "666TopSpeed": 115,
@@ -41,6 +41,6 @@
     "699TopSpeed": 115,
     "6990to60": 8.6,
     "699Handling": 84,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1043851440478765077/YarisZHyE4.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Andu"
 }

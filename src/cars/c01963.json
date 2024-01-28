@@ -1,5 +1,6 @@
 {
-    "rq": 88,
+    "carID": "c01963",
+    "cr": 880,
     "make": "Nissan",
     "model": "R383",
     "modelYear": 1970,
@@ -27,8 +28,7 @@
     "mra": 107.4,
     "ola": 96.55,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/969546871385247796/R383.png",
-    "333TopSpeed": 209,
+     "333TopSpeed": 209,
     "3330to60": 2.8,
     "333Handling": 95,
     "666TopSpeed": 211,
@@ -43,6 +43,6 @@
     "699TopSpeed": 211,
     "6990to60": 2.5,
     "699Handling": 102,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997562085544296609/R383.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

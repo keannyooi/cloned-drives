@@ -1,4 +1,5 @@
 {
+    "carID": "c02710",
     "make": "Volkswagen",
     "model": "Atlas 3.6 VR6 4Motion (H22)",
     "modelYear": 2018,
@@ -7,7 +8,6 @@
     "collection": ["Halloween2022"],
     "description": "Trick or Treat.",
 	"active" : false,
-    "card": "https://media.discordapp.net/attachments/819199720249360384/1034799374397603951/halloween_atlas.png",
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1034799625791619092/AtlasH22.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Lemon"
 }

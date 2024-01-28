@@ -1,5 +1,6 @@
 {
-    "rq": 91,
+    "carID": "c01117",
+    "cr": 910,
     "make": "Porsche",
     "model": "Macan GTS",
     "modelYear": 2019,
@@ -23,8 +24,7 @@
     "mra": 65.63,
     "ola": 75,
     "description": "",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1077328590443655340/MacanGTS2019.png",
-
+ 
     "333TopSpeed": 167,
     "3330to60": 4.0,
     "333Handling": 87,
@@ -45,6 +45,6 @@
     "9960to60": 3.6,
     "996Handling": 90,
 
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017879438664417341/Porsche_Macan_GTS.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 33,
+    "carID": "c00773",
+    "cr": 330,
     "make": "Mazda",
     "model": "Protegé5",
     "modelYear": 2002,
@@ -22,8 +23,7 @@
     "mra": 49.73,
     "ola": 71.74,
     "description": "A Calvinist wagon.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/965203380383395910/Mazda_Protege5.png",
-    "333TopSpeed": 122,
+     "333TopSpeed": 122,
     "3330to60": 8.7,
     "333Handling": 73,
     "666TopSpeed": 127,
@@ -38,6 +38,6 @@
     "699TopSpeed": 127,
     "6990to60": 7.8,
     "699Handling": 79,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1096124896737763408/Mazda_Protege5.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Based"
 }

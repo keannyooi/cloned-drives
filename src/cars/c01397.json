@@ -1,5 +1,6 @@
 {
-    "rq": 47,
+    "carID": "c01397",
+    "cr": 470,
     "make": "Volkswagen",
     "model": "Tiguan 2.0 TSI R-Line",
     "modelYear": 2011,
@@ -22,8 +23,7 @@
     "mra": 54.39,
     "ola": 68.39,
     "description": "This one's run is almost done. Card by Andu",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/848312451161522216/20TSIFWD.png",
-    "333TopSpeed": 123,
+     "333TopSpeed": 123,
     "3330to60": 7.4,
     "333Handling": 74,
     "666TopSpeed": 128,
@@ -38,6 +38,6 @@
     "699TopSpeed": 128,
     "6990to60": 6.6,
     "699Handling": 80,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1025335653040406589/TiguanTSI11.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": ""
 }

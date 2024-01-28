@@ -1,5 +1,6 @@
 {  
-    "rq": 59,
+    "carID": "c02731",
+    "cr": 590,
     "make": "Audi",
     "model": "A6 3.0 TDI quattro competition tiptronic",
     "modelYear": 2014,
@@ -22,8 +23,7 @@
     "mra": 66.67,
     "ola": 72.00,
     "description": "The S6 TDI before the S6 TDI.",
-    "card": "https://media.discordapp.net/attachments/1029443378699579413/1029445644034781264/a6_3.0_tdi_competition_hp.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 4.8,
     "333Handling": 84,
     "666TopSpeed": 162,
@@ -38,6 +38,6 @@
     "699TopSpeed": 162,
     "6990to60": 4.3,
     "699Handling": 90,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1034828865727643690/a6_competition.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Lemon"
 }

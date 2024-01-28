@@ -1,5 +1,6 @@
 {
-    "rq": 65,
+    "carID": "c00422",
+    "cr": 650,
     "make": "Ford",
     "model": "Bronco Sport Badlands 4x4",
     "modelYear": 2021,
@@ -22,8 +23,7 @@
     "mra": 57.27,
     "ola": 66.67,
     "description": "The Bronco, re-incarnated, except it's actually an Escape-based SUV.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/838227154419843092/Bronco_Sport_Badlands_4x4_21.png",
-    "333TopSpeed": 129,
+     "333TopSpeed": 129,
     "3330to60": 6.0,
     "333Handling": 70,
     "666TopSpeed": 133,
@@ -38,6 +38,6 @@
     "699TopSpeed": 133,
     "6990to60": 5.4,
     "699Handling": 75,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1018086683356438548/Ford_Bronco_Sport_Badlands.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Macan"
 }

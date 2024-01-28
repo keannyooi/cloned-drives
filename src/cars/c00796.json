@@ -1,5 +1,6 @@
 {
-    "rq": 92,
+    "carID": "c00796",
+    "cr": 920,
     "make": "McLaren",
     "model": "720S",
     "modelYear": 2017,
@@ -25,8 +26,7 @@
     "mra": 100.61,
     "ola": 96.8,
     "description": "McLaren's Ferrari killer.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/819900594835030036/CD_McLaren_720S.png",
-    "333TopSpeed": 214,
+     "333TopSpeed": 214,
     "3330to60": 2.5,
     "333Handling": 96,
     "666TopSpeed": 217,
@@ -41,6 +41,6 @@
     "699TopSpeed": 217,
     "6990to60": 2.2,
     "699Handling": 103,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1016842988397264926/720s.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Exist"
 }

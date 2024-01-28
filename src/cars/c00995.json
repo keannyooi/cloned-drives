@@ -1,5 +1,6 @@
 {
-    "rq": 37,
+    "carID": "c00995",
+    "cr": 370,
     "make": "Opel",
     "model": "Insignia Country Tourer 2.0 CDTI 4x4",
     "modelYear": 2013,
@@ -22,8 +23,7 @@
     "mra": 49.28,
     "ola": 71.84,
     "description": "Seemingly useless slightly rugged Insignia wagon.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/858672929323614208/D.OpelInsigniaCT20CDTI4x4ALL.png",
-    "333TopSpeed": 131,
+     "333TopSpeed": 131,
     "3330to60": 9.8,
     "333Handling": 76,
     "666TopSpeed": 135,
@@ -38,6 +38,6 @@
     "699TopSpeed": 135,
     "6990to60": 8.8,
     "699Handling": 82,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1036182948531159060/insignia_country.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

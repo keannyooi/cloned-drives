@@ -1,5 +1,6 @@
 {
-    "rq": 79,
+    "carID": "c02200",
+    "cr": 790,
     "make": "Lotus",
     "model": "Exige Sport 380",
     "modelYear": 2016,
@@ -24,8 +25,7 @@
     "mra": 74,
     "ola": 70.27,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/950084118157328464/Lotus_Exige_Sport_380_2016.png",
-    "333TopSpeed": 181,
+     "333TopSpeed": 181,
     "3330to60": 3.5,
     "333Handling": 94,
     "666TopSpeed": 184,
@@ -40,6 +40,6 @@
     "699TopSpeed": 184,
     "6990to60": 3.1,
     "699Handling": 101,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1016295585562775582/Lotus_Exige_Sport_380.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Tom"
 }

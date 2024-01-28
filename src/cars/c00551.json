@@ -1,5 +1,6 @@
 {
-    "rq": 48,
+    "carID": "c00551",
+    "cr": 480,
     "make": "Honda",
     "model": "Ridgeline AWD",
     "modelYear": 2017,
@@ -22,8 +23,7 @@
     "mra": 58.41,
     "ola": 70.31,
     "description": "Honda’s pick-up gets down and dirty for the new generation.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/821118054829129738/ridgeline_cd.png",
-    "333TopSpeed": 117,
+     "333TopSpeed": 117,
     "3330to60": 6.7,
     "333Handling": 73,
     "666TopSpeed": 121,
@@ -38,6 +38,6 @@
     "699TopSpeed": 121,
     "6990to60": 6,
     "699Handling": 79,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100129870014582814/Ridgelin.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "McNuggets"
 }

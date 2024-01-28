@@ -12,11 +12,11 @@ const tyreAbbrevs = {
 }
 
 async function generateHud(currentCar, upgrade) {
-    registerFont("RobotoCondensed-Regular.ttf", { family: "Roboto Condensed" });
-    const canvas = createCanvas(500, 304);
+    registerFont("Rubik-BoldItalic.ttf", { family: "Rubik" });
+    const canvas = createCanvas(500, 312);
     const ctx = canvas.getContext("2d");
     const hud = await loadImage(currentCar["racehud"]);
-    ctx.drawImage(hud, 0, 0, 500, 304);
+    ctx.drawImage(hud, 0, 0, 500, 312);
 
     let bmReference = currentCar["reference"] ? require(`../../cars/${currentCar["reference"]}`) : currentCar;
     let accel = upgrade !== "000" ? bmReference[`${upgrade}0to60`] : bmReference["0to60"]
@@ -28,12 +28,12 @@ async function generateHud(currentCar, upgrade) {
     }
     ctx.textAlign = "right";
     ctx.fillStyle = "#ffffff";
-    ctx.font = '55px "Roboto Condensed"';
-    ctx.fillText(upgrade !== "000" ? bmReference[`${upgrade}TopSpeed`] : bmReference["topSpeed"], 492, 50);
-    ctx.fillText(accel, 492, 111);
-    ctx.fillText(upgrade !== "000" ? bmReference[`${upgrade}Handling`] : bmReference["handling"], 492, 173);
-    ctx.fillText(bmReference["driveType"], 492, 237);
-    ctx.fillText(tyreAbbrevs[bmReference["tyreType"]], 492, 292);
+    ctx.font = '17px "Rubik"';
+    ctx.fillText(upgrade !== "000" ? bmReference[`${upgrade}TopSpeed`] : bmReference["topSpeed"], 45, 109);
+    ctx.fillText(accel, 45, 135);
+    ctx.fillText(upgrade !== "000" ? bmReference[`${upgrade}Handling`] : bmReference["handling"], 45, 161);
+    ctx.fillText(bmReference["driveType"], 47, 188);
+    ctx.fillText(tyreAbbrevs[bmReference["tyreType"]], 45, 214);
 
     let attachment = new AttachmentBuilder(canvas.toBuffer(), { name:"hud.png" });
     return attachment;

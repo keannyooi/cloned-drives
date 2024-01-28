@@ -1,5 +1,6 @@
 {
-    "rq": 29,
+    "carID": "c02069",
+    "cr": 290,
     "make": "Mercedes-Benz",
     "model": "300 SL-24",
     "modelYear": 1989,
@@ -22,8 +23,7 @@
     "mra": 60.5,
     "ola": 81.3,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/948556232736796723/benz_300_sl24_89_cd.png",
-    "333TopSpeed": 151,
+     "333TopSpeed": 151,
     "3330to60": 8.2,
     "333Handling": 75,
     "666TopSpeed": 154,
@@ -38,6 +38,6 @@
     "699TopSpeed": 154,
     "6990to60": 7.3,
     "699Handling": 81,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1023566966310588446/Mercedes_300_SL-24.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Sutzi"
 }

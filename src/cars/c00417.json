@@ -1,5 +1,6 @@
 {
-    "rq": 40,
+    "carID": "c00417",
+    "cr": 400,
     "make": "Fisker",
     "model": "Karma Surf Concept",
     "modelYear": 2011,
@@ -26,8 +27,7 @@
     "mra": 50.83,
     "ola": 81.96,
     "description": "A Karma Wagon, so at least it looks cool while hitting you in the face.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/857808533138964480/image0.png",
-    "333TopSpeed": 130,
+     "333TopSpeed": 130,
     "3330to60": 5.8,
     "333Handling": 84,
     "666TopSpeed": 134,
@@ -42,6 +42,6 @@
     "996TopSpeed": 138,
     "9960to60": 5.2,
     "996Handling": 86,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1024740583513796628/Fisker_Karma_Surf.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

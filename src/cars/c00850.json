@@ -1,5 +1,6 @@
 {
-    "rq": 31,
+    "carID": "c00850",
+    "cr": 310,
     "make": "Mercedes-Benz",
     "model": "450 SEL 6.9",
     "modelYear": 1975,
@@ -24,8 +25,7 @@
     "mra": 63.5,
     "ola": 80.4,
     "description": "Long Classiness.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/825099060716765234/450SEL.png",
-    "333TopSpeed": 141,
+     "333TopSpeed": 141,
     "3330to60": 7.6,
     "333Handling": 64,
     "666TopSpeed": 145,
@@ -40,6 +40,6 @@
     "699TopSpeed": 145,
     "6990to60": 7,
     "699Handling": 69,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095757996715409519/Mercedes_450_SEL.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Cenard"
 }

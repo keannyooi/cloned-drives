@@ -1,5 +1,6 @@
 {
-    "rq": 83,
+    "carID": "c01589",
+    "cr": 830,
     "make": "Lexus",
     "model": "RC F GT3",
     "modelYear": 2014,
@@ -26,8 +27,7 @@
     "mra": 97.14,
     "ola": 88.24,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/948621681042260059/rcfgt3.png",
-    "333TopSpeed": 183,
+     "333TopSpeed": 183,
     "3330to60": 3.2,
     "333Handling": 99,
     "666TopSpeed": 186,
@@ -42,6 +42,6 @@
     "699TopSpeed": 186,
     "6990to60": 2.9,
     "699Handling": 107,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017890649187553420/Lexus_RC_F_GT3.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Aqo"
 }

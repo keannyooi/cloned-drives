@@ -1,5 +1,6 @@
 {
-    "rq": 34,
+    "carID": "c01906",
+    "cr": 340,
     "make": "Toyota",
     "model": "Land Cruiser 4.7 V8",
     "modelYear": 1997,
@@ -24,8 +25,7 @@
     "mra": 36.02,
     "ola": 66.67,
     "description": "One of the most loved SUVs of all time.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/969596398716719124/Toyota_Land_Cruiser_1997_CD.png",
-    "333TopSpeed": 114,
+     "333TopSpeed": 114,
     "3330to60": 9.7,
     "333Handling": 66,
     "666TopSpeed": 119,
@@ -40,6 +40,6 @@
     "699TopSpeed": 119,
     "6990to60": 8.7,
     "699Handling": 71,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1096124371258572859/Toyota_Land_Cruiser_4.7_V8.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "AK1"
 }

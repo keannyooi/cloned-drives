@@ -1,5 +1,6 @@
 {
-    "rq": 49,
+    "carID": "c00730",
+    "cr": 490,
     "make": "Lotus",
     "model": "Elise",
     "modelYear": 2001,
@@ -25,8 +26,7 @@
     "mra": 51.28,
     "ola": 83.33,
     "description": "A new beginning for the old icon. Hot rq yes i do agree!",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/851548385299398736/Lotus_Elise_2001.png",
-    "333TopSpeed": 128,
+     "333TopSpeed": 128,
     "3330to60": 5.7,
     "333Handling": 92,
     "666TopSpeed": 132,
@@ -41,6 +41,6 @@
     "699TopSpeed": 132,
     "6990to60": 5.1,
     "699Handling": 99,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095068604682211458/Lotus_Elise_2001.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Tom"
 }

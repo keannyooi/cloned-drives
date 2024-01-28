@@ -1,5 +1,6 @@
 {
-    "rq": 33,
+    "carID": "c00777",
+    "cr": 330,
     "make": "Mazda",
     "model": "RX-7 GSL-SE",
     "modelYear": 1984,
@@ -22,8 +23,7 @@
     "mra": 47.79,
     "ola": 62.55,
     "description": "The cutest RX-7.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/970457981026189312/Mazda_RX-7_GSL-SE_1984.png",
-    "333TopSpeed": 130,
+     "333TopSpeed": 130,
     "3330to60": 7.7,
     "333Handling": 79,
     "666TopSpeed": 134,
@@ -38,6 +38,6 @@
     "699TopSpeed": 134,
     "6990to60": 6.9,
     "699Handling": 84,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996621818691584010/Mazda_RX-7_GSL-SE_1984_Hud.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "DodgeDemon"
 }

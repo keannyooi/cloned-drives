@@ -1,5 +1,6 @@
 {
-    "rq": 43,
+    "carID": "c01096",
+    "cr": 430,
     "make": "Porsche",
     "model": "924 Carrera GTS",
     "modelYear": 1981,
@@ -25,8 +26,7 @@
     "mra": 64.38,
     "ola": 77.49,
     "description": "A more high performance version of the 924 Carrera GT.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1114188945727701103/CarreraGTS924.png",
-"333TopSpeed": 158,
+ "333TopSpeed": 158,
 "3330to60": 5.7,
 "333Handling": 80,
 
@@ -45,6 +45,6 @@
 "996TopSpeed": 165,
 "9960to60": 5.1,
 "996Handling": 82,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1051140133811916871/Porsche_924_Carrera_GTS.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

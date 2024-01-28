@@ -1,5 +1,6 @@
 {
-    "rq": 41,
+    "carID": "c01981",
+    "cr": 410,
     "make": "Porsche",
     "model": "944 Turbo",
     "modelYear": 1985,
@@ -22,8 +23,7 @@
     "mra": 65.96,
     "ola": 74.19,
     "description": "",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1114186434933440604/944Turbo.png",
-    "333TopSpeed": 156,
+     "333TopSpeed": 156,
     "3330to60": 5.9,
     "333Handling": 80,
     "666TopSpeed": 160,
@@ -38,6 +38,6 @@
     "699TopSpeed": 160,
     "6990to60": 5.3,
     "699Handling": 85,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1114186592937070715/944Turbo.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

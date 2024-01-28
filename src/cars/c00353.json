@@ -1,5 +1,6 @@
 {
-    "rq": 55,
+    "carID": "c00353",
+    "cr": 550,
     "make": "Dodge",
     "model": "Challenger SRT8",
     "modelYear": 2009,
@@ -24,8 +25,7 @@
     "mra": 75,
     "ola": 87.5,
     "description": "With a striking red color and a boxy shape, it stands out from the other cars.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/826430492567273492/SRT8.png",
-    "333TopSpeed": 175,
+     "333TopSpeed": 175,
     "3330to60": 4.6,
     "333Handling": 81,
     "666TopSpeed": 178,
@@ -40,6 +40,6 @@
     "699TopSpeed": 178,
     "6990to60": 4.1,
     "699Handling": 87,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1020052208445837342/Dodge_Challenger_SRT8_2009.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

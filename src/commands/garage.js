@@ -21,7 +21,7 @@ module.exports = {
     category: "Configuration",
     description: "Shows your (or other people's) garage.",
     async execute(message, args) {
-        let user = message.author, page = 1, sort = "rq";
+        let user = message.author, page = 1, sort = "cr";
         if (args[args.length - 2] === "-s" && args[args.length - 1]) {
             sort = args[args.length - 1].toLowerCase();
             args = args.slice(0, args.length - 2);
@@ -128,7 +128,7 @@ module.exports = {
                     if (sort === "duplicates") {
                         valueList += `\`${calcTotal(car)}\`\n`;
                     }
-                    else if (sort !== "rq") {
+                    else if (sort !== "cr") {
                         let values = "";
                         if (currentCar["reference"]) {
                             currentCar = require(`../cars/${currentCar["reference"]}`);
@@ -174,7 +174,7 @@ module.exports = {
                     ],
                     footer: `Page ${page} of ${totalPages} - Interact with the buttons below to navigate through pages.`
                 });
-                if (sort !== "rq") {
+                if (sort !== "cr") {
                     infoMessage.editEmbed({ fields: [{ name: "Value", value: valueList, inline: true }] });
                 }
                 return infoMessage;

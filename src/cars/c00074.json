@@ -1,5 +1,6 @@
 {
-    "rq": 52,
+    "carID": "c00074",
+    "cr": 520,
     "make": "Aston Martin",
     "model": "DB7 Vantage",
     "modelYear": 1999,
@@ -22,8 +23,7 @@
     "mra": 73.91,
     "ola": 94.12,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/855242972458909736/db7vantage.png",
-    "333TopSpeed": 183,
+     "333TopSpeed": 183,
     "3330to60": 4.8,
     "333Handling": 81,
     "666TopSpeed": 186,
@@ -38,6 +38,6 @@
     "699TopSpeed": 186,
     "6990to60": 4.3,
     "699Handling": 87,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995979209010856018/db7vantage.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

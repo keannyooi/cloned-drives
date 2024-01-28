@@ -1,5 +1,6 @@
 {
-    "rq": 89,
+    "carID": "c01965",
+    "cr": 890,
     "make": "Nissan",
     "model": "R390 GT1 Longtail",
     "modelYear": 1998,
@@ -26,8 +27,7 @@
     "mra": 123.07,
     "ola": 87.5,
     "description": "",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1109064164745416794/NissanR390GT1LT.png",
-    "333TopSpeed": 226,
+     "333TopSpeed": 226,
     "3330to60": 3,
     "333Handling": 99,
     "666TopSpeed": 229,
@@ -42,6 +42,6 @@
     "699TopSpeed": 229,
     "6990to60": 2.7,
     "699Handling": 107,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1109065310914490478/R390GT1LT.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

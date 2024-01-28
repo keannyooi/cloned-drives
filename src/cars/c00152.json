@@ -1,5 +1,6 @@
 {
-    "rq": 35,
+    "carID": "c00152",
+    "cr": 347,
     "make": "BMW",
     "model": "218i Active Tourer Luxury Line",
     "modelYear": 2014,
@@ -22,8 +23,7 @@
     "mra": 50.28,
     "ola": 69.66,
     "description": "Luxury and space for the kids.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/851223174343163914/218i_Active_Tourer_Luxury_Line_14.png",
-    "333TopSpeed": 131,
+     "333TopSpeed": 131,
     "3330to60": 8.5,
     "333Handling": 73,
     "666TopSpeed": 135,
@@ -38,6 +38,6 @@
     "699TopSpeed": 135,
     "6990to60": 7.6,
     "699Handling": 79,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1024380365579747389/BMW_218i_Active_Tourer.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BMW218iActiveTourerLuxuryLine(2014).png",
     "creator": "Macan"
 }

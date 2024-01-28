@@ -1,5 +1,6 @@
 {
-    "rq": 22,
+    "carID": "c01091",
+    "cr": 220,
     "make": "Porsche",
     "model": "912 E",
     "modelYear": 1975,
@@ -22,8 +23,7 @@
     "mra": 49.5,
     "ola": 72.23,
     "description": "While the 914 was essentially history, Porsche still had a quantity of the air-cooled four-cylinder boxer engines from that car and nowhere to use them. So the 912E said hi.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1103370356745572352/Porsche912E.png",
-"333TopSpeed": 116,
+ "333TopSpeed": 116,
 "3330to60": 12.2,
 "333Handling": 72,
 
@@ -42,6 +42,6 @@
 "996TopSpeed": 125,
 "9960to60": 10.9,
 "996Handling": 75,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003296062037053471/912e.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Keanny"
 }

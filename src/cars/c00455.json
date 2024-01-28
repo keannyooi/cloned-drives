@@ -1,5 +1,6 @@
 {
-    "rq": 28,
+    "carID": "c00455",
+    "cr": 280,
     "make": "Ford",
     "model": "Focus SE Wagon",
     "modelYear": 2000,
@@ -22,8 +23,7 @@
     "mra": 39.99,
     "ola": 61.99,
     "description": "A Focus but wagon.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/819390678801842176/ford_focus_se_wagon.png",
-    "333TopSpeed": 107,
+     "333TopSpeed": 107,
     "3330to60": 9.9,
     "333Handling": 73,
     "666TopSpeed": 112,
@@ -38,6 +38,6 @@
     "699TopSpeed": 112,
     "6990to60": 8.8,
     "699Handling": 79,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003308692738945094/focus_se_wagon.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Keanny"
 }

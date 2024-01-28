@@ -1,5 +1,6 @@
 {
-    "rq": 39,
+    "carID": "c02033",
+    "cr": 390,
     "make": "Lamborghini",
     "model": "Miura Roadster",
     "modelYear": 1968,
@@ -22,8 +23,7 @@
     "mra": 74.24,
     "ola": 82.54,
     "description": "The one and only factory Miura Roadster.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/1051610572984172584/Lamborghini_Miura_Roadster_1968.png",
-    "333TopSpeed": 177,
+     "333TopSpeed": 177,
     "3330to60": 6.0,
     "333Handling": 75,
     "666TopSpeed": 180,
@@ -38,6 +38,6 @@
     "699TopSpeed": 180,
     "6990to60": 5.4,
     "699Handling": 81,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1051610822851428463/Lamborghini_Miura_Roadster_1968_Hud.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/LamborghiniMiuraRoadster(1968).png",
     "creator": "DodgeDemon"
 }

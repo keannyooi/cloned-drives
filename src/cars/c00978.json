@@ -1,5 +1,6 @@
 {
-    "rq": 25,
+    "carID": "c00978",
+    "cr": 250,
     "make": "Opel",
     "model": "Astra TwinTop 2.0 Turbo",
     "modelYear": 2006,
@@ -22,8 +23,7 @@
     "mra": 67.2,
     "ola": 80.95,
     "description": "Open-top Astra with a metal folding-roof.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/842020322014396476/E.OpelAstraTwinT20T.png",
-    "333TopSpeed": 144,
+     "333TopSpeed": 144,
     "3330to60": 8,
     "333Handling": 76,
     "666TopSpeed": 147,
@@ -38,6 +38,6 @@
     "699TopSpeed": 147,
     "6990to60": 7.1,
     "699Handling": 82,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1036162859756953610/astra_twintop.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 101,
+    "carID": "c01114",
+    "cr": 1010,
     "make": "Porsche",
     "model": "Cayenne Turbo Coupe",
     "modelYear": 2019,
@@ -23,8 +24,7 @@
     "mra": 74.47,
     "ola": 80.00,
     "description": "A Fire-Breathing SUV with Fashion Sense.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1079091638468616232/ExistCayenneTurboCoupe.png",
-
+ 
     "333TopSpeed": 180,
     "3330to60": 3.3,
     "333Handling": 90,
@@ -45,6 +45,6 @@
     "9960to60": 3,
     "996Handling": 93,
 
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997770931638378496/cayenneturbocoupe.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Exist"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 77,
+    "carID": "c00839",
+    "cr": 770,
     "make": [
         "Mercedes-AMG",
         "Mercedes-Benz"
@@ -28,8 +29,7 @@
     "mra": 90.02,
     "ola": 90.28,
     "description": "Sure, you can have the sharper handling McLaren 12C for the same money, while a Ferrari 458 Italia is not much more. But then neither of those have gullwing doors, do they?",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/860514656443826194/unknown.png",
-    "333TopSpeed": 200,
+     "333TopSpeed": 200,
     "3330to60": 3.4,
     "333Handling": 91,
     "666TopSpeed": 202,
@@ -44,6 +44,6 @@
     "699TopSpeed": 202,
     "6990to60": 3.1,
     "699Handling": 98,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1016826271562465392/Picsart_22-09-05_22-06-59-526.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

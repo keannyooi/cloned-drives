@@ -1,5 +1,6 @@
 {
-    "rq": 33,
+    "carID": "c00433",
+    "cr": 330,
     "make": "Ford",
     "model": "Explorer Sport Trac",
     "modelYear": 2001,
@@ -22,8 +23,7 @@
     "mra": 41.7,
     "ola": 86.02,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/824626860473188412/xpolorthingy.png",
-    "333TopSpeed": 111,
+     "333TopSpeed": 111,
     "3330to60": 8.8,
     "333Handling": 65,
     "666TopSpeed": 116,
@@ -38,6 +38,6 @@
     "699TopSpeed": 116,
     "6990to60": 7.9,
     "699Handling": 70,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095386130855235635/c00433.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

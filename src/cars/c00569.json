@@ -1,5 +1,6 @@
 {
-    "rq": 54,
+    "carID": "c00569",
+    "cr": 540,
     "make": "Infiniti",
     "model": "G35 Sedan",
     "modelYear": 2002,
@@ -22,8 +23,7 @@
     "mra": 65.26,
     "ola": 77.42,
     "description": "Skyline in disguise.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/962745007272497244/B.InfinitiG35Sedan.png",
-    "333TopSpeed": 152,
+     "333TopSpeed": 152,
     "3330to60": 5.9,
     "333Handling": 80,
     "666TopSpeed": 156,
@@ -38,6 +38,6 @@
     "699TopSpeed": 156,
     "6990to60": 5.3,
     "699Handling": 85,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1035862098758078515/g35_sedan.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 79,
+    "carID": "c01250",
+    "cr": 793,
     "make": "Tesla",
     "model": "Model 3 Dual Motor Long Range",
     "modelYear": 2018,
@@ -24,8 +25,7 @@
     "mra": 77.86,
     "ola": 88.19,
     "description": "On Christmas 2019, this car's rear inverter short circuited and stranded Car & Driver's crew when parked. This was the first time something like this happened during their long-term testing. This, alongside many other faults including a relay attack vulnerability that lets the attacker control the car remotely, tarnished the car's (and by extension Tesla and Elon Musk's) reputation.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/858544280692064277/tesla_model_3_dual_motor_long_range.png",
-    "333TopSpeed": 149,
+     "333TopSpeed": 149,
     "3330to60": 4,
     "333Handling": 83,
     "666TopSpeed": 152,
@@ -40,6 +40,6 @@
     "699TopSpeed": 152,
     "6990to60": 3.6,
     "699Handling": 89,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1002951371164762212/model_3_dual.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/TeslaModel3DualMotorLongRange(2018).png",
     "creator": "Keanny"
 }

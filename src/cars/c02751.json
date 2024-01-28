@@ -1,5 +1,6 @@
 {
-    "rq": 42,
+    "carID": "c02751",
+    "cr": 420,
     "make": "Audi",
     "model": "TT Roadster 1.8T quattro",
     "modelYear": 2003,
@@ -24,8 +25,7 @@
     "ola": 60.61,
     "description": "Weaker engine but the style still remains intact.",
 
-    "card": "https://media.discordapp.net/attachments/819199720249360384/947450324757667861/Audi_TT_Roadster.png",
-	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1036628444051668992/TT1-8T.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Based",
 
     "333TopSpeed": 151,

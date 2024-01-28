@@ -1,5 +1,6 @@
 {
-    "rq": 24,
+    "carID": "c00409",
+    "cr": 238,
     "make": "Fiat",
     "model": "500e",
     "modelYear": 2013,
@@ -24,8 +25,7 @@
     "mra": 0,
     "ola": 65.5,
     "description": "An electric cutie.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/865584754963382302/fiat_500e.png",
-    "333TopSpeed": 93,
+     "333TopSpeed": 93,
     "3330to60": 8.2,
     "333Handling": 72,
     "666TopSpeed": 99,
@@ -40,6 +40,6 @@
     "699TopSpeed": 99,
     "6990to60": 7.3,
     "699Handling": 78,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003249675584933958/500e.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Fiat500e(2013).png",
     "creator": "Keanny"
 }

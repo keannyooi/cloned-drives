@@ -1,5 +1,6 @@
 {
-    "rq": 81,
+    "carID": "c01343",
+    "cr": 814,
     "make": [
         "Unplugged Performance",
         "Tesla"
@@ -28,8 +29,7 @@
     "mra": 61.14,
     "ola": 87.74,
     "description": "As fast as the legendary McLaren F1 LM around Tsukuba. What makes this more impressive is that this was achieved by a relatively inexperienced driver.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/858545842537234443/unplugged_performance_model_3_perf_tsukuba.png",
-    "333TopSpeed": 165,
+     "333TopSpeed": 165,
     "3330to60": 2.9,
     "333Handling": 90,
     "666TopSpeed": 168,
@@ -44,6 +44,6 @@
     "699TopSpeed": 168,
     "6990to60": 2.6,
     "699Handling": 97,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1002952242179080302/unplugged_ascension.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/UnpluggedPerformanceModel3PerformanceAscension-R(2020).png",
     "creator": "Keanny"
 }

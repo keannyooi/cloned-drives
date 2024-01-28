@@ -1,5 +1,6 @@
 {
-    "rq": 18,
+    "carID": "c02051",
+    "cr": 180,
     "make": "Scion",
     "model": "iQ EV",
     "modelYear": 2013,
@@ -23,8 +24,7 @@
     "mra": 0,
     "ola": 73.68,
     "description": "Toyota/Scion was ready for an EV city vehicle, but their customers were not.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/978709115830419466/scion-iq-not-my-card.png",
-
+ 
     "333TopSpeed": 85,
     "3330to60": 12.6,
     "333Handling": 69,
@@ -45,6 +45,6 @@
     "6990to60": 11.3,
     "699Handling": 74,
     
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1035870098658963456/iq_ev.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Keanny"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 59,
+    "carID": "c00629",
+    "cr": 590,
     "make": [
         "Kleemann",
         "Mercedes-Benz"
@@ -28,8 +29,7 @@
     "mra": 74.24,
     "ola": 89.9,
     "description": "Danish people added a supercharger to a CLK and managed to squeeze out 433hp.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/826946163491078164/KleemannCLK43K.png",
-    "333TopSpeed": 138,
+     "333TopSpeed": 138,
     "3330to60": 4.7,
     "333Handling": 79,
     "666TopSpeed": 142,
@@ -44,6 +44,6 @@
     "699TopSpeed": 142,
     "6990to60": 4.2,
     "699Handling": 84,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095057842131710022/Kleemann_CLK43K.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 71,
+    "carID": "c02083",
+    "cr": 714,
     "make": ["AC Schnitzer","BMW"],
     "model": "ACS1 Sport Coupe",
     "modelYear": 2012,
@@ -22,8 +23,7 @@
     "mra": 95.55,
     "ola": 79.06,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/976510271931703296/ACS1SportCoupe.png",
-    "333TopSpeed": 189,
+     "333TopSpeed": 189,
     "3330to60": 4.1,
     "333Handling": 92,
     "666TopSpeed": 192,
@@ -38,6 +38,6 @@
     "699TopSpeed": 192,
     "6990to60": 3.7,
     "699Handling": 99,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997572803782000790/ACS1SC.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ACSchnitzerACS1SportCoupe(2012).png",
     "creator": "Bnuuy"
 }

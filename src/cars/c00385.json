@@ -1,5 +1,6 @@
 {
-    "rq": 83,
+    "carID": "c00385",
+    "cr": 832,
     "make": "Ferrari",
     "model": "458 Italia",
     "modelYear": 2010,
@@ -22,8 +23,7 @@
     "mra": 88.89,
     "ola": 93.75,
     "description": "Pretty looks and daily practicality.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/838136154733412413/458Italia.png",
-    "333TopSpeed": 208,
+     "333TopSpeed": 208,
     "3330to60": 3.0,
     "333Handling": 93,
     "666TopSpeed": 210,
@@ -38,6 +38,6 @@
     "699TopSpeed": 210,
     "6990to60": 2.7,
     "699Handling": 100,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995993485280825364/458italia.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Ferrari458Italia(2010).png",
     "creator": "Bnuuy"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 109,
+    "carID": "c01695",
+    "cr": 1090,
     "make": "Mitsubishi",
     "model": "Lancer Evolution X Rally Car",
     "modelYear": 2008,
@@ -22,8 +23,7 @@
     "mra": 75.56,
     "ola": 70.59,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/951601822605410394/evo10rally.png",
-    "333TopSpeed": 153,
+     "333TopSpeed": 153,
     "3330to60": 3.2,
     "333Handling": 95,
     "666TopSpeed": 157,
@@ -38,6 +38,6 @@
     "699TopSpeed": 157,
     "6990to60": 2.9,
     "699Handling": 102,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996023598114406450/evoxrallycar.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

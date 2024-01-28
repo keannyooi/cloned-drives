@@ -1,5 +1,6 @@
 {
-    "rq": 35,
+    "carID": "c01706",
+    "cr": 351,
     "make": "Nissan",
     "model": "300ZX Turbo",
     "modelYear": 1983,
@@ -25,8 +26,7 @@
     "mra": 54.76,
     "ola": 76.06,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/869498782193168454/nissan_300zx_turbo.png",
-    "333TopSpeed": 146,
+     "333TopSpeed": 146,
     "3330to60": 6.7,
     "333Handling": 73,
     "666TopSpeed": 149,
@@ -41,6 +41,6 @@
     "699TopSpeed": 149,
     "6990to60": 6,
     "699Handling": 79,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1001851137433026610/300zx_turbo_z31.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Nissan300ZXTurbo(1983).png",
     "creator": "Keanny"
 }

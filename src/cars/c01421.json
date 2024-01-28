@@ -1,5 +1,6 @@
 {
-    "rq": 59,
+    "carID": "c01421",
+    "cr": 590,
     "make": "Volvo",
     "model": "S60 R AWD",
     "modelYear": 2003,
@@ -22,8 +23,7 @@
     "mra": 65.48,
     "ola": 87.27,
     "description": "The ultimate Q-Car?",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/823598824588312586/S60R.png",
-    "333TopSpeed": 152,
+     "333TopSpeed": 152,
     "3330to60": 5.2,
     "333Handling": 82,
     "666TopSpeed": 155,
@@ -38,6 +38,6 @@
     "699TopSpeed": 155,
     "6990to60": 4.7,
     "699Handling": 88,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997785910240354354/S60RAWD.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Macan"
 }

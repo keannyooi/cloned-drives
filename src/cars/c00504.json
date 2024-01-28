@@ -1,5 +1,6 @@
 {
-    "rq": 60,
+    "carID": "c00504",
+    "cr": 600,
     "make": "GMC",
     "model": "Yukon Denali",
     "modelYear": 2018,
@@ -22,8 +23,7 @@
     "mra": 56.31,
     "ola": 65.28,
     "description": "GMC's flagship Yukon with 4 additional gears and a refreshed grille.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/822227044687544390/cate-test.png",
-    "333TopSpeed": 118,
+     "333TopSpeed": 118,
     "3330to60": 5.5,
     "333Handling": 70,
     "666TopSpeed": 122,
@@ -38,6 +38,6 @@
     "699TopSpeed": 122,
     "6990to60": 4.9,
     "699Handling": 75,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1004766726191333487/GMC-Yukon-Denali.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Johnny"
 }

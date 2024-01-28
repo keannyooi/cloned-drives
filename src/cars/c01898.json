@@ -1,5 +1,6 @@
 {
-    "rq": 25,
+    "carID": "c01898",
+    "cr": 252,
     "make": "Toyota",
     "model": "FCV Concept",
     "modelYear": 2013,
@@ -26,8 +27,7 @@
     "mra": 36.43,
     "ola": 64.71,
     "description": "This blue water droplet looking thing is the Mirai before it was called the Mirai. This time the car's estimated range is at a more reasonable 500km, close to the what the final product would manage.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/861147288351932416/toyota_fcv_concept.png",
-    "333TopSpeed": 110,
+     "333TopSpeed": 110,
     "3330to60": 9.7,
     "333Handling": 69,
     "666TopSpeed": 115,
@@ -42,6 +42,6 @@
     "699TopSpeed": 115,
     "6990to60": 8.7,
     "699Handling": 74,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003166021189906432/toyota_fcv.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ToyotaFCVConcept(2013).png",
     "creator": "Keanny"
 }

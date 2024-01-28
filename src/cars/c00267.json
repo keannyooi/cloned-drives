@@ -1,5 +1,6 @@
 {
-    "rq": 56,
+    "carID": "c00267",
+    "cr": 560,
     "make": "Chevrolet",
     "model": "Corvette Convertible",
     "modelYear": 1998,
@@ -22,8 +23,7 @@
     "mra": 66.52,
     "ola": 79.47,
     "description": "Top up top down, turn it all the way around.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/822622393691668481/ChevroletCorvetteConvertible.png",
-    "333TopSpeed": 170,
+     "333TopSpeed": 170,
     "3330to60": 4.8,
     "333Handling": 84,
     "666TopSpeed": 173,
@@ -38,6 +38,6 @@
     "699TopSpeed": 173,
     "6990to60": 4.3,
     "699Handling": 90,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095291353786744953/c00267.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

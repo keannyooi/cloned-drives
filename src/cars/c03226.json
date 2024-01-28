@@ -1,5 +1,6 @@
 {
-    "rq": 28,
+    "carID": "c03226",
+    "cr": 280,
     "make": ["Oettinger", "Volkswagen"],
     "model": "Golf GTI 16S",
     "modelYear": 1981,
@@ -26,8 +27,7 @@
     "description": "Add a little bit of spice. And a turbo.",
 
 
-    "card": "https://media.discordapp.net/attachments/819199720249360384/931544772743671849/OettingerGTI16s.png",
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1052688217180221501/OettingerGTI16S.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Andu",
 
     "333TopSpeed": 132,

@@ -1,5 +1,6 @@
 {
-    "rq": 34,
+    "carID": "c01752",
+    "cr": 336,
     "make": "Nissan",
     "model": "Leaf",
     "modelYear": 2017,
@@ -25,8 +26,7 @@
     "mra": 33.33,
     "ola": 74.31,
     "description": "The previous Leaf looked like a squished froggy, so the second generation completely changed its styling to look more in line with the make's other vehicles.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/865585035348672532/nissan_leaf_new.png",
-    "333TopSpeed": 98,
+     "333TopSpeed": 98,
     "3330to60": 7.3,
     "333Handling": 72,
     "666TopSpeed": 103,
@@ -41,6 +41,6 @@
     "699TopSpeed": 103,
     "6990to60": 6.5,
     "699Handling": 78,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003165133117329552/leaf_new.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/NissanLEaf(2017).png",
     "creator": "Keanny"
 }

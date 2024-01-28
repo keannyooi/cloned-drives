@@ -1,5 +1,6 @@
 {
-    "rq": 80,
+    "carID": "c00734",
+    "cr": 800,
     "make": "Lotus",
     "model": "Elise GT1 Road Car",
     "modelYear": 1997,
@@ -26,8 +27,7 @@
     "mra": 90.24,
     "ola": 102.7,
     "description": "Unreliable engine? On a Lotus? Never heard of that before!!!",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/855206246332366859/Lotus_Elise_Gt1_Road_Car_2.0.png",
-    "333TopSpeed": 180,
+     "333TopSpeed": 180,
     "3330to60": 3.5,
     "333Handling": 98,
     "666TopSpeed": 183,
@@ -42,6 +42,6 @@
     "699TopSpeed": 183,
     "6990to60": 3.1,
     "699Handling": 105,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017344885721931787/Lotus_Elise_GT1_Road_Car.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Based"
 }

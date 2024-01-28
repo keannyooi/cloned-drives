@@ -1,5 +1,6 @@
 {
-    "rq": 42,
+    "carID": "c01617",
+    "cr": 420,
     "make": "Mazda",
     "model": "RX-7 Turbo II",
     "modelYear": 1986,
@@ -22,8 +23,7 @@
     "mra": 51.36,
     "ola": 65.87,
     "description": "The first dose of the RX-7's rotary turbo outside of its domestic market, ironically named the Turbo II.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/971796519206412388/Mazda_RX-7_TII_1986.png",
-    "333TopSpeed": 147,
+     "333TopSpeed": 147,
     "3330to60": 6.6,
     "333Handling": 81,
     "666TopSpeed": 150,
@@ -38,6 +38,6 @@
     "699TopSpeed": 150,
     "6990to60": 5.9,
     "699Handling": 87,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996621643558441060/Mazda_RX-7_TII_1986_Hud.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "DodgeDemon"
 }

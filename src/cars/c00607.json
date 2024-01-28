@@ -1,5 +1,6 @@
 {
-    "rq": 44,
+    "carID": "c00607",
+    "cr": 440,
     "make": "Jeep",
     "model": "Cherokee Laredo",
     "modelYear": 1990,
@@ -22,8 +23,7 @@
     "mra": 36.69,
     "ola": 62.86,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/821020839871905843/C.JeepCherokeeLaredo.png",
-    "333TopSpeed": 113,
+     "333TopSpeed": 113,
     "3330to60": 9.7,
     "333Handling": 65,
     "666TopSpeed": 118,
@@ -38,6 +38,6 @@
     "699TopSpeed": 118,
     "6990to60": 8.7,
     "699Handling": 70,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100132641711333437/JeepCherokLaredo.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

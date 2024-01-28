@@ -1,5 +1,6 @@
 {
-    "rq": 78,
+    "carID": "c00368",
+    "cr": 780,
     "make": "Dodge",
     "model": "SRT Viper",
     "modelYear": 2013,
@@ -25,8 +26,7 @@
     "mra": 85.05,
     "ola": 108.84,
     "description": "The latest generation Viper sold under the SRT name.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/834395834186989598/srt_viper.png",
-    "333TopSpeed": 209,
+     "333TopSpeed": 209,
     "3330to60": 3.5,
     "333Handling": 94,
     "666TopSpeed": 211,
@@ -41,6 +41,6 @@
     "699TopSpeed": 211,
     "6990to60": 3.1,
     "699Handling": 101,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003270125178322964/srt_viper.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Keanny"
 }

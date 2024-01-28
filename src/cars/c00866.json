@@ -1,5 +1,6 @@
 {
-    "rq": 54,
+    "carID": "c00866",
+    "cr": 540,
     "make": "Mercedes-Benz",
     "model": "E 500",
     "modelYear": 2002,
@@ -22,8 +23,7 @@
     "mra": 66.67,
     "ola": 75.09,
     "description": "Smooth luxurious V8.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/825086935395467264/E500-02.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 5.6,
     "333Handling": 75,
     "666TopSpeed": 162,
@@ -38,6 +38,6 @@
     "699TopSpeed": 162,
     "6990to60": 5,
     "699Handling": 81,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095025396292006029/Mercedes_E_500.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 55,
+    "carID": "c00450",
+    "cr": 550,
     "make": "Ford",
     "model": "Focus FR200",
     "modelYear": 2001,
@@ -26,8 +27,7 @@
     "mra": 72.37,
     "ola": 80,
     "description": "If you ignore the front, the FR200 is an absolute rarity of a beast, with only 3 examples made, FWD and 304hp.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/845886555033305158/ford_focus_fr200.png",
-    "333TopSpeed": 167,
+     "333TopSpeed": 167,
     "3330to60": 5.2,
     "333Handling": 88,
     "666TopSpeed": 170,
@@ -42,6 +42,6 @@
     "699TopSpeed": 170,
     "6990to60": 4.7,
     "699Handling": 94,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003164768447758406/focus_fr500.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Keanny"
 }

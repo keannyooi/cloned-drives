@@ -1,5 +1,6 @@
 {  
-    "rq": 78,
+    "carID": "c02745",
+    "cr": 780,
     "make": "Audi",
     "model": "RS 6 Avant performance",
     "modelYear": 2016,
@@ -22,8 +23,7 @@
     "mra": 81.40,
     "ola": 74.29,
     "description": "You thought 560 hp weren't enough? Have an extra 45 and more top speed so that you can yeet yourself into space on the Ring.",
-    "card": "https://media.discordapp.net/attachments/1029443378699579413/1034811003365490748/rs_6_performance.png",
-    "333TopSpeed": 193,
+     "333TopSpeed": 193,
     "3330to60": 3.3,
     "333Handling": 86,
     "666TopSpeed": 195,
@@ -38,6 +38,6 @@
     "699TopSpeed": 195,
     "6990to60": 3.0,
     "699Handling": 92,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1034829405417132152/rs_6_performance.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Lemon"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 89,
+    "carID": "c01851",
+    "cr": 890,
     "make": ["TCP Magic","Mazda"],
     "model": "RX-7 Time Attack",
     "modelYear": 2014,
@@ -22,8 +23,7 @@
     "mra": 93.93,
     "ola": 83.37,
     "description": "Whats more cool than a pure Japanese time attack machine?",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/959441485625970698/tcpmagik.png",
-    "333TopSpeed": 201,
+     "333TopSpeed": 201,
     "3330to60": 2.9,
     "333Handling": 98,
     "666TopSpeed": 203,
@@ -38,6 +38,6 @@
     "699TopSpeed": 203,
     "6990to60": 2.6,
     "699Handling": 105,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995822882296955011/tcpmagik.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

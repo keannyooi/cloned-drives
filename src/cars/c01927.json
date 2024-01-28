@@ -1,5 +1,6 @@
 {
-    "rq": 29,
+    "carID": "c01927",
+    "cr": 290,
     "make": "Toyota",
     "model": "Vitz Turbo GRMN",
     "modelYear": 2013,
@@ -22,8 +23,7 @@
     "mra": 60.16,
     "ola": 80.52,
     "description": "Japan only and limited to just 200 copies, this Yaris was a insight what to expect from GRMN.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/996843972116889600/E.ToyotaVitzTurbo.png",
-    "333TopSpeed": 117,
+     "333TopSpeed": 117,
     "3330to60": 7.3,
     "333Handling": 80,
     "666TopSpeed": 121,
@@ -38,6 +38,6 @@
     "699TopSpeed": 121,
     "6990to60": 6.5,
     "699Handling": 85,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996845069590081566/YARISGRMNT.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

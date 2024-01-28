@@ -1,5 +1,6 @@
 {
-    "rq": 32,
+    "carID": "c00844",
+    "cr": 320,
     "make": "Mercedes-Benz",
     "model": "300 GE",
     "modelYear": 1990,
@@ -24,8 +25,7 @@
     "mra": 25.98,
     "ola": 63.64,
     "description": "The first major update of the iconic Gelandewagen since 1979, featuring an extensively updated chassis and a revised front end.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/833291106669953034/D32.Mercedes300GE.png",
-    "333TopSpeed": 109,
+     "333TopSpeed": 109,
     "3330to60": 12.5,
     "333Handling": 60,
     "666TopSpeed": 114,
@@ -40,6 +40,6 @@
     "699TopSpeed": 114,
     "6990to60": 11.2,
     "699Handling": 64,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095783188938371213/Mercedes_300_GE.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 37,
+    "carID": "c00682",
+    "cr": 370,
     "make": "Land Rover",
     "model": "Defender 90",
     "modelYear": 1990,
@@ -24,8 +25,7 @@
     "mra": 11,
     "ola": 68.63,
     "description": "A classic iconic off-roader.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/866708999151026196/LandRoverDefender90.png",
-    "333TopSpeed": 92,
+     "333TopSpeed": 92,
     "3330to60": 9.7,
     "333Handling": 61,
     "666TopSpeed": 98,
@@ -40,6 +40,6 @@
     "699TopSpeed": 98,
     "6990to60": 8.7,
     "699Handling": 65,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100135096532619364/defender90old.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

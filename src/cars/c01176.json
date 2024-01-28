@@ -1,5 +1,6 @@
 {
-    "rq": 77,
+    "carID": "c01176",
+    "cr": 770,
     "make": "Singer",
     "model": "911 Reimagined",
     "modelYear": 2010,
@@ -24,8 +25,7 @@
     "mra": 67.35,
     "ola": 66.67,
     "description": "How do you improve perfection? Give it to Singer.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/819418245240193024/2010_Singer_911.png",
-    "333TopSpeed": 179,
+     "333TopSpeed": 179,
     "3330to60": 3.1,
     "333Handling": 87,
     "666TopSpeed": 182,
@@ -40,6 +40,6 @@
     "699TopSpeed": 185,
     "6990to60": 2.8,
     "699Handling": 93,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017111800556310709/Singer_911.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "DodgeDemon"
 }

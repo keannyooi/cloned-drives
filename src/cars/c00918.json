@@ -1,5 +1,6 @@
 {
-    "rq": 31,
+    "carID": "c00918",
+    "cr": 310,
     "make": "Mitsubishi",
     "model": "Starion ESI-R",
     "modelYear": 1986,
@@ -22,8 +23,7 @@
     "mra": 56.37,
     "ola": 74.3,
     "description": "Some say that Japanese engineers struggle to pronounce the word \"stallion\", and that they named a car after the handicap.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/856532686919041064/mitsubishi_starion_esi-r.png",
-    "333TopSpeed": 135,
+     "333TopSpeed": 135,
     "3330to60": 7.7,
     "333Handling": 75,
     "666TopSpeed": 139,
@@ -38,6 +38,6 @@
     "699TopSpeed": 139,
     "6990to60": 6.9,
     "699Handling": 81,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003166069155967096/starion_esi-r.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Keanny"
 }

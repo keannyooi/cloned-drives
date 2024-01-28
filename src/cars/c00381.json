@@ -1,5 +1,6 @@
 {
-    "rq": 45,
+    "carID": "c00381",
+    "cr": 450,
     "make": "Ferrari",
     "model": "348 TS",
     "modelYear": 1991,
@@ -23,8 +24,7 @@
     "mra": 68.5,
     "ola": 90,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/854253738683793428/Ferrari_348_TS.png",
-
+ 
     "333TopSpeed": 171,
     "3330to60": 5.7,
     "333Handling": 84,
@@ -45,6 +45,6 @@
     "6990to60": 5.1,
     "699Handling": 90,
 
-    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1094910540406591609/348ts.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "AK1"
 }

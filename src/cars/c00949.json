@@ -1,5 +1,6 @@
 {
-    "rq": 80,
+    "carID": "c00949",
+    "cr": 800,
     "make": "Nissan",
     "model": "Nismo Super GT MOTUL AUTECH GT-R",
     "modelYear": 2014,
@@ -22,8 +23,7 @@
     "mra": 134.48,
     "ola": 89,
     "description": "The RWD Godzilla.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/821038963942228038/SuperGT.png",
-    "333TopSpeed": 189,
+     "333TopSpeed": 189,
     "3330to60": 3.7,
     "333Handling": 99,
     "666TopSpeed": 192,
@@ -38,6 +38,6 @@
     "969TopSpeed": 194,
     "9690to60": 3.5,
     "969Handling": 107,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997569522267586570/GT-RSuperGT.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

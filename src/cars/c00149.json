@@ -1,5 +1,6 @@
 {
-    "rq": 19,
+    "carID": "c00149",
+    "cr": 190,
     "make": [
         "Blitz",
         "Honda"
@@ -28,8 +29,7 @@
     "mra": 43.81,
     "ola": 71.71,
     "description": "JDM style speedyness... is that a word?",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/868778642921107516/blitz_s660.png",
-    "333TopSpeed": 106,
+     "333TopSpeed": 106,
     "3330to60": 9.4,
     "333Handling": 79,
     "666TopSpeed": 111,
@@ -44,6 +44,6 @@
     "699TopSpeed": 111,
     "6990to60": 8.4,
     "699Handling": 84,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003176053424005191/blitz_s660.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BlitzS660SpecC(2016).png",
     "creator": "Keanny"
 }

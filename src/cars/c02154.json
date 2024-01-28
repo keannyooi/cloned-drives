@@ -1,5 +1,6 @@
 {
-    "rq": 94,
+    "carID": "c02154",
+    "cr": 940,
     "make": "Koenigsegg",
     "model": "CCXR Special Edition",
     "modelYear": 2009,
@@ -27,8 +28,7 @@
     "mra": 130.23,
     "ola": 103.57,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/933380049275609178/ccxrspecialthoughsocool.png",
-    "333TopSpeed": 254,
+     "333TopSpeed": 254,
     "3330to60": 2.7,
     "333Handling": 95,
     "666TopSpeed": 256,
@@ -43,6 +43,6 @@
     "699TopSpeed": 256,
     "6990to60": 2.4,
     "699Handling": 102,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017004858420772964/ccxrspecialed.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Aqo"
 }

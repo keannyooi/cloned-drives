@@ -1,5 +1,6 @@
 {
-    "rq": 30,
+    "carID": "c03228",
+    "cr": 300,
     "make": ["Rinspeed", "Volkswagen"],
     "model": "Aliporta",
     "modelYear": 1981,
@@ -26,8 +27,7 @@
     "description": "Who said only Lambos can fly?",
 
 
-    "card": "https://media.discordapp.net/attachments/819199720249360384/931544926192275509/RinspeedAliporta.png",
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1052688677639290921/RinspeedAliporta.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Andu",
 
     "333TopSpeed": 125,

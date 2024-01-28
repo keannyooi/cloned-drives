@@ -1,5 +1,6 @@
 {
-    "rq": 57,
+    "carID": "c01377",
+    "cr": 570,
     "make": "Volkswagen",
     "model": "ID.4 1st NORRA Mexican 1000 Racer",
     "modelYear": 2021,
@@ -26,8 +27,7 @@
     "mra": 39.89,
     "ola": 60.27,
     "description": "The unlikely love child between Tanner Foust and VW.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/846803671609245706/ID4rally.png",
-    "333TopSpeed": 112,
+     "333TopSpeed": 112,
     "3330to60": 6.9,
     "333Handling": 80,
     "666TopSpeed": 117,
@@ -42,6 +42,6 @@
     "699TopSpeed": 117,
     "6990to60": 6.2,
     "699Handling": 85,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017737126332346368/Vw_ID.4_1st_Norra.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Andu"
 }

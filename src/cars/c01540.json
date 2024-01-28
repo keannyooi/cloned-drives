@@ -1,5 +1,6 @@
 {
-    "rq": 5,
+    "carID": "c01540",
+    "cr": 50,
     "make": "Honda",
     "model": "Beat",
     "modelYear": 1991,
@@ -25,8 +26,7 @@
     "mra": 19.47,
     "ola": 66.14,
     "description": "Let the beat take over.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/963513233279418398/HondaBEat.png",
-    "333TopSpeed": 89,
+     "333TopSpeed": 89,
     "3330to60": 12.1,
     "333Handling": 70,
     "666TopSpeed": 96,
@@ -41,6 +41,6 @@
     "699TopSpeed": 96,
     "6990to60": 10.8,
     "699Handling": 75,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100168933887180820/Beatin.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

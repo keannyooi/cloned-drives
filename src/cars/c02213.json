@@ -1,5 +1,6 @@
 {
-    "rq": 88,
+    "carID": "c02213",
+    "cr": 880,
     "make": "Porsche",
     "model": "918 Spyder Concept Study",
     "modelYear": 2010,
@@ -25,8 +26,7 @@
     "mra": 88.89,
     "ola": 96.88,
     "description": "Watch out not to burn your feet, this baby has sidepipes unlike its production brother.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/987362259057668176/porsche_918_spyder_concept_study.png",
-    "333TopSpeed": 202,
+     "333TopSpeed": 202,
     "3330to60": 3.0,
     "333Handling": 95,
     "666TopSpeed": 204,
@@ -41,6 +41,6 @@
     "699TopSpeed": 204,
     "6990to60": 2.7,
     "699Handling": 102,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1015189689713565756/porsche_918_spyder_concept_study.png?width=1122&height=702",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "c6"
 }

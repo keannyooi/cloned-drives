@@ -1,5 +1,6 @@
 {
-    "rq": 71,
+    "carID": "c04494",
+    "cr": 710,
     "make": ["MTM", "Audi"],
     "model": "Audi S3",
     "modelYear": 2002,
@@ -16,7 +17,7 @@
     "weight": 1430,
     "gc": "Low",
     "seatCount": 5,
-    "bodyStyle": "Hatchback",
+    "bodyStyle": "Hatch",
     "tcs": true,
     "abs": true,
     "enginePos": "Front",
@@ -24,8 +25,7 @@
     "mra": 67.18,
     "ola": 69.76,
     "description": "Super mega fast",
-    "card": "https://media.discordapp.net/attachments/1077292374608326656/1117562497357062234/A.MTMS38L.png",
-    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1117567156096340018/a3mtm.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor",
 
     "333TopSpeed": 178,

@@ -1,5 +1,6 @@
 {
-    "rq": 72,
+    "carID": "c00173",
+    "cr": 721,
     "make": "BMW",
     "model": "i8",
     "modelYear": 2014,
@@ -25,8 +26,7 @@
     "mra": 71.07,
     "ola": 89.53,
     "description": "There’s nothing like the i8. Its bewildering complexity stems from the need to build a new-age sustainable sports car. Never mind that, what makes it great is the multiple sides to its personality. It’ll snort along your favourite mountain road, then soften up and quieten down for the motorway. Under electric power it glides along discreet as a bicycle. If you’re stuck in dawdle, hybrid mode isn’t only hygienic, it’s fascinating in its own way. Plus the new open version adds another layer. It gives a deeper sense of the surroundings you’re travelling through – the surroundings all the i8’s complexity is trying so hard to protect.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/831142563599089714/i8.png",
-    "333TopSpeed": 159,
+     "333TopSpeed": 159,
     "3330to60": 3.7,
     "333Handling": 87,
     "666TopSpeed": 163,
@@ -41,6 +41,6 @@
     "699TopSpeed": 163,
     "6990to60": 3.3,
     "699Handling": 93,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003269239727194173/i8.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BMWi8(2014).png",
     "creator": "Keanny"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 94,
+    "carID": "c00815",
+    "cr": 940,
     "make": "McLaren",
     "model": "Senna",
     "modelYear": 2018,
@@ -26,8 +27,7 @@
     "mra": 121.74,
     "ola": 94.32,
     "description": "A Hyper McLaren with a legendary name.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/828561042937348116/CD_McLaren_Senna.png?width=1410&height=878",
-    "333TopSpeed": 211,
+     "333TopSpeed": 211,
     "3330to60": 2.7,
     "333Handling": 100,
     "666TopSpeed": 213,
@@ -42,6 +42,6 @@
     "699TopSpeed": 213,
     "6990to60": 2.4,
     "699Handling": 108,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1016835617977536512/senna.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Exist"
 }

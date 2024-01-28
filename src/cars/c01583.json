@@ -1,7 +1,8 @@
 {
-    "rq": 87,
-    "make": ["JUN AUTO", "Blitz", "Nissan"],
-    "model": "Blitz 300ZX Twin Turbo Land Speed Record",
+    "carID": "c01583",
+    "cr": 870,
+    "make": ["JUN AUTO & Blitz", "JUN AUTO", "Blitz", "Nissan"],
+    "model": "Fairlady Z 300ZX Twin Turbo Land Speed Record",
     "modelYear": 1991,
     "country": "JP",
     "topSpeed": 261,
@@ -23,8 +24,7 @@
     "mra": 123.81,
     "ola": 111.54,
     "description": "One year after the Japanese first step foot on the Bonneville salt flats, Junichi Tanaka challenged the flats again with another 300ZX, this time with an aerodynamic nose and an even more extensively modified engine that totaled up to 1200hp. The result was a legendary top speed record that not only caught the eyes of the West, but only Bugatti could match 25 years later - 420km/h.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1101947324458086520/BlitzJun.png",
-
+ 
     "333TopSpeed": 263,
     "3330to60": 2.5,
     "333Handling": 26,
@@ -45,6 +45,6 @@
     "9960to60": 2.2,
     "996Handling": 27,
 
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003164245170589696/jun_300zx.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/JUNAUTO%26BlitzFairladyZ300ZXTwinTurbLandSpeedRecord(1991).png",
     "creator": "Keanny"
 }

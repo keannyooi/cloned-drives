@@ -1,5 +1,6 @@
 {
-    "rq": 100,
+    "carID": "c00048",
+    "cr": 1000,
     "make": ["AMS Performance","Nissan"],
     "model": "Alpha Omega GT-R",
     "modelYear": 2015,
@@ -22,8 +23,7 @@
     "mra": 133.33,
     "ola": 82.22,
     "description": "The AWD Beast thats better than Chirons, wait hol up theres a 3200hp Version??",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1101947669737394206/OmegaGTR15.png",
-"333TopSpeed": 289,
+ "333TopSpeed": 289,
 "3330to60": 1.5,
 "333Handling": 31,
 
@@ -42,6 +42,6 @@
 "996TopSpeed": 292,
 "9960to60": 1.4,
 "996Handling": 32,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995804917656719410/AMSAlphaOmegaGTR.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

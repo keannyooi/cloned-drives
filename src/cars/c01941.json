@@ -1,5 +1,6 @@
 {
-    "rq": 39,
+    "carID": "c01941",
+    "cr": 390,
     "make": "Toyota",
     "model": "Yaris Adventure",
     "modelYear": 2020,
@@ -27,8 +28,7 @@
     "mra": 46.34,
     "ola": 74.74,
     "description": "Wow this is such a cool and unique ute! jk april fools lol.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/963493737001013358/YarisAdventure.png",
-    "333TopSpeed": 120,
+     "333TopSpeed": 120,
     "3330to60": 9.0,
     "333Handling": 77,
     "666TopSpeed": 124,
@@ -43,6 +43,6 @@
     "699TopSpeed": 124,
     "6990to60": 8.1,
     "699Handling": 83,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1020349070096744548/Toyota_Yaris_Adventure.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Andu"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 17,
+    "carID": "c01386",
+    "cr": 170,
     "make": "Volkswagen",
     "model": "Rabbit GTI",
     "modelYear": 1983,
@@ -22,8 +23,7 @@
     "mra": 40.47,
     "ola": 60.36,
     "description": "Golf GTI in an american flavor.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/931544661330387044/RabbitGTI.png",
-
+ 
     "333TopSpeed": 112,
     "3330to60": 9.4,
     "333Handling": 74,
@@ -44,6 +44,6 @@
     "9960to60": 8.4,
     "996Handling": 77,
     
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1052688521179172864/RabbitGTI.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Andu"
 }

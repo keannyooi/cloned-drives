@@ -1,5 +1,6 @@
 {
-    "rq": 108,
+    "carID": "c01696",
+    "cr": 1080,
     "make": "Mitsubishi",
     "model": "Lancer WRC04",
     "modelYear": 2004,
@@ -22,8 +23,7 @@
     "mra": 66.04,
     "ola": 80,
     "description": "Mitsubishi sat out the 2003 WRC season to develop a radical rethink of their Lancer Evolution WRC. The WRC04 had over 6000 changes done over the WRC02 with a redesigned AWD system and a radical aero package developed at Lola Cars' wind tunnel. Despite all those changes, Mitsubishi had a tough start to the 2004 WRC season and did not finish the season, opting to develop the car further.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/930193407815602286/lancerwrc04.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 3.3,
     "333Handling": 95,
     "666TopSpeed": 162,
@@ -38,6 +38,6 @@
     "699TopSpeed": 162,
     "6990to60": 3.0,
     "699Handling": 102,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997532016184664164/evoWRC04.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

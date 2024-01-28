@@ -1,5 +1,6 @@
 {
-    "rq": 7,
+    "carID": "c01011",
+    "cr": 70,
     "make": "Opel",
     "model": "Manta SR",
     "modelYear": 1971,
@@ -23,8 +24,7 @@
     "mra": 39.03,
     "ola": 62.81,
     "description": "SR was the mid-range model with luxurious features from the S and Berlinetta and sporty features from the GT/E.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/857523900233416734/F.png",
-
+ 
     "333TopSpeed": 112,
     "3330to60": 11.5,
     "333Handling": 67,
@@ -45,6 +45,6 @@
     "6990to60": 10.3,
     "699Handling": 72,
 
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1035898761853014056/manta_sr.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 52,
+    "carID": "c00945",
+    "cr": 520,
     "make": "Nissan",
     "model": "Maxima 3.5SE",
     "modelYear": 2004,
@@ -22,8 +23,7 @@
     "mra": 71.59,
     "ola": 82.54,
     "description": "It's fast and has torque steer for days, but the redesigned Maxima strays further from the '4DSC' mantra.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/828458020170104932/04_max.png",
-    "333TopSpeed": 143,
+     "333TopSpeed": 143,
     "3330to60": 6,
     "333Handling": 76,
     "666TopSpeed": 146,
@@ -38,6 +38,6 @@
     "699TopSpeed": 146,
     "6990to60": 5.4,
     "699Handling": 82,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100152773451989062/MaxiSE04.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "McNuggets"
 }

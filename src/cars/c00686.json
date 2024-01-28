@@ -1,5 +1,6 @@
 {
-    "rq": 53,
+    "carID": "c00686",
+    "cr": 530,
     "make": "Lexus",
     "model": "ES 350",
     "modelYear": 2015,
@@ -22,8 +23,7 @@
     "mra": 69.05,
     "ola": 77.77,
     "description": "The 'funny' Lexus..",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/824908879170109460/ES35015.png",
-    "333TopSpeed": 135,
+     "333TopSpeed": 135,
     "3330to60": 5.5,
     "333Handling": 71,
     "666TopSpeed": 139,
@@ -38,6 +38,6 @@
     "699TopSpeed": 139,
     "6990to60": 4.9,
     "699Handling": 77,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095026014591123497/Lexus_ES_350_2015.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Macan"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 41,
+    "carID": "c01602",
+    "cr": 410,
     "make": "Mazda",
     "model": "CX-3 Grand Touring AWD",
     "modelYear": 2016,
@@ -24,8 +25,7 @@
     "mra": 53.42,
     "ola": 65.12,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/869732134783430726/cx-3_gt.png",
-    "333TopSpeed": 123,
+     "333TopSpeed": 123,
     "3330to60": 8.2,
     "333Handling": 77,
     "666TopSpeed": 128,
@@ -40,6 +40,6 @@
     "699TopSpeed": 128,
     "6990to60": 7.3,
     "699Handling": 83,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100169222027481198/CX3.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Olimato"
 }

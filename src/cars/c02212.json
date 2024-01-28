@@ -1,5 +1,6 @@
 {
-    "rq": 92,
+    "carID": "c02212",
+    "cr": 920,
     "make": "Porsche",
     "model": "918 RSR Concept",
     "modelYear": 2011,
@@ -25,8 +26,7 @@
     "mra": 107.14,
     "ola": 93.33,
     "description": "A wing bigger than your mom. Oh and sidepipes, the two ingredients for a pure-blooded race car.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/987362303580196874/porsche_918_rsr_concept.png",
-    "333TopSpeed": 202,
+     "333TopSpeed": 202,
     "3330to60": 2.9,
     "333Handling": 99,
     "666TopSpeed": 204,
@@ -41,6 +41,6 @@
     "699TopSpeed": 204,
     "6990to60": 2.6,
     "699Handling": 107,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1015189615537303637/porsche_918_rsr_concept.png?width=1122&height=702",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "c6"
 }

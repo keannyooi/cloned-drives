@@ -1,5 +1,6 @@
 {
-    "rq": 42,
+    "carID": "c00953",
+    "cr": 417,
     "make": ["Nissan", "Nismo"],
     "model": "Sentra Nismo",
     "modelYear": 2017,
@@ -25,8 +26,7 @@
     "mra": 69.08,
     "ola": 72.72,
     "description": "The Sentra finally gets a sporty trim, but compared to its competitors it can seem inferior.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/819383759807840256/sentra_nismo.png",
-
+ 
     "333TopSpeed": 135,
     "3330to60": 6.8,
     "333Handling": 82,
@@ -47,6 +47,6 @@
     "6990to60": 6.1,
     "699Handling": 88,
 
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003653331564105758/sentra_nismo.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/NissanSentraNismo(2017).png",
     "creator": "Keanny"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 53,
+    "carID": "c00737",
+    "cr": 530,
     "make": "Lotus",
     "model": "Elise S Club Racer",
     "modelYear": 2009,
@@ -25,8 +26,7 @@
     "mra": 46.72,
     "ola": 84.21,
     "description": "Director of Lotus Car, Luke Bennett, calls the design 'Modern with a classic twist'. He is without a doubt correct.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/851820970741989436/Lotus_Elise_S_Club_Racer_2009.png",
-    "333TopSpeed": 133,
+     "333TopSpeed": 133,
     "3330to60": 5.4,
     "333Handling": 92,
     "666TopSpeed": 137,
@@ -41,6 +41,6 @@
     "699TopSpeed": 137,
     "6990to60": 4.8,
     "699Handling": 99,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100137438254465104/EliseSClubRacer09.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Tom"
 }

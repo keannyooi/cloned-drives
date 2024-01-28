@@ -1,5 +1,6 @@
 {
-    "rq": 58,
+    "carID": "c01106",
+    "cr": 580,
     "make": "Porsche",
     "model": "968 Turbo S",
     "modelYear": 1992,
@@ -22,8 +23,7 @@
     "mra": 81.67,
     "ola": 77.55,
     "description": "Only 14 were produced in total and only for sale in Europe.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1114208984442863656/968TurboS.png",
-"333TopSpeed": 180,
+ "333TopSpeed": 180,
 "3330to60": 4.7,
 "333Handling": 83,
 
@@ -42,6 +42,6 @@
 "996TopSpeed": 186,
 "9960to60": 4.2,
 "996Handling": 85,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1004784870985322606/Porsche-968-Turbo-S.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Johnny"
 }

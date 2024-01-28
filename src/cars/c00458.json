@@ -1,5 +1,6 @@
 {
-    "rq": 39,
+    "carID": "c00458",
+    "cr": 390,
     "make": "Ford",
     "model": "Focus SVT",
     "modelYear": 2002,
@@ -22,8 +23,7 @@
     "mra": 59.06,
     "ola": 72,
     "description": "Ploosh's personal ride.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/819572425549283339/SpenceSVT.png",
-    "333TopSpeed": 139,
+     "333TopSpeed": 139,
     "3330to60": 7.1,
     "333Handling": 82,
     "666TopSpeed": 143,
@@ -38,6 +38,6 @@
     "699TopSpeed": 143,
     "6990to60": 6.4,
     "699Handling": 88,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1006548194886418542/focus_svt.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

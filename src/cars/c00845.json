@@ -1,5 +1,6 @@
 {
-    "rq": 33,
+    "carID": "c00845",
+    "cr": 330,
     "make": "Mercedes-Benz",
     "model": "300 GE SWB",
     "modelYear": 1990,
@@ -22,8 +23,7 @@
     "mra": 26.56,
     "ola": 62.5,
     "description": "Powered by Mercedes' 3.0L inline six M103 E30 engine, that generated 168 hp and 140 lb ft of torque.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/833298435145859082/D33.Mercedes300GESWB.png",
-    "333TopSpeed": 108,
+     "333TopSpeed": 108,
     "3330to60": 12.2,
     "333Handling": 61,
     "666TopSpeed": 113,
@@ -38,6 +38,6 @@
     "699TopSpeed": 113,
     "6990to60": 10.9,
     "699Handling": 65,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095783660298449026/Mercedes_300_GE_SWB.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

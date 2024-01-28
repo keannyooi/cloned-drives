@@ -1,5 +1,6 @@
 {
-    "rq": 1,
+    "carID": "c01480",
+    "cr": 10,
     "make": "Zoe",
     "model": "Zipper Convertible",
     "modelYear": 1983,
@@ -22,8 +23,7 @@
     "mra": 0,
     "ola": 33.33,
     "description": "Cute.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/912480457428443167/ZoeZipperConvertibl.png",
-    "333TopSpeed": 54,
+     "333TopSpeed": 54,
     "3330to60": 99.9,
     "333Handling": 48,
     "666TopSpeed": 62,
@@ -38,6 +38,6 @@
     "699TopSpeed": 62,
     "6990to60": 51,
     "699Handling": 51,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997564562436010044/ZoeZipper.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

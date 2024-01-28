@@ -1,5 +1,6 @@
 {
-    "rq": 24,
+    "carID": "c01239",
+    "cr": 240,
     "make": "Suzuki",
     "model": "Esteem GLX Wagon",
     "modelYear": 1998,
@@ -22,8 +23,7 @@
     "mra": 48.63,
     "ola": 60.75,
     "description": "Still don't understand why the engine in the previous Esteem got downgraded 15 centuries for no reason.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/859562922246012938/Suzuki_Esteem_GLX_Wagon.png",
-    "333TopSpeed": 106,
+     "333TopSpeed": 106,
     "3330to60": 11.7,
     "333Handling": 71,
     "666TopSpeed": 111,
@@ -38,6 +38,6 @@
     "699TopSpeed": 111,
     "6990to60": 10.5,
     "699Handling": 77,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100163517056819231/EsteemGLXWag.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Based"
 }

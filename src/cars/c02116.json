@@ -1,5 +1,6 @@
 {
-    "rq": 30,
+    "carID": "c02116",
+    "cr": 295,
     "make": "BMW",
     "model": "Z4 2.0i",
     "modelYear": 2006,
@@ -22,8 +23,7 @@
     "mra": 53.22,
     "ola": 67.89,
     "description": "You can have a lot of fun with a base model car, and this is a good example.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/975650490958368808/bmw_z4_2.0i.png",
-    "333TopSpeed": 137,
+     "333TopSpeed": 137,
     "3330to60": 7.6,
     "333Handling": 82,
     "666TopSpeed": 141,
@@ -38,6 +38,6 @@
     "699TopSpeed": 141,
     "6990to60": 6.8,
     "699Handling": 88,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1001844486596464640/z4_2.0i.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BMWZ42.0i(2006).png",
     "creator": "Keanny"
 }

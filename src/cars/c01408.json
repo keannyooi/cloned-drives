@@ -1,5 +1,6 @@
 {
-    "rq": 78,
+    "carID": "c01408",
+    "cr": 780,
     "make": "Volkswagen",
     "model": "Touareg R",
     "modelYear": 2020,
@@ -25,8 +26,7 @@
     "mra": 79.37,
     "ola": 76,
     "description": "A curious mix of speed and efficiency with a big dollop of comfort.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/848497528034164806/Touareg1030.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 4.8,
     "333Handling": 81,
     "666TopSpeed": 162,
@@ -41,6 +41,6 @@
     "699TopSpeed": 162,
     "6990to60": 4.3,
     "699Handling": 87,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017008917626241105/touareg_hud.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Andu"
 }

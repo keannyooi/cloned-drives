@@ -1,5 +1,6 @@
 {
-    "rq": 27,
+    "carID": "c00547",
+    "cr": 270,
     "make": "Honda",
     "model": "Odyssey Touring",
     "modelYear": 2006,
@@ -22,8 +23,7 @@
     "mra": 59.21,
     "ola": 70.99,
     "description": "The gen that started the whole “Lower than a Viper” debacle.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/820438774575530044/ody_cd.png",
-    "333TopSpeed": 121,
+     "333TopSpeed": 121,
     "3330to60": 7.8,
     "333Handling": 70,
     "666TopSpeed": 126,
@@ -38,6 +38,6 @@
     "699TopSpeed": 126,
     "6990to60": 7,
     "699Handling": 75,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100129844639047820/OdyTour06.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "McNuggets"
 }

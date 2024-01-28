@@ -1,5 +1,6 @@
 {
-    "rq": 31,
+    "carID": "c02023",
+    "cr": 309,
     "make": "Geo",
     "model": "Storm GSi",
     "modelYear": 1993,
@@ -23,9 +24,8 @@
     "fuelType": "Petrol",
     "mra": 57.69,
     "ola": 70.69,
-    "description": "Unfortunately this Storm didn't blow away any of its competition. Cars by Andu.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/949221771465330698/StormGSi.png",
-    "333TopSpeed": 125,
+    "description": "Unfortunately this Storm didn't blow away any of its competition.",
+     "333TopSpeed": 125,
     "3330to60": 8.1,
     "333Handling": 76,
     "666TopSpeed": 130,
@@ -40,6 +40,6 @@
     "699TopSpeed": 130,
     "6990to60": 7.2,
     "699Handling": 82,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1043863824941453412/StormGSi.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/GeoStormGSi(1993).png",
     "creator": "Andu"
 }

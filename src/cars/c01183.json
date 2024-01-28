@@ -1,5 +1,6 @@
 {
-    "rq": 92,
+    "carID": "c01183",
+    "cr": 920,
     "make": "SSC",
     "model": "Ultimate Aero TT",
     "modelYear": 2009,
@@ -25,8 +26,7 @@
     "mra": 100,
     "ola": 90,
     "description": "Screaming \"AMERICA FUCK YEAH\" while nabbing a production land speed record.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1111716930756296724/Aero_TT_2009.png",
-    "333TopSpeed": 259,
+     "333TopSpeed": 259,
     "3330to60": 2.7,
     "333Handling": 95,
     "666TopSpeed": 261,
@@ -41,6 +41,6 @@
     "699TopSpeed": 261,
     "6990to60": 2.4,
     "699Handling": 102,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1000903702892269758/aero_racehud.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Preston"
 }

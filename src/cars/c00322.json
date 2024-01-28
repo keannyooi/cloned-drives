@@ -1,5 +1,6 @@
 {
-    "rq": 50,
+    "carID": "c00322",
+    "cr": 500,
     "make": "Citroen",
     "model": "Xantia Activa V6",
     "modelYear": 1994,
@@ -22,8 +23,7 @@
     "mra": 78.57,
     "ola": 85.71,
     "description": "Your best bet for dodging an oncoming moose while driving at high speeds on Swedish roads.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/824739046239895572/Xantia.png",
-    "333TopSpeed": 147,
+     "333TopSpeed": 147,
     "3330to60": 7.3,
     "333Handling": 88,
     "666TopSpeed": 150,
@@ -38,6 +38,6 @@
     "699TopSpeed": 150,
     "6990to60": 6.5,
     "699Handling": 94,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095004506749677588/Citroen_Xantia_V6.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

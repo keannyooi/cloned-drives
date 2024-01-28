@@ -1,5 +1,6 @@
 {
-    "rq": 30,
+    "carID": "c01820",
+    "cr": 300,
     "make": [
         "Prince",
         "Nissan"
@@ -27,8 +28,7 @@
     "mra": 43.85,
     "ola": 72,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/968470874292355092/skylinegts54r.png",
-    "333TopSpeed": 121,
+     "333TopSpeed": 121,
     "3330to60": 7.1,
     "333Handling": 70,
     "666TopSpeed": 126,
@@ -43,6 +43,6 @@
     "699TopSpeed": 126,
     "6990to60": 6.4,
     "699Handling": 75,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997645895560613968/skylineGTS54R.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

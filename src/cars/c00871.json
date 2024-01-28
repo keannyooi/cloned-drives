@@ -1,5 +1,6 @@
 {
-    "rq": 68,
+    "carID": "c00871",
+    "cr": 680,
     "make": [
         "Mercedes-Benz"
     ],
@@ -28,8 +29,7 @@
     "mra": 121.21,
     "ola": 105,
     "description": "In 1937, Piloted by Otto Wilhelm Rudolf Caracciola, this thing hit 269mph on a german autobahn, a record which was only broken in 2017 by a Koenigsegg Agera RS.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1101952931894394921/W125RekordLol.png",
-"333TopSpeed": 271,
+ "333TopSpeed": 271,
 "3330to60": 4.3,
 "333Handling": 26,
 
@@ -48,6 +48,6 @@
 "996TopSpeed": 275,
 "9960to60": 3.8,
 "996Handling": 27,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1101966102428389488/rekordwagen.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 43,
+    "carID": "c01428",
+    "cr": 430,
     "make": [
         "Zender",
         "Abarth",
@@ -31,8 +32,7 @@
     "mra": 61.39,
     "ola": 74.19,
     "description": "Aggressive looking bodykit, 18-inch alloys, and an additional 77 hp.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/940542056227561472/Zender500CorsaStradaleConcept-Updated.png",
-    "333TopSpeed": 148,
+     "333TopSpeed": 148,
     "3330to60": 5.9,
     "333Handling": 81,
     "666TopSpeed": 151,
@@ -47,6 +47,6 @@
     "699TopSpeed": 151,
     "6990to60": 5.3,
     "699Handling": 87,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100168772280664084/Zender.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

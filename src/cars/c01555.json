@@ -1,5 +1,6 @@
 {
-    "rq": 55,
+    "carID": "c01555",
+    "cr": 550,
     "make": "Honda",
     "model": "NSX-R",
     "modelYear": 1992,
@@ -25,8 +26,7 @@
     "mra": 69.44,
     "ola": 72,
     "description": "A rare model that is the origin of the Honda Type R series, with just under 500 cars produced.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/868939526452707349/B.HondaNSXR-1.png",
-    "333TopSpeed": 117,
+     "333TopSpeed": 117,
     "3330to60": 4.8,
     "333Handling": 87,
     "666TopSpeed": 121,
@@ -41,6 +41,6 @@
     "699TopSpeed": 121,
     "6990to60": 4.3,
     "699Handling": 93,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1020049291248681050/Honda_NSX-R_1993.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

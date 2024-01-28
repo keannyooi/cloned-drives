@@ -1,5 +1,6 @@
 {
-    "rq": 38,
+    "carID": "c01716",
+    "cr": 384,
     "make": "Nissan",
     "model": "Fairlady Z 432-R",
     "modelYear": 1970,
@@ -27,8 +28,7 @@
     "mra": 52.59,
     "ola": 84.51,
     "description": "20 rally homologation specials were made to qualify the car. One of them was sold for over a million dollars.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/869499310394445834/nissan_fairlady_z_432-r.png",
-    "333TopSpeed": 135,
+     "333TopSpeed": 135,
     "3330to60": 6.7,
     "333Handling": 79,
     "666TopSpeed": 139,
@@ -43,6 +43,6 @@
     "699TopSpeed": 139,
     "6990to60": 6,
     "699Handling": 84,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1001854870682357860/fairlady_432r.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/NissanFairladyZ432-R(1970).png",
     "creator": "Keanny"
 }

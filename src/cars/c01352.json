@@ -1,5 +1,6 @@
 {
-    "rq": 51,
+    "carID": "c01352",
+    "cr": 510,
     "make": "Volkswagen",
     "model": "Atlas 3.6 VR6 4Motion",
     "modelYear": 2018,
@@ -22,8 +23,7 @@
     "mra": 64.4,
     "ola": 70.89,
     "description": "VW's latest SUV seems poised for success, at last. Card by Andu",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/848293142884122634/Atlas4VR6.png",
-    "333TopSpeed": 120,
+     "333TopSpeed": 120,
     "3330to60": 7.5,
     "333Handling": 79,
     "666TopSpeed": 125,
@@ -38,6 +38,6 @@
     "699TopSpeed": 125,
     "6990to60": 6.7,
     "699Handling": 84,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1022164326984994916/Atlas36VR64.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Andu"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 61,
+    "carID": "c01973",
+    "cr": 610,
     "make": "Cadillac",
     "model": "CTS-V",
     "modelYear": 2004,
@@ -24,8 +25,7 @@
     "mra": 76.56,
     "ola": 84,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/945194121704902727/cts-v.png",
-    "333TopSpeed": 168,
+     "333TopSpeed": 168,
     "3330to60": 4.8,
     "333Handling": 82,
     "666TopSpeed": 171,
@@ -40,6 +40,6 @@
     "699TopSpeed": 171,
     "6990to60": 4.3,
     "699Handling": 88,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100178033081602078/CTSV.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Olimato"
 }

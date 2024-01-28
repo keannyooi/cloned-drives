@@ -1,5 +1,6 @@
 {
-    "rq": 44,
+    "carID": "c03229",
+    "cr": 440,
     "make": ["Sbarro", "Volkswagen"],
     "model": "Golf Turbo",
     "modelYear": 1983,
@@ -26,8 +27,7 @@
     "description": "You know the 80s were crazy when this exists.",
 
 
-    "card": "https://media.discordapp.net/attachments/819199720249360384/931544823406661662/SbarroTurbo.png",
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1052688584995520602/SbarroGolfTurbo.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Andu",
 
     "333TopSpeed": 165,

@@ -1,9 +1,9 @@
 {
-    "rq": 65,
+    "carID": "c04348",
+    "cr": 650,
     "make": "Audi",
     "model": "Q7 3.0 TDI e-tron quattro",
     "modelYear": 2016,
-    "country": "DE",
     "topSpeed": 146,
     "0to60": 6.1,
     "handling": 76,
@@ -24,8 +24,7 @@
     "mra": 63.54,
     "ola": 66.66,
     "description": "TDI and electricity is effciency king.",
-    "card": "https://media.discordapp.net/attachments/1077292374608326656/1120467169285779630/A.AudiQ7etron.png",
-    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1120699778355965982/q7etron.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor",
 
     "333TopSpeed": 148,

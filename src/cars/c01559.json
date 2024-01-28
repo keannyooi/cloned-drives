@@ -1,5 +1,6 @@
 {
-    "rq": 9,
+    "carID": "c01559",
+    "cr": 90,
     "make": "Honda",
     "model": "S600 Coupe",
     "modelYear": 1964,
@@ -25,8 +26,7 @@
     "mra": 20.12,
     "ola": 58.43,
     "description": "Cute car with a cute dog beside it.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/865723516052963358/image0.png",
-    "333TopSpeed": 100,
+     "333TopSpeed": 100,
     "3330to60": 16.9,
     "333Handling": 62,
     "666TopSpeed": 105,
@@ -41,6 +41,6 @@
     "996TopSpeed": 111,
     "9960to60": 15.1,
     "996Handling": 64,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1051054204535451648/Honda_S600_Coupe.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

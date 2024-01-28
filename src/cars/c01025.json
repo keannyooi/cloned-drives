@@ -1,5 +1,6 @@
 {
-    "rq": 32,
+    "carID": "c01025",
+    "cr": 320,
     "make": "Peugeot",
     "model": "205 GTI 1.9",
     "modelYear": 1986,
@@ -23,8 +24,7 @@
     "mra": 50.21,
     "ola": 72.17,
     "description": "This little pug was regarded as one of the best hot hatches ever made by driving enthusiasts.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/984468423344021564/unknown.png",
-
+ 
     "333TopSpeed": 129,
     "3330to60": 7.7,
     "333Handling": 75,
@@ -45,6 +45,6 @@
     "9960to60": 6.9,
     "996Handling": 78,
     
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1024366732854448188/Peugeot_205_GTI.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

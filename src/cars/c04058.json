@@ -1,5 +1,6 @@
 {
-    "rq": 45,
+    "carID": "c04058",
+    "cr": 450,
     "make": ["ABT","Volkswagen"],
     "model": "Golf Cup 3.0",
     "modelYear": 1994,
@@ -26,8 +27,7 @@
     "description": "Special performance version for the special loving racers.",
 
 
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1110140642392281149/ABTGolfCup30.png",
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1110143858286792765/ABTGolfCup30.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Andu",
 
     "333TopSpeed": 152,

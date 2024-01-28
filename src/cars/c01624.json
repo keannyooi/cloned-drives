@@ -1,5 +1,6 @@
 {
-    "rq": 44,
+    "carID": "c01624",
+    "cr": 440,
     "make": "Mazda",
     "model": "Savanna RX-7 Cabriolet",
     "modelYear": 1989,
@@ -22,8 +23,7 @@
     "mra": 56.76,
     "ola": 73.02,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/971796949739122708/Mazda_Savanna_RX-7_Cabrio_1989.png",
-    "333TopSpeed": 117,
+     "333TopSpeed": 117,
     "3330to60": 6.0,
     "333Handling": 81,
     "666TopSpeed": 121,
@@ -38,6 +38,6 @@
     "699TopSpeed": 121,
     "6990to60": 5.4,
     "699Handling": 87,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996620580298178571/Mazda_Savanna_RX-7_Cabrio_1989_Hud.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "DodgeDemon"
 }

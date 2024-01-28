@@ -1,5 +1,6 @@
 {
-    "rq": 72,
+    "carID": "c01310",
+    "cr": 720,
     "make": "Toyota",
     "model": "GR Supra RZ",
     "modelYear": 2019,
@@ -22,8 +23,7 @@
     "mra": 70.18,
     "ola": 85,
     "description": "Return of the legend with BMW mechanicals, not very well recieved amongst 13 year olds.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/837996099901325352/A.ToyotaGRSupraRZCD.png",
-    "333TopSpeed": 165,
+     "333TopSpeed": 165,
     "3330to60": 3.8,
     "333Handling": 94,
     "666TopSpeed": 168,
@@ -38,6 +38,6 @@
     "699TopSpeed": 168,
     "6990to60": 3.4,
     "699Handling": 101,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996114247639642162/grsuprarz.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

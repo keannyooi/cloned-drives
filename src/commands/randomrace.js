@@ -69,28 +69,28 @@ module.exports = {
                         const result = await race(message, playerCar, opponentCar, track, settings.disablegraphics);
                         if (result > 0) {
                             streak++;
-                            let reward = 0, rqBonus = 0, rqBonusBase = 0, bmBonus = 0;
+                            let reward = 0, crBonus = 0, crBonusBase = 0, bmBonus = 0;
                             if (streak <= 58) {
                                 reward = streak * 500 + 1000;
-                                rqBonusBase = 300;
+                                crBonusBase = 30;
                             }
                             else if (streak > 58 && streak <= 98) {
                                 reward = streak * 250 + 15500;
-                                rqBonusBase = 1000;
+                                crBonusBase = 100;
                             }
                             else if (streak > 98 && streak <= 198) {
                                 reward = streak * 200 + 21000;
-                                rqBonusBase = 3000;
+                                crBonusBase = 300;
                             }
                             else {
                                 reward = streak * 100 + 100000;
-                                rqBonusBase = 5000;
+                                crBonusBase = 5000;
                             }
-                            if (playerCar.rq - opponentCar.rq <= 3) {
-                                rqBonus = (opponentCar.rq - playerCar.rq + 4) * rqBonusBase;
+                            if (playerCar.cr - opponentCar.cr <= 30) {
+                                crBonus = (opponentCar.cr - playerCar.cr + 40) * crBonusBase;
                             }
 
-                            let subtotal = reward + rqBonus
+                            let subtotal = reward + crBonus
                             if (playerCar.isBM) {
                                 bmBonus = Math.round(subtotal / 4);
                             }
@@ -106,7 +106,7 @@ module.exports = {
                                     origin: "Random Races"
                                 });
                             }
-                            message.channel.send(`**You have earned ${moneyEmoji}${reward} (+${moneyEmoji}${rqBonus} low RQ bonus${bmBonus !== 0 ? ` and ${moneyEmoji}${bmBonus} black market car bonus` : ""})! Claim your reward using \`cd-rewards\`.**`);
+                            message.channel.send(`**You have earned ${moneyEmoji}${reward} (+${moneyEmoji}${crBonus} low cr bonus${bmBonus !== 0 ? ` and ${moneyEmoji}${bmBonus} black market car bonus` : ""})! Claim your reward using \`cd-rewards\`.**`);
                         }
                         else if (result < 0) {
                             streak = 0;
@@ -178,15 +178,15 @@ module.exports = {
             }
 
             if (streak > 75 && streak <= 100) {
-                criteria.rq = {
+                criteria.cr = {
                     start: 1,
-                    end: opponentCar["rq"] + Math.floor(Math.random() * 6) + 5
+                    end: opponentCar["cr"] + Math.floor(Math.random() * 6) + 50
                 };
             }
             else if (streak > 100 && streak <= 125) {
-                criteria.rq = {
+                criteria.cr = {
                     start: 1,
-                    end: opponentCar["rq"] + Math.floor(Math.random() * 6) + 5
+                    end: opponentCar["cr"] + Math.floor(Math.random() * 6) + 50
                 };
                 let reqs = ["tyreType", "driveType", "enginePos"];
                 let req = reqs[Math.floor(Math.random() * reqs.length)];
@@ -197,9 +197,9 @@ module.exports = {
                 criteria[req] = reqCar[req].toLowerCase();
             }
             else if (streak > 125 && streak <= 175) {
-                criteria.rq = {
+                criteria.cr = {
                     start: 1,
-                    end: opponentCar["rq"] + Math.floor(Math.random() * 6) + 2
+                    end: opponentCar["cr"] + Math.floor(Math.random() * 6) + 20
                 };
                 let reqs = ["modelYear", "seatCount", "bodyStyle"];
                 let req = reqs[Math.floor(Math.random() * reqs.length)];
@@ -223,9 +223,9 @@ module.exports = {
                 }
             }
             else if (streak > 175) {
-                criteria.rq = {
+                criteria.cr = {
                     start: 1,
-                    end: opponentCar["rq"] + Math.floor(Math.random() * 6) + 2
+                    end: opponentCar["cr"] + Math.floor(Math.random() * 6) + 20
                 };
                 let reqs = ["make", "modelYear", "gc", "tags"];
                 let req = reqs[Math.floor(Math.random() * reqs.length)];
@@ -286,28 +286,37 @@ module.exports = {
 
         function smartGen(car) {
             if (streak <= 5) {
-                return car["isPrize"] === true || car["rq"] > 49;
+                return car["isPrize"] === true || car["cr"] > 499;
             }
             else if (streak > 5 && streak <= 15) {
-                return car["isPrize"] === true || car["rq"] < 20 || car["rq"] > 64;
+                return car["isPrize"] === true || car["cr"] < 200 || car["cr"] > 649;
             }
             else if (streak > 15 && streak <= 30) {
-                return car["isPrize"] === true || car["rq"] < 30 || car["rq"] > 64;
+                return car["isPrize"] === true || car["cr"] < 300 || car["cr"] > 649;
             }
             else if (streak > 30 && streak <= 50) {
-                return car["isPrize"] === true || car["rq"] < 40 || car["rq"] > 79;
+                return car["isPrize"] === true || car["cr"] < 400 || car["cr"] > 849;
             }
             else if (streak > 50 && streak <= 75) {
-                return car["isPrize"] === true || car["rq"] < 50 || car["rq"] > 90;
+                return car["isPrize"] === true || car["cr"] < 549 || car["cr"] > 990;
             }
-            else if (streak > 75 && streak <= 125) {
-                return car["rq"] < 50;
+            else if (streak > 75 && streak <= 99) {
+                return car["cr"] < 549;
             }
-            else if (streak > 125 && streak <= 175) {
-                return car["rq"] < 65;
+            else if (streak = 100) {
+                return car["cr"] < 1500;
+            }
+            else if (streak > 101 && streak <= 124) {
+                return car["cr"] < 799;
+            }
+            else if (streak = 125) {
+                return car["cr"] < 1500;
+            }
+            else if (streak > 126 && streak <= 175) {
+                return car["cr"] < 849;
             }
             else {
-                return car["rq"] < 80;
+                return car["cr"] < 949;
             }
         }
     }

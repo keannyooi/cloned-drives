@@ -1,5 +1,6 @@
 {
-    "rq": 60,
+    "carID": "c02111",
+    "cr": 600,
     "make": "BMW",
     "model": "650i Coupe",
     "modelYear": 2011,
@@ -24,8 +25,7 @@
     "mra": 76.67,
     "ola": 86.96,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/947741852809977886/bmw_650i.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 4.4,
     "333Handling": 86,
     "666TopSpeed": 162,
@@ -40,6 +40,6 @@
     "699TopSpeed": 162,
     "6990to60": 3.9,
     "699Handling": 92,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095403821120880760/BMW_650i_Coupe.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Olimato"
 }

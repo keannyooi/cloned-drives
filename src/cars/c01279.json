@@ -1,5 +1,6 @@
 {
-    "rq": 82,
+    "carID": "c01279",
+    "cr": 815,
     "make": "Tesla",
     "model": "Model X P100D",
     "modelYear": 2016,
@@ -24,8 +25,7 @@
     "mra": 60.5,
     "ola": 84.12,
     "description": "Electric propulsion sure is an overpowered thing, because this heavyweight SUV can show off performance figures comparable to supercars half its weight (762hp and 967Nm). So much power and torque does the SUV have that it could tow a 130-ton Boeing 787-9 airplane - and break a Guinness World Record in the process. Of course, this kind of performance has been outclassed by several other manufacturers, but an SUV of this level of speed was practically unheard of back then.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/858545386619666472/tesla_model_x_p100d.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 2.9,
     "333Handling": 82,
     "666TopSpeed": 162,
@@ -40,6 +40,6 @@
     "699TopSpeed": 162,
     "6990to60": 2.6,
     "699Handling": 88,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1002950655234805840/model_x_p100d.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/TeslaModelXP100D(2016).png",
     "creator": "Keanny"
 }

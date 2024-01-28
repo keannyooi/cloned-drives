@@ -1,5 +1,6 @@
 {
-    "rq": 88,
+    "carID": "c00802",
+    "cr": 880,
     "make": "McLaren",
     "model": "F1 GT",
     "modelYear": 1997,
@@ -27,8 +28,7 @@
     "mra": 92.54,
     "ola": 96.78,
     "description": "When the tail is long :flushed:.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/854634322393169950/CD_McLaren_F1_GT.png",
-    "333TopSpeed": 244,
+     "333TopSpeed": 244,
     "3330to60": 2.9,
     "333Handling": 95,
     "666TopSpeed": 246,
@@ -43,6 +43,6 @@
     "699TopSpeed": 246,
     "6990to60": 2.6,
     "699Handling": 102,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017155660913319976/McLaren_F1_GT.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Exist"
 }

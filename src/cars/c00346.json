@@ -1,5 +1,6 @@
 {
-    "rq": 51,
+    "carID": "c00346",
+    "cr": 510,
     "make": "Dodge",
     "model": "Caliber SRT4",
     "modelYear": 2008,
@@ -25,8 +26,7 @@
     "mra": 75.08,
     "ola": 81.33,
     "description": "A hot hatch, or a hot SUV?.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/822006476636946452/DodgeCaliberSRT4.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 5.7,
     "333Handling": 79,
     "666TopSpeed": 162,
@@ -41,6 +41,6 @@
     "699TopSpeed": 162,
     "6990to60": 5.1,
     "699Handling": 84,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1020010459153313864/Dodge_Caliber_SRT4.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

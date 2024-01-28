@@ -1,5 +1,6 @@
 {
-    "rq": 1,
+    "carID": "c00286",
+    "cr": 10,
     "make": "Chevrolet",
     "model": "Electrovette",
     "modelYear": 1978,
@@ -26,8 +27,7 @@
     "mra": 0,
     "ola": 16.62,
     "description": "A cheap EV prototyped by General Motors that was so unfavored that it never made an appearance in any auto shows.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/840079525639487488/chevrolet_electrovette.png",
-    "333TopSpeed": 62,
+     "333TopSpeed": 62,
     "3330to60": 58.9,
     "333Handling": 50,
     "666TopSpeed": 70,
@@ -42,6 +42,6 @@
     "699TopSpeed": 70,
     "6990to60": 52.7,
     "699Handling": 53,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003164732502573186/electrovette.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Keanny"
 }

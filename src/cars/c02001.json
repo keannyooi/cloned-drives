@@ -1,5 +1,6 @@
 {
-    "rq": 91,
+    "carID": "c02001",
+    "cr": 910,
     "make": "Koenigsegg",
     "model": "CCX Edition",
     "modelYear": 2007,
@@ -27,8 +28,7 @@
     "mra": 103.57,
     "ola": 100,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/948623631989239888/ccxedition.png",
-    "333TopSpeed": 252,
+     "333TopSpeed": 252,
     "3330to60": 2.8,
     "333Handling": 94,
     "666TopSpeed": 254,
@@ -43,6 +43,6 @@
     "699TopSpeed": 254,
     "6990to60": 2.5,
     "699Handling": 101,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1018076843418603550/Koenigsegg_CCX_Edition.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Aqo"
 }

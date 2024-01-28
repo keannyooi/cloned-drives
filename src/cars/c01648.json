@@ -1,5 +1,6 @@
 {
-    "rq": 67,
+    "carID": "c01648",
+    "cr": 670,
     "make": "Mitsubishi",
     "model": "Lancer Evolution IV RS",
     "modelYear": 1996,
@@ -22,8 +23,7 @@
     "mra": 66.67,
     "ola": 73.47,
     "description": "The RS version was produced as a competition car with a limited-slip front differential and a friction type LSD at the rear. It also came with GLX seats and a choice of either 15 or 16-inch OZ lightweight racing wheels. The RS also had wind-up windows, optional air conditioning in some models, and a few extra brace bars to strengthen the chassis.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/1054405883376971868/evo4rsredo.png",
-    "333TopSpeed": 117,
+     "333TopSpeed": 117,
     "3330to60": 4.6,
     "333Handling": 86,
     "666TopSpeed": 121,
@@ -38,6 +38,6 @@
     "699TopSpeed": 121,
     "6990to60": 4.1,
     "699Handling": 92,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997640583340367954/evo4rs.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

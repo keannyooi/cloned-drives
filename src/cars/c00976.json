@@ -1,5 +1,6 @@
 {
-    "rq": 42,
+    "carID": "c00976",
+    "cr": 420,
     "make": "Opel",
     "model": "Astra OPC",
     "modelYear": 2012,
@@ -24,8 +25,7 @@
     "mra": 73.56,
     "ola": 84.38,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/845753858100822026/C.OpelAstraOPCnew.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 6.1,
     "333Handling": 83,
     "666TopSpeed": 162,
@@ -40,6 +40,6 @@
     "699TopSpeed": 162,
     "6990to60": 5.4,
     "699Handling": 89,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1036163024077209671/astra_opc.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

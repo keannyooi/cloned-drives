@@ -1,5 +1,6 @@
 {
-    "rq": 88,
+    "carID": "c01466",
+    "cr": 880,
     "make": [
         "Stapleton Auto Works",
         "Cadillac"
@@ -28,8 +29,7 @@
     "mra": 78.57,
     "ola": 90.91,
     "description": "",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1101943443271467059/StapletonAutosLSXcalade.png",
-"333TopSpeed": 167,
+ "333TopSpeed": 167,
 "3330to60": 2.1,
 "333Handling": 31,
 
@@ -48,6 +48,6 @@
 "996TopSpeed": 174,
 "9960to60": 1.9,
 "996Handling": 32,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1101965944747728957/Stapleton.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Aqo"
 }

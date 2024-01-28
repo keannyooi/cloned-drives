@@ -1,5 +1,6 @@
 {
-    "rq": 78,
+    "carID": "c02030",
+    "cr": 783,
     "make": "Lamborghini",
     "model": "Miura P400 Jota",
     "modelYear": 1970,
@@ -22,8 +23,7 @@
     "mra": 87.18,
     "ola": 76.47,
     "description": "Bob Wallace's one-off track toy Miura.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/976699366670749756/Lamborghini_Miura_Jota_1970.png",
-    "333TopSpeed": 202,
+     "333TopSpeed": 202,
     "3330to60": 3.2,
     "333Handling": 87,
     "666TopSpeed": 204,
@@ -38,6 +38,6 @@
     "699TopSpeed": 204,
     "6990to60": 2.9,
     "699Handling": 93,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996624675385917450/Lamborghini_Miura_Jota_1970_Hud.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/LamborghiniMiuraP400Jota(1970).png",
     "creator": "DodgeDemon"
 }

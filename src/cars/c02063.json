@@ -1,5 +1,6 @@
 {
-    "rq": 58,
+    "carID": "c02063",
+    "cr": 580,
     "make": "Honda",
     "model": "Accord Touring",
     "modelYear": 2013,
@@ -22,8 +23,7 @@
     "mra": 67.5,
     "ola": 92.86,
     "description": "With a 0-60 time of 5.6 seconds, schooling hot hatches in your family sedan has never been quicker (or more ridiculously hilarious).",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/943374662115667998/accord_touring.png",
-    "333TopSpeed": 129,
+     "333TopSpeed": 129,
     "3330to60": 5.3,
     "333Handling": 77,
     "666TopSpeed": 133,
@@ -38,6 +38,6 @@
     "699TopSpeed": 133,
     "6990to60": 4.8,
     "699Handling": 83,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100178077348270120/accord13.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "McNuggets"
 }

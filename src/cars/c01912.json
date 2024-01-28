@@ -1,5 +1,6 @@
 {
-    "rq": 49,
+    "carID": "c01912",
+    "cr": 490,
     "make": "Toyota",
     "model": "RAV4 Edge",
     "modelYear": 2019,
@@ -24,8 +25,7 @@
     "mra": 59.71,
     "ola": 72.29,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/869483717167554570/RAV4_Edge_19.png",
-    "333TopSpeed": 126,
+     "333TopSpeed": 126,
     "3330to60": 7.9,
     "333Handling": 76,
     "666TopSpeed": 131,
@@ -40,6 +40,6 @@
     "699TopSpeed": 131,
     "6990to60": 7.1,
     "699Handling": 82,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1018947857098739772/Toyota_RAV4_Edge.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Macan"
 }

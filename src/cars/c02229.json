@@ -1,5 +1,6 @@
 {
-    "rq": 74,
+    "carID": "c02229",
+    "cr": 740,
     "make": ["Range Rover","Land Rover"],
     "model": "Velar P400e R-Dynamic",
     "modelYear": 2020,
@@ -22,8 +23,7 @@
     "mra": 60.71,
     "ola": 74.51,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/949495061341696040/Range_Rover_Velar_P400e_R-Dynamic_20.png",
-    "333TopSpeed": 134,
+     "333TopSpeed": 134,
     "3330to60": 4.8,
     "333Handling": 79,
     "666TopSpeed": 138,
@@ -38,6 +38,6 @@
     "699TopSpeed": 138,
     "6990to60": 4.3,
     "699Handling": 84,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995931580319137822/Range_Rover_Velar_P400e_R-Dynamic_20.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Macan"
 }

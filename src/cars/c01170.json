@@ -1,5 +1,6 @@
 {
-    "rq": 45,
+    "carID": "c01170",
+    "cr": 450,
     "make": "SEAT",
     "model": "Leon Cupra R",
     "modelYear": 2001,
@@ -22,8 +23,7 @@
     "mra": 75.56,
     "ola": 73.53,
     "description": "S e a t.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/997863100088844329/SeatLeonCupraR2001.png",
-    "333TopSpeed": 154,
+     "333TopSpeed": 154,
     "3330to60": 6.5,
     "333Handling": 80,
     "666TopSpeed": 158,
@@ -38,6 +38,6 @@
     "699TopSpeed": 158,
     "6990to60": 5.8,
     "699Handling": 85,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997729961790144562/SeatLeonCupraR2001.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

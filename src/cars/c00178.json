@@ -1,5 +1,6 @@
 {
-    "rq": 70,
+    "carID": "c00178",
+    "cr": 700,
     "make": "BMW",
     "model": "M2",
     "modelYear": 2016,
@@ -22,8 +23,7 @@
     "mra": 67.69,
     "ola": 82.26,
     "description": "The small BMW sports car worth its price tag.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/826450541625868358/M22016.png",
-    "333TopSpeed": 170,
+     "333TopSpeed": 170,
     "3330to60": 4.0,
     "333Handling": 93,
     "666TopSpeed": 173,
@@ -38,6 +38,6 @@
     "699TopSpeed": 173,
     "6990to60": 3.6,
     "699Handling": 100,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997776978759385158/M2.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

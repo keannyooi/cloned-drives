@@ -1,5 +1,6 @@
 {  
-    "rq": 39,
+    "carID": "c02639",
+    "cr": 390,
     "make": "Renault",
     "model": "Kadjar 1.2 TCe Intens",
     "modelYear": 2015,
@@ -22,8 +23,7 @@
     "mra": 49.69,
     "ola": 73.82,
     "description": "A 1.2 in a mid-size crossover? Yes, and it's faster than all the diesels lmao.",
-    "card": "https://media.discordapp.net/attachments/1016353579596001344/1016354226621915187/kadjar_1.2_tce.png",
-    "333TopSpeed": 123,
+     "333TopSpeed": 123,
     "3330to60": 9.5,
     "333Handling": 74,
     "666TopSpeed": 128,
@@ -38,6 +38,6 @@
     "699TopSpeed": 128,
     "6990to60": 8.5,
     "699Handling": 80,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1019338367646843053/kadjar_1.2_tce.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Lemon"
 }

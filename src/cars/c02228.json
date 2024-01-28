@@ -1,5 +1,6 @@
 {
-    "rq": 75,
+    "carID": "c02228",
+    "cr": 750,
     "make": ["Range Rover","Land Rover"],
     "model": "Velar P400 HSE",
     "modelYear": 2020,
@@ -22,8 +23,7 @@
     "mra": 56.52,
     "ola": 73.08,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/949495000864014436/Range_Rover_Velar_P400_HSE_20.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 4.9,
     "333Handling": 80,
     "666TopSpeed": 162,
@@ -38,6 +38,6 @@
     "699TopSpeed": 162,
     "6990to60": 4.4,
     "699Handling": 85,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995931485334941726/Range_Rover_Velar_P400_HSE_20.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Macan"
 }

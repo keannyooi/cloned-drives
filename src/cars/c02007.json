@@ -1,5 +1,6 @@
 {
-    "rq": 50,
+    "carID": "c02007",
+    "cr": 500,
     "make": ["Mopar", "Ram", "Dodge"],
     "model": "Ram Runner",
     "modelYear": 2011,
@@ -23,8 +24,7 @@
     "mra": 42.86,
     "ola": 73.47,
     "description": "The Mopar Raptor.",
-    "card": "https://media.discordapp.net/attachments/1077292374608326656/1085600173310357584/Ram_Runner_2011.png",
-	"racehud": "https://media.discordapp.net/attachments/1077293403668234340/1085607059711594607/Ram_Runner_2011_Hud.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "DodgeDemon",
 
 "333TopSpeed": 105,

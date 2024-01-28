@@ -1,5 +1,6 @@
 {
-    "rq": 49,
+    "carID": "c00287",
+    "cr": 490,
     "make": "Chevrolet",
     "model": "Impala 2LTZ",
     "modelYear": 2014,
@@ -22,8 +23,7 @@
     "mra": 72.22,
     "ola": 86.15,
     "description": "Chevy's big sedan.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/825489773043908608/Impala_2LTZ_14.png",
-    "333TopSpeed": 152,
+     "333TopSpeed": 152,
     "3330to60": 6.2,
     "333Handling": 75,
     "666TopSpeed": 156,
@@ -38,6 +38,6 @@
     "699TopSpeed": 156,
     "6990to60": 5.5,
     "699Handling": 81,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017028496301772810/Chevrolet_Impala_2LTZ.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Macan"
 }

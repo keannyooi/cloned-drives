@@ -1,5 +1,6 @@
 {
-    "rq": 48,
+    "carID": "c00451",
+    "cr": 480,
     "make": "Ford",
     "model": "Focus RS",
     "modelYear": 2002,
@@ -24,8 +25,7 @@
     "mra": 66.33,
     "ola": 78.46,
     "description": "It may not have the straight-line speed, but it handles like a cartoon.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/824372655636742194/image1.jpg",
-    "333TopSpeed": 148,
+     "333TopSpeed": 148,
     "3330to60": 6.2,
     "333Handling": 84,
     "666TopSpeed": 151,
@@ -40,6 +40,6 @@
     "699TopSpeed": 151,
     "6990to60": 5.5,
     "699Handling": 90,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1006548163970207914/focus_rs.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Keanny"
 }

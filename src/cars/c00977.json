@@ -1,5 +1,6 @@
 {
-    "rq": 27,
+    "carID": "c00977",
+    "cr": 270,
     "make": "Opel",
     "model": "Astra Sports Tourer 1.7 CDTI",
     "modelYear": 2009,
@@ -22,8 +23,7 @@
     "mra": 45.08,
     "ola": 69.09,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/845753774781628426/E.OpelAstraST17CDTI.png",
-    "333TopSpeed": 119,
+     "333TopSpeed": 119,
     "3330to60": 10.5,
     "333Handling": 75,
     "666TopSpeed": 123,
@@ -38,6 +38,6 @@
     "699TopSpeed": 123,
     "6990to60": 9.4,
     "699Handling": 81,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1036163002610765865/astra_sportstourer.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

@@ -1,5 +1,6 @@
 {  
-    "rq": 21,
+    "carID": "c04321",
+    "cr": 210,
     "make": "smart",
     "model": "roadster passion",
     "modelYear": 2003,
@@ -25,8 +26,7 @@
     "ola": 52.89,
     "description": "A sprite amongst giants.",
 
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1130852182409883748/e21_smart_roadster_passion.png",
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1130852610719612970/smartroadster.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Hastur",
 
     "333TopSpeed": 112,

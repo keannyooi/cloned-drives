@@ -1,5 +1,6 @@
 {
-    "rq": 102,
+    "carID": "c01666",
+    "cr": 1020,
     "make": "Mitsubishi",
     "model": "Lancer Evolution V Gr.A WRC",
     "modelYear": 1998,
@@ -22,8 +23,7 @@
     "mra": 69.81,
     "ola": 86.49,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/930857931656806470/evo5wrc.png",
-    "333TopSpeed": 146,
+     "333TopSpeed": 146,
     "3330to60": 3.5,
     "333Handling": 92,
     "666TopSpeed": 149,
@@ -38,6 +38,6 @@
     "699TopSpeed": 149,
     "6990to60": 3.1,
     "699Handling": 99,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996021433635459092/evo5rally.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

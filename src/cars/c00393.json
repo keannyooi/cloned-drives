@@ -1,5 +1,6 @@
 {
-    "rq": 86,
+    "carID": "c00393",
+    "cr": 860,
     "make": "Ferrari",
     "model": "812 Superfast",
     "modelYear": 2019,
@@ -22,8 +23,7 @@
     "mra": 100,
     "ola": 100,
     "description": "Not as fast as a Bugatti or a Koenigsegg but it still lives up to its name.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/852895448016224356/S.Ferrari812Superfast.png",
-    "333TopSpeed": 214,
+     "333TopSpeed": 214,
     "3330to60": 2.9,
     "333Handling": 94,
     "666TopSpeed": 217,
@@ -38,6 +38,6 @@
     "699TopSpeed": 217,
     "6990to60": 2.6,
     "699Handling": 101,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995763124407898192/ferrari812.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 70,
+    "carID": "c01423",
+    "cr": 700,
     "make": "Volvo",
     "model": "XC90 T8 Twin-Engine R-Design",
     "modelYear": 2015,
@@ -22,8 +23,7 @@
     "mra": 56.99,
     "ola": 83.02,
     "description": "The legendary SUV is hard to fault across the board, this new XC90 is almost perfect. Now useful.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/819423660094914600/2015_Volvo_XC90_T8_TE_RD.png",
-    "333TopSpeed": 147,
+     "333TopSpeed": 147,
     "3330to60": 5.1,
     "333Handling": 76,
     "666TopSpeed": 150,
@@ -38,6 +38,6 @@
     "699TopSpeed": 150,
     "6990to60": 4.6,
     "699Handling": 82,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997785529359802368/XC90T8twinR.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "DodgeDemon"
 }

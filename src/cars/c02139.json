@@ -1,5 +1,6 @@
 {
-    "rq": 29,
+    "carID": "c02139",
+    "cr": 290,
     "make": "Ford",
     "model": "Focus SE 1.0T EcoBoost Sedan Auto",
     "modelYear": 2016,
@@ -22,8 +23,7 @@
     "mra": 48.4,
     "ola": 71.7,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/858836910750433340/Focus_SE_1.0T_EcoBoost_Sedan_Auto_16.png",
-    "333TopSpeed": 124,
+     "333TopSpeed": 124,
     "3330to60": 10.1,
     "333Handling": 74,
     "666TopSpeed": 129,
@@ -38,6 +38,6 @@
     "699TopSpeed": 129,
     "6990to60": 9.0,
     "699Handling": 80,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1006552621470986333/focus_auto.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Macan"
 }

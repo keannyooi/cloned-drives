@@ -1,8 +1,9 @@
 {
-    "rq": 66,
+    "carID": "c00695",
+    "cr": 658,
     "make": "Lexus",
     "model": "LC 500",
-    "modelYear": 2018,
+    "modelYear": 2017,
     "country": "JP",
     "topSpeed": 168,
     "0to60": 4.8,
@@ -25,8 +26,7 @@
     "mra": 81.36,
     "ola": 83.33,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/821473573431672913/A.LexusLC500.png",
-    "333TopSpeed": 171,
+     "333TopSpeed": 171,
     "3330to60": 4.6,
     "333Handling": 86,
     "666TopSpeed": 174,
@@ -41,6 +41,6 @@
     "699TopSpeed": 174,
     "6990to60": 4.1,
     "699Handling": 92,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017734653408460800/Lexus_LC_500.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/LexusLC500(2017).png",
     "creator": "Connor"
 }

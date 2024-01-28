@@ -1,5 +1,6 @@
 {
-    "rq": 91,
+    "carID": "c00480",
+    "cr": 910,
     "make": "Ford",
     "model": "Puma Super 1600",
     "modelYear": 2001,
@@ -25,8 +26,7 @@
     "mra": 59.74,
     "ola": 74.46,
     "description": "A competent super 1600 car with varied success.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/839055984986030080/CD_Ford_Puma_Super_1600.png?width=1410&height=878",
-    "333TopSpeed": 147,
+     "333TopSpeed": 147,
     "3330to60": 4.4,
     "333Handling": 93,
     "666TopSpeed": 150,
@@ -41,6 +41,6 @@
     "699TopSpeed": 150,
     "6990to60": 3.9,
     "699Handling": 100,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1016990632948015114/puma.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Exist"
 }

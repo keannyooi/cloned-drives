@@ -1,5 +1,6 @@
 {
-    "rq": 48,
+    "carID": "c01354",
+    "cr": 480,
     "make": "Volkswagen",
     "model": "Atlas Cross Sport SE VR6 R-Line",
     "modelYear": 2020,
@@ -22,8 +23,7 @@
     "mra": 63.56,
     "ola": 74.67,
     "description": "The Atlas, quite a useful SUV, now utterly stupid.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/847353857863581696/Atlas_Cross_Sport_SE_VR6_R-Line_20.png",
-    "333TopSpeed": 120,
+     "333TopSpeed": 120,
     "3330to60": 7.1,
     "333Handling": 76,
     "666TopSpeed": 125,
@@ -38,6 +38,6 @@
     "699TopSpeed": 125,
     "6990to60": 6.4,
     "699Handling": 82,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100168680471543888/AtlasCrossSport.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Macan"
 }

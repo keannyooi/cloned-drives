@@ -1,5 +1,6 @@
 {
-    "rq": 59,
+    "carID": "c00291",
+    "cr": 590,
     "make": "Chevrolet",
     "model": "Malibu 2.0T Premier",
     "modelYear": 2016,
@@ -22,8 +23,7 @@
     "mra": 62.11,
     "ola": 79.5,
     "description": "Malibu in a Malibu, but faster.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/824948451770368010/Malibu_2.0T_Premier_16.png",
-    "333TopSpeed": 159,
+     "333TopSpeed": 159,
     "3330to60": 5.6,
     "333Handling": 82,
     "666TopSpeed": 163,
@@ -38,6 +38,6 @@
     "699TopSpeed": 163,
     "6990to60": 5.0,
     "699Handling": 88,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1020319814037807114/Chevrolet_Malibu_Premier.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Macan"
 }

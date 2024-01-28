@@ -1,5 +1,6 @@
 {
-    "rq": 25,
+    "carID": "c05034",
+    "cr": 250,
     "make": "Porsche",
     "model": "914/6",
     "modelYear": 1969,
@@ -23,8 +24,7 @@
     "mra": 54.54,
     "ola": 71.11,
     "description": "",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1157617235578343495/914-6.png?ex=65194290&is=6517f110&hm=59a79acd23432b37d9fd2c6617fb83e14bb223bd9509950a6277971c303b4320&",
-	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1157617628366504026/914-6.png?ex=651942ee&is=6517f16e&hm=64b6f094382853b9e23101564a8c1dd7785a8a8e64fea2b7fa172d1925a79227&",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
 
 "333TopSpeed": 130,
 "3330to60": 8.5,

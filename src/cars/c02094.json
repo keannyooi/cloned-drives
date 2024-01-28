@@ -1,5 +1,6 @@
 {
-    "rq": 65,
+    "carID": "c02094",
+    "cr": 652,
     "make": ["Assist", "BMW"],
     "model": "Z4 sDrive20i M Sport",
     "modelYear": 2021,
@@ -23,8 +24,7 @@
     "mra": 69.01,
     "ola": 77.55,
     "description": "If you'd like to experience the fun of driving a Z4 M40i, but only have an sDrive20i, Assist has got you covered. A new intake and exhaust as well as custom ECU tuning gets you 100 more horsepower from the stock 197hp.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/942055254894182400/assist_z4.png",
-
+ 
     "333TopSpeed": 171,
     "3330to60": 4.7,
     "333Handling": 95,
@@ -45,6 +45,6 @@
     "6990to60": 4.2,
     "699Handling": 102,
 
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1006185357236244480/assist_z4.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AssistZ4sDrive20iMSport(2021).png",
     "creator": "Keanny"
 }

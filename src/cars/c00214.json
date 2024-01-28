@@ -1,5 +1,6 @@
 {
-    "rq": 101,
+    "carID": "c00214",
+    "cr": 1010,
     "make": "Bugatti",
     "model": "Chiron Sport",
     "modelYear": 2018,
@@ -22,8 +23,7 @@
     "mra": 120,
     "ola": 88.33,
     "description": "Sport go brrrrrr. Also the basis for the RQ system.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/952192321829621770/ChironSport.png",
-    "333TopSpeed": 263,
+     "333TopSpeed": 263,
     "3330to60": 2.3,
     "333Handling": 95,
     "666TopSpeed": 265,
@@ -38,6 +38,6 @@
     "699TopSpeed": 265,
     "6990to60": 2.0,
     "699Handling": 102,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995977276707581972/chironsport.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

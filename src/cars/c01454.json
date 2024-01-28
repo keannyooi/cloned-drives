@@ -1,5 +1,6 @@
 {
-    "rq": 81,
+    "carID": "c01454",
+    "cr": 810,
     "make": "Porsche",
     "model": "959 Vorserie",
     "modelYear": 1985,
@@ -22,8 +23,7 @@
     "mra": 77.55,
     "ola": 84.21,
     "description": "None.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1101526704444428407/Porsche959Vorserie.png",
-    "333TopSpeed": 198,
+     "333TopSpeed": 198,
     "3330to60": 3.6,
     "333Handling": 84,
     "666TopSpeed": 200,
@@ -38,6 +38,6 @@
     "699TopSpeed": 200,
     "6990to60": 3.2,
     "699Handling": 90,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997564283254743071/959Vorserie.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

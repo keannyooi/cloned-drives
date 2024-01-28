@@ -1,5 +1,6 @@
 {
-    "rq": 94,
+    "carID": "c00226",
+    "cr": 940,
     "make": "Bugatti",
     "model": "Veyron 16.4",
     "modelYear": 2005,
@@ -28,8 +29,7 @@
     "mra": 93.49,
     "ola": 91.14,
     "description": "The most well-known Bugatti, even though there are faster ones made.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/824389509910233158/veryon164thingy.png",
-    "333TopSpeed": 255,
+     "333TopSpeed": 255,
     "3330to60": 2.5,
     "333Handling": 90,
     "666TopSpeed": 257,
@@ -44,6 +44,6 @@
     "699TopSpeed": 257,
     "6990to60": 2.2,
     "699Handling": 97,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017004775293857792/veyron16.4.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

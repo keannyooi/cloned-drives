@@ -1,5 +1,6 @@
 {
-    "rq": 52,
+    "carID": "c01007",
+    "cr": 520,
     "make": ["Opel", "Lotus"],
     "model": "Lotus Omega",
     "modelYear": 1990,
@@ -22,8 +23,7 @@
     "mra": 88.92,
     "ola": 94.38,
     "description": "The ultimate Q-Car. Faster than a ZR1 of the day.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/855182876743565353/B.png",
-    "333TopSpeed": 178,
+     "333TopSpeed": 178,
     "3330to60": 4.8,
     "333Handling": 77,
     "666TopSpeed": 181,
@@ -38,6 +38,6 @@
     "699TopSpeed": 181,
     "6990to60": 4.3,
     "699Handling": 83,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1036184103478902785/lotus_omega.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

@@ -1,5 +1,6 @@
 {  
-    "rq": 79,
+    "carID": "c03029",
+    "cr": 790,
     "make": "Opel",
     "model": "Astra OPC X-Treme",
     "modelYear": 2001,
@@ -22,8 +23,7 @@
     "mra": 86.05,
     "ola": 75.68,
     "description": "Hey, it's Shannon. Your first impression was wrong. This is my game. Want it to be yours? Simple. A One-on-One between the best...Let's go!",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/1040646725368553492/Opel_Astra_X-Treme.png",
-    "333TopSpeed": 208,
+     "333TopSpeed": 208,
     "3330to60": 3.5,
     "333Handling": 93,
     "666TopSpeed": 210,
@@ -38,6 +38,6 @@
     "699TopSpeed": 210,
     "6990to60": 3.1,
     "699Handling": 100,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1040646762580422676/Opel_Astra_OPC_Extreememememe.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Based"
 }

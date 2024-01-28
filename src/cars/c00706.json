@@ -1,5 +1,6 @@
 {
-    "rq": 60,
+    "carID": "c00706",
+    "cr": 600,
     "make": "Lexus",
     "model": "LS 600h L",
     "modelYear": 2008,
@@ -22,8 +23,7 @@
     "mra": 77.78,
     "ola": 71.43,
     "description": "You know this car speaks luxury when it has ottoman reclining rear seats, walnut table trays and a shiatsu massaging system.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/824421852130050078/LemuxusLSthingy.png",
-    "333TopSpeed": 134,
+     "333TopSpeed": 134,
     "3330to60": 5.3,
     "333Handling": 75,
     "666TopSpeed": 138,
@@ -38,6 +38,6 @@
     "699TopSpeed": 138,
     "6990to60": 4.8,
     "699Handling": 81,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996241701226172467/LexusLS600hL.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

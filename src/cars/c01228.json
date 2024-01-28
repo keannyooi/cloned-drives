@@ -1,5 +1,6 @@
 {
-    "rq": 61,
+    "carID": "c01228",
+    "cr": 610,
     "make": "Subaru",
     "model": "STi Performance Concept",
     "modelYear": 2015,
@@ -22,8 +23,7 @@
     "mra": 55.49,
     "ola": 75.19,
     "description": "This is what dreams are made of.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/820726247838842900/STiConcept.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 4.8,
     "333Handling": 92,
     "666TopSpeed": 162,
@@ -38,6 +38,6 @@
     "699TopSpeed": 162,
     "6990to60": 4.3,
     "699Handling": 99,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997811551723597905/stisportconcepththing.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

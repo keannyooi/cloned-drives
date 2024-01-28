@@ -1,5 +1,6 @@
 {
-    "rq": 3,
+    "carID": "c00878",
+    "cr": 30,
     "make": "MG",
     "model": "TA Midget",
     "modelYear": 1936,
@@ -22,8 +23,7 @@
     "mra": 0,
     "ola": 51.95,
     "description": "Also known as the T-Type costing 222 pounds in 1936, thats 21,593 Dollars today.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/823589657124143144/TAMidget.png",
-    "333TopSpeed": 86,
+     "333TopSpeed": 86,
     "3330to60": 21.9,
     "333Handling": 61,
     "666TopSpeed": 92,
@@ -38,6 +38,6 @@
     "699TopSpeed": 92,
     "6990to60": 19.6,
     "699Handling": 65,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997545515346567248/mgtamig.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

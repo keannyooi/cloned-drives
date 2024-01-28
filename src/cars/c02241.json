@@ -1,5 +1,6 @@
 {
-    "rq": 50,
+    "carID": "c02241",
+    "cr": 498,
     "make": "ZAP",
     "model": "Alias Concept",
     "modelYear": 2007,
@@ -23,8 +24,7 @@
     "mra": 55.88,
     "ola": 80.7,
     "description": "Originally started as a collaboration with Lotus, the Alias shared many mechanical components with the ZAP-X SUV (based on the Lotus APX) that was being developed at the same time. Claims from ZAP at the time suggested a range of around 150 miles and a 0-60mph time of 5.7s, making it capable of beating Porsches. It was supposed to launch in 2009 with a price of USD$30,000, but a lack of funding to build a production plant in Kentucky stopped that from happening.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/976470485242118264/zap_alias_concept.png",
-
+ 
     "333TopSpeed": 159,
     "3330to60": 5.4,
     "333Handling": 84,
@@ -45,6 +45,6 @@
     "6990to60": 4.8,
     "699Handling": 90,
 
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1001844302130982922/zap_concept.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ZAP!AliasConcept(2007).png",
     "creator": "Keanny"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 61,
+    "carID": "c01814",
+    "cr": 610,
     "make": ["Prince", "Nissan"],
     "model": "R380-I",
     "modelYear": 1965,
@@ -23,8 +24,7 @@
     "mra": 66.66,
     "ola": 104.76,
     "description": "Prince took a swing at motorsports by building a car for the Japanese GP.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/969546614404415548/R380-I.png",
-
+ 
     "333TopSpeed": 162,
     "3330to60": 4,
     "333Handling": 80,
@@ -45,6 +45,6 @@
     "6990to60": 3.6,
     "699Handling": 85,
 
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997641924397776916/R380I.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

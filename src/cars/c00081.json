@@ -1,5 +1,6 @@
 {
-    "rq": 66,
+    "carID": "c00081",
+    "cr": 660,
     "make": "Aston Martin",
     "model": "DBS Volante",
     "modelYear": 2009,
@@ -22,8 +23,7 @@
     "mra": 71.72,
     "ola": 89.2,
     "description": "Volante V12.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/824028293283053579/AstonMartinDBSVolante.png",
-    "333TopSpeed": 194,
+     "333TopSpeed": 194,
     "3330to60": 4.1,
     "333Handling": 88,
     "666TopSpeed": 196,
@@ -38,6 +38,6 @@
     "699TopSpeed": 196,
     "6990to60": 3.7,
     "699Handling": 94,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1018227831588798554/Aston_Martin_DBS_Volante.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

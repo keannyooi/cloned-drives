@@ -1,5 +1,6 @@
 {
-    "rq": 14,
+    "carID": "c00479",
+    "cr": 140,
     "make": "Ford",
     "model": "Pinto 2300",
     "modelYear": 1973,
@@ -24,8 +25,7 @@
     "mra": 11,
     "ola": 60.53,
     "description": "When you casually wanna die in a fire.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/865597735892811807/F.FordPinto2300.png",
-    "333TopSpeed": 99,
+     "333TopSpeed": 99,
     "3330to60": 14.4,
     "333Handling": 65,
     "666TopSpeed": 104,
@@ -40,6 +40,6 @@
     "699TopSpeed": 104,
     "6990to60": 12.9,
     "699Handling": 70,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1023201641090011166/ford.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

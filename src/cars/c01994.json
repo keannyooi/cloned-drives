@@ -1,5 +1,6 @@
 {
-    "rq": 83,
+    "carID": "c01994",
+    "cr": 830,
     "make": "BMW",
     "model": "M6 GT3",
     "modelYear": 2015,
@@ -22,8 +23,7 @@
     "mra": 94.44,
     "ola": 88.24,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/948620483266506812/m6gt3.png",
-    "333TopSpeed": 193,
+     "333TopSpeed": 193,
     "3330to60": 3.2,
     "333Handling": 99,
     "666TopSpeed": 195,
@@ -38,6 +38,6 @@
     "699TopSpeed": 195,
     "6990to60": 2.9,
     "699Handling": 107,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997776276632916029/m6gt3.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Aqo"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 72,
+    "carID": "c00904",
+    "cr": 720,
     "make": "Mitsubishi",
     "model": "Lancer Evolution X SE",
     "modelYear": 2010,
@@ -22,8 +23,7 @@
     "mra": 66.75,
     "ola": 79.75,
     "description": "An North American only Evolution X with removed wing for more peed",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1081587723917336616/evo10SE.png",
-"333TopSpeed": 158,
+ "333TopSpeed": 158,
 "3330to60": 4.7,
 "333Handling": 91,
 
@@ -42,6 +42,6 @@
 "996TopSpeed": 165,
 "9960to60": 4.2,
 "996Handling": 94,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1081589590353260614/evo10SE.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

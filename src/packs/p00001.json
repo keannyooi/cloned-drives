@@ -1,15 +1,15 @@
 {
-    "packName": "2000s Standard Pack",
-    "description": "A pack of 5 2000s cars.",
-    "price": 75000,
+    "packName": "Normal Elite Pack",
+    "description": "The normal pack of 5 Rare or Higher cards",
+    "price": 220000,
 	"repetition": 1,
-    "pack": "https://cdn.discordapp.com/attachments/956106029635088384/1077224642965676104/2000sStnadard.png",
+    "pack": "https://file.garden/ZSrBMiDRyR84aPJp/PackArt/ElitePack.png",
     
     "filter": {
         "make": "None",
         "modelYear": {
-            "start": 2000,
-            "end": 2009
+            "start": 1000,
+            "end": 3000
         },
         "country": "None",
         "tags": "None",
@@ -21,51 +21,56 @@
 		"seatCount": "None"
     },
 
-	"packSequence": [
-		{
-			"common": 70,
-			"uncommon": 30,
-			"rare": 0,
-			"superRare": 0,
-			"ultraRare": 0,
-			"epic": 0,
-			"legendary": 0
-		},
-		{
-			"common": 0,
-			"uncommon": 70,
-			"rare": 30,
-			"superRare": 0,
-			"ultraRare": 0,
-			"epic": 0,
-			"legendary": 0
-		},
-		{
-			"common": 0,
-			"uncommon": 70,
-			"rare": 30,
-			"superRare": 0,
-			"ultraRare": 0,
-			"epic": 0,
-			"legendary": 0
-		},
-		{
+    "packSequence": [
+        {
+			"standard": 0,			
 			"common": 0,
 			"uncommon": 0,
-			"rare": 70,
-			"superRare": 30,
-			"ultraRare": 0,
-			"epic": 0,
-			"legendary": 0
-		},
-		{
-            "common": 0,
-            "uncommon": 0,
-            "rare": 0,
-            "superRare": 74,
-            "ultraRare": 20.1,
-            "epic": 5,
-            "legendary": 0.9
-		}
-	]
+			"rare": 73,
+			"epic": 20,
+			"exotic": 5.6,
+			"legendary": 1,
+			"mystic": 0.4
+        },
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 73,
+			"epic": 20,
+			"exotic": 5.6,
+			"legendary": 1,
+			"mystic": 0.4
+        },
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 73,
+			"epic": 20,
+			"exotic": 5.6,
+			"legendary": 1,
+			"mystic": 0.4
+        },
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 73,
+			"epic": 20,
+			"exotic": 5.6,
+			"legendary": 1,
+			"mystic": 0.4
+        },
+        {
+			"standard": 0,			
+			"common": 0,
+			"uncommon": 0,
+			"rare": 73,
+			"epic": 20,
+			"exotic": 5.6,
+			"legendary": 1,
+			"mystic": 0.4
+        }
+    ]
 }

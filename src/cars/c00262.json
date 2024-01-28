@@ -1,5 +1,6 @@
 {
-    "rq": 29,
+    "carID": "c00262",
+    "cr": 290,
     "make": "Chevrolet",
     "model": "Citation X-11 Hatchback",
     "modelYear": 1982,
@@ -22,8 +23,7 @@
     "mra": 41.2,
     "ola": 66.67,
     "description": "Oh the Golf is getting popular, let’s make a no quality disaster hatchback then!",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/819543362092793876/E.ChevyCitationX11Hatch.png",
-    "333TopSpeed": 113,
+     "333TopSpeed": 113,
     "3330to60": 9.1,
     "333Handling": 70,
     "666TopSpeed": 118,
@@ -38,6 +38,6 @@
     "699TopSpeed": 118,
     "6990to60": 8.2,
     "699Handling": 75,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1035865719746875432/citation.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

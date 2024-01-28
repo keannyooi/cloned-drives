@@ -1,5 +1,6 @@
 {
-    "rq": 59,
+    "carID": "c01235",
+    "cr": 590,
     "make": "Subaru",
     "model": "WRX STI Type RA",
     "modelYear": 2018,
@@ -24,8 +25,7 @@
     "mra": 68.57,
     "ola": 60.71,
     "description": "For $13k more than the base model STI, you will get an additional 5 horsepower.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/828481245473538069/image0.jpg",
-    "333TopSpeed": 163,
+     "333TopSpeed": 163,
     "3330to60": 5.3,
     "333Handling": 90,
     "666TopSpeed": 167,
@@ -40,6 +40,6 @@
     "699TopSpeed": 167,
     "6990to60": 4.8,
     "699Handling": 97,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1020327371376689183/Subaru_WRX_STI_Type_RA.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 80,
+    "carID": "c01679",
+    "cr": 800,
     "make": "Mitsubishi",
     "model": "Lancer Evolution VII Ralliart eXtreme",
     "modelYear": 2002,
@@ -22,8 +23,7 @@
     "mra": 61.76,
     "ola": 76.19,
     "description": "None.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1081570061355073617/evo7ralliartextremeredo.png",
-    "333TopSpeed": 163,
+     "333TopSpeed": 163,
     "3330to60": 4.0,
     "333Handling": 91,
     "666TopSpeed": 167,
@@ -38,6 +38,6 @@
     "699TopSpeed": 167,
     "6990to60": 3.6,
     "699Handling": 98,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997534554602602526/evo7extrem.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 57,
+    "carID": "c01409",
+    "cr": 570,
     "make": "Volkswagen",
     "model": "Touareg R50 V10 TDI",
     "modelYear": 2007,
@@ -24,8 +25,7 @@
     "mra": 58.77,
     "ola": 65.67,
     "description": "The one that towed a 747 Jet. Card by Andu",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/848484804814176286/TouaregR50.png",
-    "333TopSpeed": 151,
+     "333TopSpeed": 151,
     "3330to60": 6.4,
     "333Handling": 74,
     "666TopSpeed": 154,
@@ -40,6 +40,6 @@
     "699TopSpeed": 154,
     "6990to60": 5.7,
     "699Handling": 80,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1022159146369429615/TouaregR5000.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Andu"
 }

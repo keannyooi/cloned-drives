@@ -1,5 +1,6 @@
 {
-    "rq": 21,
+    "carID": "c01592",
+    "cr": 208,
     "make": "Mazda",
     "model": "2 1.4 MZ-CD Fun",
     "modelYear": 2008,
@@ -23,9 +24,8 @@
     "fuelType": "Diesel",
     "mra": 15.78,
     "ola": 55.36,
-    "description": "Cheap frugal fun in a hot burger bun. Card by Andu",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/866666320425517087/214MZCDF.png",
-    "333TopSpeed": 105,
+    "description": "Cheap frugal fun in a hot burger bun.",
+     "333TopSpeed": 105,
     "3330to60": 13.8,
     "333Handling": 73,
     "666TopSpeed": 110,
@@ -40,6 +40,6 @@
     "699TopSpeed": 110,
     "6990to60": 12.3,
     "699Handling": 79,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1050517256033030144/214MZCD.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Mazda21.4MZ-CDFun(2008).png",
     "creator": "Andu"
 }

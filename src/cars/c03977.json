@@ -1,5 +1,6 @@
 {  
-    "rq": 49,
+    "carID": "c03977",
+    "cr": 490,
     "make": "Ford",
     "model": "Taurus 3.5L Limited",
     "modelYear": 2013,
@@ -22,8 +23,7 @@
     "mra": 65.14,
     "ola": 61.97,
     "description": "A car that coddles its occupants with a rich and serene driving environment that makes ordinary commuting and cross-country driving very pleasant indeed. But let’s not confuse pleasant with stimulating.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1110662578314682459/ford_taurus_limited_2013.png",
-    "333TopSpeed": 118,
+     "333TopSpeed": 118,
     "3330to60": 6.7,
     "333Handling": 79,
     "666TopSpeed": 122,
@@ -38,6 +38,6 @@
     "699TopSpeed": 122,
     "6990to60": 6.0,
     "699Handling": 84,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1110662908985217175/taurus_4wd_2016.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Lemon"
 }

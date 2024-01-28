@@ -1,5 +1,6 @@
 {
-    "rq": 45,
+    "carID": "c01823",
+    "cr": 452,
     "make": [
         "Scarab",
         "Datsun",
@@ -30,8 +31,7 @@
     "mra": 72.09,
     "ola": 82.26,
     "description": "Yes, a car re-engineered by a speedboat company. While I was researching about this car, I accidentally ran into a murder case.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/869499837983371264/scarab_240z.png",
-    "333TopSpeed": 153,
+     "333TopSpeed": 153,
     "3330to60": 5.9,
     "333Handling": 76,
     "666TopSpeed": 157,
@@ -46,6 +46,6 @@
     "699TopSpeed": 157,
     "6990to60": 5.3,
     "699Handling": 82,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1001848046751059998/scarab_240z.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Scarab240ZStage2(1971).png",
     "creator": "Keanny"
 }

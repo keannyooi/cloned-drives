@@ -1,5 +1,6 @@
 {
-    "rq": 67,
+    "carID": "c01677",
+    "cr": 670,
     "make": "Mitsubishi",
     "model": "Lancer Evolution VII GSR",
     "modelYear": 2001,
@@ -22,8 +23,7 @@
     "mra": 69,
     "ola": 75.66,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/945445277538611220/evo7GSR.png",
-    "333TopSpeed": 153,
+     "333TopSpeed": 153,
     "3330to60": 4.9,
     "333Handling": 87,
     "666TopSpeed": 157,
@@ -38,6 +38,6 @@
     "699TopSpeed": 157,
     "6990to60": 4.4,
     "699Handling": 93,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996029565837250560/Evo7GSR.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

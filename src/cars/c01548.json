@@ -1,5 +1,6 @@
 {
-    "rq": 22,
+    "carID": "c01548",
+    "cr": 216,
     "make": "Honda",
     "model": "CRX 1.5",
     "modelYear": 1985,
@@ -24,9 +25,8 @@
     "fuelType": "Petrol",
     "mra": 33.22,
     "ola": 65.35,
-    "description": "Putting its foot down in the sports car category. Card by Andu.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/947535160268709918/CRX1585.png",
-    "333TopSpeed": 113,
+    "description": "Putting its foot down in the small and nimble sports car category.",
+     "333TopSpeed": 113,
     "3330to60": 9.6,
     "333Handling": 72,
     "666TopSpeed": 118,
@@ -41,6 +41,6 @@
     "699TopSpeed": 118,
     "6990to60": 8.6,
     "699Handling": 78,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1050757787933741096/CRX15.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/HondaCRX15(1985).png",
     "creator": "Andu"
 }

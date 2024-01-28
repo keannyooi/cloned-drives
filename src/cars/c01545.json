@@ -1,5 +1,6 @@
 {
-    "rq": 41,
+    "carID": "c01545",
+    "cr": 410,
     "make": "Honda",
     "model": "Civic Type-R (FN2)",
     "modelYear": 2007,
@@ -26,8 +27,7 @@
     "mra": 61.4,
     "ola": 84.85,
     "description": "Controversial design Civic, criticized for being heavier, slower and handling worse than the previous one.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/863871939842801675/HondaCivicType-RFN2.png",
-    "333TopSpeed": 150,
+     "333TopSpeed": 150,
     "3330to60": 6.3,
     "333Handling": 85,
     "666TopSpeed": 153,
@@ -42,6 +42,6 @@
     "699TopSpeed": 153,
     "6990to60": 5.6,
     "699Handling": 91,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100169025453039766/TypeRFN2.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

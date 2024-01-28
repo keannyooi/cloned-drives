@@ -1,5 +1,6 @@
 {
-    "rq": 62,
+    "carID": "c00420",
+    "cr": 620,
     "make": "Fisker",
     "model": "Tramonto V8",
     "modelYear": 2005,
@@ -22,8 +23,7 @@
     "mra": 78.57,
     "ola": 81.82,
     "description": "Yes, before Fisker made the Karma, they rebodied cars so this one is a lighter, rebodied Mercedes SL 55.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/857945761001111572/image0.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 4.2,
     "333Handling": 86,
     "666TopSpeed": 162,
@@ -38,6 +38,6 @@
     "996TopSpeed": 165,
     "9960to60": 3.7,
     "996Handling": 88,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1019998552086298684/Fisker_Tramonto_V8.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

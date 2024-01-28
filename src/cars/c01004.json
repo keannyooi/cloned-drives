@@ -1,5 +1,6 @@
 {
-    "rq": 21,
+    "carID": "c01004",
+    "cr": 210,
     "make": "Opel",
     "model": "Kadett 1.3 SR",
     "modelYear": 1979,
@@ -22,8 +23,7 @@
     "mra": 21.44,
     "ola": 65.63,
     "description": "Slightly warm version of the GTE.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/838842197268365322/E.OpelKadett13SR.png",
-    "333TopSpeed": 109,
+     "333TopSpeed": 109,
     "3330to60": 12.2,
     "333Handling": 68,
     "666TopSpeed": 114,
@@ -38,6 +38,6 @@
     "699TopSpeed": 114,
     "6990to60": 10.9,
     "699Handling": 73,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1035906371612311592/kadett_sr.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

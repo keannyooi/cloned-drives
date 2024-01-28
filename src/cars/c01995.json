@@ -1,5 +1,6 @@
 {
-    "rq": 87,
+    "carID": "c01995",
+    "cr": 870,
     "make": "BMW",
     "model": "M8 GTE",
     "modelYear": 2017,
@@ -22,8 +23,7 @@
     "mra": 104.03,
     "ola": 90.32,
     "description": "BMW's big boi GTE car that found more success in IMSA's GTLM class than the FIA WEC.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/987707730036924438/m8gte.png",
-    "333TopSpeed": 198,
+     "333TopSpeed": 198,
     "3330to60": 2.9,
     "333Handling": 99,
     "666TopSpeed": 200,
@@ -38,6 +38,6 @@
     "699TopSpeed": 200,
     "6990to60": 2.6,
     "699Handling": 107,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995980578719547452/M8GTE.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Aqo"
 }

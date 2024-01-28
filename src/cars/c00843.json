@@ -1,5 +1,6 @@
 {
-    "rq": 32,
+    "carID": "c00843",
+    "cr": 320,
     "make": "Mercedes-Benz",
     "model": "190 E 2.3-16",
     "modelYear": 1984,
@@ -22,8 +23,7 @@
     "mra": 59.68,
     "ola": 70.86,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/827183163280851034/Mercedes-Benz190E2.3-16.png",
-    "333TopSpeed": 145,
+     "333TopSpeed": 145,
     "3330to60": 7.2,
     "333Handling": 72,
     "666TopSpeed": 148,
@@ -38,6 +38,6 @@
     "699TopSpeed": 148,
     "6990to60": 6.5,
     "699Handling": 78,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095761364800249886/Mercedes_190_E_2.3-16.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

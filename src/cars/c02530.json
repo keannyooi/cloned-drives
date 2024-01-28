@@ -1,5 +1,6 @@
 {
-    "rq": 1,
+    "carID": "c02530",
+    "cr": 10,
     "make": ["Dacon", "PAG"],
     "model": "828",
     "modelYear": 1982,
@@ -23,8 +24,7 @@
     "mra": 1,
     "ola": 54.87,
     "description": "Dacon (short for Distribuidora de Automoveis, Caminhoes e Omnibus Nacionais) used to be a premium car importer and dealership based in Sao Paolo, Brazil. In 1976, Brazil banned the importing of foreign cars to incentivize domestic car production, which led Dacon to start creating cars straight from the parts bin. The 828 was 1 such car, a supermini made from an assortment of Volkswagen parts with a clear design inspiration from the then new Porsche 928.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/1011579761912467508/dacon_828.png",
-	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1011589020012269618/dacon_828.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Keanny",
 
     "333TopSpeed": 87, 

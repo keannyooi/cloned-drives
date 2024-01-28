@@ -1,5 +1,6 @@
 {
-    "rq": 52,
+    "carID": "c00429",
+    "cr": 520,
     "make": "Ford",
     "model": "Escort RS Cosworth",
     "modelYear": 1992,
@@ -23,8 +24,7 @@
     "mra": 58.59,
     "ola": 79.31,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/852751068521037824/rect7774.png",
-
+ 
     "333TopSpeed": 145,
     "3330to60": 5.5,
     "333Handling": 87,
@@ -45,6 +45,6 @@
     "6990to60": 4.9,
     "699Handling": 93,
 
-    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1094582439269105805/escort_cosworth.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Thunk"
 }

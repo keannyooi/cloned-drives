@@ -1,5 +1,6 @@
 {    
-    "rq": 43,
+    "carID": "c02295",
+    "cr": 430,
     "make": ["ABT", "Audi"],
     "model": "AS1 Sportback",
     "modelYear": 2012,
@@ -22,8 +23,7 @@
     "mra": 66.32,
     "ola": 76.19,
     "description": "Pullin' up.",
-    "card": "https://media.discordapp.net/attachments/974551848226811944/987442023420272720/abt_as1_sportback.png",
-    "333TopSpeed": 152,
+     "333TopSpeed": 152,
     "3330to60": 6.0,
     "333Handling": 82,
     "666TopSpeed": 156,
@@ -38,6 +38,6 @@
     "699TopSpeed": 156,
     "6990to60": 5.4,
     "699Handling": 88,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/999223153819648091/as1empty.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Lemon"
 }

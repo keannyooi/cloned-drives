@@ -1,5 +1,6 @@
 {
-    "rq": 92,
+    "carID": "c02102",
+    "cr": 920,
     "make": "Bentley",
     "model": "Speed 8 #7 Team Bentley",
     "modelYear": 2003,
@@ -26,8 +27,7 @@
     "mra": 84.85,
     "ola": 71.43,
     "description": "British green racing machine.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/859617360683991091/CD_Bentley_Speed_8.jpg.png",
-    "333TopSpeed": 216,
+     "333TopSpeed": 216,
     "3330to60": 2.7,
     "333Handling": 100,
     "666TopSpeed": 219,
@@ -42,6 +42,6 @@
     "699TopSpeed": 219,
     "6990to60": 2.4,
     "699Handling": 108,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095004316185661510/Bentley_Speed_8.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Exist"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 52,
+    "carID": "c02224",
+    "cr": 520,
     "make": ["Range Rover","Land Rover"],
     "model": "Velar P250 SE R-Dynamic Black Pack",
     "modelYear": 2017,
@@ -22,8 +23,7 @@
     "mra": 57.36,
     "ola": 64.86,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/949494692293247016/Range_Rover_Velar_P250_SE_R-Dynamic_Black_Pack_17.png",
-    "333TopSpeed": 139,
+     "333TopSpeed": 139,
     "3330to60": 7.1,
     "333Handling": 75,
     "666TopSpeed": 143,
@@ -38,6 +38,6 @@
     "699TopSpeed": 143,
     "6990to60": 6.4,
     "699Handling": 81,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995931255533207602/Range_Rover_Velar_P250_SE_R-Dynamic_Black_Pack_17.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Macan"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 27,
+    "carID": "c00329",
+    "cr": 270,
     "make": "Dacia",
     "model": "Sandero 1.6 MPI",
     "modelYear": 2008,
@@ -24,8 +25,7 @@
     "mra": 13.12,
     "ola": 70.9,
     "description": "GOOD NEWS!",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/837480006389202955/image0.jpg",
-    "333TopSpeed": 113,
+     "333TopSpeed": 113,
     "3330to60": 10.5,
     "333Handling": 75,
     "666TopSpeed": 118,
@@ -40,6 +40,6 @@
     "699TopSpeed": 118,
     "6990to60": 9.4,
     "699Handling": 81,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1023530923221856276/Dacia_Sandero_MPI.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

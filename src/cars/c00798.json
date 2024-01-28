@@ -1,5 +1,6 @@
 {
-    "rq": 90,
+    "carID": "c00798",
+    "cr": 900,
     "make": "McLaren",
     "model": "720S Spider",
     "modelYear": 2019,
@@ -25,8 +26,7 @@
     "mra": 103.85,
     "ola": 96.3,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/819900679086538782/CD_McLaren_720S_Spider.png",
-    "333TopSpeed": 214,
+     "333TopSpeed": 214,
     "3330to60": 2.7,
     "333Handling": 96,
     "666TopSpeed": 217,
@@ -41,6 +41,6 @@
     "699TopSpeed": 217,
     "6990to60": 2.4,
     "699Handling": 103,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1016345138458542191/McLaren_720S_Spider.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Exist"
 }

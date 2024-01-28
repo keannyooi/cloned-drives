@@ -1,5 +1,6 @@
 {
-    "rq": 52,
+    "carID": "c01917",
+    "cr": 520,
     "make": "Toyota",
     "model": "RAV4 TRD Off-Road",
     "modelYear": 2020,
@@ -24,8 +25,7 @@
     "mra": 59.57,
     "ola": 69.05,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/869483839238582282/RAV4_TRD_Off-Road_20.png",
-    "333TopSpeed": 123,
+     "333TopSpeed": 123,
     "3330to60": 8,
     "333Handling": 70,
     "666TopSpeed": 128,
@@ -40,6 +40,6 @@
     "699TopSpeed": 128,
     "6990to60": 7.1,
     "699Handling": 75,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095004053873901619/Toyota_RAV4_TRD_Off-road.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Macan"
 }

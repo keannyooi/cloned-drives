@@ -1,5 +1,6 @@
 {
-    "rq": 31,
+    "carID": "c00684",
+    "cr": 310,
     "make": "Lexus",
     "model": "CT 200h",
     "modelYear": 2011,
@@ -24,8 +25,7 @@
     "mra": 46.67,
     "ola": 72.38,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/820988029413097504/lexus_ct_200h.png",
-    "333TopSpeed": 118,
+     "333TopSpeed": 118,
     "3330to60": 10,
     "333Handling": 79,
     "666TopSpeed": 122,
@@ -40,6 +40,6 @@
     "699TopSpeed": 122,
     "6990to60": 8.9,
     "699Handling": 84,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003299755213991996/ct200h.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Keanny"
 }

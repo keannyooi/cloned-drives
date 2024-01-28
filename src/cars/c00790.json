@@ -1,5 +1,6 @@
 {
-    "rq": 86,
+    "carID": "c00790",
+    "cr": 860,
     "make": "McLaren",
     "model": "625C",
     "modelYear": 2014,
@@ -25,8 +26,7 @@
     "mra": 87.1,
     "ola": 85.71,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/854722552379080754/CD_McLaren_625C.png",
-    "333TopSpeed": 210,
+     "333TopSpeed": 210,
     "3330to60": 2.9,
     "333Handling": 95,
     "666TopSpeed": 212,
@@ -41,6 +41,6 @@
     "699TopSpeed": 212,
     "6990to60": 2.6,
     "699Handling": 102,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1018564649601470584/McLaren_625C.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Exist"
 }

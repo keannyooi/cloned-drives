@@ -1,5 +1,6 @@
 {
-    "rq": 68,
+    "carID": "c01195",
+    "cr": 680,
     "make": "Subaru",
     "model": "Impreza P1",
     "modelYear": 1999,
@@ -25,8 +26,7 @@
     "mra": 64.26,
     "ola": 66.67,
     "description": "Tuned by Prodrive, it was the only 2-door Impreza that was ever offered in Europe.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/839637307270103080/image0.jpg",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 4.6,
     "333Handling": 83,
     "666TopSpeed": 162,
@@ -41,6 +41,6 @@
     "996TopSpeed": 165,
     "9960to60": 4.1,
     "996Handling": 85,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1050779709618790430/subieP1.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

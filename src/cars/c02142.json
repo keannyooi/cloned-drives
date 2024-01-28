@@ -1,5 +1,6 @@
 {
-    "rq": 64,
+    "carID": "c02142",
+    "cr": 640,
     "make": [
         "G-Power",
         "BMW"
@@ -27,8 +28,7 @@
     "mra": 60.25,
     "ola": 76.59,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/938017760997429248/GpowerEVOIII.png",
-    "333TopSpeed": 189,
+     "333TopSpeed": 189,
     "3330to60": 4.5,
     "333Handling": 88,
     "666TopSpeed": 192,
@@ -43,6 +43,6 @@
     "699TopSpeed": 192,
     "6990to60": 4,
     "699Handling": 94,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997536861310423070/G4Evo3.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 66,
+    "carID": "c00018",
+    "cr": 660,
     "make": "Acura",
     "model": "NSX-T",
     "modelYear": 1997,
@@ -22,8 +23,7 @@
     "mra": 69.57,
     "ola": 87.5,
     "description": "An open-top NSX.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/836948277869805578/A.AcuraNSXT.png",
-    "333TopSpeed": 171,
+     "333TopSpeed": 171,
     "3330to60": 4.6,
     "333Handling": 85,
     "666TopSpeed": 174,
@@ -38,6 +38,6 @@
     "699TopSpeed": 174,
     "6990to60": 4.1,
     "699Handling": 91,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995764410138234951/acuransxt.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AcuraNSXT(1997).png",
     "creator": "Connor"
 }

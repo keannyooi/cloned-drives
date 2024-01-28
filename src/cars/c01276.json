@@ -1,5 +1,6 @@
 {
-    "rq": 55,
+    "carID": "c01276",
+    "cr": 550,
     "make": "Tesla",
     "model": "Model X 60D",
     "modelYear": 2016,
@@ -24,8 +25,7 @@
     "mra": 58.25,
     "ola": 76.67,
     "description": "One would first associate gullwing doors with the legendary Mercedes 300SL, but this electric SUV has them too! Tesla sued a company just to make sure these things work properly, so show it off to your heart's content! Sadly this entry-level variant is no longer available after only three months.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/858545253673861120/tesla_model_x_60d.png",
-    "333TopSpeed": 134,
+     "333TopSpeed": 134,
     "3330to60": 5.7,
     "333Handling": 76,
     "666TopSpeed": 138,
@@ -40,6 +40,6 @@
     "699TopSpeed": 138,
     "6990to60": 5.1,
     "699Handling": 82,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1002950775628115999/model_x_60d.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/TeslaModelX60D(2016).png",
     "creator": "Keanny"
 }

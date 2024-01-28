@@ -1,4 +1,5 @@
 {
+    "carID": "c03149",
     "make": ["Ram", "Dodge"],
     "model": "1500 TRX \"Sandblast Edition\"",
     "modelYear": 2021,
@@ -7,7 +8,6 @@
     "collection": ["Everything Else"],
     "description": "Roaring in the sandstorm.",
 	"active" : false,
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1086709484220583986/Ram_1500_TRX_Sandblast_Edition.png",
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1039237129127079996/Ram_1500_TRX_Sandblast.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Crossfire"
 }

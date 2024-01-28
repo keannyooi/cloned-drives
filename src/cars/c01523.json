@@ -1,5 +1,6 @@
 {
-    "rq": 26,
+    "carID": "c01523",
+    "cr": 261,
     "make": "Daihatsu",
     "model": "Charade Top",
     "modelYear": 2011,
@@ -23,9 +24,8 @@
     "fuelType": "Petrol",
     "mra": 38.62,
     "ola": 64.29,
-    "description": "How to make a new cheap car. Step 1: get assets of an older car. Step 2: only offer one engine. Voila here's the new Charade. Card by Andu",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/897108587552317460/CharadeTop.png",
-    "333TopSpeed": 114,
+    "description": "How to make a new cheap car. Step 1: get assets of an older car. Step 2: only offer one engine. Voila here's the new Charade.",
+     "333TopSpeed": 114,
     "3330to60": 10.6,
     "333Handling": 72,
     "666TopSpeed": 119,
@@ -40,6 +40,6 @@
     "699TopSpeed": 119,
     "6990to60": 9.5,
     "699Handling": 78,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1050924500419620945/Charade.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/DahiatsuCharadeTop(2011).png",
     "creator": "Andu"
 }

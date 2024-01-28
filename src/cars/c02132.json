@@ -1,5 +1,6 @@
 {
-    "rq": 63,
+    "carID": "c02132",
+    "cr": 630,
     "make": "Ferrari",
     "model": "360 Spider F1",
     "modelYear": 2001,
@@ -22,8 +23,7 @@
     "mra": 68.89,
     "ola": 88.89,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/965199677173669958/unknown.png",
-    "333TopSpeed": 182,
+     "333TopSpeed": 182,
     "3330to60": 4.3,
     "333Handling": 85,
     "666TopSpeed": 185,
@@ -38,6 +38,6 @@
     "699TopSpeed": 185,
     "6990to60": 3.8,
     "699Handling": 91,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017149516815814726/Ferrari_360_Spider_F1.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Based"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 40,
+    "carID": "c00251",
+    "cr": 400,
     "make": "Chevrolet",
     "model": "Bolt EV Premier",
     "modelYear": 2016,
@@ -24,8 +25,7 @@
     "mra": 20.12,
     "ola": 80.59,
     "description": "Electric Car 2.0",
-    "card": "https://media.discordapp.net/attachments/1077292374608326656/1108122078655287396/C.ChevyBoltEV.png",
-    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1108122681615851660/bolt.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor",
 
     "333TopSpeed": 98,

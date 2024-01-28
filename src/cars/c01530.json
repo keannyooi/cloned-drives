@@ -1,5 +1,6 @@
 {
-    "rq": 23,
+    "carID": "c01530",
+    "cr": 224,
     "make": [
         "Datsun",
         "Nissan"
@@ -29,8 +30,7 @@
     "mra": 44.93,
     "ola": 65.7,
     "description": "The 2nd generation Z-car that was lackluster in terms of performance.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/869498014035746816/datsun_280zx.png",
-    "333TopSpeed": 123,
+     "333TopSpeed": 123,
     "3330to60": 8.8,
     "333Handling": 70,
     "666TopSpeed": 128,
@@ -45,6 +45,6 @@
     "699TopSpeed": 128,
     "6990to60": 7.9,
     "699Handling": 75,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003165030201688074/280zx.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Datsun280ZX(1978).png",
     "creator": "Keanny"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 56,
+    "carID": "c02148",
+    "cr": 560,
     "make": "Hongqi",
     "model": "E-HS3 AWD",
     "modelYear": 2019,
@@ -22,8 +23,7 @@
     "mra": 45,
     "ola": 71.55,
     "description": "I broke Mao Zedong's house, I'm going to the gulag.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/976471150085439528/hongqi_e-hs3_awd.png",
-    "333TopSpeed": 104,
+     "333TopSpeed": 104,
     "3330to60": 5.5,
     "333Handling": 81,
     "666TopSpeed": 110,
@@ -38,6 +38,6 @@
     "699TopSpeed": 110,
     "6990to60": 4.9,
     "699Handling": 87,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1006189116955828305/hongqi_e-hs3_awd.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Keanny"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 42,
+    "carID": "c00933",
+    "cr": 420,
     "make": "Nissan",
     "model": "Altima SE-R",
     "modelYear": 2005,
@@ -22,8 +23,7 @@
     "mra": 63.54,
     "ola": 75.41,
     "description": "Back when Nissan actually used to make good cars.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/844684084936835082/ser.png",
-    "333TopSpeed": 145,
+     "333TopSpeed": 145,
     "3330to60": 5.8,
     "333Handling": 80,
     "666TopSpeed": 148,
@@ -38,6 +38,6 @@
     "699TopSpeed": 148,
     "6990to60": 5.2,
     "699Handling": 85,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100152712278069399/AltimaSER.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "McNuggets"
 }

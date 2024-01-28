@@ -1,5 +1,6 @@
 {
-    "rq": 30,
+    "carID": "c05075",
+    "cr": 300,
     "make": "Porsche",
     "model": "HLS",
     "modelYear": 1966,
@@ -23,8 +24,7 @@
     "mra": 41.25,
     "ola": 70,
     "description": "",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158083061074903141/miscHLS.png?ex=651af465&is=6519a2e5&hm=ed4cc393c058738c44f4a710ecdc126af98052ef183849d69ab7f1f5cd641141&",
-	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158083282987143188/MiscHLS.png?ex=651af49a&is=6519a31a&hm=d855c025ff3842c760cb0d387ec1f260a4bb624400a4a42825989e046ec2b219&",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
 
 "333TopSpeed": 133,
 "3330to60": 9.4,

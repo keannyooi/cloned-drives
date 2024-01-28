@@ -1,5 +1,6 @@
 {
-    "rq": 90,
+    "carID": "c01991",
+    "cr": 896,
     "make": "Aston Martin",
     "model": "Victor",
     "modelYear": 2020,
@@ -22,8 +23,7 @@
     "mra": 103.33,
     "ola": 77.42,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/966804119291560006/vicoteeeer.png",
-    "333TopSpeed": 230,
+     "333TopSpeed": 230,
     "3330to60": 2.9,
     "333Handling": 97,
     "666TopSpeed": 233,
@@ -38,6 +38,6 @@
     "699TopSpeed": 233,
     "6990to60": 2.6,
     "699Handling": 104,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995978353431560212/victor.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AstonMartinVictor(2020).png",
     "creator": "Bnuuy"
 }

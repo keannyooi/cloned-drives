@@ -1,5 +1,6 @@
 {
-    "rq": 81,
+    "carID": "c01163",
+    "cr": 810,
     "make": "Saleen",
     "model": "S7",
     "modelYear": 2000,
@@ -25,8 +26,7 @@
     "mra": 70.83,
     "ola": 91.18,
     "description": "The Slower S7.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/826093036017811486/SaleenS7.png",
-    "333TopSpeed": 203,
+     "333TopSpeed": 203,
     "3330to60": 3.2,
     "333Handling": 93,
     "666TopSpeed": 205,
@@ -41,6 +41,6 @@
     "699TopSpeed": 205,
     "6990to60": 2.9,
     "699Handling": 100,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017106510402293810/Saleen_S7.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

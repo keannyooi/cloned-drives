@@ -1,5 +1,6 @@
 {
-    "rq": 61,
+    "carID": "c02166",
+    "cr": 610,
     "make": "Lotus",
     "model": "Evora",
     "modelYear": 2010,
@@ -25,8 +26,7 @@
     "mra": 67.57,
     "ola": 72,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/857227812347707402/Lotus_Evora_2010.png",
-    "333TopSpeed": 164,
+     "333TopSpeed": 164,
     "3330to60": 4.8,
     "333Handling": 90,
     "666TopSpeed": 167,
@@ -41,6 +41,6 @@
     "699TopSpeed": 167,
     "6990to60": 4.3,
     "699Handling": 97,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100128677964042250/Lotus_Evora_2010.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Tom"
 }

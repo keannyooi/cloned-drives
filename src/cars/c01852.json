@@ -1,5 +1,6 @@
 {
-    "rq": 43,
+    "carID": "c01852",
+    "cr": 425,
     "make": [
         "TOM'S",
         "Toyota"
@@ -28,8 +29,7 @@
     "mra": 68.61,
     "ola": 68.46,
     "description": "This car wouldn't have existed if not for Morizo.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/867728680943616020/toms_century.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 5.4,
     "333Handling": 76,
     "666TopSpeed": 162,
@@ -44,6 +44,6 @@
     "699TopSpeed": 162,
     "6990to60": 4.8,
     "699Handling": 82,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1001848228704157728/toms_century.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/TOM'SCentury(2020).png",
     "creator": "Keanny"
 }

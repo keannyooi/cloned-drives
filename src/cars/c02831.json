@@ -1,5 +1,6 @@
 {
-    "rq": 35,
+    "carID": "c02831",
+    "cr": 350,
     "make": ["Ruf", "Porsche"],
     "model": "eRuf Stormster",
     "modelYear": 2009,
@@ -23,8 +24,7 @@
     "mra": 45,
     "ola": 60.07,
     "description": "The Stormster was the first time a Porsche Cayenne received an EV conversion. Sporting Ruf's classic 5-spoke 22-inch wheels and winter tyres by Hankook, it uses the same Siemens propulsion system as the eRuf Greenster. Due to its extremely heavy weight, it not only wasn't as quick as the Greenster, but became the slowest car Ruf has ever created.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/1011590373983920128/eruf_stormster.png",
-	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1011601158831362140/stormster.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/RufeRufStormster(2009).png",
     "creator": "Keanny",
 
     "333TopSpeed": 99, 

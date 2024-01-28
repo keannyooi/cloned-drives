@@ -1,5 +1,6 @@
 {
-    "rq": 92,
+    "carID": "c00275",
+    "cr": 920,
     "make": "Chevrolet",
     "model": "Corvette Stingray Z51",
     "modelYear": 2020,
@@ -22,8 +23,7 @@
     "mra": 68.18,
     "ola": 73.33,
     "description": "The first ever mid-engine Corvette built to compete vs the other mid engine supercars.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/820223074649112616/S.ChevyCorvetteStingrayZ51C8.png",
-    "333TopSpeed": 187,
+     "333TopSpeed": 187,
     "3330to60": 2.9,
     "333Handling": 95,
     "666TopSpeed": 190,
@@ -38,6 +38,6 @@
     "699TopSpeed": 190,
     "6990to60": 2.6,
     "699Handling": 102,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995766645387710554/corvettec8.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

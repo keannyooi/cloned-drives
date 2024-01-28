@@ -1,5 +1,6 @@
 {
-    "rq": 48,
+    "carID": "c00982",
+    "cr": 480,
     "make": "Opel",
     "model": "Calibra Turbo 4x4",
     "modelYear": 1992,
@@ -24,8 +25,7 @@
     "mra": 61.11,
     "ola": 63.64,
     "description": "1992 saw the addition of a turbocharged 2 litre 16v engine to the range which finally gave the Calibra the dynamics to match its looks.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/856617953528774656/C.OpelCalibraTurbo4x4.png",
-    "333TopSpeed": 155,
+     "333TopSpeed": 155,
     "3330to60": 6.3,
     "333Handling": 79,
     "666TopSpeed": 159,
@@ -40,6 +40,6 @@
     "699TopSpeed": 159,
     "6990to60": 5.6,
     "699Handling": 84,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1036169811312513075/calibra_turbo.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

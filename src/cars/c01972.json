@@ -1,5 +1,6 @@
 {
-    "rq": 51,
+    "carID": "c01972",
+    "cr": 510,
     "make": "BMW",
     "model": "Z3 M Coupe",
     "modelYear": 1998,
@@ -24,8 +25,7 @@
     "mra": 80,
     "ola": 80.77,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/945195575417139240/z3_m_coupe_cd.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 4.9,
     "333Handling": 80,
     "666TopSpeed": 162,
@@ -40,6 +40,6 @@
     "699TopSpeed": 162,
     "6990to60": 4.4,
     "699Handling": 85,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1020009886530158643/BMW_Z3_M_Coupe.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Olimato"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 41,
+    "carID": "c01890",
+    "cr": 410,
     "make": "Toyota",
     "model": "Corolla T-Sport",
     "modelYear": 2004,
@@ -22,8 +23,7 @@
     "mra": 70.59,
     "ola": 86.11,
     "description": "Incredibly boring-looking Hot Hatch powered by the engine found in the Lotus Elise.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/866800561105534997/C.ToyotaCorollaTSport.png",
-    "333TopSpeed": 144,
+     "333TopSpeed": 144,
     "3330to60": 6.8,
     "333Handling": 80,
     "666TopSpeed": 147,
@@ -38,6 +38,6 @@
     "699TopSpeed": 147,
     "6990to60": 6.1,
     "699Handling": 85,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996481556610814082/COROLLATS.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

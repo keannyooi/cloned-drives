@@ -1,5 +1,6 @@
 {
-    "rq": 87,
+    "carID": "c02135",
+    "cr": 870,
     "make": "Ferrari",
     "model": "GTC4Lusso T",
     "modelYear": 2017,
@@ -24,8 +25,7 @@
     "mra": 85,
     "ola": 82.35,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/1054437418276765717/GTC4Lusso_T.png",
-"333TopSpeed": 202, 
+ "333TopSpeed": 202, 
 "3330to60": 3.2, 
 "333Handling": 93,
 
@@ -44,6 +44,6 @@
 "996TopSpeed": 207, 
 "9960to60": 2.9, 
 "996Handling": 96,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1054437537021706260/gtc4lusso_t.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Lemon"
 }

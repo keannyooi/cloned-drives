@@ -1,5 +1,6 @@
 {
-    "rq": 33,
+    "carID": "c01596",
+    "cr": 333,
     "make": "Mazda",
     "model": "2 Skyactiv-G M-Hybrid Evolve",
     "modelYear": 2020,
@@ -24,9 +25,8 @@
     "fuelType": "Hybrid",
     "mra": 33.48,
     "ola": 71.76,
-    "description": "Small hybrid, Big Looks. Card by Andu",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/897114880107216967/2Hybrid.png",
-    "333TopSpeed": 117,
+    "description": "Small hybrid, Big Looks.",
+     "333TopSpeed": 117,
     "3330to60": 9.5,
     "333Handling": 79,
     "666TopSpeed": 121,
@@ -41,6 +41,6 @@
     "699TopSpeed": 121,
     "6990to60": 8.5,
     "699Handling": 84,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1043857539764326490/Evolve.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Mazda2Skyactiv-GM-HybridEvolve(2020).png",
     "creator": "Andu"
 }

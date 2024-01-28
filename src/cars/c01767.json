@@ -1,5 +1,6 @@
 {
-    "rq": 29,
+    "carID": "c01767",
+    "cr": 290,
     "make": "Nissan",
     "model": "Silvia Convertible (S13)",
     "modelYear": 1988,
@@ -25,8 +26,7 @@
     "mra": 53.15,
     "ola": 71.05,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/867921138595037204/NissanSilviaConvertibleS13.png",
-    "333TopSpeed": 117,
+     "333TopSpeed": 117,
     "3330to60": 7.2,
     "333Handling": 70,
     "666TopSpeed": 121,
@@ -41,6 +41,6 @@
     "699TopSpeed": 121,
     "6990to60": 6.5,
     "699Handling": 75,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100176744314576997/SilviaCon.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

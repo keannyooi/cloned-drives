@@ -1,5 +1,6 @@
 {
-    "rq": 20,
+    "carID": "c01937",
+    "cr": 200,
     "make": "Toyota",
     "model": "Yaris 1.4 tdi D-4D Sol",
     "modelYear": 2003,
@@ -24,8 +25,7 @@
     "mra": 24.52,
     "ola": 63.57,
     "description": "Small refresh bringing standard ABS and a new look to the Paris motor show. Card by Andu",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/866935255490232370/Yaris14tdiDDSol.png",
-    "333TopSpeed": 106,
+     "333TopSpeed": 106,
     "3330to60": 12.3,
     "333Handling": 67,
     "666TopSpeed": 111,
@@ -40,6 +40,6 @@
     "699TopSpeed": 111,
     "6990to60": 11,
     "699Handling": 72,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1050516233671409744/Yaris14tdiSol.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Andu"
 }

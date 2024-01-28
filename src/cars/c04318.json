@@ -1,5 +1,6 @@
 {  
-    "rq": 30,
+    "carID": "c04318",
+    "cr": 300,
     "make": ["Milltek", "Volkswagen"],
     "model": "up! GTI",
     "modelYear": 2019,
@@ -25,8 +26,7 @@
     "ola": 83.12,
     "description": "A genuine laugh out loud tiny tuned terror.",
 
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1130852276064489532/Milltek_up_GTI_RQ30_CD.png",
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1130852715690471444/MilltekUpGTI.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "void",
 
     "333TopSpeed": 129,

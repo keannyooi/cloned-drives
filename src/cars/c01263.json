@@ -1,5 +1,6 @@
 {
-    "rq": 76,
+    "carID": "c01263",
+    "cr": 762,
     "make": "Tesla",
     "model": "Model S 85D",
     "modelYear": 2014,
@@ -24,8 +25,7 @@
     "mra": 62.86,
     "ola": 82.73,
     "description": "As seen in the picture below, the Tesla Model S has astounding aerodynamics for a production vehicle. The Mercedes CLS-inspired design has a drag coefficient of just 0.24, better than anything else on the market. This was only later surpassed by the Model 3 with a drag coefficient of 0.23.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/858544745382674432/tesla_model_s_85d.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 4.2,
     "333Handling": 82,
     "666TopSpeed": 162,
@@ -40,6 +40,6 @@
     "699TopSpeed": 162,
     "6990to60": 3.7,
     "699Handling": 88,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1002951014141415534/model_s_85d.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/TeslaModelS85D(2014).png",
     "creator": "Keanny"
 }

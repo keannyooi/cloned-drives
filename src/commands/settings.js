@@ -7,7 +7,7 @@ const profileModel = require("../models/profileSchema.js");
 
 module.exports = {
     name: "settings",
-    aliases: ["options"],
+    aliases: ["options","setting"],
     usage: ["[setting id] [value] (more info is within the command itself)"],
     args: 0,
     category: "Configuration",

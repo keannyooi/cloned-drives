@@ -1,5 +1,6 @@
 {
-    "rq": 51,
+    "carID": "c00424",
+    "cr": 507,
     "make": "Ford",
     "model": "Cobra 230 M.E.",
     "modelYear": 1986,
@@ -25,8 +26,7 @@
     "mra": 60,
     "ola": 76.67,
     "description": "A Ford GN34 sports car platform demonstration.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/837305101252558888/ford_cobra_230_m.e..png",
-    "333TopSpeed": 134,
+     "333TopSpeed": 134,
     "3330to60": 5.7,
     "333Handling": 84,
     "666TopSpeed": 138,
@@ -41,6 +41,6 @@
     "699TopSpeed": 138,
     "6990to60": 5.1,
     "699Handling": 90,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003164859300581436/230me.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/FordCobra230M.E.(1986).png",
     "creator": "Keanny"
 }

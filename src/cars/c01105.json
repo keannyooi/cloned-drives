@@ -1,5 +1,6 @@
 {
-    "rq": 42,
+    "carID": "c01105",
+    "cr": 420,
     "make": "Porsche",
     "model": "968",
     "modelYear": 1991,
@@ -22,8 +23,7 @@
     "mra": 63.22,
     "ola": 73.13,
     "description": "Best remembered for the tactile Club Sport, this bridged the gap between 944 and Boxster.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1114208816976904192/968.png",
-"333TopSpeed": 160,
+ "333TopSpeed": 160,
 "3330to60": 5.8,
 "333Handling": 80,
 
@@ -42,6 +42,6 @@
 "996TopSpeed": 167,
 "9960to60": 5.2,
 "996Handling": 82,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1078659360059834440/968Normalmodel.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

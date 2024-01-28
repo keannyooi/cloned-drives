@@ -1,5 +1,6 @@
 {
-    "rq": 62,
+    "carID": "c00016",
+    "cr": 624,
     "make": "Acura",
     "model": "NSX",
     "modelYear": 1991,
@@ -22,8 +23,7 @@
     "mra": 69.33,
     "ola": 73.08,
     "description": "A Ferrari killer that never really got its supercar status.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/820738123880726548/B.AcuraNSX.png",
-    "333TopSpeed": 165,
+     "333TopSpeed": 165,
     "3330to60": 4.9,
     "333Handling": 85,
     "666TopSpeed": 168,
@@ -38,6 +38,6 @@
     "699TopSpeed": 168,
     "6990to60": 4.4,
     "699Handling": 91,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995764787260686406/ACuransx.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AcuraNSX(1991).png",
     "creator": "Connor"
 }

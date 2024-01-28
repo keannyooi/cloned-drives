@@ -1,5 +1,6 @@
 {
-    "rq": 30,
+    "carID": "c00168",
+    "cr": 302,
     "make": "BMW",
     "model": "735i",
     "modelYear": 1986,
@@ -21,9 +22,8 @@
     "fuelType": "Petrol",
     "mra": 60.9,
     "ola": 73.68,
-    "description": "Smooth classic luxury. Card by Andu",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/821696850569592843/735i.png",
-    "333TopSpeed": 144,
+    "description": "Smooth classic luxury.",
+     "333TopSpeed": 144,
     "3330to60": 9,
     "333Handling": 70,
     "666TopSpeed": 147,
@@ -38,6 +38,6 @@
     "699TopSpeed": 147,
     "6990to60": 8.1,
     "699Handling": 75,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1043868971713187860/735i.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BMW735i(1986).png",
     "creator": "Andu"
 }

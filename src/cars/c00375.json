@@ -1,5 +1,6 @@
 {
-    "rq": 10,
+    "carID": "c00375",
+    "cr": 98,
     "make": [
         "Electric Car Corporation",
         "Citroen"
@@ -27,8 +28,7 @@
     "mra": 0,
     "ola": 61.54,
     "description": "The ev'ie was a Citroen C1 that some fellows at Flitwick chucked lithium batteries into, locked the gearbox into 3rd gear and sold for £19860 from 2009 to 2011. This was a time when the only other options available included the infamously unattractive G-Whiz, so it was fairly well received by some journalists. After ECC dissolved in 2012, ev-support.co.uk took up the responsibility of keeping these cars on the road.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/865584726714089482/electric_c1_yse.png",
-    "333TopSpeed": 69,
+     "333TopSpeed": 69,
     "3330to60": 18.5,
     "333Handling": 69,
     "666TopSpeed": 77,
@@ -43,6 +43,6 @@
     "699TopSpeed": 77,
     "6990to60": 16.6,
     "699Handling": 74,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003166419933999134/evie.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ElectricCarCorporationC1ev'ie(2009).png",
     "creator": "Keanny"
 }

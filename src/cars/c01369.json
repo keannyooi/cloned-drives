@@ -1,5 +1,6 @@
 {
-    "rq": 54,
+    "carID": "c01369",
+    "cr": 540,
     "make": "Volkswagen",
     "model": "Golf GTI",
     "modelYear": 2013,
@@ -24,8 +25,7 @@
     "mra": 69.84,
     "ola": 89.95,
     "description": "Still the class benchmark and the quintessential hot hatch. Card by Andu ",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/820392570190168094/GTI7.png",
-    "333TopSpeed": 155,
+     "333TopSpeed": 155,
     "3330to60": 5.8,
     "333Handling": 87,
     "666TopSpeed": 159,
@@ -40,6 +40,6 @@
     "699TopSpeed": 159,
     "6990to60": 5.2,
     "699Handling": 93,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1022166381132787732/GTI7.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Andu"
 }

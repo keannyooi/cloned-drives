@@ -1,5 +1,6 @@
 {
-    "rq": 47,
+    "carID": "c00445",
+    "cr": 470,
     "make": "Ford",
     "model": "Fiesta ST",
     "modelYear": 2014,
@@ -25,8 +26,7 @@
     "mra": 65.38,
     "ola": 75.49,
     "description": "Focus lil brother with hot hatch performance.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/845882966995763220/image0.jpg",
-    "333TopSpeed": 147,
+     "333TopSpeed": 147,
     "3330to60": 6.5,
     "333Handling": 85,
     "666TopSpeed": 150,
@@ -41,6 +41,6 @@
     "699TopSpeed": 150,
     "6990to60": 5.8,
     "699Handling": 91,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017729566925656064/Ford_Fiesta_ST_2014.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

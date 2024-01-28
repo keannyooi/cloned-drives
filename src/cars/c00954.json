@@ -1,5 +1,6 @@
 {
-    "rq": 32,
+    "carID": "c00954",
+    "cr": 320,
     "make": "Nissan",
     "model": "Sentra SE-R Spec V",
     "modelYear": 2002,
@@ -22,8 +23,7 @@
     "mra": 63.48,
     "ola": 71.23,
     "description": "The muscle car of pocket rockets.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/824027460629823518/Nissan_Sentra_SE-R_Spec_V.png",
-    "333TopSpeed": 136,
+     "333TopSpeed": 136,
     "3330to60": 6.9,
     "333Handling": 80,
     "666TopSpeed": 140,
@@ -38,6 +38,6 @@
     "699TopSpeed": 140,
     "6990to60": 6.2,
     "699Handling": 85,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1037464841310457887/Nissan_Sentra_SE-R_Spec_V_NEW_HUD.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Fried"
 }

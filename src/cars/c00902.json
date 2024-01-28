@@ -1,5 +1,6 @@
 {
-    "rq": 87,
+    "carID": "c00902",
+    "cr": 870,
     "make": "Mitsubishi",
     "model": "Lancer Evolution X GSR FQ-400",
     "modelYear": 2009,
@@ -22,8 +23,7 @@
     "mra": 75,
     "ola": 84.21,
     "description": "The poggies Evo.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1081588000884006992/evo10fq400.png",
-"333TopSpeed": 158,
+ "333TopSpeed": 158,
 "3330to60": 3.5,
 "333Handling": 95,
 
@@ -42,6 +42,6 @@
 "996TopSpeed": 165,
 "9960to60": 3.1,
 "996Handling": 98,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997534409676820540/evoxfq400.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

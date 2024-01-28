@@ -1,5 +1,6 @@
 {
-    "rq": 36,
+    "carID": "c01698",
+    "cr": 360,
     "make": "Mitsubishi",
     "model": "Montero 3.8 V6",
     "modelYear": 2003,
@@ -24,8 +25,7 @@
     "mra": 36.92,
     "ola": 58.33,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/869106735128928316/Mitsubishi_Montero_3.8_V6_2003.png",
-    "333TopSpeed": 119,
+     "333TopSpeed": 119,
     "3330to60": 9.1,
     "333Handling": 62,
     "666TopSpeed": 123,
@@ -40,6 +40,6 @@
     "699TopSpeed": 123,
     "6990to60": 8.2,
     "699Handling": 67,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100169438193516754/Montero.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "AK1"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 4,
+    "carID": "c01556",
+    "cr": 40,
     "make": "Honda",
     "model": "S360",
     "modelYear": 1962,
@@ -26,8 +27,7 @@
     "mra": 0,
     "ola": 47.97,
     "description": "The starting foundation of a Honda sports car.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/865771785244639252/image0.png",
-    "333TopSpeed": 82,
+     "333TopSpeed": 82,
     "3330to60": 28.1,
     "333Handling": 59,
     "666TopSpeed": 89,
@@ -42,6 +42,6 @@
     "996TopSpeed": 96,
     "9960to60": 25.2,
     "996Handling": 61,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1051051607015571497/Honda_S360.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

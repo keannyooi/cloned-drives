@@ -1,5 +1,6 @@
 {
-    "rq": 1,
+    "carID": "c00874",
+    "cr": 10,
     "make": "MG",
     "model": "J2 Midget",
     "modelYear": 1933,
@@ -22,8 +23,7 @@
     "mra": 0,
     "ola": 67,
     "description": "Some old car...",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/848253643425054770/J2Midget.png",
-    "333TopSpeed": 73,
+     "333TopSpeed": 73,
     "3330to60": 30.4,
     "333Handling": 59,
     "666TopSpeed": 81,
@@ -38,6 +38,6 @@
     "699TopSpeed": 81,
     "6990to60": 27.2,
     "699Handling": 63,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997545394101821480/mgJ2mig.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 93,
+    "carID": "c01018",
+    "cr": 930,
     "make": "Pagani",
     "model": "Huayra BC",
     "modelYear": 2016,
@@ -22,8 +23,7 @@
     "mra": 100,
     "ola": 87.91,
     "description": "Modern Art.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/846703406437761024/HyeraruBC.png",
-    "333TopSpeed": 222,
+     "333TopSpeed": 222,
     "3330to60": 2.7,
     "333Handling": 98,
     "666TopSpeed": 225,
@@ -38,6 +38,6 @@
     "699TopSpeed": 225,
     "6990to60": 2.4,
     "699Handling": 105,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997546767178530857/huayryaBC.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

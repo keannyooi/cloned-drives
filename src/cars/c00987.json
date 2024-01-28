@@ -1,5 +1,6 @@
 {
-    "rq": 33,
+    "carID": "c00987",
+    "cr": 330,
     "make": "Opel",
     "model": "Corsa 1.7 CDTI",
     "modelYear": 2006,
@@ -22,8 +23,7 @@
     "mra": 52.46,
     "ola": 72.96,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/848577964344868884/D.OpelCorsaD17CDTI.png",
-    "333TopSpeed": 121,
+     "333TopSpeed": 121,
     "3330to60": 9.1,
     "333Handling": 75,
     "666TopSpeed": 126,
@@ -38,6 +38,6 @@
     "699TopSpeed": 126,
     "6990to60": 8.2,
     "699Handling": 81,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1036170525220802600/corsa_cdti.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

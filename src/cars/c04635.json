@@ -1,5 +1,6 @@
 {
-    "rq": 60,
+    "carID": "c04635",
+    "cr": 600,
     "make": "Volkswagen",
     "model": "Scirocco Bi-Motor 280/4",
     "modelYear": 1984,
@@ -26,8 +27,7 @@
     "description": "2 Engines, a wide bodykit, and the unfortunate existence of the Audi quattro.",
 
 
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1140038803696926920/SciroccoBimotor2804.png",
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1140040714902851696/BiMotor2804.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Andu",
  
     "333TopSpeed": 168,

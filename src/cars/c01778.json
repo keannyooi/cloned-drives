@@ -1,5 +1,6 @@
 {
-    "rq": 48,
+    "carID": "c01778",
+    "cr": 480,
     "make": "Nissan",
     "model": "Skyline Coupe 350GT",
     "modelYear": 2002,
@@ -25,8 +26,7 @@
     "mra": 65.91,
     "ola": 75.86,
     "description": "CD-CINFO G35 Coupe.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/962746324002951248/C.NissanSkylineCoupe350GT.png",
-    "333TopSpeed": 117,
+     "333TopSpeed": 117,
     "3330to60": 5.5,
     "333Handling": 81,
     "666TopSpeed": 121,
@@ -41,6 +41,6 @@
     "699TopSpeed": 121,
     "6990to60": 4.9,
     "699Handling": 87,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996848753401135164/SKYLINE350GTC.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

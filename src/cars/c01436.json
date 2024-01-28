@@ -1,5 +1,6 @@
 {
-    "rq": 47,
+    "carID": "c01436",
+    "cr": 470,
     "make": "BMW",
     "model": "330Ci",
     "modelYear": 2001,
@@ -22,8 +23,7 @@
     "mra": 61.17,
     "ola": 79.37,
     "description": "Your old average 2000s BMW, that packs a punch in any place possible. Never disappoints.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/865355217817698364/BMW_330Ci.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 6,
     "333Handling": 80,
     "666TopSpeed": 162,
@@ -38,6 +38,6 @@
     "699TopSpeed": 162,
     "6990to60": 5.4,
     "699Handling": 85,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100168825414107146/330ci.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Based"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 40,
+    "carID": "c00927",
+    "cr": 400,
     "make": "Nissan",
     "model": "300ZX T-Top",
     "modelYear": 1989,
@@ -25,8 +26,7 @@
     "mra": 59.66,
     "ola": 77.7,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/820755582058627082/Nissan300ZXT-Top.png",
-    "333TopSpeed": 147,
+     "333TopSpeed": 147,
     "3330to60": 6.7,
     "333Handling": 80,
     "666TopSpeed": 150,
@@ -41,6 +41,6 @@
     "699TopSpeed": 150,
     "6990to60": 6,
     "699Handling": 85,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1006527000183312454/300zx.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

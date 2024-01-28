@@ -1,18 +1,19 @@
 {
-    "rq": 62,
+    "carID": "c02817",
+    "cr": 653,
     "make": "nanoFlowcell",
-    "model": "Quantino",
-    "modelYear": 2015,
+    "model": "QUANTiNO 48VOLT",
+    "modelYear": 2017,
     "country": "CH",
     "topSpeed": 124,
     "0to60": 4.8,
-    "handling": 81,
+    "handling": 84,
     "driveType": "RWD",
     "tyreType": "Standard",
     "tags": ["Rest of The World", "Innovative", "Unique", "Eco-Friendly","Visionary Road"],
     "isPrize": false,
 	
-    "weight": 1420,
+    "weight": 1005,
     "gc": "Low",
     "seatCount": 4,
     "bodyStyle": "Hatchback",
@@ -23,27 +24,26 @@
     "mra": 60.94,
     "ola": 82.85,
     "description": "Quentin Tarantino name similarities aside, the Quantino is pretty much a RWD midget Quant supercar. Unlike its sisters, this car actually has some credit to its performance figures and viability in the form of several media test drives. The CEO of nanoFlowcell, Nunzio La Vecchia, claimed to have driven it for 14 hours and 1100km straight before stopping because of back pain. Maybe they should've invested in more comfortable seats.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/1011580975622410251/nanoflowcell_quantino.png",
-	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1011592486248005712/quantino.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/nanoFlowcellQUANTiNO48VOLT(2017).png",
     "creator": "Keanny",
 
 "333TopSpeed": 128, 
 "3330to60": 4.6, 
-"333Handling": 84,
+"333Handling": 87,
 
 "666TopSpeed": 132, 
 "6660to60": 4.3, 
-"666Handling": 86,
+"666Handling": 90,
 
 "699TopSpeed": 132, 
 "6990to60": 4.1, 
-"699Handling": 90,
+"699Handling": 93,
 
 "969TopSpeed": 137, 
 "9690to60": 4.3, 
-"969Handling": 90,
+"969Handling": 93,
 
 "996TopSpeed": 137, 
 "9960to60": 4.1, 
-"996Handling": 86
+"996Handling": 90
 }

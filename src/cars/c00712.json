@@ -1,5 +1,6 @@
 {
-    "rq": 44,
+    "carID": "c00712",
+    "cr": 440,
     "make": "Lexus",
     "model": "RX 350 F Sport AWD",
     "modelYear": 2013,
@@ -22,8 +23,7 @@
     "mra": 60.87,
     "ola": 79.66,
     "description": "Stretching the definition of sport.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/826520825788104765/RX350F.png",
-    "333TopSpeed": 113,
+     "333TopSpeed": 113,
     "3330to60": 6.7,
     "333Handling": 73,
     "666TopSpeed": 118,
@@ -38,6 +38,6 @@
     "699TopSpeed": 118,
     "6990to60": 6,
     "699Handling": 79,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100135309037015170/RX350.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Macan"
 }

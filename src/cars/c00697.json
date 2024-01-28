@@ -1,8 +1,9 @@
 {
-    "rq": 59,
+    "carID": "c00697",
+    "cr": 587,
     "make": "Lexus",
     "model": "LC 500h",
-    "modelYear": 2018,
+    "modelYear": 2017,
     "country": "JP",
     "topSpeed": 155,
     "0to60": 5.2,
@@ -24,8 +25,7 @@
     "mra": 66.67,
     "ola": 84.62,
     "description": "Haram.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/821470525003399208/B.LexusLC500h.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 4.9,
     "333Handling": 84,
     "666TopSpeed": 162,
@@ -40,6 +40,6 @@
     "699TopSpeed": 162,
     "6990to60": 4.4,
     "699Handling": 90,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1020059275483152477/Lexus_LC_500h.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/LexusLC500h(2017).png",
     "creator": "Connor"
 }

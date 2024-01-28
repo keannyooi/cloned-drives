@@ -1,5 +1,6 @@
 {
-    "rq": 49,
+    "carID": "c01478",
+    "cr": 490,
     "make": "Pontiac",
     "model": "GTO",
     "modelYear": 2004,
@@ -22,8 +23,7 @@
     "mra": 66.52,
     "ola": 78.3,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/840410000488136735/image0.jpg",
-    "333TopSpeed": 163,
+     "333TopSpeed": 163,
     "3330to60": 5.0,
     "333Handling": 79,
     "666TopSpeed": 167,
@@ -38,6 +38,6 @@
     "699TopSpeed": 167,
     "6990to60": 4.5,
     "699Handling": 84,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017504661315534980/Pontiac_GTO_2004.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 92,
+    "carID": "c01584",
+    "cr": 921,
     "make": [
         "JUN AUTO",
         "Nissan"
@@ -29,8 +30,7 @@
     "mra": 96.67,
     "ola": 89.66,
     "description": "Possibly the only 350Z with a custom AWD system based on a Skyline R32 the world will ever see.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/869498436536393758/jun_auto_hyper_lemon_350z-r_awd.png",
-    "333TopSpeed": 223,
+     "333TopSpeed": 223,
     "3330to60": 2.8,
     "333Handling": 94,
     "666TopSpeed": 226,
@@ -45,6 +45,6 @@
     "699TopSpeed": 226,
     "6990to60": 2.5,
     "699Handling": 101,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003164202439024690/jun_hyperlemon.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/JUNAUTOHyperLemon350Z-RAWD(2007).png",
     "creator": "Keanny"
 }

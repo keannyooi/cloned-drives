@@ -1,5 +1,6 @@
 {
-    "rq": 64,
+    "carID": "c00328",
+    "cr": 642,
     "make": [
         "Comptech",
         "Acura"
@@ -28,8 +29,7 @@
     "mra": 75.81,
     "ola": 89.36,
     "description": "An Acura NSX-T that is a widebodied, supercharged and elevated in terms of spirit.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/848060086382886942/comptech_nsx-t.png",
-    "333TopSpeed": 194,
+     "333TopSpeed": 194,
     "3330to60": 4.5,
     "333Handling": 89,
     "666TopSpeed": 196,
@@ -44,6 +44,6 @@
     "699TopSpeed": 196,
     "6990to60": 4,
     "699Handling": 95,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003163834518880266/comptech_nsx-t.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ComptechNSX-T(1999).png",
     "creator": "Keanny"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 85,
+    "carID": "c00183",
+    "cr": 850,
     "make": "BMW",
     "model": "M3 GT2",
     "modelYear": 2009,
@@ -22,8 +23,7 @@
     "mra": 88.57,
     "ola": 66.5,
     "description": "WOAH ok slow down there.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/821039006044782602/M3GT2.png",
-    "333TopSpeed": 165,
+     "333TopSpeed": 165,
     "3330to60": 2.9,
     "333Handling": 99,
     "666TopSpeed": 168,
@@ -38,6 +38,6 @@
     "699TopSpeed": 168,
     "6990to60": 2.6,
     "699Handling": 107,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997563067003043940/M3GT2.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 80,
+    "carID": "c00220",
+    "cr": 800,
     "make": "Bugatti",
     "model": "EB110 GT",
     "modelYear": 1991,
@@ -27,8 +28,7 @@
     "mra": 72.92,
     "ola": 96.97,
     "description": "The low-fat Italian Bugatti.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/854736814518173736/image0.png",
-    "333TopSpeed": 212,
+     "333TopSpeed": 212,
     "3330to60": 3.3,
     "333Handling": 89,
     "666TopSpeed": 215,
@@ -43,6 +43,6 @@
     "996TopSpeed": 217,
     "9960to60": 3.0,
     "996Handling": 92,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017344446536359936/Bugatti_EB110_GT.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

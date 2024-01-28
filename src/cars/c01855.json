@@ -1,5 +1,6 @@
 {
-    "rq": 86,
+    "carID": "c01855",
+    "cr": 860,
     "make": ["Top Secret","Toyota"],
     "model": "0-300 Supra",
     "modelYear": 2001,
@@ -22,8 +23,7 @@
     "mra": 124,
     "ola": 103.23,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/867875049344466965/topsecretsupra.png",
-    "333TopSpeed": 218,
+     "333TopSpeed": 218,
     "3330to60": 2.9,
     "333Handling": 92,
     "666TopSpeed": 221,
@@ -38,6 +38,6 @@
     "699TopSpeed": 221,
     "6990to60": 2.6,
     "699Handling": 99,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997533343765762098/topsecret300supporaa.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

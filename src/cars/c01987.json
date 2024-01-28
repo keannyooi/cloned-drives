@@ -1,5 +1,6 @@
 {
-    "rq": 88,
+    "carID": "c01987",
+    "cr": 880,
     "make": [
         "9ff",
         "Porsche"
@@ -28,8 +29,7 @@
     "mra": 126.92,
     "ola": 90.91,
     "description": ":fastcate:",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/828951752740831264/unknown.png",
-    "333TopSpeed": 243,
+     "333TopSpeed": 243,
     "3330to60": 3.1,
     "333Handling": 94,
     "666TopSpeed": 245,
@@ -44,6 +44,6 @@
     "699TopSpeed": 245,
     "6990to60": 2.8,
     "699Handling": 101,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1016999835217440799/v400.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

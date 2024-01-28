@@ -1,5 +1,6 @@
 {
-    "rq": 62,
+    "carID": "c01256",
+    "cr": 617,
     "make": "Tesla",
     "model": "Model 3 Standard Range Plus",
     "modelYear": 2019,
@@ -24,8 +25,7 @@
     "mra": 75.45,
     "ola": 89.22,
     "description": "Currently the cheapest Tesla available, the Standard Range Plus adds more range and options like making your seats white. This trim level has since been retired in place for an improved Standard Range in 2021.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/858544464809164800/tesla_model_3_standard_range_plus.png",
-    "333TopSpeed": 144,
+     "333TopSpeed": 144,
     "3330to60": 5,
     "333Handling": 79,
     "666TopSpeed": 147,
@@ -40,6 +40,6 @@
     "699TopSpeed": 147,
     "6990to60": 4.5,
     "699Handling": 84,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1002951188997734571/model_3_sr.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/TeslaModel3StandardRangePlus(2019).png",
     "creator": "Keanny"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 99,
+    "carID": "c01646",
+    "cr": 990,
     "make": "Mitsubishi",
     "model": "Lancer Evolution IV Gr.A WRC",
     "modelYear": 1997,
@@ -22,8 +23,7 @@
     "mra": 67.24,
     "ola": 87.18,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/930857643705270362/evo4wrc.png",
-    "333TopSpeed": 144,
+     "333TopSpeed": 144,
     "3330to60": 3.7,
     "333Handling": 91,
     "666TopSpeed": 147,
@@ -38,6 +38,6 @@
     "699TopSpeed": 147,
     "6990to60": 3.3,
     "699Handling": 98,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995992946044313670/evo4grawrc.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

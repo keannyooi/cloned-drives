@@ -1,5 +1,6 @@
 {
-    "rq": 82,
+    "carID": "c00363",
+    "cr": 820,
     "make": "Dodge",
     "model": "Durango SRT Hellcat",
     "modelYear": 2021,
@@ -22,8 +23,7 @@
     "mra": 67.92,
     "ola": 71.79,
     "description": "You will never be late to soccer practice again.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/958780930540044348/dodgedur.png",
-    "333TopSpeed": 183,
+     "333TopSpeed": 183,
     "3330to60": 3.4,
     "333Handling": 81,
     "666TopSpeed": 186,
@@ -38,6 +38,6 @@
     "699TopSpeed": 186,
     "6990to60": 3.1,
     "699Handling": 87,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995993556252643377/durangosrthellcate.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

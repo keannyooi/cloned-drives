@@ -1,5 +1,6 @@
 {
-    "rq": 46,
+    "carID": "c03225",
+    "cr": 460,
     "make": ["Nothelle","Volkswagen"],
     "model": "Golf Group 2",
     "modelYear": 1975,
@@ -26,8 +27,7 @@
     "description": "The world first racing Golf with known racing history from new.",
 
 
-    "card": "https://media.discordapp.net/attachments/819199720249360384/931545049987170334/NothelleGroup2.png",
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1052688311610789970/NothelleGolfGr2.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Andu",
 
     "333TopSpeed": 135,

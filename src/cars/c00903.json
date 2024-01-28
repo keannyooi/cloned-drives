@@ -1,5 +1,6 @@
 {
-    "rq": 70,
+    "carID": "c00903",
+    "cr": 700,
     "make": "Mitsubishi",
     "model": "Lancer Evolution X MR",
     "modelYear": 2008,
@@ -22,8 +23,7 @@
     "mra": 58.82,
     "ola": 76,
     "description": "MR more like NO.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1081587642522669157/evo10MR.png",
-    "333TopSpeed": 160,
+     "333TopSpeed": 160,
     "3330to60": 4.8,
     "333Handling": 89,
     "666TopSpeed": 164,
@@ -38,6 +38,6 @@
     "699TopSpeed": 164,
     "6990to60": 4.3,
     "699Handling": 95,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1081589566953234512/evo10mr.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

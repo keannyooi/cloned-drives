@@ -1,5 +1,6 @@
 {
-    "rq": 72,
+    "carID": "c01663",
+    "cr": 720,
     "make": "Mitsubishi",
     "model": "Lancer Evolution IX Wagon MR",
     "modelYear": 2005,
@@ -22,8 +23,7 @@
     "mra": 60,
     "ola": 76.6,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/930796655433895966/evo9wagonmr.png",
-    "333TopSpeed": 153,
+     "333TopSpeed": 153,
     "3330to60": 4.5,
     "333Handling": 89,
     "666TopSpeed": 157,
@@ -38,6 +38,6 @@
     "699TopSpeed": 157,
     "6990to60": 4.0,
     "699Handling": 95,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997638575745155082/evo9wagonmr.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

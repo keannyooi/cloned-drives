@@ -1,5 +1,6 @@
 {
-    "rq": 50,
+    "carID": "c01394",
+    "cr": 500,
     "make": "Volkswagen",
     "model": "Tiguan 2.0 TDI 4Motion",
     "modelYear": 2016,
@@ -22,8 +23,7 @@
     "mra": 54.55,
     "ola": 61.9,
     "description": "The new Volkswagen Tiguan is a quality car, but a few issues mean this spec isn't quite the pick of the range. Card by Andu",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/848310637254672444/20TDI4Motion16.png",
-    "333TopSpeed": 134,
+     "333TopSpeed": 134,
     "3330to60": 8,
     "333Handling": 77,
     "666TopSpeed": 138,
@@ -38,6 +38,6 @@
     "699TopSpeed": 138,
     "6990to60": 7.1,
     "699Handling": 83,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1022161305928478841/TiguanTDI416.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Andu"
 }

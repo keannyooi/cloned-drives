@@ -1,5 +1,6 @@
 {
-    "rq": 45,
+    "carID": "c01832",
+    "cr": 450,
     "make": "Subaru",
     "model": "Crosstrek 2.0i",
     "modelYear": 2018,
@@ -24,8 +25,7 @@
     "mra": 50.64,
     "ola": 78.26,
     "description": "A Subaru crossover that slots in between the Outback and the Forester.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/860168502597648434/image0.png",
-    "333TopSpeed": 126,
+     "333TopSpeed": 126,
     "3330to60": 8.7,
     "333Handling": 75,
     "666TopSpeed": 131,
@@ -40,6 +40,6 @@
     "996TopSpeed": 135,
     "9960to60": 7.8,
     "996Handling": 78,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100177076268580945/Crosstrek.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

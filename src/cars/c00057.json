@@ -1,5 +1,6 @@
 {
-    "rq": 3,
+    "carID": "c00057",
+    "cr": 26,
     "make": "Aston Martin",
     "model": "Atom",
     "modelYear": 1939,
@@ -22,8 +23,7 @@
     "mra": 13,
     "ola": 60,
     "description": "Widely regarded as the first ever Concept car.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/866643528183316490/atom.png",
-    "333TopSpeed": 96,
+     "333TopSpeed": 96,
     "3330to60": 18.1,
     "333Handling": 55,
     "666TopSpeed": 102,
@@ -38,6 +38,6 @@
     "699TopSpeed": 102,
     "6990to60": 16.2,
     "699Handling": 59,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995819758526152794/atom.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AstonMartinAtom(1939).png",
     "creator": "Bnuuy"
 }

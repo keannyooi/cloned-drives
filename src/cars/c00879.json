@@ -1,5 +1,6 @@
 {
-    "rq": 2,
+    "carID": "c00879",
+    "cr": 20,
     "make": "MG",
     "model": "TA Tickford Drophead Coupe",
     "modelYear": 1938,
@@ -22,8 +23,7 @@
     "mra": 0,
     "ola": 51.95,
     "description": "A more luxurious TA with individual bucket seats and wind-up windows.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/823589710378172476/TATickford.png",
-    "333TopSpeed": 86,
+     "333TopSpeed": 86,
     "3330to60": 21.9,
     "333Handling": 60,
     "666TopSpeed": 92,
@@ -38,6 +38,6 @@
     "699TopSpeed": 92,
     "6990to60": 19.6,
     "699Handling": 64,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997545466667470938/mgtatickford.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

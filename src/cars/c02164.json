@@ -1,5 +1,6 @@
 {
-    "rq": 62,
+    "carID": "c02164",
+    "cr": 620,
     "make": "Land Rover",
     "model": "Discovery Sport P300e S R-Dynamic",
     "modelYear": 2020,
@@ -24,8 +25,7 @@
     "mra": 55.86,
     "ola": 74.19,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/855185131059937290/Discovery_Sport_P300e_S_R-Dynamic_20.png",
-    "333TopSpeed": 134,
+     "333TopSpeed": 134,
     "3330to60": 5.9,
     "333Handling": 77,
     "666TopSpeed": 138,
@@ -40,6 +40,6 @@
     "699TopSpeed": 138,
     "6990to60": 5.3,
     "699Handling": 83,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1019995696289546330/LR_Discovery_Sport_P300e_R.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Macan"
 }

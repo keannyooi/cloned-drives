@@ -1,5 +1,6 @@
 {
-    "rq": 88,
+    "carID": "c01341",
+    "cr": 880,
     "make": "TVR",
     "model": "Griffith",
     "modelYear": 2021,
@@ -22,8 +23,7 @@
     "mra": 115.15,
     "ola": 84.21,
     "description": "After 20 years, TVR return with a bombshell of a sports car.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/823396499341574144/2021_TVR_Griffith.png",
-    "333TopSpeed": 203,
+     "333TopSpeed": 203,
     "3330to60": 3.6,
     "333Handling": 95,
     "666TopSpeed": 205,
@@ -38,6 +38,6 @@
     "699TopSpeed": 205,
     "6990to60": 3.2,
     "699Handling": 102,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997784670991302706/grigfhthe2020.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "DodgeDemon"
 }

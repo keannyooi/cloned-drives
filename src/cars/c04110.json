@@ -1,5 +1,6 @@
 {
-    "rq": 64,
+    "carID": "c04110",
+    "cr": 640,
     "make": "Volkswagen",
     "model": "Golf R",
     "modelYear": 2013,
@@ -26,8 +27,7 @@
     "description": "VW's champion square dancer gets faster.",
 
 
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1118314997248958529/GolfR2013.png",
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1118316127706157056/R2013.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Andu",
 
     "333TopSpeed": 158,

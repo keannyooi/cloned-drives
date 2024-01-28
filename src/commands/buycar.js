@@ -14,7 +14,7 @@ module.exports = {
     name: "buycar",
     usage: ["<deal/bm> <car name>", "<deal/bm> <amount> <car name>"],
     args: 2,
-    category: "Gameplay",
+    category: "Admin",
     description: "Buy a car from either the dealership or the black market using this command!",
 	
     async execute(message, args) {
@@ -113,7 +113,7 @@ module.exports = {
                     channel: message.channel,
                     title: `Successfully bought ${amount} ${carNameGen({ currentCar: car, removeBMTag: true })} for ${emoji}${price}!`,
                     author: message.author,
-                    image: car["card"],
+                    image: car["racehud"],
                     fields: [
                         { name: "Current Balance", value: `${emoji}${balance.toLocaleString("en")}` }
                     ]

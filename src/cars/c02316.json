@@ -1,5 +1,6 @@
 {    
-    "rq": 68,
+    "carID": "c02316",
+    "cr": 680,
     "make": ["MTM", "Audi"],
     "model": "A1 quattro",
     "modelYear": 2013,
@@ -22,8 +23,7 @@
     "mra": 73.77,
     "ola": 66.67,
     "description": "Madlads at MTM should've put a toilet under the seats after making them 380 hp roar.",
-    "card": "https://media.discordapp.net/attachments/974551848226811944/987442360826888222/mtm_a1_quattro.png",
-    "333TopSpeed": 176,
+     "333TopSpeed": 176,
     "3330to60": 4.3,
     "333Handling": 86,
     "666TopSpeed": 179,
@@ -38,6 +38,6 @@
     "699TopSpeed": 182,
     "6990to60": 3.8,
     "699Handling": 92,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/999223465007648868/mtmempty.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Lemon"
 }

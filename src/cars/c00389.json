@@ -1,5 +1,6 @@
 {
-    "rq": 85,
+    "carID": "c00389",
+    "cr": 854,
     "make": "Ferrari",
     "model": "599 GTO",
     "modelYear": 2010,
@@ -22,8 +23,7 @@
     "mra": 94.12,
     "ola": 78.88,
     "description": "The Italians went crazy and tuned up the already superfast 599.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/834774560632733757/599GTO.png",
-    "333TopSpeed": 211,
+     "333TopSpeed": 211,
     "3330to60": 3.0,
     "333Handling": 95,
     "666TopSpeed": 213,
@@ -38,6 +38,6 @@
     "699TopSpeed": 213,
     "6990to60": 2.7,
     "699Handling": 102,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996023894047723611/rari599GTO.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Ferrari599GTO(2010).png",
     "creator": "Bnuuy"
 }

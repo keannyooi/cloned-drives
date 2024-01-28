@@ -1,5 +1,6 @@
 {  
-    "rq": 84,
+    "carID": "c03942",
+    "cr": 840,
     "make": "Chevrolet",
     "model": "Camaro V8 Supercar #97 Red Bull Ampol Racing",
     "modelYear": 2023,
@@ -22,8 +23,7 @@
     "mra": 103.33,
     "ola": 96.77,
     "description": "Camaro replaces Commodore as V8 Supercars moves into the new Gen3 era of car, with less downforce to promote better racing.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1110791830087422033/Chevrolet_Camaro_V8_Supercar_97_Red_Bull_Ampol_Racing_23.png",
-    "333TopSpeed": 189,
+     "333TopSpeed": 189,
     "3330to60": 2.9,
     "333Handling": 97,
     "666TopSpeed": 192,
@@ -38,6 +38,6 @@
     "699TopSpeed": 192,
     "6990to60": 2.6,
     "699Handling": 104,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1110798862861479936/Chevrolet_Camaro_V8_Supercar_97_Red_Bull_Ampol_Racing_23.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Macan"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 26,
+    "carID": "c01190",
+    "cr": 260,
     "make": "Subaru",
     "model": "GL Turbo Wagon",
     "modelYear": 1983,
@@ -23,8 +24,7 @@
     "mra": 17,
     "ola": 60.29,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/865591501332152360/Subaru-GL-Turbo-Wagon-1_1.png",
-
+ 
     "333TopSpeed": 100,
     "3330to60": 12.9,
     "333Handling": 61,
@@ -45,6 +45,6 @@
     "6990to60": 11.6,
     "699Handling": 65,
 
-    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1094602724781334548/gl_turbo.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Ahmed"
 }

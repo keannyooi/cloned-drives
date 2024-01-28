@@ -1,5 +1,6 @@
 {
-    "rq": 18,
+    "carID": "c00343",
+    "cr": 180,
     "make": "DMC",
     "model": "DeLorean",
     "modelYear": 1981,
@@ -26,8 +27,7 @@
     "mra": 35.59,
     "ola": 68.57,
     "description": "1.21 gigawatts and 88mph required to time travel.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/826018070953852938/Delorean.png",
-    "333TopSpeed": 114,
+     "333TopSpeed": 114,
     "3330to60": 10.0,
     "333Handling": 71,
     "666TopSpeed": 119,
@@ -42,6 +42,6 @@
     "699TopSpeed": 119,
     "6990to60": 8.9,
     "699Handling": 77,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017173411073622066/DMC_DeLorean.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Olimato"
 }

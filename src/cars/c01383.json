@@ -1,5 +1,6 @@
 {
-    "rq": 40,
+    "carID": "c01383",
+    "cr": 400,
     "make": "Volkswagen",
     "model": "Passat SE (NMS)",
     "modelYear": 2020,
@@ -22,8 +23,7 @@
     "mra": 60.75,
     "ola": 72.05,
     "description": "A face lift to the already aging Passat to grapple on a dying market.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/822164643510353930/PassatNMS.png",
-    "333TopSpeed": 120,
+     "333TopSpeed": 120,
     "3330to60": 7.7,
     "333Handling": 77,
     "666TopSpeed": 125,
@@ -38,6 +38,6 @@
     "699TopSpeed": 125,
     "6990to60": 6.9,
     "699Handling": 83,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017735452029096007/Vw_Passat_SE_NMS.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Andu"
 }

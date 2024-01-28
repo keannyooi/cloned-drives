@@ -1,5 +1,6 @@
 {
-    "rq": 35,
+    "carID": "c00022",
+    "cr": 350,
     "make": "Acura",
     "model": "Vigor GS",
     "modelYear": 1991,
@@ -22,8 +23,7 @@
     "mra": 53.5,
     "ola": 61.9,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/821061527657644072/vigor.png",
-    "333TopSpeed": 135,
+     "333TopSpeed": 135,
     "3330to60": 8.0,
     "333Handling": 70,
     "666TopSpeed": 139,
@@ -38,6 +38,6 @@
     "699TopSpeed": 139,
     "6990to60": 7.1,
     "699Handling": 75,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996026729678241842/acuravigor.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

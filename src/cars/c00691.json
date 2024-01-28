@@ -1,5 +1,6 @@
 {
-    "rq": 35,
+    "carID": "c00691",
+    "cr": 350,
     "make": "Lexus",
     "model": "IS 250 F Sport AWD",
     "modelYear": 2014,
@@ -22,8 +23,7 @@
     "mra": 54.93,
     "ola": 83.37,
     "description": "All-wheel-drive adds traction but does it actually make performance better?",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/823925612984664134/Lexus_IS_250_F_Sport_AWD_2014.png",
-    "333TopSpeed": 138,
+     "333TopSpeed": 138,
     "3330to60": 7.4,
     "333Handling": 75,
     "666TopSpeed": 142,
@@ -38,6 +38,6 @@
     "699TopSpeed": 142,
     "6990to60": 6.6,
     "699Handling": 81,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095377061570424934/Lexus_IS_250_F_AWD.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Macan"
 }

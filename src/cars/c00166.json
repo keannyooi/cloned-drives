@@ -1,5 +1,6 @@
 {
-    "rq": 61,
+    "carID": "c00166",
+    "cr": 610,
     "make": "BMW",
     "model": "535i",
     "modelYear": 2010,
@@ -22,8 +23,7 @@
     "mra": 68.17,
     "ola": 74.01,
     "description": "The 535i is a technological powerhouse with a potent straight six engine.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/820435718455033926/BMW535i.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 5.4,
     "333Handling": 82,
     "666TopSpeed": 162,
@@ -38,6 +38,6 @@
     "699TopSpeed": 162,
     "6990to60": 4.8,
     "699Handling": 88,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017335988764282920/BMW_535i_2010.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

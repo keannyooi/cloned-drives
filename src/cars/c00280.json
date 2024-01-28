@@ -1,5 +1,6 @@
 {
-    "rq": 87,
+    "carID": "c00280",
+    "cr": 870,
     "make": "Chevrolet",
     "model": "Corvette ZR1",
     "modelYear": 2018,
@@ -22,8 +23,7 @@
     "mra": 93.93,
     "ola": 90,
     "description": "The most extreme, powerful, the most everything Corvette ever.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/934143865953353738/S.ChevyCorvetteZR1C7.png",
-    "333TopSpeed": 214,
+     "333TopSpeed": 214,
     "3330to60": 2.9,
     "333Handling": 97,
     "666TopSpeed": 217,
@@ -38,6 +38,6 @@
     "699TopSpeed": 217,
     "6990to60": 2.6,
     "699Handling": 104,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995761010763899061/corvettec7.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

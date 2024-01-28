@@ -1,5 +1,6 @@
 {
-    "rq": 33,
+    "carID": "c01612",
+    "cr": 330,
     "make": "Mazda",
     "model": "RX-7",
     "modelYear": 1978,
@@ -22,8 +23,7 @@
     "mra": 45.29,
     "ola": 68.67,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/970457610182615060/Mazda_RX-7_1978.png",
-    "333TopSpeed": 124,
+     "333TopSpeed": 124,
     "3330to60": 8.8,
     "333Handling": 75,
     "666TopSpeed": 129,
@@ -38,6 +38,6 @@
     "699TopSpeed": 129,
     "6990to60": 7.9,
     "699Handling": 81,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996622016956354681/Mazda_RX-7_1978_Hud.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "DodgeDemon"
 }

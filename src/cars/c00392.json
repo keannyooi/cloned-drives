@@ -1,5 +1,6 @@
 {
-    "rq": 73,
+    "carID": "c00392",
+    "cr": 730,
     "make": "Ferrari",
     "model": "612 Scaglietti",
     "modelYear": 2004,
@@ -24,8 +25,7 @@
     "mra": 73.68,
     "ola": 90.48,
     "description": "The 4-seater Ferrari that is unattractive but still feels and drives like a Ferrari.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/846822008901468170/image0.png",
-    "333TopSpeed": 202,
+     "333TopSpeed": 202,
     "3330to60": 4.0,
     "333Handling": 85,
     "666TopSpeed": 204,
@@ -40,6 +40,6 @@
     "699TopSpeed": 204,
     "6990to60": 3.6,
     "699Handling": 91,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1018114200247214091/Ferrari_612_Scaglietti.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 61,
+    "carID": "c00090",
+    "cr": 610,
     "make": "Aston Martin",
     "model": "V8 Vantage",
     "modelYear": 2005,
@@ -24,8 +25,7 @@
     "mra": 65.42,
     "ola": 81.43,
     "description": "The most successful Aston Martin model ever, until a bigger challenger approached.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/820964145603280906/v8_vantage.png",
-    "333TopSpeed": 178,
+     "333TopSpeed": 178,
     "3330to60": 4.5,
     "333Handling": 87,
     "666TopSpeed": 181,
@@ -40,6 +40,6 @@
     "699TopSpeed": 181,
     "6990to60": 4,
     "699Handling": 93,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003292266951090208/v8_vantage.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Keanny"
 }

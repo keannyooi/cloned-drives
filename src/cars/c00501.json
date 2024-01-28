@@ -1,5 +1,6 @@
 {
-    "rq": 65,
+    "carID": "c00501",
+    "cr": 649,
     "make": "GMC",
     "model": "Syclone",
     "modelYear": 1991,
@@ -25,8 +26,7 @@
     "mra": 44.38,
     "ola": 65.87,
     "description": "Beating a Ferrari to 60mph on a drag strip on a truck, now THAT's something you only see in America.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/819391134483873842/gmc_syclone.png",
-    "333TopSpeed": 130,
+     "333TopSpeed": 130,
     "3330to60": 4.8,
     "333Handling": 75,
     "666TopSpeed": 134,
@@ -41,6 +41,6 @@
     "699TopSpeed": 134,
     "6990to60": 4.3,
     "699Handling": 81,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003643941243076649/syclone.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/GMCSyclone(1991).png",
     "creator": "Keanny"
 }

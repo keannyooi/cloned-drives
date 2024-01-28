@@ -1,5 +1,6 @@
 {  
-    "rq": 85,
+    "carID": "c02921",
+    "cr": 850,
     "make": "Ferrari",
     "model": "488 Challenge",
     "modelYear": 2017,
@@ -22,8 +23,7 @@
     "mra": 100,
     "ola": 90.75,
     "description": "The car that replaced the 458 in the Prancing Horse's own tournament (though they'd also need to replace those headlights ngl).",
-    "card": "https://media.discordapp.net/attachments/1041766128541761546/1041769548036182076/488_challenge.png",
-    "333TopSpeed": 193,
+     "333TopSpeed": 193,
     "3330to60": 3.0,
     "333Handling": 99,
     "666TopSpeed": 205,
@@ -38,6 +38,6 @@
     "699TopSpeed": 195,
     "6990to60": 2.7,
     "699Handling": 107,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1043240806649172028/488_challenge.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Lemon"
 }

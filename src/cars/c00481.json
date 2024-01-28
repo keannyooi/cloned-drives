@@ -1,5 +1,6 @@
 {
-    "rq": 76,
+    "carID": "c00481",
+    "cr": 761,
     "make": ["Ford Racing", "Ford"],
     "model": "Focus RS8",
     "modelYear": 2003,
@@ -23,8 +24,7 @@
     "mra": 74.58,
     "ola": 81.82,
     "description": "Yes, you're looking at a hatchback fitted with a 5-liter V8 engine in true American fashion by Ford themselves. In particular, the engine was a bored-out version of the Ford Mustang SVT Cobra's 4.6L engine. The car wasn't as simple as an engine swap, though - Ford Racing had to design a new suspension in addition to converting the car to RWD to accomodate the beastly engine. Cosmetic upgrades such as wheels from the European Focus RS were thrown into the mix as well 'cause why not.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/819390547092701184/fast_focus.png",
-
+ 
     "333TopSpeed": 183,
     "3330to60": 4.2,
     "333Handling": 92,
@@ -45,6 +45,6 @@
     "6990to60": 3.7,
     "699Handling": 99,
 
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003308782916468836/focus_rs8.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/FordRacingFocusRS8(2003).png",
     "creator": "Keanny"
 }

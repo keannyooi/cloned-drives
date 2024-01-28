@@ -1,5 +1,6 @@
 {
-    "rq": 45,
+    "carID": "c01451",
+    "cr": 451,
     "make": "BMW",
     "model": "M635CSi",
     "modelYear": 1983,
@@ -23,9 +24,8 @@
     "fuelType": "Petrol",
     "mra": 68.14,
     "ola": 82.79,
-    "description": "The Grandaddy of the modern M cars. Card by Andu.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/945392733986652232/M635csi.png",
-    "333TopSpeed": 159,
+    "description": "The Grandaddy of the modern M cars.",
+     "333TopSpeed": 159,
     "3330to60": 5.9,
     "333Handling": 76,
     "666TopSpeed": 163,
@@ -40,6 +40,6 @@
     "699TopSpeed": 163,
     "6990to60": 5.3,
     "699Handling": 82,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1050981335822512158/M635CSi.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BMWM635CSi(1983).png",
     "creator": "Andu"
 }

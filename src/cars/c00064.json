@@ -1,5 +1,6 @@
 {
-    "rq": 31,
+    "carID": "c00064",
+    "cr": 310,
     "make": "Aston Martin",
     "model": "DB3S",
     "modelYear": 1953,
@@ -22,8 +23,7 @@
     "mra": 52.56,
     "ola": 78.05,
     "description": "A Classic Le Mans racer.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/849757302155509780/DB3S.png",
-    "333TopSpeed": 144,
+     "333TopSpeed": 144,
     "3330to60": 6.3,
     "333Handling": 70,
     "666TopSpeed": 147,
@@ -38,6 +38,6 @@
     "699TopSpeed": 147,
     "6990to60": 5.6,
     "699Handling": 75,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995819556037738556/db3s.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

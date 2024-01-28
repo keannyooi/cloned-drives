@@ -1,5 +1,6 @@
 {
-    "rq": 33,
+    "carID": "c01952",
+    "cr": 330,
     "make": "Toyota",
     "model": "Yaris TS Turbo",
     "modelYear": 2004,
@@ -25,8 +26,7 @@
     "mra": 52.54,
     "ola": 74.84,
     "description": "Put the pedal to the metal!. Card by Andu",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/866935453214179379/YarisTSTurbo.png",
-    "333TopSpeed": 131,
+     "333TopSpeed": 131,
     "3330to60": 7.4,
     "333Handling": 74,
     "666TopSpeed": 135,
@@ -41,6 +41,6 @@
     "699TopSpeed": 135,
     "6990to60": 6.6,
     "699Handling": 80,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1043859625012891708/YarisTST.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Andu"
 }

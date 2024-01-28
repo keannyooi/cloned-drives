@@ -1,5 +1,6 @@
 {
-    "rq": 47,
+    "carID": "c01189",
+    "cr": 470,
     "make": "Subaru",
     "model": "BRZ tS",
     "modelYear": 2018,
@@ -24,8 +25,7 @@
     "mra": 58.49,
     "ola": 74.19,
     "description": "A living testimony of how tyres and aero can affect a car's handling dramatically.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/819382694668009482/brz_ts.png",
-    "333TopSpeed": 138,
+     "333TopSpeed": 138,
     "3330to60": 6,
     "333Handling": 91,
     "666TopSpeed": 142,
@@ -40,6 +40,6 @@
     "699TopSpeed": 142,
     "6990to60": 5.4,
     "699Handling": 98,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003660889859293194/brz_ts.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Keanny"
 }

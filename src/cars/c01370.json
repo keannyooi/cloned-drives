@@ -1,5 +1,6 @@
 {
-    "rq": 25,
+    "carID": "c01370",
+    "cr": 250,
     "make": "Volkswagen",
     "model": "Golf GTI 1.8 16v",
     "modelYear": 1986,
@@ -24,8 +25,7 @@
     "mra": 55.33,
     "ola": 69.88,
     "description": "The classiest and most complete hot hatch of its era. Card by Andu ",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/959127843755941958/GolfGTI1816v.png",
-    "333TopSpeed": 130,
+     "333TopSpeed": 130,
     "3330to60": 7.9,
     "333Handling": 75,
 
@@ -45,6 +45,6 @@
     "9960to60": 7.1,
     "996Handling": 78,
     
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1054085707636949073/GolfGTI16Vmk2.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Andu"
 }

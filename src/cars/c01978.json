@@ -1,5 +1,6 @@
 {
-    "rq": 30,
+    "carID": "c01978",
+    "cr": 300,
     "make": "Porsche",
     "model": "944",
     "modelYear": 1983,
@@ -22,8 +23,7 @@
     "mra": 54.43,
     "ola": 60.47,
     "description": "The US Spec.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/968062073303101440/unknown.png",
-    "333TopSpeed": 135,
+     "333TopSpeed": 135,
     "3330to60": 8.2,
     "333Handling": 75,
     "666TopSpeed": 139,
@@ -38,6 +38,6 @@
     "699TopSpeed": 139,
     "6990to60": 7.3,
     "699Handling": 81,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1051135255962202182/Porsche_944_1983.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Olimato"
 }

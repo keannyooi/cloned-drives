@@ -1,5 +1,6 @@
 {
-    "rq": 76,
+    "carID": "c05080",
+    "cr": 760,
     "make": "Porsche",
     "model": "Panamera",
     "modelYear": 2020,
@@ -8,7 +9,7 @@
     "0to60": 5.1,
     "handling": 87,
     "driveType": "RWD",
-    "tyreType": "Standard",
+    "tyreType": "standard",
     "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
     "isPrize": false,
 	
@@ -23,8 +24,7 @@
     "mra": 64.92,
     "ola": 75.28,
     "description": "",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1152586518578348042/971BPanamera.png",
-	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1152586622110535761/971BPanamera.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
 
 "333TopSpeed": 170,
 "3330to60": 4.8,

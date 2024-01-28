@@ -1,5 +1,6 @@
 {  
-    "rq": 108,
+    "carID": "c03126",
+    "cr": 1080,
     "make": ["Hoonigan", "Audi"],
     "model": "S1 e-tron quattro Hoonitron",
     "modelYear": 2021,
@@ -22,8 +23,7 @@
     "mra": 125,
     "ola": 106.67,
     "description": "Ken's ultimate jewel, built and developed by Audi, required him to completely readjust his driving style and burnt over 100 tyres in the making of the Electrikhana. https://www.youtube.com/watch?v=SO2Li9BMQp8&t=463s",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/1060632477858795610/hoonitron.png?width=1063&height=662",
-    "333TopSpeed": 153,
+     "333TopSpeed": 153,
     "3330to60": 1.4,
     "333Handling": 100,
     "666TopSpeed": 157,
@@ -38,6 +38,6 @@
     "699TopSpeed": 157,
     "6990to60": 1.3,
     "699Handling": 108,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1060632575149887549/hoonitron.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Lemon"
 }

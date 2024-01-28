@@ -1,5 +1,6 @@
 {
-    "rq": 70,
+    "carID": "c01680",
+    "cr": 700,
     "make": "Mitsubishi",
     "model": "Lancer Evolution VII RS",
     "modelYear": 2001,
@@ -22,8 +23,7 @@
     "mra": 65,
     "ola": 72.34,
     "description": "None.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1081569826650210354/evo7rsredo.png",
-    "333TopSpeed": 117,
+     "333TopSpeed": 117,
     "3330to60": 4.5,
     "333Handling": 88,
     "666TopSpeed": 121,
@@ -38,6 +38,6 @@
     "699TopSpeed": 121,
     "6990to60": 4.0,
     "699Handling": 94,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996030057841705050/Evo7RS.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

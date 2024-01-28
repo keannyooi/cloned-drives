@@ -1,5 +1,6 @@
 {
-    "rq": 39,
+    "carID": "c02107",
+    "cr": 390,
     "make": "BMW",
     "model": "325i",
     "modelYear": 1985,
@@ -22,8 +23,7 @@
     "mra": 56.3,
     "ola": 69.74,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/945198845346865202/325I.png",
-    "333TopSpeed": 132,
+     "333TopSpeed": 132,
     "3330to60": 7.2,
     "333Handling": 74,
     "666TopSpeed": 136,
@@ -38,6 +38,6 @@
     "699TopSpeed": 136,
     "6990to60": 6.5,
     "699Handling": 80,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1023586864587886732/BMW_325i_1985.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Olimato"
 }

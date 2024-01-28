@@ -1,5 +1,6 @@
 {
-    "rq": 62,
+    "carID": "c00565",
+    "cr": 620,
     "make": "Hyundai",
     "model": "Sonata N Line",
     "modelYear": 2020,
@@ -26,8 +27,7 @@
     "mra": 75.36,
     "ola": 92.31,
     "description": "An underdog in the sedan world.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/820736539939438632/B.HyundaiSonataNLine.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 4.9,
     "333Handling": 85,
     "666TopSpeed": 162,
@@ -42,6 +42,6 @@
     "699TopSpeed": 162,
     "6990to60": 4.4,
     "699Handling": 91,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1019995113105146046/Hyundai_Sonata_N_Line.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

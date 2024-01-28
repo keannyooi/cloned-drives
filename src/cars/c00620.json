@@ -1,5 +1,6 @@
 {
-    "rq": 49,
+    "carID": "c00620",
+    "cr": 490,
     "make": "Kia",
     "model": "Seltos SX AWD",
     "modelYear": 2020,
@@ -24,8 +25,7 @@
     "mra": 54.76,
     "ola": 76.06,
     "description": "Top-of-the-line Seltos with AWD and nothing worth noting besides that.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/850325850560659486/seltos.png",
-    "333TopSpeed": 129,
+     "333TopSpeed": 129,
     "3330to60": 6.6,
     "333Handling": 77,
     "666TopSpeed": 133,
@@ -40,6 +40,6 @@
     "699TopSpeed": 133,
     "6990to60": 5.9,
     "699Handling": 83,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017384905002455050/Kia_Seltos_SX_AWD.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

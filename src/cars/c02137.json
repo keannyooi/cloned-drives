@@ -1,5 +1,6 @@
 {
-    "rq": 97,
+    "carID": "c02137",
+    "cr": 970,
     "make": "Ferrari",
     "model": "P80/C",
     "modelYear": 2019,
@@ -22,8 +23,7 @@
     "mra": 104.16,
     "ola": 80,
     "description": "A track focused 488 Pista.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/978713421585477672/P80C.png",
-    "333TopSpeed": 222,
+     "333TopSpeed": 222,
     "3330to60": 2.4,
     "333Handling": 101,
     "666TopSpeed": 225,
@@ -38,6 +38,6 @@
     "699TopSpeed": 225,
     "6990to60": 2.1,
     "699Handling": 109,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995994261877166090/p80crari.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

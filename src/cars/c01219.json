@@ -1,5 +1,6 @@
 {
-    "rq": 76,
+    "carID": "c01219",
+    "cr": 760,
     "make": "Subaru",
     "model": "Impreza WRX STI Spec C",
     "modelYear": 2009,
@@ -25,8 +26,7 @@
     "mra": 55,
     "ola": 63.64,
     "description": "A lighter, more powerful Hatchback STI.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/846289942979149834/image0.jpg",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 4.2,
     "333Handling": 88,
     "666TopSpeed": 162,
@@ -41,6 +41,6 @@
     "996TopSpeed": 165,
     "9960to60": 3.7,
     "996Handling": 91,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017163343489933353/Subaru_Impreza_WRX_STI_Spec_C.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

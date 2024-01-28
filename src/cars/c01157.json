@@ -1,5 +1,6 @@
 {
-    "rq": 77,
+    "carID": "c01157",
+    "cr": 770,
     "make": ["Ruf", "Porsche"],
     "model": "RTurbo",
     "modelYear": 2001,
@@ -22,8 +23,7 @@
     "mra": 88.37,
     "ola": 73.68,
     "description": "How do you take one of Porsche's best performance values and make it even better? You send it to RUF.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/996233958423531530/RufRTurbo.png",
-    "333TopSpeed": 214,
+     "333TopSpeed": 214,
     "3330to60": 3.6,
     "333Handling": 90,
     "666TopSpeed": 217,
@@ -38,6 +38,6 @@
     "699TopSpeed": 217,
     "6990to60": 3.2,
     "699Handling": 97,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996234005731102830/RufRTurbo.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

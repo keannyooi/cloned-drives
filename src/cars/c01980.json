@@ -1,5 +1,6 @@
 {
-    "rq": 37,
+    "carID": "c01980",
+    "cr": 370,
     "make": "Porsche",
     "model": "944 S2",
     "modelYear": 1988,
@@ -22,8 +23,7 @@
     "mra": 66.67,
     "ola": 75,
     "description": "",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1114186398107439246/944S2.png",
-    "333TopSpeed": 152,
+     "333TopSpeed": 152,
     "3330to60": 6.1,
     "333Handling": 79,
     "666TopSpeed": 155,
@@ -38,6 +38,6 @@
     "699TopSpeed": 155,
     "6990to60": 5.4,
     "699Handling": 84,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1114186569721597983/944S2.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

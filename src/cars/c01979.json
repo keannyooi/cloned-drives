@@ -1,5 +1,6 @@
 {
-    "rq": 36,
+    "carID": "c01979",
+    "cr": 360,
     "make": "Porsche",
     "model": "944 S",
     "modelYear": 1986,
@@ -22,8 +23,7 @@
     "mra": 57.36,
     "ola": 67.57,
     "description": "",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1114186363328282696/944S.png",
-    "333TopSpeed": 145,
+     "333TopSpeed": 145,
     "3330to60": 7.0,
     "333Handling": 76,
     "666TopSpeed": 148,
@@ -38,6 +38,6 @@
     "699TopSpeed": 148,
     "6990to60": 6.3,
     "699Handling": 82,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1051134717572952115/Porsche_944_S.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Olimato"
 }

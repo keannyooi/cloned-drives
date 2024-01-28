@@ -1,5 +1,6 @@
 {
-    "rq": 51,
+    "carID": "c01368",
+    "cr": 510,
     "make": "Volkswagen",
     "model": "Golf GTI",
     "modelYear": 2009,
@@ -24,8 +25,7 @@
     "mra": 68.99,
     "ola": 78.4,
     "description": "A continuation of strong form. Card by Andu ",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/819508221885808660/GTI6.png",
-    "333TopSpeed": 152,
+     "333TopSpeed": 152,
     "3330to60": 6,
     "333Handling": 84,
     "666TopSpeed": 155,
@@ -40,6 +40,6 @@
     "699TopSpeed": 155,
     "6990to60": 5.4,
     "699Handling": 90,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1022163845923491931/GTI6.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Andu"
 }

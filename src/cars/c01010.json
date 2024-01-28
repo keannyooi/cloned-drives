@@ -1,5 +1,6 @@
 {
-    "rq": 12,
+    "carID": "c01010",
+    "cr": 120,
     "make": "Opel",
     "model": "Manta S",
     "modelYear": 1970,
@@ -22,8 +23,7 @@
     "mra": 29.05,
     "ola": 67.19,
     "description": "One of the defining sports coupes of the 1970s.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/857523585518534676/F.png",
-    "333TopSpeed": 108,
+     "333TopSpeed": 108,
     "3330to60": 12,
     "333Handling": 66,
     "666TopSpeed": 113,
@@ -38,6 +38,6 @@
     "699TopSpeed": 113,
     "6990to60": 10.7,
     "699Handling": 71,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1035900447166312548/manta_s.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

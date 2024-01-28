@@ -1,5 +1,6 @@
 {
-    "rq": 80,
+    "carID": "c01110",
+    "cr": 800,
     "make": "Porsche",
     "model": "Carrera GT",
     "modelYear": 2003,
@@ -24,8 +25,7 @@
     "mra": 97.22,
     "ola": 91.43,
     "description": "Just be careful on the brakes.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1114207634053148702/CarreraGT.png",
-"333TopSpeed": 208,
+ "333TopSpeed": 208,
 "3330to60": 3.3,
 "333Handling": 91,
 
@@ -44,6 +44,6 @@
 "996TopSpeed": 213,
 "9960to60": 3,
 "996Handling": 94,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1114207861929693306/CarreraGT.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

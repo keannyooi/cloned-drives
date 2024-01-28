@@ -1,5 +1,6 @@
 {
-    "rq": 98,
+    "carID": "c00632",
+    "cr": 980,
     "make": "Koenigsegg",
     "model": "Agera RS",
     "modelYear": 2015,
@@ -28,8 +29,7 @@
     "mra": 150,
     "ola": 118.52,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/932602844878606336/agerars.png",
-    "333TopSpeed": 280,
+     "333TopSpeed": 280,
     "3330to60": 2.6,
     "333Handling": 97,
     "666TopSpeed": 282,
@@ -44,6 +44,6 @@
     "699TopSpeed": 282,
     "6990to60": 2.3,
     "699Handling": 104,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1016104849789693993/Koenigsegg_Agera_RS.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Aqo"
 }

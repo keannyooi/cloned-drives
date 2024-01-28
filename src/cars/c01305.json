@@ -1,7 +1,8 @@
 {
-    "rq": 32,
+    "carID": "c01305",
+    "cr": 315,
     "make": "Toyota",
-    "model": "Corolla Sprinter Trueno GT Apex",
+    "model": "Corolla Sprinter Trueno GT-Apex",
     "modelYear": 1985,
     "country": "JP",
     "topSpeed": 125,
@@ -22,8 +23,7 @@
     "mra": 49.71,
     "ola": 71.26,
     "description": "Deja vu, I have been to this place before, higher on the streets, and I know it's my time to go.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1077313065562943568/corollasprintergtapex.png",
-    "333TopSpeed": 129,
+     "333TopSpeed": 129,
     "3330to60": 8.3,
     "333Handling": 80,
     "666TopSpeed": 133,
@@ -38,6 +38,6 @@
     "699TopSpeed": 133,
     "6990to60": 7.4,
     "699Handling": 85,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1077313226863292466/AE86updooted.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ToyotaCorollaSprinterTruenoGT-Apex(1985).png",
     "creator": "Bnuuy"
 }

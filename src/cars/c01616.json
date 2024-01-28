@@ -1,5 +1,6 @@
 {
-    "rq": 55,
+    "carID": "c01616",
+    "cr": 550,
     "make": "Mazda",
     "model": "RX-7 IMSA GTU",
     "modelYear": 1979,
@@ -22,8 +23,7 @@
     "mra": 74.67,
     "ola": 85.71,
     "description": "Racing Beat's collab with Mazda that won the 24 Hours of Daytona seven years in a row under the GTU class.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/970458339056160768/Mazda_RX-7_IMSA_GTU_1979.png",
-    "333TopSpeed": 168,
+     "333TopSpeed": 168,
     "3330to60": 5.3,
     "333Handling": 94,
     "666TopSpeed": 171,
@@ -38,6 +38,6 @@
     "699TopSpeed": 171,
     "6990to60": 4.8,
     "699Handling": 101,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996621539304800316/Mazda_RX-7_IMSA_GTU_1979_Hud.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "DodgeDemon"
 }

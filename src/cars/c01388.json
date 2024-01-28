@@ -1,5 +1,6 @@
 {
-    "rq": 24,
+    "carID": "c01388",
+    "cr": 240,
     "make": "Volkswagen",
     "model": "Scirocco 1600 GT",
     "modelYear": 1979,
@@ -22,8 +23,7 @@
     "mra": 34.38,
     "ola": 60.91,
     "description": "A Coupe for the people but now with 5 speeds. Card by Andu",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1140036388419547166/Scirocco1600GT.png",
-  
+   
 "333TopSpeed": 110,
 "3330to60": 10.4,
 "333Handling": 69,
@@ -44,6 +44,6 @@
 "9960to60": 9.3,
 "996Handling": 71,
     
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1140039666041639062/1600GT.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Andu"
 }

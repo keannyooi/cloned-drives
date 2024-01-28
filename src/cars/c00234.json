@@ -1,5 +1,6 @@
 {
-    "rq": 75,
+    "carID": "c00234",
+    "cr": 750,
     "make": "Cadillac",
     "model": "ATS-V Sedan",
     "modelYear": 2016,
@@ -22,8 +23,7 @@
     "mra": 76.47,
     "ola": 82.05,
     "description": "Cadillac's first attempt at a sub CTS-V entry in the V-Series family. Rather than leaning towards GM's specialty in small-block V8s, they developed a twin-turbocharged V6 producing 464 horsepower to go after the F80-generation M3 of the time. This was the first full-fledged V product not powered by a V8 of any kind.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/844629829331976232/ATS-V.png",
-    "333TopSpeed": 190,
+     "333TopSpeed": 190,
     "3330to60": 3.7,
     "333Handling": 94,
     "666TopSpeed": 193,
@@ -38,6 +38,6 @@
     "699TopSpeed": 193,
     "6990to60": 3.3,
     "699Handling": 101,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996022085174448168/ATSV.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

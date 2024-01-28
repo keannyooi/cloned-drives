@@ -1,5 +1,6 @@
 {
-    "rq": 34,
+    "carID": "c00461",
+    "cr": 340,
     "make": "Ford",
     "model": "Focus ZX3",
     "modelYear": 2001,
@@ -22,8 +23,7 @@
     "mra": 40.09,
     "ola": 65.17,
     "description": "A Focus but slow-ish.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/819391009921302566/ford_focus_zx3.png",
-    "333TopSpeed": 109,
+     "333TopSpeed": 109,
     "3330to60": 8.5,
     "333Handling": 75,
     "666TopSpeed": 114,
@@ -38,6 +38,6 @@
     "699TopSpeed": 114,
     "6990to60": 7.6,
     "699Handling": 81,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003308543216197732/focus_zx3.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Keanny"
 }

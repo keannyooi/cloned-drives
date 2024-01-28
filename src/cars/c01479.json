@@ -1,5 +1,6 @@
 {
-    "rq": 29,
+    "carID": "c01479",
+    "cr": 290,
     "make": "Volvo",
     "model": "PV 544 Rally Spec",
     "modelYear": 1964,
@@ -26,8 +27,7 @@
     "mra": 17.43,
     "ola": 59.26,
     "description": "One of the most successful Volvo rally cars that won the European Rally Championship three times and the East African Safari Rally in 1965.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/942131543445504080/Volvo-PV-544-Rally-Spec.png",
-    "333TopSpeed": 101,
+     "333TopSpeed": 101,
     "3330to60": 12.8,
     "333Handling": 60,
     "666TopSpeed": 107,
@@ -42,6 +42,6 @@
     "699TopSpeed": 107,
     "6990to60": 11.5,
     "699Handling": 64,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1004785760710438912/Volvo-PV-544-Rally-Spec.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Johnny"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 73,
+    "carID": "c01654",
+    "cr": 730,
     "make": "Mitsubishi",
     "model": "Lancer Evolution IX GSR",
     "modelYear": 2005,
@@ -22,8 +23,7 @@
     "mra": 70.2,
     "ola": 75,
     "description": "None.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1081584388195762296/evo9gsrredo.png",
-    "333TopSpeed": 159,
+     "333TopSpeed": 159,
     "3330to60": 4.5,
     "333Handling": 88,
     "666TopSpeed": 163,
@@ -38,6 +38,6 @@
     "699TopSpeed": 163,
     "6990to60": 4.0,
     "699Handling": 94,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997572965996703806/evo9gsr.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 46,
+    "carID": "c01569",
+    "cr": 460,
     "make": "Infiniti",
     "model": "I35",
     "modelYear": 2002,
@@ -24,8 +25,7 @@
     "mra": 61.06,
     "ola": 78.26,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/847561295837528074/IMG_20210405_153606-1.png",
-    "333TopSpeed": 131,
+     "333TopSpeed": 131,
     "3330to60": 6.6,
     "333Handling": 76,
     "666TopSpeed": 135,
@@ -40,6 +40,6 @@
     "699TopSpeed": 135,
     "6990to60": 5.9,
     "699Handling": 82,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1022935724812664862/Infiniti_i35.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Cenard"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 72,
+    "carID": "c02194",
+    "cr": 720,
     "make": "Lotus",
     "model": "Exige S Roadster",
     "modelYear": 2013,
@@ -24,8 +25,7 @@
     "mra": 75.47,
     "ola": 75,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/950083918789496852/Lotus_Exige_S_Roadster_2013.png",
-    "333TopSpeed": 149,
+     "333TopSpeed": 149,
     "3330to60": 3.8,
     "333Handling": 93,
     "666TopSpeed": 152,
@@ -40,6 +40,6 @@
     "699TopSpeed": 152,
     "6990to60": 3.4,
     "699Handling": 100,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1018176428040257577/Lotus_Exige_S_Roadster.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Tom"
 }

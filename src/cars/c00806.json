@@ -1,5 +1,6 @@
 {
-    "rq": 86,
+    "carID": "c00806",
+    "cr": 860,
     "make": "McLaren",
     "model": "MP4-12C",
     "modelYear": 2010,
@@ -22,8 +23,7 @@
     "mra": 100,
     "ola": 90.32,
     "description": "McLaren Automotive's debut supercar.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/820741428220526612/S.McLarenMP412C.png",
-    "333TopSpeed": 209,
+     "333TopSpeed": 209,
     "3330to60": 2.9,
     "333Handling": 94,
     "666TopSpeed": 210,
@@ -38,6 +38,6 @@
     "699TopSpeed": 210,
     "6990to60": 2.6,
     "699Handling": 101,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995762116961247392/mclaren12c.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

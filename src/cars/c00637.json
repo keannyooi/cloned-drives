@@ -1,5 +1,6 @@
 {
-    "rq": 103,
+    "carID": "c00637",
+    "cr": 1030,
     "make": "Koenigsegg",
     "model": "Jesko",
     "modelYear": 2020,
@@ -22,8 +23,7 @@
     "mra": 158.82,
     "ola": 103.7,
     "description": "After all that waiting and its still insane.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/849717740448120842/YeskoReal.png",
-    "333TopSpeed": 302,
+     "333TopSpeed": 302,
     "3330to60": 2.6,
     "333Handling": 101,
     "666TopSpeed": 303,
@@ -38,6 +38,6 @@
     "699TopSpeed": 303,
     "6990to60": 2.3,
     "699Handling": 109,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995687326233665586/jesko.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

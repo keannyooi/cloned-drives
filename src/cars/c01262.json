@@ -1,5 +1,6 @@
 {
-    "rq": 64,
+    "carID": "c01262",
+    "cr": 639,
     "make": "Tesla",
     "model": "Model S 85",
     "modelYear": 2012,
@@ -25,8 +26,7 @@
     "mra": 78.46,
     "ola": 90.2,
     "description": "The Model S was the first EV to be able to do the kind of things rock-juiced cars can do. Having its roots in Silicon Valley, it embraces the area's product design ethic to the fullest. The interior in particular follows the same design evolution as the iPhone, that is getting rid of traditional buttons in favour of a simple touchscreen.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/845922438024921108/tesla_model_s_85.png",
-    "333TopSpeed": 144,
+     "333TopSpeed": 144,
     "3330to60": 4.8,
     "333Handling": 81,
     "666TopSpeed": 147,
@@ -41,6 +41,6 @@
     "699TopSpeed": 147,
     "6990to60": 4.3,
     "699Handling": 87,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1002951757812482098/model_s_85.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/TeslaModelS85(2012).png",
     "creator": "Keanny"
 }

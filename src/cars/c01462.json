@@ -1,5 +1,6 @@
 {
-    "rq": 100,
+    "carID": "c01462",
+    "cr": 1000,
     "make": "Porsche",
     "model": "Mission R Concept",
     "modelYear": 2021,
@@ -22,8 +23,7 @@
     "mra": 104.34,
     "ola": 83.33,
     "description": "None.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1146148879641874482/982MissionR.png",
-"333TopSpeed": 189,
+ "333TopSpeed": 189,
 "3330to60": 2.2,
 "333Handling": 101,
 
@@ -42,6 +42,6 @@
 "996TopSpeed": 194,
 "9960to60": 2,
 "996Handling": 104,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997560160455249970/MissionR.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 68,
+    "carID": "c01278",
+    "cr": 683,
     "make": "Tesla",
     "model": "Model X 90D",
     "modelYear": 2015,
@@ -24,8 +25,7 @@
     "mra": 69.61,
     "ola": 91.87,
     "description": "Jeremy Clarkson's take on the Model X in 2018 on The Grand Tour was considerably tamer than his Tesla Roadster review a decade prior, admitting many things that he appreciates about the car and even going as far as saying that being in the car \"felt like he was in Mars\". Knowing Clarkson, that has something to do with the lawsuit that came subsequently after he roasted the Roadster...",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/858545322358734848/tesla_model_x_90d.png",
-    "333TopSpeed": 157,
+     "333TopSpeed": 157,
     "3330to60": 4.8,
     "333Handling": 80,
     "666TopSpeed": 161,
@@ -40,6 +40,6 @@
     "699TopSpeed": 161,
     "6990to60": 4.3,
     "699Handling": 85,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1002950726441517076/model_x_90d.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/TeslaModelX90D(2015).png",
     "creator": "Keanny"
 }

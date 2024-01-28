@@ -1,7 +1,8 @@
 {
-    "rq": 69,
+    "carID": "c04210",
+    "cr": 687,
     "make": "Maserati",
-    "model": "Levante GT Hybrid",
+    "model": "Levante Hybrid",
     "modelYear": 2020,
     "country": "IT",
     "topSpeed": 152,
@@ -23,8 +24,7 @@
     "mra": 63.73,
     "ola": 70.07,
     "description": "Hybrid version added to the Levante lineup as a more efficient alternative. Uses 2-liter 4-cylinder unlike all other Levante's that uses either V6 or V8.",
-    "card": "https://media.discordapp.net/attachments/1077292374608326656/1134549162810163270/Maserati_Levante_GT_Hybrid.png",
-    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1134549191918628924/Maserati_Levante_Hybrid.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/MaseratiLevanteHybrid(2020).png",
     "creator": "Crossfire",
 
     "333TopSpeed": 155, 

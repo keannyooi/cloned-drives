@@ -1,5 +1,6 @@
 {
-    "rq": 45,
+    "carID": "c00664",
+    "cr": 454,
     "make": "Lamborghini",
     "model": "Miura P400SV",
     "modelYear": 1971,
@@ -22,8 +23,7 @@
     "mra": 77.78,
     "ola": 78.57,
     "description": "The worlds fastest car for a short period of time.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/1054067247963975691/MiuraP400SV.png",
-    "333TopSpeed": 183,
+     "333TopSpeed": 183,
     "3330to60": 5.5,
     "333Handling": 77,
     "666TopSpeed": 186,
@@ -38,6 +38,6 @@
     "699TopSpeed": 186,
     "6990to60": 4.9,
     "699Handling": 83,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997643582762655824/miurap400SV.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/LamborghiniMiuraP400SV(1971).png",
     "creator": "Bnuuy"
 }

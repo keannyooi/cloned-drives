@@ -1,5 +1,6 @@
 {
-    "rq": 33,
+    "carID": "c00981",
+    "cr": 330,
     "make": "Opel",
     "model": "Calibra 2.0i 16v",
     "modelYear": 1990,
@@ -22,8 +23,7 @@
     "mra": 57.43,
     "ola": 72.94,
     "description": "A more powerful Calibra with a cd of 0.29 due to changes in cooling system, underbody, use of spoked wheels and glass detail.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/855882326927736842/D.OpelCalibra20i16v.png",
-    "333TopSpeed": 142,
+     "333TopSpeed": 142,
     "3330to60": 8.1,
     "333Handling": 77,
     "666TopSpeed": 146,
@@ -38,6 +38,6 @@
     "699TopSpeed": 146,
     "6990to60": 7.2,
     "699Handling": 83,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1036169738667180103/calibra_16v.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

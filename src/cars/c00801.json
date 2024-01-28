@@ -1,5 +1,6 @@
 {
-    "rq": 72,
+    "carID": "c00801",
+    "cr": 720,
     "make": "McLaren",
     "model": "F1 Ameritech",
     "modelYear": 1993,
@@ -27,8 +28,7 @@
     "mra": 85.08,
     "ola": 101.63,
     "description": "The best road car ever made, except it was ruined by some Americans.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/828269101839417355/CD_McLaren_F1_Ameritech.png?width=1410&height=878",
-    "333TopSpeed": 220,
+     "333TopSpeed": 220,
     "3330to60": 3.2,
     "333Handling": 80,
     "666TopSpeed": 223,
@@ -43,6 +43,6 @@
     "699TopSpeed": 223,
     "6990to60": 2.9,
     "699Handling": 85,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017410446862598144/McLaren_F1_Ameritech.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Exist"
 }

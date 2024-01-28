@@ -1,7 +1,8 @@
 {
-    "rq": 13,
+    "carID": "c03200",
+    "cr": 133,
     "make": "Fiat",
-    "model": "500C 1.0 Hybrid Launch Edition",
+    "model": "500C 1.0 Firefly Hybrid Launch Edition",
     "modelYear": 2020,
     "country": "IT",
     "topSpeed": 104,
@@ -23,11 +24,10 @@
     "fuelType": "Hybrid",
     "mra": 10.34,
     "ola": 53.06,
-    "description": "New decade, new engine. Card by Andu.",
+    "description": "New decade, new engine.",
 
 
-    "card": "https://media.discordapp.net/attachments/819199720249360384/1051617236772728832/500C10HYBRID.png",
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1051615467426562080/500CHy.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Andu",
 
     "333TopSpeed": 109,

@@ -39,7 +39,7 @@ async function selectUpgrade(args) {
             author: message.author,
             footer: `You have been given ${defaultWaitTime / 1000} seconds to consider.`,
             fields: [{ name: "Selected Car", value: carNameGen({ currentCar: getCard, rarity: true }) }],
-            image: getCard["card"]
+            image: getCard["racehud"]
         });
         currentMessage = await infoMessage.sendMessage({ currentMessage, buttons: [row], preserve: true });
 

@@ -1,5 +1,6 @@
 {
-    "rq": 41,
+    "carID": "c02119",
+    "cr": 407,
     "make": "BMW",
     "model": "Z4 2.5si",
     "modelYear": 2006,
@@ -22,8 +23,7 @@
     "mra": 59.47,
     "ola": 67.42,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/975650586911465532/bmw_z4_2.5si.png",
-    "333TopSpeed": 152,
+     "333TopSpeed": 152,
     "3330to60": 6.2,
     "333Handling": 84,
     "666TopSpeed": 156,
@@ -38,6 +38,6 @@
     "699TopSpeed": 156,
     "6990to60": 5.5,
     "699Handling": 90,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1001844415570128906/z4_2.5si.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BMWZ42.5si(2006).png",
     "creator": "Keanny"
 }

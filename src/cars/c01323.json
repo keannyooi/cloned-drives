@@ -1,5 +1,6 @@
 {
-    "rq": 28,
+    "carID": "c01323",
+    "cr": 280,
     "make": "Toyota",
     "model": "Prius C",
     "modelYear": 2012,
@@ -24,8 +25,7 @@
     "mra": 40.69,
     "ola": 61.68,
     "description": "It has wheels and gets good gas mileage. Card by Andu",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/821107130266157086/PriusCate.png",
-    "333TopSpeed": 107,
+     "333TopSpeed": 107,
     "3330to60": 10.2,
     "333Handling": 74,
     "666TopSpeed": 112,
@@ -40,6 +40,6 @@
     "699TopSpeed": 112,
     "6990to60": 9.1,
     "699Handling": 80,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1050932245961113620/PriusC.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Andu"
 }

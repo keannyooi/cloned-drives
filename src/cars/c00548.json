@@ -1,5 +1,6 @@
 {
-    "rq": 29,
+    "carID": "c00548",
+    "cr": 290,
     "make": "Honda",
     "model": "Odyssey Touring Elite",
     "modelYear": 2014,
@@ -22,8 +23,7 @@
     "mra": 58.63,
     "ola": 72.31,
     "description": "This Odyssey sucks, courtesy of the on-board vacuum cleaner.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/820438711485333524/good_ody.png",
-    "333TopSpeed": 124,
+     "333TopSpeed": 124,
     "3330to60": 7.3,
     "333Handling": 70,
     "666TopSpeed": 129,
@@ -38,6 +38,6 @@
     "699TopSpeed": 129,
     "6990to60": 6.5,
     "699Handling": 75,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1023564292383051818/Honda_Odyssey_Touring_Elite_2014.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "McNuggets"
 }

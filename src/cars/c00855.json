@@ -1,5 +1,6 @@
 {
-    "rq": 14,
+    "carID": "c00855",
+    "cr": 140,
     "make": "Mercedes-Benz",
     "model": "710 SSK",
     "modelYear": 1929,
@@ -22,8 +23,7 @@
     "mra": 35.9,
     "ola": 58.57,
     "description": "A timeless classic which is highly sought after for its rarity and engineering, even for thieves in a certain manga series.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/823515654358827009/710SSK.png",
-    "333TopSpeed": 119,
+     "333TopSpeed": 119,
     "3330to60": 13.3,
     "333Handling": 61,
     "666TopSpeed": 123,
@@ -38,6 +38,6 @@
     "699TopSpeed": 123,
     "6990to60": 11.9,
     "699Handling": 65,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997647131030601748/710SSK.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

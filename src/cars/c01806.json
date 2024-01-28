@@ -1,5 +1,6 @@
 {
-    "rq": 46,
+    "carID": "c01806",
+    "cr": 460,
     "make": "Nissan",
     "model": "Titan XD Platinum Reserve 4x4 Crew Cab",
     "modelYear": 2020,
@@ -23,8 +24,7 @@
     "mra": 54.37,
     "ola": 68.75,
     "description": "This is the top-of-the-line trim for the funny Titan.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/970058104748245042/IMG_4737.png",
-
+ 
     "333TopSpeed": 115,
     "3330to60": 7.1,
     "333Handling": 70,
@@ -45,6 +45,6 @@
     "6990to60": 6.4,
     "699Handling": 75,
 
-    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1094574221818089542/titan_platinum.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 36,
+    "carID": "c00130",
+    "cr": 356,
     "make": [
         "Autodelta",
         "Alfa Romeo"
@@ -28,8 +29,7 @@
     "mra": 53.85,
     "ola": 80,
     "description": "The lesser-known Autodelta 147.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/837239408565420042/autodelta_147_1.6_ts_j12.png",
-    "333TopSpeed": 139,
+     "333TopSpeed": 139,
     "3330to60": 6.7,
     "333Handling": 82,
     "666TopSpeed": 143,
@@ -44,6 +44,6 @@
     "699TopSpeed": 143,
     "6990to60": 6,
     "699Handling": 88,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1006198969464004728/autodelta_147_j12.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Autodelta1471.6TwinSparkJ12(2002).png",
     "creator": "Keanny"
 }

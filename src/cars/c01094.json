@@ -1,5 +1,6 @@
 {
-    "rq": 23,
+    "carID": "c01094",
+    "cr": 230,
     "make": "Porsche",
     "model": "924",
     "modelYear": 1976,
@@ -26,8 +27,7 @@
     "mra": 38.71,
     "ola": 63.33,
     "description": "This is the first Porsche with the FR layout ever made.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1114188756338102373/Normal924.png",
-"333TopSpeed": 124,
+ "333TopSpeed": 124,
 "3330to60": 9.1,
 "333Handling": 72,
 
@@ -46,6 +46,6 @@
 "996TopSpeed": 133,
 "9960to60": 8.2,
 "996Handling": 75,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1114189061519847465/Normal924.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

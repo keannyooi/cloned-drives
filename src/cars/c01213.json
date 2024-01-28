@@ -1,5 +1,6 @@
 {
-    "rq": 65,
+    "carID": "c01213",
+    "cr": 650,
     "make": "Subaru",
     "model": "Impreza WRX STI",
     "modelYear": 2011,
@@ -24,8 +25,7 @@
     "mra": 60.92,
     "ola": 60.38,
     "description": "Looks like a proper Impreza STI, but more modern.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/828834067486998528/image0.jpg",
-    "333TopSpeed": 155,
+     "333TopSpeed": 155,
     "3330to60": 5.0,
     "333Handling": 85,
     "666TopSpeed": 159,
@@ -40,6 +40,6 @@
     "699TopSpeed": 159,
     "6990to60": 4.5,
     "699Handling": 91,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017527937949511841/Subaru_Impreza_WRX_STI_Sedan_2010.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

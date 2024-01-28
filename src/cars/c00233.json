@@ -1,5 +1,6 @@
 {
-    "rq": 37,
+    "carID": "c00233",
+    "cr": 370,
     "make": "Buick",
     "model": "Riviera SuperCharged",
     "modelYear": 1995,
@@ -22,8 +23,7 @@
     "mra": 63.56,
     "ola": 88.01,
     "description": "One of the last Buick gems.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/821061232483106857/riviera.png",
-    "333TopSpeed": 115,
+     "333TopSpeed": 115,
     "3330to60": 7.1,
     "333Handling": 71,
     "666TopSpeed": 119,
@@ -38,6 +38,6 @@
     "699TopSpeed": 119,
     "6990to60": 6.4,
     "699Handling": 77,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995981783881502800/riviera.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

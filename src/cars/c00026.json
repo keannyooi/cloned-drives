@@ -1,5 +1,6 @@
 {
-    "rq": 52,
+    "carID": "c00026",
+    "cr": 520,
     "make": "Alfa Romeo",
     "model": "156 GTA",
     "modelYear": 2002,
@@ -22,8 +23,7 @@
     "mra": 70.61,
     "ola": 87.57,
     "description": "Launched at the Frankfurt Motor Show in 2001 and introduced in May 2002, the GTA dropped the manufacturer’s sonorous 3.2-litre V6 behind the 156’s V-shaped grille, deploying 247bhp to the front wheels.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/829009473715568690/AlfaRomeo156GTA.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 5.9,
     "333Handling": 84,
     "666TopSpeed": 162,
@@ -38,6 +38,6 @@
     "699TopSpeed": 162,
     "6990to60": 5.3,
     "699Handling": 90,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1094935772836147220/Alfa156GTA.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 67,
+    "carID": "c01689",
+    "cr": 670,
     "make": "Mitsubishi",
     "model": "Lancer Evolution VIII MR 280",
     "modelYear": 2004,
@@ -22,8 +23,7 @@
     "mra": 77.94,
     "ola": 74.28,
     "description": "None.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1081577288224747580/evo8mr280redo.png",
-    "333TopSpeed": 160,
+     "333TopSpeed": 160,
     "3330to60": 5.0,
     "333Handling": 88,
     "666TopSpeed": 164,
@@ -38,6 +38,6 @@
     "699TopSpeed": 164,
     "6990to60": 4.5,
     "699Handling": 94,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997640447507845281/evo8mr280.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

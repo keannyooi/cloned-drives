@@ -1,5 +1,6 @@
 {
-    "rq": 20,
+    "carID": "c01287",
+    "cr": 200,
     "make": "Tesla",
     "model": "Semi",
     "modelYear": 2021,
@@ -25,8 +26,7 @@
     "mra": 0,
     "ola": 100,
     "description": "Part of Tesla's Master Plan (yes Lemon, they really called it that), the Semi uses 3 motors and claims to be 3x more powerful than the average diesel truck. PepsiCo is the first to acquire and utilize this truck to restock on your questionable eating habits in stores near you.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/867383795337134100/semi_thing.png",
-    "333TopSpeed": 69,
+     "333TopSpeed": 69,
     "3330to60": 4.8,
     "333Handling": 44,
     "666TopSpeed": 77,
@@ -41,6 +41,6 @@
     "699TopSpeed": 77,
     "6990to60": 4.3,
     "699Handling": 48,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1006535688797290547/tesla_semi.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "DodgeDemon"
 }

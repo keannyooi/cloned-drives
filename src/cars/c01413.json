@@ -1,5 +1,6 @@
 {
-    "rq": 26,
+    "carID": "c01413",
+    "cr": 260,
     "make": "Volkswagen",
     "model": "black up! 1.0 MPI",
     "modelYear": 2011,
@@ -22,8 +23,7 @@
     "mra": 44.65,
     "ola": 71.91,
     "description": "The Up-exclamation-mark, Top Gear says.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1118293859693240401/blackup.png",
-    "333TopSpeed": 110,
+     "333TopSpeed": 110,
     "3330to60": 12.3,
     "333Handling": 75,
     "666TopSpeed": 115,
@@ -38,6 +38,6 @@
     "699TopSpeed": 115,
     "6990to60": 11,
     "699Handling": 81,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1118295369265201202/blackup.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Andu"
 }

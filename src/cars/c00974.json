@@ -1,5 +1,6 @@
 {
-    "rq": 38,
+    "carID": "c00974",
+    "cr": 380,
     "make": "Opel",
     "model": "Astra GTC 1.9 CDTI",
     "modelYear": 2006,
@@ -22,8 +23,7 @@
     "mra": 53.37,
     "ola": 75.86,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/842020337775411231/D.OpelAstraGTC19CDTI.png",
-    "333TopSpeed": 133,
+     "333TopSpeed": 133,
     "3330to60": 8.3,
     "333Handling": 77,
     "666TopSpeed": 137,
@@ -38,6 +38,6 @@
     "699TopSpeed": 137,
     "6990to60": 7.4,
     "699Handling": 83,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1036162879965114408/astra_gtc.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

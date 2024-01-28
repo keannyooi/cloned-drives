@@ -1,5 +1,6 @@
 {
-    "rq": 60,
+    "carID": "c00929",
+    "cr": 604,
     "make": "Nissan",
     "model": "370Z",
     "modelYear": 2009,
@@ -24,8 +25,7 @@
     "mra": 69.66,
     "ola": 79.21,
     "description": "A new evolution of the Nissan Z car.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/819382630759006228/370z.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 4.8,
     "333Handling": 91,
     "666TopSpeed": 162,
@@ -40,6 +40,6 @@
     "699TopSpeed": 162,
     "6990to60": 4.3,
     "699Handling": 98,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003653818799640586/370z.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Nissan370Z(2009).png",
     "creator": "Keanny"
 }

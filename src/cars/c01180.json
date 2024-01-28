@@ -1,5 +1,6 @@
 {
-    "rq": 24,
+    "carID": "c01180",
+    "cr": 240,
     "make": [
         "Spoon",
         "Honda"
@@ -28,8 +29,7 @@
     "mra": 58.49,
     "ola": 71.1,
     "description": "A S660 tuned by a legendary Honda tuner that has seen faster days.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/868778832759488533/spoon_s660.png",
-    "333TopSpeed": 123,
+     "333TopSpeed": 123,
     "3330to60": 8.7,
     "333Handling": 80,
     "666TopSpeed": 128,
@@ -44,6 +44,6 @@
     "699TopSpeed": 128,
     "6990to60": 7.8,
     "699Handling": 85,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003175916840693790/spoon_s660.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/SpoonS660Demo(2017).png",
     "creator": "Keanny"
 }

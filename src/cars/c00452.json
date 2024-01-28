@@ -1,5 +1,6 @@
 {
-    "rq": 70,
+    "carID": "c00452",
+    "cr": 700,
     "make": "Ford",
     "model": "Focus RS",
     "modelYear": 2016,
@@ -22,8 +23,7 @@
     "mra": 57.5,
     "ola": 65.44,
     "description": "The only hot hatch with drift mode. oh wait.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/996296675993853982/FordFocusRS2016.png",
-    "333TopSpeed": 168,
+     "333TopSpeed": 168,
     "3330to60": 4.4,
     "333Handling": 93,
     "666TopSpeed": 171,
@@ -38,6 +38,6 @@
     "699TopSpeed": 171,
     "6990to60": 3.9,
     "699Handling": 100,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996296738052767784/FordFocusRS2016.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

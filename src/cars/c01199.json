@@ -1,5 +1,6 @@
 {
-    "rq": 71,
+    "carID": "c01199",
+    "cr": 710,
     "make": "Subaru",
     "model": "Impreza S202 STI",
     "modelYear": 2002,
@@ -24,8 +25,7 @@
     "mra": 60,
     "ola": 66.67,
     "description": "The second S Special edition of the Impreza WRX STI.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/840640734712561704/image0.jpg",
-    "333TopSpeed": 117,
+     "333TopSpeed": 117,
     "3330to60": 4.3,
     "333Handling": 87,
     "666TopSpeed": 121,
@@ -40,6 +40,6 @@
     "996TopSpeed": 126,
     "9960to60": 3.8,
     "996Handling": 90,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1050810228683321425/Subaru_Impreza_S202_STi.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

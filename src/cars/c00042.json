@@ -1,5 +1,6 @@
 {
-    "rq": 67,
+    "carID": "c00042",
+    "cr": 670,
     "make": [
         "Alpina",
         "BMW"
@@ -29,8 +30,7 @@
     "mra": 75.65,
     "ola": 82.76,
     "description": "The marque’s attempt at beating AMG at its own game. It is effectively a BMW 7-series with the dials twisted around to 11.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/825459064712462396/alpinab7.png",
-    "333TopSpeed": 191,
+     "333TopSpeed": 191,
     "3330to60": 4.2,
     "333Handling": 80,
     "666TopSpeed": 194,
@@ -45,6 +45,6 @@
     "699TopSpeed": 194,
     "6990to60": 3.7,
     "699Handling": 85,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1018234389559246888/Alpina_B7_2009.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

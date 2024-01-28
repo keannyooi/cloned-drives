@@ -1,5 +1,6 @@
 {
-    "rq": 87,
+    "carID": "c00781",
+    "cr": 870,
     "make": "McLaren",
     "model": "540C",
     "modelYear": 2015,
@@ -25,8 +26,7 @@
     "mra": 100.33,
     "ola": 93.55,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/854718274457042974/CD_McLaren_540C.png",
-    "333TopSpeed": 202,
+     "333TopSpeed": 202,
     "3330to60": 2.9,
     "333Handling": 95,
     "666TopSpeed": 204,
@@ -41,6 +41,6 @@
     "699TopSpeed": 204,
     "6990to60": 2.6,
     "699Handling": 102,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017891877413986404/McLaren_540C.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Exist"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 16,
+    "carID": "c05071",
+    "cr": 160,
     "make": "Porsche",
     "model": "Beutler Coupe",
     "modelYear": 1957,
@@ -23,8 +24,7 @@
     "mra": 15.5,
     "ola": 61.25,
     "description": "",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1158078673879044156/miscBeutlerCoupe.png?ex=651af04f&is=65199ecf&hm=f26f28b2df85a520a91d20a108f1a194c63f1ab5d1b02a1e35b407d2eb5fa965&",
-	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1158078985280954458/MiscBeutler.png?ex=651af09a&is=65199f1a&hm=f3de8fabbf92263f5a0ec47bf68db14d6ae5347faed52d44ac01da71627bf509&",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
 
 "333TopSpeed": 99,
 "3330to60": 12.5,

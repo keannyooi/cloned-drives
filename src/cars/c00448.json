@@ -1,5 +1,6 @@
 {
-    "rq": 28,
+    "carID": "c00448",
+    "cr": 280,
     "make": "Ford",
     "model": "Focus 1.8 TDCi 100",
     "modelYear": 2002,
@@ -22,8 +23,7 @@
     "mra": 50.81,
     "ola": 67.02,
     "description": "Out with TDDi, in with TDCi.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/819390650713243658/ford_focus_1.8_tdci_zetec_100.png",
-    "333TopSpeed": 121,
+     "333TopSpeed": 121,
     "3330to60": 9.9,
     "333Handling": 71,
     "666TopSpeed": 126,
@@ -38,6 +38,6 @@
     "699TopSpeed": 126,
     "6990to60": 8.8,
     "699Handling": 77,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003308716440952934/focus_tdci.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Keanny"
 }

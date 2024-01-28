@@ -1,5 +1,6 @@
 {
-    "rq": 58,
+    "carID": "c00068",
+    "cr": 580,
     "make": "Aston Martin",
     "model": "DB7 GT",
     "modelYear": 2003,
@@ -22,8 +23,7 @@
     "mra": 88.89,
     "ola": 83.33,
     "description": "the last common version of the DB7.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/855243144466530334/db7GT.png",
-    "333TopSpeed": 187,
+     "333TopSpeed": 187,
     "3330to60": 4.6,
     "333Handling": 82,
     "666TopSpeed": 190,
@@ -38,6 +38,6 @@
     "699TopSpeed": 190,
     "6990to60": 4.1,
     "699Handling": 88,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995819180555243551/db7GT.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

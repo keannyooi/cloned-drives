@@ -1,5 +1,6 @@
 {
-    "rq": 79,
+    "carID": "c01347",
+    "cr": 790,
     "make": "Vauxhall",
     "model": "VXR220",
     "modelYear": 2004,
@@ -25,8 +26,7 @@
     "mra": 60,
     "ola": 78.5,
     "description": "A limted of sixty track focused Speedsters for UK only, equiped with larger brakes, upgraded tyres and lowered suspension, and tuned to produce 20 hp more than the Turbo.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/854627423449776149/A.VauxhallVXR220.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 3.9,
     "333Handling": 94,
     "666TopSpeed": 162,
@@ -41,6 +41,6 @@
     "699TopSpeed": 162,
     "6990to60": 3.5,
     "699Handling": 101,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1016344778151043153/Vauxhall_VXR220.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

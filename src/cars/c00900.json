@@ -1,5 +1,6 @@
 {
-    "rq": 81,
+    "carID": "c00900",
+    "cr": 810,
     "make": "Mitsubishi",
     "model": "Lancer Evolution X GSR FQ-330 TC-SST",
     "modelYear": 2009,
@@ -22,8 +23,7 @@
     "mra": 70,
     "ola": 77.27,
     "description": "Mitsubishi was scared of putting the unproven SST on the FQ-360, so they made a less powerful 330 to throw it on.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1081587896240316497/evo10gsrfq330tcsst.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 4,
     "333Handling": 94,
     "666TopSpeed": 162,
@@ -38,6 +38,6 @@
     "699TopSpeed": 162,
     "6990to60": 3.6,
     "699Handling": 101,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1081589615804301413/evo10FQ330SST.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

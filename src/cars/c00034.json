@@ -1,5 +1,6 @@
 {
-    "rq": 75,
+    "carID": "c00034",
+    "cr": 752,
     "make": "Alfa Romeo",
     "model": "Giulia Quadrifoglio",
     "modelYear": 2016,
@@ -14,7 +15,7 @@
         "Super Sedan","OG"
     ],
     "isPrize": false,
-    "weight": 1430,
+    "weight": 1595,
     "gc": "Low",
     "seatCount": 5,
     "bodyStyle": "Sedan",
@@ -25,8 +26,7 @@
     "mra": 81.26,
     "ola": 88.81,
     "description": "A truly great Italian super saloon.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/820768210029641768/AlfaRomeoGiuliaQuadrifoglio.png",
-    "333TopSpeed": 194,
+     "333TopSpeed": 194,
     "3330to60": 3.6,
     "333Handling": 92,
     "666TopSpeed": 196,
@@ -41,6 +41,6 @@
     "699TopSpeed": 196,
     "6990to60": 3.2,
     "699Handling": 99,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017164937400954942/Alfa_Romeo_Giulia_Quadrifoglio.png",
-    "creator": "Havvy"
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/AlfaRomeoGiuliaQuadrifoglio(2016).png",
+    "creator": "Bnuuy"
 }

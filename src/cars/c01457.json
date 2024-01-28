@@ -1,5 +1,6 @@
 {
-    "rq": 120,
+    "carID": "c01457",
+    "cr": 1200,
     "make": ["Marc Philipp Gemballa","Porsche"],
     "model": "Marsien (Off-Road)",
     "modelYear": 2021,
@@ -22,8 +23,7 @@
     "mra": 100,
     "ola": 76,
     "description": "More than two years of development has resulted in the first project of the son of Gemballa's, an ultra-modern but timeless designed supercar forming a hybrid between modern-day sports car with all its comfort and day-to-day practicality combined with offfroad capabilities.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/947182484519542784/CD_Marc_Philipp_Gemballa_Marsien_Off-Road.png",
-    "333TopSpeed": 134,
+     "333TopSpeed": 134,
     "3330to60": 2.4,
     "333Handling": 95,
     "666TopSpeed": 138,
@@ -38,6 +38,6 @@
     "699TopSpeed": 138,
     "6990to60": 2.1,
     "699Handling": 102,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997771784147451914/mpgoffroad.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Exist"
 }

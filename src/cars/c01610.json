@@ -1,5 +1,6 @@
 {
-    "rq": 35,
+    "carID": "c01610",
+    "cr": 350,
     "make": "Mazda",
     "model": "Protegé ES",
     "modelYear": 1999,
@@ -24,8 +25,7 @@
     "mra": 44.85,
     "ola": 71.26,
     "description": "A New Blend Of Sophistication For $13,000.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/965202703758282772/unknown.png",
-    "333TopSpeed": 122,
+     "333TopSpeed": 122,
     "3330to60": 8.3,
     "333Handling": 73,
     "666TopSpeed": 127,
@@ -40,6 +40,6 @@
     "699TopSpeed": 127,
     "6990to60": 7.4,
     "699Handling": 79,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095763142891552778/Mazda_Protege_ES_1999.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Based"
 }

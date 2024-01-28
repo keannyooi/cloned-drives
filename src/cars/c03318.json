@@ -1,4 +1,5 @@
 {
+    "carID": "c03318",
     "make": "Chevrolet",
     "model": "Bolt Cutaway",
     "modelYear": 2016,
@@ -7,7 +8,6 @@
     "collection": ["Cutaway"],
     "description": "None",
 	"active" : true,
-    "card": "https://media.discordapp.net/attachments/819199720249360384/1068494852410581013/Chevrolet_Bolt_Cutaway.png",
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1068495791813038080/Chev_Bolt.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Crossfire"
 }

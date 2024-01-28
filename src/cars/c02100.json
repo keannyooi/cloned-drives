@@ -1,5 +1,6 @@
 {
-    "rq": 1,
+    "carID": "c02100",
+    "cr": 10,
     "make": "Austin-Healey",
     "model": "Sprite Mk I Race Car \"Think Pink\"",
     "modelYear": 1959,
@@ -28,8 +29,7 @@
     "mra": 23.48,
     "ola": 53.13,
     "description": "Nightmare Fuel.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/859613763865804800/CD_Austin-Healey_Sprite_Mk_I_Race_Car_22Think_Pink22.png?width=1410&height=878",
-    "333TopSpeed": 89,
+     "333TopSpeed": 89,
     "3330to60": 19.0,
     "333Handling": 72,
     "666TopSpeed": 96,
@@ -44,6 +44,6 @@
     "699TopSpeed": 96,
     "6990to60": 17.0,
     "699Handling": 78,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017329769639071744/Austin-Healyer_Sprite_Think_Pink.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Exist"
 }

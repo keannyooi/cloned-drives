@@ -1,5 +1,6 @@
 {
-    "rq": 81,
+    "carID": "c00073",
+    "cr": 810,
     "make": "Aston Martin",
     "model": "DB7 V8 GT1",
     "modelYear": 1995,
@@ -22,8 +23,7 @@
     "mra": 107.81,
     "ola": 77.78,
     "description": "What happens when a billionaire throws money at a car maker to make a car for 1 race? throwing a 6.3L V8 into a DB7 is what.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/855242572180095016/db7gt1.png",
-    "333TopSpeed": 199,
+     "333TopSpeed": 199,
     "3330to60": 3.4,
     "333Handling": 97,
     "666TopSpeed": 201,
@@ -38,6 +38,6 @@
     "699TopSpeed": 201,
     "6990to60": 3.1,
     "699Handling": 104,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995692008595259392/db7gt1.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

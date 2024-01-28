@@ -1,5 +1,6 @@
 {
-    "rq": 95,
+    "carID": "c01640",
+    "cr": 950,
     "make": "Mitsubishi",
     "model": "Lancer Evolution II Gr.A",
     "modelYear": 1994,
@@ -22,8 +23,7 @@
     "mra": 68.85,
     "ola": 90.48,
     "description": "zooooooom.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/912491053318287390/evo2gra.png",
-    "333TopSpeed": 144,
+     "333TopSpeed": 144,
     "3330to60": 4.0,
     "333Handling": 89,
     "666TopSpeed": 147,
@@ -38,6 +38,6 @@
     "699TopSpeed": 147,
     "6990to60": 3.6,
     "699Handling": 95,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995992737943928892/evo2rally.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

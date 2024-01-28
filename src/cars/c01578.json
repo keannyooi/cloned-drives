@@ -1,5 +1,6 @@
 {
-    "rq": 23,
+    "carID": "c01578",
+    "cr": 231,
     "make": "Isuzu",
     "model": "Piazza 1.5",
     "modelYear": 1981,
@@ -23,9 +24,8 @@
     "fuelType": "Petrol",
     "mra": 39.93,
     "ola": 65.46,
-    "description": "Forgotten Giugiaro Gem. Card by Andu.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/948299288419651604/Piazza15.png",
-    "333TopSpeed": 111,
+    "description": "Forgotten Giugiaro Gem.",
+     "333TopSpeed": 111,
     "3330to60": 10.9,
     "333Handling": 71,
     "666TopSpeed": 116,
@@ -40,6 +40,6 @@
     "699TopSpeed": 116,
     "6990to60": 9.8,
     "699Handling": 77,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1050759476782833734/Piazza15.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/IsuzuPiazza15(1981).png",
     "creator": "Andu"
 }

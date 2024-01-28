@@ -1,5 +1,6 @@
 {
-    "rq": 60,
+    "carID": "c02361",
+    "cr": 600,
     "make": "Venturi",
     "model": "260 LM",
     "modelYear": 1994,
@@ -24,8 +25,7 @@
     "ola": 79.09,
     "description": "A special lightened version of the Venturi 260.",
 
-    "card": "https://media.discordapp.net/attachments/819199720249360384/978098720862261288/585DE74C-CBAA-4C18-A6CC-E2C35A932D89.png",
-	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1006049996354891776/Venturi260LM.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence",
 
     "333TopSpeed": 170,

@@ -1,5 +1,6 @@
 {
-    "rq": 43,
+    "carID": "c01308",
+    "cr": 430,
     "make": "Toyota",
     "model": "Corolla Hatchback XSE Manual",
     "modelYear": 2019,
@@ -22,8 +23,7 @@
     "mra": 56.3,
     "ola": 76.32,
     "description": "The slightly hot Toyota hatchback.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/865680888738218014/C.ToyotaCorollaHatchXSEMT.png",
-    "333TopSpeed": 123,
+     "333TopSpeed": 123,
     "3330to60": 7.2,
     "333Handling": 80,
     "666TopSpeed": 128,
@@ -38,6 +38,6 @@
     "699TopSpeed": 128,
     "6990to60": 6.5,
     "699Handling": 85,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996480646706888775/COROLLASE.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

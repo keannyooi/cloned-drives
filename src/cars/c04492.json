@@ -1,5 +1,6 @@
 {
-    "rq": 1,
+    "carID": "c04492",
+    "cr": 1,
     "make": "Micro",
     "model": "Microlino 1.0",
     "modelYear": 2018,
@@ -23,8 +24,7 @@
     "mra": 0,
     "ola": 17.04,
     "description": "Modern interpretation of the BMW/Iso Isetta from the 50's as an small electric \"quadricycle\" by a Swiss company called Micro. It offers between 120 and 200 km's of range depending on the battery and it produces a whopping 15 hp. Unfortunately, this version never made it into production.",
-    "card": "https://media.discordapp.net/attachments/1077292374608326656/1130797372239253547/Micro_Microlino_1.0.png",
-    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1130797492791947286/Micro_Microlino_1.0.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/MicroMicrolino1.0(2018).png",
     "creator": "Crossfire",
 
     "333TopSpeed": 65, 

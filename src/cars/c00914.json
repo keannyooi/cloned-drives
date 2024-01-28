@@ -1,5 +1,6 @@
 {
-    "rq": 38,
+    "carID": "c00914",
+    "cr": 382,
     "make": "Mitsubishi",
     "model": "Starion 2000 Turbo GSR-III",
     "modelYear": 1984,
@@ -24,8 +25,7 @@
     "mra": 53.7,
     "ola": 78.26,
     "description": "An intercooled Starion with resized fog lights.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/856532547098247188/mitsubishi_starion_2000_turbo_gsr-iii.png",
-    "333TopSpeed": 117,
+     "333TopSpeed": 117,
     "3330to60": 6.6,
     "333Handling": 79,
     "666TopSpeed": 121,
@@ -40,6 +40,6 @@
     "699TopSpeed": 121,
     "6990to60": 5.9,
     "699Handling": 84,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003166283442966598/starion_gsr-iii.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/MitsubishiStarion2000TurboGSR-III(1984).png",
     "creator": "Keanny"
 }

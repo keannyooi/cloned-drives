@@ -1,5 +1,6 @@
 {
-    "rq": 46,
+    "carID": "c04423",
+    "cr": 460,
     "make": "Aston Martin",
     "model": "DBS C Touring",
     "modelYear": 1966,
@@ -13,7 +14,7 @@
     "isPrize": false,
 	
     "weight": 1432,
-    "gc": "Medium",
+    "gc": "Mediuk",
     "seatCount": 4,
     "bodyStyle": "Coupe",
     "tcs": false,
@@ -23,8 +24,7 @@
     "mra": 87.14,
     "ola": 85.24,
     "description": "",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1115273007355674724/DBSCTouring.png",
-	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1115273854823174266/dbsctouring.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
 
 "333TopSpeed": 173,
 "3330to60": 5.8,

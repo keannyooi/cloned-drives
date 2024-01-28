@@ -1,7 +1,8 @@
 {
-    "rq": 96,
+    "carID": "c00645",
+    "cr": 956,
     "make": "Lamborghini",
-    "model": "Aventador LP750-4 SV",
+    "model": "Aventador LP750-4 SuperVeloce",
     "modelYear": 2015,
     "country": "IT",
     "topSpeed": 217,
@@ -22,8 +23,7 @@
     "mra": 90.32,
     "ola": 81.48,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/820817208463589416/2015_Lamborghini_Avantador_SV.png",
-    "333TopSpeed": 219,
+     "333TopSpeed": 219,
     "3330to60": 2.6,
     "333Handling": 96,
     "666TopSpeed": 222,
@@ -38,6 +38,6 @@
     "699TopSpeed": 222,
     "6990to60": 2.3,
     "699Handling": 103,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996622585548787762/Lamborghini_Aventador_LP750_SV_2015_Hud.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/LamborghiniAventadorLP750-4SuperVeloce(2015).png",
     "creator": "DodgeDemon"
 }

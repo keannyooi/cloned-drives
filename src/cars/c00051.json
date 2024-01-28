@@ -1,5 +1,6 @@
 {
-    "rq": 59,
+    "carID": "c00051",
+    "cr": 590,
     "make": "Ariel",
     "model": "Atom",
     "modelYear": 2000,
@@ -22,8 +23,7 @@
     "mra": 47.27,
     "ola": 73.08,
     "description": "If you think that a 120 hp Rover engine will not do this car's justice, you will be dead wrong.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/848792251488665610/image0.png",
-    "333TopSpeed": 120,
+     "333TopSpeed": 120,
     "3330to60": 4.9,
     "333Handling": 94,
     "666TopSpeed": 124,
@@ -38,6 +38,6 @@
     "699TopSpeed": 124,
     "6990to60": 4.4,
     "699Handling": 101,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996109893411016856/ArielAtom.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

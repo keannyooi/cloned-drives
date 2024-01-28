@@ -1,5 +1,6 @@
 {
-    "rq": 70,
+    "carID": "c00370",
+    "cr": 700,
     "make": "Dodge",
     "model": "Viper GTS",
     "modelYear": 1996,
@@ -25,8 +26,7 @@
     "mra": 90.32,
     "ola": 80.95,
     "description": "A tamer Viper in comparison to the 1992 Viper with the introduction of a double bubble hardtop.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/841174513194500106/image0.jpg",
-    "333TopSpeed": 184,
+     "333TopSpeed": 184,
     "3330to60": 4.0,
     "333Handling": 91,
     "666TopSpeed": 187,
@@ -41,6 +41,6 @@
     "699TopSpeed": 187,
     "6990to60": 3.6,
     "699Handling": 98,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1018262135534530702/Dodge_Viper_GTS_1996.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

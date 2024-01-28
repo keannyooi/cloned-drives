@@ -216,21 +216,23 @@ const currentEventsChannelID = "955467202138620014";
 const currentOffersChannelID = "969786587191849011";
 const dealershipChannelID = "995938671209500702";
 
-const moneyEmojiID = "726017235826770021";
-const fuseEmojiID = "726018658635218955";
-const trophyEmojiID = "775636479145148418";
+const moneyEmojiID = "1162881967738601502";
+const fuseEmojiID = "1162882165109964892";
+const trophyEmojiID = "1162882347499262094";
 const glofEmojiID = "967031943222923335";
-const packEmojiID = "966972757415972884";
-const blackMarketEmojiID = "831967206446465064";
-const legendaryEmojiID = "857512942471479337";
-const epicEmojiID = "726025468230238268";
-const ultraRareEmojiID = "726025431937187850";
-const superRareEmojiID = "857513197937623042";
-const rareEmojiID = "726025302656024586";
-const uncommonEmojiID = "726025273421725756";
-const commonEmojiID = "726020544264273928";
+const packEmojiID = "966972920687652885";
+const blackMarketEmojiID = "1162936880048898059";
+const bossEmojiID = "1162881924453371935";
+const mysticEmojiID = "1162882081005764668";
+const legendaryEmojiID = "1162882065017081897";
+const epicEmojiID = "1162882032347644025";
+const exoticEmojiID = "1162882048512491631";
+const standardEmojiID = "1162882111448039434";
+const rareEmojiID = "1162882097657155614";
+const uncommonEmojiID = "1162882129273815140";
+const commonEmojiID = "1162882014668668958";
 
-const failedToLoadImageLink = "https://media.discordapp.net/attachments/716917404868935691/801370166826238002/unknown.png";
+const failedToLoadImageLink = "https://file.garden/ZSrBMiDRyR84aPJp/unknown.png";
 
 module.exports = {
     carSave,
@@ -257,10 +259,12 @@ module.exports = {
     glofEmojiID,
     packEmojiID,
     blackMarketEmojiID,
+	bossEmojiID,
+    mysticEmojiID,
     legendaryEmojiID,
     epicEmojiID,
-    ultraRareEmojiID,
-    superRareEmojiID,
+    exoticEmojiID,
+    standardEmojiID,
     rareEmojiID,
     uncommonEmojiID,
     commonEmojiID,

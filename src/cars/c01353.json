@@ -1,5 +1,6 @@
 {
-    "rq": 56,
+    "carID": "c01353",
+    "cr": 560,
     "make": "Volkswagen",
     "model": "Atlas Basecamp",
     "modelYear": 2020,
@@ -24,8 +25,7 @@
     "mra": 63.41,
     "ola": 69.23,
     "description": "VW attempts, fails to build more off-road-capable Atlas.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/848292162629533716/AtlasVR6BaseC.png",
-    "333TopSpeed": 120,
+     "333TopSpeed": 120,
     "3330to60": 7.4,
     "333Handling": 75,
     "666TopSpeed": 125,
@@ -40,6 +40,6 @@
     "699TopSpeed": 125,
     "6990to60": 6.6,
     "699Handling": 81,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017505863256260720/Vw_Atlas_Basecamp.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Andu"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 57,
+    "carID": "c01040",
+    "cr": 570,
     "make": "Polaris",
     "model": "RZR XP 1000 EPS",
     "modelYear": 2015,
@@ -22,8 +23,7 @@
     "mra": 12.56,
     "ola": 76.05,
     "description": "The ultimate fun Machine.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/938792241529507920/RZR.png",
-    "333TopSpeed": 104,
+     "333TopSpeed": 104,
     "3330to60": 7.2,
     "333Handling": 75,
     "666TopSpeed": 110,
@@ -38,6 +38,6 @@
     "699TopSpeed": 110,
     "6990to60": 6.5,
     "699Handling": 81,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1020054716195033109/Polaris_RZR_1000.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

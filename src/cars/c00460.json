@@ -1,5 +1,6 @@
 {
-    "rq": 36,
+    "carID": "c00460",
+    "cr": 360,
     "make": "Ford",
     "model": "Focus ZTW PZEV",
     "modelYear": 2003,
@@ -22,8 +23,7 @@
     "mra": 49.7,
     "ola": 68.17,
     "description": "A Partial Zero Emission Vehicle only available in certain American states.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/819390819285991424/ford_focus_ztw_pzev.png",
-    "333TopSpeed": 111,
+     "333TopSpeed": 111,
     "3330to60": 7.8,
     "333Handling": 74,
     "666TopSpeed": 116,
@@ -38,6 +38,6 @@
     "699TopSpeed": 116,
     "6990to60": 7,
     "699Handling": 80,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003308562216386650/focus_ztw.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Keanny"
 }

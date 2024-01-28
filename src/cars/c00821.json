@@ -1,5 +1,6 @@
 {
-    "rq": 67,
+    "carID": "c00821",
+    "cr": 670,
     "make": [
         "Mercedes-AMG",
         "Mercedes-Benz"
@@ -27,8 +28,7 @@
     "mra": 69.72,
     "ola": 87.72,
     "description": "A sedan variant of the Hatchback.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/824611586374893648/A35Sedan.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 4.4,
     "333Handling": 92,
     "666TopSpeed": 162,
@@ -43,6 +43,6 @@
     "699TopSpeed": 162,
     "6990to60": 3.9,
     "699Handling": 99,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017732419366948955/Mercedes_A_35_Sedan.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

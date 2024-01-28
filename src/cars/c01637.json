@@ -1,5 +1,6 @@
 {
-    "rq": 15,
+    "carID": "c01637",
+    "cr": 150,
     "make": "Mitsubishi",
     "model": "i-MiEV Cargo Concept",
     "modelYear": 2009,
@@ -22,8 +23,7 @@
     "mra": 3.33,
     "ola": 66.67,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/930221404778008586/argoconc.png",
-    "333TopSpeed": 87,
+     "333TopSpeed": 87,
     "3330to60": 12.8,
     "333Handling": 66,
     "666TopSpeed": 93,
@@ -38,6 +38,6 @@
     "699TopSpeed": 93,
     "6990to60": 11.5,
     "699Handling": 71,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997545966267813916/icargo.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

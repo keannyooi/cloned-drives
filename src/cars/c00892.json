@@ -1,5 +1,6 @@
 {
-    "rq": 68,
+    "carID": "c00892",
+    "cr": 680,
     "make": "Mitsubishi",
     "model": "Lancer Evolution VI GSR",
     "modelYear": 1999,
@@ -22,8 +23,7 @@
     "mra": 67.14,
     "ola": 76,
     "description": "The Evolution VI's changes mainly focused on cooling and engine durability. The Evolution VI received new bodywork yet again, with the most easily noticeable change being within the front bumper where the huge fog lights were reduced in size and moved to the corners for better airflow.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1077318423492698244/evo6gsrredo.png",
-"333TopSpeed": 154,
+ "333TopSpeed": 154,
 "3330to60": 4.8,
 "333Handling": 85,
 
@@ -42,6 +42,6 @@
 "996TopSpeed": 161,
 "9960to60": 4.3,
 "996Handling": 87,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996026211346165861/evo6gsr.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

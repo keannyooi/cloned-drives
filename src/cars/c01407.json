@@ -1,5 +1,6 @@
 {
-    "rq": 69,
+    "carID": "c01407",
+    "cr": 690,
     "make": "Volkswagen",
     "model": "Touareg 6.0 W12",
     "modelYear": 2005,
@@ -24,8 +25,7 @@
     "mra": 70.01,
     "ola": 67.86,
     "description": "Rapid and refined but dynamically challenged and hugely thirsty. Card by Andu",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/848480951898341426/Touareg60.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 5.3,
     "333Handling": 76,
     "666TopSpeed": 162,
@@ -40,6 +40,6 @@
     "699TopSpeed": 162,
     "6990to60": 4.8,
     "699Handling": 82,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1025333859446947860/TouaregW12.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": ""
 }

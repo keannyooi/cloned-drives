@@ -1,5 +1,6 @@
 {
-    "rq": 35,
+    "carID": "c00678",
+    "cr": 350,
     "make": "Lancia",
     "model": "Thema Multijet 240",
     "modelYear": 2011,
@@ -22,8 +23,7 @@
     "mra": 57.48,
     "ola": 63.01,
     "description": "Italian Chrysler.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/837992512652050432/D.LanciaThemaMultijet240.png",
-    "333TopSpeed": 146,
+     "333TopSpeed": 146,
     "3330to60": 6.9,
     "333Handling": 75,
     "666TopSpeed": 149,
@@ -38,6 +38,6 @@
     "699TopSpeed": 149,
     "6990to60": 6.2,
     "699Handling": 81,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100133006217318579/theemaa.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

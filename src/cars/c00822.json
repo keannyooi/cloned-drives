@@ -1,5 +1,6 @@
 {
-    "rq": 48,
+    "carID": "c00822",
+    "cr": 480,
     "make": [
         "Mercedes-AMG",
         "Mercedes-Benz"
@@ -29,8 +30,7 @@
     "mra": 72.15,
     "ola": 77.19,
     "description": "Conceived as a gift for Mika Häkkinen, but the crazy boffins at AMG deemed it an excellent idea to simply stick another engine in the rear, mounted under the boot floor like a Smart ForTwo.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/861972048104390666/A38.png",
-    "333TopSpeed": 134,
+     "333TopSpeed": 134,
     "3330to60": 5.4,
     "333Handling": 79,
     "666TopSpeed": 138,
@@ -45,6 +45,6 @@
     "699TopSpeed": 138,
     "6990to60": 4.8,
     "699Handling": 84,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100139161249382410/A38AMG.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Mercedes-AMGA38(2000).png",
     "creator": "Andu"
 }

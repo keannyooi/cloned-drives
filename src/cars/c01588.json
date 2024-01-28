@@ -1,5 +1,6 @@
 {
-    "rq": 48,
+    "carID": "c01588",
+    "cr": 480,
     "make": "Lexus",
     "model": "LX 570",
     "modelYear": 2016,
@@ -24,8 +25,7 @@
     "mra": 60.5,
     "ola": 68.39,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/869104788200095744/Lexus_LX570_CD.png",
-    "333TopSpeed": 118,
+     "333TopSpeed": 118,
     "3330to60": 6.8,
     "333Handling": 69,
     "666TopSpeed": 122,
@@ -40,6 +40,6 @@
     "699TopSpeed": 122,
     "6990to60": 6.1,
     "699Handling": 74,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095365416517378172/Lexus_LX_570_2016.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "AK1"
 }

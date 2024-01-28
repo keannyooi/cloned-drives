@@ -1,5 +1,6 @@
 {
-    "rq": 68,
+    "carID": "c00063",
+    "cr": 680,
     "make": "Aston Martin",
     "model": "DB11 V8 Volante",
     "modelYear": 2018,
@@ -22,8 +23,7 @@
     "mra": 87.23,
     "ola": 97.56,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/852120782884438026/db11VolanteV8.png",
-    "333TopSpeed": 190,
+     "333TopSpeed": 190,
     "3330to60": 3.9,
     "333Handling": 88,
     "666TopSpeed": 193,
@@ -38,6 +38,6 @@
     "699TopSpeed": 193,
     "6990to60": 3.5,
     "699Handling": 94,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995979712151167086/db11v8volante.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

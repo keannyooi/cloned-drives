@@ -1,5 +1,6 @@
 {
-    "rq": 75,
+    "carID": "c02167",
+    "cr": 750,
     "make": "Lotus",
     "model": "Evora GT",
     "modelYear": 2020,
@@ -24,8 +25,7 @@
     "mra": 62.64,
     "ola": 81.1,
     "description": "Possibly one of the most visceral cars available on the market.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/848322819741188096/gt.png",
-    "333TopSpeed": 191,
+     "333TopSpeed": 191,
     "3330to60": 3.7,
     "333Handling": 94,
     "666TopSpeed": 194,
@@ -40,6 +40,6 @@
     "699TopSpeed": 194,
     "6990to60": 3.3,
     "699Handling": 101,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1018082018417967104/Lotus_Evora_GT.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "McNuggets"
 }

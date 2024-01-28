@@ -1,5 +1,6 @@
 {
-    "rq": 88,
+    "carID": "c00783",
+    "cr": 880,
     "make": "McLaren",
     "model": "570S",
     "modelYear": 2016,
@@ -24,8 +25,7 @@
     "mra": 92.06,
     "ola": 93.1,
     "description": "The Baby McLaren.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/826715930401701921/CD_McLaren_570S.png",
-    "333TopSpeed": 207,
+     "333TopSpeed": 207,
     "3330to60": 2.8,
     "333Handling": 95,
     "666TopSpeed": 209,
@@ -40,6 +40,6 @@
     "699TopSpeed": 209,
     "6990to60": 2.5,
     "699Handling": 102,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017155636376645642/McLaren_570S.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Exist"
 }

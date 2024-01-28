@@ -1,5 +1,6 @@
 {  
-    "rq": 87,
+    "carID": "c03649",
+    "cr": 870,
     "make": "Ferrari",
     "model": "512 S Codalunga",
     "modelYear": 1970,
@@ -22,8 +23,7 @@
     "mra": 103.45,
     "ola": 100,
     "description": "Specially designed for the Mulsanne straight, it still failed to bring Ferrari the victory they were hoping for.",
-    "card": "https://cdn.discordapp.com/attachments/1074666970546438184/1074670029011959828/512_S_codalunga_for_cd.png",
-    "333TopSpeed": 227,
+     "333TopSpeed": 227,
     "3330to60": 2.9,
     "333Handling": 95,
     "666TopSpeed": 230,
@@ -38,6 +38,6 @@
     "699TopSpeed": 230,
     "6990to60": 2.6,
     "699Handling": 102,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1099803888191799336/512_s_codalunga.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Lemon"
 }

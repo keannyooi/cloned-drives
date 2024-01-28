@@ -1,5 +1,6 @@
 {
-    "rq": 39,
+    "carID": "c01633",
+    "cr": 390,
     "make": "Mitsubishi",
     "model": "Colt Ralliart",
     "modelYear": 2009,
@@ -22,8 +23,7 @@
     "mra": 52.14,
     "ola": 68.49,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/869168641738952704/andtheysayionlymakelegends.png",
-    "333TopSpeed": 134,
+     "333TopSpeed": 134,
     "3330to60": 6.9,
     "333Handling": 79,
     "666TopSpeed": 138,
@@ -38,6 +38,6 @@
     "699TopSpeed": 138,
     "6990to60": 6.2,
     "699Handling": 84,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997644829007814667/coltralliart.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

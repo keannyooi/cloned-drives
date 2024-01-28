@@ -1,5 +1,6 @@
 {
-    "rq": 15,
+    "carID": "c00492",
+    "cr": 148,
     "make": "General Motors",
     "model": "EV1 CNG",
     "modelYear": 1998,
@@ -26,8 +27,7 @@
     "mra": 38.69,
     "ola": 70.91,
     "description": "GM toyed around with the idea of low-emission CNG engines in this EV1. The batteries were replaced with 2 CNG tanks capable of a 3000psi maximum operating pressure and a 4-minute refuel time. A modified 3-cyllinder Suzuki G10T engine that delivered 72hp could be seen in place of the motors.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/865584829436395570/general_motors_ev1_cng.png",
-    "333TopSpeed": 87,
+     "333TopSpeed": 87,
     "3330to60": 10.5,
     "333Handling": 69,
     "666TopSpeed": 93,
@@ -42,6 +42,6 @@
     "699TopSpeed": 93,
     "6990to60": 9.4,
     "699Handling": 74,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003163989804597289/ev1_cng.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/GeneralMotorsEV1CNG(1998).png",
     "creator": "Keanny"
 }

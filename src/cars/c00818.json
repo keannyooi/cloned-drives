@@ -1,5 +1,6 @@
 {
-    "rq": 75,
+    "carID": "c00818",
+    "cr": 750,
     "make": "McLaren",
     "model": "Ultima Mk3 \"Albert\" F1 Prototype",
     "modelYear": 1991,
@@ -27,8 +28,7 @@
     "mra": 84.44,
     "ola": 93.71,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/830976697822085160/CD_McLaren_Ultima_Mk3_22Albert22_F1_Prototype.png",
-    "333TopSpeed": 188,
+     "333TopSpeed": 188,
     "3330to60": 3.6,
     "333Handling": 91,
     "666TopSpeed": 191,
@@ -43,6 +43,6 @@
     "699TopSpeed": 191,
     "6990to60": 3.2,
     "699Handling": 98,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1084938243000246332/Mclaren_albert.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Exist"
 }

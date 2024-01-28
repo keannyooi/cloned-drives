@@ -1,5 +1,6 @@
 {
-    "rq": 95,
+    "carID": "c00640",
+    "cr": 950,
     "make": "Koenigsegg",
     "model": "Regera",
     "modelYear": 2016,
@@ -22,8 +23,7 @@
     "mra": 108.33,
     "ola": 107.69,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/843212436663566366/Regera3.png",
-    "333TopSpeed": 257,
+     "333TopSpeed": 257,
     "3330to60": 2.5,
     "333Handling": 96,
     "666TopSpeed": 259,
@@ -38,6 +38,6 @@
     "699TopSpeed": 259,
     "6990to60": 2.2,
     "699Handling": 103,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997534011696087230/regera.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

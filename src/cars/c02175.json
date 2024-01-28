@@ -1,5 +1,6 @@
 {
-    "rq": 61,
+    "carID": "c02175",
+    "cr": 610,
     "make": "Lotus",
     "model": "Exige",
     "modelYear": 2004,
@@ -24,8 +25,7 @@
     "mra": 60.71,
     "ola": 70.59,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/891671743712870441/2004_Lotus_Exige.png",
-    "333TopSpeed": 149,
+     "333TopSpeed": 149,
     "3330to60": 4.8,
     "333Handling": 93,
     "666TopSpeed": 152,
@@ -40,6 +40,6 @@
     "699TopSpeed": 152,
     "6990to60": 4.3,
     "699Handling": 100,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1050788394814406746/exige04.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Tom"
 }

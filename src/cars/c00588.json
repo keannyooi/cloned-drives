@@ -1,5 +1,6 @@
 {
-    "rq": 77,
+    "carID": "c00588",
+    "cr": 770,
     "make": "Jaguar",
     "model": "F-Type R Coupe",
     "modelYear": 2015,
@@ -22,8 +23,7 @@
     "mra": 80,
     "ola": 100,
     "description": "A faster E-Type's Spiritual successor with a roary supercharged V8.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/837558519204544532/image0.png",
-    "333TopSpeed": 191,
+     "333TopSpeed": 191,
     "3330to60": 3.4,
     "333Handling": 93,
     "666TopSpeed": 194,
@@ -38,6 +38,6 @@
     "699TopSpeed": 194,
     "6990to60": 3.1,
     "699Handling": 100,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996289097754746920/JaguarFTypeR.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

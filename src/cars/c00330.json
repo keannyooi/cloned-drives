@@ -1,7 +1,8 @@
 {
-    "rq": 25,
+    "carID": "c00330",
+    "cr": 254,
     "make": "Daewoo",
-    "model": "Lanos SX",
+    "model": "Lanos 1.6 SX Hatchback",
     "modelYear": 1997,
     "country": "KR",
     "topSpeed": 114,
@@ -23,9 +24,8 @@
     "fuelType": "Petrol",
     "mra": 44.42,
     "ola": 59.91,
-    "description": "The second coming of a car that is running and going. Card by Andu",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/821332521395552266/DaewooLanossex.png",
-    "333TopSpeed": 119,
+    "description": "Barebones basic, offered rather average fuel economy and a driving dynamic that could only be summed up in one word: Chaotic.",
+     "333TopSpeed": 119,
     "3330to60": 10.8,
     "333Handling": 70,
     "666TopSpeed": 123,
@@ -40,6 +40,6 @@
     "699TopSpeed": 123,
     "6990to60": 9.7,
     "699Handling": 75,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1050913929200676874/Lanos.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Andu"
 }

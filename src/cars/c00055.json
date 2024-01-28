@@ -1,5 +1,6 @@
 {
-    "rq": 82,
+    "carID": "c00055",
+    "cr": 820,
     "make": "Ascari",
     "model": "KZ1-R LM",
     "modelYear": 2008,
@@ -26,8 +27,7 @@
     "mra": 86.05,
     "ola": 86.49,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/850349946795851856/CD_Ascari_KZ1-R_LM.png",
-    "333TopSpeed": 203,
+     "333TopSpeed": 203,
     "3330to60": 3.5,
     "333Handling": 99,
     "666TopSpeed": 205,
@@ -42,6 +42,6 @@
     "699TopSpeed": 205,
     "6990to60": 3.1,
     "699Handling": 107,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017897507201753208/Ascari_KZ1-R_LM.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Exist"
 }

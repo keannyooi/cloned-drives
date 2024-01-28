@@ -1,5 +1,6 @@
 {
-    "rq": 80,
+    "carID": "c04500",
+    "cr": 800,
     "make": ["Open Flash Performance", "Toyota"],
     "model": "Toyota GR Supra 3.0",
     "modelYear": 2021,
@@ -24,8 +25,7 @@
     "mra": 70.21,
     "ola": 84.84,
     "description": "OpenFlash Performance brings more power and sharper reflexes to the latest six-cylinder Supra without degrading its civility.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1145822290999787650/S.OFPSupra.png",
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1145822472181129396/SUPRA1.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor",
 
     "333TopSpeed": 168,

@@ -1,5 +1,6 @@
 {
-    "rq": 53,
+    "carID": "c01203",
+    "cr": 530,
     "make": "Subaru",
     "model": "Impreza WRX",
     "modelYear": 2002,
@@ -23,8 +24,7 @@
     "mra": 51.82,
     "ola": 70.18,
     "description": "The first introduction of the Subaru’s WRX performance variant in the United States.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/826999623809499156/image0.jpg",
-
+ 
     "333TopSpeed": 148,
     "3330to60": 5.4,
     "333Handling": 75,
@@ -45,6 +45,6 @@
     "6990to60": 4.8,
     "699Handling": 81,
 
-    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1094608209743986708/wrx_2002.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

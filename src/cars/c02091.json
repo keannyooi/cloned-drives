@@ -1,5 +1,6 @@
 {
-    "rq": 81,
+    "carID": "c02091",
+    "cr": 810,
     "make": "Alfa Romeo",
     "model": "TZ3 Stradale",
     "modelYear": 2011,
@@ -25,8 +26,7 @@
     "mra": 79.09,
     "ola": 100,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/958000808903970846/alfa_romeo_tz3_stradale_for_cd.png",
-    "333TopSpeed": 205,
+     "333TopSpeed": 205,
     "3330to60": 3.2,
     "333Handling": 96,
     "666TopSpeed": 207,
@@ -41,6 +41,6 @@
     "699TopSpeed": 207,
     "6990to60": 2.9,
     "699Handling": 103,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1000904723097997444/tz3stradale.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Lemon"
 }

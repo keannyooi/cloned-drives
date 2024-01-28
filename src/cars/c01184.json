@@ -1,5 +1,6 @@
 {
-    "rq": 78,
+    "carID": "c01184",
+    "cr": 782,
     "make": ["Startech", "Tesla"],
     "model": "Model 3 Performance",
     "modelYear": 2020,
@@ -23,8 +24,7 @@
     "mra": 63.97,
     "ola": 98.22,
     "description": "Startech offers a full aftermarket makeover for the Tesla Model 3 for around USD$17,000. This makeover includes a bodykit complete with a spoiler that is said to be inspired by Formula 1 cars, faux carbon fiber trim inside and out, custom-designed 20-inch rims and a 30 ~ 40mm lowering kit. Shmee150 has featured and driven it on his YouTube channel, you can watch the video [here](https://youtu.be/7WO9EWfNRWY).",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/858544196808605716/startech_model_3.png",
-
+ 
     "333TopSpeed": 165,
     "3330to60": 3.1,
     "333Handling": 89,
@@ -45,6 +45,6 @@
     "6990to60": 2.8,
     "699Handling": 95,
 
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1002952037677400165/startech_model_3.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/StartechModel3Performance(2020).png",
     "creator": "Keanny"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 82,
+    "carID": "c01266",
+    "cr": 821,
     "make": "Tesla",
     "model": "Model S P100D",
     "modelYear": 2016,
@@ -24,8 +25,7 @@
     "mra": 60.71,
     "ola": 83.02,
     "description": "The 2016 facelift discards the old pseudo-grille for a new body-coloured fascia among other things. Later that year, the P100D came out and it was quicker than anything on the road (excluding those extensively modified drag builds). You better prepare yourself when you press that button saying \"Yes, bring it on!\".",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/858545060799184927/tesla_model_s_p100d.png",
-    "333TopSpeed": 166,
+     "333TopSpeed": 166,
     "3330to60": 2.4,
     "333Handling": 83,
     "666TopSpeed": 169,
@@ -40,6 +40,6 @@
     "699TopSpeed": 169,
     "6990to60": 2.1,
     "699Handling": 89,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1002950889436348536/model_s_p100d.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/TeslaModelSP100D(2016).png",
     "creator": "Keanny"
 }

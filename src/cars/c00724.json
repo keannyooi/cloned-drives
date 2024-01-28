@@ -1,5 +1,6 @@
 {
-    "rq": 87,
+    "carID": "c00724",
+    "cr": 870,
     "make": "Lotus",
     "model": "3-Eleven 430",
     "modelYear": 2018,
@@ -25,8 +26,7 @@
     "mra": 91.18,
     "ola": 90.32,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/943648072775368764/toms3peleve.png",
-    "333TopSpeed": 183,
+     "333TopSpeed": 183,
     "3330to60": 2.9,
     "333Handling": 97,
     "666TopSpeed": 186,
@@ -41,6 +41,6 @@
     "699TopSpeed": 186,
     "6990to60": 2.6,
     "699Handling": 104,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1018080219162218526/Lotus_3-Eleven_430.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Tom"
 }

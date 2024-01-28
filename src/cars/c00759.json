@@ -1,5 +1,6 @@
 {
-    "rq": 61,
+    "carID": "c00759",
+    "cr": 610,
     "make": [
         "Maybach",
         "Mercedes-Benz"
@@ -27,8 +28,7 @@
     "mra": 81.63,
     "ola": 70,
     "description": "The base luxury model offered on Maybach's reawakening.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/828157954401894420/2002_Maybach_57.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 4.7,
     "333Handling": 70,
     "666TopSpeed": 162,
@@ -43,6 +43,6 @@
     "699TopSpeed": 162,
     "6990to60": 4.2,
     "699Handling": 75,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095034396932849734/Maybach_57.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "DodgeDemon"
 }

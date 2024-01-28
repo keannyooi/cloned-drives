@@ -1,5 +1,6 @@
 {
-    "rq": 23,
+    "carID": "c00926",
+    "cr": 230,
     "make": "Nissan",
     "model": "240SX SE (S13)",
     "modelYear": 1990,
@@ -22,8 +23,7 @@
     "mra": 59.76,
     "ola": 60.47,
     "description": "If your looking to build a drift car, look no further.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/819955669225963590/240SX.png",
-    "333TopSpeed": 112,
+     "333TopSpeed": 112,
     "3330to60": 8.2,
     "333Handling": 77,
     "666TopSpeed": 117,
@@ -38,6 +38,6 @@
     "699TopSpeed": 117,
     "6990to60": 7.3,
     "699Handling": 83,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995981932577968148/240SX.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

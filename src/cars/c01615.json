@@ -1,5 +1,6 @@
 {
-    "rq": 36,
+    "carID": "c01615",
+    "cr": 360,
     "make": "Mazda",
     "model": "RX-7 GTUs",
     "modelYear": 1989,
@@ -22,8 +23,7 @@
     "mra": 58.23,
     "ola": 72.12,
     "description": "A very special RX-7 to commemorate the RX-7's IMSA domination, less than 100 's' models were made. ",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/971796348129132554/Mazda_RX-7_GTUs_1989.png",
-    "333TopSpeed": 134,
+     "333TopSpeed": 134,
     "3330to60": 7.4,
     "333Handling": 81,
     "666TopSpeed": 138,
@@ -38,6 +38,6 @@
     "699TopSpeed": 138,
     "6990to60": 6.6,
     "699Handling": 87,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996621418445930586/Mazda_RX-7_GTUs_1989_Hud.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "DodgeDemon"
 }

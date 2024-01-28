@@ -1,5 +1,6 @@
 {
-    "rq": 62,
+    "carID": "c01496",
+    "cr": 620,
     "make": "FPV",
     "model": "GT F",
     "modelYear": 2014,
@@ -25,8 +26,7 @@
     "mra": 100,
     "ola": 88.88,
     "description": "An Aussie Drag car :floosh:.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/849635124332724234/CD_FPV_GT_F.png",
-    "333TopSpeed": 184,
+     "333TopSpeed": 184,
     "3330to60": 4.3,
     "333Handling": 82,
     "666TopSpeed": 187,
@@ -41,6 +41,6 @@
     "699TopSpeed": 187,
     "6990to60": 3.8,
     "699Handling": 88,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1019994332842958898/FPV_GT_F.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Exist"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 42,
+    "carID": "c00616",
+    "cr": 420,
     "make": "Kia",
     "model": "K5 EX",
     "modelYear": 2021,
@@ -24,8 +25,7 @@
     "mra": 56.52,
     "ola": 71.79,
     "description": "Called the \"sportiest\" sedan by Forbes.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/819391321553764372/kia_k5_ex.png",
-    "333TopSpeed": 132,
+     "333TopSpeed": 132,
     "3330to60": 7.4,
     "333Handling": 77,
     "666TopSpeed": 136,
@@ -40,6 +40,6 @@
     "699TopSpeed": 136,
     "6990to60": 6.6,
     "699Handling": 83,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1009385025969606696/k5_ex.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Keanny"
 }

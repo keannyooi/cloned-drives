@@ -1,5 +1,6 @@
 {
-    "rq": 51,
+    "carID": "c00674",
+    "cr": 510,
     "make": "Lancia",
     "model": "Delta S4",
     "modelYear": 1985,
@@ -26,8 +27,7 @@
     "mra": 75.95,
     "ola": 83.02,
     "description": "Better known as the 'Stradale', this Delta was five times more expensive than any Delta at the time.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/821878065113858078/unknown.png",
-    "333TopSpeed": 144,
+     "333TopSpeed": 144,
     "3330to60": 5.7,
     "333Handling": 76,
     "666TopSpeed": 147,
@@ -42,6 +42,6 @@
     "699TopSpeed": 147,
     "6990to60": 5.1,
     "699Handling": 82,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1020007007882842264/Lancia_Delta_S4.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

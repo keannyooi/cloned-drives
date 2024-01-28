@@ -1,5 +1,6 @@
 {
-    "rq": 16,
+    "carID": "c01045",
+    "cr": 160,
     "make": "Pontiac",
     "model": "Firebird Trans Am",
     "modelYear": 1977,
@@ -25,8 +26,7 @@
     "mra": 46.5,
     "ola": 68.82,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/821725374903484476/cate-test.png",
-    "333TopSpeed": 115,
+     "333TopSpeed": 115,
     "3330to60": 8.8,
     "333Handling": 74,
     "666TopSpeed": 119,
@@ -41,6 +41,6 @@
     "699TopSpeed": 119,
     "6990to60": 7.9,
     "699Handling": 80,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1004784332755435551/Pontiac-Firebird-Trans-Am.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Johnny"
 }

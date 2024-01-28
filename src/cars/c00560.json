@@ -1,5 +1,6 @@
 {
-    "rq": 61,
+    "carID": "c00560",
+    "cr": 610,
     "make": "Hyundai",
     "model": "Genesis Coupe 3.8 R-Spec",
     "modelYear": 2013,
@@ -24,8 +25,7 @@
     "mra": 67.11,
     "ola": 82.35,
     "description": "Second gen of the surprisingly great Hyundai.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/825458933626961920/redgenny.png",
-    "333TopSpeed": 154,
+     "333TopSpeed": 154,
     "3330to60": 4.8,
     "333Handling": 84,
     "666TopSpeed": 158,
@@ -40,6 +40,6 @@
     "699TopSpeed": 158,
     "6990to60": 4.3,
     "699Handling": 90,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1050969812140044298/GenesisR.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

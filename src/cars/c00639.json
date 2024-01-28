@@ -1,5 +1,6 @@
 {
-    "rq": 100,
+    "carID": "c00639",
+    "cr": 1000,
     "make": "Koenigsegg",
     "model": "One:1",
     "modelYear": 2014,
@@ -22,8 +23,7 @@
     "mra": 142.11,
     "ola": 100,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/932597611259646022/one1.png",
-    "333TopSpeed": 282,
+     "333TopSpeed": 282,
     "3330to60": 2.6,
     "333Handling": 99,
     "666TopSpeed": 284,
@@ -38,6 +38,6 @@
     "699TopSpeed": 284,
     "6990to60": 2.3,
     "699Handling": 107,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997779211358064710/one1.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Aqo"
 }

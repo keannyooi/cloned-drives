@@ -1,5 +1,6 @@
 {
-    "rq": 50,
+    "carID": "c01050",
+    "cr": 500,
     "make": "Pontiac",
     "model": "Grand Prix GXP",
     "modelYear": 2005,
@@ -22,8 +23,7 @@
     "mra": 62.64,
     "ola": 82.33,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/824644731250278461/Grandpricks.png",
-    "333TopSpeed": 147,
+     "333TopSpeed": 147,
     "3330to60": 5.4,
     "333Handling": 76,
     "666TopSpeed": 150,
@@ -38,6 +38,6 @@
     "699TopSpeed": 150,
     "6990to60": 4.8,
     "699Handling": 82,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095000190370459708/Pontiac_Grand_Pirx_GXP.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Macan"
 }

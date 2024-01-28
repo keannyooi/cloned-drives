@@ -1,5 +1,6 @@
 {
-    "rq": 44,
+    "carID": "c00187",
+    "cr": 444,
     "make": "BMW",
     "model": "M5",
     "modelYear": 1985,
@@ -26,8 +27,7 @@
     "mra": 66.67,
     "ola": 78.13,
     "description": "The super sedan that paved the way.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/944334250088480818/C.BMWM5E28-u.png",
-    "333TopSpeed": 156,
+     "333TopSpeed": 156,
     "3330to60": 6.1,
     "333Handling": 77,
     "666TopSpeed": 160,
@@ -42,6 +42,6 @@
     "699TopSpeed": 160,
     "6990to60": 5.4,
     "699Handling": 83,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1023197160323428352/bmw.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BMWM5(1985).png",
     "creator": "Connor"
 }

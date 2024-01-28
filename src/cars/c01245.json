@@ -1,5 +1,6 @@
 {
-    "rq": 60,
+    "carID": "c01245",
+    "cr": 600,
     "make": [
         "TAMO",
         "Tata"
@@ -27,8 +28,7 @@
     "mra": 51.49,
     "ola": 67.55,
     "description": "India's take on a sports car that was so good it got into Forza.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1131228756737015818/RacemoTAMO.png",
-"333TopSpeed": 134,
+ "333TopSpeed": 134,
 "3330to60": 5.4,
 "333Handling": 80,
 
@@ -47,6 +47,6 @@
 "996TopSpeed": 142,
 "9960to60": 4.8,
 "996Handling": 82,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1131228801460879410/Racemo.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

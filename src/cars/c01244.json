@@ -1,5 +1,6 @@
 {
-    "rq": 68,
+    "carID": "c01244",
+    "cr": 683,
     "make": "Swift Engineering",
     "model": "DB-1",
     "modelYear": 1983,
@@ -25,8 +26,7 @@
     "mra": 80.7,
     "ola": 70.37,
     "description": "Swift Engineering's beginnings, an SCCA winner that has paved way for their future achievements.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/837305143804035143/swift_db-1.png",
-    "333TopSpeed": 123,
+     "333TopSpeed": 123,
     "3330to60": 4.4,
     "333Handling": 99,
     "666TopSpeed": 128,
@@ -41,6 +41,6 @@
     "699TopSpeed": 128,
     "6990to60": 3.9,
     "699Handling": 107,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1006555365980241970/swift_db-1.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/SwiftEngineeringDB-1(1983).png",
     "creator": "Keanny"
 }

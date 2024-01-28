@@ -1,5 +1,6 @@
 {
-    "rq": 83,
+    "carID": "c02103",
+    "cr": 830,
     "make": "Bertone",
     "model": "Mantide",
     "modelYear": 2009,
@@ -22,8 +23,7 @@
     "mra": 78.05,
     "ola": 94.12,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/912470962375622656/bertonemantide.png",
-    "333TopSpeed": 221,
+     "333TopSpeed": 221,
     "3330to60": 3.0,
     "333Handling": 92,
     "666TopSpeed": 224,
@@ -38,6 +38,6 @@
     "699TopSpeed": 224,
     "6990to60": 2.7,
     "699Handling": 99,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997533574649622568/mantide.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

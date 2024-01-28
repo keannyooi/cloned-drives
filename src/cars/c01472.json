@@ -1,5 +1,6 @@
 {
-    "rq": 79,
+    "carID": "c01472",
+    "cr": 790,
     "make": "Chevrolet",
     "model": "Corvette Stingray Convertible",
     "modelYear": 2013,
@@ -22,8 +23,7 @@
     "mra": 76.92,
     "ola": 90,
     "description": "All new Florida boomermobile.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/934138045400231956/A.ChevyCorvetteStingrayConvertibleC7.png",
-    "333TopSpeed": 184,
+     "333TopSpeed": 184,
     "3330to60": 3.8,
     "333Handling": 92,
     "666TopSpeed": 187,
@@ -38,6 +38,6 @@
     "699TopSpeed": 187,
     "6990to60": 3.4,
     "699Handling": 99,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995767567106973837/corvettec7.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 30,
+    "carID": "c03681",
+    "cr": 300,
     "make": "Volkswagen",
     "model": "Golf Country",
     "modelYear": 1990,
@@ -26,8 +27,7 @@
     "description": "What crossovers should actually be.",
 
 
-    "card": "https://media.discordapp.net/attachments/819199720249360384/959128100296331284/GolfCountry.png",
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1054084569705500683/Country.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Andu",
 
     "333TopSpeed": 101,

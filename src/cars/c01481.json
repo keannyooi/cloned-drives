@@ -1,5 +1,6 @@
 {
-    "rq": 24,
+    "carID": "c01481",
+    "cr": 240,
     "make": "Blastolene",
     "model": "Special",
     "modelYear": 2003,
@@ -27,8 +28,7 @@
     "mra": 126.77,
     "ola": 98.05,
     "description": "A tank car, literally, built by Randy Grubb and owned by Jay Leno, who modded it extensively. Engine comes from a  M47 Patton Tank, a V12 made by Chrysler producing 800HP and a whopping 30000CC. Can only rev until 2900 RPM lmao.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/864796788787904542/Blastolene_Special.png",
-    "333TopSpeed": 165,
+     "333TopSpeed": 165,
     "3330to60": 6.6,
     "333Handling": 64,
     "666TopSpeed": 168,
@@ -43,6 +43,6 @@
     "699TopSpeed": 168,
     "6990to60": 5.9,
     "699Handling": 69,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100168850076602589/TankCar.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Based"
 }

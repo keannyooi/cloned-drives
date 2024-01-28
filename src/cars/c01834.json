@@ -1,5 +1,6 @@
 {
-    "rq": 59,
+    "carID": "c01834",
+    "cr": 590,
     "make": "Subaru",
     "model": "Impreza WRX 300",
     "modelYear": 2005,
@@ -25,8 +26,7 @@
     "mra": 67.09,
     "ola": 64.15,
     "description": "A limited edition WRX Bugeye Impreza for the bri ish market as a celebration for the rally success in UK. Only 300 were made.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/845837882681196585/image0.jpg",
-    "333TopSpeed": 152,
+     "333TopSpeed": 152,
     "3330to60": 5,
     "333Handling": 75,
     "666TopSpeed": 155,
@@ -41,6 +41,6 @@
     "699TopSpeed": 155,
     "6990to60": 4.5,
     "699Handling": 81,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100177164839690300/ImprzWRX300.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

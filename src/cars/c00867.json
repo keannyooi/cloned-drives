@@ -1,5 +1,6 @@
 {
-    "rq": 22,
+    "carID": "c00867",
+    "cr": 223,
     "make": "Mercedes-Benz",
     "model": "Metris",
     "modelYear": 2015,
@@ -21,9 +22,8 @@
     "fuelType": "Petrol",
     "mra": 49.12,
     "ola": 67.86,
-    "description": "A V-Class van for North America.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/822058720077938748/Metris.png",
-    "333TopSpeed": 106,
+    "description": "Bring it to the showroom! Business class quality for first class Prices!",
+     "333TopSpeed": 106,
     "3330to60": 8,
     "333Handling": 67,
     "666TopSpeed": 111,
@@ -38,6 +38,6 @@
     "699TopSpeed": 111,
     "6990to60": 7.1,
     "699Handling": 72,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1050757417119531008/Metris.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Mercedes-BenzMetris(2015).png",
     "creator": "Andu"
 }

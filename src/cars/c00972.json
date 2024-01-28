@@ -1,5 +1,6 @@
 {
-    "rq": 39,
+    "carID": "c00972",
+    "cr": 390,
     "make": "Opel",
     "model": "Astra 2.0 Turbo",
     "modelYear": 2004,
@@ -22,8 +23,7 @@
     "mra": 67.89,
     "ola": 81.08,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/842020495612575754/D.OpelAstra20T.png",
-    "333TopSpeed": 144,
+     "333TopSpeed": 144,
     "3330to60": 7,
     "333Handling": 80,
     "666TopSpeed": 147,
@@ -38,6 +38,6 @@
     "699TopSpeed": 144,
     "6990to60": 6.3,
     "699Handling": 85,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1036162921379680316/astra_turbo.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

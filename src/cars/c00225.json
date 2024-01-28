@@ -1,5 +1,6 @@
 {
-    "rq": 62,
+    "carID": "c00225",
+    "cr": 620,
     "make": "Bugatti",
     "model": "EB218",
     "modelYear": 1999,
@@ -26,8 +27,7 @@
     "mra": 73.77,
     "ola": 93.33,
     "description": "4-door saloon with a W18 engine? Why not?",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/854170698121084948/image0.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 4.3,
     "333Handling": 83,
     "666TopSpeed": 162,
@@ -42,6 +42,6 @@
     "996TopSpeed": 165,
     "9960to60": 3.8,
     "996Handling": 85,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017160180431069266/Bugatti_EB218.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

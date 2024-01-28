@@ -1,5 +1,6 @@
 {
-    "rq": 92,
+    "carID": "c00386",
+    "cr": 920,
     "make": "Ferrari",
     "model": "488 Pista",
     "modelYear": 2018,
@@ -25,8 +26,7 @@
     "mra": 108,
     "ola": 88.89,
     "description": "Ferrari's ultimate supercar.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/824683546618101770/pista.png",
-    "333TopSpeed": 213,
+     "333TopSpeed": 213,
     "3330to60": 2.6,
     "333Handling": 96,
     "666TopSpeed": 216,
@@ -41,6 +41,6 @@
     "699TopSpeed": 216,
     "6990to60": 2.3,
     "699Handling": 103,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017877851355230340/Ferrari_488_Pista.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "DodgeDemon"
 }

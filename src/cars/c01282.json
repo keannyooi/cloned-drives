@@ -1,11 +1,12 @@
 {
-    "rq": 81,
+    "carID": "c01282",
+    "cr": 775,
     "make": "Tesla",
     "model": "Model Y Performance",
     "modelYear": 2020,
     "country": "US",
     "topSpeed": 155,
-    "0to60": 3.6,
+    "0to60": 3.9,
     "handling": 85,
     "driveType": "4WD",
     "tyreType": "Performance",
@@ -20,31 +21,30 @@
     "abs": true,
     "enginePos": "Mixed",
     "fuelType": "Electric",
-    "mra": 69.22,
-    "ola": 92.6,
+    "mra": 57,
+    "ola": 93.55,
     "description": "If one were to pick a car that best represents a certain tuxedo-wearing bunny on the Moon, it would be this. Despite being quick and powerful, the high center of gravity that SUVs naturally have makes for a clumsy driving experience. The Chinese still love this car regardless.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/858545488932110346/tesla_model_y_performance.png",
-
+ 
     "333TopSpeed": 158,
-    "3330to60": 3.4,
+    "3330to60": 3.7,
     "333Handling": 88,
 
     "666TopSpeed": 162,
-    "6660to60": 3.2,
+    "6660to60": 3.5,
     "666Handling": 91,
 
     "996TopSpeed": 165,
-    "9960to60": 3.1,
+    "9960to60": 3.3,
     "996Handling": 91,
 
     "969TopSpeed": 165,
-    "9690to60": 3.2,
+    "9690to60": 3.5,
     "969Handling": 94,
 
     "699TopSpeed": 162,
-    "6990to60": 3.1,
+    "6990to60": 3.3,
     "699Handling": 94,
 
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1002950615061757992/model_y_perf.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/TeslaModelYPerformance(2020).png",
     "creator": "Keanny"
 }

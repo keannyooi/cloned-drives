@@ -1,5 +1,6 @@
 {
-    "rq": 45,
+    "carID": "c04422",
+    "cr": 450,
     "make": "Aston Martin",
     "model": "DBS Vantage",
     "modelYear": 1967,
@@ -19,12 +20,11 @@
     "tcs": false,
     "abs": false,
     "enginePos": "Front",
-    "fuelType": "Petrol",
+    "fuelType": "Front",
     "mra": 74.71,
     "ola": 89.23,
     "description": "",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1115273094043549716/DBSV81967.png",
-	"racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1115273897647018065/DBSV81967.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
 
 "333TopSpeed": 147,
 "3330to60": 6.2,

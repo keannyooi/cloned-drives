@@ -1,5 +1,6 @@
 {
-    "rq": 56,
+    "carID": "c01799",
+    "cr": 560,
     "make": "Nissan",
     "model": "Titan PRO-4X 4x4 Crew Cab",
     "modelYear": 2017,
@@ -23,8 +24,7 @@
     "mra": 57.14,
     "ola": 71.81,
     "description": "Without the added bulk of the XD trim and with the added off-roadiness of the PRO-4X trim; this is the most off-road capable Titan that you could get for 2017.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/970057368350126161/IMG_4929.png",
-
+ 
     "333TopSpeed": 120,
     "3330to60": 6.7,
     "333Handling": 69,
@@ -45,6 +45,6 @@
     "6990to60": 6,
     "699Handling": 74,
 
-    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1094568537022009374/titan_pro4x.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

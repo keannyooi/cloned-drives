@@ -1,5 +1,6 @@
 {
-    "rq": 107,
+    "carID": "c01694",
+    "cr": 1070,
     "make": "Mitsubishi",
     "model": "Lancer Evolution X Group N Safari",
     "modelYear": 2008,
@@ -22,8 +23,7 @@
     "mra": 73.08,
     "ola": 68.42,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/951601880054779974/evo10safari.png",
-    "333TopSpeed": 124,
+     "333TopSpeed": 124,
     "3330to60": 3.6,
     "333Handling": 95,
     "666TopSpeed": 129,
@@ -38,6 +38,6 @@
     "699TopSpeed": 129,
     "6990to60": 3.2,
     "699Handling": 102,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997532070177951784/evoxralsafari.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

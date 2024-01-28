@@ -1,5 +1,6 @@
 {
-    "rq": 44,
+    "carID": "c01128",
+    "cr": 440,
     "make": "Qvale",
     "model": "Mangusta",
     "modelYear": 2000,
@@ -22,8 +23,7 @@
     "mra": 63.22,
     "ola": 76.36,
     "description": "A little sports car from italy.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/996869613105184889/QvaleMangusta.png",
-    "333TopSpeed": 163,
+     "333TopSpeed": 163,
     "3330to60": 5.2,
     "333Handling": 74,
     "666TopSpeed": 167,
@@ -38,6 +38,6 @@
     "699TopSpeed": 167,
     "6990to60": 4.7,
     "699Handling": 80,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996869731921436793/QvaleMangusta.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Spence"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 13,
+    "carID": "c00415",
+    "cr": 130,
     "make": "Fiat",
     "model": "X1/9",
     "modelYear": 1972,
@@ -22,8 +23,7 @@
     "mra": 38.76,
     "ola": 61.92,
     "description": "Proof that you don't have to pay big bucks for a mid-engined sports car.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/973945186600247306/x19.png",
-    "333TopSpeed": 106,
+     "333TopSpeed": 106,
     "3330to60": 13.4,
     "333Handling": 72,
     "666TopSpeed": 111,
@@ -38,6 +38,6 @@
     "699TopSpeed": 111,
     "6990to60": 12,
     "699Handling": 78,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003260240764084274/x19.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/FiatX1-9(1972).png",
     "creator": "Keanny"
 }

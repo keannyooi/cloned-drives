@@ -1,5 +1,6 @@
 {
-    "rq": 15,
+    "carID": "c02698",
+    "cr": 153,
     "make": "Volvo",
     "model": "ECC",
     "modelYear": 1992,
@@ -23,8 +24,7 @@
     "mra": 42.37,
     "ola": 67.2,
     "description": "The Volvo ECC (Environmental Concept Car) was a design exercise in using recycled material and hybrid technology, which in the ECC's case was a gas turbine-powered generator powering electric motors. It was the debut of a design language that foreshadowed what future Volvos would look like, especially the S80. The driver can enable 2 power modes with the flick of a switch - gas turbine electric mode, which does 0-60mph in 23s and hybrid mode, which is what the car is locked to by default in Cloned Drives.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/1011582051331354744/volvo_ecc.png",
-	"racehud": "https://media.discordapp.net/attachments/995376525119586356/1011589554819584040/ecc.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolvoECC(1992).png",
     "creator": "Keanny",
 
     "333TopSpeed": 114, 

@@ -1,4 +1,5 @@
 {
+    "carID": "c03478",
     "make": "Toyota",
     "model": "Mirai Police",
     "modelYear": 2014,
@@ -7,7 +8,6 @@
     "collection": ["Rozzers"],
     "description": "Hydrogen powered police car. Imagine chasing down a car and then running out of fuel, good luck trying to find a station to refill.",
 	"active" : true,
-    "card": "https://media.discordapp.net/attachments/1077292374608326656/1081258996452835409/Toyota_Mirai_Police.png",
-    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1081258980954882068/Toyota_Mirai_Police.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Crossfire"
 }

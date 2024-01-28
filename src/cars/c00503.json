@@ -1,5 +1,6 @@
 {
-    "rq": 54,
+    "carID": "c00503",
+    "cr": 540,
     "make": "GMC",
     "model": "Typhoon",
     "modelYear": 1992,
@@ -24,8 +25,7 @@
     "mra": 55.77,
     "ola": 75.86,
     "description": "One of the first sport trucks.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/821027581914382367/B.GMCTyphoon.png",
-    "333TopSpeed": 129,
+     "333TopSpeed": 129,
     "3330to60": 5.5,
     "333Handling": 72,
     "666TopSpeed": 133,
@@ -40,6 +40,6 @@
     "699TopSpeed": 133,
     "6990to60": 4.9,
     "699Handling": 78,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1020046382490456084/GMC_Typhoon.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

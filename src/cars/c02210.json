@@ -1,5 +1,6 @@
 {
-    "rq": 83,
+    "carID": "c02210",
+    "cr": 830,
     "make": [
         "MAT",
         "Lancia"
@@ -28,8 +29,7 @@
     "mra": 79.49,
     "ola": 90.32,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/860125794238988298/CD_MAT_New_Stratos.png",
-    "333TopSpeed": 173,
+     "333TopSpeed": 173,
     "3330to60": 2.9,
     "333Handling": 94,
     "666TopSpeed": 176,
@@ -44,6 +44,6 @@
     "699TopSpeed": 176,
     "6990to60": 2.6,
     "699Handling": 101,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017450101133803730/MAT_New_Stratos.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Exist"
 }

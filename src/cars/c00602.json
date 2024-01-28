@@ -1,5 +1,6 @@
 {
-    "rq": 27,
+    "carID": "c00602",
+    "cr": 270,
     "make": "Jaguar",
     "model": "XJ6 4.2 Litre",
     "modelYear": 1969,
@@ -22,8 +23,7 @@
     "mra": 76.47,
     "ola": 50.75,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/820689709759856660/E.JagXJ642Litre.png",
-    "333TopSpeed": 124,
+     "333TopSpeed": 124,
     "3330to60": 9.7,
     "333Handling": 68,
     "666TopSpeed": 129,
@@ -38,6 +38,6 @@
     "699TopSpeed": 129,
     "6990to60": 8.7,
     "699Handling": 73,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100130076726673579/XJ669.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

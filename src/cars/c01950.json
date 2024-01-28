@@ -1,5 +1,6 @@
 {
-    "rq": 32,
+    "carID": "c01950",
+    "cr": 320,
     "make": "Toyota",
     "model": "Yaris TS",
     "modelYear": 2001,
@@ -25,8 +26,7 @@
     "mra": 41.63,
     "ola": 67.39,
     "description": "it sports subtly enhanced body modifications and stronger performance. Card by Andu",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/866935396927930368/YarisTS01.png",
-    "333TopSpeed": 121,
+     "333TopSpeed": 121,
     "3330to60": 8.7,
     "333Handling": 70,
     "666TopSpeed": 126,
@@ -41,6 +41,6 @@
     "699TopSpeed": 126,
     "6990to60": 7.8,
     "699Handling": 75,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1043862546043637840/YarisTS01.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Andu"
 }

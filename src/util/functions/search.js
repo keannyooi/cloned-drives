@@ -28,18 +28,22 @@ const listGen = {
     },
     "id": item => typeof item === "string" ? item.replace(".json", "") : item.id,
     "event": item => item.name,
-	//"championships": item => item.name,
+	"championships": item => item.name,
     "offer": item => item.name
 };
 
 async function search(message, query, searchList, type, currentMessage) {
-	// console.log(searchList); // Add this line to output the searchList array
-	
+    // Check if listGen[type] is a function
+    if (typeof listGen[type] !== 'function') {
+        throw new Error(`Invalid search type: ${type}`);
+    }
+
     const searchResults = searchList.filter(s => {
-		//console.log(listGen[type](s)); // Add this line to output the value before listGen function call
+        console.log(listGen[type](s)); // Add this line to output the value before listGen function call
         let test = listGen[type](s).replace(/[()"]/g, "").toLocaleLowerCase("en").split(" ");
-        return query.every(part => test.includes(part.replace(/[()"]/g, "")));
+		return query.every(part => test.includes(part.replace(/[()"']/g, '')));
     });
+    
     return processResults(message, searchResults, () => {
         const options = [];
         for (let i = 0; i < searchResults.length; i++) {
@@ -59,9 +63,9 @@ async function search(message, query, searchList, type, currentMessage) {
             .addOptions(...options);
         return list;
     }, type, currentMessage)
-        .catch(throwError => {
-            return throwError(query.join(" "), searchList.map(i => listGen[type](i).toLowerCase()));
-        });
+    .catch(throwError => {
+        return throwError(query.join(" "), searchList.map(i => listGen[type](i).toLowerCase()));
+    });
 }
 
 module.exports = search;

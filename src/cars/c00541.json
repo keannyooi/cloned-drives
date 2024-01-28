@@ -1,5 +1,6 @@
 {
-    "rq": 87,
+    "carID": "c00541",
+    "cr": 870,
     "make": "Honda",
     "model": "NSX",
     "modelYear": 2016,
@@ -22,8 +23,7 @@
     "mra": 82.05,
     "ola": 81.25,
     "description": "The REAL modern NSX.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/824389433088278548/NSXNEW.png",
-    "333TopSpeed": 194,
+     "333TopSpeed": 194,
     "3330to60": 3.0,
     "333Handling": 95,
     "666TopSpeed": 196,
@@ -38,6 +38,6 @@
     "699TopSpeed": 196,
     "6990to60": 2.7,
     "699Handling": 102,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996024306075181169/ondansx.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

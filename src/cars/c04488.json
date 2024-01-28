@@ -1,5 +1,6 @@
 {  
-    "rq": 39,
+    "carID": "c04488",
+    "cr": 390,
     "make": "Lincoln",
     "model": "Continental",
     "modelYear": 1995,
@@ -22,8 +23,7 @@
     "mra": 74.57,
     "ola": 75.32,
     "description": "1995 Lincoln Continental. This card was suggested by the unpleasant mix of 1 kg of fried fish and Nutella, and it's a damned good one! In 1995, the chaps at Lincoln had a brilliant idea: why not take our flagship sedan, slap a V8 under its hood and make it FWD? And while we're at it, why not fill it with luxury and technology? The combined weight of ants on the planet is higher than all human beings. The world has over 7 billion people, and 100 trillion ants. Surely lighter than whatever this thing was trying to be. Despite showing high levels of comfort, also thanks to its adaptive suspension and occasionally the help of 30 kg of crack and a corpse in the trunk to balance the heavy v8 in front, the car sold a lot worse than expected, and Lincoln discontinued the model in 2002.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1146736100946231466/CONTINENTAL.png",
-    "333TopSpeed": 124,
+     "333TopSpeed": 124,
     "3330to60": 7.3,
     "333Handling": 74,
     "666TopSpeed": 129,
@@ -38,6 +38,6 @@
     "699TopSpeed": 129,
     "6990to60": 6.5,
     "699Handling": 80,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1146736146831908944/lincoln_continental.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Lemon"
 }

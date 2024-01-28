@@ -1,5 +1,6 @@
 {
-    "rq": 36,
+    "carID": "c00284",
+    "cr": 360,
     "make": "Chevrolet",
     "model": "Cruze 1.4T LTZ",
     "modelYear": 2010,
@@ -22,8 +23,7 @@
     "mra": 49.6,
     "ola": 68.84,
     "description": "GM replaces its last remaining all-American compact sedan with a Korean/German concoction. Frankfurters, kimchi, and Chevrolet, anyone?",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1112157875431800962/Cruze14TLTZ.png",
-    "333TopSpeed": 128,
+     "333TopSpeed": 128,
     "3330to60": 8.7,
     "333Handling": 79,
     "666TopSpeed": 132,
@@ -38,6 +38,6 @@
     "699TopSpeed": 132,
     "6990to60": 7.8,
     "699Handling": 84,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003662916127567992/cruze.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Keanny"
 }

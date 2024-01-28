@@ -1,5 +1,6 @@
 {
-    "rq": 92,
+    "carID": "c02065",
+    "cr": 920,
     "make": "Koenigsegg",
     "model": "CCXR",
     "modelYear": 2007,
@@ -27,8 +28,7 @@
     "mra": 120,
     "ola": 96.66,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/933382573449678878/ccxr.png",
-    "333TopSpeed": 252,
+     "333TopSpeed": 252,
     "3330to60": 2.9,
     "333Handling": 95,
     "666TopSpeed": 254,
@@ -43,6 +43,6 @@
     "699TopSpeed": 254,
     "6990to60": 2.6,
     "699Handling": 102,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1018077670610829362/Koenigsegg_CCXR.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Aqo"
 }

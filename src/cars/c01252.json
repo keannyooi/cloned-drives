@@ -1,5 +1,6 @@
 {
-    "rq": 63,
+    "carID": "c01252",
+    "cr": 628,
     "make": "Tesla",
     "model": "Model 3 Mid Range",
     "modelYear": 2018,
@@ -24,8 +25,7 @@
     "mra": 76.47,
     "ola": 86.54,
     "description": "An easter egg in the Model 3 lets you doodle on its interior screen and send whatever you drew to Tesla for review. I may have given internet trolls an idea by providing this information, but we're dealing with the guy that priced a car at $69420 so it's fine, I guess.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/858544350014865419/tesla_model_3_mid_range.png",
-    "333TopSpeed": 144,
+     "333TopSpeed": 144,
     "3330to60": 4.9,
     "333Handling": 79,
     "666TopSpeed": 147,
@@ -40,6 +40,6 @@
     "699TopSpeed": 147,
     "6990to60": 4.4,
     "699Handling": 84,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1002951274251178064/model_3_mid.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/TeslaModel3MidRange(2018).png",
     "creator": "Keanny"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 50,
+    "carID": "c01865",
+    "cr": 500,
     "make": "Toyota",
     "model": "Avalon Limited",
     "modelYear": 2011,
@@ -24,8 +25,7 @@
     "mra": 62.38,
     "ola": 69.84,
     "description": "Grandpa can now dust hot-hatches in stop light drags and be home in time for Bingo Night in style.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/882731998379139142/avalon_11.png",
-    "333TopSpeed": 139,
+     "333TopSpeed": 139,
     "3330to60": 6.1,
     "333Handling": 75,
     "666TopSpeed": 143,
@@ -40,6 +40,6 @@
     "699TopSpeed": 143,
     "6990to60": 5.4,
     "699Handling": 81,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100177458604540004/avalon2011.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "McNuggets"
 }

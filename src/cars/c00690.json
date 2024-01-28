@@ -1,5 +1,6 @@
 {
-    "rq": 41,
+    "carID": "c00690",
+    "cr": 410,
     "make": "Lexus",
     "model": "IS 200t F Sport",
     "modelYear": 2016,
@@ -22,8 +23,7 @@
     "mra": 54.4,
     "ola": 79,
     "description": "This time, the F stands for 'Fixed'.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/825825132085641276/is200t.png",
-    "333TopSpeed": 147,
+     "333TopSpeed": 147,
     "3330to60": 6.5,
     "333Handling": 80,
     "666TopSpeed": 150,
@@ -38,6 +38,6 @@
     "699TopSpeed": 150,
     "6990to60": 5.8,
     "699Handling": 85,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100135162815197275/is200tF.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Macan"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 30,
+    "carID": "c01440",
+    "cr": 300,
     "make": "Jaguar",
     "model": "Mark II 3.8",
     "modelYear": 1959,
@@ -24,8 +25,7 @@
     "mra": 52.13,
     "ola": 78.29,
     "description": "Classic jaaaaaaaaag.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/859621551829155850/CD_Jaguar_Mark_II_3.8.png?width=1410&height=878",
-    "333TopSpeed": 128,
+     "333TopSpeed": 128,
     "3330to60": 8,
     "333Handling": 65,
     "666TopSpeed": 132,
@@ -40,6 +40,6 @@
     "699TopSpeed": 132,
     "6990to60": 7.1,
     "699Handling": 70,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095757141291311115/Jaguar_Mark_II_3.8.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Exist"
 }

@@ -1,5 +1,6 @@
 {  
-    "rq": 35,
+    "carID": "c04491",
+    "cr": 350,
     "make": "MG",
     "model": "GS 1.5 TGI Exclusive",
     "modelYear": 2016,
@@ -22,8 +23,7 @@
     "mra": 57.76,
     "ola": 79.56,
     "description": "Not a gleefully silly V8, but a step forward compared to the previous models.",
-    "card": "https://cdn.discordapp.com/attachments/1146712407830433842/1146712408870633502/d35_mg_gs_exclusive.png",
-    "333TopSpeed": 122,
+     "333TopSpeed": 122,
     "3330to60": 8.8,
     "333Handling": 77,
     "666TopSpeed": 127,
@@ -38,6 +38,6 @@
     "699TopSpeed": 127,
     "6990to60": 7.9,
     "699Handling": 83,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1146730388018974820/mg_thing.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Hastur"
 }

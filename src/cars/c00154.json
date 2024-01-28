@@ -1,5 +1,6 @@
 {
-    "rq": 37,
+    "carID": "c00154",
+    "cr": 370,
     "make": "BMW",
     "model": "323i Touring",
     "modelYear": 2000,
@@ -22,8 +23,7 @@
     "mra": 54.03,
     "ola": 77.03,
     "description": "The blend of a driver’s car and practicality.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/826051293897687040/BMW_323i_Touring.png",
-    "333TopSpeed": 136,
+     "333TopSpeed": 136,
     "3330to60": 7,
     "333Handling": 80,
     "666TopSpeed": 140,
@@ -38,6 +38,6 @@
     "699TopSpeed": 140,
     "6990to60": 6.3,
     "699Handling": 85,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095098593326678096/c00154.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Based"
 }

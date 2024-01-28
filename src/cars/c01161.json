@@ -1,5 +1,6 @@
 {
-    "rq": 60,
+    "carID": "c01161",
+    "cr": 598,
     "make": [
         "Saleen",
         "Tesla"
@@ -28,8 +29,7 @@
     "mra": 68.91,
     "ola": 90.24,
     "description": "Unvelied at the 2014 Pebble Beach Concours d'Elegance, where all things bespoke go, Saleen became the first people to offer a complete tuning kit for the Model S P85. The car was more aerodynamic, a little quicker from messing with the gear ratios, and had a pretty ingenius idea: amplifying the alien-like sounds the electric motors make in place of a traditional engine roar.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/848059449906167878/saleen_foursixteen.png",
-    "333TopSpeed": 129,
+     "333TopSpeed": 129,
     "3330to60": 3.9,
     "333Handling": 83,
     "666TopSpeed": 133,
@@ -44,6 +44,6 @@
     "699TopSpeed": 133,
     "6990to60": 3.5,
     "699Handling": 89,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1002953090032480336/foursixteen.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/SaleenModelSFoursixteen(2014).png",
     "creator": "Keanny"
 }

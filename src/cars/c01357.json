@@ -1,5 +1,6 @@
 {
-    "rq": 40,
+    "carID": "c01357",
+    "cr": 400,
     "make": "Volkswagen",
     "model": "Beetle 2.5",
     "modelYear": 2011,
@@ -25,8 +26,7 @@
     "mra": 53.89,
     "ola": 62.43,
     "description": "The Cloned Drives Staple.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/820025572049551380/Beetle25.png",
-    "333TopSpeed": 118,
+     "333TopSpeed": 118,
     "3330to60": 8.3,
     "333Handling": 81,
     "666TopSpeed": 122,
@@ -41,6 +41,6 @@
     "699TopSpeed": 122,
     "6990to60": 7.4,
     "699Handling": 87,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1018946492691652731/Vw_Beetle_2.5_2011.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Andu"
 }

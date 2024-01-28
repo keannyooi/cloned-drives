@@ -1,5 +1,6 @@
 {
-    "rq": 79,
+    "carID": "c01104",
+    "cr": 790,
     "make": "Porsche",
     "model": "959S",
     "modelYear": 1988,
@@ -22,8 +23,7 @@
     "mra": 81.45,
     "ola": 77.78,
     "description": "Almost the top spec 959.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1101526600333402182/Porsche959S.png",
-    "333TopSpeed": 213,
+     "333TopSpeed": 213,
     "3330to60": 3.4,
     "333Handling": 86,
     "666TopSpeed": 216,
@@ -38,6 +38,6 @@
     "699TopSpeed": 216,
     "6990to60": 3.1,
     "699Handling": 92,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997573269278429204/959S.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

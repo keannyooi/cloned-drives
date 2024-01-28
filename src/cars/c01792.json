@@ -1,5 +1,6 @@
 {
-    "rq": 48,
+    "carID": "c01792",
+    "cr": 480,
     "make": "Nissan",
     "model": "Stagea 25t RS Four S",
     "modelYear": 1998,
@@ -24,8 +25,7 @@
     "mra": 56.6,
     "ola": 80,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/968272768879718410/Stagea25tRS4S.png",
-    "333TopSpeed": 117,
+     "333TopSpeed": 117,
     "3330to60": 5.7,
     "333Handling": 77,
     "666TopSpeed": 121,
@@ -40,6 +40,6 @@
     "699TopSpeed": 121,
     "6990to60": 5.1,
     "699Handling": 83,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997643672738865193/stagea25trs4s.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 65,
+    "carID": "c00383",
+    "cr": 650,
     "make": "Ferrari",
     "model": "360 Modena",
     "modelYear": 1999,
@@ -22,8 +23,7 @@
     "mra": 72.38,
     "ola": 87.86,
     "description": "A cleansheet for ferrari to style future cars on.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/823515804418572329/Ferrari360Modena.png",
-    "333TopSpeed": 184,
+     "333TopSpeed": 184,
     "3330to60": 4.1,
     "333Handling": 85,
     "666TopSpeed": 187,
@@ -38,6 +38,6 @@
     "699TopSpeed": 187,
     "6990to60": 3.7,
     "699Handling": 91,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1018087377278873651/Ferrari_360_Modena.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

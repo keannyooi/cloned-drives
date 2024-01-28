@@ -1,5 +1,6 @@
 {
-    "rq": 20,
+    "carID": "c01414",
+    "cr": 200,
     "make": "Volvo",
     "model": "1800ES",
     "modelYear": 1972,
@@ -24,8 +25,7 @@
     "mra": 49.34,
     "ola": 65.49,
     "description": "Classic beauty.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/820696398105542686/E.Volvo1800ES.png",
-    "333TopSpeed": 120,
+     "333TopSpeed": 120,
     "3330to60": 10.7,
     "333Handling": 61,
     "666TopSpeed": 125,
@@ -40,6 +40,6 @@
     "699TopSpeed": 125,
     "6990to60": 9.6,
     "699Handling": 65,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100168723656097893/Volvo1800ES.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

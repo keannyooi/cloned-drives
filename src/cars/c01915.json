@@ -1,5 +1,6 @@
 {
-    "rq": 57,
+    "carID": "c01915",
+    "cr": 570,
     "make": "Toyota",
     "model": "RAV4 Limited 4WD",
     "modelYear": 2006,
@@ -24,8 +25,7 @@
     "mra": 74.42,
     "ola": 65.63,
     "description": "Utilizing Toyota’s 2GR-FE 3.5 liter V-6 of Evora fame, a 5-speed automatic, and a 4WD system with an actual low range, the RAV4 was deemed the quickest Toyota of 2006 by Car and Driver.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/882732016947331083/rav4.png",
-    "333TopSpeed": 139,
+     "333TopSpeed": 139,
     "3330to60": 6.1,
     "333Handling": 72,
     "666TopSpeed": 143,
@@ -40,6 +40,6 @@
     "699TopSpeed": 143,
     "6990to60": 5.4,
     "699Handling": 78,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100177930266615979/RAV4Limit.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "McNuggets"
 }

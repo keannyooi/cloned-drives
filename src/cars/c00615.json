@@ -1,5 +1,6 @@
 {
-    "rq": 32,
+    "carID": "c00615",
+    "cr": 320,
     "make": "Kia",
     "model": "Amanti",
     "modelYear": 2004,
@@ -24,8 +25,7 @@
     "mra": 62.68,
     "ola": 71.91,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/840847826589843466/CD_Kia_Amanti.png",
-    "333TopSpeed": 136,
+     "333TopSpeed": 136,
     "3330to60": 8.5,
     "333Handling": 68,
     "666TopSpeed": 140,
@@ -40,6 +40,6 @@
     "699TopSpeed": 140,
     "6990to60": 7.6,
     "699Handling": 73,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095759076488642570/Kia_Amanti.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Exist"
 }

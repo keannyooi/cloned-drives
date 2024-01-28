@@ -1,5 +1,6 @@
 {
-    "rq": 38,
+    "carID": "c01824",
+    "cr": 380,
     "make": "Scion",
     "model": "iA",
     "modelYear": 2016,
@@ -24,8 +25,7 @@
     "mra": 47.89,
     "ola": 68.13,
     "description": "The last Scion to debut wasn't even an Toyota.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/868931786196004864/D.ScioniA.png",
-    "333TopSpeed": 124,
+     "333TopSpeed": 124,
     "3330to60": 8.6,
     "333Handling": 80,
     "666TopSpeed": 129,
@@ -40,6 +40,6 @@
     "699TopSpeed": 129,
     "6990to60": 7.7,
     "699Handling": 85,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1020350727480148039/Scion_iA.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

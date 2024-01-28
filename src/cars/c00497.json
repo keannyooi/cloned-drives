@@ -1,5 +1,6 @@
 {
-    "rq": 52,
+    "carID": "c00497",
+    "cr": 520,
     "make": "Genesis",
     "model": "G70 2.0T",
     "modelYear": 2019,
@@ -24,8 +25,7 @@
     "mra": 65.31,
     "ola": 70,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/825458834617270272/Genesis20T.png",
-    "333TopSpeed": 149,
+     "333TopSpeed": 149,
     "3330to60": 5.9,
     "333Handling": 87,
     "666TopSpeed": 152,
@@ -40,6 +40,6 @@
     "699TopSpeed": 152,
     "6990to60": 5.3,
     "699Handling": 93,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095008237381754950/Genesis_G70_2.0T.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Macan"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 54,
+    "carID": "c01713",
+    "cr": 540,
     "make": "Nissan",
     "model": "Altima 3.5SV",
     "modelYear": 2013,
@@ -24,8 +25,7 @@
     "mra": 73.8,
     "ola": 90.32,
     "description": "One quick rental car.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/837075600287072276/fast_rental_car.png",
-    "333TopSpeed": 135,
+     "333TopSpeed": 135,
     "3330to60": 5.9,
     "333Handling": 80,
     "666TopSpeed": 139,
@@ -40,6 +40,6 @@
     "699TopSpeed": 139,
     "6990to60": 5.3,
     "699Handling": 85,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100176593873281025/Altima3SV13.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "McNuggets"
 }

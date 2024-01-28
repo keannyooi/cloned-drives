@@ -1,5 +1,6 @@
 {
-    "rq": 58,
+    "carID": "c00994",
+    "cr": 580,
     "make": "Opel",
     "model": "Insignia Concept",
     "modelYear": 2003,
@@ -24,8 +25,7 @@
     "mra": 75.32,
     "ola": 75.86,
     "description": "LS1 powered full-sized luxury sedan with sliding rear doors. Yeah.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/859692784771530782/B.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 5.5,
     "333Handling": 80,
     "666TopSpeed": 162,
@@ -40,6 +40,6 @@
     "699TopSpeed": 162,
     "6990to60": 4.9,
     "699Handling": 85,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1036182768750694400/insignia_concept.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 49,
+    "carID": "c00851",
+    "cr": 490,
     "make": "Mercedes-Benz",
     "model": "500 E",
     "modelYear": 1990,
@@ -24,8 +25,7 @@
     "mra": 72.21,
     "ola": 87.03,
     "description": "MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/827260894386847815/Mercedes-Benz500E.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 5.6,
     "333Handling": 79,
     "666TopSpeed": 162,
@@ -40,6 +40,6 @@
     "699TopSpeed": 162,
     "6990to60": 5.1,
     "699Handling": 85,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017385074745950248/Mercedes_500_E.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

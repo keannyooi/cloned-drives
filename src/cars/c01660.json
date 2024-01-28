@@ -1,5 +1,6 @@
 {
-    "rq": 75,
+    "carID": "c01660",
+    "cr": 750,
     "make": "Mitsubishi",
     "model": "Lancer Evolution IX RS",
     "modelYear": 2005,
@@ -22,8 +23,7 @@
     "mra": 64.47,
     "ola": 72.27,
     "description": "None.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1081584335506911232/evo9rsredo.png",
-"333TopSpeed": 146,
+ "333TopSpeed": 146,
 "3330to60": 4.3,
 "333Handling": 90,
 
@@ -42,6 +42,6 @@
 "996TopSpeed": 153,
 "9960to60": 3.8,
 "996Handling": 93,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997546382363742299/evo9rs.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

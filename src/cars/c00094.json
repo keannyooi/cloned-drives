@@ -1,5 +1,6 @@
 {
-    "rq": 76,
+    "carID": "c00094",
+    "cr": 760,
     "make": "Aston Martin",
     "model": "Vanquish",
     "modelYear": 2014,
@@ -22,8 +23,7 @@
     "mra": 76.6,
     "ola": 94.44,
     "description": "Announced in August 2014, the 2015MY Vanquish may look virtually the same as the previous model year but under the carbon coachwork the changes are most significant.  Quoted top speed rose to 201 mph and the 0 to 60 acceleration times dropped to just 3.6 seconds mostly due to a final drive ratio of 2.73:1.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/850309307278426132/vanquish14.png",
-    "333TopSpeed": 204,
+     "333TopSpeed": 204,
     "3330to60": 3.4,
     "333Handling": 90,
     "666TopSpeed": 206,
@@ -38,6 +38,6 @@
     "699TopSpeed": 206,
     "6990to60": 3.1,
     "699Handling": 97,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1094939421410865172/VanqiushSnow.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "DodgeDemon"
 }

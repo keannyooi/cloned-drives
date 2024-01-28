@@ -10,11 +10,13 @@ const { schedule } = require("node-cron");
 const { ErrorMessage, InfoMessage, BotError } = require("./src/util/classes/classes.js");
 const { adminRoleID, eventMakerRoleID, testerRoleID, sandboxRoleID } = require("./src/util/consts/consts.js");
 const endEvent = require("./src/util/functions/endEvent.js");
+const endChampionship = require("./src/util/functions/endChampionship.js");
 const endOffer = require("./src/util/functions/endOffer.js");
 const regenBM = require("./src/util/functions/regenBM.js");
 const regenDealership = require("./src/util/functions/regenDealership.js");
 const serverStatModel = require("./src/models/serverStatSchema.js");
 const profileModel = require("./src/models/profileSchema.js");
+const championshipsModel = require("./src/models/championshipsSchema.js");
 const eventModel = require("./src/models/eventSchema.js");
 const offerModel = require("./src/models/offerSchema.js");
 const prefix = bot.devMode ? process.env.DEV_PREFIX : process.env.BOT_PREFIX;
@@ -89,6 +91,13 @@ setInterval(async () => {
     for (let event of events) {
         if (event.deadline !== "unlimited" && Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(event.deadline)).invalid !== null) {
             await endEvent(event);
+        }
+    }
+	
+	    const championships = await championshipsModel.find({ isActive: true });
+    for (let championship of championships) {
+        if (championship.deadline !== "unlimited" && Interval.fromDateTimes(DateTime.now(), DateTime.fromISO(championship.deadline)).invalid !== null) {
+            await endChampionship(championship);
         }
     }
 

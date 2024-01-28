@@ -1,5 +1,6 @@
 {
-    "rq": 60,
+    "carID": "c03530",
+    "cr": 600,
     "make": ["Militem", "Ram", "Dodge"],
     "model": "Magnum",
     "modelYear": 2019,
@@ -23,8 +24,7 @@
     "mra": 58.88,
     "ola": 69.84,
     "description": "American power with a touch of Italian craftsmanship.",
-    "card": "https://media.discordapp.net/attachments/1077292374608326656/1085599958171926609/Ram_Militem_Magnum_2019.png",
-	"racehud": "https://media.discordapp.net/attachments/1077293403668234340/1085607042049384581/Ram_Militem_Magnum_2019_Hud.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "DodgeDemon",
 
 "333TopSpeed": 114,

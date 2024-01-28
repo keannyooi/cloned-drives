@@ -1,5 +1,6 @@
 {
-    "rq": 37,
+    "carID": "c00457",
+    "cr": 370,
     "make": "Ford",
     "model": "Focus ST170",
     "modelYear": 2002,
@@ -24,8 +25,7 @@
     "mra": 59.85,
     "ola": 68.35,
     "description": "A European SVT.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/819390743654170634/ford_focus_st170.png",
-    "333TopSpeed": 136,
+     "333TopSpeed": 136,
     "3330to60": 7.5,
     "333Handling": 81,
     "666TopSpeed": 140,
@@ -40,6 +40,6 @@
     "699TopSpeed": 140,
     "6990to60": 6.7,
     "699Handling": 87,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003308631896379562/focus_st170.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Keanny"
 }

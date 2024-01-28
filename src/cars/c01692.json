@@ -1,5 +1,6 @@
 {
-    "rq": 94,
+    "carID": "c01692",
+    "cr": 940,
     "make": "Mitsubishi",
     "model": "Lancer Evolution X FQ-440 MR",
     "modelYear": 2014,
@@ -22,8 +23,7 @@
     "mra": 79.75,
     "ola": 85,
     "description": "The fastest production Evo, and had the best power-per-litre till the Koenigsegg Gemera.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1081588028654493797/evo10fq440.png",
-    "333TopSpeed": 189,
+     "333TopSpeed": 189,
     "3330to60": 3.1,
     "333Handling": 96,
     "666TopSpeed": 192,
@@ -38,6 +38,6 @@
     "699TopSpeed": 192,
     "6990to60": 2.8,
     "699Handling": 103,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995992837038546944/evoxfq440.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

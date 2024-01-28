@@ -1,5 +1,6 @@
 {
-    "rq": 57,
+    "carID": "c00951",
+    "cr": 570,
     "make": "Nissan",
     "model": "Pulsar GTi-R",
     "modelYear": 1990,
@@ -25,8 +26,7 @@
     "mra": 59.34,
     "ola": 70.37,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/852749471715950623/rect7774.png",
-    "333TopSpeed": 146,
+     "333TopSpeed": 146,
     "3330to60": 5.1,
     "333Handling": 75,
     "666TopSpeed": 149,
@@ -41,6 +41,6 @@
     "699TopSpeed": 149,
     "6990to60": 4.6,
     "699Handling": 81,
-    "racehud": "https://media.discordapp.net/attachments/1077293403668234340/1094559429275422791/pulsar_gti-r.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Thunk"
 }

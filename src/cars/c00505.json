@@ -1,5 +1,6 @@
 {
-    "rq": 84,
+    "carID": "c00505",
+    "cr": 839,
     "make": [
         "Go Puck",
         "Tesla"
@@ -28,8 +29,7 @@
     "mra": 64.29,
     "ola": 92.59,
     "description": "In 2016, the founder of Go Puck, the company that hold the rights for various EV-related patents such as the Tesla Supercharger system, piloted this car up Pikes Peak and broke the Electric Production Class record with a time of 11:48.264. This was the first time a Tesla won a race and broke a record there. Despite being in the Electric Production Class, this car received many race car modifications, shedding off 360kg from its original weight.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/858544998689407006/tesla_model_s_p90d_pikes_peak.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 2.6,
     "333Handling": 89,
     "666TopSpeed": 162,
@@ -44,6 +44,6 @@
     "699TopSpeed": 162,
     "6990to60": 2.3,
     "699Handling": 95,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1002952127393583164/model_s_gofuck.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/GoPuckModelSP90DPikesPeak(2016).png",
     "creator": "Keanny"
 }

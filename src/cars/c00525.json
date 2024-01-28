@@ -1,5 +1,6 @@
 {
-    "rq": 14,
+    "carID": "c00525",
+    "cr": 140,
     "make": "Honda",
     "model": "Civic CVCC 4-Speed",
     "modelYear": 1975,
@@ -22,8 +23,7 @@
     "mra": 8.45,
     "ola": 59.76,
     "description": "At least it isn’t an automatic.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/865597796916265000/F.HondaCivicCVCC4spd.png",
-    "333TopSpeed": 94,
+     "333TopSpeed": 94,
     "3330to60": 15.6,
     "333Handling": 67,
     "666TopSpeed": 100,
@@ -38,6 +38,6 @@
     "699TopSpeed": 100,
     "6990to60": 13.9,
     "699Handling": 72,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1035871581097951242/civic_cvvc.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

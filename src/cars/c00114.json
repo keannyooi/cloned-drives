@@ -1,5 +1,6 @@
 {
-    "rq": 80,
+    "carID": "c00114",
+    "cr": 800,
     "make": "Audi",
     "model": "RS 7 Sportback",
     "modelYear": 2019,
@@ -24,8 +25,7 @@
     "mra": 74.75,
     "ola": 89.87,
     "description": "One of audi's fastest Sedan's.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/854694651633598484/CD_Audi_RS7_Sportback.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 3.0,
     "333Handling": 90,
     "666TopSpeed": 162,
@@ -40,6 +40,6 @@
     "699TopSpeed": 162,
     "6990to60": 2.7,
     "699Handling": 97,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017338287368712262/Audi_RS_7_SportbackK.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Exist"
 }

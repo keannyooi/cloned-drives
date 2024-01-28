@@ -1,5 +1,6 @@
 {
-    "rq": 49,
+    "carID": "c00928",
+    "cr": 490,
     "make": "Nissan",
     "model": "350Z",
     "modelYear": 2002,
@@ -25,8 +26,7 @@
     "mra": 65.03,
     "ola": 77.95,
     "description": "Nissan's affordable sport's car.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/826467577164333056/350Zzzz.png",
-    "333TopSpeed": 159,
+     "333TopSpeed": 159,
     "3330to60": 5.2,
     "333Handling": 82,
     "666TopSpeed": 163,
@@ -41,6 +41,6 @@
     "699TopSpeed": 163,
     "6990to60": 4.7,
     "699Handling": 88,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996847060655546438/350z.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

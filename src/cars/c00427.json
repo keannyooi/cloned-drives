@@ -1,5 +1,6 @@
 {
-    "rq": 45,
+    "carID": "c00427",
+    "cr": 450,
     "make": "Ford",
     "model": "Escape SE Sport Hybrid AWD",
     "modelYear": 2020,
@@ -22,8 +23,7 @@
     "mra": 54.61,
     "ola": 57.14,
     "description": "He escaping.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/837584232649457684/Escape_SE_Sport_Hybrid_AWD_20.png",
-    "333TopSpeed": 124,
+     "333TopSpeed": 124,
     "3330to60": 7.3,
     "333Handling": 77,
     "666TopSpeed": 129,
@@ -38,6 +38,6 @@
     "699TopSpeed": 129,
     "6990to60": 6.5,
     "699Handling": 83,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095384460125548716/c00427.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Macan"
 }

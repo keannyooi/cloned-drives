@@ -1,5 +1,6 @@
 {  
-    "rq": 37,
+    "carID": "c02739",
+    "cr": 370,
     "make": "Audi",
     "model": "A6 Avant 3.0 TDI multitronic",
     "modelYear": 2011,
@@ -22,8 +23,7 @@
     "mra": 63.87,
     "ola": 78.95,
     "description": "Just like the 2.0 TDI, just a bit faster and with an awesome 3.0 V6.",
-    "card": "https://media.discordapp.net/attachments/1029443378699579413/1029445157982048408/a6_avant_3.0_tdi_204_hp.png",
-    "333TopSpeed": 143,
+     "333TopSpeed": 143,
     "3330to60": 7.2,
     "333Handling": 81,
     "666TopSpeed": 146,
@@ -38,6 +38,6 @@
     "699TopSpeed": 146,
     "6990to60": 6.5,
     "699Handling": 87,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1034828689277456404/a6_3.0_204_hp.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Lemon"
 }

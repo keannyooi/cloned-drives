@@ -1,5 +1,6 @@
 {
-    "rq": 65,
+    "carID": "c02172",
+    "cr": 650,
     "make": "Lotus",
     "model": "Evora S",
     "modelYear": 2012,
@@ -24,8 +25,7 @@
     "mra": 77,
     "ola": 76.6,
     "description": "Evora, meet supercharger.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/848322871122067496/evoa_s.png",
-    "333TopSpeed": 175,
+     "333TopSpeed": 175,
     "3330to60": 4.5,
     "333Handling": 91,
     "666TopSpeed": 178,
@@ -40,6 +40,6 @@
     "699TopSpeed": 178,
     "6990to60": 4.0,
     "699Handling": 98,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1018084258281181205/Lotus_Evora_S.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "McNuggets"
 }

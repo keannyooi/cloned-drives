@@ -1,5 +1,6 @@
 {
-    "rq": 82,
+    "carID": "c01671",
+    "cr": 820,
     "make": "Mitsubishi",
     "model": "Lancer Evolution VI Ralliart eXtreme",
     "modelYear": 2000,
@@ -22,8 +23,7 @@
     "mra": 72.14,
     "ola": 75,
     "description": "None.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1077318860581118032/evo6ralliartredo.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 3.9,
     "333Handling": 92,
     "666TopSpeed": 162,
@@ -38,6 +38,6 @@
     "699TopSpeed": 162,
     "6990to60": 3.5,
     "699Handling": 99,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996024132443590736/evo6ralliartextrem.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

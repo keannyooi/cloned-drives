@@ -1,5 +1,6 @@
 {
-    "rq": 90,
+    "carID": "c00398",
+    "cr": 895,
     "make": "Ferrari",
     "model": "F8 Tributo",
     "modelYear": 2019,
@@ -22,8 +23,7 @@
     "mra": 96.55,
     "ola": 92.86,
     "description": "As it stands, the F8 Tributo is a suitably stunning send-off for the V8 bloodline.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/838136274988171264/F8Tributo.png",
-    "333TopSpeed": 212,
+     "333TopSpeed": 212,
     "3330to60": 2.7,
     "333Handling": 95,
     "666TopSpeed": 215,
@@ -38,6 +38,6 @@
     "699TopSpeed": 215,
     "6990to60": 2.4,
     "699Handling": 102,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995688229481234542/f8trib.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/FerrariF8Tributo(2019).png",
     "creator": "Bnuuy"
 }

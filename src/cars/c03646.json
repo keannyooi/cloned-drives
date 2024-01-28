@@ -1,5 +1,6 @@
 {  
-    "rq": 80,
+    "carID": "c03646",
+    "cr": 800,
     "make": "Ferrari",
     "model": "512 BB LM Series II",
     "modelYear": 1980,
@@ -22,8 +23,7 @@
     "mra": 94.87,
     "ola": 81.08,
     "description": "-be Ferrari- slap wheels on fich -call it a day",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1099813446360514690/512_BB_LM_series_ii.png",
-    "333TopSpeed": 211,
+     "333TopSpeed": 211,
     "3330to60": 3.5,
     "333Handling": 97,
     "666TopSpeed": 213,
@@ -38,6 +38,6 @@
     "699TopSpeed": 213,
     "6990to60": 3.1,
     "699Handling": 104,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1099815067312209960/512_bb_lm_series_ii.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Lemon"
 }

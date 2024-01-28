@@ -1,5 +1,6 @@
 {
-    "rq": 95,
+    "carID": "c01127",
+    "cr": 950,
     "make": "Porsche",
     "model": "Taycan Turbo S",
     "modelYear": 2019,
@@ -25,8 +26,7 @@
     "mra": 74.29,
     "ola": 84.62,
     "description": "First electric car by Porsche going straight for the Tesla.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/916731819481759744/S.PorscheTaycanTurboS1.png",
-    "333TopSpeed": 165,
+     "333TopSpeed": 165,
     "3330to60": 2.5,
     "333Handling": 93,
     "666TopSpeed": 168,
@@ -41,6 +41,6 @@
     "699TopSpeed": 168,
     "6990to60": 2.2,
     "699Handling": 100,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1016825692337492018/Porsche_Taycan_Turbo_S_2019_hud.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

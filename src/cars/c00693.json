@@ -1,5 +1,6 @@
 {
-    "rq": 48,
+    "carID": "c00693",
+    "cr": 480,
     "make": "Lexus",
     "model": "IS 350 F Sport",
     "modelYear": 2021,
@@ -24,8 +25,7 @@
     "mra": 67.06,
     "ola": 84.21,
     "description": "A good looking but underperforming Lexus.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/826467999334662234/Lexus_IS_350_F_Sport_2021.png",
-    "333TopSpeed": 147,
+     "333TopSpeed": 147,
     "3330to60": 5.4,
     "333Handling": 85,
     "666TopSpeed": 150,
@@ -40,6 +40,6 @@
     "699TopSpeed": 150,
     "6990to60": 4.8,
     "699Handling": 91,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1095364868460265482/Lexus_IS_350_F_Sport.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Macan"
 }

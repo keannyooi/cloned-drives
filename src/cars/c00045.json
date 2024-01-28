@@ -1,5 +1,6 @@
 {
-    "rq": 49,
+    "carID": "c00045",
+    "cr": 490,
     "make": [
         "Alpina",
         "BMW"
@@ -28,8 +29,7 @@
     "mra": 70,
     "ola": 78.57,
     "description": "Only 23 B8 4.6 Cabrios were made, as opposed to 221 sedans.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/828970344772796446/unknown.png",
-    "333TopSpeed": 173,
+     "333TopSpeed": 173,
     "3330to60": 5.3,
     "333Handling": 82,
     "666TopSpeed": 176,
@@ -44,6 +44,6 @@
     "699TopSpeed": 176,
     "6990to60": 4.8,
     "699Handling": 88,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017025700189982730/Alpina_B8_Cabrio.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

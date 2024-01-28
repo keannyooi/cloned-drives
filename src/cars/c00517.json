@@ -1,5 +1,6 @@
 {
-    "rq": 60,
+    "carID": "c00517",
+    "cr": 600,
     "make": "Honda",
     "model": "Accord Coupe EX-L V6",
     "modelYear": 2013,
@@ -22,8 +23,7 @@
     "mra": 70.94,
     "ola": 89.66,
     "description": "Classified by some as a muscle car. Some would disagree.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/826173759252856852/accord_exl_cd.png",
-    "333TopSpeed": 136,
+     "333TopSpeed": 136,
     "3330to60": 5.2,
     "333Handling": 79,
     "666TopSpeed": 140,
@@ -38,6 +38,6 @@
     "699TopSpeed": 140,
     "6990to60": 4.7,
     "699Handling": 84,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100121509424541766/AccordCoupV6EXL13.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "McNuggets"
 }

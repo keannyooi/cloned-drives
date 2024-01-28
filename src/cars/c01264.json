@@ -1,5 +1,6 @@
 {
-    "rq": 56,
+    "carID": "c01264",
+    "cr": 557,
     "make": "Tesla",
     "model": "Model S Concept",
     "modelYear": 2009,
@@ -25,8 +26,7 @@
     "mra": 61.45,
     "ola": 82.35,
     "description": "Project \"WhiteStar\" was designed by a team of 11 people led by Franz von Holzhausen, a former Mazda designer who admits he has perfectionistic tendencies, working day in and day out to produce something \"uncompromised\". Developed in tandem with the Roadster, the concept had more storage space than many SUVs and even had 2 extra seats, alll while looking leagues better.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/858544811656347648/tesla_model_s_concept.png",
-    "333TopSpeed": 129,
+     "333TopSpeed": 129,
     "3330to60": 5.5,
     "333Handling": 80,
     "666TopSpeed": 133,
@@ -41,6 +41,6 @@
     "699TopSpeed": 133,
     "6990to60": 4.9,
     "699Handling": 85,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1002950972319989760/model_s_concept.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/TeslaModelSConcept(2009).png",
     "creator": "Keanny"
 }

@@ -1,5 +1,6 @@
 {  
-    "rq": 99,
+    "carID": "c03247",
+    "cr": 990,
     "make": "Ferrari",
     "model": "SF90 Spider",
     "modelYear": 2019,
@@ -22,8 +23,7 @@
     "mra": 109.09,
     "ola": 91.67,
     "description": "If you wish to feel the wind on your face going from a breeze to a tornado, or just to cruise in an expensive jewel, Ferrari has the ultimate solution.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/1055184476965191711/sf90_spider.png",
-    "333TopSpeed": 213,
+     "333TopSpeed": 213,
     "3330to60": 2.3,
     "333Handling": 97,
     "666TopSpeed": 216,
@@ -38,6 +38,6 @@
     "699TopSpeed": 216,
     "6990to60": 2.0,
     "699Handling": 104,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1055184877663825990/sf90_spid.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Lemon"
 }

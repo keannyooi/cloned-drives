@@ -1,5 +1,6 @@
 {
-    "rq": 84,
+    "carID": "c00273",
+    "cr": 840,
     "make": "Chevrolet",
     "model": "Corvette Z06",
     "modelYear": 2015,
@@ -22,8 +23,7 @@
     "mra": 80,
     "ola": 93.75,
     "description": "Fastest Z06 yet, featuring a supercharged LT4.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/934139277598654545/A.ChevyCorvetteZ06C7.png",
-    "333TopSpeed": 199,
+     "333TopSpeed": 199,
     "3330to60": 3.0,
     "333Handling": 96,
     "666TopSpeed": 201,
@@ -38,6 +38,6 @@
     "699TopSpeed": 201,
     "6990to60": 2.7,
     "699Handling": 103,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995759639692058795/corvettec7.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

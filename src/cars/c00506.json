@@ -1,5 +1,6 @@
 {
-    "rq": 79,
+    "carID": "c00506",
+    "cr": 790,
     "make": ["Gunther Werks","Porsche"],
     "model": "400R",
     "modelYear": 2019,
@@ -22,8 +23,7 @@
     "mra": 82.22,
     "ola": 80,
     "description": "This is not a Singer.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/820726041903497226/guntherwerks.png",
-    "333TopSpeed": 173,
+     "333TopSpeed": 173,
     "3330to60": 3.5,
     "333Handling": 96,
     "666TopSpeed": 176,
@@ -38,6 +38,6 @@
     "699TopSpeed": 176,
     "6990to60": 3.1,
     "699Handling": 103,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/995687957291876432/GW400R.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

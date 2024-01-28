@@ -1,5 +1,6 @@
 {
-    "rq": 37,
+    "carID": "c01860",
+    "cr": 370,
     "make": "Toyota",
     "model": "Auris 2.2 D-CAT",
     "modelYear": 2007,
@@ -22,8 +23,7 @@
     "mra": 55,
     "ola": 70.45,
     "description": "Replacement for the hatchback Corolla named after Latin word for gold 'aurum'.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/867157277253042176/D.ToyotaAuris22DCAT.png",
-    "333TopSpeed": 134,
+     "333TopSpeed": 134,
     "3330to60": 8.4,
     "333Handling": 76,
     "666TopSpeed": 138,
@@ -38,6 +38,6 @@
     "699TopSpeed": 138,
     "6990to60": 7.5,
     "699Handling": 82,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996482993503871007/auris22hdi.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

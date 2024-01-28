@@ -1,5 +1,6 @@
 {
-    "rq": 99,
+    "carID": "c02037",
+    "cr": 990,
     "make": "Lancia",
     "model": "ECV",
     "modelYear": 1986,
@@ -26,8 +27,7 @@
     "mra": 84.61,
     "ola": 90.9,
     "description": "A unicorn car rebuilt in 2010.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/947969421706686504/Lancia_ECV.png",
-    "333TopSpeed": 147,
+     "333TopSpeed": 147,
     "3330to60": 2.1,
     "333Handling": 93,
     "666TopSpeed": 150,
@@ -42,6 +42,6 @@
     "699TopSpeed": 150,
     "6990to60": 1.9,
     "699Handling": 100,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1000902617712558170/ECV.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "AK1"
 }

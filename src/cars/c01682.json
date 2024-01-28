@@ -1,5 +1,6 @@
 {
-    "rq": 104,
+    "carID": "c01682",
+    "cr": 1040,
     "make": "Mitsubishi",
     "model": "Lancer Evolution VII WRC",
     "modelYear": 2001,
@@ -22,8 +23,7 @@
     "mra": 67.27,
     "ola": 81.08,
     "description": "Mitsubishi's first ever World Rally Car specification Lancer Evolution. Unlike its successful Group A predecessors, it was not able to carry the same championship-winning legacy with all 3 wins from the 2001 season coming from last season's Lancer Evolution 6 TME. This would also be Tommi Mäkinen's last ever ride in a Mitsubishi rally car.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/948543741902331954/evo7wrc.png",
-    "333TopSpeed": 153,
+     "333TopSpeed": 153,
     "3330to60": 3.5,
     "333Handling": 93,
     "666TopSpeed": 157,
@@ -38,6 +38,6 @@
     "699TopSpeed": 157,
     "6990to60": 3.1,
     "699Handling": 100,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996021500874330152/Evo7rally.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

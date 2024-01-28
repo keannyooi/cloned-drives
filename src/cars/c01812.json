@@ -1,10 +1,11 @@
 {
-    "rq": 16,
+    "carID": "c01812",
+    "cr": 164,
     "make": [
         "Pandora-Inc",
         "Honda"
     ],
-    "model": "S660 Demo Version II",
+    "model": "COMPETEC S660 Version II",
     "modelYear": 2017,
     "country": "JP",
     "topSpeed": 114,
@@ -29,8 +30,7 @@
     "mra": 47.51,
     "ola": 72.88,
     "description": "Pandora's box in kei car form.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/868778807287500820/pandora_s660.png",
-    "333TopSpeed": 119,
+     "333TopSpeed": 119,
     "3330to60": 10.5,
     "333Handling": 79,
     "666TopSpeed": 123,
@@ -45,6 +45,6 @@
     "699TopSpeed": 123,
     "6990to60": 9.4,
     "699Handling": 84,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003165463347466331/pandoras_box.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/Pandora-IncCOMPETECS660VersionII(2017).png",
     "creator": "Keanny"
 }

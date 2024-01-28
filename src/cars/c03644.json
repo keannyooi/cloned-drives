@@ -1,5 +1,6 @@
 {  
-    "rq": 75,
+    "carID": "c03644",
+    "cr": 750,
     "make": "Ferrari",
     "model": "512 BB Competizione",
     "modelYear": 1978,
@@ -22,8 +23,7 @@
     "mra": 92.86,
     "ola": 82.05,
     "description": "Before the BB LM there was this BB.",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1099813346280222730/512_BB_COMPETIZIONE.png",
-    "333TopSpeed": 196,
+     "333TopSpeed": 196,
     "3330to60": 3.7,
     "333Handling": 95,
     "666TopSpeed": 198,
@@ -38,6 +38,6 @@
     "699TopSpeed": 198,
     "6990to60": 3.3,
     "699Handling": 102,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1099814904384475246/512_bb_competizione.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Lemon"
 }

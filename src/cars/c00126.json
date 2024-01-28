@@ -1,5 +1,6 @@
 {
-    "rq": 63,
+    "carID": "c00126",
+    "cr": 630,
     "make": "Audi",
     "model": "TTS Coupe",
     "modelYear": 2008,
@@ -22,8 +23,7 @@
     "mra": 68.03,
     "ola": 72.29,
     "description": "Tangerine orange fast.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/824046697482289202/unknown.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 4.8,
     "333Handling": 88,
     "666TopSpeed": 162,
@@ -38,6 +38,6 @@
     "699TopSpeed": 162,
     "6990to60": 4.3,
     "699Handling": 94,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1017149470338719894/Audi_TTS_Coupe_2008.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Havvy"
 }

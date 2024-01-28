@@ -1,5 +1,6 @@
 {
-    "rq": 28,
+    "carID": "c01580",
+    "cr": 284,
     "make": "Isuzu",
     "model": "Piazza XE",
     "modelYear": 1981,
@@ -24,8 +25,7 @@
     "mra": 46.67,
     "ola": 67.35,
     "description": "XE for jp-spec. Cars by Andu.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/948299351023841290/PiazzaXE.png",
-    "333TopSpeed": 117,
+     "333TopSpeed": 117,
     "3330to60": 9.3,
     "333Handling": 72,
     "666TopSpeed": 121,
@@ -40,6 +40,6 @@
     "699TopSpeed": 121,
     "6990to60": 8.3,
     "699Handling": 78,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1050934357029814302/PiazzaXE.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/IsuzuPiazzaXe(1981).png",
     "creator": "Andu"
 }

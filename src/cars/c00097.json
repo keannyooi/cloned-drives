@@ -1,5 +1,6 @@
 {
-    "rq": 33,
+    "carID": "c00097",
+    "cr": 330,
     "make": "Aston Martin",
     "model": "Virage",
     "modelYear": 1989,
@@ -24,8 +25,7 @@
     "mra": 67.89,
     "ola": 90.32,
     "description": "Technologically outdated, yet still attracts rich people for its statement.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/819384006780256296/virage.png",
-    "333TopSpeed": 149,
+     "333TopSpeed": 149,
     "3330to60": 7,
     "333Handling": 74,
     "666TopSpeed": 152,
@@ -40,6 +40,6 @@
     "699TopSpeed": 152,
     "6990to60": 6.3,
     "699Handling": 80,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003658036897923082/virage.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Keanny"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 42,
+    "carID": "c00999",
+    "cr": 420,
     "make": "Opel",
     "model": "Insignia GSi",
     "modelYear": 2017,
@@ -22,8 +23,7 @@
     "mra": 68.37,
     "ola": 71.64,
     "description": "Return of the legendary nameplate.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/859692408295260160/C.OpelInsigniaGSi.png",
-    "333TopSpeed": 158,
+     "333TopSpeed": 158,
     "3330to60": 6.4,
     "333Handling": 82,
     "666TopSpeed": 162,
@@ -38,6 +38,6 @@
     "699TopSpeed": 162,
     "6990to60": 5.7,
     "699Handling": 88,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1036183073907277915/insignia_gsi.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

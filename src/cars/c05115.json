@@ -1,5 +1,6 @@
 {
-    "rq": 200,
+	"carID": "c05115",
+    "cr": 2000,
     "make": ["MF Ghost","Toyota"],
     "model": "GT86 Stage 1 (BOSS)",
     "modelYear": 2023,
@@ -22,7 +23,6 @@
     "mra": 65.38,
     "ola": 76.47,
     "description": "The Toyota GT86, a homage to the AE86 and a very Tuner loved car.",
-    "card": "https://cdn.discordapp.com/attachments/858073173303754822/1171049154827522068/MFGhostGT86BOSS.png",
     "333TopSpeed": 140,
     "3330to60": 6.5,
     "333Handling": 103,
@@ -38,6 +38,6 @@
     "699TopSpeed": 144,
     "6990to60": 5.8,
     "699Handling": 111,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997644591421460490/GT86.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

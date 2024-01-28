@@ -1,7 +1,8 @@
 {
-    "rq": 55,
+    "carID": "c01753",
+    "cr": 547,
     "make": "Nissan",
-    "model": "Leaf All-Wheel Control Test Car",
+    "model": "Leaf All-Wheel-Control Test Car",
     "modelYear": 2019,
     "country": "JP",
     "topSpeed": 116,
@@ -23,8 +24,7 @@
     "mra": 53.77,
     "ola": 73.68,
     "description": "Nissan was playing around with their e-4ORCE powertrain made for the then soon-to-be-launched Ariya with this test mule based on the Leaf, the other EV Nissan was selling at the time. The powertrain took elements from the GT-R's torque-split system and the Patrol's 4WD system. At the time, many people wanted this technology directly on the Leaf, but alas it stayed as only a testing vehicle.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/861146463614140416/nissan_leaf_awd_thingo.png",
-
+ 
     "333TopSpeed": 120,
     "3330to60": 5.4,
     "333Handling": 72,
@@ -45,6 +45,6 @@
     "6990to60": 4.8,
     "699Handling": 78,
 
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1001859961988591756/leaf_awd.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/NissanLeafAll-Wheel-ControlTestCar(2019).png",
     "creator": "Keanny"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 46,
+    "carID": "c00772",
+    "cr": 460,
     "make": "Mazda",
     "model": "MX-6 LS",
     "modelYear": 1993,
@@ -22,8 +23,7 @@
     "mra": 56.2,
     "ola": 72.73,
     "description": "",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/824903678342856714/MX6.png",
-    "333TopSpeed": 136,
+     "333TopSpeed": 136,
     "3330to60": 6.9,
     "333Handling": 80,
     "666TopSpeed": 140,
@@ -38,6 +38,6 @@
     "699TopSpeed": 140,
     "6990to60": 6.2,
     "699Handling": 85,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100139008870338722/MazaMX692.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Based"
 }

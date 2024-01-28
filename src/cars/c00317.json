@@ -1,5 +1,6 @@
 {
-    "rq": 25,
+    "carID": "c00317",
+    "cr": 250,
     "make": "Citroen",
     "model": "C1 1.0i Advance",
     "modelYear": 2009,
@@ -22,8 +23,7 @@
     "mra": 27.37,
     "ola": 65.79,
     "description": "If you live in a city, it's hard to justify driving anything but a C1.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/865584577938456606/citroen_c1_advance.png",
-    "333TopSpeed": 103,
+     "333TopSpeed": 103,
     "3330to60": 11.9,
     "333Handling": 75,
     "666TopSpeed": 109,
@@ -38,6 +38,6 @@
     "699TopSpeed": 109,
     "6990to60": 10.6,
     "699Handling": 81,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003166543233962045/c1_advance.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Keanny"
 }

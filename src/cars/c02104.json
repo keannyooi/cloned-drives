@@ -1,5 +1,6 @@
 {
-    "rq": 1,
+    "carID": "c02104",
+    "cr": 67,
     "make": "BMW",
     "model": "1602 Elektro-Antrieb",
     "modelYear": 1972,
@@ -22,8 +23,7 @@
     "mra": 0,
     "ola": 70.48,
     "description": "One of BMW's first attempts at elektro cars.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/930193849937182760/1602butright.png",
-    "333TopSpeed": 70,
+     "333TopSpeed": 70,
     "3330to60": 21.6,
     "333Handling": 59,
     "666TopSpeed": 79,
@@ -38,6 +38,6 @@
     "699TopSpeed": 79,
     "6990to60": 19.3,
     "699Handling": 63,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996027895854157904/bmw102eclc.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BMW1602Elektro-Antrieb(1972).png",
     "creator": "Bnuuy"
 }

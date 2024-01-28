@@ -1,5 +1,6 @@
 {
-    "rq": 90,
+    "carID": "c02211",
+    "cr": 900,
     "make": "Pagani",
     "model": "Huayra Roadster",
     "modelYear": 2017,
@@ -22,8 +23,7 @@
     "mra": 103.33,
     "ola": 95.48,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/978709357317484554/HuayraRoadster.png",
-    "333TopSpeed": 232,
+     "333TopSpeed": 232,
     "3330to60": 2.9,
     "333Handling": 97,
     "666TopSpeed": 235,
@@ -38,6 +38,6 @@
     "699TopSpeed": 235,
     "6990to60": 2.6,
     "699Handling": 104,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997533112496029756/huayryaroadster.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

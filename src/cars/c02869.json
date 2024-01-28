@@ -1,5 +1,6 @@
 {
-    "rq": 23,
+    "carID": "c02869",
+    "cr": 230,
     "make": "Audi",
     "model": "A1 1.2 TFSI",
     "modelYear": 2010,
@@ -22,8 +23,7 @@
     "mra": 37.63,
     "ola": 61.11,
     "description": "Top 10 funkiest way to spend 20k.",
-    "card": "https://media.discordapp.net/attachments/974551848226811944/974925898644078643/unknown.png",
-    "333TopSpeed": 115,
+     "333TopSpeed": 115,
     "3330to60": 10.3,
     "333Handling": 77,
     "666TopSpeed": 119,
@@ -38,6 +38,6 @@
     "699TopSpeed": 119,
     "6990to60": 9.2,
     "699Handling": 83,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1036677415574974484/a1_1.2_tfsi.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Lemon"
 }

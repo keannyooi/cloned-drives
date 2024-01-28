@@ -1,5 +1,6 @@
 {
-    "rq": 61,
+    "carID": "c01889",
+    "cr": 610,
     "make": [
         "Protech Performance",
         "Mazda"
@@ -27,8 +28,7 @@
     "mra": 60.49,
     "ola": 71.84,
     "description": "The first forced induction kit for the Mazda RX-8, which was so good it got featured in Car & Driver.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/974663878812258324/unknown.png",
-    "333TopSpeed": 178,
+     "333TopSpeed": 178,
     "3330to60": 4.7,
     "333Handling": 88,
     "666TopSpeed": 181,
@@ -43,6 +43,6 @@
     "699TopSpeed": 181,
     "6990to60": 4.2,
     "699Handling": 94,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1001844068009132115/protech_rx-8.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Keanny"
 }

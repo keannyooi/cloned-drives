@@ -1,5 +1,6 @@
 {
-    "rq": 43,
+    "carID": "c02047",
+    "cr": 430,
     "make": "Mercedes-Benz",
     "model": "Vision G-Code Concept",
     "modelYear": 2014,
@@ -25,8 +26,7 @@
     "mra": 66.66,
     "ola": 65,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/948545837481492560/Gcode.png",
-    "333TopSpeed": 129,
+     "333TopSpeed": 129,
     "3330to60": 7.6,
     "333Handling": 76,
     "666TopSpeed": 133,
@@ -41,6 +41,6 @@
     "699TopSpeed": 133,
     "6990to60": 6.8,
     "699Handling": 82,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1010857951281561670/Gcode.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

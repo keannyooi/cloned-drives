@@ -1,5 +1,6 @@
 {
-    "rq": 1,
+    "carID": "c01601",
+    "cr": 5,
     "make": "Mazda",
     "model": "Chantez GFII",
     "modelYear": 1972,
@@ -25,8 +26,7 @@
     "mra": 0,
     "ola": 48.02,
     "description": "This was supposed to be powered by a rotary engine, but every other kei car manufacturer disliked that, so they had to use another engine instead which resulted in Mazda's lost interest in kei cars.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/969596315585609758/mazda_chantex_gfii.png",
-    "333TopSpeed": 77,
+     "333TopSpeed": 77,
     "3330to60": 32.9,
     "333Handling": 53,
     "666TopSpeed": 85,
@@ -41,6 +41,6 @@
     "699TopSpeed": 85,
     "6990to60": 29.4,
     "699Handling": 57,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003937795536076880/chantez.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/MazdaChantezGFII(1972).png",
     "creator": "Keanny"
 }

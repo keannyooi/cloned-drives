@@ -1,5 +1,6 @@
 {
-    "rq": 33,
+    "carID": "c01822",
+    "cr": 330,
     "make": [
         "Samuri",
         "Nissan",
@@ -29,8 +30,7 @@
     "mra": 53.6,
     "ola": 65.67,
     "description": "A British racing icon, despite originally being a Japanese car.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/869497837489102858/datsun_240z_super_samuri.png",
-    "333TopSpeed": 144,
+     "333TopSpeed": 144,
     "3330to60": 6.4,
     "333Handling": 75,
     "666TopSpeed": 147,
@@ -45,6 +45,6 @@
     "699TopSpeed": 147,
     "6990to60": 5.7,
     "699Handling": 81,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1001850966867460096/samuri.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Keanny"
 }

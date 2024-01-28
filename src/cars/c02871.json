@@ -1,5 +1,6 @@
 {
-    "rq": 33,
+    "carID": "c02871",
+    "cr": 330,
     "make": "Audi",
     "model": "A1 1.4 TFSI",
     "modelYear": 2010,
@@ -22,8 +23,7 @@
     "mra": 48.33,
     "ola": 66.67,
     "description": "The perfect A1 spec: power, performance and good mileage.",
-    "card": "https://media.discordapp.net/attachments/974551848226811944/974929387310968862/unknown.png",
-    "333TopSpeed": 131,
+     "333TopSpeed": 131,
     "3330to60": 8.3,
     "333Handling": 79,
     "666TopSpeed": 135,
@@ -38,6 +38,6 @@
     "699TopSpeed": 135,
     "6990to60": 7.4,
     "699Handling": 84,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1036677522370334820/a1_1.4_122_hp.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Lemon"
 }

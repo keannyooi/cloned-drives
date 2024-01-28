@@ -1,5 +1,6 @@
 {
-    "rq": 75,
+    "carID": "c01512",
+    "cr": 750,
     "make": "Porsche",
     "model": "Cayenne GTS",
     "modelYear": 2010,
@@ -23,8 +24,7 @@
     "mra": 70,
     "ola": 72,
     "description": "",
-    "card": "https://cdn.discordapp.com/attachments/1077292374608326656/1079094859895422976/CayenneGTS2010.png",
-
+ 
     "333TopSpeed": 162,
     "3330to60": 5.3,
     "333Handling": 85,
@@ -45,6 +45,6 @@
     "9960to60": 4.8,
     "996Handling": 87,
 
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1079095247159709716/CayenneGTS2010.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

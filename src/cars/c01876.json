@@ -1,5 +1,6 @@
 {
-    "rq": 38,
+    "carID": "c01876",
+    "cr": 380,
     "make": "Toyota",
     "model": "Camry XLE V6",
     "modelYear": 2000,
@@ -24,8 +25,7 @@
     "mra": 61.83,
     "ola": 74.07,
     "description": "Bland like a stick of butter.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/882732016381091870/camry_xle_2000.png",
-    "333TopSpeed": 134,
+     "333TopSpeed": 134,
     "3330to60": 7.7,
     "333Handling": 72,
     "666TopSpeed": 138,
@@ -40,6 +40,6 @@
     "699TopSpeed": 138,
     "6990to60": 6.9,
     "699Handling": 78,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100177678960705588/Camry00.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "McNuggets"
 }

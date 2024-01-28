@@ -1,5 +1,6 @@
 {
-    "rq": 46,
+    "carID": "c01041",
+    "cr": 460,
     "make": "Polaris",
     "model": "Slingshot SLR LE",
     "modelYear": 2018,
@@ -26,8 +27,7 @@
     "mra": 50.93,
     "ola": 90.91,
     "description": "Imagine misreading 200km/h as 200mph (looking at you Doug).",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/819383808306446336/slingshot.png",
-    "333TopSpeed": 134,
+     "333TopSpeed": 134,
     "3330to60": 5.2,
     "333Handling": 79,
     "666TopSpeed": 138,
@@ -42,6 +42,6 @@
     "699TopSpeed": 138,
     "6990to60": 4.7,
     "699Handling": 84,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003653380574552205/slingshot.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Keanny"
 }

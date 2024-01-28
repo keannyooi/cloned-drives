@@ -1,5 +1,6 @@
 {
-    "rq": 44,
+    "carID": "c01775",
+    "cr": 440,
     "make": "Nissan",
     "model": "Skyline 250GT-FOUR",
     "modelYear": 2001,
@@ -24,8 +25,7 @@
     "mra": 60.63,
     "ola": 70,
     "description": "Japan only 4WD model with 2.5l V6.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/962746265412718682/C.NissanSkyline250GT-FOUR.png",
-    "333TopSpeed": 117,
+     "333TopSpeed": 117,
     "3330to60": 7.3,
     "333Handling": 77,
     "666TopSpeed": 121,
@@ -40,6 +40,6 @@
     "699TopSpeed": 121,
     "6990to60": 6.5,
     "699Handling": 83,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/996848214181425212/skyline2504.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Connor"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 69,
+    "carID": "c02072",
+    "cr": 690,
     "make": [
         "ABT",
         "Audi"
@@ -27,8 +28,7 @@
     "mra": 86.12,
     "ola": 76.54,
     "description": "ABT's second showing of the RS 4, bringing 480hp.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/947580571784183878/CD_ABT_AS4-R_Avant_B7.png",
-    "333TopSpeed": 189,
+     "333TopSpeed": 189,
     "3330to60": 4.2,
     "333Handling": 86,
     "666TopSpeed": 192,
@@ -43,6 +43,6 @@
     "699TopSpeed": 192,
     "6990to60": 3.7,
     "699Handling": 92,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1018178629814996992/ABT_AS4-R_Avant.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Exist"
 }

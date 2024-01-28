@@ -1,5 +1,6 @@
 {
-    "rq": 98,
+    "carID": "c01147",
+    "cr": 980,
     "make": "Rimac",
     "model": "Concept_One",
     "modelYear": 2013,
@@ -27,8 +28,7 @@
     "mra": 96.15,
     "ola": 76,
     "description": "Rimac's first hyper- *(CRASH)* ...aaaaaand Hammond does what he does best again.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/823395084850036736/2013_Rimac_C1.png",
-    "333TopSpeed": 223,
+     "333TopSpeed": 223,
     "3330to60": 2.4,
     "333Handling": 97,
     "666TopSpeed": 226,
@@ -43,6 +43,6 @@
     "699TopSpeed": 226,
     "6990to60": 2.1,
     "699Handling": 104,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1016104699470020649/Rimac_Concept_One.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "DodgeDemon"
 }

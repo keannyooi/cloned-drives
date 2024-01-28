@@ -1,5 +1,6 @@
 {
-    "rq": 28,
+    "carID": "c01168",
+    "cr": 280,
     "make": "Scion",
     "model": "iQ",
     "modelYear": 2012,
@@ -22,8 +23,7 @@
     "mra": 33.12,
     "ola": 81.55,
     "description": "The smarter Smart alternative. Card by Andu",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/821107095620288573/iqScion.png",
-    "333TopSpeed": 105,
+     "333TopSpeed": 105,
     "3330to60": 9.8,
     "333Handling": 73,
     "666TopSpeed": 110,
@@ -38,6 +38,6 @@
     "699TopSpeed": 110,
     "6990to60": 8.8,
     "699Handling": 79,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1050932813832130630/iq.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Andu"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 32,
+    "carID": "c01571",
+    "cr": 320,
     "make": "Infiniti",
     "model": "J30t",
     "modelYear": 1992,
@@ -24,8 +25,7 @@
     "mra": 62.81,
     "ola": 71.51,
     "description": "Bulbous.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/969595802232172614/j30t.png",
-    "333TopSpeed": 130,
+     "333TopSpeed": 130,
     "3330to60": 8.6,
     "333Handling": 71,
     "666TopSpeed": 134,
@@ -40,6 +40,6 @@
     "699TopSpeed": 134,
     "6990to60": 7.7,
     "699Handling": 74,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1022938714449661983/Infiniti_J30t.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Cenard"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 55,
+    "carID": "c00948",
+    "cr": 550,
     "make": "Nissan",
     "model": "Maxima SE",
     "modelYear": 2002,
@@ -22,8 +23,7 @@
     "mra": 61.86,
     "ola": 86.67,
     "description": "Facelifted for 2002, the Maxima proved you didn't have to give up and buy a Camry just because you started a family.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/828458297589235742/max_se_02.png",
-    "333TopSpeed": 149,
+     "333TopSpeed": 149,
     "3330to60": 5.7,
     "333Handling": 76,
     "666TopSpeed": 152,
@@ -38,6 +38,6 @@
     "699TopSpeed": 152,
     "6990to60": 5.1,
     "699Handling": 82,
-    "racehud": "https://cdn.discordapp.com/attachments/1077293403668234340/1100152873473560596/MaxiSE02.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "McNuggets"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 80,
+    "carID": "c01444",
+    "cr": 800,
     "make": "Maserati",
     "model": "MC12 Stradale",
     "modelYear": 2004,
@@ -26,8 +27,7 @@
     "mra": 86.05,
     "ola": 91.89,
     "description": "'only the doors and the windows were right; everything else was absolute shit' - edo",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/1061644576441520138/MC12Stradale.png",
-    "333TopSpeed": 208,
+     "333TopSpeed": 208,
     "3330to60": 3.4,
     "333Handling": 93,
     "666TopSpeed": 210,
@@ -42,6 +42,6 @@
     "699TopSpeed": 210,
     "6990to60": 3.1,
     "699Handling": 100,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1061645356800159866/MC12.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

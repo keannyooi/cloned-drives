@@ -1,5 +1,6 @@
 {
-    "rq": 91,
+    "carID": "c01156",
+    "cr": 910,
     "make": ["Ruf", "Porsche"],
     "model": "CTR3 Clubsport",
     "modelYear": 2012,
@@ -22,8 +23,7 @@
     "mra": 107.14,
     "ola": 86.67,
     "description": "Unlike most other Rufs, it’s not based on a Porsche, but a bespoke platform developed by RUF and Multimatic.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/850409084247081001/ctr3clubsport.png",
-    "333TopSpeed": 238,
+     "333TopSpeed": 238,
     "3330to60": 2.9,
     "333Handling": 96,
     "666TopSpeed": 240,
@@ -38,6 +38,6 @@
     "699TopSpeed": 240,
     "6990to60": 2.6,
     "699Handling": 103,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/997561169227296850/CTR3clubsport.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Bnuuy"
 }

@@ -1,5 +1,6 @@
 {
-    "rq": 21,
+    "carID": "c01043",
+    "cr": 210,
     "make": "Pontiac",
     "model": "6000 STE",
     "modelYear": 1986,
@@ -24,8 +25,7 @@
     "mra": 38.65,
     "ola": 67.89,
     "description": "The Pontiac 6000STE stands head and shoulders above every other Detroit sedan. Apparently.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/820998516284719104/pontiac_6000_ste.png",
-    "333TopSpeed": 120,
+     "333TopSpeed": 120,
     "3330to60": 9.9,
     "333Handling": 73,
     "666TopSpeed": 125,
@@ -40,6 +40,6 @@
     "699TopSpeed": 125,
     "6990to60": 8.8,
     "699Handling": 79,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1003291674589548564/6000ste.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Keanny"
 }

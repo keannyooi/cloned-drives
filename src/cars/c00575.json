@@ -1,5 +1,6 @@
 {
-    "rq": 52,
+    "carID": "c00575",
+    "cr": 520,
     "make": ["IPD", "Volvo"],
     "model": "S40 T5",
     "modelYear": 2006,
@@ -24,8 +25,7 @@
     "mra": 63.54,
     "ola": 75.41,
     "description": "The closest you'll get to an S40 R.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/856996391960576000/IPD-S40-T5.png",
-    "333TopSpeed": 176,
+     "333TopSpeed": 176,
     "3330to60": 5.8,
     "333Handling": 81,
     "666TopSpeed": 179,
@@ -40,6 +40,6 @@
     "699TopSpeed": 179,
     "6990to60": 5.2,
     "699Handling": 87,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1004766907087470652/IPD-S40-T5.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Johnny"
 }

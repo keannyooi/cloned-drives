@@ -1,5 +1,6 @@
 {
-    "rq": 60,
+    "carID": "c02125",
+    "cr": 598,
     "make": "BMW",
     "model": "Z4 sDrive30i",
     "modelYear": 2019,
@@ -22,8 +23,7 @@
     "mra": 65.22,
     "ola": 74.57,
     "description": "None.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/942055008281710602/bmw_z4_sdrive30i.png",
-    "333TopSpeed": 160,
+     "333TopSpeed": 160,
     "3330to60": 4.9,
     "333Handling": 93,
     "666TopSpeed": 164,
@@ -38,6 +38,6 @@
     "699TopSpeed": 164,
     "6990to60": 4.4,
     "699Handling": 100,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1001845362912399501/z4_sdrive30i.jpg",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BMWZ4sDrive30i(2019).png",
     "creator": "Keanny"
 }

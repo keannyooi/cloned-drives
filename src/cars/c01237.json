@@ -1,5 +1,6 @@
 {
-    "rq": 35,
+    "carID": "c01237",
+    "cr": 350,
     "make": "Subaru",
     "model": "XT6",
     "modelYear": 1988,
@@ -22,8 +23,7 @@
     "mra": 42.13,
     "ola": 57.14,
     "description": "One of several unsuccessful Impreza predecessors.",
-    "card": "https://media.discordapp.net/attachments/819199720249360384/821706710581248000/cate-test.png",
-    "333TopSpeed": 122,
+     "333TopSpeed": 122,
     "3330to60": 8.6,
     "333Handling": 71,
     "666TopSpeed": 127,
@@ -38,6 +38,6 @@
     "699TopSpeed": 127,
     "6990to60": 7.7,
     "699Handling": 77,
-    "racehud": "https://media.discordapp.net/attachments/995376525119586356/1004785415707955322/Subaru-XT6.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
     "creator": "Johnny"
 }
