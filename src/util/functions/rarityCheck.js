@@ -11,7 +11,7 @@ function rarityCheck(car, type) {
     else if (car["cr"] > 1501) { //BOSS
     return bot.emojis.cache.get(bossEmojiID);
     }
-	    else if (car["cr"] > 1000 && car["cr"] <= 1500) { //Mystic
+	    else if (car["cr"] > 999 && car["cr"] <= 1500) { //Mystic
         return bot.emojis.cache.get(mysticEmojiID);
     }
     else if (car["cr"] > 849 && car["cr"] <= 999) { //leggie
