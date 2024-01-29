@@ -1,6 +1,6 @@
 {
     "carID": "c00952",
-    "cr": 850,
+    "cr": 851,
     "make": "Nissan",
     "model": "R390 GT1 Longtail Road Car",
     "modelYear": 1998,
@@ -10,12 +10,7 @@
     "handling": 91,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Ultra Expensive",
-        "Unique",
-        "Track Day"
-    ],
-
+    "tags": ["Ultra Expensive","Unique","Track Day"],
     "isPrize": true,
     "weight": 1098,
     "gc": "Low",
@@ -49,6 +44,6 @@
     "9960to60": 2.9,
     "996Handling": 97,
     
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/NissanR390GT1LongtailRoadCar(1998).png",
     "creator": "Bnuuy"
 }

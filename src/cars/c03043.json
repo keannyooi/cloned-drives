@@ -1,12 +1,12 @@
 {
     "carID": "c03043",
-    "cr": 830,
+    "cr": 821,
     "make": "Pagani",
-    "model": "Zonda Monza",
+    "model": "Zonda C12 S Monza",
     "modelYear": 2004,
     "country": "IT",
     "topSpeed": 214,
-    "0to60": 3.4,
+    "0to60": 3.5,
     "handling": 90,
     "driveType": "RWD",
     "tyreType": "Performance",
@@ -21,14 +21,14 @@
     "abs": true,
     "enginePos": "Middle",
     "fuelType": "Petrol",
-    "mra": 100,
+    "mra": 104.55,
     "ola": 94.11,
     "description": "",
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/PaganiZondaC12SMonza(2004).png",
     "creator": "Bnuuy",
 
 "333TopSpeed": 216, 
-"3330to60": 3.2, 
+"3330to60": 3.3, 
 "333Handling": 93,
 
 "666TopSpeed": 219, 
@@ -36,7 +36,7 @@
 "666Handling": 96,
 
 "699TopSpeed": 219, 
-"6990to60": 2.9, 
+"6990to60": 3, 
 "699Handling": 100,
 
 "969TopSpeed": 221, 
@@ -44,6 +44,6 @@
 "969Handling": 100,
 
 "996TopSpeed": 221, 
-"9960to60": 2.9, 
+"9960to60": 3, 
 "996Handling": 96
 }

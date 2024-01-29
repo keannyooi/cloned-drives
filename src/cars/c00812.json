@@ -1,9 +1,9 @@
 {
     "carID": "c00812",
-    "cr": 990,
+    "cr": 996,
     "make": "McLaren",
     "model": "P1 GTR Road Car by Lanzante",
-    "modelYear": 2016,
+    "modelYear": 2015,
     "country": "GB",
     "topSpeed": 225,
     "0to60": 2.4,
@@ -18,7 +18,7 @@
         "Unique"
     ],
     "isPrize": true,
-    "weight": 1440,
+    "weight": 1420,
     "gc": "Low",
     "seatCount": 2,
     "bodyStyle": "Coupe",
@@ -26,8 +26,8 @@
     "abs": true,
     "enginePos": "Middle",
     "fuelType": "Petrol",
-    "mra": 114.29,
-    "ola": 83.07,
+    "mra": 118.18,
+    "ola": 80,
     "description": "A P1 GTR Converted to be road legal, by the wonderful people at Lanzante.",
      "333TopSpeed": 227,
     "3330to60": 2.3,
@@ -44,6 +44,6 @@
     "699TopSpeed": 230,
     "6990to60": 2.0,
     "699Handling": 108,
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
-    "creator": "Exist"
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/McLarenP1GTRRoadCarbyLanzante(2015).png",
+    "creator": "Bnuuy"
 }

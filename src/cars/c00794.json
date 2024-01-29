@@ -1,6 +1,6 @@
 {
     "carID": "c00794",
-    "cr": 910,
+    "cr": 905,
     "make": "McLaren",
     "model": "675LT",
     "modelYear": 2015,
@@ -14,7 +14,7 @@
         "Supercar"
     ],
     "isPrize": false,
-    "weight": 1230,
+    "weight": 1320,
     "gc": "Low",
     "seatCount": 2,
     "bodyStyle": "Coupe",
@@ -22,8 +22,8 @@
     "abs": true,
     "enginePos": "Middle",
     "fuelType": "Petrol",
-    "mra": 110.3,
-    "ola": 93.74,
+    "mra": 99.05,
+    "ola": 87.5,
     "description": "The big brother of the 650S.",
      "333TopSpeed": 208,
     "3330to60": 2.7,
@@ -40,6 +40,6 @@
     "699TopSpeed": 210,
     "6990to60": 2.4,
     "699Handling": 103,
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
-    "creator": "Exist"
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/McLaren675LT(2015).png",
+    "creator": "Bnuuy"
 }

@@ -1,19 +1,19 @@
 {
     "carID": "c04305",
-    "cr": 860,
+    "cr": 877,
     "make": "McLaren",
     "model": "F1 HDK",
-    "modelYear": 1993,
+    "modelYear": 1994,
     "country": "GB",
     "topSpeed": 225,
-    "0to60": 3.2,
+    "0to60": 3,
     "handling": 89,
     "driveType": "RWD",
     "tyreType": "Performance",
     "tags": ["Ultra Expensive","Track Day","Unique","Style Icon","The Midlands Cruise","Supercar"],
     "isPrize": false,
 	
-    "weight": 1140,
+    "weight": 1150,
     "gc": "Low",
     "seatCount": 3,
     "bodyStyle": "Coupe",
@@ -21,29 +21,29 @@
     "abs": false,
     "enginePos": "Rear",
     "fuelType": "Petrol",
-    "mra": 124.42,
-    "ola": 86.86,
+    "mra": 125,
+    "ola": 92.5,
     "description": "",
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/McLarenF1HDK(1994).png",
 
 "333TopSpeed": 227,
-"3330to60": 3,
+"3330to60": 2.8,
 "333Handling": 92,
 
 "666TopSpeed": 230,
-"6660to60": 2.9,
+"6660to60": 2.7,
 "666Handling": 95,
 
 "699TopSpeed": 230,
-"6990to60": 2.7,
+"6990to60": 2.5,
 "699Handling": 99,
 
 "969TopSpeed": 232,
-"9690to60": 2.9,
+"9690to60": 2.7,
 "969Handling": 99,
 
 "996TopSpeed": 232,
-"9960to60": 2.7,
+"9960to60": 2.5,
 "996Handling": 95,
-    "creator": "Exist"
+    "creator": "Bnuuy"
 }
