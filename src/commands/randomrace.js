@@ -303,13 +303,13 @@ module.exports = {
             else if (streak > 75 && streak <= 99) {
                 return car["cr"] < 549;
             }
-            else if (streak = 100) {
+            else if (streak === 100) {
                 return car["cr"] < 1500;
             }
-            else if (streak > 101 && streak <= 124) {
+            else if (streak > 100 && streak <= 124) {
                 return car["cr"] < 799;
             }
-            else if (streak = 125) {
+            else if (streak === 125) {
                 return car["cr"] < 1500;
             }
             else if (streak > 126 && streak <= 175) {

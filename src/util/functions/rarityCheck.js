@@ -8,7 +8,7 @@ function rarityCheck(car, type) {
     if (type === "bm") {
         return bot.emojis.cache.get(blackMarketEmojiID);
     }
-    else if (car["cr"] > 1501) { //BOSS
+    else if (car["cr"] > 1500) { //BOSS
     return bot.emojis.cache.get(bossEmojiID);
     }
 	    else if (car["cr"] > 999 && car["cr"] <= 1500) { //Mystic
