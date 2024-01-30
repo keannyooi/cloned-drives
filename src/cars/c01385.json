@@ -1,13 +1,13 @@
 {
     "carID": "c01385",
-    "cr": 310,
+    "cr": 303,
     "make": "Volkswagen",
     "model": "Quantum Syncro Wagon",
     "modelYear": 1984,
     "country": "DE",
     "topSpeed": 113,
     "0to60": 10.1,
-    "handling": 70,
+    "handling": 68,
     "driveType": "4WD",
     "tyreType": "Standard",
     "tags": [],
@@ -22,7 +22,7 @@
     "fuelType": "Petrol",
     "mra": 36.74,
     "ola": 55.58,
-    "description": "The syncro passat that crossed the pond. Card by Andu",
+    "description": "The syncro passat that crossed the pond.",
      "333TopSpeed": 118,
     "3330to60": 9.6,
     "333Handling": 72,
@@ -38,6 +38,6 @@
     "699TopSpeed": 122,
     "6990to60": 8.6,
     "699Handling": 78,
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenQuantumSyncroWagon(1984).png",
     "creator": "Andu"
 }
