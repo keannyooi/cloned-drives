@@ -1,13 +1,13 @@
 {
     "carID": "c01323",
-    "cr": 280,
+    "cr": 265,
     "make": "Toyota",
     "model": "Prius C",
     "modelYear": 2012,
     "country": "JP",
-    "topSpeed": 102,
-    "0to60": 10.7,
-    "handling": 72,
+    "topSpeed": 104,
+    "0to60": 10.8,
+    "handling": 71,
     "driveType": "FWD",
     "tyreType": "Standard",
     "tags": [
@@ -22,9 +22,9 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Hybrid",
-    "mra": 40.69,
-    "ola": 61.68,
-    "description": "It has wheels and gets good gas mileage. Card by Andu",
+    "mra": 30.62,
+    "ola": 66.77,
+    "description": "It has wheels and gets good gas mileage.",
      "333TopSpeed": 107,
     "3330to60": 10.2,
     "333Handling": 74,
@@ -40,6 +40,6 @@
     "699TopSpeed": 112,
     "6990to60": 9.1,
     "699Handling": 80,
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/ToyotaPriusC(2012).png",
     "creator": "Andu"
 }
