@@ -1,13 +1,13 @@
 {
     "carID": "c01360",
-    "cr": 490,
+    "cr": 505,
     "make": "Volkswagen",
     "model": "Beetle Turbo",
     "modelYear": 2011,
     "country": "DE",
-    "topSpeed": 138,
+    "topSpeed": 139,
     "0to60": 6.7,
-    "handling": 76,
+    "handling": 77,
     "driveType": "FWD",
     "tyreType": "Standard",
     "tags": ["Hot Hatch", "Year of the Rabbit", "OG"],
@@ -21,7 +21,7 @@
     "enginePos": "Front",
     "fuelType": "Petrol",
     "mra": 64.2,
-    "ola": 87.73,
+    "ola": 80.30,
     "description": "A puffed-up GTI.",
      "333TopSpeed": 142,
     "3330to60": 6.4,
@@ -38,6 +38,6 @@
     "699TopSpeed": 146,
     "6990to60": 5.7,
     "699Handling": 84,
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenBeetleTurbo(2011).png",
     "creator": "Andu"
 }
