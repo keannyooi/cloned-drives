@@ -9,6 +9,8 @@ const carNameGen = require("../util/functions/carNameGen.js");
 const search = require("../util/functions/search.js");
 const timeDisplay = require("../util/functions/timeDisplay.js");
 const offerModel = require("../models/offerSchema.js");
+const listUpdate = require("../util/functions/listUpdate.js");
+const { defaultPageLimit } = require("../util/consts/consts.js");
 
 module.exports = {
     name: "limitedoffers",
