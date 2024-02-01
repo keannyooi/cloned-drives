@@ -1,13 +1,13 @@
 {
     "carID": "c03656",
-    "cr": 270,
+    "cr": 343,
     "make": "Volkswagen",
     "model": "Golf Rallye",
     "modelYear": 1989,
     "country": "DE",
     "topSpeed": 130,
     "0to60": 8.5,
-    "handling": 72,
+    "handling": 73,
     "driveType": "4WD",
     "tyreType": "Performance",
     "tags": ["Hot Hatch","Endless Summer","The Tyrol Tour: Remix"],
@@ -15,7 +15,7 @@
 
 
     "weight": 1195,
-    "gc": "Low",
+    "gc": "Medium",
     "seatCount":5,
     "bodyStyle": "Hatchback",
     "tcs": false,
@@ -27,26 +27,26 @@
     "description": "Widebody, supercharger and 4WD for the Rally Homologation.",
 
 
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenGolfRallye(1989).png",
     "creator": "Andu",
 
     "333TopSpeed": 134,
     "3330to60": 8.1,
-    "333Handling": 74,
+    "333Handling": 75,
 
     "666TopSpeed": 138,
     "6660to60": 7.7, 
-    "666Handling": 77,
+    "666Handling": 78,
 
     "996TopSpeed": 142,
     "9960to60": 7.2,
-    "996Handling": 77,
+    "996Handling": 78,
 
     "969TopSpeed": 142,
     "9690to60": 7.7,
-    "969Handling": 80,
+    "969Handling": 81,
 
     "699TopSpeed": 138,
     "6990to60": 7.2,
-    "699Handling": 80
+    "699Handling": 81
 }
