@@ -1,13 +1,13 @@
 {
     "carID": "c03654",
-    "cr": 380,
+    "cr": 386,
     "make": "Volkswagen",
     "model": "Golf Limited",
     "modelYear": 1989,
     "country": "DE",
     "topSpeed": 142,
     "0to60": 6.6,
-    "handling": 73,
+    "handling": 74,
     "driveType": "4WD",
     "tyreType": "Performance",
     "tags": ["Hot Hatch", "Unique","Endless Summer","The Tyrol Tour: Remix"],
@@ -27,27 +27,27 @@
     "description": "The original Golf R.",
 
 
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenGolfLimited(1989).png",
     "creator": "Andu",
 
 
     "333TopSpeed": 146,
     "3330to60": 6.3,
-    "333Handling": 75,
+    "333Handling": 76,
 
     "666TopSpeed": 149,
     "6660to60": 5.9, 
-    "666Handling": 78,
+    "666Handling": 79,
 
     "996TopSpeed": 153,
     "9960to60": 5.6,
-    "996Handling": 78,
+    "996Handling": 79,
 
     "969TopSpeed": 153,
     "9690to60": 5.9,
-    "969Handling": 81,
+    "969Handling": 82,
 
     "699TopSpeed": 149,
     "6990to60": 5.6,
-    "699Handling": 81
+    "699Handling": 82
 }
