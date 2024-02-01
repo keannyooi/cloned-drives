@@ -1,6 +1,6 @@
 {
     "carID": "c03226",
-    "cr": 280,
+    "cr": 350,
     "make": ["Oettinger", "Volkswagen"],
     "model": "Golf GTI 16S",
     "modelYear": 1981,
@@ -15,7 +15,7 @@
 
 
     "weight": 900,
-    "gc": "Low",
+    "gc": "Medium",
     "seatCount":5,
     "bodyStyle": "Hatchback",
     "tcs": false,
