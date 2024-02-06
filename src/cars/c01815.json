@@ -1,10 +1,7 @@
 {
     "carID": "c01815",
-    "cr": 640,
-    "make": [
-        "Prince",
-        "Nissan"
-    ],
+    "cr": 635,
+    "make": ["Prince","Nissan"],
     "model": "R380A-I",
     "modelYear": 1966,
     "country": "JP",
@@ -13,11 +10,7 @@
     "handling": 78,
     "driveType": "RWD",
     "tyreType": "Performance",
-    "tags": [
-        "Unique",
-        "Motorsport",
-        "The Japanese Odyssey"
-    ],
+    "tags": ["Unique","Motorsport","The Japanese Odyssey"],
     "isPrize": true,
     "weight": 620,
     "gc": "Low",
@@ -45,6 +38,6 @@
     "699TopSpeed": 169,
     "6990to60": 3.5,
     "699Handling": 87,
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/PrinceR380A-I(1966).png",
     "creator": "Bnuuy"
 }

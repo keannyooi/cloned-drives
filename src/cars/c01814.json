@@ -1,6 +1,6 @@
 {
     "carID": "c01814",
-    "cr": 610,
+    "cr": 613,
     "make": ["Prince", "Nissan"],
     "model": "R380-I",
     "modelYear": 1965,
@@ -12,7 +12,6 @@
     "tyreType": "Performance",
     "tags": ["Unique", "Motorsport", "The Japanese Odyssey"],
     "isPrize": false,
-
     "weight": 615,
     "gc": "Low",
     "seatCount": 1,
@@ -24,27 +23,21 @@
     "mra": 66.66,
     "ola": 104.76,
     "description": "Prince took a swing at motorsports by building a car for the Japanese GP.",
- 
     "333TopSpeed": 162,
     "3330to60": 4,
     "333Handling": 80,
-
     "666TopSpeed": 166,
     "6660to60": 3.8,
     "666Handling": 82,
-
     "996TopSpeed": 169,
     "9960to60": 3.6,
     "996Handling": 82,
-
     "969TopSpeed": 169,
     "9690to60": 3.8,
     "969Handling": 85,
-
     "699TopSpeed": 166,
     "6990to60": 3.6,
     "699Handling": 85,
-
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/PrinceR380-I(1965).png",
     "creator": "Bnuuy"
 }
