@@ -60,7 +60,7 @@ function filterCheck(args) {
                         }
                     }
                 }
-                else if (key === "modelYear" || key === "cr") {
+                else if (key === "modelYear" || key === "seatCount" || key === "cr") {
         if (value.start && value.end) {
             // Implement "or" logic for modelYear or rq range
             if (key === "modelYear") {
@@ -68,6 +68,13 @@ function filterCheck(args) {
                     passed = false;
                 }
             }
+if (key === "seatCount") {
+    console.log('Filtering by seatcount:', value); // Log the filter value
+    console.log('Current car seatcount:', bmReference[key]); // Log the current car's seatcount
+    if (!(bmReference[key] >= value.start && bmReference[key] <= value.end)) {
+        passed = false;
+    }
+}
             if (key === "cr") {
                 if (!(bmReference[key] >= value.start && bmReference[key] <= value.end)) {
                     passed = false;

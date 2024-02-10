@@ -19,45 +19,45 @@ async function regenDealership() {
 
         if (randNum < 33) {
             crStart = i < 4 ? 1 : 400;
-            crEnd = i < 4 ? 99 : 549;
+            crEnd = i < 4 ? 99 : 499;
             if (i >= 4) {
-                price = 24000 + (Math.floor(Math.random() * 12000));
+                price = 30000 + (Math.floor(Math.random() * 22000));
             }
             else {
-                price = 500 + (Math.floor(Math.random() * 500));
+                price = 4000 + (Math.floor(Math.random() * 5000));
             }
         }
         else if (randNum < 66) {
-            crStart = i < 4 ? 99 : 549;
-            crEnd = i < 4 ? 249 : 699;
+            crStart = i < 4 ? 100 : 500;
+            crEnd = i < 4 ? 199 : 599;
             if (i >= 4) {
-                price = 96000 + (Math.floor(Math.random() * 96000));
+                price = 75000 + (Math.floor(Math.random() * 96000));
                 stock = 50;
             }
             else {
-                price = 2000 + (Math.floor(Math.random() * 2000));
+                price = 6000 + (Math.floor(Math.random() * 8000));
             }
         }
         else if (randNum < 91) {
-            crStart = i < 4 ? 399 : 649;
-            crEnd = i < 4 ? 549 : 799;
+            crStart = i < 4 ? 300 : 600;
+            crEnd = i < 4 ? 399 : 699;
             if (i >= 4) {
                 price = 96000 + (Math.floor(Math.random() * 96000));
                 stock = 50;
             }
             else {
-                price = 8000 + (Math.floor(Math.random() * 4000));
+                price = 16000 + (Math.floor(Math.random() * 24000));
             }
         }
         else {
-            crStart = i < 4 ? 440 : 699;
-            crEnd = i < 4 ? 549 : 799;
+            crStart = i < 4 ? 400 : 750;
+            crEnd = i < 4 ? 499 : 799;
             if (i >= 4) {
-                price = 384000 + (Math.floor(Math.random() * 100000));
+                price = 222000 + (Math.floor(Math.random() * 200000));
                 stock = 50;
             }
             else {
-                price = 24000 + (Math.floor(Math.random() * 12000));
+                price = 30000 + (Math.floor(Math.random() * 22000));
             }
         }
 
