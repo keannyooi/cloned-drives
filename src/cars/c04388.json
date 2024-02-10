@@ -4,6 +4,7 @@
     "make": "Audi",
     "model": "SQ7 TDI quattro",
     "modelYear": 2017,
+	"country": "DE",
     "topSpeed": 155,
     "0to60": 4.7,
     "handling": 80,
@@ -11,7 +12,6 @@
     "tyreType": "All-Surface",
     "tags": ["Eurotech Elite","Cloned Drives Beta: Last of"],
     "isPrize": false,
-
 
     "weight": 2392,
     "gc": "High",
