@@ -1,6 +1,6 @@
 {
     "carID": "c01190",
-    "cr": 260,
+    "cr": 257,
     "make": "Subaru",
     "model": "GL Turbo Wagon",
     "modelYear": 1983,
@@ -21,9 +21,9 @@
     "abs": false,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 17,
+    "mra": 11.11,
     "ola": 60.29,
-    "description": "",
+    "description": "In a bid for mainstream acceptance, Subaru boosts the GL's horsepower all the way to adequate.",
  
     "333TopSpeed": 100,
     "3330to60": 12.9,
@@ -45,6 +45,6 @@
     "6990to60": 11.6,
     "699Handling": 65,
 
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
-    "creator": "Ahmed"
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/SubaruGLTurboWagon(1983).png",
+    "creator": "Andu"
 }
