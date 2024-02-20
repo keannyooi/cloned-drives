@@ -1,13 +1,13 @@
 {
     "carID": "c04115",
-    "cr": 480,
+    "cr": 489,
     "make": "Volkswagen",
     "model": "Golf R32",
     "modelYear": 2005,
     "country": "DE",
     "topSpeed": 154,
     "0to60": 6.0,
-    "handling": 79,
+    "handling": 80,
     "driveType": "4WD",
     "tyreType": "Performance",
     "tags": ["The Tyrol Tour: Remix", "Eargasm", "Hot Hatch"],
@@ -27,26 +27,26 @@
     "description": "Refreshed for the new generation, the mighty VR6 R32 gains 10hp to prove its go fast versatility.",
 
 
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/VolkswagenGolfR32(2005).png",
     "creator": "Andu",
 
     "333TopSpeed": 157,
     "3330to60": 5.7,
-    "333Handling": 82,
+    "333Handling": 83,
     
     "666TopSpeed": 161,
     "6660to60": 5.4,
-    "666Handling": 84,
+    "666Handling": 85,
     
     "699TopSpeed": 161,
     "6990to60": 5.1,
-    "699Handling": 88,
+    "699Handling": 89,
     
     "969TopSpeed": 164,
     "9690to60": 5.4,
-    "969Handling": 88,
+    "969Handling": 89,
     
     "996TopSpeed": 164,
     "9960to60": 5.1,
-    "996Handling": 84
+    "996Handling": 85
 }
