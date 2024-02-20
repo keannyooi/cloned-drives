@@ -1,13 +1,13 @@
 {
     "carID": "c02288",
-    "cr": 940,
+    "cr": 975,
     "make": "Bugatti",
     "model": "La Voiture Noire",
     "modelYear": 2021,
     "country": "FR",
-    "topSpeed": 230,
-    "0to60": 2.6,
-    "handling": 90,
+    "topSpeed": 236,
+    "0to60": 2.4,
+    "handling": 91,
     "driveType": "4WD",
     "tyreType": "Performance",
     "tags": ["Hypercar", "Grand Tourer", "Unique", "Ultra Expensive"],
@@ -25,26 +25,26 @@
     "ola": 92.3,
     "description": "A very unique 1 of 1 Bugatti.",
 
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/BugattiLaVoitureNoire(2021).png",
     "creator": "Bnuuy",
 
-    "333TopSpeed": 232,
-    "3330to60": 2.5,
-    "333Handling": 93,
+"333TopSpeed": 240,
+"3330to60": 2.3,
+"333Handling": 94,
 
-    "666TopSpeed": 235,
-    "6660to60": 2.3,
-    "666Handling": 96,
+"666TopSpeed": 242,
+"6660to60": 2.2,
+"666Handling": 97,
 
-    "996TopSpeed": 237,
-    "9960to60": 2.2,
-    "996Handling": 96,
+"699TopSpeed": 242,
+"6990to60": 2,
+"699Handling": 101,
 
-    "969TopSpeed": 237,
-    "9690to60": 2.3,
-    "969Handling": 100,
+"969TopSpeed": 245,
+"9690to60": 2.2,
+"969Handling": 101,
 
-    "699TopSpeed": 235,
-    "6990to60": 2.2,
-    "699Handling": 100
+"996TopSpeed": 245,
+"9960to60": 2,
+"996Handling": 97
 }
