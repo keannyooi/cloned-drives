@@ -1,12 +1,12 @@
 {
     "carID": "c00532",
-    "cr": 340,
+    "cr": 341,
     "make": "Honda",
-    "model": "Clarity FCV",
+    "model": "Clarity Fuel Cell",
     "modelYear": 2016,
     "country": "JP",
     "topSpeed": 104,
-    "0to60": 8.4,
+    "0to60": 8.3,
     "handling": 72,
     "driveType": "FWD",
     "tyreType": "Standard",
@@ -16,7 +16,7 @@
         "Servers Choice"
     ],
     "isPrize": false,
-    "weight": 1881,
+    "weight": 1875,
     "gc": "Medium",
     "seatCount": 5,
     "bodyStyle": "Sedan",
@@ -24,8 +24,8 @@
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Alternative",
-    "mra": 43.55,
-    "ola": 74.07,
+    "mra": 45.99,
+    "ola": 79.21,
     "description": "The MRA is a lie.",
      "333TopSpeed": 109,
     "3330to60": 8,
@@ -42,6 +42,6 @@
     "699TopSpeed": 114,
     "6990to60": 7.1,
     "699Handling": 80,
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/HondaClarityFuelCell(2016).png",
     "creator": "Keanny"
 }
