@@ -1,13 +1,13 @@
 {
     "carID": "c01129",
-    "cr": 980,
+    "cr": 1070,
     "make": "RAESR",
     "model": "Tachyon Speed",
     "modelYear": 2017,
     "country": "US",
     "topSpeed": 240,
-    "0to60": 3,
-    "handling": 95,
+    "0to60": 2.0,
+    "handling": 96,
     "driveType": "4WD",
     "tyreType": "Performance",
     "tags": [
@@ -25,8 +25,8 @@
     "abs": true,
     "enginePos": "Middle",
     "fuelType": "Electric",
-    "mra": 142.86,
-    "ola": 86.67,
+    "mra": 105.26,
+    "ola": 95.00,
     "description": "An electric fighter jet on wheels.",
      "333TopSpeed": 242,
     "3330to60": 2.9,
@@ -43,6 +43,6 @@
     "699TopSpeed": 244,
     "6990to60": 2.6,
     "699Handling": 105,
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/RAESRTachyonSpeed(2017).png",
     "creator": "Keanny"
 }
