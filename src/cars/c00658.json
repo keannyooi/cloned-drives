@@ -1,11 +1,11 @@
 {
     "carID": "c00658",
-    "cr": 960,
+    "cr": 965,
     "make": "Lamborghini",
-    "model": "Huracan Performante",
+    "model": "Huracan LP640-4 Performante",
     "modelYear": 2017,
     "country": "IT",
-    "topSpeed": 203,
+    "topSpeed": 202,
     "0to60": 2.5,
     "handling": 93,
     "driveType": "4WD",
@@ -21,29 +21,29 @@
     "abs": true,
     "enginePos": "Middle",
     "fuelType": "Petrol",
-    "mra": 81.27,
-    "ola": 77.89,
+    "mra": 88.88,
+    "ola": 79.26,
     "description": "The very first card in Cloned Drives.",
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
-    "creator": "Spence",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/LamborghiniHuracanLP640-4Performante(2017).png",
+    "creator": "Bnuuy",
 
-"333TopSpeed": 206, 
+"333TopSpeed": 205, 
 "3330to60": 2.4, 
 "333Handling": 96,
 
-"666TopSpeed": 208, 
+"666TopSpeed": 207, 
 "6660to60": 2.2, 
 "666Handling": 99,
 
-"699TopSpeed": 208, 
+"699TopSpeed": 207, 
 "6990to60": 2.1, 
 "699Handling": 103,
 
-"969TopSpeed": 211, 
+"969TopSpeed": 210, 
 "9690to60": 2.2, 
 "969Handling": 103,
 
-"996TopSpeed": 211, 
+"996TopSpeed": 210, 
 "9960to60": 2.1, 
 "996Handling": 99
 }

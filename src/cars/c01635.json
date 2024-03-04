@@ -1,6 +1,6 @@
 {
     "carID": "c01635",
-    "cr": 500,
+    "cr": 498,
     "make": "Mitsubishi",
     "model": "FTO GP Version R",
     "modelYear": 1997,
@@ -16,12 +16,12 @@
     "gc": "Medium",
     "seatCount": 4,
     "bodyStyle": "Coupe",
-    "tcs": true,
+    "tcs": false,
     "abs": true,
     "enginePos": "Front",
     "fuelType": "Petrol",
-    "mra": 61.68,
-    "ola": 78.78,
+    "mra": 59.89,
+    "ola": 71.45,
     "description": "None.",
      "333TopSpeed": 117,
     "3330to60": 6.3,
@@ -38,6 +38,6 @@
     "699TopSpeed": 121,
     "6990to60": 5.6,
     "699Handling": 85,
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/MitsubishiFTOGPVersionR(1997).png",
     "creator": "Bnuuy"
 }

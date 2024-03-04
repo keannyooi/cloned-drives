@@ -1,19 +1,19 @@
 {
     "carID": "c02957",
-    "cr": 840,
+    "cr": 818,
     "make": "Lamborghini",
     "model": "Gallardo LP560-4",
     "modelYear": 2008,
     "country": "IT",
     "topSpeed": 202,
     "0to60": 3.5,
-    "handling": 89,
+    "handling": 87,
     "driveType": "4WD",
     "tyreType": "Performance",
     "tags": ["Supercar","The Tyrol Tour"],
     "isPrize": false,
 	
-    "weight": 1568,
+    "weight": 1590,
     "gc": "Low",
     "seatCount": 2,
     "bodyStyle": "Coupe",
@@ -21,29 +21,29 @@
     "abs": true,
     "enginePos": "Middle",
     "fuelType": "Petrol",
-    "mra": 89.66,
-    "ola": 74.03,
+    "mra": 81.5,
+    "ola": 85.44,
     "description": "",
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
-    "creator": "Spence",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/LamborghiniGallardoLP560-4(2008).png",
+    "creator": "Bnuuy",
 
 "333TopSpeed": 205, 
 "3330to60": 3.3, 
-"333Handling": 92,
+"333Handling": 90,
 
 "666TopSpeed": 207, 
 "6660to60": 3.1, 
-"666Handling": 95,
+"666Handling": 93,
 
 "699TopSpeed": 207, 
 "6990to60": 3.0, 
-"699Handling": 99,
+"699Handling": 97,
 
 "969TopSpeed": 210, 
 "9690to60": 3.1, 
-"969Handling": 99,
+"969Handling": 97,
 
 "996TopSpeed": 210, 
 "9960to60": 3.0, 
-"996Handling": 95
+"996Handling": 93
 }

@@ -1,6 +1,6 @@
 {
     "carID": "c03139",
-    "cr": 1000,
+    "cr": 1002,
     "make": ["Hennessey", "McLaren"],
     "model": "765LT HPE1000",
     "modelYear": 2021,
@@ -11,7 +11,7 @@
     "driveType": "RWD",
     "tyreType": "Performance",
     "tags": ["Tuner","Track Day", "The Americas Assault"],
-    "isPrize": true,
+    "isPrize": false,
     
     "weight": 1229,
     "gc": "Low",

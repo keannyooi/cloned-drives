@@ -1,19 +1,19 @@
 {
     "carID": "c02967",
-    "cr": 910,
+    "cr": 906,
     "make": "Lamborghini",
     "model": "Huracan EVO Spyder",
     "modelYear": 2019,
     "country": "IT",
     "topSpeed": 202,
     "0to60": 2.9,
-    "handling": 92,
+    "handling": 91,
     "driveType": "4WD",
     "tyreType": "Performance",
     "tags": ["Supercar","The Tyrol Tour"],
     "isPrize": false,
 	
-    "weight": 1759,
+    "weight": 1680,
     "gc": "Low",
     "seatCount": 2,
     "bodyStyle": "Convertible",
@@ -21,29 +21,29 @@
     "abs": true,
     "enginePos": "Middle",
     "fuelType": "Petrol",
-    "mra": 82.92,
-    "ola": 78.06,
+    "mra": 87.05,
+    "ola": 82.54,
     "description": "",
-    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Placeholder.png",
-    "creator": "Spence",
+    "racehud": "https://file.garden/ZSrBMiDRyR84aPJp/Cards(normal)/0in/LamborghiniHuracanEVOSpyder(2019).png",
+    "creator": "Bnuuy",
 
 "333TopSpeed": 205, 
 "3330to60": 2.8, 
-"333Handling": 95,
+"333Handling": 94,
 
 "666TopSpeed": 207, 
 "6660to60": 2.6, 
-"666Handling": 98,
+"666Handling": 97,
 
 "699TopSpeed": 207, 
 "6990to60": 2.5, 
-"699Handling": 102,
+"699Handling": 101,
 
 "969TopSpeed": 210, 
 "9690to60": 2.6, 
-"969Handling": 102,
+"969Handling": 101,
 
 "996TopSpeed": 210, 
 "9960to60": 2.5, 
-"996Handling": 98
+"996Handling": 97
 }

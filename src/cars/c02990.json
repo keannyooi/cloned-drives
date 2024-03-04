@@ -1,6 +1,6 @@
 {
     "carID": "c02990",
-    "cr": 1020,
+    "cr": 1024,
     "make": ["Manhart", "Porsche"],
     "model": "TR 800",
     "modelYear": 2022,
@@ -11,7 +11,7 @@
     "driveType": "4WD",
     "tyreType": "Performance",
     "tags": ["Tuner","Supercar","Unique","The Tyrol Tour"],
-    "isPrize": true,
+    "isPrize": false,
 	
     "weight": 1690,
     "gc": "Low",
